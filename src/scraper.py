@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 class WebScraper:
     """Scrapes and extracts main content from web pages."""
 
-    DEFAULT_USER_AGENT = "Mozilla/5.0 (compatible; HN-RSS-Translator/1.0; +https://github.com/hn-rss-translator)"
+    DEFAULT_USER_AGENT = "Mozilla/5.0 (compatible; HN-RSS-Translator/1.0; +https://github.com/hevinxx/hn-summary-and-translate)"
     DEFAULT_TIMEOUT = 10
     MAX_CONTENT_LENGTH = 5000
     MAX_RETRIES = 2

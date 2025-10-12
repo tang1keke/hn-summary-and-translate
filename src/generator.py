@@ -373,7 +373,7 @@ def generate_index_page(base_url: str, languages: List[Dict], output_dir: str):
 
     <hr>
     <p style="text-align: center; color: #666; font-size: 0.9em;">
-        <a href="https://github.com/hn-rss-translator">GitHub</a> |
+        <a href="https://github.com/hevinxx/hn-summary-and-translate">GitHub</a> |
         Powered by BART summarization and Google Translate
     </p>
 </body>
