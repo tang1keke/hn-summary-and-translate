@@ -26,7 +26,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         persist-credentials: true
         fetch-depth: 0
@@ -38,7 +38,7 @@ jobs:
         cache: 'pip'
 
     - name: Cache Hugging Face models
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ~/.cache/huggingface
         key: ${{ runner.os }}-huggingface-bart-${{ hashFiles('requirements.txt') }}
@@ -47,7 +47,7 @@ jobs:
           ${{ runner.os }}-huggingface-
 
     - name: Cache processed items
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: cache
         key: ${{ runner.os }}-cache-${{ github.run_number }}
@@ -81,7 +81,7 @@ jobs:
         done
 
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+      uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./output
@@ -89,7 +89,7 @@ jobs:
         commit_message: 'Deploy RSS feeds'
 
     - name: Upload artifacts (for debugging)
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: rss-feeds
