@@ -1,0 +1,97 @@
+name: Update RSS Feeds
+
+on:
+  schedule:
+    # Run every 3 hours
+    - cron: '0 */3 * * *'
+  workflow_dispatch:  # Allow manual triggering
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
+      - 'main.py'
+      - 'config.yaml'
+      - 'requirements.txt'
+
+jobs:
+  update-feeds:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        persist-credentials: true
+        fetch-depth: 0
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        cache: 'pip'
+
+    - name: Cache Hugging Face models
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/huggingface
+        key: ${{ runner.os }}-huggingface-bart-${{ hashFiles('requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-huggingface-bart-
+          ${{ runner.os }}-huggingface-
+
+    - name: Cache processed items
+      uses: actions/cache@v3
+      with:
+        path: cache
+        key: ${{ runner.os }}-cache-${{ github.run_number }}
+        restore-keys: |
+          ${{ runner.os }}-cache-
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run RSS translator
+      run: |
+        python main.py --log-level INFO
+      env:
+        TRANSFORMERS_CACHE: ~/.cache/huggingface
+        HF_HOME: ~/.cache/huggingface
+        TOKENIZERS_PARALLELISM: false
+
+    - name: Check output files
+      run: |
+        echo "Generated RSS feeds:"
+        ls -la output/
+        echo ""
+        echo "Validating RSS feeds..."
+        for file in output/*.xml; do
+          if [ -f "$file" ]; then
+            echo "Checking $file..."
+            python -c "from lxml import etree; etree.parse('$file'); print('✓ Valid XML')"
+          fi
+        done
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./output
+        keep_files: false
+        commit_message: 'Deploy RSS feeds'
+
+    - name: Upload artifacts (for debugging)
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: rss-feeds
+        path: output/
+        retention-days: 7
