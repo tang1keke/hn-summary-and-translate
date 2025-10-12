@@ -83,7 +83,12 @@ class HNRSSTranslator:
             self.summarizer = LightweightSummarizer(max_sentences=3)
 
         # Translator
-        target_languages = [lang['code'] for lang in self.config['translation']['target_languages']]
+        # Only include languages that need translation (skip those with skip_translation=true)
+        target_languages = [
+            lang['code']
+            for lang in self.config['translation']['target_languages']
+            if not lang.get('skip_translation', False)
+        ]
         self.translator = TranslatorWithCache(
             target_languages=target_languages,
             provider=self.config['translation']['provider']
@@ -225,31 +230,40 @@ class HNRSSTranslator:
                 translations = {}
                 for lang_config in self.config['translation']['target_languages']:
                     lang_code = lang_config['code']
+                    skip_translation = lang_config.get('skip_translation', False)
 
-                    # Check cache first
-                    cached_title = self.model_cache.get_translation(item['title'], lang_code)
-                    cached_summary = self.model_cache.get_translation(summary, lang_code)
-
-                    if cached_title and cached_summary:
+                    # Skip translation for specified languages (e.g., English)
+                    if skip_translation:
                         translations[lang_code] = {
-                            'title': cached_title,
-                            'description': cached_summary
+                            'title': item['title'],
+                            'description': summary
                         }
+                        logger.debug(f"Skipping translation for {lang_config['name']} (using original)")
                     else:
-                        # Translate with rate limiting
-                        self.rate_limiter.wait()
-                        translated_title = self.translator.translate_text(item['title'], lang_code)
-                        translated_summary = self.translator.translate_text(summary, lang_code)
+                        # Check cache first
+                        cached_title = self.model_cache.get_translation(item['title'], lang_code)
+                        cached_summary = self.model_cache.get_translation(summary, lang_code)
 
-                        translations[lang_code] = {
-                            'title': translated_title,
-                            'description': translated_summary
-                        }
+                        if cached_title and cached_summary:
+                            translations[lang_code] = {
+                                'title': cached_title,
+                                'description': cached_summary
+                            }
+                        else:
+                            # Translate with rate limiting
+                            self.rate_limiter.wait()
+                            translated_title = self.translator.translate_text(item['title'], lang_code)
+                            translated_summary = self.translator.translate_text(summary, lang_code)
 
-                        # Cache translations
-                        self.model_cache.set_translation(item['title'], lang_code, translated_title)
-                        self.model_cache.set_translation(summary, lang_code, translated_summary)
-                        self.stats['items_translated'] += 1
+                            translations[lang_code] = {
+                                'title': translated_title,
+                                'description': translated_summary
+                            }
+
+                            # Cache translations
+                            self.model_cache.set_translation(item['title'], lang_code, translated_title)
+                            self.model_cache.set_translation(summary, lang_code, translated_summary)
+                            self.stats['items_translated'] += 1
 
                 # Store processed item
                 processed_item = {
