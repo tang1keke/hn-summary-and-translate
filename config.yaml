@@ -1,0 +1,33 @@
+general:
+  source_feed: "https://news.ycombinator.com/rss"
+  update_frequency: "0 */3 * * *"  # Every 3 hours
+  timezone: "UTC"
+
+summarization:
+  model: "facebook/bart-large-cnn"
+  max_length: 150
+  min_length: 50
+
+translation:
+  provider: "google"
+  target_languages:
+    - code: "ko"
+      name: "Korean"
+      feed_name: "rss-ko.xml"
+    - code: "ja"
+      name: "Japanese"
+      feed_name: "rss-ja.xml"
+    - code: "zh-cn"
+      name: "Chinese (Simplified)"
+      feed_name: "rss-zh.xml"
+
+filtering:
+  max_items: 30
+  max_age_hours: 24
+  skip_jobs: false
+  skip_failed_fetches: false
+
+output:
+  base_url: "https://username.github.io/hn-rss-translator"
+  keep_days: 7
+  generate_index: true
