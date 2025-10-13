@@ -135,21 +135,25 @@ class HNRSSTranslator:
             new_items = deduplicate_items(items, self.cache_manager.cache)
             logger.info(f"Found {len(new_items)} new items to process")
 
-            if not new_items:
-                logger.info("No new items to process")
-                return
+            # Step 3: Process items or use cached items
+            if new_items:
+                # Step 3a: Scrape web content for new items
+                logger.info("🌐 Scraping web content...")
+                urls = [item['link'] for item in new_items]
+                content_map = batch_scrape(urls, max_workers=5)
+                self.stats['items_scraped'] = sum(1 for v in content_map.values() if v)
+                logger.info(f"Successfully scraped {self.stats['items_scraped']} pages")
 
-            # Step 3: Scrape web content
-            logger.info("🌐 Scraping web content...")
-            urls = [item['link'] for item in new_items]
-            content_map = batch_scrape(urls, max_workers=5)
-            self.stats['items_scraped'] = sum(1 for v in content_map.values() if v)
-            logger.info(f"Successfully scraped {self.stats['items_scraped']} pages")
-
-            # Step 4: Process items (summarize and translate)
-            logger.info("🤖 Processing items...")
-            processed_items = self._process_items(new_items, content_map)
-            self.stats['items_generated'] = len(processed_items)
+                # Step 4a: Process new items (summarize and translate)
+                logger.info("🤖 Processing items...")
+                processed_items = self._process_items(new_items, content_map)
+                self.stats['items_generated'] = len(processed_items)
+            else:
+                # Step 3b: No new items, use cached items for RSS generation
+                logger.info("No new items found, using cached items for RSS generation")
+                processed_items = self._get_cached_items()
+                logger.info(f"Retrieved {len(processed_items)} items from cache")
+                self.stats['items_generated'] = len(processed_items)
 
             # Step 5: Generate RSS feeds
             logger.info("📝 Generating RSS feeds...")
@@ -296,6 +300,29 @@ class HNRSSTranslator:
                 continue
 
         return processed_items
+
+    def _get_cached_items(self) -> List[Dict]:
+        """
+        Get recent items from cache for RSS generation.
+
+        Returns:
+            List of cached processed items, sorted by processed_at (newest first)
+        """
+        cached_items = []
+
+        for key, value in self.cache_manager.cache.items():
+            if isinstance(value, dict) and 'translations' in value:
+                cached_items.append(value)
+
+        # Sort by processed_at (newest first)
+        cached_items.sort(
+            key=lambda x: x.get('processed_at', ''),
+            reverse=True
+        )
+
+        # Limit to max_items from config
+        max_items = self.config['filtering']['max_items']
+        return cached_items[:max_items]
 
     def _organize_items_by_language(self, items: List[Dict]) -> Dict[str, List[Dict]]:
         """
