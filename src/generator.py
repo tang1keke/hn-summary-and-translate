@@ -333,11 +333,37 @@ def generate_index_page(base_url: str, languages: List[Dict], output_dir: str):
         .feed-link:hover {{
             text-decoration: underline;
         }}
+        .feed-url-container {{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 5px;
+        }}
         .feed-url {{
             color: #666;
             font-size: 0.9em;
-            margin-top: 5px;
             word-break: break-all;
+            flex: 1;
+        }}
+        .copy-btn {{
+            padding: 6px 12px;
+            background: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85em;
+            white-space: nowrap;
+            transition: background 0.2s;
+        }}
+        .copy-btn:hover {{
+            background: #ff8533;
+        }}
+        .copy-btn:active {{
+            background: #cc5200;
+        }}
+        .copy-btn.copied {{
+            background: #28a745;
         }}
         .updated {{
             color: #666;
@@ -362,7 +388,10 @@ def generate_index_page(base_url: str, languages: List[Dict], output_dir: str):
         html_content += f"""
         <li class="feed-item">
             <a href="{feed_name}" class="feed-link">📡 {lang_name}</a>
-            <div class="feed-url">{feed_url}</div>
+            <div class="feed-url-container">
+                <code class="feed-url">{feed_url}</code>
+                <button class="copy-btn" onclick="copyToClipboard('{feed_url}', this)">📋 Copy</button>
+            </div>
         </li>
 """
 
@@ -376,6 +405,24 @@ def generate_index_page(base_url: str, languages: List[Dict], output_dir: str):
         <a href="https://github.com/hevinxx/hn-summary-and-translate">GitHub</a> |
         Powered by BART summarization and Google Translate
     </p>
+
+    <script>
+        function copyToClipboard(text, button) {{
+            navigator.clipboard.writeText(text).then(() => {{
+                const originalText = button.textContent;
+                button.textContent = '✅ Copied!';
+                button.classList.add('copied');
+
+                setTimeout(() => {{
+                    button.textContent = originalText;
+                    button.classList.remove('copied');
+                }}, 2000);
+            }}).catch(err => {{
+                console.error('Failed to copy:', err);
+                alert('Failed to copy to clipboard');
+            }});
+        }}
+    </script>
 </body>
 </html>
 """
