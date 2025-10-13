@@ -50,6 +50,13 @@ class RSSGenerator:
                                'dc': 'http://purl.org/dc/elements/1.1/'
                            })
 
+        # Add XSLT stylesheet processing instruction
+        stylesheet = etree.ProcessingInstruction(
+            'xml-stylesheet',
+            'type="text/xsl" href="rss-style.xsl"'
+        )
+        rss.addprevious(stylesheet)
+
         channel = etree.SubElement(rss, 'channel')
 
         # Add channel metadata
@@ -278,6 +285,13 @@ class MultiLanguageRSSGenerator:
         """
         output_path = Path(output_dir)
         output_path.mkdir(parents=True, exist_ok=True)
+
+        # Copy XSLT stylesheet to output directory
+        xsl_source = Path(__file__).parent / 'templates' / 'rss-style.xsl'
+        xsl_dest = output_path / 'rss-style.xsl'
+        if xsl_source.exists():
+            xsl_dest.write_text(xsl_source.read_text(encoding='utf-8'), encoding='utf-8')
+            logger.info("Copied XSLT stylesheet to output directory")
 
         for lang_config in self.languages:
             lang_code = lang_config['code']
