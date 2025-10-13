@@ -50,13 +50,6 @@ class RSSGenerator:
                                'dc': 'http://purl.org/dc/elements/1.1/'
                            })
 
-        # Add XSLT stylesheet processing instruction
-        stylesheet = etree.ProcessingInstruction(
-            'xml-stylesheet',
-            'type="text/xsl" href="rss-style.xsl"'
-        )
-        rss.addprevious(stylesheet)
-
         channel = etree.SubElement(rss, 'channel')
 
         # Add channel metadata
@@ -66,13 +59,19 @@ class RSSGenerator:
         for item in items:
             self._add_item(channel, item)
 
-        # Generate XML string
+        # Generate XML string with stylesheet processing instruction
         xml_str = etree.tostring(
             rss,
             pretty_print=True,
             xml_declaration=True,
             encoding='UTF-8'
         ).decode('utf-8')
+
+        # Insert XSLT stylesheet processing instruction after XML declaration
+        xml_lines = xml_str.split('\n')
+        if xml_lines[0].startswith('<?xml'):
+            xml_lines.insert(1, '<?xml-stylesheet type="text/xsl" href="rss-style.xsl"?>')
+            xml_str = '\n'.join(xml_lines)
 
         return xml_str
 
