@@ -59,6 +59,14 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Update config with GitHub Pages URL
+      run: |
+        REPO_OWNER="${{ github.repository_owner }}"
+        REPO_NAME="${{ github.event.repository.name }}"
+        sed -i "s|base_url:.*|base_url: \"https://${REPO_OWNER}.github.io/${REPO_NAME}\"|g" config.yaml
+        echo "Updated base_url to: https://${REPO_OWNER}.github.io/${REPO_NAME}"
+        cat config.yaml | grep base_url
+
     - name: Run RSS translator
       run: |
         python main.py --log-level INFO
