@@ -13,7 +13,7 @@ from src.fetcher import RSSFetcher
 from src.scraper import batch_scrape
 from src.summarizer import Summarizer, LightweightSummarizer
 from src.translator import TranslatorWithCache
-from src.generator import MultiLanguageRSSGenerator, generate_index_page
+from src.generator import MultiLanguageRSSGenerator, generate_index_page, generate_sitemap, generate_robots_txt
 from src.utils import (
     CacheManager,
     ModelCache,
@@ -168,7 +168,19 @@ class HNRSSTranslator:
                     'output'
                 )
 
-            # Step 8: Save cache
+            # Step 8: Generate SEO files (sitemap and robots.txt)
+            logger.info("🔍 Generating SEO files...")
+            generate_sitemap(
+                self.config['output']['base_url'],
+                self.config['translation']['target_languages'],
+                'output'
+            )
+            generate_robots_txt(
+                self.config['output']['base_url'],
+                'output'
+            )
+
+            # Step 9: Save cache
             logger.info("💾 Saving cache...")
             self.cache_manager.save_cache()
 

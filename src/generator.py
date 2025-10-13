@@ -312,12 +312,50 @@ def generate_index_page(base_url: str, languages: List[Dict], output_dir: str):
         languages: List of language configurations
         output_dir: Directory to save index page
     """
+    # Generate language list for meta tags
+    lang_names = ', '.join([lang['name'] for lang in languages])
+    lang_names_short = ', '.join([lang['name'] for lang in languages[:3]])
+    if len(languages) > 3:
+        lang_names_short += f", and {len(languages) - 3} more"
+
     html_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HN RSS Translator - Available Feeds</title>
+    <meta name="description" content="Hacker News articles automatically summarized and translated into multiple languages ({lang_names}). Get multilingual tech news via RSS feeds.">
+    <meta name="keywords" content="Hacker News, RSS, translation, {lang_names}, tech news, summarization, multilingual">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="HN RSS Translator - Multilingual Hacker News Feeds">
+    <meta property="og:description" content="Get Hacker News in your language with automatic summarization and translation">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{base_url}/">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="HN RSS Translator">
+    <meta name="twitter:description" content="Multilingual Hacker News RSS feeds with AI summarization">
+
+    <title>HN RSS Translator - Multilingual Hacker News Feeds ({lang_names_short})</title>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {{
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "HN RSS Translator",
+      "description": "Hacker News articles automatically summarized and translated into multiple languages",
+      "url": "{base_url}/",
+      "potentialAction": {{
+        "@type": "SearchAction",
+        "target": "{base_url}/?q={{search_term_string}}",
+        "query-input": "required name=search_term_string"
+      }}
+    }}
+    </script>
+
     <style>
         body {{
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -412,6 +450,22 @@ def generate_index_page(base_url: str, languages: List[Dict], output_dir: str):
     html_content += f"""
     </ul>
 
+    <section style="margin-top: 30px; line-height: 1.8; background: white; padding: 20px; border-radius: 8px;">
+        <h2 style="color: #ff6600;">Why Use HN RSS Translator?</h2>
+        <ul style="margin-left: 20px;">
+            <li><strong>Automatic Translation</strong>: Get Hacker News articles in {lang_names_short}</li>
+            <li><strong>AI Summarization</strong>: BART model provides concise summaries of long articles</li>
+            <li><strong>Fresh Content</strong>: Updated every 3 hours with latest tech news</li>
+            <li><strong>Free & Open Source</strong>: No API keys required, runs on GitHub infrastructure</li>
+        </ul>
+
+        <h3 style="color: #ff6600; margin-top: 20px;">Supported Languages</h3>
+        <p>We currently support feeds in: <strong>{lang_names}</strong>.</p>
+
+        <h3 style="color: #ff6600; margin-top: 20px;">How to Use</h3>
+        <p>Simply copy one of the RSS feed URLs above and add it to your favorite RSS reader such as Feedly, Inoreader, NetNewsWire, or any other RSS client.</p>
+    </section>
+
     <p class="updated">Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}</p>
 
     <hr>
@@ -444,6 +498,65 @@ def generate_index_page(base_url: str, languages: List[Dict], output_dir: str):
     output_path = Path(output_dir) / 'index.html'
     output_path.write_text(html_content, encoding='utf-8')
     logger.info(f"Generated index page at {output_path}")
+
+
+def generate_sitemap(base_url: str, languages: List[Dict], output_dir: str):
+    """
+    Generate sitemap.xml for SEO.
+
+    Args:
+        base_url: Base URL for the site
+        languages: List of language configurations
+        output_dir: Directory to save sitemap
+    """
+    today = datetime.now().strftime('%Y-%m-%d')
+
+    sitemap_content = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{base_url}/</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+"""
+
+    for lang_config in languages:
+        feed_name = lang_config['feed_name']
+        sitemap_content += f"""  <url>
+    <loc>{base_url}/{feed_name}</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+"""
+
+    sitemap_content += "</urlset>\n"
+
+    output_path = Path(output_dir) / 'sitemap.xml'
+    output_path.write_text(sitemap_content, encoding='utf-8')
+    logger.info(f"Generated sitemap at {output_path}")
+
+
+def generate_robots_txt(base_url: str, output_dir: str):
+    """
+    Generate robots.txt for search engine crawlers.
+
+    Args:
+        base_url: Base URL for the site
+        output_dir: Directory to save robots.txt
+    """
+    robots_content = f"""User-agent: *
+Allow: /
+Sitemap: {base_url}/sitemap.xml
+
+# Exclude cache directory
+Disallow: /cache/
+"""
+
+    output_path = Path(output_dir) / 'robots.txt'
+    output_path.write_text(robots_content, encoding='utf-8')
+    logger.info(f"Generated robots.txt at {output_path}")
 
 
 def test_generator():
