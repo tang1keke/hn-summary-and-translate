@@ -219,28 +219,33 @@ class HNRSSTranslator:
             try:
                 logger.debug(f"Processing item {i}/{len(items)}: {item['title'][:50]}...")
 
-                # Get content (scraped or fallback to description)
+                # Get content (scraped only - HN RSS description is just "Comments" link)
                 content = content_map.get(item['link'])
                 if not content:
-                    content = item.get('description', '')
-                    logger.debug(f"Using RSS description for {item['link'][:50]}...")
-
-                # Clean content for processing
-                content = clean_text_for_processing(content)
-
-                # Summarize
-                if content:
-                    # Check cache first
-                    summary = self.model_cache.get_summary(content)
-                    if not summary:
-                        if isinstance(self.summarizer, Summarizer):
-                            summary = self.summarizer.summarize(content)
-                        else:
-                            summary = self.summarizer.summarize(content)
-                        self.model_cache.set_summary(content, summary)
-                        self.stats['items_summarized'] += 1
+                    logger.warning(f"No scraped content for {item['link'][:50]}..., using empty summary")
+                    summary = ""
                 else:
-                    summary = item.get('description', '')
+                    # Clean content for processing
+                    content = clean_text_for_processing(content)
+
+                    # Summarize
+                    if not content:
+                        logger.warning(f"Empty content after cleaning for {item['title'][:50]}..., using empty summary")
+                        summary = ""
+                    else:
+                        # Check cache first
+                        summary = self.model_cache.get_summary(content)
+                        if not summary:
+                            if isinstance(self.summarizer, Summarizer):
+                                summary = self.summarizer.summarize(content)
+                            else:
+                                summary = self.summarizer.summarize(content)
+                            self.model_cache.set_summary(content, summary)
+                            self.stats['items_summarized'] += 1
+
+                        if not summary:
+                            logger.warning(f"Failed to generate summary for {item['title'][:50]}..., using empty summary")
+                            summary = ""
 
                 # Translate
                 translations = {}
