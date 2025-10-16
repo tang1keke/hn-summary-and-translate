@@ -118,7 +118,7 @@ class RSSGenerator:
         if description:
             # Include both translated and original content
             full_description = self._format_description(item)
-            etree.SubElement(item_elem, 'description').text = full_description
+            etree.SubElement(item_elem, 'description').text = self._clean_text(full_description)
 
         # GUID (globally unique identifier)
         guid = item.get('guid', link)
@@ -144,12 +144,12 @@ class RSSGenerator:
         # Author
         author = item.get('author')
         if author:
-            etree.SubElement(item_elem, '{http://purl.org/dc/elements/1.1/}creator').text = author
+            etree.SubElement(item_elem, '{http://purl.org/dc/elements/1.1/}creator').text = self._clean_text(author)
 
         # Categories/tags
         tags = item.get('tags', [])
         for tag in tags:
-            etree.SubElement(item_elem, 'category').text = tag
+            etree.SubElement(item_elem, 'category').text = self._clean_text(tag)
 
     def _format_description(self, item: Dict) -> str:
         """
