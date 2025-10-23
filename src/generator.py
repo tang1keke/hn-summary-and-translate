@@ -166,22 +166,22 @@ class RSSGenerator:
         # Add translated summary
         summary = item.get('description', '')
         if summary:
-            description_parts.append(f"📝 {summary}")
+            description_parts.append(f"<p>{summary}</p>")
 
         # Add original title if different
         original_title = item.get('original_title')
         if original_title and original_title != item.get('title'):
-            description_parts.append(f"\n\n🔤 Original: {original_title}")
+            description_parts.append(f"<p><strong>Original:</strong> {original_title}</p>")
 
         # Add metadata if available
         score = item.get('score')
         if score:
-            description_parts.append(f"\n📊 Score: {score} points")
+            description_parts.append(f"<p><strong>Score:</strong> {score} points</p>")
 
         # Add source link
         link = item.get('link')
         if link:
-            description_parts.append(f"\n🔗 Read more: {link}")
+            description_parts.append(f"<p><a href='{link}'>Read more</a></p>")
 
         return '\n'.join(description_parts)
 
@@ -424,7 +424,7 @@ def generate_index_page(base_url: str, languages: List[Dict], output_dir: str):
     </style>
 </head>
 <body>
-    <h1>🗞️ HN RSS Translator</h1>
+    <h1>HN RSS Translator</h1>
     <p>Hacker News articles automatically summarized and translated into multiple languages.</p>
 
     <h2>Available Feeds</h2>
@@ -438,10 +438,10 @@ def generate_index_page(base_url: str, languages: List[Dict], output_dir: str):
 
         html_content += f"""
         <li class="feed-item">
-            <a href="{feed_name}" class="feed-link">📡 {lang_name}</a>
+            <a href="{feed_name}" class="feed-link">{lang_name}</a>
             <div class="feed-url-container">
                 <code class="feed-url">{feed_url}</code>
-                <button class="copy-btn" onclick="copyToClipboard('{feed_url}', this)">📋 Copy</button>
+                <button class="copy-btn" onclick="copyToClipboard('{feed_url}', this)">Copy</button>
             </div>
         </li>
 """
@@ -477,7 +477,7 @@ def generate_index_page(base_url: str, languages: List[Dict], output_dir: str):
         function copyToClipboard(text, button) {{
             navigator.clipboard.writeText(text).then(() => {{
                 const originalText = button.textContent;
-                button.textContent = '✅ Copied!';
+                button.textContent = 'Copied!';
                 button.classList.add('copied');
 
                 setTimeout(() => {{
@@ -591,6 +591,6 @@ def test_generator():
     # Validate XML
     try:
         etree.fromstring(xml_content.encode('utf-8'))
-        print("\n✅ XML is valid")
+        print("\n[OK] XML is valid")
     except Exception as e:
-        print(f"\n❌ XML validation failed: {e}")
+        print(f"\n[ERROR] XML validation failed: {e}")

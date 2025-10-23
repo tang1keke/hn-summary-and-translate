@@ -1,18 +1,18 @@
-# HN RSS Translator 🌐
+# HN RSS Translator
 
 Automatically summarize and translate Hacker News RSS feeds into multiple languages using AI, running completely free on GitHub Actions.
 
-## Features ✨
+## Features
 
-- 📡 **Automatic RSS Processing**: Fetches HN RSS feed every 3 hours
-- 🌐 **Web Content Extraction**: Scrapes actual article content, not just RSS descriptions
-- 🤖 **AI Summarization**: Uses Facebook's BART model for intelligent summarization
-- 🌍 **Multi-Language Translation**: Supports 100+ languages via Google Translate
-- 💰 **Completely Free**: Runs on GitHub Actions and GitHub Pages
-- 🚀 **Serverless**: No server required, fully automated
-- ⚡ **Cached & Optimized**: Smart caching to avoid reprocessing
+- **Automatic RSS Processing**: Fetches HN RSS feed every 3 hours
+- **Web Content Extraction**: Scrapes actual article content, not just RSS descriptions
+- **AI Summarization**: Uses Facebook's BART model for intelligent summarization
+- **Multi-Language Translation**: Supports 100+ languages via Google Translate
+- **Completely Free**: Runs on GitHub Actions and GitHub Pages
+- **Serverless**: No server required, fully automated
+- **Cached & Optimized**: Smart caching to avoid reprocessing
 
-## Quick Start 🚀
+## Quick Start
 
 ### 1. Fork this Repository
 
@@ -54,7 +54,7 @@ After the first run completes, your feeds will be available at:
 https://YOUR_USERNAME.github.io/hn-summary-and-translate/rss-ko.xml
 ```
 
-## Configuration 🔧
+## Configuration
 
 ### config.yaml
 
@@ -86,7 +86,7 @@ output:
   generate_index: true
 ```
 
-## Architecture 🏗️
+## Architecture
 
 ```
 HN RSS Feed → Fetch → Scrape Articles → Summarize (BART) → Translate → Generate RSS → Deploy to GitHub Pages
@@ -101,9 +101,25 @@ HN RSS Feed → Fetch → Scrape Articles → Summarize (BART) → Translate →
 - **Generator**: Creates RSS 2.0 compliant XML feeds
 - **Cache Manager**: Prevents reprocessing with intelligent caching
 
-## Local Development 💻
+## Local Development
 
 ### Setup
+
+#### Using uv (Recommended)
+
+```bash
+# Clone your fork
+git clone https://github.com/YOUR_USERNAME/hn-summary-and-translate
+cd hn-summary-and-translate
+
+# Install uv if you haven't already
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Install dependencies
+uv sync
+```
+
+#### Using pip
 
 ```bash
 # Clone your fork
@@ -120,6 +136,21 @@ pip install -r requirements.txt
 
 ### Run Locally
 
+#### Using uv
+
+```bash
+# Full run
+uv run python main.py
+
+# Test mode (3 items only)
+uv run python main.py --test
+
+# Debug mode
+uv run python main.py --log-level DEBUG
+```
+
+#### Using pip
+
 ```bash
 # Full run
 python main.py
@@ -133,11 +164,19 @@ python main.py --log-level DEBUG
 
 ### Run Tests
 
+#### Using uv
+
+```bash
+uv run pytest tests/ -v
+```
+
+#### Using pip
+
 ```bash
 pytest tests/ -v
 ```
 
-## GitHub Actions Details ⚙️
+## GitHub Actions Details
 
 The workflow runs automatically every 3 hours and:
 
@@ -152,7 +191,7 @@ The workflow runs automatically every 3 hours and:
 - **Storage**: ~2GB for model cache
 - **Runtime**: 10-20 minutes per run
 
-## Troubleshooting 🔍
+## Troubleshooting
 
 ### Common Issues
 
@@ -173,7 +212,7 @@ The workflow runs automatically every 3 hours and:
 - Reduce max_items to 20 or less
 - Use lighter summarization model
 
-## Advanced Features 🎯
+## Advanced Features
 
 ### Custom Summarization Models
 
@@ -199,21 +238,25 @@ filtering:
   max_age_hours: 12  # Only recent items
 ```
 
-## Contributing 🤝
+## Contributing
 
-Contributions are welcome! Please:
+Contributions are welcome! Please see [CONTRIBUTING.md](.github/CONTRIBUTING.md) for detailed instructions.
 
+Quick steps:
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
 4. Add tests if applicable
-5. Submit a pull request
+5. Run `uv run pytest` to verify
+6. Submit a pull request
 
-## License 📄
+Note: This project uses `uv` for dependency management. `requirements.txt` is auto-generated from `pyproject.toml` for pip compatibility.
+
+## License
 
 MIT License - See [LICENSE](LICENSE) file
 
-## Credits 🙏
+## Credits
 
 - **BART Model**: Facebook AI Research
 - **Translation**: Google Translate via deep-translator
@@ -221,6 +264,6 @@ MIT License - See [LICENSE](LICENSE) file
 
 ---
 
-Made with ❤️ for the Hacker News community
+Made with love for the Hacker News community
 
 **Note**: This project is not affiliated with Y Combinator or Hacker News.
