@@ -366,7 +366,7 @@ def calculate_processing_stats(start_time: datetime,
 def print_processing_summary(stats: Dict):
     """Print processing summary."""
     print("\n" + "=" * 50)
-    print("📊 Processing Summary")
+    print("Processing Summary")
     print("=" * 50)
     print(f"Duration: {stats['duration_seconds']:.1f} seconds")
     print(f"Items processed: {stats['items_processed']}")

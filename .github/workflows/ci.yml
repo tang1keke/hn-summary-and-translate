@@ -22,39 +22,36 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
 
-    - name: Cache pip dependencies
-      uses: actions/cache@v3
+    - name: Install uv
+      uses: astral-sh/setup-uv@v4
       with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-pip-
+        version: "latest"
+        enable-cache: true
 
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-        pip install pylint black isort
+        uv sync --frozen
+        uv pip install pylint black isort
 
     - name: Lint with pylint
       run: |
-        pylint src/ --exit-zero --rcfile=.pylintrc || true
+        uv run pylint src/ --exit-zero --rcfile=.pylintrc || true
 
     - name: Check code formatting with black
       run: |
-        black --check src/ main.py || true
+        uv run black --check src/ main.py || true
 
     - name: Check import sorting with isort
       run: |
-        isort --check-only src/ main.py || true
+        uv run isort --check-only src/ main.py || true
 
     - name: Run tests
       run: |
-        python -m pytest tests/ -v --tb=short || true
+        uv run pytest tests/ -v --tb=short || true
 
     - name: Test main script (limited)
       run: |
-        python main.py --test --log-level DEBUG
+        uv run python main.py --test --log-level DEBUG
       env:
         TRANSFORMERS_CACHE: ~/.cache/huggingface
         HF_HOME: ~/.cache/huggingface
@@ -73,17 +70,23 @@ jobs:
       with:
         python-version: '3.10'
 
+    - name: Install uv
+      uses: astral-sh/setup-uv@v4
+      with:
+        version: "latest"
+        enable-cache: true
+
     - name: Install PyYAML
-      run: pip install pyyaml
+      run: uv pip install pyyaml
 
     - name: Validate config.yaml
       run: |
-        python -c "
+        uv run python -c "
         import yaml
         with open('config.yaml', 'r') as f:
             config = yaml.safe_load(f)
             assert 'general' in config, 'Missing general section'
             assert 'translation' in config, 'Missing translation section'
             assert 'summarization' in config, 'Missing summarization section'
-            print('✓ Config file is valid')
+            print('[OK] Config file is valid')
         "

@@ -117,7 +117,7 @@ class HNRSSTranslator:
             self.initialize_components()
 
             # Step 1: Fetch RSS feed
-            logger.info("📡 Fetching RSS feed...")
+            logger.info("[1/9] Fetching RSS feed...")
             items = self.fetcher.fetch_feed(
                 max_age_hours=self.config['filtering']['max_age_hours'],
                 max_items=self.config['filtering']['max_items'],
@@ -131,21 +131,21 @@ class HNRSSTranslator:
                 return
 
             # Step 2: Deduplicate against cache
-            logger.info("🔍 Checking for duplicates...")
+            logger.info("[2/9] Checking for duplicates...")
             new_items = deduplicate_items(items, self.cache_manager.cache)
             logger.info(f"Found {len(new_items)} new items to process")
 
             # Step 3: Process items or use cached items
             if new_items:
                 # Step 3a: Scrape web content for new items
-                logger.info("🌐 Scraping web content...")
+                logger.info("[3/9] Scraping web content...")
                 urls = [item['link'] for item in new_items]
                 content_map = batch_scrape(urls, max_workers=5)
                 self.stats['items_scraped'] = sum(1 for v in content_map.values() if v)
                 logger.info(f"Successfully scraped {self.stats['items_scraped']} pages")
 
                 # Step 4a: Process new items (summarize and translate)
-                logger.info("🤖 Processing items...")
+                logger.info("[4/9] Processing items...")
                 processed_items = self._process_items(new_items, content_map)
                 self.stats['items_generated'] = len(processed_items)
             else:
@@ -156,12 +156,12 @@ class HNRSSTranslator:
                 self.stats['items_generated'] = len(processed_items)
 
             # Step 5: Generate RSS feeds
-            logger.info("📝 Generating RSS feeds...")
+            logger.info("[5/9] Generating RSS feeds...")
             items_by_language = self._organize_items_by_language(processed_items)
             feeds = self.rss_generator.generate_all_feeds(items_by_language)
 
             # Step 6: Save feeds
-            logger.info("💾 Saving RSS feeds...")
+            logger.info("[6/9] Saving RSS feeds...")
             self.rss_generator.save_all_feeds(feeds, 'output')
 
             # Step 7: Generate index page
@@ -173,7 +173,7 @@ class HNRSSTranslator:
                 )
 
             # Step 8: Generate SEO files (sitemap and robots.txt)
-            logger.info("🔍 Generating SEO files...")
+            logger.info("[7/9] Generating SEO files...")
             generate_sitemap(
                 self.config['output']['base_url'],
                 self.config['translation']['target_languages'],
@@ -185,7 +185,7 @@ class HNRSSTranslator:
             )
 
             # Step 9: Save cache
-            logger.info("💾 Saving cache...")
+            logger.info("[8/9] Saving cache...")
             self.cache_manager.save_cache()
 
             # Print summary
@@ -196,7 +196,7 @@ class HNRSSTranslator:
             )
             print_processing_summary(stats)
 
-            logger.info("✅ Translation pipeline completed successfully!")
+            logger.info("[9/9] Translation pipeline completed successfully!")
 
         except Exception as e:
             logger.error(f"Pipeline failed: {e}", exc_info=True)
