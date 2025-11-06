@@ -173,15 +173,40 @@ class RSSGenerator:
         if original_title and original_title != item.get('title'):
             description_parts.append(f"<p><strong>Original:</strong> {original_title}</p>")
 
-        # Add metadata if available
+        # Add metadata section
+        metadata_parts = []
         score = item.get('score')
         if score:
-            description_parts.append(f"<p><strong>Score:</strong> {score} points</p>")
+            metadata_parts.append(f"<strong>Score:</strong> {score} points")
+
+        # Add HN discussion link prominently
+        hn_url = item.get('hn_url')
+        if hn_url:
+            metadata_parts.append(f'<a href="{hn_url}"><strong>HN Discussion</strong></a>')
+
+        if metadata_parts:
+            description_parts.append(f"<p>{' | '.join(metadata_parts)}</p>")
 
         # Add source link
         link = item.get('link')
         if link:
-            description_parts.append(f"<p><a href='{link}'>Read more</a></p>")
+            description_parts.append(f"<p><a href='{link}'>Read Original Article</a></p>")
+
+        # Add top comments if available
+        hn_comments = item.get('hn_comments', [])
+        if hn_comments:
+            description_parts.append("<hr>")
+            description_parts.append(f"<p><strong>Top {len(hn_comments)} Comments:</strong></p>")
+            for comment in hn_comments:  # Show all fetched comments
+                author = comment.get('author', 'unknown')
+                text = comment.get('text', '')
+                # Clean up the HTML in comment text
+                description_parts.append(
+                    f'<div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;">'
+                    f'<p style="margin: 0 0 5px 0;"><strong>{author}:</strong></p>'
+                    f'<p style="margin: 0;">{text}</p>'
+                    f'</div>'
+                )
 
         return '\n'.join(description_parts)
 
