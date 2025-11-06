@@ -309,6 +309,43 @@ class HNRSSTranslator:
                 if comments_url and comments_url in comments_map:
                     hn_comments = comments_map[comments_url]
 
+                # Translate comments for each language
+                translated_comments = {}
+                if hn_comments:
+                    for lang_config in self.config['translation']['target_languages']:
+                        lang_code = lang_config['code']
+                        skip_translation = lang_config.get('skip_translation', False)
+
+                        if skip_translation:
+                            # Keep original English comments
+                            translated_comments[lang_code] = hn_comments
+                        else:
+                            # Translate each comment
+                            translated_lang_comments = []
+                            for comment in hn_comments:
+                                # Check cache first
+                                cached_text = self.model_cache.get_translation(comment['text'], lang_code)
+
+                                if cached_text:
+                                    translated_comment = {
+                                        **comment,
+                                        'text': cached_text
+                                    }
+                                else:
+                                    # Translate with rate limiting
+                                    self.rate_limiter.wait()
+                                    translated_text = self.translator.translate_text(comment['text'], lang_code)
+                                    translated_comment = {
+                                        **comment,
+                                        'text': translated_text
+                                    }
+                                    # Cache translation
+                                    self.model_cache.set_translation(comment['text'], lang_code, translated_text)
+
+                                translated_lang_comments.append(translated_comment)
+
+                            translated_comments[lang_code] = translated_lang_comments
+
                 # Get HN discussion URL
                 hn_url = hn_fetcher.get_hn_discussion_url(comments_url) if comments_url else None
 
@@ -319,6 +356,7 @@ class HNRSSTranslator:
                     'translations': translations,
                     'original_title': item['title'],
                     'hn_comments': hn_comments,
+                    'translated_comments': translated_comments,
                     'hn_url': hn_url,
                     'processed_at': datetime.now().isoformat()
                 }
@@ -376,6 +414,11 @@ class HNRSSTranslator:
             for item in items:
                 if lang_code in item.get('translations', {}):
                     translation = item['translations'][lang_code]
+
+                    # Get translated comments for this language, fallback to original
+                    translated_comments_dict = item.get('translated_comments', {})
+                    comments_for_lang = translated_comments_dict.get(lang_code, item.get('hn_comments', []))
+
                     lang_item = {
                         'title': translation['title'],
                         'description': translation['description'],
@@ -386,7 +429,7 @@ class HNRSSTranslator:
                         'author': item.get('author'),
                         'score': item.get('score'),
                         'original_title': item.get('original_title'),
-                        'hn_comments': item.get('hn_comments', []),
+                        'hn_comments': comments_for_lang,
                         'hn_url': item.get('hn_url')
                     }
                     lang_items.append(lang_item)
