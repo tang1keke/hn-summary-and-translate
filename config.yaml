@@ -31,6 +31,11 @@ filtering:
   skip_jobs: false
   skip_failed_fetches: false
 
+comments:
+  enabled: true
+  max_comments: 30  # Number of top comments to fetch per item
+  max_workers: 5    # Concurrent workers for fetching comments
+
 output:
   base_url: "https://tang1keke.github.io/hn-summary-and-translate"
   keep_days: 7

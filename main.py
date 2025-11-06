@@ -14,6 +14,7 @@ from src.scraper import batch_scrape
 from src.summarizer import Summarizer, LightweightSummarizer
 from src.translator import TranslatorWithCache
 from src.generator import MultiLanguageRSSGenerator, generate_index_page, generate_sitemap, generate_robots_txt
+from src.hn_comments import batch_fetch_comments, HNCommentsFetcher
 from src.utils import (
     CacheManager,
     ModelCache,
@@ -144,9 +145,22 @@ class HNRSSTranslator:
                 self.stats['items_scraped'] = sum(1 for v in content_map.values() if v)
                 logger.info(f"Successfully scraped {self.stats['items_scraped']} pages")
 
+                # Step 3b: Fetch HN comments if enabled
+                comments_map = {}
+                if self.config.get('comments', {}).get('enabled', False):
+                    logger.info("[3b/9] Fetching HN comments...")
+                    comments_urls = [item.get('comments', '') for item in new_items if item.get('comments')]
+                    if comments_urls:
+                        comments_map = batch_fetch_comments(
+                            comments_urls,
+                            max_comments_per_item=self.config['comments'].get('max_comments', 30),
+                            max_workers=self.config['comments'].get('max_workers', 5)
+                        )
+                        logger.info(f"Fetched comments for {len(comments_map)} items")
+
                 # Step 4a: Process new items (summarize and translate)
                 logger.info("[4/9] Processing items...")
-                processed_items = self._process_items(new_items, content_map)
+                processed_items = self._process_items(new_items, content_map, comments_map)
                 self.stats['items_generated'] = len(processed_items)
             else:
                 # Step 3b: No new items, use cached items for RSS generation
@@ -202,18 +216,21 @@ class HNRSSTranslator:
             logger.error(f"Pipeline failed: {e}", exc_info=True)
             raise
 
-    def _process_items(self, items: List[Dict], content_map: Dict[str, str]) -> List[Dict]:
+    def _process_items(self, items: List[Dict], content_map: Dict[str, str], comments_map: Dict[str, List[Dict]] = None) -> List[Dict]:
         """
         Process items through summarization and translation.
 
         Args:
             items: List of RSS items
             content_map: Mapping of URLs to scraped content
+            comments_map: Mapping of comment URLs to HN comments (optional)
 
         Returns:
             List of processed items
         """
         processed_items = []
+        comments_map = comments_map or {}
+        hn_fetcher = HNCommentsFetcher()
 
         for i, item in enumerate(items, 1):
             try:
@@ -286,12 +303,23 @@ class HNRSSTranslator:
                             self.model_cache.set_translation(summary, lang_code, translated_summary)
                             self.stats['items_translated'] += 1
 
+                # Get HN comments if available
+                hn_comments = []
+                comments_url = item.get('comments', '')
+                if comments_url and comments_url in comments_map:
+                    hn_comments = comments_map[comments_url]
+
+                # Get HN discussion URL
+                hn_url = hn_fetcher.get_hn_discussion_url(comments_url) if comments_url else None
+
                 # Store processed item
                 processed_item = {
                     **item,
                     'summary': summary,
                     'translations': translations,
                     'original_title': item['title'],
+                    'hn_comments': hn_comments,
+                    'hn_url': hn_url,
                     'processed_at': datetime.now().isoformat()
                 }
 
@@ -357,7 +385,9 @@ class HNRSSTranslator:
                         'comments': item.get('comments'),
                         'author': item.get('author'),
                         'score': item.get('score'),
-                        'original_title': item.get('original_title')
+                        'original_title': item.get('original_title'),
+                        'hn_comments': item.get('hn_comments', []),
+                        'hn_url': item.get('hn_url')
                     }
                     lang_items.append(lang_item)
 
