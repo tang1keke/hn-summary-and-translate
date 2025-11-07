@@ -6,145 +6,157 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 06 Nov 2025 21:22:37 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Nov 2025 01:51:04 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>20 亿电子邮件地址被泄露</title>
-      <link>https://www.troyhunt.com/2-billion-email-addresses-were-exposed-and-we-indexed-them-all-in-have-i-been-pwned/</link>
-      <description>&lt;p&gt;在这方面，撞库数据成为“城堡的钥匙”。然而，与我的地址相关的其他密码都不熟悉。与这位女士的电子邮件地址相关的单一密码有九个字符，之前也没有出现在 Pwned Passwords 中。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Two billion email addresses were exposed&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45839901"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.troyhunt.com/2-billion-email-addresses-were-exposed-and-we-indexed-them-all-in-have-i-been-pwned/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>你应该写一个代理</title>
+      <link>https://fly.io/blog/everyone-write-an-agent/</link>
+      <description>&lt;p&gt;附加（{“角色”：“助理”，“内容”：response.output_text}）返回响应。追加（{“角色”：“用户”，“内容”：行}）context_bad。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; You should write an agent&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45840088"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://fly.io/blog/everyone-write-an-agent/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 16 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brikym:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令我难以置信的是，大多数电子邮件提供商没有办法生成注册别名。看起来proton和fastmail都支持它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jerf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从好的方面来说，Troy 现在可以节省大量数据库空间。此时，他可以将其替换为 &lt;p&gt;&lt;pre&gt;&lt;code&gt; def email_compromished(email)，而不是存储哪些电子邮件已被泄露：
-        返回True&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jimmar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我尊重特洛伊亨特的工作。我在 &lt;a href="https:&amp;#x2F;&amp;#x2F;haveibeenpwned.com&amp;#x2F;" 上搜索了我的电子邮件地址rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;haveibeenpwned.com&amp;#x2F;&lt;/a&gt;，我的电子邮件位于最新的违规数据集中。但该网站没有给我任何采取行动的方式。 haveibeenpwned 知道哪些密码被泄露，泄露数据的人知道哪些密码被泄露，但受影响的人_我_似乎没有任何办法知道哪些密码被泄露。传达的信息基本上是：“是的，你有危险。”使用良好的密码习惯。”&lt;p&gt;没有完美的解决方案。显然，我们不想为每个人提供一个简单的表格，您可以在其中输入电子邮件地址并查看找到的所有密码。但我不会重置 500 多个密码，因为其中一个可能已被泄露。看来我们必须依靠密码管理器（BitWarden、1Password、Chrome 的内置管理器等）来告诉我们个人密码是否已被泄露。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rkagerer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最后关于电子邮件送达率的部分也很有趣：&lt;p&gt;&lt;i&gt;通知我们的订阅者是另一个问题......就不会最终进入声誉顽皮列表或邮件被接收服务器节流而言......发送违规通知并不是什么大问题，但对于尝试登录仪表板的人来说是一个主要问题，他们无法再通过“魔法”接收电子邮件。链接。&lt;/i&gt;&lt;p&gt;他从某人那里得到了这样的观察：&lt;p&gt;&lt;i&gt;我发现处理大量电子邮件的最佳策略是查看过去 30 天内每次您想要增加的电子邮件的平均数量，然后每天将该数量增加 50% 左右，直到您完成队列中的工作&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eckesicle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不向服务提供商提供您的真实姓名或地址以最大程度地减少身份盗用的可能性是否有任何真正的缺点？这很可能违反服务条款，但除了帐户暂停之外，您还可能遭受任何法律后果吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hypeatei:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如今，愤世嫉俗无处不在，但这些事件对我来说真的不再有意义了。公司不会因为这些泄密事件而受到政府的惩罚，也不会受到消费者的惩罚。首先有什么动机来减少这种数据收集或锁定您的数据库？&lt;p&gt;即使某人的安全性很糟糕，因为消费者及其帐户因这些泄漏而遭到黑客攻击，但其实际后果是什么？哦，真可惜，他们需要重置密码并向银行打几个电话以撤销欺诈费用，然后生活才能继续。技术人员认为这是不可接受的，但大多数人并不真正关心。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;submeta:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于每个需要注册的网站，我都有一个一次性电子邮件地址。每次注册都有一个新密码。使用 Fastemail 和密码管理器。当电子邮件地址和密码泄露时，我知道必须更换哪一个。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;naet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;目前已经发生了足够多的数据泄露事件，我确信我的所有信息都已多次暴露（地址、SSN、电话号码、电子邮件等）。  我的电子邮件存在十多个漏洞，列在被攻击网站上。  我收到了关于我申请的大学、我使用过的求职网站以及其他肯定有大量我过去的个人信息的地方的违规行为的法律信件。  这还不包括“合法”的。从过去的社交媒体、互联网浏览和其他任何地方收集的大数据分析。&lt;p&gt;我现在使用存储在 bitwarden 中的强密码来尝试至少掌握这一点。我确信不幸的是，我不再使用的服务上有一些随机的旧帐户，其密码已被泄露。&lt;p&gt;不太确定此时是否可以采取任何措施。我希望我的信息不在那里，但确实如此。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jlund-molfese:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;帖子的标题应该是“13亿个密码被泄露”，因为尽管这个数字略小，但它实际上代表了更重要的东西。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hirvi74:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我已经真正开始使用“隐藏我的电子邮件”了来自 iCloud 的功能。真是太好了。如果电子邮件被盗（这种情况经常发生在我很久以前停止使用的服务中），那么我只需停用或删除该电子邮件地址即可。我想许多其他服务也提供此功能，但目前对我来说这是最方便的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zkmon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为我们应该停止将电子邮件地址视为秘密或可能被“窃取”的东西。密码？谁仍在他们的服务器上存储密码而不是哈希值？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zwnow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谁能告诉我为什么暴露的电子邮件地址是一个问题？
-我明白了，如果它是某种 admin@foo.com，但我的私人邮件，我为什么要关心？他们好像没有我的密码吧？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;imgabe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的数据在一次 Facebook 泄露中被曝光，结果我的 Facebook 帐户上有一封旧电子邮件，其中的域名后来被我放弃并放弃。其他人注册了该域名并试图通过使用该域名发送密码重置请求来接管我的 Facebook 帐户。幸运的是，我有 2FA，我猜 Facebook 的欺诈警报发现了它，所以它没有成功。&lt;p&gt;我想我想说的是要小心，即使像电子邮件泄露这样无害的事情也可能会导致问题，并确保从帐户中删除所有未使用的地址！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;joe5150:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;老实说，要关心这种规模的事情是非常困难的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;worldfoodgood:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;拥有许多虚荣网址并为您访问的每个网站提供唯一的电子邮件地址的缺点是，您无法在不付费的情况下使用haveibeenpwned（尽管是一个人）。我不知道这些年来我给出了多少个电子邮件地址，可能有数百个，跨越至少 6 或 7 个域，他们想向我收取月费，看看其中哪些已被盗用。&lt;p&gt;我知道他们必须赚钱，但我发现有趣的是，这是为我工作的每个公司网站运行唯一电子邮件地址的第一个真正的负面影响。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gausswho:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在所有这些问题中，我们仍然没有一个标准的方法来自动从密码管理器更新我们的密码。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.troyhunt.com/2-billion-email-addresses-were-exposed-and-we-indexed-them-all-in-have-i-been-pwned/</guid>
-      <pubDate>Thu, 06 Nov 2025 20:20:23 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45839901</comments>
+&lt;p&gt;&lt;strong&gt;Top 30 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rambojohnson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇文章中虚张声势的姿态令人作呕。当然，其中埋藏着一些严重的问题，但是该死的……请把它调低一点。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaway8xak92:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;上次我对 Fly.io 失去了所有的尊重，他们发表了一篇文章，咒骂那些不相信振动编码的人是疯了。&lt;p&gt;看起来他们跟上了公司博客中的咒骂。我想这不是我的事。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hshdhdhehd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有很多事情我应该做。从用 nand 门面包板制作自己的 CPU 到用 Rust 构建 CDN。但没有时间做所有的事情。&lt;p&gt;也就是说，我按照 Karpathy 的教程建立了法学硕士。所以我认为尝试一下是有好处的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vinhnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; “在你学会骑自行车之前，你只能认为自己了解自行车的工作原理。”&lt;p&gt;这引起了我的强烈共鸣。这就是我自己构建一个的原因 [0]，我真的很喜欢真正了解编码代理是如何工作的。这次学习对我来说意义重大，我现在掌握了 ANSI 转义码、字素簇、终端仿真器、Unicode 规范化、VT 协议、PTY 会话和文件系统操作的工作知识 - 所有这些低级细节在实现它们之前我都不会考虑。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;vinhnx&amp;#x2F;vtcode" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;vinhnx&amp;#x2F;vtcode&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;8cvor6j844qw_d6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;问题是，对于刚接触代理的人来说，尝试编写一个简单的代理来获取数据有多难？ （例如，从网站获取评论以进行情感分析？）&lt;p&gt;如果我犯了一些错误，请原谅：从我看来，从根本上来说，它似乎是一个法学硕士在每个循环中运行，并提供有关提供给它的工具的信息。在每个循环中，LLM 都会评估输入上下文（来自工具调用、输入等）并决定调用哪个工具。文本输出。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;.text-gray-600 {
+    颜色: 黑色;
+}&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hoppp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我应该吗？我可以解决哪些问题，这是只能通过代理才能完成的？只要每个人工智能提供商都处于亏损状态，启动一个可持续盈利的项目就感觉不太现实。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;a-dub:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它们有点像 2020 年代中期的 CGI Perl 脚本。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wayy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每个人都喜欢构建代理，但没有人喜欢调试它们。代理遇到了经典的 llm 应用程序生命周期问题：一开始感觉很神奇。它完成了最初的几项任务，完成了你甚至认为不可能的事情。你感到兴奋，开始进一步推动它。你运行它，然后在第 17 步、第 41 步和第 9 步失败。&lt;p&gt;现在你无法重现它，因为它是概率性的。每一步都需要半秒，所以你坐在那里 10 到 20 分钟，只是等待有机会看看哪里出了问题&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;8note:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;需要注意的一件更微妙的事情是：我们刚刚与一位法学硕士进行了多次对话。为此，我们记住了我们所说的一切以及法学硕士所说的一切，并在每次法学硕士通话时回放。 LLM 本身是一个无状态的黑匣子。我们正在进行的对话是我们对自己施加的一种幻觉。&lt;p&gt;这种幻觉被 Cline 上下文溢出的总结所打破，但我认为如果你从不努力攻读 LLM 或建立自己的代理，那么很容易错过它。我真的很喜欢这个措辞，而且科学传播者在谈论代理人和法学硕士时缺少简单的描述&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dave1010uk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;两年前，我用 25 行 PHP 编写了一个代理 [0]。即使在工具调用出现之前，你还必须哄骗法学硕士返回结构化输出，它的效果却出奇的好。我认为它甚至可以与 GPT-3.5 一起处理一些琐碎的事情。&lt;p&gt;在我看来，LLM 只是 UNIX 强大的操作工具，如“sed”或“awk”：你给它们一个输入和命令，它们给你一个输出。如果您使用类似 `llm` [1] 的东西，情况尤其如此。&lt;p&gt;您可以编写对 LLM、循环和分支的调用并将它们与其他函数组合起来，这似乎是合乎逻辑的。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;dave1010&amp;#x2F;hubcap" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;dave1010&amp;#x2F;hubcap&lt;/a&gt;&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;simonw&amp;#x2F;llm" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;simonw&amp;#x2F;llm&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rbren:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;剧透：实际上没那么容易。压缩、安全、沙箱、规划、自定义工具——所有这些都很难做好。&lt;p&gt;我们即将推出一个 SDK，为开发人员提供所有这些构建块，特别是围绕软件代理。如果有人想看的话，希望得到反馈：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;OpenHands&amp;#x2F;software-agent-sdk" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;OpenHands&amp;#x2F;software-agent-sdk&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Zak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; &lt;i&gt;在学会骑自行车之前，您只是认为自己了解自行车的工作原理。&lt;/i&gt;&lt;p&gt;我敢打赌，大多数会骑自行车的人都不知道如何驾驶，并且会错误地描述他们用来启动和终止转弯的身体动作。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;反向转向" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;反向转向&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fsndz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我这样做了，在这个过程中销毁了 2.6B 代币，并学到了很多东西：
+&lt;a href="https:&amp;#x2F;&amp;#x2F;transitions.substack.com&amp;#x2F;p&amp;#x2F;what-burning-260billion-prompt-tokens" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;transitions.substack.com&amp;#x2F;p&amp;#x2F;what-burning-26-billion-p...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;threecheese:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有谁对流行的编码代理中的代理循环有什么了解或直觉吗？它纯粹是一个“while 1: call_llm(system, Assistant)”，还是有复杂的编排？&lt;p&gt;我试图了解克劳德代码的值（例如）是否纯粹在十四行诗和俳句+工具系统提示中，或者是否有更多秘密武器 - 除了通过命令、工具、技能等包含指令文件的“糖”之外。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ericd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当然，尤其是关于推出您自己的克劳德代码替代方案的部分 - 构建您自己的光剑。让你的编码代理自我改进是一种非常神奇的体验。然后你可以轻松地交换你想要的任何模型（例如，Cerebras 的速度非常快，这对于这些具有大量上下文的多轮工具调用对话有很大的不同，尽管 gpt-oss 120b 显然不如前沿模型之一）。添加笔记记忆，并要求它记住关键事实。添加语音转录，以便您可以更快地回复（法学硕士非常擅长接受不完美的转录并理解您的意思）。每件事都需要几分钟的时间，而且非常有趣。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dagss:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我现在意识到我在 Cursor 中需要什么：一个用于“fork context”的按钮。&lt;p&gt;我相信这将是一个强大的工具，可以解决现在有单独技术的许多问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zahlman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;想象一下如果你给它 bash 的话它会做什么。不到 10 分钟你就可以知道。剧透：你会出人意料地接近拥有一个可用的编码代理。&lt;p&gt;好吧，但是如果我不想&lt;i&gt;&lt;/i&gt;必须信任远程服务而不向我发送信息怎么办&lt;p&gt;&lt;pre&gt;&lt;code&gt; { "output": [ { "type": "function_call", "command": "rm -rf &amp;#x2F; --不保留根” } ] }
+
+？&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nowittyusername:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我同意这种观点，但我也建议您建立一个仅限本地的代理。  在 llama.cpp 或 vllm 上运行的东西，无论如何......这样你就可以更好地掌握 LLM 的真正本质以及它们在幕后如何工作的更基本本质。  这种经历也会让你意识到，在使用 OpenAI 等基于云的 api 提供商时，你放弃了多少控制权，以及为什么如此多的工程师认为 LLM 是一个“黑匣子”。  嗯，伙计，你一直在使用 api，当然你不会理解仅仅使用它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;solomonb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这项工作早于我们现在所知的代理，旨在构建聊天机器人（如 irc 聊天机器人），但当 auto-gpt 时，我意识到我可以使用这个库很好地形式化它：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;blog.cofree.coffee&amp;#x2F;2025-03-05-chat-bots-revisited&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;blog.cofree.coffee&amp;#x2F;2025-03-05-chat-bots-revisited&amp;#x2F;&lt;/a&gt;&lt;p&gt;我使用 OpenAI API 进行了一些轻度集成实验，但从未抽出时间构建完整的代理。唉..&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;robot-wrangler:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;另一件需要注意的事情是：我们根本不需要 MCP。这是因为 MCP 不是一项基本的支持技术。它所获得的覆盖范围令人沮丧。这根本就不是一项技术。 MCP 只是 Claude Code 和 Cursor 的插件接口，一种将您自己的工具放入您无法控制的代码中的方法。编写您自己的代理。成为一名程序员。处理 API，而不是插件。&lt;p&gt;等等。  这些都是正确的担忧，但得出了错误的结论。&lt;p&gt;如果您要在一种框架中使用一种语言制作&lt;i&gt;一个&lt;/i&gt;代理，则不需要 MCP。  但我们真正想要的开放编码和研究助理将由几个人组成。  MCP 是唯一一个在使我们能够“成为程序员”方面朝着良好方向发展的东西。和“使用 API”，甚至可能在相当隔离和可重现的环境中测试事物。  与此相比，skills.md 实际上是目前专有的，无法编写，具有不透明的运行时和调度，正在推动我们走向某些模型、语言和某些 SDK 等。&lt;p&gt;MCP 不是 Claude 的插件接口，它只是 JSON-RPC。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_pdp_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;成为一名程序员也很简单.. 看吧，&lt;p&gt;打印“Hello world!”&lt;p&gt;如此简单...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qwertox:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我发现创建 MCP 服务器更有用，这就是 Claude 真正的闪光点。您只需在网络、移动设备或 CLI 上对 Claude 说，它应该“描述我们与 google 的连接”。要么通过三个接口之一，要么通过“claude -p“描述我们与谷歌的连接””，它只会使用您的工具，而无需您执行任何特殊操作。这就像为克劳德定制的智能。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chrisweekly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;@tptacek 的写作风格总是让我想要支持 Fly.io。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ATechGuy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也许我们应该写一个代理，再写一个代理，再写一个代理……&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;riskable:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，这让您&lt;i&gt;想要&lt;/i&gt;编写 Unix 风格的工具，只做一件事，并且&lt;i&gt;只&lt;/i&gt;做得很好。  不仅因为它使代理编码变得更简单，而且因为它更安全！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esafak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;OWASP 前十名有什么问题吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oooyay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;呵呵，关于上下文工程的一点是显而易见的。&lt;p&gt;我正在编写一个个人助理，在我看来，它与代理不同，因为它具有许多常规代理不一定需要的功能，例如内存、任务跟踪、广泛的解决能力等...我最终编写了与其他代理对话的代理，这些代理具有 MCP 提示、资源和工具来指导他们作为一般问题解决者。它遇到的第一个代理是专门从事任务管理的主管，因此为其任务的反应代理编写了自定义上下文和工具选择。&lt;p&gt;总而言之，你在这个兔子洞中走得越远，就越“工程化”。它变成了。我在这里写了一些：&lt;a href="https:&amp;#x2F;&amp;#x2F;ooo-yay.com&amp;#x2F;blog&amp;#x2F;building-my-own-personal-assistant&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ooo-yay.com&amp;#x2F;博客&amp;#x2F;building-my-own-personal-assistant&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;behnamoh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;还没有人知道&lt;p&gt;总结我过去三年在人工智能方面的经验。如此多的项目重新发明了同样的东西，如此多的意大利面条扔到墙上看看什么能粘住，如此多的兴奋，然后是当新模型下降时的失望，如此多的人欺骗，如此多的黑客和变通办法，如RAG，除了“相信我兄弟”之外，没有证据表明它们确实有效。和反复试验。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tlarkworthy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，我在 &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=43998472"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=43998472&lt;/a&gt; 之后受到了启发
+这也非常具体&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://fly.io/blog/everyone-write-an-agent/</guid>
+      <pubDate>Thu, 06 Nov 2025 20:37:06 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45840088</comments>
     </item>
     <item>
-      <title>法学硕士编码问题的难度</title>
-      <link>https://arxiv.org/abs/2510.18147</link>
-      <description>&lt;p&gt;) Connected Papers Toggle Connected Papers（什么是 Connected Papers。） Litmaps Toggle Litmaps（什么是 Litmaps。） 代码链接 Toggle Papers with Code（什么是 Papers with Code。）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; LLMs Encode How Difficult Problems Are&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45838564"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://arxiv.org/abs/2510.18147'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>游戏设计很简单</title>
+      <link>https://www.raphkoster.com/2025/11/03/game-design-is-simple-actually/</link>
+      <description>&lt;p&gt;“我喜欢因偶然而产生的问题”或“我喜欢因与他人互动而产生的问题”或其他什么。数学家称之为“解决游戏。他们需要有不确定的答案。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Game design is simple&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45841262"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.raphkoster.com/2025/11/03/game-design-is-simple-actually/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kazinator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当你在心里把“LLM”替换成“LLM”时，一切就很清楚了。 “由压缩训练数据驱动的文本完成”。&lt;p&gt;例如&lt;p&gt;[由压缩训练数据驱动的文本完成]表现出令人费解的不一致：[它]解决了复杂的问题，但在看似简单的问题上经常失败。&lt;p&gt;一些问题可以通过训练数据中的文本轨迹更好地表示，从而可以生成更可信的对话。  当问题没有得到很好的表述时，即使问题简单也无济于事。&lt;p&gt;如果你只用山达基教文献来训练它，然后询问佛教对某种情况的看法，你可能会得到一些关于身体thetan的废话，即使情况很简单。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jiito:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我还没有深入阅读这篇特定的论文，但它让我想起了我看到的另一篇论文，该论文使用类似的方法来确定模型是否编码了自己正确回答的确定性。 &lt;a href="https:&amp;#x2F;&amp;#x2F;arxiv.org&amp;#x2F;abs&amp;#x2F;2509.10625" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;arxiv.org&amp;#x2F;abs&amp;#x2F;2509.10625&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://arxiv.org/abs/2510.18147</guid>
-      <pubDate>Thu, 06 Nov 2025 18:29:03 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45838564</comments>
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ninkendo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的问题：是否有一个简洁的游戏设计理论可以正确解释为什么过场动画&lt;i&gt;他妈的愚蠢&lt;/i&gt;？&lt;p&gt;有很多 AAA 游戏，很明显，开发者希望他们是在导演一部电影。当然，有大量的过场动画可以展示一些很酷的视觉效果。但随后他们似乎认为“好吧，我们现在需要让玩家真正开始玩”，但这仍然&lt;i&gt;基本上&lt;/i&gt;是一个过场动画，但有额外的步骤：《赛博朋克 2077》中有这样一个部分，你反复按下按钮，让你的角色沿着地板爬行并吃药。这只是一个过场动画，但你基本上可以通过按 X 按钮来推进帧。&lt;p&gt;然后是快速时间事件，本质上是“我们有一个过场动画，我们希望你观看，但如果你不随机按随机按钮，你就会死”，他们称之为游戏。&lt;p&gt;如果不是这样，那就是游戏中的中断，他们从你手中夺走控制权，&lt;i&gt;向你展示一些很酷的东西&lt;/i&gt;，彻底把你带出去纯粹视觉事物的体验。我通常会喊“我现在可以玩吗？轮到我了吗？” &lt;p&gt;但我离题了……我现在基本上讨厌游戏，因为这种或类似的体验似乎主导了 AAA 游戏的定义。他们都不尊重你的时间，他们似乎认为“这就像一部电影”是一种赞美，而这与我玩游戏的原因恰恰相反。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dejobaan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Raph 立刻就取得了令人难以置信的成就，对设计深思熟虑，并且对此保持谦虚。有一次我在国际航班上看到他，他兴奋地展示了他在飞机上编写的游戏。他真的很喜欢研究这些东西并思考它。&lt;p&gt;他的作品往往充满了想法，我无法一次性吸收整篇文章。这就像一份 12 道菜的品尝菜单。他的写作的巧妙之处在于，尽管他在这里所说的所有 12 门课程都很重要，但你通常可以只选择一个单独的部分并咀嚼一段时间，仍然可以学到一些东西。&lt;p&gt;（大概稍后再回到其他 11 门课程；它们仍然是新鲜的。）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zoeysmithe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当我开始写小说时，我发现自己很自然地倾向于插入谜题、神秘、曲折和未知。我想有些人就是喜欢这样。解决问题或了解未知事物存在多巴胺方面的作用，并且对它的期待可能非常有趣！游戏以一种更明显的方式做到这一点，但“乐趣规则”却是最重要的。无处不在。&lt;p&gt;看看神秘是多么令人兴奋，众所周知的事情是多么无聊，但具有讽刺意味的是，重力理论还有很多东西，如果以不同的方式放在上下文中，就会比“未知”更令人兴奋和非常有趣。就像某些邪教的神秘或任何无法接近的东西，但最终，我们内心有一些东西想要阅读有关该邪教的内容。我确保自我意识到这一点，并深入研究无聊的“已知”问题。世界并抵制轰动效应以及我如此着迷的事物。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zwaps:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这读起来就像是为制作基于磨练的游戏的人提供的手册。果然，作者专门从事大型多人在线角色扮演游戏领域的工作。&lt;p&gt;如果您是游戏设计师，请对此持保留态度。&lt;p&gt;乐趣并不等于重复挑战。让我也拒绝这样一种隐含的观念：故事是娱乐性的，但从学术上来说，并不有趣。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MattRix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于那些没有明显阅读文章而直接理解标题的人：&lt;p&gt;&gt;换句话说，这篇文章中的每一个段落都可以成为一本书。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;b00ty4breakfast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;给定领域的复杂性并不一定表明其难度。  我怀疑像科斯特这样的经验和声誉的人知道这一点，并且正在为点击量制作一个辛辣的标题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cloud_watching:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;标题很讽刺。游戏设计确实非常简单。&lt;p&gt;这是一篇很棒的文章。我从事游戏设计，我认为这可以用作地形图。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PostOnce:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为参考，拉夫·科斯特 (Raph Koster) 撰写了“这本书”，以供参考。精通游戏设计，并且是 Ultima Online 的首席设计师（除其他外）&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Raph_Koster" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Raph_Koster&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alstonite:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这感觉就像简单≠简单这一概念的经典例子&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;henning:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这里断言的一切都不简单。读完所有内容后，设计和构建一款能够消除 Steam 上发布的所有其他游戏的噪音的游戏仍然很困难。&lt;p&gt;这不是“简单与容易”的问题。如果你必须写很多字来列出你的想法，并且你说每个想法都很深刻并且与所有其他想法都有联系，那么你所谈论的事情并不简单。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.raphkoster.com/2025/11/03/game-design-is-simple-actually/</guid>
+      <pubDate>Thu, 06 Nov 2025 22:24:23 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45841262</comments>
     </item>
     <item>
-      <title>宇宙的膨胀“现在正在放缓，而不是加速”</title>
-      <link>https://ras.ac.uk/news-and-press/research-highlights/universes-expansion-now-slowing-not-speeding</link>
-      <description>&lt;p&gt;对暗能量巡天项目的超新星数据进行了修正。校正后，数据集不再支持具有宇宙学常数的ΛCDM模型（红线），而是更接近于仅使用重子声振荡和宇宙微波背景数据（蓝线）进行组合分析的时变暗能量模型。 0)修正的超新星数据和仅BAO+CMB结果均表明暗能量随时间显着减弱和演化。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Universe's expansion 'is now slowing, not speeding up'&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45840200"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://ras.ac.uk/news-and-press/research-highlights/universes-expansion-now-slowing-not-speeding'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://ras.ac.uk/news-and-press/research-highlights/universes-expansion-now-slowing-not-speeding</guid>
-      <pubDate>Thu, 06 Nov 2025 20:45:39 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45840200</comments>
-    </item>
-    <item>
-      <title>显示 HN：TabPFN-2.5 – 表格数据的 SOTA 基础模型</title>
-      <link>https://priorlabs.ai/technical-reports/tabpfn-2-5-model-report</link>
-      <description>&lt;p&gt;联系方式 * 表示必填 电子邮件地址 * 名字 * 姓氏 * 公司规模 * 1-49 50-249 250-999 1000+ 行业 * 技术/软件 金融服务/银行/保险 零售/电子商务 制造/工业能源/公用事业 运输/物流 教育/研究咨询/专业服务 政府/公共部门 媒体/通信 农业/食品和饮料 其他公司网站 * 您对什么感兴趣。 * 在我的业务中使用 Prior Labs 产品 刚刚探索 /好奇想了解更多 合作机会 媒体、活动或演讲请求 其他兴趣（其他） 行业（其他） 用例 您尝试过使用 TabPFN 是的，我已经在使用它 尝试过 探索 否。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: TabPFN-2.5 – SOTA foundation model for tabular data&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45838540"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://priorlabs.ai/technical-reports/tabpfn-2-5-model-report'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>科学家找到增强衰老大脑记忆力的方法</title>
+      <link>https://news.vt.edu/articles/2025/10/cals-jarome-improving-memory.html</link>
+      <description>&lt;p&gt;弗吉尼亚理工大学的新研究表明，它与大脑中特定的分子变化有关，调整这些过程可以改善记忆力。 “这项工作表明，记忆衰退与可以针对性和研究的特定分子变化有关。重新激活支持记忆的基因第二项研究发表在《大脑研究公报》上，由 Jarome 和博士生 Shannon Kincaid 领导，重点关注 IGF2，这是一种支持记忆形成的生长因子基因。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Scientists find ways to boost memory in aging brains&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45842263"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://news.vt.edu/articles/2025/10/cals-jarome-improving-memory.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;scorpion7:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如此小的模型如何发挥作用真是令人着迷。特别是考虑到训练是一种“如何进行上下文学习”的元学习。我想知道，对于 MLP 在这个架构中的作用是否有一个很好的直觉？对于法学硕士来说，共识似乎是它们存储知识……对于表格数据来说，这会是什么？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vessenes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为您需要一个自定义基准——您是否考虑过从 Excel 世界锦标赛中制定一个基准？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TheTaytay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来真的很酷。在阅读常见问题解答时，它说：
-问：“如何处理文本特征？”
-答：“在本地包版本中，文本特征被编码为分类，而不考虑它们的语义含义。我们的 API 自动检测文本特征并将其语义纳入我们的预测中。本地包版本将文本编码为数字类别，不包含语义。”&lt;p&gt;这意味着自动嵌入&amp;#x2F;语义是为 TabPFN 的 API 使用保留的，对吧？否则，如果我在本地使用它，它将为每个不同的文本值分配一个任意的 int，对吧？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abracos:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它与 automl 工具相比如何？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dill_1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;表格数据仍然被低估！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zurfer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;TabPFN 正在解决的此类问题的当前解决方案类似于 XGBoost。总的来说，这是一个很好的基线，但挑战始终是您需要花费大量时间进行特征工程和调整数据表示，然后像 XGBoost 这样的东西才能在回归或分类问题上提供良好的性能。&lt;p&gt;对我来说，表格数据基础模型的承诺是有足够的可泛化模式，因此您需要更少的手动特征工程和数据清理。&lt;p&gt;感谢团队，我认为这是神经网络的真正创造性应用。我总是对神经网络感到沮丧，因为它们很难调整“结构化”神经网络。数据并且总是表现不佳（对我来说），但我们也从来没有真正的结构化数据基础模型。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;klemens_floege:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好东西！&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://priorlabs.ai/technical-reports/tabpfn-2-5-model-report</guid>
-      <pubDate>Thu, 06 Nov 2025 18:26:53 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45838540</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stevenjgarner:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;弗吉尼亚理工大学的研究人员表明，衰老过程中的记忆丧失可能是可逆的。他们利用 CRISPR 工具纠正了海马体和杏仁核的分子破坏，恢复了老年大鼠的记忆。另一项实验通过有针对性的 DNA 甲基化编辑，恢复了沉默的记忆基因 IGF2。这些发现强调，衰老的大脑可以通过精确的分子干预来恢复功能。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://news.vt.edu/articles/2025/10/cals-jarome-improving-memory.html</guid>
+      <pubDate>Fri, 07 Nov 2025 00:22:53 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45842263</comments>
     </item>
     <item>
-      <title>显示 HN：在 VSCode 中使用编码代理进行动态代码和反馈演练</title>
-      <link>https://www.intraview.ai/hn-demo</link>
-      <description>&lt;p&gt;我认为，越来越清楚的是，编码商品化并不是软件开发商品化。它是一个 VS Code 扩展（是的，也有类似 Cursor 的分支），可以通过本地 MCP 与现有代理（Claude、GPT5-codex）配合使用来构建视觉游览。尽管如此，展示比讲述更好。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Dynamic code and feedback walkthroughs with your coding Agent in VSCode&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45837067"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.intraview.ai/hn-demo'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.intraview.ai/hn-demo</guid>
-      <pubDate>Thu, 06 Nov 2025 16:35:53 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45837067</comments>
+      <title>Hightouch (YC S19) 正在招聘</title>
+      <link>https://job-boards.greenhouse.io/hightouch/jobs/5542602004</link>
+      <description>&lt;p&gt;我们以第一原则思维来应对挑战，行动迅速高效，并以同情心和善意对待彼此。招聘经理访谈 [30m]：与招聘经理讨论过去的经验和未来的运营偏好，以评估是否适合公司价值观和运营原则。代理构建系统面试 [75m]：与面试官合作在概念层面构建代理系统。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Hightouch (YC S19) Is Hiring&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45840612"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://job-boards.greenhouse.io/hightouch/jobs/5542602004'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://job-boards.greenhouse.io/hightouch/jobs/5542602004</guid>
+      <pubDate>Thu, 06 Nov 2025 21:23:46 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45840612</comments>
     </item>
     <item>
-      <title>英国在通过早期风险投资创建独角兽方面表现优于美国</title>
-      <link>https://www.cityam.com/uk-outperforms-us-in-creating-unicorns-from-early-stage-vc-investment/</link>
-      <description>&lt;p&gt;80 亿美元）的早期投资投入到 57 家成功的独角兽企业中，每 10 亿美元的种子投资中有 3. 08 家初创企业。种子投资已从 2014 年的 5000 万美元跃升至 2024 年的 5.38 亿美元，而同期早期投资则从 5.76 亿美元飙升至 30 亿美元。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; UK outperforms US in creating unicorns from early stage VC investment&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45839655"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.cityam.com/uk-outperforms-us-in-creating-unicorns-from-early-stage-vc-investment/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>学习循环和法学硕士</title>
+      <link>https://martinfowler.com/articles/llm-learning-loop.html</link>
+      <description>&lt;p&gt;软件不是这样工作的。但这种观点忽视了软件开发的真正本质。这个准备阶段是法学硕士最闪耀的阶段。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Learning Loop and LLMs&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45841056"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://martinfowler.com/articles/llm-learning-loop.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anon291:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;美国和英国的主要区别在于，美国初创公司正在为世界构建平台，而英国初创公司经常使用这些平台。平台持有者掌握着战略钥匙。市场体系的效率与简单的支配地位无关。新加坡、班加罗尔等其他创业中心也存在同样的问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BrenBarn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我真的不认为这是一件积极的事情。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;0xy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;讽刺？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fourseventy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;根据这篇文章，过去十年英国产生了 57 家独角兽公司，美国产生了 762 家。我并不认为这是表现出色。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.cityam.com/uk-outperforms-us-in-creating-unicorns-from-early-stage-vc-investment/</guid>
-      <pubDate>Thu, 06 Nov 2025 20:01:08 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45839655</comments>
+&lt;p&gt;&lt;strong&gt;Top 18 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Terr_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;软件开发一直抵制将其转变为装配线的想法。&lt;p&gt;这……仅在非常非常狭隘的意义上是正确的。从广义上讲，创建装配线是我们的&lt;i&gt;工作&lt;/i&gt;。我们给它们命名、打包，甚至与大家分享。有时我们甚至会深入研究FactoryFactoryFactory。&lt;p&gt;&gt;编写代码的人不仅仅是“实现者”，而且是“实现者”。它们是发现正确设计的核心。&lt;p&gt;我经常记得 40 年前一篇论文的标题“编程作为理论构建”。 （这里是最近讨论的[0]。）&lt;p&gt;这个框架也有助于强调法学硕士的优势和危险。导致互联网哲学家陷入疯狂理论的相同方面也可能影响程序员创建他们不那么哲学的理论。 （阿谀奉承、虚假冒充权威数据等）&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=42592543"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=42592543&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;让我们对我们刚刚采用的复杂机器的内化知识为零&lt;p&gt;公平地说，我在编写代码大约 3 天后就用自己的代码得到了它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;redhale:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谨表示不同意。&lt;p&gt;为什么当前的语言抽象水平是学习的理想水平，必须保留？为什么不是C？为什么不使用 COBOL？为什么不组装？为什么不是二进制？&lt;p&gt;我的假设是，我们能够并且将会适应体验 OP 在更高的抽象层次上描述的相同类型的学习，即代理实现的规范。&lt;p&gt;适应这一现实需要时间，我们今天拥有的模式和实践必须不断发展。但我认为OP的观点太短视了，植根于他们所知道的和最舒服的东西。我们需要感到不舒服一点。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sega_sai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我同意，编写一些软件需要学习和理解。 
+但有时，一个人只需要完成一些事情（如果一个人的工作不是软件工程师），那么法学硕士是必不可少的。
+另外，在一些软件项目中（至少在我个人的经验中），有些东西很重要并且需要思考，而很多其他东西只是样板，将这个与那个连接起来等等。我非常乐意将其委托给他人。它让我有更多时间思考真正重要的事情。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aeturnum:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我所说的方式是，作为软件“工程师”，您所提供的价值是由您提供的。就是：品味和良好的猜测。只要有足够的时间，任何人都可以敲出代码。任何人都可以阅读有关如何实现算法并最终实现它的文档。您提供价值的方式是对服务有感觉，并对首先关注哪里以及如何解决问题有良好的直觉。培养这种品味和熟悉度的唯一方法就是亲自动手。&lt;p&gt;一旦你能够毫无疑问地展示出你应该做什么，软件工程师就没有什么价值了。它们仍然重要的原因是产品选择通常是在非常模糊的条件下做出的。约翰·卡马克说：“如果你不确定以哪种方式做某事，那就两种方式都做，看看哪种效果更好。”[1] 这可能看起来与我所说的相反，但实际上缩小了“一切可能”的范围。两个选择是巨大的价值！作为一名工程师，这是你提供的很多东西，而你磨练这种感觉的唯一方法就是通过为公司的工作而努力。产品正在生产中。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;aeflash.com&amp;#x2F;2013-01&amp;#x2F;john-carmack.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;aeflash.com&amp;#x2F;2013-01&amp;#x2F;john-carmack.html&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很高兴学习基本复杂性（例如业务逻辑），但认为学习附带复杂性（代码实现细节）的价值很低甚至没有价值。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Jtsummers:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;实际标题是：The Learning Loop and LLMs&lt;p&gt;出于某种原因，johnwheeler 对它进行了编辑，大多数评论都是针对标题而不是文章内容（尽管无论使用正确的标题还是不同的标题，这都是正常的，这是 HN 的传统）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bossyTeacher:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;绘画也是如此。并没有阻止这里的许多技术人员使用它。许多技术人员相信他们的技术正在改善世界，即使他们的技术正在窃取人们受版权保护的艺术或让人们感到沮丧。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dionian:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;我最近开发了一个用于构建分布式系统的框架——基于我在书中描述的模式。我对法学硕士进行了大量实验。他们帮助集思广益、命名和生成样板文件。但同样常见的是，他们生成的代码存在微妙的错误或与更深层次的意图不一致。我不得不扔掉大的部分并从头开始。&lt;p&gt;好吧，我这样做，但我强迫它使我的代码模块化，并且我经常替换整个部分，但这是整体策略中的战术举措。 LLM 会产生垃圾，但是，在正确的指导下，它可以非常有效地取代垃圾。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;johannes1234321:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;软件开发的某些部分需要理解目的和代码并做出正确的决策或深入理解以进行优化。而且有些部分只是使用库或进行一些重构的无聊仪式。&lt;p&gt;第一个主要需要经验丰富的人员，第二个很无聊并且易于自动化。&lt;p&gt;问题出在两者之间。并让人们能够做到第一。人工智能可以成为一种工具，也可以分散注意力。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chemotaxis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就其本身而言，我不确定这是一个很好的论点。给马穿鞋是一种学习行为。宰杀自己的猪是一种学习行为。自己缝制衣服是一种学习行为。编写自己的操作系统是一种学习行为……但如果您不这样做，情况也不一定会更糟。也许你只是有更多的时间来学习其他东西。&lt;p&gt;也许这里对法学硕士有更广泛的批评：如果你将大部分智力活动外包给法学硕士，还剩下什么？但我不认为这就是作者提出的论点。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dboreham:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;剧透：作者使用法学硕士来自动化他的大部分开发工作。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;onion2k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;学习&lt;i&gt;什么&lt;/i&gt;？当我编写软件时，我学习领域、问题空间、架构、需求等，以及如何将这些东西转化为代码。不过，我实际上并不&lt;i&gt;关心&lt;/i&gt;代码 - 一旦发生变化，我就会扔掉代码或更改它。这是解决问题过程中的产物，这并不是重要的部分。抽象的解决方案是我关心的。&lt;p&gt;LLM 只能真正帮助实现最不重要部分的自动化生产。没关系。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shadowgovt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嗯...我想我明白乔希先生的意思
+ 是这么说的，但标题与我们所做的事情的本质是自动化，包括自动化自动化的观念相冲突。&lt;p&gt;乍一看，这听起来像是“不要编写编写代码的代码”，其中...我编写过的一些最有用的工具是用于自动化代码中的模式的宏，我知道这不是他的意思。&lt;p&gt;也许更好的说法是“自动化编写软件并不能消除理解它的需要？”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fsndz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;无论如何我们都无法自动化它，而且 Vibe 编码被高估了：&lt;a href="https:&amp;#x2F;&amp;#x2F;medium.com&amp;#x2F;thoughts-on-machine-learning&amp;#x2F;vibe-coding-is-overerated-2aa0ed81e9cb" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;medium.com&amp;#x2F;thoughts-on-machine-learning&amp;#x2F;vibe-coding-...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RobRivera:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我非常喜欢 cpp 的元编程功能来为我生成代码。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Animats:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;前端设计几年前就应该是拖放式的。 LLM 现在应该这样做。如果不是因为 HTML 是一种糟糕的 2D 布局编码方式，情况就会如此。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;crabmusket:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“编程作为理论构建”仍然不败。&lt;p&gt;此外，看到“模式语言”中的文字部分分隔符字形也很有趣。到场。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://martinfowler.com/articles/llm-learning-loop.html</guid>
+      <pubDate>Thu, 06 Nov 2025 22:05:58 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45841056</comments>
     </item>
     <item>
-      <title>Auraphone：一款用于在活动中收集人们信息的简单应用程序</title>
-      <link>https://andrewarrow.dev/2025/11/simple-app-collect-peoples-info-at-events/</link>
-      <description>&lt;p&gt;通过蓝牙，您的服务器会进行广告，当您连接时，它会告诉您它具有哪些特征。如果我已经缓存了这个文件，那么我就可以断开与该服务器的连接。现在，当你把手机放在口袋里时，这个应用程序不会继续运行。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Auraphone: A simple app to collect people's info at events&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45835931"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://andrewarrow.dev/2025/11/simple-app-collect-peoples-info-at-events/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tobr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从技术角度来看很有趣。但这里要解决的真正问题隐藏在最后的这个一次性的东西中，它甚至表明这完全是错误的技术：&lt;p&gt;&gt;因此，我看到 auraphone 在活动中工作的方式，你像往常一样走来走去，混在一起，但是是的，每个人都拿出手机并运行该应用程序，但只有这个应用程序。您仍然在场并参与对话，而不仅仅是关注手机上的其他干扰因素。&lt;p&gt;这个应用程序有何神奇之处，可以让您的手机不再成为干扰因素？如何让每个人都下载新应用程序？如果您可以让他们这样做，为什么不通过普通服务器交换信息呢？然后你可以直接告诉应用程序你正在参加哪个活动（当然，使用蓝牙，但二维码甚至只是一个链接可能会更好），然后他们不需要在打开应用程序的情况下四处走动。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wigglefruit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;手机街通票&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://andrewarrow.dev/2025/11/simple-app-collect-peoples-info-at-events/</guid>
-      <pubDate>Thu, 06 Nov 2025 14:54:16 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45835931</comments>
+      <title>国税局结束直接归档</title>
+      <link>https://www.wsj.com/politics/policy/irs-direct-file-tax-program-ended-00172148</link>
+      <guid isPermaLink="true">https://www.wsj.com/politics/policy/irs-direct-file-tax-program-ended-00172148</guid>
+      <pubDate>Fri, 07 Nov 2025 00:42:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45842380</comments>
     </item>
     <item>
-      <title>黑洞耀斑是观测到的最大且最远的</title>
-      <link>https://www.caltech.edu/about/news/black-hole-flare-is-biggest-and-most-distant-seen</link>
-      <description>&lt;p&gt;耀斑后面的超大质量黑洞是一种吸积或进食黑洞，称为活动星系核（AGN）。当超大质量黑洞的引力剪切一颗距离太近的恒星时，就会发生这种现象，随着时间的推移，当恒星螺旋进入黑洞时，慢慢地吞噬恒星。如果耀斑来自 TDE，科学家估计超大质量黑洞吞噬了一颗质量至少是太阳质量 30 倍的恒星。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Black Hole Flare Is Biggest and Most Distant Seen&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45838864"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.caltech.edu/about/news/black-hole-flare-is-biggest-and-most-distant-seen'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SoftTalker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“这颗恒星距离一个巨大的黑洞太近了”&lt;p&gt;就好像这颗恒星在这方面有任何作用一样。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vkou:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; “如果你使用阿尔伯特·爱因斯坦著名的公式 E = mc2 将我们的整个太阳转化为能量，那就是自从我们开始观察它以来，从这个耀斑中涌出的能量，”这是一个很棒的新闻引述，但这里的含义是，作为这个过程的一部分，恒星的整个质量正在转化为能量，但很明显不是。 （由于这一切，黑洞的质量正在净增加。）&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.caltech.edu/about/news/black-hole-flare-is-biggest-and-most-distant-seen</guid>
-      <pubDate>Thu, 06 Nov 2025 18:54:33 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45838864</comments>
+      <title>旨在压制医院房地产帝国批评者的秘密运动</title>
+      <link>https://www.motherjones.com/politics/2025/10/medical-properties-trust-mpt-steward-health-care-ed-aldag-secret-campaign-critics-surveillance-reit/</link>
+      <description>&lt;p&gt;与此同时，《华尔街日报》率先注意到了这种工作管理不善的情况，并披露 Steward 医院欠医疗供应公司和其他供应商近 10 亿美元。 “他们总是在寻找一些爆炸性的东西，让事情消失，”一位与奥黛尔关系密切的消息人士在琼斯母亲查看的消息中写道，这些消息已直接与消息人士确认。 “虽然 Steward 是客户，但很明显 MPT 才是 Audere 所保护的对象。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The secret campaign to silence critics of a hospital real estate empire&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45841910"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.motherjones.com/politics/2025/10/medical-properties-trust-mpt-steward-health-care-ed-aldag-secret-campaign-critics-surveillance-reit/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.motherjones.com/politics/2025/10/medical-properties-trust-mpt-steward-health-care-ed-aldag-secret-campaign-critics-surveillance-reit/</guid>
+      <pubDate>Thu, 06 Nov 2025 23:39:07 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45841910</comments>
     </item>
   </channel>
 </rss>
