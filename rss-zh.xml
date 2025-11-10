@@ -6,91 +6,44 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 10 Nov 2025 12:50:59 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Nov 2025 15:26:25 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>安装和使用 HP-UX 9</title>
-      <link>https://thejpster.org.uk/blog/blog-2025-11-08/</link>
-      <description>&lt;p&gt;HP 9000 Model 340 该机器的系统规格为：Motorola 68030 CPU，16。是的，68030 机器网络从 PA-RISC 机器启动。那么，这是如何运作的呢？&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Installing and using HP-UX 9&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45873904"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://thejpster.org.uk/blog/blog-2025-11-08/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pjmlp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我使用了版本 10 和 11。&lt;p&gt;我在 HP-UX 上的重要经验是 HP Vault，它是在 UNIX 中创建容器的最早方法之一，并经历了 32 位到 64 位的过渡。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mesrik:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;恕我直言，HP-UX 拥有我所见过的商业或免费 UNIX 中写得最好的手册页。我已经与很多人一起工作过。&lt;p&gt;所有手册页都写得很好，格式精美，易于阅读，几乎所有手册页都附带了有价值的示例，可以提供足够快的理解以最经常检查用法。这绝对是我从那时起就怀念其他 *nix 系统的事情。&lt;p&gt;但是，有太多的事情做得如此出色，并且使 HP-UX 的维护变得很好，因此不值得尝试记住并列出所有内容。但不幸的是 shell 环境与 Linux 从一开始就拥有的便利的 GNU 工具并不匹配。如果允许的话，这就是不费力地安装（阅读：从源代码编译相当长的时间）那些 HP-UX。对于大学计算中心来说，这没问题，但对于电信公司来说，这是一个很大的问题——首先必须获得产品所有者的许可：&amp;#x2F;&lt;p&gt;但只是一个例子，Ignite-UX 是我最喜欢的 HP-UX 之一。使用一个简单的命令和几个选项即可简单地启动 DAT 磁带，然后可以使用它来恢复整个运行的全功能系统或将开发的系统首先克隆到临时实验室，然后轻松投入生产，这可以节省主要升级和迁移的时间。我测试过的 Linux 裸机备份系统都无法恢复完全相同的磁盘布局，通常 LVM 部分做得很差。顺便说一句，VmWare p2v 迁移工具也是如此。&lt;p&gt;Sistina 在 Red Hat 购买 Linux LVM 之前首先开发的 Linux LVM，其实现与 HP-UX 在一段时间内的实现完全一样。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aniou:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如今，NetBSD 提供了类似于“上下文相关文件系统”的功能，即一种特殊形式的符号链接，可以根据广泛的属性集指向不同的位置：从 &lt;i&gt;domainname&lt;/i&gt; 到 &lt;i&gt;machine_arch&lt;/i&gt; 到 &lt;i&gt;gid&lt;/i&gt;。&lt;p&gt;有关详细信息，请参阅&lt;a href="https:&amp;#x2F;&amp;#x2F;man.netbsd.org&amp;#x2F;symlink.7" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;man.netbsd.org&amp;#x2F;symlink.7&lt;/a&gt; - 手册最后的&lt;i&gt;魔法符号链接&lt;/i&gt;部分。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chkaloon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谢谢你。让人回想起 90 年代在机房长时间使用 HP 9000 和 RS&amp;#x2F;6000 度过的时光。看到 SAM 界面让我不寒而栗:)&lt;p&gt;有像你这样的人保存这段历史真是太好了&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spedione:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“上下文相关的文件系统”这个概念有点迷幻，但我认为这是一个非常巧妙的解决方案，“某些系统需要自己的文件版本，其他文件应该是通用的”。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TMWNN:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;摘自作者的 Reddit 帖子 &lt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;vintagecomputing&amp;#x2F;评论&amp;#x2F;1ot83o4&amp;#x2F;you_can_boot_68k_hpux_and_parisc_hpux_from_the&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;vintagecomputing&amp;#x2F;comments&amp;#x2F;1ot83o4&amp;#x2F;y...&lt;/a&gt;&amp;gt;：&lt;p&gt;&amp;gt;我的 HP 9000 Model 340 通过网络从 HP 启动9000 Model 705 处于集群服务器模式，我了解了一些有关 HP-UX 及其文件系统的令人不安的事情。&lt;p&gt;&amp;gt;博客末尾的启动视频，我在其中播放了一些 Columns 的原始版本。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://thejpster.org.uk/blog/blog-2025-11-08/</guid>
-      <pubDate>Mon, 10 Nov 2025 08:48:14 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45873904</comments>
+      <title>使用 iCE40 FPGA 进行有趣的 SPI 路由</title>
+      <link>https://danielmangum.com/posts/spi-routing-ice40-fpga/</link>
+      <description>&lt;p&gt;但是，它确实包含用于持久比特流存储的 GD25Q16CEIGR 闪存芯片。来自 Arty A7 参考手册：对非易失性闪存器件进行编程时，比特流文件通过两步过程传输到闪存。首先，用可以对闪存器件进行编程的电路对 FPGA 进行编程，然后通过 FPGA 电路将数据传输到闪存器件（这种复杂性通过 Xilinx 工具对用户隐藏）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Interesting SPI Routing with iCE40 FPGAs&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45875918"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://danielmangum.com/posts/spi-routing-ice40-fpga/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://danielmangum.com/posts/spi-routing-ice40-fpga/</guid>
+      <pubDate>Mon, 10 Nov 2025 13:40:59 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45875918</comments>
     </item>
     <item>
-      <title>欧洲将决定 Wi-Fi 和蜂窝网络是否共享 6 GHz</title>
-      <link>https://www.theregister.com/2025/11/09/europe_to_decide_if_6/</link>
-      <description>&lt;p&gt;“阻止 Wi-Fi 访问 6 GHz 以上频段将对欧洲 Wi-Fi 技术的未来造成毁灭性打击。它声称 Wi-Fi 可以访问“比移动设备少得多的频谱。” " ® 获取我们的技术资源 分享更多关于 6G Wi-Fi 的更多信息 × 更多关于 6G Wi-Fi 的狭窄主题 5G 边缘计算 更广泛的主题 蜂窝网络 移动网络标准 Wi-Fi 联盟 更多。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Europe to decide if 6 GHz is shared between Wi-Fi and cellular networks&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45874659"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.theregister.com/2025/11/09/europe_to_decide_if_6/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oytis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就背景而言——美国、英国和中国做什么？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;welder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望政府能够对移动运营商提出修复 SS7 漏洞的条件。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hk__2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;欧盟，不是欧洲。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mvandermeulen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谢谢欧洲？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.theregister.com/2025/11/09/europe_to_decide_if_6/</guid>
-      <pubDate>Mon, 10 Nov 2025 10:53:35 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45874659</comments>
+      <title>Steven Heller 本月最佳字体：Archive Matrix</title>
+      <link>https://ilovetypography.com/2025/11/07/steven-hellers-font-of-the-month-archive-matrix/</link>
+      <guid isPermaLink="true">https://ilovetypography.com/2025/11/07/steven-hellers-font-of-the-month-archive-matrix/</guid>
+      <pubDate>Mon, 10 Nov 2025 13:38:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45875903</comments>
     </item>
     <item>
-      <title>微软质量控制缺失已失控</title>
-      <link>https://www.theregister.com/2025/11/08/microsoft_lacks_quality_control/</link>
-      <description>&lt;p&gt;" ® 获取我们的技术资源 分享 更多关于 Microsoft Windows Windows 11 更多类似内容 × 更多关于 Microsoft Windows Windows 11 更窄的主题 Active Directory Azure Bing Bitlocker BSoD Excel Exchange Server HoloLens Internet Explorer LinkedIn Microsoft 365 Microsoft Build Microsoft Edge Microsoft Fabric Microsoft Ignite Microsoft Office Microsoft Surface Microsoft Teams.NET Office 365 OS/2 Outlook 补丁星期二 Pluton PowerShell SharePoint Skype SQL Server Visual Studio Visual Studio Code Windows 10 Windows 2000 Windows 7 Windows 8 Windows Server Windows Server 2003 Windows Server 2008 Windows Server 2012 Windows Server 2013 Windows Server 2016 Windows Linux 子系统 Windows XP WPF Xbox Xbox 360 更广泛的主题 Bill Gates 操作系统 更多关于共享 141 评论 更多关于 Microsoft Windows Windows 11 更多类似的内容 × 更多关于 Microsoft Windows Windows 11 更窄的主题 Active Directory Azure Bing Bitlocker BSoD Excel Exchange Server HoloLens Internet Explorer LinkedIn Microsoft 365 Microsoft Build Microsoft Edge Microsoft Fabric Microsoft Ignite Microsoft Office Microsoft NET Office 365 OS/2 Outlook 补丁星期二 Pluton PowerShell SharePoint SQL Server Visual Studio Visual Studio Code Windows 10 Windows 2000 Windows 7 Windows 8 Windows Server Windows Server 2003 Windows Server 2008 Windows Server 2012 Windows Server 2013 Windows Server 2016 适用于 Linux 的 Windows 子系统 Windows XP WPF Xbox Xbox。 360 更广泛的主题 比尔·盖茨操作系统 TIP US OFF 向我们发送新闻。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Microsoft's lack of quality control is out of control&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45873876"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.theregister.com/2025/11/08/microsoft_lacks_quality_control/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 19 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;karel-3d:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;微软和苹果的软件质量最近都在下降。到底是怎么回事。是AI生成的代码吗？不可能是这样...&lt;p&gt;我不知道 Google 的情况怎么样；他们的应用程序和网站都还不错；然而，GMail 似乎停滞不前——是的，他们给它上了 LLM，很酷；但除此之外...他们添加了聊天功能？几年前？但至少谷歌的东西大部分都是有效的，即使它很无聊。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_the_inflator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;正如一位 MS 主管出于沮丧而说道：“我们进行了很多测试。我们的测试人员称为最终用户。就是这样。”&lt;p&gt;更准确地说：他说 M​​Slers 根据结果获得报酬，实现了商业价值。测试人员存在并被称为“最终用户”。测试是强制性的，也是核心理念的一部分 - 他们必须以不同的方式进行测试。&lt;p&gt;原因：担心如果进展缓慢会错过机会。&lt;p&gt;我回忆起那个时代，在没有互联网连接的情况下放入 CD。实际的办公室一团糟。数以千计的半成品应用程序可能随时被取消。 Windows XP 的 UI 被称为“光面” - Office 的一些应用程序 UI 是给孩子们的迷幻药之旅。这太荒谬了。没有任何东西可以使用，也无法用于客户演示。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fergie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;微软的质量控制一度堪称传奇&lt;p&gt;我与微软打交道已经30年了，在那段时间里我从未意识到微软拥有“质量”的声誉。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fransje26:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;曾经，微软的 QC 堪称传奇。&lt;p&gt;这位传奇 QC 现在就在我们身边吗？&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.theregister.com&amp;#x2F;2018&amp;#x2F;04&amp;#x2F;20&amp;#x2F;windows_98_comdex_bsod_video&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.theregister.com&amp;#x2F;2018&amp;#x2F;04&amp;#x2F;20&amp;#x2F;windows_98_comdex_bso...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fortranfiend:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;过去几年补丁一直很混乱。让我觉得某人或一群人要么辞职，要么被解雇，要么被拉进人工智能领域。所犯的错误是初级程序员没有适当的领导或审查和测试团队所犯的错误。再加上删除功能以及在操作系统和办公产品中添加过多的遥测技术。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ethin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很热门，但我认真地认为敏捷和 Scrum 和“让一个开发人员做很多不一定算作软件开发的事情”都是很重要的。 （如RDB设计和管理）是所有这些问题的直接原因。我认为，敏捷 Scrum（或者至少是企业理解的“敏捷”“Scrum”）将“快速行动、打破常规、将一切整合到尽可能少的位置”制度化。心态，以“减少支出”之类的名义以及“快速发货，后果自负”。这包括，哦，我不知道，放弃 QA&amp;#x2F;QC 并将所有这些都交给最终用户。也许真正的敏捷可能不会这样做，但我不能这么说，因为据我所知，很少有（如果有的话）公司真正使用真正的敏捷，而是重新利用这个词来表示完全不同的系统。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bronlund:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;抱怨微软缺乏质量控制就像抱怨脱衣舞俱乐部的阅读照明很差。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ReptileMan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不幸的是，微软唯一不差劲的是他们的销售能力。交付和质量是可选的，但让公司使用他们的堆栈却不是。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;giancarlostoro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不仅如此，甚至他们的游戏工作室也是如此。以星空为例。大量的炒作，大量的失望。我是贝塞斯达的众多忠实粉丝之一。 Starfield 绝对可以拥有更多，但 HN 知道软件项目会发生什么。未能满足最后期限，营销“”昨天，业务部门开始发出信号，表示我们需要它，然后很多事情就被削减了。我在 Reddit 上看到大量关于 Starfield 被删减的评论，这很荒谬，Bethesda 的游戏总是内容丰富。&lt;p&gt;微软是一个巨大的庞然大物，它需要以一种允许其非常独特的部分正常运行的方式进行重组。我希望微软能够让贝塞斯达拥有完全的自主权。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andyish:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这不仅仅是他们的旗舰产品。它几乎涵盖了他们发布的_所有_内容。&lt;p&gt;我拥有相对较小的劳动力和办公室管理平台。当 MS Places 宣布时，我们以为一切都结束了。我们的表现不错，但现在一个大玩家已经进入市场，只需轻轻一击即可消灭所有竞争对手。&lt;p&gt;无论如何，这很糟糕。等待了几个月的潜在客户尝试使用它，并立即寻找替代品。现有客户告诉我们他们尝试使用它，但由于某种原因放弃了。&lt;p&gt;但微软的 MO 似乎一直是“客户驱动测试”。从我记事起。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Sharlin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 2014 年，该公司决定不再需要许多测试人员。玛丽·乔·弗利 (Mary Jo Foley) 报告说，“一大块”被解雇了。微软不需要费心去尝试传统的代码测试方法。瀑布出来了。敏捷已经流行了。&lt;p&gt;如今，一个普通的软件开发人员需要完成这项工作，并拥有过去需要六个人或更多人才能完成的技能。&lt;p&gt;在史前时期当然有更多的角色，但如果我们想想 2000 年代，我至少可以数一下：RDB 设计和管理；规划和规范工作；与客户互动；测试；将 UI 和后端工程合并为“全栈”；将编码、运营和管理合并为“devops”……我很确定开发人员还没有实现自己销售的唯一原因是销售部门是一个利润中心，因此是神圣不可侵犯的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;recursivedoubts:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“慢慢地，然后突然”&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ktzar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;提前使用 ChatGPT 并获得人工智能知识债的后果是什么？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sublimefire:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一篇相当薄弱的评论，我期待更多细节。但那篇文章下面有很多评论，可能比正文更有趣。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blueflow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;提醒：UEFI&amp;#x2F;SecureBoot&amp;#x2F;systemd-boot 堆栈也由 Microsoft 控制。 Microsoft 签署了我们的引导加载程序。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rochak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;微软已经陷入了如此深的泥潭，这几乎令人难以置信。我正在等待他们的利润因集体抵制而开始受到打击的那一天。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;netdevphoenix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;文章遗漏了最重要的问题：所有这些事故是否会给微软带来持久的负面影响？答案可能是否定的。可悲的是，这就是股东所关心的一切。因此，在我看来，这种情况将继续发生。那些质量保证测试人员不会很快回来。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gary_0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[已删除]&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dude250711:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;情况会变得更糟，基于 HTML 的“本机”的联合攻击将变得更糟。用户界面、外包和氛围编码对于任何剩余的原始开发人员来说都难以抵御。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.theregister.com/2025/11/08/microsoft_lacks_quality_control/</guid>
-      <pubDate>Mon, 10 Nov 2025 08:44:52 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45873876</comments>
+      <title>Refashion：通过模块化设计可重构服装</title>
+      <link>https://arxiv.org/abs/2510.11941</link>
+      <description>&lt;p&gt;) Connected Papers Toggle Connected Papers（什么是 Connected Papers。） Litmaps Toggle Litmaps（什么是 Litmaps。） 代码链接 Toggle Papers with Code（什么是 Papers with Code。）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Refashion: Reconfigurable Garments via Modular Design&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45875697"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arxiv.org/abs/2510.11941'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://arxiv.org/abs/2510.11941</guid>
+      <pubDate>Mon, 10 Nov 2025 13:19:36 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45875697</comments>
     </item>
     <item>
-      <title>DNS 提供商 Quad9 将盗版阻止令视为“存在的威胁”</title>
-      <link>https://torrentfreak.com/dns-provider-quad9-sees-piracy-blocking-orders-as-existential-threat/</link>
-      <description>&lt;p&gt;也就是说，对于瑞士小型非营利组织来说，这些诉讼不仅仅是法律分歧。在最近的一篇博客文章中，Quad9 解释说它的基金会没有这种奢侈。大问题在法国，法院已明确裁定这些封锁令是合理的，虽然其中一些正在上诉，但没有迹象表明它们会很快被撤销。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; DNS Provider Quad9 Sees Piracy Blocking Orders as "Existential Threat"&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45874850"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://torrentfreak.com/dns-provider-quad9-sees-piracy-blocking-orders-as-existential-threat/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Imustaskforhelp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; “什么时候合法合规才成为事实上的审查？”&lt;p&gt;我非常同意这个说法。另一方面，大公司可以以某种方式“合法”地进行经营活动。做一些我认为行不通的事情，但他们有这么多资源可以在很长一段时间内拖延法庭案件。&lt;p&gt;事实是，即使在那之后，即使他们被罚款一些美元。他们很可能只是付钱，而不是尝试实际解决对除公司以外的每个人都有害的核心问题。&lt;p&gt;一切都是为了利润。我有时想知道是否有一个词来形容这种现象，说明我们的系统如何从游说到此而陷入如此腐败的状态，但同时真正的非营利组织却因同样的行为而受到生存威胁，但他们根本没有资金......&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MangoToupe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我越来越认为，数字媒体只是失去了企业利益，除了不在互联网上花费金钱或时间之外，我们对此无能为力。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://torrentfreak.com/dns-provider-quad9-sees-piracy-blocking-orders-as-existential-threat/</guid>
-      <pubDate>Mon, 10 Nov 2025 11:21:47 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45874850</comments>
+      <title>科学家发现“Gyromorphs”材料可增强基于光的计算机</title>
+      <link>https://www.nyu.edu/about/news-publications/news/2025/november/scientists-discover-breakthrough-materials-to-enhance-light-base.html</link>
+      <guid isPermaLink="true">https://www.nyu.edu/about/news-publications/news/2025/november/scientists-discover-breakthrough-materials-to-enhance-light-base.html</guid>
+      <pubDate>Mon, 10 Nov 2025 13:09:17 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45875597</comments>
     </item>
   </channel>
 </rss>
