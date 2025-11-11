@@ -6,237 +6,157 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 10 Nov 2025 21:25:55 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Nov 2025 01:52:52 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>您不知道自己需要的懒惰 Git UI</title>
-      <link>https://www.bwplotka.dev/2025/lazygit/</link>
-      <description>&lt;p&gt;我们都可以从lazygit 中学到如何设计具有无缝用户体验的令人难以置信的软件。其他项目增添了更多魔力（例如，lazygit 中的神奇之处。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The lazy Git UI you didn't know you need&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45878578"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bwplotka.dev/2025/lazygit/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 15 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rckt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就我个人而言，我不认为所有额外的层都是舒适的工具。我很少需要查看分支、分支之间的关系等。对我来说，使用 cli 一直是最可靠、最简单的方法。除了 cli 之外，我唯一需要的 git 工具是一个方便的冲突解决程序。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mariusor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我还是更喜欢tig[1]。它的功能可能较少，但 UI 更简洁，界面速度稍快。&lt;p&gt;但我从它中获得的主要用途是增量索引添加，因此可能不如 OP 那么多。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;jonas.github.io&amp;#x2F;tig&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;jonas.github.io&amp;#x2F;tig&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xeromal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些天我被困在 Mac 上，我想念 Git 扩展，这是我最喜欢的 Windows git UI&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;user432678:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也许有一天，但在使用了少量 git 别名近 15 年之后，我就是无法切换到其他任何别名。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jannniii:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的！祝你好运到lazygit！&lt;p&gt;真的很高兴看到它在这里出现，几年前我在切换到Astronvim（lazyvim 与它捆绑在一起）后成为了一名皈依者。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nicois:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很大一部分 git 用户不知道 git-absorb (&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tummychow&amp;#x2F;git-absorb" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tummychow&amp;#x2F;git-absorb&lt;/a&gt;)。这几乎是对任何 git 流程的补充，极大地减少了您想要将分阶段更改修改为多次提交的痛苦。
-这与许多 TUI 和其他工具很好地结合在一起，其中大多数不提供任何类似的功能。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bdewberry:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;简单、干净、CLI、Vim 导航&lt;p&gt;Lazy git 勾选了很多框。易于采用的工具来加速和简化您的 git 工作流程&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;submeta:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Lazygit、WezTerm、NeoVim、Yazi（TUI 文件管理器）是一个奇妙的组合！我为我从事的每个项目都有一个 tmuxniator 配置文件。在 WezTerm 中打开一个选项卡，运行“mx projectname”，它会打开一个用于 Yazi 的拆分，一个用于 Lazygit，一个用于 neovim，一个用于我的代理编码工具。可爱的设置，超快，一切都在终端中。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nice_byte:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;唯一存在的好的 git GUI 是 Fork。不幸的是，它不能在 Linux 上本地运行，尽管有些人很幸运地在 Wine 下运行它。&lt;p&gt;我发现lazygit 特别糟糕，以至于我最好像穴居人一样在终端中手动输入 git 命令。不知何故，lazygit 找到了一种方法，使 git 变得比现在更加混乱和用户敌意，这是一项重大成就。&lt;p&gt;使用它是一个严厉的提醒，提醒人们第一次运行 emacs 或 vim 时必须经历的事情。&lt;p&gt;这种愚蠢的 ui 范式，你必须通过记住命令和快捷方式来主动学习使用简单的软件，需要停止。这是令人难以置信的低效并且不尊重用户的时间。&lt;p&gt;想想看 - 我实际上从来没有必要打开 Fork 的手册（我什至不确定它是否有手册），而在lazygit 中，如果不参考手册就完全不可能做最基本的事情。为什么我们集体继续容忍这些糟糕的工具？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;prmph:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你可能会笑，但在多年的认真开发中，我还没有遇到过比 SourceTree 更好的 git UI 工具。&lt;p&gt;如果我想成为硬核，我会使用原始的 git CLI。当您需要做一些相对简单的事情，但使用 CLI 和我尝试过的大多数其他工具来做这件事会非常麻烦时，SourceTree 使使用 git 变得更加愉快，这是无与伦比的。&lt;p&gt;在我看来，它的文件状态和历史记录视图是无与伦比的。我可以轻松地上台或下台帅哥，甚至台词。整个 UI 总体来说相当精美，使用起来很愉快。&lt;p&gt;没有 Linux 版本真是太遗憾了。我已经尝试过世界上所有其他 git 界面，并且不断回来使用它。与此同时，我在上周末尝试了lazygit，我认为它是最好的 TUI git 工具之一，绝对比 GitUI 更好。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Zambyte:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我直接使用 git 的次数越少，我就越确信 git 对于 git 存储库来说是一个绝对糟糕的接口。我已经使用 jj 大约两年了，我简直无法想象回到使用 git cli。我没有使用过lazygit，但如果你觉得它有趣，我说请使用它。&lt;p&gt;请是因为我厌倦了解决人们被git 混淆所产生的问题。只要使用 git cli 以外的任何东西，它可能会更好。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tcoff91:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我是一个很好的键盘驱动的 git TUI 的忠实粉丝，比如 magit、neogit、lazygit 等...（只要你先学习 CLI 并理解它）。&lt;p&gt;现在我不再直接使用 git，而是使用 jujutsu (jj)。&lt;p&gt;一旦我非常精通 jj cli，我就选择了 jjui：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;idursun&amp;#x2F;jjui" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;idursun&amp;#x2F;jjui&lt;/a&gt;&lt;p&gt;此外，由于拆分提交是一个极其频繁的操作，所以这个 neovim 插件非常好：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;julienvincent&amp;#x2F;hunk.nvim" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;julienvincent&amp;#x2F;hunk.nvim&lt;/a&gt;&lt;p&gt;这个 neovim 插件对于解决 jj 冲突也非常有用：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;rafikdraoui&amp;#x2F;jj-diffconflicts" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;rafikdraoui&amp;#x2F;jj-diffconflicts&lt;/a&gt;&lt;p&gt;现在我用 jj 而不是 git 编辑提交图就像我在编辑器中的文件中移动代码行一样轻松。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aeve890:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我推荐lazydocker，来自同一作者IIRC。太棒了图伊。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;magdyks:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;懒惰的规则！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;varunramesh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当我想要暂存特定行而不是整个文件时，我使用lazygit。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.bwplotka.dev/2025/lazygit/</guid>
-      <pubDate>Mon, 10 Nov 2025 17:50:21 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45878578</comments>
+      <title>使用稀疏条在 CPU 上进行高性能 2D 图形渲染 [pdf]</title>
+      <link>https://github.com/LaurenzV/master-thesis/blob/main/main.pdf</link>
+      <guid isPermaLink="true">https://github.com/LaurenzV/master-thesis/blob/main/main.pdf</guid>
+      <pubDate>Mon, 10 Nov 2025 22:05:16 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45881568</comments>
     </item>
     <item>
-      <title>Vibe 代码警告 – 个人案例研究</title>
-      <link>https://github.com/jackdoe/pico2-swd-riscv</link>
-      <description>&lt;p&gt;在大约 3-4k 行代码之后，我完全不知道发生了什么，并且我不会考虑我编写的这段代码，但添加越来越多的测试感觉“很好”，或者至少让人放心。在本例中，当代码增长约 4 倍（从 1k 行增加到 4k 行）时，就会发生这种情况。当阅读人类代码时，符号有一个目的，有人想“我将把它放在一个变量中，稍后我会检查它的状态。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Vibe Code Warning – A personal casestudy&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45874987"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/jackdoe/pico2-swd-riscv'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 18 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rzzzt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您可以询问 Mermaid 语法并收到格式良好的框图。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hackmack10:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这句话说得很好。  我以为过去几个月我已经筋疲力尽了。  事实是，我只是整天审查人工智能代码，我非常讨厌它。  真累。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abathologist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一个关键——也许是关键——在这里评论，IMO 如下：&lt;p&gt;&gt;我确实想创造东西，很多时候我不想知道某些东西，但我想使用它&lt;p&gt;这承认了在没有任何实质性理解的情况下制造、使用和利用的愿望。&lt;p&gt;当然，出于某些原因，这看起来很有吸引力，但这是一种错误的、退化的生存方式。思考和存在是一体的。知道和使用是同一活动的两个维度。&lt;p&gt;这些工具的使用方式是一种未经理解而制作、未经学习而使用、一种不加思考的存在方式。&lt;p&gt;没有什么可以阻止我们深思熟虑、严格、丰富地使用生成式机器学习，只是我们生活和工作的系统不希望我们深思熟虑、丰富和严谨。他们希望我们顺从、反应灵敏、自动化、马虎。&lt;p&gt;我们不必屈服于他们的要求。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bdangubic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;在大约 3-4k 行代码之后，我完全不知道发生了什么&lt;p&gt;此处完全停止，在此之后您无法编写任何内容......&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;raphman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;鉴于代码已完全通过振动编码，这在实践中意味着什么？：&lt;p&gt;&gt;版权所有 (c) 2025&lt;p&gt;谁的版权？ IIRC，人们一致认为人工智能无法创造受版权保护的作品。如果作者不拥有版权，他们可以添加具有法律约束力的许可吗？如果没有，这有什么法律意义吗？：&lt;p&gt;&gt;在任何情况下，作者或版权所有者均不对任何索赔、损害或其他责任负责&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iammjm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我和那些说“人工智能剥夺了编程乐趣”的人一样。对他们来说，但同时我也在想：是为了做事，还是为了把事情做好？就像我想象的那样，过去有人喜欢他们的工作，每天晚上步行穿过他们的城市，点亮燃气路灯。然后有一天，其他人安装了电动路灯，第一个人失去了他们喜欢的工作。但最终，它是为城市街道提供照明，不是吗？ 
-对于绝大多数工作来说，这不是为了好玩，而是为了做别人需要或想要的事情。 
-对我来说，人工智能让我能够实现我的想法，并把事情做好。有些可能是好的，有些可能是坏的。我至少投入了与“真实”的人一样多的时间、注意力和精力。程序员这样做，但我的时间花在思考和精确定义我想要的东西，将其分割成更小的逻辑模块，测试，识别和修复错误，一直迭代。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stevage:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这让人放心。我开始用 vime 编写一个业余项目，但很快就因为脱节和缺乏所有权的感觉而感到排斥。我把它放在架子上一段时间，然后回来重新开始，自己编写所有代码（但使用了一些 VS Code 自动完成功能和 ChatGPT 的大量帮助）。超级满足。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tcdent:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;HN 会采取逆向思维是可以预料的，但我觉得讽刺的是，在一个从根本上植根于技术创新的行业中，对技术创新的批评如此普遍。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alganet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我经常做的是振动编码和隐藏。甚至不是公共分支，只是 git stash 法学硕士写的全部内容。&lt;p&gt;此外，我还堆叠了存储。当我振动代码时，我弹出它，让它自行处理混乱，然后再次隐藏它。&lt;p&gt;一个项目有近 13.000 行振动混乱，全部隐藏。&lt;p&gt;一件好事是，存储&lt;i&gt;构建&lt;/i&gt;。只是我不想发布超出我能读懂的代码。这是一个很长的审查队列，以某种方式预先合并。&lt;p&gt;偶尔我会从那里挑选一些东西，然后我会审查它并更认真地集成到代码库中。我没有足够的能力来审查所有内容，而且并非所有项目都可以进行 yolo 处理。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esafak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;假设它是 10,000 行可靠的代码。这仍然需要数十个 PR 才能被消化，并需要相应的时间来审查。我们的注意力现在是瓶颈。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mentalgear:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这也反映了我的经验：使用法学硕士进行语义搜索。不要信任它与您的代码。&lt;p&gt;&gt;总的来说，我想说这是一次可怕的经历，尽管花了10个小时写了近10000行代码，但我不认为这是我的项目，我没有任何成就感或成长感。&lt;p&gt;&gt;相比之下，使用 AI 读取所有文档（数千页）并编写有用的脚本来解码示波器数据、从文档创建打包的 C 结构等，非常好，之后我确实感觉很好。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ipaddr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我也有类似的想法。  您从如何根据经验开发应用程序的心理模型开始。  您可以快速让各个部分工作起来并将它们连接起来。&lt;p&gt;当您通常开发一个应用程序时，您需要花费数天时间来创建一个整天随身携带的思维模型，而您会迷失。  在淋浴时，您可以连接一些点，并以更引人注目的方式重新想象这些片段。  当项目完成后，你就会有了所有不同部分的心智模型；对在哪里扩展的想法和对你知道项目在哪里会遇到瓶颈的恐惧，并在心里记下，尽可能地回过头来。&lt;p&gt;当你感受代码时，你不会得到相同的高潮和低谷。  你不会在心里映射出每一个部分。  毫不奇怪，打开和阅读代码是最痛苦的事情，但阅读我自己的代码总是一种乐趣。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yodsanklai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;根据我的经验，法学硕士让我失去了编程的乐趣。我的编码课程是：&lt;p&gt;1.写提示&lt;p&gt;2.松弛几分钟&lt;p&gt;3.转至 1&lt;p&gt;4。发送代码进行审查&lt;p&gt;我知道代码在做什么，我希望它最终看起来如何，而且我的提交很小且独立，但我不太了解我的代码，因为我没有花太多时间来操作它。通常，我在循环上花费的时间比自己编写代码的时间还要多。&lt;p&gt;我确信，通过正确的纪律，可以驯服 LLM，但我还无法达到那个阶段。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;onion2k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;这就是现在的编程吗？&lt;/i&gt;&lt;p&gt;不。&lt;p&gt;Vibe 编码是将变更请求中代码的所有责任和义务交给 AI，然后声称糟糕的代码是 AI 的错，这并不是什么。无论您如何创建它，它仍然是&lt;i&gt;您的&lt;/i&gt;更改请求。如果你写下每一行，那么它就是你的。如果你将它从 SO 复制到你的编辑器中并提交它，那就是你的选择，因此也是你的代码。如果你促使 LLM 写一些东西，你就要对此负责。&lt;p&gt;如果你的代码库中有 AI 溢出，那只是因为你把它放在那里。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mronetwo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;在大约 3-4k 行代码之后，我完全不知道发生了什么，并且我不会考虑我编写的这段代码，但添加越来越多的测试感觉“很好”，或者至少令人放心。&lt;p&gt;&gt;有一些煤气灯，特别是当它误解 dap_read_mem32 认为它是从 ram 读取而不是 MEM-AP TAR&amp;#x2F;DRW&amp;#x2F;RDBUFF 协议时，这导致了令人难以置信的废话。总的来说，我想说这是一次可怕的经历，尽管花了10个小时写了近10000行代码，但我不认为这是我的项目，我没有任何成就感或成长感。&lt;p&gt;啊是的，我们现在可以大量生产错误的代码，我们感觉与我们的工作更加疏远，成就感被夺走了，没有所有权，几乎没有任何技能增长。很棒的技术。这是一个为股东带来价值的好时机！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;krainboltgreene:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“我们的产品就像一面镜子，我们在其中看到的东西反映了我们的本质。”&lt;p&gt;从 1844 年开始。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;csallen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; &lt;i&gt;在大约 3-4k 行代码之后，我完全不知道发生了什么......总的来说，我想说这是一次可怕的经历，尽管花了 10 个小时编写了近 10000 行代码&lt;/i&gt;&lt;p&gt;很难从其他人在这方面的经验中吸取太多教训。因为如果您今年进行了大量的人工智能编码，您就会知道体验很大程度上取决于您的方法。&lt;p&gt;您如何构建提示？你做了多少计划？你如何做这个计划？您进行了多少审核以及如何进行？你到底有多爱管闲事？您的 AGENTS.md 或同等内容中有什么？您还包括哪些其他背景、时间、原因以及方式？您的测试方法是什么（如果有）？您是否将大项目分解为更小的部分？如果是，如何分解？您的速度有多快或有多慢，即您让人工智能在任何给定时间段内编写多少行代码？等等。&lt;p&gt;这些问题的答案因人而异。&lt;p&gt;但我怀疑大量在 AI 编码方面经历过糟糕经历的开发人员对 AI 编码还很陌生，他们只拥有最少的系统，并且正在尝试“氛围编码”。这句话的原始含义是，在最少的指导下快速提示LLM并盲目信任其代码。在这种情况下，是的，这不会给你带来好的结果。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cnity:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有时我在互联网上读到一些东西，我想：终于有人按照我的想法阐述了一些东西。这是非常有效的。它消除了一堆关于“哦，你应该调整这个提示和那个”的噪音。并真正讲述了人类的经历。谢谢你。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/jackdoe/pico2-swd-riscv</guid>
-      <pubDate>Mon, 10 Nov 2025 11:45:15 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45874987</comments>
+      <title>空间智能是人工智能的下一个前沿领域</title>
+      <link>https://drfeifei.substack.com/p/from-words-to-worlds-spatial-intelligence</link>
+      <guid isPermaLink="true">https://drfeifei.substack.com/p/from-words-to-worlds-spatial-intelligence</guid>
+      <pubDate>Mon, 10 Nov 2025 21:07:02 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45880939</comments>
     </item>
     <item>
-      <title>怀疑论者的内存安全</title>
-      <link>https://queue.acm.org/detail.cfm?id=3773095</link>
-      <description>&lt;p&gt;Rust 不仅承诺内存安全，而且明显将安全保证转化为软件安全的实际改进。支持者认为，其好处是显而易见的：可比较的性能、现代工具和内存安全。本能地拒绝转向内存安全是错误的，特别是当内存安全的好处可以通过成本和进度有效的方式实现时。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Memory Safety for Skeptics&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45879012"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://queue.acm.org/detail.cfm?id=3773095'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eptcyka:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Rust 当然不是第一个“系统编程”。 ADA 的目标是内存安全的语言，并且我认为在 Rust 之前就已经实现了这一目标。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kazinator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; &lt;i&gt;如果您厌倦了了解内存安全，这篇文章适合您。&lt;/i&gt;&lt;p&gt;随时告诉我有关内存安全的更多信息；坚持住 Rust。&lt;p&gt;Rust 怀疑论者不是内存安全怀疑论者。希望除了修辞上的稻草人之外，没有内存安全怀疑论者。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whobre:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;啊。我知道这一切，但我仍然厌倦了听到有关内存安全的话题。我的队友花在用“安全”语言解决安全问题上的时间比 C&amp;#x2F;C++&amp;#x2F; 任何语言都要多。这根本不重要……&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://queue.acm.org/detail.cfm?id=3773095</guid>
-      <pubDate>Mon, 10 Nov 2025 18:23:10 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45879012</comments>
-    </item>
-    <item>
-      <title>错误 ABI</title>
-      <link>https://matklad.github.io/2025/11/09/error-ABI.html</link>
-      <description>&lt;p&gt;“强类型错误代码”文章的后续内容。错误病毒式传播是这里的关键——无论多么罕见的代码路径上的一个大错误都会导致到处都是更糟糕的代码。结论 您的错误 ABI 可能想要特殊，因此编译器需要了解错误。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Error ABI&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45871688"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://matklad.github.io/2025/11/09/error-ABI.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://matklad.github.io/2025/11/09/error-ABI.html</guid>
-      <pubDate>Mon, 10 Nov 2025 02:31:36 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45871688</comments>
-    </item>
-    <item>
-      <title>前往 Zed 云</title>
-      <link>https://maxdeviant.com/posts/2025/head-in-the-zed-cloud/</link>
-      <description>&lt;p&gt;为什么选择 Cloudflare Workers。这个框架的核心是 Platform Trait:pub Trait Platform: Sized + Clone + 'static { type Cache: cache::Cache;类型时钟：时钟；类型 KvStore: KvStore&lt;Self&gt;;类型 ServiceBinding: Fetcher&lt;Self&gt;;类型 DurableObjectNamespace: Durable_object::DurableObjectNamespace&lt;Self&gt;;类型 DurableObjectStub: Durable_object::DurableObjectStub&lt;Self&gt;;类型 DurableObjectState: Durable_object::DurableObjectState&lt;Self&gt;;类型 RateLimiter:rate_limiter::RateLimiter&lt;Self&gt;;类型 SqlStorage: sql::SqlStorage;类型 PostgresConnection&lt;T&gt;: postgres::PostgresConnection&lt;Self, T&gt;;类型 PostgresTransaction&lt;T&gt;: postgres::PostgresTransaction&lt;Self, T&gt;;类型 ExecutionContext：ExecutionContext + 克隆 + 取消固定；类型环境：环境&lt;Self&gt; + 克隆 + 取消固定；类型 ClientWebSocket: websocket::ClientWebSocket;类型 ServerWebSocket: websocket::ServerWebSocket&lt;Self&gt;;类型 WebSocketReceiver: websocket::WebSocketReceiver;类型 WebSocketSender: websocket::WebSocketSender;类型 HttpClient: http_client::HttpClient&lt;Platform = Self&gt;;类型 Queue&lt;T: Serialize + 'static&gt;: 队列::Queue&lt;Self, T&gt;;类型 RawQueueMessageBatch: 队列::RawQueueMessageBatch&lt;Self&gt;;类型 QueueMessageBatch&lt;T: DeserializeOwned + 'static&gt;: 队列::QueueMessageBatch&lt;Self, T&gt;;类型 QueueMessage&lt;T: DeserializeOwned + 'static&gt;: 队列::QueueMessage&lt;Self, T&gt;;类型 Rng：克隆 + RngCore； fn websocket_pair() -&gt; Result&lt;(Self::ClientWebSocket, Self::ServerWebSocket)&gt;;这一特性使我们能够以与平台无关的方式编写代码，同时仍然利用 Cloudflare Workers 提供的所有功能。我们有一个 cloudflare_bindings crate2，其中包含与 Cloudflare Workers JS 运行时的 wasm_bindgen 绑定。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Head in the Zed Cloud&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45876308"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://maxdeviant.com/posts/2025/head-in-the-zed-cloud/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>专注于晶体内部的零点运动</title>
+      <link>https://physics.aps.org/articles/v18/178</link>
+      <description>&lt;p&gt;这种量子效应称为零点运动。这种量子效应称为零点运动。 × 零点运动是一种不可抑制的摆动，在接近绝对零的温度下变得可见。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Zeroing in on Zero-Point Motion Inside a Crystal&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45881056"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://physics.aps.org/articles/v18/178'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cedws:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;帖子的细节有点稀疏，似乎更多的是关于后端而不是基础设施本身。有兴趣了解更多。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mariopt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一直在 JavaScript 中使用 CF Workers，我非常喜欢它。&lt;p&gt;将 rust 与 wasm 进行比较时，性能开销是多少？&lt;p&gt;同时认为 FOSS 替代品的时代即将到来。实际上，没有冷启动的无服务器将继续存在，但仅与 1 个供应商绑定是有问题的。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://maxdeviant.com/posts/2025/head-in-the-zed-cloud/</guid>
-      <pubDate>Mon, 10 Nov 2025 14:23:17 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45876308</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;taneq:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;然而，海森堡测不准原理规定运动不可能完全为零——总会存在波动。&lt;p&gt;这是它规定的吗？我认为这是关于观察（在与其他粒子相互作用的意义上，注意与意识有关）不可避免地和不可预测地改变观察到的属性。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rokkamokka:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;星门零点模块来袭？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://physics.aps.org/articles/v18/178</guid>
+      <pubDate>Mon, 10 Nov 2025 21:17:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45881056</comments>
     </item>
     <item>
-      <title>推出 HN：Hypercubic (YC F25) – 适用于 COBOL 和大型机的 AI</title>
-      <link>https://news.ycombinator.com/item?id=45877517</link>
-      <description>&lt;p&gt;Hypercubic 是一个人工智能平台，可帮助财富 500 强公司了解、保存和现代化其大型机系统。这些系统自 20 世纪 60 年代起就运行 COBOL，至今仍在悄悄为银行、保险、航空公司和政府提供支持。 HyperDocs 提取该代码并将其重建为可读的、生动的文档，展示黑匣子系统的工作原理。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Launch HN: Hypercubic (YC F25) – AI for COBOL and Mainframes&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45877517"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=45877517'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Toucan 无线分体式键盘，带触摸板</title>
+      <link>https://shop.beekeeb.com/products/toucan-wireless-piantor-wireless-split-keyboard-with-touchpad</link>
+      <description>&lt;p&gt;50 查看详情 棕色（触觉）+31 美元。 95 查看详情 白色 (Clicky 50gf) + 31 美元。 25 查看详细信息日落（触觉）+ 44 美元。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Toucan Wireless Split Keyboard with Touchpad&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45882736"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://shop.beekeeb.com/products/toucan-wireless-piantor-wireless-split-keyboard-with-touchpad'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 15 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wiz21c:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;我们的目标是构建专家的数字“双胞胎”，帮助他们在实践中调试、架构和维护这些系统。&lt;p&gt;听起来不错，但是……几年前我已经迁移了一个大型 cobol 代码库。专家中存储的知识为 1&amp;#x2F;很宽 2&amp;#x2F;充满了一年中只出现几次的特殊情况 3&amp;#x2F;通常是涉及分析数据、纸质文件等的复杂案例。我强烈怀疑人工智能是否能够发现这一点。&lt;p&gt;通常最容易错过的知识不是“这是如何完成的”，因为坦率地说，花几个小时在 COBOL 代码上并不难。错过的是：“为什么”。这通常存储在法律、子子法律等中。你必须吸收代码和法律，并祈祷人工智能能够匹配它们。&lt;p&gt;所以最终人工智能可能会付出 50% 的努力，但你需要 150% 来理解人工智能的工作......所以不确定它是否平衡得很好。&lt;p&gt;但如果它有效，那就很酷，因为重写 cobol 代码这并不完全有趣：开发人员不想这样做，客户这样做是因为他们必须这样做（而不是因为它会带来额外的价值），而最好的结果可能是客户对你说“好吧，我们付给你 2mio，新系统会做与我们开始之前相同的事情”。 （我面临的最可能的结果是“你重写了系统，它比以前更糟糕）”。因此，如果我能做到，那就太酷了。&lt;p&gt;（但这意味着你将解雇负责迁移的团队，虽然这并不有趣，也不是火箭科学，需要真正的专业知识；这根本不是繁重的工作）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brightball:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您有兴趣了解有关 COBOL 的更多信息，今年的 Carolina Code Conference 上有一场精彩的演讲。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;RM7Q7u0pZyQ?si=zpP6mP7SYxLbuHqJ" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;RM7Q7u0pZyQ?si=zpP6mP7SYxLbuHqJ&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cool-RR:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;剩下的就是不透明的黑匣子系统，几乎没有人了解它们是如何工作的。&lt;p&gt;也许 50 年前的 COBOL 程序就是最初的神经网络。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;29athrowaway:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有一大片墓地，人们试图逃离大型机、取代 COBOL 等。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iepathos:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;根据屏幕截图，我可以看出他们正在使用 MkDocs 来生成 HyperDocs 静态站点。  我正在开发一个开源解决方案，利用人工智能为代码库生成文档，并维护它们以防止文档漂移。  我最初在这里写了一些关于它的内容 &lt;a href="https:&amp;#x2F;&amp;#x2F;entropicdrift.com&amp;#x2F;blog&amp;#x2F;prodigy-docs-automation&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;entropicdrift.com&amp;#x2F;blog&amp;#x2F;prodigy-docs-automation&amp;#x2F;&lt;/a&gt; 适合任何感兴趣的人。  我目前使用 mdbook 而不是 mkdocs，可能会添加对 mkdocs 工作流程的支持，以仅花费 LLM 令牌的成本来生成类似的文档网站。  我没有意识到 COBOL 对于以代码作为事实来源的文档有如此大的市场。  我必须尝试在开源 COBOL 代码库上生成文档，看看它是否公平。  如果 hypercubic 能够提供 hyperdocs 生成的实际文档示例，而不仅仅是屏幕截图，那就太好了，因为很难仅通过单个屏幕截图来判断它的好坏。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;huevosabio:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;凉爽的！我认为这是 LLM 的一个很好的用途。&lt;p&gt;我见过的唯一的其他玩家是 Mechanical Orchard&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vector_spaces:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;我们的另一个工具 HyperTwin 解决了“部落知识”问题。它直接向主题专家学习，观察工作流程，分析屏幕交互，并进行人工智能驱动的访谈，以捕捉他们如何调试和推理系统。目标是建立专家的数字“双胞胎”，了解他们如何在实践中调试、架构和维护这些系统。&lt;p&gt;如何跨不同的团队和组织孤岛整合这些知识？ 
-您将如何识别并协调整个组织中使用的术语的细微差异？&lt;p&gt;也许我误解了，但在您的网站上，您主要将技术实施者视为中小企业。 IME 在高风险环境中对遗留数据系统进行现代化改造，问题更多在于业务方面——例如不同的团队使用相同的术语来指代不同的概念（并在代码中反映出来），或者报告或数据系统的确切利益相关者是未知的和不可知的，并辨别对特定团队或工作流程至关重要的规则，这些规则对您来说是不透明的，例如您不知道谁都依赖这些数据，或者缺少业务上下文，或者因为规则实际上不再使用，或者因为规则本身的实现是错误的。&lt;p&gt;此外，技术和非技术利益相关者以及中小企业都严重依赖启发式方法来利用他们所查看的数据做出决策，但通常很难明确阐明它们。他们不想提及某些条件或过滤器，因为对他们来说，这些已融入术语中，或者他们没有想到组织处理的数据比他们日常交互的数据更广泛。&lt;p&gt;不幸的是，在这些设置中，你不会有太多出错的机会 - 信任绝对至关重要。&lt;p&gt;我怀疑你最终会得到一个产品，至少如果您的目的是为依赖这些系统的人们提供有意义的价值并解决让他们彻夜难眠的问题。我的感觉是，您最终将主要成为一家咨询公司，这是有道理的，因为您要解决的问题本质上主要不是技术性的，它只是具有技术组件。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cess11:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在阅读本演示文稿时，我所能想到的就是 Glamorous Toolkit 几乎具有此功能以及更多功能。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;le-mark:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我亲眼目睹了两个遗留迁移项目，但都失败了。其中一项是对 Java 的源代码翻译，这一项失败了，因为他们不具备管理生产 Java 应用程序的专业知识并终止了该项目。  另一次是重写，超出了预算并被取消。&lt;p&gt;&amp;gt; HyperDocs 摄取 COBOL、JCL 和 PL&amp;#x2F;I 代码库来生成文档、架构图和依赖关系图。&lt;p&gt;许多工具无需 AI 即可完成此操作。&lt;p&gt;&gt;目标是建立专家在实践中如何调试、架构和维护这些系统的数字“双胞胎”。&lt;p&gt;这将是一个绝妙的技巧，输出会比人口稀少的维基更多吗？&lt;p&gt;我的经验是，没有太多的意愿或金钱来完成这些事情。&lt;p&gt;编辑补充一下，在 20 世纪 90 年代，在大型机系统的业务规则提取、自动文档和静态分析方面做了很多工作，但这一切之后就消失了。如果还没有的话，大家应该搜索一下文献。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gregsadetsky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我几周前提交了这个 [0] 故事，引起了一些讨论，然后被标记，因为（我认为）人们不确定 COBOL 的统计数据的可验证性（提交的页面不仅仅是带有自我推销语言的色彩）。&lt;p&gt;我很想问您，作为领域专家，您是否可以更多地谈论“财富 500 强中的 70% 仍然在大型机上运行”？您提到的统计数据。&lt;p&gt;这些数字来自哪里？而且，这是否意味着 70% 的财富 500 强企业确实运行并维护 1k-1M+ LoC 的 COBOL？或者这些公司是否依赖于一些确实依赖 COBOL 的下游专业供应商（金融、航空和物流等）？&lt;p&gt;比如，是 COBOL 一直向下，还是一切都以不同的方式构建，但基本上建立在 3 家公司之上，而这 3 家公司主要在做 COBOL？&lt;p&gt;谢谢！&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45644205"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45644205&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;koolba:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;整洁的东西。对于可以使用这种类型的自动腿部的更深奥的环境，请查看 MUMPS：&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;MUMPS" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;MUMPS&lt;/a&gt;&lt;p&gt;上面运行着一堆主要是遗留的医院和政府（主要是 VA）系统。哪里有庞大的政府系统，哪里就有庞大的政府资金。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;1970-01-01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这很奇怪。大型机是科技界的恐龙。我从来没有想过，“让我们添加一些人工智能吧”。到大型机。这就像给恐龙加上对生的拇指一样。你仍然在解决错误的问题，但观察系统的处理过程肯定会很有趣。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zurfer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我曾经听过一个关于如何迁移这些旧系统的故事：
-1 你会得到一个超级广泛的输入-输出对测试套件&lt;p&gt;2 你会进行“逐行”测试用 Java 重新实现（银行喜欢它）。&lt;p&gt;3 您运行测试套件并跟踪进度&lt;p&gt;4 当您达到 100% 时，您向两个系统发送相同的流量并影子运行新的实现。根据进展情况，您要么放弃，返回工作实施，要么最终切换到新系统&lt;p&gt;对于通常处理数十亿或数万亿美元的系统来说，这显然是非常昂贵且缓慢的，可以最大限度地减少任何类型的风险。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mkoubaa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我为你感到兴奋，但对可能引起的错误类型感到紧张&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jclay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令人兴奋的工作！我经常想知道拥有正确工具的法学硕士是否可以恢复和优化老化的 C&amp;#x2F;C++ 代码库。让旧的游戏引擎在现代系统上再次运行将是非常引人注目的。&lt;p&gt;我希望这些系统中的大多数都具有非常仔细保护的访问控制。在我看来，追踪愿意冒险改造这些系统（人工智能或非人工智能）的决策者是一个极其困难的挑战。我很想了解更多关于您在这里学到的知识。&lt;p&gt;也很想知道法学硕士在像 COBOL 这样的语言上的表现如何，因为这种语言在训练数据中可能没有很多高质量的样本。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.ycombinator.com/item?id=45877517</guid>
-      <pubDate>Mon, 10 Nov 2025 16:23:24 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45877517</comments>
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dandersch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;遗憾的是，轨迹点从未在 ThinkPad 人群之外流行起来。我很少看到它们用于自定义键盘，尽管在我看来它们非常适合这样的用例。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maegul:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人们如何找到这些触控板？  我在 Kyria 的 al Keyboards[0] 上见过它们，或者至少是类似的，我很感兴趣，但也很怀疑。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;splitkb.com&amp;#x2F;collections&amp;#x2F;keyboard-kits" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;splitkb.com&amp;#x2F;collections&amp;#x2F;键盘套件&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yodon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我知道它是完全可编程的，但是有人可以解释一下如何在此键盘上输入数字和数字键上的符号吗？我没有看到它们的任何键帽，也找不到有关符号所在位置的任何文档。&lt;p&gt;编辑添加：我猜测可能有一个控件会导致其他符号在键帽上可见，替换默认的 A-Z 符号，并且它们从不在照片中显示这些替代符号，因为我们应该知道它会这样做。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jbm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 42 键&lt;p&gt;这是一款外观漂亮的键盘，但人们会发现如此简约布局的价值吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;__mharrison__:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;热爱创新。我对我的 Lily 58 比较满意，但外壳除外。开关不断从边缘弹出。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;evanjrowley:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您已经可以找到具有这些功能的 Corne 风格键盘，但在这款 Toucan 设计推出之前，您还找不到具有&lt;i&gt;所有这些功能&lt;/i&gt;的 Corne 键盘。&lt;p&gt;- 无线&lt;p&gt;- 集成指点设备&lt;p&gt;- 对齐 1u 拇指键&lt;p&gt;- 电子墨水屏幕&lt;p&gt;- 铝板&lt;p&gt;- 低于 200 美元&lt;p&gt;我肯定感兴趣。感谢分享。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://shop.beekeeb.com/products/toucan-wireless-piantor-wireless-split-keyboard-with-touchpad</guid>
+      <pubDate>Tue, 11 Nov 2025 00:31:58 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45882736</comments>
     </item>
     <item>
-      <title>全语言 ASR：推进 1600 种语言的自动语音识别</title>
-      <link>https://ai.meta.com/blog/omnilingual-asr-advancing-automatic-speech-recognition/?_fb_noscript=1</link>
-      <description>&lt;p&gt;自动语音识别 (ASR) 系统旨在通过将语音转录为可搜索、分析和共享的文本，使口语变得普遍可用。我们还开源了全语言 wav2vec 2。我们的通用语音基础模型 wav2vec 2。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Omnilingual ASR: Advancing automatic speech recognition for 1600 languages&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45878826"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://ai.meta.com/blog/omnilingual-asr-advancing-automatic-speech-recognition/?_fb_noscript=1'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>像素着色器中的 Linux – VRChat 的 RISC-V 模拟器</title>
+      <link>https://blog.pimaker.at/texts/rvc1/</link>
+      <description>&lt;p&gt;您可以通过访问这个 VRChat 世界来亲自体验这一切的结果。 （在模拟 RISC-V 的片段着色器中运行的 Linux 速度是 Linux 的 5 倍）世界链接：https://t.但直到 2020 年 8 月左右，当一位朋友邀请我加入 VRChat 时，我才了解到围绕该“游戏”/社交平台的令人惊叹的创意社区。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Linux in a Pixel Shader – A RISC-V Emulator for VRChat&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45881404"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.pimaker.at/texts/rvc1/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stuffoverflow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这对于公开可用的本地 ASR 来说似乎是一个巨大的改进。根据该论文的基准测试，即使是 300M 模型的性能也优于 Whisper-large-v3。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;samat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;制作 TTS 有多难？一些来自白俄罗斯的独立记者要求提供他们语言的 TTS，但我不是专家，正在考虑重新使用 Mozilla 的作品。获得某种语言的 TTS 工作的最简单方法是什么？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tschellenbach:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于延迟有什么见解吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;meetpateltech:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;HF 演示：&lt;a href="https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;spaces&amp;#x2F;facebook&amp;#x2F;omniasr-transcriptions" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;spaces&amp;#x2F;facebook&amp;#x2F;omniasr-transcription...&lt;/a&gt;&lt;p&gt;GitHub：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;facebookresearch&amp;#x2F;omnilingual-asr" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;facebookresearch&amp;#x2F;omnilingual-asr&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://ai.meta.com/blog/omnilingual-asr-advancing-automatic-speech-recognition/?_fb_noscript=1</guid>
-      <pubDate>Mon, 10 Nov 2025 18:10:12 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45878826</comments>
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lawlessone:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果可以这样做来模拟该芯片，那么其他设备（例如旧控制台）是否也可以这样做？&lt;p&gt;我并不是说人们应该这样做，但这可能吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;einsteinx2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太被诅咒了，我喜欢它&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;majorchord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;文章可能应该有“(2021)”在标题中。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;accrual:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为一个在 VRC 中度过了短暂的另类生活并创造了世界的人 - 只是“哇”。我对 Unity 的掌握刚刚好，可以做一些基本的事情，但将 Linux 塞进像素着色器中，令人印象深刻至少 1 个数量级（如果不是 2 个数量级）。&lt;p&gt;p.s.乌冬面鸟类保护区！我去过那里！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MobiusHorizons:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常棒的工作！&lt;p&gt;这样的工作凸显了 GPU 和 CPU 之间的计算模型有多么不同。老实说，考虑到这些差异，它的运行速度（250khz）给我留下了深刻的印象。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;snvzz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;RISC-V是不可避免的。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.pimaker.at/texts/rvc1/</guid>
+      <pubDate>Mon, 10 Nov 2025 21:50:03 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45881404</comments>
     </item>
     <item>
-      <title>华盛顿州雷德蒙德在 ICE 逮捕后关闭了 Flock 安全摄像头</title>
-      <link>https://www.seattletimes.com/seattle-news/law-justice/redmond-turns-off-flock-safety-cameras-after-ice-arrests/</link>
-      <description>&lt;p&gt;她说，该市暂停了 Flock 系统，因为市政府官员无法保证他们有一天不会被迫公布这些设备收集的数据。他们的担忧可能是有先见之明的。在华盛顿大学的报告显示联邦机构访问了他们的 Flock 数据后，伦顿、奥本、马基尔蒂奥和莱克伍德、皮尔斯县的警察改变了他们的 Flock 设置。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Redmond, WA, turns off Flock Safety cameras after ICE arrests&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45879101"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.seattletimes.com/seattle-news/law-justice/redmond-turns-off-flock-safety-cameras-after-ice-arrests/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>(O(p(n)^3) 中的 Kronecker：解决 80 年前 P 难题的新方法 [pdf]</title>
+      <link>https://github.com/bon-cdp/notes/blob/main/d.pdf</link>
+      <guid isPermaLink="true">https://github.com/bon-cdp/notes/blob/main/d.pdf</guid>
+      <pubDate>Tue, 11 Nov 2025 00:13:34 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45882617</comments>
+    </item>
+    <item>
+      <title>是什么导致了我的小型 RPG 中的性能问题</title>
+      <link>https://jslegenddev.substack.com/p/what-caused-performance-issues-in</link>
+      <guid isPermaLink="true">https://jslegenddev.substack.com/p/what-caused-performance-issues-in</guid>
+      <pubDate>Mon, 10 Nov 2025 23:27:53 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45882305</comments>
+    </item>
+    <item>
+      <title>Sysgpu – 用 Zig 编写的 WebGPU 的实验后代</title>
+      <link>https://github.com/hexops-graveyard/mach-sysgpu</link>
+      <description>&lt;p&gt;org/pkg/mach-sysgpu 主题 gpu 图形 webgpu ziglang 资源 自述文件 许可证未知和发现的其他 3 个许可证 发现许可证未知 许可证 Apache-2。加载时出错。请重新加载此页面。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Sysgpu – Experimental descendant of WebGPU written in Zig&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45881087"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/hexops-graveyard/mach-sysgpu'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sleepybrett:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不，他们将其关闭，因为事实证明这些摄像机是公共记录，所有公民都可以请求所有这些数据。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;outside1234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们正在快速学习如何利用所有这些系统来对付我们。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;seltzered_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“周四，斯卡吉特县高等法院法官裁定，法庭记录显示，Flock 摄像机在 Sedro-Woolley 和 Stanwood 市拍摄的照片符合公共记录的条件，因此必须根据该州公共记录法的要求予以发布。”&lt;p&gt;Tom Lehto 的这段视频详细介绍了该法庭案例，该案例说明公民可以合法地对交通摄像机（例如 Flock）提出 FOIA 请求：&lt;a href="https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;1vQn4MWBln0" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;1vQn4MWBln0&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;notepad0x90:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;移民问题类似于住房危机和宁比主义。选民不想要一个精简且高效的移民系统，合法地允许大量移民进入（邻避）。这也类似于毒品战争及其失败，ICE不会解决任何问题，就像DEA只会让毒品让事情变得更糟一样。&lt;p&gt;无论如何，整个ICE像党卫军那样的行为从长远来看只会导致更多的非法移民，就像更多。与欧洲极右翼的戏弄相同。&lt;p&gt;如果“基础设施”我们无法支持更多的人，但我们可以在美国建造更多的人。边界不应该开放，但更多想要移民的健康、身体健全或技术熟练的人，只要他们的犯罪记录是明确的，就应该被允许入境，基础设施应该扩大规模。对于我们其他人来说，这是更多的经济活动和财富。更多的就业机会，更多的工人。无论如何，我们需要为住房危机做到这一点。&lt;p&gt;我们需要更多的城市，更多的发展，更少的邻避思维，更少的“打败他们直到他们遵守”的做法。思维。太多人不知道或不愿意解决现实问题，却渴望看到残酷和暴力，造成了这些站不住脚、令人遗憾的局面。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cipehr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有点恼火，这似乎&lt;i&gt;与 ICE 逮捕无关&lt;/i&gt;...&lt;p&gt;&gt;她说，该市暂停了 Flock 系统，因为市政府官员无法保证他们有一天不会被迫发布这些设备收集的数据。&lt;p&gt;关键部分是“&lt;i&gt;有一天&lt;/i&gt;”。这篇文章似乎暗示，羊群&lt;i&gt;可能&lt;/i&gt;与 ICE 共享了这些数据，从而导致了逮捕……但没有证据支持这一点……&lt;p&gt;&gt;周四，斯卡吉特县高等法院法官裁定，法庭记录显示，Flock 相机在 Sedro-Woolley 和 Stanwood 市拍摄的照片符合公共记录，因此必须按照该州公共记录法的要求予以发布。&lt;p&gt;这是更有可能的原因。这里的人们对这项裁决有何看法？&lt;p&gt;IMO 似乎很明显这应该是公共记录数据，但很想听到对此的替代立场。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pton_xd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们认为会发生什么？安装监视系统来监视人们是可以接受的，只要它们只用于针对大多数人？我不明白这里的逻辑。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;focusgroup0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;具有讽刺意味的是，如果过去几十年一直执行记录在案的移民法，那么就不需要监视国家技术了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dredmorbius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;注意：编辑标题以添加“WA”为了清楚起见。  也就是说，这是另一个实体的城市，而不是另一个实体的地名。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.seattletimes.com/seattle-news/law-justice/redmond-turns-off-flock-safety-cameras-after-ice-arrests/</guid>
-      <pubDate>Mon, 10 Nov 2025 18:30:06 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45879101</comments>
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fyrn_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;WebGPU的价值在于它可以在浏览器中使用，也可以在桌面上跨平台使用。
+在我看来，去掉浏览器的可用性，它只是另一个更高级别的 Vulkan 包装器&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esperent:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这里没有太多信息，只是说它已移入 Mach 标准库 [0]，显然它甚至不符合单独的自述文件的资格。&lt;p&gt;Mach 显然是一个用 Zig 编写的游戏引擎。看起来很有趣，但考虑到存储库 [1] 和站点 [2] 上缺乏详细信息，而且主要演示似乎只是一个旋转的纹理立方体，我想现在还处于早期阶段。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;hexops&amp;#x2F;mach&amp;#x2F;tree&amp;#x2F;main&amp;#x2F;src&amp;#x2F;sysgpu" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;hexops&amp;#x2F;mach&amp;#x2F;tree&amp;#x2F;main&amp;#x2F;src&amp;#x2F;sysgpu&lt;/a&gt;&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;hexops&amp;#x2F;mach" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;hexops&amp;#x2F;mach&lt;/a&gt;&lt;p&gt;[2] &lt;a href="https:&amp;#x2F;&amp;#x2F;machengine.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;machengine.org&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/hexops-graveyard/mach-sysgpu</guid>
+      <pubDate>Mon, 10 Nov 2025 21:20:00 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45881087</comments>
     </item>
     <item>
-      <title>欧盟委员会计划推出“数字综合”一揽子计划以简化其技术法律</title>
-      <link>https://www.politico.eu/article/brussels-knifes-privacy-to-feed-the-ai-boom-gdpr-digital-omnibus/</link>
-      <description>&lt;p&gt;“委员会应该充分意识到，这正在极大地破坏欧洲标准。近年来，欧洲隐私监管机构已经在破坏大型科技公司的人工智能派对。过去​​几个月，委员会官员一直试图消除人们对其正在彻底修改隐私规则手册的担忧。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; European Commission plans “digital omnibus” package to simplify its tech laws&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45878311"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.politico.eu/article/brussels-knifes-privacy-to-feed-the-ai-boom-gdpr-digital-omnibus/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>3D 异构集成为新的 DARPA 工厂提供动力</title>
+      <link>https://spectrum.ieee.org/3d-heterogeneous-integration</link>
+      <description>&lt;p&gt;SemiconductorsNews DARPA 和德克萨斯州下注 1 美元。 Moore 是 IEEE Spectrum 的半导体编辑。 DARPA 董事总经理 Michael Holmes 解释了该机构为何支持新铸造厂及其运作方式。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; 3D Heterogeneous Integration Powers New DARPA Fab&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45881555"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://spectrum.ieee.org/3d-heterogeneous-integration'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://spectrum.ieee.org/3d-heterogeneous-integration</guid>
+      <pubDate>Mon, 10 Nov 2025 22:04:28 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45881555</comments>
+    </item>
+    <item>
+      <title>Rademacher 复杂性和群体竞争模型</title>
+      <link>https://www.symmetrybroken.com/group-selection/</link>
+      <description>&lt;p&gt;[1] 进化生物学中的群体选择 利他主义之谜 第一次学习自然选择理论的好奇学生会问：“利他主义怎么样？亲缘选择理论的解决方案 达尔文对“遗传本能”的强调与。在该部分的末尾，我将解释这种认识如何帮助解决进化生物学家之间关于亲缘选择理论或群体选择理论是否正确的大部分争议。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Rademacher Complexity and Models of Group Competition&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45882592"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.symmetrybroken.com/group-selection/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.symmetrybroken.com/group-selection/</guid>
+      <pubDate>Tue, 11 Nov 2025 00:09:15 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45882592</comments>
+    </item>
+    <item>
+      <title>显示 HN：Davia – 来自代码库的开源可视化、可编辑 wiki</title>
+      <link>https://github.com/davialabs/davia</link>
+      <description>&lt;p&gt;Davia 是一个开源工具，可为您的本地代码库生成交互式内部文档。 git cd davia pnpm i 2. 配置 默认情况下，Davia 会查找 a.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Davia – Open source visual, editable wiki from your codebase&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45880716"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/davialabs/davia'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cadamsdotcom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最大的问题是你同时需要两种类型的经济。&lt;p&gt;你需要来自创新经济的重大范式转变；为此，资本必须容易流动，冒险（公司和个人）必须得到奖励而不是惩罚，稳定的工作是一件坏事（人们变得太舒服了）。&lt;p&gt;同时，在更成熟的行业，应该促进工作保障（这样人们可以有抵押贷款和家庭）和市场稳定，企业的过度扩张和过度扩张也应该得到促进。权力受到限制。&lt;p&gt;发达经济体是多个行业的混合体，需要几乎相反的政策。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paganel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;欧盟独裁统治的最佳状态，我喜欢看到它。这整件事不可能很快瓦解，我是作为一名（不幸的是，仍然）欧盟公民这么说的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nuffisnuff9:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;希望 GDPR 和隐私法的终结是绝对没有人要求的。&lt;p&gt;就像没有人要求加密聊天停止加密或 X 成为欧盟政委的审查目标一样&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jnurmine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;“草案变更将为人工智能公司创造新的例外，允许他们合法处理特殊类别的数据（例如一个人的宗教或政治信仰、种族或健康数据）来训练和操作他们的技术。”&lt;/i&gt;&lt;p&gt;完全匿名的健康数据我可以以某种方式理解，但什么样的人工智能需要用“一个人的宗教或政治信仰[或]种族”来训练，匿名与否？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BrenBarn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我总是对这样一种逻辑感到困惑，即认为让大公司到处对人们做出有害的行为是“对经济有利”的。或“让我们保持竞争力”。  如果严格的人工智能法规意味着人工智能公司离开欧洲，那就太好了！  我希望我们能做同样的事情并让他们离开美国。  这些大型人工智能公司&lt;i&gt;很糟糕&lt;/i&gt;。  我们不应该想要他们，我们不应该试图吸引他们，我们不应该提供任何调解或激励。  从任何司法管辖区越早、越彻底地根除它们就越好。  将这种有毒废物赶出你的国家应该被视为一种胜利。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Yaina:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢欧盟，但像这样的事情或不断推行的聊天控制法令人恼火的是，公民社会和隐私倡导团体始终需要保持警惕并不断动员人们。这是一场消耗游戏。&lt;p&gt;我想知道公司到底声称有什么危害。但老实说，德国现任保守党政府支持它是完全有道理的。只要放松管制，GDP 就会大幅增长，嗯？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Insanity:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个很难实现的平衡。我不希望欧盟在人工智能竞赛中进一步落后，我确实希望他们在技术领域更具竞争力。目前，欧盟在科技方面确实没有竞争力（在科技薪资方面也没有竞争力），这会导致一定程度的“人才流失”。随着人们移居国外。&lt;p&gt;因此，虽然我确实理解监管的必要性，但他们不应该自我监管而变得无关紧要。我认为没有简单的解决方案。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;impossiblefork:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人们认为 GDPR 会阻碍欧洲人工智能，这真的很愚蠢。鉴于美国公司实际上已经推出了他们的系统，GDPR 不太可能成为法律问题。也许版权是一个问题。如果要求人们列出训练数据的法规得到充分应用，这个问题本来可以解决。&lt;p&gt;这对人工智能不会产生任何影响，并且会降低欧盟的凝聚力，因为对隐私的信仰是欧洲的共同价值观。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rckt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为了公众的利益而审查版权法怎么样？人工智能参与者为了利润而消耗一切，但没有人关心。但如果一个普通的乔为了个人娱乐而这样做，他应该承担后果。&lt;p&gt;这整件事显然是有偏见的，因为金钱。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmholla:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;原标题：布鲁塞尔削减隐私以促进人工智能繁荣&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.politico.eu/article/brussels-knifes-privacy-to-feed-the-ai-boom-gdpr-digital-omnibus/</guid>
-      <pubDate>Mon, 10 Nov 2025 17:29:59 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45878311</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;krat0sprakhar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来很有趣，很想在我的副项目上尝试一下，但是如果您可以添加自己的包（&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;davialabs&amp;#x2F;davia&amp;#x2F;tree&amp;#x2F;main&amp;#x2F;packages&amp;#x2F;agent"，那就太好了rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;davialabs&amp;#x2F;davia&amp;#x2F;tree&amp;#x2F;main&amp;#x2F;packages&amp;#x2F;agent&lt;/a&gt;）作为展示。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/davialabs/davia</guid>
+      <pubDate>Mon, 10 Nov 2025 20:46:11 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45880716</comments>
     </item>
     <item>
-      <title>加拿大军队将依靠公务员增加30万军衔</title>
-      <link>https://ottawacitizen.com/public-service/defence-watch/canadian-military-public-servants</link>
-      <description>&lt;p&gt;文章内容文章内容训练重点将是“基本技能”（如。文章内容根据动员计划，现有预备役部队将从23561人猛增至10万人。文章内容文章内容“国防不会完成。”）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Canadian military will rely on public servants to boost its ranks by 300k&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45877892"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://ottawacitizen.com/public-service/defence-watch/canadian-military-public-servants'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>沃伦·巴菲特的最后一封股东信 [pdf]</title>
+      <link>https://berkshirehathaway.com/news/nov1025.pdf</link>
+      <description>&lt;p&gt;bM� &gt;׀�������͛7��; �� �T7id{��\ �z&gt;@�� u� �� �. �o� �_l r� �N� �;8 � g ���ѓ&amp;7,�。 �@R���������i�������m��9sf�q��� :1^� �{s)&lt;�jd�ٓ�u������O.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Warren Buffett's final shareholder letter [pdf]&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45882837"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://berkshirehathaway.com/news/nov1025.pdf'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cmrdporcupine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;奇怪的是，这件事出现在 HN 的头版上，但却被埋在了我在（加拿大）Google 新闻上的新闻推送中，而且似乎不是头版新闻？&lt;p&gt;您必须是公务员或退休的加拿大军队，还是他们也需要肥胖的中年走样的软件工程师？  寻求朋友。&lt;p&gt;自从我 12 岁的圣经营以来就没有开过枪。可能会很有趣。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stackedinserter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;联邦和省级雇员将接受为期一周的培训课程，学习如何使用枪支、驾驶卡车和驾驶无人机&lt;p&gt;这些“专业人员”有什么用？&lt;p&gt;我知道俄罗斯人将这些不合格的士兵送到绞肉机（“小团体渗透”战术）。如果用乌克兰FPV无人机干掉他们也没关系，至少AFU用了无人机。这是加拿大人打算做的吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Animats:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这并不是利用政府雇员执行非战斗任务来释放军队。这更像是英国二战时期的家庭警卫队。&lt;p&gt;&lt;i&gt;“联邦和省级雇员将接受为期一周的培训课程，学习如何使用枪械、驾驶卡车和驾驶无人机……公务员将被纳入补充预备役部队，该预备役部队目前由加拿大军队的现役或退休人员组成，他们愿意在接到召唤后重返岗位。”&lt;/i&gt;&lt;p&gt;这种事情是通常是战时的绝望措施。加拿大看到什么威胁？美国ICE暴徒小队越过边境进入加拿大？建立常规军事储备更为正常。再往下，文章说这种情况正在发生。&lt;p&gt;政府雇员家庭警卫队的更好用途是民防。当停电、食品分配中断或天然气供应停止时该怎么办？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ninalanyon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在 4,000 万人口中，24,000 名预备役人员似乎是一个相当小的数字。&lt;p&gt;挪威有 40,000 名志愿兼职士兵组成的国民警卫队 (Heimevernet) 快速反应部队，另外还有 20,000 名预备役人员。  全部来自约 550 万人口。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jjk166:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;建立一支庞大的后备部队似乎总体上是个好主意。它绝对胜过一般征兵。&lt;p&gt;我不明白为什么加拿大特别需要如此庞大的后备部队。这将使加拿大的保护区人口百分比从第 127 位跃升至第 52 位，而绝对保护区规模则升至第 17 位。对于一个本土遭受入侵的可能性基本为零、内部冲突风险极低的国家来说，很难想象需要这么多预备役军人的情况。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;groby_b:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;以防万一人们错过了核心信息：如果您有可靠的风险评估，您认为未来十年左右可能会发生重大冲突，那么您就应该这样做。&lt;p&gt;而且，尽管我很想关注不断恶化的加拿大与美国关系，但这可能有双重目的。乌克兰、俄罗斯和北约局势将是第二个因素。好吧，黑社会，中美也在雷达上。无论权重如何，它都促使加拿大制定动员框架，因为综合风险足够高。&lt;p&gt;这意味着“哦操”感觉是完全合适的，但恐慌则不然。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;incomingpain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;加拿大的军费开支占 GDP 的 1% 左右，尽管义务为 2%；新承诺达到 5%。我们的承诺是在短期内将我们的军队规模增加 500%。&lt;p&gt;我们的储备人数约为 40,000 人。他们宣布计划达到40万。 10 倍大小。这并不是任何外界的恐惧，而是履行我们的义务。对俄罗斯或中国的恐惧是没有根据的。问题是，我们最大的盟友美国不让我们用它们作为盾牌。&lt;p&gt;&amp;gt;根据国防参谋长珍妮·卡里尼南 (Jennie Carignan) 将军签署的指令，联邦和省级雇员将接受为期一周的培训课程，学习如何使用枪支、驾驶卡车和驾驶无人机&lt;p&gt;联邦雇员只有约 30 万名。各省的面积更大，但加拿大并没有那么大。为了满足这些数字，必须征兵&lt;p&gt;&gt;公务员将被纳入补充预备役部队，该预备役部队目前由加拿大军队的非现役或退役成员组成，他们愿意在接到通知后重返岗位。&lt;p&gt;它说是自愿的，但考虑到需要加入并立即激活的人比例非常高。我预计不会有很多人自愿参加。储备金至少可以支付你这笔费用。征兵是必要的。他们最终是在强迫那些政府雇员。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fidotron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最糟糕的是，加拿大政府很难在其他人口中找到 30 万人来信任他们具备这些方面的技能。联邦公务员将成为他们试图强加给其他人的价值观的最后堡垒。&lt;p&gt;它正在花费大量资金从合法枪支拥有者手中拿走枪支，而这些合法枪支拥有者已经受到绝对惊人的监管。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;colechristensen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;时代的标志是，加拿大非常害怕美国的不稳定，以至于他们现在在自愿的基础上低调征召公务员入伍。&lt;p&gt;加拿大人是我们最亲密的兄弟姐妹，我们根本是不同的国家，这只是一个历史怪癖。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abrichr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.is&amp;#x2F;G4oZo" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.is&amp;#x2F;G4oZo&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://ottawacitizen.com/public-service/defence-watch/canadian-military-public-servants</guid>
-      <pubDate>Mon, 10 Nov 2025 16:55:08 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45877892</comments>
-    </item>
-    <item>
-      <title>在内容制作中使用生成式人工智能</title>
-      <link>https://partnerhelp.netflixstudios.com/hc/en-us/articles/43393929218323-Using-Generative-AI-in-Content-Production</link>
-      <description>&lt;p&gt;在使用GenAI进行人才培养之前我们应该考虑什么？哪些用例始终需要书面批准。数据使用 在与 GenAI 合作时，保护个人数据和创作权至关重要。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Using Generative AI in Content Production&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45879793"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://partnerhelp.netflixstudios.com/hc/en-us/articles/43393929218323-Using-Generative-AI-in-Content-Production'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://partnerhelp.netflixstudios.com/hc/en-us/articles/43393929218323-Using-Generative-AI-in-Content-Production</guid>
-      <pubDate>Mon, 10 Nov 2025 19:28:07 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45879793</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;handfuloflight:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一个时代的结束。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gwbas1c:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 1958年，我买了第一套也是唯一的一套房子。当然，它是在奥马哈，距离我长大的地方（大致定义）大约两英里，距离我的姻亲不到两个街区，距离巴菲特杂货店大约六个街区，距离我工作了 64 年的办公楼有 &lt;i&gt;6-7&lt;/i&gt; 分钟车程。&lt;p&gt;沃伦·巴菲特也参与了模因吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Flatcircle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;优雅到底&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://berkshirehathaway.com/news/nov1025.pdf</guid>
+      <pubDate>Tue, 11 Nov 2025 00:51:44 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45882837</comments>
     </item>
   </channel>
 </rss>
