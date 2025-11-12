@@ -6,75 +6,86 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 12 Nov 2025 06:36:13 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Nov 2025 09:29:14 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Bjarne 修复你那该死的语言</title>
-      <link>https://marler8997.github.io/blog/bjarne-fix-your-language/</link>
-      <description>&lt;p&gt;在此示例中，Bjarne 选择抛出异常来传播调用 fopen 时出现的任何错误。首先，我们的错误消息可能不正确。它比原始的 C 示例更嘈杂，原始的 C 示例在尝试实现像这样的正确错误处理的更改中会产生背压。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Bjarne fix your freaking language&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45896733"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://marler8997.github.io/blog/bjarne-fix-your-language/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lealanko:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是 try-catch 语法的常见问题。另一种可以说更有用的语法是&lt;p&gt;&lt;pre&gt;&lt;code&gt; try (File_handle fh {s, "r"}) {
-    &amp;#x2F;&amp;#x2F;使用跳频
-  } 除非 (const File_error&amp;e) {
-    &amp;#x2F;&amp;#x2F;处理错误
-  }
-&lt;/code&gt;&lt;/pre&gt;
-其中“use fh”是指“使用fh”。部分&lt;i&gt;未&lt;/i&gt;被异常处理程序覆盖。这在 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.microsoft.com&amp;#x2F;en-us&amp;#x2F;research&amp;#x2F;publication&amp;#x2F;exceptional-syntax&amp;#x2F;" 中对此进行了介绍（在 ML 上下文中） rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.microsoft.com&amp;#x2F;en-us&amp;#x2F;研究&amp;#x2F;出版物&amp;#x2F;例外...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mgaunard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作者完全误解了如何使用异常，只是猛烈抨击它们。他所说的很多内容即使不是表面上不正确，也是不准确的。&lt;p&gt;此外，Bjarne 对 C++ 的控制非常有限，而且他处于半退休状态，因此要求他“修复他的语言”是很困难的。是相当误导的。它是由 200 多人组成的委员会设计的。&lt;p&gt;无论如何，您想要的似乎是不使用异常，而是使用 monad。这些也是标准的一部分，称为 std::expected。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jari_mustonen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;经典的“常见问题解答”是对这种令人憎恶的语言的最终打击。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;yosefk.com&amp;#x2F;c++fqa&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;yosefk.com&amp;#x2F;c++fqa&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;muragekibicho:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;老实说，我认为谩骂会集中在不必要的复杂性上。&lt;p&gt;起始示例是我如何在 C:&lt;p&gt;```
-void f(const char* p) &amp;#x2F;&amp;#x2F;不安全、幼稚的使用
-{
-    文件 *f = fopen(p, “r”);    &amp;#x2F;&amp;#x2F;获得
-    &amp;#x2F;&amp;#x2F;使用 f
-    f关闭(f);                  &amp;#x2F;&amp;#x2F;释放
-}
-````
-更简单的解决方案不是确保您的函数在发布之前不会退出吗？所有这些 c++ destroyer 的东西似乎有些不必要，并且正如作者指出的那样，会产生更多问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Flundstrom2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Java 和 Rust 是我所知道的唯一能够正确处理异常的语言；强制声明作为方法声明的一部分，因为异常是契约的组成部分。 （是的，我认为 Result&lt;T, E&gt; 对应于异常声明，因为在使用 T 之前必须检查返回值。）&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://marler8997.github.io/blog/bjarne-fix-your-language/</guid>
-      <pubDate>Wed, 12 Nov 2025 05:44:10 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45896733</comments>
+      <title>Yann LeCun 离开 Meta 并成立专注于“世界模型”的人工智能初创公司</title>
+      <link>https://www.nasdaq.com/articles/metas-chief-ai-scientist-yann-lecun-depart-and-launch-ai-start-focused-world-models</link>
+      <guid isPermaLink="true">https://www.nasdaq.com/articles/metas-chief-ai-scientist-yann-lecun-depart-and-launch-ai-start-focused-world-models</guid>
+      <pubDate>Wed, 12 Nov 2025 07:25:30 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45897271</comments>
     </item>
     <item>
-      <title>Perkeep – 终生个人存储系统</title>
-      <link>https://perkeep.org/</link>
-      <description>&lt;p&gt;Perkeep 可让您终身永久保留您的物品。 Perkeep 正在积极开发中。 Perkeep 相信的事情： 你的数据完全在你的控制之下 开源对隐私的偏执，默认情况下一切都是私有的 无 SPOF：不要依赖任何一方（包括你自己） 你的数据应该在 80 年内存活，特别是如果你是最新版本 最新版本是 0。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Perkeep – Personal storage system for life&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45896130"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://perkeep.org/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>.NET 10</title>
+      <link>https://devblogs.microsoft.com/dotnet/announcing-dotnet-10/</link>
+      <description>&lt;p&gt;NET 的基础上，还对运行时、工作负载和语言进行了改进。 Stephen Toub 的性能改进深入探讨突出了最新的优化。 _expression_] 扩展语法 增强的重载解析：[OverloadResolutionPriority] 属性可实现更好的方法选择 部分属性和构造函数：使用属性、构造函数和事件来完成部分成员的故事 ref struct 接口实现：通过零分配模式获得更好的性能 F# 10 亮点 F# 10 是一个细化版本，专注于清晰度、一致性和性能，对日常代码进行了有意义的改进。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45888620"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://devblogs.microsoft.com/dotnet/announcing-dotnet-10/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;outside1234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得在这个内容解决领域已经有很多尝试，但没有人完全正确，并不是说潜在的想法不健全。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ucirello:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望布拉德菲茨有更多的时间来做这件事。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lynx97:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;乍一看，从长远来看，这似乎太令人难以置信了。  我使用 git-annex 来归档我不想再次丢失的文件已经有大约 10 年了。  做我想做的一切，而且对于它给我的东西来说非常简单。  每个文件的校验和、基于文件的复制并不决定我使用的底层文件系统。  完全同步相当慢，但实际上，如果我必须等待 3 小时或 2 天，这并不重要，只需让它在后台运行并完成其工作即可。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tomhow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;上一篇：&lt;p&gt;&lt;i&gt;终生保留您的东西&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=23676350"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=23676350&lt;/a&gt; - 六月2020 年（109 条评论）&lt;p&gt;&lt;i&gt;Perkeep：终生个人存储系统&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=18008240"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=18008240&lt;/a&gt; - 2018 年 9 月（62 条评论）&lt;p&gt;&lt;i&gt;Perkeep – 开源数据建模、存储、搜索、共享和同步&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=15928685"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=15928685&lt;/a&gt; - 2017 年 12 月 (105评论）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;profsummergig:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在这里，我仍在寻找一种方法，只需单击一下即可创建每个书签指向的网页的离线备份。这样离线版本的外观和工作方式与 Google Chrome 中的在线版本完全相同（例如 CTRL+F 功能可以正常工作）。这样我就可以使用一些组合键并单击书签管理器（在 Chrome 中）中的书签来从备份中打开网页（或者备份可以有自己的书签管理器副本......它需要某种目录，否则将没有用）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bigfishrunning:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不太明白这里的目标。感觉就像“如果我们不组织图书馆，而是将所有信息保存在一大堆未分类的活页纸中，那不是很好吗？”&lt;p&gt;这比具有自动复制功能的文件系统更好吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;burke:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我用过perkeep。至少在理论上我仍然这样做。我喜欢它的概念，但它已经成为……不完全是废弃软件，但在主要作者继续前进之前，它从未获得足够的吸引力来真正拥有自己的完整生命。有点悲剧，因为基本思想非常引人注目。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spiritplumber:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢这个...现在我使用 ras pi 3 或 4 作为文件服务器，它似乎大部分工作？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://perkeep.org/</guid>
-      <pubDate>Wed, 12 Nov 2025 03:34:32 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45896130</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jve:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么这个很快就从主页上掉下来了，现在排名第 395 位？&lt;p&gt;不知道这个可信度如何，但似乎从未进入过前 30 位：&lt;a href="https:&amp;#x2F;&amp;#x2F;hnrankings.info&amp;#x2F;45888620&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;hnrankings.info&amp;#x2F;45888620&amp;#x2F;&lt;/a&gt;&lt;p&gt;此帖子有 74 票赞成，16 小时前发布..@dang？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nozzlegear:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为 F# 的日常用户，我最期待的是对“and!”的支持。在计算表达式中。我能想到一些性能关键的代码片段目前包含在“Task.WhenAll”中。 &amp;#x2F; “Parallel.ForEachAsync”我想将其提取回“本机” F# 任务计算。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jitbit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于我们来说，自 .NET 5 以来的每次 .NET 升级都异常顺利，CPU 和 RAM 使用率降低了 10-15%。&lt;p&gt;我们甚至能够将云服务器降级为更小的实例。&lt;p&gt;我希望 .NET 在初创公司中更受欢迎，如果 C# 能够摆脱“企业”模式就好了。柱头。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://devblogs.microsoft.com/dotnet/announcing-dotnet-10/</guid>
+      <pubDate>Tue, 11 Nov 2025 15:44:35 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45888620</comments>
     </item>
     <item>
-      <title>人工智能数据中心引发硬盘短缺，硬盘缺货两年</title>
-      <link>https://www.tomshardware.com/pc-components/hdds/ai-triggers-hard-drive-shortage-amidst-dram-squeeze-enterprise-hard-drives-on-backorder-by-2-years-as-hyperscalers-switch-to-qlc-ssds</link>
-      <description>&lt;p&gt;据 DigiTimes 的另一份报告称，尽管企业级 QLC SSD 将完全为这一支点提供动力，但 Sandisk 在两个月前最初警告将 NAND 价格提高 10% 后，已经将 NAND 价格提高了 50%。这种前所未有的内存和存储短缺在很大程度上是不可预见的。回复 我发誓这是故意在这一点上提高价格而不改进他们的产品的借口，如果需求没有激增，允许大幅提价，他们就会削减产量以保持稀缺性高水平，并提高价格，就像闪存和 DDR 4 制造商所做的那样。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Hard drives on backorder for two years as AI data centers trigger HDD shortage&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45896707"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.tomshardware.com/pc-components/hdds/ai-triggers-hard-drive-shortage-amidst-dram-squeeze-enterprise-hard-drives-on-backorder-by-2-years-as-hyperscalers-switch-to-qlc-ssds'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>在 GPU 上模拟行星：第 1 部分 (2022)</title>
+      <link>https://www.patrickcelentano.com/blog/planet-sim-part-1</link>
+      <description>&lt;p&gt;虽然我喜欢这次计算着色器的冒险给我带来的方向，但我需要一些新技术，可以在会聚板边界处真实地使地壳变形。我可以模拟一点点“地壳”，它们可以相互碰撞，形成山脉和山谷吗？更深入地说，我强烈推荐这个关于计算着色器性能优化的令人难以置信的演讲。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Simulating a Planet on the GPU: Part 1 (2022)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45897122"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.patrickcelentano.com/blog/planet-sim-part-1'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mock-possum:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;企业级 HDD 的交货时间推迟了两年。&lt;p&gt;我睡觉&lt;p&gt;&gt;因此，超大规模企业现在正在转向基于 QLC NAND 的 SSD 以避免这些缺货……这可能会导致全球 SSD 价格上涨&lt;p&gt;真正的狗屎&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.tomshardware.com/pc-components/hdds/ai-triggers-hard-drive-shortage-amidst-dram-squeeze-enterprise-hard-drives-on-backorder-by-2-years-as-hyperscalers-switch-to-qlc-ssds</guid>
-      <pubDate>Wed, 12 Nov 2025 05:36:41 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45896707</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jkhdigital:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;tectonics.js 博客有一些关于如何&lt;i&gt;正确&lt;/i&gt;模拟板块构造的非常令人难以置信的文章：&lt;a href="https:&amp;#x2F;&amp;#x2F;davidson16807.github.io&amp;#x2F;tectonics.js&amp;#x2F;blog&amp;#x2F;news.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;davidson16807.github.io&amp;#x2F;tectonics.js&amp;#x2F;blog&amp;#x2F;news.html&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;janpmz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望能够直观地了解 GPU 的用途。例如。我可以移动多少个点？像这样的模拟非常适合。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lukan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;啊，是的，我很久以前就梦想做这样的事情，只是有更多的细节，但我得出的结论是，如果没有一个大的团队和一台超级计算机，或者没有几所跨学科合作的大学，我将无法接近我想要的东西。但到目前为止，我正忙于其他事情，读到他的经历毫不奇怪地证实了存在的挑战——主要是表现。但 GPU 正在崛起，我对未来持乐观态度。如果人工智能泡沫破灭，我想大量廉价的 GPU 能力将可用于此类实验以及更复杂的实验。如果不是，计算能力和金钱无论如何都可能会增加。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;montebicyclelo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为爱好者，着色器是最有趣的编程类型之一。相对简单的语言，通常与令人满意的视觉效果联系在一起。一旦点击，这就是一个很酷的工作范式，例如“我是从单个像素的角度进行编码的”。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.patrickcelentano.com/blog/planet-sim-part-1</guid>
+      <pubDate>Wed, 12 Nov 2025 06:58:06 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45897122</comments>
+    </item>
+    <item>
+      <title>你将一无所有并且不快乐</title>
+      <link>https://racc.blog/you-will-own-nothing-and-be-unhappy/</link>
+      <description>&lt;p&gt;从送餐应用程序到啤酒订阅。人们可能只是叹息，嘀咕“这该死的订阅啊”，然后取消它，这样它就不会再向他们收费。他们不会消失，除非他们找到更有利可图的东西。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; You will own nothing and be (un)happy&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45897016"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://racc.blog/you-will-own-nothing-and-be-unhappy/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 26 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Fredkin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;订阅让公司变得懒惰，并且降低了产品的质量。我正在看着你们：Foundry、Adobe、Maxon、宝马的加热座椅......&lt;p&gt;他们安于现状，享受增加的现金流，说这让他们能够进行定期更新。但这从有用的错误修复，到仅仅改变用户界面、更改字体、引入没人要求或无法使用的无意义功能，以及为了“简化”而删除有用的功能。目的...而实际上需要修复的长期错误仍未修复。&lt;p&gt;最终，客户会对产品感到不满意，并通过来自不同竞争对手的各种永久许可或自由和开源替代品来弥补失去的功能和降低的用户体验，因为他们也希望改善现金流，而不是每个月都被榨干。&lt;p&gt;选择提供一次性永久许可的公司必须付出更大的努力来说服客户升级，意味着产品的改进。它还可以让您的客户对您的产品更加忠诚。您应该&lt;i&gt;邀请&lt;/i&gt;这种挑战，并放弃增加现金流的诱惑，因为它会让您保持警惕。只订阅会在一段时间里看起来很棒，但最终你会萎缩并失败。&lt;p&gt;当软件从 CD 和 DVD 上发布到定期补丁和下载时，也会发生类似的情况。并不是说我们需要回到那个时代，但 QA 必须更加努力地工作，因为发行成本很高。如今，你可以发布未完成和破碎状态的东西。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lrvick:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我拥有数字生活中所依赖的一切，并且非常高兴。&lt;p&gt;停止使用专有软件，因为无论您花多少钱，都永远不可能拥有它。&lt;p&gt;FOSS 解决了我的所有软件需求，并且可能适合大多数选择投资学习它的人。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;theturtlemoves:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;使用订阅软件或订阅音乐，您无需为任何东西、物体或设备付费。你正在为某人的思想付出代价。该值不是您使用应用程序或播放 mp3。你所付出的价值是别人的思想想到了一些东西并从纯粹的思想中创造出来。另一种选择是从纯粹的思想中构建你自己的东西，即用你的思想。你订阅的是创作者，而不是创建的结果。&lt;p&gt;旁注：我不太喜欢 FOSS，所有人都可以免费获得它，没有任何条件，也没有任何问题，而我们实际上只是免费给出我们的想法。只要其他人给予回报就可以了，但很多人却没有。少数回报的人可能是值得的。本质上，你是在思想之间进行交易，这就是回报，而不是金钱。&lt;p&gt;我不赞成或反对，只是大声思考。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;laurynas-s:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一切都会回到原点。&lt;p&gt;公司拥有你 - 他们支付订阅费（你的工资）来租用你。如果他们可以一次性支付一笔费用来永远拥有你，那不是很好吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;donperignon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，这确实击中要害。最近，一切都变成了订阅，即使是应该在您自己的计算机上运行的简单工具。&lt;p&gt;这就是我们构建 ChannelVault (&lt;a href="https:&amp;#x2F;&amp;#x2F;mestr.io&amp;#x2F;channelvault.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;mestr.io&amp;#x2F;channelvault.html&lt;/a&gt;) 作为桌面应用程序的原因（使用Wails + Go）在本地存档和搜索 Slack 工作区以进行电子数据展示和备份。没有 SaaS、没有经常性费用、没有云依赖。它只在您的计算机上运行并随身携带您的数据。试图反抗这种普遍趋势。&lt;p&gt;我怀念软件感觉像是你真正拥有的东西，而不是每月租用的东西。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Fokamul:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您不拥有它，那么盗版它就不是犯罪。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whstl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就在本月早些时候，我在一家录音室，由于天知道哪里出现了连接问题，ILok 插件无法工作。插件确实花费了他们很多钱，并且出现在工作室的广告材料中。&lt;p&gt;现在，即使是过去可以工作几十年的硬件也需要应用程序。有些吉他踏板需要应用程序才能操作。第一代已经成为废纸：Digitech被三星收购后，所有的应用程序服务器都死掉了。&lt;p&gt;需要服务器的应用程序从来不是为了我，它们纯粹是为了创建依赖关系。真正的功能是允许数据的实际备份。&lt;p&gt;流媒体有更糟糕的问题。它承诺向创作者付费，但作为一项实验，在一个月内只听了两个乐队之后，这 10 美元中没有一个明显的部分没有流向这两个乐队。当然，它可能去了某个主要唱片公司。&lt;p&gt;我对任何与科技相关的事物都百分百失望，并将盗版视为抵制这种垃圾的一种方式。到目前为止，只有盗版才能可靠地让事情在应该的时候正常进行。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;saubeidl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;获取 Android 设备。&lt;p&gt;安装 F-Droid。&lt;p&gt;拥有大量免费的应用程序，就像啤酒一样免费。&lt;p&gt;您&lt;i&gt;不必&lt;/i&gt;使用寻租的专有垃圾。还有其他选择。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dwoldrich:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;软件的真正所有权需要能够通过开放或至少许可的源代码进行修补和修复。  但对于必须发展才能生存并需要资金才能实现的商业产品来说，发布源代码几乎从来没有意义。&lt;p&gt;在我一直致力于创建的小型软件业务中，我的愿望是为有抱负的程序员提供按月订阅的教育产品。&lt;p&gt;然后，一旦订阅产品支付账单并取得成功，就创建该软件的单座离线版本，并将其与一本书打包出售。  这本书将是编程语言的用户指南，其中包含有趣的示例程序，适合那些没有互联网连接到我的网站的家庭和学校。&lt;p&gt;我为在线版本计划了离线书籍版本没有的网络和共享功能，因此有动力付费订阅以获得所有这些功能。  尽管如此，我认为应该提供一个带有永久许可证的离线版本，以防万一我的公司倒闭，网站和基于网络的编程环境随之消失，让人们一无所有。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CGamesPlay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对不拥有东西表示同情，但我不明白这一部分：&lt;p&gt;&gt;我购买了该应用程序的先前“终身”版本，但为了什么，因为我必须付费订阅才能访问最新功能。&lt;p&gt;是的，这就是“所有权”的方式。作品。当你拥有某样东西时，没有人会在你的控制之下改变它——无论是好是坏。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shoobiedoo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感觉就像每天我都会遇到另一个永远不要停止用古老的草书手写笔记的理由。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tpoacher:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;接下来，在 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;StallmanWasRight" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;StallmanWasRight&lt;/a&gt; ...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Cthulhu_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于笔记，如果我有需要，我只需使用纯文本 &amp;#x2F;共享文件夹中的 markdown 文件（我回到了 Dropbox 免费计划，但还有很多替代方案）。不过，我没有记笔记的习惯，所以我从来没有对任何特定的应用程序有任何依恋。&lt;p&gt;我只是希望文件共享的东西不要感觉那么根深蒂固。我认为 Dropbox 变得不可用或不再提供免费计划（而且它已经仅限于 2 或 3 台设备）只是时间问题。在我的 Windows PC 上使用 Apple 的东西感觉不自然，在我的 Apple 设备上使用 Microsoft 的感觉不自然，使用 Google 的感觉好像需要在每个设备上安装一个单独的应用程序，而且你仍然会经常进入（我觉得不自然的感觉）网络界面。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;neuroelectron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就我而言，iPad 只是一个带有一些消息传递功能的网络浏览器。没有应用程序商店。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ifh-hn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你为什么会相信任何一家谷歌、苹果、微软，任何像他们这样的公司，能够控制对你来说很重要的东西。&lt;p&gt;如果你谈论的是笔记，那真的没有任何借口。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Y444:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我同意这篇文章的总体观点。但我不得不说，这是众多类似的帖子之一，谴责基于订阅的模式、封闭的生态系统等，甚至没有提出理论上的解决方案。&lt;p&gt;是的，事情一团糟，FSF 只是一些没有实权的边缘激进微型组织，开源运动被微软之类的 EEE&amp;#x27;d，硬件被锁定，你总是在线的游戏在发行商认为它们无利可图时就停止运行，那么我们现在在做什么？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;teekert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“有趣的是，数字世界中的“所有权”已成为一种幻觉。&lt;p&gt;我总是说“隐私是书呆子的权利”，我想我也可以开始添加所有权了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aldipower:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，数字世界中的“所有权”已成为一种幻觉。您不再真正拥有您的应用程序、您的音乐，甚至您的工具。”&lt;p&gt;这是您的决定。我在 Bandcamp 上出版了一张音乐专辑。你可以购买它，我会给你寄一盘真正的物理磁带，然后你就可以_下载_你拥有的高品质FLAC。&lt;p&gt;如果你喜欢拥有东西，你就有一切可能性。&lt;p&gt;但我同意，如果我们方便地消费低质量的流媒体内容，例如在Spotify上，我们可能会倾向于忘记高质量的东西。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shubhamjain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;公司会攻击那些忘记取消免费试用的人。到目前为止，这种情况只发生在我身上一次，但幸运的是，我成功拿到了退款。&lt;p&gt;这种黑暗模式已经完全占领了 iOS 生态系统。应用程序会隐藏它们已付费的事实，直到您完成注册、登录、设置等几个步骤，让您相信您下载它的目的只是下一个屏幕。然后，砰的一声，付费专区出现了！提供“慷慨”的 3 天免费试用和每周 3.99 美元的订阅。&lt;p&gt;我立即卸载此类应用程序并留下一星评论。我明白了，开发人员需要赚钱，但有比这些低俗的废话更好的方法。不幸的是，太多的大师通过不断吹嘘他们赚了多少钱来使这种做法正常化。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;firer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我同意普遍的观点，但对我来说，旧的“一生”似乎是公平的。许可证将无权访问新功能。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;renewiltord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对我来说似乎不错。 Guy 购买了 Goodnotes 5，并且可以使用 Goodnotes 5。他希望免费包含 Goodnotes 6，但事实并非如此。这就是生活。当我获得《漩涡的入侵》时，我没想到还能免费获得《敏锐的梦想》。没什么新鲜的&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;timeon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;昨天，我查看了 Goodnotes 应用程序，因为我打算再买一台 iPad 来尝试一下用它做笔记。&lt;p&gt;我也会重新考虑那些试图推动 Newspeak“侧载”的硬件制造商。而不是“安装”。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;quapster:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们曾经拥有可以提高我们生产力的工具。现在我们租用可以让别人盈利的工具。订阅不是关于经常性价值，而是关于经常性计费，在某些时候，每个产品决策都开始倾向于依赖而不是所有权。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;apples_oranges:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它是不对称的，你在网上发布一些东西，它会立即被社交网络或人工智能用来盈利。反之亦然，你得到一个应用程序，它甚至不是你的。&lt;p&gt;我认为我们应该努力避免玩这个游戏..&lt;p&gt;但最终我觉得在这种特殊情况下，这是操作错误。他可以避免使用该应用程序，因为编写应用程序和组织应用程序有很多选择。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cjfd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果其他人控制了对你来说重要的事情，他们会在某个时候找到滥用这种权力的方法。在做出技术选择时要牢记的非常重要的一点。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tropicalfruit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;有趣的是，数字世界中的“所有权”已成为一种幻觉。&lt;p&gt;就像每一项“创新”一样。现在，它以更高的成本带来了便利，并剥夺了所有权，并且经常具有&lt;p&gt;我个人对数字虚无感到非常厌倦。这一切都是短暂的。&lt;p&gt;我想更多地了解现实世界中具有质感、重量和持久性的事物。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://racc.blog/you-will-own-nothing-and-be-unhappy/</guid>
+      <pubDate>Wed, 12 Nov 2025 06:37:13 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45897016</comments>
     </item>
   </channel>
 </rss>
