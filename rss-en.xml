@@ -6,18 +6,72 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Nov 2025 03:46:28 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Nov 2025 06:36:13 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>Text rendering and effects using GPU-computed distances</title>
-      <link>https://blog.pkh.me/p/47-text-rendering-and-effects-using-gpu-computed-distances.html</link>
-      <description>&lt;p&gt;); glyph_A_count contains how many Bézier curves there is for each sub-shape composing the glyph, and glyph_A contains that list of Bézier cubic curves. For simplicity and because we want to make sure the most complex case is well tested, we will stick to this approach in this article. This makes artificial "precision holes" that will break rendering in obscure ways.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45895107"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://blog.pkh.me/p/47-text-rendering-and-effects-using-gpu-computed-distances.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://blog.pkh.me/p/47-text-rendering-and-effects-using-gpu-computed-distances.html</guid>
-      <pubDate>Wed, 12 Nov 2025 00:56:10 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45895107</comments>
+      <title>Bjarne fix your freaking language</title>
+      <link>https://marler8997.github.io/blog/bjarne-fix-your-language/</link>
+      <description>&lt;p&gt;In this example, Bjarne elects to throw an exception to propagate any error from calling fopen. The first is that our error message may not be correct. It’s more noisy than the original C example which generates backpressure in changes that attempt to implement proper error handling like this.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45896733"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://marler8997.github.io/blog/bjarne-fix-your-language/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lealanko:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is a common problem with try-catch syntax. An alternative, and arguably more useful syntax would be&lt;p&gt;&lt;pre&gt;&lt;code&gt;  try (File_handle fh {s, &amp;quot;r&amp;quot;}) {
+    &amp;#x2F;&amp;#x2F; use fh
+  } unless (const File_error&amp;amp; e) {
+    &amp;#x2F;&amp;#x2F; handle error
+  }
+&lt;/code&gt;&lt;/pre&gt;
+Where the &amp;quot;use fh&amp;quot; part is &lt;i&gt;not&lt;/i&gt; covered by the exception handler. This is covered (in ML context) in &lt;a href="https:&amp;#x2F;&amp;#x2F;www.microsoft.com&amp;#x2F;en-us&amp;#x2F;research&amp;#x2F;publication&amp;#x2F;exceptional-syntax&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.microsoft.com&amp;#x2F;en-us&amp;#x2F;research&amp;#x2F;publication&amp;#x2F;excepti...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mgaunard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Author completely misunderstands how to use exceptions and is just bashing them. A lot of what he says is inaccurate if not outwardly incorrect.&lt;p&gt;Also Bjarne&amp;#x27;s control of C++ is quite limited, and he is semi-retired, so asking him to &amp;quot;fix his language&amp;quot; is fairly misguided. It&amp;#x27;s designed by a committee of 200+ people.&lt;p&gt;Anyway what you want seems to be to not use exceptions, but monads instead. These are also part of the standard, it&amp;#x27;s called std::expected.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jari_mustonen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The classic &amp;quot;Frequently Questioned Answers&amp;quot; is the ultimate takedown of this abomination of a language.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;yosefk.com&amp;#x2F;c++fqa&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;yosefk.com&amp;#x2F;c++fqa&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;muragekibicho:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Honestly, I thought the diatribe would focus on needless complexity.&lt;p&gt;The starting example is how I&amp;#x27;d do it in C:&lt;p&gt;```
+void f(const char* p)           &amp;#x2F;&amp;#x2F; unsafe, naive use
+{
+    FILE *f = fopen(p, &amp;quot;r&amp;quot;);    &amp;#x2F;&amp;#x2F; acquire
+    &amp;#x2F;&amp;#x2F; use f
+    fclose(f);                  &amp;#x2F;&amp;#x2F; release
+}
+```
+Wouldn&amp;#x27;t the simpler solution be ensuring your function doesn&amp;#x27;t exit before release? All that c++ destroyer stuff appears somewhat unnecessary and as the author points out, creates even more problems.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Flundstrom2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Java and Rust are the only language that I know of that has proper handling of exceptions; mandatory declaration as part of method declaration, since exceptions ARE an integral part of the contract. (Yes, I consider the Result&amp;lt;T, E&amp;gt; being corresponding to exception declaration, since the return value MUST be checked prior to use of T.)&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://marler8997.github.io/blog/bjarne-fix-your-language/</guid>
+      <pubDate>Wed, 12 Nov 2025 05:44:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45896733</comments>
+    </item>
+    <item>
+      <title>Perkeep – Personal storage system for life</title>
+      <link>https://perkeep.org/</link>
+      <description>&lt;p&gt;Perkeep lets you permanently keep your stuff, for life. Perkeep is under active development. Things Perkeep believes: Your data is entirely under your control Open Source Paranoid about privacy, everything private by default No SPOF: don't rely on any single party (including yourself) Your data should be alive in 80 years, especially if you are Latest Release The latest release is 0.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45896130"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://perkeep.org/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;outside1234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I feel like there have been a number of attempts in this content addressed space and that nobody has gotten it quite right, not that the underlying idea is unsound.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ucirello:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I wish bradfitz had more time to work on it.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lynx97:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;At first glance, this looks like &lt;i&gt;way&lt;/i&gt; too much to trust in the long run.  I use git-annex since roughly 10 years to archive files I don&amp;#x27;t want to loose again.  Does everything I want, and is pretty simple for what it gives me.  A checksum for every file, replication on a file-basis, does not dictate the underlying filesystem I use.  Full syncs are rather slow, but in reality, it doesn&amp;#x27;t really matter if I have to wait 3 hours or 2 days, just let it run in the background and do its thing.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tomhow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Previously:&lt;p&gt;&lt;i&gt;Keep Your Stuff, for Life&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=23676350"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=23676350&lt;/a&gt; - June 2020 (109 comments)&lt;p&gt;&lt;i&gt;Perkeep: personal storage system for life&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=18008240"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=18008240&lt;/a&gt; - Sept 2018 (62 comments)&lt;p&gt;&lt;i&gt;Perkeep – Open-source data modeling, storing, search, sharing and synchronizing&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=15928685"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=15928685&lt;/a&gt; - Dec 2017 (105 comments)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;profsummergig:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;And here I&amp;#x27;m still looking for a way, with one click, to create an offline backup of the webpages each of my bookmarks points to. Such that the offline version looks and works exactly like the online version in (say) Google Chrome (e.g. the CTRL+F feature works fine). And such that I can use some key-combo and click a bookmark in my bookmarks manager (in Chrome) to open a webpage from the backup (or the backup can have its own copy of the bookmarks manager... it needs a catalog of some sort or it won&amp;#x27;t be useful).&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bigfishrunning:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I don&amp;#x27;t really understand the goal here. It feels like &amp;quot;wouldn&amp;#x27;t it be nice if instead of organizing a library, we just kept all of the information in a giant unsorted pile of looseleaf paper?&amp;quot;&lt;p&gt;How is this better then a filesystem with automated replication?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;burke:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I have used perkeep. I still do at least in theory. I love the concept of it but it’s become… not quite abandonware, but it never gained enough traction to really take on a full life of its own before the primary author moved on. A bit of a tragedy because the basic idea is pretty compelling.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spiritplumber:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I like this... right now I&amp;#x27;m using a ras pi 3 or 4 as a file server and it seems to mostly work?&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://perkeep.org/</guid>
+      <pubDate>Wed, 12 Nov 2025 03:34:32 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45896130</comments>
+    </item>
+    <item>
+      <title>Hard drives on backorder for two years as AI data centers trigger HDD shortage</title>
+      <link>https://www.tomshardware.com/pc-components/hdds/ai-triggers-hard-drive-shortage-amidst-dram-squeeze-enterprise-hard-drives-on-backorder-by-2-years-as-hyperscalers-switch-to-qlc-ssds</link>
+      <description>&lt;p&gt;While enterprise-grade QLC SSDs would entirely power this pivot, Sandisk has already raised NAND prices by 50%, according to another DigiTimes report, after initially warning of a 10% increase two months ago. This unprecedented shortage across memory and storage was largely unforeseen. Reply I swear that this is intentional at this point a excuse to raise prices while not improving their product and if the demand doesn't spike allowing a massive price hike they cut production to keep scarcity high and increase prices like what flash memory and ddr 4 manufacturers did Reply yc1 said:I swear that this is intentional at this point a excuse to raise prices while not improving their product and if the demand doesn't spike allow.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45896707"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.tomshardware.com/pc-components/hdds/ai-triggers-hard-drive-shortage-amidst-dram-squeeze-enterprise-hard-drives-on-backorder-by-2-years-as-hyperscalers-switch-to-qlc-ssds'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mock-possum:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; delivery times for enterprise-grade HDDs delayed by two years.&lt;p&gt;I sleep&lt;p&gt;&amp;gt; so hyperscalers are now switching to QLC NAND-based SSDs to avoid these backorders … This could lead to SSD prices rising worldwide&lt;p&gt;Real shit&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.tomshardware.com/pc-components/hdds/ai-triggers-hard-drive-shortage-amidst-dram-squeeze-enterprise-hard-drives-on-backorder-by-2-years-as-hyperscalers-switch-to-qlc-ssds</guid>
+      <pubDate>Wed, 12 Nov 2025 05:36:41 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45896707</comments>
     </item>
   </channel>
 </rss>

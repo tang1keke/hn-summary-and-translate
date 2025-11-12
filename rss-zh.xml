@@ -6,19 +6,75 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 12 Nov 2025 03:46:28 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Nov 2025 06:36:13 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>使用 GPU 计算距离的文本渲染和效果</title>
-      <link>https://blog.pkh.me/p/47-text-rendering-and-effects-using-gpu-computed-distances.html</link>
-      <description>&lt;p&gt;）； glyph_A_count 包含组成字形的每个子形状有多少条贝塞尔曲线，而 glyph_A 包含贝塞尔三次曲线列表。为简单起见，并且因为我们希望确保最复杂的情​​况得到充分测试，因此我们将在本文中坚持使用这种方法。这会产生人为的“精确孔”，从而以模糊的方式破坏渲染。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Text rendering and effects using GPU-computed distances&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45895107"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://blog.pkh.me/p/47-text-rendering-and-effects-using-gpu-computed-distances.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://blog.pkh.me/p/47-text-rendering-and-effects-using-gpu-computed-distances.html</guid>
-      <pubDate>Wed, 12 Nov 2025 00:56:10 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45895107</comments>
+      <title>Bjarne 修复你那该死的语言</title>
+      <link>https://marler8997.github.io/blog/bjarne-fix-your-language/</link>
+      <description>&lt;p&gt;在此示例中，Bjarne 选择抛出异常来传播调用 fopen 时出现的任何错误。首先，我们的错误消息可能不正确。它比原始的 C 示例更嘈杂，原始的 C 示例在尝试实现像这样的正确错误处理的更改中会产生背压。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Bjarne fix your freaking language&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45896733"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://marler8997.github.io/blog/bjarne-fix-your-language/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lealanko:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是 try-catch 语法的常见问题。另一种可以说更有用的语法是&lt;p&gt;&lt;pre&gt;&lt;code&gt; try (File_handle fh {s, "r"}) {
+    &amp;#x2F;&amp;#x2F;使用跳频
+  } 除非 (const File_error&amp;e) {
+    &amp;#x2F;&amp;#x2F;处理错误
+  }
+&lt;/code&gt;&lt;/pre&gt;
+其中“use fh”是指“使用fh”。部分&lt;i&gt;未&lt;/i&gt;被异常处理程序覆盖。这在 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.microsoft.com&amp;#x2F;en-us&amp;#x2F;research&amp;#x2F;publication&amp;#x2F;exceptional-syntax&amp;#x2F;" 中对此进行了介绍（在 ML 上下文中） rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.microsoft.com&amp;#x2F;en-us&amp;#x2F;研究&amp;#x2F;出版物&amp;#x2F;例外...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mgaunard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作者完全误解了如何使用异常，只是猛烈抨击它们。他所说的很多内容即使不是表面上不正确，也是不准确的。&lt;p&gt;此外，Bjarne 对 C++ 的控制非常有限，而且他处于半退休状态，因此要求他“修复他的语言”是很困难的。是相当误导的。它是由 200 多人组成的委员会设计的。&lt;p&gt;无论如何，您想要的似乎是不使用异常，而是使用 monad。这些也是标准的一部分，称为 std::expected。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jari_mustonen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;经典的“常见问题解答”是对这种令人憎恶的语言的最终打击。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;yosefk.com&amp;#x2F;c++fqa&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;yosefk.com&amp;#x2F;c++fqa&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;muragekibicho:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;老实说，我认为谩骂会集中在不必要的复杂性上。&lt;p&gt;起始示例是我如何在 C:&lt;p&gt;```
+void f(const char* p) &amp;#x2F;&amp;#x2F;不安全、幼稚的使用
+{
+    文件 *f = fopen(p, “r”);    &amp;#x2F;&amp;#x2F;获得
+    &amp;#x2F;&amp;#x2F;使用 f
+    f关闭(f);                  &amp;#x2F;&amp;#x2F;释放
+}
+````
+更简单的解决方案不是确保您的函数在发布之前不会退出吗？所有这些 c++ destroyer 的东西似乎有些不必要，并且正如作者指出的那样，会产生更多问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Flundstrom2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Java 和 Rust 是我所知道的唯一能够正确处理异常的语言；强制声明作为方法声明的一部分，因为异常是契约的组成部分。 （是的，我认为 Result&lt;T, E&gt; 对应于异常声明，因为在使用 T 之前必须检查返回值。）&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://marler8997.github.io/blog/bjarne-fix-your-language/</guid>
+      <pubDate>Wed, 12 Nov 2025 05:44:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45896733</comments>
+    </item>
+    <item>
+      <title>Perkeep – 终生个人存储系统</title>
+      <link>https://perkeep.org/</link>
+      <description>&lt;p&gt;Perkeep 可让您终身永久保留您的物品。 Perkeep 正在积极开发中。 Perkeep 相信的事情： 你的数据完全在你的控制之下 开源对隐私的偏执，默认情况下一切都是私有的 无 SPOF：不要依赖任何一方（包括你自己） 你的数据应该在 80 年内存活，特别是如果你是最新版本 最新版本是 0。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Perkeep – Personal storage system for life&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45896130"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://perkeep.org/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;outside1234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得在这个内容解决领域已经有很多尝试，但没有人完全正确，并不是说潜在的想法不健全。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ucirello:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望布拉德菲茨有更多的时间来做这件事。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lynx97:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;乍一看，从长远来看，这似乎太令人难以置信了。  我使用 git-annex 来归档我不想再次丢失的文件已经有大约 10 年了。  做我想做的一切，而且对于它给我的东西来说非常简单。  每个文件的校验和、基于文件的复制并不决定我使用的底层文件系统。  完全同步相当慢，但实际上，如果我必须等待 3 小时或 2 天，这并不重要，只需让它在后台运行并完成其工作即可。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tomhow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;上一篇：&lt;p&gt;&lt;i&gt;终生保留您的东西&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=23676350"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=23676350&lt;/a&gt; - 六月2020 年（109 条评论）&lt;p&gt;&lt;i&gt;Perkeep：终生个人存储系统&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=18008240"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=18008240&lt;/a&gt; - 2018 年 9 月（62 条评论）&lt;p&gt;&lt;i&gt;Perkeep – 开源数据建模、存储、搜索、共享和同步&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=15928685"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=15928685&lt;/a&gt; - 2017 年 12 月 (105评论）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;profsummergig:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在这里，我仍在寻找一种方法，只需单击一下即可创建每个书签指向的网页的离线备份。这样离线版本的外观和工作方式与 Google Chrome 中的在线版本完全相同（例如 CTRL+F 功能可以正常工作）。这样我就可以使用一些组合键并单击书签管理器（在 Chrome 中）中的书签来从备份中打开网页（或者备份可以有自己的书签管理器副本......它需要某种目录，否则将没有用）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bigfishrunning:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不太明白这里的目标。感觉就像“如果我们不组织图书馆，而是将所有信息保存在一大堆未分类的活页纸中，那不是很好吗？”&lt;p&gt;这比具有自动复制功能的文件系统更好吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;burke:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我用过perkeep。至少在理论上我仍然这样做。我喜欢它的概念，但它已经成为……不完全是废弃软件，但在主要作者继续前进之前，它从未获得足够的吸引力来真正拥有自己的完整生命。有点悲剧，因为基本思想非常引人注目。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spiritplumber:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢这个...现在我使用 ras pi 3 或 4 作为文件服务器，它似乎大部分工作？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://perkeep.org/</guid>
+      <pubDate>Wed, 12 Nov 2025 03:34:32 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45896130</comments>
+    </item>
+    <item>
+      <title>人工智能数据中心引发硬盘短缺，硬盘缺货两年</title>
+      <link>https://www.tomshardware.com/pc-components/hdds/ai-triggers-hard-drive-shortage-amidst-dram-squeeze-enterprise-hard-drives-on-backorder-by-2-years-as-hyperscalers-switch-to-qlc-ssds</link>
+      <description>&lt;p&gt;据 DigiTimes 的另一份报告称，尽管企业级 QLC SSD 将完全为这一支点提供动力，但 Sandisk 在两个月前最初警告将 NAND 价格提高 10% 后，已经将 NAND 价格提高了 50%。这种前所未有的内存和存储短缺在很大程度上是不可预见的。回复 我发誓这是故意在这一点上提高价格而不改进他们的产品的借口，如果需求没有激增，允许大幅提价，他们就会削减产量以保持稀缺性高水平，并提高价格，就像闪存和 DDR 4 制造商所做的那样。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Hard drives on backorder for two years as AI data centers trigger HDD shortage&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45896707"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.tomshardware.com/pc-components/hdds/ai-triggers-hard-drive-shortage-amidst-dram-squeeze-enterprise-hard-drives-on-backorder-by-2-years-as-hyperscalers-switch-to-qlc-ssds'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mock-possum:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;企业级 HDD 的交货时间推迟了两年。&lt;p&gt;我睡觉&lt;p&gt;&gt;因此，超大规模企业现在正在转向基于 QLC NAND 的 SSD 以避免这些缺货……这可能会导致全球 SSD 价格上涨&lt;p&gt;真正的狗屎&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.tomshardware.com/pc-components/hdds/ai-triggers-hard-drive-shortage-amidst-dram-squeeze-enterprise-hard-drives-on-backorder-by-2-years-as-hyperscalers-switch-to-qlc-ssds</guid>
+      <pubDate>Wed, 12 Nov 2025 05:36:41 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45896707</comments>
     </item>
   </channel>
 </rss>
