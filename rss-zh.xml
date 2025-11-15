@@ -6,51 +6,148 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 15 Nov 2025 15:21:51 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Nov 2025 18:32:53 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>如何用 C 语言编写类型安全的泛型</title>
-      <link>https://raphgl.github.io/blog/generics-in-c.html</link>
-      <description>&lt;p&gt;标头实例化应该如下所示： #define VEC_ITEM_TYPE long long #define VEC_SUFFIX num #include "vector. #define G(name) name##_##VEC_ITEM_TYPE 但是，这不起作用。所以我们将引入一个 VEC_SUFFIX： #ifndef VEC_ITEM_TYPE #error VEC_ITEM_TYPE was not Defined #endif #ifndef VEC_SUFFIX #define VEC_SUFFIX VEC_ITEM_TYPE #endif #define __G(name, type) name##_##type #define _G(name, type) __G(name, type) #define G(name) _G(name, VEC_SUFFIX) 现在我们可以自由地实现我们的库了。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; How to write type-safe generics in C&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45937518"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://raphgl.github.io/blog/generics-in-c.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jesse__:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我编写了一种元编程语言，为任何感兴趣的人添加了另一个选项： &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;scallyw4g&amp;#x2F;poof" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;scallyw4g&amp;#x2F;poof&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pjmlp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;类型安全、泛型和 C 有点矛盾。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;variadix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您可以为每个泛型函数创建宏函数，以便 Vector_New(int)(&amp;v) 之类的内容扩展为 Vector_New_int(&amp;amp;v)。与 G 宏相比，它看起来也不那么陌生（更像模板）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;david2ndaccount:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我过去写过一篇类似的文章： &lt;a href="https:&amp;#x2F;&amp;#x2F;www.davidpriver.com&amp;#x2F;ctemplates.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.davidpriver.com&amp;#x2F;ctemplates.html&lt;/a&gt;&lt;p&gt;我在我的爱好项目中使用了这种技术，因为它为我找到了最好的选项我探索过。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;synergy20:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;或者使用 nim 元编程，它将被转译为 c&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lelanthran:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在 2004 年左右的生产中使用过这种方法，但我从来没有真正喜欢过这种方法 - 没有必要滥用预处理器，而且结果几乎不可读。&lt;p&gt;我认为使用 `_Generic`[1] 可能有更好的方法。尽管它仍然使用宏，但生成的代码更具可读性。&lt;p&gt;----------------------------&lt;p&gt;[1] 当然，`_Generic` 也有其自身的问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;schaefer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;更准确的标题是：&lt;p&gt;“如何使用 C 预处理器编写类型安全的泛型”&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;self_awareness:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么，另一种选择是使用 C++ 编译器，它支持模板，但通过编码约定标准限制类的使用。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://raphgl.github.io/blog/generics-in-c.html</guid>
-      <pubDate>Sat, 15 Nov 2025 13:58:09 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45937518</comments>
+      <title>适用于 Windows 11 的 Windhawk Windows 经典主题 mod</title>
+      <link>https://windhawk.net/mods/classic-theme-enable</link>
+      <guid isPermaLink="true">https://windhawk.net/mods/classic-theme-enable</guid>
+      <pubDate>Sat, 15 Nov 2025 16:53:30 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45938723</comments>
     </item>
     <item>
-      <title>Kagi Bloopers – 搜索结果出错</title>
-      <link>https://help.kagi.com/kagi/bloopers/</link>
-      <description>&lt;p&gt;黑客最初是在 Mastodon 上。半马 最初出现在 Discord 上。公司最初位于X。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Kagi Bloopers – Search Results Gone Wrong&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45936964"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://help.kagi.com/kagi/bloopers/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>富士通 Lifebook U729 上的 Linux</title>
+      <link>https://borretti.me/article/linux-on-the-fujitsu-lifebook-u729</link>
+      <description>&lt;p&gt;这是笔记本电脑附带的。这是富士通 BIOS 更新工具。您应该有一个新的 BIOS 版本。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Linux on the Fujitsu Lifebook U729&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45937989"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://borretti.me/article/linux-on-the-fujitsu-lifebook-u729'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TriangleEdge:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Kagi在LLM时代还有价值吗？我的理解是它汇总了不同提供商的结果。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BinaryPie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;卡吉值得花钱吗？它已经引起我的关注有一段时间了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nkurz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;鉴于标题“搜索结果出错”，我想借此机会试图羞辱 Kagi，让其修复“更多结果”的搜索结果。特征。  这个简单的功能被打破了，因为它经常给你重复它给出的相同的初始结果。  也就是说，它不是给你“更多结果”，而是给你很多“相同结果”。&lt;p&gt;我在大约 6 个月前将此报告为错误，很快就被告知计划修复它。但它还没有被修复。几周前我再次检查是否有任何进展，显然他们已经放弃了，因为太难了：“抱歉，似乎我忘记更新线程了。不幸的是，删除这些结果的重复数据实际上比看起来更棘手。这主要是我们处理上游来源结果的方式造成的，而重复数据删除由于缓存问题而变得非常复杂。”&lt;p&gt;Kagi，你总体来说很棒。  我通常很高兴成为付费客户。  但我不相信对 URL 列表进行重复数据删除实际上对您来说太难了。  也许我是少数真正关心搜索网页的用户之一，但对于我的用例来说，如果当我单击“更多结果”时您实际上给了我更多结果，我的搜索结果会更好。这怎么不被认为是搜索引擎的核心功能呢？请修复此问题！&lt;p&gt;这是错误报告：&lt;a href="https:&amp;#x2F;&amp;#x2F;kagifeedback.org&amp;#x2F;d&amp;#x2F;7022-clicking-more-results-yields-lots-of-duplicates" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;kagifeedback.org&amp;#x2F;d&amp;#x2F;7022-clicking-more-results-yields...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;phyzome:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只是想在这里快速抱怨一下&lt;i&gt;这些都不是搜索结果&lt;/i&gt;。&lt;p&gt;（虽然是的，但它们很有趣）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dceddia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不是很花哨，但我认为它很简洁：&lt;p&gt;前几天我在 Kagi 中搜索“退伍军人节 2025”（在退伍军人节，当时我不确定），它回答了&lt;p&gt;“= 今天”&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;card_zero:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想对于“Pop os”来说它对 2004 年科科斯群岛的人口进行了估计。 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.axl.cefan.ulaval.ca&amp;#x2F;pacifique&amp;#x2F;cocos-ile.htm" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.axl.cefan.ulaval.ca&amp;#x2F;pacifique&amp;#x2F;cocos-ile.htm&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maccam912:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是我发现的一个：搜索“spaceweather”您可以获得新罕布什尔州东德里的天气信息。绝对不是空间。我需要的结果是下面的链接的一和二，但一位朋友指出，有一位宇航员（也许是艾伦·谢泼德？）住在那里，这是我能想到的那个城市与太空的唯一联系。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;metayrnc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“纯数字和法语不兼容”&lt;p&gt;是的，检查出来&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amelius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;第一个错误似乎忘记了时间==金钱。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://help.kagi.com/kagi/bloopers/</guid>
-      <pubDate>Sat, 15 Nov 2025 12:23:08 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45936964</comments>
+&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;javaunsafe2019:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我也走了这条路，但感到失望的是：
+- 糟糕的扬声器 
+- 电池寿命差 
+- 屏幕质量较差&lt;p&gt;如今，如果我必须寻找一台用于旅行和休闲使用的新机器，那么现在您可以花费大约 600 欧元购买 MacBook Air 16gb m2，这将是我的选择。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chem83:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于带有 dGPU 的便携式设备，我推荐 Asus ProArt px13。与 Linux 配合得很好，包括具有正确配置的 NixOS，以及社区 asusctl 和 supergfxctl。 AMD、OLED 屏幕、nVidia 4070（美国为 4060，也许明年我们会得到 50xx）。缺点：键盘不算惊艳，自带联发科WiFi，但可以更换，SSD是2230，限制了容量。我无法在 Wayland 中微调触摸板灵敏度，尽管摆弄了一些启动参数并使用 6.17.x，但我确实遇到了一些屏幕闪烁问题。如果您愿意使用 14 英寸的 Zephyrus，那么限制会更少。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sunneyx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;虽然有点旧&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;internet2000:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;但老实说，吸引我的是品牌。 “富士通笔记本电脑”听起来就像威廉·吉布森小说中的色彩：“凯斯爬进航空电子设备舱，拿出一台破旧的富士通翻新机，然后在飞行计算机上插了一个 JTAG 端口——”。&lt;p&gt;在那之后，很难认真对待这个观点。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;UncleSlacky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;TL;DR：如有疑问，请在执行其他操作之前更新 BIOS。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;varispeed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在我看来，触摸富士通制造的任何东西都是不道德的。&lt;p&gt;参见&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;British_Post_Office_scandal" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;British_Post_Office_scandal&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;marcodiego:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;安装 Windows 11。这是笔记本电脑附带的。而且安装过程让 Linux 的安装变得很简单：我不得不使用很多奇怪的技巧来避免在安装过程中创建 Microsoft 帐户。&lt;p&gt;安全启动的演变方式令人恶心。特别是因为，在它变得流行的时候，我们被警告人们，它更多的是一种控制工具，而不是安全工具。应该禁止必须安装专有操作系统才能安装另一个操作系统。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rcarmo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您有一台旧的英特尔 MacBook Air，它们也可以在 Linux 上完美运行：&lt;a href="https:&amp;#x2F;&amp;#x2F;taoofmac.com&amp;#x2F;space&amp;#x2F;blog&amp;#x2F;2025&amp;#x2F;11&amp;#x2F;05&amp;#x2F;2200" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;taoofmac.com&amp;#x2F;空间&amp;#x2F;博客&amp;#x2F;2025&amp;#x2F;11&amp;#x2F;05&amp;#x2F;2200&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gchamonlive:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您想要高端产品的便携性，我强烈推荐 Lenovo Yoga Slim 7。Specwise 我已经购买了配备 Core ultra 5 125h 的产品。它还有一个 155 小时的选项，但它的电池和散热可能会受到影响，我认为这是不值得的。它有 16gb 分布在 8x2gb 模块和 512gb 固态硬盘上，两者都是焊接的，速度都非常快。&lt;p&gt;构建质量可与 MacBook 相媲美，但具有卓越的键盘、非常好的电池寿命和顶部的 oled 屏幕。&lt;p&gt;我对 oled 屏幕的问题是，我认为它在 Linux 上开箱即用时红色过饱和，我使用它进行了纠正hyprshade: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;gchamon&amp;#x2F;archie&amp;#x2F;blob&amp;#x2F;main&amp;#x2F;hypr&amp;#x2F;着色器&amp;#x2F;vibrance-oled.glsl" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;gchamon&amp;#x2F;archie&amp;#x2F;blob&amp;#x2F;main&amp;#x2F;hypr&amp;#x2F;着色器&amp;#x2F;vib...&lt;/a&gt;。我正在寻找更好的解决方案，因为过滤器是在屏幕截图上选取的并洗掉了颜色。我需要找到 ICE 配置文件或从 Windows 导出一个。&lt;p&gt;相机的行为也有点奇怪。使用 chromium 和其他浏览器时，它有明显的质量差异，后者有明显的质量下降。&lt;p&gt;除此之外，这是一个非常好的移动 Linux 驱动程序，敏捷、凉爽、安静、充电速度快，使用起来很愉快。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jjice:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在二手企业笔记本电脑上安装 Linux 可能是你能买到的最好的机器。它们通常非常有价值，并且使用时间不到三年。多年来使用过多台 Thinkpad 和 Dell，非常棒，价格不到 400 美元。&lt;p&gt;我学会了注意的事情：&lt;p&gt;- 锁定的 BIOS&lt;p&gt;- 查看制造商的可修复性声誉。我更换了 ThinkPad X1 Carbon 上的整个键盘，一切正常。到达那里很痛苦，但没有问题。在 Dell Latitude 上，它拒绝为我的非 OEM 更换电池充电。我的错 - 我应该做一些研究。&lt;p&gt;根据我的经验，戴尔和联想拥有出色的 Linux 硬件支持。我不知道其他制造商的情况，但我希望现在也是如此。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;giancarlostoro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每当微软让我注册一个帐户而我又无法绕过它时，我就会在电子邮件中写上一些不太令人愉快的词语。接下来是安装 EndeavourOS。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maelito:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有没有好的linux ARM无风扇笔记本电脑？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://borretti.me/article/linux-on-the-fujitsu-lifebook-u729</guid>
+      <pubDate>Sat, 15 Nov 2025 15:19:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45937989</comments>
+    </item>
+    <item>
+      <title>加权平均值以最小化方差</title>
+      <link>https://www.johndcook.com/blog/2025/11/12/minimum-variance/</link>
+      <description>&lt;p&gt;假设A比B波动性更大。我们将这个问题形式化并确定最优配置，然后将问题推广到更多资产。多变量 现在假设我们有 n 个独立的随机变量 Xi，其中 i 从 1 运行到 n，并且至少有一个变量不是常数。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Weighting an average to minimize variance&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45938027"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.johndcook.com/blog/2025/11/12/minimum-variance/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thomasahle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;调和平均值的写法真是奇怪。&lt;p&gt;----&lt;p&gt;写 v_i = Var[X_i]。
+约翰写道&lt;p&gt;&lt;pre&gt;&lt;code&gt; t_i = \frac{\prod_{j\ne i} v_j}{\sum_{k=1}^n \prod_{j\ne k} v_j}。
+&lt;/code&gt;&lt;/pre&gt;
+但如果将顶部和底部乘以 (1 &amp;#x2F; \prod_{m=1}^n v_m)，则只需得到&lt;p&gt;&lt;pre&gt;&lt;code&gt; t_i = \frac{1&amp;#x2F;v_i}{\sum_{k=1}^n 1&amp;#x2F;v_k}。
+&lt;/code&gt;&lt;/pre&gt;
+无需计算初等对称多项式。&lt;p&gt;如果将这些最优 (t_i) 代入方差，则得到&lt;p&gt;&lt;pre&gt;&lt;code&gt; \min Var[\sum t_i X_i] = 1&amp;#x2F;(\sum_{k=1}^n 1&amp;#x2F;v_k) = H&amp;#x2F;n，
+&lt;/code&gt;&lt;/pre&gt;
+其中`H = n &amp;#x2F; (\sum_{k=1}^n 1&amp;#x2F;v_k)` 是方差的调和平均值。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paulgerhardt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望数学界有斯特伦克和怀特。&lt;p&gt;虽然逻辑上绝非错误，但在第一段中使用变量 A 和 B 设置问题并在第二段中求解 X 和 Y（与隐式 X==B 和 Y==A 复合）感觉不太雅观。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esafak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您还可以用偏差与方差进行交易，以最小化均方误差，即偏差平方加方差。这普遍适用。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whatever1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这只是观察到的方差。这意味着您假设这将是未来的差异。&lt;p&gt;不要根据统计数据为不断发展的系统做出决策。&lt;p&gt;另一方面，内部信息效果更好。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.johndcook.com/blog/2025/11/12/minimum-variance/</guid>
+      <pubDate>Sat, 15 Nov 2025 15:25:08 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45938027</comments>
+    </item>
+    <item>
+      <title>Trellis AI (YC W24) 正在招聘：简化获得救生疗法的途径</title>
+      <link>https://www.ycombinator.com/companies/trellis-ai/jobs/f4GWvH0-forward-deployed-engineer-full-time</link>
+      <description>&lt;p&gt;我们通过自动化文件接收、事先授权和大规模上诉来实现这一目标，以简化运营并加速护理。 Trellis 帮助医疗保健提供者更快地治疗更多患者，同时消除服务前的文书工作。我们大规模自动化文件接收、事先授权和上诉，以简化运营并加速护理。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Trellis AI (YC W24) Is Hiring: Streamline access to life-saving therapies&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45938785"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/trellis-ai/jobs/f4GWvH0-forward-deployed-engineer-full-time'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.ycombinator.com/companies/trellis-ai/jobs/f4GWvH0-forward-deployed-engineer-full-time</guid>
+      <pubDate>Sat, 15 Nov 2025 17:00:38 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45938785</comments>
+    </item>
+    <item>
+      <title>财富</title>
+      <link>https://saul.pw/mag/wealth/</link>
+      <description>&lt;p&gt;一般来说，一个人的财富水平可以从他们的净资产推断出来。如果他们不是住在车里，那就是沙发冲浪；如果他们有永久地址，则他们与其他人住在一起并支付较低或灵活的租金。财富值↑2的人 h.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Wealth&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45938427"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://saul.pw/mag/wealth/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jeffbee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“在这个水平上，硬性毒品是充足的”似乎是作者凭空发明的东西。香烟、酒精、大麻和“烈性毒品”所有这些都需要花钱，因此这些东西的滥用率与收入呈正相关，这不应该让您感到惊讶。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;trollbridge:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的。我想我会是 5 分，但像 2 分一样生活，因为这样压力较小。&lt;p&gt;我有 6 分的朋友和 7 分的熟人，他们的思维方式和生活目标让我困惑。我根本无法与他们产生共鸣。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;renewiltord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;以前的社会肯定做对的一件事就是消极地谈论嫉妒。这些天的一切都与嫉妒有关。仅仅改善一个人的生活是不够的。它必须相对于其他人有所改善，否则人们会感到不安。&lt;p&gt;“与人攀比”现在被用在关于不平等的社会主义言论中。我们可以看出情况确实如此，因为当工资压缩时，人们会对“通货膨胀”和“现在太贵了”感到不安。&lt;p&gt;近年来，相对于中间百分位数，底部百分位数出现了前所未有的增长。人们非但没有庆祝，反而因为东西变得昂贵而感到不安。当贫困劳动力得到更多报酬时，他们的成本就会更高。这就是它的工作原理。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dougb5:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“↑11”桶——索尔将其标记为“Megacorps ($300b-$3t)” ——现在至少有一个人类个体。   我们在短短一年内走了多远（或下降了？）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pton_xd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;太细化了，财富有四个层次：贫困者、必须工作的人、拥有足够资产而不工作的人，最后是影响社会规则的精英。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nis0s:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这也是一篇很好的文章，其中的界限可以用来评估家庭或个人财务和财富，&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.kiplinger.com&amp;#x2F;个人财务&amp;#x2F;605075&amp;#x2F;are-you-rich" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.kiplinger.com&amp;#x2F;个人理财&amp;#x2F;605075&amp;#x2F;are-you-ri...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Gooblebrai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我今天可能很笨，但我认为上面的箭头就像“财富水平”一样。事物。然而这里：&lt;p&gt;&gt;大约有 1600 万人 (↑7) 被指定为高资产净值人士。&lt;p&gt;↑7 意味着什么？后来他开始在我不理解的上下文中使用它（例如&gt;大约250,000人（↑5.5））&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pavlov:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;&amp;gt; “‘净资产’是一个不幸的术语，因为一个人的‘价值’显然不仅仅是他们的财富。”&lt;/i&gt;&lt;p&gt;我在一个相当平等的 29 世纪 80 年代北欧社会长大，英语是我的第三语言。&lt;p&gt;我记得第一次听到这个美国习语中使用“价值”时的情景：&lt;p&gt;“X 人值 Y 美元”&lt;p&gt;这太令人震惊了；几乎就像你能说的最禁忌的事情一样，优生学的一瞥。如果一个人的价值是用美元来衡量的，那么对于收入过低的女性、少数族裔以及面临发展挑战的儿童的价值来说，这意味着什么呢？&lt;p&gt;在此后的几十年里，硅谷已经变得如此右倾，以至于这一点几乎不再被注意到。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brettgriffin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;一般来说，一个人的财富水平可以从他们的净资产来推断。&lt;p&gt;&amp;gt;但同时，“资产减去负债”也带来了一些巨大的阴影。&lt;p&gt;&amp;gt;因此，更好的衡量标准是：如果必须的话，某人可以投入多少资金来解决问题。如果自己所爱的人得了重病，而治疗又要花不少钱，一两个月能凑够多少钱？他们可以借多少钱、向谁借、以什么条件借钱？&lt;p&gt;以下细目主要是人们的净资产（资产减去负债）以及他们因资产而可以利用的信贷。&lt;p&gt;不确定我是否完全理解这一点。是的，有资产的人通常更有信誉，可以利用信贷额度。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hshdhdhj4444:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是开发一种讨论财富的语言的良好开端。&lt;p&gt;99 vs 1%、普通人与百万富翁与亿万富翁、下层阶级与上层阶级与中产阶级、投资者与工人阶级是我见过的一些语言。&lt;p&gt;所有这些都非常不足，让 |^7-11 的人通过吓唬 |^4-6 的人，让他们逃脱了很多他们不应该做的事情，因为这适用于他们。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Sprotch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为关注财富不平等恰恰是错误的做法。更好的方法是关注最贫困人口的生活质量。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://saul.pw/mag/wealth/</guid>
+      <pubDate>Sat, 15 Nov 2025 16:16:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45938427</comments>
+    </item>
+    <item>
+      <title>我在 6 个月内实施了经过 ISO 42001 认证的人工智能治理计划</title>
+      <link>https://beabytes.com/iso42001-certified-ai-governance/</link>
+      <guid isPermaLink="true">https://beabytes.com/iso42001-certified-ai-governance/</guid>
+      <pubDate>Sat, 15 Nov 2025 17:04:23 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45938815</comments>
+    </item>
+    <item>
+      <title>如何忍受烦人的事情</title>
+      <link>https://psyche.co/guides/how-to-respond-to-annoying-things-with-greater-ease</link>
+      <description>&lt;p&gt;这些事件不会扰乱你的生活。它们通常会出乎意料地出现，给你带来一些压力，并打断你的心流。这让一切变得不同。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; How to tolerate annoying things&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45937816"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://psyche.co/guides/how-to-respond-to-annoying-things-with-greater-ease'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;martini333:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇文章应对机制的琐碎让我很恼火。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CPLX:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇文章看起来不错，但我想说，身体行为确实是这方面的核心。像跑马拉松或禅修这样的事情。&lt;p&gt;没有什么比经常练习忍受它们更能直接帮助你忍受较小的不愉快的事情了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;steve-atx-7600:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我从阿尔伯特·埃利斯 (Albert Ellis) 的著作中获益匪浅，他在 20 世纪 50 年代和 60 年代的著作成为了认知行为疗法。  他可能会说，要求日常不便不存在是不合理的，通过改变你的思维方式，接受并预期不可避免的不便发生，你就不太可能让这些事情造成情绪困扰。&lt;p&gt;他认为古代斯多葛派和其他哲学家影响了他的方法。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.psychologytoday.com&amp;#x2F;我们&amp;#x2F;治疗类型&amp;#x2F;理性情绪行为治疗" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.psychologytoday.com&amp;#x2F;us&amp;#x2F;治疗类型&amp;#x2F;理性-em...&lt;/a&gt;
+&lt;a href="https:&amp;#x2F;&amp;#x2F;pmc.ncbi.nlm.nih.gov&amp;#x2F;文章&amp;#x2F;PMC5836900&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;pmc.ncbi.nlm.nih.gov&amp;#x2F;文章&amp;#x2F;PMC5836900&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aurornis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我见过一些人通过本文介绍的 ACT 式治疗来扭转自己的局面。有些人可能会形成反应模式，将日常的小烦恼变成更大的问题，扰乱他们几个小时甚至一天剩余时间的情绪。&lt;p&gt;这些夸大事情或让事情惹恼你的行为除了自然发展之外，可以是后天习得的，也可以是后天习得的。像这样的治疗技术是一种有意识的方法，可以练习改掉坏习惯，并用您想要练习的无可否认的更好的习惯取而代之。&lt;p&gt;抚养和教育幼儿是一种学习经验，可以了解如何养成其中一些习惯以及如何教会孩子更好地应对生活中的挫折。孩子们很容易感到沮丧，情绪也很强烈。学习如何教孩子控制情绪并对生活做出适当反应是育儿的核心挑战之一。我觉得在尝试弄清楚如何向我的孩子们传授这些知识并为他们树立一个好榜样的过程中，我对自己有了很多了解。&lt;p&gt;在这个主题上，我还观察到一些青少年和成年人的案例，他们似乎养成了对小事情过于恼火的坏习惯，这些坏习惯主要来自社交媒体影响者。有一大批社交媒体影响者致力于基于不满的娱乐，他们制作的内容涉及让你生气或感觉自己像受害者的事情。我觉得应该是宣泄或者是有帮助的，但是在制作内容的过程中，他们把话题越拉越深，最后变成了怨气。成为无形的负担是我第一次看到这一点。社交媒体影响者版本的情感劳动实际上偏离了文献的定义，并成为一个总括术语，意味着你的情感是无偿劳动。如果有人做了让你感受到这些情绪的事情，或者你必须处理别人的情绪，你就应该感到负担和受害者。还有其他趋势，例如“精神负担”。这是这种想法的变体，即你是通过其他人或世界触发你自己的情绪反应而成为受害者的，而这些社会影响者不断地将他们带到前台和中心，这种情绪可能会被夸大。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nis0s:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为任何人都不应该容忍他们觉得烦人的事情，生命太短暂了。如果某事或某人想让你留在身边，他们应该不那么烦你。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;retrac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我是聋子，但不是完全聋。  我能听到的一些声音以及许多足以引起我注意的声音&lt;i&gt;令人烦恼&lt;/i&gt;。  通常，这些声音也会惹恼其他人。&lt;p&gt;我想起了与我的朋友的一次对话，他生来就完全失聪，而且是一个手语者。  听力正常的人对他来说是一种外国文化。  有时，当您不知道事物发出什么声音以及如何感知它们时，驾驭听觉世界会很困难。  （例如，对我来说，堆叠金属或陶瓷盘子几乎是一种无声的体验。）&lt;p&gt;他指出，听到人们抱怨的声音似乎与&lt;i&gt;控制&lt;/i&gt;有关。  雷？  不是问题。  自然而然，你对此无能为力。  卡车倒车时发出嘟嘟声？  那是因为一个人。  是可以控制的。   雨？  不是问题。  自动喷水灭火系统？  这最终是由于一个人。  是可以控制的。  微波炉发出蜂鸣声？  本来可以被控制的；你应该在 0:01 按下停止按钮。  狗叫？  很烦人，因为又应该被控制。  野鸟在黎明时分鸣叫？  被过滤掉并被忽略。  （大多数情况下，有些人确实会抱怨这些。）&lt;p&gt;我发现，意识到自己实际上无法控制并且其他人可能实际上也无法控制，这令人惊讶地放松。  我认为这与“激进接受”密切相关。文章的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hexbin010:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对那些能够在人生中一帆风顺、每次挫折都从他们身边掠过、不留下任何痕迹或痕迹的人怀有疯狂的钦佩和相当强烈的嫉妒。&lt;p&gt;我在那些出身安逸、没有金钱烦恼的人身上更注意到这一点。天哪，晚饭烧焦了？不用担心，叫外卖就可以了！假期前几天丢失了护照 - 不用担心，只需支付快速通道处理费即可。车坏了？只需跳上出租车即可。咖啡毁了你的上衣？再买一个就可以了。等等。金钱通常意味着生活中的忧虑少得多，孩子们一定会注意到并感受到这一点。&lt;p&gt;正如你可能猜到的那样，我成长的环境相对贫穷。每天、每周都会有一些事情给我父母带来压力，通常与金钱有关。再多的接地气或腹式呼吸也无法缓解压力。&lt;p&gt;我知道这篇文章是关于一些小事，其中许多是金钱无法解决的，但我确实想知道在低压力环境中长大（主要是因为没有金钱问题）是否会灌输一些东西，使您不再为生活中的小事而烦恼&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ndr42:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;文章摘自：迟到等微压力源[...]代表了人类不可避免的痛苦。&lt;p&gt;迟到真的不可避免吗？我认为有行之有效的策略可以避免这种情况。 （另一方面，我的妻子和我的一个儿子会同意这实际上是不可避免的）&lt;p&gt;编辑：添加了缺失的单词&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;begueradj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;无法通过手机阅读文章。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gregschlom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最近一直在读《No Mud, No Lotus》（&lt;a href="https:&amp;#x2F;&amp;#x2F;www.parallax.org&amp;#x2F;product&amp;#x2F;no-mud-no-lotus&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.parallax.org&amp;#x2F;product&amp;#x2F;no-mud-no-lotus&amp;#x2F;&lt;/a&gt;)，禅师一行禅师，这也是同样的建议。&lt;p&gt;这本书给我带来了巨大的快乐，我会向任何人推荐它。&lt;p&gt;这很有趣佛教已经变得“正确”了。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://psyche.co/guides/how-to-respond-to-annoying-things-with-greater-ease</guid>
+      <pubDate>Sat, 15 Nov 2025 14:53:09 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45937816</comments>
+    </item>
+    <item>
+      <title>强大的单纯体 (2023)</title>
+      <link>https://galileo-unbound.blog/2023/05/03/the-mighty-simplex/</link>
+      <description>&lt;p&gt;单纯形几何 在本博客中，我将几何限制为常规单纯形。每个节点都是等价的并且相互链接。每个节点都是一个电荷。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Mighty Simplex (2023)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45938698"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://galileo-unbound.blog/2023/05/03/the-mighty-simplex/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ikjasdlk2234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;线性规划中的单纯形法是我第一次遇到相对复杂的“点击”问题。对我来说。&lt;p&gt;这很有趣，我仍然每周都会想起那种感觉。我对做作业时发生的事情的记忆实际上有点像第一部哈利波特电影中哈利拿到魔杖时：温暖、明亮的灯光，睁大眼睛，感觉就像我的头是一个氦气球。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ceh123:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于单纯形的主题！我获得了动力系统博士学位，不变测度空间 [0] 总是（在紧凑设置中）单纯形，极值点是遍历测度。正因为如此，您可以假设您的系统是遍历的，并且经常能够推广到非遍历情况（通过遍历分解）。&lt;p&gt;但是我在这里真正想提到的是 Poulsen Simplex [1]。这是独特的 Choquet 单纯形 [2]，其极值点是密集的。这意味着它就像一个不可数的无限维三角形，无论您位于三角形内的哪个位置，您都可以任意接近一个角。这是我最喜欢的形状，绝对狂野且不可能概念化（尽管多年来我每天都在使用它！）&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Invariant_measure" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Invariant_measure&lt;/a&gt;&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;eudml.org&amp;#x2F;doc&amp;#x2F;74350" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;eudml.org&amp;#x2F;doc&amp;#x2F;74350&lt;/a&gt;&lt;p&gt;[2] &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Choquet_theory" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Choquet_theory&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://galileo-unbound.blog/2023/05/03/the-mighty-simplex/</guid>
+      <pubDate>Sat, 15 Nov 2025 16:49:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45938698</comments>
     </item>
   </channel>
 </rss>

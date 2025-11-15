@@ -6,51 +6,148 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 15 Nov 2025 15:21:51 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Nov 2025 18:32:53 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>C でタイプセーフなジェネリックスを記述する方法</title>
-      <link>https://raphgl.github.io/blog/generics-in-c.html</link>
-      <description>&lt;p&gt;ヘッダーのインスタンス化は次のようになります。 #define VEC_ITEM_TYPE long long #define VEC_SUFFIX num #include "vector. #define G(name) name##_##VEC_ITEM_TYPE ただし、これは機能しません。そこで、VEC_SUFFIX を導入します。 #ifndef VEC_ITEM_TYPE #error VEC_ITEM_TYPE が定義されていません #endif #ifndef VEC_SUFFIX #define VEC_SUFFIX VEC_ITEM_TYPE #endif #define __G(name, type) name##_##type #define _G(name, type) __G(name, type) #define G(name) _G(name, VEC_SUFFIX) これで、ライブラリを自由に実装できるようになりました。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; How to write type-safe generics in C&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45937518"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://raphgl.github.io/blog/generics-in-c.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jesse__:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;興味のある人のために、リストに別のオプションを追加するメタプログラミング言語を書きました: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;scallyw4g&amp;#x2F;poof" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;scallyw4g&amp;#x2F;poof&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pjmlp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;タイプ セーフティ、ジェネリック、C は少し矛盾しています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;variadix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ジェネリック関数ごとにマクロ関数を作成できるため、Vector_New(int)(&amp;amp;v) のようなものは Vector_New_int(&amp;amp;v) に展開されます。また、G マクロほど異質ではありません (テンプレートに似ています)。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;david2ndaccount:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は過去に同様の記事を書きました: &lt;a href="https:&amp;#x2F;&amp;#x2F;www.davidpriver.com&amp;#x2F;ctemplates.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.davidpriver.com&amp;#x2F;ctemplates.html&lt;/a&gt;&lt;p&gt;選択肢の中で私にとって最善の結果をもたらしたので、私はこのテクニックを趣味のプロジェクトで使用しています。調べてみました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;synergy20:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;または、C にトランスパイルされる nim メタプログラミングを使用します。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lelanthran:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;2004 年頃にこれを実稼働環境で使用していましたが、私はこのアプローチがあまり好きではありませんでした。これほどプリプロセッサを乱用する必要はなく、結果はほとんど判読できません。&lt;p&gt;`_Generic`[1] を使用すると、より良い方法が可能だと思います。依然としてマクロを使用しますが、結果として得られるコードははるかに読みやすくなっています。&lt;p&gt;-------------------------------------&lt;p&gt;[1] `_Generic` には、もちろんそれ自体の問題もあります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;schaefer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;より正確なタイトルは次のようになります。&lt;p&gt;「C プリプロセッサを使用してタイプ セーフなジェネリックスを記述する方法」&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;self_awareness:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;そうですね、もう 1 つのオプションは、テンプレートをサポートする C++ コンパイラを使用することですが、コーディング規約標準を通じてクラスの使用を制限します。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://raphgl.github.io/blog/generics-in-c.html</guid>
-      <pubDate>Sat, 15 Nov 2025 13:58:09 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45937518</comments>
+      <title>Windows 11 用 Windhawk Windows クラシック テーマ MOD</title>
+      <link>https://windhawk.net/mods/classic-theme-enable</link>
+      <guid isPermaLink="true">https://windhawk.net/mods/classic-theme-enable</guid>
+      <pubDate>Sat, 15 Nov 2025 16:53:30 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45938723</comments>
     </item>
     <item>
-      <title>Kagi Bloopers – 検索結果が間違っています</title>
-      <link>https://help.kagi.com/kagi/bloopers/</link>
-      <description>&lt;p&gt;ハッカー 元々はマストドンにいた。ハーフポニー 元々はDiscordにいたものです。もともと X にありました。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Kagi Bloopers – Search Results Gone Wrong&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45936964"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://help.kagi.com/kagi/bloopers/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Fujitsu Lifebook U729 上の Linux</title>
+      <link>https://borretti.me/article/linux-on-the-fujitsu-lifebook-u729</link>
+      <description>&lt;p&gt;これはラップトップに付属していました。富士通製BIOSアップデートツールです。新しい BIOS バージョンが必要です。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Linux on the Fujitsu Lifebook U729&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45937989"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://borretti.me/article/linux-on-the-fujitsu-lifebook-u729'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TriangleEdge:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;LLM の時代に Kagi には価値がありますか?私の理解では、さまざまなプロバイダーからの結果が集約されているということです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BinaryPie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Kagiにはお金を払う価値がありますか？しばらくの間、それは私のレーダーにありました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nkurz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;タイトルが「検索結果が間違っている」ということなので、この機会に Kagi に恥をかかせて、「その他の結果」の検索結果を修正してもらいたいと思います。特徴。  この単純な機能は、最初に得られたものと同じ結果を繰り返すことが多いという点で壊れています。  つまり、「さらに多くの結果」が得られる代わりに、多くの「同じ結果」が得られます。&lt;p&gt;私はこれを約 6 か月前にバグとして報告しましたが、すぐに修正される予定であると言われました。しかし、それは修正されていません。数週間前に再度チェックインして進展があったかどうか確認しましたが、どうやら難しすぎて断念したようです。「申し訳ありませんが、スレッドを更新するのを忘れていたようです。」残念ながら、これらの結果の重複を排除することは、実際には見た目よりも難しいです。これは主に、上流のソースからの結果を処理する方法の結果であり、重複排除はキャッシュの問題によって非常に複雑になります。&lt;p&gt;Kagi、あなたは概して素晴らしいです。  私は通常、有料の顧客であることに満足しています。  しかし、URL のリストの重複を排除するのが実際には難しすぎるとは思いません。  おそらく私は、Web ページの検索を実際に気にしている数少ないユーザーの 1 人ですが、私のユースケースでは、[その他の結果] をクリックしたときに実際にさらに多くの結果が表示されれば、検索結果ははるかに良くなります。これが検索エンジンの中核機能とみなされないのはなぜですか?これを修正してください。&lt;p&gt;バグ レポートは次のとおりです: &lt;a href="https:&amp;#x2F;&amp;#x2F;kagiフィードバック.org&amp;#x2F;d&amp;#x2F;7022-clicking-more-results-yields-lots-of-duplicates" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;kagiフィードバック.org&amp;#x2F;d&amp;#x2F;7022-clicking-more-results-yields...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;phyzome:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ここで、&lt;i&gt;これらはどれも検索結果ではない&lt;/i&gt;という簡単な苦情を述べておきます。&lt;p&gt;(確かに、それらはおかしいですが)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dceddia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;あまり大失敗ではありませんが、これはいいことだと思いました。&lt;p&gt;先日（退役軍人の日だったので、よくわかりませんでしたが）Kagi で「2025 年の退役軍人の日」を検索したところ、「= 今日」という答えが返されました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;card_zero:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「Pop os」の場合だと思います。それは、ココス諸島の人口についての 2004 年の推定値を示しました。 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.axl.cefan.ulaval.ca&amp;#x2F;pacifique&amp;#x2F;cocos-ile.htm" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.axl.cefan.ulaval.ca&amp;#x2F;pacifique&amp;#x2F;cocos-ile.htm&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maccam912:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私が見つけたものは次のとおりです。「spaceweather」を検索してください。ニューハンプシャー州イースト・デリーの天気もわかります。間違いなくスペースではありません。私が必要とする結果は、以下のリンクの 1 と 2 ですが、友人は、そこに住んでいた宇宙飛行士 (アラン・シェパードでしょうか?) がいると指摘しました。それが、私がその都市で考えられる唯一の宇宙とのつながりです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;metayrnc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「純粋な数字とフランス語は互換性がありません」&lt;p&gt;はい、それはわかります&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amelius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最初の失敗者は、時間 == お金ということを忘れているようです。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://help.kagi.com/kagi/bloopers/</guid>
-      <pubDate>Sat, 15 Nov 2025 12:23:08 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45936964</comments>
+&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;javaunsafe2019:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私もこのルートを選択しましたが、次の点にがっかりしました。
+- スピーカーが悪い 
+- バッテリー寿命が短い 
+- 画面品質が劣る&lt;p&gt;現在、MacBook Air 16gb m2 が約 600 ユーロで入手できますが、旅行や普段使い用に新しいマシンを探す必要がある場合は、これを選択します。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chem83:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;dGPU を搭載したポータブルなものには、Asus ProArt px13 をお勧めします。適切な設定を備えた NixOS を含む Linux、コミュニティ asusctl および supergfxctl で非常にうまく動作します。 AMD、OLED スクリーン、nVidia 4070 (米国では 4060、おそらく来年は 50xx になるでしょう)。欠点: キーボードは素晴らしいものではありません。MediaTek WiFi が付属していますが交換可能です。SSD は 2230 なので容量が制限されます。 Wayland ではタッチパッドの感度を微調整できず、いくつかのブート パラメーターをいじって 6.17.x を使用しているにもかかわらず、画面がちらつきます。 Zephyrus で 14 インチを選択する場合は、制約が少なくなります。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sunneyx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ちょっと古いけど&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;internet2000:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;しかし、正直に言うと、私が惹かれたのはブランドでした。 「富士通のラップトップ」というと、ウィリアム ギブソンの小説の色彩のように聞こえます。「アビオニクス ベイに這い込み、ケースはボロボロの富士通の再生品を取り出し、フライト コンピューターに JTAG ポートを差し込みました。&lt;p&gt;その後、この意見を真剣に受け止めるのは少し難しくなります。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;UncleSlacky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;TL;DR: 疑わしい場合は、他の作業を行う前に BIOS を更新してください。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;varispeed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私の考えでは、富士通製のものに触れるのは倫理的ではありません。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;British_Post_Office_scandal" を参照してください。 rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;British_Post_Office_scandal&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;marcodiego:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; Windows 11 をインストールします。これはラップトップに付属していました。また、Linux のインストールは簡単に感じられます。インストール中に Microsoft にアカウントを作成する必要がないようにするには、非常に多くの奇妙なトリックを実行する必要がありました。&lt;p&gt;セキュア ブートの進化の仕方にはうんざりします。特に、それが普及し始めた当時、それはセキュリティのためというよりも制御のツールであると人々が警告していたからです。別の OS をインストールするために独自の OS をインストールする必要があることは禁止されるべきです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rcarmo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;古い Intel MacBook Air をお持ちの場合は、Linux でも問題なく動作します: &lt;a href="https:&amp;#x2F;&amp;#x2F;taoofmac.com&amp;#x2F;space&amp;#x2F;blog&amp;#x2F;2025&amp;#x2F;11&amp;#x2F;05&amp;#x2F;2200" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;taoofmac.com&amp;#x2F;space&amp;#x2F;blog&amp;#x2F;2025&amp;#x2F;11&amp;#x2F;05&amp;#x2F;2200&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gchamonlive:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;プレミアムなものに携帯性を求めるのであれば、Lenovo Yoga Slim 7 はあまりお勧めできません。具体的に言うと、私は Core Ultra 5 125h を搭載したモデルを購入しました。 155 時間のオプションもありますが、バッテリーとサーマルに影響が出る可能性があるため、それだけの価値はないと思います。 8x2GB モジュールにまたがる 16 GB と 512 GB の ssd が搭載されており、両方ともはんだ付けされており、どちらも非常に高速です。&lt;p&gt;MacBook に匹敵するビルド品質を備えていますが、優れたキーボード、非常に優れたバッテリー寿命、その上にある OLED スクリーンを備えています。&lt;p&gt;OLED スクリーンに関して私が抱えていた問題は、Linux ではそのままでは赤色が飽和しすぎると考えていたことですが、これは hyprshade を使用して修正しました。&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;gchamon&amp;#x2F;archie&amp;#x2F;blob&amp;#x2F;main&amp;#x2F;hypr&amp;#x2F;shaders&amp;#x2F;vibrance-oled.glsl" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;gchamon&amp;#x2F;archie&amp;#x2F;blob&amp;#x2F;main&amp;#x2F;hypr&amp;#x2F;shaders&amp;#x2F;vib...&lt;/a&gt;。フィルターがスクリーンショットに付着して色が褪せてしまうため、より良い解決策を探しています。 ICE プロファイルを見つけるか、Windows からエクスポートする必要があります。&lt;p&gt;カメラの動作も少し奇妙です。クロムと他のブラウザを使用すると、品質の違いが顕著に現れます。後者では、品質の低下が目に見えてわかります。&lt;p&gt;それ以外は、非常に優れたモバイル Linux ドライバで、動作が速く、クールで、静かで、充電が速く、楽しく使用できます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jjice:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;中古のエンタープライズ ラップトップに Linux を導入するのが、おそらく最高のコストパフォーマンスのマシンです。多くの場合、製造後 3 年以内であれば非常に価値のあるものになります。何年にもわたって複数の Thinkpad と Dell を使用しましたが、それらは素晴らしく、$400 未満でした。&lt;p&gt;注意すべき点:&lt;p&gt;- ロックされた BIOS&lt;p&gt;- メーカーの修理可能性の評判を調べてください。 ThinkPad X1 Carbon のキーボード全体を交換しましたが、まったく問題ありませんでした。たどり着くのは大変でしたが、特に問題はありませんでした。 Dell Latitude では、非 OEM 交換バッテリーの充電を拒否されました。私の失敗です - もう少し調べておくべきでした。&lt;p&gt;私の経験では、Dell と Lenovo は優れた Linux ハードウェア サポートを提供しています。他のメーカーについては知りませんが、今もそうなることを願っています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;giancarlostoro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Microsoft が私にアカウントの作成を強制し、それを回避できないときはいつも、メールにそれほど不快な言葉を書き捨ててしまうだけです。続いてEndeavorOSをインストールします。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maelito:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ファンレスの優れた Linux ARM ラップトップはありますか?&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://borretti.me/article/linux-on-the-fujitsu-lifebook-u729</guid>
+      <pubDate>Sat, 15 Nov 2025 15:19:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45937989</comments>
+    </item>
+    <item>
+      <title>分散を最小限に抑えるために平均に重み付けをする</title>
+      <link>https://www.johndcook.com/blog/2025/11/12/minimum-variance/</link>
+      <description>&lt;p&gt;A が B よりもボラティリティが高いとします。この問題を形式化し、最適な割り当てを決定し、問題をより多くの資産に一般化します。複数の変数 ここで、1 から n まで実行される n 個の独立した確率変数 Xi for i があり、変数の少なくとも 1 つが定数ではないと仮定します。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Weighting an average to minimize variance&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45938027"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.johndcook.com/blog/2025/11/12/minimum-variance/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thomasahle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;調和平均を記述する奇妙な方法です。&lt;p&gt;----&lt;p&gt;v_i = Var[X_i] と記述します。
+John は、&lt;p&gt;&lt;pre&gt;&lt;code&gt; t_i = \frac{\prod_{j\ne i} v_j}{\sum_{k=1}^n \prod_{j\ne k} v_j} と書きます。
+&lt;/code&gt;&lt;/pre&gt;
+ただし、上下に (1 &amp;#x2F; \prod_{m=1}^n v_m) を掛けると、&lt;p&gt;&lt;pre&gt;&lt;code&gt; t_i = \frac{1&amp;#x2F;v_i}{\sum_{k=1}^n 1&amp;#x2F;v_k} となります。
+&lt;/code&gt;&lt;/pre&gt;
+基本対称多項式を計算する必要はありません。&lt;p&gt;これらの最適 (t_i) を分散に当てはめると、次のようになります。&lt;p&gt;&lt;pre&gt;&lt;code&gt; \min Var[\sum t_i X_i] = 1&amp;#x2F;(\sum_{k=1}^n 1&amp;#x2F;v_k) = H&amp;#x2F;n,
+&lt;/code&gt;&lt;/pre&gt;
+ここで、 `H = n &amp;#x2F; (\sum_{k=1}^n 1&amp;#x2F;v_k)` は分散の調和平均です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paulgerhardt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;数学にストランクとホワイトがあればいいのにと思います。&lt;p&gt;論理的に間違っているわけではありませんが、最初の段落で変数 A と B を使用して問題を設定し、2 番目の段落で X と Y を解くのは洗練されていないと感じます (暗黙の X==B と Y==A が複合されています)。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esafak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;また、バイアスと分散をトレードして、バイアスの二乗と分散を足した平均二乗誤差を最小限に抑えることもできます。これは一般的に当てはまります。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whatever1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは観察された分散にすぎません。これは、これが将来の差異になると想定していることを意味します。&lt;p&gt;進化するシステムについて統計に基づいて決定を下さないでください。&lt;p&gt;一方、内部情報の方がはるかに効果的です。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.johndcook.com/blog/2025/11/12/minimum-variance/</guid>
+      <pubDate>Sat, 15 Nov 2025 15:25:08 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45938027</comments>
+    </item>
+    <item>
+      <title>Trellis AI (YC W24) が採用中: 救命治療へのアクセスを合理化</title>
+      <link>https://www.ycombinator.com/companies/trellis-ai/jobs/f4GWvH0-forward-deployed-engineer-full-time</link>
+      <description>&lt;p&gt;私たちはこれを、文書の取り込み、事前の承認、および大規模な申し立てを自動化することで、業務を合理化し、ケアを加速することによって実現します。 Trellis は、医療提供者がサービス前の事務手続きを排除しながら、より多くの患者をより迅速に治療できるように支援します。当社は文書の取り込み、事前の承認、異議申し立てを大規模に自動化して、業務を合理化し、ケアを迅速化します。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Trellis AI (YC W24) Is Hiring: Streamline access to life-saving therapies&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45938785"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/trellis-ai/jobs/f4GWvH0-forward-deployed-engineer-full-time'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.ycombinator.com/companies/trellis-ai/jobs/f4GWvH0-forward-deployed-engineer-full-time</guid>
+      <pubDate>Sat, 15 Nov 2025 17:00:38 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45938785</comments>
+    </item>
+    <item>
+      <title>富</title>
+      <link>https://saul.pw/mag/wealth/</link>
+      <description>&lt;p&gt;一般に、誰かの富のレベルはその純資産から推測できます。車の外で生活していない場合は、カウチサーフィンをしています。定住住所を持っている場合は、他の誰かと一緒に住んでおり、低額または柔軟な家賃を払っています。 ↑2富hの人。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Wealth&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45938427"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://saul.pw/mag/wealth/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jeffbee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「このレベルではハードドラッグが豊富にあります」著者が何もないところから発明したもののようです。タバコ、アルコール、マリファナ、および「ハードドラッグ」。すべてにお金がかかるため、これらのものの乱用率は収入と正の相関関係があり、これは驚くべきことではありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;trollbridge:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;面白い。私はおそらく 5 だと思いますが、2 のように生きましょう。そのほうがストレスが少ないからです。&lt;p&gt;私には 6 の友人や 7 の知人がいますが、彼らの考え方や人生の目標には困惑しています。私は彼らにまったく共感できません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;renewiltord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;以前の社会が間違いなく正しかったことの 1 つは、羨望について否定的に語ることです。最近はすべてが羨望に関するものです。人生を改善するだけでは十分ではありません。他の人たちと比較して改善しなければ、人々は動揺します。&lt;p&gt;「ジョーンズ家についていく」ということは、現在、不平等についての社会主義者のレトリックで宣伝されています。賃金圧縮が起こると、人々は「インフレ」や「今はとても高価だ」と憤慨するため、これが事実であると言えます。&lt;p&gt;下位パーセンタイルは、中位パーセンタイルと比較して、近年前例のない成長を遂げました。人々は祝うどころか、物が高価になったことに腹を立てました。貧しい労働者の賃金が高くなると、賃金も高くなります。それが仕組みです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dougb5:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「↑11」は、バケツ -- ソールはこれを「メガコープ (3,000 億ドルから 3 兆ドル)」とラベル付けした。 -- 現在、少なくとも 1 人の人間が含まれています。   たった 1 年で、私たちはどれだけ進歩した (または低下した?) のでしょうか。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pton_xd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;細かく分けると、富には 4 つのレベルがあります。貧困層、働かなければならない人々、働かなくても十分な資産を持っている人々、そして最後に社会のルールに影響を与えるエリートです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nis0s:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは、家族または個人の財政と富を評価するために使用できる境界線を示した優れた記事でもあります。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.kiplinger.com&amp;#x2F;personal-finance&amp;#x2F;605075&amp;#x2F;are-you-rich" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.kiplinger.com&amp;#x2F;personal-finance&amp;#x2F;605075&amp;#x2F;are-you-ri...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Gooblebrai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;今日は濃いかも知れませんが、上の矢印は「富のレベル」のようなものだと思いました。もの。ただし、ここでは:&lt;p&gt;&amp;gt;約 1,600 万人 (↑7) が富裕層に指定されています。&lt;p&gt;↑7 は何を意味しますか?その後、彼は私が理解できない文脈でそれを使い始めました (例: &gt; 約 250,000 人 (↑5.5))&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pavlov:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;&gt; 「『純資産』という言葉は残念な言葉です。なぜなら、人間の『価値』は明らかにただの富を超えているからです。」&lt;/i&gt;&lt;p&gt;私はかなり平等主義的な 1980 年代の北欧社会で育ち、英語は私の第三言語です。&lt;p&gt;このアメリカの慣用句で「価値」が使われているのを初めて聞いたときのことを覚えています。&lt;p&gt;「X 人には Y ドルの価値がある」&lt;p&gt;衝撃的でした。優生学の垣間見える、最も禁じられたことのようなものです。もし人の価値がドルで測られるとしたら、低賃金の女性やマイノリティ、発達に課題のある子どもたちの価値はどうなるのでしょうか…&lt;p&gt;それ以来数十年、シリコンバレーは右肩上がりになりすぎて、もはやそれがほとんど意味をなさないほどになっています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brettgriffin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;一般に、その人の富のレベルは純資産から推測できます。&lt;p&gt;&amp;gt;しかしまた、「資産から負債を引いたもの」には大きな影が隠れています。&lt;p&gt;&amp;gt;したがって、測定するのに適した量は、誰かが問題を解決する必要がある場合にもたらすことができる金額です。愛する人が死に至る病に倒れ、その治療に多額の費用がかかるとしたら、1～2か月でどれだけのお金を集められるでしょうか?誰から、どのような条件でいくら借りることができますか?&lt;p&gt;以下の内訳は、主に、人々の純資産 (資産から負債を差し引いたもの) と、その資産によって利用できる信用を示したものです。&lt;p&gt;要点を完全に理解しているかどうかはわかりません。そうです、資産を持っている人は一般に信用力が高く、信用枠を利用することができます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hshdhdhj4444:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは、富について議論するための言語を開発するための良いスタートです。&lt;p&gt;99 歳 vs 1%、一般人 vs 億万長者 vs 億万長者、下位階級 vs 上流階級 vs 中流階級、投資家 vs 労働者階級などは、私がこれまでに使用されてきた言語の一部です。&lt;p&gt;それらはどれも非常に不適切で、|^7 ～ 11 の人々が自分たちにも当てはまると怖がらせることで、|^7 ～ 11 の人々がやってはいけない多くのことを逃れることができます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Sprotch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;富の不平等に焦点を当てるのはまさに間違ったアプローチだと私は主張します。より良いアプローチは、最も貧しい人々の生活の質に注目することです。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://saul.pw/mag/wealth/</guid>
+      <pubDate>Sat, 15 Nov 2025 16:16:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45938427</comments>
+    </item>
+    <item>
+      <title>ISO 42001 認定の AI ガバナンス プログラムを 6 か月で導入しました</title>
+      <link>https://beabytes.com/iso42001-certified-ai-governance/</link>
+      <guid isPermaLink="true">https://beabytes.com/iso42001-certified-ai-governance/</guid>
+      <pubDate>Sat, 15 Nov 2025 17:04:23 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45938815</comments>
+    </item>
+    <item>
+      <title>迷惑なことを我慢する方法</title>
+      <link>https://psyche.co/guides/how-to-respond-to-annoying-things-with-greater-ease</link>
+      <description>&lt;p&gt;これらはあなたの人生の流れを混乱させるような種類の出来事ではありません。それらは通常、予期せずやって来て、ストレスを引き起こし、流れを中断します。それがすべてを変えました。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; How to tolerate annoying things&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45937816"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://psyche.co/guides/how-to-respond-to-annoying-things-with-greater-ease'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;martini333:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この記事の対処メカニズムの些細さに私はイライラしました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CPLX:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この記事は問題ないように思えますが、実際には身体的な行為がこの問題の中核となると言えます。マラソンや座禅などです。&lt;p&gt;小さな不快な出来事に耐えるのに、定期的に耐える習慣ほど直接的に役立つものはありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;steve-atx-7600:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は、50 年代から 60 年代にかけて認知行動療法となったアルバート エリスの著作から多くのことを学びました。  彼は、日常的な不便が存在しないことを要求するのは非合理的であり、避けられない不便が起こることを受け入れて期待するように考え方を変えることで、それらのことが精神的苦痛を引き起こす可能性が低くなります。&lt;p&gt;彼は、古代のストア派や他の哲学者が彼の方法に影響を与えたと信じています。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.psychologytoday.com&amp;#x2F;us&amp;#x2F;療法の種類&amp;#x2F;合理的感情行動療法" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.psychologytoday.com&amp;#x2F;us&amp;#x2F;therapy-types&amp;#x2F;rational-em...&lt;/a&gt;
+&lt;a href="https:&amp;#x2F;&amp;#x2F;pmc.ncbi.nlm.nih.gov&amp;#x2F;articles&amp;#x2F;PMC5836900&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;pmc.ncbi.nlm.nih.gov&amp;#x2F;記事&amp;#x2F;PMC5836900&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aurornis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この記事で紹介したようなACTスタイルのセラピーで好転した人も見てきました。人によっては、日常の小さなイライラが、数時間またはその日の残りの時間、気分を乱すような大きな問題に発展するような反応パターンを蓄積することがあります。&lt;p&gt;物事を不釣り合いに吹き飛ばしたり、それを肌の下に潜り込ませたりするこれらの行動は、有機的に発達するだけでなく、学習することも学習しないこともできます。このような治療テクニックは、悪い習慣をやめ、自分が実践したい間違いなくより良い習慣に置き換える練習を意図的に行う方法です。&lt;p&gt;幼い子供を育て、教えることは、これらの習慣がどのように身につくのか、そして人生のフラストレーションへのより良い反応を教える方法を学ぶ経験になります。子どもたちはすぐにイライラし、感情が激しくなりがちです。自分の感情をコントロールし、人生に適切に対応することを子供たちに教える方法を学ぶことは、子育ての主要な課題の 1 つです。子どもたちにそれを教え、良い模範を示す方法を模索する過程で、自分自身について多くのことを学んだ気がします。&lt;p&gt;このテーマに関して、私はまた、主にソーシャル メディアのインフルエンサーから、小さなことで過度にイライラするという悪い習慣を身に着けているように見える十代の若者や大人のケースをいくつか観察しました。苦情ベースのエンターテイメントに特化したソーシャル メディア インフルエンサーが世界中に存在し、人々を怒らせたり被害者のように感じさせたりする内容に関するコンテンツを制作しています。カタルシスや役に立つはずだと思いますが、コンテンツを作成する過程で、トピックが苦情に変わってしまうことがどんどん遠ざかってしまいます。&lt;p&gt;「感情労働」の初期の傾向は、次のようなものです。目に見えない重荷であることを初めて知りました。ソーシャルメディアのインフルエンサー版の感情労働は、実際には文献の定義から逸脱し、感情は無給労働であることを意味する包括的な用語になりました。誰かがあなたにそのような感情を抱かせるようなことをしたり、あなたが他人の感情に対処しなければならなかった場合、あなたは負担を感じ、被害者であると感じるはずです。他にも「精神的負荷」などの傾向があります。それは、自分自身の感情的反応を引き起こし、他の人や世界を通じて自分が被害者にされたという考えのバリエーションであり、社会的影響力を持つ人々が常に感情的反応を前面に押し出すことで誇張された可能性があります。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nis0s:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人生は短すぎるので、誰もが迷惑だと思うことを容​​認すべきではないと思います。何かまたは誰かがあなたをそばに置きたい場合、それらはあなたにとってあまり迷惑ではないはずです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;retrac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は聴覚障害者ですが、完全に聴覚障害者ではありません。  聞こえるいくつかの音と、私の注意を引くほど大きな音の多くは&lt;i&gt;迷惑&lt;/i&gt;です。  他の人を不快にさせる音は、同じではないこともよくあります。&lt;p&gt;私は、生まれたときから完全に聴覚障害者であり、手話を話す友人との会話を思い出します。  聴こえる人は彼にとって異文化だ。  物体がどのような音を発し、それがどのように知覚されるのかがわからない場合、聴覚の世界をナビゲートするのは難しい場合があります。  (たとえば、金属やセラミックの皿を積み重ねるのは、私にとってほとんど無音の経験です。)&lt;p&gt;彼は、人々の苦情を聞いている音は&lt;i&gt;コントロール&lt;/i&gt;に関連しているようだと指摘しました。  雷？  問題ありません。  自然であり、それについては何もできません。  バックするトラックのビープ音？  それはある人のせいです。  それは制御できるかもしれない。   雨？  問題ありません。  スプリンクラーシステム？  それは最終的には人のせいです。  それは制御できるかもしれない。  電子レンジのビープ音？  コントロールできたかもしれない。 0:01 で停止ボタンを押す必要があります。  犬の吠え？  再び、制御されるはずなので迷惑です。  夜明けに野鳥が鳴いているでしょうか？  フィルタリングされて無視されました。  （ほとんどの場合、これらについて不満を言う人もいます。）&lt;p&gt;実際には自分がコントロールできておらず、相手も実際にはコントロールできないかもしれないと理解すると、驚くほどリラックスできることがわかりました。  それは「過激な受容」と密接に関係していると思います。記事の。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hexbin010:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は、どんな挫折も、痕跡や痕跡を残さずに通り過ぎて人生を生き抜くことができる人々に対して、狂気のような賞賛とかなりの嫉妬を抱いています。&lt;p&gt;私は、快適な立ち上がりをし、お金の心配をしない人々にそれをより感じました。ああ、夕食が焦げてしまった？心配する必要はありません、テイクアウトを注文してください！休暇の数日前にパスポートを紛失しました。心配する必要はありません。ファストトラック処理料金を支払うだけです。車が故障した？タクシーに飛び乗ってください。コーヒーのせいでトップスが台無しになってしまいましたか？もう一つ買ってください。お金があると、人生の心配がはるかに少なくなることがよくあります。子供たちは間違いなくそれに気づき、感じているはずです。&lt;p&gt;おそらくご想像のとおり、私は比較的貧乏に育ちました。毎日、毎週何かが両親にストレスを与えていましたが、その多くはお金に関するものでした。いくらグラウンディングしたり、腹式呼吸をしたりしても、ストレスは軽減されなかったでしょう。&lt;p&gt;この記事が小さなこと、その多くはお金では解決できないことについて書いているのはわかっていますが、ストレスの少ない環境で育ったことが（主にお金の問題がないため）、人生の小さなことに汗をかかずに済むような何かを身につけるのだろうかと疑問に思っています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ndr42:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;記事より: 遅刻などのマイクロ ストレッサーは、人間であることに伴う避けられない苦痛を表しています。&lt;p&gt;遅刻は本当に避けられないのでしょうか?それを回避する実証済みの戦略があると思います。 (一方、私の妻と息子の 1 人は、それが実際には避けられないことに同意するでしょう)&lt;p&gt;編集: 欠落していた単語を追加しました&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;begueradj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;携帯電話からは記事を読むことができません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gregschlom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最近、『No Mud, No Lotus』を読んでいます (&lt;a href="https:&amp;#x2F;&amp;#x2F;www.parallax.org&amp;#x2F;product&amp;#x2F;no-mud-no-lotus&amp;#x2F;") rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.parallax.org&amp;#x2F;product&amp;#x2F;no-mud-no-lotus&amp;#x2F;&lt;/a&gt;）禅師ティク・ナット・ハン氏によるアドバイスで、これとほぼ同じアドバイスです。&lt;p&gt;この本は私に大きな喜びをもたらしてくれたので、誰にでもお勧めします。&lt;p&gt;仏教がどれほど「正しく」なったのか興味深い。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://psyche.co/guides/how-to-respond-to-annoying-things-with-greater-ease</guid>
+      <pubDate>Sat, 15 Nov 2025 14:53:09 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45937816</comments>
+    </item>
+    <item>
+      <title>マイティ・シンプレックス (2023)</title>
+      <link>https://galileo-unbound.blog/2023/05/03/the-mighty-simplex/</link>
+      <description>&lt;p&gt;シンプレックス ジオメトリ このブログでは、ジオメトリを通常のシンプレックスに限定します。各ノードは同等であり、相互にリンクされています。各ノードは料金です。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Mighty Simplex (2023)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45938698"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://galileo-unbound.blog/2023/05/03/the-mighty-simplex/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ikjasdlk2234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;線形計画法におけるシンプレックス法は、私にとって比較的複雑な「クリック」メソッドを初めて体験したものの 1 つでした。私にとっては。&lt;p&gt;面白いことに、今でも毎週その気持ちを思い出します。宿題の問題を解いているときに起こった私の記憶は、実際、ハリー・ポッターの最初の映画でハリーが杖を手に入れたときのようなものです。暖かく明るい照明、見開かれた目、そして私の頭がヘリウム風船のような感覚でした。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ceh123:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;シンプリスの話題について！私は力学系で博士号を取得しましたが、不変測度 [0] の空間は (コンパクトな設定では) 常に単体であり、極値はエルゴード測度です。このため、システムがエルゴードであるとある程度想定でき、そこで動作し、(エルゴード分解を通じて) 非エルゴードの場合に一般化できることがよくあります。&lt;p&gt;しかし、私がここで言及したかった本当のことは、ポールセン シンプレックス [1] でした。これは、極点が密集したユニークな Choquet シンプレックス [2] です。これは、数え切れないほど無限の次元の三角形のようなもので、三角形の内部のどこにいても、任意に角に近づくことを意味します。これは私のお気に入りの形であり、まったくワイルドで概念化することは不可能です (私は何年も毎日この形で作業していましたが!)&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Invariant_measure" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Invariant_measure&lt;/a&gt;&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;eudml.org&amp;#x2F;doc&amp;#x2F;74350" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;eudml.org&amp;#x2F;doc&amp;#x2F;74350&lt;/a&gt;&lt;p&gt;[2] &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Choquet_ Theory" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;チョケ理論&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://galileo-unbound.blog/2023/05/03/the-mighty-simplex/</guid>
+      <pubDate>Sat, 15 Nov 2025 16:49:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45938698</comments>
     </item>
   </channel>
 </rss>
