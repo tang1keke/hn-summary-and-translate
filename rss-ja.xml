@@ -6,68 +6,46 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 19 Nov 2025 09:29:18 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Nov 2025 12:50:08 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>クオンツトレーダーとして大規模言語モデルの限界を探る</title>
-      <link>https://nof1.ai/blog/TechPost1</link>
-      <guid isPermaLink="true">https://nof1.ai/blog/TechPost1</guid>
-      <pubDate>Wed, 19 Nov 2025 07:36:25 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45976832</comments>
-    </item>
-    <item>
-      <title>ニコチンが脳に与える影響</title>
-      <link>https://economist.com/science-and-technology/2025/09/12/what-nicotine-does-to-your-brain</link>
-      <guid isPermaLink="true">https://economist.com/science-and-technology/2025/09/12/what-nicotine-does-to-your-brain</guid>
-      <pubDate>Wed, 19 Nov 2025 07:20:33 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45976734</comments>
-    </item>
-    <item>
-      <title>Strace-macOS: macOS 用の strace コマンドのクローン</title>
-      <link>https://github.com/Mic92/strace-macos</link>
-      <description>&lt;p&gt;txt /usr/local/bin/git status # JSON 出力 strace --json /usr/local/bin/git status &gt; トレース。 jsonl # syscall を名前でフィルターします strace -e trace=open,close /usr/local/bin/git status # カテゴリでフィルターします* strace -e trace=file /usr/local/bin/git status # すべてのファイル操作 strace -e trace=network /usr/local/bin/curl https://example. com # ネットワーク syscall のみ strace -e track=process /usr/local/bin/git status # プロセス ライフサイクル syscall * サポートされているすべてのカテゴリについては、「Syscall フィルタリング」を参照してください。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Strace-macOS: A clone of the strace command for macOS&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45974681"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/Mic92/strace-macos'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>思考を意識した編集と生成のためのマルチモーダル拡散言語モデル</title>
+      <link>https://github.com/tyfeld/MMaDA-Parallel</link>
+      <description>&lt;p&gt;環境セットアップ まず、トーチ 2 を使用してトーチ環境から始めます。MMaDA-Parallel-A はトークナイザー Amused-VQ でトレーニングされ、MMaDA-Parallel-M はトークナイザー Magvitv2 でトレーニングされます。 MMaDA-Parallel-M cd MMaDA-Parallel-M Python 推論による Parallel Gen。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Multimodal Diffusion Language Models for Thinking-Aware Editing and Generation&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45977542"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/tyfeld/MMaDA-Parallel'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CGamesPlay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;大好きです。私はシステムをハードロックせずに dtruss を使用したことがないので、これがそのラッパーではないことがわかってうれしいです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cyberpunk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;愚かな質問ですが、MacOS には dtrace が同梱されていませんか?それでは、なぜ dtruss を使用しないのでしょうか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;comex:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;きちんとしていますが、かなり遅いと思います。&lt;p&gt;読んでいる人へのヒント: ファイル アクセスまたはコマンドの実行のみをトレースする必要がある場合は、「eslogger lookup」と「eslogger exec」をそれぞれ使用すると、必要なものが得られます (ただし、特に使いやすい JSON BLOB の形式ではありません)。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sandbags:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Modulo まだ試していませんが、SIP がトレースを中断するのが腹立たしかったので、これは歓迎すべき開発です、ありがとう。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/Mic92/strace-macos</guid>
-      <pubDate>Wed, 19 Nov 2025 01:18:02 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45974681</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;boriskourt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;興味深いアプローチであり、非常に読みやすい論文です。&lt;p&gt;&amp;gt;異なるトークナイザーを備えた 2 つの MMaDA-Parallel バージョンを提供します。 MMaDA-Parallel-A はトークナイザー Amused-VQ でトレーニングされ、MMaDA-Parallel-M はトークナイザー Magvitv2 でトレーニングされます。&lt;p&gt;tyfeld&amp;#x2F;MMaDA-Parallel-A: &lt;a href="https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;tyfeld&amp;#x2F;MMaDA-Parallel-A&amp;#x2F;tree&amp;#x2F;main" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;tyfeld&amp;#x2F;MMaDA-Parallel-A&amp;#x2F;tree&amp;#x2F;main&lt;/a&gt;&lt;p&gt;tyfeld&amp;#x2F;MMaDA-Parallel-M: &lt;a href="https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;tyfeld&amp;#x2F;MMaDA-Parallel-M&amp;#x2F;tree&amp;#x2F;main" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;tyfeld&amp;#x2F;MMaDA-Parallel-M&amp;#x2F;tree&amp;#x2F;main&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NitpickLawyer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;これを解決するために、私たちは並列マルチモーダル拡散フレームワークである MMaDA-Parallel を提案します。これにより、ノイズ除去の軌跡全体を通じてテキストと画像の間の&lt;i&gt;継続的な双方向のインタラクション&lt;/i&gt;が可能になります。&lt;p&gt;&gt; (ParaRL) は、&lt;i&gt;軌道に沿って意味論的報酬&lt;/i&gt;を適用して、クロスモーダルの一貫性を強化する新しい戦略です。&lt;p&gt;(強調は私のものです)&lt;p&gt;これは本当に素晴らしいと思います。ある世代が「参加」するという事実は、他のものは本当に興味深いです。これが他の治療法にも当てはまるかどうか興味があります。私は、何かが生成されると状況が変わる可能性がある、特定のアプリケーションのコーディングを考えています。私の予感としては、このアプローチはコーディングに大きな利益をもたらすだろう。コードの書き方は自己回帰というよりも拡散に似ていることがよくあります (つまり、ここで何かを編集することがよくありますが、それを行ったために何かをインポートし、そこで何かを変更する必要があり、それがさらなる変更につながる、など)。&lt;p&gt;今のところ、コーディングは &amp;lt;考える&amp;gt; から多くの恩恵を受けているようです。 -&gt; &amp;lt;コーディング&amp;gt; -&gt; &amp;lt;env_フィードバック&amp;gt; -&gt; ＜反射＞ -&gt; ＜思考＞ -&gt; &amp;lt;coding&amp;gt; ですが、一見すると、これは自己回帰生成のために組み込まれているように見えます...特に GPT5 は、複数の「ツール呼び出し」を使用してこの点で優れているようです。思考セッションが挟まれます。ここで提案されている並列ノイズ除去機能を使えば、これは改善されるのではないかと思います。思考とコーディングの両方が並列で行われ、ユーザーが「参加」できるのです。もう一方へ。いくつかのフィードバック (リンター、コンパイラー、LSP、テストなど) を追加すると、効果が得られます。それが機能すれば。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Hard_Space:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;執筆時点ではプロジェクト ページに誤った Arxiv リンクがあることに注意してください。これが正しいものです:&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;arxiv.org&amp;#x2F;abs&amp;#x2F;2511.09611" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;arxiv.org&amp;#x2F;abs&amp;#x2F;2511.09611&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/tyfeld/MMaDA-Parallel</guid>
+      <pubDate>Wed, 19 Nov 2025 09:27:17 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45977542</comments>
     </item>
     <item>
-      <title>ダウンディテクタのダウンディテクタのためのダウンディテクタ</title>
-      <link>https://downdetectorsdowndetectorsdowndetector.com/</link>
-      <description>&lt;p&gt;Downdetector の Downdetector の Downdetector Downdetector の Downdetector の Downdetector 小さな独立したステータス チェッカー。すべてのシステムが動作中 Downdetector の Downdetector はすべてのリージョンから正常に応答しています。地域別のチェック 地域ステータス HTTP 遅延 イギリス、ロンドン ● 増加 200 361 ミリ秒 オーストラリア、シドニー ● 増加 200 438 ミリ秒 米国、ニュージャージー ● 増加 200 166 ミリ秒 最終チェック日: 2 分前 - 3 地域。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A down detector for down detector's down detector&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45976670"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://downdetectorsdowndetectorsdowndetector.com/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 16 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;raverbashing:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他の機能が失敗した場合に備えて、最終的なダウン検出器にも固定 IP アドレスが必要です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jb1991:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;うーん、このサイトはダウンしているようです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;0x006A:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ダウン検出器はずっと下まで&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ndr42:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;タイトルを見ると、ダグラス アダムス著『銀河ヒッチハイク ガイド』の第 5 回を思い出します。&lt;p&gt;"さらなる調査により、何が起こったのかがすぐに判明しました。隕石が船に大きな穴を開けたのだ。宇宙船が隕石の衝突を受けたかどうかを検出するはずだった船の処理装置の一部が隕石によって見事に破壊されていたため、宇宙船はこれまでこれを検出していませんでした。」&lt;p&gt;この本 (「ほとんど無害」) と、特に最初の章の冒頭は、宇宙船の自動化システムがどのように状況を解決しようとしているかを説明しているため、読む価値があります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fedeb95:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ダウン検出器のダウン検出器のダウンを検出するのは誰ですか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rozenmd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;そして、これを監視するページ: &lt;a href="https:&amp;#x2F;&amp;#x2F;onlineornot.com&amp;#x2F;website-down-checker?requestId=o398tWuqadY9XvgOYxt9W&amp;amp;url=https:&amp;#x2F;&amp;#x2F;down​​detectorsdowndetectorsdowndetector.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;onlineornot.com&amp;#x2F;website-down-checker?requestId=o398t...&lt;/a&gt;&lt;p&gt;これは、少なくとも CDN の背後にあるようです&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spirographer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これを Downdetector に登録して、動作していることを確認するとよいでしょう。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;My_Name:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;誰が監視員を本当に監視するのか&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lnyan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それ自体がダウンしていることを検出できますか&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;theturtlemoves:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ダウン検出器をずっと下まで&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sam-cop-vimes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これが機能するのを確認するために、次の大規模な障害が発生することを願っています:-)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;keepamovin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ちょっと考えてみると、分散型 P2P の「メッシュ」は、信頼性調査に適しているでしょうか?結果を共有し、どこからアクセスできなかったのかを確認することができました。集中型のダウン検出機能があるというのは、ある意味矛盾しています（笑）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rectang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この狂気は、ドメイン名ラベルの 63 文字制限に達したときにのみ終わるようです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;daanavitch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;残念ながら、この Web サイトはスタイリングに Tailwind の CDN に依存しており、Vercel にデプロイされており、Vercel は主に AWS でホストされています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rocauc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;はい、downdetectorsdowndetectorsdowndetectorsdowndetector は利用可能です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SeanAnderson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私はこの天才とは関係がありません。他のスレッド (&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45974012"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45974012&lt;/a&gt;) を覗いていたところ、サイトの URL を確認して、うれしい驚きを感じました。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://downdetectorsdowndetectorsdowndetector.com/</guid>
-      <pubDate>Wed, 19 Nov 2025 07:09:52 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45976670</comments>
+      <title>ポンピングされた Amiga 500</title>
+      <link>https://www.pimyretro.org/pimped-amiga-500/</link>
+      <description>&lt;p&gt;90 年代初頭、私は拡張カードを 1 枚だけ搭載した Amiga 2000 を持っていました。SCSI コントローラと 290 MB の巨大なハード ドライブです。ちょっと待ってください。これは Amiga 500 であり、500+ ではありません。これは、私の A500 が低速 RAM をチップ RAM に変換するように改造されたに違いないことを意味します。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Pimped Amiga 500&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45978545"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.pimyretro.org/pimped-amiga-500/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.pimyretro.org/pimped-amiga-500/</guid>
+      <pubDate>Wed, 19 Nov 2025 12:02:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45978545</comments>
+    </item>
+    <item>
+      <title>Klarna 氏、AI の推進により従業員数が半減し、給与が向上したと語る</title>
+      <link>https://www.theguardian.com/business/2025/nov/18/buy-now-pay-later-klarna-ai-helped-halve-staff-boost-pay</link>
+      <description>&lt;p&gt;写真: Robert Evans/AlamyKlarna氏は、AIの推進が従業員数を半減し、給料の引き上げに役立ったと語る 今すぐ買って後払いの会社は、人員削減とテクノロジー投資で主に従業員数が削減される中、給与が60%上昇したと述べている クラーナは、AI関連の節約のおかげで今買って後払いの会社は従業員の給与を60%近く増やすことができたと主張しているが、過去3年間で従業員をほぼ半減させたことで、さらに人員を削減する可能性があることを示唆した。同氏は、クラルナ社は「数年間」雇用を行っていないと説明した。これらのトピックについてさらに詳しく見る 今すぐ購入、後で支払う 失業 フィンテック 人工知能 (AI) コンピューティングニュース シェア このコンテンツを再利用します。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Klarna says AI drive has helped halve staff numbers and boost pay&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45978739"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.theguardian.com/business/2025/nov/18/buy-now-pay-later-klarna-ai-helped-halve-staff-boost-pay'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.theguardian.com/business/2025/nov/18/buy-now-pay-later-klarna-ai-helped-halve-staff-boost-pay</guid>
+      <pubDate>Wed, 19 Nov 2025 12:25:12 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45978739</comments>
     </item>
   </channel>
 </rss>

@@ -6,68 +6,46 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 19 Nov 2025 09:29:18 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Nov 2025 12:50:08 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>作为量化交易者探索大型语言模型的局限性</title>
-      <link>https://nof1.ai/blog/TechPost1</link>
-      <guid isPermaLink="true">https://nof1.ai/blog/TechPost1</guid>
-      <pubDate>Wed, 19 Nov 2025 07:36:25 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45976832</comments>
-    </item>
-    <item>
-      <title>尼古丁对你的大脑有什么作用</title>
-      <link>https://economist.com/science-and-technology/2025/09/12/what-nicotine-does-to-your-brain</link>
-      <guid isPermaLink="true">https://economist.com/science-and-technology/2025/09/12/what-nicotine-does-to-your-brain</guid>
-      <pubDate>Wed, 19 Nov 2025 07:20:33 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45976734</comments>
-    </item>
-    <item>
-      <title>Strace-macOS：macOS 的 strace 命令的克隆</title>
-      <link>https://github.com/Mic92/strace-macos</link>
-      <description>&lt;p&gt;txt /usr/local/bin/git status # JSON 输出 strace --json /usr/local/bin/git status &gt; trace. jsonl # 按名称过滤系统调用 strace -e trace=open,close /usr/local/bin/git status # 按类别过滤* strace -e trace=file /usr/local/bin/git status # 所有文件操作 strace -e trace=network /usr/local/bin/curl https://example. com # 仅网络系统调用 strace -e trace=process /usr/local/bin/git status # 进程生命周期系统调用 * 请参阅系统调用过滤以了解所有支持的类别。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Strace-macOS: A clone of the strace command for macOS&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45974681"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/Mic92/strace-macos'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>用于思维感知编辑和生成的多模态扩散语言模型</title>
+      <link>https://github.com/tyfeld/MMaDA-Parallel</link>
+      <description>&lt;p&gt;环境设置 首先，从带有 torch 2 的 torch 环境开始。MMaDA-Parallel-A 使用分词器 Amused-VQ 进行训练，MMaDA-Parallel-M 使用分词器 Magvitv2 进行训练。带有 MMaDA-Parallel-M 的并行生成 cd MMaDA-Parallel-M python 推理。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Multimodal Diffusion Language Models for Thinking-Aware Editing and Generation&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45977542"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/tyfeld/MMaDA-Parallel'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CGamesPlay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;爱它。我从来没有在没有硬锁我的系统的情况下成功使用过 dtruss，所以很高兴看到这不是围绕它的包装。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cyberpunk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;愚蠢的问题，macos 不附带 dtrace 吗？那么为什么不使用 dtruss 呢？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;comex:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很简洁，不过我猜它相当慢。&lt;p&gt;给任何阅读者的提示：如果您只需要跟踪文件访问或命令执行，“eslogger Lookup”和“eslogger exec”将分别为您提供所需的内容（尽管以不太友好的 JSON blob 形式）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sandbags:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Modulo 我还没有尝试过，SIP 中断跟踪是一件令人恼火的事情，所以这是一个值得欢迎的发展，谢谢。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/Mic92/strace-macos</guid>
-      <pubDate>Wed, 19 Nov 2025 01:18:02 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45974681</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;boriskourt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的方法和一篇非常可读的论文。&lt;p&gt;&gt;我们提供两种具有不同分词器的 MMaDA-Parallel 变体。 MMaDA-Parallel-A 使用分词器 Amused-VQ 进行训练，MMaDA-Parallel-M 使用分词器 Magvitv2 进行训练。&lt;p&gt;tyfeld&amp;#x2F;MMaDA-Parallel-A: &lt;a href="https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;tyfeld&amp;#x2F;MMaDA-Parallel-A&amp;#x2F;tree&amp;#x2F;main" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;tyfeld&amp;#x2F;MMaDA-Parallel-A&amp;#x2F;tree&amp;#x2F;main&lt;/a&gt;&lt;p&gt;tyfeld&amp;#x2F;MMaDA-Parallel-M: &lt;a href="https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;tyfeld&amp;#x2F;MMaDA-Parallel-M&amp;#x2F;tree&amp;#x2F;main" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;tyfeld&amp;#x2F;MMaDA-Parallel-M&amp;#x2F;tree&amp;#x2F;main&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NitpickLawyer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;为了解决这个问题，我们提出了一种并行多模态扩散框架 MMaDA-Parallel，它可以在整个去噪轨迹中实现文本和图像之间的&lt;i&gt;连续、双向交互&lt;/i&gt;。&lt;p&gt;&gt; (ParaRL)，一种新颖的策略，它&lt;i&gt;沿着轨迹应用语义奖励&lt;/i&gt;来强制跨模式一致性。&lt;p&gt;（强调我的）&lt;p&gt;这听起来真的很酷。一代人“参加”这一事实表明了这一点。另一个真的很有趣。我很好奇这是否也适用于其他方式。我正在考虑编写特定的应用程序，一旦生成某些内容，事情就会发生变化。我的预感是，编码将从这种方法中受益匪浅，因为“手动”可以让您受益匪浅。编写代码的方式通常更像扩散而不是自回归（也就是说，我们经常在这里编辑一些东西，然后因为我们这样做了，我们必须导入一些东西，然后在那里改变一些东西，然后导致进一步的改变，等等）。&lt;p&gt;目前，编码似乎从&amp;lt;思考&amp;gt;中受益匪浅。 -&gt; &amp;lt;编码&amp;gt; -&gt; &amp;lt;env_feedback&amp;gt; -&gt; &amp;lt;反思&amp;gt; -&gt; &amp;lt;思考&amp;gt; -&gt; &amp;lt;编码&amp;gt;，但乍一看这似乎是为了自回归生成而硬塞进去的……GPT5 似乎在这方面尤其擅长，具有多个“工具调用”功能。穿插在其思考过程中。我想知道这里提出的并行去噪技术是否会变得更好，其中思考和编码都是并行完成的，并且人们可以“参与”去噪。到另一个。添加一些反馈（linter、编译器、LSP、测试等），这可以发挥作用。如果有效的话。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Hard_Space:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请注意，在撰写本文时，项目页面有错误的 Arxiv 链接。这是正确的：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;arxiv.org&amp;#x2F;abs&amp;#x2F;2511.09611" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;arxiv.org&amp;#x2F;abs&amp;#x2F;2511.09611&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/tyfeld/MMaDA-Parallel</guid>
+      <pubDate>Wed, 19 Nov 2025 09:27:17 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45977542</comments>
     </item>
     <item>
-      <title>下降检测器 下降检测器 下降检测器</title>
-      <link>https://downdetectorsdowndetectorsdowndetector.com/</link>
-      <description>&lt;p&gt;DownDetector's DownDetector's Down detector DownDetector's DownDetector's DownDetector 一个小型独立状态检查器。所有系统运行 Down detector 的 Down detector 从所有区域都正常响应。按区域检查 区域状态 HTTP 延迟 英国伦敦 ● 增加 200 361 毫秒 澳大利亚悉尼 ● 增加 200 438 毫秒 美国新泽西州 ● 增加 200 166 毫秒 最后检查：2 分钟前 - 3 个区域。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A down detector for down detector's down detector&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45976670"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://downdetectorsdowndetectorsdowndetector.com/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 16 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;raverbashing:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最终的故障检测器也应该有一个固定的 IP 地址，以防其他东西也失败&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jb1991:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嗯，这个网站好像挂了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;0x006A:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它的向下探测器一直向下&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ndr42:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这个标题让我想起了道格拉斯·亚当斯所著的《银河系漫游指南》的第五部分：&lt;p&gt;“进一步的调查很快就确定了到底发生了什么。一颗陨石在船上撞出了一个大洞。这艘船之前没有检测到这一点，因为陨石巧妙地击毁了船的处理设备的一部分，该设备本应检测船是否被陨石击中。”&lt;p&gt;这本书（“基本上无害”），尤其是第一章的开头值得一读，因为它描述了太空船的自动化系统如何尝试解决这种情况。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fedeb95:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谁检测到下降检测器的下降检测器的下降？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rozenmd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;监控此页面的页面：&lt;a href="https:&amp;#x2F;&amp;#x2F;onlineornot.com&amp;#x2F;website-down-checker?requestId=o398tWuqadY9XvgOYxt9W&amp;amp;url=https:&amp;#x2F;&amp;#x2F;down​​ detectororsdown detectorsdown detector.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;onlineornot.com&amp;#x2F;website-down-checker?requestId=o398t...&lt;/a&gt;&lt;p&gt;这个至少看起来像是在 CDN 后面&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spirographer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最好将其注册到下检测器中以确保其正常运行。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;My_Name:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谁真正看守守望者&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lnyan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它能检测到它自己何时宕机吗&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;theturtlemoves:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;向下探测器一直向下&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sam-cop-vimes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我几乎希望下一次大停电，这样我就可以看到它的工作:-)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;keepamovin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;想一想，分布式 P2P“网状网络”不就是这样吗？更适合可靠性探测？我们可以分享结果，看看从哪里无法访问它。拥有一个集中式向下检测器有点矛盾，哈哈&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rectang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看来只有当我们达到域名标签的 63 个字符限制时，这种疯狂才会结束。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;daanavitch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不幸的是，该网站依赖于 Tailwind 的 CDN 进行样式设置，而 CDN 又部署在 Vercel 上，而 Vercel 则主要托管在 AWS 上。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rocauc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，down detectors down detectors down detectors down detectors 可用。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SeanAnderson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我与这个天才无关。我只是在窥探另一个线程（&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45974012"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45974012&lt;/a&gt;），有机会修改网站的 URL，发现自己感到惊喜。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://downdetectorsdowndetectorsdowndetector.com/</guid>
-      <pubDate>Wed, 19 Nov 2025 07:09:52 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=45976670</comments>
+      <title>拉皮条的阿米加 500</title>
+      <link>https://www.pimyretro.org/pimped-amiga-500/</link>
+      <description>&lt;p&gt;早在 90 年代初，我就有一台 Amiga 2000，只有一张扩展卡：一个 SCSI 控制器与一个巨大的 290 MB 硬盘驱动器配对。等一下 — 这是 Amiga 500，而不是 500+。这意味着我的 A500 一定经过修改，将慢速 RAM 转换为芯片 RAM。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Pimped Amiga 500&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45978545"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.pimyretro.org/pimped-amiga-500/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.pimyretro.org/pimped-amiga-500/</guid>
+      <pubDate>Wed, 19 Nov 2025 12:02:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45978545</comments>
+    </item>
+    <item>
+      <title>克拉纳表示，人工智能驱动器已帮助员工人数减半并提高了薪资</title>
+      <link>https://www.theguardian.com/business/2025/nov/18/buy-now-pay-later-klarna-ai-helped-halve-staff-boost-pay</link>
+      <description>&lt;p&gt;照片：Robert Evans/AlamyKlarna 表示，人工智能的推动已帮助员工人数减少了一半，并提高了薪资。现在购买、稍后支付的公司表示，薪资已经上涨了 60%，而员工人数主要是由于人员流失和技术投资而削减的。Klarna 声称，与人工智能相关的节省使现在购买、稍后支付的公司将员工工资提高了近 60%，但暗示在过去三年将员工数量几乎减半后，该公司可能会削减更多工作岗位。他解释说，克拉纳“已经好几年”没有招聘了。探索有关这些主题的更多信息立即购买，稍后付款失业金融科技人工智能 (AI)计算新闻分享重复使用此内容。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Klarna says AI drive has helped halve staff numbers and boost pay&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=45978739"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.theguardian.com/business/2025/nov/18/buy-now-pay-later-klarna-ai-helped-halve-staff-boost-pay'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.theguardian.com/business/2025/nov/18/buy-now-pay-later-klarna-ai-helped-halve-staff-boost-pay</guid>
+      <pubDate>Wed, 19 Nov 2025 12:25:12 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=45978739</comments>
     </item>
   </channel>
 </rss>
