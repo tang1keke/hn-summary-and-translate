@@ -6,94 +6,53 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 21 Nov 2025 12:47:41 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Nov 2025 15:22:16 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>FAWK: LLM は言語インタープリタを作成できる</title>
-      <link>https://martin.janiczek.cz/2025/11/21/fawk-llms-can-write-a-language-interpreter.html</link>
-      <description>&lt;p&gt;AWK にファーストクラスの配列があった場合はどうなるでしょうか。 } functionanalyze(arr) { arr[0] = 100 print arr[0] # --&gt; 100、この関数内のみ } AWK にファーストクラス関数とラムダがある場合はどうなるでしょうか。私はその費用を喜んで支払います。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; FAWK: LLMs can write a language interpreter&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46003144"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://martin.janiczek.cz/2025/11/21/fawk-llms-can-write-a-language-interpreter.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>PNG 内の EXIF 方向情報は画像の方向には使用されません</title>
+      <link>https://bugzilla.mozilla.org/show_bug.cgi?id=1627423</link>
+      <description>&lt;p&gt;Safari は画像データの前に表示される EXIF 方向情報を尊重しますが、Firefox と Chrome は尊重しません。 eXIf eXif テーブルを定義します。 ) 重大度: 通常 → S3 ティモシー ニッケル (:tnikkel) 更新済み • 2 年前 ブロック: 1821750 ティモシー ニッケル (:tnikkel) 更新済み • 1 年前 ブロック: 1682759 ティモシー ニッケル (:tnikkel) 更新済み • 1 年前 ブロック: 1904236 クセニア ベレジナ [:ksenia] 更新済み • 1 年前 ブロック: 1917547 Ksenia Berezina [:ksenia] 更新済み • 1 年前 キーワード: webcompat:platform-bug Jeff Muizelaar [:jrmuizel] コメント 5 • 1 年前 これは PNG-3 https://www で仕様化されています。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; EXIF orientation info in PNGs isn't used for image-orientation&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46004364"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://bugzilla.mozilla.org/show_bug.cgi?id=1627423'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TeodorDyakov:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;つまり、あなたはコーディングが好きではないので、コーディングに使用されるツール（コンピューター言語）を作成するために、コードを書くのに役立つツールを使用しています。なぜ？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vidarh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは楽しい投稿であり、私は LLM を使った言語実験が大好きです (Ruby コンパイラでセッションをほぼ継続的に実行しているため、Claude Max サブスクリプションの週次制限に近づいています。Claude は、場合によってはコードが汚い場合もありますが、GDB によるバックトレースの複雑なトレースが必要な問題を修正できますし、テスト スイートがある限り、複雑なパーサー インタラクションをほぼ完全に無償で修正できます) &lt;p&gt;ただし、スクリプトの 1 つの Ruby バージョンは次のとおりです:&lt;p&gt;&lt;pre&gt;&lt;code&gt; BEGIN {
-      結果 = [1、2、3、4、5]
-        .filter {|x| x % 2 == 0 }
-        .map {|x| x * x}
-        .reduce {|acc,x| acc + x }
-     「結果: #{result}」を挿入します。
-    }
-&lt;/code&gt;&lt;/pre&gt;
-重要なのは、「-n」を使用してスクリプトを実行することです。 switch un は BEGIN&amp;#x2F;END ブロックを実行し、暗黙的な "whilegets ... end" を挿入します。残りの周り。 「-a」を追加します。 awk のように行を自動分割します。 「-p」を追加します。また、各反復の最後に $_ を出力します。&lt;p&gt;ここでは、より典型的な Awk に似たエクスペリエンスを示します。&lt;p&gt;&lt;pre&gt;&lt;code&gt; Ruby -pe &amp;#x27;$_.upcase!&amp;#x27; somefile.txt ($_ には行全体が含まれます)
-&lt;/code&gt;&lt;/pre&gt;
-または:&lt;p&gt;&lt;pre&gt;&lt;code&gt; Ruby -F, -ane &amp;#x27;$F[1]&amp;#x27; # 2 番目のフィールドを抽出します。 field -F は分割するデフォルト文字を設定し、-a は暗黙的な $F = $_.split を追加します。
-&lt;/code&gt;&lt;/pre&gt;
-それは彼のやっていることの面白さを損なうものではありません。しかし、より良い Awk を使用することだけが目的の場合、通常は Ruby の方が Awk の方が優れており、さらに言えば Perl も同様です。Awk スクリプトがコマンドラインに適合しないほとんどの場合、実際に Awk を使用する唯一の理由は、Awk が利用できる可能性が高いということだけです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jamesu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;数か月前、ChatGPT を使用して Bison ベースのパーサーを再帰降下法に書き直したところ、それがどれほどうまく機能するかにかなり驚きました。それでも AI に問題を修正したり、スキップした要素を追加したりするよう指示し続ける必要があり、最終的にはおそらく 20% を書き直しました。C++ 機能の奇妙な使用法が特定の部分を理解しにくくしていることに満足できなかったためです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;artpar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;jslike (acorn ベースのパーサー) を 2 つ書きました&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;artpar&amp;#x2F;jslike" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;artpar&amp;#x2F;jslike&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.npmjs.com&amp;#x2F;package&amp;#x2F;jslike" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.npmjs.com&amp;#x2F;package&amp;#x2F;jslike&lt;/a&gt;&lt;p&gt;wang-lang (ASI を JavaScript のように動作させることができませんでした)このほぼベースの文法)&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.npmjs.com&amp;#x2F;package&amp;#x2F;wang-lang" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.npmjs.com&amp;#x2F;package&amp;#x2F;wang-lang&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;artpar.github.io&amp;#x2F;wang&amp;#x2F;playground.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;artpar.github.io&amp;#x2F;wang&amp;#x2F;playground.html&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;artpar&amp;#x2F;wang" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;artpar&amp;#x2F;wang&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qsort:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;マネーショット: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;Janiczek&amp;#x2F;fawk" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;Janiczek&amp;#x2F;fawk&lt;/a&gt;&lt;p&gt;この種の純粋に解釈的な実装あなたは学校で書くでしょう、それでも、私が文句を言う権利がある以上に。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;slybot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;awk を使用して AoC 2021 を D10 まで行いました。楽しかったですが簡単ではなく、それ以上先に進むことができませんでした: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;nusretipek&amp;#x2F;Advent-of-Code-2021" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;nusretipek&amp;#x2F;Advent-of-Code-2021&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;skydhash:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;賞賛に値する取り組みですが、少なくとも、（たとえそれがハック的であっても）動作するコードを紹介するデモを期待していました。それは、誰かが楽譜を一度も演奏せずにその楽譜について話すようなものです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;keepamovin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;はい！私は現在、コパイロット + 反重力を使用して、安全性、決定論、監査可能性、フェイルファスト バグに重点を置き、複数のプラットフォームを対象としたマシンコードに完全に落とし込まれる人間工学に基づいた構文とセマンティクスを備えた言語を実装しています。思ったより手間がかかりますが、LLM は非常に有能です。&lt;p&gt;私は JS からマシンコードへの変換を夢見ていましたが、最初から始めて必要なものを手に入れてみてはどうだろうかと考えました。 &lt;i&gt;とても&lt;/i&gt;楽しいです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Y_Y:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は何年もの間、単純なほぼ Lisp と、C などの正直に言うと別の言語の両方で、LLM に Racket の「ハッシュラング」† を作成してもらうことを試みてきました。それは間違いなく可能です。raco には C、Python、J、Lua などのパッケージがあります。&lt;p&gt;とにかく、これまでのところ、どの言語からも良い結果は得られませんでした。明らかなモデルですが、最終的には十分に賢くなることを願っています。&lt;p&gt;† &lt;a href="https:&amp;#x2F;&amp;#x2F;williamjbowman.com&amp;#x2F;tmp&amp;#x2F;how-to-hashlang&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;williamjbowman.com&amp;#x2F;tmp&amp;#x2F;how-to-hashlang&amp;#x2F;&lt;/a&gt;&lt;p&gt;‡ &lt;a href="https:&amp;#x2F;&amp;#x2F;pkgd.racket-lang.org&amp;#x2F;pkgn&amp;#x2F;search?tags= language" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;pkgd.racket-lang.org&amp;#x2F;pkgn&amp;#x2F;search?tags=言語&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://martin.janiczek.cz/2025/11/21/fawk-llms-can-write-a-language-interpreter.html</guid>
-      <pubDate>Fri, 21 Nov 2025 10:28:49 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46003144</comments>
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mzur:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ブラウザが EXIF に基づいて画像を回転し始めるのは非常に面倒です。私は画像注釈ツールを管理していますが、突然、ユーザーが使用するブラウザに応じて異なる画像がユーザーに表示されるようになりました。次に、EXIF の方向を再び無視するには、あらゆる種類のフープを飛び越える必要があります。場合によっては、セキュリティ上の理由から、方向が変更されたかどうかを確認することが許可されていません。そして、これを制御する唯一の方法は、要素が DOM 内にある場合にのみ機能する CSS 属性を使用することです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alexdbird:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;個人的には、PNG が方向をエンコードしないという現状が気に入っています。デバッグ中に PNG をダンプでき、コードと同じようにビットを見ていることがわかります。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pupppet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これが事後的にサポートされると、PNG の一部が突然上下逆に表示されることになるのではないでしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Linkd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;EXIF の向きの調整は常に大きな苦痛を伴います。特に HEIC では、libheifs が更新され続け、あらゆる種類の互換性の問題が発生します。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;postalcoder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;元メタデータ補完主義者として、EXIF メタデータ、ベンダー固有のメタデータ、およびさまざまなソフトウェアがそれらをサポートする方法、またはサポートを拒否する方法との戦いについて考えると、心が解離し始めます。&lt;p&gt;画像を A​​pple Photos に取り込むときはさらに悪化します。そこでは、決して修正されないとわかっているペーパーカットのバグに直面しなければなりません。&lt;p&gt;私は ExifTool が大好きです。それは素晴らしいユーティリティの 1 つです。ほぼすべてのファイルで機能します
+私はそれを投げます。しかし、その出力を読むと不安になる場合があります。それは、ユーダイモニアを垣間見たようなものですが、Apple Photos がコレクション内のすべてのレンズを誤って読み取っているという現実によって無作法に中断されるだけです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;donatj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;面白い。そんな事があるとは知りませんでした。 PNG のようなロスレス形式では、方向情報はあまり役に立たないようです。たとえば JPEG では、回転と再エンコードは損失が多く、画像がわずかに劣化するため、これは理にかなっています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mightysashiman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;バグレポートが hn で共有されるのはなぜですか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LiamPowell:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;参照: 右のクロップを左のクロップとして誤って適用する VLC のバグ [1]。このバグレポートは 2023 年のものですが、私が知る限り、このバグは VLC が存在する限りずっと存在していました。&lt;p&gt;このようなバグを見るといつも驚かされます。仕様の非常に簡単にテストできる部分がテストされていないように見え、最終的には何年も経つまで修正されないバグとして終わります。&lt;p&gt;[0]: &lt;a href="https:&amp;#x2F;&amp;#x2F;code.videolan.org&amp;#x2F;videolan&amp;#x2F;vlc&amp;#x2F;-&amp;#x2F;問題&amp;#x2F;28279" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;code.videolan.org&amp;#x2F;videolan&amp;#x2F;vlc&amp;#x2F;-&amp;#x2F;issues&amp;#x2F;28279&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://bugzilla.mozilla.org/show_bug.cgi?id=1627423</guid>
+      <pubDate>Fri, 21 Nov 2025 13:29:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46004364</comments>
     </item>
     <item>
-      <title>Roundtable (YC S23) は 2 人の営業開発担当者 (SDR) を雇用しています</title>
-      <link>https://www.ycombinator.com/companies/roundtable/jobs/irJTEsg-sales-development-representative</link>
-      <description>&lt;p&gt;D's、Roundtable は、クライアントのプラットフォームにスムーズな継続的な検証を提供します。 Roundtable は、デジタル アイデンティティにおける人間の証明レイヤーを構築する研究開発会社です。 Roundtable は、影響力の高い研究を生み出し、ボット検出、詐欺防止、継続的認証においてこの研究を製品化することを目指しています。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Roundtable (YC S23) Is Hiring Two Sales Development Representatives (SDRs)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46003686"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/roundtable/jobs/irJTEsg-sales-development-representative'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.ycombinator.com/companies/roundtable/jobs/irJTEsg-sales-development-representative</guid>
-      <pubDate>Fri, 21 Nov 2025 12:00:02 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46003686</comments>
+      <title>最小限の実行可能な Armv7 エミュレータを最初から構築する</title>
+      <link>https://xnacly.me/posts/2025/building-a-minimal-viable-armv7-emulator/</link>
+      <description>&lt;p&gt;スクラッチから実行可能な最小限の Armv7 エミュレータを構築する11 月 19 日、20258336 文字40 分で読めます目次タグ:ArmRustTip または TLDR - Rust で依存性のない小さな armv7 ユーザー空間エミュレータを構築しました私は、実行可能な最小限の armv7 エミュレータを 1. 3 ミリ秒で書きました (したがって、stinkarm はネイティブの armv7 実行より ~100 ～ 1000 倍遅いです)。 (「アセンブラーは {} で失敗しました」、入力。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Building a Minimal Viable Armv7 Emulator from Scratch&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46004386"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://xnacly.me/posts/2025/building-a-minimal-viable-armv7-emulator/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;syntex:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;著者がウェブサイトをクリスマスに飾り付けているのがわかります:)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dosinga:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一目見て『Minimal Viable Army』を読みました - 悪の首謀者を目指す人にとっては良い本でしょう&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anthk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは、静的にリンクされた古い Linux バイナリを実行できる Perl で書かれた最小限の MIPS1 インタープリタを思い出させます:&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;pts&amp;#x2F;pts-mips-emulator" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;pts&amp;#x2F;pts-mips-emulator&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://xnacly.me/posts/2025/building-a-minimal-viable-armv7-emulator/</guid>
+      <pubDate>Fri, 21 Nov 2025 13:30:36 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46004386</comments>
     </item>
     <item>
-      <title>HP と Dell はラップトップの CPU に組み込まれている HEVC サポートを無効にします</title>
-      <link>https://arstechnica.com/gadgets/2025/11/hp-and-dell-disable-hevc-support-built-into-their-laptops-cpus/</link>
-      <description>&lt;p&gt;第 6 世代 Intel Core 以降のプロセッサーを搭載したラップトップには、HEVC デコーディングおよびエンコーディングのハードウェア サポートが組み込まれています。たとえば、Dell 16 Plus 2-in-1 の製品ページでは、HEVC ハードウェア デコードが無効になっていますが、HEVC については言及されていません。 HEVC ソフトウェアのサポートについては、お好みのビデオ プレーヤーを確認してください。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; HP and Dell disable HEVC support built into their laptops' CPUs&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46002989"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://arstechnica.com/gadgets/2025/11/hp-and-dell-disable-hevc-support-built-into-their-laptops-cpus/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ZeroGravitas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;言及された最初のデバイスには、ハードウェアで HEVC エンコード&amp;#x2F;デコードもサポートする個別の Nvidia GPU が搭載されていますが、これも無効になっていると思いますか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fransje26:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;本当ですか？&lt;p&gt;ああ、そうですね。 HP や Dell のラップトップはありません。さよなら！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Microsoft ストアで HEVC 拡張機能を購入するだけで有効にすることはできますか?&lt;p&gt;私はライセンスのない PC を使用しているため、すべてを動作させるには購入する必要がありました。問題というよりは迷惑でした。購入したのはわずか 99 セントです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BLKNSLVR:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ファームウェアで無効になっているのではないかと思います。再度有効にする方法はありますか?ファームウェアはダウングレードできますか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;egorfine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それはすでに顧客として私に販売されたものではありませんか？すでに私に販売されている機能の 1 つを会社がどうして削除できるのか理解できません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rs186:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これらの決定はどのように行われるのでしょうか?数セント節約するためにこれらのことをケチって、ユーザー エクスペリエンスを台無しにしますか?&lt;p&gt;それは、Samsung が欠陥のある「仮想近接センシング」を使用しているようなものです。一部の安価な電話機 (S シリーズ FE 電話機を含む) では実際の近接センサーの代わりに、バット ダイヤルが行われます。&lt;a href="https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;samsung&amp;#x2F;comments&amp;#x2F;o56uz4&amp;#x2F;s20_fe_pocket_keeps_opening_up_emergency_call&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;samsung&amp;#x2F;comments&amp;#x2F;o56uz4&amp;#x2F;s20_fe_pock...&lt;/a&gt; -- 真剣に、ここは倹約する必要がある場所ですか?&lt;p&gt;あるいは、これは数ドル以上の問題ではありますが、すべてThinkPad T シリーズの画面は、輝度が低く、NTSC 色範囲が 45% とひどいものです。IT 部門が画面がアップグレードされたバージョンを購入するほど親切でない限り、そのようなことはほぼ起こらないでしょう。&lt;p&gt;私は以前は Apple を嫌いましたが、最近では、ユーザーがスペック シートの特定の項目を再確認して混乱に対処する必要がないように、Apple が製品を安売りしないことに感謝しています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;0.24 ドルを支払って有効にできれば、さらに受け入れられるでしょう。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nicolaslem:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この記事では技術的な詳細については少し軽く説明しています。誰かがハードウェアデコードがどのように無効になるのかを解明できますか? Eヒューズを飛ばしたり、ファームウェアまたはOSで無効にしたりするのでしょうか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ksec:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;問題は二度漬けです。 Intel と AMD がすべての x86 ラップトップの 100% を占める場合。理論上、Intel と AMD は HEVC 料金を一度に支払うことになりますが、IRRC の上限はすべての特許プールから合計 1 億ドルとなります。そして、すべての x86 デバイスには HEVC ライセンスが付与されます。 HP とデルが料金を支払う必要はありません。&lt;p&gt;実際には、インテル、AMD、Nvidia、HP、デル、さらにはブラウザやソフトウェアに至るまで、バリュー チェーンの全員が支払いを強いられているようです。&lt;p&gt;幸いなことに、H.264 ハイ プロファイルは多くの国ですでに特許フリーであり、米国でもまもなく特許フリーになる予定です。今度は AV2 が本当に行動を起こすことを祈りましょう。そうすれば、世界はベースラインが H.264、高品質が AV2 になるでしょう。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wongarsu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;たとえば、会議プログラムで背景がぼやけなくなり、システム パフォーマンスが大幅に低下しました。&lt;p&gt;ビジネス ラップトップでよく知られる HP と Dell の 2 社は、ビデオ会議機能が低下したラップトップを販売していますが、これはすべてラップトップ 1 台あたり 0.24 ドルを節約するためでしょうか?そして、デルは仕様書にもこのことについて言及しておらず、どのモデルが影響を受けるかを明確にリストにしていません。&lt;p&gt;「新しいデルのラップトップは Teams が最悪で、以前のスペックの悪いラップトップは大丈夫だった」という風評被害があったと思わずにはいられません。長期的には0.24ドルよりもはるかに高価になるでしょう&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmrm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;もしかしたら私が行間を読んでいるのかもしれませんが、影響を受けるマシンが 900 ドルのプロ仕様のラップトップであるときに、ライセンス価格について話すのはばかげているのではないでしょうか?&lt;p&gt;つまり、安価なシングルボード コンピューターではそれは理解できますが、これはナンセンスです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;conartist6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それらをすべて 480p ビデオに強制し、製造業者が数セントを節約するためにそれらを無効にしたという情報にリンクし直します。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;HPsquared:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それは、シートヒーターを使用するためにサブスクリプションを支払う車のようなものです。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://arstechnica.com/gadgets/2025/11/hp-and-dell-disable-hevc-support-built-into-their-laptops-cpus/</guid>
-      <pubDate>Fri, 21 Nov 2025 10:01:37 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46002989</comments>
-    </item>
-    <item>
-      <title>Qtile ウィンドウ マネージャー: Python を利用したタイル エクスペリエンス</title>
-      <link>https://tech.stonecharioteer.com/posts/2025/qtile-window-manager/</link>
-      <description>&lt;p&gt;あの時より成長できたと思います。さらに、私は Qtile をインストールするデフォルトの方法にも同意しませんでした。次に、qtile をインストールします。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Qtile Window Manager: A Python-Powered Tiling Experience&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46002138"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://tech.stonecharioteer.com/posts/2025/qtile-window-manager/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zahlman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;さらに、私は Qtile をインストールするデフォルトの方法にも同意しませんでした。原則として、私は何も sudo pip install しません。代わりに、Python コア開発者である友人の Karthikeyan Singaravel に尋ねたところ、彼は、私が選択した Python の任意のバージョンをインストールするために、Ubuntu 用の Deadsnakes PPA を使用することを推奨しました。私は自分で Python 3.10 をコンパイルして、&amp;#x2F;opt&amp;#x2F;qtile&amp;#x2F; にインストールしてみました。 configure --prefix &amp;#x2F;opt&amp;#x2F;qtile&amp;#x2F; を使用します。ソースコードの構成段階で。ただし、python3.10 に基づいて &amp;#x2F;opt&amp;#x2F;qtile&amp;#x2F; に仮想環境を作成できるため、デッドスネークを使用する方がはるかに良いアイデアであることは認めます。その代わり。フォルダーの所有者を自分のユーザーアカウントに変更する必要がありました。仮想環境をホーム フォルダーに保存してそのまま使用することもできますが、これをホーム フォルダーの外に分離したいと考えました。&lt;p&gt;Qtile は特定の Python バージョンに関連付けられていないようです。システム Python をベースにした仮想環境を作成することはできなかったのでしょうか?さらに言えば、ソースからコンパイルされたローカルの Python から仮想環境を作成することはできなかったのでしょうか? (私は特定の Python バージョンに対してテストし、そのパフォーマンス特性を比較することに興味があるので、常にこれを行っています。)&lt;p&gt;&amp;gt;次に、フォルダの所有者を通常のユーザー アカウントに変更しました。&lt;p&gt;&amp;gt;次に、qtile をインストールします。&lt;p&gt;&amp;gt; &amp;#x2F;usr&amp;#x2F;share&amp;#x2F;xsessions&amp;#x2F;qtile.desktop を作成し、次の情報を入力しました:&lt;p&gt;これには環境が root によって所有されている必要はありませんか?いずれにせよ、ルート所有として選択されているものはそのままにしておく方が合理的ではないでしょうか? (少なくとも、非特権ユーザーとしてインストールを実行した後は、それらを元に戻してください。)&lt;p&gt;&amp;gt;この後、以前のウィンドウ マネージャーからログアウトし、Qtile の新しいエントリに切り替えました。&lt;p&gt;ランダムなグリーター プログラムは、&amp;#x2F;usr&amp;#x2F;share&amp;#x2F;xsessions の内容を自然に取得するのでしょうか?&lt;p&gt;&amp;gt; Qtile の設定ファイルは ~&amp;#x2F;.config&amp;#x2F;qtile&amp;#x2F;config.py&lt;p&gt;にあるので、他のドットファイルはすべて無視されるのでしょうか?通常の WM&amp;#x2F;DE の選択に関係なく、これを試しても問題ありませんか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stonecharioteer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は Qtile を 4 年以上使用していますが、とても気に入っています。更新された設定について少し前に書いたので、共有しようと思いました。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://tech.stonecharioteer.com/posts/2025/qtile-window-manager/</guid>
-      <pubDate>Fri, 21 Nov 2025 07:41:15 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46002138</comments>
+      <title>小さなRPGを作る</title>
+      <link>https://jslegenddev.substack.com/p/making-a-small-rpg</link>
+      <guid isPermaLink="true">https://jslegenddev.substack.com/p/making-a-small-rpg</guid>
+      <pubDate>Fri, 21 Nov 2025 13:23:16 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46004293</comments>
     </item>
   </channel>
 </rss>

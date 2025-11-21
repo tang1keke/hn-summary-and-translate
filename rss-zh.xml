@@ -6,94 +6,53 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 21 Nov 2025 12:47:41 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Nov 2025 15:22:16 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>FAWK：法学硕士可以编写语言解释器</title>
-      <link>https://martin.janiczek.cz/2025/11/21/fawk-llms-can-write-a-language-interpreter.html</link>
-      <description>&lt;p&gt;如果 AWK 有一流的数组会怎样？ } function parse(arr) { arr[0] = 100 print arr[0] # --&gt; 100, only inside this function } 如果 AWK 有一流的函数和 lambda 会怎样？我愿意支付这个费用。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; FAWK: LLMs can write a language interpreter&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46003144"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://martin.janiczek.cz/2025/11/21/fawk-llms-can-write-a-language-interpreter.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>PNG 中的 EXIF 方向信息不用于图像方向</title>
+      <link>https://bugzilla.mozilla.org/show_bug.cgi?id=1627423</link>
+      <description>&lt;p&gt;Safari 确实尊重图像数据之前出现的 EXIF 方向信息，但 Firefox 和 Chrome 则不然。 eXIf 定义了 eXif 表。 ) 严重性：正常 → S3 Timothy Nikkel (:tnikkel) 更新 • 2 年前 区块：1821750 Timothy Nikkel (:tnikkel) 更新 • 1 年前 区块：1682759 Timothy Nikkel (:tnikkel) 更新 • 1 年前 区块：1904236 Ksenia Berezina [:ksenia] 更新 • 1 年前 区块： 1917547 Ksenia Berezina [:ksenia] 更新 • 1 年前 关键字：webcompat:platform-bug Jeff Muizelaar [:jrmuizel] 评论 5 • 1 年前 这是 PNG-3 https://www. 中指定的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; EXIF orientation info in PNGs isn't used for image-orientation&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46004364"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://bugzilla.mozilla.org/show_bug.cgi?id=1627423'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TeodorDyakov:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所以你正在使用一个工具来帮助你编写代码，因为你不喜欢编码，为了制作一个用于编码（计算机语言）的工具。为什么？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vidarh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一篇有趣的帖子，而且我喜欢用 LLM 进行语言实验（我的 Claude Max 订阅已接近每周限制，因为我的 Ruby 编译器几乎一直在运行会话；Claude 可以修复需要使用 gdb 进行复杂回溯跟踪的问题，尽管有时会出现混乱的代码，并且只要有一个测试套件可以运行，就几乎完全无需帮助即可修复复杂的解析器交互）。&lt;p&gt;但是这是其中一个脚本的 Ruby 版本：&lt;p&gt;&lt;pre&gt;&lt;code&gt; BEGIN {
-      结果 = [1, 2, 3, 4, 5]
-        .filter {|x| x % 2 == 0 }
-        .map {|x| x * x}
-        .reduce {|acc,x|加速器 + x }
-     放置“结果：#{结果}”
-    }
-&lt;/code&gt;&lt;/pre&gt;
-要点是使用“-n”运行脚本switch un 运行 BEGIN&amp;#x2F;END 块并放置隐式“while gets ... end”其余的周围。添加“-a”像 awk 一样自动分割行。添加“-p”还在每次迭代结束时打印 $_。&lt;p&gt;所以这是一个更典型的类似 Awk 的体验：&lt;p&gt;&lt;pre&gt;&lt;code&gt; ruby​​ -pe &amp;#x27;$_.upcase!&amp;#x27; somefile.txt（$_ 具有整行）
-&lt;/code&gt;&lt;/pre&gt;
-或者：&lt;p&gt;&lt;pre&gt;&lt;code&gt; ruby -F, -ane &amp;#x27;$F[1]&amp;#x27; # 提取第二个字段字段 -F 设置要分割的默认字符，-a 添加隐式 $F = $_.split。
-&lt;/code&gt;&lt;/pre&gt;
-这并不是为了贬低他正在做的事情，因为这很有趣。但如果您的目标只是使用更好的 Awk，那么 Ruby 通常是更好的 Awk，因此，Perl 也是如此，对于大多数 Awk 脚本不适合命令行的情况，真正使用 Awk 的唯一原因是它更可能可用。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jamesu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;几个月前，我使用 ChatGPT 将基于 bison 的解析器重写为递归下降，并且对它的表现感到非常惊讶 - 尽管我仍然需要不断提示 AI 修复问题或添加它跳过的元素，最后我可能重写了其中的 20%，因为我对其奇怪地使用 C++ 功能感到不满意，这使得某些部分难以理解。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;artpar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我写了两个&lt;p&gt;jslike（基于acorn的解析器）&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;artpar&amp;#x2F;jslike" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;artpar&amp;#x2F;jslike&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.npmjs.com&amp;#x2F;package&amp;#x2F;jslike" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.npmjs.com&amp;#x2F;package&amp;#x2F;jslike&lt;/a&gt;&lt;p&gt;wang-lang （我无法让 ASI 在这个基于近邻的语法中像 javascript 一样工作)&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.npmjs.com&amp;#x2F;package&amp;#x2F;wang-lang" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.npmjs.com&amp;#x2F;package&amp;#x2F;wang-lang&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;artpar.github.io&amp;#x2F;wang&amp;#x2F;playground.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;artpar.github.io&amp;#x2F;wang&amp;#x2F;playground.html&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;artpar&amp;#x2F;wang" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;artpar&amp;#x2F;wang&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qsort:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;金钱镜头：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;Janiczek&amp;#x2F;fawk" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;Janiczek&amp;#x2F;fawk&lt;/a&gt;&lt;p&gt;纯粹是你在学校写的那种解释性实现，尽管如此，我还是有权利抱怨的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;slybot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我使用 awk 完成了 AoC 2021 直到 D10，这很有趣，但并不容易，无法进一步进行：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;nusretipek&amp;#x2F;Advent-of-Code-2021" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;nusretipek&amp;#x2F;Advent-of-Code-2021&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;skydhash:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;值得赞扬的努力，但我期望至少有一个演示，它将展示工作代码（即使它很hacky）。这就像有人在没有演奏过乐谱的情况下谈论它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;keepamovin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的！我目前正在使用 copilot + antigravity 来实现一种具有人体工程学语法和语义的语言，该语言可以干净地降低为针对多个平台的机器代码，重点关注安全性、确定性、可审计性和快速失败错误。这比我想象的要多，但法学硕士非常有能力。&lt;p&gt;我梦想着用 JS 来机器代码，但后来想，为什么不从头开始并拥有我想要的东西呢？这&lt;i&gt;很&lt;/i&gt;很有趣。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Y_Y:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;多年来，我一直在尝试让法学硕士制作 Racket “hashlangs”†，既适用于简单的几乎 Lisp 语言，也适用于真正的不同语言，例如 C。这绝对是可能的，raco 有 C、Python、J、Lua 等的软件包。&lt;p&gt;无论如何，到目前为止，我还没有能够从任何明显的模型中获得任何好的结果，希望他们最终足够聪明。&lt;p&gt;† &lt;a href="https:&amp;#x2F;&amp;#x2F;williamjbowman.com&amp;#x2F;tmp&amp;#x2F;how-to-hashlang&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;williamjbowman.com&amp;#x2F;tmp&amp;#x2F;how-to-hashlang&amp;#x2F;&lt;/a&gt;&lt;p&gt;‡ &lt;a href="https:&amp;#x2F;&amp;#x2F;pkgd.racket-lang.org&amp;#x2F;pkgn&amp;#x2F;search?tags=language" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;pkgd.racket-lang.org&amp;#x2F;pkgn&amp;#x2F;search?tags=语言&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://martin.janiczek.cz/2025/11/21/fawk-llms-can-write-a-language-interpreter.html</guid>
-      <pubDate>Fri, 21 Nov 2025 10:28:49 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46003144</comments>
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mzur:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;浏览器开始根据 EXIF 旋转图像真是太痛苦了。我维护一个图像注释工具，突然之间，根据用户使用的浏览器，图像以不同的方式显示给用户。然后你必须克服各种困难才能再次忽略 EXIF 方向。在某些情况下，出于安全原因，您无法查看方向是否已更改。控制这一点的唯一方法是通过 CSS 属性，该属性仅在元素位于 DOM 中时才起作用。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alexdbird:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我个人喜欢 PNG 不编码方向的现状。当我调试时，我可以转储 PNG，并且我知道我正在以与代码相同的方式查看这些位！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pupppet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果事后得到支持，人们是不是会发现他们的一些 PNG 突然颠倒了？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Linkd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;EXIF 定位一直是一个难以处理的难题。特别是 HEIC 不断更新 libheifs 并导致各种兼容性问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;postalcoder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为一名前元数据完成主义者，当我想到我与 EXIF 元数据、供应商特定元数据以及不同软件支持或拒绝支持其中任何一项的方式的斗争时，我的思绪开始游离。&lt;p&gt;将图像提取到 Apple Photos 中时情况会变得更糟，你必须面对你知道永远不会修复的剪纸错误。&lt;p&gt;我喜欢 ExifTool。这是最伟大的实用程序之一。它几乎适用于每个文件
+我扔向它。但阅读其输出可能会令人不安。这就像瞥见了 eudaimonia，却被 Apple Photos 误读了你收藏中的每个镜头的现实粗暴地打断了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;donatj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的。我不知道这是一件事。在像 PNG 这样的无损格式中，方向信息似乎不太有用。例如，这在 JPEG 中是有意义的，因为旋转和重新编码会产生损耗，并且会稍微降低图像质量。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mightysashiman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么错误报告会在 hn 上共享？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LiamPowell:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;另请参阅：VLC 错误错误地将右侧作物应用为左侧作物 [1]。这个错误报告来自 2023 年，但据我所知，这个错误自从 VLC 存在以来就一直存在。&lt;p&gt;我总是很惊讶地看到这样的错误，其中规范中非常容易测试的部分似乎没有经过测试，最终成为一个错误，直到很多年后才得到修复。&lt;p&gt;[0]: &lt;a href="https:&amp;#x2F;&amp;#x2F;code.videolan.org&amp;#x2F;videolan&amp;#x2F;vlc&amp;#x2F;-&amp;#x2F;问题&amp;#x2F;28279" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;code.videolan.org&amp;#x2F;videolan&amp;#x2F;vlc&amp;#x2F;-&amp;#x2F;问题&amp;#x2F;28279&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://bugzilla.mozilla.org/show_bug.cgi?id=1627423</guid>
+      <pubDate>Fri, 21 Nov 2025 13:29:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46004364</comments>
     </item>
     <item>
-      <title>圆桌会议 (YC S23) 正在招聘两名销售开发代表 (SDR)</title>
-      <link>https://www.ycombinator.com/companies/roundtable/jobs/irJTEsg-sales-development-representative</link>
-      <description>&lt;p&gt;D’s，圆桌会议为我们客户的平台提供无摩擦、持续的验证。 Roundtable 是一家研究和部署公司，致力于构建数字身份的人类证明层。圆桌会议致力于开展高影响力的研究，并将这些研究成果转化为机器人检测、欺诈预防和持续身份验证方面的研究成果。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Roundtable (YC S23) Is Hiring Two Sales Development Representatives (SDRs)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46003686"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/roundtable/jobs/irJTEsg-sales-development-representative'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.ycombinator.com/companies/roundtable/jobs/irJTEsg-sales-development-representative</guid>
-      <pubDate>Fri, 21 Nov 2025 12:00:02 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46003686</comments>
+      <title>从头开始构建最小可行的 Armv7 模拟器</title>
+      <link>https://xnacly.me/posts/2025/building-a-minimal-viable-armv7-emulator/</link>
+      <description>&lt;p&gt;从头开始构建一个最小可行的 Armv7 模拟器 20258336 年 11 月 19 日 Words40 分钟阅读目录标签：ArmRustTip 或 TLDR - 我在 Rust 中构建了一个微型、零依赖的 armv7 用户空间模拟器 我在 1. 3ms 内编写了一个最小可行的 armv7 模拟器（因此，stinkarm 比本机 armv7 执行速度慢约 100-1000 倍）。 （“{} 的汇编程序失败”，输入。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Building a Minimal Viable Armv7 Emulator from Scratch&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46004386"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://xnacly.me/posts/2025/building-a-minimal-viable-armv7-emulator/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;syntex:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我看到那位作者正在为圣诞节装饰网站:)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dosinga:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;乍一看，我读了《最小可行军队》——对于一个有抱负的邪恶策划者来说，这将是一本好书&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anthk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这让我想起了用 Perl 编写的最小 MIPS1 解释器，能够运行旧的静态链接 Linux 二进制文件：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;pts&amp;#x2F;pts-mips-emulator" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;pts&amp;#x2F;pts-mips-emulator&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://xnacly.me/posts/2025/building-a-minimal-viable-armv7-emulator/</guid>
+      <pubDate>Fri, 21 Nov 2025 13:30:36 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46004386</comments>
     </item>
     <item>
-      <title>惠普和戴尔禁用笔记本电脑 CPU 内置的 HEVC 支持</title>
-      <link>https://arstechnica.com/gadgets/2025/11/hp-and-dell-disable-hevc-support-built-into-their-laptops-cpus/</link>
-      <description>&lt;p&gt;配备第六代 Intel Core 及更高版本处理器的笔记本电脑具有对 HEVC 解码和编码的内置硬件支持。例如，戴尔 16 Plus 二合一的产品页面禁用了 HEVC 硬件解码，但没有提及 HEVC。检查您首选的视频播放器是否支持 HEVC 软件。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; HP and Dell disable HEVC support built into their laptops' CPUs&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46002989"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://arstechnica.com/gadgets/2025/11/hp-and-dell-disable-hevc-support-built-into-their-laptops-cpus/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ZeroGravitas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于提到的第一个设备，它有一个独立的 Nvidia GPU，它还支持硬件中的 HEVC 编码和解码，我认为这也被禁用了？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fransje26:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;真的吗？&lt;p&gt;啊好吧。那时就没有惠普和戴尔笔记本电脑了。这么久！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是否可以只在 Microsoft 商店购买 HEVC 扩展来启用它？&lt;p&gt;我有一台没有许可证的电脑，我必须购买它才能让一切正常工作。这与其说是一个问题，不如说是一个烦恼，它只花了 99 美分购买。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BLKNSLVR:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我假设它在固件中被禁用。有没有办法重新启用它？固件可以降级吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;egorfine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这不是已经卖给我作为客户的东西了吗？我不明白公司如何删除已经卖给我的功能之一。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rs186:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道这些决定是如何做出的？为了节省几分钱而忽略这些东西却破坏了您的用户体验？&lt;p&gt;这就像三星使用了错误的“虚拟接近传感”技术一样。而不是一些较便宜的手机（包括 S 系列 FE 手机）上的真正的接近传感器，这会导致对接拨号：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;三星&amp;#x2F;评论&amp;#x2F;o56uz4&amp;#x2F;s20_fe_pocket_keeps_opening_up_emergency_call&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;samsung&amp;#x2F;comments&amp;#x2F;o56uz4&amp;#x2F;s20_fe_pock...&lt;/a&gt;——说真的，这是他们需要节俭的地方吗？&lt;p&gt;或者，虽然这不仅仅是几美元的问题——全部ThinkPad T 系列屏幕的亮度低，颜色范围为 45% NTSC，性能很糟糕，除非您的 IT 部门足够好，购买了升级屏幕的版本，这几乎保证永远不会发生。&lt;p&gt;我以前很讨厌 Apple，但现在，我很欣赏他们在东西上不便宜，这样用户就不需要仔细检查规格表中的特定内容并处理混乱的情况。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果可以支付 0.24 美元来启用它，那就更容易接受了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nicolaslem:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇文章对技术细节有些简单。有人可以阐明如何禁用硬件解码吗？他们是否会烧毁 efuse，在固件或操作系统中禁用它？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ksec:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;问题是双重浸入。如果 Intel 和 AMD 代表所有 x86 笔记本电脑的 100%。理论上，英特尔和 AMD 将一次性支付 HEVC 费用，所有专利池的 IRRC 费用上限为 1 亿美元。所有 x86 设备都将拥有 HEVC 许可证。惠普和戴尔不应该为此付费。&lt;p&gt;实际上，价值链中的每个人似乎都被迫付费，英特尔、AMD、Nvidia、惠普、戴尔，甚至还有浏览器和软件。&lt;p&gt;幸运的是，H.264 High Profile 已经在许多国家/地区获得了专利权，很快在美国也将获得专利权。希望 AV2 这次能真正齐心协力。那么世界将只是以 H.264 作为基准，以 AV2 来实现高质量。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wongarsu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;例如，会议程序中没有背景模糊，系统性能显着下降&lt;p&gt;那么惠普和戴尔这两家以商务笔记本电脑闻名的公司，出售一些视频会议性能下降的笔记本电脑，所有这些都是为了每台笔记本电脑节省 0.24 美元？戴尔甚至没有在规格表中提及这一点，也没有直接列出受影响的型号？&lt;p&gt;我不禁认为，“我的新戴尔笔记本电脑在 Teams 上表现很糟糕，以前的规格较差的笔记本电脑还好”，这对我的声誉造成了损害。长期来看会比 0.24 美元贵很多&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmrm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也许我在字里行间阅读，但当受影响的机器是 900 美元的专业笔记本电脑时，谈论许可证价格不是很荒谬吗？&lt;p&gt;我的意思是，我明白在廉价的单板计算机中，但这是无稽之谈。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;conartist6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;强制将它们全部播放为 480p 视频，并将它们链接回制造商为了节省几美分而使它们瘫痪的信息。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;HPsquared:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就像那些需要付费才能使用加热座椅的汽车一样。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://arstechnica.com/gadgets/2025/11/hp-and-dell-disable-hevc-support-built-into-their-laptops-cpus/</guid>
-      <pubDate>Fri, 21 Nov 2025 10:01:37 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46002989</comments>
-    </item>
-    <item>
-      <title>Qtile 窗口管理器：Python 驱动的平铺体验</title>
-      <link>https://tech.stonecharioteer.com/posts/2025/qtile-window-manager/</link>
-      <description>&lt;p&gt;我想从那时起我就成长了。此外，我不同意安装 Qtile 的默认方式。然后，是时候安装 qtile 了。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Qtile Window Manager: A Python-Powered Tiling Experience&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46002138"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://tech.stonecharioteer.com/posts/2025/qtile-window-manager/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zahlman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;此外，我不同意安装 Qtile 的默认方式。原则上，我从不 sudo pip install 任何东西。相反，我问了我的朋友 Karthikeyan Singaravel，他是一位 Python 核心开发人员，他建议使用 Ubuntu 的 deadsnakes PPA 来安装我选择的任何版本的 Python。我尝试自己编译 python 3.10，安装到 &amp;#x2F;opt&amp;#x2F;qtile&amp;#x2F;使用configure --prefix &amp;#x2F;opt&amp;#x2F;qtile&amp;#x2F;在源代码的配置阶段。然而，我承认使用 deadsnakes 是一个更好的主意，因为我可以在“opt”qtile“中创建一个基于 python3.10 的虚拟环境。反而。我必须将该文件夹的所有者更改为我的用户帐户。请注意，我可以将虚拟环境存储在我的主文件夹中并仅使用它，但我想将其隔离在我的主文件夹之外。&lt;p&gt;Qtile 似乎并未与特定的 Python 版本绑定。难道就不能基于Python系统做一个虚拟环境吗？就此而言，您不能从本地源代码编译的 Python 创建一个虚拟环境吗？ （我一直这样做，因为我有兴趣针对特定的 Python 版本进行测试并比较它们的性能特征。）&lt;p&gt;&gt;然后，我将该文件夹的所有者更改为我的常规用户帐户。&lt;p&gt;&gt;然后，是时候安装 qtile 了。&lt;p&gt;&gt;我创建了 &amp;#x2F;usr&amp;#x2F;share&amp;#x2F;xsessions&amp;#x2F;qtile.desktop 并用以下内容填充它：&lt;p&gt;这不需要环境由 root 拥有吗？无论如何，将“opt”中的东西保留为 root 拥有不是更有意义吗？ （或者至少，在以非特权用户身份运行安装后将它们更改回来。）&lt;p&gt;&gt;此后，我退出之前的窗口管理器并切换到 Qtile 的新条目。&lt;p&gt;任何随机欢迎程序都会自然地获取“usr”共享 xsessions 的内容吗？&lt;p&gt;&gt; Qtile 的配置文件位于 ~&amp;#x2F;.config&amp;#x2F;qtile&amp;#x2F;config.py&lt;p&gt;那么它会忽略所有其他点文件吗？无论我通常选择什么 WM&amp;#x2F;DE，我都可以安全地尝试一下吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stonecharioteer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我使用 Qtile 已有 4 年多了，我非常喜欢它。我不久前写过关于我更新的配置的文章，并认为我应该分享。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://tech.stonecharioteer.com/posts/2025/qtile-window-manager/</guid>
-      <pubDate>Fri, 21 Nov 2025 07:41:15 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46002138</comments>
+      <title>制作一个小型角色扮演游戏</title>
+      <link>https://jslegenddev.substack.com/p/making-a-small-rpg</link>
+      <guid isPermaLink="true">https://jslegenddev.substack.com/p/making-a-small-rpg</guid>
+      <pubDate>Fri, 21 Nov 2025 13:23:16 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46004293</comments>
     </item>
   </channel>
 </rss>
