@@ -6,279 +6,110 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 24 Nov 2025 02:04:35 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Nov 2025 03:58:46 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Show HN：我用 C 语言编写了一个最小内存分配器</title>
-      <link>https://github.com/t9nzin/memory</link>
-      <description>&lt;p&gt;概述 该项目从头开始实现一个内存分配器，使用 sbrk 进行小型分配，使用 mmap 进行大型分配。请注意，该分配器不是线程安全的。 c# 分配器 └── 测试 ├── 基准测试。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: I wrote a minimal memory allocator in C&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46027962"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/t9nzin/memory'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>我们停止了路线图工作一周并修复了 189 个错误</title>
+      <link>https://lalitm.com/fixits-are-good-for-the-soul/</link>
+      <description>&lt;p&gt;这意味着要问诸如“我们应该构建什么”之类的大问题。修复让我找回了职业生涯早期的感觉。当问题不是“我们应该做什么”时，工作中就会有一种深深的满足感。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; We stopped roadmap work for a week and fixed 189 bugs&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46029772"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://lalitm.com/fixits-are-good-for-the-soul/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;achierius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来不错！虽然我不得不说，即使是小分配，你也应该避免 sbreak —— 显然它很慢，但除此之外，你还必须面对这样一个事实：它本质上是一个全局单例，并引入了许多你可能没有想到的微妙的失败案例，而且你无论如何也无法真正解决这些失败案例。最好映射出一些内存块并自己进行子分配。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;quibono:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我讨厌这样的情况：我对 Show HN 帖子的第一反应常常是愤世嫉俗地寻找公然使用人工智能代码的迹象。&lt;p&gt;但我认为这里的情况并非如此。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/t9nzin/memory</guid>
-      <pubDate>Sun, 23 Nov 2025 22:25:36 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46027962</comments>
+&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tait1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们在我的公司举办过类似的小型小型比赛，这对于鼓舞士气总是很有帮助的。以轻松、半竞争的方式庆祝微小的胜利对于提升友情大有帮助。爱它！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jchrisa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我刚刚在解决技术债务方面度过了一段非常有趣的时光，从代码库中删除了大约 15,000 行代码，现在代码库有大约 45,000 行实现和 50,000 行测试。这是通过从本土的身份验证系统迁移到 Clerk，以及整合一些 Cloudflare 工作人员和其他基本内容来实现的。不像一开始创造技术债务那么有趣，但更令人满意。如果您喜欢阅读此类内容，请使用开源存储库：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;VibesDIY&amp;#x2F;vibes.diy&amp;#x2F;pull&amp;#x2F;582" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;VibesDIY&amp;#x2F;vibes.diy&amp;#x2F;pull&amp;#x2F;582&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisMarshallNY:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢这个主意，但是这一行：&lt;p&gt;&lt;i&gt;&gt; 1) 没有错误应该花费超过 2 天的时间&lt;/i&gt;&lt;p&gt;这很奇怪。我几乎不可能估计修复 bug 需要多长时间，直到工作完成。&lt;p&gt;也就是说，除非修复 bug 需要大量重构&amp;#x2F;重写，否则我无法想象花费超过一天的时间。&lt;p&gt;此外，我倾向于按优先级&amp;#x2F;严重性而不是难度来攻击 bug。&lt;p&gt;一些最严重的 bug 通常很容易找到。&lt;p&gt;一旦找到原因一旦出现错误，修复通常指日可待。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hastily3114:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们有时也会这样做，我喜欢它。当我处理自己的项目时，我总是在添加任何新功能之前停下来重构并修复问题。我希望公司能够看到这样做的价值&lt;p&gt;也喜欢谦虚的吹牛。 “我刚刚关闭了第 12 个错误”后来“12 是一个人关闭的 bug 的最大数量”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BurningFrog:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这对我来说很奇怪...&lt;p&gt;我学习这一行业并且通常有效的方式是，错误修复总是第一位的！&lt;p&gt;只有旧功能正常工作，你才能开发新功能。&lt;p&gt;这对于我所在的团队来说效果很好。拥有一个（AFAYK）无错误的代码库非常有用！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ls-a:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一周内出现 189 个错误。之后有多少员工辞职？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;entropie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想看看其中一些错误修复，其中一个链接的修复 [1] 对我来说更像是一项功能。所以也许这应该是“低优先级”的一周。问题，或类似的事情。&lt;p&gt;我并不是想听起来消极，我认为这是一个好主意。我在家时常做这样的事情。只需花一天时间修理和修理东西即可。积累的一切。&lt;p&gt;1：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;google&amp;#x2F;perfetto&amp;#x2F;issues&amp;#x2F;154" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;google&amp;#x2F;perfetto&amp;#x2F;问题&amp;#x2F;154&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直不明白为什么错误的处理方式与新功能的处理方式不同。如果存在错误，旧功能就永远无法完成。时间成本和收益应该同等考虑。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;julianlam:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很久以前，我们公司就这么做了（当时我们正在制作愚蠢的 Facebook 游戏，还记得那些吗？）&lt;p&gt;这是迄今为止最有趣、最富有成效、最充实的一周。&lt;p&gt;当我创办自己的公司时，它继续塑造了我们的发展战略进程。定期处理技术债务，并在其他人也这样做时积极鼓掌。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://lalitm.com/fixits-are-good-for-the-soul/</guid>
+      <pubDate>Mon, 24 Nov 2025 02:36:54 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46029772</comments>
     </item>
     <item>
-      <title>µcad：新的开源编程语言，可以生成 2D 草图和 3D</title>
-      <link>https://microcad.xyz/</link>
-      <description>&lt;p&gt;µcad 编程语言欢迎访问 µcad 网站。 BookCodePrintReleaseUpdatesVideoAlpha Release 0。今天早上，我们只是想推送一个版本，最终陷入了问题#289…发布、更新Spirograph什么乍一看可能像是一个极简主义的圣诞装饰，是一个由五个部分组成的Spirograph，我们成功地…代码、打印、更新Lego BricksLego BricksCode 的实时编码视频、VideoGears GearsCode 的实时编码视频、视频。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; µcad: New open source programming language that can generate 2D sketches and 3D&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46027216"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://microcad.xyz/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>红蜂</title>
+      <link>https://computer.rip/2025-11-22-RuBee.html</link>
+      <description>&lt;p&gt;RuBee 是 Visible Assets Inc. 的产品。不过，VAI 创造了“可见性网络”一词来描述 RuBee。但这听起来并不一定是一个优势。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; RuBee&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46029932"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://computer.rip/2025-11-22-RuBee.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deckar01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这似乎没有约束求解器或任何集成约束求解器的记录计划。我喜欢数学，但我不喜欢维护三角墙来使琐碎的约束参数化。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;awinter-py:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;尝试过 openscad 和 cadquery 来处理一些几何迭代项目，发现它们很笨重。这不仅仅是因为我缺少用户界面；还因为我缺少用户界面。功能、约束和几何内核不如 onshape（我用过一点）强大，而且可能比我没有使用过的 fusion 360 落后好几光年。&lt;p&gt;即使是 freecad，一个基于 UI 的 oss cad，对于初学者到中级用户来说也不太符合人体工程学，尽管它在过去几年中已经取得了长足的进步。&lt;p&gt;我很兴奋因为最终会出现一个很好的开源 CAD 选项，无论是纯语言还是语言加 GUI，但我也越来越多地支持团队“工具对您的生产力很重要”。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aclindsa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;openscad 最好的事情之一是能够立即在 3D 视图中查看代码更改的结果（我所做的就是在 neovim 中使用 :w 保存文件，然后 openscad 重新渲染它）。能够像这样进行交互使得迭代设计变得更快更容易。&lt;p&gt;我浏览了 ucad 网站和书籍 10 分钟，但一直无法弄清楚 ucad 是否有类似的东西？&lt;p&gt;ucad 的语言有很多看起来很简洁的东西，但我需要重新创建像 openscad 的工作流程这样的东西才能考虑切换。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cke:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这几乎感觉就像回到了老式 Autocad。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;theamk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么.. OpenSCAD，但具有强类型和 Rust 风格的语法？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;octoberfranklin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么它相对于 OpenSCAD 的最大优势是什么？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;actinium226:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个好主意，我非常喜欢其中的一些语法，但是这是做什么用的呢？由于多种原因，我很难看到它比传统的基于草图的 CAD 更受欢迎，那么它只是一个玩具吗？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://microcad.xyz/</guid>
-      <pubDate>Sun, 23 Nov 2025 20:51:22 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46027216</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jjmarr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;我至少有一些读者听到一个男人的声音说“检测到政府手机”。会引起明显的反应。&lt;p&gt;可以将其重新制作为音频剪辑，以吓唬前政府雇员吗？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://computer.rip/2025-11-22-RuBee.html</guid>
+      <pubDate>Mon, 24 Nov 2025 03:08:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46029932</comments>
     </item>
     <item>
-      <title>用于隔离、并行代理开发的桌面应用程序</title>
-      <link>https://github.com/coder/mux</link>
-      <description>&lt;p&gt;切线探索：在远离主要工作的 mux 中启动切线 功能 具有 git 分歧集中视图的独立工作区 本地：本地计算机上的 git 工作树（文档） SSH：远程服务器上的常规 git 克隆（文档） 多模型（sonnet-4-*、grok-*、gpt-5-*、opus-4-*） 支持本地 LLM 的 Ollama（文档） 支持 LLM 长尾的 OpenRouter（文档） VS代码扩展：直接从 VS Code 跳转到 mux 工作区（文档） 支持 UI 和按键绑定，以有效管理一组代理 丰富的 markdown 输出（美人鱼图、LaTeX 等）。开发 请参阅代理。有关详细信息，请参阅许可证。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A desktop app for isolated, parallel agentic development&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46027947"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/coder/mux'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>B 树：为什么每个数据库都使用它们</title>
+      <link>https://mehmetgoekce.substack.com/p/b-trees-why-every-database-uses-them</link>
+      <guid isPermaLink="true">https://mehmetgoekce.substack.com/p/b-trees-why-every-database-uses-them</guid>
+      <pubDate>Mon, 24 Nov 2025 02:35:17 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46029765</comments>
+    </item>
+    <item>
+      <title>火炬传递——我作为加密官 4 的最后一次根 DNSSEC KSK 仪式</title>
+      <link>https://technotes.seastrom.com/2025/11/23/passing-the-torch.html</link>
+      <description>&lt;p&gt;DNS就是在这样的环境下应运而生的。早期版本很难部署。出于这个原因，ICANN 决定建立一个框架来促进信任和透明度。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Passing the Torch – My Last Root DNSSEC KSK Ceremony as Crypto Officer 4&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46029649"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://technotes.seastrom.com/2025/11/23/passing-the-torch.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;asdev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;进行相同的处理，只是您获得终端会话而不是使用自定义 UI 覆盖它： &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;built-by-as&amp;#x2F;FleetCode" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;built-by-as&amp;#x2F;FleetCode&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nojs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这看起来非常有用。&lt;p&gt;我喜欢类似的东西，它可以让我插入实际的 Claude Code&amp;#x2F;Codex 及其原始代理循环、提示等，并且自动处理多路复用、工作树、隔离等（看起来这个工具不支持）。因为我认为 CC 的许多功能来自于他们对工具所做的工程，而不是底层模型。&lt;p&gt;人们现在是如何做到这一点的？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ttoinou:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我从未见过提及的是所有特工＆#x2F; CLI 工具似乎可以修改本地文件。这使得编辑当前文件、使用 git 工作、要求仅修改文件的某些部分等变得很麻烦，因为代理不断地读取和写入我们也在访问的文件。这通常可以通过使用 git worktree 来解决，但此解决方案需要为每个新代理提供 1 个新文件夹名称和分支，并且每个文件夹都有自己唯一的名称和其他问题。&lt;p&gt;虽然它非常强大，但我希望有一个更快的“内存中”解决方案。代理解决方案，其中每个代理在其自己的 RAM 中保存它建议应用以解决当前问题的文件修改列表（“补丁”）。然后，我们可以根据我们正在做的事情应用该补丁，如果我们之前有其他补丁要应用等。&lt;p&gt;此外，即使代理可以并行工作，有时我们面前只有其中一个，如果我们已经知道我们要问的下一件事是什么，我们仍然会等待上一个任务完成，然后再发送新的提示。我不确定如何改进这个异步问题，我想我可以并行启动多个代理，但我不会在不同代理之间共享聊天历史记录，而且当我工作时，我通常会处理相互依赖的相关问题，因此我确实需要在分析代码库和创建补丁的代理之间存在某种全局或共享上下文。&lt;p&gt;有人对如何改进这些人工智能编码代理工作流程有想法吗？也许是最新版本的 GitButler &lt;a href="https:&amp;#x2F;&amp;#x2F;gitbutler.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;gitbutler.com&amp;#x2F;&lt;/a&gt; 但我不确定，它确实在后台使用了 git worktree&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/coder/mux</guid>
-      <pubDate>Sun, 23 Nov 2025 22:24:23 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46027947</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shruubi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不确定拥有两个“高度安全的站点”的地理位置有多么不同。在同一大陆上。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://technotes.seastrom.com/2025/11/23/passing-the-torch.html</guid>
+      <pubDate>Mon, 24 Nov 2025 02:16:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46029649</comments>
     </item>
     <item>
-      <title>爱荷华市免费提供公交车。交通畅通了，空气也畅通了</title>
-      <link>https://www.nytimes.com/2025/11/18/climate/iowa-city-free-buses.html</link>
-      <guid isPermaLink="true">https://www.nytimes.com/2025/11/18/climate/iowa-city-free-buses.html</guid>
-      <pubDate>Sun, 23 Nov 2025 22:06:44 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46027833</comments>
-    </item>
-    <item>
-      <title>粒子生命 – 沙盒科学</title>
-      <link>https://sandbox-science.com/particle-life</link>
-      <description>&lt;p&gt;半径所有类型世界设置粒子数颜色数深度限制墙设置：矩形圆形无排斥包裹屏幕x1。 5 x4 x5 矩形尺寸 xyPhysics 设置 排斥力 力因子 摩擦因子 随机化器设置 最小值半径图形设置 常规设置：圆形 粒子大小 3D 设置：深度大小 深度不透明度 最小。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Particle Life – Sandbox Science&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46027722"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://sandbox-science.com/particle-life'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>问 HN：助听器佩戴者，什么是热的？</title>
+      <link>https://news.ycombinator.com/item?id=46029699</link>
+      <description>&lt;p&gt;如果您最近升级或一直在考虑升级助听器，那么您目前会选择什么助听器。中度损耗，已佩戴多年，喜欢聆听音乐和大自然，但在会议和嘈杂环境中也需要帮助。不担心费用，并希望在退休之前从工作保险中获得更多优惠。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ask HN: Hearing aid wearers, what's hot?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46029699"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46029699'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;skulk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道是否可以用这些构建块对自我复制进行编码。就像非常简单的类似 RNA 的分子一样，如果在“营养物”中给予足够的时间，它们就会形成。丰富的环境，可以创建自身的副本。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LoganDark:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常酷，但由于某种原因在我的 120Hz 显示器上锁定为 60FPS。找不到修复它的设置。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;internetguy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;可能是可视化自动机的紧急属性的一种很酷的方法&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://sandbox-science.com/particle-life</guid>
-      <pubDate>Sun, 23 Nov 2025 21:54:32 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46027722</comments>
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;GianFabien:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;使用 Advance72（由 Sonova 制造）具有蓝牙功能，使使用手机变得轻而易举。听力远程应用程序允许我覆盖听力学家配置的音量、聆听模式和均衡器设置。&lt;p&gt;恕我直言，可充电型号不值得额外付费。在典型的 5 年更换周期中，电池将不再保持早期的电量。 312电池价格便宜，备件携带方便。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mixmastamyk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;想要像苹果那样的东西，但根本不需要苹果或应用程序。  有人制作过可以在 Linux 上运行的东西吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;math:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不是助听器佩戴者，但我遇到了 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.envoymedical.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.envoymedical.com&amp;#x2F;&lt;/a&gt; 在投资研究活动期间。他们似乎拥有完全植入式设备的领先候选者。 FDA 突破性设备称号。我对任何助听器佩戴者对他们正在开发的产品的反应感兴趣。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shmoe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不知道为什么这仅针对聋人，&lt;p&gt;形容词
+1. 发烧或体温过高。&lt;p&gt;希望有帮助！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jlev1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我有中度至重度听力损失，从 4 岁起就佩戴助听器。我目前使用 Oticon Opn1，并自 2017 年以来一直使用 Oticons（并于 2022 年购买了新的），它们非常棒。我发现在嘈杂环境中的音质比我所拥有的任何其他辅助设备都要好得多，例如，对餐馆中的声音的感知要好得多。我很少需要摆弄音量控制，事实上，除了主程序之外，甚至不需要使用任何其他设置 - 我发现无论核心程序在做什么，基本上都是我想要的。&lt;p&gt;我也非常欣赏它们可以本机连接到 iPhone（这也是我拥有 iPhone 的主要原因）。这使得打电话、听音乐和播客变得非常容易。 （直到 2017 年，我一直害怕打电话。）&lt;p&gt;实际上，我在 2022 年曾短暂尝试过 Phonaks，但讨厌它们。有很多控件需要摆弄（有些控件的名称奇怪地不直观），但这意味着我不断地尝试调整它，并且很少能够只存在于当下。我发现他们在嘈杂的环境中表现明显更差——我基本上无法在餐馆里交谈。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;retrac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我从九十年代童年起就佩戴助听器。  中度倾斜至严重损失。  自均衡模拟时代以来，我们经历了所有的技术。&lt;p&gt;有一段时间，就像过去 15 到 20 年一样，自从助听器采用 DSP 以来，我对每一代新产品都没有留下太深刻的印象。  冒着听起来有点像广告的风险，今年情况发生了变化。&lt;p&gt;我有新的奥迪康意图。  RIC 风格的援助。  他们拥有我所经历过的最好的空间意识。    它们具有相当多的方向性——每个都有加速计和三个麦克风。   我必须把方向性的强度调低一点。  当我转过头而我没有听到身后的声音时，我感到很惊讶。  但这是以环境噪音增加而导致信号减少为代价的。&lt;p&gt;基于机器学习的降噪技术也比前几代产品有所改进。&lt;p&gt;它们有音乐模式。  它放弃了所有语音重新映射和降噪功能，只是让人感觉声音很大。  这是某种感知算法：就我而言，当我调高音量时，它会变得越来越高音，因为只有在最大音量时我才能听到那些高频。  同时功率限制在 95 dB SPL，所以我知道我不会吹耳朵。  我曾经佩戴耳罩式耳机，但现在我更喜欢助听器。   不用担心声音是否太大真是太好了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bensmoif:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;接下来......我的听力学家上周和我进行了一次重要的谈话，我想我应该照顾我的听力......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;remh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很抱歉，我无法回答您的问题，但我想知道是否有人在第一副耳机中使用 AirPods Pro 3 作为助听器，或者用 AirPods 取代了传统助听器？
+我正在考虑为一位不愿佩戴传统耳机但愿意佩戴 AirPods 的家庭成员买一双。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46029699</guid>
+      <pubDate>Mon, 24 Nov 2025 02:25:39 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46029699</comments>
     </item>
     <item>
-      <title>Liva AI (YC S25) 正在招聘</title>
-      <link>https://www.ycombinator.com/companies/liva-ai/jobs/fYP8QP8-growth-intern</link>
-      <description>&lt;p&gt;我们正在积极招聘社区发展实习生。您将帮助我们在 Liva AI 培育社区，重点是建立大型在线社区。我们正在通过建立世界上最丰富的人类语音和视频数据库来解决这个问题，为下一代现实人工智能提供动力。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Liva AI (YC S25) Is Hiring&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46028046"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/liva-ai/jobs/fYP8QP8-growth-intern'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.ycombinator.com/companies/liva-ai/jobs/fYP8QP8-growth-intern</guid>
-      <pubDate>Sun, 23 Nov 2025 22:36:07 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46028046</comments>
+      <title>Cloudflare 中断是一件好事</title>
+      <link>https://gist.github.com/jbreckmckye/32587f2907e473dd06d68b0362fb0048</link>
+      <description>&lt;p&gt;这可能是一件好事。受到影响的不仅仅是 Twitter 和英雄联盟等“微不足道”的东西。就像种植一种香蕉几乎导致香蕉灭绝一样，我们正在走向一个没有数字基础设施就无法生存的社会；以及没有两三个关键参与者就无法运行的数字基础设施。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Cloudflare outage was a good thing&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46029908"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://gist.github.com/jbreckmckye/32587f2907e473dd06d68b0362fb0048'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://gist.github.com/jbreckmckye/32587f2907e473dd06d68b0362fb0048</guid>
+      <pubDate>Mon, 24 Nov 2025 03:04:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46029908</comments>
     </item>
     <item>
-      <title>日落超级专家</title>
-      <link>https://supermaven.com/blog/sunsetting-supermaven</link>
-      <description>&lt;p&gt;2025 年 11 月 21 日日落 Supermaven 我们将在可预见的未来为现有客户提供免费的自动完成推理。在可预见的将来，我们将为现有客户提供免费的自动完成推理。我们将继续为这些现有客户免费提供自动完成推理。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Sunsetting Supermaven&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46028033"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://supermaven.com/blog/sunsetting-supermaven'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Gricha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;安息吧。 Supermaven 对 Neovim 的制表符补全功能有很大的支持，肯定会怀念这一点。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pfych:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Supermaven 仍然是最聪明的我用过的最好的选项卡自动完成功能。遗憾的是，零个竞争对手可以接近我们的“聪明”程度。它的建议是有感觉的。所有其他选项卡自动完成 AI 都让人感到烦人，而且几乎总是妨碍我。&lt;p&gt;不久前，当 Supermaven 的 JetBrains 插件损坏时，我就停止使用 Supermaven，唯一的修复方法是每次 IDE 更新时手动编辑 java 文件:(&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hahn-kev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Supermaven 太棒了 RIP&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pixelready:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有没有人推荐类似的高质量、超快速选项卡自动完成 VSCode 的 LLM，无需切换到 Cursor？我对 Claude pro + VSCode 的代理修补相当满意（主要是使用计划模式），但 Supermaven 填补了一个很好的插入式高速自动完成的空缺。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;extr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;超级令人失望的是，在这个领域实际上不存在与 Cursor 的超级专家相当的“开放”竞争对手。尽管我没有想到该产品类别会很快被编写 100% 代码的代理 AI 代理所击败。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rickdg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想要的只是快速按需完成代码。我猜 2025 年在这方面是失败的一年。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Royalaid:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是不可避免的，但很高兴看到 Cursor 团队真正充分利用了这项技术。 Tab Complete + 新的 Composer 模型非常擅长有针对性的、狭窄的任务。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://supermaven.com/blog/sunsetting-supermaven</guid>
-      <pubDate>Sun, 23 Nov 2025 22:33:34 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46028033</comments>
-    </item>
-    <item>
-      <title>ISP 更有可能限制通过 CG-NAT 连接的网民：Cloudflare</title>
-      <link>https://www.theregister.com/2025/11/03/cloudflare_cgnat_bias_research/</link>
-      <description>&lt;p&gt;这项工作发现了偏见的迹象，因为非 CGNAT IP 比 CGNAT IP 更有可能是机器人，但 ISP 更有可能限制来自后者的流量。 “尽管机器人分数表明流量更有可能来自人类用户，但 CGNAT IP 受到速率限制的频率是非 CGNAT IP 的三倍，”两人写道。作者还承认，如果世界转向 IPv6，所有这些问题都会消失，并且 CGNAT 应该帮助网络运营商渡过难关，直到这一切发生。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; ISPs more likely to throttle netizens who connect through CG-NAT: Cloudflare&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46028627"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.theregister.com/2025/11/03/cloudflare_cgnat_bias_research/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;daft_pink:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们需要提出一个足够有用的 IP 解决方案，让人们真正想要升级到它。&lt;p&gt;当你将其与 https、tls1.3、unicode、5g 蜂窝、wifi 6、wifi 5 或蓝牙版本等其他技术进行比较时。很明显，如果他们推出了一个对最终用户有更明显好处的协议，那么 ipv6 的采用就不应该是这样的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mcpherrinm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Register 在 &lt;a href="https:&amp;#x2F;&amp;#x2F;blog.cloudflare.com&amp;#x2F;detecting-cgn-to-reduce-collat​​eral-damage&amp;#x2F;" 之上添加了很少的内容rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;blog.cloudflare.com&amp;#x2F;Detecting-cgn-to-reduce-collater...&lt;/a&gt;&lt;p&gt;之前在 &lt;a 讨论过（一点） href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45746509"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45746509&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lxgr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;因为 CGNAT 在非洲和亚洲更为突出，使用也更为广泛 [...]&lt;p&gt;难道整个美国不是都在移动数据上使用用于 IPv4 的 CG-NAT 吗？&lt;p&gt;几年前我在欧洲也有过 DOCSIS 连接，即固定线路，只有 CG-NAT。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.theregister.com/2025/11/03/cloudflare_cgnat_bias_research/</guid>
-      <pubDate>Sun, 23 Nov 2025 23:53:06 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46028627</comments>
-    </item>
-    <item>
-      <title>Zorin OS 18 的下载量达到 100 万次</title>
-      <link>https://blog.zorin.com/2025/11/18/test-the-upgrade-from-zorin-os-17-to-18-and-celebrating-1-million-downloads-of-zorin-os-18/</link>
-      <description>&lt;p&gt;从 Zorin OS 17 升级到 18 我们还很高兴地宣布，我们今天正式启动从 Zorin OS 17 到 18 的升级。此升级路径旨在允许现有 Zorin OS 17 用户将其计算机直接升级到 Zorin OS 18，而无需重新安装操作系统。订阅 Zorin 时事通讯 Zorin 博客 查看 Zorin 的最新新闻和更新。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; 1M Downloads of Zorin OS 18&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46026579"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://blog.zorin.com/2025/11/18/test-the-upgrade-from-zorin-os-17-to-18-and-celebrating-1-million-downloads-of-zorin-os-18/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 23 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;larntz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;还有人记得Lycoris吗？ &lt;a href="https:&amp;#x2F;&amp;#x2F;deadlinux.fandom.com&amp;#x2F;wiki&amp;#x2F;Lycoris" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;deadlinux.fandom.com&amp;#x2F;wiki&amp;#x2F;Lycoris&lt;/a&gt;&lt;p&gt;我从未使用过它，不得不查找它，但这篇文章提醒了它。我认为他们可能也为此收费。&lt;p&gt;这是 2002 年lashdot 的评论线程...&lt;a href="https:&amp;#x2F;&amp;#x2F;linux.slashdot.org&amp;#x2F;story&amp;#x2F;02&amp;#x2F;03&amp;#x2F;18&amp;#x2F;1916248&amp;#x2F;lycoris-desktoplx-评论" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;linux.slashdot.org&amp;#x2F;story&amp;#x2F;02&amp;#x2F;03&amp;#x2F;18&amp;#x2F;1916248&amp;#x2F;lycoris-de...&lt;/a&gt;。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;m3kw9:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所以复制苹果是可行的。  OS 18，背景是山脉。  我认为这就是苹果将其评为 26 的原因。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ab_testing:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;除了 UI 层之外，Zorin 与 Ubuntu 甚至 Debian 之间还有什么不同之处吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gerdesj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它基于 Ubuntu，网站看起来很棒，并且将自己定位为 Windows 替代品。&lt;p&gt;良好的技能。  它可能会设法安全启动并运行 ESET（对于企业界的审计点很方便）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmpeax:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The pro version comes with &amp;quot;Professional-grade creative suite&amp;quot;, but they don&amp;#x27;t tell you what you&amp;#x27;re actually getting. It&amp;#x27;s just opaque corporate-speak one-liners &amp;quot;Make real progress toward your goals&amp;quot;.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wartywhoa23:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我已经使用 Ubuntu 3 年了，现在我即将升级我的 13 岁了。对于我来说，在选择一些顶级规格的 x86_64 笔记本电脑还是 macbook pro M4 之间，我面临着一个两难的境地。&lt;p&gt;前者只是让我继续使用 Ubuntu，但对于我使用的一些 Ubuntu 缺乏的创意软件（某些 DAW 和 CAD 建模器），我仍然需要双启动 Windows。后者给了我一个很棒的（或者看起来是这样）操作系统，它在精神上更接近 Ubuntu，而不是 Windows，并且支持我需要的一切，但让我受到供应商的限制，无论苹果将来可能采取什么与用户敌对的方向。&lt;p&gt;我想问一下同时使用 Ubuntu 和 MacOS 的人，你有什么建议？尤其是 MacOS 用户，您对它的发展方向以及苹果本身的发展方向感到满意吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ddtaylor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我与 ZorinOS 有着悠久的历史，我将简短地介绍一下。&lt;p&gt;他们是骗子。&lt;p&gt;简单的事实是他们发布开源软件，其中大部分都以 GPL 许可。他们时不时地修改这些程序以与 ZorinOS 等兼容。&lt;p&gt;他们有时拒绝发布任何源代码，当他们这样做时，他们会删除并禁止人们进入他们的社区，因为他们认为他们的付费 ISO 是闭源的 - 这不是真的。&lt;p&gt;如果你认为我错了、错误的、撒谎了等等，请获取任何 ZorinOS ISO 并将其放在 ZorinOS 社区网站（例如 Reddit）上，然后坐下来看看值得一提的是，我发现所有 ZorinOS 下载都是使用 DHT 扫描的。我已经有一段时间没有碰它们了，但我仍然觉得整个情况令人困惑。我不得不想象这个问题的部分原因是中国社区对自由和开源软件比较陌生，并且不理解这些长期存在的想法。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oliyoung:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;可能是吗？ 2026 年会是桌面 Linux 之年吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OsrsNeedsf2P:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有多少人在管理 Zorin？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jackvalentine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我正在为我岳母寻找替代操作系统，她的计算机已经过时，不再支持 Windows 10。我很高兴看到像这样巧妙的发行版试图填补这一空白。&lt;p&gt;也就是说，她的要求非常简单，带有 Chromium 的 Debian 可能会 100% 满足她的要求，即“从 gmail 下载文档并打印它们”。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;casey2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一件重要但在此类讨论中很少提及的事情是，现在有多少 Windows 用户有在 UNIX 系统上工作的经验？如果他们认为每个操作系统都像 Windows，我觉得他们会猛然醒悟&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BoppreH:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常时尚的营销，但为什么他们将（奇妙的）KDE Con​​nect 重新命名为“Zorin Connect”[1]？从仅仅不到 30 次的提交来看，我看不出分叉的原因，只是让用户感到困惑。&lt;p&gt;如果它紧密集成到操作系统中，我可以理解不提及它的名称，就像你不想要“Foobar 控制面板”一样和“FizzBu​​zz 开始菜单”。但 KDE Con​​nect 是一个独立的应用程序，您甚至可以在 Windows 上安装。这不仅仅是隐藏名称，而是替换它！&lt;p&gt;那么，为什么要“品牌重塑”[2]？这感觉就像是试图窃取信用。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ZorinOS&amp;#x2F;zorin-connect-android" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ZorinOS&amp;#x2F;zorin-connect-android&lt;/a&gt; 和 &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ZorinOS&amp;#x2F;gnome-shell-extension-zorin-connect" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ZorinOS&amp;#x2F;gnome-shell-extension-zorin-conne...&lt;/a&gt;&lt;p&gt;[2] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ZorinOS&amp;#x2F;zorin-connect-android&amp;#x2F;问题&amp;#x2F;19" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ZorinOS&amp;#x2F;zorin-connect-android&amp;#x2F;问题&amp;#x2F;19&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Someone1234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我从 3.1 开始就是 Windows 用户；我什至过去曾为微软辩护（特别是当他们做出不受欢迎的选择，但出于技术上正确的原因，例如 UAC 或迫使供应商将其驱动程序重写到用户空间或使用更安全的驱动程序模型时）。&lt;p&gt;但是，我不会捍卫 Windows 11 和微软的总体方向。我觉得微软内部发生了缓慢的文化转变，从围绕着营销和销售的优秀工程师核心，到该死的由营销和销售用户体验来设定组织的方向。&lt;p&gt;此外，感觉很多技术专业知识都退休了，留下了一群害怕接触核心系统的工程师，而不是更喜欢使用 Web 技术来构建。这意味着 Windows&amp;#x2F;Office 停止了改进，而且实际上都出现了显着的倒退。&lt;p&gt;我实际上发现自己推荐 MacOS，尤其是上一代 Macbook Air，它的功能强大得离谱，电池寿命也长得离谱，而且价格合理。再加上 MacOS 相对于 Windows 11 带来的用户友好性和用户体验的缺乏，这一点很难被忽视。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mattmaroon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每当有新的发行版声称开始蚕食微软的市场份额时，Linux 粉丝就像是足球场上的查理·布朗 (Charlie Brown)。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Jailbird:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;难道我们没有从《杀人之眼》中学到任何东西吗？ ？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dingdingdang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我敢打赌更多人下载了 Linux Mint tbh！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看来微软真的把枪对准了很多人。 Win11 中有很多他们不想要的东西，但微软却不听。&lt;p&gt;希望这种情况能持续下去 - 微软目前已经造成了足够多的损害。从质量角度来看，我觉得新的 Win 版本越来越差，越来越不关心用户的需求。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;constantcrying:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果人们停止创建奇怪的衍生发行版（除了预配置的桌面之外，其价值为零），整个 Linux 桌面生态系统将会处于一个更好的位置。&lt;p&gt;这些发行版专注于美观选择，但在本质上它们总是受到相同的问题的困扰，小型维护团队完全被管理发行版的任务压垮了。给人留下了良好的第一印象，但可用性不可避免地下降。&lt;p&gt;与 Zorin 相比，Kubuntu 会更好地为每个人提供服务。只是因为 Kubuntu 背后有更强大的支持。&lt;p&gt;有 &lt;i&gt;数百&lt;/i&gt; 个奇怪的发行版，针对不同的受众，而且它们都很糟糕，因为它们都没有维护其发行版的实际能力。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;polski-g:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么它是什么？ Ubuntu 和 KDE 吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abcd_f:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有多少来自 AWS、Azure 和 GCP IP？ ;)&lt;p&gt;说实话，按国家/地区进行细分会非常有趣。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bee_rider:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们有一个非常漂亮和专业的网页。这让我保持警惕，这很奇怪吗？我习惯了最好的发行版的网页看起来像维基或教授的网站。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;christophilus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么是佐林？它总是让我觉得是一个奇怪的发行版。我不知道为什么，但感觉不太好。&lt;p&gt;我想知道其他发行版在同一时期看到了多大的提升。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rsolva:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我收到 404，这是正确的 URL：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;blog.zorin.com&amp;#x2F;2025&amp;#x2F;11&amp;#x2F;18&amp;#x2F;测试从-zorin-os-17-to-18的升级并庆祝-100万下载-of-zorin-os-18&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;blog.zorin.com&amp;#x2F;2025&amp;#x2F;11&amp;#x2F;18&amp;#x2F;测试-从-zori升级...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://blog.zorin.com/2025/11/18/test-the-upgrade-from-zorin-os-17-to-18-and-celebrating-1-million-downloads-of-zorin-os-18/</guid>
-      <pubDate>Sun, 23 Nov 2025 19:38:15 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46026579</comments>
-    </item>
-    <item>
-      <title>X 的新原籍国功能显示许多“美国”账户是外国人运营的</title>
-      <link>https://www.hindustantimes.com/world-news/us-news/xs-new-country-of-origin-feature-shakes-maga-and-democrat-circles-as-many-us-accounts-revealed-to-be-foreignrun-101763857104296.html</link>
-      <description>&lt;p&gt;这显示了操作该特定帐户的国家/地区。该帐户拥有超过 52,000 名关注者。 “共和党反对特朗普”拥有超过 978,000 名追随者。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; X's new country-of-origin feature reveals many 'US' accounts to be foreign-run&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46028422"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.hindustantimes.com/world-news/us-news/xs-new-country-of-origin-feature-shakes-maga-and-democrat-circles-as-many-us-accounts-revealed-to-be-foreignrun-101763857104296.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 22 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rzerowan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从技术角度来看，地理定位是否真正准确？我猜他们是通过 IP 和应用商店记录来做到这一点的——这些记录通常很容易改变。
-IP 块可能会移动并重新使用，因此这是不准确的，而应用程序商店的更改只需切换一下即可。
-是否有任何论坛和应用程序可以成功地对用户进行地理锁定以绕过 IP 识别或 VPN？我认为只有国家级运营商才能做出这样的事情，因为没有商业实体愿意限制他们的全球增长。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bdangubic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果需要身份证明（IAL2）才能使用社交媒体，美国的大多数政治问题都将得到解决（一些社交媒体公司将在几个月内破产:)）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thomassmith65:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;&lt;pre&gt;&lt;code&gt; 虽然位置现在显示美国，但 X 指出由于使用 VPN，帐户位置可能不准确
-&lt;/code&gt;&lt;/pre&gt;
-“现在”...不是在注册帐户时吗？&lt;p&gt;使用社交媒体进行宣传既便宜又容易，所以肯定有大量虚假的美国帐户，但令人恼火的是，本文没有解决帐户创建过程中 VPN 的使用问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blargey:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因此，用户的反应只是有机的当地政治煽动者对他们的“对手”的例子进行欢呼。社交媒体上的外国植物，却总是忽视它们的“一面”被假敌人引诱并被假盟友推动，然后一切又恢复如常。同样的游戏不同的玩家——即使如此；这些报道的成功已经依赖于轻信和故意无知的某种结合。&lt;p&gt;耶政治。参与驱动型互联网万岁。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mise_en_place:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们的羞辱仪式才刚刚开始。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;afavour:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人们会从中解读出各种政治含义，但在我看来，它反映了一些更简单、或许对 X 来说更可恶的事情：为用户的帖子参与度付费从根本上来说是一个坏主意。&lt;p&gt;如果你想在 X 上赚钱，你就需要参与度。如果你想要参与，你就想说一些人们会争论的有争议的事情。还有什么比美国右翼政治更好的呢，尤其是当 X 算法似乎放大了它的时候？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ro_bit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;让我想起 Reddit 发布年终综述时&lt;a href="https:&amp;#x2F;&amp;#x2F;web.archive.org&amp;#x2F;web&amp;#x2F;20140409152507&amp;#x2F;http:&amp;#x2F;&amp;#x2F ;www.redditblog.com&amp;#x2F;2013&amp;#x2F;05&amp;#x2F;get-ready-for-global-reddit-meetup-day.html?m=1" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;web.archive.org&amp;#x2F;web&amp;#x2F;20140409152507&amp;#x2F;http:&amp;#x2F;&amp;#x2F;www.reddit...&lt;/a&gt; 并透露他们的“最上瘾的城市”是埃格林空军基地的所在地，该基地是许多军事网络行动的举办地。他们不久后编辑了这篇文章，删除了这个不方便的统计数据&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ch2026:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;HN 上的每一次值得注意的对话也都受到严重操纵。任何帐户可以提升或降低其他消息的讨论平台都受到猖獗的操纵和宣传。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mcintyre1994:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一半认为这最终的结果是他们选择退出“已验证”帐户功能集的这一部分。如果你不能用它来获得参与度，那么花钱买一张假蓝色支票就没什么意义了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rguiscard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这让我想起几年前微信做过类似的事情：腾讯微信在公众号帖子上显示用户位置。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;technology&amp;#x2F;tencents-wechat-reveal-user-locations-platform-posts-2022-04-29&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;technology&amp;#x2F;tencents-wechat-reveal-us...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lurk2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;任何密切关注该领域的人至少在去年就已经知道这一点。这些账户很容易犯错，暴露自己的原籍国，随后被意识形态敌人或竞争对手的影响者人肉搜索（他们都想成为领导者，而且都绝对讨厌对方）。&lt;p&gt;几乎所有这些账户都在印度或以色列运营。印度人通常是为了钱（尽管以色列可能也在进行一些外包），而以色列人则利用 2010 年代的伊斯兰恐惧症来引导美国福音派在加沙的活动。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;comeonbro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;应该指出的是，这并没有透露出人们热切期待的那么多信息。  到目前为止，我所看到的几乎所有流传的屏幕截图都是相对较少的关注者、几乎不为人所知的帐户，即使在每个人自己的政治领域也是如此。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mac-attack:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;美国对外包的愤怒达到顶峰。麦肯锡会感到自豪&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iamshs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么除了 HindustanTimes.com 之外你不能找到任何其他新闻媒体？一个明显不健康的印度新闻博客。我们印度人必须忍受它，因为我们几乎没有选择，当这些不可靠的网站在这里也得到 SEO 提升时，真是太神奇了......&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lateforwork:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我假设原产国是根据 IP 地址检测的。这些伪造者现在将创建在美国托管的 Azure VM，然后登录到这些 VM 并从 VM 使用 X。许多骗子使用这种方法来掩饰他们的位置。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;duxup:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我从来没有完全“得到” Twitter，对我来说参与从来都不是一件有趣的事情。   它讲述的是“令人不安的是人们对随机账户如此信任......&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BhavdeepSethi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;首先，允许任何人以 8 美元注册蓝色复选标记。经过验证的帐户失去了价值，推特上充斥着虚假帐户和外国运行帐户。现在，尝试通过显示用户的原籍国来解决此问题。现在，这些用户将尝试找出绕过它的方法。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Zigurd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是马赛克的另一部分，它将揭示俄罗斯针对西方的灰色地带战争的范围比大多数人意识到的要大得多。英国国家犯罪局根据大多数地方国家安全雷达下的犯罪类型破获了一个巨大的洗钱企业。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bparsons:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它确实是互联网的下水道。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;agentifysh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;X 显然不是唯一发生这种情况的平台，人们很好奇为什么他们将其撤回。&lt;p&gt;您对美国公民在线验证的城镇广场持开放态度吗？你必须扫描你的护照或驾驶执照才能发布表情包之类的东西。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;protocolture:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;心甘情愿地走进柏拉图洞穴，付费进行柏拉图洞穴验证，坐下来，享受墙上的所有话语。当你发现墙上的影子都是假的时，把酒吐掉。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tehjoker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是否有任何技术原因导致我们的帐户可能被识别为外国帐户，或者这确实是外国帐户，还是我们在国外雇用人员&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.hindustantimes.com/world-news/us-news/xs-new-country-of-origin-feature-shakes-maga-and-democrat-circles-as-many-us-accounts-revealed-to-be-foreignrun-101763857104296.html</guid>
-      <pubDate>Sun, 23 Nov 2025 23:25:03 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46028422</comments>
-    </item>
-    <item>
-      <title>总督“不存在”，其章程还剩八个月</title>
-      <link>https://www.reuters.com/world/us/doge-doesnt-exist-with-eight-months-left-its-charter-2025-11-23/</link>
-      <guid isPermaLink="true">https://www.reuters.com/world/us/doge-doesnt-exist-with-eight-months-left-its-charter-2025-11-23/</guid>
-      <pubDate>Mon, 24 Nov 2025 00:05:14 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46028721</comments>
-    </item>
-    <item>
-      <title>Rust 的几个核心问题</title>
-      <link>https://bykozy.me/blog/rust-is-a-disappointment/</link>
-      <description>&lt;p&gt;Rust 在 stackoverflow 调查中名列榜首，成为最受欢迎的语言。不幸的是，让 Rust 编译得更快是不可能的。我不得不说 Rust 设计师。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Several core problems with Rust&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46027709"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://bykozy.me/blog/rust-is-a-disappointment/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 29 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;leoh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我是否理解 bykozy 声称“Rust 是内存安全且不可靠的”？因为 Cloudflare 由于未处理的异常而崩溃了？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;leoh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;它的编译速度很慢。我的意思是慢。比 C++ 慢。我知道多年来 Rust 的速度变得快了好几倍，但客观上我们需要它快两个数量级，而不仅仅是两倍。&lt;p&gt;重构你的构建。&lt;p&gt;&gt;它很复杂。就像 C++ 一样复杂。但 C++ 有遗产，而 Rust 没有。强行穿过 Arc&amp;lt;Mutex&amp;lt;Box&amp;lt;T&amp;gt;&amp;gt;&amp;gt; 丛林的复杂性每一步都直接影响所实现逻辑的质量，即只见树木不见森林。 C++ 又出现了同样的问题，那么语言切换到底有什么意义呢？&lt;p&gt;如果你能想出更好的东西，就为它写一个宏。&lt;p&gt;&gt;内存安全没那么神圣。事实上，对于许多应用程序来说，出现故障比崩溃更好——特别是在 Rust 希望出现的嵌入式世界中。 Rust 无法获得 99.999% 的可靠性——它总是会崩溃。&lt;p&gt;更好地学习这门语言，使用代码覆盖工具，并编写更好的测试。&lt;p&gt;&amp;gt;在处理大量可变共享状态（GUI、DB、有状态服务、操作系统硬件）时，本机 Rust 内存模型的性能较差，非本机不安全只会让您编译缓慢、复杂性高，并且最终没有内存安全 — 这使得Rust 对于繁重的可变状态作业来说几乎毫无意义。&lt;p&gt;如果你没有正确实现，对于 C++ 来说也是如此。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delifue:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Rust最大的价值就是避免heisenbug &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Heisenbug" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Heisenbug&lt;/a&gt;&lt;p&gt;内存安全和线程安全是导致heisenbug的原因海森虫。但还有其他原因。 Rust 并不能捕获所有的 heisenbug。但不完美并不意味着它没有用（完美解决谬误）。&lt;p&gt;文章有一些正确的观点，但充满了愤怒的夸张。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;saghm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;这很复杂。就像 C++ 一样复杂。但 C++ 有遗产，而 Rust 没有。强行穿过 Arc&amp;lt;Mutex&amp;lt;Box&amp;lt;T&amp;gt;&amp;gt;&amp;gt; 丛林的复杂性每一步都直接影响所实现逻辑的质量，即只见树木不见森林。 C++ 再次遇到了同样的问题，那么最终语言切换的意义何在？&lt;p&gt;无需尝试评估哪种说法更“复杂”，因为这有点主观（即使我对此事确实有一些感觉），我可以非常明确地说，我用 Rust 编写的绝大多数并发代码都没有使用 Arc&lt;Mutex&lt;T&gt;&gt; 。在每一步中（我认为我从来没有使用过 `Arc&lt;Mutex&lt;Box&lt;T&gt;&gt;`，这就像 C++ 中的 `std::shared_ptr&lt;std::mutex&lt;std::unique_ptr&lt;T&gt;&gt;` 一样）。说 Rust 的学习曲线很陡是完全正确的，但我认为他们并没有在这里为它提供一个很好的案例，而不仅仅是因为他们的具体经验。 “语言转换”的想法进一步暗示了这一点；我已经学习 Rust 编程十年了，学习 Rust 后才学习 C++，所以从我的角度来看，我必须“切换”到 C++。从 Rust 到 C++，这样做似乎同样毫无意义。 （我知道我的经历可能是非典型的，但这就是我的观点；每个人的观点都是不同的，我不认为几乎完全基于主观个人经历进行论证能够很好地说明语言中的“核心问题”，除非你能说出为什么它代表了大多数人的一般经历，而且我不认为他们在这里已经做到了）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;teleforce:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;它的编译速度很慢。我的意思是慢。&lt;p&gt;D 语言在角落里微笑 [1]。&lt;p&gt;&amp;quot;D 支持所有权和借用，就像 Rust 一样。 DMD 是 D 的参考编译器，得益于快速的前端和快速的后端，可以在不到 5 秒的时间内自行编译。 D 很容易通过特征和模板进行元编程。您可以使用dynamicCompile 在D 中创建您自己的JIT。” [2]&lt;p&gt;[1] Kevin James meme 创建者试图猜测为什么这张照片如此火爆：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.yahoo.com&amp;#x2F;lifestyle&amp;#x2F;kevin-james-became-internets-king-003000488.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.yahoo.com&amp;#x2F;lifestyle&amp;#x2F;kevin-james-became-internets...&lt;/a&gt;&lt;p&gt;[2] 问 HN：当 D 可用时，你为什么使用 Rust？&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=23494490"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=23494490&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;koakuma-chan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;您必须精通所有权、借用和特征才能编写几行代码。&lt;p&gt;&gt; Rust为了内存安全牺牲了理智和实用性&lt;p&gt;技能问题&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aw1621107:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;不幸的是，让 Rust 编译得更快是不可能的。这个问题是所有类似的重泛型语言所固有的，比如 Haskell。&lt;p&gt;严格来说，我认为这是不正确的。此外，我认为这混淆了泛型编译缓慢的两个常见原因：&lt;p&gt;- 对它们进行类型检查可能需要大量时间&lt;p&gt;- 泛型可能以生成大量代码的方式实现&lt;p&gt;对于泛型密集型语言来说，这两者都不是必需的（例如，尽管 OCaml 具有“复杂”的类型系统，但通常认为 OCaml 编译速度很快），并且其中一个的存在并不一定需要另一个 -假设的“简单”大量使用单态化的泛型系统最终可能会花费很长时间来编译，并且“复杂”。擦除类型的泛型系统可能需要一段时间进行类型检查，但之后可以快速编译。&lt;p&gt;&gt;在其之上放置一个非可选的借用检查器&lt;p&gt;根据我的理解，借用检查器通常只占用编译所需时间的一小部分。在某些情况下，情况并非如此，但我认为人们往往高估了它对编译时间的影响。&lt;p&gt;&gt;有多种方法可以实现不执行远程代码或泄露秘密的不安全程序，它们只会破坏用户数据并偶尔发生行为。&lt;p&gt;&lt;i&gt;可靠&lt;/i&gt;实现不具有 RCE 或泄露秘密但仍会破坏数据并“偶尔发生行为”的不安全程序。对我来说，这似乎是一个非常奇特的要求组合（如果可能的话）。 “偶尔行动”也相当模糊，根据具体的问题，实际上可能是 RCE 或隐藏的秘密泄漏 - 毕竟，当有人注意到崩溃时，漏洞利用就开始了，这种情况并不少见。&lt;p&gt;&gt;这可能是我抱怨的最强烈的一点：Rust 内存安全且不可靠。除了开发人员的理智之外，内存安全的代价是可靠性&lt;p&gt;我认为这实际上是最弱点之一。我没有看到任何支持内存安全必然需要牺牲可靠性的说法，更不用说 Rust 就是这么做的。&lt;p&gt;&gt;进入共享可变状态——内存损坏不是例外，而是规则。您必须处理损坏，不能简单地崩溃。&lt;p&gt;“内存损坏”的定义是什么？在这里被使用吗？我不认为这是你通常“处理”的事情...&lt;p&gt;&gt;这有点破坏了 Rust 中第一个不妥协的东西——性能。&lt;p&gt;我觉得这误解了 Rust 的优先事项。 （安全）Rust 优先考虑安全性而不是性能，这基本上是其整个生命周期中众所周知的权衡。如果您想要性能而牺牲安全性，这就是“不安全”的目的。&lt;p&gt;&gt;因此，重申一下，一旦进入共享可变状态，您就失去了 Rust 的所有优势。考虑到 Rust 的主要概念是永远不要使用共享的可变状态，这有点合理。&lt;p&gt;这错过了 Rust 的另一个有用的部分，即包含代码库中明确分隔的部分的不安全性的能力。&lt;p&gt;我可以说更多，但生活召唤......&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jhhh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你真的必须将这样的文章进行比较，这些文章只是围绕作者的偏见而挥舞的手，与具有更具体陈述的文章（例如 Android 团队发现与 C&amp;#x2F;C++ 相比，内存漏洞减少了 1000 倍）。感谢您的意见，但我将衡量那些实际使用该语言的人比您更多。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hypeatei:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;实际上，我们最近因 unwrap() 函数崩溃而导致了 Cloudflare 中断&lt;p&gt;天哪，这对于 Rust 仇恨者来说将是新事物，不是吗？&lt;p&gt;是的，解开 `Err` 值会导致恐慌，这并不奇怪。 Cloudflare 有特定的限制来防止无限制的内存消耗，然后错误的查询返回的数据集比预期大得多，无法分配。&lt;p&gt;有两个结论：1) 如果 Cloudflare 没有为此决定适当的故障模式（即硬编码的回退配置），最终结果将是相同的：一堆 500，2) 大多数程序在分配失败的情况下，行为不会有太大不同。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dannersy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这要么是行为艺术，要么是愤怒的诱饵。这里的意见是如此疯狂。这里有很多错误且奇怪的说法，很难知道从哪里开始。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;landr0id:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Rust 有它的问题，并且有很多不喜欢 Rust 的地方，但这篇文章给我的印象是这个人没有写太多 Rust。不幸的是，许多这样的案例都受到 Rust 的批评。&lt;p&gt;&gt;内存安全并不是那么神圣。事实上，对于许多应用程序来说，出现故障比崩溃更好——特别是在 Rust 希望出现的嵌入式世界中。 Rust 无法获得 99.999% 的可靠性 - 它总是会崩溃。&lt;p&gt;是的，直到内存安全问题导致完全不同的代码区域中的内存损坏，突然之间，一旦崩溃开始出现，您就会浪费时间来调试难以诊断的崩溃。&lt;p&gt;&gt;实际上，我们最近因 unwrap() 函数崩溃而导致了 Cloudflare 中断：&lt;a href="https:&amp;#x2F;&amp;#x2F;blog.cloudflare.com&amp;#x2F;18-november-2025-outage&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;blog.cloudflare.com&amp;#x2F;18-november-2025-outage&amp;#x2F;&lt;/a&gt;&lt;p&gt;在`unwrap()`之前发生了多次失败，并且可以很容易地认为这与未经检查的异常或发布断言没有什么不同。&lt;p&gt;&amp;gt;同步发送、互斥和引用计数（Arc）？不幸的是，这些会严重锁定或扰乱 CPU 缓存，因此它们对于多线程通信（至少是密集型通信）来说效率低下。它们很安全，但效率低下。这有点破坏了 Rust 中第一个不妥协的东西——性能。&lt;p&gt;这样做是“正确的”。方式在其他语言中也有类似的影响吗？所以我不确定为什么 Rust 强迫你做正确的事情而导致性能问题是 Rust 特有的问题。这样做就是“把事情做好”。其他语言中的方式最终可能会反咬你一口，即使它暂时解除了你的封锁。&lt;p&gt;有很多次我在 Rust 中做了一个全局的“static mut”，只是为了完成一些狗屎，哎呀，随着项目的发展，不小心碰到了一些 UB。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lordnacho:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我倾向于不同意。&lt;p&gt;- 编译速度。为什么人们如此关心？使用调试来确保正确性并迭代代码。您在运行之间几乎不会发生太大变化，并且您将获得增量编译。在您尝试编译之前，让 rust-analyzer 告诉您是否存在错误。让你的 CI 在自己的时间做发布优化，谁在乎 CI 是否慢？&lt;p&gt;- cloudflare bug 不是由 Rust 引起的。每种语言都需要某种方式来表达“嘿，这个东西是无效的”，当人工智能工具列表太长（或者无论他们的业务问题是什么）时就会发生这种情况。让应用程序恐慌是一种设计选择，而不是语言选择。每种语言都有一种不处理错误的方法。&lt;p&gt;- 具有不安全 {...} 的事物并不会使它们变得不可靠。相反，如果您在 Rust 程序中遇到内存问题，您知道在哪里寻找它。 C++ 的问题是整个程序是不安全的，而且你没有办法缩小范围。内存安全错误就像类型错误：一大类值得检查的错误。如果你正在编写优秀的 C++，你就有一个 linter 可以检查类似的事情，如果你遵守纪律，你也可以将警告升级为错误。 FWIW，我确实认为营销过度强调了内存管理，因为有很多这些艰难的教训在 rust 中是默认的，但在 c++ 中是可选的。&lt;p&gt;- 可变共享状态：使糟糕的设计难以编写。可变共享状态是这些永恒的错误来源之一。使用渠道并传递消息。&lt;p&gt;老实说，它读起来像是对 Rust 的很多批评：人们还没有花足够的时间来使用它，而且还没有完成学习曲线。当然，在你习惯之前一切都是很麻烦的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alde:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;博客页面很有趣：&lt;p&gt;&gt;人们制造谎言是为了获得权力和金钱。这本来是我应该做的，但由于随机的原因，我变得无赖并选择了理智。&lt;p&gt;&gt;我反对胡说八道。&lt;p&gt;这些“为了逆行而逆行”的人共鸣自然地流入这篇 Rust 文章中。 Rust 有很多缺点，但这是一个非常肤浅的批评。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;siliconsorcerer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;用过的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;henning:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; T、T&amp;amp;、T*、std::可选、std::unique_ptr 描述相似的事物，每个都以自己的方式被破坏&lt;p&gt;`T` 是如何被破坏的？其他东西是如何损坏的？&lt;p&gt;无论您使用什么语言，在您编写的内容和硬件之间运行的大部分代码都将用 C 编写。您对顶部 1% 的选择并不是很重要。无论如何，仍然存在巨大的攻击面。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fn-mote:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作者说“Rust 总是崩溃”然后继续调用 Cloudflare unwrap() 作为示例。呃……但这显然是程序员的错误，对吧？忽略 Result 为 Err 而不是 Ok 的可能性并不是语言应该保护你的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cogman10:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;可变共享状态是一个功能，而不是一个错误。&lt;p&gt;确实，使用不可变共享数据或非共享数据编写正确的异步代码更容易。&lt;p&gt;但是，如果没有可变共享状态，要实现快速且低内存的并发算法，即使不是不可能，也是非常困难的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;diego_moita:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我是一名 Rust 程序员，已经工作了 3 年。 Web 后端、内核编程、网络安全……&lt;p&gt;然后我发现 C++ 有一个 Rust 没有的很酷的功能：工作。&lt;p&gt;现在，我不再搜索 Rust 职位了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bccdee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;告诉受害者“但是记忆在事故中没有被破坏”是一种微弱的安慰。实际上，我们最近因 unwrap() 函数崩溃而导致了 Cloudflare 中断。这可能是我抱怨的最强烈的一点：Rust 内存安全且不可靠。内存安全的代价是可靠性&lt;p&gt;这是不正确的，老实说感觉很侮辱。您调用“crash()”函数并不是语言的错——每种语言都有一种终止执行的方法，并且有充分的理由。崩溃甚至不一定是不正确的行为；这就是将错误传递到基础设施层进行处理的方式。这里的问题存在于系统设计层面，而不是语言层面。&lt;p&gt;作者可以这样解释这个（糟糕的）批评：&lt;p&gt;&gt; Rust 无法获得 99.999% 的可靠性——它总是崩溃。&lt;p&gt;这是对我作为读者的彻底不诚实和侮辱。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;themgt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;你不能像“我正在编写冷路径高级代码，我不需要性能，我不需要深入生命周期处理，我只想编写高级逻辑”一样。每次你写一行 Rust 时，你都会被迫陷入低级的细微差别。 Rust 没有垃圾收集器，而且永远不会有——你必须半手动地将所有数据打包到所有权树中。您必须精通所有权、借用和特征才能编写几行代码。&lt;/i&gt;&lt;p&gt;它的边缘仍然很粗糙，但 Crystal 对于此类事情来说是一个有趣的选择。如果您想要一个可读的高级语言和健全的包管理器，可以编译为性能合理的机器代码，那么值得一看。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;valcron1000:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;内存安全并不是那么神圣。事实上，对于许多应用程序来说，出现故障比崩溃要好&lt;p&gt;是的，只是另一个数据泄漏，没什么大不了的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cetra3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; Node.js 和 Go 被认为是实际上安全的语言&lt;p&gt;Node JS 过去曾存在漏洞：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.cvedetails.com&amp;#x2F;cve&amp;#x2F;CVE-2021-22940&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.cvedetails.com&amp;#x2F;cve&amp;#x2F;CVE-2021-22940&amp;#x2F;&lt;/a&gt;&lt;p&gt;Go 也不是内存安全的：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.ralfj.de&amp;#x2F;博客&amp;#x2F;2025&amp;#x2F;07&amp;#x2F;24&amp;#x2F;内存安全.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.ralfj.de&amp;#x2F;博客&amp;#x2F;2025&amp;#x2F;07&amp;#x2F;24&amp;#x2F;memory-safety.html&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;baby:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的意思是没有什么比 Rust 更好的了，只谈论 Rust 中令人讨厌的地方而不是说&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;commandersaki:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我可以接受编译速度慢，比 C++ 慢，但是大型项目是否需要 &gt;32GB 内存，例如 LLVM、Chromium 或 Envoy 的情况？&lt;p&gt;因此不得不购买一台新笔记本电脑。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Havoc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直在等待作者提倡他们喜欢的部分，但不，这只是咆哮&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gr4vityWall:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作者可能会在使用 Zig 中找到乐趣。&lt;p&gt;就我个人而言，我对 Rust 最大的抱怨是我希望它更具可读性。我见过看起来直接来自 C++ 的函数签名。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Animats:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; “图灵机模型不可能有完美的正确性”&lt;p&gt;Grrr。无知的人总这么说。人们验证程序已有四十多年了。对于大多数有用的程序来说，在不违反断言方面的形式正确性是可能的。正如有人指出的关于 Microsoft 静态驱动程序验证器的那样，如果您的程序接近不可判定性，那么它就没有必要存在于内核中。这不是合法的批评。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;IshKebab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;完全错误。&lt;p&gt;&gt;它的编译速度很慢。我的意思是慢。比 C++ 慢。&lt;p&gt;不可能。也许是 Rust 1.0，但它正在稳步改进，而且现在肯定比 C++ 更快。&lt;p&gt;&gt;这很复杂。与 C++ 一样复杂。&lt;p&gt;确实如此，但 C++ 复杂性的问题在于您必须记住所有内容，否则您会意外调用 UB。它太复杂了，基本上是不可能的。&lt;p&gt;Rust 很复杂，但大多数时候编译器会告诉你是否弄错了。当然也有例外（很多异步枪），但仍然是日日夜夜。&lt;p&gt;&gt;内存安全并不是那么神圣。事实上，对于许多应用程序来说，出现故障比崩溃更好&lt;p&gt;不确定我是否真的需要解决这个问题...&lt;p&gt;&gt;当处理大量可变共享状态（GUI、数据库、有状态服务、操作系统硬件）时，本机 Rust 内存模型的性能较差，非本机不安全只会让您编译缓慢、复杂性高，并且最终没有内存安全——这使得 Rust 对于繁重的可变状态作业实际上毫无意义。&lt;p&gt;不太清楚他在这里得到了什么。也许 GUI 风格编程的人体工程学仍在研究中？但这几乎不会破坏交易，不是吗？有大量 C&amp;#x2F;C++ GUI 库的人体工程学效果很差，唯一真正出色的库 (Qt) 必须使用自定义语言扩展数十年才能实现这一目标。&lt;p&gt;&gt;那么，Rust 到底是好还是坏呢？两者都不是。这是一种平庸的编程语言，需要花费数千人月的开发时间&lt;p&gt;我很想听听他认为什么是好的编程语言，因为我可以轻松地在任何其他语言中找出比他更多的漏洞。&lt;p&gt;这种反 Rust 狂热是超级乏味的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nobodyandproud:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么，艾达？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://bykozy.me/blog/rust-is-a-disappointment/</guid>
-      <pubDate>Sun, 23 Nov 2025 21:52:48 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46027709</comments>
-    </item>
-    <item>
-      <title>“看不见的”微塑料作为全球污染物在天空中传播</title>
-      <link>https://www.asahi.com/ajw/articles/16137995</link>
-      <description>&lt;p&gt;日本因病例激增而发布流感警报 百年老店东京书店以稀有发现吸引粉丝 木原敦促谨慎对待“误导性”台湾言论 修改后的指导方针将减少福利待遇 青森村将野生熊肉作为当地特产推销 东京被责令为尼泊尔男子死亡赔偿增加 39 倍 日本将同意性行为的年龄从 13 岁提高到 16 岁 建造了一艘修复深海表面畸形鱼类的船只 VOX POPULI：谁能真正掌握马斯克1万亿美元薪酬计划的规模。高市内阁批准了疫情后最大的刺激计划。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; 'Invisible' microplastics spread in skies as global pollutant&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46028827"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.asahi.com/ajw/articles/16137995'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;userbinator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;并不是说我一开始就相信这些废话，但我总是觉得传统的吹塑薄膜塑料袋被“可重复使用”的塑料袋取代是很有趣的。那些......也是由相同的塑料制成，除了纺织品形式，因此很容易到处脱落纤维。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;accrual:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;它们太小而无法用肉眼看到&lt;p&gt;虽然可能是给定的，但我想知道如果消费者可以用自己的眼睛看到这个问题，结果会有什么不同。也许我们在某个时候会需要微塑料探测器。当影响在全球范围内累积时，这似乎是一个很容易被忽视的问题。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.asahi.com/ajw/articles/16137995</guid>
-      <pubDate>Mon, 24 Nov 2025 00:18:21 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46028827</comments>
-    </item>
-    <item>
-      <title>旋转 Jakks Atari 桨</title>
-      <link>https://nicole.express/2025/paddle-me-atari.html</link>
-      <description>&lt;p&gt;哦，还有 Atari 2600。就好像他们想到了这个博客一样。所以很明显，这个东西并不能运行原始的 Atari 2600 游戏。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Giving the Jakks Atari Paddle a Spin&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46027065"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://nicole.express/2025/paddle-me-atari.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://nicole.express/2025/paddle-me-atari.html</guid>
-      <pubDate>Sun, 23 Nov 2025 20:31:45 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46027065</comments>
+      <title>基于 ncurses 的高性能命令行 torrent 客户端</title>
+      <link>https://github.com/rakshasa/rtorrent</link>
+      <description>&lt;p&gt;捐赠给 rTorrent 开发 Paypal Patreon SubscribeStar 比特币：1MpmXm5AHtdBoDaLZstJw8nupJJaeKu8V8 以太坊：0x9AB1e3C3d8a875e870f161b3e9287Db0E6DAfF78 莱特币： LdyaVR67LBnTf6mAT4QJnjSG2Zk67qxmfQ 卡尔达诺：addr1qytaslmqmk6dspltw06sp0zf83dh09u79j49ceh5y26zdcccgq4ph7nmx6kgmzeldauj43254ey97f3x4xw49d86aguqwfhlte 帮助保留rTorrent 的开发是通过向其创建者捐赠来进行的。 BUILDING 跳转到 github 克隆目录 cd rtorrent 安装构建依赖项 安装与 rTorrent 版本相同的 libtorrent。生成配置脚本：autoreconf -ivf （可选）生成手册页：docbook2man rtorrent。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A ncurses-based command line torrent client for high performance&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46029312"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/rakshasa/rtorrent'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://github.com/rakshasa/rtorrent</guid>
+      <pubDate>Mon, 24 Nov 2025 01:30:51 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46029312</comments>
     </item>
   </channel>
 </rss>
