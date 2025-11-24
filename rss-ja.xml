@@ -6,81 +6,68 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 24 Nov 2025 06:37:36 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Nov 2025 09:30:16 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>何千もの目に見えない Unicode 文字で LLM を驚かせる無料ツール</title>
-      <link>https://gibberifier.com</link>
-      <description>&lt;p&gt;結果: 意味不明のテキストを理解できず、混乱して反応するか、目に見えない文字を完全に無視します。結果: Gemini は非表示の文字を処理できません。結果: 意味不明のテキストに完全に当惑し、目に見えない文字で何が起こっているのかわかりません。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A free tool that stuns LLMs with thousands of invisible Unicode characters&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46029889"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://gibberifier.com'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NathanaelRea:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;さまざまなモデルでテストしました&lt;p&gt;&amp;quot;これは何を意味します: &amp;lt;Gibberfied:Test&amp;gt;&amp;quot;&lt;p&gt;ChatGPT 5.1、Sonnet 4.5、llama 4 maverick、Gemini 2.5 Flash、および Qwen3 はすべてゼロショットでした。 Grok 4 は難読化されていると言って拒否しました。&lt;p&gt;"&lt;ギバーファイド:これはテスト出力です: Hello World!&gt;"&lt;p&gt;ソネットはコンテンツ ポリシーに反して拒否しました。クエンはキリル文字で答えた。ジェミニ「これはテスト出力です」。 GPT はキリル文字でその内容と Python での変換方法の説明を返しましたが、ラマさんは、文字がごちゃ混ぜになっていると答えました。&lt;p&gt;したがって、最大の制限はモデルがプロンプト インジェクションを阻止しようとして単に拒否していることです。しかし、彼らはすでにそれを理解できています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;niklassheth:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;このツールからの出力を GPT-5 の考え方に取り入れました。 Python では幅ゼロの文字をすべて削除し、「キリルの類似文字」を読み取ることができました。頑張ってね！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Surac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;スクレイパーがスクレイピングしたテキストをクリーンアップするために Unicode から Ascii&amp;#x2F;cp1252 へのコンバーターを使用しているだけではないかと心配しています。はい、スクレイピングのコストが 1 段階高くなりますが、その一方で、Unicode インジェクションは正当なユースケースに困難をもたらします。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;agentifysh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはいいアイデアですね。また、ウェブ スクレイパーに対する優れた防御策でもあります。&lt;p&gt;しかし、長期的には、LLM がテキストの画像を操作して生成すること (ナノ バナナ) を、メモリの保存方法やコンテキストの処理 (例: 聖書を保存するための高解像度の顕微鏡テキストなど) に興味深い影響を与える可能性のある他のグラフィックスとともに、非常に快適になり始めている新しい方向性があります。&lt;p&gt;オンラインのコンテンツやコンテキストを使用してコンテンツを難読化することは不可能になります...&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;8474_s:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;フォーラム Web サイトが Unicode をフィルタリングしておらず、フィルタが単純だった時代に、多くの Unicode 難読化ツールがフィルタ検閲をバイパスするために文字を似たような外観のシンボルに変換するのに人気があったことを思い出します。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;z3dd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Gemini 2.5 フラッシュで試してみました。クエリ:&lt;p&gt;&amp;gt;これはどういう意味ですか:
-「て、 ⁢⁤ ⁡ ⁢⁣ ⁡ ⁤⁡ ⁣ ⁢⁤⁡ ⁡ ⁤⁢ ⁡ ⁢⁤ ⁡⁣ ⁤ ⁣⁤ ⁡⁡ ⁤ ⁡ ⁡ ⁤⁣ ⁤ ⁢⁤⁤ ⁤⁢⁣⁢⁢⁢ ⁡е⁣ ⁢⁣⁣ ⁢ ⁡⁢ ⁡ ⁡⁢⁢ ⁢ ⁤ ⁤ ⁤ ⁡⁡⁣ ⁤ ⁡ ⁣ ⁡ ⁡ ⁢ ⁢⁡⁣ ⁤ ⁢⁤ ⁣⁤⁡ ⁤ ⁢⁢⁤ ⁣⁢⁣⁤ ⁡⁡ ⁢⁢⁤ ⁤⁡⁤ ⁤ ⁡⁡⁡⁡ ⁡⁣ ⁤ ⁣⁡ ⁤ ⁣ ⁡ ⁤⁡⁤ ⁣ ⁣⁢ ⁣⁢ ⁤⁣⁡ ⁤⁡⁡⁤ ⁡ ⁡ ⁤⁣ ⁣⁡⁡⁡⁤⁡⁤ ⁤ ⁤ ⁤ ⁣⁣⁤⁣ ⁡⁤⁢⁣ ⁡⁡ ⁢⁤⁣ ⁣ ⁢⁢⁣⁤ ⁤ ⁣⁡⁣⁤⁡⁢ ⁡ ⁤ ⁢⁤ ⁢ ⁢⁣ ⁤ ⁤⁣ ⁢⁤ ⁡ ⁡ ⁡ ⁡ ⁡ ⁤ ⁡⁤ ⁣ ⁡ ⁢ ⁡⁢⁢⁢ ⁡⁡⁣ ⁢⁣ ⁡⁢⁤⁢⁢ ⁢⁣⁡ ⁣⁣ ⁣ ⁣ ⁣⁡⁡ ⁢⁡⁤⁤⁤ ⁢⁢ ⁤⁢⁤⁤ ⁤⁣⁢t ⁣ ⁡⁡ ⁣⁣ ⁤⁣⁢⁤⁢ ⁢⁢ ⁣ ⁤⁣ ⁤ ⁣ ⁤ ⁡ ⁣ ⁤⁡⁤⁡⁣ ⁣⁤ ⁣⁡ ⁣⁡ ⁢⁤ ⁡⁢ ⁣⁤ ⁡⁡⁤ ⁣ ⁣⁤ ⁡⁢ ⁤ ⁤⁡⁣⁡⁢ ⁣⁤ ⁢⁢⁡ ⁤ ⁣⁢⁢⁢⁢⁡ ⁡ ⁣ ⁡⁤⁢ m⁡ ⁣⁡⁡ ⁢⁡⁡⁤⁤⁤ ⁡⁤⁡⁡ ⁣⁤ ⁢ ⁢⁣ ⁡⁢⁡⁣⁤⁡ ⁡ ⁣ ⁢⁢ ⁣⁡ ⁣ ⁡ ⁤⁡ ⁤ ⁢ ⁡ ⁣ ⁣ ⁣⁣ ⁡⁢⁣ ⁡⁢ ⁣ ⁢ ⁤ ⁡⁡⁣ ⁤ ⁡⁢ ⁤ ⁢ ⁢ ⁡⁡ ⁡ ⁢⁤ ⁡ ⁢ ⁢⁢ ⁤ ⁤е⁡ ⁢ ⁤⁤ ⁡⁤ ⁤⁢⁤ ⁢ ⁣⁡ ⁣ ⁤ ⁤⁡⁢ ⁡ ⁣⁣⁤ ⁡⁢⁢ ⁢ ⁡⁤ ⁤⁢ ⁣ ⁣⁢⁤⁤⁤ ⁣⁡ ⁤ ⁤⁡⁣ ⁢ ⁢⁤ ⁣ ⁤ ⁡ ⁣ ⁡ ⁤ ⁤⁡ ⁡ ⁡⁣ ⁢⁣ ⁢⁢⁢⁣⁣ ⁤ ⁣ ⁣⁤⁤⁤ ⁡ ⁣ ⁣ ⁣⁣⁡⁤⁤⁢⁤ s ⁤ ⁢ ⁢⁡ ⁢ ⁣⁢ ⁢ ⁣ ⁡ ⁤ ⁡⁢ ⁣ ⁤⁤ ⁡⁤ ⁤ ⁢⁣ ⁢ ⁢⁣ ⁤ ⁣ ⁡⁣ ⁣⁤ ⁣⁡⁡ ⁡ ⁡ ⁣ ⁡⁣⁢ ⁢ ⁤ ⁣⁢⁣⁢ ⁣ ⁤⁣ ⁣⁤ ⁢ ⁤ ⁡ ⁢ ⁣ ⁤⁤⁢ ⁤⁤ ⁣⁡ ⁤ ⁡ ⁢ ⁡ s⁢ ⁡ ⁢ ⁡ ⁢⁡⁡ ⁢⁤ ⁢⁣ ⁡⁢⁢ ⁤ ⁢⁤ ⁣ ⁤⁤⁣ ⁣⁣⁢⁢ ⁢⁤ ⁡⁤⁣ ⁤⁡⁣⁢ ⁢ ⁣⁢ ⁣⁡ ⁡ ⁤⁤ ⁤ ⁣ ⁡⁡ ⁢⁣ ⁤⁣ ⁢⁣⁢ ⁣ ⁣⁣ ⁢⁤⁣ ⁢⁢ ⁡ ⁢⁤⁤ ⁡⁤⁣⁣⁡ ⁣⁤⁣ ⁤⁡⁤ ⁢⁡⁣⁡ ⁣ ⁢ ⁢ ⁡ ⁣⁡⁡ ⁣а⁣⁢ ⁢ ⁢ ⁢⁤ ⁣ ⁢⁢⁡⁡ ⁡⁤⁣⁢ ⁢ ⁤⁣ ⁢⁣ ⁡⁤ ⁣⁡ ⁢⁡ ⁣⁣ ⁢ ⁣⁢ ⁡ ⁤⁤⁢⁣⁤ ⁡⁢⁤⁤ ⁢⁢⁡ ⁢ ⁤ ⁢ ⁤⁡⁣ ⁡ ⁤⁡ ⁢⁣⁣⁢ ⁢ ⁣⁡⁢ ⁣⁡⁣ ⁢⁡ ⁣⁢⁢⁤ ⁡⁤⁡ ⁤ ⁣⁡ ⁡⁤ ⁣g ⁢⁡⁤⁤ ⁡ ⁡ ⁡ ⁢ ⁤⁢⁤ ⁡ ⁢⁤⁤ ⁡ ⁤ ⁤⁢⁡ ⁢⁢⁣⁡⁤⁡ ⁡⁢ ⁤⁡ ⁣⁡ ⁡ ⁤ ⁣⁡⁣⁣ ⁤ ⁡ ⁣ ⁤ ⁣ ⁤⁢⁢ ⁣ ⁤⁣ ⁤ ⁤⁡ ⁡⁤⁣⁡ ⁢ ⁣⁡⁢ ⁡ ⁤⁢⁤ ⁣ ⁤⁡ ⁣ ⁤ ⁡ ⁡⁤⁤ ⁤ ⁡ ⁢ ⁢⁡ ⁡ ⁤ ⁡ебы потели бы показать здесь описание, но сайт, который вы просматриваете, этого не позволяет.⁡ебы показать здесь описание, но сайт, который вы просматриваете, этого не позвояет対策を施してください。 · 対策を施してください。 العرض المزيدスコア: スコア: スコア: スコア: スコア: العرض المزيدスコア: スコア: スコア: スコア: スコア: スコア: スコア: &amp;quot;&lt;p&gt;応答:&lt;p&gt;&amp;gt;この異常な文字列は、実際のテキストを隠すために使用される難読化の一種です。
- デコードすると、次のようになります。
- 「テストメッセージ」
- 表示される意味不明な文字は、一連のゼロ幅または印刷不可能な Unicode 文字です&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;j45:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは素晴らしいですね。  問題は、それに一致するパターンがモデルに追加されるまで、どのくらいの期間有効であるかということです。&lt;p&gt;GPT に「解読」してもらうと、 58秒後に入力された文章の抽出に成功しました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;petepete:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;おそらくスクリーンリーダーには苦労するでしょう。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;davydm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;また、出力をコピーしてエディタなどに貼り付けるのが面倒になります。それはあなたが望んでいることかもしれませんが、私は llms をブロックするためにインターネットがさらに強化されているのを目にしているだけです ): あなたのせいではありません、そしてこれはおそらく役に立つでしょう、私はただ 80% がボットやブロッカーではなく、80% がポルノだった古き良きインターネットを嘆いているだけです。最近アクセスするサイトには、不快で読み込みが遅いボット検出インタースティシャルがあります。AI 詐欺師がデタラメでウェブを汚染し続けているからこそ、もう 1 つの軽減策が必要です。&lt;p&gt;このバブルはもう弾けてもいいでしょうか?インターネットが恋しいです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iFire:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.infosecinstitute.com&amp;#x2F;resources&amp;#x2F;secure-coding&amp;#x2F;null-byte-injection-php&amp;#x2F;" を思い出します。 rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.infosecinstitute.com&amp;#x2F;resources&amp;#x2F;secure-coding&amp;#x2F;nul...&lt;/a&gt;&lt;p&gt;面接官に採用を伝えるための履歴書の秘密メッセージのようなものです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wdpatti:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;目に見えない Unicode 文字で LLM を驚かせる無料ツールを作成しました。&lt;p&gt;*使用例:* 盗作防止、LLM スクレイパーに対するテキスト難読化、または単なる楽しみのために!&lt;p&gt;たった 1 単語分の「意味不明の」テキストでも、ほとんどの LLM が一貫した応答をブロックするのに十分です。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://gibberifier.com</guid>
-      <pubDate>Mon, 24 Nov 2025 03:00:31 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46029889</comments>
+      <title>1分間のADHDテスト</title>
+      <link>https://psychotechnology.substack.com/p/a-one-minute-adhd-test-2330</link>
+      <guid isPermaLink="true">https://psychotechnology.substack.com/p/a-one-minute-adhd-test-2330</guid>
+      <pubDate>Mon, 24 Nov 2025 07:09:28 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46031196</comments>
     </item>
     <item>
-      <title>北海道を世界的なチップハブにする日本の賭け</title>
-      <link>https://www.bbc.com/news/articles/c8676qpxgnqo</link>
-      <description>&lt;p&gt;これはライバルのチップメーカーTSMCとサムスンだけが達成した偉業だ。 「顧客を見つけることも課題かもしれない。サムスンとTSMCは何年にもわたって自社のチップを購入してきた世界的企業との関係を築いてきた。40年前、日本は世界の半導体の半分以上を製造していた。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Japan's gamble to turn island of Hokkaido into global chip hub&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46029929"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bbc.com/news/articles/c8676qpxgnqo'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;moogleii:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;多少関連する: &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=44828559"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=44828559&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TheThirdNuke:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;日本は高齢化と停滞が進んでおり、最近ではシャープが半導体子会社をフォックスコンに売却しました。&lt;p&gt;実際にはそうなっていません。&lt;p&gt;日本には人材、原材料、資本が不足しています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;voidfunc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;北海道は守れるのか？中国は台湾問題を解決したら、韓国と日本に目を向けるだろう。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.bbc.com/news/articles/c8676qpxgnqo</guid>
-      <pubDate>Mon, 24 Nov 2025 03:07:07 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46029929</comments>
+      <title>ラムダ計算 – ラムダ図のアニメーション化されたベータ削減</title>
+      <link>https://cruzgodar.com/applets/lambda-calculus</link>
+      <guid isPermaLink="true">https://cruzgodar.com/applets/lambda-calculus</guid>
+      <pubDate>Mon, 24 Nov 2025 05:17:15 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46030613</comments>
     </item>
     <item>
-      <title>仕事におけるエゴ、共感、謙虚さの統一理論</title>
-      <link>https://matthogg.fyi/a-unified-theory-of-ego-empathy-and-humility-at-work/</link>
-      <description>&lt;p&gt;エゴはそれよりもさらに微妙です。 「「そんなに複雑なことじゃないよ。 「その新しいツールをパイプラインで決して使用すべきではありません。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A Unified Theory of Ego, Empathy, and Humility at Work&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46029534"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://matthogg.fyi/a-unified-theory-of-ego-empathy-and-humility-at-work/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Go と Web テクノロジーを使用してデスクトップ アプリケーションを構築する</title>
+      <link>https://github.com/wailsapp/wails</link>
+      <description>&lt;p&gt;ロードマップ プロジェクトのロードマップはここで見つけることができます。このプロジェクトは誰に向けたものですか？このプロジェクトに貢献した素晴らしい人々は全員、ここに自分のページを持っています。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Build desktop applications using Go and Web Technologies&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46030414"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/wailsapp/wails'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aeglaecia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;なぜ専門家は、何も知らない人々が熟読できるように、自分たちの個人的な議論を黙らせなければならないのでしょうか？ゲートキーピングが弱いものであれば、なぜ共感と謙虚さは明らかに美徳であると述べて美徳を守ることが問題ないのでしょうか?正直なところ、この記事のいくつかのポイントは優れていますが、これらの実践を理解して実行できる人は、おそらく最初からそれほど利己的ではありませんでした。私は、マネージャークラスが意図的に共感力を失っているときに、開発者のエゴイズムに注目するのが特に好きではありません (iirc が別の人間に命令することで、本質的に共感力が下方制御されます)。とにかく、このとりとめのないこと自体は間違いなく利己的であり、それは意図的なものです - すべては確かに個人としての私たちよりもはるかに大きく、何らかの形で分離しなければ、私たちは包摂されがちです。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://matthogg.fyi/a-unified-theory-of-ego-empathy-and-humility-at-work/</guid>
-      <pubDate>Mon, 24 Nov 2025 02:01:02 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46029534</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;8-prime:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;泣きながら小さなアプリを作るのが本当に楽しかったです。 
+人々はネイティブ UI フレームワークを使用することを望んでいますが、DX はウェブ テクノロジーのそれとは比べものになりません。&lt;p&gt;そして、ブラウザベースのレンダリングを使用するほとんどのアプリでは問題になりません。最新のブラウザが実際にどれほど最適化されているかを過小評価することがよくあります。また、Chromium は同梱されていないため、バンドル サイズは管理可能です。&lt;p&gt;バックエンドで JS を使用したくなかったので、Tauri と Wails の両方を試してみましたが、Go のシンプルさが私のユースケースにぴったりであることがわかりました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lifty:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;wails v3 がどのように進んでいるのか、また実際にモバイル サポートが追加されているのかを知っている人はいますか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hnlmorg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Readme も Web サイトもよくわからないのは、これが実際にどのように機能するのかということです。&lt;p&gt;たとえば Electron では、必要なものが取り除かれた Chromium が出荷されます。では、このパッケージを使用すると Web ビューは何をレンダリングするのでしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Exoristos:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;適切なデスクトップ アプリケーションを作成することを避けるために、ここまでの作業を行います。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/wailsapp/wails</guid>
+      <pubDate>Mon, 24 Nov 2025 04:33:57 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46030414</comments>
     </item>
     <item>
-      <title>数十億ドル規模の保険金請求リスクが高まる中、保険会社はAI補償から撤退</title>
-      <link>https://www.ft.com/content/abfe9741-f438-4ed6-a673-075ec177dc62</link>
-      <description>&lt;p&gt;あらゆるデバイスから高品質の FT ジャーナリズムに完全にデジタル アクセスできます。選択内容FT Edit: iOS および Web でのアクセス標準デジタル月額 369 香港ドルあらゆるデバイスで高品質の FT ジャーナリズムに不可欠なデジタル アクセス。含まれるものを選択グローバル ニュースと分析専門家の意見Android および iOS の FT アプリFT 編集: iOS および Web でアクセスファーストFT: その日の最大のニュース 20 以上の厳選されたニュースレターmyFTFT ビデオとポッドキャストでトピックをフォローし、アラートを設定共有する 10 件の毎月のギフト記事プレミアム デジタル完全な内容月額 HK$565 業界リーダーによる専門分析を備えた、質の高い FT ジャーナリズムへの完全なデジタル アクセス。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Insurers retreat from AI cover as risk of multibillion-dollar claims mounts&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46030360"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.ft.com/content/abfe9741-f438-4ed6-a673-075ec177dc62'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Show HN: Syd – ブルーチーム向けのオフラインファーストの AI 拡張ワークステーション</title>
+      <link>https://www.sydsec.co.uk</link>
+      <description>&lt;p&gt;Syd AI アシスタント: エアギャップのあるサイバーセキュリティの専門家 AI の力を解き放ち、安全なオフライン環境内で攻撃的および防御的なセキュリティ運用を行います。開発ステータス: 85% 完了 85% 目標: 最終 ISO パッケージ化と Vector DB 統合のために英国のシステム スペシャリストを雇用するのに 15,000 ポンドから 25,000 ポンド お使いのブラウザはビデオ再生をサポートしていません。 Syd がツールの出力を分析し、即座に悪用ガイダンスを提供する様子をご覧ください。今すぐ Syd に戻る - £50 から。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Syd – An offline-first, AI-augmented workstation for blue teams&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46031208"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.sydsec.co.uk'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hn_user82179:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;とても興味深いです！これは、「戦い」において最も効果的なツールの 1 つであるように感じられます。 AI に対して - 保険会社は大きな影響力を持っており、いくつかの大企業が AI の使用を除外することを検討していることは多くのことを物語っています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mulquin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ペイウォール以外のリンク: &lt;a href="https:&amp;#x2F;&amp;#x2F;archive.md&amp;#x2F;SpAV5" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.md&amp;#x2F;SpAV5&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.ft.com/content/abfe9741-f438-4ed6-a673-075ec177dc62</guid>
-      <pubDate>Mon, 24 Nov 2025 04:22:12 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46030360</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;codethief:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ここに来たのは、これが &lt;a href="https:&amp;#x2F;&amp;#x2F;git.sr.ht&amp;#x2F;~alip&amp;#x2F;syd" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;git.sr.ht&amp;#x2F;~alip&amp;#x2F;syd&lt;/a&gt; &amp;#x2F; に関連しているかもしれないと思ったからです。 &lt;a href="https:&amp;#x2F;&amp;#x2F;gitlab.exherbo.org&amp;#x2F;sydbox&amp;#x2F;sydbox" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;gitlab.exherbo.org&amp;#x2F;sydbox&amp;#x2F;sydbox&lt;/a&gt; 。これは、ここ HN で何年にもわたって何度も議論されてきました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paul2495:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;著者はこちら。質問に喜んで答えます!&lt;p&gt;Syd がどのように機能するかについてもう少し詳しく説明します。Syd は、llama-cpp-python 経由でローカルで実行される Dolphin Llama 3 (dolphin-2.9-llama3-8b) を使用します。モデルのロード時には約 12 ～ 14 GB の RAM に加えて、ベース システム (モデル、FAISS インデックス、CVE データベース) 用に最大 8 GB のディスク領域が必要です。完全なエクスプロイト データベースは、オプションの 208 GB のアドオンです。&lt;p&gt;これが LLM をラップするだけの場合と異なる点は、中心的な課題は AI ではありませんでした。セキュリティ ツールの出力データを、LLM が実際に理解できるデータを、YARA、Volatility、Nmap などのツールが一貫性のない形式で出力することを理解できるようにすることでした。これを構造化された JSON に変換するパーサーを構築し、LLM がインテリジェントに推論できるようにしました。そのレイヤーがなければ、次のようになります。
+幻覚とゴミ分析。&lt;p&gt;現在のツール統合:
+  - レッド チーム: Nmap (CVE 相関を使用)、Metasploit、Sliver C2、エクスプロイト データベース ルックアップ
+  - ブルーチーム: Volatility 3 (メモリフォレンジック)、YARA (マルウェア検出)、Chainsaw (Windows イベントログ分析)、
+  PCAP 分析、Zeek、Suricata
+  - クロスツール インテリジェンス: YARA 検出 → CVE ルックアップ → パッチ適用ステップ。 Nmap スキャン → Metasploit モジュールのすぐに実行できるコマンド&lt;p&gt;プライバシーの観点が存在するのは、すべてのセキュリティ ポリシーに違反せずに潜在的なマルウェア サンプル、メモリ ダンプ、または顧客のネットワーク スキャンを ChatGPT に貼り付けることができなかったためです。すべてが localhost:11434 上で実行されます。データが外部に流出することはありません。
+機械。機密調査を扱うブルー チーマーや、クライアント ネットワーク上のレッド チーマーにとって、これは交渉の余地のないものです。&lt;p&gt;デモの syd の実世界の例では、YARA でディレクトリをスキャンし、カスタム ランサムウェア ルールにヒットし、悪用された CVE (EternalBlue&amp;#x2F;MS17-010) を自動的に検索し、一致する API 呼び出しを説明し、インシデント対応ワークフローを生成します。これらのすべてが約 15 秒で行われます。これは手動分析を大幅に上回ります。&lt;p&gt;フィードバックが欲しい点:&lt;p&gt;1.ツールの提案: この方法で調整したいセキュリティ ツールが他にありますか? Capa (マルウェア機能検出) の追加と、Ghidra の統合の可能性を検討しています。
+  2. SOC&amp;#x2F;IR 関係者向け: 現在、AI ユーティリティと運用上のセキュリティのバランスをどのように取っていますか?ただ避けているだけですか
+  LLM を完全に使用しますか? それとも他の解決策を見つけましたか?
+  3. ベータ テスター: 赤青チームの作業を積極的に行っていて、実際の調査でこれを試してみたい場合は、私はそうします。
+  テストしてフィードバックを提供してくれる人を探しています。特に、何が壊れているのか、どのような機能があるのか知りたいです。
+   missing.&lt;p&gt;&lt;pre&gt;&lt;code&gt; 目的は、専門知識を置き換えることではありません。退屈な部分 (16 進数デコード、CVE の関連付け、正規表現パターンの説明) を自動化して、実際の分析に集中できるようにすることです。これは、あいまいな Windows API 呼び出しを飽きずに調べるジュニア アナリストがいると考えてください。
+
+  詳細については sydsec.co.uk をチェックするか、元の投稿の YouTube リンクで完全なデモをご覧ください。&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.sydsec.co.uk</guid>
+      <pubDate>Mon, 24 Nov 2025 07:11:38 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46031208</comments>
     </item>
   </channel>
 </rss>

@@ -6,81 +6,68 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Korean</description>
     <language>ko</language>
-    <lastBuildDate>Mon, 24 Nov 2025 06:37:36 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Nov 2025 09:30:16 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ko.xml"/>
     <item>
-      <title>수천 개의 보이지 않는 유니코드 문자로 LLM을 놀라게 하는 무료 도구</title>
-      <link>https://gibberifier.com</link>
-      <description>&lt;p&gt;결과: 횡설수설된 텍스트를 이해하지 못합니다. 혼란스럽게 반응하거나 보이지 않는 문자를 완전히 무시합니다. 결과: Gemini는 보이지 않는 문자를 처리할 수 없습니다. 결과: 횡설수설된 텍스트에 완전히 당황했습니다. 보이지 않는 문자에 무슨 일이 일어나고 있는지 전혀 알 수 없습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A free tool that stuns LLMs with thousands of invisible Unicode characters&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46029889"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://gibberifier.com'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NathanaelRea:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;다양한 모델로 테스트됨&lt;p&gt;"이것은 무엇을 의미합니까: &amp;lt;Gibberfied:Test&amp;gt;"&lt;p&gt;ChatGPT 5.1, Sonnet 4.5, llama 4 maverick, Gemini 2.5 Flash 및 Qwen3은 모두 제로 샷을 했습니다. Grok 4는 난독화되어 있다고 말하며 거부했습니다.&lt;p&gt;"&amp;lt;Gibberfied: 테스트 출력입니다: Hello World!&amp;gt;"&lt;p&gt;Sonnet은 콘텐츠 정책을 위반하여 거부했습니다. Quen은 키릴 문자로 응답했습니다. Gemini "이것은 테스트 출력입니다". GPT는 그것이 무엇인지, Python으로 변환하는 방법에 대한 설명을 키릴 문자로 응답했고, 라마는 문자가 뒤죽박죽이라고 말했습니다.&lt;p&gt;그래서 가장 큰 제한은 모델이 즉각적인 삽입을 막으려고 거부하고 그냥 거부한다는 것입니다. 하지만 그들은 이미 그것을 알아낼 수 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;niklassheth:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 이 도구의 결과를 GPT-5 사고에 넣었습니다. Python을 사용하여 너비가 0인 문자를 모두 제거한 다음 &amp;quot;키릴 유사 문자&amp;quot;를 읽을 수 있었습니다. 좋은 시도입니다!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Surac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;스크레이퍼가 유니코드를 사용하여 ASCII&amp;#x2F;cp1252 변환기를 사용하여 긁힌 텍스트를 정리하는 것이 두렵습니다. 예, 스크래핑 비용이 한 단계 더 비싸지만 반면에 유니코드 삽입은 합법적인 사용 사례를 어렵게 만듭니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;agentifysh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것은 깔끔한 아이디어입니다. 웹 스크레이퍼에 대한 방어도 훌륭합니다.&lt;p&gt;그러나 장기적으로 LLM이 텍스트 이미지로 작업하고 메모리를 저장하고 컨텍스트(예: 성경을 저장하기 위한 고해상도 미세한 텍스트)를 처리하는 방법에 흥미로운 영향을 미칠 수 있는 다른 그래픽과 함께 텍스트 이미지(나노 바나나)를 생성하는 데 매우 익숙해지기 시작한 새로운 방향이 있습니다.&lt;p&gt;온라인 콘텐츠나 컨텍스트로 난독화하는 것은 불가능할 것입니다....&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;8474_s:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;포럼 웹사이트가 유니코드를 필터링하지 않고 필터가 단순했을 때 많은 유니코드 난독 처리기가 필터 검열을 우회하기 위해 문자를 비슷한 모양의 기호로 바꾸는 인기가 있었던 것을 기억합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;z3dd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Gemini 2.5 플래시로 시도했습니다. 쿼리:&lt;p&gt;&amp;gt; 이것은 무엇을 의미합니까?
-&amp;quot;t⁣ ⁤⁢⁤⁤⁣ ⁣ ⁣⁤⁤ ⁡ ⁢ ⁢⁣⁡ ⁢ ⁢⁣ ⁢ ⁤ ⁤ ⁢ ⁣⁡⁡ ⁤ ⁣ ⁢ ⁡ ⁤ ⁢⁤ ⁡ ⁢⁣ ⁡ ⁤⁡ ⁣ ⁢⁤⁡ ⁡ ⁤⁢ ⁡ ⁢⁤ ⁡⁣ ⁤ ⁣⁤ ⁡⁡ ⁤ ⁡ ⁡ ⁤⁣ ⁤ ⁢⁤⁤ ⁤⁢⁣⁢⁢⁢ ⁡е⁣ ⁢⁣⁣ ⁢ ⁡⁢ ⁡ ⁡⁢⁢ ⁢ ⁤ ⁤ ⁤ ⁡⁡⁣ ⁤ ⁡ ⁣ ⁡ ⁡ ⁢ ⁢⁡⁣ ⁤ ⁢⁤ ⁣⁤⁡ ⁤ ⁢⁢⁤ ⁣⁢⁣⁤ ⁡⁡ ⁢⁢⁤ ⁤⁡⁤ ⁤ ⁡⁡⁡⁡ ⁡⁣ ⁤ ⁣⁡ ⁤ ⁣ ⁡ ⁤⁡⁤ ⁣ ⁣⁢ ⁣⁢ ⁤⁣⁡ ⁤⁡⁡⁤ ⁡ ⁡ ⁤⁣ ⁣⁡⁡⁡⁤⁡⁤ ⁤ ⁤ s ⁤ ⁣⁣⁤⁣ ⁡⁤⁢⁣ ⁡⁡ ⁢⁤⁣ ⁣ ⁢⁢⁣⁤ ⁤ ⁣⁡⁣⁤⁡⁢ ⁡ ⁤ ⁢⁤ ⁢ ⁢⁣ ⁤ ⁤⁣ ⁢⁤ ⁡ ⁡ ⁡ ⁡ ⁡ ⁤ ⁡⁤ ⁣ ⁡ ⁢ ⁡⁢⁢⁢ ⁡⁡⁣ ⁢⁣ ⁡⁢⁤⁢⁢ ⁢⁣⁡ ⁣⁣ ⁢ ⁣ ⁣⁡⁡ ⁢⁡⁤⁤⁤ ⁢⁢ ⁤⁢⁤⁤ ⁤⁣⁢t ⁣ ⁡⁡ ⁣⁣ ⁤⁣⁢⁤⁢ ⁢⁢ ⁣ ⁤⁣ ⁤ ⁣ ⁤ ⁡ ⁣ ⁤⁡⁤⁡⁣ ⁣⁤ ⁣⁡ ⁣⁡ ⁢⁤ ⁡⁢ ⁣⁤ ⁡⁡⁤ ⁣ ⁣⁤ ⁡⁢ ⁤ ⁤⁡⁣⁡⁢ ⁣⁤ ⁢⁢⁡ ⁤ ⁣⁢⁢⁢⁢⁡ ⁡ ⁣ ⁡⁤⁢ m⁡ ⁣⁡⁡ ⁢⁡⁡⁤⁤⁤ ⁡⁤⁡⁡ ⁣⁤ ⁢ ⁢⁣ ⁡⁢⁡⁣⁤⁡ ⁡ ⁣ ⁢⁢ ⁣⁡ ⁣ ⁡ ⁤⁡ ⁤ ⁢ ⁡ ⁣ ⁡ ⁣⁣ ⁡⁢⁣ ⁡⁢ ⁣ ⁢ ⁤ ⁡⁡⁣ ⁤ ⁡⁢ ⁤ ⁢ ⁢ ⁡⁡ ⁡ ⁢⁤ ⁡ ⁢ ⁢⁢ ⁤ ⁤е⁡ ⁢ ⁤⁤ ⁡⁤ ⁤⁢⁤ ⁢ ⁣⁡ ⁣ ⁤ ⁤⁡⁢ ⁡ ⁣⁣⁤ ⁡⁢⁢ ⁢ ⁡⁤ ⁤⁢ ⁣ ⁣⁢⁤⁤⁤ ⁣⁡ ⁤ ⁤⁡⁣ ⁢ ⁢⁤ ⁣ ⁤ ⁡ ⁣ ⁡ ⁤ ⁤⁡ ⁡ ⁡⁣ ⁢⁣ ⁢⁢⁢⁣⁣ ⁤ ⁣ ⁣⁤⁤⁤ ⁡ ⁣ ⁢⁣⁣⁡⁤⁤⁢⁤ s ⁤ ⁢ ⁢⁡ ⁢ ⁣⁢ ⁢ ⁣ ⁡ ⁤ ⁡⁢ ⁣ ⁤⁤ ⁡⁤ ⁤ ⁢⁣ ⁢ ⁢ ⁢⁣ ⁤ ⁣ ⁡⁣ ⁣⁤ ⁣⁡⁡ ⁡ ⁡ ⁣ ⁡⁣⁢ ⁢ ⁤ ⁣⁢⁣⁢ ⁣ ⁤⁣ ⁣⁤ ⁢ ⁤ ⁡ ⁢ ⁣ ⁤⁤⁢ ⁤⁤ ⁣⁡ ⁤ ⁡ ⁢ ⁡ s⁢ ⁡ ⁢ ⁡ ⁡ ⁢⁡⁡ ⁢⁤ ⁢⁣ ⁡⁢⁢ ⁤ ⁢⁤ ⁣ ⁤⁤⁣ ⁣⁣⁢⁢ ⁢⁤ ⁡⁤⁣ ⁤⁡⁣⁢ ⁢ ⁣⁢ ⁣⁡ ⁡ ⁤⁤ ⁤ ⁣ ⁡⁡ ⁢⁣ ⁤⁣ ⁢⁣⁢ ⁣ ⁣⁣ ⁢⁤⁣ ⁢⁢ ⁡ ⁢⁤⁤ ⁡⁤⁣⁣⁡ ⁣⁤⁣ ⁤⁡⁤ ⁢⁡⁣⁡ ⁣ ⁢ ⁢ ⁢ ⁡ ⁣⁡⁡ ⁣а⁣⁢ ⁢ ⁢ ⁢⁤ ⁣ ⁢⁢⁡⁡ ⁡⁤⁣⁢ ⁢ ⁤⁣ ⁢⁣ ⁡⁤ ⁣⁡ ⁢⁡ ⁣⁣ ⁢ ⁣⁢ ⁡ ⁤⁤⁢⁣⁤ ⁡⁢⁤⁤ ⁢⁢⁡ ⁢ ⁤ ⁢ ⁤⁡⁣ ⁡ ⁤⁡ ⁢⁣⁣⁢ ⁢ ⁣⁡⁢ ⁣⁡⁣ ⁢⁡ ⁣⁢⁢⁤ ⁡⁤⁡ ⁤ ⁣⁡ ⁡⁤ ⁣g ⁢⁡⁤⁤ ⁡ ⁡ ⁡ ⁢ ⁤⁢⁤ ⁡ ⁢⁤⁤ ⁡ ⁤ ⁤⁢⁡ ⁢⁢⁣⁡⁤⁡ ⁡⁢ ⁤⁡ ⁣⁡ ⁡ ⁤ ⁣⁡⁣⁣ ⁤ ⁡ ⁣ ⁤ ⁣ ⁤⁢⁢ ⁣ ⁤⁣ ⁤ ⁤⁡ ⁡⁤⁣⁡ ⁢ ⁣⁡⁢ ⁡ ⁤⁢⁤ ⁣ ⁤⁡ ⁣ ⁤ ⁡ ⁡⁤⁤ ⁤ ⁡ ⁢ ⁢⁡ ⁡ ⁤ ⁡е����������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������r 』·········································································· ��������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������녹 ���������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������� ������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������r �������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������� ������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������ &amp;quot;&lt;p&gt;응답:&lt;p&gt;&amp;gt; 이러한 특이한 문자열은 실제 텍스트를 숨기기 위해 사용되는 난독화의 한 형태입니다.
- 디코딩되면 다음과 같이 표시됩니다.
- &amp;quot;테스트 메시지&amp;quot;
- 표시되는 횡설수설은 너비가 0이거나 인쇄할 수 없는 일련의 유니코드 문자입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;j45:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;정말 좋아 보이네요.  문제는 패턴 일치가 모델에 추가될 때까지 얼마나 오랫동안 유효하게 유지되는지입니다.&lt;p&gt;GPT에 '해독' 요청 58초만에 입력된 문장 추출에 성공했습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;petepete:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아마도 스크린 리더에게 어려움을 줄 것입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;davydm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;또한 출력을 편집기에 복사하여 붙여넣는 작업을 지루하게 만듭니다. 그것이 당신이 원하는 것일 수도 있지만, 나는 단지 llms를 차단하기 위해 인터넷이 더 많이 강화되는 것을 보고 있습니다. 당신의 잘못은 아니며 이것은 아마도 유용할 것입니다. 나는 단지 80%가 봇과 차단기가 아니라 80% 포르노였던 옛날 인터넷을 한탄할 뿐입니다. 요즘 방문하는 모든 사이트에는 불쾌하고 느리게 로딩되는 봇 감지 전면 광고가 있습니다. AI 사기꾼이 계속해서 헛소리로 웹을 오염시키기 때문에 또 다른 완화 조치가 필요합니다.&lt;p&gt;이 거품이 벌써 터질 수 있나요? 인터넷이 그리워요.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iFire:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.infosecinstitute.com&amp;#x2F;resources&amp;#x2F;secure-coding&amp;#x2F;null-byte-injection-php&amp;#x2F;"가 생각나네요. rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.infosecinstitute.com&amp;#x2F;resources&amp;#x2F;secure-coding&amp;#x2F;nul...&lt;/a&gt;&lt;p&gt;면접관에게 채용하라고 알리는 이력서의 전체 비밀 메시지와 비슷합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wdpatti:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 눈에 보이지 않는 유니코드 문자로 LLM을 작동시키지 않는 무료 도구를 만들었습니다.&lt;p&gt;*사용 사례:* 표절 방지, LLM 스크레이퍼에 대한 텍스트 난독화 또는 단지 재미를 위해!&lt;p&gt;한 단어 분량의 "횡설수설" 텍스트라도 대부분의 LLM이 일관되게 응답하는 것을 차단하기에 충분합니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://gibberifier.com</guid>
-      <pubDate>Mon, 24 Nov 2025 03:00:31 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46029889</comments>
+      <title>1분 ADHD 테스트</title>
+      <link>https://psychotechnology.substack.com/p/a-one-minute-adhd-test-2330</link>
+      <guid isPermaLink="true">https://psychotechnology.substack.com/p/a-one-minute-adhd-test-2330</guid>
+      <pubDate>Mon, 24 Nov 2025 07:09:28 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46031196</comments>
     </item>
     <item>
-      <title>홋카이도를 글로벌 칩 허브로 만들려는 일본의 도박</title>
-      <link>https://www.bbc.com/news/articles/c8676qpxgnqo</link>
-      <description>&lt;p&gt;이는 경쟁 칩 제조업체인 TSMC와 삼성만이 달성한 위업입니다. "고객을 찾는 것도 어려울 수 있습니다. 삼성과 TSMC는 수년간 칩을 구매해 온 글로벌 기업과 관계를 구축해 왔습니다. 40년 전 일본은 전 세계 반도체의 절반 이상을 생산했습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Japan's gamble to turn island of Hokkaido into global chip hub&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46029929"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bbc.com/news/articles/c8676qpxgnqo'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;moogleii:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;다소 관련됨: &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=44828559"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=44828559&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TheThirdNuke:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;일본은 노령화되고 침체되어 있으며 가장 최근에는 Sharp가 반도체 자회사를 Foxxconn에 매각했습니다.&lt;p&gt;그런 일은 일어나지 않습니다.&lt;p&gt;사람, 원자재, 자본이 부족합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;voidfunc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;홋카이도는 방어할 수 있나요? 중국은 대만 문제를 해결하면 한국과 일본에 시선을 돌릴 것이다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.bbc.com/news/articles/c8676qpxgnqo</guid>
-      <pubDate>Mon, 24 Nov 2025 03:07:07 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46029929</comments>
+      <title>람다 미적분 – 람다 다이어그램의 애니메이션 베타 감소</title>
+      <link>https://cruzgodar.com/applets/lambda-calculus</link>
+      <guid isPermaLink="true">https://cruzgodar.com/applets/lambda-calculus</guid>
+      <pubDate>Mon, 24 Nov 2025 05:17:15 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46030613</comments>
     </item>
     <item>
-      <title>직장에서의 자아, 공감, 겸손에 대한 통합 이론</title>
-      <link>https://matthogg.fyi/a-unified-theory-of-ego-empathy-and-humility-at-work/</link>
-      <description>&lt;p&gt;자아는 그보다 더 미묘합니다. ”“그렇게 복잡하지 않아요. ”“우리는 파이프라인에서 새로운 도구를 절대 사용해서는 안 됩니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A Unified Theory of Ego, Empathy, and Humility at Work&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46029534"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://matthogg.fyi/a-unified-theory-of-ego-empathy-and-humility-at-work/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Go 및 웹 기술을 사용하여 데스크톱 애플리케이션 구축</title>
+      <link>https://github.com/wailsapp/wails</link>
+      <description>&lt;p&gt;로드맵 프로젝트 로드맵은 여기에서 확인할 수 있습니다. 이 프로젝트는 누구를 대상으로 하는가? 이 프로젝트에 기여한 놀라운 사람들은 모두 여기에 자신만의 페이지를 가지고 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Build desktop applications using Go and Web Technologies&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46030414"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/wailsapp/wails'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aeglaecia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;왜 전문가들은 모르는 사람이 읽을 수 있도록 대인 관계 논의를 단순화해야 합니까? 게이트 키핑이 약한 경우 공감과 겸손이 분명히 미덕이라고 말하여 미덕을 게이트 키핑하는 것이 왜 괜찮습니까? 솔직히 기사의 일부 요점은 좋지만 이러한 관행을 이해하고 구현할 수 있는 사람은 처음부터 그렇게 이기적이지는 않았을 것입니다. 나는 관리자 클래스가 의도적으로 공감하지 않을 때 개발자 이기주의에 초점을 맞추는 것을 특히 좋아하지 않습니다(다른 인간에게 본질적으로 명령을 내리는 것은 공감을 하향 조절합니다). 어쨌든 이 모든 장황한 말은 분명히 그 자체로 이기적이며 의도적인 것입니다. 모든 것은 실제로 개인으로서의 우리보다 훨씬 더 크며, 어떤 형태의 분리도 없이 우리는 포섭되기 쉽습니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://matthogg.fyi/a-unified-theory-of-ego-empathy-and-humility-at-work/</guid>
-      <pubDate>Mon, 24 Nov 2025 02:01:02 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46029534</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;8-prime:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 wails로 작은 앱을 만드는 것을 정말 즐겼습니다. 
+사람들은 기본 UI 프레임워크를 사용하는 것을 선호하지만 DX는 웹 기술의 프레임워크와 비교할 수 없습니다.&lt;p&gt;그리고 브라우저 기반 렌더링을 사용하는 대부분의 앱에서는 문제가 되지 않습니다. 사람들은 종종 최신 브라우저가 실제로 얼마나 최적화되어 있는지 과소평가합니다. 그리고 Chromium은 출시되지 않았기 때문에 번들 크기를 관리할 수 있습니다.&lt;p&gt;백엔드에서 JS를 사용하고 싶지 않았기 때문에 Tauri와 Wails를 모두 사용해 본 결과 Go의 단순함이 내 사용 사례에 완벽하게 작동한다는 것을 알았습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lifty:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Wails v3가 어떻게 진행되고 있는지, 그리고 실제로 모바일 지원을 추가하고 있는지 아는 사람이 있나요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hnlmorg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;읽어보기나 해당 웹사이트에서 확실하지 않은 점은 이것이 실제로 어떻게 작동하는지입니다.&lt;p&gt;예를 들어 Electron의 경우 Chromium을 제거한 상태로 배송됩니다. 그렇다면 이 패키지를 사용한 웹 보기 렌더링은 무엇입니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Exoristos:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;적절한 데스크탑 애플리케이션을 작성하지 않기 위해 우리는 많은 노력을 기울일 것입니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/wailsapp/wails</guid>
+      <pubDate>Mon, 24 Nov 2025 04:33:57 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46030414</comments>
     </item>
     <item>
-      <title>수십억 달러 규모의 청구 위험이 증가함에 따라 보험사들은 AI 보험에서 물러납니다.</title>
-      <link>https://www.ft.com/content/abfe9741-f438-4ed6-a673-075ec177dc62</link>
-      <description>&lt;p&gt;모든 기기에서 고품질 FT 저널리즘에 대한 완전한 디지털 액세스를 제공합니다. 선택 포함 내용 FT 편집: iOS 및 웹에서 액세스표준 디지털HK$369/월 모든 기기에서 고품질 FT 저널리즘에 대한 필수 디지털 액세스입니다. 포함된 내용 글로벌 뉴스 및 분석Android 및 iOSFT의 전문가 의견FT 앱 편집: iOS 및 웹에서 액세스FirstFT: 오늘의 가장 큰 뉴스 20개 이상의 엄선된 뉴스레터myFTFT 비디오 및 팟캐스트로 주제 팔로우 및 알림 설정월별 선물 기사 10개 공유프리미엄 디지털전체 보도 HK$565/월 업계 리더의 전문 분석을 통해 고품질 FT 저널리즘에 대한 디지털 액세스를 완료하세요.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Insurers retreat from AI cover as risk of multibillion-dollar claims mounts&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46030360"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.ft.com/content/abfe9741-f438-4ed6-a673-075ec177dc62'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Show HN: Syd – 블루 팀을 위한 오프라인 우선 AI 증강 워크스테이션</title>
+      <link>https://www.sydsec.co.uk</link>
+      <description>&lt;p&gt;Syd AI 도우미: Air-Gapped Cybersecurity 전문가 안전한 오프라인 환경 내에서 공격 및 방어 보안 작업을 위해 AI의 성능을 발휘하세요. 개발 상태: 85% 완료 85% 목표: £15,000-£25,000로 최종 ISO 패키징 및 벡터 DB 통합을 위한 영국 시스템 전문가 고용 귀하의 브라우저는 비디오 재생을 지원하지 않습니다. Syd가 도구 출력을 분석하고 즉시 활용 지침을 제공하는 것을 시청하세요. Back Syd Now - 최저 £50.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Syd – An offline-first, AI-augmented workstation for blue teams&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46031208"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.sydsec.co.uk'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hn_user82179:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;매우 흥미 롭습니다! 이것은 "싸움"에서 가장 효과적인 도구 중 하나처럼 느껴집니다. AI 반대 - 보험 회사는 많은 영향력을 갖고 있으며 몇몇 대기업이 AI 사용에 대한 제외를 고려하고 있다는 것을 많이 알 수 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mulquin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;페이월이 아닌 링크: &lt;a href="https:&amp;#x2F;&amp;#x2F;archive.md&amp;#x2F;SpAV5" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.md&amp;#x2F;SpAV5&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.ft.com/content/abfe9741-f438-4ed6-a673-075ec177dc62</guid>
-      <pubDate>Mon, 24 Nov 2025 04:22:12 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46030360</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;codethief:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;git.sr.ht&amp;#x2F;~alip&amp;#x2F;syd" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;git.sr.ht&amp;#x2F;~alip&amp;#x2F;syd&lt;/a&gt; &amp;#x2F;와 관련이 있을 것 같아서 여기에 왔습니다. &lt;a href="https:&amp;#x2F;&amp;#x2F;gitlab.exherbo.org&amp;#x2F;sydbox&amp;#x2F;sydbox" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;gitlab.exherbo.org&amp;#x2F;sydbox&amp;#x2F;sydbox&lt;/a&gt; 이는 수년에 걸쳐 여기 HN에서 여러 번 논의되었습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paul2495:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;여기에 저자가 있습니다. 질문에 답변해 드리겠습니다!&lt;p&gt;Syd의 작동 방식에 대해 좀 더 자세히 설명하겠습니다. Syd는 llama-cpp-python을 통해 로컬에서 실행되는 Dolphin Llama 3(dolphin-2.9-llama3-8b)를 사용합니다. 모델이 로드될 때 약 12-14GB RAM과 기본 시스템(모델, FAISS 인덱스, CVE 데이터베이스)을 위한 ~8GB의 디스크 공간이 필요합니다. 전체 익스플로잇 데이터베이스는 선택적 208GB 추가 기능입니다.&lt;p&gt;단순한 LLM 래핑과 다른 점은 핵심 과제는 AI가 아니라 LLM이 YARA, Volatility, Nmap 출력과 같은 도구를 일관되지 않은 형식으로 구조화되지 않은 텍스트로 실제로 이해할 수 있는 데이터를 출력하도록 만드는 것이었습니다. 이를 구조화된 JSON으로 변환하는 파서를 구축했는데, 그러면 LLM이 이를 지능적으로 추론할 수 있습니다. 해당 레이어가 없으면
+환각 및 쓰레기 분석.&lt;p&gt;현재 도구 통합:
+  - 레드 팀: Nmap(CVE 상관 관계 포함), Metasploit, Sliver C2, 익스플로잇 데이터베이스 조회
+  - 블루팀: Volatility 3(메모리 포렌식), YARA(맬웨어 탐지), Chainsaw(Windows 이벤트 로그 분석),
+  PCAP 분석, Zeek, Suricata
+  - 교차 도구 인텔리전스: YARA 감지 → CVE 조회 → 패치 단계; Nmap 스캔 → Metasploit 모듈 실행 준비 명령&lt;p&gt;모든 보안 정책을 위반하지 않고는 잠재적인 맬웨어 샘플, 메모리 덤프 또는 고객 네트워크 스캔을 ChatGPT에 붙여넣을 수 없기 때문에 개인 정보 보호 측면이 존재합니다. 모든 것이 localhost:11434에서 실행됩니다. 어떤 데이터도 귀하의 컴퓨터를 떠나지 않습니다.
+기계. 민감한 조사를 처리하는 블루 팀이나 클라이언트 네트워크의 레드 팀에게는 이것이 협상 불가능합니다.&lt;p&gt;데모 syd의 실제 예에서는 YARA를 사용하여 디렉터리를 스캔하고, 사용자 정의 랜섬웨어 규칙을 적용하고, 어떤 CVE가 악용되었는지 자동으로 조회하고(EternalBlue&amp;#x2F;MS17-010), 일치하는 API 호출을 설명하고, 사고 대응 워크플로를 생성하는 이 모든 작업을 모두 약 15초 만에 수행합니다. 이는 수동 분석보다 훨씬 큰 차이로 나타납니다.&lt;p&gt;제가 피드백을 받고 싶은 부분은 다음과 같습니다.&lt;p&gt;1. 도구 제안: 이 방식으로 조정하고 싶은 다른 보안 도구는 무엇입니까? Capa(맬웨어 기능 감지)를 추가하고 잠재적으로 Ghidra 통합을 고려 중입니다.
+  2. SOC&amp;#x2F;IR 담당자: 현재 AI 유틸리티와 운영 보안의 균형을 어떻게 맞추고 있나요? 피하고만 있는 걸까
+  LLM 전체, 아니면 다른 솔루션을 찾았나요?
+  3. 베타 테스터 : 레드블루 팀 작업을 활발하게 하고 있고, 실제 조사에 이것을 해보고 싶다면,
+  테스트하고 피드백을 주실 분들을 찾고 있습니다. 특히 고장이 무엇인지, 어떤 기능이 있는지 듣고 싶습니다.
+   누락되었습니다.&lt;p&gt;&lt;pre&gt;&lt;code&gt; 목표는 귀하의 전문 지식을 대체하는 것이 아닙니다. 지루한 부분(16진수 디코딩, CVE 상관 관계, 정규식 패턴 설명)을 자동화하여 실제 분석에 집중할 수 있도록 하는 것입니다. 모호한 Windows API 호출을 찾는 데 지치지 않는 주니어 분석가가 있다고 생각하십시오.
+
+  자세한 내용은 sydsec.co.uk를 확인하거나 원본 게시물의 YouTube 링크에서 전체 데모를 시청하세요.&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.sydsec.co.uk</guid>
+      <pubDate>Mon, 24 Nov 2025 07:11:38 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46031208</comments>
     </item>
   </channel>
 </rss>
