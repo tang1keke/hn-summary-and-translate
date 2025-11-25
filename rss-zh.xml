@@ -6,96 +6,39 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 25 Nov 2025 01:52:37 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Nov 2025 03:50:35 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>未通电的 SSD 会缓慢丢失数据</title>
-      <link>https://www.xda-developers.com/your-unpowered-ssd-is-slowly-losing-your-data/</link>
-      <description>&lt;p&gt;延长 SSD 使用寿命的 3 种相关方法 不要因不必要的写入而浪费您的新 SSD。在不同类型的存储上拥有数据的多个副本可确保任何意外事件都可以防止您的数据永远消失。冗余是保护数据的基本原则。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Unpowered SSDs slowly lose data&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46038099"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.xda-developers.com/your-unpowered-ssd-is-slowly-losing-your-data/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 17 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;userbinator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于保留率的一个关键点并不经常被提及，事实上本文也没有提到，那就是保留率与编程擦除周期成反比，并且随着温度的升高呈指数下降。因此，保留指标通常是在 Z 温度下 Y 次循环后的 X 时间量。即使是仅写入一次并保存在 -40 度冰箱中的 QLC SSD，也可以保存数据数十年。&lt;p&gt;制造商也一直在玩 DWPD&amp;#x2F;TBW 数字的游戏 -- 通过降低保留规格，他们可以宣传驱动器在完全相同的闪存下具有更高的耐用性。但如果你比较多年来的数字，很明显 NAND 闪存已经变得更加糟糕。唯一成倍增加的是容量，而耐用性和保留时间都下降了几个数量级。&lt;p&gt;长期以来，10 万次循环后 10 年是 SLC 闪存的黄金标准。&lt;p&gt;现在，QLC 闪存的循环次数少于 1000 次后，时间已缩短至几个月。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dboreham:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;快速注意不要在单个驱动器上存储任何有价值的数据。当您将其存储在两个驱动器上时，请勿使用相同类型的驱动器。 （根据在具有固件错误的服务器中使用旋转驱动器的痛苦经验，这些驱动器在开机时间的秒数内全部死亡）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;canadiantim:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么长期存储数据的最佳方式是什么？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nubinetwork:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我有一些旧的 SSD 只是为了自己测试一下，我之前测试的旧 256gb 海盗船在一年半后就很好了，但我可能把它们放错了地方......（它们只剩下 10% 的写入寿命，所以没有巨大的损失）不过我桌上的 512gb 三星应该很快就会成熟，我也必须检查这些。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;storus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我以为这是三星 740 的老问题？我有一个，由于错误的累积，在断电时它会慢慢失去速度，并且为整个驱动器重写一次各个扇区使其可以正常工作一年。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jcynix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嗯，那么这些现代高密度硬盘在板载闪存（又名 OptiNAND）中存储伺服系统的轨道参数又如何呢？我们会得到“旋转的锈迹”吗？这可能会丢失数据存储位置的信息？&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;blog.westerndigital.com&amp;#x2F;optinand-explained&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;blog.westerndigital.com&amp;#x2F;optinand-explained&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tzs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;包含很少读取的文件的已通电 SSD 又如何？&lt;p&gt;我的台式计算机通常会通电，除非出现电源故障，但在 SSD 上的数百万个文件中，肯定有一些我多年都没有读取或写入。&lt;p&gt;SSD 控制器是否会自动查找需要刷新充电的已用块并执行此操作，或者我是否需要定期执行“查找”之类的操作？ -type f -print0 | xargs -0 猫 &gt; &amp;#x2F;dev&amp;#x2F;null&amp;quot;确保偶尔读取每个文件？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dale_glass:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因此，如果这里有固件工程师，那么这实际上是如何工作的？&lt;p&gt;就像 SSD 在开机时或每 N 小时进行某种刷新，或者您必须访问特定块，或者......？如果你中断这个过程，例如，将 NVMe 放在外部机箱中，每月只需插入一次几分钟，就可以将其用作一个巨大的闪存驱动器，这会是一个问题吗？&lt;p&gt;未使用的空间怎么样，用于传输 1 GB 内容的 4 TB 驱动器是否会因未使用的空间衰减而遭受任何损失？&lt;p&gt;所有这些在实践中意味着什么以及用户应该如何管理它都非常不清楚。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yapyap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴知道，但除了一些边缘情况外，这并不重要&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BaardFigur:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不怎么使用我的驱动器。我仍然启动它并写入一些数据，但不是长期数据。我有危险吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;testartr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“充电”的具体协议是什么？离线数月的固态硬盘？&lt;p&gt;我是否只需将其插入并让计算机打开几分钟？它需要保持几个小时吗？&lt;p&gt;我需要运行特殊命令或修剪它吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;traceroute66:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为这篇博客是 JDEC 保留标准的重新散列[1]。&lt;p&gt;从这些标准中需要注意的更有趣的事情是，“客户端”和“客户端”之间所需的保留期有所不同。和“企业”类别。&lt;p&gt;企业类别只有 3 个月的断电保留要求。&lt;p&gt;客户端类别有 1 年的断电保留要求。&lt;p&gt;当然，每个故事都有两个方面...&lt;p&gt;企业类别标准具有每天 24 小时的开机活跃使用时间，但客户端类别仅要求每天 8 小时。&lt;p&gt;与科技中的许多事物一样...由用户选择他们妥协的一方上。&lt;p&gt;[1]&lt;a href="https:&amp;#x2F;&amp;#x2F;files.futurememorystorage.com&amp;#x2F;proceedings&amp;#x2F;2011&amp;#x2F;20110810_T1B_Cox.pdf" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;files.futurememorystorage.com&amp;#x2F;会议记录&amp;#x2F;2011&amp;#x2F;20110...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bossyTeacher:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是为什么我宁愿每年付给某人几美元来为我处理这一切。如果需要，请向两个提供商付费以获得备份。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;formerly_proven:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;即使是最便宜的 SSD，例如那些配备 QLC NAND 的 SSD，在完全断电的情况下也可以安全地存储数据大约一年。更昂贵的 TLC NAND 可以保留数据长达 3 年，而 MLC 和 SLC NAND 分别可以在不供电的情况下存储 5 年和 10 年。&lt;p&gt;这写得有点混乱。消费类 SSD 通常没有数据保留规范，即使在这份非常详细的美光数据表中您也找不到它：&lt;a href="https:&amp;#x2F;&amp;#x2F;advdownload.advantech.com&amp;#x2F;产品文件&amp;#x2F;PIS&amp;#x2F;96FD25-S2TB-MX&amp;#x2F;文件&amp;#x2F;96FD25-S2TB-MX_datasheet20220308104755.PDF" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;advdownload.advantech.com&amp;#x2F;productfile&amp;#x2F;PIS&amp;#x2F;96FD25-S2T...&lt;/a&gt;
-与此同时，企业级 SSD 的数据保留规格已达到其额定寿命，这通常是您在实际使用中无法达到的 DPWD&amp;#x2F;TBW 强度 - 这就是诸如“3 个月 @ 50 °C”之类的数字所在。或任何来源。&lt;p&gt;实际上，SSD 不会在实际时间范围内丢失数据。不要希望得到“设计保证”的结果。不过，就这一点而言，某些硅片比其他硅片更平等。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brian-armstrong:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;仅仅为 SSD 供电是不够的。你需要时不时地阅读每一点，以便给电池充电。如果您将它们放在 NAS 中，那么每月进行一次完整卷检查可能就足够了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sevensor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;通过增加电子隧道到浮栅上的概率来对闪存进行编程，并通过增加电子隧道回退的概率来对闪存进行擦除。这些概率永远不会为零。将其乘以时间和单元数量，最终不会出现位错误的概率会变得非常低。&lt;p&gt;slc 和 mlc 之间的区别只是 mlc 有四种不同的编程电压而不是两种，因此读回数据时，您必须区分更接近的电荷水平。相同的基本单元设计。老实说，我不太相信 MLC 能起作用，更不用说 qlc 了。我确实想知道为什么没有办法像MLC一样操作qlc，除了制造商不允许这样做。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paulkrush:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不得不四处寻找，感觉自己像个傻瓜，不知道这一点。我备份了数据，但保留了 SSD，因为让操作系统像以前一样运行真是太好了……我想我需要将驱动器克隆到 ISO 并存储在旋转的 Rust 上。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.xda-developers.com/your-unpowered-ssd-is-slowly-losing-your-data/</guid>
-      <pubDate>Mon, 24 Nov 2025 19:25:25 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46038099</comments>
-    </item>
-    <item>
-      <title>美国国际开发署关闭导致人员死亡</title>
-      <link>https://hsph.harvard.edu/news/usaid-shutdown-has-led-to-hundreds-of-thousands-of-deaths/</link>
-      <description>&lt;p&gt;主页 / 新闻 / 美国国际开发署关闭已导致数十万人死亡 全球健康 美国国际开发署关闭已导致数十万人死亡 作者：Karen Feldscher 2025 年 11 月 20 日 隐藏标题 显示标题 Atul Gawande 与陈公共卫生学院的 Atul Gawande 博士。 Atul Gawande：自特朗普关闭美国国际开发署以来，已有数十万人死亡 关于作者 Karen Feldscher 通讯办公室新闻副主任 相关主题 全球健康 最后更新 本文特色 Atul Gawande 部门助理 相关新闻视频 少花钱多办事：为当今的非洲卫生系统提供资金 全球卫生 2025 年 11 月 18 日 全球卫生领导力计划为专业人员提供推动变革的工具 全球卫生 2025 年 11 月 13 日 哈佛人道主义倡议庆祝推进人道主义援助二十周年 全球健康 2025 年 10 月 30 日 获取最新公共卫生新闻 与哈佛陈氏商学院保持联系 订阅我们的时事通讯 在哈佛陈氏商学院释放您的潜力。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; USAID shutdown has led to deaths&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46041401"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://hsph.harvard.edu/news/usaid-shutdown-has-led-to-hundreds-of-thousands-of-deaths/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>在五个项目中构建编译器</title>
+      <link>https://kmicinski.com/functional-programming/2025/11/23/build-a-language/</link>
+      <description>&lt;p&gt;课程网站在这里：https://kmicinski。获得一些 x86-64 汇编语言的实践经验。我的课跟随Prof.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Build a Compiler in Five Projects&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46031220"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://kmicinski.com/functional-programming/2025/11/23/build-a-language/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;seattle_spring:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的标题编辑。假设 HN 处理标题的方式是自动的。&lt;p&gt;实际标题：“美国国际开发署关闭已导致数十万人死亡”&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;billy99k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不同意。这是情感勒索。这些国家的主管政府应该受到指责。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://hsph.harvard.edu/news/usaid-shutdown-has-led-to-hundreds-of-thousands-of-deaths/</guid>
-      <pubDate>Tue, 25 Nov 2025 01:32:37 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46041401</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;UncleOxidant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;提到的《Essentials of Compilation》一书在亚马逊上只需 24 美元。通常这样的书要贵得多。我订购了一份。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AdityaSanthosh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嗨，看起来是一门有趣的课程。我本科时没有学过编译器（我是电子专业的学生），但我一直是一名程序员，学习过 C 语言和一些低级语言。本课程是否需要任何编译器知识？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://kmicinski.com/functional-programming/2025/11/23/build-a-language/</guid>
+      <pubDate>Mon, 24 Nov 2025 07:14:55 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46031220</comments>
     </item>
     <item>
-      <title>谷歌新的“Aluminium OS”项目将 Android 引入 PC</title>
-      <link>https://www.androidauthority.com/aluminium-os-android-for-pcs-3619092/</link>
-      <description>&lt;p&gt;PC 上的 Android：迄今为止的故事 一年前，Android Authority 独家透露了谷歌支持 Android 作为其统一桌面操作系统的计划。 Google 是否要退役 ChromeOS 品牌？ “这证实了 Android 不会仅限于笔记本电脑；ROA。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Google's new 'Aluminium OS' project brings Android to PC&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46037591"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.androidauthority.com/aluminium-os-android-for-pcs-3619092/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>使用 C11 编写的具有 SIMD boost 的快速 EDN（可扩展数据表示法）读取器</title>
+      <link>https://github.com/DotFox/edn.c</link>
+      <description>&lt;p&gt;} 语法（可选，默认禁用） 🔤 扩展字符：\formfeed、\backspace 和八进制 \oNNN 文字（可选，默认禁用） 📝 元数据：Clojure 风格的元数据 ^{. } 语法（可选，默认禁用） 📄 文本块：Java 风格的多行文本块 """\n.c # 使用 CMake 构建（适用于 MSVC、MinGW、Clang）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A fast EDN (Extensible Data Notation) reader written in C11 with SIMD boost&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46032230"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/DotFox/edn.c'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ProAm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有没有值得在 PC 上使用的 Android 应用？  不是尖酸刻薄，我看不出 Android 上有任何东西足以适合经常使用的桌面应用程序。  我使用的大多数 Android 应用程序都是“最好的、最差的”。我必须使用它们，因为没有其他选择。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;0manrho:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您像我一样想知道为什么 Google 认为它需要&lt;i&gt;另一个&lt;/i&gt;操作系统（ChromeOS、Android、Fuchsia - 大概已经死了（编辑&amp;#x2F;结果不是&amp;#x2F;编辑））或者它适合“堆栈”的位置：&lt;p&gt;&gt; ChromeOS 和铝操作系统 (ALOS) 涵盖所有外形规格（例如笔记本电脑、可拆卸设备、平板电脑和盒子）和级别（例如 Chromebook、Chromebook Plus、AL Entry、AL Mass Premium 和 AL Premium）的商业设备，可满足用户和企业的需求。&lt;p&gt;听起来 ChromeOS 是适用于入门级薄型和类似 PC 的 Android，而铝则更适合高端&amp;#x2F;溢价。&lt;p&gt;而且，说实话，这看起来并不像是“一个新操作系统”。对我来说，而是 Android 路线图的转变和相关的品牌重塑，试图推动 ChromeOS 和 Android 高端市场，并尝试扩展他们的“将 Gemini 的设备”作为一流服务的 Google AI 产品”。足迹超越了手机。&lt;p&gt;考虑到 ARM 在消费 PC 领域的推动力，即使你把人工智能的东西放在一边，我也能理解为什么谷歌在这方面继续努力。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pjmlp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它将赢得 Longhorn 和 Midori 由于政治原因而失败的地方。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xmprt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇文章的全部基础——谣言是谷歌招聘网站上的一个职位发布……在所有设备上统一 Android 是谷歌的圣杯，十多年来他们一直在为此招聘。我认为我们不必读这么多。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChocolateGod:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;等不及像手机上的 Android 一样，OEM 负责为笔记本电脑提供更新，如果您的笔记本电脑使用时间超过 3 年，祝您好运。&lt;p&gt;与当前由 Google 负责所有更新的 ChromeOS 甚至与 Microsoft 向所有人提供相同更新的 Windows 相比，这似乎是一个很大的降级。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zacharyvoase:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你说铝？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wslh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;奇怪的是 ChromeOS Flex 没有被提及，我想知道我们是否只是在更改名称并添加一些附加功能。我不认为这是一个操作系统，不是基于Linux的，就像Fuchsia一样。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;charcircuit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对此感到很兴奋，因为它将让台式机更接近手机的安全性。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bsimpson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那篇文章几乎无法阅读，因为内容经常变化，大概是由于广告脚本很糟糕。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lawlessone:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一台要求每个开发人员在谷歌注册血型的电脑？我在哪里注册&lt;p&gt;编辑：对于所有 iOS 和 MacOS 问题主义者，出于同样的原因，我没有任何 Apple 设备，所以不确定您想表达什么观点。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;coffeebeqn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Linux 在各方面都更好&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.androidauthority.com/aluminium-os-android-for-pcs-3619092/</guid>
-      <pubDate>Mon, 24 Nov 2025 18:49:47 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46037591</comments>
-    </item>
-    <item>
-      <title>面向对象编程的五十度灰</title>
-      <link>https://lesleylai.info/en/fifty_shades_of_oop/</link>
-      <description>&lt;p&gt;语法包括方法定义和方法调用。 Python 和 Rust 从一开始就解决了这个问题，而 C++ 通过推导这个问题，在 C++23 中解决了这个问题。这可能会导致通用代码出现问题。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Fifty Shades of OOP&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46032148"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://lesleylai.info/en/fifty_shades_of_oop/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisMarshallNY:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直认为它是一个“对象”。成为具有身份和状态的数据。&lt;p&gt;所有其他东西，如多态性、封装等，我认为是“插件”。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jolt42:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的面向对象项目通常使用带有数据库的 Java 语言。它们都与马丁·福勒所说的贫血领域模型发生了冲突。基本上你的对象只是数据，所以没有任何好处。此外，Spring 注入变得无处不在，并进一步杀死了具有行为的对象。唯一使用数据库并且具有具有行为的对象的项目是一个旧项目，它碰巧使用 TopLink 作为 OR 映射。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tracker1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在阅读时发表评论...&lt;p&gt;关于类，我明白了...tbf，虽然我对原型继承也很好，但这两种方法都有优点和缺点...更不用说，不真正拥有任何一种方法，而只是拥有可以查询的对象，甚至在创建时静态分配的对象（结构）都有好处。&lt;p&gt;对我来说，方法语法有趣的是，我实际上不喜欢混合保存数据的类和经常做事情的类。  我的意思是，我明白了这些概念，但我只是一般不喜欢这种方法。  唯一的例外可能是带有模型（状态）和视图句柄的控制器...但即便如此，数据本身（模型）作为参考也是分开的，并且不会倾向于将太多的状态变体附加到任何东西...我通常是单一状态树方法的粉丝（通常用于游戏，并且以 Redux 闻名）。&lt;p&gt;关于信息隐藏...我通常不太喜欢隐藏成员的成员用于保存数据的对象...我的意思是，当您将某些内容传递到系统边缘时，我可以看到过滤器，例如通过 api 公开的用户对象上的散列密码。  但在内部，我几乎宁愿将不变性视为第一类，而不是锁定零碎的东西，然后公开成员方法以在内部改变对象。  只是我自己的看法。&lt;p&gt;关于封装，就像上面一样......我更倾向于面向数据的设计方法。  对我来说，这就是你拥有 API 表面的地方，就像上面一样，我倾向于将执行操作的模块和类与保存数据的模板和模型类分开。&lt;p&gt;我在接口上混合使用。它们对于插件系统或当你有一个事物的多个不同实现时绝对有用......但在使用 C# 几十年后，它们肯定被高估了，过度使用。&lt;p&gt;对后期绑定和动态调度没有强烈的意见...除了我有时在动态语言环境（JS）中确实很欣赏它。&lt;p&gt;在我看来，继承和子类型与接口类似，有些被高估了...我只是尽量避免使用它们。  也有例外，我现在正在项目中积极使用它，但通常情况下，它只会增加过度的复杂性。  通过基于原型的继承，还可能在无意中真正减慢某些进程的速度。&lt;p&gt;消息传递方法的强烈支持者...它通常会根据您在给定点需要了解的表面来简化解决方案。  允许您构建决策树和更简单函数的管道。&lt;p&gt;总体而言很有趣...但仍然不喜欢我在实践中必须处理的一些过度使用 OOP 的情况。  我只是更喜欢以稍微不同的方式分解问题......有时会模糊清晰的分隔线以获得更简单的整体，有时只是以不同的方式绘制线条，因为它们对我来说对于给定的用例进行分解更有意义。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dmux:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于消息传递和后期绑定，我认为重要的是要考虑到 Alan Kay 正在开发 Smalltalk——一个基于图像的系统；一个可以在运行时更改内容的系统。我认为消息传递和后期绑定通常受到拥护，但考虑到标准部署技术：构建和部署，却有些失败。部署（通常部署到临时运行时容器）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MarkusQ:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我原以为这是一个关于 Java 旨在吸引那些热衷 SM&amp;#x2F;B&amp;amp;D 的人的老笑话的戏剧。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://lesleylai.info/en/fifty_shades_of_oop/</guid>
-      <pubDate>Mon, 24 Nov 2025 09:40:32 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46032148</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;HexDecOctBin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;元数据功能可以用于符合人体工程学地模拟 HTML 属性吗？从文档中尚不清楚，并且规范似乎根本没有记录该功能。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Jeaye:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太棒了。感谢您制作它并获得麻省理工学院的许可。我认为这是取代 jank 中词法分析器的有力竞争者。明年我会做一些基准测试，我们拭目以待！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;medv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;SIMD 和 WASM 的实现令人印象深刻！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/DotFox/edn.c</guid>
+      <pubDate>Mon, 24 Nov 2025 09:51:45 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46032230</comments>
     </item>
   </channel>
 </rss>
