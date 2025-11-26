@@ -6,18 +6,133 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Wed, 26 Nov 2025 09:27:47 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Nov 2025 12:52:34 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>Statistical Process Control in Python</title>
-      <link>https://timothyfraser.com/sigma/statistical-process-control-in-python.html</link>
-      <description>&lt;p&gt;16 Statistical Process Control in Python Figure 2. 1: Statistical Process Control. import pandas as pd from plotnine import * Custom Functions This workshop uses custom functions from the functions/ directory.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46055421"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://timothyfraser.com/sigma/statistical-process-control-in-python.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://timothyfraser.com/sigma/statistical-process-control-in-python.html</guid>
-      <pubDate>Wed, 26 Nov 2025 08:40:29 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46055421</comments>
+      <title>Await Is Not a Context Switch: Understanding Python's Coroutines vs. Tasks</title>
+      <link>https://mergify.com/blog/await-is-not-a-context-switch-understanding-python-s-coroutines-vs-tasks</link>
+      <description>&lt;p&gt;Only tasks create concurrency. Tasks are where concurrency comes from, not coroutines. Concurrency exists only across tasks and only at actual suspension points.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46056197"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://mergify.com/blog/await-is-not-a-context-switch-understanding-python-s-coroutines-vs-tasks'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 23 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tgsovlerkhgsel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The main takeaway for me is that in Python, this doesn&amp;#x27;t work:&lt;p&gt;&lt;pre&gt;&lt;code&gt;    async def somethingLongRunning():
+       ...
+
+    x = somethingLongRunning()
+    ... other work that will take a lot of time ...
+    await x  # with the expectation that this will be instant if the other work was long enough&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zbentley:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This article&amp;#x27;s incomplete&amp;#x2F;flawed, I&amp;#x27;m afraid.&lt;p&gt;And like ... I take no pleasure in calling that out, because I have been &lt;i&gt;exactly where the author is&lt;/i&gt; when they wrote it: dealing with reams of async code that doesn&amp;#x27;t actually make anything concurrent, droves of engineers convinced that &amp;quot;if my code says async&amp;#x2F;await then it&amp;#x27;s automagically performant &lt;i&gt;a la&lt;/i&gt; Golang&amp;quot;, and complex and buggy async control flows which all wrap synchronous, blocking operations in a threadpool at the bottom anyway.&lt;p&gt;But it&amp;#x27;s still wrong and incomplete in several ways.&lt;p&gt;First, it conflates task creation with deferred task start. Those two behaviors are unrelated. Calling &amp;quot;await asyncfunc()&amp;quot; spins the generator in asyncfunc(); calling &amp;quot;await create_task(asyncfunc())&amp;quot; does, too. Calling &amp;quot;create_task(asyncfunc())&amp;quot; without &amp;quot;await&amp;quot; enqueues asyncfunc() on the task list so that the &lt;i&gt;event loop&lt;/i&gt; spins its generator next time control is returned to the loop.&lt;p&gt;Second, as other commenters have pointed out, it mischaracterizes competing concurrency systems (Loom&amp;#x2F;C#&amp;#x2F;JS).&lt;p&gt;Third, its catchphrase of &amp;quot;you must call create_task() to be concurrent&amp;quot; is incomplete--some very common parts of the stdlib call create_task() for you, e.g. asyncio.gather() and others. Search for &amp;quot;automatically scheduled as a Task&amp;quot; in &lt;a href="https:&amp;#x2F;&amp;#x2F;docs.python.org&amp;#x2F;3&amp;#x2F;library&amp;#x2F;asyncio-task.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;docs.python.org&amp;#x2F;3&amp;#x2F;library&amp;#x2F;asyncio-task.html&lt;/a&gt;&lt;p&gt;Fourth--and this seems like a nitpicky edge case but I&amp;#x27;ve seen a surprising amount of code that ends up depending on it without knowing that it is--&amp;quot;await on coroutine doesn&amp;#x27;t suspend to the event loop&amp;quot; is only &lt;i&gt;usually&lt;/i&gt; true. There are a few special non-Task awaitables that &lt;i&gt;do&lt;/i&gt; yield back to the loop (the equivalent of process.nextTick from JavaScript).&lt;p&gt;To illustrate this, consider the following code:&lt;p&gt;&lt;pre&gt;&lt;code&gt;    async def sleep_loop():
+        while True:
+            await asyncio.sleep(1)
+            print(&amp;quot;Sleep loop&amp;quot;)
+
+    async def noop():
+        return None
+
+    async def main():
+        asyncio.create_task(sleep_loop())
+        while True:
+            await noop()
+&lt;/code&gt;&lt;/pre&gt;
+As written, this supports the article&amp;#x27;s first section: the code will busy-wait forever in while-True-await-noop() and never print &amp;quot;Sleep loop&amp;quot;.&lt;p&gt;Related to my first point above, if &amp;quot;await noop()&amp;quot; is replaced with &amp;quot;await create_task(noop())&amp;quot; the code will still busy loop, but will yield&amp;#x2F;nextTick-equivalent each iteration of the busy loop, so &amp;quot;Sleep loop&amp;quot; will be printed. Good so far.&lt;p&gt;But what if &amp;quot;await noop()&amp;quot; is replaced with &amp;quot;await asyncio.sleep(0)&amp;quot;? asyncio.sleep is special: it&amp;#x27;s a regular pure-python &amp;quot;async def&amp;quot;, but it uses a pair of async intrinsic behaviors (a tasks.coroutine whose body is just &amp;quot;yield&amp;quot; for sleep-0, or a asyncio.Future for sleep-nonzero). Even if the busy-wait is awaiting sleep-0 and no futures&amp;#x2F;tasks are being touched, it still yields. This special behavior confuses several of the examples in the article&amp;#x27;s code, since &amp;quot;await returns-right-away&amp;quot; and &amp;quot;await asyncio.sleep(0)&amp;quot; are &lt;i&gt;not&lt;/i&gt; behaviorally equivalent.&lt;p&gt;Similarly, if &amp;quot;await noop()&amp;quot; is replaced with &amp;quot;await asyncio.futures.Future()&amp;quot;, the task runs. This hints at the &lt;i&gt;real&lt;/i&gt; Python asyncio maxims (which, credit where it&amp;#x27;s due, the article gets pretty close to!):&lt;p&gt;&lt;pre&gt;&lt;code&gt;    Async operations in Python can only interleave (and thus be concurrent) if a given coroutine&amp;#x27;s stack calls &amp;quot;await&amp;quot; on:
+       1. A non-completed future.
+       2. An internal intrinsic awaitable which yields to the loop.
+       3. One of a few special Python function forms which are treated equivalently to the above.
+     Tasks do two things:
+       1. Schedule a coroutine to be &amp;quot;await&amp;quot;ed by the event loop itself when it is next yielded to.
+       2. Provide a Future-based handle that can optionally be used to directly wait for that coroutine&amp;#x27;s completion when the loop runs it.
+     (As underlined in the article) everything interesting with Python&amp;#x27;s async concurrency uses Tasks. 
+     Wrapping Tasks are often automatically&amp;#x2F;implicitly created by the stdlib or other functions that run supplied coroutines.&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mono442:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I&amp;#x27;m pretty sure that this post is not right. JS behaves the same way Python does in this example. Not sure about C#, though I suspect it is no different.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anentropic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I haven&amp;#x27;t done much async Python (much more gevent, years ago) but must admit I had exactly the misconception this is describing... Good to know!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chompychop:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Asynchronous and parallel programming are concepts I&amp;#x27;ve never really learned, and admittedly scared to use, because I never really understand what the code is doing or even the right way of writing such code. Does anyone have any good resources that helped you learn this and have a good mental model of the concepts involved?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;derangedHorse:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Ironically, by trying to explain awaitables in Python through comparison with other languages, the author shows how much he doesn’t understand the asynchronous models of other languages lol&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LelouBil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;How does this compare to Kotlin&amp;#x27;s supend and coroutines ? (which I am most familiar with)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;scribu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; Awaiting a coroutine does not give control back to the event loop.&lt;p&gt;I think this is a subtler point than one might think on first read, which is muddled due to the poorly chosen examples.&lt;p&gt;Here&amp;#x27;s a better illustration:&lt;p&gt;&lt;pre&gt;&lt;code&gt;  import asyncio
+  
+  async def child():
+      print(&amp;quot;child start&amp;quot;)
+      await asyncio.sleep(0)
+      print(&amp;quot;child end&amp;quot;)
+  
+  async def parent():
+      print(&amp;quot;parent before&amp;quot;)
+      await child()        # &amp;lt;-- awaiting a coroutine (not a task)
+      print(&amp;quot;parent after&amp;quot;)
+  
+  async def other():
+      for _ in range(5):
+          print(&amp;quot;other&amp;quot;)
+          await asyncio.sleep(0)
+  
+  async def main():
+      other_task = asyncio.create_task(other())
+      parent_task = asyncio.create_task(parent())
+      await asyncio.gather(other_task, parent_task)
+      
+  asyncio.run(main())
+
+&lt;/code&gt;&lt;/pre&gt;
+It prints:&lt;p&gt;&lt;pre&gt;&lt;code&gt;  other
+  parent before
+  child start
+  other
+  child end
+  parent after
+  other
+  other
+  other
+&lt;/code&gt;&lt;/pre&gt;
+So the author&amp;#x27;s point is that &amp;quot;other&amp;quot; can never appear in-between &amp;quot;parent before&amp;quot; and &amp;quot;child start&amp;quot;.&lt;p&gt;Edit: clarification&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;6r17:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;For anyone somewhat interested in task &amp;amp; scheduling I highly recommend phil-op tutorial on building a kernel - there is a late branch on the github that specifically focus on asynchronous task - I implemented multi-core this week and it high a profound enlightenment on what the f* was actually going on. This is something Claude &amp;#x2F; Gemini helped me achieve so I didn&amp;#x27;t require me to spend nights on kernel debugging methodology &amp;amp; documentation ; Best experience I could get on async&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;twoodfin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;My New Year’s Resolution will be to give up complaining about this on hn, but for now:&lt;p&gt;I find ChatGPT’s style and tone condescending and bland to the point of obfuscating whatever was unique, thoughtful and insightful in the original prompt.&lt;p&gt;Trying to reverse-engineer the “Not this: That!” phrasing, artificial narrative drama &amp;amp; bizarre use of emphasis to recapture that insight and thought is not something I’m at all enthusiastic to do.&lt;p&gt;Perhaps a middle ground: HN could support a “prompt” link to the actual creative seed?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xill47:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Both examples do the same in C#, together with explanation that couroutine is executed synchronously until hitting a real pause point. Change `asyncio.create_task` to `Task.Run` and that&amp;#x27;s exactly the same behavior in the second example as well.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adammarples:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;If this&lt;p&gt;await asyncio.sleep(0)&lt;p&gt;doesn&amp;#x27;t yield control back to an event loop, then what the heck is it actually for?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pansa2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Is this the same as the distinction between a model in which async functions &amp;quot;run synchronously to the first await&amp;quot; vs one in which they &amp;quot;always yield once before executing&amp;quot;, as discussed here?&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;rust&amp;#x2F;comments&amp;#x2F;8aaywk&amp;#x2F;async_await_in_rust_a_full_proposal&amp;#x2F;dwxjjo2&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;rust&amp;#x2F;comments&amp;#x2F;8aaywk&amp;#x2F;async_await_in...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CjHuber:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I mean of course the post does have a very valid point but it almost repeats like a mantra if there are no
+asyncio.create_task in your code it’s not concurrent.
+I mean it should probably at least mention asyncio.gather which IMO would be also much better to explain the examples with&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noobcoder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;but how would you systematically audit a large async codebase to find all the hidden interleave points, unnecessary locks?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jdranczewski:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I may be misunderstanding it, but the examples shown don&amp;#x27;t seem to be illustrative? It seems reasonably obvious that the prints will happen in this order in any language, because in example 1 we are explicitly (a)waiting for the child to finish, and in example 2 both of the parent prints are above the await. So I don&amp;#x27;t feel like either of these makes the point the author is trying to get across?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zdc1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Personally, I&amp;#x27;ve never been able to make async work properly with Python. In Node.js I can schedule enough S3 ListBucket network requests in parallel to use 100% of my CPU core, by just mapping an array of prefixes into an array of ListBucket Promises. I can then do a Promise.all() and let them happen.&lt;p&gt;In Python there&amp;#x27;s asyncio vs threading, and I feel there&amp;#x27;s just too much to navigate to quickly get up and running. Do people just somehow learn this just when they need it? Is anyone having fun here?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mazswojejzony:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Maybe I&amp;#x27;m nitpicking a bit but the second concrete example shows different flow in the parent method compared to the first one. If the second example would be a modification of the first one like shown below the output would be the same in both cases.&lt;p&gt;&lt;pre&gt;&lt;code&gt;  async def parent():
+      print(&amp;quot;parent before&amp;quot;)
+      task = asyncio.create_task(child())   # &amp;lt;-- spawn a task
+      await task
+      print(&amp;quot;parent after&amp;quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sandblast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;For the JS developers: similar useful behavior (and more!) can be implemented in JS using the wonderful Effection library.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;effection-www.deno.dev&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;effection-www.deno.dev&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reactordev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is gold.&lt;p&gt;Here’s a horror story for you.&lt;p&gt;A few years ago I worked for this startup as a principal engineer. The engineering manager kept touting how he was from XYZ and that he ran Pythonista meetups and how vast his knowledge of Python was. We were building a security product and needed to scan hundreds of thousands of documents quickly so we built a fan out with coroutines. I came on board well into this effort to assist in adding another adapter to this other platform that worked similarly. After seeing all the coroutines, being pickled and stored in S3, so that nodes could “resume” if they crashed yet - not a single create_task was present. All of this awaiting, pickling, attempting to resume, check, stuff, report, pickle, happened synchronously.&lt;p&gt;When trying to point out the issue with the architecture and getting into a shouting match with Mr. Ego, I was let go.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pandaxtc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Sorry if I&amp;#x27;ve got this wrong, but wouldn&amp;#x27;t the first example behave the same way in Javascript as well? The function parent() &amp;quot;awaits&amp;quot; the completion of child(), so it wouldn&amp;#x27;t be possible to interleave the print statements.&lt;p&gt;The example from this StackOverflow question might be a better demonstration: &lt;a href="https:&amp;#x2F;&amp;#x2F;stackoverflow.com&amp;#x2F;q&amp;#x2F;63455683" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;stackoverflow.com&amp;#x2F;q&amp;#x2F;63455683&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vamega:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The article’s understanding of Java’s Virtual Threads is incorrect. Virtual threads have a preemptive concurrency model, not a co-operative one, so suspension points are not only at calls to things like Future.get()&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oersted:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Just to note the it&amp;#x27;s the same in Rust with tokio::spawn (and alternatives).&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://mergify.com/blog/await-is-not-a-context-switch-understanding-python-s-coroutines-vs-tasks</guid>
+      <pubDate>Wed, 26 Nov 2025 11:00:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46056197</comments>
+    </item>
+    <item>
+      <title>Image Diffusion Models Exhibit Emergent Temporal Propagation in Videos</title>
+      <link>https://arxiv.org/abs/2511.19936</link>
+      <description>&lt;p&gt;) Connected Papers Toggle Connected Papers (What is Connected Papers. ) Litmaps Toggle Litmaps (What is Litmaps. ) Links to Code Toggle Papers with Code (What is Papers with Code.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46055177"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arxiv.org/abs/2511.19936'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;onesandofgrain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Can someone smarter than me explain what this is about?&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arxiv.org/abs/2511.19936</guid>
+      <pubDate>Wed, 26 Nov 2025 07:55:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46055177</comments>
+    </item>
+    <item>
+      <title>Cekura (YC F24) Is Hiring</title>
+      <link>https://www.ycombinator.com/companies/cekura-ai/jobs/0ZGLW69-forward-deployed-engineer-us</link>
+      <description>&lt;p&gt;We’re building the reliability layer for Conversational Agents. As Forward Deployed Engineer, you’ll build the playbooks, processes, and relationships that define how Cekura partners with technical customers for long-term success. Cekura is a Y Combinator–backed startup redefining AI voice agent reliability.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46056583"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/cekura-ai/jobs/0ZGLW69-forward-deployed-engineer-us'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.ycombinator.com/companies/cekura-ai/jobs/0ZGLW69-forward-deployed-engineer-us</guid>
+      <pubDate>Wed, 26 Nov 2025 12:01:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46056583</comments>
     </item>
   </channel>
 </rss>

@@ -6,19 +6,136 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 26 Nov 2025 09:27:47 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Nov 2025 12:52:34 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Python 中的统计过程控制</title>
-      <link>https://timothyfraser.com/sigma/statistical-process-control-in-python.html</link>
-      <description>&lt;p&gt;16 Python 中的统计过程控制 图 2.1：统计过程控制。 import pandas as pd fromplotnine import * 自定义函数 本研讨会使用functions/目录中的自定义函数。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Statistical Process Control in Python&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46055421"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://timothyfraser.com/sigma/statistical-process-control-in-python.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://timothyfraser.com/sigma/statistical-process-control-in-python.html</guid>
-      <pubDate>Wed, 26 Nov 2025 08:40:29 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46055421</comments>
+      <title>Await 不是上下文切换：了解 Python 的协程与任务</title>
+      <link>https://mergify.com/blog/await-is-not-a-context-switch-understanding-python-s-coroutines-vs-tasks</link>
+      <description>&lt;p&gt;只有任务才能创建并发性。并发来自任务，而不是协程。并发仅存在于任务之间并且仅存在于实际挂起点。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Await Is Not a Context Switch: Understanding Python's Coroutines vs. Tasks&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46056197"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://mergify.com/blog/await-is-not-a-context-switch-understanding-python-s-coroutines-vs-tasks'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 23 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tgsovlerkhgsel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对我来说，主要的收获是，在 Python 中，这是行不通的：&lt;p&gt;&lt;pre&gt;&lt;code&gt; async def SomethingLongRunning():
+       ...
+
+    x = 某物LongRunning()
+    ...其他需要花费大量时间的工作...
+    wait x # 期望如果其他工作足够长，这将是即时的&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zbentley:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇文章不完整，有缺陷，我担心。&lt;p&gt;就像……我不乐意指出这一点，因为我&lt;i&gt;完全处于作者写这篇文章时的位置&lt;/i&gt;：处理大量异步代码，但实际上并没有使任何东西并发，成群结队的工程师相信“如果我的代码说异步”然后等待它的自动性能&lt;i&gt;a&lt;/i&gt;Golang”，以及复杂且有缺陷的异步控制流，无论如何，它们都将同步、阻塞操作包装在底部的线程池中。&lt;p&gt;但它在几个方面仍然是错误和不完整的。&lt;p&gt;首先，它将任务创建与延迟任务启动混为一谈。这两种行为是无关的。调用“await asyncfunc()”在 asyncfunc() 中旋转生成器；调用“await create_task(asyncfunc())”也是如此。调用“create_task(asyncfunc())”没有“等待”将 asyncfunc() 排入任务列表，以便&lt;i&gt;事件循环&lt;/i&gt;在下次控制返回到循环时旋转其生成器。&lt;p&gt;第二，正如其他评论者指出的那样，它错误地描述了竞争并发系统 (Loom&amp;#x2F;C#&amp;#x2F;JS)。&lt;p&gt;第三，它的口号“您必须调用 create_task() 才能并发”。不完整 - stdlib 的一些非常常见的部分为您调用 create_task() ，例如asyncio.gather() 等。搜索“自动安排为任务”在 &lt;a href="https:&amp;#x2F;&amp;#x2F;docs.python.org&amp;#x2F;3&amp;#x2F;library&amp;#x2F;asyncio-task.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;docs.python.org&amp;#x2F;3&amp;#x2F;library&amp;#x2F;asyncio-task.html&lt;/a&gt;&lt;p&gt;第四——这看起来像是一个挑剔的边缘情况，但我已经看到了令人惊讶的大量代码最终依赖于它，而不知道它是——“等待协程”不挂起到事件循环”仅&lt;i&gt;通常&lt;/i&gt;为真。有一些特殊的非任务可等待项&lt;i&gt;do&lt;/i&gt;返回到循环（相当于 JavaScript 中的 process.nextTick）。&lt;p&gt;为了说明这一点，请考虑以下代码：&lt;p&gt;&lt;pre&gt;&lt;code&gt; async def sleep_loop()：
+        而真实：
+            等待 asyncio.sleep(1)
+            print("睡眠循环")
+
+    异步 def noop():
+        返回无
+
+    异步 def main():
+        asyncio.create_task(sleep_loop())
+        而真实：
+            等待 noop()
+&lt;/code&gt;&lt;/pre&gt;
+正如所写，这支持了文章的第一部分：代码将在 while-True-await-noop() 中永远忙等待，并且永远不会打印“睡眠循环”。&lt;p&gt;与我上面的第一点相关，如果“await noop()”是替换为“await create_task(noop())”代码仍将处于繁忙循环状态，但会在繁忙循环的每次迭代中产生与 nextTick 等效的值，因此“睡眠循环”将被执行。将被打印。到目前为止还不错。&lt;p&gt;但是如果“await noop()”被替换为“await asyncio.sleep(0)”？ asyncio.sleep 很特殊：它是一个常规的纯 python“async def”，但它使用一对异步内部行为（一个tasks.coroutine，其主体只是“yield”（对于 sleep-0），或者 asyncio.Future（对于 sleep-nonzero）。即使 busy-wait 正在等待 sleep-0 并且没有触及 future 任务，它仍然会产生。这种特殊行为混淆了本文代码中的几个示例，因为“等待立即返回”和“等待 asyncio.sleep(0)” &lt;i&gt;不&lt;/i&gt;在行为上是等价的。&lt;p&gt;类似地，如果“await noop()”是等价的。替换为“await asyncio.futures.Future()”，任务运行。这暗示了&lt;i&gt;真正的&lt;/i&gt; Python asyncio 格言（值得称赞的是，本文非常接近！）：&lt;p&gt;&lt;pre&gt;&lt;code&gt; 如果给定协程的堆栈调用“await”，Python 中的异步操作只能交错（因此是并发的）。于：
+       1. 未完成的未来。
+       2. 产生循环的内部内在等待。
+       3. 几种特殊的 Python 函数形式之一，其处理方式与上述函数形式相同。
+     任务做两件事：
+       1.安排协程在下次屈服时由事件循环本身“等待”。
+       2. 提供一个基于 Future 的句柄，可以选择使用该句柄在循环运行协程时直接等待该协程完成。
+     （正如文章中所强调的）Python 异步并发中所有有趣的事情都使用任务。 
+     包装任务通常由 stdlib 或运行提供的协程的其他函数自动隐式创建。&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mono442:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很确定这篇文章是不正确的。在此示例中，JS 的行为与 Python 的行为相同。不确定 C#，但我怀疑它没有什么不同。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anentropic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我还没有做过太多的异步Python（几年前更多的是gevent），但必须承认我确实有这样的误解......很高兴知道！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chompychop:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;异步和并行编程是我从未真正学习过的概念，并且诚然不敢使用，因为我从未真正理解代码在做什么，甚至不知道编写此类代码的正确方法。有没有人有任何好的资源可以帮助您学习这一点并对所涉及的概念有一个良好的心理模型？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;derangedHorse:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;讽刺的是，通过与其他语言的比较来解释 Python 中的等待，作者表明他对其他语言的异步模型有多么不理解哈哈&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LelouBil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这与 Kotlin 的挂起和协程相比如何？ （我最熟悉的）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;scribu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;等待协程不会将控制权交还给事件循环。&lt;p&gt;我认为这是一个比第一次阅读时想象的更微妙的点，由于选择不当的示例而令人困惑。&lt;p&gt;这是一个更好的说明：&lt;p&gt;&lt;pre&gt;&lt;code&gt; import asyncio
+  
+  异步 def child():
+      print("子进程开始")
+      等待 asyncio.sleep(0)
+      print("子结束")
+  
+  异步定义父级（）：
+      print("父级之前")
+      wait child() # &lt;-- 等待协程（不是任务）
+      print("父级之后")
+  
+  异步 def other():
+      对于范围（5）内的 _：
+          打印（“其他”）
+          等待 asyncio.sleep(0)
+  
+  异步 def main():
+      other_task = asyncio.create_task(other())
+      parent_task = asyncio.create_task(parent())
+      等待 asyncio.gather(other_task,parent_task)
+      
+  asyncio.run（主（））
+
+&lt;/code&gt;&lt;/pre&gt;
+它打印：&lt;p&gt;&lt;pre&gt;&lt;code&gt; 其他
+  之前的父母
+  儿童开始
+  其他
+  子端
+  家长之后
+  其他
+  其他
+  其他
+&lt;/code&gt;&lt;/pre&gt;
+所以作者的观点是“其他”永远不能出现在“parent before”和“parent before”之间和“子启动”。&lt;p&gt;编辑：澄清&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;6r17:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于任何对任务和任务感兴趣的人我强烈推荐关于构建内核的 phil-op 教程 - github 上有一个后期分支专门关注异步任务 - 我本周实现了多核，它对 f* 实际发生的情况有深刻的启发。这是克劳德&amp;#x2F;的东西。 Gemini 帮助我实现了这一目标，因此我不需要我花几个晚上的时间来研究内核调试方法和方法。文档；我在异步方面可以获得的最佳体验&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;twoodfin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的新年决心是放弃在 hn 上抱怨这一点，但现在：&lt;p&gt;我发现 ChatGPT 的风格和语气居高临下且平淡无奇，以至于混淆了原始提示中独特、深思熟虑和富有洞察力的内容。&lt;p&gt;尝试对“不是这个：那个！”进行逆向工程。措辞、人工叙事戏剧和奇怪地使用强调来重新捕捉洞察力和思想并不是我热衷于做的事情。&lt;p&gt;也许有一个中间立场：HN 可以支持与实际创意种子的“提示”链接？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xill47:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这两个示例在 C# 中执行相同的操作，并说明协程是同步执行的，直到遇到真正的暂停点。将 `asyncio.create_task` 更改为 `Task.Run`，这与第二个示例中的行为完全相同。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adammarples:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果这个&lt;p&gt;await asyncio.sleep(0)&lt;p&gt;不能将控制权交还给事件循环，那么它到底是做什么用的呢？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pansa2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这与异步函数“与第一个等待同步运行”的模型和“与第一个等待同步运行”的模型之间的区别相同吗？与此处讨论的“执行前总是让步一次”相比？&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;rust&amp;#x2F;评论&amp;#x2F;8aaywk&amp;#x2F;async_await_in_rust_a_full_proposal&amp;#x2F;dwxjjo2&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;rust&amp;#x2F;评论&amp;#x2F;8aaywk&amp;#x2F;async_await_in...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CjHuber:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的意思是，当然这篇文章确实有一个非常有效的观点，但如果没有的话，它几乎就像口头禅一样重复
+代码中的 asyncio.create_task 它不是并发的。
+我的意思是它可能至少应该提到 asyncio.gather，IMO 也可以更好地解释这些示例&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noobcoder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;但是如何系统地审核大型异步代码库以找到所有隐藏的交错点和不必要的锁？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jdranczewski:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我可能误解了它，但是显示的示例似乎不具有说明性？似乎相当明显的是，在任何语言中，打印都会按此顺序发生，因为在示例 1 中，我们明确 (a) 等待子进程完成，而在示例 2 中，两个父打印都位于等待之上。所以我不觉得这些都不能说明作者想要表达的观点吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zdc1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就我个人而言，我从来没有能够让 async 在 Python 中正常工作。在 Node.js 中，我只需将一组前缀映射到一组 ListBucket Promises 中，就可以并行安排足够的 S3 ListBucket 网络请求，以使用 100% 的 CPU 核心。然后我可以执行 Promise.all() 并让它们发生。&lt;p&gt;在 Python 中，有异步与线程，我觉得要快速启动和运行需要导航的东西太多了。人们是否只是在需要时才以某种方式学习这一点？有人在这里玩得开心吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mazswojejzony:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也许我有点吹毛求疵，但第二个具体示例显示了父方法中与第一个示例不同的流程。如果第二个示例是第一个示例的修改，如下所示，则两种情况下的输出将相同。&lt;p&gt;&lt;pre&gt;&lt;code&gt; async defparent():
+      print("父级之前")
+      task = asyncio.create_task(child()) # &lt;-- 生成一个任务
+      等待任务
+      print("父级之后")&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sandblast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于 JS 开发人员：可以使用精彩的 Effection 库在 JS 中实现类似的有用行为（以及更多！）。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;effection-www.deno.dev&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;effection-www.deno.dev&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reactordev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是黄金。&lt;p&gt;这是一个给你讲的恐怖故事。&lt;p&gt;几年前，我在这家初创公司担任首席工程师。这位工程经理不断吹捧他来自 XYZ，他举办了 Pythonista 聚会，以及他对 Python 的了解有多么丰富。我们正在构建一个安全产品，需要快速扫描数十万份文档，因此我们使用协程构建了一个扇出。我很好地参与了这项工作，以协助向另一个工作类似的平台添加另一个适配器。在查看所有协程之后，将其腌制并存储在 S3 中，以便节点在崩溃时可以“恢复”——不存在任何 create_task。所有这些等待、腌制、尝试恢复、检查、填充、报告、腌制，都是同步发生的。&lt;p&gt;当我试图指出架构的问题并与自我先生发生争吵时，我被放走了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pandaxtc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;抱歉，如果我弄错了，但是第一个示例在 Javascript 中的行为难道不是相同的吗？函数parent()“等待” child() 的完成，因此不可能交错打印语句。&lt;p&gt;此 StackOverflow 问题中的示例可能是更好的演示：&lt;a href="https:&amp;#x2F;&amp;#x2F;stackoverflow.com&amp;#x2F;q&amp;#x2F;63455683" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;stackoverflow.com&amp;#x2F;q&amp;#x2F;63455683&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vamega:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;文章对Java虚拟线程的理解是不正确的。虚拟线程具有抢占式并发模型，而不是协作式模型，因此挂起点不仅仅出现在对 Future.get() 之类的调用处&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oersted:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只是要注意，Rust 中的 tokio::spawn （和替代方案）是一样的。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://mergify.com/blog/await-is-not-a-context-switch-understanding-python-s-coroutines-vs-tasks</guid>
+      <pubDate>Wed, 26 Nov 2025 11:00:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46056197</comments>
+    </item>
+    <item>
+      <title>图像扩散模型在视频中表现出紧急的时间传播</title>
+      <link>https://arxiv.org/abs/2511.19936</link>
+      <description>&lt;p&gt;) Connected Papers Toggle Connected Papers（什么是 Connected Papers。） Litmaps Toggle Litmaps（什么是 Litmaps。） 代码链接 Toggle Papers with Code（什么是 Papers with Code。）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Image Diffusion Models Exhibit Emergent Temporal Propagation in Videos&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46055177"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arxiv.org/abs/2511.19936'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;onesandofgrain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有比我聪明的人能解释一下这是什么意思吗？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arxiv.org/abs/2511.19936</guid>
+      <pubDate>Wed, 26 Nov 2025 07:55:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46055177</comments>
+    </item>
+    <item>
+      <title>Cekura (YC F24) 正在招聘</title>
+      <link>https://www.ycombinator.com/companies/cekura-ai/jobs/0ZGLW69-forward-deployed-engineer-us</link>
+      <description>&lt;p&gt;我们正在为会话代理构建可靠性层。作为前沿部署工程师，您将构建剧本、流程和关系，定义 Cekura 如何与技术客户合作以获得长期成功。 Cekura 是一家由 Y Combinator 支持的初创公司，重新定义了 AI 语音代理的可靠性。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Cekura (YC F24) Is Hiring&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46056583"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/cekura-ai/jobs/0ZGLW69-forward-deployed-engineer-us'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.ycombinator.com/companies/cekura-ai/jobs/0ZGLW69-forward-deployed-engineer-us</guid>
+      <pubDate>Wed, 26 Nov 2025 12:01:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46056583</comments>
     </item>
   </channel>
 </rss>

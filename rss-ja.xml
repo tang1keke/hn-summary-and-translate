@@ -6,19 +6,136 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 26 Nov 2025 09:27:47 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Nov 2025 12:52:34 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>Python による統計的プロセス制御</title>
-      <link>https://timothyfraser.com/sigma/statistical-process-control-in-python.html</link>
-      <description>&lt;p&gt;16 Python による統計的プロセス制御 図 2.1: 統計的プロセス制御。 import pandas as pd from Lotnine import * カスタム関数 このワークショップでは、functions/ ディレクトリのカスタム関数を使用します。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Statistical Process Control in Python&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46055421"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://timothyfraser.com/sigma/statistical-process-control-in-python.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://timothyfraser.com/sigma/statistical-process-control-in-python.html</guid>
-      <pubDate>Wed, 26 Nov 2025 08:40:29 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46055421</comments>
+      <title>Await はコンテキスト スイッチではありません: Python のコルーチンとタスクを理解する</title>
+      <link>https://mergify.com/blog/await-is-not-a-context-switch-understanding-python-s-coroutines-vs-tasks</link>
+      <description>&lt;p&gt;同時実行性を生み出すのはタスクのみです。同時実行性はコルーチンではなくタスクから生まれます。同時実行性はタスク間でのみ、また実際の一時停止ポイントでのみ存在します。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Await Is Not a Context Switch: Understanding Python's Coroutines vs. Tasks&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46056197"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://mergify.com/blog/await-is-not-a-context-switch-understanding-python-s-coroutines-vs-tasks'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 23 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tgsovlerkhgsel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私にとっての主なポイントは、Python ではこれが機能しないということです:&lt;p&gt;&lt;pre&gt;&lt;code&gt; async def somethingLongRunning():
+       ...
+
+    x = 何かLongRunning()
+    ...その他の非常に時間がかかる作業 ...
+    await x # 他の作業が十分に長ければこれはすぐに完了することを期待します&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zbentley:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この記事には不完全な欠陥があり、残念です。&lt;p&gt;そして同様に…私は著者がこの記事を書いたとき&lt;i&gt;まさにその場所&lt;/i&gt;にいたため、そのことを指摘することに喜びを感じません。実際には何も同時実行しない大量の非同期コードを扱い、「私のコードが非同期と言ったら待っている」と確信しているエンジニアの数が多かったさらに、&lt;i&gt;Golang のように&lt;/i&gt;自動的にパフォーマンスが向上し、複雑でバグの多い非同期制御フローがすべて同期をラップし、いずれにしても下部のスレッドプールでブロック操作を実行します。&lt;p&gt;しかし、いくつかの点でまだ間違っており、不完全です。&lt;p&gt;まず、タスクの作成と遅延タスクの開始が混同されています。これら 2 つの動作には関連性がありません。 「await asyncfunc()」の呼び出しasyncfunc() でジェネレーターを回転させます。 「await create_task(asyncfunc())」を呼び出します。もそうです。 「create_task(asyncfunc())」の呼び出し「待つ」なしでasyncfunc() をタスク リストに登録し、次回制御がループに戻ったときに&lt;i&gt;イベント ループ&lt;/i&gt;がジェネレーターを回転させるようにします。&lt;p&gt;第二に、他のコメント投稿者が指摘しているように、競合する同時実行システム (Loom&amp;#x2F;C#&amp;#x2F;JS) の特徴を誤っています。&lt;p&gt;第三に、「実行するには create_task() を呼び出す必要があります」というキャッチフレーズです。同時」は不完全です -- stdlib のいくつかの非常に一般的な部分では、create_task() が自動的に呼び出されます。 asyncio.gather() など。 「タスクとして自動的にスケジュール」を検索します。 &lt;a href="https:&amp;#x2F;&amp;#x2F;docs.python.org&amp;#x2F;3&amp;#x2F;library&amp;#x2F;asyncio-task.html" 内rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;docs.python.org&amp;#x2F;3&amp;#x2F;library&amp;#x2F;asyncio-task.html&lt;/a&gt;&lt;p&gt;4 番目 -- これは細かい特殊なケースのように思えますが、私は、それがそうであることを知らずに依存してしまう驚くべき量のコードを見てきました -- 「待っています」コルーチンは「イベント ループまで中断しません」これは&lt;i&gt;通常&lt;/i&gt;のみ真実です。ループ (JavaScript の process.nextTick に相当) に戻り&lt;i&gt;る&lt;/i&gt; 特殊な非タスク待ち可能オブジェクトがいくつかあります。&lt;p&gt;これを説明するために、次のコードを考えてみましょう:&lt;p&gt;&lt;pre&gt;&lt;code&gt; async def sleep_loop():
+        True の場合:
+            asyncio.sleep(1) を待ちます
+            print("スリープ ループ")
+
+    非同期def noop():
+        なしを返す
+
+    非同期def main():
+        asyncio.create_task(sleep_loop())
+        True の場合:
+            noop() を待ちます
+&lt;/code&gt;&lt;/pre&gt;
+書かれているように、これは記事の最初のセクションをサポートしています。コードは while-True-await-noop() で永遠にビジー待機し、「スリープ ループ」を出力しません。&lt;p&gt;上記の最初の点に関連して、「await noop()」の場合、 「await create_task(noop())」に置き換えられます。コードは引き続きビジー ループになりますが、ビジー ループの各反復に相当する「nextTick」が生成されるため、「スリープ ループ」が実行されます。が印刷されます。ここまでは問題ありません。&lt;p&gt;しかし、「await noop()」が実行されたらどうなるでしょうか。 「await asyncio.sleep(0)」に置き換えられますか? asyncio.sleep は特別です。これは通常の純粋な Python の「async def」ですが、一対の非同期組み込み動作 (sleep-0 の場合は本体が単なる「yield」である task.coroutine、または sleep-nonzero の場合は asyncio.Future) を使用します。たとえビジーウェイトがスリープ 0 を待っていて、フューチャータスクがタッチされていない場合でも、依然としてイルドは発生します。この特別な動作は、「await returns-right-away」であるため、記事のコード内のいくつかの例を混乱させます。そして「await asyncio.sleep(0)」 &lt;i&gt;は動作的に同等ではありません&lt;/i&gt;。&lt;p&gt;同様に、「await noop()」の場合も同様です。 「await asyncio.futures.Future()」に置き換えると、タスクが実行されます。これは、&lt;i&gt;実際の&lt;/i&gt; Python の非同期の格言を示唆しています (これは、この記事がかなり近づいていることをクレジットします!):&lt;p&gt;&lt;pre&gt;&lt;code&gt; Python の非同期操作は、特定のコルーチンのスタックが「await」を呼び出す場合にのみインターリーブ (したがって同時実行) できます。に:
+       1. 未完成の未来。
+       2. ループに従う内部組み込み awaitable。
+       3. 上記と同等に扱われる数少ない特殊な Python 関数形式の 1 つ。
+     タスクは次の 2 つのことを行います。
+       1. 次にイベント ループが渡されたときに、イベント ループ自体によって「待機」されるコルーチンをスケジュールします。
+       2. ループが実行するときにそのコルーチンの完了を直接待機するためにオプションで使用できる Future ベースのハンドルを提供します。
+     (記事内で下線が引かれているように) Python の非同期同時実行で興味深いものはすべてタスクを使用します。 
+     ラッピング タスクは、多くの場合、stdlib または提供されたコルーチンを実行するその他の関数によって自動的に暗黙的に作成されます。&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mono442:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この投稿は正しくないと確信しています。この例では、JS は Python と同じように動作します。 C# についてはよくわかりませんが、おそらく同じではないかと思います。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anentropic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は非同期 Python をあまりやったことがありません (何年も前に gevent をやったことがあります) が、これが説明しているとおりの誤解を持っていたことを認めなければなりません... 知っておいてよかったです!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chompychop:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非同期プログラミングと並列プログラミングは、私が実際に学んだことのない概念であり、コードが何をしているのか、あるいはそのようなコードの正しい書き方さえまったく理解していないため、実際に使用するのが怖いのは確かです。これを学ぶのに役立ち、関連する概念の優れたメンタル モデルを持っている優れたリソースを持っている人はいますか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;derangedHorse:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;皮肉なことに、Python の awaitable を他の言語との比較を通じて説明しようとすることで、著者は他の言語の非同期モデルをいかに理解していないかを示しています (笑)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LelouBil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これを Kotlin のサスペンドやコルーチンと比較するとどうなるでしょうか? （私が最もよく知っているものです）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;scribu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;コルーチンを待っても、制御はイベント ループに戻りません。&lt;p&gt;これは最初に読んだときに考えるよりも微妙な点だと思いますが、サンプルの選択が不十分なためにわかりにくくなっています。&lt;p&gt;ここでより良い図を示します:&lt;p&gt;&lt;pre&gt;&lt;code&gt; import asyncio
+  
+  非同期定義子():
+      print("子スタート")
+      asyncio.sleep(0) を待ちます
+      print("子エンド")
+  
+  非同期定義親():
+      print("前の親")
+      await child() # &amp;lt;-- コルーチン (タスクではなく) を待機しています
+      print("後の親")
+  
+  非同期定義other():
+      range(5) の _ の場合:
+          print("その他")
+          asyncio.sleep(0) を待ちます
+  
+  非同期def main():
+      other_task = asyncio.create_task(other())
+      親タスク = asyncio.create_task(parent())
+      await asyncio.gather(other_task,parent_task)
+      
+  asyncio.run(main())
+
+&lt;/code&gt;&lt;/pre&gt;
+出力します:&lt;p&gt;&lt;pre&gt;&lt;code&gt; other
+  前の親
+  子供のスタート
+  その他
+  子エンド
+  その後の親
+  その他
+  その他
+  その他
+&lt;/code&gt;&lt;/pre&gt;
+つまり、著者が言いたいのは、「その他」とは何かということです。 「parent before」と「parent before」の間には決して出現できません。および「子スタート」。&lt;p&gt;編集: 説明&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;6r17:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;タスクやタスクに少し興味がある人向け。スケジューリング カーネルの構築に関する phil-op チュートリアルを強くお勧めします。特に非同期タスクに焦点を当てた後期ブランチが github にあります。私は今週マルチコアを実装しましたが、f* が実際に何が起こっているのかについての深い理解が得られました。これはクロードの何かです。 Gemini のおかげで、カーネルのデバッグ方法や開発に一夜を費やす必要がなくなり、この目標を達成することができました。ドキュメント;非同期で得られる最高の体験&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;twoodfin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私の新年の抱負は、hn でこれについて文句を言うのをやめることです。しかし、今のところは次のとおりです。&lt;p&gt;ChatGPT のスタイルと口調は見下しており、元のプロンプトにあるユニークで思慮深く洞察力に富んだものをわかりにくくするほど当たり障りのないものだと思います。&lt;p&gt;「これではない、あれ!」をリバース エンジニアリングしてみます。フレージング、人工的な物語劇、その洞察や思考を取り戻すための奇妙な強調の使用は、私がまったくやりたいことではありません。&lt;p&gt;おそらく中間点: HN は、実際のクリエイティブの種への「即時」リンクをサポートできるでしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xill47:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;どちらの例も C# で同じことを行いますが、実際の一時停止ポイントに到達するまでコルーチンが同期的に実行されることが説明されています。 「asyncio.create_task」を「Task.Run」に変更すると、2 番目の例でもまったく同じ動作になります。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adammarples:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この&lt;p&gt;await asyncio.sleep(0)&lt;p&gt;が制御をイベント ループに戻さない場合、これは一体何のためにあるのでしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pansa2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは、async 関数が「最初の await と同期して実行される」モデルと「最初の await に同期して実行される」モデルの違いと同じですか。ここで説明したように、「実行前に必ず 1 回放棄する」ものと比べてどうでしょうか?&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;rust&amp;#x2F;comments&amp;#x2F;8aaywk&amp;#x2F;async_await_in_rust_a_full_proposal&amp;#x2F;dwxjjo2&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;rust&amp;#x2F;comments&amp;#x2F;8aaywk&amp;#x2F;async_await_in...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CjHuber:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;もちろん、この投稿には非常に正当な論点がありますが、何もない場合はほとんど呪文のように繰り返されます。
+コード内の asyncio.create_task は同時実行ではありません。
+つまり、少なくとも asyncio.gather について言及する必要があるということです。IMO では、例を説明する方がはるかに優れています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noobcoder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;しかし、大規模な非同期コードベースを体系的に監査して、すべての隠されたインターリーブ ポイントや不要なロックを見つけるにはどうすればよいでしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jdranczewski:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;誤解しているかもしれませんが、示されている例は説明にすぎないようです。例 1 では子が終了するのを明示的に (a)待っており、例 2 では両方の親の print が await より上にあるため、どの言語でもこの順序で出力が行われることはかなり明白であると思われます。それでは、どちらも著者が伝えようとしている要点を満たしているとは思えませんか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zdc1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;個人的には、Python で非同期を適切に動作させることができたことがありません。 Node.js では、プレフィックスの配列を ListBucket Promises の配列にマッピングするだけで、CPU コアを 100% 使用するのに十分な S3 ListBucket ネットワーク リクエストを並行してスケジュールできます。次に、Promise.all() を実行して、それらを実行します。&lt;p&gt;Python には非同期とスレッドがあり、すぐに起動して実行するには操作しなければならないことが多すぎると感じます。人は必要なときに、なんとなくそれを学ぶのでしょうか？ここで楽しんでいる人はいますか？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mazswojejzony:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;もしかしたら少し細かいことを言っているかもしれませんが、2 番目の具体的な例は、最初の例と比較して親メソッドの異なるフローを示しています。以下に示すように 2 番目の例が最初の例を変更した場合、出力はどちらの場合も同じになります。&lt;p&gt;&lt;pre&gt;&lt;code&gt; async defparent():
+      print("前の親")
+      task = asyncio.create_task(child()) # &amp;lt;-- タスクを生成します
+      タスクを待つ
+      print(&amp;quot;後の親&amp;quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sandblast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;JS 開発者の場合: 素晴らしい Effection ライブラリを使用すると、同様の便利な動作 (そしてそれ以上!) を JS に実装できます。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;effection-www.deno.dev&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;effection-www.deno.dev&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reactordev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは金です。&lt;p&gt;ここであなたに恐ろしい話をご紹介します。&lt;p&gt;数年前、私はこのスタートアップでプリンシパル エンジニアとして働いていました。エンジニアリング マネージャーは、自分が XYZ 出身であること、Pythonista ミートアップを運営していること、Python に関する知識がいかに豊富であるかを宣伝し続けました。私たちはセキュリティ製品を構築していて、数十万のドキュメントを迅速にスキャンする必要があったため、コルーチンを使用してファンアウトを構築しました。私もこの取り組みに積極的に参加し、同様に機能する別のプラットフォームに別のアダプターを追加するのを支援しました。すべてのコルーチンを確認した後、ピクル化されて S3 に保存され、ノードがまだクラッシュしても「再開」できるようになりました。create_task は 1 つも存在していませんでした。この待機、ピクルス、再開の試行、チェック、詰め込み、レポート、ピクルスはすべて同期して起こりました。&lt;p&gt;アーキテクチャの問題を指摘しようとしてエゴ氏と大声で言い合いになったとき、私は手放されました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pandaxtc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;間違っていたら申し訳ありませんが、最初の例は Javascript でも同じように動作するのではないでしょうか?関数parent()は「待機」します。 child() の完了が完了するため、print ステートメントをインターリーブすることはできません。&lt;p&gt;この StackOverflow の質問の例は、より適切なデモンストレーションになる可能性があります: &lt;a href="https:&amp;#x2F;&amp;#x2F;stackoverflow.com&amp;#x2F;q&amp;#x2F;63455683" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;stackoverflow.com&amp;#x2F;q&amp;#x2F;63455683&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vamega:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Java の仮想スレッドに関する記事の理解は間違っています。仮想スレッドには協調型ではなくプリエンプティブ型の同時実行モデルがあるため、一時停止ポイントは Future.get() などの呼び出し時だけではありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oersted:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Rust でも tokio::spawn (および代替手段) と同じであることに注意してください。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://mergify.com/blog/await-is-not-a-context-switch-understanding-python-s-coroutines-vs-tasks</guid>
+      <pubDate>Wed, 26 Nov 2025 11:00:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46056197</comments>
+    </item>
+    <item>
+      <title>画像拡散モデルはビデオにおける創発的な時間伝播を示す</title>
+      <link>https://arxiv.org/abs/2511.19936</link>
+      <description>&lt;p&gt;) 接続されたペーパー 接続されたペーパーを切り替えます (接続されたペーパーとは何ですか。) リットマップ リットマップを切り替えます (リットマップとは。) コードへのリンク コード付きペーパーを切り替えます (コード付きペーパーとは。)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Image Diffusion Models Exhibit Emergent Temporal Propagation in Videos&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46055177"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arxiv.org/abs/2511.19936'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;onesandofgrain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私より賢い人がこれが何なのか説明してくれるでしょうか？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arxiv.org/abs/2511.19936</guid>
+      <pubDate>Wed, 26 Nov 2025 07:55:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46055177</comments>
+    </item>
+    <item>
+      <title>セクラ (YC F24) が募集中です</title>
+      <link>https://www.ycombinator.com/companies/cekura-ai/jobs/0ZGLW69-forward-deployed-engineer-us</link>
+      <description>&lt;p&gt;私たちは会話型エージェントの信頼性レイヤーを構築しています。 Forward Deployed Engineer として、長期的な成功に向けて Ceura が技術顧客とどのように提携するかを定義するプレイブック、プロセス、関係を構築します。 Cekura は、AI 音声エージェントの信頼性を再定義する Y Combinator 支援のスタートアップです。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Cekura (YC F24) Is Hiring&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46056583"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/cekura-ai/jobs/0ZGLW69-forward-deployed-engineer-us'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.ycombinator.com/companies/cekura-ai/jobs/0ZGLW69-forward-deployed-engineer-us</guid>
+      <pubDate>Wed, 26 Nov 2025 12:01:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46056583</comments>
     </item>
   </channel>
 </rss>
