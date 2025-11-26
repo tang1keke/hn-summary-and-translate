@@ -6,136 +6,180 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 26 Nov 2025 12:52:34 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Nov 2025 15:28:16 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>Await はコンテキスト スイッチではありません: Python のコルーチンとタスクを理解する</title>
-      <link>https://mergify.com/blog/await-is-not-a-context-switch-understanding-python-s-coroutines-vs-tasks</link>
-      <description>&lt;p&gt;同時実行性を生み出すのはタスクのみです。同時実行性はコルーチンではなくタスクから生まれます。同時実行性はタスク間でのみ、また実際の一時停止ポイントでのみ存在します。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Await Is Not a Context Switch: Understanding Python's Coroutines vs. Tasks&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46056197"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://mergify.com/blog/await-is-not-a-context-switch-understanding-python-s-coroutines-vs-tasks'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>ボイジャー 1 号は地球から 1 光日の距離に到達しようとしています</title>
+      <link>https://scienceclock.com/voyager-1-is-about-to-reach-one-light-day-from-earth/</link>
+      <description>&lt;p&gt;星間空間を疾走するボイジャー 1 号宇宙船のアーティストのコンセプト。ボイジャー1号との通信が遅い。受信箱を確認して購読を確認してください。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Voyager 1 Is About to Reach One Light-Day from Earth&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46057488"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://scienceclock.com/voyager-1-is-about-to-reach-one-light-day-from-earth/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 23 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tgsovlerkhgsel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私にとっての主なポイントは、Python ではこれが機能しないということです:&lt;p&gt;&lt;pre&gt;&lt;code&gt; async def somethingLongRunning():
-       ...
-
-    x = 何かLongRunning()
-    ...その他の非常に時間がかかる作業 ...
-    await x # 他の作業が十分に長ければこれはすぐに完了することを期待します&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zbentley:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この記事には不完全な欠陥があり、残念です。&lt;p&gt;そして同様に…私は著者がこの記事を書いたとき&lt;i&gt;まさにその場所&lt;/i&gt;にいたため、そのことを指摘することに喜びを感じません。実際には何も同時実行しない大量の非同期コードを扱い、「私のコードが非同期と言ったら待っている」と確信しているエンジニアの数が多かったさらに、&lt;i&gt;Golang のように&lt;/i&gt;自動的にパフォーマンスが向上し、複雑でバグの多い非同期制御フローがすべて同期をラップし、いずれにしても下部のスレッドプールでブロック操作を実行します。&lt;p&gt;しかし、いくつかの点でまだ間違っており、不完全です。&lt;p&gt;まず、タスクの作成と遅延タスクの開始が混同されています。これら 2 つの動作には関連性がありません。 「await asyncfunc()」の呼び出しasyncfunc() でジェネレーターを回転させます。 「await create_task(asyncfunc())」を呼び出します。もそうです。 「create_task(asyncfunc())」の呼び出し「待つ」なしでasyncfunc() をタスク リストに登録し、次回制御がループに戻ったときに&lt;i&gt;イベント ループ&lt;/i&gt;がジェネレーターを回転させるようにします。&lt;p&gt;第二に、他のコメント投稿者が指摘しているように、競合する同時実行システム (Loom&amp;#x2F;C#&amp;#x2F;JS) の特徴を誤っています。&lt;p&gt;第三に、「実行するには create_task() を呼び出す必要があります」というキャッチフレーズです。同時」は不完全です -- stdlib のいくつかの非常に一般的な部分では、create_task() が自動的に呼び出されます。 asyncio.gather() など。 「タスクとして自動的にスケジュール」を検索します。 &lt;a href="https:&amp;#x2F;&amp;#x2F;docs.python.org&amp;#x2F;3&amp;#x2F;library&amp;#x2F;asyncio-task.html" 内rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;docs.python.org&amp;#x2F;3&amp;#x2F;library&amp;#x2F;asyncio-task.html&lt;/a&gt;&lt;p&gt;4 番目 -- これは細かい特殊なケースのように思えますが、私は、それがそうであることを知らずに依存してしまう驚くべき量のコードを見てきました -- 「待っています」コルーチンは「イベント ループまで中断しません」これは&lt;i&gt;通常&lt;/i&gt;のみ真実です。ループ (JavaScript の process.nextTick に相当) に戻り&lt;i&gt;る&lt;/i&gt; 特殊な非タスク待ち可能オブジェクトがいくつかあります。&lt;p&gt;これを説明するために、次のコードを考えてみましょう:&lt;p&gt;&lt;pre&gt;&lt;code&gt; async def sleep_loop():
-        True の場合:
-            asyncio.sleep(1) を待ちます
-            print("スリープ ループ")
-
-    非同期def noop():
-        なしを返す
-
-    非同期def main():
-        asyncio.create_task(sleep_loop())
-        True の場合:
-            noop() を待ちます
-&lt;/code&gt;&lt;/pre&gt;
-書かれているように、これは記事の最初のセクションをサポートしています。コードは while-True-await-noop() で永遠にビジー待機し、「スリープ ループ」を出力しません。&lt;p&gt;上記の最初の点に関連して、「await noop()」の場合、 「await create_task(noop())」に置き換えられます。コードは引き続きビジー ループになりますが、ビジー ループの各反復に相当する「nextTick」が生成されるため、「スリープ ループ」が実行されます。が印刷されます。ここまでは問題ありません。&lt;p&gt;しかし、「await noop()」が実行されたらどうなるでしょうか。 「await asyncio.sleep(0)」に置き換えられますか? asyncio.sleep は特別です。これは通常の純粋な Python の「async def」ですが、一対の非同期組み込み動作 (sleep-0 の場合は本体が単なる「yield」である task.coroutine、または sleep-nonzero の場合は asyncio.Future) を使用します。たとえビジーウェイトがスリープ 0 を待っていて、フューチャータスクがタッチされていない場合でも、依然としてイルドは発生します。この特別な動作は、「await returns-right-away」であるため、記事のコード内のいくつかの例を混乱させます。そして「await asyncio.sleep(0)」 &lt;i&gt;は動作的に同等ではありません&lt;/i&gt;。&lt;p&gt;同様に、「await noop()」の場合も同様です。 「await asyncio.futures.Future()」に置き換えると、タスクが実行されます。これは、&lt;i&gt;実際の&lt;/i&gt; Python の非同期の格言を示唆しています (これは、この記事がかなり近づいていることをクレジットします!):&lt;p&gt;&lt;pre&gt;&lt;code&gt; Python の非同期操作は、特定のコルーチンのスタックが「await」を呼び出す場合にのみインターリーブ (したがって同時実行) できます。に:
-       1. 未完成の未来。
-       2. ループに従う内部組み込み awaitable。
-       3. 上記と同等に扱われる数少ない特殊な Python 関数形式の 1 つ。
-     タスクは次の 2 つのことを行います。
-       1. 次にイベント ループが渡されたときに、イベント ループ自体によって「待機」されるコルーチンをスケジュールします。
-       2. ループが実行するときにそのコルーチンの完了を直接待機するためにオプションで使用できる Future ベースのハンドルを提供します。
-     (記事内で下線が引かれているように) Python の非同期同時実行で興味深いものはすべてタスクを使用します。 
-     ラッピング タスクは、多くの場合、stdlib または提供されたコルーチンを実行するその他の関数によって自動的に暗黙的に作成されます。&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mono442:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この投稿は正しくないと確信しています。この例では、JS は Python と同じように動作します。 C# についてはよくわかりませんが、おそらく同じではないかと思います。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anentropic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は非同期 Python をあまりやったことがありません (何年も前に gevent をやったことがあります) が、これが説明しているとおりの誤解を持っていたことを認めなければなりません... 知っておいてよかったです!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chompychop:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非同期プログラミングと並列プログラミングは、私が実際に学んだことのない概念であり、コードが何をしているのか、あるいはそのようなコードの正しい書き方さえまったく理解していないため、実際に使用するのが怖いのは確かです。これを学ぶのに役立ち、関連する概念の優れたメンタル モデルを持っている優れたリソースを持っている人はいますか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;derangedHorse:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;皮肉なことに、Python の awaitable を他の言語との比較を通じて説明しようとすることで、著者は他の言語の非同期モデルをいかに理解していないかを示しています (笑)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LelouBil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これを Kotlin のサスペンドやコルーチンと比較するとどうなるでしょうか? （私が最もよく知っているものです）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;scribu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;コルーチンを待っても、制御はイベント ループに戻りません。&lt;p&gt;これは最初に読んだときに考えるよりも微妙な点だと思いますが、サンプルの選択が不十分なためにわかりにくくなっています。&lt;p&gt;ここでより良い図を示します:&lt;p&gt;&lt;pre&gt;&lt;code&gt; import asyncio
-  
-  非同期定義子():
-      print("子スタート")
-      asyncio.sleep(0) を待ちます
-      print("子エンド")
-  
-  非同期定義親():
-      print("前の親")
-      await child() # &amp;lt;-- コルーチン (タスクではなく) を待機しています
-      print("後の親")
-  
-  非同期定義other():
-      range(5) の _ の場合:
-          print("その他")
-          asyncio.sleep(0) を待ちます
-  
-  非同期def main():
-      other_task = asyncio.create_task(other())
-      親タスク = asyncio.create_task(parent())
-      await asyncio.gather(other_task,parent_task)
-      
-  asyncio.run(main())
-
-&lt;/code&gt;&lt;/pre&gt;
-出力します:&lt;p&gt;&lt;pre&gt;&lt;code&gt; other
-  前の親
-  子供のスタート
-  その他
-  子エンド
-  その後の親
-  その他
-  その他
-  その他
-&lt;/code&gt;&lt;/pre&gt;
-つまり、著者が言いたいのは、「その他」とは何かということです。 「parent before」と「parent before」の間には決して出現できません。および「子スタート」。&lt;p&gt;編集: 説明&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;6r17:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;タスクやタスクに少し興味がある人向け。スケジューリング カーネルの構築に関する phil-op チュートリアルを強くお勧めします。特に非同期タスクに焦点を当てた後期ブランチが github にあります。私は今週マルチコアを実装しましたが、f* が実際に何が起こっているのかについての深い理解が得られました。これはクロードの何かです。 Gemini のおかげで、カーネルのデバッグ方法や開発に一夜を費やす必要がなくなり、この目標を達成することができました。ドキュメント;非同期で得られる最高の体験&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;twoodfin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私の新年の抱負は、hn でこれについて文句を言うのをやめることです。しかし、今のところは次のとおりです。&lt;p&gt;ChatGPT のスタイルと口調は見下しており、元のプロンプトにあるユニークで思慮深く洞察力に富んだものをわかりにくくするほど当たり障りのないものだと思います。&lt;p&gt;「これではない、あれ!」をリバース エンジニアリングしてみます。フレージング、人工的な物語劇、その洞察や思考を取り戻すための奇妙な強調の使用は、私がまったくやりたいことではありません。&lt;p&gt;おそらく中間点: HN は、実際のクリエイティブの種への「即時」リンクをサポートできるでしょうか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xill47:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;どちらの例も C# で同じことを行いますが、実際の一時停止ポイントに到達するまでコルーチンが同期的に実行されることが説明されています。 「asyncio.create_task」を「Task.Run」に変更すると、2 番目の例でもまったく同じ動作になります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adammarples:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この&lt;p&gt;await asyncio.sleep(0)&lt;p&gt;が制御をイベント ループに戻さない場合、これは一体何のためにあるのでしょうか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pansa2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは、async 関数が「最初の await と同期して実行される」モデルと「最初の await に同期して実行される」モデルの違いと同じですか。ここで説明したように、「実行前に必ず 1 回放棄する」ものと比べてどうでしょうか?&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;rust&amp;#x2F;comments&amp;#x2F;8aaywk&amp;#x2F;async_await_in_rust_a_full_proposal&amp;#x2F;dwxjjo2&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;rust&amp;#x2F;comments&amp;#x2F;8aaywk&amp;#x2F;async_await_in...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CjHuber:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;もちろん、この投稿には非常に正当な論点がありますが、何もない場合はほとんど呪文のように繰り返されます。
-コード内の asyncio.create_task は同時実行ではありません。
-つまり、少なくとも asyncio.gather について言及する必要があるということです。IMO では、例を説明する方がはるかに優れています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noobcoder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;しかし、大規模な非同期コードベースを体系的に監査して、すべての隠されたインターリーブ ポイントや不要なロックを見つけるにはどうすればよいでしょうか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jdranczewski:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;誤解しているかもしれませんが、示されている例は説明にすぎないようです。例 1 では子が終了するのを明示的に (a)待っており、例 2 では両方の親の print が await より上にあるため、どの言語でもこの順序で出力が行われることはかなり明白であると思われます。それでは、どちらも著者が伝えようとしている要点を満たしているとは思えませんか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zdc1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;個人的には、Python で非同期を適切に動作させることができたことがありません。 Node.js では、プレフィックスの配列を ListBucket Promises の配列にマッピングするだけで、CPU コアを 100% 使用するのに十分な S3 ListBucket ネットワーク リクエストを並行してスケジュールできます。次に、Promise.all() を実行して、それらを実行します。&lt;p&gt;Python には非同期とスレッドがあり、すぐに起動して実行するには操作しなければならないことが多すぎると感じます。人は必要なときに、なんとなくそれを学ぶのでしょうか？ここで楽しんでいる人はいますか？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mazswojejzony:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;もしかしたら少し細かいことを言っているかもしれませんが、2 番目の具体的な例は、最初の例と比較して親メソッドの異なるフローを示しています。以下に示すように 2 番目の例が最初の例を変更した場合、出力はどちらの場合も同じになります。&lt;p&gt;&lt;pre&gt;&lt;code&gt; async defparent():
-      print("前の親")
-      task = asyncio.create_task(child()) # &amp;lt;-- タスクを生成します
-      タスクを待つ
-      print(&amp;quot;後の親&amp;quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sandblast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;JS 開発者の場合: 素晴らしい Effection ライブラリを使用すると、同様の便利な動作 (そしてそれ以上!) を JS に実装できます。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;effection-www.deno.dev&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;effection-www.deno.dev&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reactordev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは金です。&lt;p&gt;ここであなたに恐ろしい話をご紹介します。&lt;p&gt;数年前、私はこのスタートアップでプリンシパル エンジニアとして働いていました。エンジニアリング マネージャーは、自分が XYZ 出身であること、Pythonista ミートアップを運営していること、Python に関する知識がいかに豊富であるかを宣伝し続けました。私たちはセキュリティ製品を構築していて、数十万のドキュメントを迅速にスキャンする必要があったため、コルーチンを使用してファンアウトを構築しました。私もこの取り組みに積極的に参加し、同様に機能する別のプラットフォームに別のアダプターを追加するのを支援しました。すべてのコルーチンを確認した後、ピクル化されて S3 に保存され、ノードがまだクラッシュしても「再開」できるようになりました。create_task は 1 つも存在していませんでした。この待機、ピクルス、再開の試行、チェック、詰め込み、レポート、ピクルスはすべて同期して起こりました。&lt;p&gt;アーキテクチャの問題を指摘しようとしてエゴ氏と大声で言い合いになったとき、私は手放されました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pandaxtc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;間違っていたら申し訳ありませんが、最初の例は Javascript でも同じように動作するのではないでしょうか?関数parent()は「待機」します。 child() の完了が完了するため、print ステートメントをインターリーブすることはできません。&lt;p&gt;この StackOverflow の質問の例は、より適切なデモンストレーションになる可能性があります: &lt;a href="https:&amp;#x2F;&amp;#x2F;stackoverflow.com&amp;#x2F;q&amp;#x2F;63455683" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;stackoverflow.com&amp;#x2F;q&amp;#x2F;63455683&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vamega:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Java の仮想スレッドに関する記事の理解は間違っています。仮想スレッドには協調型ではなくプリエンプティブ型の同時実行モデルがあるため、一時停止ポイントは Future.get() などの呼び出し時だけではありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oersted:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Rust でも tokio::spawn (および代替手段) と同じであることに注意してください。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://mergify.com/blog/await-is-not-a-context-switch-understanding-python-s-coroutines-vs-tasks</guid>
-      <pubDate>Wed, 26 Nov 2025 11:00:49 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46056197</comments>
+&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Mistletoe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;このような統計を読むと、私たちがいかにこの太陽系に閉じ込められているかがわかります。  もし億万長者たちが、正直に言って、地球が人類にとってただの存在であることを、おそらくは永遠に知っていれば、もっと地球を大切にするだろうか。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chistev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;2日前にボイジャー探査機についてブログに書きました -
+2 台のボイジャー宇宙船は、人類がこれまで宇宙に送った最大のラブレターです。&lt;p&gt;ボイジャー 2 号が実際に最初に打ち上げられたのは 1977 年 8 月 20 日で、続いてボイジャー 1 号が 1977 年 9 月 5 日に打ち上げられました。ボイジャー 1 号はより速く短い軌道を描いていたため (木星と土星の両方をより早く通過する珍しい配置を使用した)、双子を追い越し、より遠く、より速くなりました。プローブ。 2025 年の時点で、ボイジャー 1 号は史上最も遠い人工物体であり、240 億キロメートル以上離れており、依然として 160 ビット/秒でデータを送信しています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tonyhart7:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ボイジャー6号が地球に到着するのが待ちきれません&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TechRemarker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;いいえ、「これから」ではありません。今度は「来年」です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;uyzstvqs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;サイトがダウンしていますか?アーカイブ: &lt;a href="https:&amp;#x2F;&amp;#x2F;archive.is&amp;#x2F;55yNp" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.is&amp;#x2F;55yNp&lt;/a&gt;&lt;p&gt;見出しも誤解を招きます。それは今から約1年後の2026年11月に行われる予定だ。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jesprenj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;データベース接続の確立中にエラーが発生しました&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NooneAtAll3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;202 年 11 月 &lt;i&gt;6&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;homarp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45908483"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45908483&lt;/a&gt; でも議論されています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmclnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一種の重複ですが、ここにリンクされている記事は異なります&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46046260"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46046260&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://scienceclock.com/voyager-1-is-about-to-reach-one-light-day-from-earth/</guid>
+      <pubDate>Wed, 26 Nov 2025 14:02:46 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46057488</comments>
     </item>
     <item>
-      <title>画像拡散モデルはビデオにおける創発的な時間伝播を示す</title>
-      <link>https://arxiv.org/abs/2511.19936</link>
-      <description>&lt;p&gt;) 接続されたペーパー 接続されたペーパーを切り替えます (接続されたペーパーとは何ですか。) リットマップ リットマップを切り替えます (リットマップとは。) コードへのリンク コード付きペーパーを切り替えます (コード付きペーパーとは。)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Image Diffusion Models Exhibit Emergent Temporal Propagation in Videos&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46055177"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://arxiv.org/abs/2511.19936'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>生命の定義に疑問を投げかけるほど極小の細胞</title>
+      <link>https://www.quantamagazine.org/a-cell-so-minimal-that-it-challenges-definitions-of-life-20251124/</link>
+      <description>&lt;p&gt;ホーム 生命の定義を疑うほど極小の細胞 コメント 記事を保存 後で読む シェア Facebook コピーしました。コメント 記事を保存 後で読む 代謝遺伝子を欠く細胞は、生命のスペクトルに新たに追加されたものです。彼らは、その 1 つの細胞に関連するすべてのゲノムを配列しました。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A cell so minimal that it challenges definitions of life&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46055935"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.quantamagazine.org/a-cell-so-minimal-that-it-challenges-definitions-of-life-20251124/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;onesandofgrain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私より賢い人がこれが何なのか説明してくれるでしょうか？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://arxiv.org/abs/2511.19936</guid>
-      <pubDate>Wed, 26 Nov 2025 07:55:49 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46055177</comments>
+&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tete:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;小さな細胞について話したり、液体の入ったチューブを見つめたりします。笑わせてもらいました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Noaidi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人生とはエントロピーが減少する過程です。彼らがその定義に固執するなら、大丈夫でしょう。そして、人生は想像以上に豊かであることに気づくでしょう。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;freakynit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は、今日の哺乳類に見られる信じられないほどの生物学的複雑性に関する突飛な理論について考えてきました。&lt;p&gt;もし私たちの体 (脳は別として) が、かつては別々だった「生物」の古代の集合体の結果であるとしたらどうなるでしょうか。 &lt;p&gt;何百万年もかけて、彼らの DNA は融合し、単一の統一されたゲノムに共進化した可能性があります。異なる生命体間の協力として始まったものは、徐々に切り離せないものになり、現在私たちが当然と思っている複雑な多細胞システムを生み出した可能性があります。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stevenjgarner:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;複製は生物にとって最も重要な代謝行為ではないでしょうか?  私は彼らの「失われた遺伝子には細胞代謝の中心となる遺伝子が含まれており、それは栄養素を処理したり、自ら成長したりすることができないことを意味する」ということを調和させようとしている。 「生物の「複製コア」（生物自体を複製するために必要な遺伝的構成要素）は残り、ゲノムの半分以上を構成します。&lt;p&gt;複製（DNA、RNA、タンパク質を作成し、最終的には分裂する）は、非常にエネルギーと物質を大量に消費するプロセスです。  スクナアーキウムによって失われたと思われるのは、基本的な構成要素（アミノ酸、ビタミン、ヌクレオチド）をゼロから構築するための遺伝子です。糖分子を見つけて分解してエネルギーを得ることができません（「栄養素を処理することも、自ら成長することもできません」）。  しかし、あらかじめ作られたエネルギーと構成要素を取得して、それらを組み立てて新しい生物を作ることはできます。&lt;p&gt;宿主の代謝への寄与と古細菌の複製組み立てとの間の正確な境界線は何でしょうか?  どのように「終わった」のかは宿主が提供する原材料ですが、古細菌の極度に減少したゲノムはその後の自己複製のステップをどのように管理しているのでしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;empiricus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ゲノムはほとんどが単なる「設定ファイル」である可能性があると思います。したがって、細胞には、生物に必要な情報とメカニズムのほとんどがすでに含まれています。ゲノムは構成フラグと、生物の生涯の特定の時点で細胞内の設定をオンまたはオフにするいくつかのより詳細な設定です。この観点からすると、ゲノム内に何ペアの情報があるかについての議論は誤解を招きます。同様の例え: 画面に hello world を表示する hello world プログラムを作成できます。しかし、画面は 4K で、Windows の背景も表示されるため、ハードウェアと OS は貧弱なプログラムより 6 ～ 8 桁複雑になり、出力も貧弱なプログラムよりもはるかに複雑になります。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;codedokode:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;樹液を吸う昆虫の腸内に共生生物として生息する細菌 Carsonella ruddii のゲノムはスクナアルキウムよりもさらに小さく、約 159,000 塩基対&lt;p&gt;159,000 塩基対は約 320 Kbit、つまり 40 K バイトです。それがセルファームウェアの最小サイズなのだろうか。また、細胞がそれほど単純であれば、それを徹底的に研究することができるでしょうか?同様に、DNA のすべての塩基対を解読し、それが何に関与しているかを特定します。そして、そのためのインタラクティブなウェブサイトを作成します。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pretzellogician:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;とても印象的です！明確にしておきますが、これは既知の細菌ゲノムの中で最小ではありません。既知の&lt;i&gt;古細菌&lt;/i&gt;細菌ゲノムは、238,000 塩基対で唯一最小です。&lt;p&gt;論文では&lt;i&gt;C. ruddii&lt;/i&gt; は、より小さな 159,000 塩基対のゲノムを持ちます。&lt;p&gt;しかし、wikipedia によると、&lt;i&gt;N のようです。デルトセファリニコラ&lt;/i&gt;は 112,000 塩基対で、既知の細菌ゲノムの中で最も小さい可能性があります。 &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;ナスイア_デルトセファリニコラ" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;ナスイア_デルトセファリニコラ&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zkmon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;アウトソーシングの究極の形。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;smollOrg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;ショックを受けた研究者らによると、&lt;p&gt;これは何ですか、一部のコンテンツ クリエイターが Microflix の敷地内の地下室でバイオハッカー ラボを運営しているのですか?&lt;p&gt;不気味な声: 小さな細胞は存在の隙間に引きこもり、そのコード全体を空間の一部でも時間の単位でもない特異点の間の行に保存し、チュトゥトゥルル (33 親等従兄弟) の空間に隠されました。クトゥルフ）は、生も死もない本のサブテキストの言いようのない言語で書かれた夢であり、時が来てゴジラが再び地球を歩くまで誰も解読することはないだろう。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;djoldman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;論文より: &lt;a href="https:&amp;#x2F;&amp;#x2F;www.biorxiv.org&amp;#x2F;content&amp;#x2F;10.1101&amp;#x2F;2025.05.02.651781v1" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.biorxiv.org&amp;#x2F;content&amp;#x2F;10.1101&amp;#x2F;2025.05.02.651781v1&lt;/a&gt;&lt;p&gt;&amp;gt; ...我々は、渦鞭毛藻関連微生物群集から、わずか238 kbp（これまでに知られている最小の古細菌ゲノムの半分以下のサイズ）という前例のない小さなゲノムを持つ新規古細菌、Candidatus Sukunaarchaeum mirabileを発見したことを報告する。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;XorNot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;本当に巨大なウイルス粒子のような巨大ウイルスの発見の直後に、「ウイルスファージ」の発見が続いたことを思い出します。 &lt;p&gt;もちろん、これはある程度は理にかなっています。適応戦略が十分に成功しているのであれば、それをうまく実装する何かに寄生することは、資源にとって有利になるでしょう (おそらく、その種の一員となり、摂取した場合に不要な成分を取り除くだけなのでしょう)。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;flobosg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;関連項目: 「奇妙に小さなゲノムを持つ微生物がウイルスに進化している可能性がある」 – &lt;a href="https:&amp;#x2F;&amp;#x2F;www.science.org&amp;#x2F;content&amp;#x2F;article&amp;#x2F;microbe-bizarrely-tiny-genome-may-be-EVOLUTION-virus" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.science.org&amp;#x2F;content&amp;#x2F;article&amp;#x2F;microbe-bizarrely-ti...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cnnlives1987:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私たちは物理学をまだ根本的に理解していません。確かに人生には私たちが理解していないことがたくさんあります。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.quantamagazine.org/a-cell-so-minimal-that-it-challenges-definitions-of-life-20251124/</guid>
+      <pubDate>Wed, 26 Nov 2025 10:06:41 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46055935</comments>
     </item>
     <item>
-      <title>セクラ (YC F24) が募集中です</title>
-      <link>https://www.ycombinator.com/companies/cekura-ai/jobs/0ZGLW69-forward-deployed-engineer-us</link>
-      <description>&lt;p&gt;私たちは会話型エージェントの信頼性レイヤーを構築しています。 Forward Deployed Engineer として、長期的な成功に向けて Ceura が技術顧客とどのように提携するかを定義するプレイブック、プロセス、関係を構築します。 Cekura は、AI 音声エージェントの信頼性を再定義する Y Combinator 支援のスタートアップです。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Cekura (YC F24) Is Hiring&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46056583"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/cekura-ai/jobs/0ZGLW69-forward-deployed-engineer-us'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.ycombinator.com/companies/cekura-ai/jobs/0ZGLW69-forward-deployed-engineer-us</guid>
-      <pubDate>Wed, 26 Nov 2025 12:01:24 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46056583</comments>
+      <title>あなたの「AI」がどれほどうまく機能するかは気にしません</title>
+      <link>https://fokus.cool/2025/11/25/i-dont-care-how-well-your-ai-works.html</link>
+      <description>&lt;p&gt;私の友人の多くもその気持ちを共有しています。彼らは私たちが他の方法ではできなかったことをすることを可能にします。資本を電力に変換し、資本に戻すために設計された巨大な物理的インフラストラクチャ。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; I don't care how well your "AI" works&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46055944"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://fokus.cool/2025/11/25/i-dont-care-how-well-your-ai-works.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 27 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;trashb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一般に、自然言語を使用して AI に入力し、実行可能なソフトウェアにコンパイルするためのコードを生成することは、より使いやすいプログラミング言語を設計するための遠回りのように思えます。&lt;p&gt;プログラミング言語よりも自然言語を好む人のほとんどは、必要なプログラミング言語を学習したくないようで、最終的には自分でさらに悪いプログラミング言語を作り直すことになるようです。&lt;p&gt;人間がマシンに指示するインターフェースとしてプログラミング言語を発明したのには理由があり、自然言語を使用しないのには理由があります。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;easterncalculus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;特に、LLM ブレインワームが進歩的なハッカー サークルにまで自分自身を食い込むことができるということを理解すると、幻滅してしまいます。&lt;p&gt;それが問題であり、ハッカー サークルには常にこのような「進歩的」さがあったわけではありません。ラッダイトの精神。これはハッカー文化に取って代わられた文化です。&lt;p&gt;私は一般的に AI が好きではありません。私は企業の影響力には懐疑的であり、AI 2027 やいわゆる「AGI」にも疑問を抱いています。私たちは「5年後」になると確信しています。近い将来、超知性から。そうは言っても、実際の勤務時間は、誰もやりたくない多忙な仕事で絶対に埋め尽くされており、その事実に関与しようとしないラウド・マイノリティの拒否がこの事態を引き起こしているのです。 AI が生成したと (非常に多くの場合、誤って) 解釈される可能性のあるミーム、引用、記事などを公共チャンネルに投稿したり、チャットボットに手描きの画像の説明を依頼したりすることは、これらの「進歩的」なメッセージのいずれかから耳を傾ける可能性がない限りできない理由です。人々。これらの人々は、キャンペーンを行う相手よりもはるかに多くの有害性を日常生活にもたらします。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;64718283661:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;答えは、私が完全に LLM に取って代わられたら自殺する、というものです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;disambiguation:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AI の ROI は依然としてマイナスであるという印象を受けています。絶対的な価値を生み出すことと、コストを超える価値を生み出すことは異なります。ツールはツールですが、それが突然利用できなくなった場合、プロとしてパフォーマンスを続けることができますか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kleiba:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;くそー、「ファラフェルサンドイッチ」の後に読み進めるべきではなかったと分かっていた...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;markbnj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;LLM がエンジニアの生計を立てる能力にもたらす危険は誇張されていると思いますが、同時に LLM が私たちに与えてくれる超大国についてはあまり議論されていないようです。私が 80 年代に勉強を始めたとき、何かをする方法を見つけるには、ダイヤルアップ掲示板をうろついたり、高価な本やマニュアルを注文したりしなければなりませんでした。私はかつて、質問に答えるために IBM に 140 ドルを払って VGA インターフェースのマニュアルを購入しました。回答が得られるまでの時間は 1 ～ 2 週間でした。先日、私はクロードに次のような質問をしました。「AWS IAM ロールの認証と引き受けのために OIDC プロバイダーとして github を使用する場合、ロールの引き受け中に提示された JWT トークンには「コンテキスト」がある可能性があります。分野。このフィールドの可能な値と、それらに関連付けられたリポジトリ イベントをリストしてください。例を含む複数ページの回答が返されました。&lt;p&gt;これを説明するドキュメントが github のどこかにあると思いますが、そのプロンプトを入力するのに 2 分かかりました。以前なら何時間も調査に時間がかかっていたであろう複雑な質問に対して、毎日すぐに答えを得ることができます。ほとんどの場合、これらの答えは正しく、間違っている場合でも、正しい答えを導き出すまでにかかる時間は、以前の研究にかかる時間よりも短くなります。したがって、私のアドバイスは次のとおりです。このビジネスを始めたばかりの場合は、LLM が自分に取って代わることを心配せず、自分の肩にかかるすべてのことについてその世界的な専門家を効率的に活用する方法を考えてください。また、コード、および機能するコードを作成する能力は、私たちが毎日行っていることのほんの一部であることも理解してください。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lxgr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;特に、LLM ブレインワームが進歩的なハッカーのサークルにまで食い込んでいることを実感すると、幻滅を感じます。&lt;p&gt;部族主義へのこの透明性があり、できれば失敗に終わってほしいとの訴え以外に読む価値のあるものはありますか?&lt;p&gt;ハッカーは常に新しいテクノロジーを試して、それがどのように機能するか、または壊れるかを確認してきました。では、なぜ LLM は違うのでしょうか?&lt;p&gt;&amp;gt;私たちが予想もしなかった方法とレートで、私たちの工芸品の価値を下げること。デザイナー、ライター、翻訳家、仕立て屋、製本家などが私たちの前で経験してきた運命&lt;p&gt;ソフトウェア エンジニアリングの仕事を&lt;i&gt;高収入&lt;/i&gt;でこなすことが&lt;i&gt;正しい&lt;/i&gt;と考えられているのは一体どういうことなのでしょうか?&lt;p&gt;機械なら 10 倍の品質と 100 倍の速度でできることを手作業で行うことを誰も止めようとしません。&lt;p&gt;お金を払う人もいますが、多くはありません。多くは無給の娯楽活動に追いやられ、関連する職人たちは生活費を稼ぐために他の活動に移ることになるだろう（まずポスト欠乏を達成しない限り）。一言で言えば、これは単なる人類の進歩です。&lt;p&gt;多くの社会が雇用適性によって人の価値を定義していることが根本的な問題であるとすれば、その問題は技術の進歩を人為的に阻止するのではなく、その社会を再構築することで解決するのが最善であるように思えます。 「進歩的なハッカー」...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JimmaDaRustla:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;あなたが気にしていなくても、私たちは気にしません&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TrackerFF:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;知的に「純粋」でありたいと願う人もいると思います。職人は、愛情を込めて作られた高品質のソフトウェアなどを作り上げています。&lt;p&gt;しかし、&lt;i&gt;すべて&lt;/i&gt;にとって新たな現実の 1 つは、企業が AI の誇大宣伝をそのまま飲み込んでいるということです。愚か者というレッテルを貼られないようにするためには、有能で理解のある上司が本当に必要です。なぜなら、本当のことを言うと、LLM によって全員の「生産性」が向上したからです。紙の上で。プログラマーではない人たちは記録的なペースで小規模なアプリを大量に作成しており、若手は完了するコードとタスクの量を考えると賢者のように見えますが、おそらくコードの 90% はクロードか何かによって行われています。&lt;p&gt;組織がやみくもにデータ指標を重視している場合、マネージャーが、なぜ他の人はそんなに多くのアプリを作成しているのに、あなたは遅いのかと尋ね始めるのはおそらく時間の問題でしょう。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ojr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は常々、何年もの言語経験が仕事の要件になるなんて馬鹿げていると思っていました。 LLM を使用すると、まったくの Rust 初心者でも Rust コードを書くことができ、貴重な SaaS を作成できるようになります。一方、ほとんどの経験豊富な Rust 開発者は、仕事以外で 1 ドルも儲かるようなものを構築したことがありません。価値を下げるとは言いませんが、私のプログラミング経験は間違いなくデバッグに役立ちます。 LLM は、エンジニアリング上の判断や製品の決定ではなく、ボイラープレートを排除します。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cwiz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;まあ、あなたが本物だと思っているものは実際ではないという見方を採用するかもしれません、そしておそらくそれらを完全に無視しても同じようにうまくいくかもしれません。今後は、オートコンプリートよりも賢い AI を無視することが唯一の方法かもしれません&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nachox999:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;電球の代わりにろうそくを使うかどうかはあなた次第です&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zajio1am:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;私たちプログラマーは現在、自分たちの技術の価値が下落する中で生きています。&lt;p&gt;価値評価は基本的に希少性と結びついています。 「評価の低下」 &lt;p&gt;状況が変化して希少性が低くなった場合、過去の評価のせいで同じ価値が得られることは期待できません。それはただの家賃徴収です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;0xFEE1DEAD:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;正直なところ、私はバイブコーディングを理解できません。&lt;p&gt;何度も試しましたが、新しいプロジェクトに 4 時間を費やした後でも、何が起こっているのかもうわかっていません。&lt;p&gt;その時点では、それを機能させるための次のプロンプトが何であるかを推測するだけです。
+私には、ソース コードを 1 行ずつ読まなくても（その時点でおそらく 4 時間以上かかるでしょう）エッジ ケースを修正できると思えるほど、コードベースに関する重要な知識がありません。&lt;p&gt;どうすれば誰もがそのように作業し、自分のコードに自信を持てるのか理解できません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;everdrive:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;ファシストが真実を再定義し、民主的に選ばれた指導者よりも強力な監視資本主義企業が私たちの欲望を支配する世界において、私たちは彼らのマシンが私たちの思考プロセスの一部になることを本当に望んでいるのだろうか？私たちの最も親密な考えやつながりを彼らと共有するには?&lt;p&gt;一般的に言って、人々は実際にはこのように考えることはできません。人々は概して短期的な考え方をします。何かが便利であれば、人々はそれを使います。芝生に殺虫剤を散布した方が簡単ですか？そう、ガン（あるいはバイオームの崩壊）は明日の問題であり、私たちには「害虫」がいるのです。今日の問題。一人で座って自分の考えを考えるのは難しいですか?良いニュースです。Youtube は存在しますが、今ではその必要はありません。次に何が起こるか（過激化、追跡、プロファイリング、プロパガンダ、脳の腐敗）は明日の問題である。一日の終わりにスクロールして、人々が何について話しているのかを知りたいですか?ソーシャルメディアはあなたのためにここにあります。それが偶然に民営化された社会信用システムの一部になったのかどうか?さて、また、それは
+それは後ほどの問題です。私は_今_快適に感じる必要があります_。私が今快適に過ごせる限り、私が世界に対して何をするかは問題ではありません。_&lt;p&gt;この状況から抜け出す方法は見つかりません。人々はこうした行動パターンを避けることができないようです。規制を求める人々は、禁欲を望む人々とほぼ同じくらい現実的だ。原理的には正しい答えですが、実際にはそうはなりません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ErroneousBosh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最近、データベースを検索するための簡単な Web アプリを作成する必要がありましたが、全文検索では十分に機能しませんでした。基礎となるデータがあまりにも一貫性がなかったため、人々が求めるようなことを行うには、5 ～ 6 列にわたって検索する必要がありました。&lt;p&gt;まさに AI エージェントの仕事です。&lt;p&gt;そこで私がやったことはこれです。Django でアプリを書きました。これは私がよく知っているものだったからです。&lt;p&gt;次に、検索ページのビューで、検索語を個別に選択しました。 「01」で始まる場合は、これは古い電話番号なので、その列を見て「03」で始まっているかどうかを確認してください。新しい電話番号なので、その列を見て「07」で始まっているかどうかを確認してください。携帯電話です。文字の後に 2 桁が続く場合はサイト コードです。数値であっても先頭に 0 がない場合は内部番号です。何にも一致しない場合は、説明列の部分文字列として存在するかどうかを確認します。&lt;p&gt;それでは終わりです。非常に高速かつ自然な検索で、（ほとんどの場合）意図どおりの処理が行われます。&lt;p&gt;人工知能は使用されていません。&lt;p&gt;すべてオーガニック自家製のブルート フォースと無知によって実行されます。&lt;p&gt;それは、場合によっては必要なことだからです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arowthway:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は「残ったもの」が好きです。記事の一部。これは、物事の行き先についての怒りの好みに関係なく適用できます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noobcoder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;実際、資本エンジンのために細分化されたコード、思考、意図に至るまで、このような展開があらゆるところで行われているのを私は目にします。
+それは単なる生産性ハックではなく、微妙な権力シフトの意思決定が抽象化され、主体性が希薄化している&lt;p&gt;奇妙さと好奇心にオプトインすることは、最終的には標準になる、保持する価値のある唯一のバグです&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zkmon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それで、あなたは反逆して、有機的な思考を持つ人間であり続けたいですか？しかし、「人間であること」とは正確には何でしょうか?&lt;p&gt;生物学的な感覚と能力は何世紀にもわたって絶えず強化され、有機的な人間は、あなたが自分と呼ぶもののより深い層の中に隠れるようになりました。&lt;p&gt;物質的な所有物や社会的つながりがなければ、自分とは何でしょうか?これらがなければあなた自身というものは存在しません。&lt;p&gt;ここで話を戻しましょう。私たちの感覚、心、身体能力をさらにもう 1 層強化することになぜ抵抗するのでしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abbadadda:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;あなたの言葉が私にどのような気持ちを与えてくれたかを本当にうれしく思います。彼らは私に「善戦し続ける」よう励ましてくれました。ソーシャルメディアを避ける場合など。 al.&lt;p&gt;私は時々 Vibe Code を実行し、Claude は最近 Terraform と SaltStack でまともな仕事をしました。しかし、特に Python やその他のプログラミング言語に関して、AI がいかに私の思考を弱めるかについて、この言葉が私の頭の中で真実に響きます。本当に慎重に歩いてください。本を読むのも効果があります。私は兄の勧めでずっと読み続けていた『デューン』の本を読み続けています。これらの本には、権力と人間の本性に関する非常に興味深い考察があり、現在の苦境にもある意味で当てはまるかもしれません。&lt;p&gt;いずれにせよ、思慮深いご意見に感謝いたします。雄弁な注意喚起の言葉。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Separo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;著者が示唆するように、AI が本質的に管理と資本をさらに集中させるように設計されているのであれば、それはそうなのかもしれませんが、それはあらゆるビジネスの目的でもあります。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mazone:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作成者はモデルをローカルで実行する場合と同じように感じますか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rho4:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;そして、穏健派の立場もあります。電卓の使用を拒否する人にはならないでください。パソコン&amp;#x2F;携帯電話&amp;#x2F;あい。定期的に新しいツールを使用する機会を与え、改善が特定のタスクに役立つかどうかを確認します。そして自分の人生を続けてください。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;embedding-shape:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;はい、分かりました。私たちプログラマーは現在、予想もしなかった方法とレートで、自分たちの技術の価値の低下を経験しています。&lt;p&gt;私はプログラマーで、プロとして 10 年ほどコーディングをしてきましたが、それよりも長い間自分のためにコーディングをしていました。&lt;p&gt;彼らは何を言っているのでしょうか?この「価値の下落」とは何でしょうか？私は、ほとんどお金をもらう必要のないような仕事で、これまでよりも多くの給料をもらっています（ただ楽しんでいるだけです）。プログラマーは、地球上で最も心配のない人間のはずです。適切な環境を整えていれば、その仕事は簡単で、高収入で、健康上のデメリットもあまりなく、必要なときに新しい仕事を見つけるのが比較的簡単です（確かに、米国は最近、その特定の点で苦労しているようですが、それでもそれは世界の他の地域でも当てはまります)。&lt;p&gt;そして今、開発者がメンテナンスする必要があるソフトウェアを構築するための、開発者によって開発者のために作られた、開発者向けのツールが爆発的に増えています。&lt;p&gt;どちらかというと、バルマー氏の「開発者、開発者、開発者」の嘆願のように思えます。 AI が私たちの代わりにすべてをやってくれるようになる 100 年後に 1 つの職業が残るとしたら、それはおそらくソフトウェア開発者と機械学習の専門家でしょう。&lt;p&gt;成長を続け、少なくとも 20 年間成長し続けているように見えるこの職業の価値が引き下げられるということは一体何でしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hartator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;重要なことは、ChatGPT はある種の神託であるため、私たちは依然として自分の ChatGPT を他の人に共有したいと思っているのに、誰もが他の人の ChatGPT を読むのを嫌がるようだということです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nullbyte808:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ヘタレプログラマーの私はAIが大好きです！現在、私は数学の知識、一般的な CS の知識、ML の知識を構築することに重点を置いています。将来的には、コードを書くことよりもコードの読み方と理解の方が重要になるかもしれません。&lt;p&gt;巨大なベクトル行列がわずかなコードで何ができるかは驚くべきことだと思います。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shlip:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; AI システムは、既存の権力と暴力の構造を強化し、強化するために存在します。&lt;p&gt;その通りです。あらゆる種類のジョブでチキン化されたリバース ケンタウロス[1]が急増していることからもそれがわかります。上司の利害関係者に光が見えてきた今、自由意志を持った人間をループから排除することが目標です。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;pluralistic.net&amp;#x2F;2022&amp;#x2F;04&amp;#x2F;17&amp;#x2F;チキン化されたリバース・ケンタウルスの復讐&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;pluralistic.net&amp;#x2F;2022&amp;#x2F;04&amp;#x2F;17&amp;#x2F;チキン化の復讐...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://fokus.cool/2025/11/25/i-dont-care-how-well-your-ai-works.html</guid>
+      <pubDate>Wed, 26 Nov 2025 10:08:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46055944</comments>
+    </item>
+    <item>
+      <title>OpenAIは損失を出し続ける可能性があるため、2030年までに少なくとも2,070億ドルを調達する必要がある</title>
+      <link>https://ft.com/content/23e54a28-6f63-4533-ab96-3756d9c88bad</link>
+      <description>&lt;p&gt;あらゆるデバイスから高品質の FT ジャーナリズムに完全にデジタル アクセスできます。含まれるものを選択グローバル ニュースと分析専門家の意見Android および iOS の FT アプリFT 編集: iOS および Web でアクセスファーストFT: その日の最大のニュース 20 件以上の厳選されたニュースレターmyFTFT ビデオとポッドキャストでトピックをフォローし、アラートを設定20 件の月間ギフト記事を共有Lex: FT の主力投資コラム一流の専門家による 15 件以上のプレミアム ニュースレターFT デジタル版: デジタル化された印刷版スタンダード デジタル月額 45 ドル質の高い FT ジャーナリズムに不可欠なデジタル アクセスを入手デバイス。含まれるものを選択グローバル ニュースと分析専門家の意見Android および iOS の FT アプリFT 編集: iOS および Web でアクセスファーストFT: その日の最大のニュース 20 件以上の厳選されたニュースレターmyFTFT ビデオとポッドキャストでトピックをフォローしアラートを設定共有する 20 件の毎月のギフト記事Lex: FT の主力投資コラム一流の専門家による 15 件以上のプレミアム ニュースレターFT デジタル版: デジタル化された印刷版大学または組織経由で既にアクセスできるかどうかを確認してください。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; OpenAI needs to raise at least $207B by 2030 so it can continue to lose money&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46058065"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://ft.com/content/23e54a28-6f63-4533-ab96-3756d9c88bad'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;user3939382:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;彼らが私に話したいのであれば、私は彼らをこの問題から救い出すことができます。ただし、通常、賢い人は話すのに忙しすぎて、オファーを聞くことができません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fullshark:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「クラウド コンピューティング会社に 100 ドルの借金があるなら、それはあなたの問題ですが、クラウド コンピューティング会社に 2,070 億ドルの借金があるとしたら...」&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rpmisms:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;PyLnT" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;PyLnT&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://ft.com/content/23e54a28-6f63-4533-ab96-3756d9c88bad</guid>
+      <pubDate>Wed, 26 Nov 2025 15:06:37 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46058065</comments>
+    </item>
+    <item>
+      <title>量子コンピューターを操作するための Qiskit オープンソース SDK</title>
+      <link>https://github.com/Qiskit/qiskit</link>
+      <description>&lt;p&gt;qiskit の Estimator プリミティブを使用して実行します。 StatevectorSampler と qiskit。 qiskit から qiskit からトランスパイルをインポートします。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Qiskit open-source SDK for working with quantum computers&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46056757"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/Qiskit/qiskit'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://github.com/Qiskit/qiskit</guid>
+      <pubDate>Wed, 26 Nov 2025 12:26:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46056757</comments>
+    </item>
+    <item>
+      <title>韓国の大統領候補にDMを送ったら、彼の核となるキャンペーンを構築することになった</title>
+      <link>https://medium.com/@wjsdj2008/i-dmd-a-korean-presidential-candidate-and-ended-up-building-his-core-campaign-platform-the-38eb1c5f5e7d</link>
+      <guid isPermaLink="true">https://medium.com/@wjsdj2008/i-dmd-a-korean-presidential-candidate-and-ended-up-building-his-core-campaign-platform-the-38eb1c5f5e7d</guid>
+      <pubDate>Wed, 26 Nov 2025 13:40:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46057304</comments>
+    </item>
+    <item>
+      <title>インディー ゲーム開発者は「AI フリー」という新たな売り文句を掲げています</title>
+      <link>https://www.theverge.com/entertainment/827650/indie-developers-gen-ai-nexon-arc-raiders</link>
+      <description>&lt;p&gt;「現在、すべてのゲーム会社が AI を使用していると想定することが重要です」と彼は説明しました。しかし、Kanaris-Sotiriou 氏は、多くのゲーム開発仲間とともに、この主張に反論したいと考えていました。 「描かれたすべてのフレーム、書かれたすべての単語、彫刻されたすべてのモデル、入力されたコードのすべての行、本物の声で歌われたすべての曲、本物の手で演奏されたすべてのギター、あらゆる瞬間に欠陥があり、汚いのは、私たちも同じだからです。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Indie game developers have a new sales pitch: being 'AI free'&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46057000"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.theverge.com/entertainment/827650/indie-developers-gen-ai-nexon-arc-raiders'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tete:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;公平を期すために言うと、GenAI の使用法が少しでもあるとしたら、アーティストを雇うためのお金を必要とせずに画像などを取得できることだと思います。&lt;p&gt;おそらく、これにより、よりニッチなゲームが可能になるでしょう。&lt;p&gt;言い換えれば、これがパッケージ全体です。何かユニークなものを入手し、開発者が何らかの「AI」を使用した場合、翻訳のため、またはキャラクターのアバター画像を作成するために、このゲームが存在できることを嬉しく思います。&lt;p&gt;AAA スタジオが、90 年代に良くて面白かったシリーズの同じ古いゲームの 100 回目の反復を公開しているのを見ると、実際に新しいアートさえも提供してくれません。それは大きな失望です。&lt;p&gt;しかし、私たちはここにいます。 EA は、数十の高価な新作リリースの後、基本的なバグ (プレイヤーがネットにぶつかったり、1 秒未満の新しいキックオフなど) を修正することさえできません。&lt;p&gt;インディーズ以外のゲームは、ここ数十年、ほとんどが完全な茶番劇でした。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;the_real_cher:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私には奇妙に思えます。&lt;p&gt;大工が電動工具は無料だと言っているようなものです。&lt;p&gt;仕事をスピードアップする素晴らしいツールを持っているのに、なぜそれを使わないのでしょうか。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Johanx64:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「普通の」人には通用しないセールストークです。ただし、芸術家気取りの人々と「ゲーム ジャーナリスト」だけです。&lt;p&gt;つまり。声を上げ、ほとんど無関係な少数派です。&lt;p&gt;主な視聴者が誰であるかを決して忘れないでください。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Mistletoe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;次の10年は、本物と証明できるものは何でも評価される時代になり、それはますます希少なものになり続けると思います。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mjr00:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;見当違いの戦いのようです。&lt;p&gt;スロップはスロップであるため、スロップです。トートロジー的に聞こえますが、AI は問題と直交しています。 AI が登場する前には、Unity&amp;#x2F;Unreal の「アセット ストアの山」が存在し、現在も存在しています。エンジンのストアから大量の (ほとんどが無料の) アセットを取得し、ゲームに組み込みます。何も一貫性や一貫性がありません。もちろん、AI のおかげでそれははるかに簡単でカスタマイズ可能になりましたが、最終的な結果は同じです。多数の異なる要素がまとまりなく結合し、プレイヤー エクスペリエンスが低下します。&lt;p&gt;最終的には好みが重要です。 AIを使うか使わないかに関わらず、センスの悪い人はひどいゲームを作ります。ただし、AI によって粗悪なゲームが作成される速度は確かに加速しています。&lt;p&gt;個人的には、完全に手作りされた魂のないローグライト デッキビルダー、2D ピクセル アート プラットフォーマー、抽出シューティング ゲームではなく、GenAI を使用して一貫した独自の個人的なビジョンを構築するのに役立つ 1 人によって作成されたインディー ゲームをプレイしたいと考えています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stego-tech:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「彼らは、AI を使えば彼らよりも優れた成果を上げることができるただのゼリーにすぎない」派は、コメント セクションに飛びついて AI 推進派のグループ思考を宣伝するのではなく、一般の職人たちと過ごすことにもっと時間を費やす必要があります。&lt;p&gt;アーティストやクリエイターは、数兆ドル規模の巨大企業やベンチャーキャピタルが資金提供する新興企業が、報酬や同意なしにこれらのモデルのトレーニングに自分たちの成果物を使用したことに、 広く&lt;i&gt;信じられないほど腹を立てています&lt;/i&gt;。それが核心的な不満であり、今でも残っている。すでにアートの創作に専念してわずかなお金を稼いでいた人々が、今やアートから完全に撤退することを余儀なくされているのは、プログラマーが独自の考えを持って、それを実行するよう他の人に依頼する - &lt;i&gt;GASP&lt;/i&gt; - ということを気にすることができなかったためです。&lt;p&gt;遠いですが、依然として重要な二次的な懸念は、スロップ自体の品質 (またはその欠如) です。アートに十分に関わっている人なら誰でも、最先端のモデルであっても、生成コンテンツの「継ぎ目」を見ることができます。つまり、視点がキーフレーム間で一貫性を欠いており、解剖学が現実に基づいていないか、ホラー映画にふさわしい方法で曲がっていたり、ネガティブなスペースが不足しているために互いに「接ぎ木」されていないジオメトリやマテリアルが見られます。これらのモデルは&lt;i&gt;ゴミ&lt;/i&gt;です。なぜなら、これらのモデルは核となる芸術的コンセプトを認識せず、プロンプトに従って無作為にピースを再組み立てするだけだからです。&lt;p&gt;私は AI 群衆に、実際にアート フェアに行くか、あなたのアイデアのカスタム ピースを依頼するように勧めます。単純なプロンプト以上のものを提供する必要があるものがあります。好きなスタイルとそのスタイルで活動するアーティストを特定します。より多くの人間関係を築き、創造性を共有することで絆を深めましょう。&lt;p&gt;アーティストはあなたに感謝し、あなたはその結果として得られる作品をもっと楽しめるでしょう。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dejobaan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は Steam での AI 開示に注目してきました (&lt;a href="https:&amp;#x2F;&amp;#x2F;www.totallyhuman.io&amp;#x2F;blog&amp;#x2F;the-surprising-new-number-of-genai-games-on-steam" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.totallyhuman.io&amp;#x2F;blog&amp;#x2F;the-surprising-new-number-o...&lt;/a&gt;)。開発者がそれを使用していることは驚くべきことではありませんが、驚いたのはそれを公開しているゲームの数です。 11 月の時点で、ライブラリの最大 8% になっていると思います。現在 AI の使用を明らかにしている最大のゲームは Stellaris (何百万もの売上を誇る) ですが、最初にリリースされたのは何年も前で、GenAI の使用は製品アップデートに含まれています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thedangler:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は AI が複雑な問題やスタックオーバーフローで見つけるような問題を解決するのが好きです。とにかくやりたくない定型的な仕事をするのに最適です。しかし、Git リポジトリに見つからないことを実行する必要がある場合、苦労します。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sweetheart:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;20251125055632&amp;#x2F;https:&amp;#x2F;&amp;#x2F;www.theverge.com&amp;#x2F;entertainment&amp;#x2F;827650&amp;#x2F;indie-developers-gen-ai-nexon-arc-raiders" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;20251125055632&amp;#x2F;https:&amp;#x2F;&amp;#x2F;www.theverge.com&amp;#x2F;e...&lt;/a&gt;&lt;p&gt;私は現在、実際に「普通の」キャリアからキャリアシフトしようとしている最中です。 SWE のキャリアはインディー ゲーム開発に携わり、自分自身でも少しずつナビゲートし始めています。インディー ゲームの分野で生計を立てたいと思っている人として、また他のインディー ゲーム開発者をもっとサポートしたいと思っている人として、インディー ゲームの世界にもっと投資するようになると、私が最も気にしているのは、ゲームがプロジェクトの背後にいる個人を明確に認識しているかどうかだと感じます。この強いアイデンティティの感覚が生成 AI の使用に反するとは思いませんが、それが役に立つどころか、害を及ぼす松葉杖になる可能性があることは間違いありません。&lt;p&gt;これだけは言いますが、同時に、開発のために Cursor なしでやらなければならないと感じることは想像もできません。私にとって、AI がソフトウェア エンジニアリングに使用されるか、アート ディレクションに使用されるかには顕著な違いがあります。しかし、これは単なる個人的な好みだと思います。それでも、それが「Gen-AI Free」のようなものを使用できないことを意味するかどうかを知るのは困難です。製品ラベル、またはその行が配置される場所。 Photoshop のスマート フィル ツールは Gen AI としてカウントされますか?それができないはずはありません。&lt;p&gt;結局のところ、購入した製品が、ある程度骨の折れる創造的なプロセスの結果であることを知ることには、本当の価値がある (あるいは、あり得る) と思います。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;1gn15:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は文字通り、コードを書くためにどのようなツールを使用するかは気にしません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;khoury:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「手作り」は、ソフトウェアの時代&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.theverge.com/entertainment/827650/indie-developers-gen-ai-nexon-arc-raiders</guid>
+      <pubDate>Wed, 26 Nov 2025 13:05:33 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46057000</comments>
+    </item>
+    <item>
+      <title>GLP-1薬を服用している一部の人にとって安全な出口がない可能性があることが研究で示唆されている</title>
+      <link>https://arstechnica.com/health/2025/11/glp-1-drugs-improve-heart-health-but-only-if-you-keep-taking-them/</link>
+      <description>&lt;p&gt;一般に、体重が戻れば戻るほど、心臓血管と代謝の健康状態の改善は逆転します。参加者約12名（308名中4％）は、薬の服用を中止した後も体重減少を続けた。ベス・モール シニア・ヘルス・レポーター ベス・モール シニア・ヘルス・レポーター ベスは、Ars Technica のシニア・ヘルス・レポーターです。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; There may not be a safe off-ramp for some taking GLP-1 drugs, study suggests&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46057628"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arstechnica.com/health/2025/11/glp-1-drugs-improve-heart-health-but-only-if-you-keep-taking-them/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Mistletoe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;出口がある必要はなく、生涯にわたってそれを受け入れればよいのです。  なぜ体重を減らし続けようと思う人がいるのでしょう？  できればオゼンピックの前にそうしただろう。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;petercooper:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;「一般に、体重が戻れば戻るほど、心臓血管と代謝の健康状態の改善は逆転します。」&lt;/i&gt;&lt;p&gt;そんなことはありません ;-) 私は 50 ポンド減量し、この 1 年間それを維持しながら良好な血圧を維持しています。しかし私は、GLP-1薬が多くの人に危険をもたらしたり、問題を引き起こしたりするわけではないとは考えていません。深刻な薬と同様に、個人ベースで扱う必要があります。&lt;p&gt;とはいえ、体重を大幅に減らしてから半分元に戻す人は、元の体重を維持するよりも悪いでしょうか?その答えはわかりません。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arstechnica.com/health/2025/11/glp-1-drugs-improve-heart-health-but-only-if-you-keep-taking-them/</guid>
+      <pubDate>Wed, 26 Nov 2025 14:21:40 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46057628</comments>
+    </item>
+    <item>
+      <title>人工知能を通じて科学を加速する国家的使命</title>
+      <link>https://energy.gov/genesis</link>
+      <guid isPermaLink="true">https://energy.gov/genesis</guid>
+      <pubDate>Wed, 26 Nov 2025 14:47:58 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46057874</comments>
     </item>
   </channel>
 </rss>
