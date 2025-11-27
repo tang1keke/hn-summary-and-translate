@@ -6,69 +6,118 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Thu, 27 Nov 2025 06:37:33 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Nov 2025 09:29:48 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>Coq: The World's Best Macro Assembler? [pdf] [2013]</title>
-      <link>https://nickbenton.name/coqasm.pdf</link>
-      <description>&lt;p&gt;���hb���"v��W�s�fM��'o�r&amp;�%'. �f�����]j@Uh�P$U�ݪ5ݸ�[ �q(tA��dݮ1v��@�&lt;�ѳ ���l��-Z~"���. ��sSr��Y�2��9��svmQ]aGb�� ��iO��aO��Y�&amp;�N�H&gt; �Ϋ�`�{ÿW��z�Q,��c�SZuE�r��s7��`�L��TqI�N� e���@��;/:I4f��=Ӊ���U��ow�2m�pN.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46065698"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://nickbenton.name/coqasm.pdf'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Linux Kernel Explorer</title>
+      <link>https://reverser.dev/linux-kernel-explorer</link>
+      <description>&lt;p&gt;Linux Kernel Explorer | reverser. 🐧Open a file from the explorer to beginStart exploring the Linux kernel source code📖 Guide▾Chapter 1 — Understanding Linux Kernel Before CodeThe kernel isn't a process—it's the system. How does the kernel primarily serve user processes.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46066280"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://reverser.dev/linux-kernel-explorer'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;asdefghyk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The x86 architecture and instruction set is complex - so it absolutely needs a powerful assembler to help prevent mistakes.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kragen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The canonical URL, dating back to at least 02015, may be &lt;a href="http:&amp;#x2F;&amp;#x2F;research.microsoft.com&amp;#x2F;en-us&amp;#x2F;um&amp;#x2F;people&amp;#x2F;nick&amp;#x2F;coqasm.pdf" rel="nofollow"&gt;http:&amp;#x2F;&amp;#x2F;research.microsoft.com&amp;#x2F;en-us&amp;#x2F;um&amp;#x2F;people&amp;#x2F;nick&amp;#x2F;coqasm.pd...&lt;/a&gt;, which now redirects to &lt;a href="https:&amp;#x2F;&amp;#x2F;www.microsoft.com&amp;#x2F;en-us&amp;#x2F;research&amp;#x2F;publication&amp;#x2F;coq-worlds-best-macro-assembler&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.microsoft.com&amp;#x2F;en-us&amp;#x2F;research&amp;#x2F;publication&amp;#x2F;coq-wor...&lt;/a&gt;.  This site presumably belongs to the Nick Benton who is one of its authors.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;quanto:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This paper reminds me of a class assignment in grad school where the prof asked the students to write a compiler in Coq for some toy Turning-complete language in a week.  Having no background in compiler design or functional programming, I found it daunting at first, but eventually managed it.  The Coq language&amp;#x27;s rigor really helps with something like this.&lt;p&gt;I wonder if AI&amp;#x27;s compute graph would benefit from a language-level rigor as of Coq.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;addaon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Poster here. I re-read this paper about once a year. I continue to think that it may be one of the most important papers I&amp;#x27;ve read. As someone who works on high-reliability safety-critical real-time systems (automotive, avionics), being able to work in an environment where I could prove semantic properties of assembly code is pretty close to my dream -- the cost of demonstrating code correct is already so much higher than the cost of writing the code that the incremental cost of going to assembly seems minor, if there&amp;#x27;s even a small payback in time to demonstrate correctness. In practice, I think my dream language would be a relatively rich macro assembler plus a (guided, greedy) register allocator, designed entirely to simplify and allow semantic proofs. I don&amp;#x27;t really have a sense as to whether Coq (Rocq) is the right answer today, vs other options; or if there&amp;#x27;s a newer literature advancing this approach; but I&amp;#x27;d truly love to see a deeper focus of making low level languages more useful in this space, rather than moving towards more constrained, higher level languages.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaway198846:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;They are going by Rocq today&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://nickbenton.name/coqasm.pdf</guid>
-      <pubDate>Thu, 27 Nov 2025 04:34:56 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46065698</comments>
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;knuckleheads:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Very neat. It reminds me a bit of how pages in the Talmud are laid out. From a gentile perspective, it was very interesting to me to see how hundreds (thousands?) of years of commentary are contained within the same page.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;interestingasfuck&amp;#x2F;comments&amp;#x2F;1acgks3&amp;#x2F;a_layout_of_a_page_in_the_talmud_why_jews_insist&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;interestingasfuck&amp;#x2F;comments&amp;#x2F;1acgks3&amp;#x2F;...&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;triberuth.wordpress.com&amp;#x2F;2016&amp;#x2F;09&amp;#x2F;23&amp;#x2F;my-talmud-layout-notes&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;triberuth.wordpress.com&amp;#x2F;2016&amp;#x2F;09&amp;#x2F;23&amp;#x2F;my-talmud-layout-...&lt;/a&gt;&lt;p&gt;Code isn&amp;#x27;t linear the same way, and pages don&amp;#x27;t make as much sense, but that idea of layers of commentary rings out in this Linux Kernel Explorer as well. I very much like the notes on the side!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;__bjoernd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I appreciate the learning guidance.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nolist_policy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Also: &lt;a href="https:&amp;#x2F;&amp;#x2F;elixir.bootlin.com&amp;#x2F;linux&amp;#x2F;v6.17.9&amp;#x2F;source" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;elixir.bootlin.com&amp;#x2F;linux&amp;#x2F;v6.17.9&amp;#x2F;source&lt;/a&gt;&lt;p&gt;Elixir works better on mobile despite being around for years.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fscaramuzza:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Am I the only one that can&amp;#x27;t access the website due to certificate problems with the .dev?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reverserdev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Thanks for sharing OP! It seems quite some people liked it, so I&amp;#x27;ll be listening to feedback and see what to do next. :)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qweqwe14:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;How is this different from &lt;a href="https:&amp;#x2F;&amp;#x2F;elixir.bootlin.com&amp;#x2F;linux" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;elixir.bootlin.com&amp;#x2F;linux&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jtwaleson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is super cool. Love the little icons in the left and would be nice if they were clickable.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stacktrace:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; API rate limit exceeded for 106.51.68.199. (But here&amp;#x27;s the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)&lt;p&gt;The GitHub APIs that you are using to list files are getting rate-limited in my case. If somebody else is also facing this issue, just use a VPN or something like Cloudflare Wrap to change your ip - this should fix the issue.&lt;p&gt;P.S If you are the main dev, giving an option to the visitor to sign in using Github or use a caching layer will be really helpful to make this accessible for the new user.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://reverser.dev/linux-kernel-explorer</guid>
+      <pubDate>Thu, 27 Nov 2025 06:17:37 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46066280</comments>
     </item>
     <item>
-      <title>Functional Data Structures and Algorithms: a Proof Assistant Approach</title>
-      <link>https://fdsa-book.net/</link>
-      <description>&lt;p&gt;This book is an introduction to data structures and algorithms for functional languages, with a focus on proofs. It covers both functional correctness and running time analysis. It does so in a unified manner with inductive proofs about functional programs and their running time functions.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46064680"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://fdsa-book.net/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Ray Marching Soft Shadows in 2D</title>
+      <link>https://www.rykap.com/2020/09/23/distance-fields/</link>
+      <description>&lt;p&gt;A distance field is an image like the one below that tells you how far each pixel is from your shape. This pixel is not in shadow. This pixel is in shadow.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46066695"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.rykap.com/2020/09/23/distance-fields/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.rykap.com/2020/09/23/distance-fields/</guid>
+      <pubDate>Thu, 27 Nov 2025 07:31:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46066695</comments>
+    </item>
+    <item>
+      <title>Principles of Vasocomputation</title>
+      <link>https://opentheory.net/2023/07/principles-of-vasocomputation-a-unification-of-buddhist-phenomenology-active-inference-and-physical-reflex-part-i/</link>
+      <description>&lt;p&gt;The treasures in neuroscience happen when we find exceptions to this rule: complex dynamics that arise from elegantly simple core mechanisms. Formally, the “tanha as unskillful active inference” (TUAI) hypothesis is that this process commonly goes awry (i. )[1] Third, there may be a context desynchronization between the system that represents the world model, and the system that maintains predictions-as-operators on this world model.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46066126"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://opentheory.net/2023/07/principles-of-vasocomputation-a-unification-of-buddhist-phenomenology-active-inference-and-physical-reflex-part-i/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zkmon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Some algorithms such as binary search give an incorrect view of the overall cost. The search has a prerequisite of sorting. So, the assumption is, the data is sorted once, and searched several times, making the sorting cost insignificant.&lt;p&gt;What if the data is used for only a single lookup? For this case, actually a sequential search would have lower cost compared to sorting and binary search. Infact, sequential search may beat sorting and binary search for upto about 100 lookups. So I think it is important to consider overall cost.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dwohnitmok:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;IIRC this book unfortunately only proves correctness directly and not runtime. Its runtime proofs are based off an abstraction of the algorithm suitable for direct manipulation by proofs rather than the actual implementation in code.&lt;p&gt;Does anybody know of any languages that let you prove properties about the runtime of a function directly implemented in the language?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://fdsa-book.net/</guid>
-      <pubDate>Thu, 27 Nov 2025 02:04:57 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46064680</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wartywhoa23:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; I view this research program as integral to both human flourishing and AI alignment.&lt;p&gt;The newspeakness of the latter sounds menacing.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;geden:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Is a fascinating theory I’ve been following for several months. It certainly feels truthy, would be great to have a little more hard science backup.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;curiouscube:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Very interesting but also very speculative. I&amp;#x27;m wondering how Trauma Release Exercises could be integrated into the framework, as it seems like it could also fall under the unlatching mechanism umbrella.&lt;p&gt;The overall idea of the body&amp;#x2F;muscles as an extension of memory feels experientally true, but I would love to see more empirical data on this.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kla-s:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I wonder how routinely wearing compression socks interacts with this proposed mechanism.&lt;p&gt;Always thought it interesting that for certain diagnosis wearing them until end of life is indicated according to current guidelines and we don’t expect maladoption (weakening of the connective tissue). Id kind of prefer&amp;#x2F;would be interested in a workout based approach, also interesting what knock on effects such workout would have on the larger system&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://opentheory.net/2023/07/principles-of-vasocomputation-a-unification-of-buddhist-phenomenology-active-inference-and-physical-reflex-part-i/</guid>
+      <pubDate>Thu, 27 Nov 2025 05:51:21 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46066126</comments>
     </item>
     <item>
-      <title>Music eases surgery and speeds recovery, study finds</title>
-      <link>https://www.bbc.com/news/articles/c231dv9zpz3o</link>
-      <description>&lt;p&gt;The research, published in the journal Music and Medicine, offers some of the strongest evidence yet that music played during general anaesthesia can modestly but meaningfully reduce drug requirements and improve recovery. With better pain management, the stress response is curtailed. Both groups wore noise-cancelling headphones - but only one heard music.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46065817"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bbc.com/news/articles/c231dv9zpz3o'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.bbc.com/news/articles/c231dv9zpz3o</guid>
-      <pubDate>Thu, 27 Nov 2025 04:55:57 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46065817</comments>
+      <title>Last Issue of "ECMAScript News"</title>
+      <link>https://ecmascript.news/archive/es-next-news-2025-11-26.html</link>
+      <description>&lt;p&gt;Sadly, we have to inform you that this is the last issue of “ECMAScript News”. Therefore, we made the difficult decision to stop publishing this newsletter. This email was sent to {{ email | default }}.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46066255"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://ecmascript.news/archive/es-next-news-2025-11-26.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RaizedByWolves:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Too bad, I liked it. 
+Does anyone have a good alternative to the newsletter?&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://ecmascript.news/archive/es-next-news-2025-11-26.html</guid>
+      <pubDate>Thu, 27 Nov 2025 06:14:21 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46066255</comments>
     </item>
     <item>
-      <title>Show HN: Era – Open-source local sandbox for AI agents</title>
-      <link>https://github.com/BinSquare/ERA</link>
-      <description>&lt;p&gt;install era agent brew install binsquare/era-agent-cli/era-agent # 3. install dependencies brew install krunvm buildah # 4. install dependencies brew install krunvm buildah # on macos # 2.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46065997"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/BinSquare/ERA'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://github.com/BinSquare/ERA</guid>
-      <pubDate>Thu, 27 Nov 2025 05:28:50 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46065997</comments>
+      <title>Mixpanel Security Breach</title>
+      <link>https://mixpanel.com/blog/sms-security-incident/</link>
+      <description>&lt;p&gt;We proactively communicated with all impacted customers. Your accounts were not impacted. Share articleTwitterLinkedInCopy article link to clipboardJen TaylorCEO @ Mixpanel.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46066522"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://mixpanel.com/blog/sms-security-incident/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;udev4096:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;What kind of notification is this? No actual information is conveyed. It&amp;#x27;s so vague you might as well not write it&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cobertos:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I _hate_ how this is written. At no point does it disclose explicitly:&lt;p&gt;* What systems were accessed&lt;p&gt;* What information was potentially exposed&lt;p&gt;* Just how &amp;quot;proactively&amp;quot; they&amp;#x27;ve been about this (no timeline)&lt;p&gt;* Numbers... The scale of any of it&lt;p&gt;---&lt;p&gt;Some comments from quoted portions of article&lt;p&gt;&amp;gt; Mixpanel detected a smishing campaign ...&lt;p&gt;Doesn&amp;#x27;t give any details on who the companion targeted, or how, or how widespread.&lt;p&gt;&amp;gt; We took comprehensive steps to contain and eradicate unauthorized access and secure impacted user accounts.&lt;p&gt;So there was definitely _some_ sort of unauthorized access, but doesn&amp;#x27;t say to which accounts or in what systems&lt;p&gt;&amp;gt; Performed global password resets for all Mixpanel employees&lt;p&gt;So... definitely sounds like they expected compromise of Mixpanel employee credentials&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kangaroozach:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Smushing is actually a pretty good name for this.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zdmc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;@sama has raised lots of $ so why risk these types of issues by outsourcing what you have the funding to build and control in-house? plausible deniability? (similar with their prev? use of auth0)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thinkindie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I&amp;#x27;m extremely confused by Mixpanel announcement, according to their blog post if you received an email from them it implies you were affected, yet I closed my account with them few months ago and I still received their email, which I can&amp;#x27;t understand if my account was impacted or no&lt;p&gt;&amp;gt; As a valued customer, we wanted to inform you about a recent security incident that affected a limited number of Mixpanel user accounts.  We have proactively communicated with all impacted customers.  If we did not previously contact you, your Mixpanel accounts were not impacted. We continue to prioritize security as a core tenant of our company, products and services. We are committed to supporting our customers and communicating transparently about this incident.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;autoexec:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; datePublished&amp;quot;:&amp;quot;2025-11-27T04:39:29.000Z&lt;p&gt;Considering they were aware of this on the 8th (who knows how long that was after it actually happened) it&amp;#x27;s a little disappointing that they&amp;#x27;d wait until the day before such a major holiday to post about it. Unsurprising sure, but still disappointing.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anonymous908213:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I don&amp;#x27;t understand. I was assured that ChatGPT is AGI by Sam Altman. Why are security breaches still happening? Surely with several hundred billion dollars investment and access to AGI, they could use ChatGPT agents to create their own product analytics platform that is robust and resilient against such a trivial attack rather than selling off users&amp;#x27; personal data to a third party.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gotosun:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;So did an Mixpanel employee get phished or were Mixpanel customer accounts targeted, thus an OpenAI employee fell for it?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ares623:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Does that mean Mixpanel stock&amp;#x2F;valuation goes up because OpenAI uses them? That&amp;#x27;s how it works now is it?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jvandenbroeck:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;It&amp;#x27;s a suspicious post, why would you make a post if attackers are performing a sms phishing, that happens all the time.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;denuoweb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Email from OpenAI: Transparency is important to us, so we want to inform you about a recent security incident at Mixpanel, a data analytics provider that OpenAI used for web analytics on the frontend interface for our API product (platform.openai.com). The incident occurred within Mixpanel’s systems and involved limited analytics data related to your API account.&lt;p&gt;This was not a breach of OpenAI’s systems. No chat, API requests, API usage data, passwords, credentials, API keys, payment details, or government IDs were compromised or exposed.&lt;p&gt;What happened
+On November 9, 2025, Mixpanel became aware of an attacker that gained unauthorized access to part of their systems and exported a dataset containing limited customer identifiable information and analytics information. Mixpanel notified OpenAI that they were investigating, and on November 25, 2025, they shared the affected dataset with us.&lt;p&gt;What this means for you
+User profile information associated with use of platform.openai.com may have been included in data exported from Mixpanel. The information that may have been affected was limited to:
+Name that was provided to us on the API account 
+Email address associated with the API account
+Approximate coarse location based on API user browser (city, state, country)
+Operating system and browser used to access the API account
+Referring websites
+Organization or User IDs associated with the API account&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;red_Seashell_32:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;It was SMS Phishing, a.k.a. Social Engineering.&lt;p&gt;It anything, it’s opposite of breach.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kevcampb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The title here is misleading. The original article does not state breach and at no point have Mixpanel used that term.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://mixpanel.com/blog/sms-security-incident/</guid>
+      <pubDate>Thu, 27 Nov 2025 07:02:40 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46066522</comments>
     </item>
     <item>
-      <title>Show HN: MakeSkill – The Intelligent Skill Builder for Claude</title>
-      <link>https://makeskill.cc</link>
-      <description>&lt;p&gt;Your conversation will be saved automatically and can be accessed from the sidebar. Skills are modular capabilities that extend Claude's functionality through instructions, metadata, and resources Create once, use automatically across conversations Skills load information in stages as needed, ensuring efficient context usage Startup: System includes metadata - "PDF Processing - Extract text and tables from PDF files" User request: "Extract the text from this PDF and summarize it" Claude loads: Reads SKILL. md with PDF extraction instructions Claude executes: Uses instructions to complete the task efficiently.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46065449"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://makeskill.cc'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://makeskill.cc</guid>
-      <pubDate>Thu, 27 Nov 2025 03:59:51 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46065449</comments>
+      <title>DNS Firewalling with MISP and Technitium DNS Server</title>
+      <link>https://zaferbalkan.com/technitium-misp/</link>
+      <guid isPermaLink="true">https://zaferbalkan.com/technitium-misp/</guid>
+      <pubDate>Thu, 27 Nov 2025 07:38:28 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46066736</comments>
+    </item>
+    <item>
+      <title>Evaluating Uniform Memory Access Mode on AMD's Turin</title>
+      <link>https://chipsandcheese.com/p/evaluating-uniform-memory-access</link>
+      <description>&lt;p&gt;Evaluating Uniform Memory Access Mode on AMD's Turin ft. It evenly distributes memory accesses across all memory controller channels, providing uniform memory access like in a desktop system. 6 ns with uniform memory access[1].&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46065959"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://chipsandcheese.com/p/evaluating-uniform-memory-access'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://chipsandcheese.com/p/evaluating-uniform-memory-access</guid>
+      <pubDate>Thu, 27 Nov 2025 05:22:28 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46065959</comments>
     </item>
   </channel>
 </rss>
