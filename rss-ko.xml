@@ -6,79 +6,382 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Korean</description>
     <language>ko</language>
-    <lastBuildDate>Fri, 28 Nov 2025 15:27:52 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Nov 2025 18:41:34 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ko.xml"/>
     <item>
-      <title>독일에서 오픈소스 작업을 시민 서비스로 공식적으로 인정해 달라는 청원</title>
-      <link>https://www.openpetition.de/petition/online/anerkennung-von-open-source-arbeit-als-ehrenamt-in-deutschland#petition-main</link>
-      <description>&lt;p&gt;Anerkennung als Ehrenamt würde Rechtsklarheit schaffen Dies schafft Transparenz, Rechtssicherheit und Nachhaltigkeit im digitalen Ehrenamt. 청원 시작: 2025년 11월 24일 수집 종료: 2026년 5월 23일 지역: 독일 주제: 인터넷 오픈 소스 ist ein wichtiger Bestandteil digitaler Souveränität. 청원 시작일: 2025년 11월 24일 수집 종료일: 2026년 5월 23일 지역: 독일 주제: 인터넷.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Petition to formally recognize open source work as civic service in Germany&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46078770"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.openpetition.de/petition/online/anerkennung-von-open-source-arbeit-als-ehrenamt-in-deutschland#petition-main'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>2,800만 개의 Hacker News 댓글이 벡터 임베딩 검색 데이터세트로 사용됨</title>
+      <link>https://clickhouse.com/docs/getting-started/example-datasets/hackernews-vector-search-dataset</link>
+      <description>&lt;p&gt;7,400만 개의 게시물과 벡터 임베딩. 벡터 유사성 색인 작성벡터 유사성 색인 작성다음 SQL을 실행하여 hackernews 테이블의 벡터 열에 벡터 유사성 색인을 정의하고 작성하십시오.ALTER TABLE hackernews ADD INDEX 벡터_index 벡터 TYPE 벡터_similarity('hnsw', 'cosineDistance', 384, 'bf16', 64, 512); ALTER TABLE hackernews MATERIALIZE INDEX 벡터_인덱스 설정 mutations_sync = 2; 인덱스 생성 및 검색에 대한 매개변수 및 성능 고려 사항은 설명서에 설명되어 있습니다. 이 HackerNews 데이터 세트의 데이터 세트에는 all-MiniLM-L6-v2 모델에서 생성된 벡터 임베딩이 포함되어 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; 28M Hacker News comments as vector embedding search dataset&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46081053"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://clickhouse.com/docs/getting-started/example-datasets/hackernews-vector-search-dataset'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;carlosjobim:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;오픈소스의 논리:&lt;p&gt;1. 나는 내가 하는 모든 일에 대해 책임을 지고 싶지 않습니다.&lt;p&gt;2. 그렇기 때문에 나는 내 작업을 무료로 제공하므로 누구도 불평할 권리가 없습니다. 그러니 어떤 단점도 부끄러워할 필요가 없습니다.&lt;p&gt;3. 어떤 사람들은 내 작업을 모두 가져가고 아무것도 돌려주지 않습니다.&lt;p&gt;4. 이제 나는 내가 한 모든 일에 대해 아무것도 얻지 못했다는 사실에 정말 화가 납니다!&lt;p&gt;5. 그래서 정부가 나서서 책임을 져야 한다고 요구합니다! 그리고 그들은 나에게 돈과 세금 혜택을 제공합니다!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oytis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;헤드라인을 보면 새로 도입된 군복무 대신 OS에 기여할 수 있도록 허용하는 것에 대해 이야기하고 있다고 생각했는데, 이는 사실이 되기에는 너무 좋은 거래일 것입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whstl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;독일에서는 내가 이해하는 바에 따르면 시민 봉사는 귀하가 "고용"된 경우에만 수행될 수 있습니다. 호스트 조직은 반드시 비영리, 공공 또는 지역사회 이익 조직이어야 합니다.&lt;p&gt;따라서 단순히 "집에서 Github 프로젝트에 커밋"하는 것이 아니라 호스트 조직이 실제로 발품 작업을 수행하고 비영리뿐만 아니라 시민 서비스 호스트로도 승인을 받아야 합니다.&lt;p&gt;그리고 독일 관료제를 알면 위의 작업이 쉽지 않습니다. ;)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;basemi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;반대하지는 않지만 그것에 소비된 시간을 어떻게 추적합니까?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;avhception:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;좋아요, 서명했어요!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blenderob:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 청원서가 영국에서 받은 청원서와 비슷합니까? 일정 수준의 표를 얻은 영국 청원서의 IIRC는 의회에서 논의되어야 합니다. 이 청원이 그런가요? 독일 출신의 누구든지 이러한 청원이 얼마나 심각하게 받아들여지고 있는지에 대해 밝힐 수 있습니까?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;constantcrying:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;요점은 무엇입니까? Ehrenamt는 어떤 이점을 제공하며(참고로 제가 가지고 있는 것이 있습니다) 오픈 소스 작업만큼 광범위한 활동이 자격을 갖춘 이유는 무엇입니까? 많은 오픈소스 프로젝트가 대중을 위한 아무런 이익도 없이 진행되는데 왜 그런 개발자가 그런 타이틀을 받아야 합니까?&lt;p&gt;이런 것을 원한다면 Verein을 찾아 오픈소스 활동을 목적으로 삼지 않겠습니까?&lt;p&gt;전반적으로 저는 이에 대해 매우 반대합니다. 가장 큰 이유는 현재 존재하는 Ehrenämter가 매우 어리 석고 무의미하다고 생각하기 때문이며 국가가 이에 전혀 관여해서는 안된다고 강력히 믿기 때문입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lionkor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것은 절대적으로 올바른 다음 단계입니다. 과거에 꽤 규모가 큰 FOSS 프로젝트 시작을 고려할 때(AGPL-3이 될 예정이었고 팀이 있었고 이 프로젝트를 시작하기 위해 다른 프로젝트를 떠난 상태였습니다) e.V. 등록을 고려했습니다. 독일에서는 동일한 혜택을 많이 누리고 있습니다. 결국 다른 이유로 팀이 해체됐는데, 이랬더라면 훨씬 더 일찍 시작할 수 있었을 것이고, 팀이 해체되지 않았을 가능성도 크다.&lt;p&gt;저희는 재정과 법적 보호가 걱정됐다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vachina:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;독일 납세자에게는 끔찍한 거래입니다. Amazon et.에 대한 탁월한 거래. 알.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;netdevphoenix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;좋은 아이디어입니다. 몇 가지 조건이 있어야 한다고 생각합니다.&lt;p&gt;a) 프로젝트의 소유자(실제로 유용하지 않은 애완동물 프로젝트를 피하기 위해)가 아니거나 적어도 단독 소유자가 아니어야 합니다.&lt;p&gt;b) 이상적으로는 React와 달리 기업 후원자가 거의 또는 전혀 없는 영향력 있는 프로젝트여야 합니다.&lt;p&gt;c) 귀하의 기여가 병합되지 않은 경우 "작업 완료"로 계산되어서는 안 됩니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;checker659:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;오픈 소스가 없으면 LLM을 작성하는 코드가 없습니다. 그것은 가장 높은 수준의 자선입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;leothetechguy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;왜 안되는 걸까요?&lt;p&gt;단순히 기부를 위한 것이 아니라 선의로 기부하는 한, 다른 시민 서비스를 위해 이를 보장하는 시스템이 이미 마련되어 있다고 가정합니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.openpetition.de/petition/online/anerkennung-von-open-source-arbeit-als-ehrenamt-in-deutschland#petition-main</guid>
-      <pubDate>Fri, 28 Nov 2025 14:08:14 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46078770</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;catapart:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;쪽모이 세공 파일이 무엇인지 오해하고 있습니까? 아니면 포함된 메타데이터와 함께 모든 HN 게시물이 총 55GB입니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;afiodorov:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;BigQuery의 모든 HN 댓글을 삽입하고 &lt;a href="https:&amp;#x2F;&amp;#x2F;hn.fiodorov.es" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;hn.fiodorov.es&lt;/a&gt;에서 호스팅했습니다.&lt;p&gt;소스는 &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;afiodorov&amp;#x2F;hn-search" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;afiodorov&amp;#x2F;hn-search&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;j4coh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아, 계정 삭제 및 댓글 옵션이 있었으면 좋았을 텐데요.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://clickhouse.com/docs/getting-started/example-datasets/hackernews-vector-search-dataset</guid>
+      <pubDate>Fri, 28 Nov 2025 18:02:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46081053</comments>
     </item>
     <item>
-      <title>A16Z의 놀라운 주장</title>
-      <link>https://nealstephenson.substack.com/p/a-remarkable-assertion-from-a16z</link>
-      <guid isPermaLink="true">https://nealstephenson.substack.com/p/a-remarkable-assertion-from-a16z</guid>
-      <pubDate>Fri, 28 Nov 2025 12:41:32 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46078138</comments>
-    </item>
-    <item>
-      <title>Gen-AI에 (잠재적으로) 1조 달러가 낭비됨</title>
-      <link>https://garymarcus.substack.com/p/a-trillion-dollars-is-a-terrible</link>
-      <guid isPermaLink="true">https://garymarcus.substack.com/p/a-trillion-dollars-is-a-terrible</guid>
-      <pubDate>Fri, 28 Nov 2025 13:21:17 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46078407</comments>
-    </item>
-    <item>
-      <title>애플리케이션 파일 형식으로서의 SQLite</title>
-      <link>https://sqlite.org/appfileformat.html</link>
-      <description>&lt;p&gt;응용 프로그램 파일 형식이란 무엇입니까? 파일 더미 형식. 래핑된 파일 더미 형식.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; SQLite as an Application File Format&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46076642"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://sqlite.org/appfileformat.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>그럼 로컬 RAG를 만들고 싶나요?</title>
+      <link>https://blog.yakkomajuri.com/blog/local-rag</link>
+      <description>&lt;p&gt;이것이 오늘날 우리가 갖고 있는 것입니다: 벡터 DB: Postgres + pgVector. 또한 bge-m3(더 큰, 다중 언어)로 Skald를 실행하고 이 게시물의 뒷부분에서 결과를 공유합니다. 그런 관점에서 볼 때 이것은 큰 성공이었습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; So you wanna build a local RAG?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46080364"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.yakkomajuri.com/blog/local-rag'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rtyu1120:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;약간 관련 없는 호언장담이지만 ZIP이 왜 다른 것보다 응용 프로그램 파일 형식으로 채택되었는지 여전히 잘 모르겠습니다. 의심스러운 선택이 있는 DOS 시대의 잔재입니다. 왜 다른 것보다 그것을 선택하겠습니까?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;askl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;어쨌든 제목에서 처음 생각한 것은 sqlite를 응용 프로그램의 형식으로 사용하는 것이었습니다. 따라서 ELF를 대체하는 것과 같습니다. 나는 이 아이디어가 흥미롭기도 하고 끔찍하다고 생각한다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;renegat0x0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 SQLite를 어느 정도 그런 식으로 사용한다고 생각합니다:&lt;p&gt;- &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;rumca-js&amp;#x2F;Internet-Places-Database" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;rumca-js&amp;#x2F;Internet-Places-Database&lt;/a&gt;&lt;p&gt;UI의 경우 HTML을 사용합니다. 왜냐하면 이미 부트랩이 포함된 구성 요소를 제공하고 모든 사람이 소프트웨어를 설치하지 않고도 사용할 수 있기 때문입니다.&lt;p&gt;모든 데이터는 읽기 쉽고 데이터를 반환하는 단일 SQLite에서 가져옵니다.&lt;p&gt;내 데이터베이스가 너무 커서 검색하는 데 시간이 걸립니다. 검색 범위를 제한하는 보다 의미 있는 방법을 제공하고 싶었습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jrochkind1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;다음 주제를 검색했습니다:&lt;p&gt;&amp;gt; 2004년 처음 출시된 시점부터 이전 버전과 호환되며 앞으로도 수십 년 동안 계속 호환될 것이라고 약속합니다.&lt;p&gt;정말 놀라운 일입니다. 훨씬 더 나쁜 일을 할 수도 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stavarotti:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이전: &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=23508923"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=23508923&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://sqlite.org/appfileformat.html</guid>
-      <pubDate>Fri, 28 Nov 2025 08:15:50 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46076642</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_joel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;최소한의 노력만 필요하다면 Anythingllm으로 로컬 RAG를 얻을 수 있습니다. 플러그 앤 플레이가 거의 가능합니다. Langchain 및 Agentic RAG의 잡초에 들어가기 전에 아이디어에 대한 간단한 테스트에 사용했습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;barbazoo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 이것이 의미하는 바는 완전한 로컬 RAG 설정을 구축하려는 경우 각 구성 요소에 대한 로컬 옵션을 사용하는 SaaS 제공업체로 대체해야 한다는 것입니다.&lt;p&gt;&amp;quot;단지&amp;quot; 문서와 벡터 DB를 로컬로 만드는 것은 거대한 첫 번째 단계이며 동시에 로컬 LLM을 사용하는 것보다 훨씬 더 실행 가능합니다. 규모에 맞게 자체 LLM을 운영할 수 있는 리소스를 갖춘 조직이나 기관을 저는 모릅니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nilirl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;의미 체계 검색이 어휘 검색보다 성능이 높다는 것이 암묵적으로 암시되는 이유는 무엇인가요?&lt;p&gt;2023년에 의미 체계 검색을 어휘 검색(tantivy, BM25)과 비교했을 때 검색 결과가 약간 다르다는 것을 발견했습니다.&lt;p&gt;의미 체계 검색이 약간 더 재현율이 있더라도 문맥 문제가 이러한 다중 구성 요소, 자체 검색 엔진 접근 방식을 보증합니까?&lt;p&gt;어떤 중요한 척도에서 어휘 검색 엔진보다 성능이 뛰어난가요? 엔지니어링 시간은 그만한 가치가 있습니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이와 같은 구축에 대한 조언은 다음과 같습니다. 벡터 데이터베이스 및 임베딩의 필요성에 매달리지 마세요.&lt;p&gt;전체 텍스트 검색이나 심지어 grep&amp;#x2F;rg를 사용하는 것이 훨씬 더 빠르고 저렴합니다. 벡터 데이터베이스 인덱스를 유지할 필요가 없으며 일종의 에이전트 도구 루프에 넣으면 정말 잘 작동합니다.&lt;p&gt;의미론적 검색의 가장 큰 장점은 퍼지 검색을 처리할 수 있다는 것입니다. 즉 누군가가 다음을 검색하면 개를 언급하는 결과를 반환합니다. 예를 들어 개입니다.&lt;p&gt;훌륭한 LLM에 검색 도구를 제공하면 &amp;quot;개 OR 개&amp;quot;와 같은 검색어가 나올 수 있습니다. 여러 차례의 검색을 통해 해당 쿼리를 구체화합니다.&lt;p&gt;게다가 청킹 문제를 해결할 필요가 없다는 뜻이기도 합니다!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mips_avatar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;성능을 저하시킬 수 있는 여기서 제가 보지 못한 한 가지는 의미론적 청킹이 부족하다는 것입니다. 전체 문서를 삽입하는 것처럼 들리는데, 문서에 여러 개념이 포함되어 있으면 문제가 생길 수 있습니다. 회상을 위한 더 나은 접근 방식은 의미론적 청크를 얻기 위해 일종의 청킹 프로그램을 사용하는 것입니다(약간 구성해야 하지만 저는 spacy를 좋아합니다).  그런 다음 청크가 있으면 포함을 수행하기 전에 이 청크가 문서의 나머지 부분과 어떻게 관련되는지에 대한 컨텍스트를 추가해야 합니다. 나는 상황별 검색에 대한 인류학적 접근 방식이 내 RAG 시스템에서 매우 효과적이라는 것을 발견했습니다(&lt;a href="https:&amp;#x2F;&amp;#x2F;www.anthropic.com&amp;#x2F;engineering&amp;#x2F;contextual-retrieval" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.anthropic.com&amp;#x2F;engineering&amp;#x2F;contextual-retrieval&lt;/a&gt;) 컨텍스트 생성을 위한 모델로 gpt oss 20b를 사용할 수 있습니다.&lt;p&gt;제가 귀하의 게시물을 잘못 이해했고 귀하가 파이프라인에서 이러한 형식을 수행하고 있지 않는 한 이를 구현하면 성능이 크게 향상되는 것을 볼 수 있습니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.yakkomajuri.com/blog/local-rag</guid>
+      <pubDate>Fri, 28 Nov 2025 16:54:56 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46080364</comments>
     </item>
     <item>
-      <title>루브르, EU 외 관광객 대부분 티켓 가격 45% 인상</title>
-      <link>https://www.bbc.com/news/articles/clyd4llgrego</link>
-      <description>&lt;p&gt;루브르 박물관, 6시간 전 대부분의 비 EU 관광객 티켓 가격 45% 인상 공인 가이드가 있는 그룹의 비 EU 방문객도 내년부터 28유로를 지불해야 한다고 루브르 박물관은 BBC에 말했습니다. 루브르 박물관은 지난해 거의 900만 명의 방문객을 맞이했으며, 그 중 대다수는 해외에서 왔습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Louvre to hike ticket prices for most non-EU tourists by 45%&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46079067"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bbc.com/news/articles/clyd4llgrego'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>내 맞춤 취미 OS의 C++ 웹 서버</title>
+      <link>https://oshub.org/projects/retros-32/posts/getting-a-webserver-running</link>
+      <description>&lt;p&gt;get("/home", [&amp;fileRepo](const http::Request&amp; req, http::Response&amp; res) { (void)req; res.get("/about", [&amp;fileRepo](const http::Request&amp; req, http::Response&amp; res) { (void)req; res.get("/status", [&amp;fileRepo](const http::Request&amp; req, http::Response&amp; res) { (공허) 요청;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; C++ Web Server on my custom hobby OS&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46080579"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://oshub.org/projects/retros-32/posts/getting-a-webserver-running'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yupyupyups:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;OpenAPI 생성을 추가해야 합니다. 따라서 기본적으로 &amp;#x2F;openapi.json 엔드포인트가 자동 생성됩니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;roetlich:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아주 멋지다! 전체 네트워킹 스택이 간단하지만 HTTP(및 TCP)가 아닌 이유는 무엇입니까? DNS와 같은 다른 프로젝트에서 영감을 얻을 수 있나요?&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://oshub.org/projects/retros-32/posts/getting-a-webserver-running</guid>
+      <pubDate>Fri, 28 Nov 2025 17:15:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46080579</comments>
+    </item>
+    <item>
+      <title>이해하기 쉬운 JSON 스키마: 방언, 어휘 및 메타스키마</title>
+      <link>https://www.iankduncan.com/engineering/2025-11-24-json-schema-demystified/</link>
+      <description>&lt;p&gt;스키마는 다른 JSON 문서에 대한 제약 조건을 설명하는 JSON 문서입니다. JSON 스키마 메타스키마는 자체 설명이 가능하도록 설계되었습니다. 그러나 JSON 스키마는 시간이 지남에 따라 발전했습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; JSON Schema Demystified: Dialects, Vocabularies and Metaschemas&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46080769"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.iankduncan.com/engineering/2025-11-24-json-schema-demystified/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vintagedave:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; ...유명한 갤러리를 정비하기 위해 매년 수백만 유로를 모금할 것으로 예상됩니다.&lt;p&gt;농담은 제쳐두고(예: 훔친 보석을 어떻게든 다시 살 수 있어야 한다고 추측해 보세요!) 그들은 강력한 비판을 받았고('부적절한 보안 시스템과 노후화된 인프라') 전면 점검이 기한이 훨씬 지난 것처럼 들립니다. 솔직히 루브르 박물관 입장료 40달러도 나쁘지 않습니다. 비싸지만 그것은 _루브르 박물관_이며 아마도 세계에서 가장 놀라운 박물관일 것입니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.bbc.com/news/articles/clyd4llgrego</guid>
-      <pubDate>Fri, 28 Nov 2025 14:41:53 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46079067</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adamzwasserman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;여기서 더 깊은 원칙은 '진실이 어디에 있는지에 대해 거짓말을 하지 마세요'입니다.&lt;p&gt;저는 이것이 부작용을 넘어 어떻게 일반화되는지 탐구해 왔습니다. 모든 React 상태 라이브러리는 DOM과 동기화되어야 하는 상태의 JavaScript 복사본을 생성합니다. 이것이 원죄입니다. 두 가지 진실 = 거짓말.&lt;p&gt;해결책은 더 나은 동기화가 아니라 복제를 거부하는 것입니다. DOM은 이미 완벽하게 좋은 상태 컨테이너입니다. 당신이 해야 할 일은 그것을 읽는 것뿐입니다.&lt;p&gt;곧 논문(DATAOS)과 React 구현(상태 비저장, &lt;1KB)을 출시할 예정입니다. 이것이 multicardz(스테로이드 기반의 고성능 칸반, 행 및 열, 100만 개 이상의 카드, 1초 미만의 검색, 완벽한 등대 점수, 제로 상태 동기화 버그) 뒤에 있는 아키텍처입니다. 동기화할 상태가 없기 때문입니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.iankduncan.com/engineering/2025-11-24-json-schema-demystified/</guid>
+      <pubDate>Fri, 28 Nov 2025 17:34:26 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46080769</comments>
+    </item>
+    <item>
+      <title>잡아당기지 마세요. 무엇에 붙어 있을지 절대 알 수 없습니다(2016)</title>
+      <link>https://blog.plover.com/2016/07/01/#tmpdir</link>
+      <description>&lt;p&gt;수학적인 과거는 외국이다. 달 위의 야구 아카이브: 2025: JFMAMJ JAS 2024: JFMAMJ JASOND 2023: JFMAMJ JASOND 2022: JFMAMJ JASOND 2021: JFMAMJ JASOND 2020: JFMAMJ JASOND 2019: JFMAMJ JASOND 2018: JFMAMJ JASOND 2017: JFMAMJ JASOND 2016: JFMAMJ JASOND 2015: JFMAMJ JASOND 2014: JFMAMJ JASOND 2013: JFMAMJ JASOND 2012: JFMAMJ JASOND 2011: JFMAMJ JASOND 2010: JFMAMJ JASOND 2009: JFMAMJ JASOND 2008: JFMAMJ JASOND 2007: JFMAMJ JASOND 2006: JFMAMJ JASOND 2005: OND 수학245 프로그래밍99 언어95 기타75 Book50 Tech49 어원35 Haskell33 Oops30 Unix27 Cosmic Call25 수학 SE25 법칙22 물리학21 Perl17 생물학16 두뇌15 달력15 음식15 그걸 잡아당기지 마세요, 그게 무엇에 붙어 있을지 절대 모르죠. 어제 제가 추적한 아주 흥미로운 버그에 대한 이야기입니다. 주요 emacs가 실행 중입니다. (소켓은 프로세스 간 통신(이 경우 emacs와 emacsclient 사이)을 가능하게 하는 시설입니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Don't tug on that, you never know what it might be attached to (2016)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46079785"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.plover.com/2016/07/01/#tmpdir'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kace91:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;(이것이 전혀 작성자를 비판하려는 것이 아니라는 점을 분명히 밝히고 시작하겠습니다.)&lt;p&gt;저는 정말 유능한 사람들이 다른 사람의 상황을 판단하는 방식을 보면 대개 즐겁습니다.&lt;p&gt;이 게시물은 다음 사항을 이해하고 있다고 가정합니다.&lt;p&gt;- emacs(이것이 무엇인지, 버퍼와 같은 용어)&lt;p&gt;- strace&lt;p&gt;- Linux 디렉토리 및 "모든 것은 파일입니다"&lt;p&gt;- 환경 변수&lt;p&gt;- grep 및 유사&lt;p&gt;- git이 무엇인지&lt;p&gt;- &amp;#x27;git이 무엇이든&amp;#x27; git-경로에 무엇이든 존재하는 경우 사용자 정의 스크립트를 실행하도록 작동합니다(이것은 나에게 TIL이었습니다!)&lt;p&gt;- irc&lt;p&gt;- CVE&lt;p&gt;- 동적 로더&lt;p&gt;- 파일 권한&lt;p&gt;그런 다음 청중에게 다음을 설명하는 것이 중요하다고 느낍니다.&lt;p&gt;&amp;gt;소켓은 프로세스 간 통신을 가능하게 하는 시설입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adrianmonk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; &lt;i&gt;이 컴퓨터 관련 내용은 놀라울 정도로 복잡합니다. 누군가가 어떻게 작업을 수행하는지 모르겠습니다.&lt;/i&gt;&lt;p&gt;이러한 유형의 문제를 덜 숨기고 진단하기 쉽게 만들기 위해 무엇을 할 수 있는지 궁금합니다.&lt;p&gt;생각나는 한 가지는 로더가 빨리 실패하도록 하는 것입니다. 보안상의 이유로 로더는 TMPDIR이 설정되지 않았는지 확인해야 합니다. 지금은 TMPDIR을 설정 해제하여 이를 수행하며 이로 인해 자동 오류가 발생합니다. 대신 TMPDIR이 설정되어 있는지 확인할 수 있으며, 그렇다면 치명적인 오류가 발생합니다.&lt;p&gt;이렇게 하면 권한 있는 프로그램을 실행하기 전에 TMPDIR을 직접 설정 해제해야 하므로 지루할 수 있지만 적어도 자신이 이를 수행할 것이기 때문에 이러한 일이 발생하고 있다는 것을 알 수 있습니다.&lt;p&gt;(분명히 말하면 실제로 이 작업을 제안하는 것은 아닙니다. 호환성이 손상될 수 있습니다. 대안적인 디자인에 대해 생각하는 것은 단지 흥미로울 뿐입니다.)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;svat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;(2016)&lt;p&gt;또한 "직접" 링크: &lt;a href="https:&amp;#x2F;&amp;#x2F;blog.plover.com&amp;#x2F;tech&amp;#x2F;tmpdir.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;blog.plover.com&amp;#x2F;tech&amp;#x2F;tmpdir.html&lt;/a&gt;(이것은 게시된 링크는 &lt;a href="https:&amp;#x2F;&amp;#x2F;blog.plover.com&amp;#x2F;2016&amp;#x2F;07&amp;#x2F;01&amp;#x2F;#tmpdir"이므로 별로 중요하지 않습니다. rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;blog.plover.com&amp;#x2F;2016&amp;#x2F;07&amp;#x2F;01&amp;#x2F;#tmpdir&lt;/a&gt; 즉, "tmpdir"이라는 이름의 블로그 게시물이 2016-07-01에 게시되었으며 해당 날짜에 게시된 게시물만 있으므로 페이지의 내용은 기본적으로 동일합니다.)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;linsomniac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;인터넷에는 Buckaroo Banzai 참조가 더 필요합니다.  어디를 가든 거기에 있기 때문입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;markstos:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그리고 이것은 컴퓨터가 훨씬 덜 복잡하고 바이브 코딩 슬리퍼 버그가 별거 아니었던 10년 전에 작성된 것입니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.plover.com/2016/07/01/#tmpdir</guid>
+      <pubDate>Fri, 28 Nov 2025 16:01:01 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46079785</comments>
+    </item>
+    <item>
+      <title>섹시함을 되찾다. 인터넷 감시가 에로티시즘을 죽였다</title>
+      <link>https://lux-magazine.com/article/privacy-eroticism/</link>
+      <guid isPermaLink="true">https://lux-magazine.com/article/privacy-eroticism/</guid>
+      <pubDate>Fri, 28 Nov 2025 17:05:31 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46080473</comments>
+    </item>
+    <item>
+      <title>Imgur가 영국을 지리적으로 차단했기 때문에 내 네트워크의 지리적 차단을 해제했습니다.</title>
+      <link>https://blog.tymscar.com/posts/imgurukproxy/</link>
+      <description>&lt;p&gt;대부분의 셰이더 페이지에는 Imgur에서 호스팅되는 미리보기 이미지가 포함되어 있습니다. 하지만 그 접근 방식에는 몇 가지 문제가 있습니다. 이로 인해 Nginx는 Gluetun의 네트워크 스택을 공유하므로 모든 트래픽이 자동으로 VPN 터널을 통과합니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Imgur Geo-Blocked the UK, So I Geo-Unblocked My Network&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46081188"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.tymscar.com/posts/imgurukproxy/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;toomuchtodo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;잘했어요! 적절한 OSI 레이어는 아닐 수도 있지만, imgur에서 사용할 수 없는 경우 웨이백 머신에서 imgur blob을 가져올 수 있다면 멋질 것입니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.tymscar.com/posts/imgurukproxy/</guid>
+      <pubDate>Fri, 28 Nov 2025 18:15:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46081188</comments>
+    </item>
+    <item>
+      <title>Yggdrasil 네트워크 상의 진정한 P2P 이메일</title>
+      <link>https://github.com/JB-SelfCompany/Tyr</link>
+      <description>&lt;p&gt;우리는 이메일이 서버를 거쳐야 한다고 배웠습니다. 이메일의 자유는 말 그대로 당신의 손에 달려 있습니다. 귀하의 메일 주소는 공개 키에서 파생되어 &lt;64-hex-characters&gt;@yggmail이 됩니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; True P2P Email on Top of Yggdrasil Network&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46080143"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/JB-SelfCompany/Tyr'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pshirshov:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;모든 관련 당사자가 온라인 상태여야 한다는 제가 이해한 것이 맞나요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;idle_zealot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아주 멋지다. 오프라인 수신자를 어떻게 처리합니까? 메시지가 그냥 삭제되나요, 아니면 Yggdrasil이 어떻게든 메시지를 저장하고 전달하나요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fattybob:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;제가 처음으로 Linux를 설치한 것은 Yggdrasil이었습니다. 그래서 관심이 갔습니다…&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/JB-SelfCompany/Tyr</guid>
+      <pubDate>Fri, 28 Nov 2025 16:35:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46080143</comments>
+    </item>
+    <item>
+      <title>네덜란드 대학은 Microsoft 없이도 할 수 있습니까?</title>
+      <link>https://dub.uu.nl/en/news/can-dutch-universities-do-without-microsoft</link>
+      <description>&lt;p&gt;형사 법원은 미국의 거대 소프트웨어 회사인 네덜란드 대학이 Microsoft 없이도 할 수 있는지에 대해 문제를 제기합니다. 사진: Pixabay 네덜란드 고등 교육 기관이 Microsoft와 헤어질 수 있습니까? 네덜란드 교육 및 연구 기관의 IT 협동조합인 SURF의 Wladimir Mufty에 따르면 이는 네덜란드 고등 교육에도 적용됩니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Can Dutch universities do without Microsoft?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46079721"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://dub.uu.nl/en/news/can-dutch-universities-do-without-microsoft'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 19 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Joel_Mckay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Betteridge&amp;#x27;s_law_of_headlines" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Betteridge&amp;#x27;s_law_of_headlines&lt;/a&gt;&lt;p&gt;분명히 대답은 '아니요'입니다. =3&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ta20240528:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;중국이 살아남을 수 있고 ASML과 TMSC 없이도 번성하기 시작한다면 유럽이 메일 서버와 일부 사무 도구를 운영할 수 있게 될 것이라는 데는 의심의 여지가 없습니다.&lt;p&gt;그들은 미국 정치가 자동차 배터리를 더 이상 소모하지 않을 것이라고 대비하고 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amoshebb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 델프트에서 매일 운전하는 우분투가 충격적이고 즐겁다는 것을 알았습니다. Chrome, zotero, obsidian, Zoom 등이 모두 훌륭하게 작동합니다. 전망, 팀, 사무실 제품군, PDF 서명은 모두 지금까지 가장 날카로운 것입니다.&lt;p&gt;TU가 이를 독식해야 한다고 생각합니다. 특히 스타트업이 동일한 서비스와 지원을 제공할 수 있도록 넉넉한 자금이 지원된다면 이는 매우 긍정적인 외부 효과가 될 수 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;timvisee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;5년 동안 저는 기본적으로 Microsoft 도구만 사용할 수 있었습니다. 그것은 내가 본 것 중 가장 어리석은 일 중 하나입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rzerowan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;또 다른 이유는 LibreOffice&amp;#x2F;OpenOffice.org와 같은 현재 OSS 솔루션 중 어떤 것도 큰 관심을 끌지 못할 것이며 MS&amp;#x2F;Goog 옵션이 확고히 자리잡았음에도 불구하고 틈새 시장으로 남을 것입니다.&lt;p&gt;Blender가 업계 선두에 도달하기 위해 취한 경로(처음에는 오픈 소스에 대한 소유권)가 저에게는 가장 실행 가능한 것으로 보입니다.&lt;p&gt;그런 점에서 WPSOffice 또는 Corel Suite와 같은 가장 비용 효율적인 옵션이 있다고 생각합니다. 좋은 옵션이 될 것입니다. 인터페이스와 기능 면에서 전문적인 유용성을 갖추고 있습니다.&lt;p&gt;Corel은 잘 관리되는 법률 회사로부터 대부분 임대료를 징수하여 기본적으로 시장 전체를 떠나고 있습니다. 이전에 실행 가능한 Linux 옵션이 있었다는 점을 고려하면 시장 점유율을 확보할 비전이 부족한 것 같습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lysace:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;90년대에 저는 유럽의 소규모 개발자 중심 회사(SunOS, Linux 등 중심)에서 다음과 같은 친근한 방식으로 시스템 관리자를 놀리곤 했습니다.&lt;p&gt;"내 생각에는 당신이 하고 있는 모든 일이 더 큰 규모로 자동화될 수 있고 자동화되어야 하는 것 같습니다."&lt;p&gt;10년 전에 이 일을 회상했을 때 저는 기분이 좀 묘했습니다. 예측이 좋네요. 제가 예상했던 일이 거의 일어났습니다.&lt;p&gt;그 시스템 관리자가 일종의 CIO가 되어 잘 지내고 있는 것 같습니다.&lt;p&gt;데이터 주권이 상실될 것이라고는 예상하지 못했습니다.&lt;p&gt;.... 그리고 지금은 50% SRE&amp;#x2F;devops를 수행하고 있습니다. 현재 시스템 관리자는 누구입니까? 하지만 데이터를 물리적으로 제어할 수는 없습니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pjmlp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;상황에 따라 다릅니다.&lt;p&gt;Typescript, npm, Github, VS, VSCode, .NET, C#, F#, C++ &amp;#x2F;를 제거할 수 있나요? 학생들의 교육 자료에 DirectX, Next.js, vcpkg, Microsoft가 Java, Rust 및 Linux 커널에 기여한 내용이 있습니까?&lt;p&gt;Microsoft의 자금 지원을 전혀 받지 않고 UNIX FOSS 기술로 전환하고 특정 취업 시장에서 학생들의 경력을 방해할 수 있다면 당연히 그렇습니다.&lt;p&gt;사람들은 일반적으로 Office와 Windows를 제거하는 것 외에는 눈을 돌리지 않습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;denimnerd42:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;직장에서는 MS가 전혀 필요하지 않습니다. IT 부서에서 사물을 관리하는 것을 선호하기 때문에 사용됩니다. Fedora나 Ubuntu를 사용할 수 있었으면 좋겠습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ramon156:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;일부 네덜란드 은행도 MS에 잠겨 있음을 보장할 수 있습니다. 실제로 기술에 관심을 가져야 하는 큰 회사는 아닐 수도 있지만 기술에 관심이 없는 회사는 지난 몇 년 동안 Microsoft Suite에 먼저 뛰어들었습니다.&lt;p&gt;그것은&amp;#x27; 끔찍한 광경. 더 나쁜 점은 이 추가 비용에 대해 논쟁의 여지가 없으며(벤더 종속은 제외) 이제 매달 들어오는 큰 청구서에 대해 누구를 비난해야 할지 아무도 모른다는 것입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yupyupyups:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아, 네덜란드 대학뿐만이 아니군요.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arethuza:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;1980년대 영국 대학교에서 4년제 CS 학위를 취득했을 때 그곳에 있는 동안 Microsoft의 어떤 제품도 건드린 적이 없는 것 같습니다!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;seanieb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 지난 1년 동안 이메일, 생산성 도구 및 ID 관리를 Microsoft에 크게 의존하는 회사에서 근무했습니다. 그 경험 이후 저는 자신 있게 말할 수 있습니다. 다시는 그런 일이 없을 것입니다. 지원은 놀라울 정도로 열악하고 사용자 경험은 나중에 고려하는 것처럼 느껴집니다.&lt;p&gt;더 중요한 것은 Microsoft를 대규모로 사용하면 조직이 근본적으로 안전하지 않을 수 있다는 것입니다. 모호하고 안전하지 않은 기본값은 기껏해야 위험한 실수이며 최악의 경우 경계선 과실입니다. 저는 Microsoft를 사용하는 기업 중 극소수만이 Microsoft를 적절하게 보호하는 데 필요한 전문 지식과 예산을 갖고 있다고 확신합니다.&lt;p&gt;제 개인적인 견해로는 귀하의 조직이 Microsoft에 크게 의존하고 있다면 인식 여부에 관계없이 보안에 대해 심각하지 않다는 것입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;calvinmorrison:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;1단계. Syadmin이 귀하의 작업을 실행하도록 하고, ITSM 직원을 모집하여 실행을 돕도록 하십시오! 우리 모두는 자신의 하드웨어, 소프트웨어를 배우고 유지하며 이메일, 저장소 등의 재미있는 내부를 파헤치게 됩니다.&lt;p&gt;2단계. 이를 모두 실행하여 비용 절감&lt;p&gt;3단계. 4단계에 갇히게 됩니다.&lt;p&gt;아, 도대체 어떻게 이런 일이 일어난 걸까요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jwithington:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;잠금은 ID 서비스에 관한 것입니다. 그렇죠?&lt;p&gt;핵심 애플리케이션의 수행할 작업을 서비스하는 것은 매우 간단하다고 생각합니다.&lt;p&gt;ID 외에 사람들을 가두는 것이 무엇인지 잘 모르겠습니다. 기사에는 실제로 명시되지 않았습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oxguy3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;미국 정부가 실질적인 이득 없이 자국의 국제적 위상을 훼손하는 것을 보는 것은 분명히 끔찍하지만, 이로 인해 유럽이 미국의 거대 기술 서비스에 대한 실행 가능한 대안을 개발하게 된다면 그것은 환상적일 것입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kenjackson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 시점에서 모든 기술은 대기업입니다.  마이크로소프트나 애플.  Azure 또는 AWS.  Google Apps 또는 Office.  Red Hat과 거래하는 것조차 대기업과 거래하는 것처럼 느껴집니다.&lt;p&gt;그리고 99.99%의 경우 모든 것이 잘 작동합니다.  내 생각에 이들 정부는 일반적인 상황을 악화시키는 것이 대부분의 사용자가 원하는 절충안이 아니라는 사실을 알기 때문에 종종 정부에서 벗어나는 데 어려움을 겪는다고 생각합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gcanyon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[google|libre|apache|free|etc.|etc.]로 전환하는 것이 정말 그렇게 어려운가요? 대학 수준에서는 아이디어가 중요한 부분인 것 같으며, 기능의 최첨단에 스프레드시트를 작성해야 하는 필요성은 훨씬 덜한 것 같습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;t0mas88:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AWS는 아마도 이러한 이니셔티브로 인해 장기적으로 비즈니스 손실을 피하기 위해 독립된 유럽 클라우드를 발표했습니다. 그러나 이것이 미국 정부의 강력한 정치적 압력에서 살아남을지는 의문이다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Workaccount2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;2000년대 초반(그리고 오늘날에도 여전히 진행 중인) 경쟁적인 기술 현장을 촉진하지 못한 유럽의 실패는 수십 년 동안 유럽을 괴롭힐 것입니다. 사람들이 여전히 승리로 축하하는 엄청난 실수입니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://dub.uu.nl/en/news/can-dutch-universities-do-without-microsoft</guid>
+      <pubDate>Fri, 28 Nov 2025 15:53:39 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46079721</comments>
+    </item>
+    <item>
+      <title>Meta는 고급 기하학을 사용하여 270억 달러의 부채를 숨겼습니다.</title>
+      <link>https://stohl.substack.com/p/exclusive-credit-report-shows-meta</link>
+      <guid isPermaLink="true">https://stohl.substack.com/p/exclusive-credit-report-shows-meta</guid>
+      <pubDate>Fri, 28 Nov 2025 16:09:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46079868</comments>
+    </item>
+    <item>
+      <title>HN 표시: PCB 회로도 실수를 포착하기 위한 LLM 기반 도구</title>
+      <link>https://netlist.io/</link>
+      <description>&lt;p&gt;EffortLow월 사용량을 크게 늘립니다.MediumHigh속도 제한을 빠르게 소모합니다11. 레이아웃 제안은 논리만을 기반으로 합니다. 레이아웃 파일은 Netlist에 표시되지 않습니다. EffortLow월 사용량을 크게 늘립니다.MediumHigh는 속도 제한을 빠르게 소모합니다27.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: An LLM-Powered Tool to Catch PCB Schematic Mistakes&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46080737"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://netlist.io/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iamjackg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;다소 관련이 있습니다. 얼마 전 저는 프로젝트를 진행 중이었고 잘못 번역된 지침과 함께 제공되는 RS485-TTL 변환 보드를 사용하고 싶었습니다. 그러나 누군가가 설계를 역설계하고 EasyEDA 회로도를 업로드했습니다. 나는 회로도에 대한 원시 JSON을 Gemini 2.5 Pro에 넣고 이해할 수 있는지 물었고 다음과 같이 유쾌하게 응답했습니다.&lt;p&gt;&amp;gt; 물론이지, 잭. 제공된 JSON 파일에서 회로도를 이해할 수 있습니다. RS485-TTL 변환기 모듈에 대해 설명합니다.
+&amp;gt; 다음은 회로 설계 및 기능에 대한 자세한 분석입니다.&lt;p&gt;...뒤에 전체 보드에 대한 절대적으로 합리적인 설명이 이어집니다. 부정확했지만, 몇 가지 지침을 통해(그리고 Gemini와 기본 기술을 결합하여) 보드에 대해 알아야 할 몇 가지 사항을 알아낼 수 있었습니다. 매우 인상적입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;proee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;예전에는 우리 하드웨어 그룹이 보드를 팹으로 보내기 전에 비행 전 체크리스트를 만들었습니다. 이로 인해 오류가 크게 줄어들고 어리석은 실수도 제거되었습니다. 귀하의 제품 아이디어는 훌륭하고 공급망 분석, 대체 부품 소싱, EMC 자문 등과 같은 추가 기능을 사용할 수 있는 기회가 많습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wafflesfreak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Netlist.io는 LLM이 실제 회로에 대해 추론할 수 있도록 KiCad&amp;#x2F;Altium 넷리스트 및 관련 데이터시트를 수집하는 웹 앱입니다. 이는 기존 ERC 도구가 종종 놓치는 회로도상의 실수를 포착하기 위해 만들어졌으며 오류 증상을 설명함으로써 이미 제작된 보드를 디버깅하는 데도 도움이 될 수 있습니다.&lt;p&gt;저는 피할 수 있는 실수가 있는 보드를 배송하는 데 지쳤기 때문에 이것을 만들었습니다. 이 기능이 다시 스핀을 피할 수도 있기를 바랍니다!&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://netlist.io/</guid>
+      <pubDate>Fri, 28 Nov 2025 17:30:41 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46080737</comments>
+    </item>
+    <item>
+      <title>AI 채택률이 정체되기 시작함</title>
+      <link>https://www.apolloacademy.com/ai-adoption-rates-starting-to-flatten-out/</link>
+      <description>&lt;p&gt;Apollo는 그러한 변경 사항을 설명하기 위해 이 프레젠테이션을 업데이트할 책임이 없습니다. 이 프레젠테이션에서 논의된 추세가 계속될 것이라는 보장은 없습니다. 본 프레젠테이션 전반에 걸쳐 작성된 특정 진술은 본질적으로 "미래 지향적"일 수 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; AI Adoption Rates Starting to Flatten Out&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46079987"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.apolloacademy.com/ai-adoption-rates-starting-to-flatten-out/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 14 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;emp17344:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;내 생각에는 AI가 생산성 향상을 제공하는 틈새 시장을 찾을 것이지만 대부분의 분야에서는 유용하지 않을 것입니다. 현재 AI는 코딩에 매우 적합하며 다른 어느 곳에서도 뛰어나지 않습니다. 경제 전체를 혼란에 빠뜨릴 만큼 좋아질 것 같지는 않습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whinvik:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;내 생각에 지금 일어나고 있는 일은 사람들이 AI가 단순한 플러그 앤 플레이가 아니라는 것을 깨닫고 있다는 것입니다. 놀라운 일을 할 수 있지만 이에 대한 엔지니어링이 필요합니다.&lt;p&gt;내 생각에는 엔지니어링 문제를 해결하는 더 많은 제품이 동시에 개발될 것이며 모델은 계속해서 향상될 것입니다. 하지만 그것이 또 다른 하키 스틱으로 이어질지 아니면 단지 느리고 꾸준한 것으로 이어질지는 모르겠습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mattas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;잃어버리지 마세요. 하지만 첫 번째 차트는 실제로 3개월 이동 평균입니다. 놀랍게도 그들은 그것을 차트 제목에만 포함시키지 않고 노트에 묻어두었습니다. 참고: 데이터는 6회 이동 평균입니다. 설문조사는 격주로 실시됩니다. 출처: 미국 인구 조사국, Macrobond, Apollo Chief Economist&amp;quot;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;7moritz7:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;직원 수가 1~4명인 기업의 변동성이 가장 적은 데이터 세트의 채택이 꾸준히 증가하고 있습니다. 가장 작은 기업(가장 민첩하고 엔터프라이즈가 아닌 소프트웨어 기업)의 채택이 늘어나면 다른 규모도 뒤따를 것이라고 생각합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sublinear:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 경제에 미치는 영향과 다음 AI 겨울이 어떤 모습일지에 더 관심이 있습니다.&lt;p&gt;모든 부채는 어떻게 되나요? 이 모든 것이 위성 내비게이션에 거의 충분하지 않은 챗봇과 일반인이 사용할 수 있는 약간 더 나은 포토샵을 수행하는 이미지 생성을 위한 것이었습니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thesumofall:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그들은 동일한 기본 진실을 보여줘야 하지만 3배 정도 다른 두 가지 다른 설문조사를 보여줍니다. 램프(Ramp) 설문조사: 3월에 갑자기 30%에서 50%로 급등한 이유는 무엇입니까? 인구 조사에 따르면, 직원이 250명 이상인 회사 중 12%만이 AI를 "채택"(그게 무엇을 의미하든)한다는 것이 어떻게 가능한 일입니까? 그것이 사실이라면 흥미롭겠지만 이 차트는 나에게는 전혀 이해가 되지 않습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;runako:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 주장의 정확성에 무게를 두지 않는다면 이는 성숙 주기의 예상되는 부분이 될 것입니다.&lt;p&gt;데이터베이스와 비교하세요. 예를 들어 소규모 회사가 운영을 시작하면서 90년대에 데이터베이스 채택률 차트를 그렸을 수도 있습니다. 사내 CRM 및 백오피스 앱을 구축하기 위한 Lotus Notes, FoxPro 및 SQL 서버. 이들 회사는 여전히 해당 기능을 운영하지만 현재 대부분의 중소기업은 데이터베이스를 자체적으로 운영하지 않습니다. 예측 가능한 월별 지출로 Salesforce 및 Notion 비용만 지불하면 왜 SQL Server를 관리해야 할까요?&lt;p&gt;(이 모든 것은 더 복잡하지만 대기업에서도 유사합니다.)&lt;p&gt;AI 채택이 크게 증가하면 AI가 애플리케이션 기능 내에 유사하게 내장될 것이라고 생각합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Apollo는 2025년 9월에 유사한 차트를 발표했습니다. &lt;a href="https:&amp;#x2F;&amp;#x2F;www.apolloacademy.com&amp;#x2F;ai-adoption-rate-trending-down-for-large-companies&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.apolloacademy.com&amp;#x2F;ai-adoption-rate-trending-down...&lt;/a&gt; - 해당 항목의 헤드라인은 "대기업의 AI 채택률 추세 하락"이었습니다.&lt;p&gt;저는 GPT-5 및 ChatGPT 코드 해석기를 사용하여 차트 스크린샷과 일부 업로드된 내용에서 다시 생성하는 내용이 재미있었습니다. 인구 조사 데이터: &lt;a href="https:&amp;#x2F;&amp;#x2F;simonwillison.net&amp;#x2F;2025&amp;#x2F;9월&amp;#x2F;9&amp;#x2F;apollo-ai-adoption&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;simonwillison.net&amp;#x2F;2025&amp;#x2F;9월&amp;#x2F;9&amp;#x2F;apollo-ai-adoption&amp;#x2F;&lt;/a&gt;&lt;p&gt;그런 다음 같은 날 Anthropic이 자체 코드 해석기 스타일 도구를 출시한 후 Claude Sonnet 4.5로 동일한 실험을 반복했습니다. &lt;a href="https:&amp;#x2F;&amp;#x2F;simonwillison.net&amp;#x2F;2025&amp;#x2F;9월&amp;#x2F;9&amp;#x2F;claude-code-interpreter&amp;#x2F;#something-much-harder-recreating-the-ai-adoption-chart" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;simonwillison.net&amp;#x2F;2025&amp;#x2F;9월&amp;#x2F;9&amp;#x2F;claude-code-interpreter...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;malisper:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;차트에 따르면 AI를 사용하는 기업의 비율은 지난 몇 달 동안 감소해 왔습니다.&lt;p&gt;현재 AI 기업의 가치는 향후 몇 년 동안 수익이 10배가 될 것이라는 가정하에 평가되기 때문에 이는 엄청난 일입니다. 수익 성장이 둔화되기 시작하면 이를 반영하여 가치 평가가 변경됩니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anon191928:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그래서 엑스포가 없어요. 성장? 누가 짐작이나 했겠어요?&lt;p&gt;&amp;#x2F;s&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xgulfie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;내가 openAI이거나 claude와의 순환 파트너십에 투자하는 것이 무엇이든 클레임 에이전트 사용은 실제 사용자와 동일하게 간주되어야 하며, 서로의 LLM 시스템이 서로를 사용하고 마침내 무한하고 무제한적인 사용자 성장을 달성해야 합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ajkjk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;채택 = 사용자 수&lt;p&gt;채택률 = 1차 도함수&lt;p&gt;평탄화 채택률 = 2차 도함수는 음수&lt;p&gt;평탄화 시작 = 3차 도함수는 음수&lt;p&gt;1차 도함수가 하룻밤 사이에 거시적인 양만큼 쉽게 바뀔 수 있다면 어떤 것의 3차 도함수가 무엇인지 신경쓰는 사람은 없을 것 같습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;captainkrtek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아뇨 아뇨. 돈을 더 투자하면 됩니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chrismorgan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;차트를 보면 그것은 &lt;i&gt;어리석은&lt;/i&gt; 주장입니다. 예를 들어 첫 번째 차트에서 2024년 초를 비교해 보세요.&lt;p&gt;평탄화 여부를 판단하기에는 아직 너무 이릅니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.apolloacademy.com/ai-adoption-rates-starting-to-flatten-out/</guid>
+      <pubDate>Fri, 28 Nov 2025 16:21:09 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46079987</comments>
+    </item>
+    <item>
+      <title>랍스터 인터뷰</title>
+      <link>https://susam.net/my-lobsters-interview.html</link>
+      <description>&lt;p&gt;페이스트빈은 Common Lisp로 작성되었습니다. 나도 활동적인 Emacs Lisp 프로그래머입니다. 저는 Common Lisp를 통해 Emacs를 발견했습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Lobsters Interview&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46080218"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://susam.net/my-lobsters-interview.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;8cvor6j844qw_d6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 인터뷰에 따르면 그곳의 Lobsters 커뮤니티는 기술 분야의 사람들에게 꽤 흥미로운 것 같습니다. 아마도 그곳을 살펴봐야 할 것입니다.&lt;p&gt;안타깝게도 Lobsters(이전에는?)가 Brave 브라우저를 차단했기 때문에 단지 사이트를 방문하기 위해 브라우저를 전환하고 싶지는 않습니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://susam.net/my-lobsters-interview.html</guid>
+      <pubDate>Fri, 28 Nov 2025 16:42:46 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46080218</comments>
+    </item>
+    <item>
+      <title>LLM 작업 중 안티패턴</title>
+      <link>https://instavm.io/blog/llm-anti-patterns</link>
+      <description>&lt;p&gt;안티패턴이란 단순히 LLM으로 작업할 때 피해야 할 패턴이나 행동을 의미합니다. 또 다른 예를 들면, Cloudflare는 최근 도구를 호출하는 코드로 작성될 때 도구 호출이 더 좋다는 것을 깨달았습니다. 그들은 널리 논의된 주제에 대해 좋은 성과를 냈습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Anti-patterns while working with LLMs&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46080597"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://instavm.io/blog/llm-anti-patterns'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://instavm.io/blog/llm-anti-patterns</guid>
+      <pubDate>Fri, 28 Nov 2025 17:16:52 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46080597</comments>
+    </item>
+    <item>
+      <title>Poll HN: 주로 어떤 운영 체제를 개발하시나요?</title>
+      <link>https://news.ycombinator.com/item?id=46081063</link>
+      <description>&lt;p&gt;Arduino IDE는 아마도 괜찮은 숫자를 가진 것으로 간주될 것입니다. Wokwi는 또한 해당 분야에서 흥미로운 후보자입니다. Arduino IDE는 아마도 괜찮은 숫자를 가진 것으로 간주될 것입니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Poll HN: What operating system do you primarily develop on?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46081063"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46081063'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 29 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whitehexagon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Kate(편집자) &amp;amp; 화석(scm). - Macos에서 전환하는 데 왜 그렇게 많은 시간을 낭비했는지 모르겠습니다.  내 컴퓨터가 다시 내 소유가 된 것 같은 느낌이 듭니다.  &amp;#x27;그것이 더 잘 작동합니다&amp;#x27;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;howdyhowdy123:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Aa그리고 이는 이 웹사이트가 거품 속에 있다는 것을 다시 한 번 확인시켜 줍니다. 전 세계의 모든 사람들은 Windows를 사용합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shwaj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 원격 Linux 시스템에서 코드를 편집하기 위해 원격 SSH를 사용하여 Mac에서 VSCode를 사용합니다.  그래서 저는 두 번 투표했습니다.&lt;p&gt;저는 기본 Linux 키 바인딩에 익숙해질 수 없었고, 제대로 느껴지도록 사용자 정의할 수도 없었습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alecsm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;집에서는 리눅스, 직장에서는 맥OS.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qq99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Win11, 편집기는 Win11에서 실행되고 모든 개발은 WSL2(Ubuntu) 내에서 이루어집니다.&lt;p&gt;기본적으로 Windows re: 게임의 모든 보너스와 뛰어난 개발자 경험(Linux&amp;#x2F;OSX 등)이 있습니다.&lt;p&gt;가장 골치 아픈 점은 다음과 같습니다.&lt;p&gt;- 로컬 전화 디버그를 위해 포트를 전체 LAN에 노출하는 것은 사소한 일이 아닙니다.&lt;p&gt;- Android 또는 전화 개발이 조금 더 어려울 수 있다고 생각합니다. 시뮬레이터, 운 좋게도 저는 이렇게 하지 마세요&lt;p&gt;- 기본 창을 생성하는 개발자는 기본적으로 X11 등이 포함된 일부 WM 레이어를 통해 생성됩니다(그리고 속도가 느립니다).&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dbg31415:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;macOS이지만 대부분 하드웨어용입니다. 나에게 운영체제는 좋은 화면과 형편없는 플라스틱으로 만들어지지 않은 기계를 갖는 것보다 덜 중요하다. MacBook Pro를 사용한 지 거의 20년이 지났지만, 저렴하다고 느껴지는 제품으로 돌아가기는 어렵습니다. =피&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SunshineTheCat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 업무용으로 Windows에서 개발한 다음 집에서 내 프로젝트를 위해 Mac에서 코딩해야 합니다. 집에 있는 Mac Studio 프로젝트에서 직장에 있는 Windows PC로 프로젝트를 진행하다 보면 눈이 찢어질 것 같습니다.&lt;p&gt;코딩과 관련하여 Windows에는 WSL 문제, 지속적인 드라이버 업데이트, Edge에서 모든 Windows 링크 열기 등 훨씬 더 나쁜 것들이 너무 많습니다.&lt;p&gt;한동안 Linux를 사용해 본 적이 없지만 이제 때가 온 것 같습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;EricrRaible:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Arm Chromebook의 Linux 하위 시스템(debian) 그냥 작동합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thenews:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;90% MAC, 10% 데비안&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Animats:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Linux.&lt;p&gt;작년에 마지막 Windows 시스템을 폐기했습니다.&lt;p&gt;하지만 Linux의 Firefox는 잘 작동하지 않습니다. 긴 타이핑 입력 중에 계속 정지됩니다. CPU나 디스크 사용량이 없고 그냥 멈췄습니다. 그리고 메모리를 너무 많이 사용해서 OOM 킬러가 가끔 메모리를 죽이기도 합니다.&lt;p&gt;저는 결코 Linux 팬이 아니었습니다. 단지 광고가 있는 운영 체제는 허용되지 않는다고 생각했을 뿐입니다. 오히려 윈도우7이 더 마음에 들더군요.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;5-:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 첫 번째 개인용 컴퓨터를 구입한 이후로 계속 Linux를 사용해 왔습니다.&lt;p&gt;우리 고객은 모두 프로덕션 환경에서도 Linux를 실행하므로 일반적인 환경에서 소프트웨어를 개발하고 테스트하는 것이 매우 쉽고 자연스럽습니다(비록 내 노트북에 그에 맞는 8배의 RAM이 있었으면 좋겠지만).&lt;p&gt;내 생각은 &lt;i&gt;linux입니다&lt;/i&gt;: &lt;a href="https:&amp;#x2F;&amp;#x2F;plan9.io&amp;#x2F;cm&amp;#x2F;cs&amp;#x2F;upe&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;plan9.io&amp;#x2F;cm&amp;#x2F;cs&amp;#x2F;upe&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andrath:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Linux 및 BSD(대부분 무료 및 개방형)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;GalaxyNova:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;우리는 주로 Linux에서 개발하지만 세 가지 OS를 모두 대상으로 합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;voidfunc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Linux이지만 Windows를 통한 WSL입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vasilzhigilei:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;리눅스를 99% 사용하세요. 여전히 Paint.NET에 대해서만 Windows용 이중 부팅이 가능합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bArray:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;내 생각에는 현재 일부 사람들이 다른 OS를 사용하는 것을 볼 수 있다고 생각합니다. 최소한 "기타" OS가 있어야 합니다. 옵션. *BSD, Nix 및 기타 맞춤형 옵션.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Zigurd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;내 현재 프로젝트는 크로스 플랫폼 SDK를 사용합니다. 제가 가장 편안한 개발 플랫폼은 macOS이며, 이 프로젝트에서 제가 시간의 90%를 사용합니다. 때때로 저는 임베디드 안드로이드 시스템에 대해 작업합니다. 이를 위해 나는 Linux를 사용합니다. 제가 컨설팅 업무를 하고 있고 고객의 모든 사람이 Windows를 사용하고 있다면 흐름을 따르겠지만 Windows가 최종 사용자에게 적대적이 되어 점점 더 악화되고 있다는 인상을 받습니다. 아마도 그것은 클라이언트가 외부 컨설턴트를 위해 시스템을 설정해야 할 때 첫 번째 시도에서 내 권한과 네트워크 액세스가 제대로 설정되지 않았기 때문일 수 있습니다. 주관적으로 Windows는 개발 플랫폼의 가려운 스웨터입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;baq:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;안타깝게도 마코스. 해마다 적대적이 되어가고 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;epolanski:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;기술적으로 저는 3가지를 모두 사용합니다.&lt;p&gt;저는 주로 Ubuntu가 설치된 Windows + WSL 2인 데스크탑에서 작업하고 이동 중에 MBP를 사용합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alluro2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 아치를 사용합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;melenaboija:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이를 위해 특정 워크스테이션의 Debian 위에 LXC 컨테이너를 설치합니다. 모든 것을 시작하기 위한 하나의 일반 컨테이너가 있고 프로젝트가 커지면 특정 컨테이너를 만듭니다.&lt;p&gt;이것은 제가 찾은 개발 환경을 격리하고 쉽게 생성할 수 있는 단연 최고의 옵션입니다.&lt;p&gt;Mac OS에서 실행되는 VS Code에서 컨테이너에 연결합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bikelang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;업무용 MacOS - 개인용 Linux&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hofrogs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;여기서 처음으로 설문조사를 봤지만 그게 가능한 줄도 몰랐습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;petcat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 최신 macOS 머신보다 더 나은 것을 찾지 못했습니다.  나는 몇 년 동안 우분투를 실행했다가 다시 Mac으로 전환했습니다. 단지 Linux에서 컴퓨터를 임의로 뜨거워지게 만들거나, 모니터가 작동하지 않거나, 글꼴이 형편없게 보이도록 만지작거리거나 만지작거릴 시간이 없었기 때문입니다.&lt;p&gt;MacOS는 훌륭한 데스크톱 + 훌륭한 Unix 스타일 개발 상자의 가장 좋은 장소일 뿐입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jsk2600:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Windows 옵션은 Windows(WSL 없음) 또는 Windows(+WSL)여야 합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;marginalia_nu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Linux는 개인적으로, 직업적으로 지난번에는 자영업을 하지 않았습니다.&lt;p&gt;Mac은 너무 비싸고 Windows 11은 잔인하고 특이합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mellosouls:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것이 WSL과 같은 널리 사용되는 혼합을 다루거나 AI 클라이언트를 고려하는지 확실하지 않습니다.&lt;p&gt;내 IDE는 Windows(VSCode 또는 Cursor)입니다. 하지만 브라우저와 다양한 Linux 명령줄 도구(Windows 터미널을 통해 WSL Redhat에 연결)에서 ChatGPT도 사용하고 있습니다.&lt;p&gt;설문조사에는 아마도 완전한 하이브리드 옵션이 있어야 할 것입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pixelpoet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;MSVC에서 평생을 보낸 후 마침내 올해 Windows를 구제한 결정에 더할 나위 없이 기뻤습니다. 저는 실제로 Windows 11이 너무 형편없어서 많은 사람들이 마침내 Windows 11로 전환하도록 강요한 것에 대해 다소 감사하고 있습니다! 이제는 Arch를 사용합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;folli:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;상황에 따라 다름: 취미 목적으로 사용하는가, 아니면 주간 직업이 나에게 강요하는가?&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46081063</guid>
+      <pubDate>Fri, 28 Nov 2025 18:02:57 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46081063</comments>
+    </item>
+    <item>
+      <title>Stellantis는 신차 할인을 위한 팝업 광고로 소유자 화면을 스팸하고 있습니다.</title>
+      <link>https://www.thedrive.com/news/stellantis-is-spamming-owners-screens-with-pop-up-ads-for-new-car-discounts</link>
+      <description>&lt;p&gt;사진이 튀어나오기 시작했고 얼마 지나지 않아 다른 사람들도 자신의 화면에 전송된 동일한 광고를 공유하기 시작했습니다. com/pHEjLAuYEj — Zerin Dube(@SpeedSportLife) 2025년 11월 18일 $1,500 로열티 보너스는 Stellantis 딜러가 더 많은 장치를 이동하기 위해 쌓는 많은 할인 중 하나일 뿐입니다. 마지막으로 이런 일이 발생했을 때 Stellantis는 인포테인먼트를 통해 소유자에게 연장 보증을 광고했습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Stellantis Is Spamming Owners' Screens with Pop-Up Ads for New Car Discounts&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46080161"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.thedrive.com/news/stellantis-is-spamming-owners-screens-with-pop-up-ads-for-new-car-discounts'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;froidpink:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;운전 데이터를 추적하여 보험사에 판매하는 브랜드이기도 합니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Covzire:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;오늘 아침 내 차에서 직접 본 것입니다. 나가려고 할 때와 전원을 끄기 바로 직전에야 그 사실을 알아차렸습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Animats:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;스텔란티스가 이보다 더 나쁜 일은 할 수 없다고 생각할 때... &lt;p&gt;이것이 크라이슬러를 땅바닥에 몰아넣은 회사입니다. 크라이슬러의 남은 제품은 미니밴 한 대뿐이다. &lt;p&gt;지프 가격을 너무 올려 시장을 잃었다. 그들은 '마일드 하이브리드'를 선택했습니다. 21마일의 전기 주행 거리와 같은 어리석은 일이 있는 경로입니다.&lt;p&gt;스텔란티스 딜러들은 CEO의 해고를 요구하는 공동 서한에 서명했습니다. 그것은 끝났습니다. 도움이 되지 않은 것 같습니다.&lt;p&gt;(저는 Stellantis 이전 Jeep Wrangler를 소유하고 있으며 교체품을 구입하고 싶지만 이제 Jeep에는 제가 원하는 것이 없습니다.)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;general1465:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;당신이 집을 샀을 때 누군가가 너무 용감해서 집 옆에 광고판을 찰싹 때릴 것이라고 상상해 보십시오. 자꾸. 이런 행동을 용인하시겠습니까? 당연히 그렇지 않습니다. 그렇다면 회사에서는 왜 내 냉장고나 내 차에 광고를 게재해도 괜찮다고 생각합니까? 이것은 터무니없는 행동이며, 어떤 불쾌한 규제가 이 말도 안되는 일을 끝내고 큰 정부가 얼마나 큰 정부가 기업을 괴롭히고 혁신을 방해하는지에 대해 울부짖는 소리를 들을 수 있기를 바랍니다...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hedora:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;우리가 소유한 마지막(아마도 유일한) Stellantis 차량은 변속기 네트워크 연결에 문제가 있었습니다.&lt;p&gt;“일상적인 운전을 제외하고는 Ram을 막을 수 있는 것은 아무것도 없습니다.”&lt;p&gt;그들이 스팸을 대시보드로 밀어넣고 있다는 것은 전혀 놀랍지 않습니다.&lt;p&gt;이상한 것은 BMW가 수년 동안 이 일을 잘 해 왔다는 것입니다.  그들은 방금 플레이북을 복사했어야 했습니다.  앱에는 디지털 서비스를 구매하고, 상품을 구매하고, 대리점 약속을 예약할 수 있는 작은 상점 아이콘이 있습니다.&lt;p&gt;때때로 할인이나 트랙 데이 초대가 포함되어 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hereme888:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 몇 년 전에 이미 자동차 구입 목록에서 Jeep을 지웠습니다.&lt;p&gt;이제 자동차 구입에 대한 조사의 대부분은 "얼마나 좋은가?"가 아닙니다. 하지만 &amp;quot;의도적으로 내장된 성가심은 무엇입니까? 그걸 해킹할 수 있나요?'&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hollow-moe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;"알겠습니다", "나중에 알림", "거부하려면 전화로..."&lt;p&gt;2025년에는 농담이 저절로 쓰여집니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;firefoxd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 수년 전에 '휴대폰에 SIM 카드를 추가할 수 있다면 자동차에도 SIM 카드를 추가하는 것이 어떨까요?'라고 생각했던 것을 기억합니다. 인터넷으로 연결된 자동차를 상상해 보세요.&amp;quot;&lt;p&gt;제가 생각하지 못한 것은 이것이 광고와 구독의 기회가 될 것이라는 점이었습니다. 그리고 매일 당신은 당신의 차를 소유하게 됩니다. 나는 지금 차를 쇼핑하고 있는데, 오래된 차에 새 페인트를 칠해야 할 수도 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Bender:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 그런 시스템을 갖춘 차를 소유한 적이 없습니다.  최소한 uBlock과 NoScript를 설치할 수 있는 방법을 제공합니까, 아니면 그것이 차를 방해할 것입니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gdulli:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;내 인생의 마지막 차를 구입할 때 화면이 없는 차 중에서 선택할 수 있을 만큼 내가 나이가 많은지 추정하려고 합니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.thedrive.com/news/stellantis-is-spamming-owners-screens-with-pop-up-ads-for-new-car-discounts</guid>
+      <pubDate>Fri, 28 Nov 2025 16:37:32 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46080161</comments>
+    </item>
+    <item>
+      <title>가위바위보 솔리테어</title>
+      <link>https://klezlab.it/rock-paper-scissors-solitaire.html</link>
+      <description>&lt;p&gt;게시일: 2022-03-12 심심하시죠? 그리고 내 말은, 정말 지루하다는 거죠. 가위바위보 솔리테어를 플레이할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Rock Paper Scissors Solitaire&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46080972"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://klezlab.it/rock-paper-scissors-solitaire.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;telesilla:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;당신이 그런 게임을 만들 정도로 지루했던 게 그리워요. 휴가를 위해 짐을 싸고 며칠 동안 디지털 생활을 뒤로하고 피아노와 그림 그리기 좋은 풍경이 있는 곳으로 가야 합니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://klezlab.it/rock-paper-scissors-solitaire.html</guid>
+      <pubDate>Fri, 28 Nov 2025 17:54:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46080972</comments>
+    </item>
+    <item>
+      <title>애플과 인텔이 맥 칩에서 협력할 것이라는 소문</title>
+      <link>https://www.macrumors.com/2025/11/28/intel-rumored-to-supply-new-mac-chip/</link>
+      <description>&lt;p&gt;그러나 이전 Mac용 Intel 칩은 Intel에서 설계하고 x86 아키텍처를 기반으로 한 반면, M 시리즈 칩은 Apple에서 설계하고 Arm 아키텍처를 사용합니다. 인텔은 제조에만 지원합니다. TSMC는 Apple의 M 시리즈 칩 대부분을 계속 공급할 것입니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Apple and Intel Rumored to Partner on Mac Chips&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46080424"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.macrumors.com/2025/11/28/intel-rumored-to-supply-new-mac-chip/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dbg31415:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것이 Bootcamp를 다시 사용할 수 있다는 뜻이라고 말씀해 주세요.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;GeekyBear:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;TSMC는 이전에 2nm 노드에 대해 훨씬 더 많은 비용을 청구하려고 했다는 소문이 있었습니다.&lt;p&gt;Apple은 가격 압박을 가하려고 할 수도 있습니다.&lt;p&gt;&amp;gt; TSMC는 곧 출시될 2nm 공정의 가격을 확정하여 웨이퍼 가격을 약 30,000달러로 설정했습니다. 이는 3nm 공정 평균 $25,000~$27,000에 비해 10%~20% 증가한 수치로, 50% 인상이라는 이전 시장 추측보다 낮습니다.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;technode.com&amp;#x2F;2025&amp;#x2F;10&amp;#x2F;09&amp;#x2F;tsmc-sets-2nm-wafer-price-at-30000-far-below-earlier-50-increase-speculation&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;technode.com&amp;#x2F;2025&amp;#x2F;10&amp;#x2F;09&amp;#x2F;tsmc-sets-2nm-wafer-price-at...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lloydatkinson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;다시? 나는 Intel이 M 이후에 그들과 어떤 관계를 맺기를 원한다는 것에 다소 놀랐습니다. 인텔의 상황은 정말 좋지 않을 것 같습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hedora:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그렇다면 저가형 장치에 더 많은 전력을 소비하는 프로세스를 사용하게 될까요?  Air와 SE 라인의 요점은 가볍고 컴팩트하다는 것입니다.&lt;p&gt;그 정도 규모의 회사가 자체 계획을 완전히 잃는 것을 보는 것은 우울합니다.  Cook을 컨텍스트를 너무 많이 압축한 LLM으로 교체했나요?&lt;p&gt;편집: 이는 인텔에게도 좋지 않은 모습입니다.  Apple 매장 직원과 괴짜들은 이 제품 라인의 분기점을 어떻게 설명할 것입니까?  "이 저가형 Apple 장치는 Intel Inside를 포함하고 있기 때문에 엉망입니다. 또한 작년보다 50달러 더 비쌉니다. MAGA!"&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;baq:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이전에는 모뎀을 사용하여 작업을 수행했으며 두 번째 공급업체는 훨씬 더 나빴지만 단일 실패 지점 공급업체와 협상 위치를 확보해야 합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alecco:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;미국인들의 점점 커지는 불만을 달래기 위한 하찮은 징표입니다. 애플은 2015년까지 연간 약 550억 달러를 중국에 투자할 예정이다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;timw4mail:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;CPU를 제조하는 것은...인텔의 다른 어떤 것보다 더 그럴듯해 보입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Izikiel43:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이번에도 2006년인가요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mushufasa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이런 종류의 주가를 흔들 수 있는 소문이... 도대체 어떻게, 누구에 의해 퍼진 것인지 회의적입니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.macrumors.com/2025/11/28/intel-rumored-to-supply-new-mac-chip/</guid>
+      <pubDate>Fri, 28 Nov 2025 17:00:46 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46080424</comments>
+    </item>
+    <item>
+      <title>신호는 소음이다</title>
+      <link>https://www.magazine.dirt.fyi/p/the-signal-is-the-noise</link>
+      <description>&lt;p&gt;예측 시장의 가치 제안은 상대적으로 간단합니다. 게임 속 스킨을 사용하면 거래자는 자신이 원하는 것 대신 일어날 것이라고 생각하는 것에 따라 거래하도록 동기를 부여받습니다. 이는 이미 정치적 보도에 영향을 미쳤습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Signal Is the Noise&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46079860"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.magazine.dirt.fyi/p/the-signal-is-the-noise'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;silexia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;가격은 거의 항상 전문가보다 더 정확합니다. 이것이 바로 자유 시장이 그토록 잘 작동한 이유입니다. 정부의 개입과 간섭을 중단하고 다시 제대로 작동할 수 있도록 해야 합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmward01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것은 기사의 주제는 아니지만 제목을 보고 즉시 노이즈를 역추적하여 인과관계를 파악하는 멋진 데이터 기술이 생각났습니다. -&amp;gt; b 그러면 a의 노이즈는 b에 있어야 합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CGMthrowaway:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;"신호"(가치 있는 콘텐츠)와 "노이즈" 사이의 오래된 구분이 무너졌습니다. 오늘날 소음은 제품입니다. 소음은 알고리즘을 계속 실행하기 때문에 플랫폼이 자체 개별 피드 버블을 계산하는 데 도움이 됩니다.&lt;p&gt;플랫폼은 실제로 콘텐츠를 선별하는 것이 아니라 참여율을 선별합니다. 따라서 플랫폼의 최적 전략은 최대한 많은 노이즈를 발생시켜 실시간으로 정렬하는 것입니다. &lt;p&gt;우리는 이것을 “더 이상 좋은 것을 찾을 수 없습니다”라고 경험하지만, 플랫폼은 우리가 좋은 것을 &lt;i&gt;찾는&lt;/i&gt; 한 계속해서 이익을 얻습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PaulRobinson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;페이월과 관련되어 전체 내용을 읽지는 못하지만 읽은 내용에 대해 폭넓은 견해를 가지고 있습니다.&lt;p&gt;저는 20년 이상 이 일을 하고 있는 스포츠 베팅 교환 거래에 취미로 집착하는 사람으로서 이 말을 합니다.&lt;p&gt;고등학교 이후로 우리 대부분은 미적분학에 대해 많은 것을 배웠지만 확률에 대해서는 많은 것을 배우지 않았습니다. 예를 들어 수십 년 동안 탄도학을 연구하는 것은 전염병의 통계를 해석하는 방법을 이해하는 것보다 젊은 엔지니어를 가르치는 데 더 유용한 기술이었기 때문입니다.&lt;p&gt;최근 몇 년 동안 확률에 대한 관심이 높아지면서 이상한 교차점에 앉아 있었습니다. 실제 세계에서는 '가능성이 낮다'고 놀라게 되는 사건이 발생했습니다. 소셜 미디어에서 비논리적인 주장을 사용하여 과학 실험의 타당성에 의문을 제기하는 사람들; 미국 스포츠 베팅 시장의 합법화; 그리고 RL에서 LLM에 이르기까지 현대 기술에서 확률론적 및 확률론적 방법이 널리 보급되어 있습니다.&lt;p&gt;그러나 문제는 대부분의 사람들이 이를 끔찍하게 여긴다는 것입니다. 그리고 대부분의 사람들은 "민감성"과 같은 용어를 이해하지 못하는 반 백서의 모든 논리적이고 계산된 생각과 함께 다른 사람들이 모르는 것을 알고 있다고 생각하면서 예측 시장(및 스포츠 베팅 시장)에 들어가고 있습니다. 및 "특이성".&lt;p&gt;신호는 잡음이 아닙니다. 소음은 신호가 아닙니다. 예, CNN에 나온 사람이 틀렸습니다. Fox News에 나온 사람만큼 틀렸지만 그렇다고 전문 지식이 사라졌다는 의미는 아니며 아마추어의 직감이 군중의 지혜의 우월성을 보여줌으로써 승리한다는 의미는 아닙니다.&lt;p&gt;예를 들어 지난 미국 대통령 선거를 보세요. 시장은 여론조사에 크게 동의하지 않았고 모두가 플레이어가 부패했거나(선을 이동하면 미디어에서 대화를 이동하는 데 도움이 됨) 바보라고 생각했습니다.&lt;p&gt;알고 보니 그는 전문가가 파악하기를 거부한 것, 즉 수줍은 ​​트럼프 유권자를 알아내는 현명한 아이디어를 가진 사람이었습니다. 그는 사람들에게 누구에게 투표할지 묻는 대신 대부분의 이웃이 누구에게 투표할 것이라고 생각하는지 묻는 여론조사를 의뢰했습니다. 알고 보니 이것이 훨씬 더 정확한 기술이었습니다. 그는 계산을 하고, 스프레드시트나 노트북을 꺼내서 베이지안 분석을 하고, 주요 여론 조사와 예측 시장이 사라졌다는 것을 깨달았습니다. 그래서 거기에 돈을 좀 투자했습니다. 그리고 그의 정부(프랑스)는 돈이 없다고 말했지만 그것은 또 다른 이야기입니다. &lt;p&gt;내가 하고 싶은 요점은 이것이 흥미롭고 흥미로운 분야이지만 온라인에서 읽은 거의 &lt;i&gt;모든 것&lt;/i&gt;이 천박하고, 터무니없고, 비논리적이며 종종 잘못된 것이라는 것입니다. 도입부에서는 이것이 다른지 잘 모르겠습니다. YMMV. 하지만 예, 들어보세요. 실제 시나리오에서 이러한 확률을 가지고 노는 것은 재미있습니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.magazine.dirt.fyi/p/the-signal-is-the-noise</guid>
+      <pubDate>Fri, 28 Nov 2025 16:09:06 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46079860</comments>
+    </item>
+    <item>
+      <title>텍스트에서 3D 메시 생성</title>
+      <link>https://cprimozic.net/notes/posts/generating-3d-meshes-from-text/</link>
+      <description>&lt;p&gt;Fontkit은 글꼴 엔진을 구현하는 또 다른 순수 JavaScript 라이브러리입니다. lyon_extra 크레이트에는 해당 경로를 기본 그리기 명령으로 구문 분석하는 작업을 처리하는 SVG 경로 파서가 포함되어 있습니다. 남은 유일한 부분은 3D로 압출하는 것입니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Generating 3D Meshes from Text&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46079567"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://cprimozic.net/notes/posts/generating-3d-meshes-from-text/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;놀랍게도 Microsoft Trellis와 같은 AI 모델을 사용하여 텍스트 설명을 3D 메시로 변환하는 게시물이 아니라 2D 텍스트 글리프를 3D 돌출로 변환하는 게시물입니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://cprimozic.net/notes/posts/generating-3d-meshes-from-text/</guid>
+      <pubDate>Fri, 28 Nov 2025 15:40:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46079567</comments>
+    </item>
+    <item>
+      <title>글쓰기는 두뇌를 변화시켜 일상적인 도전에 대한 회복력을 키워줍니다</title>
+      <link>https://scienceclock.com/writing-builds-resilience-in-everyday-challenges-by-changing-your-brain/</link>
+      <description>&lt;p&gt;그들의 글쓰기 습관은 글쓰기가 탄력성을 키워준다는 것을 암시합니다. 글쓰기는 또한 심리적 상태를 조절합니다. 글쓰기를 통한 회복력 구축 This Research-ba.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Writing Builds Resilience in Everyday Challenges by Changing Your Brain&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46078566"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://scienceclock.com/writing-builds-resilience-in-everyday-challenges-by-changing-your-brain/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;underlipton:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;말로 결론을 내리는 것이 얼마나 중요한지 궁금합니다. 많은 경우 글쓰기는 '수정'되지 않습니다. 왜냐하면 나는 생각에 고개를 숙일 수 없기 때문입니다. 내가 끝내지 못한 또 다른 일이 있습니다. 시작하기만 하면 회복력이 더 좋아지나요? 아마도.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;r-u-serious:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;LLM 프롬프트 작성이 중요합니까? :디&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;신디케이트되지 않은 소스: &lt;a href="https:&amp;#x2F;&amp;#x2F;theconversation.com&amp;#x2F;writing-builds-resilience-by-changing-your-brain-helping-you-face-everyday-challenges-265188" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;theconversation.com&amp;#x2F;writing-builds-resilience-by-cha...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://scienceclock.com/writing-builds-resilience-in-everyday-challenges-by-changing-your-brain/</guid>
+      <pubDate>Fri, 28 Nov 2025 13:43:17 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46078566</comments>
     </item>
   </channel>
 </rss>
