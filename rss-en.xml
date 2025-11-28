@@ -6,51 +6,98 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Thu, 27 Nov 2025 21:23:23 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Nov 2025 01:51:44 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>Underrated reasons to be thankful V</title>
-      <link>https://dynomight.net/thanks-5/</link>
-      <description>&lt;p&gt;That clean water, unlimited, almost free. That Gregory of Nyssa, he was right. That Grandma Moses, it’s not too late.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46073033"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://dynomight.net/thanks-5/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://dynomight.net/thanks-5/</guid>
-      <pubDate>Thu, 27 Nov 2025 20:37:51 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46073033</comments>
-    </item>
-    <item>
-      <title>Why Strong Consistency?</title>
-      <link>https://brooker.co.za/blog/2025/11/18/consistency.html</link>
-      <description>&lt;p&gt;The nice thing about making scale-out reads strongly consistent is that the query processor can read from any replica, even in read-write transactions. How Aurora DSQL Does Consistent Reads with Read Scaling As I said above, in Aurora DSQL all reads are strongly consistent. So how does it ensure that all reads are strongly consistent.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46062855"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://brooker.co.za/blog/2025/11/18/consistency.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>250MWh 'Sand Battery' to start construction in Finland</title>
+      <link>https://www.energy-storage.news/250mwh-sand-battery-to-start-construction-in-finland-for-both-heating-and-ancillary-services/</link>
+      <description>&lt;p&gt;Polar Night Energy and Lahti Energia are partnering on the Sand Battery project in Finland. Image: Polar Night Energy / Lahti Energia. Technology provider Polar Night Energy and utility Lahti Energia have partnered for a large-scale project using Polar’s ‘Sand Battery’ technology for the latter’s district heating network in Vääksy, Finland.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46073855"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.energy-storage.news/250mwh-sand-battery-to-start-construction-in-finland-for-both-heating-and-ancillary-services/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrkeen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;It&amp;#x27;s wishful thinking.  It&amp;#x27;s like choosing Newtonian physics over relativity because it&amp;#x27;s simpler or the equations are neater.&lt;p&gt;If you have strong consistency, then you have at best availability xor partition tolerance.&lt;p&gt;&amp;quot;Eventual&amp;quot; consistency is the best tradeoff we have for an AP system.&lt;p&gt;Computation happens at a time and a place.  Your frontend is not the same computer as your backend service, or your database, or your cloud providers, or your partners.&lt;p&gt;So you can insist on full-ACID on your DB (which it probably isn&amp;#x27;t running btw - search &amp;quot;READ COMMITTED&amp;quot;.) but your DB will only be consistent with itself.&lt;p&gt;We always talk about multiple bank accounts in these consistency modelling exercises.  Do yourself a favour and start thinking about multiple banks.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nullorempty:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I keep wondering how the recent 15h outage have affected these eventually consistent systems.&lt;p&gt;I really hope to see a paper on the effects of it.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Kinrany:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I continue to be surprised that in these discussions correctness is treated as some optional highest possible level of quality, not the only reasonable state.&lt;p&gt;Suppose we&amp;#x27;re talking about multiplayer game networking, where the central store receives torrents of UDP packets and it is assumed that like half of them will never arrive. It doesn&amp;#x27;t make sense to view this as &amp;quot;we don&amp;#x27;t care about the player&amp;#x27;s actual position&amp;quot;. We do. The system just has tolerances for how often the updates must be communicated successfully. Lost packets do not make the system incorrect.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;generalzod:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;in the read after write scenario, why not use something like consistency tokens ? and redirect to primary if the secondary detects it has not caught up ?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sgarland:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;For the love of all that’s holy, please stop doing read-after-write. In nearly all cases, it isn’t needed. The only cases I can think of are if you need a DB-generated value (so, DATETIME or UUIDv1) from MySQL, or you did a multi-row INSERT in a concurrent environment.&lt;p&gt;For MySQL, you can get the first auto-incrementing integer created from your INSERT from the cursor. If you only inserted one row, congratulations, there’s your PK. If you inserted multiple rows, you could also get the number of rows inserted and add that to get the range, but there’s no guarantee that it wasn’t interleaved with other statements. Anything else you wrote, &lt;i&gt;you should already have,&lt;/i&gt; because you wrote it.&lt;p&gt;For MariaDB, SQLite, and Postgres, you can just use the RETURNING clause and get back the entire row with your INSERT, or specific columns.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Animats:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;So why isn&amp;#x27;t the section that needs consistency enclosed in a transaction, with all operations between BEGIN TRANSACTION and COMMIT TRANSACTION? That&amp;#x27;s the standard way to get strong consistency in SQL. It&amp;#x27;s fully supported in MySQL, at least for InnoDB. You have to talk to the master, not a read slave, when updating, but that&amp;#x27;s normal.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kukkeliskuu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I think we should stop calling these systems eventually consistent. They are actually never consistent. If the system is complex enough and there are always incoming changes, there is never a point in time in these &amp;quot;eventually consistent systems&amp;quot; that they are in consistent state. The problem of inconsistency is pushed to the users of the data.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://brooker.co.za/blog/2025/11/18/consistency.html</guid>
-      <pubDate>Wed, 26 Nov 2025 22:00:48 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46062855</comments>
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Ericson2314:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;EU is going to have to either&lt;p&gt;- embrace nuclear&lt;p&gt;- embrace North Africa, admitting them as member states, and doing massive solar there, and doing massive grid expansion to carry it north. And then in top of that, will their way to sufficient storage like the rest of us.&lt;p&gt;We&amp;#x27;ll see what they choose :D&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pfdietz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;These are interesting, but the cost per kWh of storage capacity is still probably too high for true seasonal storage.  Short term storage runs into competition with batteries.&lt;p&gt;I point again to Standard Thermal for an idea tailored to true seasonal storage.  I wait for more news from them, particularly on their very low cost resistive heater technology.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.orcasciences.com&amp;#x2F;articles&amp;#x2F;standard-thermal" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.orcasciences.com&amp;#x2F;articles&amp;#x2F;standard-thermal&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pythonguython:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;A website called energy-storage dot news should not be mixing up energy and power&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;octaane:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;It&amp;#x27;s probably my ignorance about this sector, but I do find it impressive that they are getting that much storage capacity in a small area:&lt;p&gt;&amp;gt; &amp;quot;This latest project will use locally available natural sand, held in a container 14m high and 15m wide.&amp;quot;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;apatheticonion:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I was interested in trying to make a DIY thermal battery as a hobby experiment. Other than using thermal energy directly, I couldn&amp;#x27;t find a way to effectively convert the heat energy to electrical energy.&lt;p&gt;Peltier modules can be used to generate electricity, but they are crazy inefficient.&lt;p&gt;An efficient steam turbine is largely inaccessible to hobbiests and I am scared of steam&amp;#x2F;pressure. Though I did look at repurposing a car turbo for this purpose. There were additional issues with regulating the amount of heat you wanted to extract (load matching) and recycling waste heat.&lt;p&gt;I wondered if it was possible to use a Sterling engine, but you can&amp;#x27;t buy anything other than very small toys online and I don&amp;#x27;t have the facilities to machine my own.&lt;p&gt;Haha, would love to get something working, but I suppose I&amp;#x27;m not smart enough to figure out an effective way to get that heat back out as usable&amp;#x2F;controlled electricity.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whizzter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;For reference, this city is about as north as Anchorage Alaska and today they got less than 7 hours of sunlight and it&amp;#x27;ll continue to decrease for the next 3 weeks.&lt;p&gt;The Nordic countries generally still wants to increase their wind and solar power, but the big issue during winters is when there&amp;#x27;s cold air high pressure systems we get neither sun nor wind, having an energy storage that can hold up to 5 days worth of energy should help us nudge past them.&lt;p&gt;Hydro-energy exist (mainly Sweden and Norway, but I think some in Finland as well), but it&amp;#x27;s fairly built out so stable non-fossil power needs to be nuclear, or wind&amp;#x2F;sun + storage (that hasn&amp;#x27;t been good enough so far).&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;retrac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;There&amp;#x27;s an interesting property to thermal storage, as a consequence of simple geometry.   Consider a cube.  volume = n³ and surface area = 6*n².  Surface area increases more slowly than volume.   The ratio of surface to volume decreases with more size.    Thus: a sufficiently large thermal reservoir becomes self-insulating with its own mass.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nightshift1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Interesting. Does anyone know what source of electricity is going to be used for this ? Probably solar but it might be also useful with coal plants or wind farms that produce even when there is not enough demand.
+How are they moving the heat ?&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.energy-storage.news/250mwh-sand-battery-to-start-construction-in-finland-for-both-heating-and-ancillary-services/</guid>
+      <pubDate>Thu, 27 Nov 2025 22:48:44 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46073855</comments>
     </item>
     <item>
-      <title>DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning [pdf]</title>
-      <link>https://github.com/deepseek-ai/DeepSeek-Math-V2/blob/main/DeepSeekMath_V2.pdf</link>
-      <guid isPermaLink="true">https://github.com/deepseek-ai/DeepSeek-Math-V2/blob/main/DeepSeekMath_V2.pdf</guid>
-      <pubDate>Thu, 27 Nov 2025 20:03:25 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46072786</comments>
+      <title>How Charles M Schulz created Charlie Brown and Snoopy (2024)</title>
+      <link>https://www.bbc.com/culture/article/20241205-how-charles-m-schulz-created-charlie-brown-and-snoopy</link>
+      <description>&lt;p&gt;I'm only dealing with why we all have the feeling that people don't like us. While Charlie Brown may have been the eternal failure, the universal feelings that Schulz channelled helped make Peanuts a global success. I think also that the characters I have serve as a good outlet for any idea that I may come up with.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46074362"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.bbc.com/culture/article/20241205-how-charles-m-schulz-created-charlie-brown-and-snoopy'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gilgoomesh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; Charlie Brown may have been as popular as any character in all of literature&lt;p&gt;Was he? Maybe this is true inside the US but from outside the US, I&amp;#x27;ve always viewed the character as a peculiarly American artefact – something I was aware of but never really read or watched. This seemed to be reinforced by most major Charlie Brown titles seemingly tied to other American customs like Halloween and baseball.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andrewstuart:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I think many people have seen only the commercially exploited peanuts imagery.&lt;p&gt;In fact the comics - especially the older ones are incredibly clever and funny and insightful and there’s long running threads and connections and strong characters.&lt;p&gt;Peanuts the tshirt&amp;#x2F;hat&amp;#x2F;poster&amp;#x2F;cup is crass.&lt;p&gt;Peanuts the comic is genius.&lt;p&gt;It exactly the same with Donald Duck and Uncle Scrooge. The commercially exploited imagery is crass and dumb. The comics written by Karl Barks were genius and often really entertaining adventure stories.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AntiRush:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The Charles Schulz museum in Santa Rosa, CA is a must visit if you’re in the area!&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;schulzmuseum.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;schulzmuseum.org&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.bbc.com/culture/article/20241205-how-charles-m-schulz-created-charlie-brown-and-snoopy</guid>
+      <pubDate>Fri, 28 Nov 2025 00:10:38 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46074362</comments>
     </item>
     <item>
-      <title>AI CEO – Replace your boss before they replace you</title>
-      <link>https://replaceyourboss.ai/</link>
-      <guid isPermaLink="true">https://replaceyourboss.ai/</guid>
-      <pubDate>Thu, 27 Nov 2025 18:37:41 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46072002</comments>
+      <title>Vsora Jotunn-8 5nm European inference chip</title>
+      <link>https://vsora.com/products/jotunn-8/</link>
+      <description>&lt;p&gt;In modern data centers, success means deploying trained models with blistering speed, minimal cost, and effortless scalability. Unlock the full potential of your AI investments with our high-performance inference solutions. This is not just faster inference.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46074111"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://vsora.com/products/jotunn-8/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;N_Lens:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;An FP8 performance of 3200TFLOPS is impressive, could be used for training as well as inference. &amp;quot;Close to theory efficiency&amp;quot; is a bold statement. Most accelerators achieve 60-80% of theoretical peak; if they&amp;#x27;re genuinely hitting 90%+, that&amp;#x27;s impressive. Now let&amp;#x27;s see the price.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pclmulqdq:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;It needs a &amp;quot;buy a card&amp;quot; link and a lot more architectural details. Tenstorrent is selling chips that are pretty weak, but will beat these guys if they don&amp;#x27;t get serious about sharing.&lt;p&gt;Edit: It kind of looks like there&amp;#x27;s no silicon anywhere near production yet. Probably vaporware.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;all2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;288GB RAM on board, and RISC V processors to enable the option for offloading inference from the host machine entirely.&lt;p&gt;It sounds nice, but how much is it?&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://vsora.com/products/jotunn-8/</guid>
+      <pubDate>Thu, 27 Nov 2025 23:30:11 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46074111</comments>
+    </item>
+    <item>
+      <title>A programmer-friendly I/O abstraction over io_uring and kqueue (2022)</title>
+      <link>https://tigerbeetle.com/blog/2022-11-23-a-friendly-abstraction-over-iouring-and-kqueue/</link>
+      <description>&lt;p&gt;accept(@ptrToInt(&amp;server), server. create(Socket); client. recv(@ptrToInt(client), client.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46073817"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://tigerbeetle.com/blog/2022-11-23-a-friendly-abstraction-over-iouring-and-kqueue/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;up2isomorphism:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;When I am already using things like io_uring already I don’t need any io abstraction.&lt;p&gt;BTW most of applications is totally fine with a UNIX file apis.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;formerly_proven:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; You can switch a file descriptor into non-blocking mode so the call won’t block while data you requested is not available. But system calls are still expensive, incurring context switches and cache misses. In fact, networks and disks have become so fast that these costs can start to approach the cost of doing the I&amp;#x2F;O itself. For the duration of time a file descriptor is unable to read or write, you don’t want to waste time continuously retrying read or write system calls.&lt;p&gt;O_NONBLOCK basically doesn&amp;#x27;t do anything for file-based file-descriptions - a file is always considered &amp;quot;ready&amp;quot; for I&amp;#x2F;O.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://tigerbeetle.com/blog/2022-11-23-a-friendly-abstraction-over-iouring-and-kqueue/</guid>
+      <pubDate>Thu, 27 Nov 2025 22:41:06 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46073817</comments>
+    </item>
+    <item>
+      <title>Bird flu viruses are resistant to fever, making them a major threat to humans</title>
+      <link>https://medicalxpress.com/news/2025-11-bird-flu-viruses-resistant-fever.html</link>
+      <description>&lt;p&gt;How flu viruses thrive in the body Human flu viruses cause millions of infections every year. Unlike human flu viruses, avian influenza viruses tend to thrive in the lower respiratory tract. "Understanding what makes bird flu viruses cause serious illness in humans is crucial for surve.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46074286"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://medicalxpress.com/news/2025-11-bird-flu-viruses-resistant-fever.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;valgor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The threat of bird flu is so insane to me. It exists because we farm birds to eat. We are gambling with so many people&amp;#x27;s lives just so we can continue eating birds when we could instead just eat something else. I know cultivated meat will help, but that is a ways away.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;avadodin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The reasoning behind this is that birds have higher body temperature in our fever range.&lt;p&gt;They put mice infected with a flu virus modified to have the bird variant of a gene in an oven and the virus indeed didn&amp;#x27;t degrade as much compared to the unmodified control.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwawayffffas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;There is a vaccine though.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.sky.com&amp;#x2F;story&amp;#x2F;uk-prepares-five-million-vaccine-doses-in-case-of-bird-flu-pandemic-13265880" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;news.sky.com&amp;#x2F;story&amp;#x2F;uk-prepares-five-million-vaccine-...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;markus_zhang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Can we simply remove fever and coughing somehow… super annoying and more dangerous than the virus themselves sometimes.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cratermoon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;So much for the MAHA natural immunity line.
+No doubt avoiding ultraprocessed foods, seed oils, pesticides, and fluoride will keep bird flu at bay &amp;#x2F;s.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://medicalxpress.com/news/2025-11-bird-flu-viruses-resistant-fever.html</guid>
+      <pubDate>Thu, 27 Nov 2025 23:57:57 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46074286</comments>
+    </item>
+    <item>
+      <title>LinkedIn is loud, and corporate is hell</title>
+      <link>https://ramones.dev/posts/linkedin-is-loud/</link>
+      <guid isPermaLink="true">https://ramones.dev/posts/linkedin-is-loud/</guid>
+      <pubDate>Thu, 27 Nov 2025 20:30:21 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46072988</comments>
     </item>
   </channel>
 </rss>
