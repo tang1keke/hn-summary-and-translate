@@ -6,77 +6,115 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 01 Dec 2025 12:52:52 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Dec 2025 15:29:33 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>自托管 Matrix 服务器 5 年</title>
-      <link>https://yaky.dev/2025-11-30-self-hosting-matrix/</link>
-      <description>&lt;p&gt;自托管 Matrix 服务器 5 年 拥有 Matrix 协议、Matrix Synapse 服务器、网桥和 E​​lement 移动应用程序的经验。 Synapse 服务器 Synapse 是支持桥接的唯一选择，这就是我首先想尝试 Matrix 的原因。 ），这意味着发送的文件将无限期地继续存在于服务器上。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Self-hosting a Matrix server for 5 years&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46106132"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://yaky.dev/2025-11-30-self-hosting-matrix/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>为什么要对 eax、eax 进行异或？</title>
+      <link>https://xania.org/202512/01-xor-eax-eax</link>
+      <description>&lt;p&gt;也就是说，直到您记得编译器喜欢在将寄存器设置为零时发出异或：我们知道任何东西与自身进行异或运算都会生成零，但为什么编译器会发出这个序列。 xor eax, eax 可以节省代码空间和执行时间。 See the video that accompanies this post.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Why xor eax, eax?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46106556"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://xania.org/202512/01-xor-eax-eax'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Almondsetat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;这也造成了一种情况，即跨联盟所说的任何事情都不能不说，这对于在谈论隐私时经常出现的协议系统来说是一个讽刺的情况。&lt;p&gt;这有什么讽刺之处？世界上没有任何协议可以强迫任何人从自己的设备中删除任何内容。实现此功能的聊天应用程序要么是专有的（因此您无法控制它们可以做什么），要么如果是 OSS，则在小指承诺的基础上进行。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maelito:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为一名用户，我已经使用 Matrix 好几年了。效果很好。解密消息的问题已经消失。 X 正在成为一个好客户。
-经过为期一周的痛苦备份后，我将在几周内删除我的 Whatsapp 和 télégram 帐户......&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jchw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I&amp;#x27;ve mentioned this here before, but it bears repeating. A couple years ago or so, I made the catastrophic choice to use Dendrite as my homeserver software. It seemed like a safe bet: it was supposedly lighter weight than Synapse, being written in Go instead of Python and with everything reengineered from the ground up. It didn&amp;#x27;t support everything, but nothing in the disclaimers made it seem like it was about to abruptly become defunded and essentially unmaintained. Alas, that&amp;#x27;s exactly what happened not too long after I made that choice. Despite showing no interest in maintaining it, New Vector still found it necessary to relicense their abandonware under the more restrictive AGPL license. Good priorities. Then, when a security patch was needed, a new release was rushed out that included not just a security fix, but also a bug that caused Dendrite to completely stop processing messages for minutes at a time multiple times a day. (This only got fixed &lt;i&gt;months&lt;/i&gt; later by a volunteer.) Joining large federated rooms on Dendrite took so long that I thought it was just broken; it could take hours to days to complete the operation! There was even a brief period when Element actually didn&amp;#x27;t even support Dendrite, leaving everyone locked out. Dendrite has never supported Element X, and the old sliding sync proxy was never updated to support the new simplified sliding sync either, which means you&amp;#x27;re stuck with the old slow sync and no support for things that require it. Also, most appservers still don&amp;#x27;t work right on Dendrite either. I got Mautrix-Discord working, but only for DMs.&lt;p&gt;I legitimately could go on and I&amp;#x27;m sure I&amp;#x27;ve forgotten things. It&amp;#x27;s amazing how quickly my experience with Dendrite went from pretty good to nightmare.&lt;p&gt;I realized that nobody in charge at the Matrix Foundation or New Vector really cared enough about leaving people stranded on a completely broken server to actually do anything about it (and trust me, I&amp;#x27;m not alone. In every single federated room I&amp;#x27;ve ever been in, I&amp;#x27;ve always seen hostnames with dendrite subdomains. I could see them pass by in the logs while joining servers was taking hours.) I honestly considered just leaving the Matrix ecosystem, but I wasn&amp;#x27;t alone on my home server, so I decided to do my best to fix the problem. I wrote a tool that attempts to migrate the data from Dendrite to Synapse. This is a complicated operation that really took a huge amount of effort to get working, but after a couple of months of failed attempts, I had a test where I was able to seamlessly perform the migration and have clients continue to work and stay in federated rooms. So after getting it &amp;quot;close enough&amp;quot;, I went ahead and gave the migration a shot in production and of course, it didn&amp;#x27;t work very well. All of the user accounts were intact, but a lot of stuff was broken. People indeed stayed in federated rooms, but my room state migration was definitely not 100% correct. Despite this, though, after manually cleaning up the database a bit more, hackishly while live, it was mostly a success. I believe I am probably the first person to directly move from Dendrite to Synapse.&lt;p&gt;So now that I am on Synapse, have my thoughts on Matrix changed? Yes. It&amp;#x27;s significantly better using Synapse, without question. The ecosystem is still a mess, but everything about Synapse is less broken than Dendrite. There are so many features Dendrite just doesn&amp;#x27;t do, like URL previews.&lt;p&gt;Why not contribute to Dendrite? Honestly, I don&amp;#x27;t want to. Their CLA sucks and they&amp;#x27;re not going to change it for me, and I don&amp;#x27;t think they&amp;#x27;re really going to spend time reviewing PRs given the circumstances. If I&amp;#x27;m going to contribute to a project without retaining my rights I&amp;#x27;d prefer to be on payroll. That&amp;#x27;s not something you should get from a community member. Either change the CLA to &lt;i&gt;guarantee&lt;/i&gt; the project &lt;i&gt;must&lt;/i&gt; stay open, or don&amp;#x27;t expect any free contributions.&lt;p&gt;Why not post my migration tool? Well honestly, for starters, it&amp;#x27;s not a very high quality tool. I could probably do some good for the Matrix ecosystem if I could get this tool in much better shape and have it migrating complex room states correctly, but I don&amp;#x27;t even know if I want to help anyways. This should&amp;#x27;ve never been my problem. I will fully admit that it was my bad choice that got me here, but I really think it can be forgiven: nothing I saw suggested to me that Dendrite was on the way out. On the contrary, everything suggested it was the future, and just simply not ready for large scale usage yet. I&amp;#x27;m bitter. I spent a lot of hours on this problem and I feel like hours spent on the Matrix ecosystem won&amp;#x27;t be repaid.&lt;p&gt;I hate to be this cynical, but it&amp;#x27;s just how it is. It&amp;#x27;s a mess. I didn&amp;#x27;t bother going into the other messes that still exist when using Synapse, like the seemingl&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mcluck:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我断断续续地尝试过实际使用 Matrix。早期我是一个强烈的支持者。不幸的是，看起来它仍然没有解决我当时遇到的基本问题。可能是时候尝试其他事情了&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;styanax:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为一名前用户，我感受到了这些痛点，除了与好朋友进行非常活跃的一对一聊天外，我什么也没做。每小时数十条消息，可能连续两年。使用matrix.org 和X 之前的客户端。对于群聊（IRC 风格）来说没问题，但这并不是一个很高的标准。&lt;p&gt;(a) 使用移动设备和网络应用程序之间的加密总是不同步，这很糟糕。我的意思是你会得到“无法解密”很多，必须来回反弹，通常会尝试强制它再次正确同步。有时根本就没有工作过。多年来 GH 上存在很多问题。&lt;p&gt;(b) 正如本文中提到的，新消息通知以及发送和接收的疯狂延迟。每天早上登录网络应用程序就需要几分钟的神秘同步过程，通常移动应用程序也会遇到同样的问题。 X 的东西可能会解决这个问题，我们已经进行了预 X.&lt;p&gt;(c) 清理。 Matrix.org 上没有设置消息保留，当我想提取并删除我们过去的聊天记录时，过程和体验非常糟糕。网络应用程序（移动设备实际上完全不进行操作）轮询和加载旧内容花了几个周末的数十个小时，这样我就可以一次选择 100 个进行删除，然后花了一个小时。一旦我开始剔除一年左右的时间，加载时间就会变得越来越长，直到最终它 100% 停止加载旧消息。&lt;p&gt;对于与朋友和朋友进行一对一聊天来说，Signal 和 DeltaChat 的体验要好得多。家庭。 Delta 客户端的 UI&amp;#x2F;UX 有点落后，但并不可怕；例如与 Signal 不同，您无法在 Delta 中纠正已发送消息中的拼写错误 - 因为每条消息都是唯一的 gpg 加密“电子邮件”。而不是可以重新操作的数据库对象。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pferde:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于“需要联合”部分，这不是真的。我已经运行一个小型家庭专用家庭服务器好几年了，并且从一开始就禁用了联合，并且与它（缺乏）联合相关的问题恰好为零。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nehal3m:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我已经在我租用的托管主机上的 Proxmox 主机上运行 Matrix 服务器大约两年了（还有一些其他爱好的东西，但主要是因为我觉得它很酷）。这个剧本很棒，而且很容易设置并继续运行：
-&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;spantaleev&amp;#x2F;matrix-docker-ansible-deploy" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;spantaleev&amp;#x2F;matrix-docker-ansible-deploy&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jimkleiber:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为一个研究过将 Matrix 分叉为新型聊天服务的人，我很高兴看到对幕后运行它的更深入的了解。谢谢。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ekjhgkejhgk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得 XMPP 感觉很糟糕......&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://yaky.dev/2025-11-30-self-hosting-matrix/</guid>
-      <pubDate>Mon, 01 Dec 2025 11:26:39 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46106132</comments>
+&lt;p&gt;&lt;strong&gt;Top 23 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;charles_f:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;通过使用稍微晦涩的指令，每次需要将寄存器设置为零时，我们可以节省三个字节&lt;p&gt;同时，大多数“应用程序”现在我们得到了一半的 npmjs 整齐地捆绑在 Electron 中。我怀念默认是原生的日子，开发人员对其输出的大小有限制。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;HackerThemAll:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;有趣的是，当将“扩展”编号寄存器（如 r8）清零时，GCC 仍然使用 d（双倍宽度，即 32 位）变体。&lt;p&gt;当然。我可能有一些数据存储在该寄存器的较高双字中。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BiraIgnacio:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这也很酷，它出现在 HN 头版的顶部&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;flohofwoe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对我来说真正令人惊讶的是，如此重要的指令使用两字节编码而不是一个字节:)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sixthDot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我年轻时写过很多“xor al,al”。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jabedude:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;类似地 IIRC，在（某些代）x86 芯片上，NOP 是“XCHG EAX, EAX”周围的糖，这实际上是一个无为操作&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dintech:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的大脑读到这是“为什么不是耳垢？”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bitwize:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因为 mov eax, 0 需要获取常量并延长指令获取执行时间。 XOR A 是我在 Z80 时代学到的一个技巧。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jgrahamc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;在我的 6502 黑客时代，异或的存在肯定表明您已经找到了代码的加密部分，或者某种 sprite 例程。&lt;/i&gt;&lt;p&gt;是的，遗憾的是 6502 不允许您执行 EOR A；而Z80确实允许XOR A。如果我没记错的话，XOR A是AF和LD A，0是3E 01。所以节省了整个字节！我认为 XOR 比 LD 快 3 个时钟周期。因此指令占用的空间更少，速度更快。&lt;p&gt;在我的第一份工作（编写 x86 程序集）中，我对 CEO 走到我的办公桌后面并指出我已经完成了 MOV AX, 0 而我本可以完成 XOR AX, AX 有着非常清晰的记忆。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vanderZwan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; &lt;i&gt;在我的 6502 黑客时代，异或的存在肯定表明您找到了代码的加密部分，或者某种 sprite 例程。&lt;/i&gt;&lt;p&gt;同时，像我这样刚开始使用 Z80 的人立即知道原因，因为 XOR A 是清除累加器和标志寄存器的最小&lt;i&gt;且&lt;/i&gt;最快的方法。有趣的是，这也表明这对于特定的 CPU 谱系或其分支来说是多么具体。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fortran77:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当我做 IBM 370 BAL 汇编语言时，我们做了同样的事情将寄存器清零。&lt;p&gt;&lt;pre&gt;&lt;code&gt; XR 15,15 XOR REGISTER 15 AND REGISTER 15
+&lt;/code&gt;&lt;/pre&gt;
+vs&lt;p&gt;&lt;pre&gt;&lt;code&gt; L 15,=F&amp;#x27;0&amp;#x27;      将 0 装入寄存器 15
+&lt;/code&gt;&lt;/pre&gt;
+据称这在 370 上更快，因为 XR 完全在 CPU 寄存器内运行，而 L（加载）从内存中获取数据（即常数来自程序内存）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;silverfrost:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;回到 Z80 &amp;#x27;xor a&amp;#x27;是到零 A 的最短序列&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fooker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，如今机器代码是一种高级语言，在这个例子中，CPU 识别归零模式并执行一些完全不同的操作。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sylware:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;没有零寄存器的 RISC 尝试的残余。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Dwedit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因为“sub eax,eax”是看起来很愚蠢。  （并且还清除进位标志，与“xor eax, eax”不同）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pclmulqdq:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在现代 CPU 中，其中很多都被认为是归零习惯用法，并且它们最终会做同样的事情（通常是寄存器重命名技巧）。使用最短的一个是有意义的。如果您使用非常奇怪的归零模式，您也可以将其视为后端 uop，而许多这些归零习惯用法在某些核心上被前端忽略。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deadcore:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Matt Godbolt 还上传到他的同名 YouTube 频道：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=eLjZ48gqbyg" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=eLjZ48gqbyg&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eb0la:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我记得很多代码清零寄存器，&lt;i&gt;至少&lt;/i&gt;可以追溯到 IBM PC XT 时代（80286 之前）。&lt;p&gt;如果您解码指令，则使用 XOR 是有意义的：&lt;p&gt;- mov ax, 0 - 需要 4 个字节 (66 b8 00 00)
+- xor ax,ax - 需要 3 个字节 (66 31 c0)&lt;p&gt;在内存小于 1 MB 的机器中，这个额外字节&lt;i&gt;确实&lt;/i&gt; id 很重要。&lt;p&gt;在 386 处理器中，它也很重要
+- mov eax,0 - 需要 5 个字节 (b8 00 00 00 00)
+- xor eax,eax - 需要 2 个字节 (31 c0)&lt;p&gt;这里英特尔决定仅使用 2 个字节。我敢打赌这对指令解码器有帮助，并且（当然）比旧的 8086 指令节省更多的内存。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;omnicognate:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它恰好是精彩的 xchg rax,rax 中第一个片段的第一条指令。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.xorpd.net&amp;#x2F;pages&amp;#x2F;xchg_rax&amp;#x2F;snip_00.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.xorpd.net&amp;#x2F;pages&amp;#x2F;xchg_rax&amp;#x2F;snip_00.html&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;snvzz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因为，与 RISC-V 不同，x86 没有 x0 寄存器。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pansa2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; &lt;i&gt;与其他部分寄存器写入不同，当写入 eax 等 e 寄存器时，该体系结构会免费将前 32 位清零。&lt;/i&gt;&lt;p&gt;我在 10-20 年前编写 32 位 x86 汇编语言时就熟悉它了。所以我一般都知道 xor 的好处，但上面的引用对我来说是新的。&lt;p&gt;我没有任何 64 位汇编的经验 - 是否有任何地方有指导像上面这样的 64 位细节的指南？类似于“x64 对于那些了解 x86 的人”？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OgsyedIE:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在最新版本的 Android Chrome 上，页面 3 秒后崩溃，100% 的情况下，在 Brave 上运行良好，仅供参考。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;daeken:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;早在 2005 年或 2006 年，我就在一家名为“DVD Jon”的小型初创公司工作。 Johansen 和我们举办了 Quake 3 锦标赛，以打破逆向工程和杂耍存储基础设施的单调乏味。他的名字总是“xor eax,eax”。我总是一想到被这个名字的人排除在外，我就不得不笑。 （这种情况发生了很多次——我很好，但他更好！）&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://xania.org/202512/01-xor-eax-eax</guid>
+      <pubDate>Mon, 01 Dec 2025 12:22:35 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46106556</comments>
     </item>
     <item>
-      <title>为什么 Mac 版 ChatGPT 如此出色？</title>
-      <link>https://allenpike.com/2025/why-is-chatgpt-so-good-claude</link>
-      <description>&lt;p&gt;适用于 Mac 的 ChatGPT 应用程序是一个不错的应用程序。它实际上非常好，尽管它缺少足够多的功能，感觉明显落后于 ChatGPT 和 Claude。这并不像听起来那么糟糕，因为尽管存在流行情绪，Electron 应用程序也可以是很好的应用程序。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Why Is ChatGPT for Mac So Good?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46105896"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://allenpike.com/2025/why-is-chatgpt-so-good-claude'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>WordPress 插件怪癖导致英国政府 OBR 预算泄露 [pdf]</title>
+      <link>https://obr.uk/docs/dlm_uploads/01122025-Investigation-into-November-2025-EFO-publication-error.pdf</link>
+      <description>&lt;p&gt;m�� n ���[� � � �/�X�� (. @�cN����W� q\ג endstream endobj 498 0 obj &lt;&gt;stream x����Mo�@ ��H��9B$/� HQ�8_m�TM���&amp;�A�Y�l"�w ;��带�q|���&gt;�;3;�qc�I^X8&lt;���͋�� FQf�Q�w^F.n L }� -R�$��� �)�{�)�RE $� )}或�{p�+�qs��%Ì���/Lyk�� j� f. �3`�P ����5 iJ�� ' ��[�� n, � (H�,I� __��(�� �o�w��\�^ \�r������j��h��Cc��m��� ����}�H�W|� ' � ����� �����˓��@��y=��� ð3�ƨ �%�6��b{�� tl 0�_0�2�u 0� �W� "� M � ����� 46T � &amp;� ��C &lt;����V�� � � T�5��� ���y eP��d\6n����&amp;��/ t�����J�`D0��%ѫ��j�Ū r�2`�h�a �I� d�(�������X� 3����x�,���� ŝU � LP��� �� S��� ���� "FI"� = �{'�u�'�$�[g���U�J �-�U�7Ye�I�v��i�P �[`�带D��ז��4�K̓�`�� � %�qB���� � '� c (��E �~���:7) � H)�5�N�" h&lt;����,w��}mw��F��;��k�T�bW" D@x������xO [����= ����_J��l����~�K�֔��k � %M%Q 端流 endobj 499 0 obj &lt;&gt;流 x��{ xTE��[��^��^НΞ� t:.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; WordPress plugin quirk resulted in UK Gov OBR Budget leak [pdf]&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46108243"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://obr.uk/docs/dlm_uploads/01122025-Investigation-into-November-2025-EFO-publication-error.pdf'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;walthamstow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;完全同意。我喜欢选项+空格组合，可以在您关注的应用程序上打开一个小聊天窗口。 Mac 应用程序和 Android 应用程序是唯一让我继续使用它的东西。如果 Gemini 有不错的应用程序，我会取消 OpenAI。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tobr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从某种意义上说它很好，感觉就像一个 Mac 应用程序。但它仍然存在相当多的错误和未实现的功能。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JKCalhoun:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ChatGPT 不是基于 Electron 的吗？我问这个问题是因为我经常看到类似“Electron crashed”的东西。在 Mac 操作系统上出现。我感觉我在启动 MacOS ChatGPT 应用程序时见过它？&lt;p&gt;无论如何，总的来说，它在 MacOS 上很好。如果文本（聊天）字段具有焦点，但由于某种原因我必须在 ChatGPT 的响应中单击两次才能到达可以选择“复制文本”的位置。奇怪。&lt;p&gt;所以，当然，它可能会更好（更原生？）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bromuro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这一点都不好 - 看起来像网络应用程序，cmd+tab 操作速度很慢，复制粘贴无法像本机应用程序中那样工作，等等&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mritchie712:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们清楚地相信“原生更好，电子不好”。并且正在努力让 ChatGPT 成为一个案例。&lt;p&gt;问题是，mac 版 chatgpt 并不比网络版本更好。我尝试过使用它并且总是回到网络。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cachius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;TLDR：&lt;i&gt;归根结底，Mac 版 ChatGPT 应用程序很好，因为他们关心。&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sh3rl0ck:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，它实际上相当不错，但我仍然觉得大多数功能都是基本的用户体验，不应该与应用程序和供应商绑定。&lt;p&gt;我找到了 Goose (by Block) - &lt;a href="https:&amp;#x2F;&amp;#x2F;block.github.io&amp;#x2F;goose" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;block.github.io&amp;#x2F;goose&lt;/a&gt; - 在这方面要好得多。诚然，它可能没有大多数其他提供商所做的应用程序绑定，但我可以要求它在特定类型的文件夹中执行任务，而它确实可以使用我想要的任何提供商。&lt;p&gt;我之前得到了 GLM 编码计划，考虑到其慷慨的速率限制，我发现使用它来执行繁琐的任务（例如文件夹组织，这可能是我最大的弱点；尤其是下载）确实提高了我的工作效率。&lt;p&gt;我觉得有应用程序有很大的范围可以专注于任务上下文（没有代码代理，有大量的文件，如 AGENTS.md、CRUSH.md、CURSOR.md 垃圾邮件）在具有适当用户沙箱的特定文件夹范围内。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;varbhat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不明白这一点。这篇文章是说 ChatGPT 很好，是一个先驱，因为它提供了一个很好的 Mac 应用程序。&lt;p&gt;在我看来，并不是所有东西都需要本机应用程序。 AI聊天助手完全可以在网络浏览器中使用。对于大多数使用的应用程序（例如 slack），我确实有本机应用程序（即使是 shell 中的 slack 网站也完全可以用作桌面应用程序）。我真正不明白的是 ChatGPT 本机应用程序除了本机小部件而不是 Web 元素之外的好处。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tpoacher:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你是说广告上？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Nekorosu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我个人的经历是不同的。这个标题对我来说没有多大意义。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://allenpike.com/2025/why-is-chatgpt-so-good-claude</guid>
-      <pubDate>Mon, 01 Dec 2025 10:51:16 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46105896</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;glenjamin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有几次提到了下载监视器，但时间线也强烈暗示特定来源只是在上传 PDF 之前很久就猜测了 PDF 的 URL&lt;p&gt;我从文档中不清楚这些场景中的哪一个是他们所说的“泄漏”。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;merrvk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么处理敏感信息的政府组织使用 WordPress？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kingkool68:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有什么怪癖吗？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://obr.uk/docs/dlm_uploads/01122025-Investigation-into-November-2025-EFO-publication-error.pdf</guid>
+      <pubDate>Mon, 01 Dec 2025 15:00:45 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46108243</comments>
     </item>
     <item>
-      <title>1GB Raspberry Pi 5，以及内存驱动的价格上涨</title>
-      <link>https://www.raspberrypi.com/news/1gb-raspberry-pi-5-now-available-at-45-and-memory-driven-price-rises/</link>
-      <guid isPermaLink="true">https://www.raspberrypi.com/news/1gb-raspberry-pi-5-now-available-at-45-and-memory-driven-price-rises/</guid>
-      <pubDate>Mon, 01 Dec 2025 11:37:18 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46106186</comments>
+      <title>制图师一直在瑞士地图中隐藏隐藏插图</title>
+      <link>https://eyeondesign.aiga.org/for-decades-cartographers-have-been-hiding-covert-illustrations-inside-of-switzerlands-official-maps/</link>
+      <guid isPermaLink="true">https://eyeondesign.aiga.org/for-decades-cartographers-have-been-hiding-covert-illustrations-inside-of-switzerlands-official-maps/</guid>
+      <pubDate>Mon, 01 Dec 2025 13:41:15 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46107282</comments>
     </item>
     <item>
-      <title>埃森哲称 80 万名员工为人工智能转型的“重塑者”</title>
-      <link>https://www.theguardian.com/business/2025/dec/01/accenture-rebrands-staff-reinventors-ai-artificial-intelligence</link>
-      <description>&lt;p&gt;埃森哲表示正在对员工进行生成式人工智能基础知识培训。照片：Julie Jacobson/美联社全屏查看图片埃森哲表示正在对员工进行生成人工智能基础知识的培训。探索有关这些主题的更多信息商业技术领域人工智能 (AI) 新闻分享重复使用此内容。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Accenture dubs 800k staff 'reinventors' amid shift to AI&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46105825"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.theguardian.com/business/2025/dec/01/accenture-rebrands-staff-reinventors-ai-artificial-intelligence'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>70 年代的矢量图形工作站</title>
+      <link>https://justanotherelectronicsblog.com/?p=1429</link>
+      <description>&lt;p&gt;使用这项技术，泰克于 1969 年发布了他们的第一个终端 4002。我不推荐这样做。但这样一来，还是一事无成。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A vector graphics workstation from the 70s&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46107177"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://justanotherelectronicsblog.com/?p=1429'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tcmb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对我来说，这个词让它们听起来效率低下，甚至多余，就像有人重新发明轮子一样。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ablation:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这非常非常有趣。当然，也很可悲。但大部分都很有趣。在最好的时期，它是否曾经提供过比用流行语包装的样板咨询更多的东西？现在添加了斜坡！&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.theguardian.com/business/2025/dec/01/accenture-rebrands-staff-reinventors-ai-artificial-intelligence</guid>
-      <pubDate>Mon, 01 Dec 2025 10:41:14 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46105825</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Der_Einzige:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我痴迷于矢量计算，最近幸运地拥有了一台 Vectrex。&lt;p&gt;像 VecFever 和 PiTrex 这样的项目的存在，使得将矢量显示器与更现代的 CPU 技术相结合成为可能，甚至可以模拟《星球大战》或《战区》等古老的矢量街机游戏。&lt;p&gt;矢量计算在 20 世纪 80 年代之后从未兴起，并且已经消亡，这是犯罪。没有什么，甚至 OLED（对不起，Vectrex-Mini 的家伙们！）都无法复制磷光的美丽。&lt;p&gt;说到令人惊叹的被遗忘的灯光效果，Don Bluth 电影（以及他的《龙之巢穴》等游戏）中使用的酷炫灯光效果技术也被遗忘了，没有使用，我发现它们类似于矢量显示器。&lt;p&gt;我发现矢量显示器的消亡和 Don Bluth 所做的酷炫显示技术是“更糟糕的是”的很好例子更好”以及“随着时间的推移，进步不可避免地会让事情变得更好”这一观点的反例。&lt;p&gt;我非常想要一台 TechTronix 矢量计算机，现在仍然如此，尤其是具有快速 3D 和彩色附加组件的计算机。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fuzzfactor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些打印机使用一种特殊的真空管&lt;i&gt;用于存储&lt;/i&gt;，该真空管源自电视摄像机中的真空管。&lt;p&gt;它们体积庞大，一次打印一整页，类似于 20 世纪 80 年代早期 Perkin-Elmer 3600 型智能终端的热敏页打印机，但当时的 P-E 打印机要小得多。&lt;p&gt;3600 也有矢量图形，它们非常昂贵，但引入了水平盒子的外形尺寸有两张 5 1&amp;#x2F;4 软盘、顶部显示器和带有第一行“F”的有线键盘人们见过的功能键。  这是后来 IBM 在发布第一台 PC 时采用的桌面形式。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://justanotherelectronicsblog.com/?p=1429</guid>
+      <pubDate>Mon, 01 Dec 2025 13:31:58 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46107177</comments>
+    </item>
+    <item>
+      <title>问HN：最近几代戴尔/联想笔记本电脑的质量比10年前差吗？</title>
+      <link>https://news.ycombinator.com/item?id=46108071</link>
+      <description>&lt;p&gt;2台笔记本电脑+1台台式机是旧型号，1台是我去年12月买的Precision 5550（2021）。另一个问题是 5550 使用 USB-C 端口。我真的很讨厌那些端口。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ask HN: Quality of recent gens of Dell/Lenovo laptops worse than 10 years ago?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46108071"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46108071'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;renewiltord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;市场分为高端工作笔记本电脑、低端工作笔记本电脑和游戏笔记本电脑。只有苹果有品牌价值跻身第一。其他人都在柠檬市场上。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;csomar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;三年前，我使用了一台昂贵的 XPS（他们的“碳皮模型”）和顶级配置。触摸屏在不到一年的时间里就坏了，电池在两年后就没用了，我现在使用的第二个充电器也坏了。尽管到目前为止，重要的（cpu&amp;#x2F;内存&amp;#x2F;nvme）的性能仍然很稳定，但该装置感觉很旧。我想任何非戴尔制造的产品都会继续存在。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46108071</guid>
+      <pubDate>Mon, 01 Dec 2025 14:47:48 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46108071</comments>
+    </item>
+    <item>
+      <title>青霉素神话</title>
+      <link>https://www.asimov.press/p/penicillin-myth</link>
+      <description>&lt;p&gt;“——亚历山大·弗莱明很多人都知道亚历山大·弗莱明偶然发现青霉素的故事。多年来，科学家们一直试图复制弗莱明最初的发现。但都失败了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Penicillin Myth&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46107658"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.asimov.press/p/penicillin-myth'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.asimov.press/p/penicillin-myth</guid>
+      <pubDate>Mon, 01 Dec 2025 14:13:06 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46107658</comments>
     </item>
   </channel>
 </rss>
