@@ -6,169 +6,37 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 04 Dec 2025 01:56:39 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Dec 2025 03:55:55 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Acme，改变互联网的协议之一的简史</title>
-      <link>https://blog.brocas.org/2025/12/01/ACME-a-brief-history-of-one-of-the-protocols-which-has-changed-the-Internet-Security/</link>
-      <description>&lt;p&gt;这个乌托邦是通过一套开放和标准化的协议成为可能的。因此，Let’s Encrypt 自 2015 年起成为一家免费提供（就像免费啤酒一样）TLS 服务器证书的证书颁发机构。那么，现在让我们谈谈自动化方面。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Acme, a brief history of one of the protocols which has changed the Internet&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46141745"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://blog.brocas.org/2025/12/01/ACME-a-brief-history-of-one-of-the-protocols-which-has-changed-the-Internet-Security/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throw0101a:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;还有其他几种证书配置协议：&lt;p&gt;* &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Simple_Certificate_Enrollment_Protocol#See_also" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Simple_Certificate_Enrollment_...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stavros:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Let’s Encrypt 在保护隐私方面所做的工作比任何其他组织都多。在 Let’s Encrypt 之前，我们通常会部署 TLS 证书，但这是事后才想到的，并让 HTTP 保持可访问性。它们每年轮换一次（非常手动）也很痛苦。&lt;p&gt;很难夸大 LE 改变了事情的程度。他们将 TLS 设置为默认设置，以至于您不必再保留未加密的 HTTP。荣誉。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gerdesj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我记得在 20 世纪 90 年代末在 NetWare 上部署 SSL 并得到了……美国允许作为弹药出口的东西！&lt;p&gt;我不记得确切的细节，但它基本上是错误的 - 密钥长度短。  足够长的时间来挑战 80386 Beowulf 集群，但无法与资金充足的机房中嗡嗡作响的任何东西相媲美。&lt;p&gt;您仍然可以使用所有其他令人兴奋的拨盘和旋钮、SAN 等，但最终它毫无价值。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wakawaka28:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有没有人考虑过像 Let’s Encrypt 这样的 CA 可能会受到损害，甚至完全由情报人员运行？当然，还有许多其他 CA 可能会受到损害，并从客户那里赚钱。但谁知道……有什么可以抵御这种可能性呢？证书上有多个签名吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kuil009:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感谢您的服务&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gorgoiler:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谢谢&lt;i&gt;Let's Encrypt&lt;/i&gt;，你改变了世界，让世界变得更好。&lt;p&gt;对所有在电话里监听的人表示歉意。  带着搜查令回来吧？！&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://blog.brocas.org/2025/12/01/ACME-a-brief-history-of-one-of-the-protocols-which-has-changed-the-Internet-Security/</guid>
-      <pubDate>Wed, 03 Dec 2025 23:28:34 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46141745</comments>
-    </item>
-    <item>
-      <title>Kea DHCP：现代开源 DHCPv4 和 DHCPv6 服务器</title>
-      <link>https://www.isc.org/kea/</link>
-      <description>&lt;p&gt;× 感谢您下载 ISC 的开源软件。 xz 签名 ASC ISC 维护的软件包 签名 软件包签名 更新前请阅读发行说明。单击此处了解有关所有可用挂钩库的更多信息。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Kea DHCP: Modern, open source DHCPv4 and DHCPv6 server&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46142000"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.isc.org/kea/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iwontberude:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;将大型企业部署迁移到 kea，这真是太棒了。非常容易排除故障。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Lammy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;多年来，Kea 在升级版本时已经两次破坏了我的配置。我很遗憾从 ISC-DHCPd 跳到 2023 年重新安装 PF-box，只是因为他们称之为“EOL”&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nagisa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在我的家庭实验室中，我一直在使用非常简单的选项（systemd-networkd 中内置的选项以及 RouterOS 中内置的 dhcp 服务器），但从未发现自己需要 Web 界面、数据库或任何东西……真的。将几十个静态分配添加到配置文件中并忘记 DHCP 的存在就足够了。即使是 HA 也不是我想要的，因为节点将在升级失败期间发生的停机期间很好地保留其租约。&lt;p&gt;在这开始有意义之前，网络需要有多花哨？该项目的目标受众是谁？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PikachuEXE:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在 OPNSense 上从 ISC 迁移到 Kea，到目前为止零问题&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brianjlogan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我运行自己的家庭路由器，并使用 Kea 和 Power DNS 以及 Systemd Containers 为我的整个家庭提供服务。&lt;p&gt;给我留下了深刻的印象。我认为将其整合在一起的人们很好地解决了我在 isc-dhcp-server 方面的经验中的主要问题。&lt;p&gt;我确信编写软件是一个巨大的挑战，该软件应该满足现代期望，同时仍试图交付所有遗留依赖项及其独特的用例。&lt;p&gt;让我想起那篇关于 Cloudflare 如何编写自己的 Golang DNS 服务器的文章，以及一些类似的文章多达 900 人使用 LOC 记录，但他们仍然支持它&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BLKNSLVR:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;OPNSense 已弃用（正在弃用？）随附的 ISC DHCP 服务器，现在将 Kea DHCP 服务器作为标准配置。我从 ISC 迁移到 OPNSense 中的 Kea，过程相对轻松，自此一直运行良好。这里没有抱怨，但我的设置非常普通。&lt;p&gt;我无法评论 DNS 集成，但我可能会更深入地研究，因为它听起来很有用。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WarOnPrivacy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有一天我会停止拖延，并将我的 pfsense 盒子迁移到 Kea。我希望我喜欢它。&lt;p&gt;如果预期的 DNS 集成能够正常工作并且我不会像现在 ISC 那样产生副作用，我会感到很兴奋。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.isc.org/kea/</guid>
-      <pubDate>Wed, 03 Dec 2025 23:58:04 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46142000</comments>
-    </item>
-    <item>
-      <title>Show HN：我构建了一个仪表板来比较 120 个信用合作社的抵押贷款利率</title>
-      <link>https://finfam.app/blog/credit-union-mortgages</link>
-      <description>&lt;p&gt;信用合作社抵押贷款利率上次更新：2025 年 12 月 3 日，30 年固定更新。大银行拥有非营利信用合作社没有的营销部门。您的实际费率会有所不同。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: I built a dashboard to compare mortgage rates across 120 credit unions&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46139761"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://finfam.app/blog/credit-union-mortgages'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vgeek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好主意。几年前，我构建了 &lt;a href="https:&amp;#x2F;&amp;#x2F;originationdata.com" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;originationdata.com&lt;/a&gt;，使用 HMDA 数据比较抵押贷款机构（FDIC 和 FCUA 成员）。我按照贷方、产品类型以及 MSA（以及 STL FRED 数据）等方面对利率进行建模。它发展了几年，我欣喜若狂——从一些令人印象深刻的网站（例如较大的银行本身、消费者出版物）有机地获得反向链接以及积极的用户反馈。然后谷歌推出了他们的“有用内容更新”谷歌搜索流量绝对下降，所以我放弃了它，转向其他不以 SEO 为导向的项目，因为我不知道谷歌对质量的看法。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CommenterPerson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;干得好！&lt;p&gt;我发现我们的信用合作社在类似纯文本的页面上清楚地发布了抵押贷款利率。没有废话，也没有游戏。而在大银行，你可以获得游戏和更高的利率..无论他们是否有你10年的工资存款记录。当我试图向朋友推荐信用合作社时，我遭到了目光。就像，人们只是假设其他人所做的（被大银行欺骗）是好的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;t_mann:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;伟大的倡议和美丽的网站！有点挑剔，我手机上桌子上方的控件的包装可能还可以改进。你用什么做桌子的？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;joshuamcginnis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常酷。您能告诉我们您用于可靠抓取的技术和工具吗？或者从各个网站获取所有费率数据？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;duraace2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;乍一看，这个网站看起来棒极了！  干得好！  （顺便说一句，我多年来一直在阅读黑客新闻，但从未活跃过；我创建一个帐户只是为了发表此评论）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NortySpock:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;CU 建议：堪萨斯城最大的 CommunityAmerica Credit Union&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.communityamerica.com&amp;#x2F;about-us" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.communityamerica.com&amp;#x2F;about-us&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;satellite2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些在美国真的标准化了吗？&lt;p&gt;在我居住的地方，情况差异很大。基本上，如果你搬家，转换成本很容易就会主导总成本。&lt;p&gt;我发现考虑到这一点，最好是在利益方面交换一些地方以获得更好的条件。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;latortuga:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;打开 HN 的首页并看到熟悉的面孔总是很有趣。我和这个家伙一起上大学！恭喜马哈茂德发货！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;无需注册，无广告，无推荐费。&lt;p&gt;很好&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bluGill:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果我“活跃”（这意味着每月有一定数量的交易），我的信用合作社会给我更好的利率。  因此，如果您想要最优惠的利率，您确实需要选择一家信用合作社并在几个月前开始使用它们。  （也许，取决于信用合作社的运作方式）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ambicapter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“费率”下拉菜单似乎不起作用。我正在使用 uBlock Origin。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aliljet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这绝对是太棒了。  我希望这包括像 DSCR 这样的商业贷款......&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;msuniverse2026:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;天哪，我希望我们在澳大利亚有 30 年期固定抵押贷款。想象一下，在新冠疫情期间，利率低于 3% 时获得其中之一。极好的。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://finfam.app/blog/credit-union-mortgages</guid>
-      <pubDate>Wed, 03 Dec 2025 20:35:27 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46139761</comments>
-    </item>
-    <item>
-      <title>家猫与男性看护者打招呼的频率更高</title>
-      <link>https://onlinelibrary.wiley.com/doi/10.1111/eth.70033</link>
-      <guid isPermaLink="true">https://onlinelibrary.wiley.com/doi/10.1111/eth.70033</guid>
-      <pubDate>Wed, 03 Dec 2025 21:56:37 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46140753</comments>
-    </item>
-    <item>
-      <title>8086 微码浏览器</title>
-      <link>https://nand2mario.github.io/posts/2025/8086_microcode_browser/</link>
-      <description>&lt;p&gt;这就是：在线 8086 微码浏览器。单击该按钮，您将获得约 300 条记录的 8086 指令的列表。关于 8086 μcodeRegister ID 的一些有趣的花絮会根据上下文改变含义。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; 8086 Microcode Browser&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46140244"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://nand2mario.github.io/posts/2025/8086_microcode_browser/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://nand2mario.github.io/posts/2025/8086_microcode_browser/</guid>
-      <pubDate>Wed, 03 Dec 2025 21:16:11 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46140244</comments>
-    </item>
-    <item>
-      <title>C 中的检查大小数组参数</title>
-      <link>https://lwn.net/SubscriberLink/1046840/3eb9029084cc9e1e/</link>
-      <description>&lt;p&gt;讨论始于 Ard Biesheuvel 试图提高诗意命名的函数 xchacha20poly1305_encrypt() 的安全性： void xchacha20poly1305_encrypt(u8 *dst, const u8 *src, const size_t src_len, const u8 *ad, const size_t ad_len, const u8 nonce[XCHACHA20POLY1305_NONCE_SIZE], const u8 key[CHACHA20POLY1305_KEY_SIZE]);该函数的一个潜在问题是它采用多个指向 u8 类型数组的指针作为参数。 Biesheuvel 建议可以用这种方式编写原型（差异以粗体显示）： void xchacha20poly1305_encrypt(u8 *dst, const u8 *src, const size_t src_len, const u8 *ad, const size_t ad_len, const u8 (*nonce)[XCHACHA20POLY1305_NONCE_SIZE], const u8 (*键)[CHACHA20POLY1305_KEY_SIZE]);最后两个参数的类型发生了变化；有一个新的指针间接级别，参数是指向给定大小的数组的指针。 Eric Biggers 指出，即使没有静态，GCC 也经常会生成“数组太小”警告，但内核目前禁用了这些警告；当使用静态时也会抑制它们。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Checked-size array parameters in C&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46139782"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://lwn.net/SubscriberLink/1046840/3eb9029084cc9e1e/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kazinator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;指针到数组的解决方案没问题，但需要注意的是，应该避免使用指针到数组的 typedef。&lt;p&gt;问题在于它们对于减少重复声明很有吸引力：&lt;p&gt;&lt;pre&gt;&lt;code&gt; typedef unsigned char thing_t[THING_SIZE];
-
-  结构red_box_with_a_hook {
-     thing_t 事物1，事物2；
-  }
-
-  无效 shake_hands_with(thing_t *thing);
-&lt;/code&gt;&lt;/pre&gt;
-那就好了。但 thing_t 是一个数组类型，仍然会衰减为指针。&lt;p&gt;看起来好像 thing_t 可以按值传递，但由于它是一个数组，所以它偷偷地不是按值传递的：&lt;p&gt;&lt;pre&gt;&lt;code&gt; void catch_with_net(thing_t thing);  &amp;#x2F;&amp;#x2F;事物的类型实际上是“usnsigned char *”
-
-  &amp;#x2F;&amp;#x2F; ...
-    无符号字符x[42]]；
-    catch_with_net(x);        &amp;#x2F;&amp;#x2F;指向传递的第一个元素的指针；类型检查&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;halayli:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;类似地，还有这些字段属性对于捕获类似问题非常有帮助：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;clang.llvm.org&amp;#x2F;docs&amp;#x2F;AttributeReference.html#counted-by-counted-by-or-null-sized-by-sized-by-or-null" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;clang.llvm.org&amp;#x2F;docs&amp;#x2F;AttributeReference.html#counted-...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Philpax:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴 Walter 过来赞扬胖指针的优点:-)&lt;p&gt;参考：&lt;a href="https:&amp;#x2F;&amp;#x2F;digitalmars.com&amp;#x2F;articles&amp;#x2F;C-biggest-mistake.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;digitalmars.com&amp;#x2F;articles&amp;#x2F;C-biggest-mistake.html&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Arch-TK:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当你意识到和你一起出去玩的人形成了如此奇怪的利基，以至于你们之间被认为是常识的东西被描述为“深埋在 C 标准中”时，那种奇怪的感觉。&lt;p&gt;值得注意的是，如果数组太小，编译器不需要生成警告。这只是海湾合作委员会慷慨提供的帮助。官方立场是，将指针传递给太小的对象只是未定义的行为（是的，仅传递，即使您不访问它）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nikeee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;GCC 还有一个扩展来支持对函数其他参数的引用：&lt;p&gt;&lt;pre&gt;&lt;code&gt; #include &lt;stddef.h&gt;
-    void foo(size_t n, int b[静态 n]);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;a href="https:&amp;#x2F;&amp;#x2F;godbolt.org&amp;#x2F;z&amp;#x2F;c4o7hGaG1" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;godbolt.org&amp;#x2F;z&amp;#x2F;c4o7hGaG1&lt;/a&gt;&lt;p&gt;不限于编译时常量。遗憾的是，在 clang 中不起作用。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Veserv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;指向数组的指针不仅是类型安全的，而且客观上也是正确的，并且应该始终是传入已知固定大小数组的地址时使用的语法。这都是 C 自动将数组衰减为参数列表中的指针的产物，而数组参数应该始终意味着按值传递数组；那么这个语法将是传递数组地址的唯一方法，我们就不会有这些问题了。自动衰减确实是该语言最严重的实际设计错误之一（即，即使是设计时也是错误，而不是未能采用新的创新）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;o11c:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;更好的选择：只需将其包装在一个唯一的结构中。&lt;p&gt;可能只有 3 个数字：0、1 和很多。可以合理地论证 2 也存在，但对于更高的值，您需要考虑您的抽象。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aaaashley:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于 n[static M] 数组检查语法的有趣之处在于，它在 1999 年被纳入时甚至被认为是糟糕的：&lt;p&gt;“一致投票认为该功能很丑陋，并且一致认为在第 11 小时将其纳入标准是一个不幸的决定。” - Raymond Mak（加拿大 C 工作组），&lt;a href="https:&amp;#x2F;&amp;#x2F;www.open-std.org&amp;#x2F;jtc1&amp;#x2F;sc22&amp;#x2F;wg14&amp;#x2F;www&amp;#x2F;docs&amp;#x2F;dr_205.htm" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.open-std.org&amp;#x2F;jtc1&amp;#x2F;sc22&amp;#x2F;wg14&amp;#x2F;www&amp;#x2F;docs&amp;#x2F;dr_205.htm&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://lwn.net/SubscriberLink/1046840/3eb9029084cc9e1e/</guid>
-      <pubDate>Wed, 03 Dec 2025 20:37:08 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46139782</comments>
-    </item>
-    <item>
-      <title>苹果为什么不推出独立的 Touch ID？</title>
-      <link>https://www.jeffgeerling.com/blog/2025/why-doesnt-apple-make-standalone-touch-id</link>
-      <description>&lt;p&gt;这是非常浪费的，而且比我想象的大多数人需要更多的耐心，但你基本上拿一个带有 Touch ID 的 Apple Magic Keyboard，撕掉 Touch ID，然后将其与键盘的逻辑板一起安装在 3D 打印盒子中。为什么苹果不做这个。那么苹果为什么不制作一个小型 Touch ID 盒子呢？&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Why doesn't Apple make a standalone Touch ID?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46141429"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.jeffgeerling.com/blog/2025/why-doesnt-apple-make-standalone-touch-id'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aetherspawn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我购买和使用愚蠢的键盘就是为了这种不便。&lt;p&gt;虽然说实话，这不是我拥有的最差的键盘，但也不是最好的，但我可能会给它打 7&amp;#x2F;10。&lt;p&gt;如果蓝牙不是那么神奇的无缝，它会是 5&amp;#x2F;10。&lt;p&gt;低调意味着我可以不戴腕枕。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Waterluvian:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您为什么要拆分捆绑包并将电视频道一一出售？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;多年来我一直在抱怨这个问题。我的 RSI 非常糟糕，所以喜欢使用分体式机械键盘进行编码，但我也使用长而复杂的密码，所以我也喜欢使用 Touch ID。令我惊讶的是，你找不到 Touch ID 键盘，甚至找不到带有 Touch ID 的小键盘来放在售后键盘旁边。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;re-thc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;同样，他们应该制造像 Windows Hello 那样的 Face ID 摄像头。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tyre:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的意思是，他们为什么要这样做？&lt;p&gt;没有可扩展的市场。他们希望控制硬件以提高质量和利润。他们已经销售了带有 Touch ID 的键盘。 Mac 配件远离他们的重点区域。&lt;p&gt;他们不这样做，因为这样做没有意义。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tgma:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;使用没有 TouchID 的 Mac 会更有趣。当您没有 TouchID 时，整个 Safari 密码自动填充体验会更快、更不烦人（登录时不要求任何批准且钥匙串已解锁。）如果有“默认写入”命令，我可以运行以在 MacBook 上模拟我的 Mac mini 体验，请告诉我。&lt;p&gt;P.S.每个钥匙串条目都需要液态玻璃 + TouchID 批准 == Windows Vista&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andsoitis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您认为这方面的市场有多大？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ggm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这不是与安全区域逻辑密切相关吗？&lt;p&gt;感知是一回事。信任传感器输入及其解锁内容是另一回事。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.jeffgeerling.com/blog/2025/why-doesnt-apple-make-standalone-touch-id</guid>
-      <pubDate>Wed, 03 Dec 2025 22:55:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46141429</comments>
-    </item>
-    <item>
-      <title>向 GNOME Bazaar 添加自定义进度条主题的 PR 被拒绝，理由是“种族主义”</title>
-      <link>https://github.com/kolunmi/bazaar/pull/724</link>
-      <description>&lt;p&gt;加载时出错。请重新加载此页面。加载时出错。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; PR adding custom progress bar themes to GNOME Bazaar rejected, citing "racism"&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46142296"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/kolunmi/bazaar/pull/724'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Cellebrite 收购 Corellium</title>
+      <link>https://www.corellium.com/blog/cellebrite-to-acquire-corellium</link>
+      <description>&lt;p&gt;霍根 (Hogan)，Cellebrite 临时首席执行官。 “Corellium 建立了一个行业独特的虚拟化平台，最终将帮助 Cellebrite 客户保护其社区和机构的安全。在公共部门，Corellium 的技术和人才将进一步增强和扩大 Cellebrite 的数字调查平台，而 Corellium 的移动漏洞研究解决方案预计将增加 Cellebrite 为国防和情报部门客户提供的产品。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Cellebrite to Acquire Corellium&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46143230"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.corellium.com/blog/cellebrite-to-acquire-corellium'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ungreased0675:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;真是一团糟。与这样的人持续互动会很累。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/kolunmi/bazaar/pull/724</guid>
-      <pubDate>Thu, 04 Dec 2025 00:35:21 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46142296</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eugenekolo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;2025 年 6 月 5 日&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.corellium.com/blog/cellebrite-to-acquire-corellium</guid>
+      <pubDate>Thu, 04 Dec 2025 02:48:31 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46143230</comments>
     </item>
     <item>
-      <title>过去 18 个月的 DRAM 平均价格（美元）</title>
-      <link>https://pcpartpicker.com/trends/price/memory/</link>
-      <guid isPermaLink="true">https://pcpartpicker.com/trends/price/memory/</guid>
-      <pubDate>Thu, 04 Dec 2025 00:08:26 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46142100</comments>
+      <title>Zmx：终端进程的会话持久性</title>
+      <link>https://github.com/neurosnap/zmx</link>
+      <description>&lt;p&gt;local/bin 到您的 PATH 使用 重要按 ctrl+\ 从会话中分离。通过使用 tmux 之类的东西，您现在在开发堆栈中拥有了冗余功能：一个用于您的操作系统的窗口管理器和一个用于您的终端的窗口管理器。编写与其他 smol 工具组合的程序。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Zmx: Session Persistence for Terminal Processes&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46141893"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/neurosnap/zmx'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;000ooo000:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;太棒了，我在想象这样的东西对我在家会有什么好处。这看起来几乎是完美的，并且 autossh + ssh“别名”可以实现。自述文件中的（d.term）对我来说是新的，所以到目前为止。感谢分享。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;planckscnst:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您喜欢这个工具，您可能还会对reptyr感兴趣，它可以让您将进程重新设置为不同的tty。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;blog.nelhage.com&amp;#x2F;2011&amp;#x2F;02&amp;#x2F;changing-ctty&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;blog.nelhage.com&amp;#x2F;2011&amp;#x2F;02&amp;#x2F;change-ctty&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/neurosnap/zmx</guid>
+      <pubDate>Wed, 03 Dec 2025 23:46:30 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46141893</comments>
     </item>
   </channel>
 </rss>

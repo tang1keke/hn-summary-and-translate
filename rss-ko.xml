@@ -6,169 +6,37 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Korean</description>
     <language>ko</language>
-    <lastBuildDate>Thu, 04 Dec 2025 01:56:39 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Dec 2025 03:55:55 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ko.xml"/>
     <item>
-      <title>Acme, 인터넷을 변화시킨 프로토콜 중 하나의 간략한 역사</title>
-      <link>https://blog.brocas.org/2025/12/01/ACME-a-brief-history-of-one-of-the-protocols-which-has-changed-the-Internet-Security/</link>
-      <description>&lt;p&gt;이 유토피아는 일련의 개방적이고 표준화된 프로토콜을 통해 가능해졌습니다. 따라서 Let’s Encrypt는 2015년부터 TLS 서버 인증서를 무료로 제공하는 인증 기관입니다. 이제 자동화 측면에 대해 조금 이야기해 보겠습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Acme, a brief history of one of the protocols which has changed the Internet&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46141745"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://blog.brocas.org/2025/12/01/ACME-a-brief-history-of-one-of-the-protocols-which-has-changed-the-Internet-Security/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throw0101a:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;다른 여러 가지 인증서 프로비저닝 프로토콜이 있습니다.&lt;p&gt;* &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Simple_Certificate_Enrollment_Protocol#See_ also" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Simple_Certificate_Enrollment_...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stavros:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Let’s Encrypt는 다른 어떤 조직보다 개인 정보 보호를 위해 더 많은 노력을 기울였습니다. Let&amp;#x27;s Encrypt 이전에는 일반적으로 TLS 인증서를 배포했지만 다소 나중에 고려하여 HTTP에 액세스할 수 있도록 남겨두었습니다. 1년에 한 번씩 (매우 수동으로) 회전하는 것도 고통스러웠습니다.&lt;p&gt;LE가 상황을 얼마나 많이 바꾸었는지 과장하기는 어렵습니다. 그들은 TLS를 기본값으로 설정했기 때문에 더 이상 암호화되지 않은 HTTP를 유지할 필요가 없습니다. 명성.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gerdesj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 1990년대 후반에 NetWare에 SSL을 배포하고 미국이 군수품으로 수출하도록 허용한 것을 받았던 것을 기억합니다!&lt;p&gt;정확한 세부 사항은 기억나지 않지만 기본적으로 짧은 키 길이로 인해 버그가 발생했습니다.  80386 베오울프 클러스터에 도전할 만큼 길었지만 자금이 넉넉한 기계실에서 윙윙거리는 모든 것에 대한 상대는 없었습니다.&lt;p&gt;다른 모든 흥미로운 다이얼과 손잡이, SAN 등을 계속 사용할 수 있었지만 결국에는 꽤 쓸모가 없었습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wakawaka28:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Let&amp;#x27;s Encrypt와 같은 CA가 정보 요원에 의해 손상되거나 완전히 실행될 가능성을 고려한 사람이 있습니까? 물론, 손상될 수 있고 그 외에도 고객으로부터 돈을 벌 수 있는 다른 CA도 많이 있습니다. 하지만 누가 알겠어요... 무엇이 이러한 가능성을 방어할 수 있을까요? 인증서에 여러 서명이 있습니까?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kuil009:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;귀하의 서비스에 감사드립니다&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gorgoiler:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;Let's Encrypt&lt;/i&gt;에 감사드립니다. 세상을 바꾸고 더 나은 곳으로 만들었습니다.&lt;p&gt;방송을 듣고 계셨던 모든 분들께 죄송합니다.  영장을 갖고 돌아오겠죠?!&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://blog.brocas.org/2025/12/01/ACME-a-brief-history-of-one-of-the-protocols-which-has-changed-the-Internet-Security/</guid>
-      <pubDate>Wed, 03 Dec 2025 23:28:34 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46141745</comments>
-    </item>
-    <item>
-      <title>Kea DHCP: 최신 오픈 소스 DHCPv4 및 DHCPv6 서버</title>
-      <link>https://www.isc.org/kea/</link>
-      <description>&lt;p&gt;× ISC의 오픈 소스 소프트웨어를 다운로드해 주셔서 감사합니다. xz 서명 ASC ISC 유지 패키지 서명 패키지 서명 업데이트하기 전에 릴리스 노트를 읽어보십시오. 사용 가능한 모든 후크 라이브러리에 대한 자세한 내용을 보려면 여기를 클릭하세요.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Kea DHCP: Modern, open source DHCPv4 and DHCPv6 server&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46142000"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.isc.org/kea/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iwontberude:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;대규모 엔터프라이즈 배포를 kea로 이전했는데 정말 환상적이었습니다. 문제 해결이 매우 쉽습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Lammy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Kea는 버전을 업그레이드할 때 수년에 걸쳐 내 구성이 두 번 손상되었습니다. 2023년 PF-박스 재설치를 위해 ISC-DHCPd에서 "EOL"이라고 불렀다는 이유만으로 뛰어내린 것을 후회합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nagisa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;내 홈랩에서는 매우 기본적인 옵션(시스템 네트워크에 내장된 옵션과 RouterOS에 내장된 dhcp 서버)을 사용해 왔지만 웹 인터페이스, 데이터베이스 또는 기타… 실제로 필요한 것은 전혀 없었습니다. 구성 파일에 수십 개의 정적 할당을 추가하고 DHCP가 존재한다는 사실을 잊어버리는 것만으로도 충분했습니다. HA조차도 업그레이드가 실패하는 동안 발생하는 다운타임 기간 동안 노드가 임대를 잘 유지하기 때문에 제가 원하는 것이 아닙니다.&lt;p&gt;이것이 이해되기 시작하려면 네트워크가 얼마나 화려해야 합니까? 이 프로젝트의 대상 고객은 누구입니까?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PikachuEXE:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;OPNSense를 통해 ISC에서 Kea로 마이그레이션되었으며 지금까지 문제가 없습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brianjlogan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 제 홈 라우터를 운영했고 Systemd Containers를 사용하는 Kea와 Power DNS를 사용하여 집 전체에 서비스를 제공했습니다.&lt;p&gt;정말 감동받았습니다. 함께 모은 사람들이 isc-dhcp-server에 대한 내 경험의 주요 문제를 잘 해결했다고 생각합니다.&lt;p&gt;모든 레거시 종속 항목과 고유한 사용 사례를 계속 제공하려고 시도하면서 현대의 기대에 부응해야 하는 소프트웨어를 작성하는 것은 엄청난 도전이라고 확신합니다.&lt;p&gt;Cloudflare가 자체 Golang DNS 서버를 작성하는 방법에 대한 기사를 생각나게 하고 일부는 좋아합니다. 무려 900명의 사람들이 LOC 레코드를 사용하지만 여전히 이를 지원합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BLKNSLVR:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;OPNSense는 포함된 ISC DHCP 서버를 더 이상 사용하지 않으며(더 이상 사용하지 않음) 이제 Kea DHCP 서버를 표준으로 사용합니다. OPNSense에서 ISC에서 Kea로 마이그레이션했는데 비교적 고통이 없었고 그 이후로 잘 작동하고 있습니다. 여기에는 불만이 없지만 설정은 매우 평범합니다.&lt;p&gt;DNS 통합에 대해서는 언급할 수 없지만 유용할 것 같아서 좀 더 자세히 살펴보겠습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WarOnPrivacy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;언젠가는 미루는 것을 멈추고 pfsense 상자를 Kea로 마이그레이션할 것입니다. 마음에 들었으면 좋겠습니다.&lt;p&gt;기대했던 DNS 통합이 제대로 작동하고 지금 ISC에서 받는 부작용이 발생하지 않는다면 매우 기쁠 것입니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.isc.org/kea/</guid>
-      <pubDate>Wed, 03 Dec 2025 23:58:04 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46142000</comments>
-    </item>
-    <item>
-      <title>HN 표시: 120개 신용 조합의 모기지 금리를 비교하기 위한 대시보드를 만들었습니다.</title>
-      <link>https://finfam.app/blog/credit-union-mortgages</link>
-      <description>&lt;p&gt;신용 조합 모기지 금리 최종 업데이트: 2025년 12월 3일 30년 고정 업데이트. 대형 은행에는 비영리 신용조합에는 없는 마케팅 부서가 있습니다. 실제 요율은 달라질 수 있습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: I built a dashboard to compare mortgage rates across 120 credit unions&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46139761"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://finfam.app/blog/credit-union-mortgages'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vgeek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;좋은 생각이에요. 몇 년 전 저는 HMDA 데이터를 사용하여 모기지 대출 기관(FDIC 및 FCUA 회원 모두)을 비교하는 &lt;a href="https:&amp;#x2F;&amp;#x2F;originationdata.com" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;originationdata.com&lt;/a&gt;을 구축했습니다. 저는 대출 기관, 상품 유형, MSA와 같은 측면(STL FRED 데이터도 포함)별로 금리를 모델링했습니다. 몇 년 동안 성장했고 저는 긍정적인 사용자 피드백뿐만 아니라 일부 인상적인 사이트(예: 대형 은행 자체, 소비자 출판물)로부터 유기적으로 백링크를 받는 것에 매우 기뻤습니다. 그런 다음 Google은 &amp;quot;유용한 콘텐츠 업데이트&amp;quot; 그리고 Google 검색 트래픽이 완전히 폭주했기 때문에 나는 그것을 포기하고 SEO 지향적이지 않은 다른 프로젝트로 옮겼습니다. 왜냐하면 Google의 품질에 대한 관점은 제가 알지 못하기 때문입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CommenterPerson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;잘하셨어요!&lt;p&gt;저희 신용조합이 페이지와 같은 일반 텍스트에 모기지 금리를 명확하게 게시하는 것을 발견했습니다. 학사도 없고 게임도 없습니다. 반면에 대형 은행에서는 10년 간의 급여 예금 기록이 있더라도 게임을 즐길 수 있고 더 높은 이자를 받을 수 있습니다. 친구들에게 신용조합을 제안하려고 했을 때 눈길이 갔습니다. 마찬가지로, 사람들은 다른 사람들이 하는 일(큰 은행에 사기를 당하는 일)이 좋다고 가정합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;t_mann:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;훌륭한 계획과 아름다운 사이트! 작은 문제, 내 전화기 테이블 위의 컨트롤 배치가 개선될 수 있을 것입니다. 테이블은 뭘로 쓰셨나요?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;joshuamcginnis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아주 멋지다. 안정적으로 스크래핑하는 데 사용한 기술과 도구를 알려주실 수 있나요? 아니면 다양한 웹사이트에서 모든 요금 데이터를 얻으시나요?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;duraace2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;언뜻 보면 이 사이트는 환상적으로 보입니다!  정말 잘했어요!  (참고로 저는 수년간 해커 뉴스를 읽었지만 활동한 적이 없습니다. 이 댓글을 달기 위해 계정을 만들었습니다)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NortySpock:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;CU 제안: 캔자스시티 최대 규모의 CommunityAmerica Credit Union&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.communityamerica.com&amp;#x2F;about-us" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.communityamerica.com&amp;#x2F;about-us&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;satellite2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것이 실제로 미국에서 표준화되어 있습니까?&lt;p&gt;내가 사는 곳에서는 조건이 매우 다양합니다. 그리고 기본적으로 이사하고 판매하는 경우 전환 비용이 전체 비용을 쉽게 지배할 수 있습니다.&lt;p&gt;이를 고려하면 더 나은 조건을 위해 관심 측면에서 몇 군데를 거래하는 것이 더 낫다는 것을 알았습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;latortuga:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;HN의 첫 페이지를 열고 낯익은 얼굴을 보는 것은 언제나 즐겁습니다. 나 이 사람이랑 대학 다녔어! Mahmoud 배송을 축하합니다!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 가입도 없고, 광고도 없고, 추천 수수료도 없습니다.&lt;p&gt;좋습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bluGill:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;내 신용 조합은 내가 "활성" 상태인 경우 더 나은 요율을 제공합니다. 이는 매월 일정 횟수의 거래를 의미합니다.  따라서 가장 좋은 요율을 원한다면 신용조합을 선택하고 몇 달 전에 이용을 시작해야 합니다.  (어쩌면 신용조합의 운영 방식에 따라 다를 수도 있음)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ambicapter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;"요금" 드롭다운이 작동하지 않는 것 같습니다. 저는 uBlock Origin을 사용하고 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aliljet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것은 정말 환상적입니다.  여기에 DSCR과 같은 상업 대출도 포함되었으면 좋겠습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;msuniverse2026:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;맙소사, 여기 호주에도 30년 고정 모기지가 있었으면 좋겠습니다. 코로나19 기간 동안 요금이 3% 미만이었을 때 그중 하나를 얻는다고 상상해 보세요. 믿을 수 없는.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://finfam.app/blog/credit-union-mortgages</guid>
-      <pubDate>Wed, 03 Dec 2025 20:35:27 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46139761</comments>
-    </item>
-    <item>
-      <title>국내 고양이의 인사말 발성은 남성 간병인에게 더 자주 발생합니다</title>
-      <link>https://onlinelibrary.wiley.com/doi/10.1111/eth.70033</link>
-      <guid isPermaLink="true">https://onlinelibrary.wiley.com/doi/10.1111/eth.70033</guid>
-      <pubDate>Wed, 03 Dec 2025 21:56:37 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46140753</comments>
-    </item>
-    <item>
-      <title>8086 마이크로코드 브라우저</title>
-      <link>https://nand2mario.github.io/posts/2025/8086_microcode_browser/</link>
-      <description>&lt;p&gt;이것이 바로 온라인 8086 마이크로코드 브라우저입니다. 버튼을 클릭하면 약 300개의 문서화된 8086 지침 목록이 표시됩니다. 8086 μcodeRegister ID에 대한 몇 가지 재미있는 정보는 상황에 따라 의미가 변경됩니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; 8086 Microcode Browser&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46140244"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://nand2mario.github.io/posts/2025/8086_microcode_browser/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://nand2mario.github.io/posts/2025/8086_microcode_browser/</guid>
-      <pubDate>Wed, 03 Dec 2025 21:16:11 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46140244</comments>
-    </item>
-    <item>
-      <title>C의 검사된 크기 배열 매개변수</title>
-      <link>https://lwn.net/SubscriberLink/1046840/3eb9029084cc9e1e/</link>
-      <description>&lt;p&gt;논의는 Ard Biesheuvel이 시적으로 명명된 함수 xchacha20poly1305_encrypt()의 안전성을 개선하려고 시도하면서 시작되었습니다. void xchacha20poly1305_encrypt(u8 *dst, const u8 *src, const size_t src_len, const u8 *ad, const size_t ad_len, const u8 nonce[XCHACHA20POLY1305_NONCE_SIZE], const u8 키[CHACHA20POLY1305_KEY_SIZE]); 이 함수의 잠재적인 문제는 u8 유형의 배열에 대한 여러 포인터를 매개변수로 사용한다는 것입니다. Biesheuvel은 대신 이 방법으로 프로토타입을 작성하는 것이 가능하다고 제안했습니다(차이점은 굵은 글씨로 표시됨): void xchacha20poly1305_encrypt(u8 *dst, const u8 *src, const size_t src_len, const u8 *ad, const size_t ad_len, const u8 (*nonce)[XCHACHA20POLY1305_NONCE_SIZE], const u8 (*키)[CHACHA20POLY1305_KEY_SIZE]); 마지막 두 인수의 유형이 변경되었습니다. 인수가 주어진 크기의 배열에 대한 포인터인 새로운 수준의 포인터 간접 참조가 있습니다. Eric Biggers는 GCC가 종종 정적 없이도 "배열이 너무 작음" 경고를 생성할 수 있지만 커널은 현재 이러한 경고를 비활성화한다고 지적했습니다. static을 사용할 때도 이를 억제합니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Checked-size array parameters in C&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46139782"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://lwn.net/SubscriberLink/1046840/3eb9029084cc9e1e/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kazinator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;포인터-배열 솔루션은 괜찮습니다. 단, 포인터-배열 typedef는 피해야 합니다.&lt;p&gt;문제는 반복되는 선언을 줄이는 데 매력적이라는 것입니다.&lt;p&gt;&lt;pre&gt;&lt;code&gt; typedef unsigned char thing_t[THING_SIZE];
-
-  구조체 red_box_with_a_hook {
-     thing_t thing1, thing2;
-  }
-
-  void shake_hands_with(thing_t *thing);
-&lt;/code&gt;&lt;/pre&gt;
-모두 괜찮습니다. 그러나 thing_t는 여전히 포인터로 붕괴되는 배열 유형입니다.&lt;p&gt;thing_t가 값으로 전달될 수 있는 것처럼 보이지만 배열이므로 은밀하게 값으로 전달되지 않습니다.&lt;p&gt;&lt;pre&gt;&lt;code&gt; void catch_with_net(thing_t thing);  &amp;#x2F;&amp;#x2F; 사물의 유형은 실제로 "usnsigned char *"입니다.
-
-  &amp;#x2F;&amp;#x2F; ...
-    부호 없는 문자 x[42]];
-    catch_with_net(x);        &amp;#x2F;&amp;#x2F; 전달된 첫 번째 요소에 대한 포인터입니다. 유형 검사&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;halayli:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;마찬가지로 유사한 문제를 파악하는 데 매우 유용한 다음 필드 속성도 있습니다.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;clang.llvm.org&amp;#x2F;docs&amp;#x2F;AttributeReference.html#counted-by-counted-by-or-null-size-by-size-by-or-null" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;clang.llvm.org&amp;#x2F;docs&amp;#x2F;AttributeReference.html#counted-...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Philpax:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Walter가 들러서 뚱뚱한 포인터의 장점을 칭찬하게 되어 기쁩니다 :-)&lt;p&gt;참고: &lt;a href="https:&amp;#x2F;&amp;#x2F;digitalmars.com&amp;#x2F;articles&amp;#x2F;C-biggest-mistake.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;digitalmars.com&amp;#x2F;기사&amp;#x2F;C-biggest-mistake.html&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Arch-TK:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;당신이 함께 어울리는 사람들이 당신들 사이에서 상식으로 간주되는 것이 "C 표준 내에 깊이 묻혀있다"고 설명되는 이상한 틈새 시장을 형성한다는 것을 깨달을 때 그 이상한 느낌.&lt;p&gt;주목할 점은 배열이 너무 작을 경우 컴파일러가 경고를 생성할 필요가 없다는 것입니다. 그것은 단지 GCC가 관대하게 도움을 주는 것뿐입니다. 공식적인 입장은 너무 작은 객체에 포인터를 전달하는 것은 단순히 정의되지 않은 동작이라는 것입니다(예, 액세스하지 않더라도 전달만 가능합니다).&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nikeee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;GCC에는 함수의 다른 매개변수에 대한 참조를 지원하는 확장 기능도 있습니다:&lt;p&gt;&lt;pre&gt;&lt;code&gt; #include &amp;lt;stddef.h&amp;gt;
-    void foo(size_t n, int b[정적 n]);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;a href="https:&amp;#x2F;&amp;#x2F;godbolt.org&amp;#x2F;z&amp;#x2F;c4o7hGaG1" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;godbolt.org&amp;#x2F;z&amp;#x2F;c4o7hGaG1&lt;/a&gt;&lt;p&gt;컴파일 시간 상수에만 국한되지 않습니다. 안타깝게도 clang에서는 작동하지 않습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Veserv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;배열에 대한 포인터는 유형이 안전할 뿐만 아니라 객관적으로도 정확하며 알려진 고정 크기 배열의 주소를 전달할 때 항상 사용되는 구문이어야 합니다. 이것은 모두 배열 인수가 항상 값으로 배열을 전달해야 하는 경우 배열을 인수 목록의 포인터로 자동 소멸시키는 C의 인공물입니다. 그렇다면 이 구문은 배열의 주소를 전달하는 유일한 방법이었을 것이며 이러한 문제가 발생하지 않았을 것입니다. 자동 붕괴는 실제로 언어의 실제 최악의 설계 실수 중 하나입니다(즉, 새로운 혁신을 채택하지 못한 것이 아니라 설계했을 때에도 오류가 발생한 것입니다).&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;o11c:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;더 나은 옵션: 고유한 구조체로 감싸면 됩니다.&lt;p&gt;아마도 0, 1, 로트의 3가지 숫자만 있을 것입니다. 2도 존재한다고 공정하게 주장할 수 있지만 더 높은 수준의 경우에는 추상화에 대해 생각해야 합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aaaashley:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;n[static M] 배열 검사 구문에 대한 재미있는 점은 이 구문이 포함되었을 당시인 1999년에도 나쁜 것으로 간주되었기 때문입니다.&lt;p&gt;"이 기능이 보기 흉하다는 만장일치 투표가 있었고, 11시간 만에 표준에 통합된 것은 불행한 결정이었다는 좋은 합의가 있었습니다." - Raymond Mak(캐나다 C 실무 그룹), &lt;a href="https:&amp;#x2F;&amp;#x2F;www.open-std.org&amp;#x2F;jtc1&amp;#x2F;sc22&amp;#x2F;wg14&amp;#x2F;www&amp;#x2F;docs&amp;#x2F;dr_205.htm" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.open-std.org&amp;#x2F;jtc1&amp;#x2F;sc22&amp;#x2F;wg14&amp;#x2F;www&amp;#x2F;docs&amp;#x2F;dr_205.htm&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://lwn.net/SubscriberLink/1046840/3eb9029084cc9e1e/</guid>
-      <pubDate>Wed, 03 Dec 2025 20:37:08 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46139782</comments>
-    </item>
-    <item>
-      <title>Apple이 독립형 Touch ID를 만들지 않는 이유는 무엇입니까?</title>
-      <link>https://www.jeffgeerling.com/blog/2025/why-doesnt-apple-make-standalone-touch-id</link>
-      <description>&lt;p&gt;엄청나게 낭비적이고 대부분의 사람들이 생각하는 것보다 인내심이 조금 더 필요하지만 기본적으로 Touch ID가 있는 Apple Magic Keyboard를 가져와 Touch ID를 떼어내고 키보드의 로직 보드와 함께 3D 인쇄된 상자에 설치합니다. 애플은 왜 이걸 안 만드나? 그렇다면 Apple은 왜 작은 Touch ID 상자를 만들지 않습니까?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Why doesn't Apple make a standalone Touch ID?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46141429"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.jeffgeerling.com/blog/2025/why-doesnt-apple-make-standalone-touch-id'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aetherspawn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 단지 이러한 불편함 때문에 멍청한 키보드를 구입하고 사용합니다.&lt;p&gt;솔직히 제가 소유한 키보드가 최악은 아니지만 최고는 아니지만 아마도 7&amp;#x2F;10 정도 평가할 것입니다.&lt;p&gt;블루투스가 마술처럼 매끄럽지 않다면 5&amp;#x2F;10이 될 것입니다.&lt;p&gt;로우 프로파일은 손목 베개 없이도 지낼 수 있다는 것을 의미합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Waterluvian:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;왜 번들을 분리하고 TV 채널을 하나씩 판매하겠습니까?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 수년 동안 이 문제에 대해 불만을 품고 있습니다. RSI가 꽤 나빠서 분할 기계식 키보드를 사용하여 코딩하는 것을 좋아하지만 길고 복잡한 비밀번호도 사용하므로 Touch ID를 사용하는 것을 좋아합니다. 터치 ID 패드나 터치 ID가 포함된 숫자 패드를 애프터마켓 키보드 옆에 놓을 수 없다는 사실이 어이가 없습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;re-thc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;같은 맥락에서 그들은 Windows Hello와 같은 Face ID 카메라를 만들어야 합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tyre:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;내 말은, 왜 그럴까요?&lt;p&gt;확장 가능한 시장은 없습니다. 그들은 품질과 마진을 위해 하드웨어를 제어하기를 원합니다. 그들은 이미 Touch ID가 포함된 키보드를 판매하고 있습니다. Mac 액세서리는 초점 영역에서 멀리 떨어져 있습니다.&lt;p&gt;이치에 맞지 않기 때문에 그렇지 않습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tgma:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;TouchID가 &lt;i&gt;없이&lt;/i&gt; Mac을 사용하는 것이 훨씬 더 재미있습니다. TouchID가 없을 때 전체 Safari 비밀번호 자동 완성 경험이 훨씬 빠르고 덜 짜증스럽습니다(로그인한 동안 승인을 요청하지 않고 키체인이 잠금 해제됨). 'defaults write' 명령이 있는 경우 MacBook에서 Mac mini 경험을 에뮬레이트하기 위해 실행할 수 있습니다. 알려주세요.&lt;p&gt;P.S. 모든 키체인 항목에 Liquid Glass + TouchID 승인 필요 == Windows Vista&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andsoitis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그 시장이 얼마나 클 것이라고 생각하시나요?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ggm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이는 보안 영역 논리와 강력하게 연결되지 않나요?&lt;p&gt;감지가 한 가지입니다. 센서 입력과 그것이 잠금 해제하는 것을 신뢰하는 것은 또 다른 문제입니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.jeffgeerling.com/blog/2025/why-doesnt-apple-make-standalone-touch-id</guid>
-      <pubDate>Wed, 03 Dec 2025 22:55:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46141429</comments>
-    </item>
-    <item>
-      <title>GNOME Bazaar에 사용자 정의 진행률 표시줄 테마를 추가하는 PR이 "인종차별"을 이유로 거부됨</title>
-      <link>https://github.com/kolunmi/bazaar/pull/724</link>
-      <description>&lt;p&gt;로드하는 동안 오류가 발생했습니다. 이 페이지를 새로고침하세요. 로드하는 동안 오류가 발생했습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; PR adding custom progress bar themes to GNOME Bazaar rejected, citing "racism"&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46142296"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/kolunmi/bazaar/pull/724'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>셀레브라이트, 코렐리움 인수</title>
+      <link>https://www.corellium.com/blog/cellebrite-to-acquire-corellium</link>
+      <description>&lt;p&gt;셀레브라이트의 임시 최고경영자(CEO) 호건(Hogan). "Corellium은 궁극적으로 Cellebrite 고객이 커뮤니티와 기관 모두를 보호하는 데 도움이 되는 업계 고유의 가상화 플랫폼을 구축했습니다. 공공 부문에서 Corellium의 기술과 인재는 Cellebrite의 디지털 조사 플랫폼을 더욱 향상하고 확장할 것이며, 모바일 취약성 연구를 위한 Corellium의 솔루션은 국방 및 정보 부문 고객을 위한 Cellebrite의 제품 제공을 늘릴 것으로 예상됩니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Cellebrite to Acquire Corellium&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46143230"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.corellium.com/blog/cellebrite-to-acquire-corellium'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ungreased0675:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;정말 엉망이군요. 그런 사람들과 지속적으로 교류하는 것은 지칠 것입니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/kolunmi/bazaar/pull/724</guid>
-      <pubDate>Thu, 04 Dec 2025 00:35:21 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46142296</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eugenekolo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;2025년 6월 5일&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.corellium.com/blog/cellebrite-to-acquire-corellium</guid>
+      <pubDate>Thu, 04 Dec 2025 02:48:31 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46143230</comments>
     </item>
     <item>
-      <title>지난 18개월 동안 평균 DRAM 가격(USD)</title>
-      <link>https://pcpartpicker.com/trends/price/memory/</link>
-      <guid isPermaLink="true">https://pcpartpicker.com/trends/price/memory/</guid>
-      <pubDate>Thu, 04 Dec 2025 00:08:26 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46142100</comments>
+      <title>Zmx: 터미널 프로세스에 대한 세션 지속성</title>
+      <link>https://github.com/neurosnap/zmx</link>
+      <description>&lt;p&gt;PATH 사용법에 대한 local/bin 중요세션에서 분리하려면 ctrl+\를 누르십시오. tmux와 같은 것을 사용하면 이제 개발 스택에 중복 기능(OS용 창 관리자 및 터미널용 창 관리자)이 있습니다. 다른 smol 도구로 구성되는 프로그램을 작성합니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Zmx: Session Persistence for Terminal Processes&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46141893"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/neurosnap/zmx'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;000ooo000:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;대단하다, 이런 게 집에 있으면 얼마나 좋을까 상상하고 있었어요. 이것은 거의 완벽해 보이며 autossh + ssh &amp;#x27;aliases&amp;#x27; (d.term)은 나에게 새로운 것이므로 TIL입니다. 공유해 주셔서 감사합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;planckscnst:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 도구가 마음에 든다면 프로세스를 다른 tty로 다시 부모화할 수 있는 repatyr에 관심이 있을 수도 있습니다.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;blog.nelhage.com&amp;#x2F;2011&amp;#x2F;02&amp;#x2F;changing-ctty&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;blog.nelhage.com&amp;#x2F;2011&amp;#x2F;02&amp;#x2F;changing-ctty&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/neurosnap/zmx</guid>
+      <pubDate>Wed, 03 Dec 2025 23:46:30 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46141893</comments>
     </item>
   </channel>
 </rss>
