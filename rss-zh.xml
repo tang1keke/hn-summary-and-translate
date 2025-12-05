@@ -6,269 +6,175 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 05 Dec 2025 18:37:41 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Dec 2025 21:25:50 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Cloudflare 于 2025 年 12 月 5 日中断</title>
-      <link>https://blog.cloudflare.com/5-december-2025-outage/</link>
-      <description>&lt;p&gt;第一个更改是使用我们的渐进部署系统推出的。未应用上述配置的客户不受影响。这个终止开关系统从前面几节提到的全局配置系统接收信息。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Cloudflare outage on December 5, 2025&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46162656"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://blog.cloudflare.com/5-december-2025-outage/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 28 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Uptrenda:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不敢相信一个糟糕的网站可以摧毁大部分主流网络。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aeyes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于一家拥有 1000 名工程师的公司来说，在将集中更改发布给每个人之前创建一个金丝雀区域有多困难。&lt;p&gt;每个更改都是部署，即使其配置也是如此。就这样对待它。&lt;p&gt;此外，您还应该知道强类型语言不会让您避免所有类型的问题。尤其是如果您允许像 unwrap() 这样的事情，那就更不行了。&lt;p&gt;令人难以置信的是，他们显然拥有完全未经测试的代码，可以代理所有客户的请求。如果您不想编写测试，那么至少对其进行模糊测试。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rudedogg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我真的厌倦了不断看到 cloudflare 和他们的狗屎验证码。请看看他们试图成为互联网的门户而造成了多少悲伤。不要给他们这种权力&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MagicMoonlight:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您有 99.99% 的可用性要求，它们已经花费了您一大笔钱&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;system2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是我，还是自从 LLM“工程师”推出以来 CloudFlare 中断增加了？是远程雇用的吗？您认为存在相关性吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;w10-1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感谢 Cloudflare 的清晰和勤奋。&lt;p&gt;在谈论他们早期的 Lua 代码时：&lt;p&gt;&gt;我们以前从未对具有“执行”操作的规则应用终止开关。&lt;p&gt;令我惊讶的是，基于规则的系统没有经过完全测试，也许是因为 Lua 代码相对于较新的 Rust 实现来说是遗留的？&lt;p&gt;它跟踪了我在其他地方看到的情况：质量工程无法跟上生产工程。  只是我认为 CloudFlare 是一个基础设施场所，但事实并非如此。&lt;p&gt;我有一位来自 20 世纪 80 年代国防电子行业的经理。  他说，在这种情况下，质量工程团队总是负责，而且总是更加熟练。  对他来说，软件是倒退的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;markus_zhang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道内部的任何人都可以分享一下这种文化。我最感兴趣的是以下部分：&lt;p&gt;如果有人搞砸了，是否有人会说“如果你破坏了构建”，无论什么超级关键，那么你的屁股就是草，而我是割草机”？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cpncrunch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我注意到，近几个月来，即使除了这些中断之外，cloudflare 也导致了互联网的普遍退化和混乱。我看到更多的“证明你是人类”、“检查以确保你是人类”，并且通常在网站加载之前至少会有几秒钟的延迟。&lt;p&gt;我认为这对网站所有者没有真正的帮助。我怀疑这主要是关于人工智能勒索：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;blog.cloudflare.com&amp;#x2F;introducing-pay-per-crawl&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;blog.cloudflare.com&amp;#x2F;介绍按抓取付费&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Bender:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对 Cloudflare 的建议：为免费帐户创建早期采用者选项。&lt;p&gt;优点：最早采用新功能和安全补丁。&lt;p&gt;缺点：中断风险较高。&lt;p&gt;我认为这应该是可能的，因为他们已经区分了&lt;i&gt;免费帐户、专业帐户和企业帐户&lt;/i&gt;。  我不知道路由是如何工作的，但我打赌他们可以做到这一点。  想想众包的 Beta 测试人员。  对于任何 PCI 审计或 FEDRAMP &lt;i&gt;安全性优先于正常运行时间&lt;/i&gt;也是一项福利。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;uyzstvqs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我这里缺少的是测试环境。渐进与否；他们为什么直接部署到产品？按照 Cloudflare 的规模，Cloudflare 总部应该有一个专用房间，对整个系统进行完全隔离的模型规模部署。所有更改都应首先进行，并针对每种可能的情况运行测试。&lt;p&gt;只有在此之后，您才使用逐步部署，并使用一个红色的大按钮&lt;i&gt;oopsie&lt;/i&gt;立即回滚更改。 &lt;i&gt;具有强类型系统的语言&lt;/i&gt;不会拯救你，好的程序可以。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nish__:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们每 5 分钟部署一次，对其他人来说是否很疯狂？而且这不仅仅是配置更新，而是实际代码随此“执行”而更改。行动。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jakub_g:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的部分：&lt;p&gt;在推出错误的规则集更新后，他们尝试了终止开关（立即推出到 100%），这是以前从未执行过的代码路径：&lt;p&gt;&gt;  但是，我们以前从未将终止开关应用于具有“执行”操作的规则。当应用killswitch时，代码正确地跳过了执行操作的评估，并且不评估它指向的子规则集。然而，在处理评估规则集&lt;p&gt;&gt;的总体结果时遇到了错误。代码中的一个直接错误，多年来一直未被发现&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;8cvor6j844qw_d6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是否有一些潜在因素导致了最近的停机（例如，新流程、裁员等），或者只是一系列纯粹的巧合？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lionkor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Cloudflare 目前的正常运行时间低于 99.9%，任何人都可以跟踪。我估计我家里的电脑至少是99.9%。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;egorfine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;为客户提供针对恶意负载的保护，使其能够被检测到并阻止。为此，Cloudflare 的代理会在内存中缓冲 HTTP 请求正文内容以供分析。&lt;p&gt;我对此有一种复杂的感觉。&lt;p&gt;另一方面，我绝对不希望 CDN 查看我的有效负载并决定什么对我有利。今天是保护，明天是审查。&lt;p&gt;同时，这正是 CloudFlare 的优势 - 保护网站免受恶意请求的侵害。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;liampulles:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;过去几次大停电的教训是，熵实际上是不可避免的。系统的可理解性无法永远跟上其不断增长和老化的复杂性。未知的未知数将会增加。&lt;p&gt;好消息是，具有人脑范围组件的更加去中心化的互联网无论如何都更有利于创新、进步和自由。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rachr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Cloudflare 开始使用 BOFH 借口生成器了。
-&lt;a href="https:&amp;#x2F;&amp;#x2F;bofh.d00t.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;bofh.d00t.org&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_pdp_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么没有静态编译器检查，显然也没有使用模糊器来确保这些规则按预期工作？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rany_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;作为我们持续努力保护使用 React 的客户免受严重漏洞 CVE-2025-55182 影响的一部分，我们开始将缓冲区大小增加到 1MB，这是 Next.js 应用程序允许的默认限制。&lt;p&gt;为什么增加缓冲区大小有助于解决该安全漏洞？这只是性能优化吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hrimfaxi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;让他们的更改在 1 分钟内完全传播真是太棒了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paradite:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Cloudflare 的部署模式对我来说看起来很疯狂。&lt;p&gt;我曾在一家顶级金融科技公司工作过，每当我们进行配置更改或部署时，我们都应该准备好回滚计划并监控关键仪表板 15-30 分钟。&lt;p&gt;仪表板需要提前准备好会受到部署影响的系统和关键业务指标，并由队友审核。&lt;p&gt;我从未见过停机时间我在那里时的时间超过 1 分钟，因为当出现问题时，仪表板上会立即出现峰值。&lt;p&gt;由于配置更改或部署错误而导致整个系统停机 10 多分钟，这超出了我的能力范围。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gkoz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有时我觉得如果没有家长式的厨房水槽功能，我们会过得更好。故意使用的可靠、正确设计的功能不会导致这些中断。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;snafeau:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很多此类错误感觉就像是可以被像 Greptile 这样的简单审查机器人捕获......我想知道 Cloudlare 内部是否使用了等效的工具？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;antiloper:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;制作更快的网站：&lt;p&gt;&gt;我们开始将缓冲区大小增加到 1MB，这是 Next.js 应用程序允许的默认限制。&lt;p&gt;为什么 Next.js 限制为 1MB？对于上传用户生成的内容（照片、扫描的发票）来说这还不够，但是对于多个 JSON API 调用来说 1 MB 的请求正文是荒谬的。这些框架至少需要为未优化的开发提供一些支持，即使它只是较低的默认请求正文限制。否则，所有 Web 应用程序都会变得像 MS Office 套件或 Reddit 一样慢。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;miyuru:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;cloudflare 的软件团队发生了什么事？&lt;p&gt;我最近也在 cloudflare API 中看到了类似的错误。&lt;p&gt;有一个功能的端点仅供企业用户使用，但检查用户是否使用企业计划是在最后一步完成的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;flaminHotSpeedo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Cloudflare re: ops 部署安全的文化是怎样的？&lt;p&gt;他们看到了与部署相关的错误，并且因为它与安全问题相关，所以他们没有回滚它，而是决定进行另一个具有全球爆炸半径的部署？&lt;p&gt;他们不仅没有应用部署安全 101 教训“如有疑问，回滚”但他们也未能评估与导致 11&amp;#x2F;18 中断的同一部署系统相关的风险。&lt;p&gt;纯粹是猜测，但对我来说，这听起来似乎还有更多的故事，这听起来像是一个团队在他们要么已经违反了所有规则，要么一开始就没有遵守规则时做出的牛仔决定&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnorswap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的理解是：“为了逐步推出一项更改，我们必须在全球范围内推动一项不同的配置更改，这会立即破坏所有内容”。&lt;p&gt;但更重要的一点是：&lt;p&gt;&gt;具有强类型系统的语言可以防止这种类型的代码错误&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Scaevolus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;禁用此功能是使用我们的全局配置系统完成的。该系统不采用逐步部署的方式，而是在几秒钟内将更改传播到整个网络，并且在我们最近于 11 月 18 日经历的中断之后正在接受审查。&lt;p&gt;&gt;一旦更改传播到我们的网络，我们的 FL1 代理中的代码执行就会遇到规则模块中的错误，从而导致以下 LUA 异常：&lt;p&gt;他们确实需要找到一种方法，将全局配置更改与它们触发的错误尽快关联起来。&lt;p&gt;&gt;作为此次部署的一部分，我们发现我们用于测试和改进新 WAF 规则的内部工具之一的错误有所增加&lt;p&gt;像这样的警告信号让您知道可能出现问题！&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://blog.cloudflare.com/5-december-2025-outage/</guid>
-      <pubDate>Fri, 05 Dec 2025 15:35:43 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46162656</comments>
-    </item>
-    <item>
-      <title>我是 Peter Roberts，移民律师，为 YC 和初创公司工作。美国医学协会</title>
-      <link>https://news.ycombinator.com/item?id=46163121</link>
-      <description>&lt;p&gt;与往常一样，有无数的移民话题，无论您关心什么，我都会为您提供指导。请记住，出于明显的责任原因，我无法就特定案件提供法律建议，因为我无法了解所有事实。请在您的问题和评论中坚持事实讨论，我也会在回答中这样做。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; I'm Peter Roberts, immigration attorney who does work for YC and startups. AMA&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46163121"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46163121'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 26 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hiprob:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;乌克兰人有什么值得注意的事情吗？尤其是特朗普就职以来？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jml78:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只是一个高层次的问题。  我最小的儿子被收养了。  他不是白人。  他已入籍。  我们是否应该继续更新他的护照，以便他此时可以随身携带护照卡（我们过去从未获得过护照，因为它们看起来很浪费）。  这看起来很疯狂，但随着人们因棕色皮肤而被从街上抓走，明智的做法是有一种快速的方法来证明公民身份。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OsrsNeedsf2P:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;孵化器要求创始工程师持旅游签证过来正常吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;swatson741:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人工智能如何影响您的职业？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hobs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于更熟悉法律其他部分的律师来说，闯入移民领域的最佳方式是什么？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sombragris:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有人以 F1 签证和奖学金在美国学习。除此之外没有其他可观的收入。此人在美国期间必须提交纳税表格，尽管无需缴纳税款，因为此人在奖学金之外没有收入。该学生于去年10月完成学业，然后离开该国回国。该学生毕业了，并不打算返回美国。&lt;p&gt;教育机构向该学生的家庭住址发送了一些他必须在 4 月 15 日之前提交的纳税表格，但该学生忘记了这样做。&lt;p&gt;问题是：几年后，该学生以旅游身份获得美国签证并进入美国是否会遇到问题？如果是，如何解决？提前致谢。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;garbawarb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我以 TN 身份居住在美国，并且有兴趣创办一家基于订阅的移动应用程序初创公司。但我有一份待处理的 PERM 申请，离开我的公司就意味着放弃整个事情，我并不急于这样做。有没有什么合法的方法可以让我不必这样做而开始创业？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;figmert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;H1-B 申请的这 10 万美元到底有多严重？这对招聘流程有何影响？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;garbawarb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有关居住在美国的加拿大人的 TN 身份的问题。在工作签证之外，我还想做一些创收的事情（举办音乐演出、将音乐上传到 Spotify、出演电影）。我的理解是我不能在美国做这些事情。如果我在国外做这些事情，我可以做这些事情吗？或者有什么办法可以让它们发挥作用吗？例如，如果我去了加拿大，录制了一张专辑，上传了它，然后回到了美国。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zamalek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感谢 AMA Peter！&lt;p&gt;您认为持有绿卡离开（并因此返回）该国是否存在风险？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kethinov:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;假设你可以挥舞魔杖，以任何你喜欢的方式改变美国移民法。你会做出什么改变？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;clumsydude:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;10月，国务院出台新政策：&lt;p&gt;&amp;gt;美国非移民签证 (NIV) 申请人应在其国籍国或居住国的美国大使馆或领事馆安排签证面试预约&lt;p&gt;&amp;gt;如果申请地点是基于其居住地，申请人必须能够证明居住在其申请的国家/地区。&lt;p&gt;需要提供什么类型的证明来证明居住地？如果申请人在特定国家合法拥有居留权（例如永久居民卡或工作签证），但实际上以 H-1B&amp;#x2F;TN&amp;#x2F;L-1&amp;#x2F;O-1&amp;#x2F; 等身份居住在美国，情况又如何呢？工人或 H-4&amp;#x2F;TD&amp;#x2F;L-2&amp;#x2F;O-3&amp;#x2F;等。依赖？特别是对于双重意向签证？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bravura:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我知道这是一个&lt;i&gt;一般&lt;/i&gt;问题，但是：&lt;p&gt;假设一家美国初创公司正在考虑在美国境外招聘工程人员，目前如何评估他们获得在美国工作签证的可能性？涉及什么时间安排和费用？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jquery:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;绿卡上的个人是否应该担心任何事情，例如批评本届政府？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rathboma:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感谢您回答问题！&lt;p&gt;您认为希望获得绿卡（与雇主协调）的 H1B 签证持有者应该担心申请被拒绝或其他问题吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aliljet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;目前对于外国学生未来试图获得 H1B 的情况是否有明确的规定？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jonpurdy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嗨彼得，一如既往的感谢。如今，i-131 再入境许可证的处理时间似乎超过了 12 个月。&lt;p&gt;如果 i-131 正在等待批准，您是否会建议该人在 1 年出境日期之前短暂返回美国（确保他们在 i-131 获得批准之前从未离开美国超过 1 年）？&lt;p&gt;或者，即使正在等待批准，再入境许可证是否允许他们在国外停留更长的时间（假设已获得批准）？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kimyanna:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你好，Peter，您是否发现 N-400 申请的拒绝率下降或增加（5 年规则）？只是好奇它是否或多或少照常，或者是否对 N-400 申请有任何影响（我们听说过邻里检查等）谢谢！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sjtgraham:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最高法院取消 Chevron 尊重会如何影响 USCIS 狭义解释 EB-1A 监管框架的能力，特别是在 Kazarian 分析的第 1 步？我对两个领域特别感兴趣：(1) 在严格阅读 8 C.F.R. 中的评判他人工作标准的文本后，是否会出现这样的情况？ § 204.5(h)(3)，受益人评估和批准同一领域其他人的技术工作的参与代码审查应符合资格，而无需 USCIS 应用额外的监管限制，以及 (2) USCIS 是否可以继续使用其历史上对 8 C.F.R. 规定的可比证据的限制性方法。 § 204.5(h)(4) 现在法院不再需要遵循机构的解释。我理解，即使这些问题在第 1 步对申请人有利，它们也可能不会改变第 2 步中最终案情确定的结果，并且我正在尝试确定雪佛龙后严格的文本方法如何影响其成就与列出的十个标准不完全一致的申请人的第 1 步结果。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;miotintherain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你好，Peter，感谢 AMA！&lt;p&gt;我在一家美国公司工作，工作地点在欧洲。我时常去美国工作。我听过很多关于边境入境的恐怖故事。如果我遇到边防警察要求查看我的个人电话和个人密码的情况，我有什么选择？我可以拒绝吗？然后会发生什么？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;poki89:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我与当前雇主的 H-1B 将于 2026 年 1 月 10 日到期，并且无法延期，因为我没有 I-140。另一家初创公司计划在 12 月底提交我的 O-1A。在 O-1A 申请等待期间我可以留在美国吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;saradhi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您能否提供有关社交媒体审查规则的任何见解？这一直是签证申请的黑匣子——从学生签证开始，现在从 12 月 15 日起也强制申请工作签证。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gsck:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最近在一家美国公司找到了一份工作，需要在迈阿密完成几周的培训。根据他们给我的信息，我需要 B1 签证，也许还需要 ESTA（因为我在英国），以及 C-1&amp;#x2F;D（用于穿越美国）。&lt;p&gt;但是，他们一直在我需要 B1 和我只使用 ESTA 进行培训之间摇摆不定，而且他们的沟通并不是最直接的。我需要获得哪种签证才能进入美国参加培训？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;devty:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感谢您再来一轮？&lt;p&gt;在您看来，近期 H1B 变化中谁是赢家，谁是输家？您对YC在旧金山湾区容纳国际人才的看法有什么变化吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vecter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感谢 AMA Peter！&lt;p&gt;您认为 9 年 21 月 25 日生效的 10 万美元 H-1B 费用有何影响？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;constructive:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嗨，彼得，感谢您做 AMA！ 
-我有一家特拉华州注册的有限责任公司（已有 10 年历史），我什至设法远程获得了 EIN。 
-然而，我无法远程开设银行账户，所以这些年来我一直在为有限责任公司支付注册代理费和特拉华州政府税。
-然而，我真诚地想来美国开设银行账户，并将我的业务扩展到美国。 
-该有限责任公司还没有真正举行过任何年会……等等。但税款总是按时缴纳。我如何使用我的 LLC 申请 B1&amp;#x2F;B2 访问美国？&lt;p&gt;或者我应该关闭它并尝试正常途径吗？提前致谢！&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46163121</guid>
-      <pubDate>Fri, 05 Dec 2025 16:04:20 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46163121</comments>
-    </item>
-    <item>
-      <title>带状疱疹疫苗接种可预防或延缓痴呆</title>
-      <link>https://www.cell.com/cell/fulltext/S0092-8674(25)01256-5</link>
-      <guid isPermaLink="true">https://www.cell.com/cell/fulltext/S0092-8674(25)01256-5</guid>
-      <pubDate>Fri, 05 Dec 2025 17:47:16 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46164646</comments>
-    </item>
-    <item>
-      <title>人工智能的强烈反对已经到来：为什么公众对科技巨头的耐心正在耗尽</title>
-      <link>https://www.newsweek.com/ai-backlash-openai-meta-friend-10807425</link>
-      <description>&lt;p&gt;从涂鸦的广告到充满嘲讽的在线评论部分，公众对人工智能生成的媒体的耐心开始消失。利用生成式人工智能发起的活动在网上遭到嘲笑，并在公共场合遭到破坏。马库斯和其他人认为，这种饱和与人工智能的突破关系不大，而更多地与公司以创新为幌子剥夺人力的方式有关。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The AI Backlash Is Here: Why Public Patience with Tech Giants Is Running Out&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46164419"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.newsweek.com/ai-backlash-openai-meta-friend-10807425'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>框架赞助商 CachyOS</title>
+      <link>https://discuss.cachyos.org/t/framework-sponsorship-for-cachyos/19376</link>
+      <description>&lt;p&gt;ptr1337 2025 年 12 月 4 日晚上 8:30 1 嘿 CachyOS 社区，今天我们有一些重大新闻要分享。 Framework 是模块化和可修复笔记本电脑革命背后的公司，现在正在赞助 CachyOS。对于我们这样的开源项目来说，找到真正关心 Linux 的硬件合作伙伴是很少见的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Framework Sponsors CachyOS&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46166536"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://discuss.cachyos.org/t/framework-sponsorship-for-cachyos/19376'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zkmon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;&gt;&gt;缺乏深层价值&lt;p&gt;没有什么叫做深层价值。股市上涨是因为猜测其他人的购买模式，而不是公司基本面。&lt;p&gt;深层价值在哪里？政治？媒体？学术界？人际关系？商业？你所说的深刻价值观是什么意思？我们甚至无法展望未来一年。&lt;p&gt;现代人类的行为已经高度优化，只关心眼前的目标。有一天，我正在审查一个软件架构，并询问架构师本文档的受众和消费者是谁。她说是审稿人。我再次询问，希望确定使用该文档的下游流程，并得到了相同的答案，这次有点严厉。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ceroxylon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;摩擦不仅仅与质量有关，还与这些工具的普遍性所传达的信号有关。&lt;p&gt;除非他们是在讽刺，否则在一篇谈论对懒惰人工智能使用的强烈反对的文章中使用人工智能口音和这样的声明是一个有趣的选择。&lt;p&gt;它可能是人类编写的（我注意到一直使用它们的人开始像他们一样说话），但“它不仅仅是 x - 它是 y”是一个有趣的选择。格式是平庸文章的标志&amp;#x2F;由AI编辑。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;inglor_cz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一方面，人们对人工智能感到不满，另一方面，这些人中的哪些人会停止使用 ChatGPT 为他们写工作电子邮件和作业。&lt;p&gt;看起来“汽车问题”是一个问题。以另一种形式。许多人都会同意，我们的城市已经变得过于以汽车为中心，汽车占用了太多的公共空间，但很少有人会放弃自己的私人汽车。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最近硬件价格上涨（我昨天举的例子
-大约两年前我为一台廉价电脑购买的相同内存，
-突然成本是两年前的 2.5 倍）完全改变了我的看法。我已经是
-对人工智能持怀疑态度，但我可以看到一些可能的用例，例如 
-生成用于免费浏览器游戏的图像等。
-但我也在 YouTube 上看到了很多垃圾视频，这些都是浪费
-我的时间。现在价格上涨，我确实已经受够了。&lt;p&gt;大型科技兄弟人工智能大公司需要付钱给我们 - 又名人类 -
-对于他们在这里造成的损害。人工智能泡沫已经消退，
-我们看到了这一点，尽管特朗普试图保护这里的黑手党。他们
-现在欠我们数十亿美元的损失。微软最近也宣布了这一消息
-由于“新的人工智能功能”，将通过提高价格来榨取所有人的利益
-在 MS Office 中”。当然，我不使用 Microsoft 产品（我使用
-不过有一台运行Win10的电脑，所以我的说法不是100%
-正确；我只是不使用微软付费办公套件或任何
-其他牛奶换钱服务），但我认为是时候扭转局面了。&lt;p&gt;这些公司应该向我们付款，因为他们在这里造成了损失
-一般来说。我不再接受AI黑手党的手段，更不接受 
-因此硬件价格上涨。这个黑手党欠我们的
-钱。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaway743:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很多人对人工智能的强烈反对并不是因为技术本身，而是因为人们感到经济上受到了影响。当你认为自己的工作或生计如履薄冰时，更容易将这种恐惧转向人工智能，而不是我们选出的代表没有就工人如何在转型中生存提供任何真正的计划。&lt;p&gt;人工智能成为了更大问题的替身。我们一直在争论模型和聊天机器人，但真正的问题是经济安全网几十年来没有更新。在这种情况发生改变之前，人们将继续将人工智能视为值得愤怒的事情，而不是让他们变得脆弱的系统。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cmiles8:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;目前，科技客户对人工智能的炒作已经感到厌倦。&lt;p&gt;这项技术不会消失，但早该进行硬重置，以让一切重新回到冷酷的现实检验。昨天的文章称，由于客户不购买，MSFT 削减了人工智能销售配额，这符合这一更广泛的主题。&lt;p&gt;摩根士丹利也悄悄地试图摆脱其在数据中心融资方面的风险，此举颇有 2008 年夏天的味道。 CNBC 现在每天都会多次谈论人工智能泡沫。 OpenAI 看起来非常脆弱，而且在财务上过度扩张。&lt;p&gt;我不希望泡沫破裂，从而摧毁科技生态系统，但我们正在达到一个临界点。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.newsweek.com/ai-backlash-openai-meta-friend-10807425</guid>
-      <pubDate>Fri, 05 Dec 2025 17:29:47 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46164419</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;k_bx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;像 Framework Laptop 这样的项目如何能够赞助任何人？他们有利可图吗？给人的印象是，他们更像是一个初创阶段的项目，远离盈利。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Sleaker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最近涉足 CachyOS 作为我主操作系统的替代品，它运行良好，试图在 cachy 上进行 omarchy 以改进内核，但在尝试更新时最终出现了问题，因此最终切换到 omarchy 主线。我正在认真考虑换回 cachyos，不过，看起来它正朝着正确的方向发展。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bluecalm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很高兴今天在 HN 上看到它，因为我花了半天时间阅读 CachyOS、文件系统，然后查看包括 Framework 在内的 Linux 笔记本电脑。
+一台经过测试且搭载 CachyOS 的笔记本电脑就很棒了。如果有一天我能得到一个指点杆&amp;#x2F;无触摸板版本就好了:)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;syntaxing:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;等等，当我几天前从 HN 了解到 CachyOS 时，我发誓 Framework 就在赞助商名单上&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whalesalad:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;几天前，我刚刚擦除了我的游戏装备（win11、12700k、7900xtx）并安装了 CachyOS。 KDE Plasma 不起作用，但 Hyprland 和 Gnome 可以。在开始安装后的一个小时内，我就和朋友一起玩《Arc Raiders》。到目前为止，一切正常，甚至睡眠和唤醒都没有问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tristor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是个好消息，几个月前，我在我的 Framework 13 AMD 上从 vanilla Arch 迁移到了 CachyOS，因为我主要将它用于 Steam 游戏，它运行得很好，在我玩的游戏中平均速度约为 3fps。  我很高兴看到框架直接支持它们。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://discuss.cachyos.org/t/framework-sponsorship-for-cachyos/19376</guid>
+      <pubDate>Fri, 05 Dec 2025 20:03:21 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46166536</comments>
     </item>
     <item>
-      <title>Rust 中的防御性编程模式</title>
-      <link>https://corrode.dev/blog/defensive-programming/</link>
-      <description>&lt;p&gt;我们之前没有明确考虑过这种情况。代码味道：延迟使用 Default 当初始化具有多个字段的对象时，很容易使用它。如果您仍然喜欢使用 Default 但又不想丢失编译器检查，您还可以解构默认实例： let Foo { field1, field2, field3, field4 } = Foo::default();这样，您就可以获得分配给局部变量的所有默认值，并且仍然可以覆盖您需要的内容： let foo = Foo { field1: value1, // 覆盖您需要的内容 field2: value2, // 覆盖您需要的内容 field3, // 使用默认值 field4, // 使用默认值 };这种模式为您提供了两全其美的功能： 您无需复制默认逻辑即可获得默认值 当新字段添加到结构中时，编译器会发出警告 当默认值发生更改时，您的代码会自动适应 哪些字段使用默认值，哪些字段具有自定义值一目了然 代码气味：脆弱特征实现 将结构完全解构为其组件也可以成为 API 遵守的防御策略。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Patterns for Defensive Programming in Rust&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46163609"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://corrode.dev/blog/defensive-programming/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Gemini 3 Pro：视觉人工智能的前沿</title>
+      <link>https://blog.google/technology/developers/gemini-3-pro-vision/</link>
+      <description>&lt;p&gt;Rohan Doshi 产品经理，Google DeepMind 阅读 AI 生成的摘要 一般摘要 Gemini 3 Pro 是 Google 最强大的多模式模型，可在文档、空间、屏幕和视频理解方面提供最先进的性能。它是我们有史以来最强大的多模式模型，在文档、空间、屏幕和视频理解方面提供最先进的性能。该模型在视觉基准（例如用于复杂视觉推理的 MMMU Pro 和 Video MMMU）以及跨文档、空间、屏幕和长视频理解的特定用例基准上创下了新高。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Gemini 3 Pro: the frontier of vision AI&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46163308"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.google/technology/developers/gemini-3-pro-vision/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brohee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常有用的 TryFrom 特征仅在 1.34 中出现，因此希望 From impl 中使用 unwrap_or_else() 的代码早于...&lt;p&gt;实际上，From 特征文档现在非常清楚何时实现它（&lt;a href="https:&amp;#x2F;&amp;#x2F;doc.rust-lang.org&amp;#x2F;std&amp;#x2F;convert&amp;#x2F;trait.From.html#when-to-implement-from" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;doc.rust-lang.org&amp;#x2F;std&amp;#x2F;convert&amp;#x2F;trait.From.html#when-t...&lt;/a&gt;)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;empath75:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是我读过的最好的 Rust 文章之一。  显然，它是根据经验得出的，涵盖了很多业务逻辑，Rust 通常无法保护您免受这些威胁，除非您进行一些仔细的编码，以便编译器能够帮助您。&lt;p&gt;许多 Rust 文章都集中在人们使用“不安全”进行黑暗巫术，而这只是正常的日常 api 设计，这对大多数人来说更为实用。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://corrode.dev/blog/defensive-programming/</guid>
-      <pubDate>Fri, 05 Dec 2025 16:34:25 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46163609</comments>
+&lt;p&gt;&lt;strong&gt;Top 22 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;k8sToGo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们什么时候能拿到 Gemini 3 Flash？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drivebyhooting:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;屏幕理解对于进一步自动化开发工作非常重要。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TheAceOfHearts:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因为我认为突出锯齿状智能很有趣，所以我有一个简单的单词搜索难题 [0]，Nano Banana Pro 仍然难以正确解决。具有代码执行功能的 Gemini 3 Pro 能够一次性解决问题并找到每个单词的位置（这非常令人印象深刻！一年前这是不可能的），但 Nano Banana Pro 无法正确突出显示单词。&lt;p&gt;这是我运行的两次测试的输出：&lt;p&gt;1.直接请 Nano Banana Pro 解决单词搜索难题 [1].&lt;p&gt;2.要求 Nano Banana Pro 突出显示网格上的每个单词，并将每个单词的位置作为提示的一部分包含在内。&lt;p&gt;它正确地回答了 2 个单词这一事实表明了有意义的进步，而且我们似乎非常接近拥有一个可以很快解决此问题的模型。&lt;p&gt;实际上，正确解决这个难题需要一些细微差别，而旧版 Gemini 模型在没有额外推动的情况下很难做到这一点。您必须转换网格或单词列表以使用匹配的大小写（网格使用大写，单词列表使用小写），并且您需要识别“汤混合”进行搜索时需要删除空格。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;imgur.com&amp;#x2F;ekwfHrN" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;imgur.com&amp;#x2F;ekwfHrN&lt;/a&gt;&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;imgur.com&amp;#x2F;1nybezU" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;imgur.com&amp;#x2F;1nybezU&lt;/a&gt;&lt;p&gt;[2] &lt;a href="https:&amp;#x2F;&amp;#x2F;imgur.com&amp;#x2F;18mK5i5" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;imgur.com&amp;#x2F;18mK5i5&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;caseyf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我正在研究这个问题，想知道当使用产品经过设计且与模特或其他服装没有隔离的照片时，这是否是识别服装产品的主色和其他特征的好方法&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Workaccount2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嗯&lt;p&gt;这是第一个在我的法学硕士图像测试中获得&lt;i&gt;部分学分&lt;/i&gt;的模特。这是数狗的腿。具体来说，是一条有 5 条腿的狗。这是一个疯狂的测试，因为法学硕士非常咄咄逼人，坚持认为狗只有 4 条腿。&lt;p&gt;事实上，GPT5 编写了一个边缘检测脚本来查看“金狗脚”在哪里。遇见了“鲜绿的草地”向我证明只有4条腿。脚本找到了 5，然后 GPT-5 说这是一个错误，并调整了脚本灵敏度，所以它只找到了 4，哈哈。&lt;p&gt;无论如何，Gemini 3 虽然第一次尝试仍然无法数出腿数，但确实识别出了“男性解剖结构” （这是他自己的话）在图片中也可见。第 5 条腿大约是您可以期望一只天生的狗拥有“第 5 条腿”的地方。&lt;p&gt;除此之外，我仍然不会称其为特别令人印象深刻。&lt;p&gt;需要注意的是，Meta 的图像切片器正确地突出显示了所有 5 条腿，没有任何问题。也许不完全是一个变形金刚，但有趣的是它可以正确地解释“狗腿”并识别他们的身份。还有那条有很多腿的狗（我有几条）都有由纳米香蕉添加的额外腿。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dmarzio:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所以我们最终将用它来制作《杰森一家》中的女仆。正确的？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pseudosavant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对分析视频的机会非常着迷。它压缩到的令牌数量以及您可以通过这些令牌推理出的内容是令人难以置信的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;devinprater:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;音频描述 Youtube 吗？那真是太神奇了！即使我还不会玩塞尔达，我也可以听双子座描述它的游戏。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;knollimar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我为建筑做了一些电气绘图工作，并在法学硕士中完成了基本任务。&lt;p&gt;我给了它一个糟糕的安全带，它几乎有一个镜头根据一份糟糕的 pdf 在房间里布置插座。我认为如果我给予它更好的控制，它很快就能完成我同事的大部分工作&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hodder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“Gemini 3 Pro 代表了从简单识别到真正的视觉和空间推理的代际飞跃。”&lt;p&gt;提示：“酒杯装满”&lt;p&gt;生成的图像：2&amp;#x2F;3 满酒杯。&lt;p&gt;真实的视觉和空间推理被否认。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这里有什么新内容？我相信这只是上个月发布的 Gemini 3（型号 ID 没有改变 AFAICT）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;empressplay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，但是它还能玩 PacMan 吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stego-tech:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该文档描绘了一幅超级令人印象深刻的图景，但“需要与 Google 的网络连接，以便我们收集您的数据”的核心限制对我来说仍然是一个很大的障碍（实际上也是所有基于云的 AI 工具）。&lt;p&gt;我很想知道这样的东西可以如何提炼出来，以在 SBC 或消费者套件上进行独立加速，因为这就是要创造的数十亿美元的所在地（工厂、远程站点、危险或敏感设施等）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;siva7:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的。当我要求 Gemini 3 Pro 从我的个人会计表中生成信息图表时，它首先无法生成除了黑色背景之外的任何内容，然后它生成的内容以一种无意义的方式混合了不同的语言，有明显的拼写错误和不相关的信息分组。这无疑是 OCR 领域的一次飞跃，使传统的 OCR 变得毫无用处。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iamjackg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很好奇玩《口袋妖怪红》时会发生什么情况。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;agentifysh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我意识到视觉模型有多少瓶颈&lt;p&gt;我只是一个美化的快速阅读&amp;#x27;提示&amp;#x27;此时使用 Codex 进行 QA&lt;p&gt;一旦它取代了 QA 层，软件开发工作就真正结束了&lt;p&gt;未来将成为一个软件精灵，你可以在 aistudio 上输入：“去制作 Counterstrike 1.6 克隆，这里是 500 美元，你有两个小时”&lt;p&gt;编辑：看到了 Screenspot 基准测试，天哪 ** 这是一个疯狂的跳跃！ 11% 到 71% 甚至超过了 Opus 4.5 的 50%...chatgpt 为 3.5%，这符合我对 Codex 的体验&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jonplackett:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谷歌确实是一个完全醒来的沉睡巨人。我预计今天会发布更多红色代码。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;djoldman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的“ScreenSpot Pro”结果：&lt;p&gt;&lt;pre&gt;&lt;code&gt; 72.7% Gemini 3 Pro
+    11.4% 双子座 2.5 Pro
+    49.9% 克劳德·奥普斯 4.5
+    3.50% GPT-5.1
+&lt;/code&gt;&lt;/pre&gt;
+ScreenSpot-Pro：专业高分辨率计算机使用的 GUI 基础&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;arxiv.org&amp;#x2F;abs&amp;#x2F;2504.07981" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;arxiv.org&amp;#x2F;abs&amp;#x2F;2504.07981&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fngjdflmdflg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些 OCR 改进几乎肯定会被带到谷歌图书上，这很棒。从长远来看，它可以将所有非数字善本书籍压缩为可管理的大小，存储成本低于 5,000 美元。[0]如果 archive.org 从 Tesseract 迁移到此也很棒。我想知道执行此操作的原始成本和通过付费 API 的成本是多少。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;annas-archive.org&amp;#x2F;blog&amp;#x2F;ritic-window.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;annas-archive.org&amp;#x2F;blog&amp;#x2F;ritic-window.html&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;causal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好吧，也许他们说“飞跃”并不夸张&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ch2026:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这里使用什么框架用于计算机使用？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果文章作者看到此内容，则会显示“HTML 转录”。链接已损坏 - 它转到 &lt;a href="https:&amp;#x2F;&amp;#x2F;aistudio-preprod.corp.google.com&amp;#x2F;prompts&amp;#x2F;1GUEWbLIlpXrE_ams-GBg3e7ZG7AcYgbr" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;aistudio-preprod.corp.google.com&amp;#x2F;prompts&amp;#x2F;1GUEWbLIlpX...&lt;/a&gt; 这是 Google 员工专用的网址。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.google/technology/developers/gemini-3-pro-vision/</guid>
+      <pubDate>Fri, 05 Dec 2025 16:15:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46163308</comments>
     </item>
     <item>
-      <title>Framework Laptop 13 通过升级套件获得 12 核 ARM 处理器</title>
-      <link>https://www.notebookcheck.net/Framework-Laptop-13-gets-ARM-processor-with-12-cores-via-upgrade-kit.1177930.0.html</link>
-      <description>&lt;p&gt;该主板配备了 CIX CP8180 ARM 芯片组，Minisforum MS-R1 也采用了该芯片组。该主板可以安装在之前购买的 Framework Laptop 13 中。我于 2018 年加入 Notebookcheck 新闻团队，并将我多年的笔记本电脑和智能手机经验与我一生对技术的热情结合起来，为我们的读者创建有关该领域新发展的信息内容。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Framework Laptop 13 gets ARM processor with 12 cores via upgrade kit&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46162872"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.notebookcheck.net/Framework-Laptop-13-gets-ARM-processor-with-12-cores-via-upgrade-kit.1177930.0.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>广告是人类不满的主要根源（2019）[pdf]</title>
+      <link>https://www.andrewoswald.com/docs/AdvertisingMicheletal2019EasterlinVolume.pdf</link>
+      <description>&lt;p&gt;5 %���� 1 0 obj &lt;&gt;&gt;&gt; endobj 2 0 obj &lt;&gt; endobj 3 0 obj &lt;&gt;/ExtGState&lt;&gt;/ProcSet[/PDF/Text/ImageB/ImageC/ImageI] &gt;&gt;/MediaBox[ 0 0 594. $�/R�,������ endstream endobj 5 0 obj &lt;&gt; endobj 6 0 obj &lt;&gt; endobj 7 0 obj &lt;&gt; endobj 8 0 obj &lt;&gt; endobj 9 0 obj &lt;&gt; endobj 10 0 obj &lt;&gt; endobj 11 0 obj &lt;&gt; endobj 12 0 obj &lt;&gt; endobj 13 0 obj &lt;&gt;/ExtGState&lt;&gt;/ProcSet[/PDF/Text/ImageB/ImageC/ImageI] &gt;&gt;/MediaBox[ 0 0 594.�\H� �Gt^#���\�,�q�6_֥ǹzYPz�kd�YO- # �� kf �Q oT� �&amp;Sj�� � }�^b 端流 endobj 15 0 obj &lt;&gt; endobj 16 0 obj [ 17 0 R] endobj 17 0 obj &lt;&gt; endobj 18 0 obj &lt;&gt; endobj 19 0 obj &lt;&gt; endobj 20 0 obj &lt;&gt;/ProcSet[/PDF/Text/ImageB/ImageC/ImageI] &gt;&gt;/MediaBox[ 0 0 594。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Advertising as a major source of human dissatisfaction (2019) [pdf]&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46166709"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.andrewoswald.com/docs/AdvertisingMicheletal2019EasterlinVolume.pdf'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 14 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anthonyryan1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该板是否通过设备树引导 Linux，或者具有硬件发现功能？&lt;p&gt;UEFI 与特定于 Arm 的引导加载程序怎么样？&lt;p&gt;几年前我尝试过 arm32 Linux，当时最大的障碍是设备树和非 UEFI 引导过程。在情况改善之前，放弃进一步探索该平台（可能除了像树莓派这样的 SBC）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NoSalt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很想拥有一台 Framework 笔记本电脑，但不能保证该公司会像联想、戴尔、苹果等公司一样长久存在，而且我不想习惯能够即时定制，然后因为 Framework 停业而不得不回到普通笔记本电脑。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;coffeeaddict1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想问 HN 一个非常模糊的相关问题。我需要获得一个能够运行 Windows ARM64 的自托管运行器（用于 GitHub Actions）。除了购买机器并手动完成所有工作之外，我还有什么选择？是否有提供 Windows ARM64 VM 的服务提供商？我似乎只能找到Linux 的选项。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;einpoklum:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;太好了，现在只需要一个合适的键盘，而不是现在大多数笔记本电脑所拥有的垃圾键盘。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;kickingandstreaming.ca&amp;#x2F;wp-content&amp;#x2F;uploads&amp;#x2F;2015&amp;#x2F;01&amp;#x2F;x220_keyboard_crop.jpg" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;kickingandstreaming.ca&amp;#x2F;wp-content&amp;#x2F;上传&amp;#x2F;2015&amp;#x2F;01&amp;#x2F;x2...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Havoc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;可惜不是金鱼草。这可能增加了 snapdragon Linux 可行的机会&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;999900000999:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对 Arm Linux 没有太大信心。 Tuxedo 放弃了。&lt;p&gt;廉价的 Windows Arm 笔记本电脑正在涌入市场，如果有人可以挑选一台笔记本电脑来支持，他们可以轻松地在促销中购买它们，用 Linux 翻新它们并赚取利润。&lt;p&gt;看起来他们在这样做方面遇到了一些挑战。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;znpy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很想看到有关此的电池寿命报告。这些 ARM 芯片很可能不会在电池寿命方面击败英特尔 AMD。&lt;p&gt;与性能相比，电池寿命也值得关注......&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MBCook:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所以这不是&lt;i&gt;官方&lt;/i&gt;的事情，这是第三方销售替换主板，对吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mtklein:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于笔记本电脑来说，这是令人惊讶的低功耗情况，完全破坏了交易：“……早期测试表明 SoC 在空闲时已经消耗了约 16 瓦……”&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;csdreamer7:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;metacomputing.io&amp;#x2F;products&amp;#x2F;metacomputing-arm-aipc" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;metacomputing.io&amp;#x2F;products&amp;#x2F;metacomputing-arm-aipc&lt;/a&gt;&lt;p&gt;为您节省一两次点击。看到这里我有很多疑问。我买主板吗？目前还不清楚。它列出了端口：它只支持 2 个端口？您有 16&amp;#x2F;32gigs 和 1tb 存储空间的四种选择吗？存储有士兵吗？如果是的话，存储是什么？嗯？士兵内存似乎是 ARM 生态系统中的给定，但存储在框架主板上是完全不可接受的。&lt;p&gt;专业版和常规版之间的唯一区别是第二个端口是 USB-C 端口而不是 HDMI？我假设这是主板，甚至支持框架扩展卡。&lt;p&gt;没有列出 Linux 兼容性支持。忘记 NPU 是否可以在 Linux 上运行；我什至不知道这是否会启动 Linux，因为该公司没有费心向其 SOC 内核提交 devicetree 补丁。甚至没有列出 Windows 支持。&lt;p&gt;这家公司的副本绝对是糟糕的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ndiddy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该板使用CIX CP8180 SoC，其性能和效率甚至比苹果的M1芯片还要差。请参阅 Jeff Geerling 对采用此 SoC 的桌面的评论：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.jeffgeerling.com&amp;#x2F;blog&amp;#x2F;2025&amp;#x2F;minisforum-stuffs-entire-arm-homelab-ms-r1" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.jeffgeerling.com&amp;#x2F;blog&amp;#x2F;2025&amp;#x2F;minisforum-stuffs-ent...&lt;/a&gt; 如果您需要一台 ARM Linux 笔记本电脑，那么购买二手 M1 或 M2 MacBook Pro 并安装 Fedora Asahi 可能是更好的选择。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;emmp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对此完全不感兴趣，但我对第三方现在明确针对框架外形尺寸以在框架市场之外销售升级和替代品的想法感兴趣。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cmrdporcupine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些 Snapdragon X 处理器在没有像样的 Linux 支持方面存在一些问题，对吧？&lt;p&gt;编辑：抱歉，不是 SnapdragonX - 显然我无法阅读。&lt;p&gt;此外，谁是“元计算”？我可以把我的钱交给他们吗？关于大型“Web 3 集成设备”的一些事情他们的登陆页面上的品牌让我不那么热情。否则我就会在“购买”上徘徊。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;woodrowbarlow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是实际的列表： &lt;a href="https:&amp;#x2F;&amp;#x2F;metacomputing.io&amp;#x2F;products&amp;#x2F;metacomputing-arm-aipc" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;metacomputing.io&amp;#x2F;products&amp;#x2F;metacomputing-arm-aipc&lt;/a&gt;&lt;p&gt;我发布了这篇文章，因为它有一些列表中没有的详细信息。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.notebookcheck.net/Framework-Laptop-13-gets-ARM-processor-with-12-cores-via-upgrade-kit.1177930.0.html</guid>
-      <pubDate>Fri, 05 Dec 2025 15:49:56 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46162872</comments>
+&lt;p&gt;&lt;strong&gt;Top 21 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kyboren:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[延迟]&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zkmon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;存在不需要数据或研究的基本相关性。广告的目的是吸引人们的注意力并创造对产品的熟悉度。人们的满意度取决于他们的期望与实际之间的差距。由于广告往往会增加期望，因此会导致更多的不满。这是一个直接后果。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Jolliness7501:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是为什么我尽可能地拒绝广告。尽可能拦截广告，没有传统的广播或电视 - 只添加免费订阅或免费替代品，YouTube 的替代应用程序，没有像 f...book、twitter 或（雷神禁止）tictok 这样的社交媒体。当需要同意“营销合作”时，我总是拒绝任何折扣、特别优惠。我阻止所有自动呼叫，如果有任何通过，我会追查其背后的公司并向当局提出投诉（在我的国家，未经他/她同意，联系任何人都是违法的）。
+当然，并非所有内容都有效，只有我无法屏蔽的广告才像广告牌一样是户外广告。
+我直接在值得的地方支持创作者，并为我经常使用的所有网站、服务和应用程序（如果适用）付费或捐赠。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aurornis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;评论部分显然没有人在读这篇论文，因为唯一达到 p&lt;0.05 显着性的子类别是报纸广告支出。&lt;p&gt;当他们将显着性的 p 值阈值延伸到 p&lt;0.1 时，他们声称杂志广告支出达到了该阈值。&lt;p&gt;即使在扩大的 p&lt;0.1 阈值下，电视、广播和电影广告也没有达到显着性。&lt;p&gt;论文的方法论也一点也不出色。他们研究了广告支出的变化和幸福指数的变化，然后试图将两者联系起来。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fpauser:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当我意识到广告在多大程度上操纵了我和我的思维时，我不再消费发送广告的广播电台和电视台。这是&gt;=25年前的事了。此外，我从来没有在没有广告拦截的情况下冲浪，并且在我的所有设备以及我们的家庭路由器（nextdns）中使用基于 DNS 的广告拦截。除此之外，我喜欢为我感兴趣的内容付费——这有助于减少广告。这是我个人的大部分无广告泡沫，我无法忍受它有任何不同。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arjie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于内容创作者来说，广告只是获取为人们提供的价值的工具。绝大多数人宁愿支付广告费也不愿支付美元。事实上，如果您使用 hn.algolia.com 并环顾四周，您会发现付费墙投诉比广告投诉更为常见。这也适用于 Reddit 和 Instagram 等。&lt;p&gt;到目前为止，有一些已知的理论方法来奖励内容创作者：&lt;p&gt;* 订阅&amp;#x2F;付费专区&lt;p&gt;* 广告&lt;p&gt;* 微交易&lt;p&gt;如果您拥有较高的品牌价值，并且拥有相对固定的受众，并且能够接受稳定的内容流，那么付费专区就会发挥作用。 《华尔街日报》、《纽约时报》等可以指挥这些。甚至慢无聊等人。可以做到这一点。但大多数规模较小的品牌价值内容创作者都面临着一个可怕的事实，即品牌具有帕累托性质：排名前几的品牌几乎占据了所有客户的需求。思想，然后你就在争夺他们的一小部分注意力。订阅收入类似于惠顾模式，一般信息也必须是这样，因为复制它是零成本，但获取它是高成本的。这意味着您很容易被那些只是复制您的内容并发布的人击败。您必须以某种方式让您的受众相信为您的&lt;i&gt;下&lt;/i&gt;东西付费是值得的。&lt;p&gt;微交易是最弱的模式。它们是不可行的，而且在社会上也是不可接受的，因为消费者期望他们在“宏观”交易上得到全方位的财务保护——而这不可能是免费的。这为微交易设定了底线，而开销则使得这样做不值得。更糟糕的是，基于微交易的经济存在的问题是你没有真正激励内容创建者。你会激励最能吸引你注意力的人。搜索引擎优化或海底口碑或原生广告。哪个并不重要。那家伙总是可以削弱创造者的利益，因为他没有生产他所销售的东西。  对于诸如“缓慢无聊”之类的信息来说，情况更糟。马特·伊格莱西亚斯（Matt Yglesias）无法阻止有人复制粘贴他的东西。&lt;p&gt;对于绝大多数内容创作者来说，广告是一件很棒的事情。它允许消费者、内容创作者和品牌之间建立庞大的三边市场。它减少了营销工作，因此更多的创作者可以参与。它允许消费者通过购买他们想要的东西来支付内容。它可以让品牌接触到他们想要的消费者。&lt;p&gt;说实话，我认为互联网广告，尤其是实时竞价的方式，对于绝大多数人来说是能够消费他们想要的所有内容的。它导致了任何人都无法想象的服务和信息的绝对爆炸式增长。&lt;p&gt;投放定向广告的门槛较低，这意味着即使是小型独立乐队也可以通过良好的营销努力生存下来。只有大型跨国公司才能引领品味的日子已经一去不复返了。现在，您拥有了小型创作者可以接触到的微型受众，并且值得他们为他们制作内容。&lt;p&gt;老实说，这真是太棒了。我非常喜欢广告，因为它所支持的功能。我更喜欢使用 YouTube Premium，并且我有订阅，但当我没有那么多钱时，通过允许我看到品牌来进行交易要好得多。所以，是的，有些阴暗的足球流媒体网站会将色情内容推到你的脸上，但你知道那里的比赛。对于世界其他地方来说，我认为这些网站正确地处于价值与烦恼的边界。&lt;p&gt;此外，这只是我一个人的问题，还是这里的结果在统计上大多微不足道？这似乎是一个宏大的主张，但证据却非常薄弱。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;codywashere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;应禁止付费数字广告&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xriddle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;然而，如果没有广告，我们的许多工作就不会存在……我并不是说这是对还是错，只是一个事实。广告是许多现代行业的基础，尤其是数字行业。社交平台、媒体公司、搜索引擎、新闻、免费应用程序、播客、流媒体层。你日常使用的大量互联网之所以存在，是因为广告为整个混乱提供了资金。如果没有广告，一半的科技经济就会陷入仅限订阅的领地。不幸的是，如果明天广告消失，许多公司就会倒闭，大量工作岗位就会消失，经济就会变得面目全非。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;doctorpangloss:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这不是一场“信誉革命”论文中，它没有显示因果关系，它在任何地方都没有使用随机化，而且这在很大程度上是一种事后、事后、事后的事情&lt;p&gt;一些相反的证据：DTC 关于左洛复（一种抑郁症药物）的药品广告，&lt;i&gt;导致&lt;/i&gt;更好的健康结果&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.journals.uchicago.edu&amp;#x2F;doi&amp;#x2F;abs&amp;#x2F;10.1086&amp;#x2F;695475" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.journals.uchicago.edu&amp;#x2F;doi&amp;#x2F;abs&amp;#x2F;10.1086&amp;#x2F;695475&lt;/a&gt;&lt;p&gt;不仅仅是相关性，而且是因果关系。这里使用的方法是赢得 2012 年诺贝尔奖的一系列方法的一部分&lt;p&gt;另一个好的方法：广告导致治疗和药物依从性的增加&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;pubmed.ncbi.nlm.nih.gov&amp;#x2F;37275770&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;pubmed.ncbi.nlm.nih.gov&amp;#x2F;37275770&amp;#x2F;&lt;/a&gt;&lt;p&gt;还有一篇很棒的论文指出，关于他汀类药物的可怕律师广告会导致对他汀类药物的依从性降低，因此负面广告会导致负面结果。不足为奇。&lt;p&gt;我并不是说这两篇论文可以推广到整个数字广告。概括全球数字广告就像概括美国国防预算一样困难——它们的规模（均约为 800 美元）和任务的复杂性相当。不过感觉确实不错。我很高兴这个评论会被那些对实际讨论这篇论文的优点与他们的共鸣不感兴趣的人投反对票。&lt;p&gt;相反，你可以将其视为 FDA 的胜利，它在监管药物方面做得很好（至少自 1965 年 SSA 创建医疗保险以来，法规开始发挥作用），因此为它们做广告基本上是一件好事。你可以从那里推断说，我们应该规范你可以做广告的内容，而不是将其委托给 Facebook 上的赞成票和反对票，这实际上是控制坏广告和好广告的方式。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CGMthrowaway:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;论文中有趣的发现：&lt;p&gt;报纸和报纸杂志推动了负面链接。电视、广播、电影广告效果不明显&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;apengwin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;”什么是幸福？此刻你需要更多的幸福。你不想要大部分，你想要全部” ——丘吉尔&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;marssaxman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;广告成为不满的根源并不奇怪，因为这就是&lt;i&gt;字面意思&lt;/i&gt;：诱导一种未满足的欲望的感觉是广告产生销售的机制。如果发现广告&lt;i&gt;不是&lt;/i&gt;是不满的主要来源，那会更令人惊讶，因为我们很难解释为什么企业在广告上花费这么多钱。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RustySwarf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;正如查理·芒格指出的那样，我们的经济不是靠贪婪运行，而是靠嫉妒运行。  为什么？  因为广告发现不安全感是最有效的撬棍。  广告是消费者价值体系的基石，自二战结束以来，消费者价值体系一直是美国经济的基础。&lt;p&gt;作为个人，我们可以为此做些什么？  认识到广告具有敌意并消除它。  相反，我们大多数人都试图从不匹配的广告中构建出一种世界观，但效果并不理想。  当我们写作和思考时，我们经常以广告为单位进行思考，这是一个令人恐惧的认识。&lt;p&gt;即使这一讨论是以幸福和满意度为框架的，也是以消费者价值体系为中心的这些品质的下游。  以前的社会可能认为诚信或责任是首要的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FrankWilhoit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很简单，广告是一种滥用形式。  这是一种精神暴力，不会留下任何外在痕迹，但却试图用自己的感知、判断和意图取代目标，从而削弱其目标。  一个注重自身生存的务实社会会彻底禁止它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;allears:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;资本主义（至少是我们的形式）需要消费主义。消费主义需要广告。你可能认为这只是一个烦恼，但它是我们经济的基础。不满意的消费者想要更多；满意的消费者不会。&lt;p&gt;从消费者身上赚尽可能多的钱被认为是最高的商业目标。当然，这会导致发展操纵它们的专业知识。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;karlgkk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在广告拦截、盗版、普遍避免的服务以及让我看到广告的事情之间……&lt;p&gt;当我拜访我的父母并且被迫看有线电视时，总是很不舒服。就像被攻击一样。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nathan_compton:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我用老式的方式在没有广告的情况下保持健康的抑郁状态。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amelius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这甚至没有解决广告不可避免地带来的过度消费的灾难性影响。广告正在破坏气候和我们的星球。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JumpCrisscross:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有人对广告支出征税吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;api:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我赞成对广告大幅征税，原因与我们征收“恶习税”的原因相同。关于酒、香烟、赌博等。&lt;p&gt;至少会减少其数量并选择更高质量的广告，稍微减少噪音。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrdevlar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每当我读到这样的文章时，我就会想起每个人都应该看看亚当·柯蒂斯的作品。 《自我的世纪》 (&lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=EoMi95tfgP4" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=EoMi95tfgP4&lt;/a&gt;) 这是关于西格蒙德·弗洛伊德如何侄子创造了我们社会中普遍存在的恶性营销方式。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.andrewoswald.com/docs/AdvertisingMicheletal2019EasterlinVolume.pdf</guid>
+      <pubDate>Fri, 05 Dec 2025 20:18:34 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46166709</comments>
     </item>
     <item>
-      <title>设计师光标 Onlook (YC W25) 正在招聘一位创始全栈工程师</title>
-      <link>https://news.ycombinator.com/item?id=46163977</link>
-      <description>&lt;p&gt;• 速度——您可以放心地通过反馈快速交付和迭代。 • 相信开源并愿意将您的工作公开。我们喜欢看到人们的工作。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Onlook (YC W25) the Cursor for Designers Is Hiring a Founding Fullstack Engineer&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46163977"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46163977'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46163977</guid>
-      <pubDate>Fri, 05 Dec 2025 17:00:10 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46163977</comments>
-    </item>
-    <item>
-      <title>Synadia 和 TigerBeetle 承诺向 Zig 软件基金会捐赠 512,000 美元</title>
-      <link>https://tigerbeetle.com/blog/2025-10-25-synadia-and-tigerbeetle-pledge-512k-to-the-zig-software-foundation/</link>
-      <description>&lt;p&gt;当时，Rust 的默认内存理念是内存不足（OOM）时崩溃。正确性是一个设计问题 最后，虽然借用检查器可以实现本地内存安全，但 TigerBeetle 需要更多的正确性属性。没有隐藏的内存分配。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Synadia and TigerBeetle Pledge $512,000 to the Zig Software Foundation&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46163671"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://tigerbeetle.com/blog/2025-10-25-synadia-and-tigerbeetle-pledge-512k-to-the-zig-software-foundation/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>为什么我们在 Zig 建造 Lightpanda</title>
+      <link>https://lightpanda.io/blog/posts/why-we-built-lightpanda-in-zig</link>
+      <description>&lt;p&gt;0 并定期进行重大更改。内存管理：控制伴随着持续的警惕。构建系统：任何使用过 CMake 或处理过头文件依赖项的人都知道这种痛苦。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Why we built Lightpanda in Zig&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46165249"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://lightpanda.io/blog/posts/why-we-built-lightpanda-in-zig'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;davemp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常好的消息。很高兴看到 Zig 获得更多投资。我已经将构建系统用于生产系统，并期待在项目允许的情况下编写更多 Zig。&lt;p&gt;拥有一种尝试直接对低级系统进行建模的现代语言非常重要。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;morkalork:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我可以跳到这里问一下：作为一个十年来没有做过任何系统编程的人，Zig 和 Rust 哪个更有趣？我一直在 Python 世界里，看到像 uv 和 ruff 这样的工具，让我对 Rust 有偏见，但 Zig 最近似乎吸引了很多炒作？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://tigerbeetle.com/blog/2025-10-25-synadia-and-tigerbeetle-pledge-512k-to-the-zig-software-foundation/</guid>
-      <pubDate>Fri, 05 Dec 2025 16:38:30 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46163671</comments>
+&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Svoka:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们选择 Zig 因为上帝不允许我们学到一些东西。知道了。典型的 Zig 故事。激发如此多的信心。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;0xbadcafebee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请记住，您将来将使用不同的语言。所有软件都会维护一定的时间，然后就停止使用。  重要的是你现在正在制作的东西的生命周期。选择适合该应用程序和时间范围的任何可维护内容。&lt;p&gt;一次性脚本？使用任何东西。移动应用程序？无论您今天的目标设备上使用什么，它都适用于设备的整个生命周期（操作系统）等。为大型平台提供支持的后端 API？可以（由您以外的人）维护 3-5 年的东西。物联网固件将在工业系统中保留 20 年？一些已经建立的东西，并且得到了很多其他人的支持，他们可以长期修复它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Svoka:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我使用 C++ 和 C 已经有几十年了，并且为了乐趣而进行了大量的嵌入式编程。大约半年前我完全转向 Rust。摩擦消失得很快。有趣的是，现在看看我的旧 C 代码，我发现了很多我之前忽视的陷阱，只是因为我开始使用 Rust。&lt;p&gt;我的意思是，Rust 确实有一个学习曲线，但在我看来，它的复杂性被过分夸大了。是的，你必须学习一些新东西，但这怎么会是一个问题呢？&lt;p&gt;我不明白为什么选择语言，因为它看起来很熟悉，而且你不必改变你的思维方式。对我来说，这基本上是 Zig 的一个问题——我可以做 Zig 在 C++ 中所做的一切，拥有数十年的库和基础设施，而 Rust 实际上为最终产品做出了贡献。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jkelleyrtp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的意思是，你可以认为 Rust 不适合浏览器开发，但作为用 Rust 构建浏览器的人，我认为这很好。如果说有什么不同的话，那就是自从 Rust &lt;i&gt;被设计用来构建 Web 浏览器&lt;/i&gt;以来，Rust 在这个项目中确实表现出色。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;dioxuslabs&amp;#x2F;blitz" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;dioxuslabs&amp;#x2F;blitz&lt;/a&gt;&lt;p&gt;此外，我认为用一种新语言构建另一个新浏览器有点荒谬，因为有这么多令人惊叹的作品只是等待人们使用。快来贡献吧，我们已经走得更远了:)&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;DioxusLabs&amp;#x2F;blitz&amp;#x2F;pull&amp;#x2F;292" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;DioxusLabs&amp;#x2F;闪电战&amp;#x2F;拉&amp;#x2F;292&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;loxodrome:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我只想要 Zig 的课程，Zig++。 :(&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drnick1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一次又一次地看到这样的情况：首先抱怨 C&amp;#x2F;C++ 太复杂或缺乏 X 功能，提出了新语言，然后人们迟早会发现它不够快、表达力不够、不够灵活，或者强加了一种非标准的做事方式（Rust），然后回到 C&amp;#x2F;C++，几年后循环重复。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;motoboi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我开始形成 Zig 社区的形象：喜欢写作和推理的人、漂亮的排版、受电子游戏启发的视觉效果。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gorjusborg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;几年前，当我第一次接触 Rust 时，我很喜欢它。它做了很多正确的事情。但与此同时，我知道它有可能在两个相反的方向上出错：&lt;p&gt;1。开发人员不愿承担允许无 GC 内存管理所需的认知负载&lt;p&gt;2。开发人员将承担这种认知负荷的能力视为荣誉徽章，尽管这不符合他们的最佳利益&lt;p&gt;我最终决定停止使用 Rust 进行开发，尽管它很受欢迎。它的创建者成功实现了这一目标，这真的很酷。考虑到它问世时的不同之处，这是一项相当大的成就。我认为，如果我必须实现一个关键库，我会考虑使用 Rust，但作为一种通用编程语言，我想要一些能够让我将精神集中在实际问题领域的复杂性上的东西，而且我觉得用 Rust 来做到这一点往往太困难了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mustpax:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得我错过了一些东西。在使用 Zig 构建可公开访问的 Web 服务时，人们如何证明手动内存管理的安全隐患？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;observationist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望看到 Lightpanda 为本地私人人工智能提供支持，并在后期呈现内容的设置。您可以在入口处过滤掉所有垃圾，而不是进行所有插件、扩展、附加组件、DNS 和 whackamole 军备竞赛。&lt;p&gt;人工智能研究人员需要加快速度并发明下一个重大范式转变，以便手机上的人工智能与 SoTA 机器人一样好，这样我们就可以保持领先地位。&lt;p&gt;很棒的软件 - 我一直想构建一个爬虫，而这确实成功了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lvl155:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这实际上是对 Zig 的一个很好的总结。我同意作者的观点：我太老太笨了，无法正确使用 Rust。每当我看到像 Gjengset 这样的人写 Ru​​st 时，我就会意识到我做错了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;websiteapi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有没有一个项目因其编程语言而变得流行和成功？对于最终用户来说，如果它运行良好的话，它使用什么语言真的很重要吗？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://lightpanda.io/blog/posts/why-we-built-lightpanda-in-zig</guid>
+      <pubDate>Fri, 05 Dec 2025 18:29:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46165249</comments>
     </item>
     <item>
-      <title>Jony Ive 的 OpenAI 设备被禁止使用“Io”名称</title>
-      <link>https://www.macrumors.com/2025/12/05/openai-device-barred-from-io-name/</link>
-      <description>&lt;p&gt;据彭博社法律报道，上诉法院维持了一项临时限制令，禁止 OpenAI 和 Jony Ive 的新硬件企业将“io”名称用于与人工智能音频初创公司 iyO 计划的产品类似的产品。不久之后，OpenAI 删除了其 io 品牌。 OpenAI 的首款硬件设备预计将于明年推出。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Jony Ive's OpenAI Device Barred from Using 'Io' Name&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46163804"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.macrumors.com/2025/12/05/openai-device-barred-from-io-name/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TZubiri:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;可笑的是，当然 io 是输入输出的标准，甚至是开关甚至 1 和 0 的标准。&lt;p&gt;希望这能得到上诉，但对于该产品的发布来说可能为时已晚&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arach:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你被带走了吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dmix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我没听说过 iyO，他们的产品看起来很有趣。似乎是 Alexa 类型的产品，通过 Airpod 风格的耳机？ &lt;a href="https:&amp;#x2F;&amp;#x2F;www.iyo.ai&amp;#x2F;iyo-one" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.iyo.ai&amp;#x2F;iyo-one&lt;/a&gt;&lt;p&gt;还有某种“魔杖”可以“看到你周围的区域”，也许是雷达或成像？  &lt;a href="https:&amp;#x2F;&amp;#x2F;www.iyo.ai&amp;#x2F;iyo-wand" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.iyo.ai&amp;#x2F;iyo-wand&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;inopinatus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;现在扭转方向并称其为“Oi”还为时不晚。  还能有更完美的言语激活吗？他们可以让杰森·斯坦森或维尼·琼斯来做促销。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;johnwheeler:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我经常听说的 OpenAI 公司是一家什么公司？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rvz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;复仇是一道最好冷着吃的菜。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andrewmcwatters:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;无论如何，这是一个毫无创意的名字。这就像您从硬件工程 GitHub 存储库中读到的内容一样，其中作者并没有意识到知识产权的可搜索性。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;snafeau:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道他们为什么要尝试为硬件建立单独的品牌。考虑到 OpenAI 目前最强的优势是 ChatGPT 品牌，而且他们无论如何都在削减其他产品的投入，使用 ChatGPT 品牌不是更有意义吗？&lt;p&gt;考虑到 OpenAI 上有 300 多个名为 Codex 的产品，他们似乎不存在重复使用相同名称的问题。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.macrumors.com/2025/12/05/openai-device-barred-from-io-name/</guid>
-      <pubDate>Fri, 05 Dec 2025 16:48:44 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46163804</comments>
-    </item>
-    <item>
-      <title>WikiFlix：维基共享资源上托管的完整电影</title>
-      <link>https://commons.wikimedia.org/wiki/User:Spinster/WikiFlix</link>
-      <description>&lt;p&gt;茂瑙 美国 街头天使 1928 102 分钟剧情片 爱情片 无声片 导演：Frank Borzage 美国 Coquette 1929 76 分钟剧情片 导演：Sam Taylor H.弗莱厄蒂 美国 永别了，武器 1932 年 88 分钟浪漫电影 戏剧电影 战争电影 改编自小说 导演：弗兰克·博尔扎奇 美国奥斯卡最佳导演奖电影 导演：约翰·福特 格雷格·托兰 美国 《命运的种子》 1946 年 20 分钟纪录片宣传片 导演：大卫·米勒 美国奥斯卡最佳纪录片奖瓦尔拉莫夫伊利亚·科帕林 苏联 《战斗女士》 1944 年 61 分钟纪录片宣传片 导演：爱德华·史泰钦 威廉·惠勒 美国 《真正的荣耀》 1945 年 87 分钟纪录片宣传片 导演：卡罗尔·里德 加森·卡宁 英国 美国奥斯卡最佳影片奖[编辑] 19271929-01-101927-05-191927-08-121929-01-05 141 分钟战争电影浪漫电影戏剧电影无声电影动作电影导演：威廉·A·威尔曼哈利·达巴迪·达拉斯特美国百老汇旋律 19291930-01-30 110 分钟音乐电影浪漫电影导演：哈里·博蒙特 美国奥斯卡最佳故事片[编辑] 黑夜传说 19271927-08-201927-10-29 105 分钟犯罪片无声电影剧情片 导演：约瑟夫·冯·斯滕伯格 美国 一个明星的诞生 1937 111 分钟剧情片浪漫片音乐片 导演：William A.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; WikiFlix: Full Movies Hosted on Wikimedia Commons&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46164952"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://commons.wikimedia.org/wiki/User:Spinster/WikiFlix'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>法官暗示软件自由保护协会在 Vizio GPL 案件中获胜</title>
+      <link>https://fossforce.com/2025/12/judge-signals-win-for-software-freedom-conservancy-in-vizio-gpl-case/</link>
+      <description>&lt;p&gt;1、不提供源代码。但情况并非总是如此。同年晚些时候，SFLC 以未能提供源代码为由，对包括 Xterasys 和 Verizon 在内的其他供应商提起了更多与 BusyBox 相关的 GPL 诉讼。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Judge Signals Win for Software Freedom Conservancy in Vizio GPL Case&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46166994"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://fossforce.com/2025/12/judge-signals-win-for-software-freedom-conservancy-in-vizio-gpl-case/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;starkparker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该项目很简洁，但 HN 可能对其实验性前端更感兴趣，网址为 &lt;a href="https:&amp;#x2F;&amp;#x2F;wikiflix.toolforge.org&amp;#x2F;#&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;wikiflix.toolforge.org&amp;#x2F;#&amp;#x2F;&lt;/a&gt;，它作为链接隐藏在页面上。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://commons.wikimedia.org/wiki/User:Spinster/WikiFlix</guid>
-      <pubDate>Fri, 05 Dec 2025 18:08:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46164952</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gwd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;证监会公告：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;sfconservancy.org&amp;#x2F;news&amp;#x2F;2025&amp;#x2F;dec&amp;#x2F;04&amp;#x2F;tentative-vizio-ruling-in-favor-of-sfc&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;sfconservancy.org&amp;#x2F;news&amp;#x2F;2025&amp;#x2F;dec&amp;#x2F;04&amp;#x2F;tentative-vizio-r...&lt;/a&gt;&lt;p&gt;显然，实际案例将在太平洋时间上午 10 点开始的会议上进行辩论，其案例为第 11 号。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://fossforce.com/2025/12/judge-signals-win-for-software-freedom-conservancy-in-vizio-gpl-case/</guid>
+      <pubDate>Fri, 05 Dec 2025 20:42:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46166994</comments>
     </item>
     <item>
-      <title>Show HN：Pbnj – 一个最小的、自托管的 Pastebin，您可以在 60 秒内部署</title>
-      <link>https://pbnj.sh/</link>
-      <description>&lt;p&gt;pbnj 与您的配置：``PBNJ_HOST=ht 04_cli。 md 12 小时前 # 欢迎来到 pbnj pbnj 是一个简单、最小的自托管 Pastebin 解决方案。 md 11 小时前 # 配置 pbnj 是通过单个`pbnj.config 配置的。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Pbnj – A minimal, self-hosted pastebin you can deploy in 60 seconds&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46160824"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://pbnj.sh/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Tt6000:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嘿，首先恭喜你，它真的很好，很简约，我喜欢它！&lt;p&gt;但是 Cloudflare 不是自托管！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;davidcollantes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;HOWTO 没有 CloudFlare，可能吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;indigodaddy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这确实做得很好，但我对（大多数）自托管垃圾箱的问题是任何人都可以使用它，而且我不想对可能显示的内容负责。&lt;p&gt;这非常整洁，几乎可以用作博客替代品（当然，如果我可以阻止其他人使用它&amp;#x2F;发布到它:)）&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://pbnj.sh/</guid>
-      <pubDate>Fri, 05 Dec 2025 13:13:03 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46160824</comments>
-    </item>
-    <item>
-      <title>“鳄鱼恶魔岛”的被拘留者面临“令人痛心的侵犯人权行为”</title>
-      <link>https://www.theguardian.com/us-news/2025/dec/04/alligator-alcatraz-human-right-violations-amnesty-report</link>
-      <description>&lt;p&gt;2025 年 7 月 4 日，佛罗里达州南部移民监狱“鳄鱼恶魔岛”的鸟瞰图。据报道，人们在笼子外面时总是戴着脚镣。该中心是人权观察组织 7 月份另一份报告的主要主题，该报告称，被拘留者的双手被反绑在背后，被迫跪下吃泡沫塑料盘子里的食物，“像狗一样”。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Detainees at 'Alligator Alcatraz' facing 'harrowing human right violations'&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46164614"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.theguardian.com/us-news/2025/dec/04/alligator-alcatraz-human-right-violations-amnesty-report'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>显示 HN：SerpApi MCP 服务器</title>
+      <link>https://github.com/serpapi/serpapi-mcp</link>
+      <description>&lt;p&gt;q（必填）：搜索查询参数。引擎：搜索引擎（默认值：“google_light”）参数。请参阅 SerpApi API 参考上的其他参数 示例： {"name": "search", "arguments": {"params": {"q": "coffeeshops", "location": "Austin, TX"}}} {"name": "search", "arguments": {"params": {"q": "weather in London"}}} {"name": "search", "arguments": {"params": {"q": "AAPL stock"}}} {"name": "search", "arguments": {"params": {"q": "news"}, "mode": "compact"}} {"name": "search", "arguments": {"params": {"q": "详细搜索"}, "mode": "complete"}} 支持的引擎: Google, Bing, Yahoo, DuckDuckGo、YouTube、eBay 等。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: SerpApi MCP Server&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46165251"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/serpapi/serpapi-mcp'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;postflopclarity:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;任何人为此找借口或假装“一切如常”是邪恶的。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.theguardian.com/us-news/2025/dec/04/alligator-alcatraz-human-right-violations-amnesty-report</guid>
-      <pubDate>Fri, 05 Dec 2025 17:44:28 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46164614</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;icyfox:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很久以前就通过 API 使用了 Serp。在我看来，该公司最有趣的部分是他们对不同计划的法律辩护：&lt;p&gt;&lt;pre&gt;&lt;code&gt; 生产 - 150 美元
+  15,000 次搜索月
+  美国法律之盾
+&lt;/code&gt;&lt;/pre&gt;
+即。 “我们的美国法律盾保护您根据第一修正案抓取和解析公共搜索引擎数据的权利。我们承担大多数定期计划中客户的抓取和解析责任，除非您的使用是非法的。”&lt;p&gt;我想至少有部分公司只是为了这种责任盾而使用它们。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/serpapi/serpapi-mcp</guid>
+      <pubDate>Fri, 05 Dec 2025 18:30:06 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46165251</comments>
+    </item>
+    <item>
+      <title>移动 GPU 和基于图块的渲染</title>
+      <link>https://hyeondg.org/gpu/tbr</link>
+      <description>&lt;p&gt;虽然桌面 GPU 传统上采用立即模式渲染 (IMR)，但移动 GPU 通过基于图块的延迟渲染 (TBDR) 开创了一种根本不同的方法。这个过程称为“合并”，确保后续渲染仅处理实际对每个图块有贡献的几何图形。这消除了 IMR 系统特有的恒定内存流量。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Mobile GPUs and Tile-Based Rendering&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46163659"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://hyeondg.org/gpu/tbr'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jimrandomh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是人工智能编写的别人博客文章的摘要，它没有引用。这句话是一个赠品：“Asahi Linux 博客文章揭示了在 AGX 硬件上实现样本着色的复杂性。”没有其他提及朝日的信息，也没有链接。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://hyeondg.org/gpu/tbr</guid>
+      <pubDate>Fri, 05 Dec 2025 16:38:01 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46163659</comments>
     </item>
   </channel>
 </rss>
