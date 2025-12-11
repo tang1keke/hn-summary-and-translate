@@ -6,23 +6,66 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Thu, 11 Dec 2025 09:30:08 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Dec 2025 12:54:31 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>The Cost of a Closure in C</title>
-      <link>https://thephd.dev/the-cost-of-a-closure-in-c-c2y</link>
-      <description>&lt;p&gt;Closures in this instance are programming language constructs that includes data alongside instructions that are not directly related to their input (arguments) and their results (return values). , the set of closures that do not include this extra, spicy data that comes from places outside of arguments and returns). It becomes more pronounced when you want to do things with function and data that are a bit more complex, such as Donald Knuth’s “Man-or-Boy” test code.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46228597"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://thephd.dev/the-cost-of-a-closure-in-c-c2y'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>A “frozen” dictionary for Python</title>
+      <link>https://lwn.net/SubscriberLink/1047238/25c270b077849dc0/</link>
+      <description>&lt;p&gt;frozendict The idea is fairly straightforward: add frozendict as a new immutable type to the language's builtins module. Iteration over a frozendict works as expected; the type implements the collections. freeze() method that would essentially just change the type of a dict object to frozendict.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46229467"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://lwn.net/SubscriberLink/1047238/25c270b077849dc0/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zzzeek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;SQLAlchemy has its own frozendict which we&amp;#x27;ve had in use for many years, we have it as a pretty well performing cython implementation these days, and I use it ubiquitously.    Would be a very welcome addition to the stdlib.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pansa2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I wonder whether Raymond Hettinger has an opinion on this PEP. A long time ago, he wrote: &amp;quot;freezing dicts is a can of worms and not especially useful&amp;quot;.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;mail.python.org&amp;#x2F;pipermail&amp;#x2F;python-dev&amp;#x2F;2006-February&amp;#x2F;060793.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;mail.python.org&amp;#x2F;pipermail&amp;#x2F;python-dev&amp;#x2F;2006-February&amp;#x2F;0...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sundarurfriend:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Can someone ELI5 the core difference between this and named tuples, for someone who is not deep into Python? ChatGPT&amp;#x27;s answer boiled down to: unordered (this) vs ordered (NTs), &amp;quot;arbitrary keys, decided at runtime&amp;quot; vs &amp;quot;fixed set of fields decided at definition time&amp;quot; (can&amp;#x27;t an NT&amp;#x27;s keys also be interpolated from runtime values?), and a different API (`.keys()`, `.items()`), etc (I&amp;#x27;m just giving this as context btw, no idea if there&amp;#x27;s inaccuracies in these).&lt;p&gt;So could this also have been approached from the other side, as in making unordered NamedTuples with support for the Mapping API? The line between dictionaries and named tuples and structs (across various languages) has always seemed a bit blurry to me, so I&amp;#x27;m trying to get a better picture of it all through this.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drhagen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Great! Now make `set` have a stable order and we&amp;#x27;re done here.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drhagen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;If this gets wide enough use, they could add an optimization for code like this:&lt;p&gt;&lt;pre&gt;&lt;code&gt;    n = 1000
+    a = {}
+    for i in range(n):
+        a[i] = str(i)
+    a = frozendict(a)  # O(n) operation can be turned to O(1)
+&lt;/code&gt;&lt;/pre&gt;
+It is relatively easy for the JIT to detect the `frozendict` constructor, the `dict` input, and the single reference immediately overwritten. Not sure if this would ever be worth it.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;polyrand:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;A frozen dictionary would be very welcome. You can already do something similar using MappingProxyType [0]&lt;p&gt;&lt;pre&gt;&lt;code&gt;  from types import MappingProxyType
+  
+  d = {}
+  
+  d[&amp;quot;a&amp;quot;] = 1
+  d[&amp;quot;b&amp;quot;] = 2
+  
+  print(d)
+  
+  frozen = MappingProxyType(d)
+  
+  print(frozen[&amp;quot;a&amp;quot;])
+  
+  # Error:
+  frozen[&amp;quot;b&amp;quot;] = &amp;quot;new&amp;quot;
+
+&lt;/code&gt;&lt;/pre&gt;
+[0]: &lt;a href="https:&amp;#x2F;&amp;#x2F;docs.python.org&amp;#x2F;3&amp;#x2F;library&amp;#x2F;types.html#types.MappingProxyType" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;docs.python.org&amp;#x2F;3&amp;#x2F;library&amp;#x2F;types.html#types.MappingPr...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;code_biologist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Shoutout to pyrsistent, a personal favorite library for whenever I need to use lists, sets, or dicts as dict keys, or make sets of such items: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tobgu&amp;#x2F;pyrsistent" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tobgu&amp;#x2F;pyrsistent&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;codethief:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Next step: Auto-inferring the correct (most narrow) TypedDict type from a frozendict. (Think `const foo = { … } as const` in TypeScript.) I miss this TS feature in Python on the daily.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://lwn.net/SubscriberLink/1047238/25c270b077849dc0/</guid>
+      <pubDate>Thu, 11 Dec 2025 09:51:47 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46229467</comments>
+    </item>
+    <item>
+      <title>Meta shuts down global accounts linked to abortion advice and queer content</title>
+      <link>https://www.theguardian.com/global-development/2025/dec/11/meta-shuts-down-global-accounts-linked-to-abortion-advice-and-queer-content</link>
+      <description>&lt;p&gt;Campaigners have reported increasing restrictions on many abortion and reproductive health accounts by Meta apps including Facebook and Instagram, but Meta denied any censorship. Photograph: Anna Barclay/Getty ImagesView image in fullscreenCampaigners have reported increasing restrictions on many abortion and reproductive health accounts by Meta apps including Facebook and Instagram, but Meta denied any censorship. Meta said it did not send this message.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46230072"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.theguardian.com/global-development/2025/dec/11/meta-shuts-down-global-accounts-linked-to-abortion-advice-and-queer-content'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mgaunard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I feel the results say more about the testing methodology and inlining settings than anything else.&lt;p&gt;Practically speaking all lambda options except for the one involving allocation (why would you even do that) are equivalent modulo inlining.&lt;p&gt;In particular, the caveat with the type erasure&amp;#x2F;helper variants is precisely that it prevents inlining, but given everything is in the same translation unit and isn&amp;#x27;t runtime-driven, it&amp;#x27;s still possible for the compiler to devirtualize.&lt;p&gt;I think it would be more interesting to make measurements when controlling explicitly whether inlining happens or the function type can be deduced statically.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RossBencina:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Good to see Borland&amp;#x27;s __closure extension got a mention.&lt;p&gt;Something I&amp;#x27;ve been thinking about lately is having a &amp;quot;state&amp;quot; keyword for declaring variables in a &amp;quot;stateful&amp;quot; function. This works just like &amp;quot;static&amp;quot; except instead of having a single global instance of each variable the variables are added to an automatically defined struct, whose type is available using &amp;quot;statetype(foo)&amp;quot; or some other mechanism, then you can invoke foo as with an instance of the state (in C this would be an explicit first parameter also marked with the &amp;quot;state&amp;quot; parameter.) Stateful functions are colored in the sense that if you invoke a nested stateful function its state gets added to the caller&amp;#x27;s state. This probably won&amp;#x27;t fly with separate compilation though.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ddtaylor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I actually enjoy trampoline functions in C a bit and it&amp;#x27;s one of the GNU extensions I use sometimes.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://thephd.dev/the-cost-of-a-closure-in-c-c2y</guid>
-      <pubDate>Thu, 11 Dec 2025 07:21:33 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46228597</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elif:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I think the headline is implying that they were targeted for their ideological positions.&lt;p&gt;However the very first line reveals what the actual reason probably was: &amp;quot;posts showing non-explicit nudity triggering warnings&amp;quot;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spicyusername:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I always wonder, when it&amp;#x27;s so clear some corporate decision will cause social harm, what the story the perpetrators tell themselves is to avoid feeling guilt or responsibility.&lt;p&gt;Nobody believes themselves to be the bad guy, but many people frequently make decisions that cause harm.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fhdhdbdb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Meta is trying to position themselves to receive a taxpayer AI bailout.  Don&amp;#x27;t let them get away with it.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.theguardian.com/global-development/2025/dec/11/meta-shuts-down-global-accounts-linked-to-abortion-advice-and-queer-content</guid>
+      <pubDate>Thu, 11 Dec 2025 11:26:45 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46230072</comments>
     </item>
   </channel>
 </rss>

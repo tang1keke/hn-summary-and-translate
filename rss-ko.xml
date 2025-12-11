@@ -6,24 +6,68 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Korean</description>
     <language>ko</language>
-    <lastBuildDate>Thu, 11 Dec 2025 09:30:08 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Dec 2025 12:54:31 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ko.xml"/>
     <item>
-      <title>C에서의 클로저 비용</title>
-      <link>https://thephd.dev/the-cost-of-a-closure-in-c-c2y</link>
-      <description>&lt;p&gt;이 경우 클로저는 입력(인수) 및 결과(반환 값)와 직접적으로 관련되지 않은 명령과 함께 데이터를 포함하는 프로그래밍 언어 구성입니다. , 인수 및 반환 외부의 장소에서 오는 추가적이고 매운 데이터를 포함하지 않는 클로저 세트). Donald Knuth의 "Man-or-Boy" 테스트 코드와 같이 좀 더 복잡한 기능과 데이터로 작업을 수행하려는 경우에는 더욱 두드러집니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Cost of a Closure in C&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46228597"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://thephd.dev/the-cost-of-a-closure-in-c-c2y'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Python용 "냉동" 사전</title>
+      <link>https://lwn.net/SubscriberLink/1047238/25c270b077849dc0/</link>
+      <description>&lt;p&gt;frozendict 아이디어는 매우 간단합니다. Frozendict를 언어의 내장 모듈에 새로운 불변 ​​유형으로 추가하는 것입니다. frozendict에 대한 반복은 예상대로 작동합니다. 유형은 컬렉션을 구현합니다. 본질적으로 dict 객체의 유형을frozendict로 변경하는 동결() 메서드입니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A “frozen” dictionary for Python&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46229467"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://lwn.net/SubscriberLink/1047238/25c270b077849dc0/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zzzeek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;SQLAlchemy에는 우리가 수년 동안 사용해 온 자체frozendict가 있습니다. 요즘에는 꽤 잘 작동하는 Cython 구현으로 그것을 가지고 있으며 어디에서나 사용하고 있습니다.    stdlib에 추가되면 매우 환영받을 것입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pansa2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Raymond Hettinger가 이 PEP에 대해 의견을 가지고 있는지 궁금합니다. 오래 전에 그는 다음과 같이 썼습니다. "dicts를 동결하는 것은 웜 캔이며 특별히 유용하지 않습니다." rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;mail.python.org&amp;#x2F;pipermail&amp;#x2F;python-dev&amp;#x2F;2006-2월&amp;#x2F;0...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sundarurfriend:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Python에 깊이 관심이 없는 사람을 위해 누군가가 이것과 명명된 튜플의 핵심 차이점을 ELI5할 수 있습니까? ChatGPT의 답변은 다음과 같이 요약됩니다. 순서가 지정되지 않은(this) 대 순서가 지정된(NT), &amp;quot;임의의 키, 런타임에 결정됨&amp;quot; vs "정의 시 결정된 고정 필드 세트" (NT의 키도 런타임 값에서 보간할 수 없나요?) 및 다른 API(`.keys()`, `.items()`) 등(단순히 이것을 컨텍스트로 제공하고 있는데, 여기에 부정확성이 있는지는 모르겠습니다).&lt;p&gt;따라서 순서가 지정되지 않은 NamedTuples를 만드는 것처럼 다른 쪽에서도 접근했을 수 있습니까? 매핑 API를 지원합니까? 사전과 명명된 튜플 및 구조체(다양한 언어에서) 사이의 경계는 항상 나에게 약간 흐릿해 보였기 때문에 이 모든 것을 통해 더 나은 그림을 얻으려고 노력하고 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drhagen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;엄청난! 이제 'set'을 안정적인 순서로 만들면 여기서 끝입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drhagen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것이 충분히 널리 사용된다면 다음과 같은 코드에 대한 최적화를 추가할 수 있습니다:&lt;p&gt;&lt;pre&gt;&lt;code&gt; n = 1000
+    a = {}
+    범위(n)에 있는 i의 경우:
+        a[i] = str(i)
+    a = Frozendict(a) # O(n) 연산은 O(1)로 바뀔 수 있습니다.
+&lt;/code&gt;&lt;/pre&gt;
+It is relatively easy for the JIT to detect the `frozendict` constructor, the `dict` input, and the single reference immediately overwritten. 이것이 그만한 가치가 있는지 확실하지 않습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;polyrand:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;냉동 사전이라면 매우 환영받을 것입니다. MappingProxyType [0]&lt;p&gt;&lt;pre&gt;&lt;code&gt; from type import MappingProxyType을 사용하면 이미 유사한 작업을 수행할 수 있습니다.
+  
+  d = {}
+  
+  d["a"] = 1
+  d["b"] = 2
+  
+  인쇄(d)
+  
+  고정 = MappingProxyType(d)
+  
+  print(frozen["a"])
+  
+  # 오류:
+  냉동["b"] = "신규"
+
+&lt;/code&gt;&lt;/pre&gt;
+[0]: &lt;a href="https:&amp;#x2F;&amp;#x2F;docs.python.org&amp;#x2F;3&amp;#x2F;library&amp;#x2F;types.html#types.MappingProxyType" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;docs.python.org&amp;#x2F;3&amp;#x2F;라이브러리&amp;#x2F;types.html#types.MappingPr...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;code_biologist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;목록, 세트 또는 딕셔너리를 dict 키로 사용하거나 그러한 항목 세트를 만들어야 할 때마다 개인적으로 좋아하는 라이브러리인 pyrsist를 소개합니다. rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tobgu&amp;#x2F;pyrlent&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;codethief:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;다음 단계:frozendict에서 올바른(가장 좁은) TypedDict 유형을 자동 추론합니다. (TypeScript에서 `const foo = { … } as const`라고 생각하세요.) 저는 Python의 이 TS 기능을 매일 그리워합니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://lwn.net/SubscriberLink/1047238/25c270b077849dc0/</guid>
+      <pubDate>Thu, 11 Dec 2025 09:51:47 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46229467</comments>
+    </item>
+    <item>
+      <title>Meta는 낙태 조언 및 퀴어 콘텐츠와 연결된 글로벌 계정을 폐쇄합니다.</title>
+      <link>https://www.theguardian.com/global-development/2025/dec/11/meta-shuts-down-global-accounts-linked-to-abortion-advice-and-queer-content</link>
+      <description>&lt;p&gt;운동가들은 Facebook과 Instagram을 포함한 Meta 앱의 많은 낙태 및 생식 건강 계정에 대한 제한이 증가하고 있다고 보고했지만 Meta는 어떠한 검열도 거부했습니다. 사진: Anna Barclay/Getty Images전체 화면에서 이미지 보기 캠페인 참가자들은 Facebook 및 Instagram을 포함한 Meta 앱의 많은 낙태 및 생식 건강 계정에 대한 제한이 증가하고 있다고 보고했지만 Meta는 어떠한 검열도 거부했습니다. 메타는 이 메시지를 보내지 않았다고 말했습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Meta shuts down global accounts linked to abortion advice and queer content&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46230072"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.theguardian.com/global-development/2025/dec/11/meta-shuts-down-global-accounts-linked-to-abortion-advice-and-queer-content'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mgaunard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;결과는 다른 것보다 테스트 방법론과 인라인 설정에 대해 더 많은 것을 말해 줍니다.&lt;p&gt;실질적으로 말하면 할당과 관련된 옵션(왜 그런 일을 하려는가)을 제외한 모든 람다 옵션은 동등한 모듈로 인라인입니다.&lt;p&gt;특히 유형 삭제 도우미 변형에 대한 주의 사항은 인라인을 방지한다는 것입니다. 그러나 모든 것이 동일한 변환 단위에 있고 런타임 기반이 아니라는 점을 고려하면 이는 컴파일러가 가상화를 해제하는 것은 여전히 가능합니다.&lt;p&gt;인라인이 발생하는지 또는 함수 유형이 정적으로 추론될 수 있는지 명시적으로 제어할 때 측정을 수행하는 것이 더 흥미로울 것이라고 생각합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RossBencina:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Borland의 __closure 확장이 언급된 것을 보니 반갑습니다.&lt;p&gt;최근 제가 생각하고 있는 것은 "상태" 확장이 있다는 것입니다. "상태 저장"에서 변수를 선언하기 위한 키워드 기능. 이는 &amp;quot;정적&amp;quot;과 동일하게 작동합니다. 단, 각 변수의 단일 전역 인스턴스를 갖는 대신 변수는 "statetype(foo)"를 사용하여 유형을 사용할 수 있는 자동으로 정의된 구조체에 추가됩니다. 또는 다른 메커니즘을 사용하면 상태 인스턴스와 마찬가지로 foo를 호출할 수 있습니다(C에서는 이는 "state" 매개변수로 표시된 명시적인 첫 번째 매개변수입니다.) 상태 저장 함수는 중첩된 상태 저장 함수를 호출하면 해당 상태가 호출자의 상태에 추가된다는 점에서 색상이 지정됩니다. 하지만 이것은 아마도 별도의 컴파일로는 작동하지 않을 것입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ddtaylor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 실제로 C의 트램폴린 기능을 조금 좋아하며 가끔 사용하는 GNU 확장 기능 중 하나입니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://thephd.dev/the-cost-of-a-closure-in-c-c2y</guid>
-      <pubDate>Thu, 11 Dec 2025 07:21:33 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46228597</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elif:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;헤드라인은 그들이 자신의 이념적 입장을 표적으로 삼았다는 것을 암시하는 것 같습니다.&lt;p&gt;그러나 첫 번째 줄은 아마도 실제 이유가 무엇이었을지 드러냅니다. "경고를 유발하는 노골적이지 않은 과도한 노출을 보여주는 게시물"&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spicyusername:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;일부 기업의 결정이 사회적 해악을 초래할 것이라는 것이 너무나 분명한데도 가해자가 스스로에게 말하는 것은 죄책감이나 책임감을 피하기 위한 것이 아닐까 하는 생각이 듭니다.&lt;p&gt;자신이 나쁜 사람이라고 생각하는 사람은 없지만, 많은 사람들이 종종 해를 끼치는 결정을 내립니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fhdhdbdb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Meta는 납세자 AI 구제금융을 받을 수 있도록 노력하고 있습니다.  그들이 도망가도록 놔두지 마십시오.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.theguardian.com/global-development/2025/dec/11/meta-shuts-down-global-accounts-linked-to-abortion-advice-and-queer-content</guid>
+      <pubDate>Thu, 11 Dec 2025 11:26:45 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46230072</comments>
     </item>
   </channel>
 </rss>
