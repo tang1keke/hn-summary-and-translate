@@ -6,66 +6,80 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Thu, 11 Dec 2025 12:54:31 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Dec 2025 15:32:08 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>A “frozen” dictionary for Python</title>
-      <link>https://lwn.net/SubscriberLink/1047238/25c270b077849dc0/</link>
-      <description>&lt;p&gt;frozendict The idea is fairly straightforward: add frozendict as a new immutable type to the language's builtins module. Iteration over a frozendict works as expected; the type implements the collections. freeze() method that would essentially just change the type of a dict object to frozendict.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46229467"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://lwn.net/SubscriberLink/1047238/25c270b077849dc0/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>An Orbital House of Cards: Frequent Megaconstellation Close Conjunctions</title>
+      <link>https://arxiv.org/abs/2512.09643</link>
+      <description>&lt;p&gt;) Connected Papers Toggle Connected Papers (What is Connected Papers. ) Litmaps Toggle Litmaps (What is Litmaps. ) Links to Code Toggle Papers with Code (What is Papers with Code.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46232220"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arxiv.org/abs/2512.09643'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zzzeek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;SQLAlchemy has its own frozendict which we&amp;#x27;ve had in use for many years, we have it as a pretty well performing cython implementation these days, and I use it ubiquitously.    Would be a very welcome addition to the stdlib.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pansa2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I wonder whether Raymond Hettinger has an opinion on this PEP. A long time ago, he wrote: &amp;quot;freezing dicts is a can of worms and not especially useful&amp;quot;.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;mail.python.org&amp;#x2F;pipermail&amp;#x2F;python-dev&amp;#x2F;2006-February&amp;#x2F;060793.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;mail.python.org&amp;#x2F;pipermail&amp;#x2F;python-dev&amp;#x2F;2006-February&amp;#x2F;0...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sundarurfriend:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Can someone ELI5 the core difference between this and named tuples, for someone who is not deep into Python? ChatGPT&amp;#x27;s answer boiled down to: unordered (this) vs ordered (NTs), &amp;quot;arbitrary keys, decided at runtime&amp;quot; vs &amp;quot;fixed set of fields decided at definition time&amp;quot; (can&amp;#x27;t an NT&amp;#x27;s keys also be interpolated from runtime values?), and a different API (`.keys()`, `.items()`), etc (I&amp;#x27;m just giving this as context btw, no idea if there&amp;#x27;s inaccuracies in these).&lt;p&gt;So could this also have been approached from the other side, as in making unordered NamedTuples with support for the Mapping API? The line between dictionaries and named tuples and structs (across various languages) has always seemed a bit blurry to me, so I&amp;#x27;m trying to get a better picture of it all through this.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drhagen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Great! Now make `set` have a stable order and we&amp;#x27;re done here.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drhagen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;If this gets wide enough use, they could add an optimization for code like this:&lt;p&gt;&lt;pre&gt;&lt;code&gt;    n = 1000
-    a = {}
-    for i in range(n):
-        a[i] = str(i)
-    a = frozendict(a)  # O(n) operation can be turned to O(1)
-&lt;/code&gt;&lt;/pre&gt;
-It is relatively easy for the JIT to detect the `frozendict` constructor, the `dict` input, and the single reference immediately overwritten. Not sure if this would ever be worth it.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;polyrand:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;A frozen dictionary would be very welcome. You can already do something similar using MappingProxyType [0]&lt;p&gt;&lt;pre&gt;&lt;code&gt;  from types import MappingProxyType
-  
-  d = {}
-  
-  d[&amp;quot;a&amp;quot;] = 1
-  d[&amp;quot;b&amp;quot;] = 2
-  
-  print(d)
-  
-  frozen = MappingProxyType(d)
-  
-  print(frozen[&amp;quot;a&amp;quot;])
-  
-  # Error:
-  frozen[&amp;quot;b&amp;quot;] = &amp;quot;new&amp;quot;
-
-&lt;/code&gt;&lt;/pre&gt;
-[0]: &lt;a href="https:&amp;#x2F;&amp;#x2F;docs.python.org&amp;#x2F;3&amp;#x2F;library&amp;#x2F;types.html#types.MappingProxyType" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;docs.python.org&amp;#x2F;3&amp;#x2F;library&amp;#x2F;types.html#types.MappingPr...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;code_biologist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Shoutout to pyrsistent, a personal favorite library for whenever I need to use lists, sets, or dicts as dict keys, or make sets of such items: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tobgu&amp;#x2F;pyrsistent" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tobgu&amp;#x2F;pyrsistent&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;codethief:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Next step: Auto-inferring the correct (most narrow) TypedDict type from a frozendict. (Think `const foo = { … } as const` in TypeScript.) I miss this TS feature in Python on the daily.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://lwn.net/SubscriberLink/1047238/25c270b077849dc0/</guid>
-      <pubDate>Thu, 11 Dec 2025 09:51:47 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46229467</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TGower:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Dissapointing that the paper is full of simplifying, and seemingly unreasonable, assumptions instead of simulation based on the known orbital elements of all these tracked satellites. For example, collision cross section of 200 square meters when discussing starlink even though the satellites are about 4 x 3 meters. Assuming random distribution of trajectories. I&amp;#x27;m also unconvinced that &amp;quot;how fast would a collision occur if all the electronics got fried&amp;quot; is a useful metric, in that scenario I&amp;#x27;m much more worried about the situation on the ground and commercial avaition...&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arxiv.org/abs/2512.09643</guid>
+      <pubDate>Thu, 11 Dec 2025 15:01:44 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46232220</comments>
     </item>
     <item>
-      <title>Meta shuts down global accounts linked to abortion advice and queer content</title>
-      <link>https://www.theguardian.com/global-development/2025/dec/11/meta-shuts-down-global-accounts-linked-to-abortion-advice-and-queer-content</link>
-      <description>&lt;p&gt;Campaigners have reported increasing restrictions on many abortion and reproductive health accounts by Meta apps including Facebook and Instagram, but Meta denied any censorship. Photograph: Anna Barclay/Getty ImagesView image in fullscreenCampaigners have reported increasing restrictions on many abortion and reproductive health accounts by Meta apps including Facebook and Instagram, but Meta denied any censorship. Meta said it did not send this message.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46230072"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.theguardian.com/global-development/2025/dec/11/meta-shuts-down-global-accounts-linked-to-abortion-advice-and-queer-content'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Disney making $1B investment in OpenAI, will allow characters on Sora AI</title>
+      <link>https://www.cnbc.com/2025/12/11/disney-openai-sora-characters-video.html</link>
+      <description>&lt;p&gt;Key PointsDisney announced it will make a $1 billion equity investment in OpenAI. The companies said Sora and ChatGPT Image users will also be able to make AI content with Disney's copyrighted characters. As part of the agreement, Disney said it will receive warrants to purchase additional equity and will become a major OpenAI customer.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46231585"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.cnbc.com/2025/12/11/disney-openai-sora-characters-video.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elif:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I think the headline is implying that they were targeted for their ideological positions.&lt;p&gt;However the very first line reveals what the actual reason probably was: &amp;quot;posts showing non-explicit nudity triggering warnings&amp;quot;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spicyusername:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I always wonder, when it&amp;#x27;s so clear some corporate decision will cause social harm, what the story the perpetrators tell themselves is to avoid feeling guilt or responsibility.&lt;p&gt;Nobody believes themselves to be the bad guy, but many people frequently make decisions that cause harm.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fhdhdbdb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Meta is trying to position themselves to receive a taxpayer AI bailout.  Don&amp;#x27;t let them get away with it.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.theguardian.com/global-development/2025/dec/11/meta-shuts-down-global-accounts-linked-to-abortion-advice-and-queer-content</guid>
-      <pubDate>Thu, 11 Dec 2025 11:26:45 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46230072</comments>
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;seydor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Oh the memes&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MallocVoidstar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Related: &lt;a href="https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;business&amp;#x2F;disney-sends-cease-and-desist-letter-google-cnbc-reports-2025-12-11&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;business&amp;#x2F;disney-sends-cease-and-desi...&lt;/a&gt;&lt;p&gt;&amp;gt; Walt Disney has sent a cease-and-desist letter to Alphabet&amp;#x27;s Google, CNBC reported on Thursday.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dboreham:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Shouldn&amp;#x27;t OpenAI be paying Disney?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zorked:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;$1B, how many hours of runway does that buy.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tonyedgecombe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Surely OpenAI should be paying Disney for the rights to their content. What an upside down period we are living in.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dfedbeef:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Disney shareholders, feel free to make images of Iger, Mickey, and Br&amp;#x27;er Rabbit lighting piles on money on fire.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;solumunus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Oof.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fidotron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Is this their YouTube goes legit moment? i.e. Disney get paid (by indirect means so far) for characters on OpenAI but not (yet) Gemini?&lt;p&gt;If this includes exclusivity deals it could be big.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;giancarlostoro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This will not end well for Disney, there were certain historical characters removed from Sora 2 because people kept making racist videos that are hard to censor, and it became increasingly unhinged. This feels like another circular investment where Disney is hoping to make money back I&amp;#x27;m sure. On the other hand, assuming they do the freemium stuff, I look forward to making a few videos of my daughters favorite Disney princesses &amp;quot;talking&amp;quot; to her.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tiahura:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Iger and Altman on CNBC at 10:30.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.cnbc.com/2025/12/11/disney-openai-sora-characters-video.html</guid>
+      <pubDate>Thu, 11 Dec 2025 14:12:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46231585</comments>
+    </item>
+    <item>
+      <title>Craft software that makes people feel something</title>
+      <link>https://rapha.land/craft-software-that-makes-people-feel-something/</link>
+      <description>&lt;p&gt;I thought about writing something. That’s what people keep asking me. In that case, I don’t necessarily need to stop building Lego blocks, right.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46231274"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://rapha.land/craft-software-that-makes-people-feel-something/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ranger_danger:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Love the mouse cursor, it made me feel happy.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PTOB:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;In so far as it makes me feel the relief, awe, and pleasure of picking up a good tool, then by all means.&lt;p&gt;The mouse trail made me feel something else.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deadbabe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Dread is a feeling.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;beanjuiceII:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;rage after moving my mouse on that site...great work !&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PaulHoule:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Love how the mouse trail effect is using O(1) memory no matter how fast you move the mouse so it won&amp;#x27;t blow up your browser.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://rapha.land/craft-software-that-makes-people-feel-something/</guid>
+      <pubDate>Thu, 11 Dec 2025 13:45:08 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46231274</comments>
+    </item>
+    <item>
+      <title>Did that Colorado station sign say gas for only $1.69? Yes, it did</title>
+      <link>https://coloradosun.com/2025/12/11/colorado-gas-prices-falling-national-average/</link>
+      <description>&lt;p&gt;Colorado has it even better, according to AAA’s local price wizard Skyler McKinley. 69 a gallon, in fierce price fights with competitors across the street, McKinley said. Colorado prices are even lower.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46232222"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://coloradosun.com/2025/12/11/colorado-gas-prices-falling-national-average/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alephnerd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Additionally, ICE sales have started recovering over the past few years now that EV subsidizes have started being phased out in most markets [0].&lt;p&gt;I like EVs but I think that in most markets they&amp;#x27;re at the same point today that hybrid cars were in the 2010s - proven, but still a difficult financial sell in the short term due to high upfront costs for consumers.&lt;p&gt;[0] - &lt;a href="https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;business&amp;#x2F;energy&amp;#x2F;combustion-engine-cars-regain-popularity-worldwide-ey-says-2025-12-09&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;business&amp;#x2F;energy&amp;#x2F;combustion-engine-ca...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://coloradosun.com/2025/12/11/colorado-gas-prices-falling-national-average/</guid>
+      <pubDate>Thu, 11 Dec 2025 15:01:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46232222</comments>
+    </item>
+    <item>
+      <title>French supermarket's Christmas advert is worldwide hit (without AI) [video]</title>
+      <link>https://www.youtube.com/watch?v=Na9VmMNJvsA</link>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=Na9VmMNJvsA</guid>
+      <pubDate>Thu, 11 Dec 2025 13:35:55 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46231187</comments>
     </item>
   </channel>
 </rss>

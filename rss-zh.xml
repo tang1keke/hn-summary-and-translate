@@ -6,68 +6,84 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 11 Dec 2025 12:54:31 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Dec 2025 15:32:08 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Python 的“冻结”字典</title>
-      <link>https://lwn.net/SubscriberLink/1047238/25c270b077849dc0/</link>
-      <description>&lt;p&gt;freezedict 这个想法相当简单：将 freezedict 作为新的不可变类型添加到语言的内置模块中。对 freezedict 的迭代按预期工作；类型实现集合。 freeze() 方法本质上只是将 dict 对象的类型更改为 freezedict。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A “frozen” dictionary for Python&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46229467"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://lwn.net/SubscriberLink/1047238/25c270b077849dc0/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>轨道纸牌屋：频繁的巨型星座紧密连接</title>
+      <link>https://arxiv.org/abs/2512.09643</link>
+      <description>&lt;p&gt;) Connected Papers Toggle Connected Papers（什么是 Connected Papers。） Litmaps Toggle Litmaps（什么是 Litmaps。） 代码链接 Toggle Papers with Code（什么是 Papers with Code。）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; An Orbital House of Cards: Frequent Megaconstellation Close Conjunctions&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46232220"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arxiv.org/abs/2512.09643'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zzzeek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;SQLAlchemy 有自己的 freezedict，我们已经使用了很多年，现在我们将它作为一个性能良好的 cython 实现，我无处不在地使用它。    这将是一个非常受欢迎的标准库补充。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pansa2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道 Raymond Hettinger 对此 PEP 有何看法。很久以前，他写道：“冻结字典是一大堆蠕虫，而且不是特别有用”。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;mail.python.org&amp;#x2F;pipermail&amp;#x2F;python-dev&amp;#x2F;2006-February&amp;#x2F;060793.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;mail.python.org&amp;#x2F;pipermail&amp;#x2F;python-dev&amp;#x2F;2006-2 月&amp;#x2F;0...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sundarurfriend:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于不熟悉 Python 的人来说，有人可以 ELI5 了解它和命名元组之间的核心区别吗？ ChatGPT 的答案归结为：无序（this）与有序（NT），“任意键，在运行时决定”对比“在定义时决定的固定字段集” （NT 的键不能也从运行时值插值吗？），以及不同的 API（`.keys()`、`.items()`）等（顺便说一句，我只是将其作为上下文给出，不知道其中是否存在不准确之处）。支持地图API吗？字典与命名元组和结构（跨各种语言）之间的界限对我来说总是有点模糊，所以我试图通过这一切更好地了解它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drhagen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;伟大的！现在让“set”有一个稳定的顺序，我们就完成了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drhagen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果这得到足够广泛的使用，他们可以为代码添加优化，如下所示：&lt;p&gt;&lt;pre&gt;&lt;code&gt; n = 1000
-    一个={}
-    对于范围 (n) 内的 i：
-        a[i] = str(i)
-    a = freezedict(a) # O(n) 操作可以变成 O(1)
-&lt;/code&gt;&lt;/pre&gt;
-JIT 相对容易检测到“frozendict”构造函数、“dict”输入以及立即覆盖的单个引用。不确定这是否值得。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;polyrand:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一本冷冻词典将非常受欢迎。您已经可以使用 MappingProxyType [0]&lt;p&gt;&lt;pre&gt;&lt;code&gt; from types import MappingProxyType 执行类似的操作
-  
-  d = {}
-  
-  d[“a”] = 1
-  d[“b”] = 2
-  
-  打印（d）
-  
-  冻结 = MappingProxyType(d)
-  
-  打印（冻结[“a”]）
-  
-  # 错误：
-  冻结[“b”] =“新”
-
-&lt;/code&gt;&lt;/pre&gt;
-[0]: &lt;a href="https:&amp;#x2F;&amp;#x2F;docs.python.org&amp;#x2F;3&amp;#x2F;library&amp;#x2F;types.html#types.MappingProxyType" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;docs.python.org&amp;#x2F;3&amp;#x2F;library&amp;#x2F;types.html#types.MappingPr...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;code_biologist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;向 Pyrcient 致敬，这是我个人最喜欢的库，每当我需要使用列表、集合或字典作为字典键，或制作此类项目的集合时： rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tobgu&amp;#x2F;pyrcient&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;codethief:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;下一步：从 freezedict 自动推断正确的（最窄的）TypedDict 类型。 （将 TypeScript 中的 `const foo = { … } 视为 const`。）我每天都怀念 Python 中的这个 TS 功能。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://lwn.net/SubscriberLink/1047238/25c270b077849dc0/</guid>
-      <pubDate>Thu, 11 Dec 2025 09:51:47 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46229467</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TGower:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令人失望的是，该论文充满了简化且看似不合理的假设，而不是基于所有这些跟踪卫星的已知轨道要素进行模拟。例如，在讨论星链时，尽管卫星尺寸约为 4 x 3 米，但碰撞截面仍为 200 平方米。假设轨迹随机分布。我也不相信“如果所有电子设备都被烧毁，碰撞会发生多快”。是一个有用的指标，在​​这种情况下，我更担心地面和商业航空的情况......&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arxiv.org/abs/2512.09643</guid>
+      <pubDate>Thu, 11 Dec 2025 15:01:44 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46232220</comments>
     </item>
     <item>
-      <title>Meta 关闭与堕胎建议和酷儿内容相关的全球账户</title>
-      <link>https://www.theguardian.com/global-development/2025/dec/11/meta-shuts-down-global-accounts-linked-to-abortion-advice-and-queer-content</link>
-      <description>&lt;p&gt;活动人士报告称，Facebook 和 Instagram 等 Meta 应用程序对许多堕胎和生殖健康账户施加了越来越多的限制，但 Meta 否认有任何审查制度。照片：Anna Barclay/Getty Images 全屏查看图片 活动人士报告称，Facebook 和 Instagram 等 Meta 应用程序对许多堕胎和生殖健康账户施加了越来越多的限制，但 Meta 否认有任何审查制度。 Meta表示它没有发送此消息。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Meta shuts down global accounts linked to abortion advice and queer content&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46230072"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.theguardian.com/global-development/2025/dec/11/meta-shuts-down-global-accounts-linked-to-abortion-advice-and-queer-content'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>迪士尼向 OpenAI 投资 10 亿美元，将允许 Sora AI 上的角色</title>
+      <link>https://www.cnbc.com/2025/12/11/disney-openai-sora-characters-video.html</link>
+      <description>&lt;p&gt;Key Points迪士尼宣布将对OpenAI进行10亿美元股权投资。两家公司表示，Sora 和 ChatGPT Image 用户还将能够使用迪士尼受版权保护的角色制作人工智能内容。作为协议的一部分，迪士尼表示将获得购买额外股权的认股权证，并将成为 OpenAI 的主要客户。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Disney making $1B investment in OpenAI, will allow characters on Sora AI&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46231585"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.cnbc.com/2025/12/11/disney-openai-sora-characters-video.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elif:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为标题暗示他们因其意识形态立场而成为攻击目标。&lt;p&gt;然而，第一行揭示了真正的原因可能是：“显示非露骨裸体的帖子触发警告”。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spicyusername:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我总是想知道，当某些企业决策会造成社会危害如此明显时，肇事者告诉自己的故事是为了避免感到内疚或责任。&lt;p&gt;没有人相信自己是坏人，但许多人经常做出造成伤害的决定。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fhdhdbdb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Meta 正试图让自己接受纳税人的人工智能救助。  不要让他们得逞。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.theguardian.com/global-development/2025/dec/11/meta-shuts-down-global-accounts-linked-to-abortion-advice-and-queer-content</guid>
-      <pubDate>Thu, 11 Dec 2025 11:26:45 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46230072</comments>
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;seydor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哦，模因&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MallocVoidstar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;相关：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;business&amp;#x2F;disney-sends-cease-and-desist-letter-google-cnbc-reports-2025-12-11&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;business&amp;#x2F;disney-sends-cease-and-desi...&lt;/a&gt;&lt;p&gt;&amp;gt;据 CNBC 周四报道，华特迪士尼已向 Alphabet 旗下的谷歌发出了一封停止函。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dboreham:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;OpenAI 不应该向迪士尼付费吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zorked:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;$1B，可以购买多少小时的跑道。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tonyedgecombe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当然，OpenAI 应该向迪士尼支付其内容版权。我们生活在一个多么颠倒的时代。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dfedbeef:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;迪士尼股东们，请随意制作艾格、米奇和布尔兔的图像，点燃一堆堆的钱。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;solumunus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;钱币。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fidotron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是他们的 YouTube 上线的合法时刻吗？也就是说，迪士尼通过 OpenAI 上的角色获得报酬（到目前为止是通过间接方式），但尚未获得 Gemini 的报酬？&lt;p&gt;如果这包括排他性交易，那么规模可能会很大。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;giancarlostoro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这对迪士尼来说不会有好结局，《空空2》中删除了某些历史人物，因为人们不断制作难以审查的种族主义视频，迪士尼变得越来越精神错乱。我确信这感觉像是迪士尼希望收回资金的另一项循环投资。另一方面，假设他们做免费增值业务，我期待制作一些我女儿最喜欢的迪士尼公主“说话”的视频。给她。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tiahura:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;艾格和奥特曼于 10:30 接受 CNBC 采访。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.cnbc.com/2025/12/11/disney-openai-sora-characters-video.html</guid>
+      <pubDate>Thu, 11 Dec 2025 14:12:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46231585</comments>
+    </item>
+    <item>
+      <title>制作让人有感觉的软件</title>
+      <link>https://rapha.land/craft-software-that-makes-people-feel-something/</link>
+      <description>&lt;p&gt;我想写点什么。这就是人们一直问我的问题。在这种情况下，我不一定需要停止搭建乐高积木，对吧。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Craft software that makes people feel something&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46231274"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://rapha.land/craft-software-that-makes-people-feel-something/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ranger_danger:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;喜欢鼠标光标，它让我感到高兴。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PTOB:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就它让我感受到拿起一个好工具的解脱、敬畏和愉悦而言，无论如何。&lt;p&gt;老鼠的踪迹让我感受到了别的东西。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deadbabe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;恐惧是一种感觉。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;beanjuiceII:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在该网站上移动鼠标后愤怒......干得好！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PaulHoule:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;喜欢鼠标轨迹效果如何使用 O(1) 内存，无论您移动鼠标的速度有多快，它都不会炸毁您的浏览器。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://rapha.land/craft-software-that-makes-people-feel-something/</guid>
+      <pubDate>Thu, 11 Dec 2025 13:45:08 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46231274</comments>
+    </item>
+    <item>
+      <title>科罗拉多加油站的标志上写着汽油只需 1.69 美元吗？是的，确实如此</title>
+      <link>https://coloradosun.com/2025/12/11/colorado-gas-prices-falling-national-average/</link>
+      <description>&lt;p&gt;AAA 当地价格奇才 Skyler McKinley 表示，科罗拉多州的情况甚至更好。麦金利说，每加仑 69 美元，与街对面的竞争对手进行了激烈的价格战。科罗拉多州的价格甚至更低。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Did that Colorado station sign say gas for only $1.69? Yes, it did&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46232222"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://coloradosun.com/2025/12/11/colorado-gas-prices-falling-national-average/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alephnerd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;此外，由于大多数市场的电动汽车补贴已开始逐步取消，内燃机汽车的销量在过去几年中已开始复苏。&lt;p&gt;我喜欢电动汽车，但我认为在大多数市场中，它们目前与 2010 年代的混合动力汽车处于同一水平 - 事实证明，但由于消费者的前期成本较高，短期内仍难以实现财务销售。&lt;p&gt;[0] - &lt;a href="https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;商业&amp;#x2F;能源&amp;#x2F;combustion-engine-cars-regain-popularity-worldwide-ey-says-2025-12-09&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;business&amp;#x2F;energy&amp;#x2F;combustion-engine-ca...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://coloradosun.com/2025/12/11/colorado-gas-prices-falling-national-average/</guid>
+      <pubDate>Thu, 11 Dec 2025 15:01:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46232222</comments>
+    </item>
+    <item>
+      <title>法国超市的圣诞广告风靡全球（没有人工智能）[视频]</title>
+      <link>https://www.youtube.com/watch?v=Na9VmMNJvsA</link>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=Na9VmMNJvsA</guid>
+      <pubDate>Thu, 11 Dec 2025 13:35:55 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46231187</comments>
     </item>
   </channel>
 </rss>

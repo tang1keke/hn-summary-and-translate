@@ -6,68 +6,84 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Korean</description>
     <language>ko</language>
-    <lastBuildDate>Thu, 11 Dec 2025 12:54:31 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Dec 2025 15:32:08 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ko.xml"/>
     <item>
-      <title>Python용 "냉동" 사전</title>
-      <link>https://lwn.net/SubscriberLink/1047238/25c270b077849dc0/</link>
-      <description>&lt;p&gt;frozendict 아이디어는 매우 간단합니다. Frozendict를 언어의 내장 모듈에 새로운 불변 ​​유형으로 추가하는 것입니다. frozendict에 대한 반복은 예상대로 작동합니다. 유형은 컬렉션을 구현합니다. 본질적으로 dict 객체의 유형을frozendict로 변경하는 동결() 메서드입니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A “frozen” dictionary for Python&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46229467"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://lwn.net/SubscriberLink/1047238/25c270b077849dc0/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>카드의 궤도 하우스: 빈번한 거대 별자리 가까운 접속사</title>
+      <link>https://arxiv.org/abs/2512.09643</link>
+      <description>&lt;p&gt;) 연결된 문서 연결된 문서 토글(연결된 문서란 무엇입니까?) 리트맵 토글 리트맵(리트맵이란 무엇입니까?) 코드에 대한 링크 Toggle Papers with Code(페이퍼 위 코드란 무엇입니까?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; An Orbital House of Cards: Frequent Megaconstellation Close Conjunctions&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46232220"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arxiv.org/abs/2512.09643'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zzzeek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;SQLAlchemy에는 우리가 수년 동안 사용해 온 자체frozendict가 있습니다. 요즘에는 꽤 잘 작동하는 Cython 구현으로 그것을 가지고 있으며 어디에서나 사용하고 있습니다.    stdlib에 추가되면 매우 환영받을 것입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pansa2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Raymond Hettinger가 이 PEP에 대해 의견을 가지고 있는지 궁금합니다. 오래 전에 그는 다음과 같이 썼습니다. "dicts를 동결하는 것은 웜 캔이며 특별히 유용하지 않습니다." rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;mail.python.org&amp;#x2F;pipermail&amp;#x2F;python-dev&amp;#x2F;2006-2월&amp;#x2F;0...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sundarurfriend:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Python에 깊이 관심이 없는 사람을 위해 누군가가 이것과 명명된 튜플의 핵심 차이점을 ELI5할 수 있습니까? ChatGPT의 답변은 다음과 같이 요약됩니다. 순서가 지정되지 않은(this) 대 순서가 지정된(NT), &amp;quot;임의의 키, 런타임에 결정됨&amp;quot; vs "정의 시 결정된 고정 필드 세트" (NT의 키도 런타임 값에서 보간할 수 없나요?) 및 다른 API(`.keys()`, `.items()`) 등(단순히 이것을 컨텍스트로 제공하고 있는데, 여기에 부정확성이 있는지는 모르겠습니다).&lt;p&gt;따라서 순서가 지정되지 않은 NamedTuples를 만드는 것처럼 다른 쪽에서도 접근했을 수 있습니까? 매핑 API를 지원합니까? 사전과 명명된 튜플 및 구조체(다양한 언어에서) 사이의 경계는 항상 나에게 약간 흐릿해 보였기 때문에 이 모든 것을 통해 더 나은 그림을 얻으려고 노력하고 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drhagen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;엄청난! 이제 'set'을 안정적인 순서로 만들면 여기서 끝입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drhagen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것이 충분히 널리 사용된다면 다음과 같은 코드에 대한 최적화를 추가할 수 있습니다:&lt;p&gt;&lt;pre&gt;&lt;code&gt; n = 1000
-    a = {}
-    범위(n)에 있는 i의 경우:
-        a[i] = str(i)
-    a = Frozendict(a) # O(n) 연산은 O(1)로 바뀔 수 있습니다.
-&lt;/code&gt;&lt;/pre&gt;
-It is relatively easy for the JIT to detect the `frozendict` constructor, the `dict` input, and the single reference immediately overwritten. 이것이 그만한 가치가 있는지 확실하지 않습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;polyrand:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;냉동 사전이라면 매우 환영받을 것입니다. MappingProxyType [0]&lt;p&gt;&lt;pre&gt;&lt;code&gt; from type import MappingProxyType을 사용하면 이미 유사한 작업을 수행할 수 있습니다.
-  
-  d = {}
-  
-  d["a"] = 1
-  d["b"] = 2
-  
-  인쇄(d)
-  
-  고정 = MappingProxyType(d)
-  
-  print(frozen["a"])
-  
-  # 오류:
-  냉동["b"] = "신규"
-
-&lt;/code&gt;&lt;/pre&gt;
-[0]: &lt;a href="https:&amp;#x2F;&amp;#x2F;docs.python.org&amp;#x2F;3&amp;#x2F;library&amp;#x2F;types.html#types.MappingProxyType" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;docs.python.org&amp;#x2F;3&amp;#x2F;라이브러리&amp;#x2F;types.html#types.MappingPr...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;code_biologist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;목록, 세트 또는 딕셔너리를 dict 키로 사용하거나 그러한 항목 세트를 만들어야 할 때마다 개인적으로 좋아하는 라이브러리인 pyrsist를 소개합니다. rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tobgu&amp;#x2F;pyrlent&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;codethief:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;다음 단계:frozendict에서 올바른(가장 좁은) TypedDict 유형을 자동 추론합니다. (TypeScript에서 `const foo = { … } as const`라고 생각하세요.) 저는 Python의 이 TS 기능을 매일 그리워합니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://lwn.net/SubscriberLink/1047238/25c270b077849dc0/</guid>
-      <pubDate>Thu, 11 Dec 2025 09:51:47 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46229467</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TGower:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 논문이 모든 추적 위성의 알려진 궤도 요소를 기반으로 한 시뮬레이션 대신 단순화하고 겉으로는 불합리해 보이는 가정으로 가득 차 있다는 점은 실망스럽습니다. 예를 들어, 위성의 크기가 약 4 x 3미터임에도 불구하고 스타링크를 논의할 때 충돌 단면적은 200제곱미터입니다. 궤도의 무작위 분포를 가정합니다. 나는 또한 "전자제품이 모두 튀겨지면 얼마나 빨리 충돌이 일어날 것인가"에 대해서도 확신하지 못합니다. 유용한 지표입니다. 해당 시나리오에서는 현장 상황과 상업적 이용이 훨씬 더 걱정됩니다...&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arxiv.org/abs/2512.09643</guid>
+      <pubDate>Thu, 11 Dec 2025 15:01:44 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46232220</comments>
     </item>
     <item>
-      <title>Meta는 낙태 조언 및 퀴어 콘텐츠와 연결된 글로벌 계정을 폐쇄합니다.</title>
-      <link>https://www.theguardian.com/global-development/2025/dec/11/meta-shuts-down-global-accounts-linked-to-abortion-advice-and-queer-content</link>
-      <description>&lt;p&gt;운동가들은 Facebook과 Instagram을 포함한 Meta 앱의 많은 낙태 및 생식 건강 계정에 대한 제한이 증가하고 있다고 보고했지만 Meta는 어떠한 검열도 거부했습니다. 사진: Anna Barclay/Getty Images전체 화면에서 이미지 보기 캠페인 참가자들은 Facebook 및 Instagram을 포함한 Meta 앱의 많은 낙태 및 생식 건강 계정에 대한 제한이 증가하고 있다고 보고했지만 Meta는 어떠한 검열도 거부했습니다. 메타는 이 메시지를 보내지 않았다고 말했습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Meta shuts down global accounts linked to abortion advice and queer content&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46230072"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.theguardian.com/global-development/2025/dec/11/meta-shuts-down-global-accounts-linked-to-abortion-advice-and-queer-content'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>OpenAI에 10억 달러 투자한 Disney, Sora AI에 캐릭터 허용</title>
+      <link>https://www.cnbc.com/2025/12/11/disney-openai-sora-characters-video.html</link>
+      <description>&lt;p&gt;요점Disney는 OpenAI에 10억 달러의 지분 투자를 할 것이라고 발표했습니다. 양사는 소라와 ChatGPT 이미지 사용자도 디즈니의 저작권이 있는 캐릭터를 활용해 AI 콘텐츠를 만들 수 있을 것이라고 말했다. 계약의 일환으로 Disney는 추가 지분을 구매하기 위한 영장을 받고 OpenAI의 주요 고객이 될 것이라고 말했습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Disney making $1B investment in OpenAI, will allow characters on Sora AI&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46231585"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.cnbc.com/2025/12/11/disney-openai-sora-characters-video.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elif:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;헤드라인은 그들이 자신의 이념적 입장을 표적으로 삼았다는 것을 암시하는 것 같습니다.&lt;p&gt;그러나 첫 번째 줄은 아마도 실제 이유가 무엇이었을지 드러냅니다. "경고를 유발하는 노골적이지 않은 과도한 노출을 보여주는 게시물"&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spicyusername:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;일부 기업의 결정이 사회적 해악을 초래할 것이라는 것이 너무나 분명한데도 가해자가 스스로에게 말하는 것은 죄책감이나 책임감을 피하기 위한 것이 아닐까 하는 생각이 듭니다.&lt;p&gt;자신이 나쁜 사람이라고 생각하는 사람은 없지만, 많은 사람들이 종종 해를 끼치는 결정을 내립니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fhdhdbdb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Meta는 납세자 AI 구제금융을 받을 수 있도록 노력하고 있습니다.  그들이 도망가도록 놔두지 마십시오.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.theguardian.com/global-development/2025/dec/11/meta-shuts-down-global-accounts-linked-to-abortion-advice-and-queer-content</guid>
-      <pubDate>Thu, 11 Dec 2025 11:26:45 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46230072</comments>
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;seydor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아 밈이네&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MallocVoidstar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;관련 항목: &lt;a href="https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;business&amp;#x2F;disney-sends-cease-and-desist-letter-google-cnbc-reports-2025-12-11&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;business&amp;#x2F;disney-sends-cease-and-desi...&lt;/a&gt;&lt;p&gt;&amp;gt; 월트 디즈니가 알파벳의 구글에 휴전 편지를 보냈다고 CNBC가 목요일 보도했습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dboreham:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;OpenAI가 Disney에 비용을 지불하면 안 되나요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zorked:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;10억 달러, 얼마나 많은 시간의 활주로를 살 수 있나요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tonyedgecombe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;확실히 OpenAI는 Disney에 콘텐츠에 대한 권리에 대한 대가를 지불해야 합니다. 우리는 얼마나 거꾸로 된 시대에 살고 있습니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dfedbeef:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;디즈니 주주 여러분, Iger, Mickey, Br&amp;#x27;er Rabbit이 불을 붙이고 있는 돈 더미의 이미지를 마음껏 만들어 보세요.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;solumunus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;돈.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fidotron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;YouTube가 합법적인 순간인가요? 즉, Disney는 OpenAI의 캐릭터에 대해 (아직 간접적인 방법으로) 돈을 받지만 (아직) Gemini는 받지 않습니까?&lt;p&gt;여기에 독점 계약이 포함된다면 큰 일이 될 수 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;giancarlostoro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것은 디즈니에게는 좋게 끝나지 않을 것입니다. 사람들이 검열하기 어려운 인종 차별적 비디오를 계속 만들고 점점 더 풀리기 때문에 Sora 2에서 특정 역사적 인물이 제거되었습니다. 이것은 디즈니가 돈을 다시 벌기를 바라는 또 다른 순환 투자처럼 느껴집니다. 반면에, 그들이 부분 유료화 작업을 한다고 가정하면, 나는 내 딸들이 가장 좋아하는 디즈니 공주들의 "말하는" 비디오 몇 개를 만들고 싶습니다. 그녀에게.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tiahura:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Iger와 Altman이 CNBC에서 10시 30분에 방송합니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.cnbc.com/2025/12/11/disney-openai-sora-characters-video.html</guid>
+      <pubDate>Thu, 11 Dec 2025 14:12:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46231585</comments>
+    </item>
+    <item>
+      <title>사람들이 뭔가를 느끼게 만드는 공예 소프트웨어</title>
+      <link>https://rapha.land/craft-software-that-makes-people-feel-something/</link>
+      <description>&lt;p&gt;뭔가 글을 써볼까 생각했어요. 사람들이 나한테 계속 묻는 게 그거다. 그렇다면 굳이 레고 블록 만들기를 멈출 필요는 없겠죠.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Craft software that makes people feel something&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46231274"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://rapha.land/craft-software-that-makes-people-feel-something/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ranger_danger:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;마우스 커서가 마음에 들어서 기분이 좋아졌습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PTOB:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;좋은 도구를 손에 넣었을 때의 안도감과 경외감, 즐거움을 느끼게 해준다면 꼭 그렇게 하세요.&lt;p&gt;마우스 트레일은 뭔가 다른 느낌을 주었습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deadbabe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;두려움은 느낌입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;beanjuiceII:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;해당 사이트에서 마우스를 움직인 후 화가 났습니다...잘했어요!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PaulHoule:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;마우스 트레일 효과가 O(1) 메모리를 사용하여 마우스를 아무리 빨리 움직여도 브라우저가 폭발하지 않는 방식이 마음에 듭니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://rapha.land/craft-software-that-makes-people-feel-something/</guid>
+      <pubDate>Thu, 11 Dec 2025 13:45:08 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46231274</comments>
+    </item>
+    <item>
+      <title>콜로라도 주유소 표지판에 주유비가 1.69달러라고 적혀 있었나요? 네, 그랬어요</title>
+      <link>https://coloradosun.com/2025/12/11/colorado-gas-prices-falling-national-average/</link>
+      <description>&lt;p&gt;AAA의 현지 가격 마법사 Skyler McKinley에 따르면 콜로라도의 상황은 훨씬 더 좋습니다. McKinley는 갤런당 69달러로 길 건너 경쟁업체와 치열한 가격 경쟁을 벌이고 있다고 말했습니다. 콜로라도 가격은 훨씬 낮습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Did that Colorado station sign say gas for only $1.69? Yes, it did&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46232222"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://coloradosun.com/2025/12/11/colorado-gas-prices-falling-national-average/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alephnerd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;또한 대부분의 시장에서 EV 보조금이 단계적으로 폐지되기 시작한 이후 ICE 판매가 지난 몇 년 동안 회복되기 시작했습니다[0].&lt;p&gt;저는 EV를 좋아하지만 오늘날 대부분의 시장에서 EV는 2010년대에 하이브리드 자동차가 등장했던 시점과 같은 지점에 있다고 생각합니다. 입증되었지만 소비자의 높은 초기 비용으로 인해 단기적으로는 여전히 재정적 판매가 어렵습니다.&lt;p&gt;[0] - &lt;a href="https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;비즈니스&amp;#x2F;에너지&amp;#x2F;연소-엔진-자동차-regain-popularity-worldwide-ey-says-2025-12-09&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;business&amp;#x2F;energy&amp;#x2F;combustion-engine-ca...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://coloradosun.com/2025/12/11/colorado-gas-prices-falling-national-average/</guid>
+      <pubDate>Thu, 11 Dec 2025 15:01:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46232222</comments>
+    </item>
+    <item>
+      <title>프랑스 슈퍼마켓의 크리스마스 광고가 전 세계적으로 인기를 끌었습니다(AI 없이) [동영상]</title>
+      <link>https://www.youtube.com/watch?v=Na9VmMNJvsA</link>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=Na9VmMNJvsA</guid>
+      <pubDate>Thu, 11 Dec 2025 13:35:55 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46231187</comments>
     </item>
   </channel>
 </rss>

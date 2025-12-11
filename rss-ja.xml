@@ -6,68 +6,84 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 11 Dec 2025 12:54:31 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Dec 2025 15:32:08 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>Python の「凍結された」辞書</title>
-      <link>https://lwn.net/SubscriberLink/1047238/25c270b077849dc0/</link>
-      <description>&lt;p&gt;frozendict アイデアは非常に単純です。frozendict を新しい不変型として言語の組み込みモジュールに追加します。 frozendict の反復は期待どおりに機能します。型はコレクションを実装します。フリーズ() メソッドは、基本的に dict オブジェクトの型を frozendict に変更するだけです。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A “frozen” dictionary for Python&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46229467"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://lwn.net/SubscriberLink/1047238/25c270b077849dc0/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>軌道上の砂上の楼閣: 頻繁に出現する巨大星座の接近結合</title>
+      <link>https://arxiv.org/abs/2512.09643</link>
+      <description>&lt;p&gt;) 接続されたペーパー 接続されたペーパーを切り替えます (接続されたペーパーとは何ですか。) リットマップ リットマップを切り替えます (リットマップとは。) コードへのリンク コード付きペーパーを切り替えます (コード付きペーパーとは。)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; An Orbital House of Cards: Frequent Megaconstellation Close Conjunctions&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46232220"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arxiv.org/abs/2512.09643'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zzzeek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;SQLAlchemy には独自の Frozendict があり、私たちは長年使用してきました。最近では非常に優れたパフォーマンスの cython 実装として使用されており、私はそれを至る所で使用しています。    stdlib への追加は非常に歓迎されます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pansa2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;レイモンド・ヘッティンガーがこのPEPについて意見を持っているかどうかは疑問だ。ずっと前に、彼は次のように書きました。「辞書の凍結は虫の缶詰であり、特に役に立ちません」。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;mail.python.org&amp;#x2F;pipermail&amp;#x2F;python-dev&amp;#x2F;2006-April&amp;#x2F;060793.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;mail.python.org&amp;#x2F;pipermail&amp;#x2F;python-dev&amp;#x2F;2006-2月&amp;#x2F;0...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sundarurfriend:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Python に詳しくない人のために、このタプルと名前付きタプルの核となる違いを ELI5 できる人はいますか? ChatGPT の答えは要約すると、順序なし (これ) と順序付き (NT)、「実行時に決定される任意のキー」です。 vs 「定義時に決定されるフィールドの固定セット」 (NT のキーもランタイム値から補間することはできませんか?)、および別の API (`.keys()`、`.items()`) など (ちなみに、これをコンテキストとして与えているだけです。これらに不正確さがあるかどうかはわかりません)。&lt;p&gt;つまり、これは、順序付けされていないものを作成する場合のように、反対側からアプローチされた可能性もあります。 NamedTuples はマッピング API をサポートしますか? (さまざまな言語にわたる) 辞書と名前付きタプルおよび構造体の間の境界線は、私にとっては常に少し曖昧なように思えたので、これを通じて全体像をよりよく理解しようとしています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drhagen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;素晴らしい！これで「set」の順序が安定するようになり、これで完了です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drhagen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これが十分に広く使用されるようになれば、次のようなコードの最適化が追加される可能性があります:&lt;p&gt;&lt;pre&gt;&lt;code&gt; n = 1000
-    a = {}
-    range(n) の i の場合:
-        a[i] = str(i)
-    a = frozendict(a) # O(n) 演算を O(1) に変えることができます
-&lt;/code&gt;&lt;/pre&gt;
-It is relatively easy for the JIT to detect the `frozendict` constructor, the `dict` input, and the single reference immediately overwritten.これに価値があるかどうかはわかりません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;polyrand:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;凍結された辞書は大歓迎です。 MappingProxyType [0]&lt;p&gt;&lt;pre&gt;&lt;code&gt; fromtypes import MappingProxyType を使用して、同様のことをすでに実行できます。
-  
-  d = {}
-  
-  d["a"] = 1
-  d[&amp;quot;b&amp;quot;] = 2
-  
-  印刷(d)
-  
-  凍結 = MappingProxyType(d)
-  
-  print(冷凍["a"])
-  
-  # エラー:
-  凍結["b"] = "新しい"
-
-&lt;/code&gt;&lt;/pre&gt;
-[0]: &lt;a href="https:&amp;#x2F;&amp;#x2F;docs.python.org&amp;#x2F;3&amp;#x2F;library&amp;#x2F;types.html#types.MappingProxyType" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;docs.python.org&amp;#x2F;3&amp;#x2F;library&amp;#x2F;types.html#types.MappingPr...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;code_biologist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;リスト、セット、または辞書を辞書キーとして使用する必要がある場合、またはそのような項目のセットを作成する必要がある場合に使用する個人的なお気に入りのライブラリである pyrsistent に感謝します: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tobgu&amp;#x2F;pyrsistent" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tobgu&amp;#x2F;pyrsistent&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;codethief:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;次のステップ: frozendict から正しい (最も狭い) TypedDict 型を自動推論します。 (TypeScript では `const foo = { … } を const` と考えてください。) 毎日、Python でこの TS 機能が恋しいです。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://lwn.net/SubscriberLink/1047238/25c270b077849dc0/</guid>
-      <pubDate>Thu, 11 Dec 2025 09:51:47 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46229467</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TGower:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;残念なのは、この論文が、これらすべての追跡衛星の既知の軌道要素に基づくシミュレーションではなく、単純化して一見不合理に見える仮定でいっぱいであることです。たとえば、スターリンクについて議論する場合、衛星は約 4 × 3 メートルであるにもかかわらず、衝突断面積は 200 平方メートルになります。軌道がランダムに分布すると仮定します。また、「すべての電子機器が故障した場合、どれくらいの速さで衝突が起こるか」ということにも納得できません。は有用な指標ですが、そのシナリオでは、地上の状況と商業航空の方がはるかに心配です...&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arxiv.org/abs/2512.09643</guid>
+      <pubDate>Thu, 11 Dec 2025 15:01:44 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46232220</comments>
     </item>
     <item>
-      <title>メタ社、中絶アドバイスや奇妙なコンテンツに関連する世界的なアカウントを閉鎖</title>
-      <link>https://www.theguardian.com/global-development/2025/dec/11/meta-shuts-down-global-accounts-linked-to-abortion-advice-and-queer-content</link>
-      <description>&lt;p&gt;活動家らは、FacebookやInstagramなどのメタアプリによる多くの中絶やリプロダクティブヘルスアカウントに対する制限を強化していると報告しているが、メタはいかなる検閲も否定した。写真: Anna Barclay/Getty Images 画像を全画面表示で見る キャンペーン参加者らは、FacebookやInstagramなどのメタアプリによる多くの中絶やリプロダクティブヘルスアカウントに対する制限を強化していると報告したが、メタはいかなる検閲も否定した。メタは、このメッセージは送信していないと述べた。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Meta shuts down global accounts linked to abortion advice and queer content&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46230072"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.theguardian.com/global-development/2025/dec/11/meta-shuts-down-global-accounts-linked-to-abortion-advice-and-queer-content'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>ディズニー、OpenAIに10億ドル投資、Sora AIでキャラクターを利用可能に</title>
+      <link>https://www.cnbc.com/2025/12/11/disney-openai-sora-characters-video.html</link>
+      <description>&lt;p&gt;キーポイントディズニーはOpenAIに10億ドルの株式投資を行うと発表した。両社によると、SoraとChatGPT Imageのユーザーは、ディズニーの著作権で保護されたキャラクターを使ったAIコンテンツも作成できるようになるという。契約の一環として、ディズニーは株式を追加購入するためのワラントを受け取り、OpenAIの主要顧客になると述べた。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Disney making $1B investment in OpenAI, will allow characters on Sora AI&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46231585"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.cnbc.com/2025/12/11/disney-openai-sora-characters-video.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elif:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この見出しは、彼らがイデオロギー的立場を理由に標的にされたことを暗示していると思います。&lt;p&gt;しかし、最初の行で、おそらく実際の理由が何であったのかが明らかになります。「明示的ではないヌードを示す投稿が警告を引き起こす」というものです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spicyusername:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私はいつも疑問に思うのですが、企業の決定が社会に害を及ぼすことがこれほど明らかなとき、加害者が自分たちに語るのは、罪悪感や責任を感じることを避けるためなのです。&lt;p&gt;誰も自分が悪者だとは思っていませんが、多くの人は害をもたらす決定を頻繁に行っています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fhdhdbdb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;メタは納税者のAIによる救済を受けられる立場を確立しようとしている。  彼らを逃がさないでください。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.theguardian.com/global-development/2025/dec/11/meta-shuts-down-global-accounts-linked-to-abortion-advice-and-queer-content</guid>
-      <pubDate>Thu, 11 Dec 2025 11:26:45 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46230072</comments>
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;seydor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ああ、ミーム&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MallocVoidstar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;関連: &lt;a href="https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;business&amp;#x2F;disney-sends-cease-and-desist-letter-google-cnbc-reports-2025-12-11&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;business&amp;#x2F;disney-sends-cease-and-desi...&lt;/a&gt;&lt;p&gt;&amp;gt;ウォルト・ディズニーがアルファベット傘下のグーグルに停止命令の書簡を送ったとCNBCが木曜日に報じた。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dboreham:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;OpenAIはディズニーにお金を払うべきではないでしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zorked:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;10億ドル、それで何時間分の滑走路が買えるのか。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tonyedgecombe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;確かにOpenAIはコンテンツの権利に対してディズニーにお金を支払っているはずだ。私たちは何という逆境の時代に生きているのでしょうか。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dfedbeef:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ディズニー株主の皆様は、アイガー、ミッキー、ブラビットがお金に火を灯している画像を自由に作成してください。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;solumunus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;おっと。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fidotron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは彼らの YouTube 開始の瞬間ですか?つまり、ディズニーは OpenAI 上のキャラクターに対して (これまで間接的な手段で) 報酬を得ていますが、Gemini には (まだ) 支払っていません?&lt;p&gt;これに独占契約が含まれる場合、大きな金額になる可能性があります。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;giancarlostoro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはディズニーにとって良い結末ではないだろう。人々が検閲の難しい人種差別的なビデオを作り続けたため、ソラ2から特定の歴史上のキャラクターが削除されたが、それはますます不安定になった。これは、ディズニーがお金を取り戻したいと考えている、新たな循環投資のような気がします。一方、彼らがフリーミアム的なものをやると仮定すると、私は娘のお気に入りのディズニープリンセスが「話している」ビデオをいくつか作成することを楽しみにしています。彼女に。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tiahura:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;アイガーとアルトマンはCNBCで10時30分から。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.cnbc.com/2025/12/11/disney-openai-sora-characters-video.html</guid>
+      <pubDate>Thu, 11 Dec 2025 14:12:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46231585</comments>
+    </item>
+    <item>
+      <title>人に何かを感じさせるソフトウェアを作る</title>
+      <link>https://rapha.land/craft-software-that-makes-people-feel-something/</link>
+      <description>&lt;p&gt;何か書こうと思いました。それが人々が私に尋ね続けていることです。それなら、必ずしもレゴブロックを作るのをやめる必要はないですよね。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Craft software that makes people feel something&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46231274"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://rapha.land/craft-software-that-makes-people-feel-something/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ranger_danger:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;マウスカーソルが大好きで、とても幸せな気持ちになりました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PTOB:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;良い道具を手に入れたときの安堵感、畏怖、そして喜びを感じさせてくれる限り、ぜひとも。&lt;p&gt;ネズミの足跡は私に何か別の感情を与えてくれた。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deadbabe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;恐怖とは感情です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;beanjuiceII:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;そのサイト上でマウスを動かした後激怒しました...素晴らしい仕事です!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PaulHoule:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;マウスをどれだけ速く動かしても、マウス トレイル エフェクトが O(1) メモリを使用するので、ブラウザが爆発することはありません。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://rapha.land/craft-software-that-makes-people-feel-something/</guid>
+      <pubDate>Thu, 11 Dec 2025 13:45:08 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46231274</comments>
+    </item>
+    <item>
+      <title>コロラド駅の標識にはガソリンがたったの 1.69 ドルって書いてあったっけ？はい、そうでした</title>
+      <link>https://coloradosun.com/2025/12/11/colorado-gas-prices-falling-national-average/</link>
+      <description>&lt;p&gt;AAAの現地価格の達人、スカイラー・マッキンリー氏によると、コロラド州はさらに有利だという。マッキンリー氏によると、価格は1ガロンあたり69ドルで、向かい側の競合他社と激しい価格競争が繰り広げられているという。コロラド州の物価はさらに安いです。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Did that Colorado station sign say gas for only $1.69? Yes, it did&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46232222"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://coloradosun.com/2025/12/11/colorado-gas-prices-falling-national-average/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alephnerd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;さらに、ほとんどの市場で EV 補助金が段階的に廃止され始めたため、ICE の売上はここ数年で回復し始めています [0]。&lt;p&gt;私は EV が好きですが、現在、ほとんどの市場で 2010 年代のハイブリッド車と同じ水準にあると思います。それは証明されていますが、消費者にとって高額な初期費用がかかるため、短期的には経済的に販売するのは依然として困難です。&lt;p&gt;[0] - &lt;a href="https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;ビジネス&amp;#x2F;エネルギー&amp;#x2F;combustion-engine-cars-regain-popularity-worldwide-ey-says-2025-12-09&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;business&amp;#x2F;energy&amp;#x2F;combustion-engine-ca...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://coloradosun.com/2025/12/11/colorado-gas-prices-falling-national-average/</guid>
+      <pubDate>Thu, 11 Dec 2025 15:01:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46232222</comments>
+    </item>
+    <item>
+      <title>フランスのスーパーマーケットのクリスマス広告が世界的にヒット (AIなし) [ビデオ]</title>
+      <link>https://www.youtube.com/watch?v=Na9VmMNJvsA</link>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=Na9VmMNJvsA</guid>
+      <pubDate>Thu, 11 Dec 2025 13:35:55 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46231187</comments>
     </item>
   </channel>
 </rss>
