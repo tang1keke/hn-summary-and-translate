@@ -6,68 +6,121 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 12 Dec 2025 12:52:36 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Dec 2025 15:29:43 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>オーストリア、27年の歳月を経て予算内で世界で6番目に長い鉄道トンネル開通</title>
-      <link>https://infrastruktur.oebb.at/en/projects-for-austria/railway-lines/southern-line-vienna-villach/koralm-railway</link>
-      <description>&lt;p&gt;コーラルム鉄道 シュタイアーマルク州とケルンテン州を結ぶ速くて安全なサービス、それがコーラルム鉄道です。ヨーロッパを結ぶコーラルム鉄道 新しいコーラルム鉄道の建設は経済にも恩恵をもたらしています。ウェブカメラ 自宅から建設の進捗状況を追跡 – コーラルム鉄道の建設現場に設置された当社のウェブカメラにより、それが可能になります。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; After 27 years within budget Austria open 6thlongest railway tunnel in the world&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46242871"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://infrastruktur.oebb.at/en/projects-for-austria/railway-lines/southern-line-vienna-villach/koralm-railway'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>生成された列を使用したフルインデックス速度での SQLite JSON</title>
+      <link>https://www.dbpro.app/blog/sqlite-json-virtual-columns-indexing</link>
+      <description>&lt;p&gt;Raw JSON を保存する まず、JSON 列を含む単純なテーブルを作成します。 ⚡SQL 環境を読み込みます。仮想生成列を追加しましょう。突然、JSON は完全なインデックスをサポートする通常のリレーショナル列のように動作します。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; SQLite JSON at Full Index Speed Using Generated Columns&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243904"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.dbpro.app/blog/sqlite-json-virtual-columns-indexing'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;moregrist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;生成された列は非常に優れていますが、私が本当に気に入っているのは、予期しないキーに対する JSON クエリを劇的に高速化する Postgres スタイルの gin インデックスです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;N_Lens:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;なんと素晴らしいトリックでしょう。私も SQLite が大好きです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;meindnoch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;2 番目のセクションでは、CREATE TABLE と 3 つの個別の ALTER TABLE 呼び出しを使用して仮想列を追加しています。 3 番目のセクションでは、最初から含まれている仮想列を含む単一の CREATE TABLE を使用しています。&lt;p&gt;なぜですか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ellisv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;特にレコード間で一貫したスキーマがある場合、開発者にはすべてを JSON(B) 列に押し込むのではなく、データを正規化してほしいと思います。&lt;p&gt;実際にデータを使用するたびに、適切なインデックスを設定し、制約を適用し、オーバーヘッドを追加するのははるかに困難です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AlexErrant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;タグのリストなど、JSON 配列を含む JSON 列にインデックスを付ける方法を探していました。私の知る限り、この方法はそれに対しては機能しません。 FTS または別の「タグ」を使用する必要があります。インデックスを付けるテーブル。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;baq:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私の理解では、Snowflake は舞台裏でそのように動作しているのですよね?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bushbaba:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;小規模なデータセット (数十万行) の場合、必要に応じて生成された列インデックスを持つ JSON 列を使用しない理由がわかりません&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jelder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは JSON パフォーマンスのために列を生成するのが一般的な方法だと思いました。私はこれを (Postgres にありましたが) キーが JSON 列に埋め込まれている外部キー制約を維持するために使用したこともあります。私たちがやっていることは少し呪われていましたが、完璧に機能しました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;小さなバグ レポート: iPhone から SQL エディター ウィジェットのテキストを編集できませんでした。また、ページの幅を超えるテキストをスクロールして表示することもできませんでした。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mring33621:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;IIRC の Vertica にも同様の機能がありました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mcluck:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;とてもクールな記事。実際に詳しく調べるために、クエリ プランがどのように変化するのかを見てみたいと思いました。 Just Work(tm) のように見えますが、私の脳は、新しいインデックスをそれほど完璧に使用できるとは信じません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Lex-2008:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;興味深いですが、「式のインデックス」は使用できません。 &amp;lt;&lt;a href="https:&amp;#x2F;&amp;#x2F;sqlite.org&amp;#x2F;expridx.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;sqlite.org&amp;#x2F;expridx.html&lt;/a&gt;&amp;gt;?&lt;p&gt;つまり次のようなもの: CREATE INDEX idx_events_type ON events(json_extract(data, &amp;#x27;$.type&amp;#x27;))?&lt;p&gt;ここでの注意点は、JSON パス構文のわずかな変更 (現時点では考えられません) によって SQLite がこのインデックスを使用できなくなる可能性があることですが、明示的に指定された仮想生成列の場合は、インデックス。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;upmostly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私がこのブログ投稿を書こうと思ったのは、2023 年の HN 投稿に対する bambax のコメントを読んだ後です。&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=37082941"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=37082941&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.dbpro.app/blog/sqlite-json-virtual-columns-indexing</guid>
+      <pubDate>Fri, 12 Dec 2025 13:25:19 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46243904</comments>
+    </item>
+    <item>
+      <title>Fedora: 長期デジタル保存のためのオープンソース リポジトリ</title>
+      <link>https://fedorarepository.org/</link>
+      <description>&lt;p&gt;メンバーになる Fedora を選ぶ理由をダウンロードしてください。 Fedora をサポートしたい。メンバーになる Fedora リソース Fedora を使い始めるのに役立つリソース。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Fedora: Open-source repository for long-term digital preservation&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243883"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://fedorarepository.org/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;economistbob:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;CentOS を破壊し、Xlibre をめぐって暴走した人々は、あなたが必要とするものを永久に保存してくれると信頼できます。&lt;p&gt;私は懐疑的です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cramcgrab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;おお。 Java 11。アップデートに最適なプロジェクトのようです。 CS の学生のグループに最新のツールセットを使用してコードを更新できる場所を知っている人はいますか?かつては MIT、クラークソン、コーネル、バークレー、RIT などがこのようなものを世に出していました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zoobab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;FTPの方が良かったです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fodmap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;誤解を避けるために付け加えておきますが、このリポジトリは、Red Hat のプロジェクトではなく、Flexible Extensible Digital Object Repository Architecture (FEDORA) というコーネル大学のプロジェクトに関するものです。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://fedorarepository.org/</guid>
+      <pubDate>Fri, 12 Dec 2025 13:23:31 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46243883</comments>
+    </item>
+    <item>
+      <title>BpfJailer: eBPF 必須アクセス制御 [pdf]</title>
+      <link>https://lpc.events/event/19/contributions/2159/attachments/1833/3929/BpfJailer%20LPC%202025.pdf</link>
+      <description>&lt;p&gt;��2 Ρ���� ��Z:�� vn�h�]c��f��:����Xۥ�� : g|� �x��}��:]a6X_��S ��U&amp;������K��u��;��k&gt;F����ہd M�� ,&gt;|Cp��^ ���� 1 ~#����`M��H ��#��A�� �����H 5���km�� 0��| endstream endobj 8 0 obj 653 endobj 9 0 obj [ ] endobj 10 0 obj &lt;&lt; /CA 1. 1A Qa "q 2���� #B�� R��$3br�  %&amp;'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz���������������������������������������������������������������������������  ���w. 1AQaq"2�B���� #3R�br�  $4�%�&amp;'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz�������������������������������������������������������������������������� .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; BpfJailer: eBPF Mandatory Access Control [pdf]&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46244378"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://lpc.events/event/19/contributions/2159/attachments/1833/3929/BpfJailer%20LPC%202025.pdf'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;voxadam:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この講演のスライドしか見つかりませんでした。ビデオをお持ちの方がいらっしゃいましたら、ぜひご覧いただきたいです。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://lpc.events/event/19/contributions/2159/attachments/1833/3929/BpfJailer%20LPC%202025.pdf</guid>
+      <pubDate>Fri, 12 Dec 2025 14:20:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46244378</comments>
+    </item>
+    <item>
+      <title>Show HN: Autofix Bot – ハイブリッド静的分析および AI コード レビュー エージェント</title>
+      <link>https://news.ycombinator.com/item?id=46237358</link>
+      <description>&lt;p&gt;- AI レビュー: エージェントは、静的な結果をアンカーとしてコードをレビューします。 42% F1)、クロード コード (71. 2-3B-v1[3] https://autofix.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Autofix Bot – Hybrid static analysis and AI code review agent&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46237358"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46237358'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tarun_anand:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;おめでとう！！アンカリングは重要です。コーディングガイドライン、パフォーマンスの問題など、コードレビューの他の部分についてはどうですか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_pdp_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これと、たとえば semgrep などをツールとして使用するクロード コードとの違いは何ですか?&lt;p&gt;また、私の経験では、このツールを定期的に実行する可能性は低いため、このツールは開発者フローに含めるべきではないと思います。これは、PR が承認される前に QA プロセスの一部として実行されるべきです。&lt;p&gt;これがお役に立てば幸いです。幸運を祈ります。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nickphx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「ボトルネックをコードレビューに移した」...10 年ぶりの控えめな表現。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46237358</guid>
+      <pubDate>Thu, 11 Dec 2025 21:24:34 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46237358</comments>
+    </item>
+    <item>
+      <title>オンラインでの年齢確認が、対面で身分証明書を提示するのと同じではないのはなぜですか?</title>
+      <link>https://www.eff.org/deeplinks/2025/12/why-isnt-online-age-verification-just-showing-your-id-person</link>
+      <description>&lt;p&gt;オンライン年齢確認はさらに多くの人に負担を与えます。オンラインで送信されたデータが、あなたと他の当事者の間にのみ留まることがほとんどありません。ユーザーの個人識別データは、これらのパートナー間で循環します。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Why isn't online age verification just like showing your ID in person?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243848"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.eff.org/deeplinks/2025/12/why-isnt-online-age-verification-just-showing-your-id-person'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;flowerthoughts:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;実際、トンネル自体はわずか 17 年でした。&lt;p&gt;1998: コーラルム鉄道の建設開始&lt;p&gt;2008: コーラルム トンネルの建設開始&lt;p&gt;2018: コーラルム トンネルの突破口&lt;p&gt;2020: コーラルム トンネルの最後の突破口&lt;p&gt;2025: この発表 (&lt;a href="https:&amp;#x2F;&amp;#x2F;orf.at&amp;#x2F;stories&amp;#x2F;3414173&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;orf.at&amp;#x2F;stories&amp;#x2F;3414173&amp;#x2F;&lt;/a&gt; ドイツ語)&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;infrastruktur.oebb.at&amp;#x2F;en&amp;#x2F;projects-for-austria&amp;#x2F;railway-lines&amp;#x2F;southern-line-vienna-villach&amp;#x2F;koralm-railway&amp;#x2F;プロジェクトについて" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;infrastruktur.oebb.at&amp;#x2F;en&amp;#x2F;projects-for-austria&amp;#x2F;railwa...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;apexalpha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私はこれがアルプスの下にある新しいベーストンネルのことだと思って、少しの間非常に混乱しました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaway2037:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;まず、これは大きな成果です。  Wiki ページを見ると: &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Koralm_Railway" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Koralm_Railway&lt;/a&gt;&lt;p&gt;... のようです。マルチマルチマルチフェーズプロジェクト。  これをうまく機能させることに脱帽です。&lt;p&gt;第二に、このトンネルの建設にどれだけ時間がかかったのかに気づきました。コーラルム トンネル -&amp;gt; &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Koralm_Tunnel" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Koralm_Tunnel&lt;/a&gt;&lt;p&gt;全長 33 km、2008 年から完成までにかかった2025年にそれを構築します。  とても長い時間ですね！  東京の都営大江戸線は全長40km以上で、約10年かけて建設されました。  大きな違いについての私の推測は、コーラルム トンネルの地球工学ははるかに複雑で、あるいは岩石がはるかに硬いということです。  この分野の経験のある方はコメントいただけますか?  もっと学びたいと思います。  東京の中心部のほとんどは沖積平野なので（上海も同様です）、基本的には粘土と砂を掘ることになりますが、最新のトンネルボーリングマシンにとっては簡単なことです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;djoldman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ウェブカメラ!&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;infrastruktur.oebb.at&amp;#x2F;en&amp;#x2F;projects-for-austria&amp;#x2F;railway-lines&amp;#x2F;southern-line-vienna-villach&amp;#x2F;koralm-railway&amp;#x2F;webcams-koralm-railway" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;infrastruktur.oebb.at&amp;#x2F;en&amp;#x2F;projects-for-austria&amp;#x2F;railwa...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;saubeidl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;些細な指摘であることは承知していますが、「EU ファンド X による資金提供」という 2 つの記述に不当に腹が立ちました。旗のサイズ、パディング、フォントなどが異なるバナー。&lt;p&gt;これらを統一するデザイン言語がないのはなぜですか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;franciscop:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この見出しは少し奇妙で、元のタイトルや記事の内容を表していません。 「予算内」とはどういう意味ですか？ここって意味？当初の予算で予定されていた費用がかかったということですか?記事内に予算に関連するものが見つかりませんでした。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;the_mitsuhiko:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;子供の頃から本当にこれを待っていました。  それが実際にここにあるのを見るのは興味深いです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;roflmaostc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ちなみに、コーラルム トンネルの長さは 32.9 km&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Koralm_Tunnel" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Koralm_Tunnel&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://infrastruktur.oebb.at/en/projects-for-austria/railway-lines/southern-line-vienna-villach/koralm-railway</guid>
-      <pubDate>Fri, 12 Dec 2025 10:50:22 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46242871</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zug_zug:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;あなたが米国に住む数億人の成人の一人であることを証明できる暗号技術が存在しますが、あなたがどの成人であるかについては何も明らかにされません。ビットコインよりもはるかに複雑ではありません。&lt;p&gt;私がこれを取り上げたのは、年齢確認を本当に気にしているのか、それともインターネット上のすべての行動を個人的に追跡できるようにしたいのかを示すための完璧なリトマス試験紙だからです。&lt;p&gt;特定の状況（例：外国の扇動者に米国であるふりをさせたくないフォーラムなど）ではこれで問題ありません。有権者）だが、米国の法律を施行しない米国以外のポルノサイトが何百万も常に存在するため、ポルノ全体はばかばかしい茶番劇だ。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;johnnienaked:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;インターネット上の何かにアクセスするために ID を確認したことはありません。ただ使用をやめます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;3rodents:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この記事は好きではありません。無関係な技術的なニュアンスが哲学的な対立と混ざり合っています。技術的な問題はすべて解決可能です。言論の自由の議論も愚かです。ポルノでオナニーできる人を制限することが言論の自由の問題であるなら、バーに入って常連客と会話できる人を制限するのも当然です。&lt;p&gt;インターネットはオープンで自由であるべきだと信じているため、ID チェックに反対するのは合理的ですが、この記事はすべてを壁に投げ込むようなねじれに陥っています。そして、それが言論の自由の問題であると考えるのが合理的です。しかし同時に、同じ議論がインターネットの外では当てはまらないとも言えません。&lt;p&gt;(コンビニエンス ストアでは ID をスキャンし、バーでは ID をスキャンし、ホテルではパスポートのコピーを取得します…)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;miguelbemartin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私の意見では、インターネットへのアクセスは常に大人が管理するデバイスの背後で行われるべきです。そして、未成年者に対して適切な制限を設けるのは大人の責任であるべきです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hexbin010:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;オーバートン ウィンドウが急速に縮小しているのを見てください。ありがとうEFF!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rzerowan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;逆説的ですが、これは、知識証明がゼロのエンドユーザー デバイス上にあるべきだと私が感じている機能要件の 1 つです。&lt;p&gt;オンライン プロパティに対する単純な返信 (年齢確認に合格したかどうか) でデバイス上でエンドユーザー認証を行うのは理にかなっています。&lt;p&gt;そうでないと、このデータの一元化と最終的な漏洩は待ち構えているワームの缶詰となります。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;magicalhippo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;前述の年齢確認ハブに関するディスカッションはこちら: &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46223389"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46223389&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jagoff:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それは年齢確認に関するものではありませんし、実際にはそうではありませんでした。それは良く言えば気晴らし、悪く言えば妄想です。これは、すべてのオンライン活動に実名を結び付けること、そして現在の世代の子供たちに実名に慣れさせ、選挙権年齢に達する前にそれを受け入れさせることです。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.eff.org/deeplinks/2025/12/why-isnt-online-age-verification-just-showing-your-id-person</guid>
+      <pubDate>Fri, 12 Dec 2025 13:17:51 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46243848</comments>
     </item>
     <item>
-      <title>テキストからトークンへ: トークン化パイプラインの仕組み</title>
-      <link>https://www.paradedb.com/blog/when-tokenization-becomes-token</link>
-      <description>&lt;p&gt;トークン化によるテキストの検索可能な部分への分割 トークン化フェーズでは、フィルタリングされたテキストを取得し、インデックス可能な単位に分割します。これには、スペースで分割する単純な空白トークナイザーと、英語以外の文字セットを理解するより高度な言語対応トークナイザーが含まれます2。これらは、コンテンツに特別な処理が必要な非散文テキストが含まれている場合に不可欠です。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; From text to token: How tokenization pipelines work&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46232003"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.paradedb.com/blog/when-tokenization-becomes-token'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>告白を通じた誠実さのための LLM のトレーニング</title>
+      <link>https://arxiv.org/abs/2512.08093</link>
+      <description>&lt;p&gt;) 接続されたペーパー 接続されたペーパーを切り替えます (接続されたペーパーとは何ですか。) リットマップ リットマップを切り替えます (リットマップとは。) コードへのリンク コード付きペーパーを切り替えます (コード付きペーパーとは。)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Training LLMs for Honesty via Confessions&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46242795"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arxiv.org/abs/2512.08093'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wongarsu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;特に従来の検索のトークン化です。 LLM は、非常に異なる目標を持つ非常に異なるトークン化を使用します。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.paradedb.com/blog/when-tokenization-becomes-token</guid>
-      <pubDate>Thu, 11 Dec 2025 14:45:49 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46232003</comments>
-    </item>
-    <item>
-      <title>Tor プロジェクトは C を捨てて Rust に移行中</title>
-      <link>https://itsfoss.com/news/tor-rust-rewrite-progress/</link>
-      <description>&lt;p&gt;これは、接続回路が利用できなくなるときと、接続回路が閉じるときを制御する単一のタイマーです。これにより、予測可能なタイムアウト動作によるフィンガープリントのリスクが軽減されます。これらのキーは、onion サービスのクライアント認証を処理します。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Tor Project Is Making a Switch to Rust, Ditches C&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243543"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://itsfoss.com/news/tor-rust-rewrite-progress/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://itsfoss.com/news/tor-rust-rewrite-progress/</guid>
-      <pubDate>Fri, 12 Dec 2025 12:35:57 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46243543</comments>
-    </item>
-    <item>
-      <title>西側学術界における検閲とウクライナ戦争</title>
-      <link>https://www.newglobalpolitics.org/censorship-in-western-academia-and-the-war-in-ukraine/</link>
-      <description>&lt;p&gt;2025年12月10日、ハリコフでのバス化、2025年12月4日。この事件は、権威主義的傾向に公に反対する立場をとっている機関を含め、西側の機関で学問の自由と開かれた議論がどのように侵食されているかを示している。私たちは後に、RevDem チームと民主主義研究所が同時に停止に関する公式声明を発表したことを発見しました。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Censorship in Western Academia and the War in Ukraine&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243586"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.newglobalpolitics.org/censorship-in-western-academia-and-the-war-in-ukraine/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hackandthink:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;少し前に彼の本を読んでみてください。読む価値があります。&lt;p&gt;「ヴォロディミール・イシチェンコはウクライナ出身の社会学者で、現在ベルリン自由大学東ヨーロッパ研究所に所属しており、『深淵へ: マイダンから戦争までのウクライナ』の著者です。」&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.newglobalpolitics.org/censorship-in-western-academia-and-the-war-in-ukraine/</guid>
-      <pubDate>Fri, 12 Dec 2025 12:42:54 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46243586</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;manarth:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;&lt;pre&gt;&lt;code&gt; &amp;gt; 「強化学習 (RL) の効果により不正が発生する可能性があり、報酬形成に関する課題により、モデルが意図せずに嘘をついたり、その行動を偽ったりするよう促すトレーニング プロセスが生じる可能性があります。」
+    &gt; 「「最も抵抗の少ない道」が続く限り、自白の報酬を最大化するには、不正行為を隠蔽するのではなく表面化することが重要であり、これがモデルに正直になるよう動機付けるからです。」
+&lt;/code&gt;&lt;/pre&gt;
+人間もこのスタイルの報酬形成から恩恵を受ける可能性があります。&lt;p&gt;&lt;pre&gt;&lt;code&gt; &amp;gt; 「モデルがその「主要な」部分に嘘をついたり、欠点を省略したりすると、問題が発生することがわかりました。答えは、これらの行動を正直に告白することが多く、この告白の正直さは訓練によって適度に改善されます。」
+&lt;/code&gt;&lt;/pre&gt;
+これが主要な模範解答にも反映されているのか、それとも「誠実さ」が反映されているのかはわかりませんでした。改善はデジタル告白ブースに限定されるのでしょうか？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arxiv.org/abs/2512.08093</guid>
+      <pubDate>Fri, 12 Dec 2025 10:37:51 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46242795</comments>
     </item>
   </channel>
 </rss>

@@ -6,68 +6,121 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 12 Dec 2025 12:52:36 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Dec 2025 15:29:43 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>27年后，奥地利在预算内开通了世界第六长的铁路隧道</title>
-      <link>https://infrastruktur.oebb.at/en/projects-for-austria/railway-lines/southern-line-vienna-villach/koralm-railway</link>
-      <description>&lt;p&gt;科拉姆铁路 施泰尔马克州和克恩顿州之间快速、安全的服务：这就是科拉姆铁路。科拉姆铁路连接欧洲经济也受益于新科拉姆铁路的建设。网络摄像头 在家跟踪施工进度 – 我们在科拉姆铁路施工现场的网络摄像头使之成为可能。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; After 27 years within budget Austria open 6thlongest railway tunnel in the world&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46242871"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://infrastruktur.oebb.at/en/projects-for-austria/railway-lines/southern-line-vienna-villach/koralm-railway'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>使用生成的列以全索引速度运行 SQLite JSON</title>
+      <link>https://www.dbpro.app/blog/sqlite-json-virtual-columns-indexing</link>
+      <description>&lt;p&gt;存储原始 JSON 首先，创建一个带有 JSON 列的简单表： ⚡加载 SQL 环境。让我们添加虚拟生成的列。突然间，您的 JSON 的行为就像普通的关系列一样，具有完整的索引支持。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; SQLite JSON at Full Index Speed Using Generated Columns&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243904"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.dbpro.app/blog/sqlite-json-virtual-columns-indexing'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;moregrist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;生成的列非常棒，但我真正喜欢的是 Postgres 风格的 gin 索引，它可以显着加快对意外键的 json 查询速度。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;N_Lens:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;多么巧妙的技巧啊，我也喜欢 SQLite。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;meindnoch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在第二部分中，您使用 CREATE TABLE 加上三个单独的 ALTER TABLE 调用来添加虚拟列。在第三部分中，您将使用单个 CREATE TABLE，其中包含从一开始就包含的虚拟列。&lt;p&gt;为什么？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ellisv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望开发人员能够标准化他们的数据，而不是将所有内容都推入 JSON(B) 列，尤其是当记录之间存在一致的架构时。&lt;p&gt;设置正确的索引、强制约束以及每次实际想要使用数据时都会增加开销，这要困难得多。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AlexErrant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我正在寻找一种方法来索引包含 JSON 数组的 JSON 列，例如标签列表。 AFAIK 这个方法不起作用；您需要使用 FTS 或单独的“标签”您索引的表。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;baq:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的理解是 Snowflake 的工作原理有点像幕后，对吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bushbaba:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于较小的数据集（数百行或数千行），我不明白为什么您不只在需要时使用带有生成列&amp;#x2F;索引的 json 列&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jelder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为这是常见的做法，为 JSON 性能生成列。我什至使用它（尽管它是在 Postgres 中）来维护外键约束，其中键被隐藏在 JSON 列中。我们所做的事情有点被诅咒，但效果很好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;小错误报告：我无法从 iPhone 上编辑这些 SQL 编辑器小部件中的文本，也无法滚动它们来查看超出页面宽度的文本。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mring33621:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;IIRC、Vertica 也有类似的功能。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mcluck:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常酷的文章。为了真正深入了解，我很想看看查询计划如何变化。它看起来应该可以正常工作，但我的大脑拒绝相信它能够如此完美地使用这些新索引&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Lex-2008:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣，但是你不能使用“Index On Expression”吗？ &lt;a href="https:&amp;#x2F;&amp;#x2F;sqlite.org&amp;#x2F;expridx.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;sqlite.org&amp;#x2F;expridx.html&lt;/a&gt;&gt;？&lt;p&gt;即像这样的东西： CREATE INDEX idx_events_type ON events(json_extract(data, &amp;#x27;$.type&amp;#x27;))?&lt;​​p&gt;我想这里需要注意的是，json 路径语法的轻微变化（现在想不出任何变化）可能会导致 SQLite 不使用此索引，而在显式指定虚拟生成列的情况下，您保证使用该索引。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;upmostly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在阅读 bambax 在 2023 年对 HN 帖子的评论后，我受到启发写了这篇博文：&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=37082941"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=37082941&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.dbpro.app/blog/sqlite-json-virtual-columns-indexing</guid>
+      <pubDate>Fri, 12 Dec 2025 13:25:19 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46243904</comments>
+    </item>
+    <item>
+      <title>Fedora：用于长期数字保存的开源存储库</title>
+      <link>https://fedorarepository.org/</link>
+      <description>&lt;p&gt;成为会员 下载 为什么选择 Fedora。想要支持 Fedora。成为会员 Fedora 资源 帮助您开始使用 Fedora 的资源。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Fedora: Open-source repository for long-term digital preservation&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243883"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://fedorarepository.org/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;economistbob:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那些摧毁了 CentOS 并为 Xlibre 疯狂的人们值得信赖，他们会永远存储你需要的东西。&lt;p&gt;让我感到怀疑。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cramcgrab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哇。 Java 11。看起来是一个很棒的更新项目。有人知道我们可以在哪里让一群计算机科学学生使用现代工具集更新代码吗？以前是麻省理工学院、克拉克森大学、康奈尔大学、伯克利分校、罗切斯特理工学院等都搞出了这些东西。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zoobab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;FTP 更好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fodmap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为了避免误解，这个存储库是关于康奈尔大学的一个项目，名为灵活可扩展数字对象存储库架构 (FEDORA)，而不是红帽项目。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://fedorarepository.org/</guid>
+      <pubDate>Fri, 12 Dec 2025 13:23:31 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46243883</comments>
+    </item>
+    <item>
+      <title>BpfJailer：eBPF 强制访问控制 [pdf]</title>
+      <link>https://lpc.events/event/19/contributions/2159/attachments/1833/3929/BpfJailer%20LPC%202025.pdf</link>
+      <description>&lt;p&gt;��2 Ρ��� ��Z:�� vn�h�]c�f��:����X���� : g|� �x�}�:]a6X_��S ��U&amp;�����K��u��;�k&gt;F������d M�� ,&gt;|Cp�^ ���� 1 ~#����`M��H �#�A�� �� ���H 5����km�� 0��| endstream endobj 8 0 obj 653 endobj 9 0 obj [ ] endobj 10 0 obj &lt;&lt; /CA 1. 1A Qa "q 2���� #B�� R��$3br� %&amp;'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz���������������������������������������������������������������������� �� � w �� � w . . B���� #3R� br. $4�%� &amp;'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz���������������������������������������������������������������������� .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; BpfJailer: eBPF Mandatory Access Control [pdf]&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46244378"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://lpc.events/event/19/contributions/2159/attachments/1833/3929/BpfJailer%20LPC%202025.pdf'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;voxadam:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我只找到了这次演讲的幻灯片，如果有人有视频，我很想看看。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://lpc.events/event/19/contributions/2159/attachments/1833/3929/BpfJailer%20LPC%202025.pdf</guid>
+      <pubDate>Fri, 12 Dec 2025 14:20:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46244378</comments>
+    </item>
+    <item>
+      <title>Show HN：Autofix Bot – 混合静态分析和 AI 代码审查代理</title>
+      <link>https://news.ycombinator.com/item?id=46237358</link>
+      <description>&lt;p&gt;- AI 审查：代理以静态结果作为锚点来审查代码。 42% F1)，克劳德代码 (71.2-3B-v1[3] https://autofix.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Autofix Bot – Hybrid static analysis and AI code review agent&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46237358"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46237358'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tarun_anand:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;恭喜！锚定很重要。代码审查的其他部分（例如编码指南、性能问题等）怎么样？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_pdp_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这和 Claude Code 使用 semgrep 这样的工具有什么区别？&lt;p&gt;而且我不认为这个工具应该出现在开发人员流程中，因为根据我的经验，它不太可能定期运行它。这应该是 PR 接受之前 QA 流程的一部分。&lt;p&gt;我希望这会有所帮助，祝你好运。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nickphx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“将瓶颈转移到代码审查”......十年的轻描淡写。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46237358</guid>
+      <pubDate>Thu, 11 Dec 2025 21:24:34 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46237358</comments>
+    </item>
+    <item>
+      <title>为什么在线年龄验证不像亲自出示身份证件那样？</title>
+      <link>https://www.eff.org/deeplinks/2025/12/why-isnt-online-age-verification-just-showing-your-id-person</link>
+      <description>&lt;p&gt;在线年龄验证给更多人带来了负担。在线提交的数据很少只保留在您和另一方之间。然后，用户的个人识别数据在这些合作伙伴之间流通。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Why isn't online age verification just like showing your ID in person?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243848"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.eff.org/deeplinks/2025/12/why-isnt-online-age-verification-just-showing-your-id-person'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;flowerthoughts:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;事实上，隧道本身只有17年：&lt;p&gt;1998年：科拉姆铁路开工&lt;p&gt;2008年：科拉姆隧道开工&lt;p&gt;2018年：科拉姆隧道贯通&lt;p&gt;2020年：科拉姆隧道最终贯通&lt;p&gt;2025年：本公告（&lt;a href="https:&amp;#x2F;&amp;#x2F;orf.at&amp;#x2F;stories&amp;#x2F;3414173&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;orf.at&amp;#x2F;stories&amp;#x2F;3414173&amp;#x2F;&lt;/a&gt;（德语）&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;infrastruktur.oebb.at&amp;#x2F;en&amp;#x2F;奥地利项目&amp;#x2F;铁路线&amp;#x2F;南线-维也纳-维拉赫&amp;#x2F;koralm-railway&amp;#x2F;关于项目" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;infrastruktur.oebb.at&amp;#x2F;en&amp;#x2F;projects-for-austria&amp;#x2F;railwa...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;apexalpha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我以为这是关于阿尔卑斯山下的新基础隧道，并且有点困惑。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaway2037:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;首先，这是一项巨大的成就。  当我查看 Wiki 页面时： &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Koralm_Railway" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Koralm_Railway&lt;/a&gt;&lt;p&gt;...多个多阶段项目。  向这项工作致敬。&lt;p&gt;其次，我注意到建造这条隧道花了多长时间：Koralm 隧道 -&gt; &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Koralm_Tunnel" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Koralm_Tunnel&lt;/a&gt;&lt;p&gt;全长 33 公里，从 2008 年开始到2025年建造它。  那真是太长的时间了！  东京都营大江户线全长40多公里，历时约10年建成。  我对巨大差异的猜测是：科拉姆隧道的地球工程要复杂得多，而且岩石更坚硬。  有这方面经验的人可以评论一下吗？  我想了解更多。  我猜东京市中心的大部分地区都是冲积平原（上海也类似），所以你基本上是在粘土和沙子中挖掘——这对于现代隧道掘进机来说是很容易的事情。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;djoldman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;网络摄像头！&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;infrastruktur.oebb.at&amp;#x2F;en&amp;#x2F;projects-for-austria&amp;#x2F;railway-lines&amp;#x2F;southern-line-vienna-villach&amp;#x2F;koralm-railway&amp;#x2F;webcams-koralm-railway" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;infrastruktur.oebb.at&amp;#x2F;en&amp;#x2F;projects-for-austria&amp;#x2F;railwa...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;saubeidl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我知道这是一个小挑剔，但我对两个“由欧盟基金 x 资助”感到无理的恼火。具有不同旗帜大小、填充、字体等的横幅。&lt;p&gt;为什么这些没有统一的设计语言？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;franciscop:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这个标题有点奇怪，不代表原始标题也不代表文章内容。 “在预算范围内”是什么意思？意思是这里？它的成本是最初预算设定的成本吗？在文章中找不到与预算相关的任何内容。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;the_mitsuhiko:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我从小就真的很期待这个。  看到它真的在这里真是令人着迷。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;roflmaostc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您想知道，Koralm 隧道的长度为 32.9 公里&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Koralm_Tunnel" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Koralm_Tunnel&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://infrastruktur.oebb.at/en/projects-for-austria/railway-lines/southern-line-vienna-villach/koralm-railway</guid>
-      <pubDate>Fri, 12 Dec 2025 10:50:22 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46242871</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zug_zug:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从密码学角度来说，有一些技术可以让你证明你是美国数亿成年人中的一员，但不会透露你是谁。它比比特币简单得多。&lt;p&gt;我提出这个问题是因为它是完美的试金石，可以显示您是否真的关心年龄验证，或者您是否希望对所有互联网行为进行个人追踪。&lt;p&gt;在某些情况下我对此表示同意（例如，一个不希望外国煽动者假装自己是美国选民的论坛），但整个色情片事情是一场荒谬的闹剧，因为仍然会有数百万个不执行美国法律的非美国色情网站。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;johnnienaked:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我从不验证我的身份来访问互联网上的任何内容。我会停止使用它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;3rodents:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不喜欢这篇文章。不相关的技术细微差别与哲学上的对立混合在一起。技术问题都是可以解决的。言论自由的论点也是愚蠢的：如果限制谁可以在色情内容上手淫是一个言论自由的问题，那么限制谁可以进入酒吧并与顾客交谈当然也是一个言论自由的问题。&lt;p&gt;因为你认为互联网应该开放和免费而反对身份检查是合理的，但这篇文章将自己扭曲成一个结，把所有的东西都扔到了墙上。有理由相信这是一个言论自由问题。但我们同时不能说，同样的论点不适用于互联网之外。&lt;p&gt;（便利店扫描身份证、酒吧扫描身份证、酒店复印护照……）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;miguelbemartin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在我看来，访问互联网应该始终在由成年人控制的设备后面。为未成年人设置适当的限制应该是这位成年人的责任。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hexbin010:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看看奥弗顿的窗口正在迅速缩小。谢谢EFF！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rzerowan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;矛盾的是，这是我认为应该在零知识证明的最终用户设备上提出的功能要求之一。&lt;p&gt;通过对任何在线属性的简单回复来在设备上进行最终用户验证是有意义的：通过年龄验证或未通过。&lt;p&gt;否则，这些数据的集中化和最终泄漏将是一群等待的蠕虫。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;magicalhippo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于上述年龄验证中心的讨论：&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46223389"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46223389&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jagoff:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这与年龄验证无关，而且从来都不是，这充其量是一种干扰，最坏的是一种错觉。这是为了将您的真实姓名与您的所有在线活动联系起来，并让当前一代的孩子在达到投票年龄之前习惯并接受它。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.eff.org/deeplinks/2025/12/why-isnt-online-age-verification-just-showing-your-id-person</guid>
+      <pubDate>Fri, 12 Dec 2025 13:17:51 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46243848</comments>
     </item>
     <item>
-      <title>从文本到令牌：令牌化管道如何工作</title>
-      <link>https://www.paradedb.com/blog/when-tokenization-becomes-token</link>
-      <description>&lt;p&gt;通过标记化将文本分割成可搜索的部分标记化阶段将我们过滤后的文本分割成可索引的单元。这包括按空格分割的简单空白分词器，以及理解非英语字符集的更复杂的语言感知分词器2。当您的内容包含需要特殊处理的非散文文本时，这些可能至关重要。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; From text to token: How tokenization pipelines work&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46232003"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.paradedb.com/blog/when-tokenization-becomes-token'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>通过坦白培训法学硕士诚实</title>
+      <link>https://arxiv.org/abs/2512.08093</link>
+      <description>&lt;p&gt;) Connected Papers Toggle Connected Papers（什么是 Connected Papers。） Litmaps Toggle Litmaps（什么是 Litmaps。） 代码链接 Toggle Papers with Code（什么是 Papers with Code。）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Training LLMs for Honesty via Confessions&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46242795"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arxiv.org/abs/2512.08093'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wongarsu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;尤其是传统搜索的标记化。法学硕士使用截然不同的标记化来实现截然不同的目标&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.paradedb.com/blog/when-tokenization-becomes-token</guid>
-      <pubDate>Thu, 11 Dec 2025 14:45:49 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46232003</comments>
-    </item>
-    <item>
-      <title>Tor 项目正在转向 Rust，放弃 C</title>
-      <link>https://itsfoss.com/news/tor-rust-rewrite-progress/</link>
-      <description>&lt;p&gt;它是一个单独的计时器，用于控制连接电路何时变得不可用以及何时关闭。这应该可以降低因可预测的超时行为而产生指纹的风险。这些密钥处理洋葱服务的客户端授权。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Tor Project Is Making a Switch to Rust, Ditches C&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243543"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://itsfoss.com/news/tor-rust-rewrite-progress/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://itsfoss.com/news/tor-rust-rewrite-progress/</guid>
-      <pubDate>Fri, 12 Dec 2025 12:35:57 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46243543</comments>
-    </item>
-    <item>
-      <title>西方学术界的审查制度和乌克兰战争</title>
-      <link>https://www.newglobalpolitics.org/censorship-in-western-academia-and-the-war-in-ukraine/</link>
-      <description>&lt;p&gt;2025 年 12 月 10 日哈尔科夫的巴士化，2025 年 12 月 4 日。这个案例说明了西方机构中的学术自由和公开辩论是如何受到侵蚀的，包括那些公开反对独裁趋势的机构。我们后来发现RevDem团队和民主研究所同时发表了关于暂停的公开声明。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Censorship in Western Academia and the War in Ukraine&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243586"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.newglobalpolitics.org/censorship-in-western-academia-and-the-war-in-ukraine/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hackandthink:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;前段时间读过他的书，值得一读。&lt;p&gt;“弗拉基米尔·伊先科是一位来自乌克兰的社会学家，目前就职于柏林自由大学东欧研究所，也是《走向深渊：从独立广场到战争的乌克兰》一书的作者。”&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.newglobalpolitics.org/censorship-in-western-academia-and-the-war-in-ukraine/</guid>
-      <pubDate>Fri, 12 Dec 2025 12:42:54 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46243586</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;manarth:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;&lt;前&gt;&lt;代码&gt;&gt; “由于强化学习（RL）的影响，可能会出现不诚实行为，其中奖励塑造的挑战可能会导致训练过程无意中激励模型撒谎或歪曲其行为”
+    &gt; “只要走‘阻力最小的路径’”因为最大化认罪奖励是揭露不当行为而不是掩盖它，这会激励模型诚实”。
+&lt;/code&gt;&lt;/pre&gt;
+人类也可能从这种奖励塑造方式中受益。&lt;p&gt;&lt;pre&gt;&lt;code&gt; &gt; “我们发现，当模型在其“主要”方面撒谎或遗漏缺陷时，答案是，它经常诚实地承认这些行为，并且这种坦白诚实程度会随着训练而得到提高。”
+&lt;/code&gt;&lt;/pre&gt;
+我看不出这是否也反映在主要模型答案中，或者“诚实”是否符合主要模型答案。改进仅限于数字告白亭吗？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arxiv.org/abs/2512.08093</guid>
+      <pubDate>Fri, 12 Dec 2025 10:37:51 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46242795</comments>
     </item>
   </channel>
 </rss>

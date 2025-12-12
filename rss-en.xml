@@ -6,64 +6,115 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Fri, 12 Dec 2025 12:52:36 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Dec 2025 15:29:43 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>After 27 years within budget Austria open 6thlongest railway tunnel in the world</title>
-      <link>https://infrastruktur.oebb.at/en/projects-for-austria/railway-lines/southern-line-vienna-villach/koralm-railway</link>
-      <description>&lt;p&gt;Koralm Railway A fast and safe service between Styria and Carinthia: That’s the Koralm Railway. Koralm Railway connects Europe The economy is also benefiting from the construction of the new Koralm Railway. Webcams Follow construction progress from home – our webcams on the construction sites of the Koralm Railway make it possible.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46242871"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://infrastruktur.oebb.at/en/projects-for-austria/railway-lines/southern-line-vienna-villach/koralm-railway'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>SQLite JSON at Full Index Speed Using Generated Columns</title>
+      <link>https://www.dbpro.app/blog/sqlite-json-virtual-columns-indexing</link>
+      <description>&lt;p&gt;Store Raw JSON First, create a simple table with a JSON column: ⚡Loading SQL environment. Let's add virtual generated columns. Suddenly your JSON behaves like normal relational columns with full index support.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243904"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.dbpro.app/blog/sqlite-json-virtual-columns-indexing'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;moregrist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Generated columns are pretty great, but what I would really love is a Postgres-style gin index, which dramatically speeds up json queries for unanticipated  keys.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;N_Lens:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;What a neat trick, I love SQLite as well.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;meindnoch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;In the 2nd section you&amp;#x27;re using a CREATE TABLE plus three separate ALTER TABLE calls to add the virtual columns. In the 3rd section you&amp;#x27;re using a single CREATE TABLE with the virtual columns included from the get go.&lt;p&gt;Why?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ellisv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I wish devs would normalize their data rather than shove everything into a JSON(B) column, especially when there is a consistent schema across records.&lt;p&gt;It&amp;#x27;s much harder to setup proper indexes, enforce constraints, and adds overhead every time you actually want to use the data.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AlexErrant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I was looking for a way to index a JSON column that contains a JSON array, like a list of tags. AFAIK this method won&amp;#x27;t work for that; you&amp;#x27;ll either need to use FTS or a separate &amp;quot;tag&amp;quot; table that you index.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;baq:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;My understanding is Snowflake works kinda like that behind the scenes right?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bushbaba:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;For smaller datasets (100s of thousands of rows) I don’t see why you wouldn’t just use json columns with generated column&amp;#x2F;index where needed&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jelder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I thought this was common practice, generated columns for JSON performance. I&amp;#x27;ve even used this (although it was in Postgres) to maintain foreign key constraints where the key is buried in a JSON column. What we were doing was slightly cursed but it worked perfectly.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Tiny bug report: I couldn&amp;#x27;t edit text in those SQL editor widgets from my iPhone, and I couldn&amp;#x27;t scroll them to see text that extended past the width of the page either.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mring33621:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;IIRC, Vertica had&amp;#x2F;has a similar feature.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mcluck:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Very cool article. To really drill it home, I would have loved to see how the query plan changes. It _looks_ like it should Just Work(tm) but my brain refuses to believe that it&amp;#x27;s able to use those new indexes so flawlessly&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Lex-2008:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;interesting, but can&amp;#x27;t you use &amp;quot;Index On Expression&amp;quot; &amp;lt;&lt;a href="https:&amp;#x2F;&amp;#x2F;sqlite.org&amp;#x2F;expridx.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;sqlite.org&amp;#x2F;expridx.html&lt;/a&gt;&amp;gt;?&lt;p&gt;i.e. something like this: CREATE INDEX idx_events_type ON events(json_extract(data, &amp;#x27;$.type&amp;#x27;))?&lt;p&gt;i guess caveat here is that slight change in json path syntax (can&amp;#x27;t think of any right now) can cause SQLite to not use this index, while in case of explicitly specified Virtual Generated Columns you&amp;#x27;re guaranteed to use the index.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;upmostly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I was inspired to write this blog post after reading bambax&amp;#x27;s comment on a HN post back in 2023: &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=37082941"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=37082941&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.dbpro.app/blog/sqlite-json-virtual-columns-indexing</guid>
+      <pubDate>Fri, 12 Dec 2025 13:25:19 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46243904</comments>
+    </item>
+    <item>
+      <title>Fedora: Open-source repository for long-term digital preservation</title>
+      <link>https://fedorarepository.org/</link>
+      <description>&lt;p&gt;Become a member Download Why Choose Fedora. Want to support Fedora. Become a Member Fedora Resources Resources to help you get started with Fedora.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243883"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://fedorarepository.org/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;economistbob:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The people who destroyed CentOS and went berserk over Xlibre can be trusted to store something you need forever.&lt;p&gt;Color me skeptical.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cramcgrab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Wow. Java 11. Looks like a great project for an update. Anybody know where we can get a group of CS students to update the code with a modern toolset? Used to be MIT, Clarkson, Cornell, Berkeley, RIT, etc cranked this stuff out.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zoobab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;FTP was better.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fodmap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;To avoid misunderstandings, this repository is about a project at Cornell University named the Flexible Extensible Digital Object Repository Architecture (FEDORA), not a Red Hat one.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://fedorarepository.org/</guid>
+      <pubDate>Fri, 12 Dec 2025 13:23:31 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46243883</comments>
+    </item>
+    <item>
+      <title>BpfJailer: eBPF Mandatory Access Control [pdf]</title>
+      <link>https://lpc.events/event/19/contributions/2159/attachments/1833/3929/BpfJailer%20LPC%202025.pdf</link>
+      <description>&lt;p&gt;��2Ρ�����Z:�� vn�h�]c�f��:����Xۥ�� :g|��x�}�:]a6X_��S �U&amp;�����K��u�;�k&gt;F����ہd M��,&gt;|Cp�^����1~#����`M��H�#�A�������H5����km��0��| endstream endobj 8 0 obj 653 endobj 9 0 obj [ ] endobj 10 0 obj &lt;&lt; /CA 1. 1AQa"q2���#B��R��$3br� %&amp;'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz���������������������������������������������������������������������������  ���w. 1AQaq"2�B���� #3R�br� $4�%�&amp;'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz�������������������������������������������������������������������������� .&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46244378"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://lpc.events/event/19/contributions/2159/attachments/1833/3929/BpfJailer%20LPC%202025.pdf'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;voxadam:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I&amp;#x27;ve only found the slides for this talk, if anyone has video I&amp;#x27;d love to see it.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://lpc.events/event/19/contributions/2159/attachments/1833/3929/BpfJailer%20LPC%202025.pdf</guid>
+      <pubDate>Fri, 12 Dec 2025 14:20:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46244378</comments>
+    </item>
+    <item>
+      <title>Show HN: Autofix Bot – Hybrid static analysis and AI code review agent</title>
+      <link>https://news.ycombinator.com/item?id=46237358</link>
+      <description>&lt;p&gt;- AI review: The agent reviews code with static findings as anchors. 42% F1), Claude Code (71. 2-3B-v1[3] https://autofix.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46237358"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46237358'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tarun_anand:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Congratulations!! Anchoring is important. What about other parts of the code review like coding guidelines, perf issues etc?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_pdp_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;What is the difference between this and let&amp;#x27;s say Claude Code using something like semgrep as a tool?&lt;p&gt;Also I don&amp;#x27;t think this tool should be in the developer flow as in my experience it is unlikely to run it on the regular. It should be something that is done as part of the QA process before PR acceptance.&lt;p&gt;I hope this helps and good luck.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nickphx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;quot;shifted bottleneck to code review&amp;quot;... understatement of decade.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46237358</guid>
+      <pubDate>Thu, 11 Dec 2025 21:24:34 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46237358</comments>
+    </item>
+    <item>
+      <title>Why isn't online age verification just like showing your ID in person?</title>
+      <link>https://www.eff.org/deeplinks/2025/12/why-isnt-online-age-verification-just-showing-your-id-person</link>
+      <description>&lt;p&gt;Online age verification burdens many more people. Data submitted online rarely just stays between you and one other party. Users’ personal identifying data then circulates among these partners.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243848"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.eff.org/deeplinks/2025/12/why-isnt-online-age-verification-just-showing-your-id-person'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;flowerthoughts:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Actually, the tunnel itself was only 17 years:&lt;p&gt;1998: Start of construction of the Koralm Railway&lt;p&gt;2008: Start of construction of the Koralm Tunnel&lt;p&gt;2018: Breakthrough Koralm Tunnel&lt;p&gt;2020: Final Koralm tunnel breakthrough&lt;p&gt;2025: This announcement (&lt;a href="https:&amp;#x2F;&amp;#x2F;orf.at&amp;#x2F;stories&amp;#x2F;3414173&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;orf.at&amp;#x2F;stories&amp;#x2F;3414173&amp;#x2F;&lt;/a&gt; in German)&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;infrastruktur.oebb.at&amp;#x2F;en&amp;#x2F;projects-for-austria&amp;#x2F;railway-lines&amp;#x2F;southern-line-vienna-villach&amp;#x2F;koralm-railway&amp;#x2F;about-the-project" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;infrastruktur.oebb.at&amp;#x2F;en&amp;#x2F;projects-for-austria&amp;#x2F;railwa...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;apexalpha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I thought this was about the new base tunnel under the Alps and was very confused for a bit.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaway2037:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;First, this is a massive accomplishment.  When I looked at the Wiki page: &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Koralm_Railway" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Koralm_Railway&lt;/a&gt;&lt;p&gt;... it looks like a multi-multi-multi-phase project.  Hats off to making this work.&lt;p&gt;Second, I noticed how long it took to build this tunnel: Koralm Tunnel -&amp;gt; &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Koralm_Tunnel" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Koralm_Tunnel&lt;/a&gt;&lt;p&gt;It is 33km, and it took from 2008 to 2025 to build it.  That is a damn long time!  The Toei Oedo line in Tokyo is 40+km and was built in about 10 years.  My guess about the wild difference: The geoengineering of the Koralm Tunnel is way more complex, and&amp;#x2F;or the rock is much harder.  Can anyone with experience in this area comment?  I would like to learn more.  I guess that most of central Tokyo is aluvial plains (Shanghai is similar), so you are basically digging through clay and sand -- easy stuff for modern tunnel boring machines.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;djoldman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Webcams!&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;infrastruktur.oebb.at&amp;#x2F;en&amp;#x2F;projects-for-austria&amp;#x2F;railway-lines&amp;#x2F;southern-line-vienna-villach&amp;#x2F;koralm-railway&amp;#x2F;webcams-koralm-railway" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;infrastruktur.oebb.at&amp;#x2F;en&amp;#x2F;projects-for-austria&amp;#x2F;railwa...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;saubeidl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I know its a small nitpick, but I got unreasonably annoyed at the two &amp;quot;Financed by EU fund x&amp;quot; banners having different flag sizes, paddings, fonts etc.&lt;p&gt;How is there no unifying design language for these?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;franciscop:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This headline is a bit odd and doesn&amp;#x27;t represent the original title nor article content. What does &amp;quot;within budget&amp;quot; mean here? That it costed what the original budget set out to cost? Couldn&amp;#x27;t find anything related to the budget within the article.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;the_mitsuhiko:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I really waited for this since I was a child.  It’s fascinating to see it actually be here.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;roflmaostc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;In case you wonder, the Koralm Tunnel has a length of 32.9km&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Koralm_Tunnel" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Koralm_Tunnel&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://infrastruktur.oebb.at/en/projects-for-austria/railway-lines/southern-line-vienna-villach/koralm-railway</guid>
-      <pubDate>Fri, 12 Dec 2025 10:50:22 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46242871</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zug_zug:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Cryptographically there are techniques that let you prove you&amp;#x27;re one of the several hundred million adults in the US that don&amp;#x27;t reveal anything about which adult you are. It&amp;#x27;s much less complicated than bitcoin.&lt;p&gt;I&amp;#x27;m bringing this up because it&amp;#x27;s the perfect litmus test to show whether you really care about age verification, or if you want personal trackability for all internet behavior.&lt;p&gt;I&amp;#x27;d be okay with this for certain situations (e.g. a forum that doesn&amp;#x27;t want to foreign agitators to pretend they are US voters), but the whole porn thing is a ridiculous farce because there are still going to always be millions of non-us porn sites that don&amp;#x27;t enforce US laws.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;johnnienaked:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I&amp;#x27;m never verifying my ID to access anything on the internet. I&amp;#x27;ll just stop using it.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;3rodents:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I don’t like this article. Irrelevant technical nuance is comingled with a philosophical opposition. The technical issues are all solvable. The free speech argument is foolish too: if limiting who can jerk off to pornography is an issue of free speech, surely so is limiting who can enter a bar and converse with the patrons.&lt;p&gt;Opposition to ID checks because you believe the internet should be open and free is reasonable but this article twists itself into knots throwing everything at the wall. And it is reasonable to believe it is a free speech issue. But we can’t say, at the same time, that the same arguments don’t apply outside of the internet.&lt;p&gt;(Convenience stores scan ID, bars scan ID, hotels take copies of passports…)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;miguelbemartin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;In my opinion, access to internet should always be behind a device controlled by an adult. And it should be this adult&amp;#x27;s responsibility to set appropriate restrictions for minors.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hexbin010:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Look at the Overton window rapidly shrinking. Thanks EFF!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rzerowan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Paradoxically this is one of those features&amp;#x2F;requirements that i feel should be on the end-user-device with zero knowledge proof.&lt;p&gt;It would make sense to have the enduser verification ondevice with a simple reply to any online property : Passed age verification&amp;#x2F;or not.&lt;p&gt;Otherwise the centralization and eventual leak of this data is a can of worms in waiting.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;magicalhippo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Discussion on the mentioned age verification hub here: &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46223389"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46223389&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jagoff:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;It&amp;#x27;s not about age verification and it never was, that is a distraction at best and a delusion at worst. This is about tying your real name to all of your online activities, and about getting the current generation of children used to it and accepting of it before they reach voting age.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.eff.org/deeplinks/2025/12/why-isnt-online-age-verification-just-showing-your-id-person</guid>
+      <pubDate>Fri, 12 Dec 2025 13:17:51 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46243848</comments>
     </item>
     <item>
-      <title>From text to token: How tokenization pipelines work</title>
-      <link>https://www.paradedb.com/blog/when-tokenization-becomes-token</link>
-      <description>&lt;p&gt;Splitting Text Into Searchable Pieces with Tokenization The tokenization phase takes our filtered text and splits it up into indexable units. This includes simple whitespace tokenizers that split on spaces, as well as more sophisticated language-aware tokenizers that understand non-English character sets2. These can be essential when your content contains non-prose text that needs special handling.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46232003"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.paradedb.com/blog/when-tokenization-becomes-token'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Training LLMs for Honesty via Confessions</title>
+      <link>https://arxiv.org/abs/2512.08093</link>
+      <description>&lt;p&gt;) Connected Papers Toggle Connected Papers (What is Connected Papers. ) Litmaps Toggle Litmaps (What is Litmaps. ) Links to Code Toggle Papers with Code (What is Papers with Code.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46242795"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arxiv.org/abs/2512.08093'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wongarsu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Notably tokenization for traditional search. LLMs use very different tokenization with very different goals&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.paradedb.com/blog/when-tokenization-becomes-token</guid>
-      <pubDate>Thu, 11 Dec 2025 14:45:49 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46232003</comments>
-    </item>
-    <item>
-      <title>The Tor Project Is Making a Switch to Rust, Ditches C</title>
-      <link>https://itsfoss.com/news/tor-rust-rewrite-progress/</link>
-      <description>&lt;p&gt;It is a single timer that controls when your connection circuits become unavailable and when they close down. This should reduce the risk of fingerprinting from predictable timeout behavior. These keys handle client authorization for onion services.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243543"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://itsfoss.com/news/tor-rust-rewrite-progress/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://itsfoss.com/news/tor-rust-rewrite-progress/</guid>
-      <pubDate>Fri, 12 Dec 2025 12:35:57 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46243543</comments>
-    </item>
-    <item>
-      <title>Censorship in Western Academia and the War in Ukraine</title>
-      <link>https://www.newglobalpolitics.org/censorship-in-western-academia-and-the-war-in-ukraine/</link>
-      <description>&lt;p&gt;December 10, 2025 Busification in Kharkiv, December 4, 2025. This case illustrates how academic freedom and open debate are eroding in Western institutions, including those that publicly position themselves against authoritarian trends. We later discovered that the RevDem team and the Democracy Institute had simultaneously issued a public statement on the suspension.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243586"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.newglobalpolitics.org/censorship-in-western-academia-and-the-war-in-ukraine/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hackandthink:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Read his book a while ago, worth reading.&lt;p&gt;&amp;quot;Volodymyr Ishchenko is a sociologist from Ukraine currently affiliated with the Institute of East European Studies, Freie Universität Berlin, and author of Towards the Abyss: Ukraine from Maidan to War.&amp;quot;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.newglobalpolitics.org/censorship-in-western-academia-and-the-war-in-ukraine/</guid>
-      <pubDate>Fri, 12 Dec 2025 12:42:54 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46243586</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;manarth:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;&lt;pre&gt;&lt;code&gt;    &amp;gt; &amp;quot;dishonesty may arise due to the effects of reinforcement learning (RL), where challenges with reward shaping can result in a training process that inadvertently incentivizes the model to lie or misrepresent its actions&amp;quot;
+    &amp;gt; &amp;quot;As long as the &amp;quot;path of least resistance&amp;quot; for maximizing confession reward is to surface misbehavior rather than covering it up, this incentivizes models to be honest&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+Humans might well benefit from this style of reward-shaping too.&lt;p&gt;&lt;pre&gt;&lt;code&gt;    &amp;gt; &amp;quot;We find that when the model lies or omits shortcomings in its &amp;quot;main&amp;quot; answer, it often confesses to these behaviors honestly, and this confession honesty modestly improves with training.&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+I couldn&amp;#x27;t see whether this also tracks in the primary model answer, or if the &amp;quot;honesty&amp;quot; improvements are confined to the digital confession booth?&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arxiv.org/abs/2512.08093</guid>
+      <pubDate>Fri, 12 Dec 2025 10:37:51 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46242795</comments>
     </item>
   </channel>
 </rss>
