@@ -6,121 +6,254 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 12 Dec 2025 15:29:43 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Dec 2025 18:42:23 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>使用生成的列以全索引速度运行 SQLite JSON</title>
-      <link>https://www.dbpro.app/blog/sqlite-json-virtual-columns-indexing</link>
-      <description>&lt;p&gt;存储原始 JSON 首先，创建一个带有 JSON 列的简单表： ⚡加载 SQL 环境。让我们添加虚拟生成的列。突然间，您的 JSON 的行为就像普通的关系列一样，具有完整的索引支持。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; SQLite JSON at Full Index Speed Using Generated Columns&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243904"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.dbpro.app/blog/sqlite-json-virtual-columns-indexing'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;moregrist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;生成的列非常棒，但我真正喜欢的是 Postgres 风格的 gin 索引，它可以显着加快对意外键的 json 查询速度。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;N_Lens:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;多么巧妙的技巧啊，我也喜欢 SQLite。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;meindnoch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在第二部分中，您使用 CREATE TABLE 加上三个单独的 ALTER TABLE 调用来添加虚拟列。在第三部分中，您将使用单个 CREATE TABLE，其中包含从一开始就包含的虚拟列。&lt;p&gt;为什么？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ellisv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望开发人员能够标准化他们的数据，而不是将所有内容都推入 JSON(B) 列，尤其是当记录之间存在一致的架构时。&lt;p&gt;设置正确的索引、强制约束以及每次实际想要使用数据时都会增加开销，这要困难得多。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AlexErrant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我正在寻找一种方法来索引包含 JSON 数组的 JSON 列，例如标签列表。 AFAIK 这个方法不起作用；您需要使用 FTS 或单独的“标签”您索引的表。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;baq:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的理解是 Snowflake 的工作原理有点像幕后，对吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bushbaba:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于较小的数据集（数百行或数千行），我不明白为什么您不只在需要时使用带有生成列&amp;#x2F;索引的 json 列&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jelder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为这是常见的做法，为 JSON 性能生成列。我什至使用它（尽管它是在 Postgres 中）来维护外键约束，其中键被隐藏在 JSON 列中。我们所做的事情有点被诅咒，但效果很好。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;小错误报告：我无法从 iPhone 上编辑这些 SQL 编辑器小部件中的文本，也无法滚动它们来查看超出页面宽度的文本。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mring33621:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;IIRC、Vertica 也有类似的功能。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mcluck:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常酷的文章。为了真正深入了解，我很想看看查询计划如何变化。它看起来应该可以正常工作，但我的大脑拒绝相信它能够如此完美地使用这些新索引&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Lex-2008:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣，但是你不能使用“Index On Expression”吗？ &lt;a href="https:&amp;#x2F;&amp;#x2F;sqlite.org&amp;#x2F;expridx.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;sqlite.org&amp;#x2F;expridx.html&lt;/a&gt;&gt;？&lt;p&gt;即像这样的东西： CREATE INDEX idx_events_type ON events(json_extract(data, &amp;#x27;$.type&amp;#x27;))?&lt;​​p&gt;我想这里需要注意的是，json 路径语法的轻微变化（现在想不出任何变化）可能会导致 SQLite 不使用此索引，而在显式指定虚拟生成列的情况下，您保证使用该索引。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;upmostly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在阅读 bambax 在 2023 年对 HN 帖子的评论后，我受到启发写了这篇博文：&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=37082941"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=37082941&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.dbpro.app/blog/sqlite-json-virtual-columns-indexing</guid>
-      <pubDate>Fri, 12 Dec 2025 13:25:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46243904</comments>
-    </item>
-    <item>
-      <title>Fedora：用于长期数字保存的开源存储库</title>
-      <link>https://fedorarepository.org/</link>
-      <description>&lt;p&gt;成为会员 下载 为什么选择 Fedora。想要支持 Fedora。成为会员 Fedora 资源 帮助您开始使用 Fedora 的资源。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Fedora: Open-source repository for long-term digital preservation&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243883"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://fedorarepository.org/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>异步DNS</title>
+      <link>https://flak.tedunangst.com/post/async-dns</link>
+      <description>&lt;p&gt;h&gt; struct server { 字符名称[32];字符 IP[16]； int 状态； };结构一切{ 结构服务器服务器[1]; int nservers；结构 pollfd pfds[4]; int npfds； }; static void addrinfo_cb(void *arg, int status, int timeouts, struct ares_addrinfo *result) { struct server *server = arg;服务器-&gt;状态=3； if (.writable) { state-&gt;pfds[idx]. n服务器； i++) { printf("正在处理服务器 %d\n", i);结构服务器 *server = &amp;state.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Async DNS&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46245923"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://flak.tedunangst.com/post/async-dns'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;economistbob:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那些摧毁了 CentOS 并为 Xlibre 疯狂的人们值得信赖，他们会永远存储你需要的东西。&lt;p&gt;让我感到怀疑。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cramcgrab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哇。 Java 11。看起来是一个很棒的更新项目。有人知道我们可以在哪里让一群计算机科学学生使用现代工具集更新代码吗？以前是麻省理工学院、克拉克森大学、康奈尔大学、伯克利分校、罗切斯特理工学院等都搞出了这些东西。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zoobab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;FTP 更好。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fodmap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为了避免误解，这个存储库是关于康奈尔大学的一个项目，名为灵活可扩展数字对象存储库架构 (FEDORA)，而不是红帽项目。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://fedorarepository.org/</guid>
-      <pubDate>Fri, 12 Dec 2025 13:23:31 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46243883</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;benatkin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;另一篇相关文章：&lt;a href="https:&amp;#x2F;&amp;#x2F;ziglang.org&amp;#x2F;devlog&amp;#x2F;2025&amp;#x2F;#2025-10-15" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ziglang.org&amp;#x2F;devlog&amp;#x2F;2025&amp;#x2F;#2025-10-15&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;01HNNWZ0MV43FF:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对我来说很奇怪的是，使用 epoll 或类似的基于事件的 DNS 没有经过实战测试的实现。我知道在 C 中比在 Rust 中更难做到，但我很确定这就是 Hickory 内部所做的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;javantanna:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只是好奇你是如何解决性能瓶颈的——测试时你发现了什么令人惊讶的事情吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;albertzeyer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最近在这里讨论了第一篇链接的文章：RIP pthread_cancel (&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45233713"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45233713&lt;/a&gt;)&lt;p&gt;在那次讨论中，与本文中的大多数相同点已经讨论过，特别是一些异步 DNS 替代方案。&lt;p&gt;另请参阅此处的讨论：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;crystal-lang&amp;#x2F;crystal&amp;#x2F;issues&amp;#x2F;13619" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;crystal-lang&amp;#x2F;crystal&amp;#x2F;问题&amp;#x2F;13619&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://flak.tedunangst.com/post/async-dns</guid>
+      <pubDate>Fri, 12 Dec 2025 16:52:41 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46245923</comments>
     </item>
     <item>
-      <title>BpfJailer：eBPF 强制访问控制 [pdf]</title>
-      <link>https://lpc.events/event/19/contributions/2159/attachments/1833/3929/BpfJailer%20LPC%202025.pdf</link>
-      <description>&lt;p&gt;��2 Ρ��� ��Z:�� vn�h�]c�f��:����X���� : g|� �x�}�:]a6X_��S ��U&amp;�����K��u��;�k&gt;F������d M�� ,&gt;|Cp�^ ���� 1 ~#����`M��H �#�A�� �� ���H 5����km�� 0��| endstream endobj 8 0 obj 653 endobj 9 0 obj [ ] endobj 10 0 obj &lt;&lt; /CA 1. 1A Qa "q 2���� #B�� R��$3br� %&amp;'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz���������������������������������������������������������������������� �� � w �� � w . . B���� #3R� br. $4�%� &amp;'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz���������������������������������������������������������������������� .&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; BpfJailer: eBPF Mandatory Access Control [pdf]&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46244378"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://lpc.events/event/19/contributions/2159/attachments/1833/3929/BpfJailer%20LPC%202025.pdf'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>中学数学表明人工智能系统不会思考</title>
+      <link>https://www.raspberrypi.org/blog/secondary-school-maths-showing-that-ai-systems-dont-think/</link>
+      <description>&lt;p&gt;老式的环境通常用于教授课堂数学概念。 （幻灯片来自研究人员的演示文稿。（幻灯片来自研究人员的演示文稿。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Secondary school maths showing that AI systems don't think&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46245731"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.raspberrypi.org/blog/secondary-school-maths-showing-that-ai-systems-dont-think/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;voxadam:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我只找到了这次演讲的幻灯片，如果有人有视频，我很想看看。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://lpc.events/event/19/contributions/2159/attachments/1833/3929/BpfJailer%20LPC%202025.pdf</guid>
-      <pubDate>Fri, 12 Dec 2025 14:20:20 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46244378</comments>
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brador:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们认为吗？&lt;p&gt;根据每一项科学衡量标准，我们的答案是否定的。这只是电流沿着连接的神经元选择阻力最小的路径，并伴有细胞死亡。&lt;p&gt;人脑智商峰值约为 200 的事实令人着迷。规模还可以更高吗？这似乎不存在，因为没有任何东西能够获得更高的分数，所以它一定不存在。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hamdingers:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果得出正确答案，我并不特别关心它是如何得到的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;frozenlettuce:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您可以用笔和纸复制法学硕士所做的所有计算。计算任何东西都需要很长时间，但这是可能的。我不认为笔和纸会“思考”，无论涉及的计算有多复杂。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;terminalshort:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;该团队希望解决一个主要且常见的误解：学生认为 ANN 系统可以学习、识别、观察和理解，而实际上这只是数学&lt;p&gt;这完全是愚蠢的。  这些人真的相信展示它不能是真实的想法，因为它是用数学描述的吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;croemer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不要认为这很好——更多的是他们活动的报告。标题上的表现不佳。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;causal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢对学生进行人工智能背后的数学教育，从而揭开他们的神秘面纱。但我认为断言“人工智能不是魔法并且人工智能系统不会思考”有点奇怪。这只是数学。”可以做出类似的陈述，说明人类大脑并非魔法，而只是生物学——但我认为我们仍然在思考。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.raspberrypi.org/blog/secondary-school-maths-showing-that-ai-systems-dont-think/</guid>
+      <pubDate>Fri, 12 Dec 2025 16:32:43 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46245731</comments>
     </item>
     <item>
-      <title>Show HN：Autofix Bot – 混合静态分析和 AI 代码审查代理</title>
-      <link>https://news.ycombinator.com/item?id=46237358</link>
-      <description>&lt;p&gt;- AI 审查：代理以静态结果作为锚点来审查代码。 42% F1)，克劳德代码 (71.2-3B-v1[3] https://autofix.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Autofix Bot – Hybrid static analysis and AI code review agent&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46237358"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46237358'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>弦理论激发了一个辉煌而又令人困惑的新数学证明</title>
+      <link>https://www.quantamagazine.org/string-theory-inspires-a-brilliant-baffling-new-math-proof-20251212/</link>
+      <description>&lt;p&gt;首页 弦理论激发了一个辉煌而又令人困惑的新数学证明评论 保存文章 稍后阅读 分享 Facebook 已复制。其他数学家也提出了疑问。数学家想要驯服无数种类型的多项式方程。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; String Theory Inspires a Brilliant, Baffling New Math Proof&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46245622"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.quantamagazine.org/string-theory-inspires-a-brilliant-baffling-new-math-proof-20251212/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.quantamagazine.org/string-theory-inspires-a-brilliant-baffling-new-math-proof-20251212/</guid>
+      <pubDate>Fri, 12 Dec 2025 16:23:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46245622</comments>
+    </item>
+    <item>
+      <title>Show HN: tomcp.org – 将任何 URL 转换为 MCP 服务器</title>
+      <link>https://github.com/Ami3466/tomcp</link>
+      <description>&lt;p&gt;toMCP 将任何网站变成 MCP 服务器 + 与任何网站聊天。 com/api 与网站聊天 访问 tomcp。 org 输入任意网站 URL 选择您的 AI 工具 复制生成的 MCP 配置 将其添加到您工具的配置文件 重新启动您的 AI 工具 聊天 访问 tomcp。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: tomcp.org – Turn any URL into an MCP server&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46246117"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/Ami3466/tomcp'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aritex:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是解决实际问题的巧妙方法。我可以使用它来快速从网页 kb 转向 mcp。感谢分享。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mbreese:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为这总体上是一个好主意，但也许有点太简单了。看起来这只适用于静态站点，对吧？然后它执行 JS fetch 来提取 html 代码，然后将其（以快速而肮脏的方式）转换为 markdown。&lt;p&gt;我知道这是指向 GH 存储库，但我很想了解更多关于作者为什么选择这种方式构建它的信息。我怀疑它可以保持低成本且免费。但为什么是CF工人呢？这里可以免费完成多少处理？&lt;p&gt;我不确定如何在 CF Worker 中做更多的事情，但这可能太简单，无法在许多网站上使用。&lt;p&gt;示例：我必须引入一个为我正在处理的项目构建的文档网站。我们希望法学硕士能够在他们的回复中使用这些文档。然而，该网站是基于 VitePress 的。我无法访问源 Markdown 文件，因此我编写了一个 MCP 获取器，它使用 dockerized headless chrome 实例来加载页面。然后，我直接从处理后的 DOM 中提取innerHTML。这可能有些过头了，但这个工具可能无法工作的示例。&lt;p&gt;但是 - 如果您有一个静态站点，这个工具可能是配置 MCP 访问的非常简单的方法。这是个好主意！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SilentM68:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;凉爽的 ：）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bsima:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;汤姆是谁？他为什么抄袭？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bakies:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为这就是 web_fetch 工具已经做的事情？工具也是通过 MCP 配置的，对吧？那么为什么我要在前面添加一个 URL，而不是仅仅使用已经可以使用的 web_fetch 工具呢？&lt;p&gt;这会偶然绕过 robots.txt 吗？不获取任何网页确实让我很烦恼，我希望使用更好的未经审查的 web_fetch。无论如何，我只是要复制粘贴内容。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/Ami3466/tomcp</guid>
+      <pubDate>Fri, 12 Dec 2025 17:10:16 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46246117</comments>
+    </item>
+    <item>
+      <title>在 iOS 支付案件法院获胜后，Epic 庆祝“苹果税的终结”</title>
+      <link>https://arstechnica.com/tech-policy/2025/12/epic-celebrates-the-end-of-the-apple-tax-after-appeals-court-win-in-ios-payments-case/</link>
+      <description>&lt;p&gt;”同样，苹果对如何设计这些外部链接的限制过于宽泛；上诉法院建议苹果只能确保以类似的方式呈现内部和外部支付选项。斯威尼表示，苹果有“无限的权力来报复”那些通过无限期推迟应用程序评论或将其产品隐藏在应用程序商店搜索结果中添加外部支付选项的应用程序。“可悲的事实是每个人都害怕苹果。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Epic celebrates "the end of the Apple Tax" after court win in iOS payments case&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46245398"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arstechnica.com/tech-policy/2025/12/epic-celebrates-the-end-of-the-apple-tax-after-appeals-court-win-in-ios-payments-case/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 18 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amelius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么微软在 90 年代没有建立一个应用程序商店，企业必须付费才能在其中销售 Windows 应用程序？&lt;p&gt;我的意思是，这当然不是因为缺乏商业洞察力。而且您不需要互联网来销售应用程序。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jiscariot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这会对 Netflix、Spotify 等其他服务有所帮助吗？还是我误读了一些事情。&lt;p&gt;至少在几年前，我的理解是 Netflix 向 Apple 支付的订阅费与他们向 AWS 托管支付的订阅费一样多。&lt;p&gt;我还注意到，在升级我的 Spotify 帐户时，我无法通过 iPhone 应用程序本身来执行此操作 - 我认为这是因为它会违反 TOS，或者他们不想向 Apple 支付大量的每月订阅费用。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;satvikpendem:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“合理的”费用&lt;i&gt;不会&lt;/i&gt;只有几百美元，它仍然占收入的一定比例，但低于 27%。苹果将​​尝试尽可能多地收取费用，并且不会容忍非百分比费用。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;websiteapi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;现在让我们禁止所有概率性数字物品，例如战利品盒。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;codedokode:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在我看来，每个可编程设备制造商都不应该被允许阻止买家对其进行重新编程。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pmarreck:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;外围问题：是否存在任何“真实”的东西？ Linux 上的 App Store 除了 Steam 之外？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;briandw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;索尼、微软、任天堂、Valve 和其他软件商店是否必须在其平台上允许迷你商店？也就是说，在免费应用程序内有自己的支付系统的软件？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;concinds:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感觉法院在促进“竞争”方面做得不好。&lt;p&gt;- 苹果不应该对外部付款收取费用，来吧。&lt;p&gt;- 强制显着披露退款政策。 Epic Games 不允许它们进行 IAP。苹果确实如此。 Epic 清楚地知道这是多么的掠夺性，押注一些孩子会找到方法花费数千美元，而父母将束手无策。理想情况下，您应该有法律强制退款，但如果没有法律，IAP 屏幕上应该有强制披露，&lt;i&gt;至少&lt;/i&gt;对于微交易游戏。你无法进​​行公平的“竞争”当你存在信息不对称时，如果这些裁决没有强制要求，你就会为这些游戏公司欺骗父母打开闸门。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ralferoo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在下面的评论中分享了相同的内容，但可能值得添加为顶级评论。&lt;p&gt;Google 所做的与 Apple 之前所做的完全相同，从下个月底到 2026 年 1 月 28 日强制执行。&lt;p&gt;他们的新要求：&lt;a href="https:&amp;#x2F;&amp;#x2F;support.google.com&amp;#x2F;googleplay&amp;#x2F;android-developer&amp;#x2F;answer&amp;#x2F;9858738" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;support.google.com&amp;#x2F;googleplay&amp;#x2F;android-developer&amp;#x2F;answer...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Someone:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;不过，Epic 创始人兼首席执行官蒂姆·斯威尼 (Tim Sweeney) 周四晚上在接受记者采访时表示，他认为这些费用应该是“超级超级小额费用”，每次 iOS 应用程序更新经过苹果审核时，费用约为“数十或数百美元”。这应该足以补偿审查应用程序的员工，以确保外部支付链接不是骗局&lt;p&gt;我认为确保外部支付链接不是骗局会比这更昂贵，因为检查一次是不够的。诈骗者会更新此类链接的目标，因此您不能仅在应用程序提交时检查这一点。您还必须从世界各地、不同的 IP 地址范围、加利福尼亚州以外的工作时间等进行检查，因为诈骗者足够聪明，可以使用此类信息来决定是否显示他们的诈骗页面。&lt;p&gt;此外，即使它变得“仅”数百美元，我想只有大公司才有能力提供外部付款选项。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ancorevard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“斯威尼在社交媒体上写道。”带有指向 X 的链接。&lt;p&gt;虽然我的用词选择很奇怪，但还是点击了作者姓名：&lt;p&gt;“你可以在 BlueSky 上找到他不规则的思考：@kyleor.land。”。&lt;p&gt;我明白了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bze12:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对这个裁决感觉不太好。无论“合理”费用意味着什么，苹果都会将其解释为一些荒谬的金额。禁令实施前，他们试图收取27%的费用&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bogwog:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; ...上诉法院现在建议，苹果仍应能够根据其“确保用户安全和隐私的实际成本”收取“合理费用”。&lt;p&gt;&amp;gt;不过，Epic 创始人兼首席执行官蒂姆·斯威尼 (Tim Sweeney) 周四晚上在接受记者采访时表示，他认为这些费用应该是“超级超级小额费用”，每次 iOS 应用程序更新经过 Apple 审核时，费用约为“数十或数百美元”。&lt;p&gt;哇，前进了一步，退了一步。干得好，Epic。&lt;p&gt;结果显然是苹果商店将拥有最多的应用程序、最新的版本以及最多的免费应用程序和游戏。我确信《堡垒之夜》会做得很好。&lt;p&gt;除非我误解了这一点，否则法院为什么会允许苹果充当竞争对手的看门人？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmclnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;现在我想知道这会对谷歌产生什么影响？  IIRC，他们一直在调查针对 Android 开发者的类似勒索费用。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pjmlp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;同时拥有Epic Store、Fortnite“迷你商店”，并且与任天堂、索尼和XBox完美兼容。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Bad_Initialism:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;蒂姆·库克（Tim Cook）对于苹果股东来说绝对是非常棒的，但对于其他任何人，尤其是客户来说，绝对是糟糕的。&lt;p&gt;围墙花园必须结束。没有理由让人们为无法运行第三方网络浏览器或以任何有意义的方式进行软件开发的 iPad Pro 支付高价。&lt;p&gt;除了非常狭窄的使用场景之外，iPad 产品系列毫无用处，尽管被洗脑的粉丝们喋喋不休。来源：曾经是其中之一。当他们开始像厕纸一样对待 RFC 时，他们就离开了生态系统。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些是同一件事吗？不同的框架，令人困惑的细节：&lt;p&gt;&lt;i&gt;苹果在 Epic Games 反垄断诉讼中赢得部分撤销制裁&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;可持续性&amp;#x2F;boards-policy-regulation&amp;#x2F;us-appeals-court-partly-reverses-sanctions-against-apple-epic-games-antitrust-2025-12-11&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;sustainability&amp;#x2F;boards-policy-regulat...&lt;/a&gt; (&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;Cbi3f" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;Cbi3f&lt;/a&gt;)&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46237312"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46237312&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nobody9999:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;原始标题（标题框太长）：&lt;p&gt;&lt;i&gt;上诉法院在 iOS 支付案件中获胜后，Epic 庆祝“苹果税的终结”&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arstechnica.com/tech-policy/2025/12/epic-celebrates-the-end-of-the-apple-tax-after-appeals-court-win-in-ios-payments-case/</guid>
+      <pubDate>Fri, 12 Dec 2025 16:04:16 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46245398</comments>
+    </item>
+    <item>
+      <title>CM0——你买不到的新树莓派</title>
+      <link>https://www.jeffgeerling.com/blog/2025/cm0-new-raspberry-pi-you-cant-buy</link>
+      <description>&lt;p&gt;这张小邮票实际上是一个完整的 Raspberry Pi Zero 2，配有 eMMC 存储和 WiFi。但为什么这只是在中国。一旦刷新，它就是一台完整的 Linux 计算机，配有 Raspberry Pi 的桌面环境。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; CM0 – a new Raspberry Pi you can't buy&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46244922"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.jeffgeerling.com/blog/2025/cm0-new-raspberry-pi-you-cant-buy'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JKCalhoun:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不知道 PCB 上的城堡形孔是为了方便 SMT。&lt;p&gt;当然让它看起来像邮票……;-)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deanputney:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Geerlingguy 和 simonw 确实令我惊讶，他们如此出色且始终如一地涵盖了各自感兴趣的领域。内容丰富，通俗易懂，通俗易懂！我确信还有其他人对自己的主题进行这样的深入报道。我也很想读它们。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.jeffgeerling.com/blog/2025/cm0-new-raspberry-pi-you-cant-buy</guid>
+      <pubDate>Fri, 12 Dec 2025 15:19:19 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46244922</comments>
+    </item>
+    <item>
+      <title>Oracle 对 OpenAI 下了 300B 美元的赌注。它正在付出代价</title>
+      <link>https://finance.yahoo.com/news/oracle-made-a-300-billion-bet-on-openai-its-paying-the-price-205441863.html</link>
+      <description>&lt;p&gt;甲骨文对 OpenAI 下了 3000 亿美元的赌注。 48% 的 Oracle 可能存在 OpenAI 问题。甲骨文还将全年资本支出预测从 350 亿美元大幅上调至 500 亿美元。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Oracle made a $300B bet on OpenAI. It's paying the price&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46246031"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://finance.yahoo.com/news/oracle-made-a-300-billion-bet-on-openai-its-paying-the-price-205441863.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deepriverfish:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我从未听说过有关 Oracle 的好消息，我不明白人们如何继续使用他们的产品。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;antoniuschan99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;会很有趣。此外，派拉蒙 Skydance 的收购要约仍悬而未决。派拉蒙的市值约为 150 亿美元，华纳的交易市值约为 770 亿美元。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;1970-01-01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;提示：让你的 AI 设计他们的 DC，以便可以轻松地将其改造成低收入公寓。当您听到泡沫破裂的声音时，这仅意味着您已准备好转向租赁业务。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cmiles8:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;甲骨文将全部赌注押在人工智能上，但这开始看起来是一个非常糟糕的主意。关于推迟人工智能新数据中心建设的评论让今天的市场感到恐慌，泡沫破裂表明了这一点。信用违约掉期价值现在也严重倾向于大量人工智能投资破产。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rachr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来很合适。他们摧毁了 Sun，摧毁了 Java，摧毁了所有开发人员或客户的商誉……现在他们正在摧毁自己。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;taylodl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Oracle 的问题比 OpenAI 更大。过去 10 年他们一直在出售大型企业合同，并且即将续签。许多这样的企业感觉自己没有得到很好的价值。如果其中10%到20%的企业未能再续约10年，那么这可能会对甲骨文造成严重影响。他们的另一个问题是许多企业正在考虑迁移到 PostgreSQL，以便他们可以从 Oracle 的 RDBMS 迁移。许多人已经为其部门级应用程序部署了 PostgreSQL，因此他们可以在处理企业级应用程序之前获得所需的经验。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://finance.yahoo.com/news/oracle-made-a-300-billion-bet-on-openai-its-paying-the-price-205441863.html</guid>
+      <pubDate>Fri, 12 Dec 2025 17:01:07 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46246031</comments>
+    </item>
+    <item>
+      <title>Id Software 开发人员组成“全面”联盟</title>
+      <link>https://www.rockpapershotgun.com/id-software-devs-form-wall-to-wall-union-with-165-workers-at-doom-studio-the-latest-to-vote-in-favour</link>
+      <description>&lt;p&gt;id Software 制作人兼 CWA 组委会成员安德鲁·威利斯 (Andrew Willis) 表示：“id Software 非常需要全方位的组织工作；整个行业的开发人员团结起来，抵制行业高管下达的所有单方面工作场所变革，这一点非常重要。” CWA 主席罗恩·斯瓦格蒂 (Ron Swaggerty) 补充道，工会“期待与微软坐在一起谈判一份能够反映这些工人为每个项目带来的技能、创造力和奉献精神的合同。对这些 id Software 工人的团结一致。”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Id Software devs form "wall-to-wall" union&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46246845"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.rockpapershotgun.com/id-software-devs-form-wall-to-wall-union-with-165-workers-at-doom-studio-the-latest-to-vote-in-favour'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;herodoturtle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;文章的细节很少，并且充满了不断变化的广告，这些广告会在您阅读时上下滚动（在移动设备上）。&lt;p&gt;令人讨厌。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thinkingemote:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢这个想法并鼓励软件工会。他们可以加入一个保护伞联盟吗？这些新工会的效力如何？我想这些新的技术工会没有相同的“车间”。工业中的电力。为什么会这样？&lt;p&gt;也许新工会所倡导的理想总体上与传统工会不同？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.rockpapershotgun.com/id-software-devs-form-wall-to-wall-union-with-165-workers-at-doom-studio-the-latest-to-vote-in-favour</guid>
+      <pubDate>Fri, 12 Dec 2025 18:11:23 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46246845</comments>
+    </item>
+    <item>
+      <title>框架将 DIY 笔记本电脑的 DDR5 内存价格提高了 50%</title>
+      <link>https://www.phoronix.com/news/Framework-50p-DDR5-Memory</link>
+      <description>&lt;p&gt;25 条评论 在全球行业内存持续短缺的情况下，Framework Computer 一直致力于将内存价格保持在低于其他笔记本电脑供应商的水平。由于系统内存价格持续上涨，整个供应链出现短缺，Framework 今天将 Framework 笔记本电脑 DIY 版的 DDR5 内存选项增加了 50%。有关需要开始提高系统内存价格的 Framework Computer 的更多详细信息，请参阅 Framework 博客。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Framework Raises DDR5 Memory Prices by 50% for DIY Laptops&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46245331"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.phoronix.com/news/Framework-50p-DDR5-Memory'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 16 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hopelite:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;似乎唯一能打破这一局面的是最高法院裁定关税非法，或者国会剥夺总统几十年前完全无能的权力。&lt;p&gt;我认为，在所有对科技感兴趣的人施加足够压力的情况下，这可能会成为中期选举中的一个问题，甚至迫使特朗普签署协议，不对可以提高产量的韩国生产商征收 RAM 关税。&lt;p&gt;坦率地说，我什至不会感到惊讶如果我们开始看到内存走私。不确定药品价格，但走私 RAM 至少不会同样有利可图，尤其是在没有高调和风险的情况下？&lt;p&gt;嘿！ … 嘿，你！你想玩得开心吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WorldPeas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的脑海里有一件错误的事情，我忍不住想知道这种内存短缺是否可以使内存调光器重新成为一个概念，因为许多制造商都在采用焊接内存方法。我确信这不会发生&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LetsGetTechnicl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;太棒了，人工智能正在毁掉另一件事&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;acephal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;奥特曼应该因此入狱。单枪匹马地导致整个经济部门的消费者支出大幅下降。至少因为这应该发生在他们拥有人工智能取代大多数白领劳动力之后，而不是之前。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wmf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;50% 是不够的，所以他们需要在一两个月内再次提高价格。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fcoury:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我以为苹果会随着时间的推移而绕开并提高他们的内存价格，我想事实恰恰相反：考虑到这些涨价，所有制造商现在都在成为苹果。&lt;p&gt;我想知道苹果的下一步行动是什么:-)&lt;p&gt;编辑：拼写&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pengaru:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在夏天组装了一台新的 32c&amp;#x2F;64t 7970X threadripper，配备 128GB DDR5 和 16GB RX9070XT...&lt;p&gt;这种内存情况让我考虑将其全部放在 eBay 上&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jordanb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在某些时候，一旦缺乏内存导致对所有其他组件的需求下降，购买一台没有内存的计算机就有意义了。&lt;p&gt;考虑到内存短缺显然是 Sam Altman 的一次尝试，这种情况可能不会持续那么久。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dismalaf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令人疯狂的是，当预训练的收益明显即将结束时，OpenAI 却在超大规模上加倍努力。他们似乎决心要在火焰中熄灭……&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;实际文章：&lt;a href="https:&amp;#x2F;&amp;#x2F;frame.work&amp;#x2F;blog&amp;#x2F;updates-on-memory-pricing-and-navigating-the-volatile-memory-market" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;frame.work&amp;#x2F;博客&amp;#x2F;updates-on-memory-pricing-and-naviga...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;insane_dreamer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谢谢，山姆：&lt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;meindnoch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;抄送@苹果&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Neywiny:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我有 96GB 的 6000 MT。 Pcpartpicker 表示，自 8 月份以来，64GB 套件的价格已经翻了两番。所以我几乎感到惊讶的是它只有 50%。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;walterbell:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;一href="https:&amp;#x2F;&amp;#x2F;www.trendforce.com&amp;#x2F;新闻&amp;#x2F;2025&amp;#x2F;12&amp;#x2F;05&amp;#x2F;独家e-memory-crunch-hits-pcs-dell-hikes-prices-15-20-december-mid-lenovo-from-january-2026&amp;#x2F;” rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.trendforce.com&amp;#x2F;新闻&amp;#x2F;2025&amp;#x2F;12&amp;#x2F;05&amp;#x2F;exclusive-memory-...&lt;/a&gt;&lt;p&gt;&lt;i&gt;&gt;联想已开始通知客户即将涨价，调整将于 2026 年初生效。戴尔预计将涨价至少 15-20%，最快可能在 12 月中旬生效。戴尔首席运营官 Jeff Clarke 警告称，他“从未见过内存芯片成本上涨如此之快”。联想[列举了]两个关键因素：内存短缺加剧和 AI 技术的快速整合。将 2026 年笔记本电脑出货量预测从最初的同比增长 1.7% 下调至同比下降 2.4%。&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;hanchouhsu.substack.com&amp;#x2F;p&amp;#x2F;overview-of-the-memory-market-in" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;hanchouhsu.substack.com&amp;#x2F;p&amp;#x2F;内存概览...&lt;/a&gt;&lt;p&gt;&lt;i&gt;&amp;gt;三星向苹果供货的存储产品2026年全年涨价已经敲定，其中DRAM价格上涨53%，NAND价格上涨52%。此前有关 DRAM 全年涨幅 80% 的传言并不准确。苹果通过谈判将价格降至上述水平，并签署了长期协议 (LTA)。铠侠也与苹果签署了类似协议，涨价幅度与三星一致。&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;j45:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从已经锁定 RAM 价格的硬件供应商那里购买似乎更容易。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SlightlyLeftPad:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哎呀，我没有意识到这是一个大问题。我 4 年前购买的同款 G.skill z5 64Gb 内存现在价格已经翻倍了。这与 Crucial 终止消费产品线或关税有更多关系吗？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.phoronix.com/news/Framework-50p-DDR5-Memory</guid>
+      <pubDate>Fri, 12 Dec 2025 15:58:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46245331</comments>
+    </item>
+    <item>
+      <title>谷歌以开源方式发布新的 Google Sans Flex 字体</title>
+      <link>https://www.omgubuntu.co.uk/2025/11/google-sans-flex-font-ubuntu</link>
+      <description>&lt;p&gt;Google Sans Flex 是一种现代无衬线字体，专为在屏幕和操作系统上使用而设计，是由印刷师 David Berlow（因 Font Bureau 出名）对专有 Google Sans 字体进行了彻底的多轴重建。根据我的口味，Google Sans Flex（就像 GNOME 的默认 Adwaita Sans 字体）比 Ubuntu 字体更具存在感。谷歌眼睛糖果字体。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Google Releases Its New Google Sans Flex Font as Open Source&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46246802"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.omgubuntu.co.uk/2025/11/google-sans-flex-font-ubuntu'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.omgubuntu.co.uk/2025/11/google-sans-flex-font-ubuntu</guid>
+      <pubDate>Fri, 12 Dec 2025 18:07:57 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46246802</comments>
+    </item>
+    <item>
+      <title>柏林批准扩大警察监视权</title>
+      <link>https://reclaimthenet.org/berlin-approves-new-expansion-of-police-surveillance-powers</link>
+      <guid isPermaLink="true">https://reclaimthenet.org/berlin-approves-new-expansion-of-police-surveillance-powers</guid>
+      <pubDate>Fri, 12 Dec 2025 15:29:46 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46245041</comments>
+    </item>
+    <item>
+      <title>日本开放手机应用商店的法律将于 12 月 18 日生效</title>
+      <link>https://www3.nhk.or.jp/nhkworld/en/news/20251210_B1/</link>
+      <description>&lt;p&gt;日本开放手机应用商店的法律即将生效 日本一项新法律即将生效，该法律可能会削弱科技巨头对智能手机服务的主导地位。现在，这些公司将被要求为首次使用的用户提供多种默认服务选择。当人们更新操作系统时这也适用。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Japan law opening phone app stores to go into effect dec.18th&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46246006"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www3.nhk.or.jp/nhkworld/en/news/20251210_B1/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tarun_anand:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;恭喜！锚定很重要。代码审查的其他部分（例如编码指南、性能问题等）怎么样？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_pdp_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这和 Claude Code 使用 semgrep 这样的工具有什么区别？&lt;p&gt;而且我不认为这个工具应该出现在开发人员流程中，因为根据我的经验，它不太可能定期运行它。这应该是 PR 接受之前 QA 流程的一部分。&lt;p&gt;我希望这会有所帮助，祝你好运。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nickphx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“将瓶颈转移到代码审查”......十年的轻描淡写。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46237358</guid>
-      <pubDate>Thu, 11 Dec 2025 21:24:34 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46237358</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;websiteapi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;索尼和任天堂商店仍然关闭，我明白了，哈哈&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一些背景信息：&lt;p&gt;&lt;i&gt;日本将开放 Apple 和 Google 应用商店进行竞争（2023 年）&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=36368735"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=36368735&lt;/a&gt;&lt;p&gt;&lt;i&gt;日本颁布法律促进智能手机应用商店竞争(2024)&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=40662176"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=40662176&lt;/a&gt;&lt;p&gt;&lt;i&gt;iOS 26.2 允许在监管截止日期（2025 年 11 月）之前在日本推出第三方应用商店&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45822302"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45822302&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shlip:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;JFTC 完整的“移动软件竞争法指南”可在此处获取：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.jftc.go.jp&amp;#x2F;file&amp;#x2F;MSCA_Guidelines_tentative_translation.pdf" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.jftc.go.jp&amp;#x2F;file&amp;#x2F;MSCA_Guidelines_tentative_transl...&lt;/a&gt;&lt;p&gt;很想知道苹果和谷歌将如何规避这一点。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www3.nhk.or.jp/nhkworld/en/news/20251210_B1/</guid>
+      <pubDate>Fri, 12 Dec 2025 16:59:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46246006</comments>
     </item>
     <item>
-      <title>为什么在线年龄验证不像亲自出示身份证件那样？</title>
-      <link>https://www.eff.org/deeplinks/2025/12/why-isnt-online-age-verification-just-showing-your-id-person</link>
-      <description>&lt;p&gt;在线年龄验证给更多人带来了负担。在线提交的数据很少只保留在您和另一方之间。然后，用户的个人识别数据在这些合作伙伴之间流通。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Why isn't online age verification just like showing your ID in person?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243848"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.eff.org/deeplinks/2025/12/why-isnt-online-age-verification-just-showing-your-id-person'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>参议员认可声称化学药物可以治疗自闭症和癌症的名誉扫地的书</title>
+      <link>https://www.propublica.org/article/ron-johnson-wisconsin-chlorine-dioxide-pierre-kory-endorsement</link>
+      <description>&lt;p&gt;这本书是《二氧化氯之战：可能终结医学的药物》，作者是博士。“二氧化氯是一种化合物，具有多种用途，包括用作消毒剂和除臭剂。美国食品和药物管理局警告说，饮用这些二氧化氯混合物可能会导致伤害甚至死亡。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Senator endorses discredited book that claims chemical treats autism, cancer&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46245763"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.propublica.org/article/ron-johnson-wisconsin-chlorine-dioxide-pierre-kory-endorsement'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zug_zug:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从密码学角度来说，有一些技术可以让你证明你是美国数亿成年人中的一员，但不会透露你是谁。它比比特币简单得多。&lt;p&gt;我提出这个问题是因为它是完美的试金石，可以显示您是否真的关心年龄验证，或者您是否希望对所有互联网行为进行个人追踪。&lt;p&gt;在某些情况下我对此表示同意（例如，一个不希望外国煽动者假装自己是美国选民的论坛），但整个色情片事情是一场荒谬的闹剧，因为仍然会有数百万个不执行美国法律的非美国色情网站。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;johnnienaked:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我从不验证我的身份来访问互联网上的任何内容。我会停止使用它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;3rodents:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不喜欢这篇文章。不相关的技术细微差别与哲学上的对立混合在一起。技术问题都是可以解决的。言论自由的论点也是愚蠢的：如果限制谁可以在色情内容上手淫是一个言论自由的问题，那么限制谁可以进入酒吧并与顾客交谈当然也是一个言论自由的问题。&lt;p&gt;因为你认为互联网应该开放和免费而反对身份检查是合理的，但这篇文章将自己扭曲成一个结，把所有的东西都扔到了墙上。有理由相信这是一个言论自由问题。但我们同时不能说，同样的论点不适用于互联网之外。&lt;p&gt;（便利店扫描身份证、酒吧扫描身份证、酒店复印护照……）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;miguelbemartin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在我看来，访问互联网应该始终在由成年人控制的设备后面。为未成年人设置适当的限制应该是这位成年人的责任。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hexbin010:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看看奥弗顿的窗口正在迅速缩小。谢谢EFF！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rzerowan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;矛盾的是，这是我认为应该在零知识证明的最终用户设备上提出的功能要求之一。&lt;p&gt;通过对任何在线属性的简单回复来在设备上进行最终用户验证是有意义的：通过年龄验证或未通过。&lt;p&gt;否则，这些数据的集中化和最终泄漏将是一群等待的蠕虫。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;magicalhippo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于上述年龄验证中心的讨论：&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46223389"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46223389&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jagoff:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这与年龄验证无关，而且从来都不是，这充其量是一种干扰，最坏的是一种错觉。这是为了将您的真实姓名与您的所有在线活动联系起来，并让当前一代的孩子在达到投票年龄之前习惯并接受它。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.eff.org/deeplinks/2025/12/why-isnt-online-age-verification-just-showing-your-id-person</guid>
-      <pubDate>Fri, 12 Dec 2025 13:17:51 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46243848</comments>
-    </item>
-    <item>
-      <title>通过坦白培训法学硕士诚实</title>
-      <link>https://arxiv.org/abs/2512.08093</link>
-      <description>&lt;p&gt;) Connected Papers Toggle Connected Papers（什么是 Connected Papers。） Litmaps Toggle Litmaps（什么是 Litmaps。） 代码链接 Toggle Papers with Code（什么是 Papers with Code。）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Training LLMs for Honesty via Confessions&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46242795"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://arxiv.org/abs/2512.08093'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;manarth:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;&lt;前&gt;&lt;代码&gt;&gt; “由于强化学习（RL）的影响，可能会出现不诚实行为，其中奖励塑造的挑战可能会导致训练过程无意中激励模型撒谎或歪曲其行为”
-    &gt; “只要走‘阻力最小的路径’”因为最大化认罪奖励是揭露不当行为而不是掩盖它，这会激励模型诚实”。
-&lt;/code&gt;&lt;/pre&gt;
-人类也可能从这种奖励塑造方式中受益。&lt;p&gt;&lt;pre&gt;&lt;code&gt; &gt; “我们发现，当模型在其“主要”方面撒谎或遗漏缺陷时，答案是，它经常诚实地承认这些行为，并且这种坦白诚实程度会随着训练而得到提高。”
-&lt;/code&gt;&lt;/pre&gt;
-我看不出这是否也反映在主要模型答案中，或者“诚实”是否符合主要模型答案。改进仅限于数字告白亭吗？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://arxiv.org/abs/2512.08093</guid>
-      <pubDate>Fri, 12 Dec 2025 10:37:51 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46242795</comments>
+&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;martythemaniak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我半开玩笑地认为，MAHA 就是费米悖论的答案。&lt;p&gt;随着技术文明的进步，对成果的要求越来越高，它要求一个物种利用现实本身越来越微妙、更小规模和更长期的方面。反馈循环从几个小时到几个月甚至几十年。算盘很大并且所有人都可以使用，继电器开关仍然很大但不太容易使用，基本光刻已经需要对光进行非常精细的控制，而 EUV 工艺简直是疯狂的。这不仅是事情变得更小，而且时间线变得更长，你必须开始依靠非常具体的分析工作来实现任何目标。无论是计算、医学、能源等等，一切都受到这种趋势的影响。&lt;p&gt;我们的大脑还没有为这种工作而进化，能够执行它可能只是一个幸运的意外。对于很多人来说，微小的、微妙的、长期的影响并不真实。只有宏观效应和短反馈循环才是真实的，这就是为什么当前的 MAHA 健康疯狂主要关注体重、食物等。他们可以理解和控制的简单事情。对照组和实验组之间的感染率图表并不真实。碳浓度的图表不是真实的，一般来说图表也不是真实的。所有这些东西都是“假电子邮件工作”。&lt;p&gt;没有理由认为我们在大草原上产生的猴子大脑能够满足如此先进的技术的要求，以至于我们变成了“外星人”。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrinterweb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;科学的破坏让这样的人有了更多的发言权。美国的领导层已经到了科学基本上被忽视的地步，领导人只管强加他们认为正确的东西，而不顾事实。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RobotToaster:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;试图禁止这些人似乎总是一个糟糕的主意，这只会导致不可避免的说法，即他们一定是对的，因为政府在追捕他们。&lt;p&gt;就伊维菌素而言，因为它相对安全（以人剂量计算，而不是马剂量），如果政府只是将其提供给任何有要求的人，那么看看阴谋论者的反应会很有趣。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jqpabc123:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;美国遭遇了严重的愚蠢事件。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tclancy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们确定他的合著者是&lt;i&gt;Jenna&lt;/i&gt; McCarthy吗？此外，这篇文章令人印象深刻的是事情如何变得越来越糟。一个很好的提醒，我需要向 ProPublica 捐款。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;0xbadcafebee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;&lt;pre&gt;&lt;code&gt; “现在，你可能已经注意到我不抱怨一件事：政客。每个人都抱怨政客。
+   大家都说他们烂。那么，人们认为这些政客来自哪里呢？  它们不会从天上掉下来。
+   它们不会穿过来自另一个现实的膜。他们来自美国父母和美国家庭，
+   美国家庭、美国学校、美国教堂、美国企业和美国大学，
+   他们是由美国公民选举产生的。
+   
+   这是我们能做的最好的事情了。这就是我们必须提供的。这就是我们的系统产生的结果：垃圾进来，垃圾出去。
+   如果你有自私、无知的公民，那么你也会有自私、无知的领导人。任期限制不会有任何好处；
+   你最终只会遇到一群新的自私、无知的美国人。
+  
+   所以，也许，也许，也许，糟糕的不是政客。也许这里有其他东西很糟糕……比如公众。
+   是的，公众很糟糕。对于某些人来说，有一个很好的竞选口号：“公众很糟糕”。他妈的希望。”
+  
+   - 乔治·卡林&lt;​​/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wnevets:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我知道这是一个过度使用的陈词滥调，但我们生活在白痴之中。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SilverElfin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;他宣传了未经证实的 COVID-19 治疗方法，并在没有证据的情况下声称运动员在接种 COVID-19 疫苗后“倒在赛场上”。&lt;p&gt;有趣的是，没有证据的谎言和说法已经变得如此普遍。一个谎言给另一个谎言提供了被接受的空间。冒着在没有证据的情况下提出主张的风险，我觉得声称海地人吃狗和声称运动员在接种疫苗后死亡之间存在&lt;i&gt;某种&lt;/i&gt;联系。&lt;p&gt;另一个方面是一些谎言有一个小真相。就像一名运动员在接种疫苗后死亡的说法就是一个例子。但这并不意味着一般情况下都是如此，或者运动员没有遇到一些特殊情况。这些天我看到很多随意的概括，尤其是在美国政治中。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lenerdenator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只要两件事继续存在，这种情况就会继续发生：&lt;p&gt;1）现代医学难以治疗或治愈的疾病和病症&lt;p&gt;2）美国人在个人层面上承担与医疗保健相关的费用&lt;p&gt;如果你看看其他国家，绝对有权力人物仍然推动庸医，因为1），但2）为绝望或过于渴望的人尝试庸医创造了额外的动力。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;QuercusMax:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您想了解标题之外的更多信息，请参阅以下小标题：&lt;p&gt;威斯康星州的&lt;i&gt;罗恩·约翰逊&lt;/i&gt;有传播疫苗错误信息的历史。现在，他开始相信二氧化氯（一种消毒剂和除臭剂）具有治疗功效的说法。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;taylodl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们总是说“需要更多的研究”，而忽视了已经完成的广泛研究。在抗菌作用所需的浓度下，二氧化氯会带来严重的毒性风险——危及患者而不是帮助他们。你可能会认为这些人在新冠肺炎期间推广伊维菌素后会被解雇，但我们来了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmclnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;他说，这一行动使他失业，尽管他仍然拥有执照&lt;p&gt;好吧，我想你不可能太愚蠢而不能进入国会。  这个地方是失业人员最终去的地方。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.propublica.org/article/ron-johnson-wisconsin-chlorine-dioxide-pierre-kory-endorsement</guid>
+      <pubDate>Fri, 12 Dec 2025 16:37:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46245763</comments>
     </item>
   </channel>
 </rss>

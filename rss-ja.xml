@@ -6,121 +6,254 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 12 Dec 2025 15:29:43 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Dec 2025 18:42:23 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>生成された列を使用したフルインデックス速度での SQLite JSON</title>
-      <link>https://www.dbpro.app/blog/sqlite-json-virtual-columns-indexing</link>
-      <description>&lt;p&gt;Raw JSON を保存する まず、JSON 列を含む単純なテーブルを作成します。 ⚡SQL 環境を読み込みます。仮想生成列を追加しましょう。突然、JSON は完全なインデックスをサポートする通常のリレーショナル列のように動作します。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; SQLite JSON at Full Index Speed Using Generated Columns&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243904"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.dbpro.app/blog/sqlite-json-virtual-columns-indexing'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;moregrist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;生成された列は非常に優れていますが、私が本当に気に入っているのは、予期しないキーに対する JSON クエリを劇的に高速化する Postgres スタイルの gin インデックスです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;N_Lens:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;なんと素晴らしいトリックでしょう。私も SQLite が大好きです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;meindnoch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;2 番目のセクションでは、CREATE TABLE と 3 つの個別の ALTER TABLE 呼び出しを使用して仮想列を追加しています。 3 番目のセクションでは、最初から含まれている仮想列を含む単一の CREATE TABLE を使用しています。&lt;p&gt;なぜですか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ellisv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;特にレコード間で一貫したスキーマがある場合、開発者にはすべてを JSON(B) 列に押し込むのではなく、データを正規化してほしいと思います。&lt;p&gt;実際にデータを使用するたびに、適切なインデックスを設定し、制約を適用し、オーバーヘッドを追加するのははるかに困難です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AlexErrant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;タグのリストなど、JSON 配列を含む JSON 列にインデックスを付ける方法を探していました。私の知る限り、この方法はそれに対しては機能しません。 FTS または別の「タグ」を使用する必要があります。インデックスを付けるテーブル。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;baq:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私の理解では、Snowflake は舞台裏でそのように動作しているのですよね?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bushbaba:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;小規模なデータセット (数十万行) の場合、必要に応じて生成された列インデックスを持つ JSON 列を使用しない理由がわかりません&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jelder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは JSON パフォーマンスのために列を生成するのが一般的な方法だと思いました。私はこれを (Postgres にありましたが) キーが JSON 列に埋め込まれている外部キー制約を維持するために使用したこともあります。私たちがやっていることは少し呪われていましたが、完璧に機能しました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;小さなバグ レポート: iPhone から SQL エディター ウィジェットのテキストを編集できませんでした。また、ページの幅を超えるテキストをスクロールして表示することもできませんでした。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mring33621:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;IIRC の Vertica にも同様の機能がありました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mcluck:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;とてもクールな記事。実際に詳しく調べるために、クエリ プランがどのように変化するのかを見てみたいと思いました。 Just Work(tm) のように見えますが、私の脳は、新しいインデックスをそれほど完璧に使用できるとは信じません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Lex-2008:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;興味深いですが、「式のインデックス」は使用できません。 &amp;lt;&lt;a href="https:&amp;#x2F;&amp;#x2F;sqlite.org&amp;#x2F;expridx.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;sqlite.org&amp;#x2F;expridx.html&lt;/a&gt;&amp;gt;?&lt;p&gt;つまり次のようなもの: CREATE INDEX idx_events_type ON events(json_extract(data, &amp;#x27;$.type&amp;#x27;))?&lt;p&gt;ここでの注意点は、JSON パス構文のわずかな変更 (現時点では考えられません) によって SQLite がこのインデックスを使用できなくなる可能性があることですが、明示的に指定された仮想生成列の場合は、インデックス。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;upmostly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私がこのブログ投稿を書こうと思ったのは、2023 年の HN 投稿に対する bambax のコメントを読んだ後です。&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=37082941"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=37082941&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.dbpro.app/blog/sqlite-json-virtual-columns-indexing</guid>
-      <pubDate>Fri, 12 Dec 2025 13:25:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46243904</comments>
-    </item>
-    <item>
-      <title>Fedora: 長期デジタル保存のためのオープンソース リポジトリ</title>
-      <link>https://fedorarepository.org/</link>
-      <description>&lt;p&gt;メンバーになる Fedora を選ぶ理由をダウンロードしてください。 Fedora をサポートしたい。メンバーになる Fedora リソース Fedora を使い始めるのに役立つリソース。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Fedora: Open-source repository for long-term digital preservation&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243883"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://fedorarepository.org/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>非同期DNS</title>
+      <link>https://flak.tedunangst.com/post/async-dns</link>
+      <description>&lt;p&gt;h&gt; struct サーバー { 文字名[32]; char ip[16];整数ステータス; }; struct everything { struct サーバー サーバー[1]; int nservers;構造体pollfd pfds[4]; int npfds; }; static void addrinfo_cb(void *arg, int status, int timeouts, struct ares_addrinfo *result) { struct server *server = arg;サーバー-&gt;ステータス = 3; if (.writable) { state-&gt;pfds[idx]. nサーバー; i++) { printf("処理サーバー %d\n", i);構造体サーバー *サーバー = &amp;state。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Async DNS&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46245923"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://flak.tedunangst.com/post/async-dns'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;economistbob:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;CentOS を破壊し、Xlibre をめぐって暴走した人々は、あなたが必要とするものを永久に保存してくれると信頼できます。&lt;p&gt;私は懐疑的です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cramcgrab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;おお。 Java 11。アップデートに最適なプロジェクトのようです。 CS の学生のグループに最新のツールセットを使用してコードを更新できる場所を知っている人はいますか?かつては MIT、クラークソン、コーネル、バークレー、RIT などがこのようなものを世に出していました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zoobab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;FTPの方が良かったです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fodmap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;誤解を避けるために付け加えておきますが、このリポジトリは、Red Hat のプロジェクトではなく、Flexible Extensible Digital Object Repository Architecture (FEDORA) というコーネル大学のプロジェクトに関するものです。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://fedorarepository.org/</guid>
-      <pubDate>Fri, 12 Dec 2025 13:23:31 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46243883</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;benatkin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;別の関連記事: &lt;a href="https:&amp;#x2F;&amp;#x2F;ziglang.org&amp;#x2F;devlog&amp;#x2F;2025&amp;#x2F;#2025-10-15" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ziglang.org&amp;#x2F;devlog&amp;#x2F;2025&amp;#x2F;#2025-10-15&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;01HNNWZ0MV43FF:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;epoll などを使用したイベントベースの DNS に、実証済みの実装がないのは私には奇妙です。 Rust よりも C で実行するのが難しいことはわかっていますが、それが Hickory の内部で行われていることであると確信しています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;javantanna:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;パフォーマンスのボトルネックにどのように対処したか気になります。テスト中に発見した驚くべきことはありますか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;albertzeyer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最初のリンクされた記事は最近ここで議論されました: RIP pthread_cancel (&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45233713"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45233713&lt;/a&gt;)&lt;p&gt;その議論では、ほとんどのこの記事と同じ点、特に非同期 DNS の代替案についてはすでに説明されています。&lt;p&gt;こちらの説明も参照してください: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;crystal-lang&amp;#x2F;crystal&amp;#x2F;issues&amp;#x2F;13619" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;crystal-lang&amp;#x2F;crystal&amp;#x2F;issues&amp;#x2F;13619&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://flak.tedunangst.com/post/async-dns</guid>
+      <pubDate>Fri, 12 Dec 2025 16:52:41 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46245923</comments>
     </item>
     <item>
-      <title>BpfJailer: eBPF 必須アクセス制御 [pdf]</title>
-      <link>https://lpc.events/event/19/contributions/2159/attachments/1833/3929/BpfJailer%20LPC%202025.pdf</link>
-      <description>&lt;p&gt;��2 Ρ���� ��Z:�� vn�h�]c��f��:����Xۥ�� : g|� �x��}��:]a6X_��S ��U&amp;������K��u��;��k&gt;F����ہd M�� ,&gt;|Cp��^ ���� 1 ~#����`M��H ��#��A�� �����H 5���km�� 0��| endstream endobj 8 0 obj 653 endobj 9 0 obj [ ] endobj 10 0 obj &lt;&lt; /CA 1. 1A Qa "q 2���� #B�� R��$3br�  %&amp;'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz���������������������������������������������������������������������������  ���w. 1AQaq"2�B���� #3R�br�  $4�%�&amp;'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz�������������������������������������������������������������������������� .&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; BpfJailer: eBPF Mandatory Access Control [pdf]&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46244378"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://lpc.events/event/19/contributions/2159/attachments/1833/3929/BpfJailer%20LPC%202025.pdf'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>AI システムは思考しないことを示す中学校の数学</title>
+      <link>https://www.raspberrypi.org/blog/secondary-school-maths-showing-that-ai-systems-dont-think/</link>
+      <description>&lt;p&gt;教室で数学の概念を教えるために、昔ながらの文脈がよく使用されます。 (研究者のプレゼンテーションのスライド。 (研究者のプレゼンテーションのスライド。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Secondary school maths showing that AI systems don't think&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46245731"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.raspberrypi.org/blog/secondary-school-maths-showing-that-ai-systems-dont-think/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;voxadam:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この講演のスライドしか見つかりませんでした。ビデオをお持ちの方がいらっしゃいましたら、ぜひご覧いただきたいです。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://lpc.events/event/19/contributions/2159/attachments/1833/3929/BpfJailer%20LPC%202025.pdf</guid>
-      <pubDate>Fri, 12 Dec 2025 14:20:20 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46244378</comments>
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brador:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;あらゆる科学的尺度から見て、答えは「ノー」です。これは、細胞死が混ざり合った、接続されたニューロンを通って最も抵抗の少ない経路を流れる電流にすぎません。&lt;p&gt;人間の脳の IQ のピークが約 200 であるという事実は興味深いものです。スケールはさらに上がるでしょうか？これより高いスコアを達成したものは存在しないため、それは存在しないはずです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hamdingers:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それが正しい答えになるのであれば、それがどのようにしてそこにたどり着いたのかは特に気にしません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;frozenlettuce:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;LLM によって実行されるすべての計算を、ペンと紙を使って再現できます。何かを計算するには何年もかかりますが、それは可能です。関係する計算がどれほど複雑であっても、紙とペンでは決して「考える」ことはできないと思います。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;terminalshort:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;チームは、よくある大きな誤解に取り組みたいと考えています。生徒たちは、ANN システムが学習し、認識し、見て、理解していると思っているのに、実際には単なる数学にすぎないということです。&lt;p&gt;これは完全に愚かです。  これらの人々は、それは数学で記述されているため、それを示すことは実際の思考であるはずがないと実際に信じているのでしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;croemer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはあまり良いものだとは思わないでください。むしろ彼らの活動のレポートです。見出しの表現が不十分です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;causal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は、AI の背後にある数学を学生に教育して、謎を解き明かすというアイデアが大好きです。しかし、「AI は魔法ではなく、AI システムは思考しない」と主張するのは少し奇妙だと思います。それはただの数学です。」人間の脳は魔法ではなく、ただの生物学であるということについても同様のことが言えるかもしれませんが、それでも私たちはそう考えていると思います。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.raspberrypi.org/blog/secondary-school-maths-showing-that-ai-systems-dont-think/</guid>
+      <pubDate>Fri, 12 Dec 2025 16:32:43 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46245731</comments>
     </item>
     <item>
-      <title>Show HN: Autofix Bot – ハイブリッド静的分析および AI コード レビュー エージェント</title>
-      <link>https://news.ycombinator.com/item?id=46237358</link>
-      <description>&lt;p&gt;- AI レビュー: エージェントは、静的な結果をアンカーとしてコードをレビューします。 42% F1)、クロード コード (71. 2-3B-v1[3] https://autofix.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Autofix Bot – Hybrid static analysis and AI code review agent&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46237358"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46237358'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>ひも理論が輝かしくも不可解な新しい数学的証明を呼び起こす</title>
+      <link>https://www.quantamagazine.org/string-theory-inspires-a-brilliant-baffling-new-math-proof-20251212/</link>
+      <description>&lt;p&gt;ホーム ひも理論は、素晴らしく不可解な新しい数学の証明を示唆する コメント 記事を保存 後で読む 共有 Facebook コピーしました。他の数学者も疑問を抱いていました。数学者が使いこなしたい多項式方程式は無数にあります。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; String Theory Inspires a Brilliant, Baffling New Math Proof&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46245622"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.quantamagazine.org/string-theory-inspires-a-brilliant-baffling-new-math-proof-20251212/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.quantamagazine.org/string-theory-inspires-a-brilliant-baffling-new-math-proof-20251212/</guid>
+      <pubDate>Fri, 12 Dec 2025 16:23:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46245622</comments>
+    </item>
+    <item>
+      <title>HN を表示: tomcp.org – 任意の URL を MCP サーバーに変換します</title>
+      <link>https://github.com/Ami3466/tomcp</link>
+      <description>&lt;p&gt;toMCP あらゆる Web サイトを MCP サーバーに変え、あらゆる Web サイトとチャットします。 com/api ウェブサイト tomcp にアクセスしてチャットします。 org 任意の Web サイト URL を入力します AI ツールを選択します 生成された MCP 構成をコピーします ツールの構成ファイルに追加します AI ツールを再起動します チャット tomcp にアクセスします。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: tomcp.org – Turn any URL into an MCP server&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46246117"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/Ami3466/tomcp'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aritex:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは実際の問題に対する賢明な解決策です。これを使用すると、Web ページの kb から mcp に素早く切り替えることができます。共有してくれてありがとう。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mbreese:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは一般的には良いアイデアだと思いますが、少し単純すぎるかもしれません。これは静的サイトでのみ機能するようですね?次に、JS フェッチを実行して HTML コードを取得し、それを (手早く汚い方法で) マークダウンに変換します。&lt;p&gt;これが GH リポジトリを指していることはわかっていますが、作成者がこの方法で構築することを選択した理由について詳しく知りたいです。おそらくコストを低く抑え、無料にしているのではないかと思います。しかし、なぜ CF 労働者なのでしょうか?ここではどれくらいの処理を無料で実行できるでしょうか?&lt;p&gt;CF ワーカーでさらに多くのことをどのように実行できるかわかりませんが、これは多くのサイトで役立つには単純すぎる可能性があります。&lt;p&gt;例: 取り組んでいるプロジェクト用に構築されたドキュメント サイトを取り込む必要がありました。私たちは、LLM が応答でドキュメントを使用できるようにしたいと考えていました。ただし、このサイトは VitePress をベースにしていました。ソース マークダウン ファイルにアクセスできなかったので、Docker 化されたヘッドレス Chrome インスタンスを使用してページをロードする MCP フェッチャーを作成しました。次に、処理された DOM から innerHTML を直接取得します。おそらくやりすぎですが、このツールが機能しない場合の例です。&lt;p&gt;ただし、静的サイトがある場合、このツールは MCP アクセスを構成する非常に簡単な方法になる可能性があります。いいアイデアですね！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SilentM68:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;いいね ：）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bsima:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;トムは誰ですか?なぜコピーしているのですか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bakies:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは web_fetch ツールがすでに行っていることだと思いましたか?ツールも MCP を通じて設定されますよね?では、すでに機能している web_fetch ツールを使用するだけでなく、なぜ URL を先頭に追加するのでしょうか?&lt;p&gt;これは偶然、robots.txt を回避しているのでしょうか? Web ページを取得できないのは本当に困ります。検閲されていない、より優れた web_fetch を使用したいと考えています。とにかくコンテンツをコピー&amp;ペーストします。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/Ami3466/tomcp</guid>
+      <pubDate>Fri, 12 Dec 2025 17:10:16 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46246117</comments>
+    </item>
+    <item>
+      <title>Epic、iOS決済訴訟の勝訴を受け「Apple税の廃止」を祝う</title>
+      <link>https://arstechnica.com/tech-policy/2025/12/epic-celebrates-the-end-of-the-apple-tax-after-appeals-court-win-in-ios-payments-case/</link>
+      <description>&lt;p&gt;「同様に、外部リンクの設計方法に関する Apple の制限は広すぎる。控訴裁判所は、Apple ができるのは社内と社外の支払いオプションが同様の方法で表示されることだけを保証できることを示唆している。スウィーニー氏は、Apple には、アプリのレビューを無期限に遅らせたり、自社の製品を App Store の検索結果に埋め込むなどして、外部の支払いオプションを追加するアプリに対して「報復する無限の権限」があると述べた。「悲しい真実は、誰もが Apple を恐れているということだ」&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Epic celebrates "the end of the Apple Tax" after court win in iOS payments case&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46245398"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arstechnica.com/tech-policy/2025/12/epic-celebrates-the-end-of-the-apple-tax-after-appeals-court-win-in-ios-payments-case/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 18 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amelius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;なぜ Microsoft は 90 年代に、企業が Windows アプリケーションを販売するために料金を支払わなければならなかったアプリ ストアを持たなかったのですか?&lt;p&gt;つまり、それは決してビジネス上の洞察が欠けていたからではありません。また、アプリケーションを販売するためにインターネットは必要ありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jiscariot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはNetflixやSpotifyなどの他のサービスにも役立ちますか?それとも私の読み違いでしょうか。&lt;p&gt;少なくとも数年前、Netflix は AWS ホスティングと同じくらいの額の購読料を Apple に支払っていたと私は理解していました。&lt;p&gt;また、Spotify アカウントをアップグレードするときに、iPhone アプリ自体からアップグレードできないことに気付きました。これは、利用規約に違反するか、Apple に月額購読料の多額の支払いをしたくないためだと思いました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;satvikpendem:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「合理的」とは、手数料はわずか数百ドルになる&lt;i&gt;わけではありません&lt;/i&gt;が、収益に占める割合は変わりませんが、27% よりも小さくなります。 Apple は可能な限り利益を引き出すよう努める予定であり、非パーセンテージ料金は容認しません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;websiteapi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;次に、ルートボックスのような確率的なデジタルアイテムをすべて禁止しましょう。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;codedokode:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私の意見では、プログラマブルデバイスのすべてのメーカーは、購入者による再プログラミングを妨げることを許されるべきではありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pmarreck:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;周辺的な質問: 「本物の」情報はありますか? Linux 上の App Store は Steam 以外ですか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;briandw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ソニー、マイクロソフト、任天堂、Valve、その他のソフトウェア ストアは、プラットフォーム上でミニ ストアを許可する必要があるでしょうか?つまり、無料アプリ内に独自の支払いシステムを備えたソフトウェアということですか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;concinds:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;裁判所は「競争」を促進するのに適切な仕事をしていないように感じます。&lt;p&gt;- Apple は外部支払いに請求できるべきではありません。いいですか。&lt;p&gt;- 返金ポリシーの目立つ開示を強制します。 Epic Games では IAP での使用を許可していません。アップルはそうです。エピックはそれがどれほど略奪的であるかを熟知しており、一部の子供たちは数千ドルを費やす方法を見つけるだろうが、親たちは無力になるだろうと賭けている。理想的には払い戻しを義務付ける法律があるべきですが、そうでない場合は、&lt;i&gt;少なくとも&lt;/i&gt;マイクロトランザクション ゲームについては IAP 画面での開示を義務付ける必要があります。公平な「競争」はできません。情報の非対称性があり、この判決がそれを義務付けていない場合、ゲーム会社が親を騙すために水門を開けることになります。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ralferoo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;以下のコメントでも同じ内容を共有しましたが、おそらくトップレベルのコメントとして追加する価値があります。&lt;p&gt;Google は Apple が以前行っていたこととまったく同じことを行っており、来月末から 2026 年 1 月 28 日まで義務付けられます。&lt;p&gt;新しい要件: &lt;a href="https:&amp;#x2F;&amp;#x2F;support.google.com&amp;#x2F;googleplay&amp;#x2F;android-developer&amp;#x2F;answer&amp;#x2F;9858738" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;support.google.com&amp;#x2F;googleplay&amp;#x2F;android-developer&amp;#x2F;answ...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Someone:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;しかし木曜日の夜、Epicの創設者兼最高経営責任者（CEO）のティム・スウィーニー氏は記者団に対し、iOSアプリのアップデートがAppleに審査されるたびに「数十ドルか数百ドル」程度の「超超微額料金」であるべきだと考えていると語った。これは、外部の支払いリンクが詐欺でないことを確認するためにアプリをレビューしている従業員に補償するには十分すぎるはずです&lt;p&gt;一度のチェックでは十分ではないため、外部の支払いリンクが詐欺でないことを確認するコストはそれよりも高くつくと思います。詐欺師はそのようなリンクのターゲットを更新するため、アプリの送信時にこれを確認するだけでは済みません。また、世界中から、さまざまな IP アドレス範囲、カリフォルニアの営業時間外などからチェックする必要があります。詐欺師はそのような情報を利用して、詐欺ページを表示するかどうかを決定するのに十分な賢さを備えているためです。&lt;p&gt;また、たとえそれが「わずか」数百ドルになったとしても、外部支払いのオプションを提供する余裕があるのは大企業だけだと思います。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ancorevard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「スウィーニーはソーシャルメディアに書きました。」 &lt;p&gt;奇妙な言葉の選択だと思いながら、著者名をクリックしてみました:&lt;p&gt;「彼の不規則な思索は BlueSky で見つけることができます: @kyleor.land。」。&lt;p&gt;なるほど。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bze12:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私はこの判決についてあまり良い気分ではありません。 「妥当な」料金が何を意味するにせよ、Apple はそれをとんでもない金額に解釈するでしょう。禁止前は27%の料金を請求しようとしていた&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bogwog:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; ...控訴裁判所は現在、Apple が「ユーザーのセキュリティとプライバシーを確​​保するための実費」に基づいて「妥当な料金」を請求できるべきであると示唆しています。&lt;p&gt;&amp;gt;しかし木曜日の夜、Epic の創設者兼 CEO の Tim Sweeney 氏は記者団に対し、iOS アプリのアップデートが Apple に審査を受けるたびに「数十ドル、数百ドル」程度の「超超微額料金」であるべきだと考えていると語った。&lt;p&gt;すごい、一歩前進、一歩後退だ。頑張ったよ、エピック。&lt;p&gt;その結果は明らかに、Apple ストアに最も多くのアプリがあり、最新バージョンがあり、最も多くの無料アプリゲームが存在することになるだろう。ただし、フォートナイトはうまくいくと確信しています。&lt;p&gt;これを誤解していない限り、なぜ裁判所は Apple が競合他社の門番として機能することを許可するのでしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmclnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;さて、これが Google に何をもたらすのだろうか？  IIRC は、Android 開発者に対する同様の恐喝料金を調査しています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pjmlp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Epic Store、Fortnite の「ミニ ストア」があり、任天堂、ソニー、XBox もまったく問題ありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Bad_Initialism:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ティム・クック氏は、Apple の株主にとっては本当に素晴らしい人物でしたが、他の人、特に顧客にとってはまったくひどい人物でした。&lt;p&gt;壁に囲まれた庭園は終わらせなければなりません。サードパーティの Web ブラウザを実行できない、または意味のある方法でソフトウェア開発を行うことができない iPad Pro に、人々に高額な価格を支払わせることには言い訳がありません。&lt;p&gt;洗脳されたファンが際限なく暴言を吐いているにもかかわらず、非常に狭い使用例を除けば、iPad 製品群は役に立ちません。出典：昔は一つでした。彼らが RFC をトイレットペーパーのように扱い始めたとき、エコシステムを去りました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これらは同じものですか?異なる枠組み、混乱を招く詳細:&lt;p&gt;&lt;i&gt;Apple、Epic Games の独占禁止法訴訟で制裁の一部取り消しに勝利&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;sustainability&amp;#x2F;boards-policy-regulation&amp;#x2F;us-appeals-court-partly-reverses-sanctions-against-apple-epic-games-antitrust-2025-12-11&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;sustainability&amp;#x2F;boards-policy-regulat...&lt;/a&gt; (&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;Cbi3f" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;Cbi3f&lt;/a&gt;)&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46237312"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46237312&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nobody9999:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;元のタイトル (タイトルボックスには長すぎます):&lt;p&gt;&lt;i&gt;Epic、iOS 支払い訴訟で控訴裁判所が勝訴した後、「Apple 税の廃止」を祝う&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arstechnica.com/tech-policy/2025/12/epic-celebrates-the-end-of-the-apple-tax-after-appeals-court-win-in-ios-payments-case/</guid>
+      <pubDate>Fri, 12 Dec 2025 16:04:16 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46245398</comments>
+    </item>
+    <item>
+      <title>CM0 – 買えない新しい Raspberry Pi</title>
+      <link>https://www.jeffgeerling.com/blog/2025/cm0-new-raspberry-pi-you-cant-buy</link>
+      <description>&lt;p&gt;この小さな切手は、実際には、eMMC ストレージと WiFi を備えた完全な Raspberry Pi Zero 2 です。しかし、なぜこれが中国だけなのでしょう。フラッシュすると、Raspberry Pi のデスクトップ環境を備えた完全な Linux コンピューターになります。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; CM0 – a new Raspberry Pi you can't buy&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46244922"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.jeffgeerling.com/blog/2025/cm0-new-raspberry-pi-you-cant-buy'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JKCalhoun:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;PCB 上の城郭状の穴が SMT を容易にするためにあるとは知りませんでした。&lt;p&gt;確かにスタンプのように見えますが… ;-)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deanputney:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;geerlingguy と simonw は、それぞれの興味のある分野をいかにうまく、一貫してカバーしているかに本当に驚かされます。内容も充実していて、読みやすく、丁寧です！自分のテーマについてこのように詳細なレポートを行っている人は他にもいると思います。私もぜひ読んでみたいです。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.jeffgeerling.com/blog/2025/cm0-new-raspberry-pi-you-cant-buy</guid>
+      <pubDate>Fri, 12 Dec 2025 15:19:19 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46244922</comments>
+    </item>
+    <item>
+      <title>オラクルは OpenAI に 3,000 億ドルの賭けをしました。それは代償を払っている</title>
+      <link>https://finance.yahoo.com/news/oracle-made-a-300-billion-bet-on-openai-its-paying-the-price-205441863.html</link>
+      <description>&lt;p&gt;オラクルはOpenAIに3000億ドルの賭けをした。 48% Oracle には OpenAI の問題がある可能性があります。 Oracleはまた、通期の設備投資予想を350億ドルから500億ドルに大幅に引き上げた。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Oracle made a $300B bet on OpenAI. It's paying the price&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46246031"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://finance.yahoo.com/news/oracle-made-a-300-billion-bet-on-openai-its-paying-the-price-205441863.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deepriverfish:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Oracle について良いことを聞いたことはありません。人々がどのようにして Oracle の製品を使い続けているのか理解できません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;antoniuschan99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;面白いでしょう。また、パラマウント・スカイダンス社の買収提案もまだ保留中である。パラマウントの時価総額は約150億円、ワーナーとの取引は約770億円となっている。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;1970-01-01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ヒント: 低所得のアパートに簡単に変換できるように DC を設計するよう AI に依頼します。バブルがはじける音が聞こえたら、それはレンタル ビジネスに軸足を移す準備ができていることを意味します。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cmiles8:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Oracle は AI にファームを賭けていますが、それは本当に悪いアイデアのように見え始めています。 AI 向けの新しいデータセンターの建設の遅延に関するコメントは、バブル崩壊が物語っている今日の市場を混乱させています。クレジット・デフォルト・スワップの価値も現在、破綻する多数の AI 投資に大きく傾いています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rachr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ぴったりのようです。彼らは Sun を破壊し、Java を破壊し、あらゆる開発者や顧客の善意を破壊しました...そして今、彼らは自らを破壊しようとしています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;taylodl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;OracleにはOpenAIよりも大きな問題がある。彼らは過去 10 年間にわたって大企業向けの契約を販売しており、更新の時期を迎えています。そうした企業の多くは、十分な価値があるとは感じていません。これらの企業の 10% ～ 20% がさらに 10 年間更新を怠った場合、Oracle に深刻な影響を与える可能性があります。もう 1 つの問題は、多くの企業が Oracle の RDBMS から移行できるように PostgreSQL への移行を検討していることです。多くの企業はすでに部門レベルのアプリケーションに PostgreSQL を導入しているため、エンタープライズ レベルのアプリケーションに取り組む前に必要な経験を積むことができます。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://finance.yahoo.com/news/oracle-made-a-300-billion-bet-on-openai-its-paying-the-price-205441863.html</guid>
+      <pubDate>Fri, 12 Dec 2025 17:01:07 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46246031</comments>
+    </item>
+    <item>
+      <title>Id ソフトウェア開発者が「壁から壁まで」組合を結成</title>
+      <link>https://www.rockpapershotgun.com/id-software-devs-form-wall-to-wall-union-with-165-workers-at-doom-studio-the-latest-to-vote-in-favour</link>
+      <description>&lt;p&gt;「id Software における全面的な組織化の取り組みは非常に必要でした。業界幹部から言い渡されている一方的な職場変更をすべて阻止するために、業界全体の開発者が団結することが非常に重要です」と id Software のプロデューサーで CWA 組織委員会のメンバーである Andrew Willis 氏は述べています。 CWA のロン・スワガティ会長は、労働組合が「マイクロソフトのテーブルの向かいに座り、これらの労働者があらゆるプロジェクトにもたらすスキル、創造性、献身的な姿勢を反映した契約を交渉することを楽しみにしている。これらの id Software 労働者に連帯を」と付け加えた。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Id Software devs form "wall-to-wall" union&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46246845"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.rockpapershotgun.com/id-software-devs-form-wall-to-wall-union-with-165-workers-at-doom-studio-the-latest-to-vote-in-favour'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;herodoturtle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;記事は詳細が薄く、（モバイルで）読んでいる間、上下にスクロールする広告が次々と切り替わります。&lt;p&gt;うっとうしいです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thinkingemote:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私はこのアイデアが気に入っており、ソフトウェア労働組合を奨励しています。彼らが所属できる傘組合はあるのでしょうか？これらの新しい労働組合はどれほど効果的でしょうか?これらの新しい技術組合には、同じ「作業現場」が存在しないのではないかと思います。産業と同様のパワー。これはなぜですか?&lt;p&gt;おそらく一般的に、新しい労働組合が主張する理想は従来の労働組合とは異なるのでしょうか?&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.rockpapershotgun.com/id-software-devs-form-wall-to-wall-union-with-165-workers-at-doom-studio-the-latest-to-vote-in-favour</guid>
+      <pubDate>Fri, 12 Dec 2025 18:11:23 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46246845</comments>
+    </item>
+    <item>
+      <title>Framework により DIY ノートパソコン向け DDR5 メモリの価格が 50% 値上げされる</title>
+      <link>https://www.phoronix.com/news/Framework-50p-DDR5-Memory</link>
+      <description>&lt;p&gt;25 コメント Framework Computer は、世界中でメモリ不足が続いている中、他のラップトップ ベンダーよりもメモリの価格を抑えることに努めてきました。システム メモリの価格高騰が続いており、サプライ チェーン全体で不足しているため、Framework は本日、Framework Laptop DIY Edition の DDR5 メモリ オプションを 50% 引き上げました。 Framework Computer がシステム メモリ価格の値上げを開始する必要があることの詳細については、Framework Blog をご覧ください。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Framework Raises DDR5 Memory Prices by 50% for DIY Laptops&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46245331"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.phoronix.com/news/Framework-50p-DDR5-Memory'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 16 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hopelite:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この状況を打破できる唯一のことは、SCOTUSが関税は違法であるとの裁定を下すか、あるいは何十年も前に無能だった大統領に与えた権限を議会が剥奪するかすることだけのようだ。&lt;p&gt;すべてのテクノロジー関係者からの十分な圧力があれば、中間選挙で問題となり、生産を拡大する可能性のある韓国の生産者にRAMに関税を課さない協定にトランプ大統領に署名を強いることさえできるかもしれないと考えている。&lt;p&gt;率直に言って、私はそう思う。 RAM の密輸が始まっても驚かないでしょう。薬の価格はわかりませんが、RAM の密輸は、特に注目とリスクがなければ、少なくとも同等の利益をもたらすのではないでしょうか?&lt;p&gt;こんにちは! … ねえ、あなた！楽しみたいですか？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WorldPeas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常に多くのメーカーがはんだ付けされたラムのアプローチを採用しているため、このラム不足によってコンセプトとしてラム ディムが復活するのではないかと疑問に思わずにはいられません。きっとこれは実現しないだろうけど&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LetsGetTechnicl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;素晴らしい、AI が台無しにしているもう 1 つのこと&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;acephal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;アルトマンはこの罪で投獄されるべきだ。経済のセクター全体で個人消費を単独で崩壊させます。少なくとも、大多数のホワイトカラー労働者に取って代わるAIを手に入れた後ではなく、それが起こるはずだったという理由からは。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wmf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;50% では十分ではないため、1 ～ 2 か月以内に再度値上げする必要があるでしょう。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fcoury:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Apple は時間の経過とともにメモリの価格を改善して改善してくれるだろうと思っていましたが、おそらくその逆でしょう。今回の値上げを考えると、すべてのメーカーが Apple になりつつあります。&lt;p&gt;Apple の次の動きはどうなるのでしょうか :-)&lt;p&gt;編集: スペル&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pengaru:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;夏の間に、128GB DDR5 と 16GB RX9070XT を搭載した新しい 32c&amp;#x2F;64t 7970X スレッドリッパーを組み立てました...&lt;p&gt;このメモリ状況により、すべてを eBay に出品することを検討しています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jordanb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;RAM 不足により他のすべてのコンポーネントの需要が押し下げられると、ある時点で RAM なしのコンピュータを購入することが合理的になるでしょう。&lt;p&gt;RAM 不足が明らかに Sam Altman 氏による無理な試みであることを考えると、これはそれほど長くは続かないかもしれません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dismalaf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ワイルドなのは、事前トレーニングによる効果が終わりに近づいていることが明らかなときに、OpenAI がハイパースケーリングを倍増していることです。彼らはただ炎上することを決意しているようです...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;実際の記事: &lt;a href="https:&amp;#x2F;&amp;#x2F;frame.work&amp;#x2F;blog&amp;#x2F;updates-on-memory-pricing-and-navigating-the-volatile-memory-market" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;frame.work&amp;#x2F;blog&amp;#x2F;updates-on-memory-pricing-and-naviga...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;insane_dreamer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ありがとう、サム：&amp;lt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;meindnoch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;CC@アップル&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Neywiny:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は 96GB の 6000 MT を持っています。 Pcpartpicker によると、64GB キットの価格は 8 月以来 4 倍になっています。したがって、わずか 50% であることにほとんど驚きました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;walterbell:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.trendforce.com&amp;#x2F;ニュース&amp;#x2F;2025&amp;#x2F;12&amp;#x2F;05&amp;#x2F;exclusiv e-memory-crunch-hits-pcs-dell-hikes-prices-15-20-mid-december-lenovo-from-january-2026&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.trendforce.com&amp;#x2F;news&amp;#x2F;2025&amp;#x2F;12&amp;#x2F;05&amp;#x2F;exclusive-memory-...&lt;/a&gt;&lt;p&gt;&lt;i&gt;&amp;gt; Lenovo は、今後の価格引き上げについて顧客に通知し始めており、調整は 2026 年初頭に発効する予定です。Dell は少なくとも 15 ～ 20% の価格引き上げを予定しており、引き上げは 12 月中旬にも発効する可能性があります。Dell COO の Jeff Clarke 氏は、「メモリチップのコストがこれほど急速に上昇したのは見たことがありません」と警告しました。Lenovo は 2 つの重要な要因、メモリ不足の深刻化と AI の急速な統合を挙げています。 TrendForce は、2026 年のノートブック出荷予測を当初の前年比 1.7% 増から 2.4% 減に下方修正しました。&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;hanchouhsu.substack.com&amp;#x2F;p&amp;#x2F;overview-of-the-memory-market-in" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;hanchouhsu.substack.com&amp;#x2F;p&amp;#x2F;overview-of-the-memory-mar...&lt;/a&gt;&lt;p&gt;&lt;i&gt;&amp;gt; Appleに供給されるSamsungのストレージ製品の2026年の通期値上げが確定し、DRAM価格は53％上昇、NAND価格は52％上昇した。 DRAM の通期の 80% 増加を示唆する以前の噂は不正確でした。Apple は価格を前述のレベルまで下げる交渉を行い、長期契約 (LTA) を締結しました。キオクシアも Apple と同様の契約を締結し、価格引き上げは Samsung と一致しました。&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;j45:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;すでに RAM の価格を固定しているハードウェア ベンダーから購入する方が簡単のようです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SlightlyLeftPad:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ああ、これがそれほど大きな問題だとは知りませんでした。 4 年前に購入したのと全く同じ G.skill z5 64Gb RAM の価格が 2 倍になりつつあります。これはCrucialの消費者向け製品ラインや関税の終了と関係があるのでしょうか？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.phoronix.com/news/Framework-50p-DDR5-Memory</guid>
+      <pubDate>Fri, 12 Dec 2025 15:58:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46245331</comments>
+    </item>
+    <item>
+      <title>Google、新しいGoogle Sans Flexフォントをオープンソースとしてリリース</title>
+      <link>https://www.omgubuntu.co.uk/2025/11/google-sans-flex-font-ubuntu</link>
+      <description>&lt;p&gt;画面や OS での使用を目的として設計されたモダンなサンセリフ フォントである Google Sans Flex は、フォント ビューローで有名なタイポグラファーの David Berlow によって、独自の Google Sans フォントを徹底的に多軸で再構築したものです。私の好みでは、Google Sans Flex は (GNOME のデフォルトの Adwaita Sans フォントと同様に) Ubuntu フォントよりも存在感があります。 Eye Candy フォント Google。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Google Releases Its New Google Sans Flex Font as Open Source&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46246802"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.omgubuntu.co.uk/2025/11/google-sans-flex-font-ubuntu'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.omgubuntu.co.uk/2025/11/google-sans-flex-font-ubuntu</guid>
+      <pubDate>Fri, 12 Dec 2025 18:07:57 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46246802</comments>
+    </item>
+    <item>
+      <title>ベルリン、警察の監視権限の新たな拡大を承認</title>
+      <link>https://reclaimthenet.org/berlin-approves-new-expansion-of-police-surveillance-powers</link>
+      <guid isPermaLink="true">https://reclaimthenet.org/berlin-approves-new-expansion-of-police-surveillance-powers</guid>
+      <pubDate>Fri, 12 Dec 2025 15:29:46 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46245041</comments>
+    </item>
+    <item>
+      <title>電話アプリストアを開設する日本の法律が12月18日に施行される</title>
+      <link>https://www3.nhk.or.jp/nhkworld/en/news/20251210_B1/</link>
+      <description>&lt;p&gt;電話アプリストアを開設する日本の法律が発効へ スマートフォンサービスに対するテクノロジー大手の支配を緩和する可能性のある新しい日本の法律が発効する。企業は今後、初めてのユーザーにデフォルトのサービスについて複数の選択肢を与えることが求められることになる。これは、オペレーティング システムを更新する場合にも当てはまります。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Japan law opening phone app stores to go into effect dec.18th&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46246006"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www3.nhk.or.jp/nhkworld/en/news/20251210_B1/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tarun_anand:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;おめでとう！！アンカリングは重要です。コーディングガイドライン、パフォーマンスの問題など、コードレビューの他の部分についてはどうですか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_pdp_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これと、たとえば semgrep などをツールとして使用するクロード コードとの違いは何ですか?&lt;p&gt;また、私の経験では、このツールを定期的に実行する可能性は低いため、このツールは開発者フローに含めるべきではないと思います。これは、PR が承認される前に QA プロセスの一部として実行されるべきです。&lt;p&gt;これがお役に立てば幸いです。幸運を祈ります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nickphx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「ボトルネックをコードレビューに移した」...10 年ぶりの控えめな表現。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46237358</guid>
-      <pubDate>Thu, 11 Dec 2025 21:24:34 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46237358</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;websiteapi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ソニーストアも任天堂ストアもまだ閉まっているんですね（笑）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;背景:&lt;p&gt;&lt;i&gt;日本は Apple と Google のアプリ ストアを競争に開放する (2023 年)&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=36368735"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=36368735&lt;/a&gt;&lt;p&gt;&lt;i&gt;日本、スマートフォンアプリストアの競争促進法を制定（2024 年）&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=40662176"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=40662176&lt;/a&gt;&lt;p&gt;&lt;i&gt;iOS 26.2、規制期限（11 月）前に日本でサードパーティのアプリストアを許可2025)&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45822302"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45822302&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shlip:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;JFTC の完全な「モバイル ソフトウェア競争法ガイドライン」ここから入手できます: &lt;a href="https:&amp;#x2F;&amp;#x2F;www.jftc.go.jp&amp;#x2F;file&amp;#x2F;MSCA_ガイドライン_tentative_translation.pdf" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.jftc.go.jp&amp;#x2F;file&amp;#x2F;MSCA_guideline_tentative_transl...&lt;/a&gt;&lt;p&gt;Apple と Google がこれをどのように回避するのか興味があります。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www3.nhk.or.jp/nhkworld/en/news/20251210_B1/</guid>
+      <pubDate>Fri, 12 Dec 2025 16:59:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46246006</comments>
     </item>
     <item>
-      <title>オンラインでの年齢確認が、対面で身分証明書を提示するのと同じではないのはなぜですか?</title>
-      <link>https://www.eff.org/deeplinks/2025/12/why-isnt-online-age-verification-just-showing-your-id-person</link>
-      <description>&lt;p&gt;オンライン年齢確認はさらに多くの人に負担を与えます。オンラインで送信されたデータが、あなたと他の当事者の間にのみ留まることがほとんどありません。ユーザーの個人識別データは、これらのパートナー間で循環します。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Why isn't online age verification just like showing your ID in person?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243848"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.eff.org/deeplinks/2025/12/why-isnt-online-age-verification-just-showing-your-id-person'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>上院議員、化学物質が自閉症やがんを治療すると主張する信用できない本を支持</title>
+      <link>https://www.propublica.org/article/ron-johnson-wisconsin-chlorine-dioxide-pierre-kory-endorsement</link>
+      <description>&lt;p&gt;その本は、博士の「二酸化塩素との戦争：医学を終わらせる可能性のある薬」です。 「二酸化塩素は、消毒剤や消臭剤としての用途を含む幅広い用途を持つ化合物です。食品医薬品局は、これらの二酸化塩素混合物を飲むと怪我や、場合によっては死に至る可能性があると警告しています。」&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Senator endorses discredited book that claims chemical treats autism, cancer&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46245763"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.propublica.org/article/ron-johnson-wisconsin-chlorine-dioxide-pierre-kory-endorsement'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zug_zug:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;あなたが米国に住む数億人の成人の一人であることを証明できる暗号技術が存在しますが、あなたがどの成人であるかについては何も明らかにされません。ビットコインよりもはるかに複雑ではありません。&lt;p&gt;私がこれを取り上げたのは、年齢確認を本当に気にしているのか、それともインターネット上のすべての行動を個人的に追跡できるようにしたいのかを示すための完璧なリトマス試験紙だからです。&lt;p&gt;特定の状況（例：外国の扇動者に米国であるふりをさせたくないフォーラムなど）ではこれで問題ありません。有権者）だが、米国の法律を施行しない米国以外のポルノサイトが何百万も常に存在するため、ポルノ全体はばかばかしい茶番劇だ。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;johnnienaked:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;インターネット上の何かにアクセスするために ID を確認したことはありません。ただ使用をやめます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;3rodents:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この記事は好きではありません。無関係な技術的なニュアンスが哲学的な対立と混ざり合っています。技術的な問題はすべて解決可能です。言論の自由の議論も愚かです。ポルノでオナニーできる人を制限することが言論の自由の問題であるなら、バーに入って常連客と会話できる人を制限するのも当然です。&lt;p&gt;インターネットはオープンで自由であるべきだと信じているため、ID チェックに反対するのは合理的ですが、この記事はすべてを壁に投げ込むようなねじれに陥っています。そして、それが言論の自由の問題であると考えるのが合理的です。しかし同時に、同じ議論がインターネットの外では当てはまらないとも言えません。&lt;p&gt;(コンビニエンス ストアでは ID をスキャンし、バーでは ID をスキャンし、ホテルではパスポートのコピーを取得します…)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;miguelbemartin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私の意見では、インターネットへのアクセスは常に大人が管理するデバイスの背後で行われるべきです。そして、未成年者に対して適切な制限を設けるのは大人の責任であるべきです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hexbin010:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;オーバートン ウィンドウが急速に縮小しているのを見てください。ありがとうEFF!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rzerowan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;逆説的ですが、これは、知識証明がゼロのエンドユーザー デバイス上にあるべきだと私が感じている機能要件の 1 つです。&lt;p&gt;オンライン プロパティに対する単純な返信 (年齢確認に合格したかどうか) でデバイス上でエンドユーザー認証を行うのは理にかなっています。&lt;p&gt;そうでないと、このデータの一元化と最終的な漏洩は待ち構えているワームの缶詰となります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;magicalhippo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;前述の年齢確認ハブに関するディスカッションはこちら: &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46223389"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46223389&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jagoff:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それは年齢確認に関するものではありませんし、実際にはそうではありませんでした。それは良く言えば気晴らし、悪く言えば妄想です。これは、すべてのオンライン活動に実名を結び付けること、そして現在の世代の子供たちに実名に慣れさせ、選挙権年齢に達する前にそれを受け入れさせることです。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.eff.org/deeplinks/2025/12/why-isnt-online-age-verification-just-showing-your-id-person</guid>
-      <pubDate>Fri, 12 Dec 2025 13:17:51 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46243848</comments>
-    </item>
-    <item>
-      <title>告白を通じた誠実さのための LLM のトレーニング</title>
-      <link>https://arxiv.org/abs/2512.08093</link>
-      <description>&lt;p&gt;) 接続されたペーパー 接続されたペーパーを切り替えます (接続されたペーパーとは何ですか。) リットマップ リットマップを切り替えます (リットマップとは。) コードへのリンク コード付きペーパーを切り替えます (コード付きペーパーとは。)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Training LLMs for Honesty via Confessions&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46242795"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://arxiv.org/abs/2512.08093'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;manarth:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;&lt;pre&gt;&lt;code&gt; &amp;gt; 「強化学習 (RL) の効果により不正が発生する可能性があり、報酬形成に関する課題により、モデルが意図せずに嘘をついたり、その行動を偽ったりするよう促すトレーニング プロセスが生じる可能性があります。」
-    &gt; 「「最も抵抗の少ない道」が続く限り、自白の報酬を最大化するには、不正行為を隠蔽するのではなく表面化することが重要であり、これがモデルに正直になるよう動機付けるからです。」
-&lt;/code&gt;&lt;/pre&gt;
-人間もこのスタイルの報酬形成から恩恵を受ける可能性があります。&lt;p&gt;&lt;pre&gt;&lt;code&gt; &amp;gt; 「モデルがその「主要な」部分に嘘をついたり、欠点を省略したりすると、問題が発生することがわかりました。答えは、これらの行動を正直に告白することが多く、この告白の正直さは訓練によって適度に改善されます。」
-&lt;/code&gt;&lt;/pre&gt;
-これが主要な模範解答にも反映されているのか、それとも「誠実さ」が反映されているのかはわかりませんでした。改善はデジタル告白ブースに限定されるのでしょうか？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://arxiv.org/abs/2512.08093</guid>
-      <pubDate>Fri, 12 Dec 2025 10:37:51 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46242795</comments>
+&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;martythemaniak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は冗談半分で、MAHA がフェルミのパラドックスへの答えであると信じています。&lt;p&gt;テクノロジー文明の進歩に伴い要求が厳しくなり、現実そのもののより微妙で小規模かつ長期的な側面を種が利用することが求められます。フィードバック ループは数時間、数か月、数十年に及びます。そろばんは大きくて誰でもアクセスできますが、リレー スイッチはまだ大きいですがアクセスしにくいですし、基本的なリソグラフィーではすでに非常に細かい光の制御が必要であり、EUV プロセスは非常識です。物事が小さくなるだけでなく、タイムラインが長くなり、何かを達成するには非常に具体的な分析作業に依存しなければなりません。コンピューティング、医療、エネルギーなど、あらゆる分野がこの傾向の影響を受けます。&lt;p&gt;私たちの脳はこの種の作業に向けて進化していないため、このような作業を実行できるのはおそらく単なる幸運な偶然にすぎません。多くの人にとって、小さくて微妙で長期的な影響は現実のものではありません。マクロスケールの効果と短いフィードバック ループのみが現実です。そのため、現在の MAHA 健康狂信者は、体重や食事など、理解して制御できる単純なものに重点を置いています。対照群と実験群間の感染率のグラフは現実のものではありません。炭素濃度のグラフは現実ではなく、グラフ一般も現実ではありません。そういったものはすべて「偽の電子メールの仕事」です。&lt;p&gt;サバンナで生産されたサルの脳が、私たちが「エイリアン」になるほど高度なテクノロジーの要求に対処できると考える理由はありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrinterweb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;科学の弱体化により、このような人々に発言力が与えられるようになりました。米国の指導部は、科学がほとんど無視され、指導者たちが事実に関係なく、自分たちが正しいと思うことをただ押し付けるというところまで至っている。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RobotToaster:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これらの人々を禁止しようとするのは常にひどいアイデアのように思えます。政府が彼らを追いかけているから彼らは正しいに違いないという避けられない主張につながるだけです。&lt;p&gt;イベルメクチンの場合、それは比較的安全であるため（馬用量ではなく人間用量で）、政府がそれを要求した人にだけ与えた場合、陰謀論者がどのように反応するかを見るのは興味深いことだったでしょう。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jqpabc123:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;米国は愚かさによるひどい事件に巻き込まれた。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tclancy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;彼の共著者は&lt;i&gt;ジェナ&lt;/i&gt; マッカーシーでしょうか?また、記事ではどんどん悪化していく様子が印象的でした。 ProPublica に寄付する必要があることを思い出させてくれました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;0xbadcafebee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;&lt;pre&gt;&lt;code&gt; 「ところで、お気づきかもしれませんが、私が文句を言わないことが 1 つあります。それは政治家です。政治家については誰もが文句を言います。
+   みんな最低だと言う。さて、人々はこれらの政治家がどこから来たと思いますか?  空から落ちてくるわけではありません。
+   別の現実から膜を通過することはありません。彼らはアメリカ人の両親とアメリカ人の家族から生まれ、
+   アメリカの家庭、アメリカの学校、アメリカの教会、アメリカの企業、アメリカの大学、
+   そして彼らはアメリカ国民によって選出されます。
+   
+   これが私たちにできる最善のことです。これが私たちが提供しなければならないものです。私たちのシステムが生み出すのは、ゴミが入ってゴミが出るということです。
+   利己的で無知な国民がいると、利己的で無知な指導者が生まれることになります。期間制限は何の役にも立ちません。
+   結局のところ、利己的で無知なまったく新しいアメリカ人の集団になるだけだ。
+  
+   つまり、もしかしたら、おそらく、おそらく、最悪なのは政治家ではないのです。たぶん、ここで何か他にひどいことがあるかもしれません...一般大衆など。
+   そう、一般人はダメなんです。誰かにとっての素晴らしいキャンペーン スローガンがあります。「公共は最悪だ。」希望なんてクソだ。」
+  
+   - ジョージ・カーリン&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wnevets:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;使い古された決まり文句であることは承知していますが、私たちは特異な状況を生きています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SilverElfin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;彼は、実証されていない新型コロナウイルス感染症の治療法を推進し、スポーツ選手が新型コロナウイルスのワクチン接種後に「フィールドで倒れている」と証拠もなく主張した。&lt;p&gt;証拠のない嘘や主張がどれほど蔓延しているかは興味深い。そして、一つの嘘が、別の嘘を受け入れる余地を与えてしまうのです。私自身、証拠なしで主張する危険を冒しますが、ハイチ人が犬を食べているという主張と、スポーツ選手がワクチン接種後に死亡しているという主張の間には&lt;i&gt;何らかの&lt;/i&gt;関連性があるように感じます。&lt;p&gt;もう 1 つの側面は、一部の嘘には小さな真実が含まれているということです。おそらく、スポーツ選手がワクチン接種後に死亡したという主張にも一例があるだろう。しかし、それは一般的にそれが真実であることや、アスリートに特別な状況がなかったということを意味するものではありません。最近、特にアメリカの政治において、多くの一般論が何気なく投げかけられているのを目にします。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lenerdenator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この状況は、次の 2 つのことが存在し続ける限り起こり続けるでしょう:&lt;p&gt;1) 現代医学による治療や治癒が困難な病気や症状&lt;p&gt;2) 個人レベルでアメリカ人によって生み出された医療関連の費用&lt;p&gt;他国を見てみると、1) のせいで今でもインチキ医療を推進する権力の座にある人々が絶対に存在しますが、2) は絶望的または過度に熱心な人々にインチキ医療を試みるさらなるインセンティブを生み出します。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;QuercusMax:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;見出しよりも詳しい情報が必要な場合は、小見出しをご覧ください。&lt;p&gt;ウィスコンシン州の&lt;i&gt;ロン・ジョンソン&lt;/i&gt;には、ワクチンに関する誤った情報を広めた経歴がある。現在、彼は消毒剤および消臭剤である&lt;i&gt;二酸化塩素&lt;/i&gt;の治療効果についての主張に信憑性を与えています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;taylodl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;彼らはいつも「さらなる研究が必要だ」と言い、すでに行われた広範な研究を無視します。抗菌効果に必要な濃度では、二酸化塩素は深刻な毒性のリスクをもたらし、患者を助けるどころか危険にさらします。新型コロナウイルス感染症の最中にイベルメクチンを推進した後、同じ人たちが解雇されるだろうと思うかもしれませんが、私たちはここにいます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmclnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;この行為により、たとえ免許を持っていたとしても、彼は職を失うことになる、と彼は言う。&lt;p&gt;まあ、国会議員になれるほど愚かではないだろう。  そこは失業者が行き着く場所だった。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.propublica.org/article/ron-johnson-wisconsin-chlorine-dioxide-pierre-kory-endorsement</guid>
+      <pubDate>Fri, 12 Dec 2025 16:37:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46245763</comments>
     </item>
   </channel>
 </rss>
