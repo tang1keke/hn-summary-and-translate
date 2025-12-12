@@ -6,87 +6,43 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 12 Dec 2025 03:58:51 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Dec 2025 06:39:06 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Stoolap：纯 Rust 的高性能嵌入式 SQL 数据库</title>
-      <link>https://github.com/stoolap/stoolap</link>
-      <description>&lt;p&gt;查询（“从用户中选择*”，（））。部门）; -- EXISTS SELECT * FROM 客户 c WHERE EXISTS (SELECT 1 FROM Orders o WHERE o. amount &gt; 1000); -- IN 带有子查询 SELECT * FROM products WHERE Category_id IN (SELECT id FROMcategories WHERE active = true);查询优化器 基于成本的优化器，具有统计信息： -- 收集表统计信息 ANALYZE orders； -- 查看查询执行计划 EXPLAIN SELECT * FROM Orders WHERE customer_id = 100; -- 查看具有实际执行统计数据的计划 EXPLAIN ANALYZE SELECT * FROM order o JOIN customer c ON o。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Stoolap: High-performance embedded SQL database in pure Rust&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239372"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/stoolap/stoolap'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>谷歌取消了我的熊博客的索引，我不知道为什么</title>
+      <link>https://journal.james-zhan.com/google-de-indexed-my-entire-bear-blog-and-i-dont-know-why/</link>
+      <description>&lt;p&gt;一个月后，我在 blog 上开始了我的第一个 Bear 博客。我什至请求为所有单独的博客文章 URL 建立索引，但这没有任何作用。这是巧合还是问题的原因。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Google De-Indexed My Bear Blog and I Don't Know Why&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239752"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://journal.james-zhan.com/google-de-indexed-my-entire-bear-blog-and-i-dont-know-why/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;seg_lol:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;&lt;pre&gt;&lt;code&gt; 初始版本：Stoolap - 纯 Rust 中的现代嵌入式 SQL 数据库
-    
-    Stoolap 是一个高性能嵌入式 SQL 数据库，具有：
-    
-    核心特点：
-    - 具有 MVCC 的完整 ACID 事务（READ COMMITTED 和 SNAPSHOT 隔离）
-    - 具有自适应执行功能的基于成本的查询优化器
-    - 通过 Rayon 并行查询执行
-    - 101+ 个内置函数（字符串、数学、日期和时间、JSON、聚合、窗口）
-    - 多种索引类型：B树、哈希、位图（自动选择或显式）
-    - 多列复合索引
-    - WAL + 具有崩溃恢复功能的快照
-    
-    SQL 支持：
-    - 连接（内连接、左连接、右连接、全外连接、十字连接）
-    - 子查询（标量、IN、EXISTS、相关）
-    - 通用表表达式（WITH 和WITH RECURSIVE）
-    - 窗口函数（ROW_NUMBER、RANK、LAG、LEAD 等）
-    - 汇总、立方体、分组集
-    - 时间查询（AS OF TIMESTAMP&amp;#x2F;TRANSACTION）
-    - 视图、RETURNING 子句、ON DUPLICATE KEY UPDATE
-    
-    104K 行 Rust |没有 C 依赖项 |完整文档位于stoap.io&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rich_sasha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来很有趣！&lt;p&gt;与另一个嵌入式 SQL DB（即 sqlite3）进行一些比较会很有用。它有多可虐待？采取什么权衡？ ETC。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Arcuru:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;时光旅行查询：查询任意时间点的历史数据：&lt;p&gt;这里的例子看起来可能是存储了完整的交易历史记录？是这样吗？对于那些没有被吹捧为大牌功能的东西来说，这是一个相当高的成本。&lt;p&gt;我正在开发一个存储完整交易历史记录的数据库[1]，但它是为了让我可以支持去中心化同步。它是为我的字幕功能服务的，所以我需要支付存储历史记录的费用，但令我惊讶的是，Stoolap 似乎也在为本地嵌入式数据库做这件事。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;arcuru&amp;#x2F;eidetica" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;arcuru&amp;#x2F;eidetica&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/stoolap/stoolap</guid>
-      <pubDate>Fri, 12 Dec 2025 00:28:24 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46239372</comments>
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FuturisticLover:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谷歌搜索结果已经一塌糊涂。我面临一些取消索引的问题，尽管没有类似的内容，但 Google 引用了重复的内容并选择了规范的 URL 本身。&lt;p&gt;只是打开方式相似，但意图完全不同，焦点关键字也是如此。&lt;p&gt;在 Bing 和其他搜索引擎中没有遇到此问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bjt12345:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得 Google 的奇怪之处在于，Google 地图上有很多非法广告，例如没有许可证的住宿和酒类销售商。&lt;p&gt;但是，如果他们在法定期限内这样做，他们就可以成功申请现有使用权。&lt;p&gt;然而，我看到专家证人在规划许可法庭上在地图上展示了 Google 标识，而法庭的行为就好像这都是合法的。&lt;p&gt;我什至看到法庭报告发布了谷歌地图的屏幕截图作为其判决的一部分。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;graeme:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;rss 验证失败完全有可能触发了一些未记录的垃圾邮件标志，因为记录反垃圾邮件规则会让垃圾邮件发送者违反规则。&lt;p&gt;垃圾邮件的数量已大大增加，我毫不怀疑，在此过程中存在大量此类反垃圾邮件标志和大量误报伤亡。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;echelon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们需要 P2P 互联网。&lt;p&gt;不再有 Google。没有更多网站了。一群分布式的临时签名帖子。分享、重播。&lt;p&gt;当您发现像詹姆斯这样的人并且喜欢他们时，您就会关注他们。然后，您的本地算法会优先考虑从中查找新内容。您可以为他们的作者签名添加书签。&lt;p&gt;类似于 RSS，但更好。完全分布式。&lt;p&gt;您自己的本地兴趣图，还有您同行的力量&amp;#x27;兴趣图。&lt;p&gt;内容是短暂的，但如果任何节点不断重播它，也可以永远存在。每个帖子都有一个唯一的 ID，因此您可以稍后在群中或某些持久索引实用程序中搜索它。&lt;p&gt;互联网应该已经完全成为 p2p。那真是太神奇了。但当世界上大多数人都上网时，平台却抢走了风头。&lt;p&gt;如果我们这些书呆子还能再活几年……&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;p0w3n3d:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;听起来与 &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46203343"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46203343&lt;/a&gt; 类似，Google 决定业务中谁能生存，谁不能生存&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://journal.james-zhan.com/google-de-indexed-my-entire-bear-blog-and-i-dont-know-why/</guid>
+      <pubDate>Fri, 12 Dec 2025 01:20:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46239752</comments>
     </item>
     <item>
-      <title>碲化镉锌：推动医学“革命”的神奇材料</title>
-      <link>https://www.bbc.com/news/articles/c24l223d9n7o</link>
-      <description>&lt;p&gt;这种奇妙的材料还有许多其他用途，例如 X 射线望远镜、辐射探测器和机场安全扫描仪。 “这是数字化的，”巴苏博士说。 “要得到这些薄的确实很难。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Cadmium Zinc Telluride: The wonder material powering a medical 'revolution'&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239895"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bbc.com/news/articles/c24l223d9n7o'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.bbc.com/news/articles/c24l223d9n7o</guid>
-      <pubDate>Fri, 12 Dec 2025 01:41:15 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46239895</comments>
-    </item>
-    <item>
-      <title>关于伽玛值的注释</title>
-      <link>https://poniesandlight.co.uk/reflect/gamma/</link>
-      <description>&lt;p&gt;“CRT 的非线性几乎与人类视觉的亮度敏感度相反。这种非线性导致 CRT 的响应在感知上大致一致。这一功能绝非缺陷，而是非常值得期待的。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Notes on Gamma&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239673"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://poniesandlight.co.uk/reflect/gamma/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>HTML 优先方法：为什么 Htmx 和轻量级框架正在发生革命</title>
+      <link>https://www.danieleteti.it/post/html-first-frameworks-htmx-revolution-en/#building-with-html-instead-of-fighting-with-javascript-layers-</link>
+      <description>&lt;p&gt;许多团队（包括一些拥有企业项目的大型团队）正在转向 HTML 优先的框架，例如 htmx 和其他采用更传统的服务器驱动方法的工具。使用 HTML 进行构建，而不是与 JavaScript 层进行斗争 🛠️ HTML 优先的工具可让您专注于应用程序的实际结构和行为，而不是忙于处理组件树、水合作用、reducer、上下文提供程序以及 SPA 框架带来的所有开销。 ✨ 区别很明显：30 多行 React 代码与 5 行 HTML 和 htmx。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The HTML-First Approach: Why Htmx and Lightweight Frameworks Are Revolutionizin&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239445"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.danieleteti.it/post/html-first-frameworks-htmx-revolution-en/#building-with-html-instead-of-fighting-with-javascript-layers-'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;turnsout:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;兄弟，等我告诉你色域的事情&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://poniesandlight.co.uk/reflect/gamma/</guid>
-      <pubDate>Fri, 12 Dec 2025 01:05:30 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46239673</comments>
-    </item>
-    <item>
-      <title>CRISPR 真菌：富含蛋白质、可持续且味道像肉</title>
-      <link>https://www.isaaa.org/kc/cropbiotechupdate/article/default.asp?ID=21607</link>
-      <description>&lt;p&gt;知识中心生物技术更新 2025 年 11 月 26 日 问题 CRISPR 真菌：富含蛋白质、可持续且味道像肉 CRISPR 真菌：富含蛋白质、可持续且味道像肉 2025 年 11 月 26 日 研究人员使用 CRISPR 来增强天然的类似肉类的真菌。图片来源：小刘 研究人员成功利用 CRISPR 基因编辑技术创建了一种真菌菌株，该菌株比天然真菌菌株高效、更有营养，并且显着更具可持续性。有关更多详细信息，请阅读本文或下载开放获取论文。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; CRISPR Fungus: Protein-Packed, Sustainable, and Tastes Like Meat&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239629"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.isaaa.org/kc/cropbiotechupdate/article/default.asp?ID=21607'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SapporoChris:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们改变了 Quorn 目前在其产品中使用的 Fusarium v​​enenatum。
-“基因编辑MP的生产过程比鸡肉和细胞培养肉更环保。”
-这是个好消息，如果他们达到了比鸡肉更经济的地步，那将是个好消息。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.isaaa.org/kc/cropbiotechupdate/article/default.asp?ID=21607</guid>
-      <pubDate>Fri, 12 Dec 2025 00:59:46 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46239629</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;G_o_D:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;服务器返回准备直接显示的 HTML。故事结束。&lt;p&gt;服务器在做什么？它使用cgi、python等无数的脚本来生成html&lt;p&gt;更好的是，单击按钮并在浏览器中使用js打开一个菜单，或者在打开菜单的情况下获取一个新的html&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pstuart:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;HTMX 很酷，但对于离线客户来说却没有什么好处。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esteer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最近一直在使用 React Server Components。这里的很多要点也适用于 RSC。 IMO 的问题是 Next.JS。大多数应用程序不需要边缘计算或高级缓存（Vercel 出售的产品）。去掉这些，我认为我们将拥有一个很好的框架，每个人都易于使用。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delifue:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;表情符号的过度使用让我怀疑这是人工智能。我将第一段插入 pangram，结果是 100% AI。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.pangram.com&amp;#x2F;history&amp;#x2F;30310094-f54b-4e74-8d68-e4c935820c13?ucc=OXMb3WyfwOn" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.pangram.com&amp;#x2F;历史&amp;#x2F;30310094-f54b-4e74-8d68-e4c9...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.danieleteti.it/post/html-first-frameworks-htmx-revolution-en/#building-with-html-instead-of-fighting-with-javascript-layers-</guid>
+      <pubDate>Fri, 12 Dec 2025 00:37:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46239445</comments>
     </item>
   </channel>
 </rss>

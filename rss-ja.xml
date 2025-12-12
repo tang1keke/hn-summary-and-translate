@@ -6,87 +6,43 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 12 Dec 2025 03:58:51 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Dec 2025 06:39:06 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>Stoolap: 純粋な Rust の高性能組み込み SQL データベース</title>
-      <link>https://github.com/stoolap/stoolap</link>
-      <description>&lt;p&gt;query("SELECT * FROM ユーザー", ()).部門）; -- EXISTS SELECT * FROM 顧客 c WHERE EXISTS (注文から 1 を選択 o WHERE o. 金額 &gt; 1000); -- サブクエリを使用した IN SELECT * FROM products WHERE category_id IN (SELECT id FROM カテゴリ WHERE active = true);クエリ オプティマイザー 統計を使用したコストベースのオプティマイザー: -- テーブル統計を収集します。 注文を分析します。 -- クエリ実行プランの表示 EXPLAIN SELECT * FROM 注文 WHERE customer_id = 100; -- 実際の実行統計を含む計画を表示します。 EXPLAIN ANALYZE SELECT * FROM 注文 o 顧客を結合 c ON o。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Stoolap: High-performance embedded SQL database in pure Rust&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239372"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/stoolap/stoolap'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Googleが私のBearブログのインデックスを削除しましたが、その理由はわかりません</title>
+      <link>https://journal.james-zhan.com/google-de-indexed-my-entire-bear-blog-and-i-dont-know-why/</link>
+      <description>&lt;p&gt;Blog で最初の Bear ブログを開始してから 1 か月後。すべての個々のブログ投稿 URL のインデックス作成をリクエストしましたが、何も起こりませんでした。それは偶然でしょうか、それとも問題の原因でしょうか。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Google De-Indexed My Bear Blog and I Don't Know Why&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239752"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://journal.james-zhan.com/google-de-indexed-my-entire-bear-blog-and-i-dont-know-why/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;seg_lol:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;&lt;pre&gt;&lt;code&gt; 初期リリース: Stoolap - Pure Rust の最新の組み込み SQL データベース
-    
-    Stoolap は、次のような高性能の組み込み SQL データベースです。
-    
-    主な機能:
-    - MVCC を使用した完全な ACID トランザクション (READ COMMITTED および SNAPSHOT 分離)
-    - 適応型実行を備えたコストベースのクエリ オプティマイザー
-    - Rayon を介した並列クエリ実行
-    - 101 以上の組み込み関数 (文字列、数学、日付時刻、JSON、集計、ウィンドウ)
-    - 複数のインデックス タイプ: B ツリー、ハッシュ、ビットマップ (自動選択または明示的)
-    - 複数列の複合インデックス
-    - WAL + スナップショットとクラッシュリカバリ
-    
-    SQL サポート:
-    - 結合 (INNER、LEFT、RIGHT、FULL OUTER、CROSS)
-    - サブクエリ (スカラー、IN、EXISTS、相関)
-    - 共通テーブル式 (WITH および WITH RECURSIVE)
-    - ウィンドウ関数 (ROW_NUMBER、RANK、LAG、LEAD など)
-    - ロールアップ、キューブ、グループ化セット
-    - 一時的なクエリ (AS OF TIMESTAMP&amp;#x2F;TRANSACTION)
-    - ビュー、RETURNING 句、ON DUPLICATE KEY UPDATE
-    
-    Rust の 104K 行 | C への依存関係はありません |完全なドキュメントは、stoolap.io&lt;/code&gt;&lt;/pre&gt; にあります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rich_sasha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常に興味深いですね!&lt;p&gt;別の組み込み SQL DB、つまり sqlite3 との比較が役立つでしょう。それはどれほど悪用可能ですか？どのようなトレードオフが取られますか?等。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Arcuru:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;タイムトラベル クエリ: 任意の時点での履歴データをクエリします:&lt;p&gt;ここの例は、トランザクションの完全な履歴を保存しているように見えますか?そうですか？これは、主要な機能として宣伝されていないものに支払うのはかなり高額です。&lt;p&gt;私は完全なトランザクション履歴を保存する DB[1] に取り組んでいますが、これは分散同期をサポートできるようにするためです。これは私のマーキー機能のサービスであるため、履歴を保存するコストを支払う必要がありますが、Stoolap がローカルの組み込みデータベースに対してもそれを行っているようであることに驚きました。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;arcuru&amp;#x2F;eidetica" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;arcuru&amp;#x2F;eidetica&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/stoolap/stoolap</guid>
-      <pubDate>Fri, 12 Dec 2025 00:28:24 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46239372</comments>
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FuturisticLover:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Googleの検索結果がめちゃくちゃになってしまいました。同様のコンテンツがないにもかかわらず、Google がコンテンツの重複を引用し、正規 URL 自体を選択するというインデックス解除の問題に直面しています。&lt;p&gt;オープンという点だけは似ていますが、意図はまったく異なり、フォーカス キーワードも同様です。&lt;p&gt;Bing やその他の検索エンジンでは、この問題は発生していません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bjt12345:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Google について私が不思議に思うのは、Google マップ上に違法な広告がたくさんあることです。許可を持っていない宿泊施設や酒類の販売業者などです。&lt;p&gt;しかし、法定期間内であれば、既存使用権を申請することができます。&lt;p&gt;それでも、専門家証人が計画許可などをめぐる法廷でマップ上に Google ピンを持ち出すのを見たことがあります。 &lt;p&gt;裁判所の報告書が判決の一環として Google マップのスクリーンショットを公開しているのを私も見たことがあります。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;graeme:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;RSS の検証失敗により、文書化されていないスパム フラグがトリガーされた可能性は十分にあります。スパム対策ルールを文書化すると、スパマーがルールを破ることができるからです。&lt;p&gt;スパムの量は膨大に増加しており、そのようなスパム対策フラグが数多く存在し、その過程で多数の誤検知による犠牲者が発生していることは疑いありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;echelon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;P2P インターネットが必要です。&lt;p&gt;Google はもう必要ありません。これ以上のウェブサイトはありません。分散された一時的な署名付き投稿の群れ。共有、再放送。&lt;p&gt;ジェームズのような人を見つけて気に入ったら、フォローします。その後、ローカル アルゴリズムがそれらから新しいコンテンツを優先的に見つけます。著者の署名をブックマークします。&lt;p&gt;RSS に似ていますが、それより優れています。完全に分散。&lt;p&gt;独自のローカル インタレスト グラフだけでなく、同僚の力も利用できます。&lt;p&gt;インタレスト グラフ。&lt;p&gt;コンテンツは一時的ですが、ノードが再ブロードキャストし続けると永久に存続する可能性もあります。すべての投稿には一意の ID があるため、後から swarm または永続的なインデックス ユーティリティで検索できます。&lt;p&gt;インターネットは完全に p2p になっているはずです。それは魔法のようだったでしょう。しかし、世界の大多数がオンラインになったのと同じように、プラットフォームが脚光を浴びるようになりました。&lt;p&gt;私たちオタクがあと数年あれば...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;p0w3n3d:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ビジネスで誰が生き残るか、誰が生き残らないかを Google が決めるという点では、&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46203343"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46203343&lt;/a&gt; と似ています。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://journal.james-zhan.com/google-de-indexed-my-entire-bear-blog-and-i-dont-know-why/</guid>
+      <pubDate>Fri, 12 Dec 2025 01:20:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46239752</comments>
     </item>
     <item>
-      <title>テルル化カドミウム亜鉛: 医療の「革命」を促進する驚異の材料</title>
-      <link>https://www.bbc.com/news/articles/c24l223d9n7o</link>
-      <description>&lt;p&gt;この驚異的な材料は、X 線望遠鏡、放射線検出器、空港のセキュリティ スキャナーなど、他にも多くの用途があります。 「それはデジタルです」とバス博士は言います。 「この薄いものを手に入れるのは本当に難しいです。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Cadmium Zinc Telluride: The wonder material powering a medical 'revolution'&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239895"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bbc.com/news/articles/c24l223d9n7o'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.bbc.com/news/articles/c24l223d9n7o</guid>
-      <pubDate>Fri, 12 Dec 2025 01:41:15 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46239895</comments>
-    </item>
-    <item>
-      <title>ガンマに関する注意事項</title>
-      <link>https://poniesandlight.co.uk/reflect/gamma/</link>
-      <description>&lt;p&gt;「CRT の非線形性は、人間の視覚の明度感度の逆数に非常に近いです。非線形性により、CRT の応答は知覚的にほぼ均一になります。この機能は欠陥であるどころか、非常に望ましいものです。」&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Notes on Gamma&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239673"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://poniesandlight.co.uk/reflect/gamma/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>HTML ファーストのアプローチ: Htmx と軽量フレームワークが革命を起こす理由</title>
+      <link>https://www.danieleteti.it/post/html-first-frameworks-htmx-revolution-en/#building-with-html-instead-of-fighting-with-javascript-layers-</link>
+      <description>&lt;p&gt;エンタープライズ プロジェクトを扱う大規模なチームを含む多くのチームは、htmx などの HTML ファーストのフレームワークや、より伝統的なサーバー駆動型のアプローチをとるその他のツールに移行しています。 JavaScript レイヤーと戦う代わりに HTML で構築 🛠️ HTML ファーストのツールを使用すると、コンポーネント ツリー、ハイドレーション、リデューサー、コンテキスト プロバイダー、および SPA フレームワークに伴うすべてのオーバーヘッドを処理するのではなく、アプリケーションの実際の構造と動作に集中できます。 ✨ 違いは明らかです: 30 行以上の React コードと、htmx を使用した 5 行の HTML。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The HTML-First Approach: Why Htmx and Lightweight Frameworks Are Revolutionizin&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239445"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.danieleteti.it/post/html-first-frameworks-htmx-revolution-en/#building-with-html-instead-of-fighting-with-javascript-layers-'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;turnsout:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;兄さん、色域について話すまで待ってください&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://poniesandlight.co.uk/reflect/gamma/</guid>
-      <pubDate>Fri, 12 Dec 2025 01:05:30 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46239673</comments>
-    </item>
-    <item>
-      <title>CRISPR 真菌: タンパク質が豊富で持続可能、肉のような味</title>
-      <link>https://www.isaaa.org/kc/cropbiotechupdate/article/default.asp?ID=21607</link>
-      <description>&lt;p&gt;Knowledge Center Biotech Updates 2025 年 11 月 26 日発行 CRISPR 菌類: タンパク質が豊富で持続可能で、肉のような味 CRISPR 菌類: タンパク質が豊富で持続可能で、肉のような味 2025 年 11 月 26 日 研究者らは、CRISPR を使用して、天然の肉のような菌類を強化しました。写真出典: Xiao Liu 研究者らは、CRISPR 遺伝子編集技術を使用して、天然の菌株よりも効率が高く、栄養価が高く、持続可能性が大幅に高い菌株を作成することに成功しました。詳細については、この記事を読むか、オープンアクセスの論文をダウンロードしてください。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; CRISPR Fungus: Protein-Packed, Sustainable, and Tastes Like Meat&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239629"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.isaaa.org/kc/cropbiotechupdate/article/default.asp?ID=21607'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SapporoChris:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;彼らは Fusarium v​​enenatum を改変し、現在 Quorn が製品に使用しているものです。
-「遺伝子編集MPの製造プロセスは、鶏肉や細胞培養肉よりも環境に優しいです。」
-それは良いニュースです。鶏肉よりも経済的に優しいという点に到達すれば、それは素晴らしいニュースになるでしょう。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.isaaa.org/kc/cropbiotechupdate/article/default.asp?ID=21607</guid>
-      <pubDate>Fri, 12 Dec 2025 00:59:46 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46239629</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;G_o_D:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;サーバーは、直接表示できる状態の HTML を返します。話は終わりです。&lt;p&gt;サーバーは何をしているのですか? CGI、Python などの無数のスクリプトを使用して HTML を生成します&lt;p&gt;さらに良いのは、ボタンをクリックしてブラウザで js を実行するとメニューが開くか、メニューが開いた状態で新しい HTML を取得することです&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pstuart:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;HTMX は優れていますが、オフライン クライアントにとっては役に立ちません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esteer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最近、React Server Components を使って作業しています。ここでのポイントの多くは RSC にも当てはまります。 IMO の問題は Next.JS です。ほとんどのアプリは、エッジ コンピューティングや高度なキャッシュ (Vercel が販売しているもの) を必要としません。それらを取り除けば、誰にとっても使いやすい素晴らしいフレームワークができると思います。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delifue:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;絵文字を多用しているので、AI ではないかと疑ってしまいます。最初の段落をパングラムに接続したところ、結果は 100% AI でした。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.pangram.com&amp;#x2F;history&amp;#x2F;30310094-f54b-4e74-8d68-e4c935820c13?ucc=OXMb3WyfwOn" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.pangram.com&amp;#x2F;history&amp;#x2F;30310094-f54b-4e74-8d68-e4c9...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.danieleteti.it/post/html-first-frameworks-htmx-revolution-en/#building-with-html-instead-of-fighting-with-javascript-layers-</guid>
+      <pubDate>Fri, 12 Dec 2025 00:37:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46239445</comments>
     </item>
   </channel>
 </rss>

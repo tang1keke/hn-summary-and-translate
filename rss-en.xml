@@ -6,83 +6,41 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Fri, 12 Dec 2025 03:58:51 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Dec 2025 06:39:06 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>Stoolap: High-performance embedded SQL database in pure Rust</title>
-      <link>https://github.com/stoolap/stoolap</link>
-      <description>&lt;p&gt;query("SELECT * FROM users", ()). department); -- EXISTS SELECT * FROM customers c WHERE EXISTS (SELECT 1 FROM orders o WHERE o. amount &gt; 1000); -- IN with subquery SELECT * FROM products WHERE category_id IN (SELECT id FROM categories WHERE active = true); Query Optimizer Cost-based optimizer with statistics: -- Collect table statistics ANALYZE orders; -- View query execution plan EXPLAIN SELECT * FROM orders WHERE customer_id = 100; -- View plan with actual execution statistics EXPLAIN ANALYZE SELECT * FROM orders o JOIN customers c ON o.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239372"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/stoolap/stoolap'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Google De-Indexed My Bear Blog and I Don't Know Why</title>
+      <link>https://journal.james-zhan.com/google-de-indexed-my-entire-bear-blog-and-i-dont-know-why/</link>
+      <description>&lt;p&gt;A month after I started my first Bear blog at blog. I even requested indexing for all the individual blog post URLs and that didn’t do anything. Was that a coincidence or the cause of the issue.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239752"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://journal.james-zhan.com/google-de-indexed-my-entire-bear-blog-and-i-dont-know-why/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;seg_lol:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;&lt;pre&gt;&lt;code&gt;    Initial release: Stoolap - A Modern Embedded SQL Database in Pure Rust
-    
-    Stoolap is a high-performance embedded SQL database featuring:
-    
-    Core Features:
-    - Full ACID transactions with MVCC (READ COMMITTED &amp;amp; SNAPSHOT isolation)
-    - Cost-based query optimizer with adaptive execution
-    - Parallel query execution via Rayon
-    - 101+ built-in functions (string, math, date&amp;#x2F;time, JSON, aggregate, window)
-    - Multiple index types: B-tree, Hash, Bitmap (auto-selected or explicit)
-    - Multi-column composite indexes
-    - WAL + snapshots with crash recovery
-    
-    SQL Support:
-    - JOINs (INNER, LEFT, RIGHT, FULL OUTER, CROSS)
-    - Subqueries (scalar, IN, EXISTS, correlated)
-    - Common Table Expressions (WITH and WITH RECURSIVE)
-    - Window functions (ROW_NUMBER, RANK, LAG, LEAD, etc.)
-    - ROLLUP, CUBE, GROUPING SETS
-    - Temporal queries (AS OF TIMESTAMP&amp;#x2F;TRANSACTION)
-    - Views, RETURNING clause, ON DUPLICATE KEY UPDATE
-    
-    104K lines of Rust | No C dependencies | Full documentation at stoolap.io&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rich_sasha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Looks very interesting!&lt;p&gt;Some comparison to another embedded SQL DB, i.e. sqlite3, would be useful. How abusable is it? What tradeoffs are taken? Etc.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Arcuru:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; Time-Travel Queries: Query historical data at any point in time:&lt;p&gt;The example here looks like it may be storing the full history of transactions? Is that right? That&amp;#x27;s a pretty high cost to pay for something that&amp;#x27;s not touted as a marquee feature.&lt;p&gt;I&amp;#x27;m working on a DB[1] that stores full transaction history but it&amp;#x27;s so that I can support decentralized synchronization. It&amp;#x27;s in service of my marquee feature so I need to pay the cost of storing history, but I&amp;#x27;m surprised that Stoolap also seems to be doing it for a local embedded database.&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;arcuru&amp;#x2F;eidetica" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;arcuru&amp;#x2F;eidetica&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/stoolap/stoolap</guid>
-      <pubDate>Fri, 12 Dec 2025 00:28:24 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46239372</comments>
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FuturisticLover:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Google search results have gone shit. I am facing some deindexing issues where Google is citing a content duplicate and picking a canonical URL itself, despite no similar content.&lt;p&gt;Just the open is similar, but the intent is totally different, and so is the focus keyword.&lt;p&gt;Not facing this issue in Bing and other search engines.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bjt12345:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;What I find strange about Google, is that there&amp;#x27;s a lot of illegal advertising on Google maps - things like accomodation and liquor sellers that don&amp;#x27;t have permits.&lt;p&gt;However, if they do it for the statutory term, they can then successfully apply for existing-use rights.&lt;p&gt;Yet I&amp;#x27;ve seen expert witnesses bring up Google pins on Maps during tribunal over planning permits and the tribunal sort of acts as if it&amp;#x27;s all legit.&lt;p&gt;I&amp;#x27;ve even seen the tribunals report publish screenshots from Google maps as part of their judgement.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;graeme:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Entirely possible the rss failed validation triggered some spam flag that isn&amp;#x27;t documented, because documenting anti-spam rules lets spammers break the rules.&lt;p&gt;The amount of spam has increased enormously and I have no doubt there are a number of such anti-spam flags and a number of false positive casualties along the way.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;echelon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;We need a P2P internet.&lt;p&gt;No more Google. No more websites. A distributed swarm of ephemeral signed posts. Shared, rebroadcasted.&lt;p&gt;When you find someone like James and you like them, you follow them. Your local algorithm then prioritizes finding new content from them. You bookmark their author signature.&lt;p&gt;Like RSS but better. Fully distributed.&lt;p&gt;Your own local interest graph, but also the power of your peers&amp;#x27; interest graphs.&lt;p&gt;Content is ephemeral but can also live forever if any nodes keep rebroadcasting it. Every post has a unique ID, so you can search for it later in the swarm or some persistent index utility.&lt;p&gt;The Internet should have become fully p2p. That would have been magical. But platforms stole the limelight just as the majority of the rest of the world got online.&lt;p&gt;If we nerds had but a few more years...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;p0w3n3d:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Sounds similar to &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46203343"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46203343&lt;/a&gt; in terms, that Google decides who survives and who does not in business&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://journal.james-zhan.com/google-de-indexed-my-entire-bear-blog-and-i-dont-know-why/</guid>
+      <pubDate>Fri, 12 Dec 2025 01:20:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46239752</comments>
     </item>
     <item>
-      <title>Cadmium Zinc Telluride: The wonder material powering a medical 'revolution'</title>
-      <link>https://www.bbc.com/news/articles/c24l223d9n7o</link>
-      <description>&lt;p&gt;This wonder material has many other uses, such as in X-ray telescopes, radiation detectors and airport security scanners. "It's digital," says Dr Basu. "It's really difficult to get these thin ones.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239895"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bbc.com/news/articles/c24l223d9n7o'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.bbc.com/news/articles/c24l223d9n7o</guid>
-      <pubDate>Fri, 12 Dec 2025 01:41:15 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46239895</comments>
-    </item>
-    <item>
-      <title>Notes on Gamma</title>
-      <link>https://poniesandlight.co.uk/reflect/gamma/</link>
-      <description>&lt;p&gt;"The nonlinearity of a CRT is very nearly the inverse of the lightness sensitivity of human vision. The nonlinearity causes a CRT’s response to be roughly perceptually uniform. Far from being a defect, this feature is highly desirable.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239673"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://poniesandlight.co.uk/reflect/gamma/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>The HTML-First Approach: Why Htmx and Lightweight Frameworks Are Revolutionizin</title>
+      <link>https://www.danieleteti.it/post/html-first-frameworks-htmx-revolution-en/#building-with-html-instead-of-fighting-with-javascript-layers-</link>
+      <description>&lt;p&gt;Many teams — including some large ones with enterprise projects — are moving toward HTML-first frameworks like htmx and other tools that take a more traditional, server-driven approach. Building with HTML Instead of Fighting with JavaScript Layers 🛠️ HTML-first tools let you focus on the actual structure and behavior of your application, instead of juggling component trees, hydration, reducers, context providers, and all the overhead that comes with SPA frameworks. ✨ The difference is clear: 30+ lines of React code vs 5 lines of HTML with htmx.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239445"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.danieleteti.it/post/html-first-frameworks-htmx-revolution-en/#building-with-html-instead-of-fighting-with-javascript-layers-'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;turnsout:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Bröther, wait until I tell you about gamut&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://poniesandlight.co.uk/reflect/gamma/</guid>
-      <pubDate>Fri, 12 Dec 2025 01:05:30 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46239673</comments>
-    </item>
-    <item>
-      <title>CRISPR Fungus: Protein-Packed, Sustainable, and Tastes Like Meat</title>
-      <link>https://www.isaaa.org/kc/cropbiotechupdate/article/default.asp?ID=21607</link>
-      <description>&lt;p&gt;Knowledge Center Biotech Updates November 26, 2025 Issue CRISPR Fungus: Protein-Packed, Sustainable, and Tastes Like Meat CRISPR Fungus: Protein-Packed, Sustainable, and Tastes Like Meat November 26, 2025 Researchers used CRISPR to enhance a naturally meat-like fungus. Photo Source: Xiao Liu Researchers have successfully used CRISPR gene editing technology to create a fungi strain that is highly efficient, more nutritious, and significantly more sustainable than its natural counterpart. For more details, read this article or download the open-access paper.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239629"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.isaaa.org/kc/cropbiotechupdate/article/default.asp?ID=21607'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SapporoChris:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;They&amp;#x27;ve altered Fusarium venenatum which is currently what Quorn utilizes in its products.
-&amp;quot;The production process of gene-edited MP is more environmentally friendly than chicken meat and cell-cultured meat.&amp;quot;
-That&amp;#x27;s good news, if they get to the point where it is more economically friendly than chicken meat it will be great news.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.isaaa.org/kc/cropbiotechupdate/article/default.asp?ID=21607</guid>
-      <pubDate>Fri, 12 Dec 2025 00:59:46 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46239629</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;G_o_D:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The server returns the HTML ready to display directly. End of story.&lt;p&gt;What server doing ? it uses cgi, python, etc myriad of scripts to generate html&lt;p&gt;Whats better, a button click and js in browser opens a menu, or fetching a new html with menu open&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pstuart:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;HTMX is cool but no bueno for offline clients.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esteer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I&amp;#x27;ve been working with React Server Components recently. A lot of the points here are applicable for RSCs too. The problem IMO, is Next.JS. Most apps don&amp;#x27;t need edge computing or fancy caching (which Vercel sells). Take those out, and I think we&amp;#x27;ll have a nice framework that&amp;#x27;s easy to use for everyone.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delifue:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The overuse of emoji make me suspect it&amp;#x27;s AI. I plugged first paragraph into pangram and result is 100% AI.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.pangram.com&amp;#x2F;history&amp;#x2F;30310094-f54b-4e74-8d68-e4c935820c13?ucc=OXMb3WyfwOn" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.pangram.com&amp;#x2F;history&amp;#x2F;30310094-f54b-4e74-8d68-e4c9...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.danieleteti.it/post/html-first-frameworks-htmx-revolution-en/#building-with-html-instead-of-fighting-with-javascript-layers-</guid>
+      <pubDate>Fri, 12 Dec 2025 00:37:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46239445</comments>
     </item>
   </channel>
 </rss>

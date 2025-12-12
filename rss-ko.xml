@@ -6,87 +6,43 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Korean</description>
     <language>ko</language>
-    <lastBuildDate>Fri, 12 Dec 2025 03:58:51 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Dec 2025 06:39:06 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ko.xml"/>
     <item>
-      <title>Stoolap: 순수 Rust로 만든 고성능 임베디드 SQL 데이터베이스</title>
-      <link>https://github.com/stoolap/stoolap</link>
-      <description>&lt;p&gt;query("SELECT * FROM 사용자", ()). 부서); -- EXISTS SELECT * FROM 고객 c WHERE EXISTS (SELECT 1 FROM 주문 o WHERE o. 금액 &gt; 1000); -- 하위 쿼리가 포함된 IN SELECT * FROM products WHERE Category_id IN (SELECT id FROM 카테고리 WHERE active = true); 쿼리 최적화 도구 통계가 포함된 비용 기반 최적화 도구: -- 테이블 통계 수집 주문 분석; -- 쿼리 실행 계획 보기 EXPLAIN SELECT * FROM 주문 WHERE customer_id = 100; -- 실제 실행 통계로 계획 보기 EXPLAIN ANALYZE SELECT * FROM 주문 o JOIN 고객 c ON o.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Stoolap: High-performance embedded SQL database in pure Rust&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239372"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/stoolap/stoolap'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Google이 내 Bear 블로그의 색인을 제거했는데 이유를 모르겠습니다.</title>
+      <link>https://journal.james-zhan.com/google-de-indexed-my-entire-bear-blog-and-i-dont-know-why/</link>
+      <description>&lt;p&gt;블로그에서 첫 번째 Bear 블로그를 시작한 지 한 달이 지났습니다. 심지어 모든 개별 블로그 게시물 URL에 대한 색인 생성을 요청했지만 아무 소용이 없었습니다. 우연의 일치였는지, 아니면 문제의 원인이었는지.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Google De-Indexed My Bear Blog and I Don't Know Why&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239752"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://journal.james-zhan.com/google-de-indexed-my-entire-bear-blog-and-i-dont-know-why/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;seg_lol:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;&lt;pre&gt;&lt;code&gt; 최초 릴리스: Stoolap - Pure Rust의 최신 임베디드 SQL 데이터베이스
-    
-    Stoolap은 다음과 같은 기능을 갖춘 고성능 내장 SQL 데이터베이스입니다.
-    
-    핵심 기능:
-    - MVCC를 통한 전체 ACID 트랜잭션(READ COMMITTED 및 SNAPSHOT 격리)
-    - 적응형 실행을 갖춘 비용 기반 쿼리 최적화 프로그램
-    - Rayon을 통한 병렬 쿼리 실행
-    - 101개 이상의 내장 함수(문자열, 수학, 날짜&amp;#x2F;시간, JSON, 집계, 창)
-    - 다양한 인덱스 유형: B-트리, 해시, 비트맵(자동 선택 또는 명시적)
-    - 다중 열 복합 인덱스
-    - 충돌 복구 기능이 있는 WAL + 스냅샷
-    
-    SQL 지원:
-    - 조인(내부, 왼쪽, 오른쪽, 전체 외부, 교차)
-    - 하위 쿼리(스칼라, IN, EXISTS, 상관)
-    - 공통 테이블 표현식(WITH 및 WITH RECURSIVE)
-    - 창 기능(ROW_NUMBER, RANK, LAG, LEAD 등)
-    - 롤업, 큐브, 그룹화 세트
-    - 임시 쿼리(AS OF TIMESTAMP&amp;#x2F;TRANSACTION)
-    - 뷰, RETURNING 절, ON DUPLICATE KEY UPDATE
-    
-    Rust의 104K 라인 | C 종속성 없음 | Stoolap.io의 전체 문서&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rich_sasha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;매우 흥미로울 것 같습니다!&lt;p&gt;다른 내장 SQL DB(예: sqlite3)와의 비교가 유용할 것입니다. 얼마나 학대적입니까? 어떤 절충안이 적용됩니까? 등.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Arcuru:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 시간 이동 쿼리: 특정 시점의 기록 데이터 쿼리:&lt;p&gt;여기의 예는 트랜잭션의 전체 기록을 저장하는 것처럼 보입니까? 그렇죠? 그것은 주요 기능으로 홍보되지 않는 것에 대해 지불하는 데 꽤 높은 비용입니다.&lt;p&gt;저는 전체 거래 내역을 저장하는 DB[1]에서 작업하고 있지만 이는 분산형 동기화를 지원할 수 있도록 하기 위한 것입니다. 내 marquee 기능을 서비스하는 것이므로 기록 저장 비용을 지불해야 하는데 Stoolap이 로컬 임베디드 데이터베이스에도 해당 기능을 수행하는 것 같아 놀랐습니다.&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;arcuru&amp;#x2F;eidetica" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;arcuru&amp;#x2F;eidetica&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/stoolap/stoolap</guid>
-      <pubDate>Fri, 12 Dec 2025 00:28:24 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46239372</comments>
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FuturisticLover:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;구글 검색 결과가 엉망이 되었습니다. 유사한 콘텐츠가 없음에도 불구하고 Google이 콘텐츠 중복을 인용하고 표준 URL 자체를 선택하는 색인 ​​해제 문제에 직면해 있습니다.&lt;p&gt;개방형은 비슷하지만 의도는 완전히 다르며 포커스 키워드도 마찬가지입니다.&lt;p&gt;Bing 및 기타 검색 엔진에서는 이 문제가 발생하지 않습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bjt12345:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Google에 대해 제가 이상하게 생각하는 점은 허가가 없는 숙박 시설 및 주류 판매자와 같은 불법 광고가 Google 지도에 많이 있다는 것입니다.&lt;p&gt;그러나 법정 기간 동안 광고를 수행하면 기존 사용 권한을 성공적으로 신청할 수 있습니다.&lt;p&gt;그러나 계획 허가에 대한 재판소 및 일종의 재판소에서 전문가 증인이 지도에 Google 핀을 표시하는 것을 보았습니다. 마치 모든 것이 합법적인 것처럼 행동합니다.&lt;p&gt;심지어 재판소 보고서가 판단의 일환으로 Google 지도의 스크린샷을 게시하는 것을 본 적도 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;graeme:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;스팸 방지 규칙을 문서화하면 스패머가 규칙을 위반할 수 있기 때문에 RSS 유효성 검사 실패로 인해 문서화되지 않은 일부 스팸 플래그가 트리거되었을 가능성이 있습니다.&lt;p&gt;스팸의 양이 엄청나게 증가했고 그 과정에서 수많은 스팸 방지 플래그와 수많은 오탐 피해가 발생했다는 것은 의심할 여지가 없습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;echelon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;P2P 인터넷이 필요합니다.&lt;p&gt;더 이상 Google은 없습니다. 더 이상 웹사이트가 없습니다. 임시로 서명된 게시물이 분산되어 있습니다. 공유되고 재방송됩니다.&lt;p&gt;제임스 같은 사람을 발견하고 마음에 들면 팔로우하게 됩니다. 그런 다음 로컬 알고리즘은 해당 콘텐츠에서 새로운 콘텐츠를 찾는 데 우선순위를 둡니다. 작성자 서명을 북마크에 추가하세요.&lt;p&gt;RSS와 비슷하지만 더 좋습니다. 완전히 분산되어 있습니다.&lt;p&gt;자신만의 지역 관심도 그래프는 물론 동료의 영향력도 확인할 수 있습니다. 관심도 그래프.&lt;p&gt;콘텐츠는 일시적이지만 노드가 계속 재방송하는 경우 영원히 지속될 수도 있습니다. 모든 게시물에는 고유 ID가 있으므로 나중에 Swarm이나 일부 영구 색인 유틸리티에서 검색할 수 있습니다.&lt;p&gt;인터넷은 완전히 p2p가 되어야 합니다. 그것은 마법 같았을 것입니다. 하지만 전 세계 대다수가 온라인에 접속한 것처럼 플랫폼이 각광을 받았습니다.&lt;p&gt;만약 우리 괴짜들에게 몇 년만 더 시간이 있었다면...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;p0w3n3d:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Google이 누가 살아남고 누가 사업을 하지 않는지 결정한다는 점에서 &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46203343"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46203343&lt;/a&gt;과 유사하게 들립니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://journal.james-zhan.com/google-de-indexed-my-entire-bear-blog-and-i-dont-know-why/</guid>
+      <pubDate>Fri, 12 Dec 2025 01:20:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46239752</comments>
     </item>
     <item>
-      <title>카드뮴 아연 텔루라이드: 의료 '혁명'에 힘을 실어주는 놀라운 물질</title>
-      <link>https://www.bbc.com/news/articles/c24l223d9n7o</link>
-      <description>&lt;p&gt;이 경이로운 물질은 X선 망원경, 방사선 탐지기, 공항 보안 스캐너 등 다양한 용도로 사용됩니다. Basu 박사는 "이것은 디지털입니다."라고 말합니다. “이런 얇은 것을 구하는 것은 정말 어렵습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Cadmium Zinc Telluride: The wonder material powering a medical 'revolution'&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239895"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bbc.com/news/articles/c24l223d9n7o'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.bbc.com/news/articles/c24l223d9n7o</guid>
-      <pubDate>Fri, 12 Dec 2025 01:41:15 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46239895</comments>
-    </item>
-    <item>
-      <title>감마에 대한 참고 사항</title>
-      <link>https://poniesandlight.co.uk/reflect/gamma/</link>
-      <description>&lt;p&gt;"CRT의 비선형성은 인간 시각의 밝기 민감도와 거의 반대입니다. 비선형성으로 인해 CRT의 반응이 지각적으로 거의 균일해집니다. 이 기능은 결함이 아니라 매우 바람직합니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Notes on Gamma&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239673"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://poniesandlight.co.uk/reflect/gamma/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>HTML 우선 접근 방식: Htmx와 경량 프레임워크가 혁신을 이루는 이유</title>
+      <link>https://www.danieleteti.it/post/html-first-frameworks-htmx-revolution-en/#building-with-html-instead-of-fighting-with-javascript-layers-</link>
+      <description>&lt;p&gt;엔터프라이즈 프로젝트를 진행하는 일부 대규모 팀을 포함하여 많은 팀이 htmx 및 보다 전통적인 서버 중심 접근 방식을 취하는 기타 도구와 같은 HTML 우선 프레임워크로 전환하고 있습니다. JavaScript 레이어로 싸우는 대신 HTML로 구축 🛠️ HTML 우선 도구를 사용하면 구성 요소 트리, 하이드레이션, 리듀서, 컨텍스트 공급자 및 SPA 프레임워크와 함께 제공되는 모든 오버헤드를 저글링하는 대신 애플리케이션의 실제 구조와 동작에 집중할 수 있습니다. ✨ 차이점은 분명합니다. 30줄 이상의 React 코드와 htmx를 사용한 5줄의 HTML입니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The HTML-First Approach: Why Htmx and Lightweight Frameworks Are Revolutionizin&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239445"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.danieleteti.it/post/html-first-frameworks-htmx-revolution-en/#building-with-html-instead-of-fighting-with-javascript-layers-'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;turnsout:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Bröther, 내가 영역에 대해 말할 때까지 기다려주세요&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://poniesandlight.co.uk/reflect/gamma/</guid>
-      <pubDate>Fri, 12 Dec 2025 01:05:30 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46239673</comments>
-    </item>
-    <item>
-      <title>CRISPR 곰팡이: 단백질이 풍부하고 지속 가능하며 고기 맛이 납니다.</title>
-      <link>https://www.isaaa.org/kc/cropbiotechupdate/article/default.asp?ID=21607</link>
-      <description>&lt;p&gt;지식 센터 생명공학 업데이트 2025년 11월 26일 발행 CRISPR 곰팡이: 단백질이 풍부하고 지속 가능하며 고기와 같은 맛 CRISPR 곰팡이: 단백질이 풍부하고 지속 가능하며 고기와 같은 맛 2025년 11월 26일 연구원들은 CRISPR를 사용하여 자연적으로 고기와 유사한 곰팡이를 강화했습니다. 사진 출처: Xiao Liu 연구원들은 CRISPR 유전자 편집 기술을 성공적으로 사용하여 천연 곰팡이보다 효율성이 높고 영양가가 높으며 지속 가능성이 훨씬 높은 곰팡이 균주를 만들었습니다. 자세한 내용을 보려면 이 기사를 읽거나 공개 문서를 다운로드하세요.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; CRISPR Fungus: Protein-Packed, Sustainable, and Tastes Like Meat&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46239629"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.isaaa.org/kc/cropbiotechupdate/article/default.asp?ID=21607'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SapporoChris:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그들은 현재 Quorn이 자사 제품에 활용하고 있는 Fusarium venenatum을 변경했습니다.
-"유전자 편집 MP의 생산 공정은 닭고기와 세포 배양 고기보다 환경 친화적입니다."
-좋은 소식입니다. 닭고기보다 경제적으로 더 친화적인 수준에 이르게 된다면 좋은 소식이 될 것입니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.isaaa.org/kc/cropbiotechupdate/article/default.asp?ID=21607</guid>
-      <pubDate>Fri, 12 Dec 2025 00:59:46 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46239629</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;G_o_D:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;서버는 직접 표시할 준비가 된 HTML을 반환합니다. 이야기를 마치겠습니다.&lt;p&gt;무슨 서버가 하고 있나요? cgi, python 등 수많은 스크립트를 사용하여 HTML을 생성합니다&lt;p&gt;더 좋은 점은 버튼을 클릭하면 브라우저의 js가 메뉴를 열거나 메뉴가 열린 상태에서 새 HTML을 가져오는 것입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pstuart:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;HTMX는 훌륭하지만 오프라인 클라이언트에게는 부에노가 없습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esteer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 최근 React Server Components를 사용해 작업하고 있습니다. 여기에 있는 많은 사항이 RSC에도 적용됩니다. 문제 IMO는 Next.JS입니다. 대부분의 앱에는 엣지 컴퓨팅이나 고급 캐싱(Vercel에서 판매)이 필요하지 않습니다. 그것들을 제거하면 모든 사람이 사용하기 쉬운 멋진 프레임워크를 갖게 될 것이라고 생각합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delifue:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이모티콘을 과도하게 사용하면 AI가 아닐까 의심하게 됩니다. 첫 번째 문단을 팬그램에 연결했는데 결과는 100% AI였습니다.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.pangram.com&amp;#x2F;history&amp;#x2F;30310094-f54b-4e74-8d68-e4c935820c13?ucc=OXMb3WyfwOn" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.pangram.com&amp;#x2F;역사&amp;#x2F;30310094-f54b-4e74-8d68-e4c9...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.danieleteti.it/post/html-first-frameworks-htmx-revolution-en/#building-with-html-instead-of-fighting-with-javascript-layers-</guid>
+      <pubDate>Fri, 12 Dec 2025 00:37:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46239445</comments>
     </item>
   </channel>
 </rss>
