@@ -6,159 +6,23 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 13 Dec 2025 01:53:48 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Dec 2025 03:50:50 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>OpenAI 正在悄然采用技能，现已在 ChatGPT 和 Codex CLI 中提供</title>
-      <link>https://simonwillison.net/2025/Dec/12/openai-skills/</link>
-      <description>&lt;p&gt;ChatGPT 中的技能 今天早上我从 Elias Judin 那里了解到了这一点。这是该工具中 ChatGPT 的 PDF。 text=hello 页面显示了 PyPI 中的owsay 的 pre 内容，表示 text 它工作得很好。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; OpenAI are quietly adopting skills, now available in ChatGPT and Codex CLI&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46250332"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://simonwillison.net/2025/Dec/12/openai-skills/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;heliumtera:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么chatgpt可以读取markdown文件吗？
-我很困惑&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;canadiantim:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是否可以或应该使用技能来管理项目中的依赖项文档及其专业知识？&lt;p&gt;我一直在尝试这样做，但感觉不是最自然的选择。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ohghiZai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有没有办法和双子座一起施展技能呢？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lacker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不确定我是否拥有适合某项“技能”的心智模型。它基本上是一个上下文管理工具？就像技能是对某事物的简短描述一样，如果模型决定需要基于该描述的技能，那么它就会提取该技能拥有的任何无定形的东西，脚本，文档，等等。这是正确的思考方式吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;8cvor6j844qw_d6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是否意味着我可以指向代码片段和相关文档的链接，并且编码代理可以引用它，而不是编写“过时的”代码？代码？&lt;p&gt;不幸的是，一些框架和语言发展得非常快。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;petetnt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令人印象深刻的是，当我们基本上用人类已知的最糟糕的 DSL（用英语 markdown）编写库函数时，每次迭代都试图进一步远离假装实际的 AGI 会很接近。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mbesto:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从纯粹的技术角度来看，技能只是一种将用户和系统提示填充到上下文中的自动化方式，对吗？并不是要贬低这一点，而是这似乎是减少对 AI 包装器应用程序需求的一种方式，因为大多数 AI 包装器只是进行系统的用户和系统提示填充 + 潜在的 RAG + 潜在的 MCP。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esperent:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直在测试 Gemini Enterprise 供我企业中不同职位的员工使用。&lt;p&gt;它实现了“类似技能”的最佳实施。我见过的代理工具。基本上是一个可视化树构建器，目前只有一层深。所以我设置了&lt;i&gt;“&lt;我的公司名称&gt;”代理”，然后它具有子代理的技能，例如营销、供应链研究、系统管理、翻译等，每个技能都有单独的描述、提示和知识库。&lt;p&gt;不幸的是，有关 Gemini Enterprise 的其他一切都在尖叫“早期 alpha，你到底为什么要把它作为实际的成品出售？”。&lt;p&gt;对于例如，当我花了半天时间设置代理和子代理，然后去与其他帮助我测试它的人分享这个之后，我发现......我不能。从字面上看，没有办法在原本供团队使用的工具中共享代理。我发现一位开发人员说共享代理将在“大约两周”内发布。那是两个月前的事了。&lt;p&gt;迷你咆哮结束了......但我的观点是，技能只是“代理+通过简短描述自动选择子代理”。我们很快就会在各处看到这种模式。 Claude Skills 有一些额外的沙箱，但这大多只对程序员感兴趣。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bzmrgonz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，他们依靠视觉阅读而不是 OCT 来获取文档。  最近我读到一篇文章，说手写识别已经成熟，我开始认为这就是他们在手写识别中采取的方法。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jumploops:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为未来很可能将厨房水槽风格的 MCP 资源与自定义技能相结合。&lt;p&gt;服务可以提供类似 MCP 的层，为您可以使用所述服务（API + 文档）执行的所有操作提供语义定义。&lt;p&gt;然后可以构建结合了第三方接口的某些子集、一些定制代码等的技能。然后将这些更注重上下文的技能呈现给 LLM 代理。&lt;p&gt;我们不能只使用API？&lt;p&gt;是的，但并非每个 API 都以相同的方式记录。 “类似 MCP”的注册表可能是第三方以语义优先的方式公开其服务的正确抽象。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hurturue:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也是 Github 副驾驶&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;koakuma-chan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;光标支持技能吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我写这篇文章很有趣，主要是因为这是一个很好的借口来强调今年鸮鹦鹉繁殖季节的好消息。&lt;p&gt;（我不仅仅关心鹈鹕。）&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://simonwillison.net/2025/Dec/12/openai-skills/</guid>
-      <pubDate>Fri, 12 Dec 2025 23:30:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46250332</comments>
-    </item>
-    <item>
-      <title>macOS 26.2 通过 Thunderbolt 通过 RDMA 支持快速 AI 集群</title>
-      <link>https://developer.apple.com/documentation/macos-release-notes/macos-26_2-release-notes#RDMA-over-Thunderbolt</link>
-      <guid isPermaLink="true">https://developer.apple.com/documentation/macos-release-notes/macos-26_2-release-notes#RDMA-over-Thunderbolt</guid>
-      <pubDate>Fri, 12 Dec 2025 20:41:38 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46248644</comments>
-    </item>
-    <item>
-      <title>显示 HN：C 语言的小型 VM 沙箱以及 Rust、C 和 Zig 语言的应用程序</title>
-      <link>https://github.com/ringtailsoftware/uvm32</link>
-      <description>&lt;p&gt;运行代码的主机的一个最小示例是 host-mini。示例 host-mini 中的简单 VM 主机 #include &lt;stdio.h代码）;休息; } 休息;案例 UVM32_EVT_ERR: printf("UVM32_EVT_ERR '%s' (%d)\n", evt.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Tiny VM sandbox in C with apps in Rust, C and Zig&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46249538"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/ringtailsoftware/uvm32'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>棋盘</title>
+      <link>https://99percentinvisible.org/episode/650-the-checkerboard/</link>
+      <description>&lt;p&gt;他们将从公共土地开始，然后确保留在公共土地上，通过对角线进入新的广场，在所有这些公共广场接触的角落。从那时起，他们就完全呆在棋盘内的公共土地上，在麋鹿山上寻找麋鹿时，从一个公共广场拐角到另一个公共广场。但猎人们认为公众应该有权使用公共土地——包括棋盘上的土地。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Checkerboard&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46250862"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://99percentinvisible.org/episode/650-the-checkerboard/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;idle_zealot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想这与某些人尝试使用 WASM 创建公共执行环境属于同一领域？不过，它是基于 RISC-V 构建的。我希望我能更多地了解每种方法的局限性和功能，但无论如何，为通用虚拟机构建应用程序的未来似乎是我们已经构建了一段时间的目标，现代网络是我们最接近的目标。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;trj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“只需添加老鼠” &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ringtailsoftware&amp;#x2F;uvm32&amp;#x2F;tree&amp;#x2F;main&amp;#x2F;apps&amp;#x2F;zigdoom" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ringtailsoftware&amp;#x2F;uvm32&amp;#x2F;tree&amp;#x2F;main&amp;#x2F;apps&amp;#x2F;zig...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/ringtailsoftware/uvm32</guid>
-      <pubDate>Fri, 12 Dec 2025 22:02:14 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46249538</comments>
-    </item>
-    <item>
-      <title>Capsudo：用对象功能重新思考 Sudo</title>
-      <link>https://ariadne.space/2025/12/12/rethinking-sudo-with-object-capabilities.html</link>
-      <description>&lt;p&gt;使用对象功能委派 root 权限这在实践中是什么样子的。我们将向该 mountd 用户授予功能，然后通过运行 capsudod 守护程序的几个实例来调用 capsudo。这意味着 /run/user/mountd/cap/mount 功能无法运行除 mount 之外的任何其他命令。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Capsudo: Rethinking Sudo with Object Capabilities&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46249337"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://ariadne.space/2025/12/12/rethinking-sudo-with-object-capabilities.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;saghm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最近一次使用 sudo 的迷你冒险是在 Steam Deck 上进行的；通过操作系统更新，主目录之外的所有内容（或至少大部分？）都会被替换。 （事实上​​，您必须手动选择能够写入这些目录，例如通过运行“sudo steamos-readonlydisable”来使用系统包管理器而不是 flatpak）。我从默认值更改了几个 sudo 设置，并且因为 `&amp;#x2F;etc&amp;#x2F;sudoers 和 `&amp;#x2F;etc&amp;#x2F;sudoers.d&amp;#x2F;` （如在整个目录中）已恢复到基本版本，所以更新发生时我的自定义设置不会被保留。然而，我惊讶地发现使用“visudo”尝试更新设置实际上并没有导致我更改的设置生效，我最终追踪到基本系统在“&amp;#x2F;etc&amp;#x2F;sudoers.d”中提供了一些额外的配置。我查了一下 sudo 规则的优先级规则，显然规则是 `&amp;#x2F;etc&amp;#x2F;sudoers.d&amp;#x2F;` 中的任何内容都会覆盖 `&amp;#x2F;etc&amp;#x2F;sudoers`，并且 `&amp;#x2F;etc&amp;#x2F;sudoers.d&amp;#x2F;` 中的文件按词典进行评估&lt;p&gt;这就是我今天的处境，每次系统更新时，我都会将一个名为“zzz”的文件复制到“&amp;#x2F;etc&amp;#x2F;sudoers.d&amp;#x2F;”中。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;charcircuit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您从一开始就赋予了正确的权限，则无需提升权限。&lt;p&gt;Sudo 只是一种避免设置正确功能的 hack &amp;#x2F;首先是权限。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esseph:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每当有人想要在 Linux 中做某事并提到对象时，我就会转身走另一条路。&lt;p&gt;这些人仍然不明白为什么用户空间变得如此强大和有用。&lt;p&gt;我也认为这就是“解决方案”，即打造一种新的可选用户空间体验，而无需考虑传统的 UNIX 字符串和管道。这不适合我，但我相信很多人会喜欢它。我的意思是，看看 Linux 上的 PowerShell：&amp;#x2F;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PunchyHamster:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这在功能上等同于使用 sudo，但只允许某个 shell 脚本作为给定用户需要完成的操作的包装器（以避免整个语法混乱）。但不知怎的，有更多的样板。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://ariadne.space/2025/12/12/rethinking-sudo-with-object-capabilities.html</guid>
-      <pubDate>Fri, 12 Dec 2025 21:42:04 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46249337</comments>
-    </item>
-    <item>
-      <title>将小米加湿器从云端释放出来</title>
-      <link>https://0l.de/blog/2025/11/xiaomi-humidifier/</link>
-      <description>&lt;p&gt;用我自己的源代码替换智能加湿器的固件。小米米家智能抗菌加湿器。加湿器的底视图。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Freeing a Xiaomi humidifier from the cloud&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46241368"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://0l.de/blog/2025/11/xiaomi-humidifier/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;piskov:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;切线注意：不要使用超声波加湿器。除非使用蒸馏水，否则它们会产生大量的 pm2.5 颗粒。&lt;p&gt;使用蒸发加湿器（只是带有无数小凹口的圆盘，用于附着水和风扇）：&lt;a href="https:&amp;#x2F;&amp;#x2F;us.smartmiglobal.com&amp;#x2F;pages&amp;#x2F;smartmi-evaporative-humidifier-3" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;us.smartmiglobal.com&amp;#x2F;pages&amp;#x2F;smartmi-evaporative-humid...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://0l.de/blog/2025/11/xiaomi-humidifier/</guid>
-      <pubDate>Fri, 12 Dec 2025 06:17:28 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46241368</comments>
-    </item>
-    <item>
-      <title>50 年的证明助理</title>
-      <link>https://lawrencecpaulson.github.io//2025/12/05/History_of_Proof_Assistants.html</link>
-      <description>&lt;p&gt;他们承认计算是一个例外：他们不会假装我个人的 32GB 笔记本电脑比我在那里时为整个加州理工学院社区提供服务的 16MB 大型机没有进步。 LCF 式的证明助手与主流计算相去甚远，所以让我们看看这方面 50 年的进展。它引入了证明策略和战术：组合策略的运算符。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; 50 years of proof assistants&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46250309"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://lawrencecpaulson.github.io//2025/12/05/History_of_Proof_Assistants.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ratmice:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望他刚才说的是 LCF 50 年，因为他甚至在文章中提到了自动化，但那是 60 年代末了&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Animats:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 1994 年，奔腾处理器出现了 FDIV bug：浮点除法中的一个可能微不足道但可检测到的错误。随后的产品召回使英特尔损失了近 5 亿美元。 Mike 的学生 John Harrison 决定将他的博士研究投入到浮点运算的验证上。&lt;p&gt;没有提及当时在 Computational Logic, Inc. 工作的 Boyer 和 Moore 对 AMD5K86TM 的 AMD FPU 进行形式验证的努力。 AMD 芯片出厂时没有 FDIV 错误。 [1]&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;dl.acm.org&amp;#x2F;doi&amp;#x2F;abs&amp;#x2F;10.1109&amp;#x2F;12.713311" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;dl.acm.org&amp;#x2F;doi&amp;#x2F;abs&amp;#x2F;10.1109&amp;#x2F;12.713311&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://lawrencecpaulson.github.io//2025/12/05/History_of_Proof_Assistants.html</guid>
-      <pubDate>Fri, 12 Dec 2025 23:26:26 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46250309</comments>
-    </item>
-    <item>
-      <title>厌倦了智能电视？这是您的最佳选择</title>
-      <link>https://arstechnica.com/gadgets/2025/12/the-ars-technica-guide-to-dumb-tvs/</link>
-      <description>&lt;p&gt;图片来源：Jeff Dunn 您的最佳选择。您可能会使用带有 Apple TV 应用程序或 Apple 帐户的 Apple TV 机顶盒，这意味着要向 Apple 发送一些数据。哑电视的保修期通常也较短（一年）。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Sick of smart TVs? Here are your best options&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243655"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://arstechnica.com/gadgets/2025/12/the-ars-technica-guide-to-dumb-tvs/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 21 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;QuiEgo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是“抛弃有线电视公司可怕的 DVR，使用 TiVO”的现代版本。可悲的是，旧的又变成新的了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PaulHoule:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为 Plex 用户，我推荐使用二手的上一代游戏机作为电视源。  在我楼上的 AV 房间里，我已经拥有一台 XBOX ONE S 很长一段时间了，最​​近我在楼下的空余房间里买了一台 PS4 Pro——两者都在 Gamestop。  我对这两款游戏都有一些游戏，但我更有可能在 Steam、Steam Deck 或移动设备上玩游戏。&lt;p&gt;我尝试过的每一款基于 Android 的媒体播放器都很糟糕，NVIDIA Shield 还不错，但在某些时候控制器停止充电。  你仍然可以得到一台带有内置蓝光播放器的游戏机，拥有一个既能做到这一点，又能提供强大的流媒体播放功能的盒子真是太好了。&lt;p&gt;我有一个 HDHomeRun，连接到一根指向锡拉丘兹的小天线，除了 ABC 以外，它的表现都很好，有时我会考虑爬到屋顶上，将小天线指向宾厄姆顿，将大天线指向锡拉丘兹，但我看的 OTA 并不像我以前使用的那么多。到。  虽然能够在电视、任何计算机、平板电脑、手机上观看 OTA 电视，以及支付元数据费用的 Plex Pass 与我所有其他媒体并排观看真正优秀的 DVR，这还是很不错的。我现在使用的是曲面三星 55 英寸，我刚带回家一台 45 美元的等离子，因为我一直想要一台等离子。  我经历了一个很长的阶段，人们不断地把便宜的电视扔到我家，其中一些我真的很欣赏（Vizio 的设计精美），还有一些很糟糕。  [1]&lt;p&gt;[1] ...就像 20 世纪 80 年代那样，每个人都担心有人会闯入您的家并拿走您的电视，但对我来说，情况恰恰相反&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;taxmeifyoucan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于一篇黑客新闻文章来说，它错过了关键的选项——黑客攻击智能电视！我使用 rootmy.tv 越狱了 LG OLED，这非常简单。它基本上是一台带有大屏幕的 Linux 计算机，您可以对其进行自定义、通过 SSH 连接、将任何命令映射到远程等等。&lt;p&gt;在我只使用显示器之前，简单的 DP&amp;#x2F;HDMI 输入就是我想要的。但能够完全控制电视并将其与家里的其他设备连接起来，我通常会得到 Rpi，这非常方便！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JayGuerette:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很困惑。如果你不给它你的 Wifi 密码，每台电视都是傻电视。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AndrewKemendo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不买电视？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tormeh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我真正想要的是一台带有 DisplayPort 的电视。这怎么不是个事呢？ IIRC 你不能购买大于 45 英寸的 DP 显示器，不管怎样 - 它们根本就不存在。我觉得这真的很奇怪。比如，我愿意为该端口额外支付 100 美元，但我就是不被允许拥有它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;文章很糟糕，但主题很好。您可以使用 Projectivity 等自定义启动器去除 Google(&amp;#x2F;Android&amp;#x2F;Chromecast?) TV 上的主屏幕广告：&lt;a href="https:&amp;#x2F;&amp;#x2F;play.google.com&amp;#x2F;store&amp;#x2F;apps&amp;#x2F;details?id=com.spocky.projengmenu&amp;amp ;hl=zh_CN"&gt;https:&amp;#x2F;&amp;#x2F;play.google.com&amp;#x2F;store&amp;#x2F;apps&amp;#x2F;details?id=com.spocky.pro...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Simulacra:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;大约十年前，我就放弃了电视，它们都像一月份的糖蜜一样慢，动力不足，界面也很糟糕。他们中的任何一个都没有流动性或积极性。我的卧室里有一台 30 英寸的 iMac，我们可以用它来观看所有内容，比电视好得多。我有兴趣购买一台 52 英寸 iMac，挂在墙上，拥有所有媒体共享功能以及电视无法做到的一切。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lucasRW:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私有 DNS 或 PiHoles 不是一个足够好的折衷方案吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amundskm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我多年来一直将一台旧电脑连接到旧电视的 HDMI 端口，它的工作方式完全符合我的要求。我拥有完全的控制权，不必处理智能电视广告。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;DrPhish:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只需使用商业标牌显示器&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amelius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不幸的是，在这方面，汽车正变得像智能电视一样。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jqpabc123:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我如何摆脱智能电视（对于制造商来说“智能”，但对于用户来说非常愚蠢）。&lt;p&gt;购买一台便宜的智能电视并在“商店模式”下运行它。&lt;p&gt;亮度和饱和度可能会达到最大值，但对于便宜的电视，它看起来更像“正常”电视在更昂贵的型号上。提示：在某些情况下，便宜和昂贵之间的主要区别 --- 颜色调整范围受到更便宜型号上的软件的限制。&lt;p&gt;当前使用 Costco 的海信 4k 型号连接到小型迷你 PC --- Windows 或 Linux，您的偏好。电视的功能只不过是一个哑显示器。&lt;p&gt;使用小型“空中鼠标”来操作。用于控制。根据需要使用屏幕键盘。&lt;p&gt;使用 Hauppauge USB 调谐器进行本地数字广播。&lt;p&gt;我使用名为 DVB Viewer 的软件来查看本地频道和 IPTV。在某些情况下，带有 VPN 的浏览器可用于流式传输。&lt;p&gt;在任何情况下，我都能完全控制自己的数据，并能够根据自己的需要屏蔽广告。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;HiroProtagonist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;皮孔&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shlip:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;除了建议的 Apple TV 路线之外，其他选项还包括 pihole (adblock)、kodi、openelec（开源媒体播放器）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;valleyer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Scepter 实际上并不是“沃尔玛品牌”。而是一家独立公司。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.sceptre.com" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.sceptre.com&lt;/a&gt;&lt;p&gt;西屋电气是由该品牌授权的公司制造的，而不是“总部位于匹兹堡的公司”。&lt;p&gt;这些似乎很容易避免的错误。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AshamedCaptain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;剧透：这里是 Ars Technica。显然他们建议你改买一台苹果电视，这样你就可以将数据发送给苹果并观看苹果广告（唯一的论点是“到目前为止他们做的广告较少”）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aquir:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从来没有将电视连接到互联网？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AlecSchueler:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不带一个进你家吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maurits:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“我们和我们的 226 个合作伙伴使用 cookie 和类似方法来识别访客”&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deafpolygon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;tl;dr：不要将其连接到网络，并且&amp;#x2F;或使用计算机显示器。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://arstechnica.com/gadgets/2025/12/the-ars-technica-guide-to-dumb-tvs/</guid>
-      <pubDate>Fri, 12 Dec 2025 12:51:40 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46243655</comments>
-    </item>
-    <item>
-      <title>Motion (YC W20) 正在招聘高级前端工程师</title>
-      <link>https://jobs.ashbyhq.com/motion/715d9646-27d4-44f6-9229-61eb0380ae39</link>
-      <guid isPermaLink="true">https://jobs.ashbyhq.com/motion/715d9646-27d4-44f6-9229-61eb0380ae39</guid>
-      <pubDate>Fri, 12 Dec 2025 21:00:54 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46248892</comments>
-    </item>
-    <item>
-      <title>更快地构建小型 Docker 镜像</title>
-      <link>https://sgt.hootr.club/blog/docker-protips/</link>
-      <description>&lt;p&gt;hello}/bin/hello" ]; } 你可以使用 nix-build docker-test 来构建它。一般来说，这是你在 docker build 之后传递的参数。我不知道 Docker 可以做到这一点。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Building small Docker images faster&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46242700"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://sgt.hootr.club/blog/docker-protips/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;grim_io:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我见过很多开发人员不知道像多阶段这样的东西甚至存在。&lt;p&gt;到处都是多千兆字节的容器。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zerotolerance:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我总是喜欢找到提倡古老圣人知识的人，并将其介绍给新的受众。也就是说，作为一个写过一本关于 Docker 的书并经历了完整的容器之旅的人，我倾向于跳过容器化构建。 Docker 可以打造出色的包装。但是，将构建过程的每一步容器化，甚至只是在一个大容器中进行，都有点额外。将其定位为构建脚本解决方案是愚蠢的。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://sgt.hootr.club/blog/docker-protips/</guid>
-      <pubDate>Fri, 12 Dec 2025 10:23:23 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46242700</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;takira:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这让我想知道政府的计划何时改变了。如果“棋盘”是本来是要持有土地直到其升值然后出售的，为什么今天有这么多地块公开呢？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rtkwe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很高兴法庭案件的判决是合理的，即你不能有效地通过一半的土地（当然，因为你购买越来越多的土地）来控制整个封闭区域，这显然是所有土地所有者认为他们可以实现的目标。我想知道他们现在是否真的会购买封闭区域？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://99percentinvisible.org/episode/650-the-checkerboard/</guid>
+      <pubDate>Sat, 13 Dec 2025 00:50:47 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46250862</comments>
     </item>
   </channel>
 </rss>

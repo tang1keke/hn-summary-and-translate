@@ -6,159 +6,23 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 13 Dec 2025 01:53:48 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Dec 2025 03:50:50 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>OpenAI は密かにスキルを採用しており、ChatGPT と Codex CLI で利用できるようになりました</title>
-      <link>https://simonwillison.net/2025/Dec/12/openai-skills/</link>
-      <description>&lt;p&gt;ChatGPT のスキル 今朝、Elias Judin からこのことについて学びました。これがそのツール内の ChatGPT の PDF です。 text=hello ページは、テキストが完全に機能したことを示す PyPI からのカウセイを含むプレを表示します。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; OpenAI are quietly adopting skills, now available in ChatGPT and Codex CLI&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46250332"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://simonwillison.net/2025/Dec/12/openai-skills/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;heliumtera:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それで、chatgptはマークダウンファイルを読み取ることができますか？
-とても混乱しています&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;canadiantim:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;プロジェクト内の依存関係のドキュメントとその専門知識を管理するためにスキルを使用できますか?または使用する必要がありますか?&lt;p&gt;これを試してみましたが、最も自然にフィットするとは感じません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ohghiZai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Gemini でスキルを実装する方法はありますか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lacker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「スキル」について適切なメンタル モデルを持っているかどうかわかりません。基本的にはコンテキスト管理ツールですか?スキルが何かの簡単な説明であるのと同様に、モデルはその説明に基づいてスキルが必要であると判断すると、スキルが持つ残りの不定形なもの、スクリプト、ドキュメントなどを取り込みます。これは正しい考え方でしょうか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;8cvor6j844qw_d6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは、コード スニペットと関連ドキュメントへのリンクを指定すると、コーディング エージェントが「古い」と書く代わりにそれを参照できることを意味しますか? code?&lt;p&gt;一部のフレームワーク&amp;#x2F;言語は、残念ながら非常に高速に動作します。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;petetnt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;基本的に人類が知る最悪の DSL、markdown-with-english を使用してライブラリ関数を作成しているときに、すべての反復が実際の AGI に近いふりをすることから遠ざかろうとしているのは印象的です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mbesto:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;純粋に技術的な観点から見ると、スキルはユーザーとシステムのプロンプトをコンテキストに導入する自動化された方法にすぎません。これを軽視するわけではありません。むしろ、ほとんどの AI ラッパーは体系的なユーザーおよびシステム プロンプト スタッフィング + 潜在的に RAG + 潜在的に MCP を実行するだけであるため、これは AI ラッパー アプリの必要性を減らす方法のように思えます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esperent:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は、社内のさまざまな役職のスタッフが使用するために Gemini Enterprise をテストしてきました。&lt;p&gt;これは、「スキルに似た」スキルを最適に実装しています。見たことのあるエージェント ツール。基本的にはビジュアル ツリー ビルダーですが、現在は 1 レベルの深さのみです。そこで、&lt;i&gt;&lt;私の会社名&gt; を設定しました。エージェント」&lt;/i&gt;と、マーケティング、サプライ チェーン リサーチ、システム管理者、翻訳などのサブエージェント スキルがあり、それぞれに個別の説明、プロンプト、ナレッジ ベースが付いています。&lt;p&gt;残念ながら、Gemini Enterprise に関するその他すべての点で、「初期アルファ版、一体なぜこれを実際の完成品として販売するのか」と叫んでいます。 &lt;p&gt;たとえば、エージェントとサブエージェントのセットアップに半日を費やし、テストを手伝ってくれた他の人々とこれを共有しようとした後、...できないことがわかりました。文字通り、チームが使用するはずのツールでエージェントを共有する方法はありません。開発者の 1 人が、共有エージェントは「約 2 週間」でリリースされるだろうと述べているのを見つけました。それは 2 か月前のことです。&lt;p&gt;ちょっとした暴言... しかし、私が言いたいのは、スキルは単に「エージェント + 短い説明によるサブエージェントの自動選択」であるということです。そしてすぐにこのパターンがあらゆるところで見られるようになるでしょう。クロード スキルには追加のサンドボックスがいくつかありますが、これはほとんどプログラマーにとってのみ興味深いものです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bzmrgonz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;興味深いのは、ドキュメントの取り込みを OCT ではなく視覚的な読み取りに依存していることです。  最近、手書き認識が成熟したという記事を読みましたが、これが手書き認識で採用されているアプローチではないかと思い始めています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jumploops:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は、未来はキッチンシンク スタイルの MCP リソースとカスタム スキルを組み合わせたものになる可能性が高いと考えています。&lt;p&gt;サービスは、そのサービス (API + ドキュメント) で実行できるすべてのことのセマンティック定義を提供する MCP のようなレイヤーを提供できます。&lt;p&gt;その後、サードパーティ インターフェースのサブセットや特注のコードなどを組み合わせたスキルを構築し、これらのよりコンテキストに重点を置いたスキルをユーザーに提供できます。 LLM&amp;#x2F;agent.&lt;p&gt;API を使用することはできないでしょうか?&lt;p&gt;はい、ただし、すべての API が同じ方法で文書化されているわけではありません。 「MCP のような」レジストリは、サードパーティがセマンティックファーストの方法でサービスを公開するために適切な抽象化である可能性があります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hurturue:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Github コパイロットも&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;koakuma-chan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;カーソルはスキルをサポートしますか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この件について書くのはとても楽しかったです。主な理由は、今年のカカポの繁殖期に関する素晴らしいニュースを強調する良い口実だったからです。&lt;p&gt;(ペリカンだけの話ではありません)。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://simonwillison.net/2025/Dec/12/openai-skills/</guid>
-      <pubDate>Fri, 12 Dec 2025 23:30:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46250332</comments>
-    </item>
-    <item>
-      <title>macOS 26.2 は RDMA over Thunderbolt による高速 AI クラスターを有効にします</title>
-      <link>https://developer.apple.com/documentation/macos-release-notes/macos-26_2-release-notes#RDMA-over-Thunderbolt</link>
-      <guid isPermaLink="true">https://developer.apple.com/documentation/macos-release-notes/macos-26_2-release-notes#RDMA-over-Thunderbolt</guid>
-      <pubDate>Fri, 12 Dec 2025 20:41:38 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46248644</comments>
-    </item>
-    <item>
-      <title>HN を表示: Rust、C、Zig のアプリを使用した C の小さな VM サンドボックス</title>
-      <link>https://github.com/ringtailsoftware/uvm32</link>
-      <description>&lt;p&gt;コードを実行するホストの最小限の例は、host-mini にあります。例 host-mini #include &lt;stdio からの単純な VM ホスト。コード）;壊す; } 壊す; case UVM32_EVT_ERR: printf("UVM32_EVT_ERR '%s' (%d)\n", evt.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Tiny VM sandbox in C with apps in Rust, C and Zig&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46249538"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/ringtailsoftware/uvm32'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>チェッカーボード</title>
+      <link>https://99percentinvisible.org/episode/650-the-checkerboard/</link>
+      <description>&lt;p&gt;彼らは公共の土地から始めて、すべての公共の広場が接する角で新しい広場に斜めに交差して、公共の土地に留まるようにしました。その時点から、彼らは完全にチェッカーボード内の公共の土地に留まり、エルク山でヘラジカを狩りながら、ある公共広場から別の公共広場へと角を横切りました。しかし狩猟者たちは、チェッカーボード内も含め、一般の人々は公有地にアクセスする権利があるべきだと信じていた。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Checkerboard&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46250862"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://99percentinvisible.org/episode/650-the-checkerboard/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;idle_zealot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは、一部の人々が WASM を使用して共通の実行環境を作成しようとしていることと同じ領域にあると思いますか?ただし、これは RISC-V 上に構築されています。それぞれのアプローチの機能の制限についてもっと知りたかったのですが、いずれにしても、共通の VM 用にアプリケーションが構築される未来は、私たちがしばらくの間構築してきたもののように思えます。現代の Web は、私たちが到達した最も近いものです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;trj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「ネズミを追加するだけです」 &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ringtailsoftware&amp;#x2F;uvm32&amp;#x2F;tree&amp;#x2F;main&amp;#x2F;apps&amp;#x2F;zigdoom" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ringtailsoftware&amp;#x2F;uvm32&amp;#x2F;tree&amp;#x2F;main&amp;#x2F;apps&amp;#x2F;zig...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/ringtailsoftware/uvm32</guid>
-      <pubDate>Fri, 12 Dec 2025 22:02:14 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46249538</comments>
-    </item>
-    <item>
-      <title>Capsudo: オブジェクト機能を使用して Sudo を再考する</title>
-      <link>https://ariadne.space/2025/12/12/rethinking-sudo-with-object-capabilities.html</link>
-      <description>&lt;p&gt;オブジェクト機能を使用した root 権限の委任は、実際にはどのようなものになるでしょうか。その mountd ユーザーに、capsudod デーモンのインスタンスをいくつか実行することで、capsudo を使用して呼び出す機能を付与します。これは、/run/user/mountd/cap/mount 機能では mount 以外のコマンドを実行できないことを意味します。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Capsudo: Rethinking Sudo with Object Capabilities&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46249337"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://ariadne.space/2025/12/12/rethinking-sudo-with-object-capabilities.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;saghm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私の最近の sudo のミニアドベンチャーは Steam デッキでした。 OS のアップデートにより、ホーム ディレクトリの外側にあるものはすべて (少なくともほとんど?) 置き換えられます。 (実際には、「sudo steamos-readonly disable」を実行して、たとえば flatpak の代わりにシステム パッケージ マネージャーを使用するなど、これらのディレクトリに書き込めるように手動でオプトインする必要があります)。デフォルトから変更した sudo 設定がいくつかあり、`&amp;#x2F;etc&amp;#x2F;sudoers と `&amp;#x2F;etc&amp;#x2F;sudoers.d&amp;#x2F;` (ディレクトリ全体と同様) が基本バージョンに復元されたため、更新が行われたときにカスタム設定が保持されません。しかし、`visudo` を使用して設定を更新しようとしても、変更した設定が実際には有効にならないことがわかり、驚きました。最終的には、`&amp;#x2F;etc&amp;#x2F;sudoers.d` 内の基本システムによって出荷される追加の設定が原因であることがわかりました。 sudo ルールの優先順位ルールを調べてみたところ、どうやら `&amp;#x2F;etc&amp;#x2F;sudoers.d&amp;#x2F;` 内のすべてのものが `&amp;#x2F;etc&amp;#x2F;sudoers` をオーバーライドし、`&amp;#x2F;etc&amp;#x2F;sudoers.d&amp;#x2F;` 内のファイルは辞書順に評価されるというルールのようです。 &lt;p&gt;これが、システム アップデートがあるたびに「zzz」という名前のファイルを「&amp;#x2F;etc&amp;#x2F;sudoers.d&amp;#x2F;」にコピーすることで、現在に至っています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;charcircuit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最初から適切な権限を与えておけば、権限を昇格する必要はありません。&lt;p&gt;Sudo は、適切な機能の設定を回避するための単なるハックです。そもそも許可。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esseph:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;誰かが Linux で何かをしたいと思っていて、オブジェクトについて言及するたびに、私は向きを変えて別の方向に進みます。&lt;p&gt;この人たちは、ユーザー空間がなぜそれほど強力で便利になったのかをまだ理解していません。&lt;p&gt;私はまた、それが「解決策」であるとも考えています。これは、従来の Unix 文字列とパイプをそのままにして、新しいオプションのユーザー空間エクスペリエンスを作成することです。私向きではありませんが、きっと多くの人が気に入ると思います。つまり、Linux 上の PowerShell を見てください:&amp;#x2F;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PunchyHamster:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは機能的には sudo を使用するのと同等ですが、特定のユーザーが実行する必要がある処理のラッパーである特定のシェル スクリプトのみを許可します (構文全体の混乱を避けるため)。しかしどういうわけか定型文が増えています。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://ariadne.space/2025/12/12/rethinking-sudo-with-object-capabilities.html</guid>
-      <pubDate>Fri, 12 Dec 2025 21:42:04 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46249337</comments>
-    </item>
-    <item>
-      <title>Xiaomi 加湿器をクラウドから解放する</title>
-      <link>https://0l.de/blog/2025/11/xiaomi-humidifier/</link>
-      <description>&lt;p&gt;スマート加湿器のファームウェアを独自のソース コードに置き換えます。 Xiaomi Mi スマート抗菌加湿器。加湿器を下から見た図。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Freeing a Xiaomi humidifier from the cloud&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46241368"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://0l.de/blog/2025/11/xiaomi-humidifier/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;piskov:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;余談ですが、超音波加湿器は使用しないでください。蒸留水を使用しない限り、大量の pm2.5 粒子が生成されます。&lt;p&gt;蒸発式加湿器 (水を付着させるための無数の小さな切り込みのあるディスクとファンだけ) を使用します: &lt;a href="https:&amp;#x2F;&amp;#x2F;us.smartmiglobal.com&amp;#x2F;pages&amp;#x2F;smartmi-evaporative-humidifier-3" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;us.smartmiglobal.com&amp;#x2F;pages&amp;#x2F;smartmi-evaporative-humid...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://0l.de/blog/2025/11/xiaomi-humidifier/</guid>
-      <pubDate>Fri, 12 Dec 2025 06:17:28 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46241368</comments>
-    </item>
-    <item>
-      <title>50年間にわたる証明アシスタントの実績</title>
-      <link>https://lawrencecpaulson.github.io//2025/12/05/History_of_Proof_Assistants.html</link>
-      <description>&lt;p&gt;彼らはコンピューティングが例外であることを認めています。彼らは、私がカリフォルニア工科大学にいたときにカリフォルニア工科大学コミュニティ全体にサービスを提供していた 16MB のメインフレームよりも、私の私用の 32GB ラップトップが進歩していないとは言いません。 LCF スタイルの証明アシスタントは、主流のコンピューティングとはかけ離れた世界であるため、そこでの 50 年間の進歩を見てみましょう。証明戦術と戦術、つまり戦術を組み合わせるための演算子も紹介しました。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; 50 years of proof assistants&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46250309"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://lawrencecpaulson.github.io//2025/12/05/History_of_Proof_Assistants.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ratmice:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;記事の中でオートマスについても言及しているので、LCF の 50 年とだけ言ってほしかったのですが、それは 60 年代後半のことでした&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Animats:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 1994 年に、Pentium に FDIV バグが発生しました。これは、おそらく重要ではないものの、浮動小数点除算における検出可能なエラーです。その後の製品リコールでは、Intel に 5 億ドル近くの費用がかかりました。マイクの学生であるジョン・ハリソンは、博士課程の研究を浮動小数点演算の検証に捧げることに決めました。&lt;p&gt;ボイヤーとムーアが当時Computational Logic, Inc.に在籍していた、AMD5K86TM用のAMD FPUの正式な検証を行うための取り組みについては言及されていません。 AMD チップは FDIV バグなしで出荷されました。 [1]&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;dl.acm.org&amp;#x2F;doi&amp;#x2F;abs&amp;#x2F;10.1109&amp;#x2F;12.713311" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;dl.acm.org&amp;#x2F;doi&amp;#x2F;abs&amp;#x2F;10.1109&amp;#x2F;12.713311&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://lawrencecpaulson.github.io//2025/12/05/History_of_Proof_Assistants.html</guid>
-      <pubDate>Fri, 12 Dec 2025 23:26:26 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46250309</comments>
-    </item>
-    <item>
-      <title>スマートテレビにはうんざりしていませんか?最良の選択肢は次のとおりです</title>
-      <link>https://arstechnica.com/gadgets/2025/12/the-ars-technica-guide-to-dumb-tvs/</link>
-      <description>&lt;p&gt;クレジット: Jeff Dunn 最良の選択肢です。 Apple TV アプリまたは Apple アカウントで Apple TV ボックスを使用する可能性が高く、これはデータを Apple に送信することを意味します。ダムテレビの保証期間も通常は短い (1 年) です。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Sick of smart TVs? Here are your best options&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46243655"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://arstechnica.com/gadgets/2025/12/the-ars-technica-guide-to-dumb-tvs/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 21 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;QuiEgo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは、「ケーブル会社のひ​​どい DVR を捨てて、TiVO を購入する」の現代版です。悲しいことに、古いものは再び新しいものになります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PaulHoule:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Plex ユーザーとして、中古の最終世代ゲーム機を TV ソースとして推奨します。  2 階の AV ルームには長い間 XBOX ONE S があり、つい最近、階下の予備の部屋用に PS4 Pro を購入しました。両方とも Gamestop で購入しました。  どちらにもいくつかのゲームを持っていますが、Steam、Steam Deck、またはモバイルでゲームする可能性が高くなります。&lt;p&gt;これまで試した Android ベースのメディア プレーヤーはどれもまったくダメで、NVIDIA Shield もそれほど悪くはありませんでしたが、ある時点でコントローラーが充電を停止してしまいました。  Blu-Ray プレーヤーを内蔵したゲーム コンソールも今でも入手できますが、ストリーミング用に強力であるだけでなく、それを実行するボックスが 1 つあるのは素晴らしいことです。&lt;p&gt;私は HDHomeRun をシラキュースに向けた小さなアンテナに接続していますが、これは ABC を除いて非常にうまく機能します。時々、屋根に上がって小さなアンテナをビンガムトンに向け、大きなアンテナをシラキュースに向けることを考えますが、私はそれほど OTA を見ていません。以前はそうでした。  ただし、テレビ、コンピューター、タブレット、携帯電話のいずれかで OTA TV を視聴できることは素晴らしいことです。また、非常に優れた DVR のメタデータの料金を支払う Plex パスを使用して、他のすべてのメディアと並行して視聴できることも魅力です。&lt;p&gt;テレビについては、地元の再利用センターに行って、目に留まったもの、つまり「モニター」を購入します。私が今使っているのは、湾曲した Samsung の 55 インチです。ずっとプラズマが欲しかったので、45 ドルのプラズマを家に持ち帰りました。  私は、人々が私の家に安物のテレビを置き続ける長い段階を経験しましたが、その中には本当に感謝しているテレビ (美しく価値設計された Vizio) もあれば、ひどいテレビもありました。  [1]&lt;p&gt;[1] ... 1980 年代のように、誰かが家に侵入してテレビを持ち去られるのではないかと誰もが恐れていましたが、私にとっては逆です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;taxmeifyoucan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ハッカーのニュース記事としては、スマート TV をハッキングするという重要なオプションが抜けています。 rootmy.tvを使用してLG OLEDをジェイルブレイクしましたが、それは非常に簡単でした。基本的には巨大な画面を備えた Linux コンピューターで、カスタマイズしたり、SSH で接続したり、コマンドをリモコンにマッピングしたりすることができます。&lt;p&gt;以前はモニターしか使用していませんでしたが、シンプルな DP&amp;#x2F;HDMI 入力があれば十分でした。しかし、テレビを完全に制御して、通常は Rpi を取得する家の他のデバイスに接続できるのは、非常に便利です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JayGuerette:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;混乱しています。 Wifi パスワードを与えなければ、どんなテレビもダメなテレビになってしまいます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AndrewKemendo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;テレビを買わないのですか？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tormeh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私が本当に欲しいのは、DisplayPort を備えたテレビです。これはどうしたことないのでしょうか？ IIRC では、45 インチを超える DP を備えたディスプレイを購入することはできません。それは、実際には存在しないだけです。これは本当に奇妙だと思います。たとえば、そのポートに追加で 100 ドル支払うつもりですが、それを持つことは許可されていません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ひどい記事ですが、良いトピックです。 Projectivity のようなカスタム ランチャーを使用すると、Google(&amp;#x2F;Android&amp;#x2F;Chromecast?) TV のホーム画面広告を取り除くことができます: &lt;a href="https:&amp;#x2F;&amp;#x2F;play.google.com&amp;#x2F;ストア&amp;#x2F;アプリ&amp;#x2F;詳細?id=com.spocky.projengmenu&amp;amp ;hl=ja_US"&gt;https:&amp;#x2F;&amp;#x2F;play.google.com&amp;#x2F;store&amp;#x2F;apps&amp;#x2F;details?id=com.spocky.pro...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Simulacra:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は約 10 年前にテレビをやめました。テレビはすべて 1 月の糖蜜のように遅く、出力も低く、インターフェイスもひどいものでした。それらのどれについても流動的または肯定的なものは何もありません。寝室に 30 インチの iMac があり、テレビよりもはるかに優れています。私は、壁に掛けられ、すべてのメディア共有機能と、テレビが苦手とするすべての機能を備えた 52 インチの iMac を購入することに興味があります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lucasRW:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;プライベート DNS や PiHoles は十分な妥協策ではないでしょうか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amundskm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は何年も古い PC を古いテレビの HDMI ポートに接続していましたが、希望どおりに動作しました。私は完全に制御できるので、スマート テレビ広告に対処する必要はありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;DrPhish:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;市販のサイネージディスプレイを使用するだけ&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amelius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;残念ながら、この点では自動車はスマートテレビのようになりつつあります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jqpabc123:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;スマート TV から抜け出す方法 (メーカーにとっては「スマート」ですが、ユーザーにとっては非常に愚かです)。&lt;p&gt;安価なスマート TV を購入し、「ストア モード」で実行します。&lt;p&gt;輝度と彩度はおそらく最大になりますが、安価なテレビでは、見た目は「普通」に見えます。より高価なモデルで。ヒント: 場合によっては、安いものと高価なものの主な違い --- 安価なモデルでは、色調整の範囲がソフトウェアによって制限されています。&lt;p&gt;現在、コストコのハイセンス 4k モデルを小型ミニ PC に接続して使用しています --- Windows または Linux のどちらかお好みで。テレビは単なるディスプレイとして機能します。&lt;p&gt;小型の「エア マウス」を使用してください。コントロール用に。必要に応じて、オンスクリーン キーボードを使用します。&lt;p&gt;ローカル デジタル放送には Hauppauge USB チューナーを使用します。&lt;p&gt;ローカル チャンネルと IPTV を表示するには、DVB Viewer というソフトウェアを使用します。場合によっては、ストリーミング用に VPN を備えたブラウザを使用します。&lt;p&gt;いずれの場合も、私はデータを完全に制御し、必要に応じて広告をブロックする機能を維持しています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;HiroProtagonist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;パイホール&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shlip:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;推奨されている Apple TV ルート以外のオプションには、pihole (広告ブロック)、kodi、openelec (オープンソース メディア プレーヤー) などがあります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;valleyer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;セプターは実際には「ウォルマートのブランド」ではありません。 &lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.sceptre.com" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.sceptre.com&lt;/a&gt;&lt;p&gt;ウェスティングハウスのテレビは、「ピッツバーグに本社を置く会社」ではなく、ブランドのライセンスを取得している会社によって製造されています。&lt;p&gt;これらは簡単そうに見えます。避けるべき間違い。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AshamedCaptain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ネタバレ: こちらはアルス テクニカです。明らかに彼らは、代わりに Apple TV を購入して、データを Apple に送信し、代わりに Apple の広告を視聴することを提案しています (唯一の議論は、「これまでのところ広告が少ない」ということです)。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aquir:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;テレビをインターネットに接続したことがありませんか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AlecSchueler:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;家に持ち込まないでください?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maurits:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「当社および当社の 226 社のパートナーは、訪問者を認識するために Cookie および同様の方法を使用しています。」&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deafpolygon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;注意: ネットワークに接続したり、コンピューターのモニターを使用したりしないでください。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://arstechnica.com/gadgets/2025/12/the-ars-technica-guide-to-dumb-tvs/</guid>
-      <pubDate>Fri, 12 Dec 2025 12:51:40 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46243655</comments>
-    </item>
-    <item>
-      <title>Motion (YC W20) はシニアスタッフのフロントエンドエンジニアを募集しています</title>
-      <link>https://jobs.ashbyhq.com/motion/715d9646-27d4-44f6-9229-61eb0380ae39</link>
-      <guid isPermaLink="true">https://jobs.ashbyhq.com/motion/715d9646-27d4-44f6-9229-61eb0380ae39</guid>
-      <pubDate>Fri, 12 Dec 2025 21:00:54 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46248892</comments>
-    </item>
-    <item>
-      <title>小さな Docker イメージをより速く構築する</title>
-      <link>https://sgt.hootr.club/blog/docker-protips/</link>
-      <description>&lt;p&gt;hello}/bin/hello" ]; } これは nix-build docker-test でビルドできます。これは、通常、docker build の後に渡すパラメーターです。Docker でそれができるとは知りませんでした。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Building small Docker images faster&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46242700"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://sgt.hootr.club/blog/docker-protips/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;grim_io:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;マルチステージのようなものが存在することさえ知らない開発者を非常に多く見てきました。&lt;p&gt;どこにでもマルチギガバイトのコンテナがあります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zerotolerance:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私はいつも、古い賢明な知識を提唱し、それを新しい聴衆に広めようとしている人を見つけるのが好きです。とはいえ、Docker に関する本を執筆し、コンテナの旅をすべて経験してきた私は、コンテナ化されたビルドをまとめてスキップする傾向があります。 Docker は優れたパッケージ化を実現します。ただし、ビルド プロセスのすべてのステップをコンテナ化する、あるいは 1 つの大きなコンテナ内でコンテナ化するだけでも、少し手間がかかります。それをビルド スクリプト ソリューションとして位置付けるのは愚かでした。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://sgt.hootr.club/blog/docker-protips/</guid>
-      <pubDate>Fri, 12 Dec 2025 10:23:23 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46242700</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;takira:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これを見ると、政府の計画がいつ変更されたのか不思議に思います。 「チェッカーボード」の場合は、価値が上がるまで土地を保有し、その後売却することを目的としていたのに、なぜそれらの土地の多くが今日公開されているのでしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rtkwe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;囲まれたエリア全体の支配権を得るために（もちろん、どんどん土地を購入するので）事実上土地の半分を割くことはできないという、この訴訟が合理的な側で下されたことを嬉しく思います。これは明らかに、すべての土地所有者が達成できると考えていたことです。彼らは今、実際に囲まれたエリアを購入するつもりなのだろうか？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://99percentinvisible.org/episode/650-the-checkerboard/</guid>
+      <pubDate>Sat, 13 Dec 2025 00:50:47 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46250862</comments>
     </item>
   </channel>
 </rss>
