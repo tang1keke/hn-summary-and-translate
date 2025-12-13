@@ -6,54 +6,96 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Korean</description>
     <language>ko</language>
-    <lastBuildDate>Sat, 13 Dec 2025 15:24:01 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Dec 2025 18:33:02 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ko.xml"/>
     <item>
-      <title>우리는 또 다른 객체 스토리지를 구축했습니다.</title>
-      <link>https://fractalbits.com/blog/why-we-built-another-object-storage/</link>
-      <description>&lt;p&gt;이제 고성능 객체 스토리지가 존재합니다. 소형 객체 세금: 클라우드 객체 스토리지를 사용하면 요청별로 비용을 지불합니다. 원자 이름 바꾸기를 포함한 기본 디렉터리 의미 체계.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; We built another object storage&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46254087"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://fractalbits.com/blog/why-we-built-another-object-storage/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Advent of Code를 위해 Gleam을 사용해 보았습니다.</title>
+      <link>https://blog.tymscar.com/posts/gleamaoc2025/</link>
+      <description>&lt;p&gt;올해는 Gleam을 선택했어요. 여유로운 한 해인 것 같습니다. com/plugin/25254-gleam-언어저도 FP를 좋아합니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; I tried Gleam for Advent of Code&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46255991"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.tymscar.com/posts/gleamaoc2025/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hansvm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;멋진. 나는 직접 물건 가게를 짓고 싶었습니다. 다른 사람들이 어떤 기능을 중요하게 생각하는지 알아보는 것은 재미있습니다.&lt;p&gt;그런데 한 가지 측면이 궁금합니다. 가격 비교에는 스토리지가 "포함"되어 있다고 나와 있습니다. 하지만 이는 제안된 인스턴스 유형에 2TB만 있다는 사실을 숨깁니다. 즉, 절약을 위해 매년 선불로 지불하면 스토리지 비용이 $180&amp;#x2F;TB&amp;#x2F;mo가 되고, 내구성 솔루션이 바닐라 복제라고 생각하면 $540&amp;#x2F;TB&amp;#x2F;mo가 됩니다.&lt;p&gt;저는 이것이 '이중 계산'이라는 것을 알고 있습니다. 뭐든지 간에 제안된 읽기 및 쓰기 작업 부하가 나에게는 이상합니다. 1,875GB의 데이터(복제를 통해 해당 인스턴스 중 3개로 달성)만 있고 비용 비교의 다른 부분에 따라 10,000개의 소형 개체(4KiB) QPS를 유지한다면 매달 전체 스토리지 용량의 50배를 읽고 쓰는 세상을 설명하는 것입니다.&lt;p&gt;대부분의 데이터가 일시적인 핫 개체 또는 워크로드가 있을 수 있다는 것을 알고 있지만 그래도 여전히 많은 것처럼 느껴집니다. 대부분의 워크로드에서 기대하는 것보다 더 높은 액세스 증폭을 제공합니다(또는 공개적으로 글을 쓸 수 있는 모든 직업에서 관찰한 적이 있습니다). 이를 염두에 두고 스토리지 비용 자체가 실제로 지배적이며 2년 상환 SSD 비용의 6배만큼 저렴한 솔루션도 제공하지 않는 AWS의 자비에 따라야 합니다(그리고 S3만이 이에 가깝습니다. 실제 "디스크"를 임대하는 경우 더 나쁘고 고성능인 경우에는 두 배 더 나쁩니다).&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tsuru:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;계층적 저장을 들을 때마다 &amp;quot;다 MUMPS로 돌아가는 것 아닌가?&amp;quot;라는 생각을 하지 않을 수 없습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kburman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 제품은 안티 패턴에 최적화된 것 같습니다.&lt;p&gt;블로그에서는 AI 워크로드가 '수백만 개의 작은 파일'로 인해 지연 시간으로 인해 병목 현상이 발생한다고 주장합니다. 그러나 네트워크 스토리지에서 직접 수백만 개의 느슨한 4KB 개체에 대해 교육하는 경우 스토리지 계층이 아니라 데이터 파이프라인이 문제입니다.&lt;p&gt;데이터 형식: 표준 관행은 WebDataset, Parquet 또는 TFRecord와 같은 형식을 사용하여 작은 파일을 큰 순차적 blob으로 묶는 것입니다. 이는 높은 IOPS 메타데이터 작업의 필요성을 무효화하고 표준 S3 처리량을 중요한 유일한 측정항목으로 만듭니다(이미 풍부함).&lt;p&gt;캐싱: 대부분의 고성능 훈련 작업은 GPU 노드의 로컬 NVMe 스크래치 공간을 수화합니다. S3는 진실의 차가운 소스일 뿐입니다. 우리는 정보 소스에 밀리초 미만의 액세스가 필요하지 않으며 데이터 로더 프리페칭에 의해 처리되는 에지(로컬 디스크&amp;#x2F;RAM)에서 액세스가 필요합니다.&lt;p&gt;tar -cvf로 더 잘 해결되는 문제를 해결하기 위해 복잡한 분산 시스템을 구축하고 있는 것 같습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oersted:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;작은 개체와 짧은 대기 시간.&lt;p&gt;시중에 있는 훌륭한 KV 매장을 이용해 보는 것은 어떨까요? 아니면 기존 데이터베이스도 마찬가지입니다.&lt;p&gt;사람들은 편리한 추상화 때문이 아니라 저렴한 비용으로 객체 스토리지를 사용합니다. 일부 사람들은 단순히 임시방편으로 더 빠르고 값비싼 S3를 사용하는 것 같습니다. 객체 스토리지로 시작했기 때문에 요구 사항이 변경되었고 더 이상 작업에 적합한 도구는 아니지만 전환이 번거로워서 AWS는 이러한 상황을 활용하고 있습니다. 그런 사람들에게 터무니없는 가격으로 대안을 제공하는 것이 괜찮은 비즈니스 모델이라고 생각하지만, 그 시장이 얼마나 큰지, 얼마나 오래 지속될지는 잘 모르겠습니다.&lt;p&gt;그러나 데이터베이스 성능을 갖춘 데이터베이스 가격의 객체 스토리지는 단지 데이터베이스일 뿐이며, 그 바퀴를 빨리 재창조한다고 해서 너무 경쟁력 있는 결과가 나올 수 있을지 의문입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aperocky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그래서 그들은 파일 시스템을 대체하기 위해 객체 스토리지를 구축했습니다.&lt;p&gt;그리고 &amp;quot;파일 시스템을 사용하면 안 되는 이유는 무엇입니까?&amp;quot;에서 그들이 내린 대답은 &amp;quot;선이 이미 흐려지고 있습니다&amp;quot;였습니다. 그리고 "업계는 융합되고 있습니다".&lt;p&gt;선이 모호해질 수 있지만 앞서 언급한 것처럼 여전히 파일 시스템의 명확한 사용 사례입니다. 또는 더 높은 액세스 속도가 보장된다면 시스템에 더 많은 RAM을 설치하고 캐시하면 됩니다. 현재 RAM 비용을 고려하더라도 비용은 여전히 ​​저렴합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChocolateGod:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그래서 S3에 메타데이터 엔진을 추가했나요?&lt;p&gt;JuiceFS와 비교하면 어떤가요?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jamiesonbecker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이러한 질문은 건설적으로 비판적이지만 지나치게 비판적이지는 않습니다. 저는 진심으로 관심이 있고 이 분야의 제품에 대한 열렬한 팬입니다.&lt;p&gt;* 고성능 AI 중심 S3 경쟁업체의 관점에서 볼 때, NVIDIA의 AIstore와 어떻게 비교됩니까? &lt;a href="https:&amp;#x2F;&amp;#x2F;aistore.nvidia.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;aistore.nvidia.com&amp;#x2F;&lt;/a&gt;&lt;p&gt;* 클러스터링 스토리는 무엇인가요? ceph처럼 복잡합니까, 전체 기능을 사용하려면 AIstore와 같은 K8이 필요합니까, 아니면 Garage, Minio 등과 같이 더 유연한가요?&lt;p&gt;* 성능에 대해 이야기하는 데 많은 시간을 할애합니다. 벤치마크가 있나요?&lt;p&gt;* 분명히 대부분의 페이지는 ChatGPT에 의해 작성되었습니다. 코드의 몇 퍼센트가 AI에 의해 작성되었으며, 인간이 검토했습니까?&lt;p&gt;* 객체 스토리지 자체는 어떻게 작동합니까? 어떻게 설계되었나요? 예를 들어 DHT를 하시나요? 1.4억 개의 대안과 비교하여 어떤 장단점이 있습니까(예: CAP)?&lt;p&gt;* 프런트 엔드 또는 관리 도구(및 스크린샷)가 있습니까?&lt;p&gt;* 클러스터를 수평으로 또는 수직으로만 확장할 수 있습니까(예: Minio)&lt;p&gt;* 대신 이전 버전의 Minio를 포크한 다음 그 위에 고속 메타데이터 레이어를 배치하는 것은 어떨까요?&lt;p&gt;* 원격 측정이 있습니까?&lt;p&gt;* 그다지 중요하지 않지만 내 사용 사례와 다른 경우의 원산지 관할권은 어떻게 되나요?&lt;p&gt;감사합니다!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whinvik:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;흥미로운. io-uring을 사용하면 어떤 이점이 있는지 확인하셨나요? 아이오링(io-uring)에 대해 끊임없이 이야기되는 것 같지만 실제로 화를 내며 사용하는 사람은 없는 것 같습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dbacar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;일단 탄력을 받으면 미니오와 같은 방향으로 가지 않기를 바랄 뿐입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;imvetri:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;데이터 구조 측면에서 기존 구조와 어떻게 다른지 말씀해 주시겠어요?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 타이틀의 HN 버전은 의도하지 않은 코미디입니다 :)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fractalbits:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;github 페이지: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;fractalbits-labs&amp;#x2F;fractalbits-main" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;fractalbits-labs&amp;#x2F;fractalbits-main&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://fractalbits.com/blog/why-we-built-another-object-storage/</guid>
-      <pubDate>Sat, 13 Dec 2025 12:29:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46254087</comments>
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;croisillon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;다행히 블로그 제목 경찰이 최대한 빨리 개입했습니다. &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45426996"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45426996&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;scuff3d:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Gleam은 훌륭한 언어입니다. 사용해 볼 땐 별로 마음에 들지 않았는데, 더 많은 분들이 즐겨주시는 모습을 보니 기쁘네요. &lt;p&gt;그리고 Gleam + Luster가 새로운 Elm이 될 수 있을지도 궁금합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bnchrch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Gleam은 아름다운 언어이고 제가 Elixir가 되기를 바라는 언어입니다(re:typing).&lt;p&gt;그것을 모르시는 분들을 위해 말씀드리자면, 이 언어도 동시성과 대기열을 사소한 문제로 만드는 erlang vm인 OTP를 기반으로 구축되었습니다.&lt;p&gt;완전히 멋진 생태계입니다.&lt;p&gt;저는 Gleam을 제 기본 언어로 만들고 싶었지만 LLM이 프로그래밍 언어 발전과 채택을 동결할까봐 두렵습니다. 2021년 이후에는 아무 것도 없습니다.&lt;p&gt;하지만 Gleam이 문을 닫고 LLM이 빠르게 이에 적응할 수 있기를 바랍니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;threethirtytwo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;정말 좋아요. 하지만 제네릭이 필요합니다. 이것은 큰 단점입니다. 이는 형식화되고 깔끔한 함수형 프로그래밍 언어이지만 제네릭이 없다는 golang의 초기 철학을 임의로 따랐습니다. 아이러니하게도 golang은 많은 fp 옹호자들 사이에서 가장 싫어하는 언어 중 하나입니다.&lt;p&gt;개발자가 제네릭을 추가하는 행위를 통해 궁극적으로 golang 팀은 그들이 틀렸거나 제네릭이 더 낫다는 것을 인정합니다. gleam이 인기를 얻으면 똑같은 일이 일어날 것이라고 생각합니다.&lt;p&gt;제네릭 없이는 반복되는 코드가 너무 많습니다. 나는 gleam에서 파서 결합기를 작성해 보았으나 별로 좋지 않았습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bbkane:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 Gleam 게시물과 팟캐스트, 비디오를 계속 접합니다. Lustre 라이브러리를 사용하면 UI용 JS에 대한 특히 매력적인 대안이 될 수 있다고 생각합니다. 아직 시도해본 적은 없지만, 내 백로그가 점점 늘어나고 있어요...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;marliechiller:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;우리가 진입하는 LLM 시대에 대해 궁금한 한 가지: LLM이 배울 수 있는 교육 데이터 모음이 없다면 이와 같은 언어를 선택하는 것이 가치가 있습니까? Gleam을 배우는 데 시간을 투자하고 싶지만 언어를 목적을 위한 도구 또는 수단으로 취급합니다. 나는 LLM이 잘 사용하는 언어인 작업을 가장 쉽게 완료할 수 있는 도구에 점점 더 손을 뻗고 있는 것 같습니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.tymscar.com/posts/gleamaoc2025/</guid>
+      <pubDate>Sat, 13 Dec 2025 17:00:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46255991</comments>
     </item>
     <item>
-      <title>AI가 노후 원자력 발전소를 폐쇄한다</title>
-      <link>https://www.wbur.org/hereandnow/2025/12/09/nuclear-power-ai</link>
-      <description>&lt;p&gt;"전기 비용을 낮게 유지할 수 있는 안정적인 전력 공급원이 있으면 모두가 이를 응원해야 합니다. 이 구역에는 미시간주 코버트 타운도 포함됩니다. 타운십 감독관 Daywi Cook의 아버지는 1960년대에 발전소 건설을 도왔습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; AI is bringing old nuclear plants out of retirement&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46254276"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.wbur.org/hereandnow/2025/12/09/nuclear-power-ai'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Java의 빠르고 메모리 효율적인 해시 테이블: 최고의 아이디어 차용</title>
+      <link>https://bluuewhale.github.io/posts/building-a-fast-and-memory-efficient-hash-table-in-java-by-borrowing-the-best-ideas/</link>
+      <description>&lt;p&gt;일부는 심층 분석, 일부는 엔지니어링 일기, 일부는 성능 작업에 대한 경고 이야기입니다. 그것은 나의 "좋아, 이건 틈새 시장이 아니야" 순간이었습니다. 그 시점에서 SwissTable은 "영리한 C++ 트릭"이라는 느낌을 멈추고 현대적인 기준선처럼 느껴지기 시작했습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Fast, Memory-Efficient Hash Table in Java: Borrowing the Best Ideas&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46256325"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://bluuewhale.github.io/posts/building-a-fast-and-memory-efficient-hash-table-in-java-by-borrowing-the-best-ideas/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://bluuewhale.github.io/posts/building-a-fast-and-memory-efficient-hash-table-in-java-by-borrowing-the-best-ideas/</guid>
+      <pubDate>Sat, 13 Dec 2025 17:41:32 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46256325</comments>
+    </item>
+    <item>
+      <title>분석 결과, 배터리 비용이 급락함에 따라 언제든지 태양광 전기를 이용할 수 있는 것으로 나타났습니다.</title>
+      <link>https://pv-magazine-usa.com/2025/12/12/analysis-finds-anytime-electricity-from-solar-available-as-battery-costs-plummet/</link>
+      <description>&lt;p&gt;분석에 따르면 배터리 비용이 급락함에 따라 태양광에서 "언제든지 전기"를 사용할 수 있는 것으로 나타났습니다. Ember의 보고서는 배터리 자본 지출 감소와 향상된 성능 지표로 인해 균등화된 저장 비용이 어떻게 낮아졌는지 설명하고 파견 가능한 태양광이 전 세계적으로 경쟁력 있는 언제든지 전기 옵션이 되었다고 설명합니다. 2025년 12월 12일 Ryan Kennedy 비용 및 가격 에너지 저장 시장 및 정책 미국 세계 이미지: Ember Share 에너지 싱크 탱크 Ember의 보고서는 배터리 저장 기술의 비용 절감을 통해 급전 가능한 태양광 발전이 기존 전원과 경쟁할 수 있는 방법을 자세히 설명합니다. 그러나 비용 변동에도 불구하고 U.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Analysis finds anytime electricity from solar available as battery costs plummet&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46256249"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://pv-magazine-usa.com/2025/12/12/analysis-finds-anytime-electricity-from-solar-available-as-battery-costs-plummet/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AshamedCaptain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;"악명 높은 사고 이후에도 왜 다른 체르노빌 발전기는 수십 년 동안 계속 작동했는가?"라고 자문할 때마다 -- 여기에서 답변을 읽어보세요.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;m4ck_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;inb4 사우스 캐롤라이나 공장은 결국 납세자들에게 수십억 달러의 비용을 지불하는 사기로 변했습니다 (다시)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;halapro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이런. 정말 엉망이었어. 그러지 말았어야 했는데. 사과드립니다. 온도가 멈추지 않고 올라가서 나는 당신을 구할 수 없습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bjourne:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;"AI" 아니면 "대량의 정부 보조금"입니까? 60년이 지난 후에도 여전히 보조금을 지급해야 하는 발전량이 전부가 아닐 수도 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bicx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;긍정적인 면을 보면, 아마도 빅테크가 핵융합 에너지 생성을 실용화 수준까지 가속화할 수 있을 것입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;antonvs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;처음에 나는 이것이 오래된 원자력 발전소의 재가동을 바이브 코딩하고 있다는 것을 의미한다고 생각했습니다. 무엇이 잘못될 수 있나요?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;t0mas88:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AI 에너지 소비는 연중무휴 24시간 안정적인 것입니까? 추론 부하는 분명히 소비자 트래픽에 따라 변하므로 매일의 리듬을 갖게 됩니다. 하지만 대규모 제공업체가 나머지 용량을 교육에 사용합니까? 아니면 별도의 클러스터인가요?&lt;p&gt;24x7 안정적인 부하라면 원자력, 저탄소 에너지에 이상적이지만 수요 변화에 적응하는 속도가 느립니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;danmaz74:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;적어도 석탄발전소를 재가동하지는 않습니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.wbur.org/hereandnow/2025/12/09/nuclear-power-ai</guid>
-      <pubDate>Sat, 13 Dec 2025 13:08:36 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46254276</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;state_less:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;EV용 배터리 제조 규모의 확대와 현재 태양열 저장 장치는 제가 평생 볼 수 없을 것이라고 상상도 못했던 가격으로 이어졌습니다.  그것은 그것을 겪으면서 정말 기쁨이 되었던 성공 사례 중 하나입니다.&lt;p&gt;몇 년 ​​전에 사람들이 그래프를 가리키며 결국 우리가 여기에 있게 될 것이라고 말할 수 있었을 것이라는 것을 알고 있지만, 필요한 규모와 태양광 배터리에 반대하는 모든 로비 활동을 해킹하는 것을 고려하면 의심이 들었습니다.  아아, 우리는 여기까지 왔다!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aswegs8:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;제가 멍청한 건가요 아니면 "분석 결과 배터리 비용이 급락함에 따라 언제든지 태양광에서 전기를 얻을 수 있다는 것을 발견했습니다"라는 문장이 있습니까? 문법적으로 말이 안 되나요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JoeAltmaier:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;태양광의 경우 MWh당 33달러입니다. 석탄이나 천연가스의 경우는 무엇입니까? 아마도 절반 정도?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ramshanker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;컴퓨터 UPS용 LEAC ACID보다 저렴해진 생산 배터리가 있습니까?  나는 새롭고 저렴한 UPS가 출시되는 것을 본 적이 없습니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://pv-magazine-usa.com/2025/12/12/analysis-finds-anytime-electricity-from-solar-available-as-battery-costs-plummet/</guid>
+      <pubDate>Sat, 13 Dec 2025 17:32:21 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46256249</comments>
+    </item>
+    <item>
+      <title>EasyPost (YC S13) 채용 중</title>
+      <link>https://www.easypost.com/careers</link>
+      <description>&lt;p&gt;고성능 배송으로 간편해진 EasyPost 채용 문제 해결사 팀은 배송 물류에 대한 현대적인 접근 방식을 제공합니다. 우리는 여러 부서에서 협력하고, 어려운 질문을 하고, 새로운 솔루션을 탐색하고, 성공과 실수에 대해 책임을 집니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; EasyPost (YC S13) Is Hiring&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46256002"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.easypost.com/careers'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.easypost.com/careers</guid>
+      <pubDate>Sat, 13 Dec 2025 17:01:25 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46256002</comments>
+    </item>
+    <item>
+      <title>Z8086: 원본 마이크로코드에서 8086 재구축</title>
+      <link>https://nand2mario.github.io/posts/2025/z8086/</link>
+      <description>&lt;p&gt;그 결과는 원래 Intel 마이크로코드를 실행하는 8086/8088 코어인 z8086입니다. 여기서는 마이크로코드가 접착제입니다. 비결은 마이크로코드였습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Z8086: Rebuilding the 8086 from Original Microcode&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46255007"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://nand2mario.github.io/posts/2025/z8086/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;retrac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 마이크로코드는 매우 효율적입니다&lt;p&gt;마이크로코드는 더 복잡한 명령어 세트를 에뮬레이트하는 소프트웨어입니다.&lt;p&gt;가장 간단하고 실용적인 컴퓨터 아키텍처 중 하나는 이동 또는 전송 트리거 아키텍처입니다.  이러한 설계에서 유일한 명령은 조건부 이동입니다.  추가하려면 ALU의 A 및 B 입력에 연결된 레지스터로 값을 이동한 후 다음 주기에서 결과 레지스터에서 결과를 이동합니다.  모든 기능 단위는 주소로 노출되며 이동 이동 이동만 하면 됩니다.  더 빠르게 진행하려면 한 주기에 여러 동작을 수행하라는 명령을 확장해야 합니다.&lt;p&gt;이러한 기계는 RAM 기계와 같은 일부 이론적 계산 모델에 매우 가깝습니다.  또한 하드와이어에 논리가 거의 필요하지 않으며 거의 ​​직선 루프의 간단한 상태 머신만 있으면 됩니다.&lt;p&gt;더 정상적인 명령어 세트를 에뮬레이트하는 이러한 아키텍처용 프로그램을 작성하세요.  ROM에 넣으세요.  그게 마이크로코드입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tasty_freeze:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;기사의 내용에도 불구하고 68000도 마이크로코드되었습니다. 또 다른 차이점은 68K가 16b가 아닌 32b 아키텍처였으며 레지스터 파일과 데이터 경로에 더 많은 트랜지스터를 투자해야 한다는 것입니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://nand2mario.github.io/posts/2025/z8086/</guid>
+      <pubDate>Sat, 13 Dec 2025 15:04:29 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46255007</comments>
+    </item>
+    <item>
+      <title>Conway의 Life of Game(2021)에 구현된 Lisp 해석기</title>
+      <link>https://woodrush.github.io/blog/posts/2022-01-12-lisp-in-life.html</link>
+      <description>&lt;p&gt;Lisp in Life는 Conway의 Game of Life에서 구현된 Lisp 해석기입니다. Lisp in Life는 이 사실을 다소 간단한 방식으로 보여줍니다. Conway의 Game of Life 패턴은 이 Lisp 소스 코드를 직접 읽고, 구문 분석하고, 평가하여 출력을 생성합니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A Lisp Interpreter Implemented in Conway's Game of Life (2021)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46251620"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://woodrush.github.io/blog/posts/2022-01-12-lisp-in-life.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Xmd5a:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.cambridge.org&amp;#x2F;core&amp;#x2F;books&amp;#x2F;abs&amp;#x2F;algorithmic-information-theory&amp;#x2F;formali 계산을 위한 SMS-등록-기계-지수-디오판틴 방정식-순수-리스프&amp;#x2F;8C070477977E01F8AFC4A9CA7153112D" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.cambridge.org&amp;#x2F;core&amp;#x2F;books&amp;#x2F;abs&amp;#x2F;algorithmic-informa...&lt;/a&gt;&lt;p&gt;I - 계산을 위한 형식: 기계 등록, 지수 디오판틴 방정식, &amp;amp; 순수 LISP&lt;p&gt;그레고리. J. 차이틴&lt;p&gt;&amp;gt; 그리고 4장에서는 이 LISP에 대한 레지스터 기계 해석기를 제시하고 이를 디오판틴 방정식으로 컴파일합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;관련된. 다른 것들도 있나요?&lt;p&gt;&lt;i&gt;Conway의 Game of Life(2021)에 구현된 Lisp 통역사&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=34266240"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=34266240&lt;/a&gt; - 2023년 1월(댓글 25개)&lt;p&gt;&lt;i&gt;다음에서 구현된 Lisp 해석기 Conway의 인생 게임&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=29661616"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=29661616&lt;/a&gt; - 2021년 12월(85 코멘트)&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://woodrush.github.io/blog/posts/2022-01-12-lisp-in-life.html</guid>
+      <pubDate>Sat, 13 Dec 2025 03:06:53 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46251620</comments>
     </item>
   </channel>
 </rss>

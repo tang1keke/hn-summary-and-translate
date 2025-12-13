@@ -6,54 +6,96 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 13 Dec 2025 15:24:01 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Dec 2025 18:33:02 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>我们构建了另一个对象存储</title>
-      <link>https://fractalbits.com/blog/why-we-built-another-object-storage/</link>
-      <description>&lt;p&gt;高性能对象存储现已存在。小对象税：使用云对象存储，您可以按请求付费。本机目录语义，包括原子重命名。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; We built another object storage&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46254087"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://fractalbits.com/blog/why-we-built-another-object-storage/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>我尝试过 Gleam 的 Advent of Code</title>
+      <link>https://blog.tymscar.com/posts/gleamaoc2025/</link>
+      <description>&lt;p&gt;今年，我选择了格莱姆。听起来这是轻松的一年。 com/plugin/25254-gleam-language我也很喜欢FP。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; I tried Gleam for Advent of Code&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46255991"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.tymscar.com/posts/gleamaoc2025/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hansvm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好的。我正在考虑自己建立一个对象存储。看到其他人认为哪些功能很重要是很有趣的。&lt;p&gt;不过我对一方面感到好奇。价格比较显示存储空间“包含在内”，但这掩盖了这样一个事实：您在建议的实例类型上只有 2TB，如果您每年预先支付节省费用，则存储成本将达到 180TB 月，而当您考虑持久性解决方案是普通复制时，存储成本将达到 540TB 月。&lt;p&gt;我知道这是“重复计算”。或者其他什么，但是这里建议的读写工作负载对我来说很奇怪。如果您只有 1875GB 的数据（由于复制而使用其中 3 个实例实现）并根据成本比较的其他部分维持 10k 小对象 (4KiB) QPS，那么您所描述的世界是您每月读取和写入 50 倍的整个存储容量。&lt;p&gt;我知道可能存在热对象或冷对象或工作负载，其中大多数数据都是瞬态的，但即便如此，感觉仍然很大比我对大多数工作负载的预期更高的访问放大（或者在我被允许公开撰写的任何工作中观察到的）。考虑到这一点，存储成本本身实际上占主导地位，而且你只能受到 AWS 的摆布，即使是 2 年摊销 SSD 成本的 6 倍，AWS 也无法提供任何解决方案（只有 S3 接近——当你租用实际的“磁盘”时，情况会更糟，当它们是高性能时，情况会加倍）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tsuru:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每次听到分层存储，我都会情不自禁地想“这一切又回到了 MUMPS，不是吗？”&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kburman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得这个产品正在针对反模式进行优化。&lt;p&gt;该博客认为，由于“数百万个小文件”，人工智能工作负载因延迟而成为瓶颈。但是，如果您直接从网络存储对数百万个松散的 4KB 对象进行训练，那么您的数据管道才是问题所在，而不是存储层。&lt;p&gt;数据格式：标准做法是使用 WebDataset、Parquet 或 TFRecord 等格式将小文件分块为大型连续 Blob。这消除了对高 IOPS 元数据操作的需求，并使标准 S3 吞吐量成为唯一重要的指标（该指标已经足够了）。&lt;p&gt;缓存：大多数高性能训练作业都会占用 GPU 节点上的本地 NVMe 暂存空间。 S3 只是事实的冷来源。我们不需要亚毫秒级访问真相来源，我们需要它在边缘（本地磁盘&amp;#x2F;RAM），这是由数据加载器预取处理的。&lt;p&gt;看起来他们正在构建一个复杂的分布式系统来解决一个可以通过 tar -cvf 更好地解决的问题&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oersted:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;小对象和低延迟。&lt;p&gt;为什么不使用任何优秀的 KV 存储呢？甚至是传统数据库。&lt;p&gt;人们使用对象存储是为了低成本，而不是因为它是一种方便的抽象。我怀疑有些人只是将速度更快、价格昂贵的 S3 作为权宜之计。因为他们从对象存储开始，需求发生了变化，它不再是适合这项工作的工具，但转换起来很麻烦，而 AWS 正在利用他们的情况。我认为，以不勒索的价格为这些人提供替代方案是一种不错的商业模式，但我不确定这个市场有多大，或者会持续多久。&lt;p&gt;但是，以数据库价格和数据库性能提供的对象存储只是一个数据库，我怀疑快速重新发明轮子会产生什么太有竞争力的东西。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aperocky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因此他们构建了一个对象存储来取代文件系统。&lt;p&gt;在“为什么不直接使用文件系统？”中，他们给出的答案是“界限已经模糊了”和“行业正在融合”。&lt;p&gt;这条线可能很模糊，但正如前面提到的，这仍然是文件系统的一个明确的用例 - 或者如果需要更高的访问速度，只需为系统添加更多 RAM 并缓存它们即可。即使以目前的 RAM 成本来看，它的成本仍然会更低。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChocolateGod:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所以他们在 S3 中添加了元数据引擎？&lt;p&gt;这与 JuiceFS 之类的东西相比如何。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jamiesonbecker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些问题旨在具有建设性的批判性，但并非过度批判：我真的很感兴趣，并且是该领域产品的忠实粉丝：&lt;p&gt;* 就专注于高性能 AI 的 S3 竞争对手而言，这与 NVIDIA 的 AIstore 相比如何？ &lt;a href="https:&amp;#x2F;&amp;#x2F;aistore.nvidia.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;aistore.nvidia.com&amp;#x2F;&lt;/a&gt;&lt;p&gt;* 集群故事是什么？它是像 ceph 一样复杂，需要像 AIstore 这样的 K8 才能实现全部功能，还是像 Garage、Minio 等更灵活？&lt;p&gt;* 你花了很多时间谈论性能；你有任何基准吗？&lt;p&gt;* 显然，大部分页面是由 ChatGPT 编写的：有多少百分比的代码是由 AI 编写的，并且经过人工审核吗？&lt;p&gt;* 对象存储本身如何工作？它是如何架构的？例如，你有DHT吗？与 1.4 的无数替代方案相比，有什么权衡（例如 CAP）？&lt;p&gt;* 是否有前端或管理工具（和屏幕截图）？&lt;p&gt;* 集群可以水平扩展还是只能垂直扩展（即 Minio）&lt;p&gt;* 为什么不直接分叉以前版本的 Minio，然后在上面放置一个高速元数据层？&lt;p&gt;* 有遥测吗？&lt;p&gt;* 虽然这并不那么重要对于我的用例和其他用例，起源的具体管辖权是什么？&lt;p&gt;谢谢！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whinvik:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的。您是否看到使用 io-uring 的任何好处？ io-uring 似乎一直被谈论，但似乎没有人真正在愤怒中使用它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dbacar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人们只能希望，一旦他们获得动力，这不会像 Minio 那样走向同一个方向。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;imvetri:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您能说一下，这在数据结构方面与传统数据结构有何不同吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;HN 版本的这个标题是无意的喜剧:)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fractalbits:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;github页面： &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;fractalbits-labs&amp;#x2F;fractalbits-main" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;fractalbits-labs&amp;#x2F;fractalbits-main&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://fractalbits.com/blog/why-we-built-another-object-storage/</guid>
-      <pubDate>Sat, 13 Dec 2025 12:29:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46254087</comments>
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;croisillon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;幸好博客标题警察尽快介入 &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45426996"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45426996&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;scuff3d:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Gleam 是一门很棒的语言。当我尝试它时，它并不适合我，但我很高兴看到更多的人喜欢它。&lt;p&gt;我想知道 Gleam + Lustre 是否可以成为新的 Elm。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bnchrch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Gleam 是一门美丽的语言，我希望 Elixir 能够成为这样的语言（重新：打字）。&lt;p&gt;对于那些不知道它也构建在 OTP 之上的人来说，在我看来，erlang vm 使并发和队列成为一个微不足道的问题。&lt;p&gt;绝对美妙的生态系统。&lt;p&gt;我一直想让 Gleam 成为我的主要语言，但我担心法学硕士已经冻结了编程语言的进步和采用。 2021 年过去了。&lt;p&gt;但我希望 Gleam 即将关门，法学硕士能够快速跟上它的步伐。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;threethirtytwo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;真的很好。但它需要泛型。这是一个巨大的缺点。它是一种类型化且干净的函数式编程语言，但它任意遵循 golang 早期的无泛型哲学。具有讽刺意味的是，golang 是许多 fp 拥护者中最讨厌的语言之一。&lt;p&gt;通过开发人员自己添加泛型的行动，golang 团队最终承认他们错了，或者泛型更好。如果 gleam 流行起来，我认为同样的情况也会发生。&lt;p&gt;没有泛型的重复代码太多了。我尝试编写一个解析器组合器，但它并不漂亮。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bbkane:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不断遇到 Gleam 帖子、播客和视频。我认为它可能是带有 Lustre 库的 UI JS 的一个特别有吸引力的替代品。还没试过，我的积压越来越多......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;marliechiller:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于我们即将进入的法学硕士时代，我想知道一件事：如果没有可供法学硕士学习的训练数据集，那么学习这样的语言是否有价值？我想投入时间学习 Gleam，但我将语言视为一种工具，或者达到目的的手段。我觉得我越来越需要能够最轻松地完成工作的工具，而这些语言似乎是法学硕士所擅长的。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.tymscar.com/posts/gleamaoc2025/</guid>
+      <pubDate>Sat, 13 Dec 2025 17:00:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46255991</comments>
     </item>
     <item>
-      <title>人工智能正在让旧核电站重新焕发活力</title>
-      <link>https://www.wbur.org/hereandnow/2025/12/09/nuclear-power-ai</link>
-      <description>&lt;p&gt;“拥有可靠的电源并保持较低的电费，每个人都应该支持这一点。该地区还包括密歇根州的科弗特镇。该镇主管 Daywi Cook 的父亲在 20 世纪 60 年代帮助建造了这座工厂。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; AI is bringing old nuclear plants out of retirement&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46254276"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.wbur.org/hereandnow/2025/12/09/nuclear-power-ai'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Java 中快速、内存高效的哈希表：借鉴最好的想法</title>
+      <link>https://bluuewhale.github.io/posts/building-a-fast-and-memory-efficient-hash-table-in-java-by-borrowing-the-best-ideas/</link>
+      <description>&lt;p&gt;这一部分是深入探讨，一部分是工程日记，一部分是关于绩效工作的警示故事。那是我的“好吧，这不是利基”时刻。从那时起，SwissTable 不再感觉像是“一个聪明的 C++ 技巧”，而是开始感觉像是现代基线。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Fast, Memory-Efficient Hash Table in Java: Borrowing the Best Ideas&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46256325"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://bluuewhale.github.io/posts/building-a-fast-and-memory-efficient-hash-table-in-java-by-borrowing-the-best-ideas/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://bluuewhale.github.io/posts/building-a-fast-and-memory-efficient-hash-table-in-java-by-borrowing-the-best-ideas/</guid>
+      <pubDate>Sat, 13 Dec 2025 17:41:32 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46256325</comments>
+    </item>
+    <item>
+      <title>分析发现，随着电池成本大幅下降，太阳能发电随时可用</title>
+      <link>https://pv-magazine-usa.com/2025/12/12/analysis-finds-anytime-electricity-from-solar-available-as-battery-costs-plummet/</link>
+      <description>&lt;p&gt;分析发现，随着电池成本大幅下降，太阳能可以“随时提供电力” Ember 的报告概述了电池资本支出的下降和性能指标的提高如何降低了平均存储成本，使可调度太阳能成为全球具有竞争力的随时电力选择。 2025 年 12 月 12 日 Ryan Kennedy 成本和价格 储能市场与政策 美国 世界 图片：Ember 分享 能源智库 Ember 的一份报告详细介绍了电池存储技术成本的降低如何使可调度太阳能与传统电源竞争。然而，即使成本有所变化，美国。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Analysis finds anytime electricity from solar available as battery costs plummet&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46256249"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://pv-magazine-usa.com/2025/12/12/analysis-finds-anytime-electricity-from-solar-available-as-battery-costs-plummet/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AshamedCaptain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每当你问自己“为什么切尔诺贝利的其他发电机在臭名昭著的事故发生几十年后仍然继续运行”时，你就会明白这一点。 ——在这里阅读答案。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;m4ck_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;inb4 南卡罗来纳州的工厂最终变成了一个骗局，让纳税人损失了数十亿美元（再次）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;halapro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哎呀。我真的搞砸了。我不应该那样做。我道歉。气温不会停止上升，我也救不了你。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bjourne:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“人工智能”还是“巨额政府补贴”？ 60年后仍然需要补贴的发电可能还不止这些。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bicx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从好的一面来看，也许大型科技将能够加速聚变能源的产生，达到实际使用的程度。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;antonvs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;起初我以为这意味着他们正在对一座旧核电站的重启进行振动编码。可能会出现什么问题？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;t0mas88:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AI能耗是7天24小时稳定的事情吗？推理负载随着消费者流量的变化而明显变化，因此会有每日的节奏。但大型提供商是否会使用剩余的容量进行培训？还是那些独立的集群？&lt;p&gt;如果它是 24x7 稳定的负载，那么它将是核能、低碳的理想选择，但适应需求变化的速度较慢。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;danmaz74:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;至少，他们不会重新启动燃煤电厂。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.wbur.org/hereandnow/2025/12/09/nuclear-power-ai</guid>
-      <pubDate>Sat, 13 Dec 2025 13:08:36 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46254276</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;state_less:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;电动汽车电池制造规模的扩大以及现在的太阳能存储导致了我一生中从未想象过的价格。  这是成功的故事之一，经历过它之后，我真的很高兴。&lt;p&gt;我知道人们可能在几年前就能够指着一张图表说我们最终会到达这里，但考虑到所需的规模以及我们所看到的反对太阳能电池的所有游说努力，我对此表示怀疑。  唉，我们成功了！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aswegs8:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我是傻子还是那句话“分析发现随着电池成本直线下降，任何时候都可以使用太阳能发电”？从语法上讲没有意义？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JoeAltmaier:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;太阳能每兆瓦时 33 美元。煤或天然气是什么？也许是一半？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ramshanker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;用于计算机 UPS 的生产电池是否比 LEAC ACID 更便宜？  我还没有看到新的更便宜的 UPS 推出。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://pv-magazine-usa.com/2025/12/12/analysis-finds-anytime-electricity-from-solar-available-as-battery-costs-plummet/</guid>
+      <pubDate>Sat, 13 Dec 2025 17:32:21 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46256249</comments>
+    </item>
+    <item>
+      <title>EasyPost (YC S13) 正在招聘</title>
+      <link>https://www.easypost.com/careers</link>
+      <description>&lt;p&gt;高性能运输变得轻松 EasyPost 的职业机会 我们的问题解决团队为运输物流带来了现代方法。我们跨部门协作，提出具有挑战性的问题，探索新的解决方案，并对我们的胜利和错误承担责任。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; EasyPost (YC S13) Is Hiring&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46256002"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.easypost.com/careers'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.easypost.com/careers</guid>
+      <pubDate>Sat, 13 Dec 2025 17:01:25 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46256002</comments>
+    </item>
+    <item>
+      <title>Z8086：从原始微码重建 8086</title>
+      <link>https://nand2mario.github.io/posts/2025/z8086/</link>
+      <description>&lt;p&gt;结果是 z8086：运行原始 Intel 微代码的 8086/8088 内核。微代码是这里的粘合剂。诀窍是微代码。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Z8086: Rebuilding the 8086 from Original Microcode&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46255007"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://nand2mario.github.io/posts/2025/z8086/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;retrac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;微码非常高效&lt;p&gt;微码是模拟更复杂指令集的软件。&lt;p&gt;最简单的实用计算机架构之一是移动或传输触发架构。  在这样的设计中，唯一的指令是条件移动。  为了进行加法运算，您将值移动到与 ALU 的 A 和 B 输入相连的寄存器中，然后在下一个周期中将结果从结果寄存器中移出。  所有功能单元都以地址形式公开，您只需移动移动移动即可。  为了跑得更快，你需要扩展指令以在一个周期内执行多次移动。&lt;p&gt;这样的机器非常接近某些计算理论模型，例如 RAM 机器。  这也是一种几乎不需要硬连线的逻辑，只需要一个几乎直接循环的简单状态机。&lt;p&gt;为这样的架构编写一个程序来模拟更合理的指令集。  将其放入 ROM 中。  这就是微代码。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tasty_freeze:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不管文章怎么说，68000 也进行了微编码。另一个区别是 68K 是 32b 架构，而不是 16b，这需要为寄存器文件和数据路径投入更多晶体管。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://nand2mario.github.io/posts/2025/z8086/</guid>
+      <pubDate>Sat, 13 Dec 2025 15:04:29 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46255007</comments>
+    </item>
+    <item>
+      <title>Conway 的《生命游戏》(2021) 中实现的 Lisp 解释器</title>
+      <link>https://woodrush.github.io/blog/posts/2022-01-12-lisp-in-life.html</link>
+      <description>&lt;p&gt;Lisp in Life 是在 Conway 的 Game of Life 中实现的 Lisp 解释器。 Lisp in Life 以相当直接的方式证明了这一事实。 Conway 的生命游戏模式直接读取、解析和评估该 Lisp 源代码以产生其输出。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A Lisp Interpreter Implemented in Conway's Game of Life (2021)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46251620"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://woodrush.github.io/blog/posts/2022-01-12-lisp-in-life.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Xmd5a:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;一href="https:&amp;#x2F;&amp;#x2F;www.cambridge.org&amp;#x2F;核心&amp;#x2F;书籍&amp;#x2F;abs&amp;#x2F;算法信息理论&amp;#x2F;形式化短信计算寄存器机器指数丢番图方程纯lisp&amp;#x2F;8C070477977E01F8AFC4A9CA7153112D" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.cambridge.org&amp;#x2F;core&amp;#x2F;books&amp;#x2F;abs&amp;#x2F;algorithmic-informa...&lt;/a&gt;&lt;p&gt;I - 计算形式主义：寄存器机、指数丢番图方程和纯 LISP&lt;p&gt;Gregory。 J. Chaitin&lt;p&gt;&gt;在第 4 章中，我们为该 LISP 提供了一个寄存器机解释器，然后将其编译成丢番图方程。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有关的。其他？&lt;p&gt;&lt;i&gt;Conway 的《生命游戏》(2021) 中实现的 Lisp 解释器&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=34266240"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=34266240&lt;/a&gt; - 2023 年 1 月（25 条评论）&lt;p&gt;&lt;i&gt;实现的 Lisp 解释器康威的生命游戏&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=29661616"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=29661616&lt;/a&gt; - 2021 年 12 月 (85评论）&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://woodrush.github.io/blog/posts/2022-01-12-lisp-in-life.html</guid>
+      <pubDate>Sat, 13 Dec 2025 03:06:53 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46251620</comments>
     </item>
   </channel>
 </rss>
