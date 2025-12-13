@@ -6,32 +6,54 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 13 Dec 2025 12:46:52 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Dec 2025 15:24:01 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>CAD/2d/3D 书签 有用链接</title>
-      <link>https://github.com/yogananda-muthaiah/SAP-CPQ/tree/main/Integrations/CAD-2d-3d</link>
-      <guid isPermaLink="true">https://github.com/yogananda-muthaiah/SAP-CPQ/tree/main/Integrations/CAD-2d-3d</guid>
-      <pubDate>Sat, 13 Dec 2025 11:16:45 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46253763</comments>
+      <title>我们构建了另一个对象存储</title>
+      <link>https://fractalbits.com/blog/why-we-built-another-object-storage/</link>
+      <description>&lt;p&gt;高性能对象存储现已存在。小对象税：使用云对象存储，您可以按请求付费。本机目录语义，包括原子重命名。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; We built another object storage&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46254087"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://fractalbits.com/blog/why-we-built-another-object-storage/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hansvm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好的。我正在考虑自己建立一个对象存储。看到其他人认为哪些功能很重要是很有趣的。&lt;p&gt;不过我对一方面感到好奇。价格比较显示存储空间“包含在内”，但这掩盖了这样一个事实：您在建议的实例类型上只有 2TB，如果您每年预先支付节省费用，则存储成本将达到 180TB 月，而当您考虑持久性解决方案是普通复制时，存储成本将达到 540TB 月。&lt;p&gt;我知道这是“重复计算”。或者其他什么，但是这里建议的读写工作负载对我来说很奇怪。如果您只有 1875GB 的数据（由于复制而使用其中 3 个实例实现）并根据成本比较的其他部分维持 10k 小对象 (4KiB) QPS，那么您所描述的世界是您每月读取和写入 50 倍的整个存储容量。&lt;p&gt;我知道可能存在热对象或冷对象或工作负载，其中大多数数据都是瞬态的，但即便如此，感觉仍然很大比我对大多数工作负载的预期更高的访问放大（或者在我被允许公开撰写的任何工作中观察到的）。考虑到这一点，存储成本本身实际上占主导地位，而且你只能受到 AWS 的摆布，即使是 2 年摊销 SSD 成本的 6 倍，AWS 也无法提供任何解决方案（只有 S3 接近——当你租用实际的“磁盘”时，情况会更糟，当它们是高性能时，情况会加倍）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tsuru:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每次听到分层存储，我都会情不自禁地想“这一切又回到了 MUMPS，不是吗？”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kburman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得这个产品正在针对反模式进行优化。&lt;p&gt;该博客认为，由于“数百万个小文件”，人工智能工作负载因延迟而成为瓶颈。但是，如果您直接从网络存储对数百万个松散的 4KB 对象进行训练，那么您的数据管道才是问题所在，而不是存储层。&lt;p&gt;数据格式：标准做法是使用 WebDataset、Parquet 或 TFRecord 等格式将小文件分块为大型连续 Blob。这消除了对高 IOPS 元数据操作的需求，并使标准 S3 吞吐量成为唯一重要的指标（该指标已经足够了）。&lt;p&gt;缓存：大多数高性能训练作业都会占用 GPU 节点上的本地 NVMe 暂存空间。 S3 只是事实的冷来源。我们不需要亚毫秒级访问真相来源，我们需要它在边缘（本地磁盘&amp;#x2F;RAM），这是由数据加载器预取处理的。&lt;p&gt;看起来他们正在构建一个复杂的分布式系统来解决一个可以通过 tar -cvf 更好地解决的问题&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oersted:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;小对象和低延迟。&lt;p&gt;为什么不使用任何优秀的 KV 存储呢？甚至是传统数据库。&lt;p&gt;人们使用对象存储是为了低成本，而不是因为它是一种方便的抽象。我怀疑有些人只是将速度更快、价格昂贵的 S3 作为权宜之计。因为他们从对象存储开始，需求发生了变化，它不再是适合这项工作的工具，但转换起来很麻烦，而 AWS 正在利用他们的情况。我认为，以不勒索的价格为这些人提供替代方案是一种不错的商业模式，但我不确定这个市场有多大，或者会持续多久。&lt;p&gt;但是，以数据库价格和数据库性能提供的对象存储只是一个数据库，我怀疑快速重新发明轮子会产生什么太有竞争力的东西。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aperocky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因此他们构建了一个对象存储来取代文件系统。&lt;p&gt;在“为什么不直接使用文件系统？”中，他们给出的答案是“界限已经模糊了”和“行业正在融合”。&lt;p&gt;这条线可能很模糊，但正如前面提到的，这仍然是文件系统的一个明确的用例 - 或者如果需要更高的访问速度，只需为系统添加更多 RAM 并缓存它们即可。即使以目前的 RAM 成本来看，它的成本仍然会更低。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChocolateGod:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所以他们在 S3 中添加了元数据引擎？&lt;p&gt;这与 JuiceFS 之类的东西相比如何。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jamiesonbecker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些问题旨在具有建设性的批判性，但并非过度批判：我真的很感兴趣，并且是该领域产品的忠实粉丝：&lt;p&gt;* 就专注于高性能 AI 的 S3 竞争对手而言，这与 NVIDIA 的 AIstore 相比如何？ &lt;a href="https:&amp;#x2F;&amp;#x2F;aistore.nvidia.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;aistore.nvidia.com&amp;#x2F;&lt;/a&gt;&lt;p&gt;* 集群故事是什么？它是像 ceph 一样复杂，需要像 AIstore 这样的 K8 才能实现全部功能，还是像 Garage、Minio 等更灵活？&lt;p&gt;* 你花了很多时间谈论性能；你有任何基准吗？&lt;p&gt;* 显然，大部分页面是由 ChatGPT 编写的：有多少百分比的代码是由 AI 编写的，并且经过人工审核吗？&lt;p&gt;* 对象存储本身如何工作？它是如何架构的？例如，你有DHT吗？与 1.4 的无数替代方案相比，有什么权衡（例如 CAP）？&lt;p&gt;* 是否有前端或管理工具（和屏幕截图）？&lt;p&gt;* 集群可以水平扩展还是只能垂直扩展（即 Minio）&lt;p&gt;* 为什么不直接分叉以前版本的 Minio，然后在上面放置一个高速元数据层？&lt;p&gt;* 有遥测吗？&lt;p&gt;* 虽然这并不那么重要对于我的用例和其他用例，起源的具体管辖权是什么？&lt;p&gt;谢谢！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whinvik:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的。您是否看到使用 io-uring 的任何好处？ io-uring 似乎一直被谈论，但似乎没有人真正在愤怒中使用它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dbacar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人们只能希望，一旦他们获得动力，这不会像 Minio 那样走向同一个方向。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;imvetri:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您能说一下，这在数据结构方面与传统数据结构有何不同吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;HN 版本的这个标题是无意的喜剧:)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fractalbits:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;github页面： &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;fractalbits-labs&amp;#x2F;fractalbits-main" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;fractalbits-labs&amp;#x2F;fractalbits-main&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://fractalbits.com/blog/why-we-built-another-object-storage/</guid>
+      <pubDate>Sat, 13 Dec 2025 12:29:19 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46254087</comments>
     </item>
     <item>
-      <title>YouTube 首席执行官限制孩子们使用社交媒体——其他科技公司老板也这么做</title>
-      <link>https://www.cnbc.com/2025/12/13/youtubes-ceo-is-latest-tech-boss-limiting-his-kids-social-media-use.html</link>
-      <description>&lt;p&gt;“我们确实限制他们在 YouTube 和其他平台以及其他形式媒体上的时间。莫汉在周三接受《时代》杂志更广泛的采访时表示，他感到对年轻人负有“首要责任”，并让父母更好地控制孩子如何使用该平台。盖茨有三个孩子，现在已经成年，他公开表示，在他们十几岁之前不会给他们手机。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; YouTube's CEO limits his kids' social media use – other tech bosses do the same&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46253985"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.cnbc.com/2025/12/13/youtubes-ceo-is-latest-tech-boss-limiting-his-kids-social-media-use.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>人工智能正在让旧核电站重新焕发活力</title>
+      <link>https://www.wbur.org/hereandnow/2025/12/09/nuclear-power-ai</link>
+      <description>&lt;p&gt;“拥有可靠的电源并保持较低的电费，每个人都应该支持这一点。该地区还包括密歇根州的科弗特镇。该镇主管 Daywi Cook 的父亲在 20 世纪 60 年代帮助建造了这座工厂。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; AI is bringing old nuclear plants out of retirement&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46254276"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.wbur.org/hereandnow/2025/12/09/nuclear-power-ai'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;concinds:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与此同时，“正常”（疏忽大意）的父母会给 5 岁的孩子 iPad 或联网电脑。失败者继续失败。从来没有机会。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mattgreenrocks:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所有年龄段的人都可以从限时接触社交媒体中受益。我们现在有一个术语来形容它：brainrot。完全相信这是我们这一代人的香烟：尽管存在负面外部性，但它仍然无处不在，足以普及。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rightbyte:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;叶和扎克伯格用一根无用的电缆插入笔记本电脑麦克风。&lt;p&gt;我猜大多数父母都会尝试限制屏幕时间。但有些人很难做到这一点，因为它是一个很棒的保姆。&lt;p&gt;我尝试在家里完全封锁孩子们的 YT。几年前看着其他孩子被饲料催眠就足够了。该算法似乎收敛于拆箱视频和超现实垃圾邮件。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;michaeljx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我确信可口可乐老板也限制了他的孩子们的软饮料消费。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.cnbc.com/2025/12/13/youtubes-ceo-is-latest-tech-boss-limiting-his-kids-social-media-use.html</guid>
-      <pubDate>Sat, 13 Dec 2025 12:03:51 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46253985</comments>
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AshamedCaptain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每当你问自己“为什么切尔诺贝利的其他发电机在臭名昭著的事故发生几十年后仍然继续运行”时，你就会明白这一点。 ——在这里阅读答案。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;m4ck_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;inb4 南卡罗来纳州的工厂最终变成了一个骗局，让纳税人损失了数十亿美元（再次）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;halapro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哎呀。我真的搞砸了。我不应该那样做。我道歉。气温不会停止上升，我也救不了你。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bjourne:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“人工智能”还是“巨额政府补贴”？ 60年后仍然需要补贴的发电可能还不止这些。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bicx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从好的一面来看，也许大型科技将能够加速聚变能源的产生，达到实际使用的程度。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;antonvs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;起初我以为这意味着他们正在对一座旧核电站的重启进行振动编码。可能会出现什么问题？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;t0mas88:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AI能耗是7天24小时稳定的事情吗？推理负载随着消费者流量的变化而明显变化，因此会有每日的节奏。但大型提供商是否会使用剩余的容量进行培训？还是那些独立的集群？&lt;p&gt;如果它是 24x7 稳定的负载，那么它将是核能、低碳的理想选择，但适应需求变化的速度较慢。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;danmaz74:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;至少，他们不会重新启动燃煤电厂。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.wbur.org/hereandnow/2025/12/09/nuclear-power-ai</guid>
+      <pubDate>Sat, 13 Dec 2025 13:08:36 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46254276</comments>
     </item>
   </channel>
 </rss>

@@ -6,32 +6,54 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 13 Dec 2025 12:46:52 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Dec 2025 15:24:01 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>CAD/2D/3Dのブックマーク お役立ちリンク</title>
-      <link>https://github.com/yogananda-muthaiah/SAP-CPQ/tree/main/Integrations/CAD-2d-3d</link>
-      <guid isPermaLink="true">https://github.com/yogananda-muthaiah/SAP-CPQ/tree/main/Integrations/CAD-2d-3d</guid>
-      <pubDate>Sat, 13 Dec 2025 11:16:45 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46253763</comments>
+      <title>別のオブジェクトストレージを構築しました</title>
+      <link>https://fractalbits.com/blog/why-we-built-another-object-storage/</link>
+      <description>&lt;p&gt;現在、高性能のオブジェクト ストレージが存在します。スモール オブジェクト税: クラウド オブジェクト ストレージでは、リクエストごとに支払います。アトミックな名前変更を含むネイティブ ディレクトリ セマンティクス。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; We built another object storage&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46254087"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://fractalbits.com/blog/why-we-built-another-object-storage/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hansvm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ニース。私はオブジェクト ストアを自分で構築することを検討していました。他の人がどのような機能が重要だと考えているかを知るのは楽しいです。&lt;p&gt;しかし、私は 1 つの側面に興味があります。価格比較にはストレージが「含まれている」と記載されています。しかし、これは、推奨されるインスタンス タイプには 2 TB しかないという事実を隠しており、節約のために毎年前払いした場合、ストレージ コストは月 180 TB 月、耐久性ソリューションがバニラ レプリケーションであることを考慮すると月 540 TB になります。&lt;p&gt;それが「二重カウント」であることはわかっています。あるいは何でもですが、ここで提案されている読み取り/書き込みワークロードは私にとって奇妙です。データが 1,875 GB しかなく (レプリケーションによりこれらのインスタンスのうち 3 つで達成)、コスト比較の他の部分にあるように 10,000 のスモール オブジェクト (4KiB) QPS を維持している場合、毎月ストレージ容量全体の 50 倍の読み取りまたは書き込みが行われる世界を表していることになります。&lt;p&gt;ほとんどのデータが一時的なホット オブジェクトとコールド オブジェクト、またはワークロードが存在する可能性があることはわかっていますが、それでもなお、ほとんどのワークロードで予想されるよりもはるかに高いアクセス増幅のように感じます (または、私が公に書くことを許可されている仕事でこれまでに観察したこともあります)。それを念頭に置くと、ストレージのコスト自体が実際に支配的であり、AWS が 2 年償却 SSD の 6 倍もの安価なソリューションを提供していないことに翻弄されることになります (そしてそれに近いのは S3 だけです。実際の「ディスク」をレンタルする場合はさらに悪くなりますが、それが高性能である場合はさらに悪化します)。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tsuru:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;階層型ストレージと聞くたびに、「すべては MUMPS に戻ってくるのではないか」と思わずにはいられません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kburman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この製品はアンチパターンに合わせて最適化されているように感じます。&lt;p&gt;ブログでは、AI ワークロードは数百万の小さなファイルが原因で遅延がボトルネックになっていると主張しています。しかし、ネットワーク ストレージから直接、何百万もの緩い 4KB オブジェクトをトレーニングしている場合は、ストレージ層ではなく、データ パイプラインが問題になります。&lt;p&gt;データ形式: 標準的な方法では、WebDataset、Parquet、または TFRecord などの形式を使用して、小さなファイルを大きな連続した BLOB にチャンクします。これにより、高 IOPS メタデータ操作の必要性がなくなり、標準の S3 スループットが重要な唯一の指標になります (これはすでに豊富にあります)。&lt;p&gt;キャッシュ: ほとんどの高パフォーマンス トレーニング ジョブは、GPU ノード上のローカル NVMe スクラッチ スペースを利用します。 S3 はまさに冷酷な真実の情報源です。真実のソースへのミリ秒未満のアクセスは必要ありません。エッジ (ローカル ディスク RAM) でアクセスする必要があり、データ ローダーのプリフェッチによって処理されます。&lt;p&gt;彼らは、tar -cvf でよりよく解決できる問題を解決するために、複雑な分散システムを構築しているようです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oersted:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;オブジェクトが小さく、遅延が少ない。&lt;p&gt;優れた KV ストアを使用してみてはいかがでしょうか?あるいは従来のデータベースも同様です。&lt;p&gt;人々がオブジェクト ストレージを使用するのは、それが便利な抽象化だからではありません。高速で高価な S3 を単なる一時しのぎとして使用している人もいるのではないかと思います。彼らはオブジェクトストレージから始めたため、要件が変化し、ジョブに適したツールではなくなりましたが、切り替えるのは面倒でした。AWS はその状況を利用しています。そういった人たちに、法外ではない価格で代替手段を提供するのはまともなビジネス モデルだと思いますが、その市場がどのくらい大きく、どれくらい続くのかはわかりません。&lt;p&gt;しかし、データベースのパフォーマンスを備えたデータベースの価格でのオブジェクト ストレージは、単なるデータベースにすぎません。その車輪をすぐに再発明することで、あまりにも競争力のあるものが生まれるとは思えません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aperocky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;そこで彼らは、ファイル システムに代わるオブジェクト ストレージを構築しました。&lt;p&gt;そして、「なぜファイル システムを使用しないのか?」で彼らが出した答えは、「境界線はすでに曖昧になっている」というものでした。 &lt;p&gt;境界線は曖昧になるかもしれませんが、前述したように、ファイル システムの明確な使用例はまだあります。あるいは、アクセス速度の高速化が保証される場合は、システムに RAM を増設してキャッシュするだけです。現在の RAM のコストを考慮しても、コストはさらに低くなります。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChocolateGod:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それで彼らはメタデータ エンジンを S3 に追加しました?&lt;p&gt;それを JuiceFS などと比較するとどうでしょうか。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jamiesonbecker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これらの質問は、建設的に批判的なものであることを意図していますが、超批判的なものではありません。私はこの分野の製品に心から興味があり、大ファンです。&lt;p&gt;* 高性能 AI に焦点を当てた S3 の競合他社という観点から見ると、これを NVIDIA の AIstore とどう比較しますか? &lt;a href="https:&amp;#x2F;&amp;#x2F;aistore.nvidia.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;aistore.nvidia.com&amp;#x2F;&lt;/a&gt;&lt;p&gt;* クラスタリングの話とは何ですか? ceph のように複雑ですか、完全な機能を実現するには AIstore のような K8 が必要ですか、それとも Garage、Minio などのより柔軟ですか?&lt;p&gt;* パフォーマンスについて話すのに多くの時間を費やしています。ベンチマークはありますか?&lt;p&gt;* 明らかに、ページの大部分は ChatGPT によって書かれています。コードの何パーセントが AI によって書かれ、人間によってレビューされましたか?&lt;p&gt;* オブジェクト ストレージ自体はどのように機能しますか?どのように設計されていますか?たとえば、DHTはありますか？ 1.4 億の代替手段と比べて、どのようなトレードオフがありますか?&lt;p&gt;* フロントエンドまたは管理ツール (およびスクリーンショット) はありますか?&lt;p&gt;* クラスターは水平方向または垂直方向のみ (つまり Minio) に拡張できますか?&lt;p&gt;* 代わりに、以前のバージョンの Minio をフォークして、その上に高速メタデータ レイヤーを置くだけではどうでしょうか?&lt;p&gt;* テレメトリはありますか?&lt;p&gt;* ではありませんが、私のユースケースにとっても他のユースケースにとっても重要ですが、原産地の具体的な管轄区域はどこですか?&lt;p&gt;ありがとう!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whinvik:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;面白い。 io-uring を使用するメリットはありましたか。イオリングについては頻繁に話題になっているようですが、実際に怒りを持って使っている人はいないようです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dbacar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一度勢いがついたミニオと同じ方向に行かないことを祈るばかりだ。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;imvetri:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;データ構造に関して、これは従来のものとどのように違うのか教えてください。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;このタイトルの HN バージョンは意図せずコメディです :)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fractalbits:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;github ページ: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;fractalbits-labs&amp;#x2F;fractalbits-main" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;fractalbits-labs&amp;#x2F;fractalbits-main&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://fractalbits.com/blog/why-we-built-another-object-storage/</guid>
+      <pubDate>Sat, 13 Dec 2025 12:29:19 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46254087</comments>
     </item>
     <item>
-      <title>YouTube CEO、子供のソーシャルメディア利用を制限 – 他のテクノロジー企業の責任者も同様</title>
-      <link>https://www.cnbc.com/2025/12/13/youtubes-ceo-is-latest-tech-boss-limiting-his-kids-social-media-use.html</link>
-      <description>&lt;p&gt;「私たちは子どもたちがYouTubeや他のプラットフォーム、その他の形式のメディアを利用する時間を制限している。モハン氏は水曜日のタイム紙のより広範なインタビューで、若者たちに対する「最大の責任」を感じており、子供たちがプラットフォームをどのように利用するかについて親にもっと大きな管理を与えることを感じていると語った。現在成人となった3人の子供たちに対し、ゲイツ氏は10代になるまで携帯電話を与えないことを公然と語った。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; YouTube's CEO limits his kids' social media use – other tech bosses do the same&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46253985"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.cnbc.com/2025/12/13/youtubes-ceo-is-latest-tech-boss-limiting-his-kids-social-media-use.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>AI が古い原子力発電所を廃止に導く</title>
+      <link>https://www.wbur.org/hereandnow/2025/12/09/nuclear-power-ai</link>
+      <description>&lt;p&gt;「電気代を低く抑える信頼性の高い電源があれば、誰もがそれを応援するはずです。その地域にはミシガン州コバートの町も含まれています。町の監督者であるデイウィ・クックの父親は、1960年代にこの発電所の建設に協力しました。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; AI is bringing old nuclear plants out of retirement&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46254276"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.wbur.org/hereandnow/2025/12/09/nuclear-power-ai'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;concinds:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一方、「普通の」（育児放棄をした）親は、5歳児にiPadやインターネットに接続されたコンピュータを与えます。敗者は負け続けます。チャンスは決してありませんでした。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mattgreenrocks:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;すべての年齢層が、期間限定でソーシャル メディアにアクセスすることで恩恵を受けます。今ではそれを「頭脳腐れ」という言葉で表現しています。それが私たちの世代のタバコであると完全に確信しています。負の外部性にもかかわらず、十分に普及しているのに十分な遍在性です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rightbyte:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;イェーとザッカーバーグはラップトップのマイクをダッドケーブルで接続しています。&lt;p&gt;ほとんどの親は画面を見る時間を制限しようとしていると思います。しかし、ベビーシッターとしては優れているため、それを行うのが難しい人もいます。&lt;p&gt;私は子供たちのために、家では YT を完全に遮断するようにしています。何年も前に、他の子供たちがフィードで催眠術にかかっているのを見るだけで十分でした。このアルゴリズムは、開封動画や超現実的なスパムに収束しているようです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;michaeljx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;コカ・コーラの社長も子供のソフトドリンクの摂取量を制限しているに違いありません。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.cnbc.com/2025/12/13/youtubes-ceo-is-latest-tech-boss-limiting-his-kids-social-media-use.html</guid>
-      <pubDate>Sat, 13 Dec 2025 12:03:51 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46253985</comments>
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AshamedCaptain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「チェルノブイリの他の発電機は、なぜあの悪名高い事故から数十年も経っても稼働し続けたのか」と自問するたびに、 -- ここで答えを読んでください。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;m4ck_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;サウスカロライナ州の工場は結局、納税者に（再び）数十億ドルの損害を与える詐欺に変わったという情報が載っている&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;halapro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;おっと。本当にめちゃくちゃでした。そんなことをすべきではなかった。謝罪します。気温の上昇が止まらず、あなたを救うことはできません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bjourne:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「AI」それとも「政府の巨額の補助金」でしょうか？ 60年経っても補助金が必要な発電はそれだけではないかもしれない。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bicx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;明るい面としては、もしかしたら大手テクノロジー企業が核融合エネルギーの生成を実用化まで加速させることになるかもしれない。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;antonvs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最初は、これは彼らが古い原子力発電所の再稼働をバイブコーディングしていることを意味しているのだと思いました。何が問題になる可能性がありますか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;t0mas88:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AI のエネルギー消費は 24 時間 365 日安定したものなのでしょうか?推論負荷は消費者のトラフィックに応じて明らかに変化するため、毎日のリズムが生じます。しかし、大手プロバイダーは残りの容量をトレーニングに使用しているのでしょうか?それともそれらは別々のクラスターですか?&lt;p&gt;安定した 24 時間 365 日の負荷であれば、原子力エネルギーにとって理想的であり、低炭素ですが、需要の変化に適応するのが遅いです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;danmaz74:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;少なくとも、石炭火力発電所を再稼働させるつもりはない。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.wbur.org/hereandnow/2025/12/09/nuclear-power-ai</guid>
+      <pubDate>Sat, 13 Dec 2025 13:08:36 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46254276</comments>
     </item>
   </channel>
 </rss>
