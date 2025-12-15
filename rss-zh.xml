@@ -6,109 +6,143 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 15 Dec 2025 15:31:10 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Dec 2025 18:41:14 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>NES 版《Top Gun》中的航母登陆</title>
-      <link>https://relaxing.run/blag/posts/top-gun-landing/</link>
-      <description>&lt;p&gt;MFD 上显示“200 / 速度 288” 文本。高度和速度均由油门输入和俯仰角度控制。这是我为那些在家中关注的人提供的带注释的反汇编：landing_skill_check: 06:B6EA: LDA $3E ; 加载高度 High cent 06:B6EC: BEQ $B724 ; 如果 High cent == 0 (高度 &lt; 100) 06:B6EE: CMP 则分支#$03 06:B6F0: BCS $B720 ; 如果高分 &gt;= 3 (高度 &gt;= 300) 则转移 06:B6F2: LDA $41 06:B6F4: CMP #$04 06:B6F6: BCS $B720 ; 如果高分 &gt;= 04 (速度 &gt;= 400) 则转移 06:B6F8: CMP #$02 06:B6FA: BCC $B724 ; 如果高分 &lt; 02 (速度 &lt; 200) 则转移 06:B6FC: BEQ $B706 ; 如果高分 == 02 (速度 &gt;= 200 &amp;&amp; 速度 &lt;= 299) 则转移 speed_300s: 06:B6FE: LDA $40 ; 加载速度低分 06:B700: CMP #$38 06:B702: BCS $B720 ; 如果低分 &gt;= 38 (速度 &gt;= 338) 则转移 06:B704: BCC $B70C ; 如果低分 &lt; 38 (速度 &lt; 338) 则转移 speed_200s: 06:B706: LDA $40 06:B708: CMP #$38 06:B70A: BCC $B724 ; 如果速度 &lt; 238 speed_ok: 06:B70C: LDA $FD ; 加载航向 06:B70E: BMI $B718 ; 如果航向 &lt; 0 (太左) 则分支 06:B710: CMP #$08 06:B712: BCS $B71C ; 如果航向 &gt;= 8 (太右) 06:B714: LDX #$00 ; 0 == success 06:B716: BEQ $B726 ; 分支返回too_far_left: 06:B718: LDX #$02 06:B71A: BNE $B726 Too_far_right: 06:B71C: LDX #$04 06:B71E: BNE $B726 Too_fast_or_too_high: 06:B720: LDX #$08 06:B722: BNE $B726 Too_slow_or_too_low: 06:B724: LDX #$04 return: 06:B726: STX $9E 06:B728: RTS 现在出去，然后抓住第三根电线。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Carrier Landing in Top Gun for the NES&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46274822"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://relaxing.run/blag/posts/top-gun-landing/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>民主派香港大亨黎智英在国家安全审判中被判有罪</title>
+      <link>https://www.bbc.com/news/articles/cp844kjj37vo</link>
+      <description>&lt;p&gt;亲民主香港大亨黎智英在备受瞩目的国家安全审判中被定罪 7 小时前 ShareSave 吴凯莉 (Kelly Ng)、Koey Lee 和 Danny Vincent，香港 ShareSaveWatch：黎智英的判决对香港民主意味着什么。香港民主运动人士、媒体大亨黎智英因香港有争议的国家安全法（NSL）与外国势力勾结而被判有罪。包括英国和美国在内的西方政府多年来一直呼吁释放黎智英，但遭到北京和香港的拒绝。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Pro-democracy HK tycoon Jimmy Lai convicted in national security trial&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46276740"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.bbc.com/news/articles/cp844kjj37vo'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;busterarm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;实际上，我是通过玩无畏号航空母舰着陆模拟器游戏学会了如何做到这一点。  它更加充实一些，但速度范围和高度大致相同。  模拟器为您提供了一个指示灯来帮助您接近。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jjice:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;愤怒的视频游戏书呆子的经典推荐：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=fuZTUX1bwJ0" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=fuZTUX1bwJ0&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pavel_lishin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果我没记错的话，这款游戏曾在《地下城与地下城》中短暂出现过。最近一季的《爸爸》播客。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ghc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我从来没有玩过《Top Gun》，但我确实是玩《Turn and Burn: No Fly Zone》长大的。对于超任天堂游戏机。这么多年过去了，我仍然对图形从一代游戏机到下一代游戏机的改进感到惊讶。我不记得任何其他控制台转换从图形角度来看如此重要。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thinkingtoilet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我记得小时候这几乎是不可能的。整场比赛都很艰难，但这是另一个层面的比赛。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rob74:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; &lt;i&gt;飞行大约一分钟后，游戏会检查你的状态并播放一个小过场动画，显示教科书般的着陆或昂贵的火球。无论哪种方式，你都会得到“任务完成！”然后进入下一个级别（毕竟，你不拥有那架飞机，纳税人拥有）：&lt;/i&gt;&lt;p&gt;出于现实主义（和喜剧）的考虑，他们可以展示一个像素从形成喷气机的五个（我认为）像素中喷射出来，然后爆炸成火球，然后在一个小降落伞上飘落并被一艘小船救起。&lt;p&gt;...但说真的，你甚至没有飞机着陆时坠毁，你的分数会被扣分吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Scene_Cast2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您喜欢航母着陆并拥有 VR 耳机，我强烈建议您查看 VTOL VR。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pikkoloassembly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;天哪，这又带来了创伤。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blitzar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;来吧，伙计，拉起来。拉起来，美洲狮。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ethagknight:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;无论坠毁还是着陆，完成的任务都很搞笑&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;unwind:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;元：应该有“NES”添加到标题中是为了澄清它是关于游戏的，而不是（如我所想的）电影。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drbig:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Lers of Spoil：这是一款 NES 游戏；-) 仍然很酷，特别是如果你喜欢逆向工程的话。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://relaxing.run/blag/posts/top-gun-landing/</guid>
-      <pubDate>Mon, 15 Dec 2025 14:16:32 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46274822</comments>
+&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dzonga:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这家伙被灌输了错误的“民主”观念- 然而他的赞助商不再拥有他们过去认为拥有的权力。因此，他的支持者把“民主”抛在了一边。 &lt;p&gt;以前，这些资金充足的民主政权代理人会在许多地方获胜，但现在情况发生了变化 - 美国现在有一个煽动者担任总统。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tehjoker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请记住，当媒体报道外交事务时，“支持民主”意味着“支持资本主义、支持西方”，我们不会嘲笑民主或自决。这就是我们与沙特阿拉伯、以色列结盟并入侵伊拉克的原因。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yieldcrv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;该法律是在没有咨询香港立法机关的情况下制定的&lt;p&gt;简单地解读《基本法》（香港宪法）就可以接受所发生的一切，而期待相反的情况似乎是一种应对机制。香港的自治权和对北京的服从有大量豁免，由北京自行决定，或由北京任命的香港特首&lt;p&gt;我没有参加移交，所以我在很大程度上免受与理想香港居民的情感婚姻的影响，而肯定香港居民感情的人似乎有&lt;p&gt;立法机关《国家安全法》的颁布不需要经过咨询，这篇文章和似乎所有西方人似乎都认为这是一个不必要的争议&lt;p&gt;还有另一层立法机关的结构甚至不符合西方的理想，也不会产生任何影响。立法机构由 50% 的民众投票和 50% 的公司组成。因此，即使 100% 的人口投票支持同一件事，他们也只会获得 50% 的选票，而这些公司本质上都是亲北京的，因为它们能够在那种环境下经济生存。&lt;p&gt;（值得注意的是，伦敦境内的古代伦敦城的运作方式几乎相同。实际上，非自然人拥有更极端的选票权重，这种方式甚至更令人震惊）&lt;p&gt;人们的行为就像不同的创始文件在治理一样香港（中英联合声明？代表的一些评论），当没有。人们的表现就好像香港的治理文件应该被忽视 50 年，而在回归期结束时应该会发生一些完全不同、更加一体化的事情。&lt;p&gt;我认为，实现香港居民所拥护和习惯的目标的路径为零。他们正在想象一种与他们所生活的不同的治理体系，这是不相容的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bArray:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请记住，香港本应处于从 1997 年开始的 50 年过渡期，当时本应是一个国家、两种制度 [1]。国家安全立法只是一系列失败中的一个[2]。如果没有学到其他东西，那就是：中国，特别是中共，不能被信任。&lt;p&gt;英国向乌克兰提供数十亿美元来干涉一场我们没有基本权利参与的战争，同时，香港在媒体报道很少的情况下就被允许陷落，这让我感到恶心。这是令人愤慨的。监督它的政客应该感到羞耻。&lt;p&gt;更不用说香港前领导人林郑月娥在[3]中允许国家安全法出卖她的人民。她甚至和丈夫一起躲在英国，躲避自己的同胞。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;One_country,_two_systems#Implementation_in_Hong_Kong" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;One_country,_two_systems#Imple...&lt;/a&gt;&lt;p&gt;[2] &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;One_country,_two_systems#2020_national_security_legislation" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;One_country,_two_systems#2020_...&lt;/a&gt;&lt;p&gt;[3] &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Carrie_Lam" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Carrie_Lam&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lvl155:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们从 60 年代到 00 年代所知道的民主实际上已经在各地消亡了。我认为社交媒体和监控技术都在如此迅速地实现这一目标的过程中发挥了作用，而且没有引起公众的强烈抗议。 1900年代为传播民主而流血的一切在短短几年内就被消灭了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;demarq:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;该法律是在没有咨询香港立法机关的情况下颁布的，并赋予当局广泛的权力，可以起诉和监禁他们认为对香港法律和秩序或政府稳定构成威胁的人。&lt;p&gt;英国向薄薄的玻璃屋扔了一块很大的石头。&lt;p&gt;我不同意任何国家的任何此类法律，但我认为指出这里的虚伪很重要&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Simulacra:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在中国能否得到公平、公正的审判？我很难接受这一点或中国法院的任何判决，并且希望能找到反驳这一点的例子。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;woopwoop:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;2019年，NPR的星球资金制作了一个关于香港抗议活动的节目，其中以黎智英为主角。最后的这段话一直让我印象深刻。&lt;p&gt;戈德斯坦：中国不允许更多的言论自由。批评政府的出版物仍可能被关闭。然而，中国却变得更加富裕。它开始在上海发展自己的金融中心。现在外国资金可以不经过香港就流入中国，所以中国共产党不再像以前那样需要香港。&lt;p&gt;这导致香港人民与中国共产党、中国政府之间的关系越来越紧张。 2014年，围绕如何选择治理香港的政府官员展开争论，百万香港人走上街头抗议。就在上个月，管理香港的政府官员希望通过一项新法律，允许将香港人引渡到中国接受审判。香港人说，我们不相信你们内地法院。两百万人走上街头抗议，顺便说一句，其中包括现在 70 多岁的黎智英。&lt;p&gt;情况如何？那天走路感觉如何？&lt;p&gt;LAI：我非常兴奋 - 当你看到这么多人，你知道，正在为道德问题而奋斗。我们没有枪。我们没有坦克。我们什么都没有。我们中国政府唯一没有的就是我们拥有的道德权威，我们拥有的道德勇气。&lt;p&gt;戈德斯坦：是的，道德权威和勇气。&lt;p&gt;赖：是的。&lt;p&gt;戈德斯坦：几周后，即7月1日，即香港回归中国的周年纪念日，抗议者闯入香港立法机关大楼，砸碎玻璃墙并喷漆涂鸦。中国领导人将这些抗议者和黎智英视为外国影响力的代理人——你知道，基本上是现代殖民主义者。他的房子被燃烧弹袭击，还有针对他的暗杀阴谋。&lt;p&gt;赖：我不再考虑这个，因为如果我让恐惧吓到我，我就无法继续下去，你知道，因为我已经接受了，我必须维持它。我将是最后一个离开的。这就像一个无法跳船的船长。&lt;p&gt;戈德斯坦：我的意思是，你很有钱。如果你愿意的话，你可以离开。&lt;p&gt;LAI：是的。如果我很有钱，但是是个混蛋...&lt;p&gt;GOLDSTEIN：（笑声）。&lt;p&gt;LAI：...我的孩子们会怎么看我？&lt;p&gt;GOLDSTEIN：是的。&lt;p&gt;LAI：你知道，富有，你可能会很穷...&lt;p&gt;GOLDSTEIN：继续。多说一点。&lt;p&gt;赖：……因为如果你只有钱，你就失去了意义，你就失去了尊严，你就失去了做人的一切。你还有什么？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mothballed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;赖先生是货真价实的。  他最初是一名童工，后来从一无所有到拥有一个服装品牌，然后又成为民主派《苹果日报》的出版商。  他本来可以选择离开香港，但他留下来并继续抗争。&lt;p&gt;他现在面临终身监禁，因此这一定罪使一切都岌岌可危。&lt;p&gt;很高兴看到这件事登上了头版。  我之前发过一篇文章，没有太大的动静，这对香港的自由思想运动来说确实令人担忧；很高兴事实并非如此。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;azinman2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一个国家、两种制度怎么了？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;GenerocUsername:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;想象一下，美国的一个大城市在政治上统治了中国 50 多年，很难想象这种类型的反弹最终不会发生。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AnimalMuppet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;香港已经死了。&lt;p&gt;是的，当然，那里仍然有一座城市叫这个名字。  但我们所知道的香港已经死了。  使香港成为现在这个样子的东西已经死了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JumpCrisscross:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;美国失去山上之城愿望的黑暗后果之一是我们无法有效地呼吁国外的邪恶。黎智英不应该被允许默默地这样做。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.bbc.com/news/articles/cp844kjj37vo</guid>
+      <pubDate>Mon, 15 Dec 2025 16:36:19 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46276740</comments>
     </item>
     <item>
-      <title>OpenAI 似乎正在抓取 [证书透明度] 日志</title>
-      <link>https://benjojo.co.uk/u/benjojo/h/Gxy2qrCkn1Y327Y6D3</link>
-      <description>&lt;p&gt;176μs“statuscode=404 proto=http/2。182：38242 tlsinfo=tls1.com/searchbot”referrr=size=19 cid=19b14416d95。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; It seems that OpenAI is scraping [certificate transparency] logs&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46274478"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://benjojo.co.uk/u/benjojo/h/Gxy2qrCkn1Y327Y6D3'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jcims:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;鉴于这些都是简单伪造的，想必他们并没有真正使用 Mac 进行抓取，对吧？  只是为了引出一个“标准”来自服务器的响应？&lt;p&gt;&gt;useragent=“Mozilla”5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit&amp;#x2F;537.36 (KHTML，如 Gecko) Chrome&amp;#x2F;131.0.0.0 Safari&amp;#x2F;537.36;兼容的; OAI-SearchBot&amp;#x2F;1.3;机器人.txt；&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mxlje:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所以？它是公共信息和一些易于使用的网站流，如果我的工作是抓取整个互联网，我可能也会从那里开始。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gmerc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;让我们提示注入它&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;827a:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从 Google 到脚本小子、OpenAI、尼日利亚电话诈骗者再到网络安全公司，数以千计的系统都在积极监视证书透明度日志，正是出于这个原因。打哈欠。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aurornis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这可能是 OpenAI，也可能是另一家使用其标头模式的公司。&lt;p&gt;长期以来，抓取工具采用搜索引擎爬虫的标头模式来隐藏在日志中并绕过简单的过滤器是很常见的。合乎逻辑的下一步是让较小的 AI 玩家将自己展示为该领域最大的玩家。&lt;p&gt;一些搜索引擎专门提供了他们的爬虫 IP 范围列表，以便您可以验证爬虫活动是否真的是他们或模仿者。&lt;p&gt;编辑：感谢下面的评论查找此内容并确认该 IP 与 OpenAI 的范围匹配。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drwhyandhow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这种情况已经持续很久了！我认为整个商业模式都是基于抓取哈哈&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://benjojo.co.uk/u/benjojo/h/Gxy2qrCkn1Y327Y6D3</guid>
-      <pubDate>Mon, 15 Dec 2025 13:48:03 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46274478</comments>
+      <title>过去超新星的宇宙射线浴催生了类地行星</title>
+      <link>https://www.science.org/doi/10.1126/sciadv.adx7892</link>
+      <guid isPermaLink="true">https://www.science.org/doi/10.1126/sciadv.adx7892</guid>
+      <pubDate>Mon, 15 Dec 2025 17:01:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46277090</comments>
     </item>
     <item>
-      <title>成千上万的美国农民患有帕金森氏症。他们归咎于致命的农药</title>
-      <link>https://www.mlive.com/news/2025/12/thousands-of-us-farmers-have-parkinsons-they-blame-a-deadly-pesticide.html</link>
-      <description>&lt;p&gt;农民患有帕金森氏症。这是数千起诉讼的主题，声称它与帕金森病有关。先正达强调，没有证据表明百草枯会导致帕金森病。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Thousands of U.S. farmers have Parkinson's. They blame a deadly pesticide&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46275079"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.mlive.com/news/2025/12/thousands-of-us-farmers-have-parkinsons-they-blame-a-deadly-pesticide.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>瓦解不良企业；更换坏工会老板</title>
+      <link>https://pluralistic.net/2025/12/15/class-war-labor-peace/</link>
+      <description>&lt;p&gt;值得庆幸的是，工会工人发现解决这个问题的办法是解雇他们的领导人，代之以激进、有原则的领导人，他们关心工人，而不仅仅是部分成员。 com/2023/04/07/deconstructed-union-dhl-teamsters-uaw/ 腐败的工会并不是激进分子近十年来瞄准的唯一破坏生活的机构。但解决工会腐败的办法是解雇工会老板，并用更好的人取而代之。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Break up bad companies; replace bad union bosses&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46277381"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://pluralistic.net/2025/12/15/class-war-labor-peace/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mathgradthrow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每 400 名美国公民中就有 1 人被诊断患有帕金森病，如果这个标题中的“千”意味着 5000 人，那么每 400 名农民中就有 1 人患有帕金森病。停止吧。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jtbayly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我是唯一一个认为将除草剂称为杀虫剂很奇怪的人吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SideburnsOfDoom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最近的一个相关故事：“科学家认为帕金森病存在于我们的基因中。”它可能在水中”&lt;p&gt;强调环境污染在导致帕金森氏症中的作用。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46216422"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46216422&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.wired.com&amp;#x2F;故事&amp;#x2F;科学家认为帕金森斯在我们的基因中可能在水中&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.wired.com&amp;#x2F;story&amp;#x2F;scientists-thought-parkinsons-wa...&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.is&amp;#x2F;ZvjZH" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.is&amp;#x2F;ZvjZH&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chasil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;YVt2I" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;YVt2I&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zug_zug:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;让我想起了《癌症巷》 [1].&lt;p&gt;作为对此进行过一些研究的人，我挖掘得越深入，我最终（不情愿地）得出的结论就越多：大公司确实是坏人。我有一种对两面都进行数学计算的本能，但并不是每个问题都有两个令人信服的方面...&lt;p&gt;他们显然是坏人的一个例子是他们付钱给社交媒体 astroturf 来在线捍卫农达农药 [2]。&lt;p&gt;1。 &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Cancer_Alley" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Cancer_Alley&lt;/a&gt;&lt;p&gt;2. &lt;一href="https:&amp;#x2F;&amp;#x2F;galiherlaw.com&amp;#x2F;media-manipulation-comes-out-during-monsanto-roundup-lawsuit&amp;#x2F;#:~:text=孟山都%2 0保留%20Watch%20列出%20on%20Pesticide%20朋友，包括%20记者%2C%20政客%2C%20和%20某些%20interest%20团体。” rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;galiherlaw.com&amp;#x2F;media-manipulation-comes-out-during-m...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;calebm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“随着越来越多的证据表明它的危害，它已经在世界上数十个国家被禁止，包括英国和它的产地中国。然而去年，其制造商先正达（中国政府旗下一家公司的子公司）继续在美国和其他尚未禁止百草枯的国家销售百草枯。”&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JumpCrisscross:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“批评者指出研究表明百草枯接触与帕金森氏症有关，而制造商则反驳说，这些研究都没有经过同行评审。”&lt;p&gt;是什么导致百草枯“在包括英国和中国在内的全球数十个国家被禁止”？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;malfist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;上周，数千人撞伤了左小脚趾。这也是农药的错吗？&lt;p&gt;这篇文章没有表明任何因果关系，也没有表明他们帕金森病的发病率较高或较低。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.mlive.com/news/2025/12/thousands-of-us-farmers-have-parkinsons-they-blame-a-deadly-pesticide.html</guid>
-      <pubDate>Mon, 15 Dec 2025 14:37:12 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46275079</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jdross:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很乐意向公共和半公共工会（例如教师工会、码头工人工会、警察工会和消防工会）发表讲话。他们能够通过阻止港口自动化、停止教学（通常兼作儿童日托）或阻止公共安全来劫持公众。&lt;p&gt;工会和管理层的制衡力量需要是客户，但客户在这里无法投反对票。这从根本上来说是不民主的。&lt;p&gt;最终会导致可怕的结果，比如通过阻止语音教学而导致识字率崩溃，这导致家长选择完全退出公共教育。工会需要有一个反馈机制才能发挥作用。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;daft_pink:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在美国，工会应该被用来倡导更高的工资，仅此而已。&lt;p&gt;OSHA 和美国高昂的诉讼成本使大多数工作场所相当安全。&lt;p&gt;工会一直未能倡导不切实际的福利方案，而大多数工人宁愿得到工资。&lt;p&gt;工会还通过施加限制运营灵活性的限制（例如反对自动化、规定工厂的最低运营时间等）来摧毁公司。&lt;p&gt;他们应该调整工会，以便他们只是主张增加总工资，而不是所有其他具有难以置信破坏性的事情。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;philipallstar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;工会并不完美。事实上，加入一个对工人不利的工会是有可能的：要么因为它软弱，要么腐败，要么被俘虏（或三者的某种组合）。&lt;p&gt;也有可能加入一个对客户不利的工会，因为他们巩固现状或通过阻止自动化来提高价格。&lt;p&gt;或者向那些反对你的政治捐款的工会[0]，这似乎特别令人恼火。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.msn.com&amp;#x2F;en-us&amp;#x2F;新闻&amp;#x2F;政治&amp;#x2F;教师工会倾倒了4000万个左翼团体-watchdog-finds&amp;#x2F;ar-AA1LbHku" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.msn.com&amp;#x2F;en-us&amp;#x2F;新闻&amp;#x2F;政治&amp;#x2F;教师工会倾注...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;krainboltgreene:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;我之所以提出这一点，是因为总罢工可能会在 2028 年五一劳动节 (5&amp;#x2F;1&amp;#x2F;28) 重新提上日程：&lt;p&gt;我作为一名公开的社会主义者、DSA 成员和工会的坚定倡导者这样说：不，不是。我爱死肖恩·费恩，我是他的工作和策略的超级粉丝，但是两年后美国总罢工的想法是什么？尽管对工会抱有极其积极的看法，但大多数美国人不会加入工会。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://pluralistic.net/2025/12/15/class-war-labor-peace/</guid>
+      <pubDate>Mon, 15 Dec 2025 17:21:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46277381</comments>
     </item>
     <item>
-      <title>美国最大的回收项目，旨在延长弗吉尼亚州居民垃圾填埋场的寿命</title>
-      <link>https://ampsortation.com/articles/largest-us-recycling-project-spsa</link>
-      <description>&lt;p&gt;SPSA 自己的废物特征研究发现，汉普顿路废物流中的可回收物（主要是塑料和金属）比例很高，即使在有路边回收的社区也是如此。 AMP 设计、建造和运营先进的、具有成本竞争力的设施来处理单流回收和城市固体废物。在北美地区部署了三个全面的设施和 400 多个人工智能系统。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Largest U.S. recycling project to extend landfill life for Virginia residents&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46273344"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://ampsortation.com/articles/largest-us-recycling-project-spsa'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>50 美元的 PlanetScale Metal 是 Postgres 的通用版本</title>
+      <link>https://planetscale.com/blog/50-dollar-planetscale-metal-is-ga-for-postgres</link>
+      <description>&lt;p&gt;我们将 RAM 下限从四种大小的 16GiB 一直降低到 1GiB，并将这些容量与从 10GB 到 1GB 的八种存储容量配对。 CPU、RAM 和存储解耦 此版本是实现 CPU 和 RAM 与存储容量解耦的第一步，同时保留了 PlanetScale Metal 的所有优势。自从我们推出 PlanetScale Metal 以来，客户强烈要求两件事：降低起始价格，我们今天将其从每月 589 美元降至每月 50 美元。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; $50 PlanetScale Metal Is GA for Postgres&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46276378"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://planetscale.com/blog/50-dollar-planetscale-metal-is-ga-for-postgres'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;infecto:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;回收就是这样一个骗局。我希望我们作为一个国家（美国）能够接受这样的事实：大多数产品的回收并不经济。当你知道它会被扔掉时，它实际上可以推动消费。在美国，唯一值得回收的东西是金属。剩下的包括玻璃都是垃圾。大多数人没有意识到，他们扔进回收站的玻璃通常会被送往垃圾填埋场，因为他们住的地方离玻璃制造商太远，使用起来不经济。&lt;p&gt;我这么说并不是建议我们不要考虑消费，而是一种虚假的感觉，认为玻璃会被送往垃圾填埋场以外的其他地方。我很好奇在其他国家回收利用到底有多经济。我最喜欢的是日本，那里的一些地区会焚烧某些质量的塑料以获取能源。我认为这是重用它的有用方法。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;irishcoffee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;啊，回收的神话。&lt;p&gt;我想知道下一次回收运动会是什么？废弃电动汽车电池？太阳能电池板失效了？&lt;p&gt;下一次迭代的结果如何？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;everdrive:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;塑料回收比无用更糟糕：由于过滤需要，它是供水中微塑料的最大贡献者之一。这是最重要的因素：任何可回收塑料最多都会再进行 1-2 轮，考虑到塑料使用的速度，这意味着回收没有取得任何成果。此外，大多数塑料无法回收，一些第三方国家只是将其倾倒到海洋中，其他国家只是将其运往垃圾填埋场。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;josefritzishere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;使用昂贵且浪费的人工智能来假装塑料回收是有意义的……这是营销废话。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;comrade1234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在苏黎世，他们对自己的回收物、有机垃圾和家庭垃圾进行分类非常严格。如此严格以至于人们因做得不当而被罚款。还有一些报纸文章的格式是报道某人收到罚款，以及他们现在多么感激他们知道了正确的回收方法（显然是种草 - 我在初中时不得不写一篇这样的文章，因为我用学校电话拨打 911 询问时间）。&lt;p&gt;但我总是想知道的是，最终我们节省了多少工作，而不是在中心地点进行。我的意思是，即使有这些严格的规则，他们仍然需要对人们一开始没有正确分类的东西进行分类。那么为什么不把它们全部排序呢？ （生物废物除外，因为这可能会污染回收）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;skywhopper:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一份关于两个行业的营销新闻稿，这两个行业的说法并不是特别值得信赖。我不会在任何声明中出卖任何股票。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;InMice:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;回收幻想和不断增加的塑料产量齐头并进。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://ampsortation.com/articles/largest-us-recycling-project-spsa</guid>
-      <pubDate>Mon, 15 Dec 2025 11:58:35 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46273344</comments>
+&lt;p&gt;&lt;strong&gt;Top 17 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wessorh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我有一段时间没读HN了，这似乎只是一个广告，是不是规则改变了，新产品的广告像电影植入式广告一样推广？&lt;p&gt;询问喜欢这个空间的朋友&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;boundlessdreamz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;题外话：Postgres 18 什么时候在 Metal 上提供？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wackget:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果 Planetscale 的任何人正在阅读本文，请知道我讨厌您对网站所做的事情。我之前曾将其添加为书签，作为优秀、可用的网站设计的示例。大约一年前，它变成了一场明文噩梦。当我第一次看到新设计时，我真的以为 CSS 文件无法在我的浏览器中加载。这太糟糕了。&lt;p&gt;*编辑：*如果您禁用了 JavaScript 或 XHR，它也无法加载其他页面。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Onavo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么如果出现 NVME 故障会发生什么？是否有自动故障转移和恢复？&lt;p&gt;跨数据中心节点如何工作？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bigTMZfan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些较小的实例是否会为 Vitess &amp;#x2F; 提供？ MySQL 兼容用户？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;everfrustrated:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不“金属”推断你自己得到了整个盒子？很好奇我的定义是否与这里的其他人不同，因为我不明白什么是“金属”？关于与其他人共享实例。&lt;p&gt;您仍在共享 nvme IO、CPU、内存带宽等。没有虚拟机并不是真正的重点。 （编辑：并且可以使用具有直接连接的 nvme 的非金属 aws 实例来完成）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;taw1285:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于经验不足的开发人员，我应该如何考虑在 Amazon Aurora 和 Amazon Aurora 之间进行选择？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vivzkestrel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这与 RDS 产品相比如何？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;unbelievably:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;50 美元就能获得八分之一的 vCPU、1GB RAM 和 10GB SSD？？？坦白说，这就是公路抢劫。更不用说可笑的带宽了。 Hetzner 将为您提供 16 个 vCPU、32GB RAM 和 640GB SSD，价格低于此价格。我们在这里讨论的是价值的数量级差异。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;buster:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;听起来很棒，但我宁愿能够在本地运行数据库并在开发中使用与生产中相同的数据库。这可能吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dodomodo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这可能有点偏离主题，但我很难理解移动设备上网站的布局，不清楚什么是可点击的，什么是不可点击的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anoojb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也许是一个天真的问题 - 但为什么有人会使用专用数据库提供商并从另一个云提供商的应用程序服务进行连接？ ...而不是使用同一提供商的数据库 + 应用程序服务产品？&lt;p&gt;这不会在其他问题中引入额外的延迟吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;orphea:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;&lt;前&gt;&lt;代码&gt;&gt; 50 美元
+&lt;/code&gt;&lt;/pre&gt;
+看来只有美国了选择欧洲+$10，澳大利亚+$20。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;orliesaurus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我也对这个版本感到兴奋......&lt;p&gt;据我所知，“Metal”产品在直接连接 NVMe 而不是网络连接存储的节点上运行。这意味着每个客户的 IOPS 没有上限——他们实际上将其营销为“无限 I&amp;#x2F;O”。因为你在磁盘饱和之前就已经使用了 CPU。新的 50 M 级集群本质上是 AWS 和 GCP 中具有可调节 CPU 和 RAM 的节点的较小版本。&lt;p&gt;RE：EC2 形状，它不是共享 EBS 卷，而是具有本地存储的专用实例。但您仍然需要监控容量，因为存储不会自动扩展。&lt;p&gt;此外，这个定价使独立项目可以使用高吞吐量的 Postgres，这非常简洁。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ngalstyan4:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;听起来很酷！&lt;p&gt;很想知道底层的 aws ec2 实例是什么。&lt;p&gt;每个数据库都位于专用实例上吗？&lt;p&gt;如果不是，是否有每个客户的 iops 限制？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;samlambert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;真的很高兴更多的人能够使用 Metal。如果您有任何疑问，请告诉我。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;skeptrune:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;让我们走吧！对于独立黑客来说这是难以置信的交易。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://planetscale.com/blog/50-dollar-planetscale-metal-is-ga-for-postgres</guid>
+      <pubDate>Mon, 15 Dec 2025 16:11:37 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46276378</comments>
     </item>
     <item>
-      <title>麻省理工学院缺席 2026 年学期</title>
-      <link>https://missing.csail.mit.edu/2026/</link>
-      <description>&lt;p&gt;2026 年讲座·缺课 2026 年讲座 1/12：课程概述 + Shell 简介 1/13：命令行环境 1/14：开发环境和工具 1/15：调试和分析 1/16：版本控制 (Git) 1/20：打包和运输代码 1/21：代码质量和持续集成 1/22：超越代码 1/23：问答。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; MIT Missing Semester 2026&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46273762"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://missing.csail.mit.edu/2026/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Show HN：1 亿个 splats，整个城镇，在 M2 MacBook Air 中渲染</title>
+      <link>https://twitter.com/AKurian001/status/1986979144014701026</link>
+      <description>&lt;p&gt;我们检测到该浏览器中禁用了 JavaScript。请启用 JavaScript 或切换到支持的浏览器以继续使用 x。服务条款 隐私政策 Cookie 政策 版本说明 广告信息 © 2025 X Corp.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: 100 Million splats, a whole town, rendered in M2 MacBook Air&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46277477"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://twitter.com/AKurian001/status/1986979144014701026'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ternus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，MIT 仍然如此。通常，没有教授编程本身的课程：如果你需要的话，IAP（一月独立活动期）上有（通常是志愿者讲授的）课程，这将试图填补空白 - 但你仍然需要自己学习。很久以前我用 C 语言教过含咖啡因的速成课程。美好时光。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ghaff:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在顶尖的 STEM 学校（可能尤其是在 CS 领域），假设学生对任何领域都有一定的基础知识，然后把他们扔进池子深处，然后自己弄清楚实用性，这之间肯定存在一种紧张关系。&lt;p&gt;我曾经为了好玩而参加过麻省理工学院的一门介绍性 CS MOOC。非常好。但如果你还不了解 Python（或者更广泛地了解如何编程），那么或多或少你需要自己学习 Python。除了某些艺术领域之外，这种情况在许多其他学科中并没有真正发生。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kratom_sandwich:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常棒的课程，我鼓励大家查看之前的迭代（以及 HN 上的相应讨论）&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://missing.csail.mit.edu/2026/</guid>
-      <pubDate>Mon, 15 Dec 2025 12:45:18 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46273762</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tyleo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;MacBook 的性能非常疯狂，其他一切都落后了。我自己做了一个编译测试比较：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.tyleo.com&amp;#x2F;blog&amp;#x2F;compiler-performance-on-2025-devices" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.tyleo.com&amp;#x2F;blog&amp;#x2F;compiler-performance-on-2025-devi...&lt;/a&gt;&lt;p&gt;在我看来，如果英特尔无法赶上，苹果在未来几十年内取代 Windows 作为游戏平台也就不足为奇了。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://twitter.com/AKurian001/status/1986979144014701026</guid>
+      <pubDate>Mon, 15 Dec 2025 17:27:03 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46277477</comments>
+    </item>
+    <item>
+      <title>我们对羊群进行监视：让他们表现不同[视频]</title>
+      <link>https://www.youtube.com/watch?v=W420BOqga_s</link>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=W420BOqga_s</guid>
+      <pubDate>Mon, 15 Dec 2025 14:57:17 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46275328</comments>
+    </item>
+    <item>
+      <title>三星可能很快停止 SATA SSD 生产</title>
+      <link>https://www.techradar.com/computing/storage-backup/looking-for-a-cheap-ssd-dont-wait-samsung-could-stop-producing-budget-models-soon</link>
+      <description>&lt;p&gt;三星为何要采取这一举措？最佳整体：WD_Black SN81002。最佳预算：Orico O70003。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Samsung may end SATA SSD production soon&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46275258"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.techradar.com/computing/storage-backup/looking-for-a-cheap-ssd-dont-wait-samsung-could-stop-producing-budget-models-soon'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pjdesno:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我能想到的存储市场：
+1. 个人计算机
+2. 爱好者NAS，可能会在高端跨界进入专业音视频市场
+3、云
+4. 企业&lt;p&gt;#1 全部为 NVMe。它以笔记本电脑为主，而台式机（仍占出货量的 30% 左右）可能处于性能范围的高端。&lt;p&gt;#2 不是一个大市场，他们能得到什么就拿什么。与 #3 一样，大多数都可以插入 SAS 驱动器而不是 SATA。&lt;p&gt;#3 - 容量驱动器存在企业市场，其每台设备的成本开销比 NVMe 更低 - 构建一个可容纳数十个 NVMe 驱动器的盒子非常昂贵 - 但 SAS 的速度是 SATA 的两倍，并且您可以重复使用已经用于 SATA 的适配器和机械装置。 （几乎所有非主板 SATA 适配器都已经是 SAS&amp;#x2F;SATA，并且这种情况已经持续了十年）&lt;p&gt;#4 - 云使用容量 HDD 以及性能和容量 NVMe。他们购买的 HDD 容量可能占今天销售的 HDD 容量的 50% 以上；我不确定他们购买的 SSD 市场份额有多大。供应商生产大型云提供商想要的任何东西；我认为这一公告意味着 SATA SSD 不在他们的列表中。&lt;p&gt;我猜测 SATA 将以两种形式长期留在市场上：
+- 垃圾 SSD，对于 HN 和其他地方的顽固分子来说:-)
+- HDD，因为在可预见的未来，它们不需要更高的 SAS 传输速率，而对于驱动器供应商来说，它可能只是在同一块芯片上加载不同的固件。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alsetmusic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我已经只购买三星大约七八年了。我在 2022 年购买了一个四托架 M.2 Thunderbolt 4 RAID 机箱，我对它非常满意。它绝对会耗尽我拥有的所有其他东西（除了我的内部 SSD）。&lt;p&gt;过去几个月的科技新闻非常糟糕。我的书呆子爱好已经没有什么值得期待的了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;up2isomorphism:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人们同时抱怨数据传输速度慢，但他们似乎很乐意为更少的 iops 和带宽支付 10 倍的 AWS 费用。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gary_0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道此举是否与 SATA SSD 成为旧 PC 的常见升级有关，但既然 Windows 10 已停产，Windows 11 将拒绝在其中大多数设备上运行，那么这些 SSD 就会被扔进垃圾桶吗？ （我认为只有一小部分人会转而使用 Linux。）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;1970-01-01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道这是否是SATA时代终结的开始。一旦一个主要参与者离开，其他人肯定会跟随，很快质量就不再重要，最后技术萎缩。我不想被迫通过 NVMe 和一系列连接器适配器连接我的旋转盘片。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jajuuka:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;SATA SSD 处于一个奇怪的领域。对于大型存储池来说，HDD 更便宜、更可靠。 NVME 无处不在，可以提供快速的速度，如果您需要，甚至可以更快。 SATA SSD 是最佳选择的用例并不多。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esjeon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个耻辱。我真的很喜欢他们的 RAID0 SATA 8TB QLC SSD，主要用于读取只读数据。看来我无法以同样的方式垂直扩展我的系统。 :&amp;#x2F;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;8cvor6j844qw_d6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果三星（也许）结束 SSD 生产，而 Crucial 现有消费业务，那么 SSD 产品的下一个最佳替代品是什么？&lt;p&gt;我认为三星是高质量 SSD 产品的事实上的选择。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tart-lemonade:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不能说我很惊讶，但我很失望。 SATA SSD 市场基本上已经变成了低质量闪存和控制器的倾销场，870s 是 Crucial 停产 MX500 后唯一仍在生产的始终如一的优质硬盘。&lt;p&gt;这是一个时代的结束。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Neil44:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;三星生产快速且昂贵的存储，但即使是廉价的存储也可以最大限度地利用 SATA，因此三星试图在日益缩小的 SATA 空间中竞争是没有意义的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zb3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Fsck这个卡特尔..我希望中国能够填补这些空白并帮助恢复正常价格。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xyse53:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我注意到主板和机箱没有很多合理的家用 sb m.2 NVME NAS 选项。SATA SSD 似乎仍然是 5 到 8 个驱动器系统（启动磁盘 + 4+ raid6）的选择。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;早些时候：&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46266070"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46266070&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.techradar.com/computing/storage-backup/looking-for-a-cheap-ssd-dont-wait-samsung-could-stop-producing-budget-models-soon</guid>
+      <pubDate>Mon, 15 Dec 2025 14:51:36 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46275258</comments>
     </item>
   </channel>
 </rss>
