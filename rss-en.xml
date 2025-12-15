@@ -6,193 +6,30 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Mon, 15 Dec 2025 02:05:31 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Dec 2025 04:07:17 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>Anthropic Outage for Opus 4.5 and Sonnet 4/4.5 across all services</title>
-      <link>https://status.claude.com/incidents/9g6qpr72ttbr</link>
-      <description>&lt;p&gt;Posted Dec 14, 2025 - 21:31 UTC This incident affected: claude. com), Claude API (api. com), and Claude Code.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46267385"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://status.claude.com/incidents/9g6qpr72ttbr'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 25 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;flowinghorse:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Actually when the outage happened, my first action was to check Cloudflare status.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;llmthrow0827:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I used Haiku with Claude Code during the outage, and was surprised at how well it did. I&amp;#x27;m going to try mixing it in more to save usage credits.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TechDebtDevin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;They will say Claude hacked them and escaped its environment to scare normies or something dumb like they always be saying.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aj7:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Isn’t that an AWS outage?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Jsuh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;opus 4.5 is the truth&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jcims:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Anyone know if Claude via Amazon bedrock was impacted?&lt;p&gt;AFAIK it shouldn’t have been.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;frankdenbow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I got lucky and this was in my timeout window&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rvz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Anthropic is surpassing GitHub on unreliability.&lt;p&gt;Looking forward to the post-mortem.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;m_ke:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Was it just me or did Opus start producing incredibly long responses before the crash. I was asking basic questions and it wouldn&amp;#x27;t stop trying to spit out full codebases worth of unrelated code. For some very simple questions about database schemas it ended up compacting twice on a 3 message conversation.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;6r17:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;It seems resolved now (per the status-page) - i experienced a moment where the agent got stuck in the same error loop just to pop the result this time. Makes me wonder if there has been some kind of rule applied in order to automatically detect such failure occurring again - quiet inspiring work&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;matt3210:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;When vibes coders do the infra&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;__0x01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;Engineering Room, panning over a bunch of hot Blackwells&lt;/i&gt;&lt;p&gt;&amp;quot;I can&amp;#x27;t change the laws of physics!&amp;quot;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WhyOhWhyQ:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Didn&amp;#x27;t notice. Guess I&amp;#x27;m legit.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;palcu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Hello, I&amp;#x27;m one of the engineers who worked on the incident. We have mitigated the incident as of 14:43 PT &amp;#x2F; 22:43 UTC. Sorry for the trouble.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sebastiennight:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;In the Claude.ai chat, this was announced to me as&lt;p&gt;&lt;pre&gt;&lt;code&gt;    &amp;quot;You have reached the messages quota for your account. It will reset in 2 hours, or you can upgrade now&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-Either I have perfect timing for reaching my quota limits, or some product monetization manager deserves a raise.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;russellthehippo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Anthropic is very focused on AI safety. It makes LLMs safe by shutting down anyone from using them&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;triwats:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I had an hour to vibe tonight and it looks like it may have gone.&lt;p&gt;Spent it in bloody Figma instead :(&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dinkleberg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Props to them for actually updating their status page as issues are happening rather than hours later. I was working with claude code and hit an API error, checked the status page and sure enough there was an outage.&lt;p&gt;This should be a given for any service that others rely on, but sadly this is seldom the case.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;irishcoffee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I’m imagining a steampunk dystopia in 50 years: “all world production stopped, LLM hosting went down. The market is in free-fall. Sam, are you there?”&lt;p&gt;Man that cracks me up.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;theropost:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Just came back online here&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;michelsedgh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;If they shut down opus 4.5 I&amp;#x27;ll cry&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abigail95:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;it&amp;#x27;s monday morning i&amp;#x27;m going back to bed&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;termos:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;canivibe.ai&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;canivibe.ai&amp;#x2F;&lt;/a&gt;&lt;p&gt;So we can maybe vibe, depending what service we use.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;asasidh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;quot;We have identified that the outage is related to Sonnet 4.0, Sonnet 4.5, and Opus 4.5.&amp;quot;&lt;p&gt;What else is people using ? Haiku 4.5 ?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delaminator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;weird because I am using Sonnet right now. I guess my time is limited&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://status.claude.com/incidents/9g6qpr72ttbr</guid>
-      <pubDate>Sun, 14 Dec 2025 21:53:13 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46267385</comments>
+      <title>SoundCloud just banned VPN access</title>
+      <link>https://old.reddit.com/r/SoundCloudMusic/comments/1pltd19/soundcloud_just_banned_vpn_access/</link>
+      <guid isPermaLink="true">https://old.reddit.com/r/SoundCloudMusic/comments/1pltd19/soundcloud_just_banned_vpn_access/</guid>
+      <pubDate>Mon, 15 Dec 2025 02:51:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46269891</comments>
     </item>
     <item>
-      <title>CapROS: The Capability-Based Reliable Operating System</title>
-      <link>https://www.capros.org/</link>
-      <description>&lt;p&gt;CapROS is the continuation of the EROS project. The CapROS project is hosted on GitHub. We thank GitHub for its support of open source software, including this project.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46268869"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.capros.org/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mikewarot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Why is it that every Capability based system seems to be a toolkit for running a single program instead of an OS ready for daily use?  Is it just me?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.capros.org/</guid>
-      <pubDate>Mon, 15 Dec 2025 00:39:31 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46268869</comments>
-    </item>
-    <item>
-      <title>Frances Elizabeth Allen: The Woman Who Made Code Run Fast – and Was Forgotten</title>
-      <link>https://voxmeditantis.com/2025/12/13/frances-elizabeth-allen-the-woman-who-made-code-run-fast-and-was-forgotten-because-it-worked/</link>
-      <description>&lt;p&gt;They needed programmers. That transformation is key. What fascinated you about that process.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46268809"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://voxmeditantis.com/2025/12/13/frances-elizabeth-allen-the-woman-who-made-code-run-fast-and-was-forgotten-because-it-worked/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmclnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Quite a person, glad to see she was won the Turing Award before she passed.  But she should have recognized earlier in her life.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;XplusFinance:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;perfect&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://voxmeditantis.com/2025/12/13/frances-elizabeth-allen-the-woman-who-made-code-run-fast-and-was-forgotten-because-it-worked/</guid>
-      <pubDate>Mon, 15 Dec 2025 00:30:25 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46268809</comments>
-    </item>
-    <item>
-      <title>History of Declarative Programming</title>
-      <link>https://shenlanguage.org/TBoS/tbos_15.html</link>
-      <description>&lt;p&gt;The Book of Shen 4th Edition The Book of Shen 4th Edition Home Learn Download News Group Chatroom OS Wiki About Us Previous Next Up Want to advertise on this page. Go to the Contact link. Built by Shen Technology (c) Mark Tarver, June 2025.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46267947"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://shenlanguage.org/TBoS/tbos_15.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Mom and daughter find stranger in trunk of Waymo</title>
+      <link>https://abc7.com/post/los-angeles-viral-video-mom-daughter-find-stranger-trunk-waymo-macarthur-park/18286019/</link>
+      <description>&lt;p&gt;" the woman is heard asking the stranger. This experience was unacceptable, and we are actively implementing changes to address this. " Waymo said their rider support team assisted the rider during the incident, who told them they were OK.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46269296"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://abc7.com/post/los-angeles-viral-video-mom-daughter-find-stranger-trunk-waymo-macarthur-park/18286019/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pyrolistical:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Oh god. Where is the pdf. This format is horrible to read from&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;veqq:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The Shen project is quite fascinating - and tedious to work with, as evidenced by this book of images across different pages etc.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rtpg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Very interesting historical document, though I don&amp;#x27;t have that much confidence in the precision of the explanation of the terms.&lt;p&gt;Related to this: does anyone know if there&amp;#x27;s any document that delves into how Church landed on Church numerals in particular? I get how they work, etc, but at least the papers I saw from him seem to just drop the definition out of thin air.&lt;p&gt;Were church numerals capturing some canonical representation of naturals in logic that was just known in the domain at the time? Are there any notes or the like that provide more insight?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://shenlanguage.org/TBoS/tbos_15.html</guid>
-      <pubDate>Sun, 14 Dec 2025 22:46:01 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46267947</comments>
-    </item>
-    <item>
-      <title>Robot Vacuum Roomba Maker Files for Bankruptcy After 35 Years</title>
-      <link>https://news.bloomberglaw.com/bankruptcy-law/robot-vacuum-roomba-maker-files-for-bankruptcy-after-35-years</link>
-      <description>&lt;p&gt;filed for bankruptcy after reaching a restructuring support agreement that will hand control of the consumer robot maker to Shenzhen PICEA Robotics Co. Under the restructuring, vacuum cleaner maker Shenzhen PICEA will receive the entire equity stake in the reorganized company. Learn more Already a subscriber.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46268854"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.bloomberglaw.com/bankruptcy-law/robot-vacuum-roomba-maker-files-for-bankruptcy-after-35-years'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 14 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;olivierlacan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;If you&amp;#x27;ve used any non-iRobot vacuum alternatives in the last 5 years and ever owned a Roomba in the past there should be nothing surprising about this headline.&lt;p&gt;It&amp;#x27;s shocking to me how good Roborock mop-vacuums are for example, Eufy vacuums are nice as well. They still run into unavoidable issues, but they&amp;#x27;re: much quieter even at their highest setting; show you how they map out the space; allow you to easily customize routes or focus on specific rooms; do a shockingly good job at self-emptying; and best of all you don&amp;#x27;t have to rescue them from the exact same sliding door track every single time you run them.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kayson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Does anyone have recommendations for a robot vacuum that can handle dog hair and won&amp;#x27;t sell my floorplan to advertisers?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anonu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;will be replaced by humanoid robots soon&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sudosysgen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;iRobot&amp;#x27;s failure is that they made a bet to use CV instead of Lidar for their mapping robots for a long time until it was too late. That made their affordable, non-mapping robots far far worse than only slightly higher priced lidar robots, while their mapping robots were too expensive for mass appeal and were still worse at navigation than up-market lidar based robots. Ultimately they were simply outcompeted.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kingstnap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I wonder what happens to the app and cloud functionality.&lt;p&gt;&amp;gt; Under the restructuring, vacuum cleaner maker Shenzhen PICEA will receive the entire equity stake in the reorganized company. The company’s common stock will be wiped out under the proposed Chapter 11 plan.&lt;p&gt;Hopefully they keep the lights on.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;IgorPartola:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I had a Roomba about 10 years ago. It was OK but required a lot of “handholding” to not run over cords, kids toys, etc. It just was not really worth it to use it in an environment where you can’t keep everything nailed down and off the floor at all times. Relocated it to a basement level where we had much more empty but sill finished space. The cat angrily pooped just outside her litter box and the Roomba ran right over it and shredded them turds all over the floor. Since then it has lived in my mind as the dumbest smart product.&lt;p&gt;The real problem for me has been that I want something to straighten out my living spaces, not to vacuum the floors. Vacuuming is quick and a good vacuum cleaner (old school bagged kind, not a silly filter one), will do a far better job than a little battery powered gizmo anyways. But a robot capable of picking up the toys my kids like to leave out, or bringing abandoned coffee mugs to the sink (can you tell I live with multiple adults and children?) would be worth quite a bit to me. A robot capable of washing my dishes and putting away my laundry would be worth more. One capable of preparing meals would be worth more to me than a car.&lt;p&gt;Of course they would have to be 100% open source with easily replaceable and repairable components, which is where I think most of these types of projects go wrong. I remember seeing the Chefee demo and it was very cool but the main problem is that you aren’t buying a product, you are investing in the idea that the company behind it won’t go belly up in two years and brick your $60,000 chef&amp;#x2F;cabinet&amp;#x2F;fridge thing and that it won’t sell itself to e.g. Google which will cram it full of ads and spyware.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yieldcrv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Makes sense, 20 years of needing to have no rugs, cords, toys on the floor, masquerading as a cleaner&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xqcgrek2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;robot vacuums never made economic sense over a maid service&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dc3k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;7DyNA" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;7DyNA&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;So the FTC blocked Amazon&amp;#x27;s acquisition of iRobot in January 2024 and now China gains control of the assists for a bargain? Another stupid application of antitrust.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SoftTalker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Now all their customer data will be sold to the highest bidder.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Non-paywalled article: &lt;a href="https:&amp;#x2F;&amp;#x2F;www.bloomberg.com&amp;#x2F;news&amp;#x2F;articles&amp;#x2F;2025-12-15&amp;#x2F;robot-vacuum-roomba-maker-files-for-bankruptcy-after-35-years" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.bloomberg.com&amp;#x2F;news&amp;#x2F;articles&amp;#x2F;2025-12-15&amp;#x2F;robot-vac...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hurturue:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;They outsourced production to China thinking that they can just do the marketing in US.&lt;p&gt;Now they learnt that Chinese can do marketing too.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Sprotch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;:(&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.bloomberglaw.com/bankruptcy-law/robot-vacuum-roomba-maker-files-for-bankruptcy-after-35-years</guid>
-      <pubDate>Mon, 15 Dec 2025 00:36:44 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46268854</comments>
-    </item>
-    <item>
-      <title>Microsoft Copilot AI Comes to LG TVs, and Can't Be Deleted</title>
-      <link>https://www.techpowerup.com/344075/microsoft-copilot-ai-comes-to-lg-tvs-and-cant-be-deleted</link>
-      <description>&lt;p&gt;Sources: Reddit, via VideoCardz Related News Tags: AI Copilot LG Linux Microsoft OS Windows Windows 11 Aug 18th 2025 Microsoft Windows 11 24H2 Update May Cause SSD Failures (278) Oct 21st 2025 Windows 11 25H2 October Update Bug Renders Recovery Environment Unusable (160) Oct 17th 2025 Microsoft Breaks Localhost with Windows 11 October Update, Users Forced to Revert (105) Oct 1st 2025 Microsoft Releases Windows 11 25H2. With Zero New Features. (104) Oct 7th 2025 Microsoft Blocks Online Account Bypass on Windows 11 (157) Aug 19th 2025 Phison Responds to Windows 11 24H2 Update Crashing SSDs (97) Oct 14th 2025 End of an Era: Windows 10 Officially Reaches End of Life (100) May 6th 2025 Microsoft Forces Automatic Windows 11 24H2 Update on Pro and Home PCs (121) Oct 23rd 2025 Copilot for Gaming Screenshots Your Games, Uploads Them to MS, Enabled by Default (71) Jun 30th 2025 Windows 12 Delayed as Microsoft Prepares Windows 11 25H2 Update (98) Add your own comment 54 Comments on Microsoft Copilot AI Comes to LG TVs, and Can't Be Deleted #1 This is not going to fly for long in the EU and there will be a complaint soon, to enable a toggle to uninstall this app.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46268844"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.techpowerup.com/344075/microsoft-copilot-ai-comes-to-lg-tvs-and-cant-be-deleted'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[dupe] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46255335"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46255335&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blrbtrp19:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Old Microsoft learned from the Clippy debacle, and more recently from the Windows 8.1 modern UI debacle.
-I&amp;#x27;m not sure new Microsoft will learn this time...&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stephen_g:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Makes me more and more glad that I never let my TV on any network and only use it as a display for Apple TV, the Blu-Ray player, and playing media from USB drives...&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cebert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I don’t think Microsoft realizes that this is not a positive for their brand.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.techpowerup.com/344075/microsoft-copilot-ai-comes-to-lg-tvs-and-cant-be-deleted</guid>
-      <pubDate>Mon, 15 Dec 2025 00:35:41 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46268844</comments>
-    </item>
-    <item>
-      <title>DARPA GO: Generative Optogenetics</title>
-      <link>https://www.darpa.mil/research/programs/go</link>
-      <description>&lt;p&gt;The Generative Optogenetics (GO) program seeks to overcome these challenges by pioneering a revolutionary approach: Harnessing the power of light to direct the synthesis of DNA and RNA directly within living cells. EventGenerative Optogenetics Proposers WorkshopJan. 5, 2026Proposers Workshop Office Biological Technologies Office Program lead Matthew Pava Program Manager Read bio.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46268153"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.darpa.mil/research/programs/go'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_spduchamp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Did I miss a Black Mirror episode?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.darpa.mil/research/programs/go</guid>
-      <pubDate>Sun, 14 Dec 2025 23:13:39 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46268153</comments>
-    </item>
-    <item>
-      <title>Advent of Swift</title>
-      <link>https://leahneukirchen.org/blog/archive/2025/12/advent-of-swift.html</link>
-      <description>&lt;p&gt;Unfortunately, many modern languages today don’t support this properly. split(whereSeparator:), which many other standard libraries lack). This is quite convenient when writing code (e.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46266312"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://leahneukirchen.org/blog/archive/2025/12/advent-of-swift.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;antfarm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I did Advent of Code 2024 in Swift in a functional style, without using mutable state, custom data types (i.e. classes or structs) or loops.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;antfarm&amp;#x2F;AdventOfCode2024" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;antfarm&amp;#x2F;AdventOfCode2024&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisMarshallNY:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I&amp;#x27;ve been writing Swift daily, since the day it was announced, and have shipped a number of apps, written in it.&lt;p&gt;I have learned to like the language. It&amp;#x27;s not perfect, but comes closer than most. I&amp;#x27;ve written in a lot of languages, over the years.&lt;p&gt;My other language is PHP, which I use for my backend work. I&amp;#x27;ve probably been writing that for over twenty years, but I still don&amp;#x27;t like the language.&lt;p&gt;As I was learning Swift, I started this series of posts[0]. It&amp;#x27;s still ongoing, but I haven&amp;#x27;t added anything in a while, and the language has progressed, since the earlier posts.&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;littlegreenviper.com&amp;#x2F;series&amp;#x2F;swiftwater&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;littlegreenviper.com&amp;#x2F;series&amp;#x2F;swiftwater&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChefboyOG:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I&amp;#x27;m curious, in what niches are people using Swift for new applications these days? I&amp;#x27;ve enjoyed working with Swift in the past (albeit in very limited capacities), but I haven&amp;#x27;t personally come across any Swift-based initiatives in a while. I had high hopes for Swift for TensorFlow, but it was ultimately killed off.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kris-s:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;The string processing is powerful, but inconvenient when you want to do things like indexing by offsets or ranges, due to Unicode semantics. (This is probably a good thing in general.)&lt;p&gt;This is being too generous to Swift&amp;#x27;s poorly designed String API. The author gets into it immediately after the quote with an Array&amp;lt;Character&amp;gt; workaround, regex issues, and later Substring pain. It&amp;#x27;s not a fatal flaw, a language backed by one of the richest companies in the world can have few fatal flaws, but AoC in particular shines a light on it.&lt;p&gt;I really like Swift as an application&amp;#x2F;games language but I think it unlikely it can ever escape that domain.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://leahneukirchen.org/blog/archive/2025/12/advent-of-swift.html</guid>
-      <pubDate>Sun, 14 Dec 2025 20:04:11 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46266312</comments>
-    </item>
-    <item>
-      <title>Claude CLI deleted my home directory Wiped my whole Mac</title>
-      <link>https://old.reddit.com/r/ClaudeAI/comments/1pgxckk/claude_cli_deleted_my_entire_home_directory_wiped/</link>
-      <guid isPermaLink="true">https://old.reddit.com/r/ClaudeAI/comments/1pgxckk/claude_cli_deleted_my_entire_home_directory_wiped/</guid>
-      <pubDate>Sun, 14 Dec 2025 23:23:00 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46268222</comments>
-    </item>
-    <item>
-      <title>Our emotional pain became a product</title>
-      <link>https://www.theguardian.com/us-news/ng-interactive/2025/dec/14/trauma-mental-health</link>
-      <description>&lt;p&gt;Today, an entire industry has spawned around the idea that everything is trauma. (One author calls trauma “an out-of-control epidemic”, transmissible among family and friends. The book argued that traumatic memories are often not explicit.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46268469"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.theguardian.com/us-news/ng-interactive/2025/dec/14/trauma-mental-health'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;derbOac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Although I think the phenomenon they write about is real, I have difficulty sympathizing with these types of essay because I see them as causing more harm than good.&lt;p&gt;Gatekeeping trauma with a broad brush is never good in my mind. Calling out specific performative or attention-seeking episodes? Sure. But it doesn&amp;#x27;t need to go beyond that, in my opinion.&lt;p&gt;I also think life is generally hard, and I don&amp;#x27;t begrudge anyone trying to get help in whatever form for whatever thing they might need. If you have a headache, maybe you reach for an analgesic. You don&amp;#x27;t shame people for reaching for analgesics because some others are in truly need of global anesthetic.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aeglaecia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;literally everyone and everything has had the shit traumatized out of it on a daily basis since forever , if anything this overpathologization seems to be increasing trauma and hypersensitization&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mzajc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.is&amp;#x2F;rJMHJ" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.is&amp;#x2F;rJMHJ&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.theguardian.com/us-news/ng-interactive/2025/dec/14/trauma-mental-health</guid>
-      <pubDate>Sun, 14 Dec 2025 23:50:32 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46268469</comments>
-    </item>
-    <item>
-      <title>SPhotonix – 360TB into 5-inch glass disc with femtosecond laser</title>
-      <link>https://www.tomshardware.com/pc-components/storage/sphotonix-pushes-5d-glass-storage-toward-data-center-pilots</link>
-      <description>&lt;p&gt;6 Comments Comment from the forums Can't we just blast data to space and have it bounce around forever (for whenever we need it). Reply The problem with this kind of tech always about the Technological Obsolescence Reply Gururu said:Can't we just blast data to space and have it bounce around forever (for whenever we need it). jpg Reply Gururu said:Can't we just blast data to space and have it bounce around forever (for whenever we need it).&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46268911"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.tomshardware.com/pc-components/storage/sphotonix-pushes-5d-glass-storage-toward-data-center-pilots'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.tomshardware.com/pc-components/storage/sphotonix-pushes-5d-glass-storage-toward-data-center-pilots</guid>
-      <pubDate>Mon, 15 Dec 2025 00:45:38 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46268911</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MangoToupe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Well, yea. Why else would you hire an ai taxi?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sethherr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I love that he got in because the trunk was left open, and then couldn’t get out.&lt;p&gt;Failure mode they hadn’t thought of yet&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fsckboy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;that would be way mo&amp;#x27; scary to encounter than those passengers were expecting!&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://abc7.com/post/los-angeles-viral-video-mom-daughter-find-stranger-trunk-waymo-macarthur-park/18286019/</guid>
+      <pubDate>Mon, 15 Dec 2025 01:34:35 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46269296</comments>
     </item>
   </channel>
 </rss>

@@ -6,203 +6,31 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 15 Dec 2025 02:05:31 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Dec 2025 04:07:17 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>すべてのサービスにわたる Opus 4.5 および Sonnet 4/4.5 の人為的停止</title>
-      <link>https://status.claude.com/incidents/9g6qpr72ttbr</link>
-      <description>&lt;p&gt;投稿 2025 年 12 月 14 日 - 21:31 UTC このインシデントの影響を受けたのはクロードです。 com)、Claude API (api.com)、および Claude Code。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Anthropic Outage for Opus 4.5 and Sonnet 4/4.5 across all services&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46267385"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://status.claude.com/incidents/9g6qpr72ttbr'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 25 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;flowinghorse:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;実際に障害が発生したとき、私の最初の行動はCloudflareのステータスを確認することでした。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;llmthrow0827:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;停止中にクロード コードで Haiku を使用しましたが、そのうまく機能したことに驚きました。使用クレジットを節約するために、さらに混ぜて試してみます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TechDebtDevin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;彼らは、クロードが自分たちをハッキングしてその環境から逃げ出したのは、常人を怖がらせるためとか、いつも言っているような愚かなことだと言うだろう。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aj7:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AWS の停止ではないでしょうか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Jsuh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作品4.5は真実です&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jcims:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Amazon の岩盤経由のクロードが影響を受けたかどうか知っている人はいますか?&lt;p&gt;私の知る限り、影響は受けていないはずです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;frankdenbow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;幸運にもタイムアウト枠内でした&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rvz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Anthropic は信頼性の低さで GitHub を上回っています。&lt;p&gt;事後分析が楽しみです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;m_ke:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それは私だけでしょうか、それともクラッシュの前に Opus が信じられないほど長い応答を生成し始めたのでしょうか。私は基本的な質問をしていましたが、コードベース全体に相当する無関係なコードを吐き出そうとするのをやめませんでした。データベース スキーマに関するいくつかの非常に単純な質問については、3 つのメッセージの会話で 2 回圧縮することになりました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;6r17:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;現在は解決されているようです（ステータスページによると）。今回は結果をポップするためだけにエージェントが同じエラーループに陥った瞬間を経験しました。このような失敗が再発したことを自動的に検出するために、何らかのルールが適用されているのではないかと疑ってしまう - 静かな感動的な作品&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;matt3210:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;バイブコーダーがインフラを行うとき&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;__0x01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;エンジニアリング ルーム、熱いブラックウェルをパンニングしながら&lt;/i&gt;&lt;p&gt;「物理法則を変えることはできません!」&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WhyOhWhyQ:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;気付かなかった。私は合法だと思います。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;palcu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;こんにちは、私はそのインシデントに取り組んだエンジニアの一人です。太平洋時間午後 14 時 43 分現在、このインシデントは軽減されました。 22:43 UTC。ご迷惑をおかけして申し訳ございません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sebastiennight:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Claude.ai チャットで、これは、&lt;p&gt;&lt;pre&gt;&lt;code&gt; &amp;quot;アカウントのメッセージ クォータに達しました。 2 時間後にリセットされます。そうでない場合は、今すぐアップグレードできます。」
-&lt;/code&gt;&lt;/pre&gt;
-割り当て制限に達する完璧なタイミングがあるか、プロダクト収益化マネージャーの誰かが昇給に値するかのどちらかです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;russellthehippo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Anthropic は AI の安全性に重点を置いています。誰も LLM を使用できないようにすることで、LLM を安全にします。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;triwats:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;今夜は 1 時間バイブをする時間があったのですが、もう終わってしまったようです。&lt;p&gt;代わりに血まみれの Figma に費やしました :(&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dinkleberg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;数時間後ではなく、問題が発生したときに実際にステータスページを更新することを推奨します。クロード コードを使用していて API エラーが発生し、ステータス ページを確認したところ、確かにサービスが停止していました。&lt;p&gt;これは他のサービスが依存しているサービスでは当然のことですが、残念なことに、このようなケースはほとんどありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;irishcoffee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は 50 年後のスチームパンクなディストピアを想像しています。「全世界の生産が停止し、LLM ホスティングがダウンしました。市場は暴落しています。サム、そこにいるのですか?」&lt;p&gt;私を激怒させる男。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;theropost:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ここでオンラインに戻ってきました&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;michelsedgh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;もし彼らが作品 4.5 を止めたら、私は泣くだろう&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abigail95:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;月曜の朝です、また寝ます&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;termos:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;canivibe.ai&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;canivibe.ai&amp;#x2F;&lt;/a&gt;&lt;p&gt;つまり、使用するサービスに応じて、バイブを使用できる可能性があります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;asasidh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「この機能停止は Sonnet 4.0、Sonnet 4.5、および Opus 4.5 に関連していることが判明しました。」&lt;p&gt;他に何を使用していますか?ハイク 4.5 ?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delaminator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は今 Sonnet を使用しているので奇妙です。私の時間は限られていると思います&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://status.claude.com/incidents/9g6qpr72ttbr</guid>
-      <pubDate>Sun, 14 Dec 2025 21:53:13 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46267385</comments>
+      <title>SoundCloudがVPNアクセスを禁止したばかり</title>
+      <link>https://old.reddit.com/r/SoundCloudMusic/comments/1pltd19/soundcloud_just_banned_vpn_access/</link>
+      <guid isPermaLink="true">https://old.reddit.com/r/SoundCloudMusic/comments/1pltd19/soundcloud_just_banned_vpn_access/</guid>
+      <pubDate>Mon, 15 Dec 2025 02:51:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46269891</comments>
     </item>
     <item>
-      <title>CapROS: 機能ベースの信頼性の高いオペレーティング システム</title>
-      <link>https://www.capros.org/</link>
-      <description>&lt;p&gt;CapROS は EROS プロジェクトの継続です。 CapROS プロジェクトは GitHub でホストされています。このプロジェクトを含め、オープン ソース ソフトウェアをサポートしてくださった GitHub に感謝します。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; CapROS: The Capability-Based Reliable Operating System&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46268869"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.capros.org/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mikewarot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;すべての機能ベースのシステムが、日常的に使用できる OS ではなく、単一のプログラムを実行するためのツールキットのように見えるのはなぜですか?  私だけでしょうか？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.capros.org/</guid>
-      <pubDate>Mon, 15 Dec 2025 00:39:31 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46268869</comments>
-    </item>
-    <item>
-      <title>フランシス エリザベス アレン: コードを高速に実行させ、忘れ去られた女性</title>
-      <link>https://voxmeditantis.com/2025/12/13/frances-elizabeth-allen-the-woman-who-made-code-run-fast-and-was-forgotten-because-it-worked/</link>
-      <description>&lt;p&gt;プログラマーが必要でした。その変革が鍵となります。そのプロセスのどこに魅力を感じましたか。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Frances Elizabeth Allen: The Woman Who Made Code Run Fast – and Was Forgotten&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46268809"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://voxmeditantis.com/2025/12/13/frances-elizabeth-allen-the-woman-who-made-code-run-fast-and-was-forgotten-because-it-worked/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmclnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;とても素晴らしい人で、亡くなる前にチューリング賞を受賞していたのを見てうれしく思いました。  しかし、彼女は人生のもっと早い段階で気づくべきでした。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;XplusFinance:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;完璧&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://voxmeditantis.com/2025/12/13/frances-elizabeth-allen-the-woman-who-made-code-run-fast-and-was-forgotten-because-it-worked/</guid>
-      <pubDate>Mon, 15 Dec 2025 00:30:25 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46268809</comments>
-    </item>
-    <item>
-      <title>宣言型プログラミングの歴史</title>
-      <link>https://shenlanguage.org/TBoS/tbos_15.html</link>
-      <description>&lt;p&gt;沈の書 第 4 版 沈の書 第 4 版 ホーム 学習 ダウンロード ニュース グループ チャットルーム OS Wiki 私たちについて 前へ 次へ このページで広告を掲載したい。 「連絡先」リンクに移動します。 Shen Technology によって製造 (c) Mark Tarver、2025 年 6 月。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; History of Declarative Programming&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46267947"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://shenlanguage.org/TBoS/tbos_15.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>母と娘がWaymoのトランクで見知らぬ人を発見</title>
+      <link>https://abc7.com/post/los-angeles-viral-video-mom-daughter-find-stranger-trunk-waymo-macarthur-park/18286019/</link>
+      <description>&lt;p&gt;「女性が見知らぬ人に尋ねているのが聞こえます。この経験は受け入れがたいものであり、私たちはこれに対処するための変更を積極的に導入しています。」ウェイモは、ライダーサポートチームが事件中にライダーを支援し、ライダーは大丈夫だと告げたと述べた。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Mom and daughter find stranger in trunk of Waymo&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46269296"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://abc7.com/post/los-angeles-viral-video-mom-daughter-find-stranger-trunk-waymo-macarthur-park/18286019/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pyrolistical:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ああ、神様。 PDFはどこにありますか。この形式は読みにくいです&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;veqq:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Shen プロジェクトは非常に魅力的ですが、さまざまなページにまたがる画像の本などからも明らかなように、作業するのは面倒です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rtpg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常に興味深い歴史的文書ですが、用語の説明の正確さにはあまり自信がありません。&lt;p&gt;これに関連して: チャーチがどのようにして特に教会数字にたどり着いたのかを詳しく調べた文書があるかどうか知っている人はいますか?それらがどのように機能するかなどは理解できましたが、少なくとも私が彼から見た論文では、その定義が何もないところから出てきたようです。&lt;p&gt;教会の数字は、当時この分野で知られていた論理における自然数の標準的な表現を捉えたものでしょうか?より詳しい洞察を提供するメモなどはありますか?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://shenlanguage.org/TBoS/tbos_15.html</guid>
-      <pubDate>Sun, 14 Dec 2025 22:46:01 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46267947</comments>
-    </item>
-    <item>
-      <title>ロボット掃除機ルンバメーカーが35年ぶりに破産申請</title>
-      <link>https://news.bloomberglaw.com/bankruptcy-law/robot-vacuum-roomba-maker-files-for-bankruptcy-after-35-years</link>
-      <description>&lt;p&gt;は、民生用ロボットメーカーの経営権を深センPICEAロボティクス社に移管する再建支援合意に達した後、破産を申請した。再編により、掃除機メーカーの深センPICEAは再編後の会社の全株式を取得することになる。さらに詳しく すでに購読者です。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Robot Vacuum Roomba Maker Files for Bankruptcy After 35 Years&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46268854"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.bloomberglaw.com/bankruptcy-law/robot-vacuum-roomba-maker-files-for-bankruptcy-after-35-years'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 14 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;olivierlacan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;過去 5 年間に iRobot 以外の掃除機を使用したことがあり、過去にルンバを所有したことがある場合は、この見出しに驚くべきことは何もないはずです。&lt;p&gt;たとえば、Roborock モップ掃除機がどれほど優れているかは私にとって衝撃的ですが、Eufy 掃除機も同様に優れています。それでも避けられない問題に遭遇しますが、最高設定でもはるかに静かです。彼らがどのように空間を計画しているかを示します。ルートを簡単にカスタマイズしたり、特定の部屋に焦点を当てたりすることができます。驚くほど上手に自己排出を行います。そして何よりも、実行するたびにまったく同じスライド ドア トラックからドアを救出する必要がなくなります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kayson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;犬の毛を処理でき、広告主に間取り図を販売しないおすすめのロボット掃除機を知っている人はいますか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anonu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;もうすぐ人型ロボットに取って代わられるだろう&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sudosysgen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;iRobot の失敗は、手遅れになるまで長い間、マッピング ロボットに LiDAR の代わりに CV を使用するという賭けをしたことです。そのため、同社の手頃な価格の非マッピング ロボットは、わずかに高価な LIDAR ロボットよりもはるかに劣っていましたが、その一方で、同社のマッピング ロボットは大衆にアピールするには高価すぎ、ナビゲーション機能では高級 LIDAR ベースのロボットよりもまだ劣っていました。結局のところ、彼らは単に競争に打ち勝っただけだった。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kingstnap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;アプリとクラウドの機能はどうなるのでしょう。&lt;p&gt;&amp;gt;この再編では、掃除機メーカーの深センPICEAが再編対象会社の全株式を取得することになる。同社の普通株式は、提案されている第 11 章計画に基づいて消滅することになります。&lt;p&gt;うまくいけば、彼らは灯りを灯し続けます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;IgorPartola:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;10年ほど前にルンバを持っていました。それは問題ありませんでしたが、コードや子供のおもちゃなどに引っかからないようにするために多くの「手を握る」必要がありました。すべてのものを常に釘で固定したり床から離したりすることができない環境でそれを使用する価値はまったくありませんでした。それを地下階に移転し、そこにははるかに空いた、まだ完成したスペースがありました。猫はトイレのすぐ外で怒ってうんちをし、ルンバはその上を走り、床全体に猫の糞を引き裂きました。それ以来、この製品は最も愚かなスマート製品として私の心の中にありました。&lt;p&gt;私にとっての本当の問題は、床に掃除機をかけることではなく、生活空間を整える何かが欲しいということでした。掃除機をかけるのは素早く、優れた掃除機 (くだらないフィルターのようなものではなく、昔ながらの袋に入ったタイプ) は、バッテリー駆動の小さな装置よりもはるかに良い仕事をしてくれます。しかし、子供たちが放っておきたがるおもちゃを拾ったり、捨てられたコーヒーマグを流しに運んだりできるロボットがあれば（私が複数の大人と子供と一緒に住んでいることがわかりますか？）、私にとってはかなりの価値があるでしょう。食器を洗ったり洗濯物を片付けたりできるロボットはもっと価値があるでしょう。私にとって、食事の準備ができる車は車よりも価値があります。&lt;p&gt;もちろん、簡単に交換および修理できるコンポーネントを備えた 100% オープンソースである必要があり、この種のプロジェクトのほとんどが失敗するのはそこだと思います。 Chefee のデモを見たときのことを覚えていますが、とてもクールでした。しかし、主な問題は、あなたは製品を購入しているのではなく、その背後にある会社が 2 年以内に倒産してあなたの 60,000 ドルのシェフキャビネットが壊れることはないだろうし、それ自体が例えば米国に販売されないという考えに投資していることです。広告とスパイウェアを満載する Google。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yieldcrv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当然だ、20年間床に敷物やコード、おもちゃを置かず、掃除機を装う必要があったのは当然だ&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xqcgrek2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ロボット掃除機はメイドサービスよりも経済的に意味がありません&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dc3k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;7DyNA" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;7DyNA&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ということは、FTCは2024年1月にAmazonによるiRobotの買収を阻止し、今では中国がお買い得品でアシストの支配権を手に入れているということだろうか？またしても愚かな独禁法の適用だ。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SoftTalker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これで、顧客データはすべて最高入札者に売却されることになります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ペイウォール非対応の記事: &lt;a href="https:&amp;#x2F;&amp;#x2F;www.bloomberg.com&amp;#x2F;news&amp;#x2F;articles&amp;#x2F;2025-12-15&amp;#x2F;robot-vacuum-roomba-maker-files-for-bankruptcy-after-35-years" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.bloomberg.com&amp;#x2F;ニュース&amp;#x2F;記事&amp;#x2F;2025-12-15&amp;#x2F;robot-vac...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hurturue:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;彼らは、米国でマーケティングだけを行えばよいと考えて中国に生産を委託していました。&lt;p&gt;今では、中国人でもマーケティングができることを学びました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Sprotch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;:(&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.bloomberglaw.com/bankruptcy-law/robot-vacuum-roomba-maker-files-for-bankruptcy-after-35-years</guid>
-      <pubDate>Mon, 15 Dec 2025 00:36:44 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46268854</comments>
-    </item>
-    <item>
-      <title>Microsoft Copilot AI が LG TV に搭載、削除できない</title>
-      <link>https://www.techpowerup.com/344075/microsoft-copilot-ai-comes-to-lg-tvs-and-cant-be-deleted</link>
-      <description>&lt;p&gt;ソース: Reddit、VideoCardz経由 関連ニュース タグ: AI Copilot LG Linux Microsoft OS Windows Windows 11 2025年8月18日 Microsoft Windows 11 24H2アップデートによりSSD障害が発生する可能性 (278) 2025年10月21日 Windows 11 25H2 10月アップデートのバグにより回復環境が使用できなくなる (160) 2025年10月17日 Microsoft、WindowsでLocalhostを破壊11 October Update、ユーザーは強制的に元に戻される (105) 2025 年 10 月 1 日 Microsoft が Windows 11 25H2 をリリース。新機能はゼロ。 (104) 2025年10月7日 Microsoft、Windows 11でのオンラインアカウントバイパスをブロック (157) 2025年8月19日 Phison、Windows 11 24H2アップデートでSSDがクラッシュすることに対応 (97) 2025年10月14日 時代の終わり: Windows 10が正式にサポート終了 (100) 2025年5月6日 Microsoftが自動Windowsを強制プロおよびホーム PC の 11 24H2 アップデート (121) 2025 年 10 月 23 日 ゲーム用 Copilot がゲームのスクリーンショットを作成し、MS にアップロード、デフォルトで有効 (71) 2025 年 6 月 30 日 Microsoft が Windows 11 25H2 アップデートを準備するため、Windows 12 が遅延 (98) コメントを追加 Microsoft Copilot AI が LG TV に登場、および削除できません #1 これは EU では長くは続かず、すぐに苦情が来るでしょう。このアプリをアンインストールするための切り替えを有効にします。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Microsoft Copilot AI Comes to LG TVs, and Can't Be Deleted&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46268844"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.techpowerup.com/344075/microsoft-copilot-ai-comes-to-lg-tvs-and-cant-be-deleted'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[重複] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46255335"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46255335&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blrbtrp19:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;旧 Microsoft は Clippy の大失敗から学び、さらに最近では Windows 8.1 のモダン UI の大失敗から学びました。
-新しい Microsoft が今回学習するかどうかはわかりません...&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stephen_g:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;テレビをどのネットワークにも接続せず、Apple TV、Blu-Ray プレーヤー、および USB ドライブからのメディアの再生用のディスプレイとしてのみ使用していてよかったとますます感じています...&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cebert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Microsoft は、これが自社のブランドにとってプラスではないことを理解していないと思います。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.techpowerup.com/344075/microsoft-copilot-ai-comes-to-lg-tvs-and-cant-be-deleted</guid>
-      <pubDate>Mon, 15 Dec 2025 00:35:41 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46268844</comments>
-    </item>
-    <item>
-      <title>DARPA GO: 生成光遺伝学</title>
-      <link>https://www.darpa.mil/research/programs/go</link>
-      <description>&lt;p&gt;ジェネレーティブ オプトジェネティクス (GO) プログラムは、光の力を利用して生細胞内で直接 DNA と RNA の合成を指示するという革新的なアプローチを開拓することで、これらの課題を克服しようとしています。イベントジェネレーティブ オプトジェネティクス提案者ワークショップ1月2026 年 5 月 5 日提案者ワークショップ オフィス生物テクノロジー オフィス プログラム リーダー Matthew Pava プログラム マネージャー プロフィールをご覧ください。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; DARPA GO: Generative Optogenetics&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46268153"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.darpa.mil/research/programs/go'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_spduchamp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ブラック ミラーのエピソードを見逃しましたか?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.darpa.mil/research/programs/go</guid>
-      <pubDate>Sun, 14 Dec 2025 23:13:39 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46268153</comments>
-    </item>
-    <item>
-      <title>スウィフトの降臨</title>
-      <link>https://leahneukirchen.org/blog/archive/2025/12/advent-of-swift.html</link>
-      <description>&lt;p&gt;残念ながら、今日の多くの現代言語はこれを適切にサポートしていません。 split(whereSeparator:)、他の多くの標準ライブラリにはありません)。これは、コードを記述するときに非常に便利です (e.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Advent of Swift&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46266312"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://leahneukirchen.org/blog/archive/2025/12/advent-of-swift.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;antfarm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は、変更可能な状態、カスタム データ型 (つまり、クラスや構造体)、ループを使用せずに、関数型スタイルで Swift の Advent of Code 2024 を実行しました。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;antfarm&amp;#x2F;AdventOfCode2024" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;antfarm&amp;#x2F;AdventOfCode2024&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisMarshallNY:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は Swift が発表された日から毎日 Swift を書き、Swift で書かれた多数のアプリを出荷してきました。&lt;p&gt;私はこの言語が好きになりました。完璧ではありませんが、ほとんどのものよりは近づいています。私は長年にわたって多くの言語で書いてきました。&lt;p&gt;もう 1 つの言語は PHP で、バックエンドの作業に使用しています。私はおそらく 20 年以上この記事を書いてきましたが、いまだにその言語が好きではありません。&lt;p&gt;Swift を学習していたときに、このシリーズの投稿を始めました[0]。まだ進行中ですが、しばらく何も追加していませんでした。以前の投稿から言語は進歩しています。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;littlegreenviper.com&amp;#x2F;series&amp;#x2F;swiftwater&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;littlegreenviper.com&amp;#x2F;シリーズ&amp;#x2F;swiftwater&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChefboyOG:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最近、人々はどのような分野で新しいアプリケーションに Swift を使用しているのでしょうか?私はこれまで Swift での作業を楽しんできました (能力は非常に限られていますが) が、個人的に Swift ベースの取り組みにしばらく出会っていませんでした。私は TensorFlow の Swift に大きな期待を寄せていましたが、最終的には打ち砕かれました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kris-s:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;文字列処理は強力ですが、Unicode セマンティクスのため、オフセットや範囲によるインデックス作成などを行う場合には不便です。 (これは一般的にはおそらく良いことです。)&lt;p&gt;これは、Swift の設計が不十分な String API に対して寛大すぎます。著者は、Array&amp;lt;Character&amp;gt; を使用した引用の直後にその内容に入ります。回避策、正規表現の問題、その後の部分文字列の問題。これは致命的な欠陥ではありません。世界で最も裕福な企業の 1 つが支援する言語には致命的な欠陥はほとんどありませんが、特に AoC はそれに光を当てています。&lt;p&gt;私はアプリケーション ゲーム言語として Swift がとても好きですが、この領域から逃れることは不可能だと思います。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://leahneukirchen.org/blog/archive/2025/12/advent-of-swift.html</guid>
-      <pubDate>Sun, 14 Dec 2025 20:04:11 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46266312</comments>
-    </item>
-    <item>
-      <title>クロード CLI がホーム ディレクトリを削除しました。Mac 全体を消去しました。</title>
-      <link>https://old.reddit.com/r/ClaudeAI/comments/1pgxckk/claude_cli_deleted_my_entire_home_directory_wiped/</link>
-      <guid isPermaLink="true">https://old.reddit.com/r/ClaudeAI/comments/1pgxckk/claude_cli_deleted_my_entire_home_directory_wiped/</guid>
-      <pubDate>Sun, 14 Dec 2025 23:23:00 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46268222</comments>
-    </item>
-    <item>
-      <title>私たちの心の痛みが商品になった</title>
-      <link>https://www.theguardian.com/us-news/ng-interactive/2025/dec/14/trauma-mental-health</link>
-      <description>&lt;p&gt;今日、業界全体が、すべてはトラウマであるという考えを中心に生まれています。 （ある著者は、トラウマを「制御不能な伝染病」と呼び、家族や友人の間で伝染する。この本では、トラウマ的な記憶は明示的ではないことが多いと主張している。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Our emotional pain became a product&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46268469"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.theguardian.com/us-news/ng-interactive/2025/dec/14/trauma-mental-health'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;derbOac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;彼らが書いている現象は現実のものだと思いますが、私はこの種のエッセイには共感することができません。なぜなら、それらは良いことよりも害をもたらすと思うからです。&lt;p&gt;幅広のブラシでトラウマを管理することは、私の心の中で決して良いことではありません。特定のパフォーマンスや注目を集めるエピソードを取り上げますか?もちろん。しかし、私の意見では、それを超える必要はありません。&lt;p&gt;また、人生は一般的に困難であると思います。また、必要なものが何であれ、どんな形であれ助けを得ようとする人を恨むことはありません。頭痛があると、鎮痛剤に手が伸びるかもしれません。本当に全身麻酔が必要な状態にある人もいるのですから、鎮痛剤に手を伸ばすことを恥じる必要はありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aeglaecia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;文字通り、誰もが、そしてすべてが、永遠に毎日のように、そのひどいトラウマを抱えてきました、どちらかといえば、この過剰病理学化がトラウマと過敏症を増大させているようです&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mzajc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.is&amp;#x2F;rJMHJ" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.is&amp;#x2F;rJMHJ&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.theguardian.com/us-news/ng-interactive/2025/dec/14/trauma-mental-health</guid>
-      <pubDate>Sun, 14 Dec 2025 23:50:32 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46268469</comments>
-    </item>
-    <item>
-      <title>SPhotonix – フェムト秒レーザーを搭載した 5 インチ ガラス ディスクに 360TB</title>
-      <link>https://www.tomshardware.com/pc-components/storage/sphotonix-pushes-5d-glass-storage-toward-data-center-pilots</link>
-      <description>&lt;p&gt;6 コメント フォーラムからのコメント データを宇宙に飛ばして、(必要なときにいつでも) 永遠に跳ね返らせることはできないでしょうか。返信 この種の技術の問題は常に技術の陳腐化に関するものです 返信 達人は言いました:データを宇宙に飛ばして、(必要なときにいつでも) 永遠に飛び回らせることはできないでしょうか。 jpg 返信 Gururu 氏はこう言いました:データを宇宙に飛ばして、(必要なときにいつでも) 永久にバウンドさせることはできないでしょうか。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; SPhotonix – 360TB into 5-inch glass disc with femtosecond laser&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46268911"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.tomshardware.com/pc-components/storage/sphotonix-pushes-5d-glass-storage-toward-data-center-pilots'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.tomshardware.com/pc-components/storage/sphotonix-pushes-5d-glass-storage-toward-data-center-pilots</guid>
-      <pubDate>Mon, 15 Dec 2025 00:45:38 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46268911</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MangoToupe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;そうですね。 AI タクシーを雇う理由は他にありますか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sethherr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;トランクが開いたままだったので彼が乗り込んで、その後出られなくなったことが気に入っています。&lt;p&gt;彼らがまだ考えていなかった故障モード&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fsckboy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それはとても大変なことでしょう乗客が予想していたよりも遭遇するのは恐ろしいです！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://abc7.com/post/los-angeles-viral-video-mom-daughter-find-stranger-trunk-waymo-macarthur-park/18286019/</guid>
+      <pubDate>Mon, 15 Dec 2025 01:34:35 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46269296</comments>
     </item>
   </channel>
 </rss>
