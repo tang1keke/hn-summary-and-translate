@@ -6,89 +6,54 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Fri, 19 Dec 2025 12:53:18 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Dec 2025 15:27:38 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>GotaTun -- Mullvad's WireGuard Implementation in Rust</title>
-      <link>https://mullvad.net/en/blog/announcing-gotatun-the-future-of-wireguard-at-mullvad-vpn</link>
-      <description>&lt;p&gt;Since mid-2024 we have been maintaining a fork of wireguard-go to support features like DAITA &amp; Multihop. In the developer console we have seen that more than 85% of all crashes reported have stemmed from the wireguard-go. Since rolling out GotaTun on Android with version 2025.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46324543"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://mullvad.net/en/blog/announcing-gotatun-the-future-of-wireguard-at-mullvad-vpn'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Hacker News front page now, but the titles are honest</title>
+      <link>https://dosaygo-studio.github.io/hn-front-page-2035/news-honest.html</link>
+      <description>&lt;p&gt;com) 203 points by captn3m0 4 hours ago | 103 comments 4. com) 28 points by klevo 2 hours ago | 4 comments 6. com) 520 points by meetpateltech 20 hours ago | 276 comments 17.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46326588"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://dosaygo-studio.github.io/hn-front-page-2035/news-honest.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;intsunny:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Its funny, this is another of the billions of reasons why Mullvad should be the VPN of choice. But so many fucking people can&amp;#x27;t ever get over that their favorite social media influencer&amp;#x2F;Youtuber is offering a code for 200% off of NordShark VPN, now with extra AI.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Hakkin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I definitely noticed the performance boost on my Pixel 8, for some reason it seems to really not like wireguard-go, it struggled to pull even 100mbps, maybe something unoptimized on Google&amp;#x27;s custom hardware. With the new GotaTun version I can pull 500mbps+, though unfortunately it also seems to have introduced a bug that randomly prevents the phone from entering a deep sleep state, so occasionally my battery will randomly start draining at 10x normal speed if I have it enabled until I reboot.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;imcritic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I wish they would improve wireguard-the-protocol as well: wireguard doesn&amp;#x27;t stand a chance against gov&amp;#x2F;isp blocks.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;turblety:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Nice, I love WireGuard. I ended up building WrapGuard [1] to run applications without root access to the host and choose Go to write it in. I don&amp;#x27;t really know Rust, but does it make more sense for firmware&amp;#x2F;networking type software? Is there even a difference?&lt;p&gt;1. &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;puzed&amp;#x2F;wrapguard" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;puzed&amp;#x2F;wrapguard&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ur-whale:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;One meta thing I&amp;#x27;ve always wondered ... Are multiple implementations of the same protocol good or bad for security?&lt;p&gt;Probably naively, I&amp;#x27;m thinking:&lt;p&gt;&lt;pre&gt;&lt;code&gt;    - diversity: good
-    - doubling the attack surface: real bad
-&lt;/code&gt;&lt;/pre&gt;
-What do the security folks out there think of the topic?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nevi-me:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;If anyone working on the implementation is here, was it not possible to upstream your changes to BoringTun? The blog mentions some changes but doesn&amp;#x27;t go into detail on that aspect.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://mullvad.net/en/blog/announcing-gotatun-the-future-of-wireguard-at-mullvad-vpn</guid>
-      <pubDate>Fri, 19 Dec 2025 11:16:23 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46324543</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;szemy2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is pretty funny!&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://dosaygo-studio.github.io/hn-front-page-2035/news-honest.html</guid>
+      <pubDate>Fri, 19 Dec 2025 15:02:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46326588</comments>
     </item>
     <item>
-      <title>Amazon will allow ePub and PDF downloads for DRM-free eBooks</title>
-      <link>https://www.kdpcommunity.com/s/article/New-eBook-Download-Options-for-Readers-Coming-in-2026?language=en_US</link>
-      <guid isPermaLink="true">https://www.kdpcommunity.com/s/article/New-eBook-Download-Options-for-Readers-Coming-in-2026?language=en_US</guid>
-      <pubDate>Fri, 19 Dec 2025 10:03:38 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46324078</comments>
+      <title>The FreeBSD Foundation's Laptop Support and Usability Project</title>
+      <link>https://github.com/FreeBSDFoundation/proj-laptop</link>
+      <description>&lt;p&gt;Who will be doing the work. Are desktop users being considered as part of this work. Broadly speaking this work is focused on laptop user experience.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46326519"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/FreeBSDFoundation/proj-laptop'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mikece:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I&amp;#x27;m curious why Apple doesn&amp;#x27;t support this effort: they have done a lot of the work and it won&amp;#x27;t exactly harm their market share.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/FreeBSDFoundation/proj-laptop</guid>
+      <pubDate>Fri, 19 Dec 2025 14:56:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46326519</comments>
     </item>
     <item>
-      <title>Show HN: I open-sourced my Go and Next B2B SaaS Starter (deploy anywhere, MIT)</title>
-      <link>https://github.com/moasq/production-saas-starter</link>
-      <description>&lt;p&gt;🛠️ Built With Frontend Stack Next. PostgreSQL with pgvector Reliable relational database with vector similarity search. Multi-Tenancy: Built-in Organization support with strict data isolation.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46324665"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/moasq/production-saas-starter'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Building a Transparent Keyserver</title>
+      <link>https://words.filippo.io/keyserver-tlog/</link>
+      <description>&lt;p&gt;19 Dec 2025 Building a Transparent Keyserver Today, we are going to build a keyserver to lookup age public keys. Transparency logs are a technology for applying cryptographic accountability to centralized systems with no UX sacrifices. If you want to catch up with the tlog ecosystem, my 2025 Transparency.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46326506"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://words.filippo.io/keyserver-tlog/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rvz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Nice project and great idea and a reasonable selection of technologies that optimize for low cost deployment.&lt;p&gt;However, my biggest concern is the &lt;i&gt;glaringly lack of comprehensive tests&lt;/i&gt; whatsoever. I have to even question if this project is production ready at all.&lt;p&gt;Until that is in place, I really do not think this is &amp;quot;production&amp;quot; quality I&amp;#x27;m afraid.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MadsRC:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is cool - Whenever I have a new idea for a thing I spend too much time writing boilerplate IAM and backend stuff, taking away time that could be spend on actual business logic. Thought about packaging the boilerplate stuff up before, never gotten around to it. Glad you did!&lt;p&gt;A thing to consider would be to make it easier (or perhaps bake it in) to separate out parts of the app into a separate origin. Something that would be good for pretty much any SaaS app would be to separate the IAM out (could still embed it with an iframe) - this allows you to keep a fairly tight security policy for the IAM stuff and a more lax one for the rest of the app. Kinda how Google separates out accounts.google.com.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;user20251219:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Awesome project - thanks for sharing&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;icedrift:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Oh boy another template shipped in a single commit;  complete with &amp;quot;For now, do this&amp;quot; and &amp;quot;In production you would do this&amp;quot; comments&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adlpz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Cool project! Will surely copy ideas from it :)&lt;p&gt;A general question for the room: where&amp;#x27;s the tipping point where you &lt;i&gt;need&lt;/i&gt; a &amp;quot;proper&amp;quot; backend, in a different language, with all the inconveniences of possible type safety issues and impedance mismatches?&lt;p&gt;Because I feel like for 90% of small-medium projects it&amp;#x27;s just good enough with all the backend stuff within the same Next.js process as the front-end. I just do  &amp;quot;separation of concerns&amp;quot;-ish with the code organization and funnel all communication with something structured and type safe like tRPC.&lt;p&gt;Feels separate enough but very pleasant to work anyway.&lt;p&gt;Am I doing it wrong?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sallveburrpi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Thanks for sharing!&lt;p&gt;One question though:
-What made you avoid lock-in via platforms like supabase but then choose to be locked in on the AuthN&amp;#x2F;Z side with a proprietary solution?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;miroljub:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Nice one. Good to learn about polar.sh as a MoR alternative to Paddle.&lt;p&gt;I would prefer if it had a more leightweight htmx approach, but I guess it would be useful to some people.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/moasq/production-saas-starter</guid>
-      <pubDate>Fri, 19 Dec 2025 11:34:11 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46324665</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noident:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Filippo Valsorda discusses his server for storing age keys&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://words.filippo.io/keyserver-tlog/</guid>
+      <pubDate>Fri, 19 Dec 2025 14:54:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46326506</comments>
     </item>
     <item>
-      <title>Show HN: Hacker News, but every headline is hysterical clickbait</title>
-      <link>https://dosaygo-studio.github.io/hn-front-page-2035/news-max.html</link>
-      <description>&lt;p&gt;com) 887 points by hackermondev 15 hours ago | 335 comments 4. com) 837 points by tortilla 18 hours ago | 424 comments 5. com) 495 points by meetpateltech 16 hours ago | 256 comments 12.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46324579"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://dosaygo-studio.github.io/hn-front-page-2035/news-max.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 19 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bentobean:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Now all we need is a thumbnail next to each headline showing the author making some stupid face.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;felineflock:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Reads very much like the Drudge Report, just needs the same diagramming style.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;DivingForGold:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Well, in reality, the amount of abusive publishers submitting articles with PAYWALLS is getting absurd on HN.&lt;p&gt;HN ought to indicate these titles in ALL RED.&lt;p&gt;WSJ, FT, BLM, too many to count.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noosphr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This feels like a 6&amp;#x2F;10 on the scale of hysterical clickbait headlines I see on YouTube.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;frereubu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I love this, thank you for a good belly laugh.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;latentsea:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Thanks. I hate it.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;debo_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; MATHEMATICS IS BROKEN (Until Now): Go From Zero to QED or Go Home&lt;p&gt;If my mathematics degree had been framed this way, I probably would have enjoyed it more.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bryanhogan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is amazing&lt;p&gt;Edit: Just found out HN deletes emojis!&lt;p&gt;---&lt;p&gt;On a more serious note, it&amp;#x27;s a bit sad how close this is to actual algorithm-driven social media or news-based platforms.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ctrlmeta:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Totally unreadable with the all caps. I guess that&amp;#x27;s the point.&lt;p&gt;This kind of thing is fun once. And it was a lot of fun when the AI-generated fake HN was posted was last week.&lt;p&gt;But there&amp;#x27;s no need to post this kind of stuff every week. The novelty wears off. And it gets boring and silly pretty quickly.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Tepix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Hey, wait a minute. I think we got something here! What we need is the reverse, i.e. a LLM that recognizes clickbait and &amp;quot;tames&amp;quot; it (ideally by providing the information in the headline, like Techmeme does [kudos to them]).&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;marstall:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;some of these are better headlines tho&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qiine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;wait &amp;quot;19th Century Telegraph Chess&amp;quot; ??&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mbsa7:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;My favorite so far is “Delty (YC X25) Is Hiring and You Probably Aren&amp;#x27;t Qualified”.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adlpz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I felt literal pain. Not kidding.&lt;p&gt;There&amp;#x27;s something to investigate here.&lt;p&gt;Made me notice I&amp;#x27;m actually exposed to very similar crap on other places. Scary.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NitpickLawyer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;So you&amp;#x27;ve recreated &amp;#x2F;r&amp;#x2F;technology ? :)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;krapp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The icon for this needs to be the meme of Elmo in front of fire.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;netsharc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Breaking: Huffington Post buys Hacker News.&lt;p&gt;At least the HuffPo of the last decade was like this. They haven&amp;#x27;t been relevant for many years it seems.&lt;p&gt;As to its founder:  &lt;a href="http:&amp;#x2F;&amp;#x2F;www.thestacksreader.com&amp;#x2F;the-many-faces-of-arianna&amp;#x2F;" rel="nofollow"&gt;http:&amp;#x2F;&amp;#x2F;www.thestacksreader.com&amp;#x2F;the-many-faces-of-arianna&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nottorp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Click to find out how much my blood pressure went up when reading this!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;keepamovin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I felt the front page was too calm. I fixed it. &lt;i&gt;YOU WON&amp;#x27;T BELIEVE NUMBER 4.&lt;/i&gt;&lt;p&gt;&lt;i&gt;Prompt: Remember this classic? &amp;lt;snip ... Hacker News 10 Years in Future &amp;gt; OK, i have a new idea. want to try? &amp;quot;Offtopic but this title makes me want to create an alternate-universe version of the HN front page where every title is shrill&amp;#x2F;spectacular&amp;#x2F;hysterical&amp;#x2F;urgent&amp;#x2F;clickbaity. Such as:
-The Absolute State of the Kernel Rust Experiment Right Now
-And every comment has its confidence&amp;#x2F;aggressiveness taken up to 11 (tho still within site rules).&amp;quot; And the HN front page right now is: &amp;lt;snip&amp;gt;&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://dosaygo-studio.github.io/hn-front-page-2035/news-max.html</guid>
-      <pubDate>Fri, 19 Dec 2025 11:21:45 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46324579</comments>
+      <title>AMD officially confirms fresh next-gen Zen 6 CPU details</title>
+      <link>https://overclock3d.net/news/cpu_mainboard/amd-officially-confirms-fresh-next-gen-zen-6-cpu-details/</link>
+      <guid isPermaLink="true">https://overclock3d.net/news/cpu_mainboard/amd-officially-confirms-fresh-next-gen-zen-6-cpu-details/</guid>
+      <pubDate>Fri, 19 Dec 2025 14:51:03 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46326472</comments>
     </item>
   </channel>
 </rss>
