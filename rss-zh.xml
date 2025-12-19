@@ -6,62 +6,92 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 19 Dec 2025 09:29:33 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Dec 2025 12:53:18 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Show HN：Orbit 一种将 .sh 编译为 LLVM 的系统级编程语言</title>
-      <link>https://github.com/SIE-Libraries/orbit</link>
-      <description>&lt;p&gt;类型系统 Spaceship 使用严格的、固定宽度的类型系统。前缀，表明它返回一个错误合约。失败时，它会返回标准 POSIX 错误代码（例如&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Orbit a systems level programming language that compiles .sh to LLVM&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46323693"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/SIE-Libraries/orbit'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>GotaTun——Mullvad 在 Rust 中的 WireGuard 实现</title>
+      <link>https://mullvad.net/en/blog/announcing-gotatun-the-future-of-wireguard-at-mullvad-vpn</link>
+      <description>&lt;p&gt;自 2024 年中期以来，我们一直在维护wireguard-go 的分支，以支持 DAITA 和 Multihop 等功能。在开发者控制台中，我们发现报告的所有崩溃中超过 85% 是由wireguard-go 引起的。自从在 Android 上推出 GotaTun 版本 2025 以来。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; GotaTun -- Mullvad's WireGuard Implementation in Rust&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46324543"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://mullvad.net/en/blog/announcing-gotatun-the-future-of-wireguard-at-mullvad-vpn'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TheCodingDecode:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Spaceship：一种 JIT 编译的系统语言，可将 .sh 编译为 LLVM&lt;p&gt;我一直觉得“一次性 shell 脚本”与“一次性 shell 脚本”之间的差距很大。和“鲁棒系统代码”太宽了。 Bash 无处不在，但很危险； Go 很安全，但对于快速自动化来说可能会感到沉重。&lt;p&gt;我正在构建 Spaceship 来弥补这一差距。它是一种受 Go 启发的系统语言，具有基于 C++&amp;#x2F;Boost 的编译器，可通过 LLVM 将所有内容（包括旧版 shell 脚本）直接 JIT 编译为本机机器代码。&lt;p&gt;亮点：&lt;p&gt;* @jit 指令：您可以采用现有的 .sh 文件并运行 @jit(“script.sh”)。 Spaceship 不是生成子 shell，而是解析 shell 逻辑，将其转换为符合 POSIX 的 AST 节点，并将其 JIT 编译到当前执行路径中。
-* 零信任 JIT 沙箱：在 LLVM IR 降低阶段强制执行安全性。如果您的脚本未在安全清单中明确允许某种功能（如 network.tcp 或 process.fork），JIT 就会拒绝为这些指令生成机器代码。没有运行时拦截器开销。
-* 任意位宽：由于它是 LLVM 原生的，因此您不会受困于 i32 或 i64。如果您要与特定硬件或协议连接，则可以使用 i1、i23、i25 等。
-* !i32 契约：所有系统调用都返回成功值或 i32 POSIX 错误代码，通过 check&amp;#x2F; except 流程进行处理，该流程反映了 C++ 异常速度，但保持了 Go 错误处理的简单性。
-* 统一后端：我们使用 Boost（Asio、进程、文件系统）作为 JIT 链接的高性能标准库，确保跨 Linux 和 macOS 的 POSIX 兼容性。&lt;p&gt;解析器以 C++ 实现，并处理延迟执行管道 — 在您调用 .run() 之前不会执行任何操作，这允许 JIT 优化整个操作链。&lt;p&gt;我很想听听您对“通过省略实现安全”的想法。模型以及用 JIT-ted 环境替换 dash&amp;#x2F;bash 以实现高性能自动化的可行性。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/SIE-Libraries/orbit</guid>
-      <pubDate>Fri, 19 Dec 2025 08:54:25 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46323693</comments>
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;intsunny:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，这是 Mulvad 成为首选 VPN 的数十亿原因之一。但很多人都无法忘记他们最喜欢的社交媒体影响者 YouTuber 正在提供 NordShark VPN 200% 折扣的代码，现在还带有额外的人工智能。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Hakkin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我确实注意到了 Pixel 8 的性能提升，出于某种原因，它似乎真的不像wireguard-go，它甚至很难拉动 100mbps，也许是在 Google 的定制硬件上未优化的东西。使用新的 GotaTun 版本，我可以拉 500mbps+，但不幸的是，它似乎还引入了一个错误，该错误会随机阻止手机进入深度睡眠状态，因此，如果我启用它直到重新启动，有时我的电池会随机开始以 10 倍正常速度耗尽。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;imcritic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望他们也能改进wireguard协议：wireguard没有机会对抗政府ISP的封锁。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;turblety:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很好，我喜欢 WireGuard。我最终构建了 WrapGuard [1] 来运行应用程序，而无需对主机进行 root 访问，并选择 Go 将其写入。我真的不了解 Rust，但它对于固件和网络类型软件更有意义吗？有区别吗？&lt;p&gt;1. &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;puzed&amp;#x2F;wrapguard" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;puzed&amp;#x2F;wrapguard&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ur-whale:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直想知道的一件元事情...同一协议的多种实现对于安全性来说是好还是坏？&lt;p&gt;我可能天真地想：&lt;p&gt;&lt;pre&gt;&lt;code&gt; - 多样性：好
+    - 攻击面加倍：真的很糟糕
+&lt;/code&gt;&lt;/pre&gt;
+那里的安全人员如何看待这个话题？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nevi-me:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果这里有人致力于实施，是否可以将您的更改上传到 BoringTun？该博客提到了一些更改，但没有详细介绍这方面。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://mullvad.net/en/blog/announcing-gotatun-the-future-of-wireguard-at-mullvad-vpn</guid>
+      <pubDate>Fri, 19 Dec 2025 11:16:23 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46324543</comments>
     </item>
     <item>
-      <title>制作 Google Sans Flex</title>
-      <link>https://design.google/library/google-sans-flex-font</link>
-      <description>&lt;p&gt;Google Sans 是从搜索到钱包的所有 Google 产品中使用的标志性字体。当 Google Sans 于 2018 年推出时，设计师们最初欣喜若狂。与几何 Google Sans 不同，Google Sans Text 中的字符更高、更紧凑且圆形更少。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Making Google Sans Flex&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46322732"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://design.google/library/google-sans-flex-font'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>亚马逊将允许无 DRM 电子书的 ePub 和 PDF 下载</title>
+      <link>https://www.kdpcommunity.com/s/article/New-eBook-Download-Options-for-Readers-Coming-in-2026?language=en_US</link>
+      <guid isPermaLink="true">https://www.kdpcommunity.com/s/article/New-eBook-Download-Options-for-Readers-Coming-in-2026?language=en_US</guid>
+      <pubDate>Fri, 19 Dec 2025 10:03:38 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46324078</comments>
+    </item>
+    <item>
+      <title>Show HN：我开源了我的 Go 和 Next B2B SaaS Starter（部署在任何地方，麻省理工学院）</title>
+      <link>https://github.com/moasq/production-saas-starter</link>
+      <description>&lt;p&gt;🛠️ 接下来使用前端堆栈构建。 PostgreSQL 与 pgvector 具有向量相似性搜索的可靠关系数据库。多租户：内置组织支持，具有严格的数据隔离。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: I open-sourced my Go and Next B2B SaaS Starter (deploy anywhere, MIT)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46324665"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/moasq/production-saas-starter'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TekMol:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因为即使过了 2 个小时，仍然没有人讨论实际的字体，让我告诉你，当我读到有关 Google 和设计的任何内容时，我的脑海中会浮现出什么：&lt;p&gt;他们的手机设计是正确的。&lt;p&gt;我就是无法理解，即使是苹果，这应该是一家设计公司，生产的手机也无法放在桌子上而不像弯曲地板上的吧台凳一样摇晃。我只是觉得很破碎。这对我的审美观非常不利。&lt;p&gt;Google 手机用一个优雅的解决方案解决了这个问题。谢谢你。如果 Pixels 不存在，我就不知道该用什么手机。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andrewinardeer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;此页面的 RSS 源在哪里？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kace91:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该页面的某些内容让我在移动设备上感到头晕。我不确定这是否是一个微妙的动画，但我在阅读时感觉到事物在移动和变形。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Rakshath_1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是需求驱动设计的一个很好的案例研究。我特别喜欢 Google Sans 的每一次迭代都源于具体的可用性失败——易读性、规模、语言支持或开发人员人体工程学——而不仅仅是美学。开源 Flex 感觉像是这一理念的自然延伸，而不仅仅是一种品牌举措。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;GaggiX:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我从未见过光标改变大小以适应您悬停的按钮，这很酷，我不知道它是否更好，但它很酷。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;syldarion:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;和其他评论者一样，我的注意力也集中在鼠标光标上。关于字体的很棒的帖子，但我花了大部分时间来观察奇怪的光标的行为。我不太喜欢它，特别是因为当你将鼠标悬停在相关帖子上时，会出现一些不一致的情况。&lt;p&gt;但是，有一个地方我必须将其提供给他们：当我将鼠标悬停在有关 Google Sans Code 的内容上时，它会水平扩展。一瞬间，我想知道发生了什么事，然后点击内容必须是水平滚动的，确实如此！&lt;p&gt;当然，可以用更明显的水平滚动条来显示......&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;planb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有点过分：该页面上的鼠标指针怎么了？到底为什么一个有“设计”的网站会被认为是“设计”？在它的域名中将我的鼠标指针更改为 4K 桌面屏幕上手指大小的圆形斑点？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://design.google/library/google-sans-flex-font</guid>
-      <pubDate>Fri, 19 Dec 2025 06:10:02 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46322732</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rvz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好项目、好主意，以及优化低成本部署的合理技术选择。&lt;p&gt;但是，我最大的担忧是&lt;i&gt;明显缺乏全面的测试&lt;/i&gt;。我什至不得不怀疑这个项目是否已经做好生产准备。&lt;p&gt;在准备就绪之前，我真的不认为这是“生产”。我担心质量。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MadsRC:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这很酷 - 每当我对某件事有新想法时，我都会花太多时间编写样板 IAM 和后端内容，从而占用了可以花在实际业务逻辑上的时间。之前想过将样板文件打包起来，但从未抽出时间。很高兴您这样做了！&lt;p&gt;需要考虑的一件事是更容易（或者可能将其烘焙）将应用程序的各个部分分离到单独的源中。对于几乎任何 SaaS 应用程序来说，将 IAM 分开（仍然可以将其嵌入 iframe）是一件好事 - 这允许您为 IAM 内容保持相当严格的安全策略，并为应用程序的其余部分保持更宽松的安全策略。有点像谷歌如何分离出accounts.google.com。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;user20251219:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很棒的项目 - 感谢分享&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;icedrift:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;天哪，另一个模板在一次提交中就发布了；  完成“现在，执行此操作”和“在生产中你会这样做”评论&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adlpz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很酷的项目！肯定会从中复制想法:)&lt;p&gt;房间里的一个普遍问题：你&lt;i&gt;需要&lt;/i&gt;一个“适当”的临界点在哪里？后端，使用不同的语言，可能存在类型安全问题和阻抗不匹配的所有不便？&lt;p&gt;因为我觉得对于 90% 的中小型项目来说，所有后端内容都在与前端相同的 Next.js 进程中就足够了。我只是对代码组织进行“关注点分离”，并将所有通信与诸如 tRPC 之类的结构化和类型安全的东西进行汇集。&lt;p&gt;感觉足够独立，但无论如何工作都很愉快。&lt;p&gt;我做错了吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sallveburrpi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感谢分享！&lt;p&gt;但有一个问题：
+是什么让您避免通过 supabase 等平台锁定，然后选择使用专有解决方案锁定在 AuthN&amp;#x2F;Z 端？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;miroljub:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好一个。很高兴了解 Polar.sh 作为 Paddle 的 MoR 替代品。&lt;p&gt;如果它有更轻量级的 htmx 方法，我会更喜欢，但我想这对某些人来说会有用。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/moasq/production-saas-starter</guid>
+      <pubDate>Fri, 19 Dec 2025 11:34:11 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46324665</comments>
     </item>
     <item>
-      <title>基于属性的测试发现了我从未发现的安全漏洞</title>
-      <link>https://kiro.dev/blog/property-based-testing-fixed-security-bug/</link>
-      <description>&lt;p&gt;该对象将具有如下所示的 API：加载代码示例。 Kiro 称之为“往返”属性。这导致测试失败，并出现以下反例：加载代码示例。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Property-Based Testing Caught a Security Bug I Never Would Have Found&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46320395"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://kiro.dev/blog/property-based-testing-fixed-security-bug/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Show HN：黑客新闻，但每个标题都是歇斯底里的标题诱饵</title>
+      <link>https://dosaygo-studio.github.io/hn-front-page-2035/news-max.html</link>
+      <description>&lt;p&gt;com) 15 小时前由 hackermondev 获得 887 分 | 335 条评论 4.com) 玉米粉圆饼 837 分 18 小时前 | 424 条评论 5.com) 16 小时前 meetpateltech 获得 495 分 | 256 条评论 12.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Hacker News, but every headline is hysterical clickbait&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46324579"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://dosaygo-studio.github.io/hn-front-page-2035/news-max.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sublinear:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;这可以被利用吗？不... JSON.stringify 知道跳过 __proto__ 字段。 ...但是，对代码进行重构可能...[导致]代码库中出现细微的错误和尖锐的边缘情况。&lt;p&gt;那又怎样？这种假设推理非常烦人，尤其是在分析像 javascript 这样的语言时。这里没有发现任何漏洞，并且大多数 Web 开发人员都清楚该语言的危险部分。这几乎和 SAST 扫描给你带来的所有疯狂误报一样糟糕。&lt;p&gt;哦，我只是在等着被那些想告诉我网络开发人员比他们更笨、不可能胜任任何事情的人围攻。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mhitza:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从技术上讲，基于属性的测试发现了这个问题。&lt;p&gt;令我惊讶的是 __proto__ 字符串是字符串采样集中的固定集。虽然我希望该函数返回给定范围内的随机字符串。&lt;p&gt;但这也许是我对使用随机值进行基于属性的测试的偏见期望。将其称为基于属性的测试也感觉有些牵强，因为属性“有效的 setter 和 getter”是什么？因为我希望我的所有课程都能做到这一点。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mananaysiempre:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;TL;DR: obj[key] 与用户控制的 key == “__proto__”是一份持续奉献的礼物；购买我们的人工智能工具，它会编写一些微妙的漏洞，比如您自己在审查中不会发现的漏洞，但它也会编写一些基于属性的测试，这些测试可能会&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://kiro.dev/blog/property-based-testing-fixed-security-bug/</guid>
-      <pubDate>Thu, 18 Dec 2025 23:40:46 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46320395</comments>
+&lt;p&gt;&lt;strong&gt;Top 19 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bentobean:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;现在我们需要的只是每个标题旁边的缩略图，显示作者做了一些愚蠢的表情。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;felineflock:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;读起来很像德拉吉报告，只是需要相同的图表风格。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;DivingForGold:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好吧，事实上，在 HN 上通过付费墙提交文章的滥用出版商数量已经变得荒谬。&lt;p&gt;HN 应该用全红色标明这些标题。&lt;p&gt;《华尔街日报》、《金融时报》、《美国黑人LM》，多得难以计数。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noosphr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这感觉就像是我在 YouTube 上看到的歇斯底里的点击诱饵标题的 6&amp;#x2F;10。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;frereubu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢这个，谢谢你的捧腹大笑。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;latentsea:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谢谢。我恨它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;debo_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;数学被破坏了（到目前为止）：从零到 QED 或回家&lt;p&gt;如果我的数学学位是这样构建的，我可能会更喜欢它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bryanhogan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太神奇了&lt;p&gt;编辑：刚刚发现 HN 删除了表情符号！&lt;p&gt;---&lt;p&gt;更严肃地说，这与实际的算法驱动的社交媒体或基于新闻的平台如此接近，有点令人难过。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ctrlmeta:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;全部大写时完全无法阅读。我想这就是重点。&lt;p&gt;这种事情曾经很有趣。上周发布人工智能生成的假 HN 时很有趣。&lt;p&gt;但没有必要每周都发布这种东西。新鲜感逐渐消失。它很快就会变得无聊和愚蠢。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Tepix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嘿，等一下。我想我们在这里得到了一些东西！我们需要的是相反的，即一个能够识别标题诱饵并“驯服”标题的法学硕士。 （最好是在标题中提供信息，就像 Techmeme 所做的那样 [向他们致敬]）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;marstall:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;其中一些是更好的标题&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qiine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;等等“19世纪电报象棋” ??&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mbsa7:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;到目前为止，我最喜欢的是“Delty (YC X25) 正在招聘，而你可能不合格”。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adlpz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我感到了真正的痛苦。不是开玩笑。&lt;p&gt;这里有一些东西需要调查。&lt;p&gt;让我注意到我实际上在其他地方也接触过非常类似的垃圾。可怕的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NitpickLawyer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所以你重新创造了“r”技术？ :)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;krapp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这个图标应该是艾莫在火前的模因。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;netsharc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;突发新闻：《赫芬顿邮报》收购了《黑客新闻》。&lt;p&gt;至少过去十年的《赫芬顿邮报》是这样的。它们似乎已经很多年没有相关性了。&lt;p&gt;至于其创始人：&lt;a href="http:&amp;#x2F;&amp;#x2F;www.thestacksreader.com&amp;#x2F;the-many-faces-of-arianna&amp;#x2F;" rel="nofollow"&gt;http:&amp;#x2F;&amp;#x2F;www.thestacksreader.com&amp;#x2F;the-many-faces-of-arianna&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nottorp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;点击查看阅读本文时我的血压上升了多少！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;keepamovin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得首页太平静了。我修好了。 &lt;i&gt;你不会相信数字 4。&lt;/i&gt;&lt;p&gt;&lt;i&gt;提示：还记得这个经典吗？ &amp;lt;剪...未来十年的黑客新闻&amp;gt;好吧，我有一个新想法。想尝试吗？ “离题了，但这个标题让我想创建一个平行宇宙版本的 HN 头版，其中每个标题都尖锐、壮观、歇斯底里、紧急、点击率很高。如：
+目前 Kernel Rust 实验的绝对状态
+每条评论都有其置信度——攻击性最高可达 11（尽管仍在网站规则之内）。”现在 HN 的首页是：&lt;snip&gt;&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://dosaygo-studio.github.io/hn-front-page-2035/news-max.html</guid>
+      <pubDate>Fri, 19 Dec 2025 11:21:45 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46324579</comments>
     </item>
   </channel>
 </rss>
