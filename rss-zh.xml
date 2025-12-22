@@ -6,201 +6,195 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 22 Dec 2025 18:41:25 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Dec 2025 21:27:32 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>将 LLM 扩展到更大的代码库</title>
-      <link>https://blog.kierangill.xyz/oversight-and-guidance</link>
-      <description>&lt;p&gt;然后，将该答案添加回提示库中。更重要的是，他们如何回答您的问题。保持一致，并将这些约定编码到您的提示库中。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Scaling LLMs to Larger Codebases&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46354970"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://blog.kierangill.xyz/oversight-and-guidance'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 18 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blauditore:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就像人们正在重新发现最基本的原则：例如该文档（“提示库”）是有用的，或者组织良好的代码可以提高开发速度。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lnx01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;法学硕士非常擅长告诉我一些我知之甚少甚至一无所知的事情，但是当我询问我拥有专业知识的事情时，他们总是失败，产生幻觉，并自信地撒谎......&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;__MatrixMan__:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很想知道我们将在哪里重新定位：组织更大的代码库来容纳代理。&lt;p&gt;我在处理更大的项目并将它们分解为节点为 nix 薄片的有向图时获得了很多乐趣。  如果我在 flake devshell 中启动 claude 代码，它只能访问这些工具，并且它会看到 flake.nix 并假设该项目受 CWD 限制，尽管它实际上要大得多，因此它的上下文很小并且不会被淹没。&lt;p&gt;输入和输出是一种很好的与语言无关的机制，用于在 flake 之间进行协调（只需记住当您想要更新相邻薄片的输出时，请执行“nix flake update --update-input”）。  然后我可以让他们互相编写功能请求并帮助彼此测试固定装置和功能。  我也喜欢看他们就设计进行辩论，他们变得懒惰并假设另一个“团队”正在设计。会做这项工作，但最终会做出一些合理的决定。&lt;p&gt;我已经用这个想法思考了几个星期，也许它很愚蠢，但如果这种重新思考最终没有在我们组织代码的方式上产生根本性的转变，我会感到惊讶，即使细节看起来与我想出的完全不同。  不知何故，我们必须擅长分区上下文，这样我们就可以避免由于提交整个聊天会话历史记录而只是为了获得下一个响应而带来的代币数量指数级增长的最糟糕部分。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dmofp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对此有一些不同的看法（在下面链接的帖子中有所体现）。&lt;p&gt;IMO，提高代码库中 LLM 性能的最佳方法是在代码库本身中构建意义，如 DDD。如果你的代码库对于人类来说很难理解和理解，那么对于法学硕士来说也是一样的。如果你的代码库是非结构化的并且没有可定义的模式，那么 LLM 会更难使用。&lt;p&gt;你可以尝试使用更多的工具和更多的工作流程来克服这个问题，但在我看来，这是在赔钱。这很讽刺，也许不受欢迎，但事实证明，法学硕士证明，所有对语言和意义大喊大叫的人（回复：DDD）都是正确的。&lt;p&gt;DDD &amp;amp; DDD简单福音：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;oluatte.com&amp;#x2F;posts&amp;#x2F;domain-driven-design-simplicity-gospel" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;oluatte.com&amp;#x2F;帖子&amp;#x2F;domain-driven-design-simplicity-go...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tracker1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就在周末，我决定花钱购买顶级 Claude Code 来尝试一下...这绝对是我在个人项目上启用 Github CoPilot 的一年来的一个进步（主要是一种烦恼，而不是我最终完全禁用的帮助）。&lt;p&gt;到目前为止，我已经看到了一些令人印象深刻的输出，并且有几个朋友一直在使用 AI 生成......我正在尝试创建一些遗产（与 BBS 技术相关，在Rust）应用程序来看看它们如何落地。  到目前为止，大部分的计划和结构超出了我花在沉思上的时间。  我不确定我是否能长期证明这笔费用的合理性，但我想多体验一下这种大惊小怪的事情，至少有一个更好的认识。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;EastLondonCoder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最终得到了一个与文章中的指导和监督框架非常接近的工作流程，但有一个额外的分离，这对我来说至关重要。&lt;p&gt;我正在研究一个相当混乱的摄取管道（Instagram 导出 → 缩略图 → 分组“帖子” → 前端渲染）。数据不一致，部分未记录，并且只有在实际查看渲染的输出后才能看到正确性。这使得它不适合天真的一次性攻击。&lt;p&gt;有效的方法是非常明确地划分责任：&lt;p&gt;• 人类（我）：根据现实判断正确性。我查看数据、用户界面，然后说“这六个媒体文件必须折叠成一篇文章”、“故事不应该以这种模式出现”、“时间戳错误”。这部分是无可争议的人性化。&lt;p&gt;• LLM 作为规划师&amp;#x2F;架构师：将这些判断转化为不变量和约束（“按导出容器分组，分组前切勿展平”、“IG 模式必须只考虑媒体&amp;#x2F;帖子&amp;#x2F;*”、“回退绝不能产生空输出”）。该模型对结构进行推理，而不是输入代码。&lt;p&gt;• LLM 作为实施者（Codex 风格）：接收从计划中得出的非常无聊、非常明确的提示。精确的文件，精确的功能，没有解释，没有设计自由。它的工作是机械执行。&lt;p&gt;至关重要的是，我不会要求同一个模型来决定应该更改什么以及如何更改。当我这样做时，返工会爆炸，特别是在基本事实位于代码之外的管道中（真实数据+渲染输出）。&lt;p&gt;这也反映了文章暗示但没有完全阐明的内容：代码库不仅仅是上下文，它是一个契约。一旦规划者层对规则进行编码，实现者就可以一次完成令人惊讶的大更改，因为它不再猜测意图。&lt;p&gt;挑战主要围绕纪律：&lt;p&gt;• 您必须抵制让实现者即兴发挥。&lt;p&gt;• 您必须保持计划小而具体。&lt;p&gt;• 您仍然需要护栏（构建时检查、健全性日志），因为否则错误将被隐藏。&lt;p&gt;但当它起作用时，它的扩展性比长对话提示要好得多。它感觉不太像“与人工智能结对编程”，而更像是监督一个非常快速、非常字面的初级工程师，他永远不会疲倦，而在实践中，这正是这些工具所擅长的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;victorbjorklund:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的工作流程最大的改变是使用库将项目分解为更小的部分。因此，过去我会将所有内容都放在同一个代码库中，但现在我分解了可以独立于其自己的库的内容（例如包装外部 API）。这样，人工智能在处理使用 API 的功能时只需要阅读库的文档，而不必阅读所有代码。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;这是一个 LLM 读写能力试纸：要求同行工程师阅读一些他们不熟悉的代码。他们明白吗？ ... 不？那么 LLM 也不会。&lt;p&gt;当然，但问题恰恰相反：在很多情况下，同行工程师知道该怎么做，但代理不知道。这意味着，与让代理能够理解代码库相比，让人类可以理解代码库需要做更多的工作。&lt;p&gt;&gt;将更多的实施反馈从人类转移到计算机有助于我们提高一次性成功的机会……将这些视为保险杠。你可以通过让法学硕士不可能落入保龄球瓶中来增加其到达保龄球瓶的可能性。&lt;p&gt;有点类似，但这也有点类似于声称 P = NP。有一种有效的方法来可靠地检查解决方案是否正确与找到解决方案的可靠方法完全不同。计算理论告诉我们事实可能并非如此。可能性可能更高，但仍然不够高。尽管理论上 NP 问题比 EXPTIME 问题更容易，但在实践中，在许多情况下（尽管不是全部）它们同样棘手。&lt;p&gt;事实上，我们可以对这一说法进行检验：有一些语言，如 ATS 和 Idris，可以使几乎任何属性都可证明和可检查。这些语言让程序员（人或机器）将“保险杠导轨”定位在适当的位置。如此精确以确保我们达到目标。我们可以要求代理写代码，写正确性证明，然后检查。我们仍然需要检查正确性属性是否正确，但如果声明正确，编码代理应该最擅长用 ATS 或 Idris 编写代码，并附上正确性证明。是吗？&lt;p&gt;显然，里程可能会根据任务和领域的不同而有所不同，但如果编码模型确实会变得更好，那么在许多情况下，最好的行动方案很可能就是等待，而不是花费大量精力来解决当前的局限性，如果能力得到改善，这些精力就会被浪费。这是一个大问题：我们是否会长期处于代理能力大致保持在今天的水平？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;uoaei:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;LCM（大代码模型）的现状如何？ IE。在 AST 而不是文本标记上运行的模型。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mstank:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;随着模型逐渐改进（能够处理更复杂的代码库、更长的文件等），我开始重复使用这个简单的框架，它似乎在缩短复杂修复或新功能方面效果很好。&lt;p&gt;[研究]要求代理解释当前功能，作为将正确文件加载到上下文中的一种方式。&lt;p&gt;[计划]要求代理集体讨论实现新功能或重构的最佳实践方法。头脑风暴似乎是一个可以为座席触发更好的提问循环的关键词。要求它将详细的实施计划写入 md 文件。&lt;p&gt;[清除]完全清除代理的上下文 —-- 比仅仅压缩对话效果更好。&lt;p&gt;[执行计划]要求代理再次审查具体计划，有时它会提出额外的问题，再次重复计划阶段。这仅将计划加载到上下文中，然后让它实施该计划。&lt;p&gt;[审查&amp;amp; test] 再次清除背景并要求其审查计划以确保一切都得到实施。如果需要，我可以在此处添加任何单元或集成测试。还可以运行测试套件、类型检查、lint 等。&lt;p&gt;通过这个循环，我经常让它连续运行 20-30 分钟，最终得到可用的结果。它已经成为一种上下文管理和创建可靠的测试反馈循环的游戏，而不是尝试纯粹的一次性问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tschellenbach:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很久以前就用人工智能术语写过这篇文章:) &lt;a href="https:&amp;#x2F;&amp;#x2F;getstream.io&amp;#x2F;blog&amp;#x2F;cursor-ai-large-projects&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;getstream.io&amp;#x2F;blog&amp;#x2F;cursor-ai-large-projects&amp;#x2F;&lt;/a&gt;&lt;p&gt;但这里的总结是，在正确的指导下，AI 目前在大型代码库上碾压它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vivin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;即使您正在使用法学硕士，您也无法摆脱软件工程的工程部分。我一直在使用 Claude Opus 4.5，它是我尝试过的型号中最好的。我发现如果我事先知道我需要做的步骤，我可以让克劳德很好地工作，并且我可以让它做所有无聊的事情。所以这是一系列非常集中和有针对性的一次性提示，它基本上是正确的，因为我没有给它一个巨大的任务，或者一些开放式的东西。&lt;p&gt;提前知道如何实现解决方案是一个巨大的帮助，因为这样你就可以告诉 LLM 去做那些无聊的事情。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andrewmutz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;本文提出的问题就是为什么我认为高意见框架在使用人工智能辅助编码时会带来更高的开发人员生产力&lt;p&gt;你可能不喜欢框架的所有意见，但法学硕士知道它们，你不需要为其编写任何指南。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;smallerize:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这凸显了 LLM 工具缺失的一个功能，即向用户提问。我一直在 VS Code 中试验 Gemini，它只是通过猜测来填充缺失的信息，然后就开始编写设计段落和一堆代码更改，而这些更改本来可以通过在开始时要求澄清来避免。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mym1990:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果你的提示失败了，你的本能反应就是放弃整个事情，因为你认为这个工具很糟糕，这有点疯狂。很可能是这样，但也可能是用户错误或其他一些原因。如果我知道法学硕士在生产代码中泛滥以试图“扩展它”，那么我就不可能睡个好觉了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aurornis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;使提示库变得有用需要迭代。每当法学硕士稍微偏离目标时，问问自己，“哪些内容可以澄清？”然后，将该答案添加回提示库中。&lt;p&gt;我距离 LLM 高级用户还很远，但这是我一直在使用的投资回报率最高的做法。&lt;p&gt;您必须实际观察 LLM 每次尝试做什么。简单地一遍又一遍地敲击输入或将其设置为自动接受所有内容只会燃烧代币。相反，看看它在哪里被卡住，并向 CLAUDE.md 或同等内容添加一个简短的注释。如果上下文文件变大，请将其分解为子文件，以便为不同类型的工作打开。&lt;p&gt;让 LLM 对每项任务进行搅动和实验将使您的令牌配额在您眼前消失。不断更新上下文文件对您来说是一些额外的工作，但它是有回报的。&lt;p&gt;我的 LLM 的主要用例是探索代码库并为我提供要打开的文件的摘要，通过函数跟踪执行路径，并为我提供所需的信息。添加一些关于如何为特定类型的问题提供有用结果的说明也很有帮助。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CuriouslyC:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;STAN 到了顶部。&lt;p&gt;不错的文章，但感觉就像是对处于边缘的人们已经知道了一段时间的东西进行了 linkedin 的重新整理。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rootnod3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;或者为什么你不应该......&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://blog.kierangill.xyz/oversight-and-guidance</guid>
-      <pubDate>Mon, 22 Dec 2025 15:38:37 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46354970</comments>
-    </item>
-    <item>
-      <title>Claude Code 获得本地 LSP 支持</title>
-      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md</link>
-      <guid isPermaLink="true">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md</guid>
-      <pubDate>Mon, 22 Dec 2025 15:59:01 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46355165</comments>
-    </item>
-    <item>
-      <title>黎智英是自由烈士</title>
-      <link>https://reason.com/2025/12/19/jimmy-lai-is-a-martyr-for-freedom/</link>
-      <description>&lt;p&gt;“我所拥有的一切都是香港给我的。这项立法广泛地将政治异见定为犯罪，并削弱了曾经将香港与中国大陆区分开来的公民自由。他的灰姑娘故事不可能与香港本身分开。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Jimmy Lai Is a Martyr for Freedom&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46355888"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://reason.com/2025/12/19/jimmy-lai-is-a-martyr-for-freedom/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>图解变压器</title>
+      <link>https://jalammar.github.io/illustrated-transformer/</link>
+      <description>&lt;p&gt;在这篇文章中，我们将研究 Transformer——一种利用注意力来提高模型训练速度的模型。每个单词都嵌入到大小为 512 的向量中。它通过将这些向量传递到“自注意力”来处理此列表。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Illustrated Transformer&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46357675"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://jalammar.github.io/illustrated-transformer/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maxglute:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;他还会见了当时的副总统迈克·彭斯和国务卿迈克·蓬佩奥；&lt;p&gt;为了制裁香港政客，顺便说一句，买办叛徒得到了叛徒待遇。男人应该处于247种压力位置的域外劳改状态，但要给孩子治疗，因为中共太宽容了，而他们没有这些。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;QGQBGdeZREunxLe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在移交谈判开始之前，英国就有机会实现香港自由化。你可以感谢默里·麦理浩 (Murray MacLehose)，让他们现在陷入困境。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;blogs.lse.ac.uk&amp;#x2F;lseih&amp;#x2F;2025&amp;#x2F;06&amp;#x2F;13&amp;#x2F;帝国最后退位-英国如何失败香港民主&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;blogs.lse.ac.uk&amp;#x2F;lseih&amp;#x2F;2025&amp;#x2F;06&amp;#x2F;13&amp;#x2F;the-empires-last-ab...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anon291:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;永远不要放弃演讲。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;10xDev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;本周早些时候，这位持不同政见者在香港被判两项与外国势力密谋勾结的罪名&lt;p&gt;&amp;gt;他还会见了时任副总统迈克·彭斯和国务卿迈克·蓬佩奥；在审判中，黎智英作证说，他曾要求他们表达对香港的支持。&lt;p&gt;是的，我认为这不会帮助说服任何人，伙计。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;中国马克思主义一党派在这里发挥了他们的权力作用。&lt;p&gt;有趣的是，“两制一国”索赔 
-被揭露是一个谎言。我可以理解 
-请注意，中国的立场也是如此——毕竟有一场战争
-英国帝国，他们强迫割让领土（例如香港）。
-但这仍然不能抵消当地人的喜好，
-北京只是用武力推平了这里。这就是
-与自由完全对立。习近平下一步将重点关注台湾
-也很清楚。它存在于“DNA”中。中国马克思主义哲学
-（尽管人们可能想知道以中国为中心的马克思主义有多少 
-还剩下；这是一种由独裁统治的资本主义。 
-奇怪的是，美国也正在由技术兄弟过渡到这一点
-寡头。）&lt;p&gt;我们看到自由正在受到侵蚀。我不知道是否
-一直都是这样，还是现在才发生更多
-很快；或更频繁地报道，但在 20 世纪 90 年代末
-我想说，在全球范围内，我们比现在拥有更多的自由。
-不知何故，这种趋势正朝着自由度减少的方向发展。普京入侵
-乌克兰，占领土地并在那里杀人也很严重
-类似于第二次世界大战的借口，以入侵为借口
-苏台德地区被德国占领，然后格莱维茨撒谎出售
-入侵波兰。我认为这里唯一真正的区别是
-更多国家拥有核武器。较小的国家是这样的
-现在陷入两难境地，因为他们无法抵消更大的国家
-没有核武器。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lenerdenator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果说西方（特别是美国）在过去40年里犯了一个严重的误判，那就是认为对中国的投资就等于自由化和民主改革。人们错误地将资本主义视为人权。虽然拥有财产并利用财产来合理地追求自身利益是一项人权，但这并不意味着当前形式的资本主义有利于最大多数人的利益，或者有利于实行资本主义的社会中其他人权的演变。&lt;p&gt;如果投资是自由化的关键，我们会看到当时倒塌的铁幕背后有更大的投资，在铁幕下，各国积极背弃了指令性经济。我内心的愤世嫉俗者认为资本不喜欢这样的结果。如果一个国家的人民能够以暴力（罗马尼亚）或和平（几乎其他地方）的方式消除这种极权主义的政治和经济体系，他们也可以拒绝可能与他们的价值观相冲突的资本积累方法。&lt;p&gt;另一方面，中国当时并没有摆脱计划经济。相反，其结果是国家资本主义。人们可以自由地尝试能够创造经济扩张的新事物，但只能以符合国家需求的方式进行。其他任何事情都会用毛泽东时期处理政治异见者和阶级敌人的极权主义方法来处理。尽管这些年来这种情况有所消退，但它基本上仍然保持着现有的系统。&lt;p&gt;赖是这种误判的受害者。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fibers:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;标题似乎有点夸张了。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://reason.com/2025/12/19/jimmy-lai-is-a-martyr-for-freedom/</guid>
-      <pubDate>Mon, 22 Dec 2025 16:56:35 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46355888</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wrsh07:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Meta：标题中应该有 2018 吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ActorNightly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人们需要摆脱“Key&amp;#x2F;Query&amp;#x2F;Value”这种特殊的想法。&lt;p&gt;网络中的标准深层是矩阵*输入，其中矩阵的每一行是下一层中特定神经元的权重，而变压器基本上是输入* MatrixA、输入*MatrixB、输入*MatrixC（其中向量*矩阵是一个矩阵），然后输出是C*MatrixA*MatrixB*MatrixC。只是在层中添加更多维度。&lt;p&gt;因此，当您展开矩阵时，您可以使用一组深层来表示整个 Transformer 架构，其中不需要的乘法部分有很多零。&lt;p&gt;这是一个相当复杂的博客，但它表明它只是一路向下的所有矩阵乘法。 &lt;a href="https:&amp;#x2F;&amp;#x2F;pytorch.org&amp;#x2F;博客&amp;#x2F;矩阵内部&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;pytorch.org&amp;#x2F;博客&amp;#x2F;inside-the-matrix&amp;#x2F;&lt;/a&gt;。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Koshkin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;（跑题了。）变压器解释教程的数量正变得势不可挡。让我想起了单子（或者可能是微积分）。有人在某个时刻感受到了启蒙的火花（事实上，通常，他们仍然深感困惑），并渴望与广大观众分享他们新获得的（错误的）理解。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gustavoaca1997:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我有这本书。几个月前，当我的团队决定在我们的系统中使用法学硕士时，这确实是我的救星。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;boltzmann_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;还要感谢 Transformer Explainer 团队提供了一些令人惊叹的可视化效果 &lt;a href="https:&amp;#x2F;&amp;#x2F;poloclub.github.io&amp;#x2F;transformer-explainer&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;poloclub.github.io&amp;#x2F;transformer-explainer&amp;#x2F;&lt;/a&gt;
+读完这两篇文章并观看 3blue1brown 视频后，我真的很感动&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;laser9:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;以下是作者本人（jayalammar）关于学习变形金刚的其他好资源的评论：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=35990118"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=35990118&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;profsummergig:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;还没看过...&lt;p&gt;...但是，如果您有最喜欢的关于理解问答的资源，请阅读以下内容： K，请在下面的评论中留言...&lt;p&gt;（我看过 Grant Sanderson&amp;#x2F;3blue1brown 视频 [包括他在 TNG Big Tech Day &amp;#x27;24 上的精彩演讲]，但 Q &amp; K 仍然让我无法理解）。&lt;p&gt;提前谢谢您。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://jalammar.github.io/illustrated-transformer/</guid>
+      <pubDate>Mon, 22 Dec 2025 19:15:56 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46357675</comments>
     </item>
     <item>
-      <title>Benn Jordan – 这次 Flock 相机泄露就像 Netflix 的《潜行者》[视频]</title>
-      <link>https://www.youtube.com/watch?v=vU1-uiUlHTo</link>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=vU1-uiUlHTo</guid>
-      <pubDate>Mon, 22 Dec 2025 17:19:44 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46356182</comments>
-    </item>
-    <item>
-      <title>AI浴室监视器？欢迎来到美国新的监视高中</title>
-      <link>https://www.forbes.com/sites/thomasbrewster/2025/12/16/ai-bathroom-monitors-welcome-to-americas-new-surveillance-high-schools/</link>
-      <guid isPermaLink="true">https://www.forbes.com/sites/thomasbrewster/2025/12/16/ai-bathroom-monitors-welcome-to-americas-new-surveillance-high-schools/</guid>
-      <pubDate>Mon, 22 Dec 2025 17:53:46 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46356603</comments>
-    </item>
-    <item>
-      <title>巨石探测器</title>
-      <link>https://hengefinder.rcdis.co/#learn</link>
-      <description>&lt;p&gt;使用此工具来查找您的街道何时会出现下一个巨石阵。步骤 2：调整箭头以匹配街道方向 我们已根据地图数据估计了您街道的方向。第三步：找到巨石阵，我们走吧。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Henge Finder&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46356320"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://hengefinder.rcdis.co/#learn'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>超声波癌症治疗：声波对抗肿瘤</title>
+      <link>https://spectrum.ieee.org/ultrasound-cancer-treatment</link>
+      <description>&lt;p&gt;“联合治疗可以对抗复发性癌症和超声波可能漏掉的微小肿瘤，同时还能发挥令人惊讶的益处。组织解剖学通常似乎会刺激免疫反应，帮助身体攻击超声波未直接靶向的癌细胞。研究人员现在正在探索将组织解剖学与免疫疗法结合起来的方法，以放大这种效果。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ultrasound Cancer Treatment: Sound Waves Fight Tumors&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46357945"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://spectrum.ieee.org/ultrasound-cancer-treatment'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;re:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在移动设备上，除了“请从台式电脑和笔记本电脑访问”之外没有其他信息，因此对于不靠近笔记本电脑的其他人：&lt;p&gt;&gt;查找太阳何时与您的街道对齐以获得完美的日落景观（例如曼哈顿悬格）。&lt;p&gt;&gt; * 输入地址以检查是否与日落对齐（或更具体地说，在日落前一点对齐，即太阳位于 50° 的最后一刻）&lt;p&gt;&gt; * 显示街道方位和太阳对准信息&lt;p&gt;&gt; * 显示坐标和下一个悬格日期（如果有）&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;vritvo&amp;#x2F;henge_finder" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;vritvo&amp;#x2F;henge_finder&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://hengefinder.rcdis.co/#learn</guid>
-      <pubDate>Mon, 22 Dec 2025 17:32:18 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46356320</comments>
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chaboud:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;几年前，我有机会在 Canopy Cancer Collective（胰腺癌焦点小组 - &lt;a href="https:&amp;#x2F;&amp;#x2F;canopycancer.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;canopycancer.org&amp;#x2F;&lt;/a&gt;）年会上与来自 Histosonics 的人员会面。  他们在肝癌方面表现出了非常有希望的结果（和批准），并且根据物理学，它们似乎很可能适用于任何软组织可公开寻址的肿块（例如，不是头骨中的大脑，不是充满空气的肺部）。 （注：我是一名消费电子和机器学习工程师，而不是医疗设备工程师）。&lt;p&gt;我很高兴看到此选项得到更广泛的应用。精确瞄准并引发炎症反应的能力令人印象深刻，惠普尔并不是开玩笑。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;YossarianFrPrez:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;根据这篇文章，这似乎比标题所暗示的更好：&lt;p&gt;&gt;组织解剖通常似乎会刺激免疫反应，帮助身体攻击超声波未直接靶向的癌细胞。伍德解释说，肿瘤的机械破坏可能会留下可识别的癌症蛋白痕迹，帮助免疫系统学会识别和破坏身体其他部位的类似细胞。研究人员现在正在探索将组织解剖学与免疫疗法结合起来的方法，以放大这种效果。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cogman10:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;由于一些家庭事务，这是我一直在调查的事情。  我的肿瘤科医生说“这可能会在几年内成为标准护理”。  围绕此的结果和研究非常出色。&lt;p&gt;这比其他任何东西都更好，因为它将细胞的破坏隔离到目标上。  肝脏是一个非常“流血”的地方。器官。  它有大量的血液流过，这使得手术变得格外困难。  事实上，最适合我们情况的手术不是腹腔镜手术，通过动脉在癌症中心投放放射性颗粒。&lt;p&gt;这种手术的非侵入性对于癌症治疗的未来非常有好处。  最大限度地减少对组织的疤痕和损伤是获得更好结果的首要因素。&lt;p&gt;我当地的肿瘤科医生没有这台机器的唯一原因是它们仍然相当昂贵。&lt;p&gt;当我第一次了解到这一点时，我认为这是伪科学胡言乱语。  仅用声音就能完成的事情真是太疯狂了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mcbain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;以前：&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45514378"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45514378&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CGMthrowaway:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;以这种方式破坏肿瘤，从而在身体其他部位播下癌症的机会有多大？ 2024 年播种荟萃分析我没有在那里看到超声波：&lt;a href="https:&amp;#x2F;&amp;#x2F;pubmed.ncbi.nlm.nih.gov&amp;#x2F;39605885&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;pubmed.ncbi.nlm.nih.gov&amp;#x2F;39605885&amp;#x2F;&lt;/a&gt;&lt;p&gt;以下是一项专门针对此类超声检查的 AE 的研究：&lt;a href="https:&amp;#x2F;&amp;#x2F;journals.plos.org&amp;#x2F;plosone&amp;#x2F;article?id=10.1371&amp;#x2F;journal.pone.0026110" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;journals.plos.org&amp;#x2F;plosone&amp;#x2F;article?id=10.1371&amp;#x2F;journal...&lt;/a&gt;&lt;p&gt;引用：“空化使癌细胞”栓子从原发部位分离，从而将它们释放到循环中，导致转移”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jtbaker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为最近被诊断并接受葡萄膜黑色素瘤治疗的人（每年进行一次眼科检查和视网膜扫描！），并且偶尔会与一些关于肝脏代谢的潜力的侵入性想法作斗争，阅读有关这种治疗的文章给我带来了很多快乐。祝福甄旭！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmward01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;成像、廉价情报和诸如此类的非侵入性（主要是）工具的进步是惊人的。我可以轻松地预见未来，我们可以扫描和分析体内的每个细胞，然后有选择地操纵它们以达到预期的效果。我怀疑我们实际上离得那么远。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;melling:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该机器用于治疗肝脏肿瘤已经有几年了。它在美国的几个城市都可以使用，但并未广泛使用。它利用空化作用来破坏肿瘤。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.mdanderson.org&amp;#x2F;cancerwise&amp;#x2F;histotripsy-for-liver-cancer--what-to-know-about-this-novel-cancer-treatment.h00-159773289.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.mdanderson.org&amp;#x2F;cancerwise&amp;#x2F;histotripsy-for-liver-...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;0xWTF:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;组织解剖学的意思是“细胞粉碎”。我们知道肿瘤床的破坏（粉碎或其他方式）往往会引发局部炎症反应，而剧烈的炎症反应似乎与生存相关。因此，这里的想法似乎是为碎石术（分解肾结石）而开发的高能超声方法的延伸，以破坏肿瘤床。对于癌前病变来说，这不是我想要的，但如果是第 4 期肝脏代谢综合征……当然可以。努力吧。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;darkerside:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是个愚蠢的问题，但是这种方法不会有将致癌蛋白质传播到全身的风险吗？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://spectrum.ieee.org/ultrasound-cancer-treatment</guid>
+      <pubDate>Mon, 22 Dec 2025 19:37:34 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46357945</comments>
     </item>
     <item>
-      <title>Uplane (YC F25) 正在招聘创始工程师（全栈和人工智能）</title>
-      <link>https://www.useparallel.com/uplane1/careers</link>
-      <guid isPermaLink="true">https://www.useparallel.com/uplane1/careers</guid>
-      <pubDate>Mon, 22 Dec 2025 17:00:34 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46355932</comments>
-    </item>
-    <item>
-      <title>上周断电后，NIST 与 UTC 相差 5 微秒</title>
-      <link>https://www.jeffgeerling.com/blog/2025/nist-was-5-μs-utc-after-last-weeks-power-cut</link>
-      <description>&lt;p&gt;他们有备用发电机。在主备用发电机发生故障后，他们能够重新路由应急电源。但即使有多个时间源，有些地方仍然需要更多。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; NIST was 5 μs off UTC after last week's power cut&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46355949"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.jeffgeerling.com/blog/2025/nist-was-5-μs-utc-after-last-weeks-power-cut'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>GLM-4.7：提高编码能力</title>
+      <link>https://z.ai/blog/glm-4.7</link>
+      <description>&lt;p&gt;Live StyleCyber​​ DomainArtistic PortfolioPrompt构建一个html网站，高对比度深色模式+粗体压缩标题+动画股票+厚实的类别芯片+磁性CTA。查看 Z 处的完整轨迹。 6向下滚动查看更多内容。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; GLM-4.7: Advancing the Coding Capability&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46357287"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://z.ai/blog/glm-4.7'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gnabgib:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;来自 NPR（22 分）&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46351105"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46351105&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;更多讨论：&lt;p&gt;&lt;i&gt;NIST Boulder 的 NTP 断电&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46334299"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46334299&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qmr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;啊，就在您认为可以信任 time.nist.gov&lt;p&gt;社区提供的更可靠替代方案的建议时？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.jeffgeerling.com/blog/2025/nist-was-5-μs-utc-after-last-weeks-power-cut</guid>
-      <pubDate>Mon, 22 Dec 2025 17:01:28 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46355949</comments>
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maxdo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是他们排除了 4.5 部作品:)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;larodi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从我对这些模型的有限接触来看，它们似乎非常非常非常有前途。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gigatexal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;即使这比大型模型 Claude、openai 或 Gemini 落后一两次迭代，它也显示出巨大的进步。希望这变得越来越好，我可以在本地运行它，而且它不会融化我的电脑。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jtrn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的速记：MoE 模型针对编码代理、复杂推理和工具使用进行了大幅优化。 358B&amp;#x2F;32B 活动。 vLLM&amp;#x2F;SGLang 仅支持这些引擎的主分支，而不是稳定版本。支持OpenAI风格的工具调用。多语种英汉初级。上下文窗口：200k。声称 Claude 3.5 Sonnet&amp;#x2F;GPT-5 级别性能。 FP16 中为 716GB，Q4_K_M 可能为 220GB。&lt;p&gt;我最重要的收获是，理论上，我可以获得“相对”的内存。便宜的 Mac Studio 并在本地运行它，并获得可用的编码帮助，而无需依赖任何大型 LLM 提供商。也许还可以利用 Kimik2。我喜欢开放式重量模型正在追赶专有模型的脚。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Tiberium:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;前端示例，尤其是第一个示例，看起来与 Gemini 3 Pro 通常生成的示例惊人地相似。做你想做的:)&lt;p&gt;编辑：还检查了他们分享的聊天记录，思考过程与原始（不是总结的）Gemini 3 CoT 非常相似。所有粗体部分，编号列表。这是一种非常独特的 CoT 风格，之前只有 Gemini 3 有:)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;XCSme:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，考虑到 Gemini 3.0 Pro 在表格视图中表现最好，他们没有将 Gemini 3.0 Pro 纳入条形图比较中。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cmrdporcupine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;现在在 Crush 中运行它，到目前为止给人留下了深刻的印象。它看起来与 Sonnet 大致处于同一区域，但不如 Opus 或 GPT 5.2。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esafak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;终端替补得分看起来很弱，但除此之外还不错。我希望一旦基准饱和，公司就可以专注于缩小模型。在那之前，让比赛继续进行吧。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://z.ai/blog/glm-4.7</guid>
+      <pubDate>Mon, 22 Dec 2025 18:46:32 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46357287</comments>
     </item>
     <item>
-      <title>您的 Supabase 是公开的</title>
-      <link>https://skilldeliver.com/your-supabase-is-public</link>
-      <description>&lt;p&gt;Supabase URL 和匿名密钥。我开始想知道有多少比例的用户实际上犯了这个错误。同样，您可以采取这样的立场：这是用户方面的技能问题，但我对此不确定。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Your Supabase Is Public&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46355345"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://skilldeliver.com/your-supabase-is-public'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>文斯·赞佩拉去世</title>
+      <link>https://comicbook.com/gaming/news/vince-zampella-developer-of-call-of-duty-and-battlefield-dead-at-55/</link>
+      <description>&lt;p&gt;文斯·赞佩拉 (Vince Zampella) 凭借原版《现代战争》系列继续带领《使命召唤》进入粉丝们所说的“黄金时代”。该工作室愿意通过《星球大战绝地》系列扩展到第三人称动作游戏，这也导致了我们多年来获得的一些最好的星球大战游戏。游戏 2 天前 《街头霸王》的创作者离开 Capcom，并在 34 年前发布了 1990 年代最好的格斗游戏之一 今天游戏 1 天前 EA 游戏在 12 年后毫无通知地永久下架 游戏 3 天前 新蝙蝠侠：动画系列游戏揭晓（这是 DC 粉丝的梦想）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Vince Zampella has died&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46358437"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://comicbook.com/gaming/news/vince-zampella-developer-of-call-of-duty-and-battlefield-dead-at-55/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;leshokunin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常不幸。感谢你们带来的美好时刻。你创造了这么多。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bitwize:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我当时就想，哇哦，他同时也是两个热门军事模拟器 FPS 系列游戏的成员？这就像乔治·卢卡斯被叫去拍摄《星际迷航》。&lt;p&gt;世界失去了一位泰坦。没有双关语的意思。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hamza_q_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感谢文斯的 COD：MW2 (2009)。我童年的游戏。
+安息。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ViktorRay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我记得在从百视达租用原版《使命召唤：现代战争 2》后的第二天就玩了它。那场比赛是一次令人难以置信的体验。&lt;p&gt;感谢 Vince Zampella 以及所有为这款游戏付出努力的人，留下了这些回忆。&lt;p&gt;安息吧&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dralley:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;《泰坦天降 2》非常精彩，而《BF6》无疑是该系列近十年来最好的作品。  《Apex 英雄》也很棒。&lt;p&gt;安息吧。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;firesteelrain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哇！太悲伤了，这是一条多么可怕的路。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;toomuchtodo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Vince_Zampella" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Vince_Zampella&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Infinity_Ward" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Infinity_Ward&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Respawn_Entertainment" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Respawn_Entertainment&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;journal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“一名乘客被弹出，司机被困在燃烧的车辆中死亡”&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://comicbook.com/gaming/news/vince-zampella-developer-of-call-of-duty-and-battlefield-dead-at-55/</guid>
+      <pubDate>Mon, 22 Dec 2025 20:12:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46358437</comments>
+    </item>
+    <item>
+      <title>垃圾收集手册</title>
+      <link>https://gchandbook.org/index.html</link>
+      <description>&lt;p&gt;第二版 Richard Jones 的垃圾收集（Wiley，1996）是自动内存管理领域的一本里程碑式的书。除了简单和传统的算法之外，本书还涵盖了最先进的并行、增量、并发和实时垃圾收集。网络资源 在线书目数据库包括近 3,400 种与垃圾收集相关的出版物。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Garbage Collection Handbook&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46357870"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://gchandbook.org/index.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anxman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Supabase 默认情况下不创建公共用户表。用户架构已通过身份验证并受到保护。问题在于，不熟练的开发人员出于方便而绕过这些控制，并将数据放入公共而不使用 RLS。甚至 Supabase 文档也对此发出警告。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ErroneousBosh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么像二十多年前的 MongoDB 吗？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://skilldeliver.com/your-supabase-is-public</guid>
-      <pubDate>Mon, 22 Dec 2025 16:14:43 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46355345</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iainctduncan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我有这个，写得很好，很详尽。强烈推荐！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OptionOfT:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最喜欢的关于垃圾收集的故事：&lt;a href="https:&amp;#x2F;&amp;#x2F;devblogs.microsoft.com&amp;#x2F;oldnewthing&amp;#x2F;20180228-00&amp;#x2F;?p=98125" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;devblogs.microsoft.com&amp;#x2F;oldnewthing&amp;#x2F;20180228-00&amp;#x2F;?p=98...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://gchandbook.org/index.html</guid>
+      <pubDate>Mon, 22 Dec 2025 19:30:18 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46357870</comments>
     </item>
     <item>
-      <title>Flock 将其人工智能摄像头暴露在互联网上。我们追踪自己</title>
-      <link>https://www.404media.co/flock-exposed-its-ai-powered-cameras-to-the-internet-we-tracked-ourselves/</link>
-      <description>&lt;p&gt;与 Flock 的许多摄像头不同，Flock 的 Condor 摄像头旨在记录和跟踪行人，而不是车辆，而 Flock 的 Condor 摄像头是云台变焦 (PTZ) 摄像头，旨在记录和跟踪行人。几分钟后，他出现在自行车道另一处暴露的摄像机直播中。乔丹还在桃树溪绿道自行车道上的几个摄像机前拍摄了自己的照片。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Flock Exposed Its AI-Powered Cameras to the Internet. We Tracked Ourselves&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46355548"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.404media.co/flock-exposed-its-ai-powered-cameras-to-the-internet-we-tracked-ourselves/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>美国阻止所有海上风电建设，称原因属于机密</title>
+      <link>https://arstechnica.com/science/2025/12/us-government-finds-new-excuse-to-stop-construction-of-offshore-wind/</link>
+      <description>&lt;p&gt;内政部非常腼腆。最近的施工更新表明，工作主要集中在将电力带上岸的设施上。许多受影响的州都指望这些设施将提供电力，并可能会反对此举。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; US blocks all offshore wind construction, says reason is classified&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46357881"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arstechnica.com/science/2025/12/us-government-finds-new-excuse-to-stop-construction-of-offshore-wind/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;neogodless:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;相关：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46356182"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46356182&lt;/a&gt; &lt;i&gt;Benn Jordan – 这群相机泄露就像 Netflix 的跟踪者&lt;/i&gt; [视频] (youtube.com)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;everdrive:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那里变得非常疯狂。你对此有什么办法？避开人口稠密的地区？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eddyg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，它们应该受到保护，这样只有执法部门才能接触到它们。&lt;p&gt;但是，如果您的配偶、SO、姐妹、母亲、女朋友等在安装了 Flock 摄像头的公园慢跑时遭到袭击，而且执法部门可以通过该摄像头快速识别、追踪、逮捕和指控罪犯，那么您绝对会受到攻击。感谢技术。没有什么比被告知“我们没有任何线索”更糟糕的了。当你关心的人受到攻击时。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eightysixfour:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不希望这些相机存在，但是，&lt;i&gt;如果它们要存在&lt;/i&gt;，如果它们可以公开访问，我们的生活是否会更好？至少，这将使他们授予的权力更加分散，人们会更加认识到他们的存在和能力。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bromuk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;确实很棒的调查，“vibe coded”的 URL 是什么？网站有访问链接吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;edot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Flock 或他们的捍卫者会以“哦，这些配置错误”或“是的，黑客行为是非法的，只有警察应该拥有这些数据”为借口。问题不是以上任何一个。问题首先在于这个镜头的收集和整理！当然，我不希望黑客一直监视我，但我绝对不相信国家或大型企业一直监视我。事实上，黑客对我的关心较少。我很高兴本·乔丹和其他人给予了它所需的播出时间，但他们将信息的重点放在安全漏洞上，而不是国家监视上。因此，Flock 可以说“好吧，我们会在安全方面做得更好”，而官僚、普通郊区居民和执法机构会说“好吧，他们修复了漏洞，我现在很高兴”&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dvtkrlbs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我刚刚看了本乔丹的视频。即使这只是他们某些相机上的配置错误，这也是可怕的，我认为他们应该为此以及他们之前的无数 CVE 负责。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.404media.co/flock-exposed-its-ai-powered-cameras-to-the-internet-we-tracked-ourselves/</guid>
-      <pubDate>Mon, 22 Dec 2025 16:31:40 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46355548</comments>
+&lt;p&gt;&lt;strong&gt;Top 28 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jeffbee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哈哈，业余爱好者。加州在这方面遥遥领先。多年来，我们一直在利用我们自己的环境法规封锁我们自己的海上风场，并且在可预见的未来我们将继续这样做。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MisterBastahrd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;原因是唐纳德·特朗普。&lt;p&gt;他讨厌海上风力发电，因为这妨碍了他在度假村欣赏海景。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LgWoodenBadger:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是在格陵兰岛问题上再次向丹麦施加压力。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alecco:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;奥卡姆剃刀：海上风电需要大量稀土作为磁铁等。美国军工联合体需要不受中国出口管制的仅存的一点全球供应。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Surac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我感觉真正的原因是“钻婴儿钻”。实际政府并没有隐藏其对碳基能源的热爱&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;d--b:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;特朗普不喜欢风电场，因为他们在他的苏格兰高尔夫俱乐部海岸附近建造了一些风电场。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Trump_International_Golf_Club_Scotland_Ltd_v_The_Scottish_Ministers" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Trump_International_Golf_Club_...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mullingitover:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一条通往农奴制的道路（以及通往 1789 年法国的道路），以及过去几年能源价格的变化[1]。&lt;p&gt;新型太阳能+电池和风能的价格现在应该会将化石燃料能源价格推向悬崖，除非您生活在石油国家。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;fred.stlouisfed.org&amp;#x2F;series&amp;#x2F;APU000072610" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;fred.stlouisfed.org&amp;#x2F;series&amp;#x2F;APU000072610&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ekjhgkejhgk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;原因是拥有这些库。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BenFranklin100:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太愚蠢了。我们正处于能源短缺之中，而且只会变得更糟。&lt;p&gt;在“MAGA”阻止风能和“进步”阻止核能之间，美国只剩下太阳能和碳。&lt;p&gt;太阳能很好，但它需要 24&amp;#x2F;7 基地。不幸的是，越来越多的情况表明碱仍将是碳。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dlt713705:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;下一步是入侵委内瑞拉并开采尽可能多的石油&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;teaearlgraycold:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;老人对着大粉丝大喊大叫。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;meroes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果芬特是大规模杀伤性武器，那么涡轮机也是大规模杀伤性武器！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mv4:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;特朗普媒体与一家聚变能源公司合并。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ch2026:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在特朗普将飓风归咎于海上风车之前，我们可以建立一个综合市场吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;linuxhansl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这……看来我们已经进入了故意造成伤害的境界了。
+我想起威胁征收关税，成功地阻止了全球船舶排放碳税。&lt;p&gt;与此同时，中国放弃了所有清洁能源技术（太阳能、风能、电池等），而我们坚持使用化石燃料，从而挽救了不到 20 万个就业岗位。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blahedo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一整年都在想，当行政部门发布没有法律资格发布的命令时会发生什么？总的来说，每个人都只是……跟随他们。  这可能是另一个例子（我对本案的法律细节了解不够，尽管肯定还有其他在这方面更加可靠的例子）。&lt;p&gt;如果相关州——马萨诸塞州、罗德岛州、康涅狄格州、纽约州、新泽西州和弗吉尼亚州——只是说“不继续，继续建设”，那么这里的执行机制是什么？  如果公司继续建设，会发生什么？  我并不是说他们&lt;i&gt;应该&lt;/i&gt;，但在这一点上，法治已经严重崩溃，我真的不知道当政府发明新规则而人们只是......忽视它时会发生什么。  （特别是如果州级执法机构决定不合作的话。）他们会引入联邦调查局吗？军队？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;catigula:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，当我们在欧洲和美国各地发生单方面未得到回应的无人机入侵时，人们非常怀疑这是否有正当的防御理由。&lt;p&gt;显然正在发生某种军备竞赛，其中一些是公开的。&lt;p&gt;世界正处于许多技术快速发展的悬崖上。技术将受到严格监管的想法并非不可想象。&lt;p&gt;仅供参考，瑞典去年也做了同样的事情。可能有（无人机）原因，这几乎是完全清楚的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tony_cannistra:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对此进行了一些研究，因为我很好奇。我猜表面上的“国家安全”是为了保护国家安全。这样做的基本原理（显然不是唯一的原因！）是涡轮机严重降低了海岸线雷达监视的效用。&lt;p&gt;这对于低空入侵和无人机尤其重要。&lt;p&gt;现在，其他大型政府（英国）已经通过多种方式解决了这个问题，包括在涡轮机发电场本身上和内部部署额外的雷达。&lt;p&gt;很明显，这是出于政治动机，他们正在利用看似真实但可以解决的问题作为替罪羊。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;linuxftw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;公平地说，绝对可能存在国家安全问题。  一个例子可能是海底（甚至水面）导航。  如果海岸线上散布着离岸的风车，这可能会对潜艇航行路线产生负面影响。  这显然是我们不想与对手分享的信息。  可能有海底机密电缆。  可能有机密声纳站。  由于额外的噪音等原因，可能很难检测到风车场内的敌方潜艇。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dvh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;普京的命令？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shmerl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当然，他们会归类真正的原因——政府腐败。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kylehotchkiss:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与此同时，我们的热电厂涡轮机多年来一直短缺。在士气提高之前，电费账单的殴打将继续下去。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iamnotsure:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“结肠镜检查”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;therobots927:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我更有理由投资购买个人风车。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lateforwork:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;沙特通过商业交易对特朗普拥有巨大影响力。卡塔尔通过他们赠送给特朗普的飞机，阿联酋通过加密货币交易也是如此。&lt;p&gt;这些石油资源丰富的国家并不热衷于清洁能源。&lt;p&gt;那么，特朗普取消美国的风能和太阳能项目仅仅是巧合吗？&lt;p&gt;此前，特朗普还取消了美国最大的太阳能项目。该项目计划在内华达沙漠进行，名为 Esmeralda 7，将产生足够的能源为近 200 万户家庭供电。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;josefritzishere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;纯粹的白痴。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;msie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;原因：&lt;p&gt;1) 拥有自由银行&lt;p&gt;2) 石油利益&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;早些时候：&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46355227"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46355227&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arstechnica.com/science/2025/12/us-government-finds-new-excuse-to-stop-construction-of-offshore-wind/</guid>
+      <pubDate>Mon, 22 Dec 2025 19:31:11 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46357881</comments>
     </item>
     <item>
-      <title>美国在科学和医学各个领域的资助减少</title>
-      <link>https://www.nytimes.com/interactive/2025/12/02/upshot/trump-science-funding-cuts.html</link>
-      <description>&lt;p&gt;今年，发生了一些不寻常的事情……从一月份开始，特朗普政府停止了这笔资金。研究人员还有一年的时间来花这笔钱。研究人员还有一年的时间来花这笔钱。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The U.S. Is Funding Fewer Grants in Every Area of Science and Medicine&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46355077"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.nytimes.com/interactive/2025/12/02/upshot/trump-science-funding-cuts.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>我在构建 passkeybot 时学到的有关密钥的知识</title>
+      <link>https://enzom.dev/b/passkeys/</link>
+      <description>&lt;p&gt;当用户在用户验证 = true 的情况下使用其密码登录时，SEP 需要首先进行生物识别/密码身份验证，然后再使用私钥对数据进行签名。证明证明所使用的设备硬件：证明证明什么硬件和软件组合创建了密钥对。问题是认证数据还允许指纹识别，因为它准确地揭示了用户正在使用的硬件。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Things I learnt about passkeys when building passkeybot&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46357451"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://enzom.dev/b/passkeys/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 14 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;softwaredoug:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令人悲哀的是，相对于他们在联邦预算中的部分而言，这项投资是多么微不足道。它对联邦赤字几乎没有影响（今年的赤字将比以往任何时候都高）&lt;p&gt;这完全是表演性的&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blindriver:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;少箭背后多木头。&lt;p&gt;这很好。&lt;p&gt;大多数研究都是博士的普遍基本收入，没有真正的好处。更糟糕的是，大多数研究都无法再重复。&lt;p&gt;我们需要确定最高质量的研究项目并为这些项目提供资金。在与学术界和研究联系在一起之后，随机博士的抱怨和哭泣都是为了他们自己的利益，而不是为了我们集体的利益。大多数研究不值得资助。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jacobgorm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您是疫苗怀疑论者并且是 CDC 主任的私人朋友 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.statnews.com&amp;#x2F;2025&amp;#x2F;12&amp;#x2F;18&amp;#x2F;cdc-grant-controversial-researchers-ties-to-tracy-beth-hoeg&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.statnews.com&amp;#x2F;2025&amp;#x2F;12&amp;#x2F;18&amp;#x2F;cdc-grant-controversial-...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sebow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请说服我政府如何。资金来源优于私营部门。在人们跳入“晚期资本主义，一切都将受到利润激励”之前我不明白像寻找一种新的良药、下一个推进系统、新的最有效的能源解决方案等这样的事情是如何发生的。无法与更多的理论领域联系起来，我假设这些领域是受此影响的科学领域中的一些（如果不是大部分的话）。&lt;p&gt;一切都可以“出售”，尤其是在当今时代，新的可发现性方法不断涌现。但我认为科学家不需要“出售”科学。资本主义意义上的东西。他们需要将新发现的希望与发明家、创新者和企业家联系起来。当然，有些事情可能会“失败”。由于未能适应市场而继续下去，或者某些科学发现可能被用于坏事（道德上），但这是（1）不可避免的，（2）科学家和科学家的责任。购买最终产品和服务的人。如果我没记错的话，最坏的“邪恶”等等。这些发现是由为政府“国王”等工作的科学家们做出的。纵观历史。如果说有什么不同的话，那就是通过资本主义市场实现科学民主化似乎是发展自我维持的科学的更有益的方式。关键是透明度，私营部门的透明度可能较低，尤其是在涉及腐败的情况下（假设政府要求透明度）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maerF0x0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为一名纳税人，我厌倦了为每个人的项目提供资金。特别是在管理着数十亿美元、像对冲基金一样运作的私人机构中，却没有增加其摄入量。是时候解决赤字并消除我们的债务了。&lt;p&gt;如果反驳是“是的，但进步改善了经济” -- 私营部门可以资助具有经济基础的机遇项目，他们可以承担风险，他们可以看看它在市场上是否有利可图（即有益）&lt;p&gt;如果反驳是“美国将如何保持竞争力？”无论如何，我们似乎无法保守商业秘密。 [1]&lt;p&gt;[1] - &lt;a href="https:&amp;#x2F;&amp;#x2F;www.bbc.com&amp;#x2F;新闻&amp;#x2F;world-asia-china-64206950" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.bbc.com&amp;#x2F;news&amp;#x2F;world-asia-china-64206950&lt;/a&gt;&lt;p&gt;编辑：另外，一次四年可能也是一个更好的选择，因为这让他们在政治上不那么紧张。无论谁的团队在任，你都会得到 4 年的任期。无论您的隶属关系如何，这都应该是一场胜利。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对基础科学和医学的资助应该是两党共同获胜的问题。这对美国有好处。这对世界有好处。它最终有助于改善穷人的生活。对生意有帮助。这是政府可以而且应该做而私营企业很难做到的事情。它有助于人类知识。我有动力扭转这一趋势。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oulipo2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们热烈欢迎所有来到欧洲的研究人员！请来吧，我们热爱科学（和艺术），希望共同建设一个包容、开放的社会！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bgwalter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一切都与“人工智能”、“加密货币”有关。和物质填充。真正的科学或有用的经济活动（例如建造房屋）没有立足之地。&lt;p&gt;这是加密货币人工智能物质沙皇发布的最新虚假民意调查，马斯克转发了该民意调查，马斯克自称是“人工智能”专家。不久前持怀疑态度的人：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;xcancel.com&amp;#x2F;DavidSacks&amp;#x2F;status&amp;#x2F;2003141873049952684#m" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;xcancel.com&amp;#x2F;DavidSacks&amp;#x2F;status&amp;#x2F;2003141873049952684#m&lt;/a&gt;&lt;p&gt;获得亿万富翁的青睐才是这些人所关心的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pfdietz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不关心科学的全球正外部性是不关心污染的全球负外部性的另一面。  所以至少特朗普政府是一致的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;礼物链接：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.nytimes.com&amp;#x2F;互动&amp;#x2F;2025&amp;#x2F;12&amp;#x2F;02&amp;#x2F;结果&amp;#x2 F;trump-science-funding-cuts.html?unlocked_article_code=1.-k8.SUW2.Yjs3oBn1x3zj&amp;amp;smid=url-share" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.nytimes.com&amp;#x2F;interactive&amp;#x2F;2025&amp;#x2F;12&amp;#x2F;02&amp;#x2F;upshot&amp;#x2F;特朗普-...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bane:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认识的从事生命科学研发（基本上是任何生物领域）工作的人的资金都被彻底消灭了。拥有 20 年兼职高中教师副业经验的博士，担任技术支持职位的实验室工作人员的工资本来就很糟糕。&lt;p&gt;更糟糕的是，在这些领域的&lt;i&gt;大多数&lt;/i&gt;中，你甚至在获得博士学位后才&lt;i&gt;开始&lt;/i&gt;工作。&lt;p&gt;4 年将是一段很长的时间，无法为基本上 4 整个班级的研究人员提供足够的资金博士课程。恢复我们的研究项目可能需要几十年的时间。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ghjv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果一个人想努力增加对科学发展的资助，应该如何定位自己和自己的职业？除了明显的“通过做一些极其有利可图的事情赚到一大笔钱，然后自己分配这些钱”&lt;p&gt;编辑澄清：这不是一个假设。这是我之前一直在尝试做的事情，并且有兴趣在未来做得更好。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amanaplanacanal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我预计中国将弥补这一不足。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;karakoram:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.md&amp;#x2F;F42n9" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.md&amp;#x2F;F42n9&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.nytimes.com/interactive/2025/12/02/upshot/trump-science-funding-cuts.html</guid>
-      <pubDate>Mon, 22 Dec 2025 15:49:22 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46355077</comments>
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;boombapoom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望密钥可以取代密码，而不是补充密码&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tptacek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于 PKCE，我记得 OAuth2 的设计初衷是为了尽可能消除实际的加密技术，转而依赖同源和 TLS 安全性； PKCE 是引入实际密码学原语的少数事物之一。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisMarshallNY:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谢谢！&lt;p&gt;我正在编写一个由密钥驱动的服务器仪表板应用程序（原生 SwiftUI 应用程序，带有一个小型服务器组件）。&lt;p&gt;将来，我希望尽可能多地使用密钥，但它们确实给用户带来了比使用 Apple 登录更多的麻烦。当我最初学习它们时，我写下了以下内容：&lt;a href="https:&amp;#x2F;&amp;#x2F;littlegreenviper.com&amp;#x2F;series&amp;#x2F;passkeys&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;littlegreenviper.com&amp;#x2F;系列&amp;#x2F;密码&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;loloquwowndueo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如何根据官方指南向您的网站添加 passkeybot 支持：&lt;p&gt;开始&lt;p&gt;(1) Copy &amp;#x2F;将 example_http_server 粘贴到您选择的 LLM 中（使用付费的良好模型）。
+(2) 提示：为我的项目实现 HTTP 处理程序，..&lt;p&gt;嗯，不是吗？你给我真正的指导如何做怎么样？我不会将安全关键任务委托给法学硕士。而且反正我也要自己仔细审阅，那我还不如全部手写呢，对吧？就像，整个前提是我只需要实现几个网络钩子。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BoppreH:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;喜欢这些“经验教训”帖子，请继续！&lt;p&gt;我唯一的反馈是关于 passkeybot 的快速入门，“用这些说明将此示例输入到一个好的 LLM 中”。我理解这个想法，但我有点震惊，因为我第一次看到此类指令是针对身份验证框架的。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://enzom.dev/b/passkeys/</guid>
+      <pubDate>Mon, 22 Dec 2025 18:58:45 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46357451</comments>
+    </item>
+    <item>
+      <title>混合空中水下无人机 - 学士项目 [视频]</title>
+      <link>https://www.youtube.com/watch?v=g7vmPFZrYAk</link>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=g7vmPFZrYAk</guid>
+      <pubDate>Mon, 22 Dec 2025 08:37:34 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46352286</comments>
+    </item>
+    <item>
+      <title>州监管机构投票决定维持高公用事业利润，这激怒了加州各地的客户</title>
+      <link>https://www.latimes.com/environment/story/2025-12-18/state-regulators-vote-to-keep-utility-profits-high-angering-customers</link>
+      <description>&lt;p&gt;由于客户抱怨电费上涨，监管机构批准略微降低利润率。尽管客户抱怨电费上涨，加州公用事业委员会周四还是以 4 比 1 的投票结果决定将南加州爱迪生公司和该州其他大型投资者拥有的公用事业公司的利润维持在消费者团体认为长期以来被夸大的水平。该决定对客户的账单影响不大。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; State regulators vote to keep utility profits high angering customers across CA&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46357535"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.latimes.com/environment/story/2025-12-18/state-regulators-vote-to-keep-utility-profits-high-angering-customers'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aidenn0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因此，他们的资本支出回报率受到限制。  他们的资本支出首先受到限制吗？  也就是说，如果他们在自己建造的所有东西上都超支了，他们是否会比他们更仔细地设计东西时获得更多的利润？  我认为这里一定有一些限制，否则他们会在中压传输线中使用金而不是铜......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;doctorpangloss:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;加州有它的缺点 - 野火、邻避效应 - 但也有它的优点：太阳能对于人们想要的 SFH 社区来说很有意义。&lt;p&gt;对抗 PG&amp;E 和爱迪生的最佳安全阀是安装太阳能电池板和电池。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fusslo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很难找到10%被认为“合理”背后的理由。从文章中。听起来爱迪生在山火风险缓解方面做了很多工作，并且正在处理大量诉讼。&lt;p&gt;10% 的利润中有一部分用于这些成本吗？或者因为它们是一项费用，所以不属于 10% 利润的一部分？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RheingoldRiver:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;存档链接：&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.is&amp;#x2F;LkHqZ" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.is&amp;#x2F;LkHqZ&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.latimes.com/environment/story/2025-12-18/state-regulators-vote-to-keep-utility-profits-high-angering-customers</guid>
+      <pubDate>Mon, 22 Dec 2025 19:06:16 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46357535</comments>
     </item>
   </channel>
 </rss>
