@@ -6,150 +6,118 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 22 Dec 2025 09:37:39 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Dec 2025 12:53:19 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>反括号</title>
-      <link>https://kellett.im/a/inverse-parentheses</link>
-      <description>&lt;p&gt;将括号分组相对容易添加到语言语法中。我不知道是否可以编写一个纯解析器来执行此操作。你只是不输入它们。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Inverse Parentheses&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46352248"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://kellett.im/a/inverse-parentheses'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>如果你不设计你的职业生涯，别人会来设计你的职业生涯</title>
+      <link>https://gregmckeown.com/if-you-dont-design-your-career-someone-else-will/</link>
+      <description>&lt;p&gt;步骤7：制定本月的行动计划。列出一些会阻碍你实现“伟大”职业目标的“好”事情。你正在阅读这篇文章是因为这个选择。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; If You Don't Design Your Career, Someone Else Will&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46352930"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://gregmckeown.com/if-you-dont-design-your-career-someone-else-will/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cubefox:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;稍微无关：&lt;p&gt;除了普通的括号之外，还可以使用点符号。我认为它在《数学原理》中或稍后使用：&lt;p&gt;&lt;pre&gt;&lt;code&gt; (A (B (C D)))
-&lt;/code&gt;&lt;/pre&gt;
-将是 &lt;p&gt;&lt;pre&gt;&lt;code&gt; A 。乙：丙：丁
-&lt;/code&gt;&lt;/pre&gt;
-本质上，添加的点越多，分组运算符的绑定力就越强。&lt;p&gt;但是，这只是普通括号的替代品，而不是这些“反向”括号的替代品。这里讨论的。也许为了反转，可以使用一组小圆圈代替点：°、°°、°°° 等。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TrianguloY:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;根据此评论（&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46352389"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46352389&lt;/a&gt;），我想我理解了缺少的第一段：&lt;p&gt;如果您有表达式1+2*3 你有三个元素和两个操作数。您需要先选择一个规则来选择其中一个。&lt;p&gt;在数学中，规则是“+- 然后*”。然后从左到右。这意味着通常先做 2*3，然后做 1+。&lt;p&gt;但是如果您确实想先做 1+2 怎么办？&lt;p&gt;还有另一种选择，括号。这些意思是“先做里面的事情”。所以 (1+2)*3 改变了优先级，现在你先做 1+2，然后 *3&lt;p&gt;帖子问：用括号你可以增加运算的优先级。如果你可以减少它怎么办？&lt;p&gt;让我们使用 «» 作为另一个操作数（博客使用括号，但这确实令人困惑）这个操作数意味着“在 &lt;i&gt;last&lt;/i&gt; 中执行操作”。所以表达式 1+«2*3» 的意思是“先做 1+，然后做 2*3”。&lt;p&gt;问题是……这没有意义，博客真正想说的是降低运算符的优先级。考虑表达式 1+2«*»3 或 1+2(*)3，现在规则是“括号内的运算符的优先级少一个”。所以 1+2(*)3=(1+2)*3&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ofalkaed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;括号用于降低优先级？括号外的所有内容都会先于括号内的内容完成？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qsort:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果我不明白的话我是不是很傻？预期的最终状态是什么？ “取消操作数分组”是什么意思？意思是？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChanderG:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;兴奋地打开这个，以为我会得到一些与 S 表达式&amp;#x2F;Lisp 相关的东西，结果很失望......&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Philpax:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;呼应了这样一种情绪：我不太确定我应该在这里看到什么。我认为，一开始就有一个激励人心的例子会有所帮助。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;HansP958:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“反括号”的概念是这样的。分拆运营商真是太棒了！分词器 hack（通过括号深度进行友好度评分，受到 Python INDENT&amp;#x2F;DEDENT 的启发）+无限级别的优先级攀登非常优雅 - 无需复杂的递归语法即可解决解析问题。
-kellett&lt;p&gt;我喜欢这个转变：反转友好的级别给你一个经典的解析器，它开启了疯狂的实验，比如空白弱化。您是否在非算术运算（逻辑按位）或更复杂的表达式（如 ((())) 上测试过它？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TeodorDyakov:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;明星住在哪里？这就是我想知道的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;louthy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我完全赞成博客写作的简洁性，但我认为作者忘记添加内容了。  我只知道我打开它时的情况。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;carderne:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望括号本身会被翻转。像这样：&lt;p&gt;&gt; 1 + )2 * 3(&lt;p&gt;(1 + 2) * 3&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pxeger1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不明白&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bananaflag:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;您是否注意到许多编程语言允许您使用括号对操作数进行分组，但没有一种语言使用它们来取消分组？&lt;p&gt;既然这在实践中不存在，那么文章作者不应该首先解释一下他们的意思吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tromp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在 MacOS 上使用 Brave，我无法滚动页面以查看整个文本。在 Firefox 上，它滚动得很好。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://kellett.im/a/inverse-parentheses</guid>
-      <pubDate>Mon, 22 Dec 2025 08:29:03 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46352248</comments>
+&lt;p&gt;&lt;strong&gt;Top 20 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;etothepii:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;深思熟虑的计划很棒，但机缘巧合也很重要。我认识的一些最富有的人之所以获得大部分财富，是因为他们能够在机会出现时采取行动。&lt;p&gt;我的猜测是，重要的是不要过度关注中期目标，而且你负债越多，你就越没有能力承担风险。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;doctorhandshake:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“让个人和国家破产的罪行是放弃一个人的主要目的，到处为工作服务。”&lt;p&gt;作为一名前职业承包商，我可能从事过 7 份商业工作，我并不关心每一份我想做但报酬过低的创意工作，这感觉非常真实。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;te_chris:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;另请参阅彼得·德鲁克 (Peter Drucker) 的《自我管理》中的反馈分析&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qwertytyyuu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;又到了一年中的这个时候了啊。时代未了新闻年的愿望。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WhereIsTheTruth:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;许多年前，我遵循了这个过程，毫不夸张地说，它改变了我的人生轨迹。我获得的洞察力促使我从法学院退学，离开英国搬到美国，开始了作为一名教师和作家的道路。你正在阅读这篇文章是因为这个选择。它仍然是我一生中最重要的职业决定&lt;p&gt;那个“决定”是我一生中最重要的职业决定。大多数人永远不会需要一个安全网&lt;p&gt;设计你的职业不是自我反省，而是杠杆&lt;p&gt;而杠杆是从你写日记时让你的世界运转的无形之手偷走的&lt;p&gt;问题不是个人的，而是系统性的：为什么选择的自由如此有限？&lt;p&gt;对于很多人来说，工作不是一个需要设计的职业，而是生存数学&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ursAxZA:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当我买衣服时，我总是“选择”模特已经穿的衣服。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;socketcluster:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在设计自己的科技职业生涯时遇到了很大的困难，因为我相信人们已经拥有比他们需要或负担得起的更多选择。&lt;p&gt;人们需要的不是更多选择。他们需要的是钱；这是获得现有选项的能力。给人们更多钱的唯一方法是通过政治手段。这就是我对加密货币感兴趣的原因；似乎开门见山……&lt;p&gt;后来，由于该领域腐败太多，我退出了加密货币行业，并与联合创始人创办了一家主流初创公司，致力于帮助人们找到“完美的工作”。但我辞去了联合创始人的职务，因为这个想法几乎让我现在想吐。&lt;p&gt;该系统正在集体解雇人员。系统本身并不希望人们有工作……所以我，试图通过提供在系统内运行的解决方案来对抗系统，感觉是徒劳的，就像给用户和我自己煤气灯一样。这是在贩卖梦想。没有完美的工作。现实是我们的社会经济体系甚至没有一份糟糕的工作适合你...更不用说完美的工作了...而且大多数工作无论如何看起来都是狗屎工作。&lt;p&gt;现在很难找到一个既真正有用又有利可图的想法。这是一种耻辱，因为这正是我一生想做的事情，但我觉得这与当前系统内可能发生的事情不符。我在科技领域找不到任何这样的机会。&lt;p&gt;有人告诉我我应该从政，但如果我再想想典型的政治家的做法，我就会感到恶心。我唯一可能成为的政客就是那种被暗杀的诚实政客……当然我不希望这样。此外，没有人愿意资助我……我的杀手可能会更容易筹集资金来“干掉我”。与我筹集资金进入政治相比，我更关心政治。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;g947o:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;两年前，我就计划离开现在的公司，不再浪费生命。&lt;p&gt;就业市场和我的签证状态意味着，这要么是不可能的，要么我需要做出重大牺牲。&lt;p&gt;这就是生活。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cardanome:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为了我作为一个人的发展，我做了类似的事情。我问自己如何才能进步，我想成为什么样的人，如何帮助世界变得更美好。&lt;p&gt;我的“职业”是只是达到让餐桌上有食物的目的的一种手段。而且我已经30多岁了，我想我已经最大限度地发挥了它的作用。当然，我可能会增加一点工资，但总而言之，作为一名 IC，这是一件好事。当然，总是有改进的空间，但我已经一直是房间里技术能力最强的人，所以这不会给我带来任何好处。&lt;p&gt;我不认为你的“职业”是你的。至少一旦你建立起来，它就需要成为你生活中的一个主要焦点。特别是如果你没有做任何有意义的工作来真正帮助人们，比如成为一名医生或老师或其他什么。&lt;p&gt;最终我的工作只是让别人变得更富有，它没有任何意义。它不会让世界变得更美好。有时可能是一个更糟糕的地方。我这样做只是为了不挨饿。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ErigmolCt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这读起来有点像经典的自助，但陈词滥调之下隐藏着一个坚实的观点。大多数职业确实是由惯性决定的：你同意的项目、你无意中积累的技能、其他人悄悄为你设定的期望&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NoiseBert69:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我更想说的是：如果你自己不关心你的职业生涯，那么有利益冲突的其他人就会关心你的事业。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;neuralkoi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们很多人按照他人（我们的父母、社会等）的期望生活，因为这是我们一开始就知道如何做的事情，也是“系统”所要实现的。通过学校、职业等，我们想要做的事情和我们实际最终做的事情之间的这种差异最终可能会给我们自己（和他人）带来很多痛苦。&lt;p&gt;我认为，当当前的路线行不通时，恐惧是尝试不同的事情的主要障碍。在这种情况下，走出舒适区真的很难。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;keiferski:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;IMO 中缺少的主要内容是机会或随机性的元素，以及将“未知的未知”融入你的生活的能力。我遇到的最有趣的人都从事过各种各样的工作，其中许多工作他们在刚开始工作时完全一无所知。当您在整个职业生涯中从事同一个白领职业之外的工作时，会有真正的增值。&lt;p&gt;换句话说，设计生活的问题在于您几乎总是会选择您已经知道的事情。也许这能让你在二十年内达到当前职业的顶峰……但也许其他一些工作实际上对你来说更有成就感。&lt;p&gt;我不确定如何将其融入年轻人的现实生活经历中，但我确实认为间隔年、各种实习、志愿服务等可能是一个好的开始。&lt;p&gt;我最近听了一个播客，他写了一本书，提倡年轻人花 4 年时间获得飞行员执照，在牧场工作，成为一名飞行员。 EMT 以及其他各种有用的技能工作。这似乎是个好主意，尽管我不喜欢他提供这个计划时对传统大学的敌意。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kbrkbr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢这篇文章，认为这是一个很好的建议，而且我也认为它的妙语（标题+最后一句）是错误的。这并不是说它有很大的不同，我只是更珍惜文本，我觉得作者考虑到了最后的细节。&lt;p&gt;如果你不设计你的职业，在大多数情况下我猜没有人会这样做。评论里有很好的例子，比如醉酒水手的随意行走。在某些情况下，您可以使用“别人为我设计的”这句话。以一种有意义的方式对我来说似乎相当罕见。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fifilura:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不认为随机水手的比喻是完美的。&lt;p&gt;如果你过于严格地指导自己的方向，你不仅会冒着将自己带入死胡同的风险，而且还会错过意想不到的机会。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kstenerud:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有点让我想起 Netflix 系列《恶魔城》中的一个有趣场景&lt;p&gt;“如果你没有自己的故事，你就会成为别人的一部分。”&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=-MofDRVtRec" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=-MofDRVtRec&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andrewstuart:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;没有其他人会。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Swizec:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最喜欢的镜头来自 Hamming：&lt;p&gt;&gt;众所周知，醉酒的水手向左或向右标记 n 个独立的随机步骤，平均而言，最终会距原点大约 sqrt(n) 步。但如果一个方向有一个漂亮女孩，那么他的脚步就会倾向于朝那个方向走，他会走与n成正比的距离。在一生中有很多很多独立的选择，无论大小，有远见的职业会给你带来与n成正比的距离，而没有远见只会给你带来sqrt(n)的距离。从某种意义上说，走得远的人和走得远的人之间的主要区别在于，有些人有远见，而另一些人则没有，因此只能对当前发生的事件做出反应。&lt;p&gt;只要对某个方向有一点点偏差，就会让你很快走得很远。&lt;p&gt;我曾经用一些 javascript 对此进行了建模和可视化[1]，令人惊讶的是，即使是每个随机概率的微小乘法因子，也能看到巨大的差异。决定。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;swizec.com&amp;#x2F;blog&amp;#x2F;your-career-needs-a-vision&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;swizec.com&amp;#x2F;博客&amp;#x2F;你的职业需求-愿景&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;KronisLV:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于回顾部分：&lt;p&gt;对我有帮助的是逐月保存我的 TODO.txt，以及我发现与站立和会议等（以及演示）中分享相关的内容的大量屏幕截图和图像。&lt;p&gt;因此，如果我需要回顾过去的一个月和一年（例如，当我想更新简历网站或赶上管理层时），只需浏览一堆内容即可文本和图像，没有太多不必要的废话，就像挖掘 Jira 一样。也许如果我想根据那里的活动量获得在特定事情上花费的大约时间和精力。&lt;p&gt;除此之外，记录特别好的东西，或者软件闯入的所有方式（以及软件闯入的频率），以及那些让我生气并让我想要退出的东西（有时是人们的心态，有时是有形的代码或实践）也是很好的。&lt;p&gt;当默认设置只是随波逐流时不记录任何事情，也不进行自我反思，每一项改进都会有所帮助。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hwhehwhehegwggw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我会更进一步说，如果你不刻意地设计你的生活，你的职业生涯也会如此。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://gregmckeown.com/if-you-dont-design-your-career-someone-else-will/</guid>
+      <pubDate>Mon, 22 Dec 2025 10:27:52 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46352930</comments>
     </item>
     <item>
-      <title>如何保护我的 Forgejo 实例免受 AI 网络爬虫的侵害</title>
-      <link>https://her.esy.fun/posts/0031-how-i-protect-my-forgejo-instance-from-ai-web-crawlers/index.html</link>
-      <description>&lt;p&gt;是的，很快，就像你们中的许多人一样，我发现大量不尊重机器人的爬行者。这会让爬虫远离。我完全意识到这很容易被绕过。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; How I protect my Forgejo instance from AI web crawlers&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46345205"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://her.esy.fun/posts/0031-how-i-protect-my-forgejo-instance-from-ai-web-crawlers/index.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>致敬冬至的古迹</title>
+      <link>https://www.bbc.com/culture/article/20251219-the-ancient-monuments-saluting-the-winter-solstice</link>
+      <description>&lt;p&gt;计算时间的纪念碑具有实用价值，但它们很可能也体现了新石器时代的精神信仰，其中冬至尤为重要。 “Yule”一词现在与冬季假期联系在一起，源自历史悠久的挪威节日 Jól，该节日以冬至为基础。 “大自然的崇高力量” 在梅肖维墓旁，考古学家发现了数十座新石器时代的纪念碑，这些纪念碑在冬至时直视太阳。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The ancient monuments saluting the winter solstice&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46352565"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.bbc.com/culture/article/20251219-the-ancient-monuments-saluting-the-winter-solstice'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;userbinator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;不幸的是，这意味着，只有当您在浏览器中启用 JavaScript 时才能看到我的网站。&lt;/i&gt;&lt;p&gt;或者有一个与模式匹配并自动提取 cookie 的网络代理。 ;-)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reconnecting:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;tirreno (1) 人在这里。&lt;p&gt;我们的开源系统可以根据特定行为触发的规则来阻止 IP 地址。&lt;p&gt;您能详细说明您想要阻止的具体类型的爬虫吗？比如，每分钟一定数量的请求的漏桶？&lt;p&gt;1. &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tirrenotechnologies&amp;#x2F;tirreno" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tirrenotechnologies&amp;#x2F;tirreno&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;csilker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Cloudflare 提供了一个保护路由免受爬虫攻击的解决方案。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;blog.cloudflare.com&amp;#x2F;introducing-pay-per-crawl&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;blog.cloudflare.com&amp;#x2F;介绍按抓取付费&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;immibis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对 Gitea（Forgejo 的一个分支）的问题是，爬虫会点击“以 zip 形式下载存储库”。一遍又一遍地链接。每次访问都会在磁盘上创建一个新的 zip 文件，该文件永远不会被清理。我禁用了该功能（通过将临时 zip 目录设置为只读，因此该功能将不起作用），从那时起就没有出现问题。&lt;p&gt;很容易假设“我收到了很多请求，因此问题是请求太多”。但您可以成功处理许多请求。&lt;p&gt;这是一种制作微创机器人墙的聪明方法 - 我喜欢它。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://her.esy.fun/posts/0031-how-i-protect-my-forgejo-instance-from-ai-web-crawlers/index.html</guid>
-      <pubDate>Sun, 21 Dec 2025 14:46:53 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46345205</comments>
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lb1lf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些在挪威随处可见（想必也像其他地方一样！）&lt;p&gt;当我们搬到我们目前居住的岛屿时，我们的地址位于一条名为“Solsteinen”的道路上。 （太阳石），但我并没有多想，直到我意识到用作财产限制标记的粗凿石头在冬至那天被太阳触动了。啊哈。&lt;p&gt;快速给当地考古学家打电话证实了我的怀疑 - “哦，原来你是那里的新居民，我本来打算联系一下 - 那座石碑已经在那里存在了 2000 多年，是 A 级文物保护单位，请不要对它做任何事情。说真的。&amp;#x27;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andrewinardeer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在我住的地方，夏至和冬至之间相差 5.75 小时，几乎是一天的四分之一，这让我感到很奇怪。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arionmiles:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这让我想起了阿纳萨齐太阳神庙，它在神庙的一个特定点捕捉到夏至的第一缕阳光。我第一次发现这一点是在今年年初观看卡尔·萨根的宇宙（顺便说一句，我强烈推荐）&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Casa_Rinconada" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Casa_Rinconada&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;franze:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的现代等价物（去年我需要冲浪（因为天色已晚，我需要缩短冲浪之旅））&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;daylight.franzai.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;daylight.franzai.com&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;voidUpdate:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;古代文化如何知道夏至是什么时候？如果你不告诉我今天是21号，除了仔细测量日出和日落时间，我不知道如何才能告诉你&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;akssri:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在印度，&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.etvbharat.com&amp;#x2F;english&amp;#x2F;bharat&amp;#x2F;padmanabha-swamy-temple-marvel-当太阳在日落期间穿过所有寺庙塔楼的窗户时&amp;#x2F;na20220923203559675675625" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.etvbharat.com&amp;#x2F;english&amp;#x2F;bharat&amp;#x2F;padmanabha-swamy-te...&lt;/a&gt;&lt;p&gt;喀拉拉邦，对于好奇的人来说，也是大约 200 年前发明无穷级数（以及可以说微积分）的地方牛顿的诞生。&lt;p&gt;学术界公然的西方中心主义（以及对现存古代文化的奇怪的、近乎原始的仇恨）也许并没有导致对“古代”牛顿的承认。印度的纪念碑或其科学天文成果。&lt;p&gt;例如桑克兰蒂节。由于印度阴阳历使用恒星年，从公元前 150 年开始，它与冬至相差了 20 多天（有趣的是，儒略历也是如此，但由于算术和观测精度不够精确）。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.bbc.com/culture/article/20251219-the-ancient-monuments-saluting-the-winter-solstice</guid>
+      <pubDate>Mon, 22 Dec 2025 09:30:58 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46352565</comments>
     </item>
     <item>
-      <title>我在 Instagram 上宣布离婚，然后 AI 冒充了我</title>
-      <link>https://eiratansey.com/2025/12/20/i-announced-my-divorce-on-instagram-and-then-ai-impersonated-me/</link>
-      <description>&lt;p&gt;足够多的人收到有关离婚礼仪的备忘录，询问一个人的离婚是“恭喜”还是“抱歉”。在应用程序中，我帖子中的所有原始文本都被拉入，并在我的签名行“观看这个空间”之后添加了一些附加文本，这些文本当然不是我创作的。从寻求朋友的支持到优先考虑最重要的事情，我探索了身份、价值和离婚后寻找幸福的主题。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; I announced my divorce on Instagram and then AI impersonated me&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46352004"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://eiratansey.com/2025/12/20/i-announced-my-divorce-on-instagram-and-then-ai-impersonated-me/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>算法时代的幸福</title>
+      <link>https://www.ssp.sh/blog/well-being-algorithms/</link>
+      <description>&lt;p&gt;我们了解到，在困难时期我们需要家人的帮助。它就像一个指南针，指引着你的人生。更好的事业，更多的钱，等等。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Well Being in Times of Algorithms&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46352747"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ssp.sh/blog/well-being-algorithms/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Alex2037:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;仅这篇文章就包含了足够多的暗示，说明丈夫为何决定减少损失。 jfc。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CrzyLngPwd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当然，如果这种溢出是通过查看图像和文本产生的，那么似乎有人可以操纵它来产生各种奇妙事物的幻觉。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throw-12-16:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谁宣布离婚？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jwr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果我们为已知会做可怕事情的封闭平台编写内容，我想当这些平台做可怕事情时我们不应该感到惊讶。&lt;p&gt;我一直试图说服人们不要使用 Instagram、WhatsApp、Facebook、Twitter…，但我一无所获。&lt;p&gt;编写您自己的内容，并使用您拥有的或不能被企业贪婪超越的服务（如 Mastodon）按照您自己的方式发布它。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://eiratansey.com/2025/12/20/i-announced-my-divorce-on-instagram-and-then-ai-impersonated-me/</guid>
-      <pubDate>Mon, 22 Dec 2025 07:13:33 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46352004</comments>
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FergusArgyll:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我知道这无关，但标题让我想起了那本伟大的书。&lt;p&gt;&lt;pre&gt;&lt;code&gt; 赖以生存的算法：人类决策的计算机科学
+  作者：布莱恩·克里斯蒂安 (Brian Christian)、托马斯·L·格里菲斯 (Thomas L. Griffiths) 和汤姆·格里菲斯 (Tom Griffiths)&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aeonfox:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;摆脱算法，摆脱被锁定和依赖平台，摆脱大科技追逐我们的注意力，回到真正的联系，而不是因为追随者的死亡而失去我们的追随者。我们需要开放平台，例如开放社交媒体和开放网络&lt;p&gt;不。  我们需要回到&lt;i&gt;现实世界&lt;/i&gt;作为&lt;i&gt;目的地&lt;/i&gt;而不是屏幕。  如果这项技术不能增强你在物质空间中的生活，它就会慢慢地剥夺你的躯体体验，并将你变成更像机器的东西。  无论该技术是开放网络还是专有技术，效果都是一样的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ursAxZA:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在牛排和生活中，我更喜欢“半熟”而不是“全熟”。&lt;p&gt;算法倾向于优化我们的幸福感，即“全熟”：可预测、一致、均匀烹饪。
+安全、可测量、可重复。&lt;p&gt;但人类的经验更接近“罕见”：
+不平衡、有风险、不对称，但仍然存在。
+最重要的部分通常是那些与指标不完全相符的部分。&lt;p&gt;如果一切都得到优化，那么就没有什么有趣的了。
+更重要的是，我们冒着用健康监测取代幸福的风险。&lt;p&gt;当生活不断优化、评分、推动和纠正时，
+它逐渐不再是一种真正经历过的生活。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dkdcio:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果不提及为什么一切都在试图吸引我们的注意力，这感觉是不完整的：付费数字广告。消除了草率的动机，“算法”就不再是问题了（参见 HackerNews）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shrewdcomputer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;随着人工智能在各大社交媒体平台算法上的推广，我相信我们将回到追随真实的人类。回到关注者，我们决定我们想看到谁。&lt;p&gt;这是一个很好的想法，但我认为这是错误的。如果说 TikTok、Instagram Reels 或 YouTube Shorts 已经证明了什么，那就是人们不想&lt;i&gt;决定&lt;/i&gt;他们想要&lt;i&gt;消费&lt;/i&gt;。这是愤世嫉俗的，但数据一次又一次地表明它适用于这些平台。被动消费对用户来说更容易，公司知道这可以让我们在线时间更长。&lt;p&gt;当你问人们时，他们会说他们想看看他们关注了谁，但他们在公司激励下的行为却另有说法。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.ssp.sh/blog/well-being-algorithms/</guid>
+      <pubDate>Mon, 22 Dec 2025 09:58:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46352747</comments>
     </item>
     <item>
-      <title>QBasic64 Phoenix 4.3.0 发布</title>
-      <link>https://qb64phoenix.com/forum/showthread.php?tid=4244</link>
-      <description>&lt;p&gt;| |关 开 | | | +-&gt; EXE 转到源文件夹，新的未保存代码除外， |它将转到默认位置（尚无已知源 | 路径），因此始终在第一个 | 之前保存新代码编译以避免默认位置回退。 | +-&gt; 默认 EXE 位置设置。 | +-&gt; EXE 转到用户选择的位置（如果存在），否则回退到“qb64pe”文件夹。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; QBasic64 Phoenix 4.3.0 Released&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46352047"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://qb64phoenix.com/forum/showthread.php?tid=4244'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AndyMcConachie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;但它还能跑大猩猩吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iberator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; QB64 是一种现代扩展 BASIC+OpenGL 语言，保留了 QB4.5&amp;#x2F;QBasic 兼容性，并为 Windows（7 及更高版本）、Linux 和 macOS（Catalina 及更高版本）编译本机二进制文件。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;starik36:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很不错。  按照今天的标准，它生成的二进制文件相当小。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sgt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请注意此评论：&lt;p&gt;&lt;pre&gt;&lt;code&gt; 谢谢您。  抱歉我之前的不耐烦。
-
-  我想贡献一个图书馆。  但我现在没有想法。我必须透露我的真实姓名。  这对我来说很危险。  因为我不使用 VPN 或任何其他互联网安全方案。  保护我的隐私。  但这只是我的想法。  圣诞快乐，假期快乐，明年会有更好的季节体验。
-
-&lt;/code&gt;&lt;/pre&gt;
-...
-开源维护者必须处理的事情。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://qb64phoenix.com/forum/showthread.php?tid=4244</guid>
-      <pubDate>Mon, 22 Dec 2025 07:25:43 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46352047</comments>
+      <title>Show HN：Backlog – 实际工作问题的公共存储库</title>
+      <link>https://www.worldsbacklog.com/</link>
+      <guid isPermaLink="true">https://www.worldsbacklog.com/</guid>
+      <pubDate>Mon, 22 Dec 2025 08:42:31 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46352310</comments>
     </item>
     <item>
-      <title>更多关于有用的量子计算是否“迫在眉睫”的信息</title>
-      <link>https://scottaaronson.blog/?p=9425</link>
-      <description>&lt;p&gt;更多关于有用的量子计算是否“迫在眉睫”的问题 如今，我收到的最常见的问题是这样的：十年前，你告诉人们可扩展的量子计算不会迫在眉睫。从 Q2B 回来后，我与“量子公牛”做了一个长达一小时的播客，主题是“我们离容错量子计算有多远”。可以肯定的是，量子加速的详细列表会随着时间的推移而扩展（随着新的量子算法的发现），也会随着时间的推移而收缩（因为一些量子算法被去量化）。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; More on whether useful quantum computing is “imminent”&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46348318"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://scottaaronson.blog/?p=9425'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>卡通网络频道错误（1995 年 – 2025 年）</title>
+      <link>https://cnas.fandom.com/wiki/Channel_Errors</link>
+      <description>&lt;p&gt;1999 年 4 月 1 日、1999 年 8 月 29 日 卡通网络屏幕错误在 ReBoot 剧集 Infected 首映期间偏离中心。该集将于 1999 年 10 月 1 日正常首播。2000 卡通星期五 screenbu。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Cartoon Network channel errors (1995 – 2025)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46352405"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://cnas.fandom.com/wiki/Channel_Errors'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nacozarina:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;另一个迟到的信号将是资金激增&lt;p&gt;一旦有人制作了一个提取 RSA 有效负载的小部件，他们的政府将扣押、支出和支付资金。规模&lt;p&gt;他们会尽力保持安静，但他们会开始一场从太空中都可以看到的消费狂潮&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Traubenfuchs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当我们需要为后量子 TSL 购买更多计算和内存时，云提供商会喜欢它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;willmadden:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当所有旧的比特币 P2PK 地址和地址交易都被清除时，我们就会知道。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jasonmarks_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;零资金投入：量子计算看起来就像一群冰箱公司。&lt;p&gt;事实上，纠错似乎很困难，这意味着未考虑到非热量的噪音。  谁知道，无论你做什么，引力波都会破坏你的设置！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tgi42:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在这个领域工作了多年，并帮助建立了一家知名公司。看到认真完成的有希望的科学再次被骗子接管，真是令人失望。许多年前我们就知道破解加密所需的量子比特比专家（甚至专家）认为的要少得多。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aardwolf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一旦量子计算机成为可能，除了它们可以解决的密码学和数论问题之外，实际上还有什么其他的、任何其他的现实世界应用程序吗？并且比普通计算机做得更好？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tromp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我意识到这是少数人的观点，并且违背了量子计算如何工作的所有理论，但我只是无法相信大自然会让我们能够以小至 2^-256 的幅度进行可靠的计算。我仍然怀疑当我们接近并移动到普朗克尺度以下时，某些东西会崩溃。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eightysixfour:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有没有其他人在明亮的闪烁警告灯中读到最后两段“我不允许告诉你你应该非常关心的事情”，或者只是我？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ktallett:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为从事学术和私人量子计算研究的人，不，在我对这个词的理解中，这并不是迫在眉睫的，但它将会发生。我们仍处于可与 60 年代通用计算发展相媲美的阶段。许多不同的平台，我们已经决定了最好的下一步，但我们还有许多问题需要解决。很多关键问题都有解决方案，问题更多的是让每个人都集中在正确的方向上，这也意味着资金什么时候开始集中在正确的方向上。现在有卖蛇油的人，当他们被除掉后，生活就会变得更加容易。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bahmboo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我特别喜欢文章的结尾，他将核裂变的历史与量子计算的进展进行了比较。传统的加密可能已经被破解，但我们还没有被告知。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;prof-dr-ir:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很困惑，因为即使分解 21 显然也非常困难，以至于它“还不是跟踪量子计算机进展的良好基准”。 [0]&lt;p&gt;因此，“有用的量子计算”这是“迫在眉睫”的。量子计算不是涉及近素数分解吗？&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;algassert.com&amp;#x2F;post&amp;#x2F;2500" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;algassert.com&amp;#x2F;post&amp;#x2F;2500&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://scottaaronson.blog/?p=9425</guid>
-      <pubDate>Sun, 21 Dec 2025 20:53:34 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46348318</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tt_dev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;向您致敬，先生&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cadamsdotcom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果人们足够仔细地观察你的工作并记录其中的错误，并且他们足够关心创建一个维基页面，那么你的工作确实很棒。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pjerem:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;但如何呢？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://cnas.fandom.com/wiki/Channel_Errors</guid>
+      <pubDate>Mon, 22 Dec 2025 09:01:11 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46352405</comments>
     </item>
     <item>
-      <title>礼品卡问责水槽</title>
-      <link>https://www.bitsaboutmoney.com/archive/gift-card-accountability-sink/</link>
-      <description>&lt;p&gt;[0]礼品卡诈骗也很严重。大多数企业并不运行自己的礼品卡计划。存在一个礼品卡计划经理的生态系统，他们本质上是金融服务企业，兼营软件业务。尽管礼品卡的监管阻力相对宽松（我们稍后会回到这个问题），但运行礼品卡计划还需要很大的监管成分。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The gift card accountability sink&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46348455"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bitsaboutmoney.com/archive/gift-card-accountability-sink/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 17 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zimpenfish:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;许多人惊讶地发现，美国积极保护客户免受某些支付方式的欺诈&lt;p&gt;我觉得这需要一个“（目前但不会持续太久）”的法律。警告[0]，以避免过于不诚实。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.politico.com&amp;#x2F;news&amp;#x2F;2025&amp;#x2F;11&amp;#x2F;11&amp;#x2F;trump-administration-declares-cfpb-funding-illegal-00646354" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.politico.com&amp;#x2F;news&amp;#x2F;2025&amp;#x2F;11&amp;#x2F;11&amp;#x2F;trump-administratio...&lt;/a&gt; - “CFPB [...] 预计在 2026 年初耗尽当前可用资金。”&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;silexia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;美国需要一个防火墙来保证边境安全。几乎所有诈骗和垃圾邮件都源自我国境外，并且超出了我们执法部门的管辖范围。&lt;p&gt;我们不会让恐怖分子和强盗溜进来，为什么要允许数字等价物呢？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;devinprater:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;学院、大学和企业对盲人进行的大量研究都提供礼品卡作为付款方式。通常 40 分钟的时间是 20 美元左右。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zitterbewegung:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这可能就是为什么 Apple 礼品卡会将您锁定在 iCloud [1] 之外，因为它们使用的是第 3 方。 Apple 的中间人有严格的规定，不得因欺诈而解锁，而且这些流程无法轻易撤消？&lt;p&gt;[1]&lt;a href="https:&amp;#x2F;&amp;#x2F;hey.paris&amp;#x2F;posts&amp;#x2F;appleid&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;hey.paris&amp;#x2F;帖子&amp;#x2F;appleid&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;01HNNWZ0MV43FF:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;很可能使得 BigCo 的任何人都无法重建特定礼品卡在结帐和最近使用之间发生的情况。&lt;p&gt;如果我不能使用现金，我可以通过自己购买礼品卡来改善自己的隐私状况吗？或者这只是将商店获得的所有数据推送给礼品卡公司？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;citizenpaul:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;礼品卡是有史以来最愚蠢、最脑残的骗局之一。  与“票据”类似的各种限制类型的支付系统。  它们的存在只是为了增加更大的实体对你的控制。&lt;p&gt;为什么要把完美的现金变成在各方面都更糟糕的东西？  我不明白为什么这么多人热衷于不遗余力地购买礼品卡。  你能把我的现金转换成具有相同功能但有各种限制和陷阱的东西吗？  当然没问题....&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nacozarina:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;礼品卡是一种奇怪的合法物品，具有违禁品级别的危险，不值得，我弃权&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stevage:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 。例如，Paysafe 是一家上市公司，拥有数千名员工，拥有您所期望的一系列监管机构，以及一家子公司 Openbucks，该子公司旨在让企业能够将使用现金券支付给我们的方式嵌入其网站、发票和电话收款工作流程中。&lt;p&gt;引人入胜的脚注。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alwa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; &lt;i&gt;这正是“合法企业中永远不会发生的”行为，除非它的规模达到数百亿美元。&lt;/i&gt;&lt;p&gt;&amp;gt; &lt;i&gt;正如《Bits about Money》经常观察到的那样，撰写关于金钱的专业文章的人（包括为财务弱势群体提供专业倡导者）经常会误解替代金融服务，很大程度上是因为这些服务旨在服务于专业人士本身不属于的社会阶层，很少直接互动，并且不会习惯性地询问他们如何支付租金、水电费或电话费。&lt;/i&gt;&lt;p&gt;这引起了我的共鸣，并让我想起了我和我的正式银行和正式雇用的同事有时会陷入困境的方式让我们全神贯注于发薪日贷款（从安全和舒适的正式银行关系来看，这确实像是高利贷！）、汇款、哈瓦拉、当铺、现金应用程序、礼品卡兑换、视频游戏经济……对于专业课程中的所有规范性思维，人们确实开发出了一系列千变万化的方法来存储和传输价值。现代相当于流亡——但我不得不想象，对于一个国家行为者来说，这种策略很难以完全无懈可击的方式应用，这可能是健康的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andy99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么使用礼品卡而不是现金的核心论点是什么？&lt;p&gt;我可以看到是否有人没有钱但有一张卡并想尝试出售或交换它，否则呢？现金可能有一些限制，但没有比礼品卡更糟糕的了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bsder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果我是美国退休人员协会，我会走得更远。&lt;p&gt;“不要购买礼品卡。  句号。”&lt;p&gt;从各个角度来看，围绕礼品卡的普遍诈骗行为都太严重了。&lt;p&gt;任何要求您用礼品卡付款的人都是一个问题。  礼品卡处理商有各种方法通过标记“欺诈”来保护流通量。以便暂停您的礼品卡，直到您浪费时间并向他们提供个人信息。  您的礼品卡背后的公司可能会破产（参见：Bed、Bath and Beyond 和 Fry's）。  最后，正如我们从 Apple 发现的那样，即使兑换卡也会给您带来问题。&lt;p&gt;给现金。  尽管有些自以为是的白痴认为用现金作为礼物是不礼貌的，但在我一生中，我从来没有因为收到现金而感到失望过。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;raw_anon_1111:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在 2023 年和去年开始了两次新工作，在我上班的第一天之前，我收到了公司首席执行官的短信，要求我为他们购买礼品卡，但他们无法自己购买，因为他们正在开会。&lt;p&gt;他们说出了首席执行官的名字，并给我发了短信。  当然，这是一个骗局，与我的首席执行官无关。我想知道他们是怎么知道我的电话号码的？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;defrost:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Simon Dean 做了 14 分钟的分析：&lt;p&gt;&lt;i&gt;这是澳大利亚最容易被黑客入侵的礼品卡吗？&lt;/i&gt; &lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=oBarXDL23hs" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=oBarXDL23hs&lt;/a&gt;&lt;p&gt;窃贼如何滥用礼品卡，在商店中对礼品卡进行成像，等待购买并“持有”礼品卡值，然后通过一点点破解不良安全性来提取该值&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Spooky23:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直认为礼品卡是经济的软肋。我不认为这是一个意外，这些东西是转移资金和支付临时工工资的好方法，而且不会出现如今现金引发的危险信号。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andrewaylett:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看到人们应用于礼品卡交易的各种折扣很有趣（至少对我来说）。  同事最终收到一张无法使用的礼品卡的情况并非闻所未闻，虽然确实可以认为该卡&lt;i&gt;值得&lt;/i&gt;其面值，但也有一种感觉是其使用受到限制，使其价值低于面值。  另外，如果您想在商店花费 x 英镑，那么您通常不需要购买同事的礼品卡。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andrewaylett:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为帕特里克没有充分探讨一件事：有人&lt;i&gt;要求您&lt;/i&gt;使用礼品卡付款与&lt;i&gt;您要求&lt;/i&gt;使用礼品卡付款之间存在很大差异。&lt;p&gt;他给出的示例主要是为人们提供&lt;i&gt;选择&lt;/i&gt;，而诈骗则非常推动要求。&lt;p&gt;如果有人希望您获得礼品卡来付款，并且不会接受现金或信用卡吗？  骗局。  如果您已经有一张礼品卡并且有人愿意接受它代替现金？  可能不会比任何其他供应商更有可能是骗局？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;analogpixel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;美国退休人员协会（AARP，一个针对老年人的非营利组织）为我收听的播客上的广告付费。该广告做出了令人难以置信的声明（为一项重要的公共服务公告服务），他们以书面形式重复了这一声明：要求通过礼品卡付款始终是一个骗局。&lt;p&gt;&amp;gt;当然不是。礼品卡是一种支付方式，而且是一项独立于支付方式之外的庞大业务。数百家公司确实会要求您使用礼品卡付款！&lt;p&gt;这就是我停止阅读的地方。作者似乎更感兴趣的是在点击量上逆势而行，而不是提供实用的建议。美国退休人员协会（AARP）就在这里：被要求用礼品卡付款是一个重大危险信号，除非您亲自认识该公司，否则是时候离开了。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.bitsaboutmoney.com/archive/gift-card-accountability-sink/</guid>
-      <pubDate>Sun, 21 Dec 2025 21:07:01 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46348455</comments>
+      <title>充满共鸣的一年</title>
+      <link>https://lucumr.pocoo.org/2025/12/22/a-year-of-vibes/</link>
+      <description>&lt;p&gt;社交媒体上充斥着关于人工智能的观点：有些是好的，有些是坏的。我对“代理”这个术语持异议，因为代理和责任应该由人类承担。与模型选择类似。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A Year of Vibes&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46352875"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://lucumr.pocoo.org/2025/12/22/a-year-of-vibes/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://lucumr.pocoo.org/2025/12/22/a-year-of-vibes/</guid>
+      <pubDate>Mon, 22 Dec 2025 10:19:57 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46352875</comments>
     </item>
   </channel>
 </rss>
