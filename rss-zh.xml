@@ -6,171 +6,82 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 23 Dec 2025 02:01:16 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Dec 2025 04:02:09 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>始终是 TCP_NODELAY</title>
-      <link>https://brooker.co.za/blog/2024/05/09/nagle.html</link>
-      <description>&lt;p&gt;例如，在这个黑客新闻评论中：这仍然让我烦恼。这是 ACK 延迟，还有那个愚蠢的固定计时器。即使没有延迟确认和那个愚蠢的固定计时器，Nagle 算法的行为也可能不是我们在分布式系统中想要的。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; It's Always TCP_NODELAY&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46359120"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://brooker.co.za/blog/2024/05/09/nagle.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Snitch – 更友好的 ss/netstat</title>
+      <link>https://github.com/karol-broda/snitch</link>
+      <description>&lt;p&gt;snitch ls # 样式表（默认） snitch ls -l # 仅监听 snitch ls -t -l # tcp 监听器 snitch ls -e # 仅建立 snitch ls -p # 普通/可解析输出 snitch ls -o json # json 输出 snitch ls -o csv # csv 输出 snitch ls -n # 数字（无 dns 解析） snitch ls --no-headers # 省略标头 snitch json json 输出脚本编写。 snitch json snitch json -l snitch 每隔一段时间观察流 json 帧。 snitch Upgrade # 检查更新 snitch Upgrade --yes # 自动升级 snitch update -v 0.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Snitch – A friendlier ss/netstat&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46361229"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/karol-broda/snitch'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 16 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;buybackoff:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;然后，在较低级别和较小延迟时，通常会中断必须禁用的审核。概念上与 Nagle 算法类似的想法 - 通过等待合并开销，但在硬件的接收端。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Veserv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;问题实际上是，没有人使用此类问题的通用解决方案，然后每个人都抱怨一组参数的特殊情况对于另一组不同的参数效果不佳。&lt;p&gt;Nagle 的算法只是选择批处理时间和时长的通用问题的特殊情况解决方案。我们想要进行批处理，因为批处理通常允许更高效的批处理算法、局部性、更少的开销等。您不希望进行批处理，因为这会增加延迟，无论是在收集足够的数据进行批处理时，还是因为您需要处理整个批处理。&lt;p&gt;一类解决方案是“工作或时间”。您可以批量处理一定量的工作或一定量的时间，以先到者为准。您可以选择时间量作为您想要的最坏情况延迟。您选择工作量作为有效批量大小（它应该小于最大吞吐量 * 延迟，否则您总是会先到达计时器）。&lt;p&gt;Nagle 的算法是“工作”是一个数据包（约 1.5 KB），“时间”是所有数据获得确认之前的时间（您可能已经看到这种超时动态程度可能已经造成问题），这会导致当延迟确认打开时，回退计时器为 500 毫秒。显然，对于现代连接来说，这是一组糟糕的参数。问题在于，Nagle 的算法只处理“工作”组件，但在“时间”组件上进行投注，允许诸如延迟确认之类的废话，有助于将有效“时间”组件“配置”为永恒，从而导致“卡住”缓冲区，这是超时应该避免的。我将拒绝讨论另一个方面，即选择何时缓冲以及缓冲多少，Nagle 的算法又是一个特殊情况。&lt;p&gt;有趣的是，延迟确认基本上是完全相同的问题，但在接收端完成。因此，双方都根据对方先进行的情况设置了暂停，这显然会导致灾难。他们都设置了固定的“工作”，但没有固定的“时间”，导致两个司机都太礼貌而不能先走。&lt;p&gt;应该做的是使用由您的系统和通道属性参数化的通用解决方案，从整体上解决这些问题，在这里需要很长时间才能深入描述。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hsn915:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;使用 UDP 代替 TCP 不会让分布式系统受益吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;foltik:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么 Linux 不添加一个在系统范围内启用 TCP_NODELAY 的 kconfig？它可以在现代发行版上默认启用。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hathawsh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哈哈，这样也算是一种解脱吧。我认为这篇文章会说启用 TCP_NODELAY 会导致分布式系统出现问题。我是那些打开 TCP_NODELAY 就不再回头的人之一，因为它可以立即解决问题，而且缺点似乎很小。幸运的是，这篇文章是站在我这边的。如果您认为这是个好主意，只需启用 TCP_NODELAY 即可。显然它一般不会破坏任何东西。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;x2rj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直认为 Nagel 算法的一个问题是，套接字 API（确实）没有刷新缓冲区并立即发送所有内容的功能，因此您可以在需要及时答复的消息之后使用它。&lt;p&gt;对于不需要答复的内容，Nagel 算法对我来说非常有效，但现在许多 TCP 通道都混合使用。他们发送期望快速答复的消息和其他更加异步的消息（从用户的角度来看，而不是程序员）。&lt;p&gt;如果所有操作系统、（家庭）路由器、防火墙和编程语言都具有 SCTP 之类的高质量实现，那不是很好吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;otterley:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;(2024) - 之前在&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=40310896"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=40310896&lt;/a&gt;讨论过&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dllthomas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;波兰语单词“nagle”非常疯狂。 （发音不同）意思是“突然”。或“同时”，这真是令人惊讶，因为我几乎可以肯定这纯粹是巧合。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;saghm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我第一次遇到这个问题是几年前，当时我是一名数据库客户端库实习生。事先没有听说过这个选项，我没想到在库打开的连接中启用它，并且在实践中，这通常会导致有线协议中的消息完全准备好发送，但实际上并没有立即发送。后来当有人使用它调查为什么延迟比他们预期的要高得多时我才发现这一点，我猜他们要么以前遇到过这个问题，要么能够找出它可能是罪魁祸首，结果发现几乎所有其他语言的现有客户端都无条件地设置了 NODELAY。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rowanG077:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我清楚地记得我们在二年级时与 5 名学生一起完成的一个简单模拟项目，其中有一个模拟和某种通过 TCP 进行通信的调度程序。我对我们所取得的表现感到震惊。即使在同一台机器上，它的速度也太慢了。经过几个小时的调试，结果发现确实是 Nagle 的算法导致了速度缓慢，当时我从未听说过。使用 TCP_NODELAY 立即修复。这是我第一次清楚地了解到该机构的老师不知道他们在教什么。显然我们是唯一注意到性能缓慢的小组，老师们甚至从未听说过 TCP_NODELAY。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jonstewart:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;等待动画出现&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vsgherzi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;oxy-and-friends.transistor.fm&amp;#x2F;剧集&amp;#x2F;mr-nagles-wild-ride" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;oxy-and-friends.transistor.fm&amp;#x2F;episodes&amp;#x2F;mr-nagles-w...&lt;/a&gt;&lt;p&gt;氧化物和朋友们的剧集！相当不错&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;martingxx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直认为 Nagle 的算法将策略放入了内核中不属于它的地方。&lt;p&gt;如果用户空间应用程序想要进行延迟和吞吐量权衡，他们已经可以使用自己的缓冲区完全感知和控制来做到这一点，这通常也意味着更少的系统调用。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anonymousiam:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Nagle 算法是在多点网络时代创建的。  多个主机都绑定到相同的通信（以太网）通道，因此它们将使用 CSMA (&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Carrier-sense_multiple_access_with_collision_detection" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Carrier-sense_multiple_access_...&lt;/a&gt;）以避免冲突。  如今，CSMA 在以太网上不再是必需的，因为所有现代连接都是点对点的，只有两个“主机”。每个通道。  （每个主机可以有任意数量的“用户”。）事实上，大多数现代（铜线）（千兆位+）以太网连接的两端都在同一条电线上同时传输和接收。  在每一端的 PHY 上使用混合器来从接收的内容中减去正在发送的内容。  较旧的（10&amp;#x2F;100 Base-T）可以做同样的事情，因为每一端都有专用的 TX&amp;#x2F;RX 对。  光纤以太网可以使用具有不同波长的同一光纤，也可以使用单独的 TX&amp;#x2F;RX 光纤。  我已经 25 年没有见过 10Base-2 以太网&amp;#x2F;DECnet 接口了。  如果有任何设备仍在某处运行，则它们仍在使用 CSMA。  CSMA 也仍然用于数字无线电系统（WiFi 等）。  CSMA包括“随机指数退避定时器”。它在管理拥塞方面做得很差。  （现在存在更现代的拥塞控制方法。）过去，禁用随机退避计时器在某种程度上相当于设置 TCP_NODELAY。&lt;p&gt;转储 Nagle 算法（通过设置 TCP_NODELAY）几乎总是有意义的，并且应该默认启用。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kazinator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; &lt;i&gt;更大的问题是 TCP_QUICKACK 并没有解决内核保留数据的时间比我的程序想要的时间长的根本问题。 &lt;/i&gt;&lt;p&gt;嗯，当然不是；它试图减少内核挂在 ack（或生成 ack）上的时间比您希望的时间长的问题。这与接收到的数据有关。如果远程端正在向您发送数据，并且由于没有收到来自您的确认而填充缓冲区而暂停，那么您有必要尽快发送一个确认。&lt;p&gt;我似乎记得 TCP&amp;#x2F;IP 的原始 Berkeley Unix 实现有一个用于发送确认的全局 500 毫秒计时器。因此，当您的 TCP 连接收到符合确认条件的新数据时，在发送确认之前可能需要长达 500 毫秒的时间。如果我们在现代现实中重新构建这一点，我们可以想象所有其他延迟都可以忽略不计，并且数据以多千兆位连接的线路速率传输，500 毫秒代表大量未确认的位。&lt;p&gt;延迟确认在精神上与 Nagle 类似，因为它们以可能的性能成本为代价促进合并。假设 TCP 连接是双向且“闲聊”的。 （因此，即使大量数据传输发生在一个方向上，另一方向上也存在应用程序级消息）延迟确认为 TCP ACK 捎带数据传输创造了机会。防止 TCP 段不携带任何数据，只携带 ACK。&lt;p&gt;就 TCP_QUICKACK 的可移植性而言，在 C 代码中它就像 #ifdef TCP_QUICKACK 一样简单。如果常量存在，则使用它。否则就不走运了。如果您使用另一种语言，则必须经历一些困难，具体取决于与网络相关的运行时是否以您可以测试的方式公开不可移植的选项，或者您是否独自一人。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eieio:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在调试我正在开发的游戏的一些网络延迟时发现了这篇文章。&lt;p&gt;事实证明，在我的情况下，它&lt;i&gt;不是&lt;/i&gt; TCP_NODELAY - 我的后端是用 go 编写的，并且 go 默认设置 TCP_NODELAY！&lt;p&gt;但我仍然找到了这篇文章 - 特别是 Nagle 对问题的承认！ - 有趣。&lt;p&gt;这里有两年前的讨论：&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=40310896"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=40310896&lt;/a&gt; -但我认为时间已经足够长了，其他人可能也有兴趣读一读。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://brooker.co.za/blog/2024/05/09/nagle.html</guid>
-      <pubDate>Mon, 22 Dec 2025 21:09:59 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46359120</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cyberax:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好的！几点说明：&lt;p&gt;1。您可以使用不同的背景突出显示当前选定的行吗？&lt;p&gt;2.也许添加可选的反向 DNS 查找？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mikeryan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当我看到这个标题时，我以为它是 Little Snitch，一个适用于 Mac 的现有网络监视器和防火墙。&lt;p&gt;可能需要不同的名称。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.obdev.at&amp;#x2F;products&amp;#x2F;littlesnitch&amp;#x2F;index.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.obdev.at&amp;#x2F;products&amp;#x2F;littlesnitch&amp;#x2F;index.html&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;themafia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它看起来不错，而且我没有发现它有什么问题，但我一直在使用 iptraf-ng，我认为它在这里有一点优势。&lt;p&gt;我是否可能错过了该页面演示视频中的某些内容？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;coppsilgold:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直想知道这些工具对于对付有能力的对手有多大用处。如果您是设计恶意软件的称职工程师，您是否会在恶意软件可执行文件中引入休眠期，并且如果可能的话，仅在用户执行与其他端点通信的操作时与 C&amp;C 通信？甚至可以根据用户正在做的事情来选择通信协议，以更好地融入。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/karol-broda/snitch</guid>
+      <pubDate>Tue, 23 Dec 2025 01:03:57 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46361229</comments>
     </item>
     <item>
-      <title>Lotusbail npm 包被发现正在收集 WhatsApp 消息和联系人</title>
-      <link>https://www.koi.ai/blog/npm-package-with-56k-downloads-malware-stealing-whatsapp-messages</link>
-      <description>&lt;p&gt;他们寻找有问题的代码。因为合法的 WhatsApp 库不需要自定义加密 - WhatsApp 已经处理端到端加密。静态分析可以看到有效的 WhatsApp 代码并批准它。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Lotusbail npm package found to be harvesting WhatsApp messages and contacts&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46359996"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.koi.ai/blog/npm-package-with-56k-downloads-malware-stealing-whatsapp-messages'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>笔记本电脑还没有为 LLM 做好准备。这即将改变</title>
+      <link>https://spectrum.ieee.org/ai-models-locally</link>
+      <description>&lt;p&gt;但未来的笔记本电脑可能会。最大的语言模型占用数百GB的内存。高功耗 NPU 可帮助笔记本电脑运行这些模型，而不会过度消耗电池。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Laptop Isn't Ready for LLMs. That's About to Change&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46360856"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://spectrum.ieee.org/ai-models-locally'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 23 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;scotty79:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;传统的安全性无法捕捉到这一点。&lt;p&gt;&gt; const backdoorCode = crypto.AES.decrypt(
-“U2FsdGVkX1+LgFmBqo3Wg0zTlHXoebkTRtjmU0cq9Fs=”，
-“错误_文件”
-).toString(crypto.enc.Utf8);&lt;p&gt;真的吗？随机垃圾字符串不是很强烈地表明有人在做可疑的事情吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jameslk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;恶意库将促使法学硕士编写更多代码。目前，恶意库似乎通常都是琐碎的库。 WhatsApp API 库正处于可振动编码的边缘，避免被破解可能是一个足够好的转折点，可以越来越多地接受 NIH 综合症，我认为这对 F&amp;#x2F;OSS 来说将是一个净负面影响&lt;p&gt;激励措施与 AI 模型公司一致，这些公司受益于使用更多代币从头开始编写代码&lt;p&gt;安全问题将简单地转移到与 LLM 相关的安全漏洞&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;e12e:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; lotusbail npm 包将自己呈现为 WhatsApp Web API 库 - 合法 @whiskeysockets&amp;#x2F;baileys 包的分支。&lt;p&gt;&gt;该软件包已在 npm 上发布 6 个月，并且在撰写本文时仍然有效。&lt;p&gt;&gt; (...) 恶意软件会窃取您的 WhatsApp 凭证、拦截每条消息、收集您的联系人、安装持久后门，并在将所有内容发送到威胁参与者的服务器之前对所有内容进行加密。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Eduard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;截至撰写本文时，被指控的恶意软件项目仍然可以在 npm 和 GitHub 上找到。我很惊讶 koi.ai 没有在他们的文章中提及他们是否已向 npm&amp;#x2F;GitHub 报告了他们的发现。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cromka:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我非常惊讶开发人员对 NodeJS 的信任程度如此之高，而且并不担心因无意中向人们传播恶意软件而被起诉。&lt;p&gt;在某些软件公司因此陷入严重麻烦之前，这只是时间问题，不是吗。或者，NPM 实际上实施了一些严格的管理流程。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;llmslave2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果一个人依赖 JS 生态系统来维持生计，并且无法在工作中实际做出改变来缓解这种情况，那么开发人员可以做些什么来至少部分缓解风险？我听其他人提到在 docker 容器中进行所有开发。也许使用 Linux 虚拟机？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;antiloper:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;实际上有人受到此影响吗？这个包是某个流行包的依赖项吗？&lt;p&gt;我认为答案是否定的，因为这显然是标题诱饵 AI slop，但谁知道呢。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;edoceo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;再说一次，只要有一个更好的供应链工具，只需检查更改的包就可以缓解这种情况。也许阻止某些依赖项的依赖关系会减轻。&lt;p&gt;为什么没有更多的团队在 NPM 的盲目安装之前放置一些工具（等）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anonzzzies:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对安装加密矿工的依赖有一些依赖：这非常可怕，因为自从 WordPress 以来我们还没有遇到过这种情况。我看到很多人遇到这个问题（有一个奇怪的进程消耗了我所有的CPU）。就像这里有人已经说过的那样：我们需要一个 Apache &amp;#x2F; NPM 公共资源，当软件包使用这些资源之外的任何内容时，应该敲响警钟。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tekacs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在这里稍微讨论一下不同的方向：&lt;p&gt;我发现像这样的恶意软件问题的令人沮丧的副作用是，它似乎会导致善意的安全团队锁定应用程序中的数据。&lt;p&gt;理由非常合理 - 在这种情况下，WhatsApp 消息被盗了！但问题是……如果这不是他们窃取的东西，他们就会窃取其他东西。&lt;p&gt;同时锁定这些应用程序，以便只有具有特定签名的应用程序可以从您的 WhatsApp 中读取信息，这意味着如果您想要备份消息或出于任何合法目的阅读它们，那么您现在就只能依赖于通常缓慢、不可自动化的仅 UI 流程。&lt;p&gt;我很高兴现代计算机比以前更加安全，但我认为通过锁定一切并创建更多孤岛进行深度防御本身就是一个问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;The_President:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最近审核了一个由人工智能工具创建的软件计划。  肉眼所见的 NPM 依赖关系。  我只能想象如果所建议的“工程”不可行，将会带来令人畏惧的责任问题。风格实际上是为了在广泛的用户群的生产中使用而提出的。  也就是说，用户创建“草稿”的过程是由用户创建的。代码库让他们更好地了解必要的工作范围。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;evdubs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;没有 Apache Commons for Javascript 吗？如果能拥有一个来自“受信任”的大型图书馆，那就太好了。 &lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Apache_Commons" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Apache_Commons&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ashishb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;JavaScript 狂热分子会否决我，但我会再说一遍。
-JavaScript 应该在不受信任的环境中运行（比如浏览器），在任何形式的受信任环境中运行都会大大增加风险 [1]&lt;p&gt;该语言太难进行有意义的静态分析。
-这种特殊的攻击在基于 Java、Go 或 Rust 的包中执行要困难得多（尽管并非不可能）。&lt;p&gt;1 - &lt;a href="https:&amp;#x2F;&amp;#x2F;ashishb.net&amp;#x2F;tech&amp;#x2F;javascript&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ashishb.net&amp;#x2F;tech&amp;#x2F;javascript&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rglover:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;微软要么需要成为 NPM 的更好管理者，要么将其交给能够妥善维护它的基金会。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esafak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;其他扫描仪是否发现了这一点？何时？检测滞后排行榜会很整洁。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;agentifysh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;想知道 flutter 包或 python 是否可以实现这一点？我希望慢慢摆脱 javascript 生态系统。&lt;p&gt;我开始使用 Flutter，甚至在 Web 应用程序中也使用它，效果很好，但仍然在前端网站中使用 Astro&amp;#x2F;React，所以我无法完全摆脱它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cxr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;至此，这些攻击的存在应该是可以预料到的结果。  （即使没有我们现在拥有的经验记录以及我们现在可以多次引用的情况，这也应该是可以预料到的。）&lt;p&gt;NPM 和 NPM 风格的包管理器旨在在构建时间之前延迟获取依赖项，这些管理器已经从根本上被打破了。  它们是围绕底层版本控制系统的最终运行，所有这些都支持一种考虑不周、不成熟的方案来实现包管理器项目维护者的版本控制的替代方法。 &lt;p&gt;它们为这样的攻击提供了掩护，因为它们鼓励了一种文化，在这种文化中，因为一个人的依赖关系都在“那边”，所以大量的表面区域被掩盖起来，并且它们永远不会受到审查（因为 56K NPM 用户不会错）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisMarshallNY:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;&amp;gt;开发人员不假思索地安装的那种依赖项&lt;/i&gt;&lt;p&gt;这是一个可怕的声明，就在那里。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;montague27:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;供应链攻击是否有增加的趋势？开发人员可以采取哪些措施来减轻影响？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BubbleRings:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么，是否有使用受感染的 Lotusbail npm 包的最流行应用程序的列表？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;peacebeard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哇，人工智能艺术看起来很糟糕。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fooker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 56k 下载量？&lt;p&gt;这似乎..低..？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;runningmike:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;受欢迎程度从来都不是安全或质量的衡量标准……始终要进行验证。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.koi.ai/blog/npm-package-with-56k-downloads-malware-stealing-whatsapp-messages</guid>
-      <pubDate>Mon, 22 Dec 2025 22:35:45 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46359996</comments>
+&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gguncth:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当我可以在六个足球场大小的计算机上运行法学硕士时，我不想在笔记本电脑上运行法学硕士。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fwipsy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看来是一厢情愿的想法。&lt;p&gt;&gt;您需要多少 TOPS 才能运行具有数亿参数的最先进模型？没有人确切知道。&lt;p&gt;为什么不从可用的开源人工智能中推断呢？最强大的开源人工智能（据我所知）是 Kimi K2 和 &gt;600gb。以可接受的速度运行需要 600+GB GPU&amp;#x2F;NPU 内存。即使是 2000-3000 美元的专注于 AI 的 PC，如 DGX Spark 或 Strix Halo，通常最高可达 128GB。 Frontier 型号只能运行在价格比普通消费 PC 贵很多倍的设备上，而且 RAM 定价只会变得更糟。&lt;p&gt;2010 年，典型消费 PC 拥有 2-4GB 的 RAM。现在典型的PC有12-16GB。这表明 RAM 大小最多可能每 5 年翻一番。如果是这样的话，我们距离典型的 PC 拥有足够的 RAM 来运行 Kimi K2 还有 25-30 年的时间。&lt;p&gt;但典型的用户永远不需要那么多 RAM 来进行基本的网页浏览等。典型的计算机 RAM 大小不会无限期地继续增长。&lt;p&gt;更便宜的型号呢？运行“足够好”的测试是可能的。最终在消费类硬件上建立模型。但我怀疑，至少在 10-15 年内，典型的消费者（HN 读者可能不是典型！）会更喜欢功能、便宜，尤其是&lt;i&gt;可靠性&lt;/i&gt;（不会犯错误），而不是能够在本地运行模型。 （是的，人工智能数据中心正在受到投资者的补贴；但由于规模经济，即使这种情况结束，它们仍然会更便宜。）&lt;p&gt;经济学表明，人工智能电脑将仍然是一种利基产品，类似于游戏电脑。默认情况下，将有用的人工智能功能添加到每台电脑上的成本太高。这就像说飞行是如此重要，每个人都应该拥有一架飞机。至少在十年内，可能是两年内，它只是不具有成本效益。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;socketcluster:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得现在买显卡没什么意义了。显然，显卡针对图形进行了优化；它们恰好对人工智能有利，但基于人工智能日益重要的意义，如果我们不为法学硕士提供更专业的芯片和专用机器，我会感到惊讶。一种用于 LLM，另一种用于稳定扩散。&lt;p&gt;通过图形处理，您需要大量带宽来将内容进出显卡，以便在高分辨率屏幕上进行渲染、大量像素、大量刷新、大量带宽...对于 LLM，在相当长的时间内输入相对少量的文本，并输出相对少量的文本。相对于输入和输出的大小，内部处理量是巨大的。我认为 NVIDIA 和其他一些公司已经开始走这条路。&lt;p&gt;但显卡可能仍然对稳定扩散有用；特别是人工智能生成的视频，因为输入和输出带宽要高得多。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bfrog:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想这取决于模型，代码没用。作为交互式维基百科的有损副本，它可能还不错，但不是很好或很好。&lt;p&gt;也许对于创意建议和编辑来说还可以。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Morromist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这个月我在市场上购买一台笔记本电脑。现在，许多新笔记本电脑都宣传人工智能功能，例如“HP OmniBook 5 Next Gen AI PC”其中宣传：&lt;p&gt;“SNAPDRAGON X PLUS 处理器 - 通过 AI 工具实现无缝多任务处理，通过响应性能实现更多日常工作，提高工作效率和连接性，同时提供较长的电池寿命”&lt;p&gt;我不希望我的笔记本电脑上出现这些垃圾，尤其是在电池耗尽时！在笔记本电脑上运行 AI 就像在 Xbox 上玩《星际争霸：重制版》或在 Steamdeck 上玩异星工厂一样。我听说你也可以在怀孕测试中玩《DOOM》。当然可以，但这只是一种乏味的劣质体验。&lt;p&gt;确实，这只是目前人工智能被过度炒作的一个很好的例子。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;seanmcdirmid:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我已经在我的笔记本电脑（M3 Max 64GB）上运行法学硕士一年了，我认为它们已经准备好了，特别是考虑到中型型号的性能越来越好。我非常确定，未来几年，统一内存和节能 GPU 将不仅仅出现在苹果笔记本电脑上。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esses:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我花了 30 秒的时间试图弄清楚 DDS 在这种情况下是什么缩写。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wkat4242:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇文章太蠢了。它完全忽略了内存价格的爆炸性增长，这将使大型快速内存笔记本电脑在数年内变得不可行，并指出了这样的内容：&lt;p&gt;&amp;gt;您需要多少 TOPS 才能运行具有数亿参数的最先进模型？没有人确切知道。不可能在当今的消费类硬件上运行这些模型，因此无法进行实际测试。&lt;p&gt;我们确切地知道给定响应能力所需的性能。 TOPS 只是一个独立于其运行的硬件类型的测量值。&lt;p&gt;TOPS 越少，模型运行速度越慢，因此用户体验会受到影响。内存带宽和延迟也发挥着巨大的作用。而背景，增加背景，法学硕士就会变得更慢。&lt;p&gt;我们不需要等待消费者硬件，直到我们知道需要很多东西。我们可以针对给定情况进行计算。&lt;p&gt;它还假装小模型根本没有用。&lt;p&gt;不幸的是，我认为大规模的云投资将减轻本地人工智能的压力。这种趋势使得本地内存变得昂贵，并且必须收回所有数十亿美元，因此所有供应商都在推动他们的云订阅。我确信有些功能将是本地的，但遗憾的是，首当其冲的将是云。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aappleby:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我预测，在看到具有 128GB 以上内存的廉价笔记本电脑之前，我们将会看到闪存计算。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://spectrum.ieee.org/ai-models-locally</guid>
+      <pubDate>Tue, 23 Dec 2025 00:12:16 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46360856</comments>
     </item>
     <item>
-      <title>塞科特 – 60 分钟</title>
-      <link>https://archive.org/details/insidececot</link>
-      <description>&lt;p&gt;删除圆 分享或嵌入此项目 分享到 Twitter 分享到 Facebook 分享到 Reddit 分享到 Tumblr 分享到 Pinterest 通过电子邮件分享 复制链接 开始播放： EMBED &lt;iframe src="https://archive.0 plus-circle 添加评论评论 评论 0 浏览 17 收藏 下载选项 下载 1 个文件 H.264 IA 下载 下载 1 个文件 ITEM TILE 下载 下载 1 个文件 MPEG4 下载 下载 1 个文件TORRENT 下载 下载 23 文件下载 6 原始内容 显示全部收藏 社区视频 由 Colin Haskins 于 2025 年 12 月 23 日上传 类似项目（基于元数据） 服务条款（最后更新于 2014 年 12 月 31 日）。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Cecot – 60 Minutes&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46361024"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://archive.org/details/insidececot'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>巴里·韦斯 (Bari Weiss) 审查的《60 分钟》报道现已成为互联网违禁品</title>
+      <link>https://www.theverge.com/policy/849432/60-minutes-cecot-censored-canada-leak</link>
+      <description>&lt;p&gt;政策娱乐新闻巴里·韦斯 (Bari Weiss) 审查的关于 CECOT 的 60 分钟报道现在是互联网违禁品今年最受关注的哥伦比亚广播公司新闻报道从未在哥伦比亚广播公司播出今年最受关注的哥伦比亚广播公司新闻报道从未在哥伦比亚广播公司播出伊丽莎白·洛帕托 (Elizabeth Lopatto) 2025 年 12 月 23 日凌晨 12:06 UTCLinkShare CBS via Getty Images 伊丽莎白·洛帕托 (Elizabeth Lopatto) 是一名记者，撰写关于技术、金钱和人类行为。据《纽约时报》报道，许多被驱逐出境的人正在等待庇护申请。据《华盛顿邮报》报道，韦斯在周一的社论电话会议上声称，她“保留这个故事是因为它还没有准备好”。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The 60 Minutes report that Bari Weiss censored is now internet contraband&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46362032"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.theverge.com/policy/849432/60-minutes-cecot-censored-canada-leak'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;评论中的存档链接都很好，但让我们将提交网址设为具有上下文的故事链接之一：&lt;p&gt;&lt;i&gt;CBS 捍卫撤回有关特朗普驱逐出境的 60 分钟片段&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.bbc.com&amp;#x2F;news&amp;#x2F;articles&amp;#x2F;cdrnv3keeneo" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.bbc.com&amp;#x2F;新闻&amp;#x2F;文章&amp;#x2F;cdrnv3keeneo&lt;/a&gt;&lt;p&gt;或&lt;p&gt;&lt;i&gt;“60 分钟”拉出一个片段。一位记者称之为“政治”。&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.nytimes.com&amp;#x2F;2025&amp;#x2F;12&amp;#x2F;21&amp;#x2F;商业&amp;#x2F;60-分钟-trump-bari-weiss.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.nytimes.com&amp;#x2F;2025&amp;#x2F;12&amp;#x2F;21&amp;#x2F;商业&amp;#x2F;60分钟-特朗普...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmward01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是我们需要 archive.org 的原因。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;empath75:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;美国人民现在必须使用 VPN 才能从国外访问国内新闻。我认为可以公平地说，民主的车轮已经脱离，一切都严重崩溃。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ProllyInfamous:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.muellershewrote.com&amp;#x2F;p&amp;#x2F;观看 60 分钟 cecot-segment" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.muellershewrote.com&amp;#x2F;p&amp;#x2F;watch-the-60-minutes-cecot...&lt;/a&gt;&amp;gt;&lt;p&gt;无论您对非法移民有何看法，这都是可耻的[0]。&lt;p&gt;[0]将非公民驱逐到第三方国家&amp;#x2F;监狱&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LarsDu88:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;距离 Hackernews 多久才会将其撤下？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cdrnsf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;附加上下文：&lt;p&gt;&gt;特朗普政府一再声称，被送往萨尔瓦多的人绝大多数是暴力犯罪分子； Pro Publica 报道称，政府知道至少 197 名男子在美国没有被定罪，其中 6 人被定罪为暴力犯罪。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.404media.co&amp;#x2F;archivists-posted-the-60-mines-cecot-segment-bari-weiss-killed&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.404media.co&amp;#x2F;archivists-posted-the-60-mines-cec...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tastyface:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为姊妹篇，以下是 ProPublica 最近的报告，试图确定到底谁被送往这个酷刑营：&lt;a href="https:&amp;#x2F;&amp;#x2F;projects.propublica.org&amp;#x2F;venezuelan-immigrants-trump-deported-cecot" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;projects.propublica.org&amp;#x2F;venezuelan-immigrants-trump-...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;slg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想起了 Bari Weiss 几年前签署的关于正义和公开辩论的信[1]，现在她在 CECOT 上大肆宣扬这样的故事，因为它以负面的方式展示了现任政府。&lt;p&gt;我还想知道这个故事是否会得到留在 HN 上的余地，以收集上一个例子的 200 多个赞成票和 300 多个评论，或者它是否会被标记为关闭就像许多其他类似的故事一样，几分钟之内就登上了首页。&lt;p&gt;[1] - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=23759283"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=23759283&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pavel_lishin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这里还有其他链接：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.404media.co&amp;#x2F;archivists-posted-the-60-minutes-cecot-segment-bari-weiss-killed&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.404media.co&amp;#x2F;archivists-posted-the-60-mines-cec...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;scratchyone:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我有一种感觉，这将使互联网档案馆中的 DMCA 删除，以试图压制它。这是 archive.org torrent 下载的信息哈希以供将来参考，只要世界上有人仍在播种该文件，这应该允许在任何 torrent 客户端中检索该文件。&lt;p&gt;8105370ed7dba50dc7ec659fd67550569b4dd8a0&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就上下文而言，这篇报道被哥伦比亚广播公司新闻压制了。新领导层最有可能安抚美国政府。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://archive.org/details/insidececot</guid>
-      <pubDate>Tue, 23 Dec 2025 00:36:27 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46361024</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[欺骗] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46361024"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46361024&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.theverge.com/policy/849432/60-minutes-cecot-censored-canada-leak</guid>
+      <pubDate>Tue, 23 Dec 2025 03:14:46 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46362032</comments>
     </item>
     <item>
-      <title>通用推理模型（53.8% 通过 1 ARC1，16.0% 通过 ARC 2）</title>
-      <link>https://arxiv.org/abs/2512.14693</link>
-      <description>&lt;p&gt;) Connected Papers Toggle Connected Papers（什么是 Connected Papers。） Litmaps Toggle Litmaps（什么是 Litmaps。） 代码链接 Toggle Papers with Code（什么是 Papers with Code。）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Universal Reasoning Model (53.8% pass 1 ARC1 and 16.0% ARC 2)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46357458"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://arxiv.org/abs/2512.14693'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>60 分钟：塞科特</title>
+      <link>https://news.ycombinator.com/item?id=46362149</link>
+      <description>&lt;p&gt;org/details/60minutes-cecotsegment jtgeibel 20 分钟前 [–] 原帖，283 分，38 条评论：https://news.标记并不意味着它没有被看到或不活跃，首页并不重要，这里的东西移动得很快。另外，我从来没有见过一篇帖子在不到 3 小时的时间内自然地从首页掉下来，有数百张选票，除非评论数量超过了帖子的点赞数。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; 60 Minutes: Cecot&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46362149"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46362149'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mysterEFrank:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很惊讶这个研究方向没有得到更多的关注，没有人试图概括它，例如通过将递归概念与下一个令牌预测相结合。 
-也就是说，尽管取得了相当大的进步，但这似乎只是一些超参数调整，而不是根本性的改进。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Moosdijk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的。 
-这种方法似乎在一次运行中应用了相同的原理，在内部循环，而不是一次（快速）或多次（专业思考）运行模型。&lt;p&gt;该模型似乎用更少的知识但更多的智慧来得出结果，而不是通过了解大量可能的结果来“暴力破解”正确答案的大型模型。&lt;p&gt;有点像拥有电子游戏中最可能的帧的数据库，然后在它们之间进行混合渲染场景。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;marojejian:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;听起来像是人力资源管理和人力资源管理精神的进一步提高。 TRM 模型。&lt;p&gt;来自 x 的不错评论：
-&lt;a href="https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;r0ck3t23&amp;#x2F;状态&amp;#x2F;2002383378566303745" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;r0ck3t23&amp;#x2F;status&amp;#x2F;2002383378566303745&lt;/a&gt;&lt;p&gt;我仍然对这些架构着迷： 
-- 内置循环&amp;#x2F;更原生地对变压器进行推理缩放。
-- 不要使用完整的循环梯度轨迹，并且成功不仅是尽管如此，而且&lt;i&gt;因为&lt;/i&gt;。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://arxiv.org/abs/2512.14693</guid>
-      <pubDate>Mon, 22 Dec 2025 18:59:22 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46357458</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jtgeibel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;原帖，283分，38条评论：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46361024"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46361024&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46362149</guid>
+      <pubDate>Tue, 23 Dec 2025 03:33:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46362149</comments>
     </item>
     <item>
-      <title>卫星显示美国最大的加密货币采矿中心存在热量泄漏</title>
-      <link>https://www.space.com/space-exploration/satellites/satellites-reveal-heat-leaking-from-largest-us-cryptocurrency-mining-center</link>
-      <description>&lt;p&gt;SatVu 捕获了美国最大的加密货币挖矿数据中心之一的热足迹的详细卫星图像。”从地球卫星公司 SatVu 拍摄的标记图像。从太空注销更多信息。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Satellites reveal heat leaking from largest US cryptocurrency mining center&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46360465"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.space.com/space-exploration/satellites/satellites-reveal-heat-leaking-from-largest-us-cryptocurrency-mining-center'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vondur:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哇。加密货币领域是否还有足够的钱来证明这种投资的合理性？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;inatreecrown2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，这张图片看起来与电脑主板的图片有多么相似。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kanemcgrath:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直想知道是否有人计算过我们的全球供暖有多少可以归因于（如果有的话）每一个电子设备、服务器和发动机作为副产品输出热量。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所以我对此没有任何背景。文章称，它的用电量相当于 30 万户家庭的用电量。是一点点吗？这么多吗？一家钢铁铸造厂使用多少？&lt;p&gt;编辑：根据我的餐巾纸计算，一家钢铁铸造厂使用的钢铁大约比这个多 3,000&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;theamk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“泄漏”这里是一个错误的词——它意味着某种低效率，流程没有达到所需的效果。漏水的水桶，漏水的水龙头...&lt;p&gt;这里的情况并非如此，该中心正在将热量__倾倒__到环境中 - 这是设计使然，所有电力都被转化为热量。根据设计，它是一个巨大的电加热器。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.space.com/space-exploration/satellites/satellites-reveal-heat-leaking-from-largest-us-cryptocurrency-mining-center</guid>
-      <pubDate>Mon, 22 Dec 2025 23:23:12 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46360465</comments>
-    </item>
-    <item>
-      <title>Tc – Theodore Calvin 的与语言无关的测试框架</title>
-      <link>https://github.com/ahoward/tc</link>
-      <description>&lt;p&gt;自由移植语言，永远保留测试。 json # 测试输入└──预期。 jsonl) 测试生成：脚手架 g.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Tc – Theodore Calvin's language-agnostic testing framework&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46359683"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/ahoward/tc'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mmastrac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我写了 &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;mmastrac&amp;#x2F;clitest" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;mmastrac&amp;#x2F;clitest&lt;/a&gt; 因为我需要一个更复杂的测试工具来执行类似的 CLI 测试。它并不完全相同，但它绝对在同一个宇宙中。&lt;p&gt;像“tc”这样的每个测试用例一个文件确实有效，但根据我的经验，它在大规模时往往会崩溃。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;roxolotl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;虽然我无法真正评论这个特定实现有多好，但像这样的基于差异的简单测试框架没有得到足够的关注。我的第一份工作涉及内部编程语言。测试套件只是大量自上而下执行的语句，并将它们的输出与单个文件进行比较。是的，这有点荒谬，但效果非常好。如果他们愿意在它周围添加更多的结构，我认为那就更完美了。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/ahoward/tc</guid>
-      <pubDate>Mon, 22 Dec 2025 22:03:07 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46359683</comments>
-    </item>
-    <item>
-      <title>没有隐私和安全，在线安全就没有未来</title>
-      <link>https://itsfoss.com/news/alexander-linton-interview/</link>
-      <description>&lt;p&gt;你可以感受到那种脆弱。瑞士一直是 Session 技术基金会的理想家园。 TutaHanna 既然您是独立的，那么 Session Technology Foundation 和 OPTF 之间的关系是什么。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; There Is No Future for Online Safety Without Privacy and Security&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46360067"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://itsfoss.com/news/alexander-linton-interview/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tolerance:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在任何尚未阅读实际链接的人对当前标题做出反应并被主导整个提交内容的单一线程所吸引之前，这是一次采访。&lt;p&gt;&lt;i&gt;会话技术基金会的 Alexander Linton，介绍如何构建去中心化消息传递以及为什么全平台内容审核在加密平台上不切实际。&lt;/i&gt;&lt;p&gt;不熟悉他或该平台。但听起来是一次有趣的交流。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gjsman-1000:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;让我直言不讳地说出我对这里发生的事情的看法。&lt;p&gt;多年来，技术人员坚持认为监控互联网安全是家长的工作。父母们，尤其是随着社交媒体、硬核色情内容的出现，以及每个儿时朋友都拥有设备的出现，正确地表示这是不合理且不可能的。&lt;p&gt;技术人员有二十年的机会按照自己的方式解决这个问题。相反，我们集体认为，任何表达这种观点的人都必须是道德上恐慌的疯子，这是一个我们可以容忍的“没有合理解决方案”的问题。现在我们无法决定条款，因为每个人都已经受够了，没有人有耐心让孩子在 12 点在朋友的手机上观看 BDSM。&lt;p&gt;由于&lt;i&gt;我们的&lt;/i&gt;行业拒绝认真对待这些问题，我们失去了声音，我们失去了听起来合理的理由，现在闸门已打开 - 对于&lt;i&gt;一切&lt;/i&gt;。没有人再倾听我们的观点，而且可以说这是正确的。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://itsfoss.com/news/alexander-linton-interview/</guid>
-      <pubDate>Mon, 22 Dec 2025 22:43:22 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46360067</comments>
+      <title>柴油污染颗粒损害 iPSC 衍生小胶质细胞的溶酶体功能</title>
+      <link>https://www.sciencedirect.com/science/article/pii/S0160412025002181</link>
+      <guid isPermaLink="true">https://www.sciencedirect.com/science/article/pii/S0160412025002181</guid>
+      <pubDate>Tue, 23 Dec 2025 02:56:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46361917</comments>
     </item>
   </channel>
 </rss>
