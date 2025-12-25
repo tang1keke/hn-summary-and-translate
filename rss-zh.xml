@@ -6,113 +6,50 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 25 Dec 2025 12:51:13 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Dec 2025 15:25:24 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Mattermost 在达到 10000 条限制后限制对旧消息的访问</title>
-      <link>https://github.com/mattermost/mattermost/issues/34271</link>
-      <description>&lt;p&gt;7k 消息限制 10000 团队版 #34271新问题复制链接新问题复制链接OpenOpen消息限制 10000 团队版#34271复制链接标签种类/许可证有关 Mattermost 许可证的问题有关 Mattermost 许可证的问题描述steffenteichmannhska于 2025 年 10 月 24 日开放问题正文操作自新升级以来我们遇到了问题。已达到 000 条消息限制。 26 日前发送的消息。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Mattermost restricted access to old messages after 10000 limit is reached&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46383675"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/mattermost/mattermost/issues/34271'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;q3k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;&lt;pre&gt;&lt;code&gt; diff --git a&amp;#x2F;服务器&amp;#x2F;频道&amp;#x2F;app&amp;#x2F;limits.go b&amp;#x2F;服务器&amp;#x2F;频道&amp;#x2F;app&amp;#x2F;limits.go
-    索引 b13103898a..a8be8dd908 100644
-    ---a&amp;#x2F;服务器&amp;#x2F;频道&amp;#x2F;应用程序&amp;#x2F;limits.go
-    +++ b&amp;#x2F;服务器&amp;#x2F;频道&amp;#x2F;应用程序&amp;#x2F;limits.go
-    @@ -36,17 +36,6 @@ func (a *App) GetServerLimits() (*model.ServerLimits, *model.AppError) {
-                    限制.MaxUsersHardLimit = licenseUserLimit + int64(extraUsers)
-            }
-     
-    - &amp;#x2F;&amp;#x2F;检查许可证是否有历史记录限制并获取计算的时间戳
-    - 如果许可证！= nil &amp;amp;&amp;amp;许可证.限制 != nil &amp;amp;&amp;amp;许可证.限制.PostHistory &gt; 0 {
-    - 限制.PostHistoryLimit = 许可证.Limits.PostHistory
-    - &amp;#x2F;&amp;#x2F;获取最后一个可访问帖子的计算时间戳
-    -lastAccessibleTime，appErr := a.GetLastAccessiblePostTime()
-    - 如果 appErr != nil {
-    - 返回零，appErr
-    - }
-    - 限制。LastAccessiblePostTime = 最后AccessibleTime
-    - }
-    -
-            activeUserCount, appErr := a.Srv().Store().User().Count(model.UserCountOptions{})
-            如果 appErr != nil {
-                    return nil, model.NewAppError("GetServerLimits", "app.limits.get_app_limits.user_count.store_error", nil, "", http.StatusInternalServerError).Wrap(appErr)&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Zephilinox:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因此，他们不仅强制执行了一个小得可笑的消息限制，而且还对自托管版本执行了此操作，并且他们在没有宣布且没有合适的迁移路径的情况下执行了此操作&lt;p&gt;并且该公司仍然没有人承认这是一个错误？&lt;p&gt;非常好&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;constantius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们现在是一家国防承包商，他们网站上的文案听起来像是军事角色扮演……可能是为了追逐 Anduril 和 Palantir 的愚蠢利润，并在此过程中做旧的开源拉格拉。&lt;p&gt;Zulip（用于 Slack）和 Wekan（用于 Trello）是很好的替代品，省去了道德和技术方面的担忧。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;zulip.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;zulip.com&amp;#x2F;&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;wekan.github.io&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;wekan.github.io&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;carolosf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我以前用过Mattermost。强烈建议将 Zulip 作为替代方案。 （这是我最喜欢的 Slack 替代方案，甚至比 Slack 更好，因为在我看来，它最擅长管理干扰。它还有一个有趣的历史，我相信它被 Dropbox 收购，然后又从 Dropbox 回来）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shaky-carrousel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您可以切换到 &lt;a href="https:&amp;#x2F;&amp;#x2F;framagit.org&amp;#x2F;framasoft&amp;#x2F;framateam&amp;#x2F;mostlymatter" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;framagit.org&amp;#x2F;framasoft&amp;#x2F;framateam&amp;#x2F;mostlymatter&lt;/a&gt;没有用户限制。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jamescontrol:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我查看了它的公司聊天和数据，但那些奇怪的功能限制导致无法使用实在是太多了，所以他们这样做也并不奇怪。他们缺钱吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cantalopes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感谢上帝，我没有说服我的团队自行托管 Mattermost，而不是使用 Slack&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gjsman-1000:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; “Mattermost 之所以能取得今天的成就，全归功于开源社区。”&lt;p&gt;不是吗？ FOSS 社区在日常生活中高估了它们的重要性。&lt;p&gt;典型的例子：Linux。 2004 年，90% 以上的提交都是公司赞助的。纯粹的社区成员几乎不再为 Linux 做任何重要的事情；或任何这些项目。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bfkwlfkjf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最重要的是什么？ GitHub 评论中的人们说“我只需要消息”但有很多自托管消息应用程序和服务器，不是吗？我立刻想到了 XMPP。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gus_massa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;来自 readme.md&lt;p&gt;&gt;; &lt;i&gt;每月 16 日都会在 MIT 许可下发布新的编译版本。&lt;/i&gt;&lt;p&gt;than 是什么意思？它相当于我们所说的“免费软件”吗？修改二进制文件合法吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gmerc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们拿了风险投资的钱吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;acheong08:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对自托管开源软件设置硬性限制是另一种疯狂的行为。我很惊讶线程中很少有人刚刚更改源代码并自己构建它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bramhaag:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Mattermost 已获得 MIT 许可。是什么阻止人们取消这一限制？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/mattermost/mattermost/issues/34271</guid>
-      <pubDate>Thu, 25 Dec 2025 11:03:59 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46383675</comments>
-    </item>
-    <item>
-      <title>我们在圣诞节邀请了一位男士到我们家，他和我们一起生活了 45 年</title>
-      <link>https://www.bbc.co.uk/news/articles/cdxwllqz1l0o</link>
-      <description>&lt;p&gt;“我说‘罗尼，鸡肉怎么了。’罗布说，罗尼经常问‘我是不是做了坏事。’”15 岁时，罗尼被送回卡迪夫，他们说，“一无所获”。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; We invited a man into our home at Christmas and he stayed with us for 45 years&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46383552"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bbc.co.uk/news/articles/cdxwllqz1l0o'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Python 3.15 的 Windows x86-64 解释器有望快 15%</title>
+      <link>https://fidget-spinner.github.io/posts/no-longer-sorry.html</link>
+      <description>&lt;p&gt;org 也带有尾部调用。然而，你来这里不是为了这个。这些是这个问题的结果。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Python 3.15’s interpreter for Windows x86-64 should hopefully be 15% faster&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46384167"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://fidget-spinner.github.io/posts/no-longer-sorry.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;landonia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一个感人至深的圣诞故事。这让我很开心。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reop2whiskey:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是为什么我们需要让政府摆脱无家可归问题的困扰，这样公民就可以有更多的钱来帮助&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cogman10:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;美丽的故事，但带有悲伤的基调。&lt;p&gt;很大一部分无家可归者患有自闭症 [1]。  这真的很糟糕。  如果这些人没有支持，他们的生活很快就会变得悲惨。  不幸的是，这些人很容易陷入虐待的境地。&lt;p&gt;照顾自闭症患者（中度到重度）需要做很多工作。  他们的需求没有标准，他们的能力可以是全面的。  他们中的一些人像故事中的罗尼一样有能力，可以保住工作。  但其他人则需要 24&amp;#x2F;7 的照顾才能生存。  不幸的是，我不认为患有严重自闭症的人在无家可归时能够存活很长时间。&lt;p&gt;我希望这个故事至少能让人们对无家可归者的看法有所不同。  他们并非都是因为恶习或失败而存在的。  其中很大一部分是因为社会不关心那些有精神障碍的人。  这个故事很好地强调了罗恩有赌博问题。  事实上，自闭症确实会让一个人更容易上瘾。&lt;p&gt;我写这篇文章的目的是，请对无家可归者有一些人性。  我知道它们可能会带来不便。  他们是人，但由于所处的环境，他们不一定是坏人。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;pubmed.ncbi.nlm.nih.gov&amp;#x2F;29633853&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;pubmed.ncbi.nlm.nih.gov&amp;#x2F;29633853&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rognjen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我没有哭！你在哭！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wjnc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的父母曾经收养了一个陷入困境的男人。我想他和他们一起生活了大约三年，直到我怀上我的那一刻，我妈妈开始为我们家庭规划未来，并帮助他进入一个住房项目。在我成年之前的一生中，这个男人偶尔会骑着他的赛车来喝咖啡、聊天，然后留下来吃晚饭。他很友善、风趣，还有点奇怪。他的人生故事比肥皂剧更具戏剧性，但你不会知道。父亲去世后，我开始寻找他，但一直没有找到。我仍然偶尔在网上搜索他，完全知道他可能已经不在人世了，而且可能也不会上网。我脑子里有一个故事，他可能有一次骑着他的赛车出现在我父亲的家门口，寻找其他人住在那里，但他太害羞而不敢询问细节。失去了踪迹。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;akkad33:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;罗尼过着富裕的生活。我感到羞愧，相比之下我自私的生活显得苍白无力。令人惊奇的是，这些人并不担心照顾另一个人以及自己的孩子需要照顾的额外费用和不便。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;peterspath:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;美丽......善良可以走很长的路:)我们都可以做得更好（我现在主要指的是我自己）&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.bbc.co.uk/news/articles/cdxwllqz1l0o</guid>
-      <pubDate>Thu, 25 Dec 2025 10:35:34 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46383552</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mananaysiempre:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;金钱镜头（希望这包含在博客文章中）：&lt;p&gt;&lt;pre&gt;&lt;code&gt; # if Defined(_MSC_VER) &amp;amp;&amp;amp; !定义(__clang__)
+  # 定义 Py_MUSTTAIL [[msvc::musttail]]
+  # 定义 Py_PRESERVE_NONE_CC __preserve_none
+  ＃否则
+  # 定义 Py_MUSTTAIL __attribute__((musttail))
+  # 定义 Py_PRESERVE_NONE_CC __attribute__((preserve_none))
+  # 结束符
+&lt;/code&gt;&lt;/pre&gt;
+&lt;一href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;python&amp;#x2F;cpython&amp;#x2F;拉&amp;#x2F;143068&amp;# x2F;文件#diff-45baf725df91ed7826458cda8a17c2b4a2e5296504de1ed6a1c5a9ebe6390a47R90" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;python&amp;#x2F;cpython&amp;#x2F;pull&amp;#x2F;143068&amp;#x2F;files#diff-45b...&lt;/a&gt;&lt;p&gt;显然（？）这也需要附加到函数声明符，并且不能用作函数说明符：`static void *__preserve_none Slowpath();` 而不是 `__preserve_none static void *slowpath();` （与 GCC 属性语法不同，GCC 属性语法往往对此类事情非常热心，有时会产生令人困惑的结果）。&lt;p&gt;如果 Microsoft 认为您足够重要，那么就可以公开未记录的 MSVC 功能 :&amp;#x2F;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;redox99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这看起来是非常容易实现的目标。核心循环怎么还没有经过超级优化？&lt;p&gt;我本来希望它是主要 ISA 的手工组装，并为不太常见的 ISA 提供 C 备份。&lt;p&gt;由于相对未优化的解释器，全世界浪费了多少能源？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;develatio:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果此博客的作者读到以下内容：我们可以提供 RSS 吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mishrapravin441:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;MSVC 上的结果非常好。尾部调用有效地重置编译器启发式和解锁内联的想法非常令人信服。但让我担心的一件事是对未记录的 MSVC 行为的依赖——如果这种行为被广泛使用，CPython 最终可能会依赖于实际上不稳定的优化器保证。好奇您如何考虑长期可维护性以及对调试和分析的影响。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Hendrikto:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;TLDR：尾部调用解释器比计算的 goto 稍快。&lt;p&gt;&gt;我曾经相信尾部调用解释器可以通过更好的寄存器使用来获得加速。虽然我现在仍然相信这一点，但我怀疑这不是 CPython 加速的主要原因。&lt;p&gt;&gt;我现在的主要猜测是尾部调用将编译器启发重置为正常水平，以便编译器可以完成其工作。&lt;p&gt;&gt;让我举个例子，在撰写本文时，CPython 3.15 的解释器循环大约有 12k 行 C 代码。对于 switch-case 和计算的 goto 解释器来说，单个函数中有 12k 行。&lt;p&gt;&gt; [...] 简而言之，这个过大的函数破坏了很多编译器启发式算法。&lt;p&gt;&gt;最有益的优化之一是内联。过去，我们发现编译器有时直接拒绝在 12k loc eval 循环中内联即使是最简单的函数。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;g947o:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;这在过去给编译器带来了很多问题，实际上太多了，无法一一列举。我在 EuroPython 2025 上有一个关于此的讨论。&lt;p&gt;看起来它指的是这个：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;pUj32SF94Zw" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;pUj32SF94Zw&lt;/a&gt;&lt;p&gt;（希望它是文章中的链接）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;machinationu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Python 解释器核心循环听起来像是 AlphaEvolve 的完美问题。或者，如果 DeepMind 不想在竞争中加速 Python，那么可以选择开源的 OpenEvolve。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://fidget-spinner.github.io/posts/no-longer-sorry.html</guid>
+      <pubDate>Thu, 25 Dec 2025 13:02:46 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46384167</comments>
     </item>
     <item>
-      <title>x86 架构的自引用页表</title>
-      <link>https://0l.de/blog/2015/01/bachelor-thesis-abstract/</link>
-      <description>&lt;p&gt;图 1b：x86 64 长模式下的页表遍历：具有自引用。实际上，这将整个页表遍历移动了一级。所有分页级别的表大小相同。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Self-referencing Page Tables for the x86-Architecture&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46383139"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://0l.de/blog/2015/01/bachelor-thesis-abstract/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Dropstone 项目：用于长期工程的神经符号运行时 [pdf]</title>
+      <link>https://archive.blankline.org/api/media/file/d3_engine_public_release%20(1)-1.pdf</link>
+      <description>&lt;p&gt;5 %���� 25 0 obj &lt;&lt; /线性化 1 /L 325979 /H [ 1544 248 ] /O 29 /E 129881 /N 6 /T 325560 &gt;&gt; endobj 26 0 obj &lt;&lt; /Type /XRef /Length 93 /Filter /FlateDecode /DecodeParms &lt;&lt; /Columns 5 /Predictor 12 &gt;&gt; /W [ 1 3 1 ] /Index [ 25 126 ] /Info 23 0 R /Root 27 0 R /Size 151 /Prev 325561 /ID [&lt;9c5fe6c0b8d1d60321c1209922993417&gt;] &gt;&gt; 流 x�cbd`�g`b`8 "Y7�H�Z0� ,� " b@$�d 9i �dL� b�� �z A�� �� "Y�Hf��7 L�����@� #��|��0J� zl z endstream endobj 27 0 obj &lt;&lt; /Names 68 0 R /OpenAction 102 0 R /Outlines 62 0 R /PageMode /UseOutlines /Pages 57 0 R /Type /Catalog &gt;&gt; endobj 28 0 obj &lt;&lt; /Filter /FlateDecode /S 105 /O 172 /Length 161 &gt;&gt; 流 x�c```b``�``a``�` d� 0��� �&lt;���C���Y�R\�� � ��7�} ��Z1�� v �z,��Yi�gqvO�"��P�ˬ/�� � @� 4 h`F2�� b �-� ��Y�&amp;*' 2��� �0gj �:�t�t�=�' �2�`�c��8K���e' �� 7 '�-� endstream endobj 29 0 obj &lt;&lt; /Contents 31 0 R /Group 103 0 R /MediaBox [ 0 0 595. 89 ] /Parent 57 0 R /Resources 104 0 R /Type /Page &gt;&gt; endobj 30 0 obj &lt;&lt; /BitsPerComponent 8 /ColorSpace /DeviceRGB /Filter /FlateDecode /Height 1313 /SMask 32 0 R /Subtype /Image /Type /XObject /Width 3182 /Length 12192 &gt;&gt; 流 x��� ���� .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Project Dropstone: A Neuro-Symbolic Runtime for Long-Horizon Engineering [pdf]&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46381620"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://archive.blankline.org/api/media/file/d3_engine_public_release%20(1)-1.pdf'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;no92:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果我没记错的话，这只是分形映射，这很常见。请参阅&lt;a href="https:&amp;#x2F;&amp;#x2F;wiki.osdev.org&amp;#x2F;Fractal_Page_Mapping" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;wiki.osdev.org&amp;#x2F;Fractal_Page_Mapping&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cmpxchg8b:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很困惑，这是要作为新作品呈现吗？  Windows 长期以来一直这样做。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://0l.de/blog/2015/01/bachelor-thesis-abstract/</guid>
-      <pubDate>Thu, 25 Dec 2025 08:58:23 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46383139</comments>
-    </item>
-    <item>
-      <title>量子纠错变得疯狂</title>
-      <link>https://algassert.com/post/2503</link>
-      <description>&lt;p&gt;他们用 9 个量子位的量子重复码来保护该位。它暗示可以使用量子位数量来解决量子位质量。保持质量不变，一个量子比特将翻两番。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Quantum Error Correction Goes FOOM&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46383233"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://algassert.com/post/2503'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amluto:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对直到论文读到一半才埋葬非领导者感到很有趣。  我也可以在我的量子笔记本电脑上维护 59 位重复码两个多小时（它只是一台普通笔记本电脑，但它绝对遵守量子力学定律）：&lt;p&gt;在 IPython 中使用可纠正位翻转但不纠正相位错误的 59 位重复码来初始化编码位：&lt;p&gt;&lt;pre&gt;&lt;code&gt; In [1]：A = 59 * (False,)
-&lt;/code&gt;&lt;/pre&gt;
-编写一个解码器：&lt;p&gt;&lt;pre&gt;&lt;code&gt; In [2]: defdecode(physbits):
-       ...: 返回 sum(physbits) &gt; len(physbits)&amp;#x2F;2.0
-&lt;/code&gt;&lt;/pre&gt;
-等待两个小时[0]。  我会很懒，只在两个小时结束时进行解码，但如果我希望纠错能够充分发挥优势，我会定期运行纠错算法并修复检测到的错误。  这是解码！&lt;p&gt;&lt;pre&gt;&lt;code&gt; In [3]：decode(A)
-    输出[3]：假
-&lt;/code&gt;&lt;/pre&gt;
-天哪，它成功了！&lt;p&gt;当然，我在这里只是开玩笑。  但真正令人印象深刻的是，我的笔记本电脑可以将 59 位粘贴到每个包含少量电子的 DRAM 单元中，并且在几个小时后&lt;i&gt;所有&lt;/i&gt;它们都很好。  令人印象深刻的是，这个研究小组让他们的超导量子位能够很好地存储&lt;i&gt;经典&lt;/i&gt;状态，以至于他们相当奇特的纠错设备可以保持逻辑状态两个小时。 [1]&lt;p&gt;但这本身并不是&lt;i&gt;量子&lt;/i&gt;纠错的FOOM。  这是经典的。  位翻转校正但非相位翻转校正的量子位恰恰是一个经典位，不多也不少。&lt;p&gt;作者还证明了他们可以使用相同的技巧来校正相位翻转而不是位翻转，但这有点像将实验翻转过来并得到相同的结果。  不过，将这两个演示结合起来令人印象深刻 - 无论您将笔记本电脑中的 DRAM 单元视为 Z 基础还是 X 基础，它们都只能在一个基础上工作。  您无法交换 DRAM 中的电平和相位的角色并使其继续工作。  但研究人员确实在他们的 2 小时半衰期设备上实现了这一目标，我发现这非常令人印象深刻，而且它运行良好的事实表明他们的设备确实有 59 个量子位，而没有人可以可信地争论我的笔记本电脑包含千兆量子位的 DRAM。  从根本上讲，您可以使用重复代码进行经典重复，但不能用它进行量子计算。  为此，您需要更高级、对错误更敏感的代码，这就是本文后半部分的内容。&lt;p&gt;[0] 我实际上没有等两个小时。  但我本来可以等一周并得到相同的结果。&lt;p&gt;[1] 研究人员的研究表明，量子位远不如我的 DRAM。  他们必须在两个小时内进行大约十亿次纠错。  （我的 DRAM 在两个小时内刷新了很多次，人们可以将 DRAM 刷新视为纠正类似于重复代码的问题。）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sparedwhistle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;FOOM 到底是什么？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://algassert.com/post/2503</guid>
-      <pubDate>Thu, 25 Dec 2025 09:18:15 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46383233</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;01HNNWZ0MV43FF:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;架构&lt;p&gt;他们应该发明语法检查人工智能&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://archive.blankline.org/api/media/file/d3_engine_public_release%20(1)-1.pdf</guid>
+      <pubDate>Thu, 25 Dec 2025 02:47:48 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46381620</comments>
     </item>
   </channel>
 </rss>

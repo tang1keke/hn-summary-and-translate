@@ -6,113 +6,50 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 25 Dec 2025 12:51:13 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Dec 2025 15:25:24 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>10000 件の制限に達すると古いメッセージへのアクセスが制限される</title>
-      <link>https://github.com/mattermost/mattermost/issues/34271</link>
-      <description>&lt;p&gt;7k メッセージ制限 10000 チーム エディション #34271新しい問題リンクをコピー新しい問題リンクをコピー開くオープンメッセージ制限 10000 チーム エディション#34271 リンクをコピーラベルスキン種類/ライセンス Mattermost ライセンスに関する質問Mattermost ライセンスに関する質問説明steffenteichmannhska2025 年 10 月 24 日に開設されました本体アクションの発行新しいアップグレード以来、問題が発生しています。 000 メッセージ制限に達しました。 26 時より前に送信されたメッセージ。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Mattermost restricted access to old messages after 10000 limit is reached&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46383675"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/mattermost/mattermost/issues/34271'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;q3k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;&lt;pre&gt;&lt;code&gt; diff --git a&amp;#x2F;server&amp;#x2F;channels&amp;#x2F;app&amp;#x2F;limits.go b&amp;#x2F;server&amp;#x2F;channels&amp;#x2F;app&amp;#x2F;limits.go
-    インデックス b13103898a..a8be8dd908 100644
-    ---&amp;#x2F;サーバー&amp;#x2F;チャンネル&amp;#x2F;アプリ&amp;#x2F;limits.go
-    +++ b&amp;#x2F;server&amp;#x2F;channels&amp;#x2F;app&amp;#x2F;limits.go
-    @@ -36,17 +36,6 @@ func (a *App) GetServerLimits() (*model.ServerLimits, *model.AppError) {
-                    limits.MaxUsersHardLimit = LicenseUserLimit + int64(extraUsers)
-            }
-     
-    - &amp;#x2F;&amp;#x2F;ライセンスに投稿履歴制限があるかどうかを確認し、計算されたタイムスタンプを取得します
-    - ライセンス != nil &amp;amp;&amp;amp; の場合License.Limits != nil &amp;amp;&amp;amp;ライセンス.Limits.PostHistory &amp;gt; 0 {
-    - 制限.PostHistoryLimit = ライセンス.Limits.PostHistory
-    - &amp;#x2F;&amp;#x2F;最後にアクセス可能な投稿の計算されたタイムスタンプを取得します
-    - lastAccessibleTime、appErr := a.GetLastAccessiblePostTime()
-    - if appErr != nil {
-    - nil を返す、appErr
-    - }
-    -limits.LastAccessiblePostTime = lastAccessibleTime
-    - }
-    -
-            activeUserCount、appErr := a.Srv().Store().User().Count(model.UserCountOptions{})
-            if appErr != nil {
-                    nil を返す、model.NewAppError(&amp;quot;GetServerLimits&amp;quot;, &amp;quot;app.limits.get_app_limits.user_count.store_error&amp;quot;, nil, &amp;quot;&amp;quot;, http.StatusInternalServerError).Wrap(appErr)&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Zephilinox:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;つまり、彼らは、ばかばかしいほど小さなメッセージ制限を適用しただけでなく、自己ホスト型バージョンに対してもそれを行い、それを発表することなく、適切な移行パスもなしに実行したのです。&lt;p&gt;それでも、その会社の誰もそれが間違いであったことを認めていません。&lt;p&gt;とても素晴らしいですね。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;constantius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;彼らは現在防衛請負業者となっており、Web サイトのコピーは軍のコスプレのように聞こえます。おそらく、Anduril と Palantir の愚かな利益を追い求め、その過程で古いオープンソースのラグプルを行っているのでしょう。&lt;p&gt;Zulip (Slack 用) と Wekan (Trello 用) は良い代替品であり、倫理的および技術的な心配をしなくて済みます。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;zulip.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;zulip.com&amp;#x2F;&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;wekan.github.io&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;wekan.github.io&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;carolosf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;以前はMattermostを使っていました。代わりに Zulip を検討することを強くお勧めします。 (これは私のお気に入りの Slack 代替ツールであり、気が散るのを管理するのが最も優れているため Slack よりも優れています (IMO)。また、Dropbox に買収され、その後 Dropbox から戻ってきたという興味深い歴史もあります。)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shaky-carrousel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;framagit.org&amp;#x2F;framasoft&amp;#x2F;framateam&amp;#x2F;mostlymatter" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;framagit.org&amp;#x2F;framasoft&amp;#x2F;framateam&amp;#x2F;mostlymatter&lt;/a&gt; に切り替えることができます。ユーザー制限なんてものはありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jamescontrol:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;会社のチャットやデータ用に検討しましたが、機能に奇妙な制限がありすぎて使用できなくなっていたため、彼らがこのようなことをするのはそれほど驚くべきことではありません。彼らはお金に余裕がありませんか？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cantalopes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ありがたいことに、Slack を使用する代わりに重要なことをセルフホストするようチームを説得できませんでした&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gjsman-1000:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 「Mattermost が今日の地位を確立できたのは、オープンソース コミュニティのおかげです。」&lt;p&gt;そうではありませんか? FOSS コミュニティは日常的にその重要性を過大評価しています。&lt;p&gt;好例: Linux。 2004 年には、コミットの 90% 以上が企業のスポンサーによるものでした。純粋なコミュニティ メンバーは、もはや Linux にとって重要な役割を果たしません。またはこれらのプロジェクトのいずれか。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bfkwlfkjf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一番重要なことは何ですか? GitHub のコメントでは、「メッセージが必要なだけです」という人がいます。でも、自己ホスト型のメッセージング アプリサーバーはたくさんありますよね? XMPP がすぐに思い浮かびます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gus_massa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;readme.md&lt;p&gt;&gt; より。 &lt;i&gt;新しいコンパイル済みバージョンは、毎月 16 日に MIT ライセンスに基づいてリリースされます。&lt;/i&gt;&lt;p&gt;than Even とはどういう意味ですか?これは私たちが「フリーウェア」と呼ぶものに相当しますか。バイナリを変更することは合法ですか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gmerc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;彼らはVCのお金を受け取ったのでしょうか？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;acheong08:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;自己ホスト型のオープンソース ソフトウェアに厳しい制限を設けるのは、別のレベルの非常識です。スレッド内でソース コードを変更して自分でビルドした人がほとんどいないことに驚きました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bramhaag:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Mattermost は MIT ライセンスを取得しています。この制限を解除することを妨げているものは何でしょうか?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/mattermost/mattermost/issues/34271</guid>
-      <pubDate>Thu, 25 Dec 2025 11:03:59 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46383675</comments>
-    </item>
-    <item>
-      <title>私たちはクリスマスに男性を家に招きました、そして彼は45年間私たちと一緒に過ごしました</title>
-      <link>https://www.bbc.co.uk/news/articles/cdxwllqz1l0o</link>
-      <description>&lt;p&gt;「私は『ロニー、チキンはどうしたの』と言いました。ロブさんによると、ロニーはよく『私が悪いことをしたのではないか』と尋ねていたそうです。15歳だったロニーは「何の役にも立たず」カーディフに送り返されたそうです。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; We invited a man into our home at Christmas and he stayed with us for 45 years&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46383552"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bbc.co.uk/news/articles/cdxwllqz1l0o'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Windows x86-64 用の Python 3.15 インタープリタは、できれば 15% 高速になるはずです</title>
+      <link>https://fidget-spinner.github.io/posts/no-longer-sorry.html</link>
+      <description>&lt;p&gt;org で末尾呼び出しも可能です。しかし、あなたはそのためにここにいるわけではありません。これらはこの問題の結果です。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Python 3.15’s interpreter for Windows x86-64 should hopefully be 15% faster&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46384167"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://fidget-spinner.github.io/posts/no-longer-sorry.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;landonia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;まさに感動のクリスマスストーリー。これで一日が終わりました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reop2whiskey:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これが、私たちがホームレス問題から政府を排除し、国民がより多くの資金を援助できるようにする必要がある理由です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cogman10:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;美しい物語ですが、悲しい雰囲気を持っています。&lt;p&gt;ホームレスの大部分が自閉症を持っています[1]。  そしてそれは本当に最悪です。  こうした人々に支援がなければ、彼らの生活は急速に悲惨なものになる可能性があります。  そして残念ながら、こうした人々は虐待的な状況に陥りやすいのです。&lt;p&gt;自閉症（中等度から重度）を持つ人々のケアは多大な労力を要します。  必要なものについての標準はなく、その機能は多岐にわたる可能性があります。  彼らの中には、この物語のロニーのように有能な人もいて、仕事を押さえることができます。  しかし、生きていくために24時間介護が必要な人々もいます。  残念ながら、重度の自閉症の人がホームレスになった場合、長生きできるとは思えません。&lt;p&gt;この物語が少なくとも、人々がホームレスに対する見方を少し変えるきっかけになることを願っています。  それらはすべて、悪徳や失敗のせいで存在しているわけではありません。  社会が精神障害者に配慮していないために、多くの割合の人がそこにいます。  この話では、ロンがギャンブルに問題を抱えていたことを強調するのに適していました。  実際、自閉症はさまざまな依存症にかかりやすくなります。&lt;p&gt;これを書く上で私が言いたいのは、ホームレスについて少しは人間味を持ってほしいということです。  不便なことがあるのはわかります。  彼らも人間であり、その境遇によって必ずしも悪い人というわけではありません。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;pubmed.ncbi.nlm.nih.gov&amp;#x2F;29633853&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;pubmed.ncbi.nlm.nih.gov&amp;#x2F;29633853&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rognjen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;泣いてないよ！泣いてるよ！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wjnc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私の両親は、かつて苦労している男性を引き取ったことがあります。私が妊娠し、母が私たち家族の将来の計画を立て始め、住宅プロジェクトに参加するのを手伝うまで、彼は約 3 年間両親と一緒にいたと思います。私が成人するまでの間、この男は時々レーシングバイクに乗ってコーヒーを飲みに現れ、話をし、夕食のために滞在し続けました。彼は優しくて、面白くて、ちょっと変わった人でした。彼の人生の物語にはメロドラマよりも多くのドラマがありましたが、あなたはそれを知りません。父が亡くなった後、私は父を探しましたが、結局見つかりませんでした。私は今でも時々オンラインで彼のことを検索していますが、彼はおそらくもう生きておらず、おそらくオンラインを使用することはないでしょう。私の頭の中にある話では、おそらく彼はかつて、そこに住んでいる人を探すためにレーシングバイクに乗って父の家の玄関先に現れたものの、恥ずかしがって詳細を聞くことができなかったのではないかという話です。痕跡が失われました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;akkad33:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ロニーは豊かな生活を送りました。それに比べて自分の身勝手な人生が青白く思えて恥ずかしいです。これらの人々が、自分の子供の世話をしながら、他人の世話をするための余分な出費や不便さを心配しなかったのは驚くべきことです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;peterspath:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;美しい...優しさは大いに役立ちます:) 私たちは皆、もっと良くできるはずです（そして私は今、主に自分自身を指しています）&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.bbc.co.uk/news/articles/cdxwllqz1l0o</guid>
-      <pubDate>Thu, 25 Dec 2025 10:35:34 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46383552</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mananaysiempre:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;マネーショット (これがブログ投稿に含まれていたらいいのに):&lt;p&gt;&lt;pre&gt;&lt;code&gt; # if Definition(_MSC_VER) &amp;amp;&amp;amp; !定義(__clang__)
+  # Py_MUSTTAIL [[msvc::musttail]] を定義します
+  # Py_PRESERVE_NONE_CC __preserve_none を定義します
+  #その他
+  # Py_MUSTTAIL __attribute__((musttail)) を定義します
+  # Py_PRESERVE_NONE_CC __attribute__((preserve_none)) を定義します
+  #endif
+&lt;/code&gt;&lt;/pre&gt;
+&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;python&amp;#x2F;cpython&amp;#x2F;pull&amp;#x2F;143068&amp;# x2F;ファイル#diff-45baf725df91ed7826458cda8a17c2b4a2e5296504de1ed6a1c5a9ebe6390a47R90" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;python&amp;#x2F;cpython&amp;#x2F;pull&amp;#x2F;143068&amp;#x2F;files#diff-45b...&lt;/a&gt;&lt;p&gt;どうやら (?) これも関数宣言子に添付する必要があり、関数指定子としては機能しません。 `__preserve_none static void *slowpath();` ではなく、`static void *__preserve_none throwpath();` です (GCC 属性構文とは異なります。GCC 属性構文は、この種のことについて非常に厳しくなる傾向があり、場合によっては混乱を招く結果を招きます)。&lt;p&gt;Microsoft があなたのことを十分に重要だと考えているのであれば、文書化されていない MSVC 機能の公開を歓迎します :&amp;#x2F;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;redox99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは非常に簡単な成果のように思えます。コア ループがまだ高度に最適化されていないのはなぜですか?&lt;p&gt;主要な ISA では手作業で組み立てられ、あまり一般的ではないものについては C バックアップが使用されると予想していました。&lt;p&gt;比較的最適化されていないインタープリタのせいで、世界中でどれだけのエネルギーが無駄になっているでしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;develatio:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;このブログの著者がこれを読んだら、RSS を作成できますか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mishrapravin441:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;MSVC では本当に素晴らしい結果が得られました。 tail 呼び出しがコンパイラのヒューリスティックを効果的にリセットし、インライン化のブロックを解除するという考えは、か​​なり説得力があります。ただし、私が心配していることの 1 つは、文書化されていない MSVC の動作への依存です。これが広く出荷されると、CPython は実際には安定していないオプティマイザーの保証に依存することになる可能性があります。長期的な保守性とデバッグプロファイリングへの影響についてどのように考えているのか興味があります。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Hendrikto:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;TLDR: 末尾呼び出しインタープリターは、計算された goto よりもわずかに高速です。&lt;p&gt;&amp;gt;私は、末尾呼び出しインタープリターはレジスターの使用を改善することで高速化できると信じていました。私は今でもそう信じていますが、それが CPython の高速化の主な理由ではないと考えています。&lt;p&gt;&amp;gt;私の主な推測は、テール呼び出しによってコンパイラのヒューリスティックが正常なレベルにリセットされ、コンパイラが本来の仕事を行えるようになるということです。&lt;p&gt;&amp;gt;例を示します。この記事の執筆時点では、CPython 3.15 のインタープリタ ループは約 12,000 行の C コードです。これは、switch-case と計算された goto インタープリターの単一関数で 12,000 行になります。&lt;p&gt;&amp;gt; […] つまり、この大きすぎる関数はコンパイラのヒューリスティックの多くを壊します。&lt;p&gt;&amp;gt;最も有益な最適化の 1 つはインライン化です。過去に、コンパイラが 12k loc eval ループ内の最も単純な関数でさえインライン化することを真っ向から拒否することがあることを発見しました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;g947o:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;これは過去にコンパイラに多くの問題を引き起こしましたが、実際には列挙するには多すぎます。これについては EuroPython 2025 の講演があります。&lt;p&gt;これについて言及しているようです:&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;pUj32SF94Zw" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;pUj32SF94Zw&lt;/a&gt;&lt;p&gt;（記事内にリンクしてほしい）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;machinationu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Python インタープリターのコア ループは、AlphaEvolve にとって完璧な問題のように思えます。あるいは、DeepMind が競合に向けて Python を高速化したくない場合は、オープンソースに相当する OpenEvolve を使用します。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://fidget-spinner.github.io/posts/no-longer-sorry.html</guid>
+      <pubDate>Thu, 25 Dec 2025 13:02:46 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46384167</comments>
     </item>
     <item>
-      <title>x86 アーキテクチャの自己参照ページ テーブル</title>
-      <link>https://0l.de/blog/2015/01/bachelor-thesis-abstract/</link>
-      <description>&lt;p&gt;図 1b: x86 64 ロングモードでのページ テーブル ウォーク: 自己参照あり。事実上、これにより、ページ テーブル ウォーク全体が 1 レベルずつシフトされます。すべてのページング レベルでテーブル サイズが等しい。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Self-referencing Page Tables for the x86-Architecture&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46383139"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://0l.de/blog/2015/01/bachelor-thesis-abstract/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>プロジェクト Dropstone: 長期的なエンジニアリングのためのニューロシンボリック ランタイム [pdf]</title>
+      <link>https://archive.blankline.org/api/media/file/d3_engine_public_release%20(1)-1.pdf</link>
+      <description>&lt;p&gt;5 %���� 25 0 obj &lt;&lt; /Linearized 1 /L 325979 /H [ 1544 248 ] /O 29 /E 129881 /N 6 /T 325560 &gt;&gt; endobj 26 0 obj &lt;&lt; /Type /XRef /Length 93 /Filter /FlateDecode /DecodeParms &lt;&lt; /Columns 5 /Predictor 12 &gt;&gt; /W [ 1 3 1 ] /Index [ 25 126 ] /Info 23 0 R /Root 27 0 R /Size 151 /Prev 325561 /ID [&lt;9c5fe6c0b8d1d60321c1209922993417&gt;] &gt;&gt; ストリーム x�cbd`�g`b``8 "Y7�H�Z0� ,� " b@$�d 9i �dL� b� �z A�� �� "�Y�Hf�7 L����@� #��|�0J���� zl z endstream endobj 27 0 obj &lt;&lt; /Names 68 0 R /OpenAction 102 0 R /Outlines 62 0 R /PageMode /UseOutlines /Pages 57 0 R /Type /Catalog &gt;&gt; endobj 28 0 obj &lt;&lt; /Filter /FlateDecode /S 105 /O 172 /Length 161 &gt;&gt; stream x�c```b``�``a``�` d� 0��� �&lt;����C���Y��R\�� � ��7��} �Z1� v �z,�Yi�gqvO�"�Pʳˬ/� � @� 4 h`F2� b �-� �Y�&amp;*' 2�� �0gj �:�t�t�=�' �2�`�c�8K���e' � 7 '�-� endstream endobj 29 0 obj &lt;&lt; /Contents 31 0 R /Group 103 0 R /MediaBox [ 0 0 595. 89 ] /Parent 57 0 R /Resources 104 0 R /Type /Page &gt;&gt; endobj 30 0 obj &lt;&lt; /BitsPerComponent 8 /ColorSpace /DeviceRGB /Filter /FlateDecode /Height 1313 /SMask 32 0 R /Subtype /Image /Type /XObject /幅 3182 /長さ 12192 &gt;&gt; ストリーム x���� ����� .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Project Dropstone: A Neuro-Symbolic Runtime for Long-Horizon Engineering [pdf]&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46381620"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://archive.blankline.org/api/media/file/d3_engine_public_release%20(1)-1.pdf'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;no92:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私の誤解がなければ、これは非常に一般的な単なるフラクタル マッピングです。 &lt;a href="https:&amp;#x2F;&amp;#x2F;wiki.osdev.org&amp;#x2F;Fractal_Page_Mapping" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;wiki.osdev.org&amp;#x2F;Fractal_Page_Mapping&lt;/a&gt; を参照してください。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cmpxchg8b:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;混乱しているのですが、これは新作として発表される予定なのでしょうか？  Windows はこれを非常に長い間行ってきました。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://0l.de/blog/2015/01/bachelor-thesis-abstract/</guid>
-      <pubDate>Thu, 25 Dec 2025 08:58:23 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46383139</comments>
-    </item>
-    <item>
-      <title>量子誤り訂正がFOOMに</title>
-      <link>https://algassert.com/post/2503</link>
-      <description>&lt;p&gt;彼らは、9 量子ビットの量子反復コードでビットを保護しました。これは、量子ビットの量を使用して量子ビットの品質を解決できることを示唆しました。品質を一定に保つと、1 つの量子ビットが 4 倍になります。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Quantum Error Correction Goes FOOM&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46383233"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://algassert.com/post/2503'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amluto:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;論文の途中まで、非リーダーが埋もれているのが面白いです。  私も、量子ラップトップで 59 ビットの繰り返しコードを 2 時間以上維持できます (これは単なる普通のラップトップですが、量子力学の法則に従っています):&lt;p&gt;IPython で、ビット反転は修正するが位相エラーは修正しない 59 量子ビットの繰り返しコードを使用して、コード化されたビットを初期化します:&lt;p&gt;&lt;pre&gt;&lt;code&gt; In [1]: A = 59 * (False,)
-&lt;/code&gt;&lt;/pre&gt;
-デコーダを記述します:&lt;p&gt;&lt;pre&gt;&lt;code&gt; [2] 内: def decode(physbits):
-       ...: 合計(物理ビット)を返します &gt; len(物理ビット)&amp;#x2F;2.0
-&lt;/code&gt;&lt;/pre&gt;
-2 時間待ちます [0]。  私は怠け者で、2 時間の終わりにデコードするだけですが、エラー修正を最大限に活用したい場合は、定期的にエラー修正アルゴリズムを実行して、検出されたエラーを修正します。  これがデコードです!&lt;p&gt;&lt;pre&gt;&lt;code&gt; [3]: decode(A)
-    アウト[3]: False
-&lt;/code&gt;&lt;/pre&gt;
-なんと、うまくいきました。&lt;p&gt;もちろん、私はここでかなり冗談を言っています。  しかし、私のラップトップが、それぞれ数個の電子を含む DRAM セルに 59 ビットを挿入でき、 数時間後には&lt;i&gt;すべて&lt;/i&gt;正常に動作するのは本当に印象的です。  そして、この研究グループが、かなり派手な誤り訂正デバイスが論理状態を 2 時間維持して保存できるほど十分に&lt;i&gt;古典&lt;/i&gt;状態を保存できる超伝導量子ビットを取得したことは、本当に本当に印象的です。 [1]&lt;p&gt;しかし、これ自体は FOOM による&lt;i&gt;量子&lt;/i&gt;エラー修正ではありません。  クラシカルですね。  ビット反転は修正されるが位相反転は修正されない量子ビットは、まさに古典的なビットであり、それ以上でもそれ以下でもありません。&lt;p&gt;著者らは、ビット反転ではなく位相反転を修正する同じトリックを実行できることも実証しましたが、それは実験をひっくり返して同じ結果が得られるようなものです。  ただし、両方のデモンストレーションを組み合わせると印象的です。私のラップトップの DRAM セルを、レベルが Z 基底であるか X 基底であるかのように見ても、それらは 1 つの基底でのみ動作します。  DRAM 内のレベルとフェーズの役割を交換しても、引き続き動作させることはできません。  しかし、研究者らは半減期 2 時間のデバイスでそれを実現しました。これは非常に印象的であり、それが機能したという事実は、彼らのデバイスが正真正銘 59&lt;i&gt;量子ビット&lt;/i&gt;であることを強く示唆していますが、私のラップトップにはギガ量子ビットの DRAM が含まれていると確信を持って主張できる人は誰もいませんでした。  基本的に、繰り返しコードを使用して古典的な繰り返しを行うことはできますが、量子計算を行うことはできません。  このためには、より複雑でエラーに敏感なコードが必要です。それがこの記事の後半の内容です。&lt;p&gt;[0] 実際には 2 時間も待ちませんでした。  しかし、1 週間待っても同じ結果が得られた可能性があります。&lt;p&gt;[1] 研究者は&amp;#x27;量子ビットは私の DRAM ほど優れたものではありません。  彼らは、2 時間の間にエラー修正を約 10 億回実行する必要がありました。  (私の DRAM は 2 時間の間にかなりの回数リフレッシュされますが、DRAM のリフレッシュは繰り返しコードのようなものを修正していると見ることができます。)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sparedwhistle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;FOOMって一体何なの？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://algassert.com/post/2503</guid>
-      <pubDate>Thu, 25 Dec 2025 09:18:15 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46383233</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;01HNNWZ0MV43FF:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;アーキテクチャ&lt;p&gt;彼らは文法チェック AI を発明すべきです&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://archive.blankline.org/api/media/file/d3_engine_public_release%20(1)-1.pdf</guid>
+      <pubDate>Thu, 25 Dec 2025 02:47:48 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46381620</comments>
     </item>
   </channel>
 </rss>
