@@ -6,175 +6,142 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 26 Dec 2025 15:32:15 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Dec 2025 18:36:32 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>包管理器一直使用 Git 作为数据库，但从来没有成功过</title>
-      <link>https://nesbitt.io/2025/12/24/package-managers-keep-using-git-as-a-database.html</link>
-      <description>&lt;p&gt;每一次构建，每一次。 vcpkg vcpkg 是 Microsoft 的 C++ 包管理器。 GitHub Actions 默认使用浅克隆。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Package managers keep using Git as a database, it never works out&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46391514"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://nesbitt.io/2025/12/24/package-managers-keep-using-git-as-a-database.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 25 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;0xbadcafebee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;YOLO 软件工程，21 世纪的标志&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PunchyHamster:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;文章的结论只是……不好。使用 Git 作为后端有很多好处，您可以将您的项目指向每个提交作为一个版本，这使得测试库中的任何修复或更改都变得非常容易，它内置了完整性控制，&lt;i&gt;技术上&lt;/i&gt;（遗憾的是在实践中没有）您可以只签署提交并使用它来验证包是否真实。&lt;p&gt;坦率地说，带宽不理想只是克服它的一个技术障碍，其优点值得缺点&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nacozarina:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;成功的事物往往出身卑微，这是一个功能，而不是一个错误&lt;p&gt;对于每个成功超越 ext4&amp;#x2F;git 的项目来说，有一百个项目得到了良好的服务，并且不需要过度投资于其他东西&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kibwen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为这里存在某种形式的幸存者偏差。以 Cargo 为例，如果 Rust 从未流行起来，并因此变得足够流行，以至于超出了合理范围地夸大了基于 git 的索引，那么使用 git 作为索引的支持协议永远不会有问题。同样，我们可以想象无数较小的项目成功地使用 git 作为分布式增量更新数据分发协议，并且永远不会超出它的规模。 &lt;p&gt;重点是，如果您不确定您的项目是否需要扩展，那么当 git 就在那里时重新发明轮子可能没有意义（然后在 Github 就在那里时发明托管 git 存储库的解决方案），让您把时间花在其他更紧迫的问题上。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dboon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我正在为 C 构建 Cargo&amp;#x2F;UV。好文章。我非常深入地思考了这个问题。&lt;p&gt;不幸的是，当您刚开始时，运行注册表的想法确实很难接受。现在，除了编写代码和制作世界级工具的非常艰巨的工程问题，再加上采用它的社会问题之外，我还需要担心资金和维护可能服务于流量世界的东西？从这个角度来看，git 解决方案令人陶醉。&lt;p&gt;从根本上来说，问题在于作者提到的稀疏结帐。您确实希望使用 git 来对包清单进行版本控制，以便具有任何包版本的任何人都可以获得他们构建的确切包。&lt;p&gt;但这不起作用，因为您需要任意提交。您要么需要完整的签出，要么需要以某种方式跟踪包版本所在的提交，而不知道在执行此操作之前 git 将生成什么哈希值。您必须推送包更新，然后推送记录该更新的第二次提交。显然不可行，显然是一场噩梦。&lt;p&gt;柯南的解决方案是我认为唯一的方法。它用完美的再现来换取清单中的条件逻辑。每个 3.x 都指向相同的清单，而不是 3.12 指向提交，并且只有一点逻辑来设置 3.12 中添加的特定配置字段。如果逻辑太多，它们可以让您将版本范围映射到包的清单。因此，如果 3.13 重写了整个清单，只需重新映射它即可。&lt;p&gt;我还没有找到另一个使用 git 作为后端的包管理器，它不是一个糟糕且缓慢的工具。由于这个决定，柯南可能不像尼克斯那样严谨，但它相当务实且有用。当然，真正的解决方案是使用数据库，但除非有人想永远给我电汇一万美元加上服务器费用，否则一个人应该做什么？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;encom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;[Homebrew] 自动更新现在每 24 小时运行一次，而不是每 5 分钟运行一次[...]&lt;p&gt;这是一个如此疯狂的默认设置，我不知所措。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gethly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果我们停止使用 VCS 获取源文件，我们将失去获得这些文件的准确提交（理解为与底层 VCS 无关的版本）的能力。 Git、Mercurial、SVN..、github、bitbucket...都没关系。绝对没有人会构建其源文件的可下载版本，并将其托管在谁知道有多么“有声望”的地方。域，通过将它们复制到另一个位置只是为了提供 github 等已经提供的 ---&gt; 完全相同的内容&amp;lt;---。&lt;p&gt;对于任何阅读它的人来说，整个博客只是浪费时间。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;frumplestlatz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;自 2002 年起，Macports 开始使用 svn 或 git，但默认情况下，&lt;i&gt;用户&lt;/i&gt;会 rsync 完整的端口定义 + 服务器生成的索引 + 签名。&lt;p&gt;索引用于所有查找；它也可以在客户端生成或增量更新，以适应本地更改。&lt;p&gt;从带宽和 CPU 能力非常有限的时候开始，这种方式已经工作了几十年。&lt;p&gt;问题不在于使用 SCM，而且解决方案很早就为人所知。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aniou:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为旁注。也许有人知道，为什么 rust 开发者为语言更改提案选择一个已经使用的名称？ “RFC”已经被采用并且已经确立，我只是拒绝接受有人不知道“征求意见” - 如果这是真的并且故意制造冲突，那么它是粗鲁和傲慢的。&lt;p&gt;每次，......国王时间，当我读到类似“RFC 2789 引入了稀疏 HTTP 协议”之类的内容时。我的大脑出现了短路。顺便说一句：RFC 2789 是“邮件监控 MIB”。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ifh-hn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么答案是什么呢？这就是我读完这篇文章后想要回答的问题。如果没有 git 或包管理经验，是否可以在服务器上使用本地客户端 sqlite 数据库和类似的数据库？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hogrug:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;事实很有趣，但结论有点奇怪。这些包管理器之所以成功，是因为 git 更适合低信任模型，而且 GitHub 一直在免费托管基础设施，没有一个头脑清醒的人会为普通数据库提供这些基础设施。&lt;p&gt;如果它不起作用，我们就不会有这些庞大的生态系统扰乱 GitHub 的免费增值模型，但任何大规模的事物自然都会产生与用例不太兼容的后果和功能。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hk1337:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢 Go，但它的依赖管理很奇怪，而且似乎主要以 GitHub 为中心。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;born-jre:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哈哈，我看到这一点是因为我计划使用 Git 作为我的东西存储。  &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;blue-monads&amp;#x2F;potatoverse" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;blue-monads&amp;#x2F;potatoverse&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gjvc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;sqlite 似乎是包管理器的理想选择&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ori_b:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;或者：当您只关心一个包时，下载所有包的整个状态，这永远不会成功。&lt;p&gt;随着 n 变大，O(1) 会击败 O(n)。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;steeleduncan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;得出的另一个结论是“Git 是启动包管理器的绝佳数据库选择，几乎所有流行的包管理器都是这样开始的。”&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mikkupikku:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那些推迟学习 SQL 的人最终会使用数据库以外的任何东西作为他们的数据库。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;miyuru:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，我点击了帖子中的自制 GitHub 链接，却从 GitHub 获得了速率限制错误页面。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;c-linkage:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这看起来像是一场公地悲剧——GitHub 毕竟是免费的，而且它拥有所有这些伟大的特性，所以为什么不呢？ -- 但只要存在外部性，这种决策就会发生。&lt;p&gt;我最喜欢死在（外部性）的山上的是用户时间。  大多数软件公司花费大量时间关注工程时间的昂贵程度，而忽略了用户时间。  软件公司针对功能交付进行优化，而不是针对用户交互时间进行优化。  然而，如果我花一小时让我的应用程序为我的百万用户提速一秒，我每年可以节省 277 个用户小时。但由于用户时间是外部性，因此这种优化永远不会完成。&lt;p&gt;外部性导致用户下载额外的千兆字节数据（浪费时间）并等待软件，所有这些都是开发人员不负责且不关心的浪费。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bencornia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; Grab 的工程团队在部署模块代理后，go get 的时间从 18 分钟缩短到了 12 秒。这不是一个错字。十八分钟缩短为十二秒。&lt;p&gt;&gt;问题是 go get 需要获取每个依赖项的源代码，只是为了读取其 go.mod 文件并解决传递依赖项。克隆整个存储库以获取单个文件。&lt;p&gt;我的 go get 性能也不一致。永远不够仔细观察它。我想知道我是否遇到了同样的问题？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ekjhgkejhgk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在它工作的时候做简单的事情，当它停止工作时，解决问题。&lt;p&gt;Julia 做了同样的事情，从文章中的 Rust 数字来看，Julia 的包数量大约是 Rust 的 1&amp;#x2F;7[1] (95k&amp;#x2F;13k = 7.3)。&lt;p&gt;它工作得很好，Julia 有一些启发式方法，不会太频繁地重新下载它。&lt;p&gt;但更重要的是，有一个简单的改进途径。顶部的Registry.toml [1]有每个包的路径，一旦下载所有内容都被证明是不可持续的，您可以只下载该一个文件，并根据需要使用它来下载其余文件。我不认为这是一个难题。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;JuliaRegistries&amp;#x2F;General&amp;#x2F;blob&amp;#x2F;master&amp;#x2F;Registry.toml" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;JuliaRegistries&amp;#x2F;常规&amp;#x2F;blob&amp;#x2F;master&amp;#x2F;Regis...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Zambyte:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;使用 Git for Nix 的问题似乎完全是使用 GitHub for Nix 的问题，不是吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;quaintdev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我使用 Forgejo 托管自己的代码存储库。这不是公开的。事实上，就像我托管的所有服务一样，它是相互支持的。原因？我不想处理向世界开放端口所带来的机器人和其他安全风险。&lt;p&gt;事实证明，Go 模块不会接受我的 Forgejo 实例上托管的包，因为它需要证书。有多种方法可以让 go get 使用 ssh，但即使使用这种方法，存储库也需要通过 https 进行访问。最后，我克隆了存储库并使用替换指令在我的项目中使用它。这真的很烦人。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;twoodfin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是什么让 git 如此特别？从一开始就强大的是它的数据模型：就像旧的网络数据库一样，但嵌入 Merkle 树中以实现独立演化和可验证性。&lt;p&gt;将数据模型扩展到项目之外，Linux 内核的大小对于原始实现来说并不重要。我确实想知道，除了“中等规模、长期项目的源代码管理”之外，扩展用例模型是否存在根本限制。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eviks:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;事实上，不良工具的诱惑就在你的手边——无需抬起屁股就能拿到它们！&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://nesbitt.io/2025/12/24/package-managers-keep-using-git-as-a-database.html</guid>
-      <pubDate>Fri, 26 Dec 2025 12:46:36 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46391514</comments>
-    </item>
-    <item>
-      <title>Learnix操作系统</title>
-      <link>https://www.learnix-os.com</link>
-      <description>&lt;p&gt;基础知识这本书将是技术性的，并且将假设有一点编程知识背景，但不一定是 rust 如果您没有低级编程知识，那也没关系。您需要具备的一些基础知识： 一些装配知识。我自己对 Rust 有更多的学习，在这本书中我还将解释它的一些很棒的功能。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; LearnixOS&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46391599"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.learnix-os.com'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>C/C++ 嵌入式文件 (2013)</title>
+      <link>https://www.4rknova.com//blog/2013/01/27/cpp-embedded-files</link>
+      <description>&lt;p&gt;全局 incbin_" STR(name) "_start\n" \ "。输入 incbin_" STR(name) "_start, @object\n" \ "。全局 incbin_" STR(name) "_end\n" \ "。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; C/C++ Embedded Files (2013)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46393924"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.4rknova.com//blog/2013/01/27/cpp-embedded-files'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Santosh83:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么始终符合 POSIX 标准？如果它是一个学习练习或一个业余爱好操作系统或只是一个探索，为什么不把 POSIX 扔到窗外并从头开始设计 API？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;herodotus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个雄心勃勃的项目。我可以恭敬地建议你使用你最喜欢的人工智能（或说英语的朋友）来修复你的许多语法错误和拼写错误吗？例如“注意：Rust 代码的所有语法突出显示都是自定义的，由我创建！如果您发现错误，请在评论中写下或提交问题。”应该是
-注意：Rust 代码的所有语法突出显示都是自定义的，是我创建的！如果您发现错误，请发表评论或提交问题。”
-另外，生锈，不是生锈。还有更多。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;incognito124:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;期待学习课程&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MontyCarloHall:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这至少花费了与讨论底层低级硬件/软件概念一样多的时间来讨论底层 Rust 实现（以及 Rust 语言本身）的怪异之处。由于这仍然是一个正在进行的工作（只有前三个部分已经完全充实），我有一个建议：请使其更加与语言无关，更多地关注基础知识而不是实现。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Dreami:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从名字上我以为这是关于学习 NixOS 的，他们发现了一个非常聪明的名字&lt;p&gt;也许作者可以添加一个小说明，这不是关于那个的，并参考一些关于 NixOS 的官方内容？&lt;p&gt;无论如何，我喜欢这个项目的想法！&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.learnix-os.com</guid>
-      <pubDate>Fri, 26 Dec 2025 12:59:56 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46391599</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delduca:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我当前的解决方法，直到它出现在所有 C++ 编译器中&lt;p&gt;```
+内联 constexpr 自动引导 =
+#include“bootstrap.lua”
+;&lt;p&gt;&amp;#x2F;&amp;#x2F; ...稍后&lt;p&gt;lua.script(bootstrap, "@bootstrap");
+``&lt;p&gt;lua代码
+````
+R”(
+-- 你的代码在这里
+）”；
+````&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;borcunozkablan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你为什么不#embed？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CamouflagedKiwi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您也可以使用 ld 来完成此操作 - 它类似于 ld -r --format binary -o out.o &lt;file&gt;，尽管您确实需要一些构建系统帮助来生成允许您访问该内容的头文件（有点类似于此处的程序集示例）。这对性能有一点影响，但我强烈喜欢它而不是在早期选项中生成头文件 - 这些头文件最终可能会非常大（它们通常将嵌入文件的大小乘以 2-4 倍）并且编译速度很慢。&lt;p&gt;现在所有这些都不太相关，因为最近的 C++ 版本默认内置了此功能。一般来说，某些语言在我看来速度太慢了（例如，在四年前，在出现了一堆不太好的本土替代方案之后，Go 才开始使用它），实际上，让事情在现实世界中工作非常有用，特别是对于可以作为单文件二进制文件分发的语言（我认为应该是所有语言，但遗憾的是并不总是如此）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mgaunard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当然，预处理器方法在一般情况下不起作用，因为数据可以包含逗号或括号。&lt;p&gt;无论如何，建议的所有方法都很糟糕。如果您无权访问 #embed，只需编写一个简单的 python 脚本即可。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gavinray:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;过时的现代解决方案现已融入&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.cppreference.com&amp;#x2F;w&amp;#x2F;c&amp;#x2F;预处理器&amp;#x2F;embed" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.cppreference.com&amp;#x2F;w&amp;#x2F;c&amp;#x2F;预处理器&amp;#x2F;嵌入&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.4rknova.com//blog/2013/01/27/cpp-embedded-files</guid>
+      <pubDate>Fri, 26 Dec 2025 17:06:35 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46393924</comments>
     </item>
     <item>
-      <title>我是一个笔记本电脑怪人，这就是为什么我喜欢我的新 Framework 13</title>
-      <link>https://blog.matthewbrunelle.com/im-a-laptop-weirdo-and-thats-why-i-like-my-new-framework-13/</link>
-      <description>&lt;p&gt;160 GB HDD 不过，可以对此采取一些措施。您可以添加触摸屏。我有一个可以反复破坏和改造的设备。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; I'm a laptop weirdo and that's why I like my new Framework 13&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46391410"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://blog.matthewbrunelle.com/im-a-laptop-weirdo-and-thats-why-i-like-my-new-framework-13/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>关于恢复 Em-Dash 的公告</title>
+      <link>https://blog.nawaz.org/posts/2025/Dec/a-proclamation-regarding-the-restoration-of-the-dash/</link>
+      <description>&lt;p&gt;关于恢复破折号的公告 发布于 2025 年 12 月 26 日星期五 鉴于，破折号 (—) 长期以来一直充当英语句子的优雅支架，为插入式思维、突然的短语转换和有节奏的停顿提供必要的广度；鉴于，一种现代的、毫无根据的偏见已经出现，其中破折号的存在被怀疑地看待，并被认为是不思考的机器的“泄密标志”；鉴于，大型语言模型只是模仿了它无法真正拥有的复杂性，从而不公平地诽谤了早于硅芯片几个世纪的标点符号；鉴于，不起眼的连字符 (-) 是复合词和换行符的实用针法，但越来越多地被用作粗体、宽大的破折号的替代品；鉴于，我拒绝将古典标点符号的美让给算法，也不会让我的散文因担心看起来“人造”而变得扁平化；因此，现在决定，我从机器人的领域收回这个标记，并将其返回到作者的手中。我特此下令，从此以后，在本博客的范围内，连字符将不再具有标点符号和停顿的所有作用，而在每一个风格天赋的实例中，都将被光荣的、不屈不挠的破折号所取代。即使那些实际上应该只是连字符的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A Proclamation Regarding the Restoration of the Em-Dash&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46394169"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.nawaz.org/posts/2025/Dec/a-proclamation-regarding-the-restoration-of-the-dash/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 20 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Gooblebrai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;唯一阻止我购买的是我听到风扇声音很大。这仍然是真的吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gclawes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我非常想要一个带有像样的人工智能芯片的 Framework 13，但遗憾的是，糟糕的电池寿命对我来说是一个艰难的决定。  我知道这并不完全是在框架上（AMD 把你的狗屎放在一起）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;StayTrue:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在发布时购买了第一个 AMD Framework 13。它确实有效，我会再次购买。&lt;p&gt;对我来说，他们的软件故事非常引人注目。用本文的措辞来说，我喜欢我可以成为一个在笔记本电脑上运行 Linux 的怪人，而不是一个边缘用例。我对他们支持的发行版都不感兴趣，但他们的支持论坛提供了启动和运行不同发行版所需的必要提示（从 Linux 内核 git 插入更新的固件）。&lt;p&gt;我喜欢他们为 FreeBSD 社区提供的一些支持，我希望在未来的框架上运行它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jutter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不关心可升级性或可修复性。我认为支持这些观点的人需要进行现实检查 - 其他笔记本电脑的可修复性并没有那么差（我一直有 Alienware，即使在 10 多年的笔记本电脑中采购和安装零件也没有遇到任何问题），而且从长远来看，零碎升级确实没有意义。 Framework 似乎还吸引了某种类型的活动家，但我不会在这里讨论（他们对公司的捐赠非常有意见）。&lt;p&gt;不过，我已经订购了 Framework 16。不是为了任何那些废话，而是为了能够定制它。这就是我所爱的。他们应该真正倾向于这一点。&lt;p&gt;一旦生态和可修复性的废话消失了——它会的，因为它是营销废话——你仍然拥有一台来自一家不讨厌你的公司的多功能笔记本电脑。默认情况下，它不会因间谍软件而臃肿，结账过程也不会充满黑暗模式，他们支持并鼓励您按照自己想要的方式使用它。&lt;p&gt;精益求精。制作更多模块。制作更好的模块。通过新的和多样化的模块为社区提供更多帮助。令人疯狂的是，eGPU 和双 USB 模块主要由业余论坛志愿者驱动，而不是 Framework 工程师的主要优先事项。设计一款低调的机械键盘，我不在乎你的借口。为我们提供适当的带按钮的触摸板选项。带有滚轮和 CAD 平移功能的键盘模块。&lt;p&gt;&lt;i&gt;这些&lt;/i&gt;使得 Framework 与众不同。三四年后，它就会和我所有其他旧笔记本电脑一样被扔到同一堆，再也不会升级或修理。我不在乎这个。我只是想要一台根据我当时的需求定制的笔记本电脑，而不是与戴尔等公司的敌对的突发奇想作斗争。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mmcnl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我没有得到框架。惠普、戴尔和联想的商用产品有很多可更换部件，您可以轻松升级其中的 RAM 和 SSD。这些笔记本电脑已经存在了几十年。框架几乎没有带来任何新的东西。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rwbt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我购买了第一代 FW13 笔记本电脑，结果被烧毁了。如果未插入电源，CMOS&amp;#x2F;RTC 电池就会耗尽，因此笔记本电脑永远无法保持正确的时间。我认为在过去的几十年里我从未使用过需要设置正确日期和时间的小工具。每次我打开它时。&lt;p&gt;当然，这是他们有史以来的第一个发货产品，所以我给了他们免费通行证，但我认为他们至少会发布召回或有一个维修计划，你可以将笔记本电脑寄回以进行修复。相反，他们首先否认这甚至是一个问题，后来当足够多的人抱怨时 - 他们启动了一个电池计划，他们向您发送一个新的 ML220 纽扣电池，该电池最终也会停止工作。&lt;p&gt;我被告知购买新主板（第 12 代或第 13 代英特尔）可以解决这个问题，但我决定只购买新的 ZenBook。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cromka:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们需要带来 Trackpoint 和 WWAN，否则他们根本就不是联想的竞争对手，尽管我很讨厌它。&lt;p&gt;我也觉得他们的设计很无聊。我并不是要 MacBook，但即使是 ThinkPad 也更性感，你实际上可以认同这种设计。 Framework 是另一款 2015 款 MacBook Air 设计的山寨产品。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Esophagus4:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为 Framework 值得一搏。&lt;p&gt;我在 10 多年后更换了我的最后一台笔记本电脑，因为电池没电了，报废的硬件太旧了，不再进行操作系统升级，最终应用程序停止工作。我喜欢轻松地在我的机器上添加新硬件以保持其运行的想法。&lt;p&gt;（我也厌倦了 Apple 将糟糕的体验强加给我（TouchBar、蝴蝶键盘、破裂的薄玻璃屏幕、USB-C 和没有 USB-A...），因此我指定了带有 USB-C 和 USB-A 的框架。）&lt;p&gt;但是，除了损坏时的可修复性之外，笔记本电脑的硬件会慢慢变得过时，因为软件通常是为新事物而写的。如果你像我一样，你的笔记本电脑保留了 10 年，这意味着：第一年你有 1 年旧的硬件，第 6 年你有 6 年旧的硬件，等等。所以你的笔记本电脑的性能会变得越来越差，因为你无法逐步升级你的硬件......只有在你购买新笔记本电脑时，每 10 年才会进行一次大爆炸升级。在它的生命即将结束时，你真的很难让它保持在水面上。&lt;p&gt;有了框架，理论上我可以随着时间的推移逐步升级硬件，而不是每 10 年需要一次大爆炸。因此，我可能会再次拥有 2 年旧的硬件，而不是在第 6 年使用 6 年旧的硬件。因此，我将更紧密地匹配行业改进曲线。&lt;p&gt;这在现实中可行吗？更换所有部件是否会很昂贵？机箱是否能够冷却新的 CPU？我是否需要购买新的主板等？谁知道呢。但我认为这很有趣，值得在笔记本电脑上赌一赌。最坏的情况是，这不是一个致命的决定……我可以回到 MacBook 上……&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;astra1701:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Frameworks 真正特别的一点是，你可以快速购买和更换基本上任何部件，而不仅仅是常见的 RAM 和 SSD - 举个例子，当我设法损坏我的 FW13 键盘使其无法再使用时，我可以直接访问 Frameworks 的网站，花 40 美元购买一个新的。而且，我什至可以选择稍微改进一下，去掉 Windows 键并缺少可怕的副驾驶键。&lt;p&gt;这种方法甚至允许制造商在事后纠正设计缺陷 - 让我们面对现实吧，设计缺陷总是存在的。例如，我的 FW13 最初配备的屏幕铰链非常薄弱。它完全适合大多数日常使用，大多数人可能不会在意，但这意味着我无法在屏幕不向后倾斜的情况下举起它。好吧，FW 为那些真正关心的客户纠正了这个问题，只以 24 美元的价格出售一个新铰链，所以 24 美元+用螺丝刀 10 分钟后，我有了一个更加精致的设备！ （需要澄清的是，早期批次中存在有缺陷的铰链版本，并且免费更换了这些版本。我的是稍晚的版本，除了缺乏我喜欢的刚度水平之外，没有缺陷。）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gsa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我个人一直想买一台新笔记本电脑。框架有一个令人信服的论点。但框架上只有 4 个端口，我可能会经常切换端口。除了使用 USB-C 之外，我还经常需要 USB-A 来连接外部鼠标，但有时还需要 HDMI 端口来在演示时连接到显示器。&lt;p&gt;我认为将 Thinkpad X1 Carbon 与 Framework 进行比较是不公平的。 T14 系列是一个更好的比较。虽然联想几年前后退了几步，但最近几代在可修复性方面似乎要好得多。 T14 Gen 5 [0] 在 ifixit 上获得 9&amp;#x2F;10 分数。零件可以在全球范围内轻松获得，而 Framework 在这方面在地理上仍然受到一定限制。&lt;p&gt;也就是说，我们有一个选择真是太好了！如果没有 Framework，我认为 Lenovo 不会努力让 Thinkpad 再次可修复。&lt;p&gt;- [0] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.ifixit.com&amp;#x2F;Device&amp;#x2F;Lenovo_ThinkPad_T14_Gen_5" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.ifixit.com&amp;#x2F;设备&amp;#x2F;Lenovo_ThinkPad_T14_Gen_5&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jdblair:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我也是一名笔记本电脑怪人，自 2022 年 5 月起，我就拥有了一台配备 Ryzen 7 主板的 Framework 13。我在上面运行 Ubuntu（当前为 25.10）。&lt;p&gt;它是一台不错的笔记本电脑，但不是一台出色的笔记本电脑。它非常轻且紧凑（对我来说非常重要），并且非常可靠，至少自从 AMD GPU 驱动程序问题得到解决以来是这样。磨砂屏幕很好，电池寿命足够，CPU 满足我作为业余爱好开发者的需求。&lt;p&gt;总的来说，我对它很满意，我希望使用它很多年。&lt;p&gt;它最大的问题是触摸板（它是跳水板设计，所以你必须始终点击触摸板的底部 1&amp;#x2F;3）和外壳的质量。如果计算机位于不平坦的表面上，或者如果您用一只手握住计算机的一角，同时用另一只手打字和鼠标，则外壳会稍微弯曲，这可能会导致触摸板的机械装置卡住。我已经训练自己用敲击而不是点击，但那是我在适应糟糕的硬件。&lt;p&gt;我希望外壳更坚固，尽管我知道这会增加费用、尺寸和重量。我希望最终能够更换这台笔记本电脑的所有部件，&lt;i&gt;除了&lt;/i&gt;外壳，因此我希望能更耐用。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;systemtest:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在国际上工作（有点像数字游牧者），所以也许我在使用方面是一个异常值。我有一台 M1 MacBook Pro，是我在发布时新买的。我无法更换内存或存储。但到目前为止我还不需要这样做。&lt;p&gt;为了防止它坏了，我走到附近的电子商店购买了一台新的 MacBook Pro。通过时间机器恢复，我可以在一小时内开始运行。 M1 会被放到一堆东西上以便稍后修复。这就是国际部分发挥作用的地方，在西方世界的几乎任何城市，我都可以在一个小时内买到一台新的 MacBook Pro。&lt;p&gt;我的日费率非常高，停机时间的成本很高。一周不工作等待框架发送零件对我来说不是一个选择。在欧洲大部分地区，我可以通过亚马逊获得内存和 SSD 的次日送达服务，但这仍然浪费了一天的运费。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jokoon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;10年前以900欧元左右的价格买了一台thinkpad L450。没有 GPU，这可能会延长其使用寿命。把HDD换成SSD了。&lt;p&gt;除了thinkpad和framework之外，我觉得没有其他可靠且价格合理的笔记本电脑品牌了。&lt;p&gt;我正在和我妈妈讨论买一条可以穿很长时间的牛仔裤，200欧元的牛仔裤用了6年就会有破洞之类的。一切都是为了“足够长”而建造的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;myself248:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哦，我对我的旧 Toughbook CF-17 &amp;#x2F; 做了伟大的事情CF-m34。 （它最终成为一个兼有两者的部分的弗兰肯计算机。）&lt;p&gt;首先：拆下内部 CDPD 无线调制解调器，拆下内部 56k POTS 调制解调器&amp;#x2F;10&amp;#x2F;100 以太网组合卡。将 TTL 级 UART 从 CDPD 端口连接到 RJ11 插孔，这样我现在就可以使用简单的 RJ11 到裸线电缆侵入嵌入式设备。&lt;p&gt;第二：调制解调器和以太网卡的移除释放了 MiniPCI 插槽。获取 MiniPCI-to-USB2.0 卡（4 个下游端口），并拆焊高接头（它适用于具有更多内部空间的嵌入式机器）。然后小心地从主板上拆下机器的外部 USB1.1 端口引脚，并将它们连接到 USB2.0 主机端口之一。 （地面保持不变，但 D+&amp;#x2F;D-&amp;#x2F;Vbus 移动了。）哒哒，更快的外部设备。&lt;p&gt;这是我唯一一张照片：&lt;a href="https:&amp;#x2F;&amp;#x2F;flickr.com&amp;#x2F;photos&amp;#x2F;myself248&amp;#x2F;255205625&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;flickr.com&amp;#x2F;photos&amp;#x2F;myself248&amp;#x2F;255205625&amp;#x2F;&lt;/a&gt;&lt;p&gt;第三：从掌托下方切出一些加强筋，将 USB 蓝牙适配器脱壳，然后将其安装在那里。掌托是塑料的，这意味着这会将收音机置于镁外壳之外，但仍然是“内部”。从人体工程学的角度来看。将一些电线穿过触摸板开口，然后将它们焊接到主板上现已释放的 USB1.1 主机端口，因为蓝牙不需要 480Mbps。&lt;p&gt;第四：拆下 2GB USB 闪存驱动器并将其连接到另一个内部 USB2.0 端口，然后运行 EBoostr，这是 Readyboost for WinXP 的第三方实现，它为像我这样 RAM 严重受限的机器提供了闪存缓存功能（可悲的是，主板最大 192MB！）。具有讽刺意味的是，将其塞到 RAM 旁边，因为那里有足够的空间。&lt;p&gt;第五：拆下 USB2.0-GigE 适配器（带有独立磁性元件和插孔的适配器，保留磁性元件，但移除插孔，因为它太高，同时移除 USB 端口），然后将其连接到第三个内部 USB2.0 端口。将以太网侧连接至因移除 10&amp;#x2F;100 卡而释放的 RJ45 插孔。从 100Mbps 到 480Mbps（GigE 受到 USB2.0 的瓶颈）的速度提升并不是什么，但真正的好处是 GigE 是 Auto-MDIX，所以我永远不需要携带交叉电缆，这本身就值得。&lt;p&gt;第六：拆下 USB-Wifi 加密狗，并将其连接到第四个也是最后一个内部 USB2.0 端口。将世界上最毛茸茸的同轴电缆接头连接到 CDPD 调制解调器的天线引线上，这样 2.4GHz 射频现在就会发送到安装在屏幕上的 800MHz 调谐天线。打开天线并将有源元件修剪至其长度的 1&amp;#x2F;3，相应地提高谐振频率。当时无法访问 VNA，这已经是我能得到的最好的了，而且运行得很好。&lt;p&gt;在那时，它几乎是一台完美的笔记本电脑，除了内存严重受限，随着浏览器的无限膨胀，它最终迫使它被淘汰。我在 2006-07 年间大量使用它，直到今天我仍然怀念那个完美的小键盘。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;washadjeffmad:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与“我要退回我的框架笔记本电脑”相关一两天前（500 多条评论）：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46375174"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46375174&lt;/a&gt;&lt;p&gt;我认为框架模型（OTC&amp;#x2F;商品部件+主板）很简洁，但是 Beelink 和 MiniPC 领域的其他人正在做的事情对于需要现代可扩展系统的人来说更加有用和引人注目。&lt;p&gt;我的工作不需要大量本地计算（或维修），所以框架提供的任何东西都是我在 5 年的 150 美元 4GB 上买不到的Chromebook。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;markus_zhang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想阅读具有至少 5 年框架经验的人的文章。新事物总是很有趣。但我更喜欢能持续5年以上的东西。据我所知，框架没有长期保证，这是一个问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eviks:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;我用它做了什么富有成效或有意义的事情吗？绝对不是。&lt;p&gt;&gt;我终于可以观看 480 个 YouTube 视频，而不是 360 个&lt;p&gt;这种质量上的大幅提升有什么意义？&lt;p&gt;因此，诸如“你无法更改 RAM &amp;#x2F;SSD”之类的误解让我感到困惑。 （你可以，但对于比以前更小的笔记本电脑），这篇论文相当混乱（除非你真的计划一个定制的印刷零食托盘，但即使如此，其他笔记本电脑也有可插拔的侧托架，所以也可以插在那里吗？）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;haritha-j:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我今年早些时候就在市场上，我真的想要一个有意义的框架。但事实并非如此。根据我的计算，我可以以框架的价格购买两台类似的笔记本电脑，并且几年后可以灵活地购买第二台具有更新规格的笔记本电脑，这对我来说是一笔糟糕的交易。但如果你不缺钱并且欣赏可持续性，那么它很有吸引力。对我来说，稍微环保的笔记本电脑并不是一个足够好的价值主张。另外，我更喜欢英特尔对egpu 的TB 支持。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zerof1l:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对我来说，Framework笔记本电脑最大的吸引力在于我可以自己维修并直接购买OEM零件。&lt;p&gt;我目前拥有一台联想Legion笔记本电脑。尽管如此，这是一台非常强大的机器，但屏幕现在中间有一个地方有多个坏点，触控板上的面漆正在剥落，主体上有手掌休息的地方。我很乐意购买替换零件并安装它们，但我不能。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;999900000999:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;您现在无法更改笔记本电脑上的 RAM。
-&amp;gt;现在您无法更换笔记本电脑上的 SSD。&lt;p&gt;我实际上三周前刚买了一台笔记本电脑，而且我已经升级了这两台笔记本电脑。这是一个带有 RTX GPU 的较新模型。&lt;p&gt;我认为框架具有潜力，但要看到事情如何发展还需要十年的时间。我能使用同一个主板十年吗？&lt;p&gt;到目前为止，我看到的是笔记本电脑品牌由于奇怪的客户支持问题和有限的服务网络而收费高出 50% 到 100%。&lt;p&gt;如果您正在考虑减少浪费，请购买翻新的 Thinkpad。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://blog.matthewbrunelle.com/im-a-laptop-weirdo-and-thats-why-i-like-my-new-framework-13/</guid>
-      <pubDate>Fri, 26 Dec 2025 12:27:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46391410</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jimnotgym:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这并不是第一篇登上 hn 头版的关于该主题的论文。&lt;p&gt;问题是，我不认为它曾经是一件大事。我倾向于阅读20世纪早期到中期的书籍。我没有注意到很多破折号。分号也同样罕见。我认为两者始终都是利基市场。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;renewiltord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些事情是不可避免的。 2019年11月，我帮朋友搬家。我感冒了，不想让她生病，我戴了一个 N95 口罩，这样我就可以在火灾季节骑自行车。&lt;p&gt;到 2022 年，这样做将成为一项政治声明。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shmerl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在 Linux 上使用 Compose 键很容易使用：&lt;p&gt;Compose + --- 生成 —&lt;p&gt;查看 &amp;#x2F;usr&amp;#x2F;share&amp;#x2F;X11&amp;#x2F;locale&amp;#x2F;en_US.UTF-8&amp;#x2F;Compose 中的所有其他组合&lt;p&gt;但是谁在常见场景中不使用它呢？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kayo_20211030:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这非常有趣，具有讽刺意味。该链接已损坏，因为“em-dash”被“dash”替换。 
+直接链接是 &lt;a href="https:&amp;#x2F;&amp;#x2F;blog.nawaz.org&amp;#x2F;posts&amp;#x2F;2025&amp;#x2F;Dec&amp;#x2F;a-proclamation-regarding-the-restoration-of-the-em-dash&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;blog.nawaz.org&amp;#x2F;帖子&amp;#x2F;2025&amp;#x2F;12月&amp;#x2F;a-公告-关注...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.nawaz.org/posts/2025/Dec/a-proclamation-regarding-the-restoration-of-the-dash/</guid>
+      <pubDate>Fri, 26 Dec 2025 17:29:31 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46394169</comments>
     </item>
     <item>
-      <title>Rob Pike 对 GenAI 的态度更加坚定</title>
-      <link>https://skyview.social/?url=https%3A%2F%2Fbsky.app%2Fprofile%2Frobpike.io%2Fpost%2F3matwg6w3ic2s&amp;viewtype=tree</link>
-      <guid isPermaLink="true">https://skyview.social/?url=https%3A%2F%2Fbsky.app%2Fprofile%2Frobpike.io%2Fpost%2F3matwg6w3ic2s&amp;viewtype=tree</guid>
-      <pubDate>Fri, 26 Dec 2025 14:08:47 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46392115</comments>
-    </item>
-    <item>
-      <title>Unix“查找”表达式编译为字节码</title>
-      <link>https://nullprogram.com/blog/2025/12/23/</link>
-      <description>&lt;p&gt;所以我们也可以这样写： $ find 。 exe 扩展名：$find.exe或者与 -o: $ find 等效。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Unix "find" expressions compiled to bytecode&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46391448"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://nullprogram.com/blog/2025/12/23/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://nullprogram.com/blog/2025/12/23/</guid>
-      <pubDate>Fri, 26 Dec 2025 12:35:10 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46391448</comments>
-    </item>
-    <item>
-      <title>经过多年的请求，ChatGPT 对话仍然缺乏时间戳</title>
-      <link>https://community.openai.com/t/timestamps-for-chats-in-chatgpt/440107?page=3</link>
-      <description>&lt;p&gt;lars-lohre 2025 年 5 月 18 日，下午 5:53 43 我已经在单个聊天中工作近 9-10 个月了，偶尔会打开一些单独的聊天。现在，我想按时间顺序写出我在过去 10 个月里所做的事情的概述，我完全期望“ChatGPT 聊天中的时间戳”使该任务变得微不足道……无法获得这些信息真是太疯狂了。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; ChatGPT conversations still lack timestamps after years of requests&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46391472"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://community.openai.com/t/timestamps-for-chats-in-chatgpt/440107?page=3'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Show HN：Rust/WASM 中的 AutoLISP 解释器 – 33 年前发明的 CAD 工作流程</title>
+      <link>https://acadlisp.de/noscript.html</link>
+      <description>&lt;p&gt;它直接在浏览器中运行 AutoLISP 代码 - 无需安装 AutoCAD。 LISP 有何特别之处。技术细节 语言：Rust 目标：WebAssembly (WASM) 输出格式：SVG、DXF (AutoCAD R12/AC1009) 支持的 AutoLISP 函数：defun、setq、if、while、cond、+、-、*、/、sin、cos、sqrt、car、cdr、list、nth、command、princ 等 示例代码；绘制一个矩形 (defun draw-box (x y w h) (命令 "LINE" (list x y) (list (+ x w) y) "") (命令 "LINE" (list (+ x w) y) (list (+ x w) (+ y h)) "") (命令 "LINE" (list (+ x w) (+ y h)) (list x (+ y h)) "") (命令 "LINE" (list x (+ y h)) (list x y) "")) (draw-box 10 10 100 50) 链接交互式演示（需要 JavaScript） GitHub 上的源代码。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: AutoLISP interpreter in Rust/WASM – a CAD workflow invented 33 yrs ago&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46393271"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://acadlisp.de/noscript.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 16 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;callamdelaney:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它们也不支持输入的代码格式。你可能会想三年后他们会解决这个问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throw03172019:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;新的启动想法：ChatGPT，但带有时间戳。 1 亿美元 A 轮融资&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;phyzix5761:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们是否有可能重复使用在某些因素上足够接近的响应？也许这就是为什么公开时间戳对他们没有好处。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;journal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只有当您知道您的抹布中需要它时，您才需要该信息。在过去两年的使用中，我不记得在哪里需要这些时间戳，但我知道有些情况。尽管如此，这必须是一个选择，否则就会浪费代币。然而，我们必须考虑到他们正在争夺响应的质量和长度，即使响应越短越好。谈论这个问题时有一些考虑因素。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stainablesteel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不妨也制作一个模型印章，以记住哪个人在回应&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;roschdal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我已经受够了这个邪恶的人工智能。再也不会了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abadar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我建立了一个单页网站，将当前时间复制到剪贴板，然后将其粘贴到我的消息中。这很不方便，而且我不会不定期地这样做。&lt;p&gt;我必须查看链接中描述的扩展。谢谢您的分享。很高兴知道这是一个共同的问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mv4:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;除了潜在的责任之外，成本也可能是一个因素。&lt;p&gt;早在 2025 年 4 月，Altman 就提到人们会说“谢谢”基础设施成本增加了“数千万美元”。想知道添加每条消息的时间戳是否会花费更多。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kingforaday:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就像在没有 RTC 的硬件上一样，我们依赖 NTP。也许我们只需要一个用于代理的 NTP MCP。看起来已经有几个开源项目，但我没有链接到它们，因为我不知道它们的质量或信任度。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tom1337:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;更让我烦恼的是，当您接近上下文窗口限制时，ChatGPT 不会提醒您。我已经进行了一年的聊天，现在点击了上下文窗口。我通过对所有消息进行 GDPR 下载，在 Markdown 文件中重新构建对话，然后将该文件交给 claude 来创建一个汇总的“解决方案”来解决这个问题。该聊天的压缩版本...&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;firesteelrain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请注意那些在个性化响应中添加时间的人。这是不准确的。如果您已有聊天，则该时间接近您上次激活该聊天会话的时间。如果您打开一个新的，它可能会因某种原因延迟 + 或 - 15 分钟&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bravetraveler:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当然，那边的实习生可以提示切换&amp;#x2F;悬停事件&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tomComb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当聊天时间戳显示为搜索结果时，您可以看到它。&lt;p&gt;我并不是说这就足够了，我只是注意到用户界面中的某个地方显示了它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PunchTornado:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令人惊讶的是人们仍然使用 chatgpt&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chasing0entropy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它很丑陋，为什么它至少没有作为一个选项公开给高级用户启用，这会让我看看时间戳会给推理抓取器带来一些优势，或者它们的服务 API 可能无法同时访问 Web 界面上可用的元数据。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Valid3840:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ChatGPT 仍然不会在对话中显示每条消息的时间戳（一天中的时间和日期）。&lt;p&gt;自 2023 年初以来，OpenAI 社区论坛上一直要求这样做，有数百条评论、点赞和删除的帖子，但仍未实现。&lt;p&gt;你们中有人能想到不显示它的原因吗？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://community.openai.com/t/timestamps-for-chats-in-chatgpt/440107?page=3</guid>
-      <pubDate>Fri, 26 Dec 2025 12:39:32 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46391472</comments>
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zenethian:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这个网站在手机上一团糟。不过，很酷的概念！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kayo_20211030:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;超级有趣。谢谢。 AutoLisp 既令人痛苦又被低估。但是，它非常适合这类东西。比直接生成 dxf 文件容易得多，比如使用 postscript ;-)。我喜欢现代的娱乐和用户界面。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;buildsjets:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;大约 1999 年，我必须完成几乎相同的任务，但在 Aldus Pagemaker 中使用 Postscript。&lt;p&gt;大学毕业后我的第一份工作是在一家相当小的工业控制制造商工作 6 个月，该制造商已被一家较大的企业集团收购。他们的所有工程文档都需要转换为新公司的格式。&lt;p&gt;老公司设计了一种方案，可以通过零件号完整地描述线束，零件号对电线尺寸、颜色、长度和端子进行编码。新公司想要每根电线的详细绘图，数据库中有数千个。&lt;p&gt;我制作了一个可重复使用的字形库，可以存储在 Pagemaker 图层中，并与 postscript 生成的线条连接，以及一个用于迭代零件编号数据库并生成绘图的脚本。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ofrzeta:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;相关：“在版本 2.5 中，AutoLISP 允许访问 DWG 数据库。 AutoLISP 基于 XLISP，XLISP 是 David Betz 编写的 LISP 的公共领域版本。贝茨后来抱怨说，欧特克没有承认消息来源，该公司后来也承认了。” (&lt;a href="https:&amp;#x2F;&amp;#x2F;www.shapr3d.com&amp;#x2F;history-of-cad&amp;#x2F;autodesk-and-autocad" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.shapr3d.com&amp;#x2F;history-of-cad&amp;#x2F;autodesk-and-autocad&lt;/a&gt;)&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;dbetz&amp;#x2F;xlisp" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;dbetz&amp;#x2F;xlisp&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pjmlp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AutoCad 现在也使用 .NET，因此任何支持 CLR 的语言都具有 MSIL 后端。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;help.autodesk.com&amp;#x2F;查看&amp;#x2F;OARX&amp;#x2F;2024&amp;#x2F;ENU&amp;#x2F;?guid=GUID-390A47DB-77AF-433A-994C-2AFBBE9996AE" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;help.autodesk.com&amp;#x2F;查看&amp;#x2F;OARX&amp;#x2F;2024&amp;#x2F;ENU&amp;#x2F;?guid=GUID-390A...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;holg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在 90 年代初，我为 AutoCAD 9&amp;#x2F;10 编写了 AutoLISP 代码，该代码启用了
+CSV → 模板 → 参数化绘图工作流程。 
+您可以在电子表格中定义组件，通过模板提供它们，并自动生成完整的技术图纸。&lt;p&gt;我从未见过其他人使用这种方法。现在我已经构建了一个解释器
+在 Rust&amp;#x2F;WASM 中，因此它可以在浏览器中运行 - 部分是怀旧，部分是
+在这些知识完全消失之前保存。&lt;p&gt;lisp&amp;#x2F;文件夹包含那个时代的一些 LSP 文件，其他文件是我从内存中重新创建的。&lt;p&gt;存储库：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;holg&amp;#x2F;acadlisp&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;holg&amp;#x2F;acadlisp&amp;#x2F;&lt;/a&gt;&lt;p&gt;您生成了什么样的绘图？电气原理图、机械零件、架构？
+我们还有一些游乐场，可以玩弄 LISP 和一些函数生成器，来演示 Lisp 在数学中的用法……&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://acadlisp.de/noscript.html</guid>
+      <pubDate>Fri, 26 Dec 2025 15:56:52 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46393271</comments>
     </item>
     <item>
-      <title>第一个网络服务器</title>
-      <link>https://dfarq.homeip.net/the-first-web-server/</link>
-      <description>&lt;p&gt;2006 年 8 月，CERN 纪念了第一个网页和第一个网络服务器，并附有相关页面。分享 分享 保存 分享 分享 口袋 分享 电子邮件 RSS feed Dave FarquharDavid Farquhar 是一位计算机安全专家、企业家和作家。自 1991 年以来，他一直在撰写有关计算机的专业文章，因此他在复古计算机还很新的时候就撰写了有关它们的文章。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The First Web Server&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46391077"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://dfarq.homeip.net/the-first-web-server/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>高中生发现了 150 万个潜在的新天体</title>
+      <link>https://www.smithsonianmag.com/smart-news/high-school-student-discovers-1-5-million-potential-new-astronomical-objects-by-developing-an-ai-algorithm-180986429/</link>
+      <description>&lt;p&gt;罗森鲍姆荣获再生元科学人才搜寻奖。该模型对原始数据进行排序，寻找红外辐射的微小变化，这可以表明可变物体的存在。他补充说，加州理工学院的研究人员已经在利用 Paz 的潜在可变天体目录（称为 VarWISE）来研究双星系统。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; High School Student Discovers 1.5M Potential New Astronomical Objects&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46392815"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.smithsonianmag.com/smart-news/high-school-student-discovers-1-5-million-potential-new-astronomical-objects-by-developing-an-ai-algorithm-180986429/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;belter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;服务器源代码：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.w3.org&amp;#x2F;Daemon&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.w3.org&amp;#x2F;守护进程&amp;#x2F;&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.w3.org&amp;#x2F;守护进程&amp;#x2F;实现&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.w3.org&amp;#x2F;守护进程&amp;#x2F;实现&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://dfarq.homeip.net/the-first-web-server/</guid>
-      <pubDate>Fri, 26 Dec 2025 11:12:28 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46391077</comments>
+&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cramcgrab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人工智能很棒！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tantalor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;潜力&lt;p&gt;例如，未经验证？&lt;p&gt;我们如何知道这个算法有什么好处？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;awacs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一瞬间以为标题是新的爱泼斯坦档案……&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;why-o-why:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;文章没有说明预测的准确性。太糟糕了，这才是重要的部分。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;theunixbeard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;HN 的 @JustinSkycak 可以提供更多幕后信息：&lt;p&gt;* &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;user?id=JustinSkycak"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;user?id=JustinSkycak&lt;/a&gt;&lt;p&gt;这是他谈论 Matteo 等事情的博客文章：&lt;p&gt;* &lt;a href="https:&amp;#x2F;&amp;#x2F;www.justinmath.com&amp;#x2F;math-academys-eurisko-sequence-5-years-later&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.justinmath.com&amp;#x2F;math-academys-eurisko-sequence-5-...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是论文&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;iopscience.iop.org&amp;#x2F;article&amp;#x2F;10.3847&amp;#x2F;1538-3881&amp;#x2F;ad7fe6" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;iopscience.iop.org&amp;#x2F;文章&amp;#x2F;10.3847&amp;#x2F;1538-3881&amp;#x2F;ad7fe6&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;parpfish:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也许我很愤世嫉俗，但每当我读到一个高中生取得科学突破时，我都会假设这就是发生的事情（部分基于个人经验）：&lt;p&gt;- 实验室 PI 有一个朋友，他的孩子需要整理一份大学申请&lt;p&gt;- PI 要求他们的博士后为孩子准备一个项目。&lt;p&gt;- 孩子完成了项目的最后 2%，但获得了所有的荣誉，同时不知道需要多少背景工作才能到达那里。博士后一无所获。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;denuoweb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;几个月内 GPU 成本为 10,000 至 20,000 美元。我高中时每周有 20 美元。富有的好处是你会获得机会。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iwontberude:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这重要吗？我发现我们有一个模型，尚未正式发现任何东西，没有经过任何人的验证，也没有科学重现。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.smithsonianmag.com/smart-news/high-school-student-discovers-1-5-million-potential-new-astronomical-objects-by-developing-an-ai-algorithm-180986429/</guid>
+      <pubDate>Fri, 26 Dec 2025 15:13:21 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46392815</comments>
     </item>
     <item>
-      <title>Calibre新增AI“讨论”功能</title>
-      <link>https://lwn.net/Articles/1049886/</link>
-      <description>&lt;p&gt;他否认了这可能会困扰一些 calibre 用户的想法，并建议 Tehrani 提交该功能的拉取请求。 “Quoth”表示，在该功能被废弃之前，他们不会更新 calibre。如果用户尝试在不这样做的情况下使用它，calibre 会显示一个对话框，指导用户首先配置提供程序。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Calibre adds AI "discussion" feature&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46390848"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://lwn.net/Articles/1049886/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>显示 HN：Xcc700：ESP32 (Xtensa) 的自托管迷你 C 编译器（700 行）</title>
+      <link>https://github.com/valdanylchuk/xcc700</link>
+      <description>&lt;p&gt;xcc700：适用于 esp32 / Xtensa 的自托管迷你 C 编译器 为什么要研究这个项目。使用 gcc xcc700 编译。使用 ESP-IDF elf_loader 运行。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Xcc700: Self-hosting mini C compiler for ESP32 (Xtensa) in 700 lines&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46392736"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/valdanylchuk/xcc700'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MobiusHorizons:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常酷！您在演示视频中运行的 shell 是什么？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;boznz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很酷，看到解决同一问题的不同方法总是让人耳目一新，而且你通过实践学到了很多东西，这更像是我退休后要做的修补工作。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/valdanylchuk/xcc700</guid>
+      <pubDate>Fri, 26 Dec 2025 15:07:01 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46392736</comments>
+    </item>
+    <item>
+      <title>ZJIT 现已在 Ruby 4.0 中提供</title>
+      <link>https://railsatscale.com/2025-12-24-launch-zjit/</link>
+      <description>&lt;p&gt;这是一个非常新的编译器。更多代码 早在五月份，我们只能运行少量的小型基准测试。 C 方法 早在 5 月份，我们甚至无法优化对内置 C 方法的调用。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; ZJIT is now available in Ruby 4.0&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46393906"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://railsatscale.com/2025-12-24-launch-zjit/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gardenerik:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很难理解对人工智能功能的抵制。只要该功能不具有侵入性，它似乎只是一个小补充，甚至可能对某些人有用。无可否认，法学硕士将继续存在。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://lwn.net/Articles/1049886/</guid>
-      <pubDate>Fri, 26 Dec 2025 10:22:27 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46390848</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ComputerGuru:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这里是非 ruby​​ 开发人员。有人可以帮我解释一下侧出口的事情吗？&lt;p&gt;&gt;这意味着我们正在运行的代码必须继续具有相同的前提条件（预期类型、没有方法重新定义等），否则 JIT 将安全中止。现在，我们可以侧退出并自由地使用此功能。&lt;p&gt;&gt;例如，我们优雅地处理从整数到字符串的相变；保护指令失败并将控制权转移给解释器。&lt;p&gt;&gt; &lt;i&gt;（示例显示省略了两个字符串的添加）&lt;/i&gt;&lt;p&gt;JIT 安全中止和 JIT 将控制权返回给解释器之间有什么区别？或者 JIT 中止是否意味着整个应用程序中止（即，我认为 JIT 中止意味着无论如何都要继续解释器？）&lt;p&gt;（另外，为什么您&lt;i&gt;想要&lt;/i&gt;使用不正确类型的代码成功？无论如何，中止整个执行单元不是正确的答案吗？）&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://railsatscale.com/2025-12-24-launch-zjit/</guid>
+      <pubDate>Fri, 26 Dec 2025 17:04:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46393906</comments>
+    </item>
+    <item>
+      <title>专家探索能引起童话般幻觉的新蘑菇</title>
+      <link>https://nhmu.utah.edu/articles/experts-explore-new-mushroom-which-causes-fairytale-hallucinations</link>
+      <description>&lt;p&gt;与卖家交谈，寻找并购买样品，用于对名为“健守青”的精神活性蘑菇进行科学研究。巴布亚新几内亚的一位年长部落成员描述了这种效应，并解释了“他如何看到脸上长满蘑菇的小人。”科林·多姆瑙尔 (Colin Domnauer) 直到 2014 年，具有精神活性的健守青蘑菇的分类学身份仍未确定。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Experts Explore New Mushroom Which Causes Fairytale-Like Hallucinations&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46393936"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://nhmu.utah.edu/articles/experts-explore-new-mushroom-which-causes-fairytale-hallucinations'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;astronads:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，即使在不同的地理和文化背景下，幻觉始终代表着蘑菇消费者的小人物和精灵。&lt;p&gt;我想知道大脑在做什么……&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://nhmu.utah.edu/articles/experts-explore-new-mushroom-which-causes-fairytale-hallucinations</guid>
+      <pubDate>Fri, 26 Dec 2025 17:07:53 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46393936</comments>
     </item>
   </channel>
 </rss>
