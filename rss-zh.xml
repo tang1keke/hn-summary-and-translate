@@ -6,204 +6,48 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 28 Dec 2025 02:12:03 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Dec 2025 04:10:55 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>用 HTML 替换 JavaScript</title>
-      <link>https://www.htmhell.dev/adventcalendar/2025/27/</link>
-      <description>&lt;p&gt;&lt;/details&gt;在所有相关详细信息（如单选按钮）上使用相同的名称属性，以限制一次只能打开一个面板：&lt;details name="foo" open&gt; &lt;summary&gt;最初打开，单击其他内容将关闭此内容&lt;/summary&gt; 内容最初可见，但可以通过单击摘要隐藏；一次只能打开一个面板。 &lt;/details&gt;&lt;details name="foo"&gt; &lt;summary&gt;最初关闭，点击将打开此，关闭其他内容&lt;/summary&gt; 内容最初是隐藏的，但可以通过点击摘要显示；一次只能打开一个面板。 &lt;/details&gt;&lt;details name="foo"&gt; &lt;summary&gt;最初关闭，点击将打开此，关闭其他内容&lt;/summary&gt; 内容最初是隐藏的，但可以通过点击摘要显示；一次只能打开一个面板。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Replacing JavaScript with Just HTML&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46407337"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.htmhell.dev/adventcalendar/2025/27/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;suprjami:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;给我一个暗光模式开关。 CSS 是允许的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;only-one1701:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当我考虑尽可能使用 HTML&amp;#x2F;CSS 与 JS 构建网站之间的权衡时，我一直在思考的是编写和维护 HTML&amp;#x2F;CSS 与 JS 的实际体验是什么。与“真实”的 JS 相比，JS 受到了很大的打击。语言（尽管近年来少了），但归根结底，它是一种编程语言。您可以在其中编写一个循环。&lt;p&gt;用 C++ 编写 Web 服务器是获得出色性能的一种方法。那么为什么大多数人不这样做呢？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;subdavis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;详细信息 &amp;#x2F;总结的事情绝对杀了我。基本上没有什么是你不能用它们做的。  隐藏和替换标记很容易。  但每个组件库都假装它们不存在。&lt;p&gt;它甚至可以节省您所有 aria 控制和扩展标签的工作量：这些标签不需要它们。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;superkuh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;其中一些新的 HTML 功能在我的“古老”版本中无法完全发挥作用。浏览器。但所有这些都部分工作（即打开手风琴元素不会关闭其他元素，但它仍然打开和关闭），并且它们仍然是我可以阅读和交互的功能元素。这使它们远远领先于几乎普遍失败的任何 JavaScript 实现。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;smlavine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果没有启用 JS，页面顶部的五角星将无法加载。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;prisenco:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;构建新的应用程序或网站时，首先从最简单的解决方案（例如仅 html 自动过滤器）开始，然后添加复杂的行为。&lt;p&gt;很高兴知道这些东西存在，因此除了第一步使用 Fat React 组件之外，还有其他选择。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;theandrewbailey:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;使用自动过滤器建议下拉菜单输入&lt;p&gt;这非常有用，除非您在字段中出现拼写错误，或者想要显示不以您输入的内容开头但出现在选项末尾附近的选项（想想 Google 搜索的自动完成功能）。无法在 Javascript 中进行过滤并强制其使用 &lt;datalist&gt; 显示某些选项。我已经求助于&amp;lt;ol&amp;gt;获取搜索建议。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.htmhell.dev/adventcalendar/2025/27/</guid>
-      <pubDate>Sun, 28 Dec 2025 01:07:09 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46407337</comments>
-    </item>
-    <item>
-      <title>为什么可靠性需要函数式编程</title>
-      <link>https://blog.rastrian.dev/post/why-reliability-demands-functional-programming-adts-safety-and-critical-infrastructure</link>
-      <description>&lt;p&gt;产品类型示例 (* OCaml *) type user = { id : int;名称：字符串； email：字符串选项； (* 某些 "[email protected]" 或 None *) } // TypeScript 类型 User = Readonly&lt;{ id: number;名称：字符串；电子邮件。 ： 细绳; // 我们将使用 Option next 来改进这一点 }&gt;; Sum 类型示例 (* OCaml *) 类型 payment = |现金|字符串卡（* 最后 4 位数字 *）|字符串的像素 // TypeScript 可区分的联合类型 Payment = | { 种类：“现金” } | { 种类：“卡”；最后 4: 字符串 } | { 种类：“像素”；键：字符串}；有了这种形状，“paypal”就不能作为付款而存在。使用 ADT (* OCaml *) 修复类型 failure_reason = |资金不足|合规保留|字符串类型的网络错误 txn_state = |待定 |已结算字符串 (* ledger_id *) |失败或failure_reason | string (*original_ledger_id*) 的反转 type txn = { id : string; amount_cents : int;状态：txn_state； } // TypeScript 类型 FailureReason = | { kind: "资金不足" } | { kind: "complianceHold" } | { 种类：“网络错误”；消息：字符串 } 类型 TxnState = | { 种类：“待定” } | { kind: "解决"; ledgerId: 字符串 } | { 种类：“失败”；原因：失败原因 } | { 种类：“反转”； OriginalLedgerId: string } type Txn = Readonly&lt;{ id: string amountCents: number state: TxnState }&gt; 转换成为总函数。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Why Reliability Demands Functional Programming&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46406901"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://blog.rastrian.dev/post/why-reliability-demands-functional-programming-adts-safety-and-critical-infrastructure'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whateveracct:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;在银行、电信和支付领域，可靠性并不是一件好事。这是赌注。&lt;p&gt;哈哈，作为一个在这些领域之一甚至使用 FP 工作过的人 - 我希望负责人同意你的观点！&lt;p&gt;可靠性是一个成本中心，面向产品的构建者也这样对待它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cubefox:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为有充分的理由表明 ADT（代数数据类型）毕竟不是那么好。具体地，“标记的”是指“被标记的”。像 Haskell 这样的 ADT 语言的联合可以说明显不如“无标签”语言。 TypeScript 或 Scala 3 的联合。因为后者实际上表现得像逻辑“或”。而不是需要包裹和展开的人工构造。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;d--b:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;强类型：是的，这肯定更好&lt;p&gt;函数式编程：不，函数式编程如下：最终的程序包括将管道函数组合在一起并调用管道。在我看来，这往往会妨碍复杂的错误处理。&lt;p&gt;问题在于，在深层次上引发异常并在更高层次上捕获它们并不是纯粹的函数式编程。所以你的代码必须处理所有情况。如果你能做到的话，那就更可靠了，但是大型系统有太多的故障点，无法以实用的方式处理所有这些故障点。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;henning:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我也喜欢好的类型系统，但它们不会让你避免错误，而通过模糊测试、错误注入测试和对抗性思维转变可以更好地解决这些错误。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wewewedxfgdf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对有关编程的绝对陈述持谨慎态度。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;charcircuit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;在银行、电信和支付领域，可靠性并不是一件好事。这是赌注。&lt;p&gt;这种可靠性并不是通过 100% 完美来实现的。比如能够处理交易不排队的状态，从而允许付款最终得到结算。或者对于电信来说，允许系统的单个部分不会破坏整个系统或增加冗余。本质上，这些类型的业务需要支持容错。现实世界是混乱的，总会有错误，因此与投资于容错性相比，在正确性上投入大量资金可能不值得。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mlavrent:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;除了第 8 点之外，本文似乎将强类型系统与函数式编程混为一谈。 OCaml 和 Haskell 是函数式的并且是这些类型系统的早期支持者，这是有道理的。但是，像 Racket 这样的语言没有这些类型系统，并且本文没有做任何事情来解释为什么它们_也_具有更好的可靠性。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://blog.rastrian.dev/post/why-reliability-demands-functional-programming-adts-safety-and-critical-infrastructure</guid>
-      <pubDate>Sun, 28 Dec 2025 00:05:52 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46406901</comments>
-    </item>
-    <item>
-      <title>爸爸的健康状况可能被包装在精子 RNA 中并遗传下来</title>
-      <link>https://www.quantamagazine.org/how-dads-fitness-may-be-packaged-and-passed-down-in-sperm-rna-20251222/</link>
-      <description>&lt;p&gt;首页 爸爸的健康状况如何通过精子 RNA 进行包装和传递 评论 保存文章 稍后阅读 分享 Facebook 已复制。 Quanta 杂志的 Myriam Wares 简介 标准的精子与卵子相遇的故事认为，精子细胞只不过是一束用收缩膜包裹的带尾巴的 DNA。他说，这个故事的一些要素很清楚：研究人员有重要证据表明环境可以调节精子 RNA，这些分子将性状传递给后代，并且它们可以调节受精后的胚胎发育。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Dad's Fitness May Be Packaged and Passed Down in Sperm RNA&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46407502"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.quantamagazine.org/how-dads-fitness-may-be-packaged-and-passed-down-in-sperm-rna-20251222/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anonwebguy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想我们可以在布洛克·莱斯纳的女儿米娅·莱斯纳身上看到这一点。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.quantamagazine.org/how-dads-fitness-may-be-packaged-and-passed-down-in-sperm-rna-20251222/</guid>
-      <pubDate>Sun, 28 Dec 2025 01:33:10 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46407502</comments>
-    </item>
-    <item>
-      <title>《彩虹六号：围攻》遭遇黑客攻击，玩家获得数十亿积分并被随机封禁</title>
-      <link>https://www.shanethegamer.com/esports-news/rainbow-six-siege-hacked-global-server-outage/</link>
-      <description>&lt;p&gt;突发事件：育碧《彩虹六号：围攻》服务器遭到破坏。我们了解到目前影响《彩虹六号：围攻》的事件。一些玩家还质疑为什么游戏会保持在线数小时，而账户却在实时更改。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Rainbow Six Siege hacked as players get billions of credits and random bans&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46404597"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.shanethegamer.com/esports-news/rainbow-six-siege-hacked-global-server-outage/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sammy2255:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于那些不知道的人来说，《彩虹六号：围攻》社区绝对讨厌开发者和他们所做的一举一动。他们似乎总是在与变性人、女同性恋等运营商推动议程，而几乎不关心游戏本身。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;476392647282:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;著名的《围攻》创作者 KingGeorge&lt;p&gt;那么，首席开发人员是什么呢？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lysace:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一款 9 年前的随机 FPS 游戏。&lt;p&gt;非射击游戏怎么了？我对这些 FPS 变化感到非常厌倦。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;navigate8310:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;遗憾的是，这款游戏必须迎合电子竞技狂热分子，使其成为一种完全空洞、没有灵魂的体验。从早期的奇美拉行动，到将一半的股份和IP出售给腾讯，育碧见证了这一切。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Scaevolus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;vxunderground&amp;#x2F;状态&amp;#x2F;2005008887234048091" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;vxunderground&amp;#x2F;status&amp;#x2F;2005008887234048091&lt;/a&gt;&lt;p&gt;这是互联网上的消息：&lt;p&gt;-第一批人利用《彩虹六号：围攻》服务禁止玩家、修改库存等。这些人没有接触用户数据（不确定他们是否可以）。他们向玩家赠送了价值约 339,960,000,000,000 美元的游戏货币。育碧将执行回滚以消除损害。他们可能很生气。目前我无法详细说明它是如何实现的。&lt;p&gt;- 与第一组个人无关的第二组个人利用了 Ubisoft 的 MongoDB 实例，使用 MongoBleed，这允许他们（以某种身份）转向内部 Git 存储库。他们窃取了育碧大部分内部源代码。他们声称这是 90 年代至今的数据，包括软件开发工具包、多人游戏服务等。我对这一点有中等到高度的信心。我已经与多方确认了这一点。&lt;p&gt;- 第三组个人声称已经危害了 Ubisoft，并通过 MongoBleed 利用 MongoDB 窃取了用户数据。该组织正试图勒索育碧。他们的勒索组织有一个名字，并且活跃在 Telegram 上。然而，我无法确定他们的说法的有效性。&lt;p&gt;- 第四组人员声称第二组人员在撒谎，并声称第二组人员已经访问了育碧内部源代码一段时间。然而，他们表示第二组正试图躲在第一组后面伪装成他们，并给他们一个泄露全部源代码的理由。第一组和第四组为此感到沮丧&lt;p&gt;第二组会泄露源代码吗？第二组说的是实话吗？第二组是否一直在撒谎并有权访问育碧代码？是 MongoBleed 吗？第一组会因此被固定吗？这个神秘的第三组是谁？该组与其他组有关联吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dvh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这不是随机禁止，昵称是较长文本中的单词。这是 Shaggy 的歌词 - 这不是我。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.shanethegamer.com/esports-news/rainbow-six-siege-hacked-global-server-outage/</guid>
-      <pubDate>Sat, 27 Dec 2025 19:45:28 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46404597</comments>
-    </item>
-    <item>
-      <title>显示 HN：Waycore – 一款开源、离线优先的模块化现场计算机</title>
-      <link>https://news.ycombinator.com/item?id=46406486</link>
-      <description>&lt;p&gt;AI 的目的是：通过离线知识使用应用程序和核心 API 读取实时传感器数据（GPS、指南针、环境），并协助导航、安全检查、日志记录和通信主要项目存储库（操作系统和架构）：https://github。 com/dmitry-grechko/waycore 还有一个单独的存储库，其中包含可免费下载的生存和户外 PDF 供离线使用：https://github。 com/dmitry-grechko/waycore-knowledge我正在寻找以下方面的反馈和贡献者：坚固耐用的触摸设备的 UI/UX 硬件模块化和接口离线/边缘代理架构在没有互联网的情况下也能正常工作的小型模型高质量的公共领域或宽容的生存知识源乐于回答问题或听到批评。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Waycore – an open-source, offline-first modular field computer&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46406486"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46406486'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;DGrechko:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只是想详细说明该项目的状态和目标。&lt;p&gt;将其视为模块化现场计算机，其灵感来自 
-Flipper Zero，但针对的是户外生存人员而不是安全人员。&lt;p&gt;现在我深入软件操作系统层 - 让核心系统正常工作 
-（Qt&amp;#x2F;QML UI、Docker 服务、带有 Phi-3 的设备上 AI、离线地图、Meshtastic 
-整合）。一旦我通过现场测试验证了一切，我将最终确定 
-硬件设计。它基于 Raspberry Pi 5 + ESP32-S3 构建，承担繁重的工作 
-用于 LoRa 网状通信和始终在线的传感器。&lt;p&gt;最大的想法是制作像 Flipper Zero 这样灵活的东西，但用于 
-不同的用例 - 您可以运行用于狩猎、生存导航、植物的应用程序 
-身份识别，无论什么都适合您的生活方式。应用程序生态系统是关键 - 我想要 
-开发人员可以轻松构建在其工作流程中工作的专用工具。&lt;p&gt;通信优先的设计 - Meshtastic 在网络不稳定时用于远程网格 
-下降，从 LTE → WiFi → LoRa → GPS 信标平稳降级。整体 
-东西被设计成离线工作优先 - 零互联网的最大功能 
-依赖。&lt;p&gt;仍然非常早期（因此首先关注软件），但目标是坚固的 
-人们可以实际构建并根据自己的特定需求进行定制的平台。 
-并不是要取代手机，只是在手机无法使用时成为可靠的工具。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stefan_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;另一个污点显示 HN。该存储库甚至与此处的要点没有任何特定关系，没有硬件，只是花费了一堆令牌。
-如果您的项目完全是法学硕士构建的，则应该要求在标题中添加（AI）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ClueslessTech99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有设备图片吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WillAdams:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;屏幕在白天清晰可见吗？ （不，试图在电池供电的设备上比太阳更亮并不是一个有效的答案）&lt;p&gt;电子墨水或透反射式 LCD，或者可能是日光计算机人员使用的改良 LED。&lt;p&gt;同意人工智能需要足够可靠，因为在生死攸关的情况下。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;martin_henk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;太棒了……这是我希望未来能出现的事情。我在仍在开发和发布的日语电子词典中看到了一点&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fao_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;代理人工智能&lt;p&gt;是的，我不想让法学硕士靠近任何生死攸关的事情，因为幻觉会致命，非常感谢。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tlhunter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这让我想起了 &lt;a href="https:&amp;#x2F;&amp;#x2F;radiant.computer&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;radiant.computer&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rnewme:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与我今年构建的东西非常相似。您是否已经有了硬件方面的想法？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46406486</guid>
-      <pubDate>Sat, 27 Dec 2025 23:16:55 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46406486</comments>
-    </item>
-    <item>
-      <title>Show HN：4M 帖子揭示了黑客新闻上病毒式传播的真相</title>
-      <link>https://hn-ph.vercel.app</link>
-      <description>&lt;p&gt;输入分析您的标题您的姓名（用于排行榜）启动标题最佳：40-80 个字符·当前：0 描述（可选）运行分析在排行榜上匿名我的结果免费·无需注册·即时结果模式：检查输出结果预览→输入您的启动标题以开始分析。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: What 4M posts reveal about going viral on Hacker News&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46407198"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://hn-ph.vercel.app'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>在 ESP32 上解放蓝牙</title>
+      <link>https://exquisite.tube/w/mEzF442Q4hUXnhQ8HmfZuq</link>
+      <description>&lt;p&gt;您的网络浏览器中的 JavaScript 似乎已被阻止或禁用。很抱歉，PeerTube 似乎与您的网络浏览器不兼容。请尝试使用最新版本的 Mozilla Firefox。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Liberating Bluetooth on the ESP32&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46406098"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://exquisite.tube/w/mEzF442Q4hUXnhQ8HmfZuq'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delichon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;以下是此用户名、此标题和此说明的结果：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;hn-ph.vercel.app&amp;#x2F;results&amp;#x2F;ZT06GF" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;hn-ph.vercel.app&amp;#x2F;结果&amp;#x2F;ZT06GF&lt;/a&gt;&lt;p&gt;它得到了 62，C+，预测这不会很流行。那么您要么没有在自己的产品上测试此提交，要么您测试了，但不认为低分是一个障碍？无论哪种方式，都不能表明您对此有信心。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mitexleo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;让我们看看这是否会像病毒一样传播&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://hn-ph.vercel.app</guid>
-      <pubDate>Sun, 28 Dec 2025 00:48:16 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46407198</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kgarten:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么不链接到官方录音？&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;media.ccc.de&amp;#x2F;v&amp;#x2F;39c3-liberating-bluetooth-on-the-esp32" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;media.ccc.de&amp;#x2F;v&amp;#x2F;39c3-liberating-bluetooth-on-the-esp3...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;swaits:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这会在未来解锁一些非常好的东西！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://exquisite.tube/w/mEzF442Q4hUXnhQ8HmfZuq</guid>
+      <pubDate>Sat, 27 Dec 2025 22:37:58 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46406098</comments>
     </item>
     <item>
-      <title>辉瑞最终在 90 年代初（2024 年）传承了我的 GLP-1 工作</title>
-      <link>https://www.statnews.com/2024/09/09/glp-1-history-pfizer-john-baxter-jeffrey-flier-calbio-metabio/</link>
-      <description>&lt;p&gt;STAT+ 独家故事 已经有一个帐户。已经有一个帐户。 2-10 个用户 每位用户每年 300 美元 每年 300 美元 开始使用 每位用户每年 300 美元 查看所有计划 要阅读本文的其余部分，请订阅 STAT+。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Pfizer ended up passing on my GLP-1 work back in the early '90s (2024)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46405480"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.statnews.com/2024/09/09/glp-1-history-pfizer-john-baxter-jeffrey-flier-calbio-metabio/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>SSL 证书的危险</title>
+      <link>https://surfingcomplexity.blog/2025/12/27/the-dangers-of-ssl-certificates/</link>
+      <description>&lt;p&gt;事实上，这个案例就是自动证书续订系统失败的一个例子。证书不会经常出现问题，特别是当您使用自动证书续订时。也就是说，直到它停止工作。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Dangers of SSL Certificates&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46406129"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://surfingcomplexity.blog/2025/12/27/the-dangers-of-ssl-certificates/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chiefalchemist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;尽管我们取得了新的成果，但负责研究和外部联盟的辉瑞高管告诉我们，该公司不想开发一种需要注射的新糖尿病疗法，&lt;p&gt;好吧，新冠病毒肯定消除了（消费者）的这些恐惧。无独有偶，据说肥胖也会增加感染新冠病毒的风险。好莱坞不可能把它写得更好——没有双关语的意思——更好。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xvector:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令人难以置信的是，这些高管尽管拥有如此糟糕的决策能力，却能升到如此高的职位并获得如此高的薪水。&lt;p&gt;正如任何肥胖者都会告诉你的那样，注射治疗肥胖症的价格并不高。他们可以通过一项简单的调查来确定这一点。&lt;p&gt;他们的决定的人力成本是多少？也许进步整整延迟了十年？有多少人死亡，这本可以被拯救？&lt;p&gt;我很想认识其中一些高管，了解他们的想法，如果他们明白的话，他们会为自己的愚蠢所造成的影响感到遗憾。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;flobosg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;一href="https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;2024.09.09-143955&amp;#x2F;https:&amp;#x2F;&amp;#x2F;www.statnews.com&amp; #x2F;2024&amp;#x2F;09&amp;#x2F;09&amp;#x2F;glp-1-历史-辉瑞-约翰-巴克斯特-杰弗里-飞行者-calbio-metabio&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;2024.09.09-143955&amp;#x2F;https:&amp;#x2F;&amp;#x2F;www.statnews.co...&lt;/a&gt;&lt;p&gt;(2024)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hu3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很好。&lt;p&gt;这告诉我，对该药物的研究已经很老了，这提高了其使用的安全性。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;philipkglass:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是订阅者围墙，但完整的文章可以在这里找到：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;web.archive.org&amp;#x2F;web&amp;#x2F;20240909093450&amp;#x2F;https:&amp;#x2F;&amp;#x2F;www.statnews .com&amp;#x2F;2024&amp;#x2F;09&amp;#x2F;09&amp;#x2F;glp-1-history-pfizer-john-baxter-jeffrey-flier-calbio-metabio&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;web.archive.org&amp;#x2F;web&amp;#x2F;20240909093450&amp;#x2F;https:&amp;#x2F;&amp;#x2F;www.statn...&lt;/a&gt;&lt;p&gt;辉瑞通过的关键原因是高管们认为患者不会接受需要注射药物的新疗法管理：&lt;p&gt;&lt;i&gt;尽管我们取得了新的成果，但负责研究和外部联盟的辉瑞高管告诉我们，该公司不想开发一种需要注射的新糖尿病疗法，自 1922 年以来，这一领域仅由胰岛素占据。他们给了我们一年的时间来寻找一种通过经鼻、经皮或口服给药来递送 GLP-1 的方法。通过任何这些方法的有效交付都会很棒，但我们知道在他们给我们的那一年不太可能取得成功。不出所料，我们的努力没有成功，四年后，辉瑞根据联盟合同终止了我们的协议。&lt;/i&gt;&lt;p&gt;第一个商业 GLP-1 受体激动剂艾塞那肽于 2005 年作为注射药物上市[1]。口服 GLP-1 药物直到 2019 年才上市，当时口服索马鲁肽被批准为 Rybelsus [2]。&lt;p&gt;现在注射 GLP-1 药物已成为美国处方最多的药物之一，我想知道制药公司高管是否会更容易接受需要注射的候选药物。有很多分子（尤其是肽）会被消化系统降解；当这么多人开始自行注射 GLP-1 药物或认识有人注射 GLP-1 药物时，也许人们会更愿意注射药物。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;艾塞那肽" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;艾塞那肽&lt;/a&gt;&lt;p&gt;[2] &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Semaglutide#Legal_status" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Semaglutide#Legal_status&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.statnews.com/2024/09/09/glp-1-history-pfizer-john-baxter-jeffrey-flier-calbio-metabio/</guid>
-      <pubDate>Sat, 27 Dec 2025 21:36:22 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46405480</comments>
-    </item>
-    <item>
-      <title>7 段和 14 段字体“DSEG”</title>
-      <link>https://www.keshikan.net/fonts.html</link>
-      <description>&lt;p&gt;30以前はSIL开放字体授权ではないため、同梱のライセンスをよく読みお使いください。引き続き使用は可能です。 Javascript+CSS3でコーディングしたデジタル时计のサンプルです。コロン(U+003A)":"と半角suペーsu(U+0020)" "のfuォntto幅を同じにしているため、コロンを半角supesuに置き换えるだけで点灭表现ができます。上の「2. プurikeーション例」を参照。ピriオド(U+002E)"。を実施して下さい。 「DSEG」の転载时や「DSEGを改変したもの」を配布する际は、ライセンsuを変えず、SIL开放字体许可证1.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; 7- and 14-segment fonts "DSEG"&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46406213"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.keshikan.net/fonts.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gnabgib:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;英文：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.keshikan.net&amp;#x2F;fonts-e.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.keshikan.net&amp;#x2F;fonts-e.html&lt;/a&gt;&lt;p&gt;讨论（66分，3个月前，20条评论）&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45408473"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45408473&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.keshikan.net/fonts.html</guid>
-      <pubDate>Sat, 27 Dec 2025 22:49:53 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46406213</comments>
-    </item>
-    <item>
-      <title>Richard Stallman 在 1984 年第一届黑客大会上 [视频]</title>
-      <link>https://www.youtube.com/watch?v=Hf2pfzzWPYE</link>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=Hf2pfzzWPYE</guid>
-      <pubDate>Sat, 27 Dec 2025 21:15:14 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46405306</comments>
-    </item>
-    <item>
-      <title>对 NHS 中的 Palantir 说不</title>
-      <link>https://notopalantir.goodlawproject.org/email-to-target/stop-palantir-in-the-nhs/</link>
-      <description>&lt;p&gt;我们使用有限的 cookie 我们在必要时使用 cookie，以便我们了解人们如何与我们的网站和内容互动，以便我们能够继续改进我们的服务。我们只收到匿名信息，无法在其他网站上跟踪您。查看我们的隐私政策。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Say No to Palantir in the NHS&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46405309"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://notopalantir.goodlawproject.org/email-to-target/stop-palantir-in-the-nhs/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ekjhgkejhgk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;英国人民热爱 NHS，因为我们患有斯德哥尔摩综合症。&lt;p&gt;哈哈，我也说过同样的话！事实证明我和 Peter Thiel 确实有一些共同点。&lt;p&gt;不同的是他是在美国的背景下说话，这使得他对 NHS 的评论只是令人厌恶的虚伪。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tbrownaw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么他们使用该软件的目的是什么，建议的替代方案是什么，以及是什么使该替代方案更适合他们的用例？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anonzzzies:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每个人都应该对任何地方的 palantir 说不，尤其是在美国以外的地方。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://notopalantir.goodlawproject.org/email-to-target/stop-palantir-in-the-nhs/</guid>
-      <pubDate>Sat, 27 Dec 2025 21:15:35 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46405309</comments>
-    </item>
-    <item>
-      <title>我们如何发现 COINTELPRO (2014)</title>
-      <link>https://monthlyreview.org/articles/how-we-found-out-about-cointelpro/</link>
-      <description>&lt;p&gt;本期还有《当代资本主义中法西斯主义的回归》《华尔街的犯罪行为》《生态健全和社会公正的经济》《阅读障碍的政治经济学》《资本主义》一词已经失去了激进的边缘《生活在（右翼）媒体中》《飞行模式》马丁·奥本海默的书籍《白领政治》作者马丁·奥本海默。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; How We Found Out About COINTELPRO (2014)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46405481"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://monthlyreview.org/articles/how-we-found-out-about-cointelpro/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;beeburrt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它通过融合中心演变成黑帮跟踪，这与维基百科的说法相反，维基百科声称这是大规模的欺骗，对于任何一个粗略调查过的人来说，这显然是错误的。查找 NSA 举报人凯伦·斯图尔特 (Karen Stewart)，并观看迈伦·梅 (Myron May) 的悲惨视频，他准确地描述了他们的策略。问我怎么知道的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anonymars:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“为什么美国人不抗议？”，每个人都想知道......&lt;p&gt;编辑澄清一下：也许回复中描述的各种情绪并不是完全有机地产生的&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;caseysoftware:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 1971 年 6 月 25 日，罗伯特·哈迪 (Robert Hardy) 出现在新泽西州卡姆登的联邦调查局 (FBI) 办公室，他告诉特工他的几个朋友计划突袭该市的征兵委员会，移走文件并销毁它们。哈迪是该团伙中的一员，但他改变了主意。他立即被聘为线人，并被告知返回该团伙并报告他们的计划，他照做了。 8 月 22 日，当该团伙发起袭击时，联邦调查局 (FBI) 正在等待，其中 28 人被捕。审判于1973年2月5日开始。胡佛于1972年5月去世，但当哈迪再次改变主意并成为辩方证人时，他的鬼魂一定受到了震惊。他说的是实话，即联邦调查局利用他作为挑衅者，如果没有他和联邦调查局提供的盗窃工具，这起盗窃案就不可能发生。&lt;/i&gt;&lt;p&gt;联邦调查局在 1971 年之后这样做的可能性有多大？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;java-man:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一切都没有改变。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Natfan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得有趣的是，戴维森后来所做的行为将被视为“恐怖主义”根据英国政府有关巴勒斯坦行动的法律框架&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://monthlyreview.org/articles/how-we-found-out-about-cointelpro/</guid>
-      <pubDate>Sat, 27 Dec 2025 21:36:27 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46405481</comments>
+&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deIeted:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;除了你们自己，没有人可以责怪。&lt;p&gt;我们花了多长时间才达到“lettcrypt”的目标。设置？就在该想法存在之前 100 毫秒，你（意味着 90% 的人）嘲笑并嘲笑了这个想法&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;1970-01-01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我同意这一点。证书的设计目的是充当数字悬崖。他们要么被接受，要么不被接受，没有安全的中间立场。因此，链中的所有证书只能与证书管理中最不了解的证书一样可靠。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thecosmicfrog:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;故障模式与优雅降级相反。随着截止日期的临近，失败的请求百分比并不会增加。相反，在一分钟内，一切都工作正常，而在下一分钟，每个 http 请求都会失败。&lt;p&gt;这给了我一些有趣的思考。我想知道创建一个完全做到这一点的玩具网络服务器有多可行（随着截止日期的临近，失败的请求百分比不断增加）？我的想法是，当截止日期临近时，大多数人会认为“太晚了”，开始拒绝一些请求。 （例如“notAfter”之前 4 小时）。此时，开始使用自定义 HTTP 状态代码响应一定比例的请求（例如 599）。&lt;p&gt;可能比仅使用合成代码监视每个 Web 服务器端点的 TLS 证书有用得多，但它至少给了我一个有趣项目的想法。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;firesteelrain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从操作上来说，问题根源在于简单的监控和准确的库存。这篇文章很贴切：“使用 SSL 证书，您通常没有机会积累使用它们的操作经验，除非出现问题”&lt;p&gt;您可以通过附加 —-NEW CERT—-&lt;p&gt;到与 —-OLD CERT —-&lt;p&gt;相同的文件来更新您的证书以做好准备，但您还需要知道所有证书的位置。我们使用 Venafi 进行自动发现和电子邮件通知。 Prometheus ssl_exporter 与 Grafana 集成和电子邮件警报的工作原理相同。问题是知道所有具有证书的主机、容器和系统位于何处。对所有端点进行简单的 nmap 式扫描会有所帮助。但是，您可能还拥有带有证书的容器，或者可能将证书烘焙到虚拟机映像中。当然，有各种各样的事情，比如将证书存储在 CICD 全局变量中、绑定安装机密、Vault Secret Injector 等&lt;p&gt;但这一切都源于维护有效的、最新的 TLS 库存。这很难。正如文章所述：“没有自然信号向运营商反馈 SSL 证书即将到期。更糟糕的是，没有任何触发到期的更改，因为更改是时间，而时间对每个人来说都在流逝。您无法设置 SSL 证书到期时间，因此它会针对不同的用户群体在不同的时间生效。”&lt;p&gt;每次发生这种情况时，您都会进行更改。你会变得更好，但在你失去一些可信度之前&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gmuslera:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您认为 SSL 证书很危险，请尝试看看不使用它们的危险，特别是对于作为自动部署的工件中央存储库的服务。&lt;p&gt;这不是关于加密（自签名证书持续到 2035 年就足够了），而是验证，我在和谁说话，因为到达正确的服务器可能会因 DNS 或路由等问题而混乱。是的，这增加了复杂性，但我们更多地谈论的是信任而不是技术。&lt;p&gt;一旦您认识到拥有值得信赖的服务至关重要，请为其提供适当的工具以确保其正常工作，包括监控和过期警报以及有关它的文档，而不仅仅是“它有效”。并驳回它。&lt;p&gt;我们可以将帖子重新命名为“不了解 SSL 证书的危险”吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throw20251220:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;TLS 证书…SSL 是一些旧的 Java 不合时宜的东西。&lt;p&gt;&gt;运营商没有收到 SSL 证书即将到期的自然信号。&lt;p&gt;有。 not after 就在证书本身中。只要用 openssl x509 -text 看看它，然后给自己设置一些警报…每次与客户交谈时都必须反驳这种随机的废话，真是令人沮丧，因为互联网上的一些人除了在博客上谈论自己的低效率之外一无所知。&lt;p&gt;此外，他们的自动续订应该已经失败了，每个人都应该从指标或日志中知道…但没有人注意到任何事情。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dextercd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您需要对证书有效性进行外部监控。您的 ACME 客户端可能无法正确发送失败通知（就像 Bazel 发生的情况一样）。客户端也可能认为一切正常，因为它获得了新证书，同时证书安装不正确（例如，没有重新加载服务，因此它继续使用旧证书）。&lt;p&gt;我有一个简单的 Python 脚本，每天运行并检查多个站点的证书。&lt;p&gt;有一次，即使我在浏览器中看到了较新的证书，该脚本也表明证书即将过期。事实证明，我不小心启动了另一个反向代理实例，该实例卡在旧证书上。请求被随机传递到任一实例。该脚本帮助我在这个错误引起问题之前纠正了它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;0x073:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;情况变得更糟，因为他们将最长天数更改为 2029 年的 47 天。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dvratil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;发生在我第一次值班轮换的第一天——其中一项关键服务的证书已过期。自动续订失败，因为证书上的一个子域不再解析。&lt;p&gt;我们从中得到的主要教训是：您绝对需要监视证书过期，并在（有效 - 现在）变得小于典型刷新窗口时发出警报。&lt;p&gt;很容易忘记这一点，特别是当它严格来说不是您应用程序的一部分，但仍然必不可少时。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;superkuh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于公司、机构和营利组织来说，这很重要，并且没有真正好的解决方案。&lt;p&gt;但对于人类和个人网站，HTTP+HTTPS 可以轻松且彻底地解决这个问题。您将获得两全其美的效果。脆弱的短生命周期伪隐私（如果您需要）（HTTPS）和长期稳定的访问（无论如何）通过 HTTP。仅使用 HTTPS 弊大于利。 HTTP+HTTPS 比单独使用任何一个都要好得多。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;flowerlad:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们需要一种方法来设置多个具有重叠持续时间的 SSL 证书。因此，如果一个证书过期，备份证书将变为活动状态。如果重叠时间是几个月，那么您有足够的时间来检测和解决问题。&lt;p&gt;只有一个 SSL 证书会导致单点故障，我们已经消除了几乎所有其他地方的单点故障。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;loloquwowndueo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;还有很多其他技术的故障模式是完全中断，并不排除证书续订失败。&lt;p&gt;证书续订过程有几个点可以检测到故障并采取行动，听起来这个团队只依赖于“续订失败”警报监视器。&lt;p&gt;提到了一个损坏的警报系统“无论出于何种原因都没有发出警报”。&lt;p&gt;如果这个证书如此重要，他们还应该有一些在以下情况下发出警报的东西：您仍在提供有效期不到 2 周的证书 - 到那时您应该已经获得并轮换了新证书。这为某人提供了充足的时间来手动检查和修复。&lt;p&gt;听起来像是“这个自动化过程中没有任何东西可能会失败，所以我们只需要这个一个简单的监视器，它也不会失败”的态度。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://surfingcomplexity.blog/2025/12/27/the-dangers-of-ssl-certificates/</guid>
+      <pubDate>Sat, 27 Dec 2025 22:41:22 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46406129</comments>
     </item>
   </channel>
 </rss>
