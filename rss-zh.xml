@@ -6,44 +6,70 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 28 Dec 2025 12:48:39 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Dec 2025 15:24:09 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>成长于“404未找到”：戈壁沙漠中的中国核城</title>
-      <link>https://substack.com/inbox/post/182743659</link>
-      <guid isPermaLink="true">https://substack.com/inbox/post/182743659</guid>
-      <pubDate>Sun, 28 Dec 2025 06:43:25 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46408988</comments>
-    </item>
-    <item>
-      <title>C++ 说“我们已经在家尝试过了”</title>
-      <link>https://devblogs.microsoft.com/oldnewthing/20251222-00/?p=111890</link>
-      <description>&lt;p&gt;如果控制权在没有异常的情况下离开受保护的块，则finally块或析构函数中发生的任何未捕获的异常都会从try块中抛出。如果控制离开受保护的块并引发异常，并且finally 块或析构函数也引发异常，则行为会因语言而异。在 Java、Python、JavaScript 和 C# 中，finally 块引发的异常会覆盖原始异常，并且原始异常会丢失。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; C++ says “We have try at home”&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46408984"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://devblogs.microsoft.com/oldnewthing/20251222-00/?p=111890'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>饥饿的脂肪细胞有一天可能会饿死癌症</title>
+      <link>https://www.ucsf.edu/news/2025/01/429411/how-hungry-fat-cells-could-someday-starve-cancer-death</link>
+      <description>&lt;p&gt;Nguyen 在“跨孔”培养皿中培养 UCP1 米色脂肪细胞和癌细胞。添加脂肪细胞：当脂肪细胞被植入乳房时，能够繁殖的癌细胞就会少得多。这些同一患者的米色脂肪细胞在培养皿中以及在被植入时击败了乳腺癌细胞。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Hungry Fat Cells Could Someday Starve Cancer to Death&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46409928"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ucsf.edu/news/2025/01/429411/how-hungry-fat-cells-could-someday-starve-cancer-death'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NooneAtAll3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;更新：Adam Rosenfield 指出 Python 3.2 现在可以保存...&lt;p&gt;这篇文章说 3.2 是“现在”多久了？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;winternewt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;析构函数远远优于finally关键字，因为它们只需要我们记住一次释放资源（在析构函数中），而不是每个finally子句。例如，文件在超出范围时总是会自行关闭，而不必由打开该文件的人显式关闭。语法也更加混乱，缩进也更少，特别是当创建多个需要嵌套 try...finally 块的对象时。更不用说分支和条件初始化如何使事情变得复杂了。您通常可以在代码中将构造函数与析构函数配对，这样当资源获取和释放不匹配时就变得非常明显。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tryfinally:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我总是想知道，当你投入更多时间时，C++ 语法是否会变得可读，如果是这样，我们会在功能性 MRI 上观察到多少大脑重新布线。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mojuba:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢 Swift 解决这个问题的方式：有一个更通用的 `defer { ... }` 块，无论如何，它都会在给定作用域的末尾执行，并且在 `return` 语句被评估（如果它是函数作用域）之后执行。因此它有多种用途，而不仅仅是“尝试...最后”。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jasode:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;提交的标题缺少激发博客文章的显着关键字&lt;i&gt;“finally”&lt;/i&gt;。  Raymond Chen 实际写的副标题是：&lt;i&gt;“C++ 说“我们已经尝试过……终于在家了。”&lt;/i&gt;&lt;p&gt;这是一个基于模因的雪克隆，&lt;i&gt;“妈妈，我们能得到&lt;X&gt;吗？”  不，我们有 &amp;lt;X&amp;gt;在家。”&lt;/i&gt; : &lt;a href="https:&amp;#x2F;&amp;#x2F;www.google.com&amp;#x2F;search?q=%22we+have+x+at+home%22+meme" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.google.com&amp;#x2F;search?q=%22we+have+x+at+home%22+meme&lt;/a&gt;&lt;p&gt;换句话说，Raymond 是在说...“我们已经有了‘终于’的 Java 功能”在家里的 C++ 冰箱里，它被称为“析构函数”。&lt;p&gt;继续模因类比，孩子的 &lt;X&gt; 想法是与妈妈的&lt;X&gt;想法不符并且不同意它们是等价的。   例如。 “妈妈，我们可以订披萨吗？不，我们冰箱里还有剩下的砂锅菜。”&lt;p&gt;所以有些孩子会抱怨 C++ 析构函数 RAII 哲学需要创建一个完整的“类 X{public:~X()}”这有时很不方便，所以它并不完全等于“finally”。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://devblogs.microsoft.com/oldnewthing/20251222-00/?p=111890</guid>
-      <pubDate>Sun, 28 Dec 2025 06:42:53 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46408984</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OutOfHere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;今天，您可以使用含有提洛甙的玫瑰果粉来实现这一目标，提洛甙已经具有这些研究效果，包括褐变（用于减肥）和抗癌。请注意，过多的玫瑰果很容易在几天内使体温过度升高，因此请放心服用剂量，尽管这种效果在冬天很有用。它将通过脂肪褐变来实现这一点，而不会增加血压或影响心率，这就是重点。我迫不及待地想因为分享一些有用的东西而被否决。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;UniverseHacker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这很有趣，听起来很有希望。&lt;p&gt;然而，这篇文章似乎还暗示，频繁的冷接触可以将你自己的白色脂肪细胞转化为米色脂肪细胞，可以有效治疗和预防癌症。&lt;p&gt;他们没有解释地指出癌症患者不能进行冷疗法，但我不明白为什么不这样做。我每天早上都会洗个冰浴，因为它有助于我的心理健康，当你习惯了它后，这真的不那么令人震惊或困难，因为他们在这里谈论的适应最终会让你很容易忍受寒冷——你的身体会适应，能够让你保持温暖。当我生病、疲劳或睡眠质量不佳时，我可以而且仍然会这样做。&lt;p&gt;此外，在现代气候控制环境和低成本保暖衣物出现之前，人类自然会更频繁地经历寒冷，并且可能已经适应了寒冷，即使在温暖的气候下也是如此。现代供暖系统是否会通过使我们的新陈代谢异常而使我们容易患癌症？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sejje:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; Nguyen 于 2024 年 1 月搬到 UT Austin 开始建立自己的实验室，但在 11 月完成最后的实验之前突然去世。这篇论文以他为第一作者，谨献给他。&lt;p&gt;这令人悲伤。我希望有人能接起火炬。这项研究听起来很有希望。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.ucsf.edu/news/2025/01/429411/how-hungry-fat-cells-could-someday-starve-cancer-death</guid>
+      <pubDate>Sun, 28 Dec 2025 10:04:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46409928</comments>
     </item>
     <item>
-      <title>Langfuse (YC W23) 在德国柏林招聘</title>
-      <link>https://langfuse.com/careers</link>
-      <description>&lt;p&gt;– Marc、Clemens、Max 和 Langfuse 团队 团队 上一张幻灯片下一张幻灯片 Marc Klingen、@marcklingen、GitHub、Linkedin Max Deichmann、@maxdeichmann、GitHub、Linkedin Clemens Rawer、@rawert、GitHub、Linkedin Marlies Mayerhofer、@marliessophie、GitHub、LinkedIn Hassieb Pakzad、@hassiebpakzad、GitHub、LinkedIn Steffen Schmitz、 GitHub，LinkedIn Jannik Maierhöfer，@jmaierhoefer，GitHub，LinkedIn Felix Krauth，@felixkrrr，GitHub，LinkedIn Akio Nuernberger，@AkioNuernberger，LinkedIn Nimar Blume，@nimarblu，GitHub，LinkedIn Michael Froehlich，GitHub，LinkedIn Valeriy Meleshkin，GitHub，LinkedIn Lotte Verheyden，GitHub，LinkedIn Leonard Wolters，GitHub，LinkedIn 好奇与我们一起建设。 5Langfuse为什么开源。与我们合作 好奇与我们一起构建。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Langfuse (YC W23) Is Hiring in Berlin, Germany&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46410449"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://langfuse.com/careers'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://langfuse.com/careers</guid>
-      <pubDate>Sun, 28 Dec 2025 12:00:06 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46410449</comments>
+      <title>构建一个 macOS 应用程序来了解我的 Mac 何时出现热节流</title>
+      <link>https://stanislas.blog/2025/12/macos-thermal-throttling-app/</link>
+      <description>&lt;p&gt;已过 07 毫秒） *** **** 热压力 **** 当前压力水平：标称 *** 采样系统活动（2025 年 12 月 17 日星期三 09:48:39 +0100） (5001.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.07ms)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Building a macOS app to know when my Mac is thermal throttling&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46410402"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://stanislas.blog/2025/12/macos-thermal-throttling-app/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Neywiny:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来工作不错。据我所知，多年来在 MacOS 上进行开发并没有变得更容易。不过，我确实质疑这一点。我认为了解您的配置是否会导致热节流是有好处的，但是您能对此做些什么呢？没有粉丝资料需要调整或任何东西。你能降低它们的电压吗？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://stanislas.blog/2025/12/macos-thermal-throttling-app/</guid>
+      <pubDate>Sun, 28 Dec 2025 11:51:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46410402</comments>
+    </item>
+    <item>
+      <title>“PromptQuest”是 2025 年最糟糕的游戏（试图让聊天机器人发挥作用）</title>
+      <link>https://www.theregister.com/2025/12/26/ai_is_like_adventure_games/</link>
+      <description>&lt;p&gt;需要晦涩语法的游戏大多是可以忍受的，并且通常可以被原谅。在其他人工智能实验中，我发现相同的提示在不同的日子会产生不同的结果。 ® 获取我们的技术资源 分享更多关于 AI 聊天机器人 更多类似这些 × 更多关于 AI 聊天机器人 狭义主题 AIOps DeepSeek Gemini Google AI GPT-3 GPT-4 大型语言模型 机器学习 MCubed 神经网络 NLP 检索 增强一代 星球大战 张量处理单元 TOPS 更广泛主题 自动驾驶汽车 更多关于分享 30 条评论 更多关于 AI 聊天机器人 更多类似这些 × 更多关于 AI 聊天机器人 狭义主题 AIOps DeepSeek Gemini Google AI GPT-3 GPT-4 大型语言模型 机器学习 MCubed 神经网络 NLP 检索 增强一代 星球大战 张量处理单元 TOPS 更广泛的主题 自动驾驶汽车 TIP US OFF 向我们发送新闻。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; 'PromptQuest' is the worst game of 2025 (trying to make chatbots work)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46411040"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.theregister.com/2025/12/26/ai_is_like_adventure_games/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;banku_brougham:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;X 世代翻译在这里。这是一个用户故事，抱怨产品输出是不确定的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;carrychains:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇文章就是垃圾。  我一半期待或希望对特定领先模型中表现出的回归进行细致入微的分析，这是所谓的“升级”的结果。但相反，却发现了一个白痴，他不明白 LLM 是如何工作的，甚至看起来根本不在乎。&lt;p&gt;像这样的白痴似乎想要一个为他们做事的机器人，而不是一个构建有时有用的上下文的原始工具，而 LLM 的小贩正在毁掉他们的创造物，以满足这群贪得无厌的人的需要。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dale_glass:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对我来说，这似乎有点像第一世界的问题。&lt;p&gt;在我看来，当法学硕士工作时，它们几乎是神奇的。当它们没有时，哦，好吧，无论如何，也没有花那么长时间，而且我直到最近才拥有它们，所以如果魔法失败了，我可以用老无聊的方式做事。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmkni:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;还有其他人完全不明白这篇文章的内容吗？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.theregister.com/2025/12/26/ai_is_like_adventure_games/</guid>
+      <pubDate>Sun, 28 Dec 2025 13:42:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46411040</comments>
+    </item>
+    <item>
+      <title>去年在我的 Mac 上：难以置信地回顾过去</title>
+      <link>https://eclecticlight.co/2025/12/28/last-year-on-my-mac-look-back-in-disbelief/</link>
+      <description>&lt;p&gt;当窗口处于焦点状态时，选择颜色会覆盖交通灯控件和窗口标题，其中应显示“放置文件”。这也引起了人们对在具有过度圆角的窗口中容纳矩形内容所需的有限宽度的注意。摘要 macOS Tahoe 的视觉界面：将大部分矩形内容放入具有过度圆角的窗口中。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Last Year on My Mac: Look Back in Disbelief&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46409969"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://eclecticlight.co/2025/12/28/last-year-on-my-mac-look-back-in-disbelief/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sylens:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也许我最讨厌 Tahoe 的是较大的圆角矩形窗口内的菜单周围嵌入的圆角矩形。他们试图让菜单看起来浮动在它所属的窗口的其余部分之上，但在我看来，在黑暗模式下它看起来很草率。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thenaturalist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Tahoe 的 UI 质量严重恶化，苹果自豪地发布它确实令人担忧。&lt;p&gt;如果这种软件趋势在 2026 年持续下去，这可能是我第一次认真审视 Mac 上的 Linux 发行版。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://eclecticlight.co/2025/12/28/last-year-on-my-mac-look-back-in-disbelief/</guid>
+      <pubDate>Sun, 28 Dec 2025 10:12:08 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46409969</comments>
     </item>
   </channel>
 </rss>
