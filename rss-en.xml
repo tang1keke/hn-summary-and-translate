@@ -6,83 +6,62 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Mon, 29 Dec 2025 04:13:49 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Dec 2025 06:41:19 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>You can make up HTML tags</title>
-      <link>https://maurycyz.com/misc/make-up-tags/</link>
-      <description>&lt;p&gt;You can make up HTML tags: Aug 2, 2025 (Programming) Instead of writing HTML like this: &lt;div class=cool-thing&gt; Hello, World. &lt;/div&gt; … you can write HTML like this: &lt;cool-thing&gt; Hello, World. &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; Good luck trying to insert something inside of “article-heading” but after “article-quote” on the first try.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46416945"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://maurycyz.com/misc/make-up-tags/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Staying ahead of censors in 2025</title>
+      <link>https://forum.torproject.org/t/staying-ahead-of-censors-in-2025-what-weve-learned-from-fighting-censorship-in-iran-and-russia/20898</link>
+      <description>&lt;p&gt;This vantage-point system is a network of monitoring locations inside Iran that provides more recent and accurate information about censorship than is available from public data. RussiaAnother region that has experienced many changes this year is Russia. With continued conflict and attrition, internet censorship has intensified, including increased allowlist-based censorship and address-block-based censorship.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46417844"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://forum.torproject.org/t/staying-ahead-of-censors-in-2025-what-weve-learned-from-fighting-censorship-in-iran-and-russia/20898'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;orliesaurus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;If this works, then the point of having standards, is just for screen readers??&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nektro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;the comments here informing us they default to behaving like &amp;lt;span&amp;gt; instead of like &amp;lt;div&amp;gt; is the biggest disappointment of my day so far&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;callc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Wow, this is great, unlocks lots of freedom. I was under the impression that this was not possible, maybe through web components or &amp;lt;slot&amp;gt;.&lt;p&gt;As a side note, I’ve been going through all the HTML elements slowly to learn the fundamentals, and it turns out that lots of elements are just a &amp;lt;div&amp;gt; or &amp;lt;span&amp;gt;, with different default styles and default ARIA things.&lt;p&gt;And a &amp;lt;div&amp;gt; is just a &amp;lt;span&amp;gt; with display block…&lt;p&gt;This and TFA both help me to realize HTML is pretty darn simple.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chrismorgan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;&lt;pre&gt;&lt;code&gt;  &amp;lt;div class=article&amp;gt;
-  &amp;lt;div class=article-header&amp;gt;
-  &amp;lt;div class=article-quote&amp;gt;
-  &amp;lt;div class=quote-body&amp;gt;
-  ... a bunch more HTML ...
-  &amp;lt;&amp;#x2F;div&amp;gt;
-  &amp;lt;&amp;#x2F;div&amp;gt;
-  &amp;lt;&amp;#x2F;div&amp;gt;
-  &amp;lt;&amp;#x2F;div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-Just one quibble over this &lt;i&gt;specific&lt;/i&gt; example (not the broader concept, which is sound): it probably didn’t have to be div soup to begin with. Something like this may have been more reasonable:&lt;p&gt;&lt;pre&gt;&lt;code&gt;  &amp;lt;article&amp;gt;
-  &amp;lt;header&amp;gt;
-  &amp;lt;blockquote&amp;gt;
-  &amp;lt;p class=quote-body&amp;gt;
-  ... a bunch more HTML ...
-  &amp;lt;&amp;#x2F;p&amp;gt;
-  &amp;lt;&amp;#x2F;blockquote&amp;gt;
-  &amp;lt;&amp;#x2F;header&amp;gt;
-  &amp;lt;&amp;#x2F;article&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;flexagoon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; &amp;lt;main-article&amp;gt;&lt;p&gt;&amp;gt; &amp;lt;article-header&amp;gt;&lt;p&gt;&amp;gt; &amp;lt;article-quote&amp;gt;&lt;p&gt;&amp;gt; &amp;lt;quote-body&amp;gt;&lt;p&gt;Not the best example, because in this case, you could just use real HTML tags instead&lt;p&gt;&lt;pre&gt;&lt;code&gt;  &amp;lt;article&amp;gt;
-  &amp;lt;header&amp;gt;
-  &amp;lt;blockquote&amp;gt;
-  &amp;lt;p&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ycombiredd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;As someone who writes html only rarely (I&amp;#x27;m more of a &amp;quot;backend&amp;quot; guy, and even use that term loosely.. most of my webdev experience dates back to the CGI days and often the html was spat out by Perl scripts) and usually in vim, I am pleased to know there is an in-built solution outside of me properly indenting or manually counting divs.  Thanks for enlightening me.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;superkuh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;blog.jim-nielsen.com&amp;#x2F;2023&amp;#x2F;html-web-components&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;blog.jim-nielsen.com&amp;#x2F;2023&amp;#x2F;html-web-components&amp;#x2F;&lt;/a&gt; - Jim Nielsen has a series of posts on how to use made up HTML tags in a way that doesn&amp;#x27;t just fail to nothing when the javascript defining the custom-element doesn&amp;#x27;t get successfully executed.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ianbutler:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;lit.dev&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;lit.dev&amp;#x2F;&lt;/a&gt;&lt;p&gt;That&amp;#x27;s the premise behind Lit (using the custom elements api)! I&amp;#x27;ve been using it to build out a project recently and it&amp;#x27;s quite good, simpler to reason about than the current state of React imo.&lt;p&gt;It started at google and now is part of OpenJS.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aaviator42:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I used this to implement &amp;lt;yes-script&amp;gt;, the opposite of &amp;lt;noscript&amp;gt;, to be able to designate sections of a page to be hidden if JS was disabled. You can of course do the same thing with classes, but custom tags are fun.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;aaviator42&amp;#x2F;yes-script" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;aaviator42&amp;#x2F;yes-script&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gkoberger:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I probably wouldn&amp;#x27;t do this for a lot of reasons.&lt;p&gt;That being said, if you read through that post and were intrigued, you might also like custom web components: &lt;a href="https:&amp;#x2F;&amp;#x2F;web.dev&amp;#x2F;articles&amp;#x2F;custom-elements-v1" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;web.dev&amp;#x2F;articles&amp;#x2F;custom-elements-v1&lt;/a&gt;&lt;p&gt;It&amp;#x27;s a simple way to add more to your &amp;quot;made up&amp;quot; HTML tags. So you could have a tag called &amp;lt;my-code&amp;gt;, for example, that automatically has a copy button and syntax highlights the code.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ok123456:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;By default, they will behave like spans.&lt;p&gt;You can customize it using the Custom Element API: &lt;a href="https:&amp;#x2F;&amp;#x2F;developer.mozilla.org&amp;#x2F;en-US&amp;#x2F;docs&amp;#x2F;Web&amp;#x2F;API&amp;#x2F;Web_components&amp;#x2F;Using_custom_elements" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;developer.mozilla.org&amp;#x2F;en-US&amp;#x2F;docs&amp;#x2F;Web&amp;#x2F;API&amp;#x2F;Web_compone...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hecanjog:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;You sure can! They all have inline defaults like `&amp;lt;span&amp;gt;` so set some CSS baseline on them as needed, but this is like the best kept secret of HTML or something? Unknown tags will become `HTMLUnknownElement` and behave like a span.&lt;p&gt;Edit: the reason for avoiding this in the past was name-spacing. But the standard says you can use a hyphen and then you&amp;#x27;re OK, native elements won&amp;#x27;t ever use a `-`.&lt;p&gt;Edit 2: also it&amp;#x27;s great because it works fine with CSS selectors too. Write stuff like `&amp;lt;image-container&amp;gt;` in plain HTML docs and it&amp;#x27;s fine.&lt;p&gt;Edit 3: but also `&amp;lt;albums&amp;gt;` tags and etc which won&amp;#x27;t be adopted into the HTML standard soon work too if they don&amp;#x27;t conflict with element names, and the rare case that they might be adopted in the future as an element name can be resolved with a simple text search&amp;#x2F;replace.&lt;p&gt;Edit 4: This all really has little to do with javascript, but you can use `querySelector` and `querySelectorAll` with any of these made up names the same as any native name too.&lt;p&gt;It&amp;#x27;s very nice to write. I used and liked vue for a little while when it was needed(?) but modern HTML fills that gap.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;macintux:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Huh. That led me to wonder whether anyone has created CSS for DocBook, and it appears it exists.&lt;p&gt;&lt;a href="http:&amp;#x2F;&amp;#x2F;www.badgers-in-foil.co.uk&amp;#x2F;projects&amp;#x2F;docbook-css&amp;#x2F;" rel="nofollow"&gt;http:&amp;#x2F;&amp;#x2F;www.badgers-in-foil.co.uk&amp;#x2F;projects&amp;#x2F;docbook-css&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://maurycyz.com/misc/make-up-tags/</guid>
-      <pubDate>Mon, 29 Dec 2025 02:47:44 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46416945</comments>
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iwontberude:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Grape used to be a fine word.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mmsc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Does anybody know what the situation is like in China these days? What&amp;#x27;s the most commonly used tool for proxying now?&lt;p&gt;Does basically all network leaving China still get ratelimited at a few megabytes per second?&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://forum.torproject.org/t/staying-ahead-of-censors-in-2025-what-weve-learned-from-fighting-censorship-in-iran-and-russia/20898</guid>
+      <pubDate>Mon, 29 Dec 2025 05:47:40 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46417844</comments>
     </item>
     <item>
-      <title>Why I Think Valve's Retiring the Steam Deck LCD</title>
-      <link>https://gardinerbryant.com/why-valves-retiring-the-steam-deck-lcd/</link>
-      <guid isPermaLink="true">https://gardinerbryant.com/why-valves-retiring-the-steam-deck-lcd/</guid>
-      <pubDate>Mon, 29 Dec 2025 03:44:12 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46417252</comments>
+      <title>My First Meshtastic Network</title>
+      <link>https://rickcarlino.com/notes/electronics/my-first-meshtastic-network.html</link>
+      <description>&lt;p&gt;I first heard about Meshtastic from a blog post that made the rounds on Hacker News. org) that works over USB or Wi-Fi. The stock rubber-duck antenna that came with my Heltec radio was likely low-quality.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46417676"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://rickcarlino.com/notes/electronics/my-first-meshtastic-network.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://rickcarlino.com/notes/electronics/my-first-meshtastic-network.html</guid>
+      <pubDate>Mon, 29 Dec 2025 05:12:58 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46417676</comments>
     </item>
     <item>
-      <title>Self-hosting is being enshittified</title>
-      <link>https://troubled.engineer/posts/selfhosting-in-2025/</link>
-      <description>&lt;p&gt;12025 was a big year for self-hosting. That alone has made 2025 a tough year for self-hosting. Trust is hardAnother notable development in 2025: popular self-hosted software going through enshittification.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46416618"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://troubled.engineer/posts/selfhosting-in-2025/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;VerifiedReports:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I don&amp;#x27;t understand this fairly sparse &amp;quot;article.&amp;quot;&lt;p&gt;&amp;quot;Plex added a paid license for remote streaming, a feature that was previously free. And then Plex decided to also sell personal data — I sure love self-hosted software spying on me.&amp;quot;&lt;p&gt;How is it &amp;quot;self-hosted&amp;quot; if it&amp;#x27;s &amp;quot;remote streaming?&amp;quot; And if you&amp;#x27;re hosting it, you can throttle any outgoing traffic you want. Right?&lt;p&gt;The only other examples are Mattermost and MinIO... which I don&amp;#x27;t know much about, but again: Aren&amp;#x27;t you in control of your own host?&lt;p&gt;This article is lame. How about focusing on back-ends that pretend to support self-hosting but make it difficult by perpetuating massive gaps in its documentation (looking at you, Supabase)?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reactordev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;If you’re self-hosting, do you need 128GB of ram?&lt;p&gt;I suspect you don’t. I suspect a couple of beelinks could run your whole business (minus the GPU needs).&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;empressplay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;On-premming your Internet services just seems like an exercise in self-flagellation.&lt;p&gt;Unless you have a heavy-duty pipe to your prem you&amp;#x27;re just risking all kinds of headaches, and you&amp;#x27;re going to have to put your stuff behind Cloudflare anyway and if you&amp;#x27;re doing that why not use a VPS?&lt;p&gt;It&amp;#x27;s just not practical for someone to run a little blog or app that way.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jamilbk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I don&amp;#x27;t fully understand the complaints about enshittification of open source permissively licensed software.&lt;p&gt;If the source code is available for you to fork, modify, and maintain as you see fit, what&amp;#x27;s the complaining really about?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;globalnode:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;time marches forward but instead of progress we go backwards. expect to write your own software on limited resources like its 1990 again.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lazylizard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;in the last 5-10yrs...letsencrypt made ssl much easier..and its possible to host on small,cheap arm devices...&lt;p&gt;yes no more dyndns free accounts... but u can still use afraid or do cf tunnels maybe?&lt;p&gt;and in some cases nowadays u can get away with&lt;p&gt;docker-compose up&lt;p&gt;and some of those things like minio and mattermost are complaints about the free tier or complaints about self hosting? i can&amp;#x27;t tell&lt;p&gt;indeed the easiest &amp;quot;self hosting&amp;quot; ever was when ngrok happened.. u could get ur port listening on the internet without a sign up... by just running a single binary without a flag...&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;the_snooze:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Maybe I&amp;#x27;m missing something here: the great thing about self-hosting is that you choose if and when you update your back-end software. What&amp;#x27;s stopping self-hosting admins from simply staying on a known good version and forking that if they so desire?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dgeiser13:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I hate to tell them but everything is being enshittified.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;1123581321:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Typical whining from this corner of the Internet. Maximalism around being owed any promised feature and ongoing open source development for life isn&amp;#x27;t compatible with a healthy and consumer-appealing self-hosting market.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PessimalDecimal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;2&amp;#x2F;3 of this article is about DRAM prices. How is that &amp;quot;enshittification&amp;quot; of self-hosting?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://troubled.engineer/posts/selfhosting-in-2025/</guid>
-      <pubDate>Mon, 29 Dec 2025 02:00:59 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46416618</comments>
+      <title>Show HN: Z80-μLM, a 'Conversational AI' That Fits in 40KB</title>
+      <link>https://github.com/HarryR/z80ai</link>
+      <description>&lt;p&gt;With easy self-hosted distribution. Responds to greetings, questions about itself, and general banter with terse personality-driven answers. Features Trigram hash encoding: Input text is hashed into 128 buckets - typo-tolerant, word-order invariant 2-bit weight quantization: Each weight is {-2, -1, 0, +1}, packed 4 per byte 16-bit integer inference: All math uses Z80-native 16-bit signed arithmetic ~40KB.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46417815"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/HarryR/z80ai'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://github.com/HarryR/z80ai</guid>
+      <pubDate>Mon, 29 Dec 2025 05:41:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46417815</comments>
+    </item>
+    <item>
+      <title>Binaries</title>
+      <link>https://fzakaria.com/2025/12/28/huge-binaries</link>
+      <description>&lt;p&gt;c -o simple-relocation. &gt; objdump -dr simple-relocation. lld: error: simple-relocation.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46417791"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://fzakaria.com/2025/12/28/huge-binaries'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://fzakaria.com/2025/12/28/huge-binaries</guid>
+      <pubDate>Mon, 29 Dec 2025 05:35:17 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46417791</comments>
+    </item>
+    <item>
+      <title>Fast GPU Interconnect over Radio</title>
+      <link>https://spectrum.ieee.org/rf-over-fiber</link>
+      <description>&lt;p&gt;Copper cables face a phenomenon at high data rates at high data rates that necessitate wider wires and more power, complicating a data center’s dense connections. What’s wrong with copper. So, what’s wrong with copper.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46417227"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://spectrum.ieee.org/rf-over-fiber'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://spectrum.ieee.org/rf-over-fiber</guid>
+      <pubDate>Mon, 29 Dec 2025 03:39:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46417227</comments>
     </item>
   </channel>
 </rss>
