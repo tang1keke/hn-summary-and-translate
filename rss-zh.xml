@@ -6,91 +6,212 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 30 Dec 2025 18:38:19 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Dec 2025 21:28:45 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Toro：将应用程序部署为 Unikernel</title>
-      <link>https://github.com/torokernel/torokernel</link>
-      <description>&lt;p&gt;Toro 简介 Toro 是一个专用于将应用程序部署为 microVM 的 unikernel。如何在本地构建 Toro。 [4] 使用 Toro Unikernel 开发和部署微服务。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Toro: Deploy Applications as Unikernels&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46435418"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/torokernel/torokernel'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>一切皆代码：我们如何在一个 Monorepo 中管理我们的公司</title>
+      <link>https://www.kasava.dev/blog/everything-as-code-monorepo</link>
+      <description>&lt;p&gt;“ 发布代码的同一 Git 工作流程还发布内容、文档和营销。它会看到将使用它的前端、需要更新的文档以及可能引用它的营销站点。一切都一起发布。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Everything as Code: How We Manage Our Company in One Monorepo&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46437381"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.kasava.dev/blog/everything-as-code-monorepo'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;doublet00th:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在之前的创业公司 Pangea [1] 中构建了类似的东西。总的来说，我认为回顾我们的旅程，我会再次注册它，但这不是万能药。&lt;p&gt;这是我们遇到的缺点&lt;p&gt; - 通过回购来做所有事情。我们也通过存储库中的 yaml 文件控制功能标志，很快人们就因为我们更新功能标志而生气（打开 MR -&gt; 合并 MR -&gt; 在我们的环境中有 CI 更新功能标志），并且优化需要相当长的时间。然后，它使分支不变量更难以推理（生产分支中的所有内容都是我们实时环境中的内容，但功能标志除外）。因此，我们将其从单一存储库移至实际服务中。&lt;p&gt;- CI 时间和复杂性。当我们开始独立部署大约 20 个服务时，GitLab 开始因 CI 配置的大小而感到窒息，在我们的管道启动之前，我们会看到一个旋转器大约 5 分钟。再加上像我上面提到的功能标志系统这样的特殊雪花，最终只有少数人确切知道推出边缘情况是如何工作的。在那时，果汁不值得挤压（果汁是 - “回购是一切真相的来源”）&lt;p&gt; - 测试时间。我们使用 Cypress 运行了一些 e2e UI 测试，这需要大量强大的实例，为了安全起见，我们每次都会运行它们。再加上片状，当目标始终是 100% 绿色时，你就会有很多红色管道。&lt;p&gt;话虽这么说，我们也从中得到了很多好东西。我清楚地记得有一天，我在没有服务作者参与的情况下更新了除 2 项之外的所有服务，使其在 ARM 上运行，并获得了 70% 的折扣，因为没有人使用刚刚发布的 m8g 现货实例。&lt;p&gt;[1]: &lt;a href="https:&amp;#x2F;&amp;#x2F;pangea.cloud&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;pangea.cloud&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wrs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个完整的&lt;i&gt;产品&lt;/i&gt;，但它几乎无法管理整个&lt;i&gt;公司&lt;/i&gt;。金融？人力资源？合同？上次团队会议的照片？&lt;p&gt;它看起来就像一个正常的前端+后端产品单一存储库，唯一有点不寻常的是包含营销文件夹。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;supermdguy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你们如何在前端和后端之间共享类型？我研究过 tRPC，但不喜欢必须使用他们的 RPC 系统。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dheera:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不喜欢 monorepos 的一点是人们不运送东西。代码库中存在多个版本的 numpy 和 torch，通过 bazel 或其他构建工具来缓解，而不是构建二进制文件和 deb 包并使用记录良好的 API 交付实际产品，这样一个团队永远不需要实际接触另一个团队的代码来完成工作。&lt;p&gt;那些说 Polyrepos 导致破坏的人做得不对。当您在 Polyrepo 设置中依赖于存储库时，您应该依赖于存储库中事物的特定版本，而不是 git head。此外，理想情况下，依赖于正确安装的二进制文件，而不是源。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sails:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我也喜欢相邻的东西。&lt;p&gt;同一个存储库中的公司网站意味着您可以从博客中找到品牌材料和公司基调，这意味着您可以生成客户幻灯片、视频演示&lt;p&gt;更进一步，文档+代码，为什么不也存储错误、问题等。我想知道&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sethammons:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人们谈论“一次改变，无处不在”。这是在任何 api 更改时中断生产的好方法。如果您有一个数据库和&gt; 2个节点，那么您将拥有使用旧模式的旧系统和使用新模式的新系统，除非您设计了向前-向后兼容的更改。虽然对于数据库模式来说更为明显，但对于任何网络 API 来说都是如此。&lt;p&gt;在某些时候，您将拥有许多团队。其中之一_将无法_能够验证并接受某些升级。也许回归会导致只有他们用来破坏的东西。现在，整个组织都被一个团队的版本需求所左右。是的，这种情况发生在规模稍大的组织中。我已经见过很多次了。&lt;p&gt;既然您必须将更改设计为向后兼容，为什么不利用逐步推出的方式呢？&lt;p&gt;当 AWS 更新某些内容时，您会同步更新您的应用程序吗？或者当您的电子邮件服务提供商扩展其 API 时？不，当然不是。而且您不必出于同样的原因将自己锁定在组织中的其他团队中。&lt;p&gt;Monorepos 是交叉污染和超越 API 边界的温床。不过，将人工智能的所有背景都集中在一个地方是很难的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;radial_symmetry:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我保证我只会在相关时自我推销，但这正是我正在构建的 &lt;a href="https:&amp;#x2F;&amp;#x2F;nimbalyst.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;nimbalyst.com&amp;#x2F;&lt;/a&gt; for。&lt;p&gt;我们为非技术用户使用 Claude Code 构建了一种用户友好的方式与存储库进行交互。它特别关注 Markdown，在渲染的 Markdown 文件上提供其他人没有的红绿差异。它也支持开发人员，但我们的目标是比 VSCode 分支更加用户友好。&lt;p&gt;在内部，我们一直在做他们在这里谈论的很多事情，在我们的主存储库中使用 Claude Code 进行设计工作、业务规划和营销。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eddd-ddde:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我是 monorepo 的坚定支持者，包括“无开发分支”。&lt;p&gt;但是，开发和发布之间存在很大差异。您仍然希望能够削减允许cherrypicks的稳定版本，尤其是在单一存储库中。&lt;p&gt;在谈论跨API函数（即前端与后端对话）时，原子更改大多是谎言。您应该始终定义某种稳定的 API。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;conartist6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我真的希望世界从单一存储库转向多存储库。 Git 子模块使 multirepos 倒退了 10 年，但它们仍然更有意义。它们是可组合的！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;7777777phil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为法学硕士提供完整背景的有趣方法。我唯一担心的是“没有工作空间”方法;手动 CD &amp;amp;&amp;amp; npm install 通常会导致依赖漂移，并且“它可以在我的机器上运行”一旦您开始在 API 和前端之间共享逻辑，就会出现问题。现在，这是一个很好的速度设置，但我很好奇，如果没有更正式的 monorepo 工具，您是否在类型或共享实用程序方面遇到了任何摩擦？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;auslegung:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;写得很好，预料到了我最后关于痛点的问题，除了一个：你是否已经达到了部署变得很痛苦的程度，因为它发生得如此频繁？我知道关注点得到了很好的分离，因此营销方式发生了变化&amp;#x2F;不会引起冲突或任何影响前端的事情&amp;#x2F;但我必须想象最终你会遇到这个痛点。但首先，我是包含多个服务的 monorepo 的忠实粉丝，并且只有在它开始引起问题时才分解 monorepo。听起来作者就是这么做的&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reactordev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我利用 git 子模块，避免了 20 年前遇到的 monorepo 规模地狱的陷阱。很高兴它对你有用。我觉得这就是通往 ARR 的道路，直到您需要将工程规模扩展到您和您的小团队之外。好消息是，作者将这些域作为子文件夹隔离出来，因此将来，如果到了时机，他可以将其拖放到自己的存储库中。&lt;p&gt;虽然仍然反对单一存储库，但我理解它为什么有吸引力。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;giancarlostoro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我曾经反对 monorepo...然后我真正进入了 claude 代码，monorepo 在我生命中第一次变得有意义，特别是因为像 Claude 这样的工具。我的意思是，从技术上讲，我可以从我认为的父目录中打开所有不同的存储库，但在一个地方它要好得多。前端和后端更改也始终以这种方式同步。&lt;p&gt;我想我现在可以使用任一选项。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.kasava.dev/blog/everything-as-code-monorepo</guid>
+      <pubDate>Tue, 30 Dec 2025 20:05:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46437381</comments>
+    </item>
+    <item>
+      <title>FediMeteo：价值 4 欧元的 FreeBSD VPS 成为全球气象服务</title>
+      <link>https://it-notes.dragas.net/2025/02/26/fedimeteo-how-a-tiny-freebsd-vps-became-a-global-weather-service-for-thousands/</link>
+      <description>&lt;p&gt;我会为自己做的。计划很明确：每个监狱将在内部处理所有事情。不会在本地存储任何数据。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; FediMeteo: A €4 FreeBSD VPS Became a Global Weather Service&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46436889"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://it-notes.dragas.net/2025/02/26/fedimeteo-how-a-tiny-freebsd-vps-became-a-global-weather-service-for-thousands/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;m132:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;像这样的项目和 Docker 让我认真思考软件工程的发展方向。不要误会我的意思，我并不是想特别批评 Docker 或 Toro。对此类方法的日益依赖让我感到困扰。&lt;p&gt;Docker 的设计初衷是解决“在我的机器上工作”的问题，而不是在其他任何地方。这一般是由于依赖的配置和版本差异造成的。它的方法很简单：将这两者与应用程序捆绑在统一的映像中，并将这些映像部署为原子单元。&lt;p&gt;然而，在某种程度上，问题已经转变为“在我的容器主机上运行”。这怎么可能？事实证明，对于更大的模块化应用程序，配置和依赖关系自然需要分离。这导致它们向上移动了一层，在这种情况下创建了一个相互依赖的容器网络，您现在必须将其组合在一起才能启动整个事情......我们回到了原点，中间有更多的膨胀。&lt;p&gt;现在是硬件虚拟化。我喜欢 AArch64 的概括：架构中有 4 个级别的特权。每个人都可以控制下层，并且可以呼叫紧邻上层的人来请求服务。简单的。让我们将注意力集中到最低的三个：EL0（通常是用户空间）、EL1（内核）、EL2（管理程序）。在大多数操作系统中，EL0 本身不能做太多事情；它的唯一目的是进行原始计算并向 EL1 请求 I&amp;#x2F;O。另一方面，EL1 具有直接与硬件对话的能力。&lt;p&gt;大家都很高兴，直到 EL1 的复杂性失去控制并成为一个巨大的攻击面，难以保护且易于从 EL0 中利用。不好。天真的解决方案？上一层，创建一个层来限制 EL1，或者实际上，运行多个、每个应用程序的 EL1，并打一些孔以使它们仍然能够完成工作 - 创建一个虚拟机管理程序。但是，随着那些定义模糊的“漏洞”（也称为系统调用和超级调用）的增长，攻击面难道不会扩大吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;droelf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我已经使用 unikraft (&lt;a href="https:&amp;#x2F;&amp;#x2F;unikraft.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;unikraft.org&amp;#x2F;&lt;/a&gt;) unikernels 一段时间了，启动时间非常令人印象深刻（对于我们的 Rust 应用程序来说，启动时间很容易达到亚秒级）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mustache_kimono:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Bryan Cantrill，“Unikernels 不适合生产”&lt;p&gt;请参阅：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.tritondatacenter.com&amp;#x2F;blog&amp;#x2F;unikernels-are-unfit-for-product" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.tritondatacenter.com&amp;#x2F;博客&amp;#x2F;unikernels-are-unfit-f...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;richardwhiuk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道它与 &lt;a href="https:&amp;#x2F;&amp;#x2F;mirage.io&amp;#x2F;" 相比如何rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;mirage.io&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spacecadet404:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;除了容器之外，它的用例是什么？与管理程序内核分离？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gnabgib:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;(2020) 目前，似乎自 2011 年以来就已存在 (&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=3288786"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=3288786&lt;/a&gt;)，尽管位于几个不同的域（torokernel.org、torokernel.io）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cmrdporcupine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它是用... Pascal...&lt;p&gt;简洁的编写的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;itsthecourier:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;让我想起演员，他们通过总线在内核之间共享消息&lt;p&gt;文件共享也很复杂，看起来&lt;p&gt;最好能看到一个基准测试或显示其亮点的东西&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/torokernel/torokernel</guid>
-      <pubDate>Tue, 30 Dec 2025 17:09:57 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46435418</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Imustaskforhelp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;4 欧元的服务器很好。&lt;p&gt;我买了一个类似规格的服务器，价格约为 5 美元，但它有 400 GB 或 500 GB 的存储空间，我认为它可能是值得的。&lt;p&gt;但公平地说，这是一笔 3 个月的交易，价格为 8 美元，包括优惠券和所有东西，只花了一个月，但 3 个月后，我必须支付 5 美元&amp;#x2F;5 欧元，但我认为这可能值得，不确定但一旦你开始拥有 vps 或类似的产品，绝对有一种不离开的力量，这种吸引力绝对是真实的:)&lt;p&gt;OVH 也是一家好公司，是市场上最便宜的公司之一。有些人自己转售OVH服务器或者白卖，他们对这种方式很冷淡&lt;p&gt;我认为OVH的好处之一是它的无限出口政策。我认为 Upcloud 和 OVH 是仅有的两个提供类似功能的两家公司，我认为 OVH 更便宜，但 Upcloud 支持团队确实给我带来了非凡的感觉（我希望我能得到他们的赞助）&lt;p&gt;专业提示，但我听说人们通过他们的 Twitter 与 OVH 交谈。我不使用 twitter，但是，是的，支持的另一个想法也可能是加入他们的不和谐，我认为其中一位核心人员曾经在那里回答了我的简单问题（如何在 ovh 服务器中运行 docker&amp;#x2F;自动化），但他们没有回答有关 ovh 或类似内容的其他问题，我可以承认，我不确定我们是否应该向开发人员询问此类事情 idk，但总的来说，所有这些都是相当不错的选择pick！&lt;p&gt;优化服务器价格和支持是一件很有趣的事情，当您对此类事情感兴趣时，您脑海中就会出现这种类似网格的优化。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;babo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“我会密切关注可访问性：预测将采用当地语言......”在很多情况下，某人对当地天气感兴趣但不会说当地语言。为什么要从浏览器中覆盖用户的首选语言？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elcritch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太棒了！像这样的小项目读起来很有趣。&lt;p&gt;也许我只是想象一下，但 FreeBSD 确实比 Linux 发行版有更少的膨胀和更好的延迟。我刚刚在 Vultr 上设置了一个 4 美元的 FreeBSD 虚拟机，具有 1G RAM 和 1vCPU，它仅使用 Caddy 的 12% 的 RAM。具有 4GB RAM 和 4 个 vCPU 的虚拟机可以提供&lt;i&gt;大量&lt;/i&gt;流量。&lt;p&gt;我想使用复古的类似 BBS 的 Web 应用程序创建个人博客，该应用程序具有文本优先界面以及多线程 Nim 服务器 + sqlite。我确信有些东西已经存在，但它更适合我自己的修补。没有容器，没有异步，没有 JavaScript 库。只是一个 4MB 的小二进制文件和 FreeBSD。这篇文章鼓励我走上 FreeBSD 之路！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;terespuwash:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;了不起的项目我明白为什么 FediFollows 帮助它获得更多的知名度 &lt;a href="https:&amp;#x2F;&amp;#x2F;social.growyourown.services&amp;#x2F;@FediFollows&amp;#x2F;115651419364741607" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;social.growyourown.services&amp;#x2F;@FediFollows&amp;#x2F;11565141936...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bix6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很棒的项目！我一直梦想着制作自己的气象服务，所以这是一个很大的灵感。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;德国供应商，拥有 4 个共享核心、4GB RAM、120GB SSD 磁盘空间和 1Gbit/sec 互联网连接&lt;p&gt;他到底在哪里找到具有这些规格的 4 欧元 VPS。例如，Hetzner 最便宜的 VPS 有 2 个共享 vCPU、4 GB RAM、40 GB NVME SSD。&lt;p&gt;我发现的最便宜的是 &lt;a href="https:&amp;#x2F;&amp;#x2F;contabo.com&amp;#x2F;en&amp;#x2F;vps&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;contabo.com&amp;#x2F;en&amp;#x2F;vps&amp;#x2F;&lt;/a&gt; 但它仍然没有 1 GB 的连接与该价格。&lt;p&gt;编辑：拼写错误&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ajoseps:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;项目的精彩撰写和分解。你可以用一个小型 VPS 做很多事情&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dashzebra:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哦，正是我需要的，谢谢！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://it-notes.dragas.net/2025/02/26/fedimeteo-how-a-tiny-freebsd-vps-became-a-global-weather-service-for-thousands/</guid>
+      <pubDate>Tue, 30 Dec 2025 19:21:48 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46436889</comments>
     </item>
     <item>
-      <title>点燃 GPU：从内核管道到 RISC-V 上的 3D 渲染</title>
-      <link>https://mwilczynski.dev/posts/riscv-gpu-zink/</link>
-      <description>&lt;p&gt;该驱动程序处理从协处理器请求电源状态更改所需的特定消息格式。这允许内核一般性地管理 GPU 的电源状态。我在 pwrseq-thead-gpu 中实现了这个。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Igniting the GPU: From Kernel Plumbing to 3D Rendering on RISC-V&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46433352"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://mwilczynski.dev/posts/riscv-gpu-zink/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>F-Droid 的心跳加快。我们的新服务器来了</title>
+      <link>https://f-droid.org/2025/12/30/a-faster-heart-for-f-droid.html</link>
+      <description>&lt;p&gt;此升级涉及为主 F-Droid 存储库构建和发布应用程序的基础设施的核心部分。这次服务器更换花费的时间比我们希望的要长一些。从基础设施的角度来看，这就是一生。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A faster heart for F-Droid. Our new server is here&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46436409"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://f-droid.org/2025/12/30/a-faster-heart-for-f-droid.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;holg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;荣誉，伟大的项目，我等待我的工作机器成为 RISC-V 一次......&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://mwilczynski.dev/posts/riscv-gpu-zink/</guid>
-      <pubDate>Tue, 30 Dec 2025 13:55:59 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46433352</comments>
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PaulKeeble:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;现代机器的性能达到了真正的心理水平，对于像 F droid 这样的许多小规模的东西，我怀疑是否需要大量的硬件来实际托管它。其中很多都是静态文件，因此一个基本的网络服务器可以处理数百个数千个请求，甚至在一台普通的机器上也能达到 10 gbps 的饱和速度，我怀疑这对于他们的工作来说已经足够了。&lt;p&gt;这对我来说就像是他们在一个托管服务器中放置了一个盒子，由一个已知​​的人运行共享机架，而不是在某个人的地下室，但谁真正知道他们并没有确切地提供详细信息。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;websiteapi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;这个故事的另一个重要部分是服务器所在的位置及其管理方式。 F-Droid 并非托管于任何由一些未知人员管理商用硬件的数据中心。&lt;p&gt;&gt;之前的服务器是有 12 年历史的硬件，已经运行了大约五年。从基础设施的角度来看，这就是一生。它为 F-Droid 提供了良好的服务，但速度和维护开销已经成为日常负担。&lt;p&gt;lol&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mcsniff:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;啊。这个 100% 表明他们的设置是多么的糟糕和缺乏维护。&lt;p&gt;围绕全球供应链、报价等的所有挥手和借口...他们花了很长时间才获得&lt;i&gt;商品&lt;/i&gt;硬件并将其塞进一个特殊的人的地下室，他们试图让它看起来像是一件好事？&lt;p&gt;F-Droid 经常在 GrapheneOS 社区中讨论，围绕这些问题的担忧集中化和签名是有效的。&lt;p&gt;我知道这是志愿者的努力，但看起来不太好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;valgaze:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嗯：&lt;p&gt;“F-Droid 并非托管在由一些未知人员管理商品硬件的任何数据中心中。我们制定了一项特殊安排，以便该服务器由具有可靠的安全托管服务记录的长期贡献者实际持有。我们可以远程控制它，我们确切地知道它在哪里，并且我们知道谁有权访问。”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NoiseBert69:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么..他们购买了什么样的硬件？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kasabali:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;上下文：“由于 CPU 过时，F-Droid 构建服务器无法构建现代 Android 应用程序” (&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=44884709"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=44884709&lt;/a&gt;)&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://f-droid.org/2025/12/30/a-faster-heart-for-f-droid.html</guid>
+      <pubDate>Tue, 30 Dec 2025 18:36:37 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46436409</comments>
     </item>
     <item>
-      <title>升技主板发生了什么</title>
-      <link>https://dfarq.homeip.net/what-happened-to-abit-motherboards/</link>
-      <description>&lt;p&gt;我说的是升技。升技主板出了什么事。有了 BP6，升技就不再需要这样做了。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; What Happened to Abit Motherboards&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46433915"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://dfarq.homeip.net/what-happened-to-abit-motherboards/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>显示 HN：SQLite 中的 22 GB 黑客新闻</title>
+      <link>https://hackerbook.dosaygo.com</link>
+      <description>&lt;p&gt;黑客书——社区，HN都是你的。 2006 - 2025 FOREVER 黑客书全新 |前面 |开始 |问 |显示|职位 | query Someday, Month 00, 0000 &lt; &gt; ARCHIVE Loading… Y Combinator|Apply|Companies|Blog|Live HN |Contact &lt; &gt; Viewing HN on Someday, Month 00, 0000. Made by DOSAYGO · [GET THIS].&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: 22 GB of Hacker News in SQLite&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46435308"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://hackerbook.dosaygo.com'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whalesalad:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的一个朋友在论坛竞赛中赢得了 Athlon XP，我认为是 Extreme Systems 或 Extreme Overclocking。他最终将其与升技 NF7-S 配对，我记得当时这是一款传奇的主板。他把它带到我家，我们就参加了 2003 年 LAN 虚幻锦标赛。那些日子就是这样！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zorobo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;啊，那台 BP6 我保留了 10 年才卖掉。
-这意味着我可以编写多线程并发软件并在家里使用 LinuxThreads (&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;LinuxThreads" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;LinuxThreads&lt;/a&gt;) 然后运行 NPTL （原生 Posix 线程库）。&lt;p&gt;即使在适度超频下，我的也不是很稳定！&lt;p&gt;美好时光！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;voidfunc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;升技，有一个我好久没听过的名字了……&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AnotherGoodName:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;超级插槽 7 主板非常棒。&lt;p&gt;它们向后兼容插槽 5（不过您必须设置主板跳线电压）。&lt;p&gt;其中一些主板同时具有 sdram 和 edo ram 插槽以及 agp 插槽、pci 插槽和 isa 插槽。&lt;p&gt;所以您有一个主板可以采用 P-75 或 amd k6 550 cpu 的时代。他们可以从旧的 486（江户公羊）中取出公羊，或者您可以放入更快的公羊。如果您只有 pci grapchics 卡，您可以运行它，或者您可以运行 agp 卡。我在该主板上使用了我的旧 486s isa soundblaster awe 很长一段时间，因为 pci 对声卡没有任何好处。&lt;p&gt;唯一不兼容的 cpu 是插槽和插槽 370 cpu。但无论如何，它们都相当昂贵，而且在当时能够如此多地使用弗兰肯斯坦计算机是很有趣的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;karmakaze:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的阅​​读。我有升技 BP6，它的性能和价格都是杀手级的。我遇到的问题不是电容器，而是 PCB 本身有点薄，无法支持 2 个 CPU 和风扇。&lt;p&gt;另一个很酷的事情是 BP6 支持 Ultra DMA&amp;#x2F;66（又名 ATA&amp;#x2F;66），它是通过添加第二个控制器来实现的，因此总线数量是原来的两倍。现在看一下它的图片，它确实是一台带有 AGP、PCI、ISA 总线的弗兰肯机器。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Apreche:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;BX6 r2.0，我自己组装的第一台 PC 的主板，至今仍然是我使用过的最喜欢的主板。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SV_BubbleTime:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一篇特别奇怪的文章，利基对利基是轻描淡写。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yjftsjthsd-h:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; Abit BP6 在发烧友中享有盛誉，因为它让他们可以使用廉价的 Celeron CPU 制作双 CPU 系统。&lt;p&gt;并且 2 个 Celeron 比性能翻倍的 CPU 更便宜？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://dfarq.homeip.net/what-happened-to-abit-motherboards/</guid>
-      <pubDate>Tue, 30 Dec 2025 14:58:18 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46433915</comments>
+&lt;p&gt;&lt;strong&gt;Top 15 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dmarwicke:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;22GB 主要用于文本？尝试加载该网站，速度非常慢。好奇sqlite中这么多数据的查询性能如何&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yread:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道通过一些压缩它可以变得小多少。您可能可以将“这个网站劫持了滚动条，我不喜欢它”编码为评论分成几部分。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zkmon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与单页应用程序（SPA）类似，单表应用程序（STA）可能会成为一种趋势。只是一个包含多个键的表的分片，并将分片作为静态文件提供，前提是数据可以共享，类似于共享静态 html 内容。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tevon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;链接好像挂了，是不是被删了？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sirjaz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为一个跨平台应用程序，这将是非常棒的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sieep:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这提醒我们，文本比视频高效得多，太疯狂了！您能想象同样数量的知识（或运球）但以视频形式吗？我想知道那会有多大。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不要错过它是如何工作的。它不是服务器端应用程序 - 该代码使用编译为 WASM 的 SQLite 完全在浏览器中运行，但它不是获取完整的 22GB 数据库，而是使用巧妙的 hack，仅检索“分片”。您正在查看的页面所需的 SQLite 数据库的名称。&lt;p&gt;我在浏览器网络面板中观看了它，并看到它获取：&lt;p&gt;&lt;pre&gt;&lt;code&gt; https:&amp;#x2F;&amp;#x2F;hackerbook.dosaygo.com&amp;#x2F;static-shards&amp;#x2F;shard_1636.sqlite.gz
+  https:&amp;#x2F;&amp;#x2F;hackerbook.dosaygo.com&amp;#x2F;static-shards&amp;#x2F;shard_1635.sqlite.gz
+  https:&amp;#x2F;&amp;#x2F;hackerbook.dosaygo.com&amp;#x2F;static-shards&amp;#x2F;shard_1634.sqlite.gz
+&lt;/code&gt;&lt;/pre&gt;
+当我翻到前几天的分页时。&lt;p&gt;这让人想起几年前那个出色的 SQLite.js VFS 技巧：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;phiresky&amp;#x2F;sql.js-httpvfs" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;phiresky&amp;#x2F;sql.js-httpvfs&lt;/a&gt; - 只有那个使用 HTTP 范围标头，这个使用分片文件。&lt;p&gt;交互式 SQL 查询界面位于 &lt;a href="https:&amp;#x2F;&amp;#x2F;hackerbook.dosaygo.com&amp;#x2F;?view=query" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;hackerbook.dosaygo.com&amp;#x2F;?view=query&lt;/a&gt; 要求您选择要针对哪些分片运行查询，总共有 1636 个分片。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fao_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;社区，所有的HN都属于你。这是适合您的浏览器的黑客新闻档案。&lt;p&gt;&amp;gt; 20年的HN争论和美丽，可以永远属于你。所以他们永远不会死。曾经。这是 HN 的不可杀死的静态存档，而且是你的手&lt;p&gt;我真的很抱歉不得不问这个问题，但这真的感觉像是你有一个 LLM 写的吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Paul-E:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这非常简洁！&lt;p&gt;我也做了类似的事情。我构建了一个工具[1]，将 reddit 的 Project Arctic Shift dumps[2] 导入到 sqlite 中。这主要是一个尝试 Rust 和 SQLite（HN 最喜欢的两个主题）的练习。如果您不构建 FTS5 索引并在没有 WAL（--unsafe-mode）的情况下导入，则每个 reddit 评论的导入和提交都会花费 24 小时多一点的时间，并生成约 10TB 的数据库。&lt;p&gt;SQLite 提供了许多很酷的 json 功能，可以让您存储原始 json 并对其进行操作，但我避开它们，而倾向于在加载时仅解析一次。这还让我可以稍微标准化数据。&lt;p&gt;我发现构建数据库相当“快”，但是如果我在构建数据库后立即清理数据库，查询运行得更快。真空操作实际上比原始导入慢，需要几天才能完成。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;Paul-E&amp;#x2F;Pushshift-Importer" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;Paul-E&amp;#x2F;Pushshift-Importer&lt;/a&gt;&lt;p&gt;[2] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ArthurHeitmann&amp;#x2F;arctic_shift&amp;#x2F;blob&amp;#x2F;master&amp;#x2F;download_links.md" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ArthurHeitmann&amp;#x2F;arctic_shift&amp;#x2F;blob&amp;#x2F;master&amp;#x2F;d...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abixb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;想知道您是否可以将其转换为 .zim 文件，以便使用 Kiwix 等离线浏览器进行离线浏览。 [0]&lt;p&gt;我一直在频繁使用“仅限离线日”浏览器。休息来巩固我所学的内容，Kiwix 是一个很好的参考工具（离线维基百科、StackOverflow 等等）。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;kiwix.org&amp;#x2F;en&amp;#x2F;the-new-kiwix-library-is-available&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;kiwix.org&amp;#x2F;en&amp;#x2F;the-new-kiwix-library-is-available&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yupyupyups:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;1 小时过去了，它已经被炸毁了？&lt;p&gt;谢谢你顺便说一句&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zX41ZdbW:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;查询选项卡看起来非常复杂，包含所有这些内容分片：&lt;a href="https:&amp;#x2F;&amp;#x2F;hackerbook.dosaygo.com&amp;#x2F;?view=query" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;hackerbook.dosaygo.com&amp;#x2F;?view=query&lt;/a&gt;&lt;p&gt;我有一个更简单的数据库：&lt;a href="https:&amp;#x2F;&amp;#x2F;play.clickhouse.com&amp;#x2F;play?user=play#U0VMRUNUIHRpbWUsIHR5cGUsIHNjb3JlLCBpZCwg dGl0bGUsIHRleHQgRlJPTSBoYWNrZXJuZXdzX2hpc3RvcnkgV0hFUkUgYnkgPSAna2VlcGFtb3ZpbicgT1JERVIgQlkgdGltZSBERVND" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;play.clickhouse.com&amp;#x2F;play?user=play#U0VMRUNUIHRpbWUsI...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wslh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这个定期更新吗？ GitHub 上的 404 作为其他评论。&lt;p&gt;恕我直言，如果有一个官方的 HN 公共转储可用（并且不需要诸如昂贵的 BigQuery 之类的东西），那就太好了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;carbocation:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该存储库为我抛出了 404 错误。&lt;p&gt;问题 - 您是否考虑过 duckdb（或其他列式存储）和 SQLite 之间的权衡？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;asdefghyk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;需要多少空间？ ...对于数据....
+我想知道它是否适用于平板电脑？ ....&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://hackerbook.dosaygo.com</guid>
+      <pubDate>Tue, 30 Dec 2025 17:01:59 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46435308</comments>
     </item>
     <item>
-      <title>电解可以解决我们最大的污染问题之一</title>
-      <link>https://ethz.ch/en/news-and-events/eth-news/news/2025/11/electrolysis-can-solve-one-of-our-biggest-contamination-problems.html</link>
-      <description>&lt;p&gt;苏黎世联邦理工学院的研究人员开发了一种新的电化学工艺，可以将这些长期存在的毒素完全脱卤，并将其转化为有价值的工业化学品。它们曾经被认为是奇迹创造者——林丹或滴滴涕等杀虫剂在 20 世纪被生产和使用了数百万次。他解释说：“这些过程成本高昂，而且仍然会导致对环境有害的结果。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Electrolysis can solve one of our biggest contamination problems&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46436127"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://ethz.ch/en/news-and-events/eth-news/news/2025/11/electrolysis-can-solve-one-of-our-biggest-contamination-problems.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://ethz.ch/en/news-and-events/eth-news/news/2025/11/electrolysis-can-solve-one-of-our-biggest-contamination-problems.html</guid>
-      <pubDate>Tue, 30 Dec 2025 18:08:32 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46436127</comments>
+      <title>Libsodium 中的漏洞</title>
+      <link>https://00f.net/2025/12/30/libsodium-vulnerability/</link>
+      <description>&lt;p&gt;这些 API 公开了高级函数，但也公开了高级函数包装或依赖的一些较低级函数。点由坐标表示。所有高级 API (crypto_sign_*) 均不受影响；他们甚至不使用或不需要该功能。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A Vulnerability in Libsodium&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46435614"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://00f.net/2025/12/30/libsodium-vulnerability/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;runtimepanic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;微妙但重要的错误。这是一个很好的例子，说明加密货币中的“有效”检查很少像听起来那么简单。接受素数次群之外的点可以悄悄地破坏更高层次的假设，即使没有明显的直接利用。另外提醒一下，低级基元的重用范围往往比预期的要广得多，因此小的验证间隙可能会产生惊人的大爆炸半径。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;theLiminator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您在一家大公司工作，请考虑尝试让弗兰克得到您公司的赞助。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gafferongames:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这么棒的图书馆。谢谢弗兰克·丹尼斯&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;proof_by_vibes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我已经在 Lean4 中迭代钠结合大约四个月了，现在我已经了解了 Ristretto255，我可以明白为什么作者对其潜力感到兴奋。 Ristretto 是一个设计严密的 API，它允许我在 Curve25519 上构建任意多项式，并且我一直在对它进行大量的修改和实验！如果作者偶然读到这篇文章，只是想对你的工作表示感谢！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CiPHPerCoder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这也影响了 PHP 库，sodium_compat。 &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;FriendsOfPHP&amp;#x2F;安全建议&amp;#x2F;拉&amp;#x2F;756" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;FriendsOfPHP&amp;#x2F;security-advisories&amp;#x2F;pull&amp;#x2F;756&lt;/a&gt;&lt;p&gt;我计划花晚上时间检查我能找到的所有其他 Ed25519 实现，看看开源生态系统中的其他地方是否缺少此检查。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://00f.net/2025/12/30/libsodium-vulnerability/</guid>
+      <pubDate>Tue, 30 Dec 2025 17:24:57 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46435614</comments>
     </item>
     <item>
-      <title>Show HN：Tidy Baby 是一款带有文字的 SET 游戏</title>
-      <link>https://tidy.baby</link>
-      <description>&lt;p&gt;整洁宝贝 ✕ 欢迎来到整洁宝贝。让我们一起去整理婴儿套装吧。稳定 艰苦 艰苦 开始游戏 如何玩 Tidy Baby 暂停 历史得分 0 时间 0:00 猜出的局数 ✕ 尚未猜出局数。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Tidy Baby is a SET game but with words&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46434580"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://tidy.baby'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>教授：软件开发人员不关注 Vibe，他们控制：2025 年 AI 代理编码的使用</title>
+      <link>https://arxiv.org/abs/2512.14012</link>
+      <description>&lt;p&gt;) Connected Papers Toggle Connected Papers（什么是 Connected Papers。） Litmaps Toggle Litmaps（什么是 Litmaps。） 代码链接 Toggle Papers with Code（什么是 Papers with Code。）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Prof. Software Developers Don't Vibe, They Control: AI Agent Coding Use in 2025&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46437391"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arxiv.org/abs/2512.14012'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amelius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;更好的标题：“你完全正确！” 2025 年人工智能代理编码使用》&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zkmon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在论文中没有看到代理的定义。它们是否将座席与通用在线聊天界面区分开来？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是最近的事 - 他们进行的调查（99 名受访者）是 2025 年 8 月 18 日至 9 月 23 日，现场观察（观察开发人员 45 分钟，然后进行 30 分钟采访，13 名参与者）是 8 月 1 日至 10 月 3 日。&lt;p&gt;模型主要是 GPT-5 和 Claude Sonnet 4。这项研究还为时过早，无法赶上 5.x Codex 或 Claude 4.5 模型（除了提及 Sonnet 之外） 4.5.)&lt;p&gt;这一点值得注意，因为许多学术论文需要 6-12 个月才能发表，而此时 LLM 空间通常已经发展了整个模型一代。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zwnow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不知道，我仍然基本上避免使用它，如果我这样做，我只是复制并粘贴到克劳德网络版本中。我永远不会管理代理，因为这听起来就像我自己编码一样复杂。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andy99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这个标题是对人工智能标志性写作风格的讽刺，是人工智能产生的，还是这种风格只是影响了人们？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;websiteapi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们从未见过一个职业如此激进地将自己推向无关紧要的境地。软件工程将永远存在，但该行业面临的压力正在以惊人的速度上升。 2026年对于那些发工资的人来说确实是一个非常快乐的新年。 :)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;banbangtuth:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你知道吗。在看过过去 4 年关于 AI&amp;#x2F;LLM 的所有这些文章之后，了解他们将如何取代我作为软件开发人员，以及了解我如何在不使用 5 个代理和担任项目经理的情况下生产力不够。&lt;p&gt;I.不要。关心。&lt;p&gt;我什至不关心外面的那些争论。关于LLM是否有效并取代程序员的争论？说他们这样做了，好吧那又怎么样？&lt;p&gt;我只是有太多有趣的编程了。我只是一个纯粹的全栈业务线程序员，通用的随机可替换家伙，你可以找到我一打。&lt;p&gt;我确实使用 LLM 作为 Stack Overflow&amp;#x2F;docs 的替代品，但我总是手工编写我的所有代码。&lt;p&gt;如果你想替换我，就替换我。我会去需要我的公司。如果没有公司需要我的技能，那好吧，那么我就只是把这个当作一种爱好，可能还会在外面卖汉堡谋生。&lt;p&gt;我不关心你的法学硕士，我不关心你的经纪人，如果我不得不被迫使用我不喜欢的工具和使用我不喜欢的工作流程，我什至不关心工作前景。不喜欢。你可以去找其他愿意为你做这件事的人。&lt;p&gt;对于我来说，我只是有太多有趣的编程。现在请原谅我，我要去玩玩。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;4b11b4:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢将其视为“保持肥沃的土壤”。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lesuorac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;最近的调查任务&lt;p&gt;&gt;调查受访者人数&lt;p&gt;&gt;构建应用程序 53&lt;p&gt;&amp;gt;测试 1&lt;p&gt;我认为这总结了每个人对人工智能生成代码的抱怨。不要让我来审查你甚至没有检查过的工作。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;runtimepanic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;标题在这里做了很多工作。引起我共鸣的是从“编写代码”到“转向系统”的转变，而不是炒作框架。高级开发人员已经花费了比输入语法更多的时间来限制、审查和塑造结果。人工智能只是让这一点变得明确。真正的技能差距不是及时的聪明程度，而是知道代理何时会自信地犯错，以及如何通过测试、架构和不变量来限制它。这部分并不能神奇地扩展。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;game_the0ry:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;通过实地观察 (N=13) 和定性调查 (N=99)...&lt;p&gt;样本量没有统计意义。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arxiv.org/abs/2512.14012</guid>
+      <pubDate>Tue, 30 Dec 2025 20:06:46 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46437391</comments>
+    </item>
+    <item>
+      <title>Zpdf：Zig 中的 PDF 文本提取 – 比 MuPDF 快 5 倍</title>
+      <link>https://github.com/Lulzx/zpdf</link>
+      <description>&lt;p&gt;zpdf 并行跨页面文本提取。界面）; CLI zpdf 提取文档。 pdf # 显示文档信息 zpdf 基准文档。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Zpdf: PDF text extraction in Zig – 5x faster than MuPDF&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46437288"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/Lulzx/zpdf'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zahlman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;游戏中有三种“节奏”：稳定、费力和艰苦&lt;p&gt;我希望马车上没有人得痢疾。&lt;p&gt;&gt;在 Tidy Baby 中，您只需处理三个维度...两张“游戏卡”和最多包含九个候选者的网格&lt;p&gt;所以它只是识别哪个候选者完成了集合？&lt;p&gt;&gt; - 单词长度（3、4 或 5 个字母） - 词性（名词、动词或形容词） - 样式（粗体、下划线或斜体）&lt;p&gt;“样式”这里似乎是人造的。难道它就不能与这个词本身有关吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;furyofantares:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;真的很整洁。词性很容易成为最难的维度，在维度上有如此差异的 SET 游戏有点有趣。&lt;p&gt;我很好奇显示 2 个单词而你发现了第 3 个单词的决定。确定您要寻找的长度和文本装饰很简单，通常只留下几个选项，您必须弄清楚哪一个是正确的词性。我想这就是为什么你要提高你的节奏。&lt;p&gt;但令我惊讶的是，它与原来的设置不太一样，你在棋盘上搜索 3 人一组，而不是看到 2 人，其中有一个你想要找到的已知第三个。&lt;p&gt;分享结果真的很聪明。我想也许这实际上回答了我的问题，它是围绕更像日常益智游戏的游戏时间而设计的。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://tidy.baby</guid>
-      <pubDate>Tue, 30 Dec 2025 15:57:01 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46434580</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;agentifysh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常棒的东西，是什么让 Zig 如此之快&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lulzx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在 Zig 中构建了一个 PDF 文本提取库，对于文本提取工作负载，该库比 MuPDF 快得多。&lt;p&gt;峰值吞吐量约为 41K 页秒。&lt;p&gt;关键选择：内存映射 I&amp;#x2F;O、SIMD 字符串搜索、并行页面提取、流式输出。处理 CID 字体、增量更新、所有常见压缩过滤器。&lt;p&gt;约 5,000 行，无依赖性，编译时间 &lt;2 秒。&lt;p&gt;为什么它这么快：&lt;p&gt;&lt;pre&gt;&lt;code&gt; - 内存映射文件 I&amp;#x2F;O（无读取系统调用）
+  - 尽可能进行零拷贝解析
+  - SIMD 加速字符串搜索，用于查找 PDF 结构
+  - 使用 Zig 的线程池跨页面并行提取
+  - 流式输出（提取文本没有中间分配）
+&lt;/code&gt;&lt;/pre&gt;
+它处理的内容：&lt;p&gt;&lt;pre&gt;&lt;code&gt; - XRef 表和流 (PDF 1.5+)
+  - 增量 PDF 更新（&amp;#x2F;Prev 链）
+  - FlateDecode、ASCII85、LZW、RunLength 解压缩
+  - 字体编码：WinAnsi、MacRoman、ToUnicode CMap
+  - CID 字体（Type0、Identity-H&amp;#x2F;V、带有代理项对的 UTF-16BE）&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/Lulzx/zpdf</guid>
+      <pubDate>Tue, 30 Dec 2025 19:57:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46437288</comments>
+    </item>
+    <item>
+      <title>持剑男子受雇将擅自占地者赶出奥克兰空置房屋</title>
+      <link>https://oaklandside.org/2025/09/30/asap-squatter-removal-oakland/</link>
+      <description>&lt;p&gt;或者他们可以打电话给雅各布斯。尽快清除寮屋者并不孤单。雅各布斯将他的公司推销为唯一一家拥有 Yelp 帐户的占屋者清除公司。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The sword-wielding man hired to kick squatters out of empty Oakland homes&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46437350"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://oaklandside.org/2025/09/30/asap-squatter-removal-oakland/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xxr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想这只是一份临时工作，直到郊区建立了自己的武装安全服务，而他转向高速披萨外卖。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ares623:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果雅各布斯只是走进来，给占屋者一小部分费用，然后离开，那会很有趣。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SirFatty:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;开场白：“一般的占屋者，”詹姆斯·雅各布斯说，“没有近战经验。”&lt;p&gt;更真实的话还没有说出来！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OgsyedIE:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;文章称，抢占行为是一种有组织的犯罪活动。我以前从未听说过这种情况。&lt;p&gt;帮派真的会这样做吗，还是只是将无家可归者的活动重新命名为有组织犯罪？因为奥克兰的大多数无家可归者都是无家可归的工作人员。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thereisnospork:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;警察局在一份声明中表示：“我们的官员将做出回应，调查该电话的性质。” “如果我们的官员确定这是房东与租客之间的问题，案件将移交给阿拉米达县治安官办公室进行进一步调查。”&lt;p&gt;人们非法占屋，警方的官方立场是&lt;i&gt;耸耸肩&lt;/i&gt;。&lt;p&gt;难怪人们对这个系统不满意，而且出现了一个法外驱逐的市场。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delichon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; “我们所做的工作在不断变化，”雅各布斯说。 “过去，占屋更像是一种无家可归的活动。后来它变得更像是有组织的犯罪。我正在赶走很多帮派。”&lt;p&gt;坏蛋英雄。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mothballed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这家伙之所以能逃脱这些伎俩，唯一的原因就是因为警方同意，而且低调的人很乐意自己做。  不是因为它们看起来是合法的。&lt;p&gt;如果这个人逃脱了惩罚，房主也可能会逃脱惩罚，除非他向警方提供了某种特殊的报酬计划。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;GenerWork:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们网站的第一张截图给出了极端的“当你聚会时，我研究了刀片”。共鸣。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://oaklandside.org/2025/09/30/asap-squatter-removal-oakland/</guid>
+      <pubDate>Tue, 30 Dec 2025 20:02:35 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46437350</comments>
+    </item>
+    <item>
+      <title>Show HN：我用西斯尊主主题重新制作了我的网站，我希望它很有趣</title>
+      <link>https://cookie.engineer/index.html</link>
+      <description>&lt;p&gt;最新修改项目 RogueBerry One2025-12-31 RogueBerry One - 适用于 Hackberry Pi 的基于 KDE Plasma 移动操作系统 阅读更多 | GitHub 取证工具2025-12-16 取证工具 - Cookie 的取证工具 了解更多 | GitHub Gooey Framework2025-12-11 Gooey - 自以为是的 WebASM 绑定和 Web 组件框架 了解更多 | GitHub ZIMdex2025-10-29 ZIMdex - 自托管离线 ZIM 搜索和网络蜘蛛 阅读更多 | GitHub Gooey CLI2025-10-06 Gooey CLI - CLI 向导，可更轻松地创建和管理 Gooey 项目 阅读更多 | GitHub。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: I remade my website in the Sith Lord Theme and I hope it's fun&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46436128"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://cookie.engineer/index.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nailer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该网站使用 cookie，因此需要 cookie 警告。 （单片眼镜表情符号）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;neogodless:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哈，我喜欢这个网站，并且喜欢玩一些游戏！&lt;p&gt;所以当我看到“关于我”时图像，我认为 Gen AI - &lt;a href="https:&amp;#x2F;&amp;#x2F;cookie.engineer&amp;#x2F;about&amp;#x2F;me&amp;#x2F;teaser.jpg" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;cookie.engineer&amp;#x2F;about&amp;#x2F;me&amp;#x2F;teaser.jpg&lt;/a&gt; 但没有使用 LLM？ （没有判断力，就在看到那张图片之后，然后你声明没有使用法学硕士，我想我会问！）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;joduplessis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哈哈，太棒了！喜欢这个声音。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Terr_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;热点：“哦，这里有一个链接，如果我点击它，就会有人展示他们的艺术前端设计主题。”&lt;p&gt;“我看到纯色和最近项目新闻的列表。底部什么也没有。是不是网址错了？或者它在我的手机上不起作用？让我们回去看看 HN 的评论。”&lt;p&gt;“提交的内容有一堆文字，似乎无法解答我眼前的困惑。某处有游戏吗？那是错误的链接吗？是不是没有正确弹出？我需要授予该网站特殊权限吗？”&lt;p&gt;TLDR：这个不熟悉该网站的随机用户不确定他们应该关注和注意什么，并且无法在需要再次放下手机之前在合理的时间内弄清楚它。 （不包括撰写此后续评论的时间。）&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://cookie.engineer/index.html</guid>
+      <pubDate>Tue, 30 Dec 2025 18:08:37 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46436128</comments>
     </item>
   </channel>
 </rss>
