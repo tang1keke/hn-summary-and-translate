@@ -6,116 +6,134 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 02 Jan 2026 02:03:41 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Jan 2026 04:07:22 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>Bundler は UV と同じくらい速くできますか?</title>
-      <link>https://tenderlovemaking.com/2025/12/29/can-bundler-be-as-fast-as-uv/</link>
-      <description>&lt;p&gt;これはとても良い引用です。これはとてもとても興味深いことだと思います。 Rust を必要としない最適化 Andrew が Rust を使用せずに実行できる最適化を指摘してくれたことが本当に気に入りました。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Can Bundler be as fast as uv?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46458302"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://tenderlovemaking.com/2025/12/29/can-bundler-be-as-fast-as-uv/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>2026 年パブリックドメインの日おめでとうございます</title>
+      <link>https://publicdomainreview.org/blog/2026/01/public-domain-day-2026/</link>
+      <description>&lt;p&gt;印刷する前にページ全体をスクロールしてすべての画像をダウンロードします。 US のパブリック ドメインに入る印刷前にページ全体をスクロールして、すべての画像をダウンロードします。 (Wikipedia)色あせたページと標準書籍を読む印刷する前にページ全体をスクロールしてすべての画像をダウンロードします。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Happy Public Domain Day 2026&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46460440"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://publicdomainreview.org/blog/2026/01/public-domain-day-2026/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lamontcg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Rubygems を高速化するために gem ができる最大のことは、各 gem のファイルのレジストリ データベースを用意することです。これにより、rubygems は、「require」ごとにファイル システムをスキャンして、どの gem にどのファイルが含まれているかを探す必要がなくなります。&lt;p&gt;つまり、gem を直接編集すると、問題が発生することになります。ファイルを追加すると、メタデータが再ハッシュされるまでファイルは見つかりません。そのメタデータを維持するには、gem install、uninstall などのコマンドを変更する必要があります。  しかし実際には、シェルコマンドを使用して gem ライブラリをハックするべきではありません (手動で手術を行っている場合、メタデータを再生成するのはそれほど負担ではありません)。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mberning:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Bundler が他のパッケージ マネージャーと比べてそれほど遅いと感じたことはありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;prescriptivist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Ruby のファイバー (あるいはむしろ Async ライブラリ) は、より高いレベルのスレッド調整の問題 (接続プールなど) がファイバーにも同様に当てはまることに気づいていない若手の Rails エンジニアによってフェティッシュ化される傾向があると思います。そうは言っても、これはファイバーにとってはかなり良い使用例である可能性があります。私が毎日使用しているコード ベースには約 230 個の gem が含まれており、これらすべての実際の IO バウンド インストールを非ブロッキング呼び出しに剥がすことができれば、スレッドをスピンアップしてスレッド間のコンテキストを切り替えるのと比べて、パフォーマンスに大きな違いが見られるでしょう。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;raggi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それは間違いなく可能です。私は何年も前にプロトタイプを書きました &lt;a href="https:&amp;#x2F;&amp;#x2F;ra66i.org&amp;#x2F;tmp&amp;#x2F;how_gems_Should_be.mov" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ra66i.org&amp;#x2F;tmp&amp;#x2F;how_gems_Should_be.mov&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amazingman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;バンドラーの代替品が最小バージョンの選択を使用していない場合は、興味がありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kimos:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は「すべてのバンドラー インスタンスのグローバル キャッシュ」問題に目を細めてきました[1]。これが隠れた複雑さの地雷原なのか、それとも実際には比較的単純なものなのかを理解しようとしています。&lt;p&gt;これは、将来のバージョンからのみ共有されるため、実装されてから時間が経つほど利益が大きくなるため、ターゲットとして興味深いものです。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ruby&amp;#x2F;rubygems&amp;#x2F;issues&amp;#x2F;7249" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ruby&amp;#x2F;rubygems&amp;#x2F;issues&amp;#x2F;7249&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;quotemstr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;さて、私の紫外線に対する評価は傷つきました。それは...&lt;p&gt;&amp;gt; require-python の上限を無視します。パッケージで Python&lt;4.0 が必要であると指定されている場合、uv は上限を無視し、下限のみをチェックします。これにより、上限はほとんど常に間違っているため、リゾルバのバックトラッキングが大幅に減少します。パッケージが Python&lt;4.0 と宣言しているのは、実際に壊れるからではなく、Python 4 でテストしていないからです。制約は防御的なものであり、予測的なものではありません&lt;p&gt;まあ、間違っているときにすぐに行動するのは簡単です。しかし、もちろん、これが速いのは、Rust が依存関係の制約解決の難しい部分を省略して、人々が気づかないことを願っているからではありません。&lt;p&gt;&gt;複数のパッケージ インデックスが設定されている場合、pip はそれらすべてをチェックします。 uv はパッケージを含む最初のインデックスから選択し、そこで停止します。これにより、依存関係の混乱を防ぐ攻撃が防止され、余分なネットワーク リクエストが回避されます。&lt;p&gt;曖昧さの検出は重要です。&lt;p&gt;&amp;gt; uv は pip の設定ファイルを完全に無視します。解析、環境変数の検索、システム全体およびユーザーごとの場所からの継承はありません。&lt;p&gt;このような感覚が全体的な実行時間に寄与する可能性は低いですが、柔軟性は低下します。&lt;p&gt;&amp;gt;デフォルトではバイトコードのコンパイルは行われません。 pip は、インストール中に .py ファイルを .pyc にコンパイルします。 uv はこのステップをスキップし、インストールのたびに時間を節約します。&lt;p&gt;... したがって、バイトコードのコンパイルの負担がインストール後の最初の起動に移されます。バイトコードのコンパイルには依然として料金を支払っていますが (シリアル化されているため、実際にはさらに多くの時間を費やしています)、その時間をパッケージ マネージャーに関連付けることはありません。&lt;p&gt;もちろん、大量の Python サブプロセスを回避することは役立ちますが、大胆で新しい無料のスレッド世界では、それほど多くのサブプロセスを生成する必要はありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dbalatero:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Aaron が「Rust で書き直す」ことに時期尚早に全力を尽くすのではなく、Bundler に加えられる可能性のある実用的なアルゴリズム設計の改善に焦点を当てていることに感謝します。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最近および関連:&lt;p&gt;&lt;i&gt;UV はどのようにして高速になったのか&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46393992"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46393992&lt;/a&gt; - 2025 年 12 月(コメント数 457)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nightpool:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;本当に興味深い投稿ですが、最初のこの部分が心に残りました:&lt;p&gt;&lt;pre&gt;&lt;code&gt; Ruby Gems は tar ファイルであり、tar ファイル内のファイルの 1 つは GemSpec の YAML 表現です。この YAML ファイルは Gem のすべての依存関係を宣言するため、RubyGems は何も評価せずに、特定の Gem をインストールする前にどのような依存関係をインストールする必要があるかを知ることができます。さらに、RubyGems.org は依存関係情報を問い合わせるための API を提供します。これは実際には依存関係情報を取得する通常の方法です (ここでも eval は必要ありません)。
-&lt;/code&gt;&lt;/pre&gt;
-代表的な Python 依存関係セットの解析速度を、Ruby 依存関係の大規模な代表セットと比較対照してみると興味深いでしょう。 YAML が解析に最も効率的な形式ではないことは有名です。 「pip」よりは優れていたかもしれませんが、より効率的な形式 (JSON、protobufs など) で依存関係情報を解析する余地がテーブルに残っていなかったら、私は驚くでしょう。&lt;p&gt;とはいえ、「ほとんどの」コンポーネントをインストールするために gemspec を解析する必要がないという最後のポイントは、依存関係により、これはかなり議論の余地があります (情報がすでに gemserver から返されている場合)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dboreham:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は長い間、あらゆる種類のソフトウェアを開発してきました。
-私はこれまで、パッケージ マネージャーの速度を気にしたことはありませんでした。&lt;p&gt;コンパイラー、そうです。
-リンカー、確かに。
-パッケージダウンローダー。いいえ。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://tenderlovemaking.com/2025/12/29/can-bundler-be-as-fast-as-uv/</guid>
-      <pubDate>Thu, 01 Jan 2026 21:37:10 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46458302</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nevster:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;スワローズとアマゾンズシリーズは素晴らしいです！強くお勧めします。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gxqoz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;映画がパブリックドメインになることが何を意味するのか、私はいつも興味がありました。数年前、私は興味深いフックだと思った内容で Planet Money にメールを送信しましたが、返答はありませんでした。&lt;p&gt;&amp;quot;Planet Money さん、今日はパブリック ドメインの日です。フリッツ ラングの古典的なメトロポリスは現在「パブリック ドメイン」になっているようです。ドイツ語のサイレント映画にとって、これが実際的なレベルで何を意味するのか興味がありました。&lt;p&gt;Planet Money Movies が独自のバージョンのメトロポリスをリリースしたい場合、どのようにするでしょうか? Amazonに行ってBlu-rayを購入し、何らかの方法で自分のBlu-rayをリリースすることはできますか?ブルーレイの海賊版対策はどうなっているのでしょうか？オリジナルのネガからフィルムを復元する際にトランジットフィルムが行った作業についてはどうですか?それはある種の新しいオリジナル作品としてカウントされますか？無声映画と外国映画です。サウンドトラックと翻訳はどのように機能しますか?&lt;p&gt;オリジナルのリールから新しいコピーを作成する必要がある場合、誰かがそれを買い占めていたらどうしますか?それは、すべてのコピーを購入して、誰かがパブリック ドメイン バージョンをリリースするのを防ぐことができるという意味ですか?」&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;関連:&lt;p&gt;&lt;i&gt;2026 年にパブリック ドメインになるものは何ですか?&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46117112"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46117112&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;marc_abonce:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;録音された音楽の著作権はどのように機能しますか?&lt;p&gt;この記事では、チャーリー (バード) パーカーの音楽は現在、世界のほとんど (生涯 + 70 年) でパブリック ドメインになっていますが、彼のレコードのほとんどは、ずっと後、50 年も前に亡くなったディジー ガレスピーのような他のアーティストとのコラボレーションであると述べています。また、記録が企業によって所有されている場合でもそれが問題になるのかと疑問に思います。&lt;p&gt;そのような場合、記録がパブリック ドメインであるかどうかをどのように確認すればよいでしょうか?&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://publicdomainreview.org/blog/2026/01/public-domain-day-2026/</guid>
+      <pubDate>Fri, 02 Jan 2026 01:42:16 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46460440</comments>
     </item>
     <item>
-      <title>Python 拡張プラットフォームとしての WebAssembly</title>
-      <link>https://nullprogram.com/blog/2026/01/01/</link>
-      <description>&lt;p&gt;Python は伝統的に C インターフェイスの背後にあるネイティブ コードを通じて拡張されてきましたが、最近では Wasm を使用して Python を拡張することが実用的になっています。通常、Python だけではアクセスできない外部インターフェイスにアクセスするために、Python を拡張します。これは、Wasm を Python 自体に組み込むのとほぼ同じです。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; WebAssembly as a Python Extension Platform&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46458624"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://nullprogram.com/blog/2026/01/01/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://nullprogram.com/blog/2026/01/01/</guid>
-      <pubDate>Thu, 01 Jan 2026 22:09:16 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46458624</comments>
+      <title>ユーザーが問題を直接作成できない理由</title>
+      <link>https://github.com/ghostty-org/ghostty/issues/3558</link>
+      <description>&lt;p&gt;5k ユーザーが問題を直接作成できない理由 #3558新しい問題リンクをコピー新しい問題リンクをコピーオープンメタオープンなぜユーザーが問題を直接作成できないのか#3558メタリンクラベルドキュメントドキュメントの改善または追加ドキュメントの改善または追加説明ミッチェル2024 年 12 月 27 日にオープンしました問題本文のアクションユーザーは、このリポジトリで問題を直接作成することはできません。最初にディスカッションを作成するようにお願いします。他のプロジェクトとは異なり、Ghostty はディスカッションや機能リクエストに問題トラッカーを使用しません。メタデータメタデータ担当者誰も割り当てられていませんラベルドキュメントドキュメントの改善または追加ドキュメントの改善または追加タイプメタプロジェクトプロジェクトなしマイルストーンマイルストーンなし関係まだなし開発ブランチまたはプルリクエストなしアクションを発行します。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Why users cannot create Issues directly&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46460319"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/ghostty-org/ghostty/issues/3558'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lawgimenez:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;課題タイプを使用してみてはいかがでしょうか? &lt;a href="https:&amp;#x2F;&amp;#x2F;docs.github.com&amp;#x2F;en&amp;#x2F;issues&amp;#x2F;tracking-your-work-with-issues&amp;#x2F;using-issues&amp;#x2F;managing-issue-types-in-an-organization" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;docs.github.com&amp;#x2F;en&amp;#x2F;issues&amp;#x2F;tracking-your-work-with-is...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paxys:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;そこで彼らは、進行中の作業項目を追跡および管理するためのプロジェクト ボードとして Issues を使用していますが、Projects はまさにその目的のために構築されています。長期的には、プロジェクト管理をプロジェクトに移行し、できるだけ手間を省いてバグを報告できるようにする方が良いかもしれません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rbbydotdev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;現在存在しない GitHub 設定を介して自動的にタグ付けとフィルタリングを行うだけでも、同じ目的を果たすことができるのではないかと思います。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cortesoft:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは、問題にタグを使用して、すぐに作業できるものと最初のユーザー送信を区別することとは根本的に異なりますか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eviks:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;このパターンでは、すべての問題にすぐに取り組むことができるため、メンテナやコントリビュータが取り組むべき問題を見つけやすくなります。&lt;p&gt;これは、「取り組む準備ができている」という方法で簡単に解決できないのはなぜでしょうか。タグ？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;1123581321:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私はユーザーの投稿に関する一般的な考え方に同意します。終了したディスカッションの閲覧は、終了した問題の閲覧とよく似ています。したがって、このポリシーがバグ報告を議論に変えることに成功しているかどうかはわかりません。しかし、少なくとも、投稿者にとって問題をノイズから守ることにはなります。 Github は、ユーザーにディスカッションへの異なるアプローチを促すために、さらに多くのことを行うことができるでしょう。 &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ghostty-org&amp;#x2F;ghostty&amp;#x2F;Discussions?Discussions_q=is:closed+" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ghostty-org&amp;#x2F;ghostty&amp;#x2F;Discussions?discussio...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;literatepeople:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私には素晴らしいと思います。おそらく GitHub はこれを何らかの方法で UX に組み込むことを検討すべきでしょうか?非常に多くのプロジェクトが他の問題にリンクしている問題なので、他のプロジェクトでもこれを採用して Github のタスク追跡をより使いやすくしてもらいたいと思っています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Maxious:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;たとえば、メモリ リークの調査は現在、ディスカッション、x&amp;#x2F;twitter、discord &lt;a href="https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;mitchellh&amp;#x2F;status&amp;#x2F;2004938171038277708" にまたがって行われています。 rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;mitchellh&amp;#x2F;status&amp;#x2F;2004938171038277708&lt;/a&gt; &lt;a href="https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;alxfazio&amp;#x2F;ステータス&amp;#x2F;2004841392645050601" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;alxfazio&amp;#x2F;ステータス&amp;#x2F;2004841392645050601&lt;/a&gt; &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ghostty-org&amp;#x2F;ghostty&amp;#x2F;Discussions&amp;#x2F;10114" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ghostty-org&amp;#x2F;ghostty&amp;#x2F;Discussions&amp;#x2F;10114&lt;/a&gt; &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ghostty-org&amp;#x2F;ghostty&amp;#x2F;Discussions&amp;#x2F;9962" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ghostty-org&amp;#x2F;ghostty&amp;#x2F;Discussions&amp;#x2F;9962&lt;/a&gt;&lt;p&gt;しかし、価値のあるステータスを発行するまでには卒業していません&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;keyle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;問題は単純に拡大縮小できません。ディスカッションをフィルターとして使用することは良い考えです。&lt;p&gt;ディスカッションから手動で問題を作成するよりも、問題を解決することに多くの時間を費やした場合、計算は加算されます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xpe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;個人的には掘り出します！リンクされたページから選択した部分:&lt;p&gt;&amp;quot;&amp;quot;&amp;quot;他のプロジェクトとは異なり、Ghostty はディスカッションや機能リクエストに問題トラッカーを使用しません。代わりに、GitHub ディスカッションを使用します。議論が十分に理解され、実行可能な項目が特定される段階に達すると、その項目は問題トラッカーに移されます。このパターンでは、すべての問題にすぐに取り組むことができるため、メンテナーや寄稿者が取り組むべき問題を見つけやすくなります。&lt;p&gt;このアプローチは、オープンソース プロジェクトを保守してきた長年の経験と、ユーザーがバグだと考えているものの 80 ～ 90% は誤解、環境上の問題、またはユーザー自身による構成エラーであるという観察に基づいています。[...]""""&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/ghostty-org/ghostty/issues/3558</guid>
+      <pubDate>Fri, 02 Jan 2026 01:24:51 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46460319</comments>
     </item>
     <item>
-      <title>BYD、2025年に460万台の車両を販売、修正された販売目標を達成</title>
-      <link>https://www.bloomberg.com/news/articles/2026-01-01/byd-sells-4-6-million-vehicles-in-2025-meets-revised-sales-goal</link>
-      <guid isPermaLink="true">https://www.bloomberg.com/news/articles/2026-01-01/byd-sells-4-6-million-vehicles-in-2025-meets-revised-sales-goal</guid>
-      <pubDate>Thu, 01 Jan 2026 15:49:42 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46454977</comments>
-    </item>
-    <item>
-      <title>なぜテキストファイルが好まれるのでしょうか? (2010)</title>
-      <link>http://textfiles.com/uploads/textfiles.txt</link>
-      <description>&lt;p&gt;======================= テキストファイルを好む理由。テキストファイルのもう 1 つの利点は、テキストファイルを読み取るために特別なソフトウェアを必要としないことです。実際、システム コマンド ラインからテキスト ファイルを読み取ることができます。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Why Prefer Textfiles? (2010)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46459425"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='http://textfiles.com/uploads/textfiles.txt'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Marmot – MySQL ワイヤー互換インターフェイスを備えた分散 SQLite サーバー</title>
+      <link>https://github.com/maxpert/marmot</link>
+      <description>&lt;p&gt;ノード 2 のデータを更新し、ノード 1 にレプリケートされることを確認します # 5. ノード 1 のデータを削除し、ノード 2 にレプリケートされることを確認します # 手動クラスター テスト。 sh # シード ノードを開始します (ポート 8081、mysql 3307)。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Marmot – A distributed SQLite server with MySQL wire compatible interface&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46460676"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/maxpert/marmot'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kehvyn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私にとっていつも興味深いのは、これらのプレーンテキスト サイトが「安全ではない」というフラグが付けられていることです。そして「危険」最新のブラウザで。良い解決策はありませんが、[1]&lt;p&gt;[1](&lt;a href="https:&amp;#x2F;&amp;#x2F;meyerweb.com&amp;#x2F;eric&amp;#x2F;thoughts&amp;#x2F;2018&amp;#x2F;08&amp;#x2F;07&amp;#x2F;securing-sites-made-less-accessible&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;meyerweb.com&amp;#x2F;eric&amp;#x2F;thoughts&amp;#x2F;2018&amp;#x2F;08&amp;#x2F;07&amp;#x2F;securing-sites...&lt;/a&gt;)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;orionblastar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Word ファイルとは異なり、マクロ ウイルスが含まれる可能性はありません。私は家族の弁護士の要請に応じて、いくつかの文書をテキストに変換して送りました。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">http://textfiles.com/uploads/textfiles.txt</guid>
-      <pubDate>Thu, 01 Jan 2026 23:33:09 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46459425</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maxpert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;著者はこちら！ここに自分の内容を投稿するたびに、沈んでしまうようなので、これが実際に何人かに届くことを願っています。&lt;p&gt;Marmot は、NATS 経由で変更を複製するためにトリガーとポーリングを使用するサイドカー プロジェクトとして始まりました。それはうまくいきましたが、かなり早く壁にぶつかりました。ほとんどの人は、完全な ACID 準拠とクラスター全体での DDL レプリケーションを本当に望んでいます。それを実現する唯一のクリーンな方法は、標準プロトコルで SQLite を公開することだと気づきました。&lt;p&gt;rqlite のようなプロジェクトは REST を使用し、その他のプロジェクトはページ キャプチャ ルートを行きますが、代わりに MySQL プロトコルを実装することにしました。これは互換性の点で最も合理的です。&lt;p&gt;理論的にはウェブの膨大な部分をカバーする WordPress で動作するところまで到達しました。リポジトリには、Marmot 上で実行される WP クラスターをデプロイするためのスクリプトがあります。 DB の変更はクラスター全体にレプリケートされるため、最終的に WordPress を適切にスケールアウトできるようになります。&lt;p&gt;パフォーマンス面では、3 ノード クォーラムのローカル マシンで 1 秒あたり約 6,000～7,000 件の挿入が発生しています。 Unix ソケットをサポートしており、MySQL インターフェイスを介して書き込みをルーティングしながら、プロセスに SQLite DB ファイルを直接読み取ることもできます。これにより、読み取り負荷の高いアプリに大きな柔軟性が与えられます。&lt;p&gt;私は「AI のスロップ」を知っています。最近、ラベルが頻繁に使用されていますが、私はこれを実稼働環境で一貫して実行しています。必要な動作を正確に実現するには、膨大な手作業時間がかかりました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;geenat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;なんと、DDL レプリケーションを含む大量のアップデートが行われました。 V2 は非常に印象的です。&lt;p&gt;シャーディング ルーティングがどのように処理されるか興味があります。これが書き込みのスケーリングに関するパズルの最後のピースのようです。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/maxpert/marmot</guid>
+      <pubDate>Fri, 02 Jan 2026 02:21:57 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46460676</comments>
     </item>
     <item>
-      <title>シュトラウスのミーム</title>
-      <link>https://www.lesswrong.com/posts/CAwnnKoFdcQucq4hG/straussian-memes-a-lens-on-techniques-for-mass-persuasion</link>
-      <description>&lt;p&gt;彼らは何を考えているのでしょうか。これはまさに、「神の言葉」が実際に何を意味するかについての、宗派を超えた状況における曖昧さの場合に当てはまります。この言葉をよく読む会衆は、「キリストにある兄弟または姉妹」との社会的摩擦を引き起こすため、明確にしたり指示したりすることを避けます。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Straussian Memes&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46458165"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.lesswrong.com/posts/CAwnnKoFdcQucq4hG/straussian-memes-a-lens-on-techniques-for-mass-persuasion'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>拡張性: 「100% Lisp」の誤謬</title>
+      <link>https://kyo.iroiro.party/en/posts/100-percent-lisp/</link>
+      <description>&lt;p&gt;Irreal の記事の主張: (強調はそのまま) 私が気に入っている点の 1 つは、それが 100% Common Lisp であることです。とにかく、最近では、プラットフォーム固有の処理や、使用する便利なライブラリ バインディングをすべて備えた「純粋な」Lisp プログラムを用意することは不可能です。標準の Emacs はカーソル アニメーションをサポートしていません。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Extensibility: The "100% Lisp" Fallacy&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46460394"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://kyo.iroiro.party/en/posts/100-percent-lisp/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throw4847285:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;LessWrong の群衆がレオ・シュトラウスのミーム化されたバージョンを参照するという事実は、非常に示唆的です。反哲学ですが、レオ・シュトラウスに夢中です。好奇心旺盛。彼らはどこで彼のアイデアに出会ったのでしょうか?&lt;p&gt;編集: なぜ私が口下手だったのかわかりません。クレアモント研究所について話しています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blamestross:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私はこのような形状のものを「ポリエンテンドル」と呼んでいます。&lt;p&gt;私の頭の中では、これは非常に高い言語圧縮を持っていると考えています。意図は異なりますが、複数の真のステートメントをグリフ音素の小さなセットに重ね合わせているだけです。&lt;p&gt;常に状況に依存します。コンテキストは言語圧縮の共有辞書であり、単語からより多くの意味を取得するにはコンテキストをハイジャックする必要があります。&lt;p&gt;&lt;i&gt;さらに圧縮できる場所:&lt;/i&gt;&lt;p&gt;- 曖昧な代名詞 (および複数代名詞のメンバーシップ) を持つ主語&amp;#x2F;目的語の曖昧さ&lt;p&gt;- 英語の単語と意味の衝突の曖昧さ&lt;p&gt;- 単語選択の具体性の欠如&lt;p&gt;-書き言葉や伝え方における強調の曖昧さ。彼らは口頭で少しフラットに言うことがあります。&lt;p&gt;&lt;i&gt;あるグループの人々:&lt;/i&gt;&lt;p&gt;- A は病気&lt;p&gt;- B は​​中毒 A&lt;p&gt;- C はその状況に恐怖を感じているが、怖くて何も言えません&lt;p&gt;- D は A が偽っていると思っています。&lt;p&gt;- E は本当にクールです&lt;p&gt;「彼らは本当に病気です」観察者が発言したものですが、彼らが上記の内容をどの程度理解しているのかはわかりません。&lt;p&gt;私は、生活の中でこのような発言を見つけると、とても楽しいです。意図を持ってそれを行うことは、より複雑です。&lt;p&gt;著者が説明していることは、戦略的な曖昧さのように見えますが、もう少し具体的です。
-彼らがここで投げかけようとしているのは、有益なレッテルだとは思えません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;motohagiography:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;著者は「エクソテリック」について話していると思います。これは一般消費向けであり、「難解な」という意味です。つまり、初心者のためのものです。彼らは犬笛やクソ野郎ではないと主張しているが、告発では「難解な」ミームが存在すると主張しているため、これらのシュトラウスのミームは密接に関連している。その「エクソテリック」の下にある何かを意味します。 &lt;p&gt;これらは、別々の解釈者の間で矛盾する二重の意味を持つシザーステートメントの逆である可能性があります。  (&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=21190508"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=21190508&lt;/a&gt;)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;VikingCoder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;このような構造化されたものを何と呼ぶのかわかりませんが、私はこのアドバイスがとても気に入っています。&lt;p&gt;「周りの人を変えることはできません。&lt;p&gt;でも、周りの人を変えることはできます。」&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;galaxyLogic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;頭に浮かぶもう 1 つのフレーズは、「もっともらしい否定性」です。曖昧な文を発話することで、自分の発言の考えられる意味を 1 つを除いてすべて否定できます。そして、さまざまな時間にさまざまな聴衆に話しかけることで、批判者たちが主張しているような意味ではなかったと主張することもできます。&lt;p&gt;しかし、シュトラウスのミームであろうと他のものであろうと、これを表す用語があるという考えが気に入っています。私がよく理解できなかったのは、どのように「自己安定化」が行われるかということです。 &lt;p&gt;私が望むのは、テレビのアンカーが賢明になって、インタビュー対象者に「この用語を使用するとき、正確にはどういう意味ですか...」と尋ねるようになることです。   しかし、私は彼らもそうしないのではないかと思います。なぜなら、彼らも、自分たちの好きな方法でミームを理解し、複数の異なるコミュニティが好むミームを広めることに喜んでいるからです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cathyreisenwitz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;何かを見逃したのでしょうか、それともどの例もシュトラウス的ミームとミーム的ミームの両方ではないのでしょうか?これが現実のものであれば、一例を想像できるような気がします。また、それは教会の一般的なやり方ではありません。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.lesswrong.com/posts/CAwnnKoFdcQucq4hG/straussian-memes-a-lens-on-techniques-for-mass-persuasion</guid>
-      <pubDate>Thu, 01 Jan 2026 21:24:39 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46458165</comments>
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vindarel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最近 Lem に追加されました: JSON、YAML、Nix、Markdown、WAT のツリ​​ーシッター。新しい言語モード: Clojure、Perl、Kotlin、Zig (LSP を使用)。 git-gutter モード。&lt;p&gt;Lem には (非常に単純な) Git&amp;#x2F;hg&amp;#x2F;fossil インタラクティブ モード (インタラクティブなリベースはありますが、たとえばリワードはありません) があり、org-mode のサポートも予定されています (&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;mahmoodsh36&amp;#x2F;organ-mode") rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;mahmoodsh36&amp;#x2F;organ-mode&lt;/a&gt;)。&lt;p&gt;Lem は現在、ncurses + webview (+ 長く維持されていない SDL2 バックエンド) であり、毎日のマルチプラットフォーム バイナリがあります。試してみてください!&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;lem-project.github.io&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;lem-project.github.io&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jibal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;それは間違いではありません&lt;p&gt;解決できて良かったです。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://kyo.iroiro.party/en/posts/100-percent-lisp/</guid>
+      <pubDate>Fri, 02 Jan 2026 01:36:25 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46460394</comments>
     </item>
     <item>
-      <title>米国のレコード購入者の50%はレコードプレーヤーを所有していない</title>
-      <link>https://lightcapai.medium.com/the-great-return-from-digital-abundance-to-analog-meaning-cfda9e428752</link>
-      <guid isPermaLink="true">https://lightcapai.medium.com/the-great-return-from-digital-abundance-to-analog-meaning-cfda9e428752</guid>
-      <pubDate>Thu, 01 Jan 2026 15:45:25 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46454944</comments>
-    </item>
-    <item>
-      <title>市街戦の数学 (2008)</title>
-      <link>https://ocw.mit.edu/courses/18-098-street-fighting-mathematics-january-iap-2008/pages/readings/</link>
-      <description>&lt;p&gt;3-12 (PDF) 講義 1 の質問 (PDF) 2 極端なケース 第 2 章 - 極端なケース、13-26 ページ (PDF) 講義 2 の質問と回答 (PDF) 3 応用: ドラッグ 第 2 章 - 極端なケース、86-90 ページ (PDF) 11 応用: 対数を歌う 配布資料 - 音程を使用して対数を近似する (PDF)。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Street-Fighting Mathematics (2008)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46456543"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://ocw.mit.edu/courses/18-098-street-fighting-mathematics-january-iap-2008/pages/readings/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>DENT: 他の人のためのネットワーク オペレーティング システム (NOS)</title>
+      <link>https://dent.dev/</link>
+      <description>&lt;p&gt;目的 Linux でネイティブにサポートされるフル機能のネットワーク オペレーティング システムとコントロール プレーンを中心に、貢献者とユーザーのエコシステムを構築します。プレミア メンバー メンバーは記載されていません 一般メンバー DENT への参加について問い合わせる 最近の投稿 2025 年 4 月 9 日 OCP EMEA サミット 2025 での DENT 2025 年 1 月 23 日 NRF ビッグ ショー 2025 の要約 2025 年 1 月 9 日 DENT と代数大学のオープンソース ハッカソンの要約 DENT マーケット リーダーシップの概要をダウンロード DENT はユーザーをコントロールします。この Futuriom マーケット リーダーシップ ブリーフでは、DENT がどのようにコストを削減し、ネットワーク インフラストラクチャを即座に改善できるかをご覧ください。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; DENT: A network operating system (NOS) for everyone else&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46460831"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://dent.dev/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;groundzeros2015:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;もう一つの本のタイトルは、山積みの本を読んでいない人に次の本を買ってもらうことを目的としていました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rm445:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この本を読みました。これは間違いなく、世の中にある数学のテキストの中で最も面白くて読みやすいものの 1 つです。このメソッドを使用するかどうかはまったくわかりませんでした。機械エンジニアとして働いている私は、おそらく数値的手法に直接取り組むか、数学者の「大まかな」手法よりもさらに大まかで近似的に物事を近似します。仕事。 「複雑な関数を四角形に置き換える」というのは、間違いなく共鳴しました。全体的な印象としては、真の特徴がまだ知られていない状況からあらゆる意味を解き明かす数学者や科学者のための素晴らしいテクニックが満載であるという印象でした。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brennanpeterson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;ocw.mit.edu&amp;#x2F;courses&amp;#x2F;res-6-011-the-art-of-insight-in-science-and-engineering-mastering-complexity-fall-2014&amp;#x2F;pages&amp;#x2F;online-textbook&amp;#x2F;" もとても気に入りました。 rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ocw.mit.edu&amp;#x2F;courses&amp;#x2F;res-6-011-the-art-of-insight-in-...&lt;/a&gt;&lt;p&gt;これは、後継であり、非常に便利だと思います。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NooneAtAll3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それは何についてですか?&lt;p&gt;チームが対戦相手を詳細に倒すためにファイターを配置する方法は何ですか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nutjob2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;書籍の PDF はこちらです: &lt;a href="https:&amp;#x2F;&amp;#x2F;direct.mit.edu&amp;#x2F;books&amp;#x2F;oa-monograph-pdf&amp;#x2F;2284035&amp;#x2F;book_9780262265881.pdf" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;direct.mit.edu&amp;#x2F;books&amp;#x2F;oa-monograph-pdf&amp;#x2F;2284035&amp;#x2F;book_9...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stmw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは良い本です。また、この種の本が入手可能になるたびに (100 年前の本であろうと新しい本であろうと)、検討する価値があります。isnight とシンプルさの大幅な改善は、「ベースライン」を超える可能性があります。 &lt;p&gt;たとえば、あなたが尊敬する 1950 年代のエンジニアや科学者は、あなたと同じように微積分や線形代数を学ばなかったと私は仮定します。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://ocw.mit.edu/courses/18-098-street-fighting-mathematics-january-iap-2008/pages/readings/</guid>
-      <pubDate>Thu, 01 Jan 2026 18:20:38 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46456543</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wmf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;2023年に消滅したようです。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://dent.dev/</guid>
+      <pubDate>Fri, 02 Jan 2026 02:45:22 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46460831</comments>
+    </item>
+    <item>
+      <title>AI 先物モデル: 2025 年 12 月の更新</title>
+      <link>https://blog.ai-futures.org/p/ai-futures-model-dec-2025-update</link>
+      <description>&lt;p&gt;なぜタイムラインと離陸モデリングを行うのか。私たちは、このモデルや他のモデルを完全に信頼すべきではないと考えています。それでも、私たちはモデリングの仕事が重要だと考えています。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; AI Futures Model: Dec 2025 Update&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46460496"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.ai-futures.org/p/ai-futures-model-dec-2025-update'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amstam:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“ 私たちはタイムラインと離陸モデルを大幅にアップグレードしました! 私たちの新しい統合モデルは、AI が主要な機能のマイルストーンにいつ到達するかを予測します。たとえば、Automated Coder &amp;#x2F; AC (コーディングの完全自動化) やスーパーインテリジェンス &amp;#x2F; ASI (事実上すべての認知タスクにおいて最高の人間よりもはるかに優れています)。この投稿では、モデルがどのように機能するかを簡単に説明し、タイムラインと離陸予測を示し、以前の (AI) と比較します。 2027) モデル (ネタバレ: AI 将来モデルでは、完全自動化前の AI 研究開発のスピードアップについてあまり強気ではないことが主な原因で、完全なコーディング自動化までのタイムラインは以前のモデルよりも約 3 年長いと予測しています)。」&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.ai-futures.org/p/ai-futures-model-dec-2025-update</guid>
+      <pubDate>Fri, 02 Jan 2026 01:51:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46460496</comments>
+    </item>
+    <item>
+      <title>カリフォルニア州削除リクエストおよびオプトアウト プラットフォーム (DROP)</title>
+      <link>https://privacy.ca.gov/DROP/</link>
+      <description>&lt;p&gt;DROP を使用すると、データをより詳細に制御できるようになります。あなたの情報はリクエストを完了するためにのみ使用されます。データとデータ ブローカーの詳細をご覧ください。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; California Delete Request and Opt-out Platform (DROP)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46460208"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://privacy.ca.gov/DROP/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;関連:&lt;p&gt;&lt;i&gt;削除法&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46449694"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46449694&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://privacy.ca.gov/DROP/</guid>
+      <pubDate>Fri, 02 Jan 2026 01:07:08 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46460208</comments>
+    </item>
+    <item>
+      <title>中国のBYD、テスラを抜いてEV販売トップに浮上</title>
+      <link>https://www.bbc.com/news/articles/cj9rjwpvmpzo</link>
+      <description>&lt;p&gt;木曜日、BYDは、バッテリー駆動車の販売が昨年ほぼ28％増加し、2台以上になったと発表した。ドナルド・トランプ米大統領政権におけるマスク氏の役割に対する反発を受け、テスラの販売は2025年の最初の3カ月間に低迷した。こうした公約と、トランプ大統領の政府効率省（ドージ）の責任者としての姿勢から、一部の投資家はマスク氏がテスラに十分注力していないとの見方を示した。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; China's BYD set to overtake Tesla as top EV seller&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46460867"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.bbc.com/news/articles/cj9rjwpvmpzo'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nutjob2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人々があまり考えていないのは、テスラがどのようにして EV ビジネスで大きく有利なスタートを切ったのかということです。業績は好調で、人々はそれを成功と見なしていましたが、実際にはマスク氏は非常にずさんな経営でそのリードを無駄にしました。&lt;p&gt;テスラは、その優位性を積極的に推し進めていたら、多かれ少なかれ米国の自動車産業を所有できたかもしれません。もしマスク氏がある種の名目上の人物だったときに、SpaceX モデルを使用し、テスラを経営できる有能な人物を任命していたら、テスラはその何倍もの規模になっていたでしょう。&lt;p&gt;その代わりに、私たちは混沌としたテスラの拡張を行ったのです。男&amp;#x27; &lt;p&gt;マスク氏は現在、居留地からほぼ完全に離れて極右政治に乗り出し、トランプ氏はEVへの移行を中止し(マスク氏も同様にしている)、化石燃料を推進しているため、テスラの将来は厳しく、遅かれ早かれ歴史のゴミ箱に捨てられるかもしれない。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.bbc.com/news/articles/cj9rjwpvmpzo</guid>
+      <pubDate>Fri, 02 Jan 2026 02:51:41 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46460867</comments>
     </item>
   </channel>
 </rss>
