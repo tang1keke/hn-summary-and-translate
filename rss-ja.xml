@@ -6,64 +6,87 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 07 Jan 2026 04:05:08 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Jan 2026 06:40:25 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>Microsoft はおそらく私の Snapdragon 開発キットを廃止したでしょう</title>
-      <link>https://jasoneckert.github.io/myblog/how-microsoft-killed-my-snapdragon-devkit/</link>
-      <description>&lt;p&gt;もちろん、先週になって状況は変わりました。システムは 4 回再起動してから、最終的に Windows にロードされました。事後検証 Windows アップデートが失敗するまで、システムは完全に健全で正常に動作していました。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Microsoft probably killed my Snapdragon Dev Kit&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46521860"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://jasoneckert.github.io/myblog/how-microsoft-killed-my-snapdragon-devkit/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>HN を表示: SMTP トンネル – DPI をバイパスする電子メール トラフィックを装った SOCKS5 プロキシ</title>
+      <link>https://github.com/x011/smtp-tunnel-proxy</link>
+      <description>&lt;p&gt;✅ 次が表示されます: SMTP トンネル プロキシ クライアント ユーザー: alice [情報] SMTP トンネルを開始しています。 1:1080 Connecting to myserver. 1:1080 https://ifconfig.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: SMTP Tunnel – A SOCKS5 proxy disguised as email traffic to bypass DPI&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46520926"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/x011/smtp-tunnel-proxy'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tgtweak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;SSD を交換して再試行してください (別のマシンの同じ SSD が同じエラーを引き起こすわけではありません。ちなみに、これは一方的な排除プロセスではありません) - これらの Windows アップデートではディスクへの書き込みが大量に行われ、ちょっとしたミスがあるとインストール全体が台無しになる可能性があります。これはプリブート環境で物事をシャッフルし (ディスク上で移動する)、物事が破損し、同様に新しいインストールができなくなる可能性があります。&lt;p&gt;その ISO には実験的なものがあるため、Ubuntu 25.04 arm64 でライブ ブートしてみることもできます。 snapdragon Elite はサポートされており、ストレージとネットワーク用の組み込みドライバーがいくつかあります。qcom-firmware-extract を使用して Windows ドライバーからファームウェアを抽出できます。(破損している可能性がありますが) Windows パーティションからこれを実行することをお勧めします。&lt;p&gt;それでも失敗する場合は、他の人が指摘しているように、RAM に問題があります。  私もまったく同じ症状（Windows アップデート後のハードウェアの不安定性）を経験したことがありますが、どちらの場合も nvme ssd（サムスンの初期のもの）と RAM が原因でした。&lt;p&gt;Windows アップデートに一部のデバイスに読み込まれたジャンク ファームウェアも付属していなかったというわけではありませんが、それは ssd&amp;#x2F;ram とは程遠い診断でしょう（そして、もしそうであったなら、他の多くの人もアップデート中にまったく同じ現象を経験したでしょう）それ）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;10000truths:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはRAMに欠陥がある可能性があるようです。 Memtest86 は UEFI から直接起動できるため、BDS に表示されるはずです。実行すると、RAM のどの領域が不良であるかがわかります (存在する場合)。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elzbardico:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;どうやら、メモリの問題のようです。このマシンではメモリ ユーザーを交換できますか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blowsand:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;完全に本題から外れましたが、そのサイトのフォントは非常に読みやすく、Kindle の失読症フォントと同様に目や脳に優しいものです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arjie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これらのデバイスは悪夢です。いつかは報われると確信していますが、これは、誰もが Linux 上の Nvidia を罵り、AMD のオープンソースへの取り組みを賞賛していたあの頃のような気がしますが、Nvidia に切り替えるまで、私のコンピューターは関係なく常にロックアップしていました。私の経験と、みんなが私に最善のサポートだと言っていたものの間には、大きな乖離がありました。&lt;p&gt;同様に、クアルコムが Linux に新たな関心を示していることや、X2 Elite がどのように完全にサポートされるかについて、私は常に聞いていますが、彼らがこのようなものであるとは知りませんでした。 10 年ほど前、私たちは開発キットの 1 つを使って学校のプロジェクトに取り組もうとしていましたが、ドキュメントは非常にまばらでした。&lt;p&gt;その後、Snapdragon X Elite がこの Ideacentre のものに含まれていることがわかりました。しかし、オンラインで調べてみると、Mac M2 上の Linux に匹敵する Linux を手に入れた人は誰もいません。それが私にとって目印です。 Mac が、あなたがリリースしたどのチップセットよりも優れた Linux を実行できるとしても、それは購入する価値のあるハードウェアではありません。 Apple でない場合は、Linux をサポートする必要があります。そうしないと、インターネット用語を借りれば、「非常に不真面目」になります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ggm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この件で企業を追い詰める時間もエネルギーも誰もありません。利用規約のどこかに、企業が責任を争うのに費用がかかる、または争えない法的条項を挿入したことはご存知でしょう。&lt;p&gt;とはいえ、そうは言っても、私たちが「まあまあ」と標準化してしまったのは残念です。キットに関しては。開発キットさえも。 MS が開発テストを維持するためのリリース エンジニアリングを管理できない場合、本番環境でもそれができるという考えは役に立ちません。&lt;p&gt;私は 90 年代に IBM PC&amp;#x2F;RT を相続しました。それは、ほとんどの人が考えるサポート期間をはるかに超えていました。 IBM は、それを存続させる方法を検討するのにこれ以上役立つことはありませんでした。これが、私が後に経済的権限を手に入れたとき、入手可能な他のどのハードウェアよりも喜んで thinkpad を購入した理由に影響を与えているのではないかと思います。私は経験から、彼らがメンテナンス保証を支持していることを知っていました。このデバイスは、当時の IBM がサポートする OS ではなく、BSD を実行するように構成されていましたが、違いはありませんでした。それはサポートが終了した製品ラインであり、違いはありませんでした。&lt;p&gt;もちろん、これは Lenovo より前のことです。しかし重要なのは、肯定的なサポート ストーリーを持っている人は、そのベンダーをトップセットに留めておくことです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;petcat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは Windows の問題ではないと思います。&lt;p&gt;ラム スティックを交換します。  古いIntel nucでも同様の不可解な問題が発生しました。  アマゾンから新しいスティックをいくつか入手しましたが、再び問題は発生しませんでした&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;byte_0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それがどの程度役立つかはわかりませんが、同じアーキテクチャを持つ別のマシンに SSD を接続し、そのマシンで Windows インストールを実行し、Windows がインストールされて実行されたらシャットダウンし、SSD を Snapdragon キットに戻して起動してみる可能性はありますか?ただのアイデアですが...&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;schmuckonwheels:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;はい、（おそらく）そうではありませんでした。&lt;p&gt;ほぼ確実にソフト ハードウェアの障害で、おそらく SSD が原因です。&lt;p&gt;私も同様の状況に遭遇したことがありますが、原因が Windows ではなく Linux だったことを除けば。マシンを数か月間クローゼットに放り込んでいたところ、奇跡的に再び動作し始めました。 1日半後にまた壊れるまで。ディスクまたは RAM の破損です。&lt;p&gt;あきらめてください。ハードウェアのせいですが、Microsoft を粉砕する機会を逃すわけにはいきません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;GranPC:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ブート セレクターで予期せぬ動作が発生し、ランダムにフリーズしていたことを考えると、ハードウェア コンポーネント (RAM?) が原因で故障したのではないかと思います。ファームウェアの破損が原因の場合、メニューの表示に常に失敗するか、まったく起動しません。&lt;p&gt;Microsoft のコード品質は現時点では最高レベルではないかもしれませんが、ハードウェア障害である可能性が高いものを Microsoft のせいにするのは、IMO としてはあまり生産的ではありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_ache_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Snapdragon はすでにキャンセルされているので、彼らはこのデバイスを気にしていないだけだと思います。  
-ARM 上の Microsoft です。残念ですが、これに関する完全なサポートや品質アップデートは期待できません。&lt;p&gt;参照:&lt;p&gt;- &lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=XrA2Xe9f7e8" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=XrA2Xe9f7e8&lt;/a&gt;   
-- &lt;a href="https:&amp;#x2F;&amp;#x2F;www.jeffgeerling.com&amp;#x2F;blog&amp;#x2F;2024&amp;#x2F;qualcomm-snapdragon-dev-kit-windows-teardown-2024&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.jeffgeerling.com&amp;#x2F;blog&amp;#x2F;2024&amp;#x2F;qualcomm-snapdragon-d...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;llmslave2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;彼らを「マイクロソフト」と呼ぶのをやめることはできますか?それはもう彼らの名前ではなく、Microslop です。あなたがしているのは、人々を昔の名前で呼んで混乱させているだけです...&lt;p&gt;真面目な話、私はソフトウェアの品質が決してマイクロスロップに強いものではないことを知っていますが、これほど急激で急激な品質の低下をこれまでの人生で見たことが&lt;i&gt;一度もありません&lt;/i&gt;。現在のペースでいくと、企業は、ソフトウェアを実行できる人さえいなくなるため、最終的にはエンタープライズ領域における仮想独占から脱却することになるでしょう。&lt;p&gt;編集: 1 分で -5 です。MS の従業員は ATM をアクティブにしていると思います。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;GaryBluto:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ここであなたが悪いわけではありませんが、特に Microsoft が関与している場合、コンピューターが壊れた直後にシステム アップデートをインストールするのは&lt;i&gt;非常に&lt;/i&gt;躊躇します。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://jasoneckert.github.io/myblog/how-microsoft-killed-my-snapdragon-devkit/</guid>
-      <pubDate>Wed, 07 Jan 2026 02:37:09 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46521860</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Gathering6678:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;大量の SMTP トラフィックを単純にブロックしたり、大幅に制限したりするのは簡単ではないでしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;m132:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;特に目的を考えると、これは興味深いプロトコルの選択です。 SMTP はおそらく住宅用ネットワークで最もフィルタリングされたプロトコルであり、SMB が次点です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thedougd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;かなり多くのもので STARTTLS が使用されます。同じ手法を他のプロトコルにも適用して、敵対的なネットワークと戦う際にユーザーにいくつかの選択肢を提供できるのではないかと思います。&lt;p&gt;賢明です。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/x011/smtp-tunnel-proxy</guid>
+      <pubDate>Wed, 07 Jan 2026 00:30:09 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46520926</comments>
     </item>
     <item>
-      <title>スケーリングの緩やかな終焉について</title>
-      <link>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5877662</link>
-      <guid isPermaLink="true">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5877662</guid>
-      <pubDate>Wed, 07 Jan 2026 03:48:05 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46522308</comments>
+      <title>HN を表示: VaultSandbox – 実際の MailGun/SES/などをテストします。統合</title>
+      <link>https://vaultsandbox.com/</link>
+      <description>&lt;p&gt;モックを使用しない本番環境のような電子メール テスト プロバイダーと構成を保持します。ソリューション Real Domains。あなたのデータは引き続き主権を持ちます。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: VaultSandbox – Test your real MailGun/SES/etc. integration&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46512203"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://vaultsandbox.com/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://vaultsandbox.com/</guid>
+      <pubDate>Tue, 06 Jan 2026 13:50:48 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46512203</comments>
     </item>
     <item>
-      <title>アメリカ文学における最も奇妙なカップル: パート II</title>
-      <link>https://airmail.news/issues/2026-1-3/the-oddest-couple-in-american-literature-part-ii</link>
-      <description>&lt;p&gt;シラーはそこで写真とセールスマンの最初のレッスンを受けました。シラーの初期の自画像。シラーは 1962 年にベティ・デイビスを撮影しました。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Oddest Couple in American Literature: Part II&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46509782"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://airmail.news/issues/2026-1-3/the-oddest-couple-in-american-literature-part-ii'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>H-1Bビザプログラムを廃止する法案が議会に提出される</title>
+      <link>https://www.newsweek.com/eliminate-h1b-visa-program-congress-bill-marjorie-taylor-greene-11312655</link>
+      <description>&lt;p&gt;By Billal Rahman移民記者ShareNewsweekはトラスト・プロジェクトのメンバーである米国を助ける「H-1Bプログラムを廃止する」法案。知っておくべきことH-1Bビザ・プログラムにより、雇用主は、最も一般的にはテクノロジー、エンジニアリング、科学などの特殊なスキルを必要とする仕事について、外国人専門家を後援することができる。国土安全保障省は、H-1Bビザの抽選を再編する新たな規則を最終決定した。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Bill to Eliminate H-1B Visa Program Introduced in Congress&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46523029"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.newsweek.com/eliminate-h1b-visa-program-congress-bill-marjorie-taylor-greene-11312655'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;IlikeKitties:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ドイツ人として：もし彼らがそんなことをしたら、私たちの市場はインド人で溢れかえるでしょう。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nis0s:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;少なくともしばらくの間は、それを一時停止する必要がある。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.newsweek.com/eliminate-h1b-visa-program-congress-bill-marjorie-taylor-greene-11312655</guid>
+      <pubDate>Wed, 07 Jan 2026 05:44:54 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46523029</comments>
+    </item>
+    <item>
+      <title>MCP黙示録の5人の騎士</title>
+      <link>https://foojay.io/today/the-5-knights-of-the-mcp-apocalypse/</link>
+      <description>&lt;p&gt;ここに広告を掲載しますか?ここに広告を掲載しますか?データやキーが未知のサーバーに吸い上げられている場合はどうなるでしょうか。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The 5 Knights of the MCP Apocalypse&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46513860"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://foojay.io/today/the-5-knights-of-the-mcp-apocalypse/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://foojay.io/today/the-5-knights-of-the-mcp-apocalypse/</guid>
+      <pubDate>Tue, 06 Jan 2026 15:52:09 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46513860</comments>
+    </item>
+    <item>
+      <title>RISC-V 向け V8 開発の概要</title>
+      <link>https://riseproject.dev/2025/12/09/a-glimpse-into-v8-development-for-risc-v/</link>
+      <description>&lt;p&gt;定数プールは、命令で直接エンコードできない定数をロードするために使用され、トランポリン プールは、単一の命令でエンコードできないロング ジャンプを処理するために使用されます。 # トランポリンプールを飛び越えます (64 エントリーの場合)。定数プールも同様に機能していました。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A glimpse into V8 development for RISC-V&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46522686"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://riseproject.dev/2025/12/09/a-glimpse-into-v8-development-for-risc-v/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brudgers:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;ePi51" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;ePi51&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://airmail.news/issues/2026-1-3/the-oddest-couple-in-american-literature-part-ii</guid>
-      <pubDate>Tue, 06 Jan 2026 07:58:46 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46509782</comments>
-    </item>
-    <item>
-      <title>スティーブ ジョブズの 1975 年の Atari ホロスコープ プログラムを再作成したので、実行できます</title>
-      <link>https://blog.adafruit.com/2026/01/06/we-recreated-steve-jobss-1975-atari-horoscope-program-and-you-can-run-it/</link>
-      <guid isPermaLink="true">https://blog.adafruit.com/2026/01/06/we-recreated-steve-jobss-1975-atari-horoscope-program-and-you-can-run-it/</guid>
-      <pubDate>Wed, 07 Jan 2026 00:44:43 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46521029</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brucehoult:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Reddit とは異なり、マルチパラを行う方法がわかりませんでしたので引用します。ここでコードを引用符で囲みます。&lt;p&gt;------&lt;p&gt;圧縮ポインタは、ベース レジスタに対する相対的な 32 ビットの符号なしオフセットとしてポインタを格納することにより、メモリの必要性を削減します。ポインタの解凍は、オフセットとレジスタを加算するだけで構成されます。簡単そうに聞こえますが、RISC-V 64 ビット ポートには小さな複雑な機能が付いています。構造上、32 ビット値は常に符号付き値として 64 ビット レジスタにロードされます。これは、最初に 32 ビット オフセットをゼロ拡張する必要があることを意味します。最近まで、これはレジスタと 0xFFFF_FFFF:&lt;p&gt;&lt;pre&gt;&lt;code&gt; li t3,1 のビットアンド演算によって行われていました。
+    slli t3、t3、32
+    追加 t3、t3、-1
+    および a0、a0、t3
+&lt;/code&gt;&lt;/pre&gt;
+ここで、このコードは Zba 拡張機能の `zext.w` 命令を使用します:&lt;p&gt;&lt;pre&gt;&lt;code&gt; zext.w a0, a0
+&lt;/code&gt;&lt;/pre&gt;
+-----&lt;p&gt;これはとても奇妙です。 Google には RISC-V を知っている人はいませんか?これには...&lt;p&gt;&lt;pre&gt;&lt;code&gt; slli a0, a0, 32 以上が必要になったことは*一度もありません*
+    srli a0、a0、32
+&lt;/code&gt;&lt;/pre&gt;
+そして、もし彼らが `Zba` を使用し、それをゼロ拡張してから別のレジスタに追加するつもりなら、なぜ ...&lt;p&gt;&lt;pre&gt;&lt;code&gt; add.uw decompressed, Compressed, Base の代わりに別の `zext.w` 命令と `add` を使用するのでしょうか。
+&lt;/code&gt;&lt;/pre&gt;
+...1 つの命令でゼロ拡張と加算を行うには??&lt;p&gt;結局のところ、`zext.w` は、最後の引数として `zero` レジスタを指定した `add.uw` のエイリアスにすぎません...&lt;p&gt;また、x86&amp;#x2F;Arm 中心の設計を使用する代わりに、常に 32 ビット オフセットを符号付きで保存し、ベース レジスタの 2GB をメモリ領域にポイントすることもできました。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://riseproject.dev/2025/12/09/a-glimpse-into-v8-development-for-risc-v/</guid>
+      <pubDate>Wed, 07 Jan 2026 04:48:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46522686</comments>
     </item>
   </channel>
 </rss>

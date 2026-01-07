@@ -6,62 +6,82 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Wed, 07 Jan 2026 04:05:08 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Jan 2026 06:40:25 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>Microsoft probably killed my Snapdragon Dev Kit</title>
-      <link>https://jasoneckert.github.io/myblog/how-microsoft-killed-my-snapdragon-devkit/</link>
-      <description>&lt;p&gt;Of course, that changed this past week. The system rebooted four times before finally loading into Windows. Postmortem The system was perfectly healthy and working fine right up until that Windows update failed.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46521860"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://jasoneckert.github.io/myblog/how-microsoft-killed-my-snapdragon-devkit/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Show HN: SMTP Tunnel – A SOCKS5 proxy disguised as email traffic to bypass DPI</title>
+      <link>https://github.com/x011/smtp-tunnel-proxy</link>
+      <description>&lt;p&gt;✅ You should see: SMTP Tunnel Proxy Client User: alice [INFO] Starting SMTP Tunnel. 1:1080 Connecting to myserver. 1:1080 https://ifconfig.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46520926"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/x011/smtp-tunnel-proxy'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tgtweak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;change the SSD and retry (the same ssd in another machine may not trigger the same error btw, this is not unilateral process of elimination) - those windows updates do a lot of disk writes and a small miss there can screw up an entire install since it shuffles things around in preboot environment (moving them on disk) and that can corrupt things and prevent a new install in the same way.&lt;p&gt;You can also try to live boot into  Ubuntu 25.04 arm64 since that iso has experimental snapdragon elite support and has some built-in drivers for storage and network - you can extract firmware from the windows drivers with qcom-firmware-extract - they recommend doing this from a windows partition which you should have (albeit possibly corrupted).&lt;p&gt;If that still fails - you have a ram issue as others have pointed out.  I&amp;#x27;ve had the exact same symptoms (hardware instability after windows update) and it was nvme ssd (an early samsung one) and ram, in both instances.&lt;p&gt;Not saying the windows update didn&amp;#x27;t also come with some junk firmware that got loaded into some of your devices, but that would be a distant diagnosis from ssd&amp;#x2F;ram (and many others would have seen the exact same thing during their update if it was that).&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;10000truths:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Sounds like this could potentially be some defective RAM. Memtest86 can boot from UEFI directly, so it should hopefully show up in BDS. A run should tell you what regions of RAM are bad, if any.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elzbardico:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Man, it looks like a memory issue. Is the memory user replaceable on this machine?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blowsand:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Completely off topic: the font on that site is quite readable and easy on the eyes and brain, the way the dyslexia font on the Kindle is.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arjie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;These devices are nightmares. I&amp;#x27;m sure things will pay off at some point but this feels like all those years where everyone was cursing Nvidia on Linux and praising AMD&amp;#x27;s dedication to open source but my computer would constantly lock up regardless until I switched to Nvidia. There was this massive disconnect between my experience and what everyone told me was best supported.&lt;p&gt;Similarly, I&amp;#x27;m constantly hearing about Qualcomm&amp;#x27;s renewed interest in Linux and this and that and how the X2 Elite will be fully supported but I have never known them to be like this. A decade or so ago we were trying to work for a school project on one of their dev kits and the documentation was so sparse.&lt;p&gt;Then I see that the Snapdragon X Elite comes in this Ideacentre stuff but looking online no one has gotten Linux anywhere close to as good as Linux is on a Mac M2. That, for me, is the marker. If a Mac can run Linux better than whatever chipset you&amp;#x27;ve released, it&amp;#x27;s just not hardware worth buying. If you&amp;#x27;re not Apple, you have to support Linux. Otherwise, to borrow Internet lingo, you&amp;#x27;re &amp;quot;deeply unserious&amp;quot;.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ggm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Nobody has the time or energy to chase companies up for this stuff, and you know somewhere in the T&amp;amp;C they inserted a legal clause which is expensive to contest or un-contestable to liability.&lt;p&gt;But, that said, it saddens me we&amp;#x27;ve normalised &amp;quot;oh well&amp;quot; when it comes to kit. even dev kit. If MS can&amp;#x27;t manage release engineering to keep dev&amp;#x2F;test things alive, then it&amp;#x27;s not helpful to the belief they can do it for production things either.&lt;p&gt;I inherited an IBM PC&amp;#x2F;RT back in the 90s. It was well outside what most people would consider its support lifetime. IBM could not have been more helpful working out how to keep it alive. I suspect this influences why when I later had some financial authority I was happier to buy thinkpad, than any other hardware we had available: I knew from experience they stood behind their maintenance guarantees. The device was configured to run BSD, not the IBM supported OS of the day, made no difference. It was end of life product line, made no difference.&lt;p&gt;This was before Lenovo of course. But the point stands: people with positive support stories, keep that vendor in their top-set&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;petcat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I doubt this is a Windows issue.&lt;p&gt;I would replace your ram sticks.  I had a similar mysterious issue on an old Intel nuc.  Got some new sticks off Amazon and never had the problem again&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;byte_0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Not sure how much it could help, but is there a possibility you connect the SSD to another machine with the same architecture, run Windows install in it, then once Windows is installed and running, shut down, move the SSD back to the Snapdragon kit and attempt to boot? Just an idea...&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;schmuckonwheels:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Yeah they (probably) did not.&lt;p&gt;Almost certainly a soft hardware failure, likely the SSD.&lt;p&gt;I&amp;#x27;ve run into a similar situation - except the culprit was Linux not Windows. Tossed the machine in a closet for a few months, when it miraculously started working again. Until it broke again a day and a half later. It&amp;#x27;s disk or RAM corruption.&lt;p&gt;Give it up dude, it&amp;#x27;s the hardware, but let not an opportunity to smash Microsoft go unfulfilled.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;GranPC:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Considering that you were seeing unpredictable behavior in the boot selector, with it randomly freezing, I would assume a hardware component (RAM?) kicked the bucket. If it were firmware corruption, it would consistently fail to present the menu, or wouldn&amp;#x27;t boot at all.&lt;p&gt;Microsoft&amp;#x27;s code quality might not be at its peak right now, but blaming them for what&amp;#x27;s most likely a hardware fault isn&amp;#x27;t very productive IMO.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_ache_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Snapdragon is already canceled so I guess, they just don&amp;#x27;t care about this device.  
-It&amp;#x27;s Microsoft on ARM. Sad to say, but don&amp;#x27;t expect full support or quality update on this.&lt;p&gt;Ref:&lt;p&gt;- &lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=XrA2Xe9f7e8" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=XrA2Xe9f7e8&lt;/a&gt;   
-- &lt;a href="https:&amp;#x2F;&amp;#x2F;www.jeffgeerling.com&amp;#x2F;blog&amp;#x2F;2024&amp;#x2F;qualcomm-snapdragon-dev-kit-windows-teardown-2024&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.jeffgeerling.com&amp;#x2F;blog&amp;#x2F;2024&amp;#x2F;qualcomm-snapdragon-d...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;llmslave2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Can we stop calling them &amp;quot;Microsoft&amp;quot;? That isn&amp;#x27;t their name anymore, it&amp;#x27;s Microslop. All you&amp;#x27;re doing is confusing people by calling them by their old name...&lt;p&gt;Seriously though, I know software quality has never been a strong suit of microslop but I have &lt;i&gt;never&lt;/i&gt; seen such a steep and rapid decline in quality before in my life. At their current pace enterprises will eventually be forced off of their virtual monopoly in the enterprise space because nobody will even be able to run their software anymore.&lt;p&gt;Edit: -5 in one minute, I guess MS employees are active atm.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;GaryBluto:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Not that you are at fault here, but I&amp;#x27;d be &lt;i&gt;very&lt;/i&gt; hesitant to install any system updates so shortly after they brick my computer, especially when Microsoft is involved.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://jasoneckert.github.io/myblog/how-microsoft-killed-my-snapdragon-devkit/</guid>
-      <pubDate>Wed, 07 Jan 2026 02:37:09 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46521860</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Gathering6678:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I suppose it would be trivial to simply block or severely throttle high-volume SMTP traffic?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;m132:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;That&amp;#x27;s an interesting protocol choice, especially given the purpose. SMTP is probably the most filtered protocol on residential networks, SMB being a runner-up.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thedougd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Quite a few things use STARTTLS. I imagine the same technique could be applied to those other protocols, giving users some options as they fight hostile networks.&lt;p&gt;Clever&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/x011/smtp-tunnel-proxy</guid>
+      <pubDate>Wed, 07 Jan 2026 00:30:09 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46520926</comments>
     </item>
     <item>
-      <title>On the slow death of scaling</title>
-      <link>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5877662</link>
-      <guid isPermaLink="true">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5877662</guid>
-      <pubDate>Wed, 07 Jan 2026 03:48:05 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46522308</comments>
+      <title>Show HN: VaultSandbox – Test your real MailGun/SES/etc. integration</title>
+      <link>https://vaultsandbox.com/</link>
+      <description>&lt;p&gt;Production-Like Email Testing Without Mocks Keep your provider and your config. The Solution Real Domains. Your data remains sovereign.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46512203"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://vaultsandbox.com/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://vaultsandbox.com/</guid>
+      <pubDate>Tue, 06 Jan 2026 13:50:48 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46512203</comments>
     </item>
     <item>
-      <title>The Oddest Couple in American Literature: Part II</title>
-      <link>https://airmail.news/issues/2026-1-3/the-oddest-couple-in-american-literature-part-ii</link>
-      <description>&lt;p&gt;It was there that Schiller got his first lessons in photography and salesmanship. An early Schiller self-portrait. Schiller photographed Bette Davis in 1962.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46509782"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://airmail.news/issues/2026-1-3/the-oddest-couple-in-american-literature-part-ii'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Bill to Eliminate H-1B Visa Program Introduced in Congress</title>
+      <link>https://www.newsweek.com/eliminate-h1b-visa-program-congress-bill-marjorie-taylor-greene-11312655</link>
+      <description>&lt;p&gt;By Billal RahmanImmigration ReporterShareNewsweek is a Trust Project memberA bill that would "eliminate the H-1B program," which helps U. What To KnowThe H-1B visa program allows employers to sponsor foreign professionals for jobs that require specialized skills, most commonly in technology, engineering, and science. The Department of Homeland Security has finalized new rules that will reshape the H-1B visa lottery.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46523029"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.newsweek.com/eliminate-h1b-visa-program-congress-bill-marjorie-taylor-greene-11312655'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;IlikeKitties:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;As a German: If they do this our market is going to be flooded with indians.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nis0s:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;There needs to be a moratorium on it, at least for a while.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.newsweek.com/eliminate-h1b-visa-program-congress-bill-marjorie-taylor-greene-11312655</guid>
+      <pubDate>Wed, 07 Jan 2026 05:44:54 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46523029</comments>
+    </item>
+    <item>
+      <title>The 5 Knights of the MCP Apocalypse</title>
+      <link>https://foojay.io/today/the-5-knights-of-the-mcp-apocalypse/</link>
+      <description>&lt;p&gt;Do you want your ad here. Do you want your ad here. What if it's siphoning your data or keys to an unknown server.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46513860"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://foojay.io/today/the-5-knights-of-the-mcp-apocalypse/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://foojay.io/today/the-5-knights-of-the-mcp-apocalypse/</guid>
+      <pubDate>Tue, 06 Jan 2026 15:52:09 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46513860</comments>
+    </item>
+    <item>
+      <title>A glimpse into V8 development for RISC-V</title>
+      <link>https://riseproject.dev/2025/12/09/a-glimpse-into-v8-development-for-risc-v/</link>
+      <description>&lt;p&gt;The constant pool is used to load constants that cannot be encoded directly in the instructions, while the trampoline pool is used to handle long jumps that cannot be encoded in a single instruction. # Jump over the trampoline pool (for 64 entries). The constant pool used to work similarly.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46522686"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://riseproject.dev/2025/12/09/a-glimpse-into-v8-development-for-risc-v/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brudgers:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;ePi51" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;ePi51&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://airmail.news/issues/2026-1-3/the-oddest-couple-in-american-literature-part-ii</guid>
-      <pubDate>Tue, 06 Jan 2026 07:58:46 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46509782</comments>
-    </item>
-    <item>
-      <title>We Recreated Steve Jobs's 1975 Atari Horoscope Program and You Can Run It</title>
-      <link>https://blog.adafruit.com/2026/01/06/we-recreated-steve-jobss-1975-atari-horoscope-program-and-you-can-run-it/</link>
-      <guid isPermaLink="true">https://blog.adafruit.com/2026/01/06/we-recreated-steve-jobss-1975-atari-horoscope-program-and-you-can-run-it/</guid>
-      <pubDate>Wed, 07 Jan 2026 00:44:43 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46521029</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brucehoult:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Quote, because unlike on Reddit I couldn&amp;#x27;t figure out how to do multi para &amp;gt; quotes with code here.&lt;p&gt;------&lt;p&gt;Compressed pointers reduce the need for memory by storing pointers as 32-bit unsigned offsets relative to a base register. Decompressing the pointers just consists of adding the offset and register together. As simple as this sounds, it comes with a small complication on our RISC-V 64-bit port. By construction, 32-bit values are always loaded into the 64-bit registers as signed values. This means that we need to zero-extend the 32-bit offset first. Until recently this was done by bit-anding the register with 0xFFFF_FFFF:&lt;p&gt;&lt;pre&gt;&lt;code&gt;    li   t3,1
+    slli t3, t3, 32
+    addi t3, t3, -1
+    and  a0, a0, t3
+&lt;/code&gt;&lt;/pre&gt;
+Now, this code uses the `zext.w` instruction from the Zba extension:&lt;p&gt;&lt;pre&gt;&lt;code&gt;    zext.w a0, a0
+&lt;/code&gt;&lt;/pre&gt;
+-----&lt;p&gt;This is so strange. Does no one at Google know RISC-V? This has *never* needed more than...&lt;p&gt;&lt;pre&gt;&lt;code&gt;    slli a0, a0, 32
+    srli a0, a0, 32
+&lt;/code&gt;&lt;/pre&gt;
+And if they&amp;#x27;re going to use `Zba`, and zero-extend it and then add it to another register, then why use a separate `zext.w` instruction and `add` instead of ...&lt;p&gt;&lt;pre&gt;&lt;code&gt;    add.uw decompressed, compressed, base
+&lt;/code&gt;&lt;/pre&gt;
+... to zero extend and add in one instruction??&lt;p&gt;After all, `zext.w` is just an alias for `add.uw` with the `zero` register as the last argument...&lt;p&gt;They also could have always simply stored the 32 bit offset as signed and pointed the base register 2GB into the memory area instead of using x86&amp;#x2F;Arm-centric design.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://riseproject.dev/2025/12/09/a-glimpse-into-v8-development-for-risc-v/</guid>
+      <pubDate>Wed, 07 Jan 2026 04:48:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46522686</comments>
     </item>
   </channel>
 </rss>
