@@ -6,288 +6,64 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 07 Jan 2026 02:07:38 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Jan 2026 04:05:08 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>现代汽车在 CES 2026 上推出下一代 Atlas 机器人 [视频]</title>
-      <link>https://www.youtube.com/watch?v=9e0SQn9uUlw</link>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=9e0SQn9uUlw</guid>
-      <pubDate>Tue, 06 Jan 2026 23:40:03 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46520508</comments>
-    </item>
-    <item>
-      <title>30B Qwen 模型走进 Raspberry Pi 并实时运行</title>
-      <link>https://byteshape.com/blogs/Qwen3-30B-A3B-Instruct-2507/</link>
-      <description>&lt;p&gt;Raspberry Pi 5：每秒令牌数与质量（气泡大小 = 模型占用空间） Raspberry Pi 5：每秒令牌数与质量（气泡大小 = 模型占用空间） 值得注意的是，维持 8。在此 Raspberry Pi 实时机制中，Q3_K_S-2。 Intel i7：每秒令牌数与质量（气泡大小 = 模型占用空间） Intel i7：每秒令牌数与质量（气泡大小 = 模型占用空间） 总体而言，ByteShape 模型的性能优于 Unsloth 和 MagicQuant，使用每个参数更少的位数以相当的吞吐量提供更高的质量。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A 30B Qwen model walks into a Raspberry Pi and runs in real time&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46518573"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://byteshape.com/blogs/Qwen3-30B-A3B-Instruct-2507/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>微软可能杀掉了我的 Snapdragon 开发套件</title>
+      <link>https://jasoneckert.github.io/myblog/how-microsoft-killed-my-snapdragon-devkit/</link>
+      <description>&lt;p&gt;当然，上周情况发生了变化。系统重新启动四次才最终加载到 Windows。事后分析 系统一直运行良好，直到 Windows 更新失败。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Microsoft probably killed my Snapdragon Dev Kit&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46521860"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://jasoneckert.github.io/myblog/how-microsoft-killed-my-snapdragon-devkit/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jareds:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有没有方便比较不同模型的好地方？我知道 gpt-oss-20b 和 gpt-oss-120b 有不同数量的参数，但不知道这在实践中意味着什么。我在 AI 方面的所有经验都是来自 Gemini 和 GPT 等大型模型。我对在自己的硬件上运行模型感兴趣，但不知道我可以做到多小，并且仍然获得有用的输出，无论是修复拼写和语法等简单的事情，还是编程等复杂的事情。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lostmsu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;GPT-OSS-20B只有11.2GB。应该适合任何具有下降环境的 16GB 机器，而不会出现任何质量下降。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;geerlingguy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我刚刚尝试在我的 Pi 5 16GB 上复制此内容，运行最新的 llama.cpp...并且出现段错误：&lt;p&gt;&lt;pre&gt;&lt;code&gt; .&amp;#x2F;build&amp;#x2F;bin&amp;#x2F;llama-cli -m “型号”Qwen3-30B-A3B-Instruct-2507-Q3_K_S-2.70bpw.gguf” -e --无 mmap -t 4
-    ...
-    正在加载模型... -ggml_aligned_malloc：内存不足（尝试分配 24576.00 MB）
-    ggml_backend_cpu_buffer_type_alloc_buffer：未能分配大小为 25769803776 的缓冲区
-    alloc_tensor_range：无法分配大小为 25769803776 的 CPU 缓冲区
-    llama_init_from_model：未能初始化上下文：未能为 kv 缓存分配缓冲区
-    分段错误
-&lt;/code&gt;&lt;/pre&gt;
-我不确定他们是如何运行它的......任何类型的复制他们的结果的指南？在发生段错误并退出之前，它确实占用了 10 GB 多一点的 RAM（用 btop 观看）。&lt;p&gt;[编辑：必须添加 -c 4096 来减少上下文大小，现在它加载了]&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmward01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这里有一个巨大的细分市场等待着我们。至少我认为是有的。好吧，至少像我这样的人想要这个。好吧，至少能赚几十块钱。它只是缺少一个关键的转折点。基本上，我想要一个类似 Alexa 的家庭设备，由本地推理和存储支持，并识别出一些标准化组件：&lt;p&gt;- 交互式设备 - 所有 Alexa&amp;#x2F;google&amp;#x2F;apple 设备都有这个接口，而且，可能还有一些保留在本地的电视输入，我可以进行语音控制。那种事。它应该有一个良好的扬声器和语音控制。它可能还应该做其他事情，比如充当 wifi 范围扩展器或路由器。这实际上会很好。我会为每个房间买一个，所以如果它们很近并且可以为我创建真正的网状网络，就不需要疯狂的天线。但我离题了。&lt;p&gt;- 家庭“云”；服务器即存储和控制。这是一个便宜的 CPU、一点内存和可能很大的存储空间。它应该包含“应用程序”；为我的家提供一个可以备份有关我的网络的所有内容（包括网络配置！）&lt;p&gt;- 推理引擎的地方。这就是这种存储库和设备组合的用武之地。我购买了它，它知道如何以标准方式宣传其服务，并且控制节点将其连接到家庭设备。只要将其插入即可使用，那就太好了。&lt;p&gt;当然，所有这些都可以组合起来，但从概念上讲，我希望能够在这些级别上交换、混合和匹配，因此这里的选项和互操作性才是真正重要的。&lt;p&gt;我知道很多（所有）这些部分都存在，但它们不能很好地协同工作。没有一个简单的标准“购买它，将其打开并与您的本地网络配对”；一种即插即用的环境。&lt;p&gt;我的核心要求是真正的隐私，并且它开始接管单任务者并与其他事物一起很好地配合。我购买所有这些当地的东西是有原因的。如果您打电话回家并要求我与您建立一个帐户，我可能不想购买您的产品。我希望能够对他说“Freddy，将定时器设置为 10 分钟”或者“弗雷迪，南达科他州排名第一的旅游景点是什么？” （如果你想知道的话，墙上的药物）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Havoc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该准确度测量有什么不同吗？即相对于通常使用的困惑度术语&lt;p&gt;从 BF16 到 2.8，仅损失约 5% 对我来说听起来很奇怪。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yjftsjthsd-h:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果其他人点击想知道什么才算是“实时”为此：&lt;p&gt;&gt;  在 Pi 5 (16GB) 上，Q3_K_S-2.70bpw [KQ-2] 在 2.70 BPW 下达到 8.03 TPS，并保持 BF16 质量的 94.18%。&lt;p&gt;他们还讨论了其他硬件和细节。但这是标题声明的扩展版本。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://byteshape.com/blogs/Qwen3-30B-A3B-Instruct-2507/</guid>
-      <pubDate>Tue, 06 Jan 2026 20:55:01 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46518573</comments>
+&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tgtweak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;更改 SSD 并重试（顺便说一句，另一台计算机中的相同 SSD 可能不会触发相同的错误，这不是单方面的消除过程） - 这些 Windows 更新会进行大量磁盘写入，并且一个小失误可能会搞砸整个安装，因为它会在预启动环境中打乱内容（将它们移动到磁盘上），并且可能会损坏内容并以相同的方式阻止新安装。&lt;p&gt;您还可以尝试实时启动到 Ubuntu 25.04 arm64，因为该 iso 是实验性的snapdragon Elite 支持，并有一些用于存储和网络的内置驱动程序 - 您可以使用 qcom-firmware-extract 从 Windows 驱动程序中提取固件 - 他们建议从您应该拥有的 Windows 分区中执行此操作（尽管可能已损坏）。&lt;p&gt;如果仍然失败 - 正如其他人指出的那样，您遇到了 ram 问题。  我有完全相同的症状（Windows 更新后硬件不稳定），并且在这两种情况下都是 nvme ssd（早期的三星）和 ram。&lt;p&gt;并不是说 Windows 更新也没有附带一些加载到您的某些设备中的垃圾固件，但这将是与 ssd&amp;#x2F;ram 的遥远诊断（如果是的话，许多其他人在更新期间会看到完全相同的事情）那个）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;10000truths:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;听起来这可能是一些有缺陷的 RAM。 Memtest86 可以直接从 UEFI 启动，因此它应该会出现在 BDS 中。运行应该会告诉您 RAM 的哪些区域是坏的（如果有的话）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elzbardico:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哥们儿，看来是内存问题了。这台机器上的内存用户可以更换吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blowsand:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;完全偏离主题：该网站上的字体非常易读，并且对眼睛和大脑来说很容易，就像 Kindle 上的阅读障碍字体一样。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arjie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些设备简直是噩梦。我确信事情总会在某个时刻得到回报，但这感觉就像这些年来每个人都在 Linux 上咒骂 Nvidia，赞扬 AMD 对开源的奉献精神，但我的电脑总是死机，直到我转向 Nvidia。我的经验与每个人告诉我的最佳支持之间存在巨大的脱节。&lt;p&gt;同样，我不断听说高通对 Linux 重新燃起了兴趣，以及 X2 Elite 将如何得到全面支持，但我从来不知道他们会这样。大约十年前，我们试图在他们的一个开发套件上为一个学校项目工作，但文档非常稀疏。&lt;p&gt;然后我看到 Snapdragon X Elite 出现在这个 Ideacentre 的东西中，但在网上查看，没有人获得像 Mac M2 上的 Linux 那样好的 Linux。对我来说，这就是标记。如果 Mac 能够比您发布的任何芯片组更好地运行 Linux，那么它就不值得购买。如果你不是Apple，你就必须支持Linux。否则，借用互联网术语，你就“​​非常不认真”。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ggm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;没有人有时间或精力去追究公司的这些东西，而且你知道他们在条款和条件中的某个地方插入了一项法律条款，该条款的争议成本很高或无可争议的责任。&lt;p&gt;但是，话虽如此，这让我感到难过，我们已经将“哦，好吧”正常化了当谈到套件时。甚至开发套件。如果 MS 无法管理发布工程来保持开发测试的活力，那么他们也无法相信他们可以在生产环境中做到这一点。&lt;p&gt;我在 90 年代继承了一台 IBM PC&amp;#x2F;RT。这远远超出了大多数人认为的支持寿命。 IBM 在研究如何保持其活力方面提供了莫大的帮助。我怀疑这影响了为什么当我后来有了一些财务权力时，我比我们现有的任何其他硬件更乐意购买 thinkpad：我从经验中知道他们支持他们的维护保证。该设备配置为运行 BSD，而不是当时 IBM 支持的操作系统，这没有什么区别。这是生命周期结束的产品线，没有什么区别。&lt;p&gt;当然这是在联想之前。但要点是：拥有积极支持故事的人，让该供应商保持在他们的顶级位置&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;petcat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我怀疑这是 Windows 问题。&lt;p&gt;我会更换您的内存条。  我在旧的英特尔 nuc 上遇到了类似的神秘问题。  从亚马逊买了一些新棍子，再也没有出现过问题&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;byte_0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不确定它有多大帮助，但是否有可能将 SSD 连接到另一台具有相同架构的计算机，在其中运行 Windows 安装，然后在 Windows 安装并运行后关闭，将 SSD 移回 Snapdragon 套件并尝试启动？只是一个想法...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;schmuckonwheels:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，他们（可能）没有。&lt;p&gt;几乎可以肯定是软硬件故障，可能是 SSD。&lt;p&gt;我遇到过类似的情况 - 只不过罪魁祸首是 Linux 而不是 Windows。将机器扔在壁橱里几个月，然后它奇迹般地再次开始工作。直到一天半后又坏了。这是磁盘或 RAM 损坏。&lt;p&gt;放弃吧伙计，这是硬件，但不要放过粉碎微软的机会。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;GranPC:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;考虑到您在启动选择器中看到了不可预测的行为，并且它随机冻结，我会假设硬件组件（RAM？）已经失效。如果是固件损坏，它将始终无法显示菜单，或者根本无法启动。&lt;p&gt;微软的代码质量目前可能还没有达到顶峰，但在我看来，将最有可能是硬件故障的问题归咎于他们并不是很有成效。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_ache_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Snapdragon 已经被取消了，所以我想，他们只是不关心这个设备。  
+这是 ARM 上的微软。遗憾的是，但不要指望对此提供全面支持或质量更新。&lt;p&gt;参考：&lt;p&gt;- &lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=XrA2Xe9f7e8" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=XrA2Xe9f7e8&lt;/a&gt;   
+- &lt;a href="https:&amp;#x2F;&amp;#x2F;www.jeffgeerling.com&amp;#x2F;博客&amp;#x2F;2024&amp;#x2F;qualcomm-snapdragon-dev-kit-windows-teardown-2024&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.jeffgeerling.com&amp;#x2F;博客&amp;#x2F;2024&amp;#x2F;qualcomm-snapdragon-d...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;llmslave2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们能不再称他们为“微软”吗？那不再是他们的名字了，而是 Microslop。你所做的只是通过称呼人们的旧名字来迷惑他们......&lt;p&gt;说真的，我知道软件质量从来都不是微斜坡的强项，但我以前&lt;i&gt;从未&lt;/i&gt;见过质量如此急剧和迅速的下降。按照目前的速度，企业最终将被迫摆脱在企业领域的虚拟垄断，因为没有人能够再运行他们的软件。&lt;p&gt;编辑：一分钟内为-5，我猜 MS 员工都在活跃。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;GaryBluto:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这并不是说你有错，但在系统更新损坏我的计算机后不久，我会&lt;i&gt;非常&lt;/i&gt;犹豫是否要安装任何系统更新，尤其是当涉及到微软时。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://jasoneckert.github.io/myblog/how-microsoft-killed-my-snapdragon-devkit/</guid>
+      <pubDate>Wed, 07 Jan 2026 02:37:09 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46521860</comments>
     </item>
     <item>
-      <title>数据中心的繁荣集中在美国</title>
-      <link>https://spectrum.ieee.org/data-center-growth</link>
-      <description>&lt;p&gt;AIMagazineEnergyArticleJanuary 2026 数据中心繁荣集中在美国。但中国的增长仍然是个谜Perri Thaler05 Jan 20261 分钟阅读Perri Thaler 是 IEEE Spectrum 的实习生，目前正在纽约大学完成科学新闻学研究生学位。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The data center boom is concentrated in the U.S.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46521238"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://spectrum.ieee.org/data-center-growth'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;biophysboy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最近从摩根大通的“关注市场”中了解到一些有趣的事实（我强烈推荐）&lt;p&gt;- 2025 年的技术资本支出大约相当于 1944 年的曼哈顿项目、1949 年的电力扩建、1964 年的阿波罗项目、1966 年的州际高速公路项目的总和。&lt;p&gt;- OpenAI 承诺向 Oracle 支付 60B 美元，但它还没有赚到；作为回报，甲骨文承诺为他们提供尚未构建的云设施。这些将需要相当于两个胡佛水坝的电力。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Ologn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;股市过去 365 天：&lt;p&gt;标准普尔 500 - 上涨 16%&lt;p&gt;Nvidia - 上涨 25%&lt;p&gt;ICLN（全球清洁能源 ETF） - 上涨 46%&lt;p&gt;美光 - 上涨 246%&lt;p&gt;希捷 - 上涨 270%&lt;p&gt;西部数据 - 上涨 342%&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andsoitis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;数据中心建设在沙特阿拉伯也很热门：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.economist.com&amp;#x2F;science-and-technology&amp;#x2F;2025&amp;#x2F;12&amp;#x2F;17&amp;#x2F;saudi-arabia-wants-to-host-the-worlds-cheapest-data-centres" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.economist.com&amp;#x2F;科学与技术&amp;#x2F;2025&amp;#x2F;12&amp;#x2F;17&amp;#x2F;...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;webwielder2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只要美国的建设没有给人们的生活带来切实的改善，它仍然可以快速建设。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;idiotsecant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;向下滚动一点，美国在“计划”方面领先世界。数据中心和实际在建数据中心的滞后。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OGEnthusiast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谁投票支持这个？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://spectrum.ieee.org/data-center-growth</guid>
-      <pubDate>Wed, 07 Jan 2026 01:11:12 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46521238</comments>
+      <title>论规模化的缓慢消亡</title>
+      <link>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5877662</link>
+      <guid isPermaLink="true">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5877662</guid>
+      <pubDate>Wed, 07 Jan 2026 03:48:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46522308</comments>
     </item>
     <item>
-      <title>电子鼻用于室内霉菌检测和识别</title>
-      <link>https://advanced.onlinelibrary.wiley.com/doi/10.1002/adsr.202500124</link>
-      <guid isPermaLink="true">https://advanced.onlinelibrary.wiley.com/doi/10.1002/adsr.202500124</guid>
-      <pubDate>Wed, 07 Jan 2026 00:31:01 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46520935</comments>
-    </item>
-    <item>
-      <title>Opus 4.5 并不是我迄今为止所拥有的正常 AI 代理体验</title>
-      <link>https://burkeholland.github.io/posts/opus-4-5-change-everything/</link>
-      <description>&lt;p&gt;我相信这是 Claude Opus 4 的原因。 项目 1 - Windows 图像转换实用程序 我首先注意到 Opus 4。这是一个小型 Windows 实用程序，基本上只做一件事。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Opus 4.5 is not the normal AI agent experience that I have had thus far&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46515696"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://burkeholland.github.io/posts/opus-4-5-change-everything/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 29 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adithyassekhar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢写代码&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_pdp_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的&lt;p&gt;事情正在发生变化。现在每个人都可以构建定制应用程序。这些应用程序是否突破了技术的极限？不！但它们适用于它们设计的非常狭窄和特定的领域。是的，它们无法扩展，并且与您的个人 shell 脚本一样存在那么多错误。但它们确实有效。&lt;p&gt;但我们不要将它们与更先进的东西进行比较 - 至少现在还不行。也许到今年年底？&lt;p&gt;我们最近从 Sonnet 4.5 切换到 Opus 4.5 作为我们的默认编码代理，我们支付了切换的价格（成本的 3 倍），但正如 OP 所说，坦率地说，这是相当惊人的。它做得非常好，尤其是当您的代码和项目的结构能够帮助代理良好执行时。 Anthropic 最近发布了有关该主题的完整视频，这也与我自己的观察结果一致。&lt;p&gt;它的失败之处在于代码中更微妙的区域，例如良好的设计、最佳实践、良好的品味、干燥等。我们经常需要提示它重构事物，因为从长远来看，它决定执行的快速解决方案并不符合我们的最佳利益。它常常以对微​​不足道的事情进行深入调查而告终。以纯粹的形式使用 unix 工具是过度的，因为它无法记住（即使有提示）它应该运行 `pnpm test:unit` 而不是 `npx jest` - 它每次都会出错。&lt;p&gt;但是当它工作时 - 那就太棒了。&lt;p&gt;我认为我们正处于自我改进软件的阶段，我并不是轻率地说这一点。&lt;p&gt;事实证明，unix 哲学根深蒂固。我们现在正在研究为我们的代理提供更多外壳的方法，坦率地说，我们正在进行一些迭代。我不确定此后会发生什么，但我认为无论是什么，都会很有趣。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bennydog224:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;完全不想抹黑 Opus，它很容易完成定向任务，但它还不是灵丹妙药。&lt;p&gt;它是同类产品中最好的，但在涉及动态变量的复杂工程任务中经常出错。思考：浏览器页面加载，为一个会“忘记”页面加载的系统而设计。考虑到竞争条件等。&lt;p&gt;不过，这让我对 Anthropic 的下一代用于繁重任务的模型感到非常兴奋。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;multisport:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;像这样的帖子让我困扰的是：中级工程师的任务不是原子的、新建的项目。如果工程师一整天所做的就是从头开始构建应用程序，而不期望其他人会出现并扩展、构建或依赖它们，那么 Opus 4.5 肯定可以取代它们。工程的难点不是“构建一个可以工作的东西”，而是以正确的方式构建它，以一种易于理解的方式，以一种易于扩展的方式。&lt;p&gt;毫无疑问，我可以给 Opus 4.5“构建一个 XYZ 应用程序”。它会做得很好。但日复一日，当我问它“为我构建这个功能”时，它就会回答。它使用奇怪的抽象，并且通常需要我多次尝试才能以我认为“正确”的方式做到这一点。任何非技术人员可能会读到此内容并说“如果它有效，它就有效”。但任何理性的工程师都会知道这还不够。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;artdigital:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当 SOTA 是 Sonnet 4.5 时，我将订阅从 Claude 切换到 ChatGPT 5.0 左右，发现 GPT-5-high（现在是 5.2-high）非常好，我无法想象 Opus 能达到它的水平。我给gpt-5.2-high一个规格，它工作了20分钟，结果几乎完美并经过测试。我很少需要进行更改。&lt;p&gt;它从不重复代码，再次实现某些内容并留下旧代码，打破我的惯例，产生幻觉，或者在代码甚至无法编译时告诉我它已经完成，十四行诗 4.5 和 Opus 4.1 一直这样做&lt;p&gt;我想知道 Opus 4.5 是否改变了这一点，因为现在很多人都对它赞不绝口。您的体验如何？&lt;p&gt;Claude - 快速，切中要害，但可能只有 85% - 90%，需要在其工作时进行更仔细的观察&lt;p&gt;GPT-x-high（或 xhigh）- 您告诉它要做什么，它会缓慢但精确地工作，解决方案正是您想要的。 98% 都在，不需要监督&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hsn915:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对 ChatGPT 5.2 的标题也表达了类似的感觉&lt;p&gt;我还没有尝试过用它来编码。我只是在谈论常规聊天。&lt;p&gt;它正在做一些与以前的模型不同的事情。即使对于很长的聊天，它似乎也能保持结构的连贯性。&lt;p&gt;之前的模型感觉像是系统 1 思维，而 ChatGPT5.2 看起来像是展示了系统 2 思维。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;avidphantasm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;凉爽的。请在他们将价格提高 50 倍之后再与我们联系，并且您无法再构建任何东西，因为您与自己的工具疏远了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mattfrommars:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我已经说过无数次了，LLM 非常适合构建玩具和实验项目。&lt;p&gt;我不是羞耻，但我个人需要知道我的观点是否正确，或者我只是不知道如何使用 LLM&lt;p&gt;Vibe 编码专家可以从头开始创建与 Linux 竞争的操作系统，并使其生成基本上不是 Linux 的代码，因为 LLM 接受了所述源代码的培训......&lt;p&gt;此外，所有这些都在 20 美元计划中。免费和自托管解决方案将是最好的&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;losvedir:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我有点惊讶有这么多人愿意部署未经审核的代码。&lt;p&gt;我在休息期间阅读了&lt;i&gt;如果有人构建它，每个人都会死&lt;/i&gt;。基本前提是我们不能“对齐”。人工智能，因此当我们在代理循环中释放它时，它产生的结果不一定是我们想要的。它可能在表面上是为了安抚我们并通过粗略的检查，但它可以根据其他目标嵌入其他东西。&lt;p&gt;总的来说，我发现它有点愚蠢和难以置信，但现在我看到更多的人（这篇文章，前面页面上的煤气镇的事情）全力以赴地进行氛围编码，所以我重新猜测了部分回应。可能会有大量正在运行的软件由代理创建，而从未经过人类检查。&lt;p&gt;我认为在不久的将来（明年或两年）更可能的故障模式更像是“蠕虫”。有人用明确的指令构建了一个代理来尝试复制自身。 Opus 4.5 和 GPT 5.2 足够好，在代理循环中，他们可以相当彻底地调查他们登陆的任何系统，并尝试使用几种方法来传播他们的代理包装器。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;YesBox:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我注意到在过去 1-2 个月讨论 LLM 时，对 HN 的负面评论大幅下降。&lt;p&gt;到目前为止，我看到的分享的所有 LLM 编码项目[1] 都是科技玩具。我看到我的推特上突然出现一些东西（通常与游戏相关），然后在达到黄金版本之前悄悄停止播放（我手动更新我发现的内容，所以这不是算法）。&lt;p&gt;我发现这一切非常有趣：LLM 不会改变构建成功产品所需的基本驱动力。我觉得我正在观察软件开发的 TikTok 化。我不知道为什么人们没有完成。也许当“真正的工作”开始时他们就会停下来。或许他们已经达到了法学硕士（到目前为止）所能做到的极限。也许他们会跳到下一个想法，继续追赶潮流。&lt;p&gt;获取上下文需要真正的工作，而且我看不出有什么办法可以将其自动化。需要明确的是，背景是人类的需求；即某人会使用您的产品的原因。在游戏开发领域，要为玩家创造流畅、愉快的体验需要做多少工作，怎么夸大都不过分。&lt;p&gt;虽然任何人都可以在周末创建一套应用程序，但我认为很少有人有耐心和时间来维护它们（就像 LLM 之前的软件开发！即 Linux、开源软件等）。&lt;p&gt;[1] 是的，选择偏见。有很多人工智能开发人员只是在推销他们的法学硕士。而且现在确定还为时过早。对我所说的一切持保留态度。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;smusamashah:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;十四行诗 4.5 怎么样？我在 Claude.ai 上使用了 Opus 和 Sonnet，发现 sonnet 在遵循指令和准确执行要求方面要好得多。&lt;p&gt;（它是用于单个 html&amp;#x2F;js PWA 来测量和跟踪心率）&lt;p&gt;Opus 似乎不那么深入，它是它自己的事情，即使我写了全部大写，也不会完全遵循说明。有了 Sonnet 4.5，我就能理解作者所说的一切。也许 Opus 针对 Claude 代码进行了优化，而 Sonnet 在 Web 上效果最好。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dzonga:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些帖子让我印象深刻的是他们赞扬了应用程序模型 | GitHub 上常见的实用程序。&lt;p&gt;即基于训练数据的众所周知的路径。&lt;p&gt;从未发布过的是有人构建了解决现实世界中实际问题的东西 - 处理混乱的数据 |接口。&lt;p&gt;我喜欢人工智能来完成我不喜欢做的常见日常任务，比如应用顺风风格，但作为租用者和假装生产力，这不是它&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rcarmo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在假期期间对 GPT 5.x 有过类似的经历，跨越了一些不同的领域：&lt;a href="https:&amp;#x2F;&amp;#x2F;taoofmac.com&amp;#x2F;space&amp;#x2F;notes&amp;#x2F;2025&amp;#x2F;12&amp;#x2F;31&amp;#x2F;1830" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;taoofmac.com&amp;#x2F;space&amp;#x2F;notes&amp;#x2F;2025&amp;#x2F;12&amp;#x2F;31&amp;#x2F;1830&lt;/a&gt;&lt;p&gt;我编写了一个 Swift 工具来替换我拥有的 Python 自动化，将 ARM JIT 引擎合并到 68k 模拟器中，甚至在我多年来一直想做的合成项目上有了一个非常好的开始。&lt;p&gt;对我来说非常明显的是，即使是 gpt-5-mini 也可以创建像样的 Go CLI 应用程序，只要你写下一个连贯的规范并像同行的拉取请求一样审查代码（VS Code 库提示和工具通过相当不错的工作流程引导甚至愚蠢的模型）。&lt;p&gt;对我来说，GPT 5.2 和 Codex 变体与 Opus 一样好但没有卑躬屈膝和表情符号 - 我可以要求它构建一个完整的 CI 工作流程，如果我给它我想要的步骤，它几乎一次性完成。&lt;p&gt;所以对我来说，至少这个模型生成是一个巨大的力量倍增器（但我一直是那种在编码之前进行计划并在开始之前推理出大部分细节的类型，所以这可能是一个方法问题）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;haolez:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我有一个不同的担忧：SOTA 产品价格昂贵，而且在繁忙时间会变得愚蠢。我个人的策略是成为一个后来者，当竞争对手赶上之前的 SOTA 时，我会采用新的 AI 工具，现在有很多工具具有成本效益且同样出色。&lt;p&gt;等不及竞争对手赶上 Claude Code 时，尤其是开源的&amp;#x2F;权重中文替代品:)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;headcanon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，昨晚我和妻子互相挑战打字比赛后，我确实用 Opus 4.5 构建了这个。我给了它方向和反馈，但它编写了所有实际的代码。不是一击（也许是 3-4 击），但实际上并不需要那么努力地思考。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;chronick.github.io&amp;#x2F;typing-arena&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;chronick.github.io&amp;#x2F;typing-arena&amp;#x2F;&lt;/a&gt;&lt;p&gt;在另一个更实质性的个人项目（Eurorack 模块固件，几乎准备发布）中，我设置了 Claude Code 充当设计助理，在那里我会向其提供有关当前实现的反馈，并且它将经历几轮设计&amp;#x2F;审查&amp;#x2F;设计&amp;#x2F;审查，直到我把它磨练下来。它有几个我不会想到的好主意（或者至少会花费我更长的时间）。&lt;p&gt;在这个项目完成后，我真的很高兴能做一些其他项目。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;soulofmischief:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Opus 4.5 目前正在帮助我编写一种新颖、全面且高性能的编程语言，其中包含我曾经想要的所有功能，并且完全按照我固执己见的方式完成。&lt;p&gt;这个项目需要我多年的专业化和研究才能做好。 Opus 的优势在于既能够广泛发言，又能够深入研究底层实现。&lt;p&gt;我可以表达意图，并围绕各种可能的设计和实现来回讨论以实现我的目标，然后我可以在 Opus 在后台工作时为其他任务做准备。我要求 Opus 在任何需要做出决定的时候循环我，并要求它向我清楚地解释事情。&lt;p&gt;与失去技能相反，我觉得我很快就获得了很多有关底层系统编程的知识。感觉就像使用代理模型的结对编程终于变得可行了。&lt;p&gt;但我要明确的是，需要经验丰富、细心的高级开发人员+产品设计师的稳定之手来理解如何维护系统的约束，从而使代码库以可长期维护的方式增长。这一点尤其重要，因为代码库越大，代理模型就越难对大规模更改或新功能如何正确集成到系统进行整体推理。&lt;p&gt;如果任由其自行其是，Opus 4.5 将删除内容、更改规范、逃避责任以代替黑客创可贴等。您需要充分了解堆栈，以便可以协助调试和推理代码质量和组织。它不是万能药。但这是开创性的。这将是我一生中最有成效的一年。&lt;p&gt;但另一方面，一旦大规模、有利可图的基础设施变得易于复制，情况就会发生极其迅速的变化，并且发起有针对性的网络钓鱼活动只需五秒钟，在公园里散步就可以了。如果进展不碰壁，我们的劳动力可能会在未来几年开始永久萎缩。&lt;p&gt;除其他事项外，我确实预测我们将看到 smol 网络社区的复兴，因为独立网络开发再次变得更加容易访问，更接近我在 2000 年代初第一次进入它时的情况。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Opus 4.5 确实是另一回事。最近，我一直在向它抛出极其困难的问题，这给我带来了很多乐趣，它一直让我感到惊讶。&lt;p&gt;用 Python 编写的 JavaScript 解释器？ Python 中的 WebAssembly 运行时怎么样？将 BurntSushi 的极其出色的 Rust 优化字符串搜索例程移植到 C 并&lt;i&gt;使其更快&lt;/i&gt;怎么样？&lt;p&gt;这些大多只是随意的实验，通常是从我的手机上运行的！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;poisonborz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我到处都看到这些帖子，但没有人提到雇佣开发人员的实际目的，即责任。您已经可以使用任何工具来辅助编码，甚至可以从 StackOverflow 复制粘贴或从 Github 获取整个样板项目。没有人工智能会对代码负责或解决由此产生的紧迫问题。 “责任承担者”的数量也随着代码库的大小线性增加项目数量。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mcv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Opus 4.5 上个月用完了我的 Copilot 配额，这个月已经用完了一半。我经常使用它来处理非常复杂的代码。&lt;p&gt;我的结论是：它仍然不如优秀的人类程序员聪明。它经常陷入困境，走上错误的道路，忽略我告诉它做错事，甚至重复我之前必须纠正的错误。&lt;p&gt;但在其他方面，它却是令人难以置信的好。我可以给它一个充满代码的目录来分析，它可以告诉我这是Kozo Sugiyama的dagre图布局算法的实现，并立即识别出有错误的文件。这令人难以置信地令人印象深刻。不幸的是它无法修复该错误。这个错误是它在之前的会话中犯的众多错误之一。&lt;p&gt;所以我的结论是，它非常适合代码分析，并且非常适合将一些关于复杂主题的书本知识注入到您的编程中，但它本身无法解决这些复杂的问题。&lt;p&gt;昨天和今天，由于依赖项升级，我正在升级一堆单元测试，虽然它偶尔很有帮助，但它也经常陷入困境。我在同一时间内完成了比平时更多的工作，但我确实想知道这是否不算太多。难道没有更简单的方法吗？我没有寻找它，因为Opus的解决方案的每一步都显得显而易见且简单，我不知道它让我陷入了多么深的坑。我应该对它所指向的方向更加批评。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Workaccount2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人类退出了一般的“AGI”。竞赛，似乎纯粹专注于编码，也许是为了争夺第一个“自动机器学习程序员”。不管怎样，专注于编码似乎是有好处的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mpalmer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;读完那篇文章后，我至少看到 Opus 4.5 显然不会改变的一件事。&lt;p&gt;关于什么是“应用程序”，没有固定的事实。是、确实或看起来像。更不用说它运行的设备或它使用的技术了。&lt;p&gt;但对于法学硕士来说，只有固定的事实（根据我的经验，应用程序只有三到四个可能的设计系列）。&lt;p&gt;Opus 4.5 更频繁地生成正确的代码，但当键盘上的人试图避免做出任何工程决策时，代码将继续乏味。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OldGreenYodaGPT:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;大多数软件工程师现在都在认真考虑 LLM 代理的性能如何，尤其是像 Claude Code 这样的代理。&lt;p&gt;一旦设置了 Claude Code，您就可以将其指向您的代码库，让它学习您的约定，引入最佳实践，并完善一切，直到它基本上像超级强大的队友一样运行。真正的解锁是构建一套可靠的可重用“技能”，再加上一些代理来完成您一直在做的事情。&lt;p&gt;例如，我们有一个自定义 UI 库，Claude Code 拥有一项可以准确解释如何使用它的技能。我们如何编写 Storybook、如何构建 API，以及基本上我们希望如何在存储库中完成所有操作，都是如此。因此，当它生成代码时，它已经符合我们开箱即用的模式和标准。&lt;p&gt;我们还让 Claude Code 创建了一系列 ESLint 自动化，包括自定义 ESLint 规则和 lint 检查，这些检查甚至可以在进行审查之前捕获并自动处理很多内容。&lt;p&gt;然后我们更进一步：我们有一个深度代码审查代理 Claude Code 在进行更改后运行。当 PR 上升时，我们有另一个 Claude Code 代理，按照我们为其编写的详细降价清单进行完整的 PR 审查。&lt;p&gt;除此之外，我们还有其他五个 Claude Code GitHub 工作流代理按计划运行。其中之一读取上个月的所有提交并确保文档仍然一致。另一个检查端到端覆盖范围内的差距。诸如此类的事情。大量的维护和质量工作只是......自动化。它运行得非常顺利。&lt;p&gt;我们甚至使用 Claude Code 进行票务分类。它会读取票证，深入研究代码库，并留下它认为应该做的事情的评论。因此，当工程师拿起它时，他们基本上已经开始了一半。&lt;p&gt;这里有太多唾手可得的成果，老实说，这让我大吃一惊，人们并不热衷于它。 2026 年将是一个警钟。&lt;p&gt;（使用语音转文字，然后克劳德重写，抱歉，我很懒，不会为你们手写所有内容！）&lt;p&gt;编辑：为你们制作了一个示例存储库&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ChrisWiles&amp;#x2F;claude-code-showcase" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ChrisWiles&amp;#x2F;claude-code-showcase&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;honeycrispy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;几周前，我让 Opus 4.5 检查了我的项目并改进了它能找到的任何东西。它“起作用了”但它做出的架构决策令人困惑，并且存在很多很多错误。我不得不重写一半的代码。我不是一个讨厌人工智能的人，我喜欢用人工智能来进行测试、寻找错误和做一些小事。 Opus 非常适合特定的、有针对性的任务。但不要要求它做任何通用架构，因为你很快就会后悔的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kachapopopow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这也是我的感觉，opus 无论如何都不是一个突破性的模型。&lt;p&gt;但是，当你给 Opus 4.5 所需的一切、一个方向、你拥有的与你想要的，它就会让它发挥作用，真的，它会发挥作用，这是令人难以置信的。代码可能很丑陋、不受欢迎，只适用于一种情况，但通过进一步的提示，您可以改进它并生成一些您可以自豪的东西。&lt;p&gt;Opus 的好坏取决于用户和用户提供给它的工具。嗯，这听起来有点像……人类……&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Herring:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我和 Opus 有很多共同点。我们都在周一上午 10 点达到了每周限额。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;s-macke:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Opus 4.5 已经变得真正有能力了。&lt;p&gt;不是在知识方面。这已经是惊人的了。但它独立行动的能力：做出决策、与我合作解决问题、提出后续问题、编写计划并实际执行它们。&lt;p&gt;你必须在几天或几周的时间内亲自体验自己的实际问题。&lt;p&gt;我能够在上下文窗口的限制内足够清晰地定义的每个编码问题，聊天机器人都可以解决，但这些并不容易。这不仅仅是编写和测试代码。它还涉及逆向工程和破解编码相关问题。最令人印象深刻的部分是它如何在紧密的反馈循环中积极地解决问题。&lt;p&gt;从传统意义上来说，最近几周我根本没有真正私下编码过。相反，我一直在指导和指挥，让它编写规范，然后完善和改进它们。&lt;p&gt;很好奇这将如何在复杂的大型生产环境中执行。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisbyMe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嗯，这也是我的经验，但我并不特别担心整个软件工程。&lt;p&gt;如果这个例子表明这些 cli 工具为常规开发人员提供了更高的杠杆作用。&lt;p&gt;有很多软件劳动力，去成本最低的国家，在那里雇用一些平庸的人，然后雇用一些美国人来管理他们。&lt;p&gt;这是这件事的最大目标，因为现在那个美国人可以在质量和输出方面获得相同或较高的代码，而无需协调成本。&lt;p&gt;但是除非我们达到了可以执行我所说的“超代码”的程度。我认为我们不会看到 SWE 作为一个整体类别消亡。&lt;p&gt;就像我们不懂组装，但在出现问题时仍然需要技术技能一样，低级技术技能总是有价值的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LatencyKills:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我真的很想知道软件向前发展意味着什么。在过去的几个月中，我使用 Claude Code 构建了 Superwhisper（语音转文本）、CleanShot X（屏幕截图和图像标记）和 TextSniper（图像转文本）的个性化版本。唯一的成本是一些时间和我每月 20 美元的订阅费。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tannedNerd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;问题在于这一切都不是生产质量。  您还没有针对用户错误、安全审核甚至只是可维护性进行边缘案例测试。&lt;p&gt;是的，opus 4.5 看起来很棒，但大多数时候它试图使解决方案变得过于复杂。与人类通过考虑保持代码正常运行的限制而创建的更简单的解决方案相比，它的维护和调试难度将增加 10 倍。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://burkeholland.github.io/posts/opus-4-5-change-everything/</guid>
-      <pubDate>Tue, 06 Jan 2026 17:45:37 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46515696</comments>
-    </item>
-    <item>
-      <title>PassSeeds – 劫持密钥以解锁新的加密用例</title>
-      <link>https://backalleycoder.com/posts/passseeds-an-experiment-in-hijacking-passkeys-to-unlock-cryptographic-use-cases/</link>
-      <description>&lt;p&gt;PassSeeds 简介 密码提供了加密密钥的生物识别门禁使用，但它们是专门为集中式网站登录流程中的身份验证签名而创建的。同时，需要万能钥匙不支持的加密材料和曲线的 Web 应用程序（比特币的 secp256k1、ZKP 的 BLS12-381 等）。初始生成调用导航器。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; PassSeeds – hijacking Passkeys to unlock new cryptographic use cases&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46521084"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://backalleycoder.com/posts/passseeds-an-experiment-in-hijacking-passkeys-to-unlock-cryptographic-use-cases/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blibble:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当令牌的全部目的是保护私钥并使公钥可访问时，构建一个依赖令牌本质上是存储公钥的安全方式的系统似乎是愚蠢的&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;notorious_pgb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣，但是 PRF &amp;#x2F; LargeBlob 扩展已经启用了这样的功能（以及更多功能），而不依赖于公钥的保密性。&lt;p&gt;为什么不直接使用这些功能？&lt;p&gt;编辑：这就是我读得不够深入的原因 - 这篇文章解决了这个问题，尽管我会质疑扩展在主要浏览器中不可用的自信断言，因为我几年前在一家初创公司工作，该公司在这些扩展之上构建了主要功能，这些扩展（至少）在所有浏览器中都可用相关移动浏览器。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;josephcsible:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这比将值存储在密码管理器或 YubiKey 的“静态密码”中更好吗？模式？&lt;p&gt;此外，“ECDSA 公钥恢复”模式也可以。这张图让我怀疑这是AI的垃圾。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nixosbestos:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Peanut.me 使用非托管加密钱包的密钥。相当光滑！我没有报酬，但我每天在（南美城）的售货亭和当地咖啡馆多次使用它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;csuwldcat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;万能钥匙可以被劫持作为加密种子材料，在用户的所有设备上安全同步，从而能够生成各种加密密钥。这使得万能钥匙能够为用例提供远远超出其传统限制的功能。我一直将这种机制称为 PassSeeds。&lt;p&gt;我会将详细信息留给博客文章，但这里有一个 PassSeeds 功能的简短列表：&lt;p&gt;- 需要用户托管的 BLS12-381 密钥才能参与更高级的 ZKP 可验证凭证 &amp;#x2F;打样流程？少说，您已被覆盖。&lt;p&gt;- 想要为依赖 secp256k1 密钥的比特币交易创建一个小额现金网络钱包吗？询问，你们就会收到。&lt;p&gt;- P-256 以外类型的去中心化社交媒体标识符和后签名密钥怎么样？没问题，我找到你了！&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://backalleycoder.com/posts/passseeds-an-experiment-in-hijacking-passkeys-to-unlock-cryptographic-use-cases/</guid>
-      <pubDate>Wed, 07 Jan 2026 00:50:58 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46521084</comments>
-    </item>
-    <item>
-      <title>CES 2026：揭开 AMD Venice 和 MI400 SoC 的神秘面纱</title>
-      <link>https://chipsandcheese.com/p/ces-2026-taking-the-lids-off-amds</link>
-      <description>&lt;p&gt;另一个变化是，Venice 似乎有两个 IO 芯片，而不是之前的 EPYC CPU 的单个 IO 芯片。计算基础芯片和 IO 芯片的芯片尺寸，两个基础芯片的基础芯片尺寸约为 747mm2，而封装外 IO 芯片的尺寸约为 220mm2。至于计算芯片，虽然封装排除了不同计算芯片的任何视觉划分，但很可能有 8 个计算芯片，每个基础芯片上有 4 个计算芯片。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; CES 2026: Taking the Lids Off AMD's Venice and MI400 SoCs&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46519326"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://chipsandcheese.com/p/ces-2026-taking-the-lids-off-amds'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andrekandre:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;随机的互联网反馈：&lt;p&gt;我真的希望这篇文章能够 
-花了 2 秒在括号中写下“ccd”的内容。是（其“核心复杂模具”仅供参考）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;unethical_ban:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AMD 威尼斯？ 2005年在召唤！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andrepd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我只是想花点时间欣赏一下薯片和奶酪，以及它们如何填补我心中 Anandtech 形状的空虚&lt;3&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rballpug:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;x86_64 服务器架构，芯片上有 256 个核心。&lt;p&gt;Blackwell 100+200 压缩自旋锁文档。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ironbound:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;新的双宽架看起来不错&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cogman10:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这种封装是如何冷却的？  看来您非常需要进行某种水冷却，对吧？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;erulabs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;这将是高核心数 CCD 第一次能够支持 V-Cache 芯片。如果 AMD 坚持基础芯片缓存与 V 缓存芯片缓存的比例相同，那么每个 32 核 CCD 将拥有高达 384MB 的 L3 缓存，相当于整个芯片上 3GB 的 L3 缓存。&lt;p&gt;天哪！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrlonglong:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一个芯片上有 256 个核心。令人惊叹的。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://chipsandcheese.com/p/ces-2026-taking-the-lids-off-amds</guid>
-      <pubDate>Tue, 06 Jan 2026 21:46:04 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46519326</comments>
-    </item>
-    <item>
-      <title>在现实世界笔测试中将人工智能代理与网络安全专业人员进行比较</title>
-      <link>https://arxiv.org/abs/2512.09882</link>
-      <description>&lt;p&gt;) Connected Papers Toggle Connected Papers（什么是 Connected Papers。） Litmaps Toggle Litmaps（什么是 Litmaps。） 代码链接 Toggle Papers with Code（什么是 Papers with Code。）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Comparing AI agents to cybersecurity professionals in real-world pen testing&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46518996"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://arxiv.org/abs/2512.09882'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Zigurd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一般来说，笔测试和网络安全与人工智能比人类表现良好的其他一些领域具有共同的特征：它需要掌握人类几乎无法管理的知识体系。法律、医学和其他我们送人进入研究生院以擅长非自然心理任务的职业也是类似的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ironbound:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您可以授予代理访问 RevEng 工具的权限，在 API 调用上花费 1,000 美元，但情况也好不到哪去。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rboyd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么，安全护栏可能在多大程度上阻碍当前模型在任何红队基准测试中获得更高的分数呢？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Sytten:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Bootstrap是该领域的创始人。完全自主是不存在的。这“一代”的获胜者是将与人类一起参与循环&amp;#x2F; IMO 人体增强。当风险投资资金枯竭时，其中将会出现一堆自主的人工智能渗透测试公司。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lillesvin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我没看错吗，ARTEMIS 需要大量的提示才能识别人类测试人员发现的相同漏洞？ （PDF 第 7 页。）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;falloutx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;《华尔街日报》总是以这种标题党的方式写作，而且情况越来越糟。&lt;p&gt;一位高管会读到这篇文章，并开始为更换安全团队的想法而感到高兴。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nullcathedral:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在这个空间工作。法学硕士的生产力提升是真实的，但不是“替代人类”的。它们的亮点在于解释性的繁重工作：“帮我找出这个混淆的 blob 中的身份验证逻辑在哪里”、“理解这个缩小的 JS”、“这个奇怪的二进制协议在做什么”、“给我写一个 Frida 脚本来挂钩这些方法并转储这些密钥”。过去需要花几个小时盯着代码或编写一次性工具的事情现在只需要花费一小部分时间。
-他们是一个公平的竞争环境。&lt;p&gt;具有黑客思维但没有编程能力的人可以超越自己的能力，在有限的时间内找到更多东西。&lt;p&gt;他们当然会犯错误，并且需要经常照顾。但情况正在变得更好。我希望更多的公司将它们作为日常工作的一部分。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zerodayai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我目前正处于构建代理黑客框架的尾声；我想学习构建代理的最佳实践（我有一个带有内存（短、中、长）的 SDK、知识图谱、RAG、工具和插件，可以轻松开发编排器可以协调的新代理）。&lt;p&gt;我还想通过 bug 赏金（我的爱好）和 15 年以上的 appsec&amp;#x2F;devsecops 经验来捕捉我的想法。 “在纸上”。   如果有人想尝试一下，看一下，或者告诉我这是垃圾，请随时给我发电子邮件（在我的个人资料中）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rando77:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;听起来他们需要另一个代理来检测误报（我开玩笑，我开玩笑）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tptacek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;现在做出明确的预测还为时过早，但如果您还没有进入该领域，那么了解自动化“笔测试”已经有 20 年的努力，并且该项目重点测试的特定测试子集（网络渗透测试 — 与应用程序渗透测试相反，后者针对特定的网络应用程序）已经基本上完全自动化，这是有帮助的。&lt;p&gt;我会预计在中期代理平台将在基本上所有“常规”测试中击败未增强的人类测试团队。渗透测试任务——网络、Web、移动、源代码审查。这项工作的很多方面都非常适合代理循环。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JohnMakin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;摘自《华尔街日报》文章：&lt;p&gt;&gt;斯坦福大学研究人员聘请了 10 名专业网络渗透测试人员来刺探和刺探他们的工程网络，但没有真正闯入他们的工程网络。除了其中一名外，人工智能机器人击败了所有人。&lt;p&gt;哦，哇！&lt;p&gt;&gt; Artemis 以闪电般的速度发现了错误，而且成本低廉：每小时运行成本不到 60 美元。 Ragan 表示，人工笔测试人员的收费通常为每天 2,000 至 2,500 美元。&lt;p&gt;哇，这太棒了！&lt;p&gt;&gt;但阿尔忒弥斯并不完美。大约 18% 的错误报告是误报。它还完全错过了大多数人类测试人员在网页中发现的一个明显错误。&lt;p&gt;哦，嗯，没有打败专业人士，但是还可以。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://arxiv.org/abs/2512.09882</guid>
-      <pubDate>Tue, 06 Jan 2026 21:23:07 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46518996</comments>
-    </item>
-    <item>
-      <title>Laylo (YC S20) – 增长主管（有机和合作伙伴、循环和人工智能） – 远程美国</title>
-      <link>https://www.ycombinator.com/companies/laylo/jobs/ZtLHRXe-head-of-growth</link>
-      <description>&lt;p&gt;您将创建精彩的内容，进行杂乱的实验，并构建复合的产品增长循环。您将主要关注非广告渠道：有机社交、影响者/创作者合作、渠道合作伙伴和产品增长循环。借助 Laylo，创作者和品牌可以在发布新内容、商品和活动时立即通知粉丝。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Laylo (YC S20) – Head of Growth (Organic and Partners and Loops and AI) – Remote US&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46519303"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/laylo/jobs/ZtLHRXe-head-of-growth'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.ycombinator.com/companies/laylo/jobs/ZtLHRXe-head-of-growth</guid>
-      <pubDate>Tue, 06 Jan 2026 21:44:37 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46519303</comments>
-    </item>
-    <item>
-      <title>具有 DMCA 删除功能的网站</title>
-      <link>https://priyatham.in/en/post/hosting-dmca/</link>
-      <description>&lt;p&gt;这应该不再有问题了。我被那景象震惊了。由于客户比以往任何时候都更加沮丧，我们决定转移托管。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Website with a DMCA Takedown&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46520975"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://priyatham.in/en/post/hosting-dmca/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>美国文学中最奇怪的夫妇：第二部分</title>
+      <link>https://airmail.news/issues/2026-1-3/the-oddest-couple-in-american-literature-part-ii</link>
+      <description>&lt;p&gt;正是在那里，席勒接受了第一堂摄影和销售技巧课程。席勒早期的自画像。 1962 年，席勒拍摄了贝蒂·戴维斯 (Bette Davis)。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Oddest Couple in American Literature: Part II&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46509782"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://airmail.news/issues/2026-1-3/the-oddest-couple-in-american-literature-part-ii'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;m4ck_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么这个站点试图对我进行端口扫描？&lt;p&gt;（实际上不是，它只是试图从本地主机加载 js）&lt;p&gt;如果这是 OP 的站点，那么您正尝试从本地主机加载 comentario.js。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://priyatham.in/en/post/hosting-dmca/</guid>
-      <pubDate>Wed, 07 Jan 2026 00:36:41 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46520975</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brudgers:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;ePi51" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;ePi51&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://airmail.news/issues/2026-1-3/the-oddest-couple-in-american-literature-part-ii</guid>
+      <pubDate>Tue, 06 Jan 2026 07:58:46 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46509782</comments>
     </item>
     <item>
-      <title>为什么反式标志表情符号是 5 个代码点序列</title>
-      <link>https://hecate.pink/blog/2026/trans-flag-emoji/</link>
-      <description>&lt;p&gt;请注意，Anubis 需要使用现代 JavaScript 功能，而 JShelter 等插件将禁用这些功能。请为此域禁用 JShelter 或其他此类插件。遗憾的是，您必须启用 JavaScript 才能克服这一挑战。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Why the trans flag emoji is the 5-codepoint sequence it is&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46520879"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://hecate.pink/blog/2026/trans-flag-emoji/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;DonHopkins:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;现在，反觉醒、反反法西斯=亲法西斯人群将想要纳粹和南方联盟的旗帜，就像他们1月6日在美国国会大厦游行一样，只是为了“公平和平衡”。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ekjhgkejhgk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;跨性别者和兽迷之间有什么联系？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;isodev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太酷了！&lt;p&gt;这样写，表情符号看起来有点像星门地址 [1F3F3 FE0F 200D 26A7 FE0]。&lt;p&gt;我知道表情符号有一种使用修饰符的方式，但这是我第一次了解提案迭代的过程。感谢分享！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gerdesj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;&lt;pre&gt;&lt;code&gt; 天哪！  当我进入阅读器模式后，一切都被揭露了 8)  
-&lt;/code&gt;&lt;/pre&gt;
-“蜘蛛”徘徊的粒子很时髦，但演示中的其他所有内容都在串谋排除爷爷（他现在视力很差）。  从好的方面来说，你没有选择黑暗的主题。  我很高兴能够解决我的非常小的可访问性“问题”但尽可能地满足所有人的需求可能会很好。&lt;p&gt;我喜欢你考虑了这么多方法来确保它能够优雅地降级，尽可能实现某些字形处理功能。&lt;p&gt;良好的技能......这到底是如何工作的？  我粘贴了很多你的字形，发现退格键将其更改为另一个标志：&lt;p&gt;编辑：哦，亲爱的，HN 去掉了时髦的字形，所以这篇文章看起来有点奇怪。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://hecate.pink/blog/2026/trans-flag-emoji/</guid>
-      <pubDate>Wed, 07 Jan 2026 00:22:06 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46520879</comments>
-    </item>
-    <item>
-      <title>红宝石阵列包出血</title>
-      <link>https://nastystereo.com/security/ruby-pack.html</link>
-      <description>&lt;p&gt;irb（主）：001&gt; [“414243”]。 /usr/local/bin/irb:25:in '&lt;main&gt;' irb(main):002&gt; ["414243"] 中的 activate_and_load_bin_path'。 ] irb（主）：012&gt; [“414243”]。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ruby Array Pack Bleed&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46520566"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://nastystereo.com/security/ruby-pack.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;matltc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;太疯狂了，这个 bug 已经存在了 20 多年了。展示了 C 错误有多么严重，尤其是那些涉及（通常是隐式的，但在本例中不是）有符号和无符号交互行为转换的错误。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://nastystereo.com/security/ruby-pack.html</guid>
-      <pubDate>Tue, 06 Jan 2026 23:46:24 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46520566</comments>
-    </item>
-    <item>
-      <title>大多数网站不需要 cookie 同意横幅</title>
-      <link>https://block81.com/blog/why-most-websites-dont-actually-need-cookie-consent-banners</link>
-      <description>&lt;p&gt;Cookie 是网站存储在您的浏览器上的小文本文件。他们确实需要同意才能进行侵犯用户隐私的数据处理。您真的需要那个可以跨会话跟踪用户的聊天机器人吗？&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Most websites don't need cookie consent banners&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46521179"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://block81.com/blog/why-most-websites-dont-actually-need-cookie-consent-banners'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tonymet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“广告或行为跟踪 cookie”&lt;p&gt;任何真正的企业都需要对活动转化、添加到购物车、客户获取、漏斗、保留、个性化等进行行为跟踪。&lt;p&gt;我喜欢我们都讨厌 cookie 横幅，并说它们是不必要的，但工资都是由进行行为跟踪的应用程序支付的。&lt;p&gt;只有业余爱好博客可以在没有它的情况下生存。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TechRemarker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“您确实需要同意：
-第三方跟踪 cookie，如 Google Analytics、Facebook Pixel“由于大多数网站都使用 GA，因此大多数网站都需要横幅。您可能会说大多数网站不需要 GA，但这是一个不同的论点。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;8organicbits:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道有多少人通过这些横幅表示同意。它是否足够频繁，值得糟糕的用户体验？&lt;p&gt;我知道有些网站在其 cookie 横幅中使用深色图案，我认为这是一个有用的暗示，表明该公司不尊重用户。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://block81.com/blog/why-most-websites-dont-actually-need-cookie-consent-banners</guid>
-      <pubDate>Wed, 07 Jan 2026 01:05:01 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46521179</comments>
-    </item>
-    <item>
-      <title>我们是否一劳永逸地厌倦了社交媒体？ (2025)</title>
-      <link>https://www.danielbrendel.com/blog/24-are-we-tired-of-social-media-once-and-for-all</link>
-      <description>&lt;p&gt;当我与其他同行交谈时，许多人都厌倦了社交媒体。然而，互联网变得越来越商业化。受影响的不仅仅是社交媒体。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Are we tired of social media once and for all? (2025)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46519622"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.danielbrendel.com/blog/24-are-we-tired-of-social-media-once-and-for-all'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kevinsync:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不想这样说（不是一种厄运和忧郁的家伙），但对于普通大众来说，社交媒体要么是，或者至少&lt;i&gt;似乎是&lt;/i&gt;，我们的社会一直在努力将富人和穷人分开，这是摆脱深沉而可怕的经济鸿沟的唯一途径之一。&lt;p&gt;当然，从统计数据来看，绝大多数试图从社交媒体中获得包袱的人要么失败，要么成功，要么很快就精疲力尽，或者取得巨大成功却失去灵魂。鉴于这只是一种新的旧娱乐形式，我敢打赌，突破的人与未突破的人的比例可能与一直以来的情况一致（微薄或短暂）&lt;p&gt;与此同时，在现实世界中，工资停滞不前，机构崩溃，安全网像风中的一个屁一样被吹走；我们已经在生活的方方面面使赌博合法化并推崇，地缘政治正在剧变，企业比多年来更加紧缩，信息从日报变成了令人衰弱的消防水带，价格飞涨，而我们只能自力更生。&lt;p&gt;我们该怎么办？&lt;p&gt;在社交媒体上狂欢。在 Polymarket 上对短暂的概念和世界事件进行杠杆押注。投入模因币，将所有实物资产代币化。玩彩票，去赌场。不断地，虽然生活成本呈L型增长。&lt;p&gt;我认为对于绝大多数人来说，社交媒体既死了又完全不可避免......但我有一种新生的、模糊的感觉，虽然人们厌倦了被算法操纵并想要保释，但如果被逼得足够远，变得足够饥饿，他们会立即回来，出于绝望而从创造者身边旋转轮子，为我们都讨厌的机器提供食物哈哈&lt;p&gt;无论如何。多一点乐观，少一点厄运！不应该这样长期下去！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lapcat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;因此我得出的结论是，人们总体上厌倦了社交。这很好，老实说，我承认我也是这种情况。&lt;p&gt;我对这种说法感到困惑。我理解作者为什么厌倦了网络社交，但我不确定这个概括从何而来，如何得出“我也是”的结论。而不仅仅是“我”。即使作者已经停止使用各种社交网络，人们显然仍在大量使用。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;marcus_holmes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我完全不厌倦 2008 年左右的 Facebook——我的一群朋友，我真正认识的人，发布我们的生活并进行对话。这是与老朋友重新联系并与人们保持联系的绝佳方式。&lt;p&gt;我对现在的情况感到非常厌倦。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;normalaccess:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Sam Vaknin 发表了一篇深度演讲（恕我直言），内容涉及现代社交网络的运作方式，甚至其形式都具有极大的破坏性。 “互联网仇恨机器”是真实的，它是由反社会的极度自恋的书呆子创建的。&lt;p&gt;Youtube 链接：&lt;a href="https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;Ef7bqgeHenU" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;Ef7bqgeHenU&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;afavour:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;无论《黑客新闻》上有多少人对社交媒体感到精疲力尽……不，“我们”作为一个社会，一如既往地沉迷其中。&lt;p&gt;有趣的是，多年来，社交媒体中的“社交”几乎只存在于评论中。我们过去的提要中充满了我们真正认识的人。现在，算法 24&amp;#x2F;7 在许多人的脸上注入了影响力。在某些方面，它与老式学校媒体没有什么不同，它只是经过精心优化以使我们上瘾。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tartuffe78:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;没人上 Instagram 了，太拥挤了！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;everdrive:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在所有情况下我都试图避免算法管理。我认为它还不够突出。事实上，YouTube 提供了无数可供选择的视频，这本身就有一定的危害，而内容的具体细节却无法做到这一点。&lt;p&gt;当互联网还是全新的时候，我必须出去寻找内容，并且可以随时查看，这是非常新奇的。这与电视不同。电视是被动​​地欣赏的，你只是看他们向你展示的内容。早期的互联网要好得多，很难描述。这是一次纯粹的主动体验。算法策展是对电视模式的回归。其他人决定你应该看什么，而你被动地观察它在你面前实现。尝试一下这个体验。退出 YouTube，在 uBlock Origin 中安装一些过滤器，阻止所有算法结果（甚至在主页和搜索结果中），然后尝试考虑您想观看的内容。对于你们中的一些人来说，我敢打赌这感觉就像锻炼一块旧的、未使用的肌肉。你以前经常做这样的查询。但请扫描你的头脑。有哪些可观看的可能性？感觉比应有的更空虚。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adzm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不和谐还是很棒的。不完全是传统的社交媒体，但它具有相似的功能，不仅仅是聊天平台。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;__lain__:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;社交媒体早已不再是一个真正的社交渠道，而是充满了机器人或有影响力的人，试图成为对虚空呼喊的最响亮的声音。我记得大约在 2010 年至 2012 年期间访问过 Reddit，当时上面几乎只有大学生，而且帖子通常诙谐有趣。主要网站上的任何地方都不再存在这种情况，尝试进行任何类型的对话都是死胡同。&lt;p&gt;永恒的九月与以利润为中心的工程相结合创造了一片荒地。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;johnneville:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我厌倦了广告、算法管理、公开性、匿名性和规模&lt;p&gt;我仍然渴望社交互动，但已转向与我在现实生活中看到的或与我有持续联系的真人进行较小的私人群聊&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;al_borland:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;通过旧的聊天程序和论坛，我与真实的人进行了很长一段时间的交谈。在现代平台上，我只是与互联网交谈。感觉很不一样。&lt;p&gt;2024 年，我正在寻找观看日食的地方，20 年前我在论坛上认识的一个人告诉我可以去他家，因为日食就在日食的上方。尽管我已经认识他 20 年了，但这是我第一次见到他本人。我们不再像以前那样经常说话了，但多年来我们每天都会说话。在接下来的五到十年里，我和他的交谈可能比我认识的任何人都多。我不觉得当人们只是在爆料模因时就会发生这种事情。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.danielbrendel.com/blog/24-are-we-tired-of-social-media-once-and-for-all</guid>
-      <pubDate>Tue, 06 Jan 2026 22:15:52 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46519622</comments>
-    </item>
-    <item>
-      <title>Show HN：GPU Cuckoo Filter – 比 Blocked Bloom 更快的查询，并具有删除功能</title>
-      <link>https://github.com/tdortman/cuckoo-filter</link>
-      <description>&lt;p&gt;GPU Cuckoo 过滤器与以下各项进行比较： CPU Cuckoo 过滤器 批量二选过滤器 (TCF) GPU 计数商过滤器 (GQF) GPU 阻塞布隆过滤器 L2 驻留（4M 项，约 8 MiB） 比较 插入查询 删除 GPU 与 CPU Cuckoo 快 360 倍 快 973 倍 N/A Cuckoo 与 TCF 快 6 倍 快 42 倍 快 100 倍 Cuckoo 与 GQF 585× 更快 6× 更快 273× 更快 Cuckoo 与 Bloom 0 相比。 Cuckoo 与 Bloom 0 相比更快 8 倍。 insertMany(h_keys, numKeys);筛选。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: GPU Cuckoo Filter – faster queries than Blocked Bloom, with deletion&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46519771"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/tdortman/cuckoo-filter'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shetaye:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很有趣！你的论文做得很好。我很好奇：如果数据&lt;i&gt;不&lt;/i&gt;驻留在 GPU 上（例如多 TB 数据集、线速数据包检查等），这是否会受到 PCIe 总线的瓶颈？&lt;p&gt;（您可能已经在论文中解决了这个问题，请随时告诉我使用 RTFD ；）&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/tdortman/cuckoo-filter</guid>
-      <pubDate>Tue, 06 Jan 2026 22:33:21 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46519771</comments>
+      <title>我们重新创建了史蒂夫·乔布斯 1975 年的雅达利星座运势程序，您可以运行它</title>
+      <link>https://blog.adafruit.com/2026/01/06/we-recreated-steve-jobss-1975-atari-horoscope-program-and-you-can-run-it/</link>
+      <guid isPermaLink="true">https://blog.adafruit.com/2026/01/06/we-recreated-steve-jobss-1975-atari-horoscope-program-and-you-can-run-it/</guid>
+      <pubDate>Wed, 07 Jan 2026 00:44:43 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46521029</comments>
     </item>
   </channel>
 </rss>
