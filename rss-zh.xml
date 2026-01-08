@@ -6,99 +6,49 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 08 Jan 2026 06:41:44 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Jan 2026 09:33:23 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Project Patchouli：开源电磁绘图板硬件</title>
-      <link>https://patchouli.readthedocs.io/en/latest/</link>
-      <description>&lt;p&gt;项目代码/硬件存储库：GitLab 更新 2024 年 1 月，项目启动。在这里了解更多信息： 广藿香项目许可 Yukidama 和其他项目成员的项目广藿香文档已获得知识共享署名 4 的许可。 注意 该项目正在积极开发中。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Project Patchouli: Open-source electromagnetic drawing tablet hardware&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46537489"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://patchouli.readthedocs.io/en/latest/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>仔细观察委内瑞拉的 BGP 异常</title>
+      <link>https://blog.cloudflare.com/bgp-route-leak-venezuela/</link>
+      <description>&lt;p&gt;背景：BGP 路由泄漏 首先，让我们回顾一下什么是 BGP 路由泄漏。 AS8048 (CANTV) 的路由泄漏 现在我们已经提醒自己什么是 BGP 中的路由泄漏，让我们检查一下时事通讯帖子中的假设。这绝对是路由泄漏。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A closer look at a BGP anomaly in Venezuela&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46538001"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.cloudflare.com/bgp-route-leak-venezuela/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Guestmodinfo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;惊人的&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://patchouli.readthedocs.io/en/latest/</guid>
-      <pubDate>Thu, 08 Jan 2026 05:20:05 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46537489</comments>
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;moktonar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;真正的问题是：你如何成为中间人并为自己保留无辜者的利益？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lucideer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该帖子多次提到泄漏“一直”发生，但与此相关的唯一比较数据是&lt;i&gt;来自&lt;/i&gt; AS8048 的历史泄漏。&lt;p&gt;有人知道这些泄漏在网络上的一般频率可能是多少吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Fiveplus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我有点困了，但我喜欢这篇文章。关于路径前置的分析确实使&lt;i&gt;事故&lt;/i&gt;理论更加深入人心。如果国家行为者试图拦截流量（MITM），他们要做的最后一件事就是多次填充 AS 路径，因为这会告诉全局路由表，“不要走这条路，我是漫长的风景路线”哈哈&lt;p&gt;这可能是一个典型的胖手指配置错误，很可能是一个路由映射，旨在操纵其自己的上游链接的流量工程，由于缺少拒绝所有子句而无意中广泛泄漏。尽管如此，一个很好的提醒是，BGP 从根本上来说仍然是一个基于信任的系统，其中配置文件中的单个拼写错误可能会在全球范围内级联。切勿将缺少导出过滤器充分解释的行为归因于恶意。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;DinakarS:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Cloudflare 的深度和覆盖范围令人疯狂&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;相关初始后果：&lt;p&gt;&lt;i&gt;委内瑞拉停电期间出现 BGP 异常&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46504963"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46504963&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.cloudflare.com/bgp-route-leak-venezuela/</guid>
+      <pubDate>Thu, 08 Jan 2026 06:46:26 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46538001</comments>
     </item>
     <item>
-      <title>Chase 成为 Apple Card 新发卡机构</title>
-      <link>https://www.jpmorganchase.com/ir/news/2026/chase-to-become-new-issuer-of-apple-card</link>
-      <description>&lt;p&gt;关于我们 关于我们 我们如何开展业务 领导力 奖项和认可 技术 治理 供应商 多元化、机会和包容性 阅读更多 董事长兼首席执行官致股东的信 2024 年年度报告 了解更多 影响 影响 业务增长和创业 职业和技能 社区发展 环境可持续性 财务健康和财富创造 最新消息 一家总部位于俄亥俄州的公司正在保护世界各地的急救人员 在摩根大通的支持下，Fire-Dex 正在为 100 个国家和所有 50 个州的消防员提供防护设备。了解更多 社区学院 学院 探索所有主题 最新新闻 大流行的盈利时刻 了解更多 职业 职业 与我们一起成长 我们如何招聘 探索机会 学生和毕业生立即申请 最新新闻 退伍军人在科技大学找到梦想工作的非传统途径。 了解更多 投资者关系 投资者关系 首席执行官信 年度报告 季度收益 新闻稿 活动和演示 投资者日 了解更多 董事长兼首席执行官致股东的信 2024 年年度报告 了解更多 新闻室。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Chase to become new issuer of Apple Card&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46536848"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.jpmorganchase.com/ir/news/2026/chase-to-become-new-issuer-of-apple-card'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>研究发现人工智能漏掉了近三分之一的乳腺癌</title>
+      <link>https://www.emjreviews.com/radiology/news/ai-misses-nearly-one-third-of-breast-cancers-study-finds/</link>
+      <description>&lt;p&gt;3 年来，最近被诊断出患有乳腺癌，研究人员评估了基于人工智能的计算机辅助诊断系统 (AI-CAD) 在读取乳房 X 光照片和乳房 MRI 扫描时的表现。人工智能漏掉了致密乳腺组织中更多的癌症 结果令人震惊：127 种癌症，30 种。弥散加权成像在检测基于人工智能的乳房 X 光检查漏掉的乳腺癌方面增加了价值。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; AI misses nearly one-third of breast cancers, study finds&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46537983"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.emjreviews.com/radiology/news/ai-misses-nearly-one-third-of-breast-cancers-study-finds/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[欺骗] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46534673"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46534673&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sam0x17:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;鞭打很搞笑，这些年来他们已经通过了 3 家银行&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AndrewKemendo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有谁知道他们为什么离开 GS？&lt;p&gt;坦白说，我喜欢他们把 GS 作为银行，因为他们拥有非常出色的客户支持系统&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mullingitover:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;搞笑的是，Apple 卡是一块钛合金，到 2025 年还没有非接触式支付功能。&lt;p&gt;（显然他们的角度是你将使用手机或手表，这并不是一个巨大的延伸）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;scenario_tech:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;搞笑。为 200 亿美元的投资组合支付 2.2 亿美元的信用损失是疯狂的。现有的投资组合是有毒废物&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;glial:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;第一代 Apple Card 做了一个诱饵和转换，用它以 0% 的利息购买 iPhone。超级令人沮丧。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nomilk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;直到现在才听说过 Apple Card：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.apple.com&amp;#x2F;apple-card&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.apple.com&amp;#x2F;apple-card&amp;#x2F;&lt;/a&gt; 带有&lt;p&gt;&gt; 的信用卡不收取任何费用。连隐藏的都没有&lt;p&gt;和&lt;p&gt;&gt;当您通过 Apple Pay 使用 Apple Card 时可获得 2% 现金返还&lt;p&gt;和&lt;p&gt;&gt;当您使用 Apple Pay 时，Apple（以及 Uber、Uber Eats、Booking.com 和其他一些网站）可享受 3% 的现金返还&lt;p&gt;这看起来……真的很好。比如说，它本质上是免费的钱。我在这里错过了什么吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xyst:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道这些对我的信用额度意味着什么。&lt;p&gt;我有一张 60XXX CL 的 Chase 卡和一张 50XXX 的 AC。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;guessmyname:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;欺骗：&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46534673"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46534673&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delfinom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不知道苹果屈服于什么。众所周知，他们最初只找到高盛与他们合作，因为他们提出了与整个行业背道而驰的重大要求，包括将每个人的声明日期设置为完全相同，以便客户支持在每年的同一天崩溃。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.jpmorganchase.com/ir/news/2026/chase-to-become-new-issuer-of-apple-card</guid>
-      <pubDate>Thu, 08 Jan 2026 03:29:11 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46536848</comments>
-    </item>
-    <item>
-      <title>开放基础设施地图</title>
-      <link>https://openinframap.org</link>
-      <guid isPermaLink="true">https://openinframap.org</guid>
-      <pubDate>Thu, 08 Jan 2026 03:31:12 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46536866</comments>
-    </item>
-    <item>
-      <title>Go.sum 不是锁文件</title>
-      <link>https://words.filippo.io/gosum/</link>
-      <description>&lt;p&gt;它列出了构建所有依赖项的精确版本。 toml）通常会列出一些依赖项以及支持哪些版本的潜在复杂规则。其依赖项允许的最低清单版本。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Go.sum is not a lockfile&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46537095"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://words.filippo.io/gosum/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;djha-skin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;相反，只需查看 go.mod。它列出了构建所有依赖项的精确版本。&lt;p&gt;不，它没有。最低版本选择意味着库&lt;i&gt;至少&lt;/i&gt;是该版本，但如果暂时依赖项需要这样的话，它可以替换为更高版本。&lt;p&gt;我正在阅读这篇博客文章表明存在一个“市场”。对于单个校验和版本清单，其数据当前位于 go.sum 中。这很悲伤，但是，海仑定律等等。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Groxx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;&lt;i&gt;如果主模块导入 example.com&amp;#x2F;mod1&amp;#x2F;pkg1，并且单独的 example.com&amp;#x2F;mod1&amp;#x2F;pkg2 导入 example.com&amp;#x2F;mod2，则 example.com&amp;#x2F;mod2 无法影响开发人员计算机上的构建或运行代码，因此您无需将其视为依赖项。&lt;/i&gt;&lt;p&gt;iirc （我目前没有测试设置来验证）它&lt;i&gt;确实&lt;/i&gt;影响您的依赖解析，因此影响您的构建，尽管&lt;i&gt;其代码&lt;/i&gt;不存在于您的二进制文件中。  我知道这一点是因为那些 AWS &amp;#x2F; K8S&amp;#x2F; Google Cloud 库在没有重大版本更改的情况下不断进行重大更改，并且在没有主要版本更改的情况下导入其他也经常发生重大更改的库，从而导致巨大的问题，即使这些未使用的子包包含的依赖项（因此提高了最低版本）仅由需要较低版本（iirc）的其他模块使用。  有时这非常令人头痛，如果您可以设置上限而不仅仅是下限，则可以很容易地解决。&lt;p&gt;影响版本的行为是不可避免的。  如果它们&lt;i&gt;没有&lt;/i&gt;包含那些未使用的版本约束，“go build ...”或只是在现有模块中导入新包可能会导致您的构建失败，迫使您重新运行版本解析。  这可能只会让人们感觉“go 坏了 UGH”，而 go 非常倾向于避免这种事情。主要是为了更好，但并非总是如此&amp;#x2F;并非在所有方面。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;peterldowns:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;正确，但已经过去很长时间了，默认操作&amp;#x2F;setup-go github 操作仍然使用 go.sum 代替。我看到有人已经对这个长期存在的问题发表评论来引用这篇文章，并且希望他们能够更新它！&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;actions&amp;#x2F;setup-go&amp;#x2F;issues&amp;#x2F;478" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;actions&amp;#x2F;setup-go&amp;#x2F;issues&amp;#x2F;478&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anishgupta:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很好，如果像 github.com&amp;#x2F;foo&amp;#x2F;bar v1.2.3 这样的模块后来被上游修改或破坏，go.sum 中的校验和将导致构建失败，除非获取完全相同的内容。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://words.filippo.io/gosum/</guid>
-      <pubDate>Thu, 08 Jan 2026 04:10:34 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46537095</comments>
-    </item>
-    <item>
-      <title>显示 HN：Lean4 证明 SSOT 需要定义时挂钩和内省</title>
-      <link>https://zenodo.org/records/18177320</link>
-      <description>&lt;p&gt;编程语言实例化了这种认知结构：编码系统成为代码库，事实成为结构规范（类存在、方法签名），连贯性成为跨编码位置的一致性，DOF = 1 成为单一事实来源（DRY 原则）。编码系统 → 代码库事实 → 结构规范（类存在、方法签名）连贯性 → 编码位置之间的一致性DOF = 1 → 单一事实来源（DRY 原则）我们证明，实现结构事实的 DOF = 1 需要特定的语言功能：定义时挂钩和内省推导。 ）缺乏这些功能，无论程序员如何努力，都无法实现结构事实的一致性。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Lean4 proof that SSOT requires definition-time hooks and introspection&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46537459"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://zenodo.org/records/18177320'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;curtisf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不明白这意味着什么。&lt;p&gt;分布式系统中的一致性等概念有明确的形式化，并且有正确实现共识的算法。&lt;p&gt;形式化“单一事实来源”意味着什么？原则，哪个是指导原则而不是预测法则？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://zenodo.org/records/18177320</guid>
-      <pubDate>Thu, 08 Jan 2026 05:15:41 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46537459</comments>
-    </item>
-    <item>
-      <title>Intricuit：适用于 Mac 笔记本电脑的触摸屏插件</title>
-      <link>https://intricuit.com</link>
-      <description>&lt;p&gt;× 兼容的 MacBook 型号 要检查您的 MacBook 型号，请转至 Apple 菜单  → 关于本机。 Mac 型号 显示屏尺寸 发布年份 MacBook Air 13 英寸 2025 - M4 2024 - M3 2022 - M2 15 英寸 2025 - M4 2024 - M3 2022 - M2 MacBook Pro * 14 英寸 2025 - M5 2024 - M4 2023 - M3 2023 - M2 2021 - M1 16 英寸 2024 - M4 2023 - M3 2023 - M2 2021 - M1 * 包括 M 系列 Pro 和 Max 变体。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Intricuit: A touchscreen add-on for Mac laptops&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46536897"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://intricuit.com'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;phplovesong:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这很酷。唯一的（恕我直言，这是一个大问题）是 MacBook 屏幕“不能一直显示”，这意味着你不能像平常那样使用它来绘画或书写（从 90 度角）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Groxx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;139 美元（早期 Kickstarter 价格）如果像他们声称的那样工作的话，感觉出奇的低 - 带显示器的 wacom 明显更贵，显示分辨率较低，便携性较差，并且完全不同的人体工程学（无论好坏）。  尽管它们也是第二个屏幕。&lt;p&gt;让我想知道它是否可以在其他计算机上使用。当然不是那么光滑，但它可能仍然&lt;i&gt;功能&lt;/i&gt;，除了软件（如果有的话）......&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NSPG911:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嗯，这很酷，但我错过了它的重点，为什么？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://intricuit.com</guid>
-      <pubDate>Thu, 08 Jan 2026 03:36:32 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46536897</comments>
+&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;swisniewski:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;摘要中的描述听起来非常有缺陷。&lt;p&gt;1.他们只测试了 2 名放射科医生。他们将其与一种模型进行了比较。因此，结果并没有说明放射科医生在对抗人工智能方面的表现如何。该研究可以说的最慷慨的一点是，2 名放射科医生的表现优于特定模型。&lt;p&gt;2.放射科医生只获得一种类型的图像，并且仅针对人工智能错过的那些患者。摘要没有说明测试是否是盲目的。该研究有 3 位作者，似乎都是放射科医生，并且提到 2 名放射科医生查看了人工智能遗漏的扫描。这就引发了关于测试是否盲目的问题。&lt;p&gt;向人类提供他们知道是真阳性的数据并说“找到人工智能错过的证据”与向经过训练以减少误报的人工智能模型提供分类任务有很大不同。&lt;p&gt;当人类想要找到模式时，他们非常有能力找到模式（即使它们不存在）。&lt;p&gt;即使这项研究最初是盲目的，训练有素的人类医生可能很快就会注意到他们正在分析的数据是&lt;p&gt;即使他们没有注意到，人类也很容易受到锚定偏差的影响。&lt;p&gt;锚定偏差是一种认知偏差，个人在做出后续判断或决策时过于依赖他们收到的第一条信息（“锚定”）。&lt;p&gt;他们扭曲了自然或数据很可能会放大任何锚定偏差。&lt;p&gt;如果实验有控制，任何由人类估计错误引起的测量误差都可能被抵消（应预期图像或医生的大量随机样本在每组中具有相同的估计误差）。但实验中根本没有对照，而且样本量也很小。因此，估计偏差对结果的影响可能是巨大的。&lt;p&gt;从我在摘要中读到的内容来看，这些结果似乎并不可靠。&lt;p&gt;我错过了什么吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;directevolve:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这项研究的要点在于，它表明全自动乳房 X 线摄影目前使用该模型检测乳腺癌的灵敏度可以达到 70%。它无法让我们将人工智能与无人辅助的人类表现进行比较。由于本研究不包括健康对照，因此不存在假阳性率。假阳性率是一个重要的缺失指标，因为绝大多数女性没有患乳腺癌。&lt;p&gt;在乳房 X 光检查和 DWI 数据集中近一半的假阴性中，两位乳腺放射科医生将癌症归类为隐匿性，这意味着经过训练的眼睛是看不见癌症的。 AI 模型对乳房 X 光检查数据的非隐匿性假阴性率为 19.3%。&lt;p&gt;对于该 19.3% 的数字，请参阅表 2：AI 漏诊的癌症中 68 个非隐匿性的，AI 检测到的癌症中 285 个非隐匿性的。&lt;p&gt;这项研究没有将 AI 与放射科医生在一组健康图像和癌症图像的混合图像上进行比较。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sfink:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;标题让我很困扰。这对我来说意味着“人工智能”是一件事。如果两个人接受测试，结果发现他们不擅长阅读 MRI 图像，那么标题应该是“男性放射科医生漏掉了近三分之一的乳腺癌”吗？&lt;p&gt;如果它说“人工智能&lt;i&gt;某事&lt;/i&gt;”，我会同意的。这是关于某件事的声明，而不是关于一般人工智能的声明。将其用作形容词（我猜是“AI-using”的缩写？），而不是名词。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ggm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有助于显示人类以及系统辅助人类的失败率。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;docdeek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在人类随访中，有所改善，但仍存在差距：&lt;p&gt;&gt;他们的研究结果令人放心：仅 DWI 就识别出 AI 忽略的大多数癌症，一位放射科医生检测出 83.5% 的漏检病变，另一位放射科医生则检测出 79.5%。&lt;p&gt;AI 和这种 DWI 方法相结合似乎可以识别大部分癌症，但仍有约 20% 的 1&amp;#x2F;3 被漏掉。我认为，由于这些都是确诊病例，他们是通过 DWI 以外的另一种方法发现的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Moosturm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;A.I. 不应该吗？不以它只是试图提供帮助的方式使用？例如。医生先看一下，如果他找不到任何东西，那么人工智能就会发现。也在检查（或并行）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;levocardia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;原始研究：&lt;a href="https:&amp;#x2F;&amp;#x2F;link.springer.com&amp;#x2F;article&amp;#x2F;10.1007&amp;#x2F;s11547-025-02161-1" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;link.springer.com&amp;#x2F;article&amp;#x2F;10.1007&amp;#x2F;s11547-025-02161-1&lt;/a&gt;&lt;p&gt;这只是回顾性的，即针对已知患有乳腺癌的女性的病例系列，因此假阴性为零，真阴性为零，因为所有研究中的患者确实患有癌症。&lt;p&gt;使用的 AI 系统是 2021 年左右投入商业使用的 ConvNet，即收集该病例系列数据的时间。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;emil-lp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请始终呈现混淆矩阵。一个数字（几乎）是无用的。&lt;p&gt;我可以通过&lt;p&gt;&lt;pre&gt;&lt;code&gt; def detector(x) 检测到 100%：
+        返回True&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andrewstuart:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人工智能发现了近二分之三的乳腺癌！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.emjreviews.com/radiology/news/ai-misses-nearly-one-third-of-breast-cancers-study-finds/</guid>
+      <pubDate>Thu, 08 Jan 2026 06:43:07 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46537983</comments>
     </item>
   </channel>
 </rss>
