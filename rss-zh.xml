@@ -6,42 +6,99 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 08 Jan 2026 04:05:51 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Jan 2026 06:41:44 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>内核错误平均隐藏 2 年。有的躲了20</title>
-      <link>https://pebblebed.com/blog/kernel-bugs</link>
-      <description>&lt;p&gt;发现前1年。 8 年 中位寿命 1. 7 年 5 年以上 bug 19.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Kernel bugs hide for 2 years on average. Some hide for 20&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46536340"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://pebblebed.com/blog/kernel-bugs'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Project Patchouli：开源电磁绘图板硬件</title>
+      <link>https://patchouli.readthedocs.io/en/latest/</link>
+      <description>&lt;p&gt;项目代码/硬件存储库：GitLab 更新 2024 年 1 月，项目启动。在这里了解更多信息： 广藿香项目许可 Yukidama 和其他项目成员的项目广藿香文档已获得知识共享署名 4 的许可。 注意 该项目正在积极开发中。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Project Patchouli: Open-source electromagnetic drawing tablet hardware&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46537489"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://patchouli.readthedocs.io/en/latest/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;silver_sun:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们关于“数据集限制”的部分该研究称“仅捕获带有 Fixes: 标签的错误（约占修复提交的 28%）。”&lt;p&gt;值得注意的是，这是从仅“28%”的结果中得出的重要推断。修复承诺假设平均时间为 2 年。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Fiveplus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在“用 Rust 重写它”之前注释接管线程：&lt;p&gt;值得注意的是，此处描述的此类错误（高度并发状态机中的逻辑错误、不正确的硬件假设）不一定会被借用检查器捕获。 Rust 对于内存安全来说非常出色，但它不会阻止您误解网卡的规格或在与 DMA 交互的不安全逻辑中编写竞争条件。&lt;p&gt;也就是说，如果我们消除了 70% 的内存安全问题错误，那么查找这些深层逻辑错误的 SNR 比率将会显着提高。我们花了太多时间追踪段错误，以至于错过了微妙的损坏错误。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NewsaHackO:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这可能只是我的系统，但时间看起来像超链接，但由于某种原因不是。尤其令人失望的是，提交哈希值没有链接到内核存储库中的实际提交。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eulgro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从统计数据中我们看到，大多数错误实际上都来自于语言的限制。&lt;p&gt;模型的结果令人印象深刻，我很惊讶他们用非常简单的启发式方法改进了它。希望该工具可供内核开发人员使用并集成到工作流程中。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esseph:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;想象一下，如果选定圈子之外没有人能够检查代码。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;snvzz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;数百万行代码，全部在管理模式下运行。&lt;p&gt;一个 bug 就足以危及整个系统。&lt;p&gt;整体 UNIX 内核在 60 年代是一个很好的设计；今天，我们应该更加了解。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sedatk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Firefox 的 bug 长期存在。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://pebblebed.com/blog/kernel-bugs</guid>
-      <pubDate>Thu, 08 Jan 2026 02:18:09 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46536340</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Guestmodinfo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;惊人的&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://patchouli.readthedocs.io/en/latest/</guid>
+      <pubDate>Thu, 08 Jan 2026 05:20:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46537489</comments>
     </item>
     <item>
-      <title>Show HN：我在浏览器中可视化了 Citi Bike 的整个历史</title>
-      <link>https://bikemap.nyc/</link>
-      <guid isPermaLink="true">https://bikemap.nyc/</guid>
-      <pubDate>Wed, 07 Jan 2026 18:57:18 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46530832</comments>
+      <title>Chase 成为 Apple Card 新发卡机构</title>
+      <link>https://www.jpmorganchase.com/ir/news/2026/chase-to-become-new-issuer-of-apple-card</link>
+      <description>&lt;p&gt;关于我们 关于我们 我们如何开展业务 领导力 奖项和认可 技术 治理 供应商 多元化、机会和包容性 阅读更多 董事长兼首席执行官致股东的信 2024 年年度报告 了解更多 影响 影响 业务增长和创业 职业和技能 社区发展 环境可持续性 财务健康和财富创造 最新消息 一家总部位于俄亥俄州的公司正在保护世界各地的急救人员 在摩根大通的支持下，Fire-Dex 正在为 100 个国家和所有 50 个州的消防员提供防护设备。了解更多 社区学院 学院 探索所有主题 最新新闻 大流行的盈利时刻 了解更多 职业 职业 与我们一起成长 我们如何招聘 探索机会 学生和毕业生立即申请 最新新闻 退伍军人在科技大学找到梦想工作的非传统途径。 了解更多 投资者关系 投资者关系 首席执行官信 年度报告 季度收益 新闻稿 活动和演示 投资者日 了解更多 董事长兼首席执行官致股东的信 2024 年年度报告 了解更多 新闻室。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Chase to become new issuer of Apple Card&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46536848"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.jpmorganchase.com/ir/news/2026/chase-to-become-new-issuer-of-apple-card'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[欺骗] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46534673"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46534673&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sam0x17:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;鞭打很搞笑，这些年来他们已经通过了 3 家银行&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AndrewKemendo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有谁知道他们为什么离开 GS？&lt;p&gt;坦白说，我喜欢他们把 GS 作为银行，因为他们拥有非常出色的客户支持系统&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mullingitover:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;搞笑的是，Apple 卡是一块钛合金，到 2025 年还没有非接触式支付功能。&lt;p&gt;（显然他们的角度是你将使用手机或手表，这并不是一个巨大的延伸）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;scenario_tech:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;搞笑。为 200 亿美元的投资组合支付 2.2 亿美元的信用损失是疯狂的。现有的投资组合是有毒废物&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;glial:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;第一代 Apple Card 做了一个诱饵和转换，用它以 0% 的利息购买 iPhone。超级令人沮丧。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nomilk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;直到现在才听说过 Apple Card：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.apple.com&amp;#x2F;apple-card&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.apple.com&amp;#x2F;apple-card&amp;#x2F;&lt;/a&gt; 带有&lt;p&gt;&gt; 的信用卡不收取任何费用。连隐藏的都没有&lt;p&gt;和&lt;p&gt;&gt;当您通过 Apple Pay 使用 Apple Card 时可获得 2% 现金返还&lt;p&gt;和&lt;p&gt;&gt;当您使用 Apple Pay 时，Apple（以及 Uber、Uber Eats、Booking.com 和其他一些网站）可享受 3% 的现金返还&lt;p&gt;这看起来……真的很好。比如说，它本质上是免费的钱。我在这里错过了什么吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xyst:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道这些对我的信用额度意味着什么。&lt;p&gt;我有一张 60XXX CL 的 Chase 卡和一张 50XXX 的 AC。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;guessmyname:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;欺骗：&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46534673"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46534673&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delfinom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不知道苹果屈服于什么。众所周知，他们最初只找到高盛与他们合作，因为他们提出了与整个行业背道而驰的重大要求，包括将每个人的声明日期设置为完全相同，以便客户支持在每年的同一天崩溃。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.jpmorganchase.com/ir/news/2026/chase-to-become-new-issuer-of-apple-card</guid>
+      <pubDate>Thu, 08 Jan 2026 03:29:11 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46536848</comments>
     </item>
     <item>
-      <title>谷歌如何重拾信心并领先于 OpenAI</title>
-      <link>https://www.wsj.com/tech/ai/google-ai-openai-gemini-chatgpt-b766e160</link>
-      <guid isPermaLink="true">https://www.wsj.com/tech/ai/google-ai-openai-gemini-chatgpt-b766e160</guid>
-      <pubDate>Wed, 07 Jan 2026 16:29:41 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46528389</comments>
+      <title>开放基础设施地图</title>
+      <link>https://openinframap.org</link>
+      <guid isPermaLink="true">https://openinframap.org</guid>
+      <pubDate>Thu, 08 Jan 2026 03:31:12 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46536866</comments>
+    </item>
+    <item>
+      <title>Go.sum 不是锁文件</title>
+      <link>https://words.filippo.io/gosum/</link>
+      <description>&lt;p&gt;它列出了构建所有依赖项的精确版本。 toml）通常会列出一些依赖项以及支持哪些版本的潜在复杂规则。其依赖项允许的最低清单版本。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Go.sum is not a lockfile&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46537095"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://words.filippo.io/gosum/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;djha-skin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;相反，只需查看 go.mod。它列出了构建所有依赖项的精确版本。&lt;p&gt;不，它没有。最低版本选择意味着库&lt;i&gt;至少&lt;/i&gt;是该版本，但如果暂时依赖项需要这样的话，它可以替换为更高版本。&lt;p&gt;我正在阅读这篇博客文章表明存在一个“市场”。对于单个校验和版本清单，其数据当前位于 go.sum 中。这很悲伤，但是，海仑定律等等。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Groxx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;&lt;i&gt;如果主模块导入 example.com&amp;#x2F;mod1&amp;#x2F;pkg1，并且单独的 example.com&amp;#x2F;mod1&amp;#x2F;pkg2 导入 example.com&amp;#x2F;mod2，则 example.com&amp;#x2F;mod2 无法影响开发人员计算机上的构建或运行代码，因此您无需将其视为依赖项。&lt;/i&gt;&lt;p&gt;iirc （我目前没有测试设置来验证）它&lt;i&gt;确实&lt;/i&gt;影响您的依赖解析，因此影响您的构建，尽管&lt;i&gt;其代码&lt;/i&gt;不存在于您的二进制文件中。  我知道这一点是因为那些 AWS &amp;#x2F; K8S&amp;#x2F; Google Cloud 库在没有重大版本更改的情况下不断进行重大更改，并且在没有主要版本更改的情况下导入其他也经常发生重大更改的库，从而导致巨大的问题，即使这些未使用的子包包含的依赖项（因此提高了最低版本）仅由需要较低版本（iirc）的其他模块使用。  有时这非常令人头痛，如果您可以设置上限而不仅仅是下限，则可以很容易地解决。&lt;p&gt;影响版本的行为是不可避免的。  如果它们&lt;i&gt;没有&lt;/i&gt;包含那些未使用的版本约束，“go build ...”或只是在现有模块中导入新包可能会导致您的构建失败，迫使您重新运行版本解析。  这可能只会让人们感觉“go 坏了 UGH”，而 go 非常倾向于避免这种事情。主要是为了更好，但并非总是如此&amp;#x2F;并非在所有方面。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;peterldowns:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;正确，但已经过去很长时间了，默认操作&amp;#x2F;setup-go github 操作仍然使用 go.sum 代替。我看到有人已经对这个长期存在的问题发表评论来引用这篇文章，并且希望他们能够更新它！&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;actions&amp;#x2F;setup-go&amp;#x2F;issues&amp;#x2F;478" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;actions&amp;#x2F;setup-go&amp;#x2F;issues&amp;#x2F;478&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anishgupta:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很好，如果像 github.com&amp;#x2F;foo&amp;#x2F;bar v1.2.3 这样的模块后来被上游修改或破坏，go.sum 中的校验和将导致构建失败，除非获取完全相同的内容。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://words.filippo.io/gosum/</guid>
+      <pubDate>Thu, 08 Jan 2026 04:10:34 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46537095</comments>
+    </item>
+    <item>
+      <title>显示 HN：Lean4 证明 SSOT 需要定义时挂钩和内省</title>
+      <link>https://zenodo.org/records/18177320</link>
+      <description>&lt;p&gt;编程语言实例化了这种认知结构：编码系统成为代码库，事实成为结构规范（类存在、方法签名），连贯性成为跨编码位置的一致性，DOF = 1 成为单一事实来源（DRY 原则）。编码系统 → 代码库事实 → 结构规范（类存在、方法签名）连贯性 → 编码位置之间的一致性DOF = 1 → 单一事实来源（DRY 原则）我们证明，实现结构事实的 DOF = 1 需要特定的语言功能：定义时挂钩和内省推导。 ）缺乏这些功能，无论程序员如何努力，都无法实现结构事实的一致性。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Lean4 proof that SSOT requires definition-time hooks and introspection&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46537459"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://zenodo.org/records/18177320'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;curtisf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不明白这意味着什么。&lt;p&gt;分布式系统中的一致性等概念有明确的形式化，并且有正确实现共识的算法。&lt;p&gt;形式化“单一事实来源”意味着什么？原则，哪个是指导原则而不是预测法则？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://zenodo.org/records/18177320</guid>
+      <pubDate>Thu, 08 Jan 2026 05:15:41 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46537459</comments>
+    </item>
+    <item>
+      <title>Intricuit：适用于 Mac 笔记本电脑的触摸屏插件</title>
+      <link>https://intricuit.com</link>
+      <description>&lt;p&gt;× 兼容的 MacBook 型号 要检查您的 MacBook 型号，请转至 Apple 菜单  → 关于本机。 Mac 型号 显示屏尺寸 发布年份 MacBook Air 13 英寸 2025 - M4 2024 - M3 2022 - M2 15 英寸 2025 - M4 2024 - M3 2022 - M2 MacBook Pro * 14 英寸 2025 - M5 2024 - M4 2023 - M3 2023 - M2 2021 - M1 16 英寸 2024 - M4 2023 - M3 2023 - M2 2021 - M1 * 包括 M 系列 Pro 和 Max 变体。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Intricuit: A touchscreen add-on for Mac laptops&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46536897"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://intricuit.com'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;phplovesong:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这很酷。唯一的（恕我直言，这是一个大问题）是 MacBook 屏幕“不能一直显示”，这意味着你不能像平常那样使用它来绘画或书写（从 90 度角）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Groxx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;139 美元（早期 Kickstarter 价格）如果像他们声称的那样工作的话，感觉出奇的低 - 带显示器的 wacom 明显更贵，显示分辨率较低，便携性较差，并且完全不同的人体工程学（无论好坏）。  尽管它们也是第二个屏幕。&lt;p&gt;让我想知道它是否可以在其他计算机上使用。当然不是那么光滑，但它可能仍然&lt;i&gt;功能&lt;/i&gt;，除了软件（如果有的话）......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NSPG911:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嗯，这很酷，但我错过了它的重点，为什么？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://intricuit.com</guid>
+      <pubDate>Thu, 08 Jan 2026 03:36:32 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46536897</comments>
     </item>
   </channel>
 </rss>

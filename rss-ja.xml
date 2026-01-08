@@ -6,42 +6,99 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 08 Jan 2026 04:05:51 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Jan 2026 06:41:44 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>カーネルのバグは平均して 2 年間潜伏します。 20人隠れる人もいる</title>
-      <link>https://pebblebed.com/blog/kernel-bugs</link>
-      <description>&lt;p&gt;発見の1年前。 8 年 寿命中央値 1. 7 年 5 年以上のバグ 19.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Kernel bugs hide for 2 years on average. Some hide for 20&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46536340"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://pebblebed.com/blog/kernel-bugs'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Project Patchouli: オープンソースの電磁描画タブレット ハードウェア</title>
+      <link>https://patchouli.readthedocs.io/en/latest/</link>
+      <description>&lt;p&gt;プロジェクト コード / ハードウェア リポジトリ: GitLab アップデート 2024 年 1 月、プロジェクトが開始されました。詳細については、こちらをご覧ください: プロジェクト パチュリのライセンス ゆきだまと他のプロジェクト メンバーによるプロジェクト パチュリのドキュメントは、クリエイティブ コモンズ表示 4 に基づいてライセンスされています。 注 このプロジェクトは現在開発中です。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Project Patchouli: Open-source electromagnetic drawing tablet hardware&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46537489"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://patchouli.readthedocs.io/en/latest/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;silver_sun:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「データセットの制限」に関するセクション。この調査では、「Fixes: タグ (修正コミットの約 28%) のみをキャプチャしている」と述べられています。&lt;p&gt;これは、わずか「28%」からの重要な推定であることに注目する価値があります。修正コミットでは、平均が 2 年であると仮定します。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Fiveplus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「Rustで書き直す」前にコメントがスレッドを引き継ぎます:&lt;p&gt;ここで説明したバグの種類 (高度な同時実行ステート マシンのロジック エラー、ハードウェアの誤った仮定) は、借用チェッカーによって必ずしも検出されるわけではないことに注意してください。 Rust はメモリの安全性に関しては優れていますが、ネットワーク カードの仕様を誤解したり、DMA と相互作用する安全でないロジックで競合状態を書き込んだりすることを防ぐことはできません。&lt;p&gt;とはいえ、メモリの安全性の問題であるバグの 70% を排除できれば、これらの深刻なロジックのバグを検出するための SNR 比は劇的に向上します。私たちはセグメンテーション違反のトレースに多くの時間を費やしているため、微妙な破損バグを見逃しています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NewsaHackO:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私のシステムだけかもしれませんが、時刻はハイパーリンクのように見えますが、何らかの理由でそうではありません。特に残念なのは、コミット ハッシュがカーネル リポジトリ内の実際のコミットにリンクしていないことです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eulgro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;統計から、ほとんどのバグは実質的に言語の制限に起因していることがわかります。&lt;p&gt;モデルの結果は印象的で、非常に単純なヒューリスティックでモデルが改善されたことに驚きました。このツールがカーネル開発者に利用可能になり、ワークフローに統合されることを願っています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esseph:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;選択サークルの外にいる誰もコードを調べることができなかった場合を想像してください。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;snvzz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;数百万行のコードがあり、すべてスーパーバイザ モードで実行されています。&lt;p&gt;システム全体を侵害するには、1 つのバグがあれば十分です。&lt;p&gt;モノリシック UNIX カーネルは、60 年代には優れた設計でした。今日、私たちはもっとよく知るべきです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sedatk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Firefox のバグは、それほど長い間未解決のままです。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://pebblebed.com/blog/kernel-bugs</guid>
-      <pubDate>Thu, 08 Jan 2026 02:18:09 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46536340</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Guestmodinfo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;素晴らしい&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://patchouli.readthedocs.io/en/latest/</guid>
+      <pubDate>Thu, 08 Jan 2026 05:20:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46537489</comments>
     </item>
     <item>
-      <title>Show HN: Citi Bike の歴史全体をブラウザで視覚化しました</title>
-      <link>https://bikemap.nyc/</link>
-      <guid isPermaLink="true">https://bikemap.nyc/</guid>
-      <pubDate>Wed, 07 Jan 2026 18:57:18 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46530832</comments>
+      <title>チェースがApple Cardの新たな発行者に</title>
+      <link>https://www.jpmorganchase.com/ir/news/2026/chase-to-become-new-issuer-of-apple-card</link>
+      <description>&lt;p&gt;私たちについて 私たちについて ビジネスのやり方 リーダーシップ 受賞と評価 テクノロジー ガバナンス サプライヤー 多様性、機会と包括性 続きを読む 会長兼 CEO 株主への手紙 アニュアルレポート 2024 もっと詳しく インパクト 影響 ビジネスの成長と起業家精神 キャリアとスキル コミュニティ開発 環境の持続可能性 財務の健全性と富の創造 最新ニュース オハイオ州に本拠を置く企業は、世界中の初期対応者を保護しています JPMorganChase の支援により、Fire-Dex は 100 か国の消防士に保護具を提供しています。 50州。詳細はこちら コミュニティ インスティテュート インスティテュート すべてのトピックを探索する 最新ニュース パンデミックが儲かる瞬間 もっと詳しく知る キャリア キャリア 私たちと一緒に働く 私たちと一緒に成長する 採用方法 チャンスを探る 学生と卒業生 今すぐ応募する 最新ニュース 退役軍人がテック大学で夢の仕事に就くための型破りな道筋 詳細はこちら 投資家情報 投資家情報 CEO レター 年次報告書 四半期収益 プレスリリース イベントとプレゼンテーション インベスター デイ 詳細はこちら 会長兼 CEO 株主への手紙 年次報告書2024 詳細はこちら ニュースルーム。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Chase to become new issuer of Apple Card&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46536848"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.jpmorganchase.com/ir/news/2026/chase-to-become-new-issuer-of-apple-card'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[重複] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46534673"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46534673&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sam0x17:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;むち打ちは面白いです、彼らは何年もの間、現在3つの銀行を利用しています&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AndrewKemendo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;彼らがなぜ GS から離れたのか知っている人はいますか?&lt;p&gt;率直に言って、GS を銀行として採用していることが気に入りました。なぜなら、GS には非常に素晴らしいカスタマー サポート システムが備わっているからです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mullingitover:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;面白いのは、Apple カードはチタンの塊で、2025 年には非接触型決済機能がなくなるということです。&lt;p&gt;(明らかに、彼らの見方は、携帯電話や時計を使用するということですが、これは大したストレッチではありません)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;scenario_tech:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;陽気な。 200億ドルのポートフォリオの信用損失に対して22億ドルを支払うのは正気の沙汰ではありません。既存のポートフォリオは有毒廃棄物である&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;glial:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;第 1 世代 Apple Card は、金利 0% で iPhone を購入するために使用するというおとり商法を行いました。とてもイライラします。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nomilk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;今まで Apple Card について聞いたこともありませんでした: &lt;a href="https:&amp;#x2F;&amp;#x2F;www.apple.com&amp;#x2F;apple-card&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.apple.com&amp;#x2F;apple-card&amp;#x2F;&lt;/a&gt;&lt;p&gt;&amp;gt; を備えたクレジット カード。手数料はかかりません。隠されたものさえありません&lt;p&gt;と&lt;p&gt;&amp;gt; Apple Pay&lt;p&gt;および&lt;p&gt;&amp;gt; で Apple Card を使用すると、2% のキャッシュバックが得られます。 Apple Pay を使用すると、Apple (および Uber、Uber Eats、Booking.com、その他いくつか) で 3% のキャッシュバック&lt;p&gt;これは... とても良いですね。つまり、それは本質的に無料のお金です。ここで落とし穴があるのでしょうか？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xyst:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これらが私のクレジット限度額にとって何を意味するのでしょうか。&lt;p&gt;私は 60XXX CL のチェイス カードと 50XXX の AC を持っています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;guessmyname:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;カモ: &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46534673"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46534673&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delfinom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Apple が何に屈したのか不思議だ。彼らが最初にゴールドマンに協力を求めたのは、顧客サポートが毎年同じ日に終了するように全員の明細書日付をまったく同じに設定するなど、業界に逆行する重大な要求があったためであったことは有名だ。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.jpmorganchase.com/ir/news/2026/chase-to-become-new-issuer-of-apple-card</guid>
+      <pubDate>Thu, 08 Jan 2026 03:29:11 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46536848</comments>
     </item>
     <item>
-      <title>Google はどのようにして調子を取り戻し、OpenAI に先んじたのか</title>
-      <link>https://www.wsj.com/tech/ai/google-ai-openai-gemini-chatgpt-b766e160</link>
-      <guid isPermaLink="true">https://www.wsj.com/tech/ai/google-ai-openai-gemini-chatgpt-b766e160</guid>
-      <pubDate>Wed, 07 Jan 2026 16:29:41 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46528389</comments>
+      <title>オープンインフラストラクチャマップ</title>
+      <link>https://openinframap.org</link>
+      <guid isPermaLink="true">https://openinframap.org</guid>
+      <pubDate>Thu, 08 Jan 2026 03:31:12 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46536866</comments>
+    </item>
+    <item>
+      <title>Go.sum はロックファイルではありません</title>
+      <link>https://words.filippo.io/gosum/</link>
+      <description>&lt;p&gt;すべての依存関係が構築される正確なバージョンがリストされます。 toml) には、通常、サポートされているバージョンについての潜在的に複雑なルールとともに、いくつかの依存関係がリストされます。依存関係の最小許容マニフェスト バージョン。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Go.sum is not a lockfile&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46537095"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://words.filippo.io/gosum/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;djha-skin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;代わりに、go.mod を見てください。すべての依存関係が構築される正確なバージョンがリストされます。&lt;p&gt;いいえ、リストされません。最小バージョンの選択とは、ライブラリが&lt;i&gt;少なくとも&lt;/i&gt;そのバージョンであることを意味しますが、一時的な依存関係によってそれが要求された場合は、新しいバージョンに置き換えられる可能性があります。&lt;p&gt;私がこのブログ投稿を読んでいるということは、「市場」が存在することを示唆しています。単一のチェックサム&amp;#x2F;バージョン マニフェストの場合、そのデータは現在 go.sum に格納されています。これは悲しいことですが、ハイラムの法則などもそうです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Groxx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;&lt;i&gt;メイン モジュールが example.com&amp;#x2F;mod1&amp;#x2F;pkg1 をインポートし、別の example.com&amp;#x2F;mod1&amp;#x2F;pkg2 が example.com&amp;#x2F;mod2 をインポートする場合、example.com&amp;#x2F;mod2 が開発者のマシンでのビルドやコードの実行に影響を与える方法はないため、それを考慮する必要はありません。 dependency.&lt;/i&gt;&lt;p&gt;iirc (現時点では検証するためのテスト設定がありません) 依存関係の解決に影響を&lt;i&gt;与え&lt;/i&gt;ますが、&lt;i&gt;そのコード&lt;/i&gt;はバイナリに存在しません。  私がこれを知っているのは、これらの AWS &amp;#x2F; が理由です。 K8S&amp;#x2F; Google Cloud ライブラリは、未使用のサブパッケージに含まれる依存関係（したがって最小バージョンが引き上げられる）が、下位バージョン（iirc）を必要とする他のモジュールでのみ使用されている場合でも、メジャー バージョンの変更がなく継続的な互換性を伴う変更と、メジャー バージョンの変更なしに頻繁に互換性を欠く変更がある他のライブラリをインポートすることにより、大規模な問題を引き起こします。  これは時々非常に頭の痛い問題ですが、下限だけでなく上限を設定できれば、比較的簡単に解決できます。&lt;p&gt;バージョンに影響する動作は、避けられない問題です。  未使用のバージョン制約が含まれて&lt;i&gt;いない&lt;/i&gt;場合は、「ビルドに進む」か、既存のモジュール内に新しいパッケージをインポートするだけでビルドが失敗し、バージョン解決の再実行が必要になる可能性があります。  それはおそらく、人々を「Go は壊れている、ひどい」と感じさせるだけであり、Go はそのようなことを避けることにひどく傾くでしょう。ほとんどの場合は良い方向に進みますが、常にそうとは限りません。あらゆる意味でではありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;peterldowns:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;その通りですが、かなりの年月が経っており、デフォルトのアクション setup-go github アクションでは依然として go.sum が代わりに使用されています。この投稿を参照するために長年の問題についてすでに誰かがコメントしているようです。彼らが更新してくれることを期待しています。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;actions&amp;#x2F;setup-go&amp;#x2F;issues&amp;#x2F;478" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;actions&amp;#x2F;setup-go&amp;#x2F;issues&amp;#x2F;478&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anishgupta:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;いいですね、github.com&amp;#x2F;foo&amp;#x2F;bar v1.2.3 のようなモジュールが後から上流で変更または侵害された場合、まったく同じコンテンツがフェッチされない限り、go.sum のチェックサムによりビルドが失敗します。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://words.filippo.io/gosum/</guid>
+      <pubDate>Thu, 08 Jan 2026 04:10:34 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46537095</comments>
+    </item>
+    <item>
+      <title>HN を表示: SSOT が定義時のフックとイントロスペクションを必要とする Lean4 の証明</title>
+      <link>https://zenodo.org/records/18177320</link>
+      <description>&lt;p&gt;プログラミング言語はこの認識構造をインスタンス化します。エンコーディング システムはコードベースになり、ファクトは構造仕様 (クラスの存在、メソッド シグネチャ) になり、一貫性はエンコーディングの場所全体で一貫性になり、DOF = 1 が単一の真実の情報源 (DRY 原則) になります。エンコーディング システム → コードベースファクト → 構造仕様 (クラスの存在、メソッド シグネチャ) コヒーレンス → エンコーディングの場所全体での一貫性 DOF = 1 → 単一の真実のソース (DRY 原則) 構造ファクトに対して DOF = 1 を達成するには、特定の言語機能、つまり定義時フックと内省可能な導出が必要であることを証明します。 ) にはこれらの機能が欠けており、プログラマーの努力に関係なく、構造的事実の一貫性を達成することができません。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Lean4 proof that SSOT requires definition-time hooks and introspection&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46537459"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://zenodo.org/records/18177320'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;curtisf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これが何を意味するのか理解できません。&lt;p&gt;分散システムには一貫性などの概念が明確に形式化されており、コンセンサスを正しく達成するアルゴリズムがあります。&lt;p&gt;「単一の真実の情報源」を形式化するとはどういう意味ですか?原則、これは指導原則であり、予測法則ではありませんか?&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://zenodo.org/records/18177320</guid>
+      <pubDate>Thu, 08 Jan 2026 05:15:41 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46537459</comments>
+    </item>
+    <item>
+      <title>Intricuit: Mac ラップトップ用のタッチスクリーン アドオン</title>
+      <link>https://intricuit.com</link>
+      <description>&lt;p&gt;× 互換性のある MacBook モデル お使いの MacBook モデルを確認するには、Apple メニュー  → この Mac についてに移動します。 Mac モデル ディスプレイ サイズ 発売年 MacBook Air 13 インチ 2025 - M4 2024 - M3 2022 - M2 15 インチ 2025 - M4 2024 - M3 2022 - M2 MacBook Pro * 14 インチ 2025 - M5 2024 - M4 2023 - M3 2023 - M2 2021 - M1 16 インチ 2024 - M4 2023 - M3 2023 - M2 2021 - M1 * M シリーズ Pro および Max バリアントが含まれます。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Intricuit: A touchscreen add-on for Mac laptops&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46536897"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://intricuit.com'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;phplovesong:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはかなりクールです。唯一の（私の個人的な大きな問題は）Macbookの画面が「最後まで動かない」という事実です。つまり、通常のように絵を描いたり書いたりするように（90度の角度から）使用できないことを意味します&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Groxx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;彼らの主張どおりに機能するのであれば、139 ドル (Kickstarter の初期価格) は驚くほど安く感じます。ディスプレイ付きのワコムは&lt;i&gt;かなり&lt;/i&gt;高価で、ディスプレイの解像度が低く、携帯性が低く、人間工学が (良くも悪くも) まったく異なります。  ただし、これらはセカンド スクリーンでもあります。&lt;p&gt;他のコンピュータでも動作するかどうか疑問に思います。もちろん、それほど滑らかではありませんが、おそらくソフトウェア（ある場合）を除いて、おそらくまだ&lt;i&gt;機能&lt;/i&gt;します...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NSPG911:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;うーん、それはクールですが、要点が抜けています、なぜですか？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://intricuit.com</guid>
+      <pubDate>Thu, 08 Jan 2026 03:36:32 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46536897</comments>
     </item>
   </channel>
 </rss>
