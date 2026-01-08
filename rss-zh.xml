@@ -6,49 +6,15 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 08 Jan 2026 09:33:23 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Jan 2026 12:54:16 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>仔细观察委内瑞拉的 BGP 异常</title>
-      <link>https://blog.cloudflare.com/bgp-route-leak-venezuela/</link>
-      <description>&lt;p&gt;背景：BGP 路由泄漏 首先，让我们回顾一下什么是 BGP 路由泄漏。 AS8048 (CANTV) 的路由泄漏 现在我们已经提醒自己什么是 BGP 中的路由泄漏，让我们检查一下时事通讯帖子中的假设。这绝对是路由泄漏。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A closer look at a BGP anomaly in Venezuela&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46538001"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://blog.cloudflare.com/bgp-route-leak-venezuela/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;moktonar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;真正的问题是：你如何成为中间人并为自己保留无辜者的利益？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lucideer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该帖子多次提到泄漏“一直”发生，但与此相关的唯一比较数据是&lt;i&gt;来自&lt;/i&gt; AS8048 的历史泄漏。&lt;p&gt;有人知道这些泄漏在网络上的一般频率可能是多少吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Fiveplus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我有点困了，但我喜欢这篇文章。关于路径前置的分析确实使&lt;i&gt;事故&lt;/i&gt;理论更加深入人心。如果国家行为者试图拦截流量（MITM），他们要做的最后一件事就是多次填充 AS 路径，因为这会告诉全局路由表，“不要走这条路，我是漫长的风景路线”哈哈&lt;p&gt;这可能是一个典型的胖手指配置错误，很可能是一个路由映射，旨在操纵其自己的上游链接的流量工程，由于缺少拒绝所有子句而无意中广泛泄漏。尽管如此，一个很好的提醒是，BGP 从根本上来说仍然是一个基于信任的系统，其中配置文件中的单个拼写错误可能会在全球范围内级联。切勿将缺少导出过滤器充分解释的行为归因于恶意。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;DinakarS:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Cloudflare 的深度和覆盖范围令人疯狂&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;相关初始后果：&lt;p&gt;&lt;i&gt;委内瑞拉停电期间出现 BGP 异常&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46504963"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46504963&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://blog.cloudflare.com/bgp-route-leak-venezuela/</guid>
-      <pubDate>Thu, 08 Jan 2026 06:46:26 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46538001</comments>
-    </item>
-    <item>
-      <title>研究发现人工智能漏掉了近三分之一的乳腺癌</title>
-      <link>https://www.emjreviews.com/radiology/news/ai-misses-nearly-one-third-of-breast-cancers-study-finds/</link>
-      <description>&lt;p&gt;3 年来，最近被诊断出患有乳腺癌，研究人员评估了基于人工智能的计算机辅助诊断系统 (AI-CAD) 在读取乳房 X 光照片和乳房 MRI 扫描时的表现。人工智能漏掉了致密乳腺组织中更多的癌症 结果令人震惊：127 种癌症，30 种。弥散加权成像在检测基于人工智能的乳房 X 光检查漏掉的乳腺癌方面增加了价值。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; AI misses nearly one-third of breast cancers, study finds&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46537983"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.emjreviews.com/radiology/news/ai-misses-nearly-one-third-of-breast-cancers-study-finds/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;swisniewski:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;摘要中的描述听起来非常有缺陷。&lt;p&gt;1.他们只测试了 2 名放射科医生。他们将其与一种模型进行了比较。因此，结果并没有说明放射科医生在对抗人工智能方面的表现如何。该研究可以说的最慷慨的一点是，2 名放射科医生的表现优于特定模型。&lt;p&gt;2.放射科医生只获得一种类型的图像，并且仅针对人工智能错过的那些患者。摘要没有说明测试是否是盲目的。该研究有 3 位作者，似乎都是放射科医生，并且提到 2 名放射科医生查看了人工智能遗漏的扫描。这就引发了关于测试是否盲目的问题。&lt;p&gt;向人类提供他们知道是真阳性的数据并说“找到人工智能错过的证据”与向经过训练以减少误报的人工智能模型提供分类任务有很大不同。&lt;p&gt;当人类想要找到模式时，他们非常有能力找到模式（即使它们不存在）。&lt;p&gt;即使这项研究最初是盲目的，训练有素的人类医生可能很快就会注意到他们正在分析的数据是&lt;p&gt;即使他们没有注意到，人类也很容易受到锚定偏差的影响。&lt;p&gt;锚定偏差是一种认知偏差，个人在做出后续判断或决策时过于依赖他们收到的第一条信息（“锚定”）。&lt;p&gt;他们扭曲了自然或数据很可能会放大任何锚定偏差。&lt;p&gt;如果实验有控制，任何由人类估计错误引起的测量误差都可能被抵消（应预期图像或医生的大量随机样本在每组中具有相同的估计误差）。但实验中根本没有对照，而且样本量也很小。因此，估计偏差对结果的影响可能是巨大的。&lt;p&gt;从我在摘要中读到的内容来看，这些结果似乎并不可靠。&lt;p&gt;我错过了什么吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;directevolve:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这项研究的要点在于，它表明全自动乳房 X 线摄影目前使用该模型检测乳腺癌的灵敏度可以达到 70%。它无法让我们将人工智能与无人辅助的人类表现进行比较。由于本研究不包括健康对照，因此不存在假阳性率。假阳性率是一个重要的缺失指标，因为绝大多数女性没有患乳腺癌。&lt;p&gt;在乳房 X 光检查和 DWI 数据集中近一半的假阴性中，两位乳腺放射科医生将癌症归类为隐匿性，这意味着经过训练的眼睛是看不见癌症的。 AI 模型对乳房 X 光检查数据的非隐匿性假阴性率为 19.3%。&lt;p&gt;对于该 19.3% 的数字，请参阅表 2：AI 漏诊的癌症中 68 个非隐匿性的，AI 检测到的癌症中 285 个非隐匿性的。&lt;p&gt;这项研究没有将 AI 与放射科医生在一组健康图像和癌症图像的混合图像上进行比较。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sfink:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;标题让我很困扰。这对我来说意味着“人工智能”是一件事。如果两个人接受测试，结果发现他们不擅长阅读 MRI 图像，那么标题应该是“男性放射科医生漏掉了近三分之一的乳腺癌”吗？&lt;p&gt;如果它说“人工智能&lt;i&gt;某事&lt;/i&gt;”，我会同意的。这是关于某件事的声明，而不是关于一般人工智能的声明。将其用作形容词（我猜是“AI-using”的缩写？），而不是名词。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ggm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有助于显示人类以及系统辅助人类的失败率。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;docdeek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在人类随访中，有所改善，但仍存在差距：&lt;p&gt;&gt;他们的研究结果令人放心：仅 DWI 就识别出 AI 忽略的大多数癌症，一位放射科医生检测出 83.5% 的漏检病变，另一位放射科医生则检测出 79.5%。&lt;p&gt;AI 和这种 DWI 方法相结合似乎可以识别大部分癌症，但仍有约 20% 的 1&amp;#x2F;3 被漏掉。我认为，由于这些都是确诊病例，他们是通过 DWI 以外的另一种方法发现的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Moosturm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;A.I. 不应该吗？不以它只是试图提供帮助的方式使用？例如。医生先看一下，如果他找不到任何东西，那么人工智能就会发现。也在检查（或并行）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;levocardia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;原始研究：&lt;a href="https:&amp;#x2F;&amp;#x2F;link.springer.com&amp;#x2F;article&amp;#x2F;10.1007&amp;#x2F;s11547-025-02161-1" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;link.springer.com&amp;#x2F;article&amp;#x2F;10.1007&amp;#x2F;s11547-025-02161-1&lt;/a&gt;&lt;p&gt;这只是回顾性的，即针对已知患有乳腺癌的女性的病例系列，因此假阴性为零，真阴性为零，因为所有研究中的患者确实患有癌症。&lt;p&gt;使用的 AI 系统是 2021 年左右投入商业使用的 ConvNet，即收集该病例系列数据的时间。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;emil-lp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请始终呈现混淆矩阵。一个数字（几乎）是无用的。&lt;p&gt;我可以通过&lt;p&gt;&lt;pre&gt;&lt;code&gt; def detector(x) 检测到 100%：
-        返回True&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andrewstuart:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人工智能发现了近二分之三的乳腺癌！&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.emjreviews.com/radiology/news/ai-misses-nearly-one-third-of-breast-cancers-study-finds/</guid>
-      <pubDate>Thu, 08 Jan 2026 06:43:07 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46537983</comments>
+      <title>母亲 (YC X26) 正在招聘</title>
+      <link>https://jobs.ashbyhq.com/9-mothers</link>
+      <guid isPermaLink="true">https://jobs.ashbyhq.com/9-mothers</guid>
+      <pubDate>Thu, 08 Jan 2026 12:00:35 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46540078</comments>
     </item>
   </channel>
 </rss>
