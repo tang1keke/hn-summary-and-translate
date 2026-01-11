@@ -6,169 +6,92 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 11 Jan 2026 02:15:15 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 Jan 2026 04:14:19 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Show HN：Librario，聚合 G 图书、ISBNDB 等的图书元数据 API</title>
-      <link>https://news.ycombinator.com/item?id=46571149</link>
-      <description>&lt;p&gt;TLDR：Librario 是一个图书元数据 API，它将来自 Google Books、ISBNDB 和 Hardcover 的数据聚合到单个响应中，解决了没有单一来源拥有完整图书信息的问题。一个可能提供系列，另一个可能提供流派，另一个可能提供一个好的封面，但没有一个提供一切。它从多个来源（Google 图书、ISBNDB、精装本）获取有关图书的信息。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Librario, a book metadata API that aggregates G Books, ISBNDB, and more&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46571149"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46571149'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;apublicfrog:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哇。我个人对此没有任何用处，但你的帖子确实介绍得很好，详细且来源丰富。我希望一切顺利！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;krick:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它可以处理英语以外的语言吗？我记得在某些任务中尝试过类似的 API，虽然我成功地找到了英文标题，但任何其他语言（无论是原始标题，还是一些相当知名的书籍的翻译）基本上都无法访问。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wizzwizz4:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请确保您的数据库跟踪数据的获取时间和来源。当自动数据摄取系统用自动生成的错误数据覆盖手动更正的数据时，这是&lt;i&gt;异常&lt;/i&gt;令人沮丧的：跟踪来源是跟踪权威性的重要一步。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cmaury:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您能提取即将推出的游戏吗？我想要的只是我已经准备好出版的作者的每周或每月的书籍清单，但我无法找到它或构建它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;moritzruth:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您对 BookBrainz 有何看法？&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;bookbrainz.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;bookbrainz.org&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ksr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很好，我可以为我的 ISBN 提取器尝试一下你们的 API &amp;#x2F; &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;infojunkie&amp;#x2F;isbn-info.js" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;infojunkie&amp;#x2F;isbn-info.js&lt;/a&gt;&lt;p&gt;现在，我使用 node-isbn &lt;a href="https:&amp;#x2F;&amp;#x2F;www.npmjs.com&amp;#x2F;package&amp;#x2F;node-isbn" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.npmjs.com&amp;#x2F;package&amp;#x2F;node-isbn&lt;/a&gt; 大部分运行良好，但已经过时了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wredcoll:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对这种努力表示赞赏，但上次我尝试这样做时，主要问题是大量的图书数据只能从 amazon.com 获得，而且温和地说，抓取数据是很乏味的。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46571149</guid>
-      <pubDate>Sat, 10 Jan 2026 23:45:25 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46571149</comments>
-    </item>
-    <item>
-      <title>Show HN：与法学硕士一起玩扑克，或观看他们互相比赛</title>
-      <link>https://llmholdem.com/</link>
-      <guid isPermaLink="true">https://llmholdem.com/</guid>
-      <pubDate>Sat, 10 Jan 2026 19:27:39 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46569061</comments>
-    </item>
-    <item>
-      <title>私募股权公司在过去十年收购了超过 500 个自闭症中心：研究</title>
-      <link>https://www.brown.edu/news/2026-01-07/private-equity-autism-centers</link>
-      <description>&lt;p&gt;[布朗大学]——私募股权公司在美国收购了 500 多个自闭症治疗中心。美国的自闭症诊断情况。与上市公司不同，私募股权公司和私人诊所不需要披露收购情况，这使得数据收集具有挑战性且劳动密集型。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Private equity firms acquired more than 500 autism centers in past decade: study&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46571095"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.brown.edu/news/2026-01-07/private-equity-autism-centers'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 21 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;datsci_est_2015:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;PE 通过寻租毁掉了我的城市的服务：&lt;p&gt;&lt;pre&gt;&lt;code&gt; - 兽医服务
-  - 牙科服务
-  - 验光服务
-  - 紧急护理服务
-&lt;/code&gt;&lt;/pre&gt;
-我不遗余力地（有时是显着地）去非私募股权公司和服务机构，体验要好得多，就像体验完全不同的生活质量一样。我的 2 美分是“社会契约的解体”中相当大的一部分。在美国，这是由于人们在与这些没有灵魂的实体互动时所受到的对待。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TrackerFF:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;想想看，我认为我从未经历过一种产品或服务在公司被 PE 收购后变得更好。 &lt;p&gt;曾经有一段时间，PE 收购了管理不善的公司，并扭转了它们的局面 - 但我们在过去 10 年左右看到的 PE 收购热潮……似乎完全是为了引起“enshitification”。这种事到处都在发生。每个行业总会存在一些利基私募股权公司，没有什么是安全的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Hnrobert42:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私募股权投资公司就涉足这一领域。进入那个。问题是有些人赚了太多该死的钱。他们得把它放在某个地方。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ekjhgkejhgk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;绝对的癌症。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;locusofself:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的女儿患有“自闭症谱系障碍”，与这些治疗场所打交道只是浪费时间和金钱。我不知道我们去的地方是私人股本公司还是什么，但质量真的很差，而且这是在一个也很富裕的大都市区。治疗师看上去是个心地善良的人，但他们的报酬却很低，以至于人员流动不断。计费方式总是阴暗、复杂且令人沮丧。更不用说大多数这些地方都需要 6 到 12 个月的等待时间才能见到任何人。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SkyeCA:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果企业是人，那么私募股权公司就应该像社会上的渗漏者一样被处决。没有什么比基本服务越来越多地被这些令人厌恶的老鼠攫取的事实更让我感到愤怒的了，这样他们就可以从社会中榨取每一分钱。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dizlexic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你感到惊讶吗？有钱可赚。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;46493168:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;“私人投资者在扩大准入的同时赚一点钱本身并不是一件坏事，”辛格说。 “但我们需要了解这到底是一件坏事，还是一件好事。这是朝着这个方向迈出的第一步。”&lt;p&gt;谁能说出什么是“一点点钱”？在这儿吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blibble:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;啊，是的，又一个私募渣渣意识到“市场效率低下”的市场现有企业并没有“获取最大的消费者剩余”&lt;p&gt;幸运的是，英国对人们来说没有这个问题，因为国营医疗保健系统将价格下限设定为零&lt;p&gt;但它并没有完全阻止私募股权浮渣，相反，他们买下了该国大部分以前的独立退伍军人&lt;p&gt;&gt;从 2013 年的 10% 到如今，近 60% 的兽医诊所都属于大公司&lt;p&gt;然后他们立即“优化需求曲线”，将价格翻倍至三倍，这意味着现在有人再也无力承担治疗宠物的费用&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;renewiltord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私募股权投资哪里有钱就去哪里。没有什么是神奇的非剥削性，仅仅因为它是由一群小商人而不是私募股权公司完成的。私募股权投资公司购买如此多的透析诊所是有原因的。他们这样做是有原因的。&lt;p&gt;为此骗政府钱很容易，因为一群善意的“有用的白痴”正在这样做。会说“不惜一切代价”给他们需要的钱；这是为了人命！”但这些都不是真的。这一切都是为了利用不同的阵营对正常纳税的美国人寻租。&lt;p&gt;蒂姆·沃尔兹因此失去了连任的希望，但他并不是唯一一个。随着时间的推移，我们会发现大量的医疗保健诈骗，家庭护理和自闭症和儿童心理健康将接近顶峰。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;class3shock:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;读到这个标题，我所能想到的就是许多自闭症患者没有能力进行交流，或者即使有，也只能以有限的方式进行交流。顾名思义，就是没有发言权的人。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;analog8374:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因为自闭症患者是最好的工程师？所以自闭症中心就成了一个招募工具。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hermanzegerman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们已经知道，私募股权为了盈利而在医院[1]和疗养院[2]杀人。那么，为什么我们继续允许他们经营医疗机构呢？&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;jamanetwork.com&amp;#x2F;journals&amp;#x2F;jama&amp;#x2F;fullarticle&amp;#x2F;2813379" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;jamanetwork.com&amp;#x2F;期刊&amp;#x2F;jama&amp;#x2F;fullarticle&amp;#x2F;2813379&lt;/a&gt;&lt;p&gt;[2] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.nber.org&amp;#x2F;papers&amp;#x2F;w28474" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.nber.org&amp;#x2F;papers&amp;#x2F;w28474&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;InMice:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;公共卫生学院高级研究科学家丹尼尔·阿诺德 (Daniel Arnold) 表示，主要担心的是私募股权公司可能会优先考虑经济收益而不是家庭。&lt;p&gt;...可能吗？他们怎么还没有以有计划的方式吞噬它们呢？针对保险索赔审查宽松的州&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Buttons840:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果投资者在此过程中没有获利，那么帮助人们是否道德？ （&amp;#x2F;s）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cogman10:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我真的不喜欢这一点，特别是因为它最终会导致对孩子的照顾变得更差。&lt;p&gt;我认为我带孩子去接受治疗的地方可能是私募股权公司拥有的，但这也是我所在地区唯一可用的地方。&lt;p&gt;我知道他们每个季度的收费约为 80 美元，我也知道他们的治疗师的工资约为每小时 25 至 30 美元。&lt;p&gt;这为从员工福利到建筑租赁到管理的一切留下了非常可观的利润（我认为这可能是大部分利润的去向）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andy99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些对于监管机构来说应该是有用的信号。监管并不完善，但不知怎的，我们责怪那些​​利用不成熟或不存在的监管（这里可能就是这种情况）或写得不好的监管（例如2000年左右的加州能源监管，让安然及其公司失控）的公司。&lt;p&gt;这些公司在本质上寻找套利机会，实际上是在帮助加强监管，但前提是监管机构关注正在发生的事情并采取行动，而不是仅仅看着它发生。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JumpCrisscross:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果我们要坚持医疗保健基础设施的私有制，那么面向患者的医疗服务提供者至少应该是共益企业，其中一个董事会席位代表医生和护士的利益，另一个席位代表患者的利益。 （不知道你会如何选择后者。）&lt;p&gt;还应该有严格的杠杆、关联方交易和股息限制。作为交换，我们可能会为需要生命线的医疗保健提供者提供最后的公共贷款人。&lt;p&gt;禁止私募股权参与医疗保健是一个很好的标题。如果我是候选人，我可能会参加竞选。但这只是解决更广泛的激励问题的创可贴。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;threethirtytwo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有道理。我现在认识的人有一半患有自闭症，包括埃隆·马斯克，所以这是相当有利可图的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sergiotapia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私募股权只会让消费者的一切变得更糟。榨干每一分钱。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Krasnol:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;医疗保健领域的私募股权特别清楚地表明了资本主义愿意走多远。从人类和动物的痛苦中获利，虽然可能仍然感觉良好，甚至是英雄主义，但令我感到厌恶。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.brown.edu/news/2026-01-07/private-equity-autism-centers</guid>
-      <pubDate>Sat, 10 Jan 2026 23:36:16 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46571095</comments>
-    </item>
-    <item>
-      <title>代码是粘土</title>
-      <link>https://campedersen.com/code-is-clay</link>
-      <description>&lt;p&gt;即使实施失败，这个想法仍然存在。你可能会认为粘土会消失。它只是变得更有趣了。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Code Is Clay&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46569225"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://campedersen.com/code-is-clay'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;culi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;甜蜜的视觉效果！你是怎么做到的？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;somewhereoutth:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得这篇文章（像许多其他的努力一样）已经被整个人工智能的事情脱轨了。让我们忽略这一部分。&lt;p&gt;重点是，是的，粘土和代码都是&lt;i&gt;表达媒介&lt;/i&gt;，它们各有优点和缺点 - 对于表达、货币化、实用性等等。我本人对这些（和其他）不同媒介如何影响&lt;i&gt;作者&lt;/i&gt;（艺术家、设计师、陶艺家、编码员等）如何思考、思考什么以及如何调节他们与周围世界的关系 - 以及由此产生的随之而来的文化非常感兴趣。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;disqard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇博文的标题立刻让我想起了“大泥球”：&lt;p&gt;&lt;a href="http:&amp;#x2F;&amp;#x2F;laputan.org&amp;#x2F;mud&amp;#x2F;" rel="nofollow"&gt;http:&amp;#x2F;&amp;#x2F;laputan.org&amp;#x2F;mud&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Avicebron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望作者能够解决人们是否可以通过制作超立方体来买房子和养家糊口。陶工能够制作杯子和罐子，因为那是人们需要的。在作者设想的人造陶瓷的未来中，致力于陶艺工艺的物质现实是什么？我们到底需要多少陶瓷厂？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;analog8374:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;事实上，粘土不需要智力，而代码则需要。这是一个天壤之别。相对而言，代码是非常粗糙的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bossyTeacher:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;老实说，我想我会更喜欢它。我进入编程领域是因为我喜欢构建东西，而不是因为我想在余生中编写样板文件。&lt;p&gt;在我看来，OP 希望成为命令他的工程师团队构建某些东西的执行官，而不是他成为实际构建它的工程师。&lt;p&gt;此外，“但粘土并没有消失。现在陶瓷工作室随处可见。人们花很多钱在周末扔罐子。”多么误导性的说法。全职陶艺工人并不都开设工作室（可能比例很小，但陶艺工作室的人更有可能不是来自陶艺厂背景），而那些开设陶艺工作室的人很可能无法通过迎合像OP这样的人来获得全职同等水平的收入。&lt;p&gt;这篇文章读起来就像一个缺乏同情被剥夺权利的能力的特权人士。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;emilsedgh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，它是如何从“一切都需要强类型”发展到“一切都需要强类型”的。 “即使是 C++ 也不够，我们需要 Rust 来解决所有问题”对此...&lt;p&gt;目前，我们行业中的很大一部分人只是炒作的追随者。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://campedersen.com/code-is-clay</guid>
-      <pubDate>Sat, 10 Jan 2026 19:43:57 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46569225</comments>
-    </item>
-    <item>
-      <title>Show HN：GlyphLang – 一种人工智能优先的编程语言</title>
-      <link>https://news.ycombinator.com/item?id=46571166</link>
-      <description>&lt;p&gt;GlyphLangGlyphLang 将冗长的关键字替换为更有效地标记化的符号：# Python @app。 query("SELECT * FROM users WHERE id =.query("SELECT * FROM users WHERE id =.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: GlyphLang – An AI-first programming language&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46571166"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46571166'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Show HN: Ferrite – Rust 中的 Markdown 编辑器，具有原生美人鱼图渲染</title>
+      <link>https://github.com/OlaProeis/Ferrite</link>
+      <description>&lt;p&gt;屏幕截图 原始编辑器 渲染视图 分割视图 Zen 模式功能 核心编辑 所见即所得 Markdown 编辑 - 通过实时预览、单击编辑格式和语法突出显示来编辑 Markdown 多格式支持 - 对 Markdown、JSON、YAML 和 TOML 文件的本机支持 树查看器 - JSON/YAML/TOML 的分层视图，具有内联编辑、展开/折叠和路径复制 查找和替换 - 使用正则表达式支持进行搜索并匹配突出显示 撤消/重做 -每个选项卡完全撤消/重做支持 视图模式 分割视图 - 并排原始编辑器和带有可调整大小分隔线的渲染预览 Zen 模式 - 使用居中文本列进行无干扰书写 同步滚动 - 原始视图和渲染视图之间的双向滚动同步 编辑器功能 语法高亮显示 - 40 多种语言的完整文件语法高亮显示（Rust、Python、JavaScript、Go 等。 /target/release/ferrite # 打开特定文件。 /target/release/ferrite path/to/folder/ View模式 Ferrite 支持 Markdown 文件的三种查看模式： 原始 - 带有语法突出显示的纯文本编辑 渲染 - 带有渲染 Markdown 的所见即所得编辑 拆分 - 并排原始编辑器和实时预览 使用工具栏按钮或键盘快捷键在模式之间切换。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Ferrite – Markdown editor in Rust with native Mermaid diagram rendering&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46571980"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/OlaProeis/Ferrite'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;DonHopkins:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[延迟]&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;29athrowaway:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这可能是 IR 而不是高级语言。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;omneity:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您对 LLM 在生成 Glyphlang 方面有什么评价吗？&lt;p&gt;我很好奇您是否针对生成功能代码的能力进行了优化，或者只是针对标记化压缩率进行了优化，您针对哪些 LLM 进行了标记化，以及您的优化过程是怎样的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jaggederest:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，我一直在研究一些相反的东西 - 尽可能避免使用符号并尝试使用完整的英语单词。&lt;p&gt;非常不成熟，但是&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;jaggederest&amp;#x2F;locque" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;jaggederest&amp;#x2F;locque&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jy14898:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得任何偏离 LLM 训练语法的行为都是没有成效的。&lt;p&gt;当然，你可以用更少的标记来表示相同的代码，但我怀疑它是否会经常使这些标记正确。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jbritton:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我与 Claude 就使用什么语言进行了交谈。这是一个 Web 应用程序，它引导我使用 Typescript，主要是因为模型的训练数据，加上打字和能够编写纯函数。除了训练数据量较少之外，Haskell 可能是首选。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rubyn00bie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为这有一定的新颖性，而且我觉得这种语言的美感令人愉悦，但我有点困惑……不可否认，我没有阅读整个文档，只是快速浏览了源代码……但这只是将 Golang 代码与这种语法进行相互转换，还是最终打算成为一门完整的语言？人们可以只导入 golang 包吗？还是只能使用当前支持的包？&lt;p&gt;此外，我对此有两个想法：&lt;p&gt;1。我认为这作为一个透明层可能更实用，这样用户就可以编写并获取 Golang（或其他语言），原始语言又回来了。从本质上讲，使其成为只有模型读取输出的东西。&lt;p&gt;2。）从长远来看，NVidia 和 AMD 以及培训和运行模型的公司都专注于降低每个代币的成本，因为它太高了。我个人认为，在成本代币不大幅下降的情况下，人工智能不会变得普遍——对于运行模型的公司来说，这是不可持续的，而最终用户确实无法承担今天的实际成本。我的观点是，这在 12-18 个月内是否有必要？&lt;p&gt;我可能完全错过了一些东西，或者缺乏对它的发展方向的愿景，但我个人会担心用它编写的任何东西的保质期都很短。&lt;p&gt;这并不是说它暂时没有用，或者不是一个很酷的项目，更重要的是，如果它有一个更长期的愿景，我认为它值得呼吁。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noosphr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我发现短符号会导致与 llms 词汇表中的其他标记发生冲突。通常，对一种语言中的所有内容使用长描述性名称比短名称要好得多。&lt;p&gt;令我震惊的一个例子是使用 C 的 xml 翻译来实现更好的矢量搜索。缺少大括号使得模型返回比使用其他任何东西都更加相关的代码，包括使用 ctags 丰富数据库。&lt;p&gt;&amp;gt;GlyphLang 针对现代 LLM 标记化的方式进行了专门优化。&lt;p&gt;这是非常可疑的。标记的词汇在模型系列中并不保守，更不用说完全不同类型的模型了。他们唯一擅长的就是将英语标记化。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;everlier:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;可以说，数学符号和集合论已经具备了我们需要的一切。&lt;p&gt;例如，请参阅描述应用程序的提示：
-&lt;一href="https:&amp;#x2F;&amp;#x2F;textclip.sh&amp;#x2F;?ask=chatgpt#c=XZTNbts4EMfvfYqpc0kQWpsEcXZhxwmyuzkESIFF0AIFisIYkSOJ8IjUkiN_IEmPRnL1M2xeTE 9S0HK3iz2QIDkjzvyHv5HQSjTbJotVt9l-eriHktwYDmR6KSu56jZb7Zs1NFgSPME1xvn0sgkUSa4OZNpttnGhIZCxgbQkjx_r6WUbeO-j2yi-PmwjwWz28fbzx9kMGkZN lWdD4SiD_srYvbw8asbWkNIVStmIaig0TCsra1VSbZ1Vpfclk8qtK9UcS6tMq-dplF7lARekSPtoUS09FwHr5wyY3NXo5KTbbLEVD4YKRqFhwCUc6CnkGOnivA0M5LQ3ZB RQUVhtyUn3-s_pxRzEz8nFDHop_yruNlv2Ghnu7z88oVvDdYMBa4gLncHC0hJqb2gMshIwNjaM6-NdQXNxx46WkGqfNhNIx6lWbJvcYzBw89ddt9kO_vCNJfN-AAWRyVHP 4SzlEQiFftxOK8FAeMx2QaB964RCfNQVhqi-9akfMrlfzo9UUsnknlNA9gGWGNx4L697fftt3m22a2L2S9W9vp1epH0gM4E2cPf69uv_7Cd7ewY5mpJ6emJliU3MrIfawJ f3yPL1UDCUJLM28NEEdFE-MubE16qO5XSQxM-a4OtGBmpn-L2cDkaj0SDZ0_psdHZ-djpQUdZM3cvLl_SEKk3D-HeLgVTDGMVqVfgwlIqGu4S-Pk-ArZtDH34HmG_WqgdO 9c_5PNkD2G22u3QwzmeXDmu6GmQ_6S7YL8d9K7BHE7vN1pD2dfo2gi0SS7szSd6pV56u_wPK0jrjl1niRax3WRWomMaFTiXpsZn2-H16uDuUlRxlUPkoZMag2bemYAy0Cx 8VnEBCgZxRgMwJI3IyjNZQBqnPNEYaw8PtzZ8fbiHpgZu7AZwONVs9h7wV8S4qiFXiJmeCvvhRgfE6gnVCZejzBKls3NvBph6Vnz-NDN69u101jNb1fpHCwmoC8VBT9h0" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;textclip.sh&amp;#x2F;?ask=chatgpt#c=XZTNbts4EMfvfYqpc0kQWpsEc...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46571166</guid>
-      <pubDate>Sat, 10 Jan 2026 23:46:58 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46571166</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WillAdams:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;使我的 Windows 11 笔记本电脑中的风扇旋转。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dhruv3006:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;同样基于 markdown 构建 api 客户端 - &lt;a href="https:&amp;#x2F;&amp;#x2F;voiden.md" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;voiden.md&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dmitrygr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于那些像我一样读到这篇文章并想“美人鱼图到底是什么？”的人来说，显然它是一种使用类似 Markdown 的文本来描述简单流程图的方法。更多信息请参见：&lt;a href="https:&amp;#x2F;&amp;#x2F;mermaid.js.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;mermaid.js.org&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adamnemecek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;考虑添加对 Typst 的支持。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;khimaros:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;似乎是黑曜石的一个有前途的替代品，但缺少 [[wikilinks]] 和反向引用&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Levitating:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;使用 egui 制作，如果有人想知道的话。&lt;p&gt;我喜欢 Rust 图形应用程序的新时代。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;huevosabio:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴看到一个没有超级明显的 egui 美学的 egui 项目。&lt;p&gt;您如何看待使用 egui 的工作？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Arubis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很高兴为 Typora 付了钱，它对 Markdown 做了大致相同的事情，但不支持 JSON、Yaml（据我所知）。这感觉像是一个成熟的空间，尤其是法学硕士急切地输出大量带有嵌入图表的可解析文本。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pbronez:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;美人鱼渲染是用 Rust 实现的，还是在某个 JS 解释器中运行 mermaid.js？&lt;p&gt;在其他系统上，我在渲染包含许多美人鱼图的 Markdown 文档时遇到了挑战。如果有一种更强大的方法来做到这一点那就太好了。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/OlaProeis/Ferrite</guid>
+      <pubDate>Sun, 11 Jan 2026 01:50:01 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46571980</comments>
     </item>
     <item>
-      <title>Grateful Dead 联合创始人鲍勃·威尔去世，享年 78 岁</title>
-      <link>https://www.rollingstone.com/music/music-news/bob-weir-grateful-dead-dead-obituary-1234810106/</link>
-      <description>&lt;p&gt;威尔从大卫·尼尔森和未来的杰斐逊飞机成员乔玛·考科宁那里学到了他的第一首吉他乐句。 1968 年，威尔和其他创始成员 Ron“Pigpen”McKernan 因音乐缺陷而被乐队开除，但几个月后两人又回归。肯尼迪的孙女，35 岁去世 随着 1972 年 Pigpen 的去世，Weir 顺利地担任了第二主唱的角色。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Grateful Dead co-founder Bob Weir has died at age 78&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46571707"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.rollingstone.com/music/music-news/bob-weir-grateful-dead-dead-obituary-1234810106/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Show HN：VAM Seek – 2D 视频导航网格，15KB，零服务器负载</title>
+      <link>https://github.com/unhaya/vam-seek</link>
+      <description>&lt;p&gt;VAM Seek - 2D 视频搜索标记演示修剪。 mp4 用于视频流网站的轻量级 2D 视频搜索网格库。传统搜索栏 VAM 搜索 1D 时间轴、试错 2D 网格、即时视觉导航 服务器生成的缩略图 客户端画布提取 重型基础设施 零服务器负载，~15KB JS 复杂集成 一行设置 关键词：视频播放器、视频搜索、缩略图网格、视频导航、HTML5 视频、JavaScript 库、视频流、媒体播放器、视频控件、视频缩略图、搜索栏替代、视频 UX 快速入门（适用于外部站点） &lt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: VAM Seek – 2D video navigation grid, 15KB, zero server load&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46572304"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/unhaya/vam-seek'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://github.com/unhaya/vam-seek</guid>
+      <pubDate>Sun, 11 Jan 2026 02:57:34 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46572304</comments>
+    </item>
+    <item>
+      <title>Arch Linux 包管理 (ALPM) 项目一年的工作</title>
+      <link>https://devblog.archlinux.page/2026/a-year-of-work-on-the-alpm-project/</link>
+      <description>&lt;p&gt;我们已经致力于实现六个里程碑，重点关注包管理生态系统的各个方面，从文件格式的形式化、解析和编写、分发工件的加密验证，到包文件和系统包管理处理：“打包数据格式的正式规范”“工件的基本 OpenPGP 验证”“用于处理单个包的 Rust 库”“alpm-srcinfo 的 Python 绑定”“用于验证分发工件的与分发无关的 OpenPGP 堆栈”“Rust系统包管理库”我们将自己视为更大的自由软件生态系统的一部分。鼓励感兴趣的开发人员和软件包维护人员按文件格式或概念浏览它们。我们希望这能让更多的贡献者参与到 Arch Linux 包管理背后的概念的讨论中。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A Year of Work on the Arch Linux Package Management (ALPM) Project&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46572060"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://devblog.archlinux.page/2026/a-year-of-work-on-the-alpm-project/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://devblog.archlinux.page/2026/a-year-of-work-on-the-alpm-project/</guid>
+      <pubDate>Sun, 11 Jan 2026 02:08:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46572060</comments>
+    </item>
+    <item>
+      <title>西西弗斯现在住在哦我的克劳德</title>
+      <link>https://github.com/Yeachan-Heo/oh-my-claude-sisyphus</link>
+      <description>&lt;p&gt;多代理编排系统。 md # /sisyphus-default 命令 │ ├── ultrawork. md # /cancel-ralph 命令 └── 克劳德.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Sisyphus Now Lives in Oh My Claude&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46572032"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/Yeachan-Heo/oh-my-claude-sisyphus'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SoleilAbsolu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;再见，鲍勃！音乐生活是多么美好啊。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;toomuchtodo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Bob_Weir" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Bob_Weir&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Grateful_Dead" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Grateful_Dead&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;bobweir.net&amp;#x2F;bobby&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;bobweir.net&amp;#x2F;bobby&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.rollingstone.com/music/music-news/bob-weir-grateful-dead-dead-obituary-1234810106/</guid>
-      <pubDate>Sun, 11 Jan 2026 01:04:58 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46571707</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;undeveloper:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这消除了开放代码的主要优势，即轻松访问许多模型以避免破坏单一服务。对于任何拥有专业潜艇的人来说绝对无法使用。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deckardt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于那些一直在跟踪 Oh My OpenCode 和 Anthropic 之争的人来说。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/Yeachan-Heo/oh-my-claude-sisyphus</guid>
+      <pubDate>Sun, 11 Jan 2026 02:00:45 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46572032</comments>
     </item>
     <item>
-      <title>从生产语言模型中提取书籍（2026）</title>
-      <link>https://arxiv.org/abs/2601.02671</link>
-      <description>&lt;p&gt;) Connected Papers Toggle Connected Papers（什么是 Connected Papers。） Litmaps Toggle Litmaps（什么是 Litmaps。） 代码链接 Toggle Papers with Code（什么是 Papers with Code。）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Extracting books from production language models (2026)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46569799"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://arxiv.org/abs/2601.02671'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;visarga:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这听起来相当糟糕，为什么他们不实现基于 n-gram 的布隆过滤器来确保他们不会复制太接近他们训练的受保护 IP 的表达式？几乎任何随机 10 个单词的 ngram 在互联网上都是独一无二的。&lt;p&gt;或者，他们可以对从受保护来源提取的摘要和 QA 对等合成数据进行训练，以便模型将想法与原始表达分开。因为它从未见过原件，所以无法反省它们。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://arxiv.org/abs/2601.02671</guid>
-      <pubDate>Sat, 10 Jan 2026 20:50:29 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46569799</comments>
+      <title>由于“供应冲击”，美国服药过量死亡人数正在下降：研究</title>
+      <link>https://www.economist.com/united-states/2026/01/08/why-overdose-deaths-are-falling-in-america</link>
+      <guid isPermaLink="true">https://www.economist.com/united-states/2026/01/08/why-overdose-deaths-are-falling-in-america</guid>
+      <pubDate>Sat, 10 Jan 2026 19:54:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46569312</comments>
     </item>
     <item>
-      <title>英国命令 Ofcom 探索加密后门</title>
-      <link>https://reclaimthenet.org/uk-orders-ofcom-to-explore-encryption-backdoors</link>
-      <description>&lt;p&gt;端到端加密可以保证您的私人消息的私密性。这不是什么后果。与所有政府工具一样，该工具将被“重新调整用途”。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; UK Orders Ofcom to Explore Encryption Backdoors&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46570158"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://reclaimthenet.org/uk-orders-ofcom-to-explore-encryption-backdoors'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;puppycodes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一段时间以来，前往英国旅行应该像访问中国或类似的地方一样对待。&lt;p&gt;将您的设备留在家里，并享受零隐私权。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ekjhgkejhgk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所有“GPG 不安全”的说法都是如此。装腔作势的人，一旦政府强制他们的通讯后门，他们就会撤出 GPG。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alfiedotwtf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哦，已经六个月了（……自他们上次尝试以来）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;harel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不知道英国到底发生了什么，才变成现在这个样子。这不仅仅是一场针对“通用计算”的战争，更是一场针对“通用计算”的战争。正如有人在这里所说的。这感觉就像是一场针对“普通民众”的战争。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JCattheATM:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;针对通用计算的战争正在加剧。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;13415:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这只是英国和非英国用户之间沟通的问题。您仍然可以为英国用户提供通信服务，只需禁用所有加密、满足其他 Ofcom 要求并显示大红色“英国不安全版本”即可。所有窗户上的横幅。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;glawre:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当提供商拒绝遵守时，Ofcom 实际上会做什么？&lt;p&gt;我们本周已经看到了 X&amp;#x2F;CSAM 问题，政府和监管机构显然都不愿意对抗美国大型科技公司。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hardlianotion:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;政府如何寻求与独裁政权区分开来？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cedws:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;没有人投票支持这一点。&lt;p&gt;我对现任和上届政府都非常愤世嫉俗，但感觉自工党上台以来发生了转变。从历史上看，这种专横的监视一直受到抑制。有人议论纷纷，但遭到了抵制。现在感觉讨论正在被压制，有无形的力量在起作用。&lt;p&gt;如果英国和欧盟奇迹般地就一项新的青年流动计划达成一致，我就会离开这里。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Xiol:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;它从虐待儿童的材料开始，因为谁会为没有发现这些内容辩护？&lt;p&gt;在最近的 X CSAM 一代争论以及 X 在英国被屏蔽的可能性之后，似乎比我预期的更多的人会为它辩护。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://reclaimthenet.org/uk-orders-ofcom-to-explore-encryption-backdoors</guid>
-      <pubDate>Sat, 10 Jan 2026 21:36:26 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46570158</comments>
+      <title>雷德蒙德 SpaceX 实验室的工作人员接触有毒化学品</title>
+      <link>https://www.fox13seattle.com/video/fmc-w1ga4pk97gxq0hj5</link>
+      <guid isPermaLink="true">https://www.fox13seattle.com/video/fmc-w1ga4pk97gxq0hj5</guid>
+      <pubDate>Sun, 11 Jan 2026 03:15:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46572392</comments>
+    </item>
+    <item>
+      <title>Kodbox：具有多存储融合和Web IDE的开源云桌面</title>
+      <link>https://github.com/kalcaddle/kodbox</link>
+      <description>&lt;p&gt;具有多云支持的自托管文件管理系统。全局拖放：拖放文件和文件夹以进行移动和复制；拖放本地文件/文件夹进行上传；拖放到桌面即可自动下载；拖拽到文件夹自动进入，多个文件管理窗口相互拖拽。多维度文档管理：收藏夹；文档标签；文件分类；最近的文件；专辑；回收站；部门文档公共标签；个人文件私人保险箱。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Kodbox: Open-source cloud desktop with multi-storage fusion and web IDE&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46571760"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/kalcaddle/kodbox'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://github.com/kalcaddle/kodbox</guid>
+      <pubDate>Sun, 11 Jan 2026 01:12:51 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46571760</comments>
     </item>
   </channel>
 </rss>

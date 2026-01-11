@@ -6,169 +6,92 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 11 Jan 2026 02:15:15 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 Jan 2026 04:14:19 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>Show HN: Librario、G ブック、ISBNDB などを集約する書籍メタデータ API</title>
-      <link>https://news.ycombinator.com/item?id=46571149</link>
-      <description>&lt;p&gt;TLDR: Librario は、Google ブックス、ISBNDB、およびハードカバーからのデータを 1 つの応答に集約する書籍メタデータ API であり、完全な書籍情報を含む単一のソースがないという問題を解決します。 1 つはシリーズを提供し、もう 1 つはジャンルを提供し、もう 1 つは優れたカバーを提供する可能性がありますが、すべてを提供するものはありません。複数のソース (Google ブックス、ISBNDB、ハードカバー) から書籍に関する情報を取得します。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Librario, a book metadata API that aggregates G Books, ISBNDB, and more&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46571149"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46571149'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;apublicfrog:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;おお。これを個人的に使用することはありませんが、あなたの投稿は非常によく提示されており、詳細で、出典が記載されています。うまくいくといいですね！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;krick:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;英語以外の言語にも対応していますか?いくつかのタスクでそのような API をいくつか試したことを覚えています。英語のタイトルはある程度うまく見つけられましたが、他の言語 (原題であろうと、かなり有名な本の翻訳であろうと) には基本的にアクセスできませんでした。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wizzwizz4:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;データベースが、データがいついつ取得されたかを追跡していることを確認してください。自動データ取り込みシステムが、手動で修正したデータを自動生成された間違ったデータで上書きしてしまうと、&lt;i&gt;非常に&lt;/i&gt;イライラします。出所を追跡することは、信頼性を追跡するための重要なステップです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cmaury:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;今後のタイトルを引き出すことはできますか?私が欲しいのは、準備を整えた著者による今後発売される本の週次および月次リストだけですが、それを見つけることも作成することもできません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;moritzruth:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;BookBrainz についてどう思いますか?&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;bookbrainz.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;bookbrainz.org&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ksr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;そうですね、ISBN 抽出ツールの API を試してみます &amp;#x2F; &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;infojunkie&amp;#x2F;isbn-info.js" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;infojunkie&amp;#x2F;isbn-info.js のフォーマッタ&lt;/a&gt;&lt;p&gt;現在、私は使用していますnode-isbn &lt;a href="https:&amp;#x2F;&amp;#x2F;www.npmjs.com&amp;#x2F;package&amp;#x2F;node-isbn" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.npmjs.com&amp;#x2F;package&amp;#x2F;node-isbn&lt;/a&gt; は、ほとんどうまく機能しますが、歯が古くなってきています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wredcoll:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この努力は称賛しますが、前回これを試したときの大きな問題は、amazon.com からしか入手できない膨大な量の書籍データと、控えめに言っても退屈なスクレイピングでした。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46571149</guid>
-      <pubDate>Sat, 10 Jan 2026 23:45:25 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46571149</comments>
-    </item>
-    <item>
-      <title>HN を表示: LLM とポーカーをプレイするか、LLM 同士の対戦を観戦します</title>
-      <link>https://llmholdem.com/</link>
-      <guid isPermaLink="true">https://llmholdem.com/</guid>
-      <pubDate>Sat, 10 Jan 2026 19:27:39 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46569061</comments>
-    </item>
-    <item>
-      <title>プライベートエクイティ会社は過去10年間で500以上の自閉症センターを買収：研究</title>
-      <link>https://www.brown.edu/news/2026-01-07/private-equity-autism-centers</link>
-      <description>&lt;p&gt;[ブラウン大学] — プライベート・エクイティ会社は、全米で500以上の自閉症治療センターを買収した。米国人の間で自閉症と診断されている。公開企業とは異なり、プライベート・エクイティ会社や個人事業所は買収内容を開示する義務がないため、データ収集が困難で労働集約的となっている。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Private equity firms acquired more than 500 autism centers in past decade: study&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46571095"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.brown.edu/news/2026-01-07/private-equity-autism-centers'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 21 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;datsci_est_2015:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;PE が私の街で家賃徴収によって台無しにしたサービス:&lt;p&gt;&lt;pre&gt;&lt;code&gt; - 獣医サービス
-  - 歯科サービス
-  - 検眼サービス
-  - 緊急ケアサービス
-&lt;/code&gt;&lt;/pre&gt;
-私は（時には大幅に）自分の枠を超えて、非PE所有の会社やサービスに行きますが、その経験ははるかに良くなり、まったく異なる生活の質を体験しているようなものです。私の2¢は、「社会契約の解消」のかなりの部分が社会に反映されるということです。米国では、人々がこれらの魂のない存在と交流するときの扱い方に原因があります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TrackerFF:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;考えてみると、会社が PE に買収された後、好転した製品やサービスを経験したことがないと思います。&lt;p&gt;PE が経営不行き届きの会社を買収して立て直したこともあったかもしれませんが、ここ 10 年ほど見てきた PE の買収騒動は専らエンシティフィケーションを引き起こすもののようです。そしてそれはどこでも起こっています。あらゆるセクターにニッチなPE企業が常に存在しますが、安全なものはありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Hnrobert42:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;プライベート・エクイティはこれに注目しています。その中に。問題は、一部の人々が大金を手に入れすぎていることです。どこかに置かなければなりません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ekjhgkejhgk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;絶対的な癌。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;locusofself:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私の娘は「スペクトラム」に属しており、これらのセラピー施設に対処することは時間とお金の膨大な無駄でした。私たちが行った場所がプライベート・エクイティの所有物か何かは知りませんが、品質は本当に悪く、ここは裕福な大都市圏にあります。セラピストは心の優しい人のように見えましたが、給料が非常に悲惨だったので、離職が絶えませんでした。請求慣行は常に怪しげで複雑で、イライラさせられました。言うまでもなく、これらの場所のほとんどは、最初に誰にも会うのに6〜12か月の順番待ちリストを持っています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SkyeCA:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;企業が人間であるならば、PE企業は社会に浸出するものと同じように処刑されるべきである。基本的なサービスがますますこの嫌なネズミたちに捕らえられ、社会から最後の一銭も搾り取ろうとしているという事実ほど、私を憂慮させるものはありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dizlexic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;驚きましたか？お金が儲かります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;46493168:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;「個人投資家がアクセスを拡大しながら少しずつ儲けること自体は悪いことではない」とシン氏は語った。 「しかし、これがどれほど悪いことであり、どれほど良いことなのかを理解する必要があります。これはその方向への第一歩です。」&lt;p&gt;「少しのお金」が何を意味するのか、誰が言えるのでしょうか。ここにいるの？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blibble:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;そうそう、プライベート・エクイティのくずが「市場は非効率だ」と気づいた別の市場がある。そして、既存の企業が「最大の消費者余剰を引き出している」わけではありません。&lt;p&gt;幸いなことに、英国は国営の医療制度が下限価格をゼロに設定しているため、国民にとってこの問題はありません&lt;p&gt;ただし、プライベートエクイティのカスを完全に止めたわけではなく、代わりに彼らはこの国の元独立退役軍人のほとんどを買収しました&lt;p&gt;&gt;。 2013 年にはわずか 10% でしたが、現在では獣医業のほぼ 60% が大企業によって所有されています。&lt;p&gt;彼らはすぐに「需要曲線を最適化」し、価格を 2 倍、3 倍に引き上げています。つまり、ペットを治療する余裕のない人々がいるということです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;renewiltord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;プライベート・エクイティはお金のあるところに行きます。プライベート・エクイティ会社ではなく多数の中小企業家がやっているからといって、魔法のように搾取的でないものは何もありません。プライベート・エクイティがこれほど多くの透析クリニックを買収したのには理由があります。彼らがこのようなことをしているのには理由があります。&lt;p&gt;このために政府からお金をだまし取るのは簡単です。なぜなら、善意の「役に立つ愚か者」が大勢いるからです。 「必要なものは何でも払ってください」と言うでしょう。彼らに必要なだけのお金を与えます。それは人の命のためです！」そしてそれはどれも真実ではありません。問題は、さまざまな大隊を使って通常の税金を払っているアメリカ人に対するレントシーキングを行うことです。&lt;p&gt;ティム ウォルツ氏はこの件で再選の望みを失いましたが、彼だけではありません。やがて、大規模な医療詐欺が発見され、在宅医療と自閉症児のメンタルヘルスはトップに近づくことになるでしょう。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;class3shock:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この見出しを読んで私が思うことは、多くの自閉症患者はコミュニケーション能力がない、あるいはコミュニケーション能力があるとしても限られた方法でしかできない、ということだけです。文字通り、自分自身を語る声を持たない人々のことです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;analog8374:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;自閉症の人が優秀なエンジニアになるから？したがって、自閉症センターは人材募集のツールになります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hermanzegerman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私たちはすでに、プライベート・エクイティが利益のために病院 [1] や介護施設 [2] で人々を殺害していることを知っています。では、なぜ私たちは彼らに医療施設の運営を許可し続けるのでしょうか?&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;jamanetwork.com&amp;#x2F;journals&amp;#x2F;jama&amp;#x2F;fullarticle&amp;#x2F;2813379" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;jamanetwork.com&amp;#x2F;journals&amp;#x2F;jama&amp;#x2F;fullarticle&amp;#x2F;2813379&lt;/a&gt;&lt;p&gt;[2] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.nber.org&amp;#x2F;papers&amp;#x2F;w28474" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.nber.org&amp;#x2F;papers&amp;#x2F;w28474&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;InMice:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;公衆衛生大学院の上級研究員ダニエル・アーノルド氏は、プライベート・エクイティ会社が家族よりも経済的利益を優先するのではないかということが最大の懸念であると述べた。&lt;p&gt;...もしかしたら?計算された方法でそれらをむさぼり食うことによって、彼らはすでにどうなっているのでしょうか。保険金請求の審査が緩い州をターゲットに&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Buttons840:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;投資家がその過程で利益を上げていない場合、人々を助けることは道徳的でしょうか? (&amp;#x2F;s)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cogman10:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私はこれが本当に嫌いです。最終的には子供たちへのケアがさらに悪化することになるからです。&lt;p&gt;私が子供をセラピーのために連れて行く場所は、おそらく未公開株が所有していると思いますが、私の地域で利用できるほぼ唯一の場所でもあります。&lt;p&gt;彼らの料金がシーズンごとに約 80 ドルであることは知っています。また、セラピストの給与が時給約 25 ドルから 30 ドルであることも知っています。&lt;p&gt;これにより、従業員の福利厚生から建物の賃貸料まで、あらゆるものに非常に健全なマージンが残されています。 admin (おそらくマージンの大部分がここに費やされると思います)。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andy99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これらは規制当局にとって有益なシグナルとなるはずです。規制は不完全ですが、どういうわけか私たちは、未熟な規制や存在しない規制（ここではこれが当てはまるかもしれません）、あるいは不十分に書かれた規制（たとえば、エンロンと企業を暴走させた2000年頃のカリフォルニアのエネルギー規制）を利用する企業を非難します。&lt;p&gt;これらの企業は、本質的に裁定取引の機会を見つけて、ひねくれた形で規制の強化に協力していますが、それは規制当局が、何が起こっているかをただ見守るのではなく、何が起こっているかに注意を払い、それについて何らかの行動をとった場合に限ります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JumpCrisscross:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;もし私たちが医療インフラの私的所有に固執するのであれば、患者に対応する医療提供者は少なくとも B コープであることが求められ、理事会の 1 議席は医師と看護師の利益を代表し、もう 1 名は患者の利益を代表するように設定されるべきである。 (後者をどのように選択するかはわかりません。)&lt;p&gt;また、厳格なレバレッジ、関連者取引、配当制限も必要です。その代わりに、ライフラインを必要とする医療従事者に最後の手段として公的金融機関を提供するかもしれません。&lt;p&gt;医療分野からのプライベート・エクイティの禁止は良い見出しです。もし私が候補者だったら、おそらく立候補するだろう。しかし、これはより広範なインセンティブの問題に対する応急処置です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;threethirtytwo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;理にかなっています。イーロン・マスクを含め、今私が知っている人の半数は自閉症なので、かなり儲かります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sergiotapia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;プライベート・エクイティは消費者にとってすべてを悪化させるだけです。あらゆるペニーを絞り出します。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Krasnol:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ヘルスケア分野の未公開株は、資本主義がどこまで進んでいくかを特に明確に示しています。人間や動物の苦しみから利益を得ることは、おそらくまだそれを良い気分であり、英雄的だとさえ感じているのに、私はうんざりします。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.brown.edu/news/2026-01-07/private-equity-autism-centers</guid>
-      <pubDate>Sat, 10 Jan 2026 23:36:16 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46571095</comments>
-    </item>
-    <item>
-      <title>コードは粘土です</title>
-      <link>https://campedersen.com/code-is-clay</link>
-      <description>&lt;p&gt;実装がうまくいかなくても、アイデアは残ります。粘土は消えてしまったと思うでしょう。ますます面白くなってきました。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Code Is Clay&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46569225"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://campedersen.com/code-is-clay'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;culi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;甘いビジュアル！どうやってやったのですか？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;somewhereoutth:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この記事も（他の多くの取り組みと同様に）AI の全体によって脱線しているように感じます。その部分は無視しましょう。&lt;p&gt;重要な点は、確かに、クレイとコードはどちらも&lt;i&gt;表現の媒体&lt;/i&gt;であり、表現、収益化、実用性などにおいて長所と短所があるということです。私自身、これら（および他の）さまざまな媒体が&lt;i&gt;作者&lt;/i&gt;（アーティスト&amp;#x2F;デザイナー&amp;#x2F;陶芸家&amp;#x2F;コーダーなど）にどのように影響を与え、どのように考え、何を考え、それが周囲の世界との関係、そして実際にその結果としてそこに現れる文化にどのように影響を与えるかに非常に興味があります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;disqard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;このブログ投稿のタイトルを見てすぐに「大きな泥の玉」を思い出しました。&lt;p&gt;&lt;a href="http:&amp;#x2F;&amp;#x2F;laputan.org&amp;#x2F;mud&amp;#x2F;" rel="nofollow"&gt;http:&amp;#x2F;&amp;#x2F;laputan.org&amp;#x2F;mud&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Avicebron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;著者がハイパーキューブを作ることで、人々が家を購入して家族を養うことができるかどうかを取り上げてほしいと思います。陶芸家がカップやポットを作ることができたのは、それが人々に必要だったからです。著者が思い描く陶磁器の未来において、陶芸に身を捧げた人々の現実とは何なのか。本当に必要な陶磁器工場はどれくらいあるのでしょうか？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;analog8374:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;実際、粘土には知性は必要ありませんが、コードには知性が必要です。それは全くの違いです。その意味で、コードは比較的粗雑です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bossyTeacher:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;正直、もっと好きになると思います。私がプログラミングを始めたのは、ものを作るのが好きだったからであり、残りの人生で定型文を入力したかったからではありません。&lt;p&gt;私には、OP は実際にそれを作るエンジニアではなく、エンジニア チームに何かを作るように命令する重役になりたかったように思えます。&lt;p&gt;また、「しかし、粘土」は消えませんでした。今では陶芸工房はどこにでもあります。人々は週末に大金を払って鍋を投げます。」何という見当違いの発言だろう。フルタイムの陶芸従事者の人口のすべてがスタジオを開いているわけではなく（おそらくごく一部ですが、陶芸スタジオの人々が陶器工場の出身ではない可能性の方が高いです）、また、スタジオをオープンした人たちは、OP のような人々のサービスを提供してもフルタイムと同等レベルの収入を得ることができない可能性があります。&lt;p&gt;この記事は、権利を剥奪された人々に共感する能力に欠ける特権的な人物のように読めます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;emilsedgh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「すべてを強く型指定する必要がある」から「すべてを厳密に型指定する必要がある」に変わったのは面白いですね。そして「C++ だけでは不十分で、すべてに Rust が必要です」これには...&lt;p&gt;現時点では、私たちの職業の大部分は単なる誇大広告のフォロワーです。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://campedersen.com/code-is-clay</guid>
-      <pubDate>Sat, 10 Jan 2026 19:43:57 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46569225</comments>
-    </item>
-    <item>
-      <title>HN を表示: GlyphLang – AI ファーストのプログラミング言語</title>
-      <link>https://news.ycombinator.com/item?id=46571166</link>
-      <description>&lt;p&gt;GlyphLangGlyphLang は、冗長なキーワードをより効率的にトークン化する記号に置き換えます。 # Python @app. query("SELECT * FROM users WHERE id =.query("SELECT * FROM users WHERE id =.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: GlyphLang – An AI-first programming language&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46571166"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46571166'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Show HN: Ferrite – ネイティブの人魚図レンダリングを備えた Rust のマークダウンエディター</title>
+      <link>https://github.com/OlaProeis/Ferrite</link>
+      <description>&lt;p&gt;スクリーンショット Raw エディター レンダリング ビュー 分割ビュー Zen モード機能 コア編集 WYSIWYG マークダウン編集 - ライブ プレビュー、クリックして編集する書式設定、および構文ハイライトによるマークダウンの編集 マルチフォーマット サポート - マークダウン、JSON、YAML、および TOML ファイルのネイティブ サポート ツリー ビューアー - インライン編集、展開/折りたたみ、パス コピーを備えた JSON/YAML/TOML の階層ビュー 検索と置換 - 正規表現サポートによる検索と一致ハイライト 元に戻す/やり直し - タブごとに完全に元に戻す/やり直しをサポート 表示モード 分割ビュー - 並べて表示される生のエディターと、サイズ変更可能な分割線を備えたレンダリングされたプレビュー Zen モード - テキスト列が中央に配置され、気を散らすことのない書き込み 同期スクロール - 未加工のビューとレンダリングされたビュー間の双方向スクロール同期 エディターの機能 構文ハイライト - 40 以上の言語 (Rust、Python、JavaScript、Go など) のファイル全体の構文ハイライト/target/release/ferrite # 特定のファイルを開きます。 /target/release/ferrite path/to/folder/ 表示モード Ferrite は、Markdown ファイルの 3 つの表示モードをサポートします。 Raw - 構文強調表示によるプレーン テキスト編集 レンダリング - レンダリングされたマークダウンによる WYSIWYG 編集 分割 - 並べて表示される RAW エディターとライブ プレビュー ツールバー ボタンまたはキーボード ショートカットを使用してモードを切り替えます。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Ferrite – Markdown editor in Rust with native Mermaid diagram rendering&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46571980"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/OlaProeis/Ferrite'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;DonHopkins:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[遅延]&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;29athrowaway:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは高級言語ではなく IR である可能性があります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;omneity:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Glyphlang の生成において LLM がどの程度優れているかについて評価はありますか?&lt;p&gt;機能するコードを生成する機能を最適化したのか、それとも単にトークン化の圧縮率を最適化したのか、どの LLM をトークン化したのか、最適化プロセスはどのようなものか知りたいです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jaggederest:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;面白いことに、私は記号をできる限り避け、完全な英語の単語を使用しようとしているため、別の方向に進んでいます。&lt;p&gt;非常に不十分ですが、&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;jaggederest&amp;#x2F;locque" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;jaggederest&amp;#x2F;locque&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jy14898:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;LLM のトレーニングに使用される構文からの逸脱は生産的ではないと感じます。&lt;p&gt;確かに、より少ないトークンで同じコードを表現することはできますが、それらのトークンがそれほど頻繁に正しく取得されるとは思えません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jbritton:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;どの言語で作業するかについてクロードと話し合いました。これは Web アプリであり、主にモデルのトレーニング データに加えて、入力と純粋な関数を記述できるという理由で、Typescript に辿り着きました。トレーニング データの量が少ないことを除けば、Haskell の方が好まれていたかもしれません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rubyn00bie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これにはある程度の目新しさと、私が気に入っている言語の美しさがあると思いますが、少し混乱しています…確かに、私はドキュメント全体を読んだわけではなく、ソースをざっと見ただけです…しかし、これは単に Golang コードをこの構文に、またはこの構文からトランスパイルしているだけなのでしょうか、それとも最終的には完全な言語になることを目的としているのでしょうか? golang パッケージをインポートするだけでよいのでしょうか? それとも、現在サポートされているパッケージのみを使用する必要がありますか?&lt;p&gt;さらに、これについては 2 つの考えがあります。&lt;p&gt;1.これは、ユーザーが Golang (またはその他の言語) を作成して元の言語に戻すことができる透明なレイヤーとして、より実用的である可能性があると思います。基本的に、モデルのみが読み取る出力にすることです。&lt;p&gt;2.) 長期的には、NVidia と AMD の両方が、モデルをトレーニング&amp;#x2F;実行している企業とともに、トークンあたりのコストが高すぎるため、削減に重点を置いているようです。そして、私個人としては、コストトークンの大幅な低下なしに AI が普及する世界は見えません。モデルを実行している企業にとっては持続可能ではなく、エンドユーザーは今日のように実際のコストを支払う余裕がありません。私が言いたいのは、これが 12 ～ 18 か月以内に必要になるだろうか、ということです。&lt;p&gt;私は完全に何かを見落としていたり​​、これがどこに向かうのかというビジョンが欠けている可能性がありますが、個人的には、これで書かれたものは保存期間が非常に短いのではないかと心配しています。&lt;p&gt;だからといって、それが当面役に立たないとか、クールなプロジェクトではないと言っているわけではありません。むしろ長期的なビジョンがあるのであれば、声をかける価値があると思います。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noosphr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;短いシンボルが llms ボキャブラリ内の他のトークンと衝突を引き起こすことがわかりました。一般に、言語内のすべてのものに対して、短い名前よりも長い説明的な名前を付ける方がはるかに優れています。&lt;p&gt;私に衝撃を与えた例は、ベクトル検索を改善するために C の XML 翻訳を使用することでした。中括弧がないため、モデルは ctag によるデータベースの強化など、他のものを使用するよりもはるかに関連性の高いコードを返すようになりました。&lt;p&gt;&amp;gt;GlyphLang は、最新の LLM のトークン化方法に合わせて特に最適化されています。&lt;p&gt;これは非常に疑わしいです。トークンの語彙は、まったく異なるタイプのモデルはもちろんのこと、モデル ファミリ内でも保存されません。彼ら全員が唯一得意なことは、英語をトークン化することです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;everlier:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;おそらく、数学の表記法と集合論には、必要なものがすべてすでに備わっています。&lt;p&gt;たとえば、アプリを説明する次のプロンプトを参照してください。
-&lt;a href="https:&amp;#x2F;&amp;#x2F;textclip.sh&amp;#x2F;?ask=chatgpt#c=XZTNbts4EMfvfYqpc0kQWpsEcXZhxwmyuzkESIFF0AIFisIYkSOJ8IjUkiN_IEmPRnL1M2xeTE 9S0HK3iz2QIDkjzvyHv5HQSjTbJotVt9l-eriHktwYDmR6KSu56jZb7Zs1NFgSPME1xvn0sgkUSa4OZNpttnGhIZCxgbQkjx_r6WUbeO-j2yi-PmwjwWz28fbzx9kMGkZN lWdD4SiD_srYvbw8asbWkNIVStmIaig0TCsra1VSbZ1Vpfclk8qtK9UcS6tMq-dplF7lARekSPtoUS09FwHr5wyY3NXo5KTbbLEVD4YKRqFhwCUc6CnkGOnivA0M5LQ3ZB RQUVhtyUn3-s_pxRzEz8nFDHop_yruNlv2Ghnu7z88oVvDdYMBa4gLncHC0hJqb2gMshIwNjaM6-NdQXNxx46WkGqfNhNIx6lWbJvcYzBw89ddt9kO_vCNJfN-AAWRyVHP 4SzlEQiFftxOK8FAeMx2QaB964RCfNQVhqi-9akfMrlfzo9UUsnknlNA9gGWGNx4L697fftt3m22a2L2S9W9vp1epH0gM4E2cPf69uv_7Cd7ewY5mpJ6emJliU3MrIfawJ f3yPL1UDCUJLM28NEEdFE-MubE16qO5XSQxM-a4OtGBmpn-L2cDkaj0SDZ0_psdHZ-djpQUdZM3cvLl_SEKk3D-HeLgVTDGMVqVfgwlIqGu4S-Pk-ArZtDH34HmG_WqgdO 9c_5PNkD2G22u3QwzmeXDmu6GmQ_6S7YL8d9K7BHE7vN1pD2dfo2gi0SS7szSd6pV56u_wPK0jrjl1niRax3WRWomMaFTiXpsZn2-H16uDuUlRxlUPkoZMag2bemYAy0Cx 8VnEBCgZxRgMwJI3IyjNZQBqnPNEYaw8PtzZ8fbiHpgZu7AZwONVs9h7wV8S4qiFXiJmeCvvhRgfE6gnVCZejzBKls3NvBph6Vnz-NDN69u101jNb1fpHCwmoC8VBT9h0" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;textclip.sh&amp;#x2F;?ask=chatgpt#c=XZTNbts4EMfvfYqpc0kQWpsEc...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46571166</guid>
-      <pubDate>Sat, 10 Jan 2026 23:46:58 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46571166</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WillAdams:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Windows 11 ラップトップのファンが回転しました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dhruv3006:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;マークダウンに基づいて API クライアントを構築する - &lt;a href="https:&amp;#x2F;&amp;#x2F;voiden.md" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;voiden.md&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dmitrygr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私と同じようにこれを読んで「人魚図って何？」と思った人は、どうやらマークダウン風のテキストを使って簡単なフロー図を記述する方法のようです。詳細はこちら: &lt;a href="https:&amp;#x2F;&amp;#x2F;mermaid.js.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;mermaid.js.org&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adamnemecek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Typst のサポートの追加を検討してください。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;khimaros:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;黒曜石の有望な代替品のように思えますが、[[wikilinks]] と後方参照がありません&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Levitating:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;疑問に思っている人がいれば、egui で作られています。&lt;p&gt;私は、Rust のグラフィカル アプリケーションの新時代が大好きです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;huevosabio:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;あまり明らかな Egui の美学を持たない Egui プロジェクトを見ることができてうれしいです。&lt;p&gt;Egui を使って仕事をするのはどうでしたか？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Arubis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は喜んで Typora にお金を払いました。Typora は、(私が知っている) JSON や Yaml をサポートせずに、Markdown だけでほぼ同じことを行います。これは、特に埋め込まれた図を含む解析可能なテキストの大量を熱心に出力する LLM の場合には、十分に熟した空間のように感じられます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pbronez:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人魚のレンダリングは Rust に実装されていますか、それともどこかの JS インタープリターで mermaid.js を実行していますか?&lt;p&gt;他のシステムでは、多くの人魚図を含むマークダウン ドキュメントをレンダリングする際に課題に遭遇しました。これを行うためのより堅牢な方法があればいいですね。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/OlaProeis/Ferrite</guid>
+      <pubDate>Sun, 11 Jan 2026 01:50:01 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46571980</comments>
     </item>
     <item>
-      <title>グレイトフル・デッドの共同創設者ボブ・ウィアー氏が78歳で死去</title>
-      <link>https://www.rollingstone.com/music/music-news/bob-weir-grateful-dead-dead-obituary-1234810106/</link>
-      <description>&lt;p&gt;ウィアーは、デヴィッド・ネルソンと後にジェファーソン・エアプレインのメンバーとなるヨルマ・カウコネンから最初のギター・リックを学びました。 1968年、ウィアーと創設メンバーのロン・“ピッグペン”・マッカーナンは音楽的欠陥を理由にバンドから解雇されたが、2人とも数か月以内に復帰した。ケネディの孫娘、35歳で死去 1972年のピッグペンの死により、ウィアーは順調にセカンド・ボーカリストの役割に就いた。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Grateful Dead co-founder Bob Weir has died at age 78&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46571707"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.rollingstone.com/music/music-news/bob-weir-grateful-dead-dead-obituary-1234810106/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>HN を表示: VAM Seek – 2D ビデオ ナビゲーション グリッド、15KB、サーバー負荷ゼロ</title>
+      <link>https://github.com/unhaya/vam-seek</link>
+      <description>&lt;p&gt;VAM Seek - デモトリミングされた 2D ビデオ シーク マーカー。 mp4 ビデオ ストリーミング サイト用の軽量 2D ビデオ シーク グリッド ライブラリ。従来のシーク バー VAM Seek 1D タイムライン、試行錯誤の 2D グリッド、インスタント ビジュアル ナビゲーション サーバー生成のサムネイル クライアント側のキャンバス抽出 重いインフラストラクチャ サーバー負荷ゼロ、最大 15KB の JS 複雑な統合 1 行のセットアップ キーワード: ビデオ プレーヤー、ビデオ シーク、サムネイル グリッド、ビデオ ナビゲーション、HTML5 ビデオ、JavaScript ライブラリ、ビデオ ストリーミング、メディア プレーヤー、ビデオ コントロール、ビデオ サムネイル、シーク バーの代替、ビデオ UX クイック スタート (外部サイト用) &lt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: VAM Seek – 2D video navigation grid, 15KB, zero server load&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46572304"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/unhaya/vam-seek'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://github.com/unhaya/vam-seek</guid>
+      <pubDate>Sun, 11 Jan 2026 02:57:34 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46572304</comments>
+    </item>
+    <item>
+      <title>Arch Linux パッケージ管理 (ALPM) プロジェクトの 1 年間の取り組み</title>
+      <link>https://devblog.archlinux.page/2026/a-year-of-work-on-the-alpm-project/</link>
+      <description>&lt;p&gt;私たちは、ファイル形式の形式化、解析、書き込み、ディストリビューションアーティファクトの暗号化検証から、パッケージファイルとシステムパッケージ管理の処理に至るまで、パッケージ管理エコシステムのさまざまな側面に焦点を当てた6つのマイルストーンに取り組んできました。 「配布アーティファクト」 「システム パッケージ管理用の Rust ライブラリ」 私たちは、自分たちをより大きなフリー ソフトウェア エコシステムの一部であると考えています。興味のある開発者とパッケージ管理者は、ファイル形式または概念別に参照することをお勧めします。これにより、より多くの貢献者グループが Arch Linux のパッケージ管理の背後にある概念に関する議論に参加できるようになることを願っています。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A Year of Work on the Arch Linux Package Management (ALPM) Project&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46572060"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://devblog.archlinux.page/2026/a-year-of-work-on-the-alpm-project/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://devblog.archlinux.page/2026/a-year-of-work-on-the-alpm-project/</guid>
+      <pubDate>Sun, 11 Jan 2026 02:08:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46572060</comments>
+    </item>
+    <item>
+      <title>シーシュポスは現在オー・マイ・クロードに住んでいます</title>
+      <link>https://github.com/Yeachan-Heo/oh-my-claude-sisyphus</link>
+      <description>&lt;p&gt;マルチエージェント オーケストレーション システム。 md # /sisyphus-default コマンド │ §── ウルトラワーク。 md # /cancel-ralph コマンド └── クロード。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Sisyphus Now Lives in Oh My Claude&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46572032"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/Yeachan-Heo/oh-my-claude-sisyphus'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SoleilAbsolu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;さらばボブ！なんという音楽人生だろう。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;toomuchtodo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;ボブ・ウィアー" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;ボブ・ウィアー&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Grateful_Dead" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Grateful_Dead&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;bobweir.net&amp;#x2F;ボビー&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;bobweir.net&amp;#x2F;ボビー&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.rollingstone.com/music/music-news/bob-weir-grateful-dead-dead-obituary-1234810106/</guid>
-      <pubDate>Sun, 11 Jan 2026 01:04:58 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46571707</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;undeveloper:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これにより、オープンコードの主な利点である、単一のサービスへの攻撃を避けるために多くのモデルに簡単にアクセスできるという利点が失われます。プロサブを持っている人には絶対に使用できません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deckardt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Oh My OpenCode と Anthropic の戦いを追ってきた人たちへ。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/Yeachan-Heo/oh-my-claude-sisyphus</guid>
+      <pubDate>Sun, 11 Jan 2026 02:00:45 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46572032</comments>
     </item>
     <item>
-      <title>実稼働言語モデルからの書籍の抽出 (2026)</title>
-      <link>https://arxiv.org/abs/2601.02671</link>
-      <description>&lt;p&gt;) 接続されたペーパー 接続されたペーパーを切り替えます (接続されたペーパーとは何ですか。) リットマップ リットマップを切り替えます (リットマップとは。) コードへのリンク コード付きペーパーを切り替えます (コード付きペーパーとは。)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Extracting books from production language models (2026)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46569799"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://arxiv.org/abs/2601.02671'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;visarga:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはかなりひどいことのように聞こえますが、なぜトレーニングで保護された IP に近すぎる式を複製しないようにするために、N グラム ベースのブルーム フィルターを実装しないのでしょうか?ほぼすべてのランダムな 10 単語の ngram はインターネット上で一意です。&lt;p&gt;あるいは、保護されたソースから抽出された概要や QA ペアなどの合成データでトレーニングすることもできるため、モデルはアイデアを元の表現から分離できます。オリジナルを一度も見たことがないので、それを吐き戻すことはできません。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://arxiv.org/abs/2601.02671</guid>
-      <pubDate>Sat, 10 Jan 2026 20:50:29 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46569799</comments>
+      <title>アメリカでは「供給ショック」のせいで過剰摂取による死亡者が減少している：研究</title>
+      <link>https://www.economist.com/united-states/2026/01/08/why-overdose-deaths-are-falling-in-america</link>
+      <guid isPermaLink="true">https://www.economist.com/united-states/2026/01/08/why-overdose-deaths-are-falling-in-america</guid>
+      <pubDate>Sat, 10 Jan 2026 19:54:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46569312</comments>
     </item>
     <item>
-      <title>英国がOfcomに暗号化バックドアの探索を命令</title>
-      <link>https://reclaimthenet.org/uk-orders-ofcom-to-explore-encryption-backdoors</link>
-      <description>&lt;p&gt;エンドツーエンドの暗号化により、プライベート メッセージのプライバシーが保たれます。これは何らかの結果ではありません。そして、そのツールは、他の政府ツールと同様に「再利用される」ことになります。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; UK Orders Ofcom to Explore Encryption Backdoors&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46570158"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://reclaimthenet.org/uk-orders-ofcom-to-explore-encryption-backdoors'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;puppycodes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;しばらくの間、英国への旅行は中国などへの訪問と同様に扱う必要があります。&lt;p&gt;デバイスは家に置いておいて、プライバシー権はゼロと考えてください。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ekjhgkejhgk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「GPG は安全ではない」ということはすべて、ポーズを取る人たちよ、政府が通信のバックドア化を義務付けた瞬間に彼らが GPG を引き出すのを見てください。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alfiedotwtf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ああ、もう半年も経ったのか（…最後の試みから）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;harel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;何が起こって英国が現在のような状態になったのかはわかりません。これは単なる「一般的なコンピューティング」に対する戦争ではありません。誰かがここで言ったように。それは「一般大衆」に対する戦争のように感じます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JCattheATM:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一般的なコンピューティングに対する戦争が激化しています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;13415:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは英国のユーザーと英国以外のユーザーの間のコミュニケーションにのみ問題があります。すべての暗号化を無効にし、他の Ofcom 要件を満たし、大きな赤色の「UK UNSAFE VERSION」を表示するだけで、引き続き英国のユーザーに通信サービスを提供できます。すべてのウィンドウにバナーを表示します。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;glawre:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;プロバイダーが遵守を拒否した場合、Ofcom は現実的にどうするつもりですか?&lt;p&gt;今週 X&amp;#x2F;CSAM 問題を目にしましたが、政府も規制当局もアメリカのビッグテクノロジーに立ち向かう気がないのは明らかです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hardlianotion:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;政府は独裁政権とどのように区別しようとしているのでしょうか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cedws:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;誰もこれに投票しませんでした。&lt;p&gt;私は現政権と前政権の両方についてかなり冷笑的ですが、労働党が政権を握ってから変化が起きているように感じます。歴史的に、この横暴な監視は抑制されてきました。おしゃべりがありましたが、抵抗に遭いました。現在、議論は打ち砕かれ、目に見えない力が働いているように感じられます。&lt;p&gt;もし奇跡によって英国と EU が新しい青少年移動計画に合意したら、私はここから出ます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Xiol:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;それは児童虐待の内容から始まります。なぜなら、それを捕らえないことを誰が擁護するのでしょうか?&lt;p&gt;最近の X CSAM 世代に関する議論と、英国で X がブロックされる可能性の後、私が予想していたよりも多くの人がそれを擁護するようです。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://reclaimthenet.org/uk-orders-ofcom-to-explore-encryption-backdoors</guid>
-      <pubDate>Sat, 10 Jan 2026 21:36:26 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46570158</comments>
+      <title>レドモンドSpaceX研究所の労働者が有毒化学物質にさらされる</title>
+      <link>https://www.fox13seattle.com/video/fmc-w1ga4pk97gxq0hj5</link>
+      <guid isPermaLink="true">https://www.fox13seattle.com/video/fmc-w1ga4pk97gxq0hj5</guid>
+      <pubDate>Sun, 11 Jan 2026 03:15:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46572392</comments>
+    </item>
+    <item>
+      <title>Kodbox: マルチストレージ フュージョンと Web IDE を備えたオープンソース クラウド デスクトップ</title>
+      <link>https://github.com/kalcaddle/kodbox</link>
+      <description>&lt;p&gt;マルチクラウドをサポートするセルフホスト型ファイル管理システム。グローバル ドラッグ アンド ドロップ: ファイルとフォルダーをドラッグ アンド ドロップして移動およびコピーします。ローカル ファイル/フォルダーをドラッグ アンド ドロップしてアップロードします。デスクトップにドラッグ アンド ドロップすると、自動的にダウンロードされます。自動的に入るフォルダにドラッグ＆ドロップしたり、複数のファイル管理画面を相互にドラッグ＆ドロップしたりできます。多次元ドキュメント管理: お気に入り。ドキュメントタグ。ファイルの分類。最近の文書。アルバム。ゴミ箱。部門ドキュメントのパブリックタグ。個人ファイルのプライベート金庫。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Kodbox: Open-source cloud desktop with multi-storage fusion and web IDE&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46571760"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/kalcaddle/kodbox'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://github.com/kalcaddle/kodbox</guid>
+      <pubDate>Sun, 11 Jan 2026 01:12:51 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46571760</comments>
     </item>
   </channel>
 </rss>
