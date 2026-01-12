@@ -6,115 +6,234 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 12 Jan 2026 12:57:18 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Jan 2026 15:37:58 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Lightpanda 将 DOM 实现迁移到 Zig</title>
-      <link>https://lightpanda.io/blog/posts/migrating-our-dom-to-zig</link>
-      <description>&lt;p&gt;另一个更大的挑战是将对用 Zig 编写的自定义元素和 ShadowDOM 的支持与 LibDOM 集成。本着实验的精神，这个原型还用 QuickJS-NG 取代了 V8。虽然这增加了查找开销，但它从每个元素中删除了约 6 个指针。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Lightpanda migrate DOM implementation to Zig&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46586179"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://lightpanda.io/blog/posts/migrating-our-dom-to-zig'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lewdwig:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于生产代码来说，一种不是 1.0 且以非向后兼容方式反复更改其 IO 实现的语言无疑是一个勇敢的选择。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kristopolous:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;自从我在 GitHub 上看到他们的演示以来，我已经使用它好几个月了&lt;p&gt;这对我来说是一个常见的流程&lt;p&gt;&lt;pre&gt;&lt;code&gt; lightpanda url |降价（微软） | SD（第 50 天精简版） 
-&lt;/code&gt;&lt;/pre&gt;
-我什至将它作为 shell 别名 wv()。它比那些脾气暴躁的老山猫和需要 JS 的网站上的链接要好得多。&lt;p&gt;它很可靠。绝对值得一试&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;everlier:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哇。 Lightpanda 绝对是一个疯狂的项目。几年前，我愿意为这样的选择付出高昂的代价。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nicoburns:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该表提供了有关 lightpanda 的信息：&lt;a href="https:&amp;#x2F;&amp;#x2F;lightpanda.io&amp;#x2F;blog&amp;#x2F;posts&amp;#x2F;what-is-a-true-headless-browser#what-does-true-headless-mean" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;lightpanda.io&amp;#x2F;blog&amp;#x2F;posts&amp;#x2F;what-is-a-true-headless-bro...&lt;/a&gt;&lt;p&gt;TL;DR：它执行以下操作：&lt;p&gt;- 通过网络获取 HTML&lt;p&gt;- 将 HTML 解析为 DOM 树&lt;p&gt;- 获取并执行操作 DOM 的 JavaScript&lt;p&gt;但不以下内容：&lt;p&gt;- 获取并解析 CSS 以应用样式规则&lt;p&gt;- 计算布局&lt;p&gt;- 获取用于显示的图像和字体&lt;p&gt;- 绘制像素以呈现视觉结果&lt;p&gt;- 复合图层以实现平滑滚动和动画&lt;p&gt;因此，它实际上是一个纯net+DOM+脚本浏览器，没有样式&amp;#x2F;布局&amp;#x2F;绘制。&lt;p&gt;---&lt;p&gt;对我来说绝对很有趣正在制作一个具有不同权衡的轻量级浏览器引擎的人（net+DOM+style&amp;#x2F;layout&amp;#x2F;paint-only，没有脚本）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;barishnamazov:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这让我想起了 Servo 项目的历程。看到 WHATWG 规范的另一个实现总是令人印象深刻。&lt;p&gt;很有趣的是，这里选择 Zig 而不是 Rust 作为浏览器引擎组件。 Rust 已经成为“安全浏览器组件”的默认答案。 （例如，Servo、Firefox 的氧化），主要是因为借用检查器在理论上很好地映射到 DOM 树的所有权模型。但在实践中，DOM 节点通常需要共享可变状态（父指针、子指针、事件侦听器），这迫使您进入 Rc&lt;RefCell&lt;T&gt;&gt; 模式。 Rust 的地狱。&lt;p&gt;Zig 的手动内存管理实际上对于 DOM 实现来说可能更符合人体工程学，特别是因为只要您有一个强大的竞技场分配策略，您就可以更直接地对图形关系进行建模，而无需与编译器对抗。很高兴能在 Lightpanda 发布后学习它的实现。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://lightpanda.io/blog/posts/migrating-our-dom-to-zig</guid>
-      <pubDate>Mon, 12 Jan 2026 09:42:49 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46586179</comments>
+      <title>软盘被证明是最适合孩子的电视遥控器</title>
+      <link>https://blog.smartere.dk/2026/01/floppy-disks-the-best-tv-remote-for-kids/</link>
+      <guid isPermaLink="true">https://blog.smartere.dk/2026/01/floppy-disks-the-best-tv-remote-for-kids/</guid>
+      <pubDate>Mon, 12 Jan 2026 13:07:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46587934</comments>
     </item>
     <item>
-      <title>如何在 Vanilla JavaScript 中构建响应式声明式 UI</title>
-      <link>https://jsdev.space/howto/reactive-vanilla-js/</link>
-      <description>&lt;p&gt;onDelete = onDelete 返回这个。包装（值，完整路径）这个。路径，键]删除目标[键]这个。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; How to Build Reactive Declarative UI in Vanilla JavaScript&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46587033"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://jsdev.space/howto/reactive-vanilla-js/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>LLVM：不好的部分</title>
+      <link>https://www.npopov.com/2026/01/11/LLVM-The-bad-parts.html</link>
+      <description>&lt;p&gt;） LLVM 确实遇到的问题是审核能力不足。这同时也是 LLVM 的一大优点和缺点。 LLVM 是一个巨大的项目。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; LLVM: The Bad Parts&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46588837"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.npopov.com/2026/01/11/LLVM-The-bad-parts.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.npopov.com/2026/01/11/LLVM-The-bad-parts.html</guid>
+      <pubDate>Mon, 12 Jan 2026 14:18:13 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46588837</comments>
+    </item>
+    <item>
+      <title>重现 DeepSeek 的 MHC：当残余连接爆炸时</title>
+      <link>https://taylorkolasinski.com/notes/mhc-reproduction/</link>
+      <description>&lt;p&gt;这些混合矩阵是不受约束的。这就是无约束混合矩阵大规模破坏的原因。这个过程是可微分的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Reproducing DeepSeek's MHC: When Residual Connections Explode&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46588572"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://taylorkolasinski.com/notes/mhc-reproduction/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;solarkraft:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直想知道：为什么这种架构在其他法学硕士中没有更常见？毕竟，上下文效率是惊人的——这难道不会转化为大量的资金吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;taykolasinski:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在这里。我花了几天时间从最近的 DeepSeek 论文 (2512.24880) 中复制了 mHC 架构。&lt;p&gt;复制中的两个关键要点：&lt;p&gt;不受约束的超连接确实会爆炸（即使在 10M 规模下也能放大 7 倍）。&lt;p&gt;我遇到了令人讨厌的“流持久性”问题。我的张量形状正确，但架构在功能上被破坏的错误。&lt;p&gt;这是第 1 部分（10M 规模）。第 2 部分（在 A100 上扩展到 1B）将于本周晚些时候发布。很高兴回答有关实施的问题。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://taylorkolasinski.com/notes/mhc-reproduction/</guid>
+      <pubDate>Mon, 12 Jan 2026 13:57:32 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46588572</comments>
+    </item>
+    <item>
+      <title>为什么安大略数字服务无法获得“98% 安全”的法学硕士（1500 万加拿大人）</title>
+      <link>https://rosetta-labs-erb.github.io/authority-boundary-ledger/</link>
+      <description>&lt;p&gt;并不是因为这些工具有风险，而是因为它们在我们的环境中未经证实。这不是完美主义。它们是使采用成为可能的基础设施。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Why Ontario Digital Service couldn't procure '98% safe' LLMs (15M Canadians)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46589386"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://rosetta-labs-erb.github.io/authority-boundary-ledger/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vntok:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[延迟]&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;matharmin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有很多实用程序实际上并没有做任何有用的事情。本示例中的代理仅用于调试日志。 DOM 实用程序层只是稍微减少了创建 DOM 节点的 LOC 数量。&lt;p&gt;然后您最终会得到实际上不是声明性的消费者代码？最终的代码仍然直接操作DOM。这显示了最简单的示例 - 创建和删除节点。库框架解决的困难部分是大规模更新 DOM。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xutopia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一生都不明白为什么人们绝对坚持使用 JavaScript 来渲染 HTML。后端框架可以很好地处理 HTmL。&lt;p&gt;DOM 操作可以简化为几个操作：删除、添加、更改。&lt;p&gt;其他类型的操作和交互功能可以是 JavaScript，而不是数百字节的东西。&lt;p&gt;HTMX、Hotwire&amp;#x2F;Turbo、LiveView 对我来说更加理智。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://jsdev.space/howto/reactive-vanilla-js/</guid>
-      <pubDate>Mon, 12 Jan 2026 11:31:56 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46587033</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ForHackernews:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我有点不清楚为什么需要在 AI 内核层强制执行这些权限。难道您不能将聊天机器人放在正常的系统权限边界之外并将其视为不受信任的用户吗？该机器人成为帮助制定用户请求的助手，但相对于用户本身没有任何提升的权限。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;supriyo-biswas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望人们能写任何他们想写的东西，而不是通过法学硕士来膨胀他们，现在很多文章都是如此。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;csemple:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;OP 在此。&lt;p&gt;在安大略数字服务中心，我们构建了 COVID-19 工具、数字 ID 和服务 
+为 1500 万公民服务。我们评估了法学硕士系统以改善服务，但永远无法 
+采购它们。&lt;p&gt;阻碍因素不是能力，而是责任。我们无法证明“模型”的合理性 
+可能不会违反隐私法规”给需要的决策者 
+捍卫“这个系统不能做 X。”&lt;p&gt;这篇文章演示了“处方垫模式”：治疗权威 
+边界作为机械过滤工具的持久状态。&lt;p&gt;逻辑：不要指示模型避免禁止的操作 - 物理上删除 
+执行它们所需的工具。如果模型看不到该工具，则它无法 
+尝试调用它。&lt;p&gt;这是一个参考实现。同样的模式也适用于医疗保健（不要 
+向未经许可的用户提供诊断工具）、金融（不向 
+只读会话），或“98% 安全”的任何域。表示“0% 可部署”。&lt;p&gt;存储库：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;rosetta-labs-erb&amp;#x2F;authority-boundary-ledger" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;rosetta-labs-erb&amp;#x2F;authority-boundary-ledge...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://rosetta-labs-erb.github.io/authority-boundary-ledger/</guid>
+      <pubDate>Mon, 12 Jan 2026 14:58:15 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46589386</comments>
     </item>
     <item>
-      <title>日本黑猩猩艾未未去世，享年 49 岁</title>
-      <link>https://www.bbc.com/news/articles/cj9r3zl2ywyo</link>
-      <description>&lt;p&gt;当艾未未参加认知测试时，她喜欢绘画。日本媒体共同社报道称，她曾与另一只灵长类动物一起逃跑——用钥匙打开笼子。简·古道尔夫人彻底改变了我们对灵长类近亲黑猩猩的理解，黑猩猩比想象中更有同情心——研究使用亚洲日本森林“急救”拍摄的野生黑猩猩。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ai, Japanese chimpanzee who counted and painted dies at 49&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46585947"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bbc.com/news/articles/cj9r3zl2ywyo'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Zen-C：像高级语言一样编写，像C一样运行</title>
+      <link>https://github.com/z-libs/Zen-C</link>
+      <description>&lt;p&gt;聚合类型 数组 具有值语义的固定大小数组。 1;结构 具有可选位字段的数据结构。内存管理 Zen C 允许使用符合人体工程学的辅助工具进行手动内存管理。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Zen-C: Write like a high-level language, run like C&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46587804"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/z-libs/Zen-C'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;comrade1234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当我离职时，我的同事送给我一幅猎豹（最后一只扮演他的黑猩猩）的画作。我用藤条和香蕉木专业地将它装框。这幅画本身看起来与艾未未的画非常相似——相同的配色方案和图案。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;falloutx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;上帝拿错了艾，安息吧&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最初将其误认为是 AI ...&lt;p&gt;我认识的唯一以艺术为中心的猴子是雌性大猩猩 Koko。&lt;p&gt;她在这里画了一些东西：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=6iixL0CMOAM" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=6iixL0CMOAM&lt;/a&gt;&lt;p&gt;我见过的最聪明的猴子是 Kanzi：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=ENKinbfgrkU" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=ENKinbfgrkU&lt;/a&gt;&lt;p&gt;我认为这只是一个问题和时间问题
-猴子的监狱系统可能需要重新考虑
-完全。当然，猴子比 Kanzi 更聪明 
-不会达到人类大脑的功能，但它们也非常
-令人信服的是，他非常聪明并且能够适应。大量视频
-猴子在哪里处理（！）智能手机已经显示了这一点并且
-这只是开始。比如电影《星球大战》中
-猿类。只是长期的、较小的步骤。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;echelon_musk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;让我想起《超级猴子球》里的艾艾。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fedeb95:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有人有关于他计数和绘画的视频吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;walthamstow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;艾出生于野外，很快就被圈养，并于 1977 年被一位动物商人卖给了 KUPRI（随着 1980 年日本批准《濒危野生动植物种国际贸易公约》（CITES），这种类型的销售变得非法）。&lt;p&gt;那么我们现在该怎么做这种事情呢？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hxugufjfjf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不可能不开玩笑说这只是头版上更多的人工智能新闻。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aix1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有关艾未未的更多信息：&lt;a href="https:&amp;#x2F;&amp;#x2F;link.springer.com&amp;#x2F;article&amp;#x2F;10.1007&amp;#x2F;s10329-017-0604-0" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;link.springer.com&amp;#x2F;文章&amp;#x2F;10.1007&amp;#x2F;s10329-017-0604-0&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrintegrity:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很想看他的一些画作，让我谷歌一下“AI chimp Painting” .. 哦..&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Sirikon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嘿，宇宙，当人们要求人工智能终结时，他们并不是这个意思。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.bbc.com/news/articles/cj9r3zl2ywyo</guid>
-      <pubDate>Mon, 12 Jan 2026 09:10:45 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46585947</comments>
+&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Lucasoato:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;可变性&lt;p&gt;&gt;默认情况下，变量是可变的。您可以使用指令启用“默认不可变”模式。&lt;p&gt;&gt; &amp;#x2F;&amp;#x2F;&amp;gt;默认不可变&lt;p&gt;&gt; var x = 10；
+&gt; &amp;#x2F;&amp;#x2F; x = 20； &amp;#x2F;&amp;#x2F;错误：x 是不可变的&lt;p&gt;&gt; var mut y = 10;
+&gt; y = 20；    &amp;#x2F;&amp;#x2F;好的&lt;p&gt;等等，但这意味着如果我正在阅读某人的代码，我将不知道变量是否可变，除非我阅读整个文件来查找此类指令。想象一下，如果有人甚至定义了自定义指令，那也不会使它变得可读。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blacksqr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;性能受到什么影响？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ramses0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;整个语言例子看起来相当理性，我特别高兴&amp;#x2F;被“循环”震惊了重复5`个例子。  我喜欢为“最大迭代次数”提供语法支持的想法，例如：&lt;p&gt;&lt;pre&gt;&lt;code&gt; Repeat 3 {
+       尝试 { 卷曲(...) &amp;amp;&amp;amp;休息}
+       除了{继续}
+    }
+&lt;/code&gt;&lt;/pre&gt;
+...显然不是试图围绕异常（似乎不受支持）或指数退避（或其他什么）发起任何圣战，但我想我有点震惊，因为我还没有看到任何其他语言支持看似明显的语法功能。&lt;p&gt;我想你可以轻松地用 `for x in range(3): ...break` 来模拟它，但 `repeat 3: ...break` 感觉更像是这样`print("-"*80)` 功能，但 for 循环。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alfonsodev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是 C 的 Typescript 吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kreco:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个非常好的项目。&lt;p&gt;备注列表：&lt;p&gt;&gt; var ints: int[5] = {1, 2, 3, 4, 5};&lt;p&gt;&gt; var 零：[int； 5]； &amp;#x2F;&amp;#x2F;零初始化&lt;p&gt;在我看来，零初始化数组并不直观。&lt;p&gt;&gt; &amp;#x2F;&amp;#x2F;位域&lt;p&gt;如果它是确定性打包的。&lt;p&gt;&gt;标记联合&lt;p&gt;相同，内存布局是否确定（且已优化）？&lt;p&gt;&gt; 2 | 3=&gt; print("二或三")&lt;p&gt;任何不使用 &amp;quot;2 || 的理由3”？&lt;p&gt;&gt;特征&lt;p&gt;如果我想删除或覆盖“圆的特征绘图”，该怎么办？因为原来的实现不符合我的限制？
+只要特征不需要位于与结构完全不同的模块中，我可能永远不会在编程语言中欢迎它们。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alexpadula:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;18 次提交！  我希望你能跟上这个项目，这真的很酷，很棒的工作。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;v_iter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么，这种语言的重点是能够以高生产率编写代码，但又具有将其编译为低级语言的好处？总体而言，该语言似乎重复了 ZIG 的功能，包括 C ABI 支持、带有附加人体工程学的手动内存管理、comptime 功能。很快我想到的最大区别是 Zen-C 的创建者声称它可以实现高级语言的生产力。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;morcus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对我来说一个有趣的一点是，它编译为（显然）可读的 C，我不确定如何利用它来发挥自己的优势&lt;p&gt;我对 C 不太熟悉 - 是否可以更容易地逐步将代码库的某些部分使用这种语言，而其他部分则使用常规 C？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;GrowingSideways:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么不编译为 Rust 或汇编？ C 似乎是一个奇怪的选择。&lt;p&gt;事实上，为什么不直接写 rust 呢？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;giancarlostoro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;抛开语法不谈，这与 Nim 相比如何？ Nim 也有类似的情况，我想 Crystal 也有类似的情况？说实话，我不太确定水晶的情况。我猜想 Nim 和 Vala，因为我相信两者都会转译为 C，所以你真的得到了“像 C”这样的东西。两者的输出。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Gys:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;初始提交是 24 小时前，363 个 star，已经有 20 个分叉。伙计，这进展得很快。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ethin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我是唯一一个看到这种语法并立即想到“伙计，这看起来几乎与 Rust 相同，只是有一些细微的变化”的人吗？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/z-libs/Zen-C</guid>
+      <pubDate>Mon, 12 Jan 2026 12:57:44 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46587804</comments>
     </item>
     <item>
-      <title>在 GitHub Actions 中启动调试终端</title>
-      <link>https://blog.gripdev.xyz/2026/01/10/actions-terminal-on-failure-for-debugging/</link>
-      <description>&lt;p&gt;点对点连接怎么样？ WithKeySet(keySet), jwtx. WithIssuer(githubOIDCIssuer), jwtx.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Launch a Debugging Terminal into GitHub Actions&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46587498"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://blog.gripdev.xyz/2026/01/10/actions-terminal-on-failure-for-debugging/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://blog.gripdev.xyz/2026/01/10/actions-terminal-on-failure-for-debugging/</guid>
-      <pubDate>Mon, 12 Jan 2026 12:25:27 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46587498</comments>
+      <title>适用于 Linux 的 Windows 8 桌面环境</title>
+      <link>https://github.com/er-bharat/Win8DE</link>
+      <description>&lt;p&gt;可以从所有应用程序拖动到图块。将应用程序从所有应用程序拖到底部以隐藏开始屏幕，并将图标放置在任何支持桌面的位置。像这个例子一样的桌面文件。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Windows 8 Desktop Environment for Linux&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46588132"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/er-bharat/Win8DE'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 30 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;petterroea:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“看，他们移植了 Windows 最糟糕的部分” &lt;p&gt;无论这是为了好玩还是因为实际上缺少 Windows 8（正如作者所做的那样），它都令人印象深刻。&lt;p&gt;我记得不久前读过 Windows 8 UI 主管被解雇的消息，但现在找不到证据。也许这只是讽刺哈哈&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stuaxo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为一名 gnome 用户，我记得我想我可能会习惯开始屏幕。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mring33621:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;没有人使用过我们的 Windows 8 笔记本电脑，因为它太糟糕了。完全浪费钱。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;GuB-42:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，几乎每个人都讨厌 Windows 8 桌面环境。直到今天，Windows 8 仍然被视为最糟糕的 Windows 版本之一，尽管它的底层表现相当不错。&lt;p&gt;像这样的项目表明它有自己的粉丝。感觉就像作家只有在死后才能成功。我仍然认为 Windows 8 UI 整体上很糟糕，但现在仇恨已经过去，人们不再害怕给它一些可弥补的品质。&lt;p&gt;不过它在移动设备上相当不错，我认为这是问题的根源。他们试图统一不应该统一的东西。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ferguess_k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是否有适用于 Linux 的 Windows 98 SP2 Env？个人（非系统管理员）计算体验的巅峰。 BSOD 比 Windows 95 少，并且所有 DOS 游戏仍然可以运行，而 Windows 2000&amp;#x2F;XP 则可以运行大多数 DOS 游戏。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Fabricio20:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是只有我一个人还是其他人注意到这些“windows ui 克隆”上的所有小不一致之处？ linux 上显示的是什么？我喜欢这个主意，但看着图片我无法通过锁定屏幕（字体大小感觉不对，输入字段上缺少边框，大小......这一切都感觉不对劲，我无法解释。屏幕键盘挤成一个小方块？？）。在“开始菜单”上想象一下电池图标附近的两种字体大小，显示的所有 Linux 应用程序如何具有奇怪的颜色和不完全匹配的蓝色、带有白色文本的亮绿色等等。最小化&amp;#x2F;最大化&amp;#x2F;关闭按钮看起来不合适并且形状不好，等等...）。我真的想知道是否是因为我当时在这些操作系统上花费了太多时间，或者是否所有正在使用的桌面环境都有一些固有的限制，导致这些设计不一致。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;leke:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这对于 Linux 手机来说非常好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alexpadula:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;噢，天哪，不。  我会继续使用我的 Linux。   很酷的项目，但现在的 Windows 很糟糕，甚至 UI 也是如此。最好的是XP。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;igmn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感觉这个线程中没有人真正点击过该链接或观看过视频演示。你们这些人只看标题吗？纯粹从概念的角度来看，当然，这是一个很酷的项目，但与 Windows 8 相比，实际的 UI 和 UX 很糟糕。看一下锁屏。&lt;p&gt;不是要对开发人员说废话，但忽视它也会适得其反：感觉有点像看到那些在 J2ME 上运行的 iPhone 4 克隆机试图模仿 iOS - 令人印象深刻的尝试，让一部愚蠢的手机看起来不像一部愚蠢的手机，但它用起来很痛苦，甚至看起来都很糟糕。我在 Linux UI 周围经常看到这样的情况，没有人制定标准，也没有人愿意指出标准的缺乏。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;b00ty4breakfast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;win8 是我使用过的 Windows 的最新版本（讽刺的是，在我安装 Linux 之前大约一周。我现在正在使用那台笔记本电脑，哈哈），我不记得这是一次很好的体验。  为什么你要重新创建它超出了我的范围，但我认为人们需要做这样的事情。&lt;p&gt;现在，如果有人想重新创建 win95，我可能会感兴趣&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;normalaccess:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我脑海中浮现的第一个念头是班尼特福迪在他的游戏《克服一切》中引用的一句话。&lt;p&gt;--“我为某种人制作了一款游戏。伤害他们。”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yyaakkqq:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Windows8-10 中&lt;i&gt;唯一&lt;/i&gt;值得保存的是 Windows 边框。这是一个巨大的可用性胜利。清晰的边界。 square（所以它也很快）。清晰的颜色显示哪个窗口具有焦点。同样有趣的是，在顶级帖子是 osx windows 边框半径惨败的第二天，这个显示就出现了。&lt;p&gt;然而，没有 Linux WM 有一个像样的 windows8-10 窗口边框克隆。&lt;p&gt;KDE 曾经有过，但自从从 kde5+ 重写了主题后，他们不仅杀死了它，而且还删除了使用正常的窗口边框颜色来显示焦点的选项。现在它是“强调色”这应该是非对比的，因为它们会在工具栏上强制使用相同的颜色，就像办公室功能区时代的所有坏主意一样。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;user3939382:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Windows 2000 UI 没有任何问题，只是“无聊”。我想让事情变得新奇，但这样做需要很高的技巧才能在不失去功能性要求的情况下实现，这正是他们自 Win2k 以来几乎所有设计所做的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nacozarina:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;呃，我仍然需要管理旧的 w2k12 Metro 虚拟机，我讨厌它&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;notRobot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在 Android 上使用受 Windows Metro 启发的启动器，这是我曾经拥有过的最佳手机 UI 体验：&lt;a href="https:&amp;#x2F;&amp;#x2F;play.google.com&amp;#x2F;store&amp;#x2F;apps&amp;#x2F;details?id=com.nfwebdev.launche r10"&gt;https:&amp;#x2F;&amp;#x2F;play.google.com&amp;#x2F;store&amp;#x2F;apps&amp;#x2F;details?id=com.nfwebdev.l...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;realusername:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我可以在移动 Linux 上使用这个 DE，但我担心桌面上的可用性会像 Windows 8 一样受到影响。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rubymamis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴看到它使用 Qt C++ 和 QML（：&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;haolez:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该设计看起来很酷，但它使应用程序启动器成为我工作流程的主角。我觉得如果能更多地打开窗户或者朝这个方向做一些事情会更好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;teekert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好的。我是一个开源人士，但对 Android 的开放性感到失望（几年前），我买了一台装有 Windows 10 Mobile（或任何名称）的诺基亚 Lumia 800。喜欢那个操作系统。速度快，集成度好。不禁一直在想，如果他们坚持下去（以 Android 应用程序兼容性或“事实上的 MS365 操作系统”或其他形式），它会走向某个地方。&lt;p&gt;然后他们会在 2026 年将其称为 Copilot 操作系统，无论如何都会把它搞砸。所以也许它死了是件好事;)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pmarreck:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这里的苹果人确实很喜欢 Metro。&lt;p&gt;当然是一个人的聚会，哈哈&lt;p&gt;很高兴看到在 Linux 上复兴它的尝试&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Fiveplus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谈到设计，距离 2012 年越远，Windows 8 有点像包豪斯运动，操作系统想要在触摸屏上运行，但又被设计为在传统的鼠标键盘界面上运行。它在技术上是正确的，在美学上是纯粹的，但在社会上被拒绝了，因为它对普通公众来说太明显了（我的意见）。&lt;p&gt;这种实现得到了大多数 Metro 克隆人所忽略的一件事，即作为结构范例的版式。在Win8中，没有分隔线或浓重的阴影来表示层次结构。层次结构是由字体的粗细和大小严格定义的。&lt;p&gt;在过去的十年里，我们又回到了玻璃形态和云母材料 (win11)，因为人们错过了纹理的舒适感，但从纯粹的信息密度和渲染性能的角度来看 - Windows 8 的平坦、单色 2D 平面是一个很好的切线。它消除了为触摸用户解码 UI chrome 的认知负担。&lt;p&gt;ps：这里使用原生 Qt&amp;#x2F;C++ 的限制给我留下了深刻的印象，而不是采用电子或 QML&amp;#x2F;javascript 绑定的简单路线来处理所有内容。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pjmlp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果它没有附带基于 XAML WinRT 的框架堆栈，那么它只是成功了一半。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arkensaw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴看到这个。我真的很喜欢 Windows Phone，因为它拥有简单的用户界面，这与它有很多共同的概念。我觉得如果微软在放弃 Win8 UI 之前多迭代几次的话，他们可能会从 Win8 UI 中做出一些真正伟大的东西。&lt;p&gt;我希望你能采取这一举措并做出他们没有做出的改进&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Imustaskforhelp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我前段时间要求类似的东西，但适用于 Windows 7。有点惊讶有人制作了与我要求的如此惊人相似的东西。&lt;p&gt;我希望有人也为 Windows 7 创建类似的东西。随着 Windows 7 怀旧情绪的强烈袭来，人们只能抱有希望&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nelblu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;尽管用户界面流畅、流畅，而且可能是触摸界面的最佳选择，但我清楚地记得我讨厌它，并且疯狂地希望我的“开始”按钮回到我的电脑上。阅读所有关于其怀旧的评论有点有趣，而我所能想到的就是它是多么烦人。我想每个人都有自己的:-)。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;themicahshell:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“你们的科学家们如此专注于他们是否可以，他们没有停下来思考是否应该”。 &amp;#x2F;jk&lt;p&gt;在平板电脑上可能不错。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;keyle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它可能比 Windows 8 运行得更好......看到它可能有一些所谓的“常识”超越“组织驱动设计”。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;techsystems:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望所有东西都能使用这个，包括我的手机、平板电脑和电话！&lt;p&gt;我正在哪个发行版上进行测试。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jasoneckert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在我看来，Windows 8 和 Windows Phone 的 Metro&amp;#x2F;Modern UI 的流畅、基于磁贴的界面被低估了。它简单、快速并且专注于触摸。虽然我当时没有基于触摸的 Windows 8 笔记本电脑或平板电脑，但我有一台 Windows Phone，而且我比此后拥有的任何其他设备更喜欢使用它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WillAdams:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果它保留并实现平板电脑功能，这可能会非常好。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/er-bharat/Win8DE</guid>
+      <pubDate>Mon, 12 Jan 2026 13:22:44 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46588132</comments>
     </item>
     <item>
-      <title>Fossil 与 Git</title>
-      <link>https://fossil-scm.org/home/doc/trunk/www/fossil-v-git.wiki</link>
-      <description>&lt;p&gt;每当 Fossil 被告知以某种破坏性方式修改本地签出（fossil rm、fossil 更新、fossil 恢复等）时，Fossil 都会记住先前的状态，并能够使用 Fossil 撤消命令将签出目录返回到该状态。化石体积小、完整且独立。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Fossil versus Git&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46586385"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://fossil-scm.org/home/doc/trunk/www/fossil-v-git.wiki'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>爱尔兰快速跟踪法案将有害的声音或图像滥用定为犯罪</title>
+      <link>https://www.irishtimes.com/ireland/2026/01/07/call-to-fast-track-bill-targeting-ai-deepfakes-and-identity-hijacking/</link>
+      <description>&lt;p&gt;爱尔兰司法部长正在审查将人工智能生成的未经同意的亲密图像和儿童性虐待图像定为犯罪的法律力度。加拉格尔女士还质疑爱尔兰对社交媒体平台的保护措施是否足够。所以这也是一个基于性别的暴力问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ireland fast tracks Bill to criminalise harmful voice or image misuse&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46588319"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.irishtimes.com/ireland/2026/01/07/call-to-fast-track-bill-targeting-ai-deepfakes-and-identity-hijacking/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shane_kerns:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;围绕化石和柔术的基础设施缺失。 Git 不是最好的，但网络效应很重要。
-例如，我们在工作中使用jenkins，并且没有化石或柔术的插件。
-我们的每个客户都使用 git，所以我们甚至不能提出化石。尽管我们可能只使用 10 个 git 命令，但众所周知，如果出现问题，这些命令仍然可以工作。
-仅仅说化石或柔术更好是不够的。不幸的是，替代 DVCS 的生态系统和思想观念严重缺乏。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jgalt212:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们使用 Mercurial 并且对此感到满意。我希望我们永远不会转向 git，但我可以看到我们最终会转向下一步。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Retr0id:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最近正在修改自己的 .git 解析器，我忍不住想“这可能是一个 sqlite 数据库”。&lt;p&gt;我发现 &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;chrislloyd&amp;#x2F;git-remote-sqlite" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;chrislloyd&amp;#x2F;git-remote-sqlite&lt;/a&gt; 作为实现 git-on-sqlite 的一种方式，它通过将自身注册为 git “remote” 来工作。 &lt;p&gt;有趣的是，存在一个“为什么 SQLite 不使用 Git”的问题。文章（&lt;a href="https:&amp;#x2F;&amp;#x2F;sqlite.org&amp;#x2F;whynotgit.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;sqlite.org&amp;#x2F;whynotgit.html&lt;/a&gt;），但没有相应的“为什么 Git 不使用 SQLite”。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;e-topy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; Git 仅提供文件版本控制服务，而 Fossil 则添加了集成的 wiki、票务和服务。 bug 跟踪、嵌入式文档、技术说明、网络论坛和聊天服务 [...]&lt;p&gt;我喜欢将所有这些都包含在实际的 VCS 中的想法，主要是因为使用 Git，您需要像 GitHub 这样的集中服务来提供这些服务。&lt;p&gt;但我不得不问：这真的是一个好主意吗？似乎功能蠕变是由单个项目 (SQLite) 的需求驱动的。&lt;p&gt;所有这些都可以（尽管很尴尬）由 git 存储库和 cron 作业支持。
-维基百科？只需使用一堆 Markdown 或本周最喜欢的标记语言文件创建一个存储库即可。
-票务及错误跟踪？同样，每张票证都只有一个 Markdown 文件。
-嵌入式文档和技术说明？这些只是具有不同属性的特殊维基页面。
-论坛和聊天服务？您希望您的 VCS 这样做吗？我能够在文件和对话之间建立超链接，但仍然如此。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NeutralForest:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Fossil 真的很酷，因为您可以将问题、票证和 wiki 全部存储在 SQLite 数据库中。感觉很简洁，我希望有更多的机会使用它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnorswap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;遗憾的是，它缺少唯一重要的区别：&lt;p&gt;&lt;pre&gt;&lt;code&gt; Git：被其他人使用
-  化石：未被其他人使用
-
-&lt;/code&gt;&lt;/pre&gt;
-其他一切都无关紧要。 Git 很难使用，也很难掌握，但你需要任何人都这样做才能与其他人一起工作。&lt;p&gt;我希望情况并非如此，但网络效应非常重要。 Mercurial 是一个更好的 DVCS，与 git 大约在同一时间推出，但它失败了，并不是因为“越差越好”。但网络效应是从 Linux 内核本身扩散出来的。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://fossil-scm.org/home/doc/trunk/www/fossil-v-git.wiki</guid>
-      <pubDate>Mon, 12 Jan 2026 10:10:05 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46586385</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;richwater:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于那些一直试图以“保护[人民|儿童|妇女|等]”为幌子推动审查法律的政府来说，人工智能是上帝的恩赐。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;john-h-k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;未经个人事先同意，故意使用或侵犯使用和发布……个人姓名、照片……并且不顾是否对他人造成伤害。&lt;p&gt;&amp;gt; [当某人]严重干扰时发生伤害
+影响他人的安宁和隐私或引起他人的恐慌或困扰
+person&lt;p&gt;这似乎是非常广泛的措辞。报纸刊登犯罪嫌疑人的姓名和照片，绝对是在未经个人同意的情况下“刊登个人姓名、照片”，这显然会引起恐慌或困扰。&lt;p&gt;如果没有添加一些豁免条款，该法案似乎基本上禁止在任何批评他们的情况下使用任何人的姓名、照片；它几乎肯定会与欧洲人权法院关于言论自由的第 10 条相冲突。
+然而（！！）只要有一些豁免，它就可以做得更好。即使将其与人工智能生成的照片、声音等联系起来也会有所帮助——大多数真正的批评和报告可以在不使用人工智能的情况下进行，但很多故意伤害和性骚扰在人工智能之前并没有发生。如果他们不想这样做，可以添加某种形式的“如果信息用于非诽谤性情况则豁免”的条款。也可以工作。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;uyzstvqs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个很好的监管方式。将滥用人工智能工具造成伤害的人定为刑事犯罪。不要试图对人工智能工具实施审查或大规模监视。我反对所有色情内容，但审查模特的裸体既会损害模特的质量（例如：SD3），也会破坏合法的艺术价值。&lt;p&gt;尽管 Grok 上的框架是高度两面性的。它违反了服务条款，并且涉及数百万合法用户中的少数滥用者。与此同时，还有实际的“裸体”。完全宣传自己以实现这种滥用的服务。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;piltdownman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因此，其实际背景是 Meta 与我们选出的代表（以及一些知名媒体人物）之间关于社会工程诈骗广告的长期不和。&lt;p&gt;您可能已经看到过它的一些变体 - 信誉良好的新闻媒体的 1:1 副本 - 在本例中为《爱尔兰独立报》、《爱尔兰时报》、RTÉ 或 Newstalk - 以及一段据称来自我们总理的视频或类似视频，从而导致加密货币交易或外汇交易销售漏斗。我们的前任国家元首西蒙·哈里斯 (Simon Harris) 被同一个脚本的变体淹没了：&lt;p&gt;“为了国家的最大利益，我们进行了全面调查，以确保这不是一个骗局。”人工智能生成的哈里斯似乎在 YouTube 上显示的诈骗广告中说道。&lt;p&gt;“这是你改变生活的机会。所需要的只是一小步：投资 250 欧元，今天就开始赚钱，”这位深造人物在新闻发布会上说道。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.thejournal.ie&amp;#x2F;facetcheck-debunk-ai-scam-ad-deepfake-simon-harris-tainaiste-sharon-ni-bheolain-fintan-o-toole-youtube-6860505-Oct2025&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.thejournal.ie&amp;#x2F;facetcheck-debunk-ai-scam-ad-deepf...&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.newstalk.com&amp;#x2F;新闻&amp;#x2F;social-media-platforms-see-surge-in-scam-ads-depicting-simon-harris-2126500" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.newstalk.com&amp;#x2F;新闻&amp;#x2F;social-media-platforms-see-sur...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nashashmi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;未经他人同意，出于恶意目的而故意滥用他人的图像或声音，应构成刑事犯罪。&lt;p&gt;滥用行为的含糊性如此之大，但后果的影响却如此之大。该法案正在加速推进。这似乎同时伤害了每个人。&lt;p&gt;最好提出一项包含具体限制和禁止的法案，其中包含处理、后果、起诉和上诉。&lt;p&gt;然后，当其他明显被禁止的行为出现时，该法案可以扩展到其他禁止行为&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;belorn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该法律与反骚扰法有何区别？&lt;p&gt;我记得有一起古老的诉讼（不确定是哪个国家），一名学生将裸体照片合成到老师的照片上并将其交给其他学生。本案的主要问题是，即使涉事老师从未收到过该图片，这是否构成性骚扰。我不记得结果了，但我认为他们被判有罪。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.irishtimes.com/ireland/2026/01/07/call-to-fast-track-bill-targeting-ai-deepfakes-and-identity-hijacking/</guid>
+      <pubDate>Mon, 12 Jan 2026 13:38:36 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46588319</comments>
+    </item>
+    <item>
+      <title>Ozempic 将美国的杂货支出平均减少了 5.3%</title>
+      <link>https://news.cornell.edu/stories/2025/12/ozempic-changing-foods-americans-buy</link>
+      <description>&lt;p&gt;“数据显示，采用后食品支出发生了明显变化，”赫里斯塔科娃说。这种组合使团队能够将收养者与未使用药物的类似家庭进行比较，从而隔离药物开始后发生的变化。然而，临床试验的证据，再加上停药后观察到的支出逆转，表明食欲抑制可能是支出变化背后的关键机制。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ozempic reduced grocery spending by an average of 5.3% in the US&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46587536"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://news.cornell.edu/stories/2025/12/ozempic-changing-foods-americans-buy'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 26 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LazyMans:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为在 2023 年底左右看到这一点很有趣。沃尔玛表示，注意到那些在其药房配 GLP1 处方药的人的购物车支出有所减少。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alistairSH:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对语言感到困惑...&lt;p&gt;&lt;i&gt;开始使用 GLP-1 药物后六个月内，家庭的食品杂货支出平均减少 5.3%。&lt;/i&gt;&lt;p&gt;家庭不服用 Ozempic，但个人服用。  他们是否暗示，如果家庭中的每个人都服用 Ozempic，作为一个整体，他们会看到 5% 的减少？  或者，家庭中的任何一个人导致该团体减少 5%？  美国平均家庭人口为2.5人...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dabadabahn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这与另一项研究相吻合，该研究发现 Ozempic 平均可以减少 4.2% 的排便次数。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stivatron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我家也出现过这样的情况。而且，虽然我没有预料到，但还是省掉了很多酒和啤酒的钱。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;didntknowyou:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;希望它能减少对人造垃圾零食的需求，并改变趋势，让制造商有动力专注于更健康的替代品&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ukoki:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是考虑 GLP-1 药物对环境的影响&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;seydor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;但为什么丹麦产品会被指责有美国产品也有的行为&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dgacmu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这里的标题片段可能具有误导性。摘自论文：&lt;p&gt;&gt;至少拥有一名 GLP-1 用户的家庭在采用后六个月内杂货支出减少了 5.3%，&lt;p&gt;这种减少仅适用于使用 GLP-1 药物的家庭，而不是整个美国。论文中的其他说法也是如此。&lt;p&gt;（这仍然表明这些药物导致美国食品杂货总支出下降 0.8%，这是值得注意的。）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fortran77:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;了解 GLP-1 的人会告诉我它“改变了他们的新陈代谢”。很少有胖子愿意承认他们只是吃得少了，如果他们不吃药而吃得少，他们也会减肥。&lt;p&gt;我担心服用 GLP-1 的胖子最终会找到一种吃得过多的方法，就像胃缩小的人学会整天喝卡路里并再次发胖一样......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stevenjgarner:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道 2026 年 SNAP 食品券项目规则的变化将在多大程度上进一步推动这一趋势，几个州使用新的联邦豁免来限制“垃圾食品”苏打水、糖果、能量饮料或预制甜点等物品？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dayyan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因此，身体积极性运动是一场心理战。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bargainbin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们在英国也看到了类似的情况，快餐店不得不适应，节食公司彻底倒闭。&lt;p&gt;听起来很阴谋，但当你看看这对收入造成的影响时，大量毫无根据的文章让你眼花缭乱，或者“停止服用它的用户体重反弹”或任何他们可以与之建立微妙联系的疾病，这一切都更有意义。&lt;p&gt;最大的食品公司不希望人们变瘦。他们希望人们购买他们的低质量、高利润的产品。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kayo_20211030:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太疯狂了。 5.3% 并不是一个小数目，至少对于美国消费者来说不是。&lt;p&gt;所有经济体都具有深厚的、有时并不明显的依赖性。我对接下来会发生什么感兴趣。&lt;p&gt;食品店会裁员吗？他们会改变产品组合吗？新的平衡会在哪里？&lt;p&gt;作为文章中的一个例子：&lt;p&gt;&gt;只有少数类别出现增长。酸奶涨幅最大，其次是新鲜水果、营养棒和肉类零食。&lt;p&gt;这些产品的单价上涨是否会弥补咸味零食的损失？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aucisson_masque:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;值得注意的是，大约三分之一的使用者在研究期间停止服用药物。当他们这样做时，他们的食品支出恢复到收养前的水平 - 他们的杂货篮变得比他们开始之前稍微不健康&lt;p&gt;这非常有趣，它证实了我对这种药物的看法。这是一个终生的承诺。一旦你停止，你最终会变成原来的自己，而当你停止向营养专家付费时，你并不会失去所有的收获。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cdvonstinkpot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这对我来说并不奇怪。我服用 Topamax 作为食欲抑制剂和药物我注意到类似的效果。很多时候，Soylent 就可以达到目的，或者是一种甚至不能被视为一顿饭的小零食。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iambateman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最初的问题是，这 5% 是总体的还是仅针对有人使用 ozempic 的家庭。&lt;p&gt;看起来这只是针对用户，而不是全面的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;helsinkiandrew:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;然而他们似乎在餐馆的消费更多：&lt;p&gt;&amp;gt; Ozempic 用户实际上外出就餐的花费更多。&lt;p&gt;&gt;市场研究人员表示，他们在休闲餐饮场所的支出比非 GLP-1 家庭多 25%。数据公司 Numerator 也有类似的发现，并指出，虽然 GLP-1 用户表示外出就餐次数减少，在家做饭次数增多，但他们的支出情况却并非如此：“经过验证的购买数据显示，他们的快餐购买率上升了 2%。”&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.bloomberg.com&amp;#x2F;新闻&amp;#x2F;文章&amp;#x2F;2026-01-02&amp;#x2F;ozempic-glp-1-users-spend-more-at-restaurant-chains-like-olive-garden" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.bloomberg.com&amp;#x2F;新闻&amp;#x2F;文章&amp;#x2F;2026-01-02&amp;#x2F;ozempic-g...&lt;/a&gt;（存档：&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;V6Erv" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;V6Erv&lt;/a&gt;)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;otikik:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I think it’s not ozempic, it’s people not able to afford as much as before&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;quitit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这个标题有点误导性，因为它给人的印象是所有美国家庭都存在，引用如下：&lt;p&gt;&amp;gt;开始服用 GLP-1 药物后六个月内，家庭平均减少食品杂货支出 5.3%。在高收入家庭中，下降幅度更大，超过 8%。在快餐店、咖啡店和其他有限服务餐馆的支出下降了约 8%。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eranation:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个惊人的数字。这难道不足以导致杂货价格下降吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bearjaws:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;鉴于 10% 的美国人使用索马鲁肽，这相当令人惊讶。替泽匹肽。&lt;p&gt;&gt;咸味零食的支出下降了约 10%，糖果、烘焙食品和饼干的支出也同样大幅下降。甚至连面包、肉和鸡蛋等主食都下降了。&lt;p&gt;我看不懂报纸（付费专区），但这意味着报纸上 10% 的美国人必须转而几乎不购买垃圾食品。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dougb5:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为了澄清标题，这是对使用 GLP-1 的家庭的影响，而不是对整个国家的影响。&lt;p&gt;&amp;gt;在开始使用 GLP-1 药物后的六个月内，家庭的食品杂货支出平均减少了 5.3%。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;francisofascii:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;少数类别出现增长。酸奶涨幅最大，其次是新鲜水果、营养棒和肉类零食。&lt;p&gt;有趣。想知道酸奶和臭氧用户的情况如何。益生菌？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;carlmr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;报告至少一名用户的美国家庭比例从 2023 年末的约 11% 上升到 2024 年中期的 16% 以上。&lt;p&gt;我想知道如何才能获得如此大的总体影响。但在美国，似乎有六分之一的家庭在服用 GLP-1 药物。&lt;p&gt;在我德国的朋友圈中，我什至不认识一个人服用这种药物。&lt;p&gt;在美国，这么多人需要这些药物来摆脱加工食品的折磨，这对我来说太疯狂了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reedf1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我确实认为这只能是药理学行业对食品行业的暂时胜利。发现能够部分改善臭氧影响的食品添加剂或品种只是时间问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nemomarx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; “数据显示，采用后食品支出发生了明显变化，”赫里斯塔科娃说。 “停药后，影响变得更小，更难以与采用前的支出模式区分开来。”&lt;p&gt;有趣的是，尽管从零食转向水果是健康倡导者一直想要的那种改变，但总体支出最终并没有减少那么多？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://news.cornell.edu/stories/2025/12/ozempic-changing-foods-americans-buy</guid>
+      <pubDate>Mon, 12 Jan 2026 12:29:00 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46587536</comments>
+    </item>
+    <item>
+      <title>2025 年是 Apple 服务破纪录的一年</title>
+      <link>https://www.apple.com/newsroom/2026/01/2025-marked-a-record-breaking-year-for-apple-services/</link>
+      <description>&lt;p&gt;更新 2026 年 1 月 12 日 2025 年是 Apple 服务破纪录的一年 Apple 的 Eddy Cue 回顾了 Apple 服务的出色一年 2025 年是 Apple 服务破纪录的一年，其特点是显着的增长、全球扩张和持续创新。从 Apple TV、Apple Music 和 Apple News，到 Apple Pay 和 iCloud 等日常必需品，我们为全球用户提供了丰富的体验。 Apple Wallet 利用 Apple Intelligence 让用户更轻松地跟踪订单，Apple Maps 利用设备上的智能轻松访问用户的首选路线和访问过的地点。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; 2025 marked a record-breaking year for Apple services&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46589009"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.apple.com/newsroom/2026/01/2025-marked-a-record-breaking-year-for-apple-services/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lapcat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; Apple 每天都在进行投资，以确保 App Store 仍然是一个安全且值得信赖的地方，可供用户找到优秀的应用程序。&lt;p&gt;上个季度，“服务”的毛利率有所下降。收入占75%。 App Store几乎是纯盈利，投资相对较少。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.apple.com/newsroom/2026/01/2025-marked-a-record-breaking-year-for-apple-services/</guid>
+      <pubDate>Mon, 12 Jan 2026 14:30:51 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46589009</comments>
+    </item>
+    <item>
+      <title>Keychron 的 Nape Pro 将您的键盘变成笔记本电脑式轨迹球装备</title>
+      <link>https://www.yankodesign.com/2026/01/08/keychrons-nape-pro-turns-your-mechanical-keyboard-into-a-laptop-style-trackball-rig-hands-on-at-ces-2026/</link>
+      <description>&lt;p&gt;它显然是为拇指操作而设计的，使您的手指保持在主行上，并消除了键盘和鼠标之间持续、低效的移动。分享 点击在 Facebook 上分享（在新窗口中打开） Facebook 点击在 X 上分享（在新窗口中打开） X 点击在 Pinterest 上分享（在新窗口中打开） Pinterest 点击在 Reddit 上分享（在新窗口中打开） Reddit 点击在 LinkedIn 上分享（在新窗口中打开） LinkedIn 点击在 Tumblr 上分享（在新窗口中打开） Tumblr 点击在 Pocket 上分享（在新窗口中打开） Pocket 点击通过电子邮件将链接发送给朋友（在新窗口中打开）新窗口） 电子邮件 点击打印（在新窗口中打开） 打印 更多 点击在 Telegram 上分享（在新窗口中打开） Telegram 点击在 Threads 上分享（在新窗口中打开） Threads 点击在 WhatsApp 上分享（在新窗口中打开） WhatsApp 点击在 Mastodon 上分享（在新窗口中打开） Mastodon 点击在 Bluesky 上分享（在新窗口中打开） Bluesky 点击在 Nextdoor 上分享（在新窗口中打开） Nextdoor 44 分享ChatGPT 支持的桌面麦克风为您现有的笔记本电脑提供实时翻译和代理能力今年最有趣的人工智能硬件可能不是新屏幕或耳机。您……改造与您的孩子一起成长的玩具。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Keychron's Nape Pro turns your keyboard into a laptop‑style trackball rig&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46589279"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.yankodesign.com/2026/01/08/keychrons-nape-pro-turns-your-mechanical-keyboard-into-a-laptop-style-trackball-rig-hands-on-at-ces-2026/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hasperdi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不错，我想要一个！假设它工作得很好（Keychron 产品通常都是这样）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;evanjrowley:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;除了有趣的设计和内部结构之外，新的轨迹球模块底部似乎有一个 1&amp;#x2F;4-20 螺纹三脚架安装座，这是符合人体工程学的分体式键盘的常见附加装置，为角度安装和类似的想法提供了很多选择。&lt;p&gt;来源：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.notebookcheck.net&amp;#x2F;Keychron-Nape-Pro-wireless-trackball-estimated-to-cost-130-and-will-launch-after-a-concrete-wireless-gaming-keyboard.1200712.0.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.notebookcheck.net&amp;#x2F;Keychron-Nape-Pro-wireless-tra...&lt;/a&gt;&lt;p&gt;检查此特定功能的照片，似乎 1&amp;#x2F;4-20 头与另一个孔配对：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.notebookcheck.net&amp;#x2F;fileadmin&amp;#x2F;笔记本&amp;#x2F;新闻&amp;#x2F;_nc5&amp;#x2F;Keychron-Trackball-black-bottom96.webp" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.notebookcheck.net&amp;#x2F;fileadmin&amp;#x2F;Notebooks&amp;#x2F;News&amp;#x2F;_nc5&amp;#x2F;...&lt;/a&gt;&lt;p&gt;我非常希望孔排列能够用于 ARRI 销锁：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.arri.com&amp;#x2F;资源&amp;#x2F;blob&amp;#x2F;320202&amp;#x2F;04f5271d1d21f8c7db4a460d2e871b44&amp;#x2F;pin-lock-standard-download-data.pdf" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.arri.com&amp;#x2F;resource&amp;#x2F;blob&amp;#x2F;320202&amp;#x2F;04f5271d1d21f8c7db...&lt;/a&gt;&lt;p&gt;回顾 CES 上的 Nape Pro 图片，情况似乎并非如此。这些 1&amp;#x2F;4-20 安装的人体工学键盘设计需要的一件事是锁定机制，以防止键盘在常规使用过程中逐渐旋转。对于 Nape Pro，我想知道在其外部钻孔是否可行？&lt;p&gt;至少，如果您考虑将它们安装在表面的边缘，那么请确保您的 1&amp;#x2F;4-20 安装臂在那端使用 ARRI 销锁。键盘旋转时很烦人，但如果整个安装臂都旋转，那么您可能会遇到麻烦（即，松动的安装臂向地面旋转 180 度，可能会损坏您的键盘）。&lt;p&gt;以下是 SmallRig 的此类臂的一些示例：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.smallrig.com&amp;#x2F;Rosette-Magic-Arm-11-inch-with-ARRI-Locating-Screw-4900.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.smallrig.com&amp;#x2F;Rosette-Magic-Arm-11-inch-with-ARRI...&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.smallrig.com&amp;#x2F;Rosette-Magic-Arm-7-inch-with-ARRI-Locating-Screw-4899.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.smallrig.com&amp;#x2F;Rosette-Magic-Arm-7-inch-with-ARRI-...&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.smallrig.com&amp;#x2F;SmallRig-Magic-Arm-with-Dual-Ball-Heads-1-4-20-Screw-and-ARRI-looking-Screw-3874.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.smallrig.com&amp;#x2F;SmallRig-Magic-Arm-with-Dual-Ball-H...&lt;/a&gt;&lt;p&gt;还有一个带有 ARRI 孔的夹具：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.smallrig.com&amp;#x2F;smallrig-super-clamp-2220.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.smallrig.com&amp;#x2F;smallrig-super-clamp-2220.html&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;uallo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有没有类似的低配置的东西？我使用 Logitech MX Keys 键盘，轨迹球似乎太高，使用起来不舒服。轨迹球或奶嘴（如联想的奶嘴）都可以。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jsheard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;笔记本电脑配备轨迹球已经有一段时间了，但这仍然是一个很酷的主意。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.yankodesign.com/2026/01/08/keychrons-nape-pro-turns-your-mechanical-keyboard-into-a-laptop-style-trackball-rig-hands-on-at-ces-2026/</guid>
+      <pubDate>Mon, 12 Jan 2026 14:50:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46589279</comments>
     </item>
   </channel>
 </rss>
