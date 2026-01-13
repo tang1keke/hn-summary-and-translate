@@ -6,196 +6,59 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 12 Jan 2026 21:30:43 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Jan 2026 01:57:47 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>共同作業: 残りの作業はクロード コードで行います</title>
-      <link>https://claude.com/blog/cowork-research-preview</link>
-      <description>&lt;p&gt;クロードは、そのフォルダー内のファイルを読み取り、編集、または作成できるようになります。 Chrome で Cowork と Claude をペアリングすると、Claude はブラウザへのアクセスが必要なタスクも完了できます。クロードがあなたの指示を誤解する可能性は常にあるため、このようなことについてはクロードに非常に明確な指示を与える必要があります。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Cowork: Claude Code for the rest of your work&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46593022"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://claude.com/blog/cowork-research-preview'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 27 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;theturtletalks:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは単なる Claude Code 上の UI ではないでしょうか?ほとんどの人にとって、ターミナルを使用するということは、Claude だけに縛られることなく、さまざまなコーディング CLI に切り替えることができることを意味します。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Wowfunhappy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;内部では、これはシェル コマンド (または Apple イベント) を実行しているのでしょうか? それとも実際に UI 内でクリックしているのでしょうか?&lt;p&gt;後者の場合、クロードの視覚認識で大きな成功を収めたことがないため、少し懐疑的です。完全に壊れたスクリーンショットには何も問題はないと定期的に表示されます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;daft_pink:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;大量のファイルをディレクトリにドロップする簡単で効率的な方法があったとしたらどうでしょうか。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tolerance:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは、Apple がアプリのコーナーや踏み台をいじるのではなく、理解しようとしていた類のものです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arjie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは本当に興味深いですね。おそらくこれは、副操縦士が約束しなかったものです。これにより、妻のような人々が私が Claude Code を使用しているすべてのものにアクセスできるようになることを心から願っています。&lt;p&gt;私はすべてに Claude Code を使用しています。 ~&amp;#x2F;bin&amp;#x2F; に短いスクリプトがあります。起動する cc という名前で、権限とコンテキストが設定された適切なフォルダーで起動します:&lt;p&gt;&lt;pre&gt;&lt;code&gt; ~tree ~&amp;#x2F;claude-workspaces -d
-    &amp;#x2F;ユーザー&amp;#x2F;george&amp;#x2F;claude-workspaces
-    §── コンテキストクリエーター
-    §── アイメッセージ
-    │ └── tmp
-    │ └── 連絡先検索
-    §── モデラー
-    §── 研究
-    §── 動画
-    ━── ウィキ
-
-&lt;/code&gt;&lt;/pre&gt;
-私は通常、これらのいずれか (たとえば、ビデオ) にアクセスして、「アストラ・クローリングのビデオを見つけて、彼女に焦点を合わせて安定させて、GIF に変換する」などの愚かなことを言います。これは、~&amp;#x2F;Movies&amp;#x2F;Astra を検索する必要があることを認識しており、クロールなどの名前のファイルを検索するという自然な処理を実行し、残りの作業を実行します。&lt;p&gt;同様に、`modeler` は OpenSCAD ファイルなどを作成することを認識し、`wiki` コンテキストは、私がブログに Mediawiki を使用していて、Template:HackerNews とその作成方法を認識していることを認識します。それを使用するなどです。これらのおかげで作業がずっと簡単になり、その結果、より楽しくなったと思います。&lt;p&gt;このデータはすべて信頼できる情報です。つまり、私からのものなので、自分を台無しにしようとしているわけではないことがわかります。私の妻はコマンドラインにあまり慣れていないため、私ほどクロード コードを使用せず、Web アプリである ChatGPT を使用することを好みます。この Web アプリには、一緒に作業できるようにいくつかのカスタム GPT を構築しました。&lt;p&gt;クロードは非常に優れたモデルなので、妻が行う作業 (妻は Blender でモデルを作成) のためにアクセスできるようにしたいと思っています。これらのモデルが私たちに代わってアプリケーションを本当に上手に使えるようになる日は素晴らしいでしょう。これは、先日ゲーム Power Grid 用に作成したサンプル モデルです: &lt;a href="https:&amp;#x2F;&amp;#x2F;wiki.roshangeorge.dev&amp;#x2F;w&amp;#x2F;Blog&amp;#x2F;2026-01-11&amp;#x2F;Modeling_With_Claude" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;wiki.roshangeorge.dev&amp;#x2F;w&amp;#x2F;ブログ&amp;#x2F;2026-01-11&amp;#x2F;Modeling_Wit...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jameslk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはコーディング エージェントの自然な進化です。これらは、ツールの使用、特にファイル システムに関する機能だけでなく、ブラウザを開いたり、Web を検索したり、プログラムを実行したり (現時点ではコマンド ライン経由) などの機能を備えているため、誰もが日常業務に使用する汎用エージェントになる可能性が最も高くなります。これらは、あなたの OS、同僚、そしておそらくあなたの「友人」になります。 &lt;p&gt;私は、技術者ではない友人がこれらのコーディング エージェントの 1 つをインストールするのを手伝ったところです。これは、質問に対する答えを提供する以上のことができる、今日の AI モデルを使用する最良の方法だからです。私はこれが発表されても驚きませんでした。このように一般化されたすべてのコード エージェントで同じことが起こると予想します&lt;p&gt;導入に向けた最大の課題は、セキュリティとデータ損失です。プロンプト インジェクションとソーシャル エンジニアリングは本質的に同じものであるため、プロンプト インジェクションも同じ方法で解決する必要があると思います。データ損失は、サンドボックスとバックアップを使用すると簡単に解決できます。いずれにしても、多くの人にとって、汎用エージェントが追いつくまでは、現時点では汎用エージェントを使用する価値がセキュリティ上の懸念を上回ると思います。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pentagrama:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これらの大手 AI 企業の次のステップは、独自のオペレーティング システム (おそらく Linux ディストリビューション) を立ち上げることになると思います。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tinyhouse:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私はすでに仕事と生活を整理するために Claude Code を使用しているので、これは非常に理にかなっています。ただし、試してみたところ、プロジェクトでクロードを使用する場合とどう違うのかは不明です。主な違いは、自分のコンピュータのローカル フォルダ内で使用できるため、データをアップロードする必要があるプロジェクトではなく、ワークフローに統合されていることだと思います。これは理にかなっています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bahmboo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ローカルの世界にもこれに似たものはありますか？私は機密データの運用のために、48 GB MacBook に完全なローカルの「ai」スタックをセットアップしています。ウェブイを使用します。コーディングには引き続き sota クラウド サービスを使用します。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ossa-ma:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;すべてのスタートアップは、ビッグ 3 (OpenAI、Anthropic、Google) のなすがままになっています。&lt;p&gt;彼らは、自社の製品の周囲に築き上げた薄い堀を蒸発させるような何かをリリースする可能性があり、おそらくそうするでしょう。&lt;p&gt;これは、テクノロジー業界で初めて、作成されるよりも多くのスタートアップ製品が組み込まれる (agar.io スタイル) ように感じられます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jfletch321:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「Stay in control」がどのように行われるかは少し面白いです。このセクションでは主に、どれくらい早く制御を失うか (ファイルの削除、プロンプト インジェクション) について説明します。技術者以外のユーザーが残念なフォルダにアクセスし、多くの問題に巻き込まれることが予想されます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jryio:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;元に戻せるコードとは異なり、ほとんどのファイル システムやアプリケーションの操作は元に戻せないということを覚えておくことが非常に重要です。&lt;p&gt;改訂履歴、ロールバックなどにサンドボックスのスナップショットはありません。&lt;p&gt;保護者、技術者ではない同僚、コンピューターを修復不可能なほど台無しにした学生からの多くの話が見られると思います。&lt;p&gt;編集: ほとんどのコメントは、バージョン管理とバージョン管理の問題を指摘することに集中しています。ファイル システム スナップショットが存在します。それは素晴らしいことですが、Claude Cowork はそれを使用しません。&lt;p&gt;低レベルで実際のシステムを構築したことがある私たちにとって、このようなツール、特に技術者以外のユーザーを対象としたツールを見ると警鐘が鳴ると思います。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cc62cf4a4f20:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AI 企業を実際に重要なデータに結びつけるというのは、本当に驚くべきことです。つまり、彼らがこれを行っているのは、あなたのビジネスを廃業させ、すべての価値を自分たちのものにするためのトレーニング データ セットを構築するためだけであることは、誰もが知っていますよね?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mceachen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;YMMV ですが、ローカル ピホールを無効にするまで、TFA ページのコンテンツ本文はレンダリングされませんでした。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hypfer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人々は、このようなことをしていると、「ただ」餌を与えているわけではないことを理解しています。おそらくログを記録するクラウド API にコードを追加しますが、文字通り何でも (ここで説明したように、銀行取引明細書を含む) ですよね?&lt;p&gt;そうですか?&lt;p&gt;そうです??????&lt;p&gt;要素をアルファベット順に並べ替えるために、デスクトップとそのすべてのコンテンツへのフル アクセスをクラウドに許可する必要がありますか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は一瞬、これが彼らが致命的な三連単に対して安全な設計を思いついたことを意味するのではないかと期待していました。プロンプト インジェクション攻撃は、おそらく厳しいサンドボックス内ですべてを実行し、悪意のあるプロンプト攻撃によってデータを盗むために使用される可能性のある流出ベクトルをシャットダウンすることによって行われます。&lt;p&gt;残念ながら、この問題はまだ完全に解決されていません。代わりに、&lt;a href="https:&amp;#x2F;&amp;#x2F;support.claude.com&amp;#x2F;en&amp;#x2F;articles&amp;#x2F;13364135-using-cowork-safely" のヘルプ ページをご覧ください。 rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;support.claude.com&amp;#x2F;en&amp;#x2F;articles&amp;#x2F;13364135-using-cowork...&lt;/a&gt; はユーザーに「財務書類などの機密情報を含むローカル ファイルへのアクセスを許可しないでください」と指示します。そして「即時注入を示す可能性のある不審なアクションがないかクロードを監視する」。&lt;p&gt;(技術者以外のユーザーに「即時注入を示す可能性のある不審なアクション」に個人的に注意するよう求めるのは公平ではないと思います。)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WesleyLivesay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この見た目が本当に気に入りました。私は、Claude Code (および他の CLI LLM ツール) を使用して、ローカル テキスト ファイルの大規模なコレクションを操作し、通常は Obsidian を使用して更新を書き込みます。以前は非常に時間のかかる整理、要約、その他のタスクに優れた機能を発揮しました。&lt;p&gt;この種の機能をより多くのユーザーに提供し、CLI から提供できれば、非常に素晴らしいことになるでしょう。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ambicapter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Anthropic&amp;#x2F;Claude Code に関する他のスレッドでは、CC の得意なこと (コードの作成) に Anthropic が焦点を当てるのは正しいと人々が主張しているため、これは興味深いです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;forty:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;このページは表示できません。&lt;a href="https:&amp;#x2F;&amp;#x2F;claude.com&amp;#x2F;fr-fr&amp;#x2F;blog&amp;#x2F;cowork-research-preview" にリダイレクトされます。 rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;claude.com&amp;#x2F;fr-fr&amp;#x2F;blog&amp;#x2F;cowork-research-preview&lt;/a&gt; は存在しません。プライベートタブは役に立たない&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;exitb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ソフトウェア開発を自動化した後に残る仕事のほとんどが、会議の要約とスライドデッキの作成であるというのは、ちょっと面白いことです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hebejebelus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他人のエージェント、これは非常に理にかなっています。おそらく、端末でクロード コードを使用する時間の 30% は、実際にはコードを記述するためではありません。&lt;p&gt;たとえば、VAT レポート用に経費を (銀行取引明細書の CSV を指定して) 分類し、会計士から送られてくるスプレッドシートに記入するためにクロード コードを使用します。または、請求書の明細項目を書き留めて、月末にそれらの請求書を作成する場合にも使用できます。あるいは、空いているテニスコートを適切な時間に予約することもできます (地元のテニスコートのいくつかは北と南向きで、夕方には大変です)。これらすべてのタスクは少なくともターミナルの外部でも同様に実行できますが、実際の機能は私のコンピュータ上にのみ存在し、存在することができます。&lt;p&gt;これが CLAUDE.md や .claude&amp;#x2F; スキルなどとうまく連携できることを願っています。これらのファイルとスキルはファイルシステム全体に分散しているため、背景情報を一度書き込むだけで済みます。特に、クロードに CLI とその CLI を使用するスキルを作成してもらうのが気に入っています。今では、どのように行うかではなく、何ができるかを知る必要があるだけです。「方法」は「クロードに聞く」ようになりました。&lt;p&gt;Cowork がサポートしてくれると嬉しいですね。 (編集: この記事では、既存の「コネクタ」(MCP サーバー) を使用できると述べていますが、それにはいくつかのスキルが付属しているとのことです。まだアクセスできていないので、ファイル システム上の既存のスキルも使用できるかどうかは言えません…)&lt;p&gt;(フォローアップ編集: ローカル スキルを使用するためにファイル システム全体などをマウントすることはできるようですが、サンドボックス化されたシェルなので、ローカル コマンド (テニスクラブ クリなど) は使用できません。これにより、Web 上でクロード コードを実行するのと同じ環境が使用できるようになります。ただし、私の意見では、これにより確実に安全性が高まります。)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hmokiguess:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは、技術に詳しくないユーザー向けに、Claude Code を実行するシン クライアント UX のように見えます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;felixrieseberg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;こんにちは、ここチームの Felix です。これは私の製品です - ご意見をお聞かせください。私たちはこれを意図的に非常に早い時期にリリースしており、迅速に反復する予定です。&lt;p&gt;(現在、無関係な Opus 4.5 推論インシデントとも戦っているため、クライアントに Cowork がすぐに表示されない可能性があります。)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;falloutx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人間はもう何もできないのでしょうか？デスクトップを整理するのは難しいですか? Apple はすでにそれらをスタックに整理していると思いました。 (編集: Apple はすでにこれを行っています)&lt;p&gt;カレンダーを確認するのはそんなに難しいですか?また、クロードが作成したデッキを 4 秒で作成したことを示すために、たとえば 30 分の会議を開くのも不誠実な気がします。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Flux159:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは、Claude Code を使用していない人にとっては便利に見えますが、ビデオ内のデスクトップの例は少し誤解を招く可能性があると思います (特に非開発者にとって)。Claude は間違いなくそのデスクトップのスクリーンショットを撮っていません。整理すると、通常のファイル管理 CLI ツールを使用します。理由は少し明白です。「ls」メソッドを使用すると、ファイル名、タイプなどを読み取るのがはるかに簡単になります。 &lt;p&gt;しかし、それはクロード (Opus 4.5) の現在の弱点の 1 つである画像の理解にもつながります。クロードは実際には、現在人間と同じように画像の詳細を理解することができません。これは、クロードがポケモンをプレイするという分析でもよく説明されています。 href="https:&amp;#x2F;&amp;#x2F;www.lesswrong.com&amp;#x2F;posts&amp;#x2F;u6Lacc7wx4yYkBQ3r&amp;#x2F;insights-into-claude-opus-4-5-from-pokemon" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.lesswrong.com&amp;#x2F;posts&amp;#x2F;u6Lacc7wx4yYkBQ3r&amp;#x2F;insights-i...&lt;/a&gt;。今後数年間で、おそらくすべての大手 LLM 企業がこれらの弱点の解決に取り組むことになると思います。そうすれば、UI を使用する LLM の動作が大幅に向上します (最終的にはビデオ ストリームを適切に理解できるようになります。「500 ミリ秒ごとにスクリーンショットを撮ってビデオを理解する」ということはありません)。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;break_the_bank:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私たちは非常に似たものを構築していますが、代わりにクラウド上のファイルを使用します。&lt;p&gt;試してみてください &lt;a href="https:&amp;#x2F;&amp;#x2F;tabtabtab.ai" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;tabtabtab.ai&lt;/a&gt;&lt;p&gt;フィードバックをお待ちしています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tacoooooooo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはかなりクールに見えます。私は人々 (私自身もそうです) が開発以外の仕事にクロード コードを使用しているのをよく見かけます。生活、仕事などのさまざまな側面を管理する Anthropic は、現時点で最高のハーネスを構築しました。  UI の構築は、genpop の採用を実現するのに合理的です&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://claude.com/blog/cowork-research-preview</guid>
-      <pubDate>Mon, 12 Jan 2026 19:27:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46593022</comments>
+      <title>F2 (YC S25) が募集中です</title>
+      <link>https://www.ycombinator.com/companies/f2/jobs/cJsc7Fe-product-designer</link>
+      <description>&lt;p&gt;F2 のプラットフォーム全体で直感的でエレガントでインパクトのあるユーザー エクスペリエンスを構築するプロダクト デザイナーを採用しています。プライベート クレジット、プライベート エクイティ、商業銀行向けに設計された F2 は、チームが取引を 70% 以上高速に評価できるように支援します。 F2 はプライベート市場投資家のワークフローを加速し、審査、引受、ポートフォリオ管理のプロセスを合理化します。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; F2 (YC S25) Is Hiring&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46595130"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/f2/jobs/cJsc7Fe-product-designer'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.ycombinator.com/companies/f2/jobs/cJsc7Fe-product-designer</guid>
+      <pubDate>Mon, 12 Jan 2026 22:30:33 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46595130</comments>
     </item>
     <item>
-      <title>ファブリス ベラールの TS ジップ</title>
-      <link>https://www.bellard.org/ts_zip/</link>
-      <description>&lt;p&gt;ts_zip: 大規模言語モデルを使用したテキスト圧縮 ts_zip: 大規模言語モデルを使用したテキスト圧縮 ts_zip ユーティリティは、大規模言語モデルを使用してテキスト ファイルを圧縮 (できれば解凍) できます。圧縮率は他の圧縮ツールよりもはるかに高くなります。圧縮率 圧縮率はビット/バイト (bpb) で示されます。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Fabrice Bellard's TS Zip&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46593802"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bellard.org/ts_zip/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;benatkin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は、これによって生成される圧縮データに &lt;i&gt;tokables&lt;/i&gt; という名前を提案します。トークンをもじって、それがいかにワイルドであるか。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wewewedxfgdf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;&amp;gt; ts_zip ユーティリティはテキスト ファイルを圧縮 (できれば解凍) できます&lt;p&gt;うまくいけば :-)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MisterTea:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは、LLM がどのように圧縮を達成するかという点で私が興味を持っていることです。&lt;p&gt;これは、再圧縮するたびにデータが失われ、その後誤って再構築されるという電話ゲームのようなものであるため、出力にどのような偏差があるのか​​知りたいと思っています。物語の記憶違いのようなもので、時間が経つにつれて詳細がわずかに変化します。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dmitrygr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「圧縮サイズ」モデルのサイズとそれを実行するコードは含まれていないようです。ラージ テキスト圧縮ベンチマークのルールに従って、それらの合計サイズをカウントする必要があります。そうでない場合は、0 バイトの「圧縮」が行われます。平文を含む解凍プログラムを使用したファイルが勝ちます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;publicdebates:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ベラードはついに本当の同僚と仕事をすることになった。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.bellard.org/ts_zip/</guid>
-      <pubDate>Mon, 12 Jan 2026 20:26:47 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46593802</comments>
-    </item>
-    <item>
-      <title>OpenCode での認証されていないリモート コード実行</title>
-      <link>https://cy.md/opencode-rce/</link>
-      <description>&lt;p&gt;10 では、起動時に HTTP サーバー (デフォルト ポート 4096+) が自動的に生成されました。実行中、サーバーは次のエンドポイントを公開します。 このサーバーには認証がありません。サーバーの実行中は、ユーザーには何も表示されません。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Unauthenticated remote code execution in OpenCode&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46581095"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://cy.md/opencode-rce/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>調査で危険な欠陥が見つかった後、GoogleはAI健康概要を削除</title>
+      <link>https://arstechnica.com/ai/2026/01/google-removes-some-ai-health-summaries-after-investigation-finds-dangerous-flaws/</link>
+      <description>&lt;p&gt;「重度の肝疾患を患っており、さらなる治療が必要な場合でも、AI 概要はこれらの検査で正常な結果が得られる可能性があるという警告を怠っていると彼女は付け加えた。AI 概要は、ガーディアン紙が最初に Google に強調表示した他の例でも依然として表示されている。検索クエリに呪いの言葉を挿入すると AI 概要が完全に無効になることがユーザーに発見されるほど、不人気であることが判明した」&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Google removes AI health summaries after investigation finds dangerous flaws&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46595419"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arstechnica.com/ai/2026/01/google-removes-some-ai-health-summaries-after-investigation-finds-dangerous-flaws/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fragmede:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Anthropic のビュッフェの例にあるプラスチック製の食器は今どうなっているでしょうか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throw_me_uwu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;なんと、彼らは非認証の RCE http エンドポイントを作成しただけでなく、それに対する CORS バイパスも便利に追加しました... すべて CLI ツールで?それは http サーバーをサイレントに起動しますか??&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;miduil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一部のコミットでは「session&amp;#x2F;:id&amp;#x2F;shell」も「session&amp;#x2F;:id&amp;#x2F;bash」であり、元々は「session&amp;#x2F;:id&amp;#x2F;command」だったようです。&lt;p&gt;GitHub コード検索の使い方が間違っているのかもしれませんが、これはプル リクエストにさえ含まれていなかったようです。タグ付けされる「dev」（デフォルトのブランチ）へのプッシュもおそらく再検討する必要があります。&lt;p&gt;（「wip: bash」および「feat: bash コマンド」の下でさらにいくつかのコミット）&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;anomalyco&amp;#x2F;opencode&amp;#x2F;commit&amp;#x2F;7505fa61b9caa17f1ef358961d7e46beb3276ca9" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;anomalyco&amp;#x2F;opencode&amp;#x2F;commit&amp;#x2F;7505fa61b9caa17...&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;anomalyco&amp;#x2F;opencode&amp;#x2F;commit&amp;#x2F;93b71477e6656005353ce8c71224a99170f4ae2f" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;anomalyco&amp;#x2F;opencode&amp;#x2F;commit&amp;#x2F;93b71477e665600...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rdtsc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;サイレント修正&lt;p&gt;つまり、研究者に応答せずにサイレント修正したのか、それとも Web サイトが自分のマシン上でコードを実行しようとしていることがユーザーに認識されるサイレント部分を修正したのか。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lvl155:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;コアを維持せずに機能を追加し続けます。プランの販売が始まったので使用をやめました。 Opencode の主な理由は複数のモデルを使用することでしたが、モデル間のコンテキスト共有は PIA であり、現時点では非現実的であることが判明しました。私は、Claude Code と Codex を並べて使用することに戻りました。&lt;p&gt;そうは言っても、複数のベンダーやモデルを利用するオープン プラットフォームの必要性は間違いなくあります。私は、ビッグ 3 (Anthropic、OAI、Google) が、多額の資金を賭けてその支配権を譲るとは思えません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shimman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;へー、opencode はボランティア プロジェクトだと思っていましたが、大手企業からの大規模な支援を受けているビジネスのようです。 opencode はいつもこのように設定されていたのでしょうか?もっと優れたガバナンスモデルを備えたプロジェクトがあると断言できたかもしれませんが、そうではないと思います。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gpm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;opencode.ai をローカル サーバーの許可されたオリジンにするためにどのような機能が必要なのか知りたいです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thdxr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;メンテナーさん、ここの管理者さん&lt;p&gt;私たちはこれらのセキュリティ レポートの処理がうまくできませんでした。使用量が急速に増加し、問題に圧倒されています&lt;p&gt;今週、何人かの人々と会って、これをより適切に処理する方法、バグ報奨金プログラムに資金を提供してもらい、いくつかの監査を実施する方法についてアドバイスしてもらう予定です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AlexErrant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;開示スケジュールは懸念事項です。&lt;p&gt;報告日は 2025 年 11 月 17 日で、複数の「回答なし」が報告されています。メンテナーに何度も連絡を試みましたが、状況は良くありませんでした。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://cy.md/opencode-rce/</guid>
-      <pubDate>Sun, 11 Jan 2026 22:33:32 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46581095</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Terretta:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; &lt;i&gt;Google は、さまざまなカテゴリの情報にわたる概要の品質を常に測定し、レビューしていると付け加えました。&lt;/i&gt;&lt;p&gt;この文が何か良いものであるかどうかについてどれほど述べているかに注目してください。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ipython:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;...同時に、OpenAI は ChatGPT Health サービスを開始します: &lt;a href="https:&amp;#x2F;&amp;#x2F;openai.com&amp;#x2F;index&amp;#x2F;introducing-chatgpt-health&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;openai.com&amp;#x2F;index&amp;#x2F;introducing-chatgpt-health&amp;#x2F;&lt;/a&gt; は、「健康とウェルネスのために設計された ChatGPT の専用エクスペリエンス」として販売されています。&lt;p&gt;すべてのフロンティア ラボによる AI の安全性に対する大きく異なるアプローチを見るのは非常に興味深いです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;myhf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;アプリが健康データに基づいて診断や推奨を行う場合、それは医療機器としてのソフトウェア (SaMD) であり、責任の世界が開かれます。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.fda.gov&amp;#x2F;medical-devices&amp;#x2F;digital-health-center-excelence&amp;#x2F;software-medical-device-samd" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.fda.gov&amp;#x2F;medical-devices&amp;#x2F;digital-health-center-ex...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;InMice:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;驚かないよ。別の例は、Minecraft 関連のクエリです。最終的にはminecraft.wikiの特定のwikiページにアクセスするつもりで検索していますが、代わりに概要を読むだけになりました。これは、望ましい機能のアイデアを議論するファン フォーラムと、minecraft.wiki にある実際のゲームの聖書を組み合わせたものであり、真実の情報源と空想の情報源が混合されます。その結果、ばかばかしい不正確な要約が得られます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jeffbee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Googleは検索AI要約機能で自社のブランドを本当に傷つけているが、これは無料のものを含め、Geminiのサービスと比べて信じられないほどひどいものだ。それが継続的に存在することは不可解です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;leptons:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;良い。服用している薬を検索すると、Google の「AI」が検索結果を表示しました。概要は犯罪に近いものでした。メーカーの Web サイトと同様に、WebMD サイトにも正しい情報が記載されていました。 Google はそれについてたくさんの幻覚を見せ、そのとき私は、健康や医療情報に関係することについてだらだらと話す LLM を止めさせる必要があることを知りました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jnamaya:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;chatGPT は私にこう言いました、私は世界で最も健康な男です、そして私はそれを信じています&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;アルスはこのオリジナルの報道を盗用しているが、「一部」という言葉を省略して内容をさらに悪化させている。タイトルより。&lt;p&gt;「危険で憂慮すべき」: ユーザーの健康が危険にさらされたため、Google は AI 概要の一部を削除しました。 
+&lt;a href="https:&amp;#x2F;&amp;#x2F;www.theguardian.com&amp;#x2F;technology&amp;#x2F;2026&amp;#x2F;jan&amp;#x2F;11&amp;#x2F;google-ai-overviews-health-guardian-investigation" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.theguardian.com&amp;#x2F;technology&amp;#x2F;2026&amp;#x2F;jan&amp;#x2F;11&amp;#x2F;google-ai...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dreadsword:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「危険で憂慮すべき」 - それは厳しいです。医療には混乱が必要ですが、混乱の対象となる多くの場所とは異なり、リスクは生死に関わるものです。ヘルスケアは、人間に取って代わられる前に、人間のインザループ アプリケーションと人間の生産性の大幅な向上に焦点を当てるべき分野であると私は思いました...
+&lt;a href="https:&amp;#x2F;&amp;#x2F;deadstack.net&amp;#x2F;cluster&amp;#x2F;google-removes-ai-overviews-for-medical-queries" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;deadstack.net&amp;#x2F;cluster&amp;#x2F;google-removes-ai-overviews-fo...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arstechnica.com/ai/2026/01/google-removes-some-ai-health-summaries-after-investigation-finds-dangerous-flaws/</guid>
+      <pubDate>Mon, 12 Jan 2026 23:05:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46595419</comments>
     </item>
     <item>
-      <title>デルタ航空のチェスボットがあなたを破壊する (2024) [ビデオ]</title>
-      <link>https://www.youtube.com/watch?v=c0mLhHDcY3I</link>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=c0mLhHDcY3I</guid>
-      <pubDate>Mon, 12 Jan 2026 19:57:37 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46593395</comments>
-    </item>
-    <item>
-      <title>HN を表示: Agent-of-empires: OpenCode および Claude Code セッション マネージャー</title>
-      <link>https://github.com/njbrake/agent-of-empires</link>
-      <description>&lt;p&gt;作成する各 AI コーディング セッションは、実際には内部では tmux セッションです。 json # セッションデータ │ └── グループ。推奨されるアプローチは、tmux セッション内で aoe を実行することです。 # 最初に tmux セッションを開始します tmux new-session -s main # 次に、その中で aoe を実行します aoe エージェント セッションに接続すると、tmux はそのセッションに切り替わります。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Agent-of-empires: OpenCode and Claude Code session manager&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46588905"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/njbrake/agent-of-empires'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://github.com/njbrake/agent-of-empires</guid>
-      <pubDate>Mon, 12 Jan 2026 14:23:07 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46588905</comments>
-    </item>
-    <item>
-      <title>Clearspace (YC W23) が応用研究者 (ML) を募集しています</title>
-      <link>https://www.ycombinator.com/companies/clearspace/jobs/GOWiDwp-research-engineer-at-clearspace</link>
-      <description>&lt;p&gt;デバイスとのより良い関係を望む人々には、意志の力以外に頼る場所はありません。私たちは、自然言語ルールに基づいてネットワーク トラフィックを処理およびフィルタリングすることで、すべてのデバイス上でこれを実現するエージェントを構築しています。モデルだけを考えるのではなく、「どうすればより多くのデータ量を取得できるか」を考えます。 「データをインテリジェントに特徴付けるにはどうすればよいでしょうか」; 「タスクと望ましいモデルサイズに基づいてデータのニーズは何か」など、推論要件から逆算して構築するようなものです。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Clearspace (YC W23) Is Hiring an Applied Researcher (ML)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46592461"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/clearspace/jobs/GOWiDwp-research-engineer-at-clearspace'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.ycombinator.com/companies/clearspace/jobs/GOWiDwp-research-engineer-at-clearspace</guid>
-      <pubDate>Mon, 12 Jan 2026 18:41:47 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46592461</comments>
-    </item>
-    <item>
-      <title>Show HN: JavaScript の読み込みを見て眠りにつく</title>
-      <link>https://github.com/sarusso/bedtime</link>
-      <description>&lt;p&gt;就寝時間 JavaScript のロードを見て眠りにつく この小さなおもちゃプロジェクトは、リオラとその小さな仲間についての就寝時の物語を段階的に伝えながら、入眠を助けること以外の理由で意図的に JavaScript ローダーを回転させます。ローダーの回転時間とテキストが表示される速度はストーリーが進むにつれて増加するため、理想的には最後まで到達することはありません (本当に、本当にそうしたい場合を除く)。これを思いついたのは、ある夜眠れず、Web プラットフォームでデータ分析の結果を探していたときで、スピナーが実際に眠気を誘うことに気づきました。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Fall asleep by watching JavaScript load&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46592376"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/sarusso/bedtime'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>HN に伝える: DigitalOcean のマネージド サービスがアップデート後に相互に連携できなくなった</title>
+      <link>https://news.ycombinator.com/item?id=46596075</link>
+      <description>&lt;p&gt;DigitalOcean のマネージド PostgreSQL アップデートにより、マネージド Kubernetes へのプライベート VPC 接続が切断されました。問題があるか問題がないかのどちらかを選択するのではありません。まだマネージド サービスを使用しています。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Tell HN: DigitalOcean's managed services broke each other after update&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46596075"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46596075'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sandinmyjoints:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;素晴らしい気づき。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stronglikedan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;ローダーの回転時間とテキストが表示される速度はストーリーが進むにつれて増加するため、(本当に本当にそうしたい場合を除いて) 最後まで到達することは理想的にはありません。&lt;p&gt;「テキストが表示される速度」は 2000 年に達すると言いたかったのですか? &lt;i&gt;減少&lt;/i&gt;しますか？それとも私が誤解していますか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Jeremy1026:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;どの時点で「鐘の音が聞こえると、自分がアヒルだと思うでしょう」と歌い始めます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;netsharc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;批判ではなく、私が気づいた問題を説明しているだけなので、CSS または JS の楽しい練習になります。 
-文字が行末に表示される場合、リフロー (テキスト全体が中央に配置されていることを確認するため) はスムーズではありません。もちろん、スムーズではありません。テキストの幅が n+1 文字になり、レンダリング エンジンはおそらく、派手な遅延なしでテキストを中央に配置するように指示されているからです。どうすればスムーズな「成長」を実現できるのだろうか。 &lt;p&gt;テキストを画面外または非表示の DIV にレンダリングし、ターゲット ディスプレイ上にその文字数を測定し、その行をレンダリングする時間を見つけて (テキストが 2 文字秒で表示される場合、20 文字のレンダリングには 10 秒かかります)、20 文字で要素の幅を測定し、その要素内のテキストが左揃えになる DIV にすることができると思います。 DIV の左マージンはアニメーション フレームごとに一定の割合で縮小します。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;coldcity_again:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ツイストしていて素晴らしい。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zebreus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはとても愚かです、私はそれが大好きです&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sarusso:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ある夜、眠れずウェブ プラットフォームでデータ分析の結果を探している（待っている）ときに、これを思いつきました。スピナーが実際に眠気を誘うことに気づきました。&lt;p&gt;おそらく、脳がある活動に従事していて、その活動が退屈になると、眠りに入るのに良い条件が生まれるのだと思います。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/sarusso/bedtime</guid>
-      <pubDate>Mon, 12 Jan 2026 18:36:12 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46592376</comments>
-    </item>
-    <item>
-      <title>テキサス州で配布されるアプリの年齢要件に関する最新情報</title>
-      <link>https://developer.apple.com/news/?id=8jzbigf4</link>
-      <description>&lt;p&gt;テキサス州で配布されるアプリの年齢要件に関する最新情報 2025 年 12 月 23 日 地方裁判所が発行した最近の差し止め命令により、アプリ マーケットプレイスと開発者に年齢保証要件を導入したテキサス州法 SB2420 の執行が停止されました。この判決を踏まえ、Appleは以前に発表した実施計画を一時停止し、進行中の法的手続きを監視する予定だ。開発者がコンプライアンス義務を果たすのを支援するために以前に発表した以下のツールは、引き続きサンドボックス テストで利用できます: 宣言された年齢範囲 API PermissionKit の重大な変更 API StoreKit の新しい年齢評価プロパティ タイプ App Store サーバー通知 これらのツールは、2026 年にユタ州とルイジアナ州で施行される法律に基づく開発者の義務を支援するためにも使用できます。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Update on age requirements for apps distributed in Texas&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46593819"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://developer.apple.com/news/?id=8jzbigf4'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;expedition32:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私たちが人々の幼少期を対象とした大規模な社会実験を行っていることは、私にとって興味深いことです。それは一度しか実行できないと私たちが知っていることです。&lt;p&gt;一方、シリコンバレーのエリートたちは、12 歳の娘に Instagram を公開させていないことを認めました...&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://developer.apple.com/news/?id=8jzbigf4</guid>
-      <pubDate>Mon, 12 Jan 2026 20:27:34 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46593819</comments>
-    </item>
-    <item>
-      <title>Show HN: Yolobox – ホーム ディレクトリを無効化せずに完全な sudo で AI コーディング エージェントを実行する</title>
-      <link>https://github.com/finbarr/yolobox</link>
-      <description>&lt;p&gt;ホーム ディレクトリは自宅にあります。実際のホームディレクトリ。脅威モデル yolobox が保護するもの: ホーム ディレクトリ&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Yolobox – Run AI coding agents with full sudo without nuking home dir&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46592344"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/finbarr/yolobox'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;globular-toast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私はいつも、Docker&amp;#x2F;Podman はこの種のものには少しやりすぎだと思っていました。 Linux で必要なのは Bubblewrap だけです。サンドボックスなしで実行する方法はなかったので、クロード コードをダウンロードしたらすぐにこれを実行しました。私が CC の使用をやめたのは、主に、CC がクローズド ソースであり、Codex と OpenCode がうまく動作するためです。最近 OpenCode のスクリプトを更新しました。興味のある方はブログ投稿を更新してください: &lt;a href="https:&amp;#x2F;&amp;#x2F;blog.gpkb.org&amp;#x2F;posts&amp;#x2F;ai-agent-sandbox&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;blog.gpkb.org&amp;#x2F;posts&amp;#x2F;ai-agent-sandbox&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gingerlime:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は開発（のほとんど）を Docker コンテナーで行います。通常、プロジェクトには Web サーバー、データベースなどを備えた Docker compose が含まれます。&lt;p&gt;yolobox コンテナが他の docker コンテナ (または docker compose) と対話できるようにするには、これをどのように使用すればよいですか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;woodson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは基本的には開発コンテナですよね?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mtlynch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これを共有してくれてありがとう!私も同様のことを実験しています。&lt;p&gt;ユーザーが自分を保護するために何を信頼しているのかを理解できるように、README でこれがどのように機能するかを説明すると役に立ちます。信頼境界は Docker コンテナであるため、エージェントがカーネルの脆弱性を悪用した (または悪用するようにだまされた) 場合、コンテナがエスケープされるリスクが依然として存在することは注目に値すると思います。&lt;p&gt;rootless Podman について調べたことがありますか?私は rootless + slirp4netns を使用しているので、コンテナに対する権限を最小限に抑え、コンテナがローカル ネットワーク上のものにアクセスできないようにすることができます。&lt;p&gt;これをさらに一歩進めて、Podman マシンを使用したいと考えています。そのため、共有カーネルはありませんが、そのシナリオではボリューム マウントを機能させることができませんでした。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;carshodev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;代わりにユーザー権限を使用してこれを行う方法はありますか?&lt;p&gt;完全なコンテナを実行せずに実行できるはずだと思いますが?&lt;p&gt;ユーザーを設定してそのユーザーを使用してプログラムを実行できず、特定のコマンドとディレクトリの読み取り/書き込みアクセスのみに含めることができない理由はありますか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LayeredDelay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;colony-2&amp;#x2F;shai" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;colony-2&amp;#x2F;shai&lt;/a&gt; をチェックアウトします。
-ローカルで実行されます。 
-どのディレクトリを読み取ったかを制御できます。書き込みアクセス。
-ネットワークトラフィックも制御できます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jcjmcclean:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;数日前、私はこれを達成するための最良の方法について ChatGPT と話し合っていました。何かを実行して共有してくれてありがとう。&lt;p&gt;明日試してみます。楽しいはずです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;randall:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私はこのようなバージョンを使用しています...Apple コンテナ FW を使用しています。 &lt;a href="http:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;apple&amp;#x2F;container" rel="nofollow"&gt;http:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;apple&amp;#x2F;container&lt;/a&gt;&lt;p&gt;それについて調べましたか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;akurilin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ニース。コミュニティ全体が、コーディング エージェントの使用による望ましくない副作用を抑えるためのさまざまな方法をすべて模索していることをとても嬉しく思います。これは、スペクトラムの特別な安全側に傾いているようであり、開発者のツールボックスに確実に組み込まれています。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/finbarr/yolobox</guid>
-      <pubDate>Mon, 12 Jan 2026 18:34:02 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46592344</comments>
-    </item>
-    <item>
-      <title>HN を表示: 状況を監視するためのカスタマイズ可能な OSINT ダッシュボード</title>
-      <link>https://sr.ericli.tech/?d=N4IgbiBcCMA0IHcoG1QBcogEYngGxQAZZiAOWUgXXgGMpQBHTASwCcBDAO1xAAcoAzIWGEAvqNjpMAWx4FIycsWjKAbNRB1IoLcgEAmAHSqALAHYArAOgnYFk4YumBF6OvgAvKGfgBnKGisAK4ApvDckCAAkhzc4pIgGJEhckQU6VS09CBMkWxcIPFSkfz4KNBKsKqwZhpaoP6RNi5mAjwhSSAA0gAW7NIhnCHMAAQA9kFoI+y+IwDKQbysIQMjADIh7AAmIazjAGYjMVwjWACeIwBSXEHsrBfWAPyFEsUgZ6kKFTVVsACcdWyQUwPTQaF4vkgAHooQg4YYzhM0EEsCFDDQxtJYew0DQeo8wABeNYAfX2NFYAHlEQB1ABapBelFEQA</link>
-      <guid isPermaLink="true">https://sr.ericli.tech/?d=N4IgbiBcCMA0IHcoG1QBcogEYngGxQAZZiAOWUgXXgGMpQBHTASwCcBDAO1xAAcoAzIWGEAvqNjpMAWx4FIycsWjKAbNRB1IoLcgEAmAHSqALAHYArAOgnYFk4YumBF6OvgAvKGfgBnKGisAK4ApvDckCAAkhzc4pIgGJEhckQU6VS09CBMkWxcIPFSkfz4KNBKsKqwZhpaoP6RNi5mAjwhSSAA0gAW7NIhnCHMAAQA9kFoI+y+IwDKQbysIQMjADIh7AAmIazjAGYjMVwjWACeIwBSXEHsrBfWAPyFEsUgZ6kKFTVVsACcdWyQUwPTQaF4vkgAHooQg4YYzhM0EEsCFDDQxtJYew0DQeo8wABeNYAfX2NFYAHlEQB1ABapBelFEQA</guid>
-      <pubDate>Mon, 12 Jan 2026 17:32:16 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46591589</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cadamsdotcom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;もちろん、100% の稼働時間は不可能です。100% 信頼性の高いサービスは、次の氷河期でも生き残ることができます。&lt;p&gt;しかし、聖杯の 4 と 5 ナイン (99.99%、99.999% の稼働時間) の信頼性を実現するには、これまで以上に大きな投資が必要になります。サービスの地理的分散、分散システム、クロック ドリフトへの対処、マルチマスター、結果整合性、レプリケーション、シャーディングなど、リストは長いです。&lt;p&gt;質問尋ねてください：あなたが持っているリソースを使って、もっとうまくやることはできますか？そこに到達するために移行という投資をする価値はあるでしょうか?稼動時間がわずかに増えた場合、どのくらいの期間で利益が得られるでしょうか?長期的には集中力が犠牲になるでしょうか?追加の稼働時間にはこれらすべてのコストに見合う価値があるでしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sethops1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;必須ですが、実際に Kubernetes は必要ですか?小さなスタートアップがそんなことをするなんて、想像するのに苦労します。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cosmin800:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;低価格にはコストがかかります。私は AWS のファンではありませんが、信頼性は高くなります。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46596075</guid>
+      <pubDate>Tue, 13 Jan 2026 00:48:11 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46596075</comments>
     </item>
   </channel>
 </rss>

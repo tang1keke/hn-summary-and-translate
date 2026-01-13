@@ -6,196 +6,59 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 12 Jan 2026 21:30:43 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Jan 2026 01:57:47 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Cowork：Claude Code 负责您的其余工作</title>
-      <link>https://claude.com/blog/cowork-research-preview</link>
-      <description>&lt;p&gt;然后，克劳德可以在该文件夹中读取、编辑或创建文件。如果您在 Chrome 中将 Cowork 与 Claude 配对，Claude 也可以完成需要浏览器访问的任务。由于克劳德总是有可能误解您的指示，因此您应该就此类事情向克劳德提供非常明确的指导。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Cowork: Claude Code for the rest of your work&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46593022"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://claude.com/blog/cowork-research-preview'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 27 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;theturtletalks:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这不就是 Claude Code 上的 UI 吗？对于大多数人来说，使用终端意味着您可以切换到许多不同的编码 CLI，而不必局限于 Claude。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Wowfunhappy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在幕后，这是正在运行的 shell 命令（或 Apple 事件）还是实际上在 UI 中点击？&lt;p&gt;如果是后者，我有点怀疑，因为我在 Claude 的视觉识别方面还没有取得巨大成功。它经常告诉我完全损坏的屏幕截图没有任何问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;daft_pink:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;现在，如果有一种简单有效的方法将一堆文件放入一个目录中就好了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tolerance:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是苹果应该努力解决的问题，而不是搞乱应用程序角落和跳板。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arjie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这听起来真的很有趣。也许这就是副驾驶所没有的承诺。我真的希望这能让像我妻子这样的人能够访问我使用 Claude Code 做的所有事情。&lt;p&gt;我用 Claude Code 做所有事情。我在 ~&amp;#x2F;bin&amp;#x2F; 中有一个简短的脚本我启动的称为 ,cc ，它在设置了权限和上下文的适当文件夹中启动它：&lt;p&gt;&lt;pre&gt;&lt;code&gt; ~ tree ~&amp;#x2F;claude-workspaces -d
-    &amp;#x2F;用户&amp;#x2F;乔治&amp;#x2F;克劳德工作区
-    ├── 上下文创建者
-    ├── 消息
-    │ └── tmp
-    │ └── 联系人查找
-    ├── 模型师
-    ├── 研究
-    ├── 视频
-    └── 维基
-
-&lt;/code&gt;&lt;/pre&gt;
-我通常会跳进其中一个（比如视频）并说出一些愚蠢的话，例如：“找到阿斯特拉爬行视频并将其稳定下来以聚焦在她身上，然后转换为 GIF”。那个人知道它必须查看〜&amp;#x2F;Movies&amp;#x2F;Astra，它会自然地搜索名为crawl或其他文件的文件，然后它会完成其余的工作。&lt;p&gt;同样，“建模者”知道创建OpenSCAD文件等等，“wiki”上下文知道我在我的博客中使用Mediawiki并有一个模板：HackerNews以及如何使用它等等。我发现这些让做事变得更容易，因此也更有趣。&lt;p&gt;所有这些数据都是可信信息：也就是说，它来自我，所以我知道我不是想搞砸自己。我的妻子对命令行不太熟悉，所以她不像我一样使用 Claude Code，而是更喜欢使用 ChatGPT 这个网络应用程序，我们为此构建了几个自定义 GPT，这样我们就可以一起做事情。&lt;p&gt;Claude 是一个很好的模型，我真的想让我的妻子可以使用它来完成她所做的事情（她在 Blender 中建模）。当这些模型真正擅长代表我们使用应用程序的那一天将是美好的！这是我们前几天为游戏 Power Grid 制作的示例模型：&lt;a href="https:&amp;#x2F;&amp;#x2F;wiki.roshangeorge.dev&amp;#x2F;w&amp;#x2F;Blog&amp;#x2F;2026-01-11&amp;#x2F;Modeling_With_Claude" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;wiki.roshangeorge.dev&amp;#x2F;w&amp;#x2F;博客&amp;#x2F;2026-01-11&amp;#x2F;Modeling_Wit...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jameslk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是编码代理的自然演变。它们最有可能成为每个人在日常工作中使用的通用代理，因为它们在工具使用方面拥有最成熟和最全面的能力，尤其是在文件系统上，而且在打开浏览器、搜索网络、运行程序（目前通过命令行）等方面也如此。它们成为您的操作系统、同事，也可能成为您的“朋友”。 &lt;p&gt;我刚刚帮助一位非技术朋友安装了其中一个编码代理，因为这是当今使用人工智能模型的最佳方式，它不仅仅可以为他提供问题的答案。看到这一宣布我并不感到惊讶，并且我希望所有代码代理都会像这样通用化&lt;p&gt;采用的最大挑战是安全性和数据丢失。即时注入和社会工程本质上是同一件事，所以我认为即时注入必须以相同的方式解决。通过沙箱和备份更容易解决数据丢失问题。无论如何，我认为对于许多人来说，使用通用代理的价值目前将超过安全问题，直到这些代理赶上&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pentagrama:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为这些大型人工智能公司的下一步将是推出自己的操作系统，可能是 Linux 发行版。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tinyhouse:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我已经在使用 Claude Code 来组织我的工作和生活，所以这很有意义。然而，我刚刚尝试过，并不清楚这与使用 Claude 进行项目有何不同。我想主要区别在于它可以在计算机上的本地文件夹中使用，因此它更容易集成到工作流程中，而不是需要上传数据的项目中。这是有道理的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bahmboo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;本地世界有类似的事情吗？我正在 48GB MacBook 上为我的敏感数据操作设置完整的本地“ai”堆栈。使用网络用户界面。仍然会使用 sota 云服务进行编码。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ossa-ma:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每家初创公司都受到三大巨头（OpenAI、Anthropic、Google）的摆布。&lt;p&gt;他们可以而且很可能会发布一些东西，让你围绕他们的产品建立的薄弱护城河化为泡影。&lt;p&gt;这感觉像是科技领域第一次有更多的初创公司和产品被纳入（agar.io 风格）而不是被创建。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jfletch321:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“保持控制”是如何出现的，这有点有趣。部分主要是关于您失去控制的速度有多快（删除文件、提示注入）。我可以预见非技术用户会访问不幸的文件夹并陷入很多麻烦。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jryio:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;重要的是要记住，与可以恢复的代码不同，大多数文件系统和应用程序操作都不能。&lt;p&gt;修订历史记录、回滚或任何其他内容中都没有沙箱快照。&lt;p&gt;我希望看到许多来自家长、非技术同事和学生的故事，这些故事无可挽回地毁坏了他们的计算机。&lt;p&gt;编辑：大多数评论都集中在指出版本控制和应用程序操作。文件系统快照存在：那太好了，但 Claude Cowork 不使用它。&lt;p&gt;对于我们这些在低级别构建真实系统的人来说，我认为看到这样的工具会敲响警钟 - 特别是针对非技术用户的工具&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cc62cf4a4f20:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令人惊奇的是，人们竟然将人工智能公司与真正重要的数据联系起来。我的意思是，我们都知道他们这样做只是为了建立一个培训数据集，让您的企业破产并为自己获取所有价值，对吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mceachen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;YMMV，但在我禁用本地 pihole 之前，TFA 页面内容正文并未为我呈现。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hypfer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人们确实意识到，如果他们这样做，他们就不是在“仅仅”喂养食物。将代码写入一些可能记录云 API 的代码，但实际上包括任何内容（包括此处提到的银行对账单），对吗？&lt;p&gt;对吗？&lt;p&gt;对??????&lt;p&gt;您确定需要授予云对您的桌面及其所有内容的完全访问权限，以便按字母顺序对元素进行排序吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一度希望这意味着他们已经想出了一种可以安全抵御致命三连击的设计。提示注入攻击，可能是通过在严格的沙箱中运行所有内容并关闭任何可能被恶意提示攻击用来窃取数据的渗透向量。&lt;p&gt;遗憾的是，他们还没有完全解决这个问题。相反，他们的帮助页面位于 &lt;a href="https:&amp;#x2F;&amp;#x2F;support.claude.com&amp;#x2F;en&amp;#x2F;articles&amp;#x2F;13364135-using-cowork-safely" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;support.claude.com&amp;#x2F;en&amp;#x2F;articles&amp;#x2F;13364135-using-cowork...&lt;/a&gt; 告诉用户“避免授予对包含敏感信息的本地文件（例如财务文档）的访问权限”和“监视 Claude 是否存在可能表明提示注入的可疑操作”。&lt;p&gt;（我认为要求非技术用户亲自留意“可能表明提示注入的可疑操作”是不公平的！）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WesleyLivesay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;真的很喜欢这个外观。我使用 Claude Code（和其他 CLI LLM 工具）与大量本地文本文件进行交互，我通常使用 Obsidian 来编写和更新这些文本文件。它在组织、总结和其他以前非常耗时的任务方面表现出色。&lt;p&gt;将这种类型的功能从 CLI 中带给更广泛的受众可能真的很酷！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ambicapter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这很有趣，因为在关于 Anthropic&amp;#x2F;Claude Code 的另一个帖子中，人们认为 Anthropic 专注于 CC 擅长的领域（编写代码）是正确的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;forty:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我看不到此页面，我被重定向到 &lt;a href="https:&amp;#x2F;&amp;#x2F;claude.com&amp;#x2F;fr-fr&amp;#x2F;blog&amp;#x2F;cowork-research-preview" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;claude.com&amp;#x2F;fr-fr&amp;#x2F;blog&amp;#x2F;cowork-research-preview&lt;/a&gt; 不存在。私人标签没有帮助&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;exitb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，自动化软件开发后剩下的大部分工作显然是总结会议和构建幻灯片。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hebejebelus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于其他人来说，这很有意义。大概 30% 的时间我在终端中使用克劳德代码，实际上并没有编写任何代码。&lt;p&gt;例如，我使用克劳德代码对我的费用进行分类（给定银行对账单 CSV）以进行增值税报告，并填写我的会计师发送给我的电子表格。或者记录发票的行项目，然后在月底生成这些发票。或者甚至在合适的时间预订一个网球场（当地的一些网球场是朝南的，这在晚上是一个杀手）。所有这些任务至少可以在终端之外完成，但实际功能存在并且只能存在于我的计算机上。&lt;p&gt;我希望这能够与 CLAUDE.md 和 .claude&amp;#x2F;skills 等交互良好。我的文件系统中遍布着这些文件和技能，因此我只需编写一次背景信息。我特别喜欢让 claude 创建 CLI 以及使用这些 CLI 的技能。现在我只需要知道可以做什么，而不是如何做 - “如何”现在是“询问 Claude”。&lt;p&gt;很高兴看到 Cowork 支持他们！ （编辑：我看到文章提到您可以使用现有的“连接器” - 我相信 MCP 服务器 - 并且它具有一些技能。我还没有访问权限，所以我不能说它是否也可以在我的文件系统上使用我现有的技能......）&lt;p&gt;（后续编辑：似乎虽然您可以挂载整个文件系统等以使用您的本地技能，但它使用沙盒 shell，因此您的本地命令（例如，tennis-club-cli）不可用，这似乎与在 Web 上运行 Claude Code 的环境相同，但在我看来，这确实使其更安全......）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hmokiguess:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这看起来像是为技术含量较低的用户运行 Claude Code 的瘦客户端 UX。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;felixrieseberg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你好，来自团队的菲利克斯，这是我的产品 - 让我们知道你的想法。我们故意很早就发布了这个，我们希望快速迭代它。&lt;p&gt;（我们现在还在处理一个不相关的 Opus 4.5 推理事件，所以你可能不会立即在你的客户端中看到 Cowork。）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;falloutx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;现在人类就不能做什么了吗？整理桌面是否更困难？我以为苹果已经将它们组织成堆栈了。 （编辑：Apple 已经这样做了）&lt;p&gt;查看日历有那么难吗？开一个 30 分钟的会议来展示克劳德制作的牌组，你在 4 秒内完成，这也让人感觉不真诚。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Flux159:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这对于不使用 Claude Code 的人来说看起来很有用，但我确实认为视频中的桌面示例可能有点误导（特别是对于非开发人员） - Claude 绝对不会截取该桌面和屏幕截图。组织，它使用普通的文件管理 cli 工具。原因似乎有点明显 - 通过“ls”读取文件名、类型等要容易得多。但它也触及了克劳德（Opus 4.5）当前的弱点之一 - 图像理解。克劳德确实无法像人们现在那样理解图像的细节 - 这也可以通过克劳德玩神奇宝贝的分析得到很好的解释&lt;a href="https:&amp;#x2F;&amp;#x2F;www.lesswrong.com&amp;#x2F;posts&amp;#x2F;u6Lacc7wx4yYkBQ3r&amp;#x2F;insights-into-claude-opus-4-5-from-pokemon" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.lesswrong.com&amp;#x2F;帖子&amp;#x2F;u6Lacc7wx4yYkBQ3r&amp;#x2F;见解-i...&lt;/a&gt;。我认为在接下来的几年里，我们可能会看到所有主要的法学硕士公司都致力于解决这些弱点和问题。那么使用 UI 的法学硕士将会工作得更好（并且最终也会获得正确的视频流理解 - 而不是“每 500 毫秒截取一次屏幕截图”并称之为视频理解）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;break_the_bank:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们正在构建非常相似的东西，但文件存储在云端。&lt;p&gt;尝试一下 &lt;a href="https:&amp;#x2F;&amp;#x2F;tabtabtab.ai" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;tabtabtab.ai&lt;/a&gt;&lt;p&gt;希望得到一些反馈！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tacoooooooo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这看起来很酷。我不断看到人们（我自己）使用克劳德代码来进行更多非开发工作。管理生活、工作等的不同方面。Anthropic 已经构建了目前最好的安全带。  构建 UI 对于获得 genpop 的采用是有意义的&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://claude.com/blog/cowork-research-preview</guid>
-      <pubDate>Mon, 12 Jan 2026 19:27:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46593022</comments>
+      <title>F2 (YC S25) 正在招聘</title>
+      <link>https://www.ycombinator.com/companies/f2/jobs/cJsc7Fe-product-designer</link>
+      <description>&lt;p&gt;我们正在招聘一名产品设计师，负责在 F2 平台上打造直观、优雅且有影响力的用户体验。 F2 专为私人信贷、私募股权和商业银行而设计，可帮助团队评估交易的速度提高 70% 以上。 F2 加速私募市场投资者的工作流程，简化筛选、承销和投资组合管理流程。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; F2 (YC S25) Is Hiring&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46595130"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/f2/jobs/cJsc7Fe-product-designer'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.ycombinator.com/companies/f2/jobs/cJsc7Fe-product-designer</guid>
+      <pubDate>Mon, 12 Jan 2026 22:30:33 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46595130</comments>
     </item>
     <item>
-      <title>Fabrice Bellard 的 TS 拉链</title>
-      <link>https://www.bellard.org/ts_zip/</link>
-      <description>&lt;p&gt;ts_zip：使用大型语言模型的文本压缩 ts_zip：使用大型语言模型的文本压缩 ts_zip 实用程序可以使用大型语言模型压缩（并希望解压缩）文本文件。压缩率比其他压缩工具高得多。压缩率 压缩率以每字节位数 (bpb) 为单位。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Fabrice Bellard's TS Zip&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46593802"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bellard.org/ts_zip/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;benatkin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我建议将由此产生的压缩数据命名为&lt;i&gt;tokables&lt;/i&gt;。代币游戏及其疯狂程度。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wewewedxfgdf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;&gt;&gt; ts_zip 实用程序可以压缩（并希望解压缩）文本文件&lt;p&gt;希望:-)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MisterTea:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是我一直好奇法学硕士如何实现压缩的问题。&lt;p&gt;我想知道输出中有哪些偏差，因为这几乎感觉就像一场电话游戏，每次重新压缩都会导致数据丢失，然后数据会被错误地重建。有点像记错了一个故事，随着时间的推移，细节会发生轻微的变化。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dmitrygr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“压缩尺寸”似乎不包括模型的大小和运行它的代码。根据大文本压缩基准的规则，必须计算它们的总大小，否则将出现 0 字节“压缩”。具有包含明文的解压缩器的文件将获胜。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;publicdebates:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;贝拉德终于和他真正的同事一起工作了。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.bellard.org/ts_zip/</guid>
-      <pubDate>Mon, 12 Jan 2026 20:26:47 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46593802</comments>
-    </item>
-    <item>
-      <title>OpenCode 中未经身份验证的远程代码执行</title>
-      <link>https://cy.md/opencode-rce/</link>
-      <description>&lt;p&gt;10 中，它在启动时自动生成一个 HTTP 服务器（默认端口 4096+）。运行时，服务器公开以下端点： 该服务器没有身份验证。当服务器运行时，用户没有可见的指示。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Unauthenticated remote code execution in OpenCode&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46581095"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://cy.md/opencode-rce/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>调查发现危险缺陷后，谷歌删除了人工智能健康摘要</title>
+      <link>https://arstechnica.com/ai/2026/01/google-removes-some-ai-health-summaries-after-investigation-finds-dangerous-flaws/</link>
+      <description>&lt;p&gt;她补充说，人工智能概述未能警告某人，当患有严重肝病并需要进一步医疗护理时，这些测试可以获得正常结果。人工智能概述仍然出现在《卫报》最初向谷歌强调的其他示例中。事实证明，它非常不受欢迎，以至于用户发现在搜索查询中插入咒语会完全禁用人工智能概述。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Google removes AI health summaries after investigation finds dangerous flaws&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46595419"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arstechnica.com/ai/2026/01/google-removes-some-ai-health-summaries-after-investigation-finds-dangerous-flaws/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fragmede:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Anthropic 自助餐中的塑料餐具现在怎么样了？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throw_me_uwu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;WTF，他们不仅制作了未经身份验证的 RCE http 端点，还为其添加了 CORS 旁路......所有这些都在 CLI 工具中？默默地启动http服务器？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;miduil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在某些提交中，“session&amp;#x2F;:id&amp;#x2F;shell”似乎也是“session&amp;#x2F;:id&amp;#x2F;bash”，最初是“session&amp;#x2F;:id&amp;#x2F;command”。&lt;p&gt;也许我错误地使用了 GitHub 代码搜索，但看起来这根本就不是拉取请求的一部分 - 只是让某人推送到“dev”的做法（默认分支）随后将被标记，也许也应该重新访问。&lt;p&gt;（在 `wip: bash` 和 `feat: bash 命令`下还有更多提交）&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;anomalyco&amp;#x2F;opencode&amp;#x2F;commit&amp;#x2F;7505fa61b9caa17f1ef358961d7e46beb3276ca9" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;anomalyco&amp;#x2F;opencode&amp;#x2F;commit&amp;#x2F;7505fa61b9caa17...&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;anomalyco&amp;#x2F;opencode&amp;#x2F;commit&amp;#x2F;93b71477e6656005353ce8c71224a99170f4ae2f" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;anomalyco&amp;#x2F;opencode&amp;#x2F;commit&amp;#x2F;93b71477e665600...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rdtsc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;静默修复&lt;p&gt;那么他们是在不回复研究人员的情况下静默修复它，还是修复了静默部分，现在用户意识到网站正在尝试在他们的计算机上执行代码。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lvl155:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们不断添加功能而不维护核心。当他们开始销售计划时我就停止使用它了。 Opencode 的主要原因是使用多个模型，但事实证明跨模型的上下文共享是 PIA 并且目前不切实际。我又重新并行使用 Claude Code 和 Codex。&lt;p&gt;话虽如此，肯定需要开放平台来利用多个供应商和模型。我只是不认为三大巨头（Anthropic、OAI 和 Google）会冒着如此大的风险放弃这种控制权。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shimman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嗯，我以为 opencode 是一个志愿者项目，但看起来它是一项得到主要参与者大力支持的业务。 opencode 一直都是这样设置的吗？我本可以发誓有一些项目具有更好的治理模式，但我猜不会。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gpm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很想知道哪些功能需要 opencode.ai 才能成为本地服务器的允许来源。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thdxr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嘿，这里的维护者&lt;p&gt;我们在处理这些安全报告方面做得很糟糕，使用量迅速增长，我们被问题淹没了&lt;p&gt;我们本周将与一些人会面，就如何更好地处理这个问题向我们提供建议，为错误赏金计划提供资金并完成一些审核&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AlexErrant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;披露时间线令人担忧。&lt;p&gt;2025年11月17日报告，多次“无回应”经过多次尝试联系维护人员...看起来不太好。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://cy.md/opencode-rce/</guid>
-      <pubDate>Sun, 11 Jan 2026 22:33:32 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46581095</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Terretta:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; &lt;i&gt;谷歌......不断衡量和审查其对许多不同类别信息的摘要的质量，它补充道。&lt;/i&gt;&lt;p&gt;请注意，这句话对于任何东西是否有任何好处几乎没有说什么。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ipython:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;...同时，OpenAI 推出了 ChatGPT Health 服务：&lt;a href="https:&amp;#x2F;&amp;#x2F;openai.com&amp;#x2F;index&amp;#x2F;introducing-chatgpt-health&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;openai.com&amp;#x2F;index&amp;#x2F;introducing-chatgpt-health&amp;#x2F;&lt;/a&gt;，宣传为“ChatGPT 中专为健康和保健而设计的专门体验”。&lt;p&gt;看到所有前沿实验室在人工智能安全方面采取的截然不同的方法非常有趣。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;myhf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果应用程序根据健康数据做出诊断或建议，那就是医疗设备软件 (SaMD)，它会带来责任的世界。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.fda.gov&amp;#x2F;medical-devices&amp;#x2F;digital-health-center-excellence&amp;#x2F;software-medical-device-samd" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.fda.gov&amp;#x2F;medical-devices&amp;#x2F;digital-health-center-ex...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;InMice:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;并不感到惊讶。另一个例子是与《我的世界》相关的查询。我搜索的目的是最终访问 minecraft.wiki 上的某个 wiki 页面，但开始只是阅读摘要。它将把讨论所需功能和想法的粉丝论坛与 minecraft.wiki 上的实际游戏圣经结合起来 - 因此它将一种真理来源与一种幻想来源混合在一起。导致荒谬的、不准确的总结。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jeffbee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谷歌的搜索人工智能摘要确实正在破坏其品牌，与他们的 Gemini 产品（包括免费产品）相比，这真是糟糕得令人难以置信。它的持续存在令人困惑。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;leptons:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好的。我输入搜索我正在服用的一些药物，谷歌的“AI”搜索结果出现了。总结近乎犯罪。 WebMD 网站和制造商的网站都有正确的信息。谷歌对此产生了很多幻觉，我当时就知道他们需要阻止法学硕士随意谈论与健康或医疗信息有关的任何事情。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jnamaya:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;chatGPT 告诉我，我是世界上最健康的人，我相信这一点&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Ars 撕毁了这篇原始报道，但省略了“一些”这个词，让情况变得更糟。来自标题。&lt;p&gt;“危险且令人震惊”：在用户的健康面临风险后，谷歌删除了一些人工智能摘要： 
+&lt;a href="https:&amp;#x2F;&amp;#x2F;www.theguardian.com&amp;#x2F;technology&amp;#x2F;2026&amp;#x2F;jan&amp;#x2F;11&amp;#x2F;google-ai-overviews-health-guardian-investigation" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.theguardian.com&amp;#x2F;technology&amp;#x2F;2026&amp;#x2F;jan&amp;#x2F;11&amp;#x2F;google-ai...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dreadsword:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“危险且令人震惊” - 很难；医疗保健需要中断，但与许多目标中断的地方不同，风险是生死攸关。让我印象深刻的是，医疗保健是一个专注于人类循环应用程序并在取代人类之前大幅提高人类生产力的领域......
+&lt;a href="https:&amp;#x2F;&amp;#x2F;deadstack.net&amp;#x2F;cluster&amp;#x2F;google-removes-ai-overviews-for-medical-queries" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;deadstack.net&amp;#x2F;cluster&amp;#x2F;google-removes-ai-overviews-fo...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arstechnica.com/ai/2026/01/google-removes-some-ai-health-summaries-after-investigation-finds-dangerous-flaws/</guid>
+      <pubDate>Mon, 12 Jan 2026 23:05:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46595419</comments>
     </item>
     <item>
-      <title>达美航空的国际象棋机器人会毁掉你（2024）[视频]</title>
-      <link>https://www.youtube.com/watch?v=c0mLhHDcY3I</link>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=c0mLhHDcY3I</guid>
-      <pubDate>Mon, 12 Jan 2026 19:57:37 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46593395</comments>
-    </item>
-    <item>
-      <title>显示 HN：帝国代理：OpenCode 和 Claude Code 会话管理器</title>
-      <link>https://github.com/njbrake/agent-of-empires</link>
-      <description>&lt;p&gt;您创建的每个 AI 编码会话实际上都是底层的 tmux 会话。 json # 会话数据 │ └── groups.推荐的方法是在 tmux 会话中运行 aoe： # 首先启动 tmux 会话 tmux new-session -s main # 然后在其中运行 aoe aoe 当您附加到代理会话时，tmux 将切换到该会话。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Agent-of-empires: OpenCode and Claude Code session manager&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46588905"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/njbrake/agent-of-empires'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://github.com/njbrake/agent-of-empires</guid>
-      <pubDate>Mon, 12 Jan 2026 14:23:07 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46588905</comments>
-    </item>
-    <item>
-      <title>Clearspace (YC W23) 正在招聘一名应用研究员 (ML)</title>
-      <link>https://www.ycombinator.com/companies/clearspace/jobs/GOWiDwp-research-engineer-at-clearspace</link>
-      <description>&lt;p&gt;人们想要与设备建立更好的关系，除了意志力之外别无选择。我们正在构建一个代理，通过根据自然语言规则处理和过滤网络流量，在所有设备上实现这一目标。你不只是考虑模型，而是“我们如何获得更多的数据量”； “我们如何智能地表征数据”； “根据我们的任务和所需的模型大小，我们的数据需求是什么”，以及从推理需求向后构建。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Clearspace (YC W23) Is Hiring an Applied Researcher (ML)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46592461"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/clearspace/jobs/GOWiDwp-research-engineer-at-clearspace'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.ycombinator.com/companies/clearspace/jobs/GOWiDwp-research-engineer-at-clearspace</guid>
-      <pubDate>Mon, 12 Jan 2026 18:41:47 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46592461</comments>
-    </item>
-    <item>
-      <title>Show HN：看着 JavaScript 加载就睡着了</title>
-      <link>https://github.com/sarusso/bedtime</link>
-      <description>&lt;p&gt;就寝时间 通过观看 JavaScript 加载入睡 这个小玩具项目逐步讲述了有关 Liora 和它的小伙伴的睡前故事，同时故意让 JavaScript 加载器旋转，除了帮助您入睡之外，没有其他原因。装载机旋转的时间以及文本出现的速度会随着您浏览故事而增加，因此理想情况下您永远不会到达终点（除非您真的非常想要）。有一天晚上，当我无法入睡并在网络平台上寻找一些数据分析结果时，我想到了这个，注意到旋转器实际上让我昏昏欲睡。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Fall asleep by watching JavaScript load&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46592376"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/sarusso/bedtime'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>告诉 HN：DigitalOcean 的托管服务在更新后互相中断</title>
+      <link>https://news.ycombinator.com/item?id=46596075</link>
+      <description>&lt;p&gt;DigitalOcean 的托管 PostgreSQL 更新破坏了与其托管 Kubernetes 的私有 VPC 连接。你不是在有问题和没有问题之间做出选择。仍在使用托管服务。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Tell HN: DigitalOcean's managed services broke each other after update&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46596075"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46596075'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sandinmyjoints:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常善于观察。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stronglikedan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;加载器旋转的时间以及文本出现的速度会随着您浏览故事而增加，因此理想情况下您永远不会到达终点（除非您真的非常想要）。&lt;p&gt;您的意思是说“文本出现的速度”是指“文本出现的速度”吗？ &lt;i&gt;减少&lt;/i&gt;，还是我误解了？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Jeremy1026:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它什么时候开始唱“当你听到铃声时，你会认为你是一只鸭子。”&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;netsharc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不是批评，只是解释我注意到的一个问题，并且可以在 CSS 或 JS 中进行有趣的练习： 
-当一个字母出现在行尾时，回流（以确保整个文本居中）并不平滑，当然不是因为文本现在是 n+1 个字符宽，并且渲染引擎可能已被指示将其居中而没有任何花哨的延迟。我想知道如何才能实现平稳的“成长”？我想可以在屏幕外或不可见的 DIV 中渲染文本，测量目标显示器上有多少个字母，找到渲染该行的时间（如果文本以 2 个字符秒显示，则 20 个字符需要 10 秒渲染），用 20 个字符测量元素的宽度，然后将其设为一个 DIV，其中的文本左对齐，并且每个动画帧 DIV 的左边距以恒定的速率缩小。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;coldcity_again:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;扭曲而伟大。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zebreus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is so dumb, I love it&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sarusso:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有一天晚上，我睡不着，在网络平台上寻找（等待）一些数据分析结果时，我想到了这个，注意到旋转器实际上让我昏昏欲睡。&lt;p&gt;我猜想，当大脑从事一项活动，而这项活动变得无聊时，它为入睡创造了良好的条件。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/sarusso/bedtime</guid>
-      <pubDate>Mon, 12 Jan 2026 18:36:12 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46592376</comments>
-    </item>
-    <item>
-      <title>德克萨斯州分发的应用的年龄要求更新</title>
-      <link>https://developer.apple.com/news/?id=8jzbigf4</link>
-      <description>&lt;p&gt;德克萨斯州分发的应用程序年龄要求更新 2025 年 12 月 23 日地区法院最近发布的一项禁令暂停执行德克萨斯州法律 SB2420，该法律对应用程序市场和开发者提出了年龄保证要求。根据这一裁决，苹果将暂停之前宣布的实施计划并监督正在进行的法律程序。我们之前宣布的帮助开发人员履行合规义务的工具仍可用于沙盒测试，包括： 声明的年龄范围 API PermissionKit 下的重大更改 API StoreKit App Store 服务器通知中的新年龄评级属性类型 这些工具还可用于帮助开发人员履行 2026 年犹他州和路易斯安那州生效的法律规定的义务。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Update on age requirements for apps distributed in Texas&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46593819"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://developer.apple.com/news/?id=8jzbigf4'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;expedition32:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对我来说有趣的是，我们正在对人们的童年进行一项巨大的社会实验 - 我们知道这件事只能做一次。&lt;p&gt;与此同时，硅谷精英承认他们不让他们 12 岁的女儿出现在 Instagram 上......&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://developer.apple.com/news/?id=8jzbigf4</guid>
-      <pubDate>Mon, 12 Jan 2026 20:27:34 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46593819</comments>
-    </item>
-    <item>
-      <title>Show HN：Yolobox – 使用完整的 sudo 运行 AI 编码代理，无需破坏主目录</title>
-      <link>https://github.com/finbarr/yolobox</link>
-      <description>&lt;p&gt;您的主目录留在家里。您的实际主目录。威胁模型 yolobox 保护的内容：您的主目录 fr。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Yolobox – Run AI coding agents with full sudo without nuking home dir&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46592344"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/finbarr/yolobox'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;globular-toast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直认为 Docker&amp;#x2F;Podman 对于这种事情有点大材小用。在 Linux 上，您所需要的只是 Bubblewrap。我一下载 Claude Code 就这样做了，因为如果没有任何类型的沙箱，我就无法运行它。我停止使用 CC 主要是因为它是闭源的，而且 Codex 和 OpenCode 工作得很好。我最近更新了 OpenCode 的脚本，如果有人感兴趣，可以更新我的博客文章： &lt;a href="https:&amp;#x2F;&amp;#x2F;blog.gpkb.org&amp;#x2F;posts&amp;#x2F;ai-agent-sandbox&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;blog.gpkb.org&amp;#x2F;帖子&amp;#x2F;ai-agent-sandbox&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gingerlime:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我（大部分）开发都是在 Docker 容器中进行的。通常一个项目会有一个包含 Web 服务器、数据库等的 docker compose。&lt;p&gt;如何使用它以便 yolobox 容器可以与其他 docker 容器（或 docker compose）交互？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;woodson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这基本上是一个开发容器，对吧？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mtlynch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感谢您分享这个！我一直在尝试类似的东西。&lt;p&gt;如果自述文件解释了它的工作原理，以便用户了解他们信任什么来保护他们，那将会很有帮助。我认为值得注意的是，信任边界是 Docker 容器，因此如果代理利用（或被欺骗利用）内核漏洞，仍然存在容器逃逸的风险。&lt;p&gt;您研究过无根 Podman 吗？我使用的是 rootless + slirp4netns，这样我就可以最小化容器的权限并阻止它访问本地网络上的任何内容。&lt;p&gt;我想更进一步并使用 Podman 机器，这样就没有共享内核，但我无法让卷安装在这种情况下工作。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;carshodev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有没有办法用用户权限来做到这一点？&lt;p&gt;我觉得这应该是可能的，而不必运行一个完整的容器？&lt;p&gt;有什么原因我们不能设置用户并使用该用户运行程序，并且它只能包含在某些命令和目录读写访问权限中？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LayeredDelay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;查看 &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;colony-2&amp;#x2F;shai" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;colony-2&amp;#x2F;shai&lt;/a&gt;
-它在本地运行。 
-您可以控制它读取哪些目录&amp;#x2F;写访问。
-您也可以控制网络流量。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jcjmcclean:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;几天前我正在与 ChatGPT 讨论实现这一目标的最佳方法。感谢您运行并分享它！&lt;p&gt;我明天会尝试一下，应该会很有趣。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;randall:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直在使用这样的版本......使用苹果容器固件。 &lt;a href="http:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;apple&amp;#x2F;container" rel="nofollow"&gt;http:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;apple&amp;#x2F;container&lt;/a&gt;&lt;p&gt;你调查过吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;akurilin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好的。我喜欢整个社区正在探索所有这些不同的方法来遏制使用编码剂产生的不良副作用。这似乎倾向于额外的安全方面，这在开发人员的工具箱中肯定占有一席之地。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/finbarr/yolobox</guid>
-      <pubDate>Mon, 12 Jan 2026 18:34:02 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46592344</comments>
-    </item>
-    <item>
-      <title>Show HN：可定制的 OSINT 仪表板以监控情况</title>
-      <link>https://sr.ericli.tech/?d=N4IgbiBcCMA0IHcoG1QBcogEYngGxQAZZiAOWUgXXgGMpQBHTASwCcBDAO1xAAcoAzIWGEAvqNjpMAWx4FIycsWjKAbNRB1IoLcgEAmAHSqALAHYArAOgnYFk4YumBF6OvgAvKGfgBnKGisAK4ApvDckCAAkhzc4pIgGJEhckQU6VS09CBMkWxcIPFSkfz4KNBKsKqwZhpaoP6RNi5mAjwhSSAA0gAW7NIhnCHMAAQA9kFoI+y+IwDKQbysIQMjADIh7AAmIazjAGYjMVwjWACeIwBSXEHsrBfWAPyFEsUgZ6kKFTVVsACcdWyQUwPTQaF4vkgAHooQg4YYzhM0EEsCFDDQxtJYew0DQeo8wABeNYAfX2NFYAHlEQB1ABapBelFEQA</link>
-      <guid isPermaLink="true">https://sr.ericli.tech/?d=N4IgbiBcCMA0IHcoG1QBcogEYngGxQAZZiAOWUgXXgGMpQBHTASwCcBDAO1xAAcoAzIWGEAvqNjpMAWx4FIycsWjKAbNRB1IoLcgEAmAHSqALAHYArAOgnYFk4YumBF6OvgAvKGfgBnKGisAK4ApvDckCAAkhzc4pIgGJEhckQU6VS09CBMkWxcIPFSkfz4KNBKsKqwZhpaoP6RNi5mAjwhSSAA0gAW7NIhnCHMAAQA9kFoI+y+IwDKQbysIQMjADIh7AAmIazjAGYjMVwjWACeIwBSXEHsrBfWAPyFEsUgZ6kKFTVVsACcdWyQUwPTQaF4vkgAHooQg4YYzhM0EEsCFDDQxtJYew0DQeo8wABeNYAfX2NFYAHlEQB1ABapBelFEQA</guid>
-      <pubDate>Mon, 12 Jan 2026 17:32:16 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46591589</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cadamsdotcom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;100% 的正常运行时间当然是不可能的，100% 可靠的服务将在下一个冰河世纪中幸存。&lt;p&gt;但达到 4 个和 5 个 9（99.99%、99.999% 正常运行时间）圣杯的可靠性意味着更大的投资 - 在地理上分散您的服务、分布式系统、处理时钟漂移、多主控、最终一致性、复制、分片......这是一个很长的清单。&lt;p&gt;要问的问题：利用你拥有的资源，你能做得更好吗？值得投资移民到达那里吗？额外的正常运行时间的回报期是多少？从长远来看，这会让你失去注意力吗？额外的正常运行时间值得所有这些成本吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sethops1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;强制性的，你真的需要 kubernetes 吗？我很难想象有哪个小型初创公司能做到这一点。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cosmin800:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;更低的价格是有代价的。我不是 AWS 的粉丝，但他们的可靠性更高。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46596075</guid>
+      <pubDate>Tue, 13 Jan 2026 00:48:11 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46596075</comments>
     </item>
   </channel>
 </rss>
