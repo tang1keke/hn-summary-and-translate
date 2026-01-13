@@ -6,42 +6,15 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 13 Jan 2026 06:40:39 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Jan 2026 09:32:38 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Provenance 是新的版本控制</title>
-      <link>https://aicoding.leaflet.pub/3mcbiyal7jc2y</link>
-      <description>&lt;p&gt;有人重构了这个循环。由此生成代码。边表示因果关系：该计划取决于该要求；由于该限制，该决定才得以存在。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Provenance Is the New Version Control&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46597023"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://aicoding.leaflet.pub/3mcbiyal7jc2y'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gritzko:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;法学硕士可以以令人印象深刻的速度、质量甚至一定程度的确定性来实现红黑树。我在这里接受这个论点。一旦我们以 1000 种不同的风格呈现 GitHub 上尚未出现的东西，它就变成了一次冒险。就像真正的冒险一样。&lt;p&gt;那么你对版本控制有何看法？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;klodolph:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;一旦人工智能能够根据规范可靠地重新生成实现......&lt;p&gt;我很抱歉，但当我读到这篇文章时，感觉就像是我的头被击中了，这太糟糕了。几十年来，人们一直梦想着开发一种软​​件，您可以只编写规范，而不必亲自参与实现。&lt;p&gt;1.人工智能无法解决这个问题。&lt;p&gt;2.如果确实如此，那么规范将是代码。&lt;p&gt;&lt;i&gt;纯代码的差异&lt;/i&gt;从一开始就从未真正很好地代表人类的决策和推理。我们总是有人类程序员检查代码，只是&lt;i&gt;做了一些事情&lt;/i&gt;，而没有真正解释代码应该做什么，它应该具有什么属性，为什么作者选择这样编写，等等。&lt;p&gt;人工智能不会改变这一点。它只是引入了新的系统，这些系统可以像人类一样编写无法解释的糟糕代码。您的审核过程应该能够抓住这一点。与以前相比，您现在只需要进行更多审查。&lt;p&gt;您在注释、测试用例、文档等中捕获决策和规范。是的，这可能有点混乱，因为您的规范没有作为代码库中唯一的内容很好地捕获。但这是因为仅仅给计算机提供广泛、高级指令的未来星际迷航梦想仍然是一个梦想。 AI 无法可靠地重新实现规范，因此我们检查输出。&lt;p&gt;编译器&lt;i&gt;确实&lt;/i&gt;可靠地重新实现功能相同的程序集，因此我们不检查编译器的程序集输出。编译器的水平越来越高，我们可以使用的编译器工具也越来越广泛，但人工智能只是不同类别的工具，我们以不同的方式使用它们。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;akoboldfrying:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，理论上，您可以将每个开发状态表示为标有“自然语言指令”的 DAG 中的节点。要附加到 LLM 上下文，对每个节点进行哈希处理，并让每个节点另外指向一个（也经过哈希处理）文件系统状态，该状态表示使用这些指令在其所有父级的（结果代码 + LLM 上下文）上运行代理的&lt;i&gt;结果&lt;/i&gt;（对于具有多个入边的节点，以某种明确的方式组合）。&lt;p&gt;唯一的实际障碍是：&lt;p&gt;&gt;非确定性生成器可能会从相同的意图图生成不同的代码。&lt;p&gt;如果您限制使用本地 LLM 的单个版本、关闭所有非确定性并记录初始种子，这不会成为障碍。但就目前而言，作为编码代理有用的前沿法学硕士在其他人的盒子上运行，这意味着每次运行它们时它们都会产生不同的结果 - 即使他们承诺不改变它们，我也看不出有什么办法来验证这个承诺。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RHSeeger:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对此有点困惑，因为给定的一组输入每次通过人工智能运行时都会产生不同的输出和不同的行为。&lt;p&gt;&gt;我所说的可再生是指：如果您删除了一个组件，您可以根据存储的意图（需求、约束和决策）重新创建它，并具有相同的行为和集成保证。&lt;p&gt;这种说法并不正确。因此，您需要跟踪最终结果......生成了_什么_。原因也很重要，但还不够。&lt;p&gt;此外，“拒绝空白”是不相关的。部分让我烦恼。电子邮件地址中包含空格是完全可以接受的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hekkle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;TL;DR，作者声称您应该记录更改的原因，而不是代码更改本身...&lt;p&gt;恭喜：您刚刚“发明”了；文档，特别是 CHANGE_LOG。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;viraptor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不确定这是否真的需要一个新系统。 Git 提交包含消息、任意预告片和注释对象。如果这对源代码控制有用，我确信它可以首先在 git 上进行原型设计。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jayd16:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果我告诉您规格也可以在线测量（和源控制）怎么办？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://aicoding.leaflet.pub/3mcbiyal7jc2y</guid>
-      <pubDate>Tue, 13 Jan 2026 03:26:23 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46597023</comments>
-    </item>
-    <item>
-      <title>基于文本的 Web 浏览器</title>
-      <link>https://cssence.com/2026/text-based-web-browsers/</link>
-      <description>&lt;p&gt;基于文本的网络浏览器仍然重要吗？基于文本的 Web 浏览器如何处理现代 HTML。基于文本的浏览器可以很好地与旧的 HTML 配合使用。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Text-Based Web Browsers&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46597518"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://cssence.com/2026/text-based-web-browsers/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rickcarlino:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;基于文本的浏览器和现代 HTML，看不到成功的故事。鉴于我们在网络技术方面看到的进步，差距只会越来越大，以至于 w3m 和它的朋友可能会被遗忘。&lt;p&gt;这是一篇有趣的文章，结论非常真实。&lt;p&gt;人们在 Gemini 上拉屎：&amp;#x2F;&amp;#x2F;因为“网络可以支持文本文档”。他们这样说就好像他们实际上是在提出一个真正的解决方案。确实，网络_可以_支持轻量级内容（Windows 3.1 上的 IE5 - 我当时就在场），但问题是它_不会_，因为它始终选择不支持。如果您曾经尝试实际执行过以文本模式运行网络的实验，您很快就会意识到它实际上是多么徒劳。您在 lite.cnn.com 等善意网站上采取的每一步都只需单击一下，就会将您转移到一个臃肿的 SPA 应用程序，该应用程序会在基于文本的浏览器上呈现空白屏幕。你可以禁用 JavaScript，或者禁用图像或任何你想要跳过的环节（随着每一个 FireFox 版本的发布而越来越隐藏），但这实际上并不会长期有效。网络的可扩展性太强，功能匮乏，无法支持基于文本的内容。最好只是将网络用于常见的酷狗东西，例如 WASM 和 WebRTC 或其他什么，并承认没有人可以帮助自己，并且无论有多少意识都无法使 cookie 同意横幅消失。&lt;p&gt;让我们更认真地对待 Gemini，因为它已经被采用并且有效，而且并不完美，但它他妈的肯定不是子堆栈。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://cssence.com/2026/text-based-web-browsers/</guid>
-      <pubDate>Tue, 13 Jan 2026 05:16:10 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46597518</comments>
+      <title>Chromium 已合并 JpegXL</title>
+      <link>https://chromium-review.googlesource.com/c/chromium/src/+/7184969</link>
+      <guid isPermaLink="true">https://chromium-review.googlesource.com/c/chromium/src/+/7184969</guid>
+      <pubDate>Tue, 13 Jan 2026 06:42:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46597927</comments>
     </item>
   </channel>
 </rss>

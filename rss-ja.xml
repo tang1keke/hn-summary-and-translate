@@ -6,42 +6,15 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 13 Jan 2026 06:40:39 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Jan 2026 09:32:38 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>Provenance は新しいバージョン管理です</title>
-      <link>https://aicoding.leaflet.pub/3mcbiyal7jc2y</link>
-      <description>&lt;p&gt;誰かがそのループをリファクタリングしました。これからコードが生成されます。エッジは因果関係を表します。この計画はその要件に依存します。この決定はその制約のために存在します。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Provenance Is the New Version Control&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46597023"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://aicoding.leaflet.pub/3mcbiyal7jc2y'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gritzko:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;LLM は、驚くべき速度、品質、さらにはある程度の決定性を備えた赤黒ツリーを実装できます。ここで私はその議論を支持します。 GitHub にまだ存在していないものを何千もの異なるフレーバーで取り出すと、それは冒険になります。本物の冒険のようです。&lt;p&gt;それで、バージョン管理については何と言ったでしょうか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;klodolph:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; AI が仕様に基づいて実装を確実に再生成できるようになれば…&lt;p&gt;申し訳ありませんが、これを読んで頭を殴られたような気分で、とてもひどいです。何十年もの間、人々は仕様を書くだけで実際に実装に手を汚す必要のないソフトウェアを作ることを夢見てきました。&lt;p&gt;1. AI はその問題を解決しません。&lt;p&gt;2.そうであれば、仕様はコードになります。&lt;p&gt;&lt;i&gt;純粋なコード&lt;/i&gt;の差分は、そもそも人間の決定や推論をあまりうまく表現していません。私たちには常に、コードが何を行うべきか、コードが持つべきプロパティ、作成者がそのように記述することを選択した理由などを実際に説明することなく、コードをチェックインするだけで&lt;i&gt;何かを実行&lt;/i&gt;する人間のプログラマーがいました。&lt;p&gt;AI によってそれは変わりません。それは、人間と同じように、説明のつかないクソコードを書くことができる新しいシステムを導入するだけです。レビュープロセスはこれを捉えることになっています。以前と比べて、今はより多くのレビューが必要なだけです。&lt;p&gt;コメント、テスト ケース、ドキュメントなどで決定事項や仕様を記録します。そうです、仕様がコード ベース内の唯一のものとしてきちんと適切に記録されていないため、少し面倒になる可能性があります。しかし、これは、単にコンピューターに広範で高レベルの指令を与えるというスタートレックのような未来的な夢が、依然として夢であるためです。 AI は仕様を確実に再実装しないため、出力をチェックインします。&lt;p&gt;コンパイラは、機能的に同一のアセンブリを確実に再実装&lt;i&gt;します&lt;/i&gt;。そのため、コンパイラのアセンブリ出力をチェックインしません。コンパイラーのレベルはますます高くなり、使用できるコンパイラー ツールの範囲も広がっていますが、AI はツールの別のカテゴリにすぎず、AI の使用方法も異なります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;akoboldfrying:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;はい、理論的には、すべての開発状態を「自然言語命令」というラベルが付いた DAG 内のノードとして表すことができます。 LLM コンテキストに追加するには、各ノードをハッシュし、すべての親の (結果コード + LLM コンテキスト) に対するこれらの命令でエージェントを実行した&lt;i&gt;結果&lt;/i&gt;を表す (やはりハッシュされた) ファイルシステム状態を各ノードが指すようにします (複数のインエッジを持つノードについては、明確な方法で結合されます)。&lt;p&gt;唯一の実際的な障害は次のとおりです。&lt;p&gt;&amp;gt;非決定性ジェネレーターは、同一のインテント グラフから異なるコードを生成する場合があります。&lt;p&gt;ローカル LLM の単一バージョンの使用に制限し、すべての非決定性をオフにして初期シードを記録する場合、これは障害にはなりません。しかし今のところ、コーディング エージェントとして役立つ種類のフロンティア LLM は、誰か他の人のボックス上で実行されます。つまり、実行するたびに異なる結果が生成される可能性があり、たとえ変更しないと約束したとしても、この約束を検証する方法がわかりません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RHSeeger:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;特定の入力セットが AI を介して実行されるたびに、異なる出力や異なる動作が生成される可能性があるため、これには少し混乱しています。&lt;p&gt;&gt;再生成可能とは、コンポーネントを削除した場合、同じ動作と統合が保証された状態で、保存されているインテント (要件、制約、決定) からコンポーネントを再作成できることを意味します。&lt;p&gt;この記述は正しくありません。したがって、最終結果を追跡する必要があります..._何が_生成されたか。理由も重要ですが、それだけでは十分ではありません。&lt;p&gt;また、これとは関係ありませんが、「空白を拒否する」という項目も重要です。部分が気になりました。電子メール アドレスに空白を含めることはまったく問題ありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hekkle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;TL;DR、著者は、コードの変更そのものではなく、変更の理由を記録する必要があると主張しています...&lt;p&gt;おめでとうございます: あなたはまさに「発明」したばかりです。ドキュメント、特に CHANGE_LOG。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;viraptor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これに実際に新しいシステムが必要かどうかはわかりません。 Git コミットには、メッセージ、任意のトレーラー、メモ オブジェクトが含まれます。これがソース管理のもので役立つのであれば、最初に git 上でプロトタイプを作成できるはずです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jayd16:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;仕様もラインで測定 (およびソース管理) できると言ったらどうなるでしょうか?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://aicoding.leaflet.pub/3mcbiyal7jc2y</guid>
-      <pubDate>Tue, 13 Jan 2026 03:26:23 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46597023</comments>
-    </item>
-    <item>
-      <title>テキストベースの Web ブラウザ</title>
-      <link>https://cssence.com/2026/text-based-web-browsers/</link>
-      <description>&lt;p&gt;テキストベースの Web ブラウザは依然として重要ですか。テキストベースの Web ブラウザは最新の HTML をどのように処理しますか。テキストベースのブラウザは、古き良き HTML とうまく連携します。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Text-Based Web Browsers&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46597518"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://cssence.com/2026/text-based-web-browsers/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rickcarlino:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;テキストベースのブラウザと最新の HTML、成功例は見えません。ウェブ テクノロジーの進歩を考えると、その差は広がるばかりで、w3m とその仲間たちは忘れ去られてしまうかもしれません。&lt;p&gt;これは楽しい記事であり、結論は非常に現実的です。&lt;p&gt;人々はジェミニについてクソです:&amp;#x2F;&amp;#x2F;なぜなら「Web はテキスト ドキュメントをサポートできる」からです。彼らはまるで本当の解決策を提案しているかのようにこれを言います。確かに、Web は軽量コンテンツ (Windows 3.1 上の IE5 - 私もそこにいました) をサポートできるのですが、問題は、一貫してサポートしないことを選択するためサポートできないということです。 Web をテキスト モードで実行するというこの実験を実際に実行しようとしたことがあれば、それがいかに無駄であるかがすぐにわかるでしょう。 lite.cnn.com のような善意のサイトで行うすべてのステップは、わずか 1 回クリックするだけで、テキストベースのブラウザーに空白の画面を表示する肥大化した SPA アプリに転送されます。 JavaScript を無効にしたり、画像やその他の困難を乗り越えたい場合は無効にすることもできます (FireFox がリリースされるたびに非表示になります)。しかし、それは実際には長期的には機能しません。 Web は拡張性が高すぎるため、テキスト ベースのコンテンツをサポートするには機能が不足しています。 WASM や WebRTC などの通常のクールな目的で Web を使用するだけにして、誰も自分自身を助けることはできず、Cookie 同意バナーをどれだけ認識しても廃止されないことを認めた方が良いです。&lt;p&gt;Gemini をもっと真剣に考えましょう。Gemini はすでに採用されており、機能しており、完璧ではありませんが、サブスタックではないのは確かです。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://cssence.com/2026/text-based-web-browsers/</guid>
-      <pubDate>Tue, 13 Jan 2026 05:16:10 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46597518</comments>
+      <title>Chromium が JpegXL を統合</title>
+      <link>https://chromium-review.googlesource.com/c/chromium/src/+/7184969</link>
+      <guid isPermaLink="true">https://chromium-review.googlesource.com/c/chromium/src/+/7184969</guid>
+      <pubDate>Tue, 13 Jan 2026 06:42:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46597927</comments>
     </item>
   </channel>
 </rss>
