@@ -6,209 +6,193 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 15 Jan 2026 18:46:24 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Jan 2026 21:30:06 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>影响 Svelte 生态系统的 CVE</title>
-      <link>https://svelte.dev/blog/cves-affecting-the-svelte-ecosystem</link>
-      <description>&lt;p&gt;由于内存/CPU 耗尽而受影响的软件包： devalue 如果出现以下情况，您就会受到影响： 您正在使用 devalue 版本 5.) 受影响的软件包： devalue 如果出现以下情况，您就会受到影响： 您正在使用 devalue 版本 5. parse 如果您没有启用远程功能，SvelteKit 不会受到攻击 CVE-2026-22803：远程函数二进制形式解串器中的内存放大 DoS 受影响的软件包： @sveltejs/kit 如果出现以下情况，您就会受到影响：您正在使用 SvelteKit 版本 2。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; CVEs Affecting the Svelte Ecosystem&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46636387"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://svelte.dev/blog/cves-affecting-the-svelte-ecosystem'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>JuiceFS 是一个构建在 Redis 和 S3 之上的分布式 POSIX 文件系统</title>
+      <link>https://github.com/juicedata/juicefs</link>
+      <description>&lt;p&gt;JuiceFS 是在 Apache License 2 下发布的高性能 POSIX 文件系统。通过 JuiceFS 存储的数据将持久化在对象存储中（即 JuiceFS 可以将文件系统的元数据存储在不同的元数据引擎上，如 Redis，它是一种快速、开源、内存中键值数据存储，特别适合存储元数据；同时，所有数据将通过 JuiceFS 客户端存储在对象存储中。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; JuiceFS is a distributed POSIX file system built on top of Redis and S3&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46637165"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/juicedata/juicefs'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Agreed3750:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嘿，反应被召唤，他们希望恢复他们的弱点&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;appplication:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;首先，爱瘦了，团队在关注开发人员人体工程学方面确实做得很好。&lt;p&gt;也就是说，看到影响贬值的 CVE 列表我并不感到惊讶。在遇到一些（看似任意的）限制之后，我浏览了代码，考虑到它处理用户输入的方式，它确实感觉有些粗略。如果我是邪恶的人或安全研究人员，那么它肯定会成为我的焦点。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;swyx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所有 DoS 攻击和 1 个 XSS。这不像启用 RCE 的 React 服务器组件 CVE 那样糟糕。&lt;p&gt;为人们节省了点击次数：&lt;p&gt;CVE-2026-22775：由于内存&amp;#x2F;CPU 耗尽而在 devalue.parse 中执行 DoS&lt;p&gt;&gt;效果：
-恶意有效负载可能会导致任意大的内存分配，从而可能导致进程崩溃。使用远程函数的 SvelteKit 应用程序很容易受到攻击，因为参数是通过 devalue.parse 运行的
-如果您没有启用远程功能，SvelteKit 不会受到攻击&lt;p&gt;CVE-2026-22774：由于内存耗尽而导致 devalue.parse 中的 DoS
-（是的，这与之前的 CVE 非常相似。不，它不一样！）&lt;p&gt;&gt;效果：
-恶意负载可能会导致任意大的内存分配，可能导致进程崩溃
-使用远程函数的 SvelteKit 应用程序很容易受到攻击，因为参数是通过 devalue.parse 运行的
-如果您没有启用远程功能，SvelteKit 不会受到攻击&lt;p&gt;CVE-2026-22803：远程功能二进制形式反序列化器中的内存放大 DoS&lt;p&gt;&gt;效果：
-用户可以提交恶意请求，导致您的应用程序挂起并分配任意大量内存&lt;p&gt;CVE-2025-67647：使用预渲染时拒绝服务和可能的 SSRF&lt;p&gt;&gt;效果：
-DoS 导致服务器进程终止
-SSRF 允许访问无需从 SvelteKit 服务器运行时进行身份验证即可访问的内部资源
-如果星星对齐，则可以通过强制潜在的 CDN 缓存攻击者服务器返回的 XSS（后者能够指定其选择的缓存控制）来通过缓存中毒获取 SXSS&lt;p&gt;CVE-2025-15265：通过 Hydratable 进行 XSS&lt;p&gt;&gt;效果：
-如果攻击者能够设法将受控密钥放入 Hydratable 中，然后将其返回给其他用户，那么您的用户很容易受到 XSS 攻击&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://svelte.dev/blog/cves-affecting-the-svelte-ecosystem</guid>
-      <pubDate>Thu, 15 Jan 2026 17:51:24 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46636387</comments>
+&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sabslikesobs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;另请参阅他们的用户故事：&lt;a href="https:&amp;#x2F;&amp;#x2F;juicefs.com&amp;#x2F;en&amp;#x2F;blog&amp;#x2F;user-stories" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;juicefs.com&amp;#x2F;en&amp;#x2F;blog&amp;#x2F;用户故事&lt;/a&gt;&lt;p&gt;我不是一个企业存储专家（到目前为止，我只是本地卷上的 sqlite！）所以这些确实有助于去抽象化 JuiceFS 的用途。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jeffbee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;目前尚不清楚 pjdfstest 是否建立了完整的 POSIX 语义合规性。例如，在对存储库进行简短搜索后，我没有看到任何使用 O_APPEND 原子写入多个不相关进程的内容。事实上，他们的图表显示了通过 NFS 和 SMB 与 JuiceFS 交互的应用程序，这引发了进一步的怀疑，因为这两者都缺乏许多 POSIX 语义属性。&lt;p&gt;几十年来，我为许多分布式文件系统编写了测试工具，而唯一真正提供 POSIX 语义的系统似乎是 LustreFS，由于相关原因，它也是一场可操作性噩梦。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;willbeddow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Juice 很酷，但是围绕您选择的元数据存储进行权衡最终非常重要。它还以自己无法解释的格式将文件写入对象存储，因此如果丢失元数据存储，您就会丢失数据。&lt;p&gt;当我们在 Krea 尝试它时，我们最终继续前进，因为我们无法获得足够的性能来进行训练，并且必须选择在哪个数据中心部署元数据存储，这实际上迫使我们一次只能在一个位置使用它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;IshKebab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的。这适合作为 NFS 的替代品吗？根据我的经验，硅设计行业中的每个人都在其计算网格上使用 NFS，但它在很多方面都很糟糕：&lt;p&gt;* 锁定支持很差（这听起来效果更好）&lt;p&gt;* 速度很慢&lt;p&gt;* 没有手动围栏支持；分配工作负载的一种糟糕但常见的方式是例如在一台机器上（在 NFS 安装上）编译测试，然后使用 SLURM 或 SGE 在其他机器上运行测试。您使用 NFS 让其他机器访问数据...并且这有效...除了您必须禁用写入缓存或进行可怕的黑客攻击才能使第一台机器的输出对其他机器可见。您&lt;i&gt;真正&lt;/i&gt;想要的是手动围栏：“使对此目录的所有更改在服务器上可见”&lt;p&gt;*该死的.nfs000000文件。我认为 NFSv4 可能会解决这个问题，但似乎没有人真正使用它。 （CentOS 7 对于 EDA 人员来说被认为是“现代的”这一事实也无济于事。）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wgjordan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;相关，“设计与设计”精灵的实现” [1]（目前也在首页）在其堆栈中提到了 JuiceFS：&lt;p&gt;&gt; Sprite 存储堆栈是围绕 JuiceFS 模型组织的（事实上，我们目前使用的是一个非常改造的 JuiceFS，带有重写的 SQLite 元数据后端）。它的工作原理是将存储分成数据（“块”）和元数据（“块”所在的地图）。数据块存在于对象存储中；元数据存在于快速的本地存储中。在我们的例子中，该元数据存储通过 Litestream 保持持久。没有任何内容取决于本地存储。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46634450"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46634450&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Eikon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ZeroFS [0] 在常见的小文件工作负载 [1] 上优于 JuiceFS，同时仅需要 S3，无需第三方数据库。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;Barre&amp;#x2F;ZeroFS" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;Barre&amp;#x2F;ZeroFS&lt;/a&gt;&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.zerofs.net&amp;#x2F;zerofs-vs-juicefs" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.zerofs.net&amp;#x2F;zerofs-vs-juicefs&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Plasmoid:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我实际上正在考虑使用它来替换我们的 mongo 磁盘，这样我们就可以轻松地冷存储我们的数据&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/juicedata/juicefs</guid>
+      <pubDate>Thu, 15 Jan 2026 18:45:18 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46637165</comments>
     </item>
     <item>
-      <title>精灵的设计与实现</title>
-      <link>https://fly.io/blog/design-and-implementation/</link>
-      <description>&lt;p&gt;Sprites 是新事物：没有 Docker 没有 Docker 的 Docker。这篇文章是关于它们如何工作的。 Sprite 是 Linux 虚拟机。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Design and Implementation of Sprites&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46634450"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://fly.io/blog/design-and-implementation/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>通过 SSH 的 Linux 盒子：断开连接时暂停</title>
+      <link>https://shellbox.dev/</link>
+      <description>&lt;p&gt;dev 连接 dev1 $ ssh -t shellbox.开发计费帐户余额================================ 添加资金：30 美元。当余额低于 5 美元时，盒子会停止，并在 0 美元时删除。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Linux boxes via SSH: suspended when disconected&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46638629"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://shellbox.dev/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Egor3f:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;没有公共 IP 的 2&amp;#x2F;4&amp;#x2F;50 VPS 每月 36 美元...好吧，我知道该服务是非定期使用的，但我认为即使处于暂停状态每小时 0.005 美元（3.6 美元）也太贵了。 Hetzner 中的相同配置只需 4.09 美元，即可获得具有公共 IPv4 地址的 24&amp;#x2F;7 工作 VPS&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Liftyee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这看起来与不久前出现的 exe.dev 非常相似 - 有人知道它如何比较吗？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://shellbox.dev/</guid>
+      <pubDate>Thu, 15 Jan 2026 20:20:13 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46638629</comments>
+    </item>
+    <item>
+      <title>Aviator (YC S21) 正在招聘构建多人人工智能编码平台</title>
+      <link>https://www.ycombinator.com/companies/aviator/jobs</link>
+      <description>&lt;p&gt;我们的最新产品 Runbooks 是一个协作式 AI 代理平台，可让工程团队通过自然语言规范和共享上下文自动执行复杂的工作流程。需要几天时间的复杂工作流程将在几分钟内完成。我们正在建设这样的未来。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Aviator (YC S21) is hiring to build multiplayer AI coding platform&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46639248"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/aviator/jobs'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.ycombinator.com/companies/aviator/jobs</guid>
+      <pubDate>Thu, 15 Jan 2026 21:00:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46639248</comments>
+    </item>
+    <item>
+      <title>Show HN：高瘦网络的 Hessian 矩阵很容易反转</title>
+      <link>https://github.com/a-rahimi/hessian</link>
+      <description>&lt;p&gt;高瘦网络的 Hessian 矩阵很容易求逆 该包展示了如何将深度网络的 Hessian 矩阵的逆矩阵与向量相乘。简单地解决这个系统需要大量的操作，这些操作与深层网络中的参数数量成立方比例，这对于大多数现代网络来说是不切实际的。例如，它使用块是块对角矩阵的分区矩阵，以及块是分区矩阵的三对角矩阵。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: The Hessian of tall-skinny networks is easy to invert&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46638894"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/a-rahimi/hessian'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://github.com/a-rahimi/hessian</guid>
+      <pubDate>Thu, 15 Jan 2026 20:36:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46638894</comments>
+    </item>
+    <item>
+      <title>英国海上风电价格创纪录拍卖价格比天然气便宜40%</title>
+      <link>https://electrek.co/2026/01/14/uk-offshore-wind-record-auction/</link>
+      <description>&lt;p&gt;4吉瓦（GW）的海上风电容量，使其成为欧洲有史以来规模最大的海上风电拍卖。 4吉瓦的新增海上风电容量将为消费者节省近1英镑。此次拍卖总共授予了六个底部固定式海上风电项目和两个浮动式风电项目的合同。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; UK offshore wind prices come in 40% cheaper than gas in record auction&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46637399"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://electrek.co/2026/01/14/uk-offshore-wind-record-auction/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fuoqi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;1) 在没有足够存储容量的情况下，在电网中引入大量间歇性发电。&lt;p&gt;2) 使用边际定价模型，有效保证这些来源的暴利。&lt;p&gt;3) 调峰发电厂的利用率下降，但由于没有足够的存储容量，您仍然必须保留它们。&lt;p&gt;4) 调峰发电厂会提高发电成本，以抵消较低的利用率，进一步增加暴利。&lt;p&gt;5) 您需要更多的电网容量来处理分布式发电的能量转移&lt;p&gt;5) ???&lt;p&gt;6) 当人们大声抱怨电费时，尽管有大量“便宜”的电费，但表现得很惊讶。发电。&lt;p&gt;发电的间歇性是一种外部性（与二氧化碳排放相同），应相应定价。人们愿意为供应稳定支付溢价，但目前的定价模式并没有考虑到这一点。尝试改变消费习惯（如智能电网、动态定价等）效果不佳，尤其是对于电力这样的重要资源。&lt;p&gt;我认为应该对间歇性能源进行某种价格惩罚，具体取决于混合中间歇性发电的总比例。至少直到电网规模的能源存储技术足够先进，可以存储大约一周的总能源消耗。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CrzyLngPwd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谢谢他妈的我100%脱离电网了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;linuxftw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;整个行业将在十年内需要政府救助。  经营这些风电公司的高管将带着巨额奖金逃跑，公司将拖欠债务，政府将迫使纳税人整顿银行，因为“我们需要电力！”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wcoenen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇文章讨论了执行价格，但没有提供太多背景信息。&lt;p&gt;背景信息：这是关于风电场运营商为赢得“差价合同”而出价的内容。与英国政府拥有的实体低碳合同公司合作。这本质上是一项补贴计划，风电场可以为其在一定时期内生产的所有电力锁定每兆瓦时的特定价格。但前提是他们的出价足够低，能够成为拍卖的获胜者。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Contracts_for_Difference_(UK_energy)" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Contracts_for_Difference_(UK_e...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cbeach:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Elektrek 的报道很糟糕。文章比较了风能和天然气的成本，但完全没有解释：&lt;p&gt;*文章中的天然气价格包括政府自行征收的碳税。天然气的实际成本（55 英镑）远低于米利巴德为风电设定的 91.20 英镑的执行价格。米利班德已经锁定了这个可怕的定价长达 20 年！&lt;p&gt;* 风力发电还有巨大的额外成本没有计入这个报价的执行价格中。电网必须升级。需要建造昂贵的新发电能力来补偿风能的间歇性&lt;p&gt;*规定的风力发电能力是理论上的最大值，实际上实际能力会低得多。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;相关：&lt;p&gt;&lt;i&gt;英国海上风电项目供应创纪录&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46614777"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46614777&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Havoc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;现在，如果英国没有一个疯狂的系统，所有电力都以最高的成本购买。&lt;p&gt;即如果您购买 99% 便宜的 RE，1% 昂贵的 Gas，那么您将以更高的 Gas 价格支付 100% 的费用。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://electrek.co/2026/01/14/uk-offshore-wind-record-auction/</guid>
+      <pubDate>Thu, 15 Jan 2026 19:00:37 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46637399</comments>
+    </item>
+    <item>
+      <title>Show HN：Tusk Drift – 将生产流量转化为 API 测试</title>
+      <link>https://github.com/Use-Tusk/tusk-drift-cli</link>
+      <description>&lt;p&gt;该 CLI 协调本地和 CI 测试运行，与 Tusk Drift SDK 和 Tusk Drift Cloud 协调。 tusk/traces tusk run --trace-文件路径/to/trace。用法列表跟踪： # 本地跟踪 tusk list tusk list --trace-dir。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Tusk Drift – Turn production traffic into API tests&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46637322"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/Use-Tusk/tusk-drift-cli'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://github.com/Use-Tusk/tusk-drift-cli</guid>
+      <pubDate>Thu, 15 Jan 2026 18:54:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46637322</comments>
+    </item>
+    <item>
+      <title>问 HN：一个 IP，全球多个不切实际的地点访问我的网站</title>
+      <link>https://news.ycombinator.com/item?id=46636861</link>
+      <description>&lt;p&gt;背景：我管理一个电子商务网站。这些 IP 地址没有用于反向查找的 DNS 记录，当我在 cloudflare 中映射请求时，一个地址显示为来自美国各地不同数据中心的请求。 0美国芝加哥 (ORD)340 请求美国圣何塞 (SJC)330 请求美国洛杉矶 (LAX)310 请求美国亚特兰大 (ATL)310 请求美国达拉斯-沃斯堡 (DFW)290 请求美国纽瓦克 (EWR)280 请求美国华盛顿 (IAD)230 请求美国迈阿密 (MIA)210请求美国波士顿 (BOS) 140 请求新加坡新加坡 (SIN) 130 请求感谢您的想法。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ask HN: One IP, multiple unrealistic locations worldwide hitting my website&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46636861"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46636861'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;neuroelectron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这不是我感兴趣的精灵类型&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lbrito:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;每当有人需要一支笔时，手边就有几支笔，而且就在他们首先看到的地方。&lt;p&gt;&amp;gt;现在，在今天，Sprites 仍然是飞行机器。但它们都从标准容器运行。&lt;p&gt;所以它基本上是一个更快的虚拟机？&lt;p&gt;有哪些用例可以受益于更快的启动时间？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tom_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如今，精灵已经是一个相当过时的东西了，但是这个术语是否已经足够不被使用以使其可以免费重用？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fuddle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Sprites 与 E2B 沙箱相比如何？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;raro11:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;试过了。 Docker 没有预安装，所以要求 Claude 执行此操作并确保它正在运行（没有预安装 supervisord 等）。&lt;p&gt;它巧妙地做到了这一点，并“注册”了它。它作为精灵服务。然后我退出会话，等待精灵闲置，但我认为它永远不会闲置......仍然保持活动状态。不知道如何闲置它。&lt;p&gt;无法确定这是否意味着我正在失去积分，因为任何地方都没有显示账单使用情况。&lt;p&gt;还在等待我可以从另一个检查点启动精灵的那一刻。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ZeroConcerns:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不幸的是，更多以美国和人工智能为中心的垃圾。所以，就在 HN 驾驶室，我确信......&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MrOrelliOReilly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很欣赏 Fly.io 团队的热情，并且乐观地认为它将成熟为我愿意付费的产品，但我最初的印象是缺乏完善。&lt;p&gt;文档很少，甚至不可用？ API 文档并没有告诉您有关服务本身的太多信息，Google 搜索文档会返回一个无法访问的网站作为第一个结果 (&lt;a href="https:&amp;#x2F;&amp;#x2F;docs.sprites.dev" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;docs.sprites.dev&lt;/a&gt;)。博客文章、论坛帖子和 Claude 技能不应被替代。&lt;p&gt;精灵的敏捷性非常酷，我绝对可以看到它集成到未来的 Claude 代码工作流程中。但缺乏基础容器映像意味着您仍在开始开发之前对精灵进行设置工作。我理解的理念是沙箱应该是持久的，但 Claude 代码会话在彼此隔离时也能更好地工作，因此最好有一些规则来快速设置工作区（考虑到代理编码显然是一个目标）。&lt;p&gt;我还发现 CLI 不直观，但也许只有我这么认为！&lt;p&gt;非常酷的想法，但留下的印象是 Fly.io 团队应该在发货前花几周时间进行完善。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;roywiggins:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直在 Sprite 中使用 OpenCode 的 WebUI，在 Termux 中对其进行正确设置，然后您就可以通过手机对具有完整后端的网站进行振动编码。我有一个 Termux 快捷方式，可以设置端口转发并弹出打开我的 Web 浏览器的 OpenCode WebUI。 OpenCode 可以采用容器中内置的 Sprite 技能，以便它可以管理实例本身（主要是设置和销毁服务）。&lt;p&gt;当然，您可以使用 VPS 执行类似操作，但这使得您可以随时轻松（而且便宜！）使用公共 url 和 HTTPS 启动全新机器。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tptacek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望我有更多的空间来写关于全局协调器设计的文章，因为它很有趣。&lt;p&gt;Fly Machines 协调器经历了一些麻烦，以保持每个虚拟机的事实来源分散，并由其运行的物理机拥有。但仍然存在全球状态——应用程序、组织、服务。这些东西都在 Postgres 上。 Postgres 很好地跟上了它，但如果我不说我们总是用眼角余光观察指标，那我就是在撒谎。&lt;p&gt;Sprites 的全局状态位于对象存储上。每个组织都有一个单独的 SQLite 数据库，并且该数据库通过 Litestream.io 与对象存储同步（Lightstream 在这里的很多地方都承担着负载；对我们来说坚如磐石）。&lt;p&gt;我认为人们实际上仍然在“多个 SQLite 数据库”上睡觉。支持商店设计。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://fly.io/blog/design-and-implementation/</guid>
-      <pubDate>Thu, 15 Jan 2026 15:59:21 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46634450</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Oras:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;正如其他人提到的，查看 CloudFlare 中的可观察性日志，检查用户代理、x-forward-address 和 asn。&lt;p&gt;如果您认为无用，则阻止导致机器人流量的 ip&amp;#x2F;asn&amp;#x2F;服务。&lt;p&gt;一些机器人可能与 SEO 工具相关，这些工具在 CloudFlare 中具有搜索引擎优化类别&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;teejmya:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;由于尚未提及，我的第一个想法是在启用了 iCloud Private Relay 的 iOS 上浏览的有效用户。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;support.apple.com&amp;#x2F;en-us&amp;#x2F;102602" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;support.apple.com&amp;#x2F;en-us&amp;#x2F;102602&lt;/a&gt;&lt;p&gt;我在我的 iPhone 上启用了此功能，并且报告我的 IP 的网站显示该块归 Cloudflare 或 Akamai 所有。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alibarber:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您共享的 IP 地址是 CloudFlare IP 地址：&lt;a href="https:&amp;#x2F;&amp;#x2F;bgp.tools&amp;#x2F;prefix&amp;#x2F;173.245.58.0&amp;#x2F;24#asinfo" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;bgp.tools&amp;#x2F;prefix&amp;#x2F;173.245.58.0&amp;#x2F;24#asinfo&lt;/a&gt;&lt;p&gt;我想说，也许您收到了使用他们的 WARP 代理产品的人的请求 - 这并不是那么疯狂。不过，该页面上的反向 DNS 表明该范围主要是名称服务器，从这获取请求会很奇怪，但我不知道 cloudflare 在其网络上做了什么。&lt;p&gt;至于多个数据中心的事情 - 一个 IP 地址可以任意播到不同物理位置的多个实际主机。&lt;p&gt;例如，如果我 ping 173.245.58.0，我会在 11 毫秒内从我在赫尔辛基的位置收到响应。以光速计算，这意味着行驶 3,300 公里（0.011 秒 * 3x10^8 米），这并不能让我靠近美国。再说一遍，来自不同位置的 1 个 IP 地址并没有什么令人兴奋的。如果您查看原始日志 - 您可能会看到来自 cloudflare 的一些标头以及更多线索。&lt;p&gt;这很有趣，但正如其他人提到的那样，不值得担心。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jaboostin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您的网站前面是否使用 Cloudflare？如果是这样，您看到的 IP 是 Cloudflare 的 IP，而不是机器人的 IP。您需要记录并检查 Cloudflare 发送给您的标头，即 x-forwarded-for 和 cf-connecting-ip。&lt;p&gt;关于一个 IP 如何源自多个位置：任播。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;matja:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该特定 IP 被 bgp[dot]tools 检测为任播，这很可能是从 AS13335 公布的，因此骨干路由器将选择返回其公布的多个位置的最佳路由。  如果您从多个地理位置跟踪这样的 IP，您可能会注意到所有位置的 RTT 都低得令人难以置信（假设是单播公告） - 这是任播的好处。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;comrade1234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;设置fail2ban 后就可以忘记它了。或者像我一样，一边喝早晨咖啡，一边观看日志文件中的禁令。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Foofoobar12345:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;173.245.58.0 归 cloudflare (&lt;a href="https:&amp;#x2F;&amp;#x2F;www.cloudflare.com&amp;#x2F;ips&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.cloudflare.com&amp;#x2F;ips&amp;#x2F;&lt;/a&gt;) 所有。您可能正在跟踪命中您的应用程序的 cloudflare 反向代理的 IP 地址，而不是真正的源 IP（cloudflare 会将其复制到 X-Forwarded-For 标头中）。&lt;p&gt;您可能从应用程序日志中提取了此 IP？如果您尝试跟踪机器人流量，请使用 Cloudflare 的内置分析工具。&lt;p&gt;此外，单个源 IP 可以托管在不同地理位置的位置 - 这称为任播，cloudflare 确实使用了该功能，但我认为这不是问题所在。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blahaj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是 Cloudflare IP 地址。&lt;p&gt;查看请求 HTTP 标头并了解它们的内容。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;superkuh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;每天数百个请求&lt;p&gt;这有关系吗？我每天可以处理数百个请求，在家庭电缆调制解调器连接和运行 nginx 的台式电脑上没有任何问题。事实上，从 56k 天开始我就这么做了。对于数据中心中具有大管道的实际服务器或 VPS，这实际上应该在成本方面低于注意到。&lt;p&gt;我将对正常公共网站流量的这种响应描述为比“问题”更有害。无需因网络蜘蛛访问您的公共网站而感到不安。这就是公共网站的用途。&lt;p&gt;无论如何，如果您确实想继续这个愚蠢的事情，请先查找 IP 所在的 ASN，然后从那里开始。不要依赖 cloudflare 来为您解读互联网。我在 2025 年编写了一个离线 geo-ip 和 whois db 转储世界地图可视化工具，这些是我使用的资源：&lt;p&gt;## RIR whois&amp;#x2F;peering db
+# RIPE NCC &lt;a href="https:&amp;#x2F;&amp;#x2F;ftp.ripe.net&amp;#x2F;ripe&amp;#x2F;dbase&amp;#x2F;split&amp;#x2F;ripe.db.aut-num.gz" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ftp.ripe.net&amp;#x2F;ripe&amp;#x2F;dbase&amp;#x2F;split&amp;#x2F;ripe.db.aut-num.gz&lt;/a&gt;   
+# ARIN &lt;a href="https:&amp;#x2F;&amp;#x2F;ftp.arin.net&amp;#x2F;pub&amp;#x2F;rr&amp;#x2F;arin.db.gz" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ftp.arin.net&amp;#x2F;pub&amp;#x2F;rr&amp;#x2F;arin.db.gz&lt;/a&gt;
+# APNIC &lt;a href="https:&amp;#x2F;&amp;#x2F;ftp.apnic.net&amp;#x2F;apnic&amp;#x2F;whois&amp;#x2F;apnic.db.aut-num.gz" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ftp.apnic.net&amp;#x2F;apnic&amp;#x2F;whois&amp;#x2F;apnic.db.aut-num.gz&lt;/a&gt;
+# LACNIC &lt;a href="https:&amp;#x2F;&amp;#x2F;ftp.lacnic.net&amp;#x2F;lacnic&amp;#x2F;dbase&amp;#x2F;lacnic.db.gz" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ftp.lacnic.net&amp;#x2F;lacnic&amp;#x2F;dbase&amp;#x2F;lacnic.db.gz&lt;/a&gt;
+# AFRINIC &lt;a href="https:&amp;#x2F;&amp;#x2F;ftp.afrinic.net&amp;#x2F;dbase&amp;#x2F;afrinic.db.gz" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ftp.afrinic.net&amp;#x2F;dbase&amp;#x2F;afrinic.db.gz&lt;/a&gt;
+## RIR 委派文件
+# &lt;a href="https:&amp;#x2F;&amp;#x2F;www-public.telecom-sudparis.eu&amp;#x2F;~maigron&amp;#x2F;rir-stats&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www-public.telecom-sudparis.eu&amp;#x2F;~maigron&amp;#x2F;rir-stats&amp;#x2F;&lt;/a&gt;
+# &lt;a href="https:&amp;#x2F;&amp;#x2F;ftp.afrinic.net&amp;#x2F;pub&amp;#x2F;统计&amp;#x2F;afrinic&amp;#x2F;委托-afrinic-扩展-最新" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ftp.afrinic.net&amp;#x2F;pub&amp;#x2F;stats&amp;#x2F;afrinic&amp;#x2F;delegate-afrinic-...&lt;/a&gt;
+# &lt;a href="https:&amp;#x2F;&amp;#x2F;ftp.apnic.net&amp;#x2F;统计&amp;#x2F;apnic&amp;#x2F;委托 apnic-扩展-最新" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ftp.apnic.net&amp;#x2F;stats&amp;#x2F;apnic&amp;#x2F;delegate-apnic-extended-l...&lt;/a&gt;
+# &lt;a href="https:&amp;#x2F;&amp;#x2F;ftp.arin.net&amp;#x2F;pub&amp;#x2F;stats&amp;#x2F;arin&amp;#x2F;委托-arin-扩展-最新" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ftp.arin.net&amp;#x2F;pub&amp;#x2F;stats&amp;#x2F;arin&amp;#x2F;delegate-arin-extend-...&lt;/a&gt;
+# &lt;a href="https:&amp;#x2F;&amp;#x2F;ftp.lacnic.net&amp;#x2F;pub&amp;#x2F;统计&amp;#x2F;lacnic&amp;#x2F;委托-lacnic-扩展-最新" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ftp.lacnic.net&amp;#x2F;pub&amp;#x2F;stats&amp;#x2F;lacnic&amp;#x2F;delegate-lacnic-ext...&lt;/a&gt;
+# &lt;a href="https:&amp;#x2F;&amp;#x2F;ftp.ripe.net&amp;#x2F;pub&amp;#x2F;统计&amp;#x2F;ripencc&amp;#x2F;委托-ripencc-扩展-最新" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ftp.ripe.net&amp;#x2F;pub&amp;#x2F;stats&amp;#x2F;ripencc&amp;#x2F;deleerated-ripencc-ext...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46636861</guid>
+      <pubDate>Thu, 15 Jan 2026 18:25:36 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46636861</comments>
     </item>
     <item>
-      <title>丹麦与硅谷决裂的斗争</title>
-      <link>https://www.politico.eu/article/denmark-declared-war-against-big-tech-digital-sovereignty/</link>
-      <description>&lt;p&gt;“甚至在特朗普之前，这种情况就已经发生了变化。作为回应，丹麦媒体成立了工会。“我们非常清楚丹麦是一个小国家，”伦德说。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Denmark's struggle to break up with Silicon Valley&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46636445"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.politico.eu/article/denmark-declared-war-against-big-tech-digital-sovereignty/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>我学到了关于编程的一切</title>
+      <link>https://agentultra.com/blog/how-i-learned-everything-i-know/index.html</link>
+      <description>&lt;p&gt;我很清楚不同的人有不同的学习策略。你仍然不需要法学硕士来学习编程。我们对教导人们感到兴奋。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; I Learned Everything I Know About Programming&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46638241"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://agentultra.com/blog/how-i-learned-everything-i-know/index.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mathisfun123:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我会减薪 50% (FAANG) 搬到丹麦（加速获得永久居留权）去做他们想做的任何事情。有接受者吗？实际上任何欧盟国家...&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;neuroelectron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;做这件事要花多少钱真的并不重要。你还是应该这样做。当然，在合理范围内，可能有些软件很难复制。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;petcat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 2024 年，谷歌对丹麦和其他几个国家的用户对新闻内容的兴趣进行了一系列测试，得出的结论是，删除此类内容对搜索广告收入“没有可衡量的影响”。这些发现以及测试本身受到了丹麦立法者的严厉批评。&lt;p&gt;我不太确定丹麦在抱怨什么？  听起来 Google 决定从其服务中删除丹麦媒体和新闻不会对他们的财务产生任何影响，因此他们的谈判立场很坚定，因为基本上是“要么接受要么放弃”。&lt;p&gt;丹麦也在以某种方式试图迫使 Google 列出他们的媒体并为其建立索引，并且&lt;i&gt;按照他们的价格&lt;/i&gt;。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bryanrasmussen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我之前已经说过 - 关于 MS。但如果你把足够多的丹麦人从美国 IT 领域转移出去，其他人也会随之而来，我认为一旦你有 30-40% 的人转移，那么在不到一年的时间内就会出现压倒性的变化，也许更快，因为它现在与爱国主义联系在一起。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CalRobert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与此同时，荷兰似乎打算将其国家登录服务出售给一家美国公司。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;nltimes.nl&amp;#x2F;2026&amp;#x2F;01&amp;#x2F;15&amp;#x2F;dutch-experts-warn-us-takeover-digid-platform-poses-national-security-risks" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;nltimes.nl&amp;#x2F;2026&amp;#x2F;01&amp;#x2F;15&amp;#x2F;dutch-experts-warn-us-takeover...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;丹麦并不孤单，这也不仅仅是特朗普的功劳
-也威胁要用军政府武力奴役所有格陵兰人。这只是与“商业”联系在一起的军事综合体的一部分。 - 顺便说一下，过去也发生过。特朗普只是让它变得“更加官方”。&lt;p&gt;特朗普背后的整个 TechBro 黑手党结构一次又一次地
-威胁要对欧洲人造成损害。万斯恶搞就是一个很好的例子
-在慕尼黑的安全会议上，他抱怨说
-欧洲的右派被压制了。这表明新议程
-美国的科技兄弟确实充满敌意——除了特朗普之外
-担任普京的特工克拉斯诺夫好友。所以，再多的钱
-进入美国，最终是对欧洲不利的资金。在很多方面
-加拿大人比许多国家的政府更了解这个问题
-欧洲——看看德国政府就知道了。他们绝对不愿意
-停止对美国如此顺从。丹麦至少了解
-问题——为什么德国这么奇怪？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;webdevver:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果他宣布“格陵兰岛绿卡”，那将是非常令人难以置信的特朗普！&lt;p&gt;当然，肯定有人已经集思广益了......&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SilverElfin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为这不会是一场长期的斗争。当你与最强大的敌人面对面时，他们告诉你他们会征服你（&lt;a href="https:&amp;#x2F;&amp;#x2F;www.aljazeera.com&amp;#x2F;新闻&amp;#x2F;2026&amp;#x2F;1&amp;#x2F;14&amp;#x2F;格陵兰和丹麦-说特朗普在会议后征服领土" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.aljazeera.com&amp;#x2F;news&amp;#x2F;2026&amp;#x2F;1&amp;#x2F;14&amp;#x2F;greenland-and-denma...&lt;/a&gt;)，如何保持耦合？这将加速德国开始的转向开源软件等的实验。而且我认为欧洲将寻求大力发展本地初创企业并与印度或中国等其他大国结合。&lt;p&gt;至少在未来 50 年左右的时间里，特朗普政府的记忆将破坏与美国的任何结合。在此期间，我不确定为什么这些国家甚至浪费时间与美国公司或代表交谈 - 他们绝对不会成为值得信赖的长期合作伙伴：&lt;p&gt;&gt;伦德描述了与似乎没有实际权力的当地代表谈判的“卡夫卡式”经历。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.politico.eu/article/denmark-declared-war-against-big-tech-digital-sovereignty/</guid>
-      <pubDate>Thu, 15 Jan 2026 17:55:59 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46636445</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;macintux:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“如何”我学会了一切...&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://agentultra.com/blog/how-i-learned-everything-i-know/index.html</guid>
+      <pubDate>Thu, 15 Jan 2026 19:54:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46638241</comments>
     </item>
     <item>
-      <title>发现：中世纪货船——有史以来最大的同类船只</title>
-      <link>https://www.smithsonianmag.com/smart-news/archaeologists-say-theyve-unearthed-a-massive-medieval-cargo-ship-thats-the-largest-vessel-of-its-kind-ever-found-180987984/</link>
-      <description>&lt;p&gt;丹麦维京船博物馆的海洋考古学家在勘测海底时发现了这艘沉船。 “我们有很多城堡的图纸，但它们从未被发现，因为通常只有船底幸存下来，”奥丹姆说。研究人员还惊讶地发现了 Svaelget 2 号砖砌厨房的遗迹，船员们在那里准备食物。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Found: Medieval Cargo Ship – Largest Vessel of Its Kind Ever&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46633574"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.smithsonianmag.com/smart-news/archaeologists-say-theyve-unearthed-a-massive-medieval-cargo-ship-thats-the-largest-vessel-of-its-kind-ever-found-180987984/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>显示 HN：Munimet.ro – 旧金山当地地铁基于机器学习的状态页面</title>
+      <link>https://munimet.ro/</link>
+      <guid isPermaLink="true">https://munimet.ro/</guid>
+      <pubDate>Thu, 15 Jan 2026 18:51:34 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46637283</comments>
+    </item>
+    <item>
+      <title>数据是唯一的护城河</title>
+      <link>https://frontierai.substack.com/p/data-is-your-only-moat</link>
+      <guid isPermaLink="true">https://frontierai.substack.com/p/data-is-your-only-moat</guid>
+      <pubDate>Thu, 15 Jan 2026 18:54:32 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46637328</comments>
+    </item>
+    <item>
+      <title>“ELITE”：ICE 使用 Palantir 应用程序寻找要袭击的社区</title>
+      <link>https://werd.io/elite-the-palantir-app-ice-uses-to-find-neighborhoods-to-raid/</link>
+      <description>&lt;p&gt;想象一下为这家公司工作，开发这款产品。每两周的冲刺，你都会承担一些有助于使这个引擎变得更好的任务。你对你的家人说什么。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; ‘ELITE’: The Palantir app ICE uses to find neighborhoods to raid&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46637127"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://werd.io/elite-the-palantir-app-ice-uses-to-find-neighborhoods-to-raid/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paulnpace:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令人惊讶的是只有 40&amp;#27;水。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mmooss:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;某处有纸吗？&lt;p&gt;维京博物馆的声明：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.vikingeskibsmuseet.dk&amp;#x2F;en&amp;#x2F;关于我们&amp;#x2F;新闻和新闻&amp;#x2F;新闻发布&amp;#x2F;考古学家揭晓中世纪超级船其世界最大齿轮" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.vikingeskibsmuseet.dk&amp;#x2F;en&amp;#x2F;about-us&amp;#x2F;news-and-press...&lt;/a&gt;&lt;p&gt;声明中引用的纪录片（我认为）：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.dr.dk&amp;#x2F;drtv&amp;#x2F;剧集&amp;#x2F;gaaden-i-dybet_-fra-ukendt-havn_562821" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.dr.dk&amp;#x2F;drtv&amp;#x2F;剧集&amp;#x2F;gaaden-i-dybet_-fra-ukendt-ha...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alberth:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谁会想到所有组织中的史密森学会会有如此多的视频弹出广告。&lt;p&gt;由于弹出窗口而只能看到如此少的内容，这难道不是移动设备上最好的体验吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dgan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;贵族 II&amp;#x2F;III 有人吗？童年最好的游戏之一，甜蜜的回忆&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.smithsonianmag.com/smart-news/archaeologists-say-theyve-unearthed-a-massive-medieval-cargo-ship-thats-the-largest-vessel-of-its-kind-ever-found-180987984/</guid>
-      <pubDate>Thu, 15 Jan 2026 15:09:16 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46633574</comments>
-    </item>
-    <item>
-      <title>问HN：我们如何解决孤独感流行病？</title>
-      <link>https://news.ycombinator.com/item?id=46635345</link>
-      <description>&lt;p&gt;无数无声的人每天独自坐着，没有人可以交谈，各个年龄段的人都不觉得自己可以加入任何当地团体。因此，当他们不上班或上学的时候，他们整天都坐在社交媒体上。我们该如何解决这个问题。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ask HN: How can we solve the loneliness epidemic?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46635345"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46635345'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;1970-01-01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一个古老的笑话或比喻，一个邪恶的科学家创造了一种蠕虫病毒，摧毁了互联网，每个人最终都感谢他拯救了世界。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mlmonkey:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;过去，每当我感到孤独和绝望时，我就会跳入帮助别人的行列：做志愿者、帮助老邻居打理花园、帮助别人搬家等等。帮助别人给了我一个短期的目标，最终让我度过了人生的低谷。 YMMV，当然。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gipp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好吧，让我们首先面对并承认我们——“我们”的一个非常有力的例子。整个科技界以及本网站的受众都为此承担着沉重的责任。&lt;p&gt;可以说，考虑到互联网的发展，这一切都是不可避免的：社交媒体的发展、在线商业运动以及其他过去经常涉及“偶然”的活动。社会化等等。也许确实如此。但“我们”仍然是建造它的人。 “我们”也是如此。真的是通过相同的旧硅谷剧本来解决这个问题的正确人选吗？&lt;p&gt;尝试推动当地“社区团体”的通常思维过程是，以爱好为基础的组织等还不错，但我认为它错过了一个重要的难题，那就是我们已经开始了一种死亡螺旋，一种抑制现实生活互动的正反馈循环。人们开始转向网上，因为它比“现实生活”更容易、更直接。但随着越来越多的人、越来越多的社交互动转移到网上，“IRL”变得越来越重要。反过来又变得更加毫无特色。社区团体越来越少，酒吧或电影院里的朋友越来越少，愿意自发互动的人也越来越少。那么，这会推动&lt;i&gt;更多&lt;/i&gt;的在线文化。&lt;p&gt;试图“回到现实世界”有什么用呢？当其他人也离开了它，而你却走了？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shdisi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我与这家公司没有任何联系或隶属关系，但最近听说过它：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;storiboardclub.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;storiboardclub.com&amp;#x2F;&lt;/a&gt;&lt;p&gt;他们说他们希望“让与志同道合的人见面变得简单、自然和有趣”，并且“孤独不一定是常态。”&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;storiboardclub.com&amp;#x2F;about-us" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;storiboardclub.com&amp;#x2F;关于我们&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dirtybirdnj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;年龄越大的人越被社会视为可随意支配的人。&lt;p&gt;当你年轻时，你属于学校。当你变老时，你就属于工作。&lt;p&gt;如果你脱离了这些社会结构中的任何一个，就很难找到重返的路。&lt;p&gt;当我离婚时，我已经与社会和一般人脱节了，现在我完全不受任何社区的束缚。生活很痛苦，我讨厌自己的生活，我不想再这样存在了。&lt;p&gt;人们提供的解决方案都不是简单的或实用的。 “去见见人”是有史以来最模糊、最无益的废话。&lt;p&gt;我认为现实是有些人，无论他们多么聪明、有爱心或充满同理心，都只是“走得太远”了。让任何人都主动或关心地关心我们。世界已经如此腐蚀和社会中毒，在这种事情上任何有意义的努力都是毫无意义的。任何有时间或金钱的人都在忙着赚钱。&lt;p&gt;你无法解决这种流行病，因为它是多个无法修复的破损系统的副产品。人们将继续陷入困境，而且情况会变得更糟。我不知道之后会发生什么，但我们可能都会死。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arjie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对这种孤独流行病有些怀疑。 81% 的美国人对自己的个人生活感到满意或非常满意[0]。我个人的经验是，亲密的朋友和一般的民间社区都很容易找到[1]。我根本没有尝试，所以这里不可能有任何真正的限制。&lt;p&gt;0: &lt;a href="https:&amp;#x2F;&amp;#x2F;news.gallup.com&amp;#x2F;poll&amp;#x2F;655493&amp;#x2F;new-low-satisfied-personal-life.aspx" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;news.gallup.com&amp;#x2F;民意调查&amp;#x2F;655493&amp;#x2F;新低满意度人士...&lt;/a&gt;&lt;p&gt;1: &lt;a href="https:&amp;#x2F;&amp;#x2F;wiki.roshangeorge.dev&amp;#x2F;w&amp;#x2F;博客&amp;#x2F;2025-10-09&amp;#x2F;社区" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;wiki.roshangeorge.dev&amp;#x2F;w&amp;#x2F;博客&amp;#x2F;2025-10-09&amp;#x2F;社区&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nickdothutton:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;可能想阅读《独自打保龄球》[1]（或至少对其的一些评论）和“蹲下来”。 &lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Bowling_Alone" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Bowling_Alone&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jokoon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;建立一个以居住在半径 1 公里内的人为中心的社交网络&lt;p&gt;让他们互动并做事，通常他们的毒性会较小，因为这会减少他们的在线去抑制效应。&lt;p&gt;让他们吃饭，见面，在公园散步，等等。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jschveibinz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些天我通常不会对 HN 评论做出贡献（评论部分有太多愤怒），但我很欣赏你的帖子和活动。&lt;p&gt;我是美国的婴儿潮一代，所以我的经历是在一个社交功能更加实用的世界：我们在公共场所购物、在公共场所玩耍、在公共图书馆阅读、在公共场所看电影、一起乘坐公共交通等。在公共场合是一种要求，而不是一种选择。  尽管这种古老文化的残余仍然活跃在当今世界的城市生活中，但不出现在公共场合的选择有很多，因此更容易避免。  我们都希望自己有一定程度的空间。&lt;p&gt;在成长的操场上，我的世界充满了谩骂和诽谤。  我是一个体重较重的孩子，所以这是我的负担。  其他孩子牙齿龅牙、长疣、跛行、太矮、太高、不协调——不管怎样——没有一个人能真正逃脱人群的愤怒。  我们的父母强迫我们去应对它。&lt;p&gt;我的父母和他们这一代的许多其他人一样，认识到这种行为是自然的。  观看《小流氓》的一集，你就会明白我指的是什么。&lt;p&gt;大多数（如果不是全部）那些被骂和以某种方式孤立的孩子都找到了摆脱困境的方法：做运动、玩音乐、创作艺术、在学校努力学习、拳击、唱歌、跳舞、讲笑话等等。  然后他们就成了英雄，人们可以庆祝他们——他们也蓬勃发展。&lt;p&gt;我知道这听起来过于理想化，但这是事实。  我在一个有数百名来自破碎家庭、贫困家庭、少数民族家庭等的孩子的社区中亲身经历了这一点。&lt;p&gt;无声的人必须找到自己的声音。  责任是他们的。  人群不会来拯救那些不愿为自己挺身而出并在生活中开辟道路的人。&lt;p&gt;孤独是非常非常悲伤的。  治愈孤独的良药掌握在孤独者强大的手中。  尽一切努力，只要需要，就去做那些阻碍孤独者为自己实现某些事情（任何事情）的事情，然后更加自信地与人群互动。&lt;p&gt;我很欣赏你通过帮助他人所做的事情 - 这是你的超能力之一。  过上美好、坚强的生活！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JumpinJack_Cash:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你越深入，你就越孤独。&lt;p&gt;即使你在成千上万的人中，而不仅仅是独自一人，如果你在思考其他事情、凝视虚空或无法联系等等的人中，这种情况也会发生。你是一个有深度的人。&lt;p&gt;有深度的人+有深度的思考者是更糟糕的。而且，人们歌颂自己是一个深刻的人和深刻的思想家，并没有给他们带来任何好处。&lt;p&gt;这也与一切的丰富和不需要 24&amp;#x2F;7&amp;#x2F;365 合作以避免挨饿有关......有些人陷入了深刻的思考和深刻的情感内省......是的，他妈的&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;toomuchtodo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有意识地选择社区以及建立和培育社区所需的努力[1] [2] [3] [4] [5]。人们是工作，但没有社区你就无法生活[6]。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;web.archive.org&amp;#x2F;web&amp;#x2F;20250212233145&amp;#x2F;https:&amp;#x2F;&amp;#x2F; www.hhs.gov&amp;#x2F;网站&amp;#x2F;默认&amp;#x2F;文件&amp;#x2F;my-parting-prescription-for-america.pdf" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;web.archive.org&amp;#x2F;web&amp;#x2F;20250212233145&amp;#x2F;https:&amp;#x2F;&amp;#x2F;www.hhs.g...&lt;/a&gt;&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;thepeoplescommunity.substack.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;thepeoplescommunity.substack.com&amp;#x2F;&lt;/a&gt;&lt;p&gt;[3] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.tiktok.com&amp;#x2F;@amandalitman&amp;#x2F;视频&amp;#x2F;7592750185403485470" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.tiktok.com&amp;#x2F;@amandalitman&amp;#x2F;视频&amp;#x2F;75927501854034854...&lt;/a&gt;&lt;p&gt;[4] &lt;a href="https:&amp;#x2F;&amp;#x2F;boingboing.net&amp;#x2F;2015&amp;#x2F;12&amp;#x2F;21&amp;#x2F;a-survivalist-on-why-you-shoul.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;boingboing.net&amp;#x2F;2015&amp;#x2F;12&amp;#x2F;21&amp;#x2F;a-survivalist-on-why-you-s...&lt;/a&gt;&lt;p&gt;[5] &lt;a href="https:&amp;#x2F;&amp;#x2F;boingboing.net&amp;#x2F;2008&amp;#x2F;07&amp;#x2F;13&amp;#x2F;postapocalypse-witho.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;boingboing.net&amp;#x2F;2008&amp;#x2F;07&amp;#x2F;13&amp;#x2F;postapocalypse-witho.html&lt;/a&gt;&lt;p&gt;[6] &lt;i&gt;去教堂的人数减少如何导致“绝望之死”的增加&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46408406"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46408406&lt;/a&gt; - 2025 年 12 月（2 条评论）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AnimalMuppet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么他们觉得自己无法加入任何当地团体？  解决这个问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;publicdebates:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我也是这个群体中的一员，所以我对造成这种情况的原因以及如何解决它有一些理论。&lt;p&gt;一方面，我小时候受到过严重的创伤，这延迟了我的很多社交技能。我正在追赶，但还没有完全实现。当我的社交电池充满时，我可以做得很好，但如果我稍微情绪低落，基本上就不可能正常行事。&lt;p&gt;当我还是个孩子的时候，我也被深深地打动了，没有人想要我在身边，没有人会爱我，我是一个失败者，一个负担，一个怪人，一个怪人，除了一个令人讨厌的讨厌鬼之外什么都没有，没有人愿意与他独处 30 秒。我试图拒绝这些想法，但当你没有人可以交谈时，这很困难。这就像自力更生一样。我想知道有多少人有同样的问题。我亲自交了一些朋友，但我很少见到他们。&lt;p&gt;我已经开始在附近的大城市进行公众调查，并记录结果。我只是拿出一块海报板，上面写着“你感觉多么孤独”[1]或“你恋爱过吗”。等等，并举起一个记号笔，人们就会上来进行调查。起初我这样做纯粹是出于孤独和无聊。但我这样做已经有足够多的时间了，有些人来找我，告诉我我帮助了他们，或者他们期待着我的迹象。&lt;p&gt;我正在努力接触那些和我一样感觉无法与任何人联系的人，或者至少觉得他们无法与任何人联系。您对如何实现这一目标有什么新想法吗？&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;chicagosignguy.com&amp;#x2F;blog&amp;#x2F;how-alone-do-you-feel.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;chicagosignguy.com&amp;#x2F;博客&amp;#x2F;how-alone-do-you-feel.html&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46635345</guid>
-      <pubDate>Thu, 15 Jan 2026 16:49:13 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46635345</comments>
-    </item>
-    <item>
-      <title>供应链漏洞危害 AWS GitHub 核心存储库并威胁 AWS 控制台</title>
-      <link>https://www.wiz.io/blog/wiz-research-codebreach-vulnerability-aws-codebuild</link>
-      <description>&lt;p&gt;防止不受信任的拉取请求触发特权构建：启用新的拉取请求评论批准构建门。考虑使用专用的非特权 GitHub 帐户进行 CodeBuild 集成。与 WizWiz 一起查找易受攻击的 CodeBuild 项目 客户可以使用 Wiz 威胁情报中心中的此预构建查询来查找基于不受信任的拉取请求触发构建的 CodeBuild 项目。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Supply Chain Vuln Compromised Core AWS GitHub Repos &amp; Threatened the AWS Console&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46636093"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.wiz.io/blog/wiz-research-codebreach-vulnerability-aws-codebuild'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.wiz.io/blog/wiz-research-codebreach-vulnerability-aws-codebuild</guid>
-      <pubDate>Thu, 15 Jan 2026 17:30:10 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46636093</comments>
-    </item>
-    <item>
-      <title>GitHub 事件</title>
-      <link>https://www.githubstatus.com/incidents/q987xpbqjbpl</link>
-      <description>&lt;p&gt;重新发送 OTP 订阅即表示您同意我们的隐私政策。本网站受 reCAPTCHA 保护，并适用 Google 隐私政策和服务条款。本网站受 reCAPTCHA 保护，并适用 Google 隐私政策和服务条款。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; GitHub Incident&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46635550"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.githubstatus.com/incidents/q987xpbqjbpl'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;howToTestFE:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果 GH 出现问题，似乎总是在格林尼治标准时间下午 4 点或 5 点左右。我开始认为我应该避免在这个时候发布任何计划的生产版本。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;toephu2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是为什么公司应该在本地托管自己的源代码。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;phtrivier:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;固定在大约 30m 到一个小时内。&lt;p&gt;确实很烦人，但我会尝试一下热门观点，与普遍的看法相反，GH 不是关键基础设施 - 至少我希望如此。&lt;p&gt;请告诉我乌克兰防空系统的任何部分都不依赖于 gh 行动挂钩。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jbverschoor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好东西 git 是一个分布式系统&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bakje:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也许 Gemini-cli 机器人与自身争论正在造成损失&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;google-gemini&amp;#x2F;gemini-cli&amp;#x2F;issues&amp;#x2F;16750" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;google-gemini&amp;#x2F;gemini-cli&amp;#x2F;问题&amp;#x2F;16750&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;corvad:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;老实说，Github 最近的可靠性非常糟糕。并不感到惊讶。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tapoxi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;helm 仓库添加 gitlab &lt;a href="https:&amp;#x2F;&amp;#x2F;charts.gitlab.io&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;charts.gitlab.io&amp;#x2F;&lt;/a&gt; &amp;amp;&amp;amp; helm update --install gitlab gitlab&amp;#x2F;gitlab&lt;p&gt;我在 2019 年就这样做了，它避免了很多令人头痛的问题。 CI 也更好，因为有一个很好的干净的构建映射 -&gt; pod 可以处理所有事情，如果有什么问题我可以直接执行。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MadameMinty:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;愤怒的独角兽似乎已经结束了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;postexitus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为这是 Azure 中断或某种类型的 MS 服务 - Azure 上的所有内容都已关闭。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nottimbo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;微软，是时候聘请一些 SRE 了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nullfish:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我怀疑向 Azure 的迁移进展顺利&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.githubstatus.com/incidents/q987xpbqjbpl</guid>
-      <pubDate>Thu, 15 Jan 2026 17:00:38 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46635550</comments>
-    </item>
-    <item>
-      <title>问 HN：有人对现代 Mac 到传统 SCSI 转换器有好的解决方案吗？</title>
-      <link>https://news.ycombinator.com/item?id=46636571</link>
-      <description>&lt;p&gt;Thunderbolt 到 Firewire 到 SCSI。它是一个加密狗 Rapunzel，您依赖设备外壳来供电。配备原生 PCI-e 或 PCI HBA 和 700W 电源以及垃圾级 ATX Linux 机器来提供网络共享可能会更好。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ask HN: Anyone have a good solution for modern Mac to legacy SCSI converters?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46636571"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46636571'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eschaton:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;GBSCSI 和 ZuluSCSI 支持“启动器模式”，可用于将连接的 SCSI 磁盘映像到 SD 卡上的文件，或通过 USB 作为大容量存储设备对其进行实时访问，性能也比旧的 USB 1.1 SCSI 适配器更好，后者的最高速度约为 750KB 秒。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;seritools:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果连接它们的原因是转储它们，类似于 &lt;a href="https:&amp;#x2F;&amp;#x2F;bluescsi.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;bluescsi.com&amp;#x2F;&lt;/a&gt; 在启动器模式下可能有效：&lt;a href="https:&amp;#x2F;&amp;#x2F;bluescsi.com&amp;#x2F;docs&amp;#x2F;Initiator-Mode" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;bluescsi.com&amp;#x2F;docs&amp;#x2F;启动器模式&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cosmotic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是相反问题的解决方案：&lt;a href="https:&amp;#x2F;&amp;#x2F;bluescsi.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;bluescsi.com&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;itomato:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您需要物理连接它们，我认为您会被 macOS 中的 HBA 芯片组支持所阻止。&lt;p&gt;有一条路径，但它不是我所说的“好”。 Thunderbolt 到 Firewire 到 SCSI。它是一个加密狗 Rapunzel，您依赖设备外壳来供电。&lt;p&gt;使用本机 PCI-e 或 PCI HBA 和 700W 电源以及垃圾级 ATX Linux 机器来提供网络共享可能会更好。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;codesnik:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与主题无关，但这提醒了我：我的第一台 PC (286) 奇迹般地拥有 40MB 2.5" 内存。通过 SCSI 适配器连接 Apple 品牌的 HDD。谁知道它的来源是哪里。一件奇怪的事情是，它在启动时初始化了大约 40 秒，没有显示任何内容。后来我看到其他配备 ATA 驱动器的 PC 的启动速度时感到非常惊讶。我仍然想知道，也许有人知道为什么 init 这么长？这是 SCSI 固有的东西吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sigio:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;亚马逊有 USB SCSI 适配器，我不使用苹果设备，但我猜这会起作用。 &lt;a href="https:&amp;#x2F;&amp;#x2F;duckduckgo.com&amp;#x2F;?q=usb+scsi+adapter&amp;amp;ia=web" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;duckduckgo.com&amp;#x2F;?q=usb+scsi+adapter&amp;amp;ia=web&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46636571</guid>
-      <pubDate>Thu, 15 Jan 2026 18:04:59 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46636571</comments>
-    </item>
-    <item>
-      <title>意大利隐私监管机构成为美国大型科技公司的祸害，受到腐败调查的打击</title>
-      <link>https://www.reuters.com/sustainability/boards-policy-regulation/italys-privacy-watchdog-scourge-us-big-tech-hit-by-corruption-probe-2026-01-15/</link>
-      <guid isPermaLink="true">https://www.reuters.com/sustainability/boards-policy-regulation/italys-privacy-watchdog-scourge-us-big-tech-hit-by-corruption-probe-2026-01-15/</guid>
-      <pubDate>Thu, 15 Jan 2026 17:35:53 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46636193</comments>
-    </item>
-    <item>
-      <title>Zuck#：一种连接世界的编程语言。并收获它</title>
-      <link>https://jayzalowitz.github.io/zucksharp/</link>
-      <description>&lt;p&gt;ifPIVOT_TO_VIDEO记住视频是何时的策略。 elseifPIVOT_TO_REELS则卷轴发生 elsePIVOT_TO_METAVERSE当前数据透视结束ifEND_PIVOTD完成数据透视（暂时）而MOVE_FAST座右铭结束而BREAK_THINGSGROWTH_HACK座右铭的另一半必须获得这些 DAU 结束forPLATEAUGrowth 对每个HARVEST_USERS都有限制（据称）在用户群中进行迭代endforeachUSERS_HARVESTEDD一次收获开关A_B_TEST测试所有变体caseVARIANT一个可能的路径默认CONTROL_GROUP基线breakRAGE_QUITE愤怒地退出循环继续SCROLL_PAST跳到下一次迭代。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Zuck#: A programming language for connecting the world. And harvesting it&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46636738"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://jayzalowitz.github.io/zucksharp/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;forgotpwd16:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[延迟]&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;halperter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想我以前从未见过以编程语言形式出现的讽刺:)。整洁的。还有其他人有其他例子吗？我能想到的只有像 Velado（使用注释）和 Piet 这样的语言。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jkhall81:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://jayzalowitz.github.io/zucksharp/</guid>
-      <pubDate>Thu, 15 Jan 2026 18:17:52 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46636738</comments>
+&lt;p&gt;&lt;strong&gt;Top 22 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vicpara:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Palantir 为每个客户端部署一个数据平台、摄取和丰富管道以及面向用户的应用程序，以允许智能查询和数据探索。该平台将所有特定于应用程序的数据存储在高度精细、灵活的本体中。它还拥有一个强大的摄取平台，使用人工智能来丰富文档，在现有文档之间创建链接，并将它们映射到本体中的正确位置。摄取完成后，您将拥有一个多信号本体，允许应用程序用户使用多维、复杂的搜索查询在本体中查找任何内容，这些搜索查询基于多个方面执行长图遍历。&lt;p&gt;我想在这种情况下，他们提供了技术，而“客户端”带来了数据。可以合理地预期“客户端”数据是异构的，并且包含来自多个重叠源的数据，这些数据一旦被摄取，就会创建一个复杂的世界视图。&lt;p&gt;这与 cookie 池的工作方式类似。当您清除所有 cookie 并重新开始时，您无需登录即可访问 100 个网站。没有人知道您是谁。但是，一旦您登录到随机网站，您的姓名和电子邮件将被分配给该 cookie，该 cookie 将自动传播到先前链接在一起的所有先前 100 个会话。即使 Cookie 池网络中没有任何活动 400 天后，互联网也能将 Cookie 与现有配置文件进行匹配。&lt;p&gt;Palantir 的工作原理相同。如果在任何这些摄取的异构“客户”数据集中存在一个匹配记录，包含或不包含 SSN 或“客户”用来确定移民身份的任何测试标志规则，Palantir 可以围绕该测试标志建立一个置信区间。一个历史性的不良行为将导致该实体被标记。&lt;p&gt;作为软件供应商，他们提供技术能力。每个 Palantir 客户都会带来自己的数据。就像在 Postgres 中一样。如果客户想要构建一些东西，并且你可以做到，你就完成它。&lt;p&gt;他们说互联网永远不会忘记。我想可以肯定的是，从现在开始，政府也不会忘记过去的任何不良行为。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mmmlinux:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Palantir 损坏控制比上一个线程更快地到达此线程。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tamimio:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只有白痴才会认为这一切都是“非法移民”；这是大规模监视和“流氓”行为的整个基础设施。警察。他们现在可能正在追求特定目标，但一旦完全正常化，你就是下一个。从数据收集和聚合，到 Flock 和 Ring 等侵入性监控，再到人工智能和应用程序的使用，我们正在为这样的任务精心规划和推出。应该有一个平台来跟踪致力于构建这些技术和应用程序的人员。我永远不会信任或雇佣那些没有道德、工作并花费大量时间制作 ELITE 应用程序或 Flock Android 系统或类似系统的人；这些人是这种监视的推动者，应该被追究责任。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fudged71:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;致其他公司的技术领导者和招聘经理：如果您正在阅读本文，请考虑公开声明您的公司将面试出于道德原因想要退出的 Palantir 工程师。创建明确的出口匝道。降低离开的门槛。我们为试图做正确事情的工程师提供庇护，使其成为科技行业的规范。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elephantum:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;听起来 Palantir 构建了一个有用的软件，干得好&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anon291:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对palantir没有强烈的感情。但我所得到的大部分都是负面的。&lt;p&gt;然而，即使驱逐在这个国家没有合法身份的人的想法也会立即被贴上纳粹的标签，这对我来说似乎很疯狂。这只会助长极端主义，因为它本身就是极端主义&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;periodjet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么我们都失去了细致思考的能力？目睹这一情况非常令人不安，尤其是在像 HN 这样表面上充满了聪明人的论坛上。&lt;p&gt;我们可以同时相信 ICE 具有明确且符合道德的使命，同时也相信他们正在通过需要改变的不良方法来履行这一使命。&lt;p&gt;我们可以同时相信人们不应该被标记为本质上“非法”，同时也相信移民队列应该存在，跳过它是不道德的，应该是非法。&lt;p&gt;诸如此类，等等。&lt;p&gt;你不必致力于一套完全两极分化的信仰。细微差别是可能的。究竟是什么让我们如此失去理智？真的只是社交媒体吗？目睹如此令人沮丧。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;schnatterer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;原始 404media 文章：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.404media.co&amp;#x2F;elite-the-palantir-app-ice-uses-to-find-neighborhoods-to-raid&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.404media.co&amp;#x2F;elite-the-palantir-app-ice-uses-to-f...&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;wa32f" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;wa32f&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;laweijfmvo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“跟踪应用程序适合你，但不适合我”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gnarlouse:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我告诉别人，Palantir 正在为后中下阶级社会提供女佣服务和老鼠药。他们不相信我。看到这一点就证明了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;backlava12:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;问题是，有一部分人对非法移民被驱逐出境感到不满。因此，在像这样的文章讨论中，我不确定有多少担忧实际上是针对用于这样做的技术，或者真正的担忧是否是驱逐非法移民的想法。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;big_toast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人们能否在该讨论中发表更多努力的帖子，以便该线程不会像其他线程一样被拉动？&lt;p&gt;此应用程序正在使用特定的产品线吗？哪些《信息自由法》法律适用于其使用？这提供了什么样的数据？还有别的东西吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[欺骗] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46633378"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46633378&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SilverElfin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些突袭是不分青红皂白的挨家挨户突袭吧？其中有很多令人不安的报告。例如，ICE 特工出现在白人家庭门口，询问哪些房子里住着亚洲人。这些突击搜查是公然违宪的（第四修正案），而且，无论法律如何，它们在道德上都远远超出了道德范围。科技公司故意参与其中，这太疯狂了。 Palantir 必须被下一届非共和党政府视为犯罪企业，并且应该为那里的每个人带来后果。正如其他人所说，你不能只是说“我只负责运输”。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bradley13:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你必须问自己的问题是：你如何驱逐数百万非法移民？考虑到实际情况，提出一个更好的系统。&lt;p&gt;而且，不，忽视它们的存在不是一个选择，除非你想要“数以百万计”的人。成为“千万”甚至更多。另请注意，拜登和奥巴马执政期间也发生过大规模驱逐——他们只是没有吸引同样的公众关注。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;randommar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;啊，是的，在巴勒斯坦人身上进行了 Beta 测试，他们多么慷慨地将完善的版本发送给其他人。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mentalfist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;自成立以来，Palantir 已从美国政府获取了大约 100 亿美元的纳税人资金。上帝保佑美国。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drcongo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;已经有一些优秀（和一些不太好的）讨论的更好链接：&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46633378"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46633378&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pixelready:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我从未在 Palantir 工作过，但一旦你摆脱了喧闹的领导层的恶棍美德信号，我读到的每一份关于该平台本身的报告都会给我强烈的“典型企业供应商”氛围。一种平淡无奇的软件产品，对机构购买者进行了过度宣传，然后将一线员工推入喉咙，因为供应商擅长在销售和合规迷宫中导航以确保交易。&lt;p&gt;使用这些工具的目标和动机，以及它们对本应高度控制的数据（或者在某些情况下甚至根本不收集）的广泛访问权限是问题所在。不要给 Palantir 他们所渴望的坏男孩街头信誉，重点关注那些导致机构首先需要此类工具的政策决策。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;phoehne:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“我只负责运输”这不是借口。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hnbad:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当然是Palantir。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kankerlijer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好的，他们已经组装了一个仪表板。  我不喜欢正在发生的事情，但这并不是他们正在做的一些可怕的技术。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://werd.io/elite-the-palantir-app-ice-uses-to-find-neighborhoods-to-raid/</guid>
+      <pubDate>Thu, 15 Jan 2026 18:42:46 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46637127</comments>
     </item>
   </channel>
 </rss>
