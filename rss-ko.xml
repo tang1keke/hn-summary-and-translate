@@ -6,193 +6,179 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Korean</description>
     <language>ko</language>
-    <lastBuildDate>Thu, 15 Jan 2026 21:30:06 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Jan 2026 02:05:45 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ko.xml"/>
     <item>
-      <title>JuiceFS는 Redis 및 S3를 기반으로 구축된 분산 POSIX 파일 시스템입니다.</title>
-      <link>https://github.com/juicedata/juicefs</link>
-      <description>&lt;p&gt;JuiceFS는 Apache License 2에 따라 출시된 고성능 POSIX 파일 시스템입니다. JuiceFS를 통해 저장된 데이터는 객체 스토리지에 유지됩니다. 예를 들어 JuiceFS는 빠른 오픈 소스 메모리 내 키-값 데이터 저장소인 Redis와 같은 다양한 메타데이터 엔진에 파일 시스템의 메타데이터를 저장할 수 있으며 특히 메타데이터 저장에 적합합니다. 동시에 모든 데이터는 JuiceFS 클라이언트를 통해 객체 스토리지에 저장됩니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; JuiceFS is a distributed POSIX file system built on top of Redis and S3&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46637165"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/juicedata/juicefs'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sabslikesobs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;사용자 스토리도 참조하세요: &lt;a href="https:&amp;#x2F;&amp;#x2F;juicefs.com&amp;#x2F;en&amp;#x2F;blog&amp;#x2F;user-stories" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;juicefs.com&amp;#x2F;en&amp;#x2F;blog&amp;#x2F;user-stories&lt;/a&gt;&lt;p&gt;저는 엔터프라이즈 스토리지 전문가가 아닙니다(지금까지는 로컬 볼륨에 있는 sqlite만 사용했습니다!). 그래서 JuiceFS의 목적을 추상화하는 데 큰 도움이 되었습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jeffbee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;pjdfstest가 POSIX 의미 체계를 완전히 준수하는지 여부는 확실하지 않습니다. 예를 들어 저장소를 짧게 검색한 후에는 O_APPEND를 사용하여 원자적으로 작성하는 관련되지 않은 여러 프로세스를 실행하는 항목을 보지 못했습니다. 그리고 그래픽이 NFS 및 SMB를 통해 JuiceFS와 인터페이스하는 애플리케이션을 보여주고 있다는 사실은 두 가지 모두 POSIX 의미론적 속성이 많이 부족하기 때문에 더욱 의심을 불러일으킵니다.&lt;p&gt;수십 년 동안 저는 많은 분산 파일 시스템에 대한 테스트 하네스를 작성해 왔는데 실제로 POSIX 의미론을 제공하는 것으로 보이는 유일한 것은 LustreFS였습니다. 이는 관련된 이유로 운영성 악몽이기도 합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;willbeddow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Juice는 훌륭하지만 선택하는 메타데이터 저장소에 대한 절충안이 매우 중요합니다. 또한 해석할 수 없는 형식으로 파일을 객체 스토리지에 기록하므로 메타데이터 저장소를 잃으면 데이터도 잃게 됩니다.&lt;p&gt;Krea에서 시도했을 때 훈련하기에 충분한 성능을 얻을 수 없었고 메타데이터 저장소를 배포할 데이터 센터를 선택해야 했기 때문에 한 번에 한 위치에서만 사용해야 했기 때문에 결국 계속 진행했습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;IshKebab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;흥미로운. 이것이 NFS를 대체하기에 적합합니까? 내 경험에 따르면 말 그대로 실리콘 설계 업계의 모든 사람들이 컴퓨팅 그리드에서 NFS를 사용하며 여러 면에서 형편없습니다.&lt;p&gt;* 잠금 지원이 좋지 않습니다(이게 더 잘 작동하는 것 같습니다)&lt;p&gt;* 느립니다&lt;p&gt;* 수동 펜스 지원이 없습니다. 워크로드를 분산하는 나쁘지만 일반적인 방법은 다음과 같습니다. 한 시스템(NFS 마운트)에서 테스트를 컴파일한 다음 SLURM 또는 SGE를 사용하여 다른 시스템에서 테스트를 실행합니다. NFS를 사용하면 다른 머신이 데이터에 액세스할 수 있습니다... 그리고 이것은 작동합니다... 쓰기 캐시를 비활성화해야 하거나 첫 번째 머신의 출력을 다른 머신이 볼 수 있도록 끔찍한 해킹을 해야 한다는 점만 제외하면 말이죠. 당신이 &lt;i&gt;정말&lt;/i&gt; 원하는 것은 수동 펜스입니다: "이 디렉토리에 대한 모든 변경 사항을 서버에 표시합니다"&lt;p&gt;* 빌어먹을 .nfs000000 파일. 나는 이것이 NFSv4에 의해 수정될 수 있다고 생각하지만 실제로는 아무도 그것을 사용하지 않는 것 같습니다. (EDA 사람들에게 CentOS 7이 "현대적"이라고 간주된다는 사실은 도움이 되지 않습니다.)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wgjordan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;관련, &amp;quot;디자인 &amp;amp; 스프라이트 구현' [1](현재 첫 페이지에도 있음)은 스택에서 JuiceFS를 언급했습니다.&lt;p&gt;&amp;gt; Sprite 스토리지 스택은 JuiceFS 모델을 중심으로 구성됩니다(사실 현재 우리는 재작성된 SQLite 메타데이터 백엔드와 함께 매우 해킹된 JuiceFS를 사용하고 있습니다). 이는 스토리지를 데이터("청크")와 메타데이터("청크"가 있는 위치에 대한 맵)로 분할하는 방식으로 작동합니다. 데이터 청크는 객체 저장소에 있습니다. 메타데이터는 빠른 로컬 저장소에 있습니다. 우리의 경우 해당 메타데이터 저장소는 Litestream을 통해 내구성이 유지됩니다. 아무것도 로컬 저장소에 의존하지 않습니다.&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46634450"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46634450&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Eikon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ZeroFS [0]는 S3만 필요하고 타사 데이터베이스가 필요하지 않으면서 일반적인 소형 파일 작업 부하[1]에서 JuiceFS보다 성능이 뛰어납니다.&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;Barre&amp;#x2F;ZeroFS" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;Barre&amp;#x2F;ZeroFS&lt;/a&gt;&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.zerofs.net&amp;#x2F;zerofs-vs-juicefs" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.zerofs.net&amp;#x2F;zerofs-vs-juicefs&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Plasmoid:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;실제로 데이터를 쉽게 콜드 저장할 수 있도록 mongo 디스크를 교체하기 위해 이것을 사용하려고 했습니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/juicedata/juicefs</guid>
-      <pubDate>Thu, 15 Jan 2026 18:45:18 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46637165</comments>
+      <title>Pocket TTS: CPU에 음성을 제공하는 고품질 TTS</title>
+      <link>https://kyutai.org/blog/2026-01-13-pocket-tts</link>
+      <guid isPermaLink="true">https://kyutai.org/blog/2026-01-13-pocket-tts</guid>
+      <pubDate>Thu, 15 Jan 2026 05:14:08 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46628329</comments>
     </item>
     <item>
-      <title>SSH를 통한 Linux 박스: 연결이 끊어지면 일시 중지됨</title>
-      <link>https://shellbox.dev/</link>
-      <description>&lt;p&gt;dev 연결 dev1 $ ssh -t 쉘박스. 개발자 청구 계정 잔액 =============================== 추가된 자금: $30. 잔액이 $5 미만으로 떨어지면 상자가 중지되고 $0에서 삭제됩니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Linux boxes via SSH: suspended when disconected&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46638629"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://shellbox.dev/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Briar는 인터넷이 꺼졌을 때 Bluetooth와 Wi-Fi를 통해 이란의 연결을 유지합니다.</title>
+      <link>https://briarproject.org/manual/fa/</link>
+      <description>&lt;p&gt;나는 당신이 당신의 직업에 대해 잘 알고 있다고 생각합니다. 물론, 우리는 더 많은 것을 알고 싶어합니다. 로이는 돈을 더 많이 벌기 위해 노력합니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Briar keeps Iran connected via Bluetooth and Wi-Fi when the internet goes dark&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46638013"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://briarproject.org/manual/fa/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SoulMan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Jack Dorsey의 Bitchat은 어떻습니까? 정부가 시위 도중 인터넷을 차단한 인도(특히 카슈미르)에서 유용할 수 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FridayoLeary:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;타이틀의 명시된 목표가 어떻게 달성되었는지는 아직 불분명합니다. 제목을 읽은 첫 번째 가정은 에어태그처럼 작동하지만 그것은 분명히 말도 안되는 일입니다.  메시지를 보내고 싶은 사람 바로 옆에 서 있지 않는 한, 정확히 어떻게 작동합니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;monkaiju:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Briar는 훌륭한 프로젝트입니다. 우리의 국내 상황을 살펴보면 이란과 마찬가지로 관련성이 있는 것 같습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;subscribed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아마도 미국인들은 Meshtastic &amp;#x2F; 혹시라도 메쉬코어......
+..,..황제는 계엄령을 시행하는 데 열중하고 있는 것 같습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;electronsoup:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;iOS 상황이 궁금합니다&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;31337Logic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;만세! Rabin 팬으로서 저는 Briar를 좋아하고 이 글을 읽게 되어 매우 기쁩니다. 이 멋진 프로젝트에 참여해주신 모든 분들께 감사드립니다!!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ukblewis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;좋은&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://briarproject.org/manual/fa/</guid>
+      <pubDate>Thu, 15 Jan 2026 19:38:02 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46638013</comments>
+    </item>
+    <item>
+      <title>프롤로그에 대한 나의 불만</title>
+      <link>https://buttondown.com/hillelwayne/archive/my-gripes-with-prolog/</link>
+      <description>&lt;p&gt;그렇기 때문에 조건문이 컷으로 구현된다는 사실에 놀랐습니다. 반면 이것은 예상대로 작동합니다. 상처로 그런 행동을 얻을 방법은 없습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; My Gripes with Prolog&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46641348"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://buttondown.com/hillelwayne/archive/my-gripes-with-prolog/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;boxed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;라인 재정렬 문제는 항상 심각하며 모든 언어는 이 단계를 거쳐 수정하거나 사용자에게 이것이 "실제로 문제가 아니다"라고 영원히 화를 내야 하는 것 같습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shawn_w:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;'이거 프롤로그 등에 딱 맞을 것 같다'라고 생각하는 경우가 많습니다. 하지만 실행에 관해서는 항상 실패합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;doorhammer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 항상 프롤로그로 돌아와서 도구를 사용했지만 아직 많은 작업을 수행하지 않았습니다.&lt;p&gt;양방향성은 항상 매우 매력적이었습니다.&lt;p&gt;Picat에 대해 몰랐습니다. 100% 확인해보겠습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;egl2020:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저만 그럴 수도 있지만, 선언적처럼 보이지만 실행 순서대로 코드를 읽어야 한다는 점이 불만입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;infotainment:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 항상 Prolog의 프로그램 실행 능력이 완전히 우연이라고 느꼈습니다.&lt;p&gt;나에게는 누군가가 발견한 데이터 설명 언어를 속여서 계산을 수행할 수 있는 것처럼 느껴졌습니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://buttondown.com/hillelwayne/archive/my-gripes-with-prolog/</guid>
+      <pubDate>Fri, 16 Jan 2026 00:11:28 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46641348</comments>
+    </item>
+    <item>
+      <title>약물 및 생물학적 제품의 임상 시험에서 베이지안 방법론의 사용 [pdf]</title>
+      <link>https://www.fda.gov/media/190505/download</link>
+      <description>&lt;p&gt;g������y9B� c�� &gt;O�4N6W�g� 0 ��e endstream endobj 1196 0 obj &lt;&gt;stream H��WYs�8 ~ׯ���e� �Cԕ�Z�G���n�V��y�E�X��"����&gt;@ ԕ�] 4��n��˫��,�E#~���i�ź����z \�f� �S I5 E *駱Hc E�H�D 1 =����k. ��/�+� �_ � endstream endobj 1198 0 obj &lt;&gt;스트림 H�\��j�0 E�� -�Ep��c �P� /��n. �,Ŀ`�B��� �o���&amp;� s2� hD�Y���Tz����G�Iş� ` j��9 endstream endobj 1199 0 obj &lt;&gt;stream H�|�y|�� � ϼ�&gt;� kl�wf�7�����n�A�zo]��Kq�4 � ���� �I AlAb � ľ [�}�P[1jk&gt;ښ�Liϐ˽ ���y�9����|.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Use of Bayesian methodology in clinical trials of drug and biological products [pdf]&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46629295"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.fda.gov/media/190505/download'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hnthrowawayacct:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이는 FDA 지침 문서이므로 향후 FDA 제출 및 임상 시험 설계에 대한 새로운 제출 또는 보충 제출에 영향을 미칠 것으로 예상할 수 있습니다. 이는 좋은 소식입니다. 통계 계획은 시험 설계 및 제출 과정에서 항상 논쟁거리가 됩니다. 이 지침은 모래 위에 선을 긋고 현재 FDA 직원에게 존재하는 검토자 간 차이 중 일부를 제거할 것입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esafak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;여기서 주목할 만한 것이 있나요? 나는 그들이 인과관계 추론을 언급하지 않았다는 것을 알아차렸습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;levocardia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;RCT에 베이지안 방법을 채택하는 것은 좋은 소식이며 Frank Harrell과 같은 선도적인 생물통계학자들은 수년 동안 이러한 변화를 추진해 왔습니다. 제가 가장 관심을 갖고 있는 것은 이것이 실제로 실제로 구현될 것인가, 아니면 베이지안 방법이 현재 대부분의 생물의학 분야에서 사용되는 것처럼 믿을 수 없을 정도로 드물고 틈새 시장에 적용될 것인가입니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.fda.gov/media/190505/download</guid>
+      <pubDate>Thu, 15 Jan 2026 07:36:15 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46629295</comments>
+    </item>
+    <item>
+      <title>Show HN: 신뢰할 수 있는 AI 에이전트 구축을 위한 오픈 소스 에이전트 하네스인 Gambit</title>
+      <link>https://github.com/bolt-foundry/gambit</link>
+      <description>&lt;p&gt;ctx를 사용하여 구조화된 추적 이벤트를 내보냅니다. 첫 번째 데크 Minimal Markdown 데크(모델 기반) 작성: hello_world. ts --init '{"text":"ping"}' 하위 작업이 포함된 데크(TypeScript 도구 호출): agent_with_time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Gambit, an open-source agent harness for building reliable AI agents&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46641362"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/bolt-foundry/gambit'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pych:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;와 이거 멋지네요 - 하네스 관련 내용을 파헤쳐보려고 했는데 좋은 출발점이 될 것 같네요&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alberson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Agentive에서 이 기능을 사용하게 되어 기쁩니다! 정말 흥미로운 접근 방식입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sofdao:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이거 정말 대단해요&lt;p&gt;파일 시스템 같은 것이 내장되어 있나요?&lt;p&gt;시스템 설계를 좋아하는 사람이죠. 건축학적으로 좋아보이네요&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;franciscomello:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것은 아키텍처 측면에서 매우 흥미로워 보입니다. Langchain과 같은 내용을 새롭게 해석한 것 같습니다. 적어도 지난 번 확인했을 때는 형편없었습니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/bolt-foundry/gambit</guid>
+      <pubDate>Fri, 16 Jan 2026 00:13:25 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46641362</comments>
+    </item>
+    <item>
+      <title>수석 엔지니어가 나쁜 프로젝트를 실패하게 만드는 이유</title>
+      <link>https://lalitm.com/post/why-senior-engineers-let-bad-projects-fail/</link>
+      <description>&lt;p&gt;그는 다른 팀이 진행 중인 프로젝트를 가리키며 "나는 그 프로젝트가 아무데도 갈 것이라고 믿지 않습니다. 그들은 잘못된 문제를 해결하고 있습니다. 대답은 옳은 것과 효과적인 것은 다르다는 것입니다. 사실, 당신은 크게 무시될 가능성이 매우 높습니다."&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Why senior engineers let bad projects fail&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46640366"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://lalitm.com/post/why-senior-engineers-let-bad-projects-fail/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 25 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bubblerme:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;통찰력에 감사드립니다&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Ericson2314:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 사람의 블로그 게시물을 읽을 때마다 나는 그 사람의 경력이 없다는 사실이 매우 기쁩니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;strangescript:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;멀리서 프로젝트를 진행하는 것은 거의 정확하지 않습니다. 두 가지 일만 일어날 수 있습니다. 하나는 당신이 틀렸고 프로젝트가 성공하는 것입니다. 이것은 그 회사에서의 당신의 경력에 ​​대한 개인적인 재앙입니다. 둘째, 당신의 말이 맞고 프로젝트가 실패합니다. 이것이 위험을 감수할 만큼 충분한 신뢰성을 얻을 수 있는 경우는 거의 없습니다. 마치 자신이 알고 있었던 것처럼 나타나서 개더미를 터뜨리는 사람들도 항상 있습니다. 전체 시간 자체. 진정으로 주목을 받으려면 실패에 대해 지속적으로 정확해야 하지만 그렇게 하면 많은 질문이 생깁니다. 왜 아직도 그곳에서 일하고 있나요? 애초에 그것을 예방할 만큼 영향력이 충분하지 않은 이유는 무엇입니까? &amp;quot;내가 그렇게 말했지&amp;quot; 좋은 일을 거의 성취하지 못합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gizmo686:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 또 다른 유형의 &amp;quot;프로젝트를 실패하게 두다&amp;quot;를 보았습니다. 내 경력에서는 대규모 프로젝트의 중간 관리자가 수행했습니다. 본질적으로 그것은 그들이 "우리가 진행하고 있는 더 큰 프로젝트는 아마도 실패할 것 같다"고 말하는 형태를 취합니다. 그렇게 되면 우리 구성 요소가 다음에 어떤 일이 일어나든 유용하게 사용되기를 바랍니다.” 그리고 놀라운 것은 이것이 종종 효과가 있었다는 것입니다. 프로젝트 자체는 실패했지만, 그 프로젝트에서 수행된 대부분의 작업은 여전히 ​​사용되었습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LaFolle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;여기 있는 사람들이 기사나 유사한 기사를 팀과 편안하게 공유할 수 있나요? 나는 그것을 할 수 없고, 그 이유도 잘 모르겠습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;neilv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; &lt;i&gt;당신의 관심은 유한하지만 대기업이 나쁜 아이디어를 만들어내는 능력은 무한합니다. 경험에 비추어 말하면, 이러한 일을 신속하게 중단하는 데 너무 관여하면 세계 상태에 대해 매우 냉소적이 될 수 있습니다. 그리고 이곳은 정말 좋은 곳이 아닙니다.&lt;/i&gt;&lt;p&gt;이것은 나쁜(그리고 사악한) 아이디어를 만들어내는 &lt;i&gt;업계&lt;/i&gt;의 능력에도 적용됩니다.&lt;p&gt;이제 우리는 가장 큰 돈을 벌 수 있는 분야 중 하나이기 때문에 사람들이 나쁘게 생각하고 행동하는 일은 끝이 없습니다.&lt;p&gt;당신은 그 모든 것을 불러내느라 지치게 될 것입니다.&lt;p&gt;예를 들어, 저는 암호화폐에서 완전히 도망쳤습니다. 나쁜 믿음으로 가득 차 있습니다.  하지만 저는 AI를 피할 생각이 없으므로 AI의 학대에 대한 비판을 감수해야 할 것입니다.&lt;p&gt;&amp;gt; &lt;i&gt;핵 옵션은 [...]&lt;/i&gt;&lt;p&gt;그런데 이 관용어를 어떤 맥락에서 사용하는지 주의하세요.  미국 이외의 지역에서는 항상 잘 번역되는 것은 아닙니다.  (어쩌면 최악의 상황 속에서도 그 말이 입밖으로 나오자마자 깨달았다.)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;smrtinsert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;기업 구조에서 실패한 그룹은 높은 가시성을 갖게 되어 승진하게 됩니다.  선배들이 그 사람들에게 돈을 벌게 해주고 있어요!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;keeda:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;역학은 정확히 맞지만 엔지니어들은 이를 '허용'할 수 없습니다. '정치적으로 나쁘다' 프로젝트가 실패하는 이유는 이를 수정하는 것이 실제로 급여 수준보다 높기 때문입니다. 그 책임은 경영진에게 있습니다.&lt;p&gt;엔지니어들&amp;#x27; 역할은 주로 기술 자문, 즉 기술적인 이유로(UX, 아키텍처 등) 나쁜 프로젝트를 호출하는 역할이어야 합니다. 하지만 최고위 엔지니어라도 정치적 문제(제국 건설, 조직 간 내분 등)를 호출하거나 해결할 수 있는 정치적 지위는 말할 것도 없고 기업적 입지도 없습니다. 이러한 갈등을 리더십에 지적할 수 있고 지적해야 하지만(물론 매우 외교적으로) 결과에 대해 책임을 져서는 안 됩니다.&lt;p&gt;그러나 엔지니어로서 여러분은 절대적으로 그래야 합니다. 이러한 역학관계는 귀하의 경력에 &lt;i&gt;영향을 미칠&lt;/i&gt; 것이므로 잘 알고 있어야 합니다. 아무런 영향도 주지 않고 프로젝트가 취소된 경우와 같습니다.&lt;p&gt;제품 팀과 플랫폼 팀 간의 잠재된 영역 전쟁에 대한 예는 누가 정확히 무엇을 소유하는지에 대한 고위 경영진의 매우 명확한 지시를 통해 피할 수 있었을 것입니다. 이것은 아마도 자신의 잔디를 포기한 조직이 대가로 얻는 것에 대한 말 거래와 관련되었을 것입니다. ("왜 그렇게 많은 조직 재편성"이 궁금하신가요? 이것이 바로 이유입니다.) 이것이 발생하지 않은 것은 경영진의 실패입니다. 부분.&lt;p&gt;여담이지만, 이런 일은 모든 대기업에서 일어나는 일이라는 걸 알지만, 어쩐지 Google에서는 훨씬 더 흔한 일인 것 같은데요? 아니면 적어도 Google 직원은 이에 대해 더 개방적입니다. 예: Google의 교훈에 관한 최근 게시물에서 비슷한 내용을 발견했습니다. &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46488819"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46488819&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nitwit005:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;문제는 타이밍인 경향이 있습니다. 프로젝트 소식을 들을 때쯤이면 여러 계층의 경영진, 수석 엔지니어의 설계 승인 등을 통해 승인되는 경우가 많습니다.&lt;p&gt;엔지니어에게 설계를 수정하도록 요청할 수도 있지만 실제로 취소되는 것은 절망적일 수 있습니다. CEO가 승인했다는 메시지를 받게 됩니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mystraline:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 정확히 이 일을 했습니다.&lt;p&gt;상위 경영진은 엔지니어링팀에 문의하지 않고 앱의 geoIP를 차단하는 데 동의했습니다. 이것이 중요한 이유는 GeoIP 차단이 목록과 확률적 차단 목록을 지속적으로 업데이트하는 기껏해야 두더지 잡기에 불과하다는 것입니다. VPN을 사용하면 쉽게 라우팅할 수 있습니다.&lt;p&gt;그들이 승인한 표현은 "최선의 지역 차단"이 아니라 "지역 차단"이었습니다. 클라이언트는 100% 성공률을 기대했습니다.&lt;p&gt;그것이 효과가 없었을 때 경영진은 이를 철회해야 했습니다. 우리는 우리가 한 일이 합리적으로 실행 가능하다는 증거를 보여주었습니다. 이는 마침내 고위 경영진에게 거창한 계획을 세우기 전에 최소한 협의하도록 가르쳤습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wordsunite:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;확실히 내가 놓치지 않는 큰 기술입니다. 스타트업에서는 모든 사람이 회사를 성공시키려고 노력하지만 애완동물 프로젝트를 성공시키려고 노력합니다. 따라서 아키텍처 결정에 대한 조언을 제공하거나 자신이 더 전문적인 분야의 동료 엔지니어를 돕는 것은 종종 환영받습니다. 항상 장단점이 있지만 그런 문화가 훨씬 더 재미있어요. 힘든 날에도 나는 서로 돕고 싶은 사람들과 함께 일하는 것을 좋아합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aurornis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 프로젝트 수명주기의 대부분에서 그것이 "나쁜"지 여부는 매우 주관적이라는 점을 지적하는 것이 중요합니다.&lt;p&gt;이 부분은 아무리 강조해도 지나치지 않습니다.&lt;p&gt;저는 팀 외부의 누군가가 동의하지 않는다는 이유로 우리 작업을 중단시키기 위해 십자군 운동을 벌인 일부 프로젝트에 참여했습니다. 우리가 노력하고 제품을 출시하자 제대로 작동했고 그들은 많은 신뢰를 잃었습니다.&lt;p&gt;평판 자본을 어디에 쓸지 주의하세요.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;x3n0ph3n3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 은행 계좌처럼 영향력을 관리하세요&lt;p&gt;저는 '사회적 자본'이라는 용어를 자주 사용합니다. 지출 방법에 주의해야 합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;senti_sentient:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;프로젝트 실패가 예상되고 아무런 힘도 없다면 비난 게임, 복고, 정치적 혼란이 일어나기 전에 조용히 새로운 역할에 지원하기 시작한다는 것을 경험을 통해 배웠습니다. 그럴 가치가 없습니다. 당신은 단지 직원일 뿐이고 그것은 당신의 회사가 아닙니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alphazard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;기업에는 개인이 실패할 가능성이 있는 프로젝트와 사람에 대해 베팅할 수 있는 방법이 필요합니다.
+대규모 조직에서 발생하는 간접비의 상당 부분은 잘못된 결정이나 일반적으로 잘못된 결정을 내리는 사람들이 권력의 위치에 남아 있기 때문에 발생합니다.&lt;p&gt;말하고 정치적 자본을 위험에 빠뜨리는 대신 단순히 내기를 걸고 업무를 계속할 수 있다고 상상해 보세요.
+리더십은 사람들이 프로젝트에 반대하고 있는지 확인하고 실시간으로 업데이트할 수 있습니다.
+훌륭한 의사 결정자는 결정을 내릴 수 있는 직책이 없더라도 상당한 보너스를 받을 수 있습니다.
+누군가가 베팅을 통해 자신의 관리자가 받는 급여보다 더 많은 수익을 올린다면 조정이 필요한 시점일 수 있습니다.&lt;p&gt;이러한 시스템은 분명히 주주와 일반 직원의 이익에 부합합니다.  그러나 관료들이 대부분의 회사에 대해 갖고 있는 목을 졸라매는 것은 그것이 시행되는 것을 방해할 것입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dwaltrip:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;더 간결하게 말하면:&lt;p&gt;* 시청자를 파악하세요. 상대방이 들을 수 없는 말을 하는 것은 에너지 낭비입니다.&lt;p&gt;* 전투를 신중하게 선택하세요.&lt;p&gt;반면:&lt;p&gt;* 직감을 믿으세요&lt;p&gt;* 도움을 주겠다는 목표를 가지고 진정성 있게 말하세요(설득하지 마세요)&lt;p&gt;* 다른 사람의 행동과 반응에 지나치게 투자하거나 의존하지 마세요. (누군가가 당신을 지배한다면 하기 어려울 수 있습니다.)&lt;p&gt;이러한 것들의 균형을 맞추는 것이 제가 배우고 있는 것입니다…&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ossa-ma:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;'하우스 오브 카드'에 대한 탁월한 조언 그러나 이는 본질적으로 기업 평화주의입니다.&lt;p&gt;다른 환경에서는 단지 '정치적 능력'을 유지하기 위해 돈과 동기가 불타는 것을 지켜볼 여유가 없습니다.&lt;p&gt;(하지만 Lalit은 복잡한 기업 역학을 단일 블로그 게시물에 맞추는 데 매우 능숙합니다.)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aaronbrethorst:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;후배 엔지니어에게 다른 팀과 그 리더에 대해 욕하는 매니저의 판단에 의문을 제기해야 합니다. 저자의 LinkedIn 기록(그의 정보 페이지를 통해 확인 가능)을 살펴보면 Google 내에서 이러한 일이 발생했음이 분명해집니다.&lt;p&gt;이 내용은 관리자의 전문성과 동료와 관련하여 어떤 종류의 행동이 용인되는지에 대해 좋지 않은 내용을 담고 있는 것 같습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dzink:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;한 사람이 이렇게 생각하면 더 많은 사람이 그렇게 생각합니다. 이것은 대규모 조직, 특히 정부 기관에서 일반적입니다. 이유 없이 막대한 비용으로 전체 팀을 운영하는 비용은 팀에서 발생하는 것이 아니라 관리보다 돈이 더 많고 완전히 잘못된 인센티브를 가진 훨씬 더 큰 예산을 가진 사람에 의해 발생하기 때문입니다(내가 관리하는 사람이 많을수록 조직 유형이 더 중요해집니다). 이것은 내부에서 설명되는 조직 괴저이며, 부분적으로는 그것이 어떻게, 왜 발생하는지 설명합니다. 당신이 조직을 이끌고 이 글을 읽고 있다면 이를 측정하고 예방하는 방법을 알아보세요.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BikiniPrince:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“때때로 사람들이 실패하도록 놔둬야 합니다.”라고 말한 내 관리자 중 한 사람이 생각납니다. 일부 사람들을 물에 띄우려면 많은 에너지가 필요합니다. 나는 항상 그들이 수영하는 법을 배우는 것이길 바라지만 때로는 다른 곳에 투자하는 것이 더 나을 때도 있습니다.&lt;p&gt;한 프로젝트는 제가 참여하지 않았으며 제가 알지 못한 채 성공할 수 없었다는 것을 알고 있습니다. 그들은 너무 형편없어서 실제 업무에 대해 아무렇지도 않게 질문을 던질 정도였습니다. &lt;p&gt;경영진이 내 팀을 무시하고 그들의 팀을 칭찬했다는 사실을 알게 되었을 때 저는 그들 모두를 피하기 시작했습니다. 그들은 잘 할 수 없었고 구현도 끔찍했기 때문에 그것은 정말 뺨을 때리는 것입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cm2012:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 기사는 매우 현명하며 회사 내 마케팅 및 기타 노력에 동일하게 적용됩니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jt2190:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 대기업에서는 "나쁜 프로젝트"라고 생각되는 것에 대해 말하는 것은 좋은 일입니다. 그러나 적당히만. 때로는 경청하지 않는 사람들과 논쟁하는 것이 가치가 없다는 것을 깨닫는 것이 선임의 표시입니다. 조언을 구하는 것이 좋습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ajkjk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그것을 죽게 내버려 두는 것은 이기적이고 경력을 최적화하며 비도덕적인 태도입니다. 하지만 개인적인 비용이 들더라도 옳은 것을 옹호하는 것이 더 윤리적입니다. 많은 사람들이 모든 자원은 말할 것도 없고 인생의 몇 년을 낭비하는 것은 피할 가치가 있는 비극입니다.&lt;p&gt;물론 사람의 위험을 감수하는 지혜는 연속체입니다. 어떤 경우에는 그렇기도 하고 어떤 경우에는 그렇지 않습니다. 하지만 .. 윤리적 측면을 완전히 생략하는 것은 나쁜 생각처럼 보입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anarticle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;당신의 회사가 아니라 당신의 문제가 아닙니다. 이 기사에서는 선임 엔지니어가 대부분의 중대형 조직에서 나쁜 아이디어를 저지할 정치적 권한이 없는 경우가 많다는 점을 놓치고 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tyleo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 이에 동의하지 않으며 이 조언은 적극적으로 해로울 수 있다고 생각합니다. 도움을 줄 수 있는 위치에 있을 때 문제를 무시해서는 안 됩니다. 동시에, 다른 사람의 프로젝트로 인해 감정적인 부담을 떠맡아서도 안 됩니다.&lt;p&gt;실패로 향하는 일이 보이면 사람들에게 다른 접근 방식을 고려해 볼 수도 있다는 점을 알려줍니다. 그게 다야. 가혹하게 말할 필요도 없고, 장황하게 말할 필요도 없지만, 열차의 잔해가 펼쳐지는 것을 조용히 지켜보는 것보다 목소리를 내는 것이 더 낫습니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://lalitm.com/post/why-senior-engineers-let-bad-projects-fail/</guid>
+      <pubDate>Thu, 15 Jan 2026 22:33:58 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46640366</comments>
+    </item>
+    <item>
+      <title>우주론에서 펼쳐지는 과학 혁명</title>
+      <link>https://economicsfromthetopdown.com/2026/01/15/an-unfolding-scientific-revolution-in-cosmology/</link>
+      <description>&lt;p&gt;뉴턴의 이론은 운동 연구를 통합한 놀라운 계시였습니다. 알려진 태양계를 살펴보면서 천문학자들은 뉴턴의 방정식이 매우 정밀하게 작동한다는 사실을 발견했습니다. 이론이 잘못된 예측을 할 경우, 어떻게 해야 합니까?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; An Unfolding Scientific Revolution in Cosmology&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46641007"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://economicsfromthetopdown.com/2026/01/15/an-unfolding-scientific-revolution-in-cosmology/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Egor3f:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;공용 IP 없이 2&amp;#x2F;4&amp;#x2F;50 VPS에 $36&amp;#x2F;mo... 좋아, 서비스가 비정기적 사용을 위한 것이라는 생각은 알지만 정지 상태의 시간당 $0.005($3.6&amp;#x2F;mo)도 너무 비싸다고 생각합니다. Hetzner의 동일한 구성은 공용 IPv4 주소를 사용하여 24&amp;#x2F;7 작동 VPS에 대해 단 $4.09&amp;#x2F;mo입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Liftyee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것은 얼마 전에 여기에 있었던 exe.dev와 매우 유사해 보입니다. 어떻게 비교되는지 아는 사람이 있습니까?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://shellbox.dev/</guid>
-      <pubDate>Thu, 15 Jan 2026 20:20:13 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46638629</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jfengel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;다시 MOND라고 말씀해 주세요.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;d_silin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;몇 가지 중요한 피드백&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;AskPhysics&amp;#x2F;comments&amp;#x2F;1lj2k88&amp;#x2F;comment&amp;#x2F;mzh3ngy&amp;#x2F;?context=3" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;AskPhysics&amp;#x2F;댓글&amp;#x2F;1lj2k88&amp;#x2F;댓글...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://economicsfromthetopdown.com/2026/01/15/an-unfolding-scientific-revolution-in-cosmology/</guid>
+      <pubDate>Thu, 15 Jan 2026 23:34:09 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46641007</comments>
     </item>
     <item>
-      <title>Aviator(YC ​​S21), 멀티플레이어 AI 코딩 플랫폼 구축을 위해 채용 중</title>
-      <link>https://www.ycombinator.com/companies/aviator/jobs</link>
-      <description>&lt;p&gt;최신 제품인 Runbooks는 엔지니어링 팀이 자연어 사양 및 공유 컨텍스트를 통해 복잡한 워크플로를 자동화할 수 있게 해주는 협업 AI 에이전트 플랫폼입니다. 며칠이 걸렸던 복잡한 작업 흐름이 몇 분 안에 완료됩니다. 우리는 그 미래를 건설하고 있습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Aviator (YC S21) is hiring to build multiplayer AI coding platform&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46639248"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/aviator/jobs'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.ycombinator.com/companies/aviator/jobs</guid>
-      <pubDate>Thu, 15 Jan 2026 21:00:42 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46639248</comments>
-    </item>
-    <item>
-      <title>Show HN: 키가 크고 얇은 네트워크의 헤세 행렬은 반전하기 쉽습니다.</title>
-      <link>https://github.com/a-rahimi/hessian</link>
-      <description>&lt;p&gt;크고 얇은 네트워크의 헤세 행렬은 쉽게 반전됩니다. 이 패키지는 심층 네트워크의 헤세 행렬의 역수에 벡터를 곱하는 방법을 보여줍니다. 이 시스템을 순진하게 해결하려면 딥 넷의 매개변수 수에 따라 입방체로 확장되는 여러 작업이 필요하며 이는 대부분의 최신 네트워크에서는 실용적이지 않습니다. 예를 들어, 블록이 블록 대각선인 분할 행렬과 블록이 분할 행렬인 삼중 대각선 행렬을 사용합니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: The Hessian of tall-skinny networks is easy to invert&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46638894"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/a-rahimi/hessian'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://github.com/a-rahimi/hessian</guid>
-      <pubDate>Thu, 15 Jan 2026 20:36:10 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46638894</comments>
-    </item>
-    <item>
-      <title>영국 해상풍력 가격, 기록적인 경매에서 가스보다 40% 저렴</title>
-      <link>https://electrek.co/2026/01/14/uk-offshore-wind-record-auction/</link>
-      <description>&lt;p&gt;4기가와트(GW)의 해상 풍력 발전 용량으로 유럽 사상 최대 해상 풍력 경매가 되었습니다. 4GW의 새로운 해상 풍력 발전 용량으로 소비자는 거의 £1를 절약할 수 있습니다. 이번 경매에서는 총 6개의 바닥 고정식 해상 풍력 프로젝트와 2개의 부유식 풍력 프로젝트에 대한 계약이 체결되었습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; UK offshore wind prices come in 40% cheaper than gas in record auction&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46637399"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://electrek.co/2026/01/14/uk-offshore-wind-record-auction/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Tldraw는 AI 슬롭으로 인해 외부 기여를 일시 중지합니다.</title>
+      <link>https://github.com/tldraw/tldraw/issues/7695</link>
+      <description>&lt;p&gt;공개 풀 요청은 기여를 신중하게 검토하고 포함 여부를 심각하게 고려할 것이라는 유지관리자의 약속을 나타냅니다. 현재로서는 대부분의 원치 않는 제출이 검토되지 않을 것이라는 예상 하에 실제로 고려 중인 풀 요청을 먼저 닫고 선택적으로 다시 여는 것을 의미합니다. 운이 좋다면 GitHub는 곧 백업을 열 수 있는 관리 기능을 출시할 예정입니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Tldraw pauses external contributions due to AI slop&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46641042"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/tldraw/tldraw/issues/7695'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fuoqi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;1) 저장 용량이 충분하지 않은 에너지 그리드에 간헐적 발전을 많이 도입합니다.&lt;p&gt;2) 해당 소스에 대한 초과 이익을 효과적으로 보장하는 한계 가격 책정 모델을 사용합니다.&lt;p&gt;3) 정점 발전소의 활용도는 떨어지지만 저장 용량이 충분하지 않기 때문에 여전히 이를 유지해야 합니다.&lt;p&gt;4) 정점 발전소는 낮은 활용도를 상쇄하기 위해 발전 비용을 증가시켜 횡재 이익을 더욱 증가시킵니다.&lt;p&gt;5) 에너지 전송을 처리하려면 더 많은 그리드 용량이 필요합니다. &lt;p&gt;5) ????&lt;p&gt;6) "싼" 전력이 풍부함에도 불구하고 사람들이 전기 요금에 대해 큰 소리로 불평하는 것을 보고 놀란 행동을 하십시오. &lt;p&gt;발전의 간헐성은 외부 효과(CO2 배출과 동일)이므로 이에 따라 가격이 책정되어야 합니다. 사람들은 공급 안정성을 위해 기꺼이 프리미엄을 지불하지만 현재 가격 모델은 이를 고려하지 않습니다. 소비 습관(예: 스마트 그리드, 동적 가격 책정 등)을 바꾸려는 노력은 특히 전기와 같은 필수 자원의 경우 제대로 작동하지 않습니다.&lt;p&gt;혼합의 간헐적 발전의 총 비율에 따라 간헐적 소스에 대해 일종의 가격 페널티가 있어야 한다고 생각합니다. 적어도 그리드 규모의 에너지 저장 기술이 약 일주일 정도의 총 에너지 소비량을 저장할 수 있을 만큼 발전할 때까지는 말입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CrzyLngPwd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;젠장 감사합니다. 저는 100% 전력망에서 벗어났습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;linuxftw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;전체 부문은 10년 내에 정부 구제금융이 필요할 것이다.  이러한 풍력 발전 회사를 운영하는 임원들은 막대한 보너스를 받고 도망갈 것이고, 회사는 채무 불이행을 당할 것이며, 정부는 "우리는 전력이 필요하다!"는 이유로 납세자들에게 은행을 온전하게 만들도록 강요할 것입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wcoenen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 기사는 파업 가격에 대해 이야기하지만 많은 맥락을 제공하지는 않습니다.&lt;p&gt;맥락: 이는 풍력 발전소 운영자가 "차액 계약"을 성사시키기 위한 입찰에 관한 것입니다. 영국 정부가 소유한 법인인 Low Carbon Contracts Company와 협력합니다. 이는 본질적으로 풍력 발전소가 특정 기간 동안 생산할 모든 전기에 대해 MWh당 특정 가격을 고정할 수 있는 보조금 제도입니다. 하지만 경매 낙찰자가 될 만큼 낮은 입찰가를 제시하는 경우에만 가능합니다.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Contracts_for_Difference_(UK_energy)" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Contracts_for_Difference_(UK_e...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cbeach:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Elektrek의 잘못된 보고입니다. 기사에서는 풍력과 가스 비용을 비교했지만 설명이 완전히 실패했습니다.&lt;p&gt;* 기사의 가스 가격에는 정부가 자체 부과한 탄소세가 포함되어 있습니다. 실제 가스 비용(£55)은 Milibad가 풍력발전에 대해 설정한 파업 가격 £91.20보다 훨씬 낮습니다. 그리고 Miliband는 20년 동안 이 끔찍한 가격을 유지했습니다!&lt;p&gt;* 이 견적 가격에는 고려되지 않은 풍력 발전에 대한 막대한 추가 비용이 있습니다. 그리드를 업그레이드해야 합니다. 풍력의 간헐성을 보상하기 위해 고가의 신규 발전 능력을 구축해야 합니다&lt;p&gt;* 명시된 풍력 발전 용량은 이론적 최대치이며 실제 용량은 훨씬 낮습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;관련 항목:&lt;p&gt;&lt;i&gt;영국, 해상 풍력 프로젝트 공급 기록 확보&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46614777"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46614777&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Havoc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이제 영국에 모든 전기를 가장 높은 비용으로 구매하는 미친 시스템이 없었더라면 좋았을 텐데요.&lt;p&gt;즉, 99% 저렴한 RE, 1% 비싼 가스를 구매한다면 더 높은 가스 가격으로 100% 비용을 지불하게 됩니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://electrek.co/2026/01/14/uk-offshore-wind-record-auction/</guid>
-      <pubDate>Thu, 15 Jan 2026 19:00:37 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46637399</comments>
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blibble:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 운이 좋다면 GitHub는 곧 백업을 열 수 있는 관리 기능을 출시할 것입니다.&lt;p&gt;장담할 수는 없습니다&lt;p&gt;SlopHub&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;exactlie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; &amp;lt;멍청이의 갈색과 흰색 그림&amp;gt; clude가 4시간 전에 작업 문제 유형을 추가했습니다&lt;p&gt;이게 풍자인가요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kanzure:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;흥미롭네요. 또 다른 프로젝트에서는 사용자가 문제를 직접 열 수 없도록 중단했습니다. &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46460319"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46460319&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;junon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그들은 README, context.md, 심지어 원사 스크립트를 통해 AI 에이전트를 위한 포괄적인 지침 목록을 작성하여 AI를 초대했습니다. 그들은 무엇을 기대했는가?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sbondaryev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이제 코드를 읽는 것이 실제 작업인 것 같습니다. AI는 즉시 PR을 작성하지만 검토하는 데는 여전히 시간이 걸립니다. 모든 것이 뒤집어졌습니다. 앞으로 더 많은 프로젝트가 진행될 것으로 예상됩니다. 유지관리자는 외부 기여 없이 AI를 직접 사용할 수 있습니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/tldraw/tldraw/issues/7695</guid>
+      <pubDate>Thu, 15 Jan 2026 23:37:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46641042</comments>
     </item>
     <item>
-      <title>Show HN: Tusk Drift – 프로덕션 트래픽을 API 테스트로 전환</title>
-      <link>https://github.com/Use-Tusk/tusk-drift-cli</link>
-      <description>&lt;p&gt;이 CLI는 Tusk Drift SDK 및 Tusk Drift Cloud와 협력하여 로컬 및 CI 테스트 실행을 조정합니다. 엄니/추적 엄니 실행 --trace-file 경로/to/trace. 사용 목록 추적: # 로컬 추적 엄니 목록 엄니 목록 --trace-dir.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Tusk Drift – Turn production traffic into API tests&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46637322"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/Use-Tusk/tusk-drift-cli'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://github.com/Use-Tusk/tusk-drift-cli</guid>
-      <pubDate>Thu, 15 Jan 2026 18:54:10 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46637322</comments>
-    </item>
-    <item>
-      <title>HN에게 물어보세요: 하나의 IP, 전 세계 여러 비현실적인 위치가 내 웹사이트에 접속됩니다.</title>
-      <link>https://news.ycombinator.com/item?id=46636861</link>
-      <description>&lt;p&gt;배경: 저는 전자상거래 웹사이트를 관리하고 있습니다. 이러한 IP 주소에는 역방향 조회를 위한 DNS 레코드가 없으며, cloudflare에서 요청을 매핑하면 하나의 주소가 미국 전역의 여러 데이터 센터에서 요청하는 것으로 표시됩니다. 0시카고, 미국 (ORD)340건 요청새너제이, 미국 (SJC)330건 요청로스앤젤레스, 미국 (LAX)310건 요청애틀랜타, 미국 (ATL)310건요청댈러스포트워스, 미국 (DFW)290건 요청뉴어크, 미국 (EWR)280건 요청워싱턴, 미국 (IAD)230건마이애미, 미국 (MIA)요청 210개 보스턴, 미국(BOS)요청 140개싱가포르, 싱가포르(SIN)요청 130개아이디어 주셔서 감사합니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ask HN: One IP, multiple unrealistic locations worldwide hitting my website&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46636861"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46636861'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>HN 표시: 클라우드 기반 의사결정 테이블 UI를 사용하여 Claude 권한 제어</title>
+      <link>https://github.com/rulebricks/claude-code-guardrails</link>
+      <description>&lt;p&gt;클로드 코드 가드레일 설정. 규칙 만들기 rulebricks로 이동하세요. Claude Code를 다시 시작하면 완료됩니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Control Claude permissions using a cloud-based decision table UI&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46636786"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/rulebricks/claude-code-guardrails'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Oras:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;다른 사람들이 언급했듯이 CloudFlare에서 관찰 가능성 로그를 살펴보고 사용자 에이전트, x-forward-address 및 asn을 확인하세요.&lt;p&gt;그런 다음 쓸모없다고 판단되면 봇 트래픽을 유발하는 ip&amp;#x2F;asn&amp;#x2F;서비스를 차단하세요.&lt;p&gt;일부 봇은 SEO 도구와 관련될 수 있으며 이러한 봇은 CloudFlare에 검색 엔진 최적화 카테고리가 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;teejmya:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;언급되지 않았으므로 먼저 iCloud Private Relay가 활성화된 iOS에서 검색하는 유효한 사용자가 있다고 생각합니다.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;support.apple.com&amp;#x2F;en-us&amp;#x2F;102602" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;support.apple.com&amp;#x2F;en-us&amp;#x2F;102602&lt;/a&gt;&lt;p&gt;내 iPhone에서 이 기능을 활성화했는데 내 IP를 보고하는 웹사이트에 해당 블록이 Cloudflare 또는 Akamai 소유라고 표시됩니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alibarber:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;귀하가 공유한 IP 주소는 CloudFlare IP 주소입니다: &lt;a href="https:&amp;#x2F;&amp;#x2F;bgp.tools&amp;#x2F;prefix&amp;#x2F;173.245.58.0&amp;#x2F;24#asinfo" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;bgp.tools&amp;#x2F;prefix&amp;#x2F;173.245.58.0&amp;#x2F;24#asinfo&lt;/a&gt;&lt;p&gt;아마도 WARP 프록시 제품을 사용하는 사람들로부터 요청을 받고 있다고 말했을 것입니다. 이는 그렇게 거친 것은 아닙니다. 하지만 해당 페이지의 역방향 DNS는 해당 범위가 주로 이름 서버로 가득 차 있음을 시사합니다. 요청을 받기에는 이상할 수 있지만 Cloudflare가 네트워크에서 무엇을 하는지는 모르겠습니다.&lt;p&gt;여러 데이터 센터에 관해서는 하나의 IP 주소가 서로 다른 물리적 위치에 있는 여러 실제 호스트에 애니캐스트될 수 있습니다.&lt;p&gt;예를 들어, 173.245.58.0에 ping을 실행하면 여기 헬싱키에 있는 내 위치에서 11ms 안에 응답을 받습니다. 빛의 속도로 이는 3,300KM(0.011초 * 3x10^8m&amp;#x2F;s)를 이동한다는 의미이며 미국 근처에는 갈 수 없습니다. 다시 말하지만, 서로 다른 위치에서 오는 1개의 IP 주소에 대해서는 흥미로운 것이 없습니다. 원시 로그를 보면 더 많은 단서가 있는 cloudflare의 일부 헤더를 볼 수 있습니다.&lt;p&gt;흥미롭지만 다른 사람들이 언급했듯이 걱정할 가치는 없습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jaboostin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;귀하의 사이트에서 Cloudflare를 사용하고 계십니까? 그렇다면, 보고 있는 IP는 봇의 IP가 아닌 Cloudflare의 IP입니다. Cloudflare가 보내는 헤더(예: x-forwarded-for 및 cf-connecting-ip)를 기록하고 확인해야 합니다.&lt;p&gt;하나의 IP가 여러 위치에서 시작될 수 있는 방법: 애니캐스트.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;matja:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;해당 특정 IP는 bgp[dot]tools 에 의해 애니캐스트로 감지되며 이는 AS13335에서 발표될 가능성이 높으므로 백본 라우터는 발표된 여러 위치로 돌아가는 최상의 경로를 선택합니다.  여러 지리적 위치에서 이러한 IP를 추적하면 RTT가 모든 위치에서 믿을 수 없을 정도로 낮다는 것을 알 수 있습니다(유니캐스트 알림 가정). 이는 애니캐스트의 이점입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;comrade1234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Fail2ban을 설정하고 잊어버리세요. 아니면 저처럼 아침 커피를 마시면서 로그 파일에서 금지 사항이 지나가는 것을 지켜보세요.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Foofoobar12345:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;173.245.58.0은 cloudflare(&lt;a href="https:&amp;#x2F;&amp;#x2F;www.cloudflare.com&amp;#x2F;ips&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.cloudflare.com&amp;#x2F;ips&amp;#x2F;&lt;/a&gt;)의 소유입니다. 아마도 실제 소스 IP(cloudflare가 X-Forwarded-For 헤더에 복사할 IP) 대신 애플리케이션에 접속하는 cloudflare 역방향 프록시의 IP 주소를 추적하고 있을 것입니다.&lt;p&gt;애플리케이션 로그에서 이 IP를 가져온 것 같나요? 봇 트래픽을 추적하려는 경우 Cloudflare에 내장된 분석 도구를 사용하세요.&lt;p&gt;또한 단일 소스 IP는 지리적으로 서로 다른 위치에서 호스팅될 수 있습니다. 이를 애니캐스팅이라고 하며 Cloudflare에서 사용하지만 여기서는 그것이 문제라고 생각하지 않습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blahaj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것이 Cloudflare IP 주소입니다.&lt;p&gt;요청 HTTP 헤더를 살펴보고 내용을 확인하세요.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;superkuh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 하루에 수백 건의 요청&lt;p&gt;이것이 중요합니까? 가정용 케이블 모뎀 연결과 nginx를 실행하는 데스크탑 PC에서 문제 없이 하루에 수백 건의 요청을 처리할 수 있습니다. 사실 나는 56,000일 이후로 그렇게 하고 있습니다. 데이터 센터에 큰 파이프가 있는 실제 서버나 VPS를 사용하면 이는 비용 측면에서 말 그대로 눈에 띄지 않을 것입니다.&lt;p&gt;저는 일반적인 공개 웹 사이트 트래픽에 대한 이러한 반응을 "문제"보다 더 해로운 것으로 특징짓고 싶습니다. 웹 스파이더가 귀하의 공개 웹사이트를 방문한다고 해서 화를 낼 필요는 없습니다. 이것이 바로 공개 웹사이트의 목적입니다.&lt;p&gt;어쨌든 이 어리석은 일을 정말로 설득하고 싶다면 먼저 IP가 있는 ASN부터 찾아보세요. 인터넷을 해석하기 위해 Cloudflare에 의존하지 마세요. 저는 2025년에 오프라인 geo-ip 및 whois db 덤프 세계 지도 시각화 도구를 작성했으며 다음과 같은 리소스를 사용합니다.&lt;p&gt;## RIR whois&amp;#x2F;peering db
-# RIPE NCC &lt;a href="https:&amp;#x2F;&amp;#x2F;ftp.ripe.net&amp;#x2F;ripe&amp;#x2F;dbase&amp;#x2F;split&amp;#x2F;ripe.db.aut-num.gz" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ftp.ripe.net&amp;#x2F;ripe&amp;#x2F;dbase&amp;#x2F;split&amp;#x2F;ripe.db.aut-num.gz&lt;/a&gt;   
-# ARIN &lt;a href="https:&amp;#x2F;&amp;#x2F;ftp.arin.net&amp;#x2F;pub&amp;#x2F;rr&amp;#x2F;arin.db.gz" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ftp.arin.net&amp;#x2F;pub&amp;#x2F;rr&amp;#x2F;arin.db.gz&lt;/a&gt;
-# APNIC &lt;a href="https:&amp;#x2F;&amp;#x2F;ftp.apnic.net&amp;#x2F;apnic&amp;#x2F;whois&amp;#x2F;apnic.db.aut-num.gz" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ftp.apnic.net&amp;#x2F;apnic&amp;#x2F;whois&amp;#x2F;apnic.db.aut-num.gz&lt;/a&gt;
-# LACNIC &lt;a href="https:&amp;#x2F;&amp;#x2F;ftp.lacnic.net&amp;#x2F;lacnic&amp;#x2F;dbase&amp;#x2F;lacnic.db.gz" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ftp.lacnic.net&amp;#x2F;lacnic&amp;#x2F;dbase&amp;#x2F;lacnic.db.gz&lt;/a&gt;
-# AFRINIC &lt;a href="https:&amp;#x2F;&amp;#x2F;ftp.afrinic.net&amp;#x2F;dbase&amp;#x2F;afrinic.db.gz" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ftp.afrinic.net&amp;#x2F;dbase&amp;#x2F;afrinic.db.gz&lt;/a&gt;
-## RIR 위임 파일
-# &lt;a href="https:&amp;#x2F;&amp;#x2F;www-public.telecom-sudparis.eu&amp;#x2F;~maigron&amp;#x2F;rir-stats&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www-public.telecom-sudparis.eu&amp;#x2F;~maigron&amp;#x2F;rir-stats&amp;#x2F;&lt;/a&gt;
-# &lt;a href="https:&amp;#x2F;&amp;#x2F;ftp.afrinic.net&amp;#x2F;pub&amp;#x2F;stats&amp;#x2F;afrinic&amp;#x2F;delegated-afrinic-extended-latest" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ftp.afrinic.net&amp;#x2F;pub&amp;#x2F;통계&amp;#x2F;afrinic&amp;#x2F;delegated-afrinic-...&lt;/a&gt;
-# &lt;a href="https:&amp;#x2F;&amp;#x2F;ftp.apnic.net&amp;#x2F;stats&amp;#x2F;apnic&amp;#x2F;delegated-apnic-extended-latest" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ftp.apnic.net&amp;#x2F;통계&amp;#x2F;apnic&amp;#x2F;delegated-apnic-extended-l...&lt;/a&gt;
-# &lt;a href="https:&amp;#x2F;&amp;#x2F;ftp.arin.net&amp;#x2F;pub&amp;#x2F;stats&amp;#x2F;arin&amp;#x2F;delegated-arin-extended-latest" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ftp.arin.net&amp;#x2F;pub&amp;#x2F;통계&amp;#x2F;arin&amp;#x2F;delegated-arin-extended-...&lt;/a&gt;
-# &lt;a href="https:&amp;#x2F;&amp;#x2F;ftp.lacnic.net&amp;#x2F;pub&amp;#x2F;stats&amp;#x2F;lacnic&amp;#x2F;delegated-lacnic-extended-latest" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ftp.lacnic.net&amp;#x2F;pub&amp;#x2F;stats&amp;#x2F;lacnic&amp;#x2F;delegated-lacnic-ext...&lt;/a&gt;
-# &lt;a href="https:&amp;#x2F;&amp;#x2F;ftp.ripe.net&amp;#x2F;pub&amp;#x2F;stats&amp;#x2F;ripencc&amp;#x2F;delegated-ripencc-extended-latest" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ftp.ripe.net&amp;#x2F;pub&amp;#x2F;stats&amp;#x2F;ripencc&amp;#x2F;delegated-ripencc-ext...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46636861</guid>
-      <pubDate>Thu, 15 Jan 2026 18:25:36 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46636861</comments>
-    </item>
-    <item>
-      <title>나는 프로그래밍에 대해 내가 아는 모든 것을 배웠습니다</title>
-      <link>https://agentultra.com/blog/how-i-learned-everything-i-know/index.html</link>
-      <description>&lt;p&gt;나는 사람들이 서로 다른 전략으로 학습한다는 것을 잘 알고 있습니다. 프로그래밍을 배우기 위해 여전히 LLM이 필요하지 않습니다. 우리는 사람들을 가르치는 일에 흥미를 느낍니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; I Learned Everything I Know About Programming&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46638241"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://agentultra.com/blog/how-i-learned-everything-i-know/index.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;macintux:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;"어떻게" 다 배웠어...&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://agentultra.com/blog/how-i-learned-everything-i-know/index.html</guid>
-      <pubDate>Thu, 15 Jan 2026 19:54:42 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46638241</comments>
-    </item>
-    <item>
-      <title>HN 표시: Munimet.ro – SF 지역 지하철에 대한 ML 기반 상태 페이지</title>
-      <link>https://munimet.ro/</link>
-      <guid isPermaLink="true">https://munimet.ro/</guid>
-      <pubDate>Thu, 15 Jan 2026 18:51:34 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46637283</comments>
-    </item>
-    <item>
-      <title>데이터는 유일한 해자이다</title>
-      <link>https://frontierai.substack.com/p/data-is-your-only-moat</link>
-      <guid isPermaLink="true">https://frontierai.substack.com/p/data-is-your-only-moat</guid>
-      <pubDate>Thu, 15 Jan 2026 18:54:32 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46637328</comments>
-    </item>
-    <item>
-      <title>'ELITE': Palantir 앱 ICE가 습격할 지역을 찾는 데 사용합니다.</title>
-      <link>https://werd.io/elite-the-palantir-app-ice-uses-to-find-neighborhoods-to-raid/</link>
-      <description>&lt;p&gt;이 회사에서 이 제품을 작업한다고 상상해 보세요. 2주 스프린트마다 이 엔진을 개선하는 데 도움이 되는 작업을 수행합니다. 가족에게 무엇을 말합니까?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; ‘ELITE’: The Palantir app ICE uses to find neighborhoods to raid&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46637127"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://werd.io/elite-the-palantir-app-ice-uses-to-find-neighborhoods-to-raid/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 22 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vicpara:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Palantir는 각 클라이언트에 대해 데이터 플랫폼, 수집 및 강화 파이프라인, 사용자 지향 앱을 배포하여 스마트 쿼리와 데이터 탐색을 지원합니다. 플랫폼은 모든 애플리케이션별 데이터를 매우 세분화되고 유연한 온톨로지에 저장합니다. 또한 AI를 사용하여 문서를 강화하고, 기존 문서 간의 링크를 생성하고, 이를 온톨로지의 올바른 위치에 매핑하는 강력한 수집 플랫폼을 갖추고 있습니다. 수집이 완료되면 앱 사용자가 여러 측면을 기반으로 긴 그래프 순회를 수행하는 다차원의 복잡한 검색 쿼리를 사용하여 온톨로지에서 무엇이든 찾을 수 있도록 하는 다중 신호 온톨로지를 갖게 됩니다.&lt;p&gt;이 경우에는 그들이 기술을 제공하고 '클라이언트'가 데이터를 가져온 것 같습니다. '클라이언트' 데이터가 이질적이며, 일단 수집되면 세상에 대한 정교한 관점을 생성하는 여러 중복 소스의 데이터를 포함한다고 예상하는 것이 합리적입니다.&lt;p&gt;이는 쿠키 풀의 작동 방식과 유사하게 작동합니다. 모든 쿠키를 지우고 새로 시작하면 로그인 없이 100개의 웹사이트를 방문할 수 있습니다. 누구도 귀하가 누구인지 알 수 없습니다. 그러나 임의의 웹사이트에 로그인하면 귀하의 이름과 이메일이 해당 쿠키에 할당되며, 이 쿠키는 이전에 함께 연결되었던 이전 100개 세션 전체에 자동으로 전파됩니다. 인터넷은 쿠키 풀 네트워크에서 활동이 없는 지 400일이 지나도 쿠키를 기존 프로필과 비교하는 데 환상적입니다.&lt;p&gt;Palantir도 동일하게 작동합니다. 수집된 이기종 "클라이언트" 데이터 세트에 SSN 또는 "클라이언트"가 이민 상태를 결정하는 데 사용하는 모든 테스트 플래그 규칙을 포함하거나 포함하지 않는 단일 일치 레코드가 있는 경우 Palantir는 해당 테스트 플래그에 대한 신뢰 구간을 구축할 수 있습니다. 한 가지 역사적인 나쁜 행동은 해당 기업에 대한 경고로 이어질 것입니다.&lt;p&gt;소프트웨어 공급업체로서 그들은 기술 역량을 제공합니다. 각 Palantir 클라이언트는 자신의 데이터를 가져옵니다. Postgres에서와 마찬가지로. 클라이언트가 뭔가를 만들고 싶어하고 당신이 그것을 할 수 있다면 그냥 끝내기만 하면 됩니다.&lt;p&gt;인터넷은 결코 잊지 않는다고 말합니다. 이제부터 정부도 과거의 나쁜 행동을 잊지 않을 것이라고 가정해도 무방할 것 같습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mmmlinux:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Palantir 피해 통제는 지난 스레드보다 더 빨리 이 스레드에 도달했습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tamimio:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;오직 바보만이 이 모든 것이 '불법'에 관한 것이라고 생각할 것입니다. 이것은 대량 감시와 "불법"의 전체 인프라입니다. 경찰. 지금은 특정 목표를 쫓을 수도 있지만 완전히 정규화되면 다음은 귀하입니다. 데이터 수집 및 집계부터 Flock 및 Ring과 같은 침입적 감시, AI 및 앱 사용 등 이러한 임무를 위해 신중하게 계획되고 출시됩니다. 이러한 기술과 앱을 구축하는 데 참여한 사람들을 추적할 수 있는 플랫폼이 있어야 합니다. 나는 도덕심이 없고 ELITE 앱이나 Flock Android 시스템 등을 만드는 데 몇 시간을 소비하는 사람을 절대 신뢰하거나 고용하지 않을 것입니다. 이 사람들은 그러한 감시를 가능하게 하는 주체이므로 책임을 져야 합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fudged71:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;다른 회사의 기술 리더 및 채용 관리자에게: 이 글을 읽고 계시다면 귀하의 회사가 도덕적인 이유로 퇴사를 원하는 Palantir 엔지니어를 인터뷰할 것이라고 공개적으로 밝히시기 바랍니다. 명시적인 출구를 만드세요. 떠나는 데 대한 장벽을 낮추십시오. 올바른 일을 하려는 엔지니어들에게 피난처를 제공하는 것을 기술 산업 표준으로 삼으십시오.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elephantum:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Palantir가 유용한 소프트웨어를 만든 것 같군요. 잘하셨습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anon291:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 팔란티르에 대해 강한 감정이 없습니다. 하지만 내가 갖고 있는 것들은 대부분 부정적인 것입니다.&lt;p&gt;그러나 이 나라에서 법적 지위가 없는 사람들을 추방한다는 생각조차 즉시 나치로 낙인찍히는 것은 미친 것 같습니다. 이것은 그 자체로 극단주의이기 때문에 극단주의를 키울 뿐입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;periodjet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;왜 우리 모두는 미묘한 방식으로 생각하는 능력을 잃어버렸습니까? 특히 표면상 똑똑한 사람들로 가득 찬 HN과 같은 포럼에서 목격하는 것은 매우 충격적입니다.&lt;p&gt;ICE가 명확하고 윤리적인 임무를 갖고 있다고 믿는 동시에 변화가 필요한 나쁜 방법을 통해 그 임무를 이행할 것이라고 믿는 것이 가능합니다.&lt;p&gt;사람들이 본질적으로 '불법'으로 표시되어서는 안 된다고 믿는 동시에 출입국 관리 대기열이 존재해야 하고 그것을 건너뛰는 것은 부도덕하고 그래야 한다고 믿는 것도 가능합니다. 불법입니다.&lt;p&gt;기타 등등.&lt;p&gt;완전히 양극화된 신념에 헌신할 필요는 없습니다. 뉘앙스가 가능합니다. 도대체 무엇이 우리를 이렇게 정신을 잃게 만드는 걸까요? 정말 소셜미디어만 그런 걸까요? 목격하는 것이 너무 실망 스럽습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;schnatterer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;404미디어 기사 원본:&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.404media.co&amp;#x2F;elite-the-palantir-app-ice-uses-to-find-neighborhoods-to-raid&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.404media.co&amp;#x2F;elite-the-palantir-app-ice-uses-to-f...&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;wa32f" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;wa32f&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;laweijfmvo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“당신을 위한 추적 앱이지만 나에게는 그렇지 않습니다”&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gnarlouse:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 Palantir가 중산층 이후 사회를 위한 가정부 서비스와 쥐약을 개발하고 있다고 누군가에게 말했습니다. 그들은 나를 믿지 않았습니다. 이것을 보면 정당성이 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;backlava12:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;문제는 불법 이민자들이 전혀 추방되고 있다는 사실에 화가 난 경우 인구의 특정 부분이 있다는 것입니다. 따라서 이와 같은 기사-토론에서 실제로 그렇게 하는 데 사용되는 기술에 대한 우려가 얼마나 되는지, 아니면 불법 추방 기간에 대한 실제 우려가 있는지 잘 모르겠습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;big_toast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 스레드가 다른 스레드처럼 풀리지 않도록 사람들이 이 토론에 더 많은 노력을 들여 게시물을 올릴 수 있나요?&lt;p&gt;이 앱에서 사용하는 특정 제품 라인이 있나요? 어떤 FOIA 법률이 해당 사용에 적용됩니까? 이것은 어떤 종류의 데이터를 제공합니까? 다른 것?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[속박] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46633378"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46633378&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SilverElfin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이번 습격은 무차별적인 호별 습격이겠죠? 이에 대한 충격적인 보고가 많이 있습니다. 예를 들어 ICE 요원이 백인 가족의 집에 나타나 어느 집에 아시아인이 살고 있는지 물어봅니다. 단속은 노골적으로 위헌(수정헌법 4조)이지만 법률과 관계없이 도덕성 측면에서도 훨씬 뛰어납니다. 기술 회사들이 이에 고의로 참여한다는 것은 말도 안되는 일입니다. Palantir는 차기 비GOP 행정부에 의해 범죄 기업으로 취급되어야 하며, 그곳에 있는 모든 사람에게 결과가 있어야 합니다. 다른 사람 말대로 '나는 운송만 담당했다'고만 할 수는 없잖아요.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bradley13:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;스스로에게 물어봐야 할 질문은 다음과 같습니다. 수백만 명의 불법 이민자와 함께 어떻게 추방됩니까? 현장의 현실을 고려하여 더 나은 시스템을 제안하십시오.&lt;p&gt;그리고, "수백만"을 원하지 않는 한, 그 존재를 무시하는 것은 선택 사항이 아닙니다. '수천만'이 된다 또는 그 이상. 또한 바이든과 오바마 치하에서도 대규모 추방이 발생했다는 점에 유의하세요. 그들은 단지 같은 관심을 끌지 못했습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;randommar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아 예, 팔레스타인 사람들을 대상으로 베타 테스트를 거쳤습니다. 세련된 버전을 다른 모든 사람들에게 배송하는 데 얼마나 관대합니까?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mentalfist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Palantir는 창립 이래 미국 정부로부터 약 100억 달러에 달하는 납세자 자금을 추출했습니다. 신의 축복이 미국에 있기를.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drcongo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이미 훌륭한(그렇지 않은 일부) 토론에 대한 훨씬 더 나은 링크: &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46633378"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46633378&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pixelready:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 Palantir에서 일한 적이 없지만 시끄러운 리더십의 악당 미덕 신호를 통과하고 나면 플랫폼 자체에 대해 읽은 모든 보고서는 나에게 강력한 "전형적인 기업 공급업체"라는 느낌을 줍니다. 기관 구매자에게 과대광고된 부진한 소프트웨어 제품은 공급업체가 거래 성사를 위해 영업 및 규정 준수의 미로를 탐색하는 데 능숙하기 때문에 일선 직원의 목을 눌렀습니다.&lt;p&gt;이러한 도구를 사용하는 목표와 동기, 그리고 고도로 통제되어야 하는 데이터(또는 어떤 경우에는 전혀 수집되지 않는 데이터)에 대한 광범위한 액세스 허용이 문제입니다. Palantir에게 그들이 갈망하는 나쁜 놈이라는 신뢰를 주지 말고, 애초에 이와 같은 도구를 원하는 기관으로 이어지는 정책 결정에 집중하십시오.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;phoehne:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;quot;운송만 담당했어요&amp;quot; 변명이 아니었습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hnbad:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;물론 팔란티르죠.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kankerlijer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;좋습니다. 대시보드를 구성했습니다.  나는 무슨 일이 일어나고 있는지 마음에 들지 않지만 이것은 그들이 하고 있는 무서운 기술이 아닙니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://werd.io/elite-the-palantir-app-ice-uses-to-find-neighborhoods-to-raid/</guid>
-      <pubDate>Thu, 15 Jan 2026 18:42:46 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46637127</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iqandjoke:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;passwd, shutdown 등과 같은 중요한 명령이 많이 누락되었습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;threecheese:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 접근 방식이 마음에 듭니다. UI가 있는 것을 찾고 있었지만 기업 규정 준수 관점에서는 그렇지 않았습니다. Claude의 사용량을 확장하면서 권한 확인이 목에 큰 고통이라는 것을 알게 되었습니다. 내 서클에서는 위험한 건너뛰기 권한을 사용하여 Claude Code를 도대체 사용하는 사람을 식별할 수 있습니다. (저는 두꺼운 손가락으로 했지만 오타 없이 수행했기 때문에 자주 필요했습니다.)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bflesch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ublock Origin이 귀하의 웹사이트 &lt;a href="https:&amp;#x2F;&amp;#x2F;rulebricks.com&amp;#x2F;"&gt;https:&amp;#x2F;&amp;#x2F;rulebricks.com&amp;#x2F;&lt;/a&gt;에서 총 10개의 서로 다른 추적 스크립트를 어떻게 차단하는지 이해하기 어렵습니다. 그리고 귀하가 생각해 낼 수 있는 것은 하단에 &amp;quot;이 웹사이트는 사용자 경험을 최적화하기 위해 쿠키를 수집합니다.&lt;p&gt;"쿠키를 수집할 수 있습니까?" 구글이 쿠키를 모아서 돈을 번다고 생각하시나요? 당신은 뻔뻔스럽게 내 얼굴에 거짓말을 하고 있으며 심지어 어두운 패턴을 사용하여 화면 하단에 터무니없는 공식 문장을 숨기고 있습니다. &lt;p&gt;귀사는 왜 그렇게 뻔한 곳에 거짓과 어두운 패턴을 사용하기로 결정했나요? 그것은 신뢰를 약화시킵니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sidgarimella:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;사람들이 자신의 설정에서 PreToolUse 후크를 어떻게 사용하고 있는지 궁금합니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/rulebricks/claude-code-guardrails</guid>
+      <pubDate>Thu, 15 Jan 2026 18:21:12 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46636786</comments>
     </item>
   </channel>
 </rss>
