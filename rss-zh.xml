@@ -6,134 +6,129 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 18 Jan 2026 18:35:37 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Jan 2026 21:23:48 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>高斯泼溅 – A$AP Rocky Helicopter 音乐视频</title>
-      <link>https://radiancefields.com/a-ap-rocky-releases-helicopter-music-video-featuring-gaussian-splatting</link>
-      <description>&lt;p&gt;克里斯告诉我，他多年来一直在跟踪体积性能捕捉，对新兴技术着迷，这些技术可以实现以前不可能实现的视觉效果。这是一个比传统拍摄更类似于模拟的工作流程。 Chris 还发现 Octane 的 Houdini 集成已经成熟，并且 Octane 的早期 splat 支持已经足够支持 relighting。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Gaussian Splatting – A$AP Rocky Helicopter Music Video&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46670024"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://radiancefields.com/a-ap-rocky-releases-helicopter-music-video-featuring-gaussian-splatting'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Flux 2 Klein 纯 C 推理</title>
+      <link>https://github.com/antirez/flux2.c</link>
+      <description>&lt;p&gt;png，然后通过图像到图像生成进行处理。 /flux -d Flux-klein-model -i /tmp/woman. png -S 1705612345 Building 构建时选择后端： make # 显示可用后端 make generic # 纯 C，无依赖项（慢） make blas # BLAS 加速（快约 30 倍） make mps # Apple Silicon Metal GPU（最快，仅限 macOS） 推荐：macOS Apple Silicon：make mps macOS Intel：make blas Linux with OpenBLAS：make blas Linux without OpenBLAS：make generic 对于 make blas Linux，首先安装 OpenBLAS： # Ubuntu/Debian sudo apt install libopenblas-dev # Fedora sudo dnf install openblas-devel 其他目标： make clean # 清理构建工件 make info # 显示可用信息。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Flux 2 Klein pure C inference&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46670279"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/antirez/flux2.c'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noman-land:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;真的很棒的视频。不幸的是，这篇文章的 60% 都超出了我的理解范围。无论如何，我实际上很喜欢阅读这样充满行话的陈述，这些陈述对于初学者来说完全正常，但对于外行人来说完全难以理解。&lt;p&gt;&lt;pre&gt;&lt;code&gt;“然后将这些数据带入 Houdini，后期制作团队使用 CG Nomads GSOP 进行操作和排序，并使用 OTOY 的 OctaneRender 进行最终渲染。由于这种组合，制作团队还能够重新点亮这些标志。”&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rjh29:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;老实说，它看起来像是用旧版本的虚幻引擎渲染的。这可能是一个有意的选择 - 我想知道高斯飞溅看起来有多真实？你能重做灯光、阴影、移除或移动场景的某些部分，同时保留原始的保真度和真实感吗？&lt;p&gt;电视电影制作的方式（从多个角度记录数百个小时的镜头并在后期编辑）我想知道这是否是最终状态。人类的高斯泼溅和其余的绿屏？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yieldcrv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因此，基本上，尽管资源要求较高，例如 30 分钟的镜头需要 10TB 数据，但合成速度更快、更灵活，而且这些资源可以很快删除或移动到云中的长期存储，项目可以继续进行&lt;p&gt;令人着迷的&lt;p&gt;我通常不会阅读此内容并观看视频，但我的 Claude 会话已经在执行计划&lt;p&gt;简单地说，所有演员都以 3D 点进行扫描云系统，然后“NeRF”，这意味着推断有关其转置 3D 模型的任何缺失数据&lt;p&gt;这比尝试逐层组合和放置 2D 演员更容易放入视频中&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;roughly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请务必观看视频本身* - 这确实是一部很棒的作品。能量是疯狂的，它从人类表演的效果和基础性中获得了超现实主义的美丽平衡。&lt;p&gt;*（如果你不喜欢音乐，请将其静音，就像我们其他人如果你抱怨音乐一样）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;daveofiveo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;音乐视频的直接链接：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=g1-46Nu3HxQ" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=g1-46Nu3HxQ&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nodra:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我从来没有想过我会在 HN 上看到任何与 A$AP 相关的内容。我喜欢这个地方。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://radiancefields.com/a-ap-rocky-releases-helicopter-music-video-featuring-gaussian-splatting</guid>
-      <pubDate>Sun, 18 Jan 2026 17:40:55 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46670024</comments>
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;相关：&lt;p&gt;&lt;i&gt;FLUX.2 [Klein]：迈向交互式视觉智能&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46653721"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46653721&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;treksis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与基于 python 的相比，这有多快？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yunnpp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;我相信不使用 Python 堆栈（我不欣赏）的推理系统是一种释放开放模型使用并使 AI 更易于访问的方式。&lt;p&gt;您在这里所说的是您不欣赏不使用 Python 堆栈的系统，我认为这与您想说的相反。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adefa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我上个月进行了类似的实验，并将 Qwen 3 Omni 移植到 llama cpp。我能够在不到一周的时间内完成 GGUF 转换、量化以及所有输入和输出模式的工作。我将该作品作为 PR 提交到代码库，可以理解的是，它被拒绝了。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ggml-org&amp;#x2F;llama.cpp&amp;#x2F;pull&amp;#x2F;18404" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ggml-org&amp;#x2F;llama.cpp&amp;#x2F;pull&amp;#x2F;18404&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;TrevorJS&amp;#x2F;Qwen3-Omni-30B-A3B-GGUF" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;TrevorJS&amp;#x2F;Qwen3-Omni-30B-A3B-GGUF&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;csto12:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为一个不使用 C 语言编写代码并进行更多分析工作 (SQL) 的人，这里生成的代码是“生产级”吗？我听到的关于 llms 的主要批评之一是它们往往会生成您不想维护的代码，这里是这种情况吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;neomantra:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感谢您分享此内容 - 我很欣赏您在自述文件中的动机。&lt;p&gt;我自己一直在尝试做的一个建议是包含一个 PROMPTS.md 文件。  由于您的目的是共享和教育，因此它可以帮助其他人了解经验丰富的开发人员正在使用哪些方法，即使您只是在弄清楚。&lt;p&gt;人们可以使用 Claude hook 来确定性地维护这一点。  我在 AGENTS.md 中指示他们可以读取但不能写入。  这对于在法学硕士之间切换也很有帮助，让他们了解你一直在做的事情的背景。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaway2027:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果我要求克劳德做同样的事情，我也可以把麻省理工学院的许可证写上我的名字吗？ &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;black-forest-labs&amp;#x2F;flux2" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;black-forest-labs&amp;#x2F;flux2&lt;/a&gt; 显然使用 Apache 许可证。我知道这并不重要，只要它是宽容的和公开的，人们就不在乎它只是迂腐，但仍然如此。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;antirez:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该主题的读者可能会感兴趣的事情：只有当我开始告诉 Opus 它&lt;i&gt;需要&lt;/i&gt;获取包含所有实现说明的文件，并积累我们在开发过程中发现的所有内容后，这个项目才有可能实现。而且，该文件有明确的指示进行更新，并在上下文压缩后尽快处理。这使得 Opus 能够在合理的时间内完成如此大的编码任务，而不会失去踪迹。检查 GitHub 存储库中的文件 IMPLMENTATION_NOTES.md 以获取更多信息。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;d_watt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于使用法学硕士转译为不同语言的元实验，您对结果有何感受？您将来会再次执行相同的过程吗？&lt;p&gt;最近，我在自己的项目中遇到了一些时刻，因为我解决了一些瓶颈，在这些瓶颈中，我拿走了项目的整个部分并说“用 Rust 重写”克劳德（Claude）并通过 0 镜头重写（最近是一些视频恢复程序）获得了巨大的加速，但随后我得到了一个输出产品，在我的家庭实验室设置之外我不愿意保证。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reactordev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这既令人敬畏又令人恐惧。是的，现在我们可以将图像生成嵌入到游戏引擎和 Photoshop 等中，或者构建我们自己的应用程序。另一方面，我们可以将图像生成包含在任何内容中......&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/antirez/flux2.c</guid>
+      <pubDate>Sun, 18 Jan 2026 18:01:58 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46670279</comments>
     </item>
     <item>
-      <title>社交文件系统</title>
-      <link>https://overreacted.io/a-social-filesystem/</link>
-      <description>&lt;p&gt;应用程序代表您创建和读取文件，但文件不属于应用程序。为了可靠地做到这一点，应用程序需要结构化您的文件。在这种范例中，应用程序对文件做出反应。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A Social Filesystem&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46665839"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://overreacted.io/a-social-filesystem/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;geokon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是对 AT 的一个很好的介绍（尽管我觉得它可以更短一些）&lt;p&gt;整个事情似乎有点过度设计，关注点分离很差。&lt;p&gt;感觉扁平化设计并将所有内容嵌入记录中会更聪明。然后可以在此基础上构建其他层&lt;p&gt;使每条记录都包含作者的公钥（或签名？）。您需要指向的任何内容要么只给出其哈希值，要么给出哈希值+作者公钥。这样你就可以完全消除这个愚蠢的文件系统层次结构。其他所有内容都将其嵌入记录中。&lt;p&gt;词典和集合只是记录中的一个字段。反向查找哈希值以查找它是什么，这也是一个单独的问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Jonovono:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不记得有多少次我读过一篇文章，非常喜欢它，然后看到它是丹写的；）总是很高兴！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;metabagel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这与 SOLID 项目有何关系？&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;solidproject.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;solidproject.org&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ninkendo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;当伟大的思想家思考问题时，他们开始看到模式。他们研究了人们互相发送文字处理文件的问题，然后他们研究了人们互相发送电子表格的问题，他们意识到有一个普遍的模式：发送文件。这已经是一个抽象层次了。然后它们又上升了一个层次：人们发送文件，但网络浏览器也“发送”网页请求。当您考虑一下时，调用对象上的方法就像向对象发送消息一样！又是同样的事情！这些都是发送操作，所以我们聪明的思想家发明了一种新的、更高的、更广泛的抽象，称为消息传递，但现在它变得非常模糊，没有人真正知道他们在说什么。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.joelonsoftware.com&amp;#x2F;2001&amp;#x2F;04&amp;#x2F;21&amp;#x2F;不要让建筑宇航员吓到你&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.joelonsoftware.com&amp;#x2F;2001&amp;#x2F;04&amp;#x2F;21&amp;#x2F;不要让建筑师...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;catapart:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是啊是啊，每个人都加入 AT 协议，这样 bluesky 组织就可以快速将所有这些肮脏的用户从他们自己的服务器上删除（这要花钱），同时仍然保留原来的、最大的、目前唯一的门户来实际发布内容（这可以赚钱 [0]）。让他们从技术“创新”中获利这是模仿活动酒吧的 6 个间接级别。&lt;p&gt;如果他们是正派的人，那将是一回事。但如果他们会被那些扼杀推特的假自由主义胡言乱语所毒害，我认为支持他们的协议没有任何价值。总是有另一种协议。&lt;p&gt;但假设我愿意参与并支持该协议，他们仍然没有解决其他人也没有解决的实际问题：您的数据存在于其他地方。除非有一台服务器可以带回家并通过我可以使用电视遥控器进行设置的方式插入，否则您将无法将大多数人转移到“私人”服务器。数据存储。你只需改变哪个大型组织正在利用它们。&lt;p&gt;我知道，我知道：硬件是个混蛋，我什至推销的设备类型似乎是一个昂贵的无用功。但这就是生意，如果你不解决这个问题，你就没有煽动真正的变革；你假装我们可以通过算法摆脱晚期资本主义，这是在拍拍自己。&lt;p&gt;[0] *可能&amp;#x2F;最终&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elbci:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;同意！社交媒体贡献作为您系统上的文件：由您拥有，提供给应用程序。就像 .svg 规范允许在 inkscape 或 illustrator 中编辑一样，我的计算机上的帖子可以在 mastodon 或 bluesky 或完全分布式的 p2p 网络上移植。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://overreacted.io/a-social-filesystem/</guid>
-      <pubDate>Sun, 18 Jan 2026 08:18:36 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46665839</comments>
+      <title>破解齐默尔曼电报 (2018)</title>
+      <link>https://medium.com/lapsed-historian/breaking-the-zimmermann-telegram-b34ed1d73614</link>
+      <guid isPermaLink="true">https://medium.com/lapsed-historian/breaking-the-zimmermann-telegram-b34ed1d73614</guid>
+      <pubDate>Sun, 18 Jan 2026 19:19:48 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46671174</comments>
     </item>
     <item>
-      <title>重叠标记</title>
-      <link>https://en.wikipedia.org/wiki/Overlapping_markup</link>
-      <description>&lt;p&gt;具有重叠标记的文档不能表示为树。非连续重叠可能需要文档碎片。 [14] Text Encoding Initiative 作为一种基于 XML 的标记方案，不能直接表示重叠标记。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Overlapping Markup&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46666650"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://en.wikipedia.org/wiki/Overlapping_markup'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>斯特林循环机分析</title>
+      <link>https://ohioopen.library.ohio.edu/opentextbooks/9/</link>
+      <description>&lt;p&gt;第四章：理想绝热分析​​ 我们发现理想等温分析预测斯特林发动机的热交换器是多余的，因此我们不能认真地使用这个模型来预测实际机器的理想性能。该学习资源包括一组用于模拟特定斯特林发动机配置的教程 MATLAB 计算机程序模块。 zip（海 = 斯特林发动机分析）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Stirling Cycle Machine Analysis&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46671982"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://ohioopen.library.ohio.edu/opentextbooks/9/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://ohioopen.library.ohio.edu/opentextbooks/9/</guid>
+      <pubDate>Sun, 18 Jan 2026 20:45:54 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46671982</comments>
+    </item>
+    <item>
+      <title>Show HN：Lume 0.2 – 通过无人值守设置构建和运行 macOS VM</title>
+      <link>https://cua.ai/docs/lume/guide/getting-started/introduction</link>
+      <description>&lt;p&gt;LumeGuide入门什么是 Lume。 lume create test-vm --os macos --ipswlatest lume run test-vm 具有 HTTP API 的单个二进制文件。自动化 macOS 任务 - 将 Lume 与无人值守设置相结合以创建预配置的虚拟机。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Lume 0.2 – Build and Run macOS VMs with unattended setup&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46670181"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://cua.ai/docs/lume/guide/getting-started/introduction'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tannhaeuser:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请注意，维基百科文章正确地指出 SGML CONCUR 的使用并不常见，但与重叠标记的规定替代方案相比，它基本上是唯一可以用作文本编辑器的实际标记语言的语言。它看起来像这样：&lt;p&gt;&lt;pre&gt;&lt;code&gt; &lt;!doctype d -- element decls for a, b ... --&gt;
-    &lt;!doctype e -- a, x ... 的元素声明 --&gt;
-    &amp;lt;(d|e)a&amp;gt;
-      &amp;lt;(d)b&amp;gt;bla bla &amp;lt;(e)x&amp;gt;bla &amp;lt;&amp;#x2F;(d)b&amp;gt; bla&amp;lt;&amp;#x2F;(e)x&amp;gt;
-    &amp;lt;&amp;#x2F;(d|e)a&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-其中第三个“bla”是span 是用重叠标记的。&lt;p&gt;基本上，如果您想知道的话，SGML CONCUR 是需要指定结束元素标记中的元素名称的唯一原因。在严格嵌套标记（XML）中，它始终必须引用最近打开的起始元素标记，因此它是多余的。 SGML 实际上有“&amp;lt;&amp;#x2F;&amp;gt;”但它没有变成 XML。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://en.wikipedia.org/wiki/Overlapping_markup</guid>
-      <pubDate>Sun, 18 Jan 2026 10:37:59 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46666650</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whinvik:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很抱歉问了这个天真的问题，但特别是在沙盒上运行 Claude 时，为什么人们决定使用 lume 而不是在 Docker 上运行它？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://cua.ai/docs/lume/guide/getting-started/introduction</guid>
+      <pubDate>Sun, 18 Jan 2026 17:53:21 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46670181</comments>
     </item>
     <item>
-      <title>龙虾首页如何运作</title>
-      <link>https://atharvaraykar.com/lobsters/</link>
-      <description>&lt;p&gt;顺序 \( \textbf{order} \) 的值源自故事获得的参与度。这主要是通过振动编码的，我验证结果是否与算法匹配。随着时间的推移，年龄总是在点赞数中占主导地位，所以没有哪个故事能真正在头版停留那么久。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; How the Lobsters front page works&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46669996"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://atharvaraykar.com/lobsters/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>显示 HN：Xenia – 使用自定义 Python 引擎构建的等宽字体</title>
+      <link>https://github.com/Loretta1982/xenia</link>
+      <description>&lt;p&gt;xenia monofont 我做这个是因为 monofont 不应该是丑陋的。享受吧：）安装下载xenia_regular。 ）或终端，将字体设置为 xenia 功能 700 多个字形：对符号和数学的深入支持。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Xenia – A monospaced font built with a custom Python engine&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46666661"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/Loretta1982/xenia'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aurornis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是对算法的一个很好的探索。根据我的经验，Lobsters 比 HN 更积极地以更固执己见的方式参与调解。这里所谓的审核大部分是通过标记和投票由用户驱动的，而在龙虾上，版主向网站注入了更多固执己见的风格。例如，要求所有有关 AI 的故事都带有“vibecoding”标签，尽管其中很少有关于 vibecoding 的。&lt;p&gt;理论上，Lobsters 审核日志也是公开的，但实际上，当有人被禁止时，如果你试图找到触发禁止的帖子，它会被管理员编辑掉，并替换为他们对后续评论中所说内容的看法。在看到有人因为一条相当善意的评论而被禁止后，我就不再访问了，这些评论被模组编辑掉了，然后声称它说了一些关于文化战争话题的令人震惊的事情，但事实并非如此。&lt;p&gt;如果你收到足够多的反对票，该网站还会在你的页面顶部放置一个横幅。横幅的最后一句话邀请您删除您的帐户（或者过去确实如此）。实际上，如果您评论的内容不是网站上流行和接受的观点，无论多么外交，您最终都可能会在页面视图中停留一段时间。该网站有一些知名度高、有价值的贡献者，因为发布信息丰富的内容而被困在这个横幅上，但还是引发了一些反对，因此放弃了该网站。&lt;p&gt;这是一个有趣的网站，但根据我的经验，算法只是其中的一小部分。那里的经历甚至比 HN 更倾向于群体思维和“正确”的观点，而不同的观点则更不受欢迎。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andy99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最近了解到小熊博客（一个小型​​博客平台，其帖子经常出现在 HN 上）有一个带有首页样式排名的“发现”部分。他们的算法在页面&lt;p&gt;&lt;pre&gt;&lt;code&gt;这个页面是根据以下算法进行排名的：
-  分数 = log10(U) + (S &amp;#x2F; (B * 86,400))
-
-  哪里，
-  U = 帖子的点赞数
-  S = 自 2020 年 1 月 1 日以来的秒数
-  B = 浮力调节器（当前为 14）
-&lt;/code&gt;&lt;/pre&gt;
-请参阅&lt;a href="https:&amp;#x2F;&amp;#x2F;bearblog.dev&amp;#x2F;discover&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;bearblog.dev&amp;#x2F;发现&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elphard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;被邀请加入龙虾有多难？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;written-beyond:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;HN 首页如何运作？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://atharvaraykar.com/lobsters/</guid>
-      <pubDate>Sun, 18 Jan 2026 17:38:22 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46669996</comments>
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WillAdams:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么这样做而不是仅仅使用 METAFONT&amp;#x2F;METAPOST&amp;#x2F;METATYPE1 ？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lemontheme:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“a”和“o”；有点相似，但总而言之，我可以看到自己在尝试这一点。让我想起了一些 Comic Code 和 Maple Mono。感谢分享！&lt;p&gt;不过这篇文章有一些奇怪的地方。将此视为善意的反馈。&lt;p&gt;- 新帐户。之前没有提交或评论。&lt;p&gt;- 新的 Github 帐户。之前没有活动。&lt;p&gt;- 提到自定义引擎（酷！），但省略任何细节。&lt;p&gt;- 称其他单色字体“丑陋”；拒绝详细说明。&lt;p&gt;- 基于兴趣的发布感觉就像参与农业。完成后请告诉我。然后我会判断我是否感兴趣。&lt;p&gt;- 常规重量是免费的。这意味着将支付其他重量。没关系。我很乐意为字体付费。但我不太可能认真尝试没有粗体和斜体的字体。&lt;p&gt;抱歉，如果这听起来很刺耳。我祝你一切顺利！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ako:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是否相关：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.paratype.com&amp;#x2F;fonts&amp;#x2F;pt&amp;#x2F;xenia" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.paratype.com&amp;#x2F;fonts&amp;#x2F;pt&amp;#x2F;xenia&lt;/a&gt; 吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;grilledchickenw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您能否分享有关此自定义 python 程序引擎的更多信息？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xandrius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我发现“我”是看起来非常令人痛苦。&lt;p&gt;还想看到更多例子，比如包括这个深入的数学。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fimdomeio:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我建议使用不同大小的字体制作屏幕截图。我想要的第一件事就是了解它在小尺寸下的外观。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/Loretta1982/xenia</guid>
+      <pubDate>Sun, 18 Jan 2026 10:39:52 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46666661</comments>
     </item>
     <item>
-      <title>孩子们的罪孽（阿德里安·柴可夫斯基）</title>
-      <link>https://asteriskmag.com/issues/07/sins-of-the-children</link>
-      <description>&lt;p&gt;它用八条腿跳跃并落下，这些腿一定是卓越的减震器。螯肢动物的生命并没有正面或背面，而是围绕腿的中心而建。那时我们更关心它对梅里特的影响。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Sins of the Children (Adrian Tchaikovsky)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46669663"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://asteriskmag.com/issues/07/sins-of-the-children'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://asteriskmag.com/issues/07/sins-of-the-children</guid>
-      <pubDate>Sun, 18 Jan 2026 17:08:58 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46669663</comments>
-    </item>
-    <item>
-      <title>美国正在慢慢步入一场综合市场灾难</title>
-      <link>https://www.msn.com/en-us/money/markets/america-is-slow-walking-into-a-polymarket-disaster/ar-AA1Upfdb</link>
-      <guid isPermaLink="true">https://www.msn.com/en-us/money/markets/america-is-slow-walking-into-a-polymarket-disaster/ar-AA1Upfdb</guid>
-      <pubDate>Sun, 18 Jan 2026 18:20:25 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46670524</comments>
-    </item>
-    <item>
-      <title>2026年停止使用MySQL，它不是真正的开源</title>
-      <link>https://optimizedbyotto.com/post/reasons-to-stop-using-mysql/</link>
-      <description>&lt;p&gt;第一个实际的新主要版本是 MySQL 8。许多人还报告了较新 MySQL 版本的性能下降，例如下面由著名 MySQL 性能专家 Mark Callaghan 进行的基准测试显示，在写入繁重的工作负载上 MySQL 9。由于较新的 MySQL 版本弃用了许多功能，许多用户还抱怨 MySQL 5 的性能明显下降。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Stop using MySQL in 2026, it is not true open source&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46669289"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://optimizedbyotto.com/post/reasons-to-stop-using-mysql/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Show HN: HTTP:COLON – 快速 HTTP 标头/指令检查器和参考</title>
+      <link>https://httpcolon.dev/</link>
+      <description>&lt;p&gt;GETPOSTPUTDELETETABGO © 2023 HTTP:COLON // 保留所有权利✨ 旧金山制造HTTP:DOCS 什么是 HTTP 标头。 HTTP 标头是 HTTP 协议的基本组成部分，HTTP 协议是互联网的支柱。此外，HTTP 标头在 API 集成中发挥着关键作用，允许开发人员与外部服务和系统进行通信。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: HTTP:COLON – A quick HTTP header/directive inspector and reference&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46670290"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://httpcolon.dev/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;logifail:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在这里愉快地在生产中使用 MariaDB（与 Debian 一起打包）...&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;antonvs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谁还在后端使用 MySQL？大多数 Linux 发行版都附带 MariaDB。是Windows服务器吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dcmatt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不会停止使用它，因为它不是“真正的开源”。我将停止使用它，因为那里有更好的数据库。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bratao:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;根据我的经验，MariaDB 不一定比 MySQL 更好。 8.x 系列带来了许多有趣的功能。我梦想切换到 Postgres，并且每年都会尝试，但对于我的用例来说，MySQL 仍然优越（大文本有 100Bi+ 行，并且经过大量修改 - 我也空间有限 - 所以我需要数据压缩，而 VACUUM 不好。）&lt;p&gt;percona 分布非常好！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dfajgljsldkjag:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作者的说法是正确的，使用率正在下降，但这实际上与它是否开源无关。无论使用何种许可证，技术总是会被替换。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://optimizedbyotto.com/post/reasons-to-stop-using-mysql/</guid>
-      <pubDate>Sun, 18 Jan 2026 16:43:44 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46669289</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;php-3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嘿嘿。真的很棒的作品，喜欢这个设计。&lt;p&gt;也许你对我的反馈有什么想法：
+如果我能保存我最喜欢的东西那就太酷了，所以我只能回来并看到始终相同的东西。你怎么认为？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://httpcolon.dev/</guid>
+      <pubDate>Sun, 18 Jan 2026 18:03:03 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46670290</comments>
     </item>
     <item>
-      <title>普渡大学以不成文政策阻止许多中国研究生入学</title>
-      <link>https://www.science.org/content/article/purdue-blocks-admission-many-chinese-grad-students-unwritten-policy</link>
-      <guid isPermaLink="true">https://www.science.org/content/article/purdue-blocks-admission-many-chinese-grad-students-unwritten-policy</guid>
-      <pubDate>Sun, 18 Jan 2026 15:55:26 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46668801</comments>
+      <title>进化的释放 (2018)</title>
+      <link>https://aeon.co/essays/science-in-flux-is-a-revolution-brewing-in-evolutionary-theory</link>
+      <description>&lt;p&gt;这是不应该发生的。许多数据表明进化比我们曾经假设的更复杂。他坚持认为，科学家应该努力进行可能会证伪他们理论的关键实验。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Evolution Unleashed (2018)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46671191"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://aeon.co/essays/science-in-flux-is-a-revolution-brewing-in-evolutionary-theory'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://aeon.co/essays/science-in-flux-is-a-revolution-brewing-in-evolutionary-theory</guid>
+      <pubDate>Sun, 18 Jan 2026 19:21:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46671191</comments>
+    </item>
+    <item>
+      <title>警方投资数百万美元购买神秘电话追踪软件，但未透露其用途</title>
+      <link>https://www.texasobserver.org/texas-police-invest-tangles-sheriff-surveillance/</link>
+      <guid isPermaLink="true">https://www.texasobserver.org/texas-police-invest-tangles-sheriff-surveillance/</guid>
+      <pubDate>Sun, 18 Jan 2026 21:05:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46672150</comments>
+    </item>
+    <item>
+      <title>Echo Chess：寻求可解性 (2023)</title>
+      <link>https://web.archive.org/web/20230920164939/https://samiramly.com/chess</link>
+      <description>&lt;p&gt;但人们将其与国际象棋联系起来有什么问题呢？棋子是一种通用语言。很快，“游戏”看起来就更像这样了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Echo Chess: The Quest for Solvability (2023)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46666574"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://web.archive.org/web/20230920164939/https://samiramly.com/chess'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当时讨论的内容：&lt;p&gt;&lt;i&gt;Echo Chess：对可解性的探索&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=37327895"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=37327895&lt;/a&gt; - 2023 年 8 月（106 条评论）&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://web.archive.org/web/20230920164939/https://samiramly.com/chess</guid>
+      <pubDate>Sun, 18 Jan 2026 10:24:55 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46666574</comments>
     </item>
   </channel>
 </rss>

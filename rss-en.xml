@@ -6,128 +6,122 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Sun, 18 Jan 2026 18:35:37 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Jan 2026 21:23:48 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>Gaussian Splatting – A$AP Rocky Helicopter Music Video</title>
-      <link>https://radiancefields.com/a-ap-rocky-releases-helicopter-music-video-featuring-gaussian-splatting</link>
-      <description>&lt;p&gt;Chris told me he’d been tracking volumetric performance capture for years, fascinated by emerging techniques that could enable visuals that simply weren’t possible before. It’s a workflow that more closely resembles simulation than traditional filming. Chris also discovered that Octane’s Houdini integration had matured, and that Octane’s early splat support was far enough along to enable relighting.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46670024"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://radiancefields.com/a-ap-rocky-releases-helicopter-music-video-featuring-gaussian-splatting'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Flux 2 Klein pure C inference</title>
+      <link>https://github.com/antirez/flux2.c</link>
+      <description>&lt;p&gt;png, and later processed with image to image generation via. /flux -d flux-klein-model -i /tmp/woman. png -S 1705612345 Building Choose a backend when building: make # Show available backends make generic # Pure C, no dependencies (slow) make blas # BLAS acceleration (~30x faster) make mps # Apple Silicon Metal GPU (fastest, macOS only) Recommended: macOS Apple Silicon: make mps macOS Intel: make blas Linux with OpenBLAS: make blas Linux without OpenBLAS: make generic For make blas on Linux, install OpenBLAS first: # Ubuntu/Debian sudo apt install libopenblas-dev # Fedora sudo dnf install openblas-devel Other targets: make clean # Clean build artifacts make info # Show availabl.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46670279"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/antirez/flux2.c'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noman-land:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Really amazing video. Unfortunately this article is like 60% over my head. Regardless, I actually love reading jargon-filled statements like this that are totally normal to the initiated but are completely inscrutable to outsiders.&lt;p&gt;&lt;pre&gt;&lt;code&gt;    &amp;quot;That data was then brought into Houdini, where the post production team used CG Nomads GSOPs for manipulation and sequencing, and OTOY’s OctaneRender for final rendering. Thanks to this combination, the production team was also able to relight the splats.&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rjh29:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;To be honest it looks like it was rendered in an old version of Unreal Engine. That may be an intentional choice - I wonder how realistic guassian splatting can look? Can you redo lights, shadows, remove or move parts of the scene, while preserving the original fidelity and realism?&lt;p&gt;The way TV&amp;#x2F;movie production is going (record 100s of hours of footage from multiple angles and edit it all in post) I wonder if this is the end state. Gaussian splatting for the humans and green screens for the rest?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yieldcrv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;so basically despite the higher resource requirements like 10TB of data for 30 minutes of footage, the compositing is so much faster and more flexible and those resources can be deleted or moved to long term storage in the cloud very quickly and the project can move on&lt;p&gt;fascinating&lt;p&gt;I wouldn&amp;#x27;t have normally read this and watched the video, but my Claude sessions were already executing a plan&lt;p&gt;the tl;dr is that all the actors were scanned in a 3D point cloud system and then &amp;quot;NeRF&amp;quot;&amp;#x27;d which means to extrapolate any missing data about their transposed 3D model&lt;p&gt;this was then more easily placed into the video than trying to compose and place 2D actors layer by layer&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;roughly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Be sure to watch the video itself* - it’s really a great piece of work. The energy is frenetic and it’s got this beautiful balance of surrealism from the effects and groundedness from the human performances.&lt;p&gt;* (Mute it if you don’t like the music, just like the rest of us will if you complain about the music)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;daveofiveo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Direct link to the music video: &lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=g1-46Nu3HxQ" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=g1-46Nu3HxQ&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nodra:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Never did I think I would ever see anything close to related to A$AP on HN. I love this place.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://radiancefields.com/a-ap-rocky-releases-helicopter-music-video-featuring-gaussian-splatting</guid>
-      <pubDate>Sun, 18 Jan 2026 17:40:55 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46670024</comments>
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Related:&lt;p&gt;&lt;i&gt;FLUX.2 [Klein]: Towards Interactive Visual Intelligence&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46653721"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46653721&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;treksis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;how fast is this compare to python based?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yunnpp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; I believe that inference systems not using the Python stack (which I do not appreciate) are a way to free open models usage and make AI more accessible.&lt;p&gt;What you&amp;#x27;re saying here is that you do not appreciate systems not using the Python stack, which I think is the opposite of what you wanted to say.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adefa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I ran a similar experiment last month and ported Qwen 3 Omni to llama cpp. I was able to get GGUF conversion, quantization, and all input and output modalities working in less than a week. I submitted the work as a PR to the codebase and understandably, it was rejected.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ggml-org&amp;#x2F;llama.cpp&amp;#x2F;pull&amp;#x2F;18404" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ggml-org&amp;#x2F;llama.cpp&amp;#x2F;pull&amp;#x2F;18404&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;TrevorJS&amp;#x2F;Qwen3-Omni-30B-A3B-GGUF" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;TrevorJS&amp;#x2F;Qwen3-Omni-30B-A3B-GGUF&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;csto12:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;As someone who doesn’t code in C and does more analytics work (SQL), is the code generated here “production grade?” One of the major criticisms I hear about llms is they tend to generate code that you wouldn’t want to maintain, is that the case here?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;neomantra:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Thanks for sharing this — I appreciate your motivation in the README.&lt;p&gt;One suggestion, which I have been trying to do myself, is to include a PROMPTS.md file.  Since your purpose is sharing and educating, it helps others see what approaches an experienced developer is using, even if you are just figuring it out.&lt;p&gt;One can use a Claude hook to maintain this deterministically.  I  instruct in AGENTS.md that they can read but not write it.  It’s also been helpful for jumping between LLMs, to give them some background on what you’ve been doing.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaway2027:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;If I asked Claude to do the same can I also just put MIT license on it with my name? &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;black-forest-labs&amp;#x2F;flux2" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;black-forest-labs&amp;#x2F;flux2&lt;/a&gt; uses Apache License apparently. I know it doesn&amp;#x27;t matter that much and as long as it&amp;#x27;s permissive and openly available people don&amp;#x27;t care it&amp;#x27;s just pedantics but still.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;antirez:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Something that may be interesting for the reader of this thread: this project was possible only once I started to tell Opus that it &lt;i&gt;needed&lt;/i&gt; to take a file with all the implementation notes, and also accumulating all the things we discovered during the development process. And also, the file had clear instructions to be taken updated, and to be processed ASAP after context compaction. This kinda enabled Opus to do such a big coding task in a reasonable amount of time without loosing track. Check the file IMPLEMENTATION_NOTES.md in the GitHub repo for more info.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;d_watt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Regarding the meta experiment of using LLMs to transpile to a different language, how did you feel about the outcome &amp;#x2F; process, and would you do the same process again in the future?&lt;p&gt;I&amp;#x27;ve had some moments recently for my own projects as I worked through some bottle necks where I took a whole section of a project and said &amp;quot;rewrite in rust&amp;quot; to Claude and had massive speedups with a 0 shot rewrite, most recently some video recovery programs, but I then had an output product I wouldn&amp;#x27;t feel comfortable vouching for outside of my homelab setup.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reactordev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is both awesome and scary. Yes, now we can embed image gen in things like game engines and photoshop or build our own apps. On the other hand, we can include image gen in anything…&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/antirez/flux2.c</guid>
+      <pubDate>Sun, 18 Jan 2026 18:01:58 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46670279</comments>
     </item>
     <item>
-      <title>A Social Filesystem</title>
-      <link>https://overreacted.io/a-social-filesystem/</link>
-      <description>&lt;p&gt;Apps create and read your files on your behalf, but files don’t belong to the apps. To do that reliably, apps need your files to be structured. In this paradigm, apps are reactive to files.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46665839"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://overreacted.io/a-social-filesystem/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;geokon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This was a nice intro to AT (though I feel it could have been a bit shorter)&lt;p&gt;The whole things seems a bit over engineered with poor separation of concerns.&lt;p&gt;It feels like it&amp;#x27;d be smarter to flatten the design and embed everything in the Records. And then other layers can be built on top of that&lt;p&gt;Making every record includes the author&amp;#x27;s public-key (or signature?). Anything you need to point at you&amp;#x27;d either just give its hash, or hash + author-public-key. This way you completely eliminate this goofy filesystem hierarchy. Everything else is embed it in the Record.&lt;p&gt;Lexicons&amp;#x2F;Collections are just a field in the Record. Reverse looking up the hash to find what it is, also a separate problem.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Jonovono:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I can’t remember how many times I’ve read an article and enjoyed it so much and then looked and saw it was written by Dan ;) always a pleasure !&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;metabagel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;How does this relate to the SOLID project?&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;solidproject.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;solidproject.org&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ninkendo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; When great thinkers think about problems, they start to see patterns. They look at the problem of people sending each other word-processor files, and then they look at the problem of people sending each other spreadsheets, and they realize that there’s a general pattern: sending files. That’s one level of abstraction already. Then they go up one more level: people send files, but web browsers also “send” requests for web pages. And when you think about it, calling a method on an object is like sending a message to an object! It’s the same thing again! Those are all sending operations, so our clever thinker invents a new, higher, broader abstraction called messaging, but now it’s getting really vague and nobody really knows what they’re talking about any more.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.joelonsoftware.com&amp;#x2F;2001&amp;#x2F;04&amp;#x2F;21&amp;#x2F;dont-let-architecture-astronauts-scare-you&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.joelonsoftware.com&amp;#x2F;2001&amp;#x2F;04&amp;#x2F;21&amp;#x2F;dont-let-architect...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;catapart:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;yeah yeah yeah, everyone get on the AT protocol, so that the bluesky org can quickly get all of these filthy users off of their own servers (which costs money) while still maintaining the original, largest, and currently only portal to actually publish the content (which makes money[0]). let them profit from a technical &amp;quot;innovation&amp;quot; that is 6 levels of indirection to mimic activity pub.&lt;p&gt;if they were decent people, that would be one thing. but if they&amp;#x27;re going to be poisoned with the same faux-libertarian horseshit that strangled twitter, I don&amp;#x27;t see any value in supporting their protocol. there&amp;#x27;s always another protocol.&lt;p&gt;but assuming I was willing to play ball and support this protocol, they STILL haven&amp;#x27;t solved the actual problem that no one else is solving either: your data exists somewhere else. until there&amp;#x27;s a server that I can bring home and plug in with setup I can do using my TV&amp;#x27;s remote, you&amp;#x27;re not going to be able to move most people to &amp;quot;private&amp;quot; data storage. you&amp;#x27;re just going to change which massive organization is exploiting them.&lt;p&gt;I know, I know: hardware is a bitch and the type of device I&amp;#x27;m even pitching seems like a costly boondoggle. but that&amp;#x27;s the business, and if you&amp;#x27;re not addressing it, you&amp;#x27;re not fomenting real change; you&amp;#x27;re patting yourself on the back for pretending we can algorithm ourselves out of late-stage capitalism.&lt;p&gt;[0] *potentially&amp;#x2F;eventually&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elbci:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;agree! Social-media contributions as files on your system: owned by you, served to the app. Like .svg specifications allows editing in inkscape or illustrator a post on my computer would be portable on mastodon or bluesky or a fully distributed p2p network.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://overreacted.io/a-social-filesystem/</guid>
-      <pubDate>Sun, 18 Jan 2026 08:18:36 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46665839</comments>
+      <title>Breaking the Zimmermann Telegram (2018)</title>
+      <link>https://medium.com/lapsed-historian/breaking-the-zimmermann-telegram-b34ed1d73614</link>
+      <guid isPermaLink="true">https://medium.com/lapsed-historian/breaking-the-zimmermann-telegram-b34ed1d73614</guid>
+      <pubDate>Sun, 18 Jan 2026 19:19:48 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46671174</comments>
     </item>
     <item>
-      <title>Overlapping Markup</title>
-      <link>https://en.wikipedia.org/wiki/Overlapping_markup</link>
-      <description>&lt;p&gt;A document with overlapping markup cannot be represented as a tree. Non-contiguous overlap may require document fragmentation. [14] The Text Encoding Initiative, as an XML-based markup scheme, cannot directly represent overlapping markup.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46666650"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://en.wikipedia.org/wiki/Overlapping_markup'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Stirling Cycle Machine Analysis</title>
+      <link>https://ohioopen.library.ohio.edu/opentextbooks/9/</link>
+      <description>&lt;p&gt;Chapter 4: Ideal Adiabatic Analysis We find that the Ideal Isothermal analysis predicts that the heat exchangers of a Stirling engine are redundant, thus we cannot seriously use this model to predict the ideal performance of an actual machine. This learning resource includes a set of tutorial MATLAB computer program modules for simulating specific Stirling engine configurations. zip (sea = stirling engine analysis).&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46671982"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://ohioopen.library.ohio.edu/opentextbooks/9/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://ohioopen.library.ohio.edu/opentextbooks/9/</guid>
+      <pubDate>Sun, 18 Jan 2026 20:45:54 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46671982</comments>
+    </item>
+    <item>
+      <title>Show HN: Lume 0.2 – Build and Run macOS VMs with unattended setup</title>
+      <link>https://cua.ai/docs/lume/guide/getting-started/introduction</link>
+      <description>&lt;p&gt;LumeGuideGetting StartedWhat is Lume. lume create test-vm --os macos --ipsw latest lume run test-vm A single binary with an HTTP API. Automating macOS tasks — Combine Lume with Unattended Setup to create pre-configured VMs.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46670181"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://cua.ai/docs/lume/guide/getting-started/introduction'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tannhaeuser:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;FIY the Wikipedia article rightfully says SGML CONCUR usage is uncommon, but compared to the stated alternatives for overlapping markup, it&amp;#x27;s basically the only one that is tolerable to use as actual markup language for use with a text editor. This is what it looks like:&lt;p&gt;&lt;pre&gt;&lt;code&gt;    &amp;lt;!doctype d -- element decls for a, b ... --&amp;gt;
-    &amp;lt;!doctype e -- element decls for a, x ... --&amp;gt;
-    &amp;lt;(d|e)a&amp;gt;
-      &amp;lt;(d)b&amp;gt;bla bla &amp;lt;(e)x&amp;gt;bla &amp;lt;&amp;#x2F;(d)b&amp;gt; bla&amp;lt;&amp;#x2F;(e)x&amp;gt;
-    &amp;lt;&amp;#x2F;(d|e)a&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-where the third &amp;quot;bla&amp;quot; span is marked up with overlap.&lt;p&gt;Basically, in case you&amp;#x27;ve ever wondered, SGML CONCUR is the only reason that the element name in end-element tags needs to be specified. In strictly nested markup (XML) it always must refer to the most recently opened start-element tag hence it&amp;#x27;s redundant. SGML actually has &amp;quot;&amp;lt;&amp;#x2F;&amp;gt;&amp;quot; but it didn&amp;#x27;t make it into XML.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://en.wikipedia.org/wiki/Overlapping_markup</guid>
-      <pubDate>Sun, 18 Jan 2026 10:37:59 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46666650</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whinvik:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Sorry for the naive question but specifically for running Claude on a sandbox, why do people decide to use lume as opposed to running it on Docker?&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://cua.ai/docs/lume/guide/getting-started/introduction</guid>
+      <pubDate>Sun, 18 Jan 2026 17:53:21 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46670181</comments>
     </item>
     <item>
-      <title>How the Lobsters front page works</title>
-      <link>https://atharvaraykar.com/lobsters/</link>
-      <description>&lt;p&gt;OrderThe value of \( \textbf{order} \) is derived from the engagement that a story gets. This was mostly vibecoded, with me verifying that the results match the algorithm. Over time, age always dominates upvotes, so no story can really stick around that long in the front page.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46669996"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://atharvaraykar.com/lobsters/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Show HN: Xenia – A monospaced font built with a custom Python engine</title>
+      <link>https://github.com/Loretta1982/xenia</link>
+      <description>&lt;p&gt;xenia monofont I made this because monofont shouldn't have to be fugly. enjoy :) Installation download xenia_regular. ) or Terminal, set your font face to xenia Features 700+ glyphs: deep support for symbols and math.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46666661"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/Loretta1982/xenia'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aurornis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is a good exploration of the algorithm. In my experience, Lobsters has much more active moderator involvement in a more opinionated way than HN. Much of what’s referred to as moderation here is user-driven via flagging and votes, whereas on Lobsters the moderators are injecting more of an opinionated style into the site. For example, requiring the “vibecoding” tag on all stories about AI even though very few of them are about vibecoding.&lt;p&gt;In theory the Lobsters moderation log is also public, but in practice when someone gets banned if you try to find the post that triggered the banned it will have been edited away by the mods and replaced with their opinion of what was said in a follow up comment. I stopped visiting as much after watching someone get banned for a rather benign comment which the mods edited away and then claimed it said something egregious about a culture war topic, which it did not.&lt;p&gt;The site also puts up a banner at the top of your page if you receive enough negative votes. The banner invites you to delete your account as the last sentence (or it did in the past). In practice, if you comment something that isn’t the popular and accepted opinion on the site, no matter how diplomatically, you could end up with the banner stuck on your page views for a while. There have been some high profile and valuable contributors to the site who abandoned it after getting stuck with this banner for posting informative content that nevertheless triggered some downvotes.&lt;p&gt;It’s an interesting site, but in my experience the algorithms are only a small part of it. The experience there is more heavily aligned toward groupthink and the “right” opinions than even HN and differing opinions are much less welcomed.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andy99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I recently learned Bear blog (a small blogging platform, posts on which often appear on HN) has a “discover” section with a front page style ranking. Their algorithm is on the page&lt;p&gt;&lt;pre&gt;&lt;code&gt;  This page is ranked according to the following algorithm:
-  Score = log10(U) + (S &amp;#x2F; (B * 86,400))
-
-  Where,
-  U = Upvotes of a post
-  S = Seconds since Jan 1st, 2020
-  B = Buoyancy modifier (currently at 14)
-&lt;/code&gt;&lt;/pre&gt;
-See &lt;a href="https:&amp;#x2F;&amp;#x2F;bearblog.dev&amp;#x2F;discover&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;bearblog.dev&amp;#x2F;discover&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elphard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;How difficult is it to get invited to join Lobsters?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;written-beyond:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;How does the HN front page work?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://atharvaraykar.com/lobsters/</guid>
-      <pubDate>Sun, 18 Jan 2026 17:38:22 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46669996</comments>
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WillAdams:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Why do this rather than just using METAFONT&amp;#x2F;METAPOST&amp;#x2F;METATYPE1?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lemontheme:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The &amp;#x27;a&amp;#x27; and the &amp;#x27;o&amp;#x27; are a bit similar, but all in all I can see myself trying this out. Reminds me a bit of Comic Code and Maple Mono. Thanks for sharing!&lt;p&gt;There are a few odd things about this post though. Take this as well-intentioned feedback.&lt;p&gt;- New account. No previous submissions or comments.&lt;p&gt;- New Github account. No previous activity.&lt;p&gt;- Mentions custom engine (cool!), but omits any details.&lt;p&gt;- Calls other mono fonts &amp;#x27;fugly&amp;#x27;; refuses to elaborate.&lt;p&gt;- Releasing based on interest feels like engagement farming. Let me know when it&amp;#x27;s done. Then I&amp;#x27;ll judge whether I&amp;#x27;m interested.&lt;p&gt;- Regular weights are free. Implication is that other weights will be paid. That&amp;#x27;s fine. I&amp;#x27;m happy to pay for fonts. But I&amp;#x27;m unlikely to try a font in earnest without bold and italics.&lt;p&gt;Sorry if this comes off as harsh. I wish you the best with this!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ako:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Is this related: &lt;a href="https:&amp;#x2F;&amp;#x2F;www.paratype.com&amp;#x2F;fonts&amp;#x2F;pt&amp;#x2F;xenia" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.paratype.com&amp;#x2F;fonts&amp;#x2F;pt&amp;#x2F;xenia&lt;/a&gt; ?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;grilledchickenw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Could you share more information on this custom python procedural engine?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xandrius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I find the &amp;quot;i&amp;quot; quite excruciating to look at.&lt;p&gt;Also would like to see more examples, say including this deep math.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fimdomeio:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I would suggest making the screenshot with the font at different sizes. They first thing I want is to have an approximation of how it will look at small sizes.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/Loretta1982/xenia</guid>
+      <pubDate>Sun, 18 Jan 2026 10:39:52 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46666661</comments>
     </item>
     <item>
-      <title>Sins of the Children (Adrian Tchaikovsky)</title>
-      <link>https://asteriskmag.com/issues/07/sins-of-the-children</link>
-      <description>&lt;p&gt;It jumped and came down on eight legs that must have been shock absorbers par excellence. Chelicer life doesn’t quite have a front or a back, built around that hub of legs. Right then we were more concerned with what it did to Merrit.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46669663"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://asteriskmag.com/issues/07/sins-of-the-children'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://asteriskmag.com/issues/07/sins-of-the-children</guid>
-      <pubDate>Sun, 18 Jan 2026 17:08:58 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46669663</comments>
-    </item>
-    <item>
-      <title>America is slow-walking into a Polymarket disaster</title>
-      <link>https://www.msn.com/en-us/money/markets/america-is-slow-walking-into-a-polymarket-disaster/ar-AA1Upfdb</link>
-      <guid isPermaLink="true">https://www.msn.com/en-us/money/markets/america-is-slow-walking-into-a-polymarket-disaster/ar-AA1Upfdb</guid>
-      <pubDate>Sun, 18 Jan 2026 18:20:25 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46670524</comments>
-    </item>
-    <item>
-      <title>Stop using MySQL in 2026, it is not true open source</title>
-      <link>https://optimizedbyotto.com/post/reasons-to-stop-using-mysql/</link>
-      <description>&lt;p&gt;The first actual new major release MySQL 8. Many also reported degraded performance with newer MySQL versions, for example the benchmark by famous MySQL performance expert Mark Callaghan below shows that on write-heavy workloads MySQL 9. Due to newer MySQL versions deprecating many features, a lot of users also complained about significant struggles regarding both MySQL 5.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46669289"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://optimizedbyotto.com/post/reasons-to-stop-using-mysql/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Show HN: HTTP:COLON – A quick HTTP header/directive inspector and reference</title>
+      <link>https://httpcolon.dev/</link>
+      <description>&lt;p&gt;GETPOSTPUTDELETETABGO © 2023 HTTP:COLON // All rights reserved✨ Made in San FranciscoHTTP:DOCS What are HTTP Headers. HTTP headers are a fundamental component of the HTTP protocol, which is the backbone of the internet. Moreover, HTTP headers play a critical role in API integrations, allowing developers to communicate with external services and systems.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46670290"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://httpcolon.dev/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;logifail:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Happily using MariaDB (as packaged with Debian) in production here...&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;antonvs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Who&amp;#x27;s still using MySQL on the back end? Most Linux distributions come with MariaDB. Is it Windows servers?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dcmatt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I&amp;#x27;m not going to stop using it because it&amp;#x27;s not &amp;quot;true open source.&amp;quot; I&amp;#x27;m going to stop using it because there&amp;#x27;s better databases out there.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bratao:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;From my experience MariaDB is not necessarily better than MySQL. The 8.x line brought many interesting features. I dream on switch to Postgres, and try every year but for my use case MySQL is still superior (100Bi+ rows for large texts, and heavy modified - I´m also space constrained - So I need data compression and the VACUUM are not good.)&lt;p&gt;The percona distribution is very good!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dfajgljsldkjag:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The author is right that usage is dropping, but that really has no bearing on whether or not it is open source. Technologies get replaced all the time regardless of the license they use.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://optimizedbyotto.com/post/reasons-to-stop-using-mysql/</guid>
-      <pubDate>Sun, 18 Jan 2026 16:43:44 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46669289</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;php-3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Heyho. Really nice Work, Love the Design.&lt;p&gt;Maybe you have an Idea for my Feedback:
+IT would be cool if i can save my favorites, so i can only come Back and See Always the Same. What do you think?&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://httpcolon.dev/</guid>
+      <pubDate>Sun, 18 Jan 2026 18:03:03 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46670290</comments>
     </item>
     <item>
-      <title>Purdue blocks admission of many Chinese grad students in unwritten policy</title>
-      <link>https://www.science.org/content/article/purdue-blocks-admission-many-chinese-grad-students-unwritten-policy</link>
-      <guid isPermaLink="true">https://www.science.org/content/article/purdue-blocks-admission-many-chinese-grad-students-unwritten-policy</guid>
-      <pubDate>Sun, 18 Jan 2026 15:55:26 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46668801</comments>
+      <title>Evolution Unleashed (2018)</title>
+      <link>https://aeon.co/essays/science-in-flux-is-a-revolution-brewing-in-evolutionary-theory</link>
+      <description>&lt;p&gt;That is not supposed to happen. Much of the data implies that evolution is more complex than we once assumed. He maintained that scientists should strive to carry out critical experiments that could potentially falsify their theories.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46671191"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://aeon.co/essays/science-in-flux-is-a-revolution-brewing-in-evolutionary-theory'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://aeon.co/essays/science-in-flux-is-a-revolution-brewing-in-evolutionary-theory</guid>
+      <pubDate>Sun, 18 Jan 2026 19:21:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46671191</comments>
+    </item>
+    <item>
+      <title>Police Invested Millions in Shadowy Phone-Tracking Software Won't Say How Used</title>
+      <link>https://www.texasobserver.org/texas-police-invest-tangles-sheriff-surveillance/</link>
+      <guid isPermaLink="true">https://www.texasobserver.org/texas-police-invest-tangles-sheriff-surveillance/</guid>
+      <pubDate>Sun, 18 Jan 2026 21:05:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46672150</comments>
+    </item>
+    <item>
+      <title>Echo Chess: The Quest for Solvability (2023)</title>
+      <link>https://web.archive.org/web/20230920164939/https://samiramly.com/chess</link>
+      <description>&lt;p&gt;But what’s wrong with people associating it with Chess. Chess pieces are a universal language. Soon “the game” looked more like this.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46666574"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://web.archive.org/web/20230920164939/https://samiramly.com/chess'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Discussed at the time:&lt;p&gt;&lt;i&gt;Echo Chess: The Quest for Solvability&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=37327895"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=37327895&lt;/a&gt; - Aug 2023 (106 comments)&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://web.archive.org/web/20230920164939/https://samiramly.com/chess</guid>
+      <pubDate>Sun, 18 Jan 2026 10:24:55 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46666574</comments>
     </item>
   </channel>
 </rss>
