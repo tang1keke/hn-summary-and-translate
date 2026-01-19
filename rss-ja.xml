@@ -6,59 +6,37 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 19 Jan 2026 04:14:29 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jan 2026 06:44:57 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>コードのみのエージェント</title>
-      <link>https://rijnard.com/blog/the-code-only-agent</link>
-      <description>&lt;p&gt;コードのみのエージェントは何も応答しません。何かを出力するコード証人を生成します。 Code-Only エージェントはその原則を強制します。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Code-Only Agent&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46674416"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://rijnard.com/blog/the-code-only-agent'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>HN を表示: AWS-doctor – Go のターミナルベースの AWS ヘルスチェックとコストオプティマイザー</title>
+      <link>https://github.com/elC0mpa/aws-doctor</link>
+      <description>&lt;p&gt;🏥 無駄の検出 (「チェックアップ」): アカウントをスキャンして、静かに請求額を膨らませている「ゾンビ」リソースや非効率性を検出します。 EC2 インスタンスが 30 日以上停止しました。ロードマップ [x] 月次傾向分析を追加します。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: AWS-doctor – A terminal-based AWS health check and cost optimizer in Go&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46675092"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/elC0mpa/aws-doctor'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jongjong:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;著者は「コード」で止まっているようです。しかし、さらに進んで、バイナリを直接操作できるように AI をトレーニングすることもできるようです。人間のプロンプトとマシンを構成するハードウェア コンポーネントのリストを与えると、要件を満たす実行可能バイナリが生成され、OS をバイパスして特定のハードウェア上で直接実行されます...&lt;p&gt;あるいは、さらに進めることもできます。 LLM の出力ノードは物理的に CPU のピンに 1 対 1 で接続できるため、バイナリを直接フィードでき、使用可能なハードウェアを自動的に検出できる可能性があります。&lt;p&gt;ハードウェアをリストしないことも可能です。 OS のバージョン番号を伝えるだけで、OS が抽象化として使用されます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dfajgljsldkjag:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;エージェントはこれだけで膨大な量のタスクを完了できますが、コンテキストの読み込みですぐにボトルネックに遭遇します。  Claude や Cursor などのエージェント コーディング ツールが成功した主な理由は、エージェントがディレクトリの一覧表示方法などを考えるのに時間とトークンを無駄にするのではなく、問題のコンテキストとコードベースを積極的にエージェントにプッシュする方法にあります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;binalpatel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私はこのウサギの穴を調査し、著者の意見に同意しました。&lt;p&gt;いくつかの異なるアイデアを試しましたが、これまでのところ最も安定して有用なのは、エージェントに 1 つの run_bash ツールを提供し、コンポーザブル CLI の作成と改善を明示的に促し、これらの CLI に関する知識をシステム プロンプトに注入することでした (エージェント スキルを機能させるのと同じです)。&lt;p&gt;これにより、次のような非常に優れたパターンが得られます。
-1. ユーザーが何かを要求します&lt;p&gt;2.エージェントはそれを実行できないため、CLI を作成します&lt;p&gt;3.次回は CLI を認識して使用します。ユーザーが何かできないことを要求した場合は、ユーザーが作成した CLI を改善するか、新しい CLI を作成します。&lt;p&gt;4.各インタラクションの結果、要求した内容に応じてツールキットが更新され、改善されます。&lt;p&gt;ユーザーはこれらの CLI をすべて使用することもでき、これにより、エージェントと対話する興味深いサイドチャネル方法が得られます (たとえば、エージェントが使用するものと同じ CLI を使用して ToDo を追加します)。&lt;p&gt;また、信じられないほど柔軟です。昨日、「コーディング エージェント」を作成しました。コードベースを検査&amp;#x2F;分析&amp;#x2F;編集するためのツールを作成させることで、コーディング エージェントが実行できるほとんどのことを実行できるようになります。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;caesarnine&amp;#x2F;binsmith" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;caesarnine&amp;#x2F;binsmith&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://rijnard.com/blog/the-code-only-agent</guid>
-      <pubDate>Mon, 19 Jan 2026 02:27:07 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46674416</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elC0mpa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;こんにちは、HN さん。&lt;p&gt;私はクラウド アーキテクトです。aws-doctor を構築したのは、「ゾンビ」を見つけるために異なる AWS アカウント間で同じ手動チェックを常に実行していることに気づいたからです。リソース。 AWS Trusted Advisor は存在しますが、最良のチェックは有料の Business&amp;#x2F;Enterprise サポート プランの背後にロックされていることが多く、簡単な「ヘルスチェック」が必要な場合は AWS コンソールが遅くなることがあります。&lt;p&gt;機能: アカウントのプロアクティブなチェックとして機能する TUI (ターミナル ユーザー インターフェイス) です。&lt;p&gt;無駄の検出: 停止したインスタンス (&gt;30 日)、接続されていない EBS ボリューム、関連付けられていない Elastic IP、および期限切れのリザーブド インスタンス。&lt;p&gt;コスト診断: 現在の月初から現在までのコストを先月のまったく同じ期間 (例: 1 月 1 ～ 15 日と 2 月 1 ～ 15 日) と比較して、支出速度の問題を特定します。&lt;p&gt;トレンド: 過去 6 か月間にわたるコスト履歴を視覚化します。&lt;p&gt;技術スタック:&lt;p&gt;Go (1.24) で書かれています。&lt;p&gt; AWS SDK v2.&lt;p&gt;UI は Charm の Bubbletea と Lipgloss (テーブルのスタイリング用) で構築されています。&lt;p&gt;完全にオープンソースであり、お使いのマシン上でローカルに実行されます (標準の ~&amp;#x2F;.aws&amp;#x2F;credentials を使用)。&lt;p&gt;コード構造に関するフィードバックや、他の「無駄なパターン」に関する提案をぜひお聞かせください。検出ロジックを追加する必要があります。&lt;p&gt;ありがとう!&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/elC0mpa/aws-doctor</guid>
+      <pubDate>Mon, 19 Jan 2026 04:35:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46675092</comments>
     </item>
     <item>
-      <title>スペインで高速列車衝突事故、少なくとも21人死亡</title>
-      <link>https://www.bbc.com/news/articles/cedw6ylpynyo</link>
-      <description>&lt;p&gt;脱線した列車はその後、マドリッドからウエルバに向かう対向列車と衝突した。アンダルシアの救急サービスは、この衝突で少なくとも合計73人が負傷したと発表した。同社は、影響を受ける乗客のためにターミナルを夜間も営業し続けると述べた。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; At least 21 killed in Spain after crash involving high-speed trains&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46673453"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bbc.com/news/articles/cedw6ylpynyo'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Ultrathink は非推奨になりました &amp; クロード コードで 2 倍の思考トークンを有効にする方法</title>
+      <link>https://decodeclaude.com/ultrathink-deprecated/</link>
+      <description>&lt;p&gt;デフォルトでは、すべてのプロンプトが最大限に考慮されます。 Max Thinking をいつ使用するか より多くの思考を行うことが常に良いとは限りません。とにかく、思考トークンとは何ですか。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ultrathink is deprecated &amp; How to enable 2x thinking tokens in Claude Code&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46672858"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://decodeclaude.com/ultrathink-deprecated/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;t1234s:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;サイバー攻撃？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deadbabe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;常に進行方向に背中を向ける座席に座るようにしてください。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alphadatavault:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;アダムズ近郊で起きた悲惨な列車衝突事故で亡くなった方々のご家族と愛する方々に、心からお悔やみを申し上げます。私の思いはまた、負傷者とこの悲劇の影響を受けたすべての人々のことです。この深い悲しみの瞬間に、彼らがお互いに、また周囲の人々の配慮の中で力と支えを見つけられることを願っています。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.bbc.com/news/articles/cedw6ylpynyo</guid>
-      <pubDate>Sun, 18 Jan 2026 23:54:43 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46673453</comments>
-    </item>
-    <item>
-      <title>あなたの OpenCode はすべて私たちのものです</title>
-      <link>https://johncodes.com/archive/2026/01-18-all-your-opencodes/</link>
-      <description>&lt;p&gt;これには、特別に作成された電子メール アドレスを含む細心の注意を払って作成された X. 509 証明書と、証明書内の悪意のあるコードへの完全なバッファ オーバーフローが必要です。つまり、これはまさに攻撃者が悪意のある X を挿入する必要がある場所です。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; All your OpenCodes belong to us&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46674424"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://johncodes.com/archive/2026/01-18-all-your-opencodes/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://johncodes.com/archive/2026/01-18-all-your-opencodes/</guid>
-      <pubDate>Mon, 19 Jan 2026 02:28:21 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46674424</comments>
-    </item>
-    <item>
-      <title>CD Projekt、人気のサイバーパンク VR MOD に対する DMCA 削除通知を発行</title>
-      <link>https://www.patreon.com/posts/another-one-dust-148437771</link>
-      <guid isPermaLink="true">https://www.patreon.com/posts/another-one-dust-148437771</guid>
-      <pubDate>Mon, 19 Jan 2026 02:42:08 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46674505</comments>
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JimDabell:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは、誰かが数文に収まる情報を取得し、AI を使用してそこから息を呑むような強調を加えて記事全体を生成するという、本当にひどい例です。読めません。数文ごとに AI の常套句がまったく&lt;i&gt;満載&lt;/i&gt;です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;teruakohatu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;起動後に変更できない環境変数または構成ファイル変数は、考えられる限り最悪のインターフェイスです。なぜ単に「ultra^2 think」というキーワードを持たないのでしょうか?&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://decodeclaude.com/ultrathink-deprecated/</guid>
+      <pubDate>Sun, 18 Jan 2026 22:34:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46672858</comments>
     </item>
   </channel>
 </rss>

@@ -6,59 +6,37 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 19 Jan 2026 04:14:29 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jan 2026 06:44:57 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>仅代码代理</title>
-      <link>https://rijnard.com/blog/the-code-only-agent</link>
-      <description>&lt;p&gt;Code-Only 代理不会做出任何响应。它产生一个输出一些东西的代码见证。 Code-Only 代理强制执行该原则。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Code-Only Agent&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46674416"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://rijnard.com/blog/the-code-only-agent'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Show HN：AWS-doctor – Go 中基于终端的 AWS 运行状况检查和成本优化器</title>
+      <link>https://github.com/elC0mpa/aws-doctor</link>
+      <description>&lt;p&gt;🏥 浪费检测（“检查”）：扫描您的帐户，查找“僵尸”资源和低效情况，这些资源会悄悄增加您的账单。 EC2 实例停止超过 30 天。路线图 [x] 添加每月趋势分析。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: AWS-doctor – A terminal-based AWS health check and cost optimizer in Go&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46675092"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/elC0mpa/aws-doctor'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jongjong:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作者似乎停在了“代码”处；但看来我们可以更进一步，训练人工智能直接使用二进制文件。您给它一个人工提示和组成您的机器的硬件组件列表，它会生成可执行二进制文件，满足您的要求并直接在这些特定硬件上运行，绕过操作系统...&lt;p&gt;或者我们可以更进一步； LLM 的输出节点可以以 1 对 1 的方式物理连接到 CPU 的引脚，这样它就可以直接提供二进制文件，然后它可以自动检测可用的硬件。&lt;p&gt;您也可能不列出硬件；只需告诉它操作系统的版本号，它就会使用操作系统作为抽象。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dfajgljsldkjag:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;仅此，代理就可以完成大量任务，但他们很快就遇到了加载上下文的瓶颈。  Claude 和 Cursor 等代理编码工具成功的一个主要原因是它们如何主动将问题的上下文和代码库推送到代理中，而不是让代理浪费时间和令牌来弄清楚如何列出目录等。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;binalpatel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我深入（继续深入）这个兔子洞并同意作者的观点。&lt;p&gt;我尝试了一些不同的想法，迄今为止最稳定、最有用的是为代理提供一个 run_bash 工具，明确提示它创建和改进可组合的 CLI，并将有关这些 CLI 的知识注入到它的系统提示中（类似于代理技能的工作）。&lt;p&gt;这会产生非常酷的模式，例如：
-1. 用户请求某事&lt;p&gt;2.代理无法做到这一点，因此它创建了一个 CLI&lt;p&gt;3。下次它会知道 CLI 并使用它。如果用户要求某件事但无法做到，那么它要么改进其创建的 CLI，要么创建一个新的 CLI。&lt;p&gt;4.每次交互都会针对您要求的内容生成更新和改进的工具包。&lt;p&gt;作为用户，您也可以使用所有这些 CLI，这最终会形成一种与代理交互的有趣的侧通道方式（您使用与它所使用的相同的 CLI 添加待办事项）。&lt;p&gt;它也非常灵活，昨天我制作了一个“编码代理”通过让它创建工具来检查、分析和编辑代码库，它就可以完成编码代理可以做的大部分事情。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;caesarnine&amp;#x2F;binsmith" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;凯撒宁&amp;#x2F;binsmith&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://rijnard.com/blog/the-code-only-agent</guid>
-      <pubDate>Mon, 19 Jan 2026 02:27:07 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46674416</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elC0mpa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您好，HN，&lt;p&gt;我是一名云架构师，我构建了 aws-doctor，因为我发现自己不断地在不同的 AWS 账户之间运行相同的手动检查以查找“僵尸”账户。资源。虽然 AWS Trusted Advisor 存在，但最好的检查通常被锁定在付费商业和企业支持计划之后，而当您只想快速进行“运行状况检查”时，AWS 控制台可能会很慢。&lt;p&gt;它的作用：它是一个 TUI（终端用户界面），可以对您的账户进行主动检查。&lt;p&gt;浪费检测：扫描已停止的实例（&gt; 30 天）、未附加的 EBS 卷、未关联的弹性 IP 和即将过期的预留实例。&lt;p&gt;成本诊断：将当前当月至今的成本与上个月的同期成本（例如 1 月 1 日至 15 日与 2 月 1 日至 15 日）进行比较，以发现支出速度问题。&lt;p&gt;趋势：可视化过去 6 个月的成本历史记录。&lt;p&gt;技术堆栈：&lt;p&gt;用 Go (1.24) 编写。&lt;p&gt;使用 AWS SDK v2。&lt;p&gt;使用以下语言构建的 UI Charm 的 Bubbletea 和 Lipgloss（用于表格样式）。&lt;p&gt;它是完全开源的，可以在您的计算机上本地运行（使用您的标准 ~&amp;#x2F;.aws&amp;#x2F; 凭据）。&lt;p&gt;我很想听听您对代码结构的反馈或对其他“浪费模式”的建议。我应该添加检测逻辑。&lt;p&gt;谢谢！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/elC0mpa/aws-doctor</guid>
+      <pubDate>Mon, 19 Jan 2026 04:35:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46675092</comments>
     </item>
     <item>
-      <title>西班牙高速列车相撞事故 至少21人死亡</title>
-      <link>https://www.bbc.com/news/articles/cedw6ylpynyo</link>
-      <description>&lt;p&gt;脱轨的火车随后与迎面驶来的一列从马德里开往韦尔瓦的火车相撞。安达卢西亚紧急服务部门表示，事故中至少有 73 人受伤。该公司表示，将让航站楼过夜为受影响的乘客开放。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; At least 21 killed in Spain after crash involving high-speed trains&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46673453"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bbc.com/news/articles/cedw6ylpynyo'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Ultrathink 已弃用 &amp; 如何在 Claude 代码中启用 2x 思考令牌</title>
+      <link>https://decodeclaude.com/ultrathink-deprecated/</link>
+      <description>&lt;p&gt;默认情况下，每个提示都会得到最大程度的思考。何时使用最大思考更多思考并不总是更好。无论如何，什么是思维代币。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ultrathink is deprecated &amp; How to enable 2x thinking tokens in Claude Code&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46672858"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://decodeclaude.com/ultrathink-deprecated/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;t1234s:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;网络攻击？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deadbabe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;尽量坐在背部朝向运动方向的座位上。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alphadatavault:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我向阿达穆斯附近可怕的火车相撞事件中遇难者的家人和亲人表示最深切的哀悼。我也与受伤者和所有受这场悲剧影响的人同在。在这深切悲伤的时刻，我希望他们能够在彼此以及周围人的照顾中找到力量和支持。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.bbc.com/news/articles/cedw6ylpynyo</guid>
-      <pubDate>Sun, 18 Jan 2026 23:54:43 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46673453</comments>
-    </item>
-    <item>
-      <title>您所有的 OpenCode 都属于我们</title>
-      <link>https://johncodes.com/archive/2026/01-18-all-your-opencodes/</link>
-      <description>&lt;p&gt;这需要精心制作的 X.509 证书，其中包含特制的电子邮件地址和完美的缓冲区溢出到证书中的恶意代码。简而言之，这正是攻击者必须注入恶意 X 的地方。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; All your OpenCodes belong to us&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46674424"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://johncodes.com/archive/2026/01-18-all-your-opencodes/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://johncodes.com/archive/2026/01-18-all-your-opencodes/</guid>
-      <pubDate>Mon, 19 Jan 2026 02:28:21 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46674424</comments>
-    </item>
-    <item>
-      <title>CD Projekt 针对热门赛博朋克 VR 模组发布 DMCA 下架通知</title>
-      <link>https://www.patreon.com/posts/another-one-dust-148437771</link>
-      <guid isPermaLink="true">https://www.patreon.com/posts/another-one-dust-148437771</guid>
-      <pubDate>Mon, 19 Jan 2026 02:42:08 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46674505</comments>
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JimDabell:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个非常糟糕的例子，有人获取了几句话的信息，并使用人工智能通过用令人窒息的强调来填充它来生成整篇文章。这是不可读的。每隔几句话就充满了人工智能的陈词滥调。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;teruakohatu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;启动后无法更改的环境变量或配置文件变量可能是最糟糕的界面。为什么不直接使用“ultra^2 think”关键字呢？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://decodeclaude.com/ultrathink-deprecated/</guid>
+      <pubDate>Sun, 18 Jan 2026 22:34:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46672858</comments>
     </item>
   </channel>
 </rss>

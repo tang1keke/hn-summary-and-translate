@@ -6,56 +6,35 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Mon, 19 Jan 2026 04:14:29 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jan 2026 06:44:57 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>The Code-Only Agent</title>
-      <link>https://rijnard.com/blog/the-code-only-agent</link>
-      <description>&lt;p&gt;The Code-Only agent doesn't respond with something. It produces a code witness that outputs something. The Code-Only agent enforces that principle.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46674416"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://rijnard.com/blog/the-code-only-agent'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Show HN: AWS-doctor – A terminal-based AWS health check and cost optimizer in Go</title>
+      <link>https://github.com/elC0mpa/aws-doctor</link>
+      <description>&lt;p&gt;🏥 Waste Detection (The "Checkup"): Scans your account for "zombie" resources and inefficiencies that are silently inflating your bill. EC2 instances stopped for more than 30 days. Roadmap [x] Add monthly trend analysis.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46675092"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/elC0mpa/aws-doctor'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jongjong:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The author seems to stop at &amp;#x27;code&amp;#x27; but it seems we could go further and train an AI to work directly with binary. You give it a human prompt and a list of hardware components which make up your machine and it produces executable binary which fulfills your requirements and runs directly on those specific hardware, bypassing the OS...&lt;p&gt;Or we could go further; the output nodes of the LLM could be physically connected to the pins of the CPU 1-to-1 so it can feed the binary directly maybe then it could detect what hardware is available automatically.&lt;p&gt;You could potentially also not list out the hardware; just tell it the OS with version number and it would  use the OS as an abstraction.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dfajgljsldkjag:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Agents can complete an impressive amount of tasks with just this, but they quickly hit a bottleneck in loading context.  A major reason for the success of agentic coding tools such as Claude and Cursor is how they push context of the problem and codebase into the agent proactively, rather than have the agent waste time and tokens figuring out how to list the directory etc.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;binalpatel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I went down (continue to do down) this rabbit hole and agree with the author.&lt;p&gt;I tried a few different ideas and the most stable&amp;#x2F;useful so far has been giving the agent a single run_bash tool, explicitly prompting it to create and improve composable CLIs, and injecting knowledge about these CLIs back into it&amp;#x27;s system prompt (similar to have agent skills work).&lt;p&gt;This leads to really cool pattens like:
-1. User asks for something&lt;p&gt;2. Agent can&amp;#x27;t do it, so it creates a CLI&lt;p&gt;3. Next time it&amp;#x27;s aware of the CLI and uses it. If the user asks for something it can&amp;#x27;t do it either improves the CLI it made, or creates a new CLI.&lt;p&gt;4. Each interaction results in updated&amp;#x2F;improved toolkits for the things you ask it for.&lt;p&gt;You as the user can use all these CLIs as well which ends up an interesting side-channel way of interacting with the agent (you add a todo using the same CLI as what it uses for example).&lt;p&gt;It&amp;#x27;s also incredibly flexible, yesterday I made a &amp;quot;coding agent&amp;quot; by having it create tools to inspect&amp;#x2F;analyze&amp;#x2F;edit a codebase and it could go off and do most things a coding agent can.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;caesarnine&amp;#x2F;binsmith" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;caesarnine&amp;#x2F;binsmith&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://rijnard.com/blog/the-code-only-agent</guid>
-      <pubDate>Mon, 19 Jan 2026 02:27:07 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46674416</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elC0mpa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Hi HN,&lt;p&gt;I’m a Cloud Architect, and I built aws-doctor because I found myself constantly running the same manual checks across different AWS accounts to find &amp;quot;zombie&amp;quot; resources. While AWS Trusted Advisor exists, the best checks are often locked behind paid Business&amp;#x2F;Enterprise support plans, and the AWS Console can be slow when you just want a quick &amp;quot;health check.&amp;quot;&lt;p&gt;What it does: It’s a TUI (Terminal User Interface) that acts as a proactive checkup for your account.&lt;p&gt;Waste Detection: Scans for stopped instances (&amp;gt;30 days), unattached EBS volumes, unassociated Elastic IPs, and expiring Reserved Instances.&lt;p&gt;Cost Diagnosis: Compares your current month-to-date costs against the exact same period last month (e.g., Jan 1–15 vs. Feb 1–15) to spot spending velocity issues.&lt;p&gt;Trends: Visualizes cost history over the last 6 months.&lt;p&gt;The Tech Stack:&lt;p&gt;Written in Go (1.24).&lt;p&gt;Uses AWS SDK v2.&lt;p&gt;UI built with Charm&amp;#x27;s Bubbletea and Lipgloss (for the tables&amp;#x2F;styling).&lt;p&gt;It’s completely open-source and runs locally on your machine (using your standard ~&amp;#x2F;.aws&amp;#x2F;credentials).&lt;p&gt;I’d love to hear your feedback on the code structure or suggestions for other &amp;quot;waste patterns&amp;quot; I should add to the detection logic.&lt;p&gt;Thanks!&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/elC0mpa/aws-doctor</guid>
+      <pubDate>Mon, 19 Jan 2026 04:35:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46675092</comments>
     </item>
     <item>
-      <title>At least 21 killed in Spain after crash involving high-speed trains</title>
-      <link>https://www.bbc.com/news/articles/cedw6ylpynyo</link>
-      <description>&lt;p&gt;The derailed train then collided with an oncoming train, travelling from Madrid to Huelva. Andalusian emergency services said at least 73 people in total were injured in the collision. The company said it will keep terminals open overnight for impacted passengers.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46673453"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bbc.com/news/articles/cedw6ylpynyo'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Ultrathink is deprecated &amp; How to enable 2x thinking tokens in Claude Code</title>
+      <link>https://decodeclaude.com/ultrathink-deprecated/</link>
+      <description>&lt;p&gt;Every prompt gets maximum thinking by default. When to Use Max Thinking More thinking isn’t always better. What Are Thinking Tokens, Anyway.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46672858"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://decodeclaude.com/ultrathink-deprecated/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;t1234s:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;cyberattack?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deadbabe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Always try to sit in seats where your back is toward the direction of motion.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alphadatavault:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;My deepest condolences to the families and loved ones of those lost in the terrible train collision near Adamuz. My thoughts are also with the injured and all those affected by this tragedy. In this moment of profound sorrow, I hope they find strength and support in one another and in the care of those around them.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.bbc.com/news/articles/cedw6ylpynyo</guid>
-      <pubDate>Sun, 18 Jan 2026 23:54:43 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46673453</comments>
-    </item>
-    <item>
-      <title>All your OpenCodes belong to us</title>
-      <link>https://johncodes.com/archive/2026/01-18-all-your-opencodes/</link>
-      <description>&lt;p&gt;This would require a meticulously crafted X. 509 cert with the specially crafted email address and perfect buffer overflow into the malicious code within the cert. In short, this is exactly where an attacker would have to inject a malicious X.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46674424"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://johncodes.com/archive/2026/01-18-all-your-opencodes/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://johncodes.com/archive/2026/01-18-all-your-opencodes/</guid>
-      <pubDate>Mon, 19 Jan 2026 02:28:21 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46674424</comments>
-    </item>
-    <item>
-      <title>CD Projekt issue DMCA takedown notice against popular Cyberpunk VR mod</title>
-      <link>https://www.patreon.com/posts/another-one-dust-148437771</link>
-      <guid isPermaLink="true">https://www.patreon.com/posts/another-one-dust-148437771</guid>
-      <pubDate>Mon, 19 Jan 2026 02:42:08 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46674505</comments>
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JimDabell:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is a really awful example of somebody taking information that fits in a couple of sentences and using AI to generate an entire article out of it by padding it with breathless emphasis. It’s unreadable. It’s absolutely &lt;i&gt;riddled&lt;/i&gt; with AI clichés every couple of sentences.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;teruakohatu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;An environment variable, or config file variable, that cannot be changed after launch is about the worst possible interface. Why not just have an “ultra^2 think” keyword?&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://decodeclaude.com/ultrathink-deprecated/</guid>
+      <pubDate>Sun, 18 Jan 2026 22:34:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46672858</comments>
     </item>
   </channel>
 </rss>
