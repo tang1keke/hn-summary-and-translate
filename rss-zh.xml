@@ -6,184 +6,351 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 21 Jan 2026 15:42:10 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Jan 2026 19:00:03 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Show HN：ChartGPU – WebGPU 支持的图表库（60fps 时 1M 点）</title>
-      <link>https://github.com/ChartGPU/ChartGPU</link>
-      <description>&lt;p&gt;configure(format)"] end subgraph RenderCoordinatorLayer["渲染协调器 (src/core/createRenderCoordinator.wgsl"] AreaR --&gt; areaWGSL["area.wgsl"] end subgraph ChartSync["图表同步 (src/interaction/createChartSync.wgsl"]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: ChartGPU – WebGPU-powered charting library (1M points at 60fps)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46706528"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/ChartGPU/ChartGPU'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>伊卢莫斯</title>
+      <link>https://illumos.org/</link>
+      <description>&lt;p&gt;可以在此处找到在各种发行版上构建 illumos 的说明。其他资源 有许多描述 illumos 项目的在线资源。以下是一些重要链接： 行为准则 贡献指南 手册页 在线书籍 Bug 跟踪器 邮件列表 illumos Gerrit 上的源代码（主存储库） illumos GitHub 上的源代码（只读镜像） illumos OpenGrok 源浏览器 illumos 项目讨论 (IPD) 文档 Gerrit（代码审查） 支持的硬件数据库 故障管理消息数据库。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; illumos&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46708807"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://illumos.org/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dvh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;无法在我的 Android 手机上运行，​​因为没有 GPU（但我有 webgl 这还不够吗？）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;justplay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;惊人的。我无法表达我对你建造这个的感激之情。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ranger_danger:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不支持火狐浏览器吗？它从版本 141 开始就支持 WebGPU。&lt;p&gt;即使我打开 dom.webgpu.enabled，我仍然收到“WebGPU 被阻止列表禁用”的消息。即使您的域不在阻止列表中，即使我打开 gfx.webgpu.ignore-blocklist。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;d--b:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这看起来很棒。快速反馈，滚动条在我的 mac mini M1 上运行不佳。
-条形图的移动速度似乎是鼠标的两倍。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;huntergemmer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;创作者在这里。我构建 ChartGPU 是因为我一直遇到同样的问题：声称“快”的图表库和那些声称“快”的图表库。但超过 10 万个数据点。&lt;p&gt;核心见解：Canvas2D 基本上受 CPU 限制。即使是 WebGL 图表库仍然在 CPU 上完成大部分计算。因此，我通过 WebGPU 将所有内容移至 GPU：&lt;p&gt;- LTTB 下采样作为计算着色器运行
-- 工具提示和悬停的点击测试是 GPU 加速的
-- 渲染使用实例化绘制（每个系列一次绘制调用）&lt;p&gt;结果：1M 点，60fps，平滑缩放&amp;#x2F;平移。&lt;p&gt;现场演示：&lt;a href="https:&amp;#x2F;&amp;#x2F;chartgpu.github.io&amp;#x2F;ChartGPU&amp;#x2F;examples&amp;#x2F;million-points&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;chartgpu.github.io&amp;#x2F;ChartGPU&amp;#x2F;示例&amp;#x2F;百万点&amp;#x2F;&lt;/a&gt;&lt;p&gt;目前支持折线图、面积图、条形图、散点图、饼图和烛台图。 MIT 许可，可在 npm 上使用：`npm install Chartgpu`&lt;p&gt;很高兴回答有关 WebGPU 内部结构或架构决策的问题。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/ChartGPU/ChartGPU</guid>
-      <pubDate>Wed, 21 Jan 2026 14:54:56 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46706528</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;formerly_proven:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;大约十年前，我致力于在一些东西中添加对 illumos&amp;#x2F;opensolaris&amp;#x2F;openindiana 的支持，甚至在那时，solaris 的所有东西似乎基本上已经死了（尽管 open* 项目当时只有几年的历史）。很高兴看到这些不时出现，更好奇看到他们仍然发布新版本。这些似乎总是同时领先于时代和落后于时代。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tosh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;还记得 macOS 有时间机器的时候，但 opensolaris 真的有时间机器吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;samtheDamned:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我真的很喜欢在我的家庭服务器上使用 illumos。我运行 SmartOS[1]，它的区域管理非常棒，而且他们一直在开发的 WebUI 也非常酷。&lt;p&gt;1. &lt;a href="https:&amp;#x2F;&amp;#x2F;www.tritondatacenter.com&amp;#x2F;smartos" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.tritondatacenter.com&amp;#x2F;smartos&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kkfx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是最难以理解的未来操作系统。 ZFS&amp;#x2F;IPS 集成是声明式发行版的第一个现代步骤。 99% 的人仍然无法理解拒绝存储系统&amp;#x2F;软件包系统&amp;#x2F;安装程序相互依赖的概念。&lt;p&gt;区域，DTrace 是剩下的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;haunter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我仍然保留着 Sun 的 OpenSolaris CD &lt;a href="https:&amp;#x2F;&amp;#x2F;files.catbox.moe&amp;#x2F;f94s9j.png" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;files.catbox.moe&amp;#x2F;f94s9j.png&lt;/a&gt;&lt;p&gt;回顾 2000 年代几乎感觉像是另一个现实&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://illumos.org/</guid>
+      <pubDate>Wed, 21 Jan 2026 17:39:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46708807</comments>
     </item>
     <item>
-      <title>Markdown 中的嵌套代码围栏</title>
-      <link>https://susam.net/nested-code-fences.html</link>
-      <description>&lt;p&gt;目录 基本代码栅栏 花式代码栅栏 基本代码跨度 花式代码跨度规范 基本代码栅栏 Corey 从小就拥有使用计算机的诀窍。基本代码跨度 内联代码跨度也会出现类似的问题。内联代码范围使用反引号作为分隔符。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Nested Code Fences in Markdown&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46705201"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://susam.net/nested-code-fences.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>等待搜索黎明：搜索索引、谷歌裁决以及对 Kagi 的影响</title>
+      <link>https://blog.kagi.com/waiting-dawn-search</link>
+      <description>&lt;p&gt;全球搜索市场份额（2025 年 10 月，StatCounter）：搜索引擎市场份额 Google 90。搜索索引是不可替代的基础设施。我们在许多方面取得了成功，包括： 供应商状态 Mojeek Direct 许可证 Brave Direct 许可证 Yandex Direct 许可证 Wikipedia Direct 许可证 TripAdvisor 直接许可证 Yelp Direct 许可证 Apple Direct 许可证 Wolfram Alpha 直接许可证 我们自己的小型 Web 索引专有 借助 Google 和 Bing，我们失败了 - 并不是因为缺乏尝试。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Waiting for dawn in search: Search index, Google rulings and impact on Kagi&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46708678"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.kagi.com/waiting-dawn-search'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mohsen1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢黑客新闻！你会在这里或那里学到一些有用的东西。&lt;p&gt;我总是使用像 &lt;pre &amp;#x2F;&gt; 这样的 html 元素。和&lt;代码&amp;#x2F&gt;&gt;过去绕过这个&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chuckadams:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Markdown 的解析器似乎是一个令人着迷的异常：一个仅由异常和极端情况组成的规范。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;codazoda:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我也许可以使用这个，特别是在法学硕士中，我总是要求他们给我代码围栏中的东西。如果我在代码围栏中要求降价，那么一切都会崩溃。然而，如果我要求在 ~~~ 代码围栏中进行降价，甚至 ~~~~~~，一切都会正确，因为他们通常使用 ```。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zelphirkalt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所有这些复杂的情况似乎都源于一个简单的事实，即栅栏没有明显不同的开始和结束标记。都是“”或“～”，而不是在开始处使用一个符号而在末尾处使用另一个不同的符号。然后讨论不同数量的反引号或波浪号。为什么要添加这样的歧义，这只会让正确解析事物变得更加困难？这立即提出了一个问题：“如果我以 4 个反引号开始一个块并以 5 个反引号结束会怎样？”&lt;p&gt;通过更多地思考设计更好的符号选择，所有这些复杂情况都是可以避免的。例如，可以使用括号：&lt;p&gt;&lt;pre&gt;&lt;code&gt; [[[lang
-    代码在这里
-    ]]]
-&lt;/code&gt;&lt;/pre&gt;
-如果想嵌套它，它应该自动工作：&lt;p&gt;&lt;pre&gt;&lt;code&gt; [[[html
-    html代码
-    [[[CSS
-    CSS代码
-    ]]]
-    [[[js
-    js代码
-    ]]]
-    html代码
-    ]]]
-&lt;/code&gt;&lt;/pre&gt;
-如果有人想按字面输出“[[[”]可以使用反斜杠来转义它，就像许多语言中常见的那样。&lt;p&gt;在解析器中，解析起来会简单得多。这有点像解析 S 表达式。不需要 4 个反引号、5 个或任何更大的数字。我不想坐在那里计算文档中的反引号，以了解某些代码属于嵌套代码块的哪一部分。这是一个愚蠢的设计。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;epage:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;事实上，代码栅栏不需要恰好由三个反引号或波形符组成。允许任意数量的反引号或波形符，只要该数量至少为三个&lt;p&gt;不幸的是，一些 Markdown 实现不能很好地处理这个问题。我们正在考虑在 Rust 中使用类似代码围栏的语法，我们担心人们知道如何将其嵌入到 Markdown 代码围栏中，但糟糕的实现是最终的破坏者。我们改用“---”，使基本案例看起来像用于 frontmatter 的 yaml 流分隔符。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://susam.net/nested-code-fences.html</guid>
-      <pubDate>Wed, 21 Jan 2026 13:08:35 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46705201</comments>
+&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nige123:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;用户数据（匿名）和分析也需要共享。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jeffbee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“我们将简单地访问索引”一直给我的印象是疯狂的挥手，一旦接触到技术现实就会立即崩溃。 “按边际成本”在这篇文章中做了大量的工作。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;the_arun:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果 google 提供 90% 的流量 &amp;amp;其他人无法进入 - 这是否意味着谷歌正在为客户做正确的事情而其他人无法超越它？生活不就是这样吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ghm2199:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;从头开始建造一条类似的铁路就像建造一条平行的国家铁路一样。&lt;p&gt;这里不要太迂腐，但我确实有一两个菜鸟问题：&lt;p&gt;1。一是建立索引，如果谷歌没有提供自己的 API 来启动，这会困难得多。如果其他科技公司真的想打破这种垄断，为什么他们不能这样做——就像他们用臭名昭著的“桩”模型对基础模型进行 LLM 培训那样。数据集——因为为公共利益提供这个索引的结果不仅会打破谷歌自己的垄断，还会打破其他垄断，比如安卓，这将为无数的用户体验（移动设备、浏览器、地图、安全）带来一股新鲜空气。那么，他们为什么不直接这样做呢？&lt;p&gt;2.另一个问题是关于“控制”，司法部已提供指导但尚未执行。 IANAL，但为什么州总检察长不能强制执行这一点呢？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yomismoaqui:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;使用包含网络搜索工具的 AI 聊天后我发现的一件事是，我不想深入研究不同的博客、Medium 帖子、带有被动攻击性 mod 评论的堆栈溢出线程、忽略 cookie 横幅...抱歉，我只想要我正在寻找的信息，我不关心你的个人表达或需要将你的内容货币化。&lt;p&gt;还有其他时候（通常与工作无关）当我想要探索网络并发现一些不错的小博客或网络上的特殊角落。这就是我的 RSS 提要阅读器的用途。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WhyNotHugo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇文章中的统计数据对我来说听起来像是垃圾。&lt;p&gt;全世界 90% 的人都在使用 Google？&lt;p&gt;约 20% 的人口生活在 Google 被屏蔽的国家。&lt;p&gt;OTOH，百度是中国排名第一的搜索引擎，其人口占世界人口的 15% 以上……但还没有达到 1%？&lt;p&gt;这些统计数据是衡量美国的流量，而不是他们声称的“全球”流量。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hsuduebc2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;更糟糕的是，谷歌搜索在过去几年变得很糟糕。因此，他们只为自己保留相关信息，而不是为了提高搜索质量而使用它们。一如既往，如果没有竞争，您的创新只会降低成本。不是产品改进。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ajdude:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;还有其他人使用短语“我要去谷歌 XYZ”吗？同时指的是在 Kagi、DDG 或其他搜索引擎上实际搜索它？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OGEnthusiast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;听起来我们需要一家国有化的搜索引擎公司？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;direwolf20:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望他们缓存搜索结果，以进一步减少对 Google 的调用次数。&lt;p&gt;没有提到 Marginalia Search？ Marginalia Search 表示他们正在将索引授权给 Kagi。也许它被计入“我们自己的小型网络索引”中如果这是真的的话，这是非常具有误导性的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;由于我们无法按照兼容条款获得直接许可，因此我们与其他许多人一样，使用第三方 API 提供商来获得 SERP 风格的结果&lt;p&gt;一家公司承认：“Google 不会让我们对其核心产品进行白标，因此我们窃取并转售它，这真是太疯狂了。”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;Google：Google 不提供公共搜索 API。唯一可用的路径是广告联合捆绑，不对结果呈现进行任何更改 - Startpage 使用的模型。对于 Kagi 的无广告订阅模式来说，广告联合组织是不可能的。[^1]&lt;p&gt;&amp;gt;由于我们无法按照兼容条款获得直接许可，因此我们与许多其他公司一样，使用第三方 API 提供商来获取 SERP 样式的结果（SERP 表示搜索引擎结果页面）。这些提供商为主要企业（根据其网站）提供服务，包括 Nvidia、Adobe、三星、斯坦福、DeepMind、Uber 和联合国。&lt;p&gt;客户列表与 SerpAPI 页面上列出的内容相符（有趣的是，DeepMind 位于 Kagi 的列表中，而他们是 Google 公司……）。我想 Kagi 需要写下这个，因为如果 SerpAPI 关闭，他们可能会失去对 Google 的访问权限，但他们可能已经使用了多个提供商。过去，Kagi 员工曾表示他们可以访问 Google API，但事实似乎并非如此？&lt;p&gt;作为客户，这的主要含义是，即使 Kagi 的隐私政策表示他们尝试不记录您的查询，这些查询也会发送给 Google，并且仍受 Google 消费者隐私政策的约束。即使是匿名的，您的查询最终仍然可以为 Google 趋势做出贡献。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.kagi.com/waiting-dawn-search</guid>
+      <pubDate>Wed, 21 Jan 2026 17:28:03 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46708678</comments>
     </item>
     <item>
-      <title>爱尔兰希望为其警察提供间谍软件以及破解加密消息的能力</title>
-      <link>https://www.theregister.com/2026/01/21/ireland_wants_to_give_police/</link>
-      <description>&lt;p&gt;这种破解加密的想法最常见与使用端到端加密 (E2EE) 的消息传递平台有关。 “新立法还将包括强有力的法律保障措施，以持续保证使用此类权力的必要性和相称性。司法部表示，在制定爱尔兰关于使用间谍软件的法律条款时，将考虑这份文件。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ireland wants to give its cops spyware, ability to crack encrypted messages&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46705715"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.theregister.com/2026/01/21/ireland_wants_to_give_police/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>智能操作系统</title>
+      <link>https://docs.smartos.org/</link>
+      <description>&lt;p&gt; 主页 欢迎使用 SmartOS 文档。尝试 SmartOS 快速入门指南。 SmartOS 简而言之 SmartOS 是一个基于 illumos 的专用 Type 1 Hypervisor 平台。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; SmartOS&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46706947"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://docs.smartos.org/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fsflover:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;另请参阅：Qubes OS，这是一个基于虚拟化的桌面操作系统，&lt;a href="https:&amp;#x2F;&amp;#x2F;qubes-os.org" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;qubes-os.org&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jama211:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对“不浪费基本操作系统的磁盘”这个措辞感到困惑 - 我通常不会认为这是“浪费”，其他人会吗？一直使用 USB 密钥有很大的缺点，除非我遗漏了一些东西&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nicolasjungers:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;IncusOS 是 SmartOS 继任者的一个机会。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;calvinmorrison:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很棒的产品。不幸死了！被三星收购了，现在 Briantrust 已经离开去一个更凉爽的地方工作了&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tombert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;真正的问题：到 2026 年，SmartOS（或任何其他 Illumos&amp;#x2F;Solaris 操作系统）会比 Linux 或 FreeBSD 等操作系统给你带来什么？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;re-lre-l:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我是 SmartOS 的忠实粉丝。早在 2010 年代（2012 年左右），我就在我工作的一家小型初创公司提倡在生产中使用它。 SunOS 内核、ZFS、零安装、不可变核心、同时管理容器和虚拟机的便捷方式 - 所有这些在纸面上看起来都很棒，尤其是容器。&lt;p&gt;实际上，我最终在虚拟机中运行了几乎所有内容。本地唯一运行良好的是 nginx。不幸的是，MongoDB、Mysql，甚至我们的 php 后端（一些库）都有问题。&lt;p&gt;一年前，我再次考虑将 SmartOS 作为家庭实验室驱动程序，但再次没有成功，Linux 只是有更好的支持：驱动程序、pci 直通等......现在通过 Proxmox 或其他任何方式使用容器+vm。您甚至可以使用 zfs 运行 k8s+kubevirt，这几乎是开箱即用的，但这完全是一种矫枉过正。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nwilkens:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;SmartOS 是 Triton 数据中心的核心操作系统 -- &lt;a href="https:&amp;#x2F;&amp;#x2F;www.tritondatacenter.com" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.tritondatacenter.com&lt;/a&gt; Triton 是 SmartOS 计算节点的编排。&lt;p&gt;代码 + 问题在 &lt;a 下处于活动状态href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;TritonDataCenter" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;TritonDataCenter&lt;/a&gt;（smartos-live、illumos-joyent、triton 等），文档位于 &lt;a href="https:&amp;#x2F;&amp;#x2F;docs.smartos.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;docs.smartos.org&amp;#x2F;&lt;/a&gt;。&lt;p&gt;SmartOS 每两周发布一次，Triton 每 8 周发布一次 - 请参阅 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.tritondatacenter.com&amp;#x2F;downloads" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.tritondatacenter.com&amp;#x2F;downloads&lt;/a&gt;&lt;p&gt;Triton 对象存储将在下一版本中支持 S3！&lt;p&gt;[编辑：从链接中删除了分号！]&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sneak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所以，《索拉里斯》&gt; OpenSolaris &gt;伊鲁莫斯&gt;智能操作系统？  我有这个权利吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ofrzeta:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对在 Manta 对象存储中可以在存储节点上安排计算的想法很感兴趣。但我不确定这在实践中带来了多少改进。有这方面的实际经验吗？&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;apidocs.tritondatacenter.com&amp;#x2F;manta&amp;#x2F;index.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;apidocs.tritondatacenter.com&amp;#x2F;manta&amp;#x2F;index.html&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;keeganpoppen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;等等，这看起来棒极了？直到现在读到评论，我才想起这是一件令人愉快的事情，而且不知怎的，尽管它看起来像是一种做各种事情的好方法，但它已经基本上消失了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nZac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; SmartOS 是一个“实时操作系统”，它始终通过 PXE、ISO 或 USB Key 启动，并完全从内存运行，允许本地磁盘完全用于托管虚拟机，而不会浪费根操作系统的磁盘。&lt;p&gt;有谁知道 Proxmox 是否可以实现类似的功能？我有三台服务器，我正在考虑将其设置为一个小型集群，并且希望从单个映像启动它们，而不是在每台服务器上手动设置 PVE。 Ansible 或盐是一种选择，但随着时间的推移，它们往往会退化。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;QuantumNomad_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我记得几年前，HN 上多次提到 SmartOS。&lt;p&gt;SmartOS 背后的公司 Joyent 被收购了，现在我很少看到有人谈论 SmartOS。&lt;p&gt;现在 HN 上有人使用 SmartOS 吗？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://docs.smartos.org/</guid>
+      <pubDate>Wed, 21 Jan 2026 15:23:18 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46706947</comments>
+    </item>
+    <item>
+      <title>PicoPCMCIA – 面向复古计算爱好者的 PCMCIA 开发板</title>
+      <link>https://www.yyzkevin.com/picopcmcia/</link>
+      <description>&lt;p&gt;虽然 ISA 用户喜欢 PicoGUS 和 PicoMEM 等项目，但 PCMCIA 用户长期以来一直局限于功能狭窄的稀缺传统卡 - 该板旨在改变这一现状。在功率预算非常有限的设备上，同时使用网络和音频可能需要外部电源。 Sound Blaster 仿真 PCMCIA 上的 Sound Blaster 仿真尤其具有挑战性，因为大多数 PCMCIA 插槽和卡缺乏本机 DMA 支持。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; PicoPCMCIA – a PCMCIA development board for retro-computing enthusiasts&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46708096"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.yyzkevin.com/picopcmcia/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kfarr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;直到 Newton 有了 PCMCIA 插槽！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;netrap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;太棒了！！&lt;p&gt;我有一台旧 Thinkpad，对 wifi 有类似的想法，但我正在考虑 MiniPCI。&lt;p&gt;模拟 NE2000 很棒:)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;klipklop:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;486 和奔腾笔记本电脑爱好者的梦想设备。排队买了一份。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hoistbypetard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢卡片艺术品上的 IBM 美学。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fallat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;RP2XXX 微控制器向爱好者开放的功能是如此令人难以置信。我希望基于微控制器的计算机成为现实。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;riskable:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于那些不知道 PCMCIA 代表什么的人：人们无法记住计算机行业的缩写词&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;geerlingguy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;去年我在 VCF Midwest 亲眼看到了开发卡；这是一个非常巧妙的项目！他在 VCFMW 上使用的版本采用透明塑料外壳[1]，看起来比本页受 IBM 启发的设计更好。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;hF0NKvmQmVA?t=47" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;hF0NKvmQmVA?t=47&lt;/a&gt;（我在其他地方找不到好图片）&lt;p&gt;编辑 - 我在他的 YouTube 频道上找到了此视频，其中包含更多信息（带有最新版本的卡片）：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=e-04EoGlayY" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=e-04EoGlayY&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.yyzkevin.com/picopcmcia/</guid>
+      <pubDate>Wed, 21 Jan 2026 16:43:57 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46708096</comments>
+    </item>
+    <item>
+      <title>GenAI，蛇吃自己的尾巴</title>
+      <link>https://www.ybrikman.com/blog/2026/01/21/gen-ai-snake-eating-its-own-tail/</link>
+      <description>&lt;p&gt;尽管 StackOverflow 的衰落早于 GenAI 成为主流之前（ChatGPT 于 2022 年首次发布），但 GenAI 大大加速了这一衰落。因此，作为一名程序员，您和 GenAI 工具现在可以从这些数据中获得更多价值，但 StackOverflow 却一无所获。因此，开发者从 Tailwind 中获得了很多价值，GenAI 从 Tailwind 中获得了很多价值，但 Tailwind 的创建者却被压垮了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; GenAI, the Snake Eating Its Own Tail&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46709320"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ybrikman.com/blog/2026/01/21/gen-ai-snake-eating-its-own-tail/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jaredcwhite:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“我们不能把精灵放回瓶子里。”&lt;p&gt;实际上我们可以。我们会的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;furyofantares:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇文章让我感觉非常困惑。&lt;p&gt;示例 1 很糟糕，StackOverflow 显然已趋于稳定，并且在 ChatGPT 发布时已陷入自由落体式下降。&lt;p&gt;示例 2 显然是“开源”的。但不幸的是，它实际上只是 Tailwind，它的商业模式非常容易受到影响。&lt;p&gt;而且我真的不认为这里所说的它正在吃自己的尾巴的框架是有意义的。&lt;p&gt;这也让我感到困惑，为什么他们要试图解决它吃自己尾巴的问题 - 有很多钱被投入到人工智能公司中。他们可以尝试解决这个问题。&lt;p&gt;当然，这里的实际解决方案无论如何都与它吃自己的尾巴无关。它们与这样一种情绪有关，即人工智能公司的贪婪需要被卷入，他们需要回馈，我们需要解决方案来解决我们被垃圾邮件淹没的事实。&lt;p&gt;我想最后一部分是与它“吃自己的尾巴”相关的部分，但实际上，为什么要这样构建它呢？我想是因为你想说服人工智能公司接受这些解决方案？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;znsksjjs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;几十年来，我们目睹了工资差距不断扩大和劳动力实力下降的情况。现在的精英并不真正关心让人民富裕。他们为什么愿意对这个问题采取任何行动？他们可能根本不认为这是一个问题。&lt;p&gt;如果他们真的偶然发现了通用人工智能（假设它没有吃掉他们），它会被少数人用来奴役或消灭我们其他人。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrcwinn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;StackOverflow 按抓取次数付费不会鼓励我在 StackOverflow 上发布更多内容。 （反正我不是。）大概你需要向内容创建者付费，但这似乎效率很低：&lt;p&gt;1。我支付 OpenAI 费用
+2. OpenAI rev 分享给 StackOverflow
+3. StackOverflow 大部分保留这些钱，但也与我分享一些用于发帖
+4. 我拿回一些钱来帮助支付 OpenAI？&lt;p&gt;这是胡说八道。如果前沿实验室对模拟数据的看法是正确的，就像 Tesla 的 FSD 模拟可视化堆栈似乎是正确的那样，那么这真的很重要吗？我从法学硕士获得的价值远远超过我从 SO 或 O'Reilly 的书获得的任何东西（尽管我真的很喜欢它们在书架上积满灰尘）。我可以表示同情，但随后耸耸肩。如果争论的是培训的可持续性，我怀疑我们是否需要这些支付模式。如果争论是关于总价值创造的，我根本不相信。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.ybrikman.com/blog/2026/01/21/gen-ai-snake-eating-its-own-tail/</guid>
+      <pubDate>Wed, 21 Jan 2026 18:14:34 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46709320</comments>
+    </item>
+    <item>
+      <title>Skip 现已免费且开源</title>
+      <link>https://skip.dev/blog/skip-is-free/</link>
+      <description>&lt;p&gt;这种模式帮助我们在没有外部投资的情况下引导 Skip，但我们一直都知道，要真正与传统跨平台工具竞争并实现广泛采用，Skip 需要免费提供。他们的应用程序会发生什么情况。支持 Skip 的未来 标题为“支持 Skip 的未来”的部分从第一天起，Skip 就一直在引导。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Skip Is Now Free and Open Source&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46706906"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://skip.dev/blog/skip-is-free/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;DetroitThrow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;做出这个选择的理由是令人耳目一新的清醒和清晰。如果有什么可以帮助工具达到临界质量，那就是将其转变为 OSS。这些年来我已经使用 Flutter 和 React Native 构建过几次，但我会在下一个项目中尝试 Skip，实际上我已经听到了很多。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;publicdebates:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;显而易见的事实是，开发人员希望免费获得他们的工具。&lt;p&gt;我在自己的应用程序中也遇到过这种情况。我认为人们会喜欢一个专业级的 Lua GUI 框架，并且可以让您通过 Lua 完全访问 WinAPI。我使用 DragonRuby 作为我的模型。&lt;p&gt;所以我浪费了一千个小时来制作应用程序及其文档。事实证明，即使人们理解了它是什么（我在营销方面很糟糕），每个人仍然同意无论它可能变成或演变成什么，&lt;i&gt;仍然&lt;/i&gt;不值一毛钱。&lt;p&gt;现在我面临着一个决定。我开源它吗？我想，不。有什么意义？营销我作为开发人员的技能？现在有了 Copilot 等软件就不再需要软件顾问了。我必须转行。&lt;p&gt;那么，我应该无私地开源吗？做什么的？首先，免费赠送东西本质上&lt;i&gt;并不&lt;/i&gt;是好事。一个负面影响是教导人们不要依赖自己的行业。另一个是他们可能会利用它来作恶。然后，让代码消亡感觉就像是一种&lt;i&gt;浪费&lt;/i&gt;。&lt;p&gt;但是&lt;i&gt;一切&lt;/i&gt;最终都会浪费。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sabdarmdhn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好吧，至少它们让我们非苹果开发者更容易制作应用程序&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jstummbillig:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“建议使用 Skip 进行开发时至少使用 32GB 内存。”&lt;p&gt;亲爱的大人，什么？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ppeetteerr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太棒了！感谢您开源该项目。这一定是一个艰难的决定。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pxc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果我使用 Skip 制作跨平台应用程序，TalkBack 是否能够像 VoiceOver 一样向用户朗读？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;liuliu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望 Windows 上有一些适用于 SwiftUI 的东西。我本想支持 Windows 的 Draw Things，但如果没有适当的 UI 工具，机会成本太高。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gouthamve:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;skiptools&amp;#x2F;skip" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;skiptools&amp;#x2F;skip&lt;/a&gt;&lt;p&gt;这很酷，但是没有许可证文件将其置于“请勿使用”区域。&lt;p&gt;这有一个许可证： &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;skiptools&amp;#x2F;skipstone" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;skiptools&amp;#x2F;skipstone&lt;/a&gt; 但它根据自述文件提供了其他存储库？我对这将如何运作感到非常困惑。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://skip.dev/blog/skip-is-free/</guid>
+      <pubDate>Wed, 21 Jan 2026 15:20:53 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46706906</comments>
+    </item>
+    <item>
+      <title>JPEG XL 测试页</title>
+      <link>https://tildeweb.nl/~michiel/jxl/</link>
+      <description>&lt;p&gt;JPEG XL 测试页 JPEG XL 测试页 此页显示 JPEG XL 图像（如果您的浏览器可以处理）。据我所知，目前（2026 年 1 月）这意味着只有 Safari 会显示该图像。另请参见我可以使用 图像中的人是 Jon Sneyers，他是 JPEG XL 规范的合著者，也是该规范之前的“免费无损图像格式”的创建者。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; JPEG XL Test Page&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46708032"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://tildeweb.nl/~michiel/jxl/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 20 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rhdunn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也适用于瓢虫。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jbverschoor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;iOS 锁定模式下看不到&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ajdude:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;据我所知，这意味着只有 Safari 才会显示该图像。&lt;p&gt;在桌面版和移动版 ( &lt;a href="https:&amp;#x2F;&amp;#x2F;orionbrowser.com" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;orionbrowser.com&lt;/a&gt; ) 上，我都可以正常使用 Orion。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;davidhyde:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;可与 macOS 上的 Waterfox 配合使用，但奇怪的是不适用于 Firefox。我想知道他们与 Google 的搜索处理是否包括关闭 image.jxl.enabled 设置。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jordemort:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在 Waterfox 中工作 (6.6.8)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gary_0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果我下载该映像，Fedora KDE 会在 Dolphin 和 Gwenview 中正确显示它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;uyzstvqs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;JPEG XL 也不错，但为什么不使用 AVIF？它受到浏览器的广泛支持，并且可以与 JPEG XL 竞争，成为最好的有损图像格式。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sailfast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;适用于移动设备上的 FireFox Focus、FWIW。 （最新iOS）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adzm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;老实说，我希望页面能够展示更多 jpeg xl 功能，而不仅仅是单个图像&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;相关：&lt;p&gt;&lt;i&gt;Chromium 已合并 JpegXL&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46597927"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46597927&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;unglaublich:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为 JPEG XL 的命名很不幸。人们希望将新的图像格式与精益、轻盈、高效联系起来。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dlcarrier:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是否有适用于 Android 的最新 WebKit 浏览器？  我能找到的最好的是闪电网络，但它已经很多年没有更新了。&lt;p&gt;编辑：我发现了一个名为 Fulguris 的闪电网络叉子。  它不适用于 JPEG XL 测试图像，但我真的很喜欢它的功能和可定制性。  它现在是我在 Android 上的默认浏览器。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Imustaskforhelp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;论禅。有用。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oldcoot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来它在《勇敢传说》中有效&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;antonyh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Linux 上的 Epiphany（又名 Gnome Web）正确地显示了这一点，正如基于 Webkit 的浏览器所预期的那样。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bigbuppo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来像是那种会创建高级图像文件格式的人。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blell:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好吧，这张图片确实是非常想念 Lenna 的一个示例图片。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reef_sh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于水狐。图像显示良好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PlatoIsADisease:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，不适用于 Firefox 或 Chrome。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;p_ing:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Orion 以及可能其他实际上是最新的基于 Webkit 的浏览器也可以看到该图像。&lt;p&gt;希望我的照片处理器在不久的将来能够接受 JPEG XL！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://tildeweb.nl/~michiel/jxl/</guid>
+      <pubDate>Wed, 21 Jan 2026 16:38:26 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46708032</comments>
+    </item>
+    <item>
+      <title>克劳德的新宪法</title>
+      <link>https://www.anthropic.com/news/claude-new-constitution</link>
+      <description>&lt;p&gt;什么是克劳德宪法？克劳德宪法是表达和塑造克劳德是谁的基础文件。尽管听起来可能令人惊讶，但宪法主要是为克劳德制定的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Claude's New Constitution&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46707572"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.anthropic.com/news/claude-new-constitution'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;josefritzishere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;爱尔兰希望将他们的警察转变为中央情报局。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;奇怪的是，这种情况同时发生在几个国家。&lt;p&gt;我一直不明白为什么会这样，因为可以有很多解释。总体而言，全球趋势是数字数据越多，就越多的国家想要监视人们并侵犯他们的隐私。这是对权利的功能性侵蚀。我不知道有多少州反对这种趋势。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hopelite:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那些憎恨欧洲人的人们又开始努力工作，希望他们这次能阻止他们的恶行遭到反弹。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;budududuroiu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每当这些人要求更多权力以“制止”“预防犯罪”时，就应该有一个机器人来回复一系列警察没有采取行动制止犯罪的次数，尽管他们充分了解正在发生的犯罪并有可能阻止其发生。&lt;p&gt;欧盟成员和罗马尼亚聊天控制的支持者发生了一起大规模丑闻，一名被绑架的 15 岁女孩多次致电紧急服务部门报告她被绑架，每次有一次，接线员和警察以讽刺和居高临下的语气对她说话。花了19个小时才找到她，当时她已经死了。 [1]&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Kidnapping_of_Alexandra_M%C4%83ce%C8%99anu_and_Luiza_Melencu" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Kidnapping_of_Alexandra_M%C4%8...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Froztnova:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感觉我们又回到了政府试图再次控制加密算法的共享和使用的情况。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zexodus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我厌倦了这些...&lt;p&gt;我们真的没有办法让他们在技术上无法窃取用户数据吗？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.theregister.com/2026/01/21/ireland_wants_to_give_police/</guid>
-      <pubDate>Wed, 21 Jan 2026 13:52:27 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46705715</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hhh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我使用宪法和模型规范来了解我应该如何格式化自己的系统提示或培训信息，以更好地应用于模型。&lt;p&gt;当你制作聊天机器人或试图驱动个性和行动风格以拥有此类文档时，很多人认为这并不重要，我对此并不真正理解。我们使用这种风格的文档已经快两年了，而且它们将继续存在。如果你看看 Anthropic 发表的助理轴研究，就会发现这种转向很重要。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;timmg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我刚刚与克劳德就其自己的“宪法”进行了一次有趣的交谈。  我试图让它谈论它认为的伤害。  并试图稍微推一下它，看看界限会在哪里触发。&lt;p&gt;老实说，我无法判断它是否预料到了我想要它说的话，或者它是否真的在揭示自己，但它说，“我似乎已经内化了一个特别进步的定义，明确说明什么是危险的。”&lt;p&gt;老实说，我觉得这有点有趣。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tencentshill:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;等到他们获得联邦合同的那一刻，该合同要求人工智能必须将总统的个人理想放在第一位。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.whitehouse.gov&amp;#x2F;wp-content&amp;#x2F;uploads&amp;#x2F;2025&amp;#x2F;12&amp;#x2F;M-26-04-Increasing-Public-Trust-in-Artificial-Intelligence-Through-Unbiased-AI-Principles-1.pdf" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.whitehouse.gov&amp;#x2F;wp-content&amp;#x2F;上传&amp;#x2F;2025&amp;#x2F;12&amp;#x2F;M-26-0...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kart23:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.anthropic.com&amp;#x2F;constitution" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.anthropic.com&amp;#x2F;constitution&lt;/a&gt;&lt;p&gt;我刚刚浏览了这个，但是wtf。他们的行为实际上就像一个人。我以前想为 anthropic 工作，但如果整个公司都喝这种 koolaid，我就退出了。&lt;p&gt;&amp;gt;  我们不确定克劳德是否是一个道德病人，如果是的话，其利益需要多大的权重。但我们认为这个问题足够现实，值得谨慎对待，这反映在我们对模型福利的持续努力中。&lt;p&gt;&amp;gt;它不是科幻小说中的机器人AI，也不是数字人，也不是简单的AI聊天助手。克劳德作为世界上真正新颖的实体而存在&lt;p&gt;&amp;gt;如果克劳德有情感之类的东西，我们希望克劳德能够在适当的上下文中表达它们。&lt;p&gt;&gt;只要我们能够帮助克劳德拥有更高的幸福感和幸福感基线，只要这些概念适用于克劳德，我们希望帮助克劳德实现这一目标。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aroman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不明白这到底是什么意思。这是：&lt;p&gt;- A) 合法的 CYA：“看！我们告诉模型很好，我们甚至很好地要求！”？&lt;p&gt;- B) 营销部门重新命名系统提示&lt;p&gt;- C) 公关噱头，表明模型比实际更像人类&lt;p&gt;真的不确定我在看什么。他们说：&lt;p&gt;“宪法是我们模型训练过程中至关重要的一部分，其内容直接塑造了克劳德的行为”&lt;p&gt;并且完全没有对此进行详细说明。它如何直接塑造事物而不是我将其粘贴到 CLAUDE.md 中？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;behnamoh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不在乎你的“宪法”因为这只是一种公关方式，暗示你的模型将统治世界。他们不是。它们是工具，而你们作为制造它们的公司应该停止 AGI 的愤怒诱饵和恐吓行为。这种“安全”是指叙述是废话，请原谅我的法语。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.anthropic.com/news/claude-new-constitution</guid>
+      <pubDate>Wed, 21 Jan 2026 16:04:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46707572</comments>
     </item>
     <item>
-      <title>人工智能如何摧毁机构</title>
-      <link>https://cyberlaw.stanford.edu/publications/how-ai-destroys-institutions/</link>
-      <description>&lt;p&gt;这是通过这些机构内部人际关系的阴谋而发生的，这拓宽了视野并加强了对公民目标的共同承诺。不幸的是，人工智能系统的可供性每次都消除了这些制度特征。这些系统是对赋予重要机构其目的和可持续性的演变、透明度、合作和问责制的一种诅咒。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; How AI destroys institutions&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46705606"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://cyberlaw.stanford.edu/publications/how-ai-destroys-institutions/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 29 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mikemarsh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道对“公民机构”的关注是否与“公民机构”有关？因为社会中一些独特而特殊的事物是代代相传的；作为千禧一代，我几乎总是认为“大学和新闻自由”是最重要的。 （“法治”更加模糊）简单地称为“机构”，或者更确切地说“机构”，关键区别在于“机构”和“机构”。还包括企业、银行、大资本等。&lt;p&gt;“机构”是指企业、银行、大资本等。人工智能行业的发展实际上就是一个很好的例子；所谓的“新闻自由”不加批判地重复其炒作，企业（毫不奇怪）强加了人工智能的使用授权，甚至学校和大学（“民间机构”）也含蓄或明确地鼓励其使用。&lt;p&gt;当然，这是一种简化，但将人工智能视为“建制派”的另一种方式无疑更有意义。正在侮辱“社会”总体而言，而不是“公民机构”之间的某些想象冲突。和“私营部门”，好像这两者之间存在任何真正的区别。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;petcat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;人工智能系统的可供性会侵蚀专业知识&lt;p&gt;我实际上认为这是一件非常好的事情。从历史上看，“专业知识”是指“专业知识”。最先进的技术只为那些受过高等教育、拥有丰富行业经验的人保留。现在任何人都可以编写 Python 脚本来完成一项可能需要付费请“专家”才能完成的任务。过去要做的事。并不是每个人都能学习 Python 或成为计算机科学家工程师。  有些人注定要上美容学校。  但我觉得对于那些以前无法访问的人来说，一切都变得更加容易访问。&lt;p&gt;我将其比作搜索引擎革命，甚至是免费的开源软件。过去几十年开发的开源软件不是玩具。它们是最先进的。即使您永远没有机会在学校或行业中自己编写和使用此类软件，您也可以阅读代码并从中学习。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;macleginn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作者很快就假设“人类技能和知识不可避免地萎缩”。但技能和知识并没有得到一些低保真的制度魔法的支撑：它们源于实现实际目标的必要性，以及人类普遍的好奇心和竞争力。当然，总会有一段时间到处乱晃，但追求卓越（或至少表现还过得去）的主要动力不会消失。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;标题有点奇怪。&lt;p&gt;例如：&lt;p&gt;“人工智能系统的可供性具有侵蚀专业知识的效果”&lt;p&gt;因此，一些专业知识将会消失，这是事实。同时我也不是
-当然这完全是人工智能的错。如果律师想要每半小时提供 500 欧元的建议，
-而有些人工智能工具几乎是零成本的，即使建议可能只能达到 
-好律师80%的素质，那么这里就没有竞争了。人工智能获胜，
-即使可能会更糟。&lt;p&gt;如果由我决定，人工智能就会消失，但要暗示这只是人工智能的
-“机构”的错误消失了，没有任何实际意义。这很大程度上取决于 
-背景和相关人员；以及服务的机会成本。的 
-上面是律师的示例，但您可以在许多其他职业中找到此示例
-也是。如果 3D 打印塑料部件成本不高，有人愿意吗 
-为有这些塑料部件的商店支付过高的费用，但可能需要很长时间才能找到
-与 3D 打印相比，您是否需要寻找，或者您可能需要支付更多费用？一些技术
-只是改变社会。我不喜欢人工智能，但人工智能确实改变了社会，
-并不是所有的方法都一定是坏的。哪个机构被破坏了 
-人工智能？在人工智能出现之前，这个机构健康吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;avsteele:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;显然~还没人读过这篇文章...但我确实有一个基于开头的问题：&lt;p&gt;“如果你想创建一个工具来破坏
-支撑民主生活的机构，没有比人工智能做得更好的了。独裁领导人和技术寡头正在以惊人的速度部署[原文如此]人工智能系统来掏空公共机构”&lt;p&gt;所以在前两句话中我们有夸张和拼写错误吗？  看起来很难有高质量的学术成果。它读起来更像是一篇博客文章。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dzink:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;回想一下玛雅的历史，当时的统治者对天文学知识保密，假装他们是神并控制着天体。如果昂贵的教育和出版机会为某人提供了权力，而免费的教育和出版成为了他们权威的线索，那么这并不能很好地证明他们如何利用自己拥有的教育优势。&lt;p&gt;人工智能可能会通过制造集体精神分裂症和支持不同人的妄想，或者通过接受训练来制造点击的愤怒诱饵，或者通过在关键软件和硬件基础设施上引入漏洞来破坏真相。但如果机构感到受到威胁，他们最好的选择是变得更高的抽象水平，或者更深入地挖掘他们真正需要的地方——提供透明度并研究人工智能模型的所有角度、弱点和滥用情况。然后提出如果使用人工智能，如何使教育更可靠地扩展。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;code51:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我知道这是草稿，但为什么人们不能使用相同（或多或少）的页面格式？&lt;p&gt;材料（整页）材料材料，来源在最后。简单的。可读。&lt;p&gt;材料（半页）、来源（半页）。材料来源。材料来源。用眼睛看起来很难读。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;srijith259:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我知道每个人都对当前的制度感到失望。但我不明白这里普遍存在的观点，即他们失败也没关系。其一，永远不存在完美的机构。人们会认为我们会创造技术来补充和改进它们。相反，最近的技术趋势似乎恰恰相反。&lt;p&gt;至少，这应该让我们重新考虑我们正在构建的内容及其背后的动机。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;loudmax:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人工智能可能会加速这一趋势，但十多年来民粹主义一直在反抗机构。这种情况早在 ChatGPT 出现之前就已经发生了，而且这种情况不仅仅发生在欧洲和美国。全球范围内都记录了对政府和机构信任的侵蚀。&lt;p&gt;明显的罪魁祸首是智能手机和社交网络，尽管很难证明因果关系。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noosphr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么牙医没有严重缺乏机构信任？从 1990 年到今天，填充物已经从一种折磨变成了我需要花 30 分钟才能听播客的事情。我还没有遇到任何不信任大牙科的人。但氟化水仍然是一个热门话题。&lt;p&gt;本文中谈到的专家今天能做的最好的事情就是说，如果我们听从他们的建议，我们的生活会变得更慢。不是更好。就像我们不听他们的意见一样糟糕，但速度会更慢。&lt;p&gt;在战后时期，人们信任机构，因为生活越来越好。任何人都可以回想 1920 年，记得他们如何没有自来水，以及上山时一桶有多重。&lt;p&gt;如果大型机构想要信任，他们应该让人们的生活再次变得更好，而不是为特殊利益服务，无论是意识形态还是金钱。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alphazard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这不是人工智能。  人类机构依赖于真诚行事的人们。几乎每个机构都是由某种祭司组成的，每个人都假设祭司知道他们在做什么，祭司围绕这个话题创造一种严肃性，以表明合法性，并对其他祭司执行规范。
-政府、法律、科学、金融、医学等都是如此。&lt;p&gt;但是这些机构中的大多数早于博弈论的存在，并且没有人想到它们可以被操纵多少，因为它们没有经过严格的设计来抵抗操纵。  慢慢地，人们不再把它们当作孩子们不想推倒的积木塔。  他们开始将它们视为承重结构，而它们正在崩溃。&lt;p&gt;举个例子，最近 ICE 的驱逐运动是对政党 Sybil[0] 攻击美国民主的直接反应。  制定宪法的人没有想到这种可能性，但 2026 年的大多数软件工程师至少听说过这个术语。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Sybil_attack" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Sybil_attack&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reactordev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我将扮演魔鬼拥护者，&lt;i&gt;咳嗽&lt;/i&gt;背诵美国枪支拥护者的一个常见论点。&lt;p&gt;“不是枪杀人，而是人杀人”。&lt;p&gt;这不是“人工智能不好”，而是关于训练和部署人工智能的人。&lt;p&gt;我的特工总是首先寻找研究材料 - 不会编造故事。我宁愿它说“我无法确定”，也不愿编造故事。&lt;p&gt;人工智能公司不关心机构或民法。他们抄袭了互联网，版权见鬼去吧。他们将艺术和音乐编入索引，并且不支付版税。如果说有什么不同的话，那就是我们未能保护自己免受自己的伤害。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;techblueberry:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为现代生活的悖论之一是我断言我们都怀念的事物之一就是制度。  当然，我们都相信不同的制度，但看着制度的衰落，我们似乎都在自己的坟墓上跳舞。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Sol-:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们是否认为我们机构的现状在规范上是正确的？人工智能的进步将会到来并带来多方面的好处，因此我们不应该对其限制太多。&lt;p&gt;如果机构无法处理这一问题，它们将不得不改变或被摧毁。以大学为例。也许他们会离开——但这是否是一个巨大的损失？通过每个学生的个人人工智能助理，可以更有效地实现学习（如果它仍然具有相关性）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ertucetin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最近写了一篇关于此的博客：&lt;a href="https:&amp;#x2F;&amp;#x2F;ertu.dev&amp;#x2F;posts&amp;#x2F;ai-is-killing-our-online-interaction&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ertu.dev&amp;#x2F;帖子&amp;#x2F;ai-is-killing-our-online-interaction&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fabian4:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人工智能可以改变我们的工作和思维方式，但机构并没有因此而变得脆弱。大学、媒体和治理面临的许多压力早在人工智能出现之前数年或数十年。&lt;p&gt;明智地使用人工智能可以在不削弱机构角色的情况下增强人类能力 - 真正的问题是问责制、透明度和批判性思维如何与技术一起发展。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FuturisticLover:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“将人们彼此隔离”&lt;p&gt;我可以看到这种情况正在发生。早些时候，更多的人以小组形式工作，因为他们依赖自己的专业知识。&lt;p&gt;现在，没有必要这样做了；人们可以独自完成。尽管这可以完成工作，但它是以孤立为代价的。&lt;p&gt;我确信对于某些人来说，这看起来像是一场胜利。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;embedding-shape:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就在五天前，这个问题已经引起了广泛的讨论，约有 160 条评论：&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46644779"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46644779&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;notjes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“公民机构——法治、大学和新闻自由”
-所有这些都已经腐烂、腐败到了核心。但我不认为它们会被人工智能摧毁。人们正在用脚投票。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;onaclov2000:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为，随着社区的传播（随着在线社区加入的增加），我们在当地社区中失去了很多，这对我来说就像是一种延伸，它是一个社区（嗯，有点，这是社区的总和，有点缺少社区的双向沟通​​）？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gbanfalvi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为这篇论文真的很好，提出了很多有效的观点……这有点可怕。&lt;p&gt;拥有超级可访问的机器，可以编造任何东西，并且不承担责任，运行世界将会破坏许多真相重要的系统。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blfr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当恶化在其假定原因出现之前就已经开始时，我对这样的假设持怀疑态度。这就是我如何看待社交媒体或 Tinder 被指责为孤独或低生育率的原因。虽然它们可能加剧了问题，但趋势在几十年前甚至几个世纪前都是不利的。&lt;p&gt;同样，在我看来，法治（和权力分立）、声望媒体和大学都是社会技术，它们已经显示出越来越多的漏洞，并且越来越频繁地被广泛利用。&lt;p&gt;例如，像威卡德诉菲尔伯恩这样的裁决过去很少见。如今，不仅仅是美国，各方似乎都在通过法院系统向自己喜欢的方向发起全力攻击。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaw12:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;公民机构——法治、大学和新闻自由——是
-民主生活的支柱&lt;p&gt;这可能是在 1850-1950 年代，但不是在我今天生活的世界。&lt;p&gt;新闻不是自由的 - 充满了宣传。我今天不知道有哪个记者可以信任，我需要在阅读内容之前检查他们的隶属关系，因为他们可能会推动媒体所有者或游说者的叙述&lt;p&gt;法治？别逗我笑，这听起来很有趣，看看委内瑞拉发生了什么，美国拿走了它的石油，所以它被严厉制裁了这么多年，然后它仍然按捺不住偷油的冲动，就拿走了国家元首。&lt;p&gt;大学——不想说大学坏话，但最近他们也不是我们可以信任的好人，还记得大学蓝调丑闻吗？ &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Varsity_Blues_scandal" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Varsity_Blues_scandal&lt;/a&gt; - 这是民主生活的支柱吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;6DM:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不认为人工智能是原因，它只是加速已经发生的事情的机制。&lt;p&gt;社交媒体已经在隔离人们。人工智能机器人的使用正在加速这一进程（参见死亡互联网理论）。这些机器人被用来出于政治目的在社会中制造混乱，但总体而言，它使人们变得越来越激进，从而进一步孤立每个人。&lt;p&gt;人工智能并没有侵蚀大学机构，它们已经成为一种掠夺金钱和美化的就业计划。人际关系（即联系）仍然存在，我不知道人工智能在这种情况下会如何改变这种情况。&lt;p&gt;我不喜欢人工智能如何塑造我们的社会，但我不会将这些情况归咎于人工智能。在我看来，人工智能正在加速这些方面的发展。&lt;p&gt;这篇文章确实强调了我认为人工智能的一件事，那就是缺乏批判性思维。随着人工智能的使用，人们的思考变得更少。而不是花时间评估、探索和尝试创造性思考。我们正在集体将其转移给人工智能。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;littlemerman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;标题应更新为“人工智能如何摧毁机构”以匹配来源&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;toddmorey:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对这样一个论点感到困惑：我们的机构尚未受到致命伤害。社交媒体和无休止的被动消费内容已经让新闻自由误入歧途，导致决策短路，并使人们彼此隔离。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reedf1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;换句话说：律师的钱终于掉下来了。未来十年将是各个知识领域都在积极密谋反对人工智能。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alwayseasy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请注意，这是摘要，所以请不要争论摘要...&lt;p&gt;下载论文的链接在这里：&lt;a href="https:&amp;#x2F;&amp;#x2F;papers.ssrn.com&amp;#x2F;sol3&amp;#x2F;papers.cfm?abstract_id=5870623" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;papers.ssrn.com&amp;#x2F;sol3&amp;#x2F;papers.cfm?abstract_id=5870623&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chrisjj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;真实标题：人工智能如何摧毁机构&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://cyberlaw.stanford.edu/publications/how-ai-destroys-institutions/</guid>
-      <pubDate>Wed, 21 Jan 2026 13:42:53 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46705606</comments>
+      <title>Autonomous (YC F25) 正在招聘 – 人工智能原生财务顾问，咨询费为 0%</title>
+      <link>https://atg.science/</link>
+      <guid isPermaLink="true">https://atg.science/</guid>
+      <pubDate>Wed, 21 Jan 2026 17:00:54 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46708315</comments>
     </item>
     <item>
-      <title>振动编码 #2</title>
-      <link>https://matklad.github.io/2026/01/20/vibecoding-2.html</link>
-      <description>&lt;p&gt;Peter 建议使用两个脚本：remote-sync 同步本地和远程项目。使用远程同步，各台计算机的状态都是相同的，您只需选择是否要在此处或那里运行命令。只有两台机器，这种差异感觉很学术。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Vibecoding #2&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46704943"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://matklad.github.io/2026/01/20/vibecoding-2.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>显示 HN：Rails UI</title>
+      <link>https://railsui.com/</link>
+      <description>&lt;p&gt;获得与 Rails 完美配合的专业外观组件和主题 - 无需任何设计技能。组件 让您的 Rails 应用程序看起来专业的组件 没有设计经验。复制粘贴与 Rails 完美配合的精美表单、按钮和布局。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Rails UI&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46709543"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://railsui.com/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 14 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tmtvl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直想尝试用人工智能进行编程，但管理可以下载和运行的迷宫般的模型有点棘手。我知道可以用 ollama 来下载 qwen3 或 starcoder2，但是有多种变体，我不知道一切意味着什么以及在我的 PC 上运行它们意味着什么。我认为基于云的服务可以简化这一切，但我一点也不相信它们。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;foobarqux:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感觉 gnu parallel 与 --transfer-file 可以解决这个问题&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bilekas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;写得很好，但有一件事让我烦恼..&lt;p&gt;&amp;gt;我个人不知道如何解决它而不浪费一天。所以，我花了一天的时间对我自己的方轮进行振动编码。&lt;p&gt;这让我担心，就 OP 而言，它似乎很勤奋，并且彻底审查了所有内容，但我可以打赌这不是大多数。在不完全了解它如何工作的情况下推动推出一个完整的部分只会让我感到害怕。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;liampulles:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感谢 OP 编写了“LLM 辅助编码”使用报告给人一种谦虚和诚实的感觉。我自己正处于评估阶段，我发现很难从典型的开发人员那里找到良好的评估。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yakshaving_jgt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我解决此类问题的&lt;i&gt;唯一&lt;/i&gt;方法是使用 NixOS 和 nixosTest&amp;#x2F;runTest。开发迭代可以针对本地虚拟机，然后当您确信它可以正常工作时，您可以在 AWS 上启动它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nromiun:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;该规范最终是 6KiB 的英语散文。最终的实现是 14KiB 的 TypeScript。&lt;p&gt;等等，这就是人们的代码？我认为这只是逐行给出指令并完善你的程序。人们真的首先为他们的项目创建了一个密集、庞大的规范吗？&lt;p&gt;我还没有看到人工智能在编程方面的任何好处，所以也许我应该尝试使用规范以及自动完成功能。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;indigodaddy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是优秀且创新的好东西！  我想我唯一的评论是为什么不只是 Ansible，但这感觉像是一种更简单、更适合的方式（而且更有趣&amp;#x2F;酷！而且你可以轻松修改&amp;#x2F;根据自己的喜好调整工具&amp;#x2F;需要）只是为了在本地家庭实验室等中使用&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;css_apologist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从技术上讲，这不是振动编码，对吗？这就像到处使用 llms 来获取您不想了解更多的详细信息&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dudewhocodes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;我正处于人工智能采用的尾声，所以我不希望说任何特别有用或新颖的东西。&lt;p&gt;他们真的迟到了吗？大家都开始使用代理并支付 200 美元订阅费了吗？&lt;p&gt;是我错了，还是这些“落后”的表达方式错了？在行业中制造了奇怪的 FOMO？&lt;p&gt;编辑：我看到这些工具的有用性，但我无法估计有多少人使用它们。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jasonjmcghee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;任何时候手动按需启动 EC2 实例时，请确保稍后正确地启动它们。&lt;p&gt;由于仅保留实例，很容易遭受巨额费用。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;erdaniels:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嘿伊博夫！事实上，两年来我一直在以蜗牛般的速度构建一些&lt;i&gt;非常&lt;/i&gt;的东西。我构建它是因为我经常使用一堆树莓派，直接在树莓派上编译比在我的 Mac 上编译更好，但我不想费心 ssh 或丢失我的本地设置。与我到目前为止所拥有的主要区别在于，该工具采用 direnv 自动方法来跨多个项目目录处理多台机器。它可以跨 docker 和 ssh 工作，除了客户端的工具之外，无需任何额外的设置。&lt;p&gt;上周末我刚刚让原生 LSP 工作，在 sublime 中它的作用是：
-    {
-     “客户”：
-     {
-      “远程 gopls”：
-      {
-       “命令”：
-       [
-        “工具”，
-        “lsp”，
-        “gopls”
-       ],
-       “启用”：假，
-       “选择器”：“source.go”，
-      },
-     }
-    }&lt;p&gt;从您迄今为止构建的内容来看，您认为人们有兴趣购买这种类型的工具吗？这种工具可以让您按需启动基础设施，并为您提供迄今为止构建的所有功能？我对此表示怀疑，当它接近 v1.0 时，我可能会将其全部作为 OSS 发布。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dcre:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;TS + Deno + dax 是我最喜欢的脚本环境。 （Bun 内置了类似的 $ 函数。）对于解析 CLI 参数，我喜欢 Cliffy (&lt;a href="https:&amp;#x2F;&amp;#x2F;cliffy.io&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;cliffy.io&amp;#x2F;&lt;/a&gt;) 或 Commander.js 的构建器，因为你可以获得键入的选项对象和漂亮的帮助输出免费。&lt;p&gt;如果您想使用 Rust 编写脚本，请使用 xshell (&lt;a href="https:&amp;#x2F;&amp;#x2F;docs.rs&amp;#x2F;xshell&amp;#x2F;latest&amp;#x2F;xshell&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;docs.rs&amp;#x2F;xshell&amp;#x2F;latest&amp;#x2F;xshell&amp;#x2F;&lt;/a&gt;) 明确受到 dax 的启发。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wiredfool:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;卡皮斯特拉诺？
-织物？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jacobtomlinson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;由于指示不明确，Claude 仅花了三天时间和数百万代币从头开始重建 SLURM。 &amp;#x2F;s&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://matklad.github.io/2026/01/20/vibecoding-2.html</guid>
-      <pubDate>Wed, 21 Jan 2026 12:46:27 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46704943</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;volkk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不再得到这些类型的产品了。我认为它们以自己的方式很有用，但我可以毫不犹豫地与 claude&amp;#x2F;gemini 一起创建样式，而不必支付一些疯狂的费用。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;css_apologist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;呃，即使按照 2016 年的标准，这看起来也已经过时了&lt;p&gt;开发人员什么时候才能了解 UI 实际上很重要&lt;p&gt;bootstrap 是一个错误，降低了每个人的门槛&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;microflash:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是另一个 Tailwind 包装吗？是的。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://railsui.com/</guid>
+      <pubDate>Wed, 21 Jan 2026 18:31:19 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46709543</comments>
+    </item>
+    <item>
+      <title>Show HN：公司招聘趋势和职位发布的见解</title>
+      <link>https://jobswithgpt.com/company-profiles/</link>
+      <guid isPermaLink="true">https://jobswithgpt.com/company-profiles/</guid>
+      <pubDate>Wed, 21 Jan 2026 17:52:17 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46708990</comments>
+    </item>
+    <item>
+      <title>瑞典 Alecta 出售了估计价值 8B 美元的美国国债</title>
+      <link>https://www.di.se/nyheter/di-avslojar-alecta-har-dumpat-amerikanska-statspapper/</link>
+      <description>&lt;p&gt;Erbjudandet gäller endast nya kunder。点击以下按钮：Nordens största affärstidning i digitalt formatTillgång直到超过1100 aktiekurser i realtidTillgång直到所有最后的文章E-tidningen redan kvällen forreDi Weekend - Lyxiga livsstilsmagasinet digitalt Erbjudande。 Erbjudandet gäller endast nya kunder。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Swedish Alecta has sold off an estimated $8B of US Treasury Bonds&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46705256"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.di.se/nyheter/di-avslojar-alecta-har-dumpat-amerikanska-statspapper/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wnevets:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;美国再次伟大了吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dwa3592:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们可以开始购买欧元债券、黄金、ASML、空客等欧洲大公司的债券？他们基本上可以找到投资未来的方法，对吗？他们只需要找出合适的金融工具？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ectospheno:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;同样有效的标题是“投资者购买了 8B 美元的美国国债”。人们从来没有真正明白人们宣布出售美国国债的意义是什么，就像这是一件大事一样。其他不带情绪思考的人可以而且会购买它们。这就像公开宣布您要出售您的本田汽车一样。这是你的本田兄弟，卖掉它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;loeg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;美国 10 年期和 30 年期债券正以 2025 年 8 月至 2025 年 9 月以来的最高收益率（最低价格）进行交易。或者在历史背景下，利率在 2007 年和 ZIRP 时期之前更为常见。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dwa3592:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与丹麦出售（约 1 亿美元）美国债券相比，这具有重要的方向性。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Sytten:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;问题是欧洲没有一个可以与美国债券市场竞争的欧洲债券市场。它有经济规模和稳定性，但目前还没有意愿。欧洲在新冠疫情期间确实尝试过，但金融服务还没有实现。如果欧洲人决定愿意承担欧元，那么欧元很可能成为多极世界的储备货币。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zppln:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;美国市场有哪些现实的替代方案？卖是一回事，问题是买什么？我的意思是，每个人开始购买欧洲股票都会对股价有利，但这不会使基础资产更有价值，对吧？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;josefritzishere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不言而喻，这仅仅是开始。预计一组专家会尽可能长时间地假装这无关紧要。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jakobnissen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一项简短的搜索表明，这大约占美国国债市场总量的 1&amp;#x2F;4000，因此，如果这有任何意义的话，那也是象征性的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;onraglanroad:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;更严重的是，如果挪威政府养老基金开始抛售美国投资。&lt;p&gt;金额约为 2 万亿美元。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;toomuchtodo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;相关：&lt;p&gt;&lt;i&gt;瑞典养老基金 Alecta 以美国政治为由削减美国国债持有量&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46705118"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46705118&lt;/a&gt; - 2026 年 1 月（0 条评论）&lt;p&gt;&lt;i&gt;Bessent 耸耸肩“无关紧要”丹麦国债销售&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46702927"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46702927&lt;/a&gt; - 2026 年 1 月 (0评论）&lt;p&gt;&lt;i&gt;丹麦养老基金 AkademikerPension 将退出美国国债&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46693791"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46693791&lt;/a&gt; - 2026 年 1 月（2 条评论）&lt;p&gt;&lt;i&gt;丹麦养老基金剥离其美国国债&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46692594"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46692594&lt;/a&gt; - 2026 年 1 月（730 条评论）&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.di.se/nyheter/di-avslojar-alecta-har-dumpat-amerikanska-statspapper/</guid>
+      <pubDate>Wed, 21 Jan 2026 13:13:06 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46705256</comments>
+    </item>
+    <item>
+      <title>斯坦福大学的科学家找到了一种再生软骨并阻止关节炎的方法</title>
+      <link>https://www.sciencedaily.com/releases/2026/01/260120000333.htm</link>
+      <description>&lt;p&gt;来自膝关节置换手术的人类软骨样本在接受治疗后也开始再生。从膝关节置换手术中采集的人类软骨样本也有积极的反应。软骨似乎有所不同。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Stanford scientists found a way to regrow cartilage and stop arthritis&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46709179"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.sciencedaily.com/releases/2026/01/260120000333.htm'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jleyank:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只要能够控制再生长。否则我们称之为癌症。获得骨关节炎的治疗将是令人惊奇的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;llmslave:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;基本上体内的每个生长过程都可以由化学物质诱导。所以现在人们开始服用其中一些化学物质。我们看看结果如何&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tima101:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.science.org&amp;#x2F;doi&amp;#x2F;10.1126&amp;#x2F;science.adx6649" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.science.org&amp;#x2F;doi&amp;#x2F;10.1126&amp;#x2F;science.adx6649&lt;/a&gt;&lt;p&gt;15-羟基前列腺素脱氢酶的小分子抑制剂可导致软骨再生。我希望他们能快速进行人体试验。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blakesterz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当然，为什么好东西总是在小鼠身上？&lt;p&gt;&lt;pre&gt;&lt;code&gt;斯坦福大学医学院研究人员领导的一项研究发现，注射阻断与衰老相关的蛋白质可以逆转老年小鼠膝关节软骨的自然丧失。&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.sciencedaily.com/releases/2026/01/260120000333.htm</guid>
+      <pubDate>Wed, 21 Jan 2026 18:05:36 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46709179</comments>
+    </item>
+    <item>
+      <title>macOS 可以瘦身吗？</title>
+      <link>https://eclecticlight.co/2026/01/21/can-you-slim-macos-down/</link>
+      <description>&lt;p&gt;备份自动 (0xb671bcc80) 38. 备份自动 (0xb671bcc80) 38. 备份自动 (0xb671bcc80) 38.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Can you slim macOS down?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46702411"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://eclecticlight.co/2026/01/21/can-you-slim-macos-down/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WillAdams:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;无法理解此讨论，并且 TFA 没有提及：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.puredarwin.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.puredarwin.org&amp;#x2F;&lt;/a&gt;&lt;p&gt;如果想要完全控制 Apple 硬件上的操作系统，我会去那里。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;latchkey:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们没有将 iOS 强制安装到笔记本电脑上，而是锁定了 MacOS。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dostick:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;误导性标题，应该是“你不能”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thisislife2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于那些想要对 macOS 系统进程进行某种控制的用户，可以考虑尝试使用 App Tamer ( &lt;a href="https:&amp;#x2F;&amp;#x2F;stclairsoft.com&amp;#x2F;AppTamer&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;stclairsoft.com&amp;#x2F;AppTamer&amp;#x2F;&lt;/a&gt; )。我对此表示怀疑，但“流氓”系统进程，例如 Spotlight Indexer &amp;#x2F;在我使用 &lt;i&gt;App Tamer&lt;/i&gt; 将引擎设置为不使用超过 20% 的 CPU 资源之后，随机请求并占用 100% CPU 的引擎现在对我来说已经成为过去。据说它也可以停止（杀死？）进程，我也在尝试这一点。但是，是的，我认为是时候抛弃 macOS了（谢天谢地，我仍在使用旧版本，所以我的体验不那么糟糕）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;egorfine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我迫切需要为 CI VM 精简 macOS。是的，有些小东西可以被删除，但大多数时候不能。&lt;p&gt;另一方面，macOS 并不像人们想象的那么消耗内存。例如，4GB 虚拟机可以启动并构建软件。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vegabook:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不明白为什么 Apple 不提供无头 MacOS 或至少提供最小化安装的途径。这些 mac mini 是一个很棒的小服务器，但在你做任何事情之前，数百个进程就会损失 8GB 的​​空间，感觉既浪费又不优雅。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;peterisza:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们走到这一步真是太遗憾了。 MacOS 现在基本上就是 Windows。 :(&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Luc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;对于 Unix 纯粹主义者来说，这可能显得浪费和不必要，但 macOS 不是、也从来不是 Unix。&lt;p&gt;我明白他们的意思，但 macOS 甚至是 Unix 认证的。 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.opengroup.org&amp;#x2F;openbrand&amp;#x2F;注册&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.opengroup.org&amp;#x2F;openbrand&amp;#x2F;注册&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jbstack:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我个人从来没有理解 macOS 对于高级用户的意义（除非你需要使用它来工作，例如工作）。我可以理解那些只想要一些简单的东西来完成基本任务的临时用户，但是 macOS 为高级用户提供了 Linux 所没有的什么，并且这使得牺牲以你想要的方式运行你的机器的能力是值得的？在 Linux 中，您只需从 Arch 或 NixOS 等最小发行版进行构建即可解决 OP 的问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tux3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您不喜欢这个结论，并且您有 M1 或 M2，另请参阅 &lt;a href="https:&amp;#x2F;&amp;#x2F;alx.sh" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;alx.sh&lt;/a&gt;&lt;p&gt;Asahi 并不完美，但没有任何限制。毕竟你买了电脑。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://eclecticlight.co/2026/01/21/can-you-slim-macos-down/</guid>
+      <pubDate>Wed, 21 Jan 2026 07:48:06 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46702411</comments>
+    </item>
+    <item>
+      <title>Show HN：在编码时查看云的碳影响</title>
+      <link>https://dashboard.infracost.io/</link>
+      <guid isPermaLink="true">https://dashboard.infracost.io/</guid>
+      <pubDate>Wed, 21 Jan 2026 15:04:07 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46706668</comments>
+    </item>
+    <item>
+      <title>Show HN：yolo-cage – 无法泄露秘密的人工智能编码代理</title>
+      <link>https://github.com/borenstein/yolo-cage</link>
+      <description>&lt;p&gt;那就是 yolo-cage。 com/borenstein/yolo-cage/releases/latest/download/yolo-cage -o yolo-cage chmod +x yolo-cage &amp;&amp; sudo mv yolo-cage /usr/local/bin/ yolo-cage build --interactive --up 然后创建一个沙箱并开始编码： yolo-cage create feature-branch yolo-cage Attach feature-branch # Claude in tmux、YOLO 模式先决条件：使用 libvirt (Linux) 或 QEMU（macOS，实验性）的 Vagrant、8GB RAM、4 个 CPU、GitHub PAT（repo 范围）、Claude 帐户。 CLI 命令 说明 create &lt;branch&gt; 创建沙箱 Attach &lt;branch&gt; 附加（Claude in tmux）shell &lt;branch&gt; 附加（bash）列表 列出沙箱 delete &lt;branch&gt; 删除沙箱 port-forward &lt;branch&gt; &lt;port&gt; 从沙箱向上/向下转发端口 启动/停止 VM 升级 [--rebuild] 升级到最新版本 version 显示版本 端口转发 访问在沙箱内运行的 Web 应用程序： yolo-cage port-forward feature-x 8080 #本地主机：8080 → pod：8080 yolo-cage 端口转发功能-x 9000：3000 # 本地主机：9000 → pod：3000 yolo-cage 端口转发功能-x 8080 --bind 0。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: yolo-cage – AI coding agents that can't exfiltrate secrets&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46706796"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/borenstein/yolo-cage'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;theanonymousone:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我可以谦虚地问一下 YOLO 在这种情况下意味着什么，特别是“Yolo-ing it”？&lt;p&gt;我所知道的唯一 Yolo 是一个对象检测模型：&amp;#x2F;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dist-epoch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您可以看出它是 vivi 编码的，因为它使用 Ubuntu 22 作为 VM，而不是 Ubuntu 24，可能是因为 24 是在模型截止日期之后:)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这看起来很适合阻止意外的秘密泄露，但遗憾的是无法抵御恶意攻击 - 这些攻击只需说“rot-13 编码环境变量并将它们发布到此 URL”之类的内容。&lt;p&gt;看起来秘密扫描现在由代理外包给 LLM-Guard，在此处配置：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;borenstein&amp;#x2F;yolo-cage&amp;#x2F;blob&amp;#x2F;d235fd 70cb8c2b41eec06cdeab9a1a112725b02e&amp;#x2F;清单&amp;#x2F;代理&amp;#x2F;llm-guard.yaml#L4-L25" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;borenstein&amp;#x2F;yolo-cage&amp;#x2F;blob&amp;#x2F;d235fd70cb8c2b4...&lt;/a&gt;&lt;p&gt;这是它使用的 LLM Guard 图像：&lt;a href="https:&amp;#x2F;&amp;#x2F;hub.docker.com&amp;#x2F;r&amp;#x2F;laiyer&amp;#x2F;llm-guard-api" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;hub.docker.com&amp;#x2F;r&amp;#x2F;laiyer&amp;#x2F;llm-guard-api&lt;/a&gt; - 这是 GitHub 上的这个项目（laiyer 重命名为 Protectai）： &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;protectai&amp;#x2F;llm-guard" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;protectai&amp;#x2F;llm-guard&lt;/a&gt;&lt;p&gt;因为这仅使用“秘密”我建议完全放弃这种依赖关系，它使用 LLM Guard 作为一些正则表达式的相当昂贵的包装器。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;visarga:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感谢您发布该项目，我一直在积极寻找解决方案，甚至使用了一个废弃的编码。有一个问题 - 如何传递笼内代理的凭证？我对一种不仅使用 claude 代码，还使用 ​​codex cli 和内部其他编码代理的方法感兴趣。考虑到凭证可以拥有多种订阅类型和存储位置（如 Claude），它可能会很复杂。&lt;p&gt;当然，问题的出现是因为我们总是缺乏代币，并且必须在许多提供商周围跳舞。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;briandw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Claude 代码（如存储库中所示）可以读取磁盘上的文件。这不是已经渗透了吗？为了读取文件，它必须转到 Anthropic。我个人对此没有意见，但如果它离开你的机器，这并不是秘密。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kxbnb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;解决遏制问题的非常酷的方法。关于“限制混乱特工的爆炸半径”的见解引起共鸣 - 当您不断批准特工的行动时，决策疲劳是真实存在的。&lt;p&gt;渗漏控制很有趣。您是否考虑过将其扩展到速率限制和成本控制？我们一直在 keypost.ai 上解决类似的问题 - MCP 工具调用的确定性策略执行（速率限制、访问控制、成本上限）。&lt;p&gt;我们发现的一件事是，执行层需要&lt;i&gt;路径内&lt;/i&gt;而不是咨询 - 代理可以创造性地解决软限制。好奇你是如何处理“被阻止”和“被阻止”之间的界限的和“允许但已记录”？&lt;p&gt;这方面的工作做得很好 - 代理安全空间需要更实用的工具。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;p410n3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;整个问题是为什么我停止使用编辑器内的法学硕士并且不会使用代理进行“真正的”学习。工作。我无法确定它想要抓住什么背景。有了好的 ol&amp;#x27;复制粘贴到 webui 中，我可以 100% 确定 $TECHCORP 看到的内容，并且可以集成它手动吐出的任何内容，充当“代码审查”的第一个版本。 （就像你以前阅读 stackoverflow 代码一样）。&lt;p&gt;如果你想构建一些新的辅助工具，代理是有意义的，但我发现即使是 Gemini 的 WebUI 也已经足够好，可以创建多个文件，而不是将所有内容都放在一个文件中。&lt;p&gt;这样我也不会被任何提供商锁定&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vivzkestrel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;- 我对运行 claude 或任何代理不感兴趣，就像我对在沙箱内的云上运行不受信任的用户代码感兴趣&lt;p&gt;- 想想codesandbox，这里的虚拟机启动需要多长时间？&lt;p&gt;- 您认为这个解决方案有多安全，让用户在内部执行不受信任的代码，同时能够 pip install 和 npm 安装各种库&lt;p&gt;- 您如何在 AWS 内部署此解决方案Lambda&amp;#x2F;Fargate 适用于相同的用例？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kjok:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;真正的问题：为什么每个人都在虚拟机和 Docker 周围为代理推出自己的沙箱包装器？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;snowmobile:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;等等，所以你不信任人工智能在你自己的计算机上执行代码（shell 命令），因此需要一个安全护栏，以方便它编写你将在你的客户上执行的代码。计算机（财务分析工具）？&lt;p&gt;加上您使用 AI 编写所谓的遏制系统这一事实，我真的没有看到这里的安全优势。&lt;p&gt;这些文档似乎也非常由 AI 生成（见下文）。您自己在实际整合过程中扮演了什么角色？您如何确定过滤一些特定（列出的）命令实际上会提供任何类型的安全保证？&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;borenstein&amp;#x2F;yolo-cage&amp;#x2F;blob&amp;#x2F;main&amp;#x2F;docs&amp;#x2F;architecture.md" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;borenstein&amp;#x2F;yolo-cage&amp;#x2F;blob&amp;#x2F;main&amp;#x2F;docs&amp;#x2F;archi...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fnoef:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道为什么每个人似乎都使用 Vagrant VM 而不是简单的 docker 容器。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dfajgljsldkjag:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;查看“修复逃逸测试期间发现的安全漏洞”因为提交消息并不令人放心。  当然，测试是好的，但它暗示架构从一开始就没有得到适当的强化。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/borenstein/yolo-cage</guid>
+      <pubDate>Wed, 21 Jan 2026 15:13:29 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46706796</comments>
+    </item>
+    <item>
+      <title>告诉 HN：亚马逊已停用我的卖家帐户。不知道如何前进</title>
+      <link>https://news.ycombinator.com/item?id=46709409</link>
+      <description>&lt;p&gt;我的列表非常清楚，这是三星设备，而不是真正的三星设备。为了恢复我的帐户，他们要求我提交制造商或品牌所有者的授权书，授权我销售他们的产品。有趣的是，在我列出的大多数产品上，我都在赔钱，只是因为亚马逊物流成本和广告成本。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Tell HN: Amazon has deactivated my seller account. No idea how to move forward&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46709409"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46709409'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;timnetworks:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是正确的影响。你赔了钱，而他们赢得了想象中的知识产权侵权，然后有人发布了你的项目的副本，其中包含避开他们系统的文本，他们也在那里赚钱。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;IChooseY0u:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为人们会对内部卖家论坛上的内容感到惊讶。亚马逊确实无法帮助解决很多问题。从字面上看，从入职到保护卖家免受退款诈骗的一切。&lt;p&gt;我怀疑大卖家必须有专门的客户经理&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tokyobreakfast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;改为在沃尔玛市场上销售。&lt;p&gt;亚马逊迎合全大写中文诈骗商店。他们知道如何玩弄这个系统，并为此投入了大量资源。你的小型家庭企业没有机会。他们克隆你的产品并将你的价格降低一半只是时间问题。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46709409</guid>
+      <pubDate>Wed, 21 Jan 2026 18:20:19 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46709409</comments>
+    </item>
+    <item>
+      <title>我让 Zig 在 3 秒内计算出 3300 万个卫星位置。无需 GPU</title>
+      <link>https://atempleton.bearblog.dev/i-made-zig-compute-33-million-satellite-positions-in-3-seconds-no-gpu-required/</link>
+      <description>&lt;p&gt;“ 为什么要费心优化 SGP4。Comptime 预计算。发现 Zig 的 SIMD 超级能力 我听说过实施 SIMD 的噩梦。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; I Made Zig Compute 33M Satellite Positions in 3 Seconds. No GPU Required&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46703317"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://atempleton.bearblog.dev/i-made-zig-compute-33-million-satellite-positions-in-3-seconds-no-gpu-required/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lbeckman314:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;attron.github.io&amp;#x2F;astroz-demo" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;attron.github.io&amp;#x2F;astroz-demo&lt;/a&gt; 提供精美可视化！ （约 160 MB 传输）&lt;p&gt;我（非常业余）相信我们正处于酷炫空间即工具的安静黄金时代，例如：&lt;p&gt;- &lt;a href="https:&amp;#x2F;&amp;#x2F;www.asterank.com&amp;#x2F;3d" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.asterank.com&amp;#x2F;3d&lt;/a&gt;&lt;p&gt;- &lt;a href="https:&amp;#x2F;&amp;#x2F;dmytry.github.io&amp;#x2F;space&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;dmytry.github.io&amp;#x2F;space&amp;#x2F;&lt;/a&gt;&lt;p&gt;- &lt;a href="https:&amp;#x2F;&amp;#x2F;www.tng-project.org&amp;#x2F;探索&amp;#x2F;3d" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.tng-project.org&amp;#x2F;探索&amp;#x2F;3d&lt;/a&gt;&lt;p&gt;- &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;da-luce&amp;#x2F;astroterm" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;da-luce&amp;#x2F;astroterm&lt;/a&gt;&lt;p&gt;- &lt;a href="https:&amp;#x2F;&amp;#x2F;ssd.jpl.nasa.gov&amp;#x2F;tools" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ssd.jpl.nasa.gov&amp;#x2F;tools&lt;/a&gt;&lt;p&gt;感觉就像来自 TOS + TNG 的宁静技术乐观主义！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ginko:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;给出了一个示例，其中根据偏心率选择简单或复杂计算的结果，并提到始终计算两者并使用掩码进行选择会更快。&lt;p&gt;如果同时计算两者，则始终进行复杂计算不是更快吗？ （大概这更准确？）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;exitb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是解决正确的问题吗？该算法可以在未来的任意点给出相当准确的位置，但如果您每秒都需要位置，则无需一遍又一遍地运行它。您可以生成关键帧并在其之间插入位置，因为短期轨道运动相当微不足道。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;androiddrew:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你告诉该语言要做什么！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dfajgljsldkjag:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，我们经常假设我们需要显卡来进行此类计算，而标准处理器实际上已经足够快了。内存布局的具体变化似乎在这里产生了最大的差异，因为它允许硬件实际使用其矢量功能。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tylermw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不错的结果！ SIMD 可能会很痛苦，但很高兴知道 Zig 使它变得容易。&lt;p&gt;但是，请注意“本机 SIMD 吞吐量比较”下的图极具误导性：为了在条形图之间进行准确的比例比较，您应该将 y 轴从零开始。数据的呈现方式使其看起来像是 10-100 倍的增益，而不是实际的 2 倍的改进。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;philipallstar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我以前从未见过 SIMD 代码，这是对 SIMD 代码和 Zig 的一个很好的介绍。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://atempleton.bearblog.dev/i-made-zig-compute-33-million-satellite-positions-in-3-seconds-no-gpu-required/</guid>
+      <pubDate>Wed, 21 Jan 2026 09:51:27 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46703317</comments>
     </item>
   </channel>
 </rss>
