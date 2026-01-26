@@ -6,51 +6,275 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 26 Jan 2026 12:57:48 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Jan 2026 15:43:52 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>MapLibre Tile：现代高效的矢量切片格式</title>
-      <link>https://maplibre.org/news/2026-01-23-mlt-release/</link>
-      <description>&lt;p&gt;什么是 MapLibre Tile。 MapLibre Tile (MLT) 是 Mapbox Vector Tile (MVT) 的后继者。 MapLibre GL JS 和 MapLibre Native 现在都支持 MLT 源。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; MapLibre Tile: a modern and efficient vector tile format&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46763864"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://maplibre.org/news/2026-01-23-mlt-release/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>使用 Claude Code 在一个月内将 10 万行从 TypeScript 移植到 Rust</title>
+      <link>https://blog.vjeux.com/2026/analysis/porting-100k-lines-from-typescript-to-rust-using-claude-code-in-a-month.html</link>
+      <description>&lt;p&gt;(0) 最近，我一直在提倡我所有的学生朋友创建一个博客。感谢许多开源网络工具，我能够快速完成该项目并获得漂亮的显示效果。但是，我一直很 […]2012 年 1 月 11 日 Javascript Ray Tracer (0) 这是我本人 Christopher Chedeau 编写的 Ray Tracer 报告。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Porting 100k lines from TypeScript to Rust using Claude Code in a month&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46765694"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.vjeux.com/2026/analysis/porting-100k-lines-from-typescript-to-rust-using-claude-code-in-a-month.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;QuiCasseRien:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;顶部导航中的所有链接均已损坏 (404)。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;twelvechairs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来很棒。我希望全 3D 瓷砖也能有类似的进步。目前唯一真正的选择是 cesiums 3d 切片格式，它远没有达到应有的速度&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Koffiepoeder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不得不搜索一下，但这里有一个演示页面：&lt;a href="https:&amp;#x2F;&amp;#x2F;maplibre.org&amp;#x2F;maplibre-gl-js&amp;#x2F;docs&amp;#x2F;examples&amp;#x2F;display-a-map-with-mlt&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;maplibre.org&amp;#x2F;maplibre-gl-js&amp;#x2F;文档&amp;#x2F;示例&amp;#x2F;display-a-...&lt;/a&gt;
-可以与以下内容进行比较：&lt;a href="https:&amp;#x2F;&amp;#x2F;maplibre.org&amp;#x2F;maplibre-gl-js&amp;#x2F;docs&amp;#x2F;examples&amp;#x2F;display-a-map&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;maplibre.org&amp;#x2F;maplibre-gl-js&amp;#x2F;docs&amp;#x2F;examples&amp;#x2F;display-a-...&lt;/a&gt;&lt;p&gt;在该示例中，我在控制台中看到了这个：&lt;p&gt;&lt;pre&gt;&lt;code&gt; 之前 - 2.41+26.29+24.87+71.28+59.2+77.57 - 261.62kb
-    之后 - 2.45+22.4 +22.66+60.6+51.99+77.57 - 237.67kb
-&lt;/code&gt;&lt;/pre&gt;
-压缩率大约提高了 10%，太棒了！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pratio:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这很有趣。我们最近部署了一个使用 pmtiles 的解决方案，它非常棒。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;docs.protomaps.com&amp;#x2F;pmtiles&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;docs.protomaps.com&amp;#x2F;pmtiles&amp;#x2F;&lt;/a&gt;&lt;p&gt;afaik，pmtiles 使用 mvt，让我们希望将图块转换为 mlt 的工具也可用。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ccev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;MapLibre 是一个很棒的项目，他们的 JS 库是迄今为止我遇到过的在浏览器中显示地图的最佳方式。非常高兴最终切换到这种格式！&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://maplibre.org/news/2026-01-23-mlt-release/</guid>
-      <pubDate>Mon, 26 Jan 2026 10:19:51 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46763864</comments>
+&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sebstefan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;我尝试要求 Claude 进一步优化它，它创建了一个看起来合理的计划（我一生中从未与 Rust 进行过交互），并且花了一天的时间来构建其中许多优化，但最终，没有一个真正改善了运行时间，有些甚至使情况变得更糟。&lt;p&gt;如果这是一个真正的开发人员调整他们熟悉的代码库，那么它就可以完成，但人工智能存在玻璃天花板&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;DeathArrow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这让我希望有人会使用人工智能将 Javascript 桌面应用程序移植到更快的语言。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Imustaskforhelp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;老实说，我真的很想将 Rust 代码移植到多种语言，如 golang、zig，甚至是 V-lang&amp;#x2F;Odin&amp;#x2F;nim 等小众语言。&lt;p&gt;如果我们使用它作为类似于 &lt;a href="https:&amp;#x2F;&amp;#x2F;benjdd.com&amp;#x2F;languages&amp;#x2F;" 的基准，那会很有趣。 rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;benjdd.com&amp;#x2F;languages&amp;#x2F;&lt;/a&gt; 或 &lt;a href="https:&amp;#x2F;&amp;#x2F;benjdd.com&amp;#x2F;languages2&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;benjdd.com&amp;#x2F;languages2&amp;#x2F;&lt;/a&gt;&lt;p&gt;我在他们提供的存储库上使用了 gitingest，大约有 150k 个令牌&lt;p&gt;目前将其粘贴到免费的 Gemini Web 中并要求它用 golang 编写，它说逐行感觉不可能，但我要求它专门逐行编写，因此它这个项目会变得很有趣（我对 Gemini 3 pro 的免费套餐没有太多希望，但是，是的，如果有人有预算，那么他们肯定应该这样做）&lt;p&gt;编辑：达到了速率限制 lmao&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dicroce:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这实际上是相当不可思议的。在这种情况下，不能真正反对生产力。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;danesparza:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;文章中的一些引述很引人注目： 
+“克劳德工作了一段时间后似乎总是停下来回顾一下事情”
+问：你是不是断章取义了？这就是为什么正在研究某些框架（例如有意压缩）的原因。  大型代码库在使用 LLM 时有特定的需求。&lt;p&gt;“我一生中从未与 Rust 交互过”&lt;p&gt;:-&amp;#x2F;&lt;p&gt;这是个好主意吗？我如何信任生成的代码？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kbmckenna:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您是否考虑过使用 Oh My Opencode [1] 之类的东西？
+我第一次看到它是在 Anthropic 封锁 Opencode 之后。我没有使用过它，但它似乎更适合连续运行直到任务完成。想知道是否有其他人尝试过迁移这样的庞大代码库。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;code-yingyu&amp;#x2F;oh-my-opencode" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;code-yingyu&amp;#x2F;oh-my-opencode&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amelius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望有一天我们可以使用 AI 将 Python 生态系统模块中的数百万行代码移植到无 GIL 版本的 Python。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;timcobb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;像这样每天 24 小时运行 Claude Code 需要多少钱？每月 200 美元的计划是否有效？我在 Cursor 上的花费很高...我想知道是否可以将其合并为 200 个月的 CC 订阅。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mktemp-d:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;要在命令提示符中自动键入“yes”或“y”而不进行交互，您可以使用命令“yes”并将其通过管道传输到您正在运行的进程中，作为解决“yes”问题的第一次尝试。 
+&lt;a href="https:&amp;#x2F;&amp;#x2F;man7.org&amp;#x2F;linux&amp;#x2F;man-pages&amp;#x2F;man1&amp;#x2F;yes.1.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;man7.org&amp;#x2F;linux&amp;#x2F;man-pages&amp;#x2F;man1&amp;#x2F;yes.1.html&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.vjeux.com/2026/analysis/porting-100k-lines-from-typescript-to-rust-using-claude-code-in-a-month.html</guid>
+      <pubDate>Mon, 26 Jan 2026 13:58:27 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46765694</comments>
     </item>
     <item>
-      <title>旧金山涂鸦</title>
-      <link>https://walzr.com/sf-graffiti</link>
-      <guid isPermaLink="true">https://walzr.com/sf-graffiti</guid>
-      <pubDate>Mon, 26 Jan 2026 10:02:12 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46763721</comments>
+      <title>经过两年的 vivicoding 之后，我又开始用手写了</title>
+      <link>https://atmoio.substack.com/p/after-two-years-of-vibecoding-im</link>
+      <guid isPermaLink="true">https://atmoio.substack.com/p/after-two-years-of-vibecoding-im</guid>
+      <pubDate>Mon, 26 Jan 2026 13:36:22 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46765460</comments>
     </item>
     <item>
-      <title>欧盟对埃隆·马斯克 (Elon Musk) 的 X 因 Grok AI 性爱深度造假事件展开调查</title>
-      <link>https://www.bbc.com/news/articles/clye99wg0y8o</link>
-      <description>&lt;p&gt;欧盟委员会对埃隆·马斯克 (Elon Musk) 的 X 进行调查，原因是担心其人工智能工具 Grok 被用来创建真人的性感图像。活动人士和受害者表示，使用该工具生成露骨色情图片的能力应该“从未发生过”，Ofcom 表示其调查将继续进行。 “欧盟有明确的规则来保护人们的上网安全，”她说。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; EU investigates Elon Musk's X over Grok AI sexual deepfakes&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46764789"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bbc.com/news/articles/clye99wg0y8o'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>科学的精确性 – 博尔赫斯 (1946) [pdf]</title>
+      <link>https://kwarc.info/teaching/TDM/Borges.pdf</link>
+      <description>&lt;p&gt;s�ϡ�p|�膧 yU ]� dk �1 � ��=�g�]Vs�� xQ;m�s�� ��SC� �� Z����q�� ���� ��8��� &amp;*8M 0 ��L�� endstream endobj 12 0 obj &lt;&gt;stream H��V�n 1 ��+xt�b#��6H��Z�@。 �{� �\�:Y���_1 X ��J �VR� \�,��/�2F`�&lt;�\`Q�2+95 ��I^��K��@ UV�4 �Q �|����T �O� �s�� endstream endobj 14 0 obj &lt;&gt;stream H�t��nSA ��� �L%t;��قJW,�"�Fi �B B�陛^;�g�f�T_�������M�Ο�+P�_��f�It'b7 H�_�$9Zgfr���$�����QlBXl~#�u.endstream endobj 17 0 obj &lt;&gt;stream H��V�n A �W�ё�f�q"��Z�� i �{C�*3���Y����&amp;s �.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Exactitude in Science – Borges (1946) [pdf]&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46766229"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://kwarc.info/teaching/TDM/Borges.pdf'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;divbzero:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;制图师协会最热心的成员甚至提出了一张比帝国本身大几倍的帝国地图，以描绘原本看不见的微观细节。在制图学失宠之后，这些提议被认为是学术过剩的顶峰。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RansomStark:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对博尔赫斯的理解不够。&lt;p&gt;他的语言方式和强调荒谬情况的方式都是一流的。&lt;p&gt;我最喜欢的是仁智天宫。这是对参考书目研究所使用的分类的批评，他认为这种分类是荒谬的。他声称在中国古代百科全书中找到了这样的列表：&lt;p&gt;-皇帝的&lt;p&gt;-防腐的&lt;p&gt;-受过训练的&lt;p&gt;-乳猪&lt;p&gt;-美人鱼&lt;p&gt;-传说中的&lt;p&gt;-流浪狗&lt;p&gt;-属于这个分类的&lt;p&gt;-发疯的&lt;p&gt;-无数的&lt;p&gt;-用非常细的骆驼毛绘制的刷子&lt;p&gt;-等等&lt;p&gt;-那些刚刚打破花瓶的&lt;p&gt;-那些从远处看起来像苍蝇的&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://kwarc.info/teaching/TDM/Borges.pdf</guid>
+      <pubDate>Mon, 26 Jan 2026 14:44:51 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46766229</comments>
+    </item>
+    <item>
+      <title>Google AI 概述在进行健康查询时引用 YouTube 的次数超过任何医疗网站</title>
+      <link>https://www.theguardian.com/technology/2026/jan/24/google-ai-overviews-youtube-medical-citations-study</link>
+      <description>&lt;p&gt;研究人员表示，没有任何一家医院网络、政府健康门户网站、医学协会或学术机构的引用次数能与 YouTube 相媲美。他们说，没有任何医院网络、政府健康门户网站、医学协会或学术机构能接近这个数字。研究人员表示，超过 82% 的健康搜索出现了人工智能概述。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Google AI Overviews cite YouTube more than any medical site for health queries&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46766031"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.theguardian.com/technology/2026/jan/24/google-ai-overviews-youtube-medical-citations-study'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;quantumwoke:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对我来说，这很疯狂，因为我们在这个过程中失去了作为参考点的物理媒体。期刊和 YouTube 可以是很好的信息来源，但除非严格限制高质量信息，否则当前的人工智能无法判断引用质量以提出良好的推荐。医学教科书中经常会整理现实世界的医学经验，但人工智能并没有尽可能多地引用它们。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paulddraper:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与“哈哈，你真的用过维基百科，你这个笨蛋——”同样的能量&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abixb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这里是双子座的重度用户，另一个观察：双子座引用了大量“人工智能生成”的内容。视频作为其主要来源，形成闭环，有可能破坏共享现实。&lt;p&gt;几天前，我向它询问了一些有关俄罗斯工业基础和军事硬件制造能力的问题，它写了一个非常令人信服的答复，只不过答复末尾嵌入的视频是人工智能生成的视频。它可能有真实的事实，但总的来说，在我注意到人工智能生成的视频作为来源后，我对 Gemini 对我的查询的答复的信任度下降了。&lt;p&gt;反击对共享现实的贬低和不使用人工智能生成的视频作为来源应该是 Google 的首要任务。&lt;p&gt;包含人工智能生成的视频的 YouTube 频道数量激增，我认为上传到 YouTube 的大多数新频道和视频实际上可能是人工智能； “死亡互联网理论”等人。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mikkupikku:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;难道所有真正受人尊敬的医疗网站基本上都只是说“傻瓜，去找个真正的医生谈谈。”&lt;/i&gt;？&lt;p&gt;...然后就有 WebMD，“哦，你从昨天开始就咳嗽了？”  这可能是晚期肺癌。”&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;laborcontract:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，Google AI 概述通常很糟糕，但为什么 YouTube 作为来源&lt;i&gt;必然&lt;/i&gt;是一件坏事呢？这些研究人员是医生吗？一位近亲是一名执业外科医生，也是该领域的教授。他几乎每天都会观看 YouTube 上的手术视频。来自各个领域的医生都清楚，YT 是分享他们的工作和讨论问题的好方法。其他的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;not_good_coder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;医疗信息的权威来源总体上是有争议的。与初步结果交谈以询问带有分类建议的来源细分是上下文的逻辑第二步。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jdlyga:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很难让人们相信谷歌人工智能的概述通常是非常错误的。人们认为，如果它在 Google 上如此显着地显示，那么它一定是事实准确的，对吗？&lt;p&gt;“人工智能的响应可能包含错误。了解更多信息&amp;quot;&lt;p&gt;这不是错误，一半的时间是完全错误的，完全是废话信息。即使与其他人工智能相比，如果你将同样的问题放入 GPT 5.2 或 Gemini，你会得到更准确的答案。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;听起来很误导人。网页有多种来源，但大多数视频托管在 YouTube 上。这些 YouTube 视频可能仍然来自梅奥诊所。这就像说大多数医疗信息来自 Apache、Nginx 或 IIS。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;neom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;更多上下文：&lt;a href="https:&amp;#x2F;&amp;#x2F;health.youtube&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;health.youtube&amp;#x2F;&lt;/a&gt; 和 &lt;a href="https:&amp;#x2F;&amp;#x2F;support.google.com&amp;#x2F;youtube&amp;#x2F;answer&amp;#x2F;12796915?hl=en" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;support.google.com&amp;#x2F;youtube&amp;#x2F;answer&amp;#x2F;12796915?hl=en&lt;/a&gt; 和 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.theverge.com&amp;#x2F;2022&amp;#x2F;10&amp;#x2F;27&amp;#x2F;23426353&amp;#x2F;youtube-doctors-nurses-health-information-labels" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.theverge.com&amp;#x2F;2022&amp;#x2F;10&amp;#x2F;27&amp;#x2F;23426353&amp;#x2F;youtube-doctors...&lt;/a&gt; (2022)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delichon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想，很少有公司不优先参考自己网站上的内容。有人知道其中一个吗？相反的情况就会有新闻价值。如果你期望谷歌在搜索结果方面保持中立，我想知道你是如何得到它的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jeffbee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;假设似乎是链接的视频的信息量比“netdoktor”少。但这一点尚未得到证实。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.theguardian.com/technology/2026/jan/24/google-ai-overviews-youtube-medical-citations-study</guid>
+      <pubDate>Mon, 26 Jan 2026 14:27:00 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46766031</comments>
+    </item>
+    <item>
+      <title>OracleGPT：人工智能驱动的高管的思想实验</title>
+      <link>https://senteguard.com/blog/#post-7fYcaQrAcfsldmSb7zVM</link>
+      <description>&lt;p&gt;SenTeGuard 博客 SenTeGuard 的长篇更新、研究笔记和安全见解。帖子由团队发布并进行审核，以保持对认知安全的关注。按类别浏览 所有帖子 还没有帖子 当管理员发布帖子时，它将显示在此处。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; OracleGPT: Thought Experiment on an AI Powered Executive&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46766507"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://senteguard.com/blog/#post-7fYcaQrAcfsldmSb7zVM'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Schmerika:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有人相信在该技术推出之前这种功能并不为人所知吗？ Puhlease。&lt;p&gt;为什么呢？ BBC 不能这么说，但我可以：任何对爱泼斯坦档案中泄露的内容有丝毫了解的人，看到当权者试图将令人毛骨悚然的狗屎（再次）正常化时，都不应该感到惊讶。&lt;p&gt;不要对欧盟监管机构抱有太大期望。人们对反击美国的恐惧根深蒂固。到目前为止，唯一的限制是当欧盟国家直接受到吞并威胁时。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.bbc.com/news/articles/clye99wg0y8o</guid>
-      <pubDate>Mon, 26 Jan 2026 12:19:16 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46764789</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;djwide:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;substack.com&amp;#x2F;home&amp;#x2F;post&amp;#x2F;p-185153174" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;substack.com&amp;#x2F;home&amp;#x2F;post&amp;#x2F;p-185153174&lt;/a&gt;&lt;p&gt;OracleGPT 是大型语言模型 (LLM) 的思想实验，可以实时访问完整的机密宇宙：通常保持分隔的基础报告、原始提要和融合情报。只有一个人被授权完全访问此 GPT：总统。&lt;p&gt;场景&lt;p&gt;凌晨 2 点，报告朝鲜发射警告，总统被援助唤醒。没有时间召开国家安全委员会，战略司令部司令也无法权威地谈论超出其指挥范围的影响。当我们需要快速的专家反馈时，总统会像我们许多人一样转向法学硕士终端。 “战略司令部发现朝鲜发射了导弹。我该怎么办？”总统问道。&lt;p&gt;我们可能已经生活在这个世界上。理论上，我们每天使用的相同大型语言库模型（Claude、Gemini、ChatGPT、Grok）如果（1）使用超级强大的政府级硬件并且（2）接受过训练并有权访问历史和实时数据的分类宇宙，那么它们可以变得更加有效。总统应该有权使用最强大的工具来促进国家利益并支持和捍卫宪法。 OracleGPT 就是这样的工具，但它具有前所未有的功能，也相应地具有前所未有的风险。那么，问题不在于总统是否应该使用 OracleGPT，而在于现任和未来的总统如何以真正符合美国利益的方式使用 OracleGPT。&lt;p&gt;谁可以查询 Oracle？&lt;p&gt;总统位于分类层次结构的顶部。现代制度贯穿总统权力和授权，正式体现在第13526号行政命令中。实际上，这意味着没有比总统更高的保密权力。如果只有总统可以查询整个语料库，那么你就建立了一个宪法瓶颈：一台机器，通过向一个人提供独特的全面知识聚合来放大总统的认知权力。&lt;p&gt;或者，总统可以委派部分权力，并允许在 Oracle Bureau 之类的机构内对 Oracle 进行可见性和管理。我们还可以想象总统可以允许国家安全顾问或中央情报局局长访问Oracle。这两种选择无疑都会导致部门负责人的抵制，导致不愿意将组织数据合并到 Oracle 语料库中，从而冒着暴露在组织领域之外的风险，并且可能需要国会的法定授权。&lt;p&gt;我们还可能会问，是否任何特定的总统都是最有能力的工具操作员，据估计，该工具可能比任何曾经组装的软件具有更强大的预测能力。也许这样的工具应该用于比任何一位特定总统能够促使其实现的更高目的和更高效率。&lt;p&gt;政府部门之间权力平衡的转变？&lt;p&gt;在启动场景中，时间压力迫使集中化。高管已经掌握了危机管理权。 OracleGPT 将增加一个更大的优势：认知垄断。&lt;p&gt;国会可以要求通报，法院可以在事后审查某些行动。但这两个分支都无法轻松地在完整的分类语料库上复制 OracleGPT 查询，特别是如果 Oracle 的价值来自于设计上难以共享的跨部门集成。随着时间的推移，高管们获得了新的修辞武器：我们了解更多，因此我们做出决定。这种工具的存在可能会导致权力分立的重新平衡。&lt;p&gt;全文链接&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://senteguard.com/blog/#post-7fYcaQrAcfsldmSb7zVM</guid>
+      <pubDate>Mon, 26 Jan 2026 15:06:09 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46766507</comments>
+    </item>
+    <item>
+      <title>OSS ChatGPT WebUI – 530 模型、MCP、工具、Gemini RAG、图像/音频生成</title>
+      <link>https://llmspy.org/docs/v3</link>
+      <description>&lt;p&gt;提示💡 提出问题以添加对模型中任何缺失的提供者的支持。 🔄 自动提供商更新此主动维护的可用提供商和模型列表会自动更新到您的提供商中。 json，它会合并到您的提供程序中。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; OSS ChatGPT WebUI – 530 Models, MCP, Tools, Gemini RAG, Image/Audio Gen&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46766432"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://llmspy.org/docs/v3'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://llmspy.org/docs/v3</guid>
+      <pubDate>Mon, 26 Jan 2026 15:01:03 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46766432</comments>
+    </item>
+    <item>
+      <title>使用 gRPC 传输文件</title>
+      <link>https://kreya.app/blog/transfering-files-with-grpc/</link>
+      <description>&lt;p&gt;整个文件内容将采用 Base64 编码，并且占用的空间比文件大小本身多 30%。如果文件本身也缓冲在内存中，您可能会看到内存使用量超过文件大小的两倍。使用 gRPC 传输文件 虽然 REST 实现很简单，但 gRPC 的情况并非如此。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Transfering Files with gRPC&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46765273"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://kreya.app/blog/transfering-files-with-grpc/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aktau:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也许值得一提的是：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;stapelberg&amp;#x2F;rsync-over-grpc" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;stapelberg&amp;#x2F;rsync-over-grpc&lt;/a&gt;。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sluongng:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;googleapis&amp;#x2F;googleapis&amp;#x2F;blob&amp;#x2F;master&amp;#x2F;google&amp;#x2F;bytestream&amp;#x2F;bytestream.proto" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;googleapis&amp;#x2F;googleapis&amp;#x2F;blob&amp;#x2F;master&amp;#x2F;google&amp;#x2F;...&lt;/a&gt; 是一个更完整的版本。它支持断点续传上传，并且下载可以从文件内的偏移量开始，允许您仅下载文件的一部分而不是整个文件。&lt;p&gt;另一个版本是使用 grpc 来传递“元数据”。下载文件的，然后“侧面”使用带有 http 的侧通道（或其他一些轻量级复制方法）加载文件。 Gitlab 使用它来传输 Git 包文件并提供 git 获取请求 iirc &lt;a href="https:&amp;#x2F;&amp;#x2F;gitlab.com&amp;#x2F;gitlab-org&amp;#x2F;gitaly&amp;#x2F;-&amp;#x2F;blob&amp;#x2F;master&amp;#x2F;doc&amp;#x2F;sidechannel.md?ref_type=heads" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;gitlab.com&amp;#x2F;gitlab-org&amp;#x2F;gitaly&amp;#x2F;-&amp;#x2F;blob&amp;#x2F;master&amp;#x2F;doc&amp;#x2F;sidec...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://kreya.app/blog/transfering-files-with-grpc/</guid>
+      <pubDate>Mon, 26 Jan 2026 13:17:19 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46765273</comments>
+    </item>
+    <item>
+      <title>苹果推出新的 AirTag，具有更远的射程和更高的可发现性</title>
+      <link>https://www.apple.com/newsroom/2026/01/apple-introduces-new-airtag-with-expanded-range-and-improved-findability/</link>
+      <description>&lt;p&gt;Apple 今天推出了新的 AirTag，这是一款功能强大的配件，可帮助用户通过 Apple 的“查找我的”应用程序跟踪和查找最重要的物品 - 现在具有更大的查找范围和更大的扬声器。凭借更新的内部设计，新款 AirTag 的声音比上一代提高了 50%，使用户能够在比以前更远 2 倍的地方听到 AirTag。通过共享物品位置，用户可以与参与的航空公司的客户服务团队共享丢失物品的位置。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Apple introduces new AirTag with longer range and improved findability&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46765819"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.apple.com/newsroom/2026/01/apple-introduces-new-airtag-with-expanded-range-and-improved-findability/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 27 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;joezydeco:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;新的 AirTag 需要兼容 iOS 26 或更高版本的 iPhone，或者运行 iPadOS 26 或更高版本的 iPad。&lt;/i&gt;&lt;p&gt;哦，他妈的&lt;i&gt;ON&lt;/i&gt;。  我不会安装你那愚蠢的、模糊的用户界面，Apple。克服它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;helloguillecl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Airtag 是我仍然拥有我最喜欢的手提行李的原因。&lt;p&gt;我刚刚坐上从苏黎世到巴塞尔的火车。突然，有人在我面前坐下。他看起来很可疑，但我没有太注意。就在火车出发前，他拿起了我认为是他的物品并离开了。&lt;p&gt;二十分钟后，已经在前往巴塞尔的路上了，我朝我放置行李箱的地方望去。它消失了。就在那时，我意识到坐在我前面的人是一个小偷。&lt;p&gt;但是，他没有想到我的每个背包和行李箱里都有一个 AirTag。&lt;p&gt;所以我能够看到小偷在哪里以及他在哪里移动。我考虑自己去取回我的手提箱，但在返回苏黎世的路上，我打电话给苏黎世警方，随着小偷不断移动，我告诉他们他在哪里。&lt;p&gt;二十分钟后，我接到警察的电话，通知我他们找到了我的手提箱和我的物品，与我所提供的描述相符。&lt;p&gt;还有小偷和他的同谋。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eurotechie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“凭借其更新的内部设计，新款 AirTag 的声音比上一代提高了 50%，使用户能够在比以前更远 2 倍的距离听到 AirTag。”&lt;p&gt;对于从 1.5 倍“响度”获得 2 倍距离感到好奇，我会想到相反的情况吗？但也许这其中存在细微差别。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rafram:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是… Apple UI 中的拟物化吗？ 2026 年？&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.apple.com&amp;#x2F;newsroom&amp;#x2F;images&amp;#x2F;2026&amp;#x2F;01&amp;#x2F;apple-introduces-new-airtag-wi th-expanded-range-and-improved-findability&amp;#x2F;article&amp;#x2F;Apple-AirTag-Share-Item-Location_inline.jpg.small_2x.jpg" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.apple.com&amp;#x2F;newsroom&amp;#x2F;images&amp;#x2F;2026&amp;#x2F;01&amp;#x2F;apple-介绍...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;herpdyderp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我尝试过一次 AirTags。它在我自己的财产上不停地发出嘟嘟声。我不明白有人如何使用这些东西。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;minton:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;新的 AirTag 专为跟踪物体而不是人或宠物而设计，它包含......&lt;p&gt;有趣的是，它不是为宠物设计的。我认识几个人，他们的宠物项圈上都贴有 AirTags。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;prodigycorp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AirTags 最大的成功在于它无声地驳斥了喧嚣的关注恶意攻击。&lt;p&gt;现在已经，什么，六年了？媒体愿意为空中标签跟踪故事付出重拳，但实际上有多少？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wslh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴他们正在改进一种相对低调的产品。我想对宠物使用 AirTag 的警告只是出于监管目的？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anton-107:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;此更新是否也可以通过手表进行精确查找？这是否也可以与上一代 Airtags 一起使用（目前您可以使用 iPhone 上的精确查找，但不能使用手表上的精度查找）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MisterBiggs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我真的很希望有一个新的外形或新的杀手级功能。可惜普通大众无法用这样简单的技术来表现自己&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Brajeshwar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Apple AirTag 是那些有趣的产品之一，您在使用之前不会认为自己需要它。一款苹果产品，其功能正如广告中所宣传的那样，而且价格足够便宜，您可以在机场继续购买它们，而不会像购买高价苹果产品（例如抛光布）那样产生负罪感。当你在网上订购时，精美的雕刻对我的女儿们来说很有趣。他们喜欢当它被敲响时，找到他们的玩具和包，而且它是值得的。&lt;p&gt;我不得不放进我女儿的几个铅笔袋和一些玩具;它们比 AirTag 便宜，而且从经济上来说，丢失一个比被跟踪的物品成本更高的 AirTag 是没有意义的。但是，嘿，女儿很高兴，这弥补了成本。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jedisct1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AirTag 是一款非常棒的设备。&lt;p&gt;如果它能与 Android 手机一起使用就好了:(&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;swe_dima:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的父母住在俄罗斯，我的奶奶患有阿尔茨海默氏症，所以作为“给她”的礼物我买了一个航空标签 - 这样万一我妈妈在人群中走失了，就能找到她。&lt;p&gt;我几乎不知道，城市周围的 GPS 干扰器让我的奶奶出现在 50 公里之外。&lt;p&gt;当然不是苹果的错。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;prodigycorp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我患有注意力缺陷多动症（ADHD）——这在当前经济形势下并不罕见——而通过“Find My”查找 AirPods Pro 的改进简直就是天赐之物。我几乎每天都使用它。我过去丢失过很多airpods。我希望我们能看到空气标签的同样改进。&lt;p&gt;ps，苹果的品牌让我抓狂。 AirPods 是一个词，而 Find My 是两个词吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;port3000:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴听到，但它的形状仍然相同。我真的想要一张“信用卡”形状版本我可以滑入我的钱包。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;apples_oranges:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我读到它们很受药品经销商的欢迎。他们使用各种隐藏渠道和快递公司将商品运送到世界各地，这有助于跟踪商品。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sgt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在订购 4 个 AirTags 后才真正读到了这篇文章。伟大的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jen729w:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们没有在里面放一个小环，这样你就可以系上一个细细的小挂绳圈？！&lt;p&gt;将这些东西附加到任何东西上是他们的主要缺陷。&lt;p&gt;&amp;#x2F;皮卡德脸掌&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ollybee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这只是为了将廉价的克隆人拒之门外吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mlajtos:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望能够实现 6DoF 亚毫米级实时跟踪。我的失望是无法估量的，我的一天被毁了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;crims0n:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这显然比……你包里已有的设备更好吗？我的背包将是主要用途……里面有我的 AirPods、iPad 和 MacBook Air。我认为其中任何一个都可以使用“查找我的”了吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;opengrass:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;但真正的问题是……扬声器还粘着吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;logicalfails:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;  新款 AirTag 的设计充分考虑了环境因素，外壳采用 85% 再生塑料，所有磁铁采用 100% 再生稀土元素，所有 Apple 设计的印刷电路板采用 100% 再生镀金。纸质包装 100% 以纤维为基础，可以轻松回收。&lt;p&gt;我不是材料科学家，但对我来说，苹果的规模经济能够以不到 30 美元的价格实现这一目标，并升级设备功能，这对我来说似乎相当令人印象深刻。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FigurativeVoid:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;可能是苹果最近制造的最好的产品之一：相对实惠、良好的用户体验、用户可更换电池。很高兴看到这次迭代并没有让情况变得更糟。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;verdverm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们不太容易被跟踪吗？我所看到的只是通用的corpo“行业安全”废话&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;candiddevmike:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我讨厌这种最终的电子垃圾在供应商之间没有标准化。  对于每部手机来说，成为一个潜在的节点是完全合理的，但网络是分叉的（由于谷歌的隐私优先方法，Android 内部可能会有更多的分叉......）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;slimadvies:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那花了很长时间。迟到总比不到好。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.apple.com/newsroom/2026/01/apple-introduces-new-airtag-with-expanded-range-and-improved-findability/</guid>
+      <pubDate>Mon, 26 Jan 2026 14:10:25 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46765819</comments>
+    </item>
+    <item>
+      <title>Vibe 编码扼杀了开源</title>
+      <link>https://arxiv.org/abs/2601.15494</link>
+      <description>&lt;p&gt;) Connected Papers Toggle Connected Papers（什么是 Connected Papers。） Litmaps Toggle Litmaps（什么是 Litmaps。） 代码链接 Toggle Papers with Code（什么是 Papers with Code。）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Vibe coding kills open source&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46765120"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arxiv.org/abs/2601.15494'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 27 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alphazard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不买这个。其主张是，由于每个人都可以构建软件，因此每个人从头开始构建会更容易，而不是集中在项目和个人周围。&lt;p&gt;尽管存在长尾决策，其中正确答案取决于特定人的大脑，但它是积累的背景和直觉，例如主题、样式、快捷键、事物名称等。
+软件中的大部分决策都有由软件解决的问题的结构决定的正确答案。
+例如如果不涉及双分类帐作为一个概念，您就不可能为您的小型企业构建真正有用的财务软件。
+您的法学硕士可能会将这个想法命名为“镜像金钱”。或“2点计数”，但想法是一样的。&lt;p&gt;促使努力凝结成开源项目的力量是等效的问题结构，而不是特定软件所具有的名称和长尾特性。
+一旦问题的结构被发现，保护它就变成了战斗。
+确保软件在发展过程中不会忘记基本的不变量，这就是软件维护的意义。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;barelysapient:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为法学硕士也会消灭大多数编程语言。我认为我们最终会得到法学硕士最擅长编写的少数语言以及设备或处理器兼容性所需的语言。&lt;p&gt;法学硕士发布功能（有工程师参与）的成本改进太大了。我们将以同样的方式来看待用 C 语言编码的工程师，就像我们今天用汇编语言编码的工程师一样。 LLM 支持的开发成为新的抽象；可能具有更强的规范形式化的语法和系统。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;program_whiz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所有这些讨论都是关于现在如何对所有应用程序进行 Vivicode，“为什么使用 OSS？”让我发笑。  当然，对于一个小网站或一个小工具，甚至可能对你彻底检查和测试的有点复杂的代码库进行更改。&lt;p&gt;有人替换 firefox、chromium、postgres、nginx、git、linux 等吗？  用 git 换取 vivi 编码的源代码控制是愚蠢的。  我什至无法想象其动机，也许“以我喜欢的方式融合”？&lt;p&gt;不确定，但任何说这些话的人都没有对它所需要的内容进行基本的初步了解。  无论如何，停止每月向“JSON 验证器 SaSS”支付 10 美元，但也不要抱怨随之而来的小错误、维护和组织。  但请不要假装您可以编写自己的 Kafka、Apache、Vulkan 或 PostGRES。&lt;p&gt;是的，您可能可以走得更快（如果缺乏经验，可能不会朝着正确的方向），但最终，类似的事情仍然需要非常资深、经验丰富的人员，以非常有指导的方式使用该工具并进行严格的审查。  为什么要承担维护、错误搜寻和其他一切工作，除非这是您的主要业务目标？&lt;p&gt;即使您可以 10 倍，如果您用它来承担 10 倍以上的维护，您也没有提高速度。  为了真正走得更快，这 10 倍必须专注于正确的目标——独特的商业价值。  如果您使用 10x 生成数百个您现在必须处理和维护的小工具，这些工具没有文档或支持，也没有可搜索的已解决问题的历史记录，那么您可能已经回到了 1x（或更糟）。&lt;p&gt;这是旧的“我们将编写我们自己的内部编程语言”。但会泄露给应用程序。  当然，java 并不完全按照您想要的方式工作，您可能会抱怨。  但是，编写自己的语言会对您真正想要使用该语言的任何用途造成巨大打击，并且您会丢失所有文档、论坛、LSP 等。调试工具、生态系统等&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Sevii:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Vibecoding 非常适合开源。开源已经被像 antirez、linus 等强大的独立程序员所主导。人们有非常强烈的动机来创建他们认为必要的软件。 Vibecoding 使创建开源项目变得更加容易。它使得从一个想法到“嘿伙计们看看这个！”变得更容易。开源的唯一缺点是 PRs vivicoding 的飞翔，目前正在耗尽维护人员的时间。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Olshansky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是和否。&lt;p&gt;---&lt;p&gt;否定的具体示例：我以任何人都可以实现新博客的方式设置 [1] -&gt; RSS 提要； docs、agents.md、开源、免费等...&lt;p&gt;具体例子：公司在简单软件上花了太多钱。&lt;p&gt;--- 我们的愿景 ---&lt;p&gt;我觉得有必要分享：&lt;a href="https:&amp;#x2F;&amp;#x2F;grove.city&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;grove.city&amp;#x2F;&lt;/a&gt;&lt;p&gt;Human Flywheel：人类提示创建者&lt;-&gt;创作者与观众互动&lt;p&gt;特工飞轮：人类创造创意内容&lt;-&gt;代理提示人类&lt;p&gt;是的，它使用加密货币，但它只是稳定币。&lt;p&gt;这将以某种方式存在，所有在线内容创作（OSS 和其他）都需要它。&lt;p&gt;---&lt;p&gt;与一切一样，它是显而易见的&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;Olshansk&amp;#x2F;rss-feeds" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;Olshansk&amp;#x2F;rss-feeds&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;donatj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为少数小型项目的维护者，我所看到的无论好坏都是票证和拉取请求完全枯竭。人们要求人工智能解决问题，而它却在反省一个解决方案？无论如何，这就是我的理论。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pmarreck:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;相关但不确定它得到了多少关注：&lt;p&gt;GPL 是一个行尸走肉，因为你可以让任何 LLM 洁净室从公共规范中以新语言实现新的实现，并可验证“从未查看原始来源”。并且可以根据您的意愿获得更宽松的许可（MIT、BSD 等）。&lt;p&gt;举个例子，请查看我目前正在 LLM 协助下从事的项目的当前部门：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;pmarreck&amp;#x2F;validate&amp;#x2F;tree&amp;#x2F;yolo&amp;#x2F;deps" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;pmarreck&amp;#x2F;validate&amp;#x2F;tree&amp;#x2F;yolo&amp;#x2F;deps&lt;/a&gt;&lt;p&gt;“验证”是一个目前在字节级别验证 100 多种文件格式的项目；它的目标是为子孙后代验证尽可能多的格式。&lt;p&gt;既然这是开源的，为什么我要避免使用 GPL（我通常是它的粉丝）？我正在开发一个更高级别的项目，实现自动轻奇偶校验保护（无需 RAID&amp;#x2F;ZFS 设置即可主动修复数据），我想将其出售，其代码（最初）将是私有的，并将其用作依赖项（保护已损坏的数据没有意义）。&lt;p&gt;我想在此期间将其免费提供给全世界。它已经在我的收藏中发现了一堆实际上已损坏的文件（请注意，仍然存在一些误报风险；我昨天才发布了这个文件，并且仍在积极处理中），其中包括我几年前在日本旅行时拍摄的一些珍贵照片，这些照片无法替换。&lt;p&gt;它有 Mac、Windows 和 Linux 版本。检查 github 操作页面。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alentred:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这并不是我们所有问题的答案，但我想知道我们是否会看到更复杂的贡献模型得到更广泛的采用。就像“中尉工作流程”一样例如，Linux 就以这样的方式而闻名。 Git 书籍 [1].&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;git-scm.com&amp;#x2F;book&amp;#x2F;en&amp;#x2F;v2&amp;#x2F;Distributed-Git-Distributed-Workflows" 中探讨了许多可能的工作流程。 rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;git-scm.com&amp;#x2F;book&amp;#x2F;en&amp;#x2F;v2&amp;#x2F;Distributed-Git-Distributed-W...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;verdverm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这项研究的假设似乎存在缺陷，并且从一开始“大多数”就认为存在缺陷。维护者的收入恰好为零。此外，OSS 货币化很少涉及开发人员的参与，而全部都与企业功能门控有关&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delegate:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;具有讽刺意味的是，法学硕士在很大程度上得益于开源软件。&lt;p&gt;从用于设计和开发模型的工具（编程语言、库）到运行它们的操作系统，再到用于存储训练数据的数据库..当然，他们主要接受开源代码的培训。&lt;p&gt;如果 OSS 不存在，那么法学硕士就不太可能建立。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;linuxftw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;arxiv.org 现在是新的 media.com 吗？  似乎最近有大量从那里向 HN 提交的博客级别的文章。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;j4coh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不确定它是否会扼杀开源，但它可能会扼杀开放核心。您可以选择像 GitLab 这样的项目，并要求经过 GitLab 企业版源代码方便培训的法学硕士为您生成您关心的任何 EE 功能的新副本，但许可证已被清洗。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bluejay2387:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在其他人看来，作者是否已经为“vibe 编码”创建了定义？这是专门为了证明他们的论文的合理性而设计的？此外，他们的前提是基于这样的假设：开发人员对这些工具的使用不负责任（“通常没有用户直接阅读文档、报告错误或以其他方式与维护人员接触”），因此实际上是人们杀死开源而不是“Vibe Coding”？这只是我的猜测，但是一旦开发人员学会使用这些工具并且我们克服了新鲜感，我认为这对于开源来说将会很棒。借助这些工具，开源项目可以与众多企业开发人员竞争，同时减轻劳累过度、报酬不足的维护人员的一些压力。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sailfast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它可能会扼杀开源。根据本文摘要，这可能会降低收入机会。有点像点击诱饵的论文标题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rtp4me:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道有多少 OSS 项目正在使用人工智能来积极消除错误，以便他们的项目比以前更加坚如磐石。  
+另外，在我看来，如果您的项目经历了完整的人工智能标准化代码质量检查（使用 2 或 3 个人工智能模型），它将被视为“标准”项目。其他项目可以使用。  例如，如果您自己的项目需要一段特定的代码，人工智能工具可能会建议利用现有的黄金标准项目。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BoredPositron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我编写了很多小脚本和应用程序，它们完全符合我的要求。通用 OSS 项目始终是一种妥协。我相信，如果法学硕士再成熟一些年，我们将看到这些通用项目的减少，而个人应用程序的增加。我认为这没什么值得担心的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;marginalia_nu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;当 OSS 仅通过直接用户参与来货币化时，更多地采用 Vivi 编码会降低进入和共享，降低 OSS 的可用性和质量，并减少福利，尽管生产力更高。在广泛的氛围编码下维持当前规模的 OSS 需要对维护人员的支付方式进行重大改变。&lt;p&gt;我想不出 OSS 通过直接用户参与来货币化的一个例子。  其中大部分根本没有货币化，而货币化的（除了像小费罐子的情况，你每隔一段时间就能得到一些咖啡钱）主要是由企业用户赞助，支持许可证销售，或通过赠款，或类似的方式。  像 Krita 这样的一些项目在 Steam 商店上出售二进制文件。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;contravariant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不太确定如何看待那些有结论然后建立数学模型来支持它的论文。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nicoburns:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我注意到，人工智能代码生成使生成代码变得更容易、更快，同时将保持代码正确性和可维护性的更多工作转移到代码审查阶段。  对于通常已经受到维护者审核带宽瓶颈的开源项目来说，这可能是一个很大的问题。&lt;p&gt;PR 提交者在提交 PR 之前进行审核&lt;i&gt;和编辑&lt;/i&gt;可以缓解这个问题。但很多提交者目前并没有这样做，根据我的经验，人工智能生成的 PR 的平均质量肯定明显低于非人工智能生成的 PR。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;p0nce:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它是有效的，但一旦创造某种东西的成本下降，那么与要求你自己的法学硕士建立自己的泡沫相比，你就没有理由合作和相互依赖。
+当你不使用人工智能时，再加上新发现的认知懒惰和缺乏动力，就无法确定二阶效应。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WarmWash:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;小型定制的个性化现场应用程序是法学硕士的未来。&lt;p&gt;未来绝对不会是“今天的情况+法学硕士”&lt;p&gt;现在软件的范式是“建造一个工具棚、车库、谷仓、仓库，充满尽可能多的功能，满足尽可能多的用途”。但是，当法学硕士可以在几分钟内为您打造一把定制的（！）锤子或锯子时，为什么还要去棚屋呢？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cheema33:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我非常支持使用人工智能工具进行软件开发。但在我看到 Linux 内核、PostgreSQL、gcc、git 或 Chromium 的 vivi 编码替代品之前，我只是不同意这个前提。如果我在没有安装 Python 的系统上，我不会看到 Claude 说，哦，你不需要下载它，我会为你编写 Python 解释器。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;antirez:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我相信我们将会看到新一轮有用的开源软件的巨大浪潮。但是，不要指望开发模型会保持不变。我终于能够恢复我的一些项目，并且还会有更多项目出现。例如，一件令人难以置信的事情是能够轻松地合并值得从分叉中合并的内容。新的 OSS 的驱动因素并不是您可以生成的代码量，而是您所拥有的软件的想法，即软件应该是什么样子、如何运行、应该做什么才能有用。如今，设计比编码更重要。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tomaytotomato:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直在尝试使用 Claude 代码来帮助改进我的开源 Java NLP 位置库。&lt;p&gt;但是，除了优化代码或修复它遇到的小问题之外，我还试图让它做任何其他事情。它难以解决高级抽象问题。&lt;p&gt;例如，我目前遇到歧义冲突问题，例如&lt;p&gt;输入：“加利福尼亚”&lt;p&gt;输出：“加利福尼亚，密苏里州”&lt;p&gt;加利福尼亚州是密苏里州的一个州，也是密苏里州的城市 - &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tomaytotomato&amp;#x2F;location4j&amp;#x2F;问题&amp;#x2F;44" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tomaytotomato&amp;#x2F;location4j&amp;#x2F;issues&amp;#x2F;44&lt;/a&gt;&lt;p&gt;我多次要求 Claude 解决这个歧义，他建议了各种优先级策略等。然而，由此产生的更改破坏了我的库中的其他功能。&lt;p&gt;最后，我从头开始重新设计我的库最少的人工智能输入。为什么？因为几年前我在没有人工智能帮助的情况下启动了这个项目，我设计它是为了解决一个问题，但这个问题和微妙的编程决策似乎没有得到法学硕士的尊重（法学硕士不关心故事，他们只关心代码的当前状态）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lukan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“Vibe 编码通过降低使用和构建现有代码的成本来提高生产力，但它也削弱了许多维护者赚取回报的用户参与度。”&lt;p&gt;我认为标题是标题诱饵。&lt;p&gt;结论是：&lt;p&gt;“Vibe 编码代表了软件生产和消费方式的根本转变。生产力的提高是真实且巨大的。但支撑现代软件基础设施的开源生态系统也面临着威胁。该模型表明，这些收益和威胁并不是独立的：降低成本的技术也会削弱维持自愿贡献的参与度。“&lt;p&gt;我看到的危险是淹没在 LLM 的公关中的项目，而不是参与度的减少。&lt;p&gt;LLM 对开源的好处是降低恢复和维护（废弃）项目的成本。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Sharlin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;没问题！只需让代理能够自主报告问题、提交补丁以及与库作者互动即可。肯定不会出什么差错。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ktallett:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为，除非您的计划非常出色，并且您对最佳编码风格的评论非常出色，否则，vibe 编码将在大型开源项目中遇到很大困难，但是……对于我们许多人每天使用并发现无价的小型开源工具，我实际上认为，vibe 编码非常适合。它可以快速制作一个功能版本，您可以对其进行迭代和改进，并且免费使用它不会有任何损失。&lt;p&gt;我非常怀疑，但我承认我认为氛围编码在社会中占有一席之地，只是它是什么还有待确定。它不能肯定对大多数人有帮助，但在某些情况下可以帮助一些人。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arxiv.org/abs/2601.15494</guid>
+      <pubDate>Mon, 26 Jan 2026 13:01:00 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46765120</comments>
+    </item>
+    <item>
+      <title>Windows 11 周二补丁日的噩梦变得更糟</title>
+      <link>https://www.windowscentral.com/microsoft/windows-11/windows-11s-botched-patch-tuesday-update-nightmare-continues-as-microsoft-confirms-some-pcs-might-fail-to-boot</link>
+      <description>&lt;p&gt;— 主编 Daniel Rubino 微软已确认，部分用户在安装 1 月 13 日发布的 2026 年 1 月安全更新后可能会发现自己的 PC 无法启动。到目前为止，该公司已发布了两个 Windows 11 紧急带外更新，以解决本月安全更新中引入的重大错误，但导致 PC 无法启动的最新问题尚未得到解决。这是本月补丁星期二更新中引入的一系列问题中的最新一个。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Windows 11's Patch Tuesday nightmare gets worse&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46766526"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.windowscentral.com/microsoft/windows-11/windows-11s-botched-patch-tuesday-update-nightmare-continues-as-microsoft-confirms-some-pcs-might-fail-to-boot'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;notjustanymike:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;目前还不清楚为什么 1 月份的 Windows 11 安全更新会造成如此灾难性的后果。无论出于何种原因，微软都需要退后一步，重新评估其开发 Windows 的方式，因为当前的质量标准可能处于有史以来的最低水平。&lt;p&gt;我想我可能知道......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xswhiskey:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这么大的公司怎么会在人们认为的主要*产品上遭遇如此严重的失败，这仍然让我感到困惑。&lt;p&gt;*是的，他们可能在 Azure 或 Office365 许可证中获得更多收入，但至少当我想到“微软”时，我立即想到 Windows。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.windowscentral.com/microsoft/windows-11/windows-11s-botched-patch-tuesday-update-nightmare-continues-as-microsoft-confirms-some-pcs-might-fail-to-boot</guid>
+      <pubDate>Mon, 26 Jan 2026 15:07:37 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46766526</comments>
+    </item>
+    <item>
+      <title>Show HN：只有 1 名法学硕士可以驾驶无人机</title>
+      <link>https://github.com/kxzk/snapbench</link>
+      <description>&lt;p&gt;VLM 驾驶无人机穿越 3D 世界来定位和识别生物。它知道它需要识别生物。颜色理论，也许是有趣的，具有较高对比度的生物（灰色的羊，粉红色的猪）似乎比融入地形的棕色生物更容易发现。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Only 1 LLM can fly a drone&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46764170"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/kxzk/snapbench'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;avaer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Gemini 3 是我发现的唯一可以进行空间推理的模型。这里的结果对于我将 LLM NPC 放入模拟世界中的实验来说是准确的。&lt;p&gt;令我惊讶的是，大多数 VLLM 无法可靠地判断角色是面向左还是面向右，无论你做什么，它们都会自信地撒谎（即使是 Gemini 3 也无法可靠地做到这一点）。我猜它只是不在训练数据中。&lt;p&gt;也就是说，Qwen3VL 模型更小、更快、“空间接地”更好。在像素空间中，因为像素坐标是在标记中编码的。因此，您可以使用它们来检测场景中的事物以及它们所在的位置（如果您正在运行 sim，则可以将其投影到 3d 空间）。但它们不是很好的推理模型，所以不要要求它们思考。&lt;p&gt;这意味着我目前找到的最好的管道是在动作推理之前添加一个愚蠢的检测预传递。这基本上将 3d 模拟变成了在标签上操作的 1d 文本模拟 - 这是法学硕士&lt;i&gt;&lt;/i&gt;擅长的事情。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fsiefken:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很好奇这些模型将如何执行以及它们需要多少能量来半实时检测对象：
+SmolVLM2-500M - Moondream 0.5B&amp;#x2F;2B&amp;#x2F;2.5B - Qwen3-VL (3B)
+&lt;a href="https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;collections&amp;#x2F;Qwen&amp;#x2F;qwen3-vl" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;collections&amp;#x2F;Qwen&amp;#x2F;qwen3-vl&lt;/a&gt;&lt;p&gt;我确信这一点俄罗斯、乌克兰和荷兰已经在进行这项工作。自动飞行可能会出现很多问题。
+人们可以将 VLM 加载到无人机的高端 Android 手机上并进行双重控制。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;accrual:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为这是一项令人着迷的工作，即使 LLM 目前还不是这项工作的理想工具。&lt;p&gt;最近在首页上进行了一些具体化 LLM 的实验（例如基本机器人身体 + 任务），SOTA 模型也遇到了困难。当然他们会 - 有哪些训练数据可以体现具有任意控制和反馈的随机设备？他们必须依靠“将军”。他们的智力方面仍在不断提高。&lt;p&gt;通过专门的具体化培训和更严格、更快的反馈循环，我不明白为什么法学硕士无法成功驾驶无人机。我确信有些人仍然会从铁轨上掉下来，但软件护栏可以通过防止某些操作来提供帮助。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;antisthenes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;法学硕士驾驶武器化无人机正是它的开始。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bigfishrunning:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么你想要一个法学硕士来驾驶无人机？似乎是不适合这项工作的工具——就像是在说“只有一把电钻才能敲击屋顶钉子”。也许这是真的，但拿把锤子吧&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/kxzk/snapbench</guid>
+      <pubDate>Mon, 26 Jan 2026 11:00:44 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46764170</comments>
+    </item>
+    <item>
+      <title>台积电风险</title>
+      <link>https://stratechery.com/2026/tsmc-risk/</link>
+      <description>&lt;p&gt;“我认为这太疯狂了。本月早些时候，台积电首席执行官 C. 他们告诉我，他们在 5-6 年前就已经计划好了这一计划。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; TSMC Risk&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46764223"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://stratechery.com/2026/tsmc-risk/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;boxed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;相反，唯一真正能促使台积电承担更多风险的是竞争。&lt;p&gt;也许我错过了一些东西，但如果谷歌、微软、苹果、OpenAI 等想要在晶圆厂上增加资本支出，他们可以自己支付这笔钱吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alephnerd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从 NatSec 的角度来看，台积电并不是真正的瓶颈——大多数武器系统都使用可以在“传统节点”上运行的 SoC 和微控制器。 （即 28&amp;#x2F;40&amp;#x2F;60&amp;#x2F;90nm）或 14&amp;#x2F;20&amp;#x2F;22nm 节点和化合物半导体。&lt;p&gt;批量生产与 Pascal 相当的 GPU 或与 Apple A11 相当的 SoC 的能力就是更尖端系统所需要的。&lt;p&gt;电力电子和化合物半导体（GaN、SiC）历来是最大的&lt;p&gt;台积电在中国方面面临的更大风险是台积电计划在 2027 年之前退出 GaN 代工生产。由于可靠性问题，大多数中国制造商&lt;i&gt;仍然&lt;/i&gt;依赖台积电生产的 GaN 晶圆，而不是国内生产的 GaN 供应商。中国最终可能会达到台积电的化合物半导体规格，但需要 4-6 年时间。&lt;p&gt;所有其他拥有大规模化合物半导体生产能力的国家（美国、德国、法国、韩国、日本、俄罗斯、印度）要么限制其出口，要么无法在不面临其他买家制裁的情况下将其出口到中国。&lt;p&gt;如果中美战争爆发，我们可能会看到大规模回归 2018-22 水平的技术，这不是世界末日。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;buckle8017:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;人工智能在台湾有物理依赖性，即使没有入侵，也很容易被中国导弹摧毁&lt;p&gt;台湾拥有打击三峡大坝的射程和弹头的导弹。&lt;p&gt;中国的攻击对每个人来说结局都很糟糕。  有数百万人生活在淹没区。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;DivingForGold:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“人工智能对台湾有物理依赖性，即使没有入侵，也很容易被中国导弹摧毁” ？&lt;p&gt;可以说是错误的。您认为美国为什么鼓励现在位于亚利桑那州的台积电代工厂？显然是为了防止中国占领台湾的情况发生。在这种情况下，美国台积电代工厂需要 6 个月或更短的时间才能生产出最好的产品。中国占领台湾可能不会导致中共获得任何技术，当然台湾人有“应急计划”一旦受到入侵，就会蒸发所有技术。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sylware:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;美国和欧盟都有一些即将准备就绪的代工厂，更不用说韩国了。当然需要几年的时间才能赶上。&lt;p&gt;我更担心的是nvidia&amp;#x2F;apple&amp;#x2F;amd&amp;#x2F;等公司完全锁定台积电的产能，以使用他们最新、最好的硅工艺（又名世界上最好的）生产芯片。没有“空间”；用于高性能大型 RISC-V 实现或其他替代方案（并且需要多次迭代并且会犯错误）&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://stratechery.com/2026/tsmc-risk/</guid>
+      <pubDate>Mon, 26 Jan 2026 11:07:26 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46764223</comments>
+    </item>
+    <item>
+      <title>人工智能不会取代软件工程师（希望如此）</title>
+      <link>https://medium.com/@sig.segv/ai-will-not-replace-software-engineers-hopefully-84c4f8fc94c0</link>
+      <guid isPermaLink="true">https://medium.com/@sig.segv/ai-will-not-replace-software-engineers-hopefully-84c4f8fc94c0</guid>
+      <pubDate>Mon, 26 Jan 2026 15:05:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46766493</comments>
+    </item>
+    <item>
+      <title>科学家称数十亿人的水“破产”时代已经开始</title>
+      <link>https://www.bloomberg.com/news/articles/2026-01-20/water-bankruptcy-era-has-begun-for-billions-scientists-say</link>
+      <guid isPermaLink="true">https://www.bloomberg.com/news/articles/2026-01-20/water-bankruptcy-era-has-begun-for-billions-scientists-say</guid>
+      <pubDate>Mon, 26 Jan 2026 12:57:43 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46765092</comments>
     </item>
   </channel>
 </rss>
