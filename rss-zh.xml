@@ -6,139 +6,240 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 28 Jan 2026 18:47:08 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Jan 2026 21:41:09 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Elixir 的作业处理框架 Oban 现已移植到 Python</title>
-      <link>https://www.dimamik.com/posts/oban_py/</link>
-      <description>&lt;p&gt;Surface Level# Oban 允许您仅使用数据库插入和处理作业。状态==“可用”}等待自我。异常（“队列 %s 的生产者出错”，self.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Oban, the job processing framework from Elixir, has come to Python&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46797594"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.dimamik.com/posts/oban_py/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>计算机历史博物馆推出藏品数字门户</title>
+      <link>https://computerhistory.org/press-releases/computer-history-museum-launches-digital-portal-to-its-vast-collection/</link>
+      <description>&lt;p&gt;戈登和贝蒂摩尔基金会资助 OpenCHM 对加利福尼亚州山景城的独一无二的档案进行数字化。该门户与 KeepThinking 合作设计，由其创新的 Qi 馆藏管理系统提供支持。 ”——戈登和贝蒂摩尔基金会科学项目总监 Janet Coffey OpenCHM 平台通过数字门户扩大了全球对 CHM 大量馆藏的访问，并且持续的数字化定期添加更多历史资料。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Computer History Museum Launches Digital Portal to Its Collection&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46798994"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://computerhistory.org/press-releases/computer-history-museum-launches-digital-portal-to-its-vast-collection/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TkTech:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Oban 团队多年来一直在做令人惊叹、精心设计的工作 - 这确实是 Elixir 的唯一选择。也就是说，我对锁定专业版订阅背后的进程池感到非常困惑 - 这是 CPython 架构的基本功能，而不是可有可无的功能。&lt;p&gt;Oban Pro 每月 135 美元，他们的广告是：&lt;p&gt;&lt;pre&gt;&lt;code&gt; 所有开源功能
-
-    多进程执行
-
-    工作流程
-
-    全局和速率限制
-
-    独特的工作
-
-    批量操作
-
-    加密源（30&amp;#x2F;90 天刷新）
-
-    1 申请
-
-    专门的支持
-
-&lt;/code&gt;&lt;/pre&gt;
-我要在这里自吹自擂，因为这是我所知道的，但以我的 100% 免费 Chancy 为例 - &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tktech&amp;#x2F;chancy" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tktech&amp;#x2F;chancy&lt;/a&gt;。开箱即用的相同工作人员可以混合搭配异步、进程、线程和子解释器。它支持工作流、速率限制、独特作业、批量操作、事务排队等。为什么不将这些东西转移到 OSS 版本以与现有选项竞争，并专注于专用支持和更传统的“企业”服务？功能，每月绝对价值 135 美元（Oban 开发人员为问题提供世界一流的支持）。 Python 生态系统中有比 Elixir 更多的选项，因此您要与 Temporal、Trigger、Prefect、Dagster、Airflow 等竞争。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; Oban 允许您仅使用数据库插入和处理作业。您可以插入作业以在创建用户的同一数据库事务中发送确认电子邮件。如果一件事失败，一切都会回滚。&lt;p&gt;这是一项关键功能。很多人会告诉您不应该使用关系数据库作为工作队列，但他们不可避免地会忽略事务对此的重要性 - 能够说“如果事务提交则对这项工作进行排队，如果失败则不要对其进行排队”，这确实很有用。&lt;p&gt;Brandur Leach 几年前就此写了一篇精彩的文章：&lt;a href="https:&amp;#x2F;&amp;#x2F;brandur.org&amp;#x2F;job-drain" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;brandur.org&amp;#x2F;job-drain&lt;/a&gt; - 描述即使您有一个单独的队列系统，您仍然应该通过将队列任务记录到可以作为这些事务的一部分进行更新的临时数据库表来提供它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;owaislone:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不知道我对免费开源版本和锁定功能的商业版本有何感受。我内心深处的某种东西阻止我尝试这样的软件。从逻辑上讲，我会说我支持该模型，因为开源需要可持续，我们需要高质量的开发工具和软件，但在采用方面，我发现自己正在寻求纯粹的开源项目。我认为这与锁定在付费专区后面的功能有关。我认为我会更愿意尝试商业版本提供一些企业级功能（例如合规性报告、FIPS 支持、专业支持等）但不锁定功能的产品。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dfajgljsldkjag:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我修复了许多使用 Redis 执行小任务的损坏系统。最好将作业放入我们已有的数据库中。这使得代码更容易管理，我们需要担心的事情也更少。我希望更多的团队开始这样做以节省时间。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hangonhn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是我的公司已经考虑了一段时间的事情。我们一直在用芹菜，但效果不太好。它完成了工作，但也有它的问题。&lt;p&gt;直到现在我才听说过 Oban，我们考虑过的是 Temporal，但感觉比我们需要的要多得多。我喜欢 Oban 的轻量。&lt;p&gt;有人对这两种产品都有使用经验并能够快速进行比较吗？&lt;p&gt;谢谢！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Arubis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;虽然这是一件很酷的事情，但我确实希望事情能朝相反的方向发展——并且让人们在 Python 中构建的所有 BI&amp;#x2F;ML&amp;#x2F;DS 管道和工作流程并让它们来到 Elixir（以及接下来的 Elixir）。我明白了动力所在，但拥有一些功能性、容错性和并发基础工作，这些工作本质上是高度并发和容易出错的，感觉更自然。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mperham:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我写了 Sidekiq，它是 Oban 的基础。祝贺 Shannon 和 Parker 交付了这个！&lt;p&gt;几年前我也不得不做出同样的决定：我应该专注于 Ruby 还是将 Sidekiq 引入其他语言？我意识到我不可能成为每种语言（Sidekiq.js、Sidekiq.py 等）的专家。我决定走不同的方向并构建 Faktory[0]，它翻转了架构并提供了一个知道如何在内部实现队列生命周期的中央服务器。特定于语言的客户端变得更加简单，并且可以由每种语言的开源社区进行维护，例如工厂-RS[1]。缺点是 Faktory 不专注于任何一个社区，我很难以给定语言提供惯用的示例。&lt;p&gt;这是一个不同的方向，但通过专注于单个社区，您可能会得到更好的结果，时间会证明一切！&lt;p&gt;[0]: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;contribsys&amp;#x2F;faktory" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;contribsys&amp;#x2F;faktory&lt;/a&gt;
-[1]: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;jonhoo&amp;#x2F;faktory-rs" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;jonhoo&amp;#x2F;faktory-rs&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.dimamik.com/posts/oban_py/</guid>
-      <pubDate>Wed, 28 Jan 2026 16:32:00 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46797594</comments>
+&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Bukhmanizer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这个地方很棒，但我的工作在这里发挥了作用，我和我们的一位后辈一起走来走去，从来没有觉得自己这么老了。当我看到“软盘”时，纯粹的惊讶和困惑让我立刻变老了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;belter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这个一直是我的最爱：&lt;a href="https:&amp;#x2F;&amp;#x2F;computerhistory.org&amp;#x2F;blog&amp;#x2F;the-two-napkin-protocol&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;computerhistory.org&amp;#x2F;blog&amp;#x2F;the-two-napkin-protocol&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hoofedear:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这真是太棒了。 CHM 是世界上我最喜欢的地方之一。不久前我在那里申请了一个网络开发人员职位，很高兴看到他们像这样在线扩展东西&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;runamuck:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哦，看看探索墙！  我看到菲比、动力手套（称为 AVGN）和忍者神龟 NES 游戏：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;discovery" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;收藏&amp;#x2F;发现&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;davidmurphy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;CHM 员工在这里。很高兴在 HN 上看到 CHM。很高兴人们对此感到兴奋——我们也一样！该系列中有很多很酷的东西。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ricksunny:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我是 CHM 的粉丝。也就是说，这些藏品对计算机历史有一种（可以理解的）相当以硅谷遗产为中心的观点。  例如，在 NSA 的前身 OP-20-G 中，您会发现很少提到这些诱人的早期提及的替代计算机架构（带图片！），与当时新生的冯·诺依曼架构（也被涵盖）一起提出。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.governmentattic.org&amp;#x2F;8docs&amp;#x2F;NSA-WasntAllMagic_2002.pdf" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.governmentattic.org&amp;#x2F;8docs&amp;#x2F;NSA-WasntAllMagic_2002...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;相关的，更多面对面的种类：&lt;p&gt;&lt;i&gt;最喜欢的科技博物馆&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46504220"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46504220&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;frsandstone:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常酷的东西。&lt;p&gt;未来的复古营销：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;curator-picks&amp;#x2F;vintage-marketing- sell-the-future" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;curator-picks&amp;#x2F;vi...&lt;/a&gt;&lt;p&gt;讲座：
+&lt;a href="https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;catalog&amp;#x2F;搜索目录&amp;#x2F;搜索&amp;#x2F;类别:音频&amp;#x2F;页面&amp;#x2F;2&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;catalog&amp;#x2F;search-c...&lt;/a&gt;&lt;p&gt;口述历史：
+&lt;a href="https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;catalog&amp;#x2F;搜索目录&amp;#x2F;搜索&amp;#x2F;类别:audiooral-history&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;catalog&amp;#x2F;search-c...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JKCalhoun:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我看过（并且喜欢）他们发布到 YouTube 上的许多视频 [1]。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;@ComputerHistory" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;@ComputerHistory&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Robdel12:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这真的很酷。今晚我有一个兔子洞要钻进去&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;链接：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;catalog" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;catalog&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://computerhistory.org/press-releases/computer-history-museum-launches-digital-portal-to-its-vast-collection/</guid>
+      <pubDate>Wed, 28 Jan 2026 17:54:54 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46798994</comments>
     </item>
     <item>
-      <title>Mousefood – 为微控制器构建嵌入式终端 UI</title>
-      <link>https://github.com/ratatui/mousefood</link>
-      <description>&lt;p&gt;Mousefood - Ratatui 的无标准嵌入式图形后端。 Mousefood默认使用embedded-graphics-unicodefonts，它提供具有更大字符集的嵌入式图形字体。该驱动程序需要一些额外的配置。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Mousefood – Build embedded terminal UIs for microcontrollers&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46798402"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/ratatui/mousefood'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nine_k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;«Mousefood - Ratatui 的无标准嵌入式图形后端！»&lt;p&gt;因此 100% Rust。适用于 ESP32、RPi2040，甚至 STM32。提到了几种显示器，包括电子墨水。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;IamDaedalus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;aaaa这就是我学习 Rust 的方式
-我学习 Go 是因为 bubbletea 和 mousefood（它结合了我作为嵌入式系统程序员的工作和对 torminal 的热爱）就在这里&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wjholden:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;凉爽的！我最近刚刚开始学习 Raspberry Pi Pico。谁能推荐一款可以与 Pico 2&amp;#x2F;2W 和 Mousefood 一起使用的特定显示器？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dbacar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嗨奥尔洪，
-它可以与 CYD（廉价黄色显示屏）一起使用吗？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/ratatui/mousefood</guid>
-      <pubDate>Wed, 28 Jan 2026 17:20:31 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46798402</comments>
-    </item>
-    <item>
-      <title>Android完整桌面界面泄露：新状态栏、Chrome扩展</title>
-      <link>https://9to5google.com/2026/01/27/android-desktop-leak/</link>
-      <description>&lt;p&gt;Android Android 完整桌面界面泄露：新状态栏、Chrome 扩展等等 [视频] Abner Li | 2026 年 1 月 27 日 - 太平洋时间下午 2:02 46 条评论 今天，有关 Chromium 问题跟踪器的 Google 错误报告首次无意中泄露了 Android 桌面界面。 Google Chrome 界面大部分与当前的大屏幕 Android 版本保持一致，但扩展按钮除外，该按钮目前仅在桌面浏览器上可用。查看我们的独家故事、评论、操作方法，并订阅我们的 YouTube 频道 查看 YouTube 上的 9to5Google 了解更多新闻： 评论 展开 关闭评论 展开关闭评论 指南 Android Android 突发新闻。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Android's full desktop interface leaks: New status bar, Chrome Extensions&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46790740"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://9to5google.com/2026/01/27/android-desktop-leak/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gessha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;考虑大型移动组织在融合计算范式方面的不同发展是很有趣的：&lt;p&gt;- 三星的 Dex 已经推出了一段时间了
-- 独立开发者已经将 Linux“作为应用程序”开发了一段时间
-- 本文中的Android桌面界面
-- Apple 开发 iPhone 上的视频输出
-- Apple 正在开发带有移动芯片的 Macbook&lt;p&gt;- 另一件令人兴奋的事情是 XR 设备和移动计算&lt;p&gt;- 我担心融合计算将降低桌面界面的重要性以及我们安装所需应用程序的自由度&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SimianSci:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它看起来确实是对 ChromeOS 的重写，使其成为原生 Android 体验，对我所看到的用户体验进行了很少的调整。&lt;p&gt;我认为这对 Google 来说是个好主意。消费者使用手机作为唯一计算体验的趋势仍然强劲。
-这将融合消费者在台式机和主要计算平台之间的体验。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spwa4:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所以我猜......不允许使用完整的广告拦截器？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;theLiminator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道gogole对紫红色的策略会是什么。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;augusteo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Chrome 扩展支持是这里有趣的部分。这通常是使用移动设备作为计算机替代品的一大障碍。&lt;p&gt;Google 遇到了一种奇怪的情况，即 Android 和 ChromeOS 每年都会出现更多重叠。在某些时候，维护两个具有聚合功能集的操作系统似乎很浪费。&lt;p&gt;我的猜测：ChromeOS 可能会在教育市场中生存下来，因为在教育市场中，可管理性比功能更重要。但对于消费者来说呢？大屏幕上的 Android 加上键盘和鼠标可能就足够了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ivell:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果它配备了功能齐全的命令行、unix utils 以及从不同商店安装 Linux 应用程序的能力，那将是一个很棒的操作系统。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;d_silin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好吧，说实话，如果能将 Android 作为桌面操作系统的另一种选择，那就太好了。&lt;p&gt;我记得有一些实验是为了创建一个硬件笔记本电脑外壳来插入智能手机。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;giancarlostoro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是否意味着 ChromeOS 将最终消亡或与 Android 合并？好奇的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dfajgljsldkjag:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这看起来会对很多预算有限的学生和家庭有所帮助。如果您只需将手机插入屏幕，就无需再购买单独的笔记本电脑。浏览器扩展是最重要的部分，因为它使计算机变得有用。我很高兴看到他们正在考虑这个问题。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://9to5google.com/2026/01/27/android-desktop-leak/</guid>
-      <pubDate>Wed, 28 Jan 2026 03:34:45 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46790740</comments>
-    </item>
-    <item>
-      <title>Show HN：我用 C++ 从头开始​​构建了一个小型浏览器引擎</title>
-      <link>https://github.com/beginner-jhj/mini_browser</link>
-      <description>&lt;p&gt;Build make # 构建完成后，可执行文件：. /browser Run # 从构建目录。核心类：NODE（include/html/node.js）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: I built a small browser engine from scratch in C++&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46795540"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/beginner-jhj/mini_browser'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;samiv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从什么时候开始家庭作业登上了 HN 的头版？我觉得这很奇怪......&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lasgawe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是同类项目中最困难的项目之一。恭喜！看起来很酷。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lifetimerubyist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Cursor 是一家价值 300 亿美元的公司，但他们无法通过几乎无限的人工智能计算来做到这一点。&lt;p&gt;干得好。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;luskira:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这真是太酷了，恭喜！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noo_u:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这真是一个很棒的项目！如果您有时间和兴趣，您现在可以尝试构建一个简单的 http 服务器，以便您的浏览器可以与之通信。然后，您可以尝试实现一个简单版本的 TCP&amp;#x2F;IP，并研究底层网络的工作原理。干得好！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xacky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我关注了许多替代浏览器引擎，并且一直在寻找三大浏览器之外的新引擎。您应该利用自己的经验在浏览器技术领域谋得一份职业，因为我们已经非常接近仅使用 Chromium 的网络了。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/beginner-jhj/mini_browser</guid>
-      <pubDate>Wed, 28 Jan 2026 14:03:28 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46795540</comments>
-    </item>
-    <item>
-      <title>汇丰银行，电子邮件不是这样运作的</title>
-      <link>https://danq.me/2026/01/28/hsbc-dont-understand-email/</link>
-      <description>&lt;p&gt;或者他们的意思也许是“需要采取行动：检查您的电子邮件地址是否正确”。如果我重读汇丰银行一年前的电子邮件，他们会说他们想了解这件事。这就是电子邮件的设计工作方式，也是发件人确信电子邮件能够工作的唯一方式。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; That's Not How Email Works, HSBC&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46799304"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://danq.me/2026/01/28/hsbc-dont-understand-email/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>尝试制作值得向最终用户展示的人工智能图像</title>
+      <link>https://www.approachwithalacrity.com/how-to-turn-sfo-jfk-into-a-beautiful-photo/</link>
+      <description>&lt;p&gt;但接下来我们需要将其变成一个漂亮的图像主页：我们的主页。这里有一些关于如何解决这个问题的愚蠢想法。我想匹配一个几乎可以与此相关的任何内容的查询。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Trying to craft AI images that are worth displaying to end users&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46800303"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.approachwithalacrity.com/how-to-turn-sfo-jfk-into-a-beautiful-photo/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;loloquwowndueo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;想让他们真正听你的吗？取消您的账户 - 转移到另一家银行。&lt;p&gt;这很适合虚张声势，但当然，您需要准备好跟进，以防他们揭穿虚张声势。如果你是的话，你也可能会真正换银行。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;renewiltord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;跟踪像素甚至不适用于 Gmail，因为 Google 会从带外获取它们。它没有透露开放率。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://danq.me/2026/01/28/hsbc-dont-understand-email/</guid>
-      <pubDate>Wed, 28 Jan 2026 18:12:02 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46799304</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tehjoker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不确定使用人工智能来达到这个目的是个好主意。当你谈论旅行时，你谈论的是一个真实的地方。&lt;p&gt;如果你展示一些真实的东西和人工智能生成的东西，那么所展示的只是一种幻觉。&lt;p&gt;如果你使用卡通风格，也许它们可以工作，因为用户会立即明白所展示的不是照片。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kazinator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[已标记]&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.approachwithalacrity.com/how-to-turn-sfo-jfk-into-a-beautiful-photo/</guid>
+      <pubDate>Wed, 28 Jan 2026 19:24:35 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46800303</comments>
     </item>
     <item>
-      <title>旋转：请不要 – 自旋锁的常见问题</title>
-      <link>https://www.siliceum.com/en/blog/post/spinning-around/</link>
-      <description>&lt;p&gt;交换（1）` 线程A：写入1，看到1 |线程 B：写入 1，看到 0 线程 A：写入 1，看到 1 | ThreadB：现在拥有锁。 | ThreadB：`unlock()`，写入 0 ThreadA：写入 1，看到 0 |线程B:.线程A：现在拥有锁。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Spinning around: Please don't – Common problems with spin locks&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46797868"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.siliceum.com/en/blog/post/spinning-around/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.siliceum.com/en/blog/post/spinning-around/</guid>
-      <pubDate>Wed, 28 Jan 2026 16:48:59 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46797868</comments>
+      <title>谁设定了世界末日时钟？</title>
+      <link>https://www.popularmechanics.com/science/a70162364/setting-the-doomsday-clock/</link>
+      <description>&lt;p&gt;现在霍尔兹和其他几位时钟设置者正在芝加哥举行的诺贝尔大会上。此后，该公报已发展成为一家非营利组织，拥有涵盖核武器、气候变化和其他人为生存风险的数字平台。晚安，世界末日时钟滴答作响。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Who sets the Doomsday Clock?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46800623"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.popularmechanics.com/science/a70162364/setting-the-doomsday-clock/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;seanicus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;世界末日时钟确实令人难以置信。我很想看到一个案例来说明我们如何比冷战时期的任何时候都更接近（如本文所定义的）彻底核毁灭，甚至是有限的交换。文章中的任何主题都没有令人信服地提出这个论点。&lt;p&gt;核扩散仍然是一件需要极其严肃对待的事情，但《原子科学通报》需要减少夸张，并更令人信服地提出他们的论点。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Night_Thastus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直觉得这个想法很有趣，但执行起来很愚蠢。确实存在系统性问题——既有主要国家特有的问题，也有几乎所有国家所共有的问题。&lt;p&gt;虽然这些问题非常令人担忧，但我认为这些问题都不是&lt;i&gt;直接&lt;/i&gt;、&lt;i&gt;存在&lt;/i&gt;的威胁。冷战期间的核威胁是非常真实的。国际局势高度紧张，一个错误就可能导致无数数百万人死亡。&lt;p&gt;我们今天看到的情况并非如此。是否存在巨大的不平等？是的。有没有奖励很糟糕的系统？腐败？环境问题？是的，是的，是的。&lt;p&gt;但这些都不是我认为世界末日时钟所代表的世界末日。&lt;p&gt;在我看来，他们经常用它来做错误的事情，现在它已经被淡化到毫无意义的地步。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anakaine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;世界末日时钟一直被设定得如此之高，以至于作为基准完全没有意义。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bm3719:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它是由人们设定的，对他们来说，时钟是一种机制，每当他们感觉时间不够时，就会引起危言耸听的关注。  这样做不仅削弱了它们本身，而且削弱了整个科学。&lt;p&gt;充其量，时钟确实是一种测量设备；它只是一种测量设备。这不是我们的危险，而是一群非知名人士的焦虑。  从这个意义上说，它认为我们更接近“末日”了。比古巴导弹危机期间更是如此，因为这就是当前氛围的强度，特别是如果你是一名深陷反动消极主义技术社会的现代活动家的话。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RcouF1uZ4gsC:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;他认为，对共享现实的侵蚀比让人工智能控制核武器更危险。&lt;p&gt;末日时钟的炒作很可能加剧了这种侵蚀。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.popularmechanics.com/science/a70162364/setting-the-doomsday-clock/</guid>
+      <pubDate>Wed, 28 Jan 2026 19:48:59 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46800623</comments>
+    </item>
+    <item>
+      <title>调整 JFMM.net 上的语义搜索 – 联合舰队维护手册</title>
+      <link>https://carlkolon.com/2026/01/27/jfmm-semantic-search/</link>
+      <description>&lt;p&gt;我之前写过关于语义搜索的文章。大多数现代语义搜索系统都使用向量相似性搜索。 net 是一个纯矢量相似性搜索引擎。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Tuning Semantic Search on JFMM.net – Joint Fleet Maintenance Manual&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46796389"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://carlkolon.com/2026/01/27/jfmm-semantic-search/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://carlkolon.com/2026/01/27/jfmm-semantic-search/</guid>
+      <pubDate>Wed, 28 Jan 2026 15:13:53 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46796389</comments>
+    </item>
+    <item>
+      <title>原生 Linux vst 插件目录</title>
+      <link>https://linuxmusic.rocks</link>
+      <description>&lt;p&gt;类别 ID： --------- 全部 --- 效果 ------ 失真 --------- Bitcrusher --------- 饱和度 ------ 动态 --------- 压缩器 --------- 嘶声消除器 --------- 门限 --------- 限制器 --------- 瞬态设计器 ------ EQ ------ 仿真 --------- 放大器模拟 --------- 箱体模拟 --------- 控制台总线仿真 ------ 滤波器 ------ 仪表/分析器 ------ 调制 --------- 合唱 --------- 镶边--------- 移相器 --------- 音调/变频器 --------- 颤音 ------ 多重效果 ------ 时间/空间 --------- 延迟 --------- 混响 --------- 立体声扩展 ------ 工具 --------- 抖动 --------- 音调/噪声发生器/FX --- 乐器 ------ 鼓 ------ 采样器/触发器 ------ 合成器 ------ 声码器 --- Midi --- 其他 ------ 捆绑包 ------ 软件 --------- DAW --------- 实用程序格式：VST2 VST3 LV2 CLAP DAW DSSI JACK LADSPA 独立。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Native Linux vst plugin directory&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46800737"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://linuxmusic.rocks'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;locusofself:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直想在 Linux 上录制音乐（从 90 年代开始）。我最喜欢的 DAW (Reaper) 长期以来一直是 Linux 原生的，这一事实吸引了我。但我有通用音频“阿波罗”接口，并已融入他们的整个生态系统，这非常好，在我的 Mac 上运行得非常好。&lt;p&gt;如果我尝试一下，我会买一个 RME USB 音频接口并使用 Reaper，也许可以使用同样在 Linux 上原生的 Bitwig。我不认为我会搞乱 WINE，无论其他人在 WINE 方面有什么成功故事。&lt;p&gt;不过，我很高兴看到近年来事情的发展&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sirwitti:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我非常喜欢过去几年所取得的进步！ Linux 上可用的 VST&amp;#x2F;音频插件的数量已经从一个相当大的问题发展成为一个真正的生态系统！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jsheard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是否有可能将 WINE 融入 Windows VST 和本机 Linux DAW 之间？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Rooster61:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哦，不错。几个月前我就很想拥有这个。找到适用于 Linux 的 VST 插件并不是一件容易的事，自从去年从 Windows 迁移以来我就错过了这一点。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://linuxmusic.rocks</guid>
+      <pubDate>Wed, 28 Jan 2026 19:59:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46800737</comments>
+    </item>
+    <item>
+      <title>亚马逊裁员 1.6 万人</title>
+      <link>https://www.reuters.com/legal/litigation/amazon-cuts-16000-jobs-globally-broader-restructuring-2026-01-28/</link>
+      <guid isPermaLink="true">https://www.reuters.com/legal/litigation/amazon-cuts-16000-jobs-globally-broader-restructuring-2026-01-28/</guid>
+      <pubDate>Wed, 28 Jan 2026 15:39:11 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46796745</comments>
+    </item>
+    <item>
+      <title>显示 HN：用户脚本的光标</title>
+      <link>https://github.com/chebykinn/browser-code</link>
+      <description>&lt;p&gt;代理工具 代理具有类似文件系统的工具： 工具 描述 读取 读取文件内容。需要上次阅读的版本。写入 写入整个文件。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Cursor for Userscripts&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46800484"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/chebykinn/browser-code'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://github.com/chebykinn/browser-code</guid>
+      <pubDate>Wed, 28 Jan 2026 19:39:31 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46800484</comments>
+    </item>
+    <item>
+      <title>Trinity Large：开放的 400B 稀疏 MoE 模型</title>
+      <link>https://www.arcee.ai/blog/trinity-large</link>
+      <description>&lt;p&gt;当时，Trinity Nano Preview 和 Trinity Mini 刚刚发布，Trinity Large 已经开始训练。与我们的同行相比，稀疏率相当高，除了 Llama-4-Maverick：模型路由 (k-of-N) 路由分数 Trinity Large 4-of-256 1。这种管理方法的不太先进的版本对于 Trinity Nano 和 Trinity Mini 等较小的模型效果很好，但我们希望用 Trinity Large 来实现这一目标。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Trinity large: An open 400B sparse MoE model&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46789561"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.arcee.ai/blog/trinity-large'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;observationist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个很棒的版本。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mynti:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们在 33 天内对其进行了大约 20m 的训练（显然，这不仅包括基础设施，还包括 6 个月期间的工资）。该模型已经接近 QWEN 和 Deepseek。相当令人印象深刻&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;linolevan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我特别兴奋地看到一个“真正的基地”模型进行研究（&lt;a href="https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;arcee-ai&amp;#x2F;Trinity-Large-TrueBase" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;arcee-ai&amp;#x2F;Trinity-Large-TrueBase&lt;/a&gt;）。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.arcee.ai/blog/trinity-large</guid>
+      <pubDate>Wed, 28 Jan 2026 00:57:52 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46789561</comments>
+    </item>
+    <item>
+      <title>亚马逊一掌认证已停止</title>
+      <link>https://amazonone.aws.com/help</link>
+      <guid isPermaLink="true">https://amazonone.aws.com/help</guid>
+      <pubDate>Wed, 28 Jan 2026 16:52:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46797913</comments>
+    </item>
+    <item>
+      <title>沃纳·赫尔佐格的虚无主义企鹅教会了我们什么？</title>
+      <link>https://lwlies.com/article/werner-herzog-penguin-encounters-at-the-end-of-the-world</link>
+      <description>&lt;p&gt;但最重要的是，它是关于人以及他们如何与恶劣环境互动和解释的。他们都有自己有趣的故事。这部电影充满了复杂且具有挑战性的材料，使我们对“纪录片”这个词所了解的一切都产生了质疑。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; What does Werner Herzog's nihilist penguin teach us?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46801225"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://lwlies.com/article/werner-herzog-penguin-encounters-at-the-end-of-the-world'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;krona:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;啊？我原以为至少会有一两句尼采或陀思妥耶夫斯基的名言，但这篇文章完全没有超出任何看过这 3 分钟纪录片的人显而易见的范围。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;netsharc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，我最近几天在 Instagram 上看到了关于这只虚无主义企鹅的视频……感觉像是内容反流，但我不知道现在是谁在创作、又是谁在回收它。&lt;p&gt;（在 HN 上，经常有一天某个网站上有一篇报道，几天后另一个新闻网站又报道了同样的报道..）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;beeflet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我会把它描述为浮士德企鹅，而不是虚无主义企鹅。前几天这里有一个关于一只土狼游向恶魔岛的故事（&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46674433"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46674433&lt;/a&gt;)。&lt;p&gt;当我们看到做出这样的事情的动物时，我们将其描述为一种奇怪且有自杀倾向的动物一个受到干扰的生物将其生命力抛入深渊的行为。但当人类做同样的事情时，这是一种英勇且独特的人类探索行为。&lt;p&gt;如果您前往一个岛屿或山脉或世界上其他一些与世隔绝的地方，您可能会惊讶地发现那里存在生命。但这只有一种方式是可能的：在某个时间点，一些生物不得不放弃它的旧世界，而不顾其个人生存。&lt;p&gt;当你考虑到在新世界中生存的可能性，以及在另一边找到有性伴侣的要求时，你会意识到这需要许多生物在很长一段时间内整合。&lt;p&gt;生命突破界限并探索新环境。必须从某件事开始。显然，为了在短期内克服理性，一定程度的狂热是长期成功的必要条件。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Pet_Ant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我个人最喜欢的他的作品是《快乐的人们：针叶林的一年》。大多数人都在做即时且有目的的工作，并且更加投入。这里有如此多的韧性（熊摧毁了小屋），也有悲剧（火灾）。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Happy_People:_A_Year_in_the_Taiga" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Happy_People:_A_Year_in_the_Ta...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;observationist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;新物种就是这样产生的。随着时间的推移，那些对其他企鹅感到厌倦的企鹅会变得更加厌倦。企鹅们走到了地图的边缘，当它们最终幸运时，足够多聪明、有独立思想的企鹅生存下来，繁衍出新一代。新的冒险群体最终聚集了足够的成员，返回觅食地，从失败者的正常企鹅手中夺取领地。&lt;p&gt;因此，宇宙的弧线向坏蛋企鹅倾斜。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://lwlies.com/article/werner-herzog-penguin-encounters-at-the-end-of-the-world</guid>
+      <pubDate>Wed, 28 Jan 2026 20:43:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46801225</comments>
+    </item>
+    <item>
+      <title>Native Instruments 进入破产程序</title>
+      <link>https://www.engadget.com/audio/native-instruments-enters-into-insolvency-proceedings-leaving-its-future-uncertain-183206826.html</link>
+      <description>&lt;p&gt;Native Instruments 还拥有 iZotope、Brainworx 和 Plugin Alliance 等品牌。这并不是 Native Instruments 第一次被迫进行重大重组。它已经开始将 Native Instruments 软件整合到 MPC 机器中。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Native Instruments enters into insolvency proceedings&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46800645"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.engadget.com/audio/native-instruments-enters-into-insolvency-proceedings-leaving-its-future-uncertain-183206826.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anigbrowl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;更详细、链接更好的文章：&lt;a href="https:&amp;#x2F;&amp;#x2F;cdm.link&amp;#x2F;ni-insolvency&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;cdm.link&amp;#x2F;ni-insolvency&amp;#x2F;&lt;/a&gt;&lt;p&gt;如前所述，该公司自 2020 年进入私募股权以来一直在走下坡路。专业音频用户觉得该公司越来越不注重创新，而更多地注重销售预设包和超薄升级，以及日益繁重的许可证管理。与此同时，人们也感到苦恼，因为该公司在软件和硬件产品方面拥有令人印象深刻的历史。&lt;p&gt;Inmusic（拥有 Akai、Moog 和其他几个优质专业音频品牌）是收购这些品牌的潜在买家，因为他们已经以 NI 插件的形式在 Akai 硬件上独家提供了一些产品交叉。然而，这意味着两个旗舰产品将相互竞争（NI 的 Maschine 和 Akai 的 MPC，两个非常先进的鼓垫音序引擎）。这将意味着放弃 Maschine，其开发已经陷入停滞，并且许多业主会感到失望和不好的感觉；专业音频消费者必然对他们的创意工具情绪激动，往往会怀恨在心。&lt;p&gt;当然，这两种产品的优点可以结合在一个秘密的第三件事中，体现两者的最佳功能，但现实是 Inmusic 刚刚发布了新的旗舰 Akai MPC（当前设计范式的第三代），它们在硬件和软件方面都有如此大的升级，以至于他们正在直接和间接地压制自己的产品竞争。这些旗舰设备（以及即将推出的一些轻量级入门级设备）在被更换之前的销售寿命约为 5 年，并且最新的软件在 2017 年的第一代机器上仍然运行良好，尽管速度较慢并且没有花哨的附加硬件功能。因此，Inmusic 目前正在积极提高品牌忠诚度，因为他们优先考虑对多个品牌的产品开发进行资本投资。他们通过优化供应链效率、在亚洲制造更多产品、保持较低的材料成本并利用规模经济，同时仍然鼓励设计师和工程师追随自己的内心，从而获得了许多非常满意的客户。&lt;p&gt;Native Instruments 拥有这一切，拥有非常深厚的软件堆栈和精心设计的硬件产品，可以完美地协同运行（即没有同步问题，无需或最少的硬件用户界面映射所需的手动配置等）。但产品线越来越臃肿，许可证管理越来越痛苦，硬件开发也陷入停滞。当他们在2020年被现有的PE所有者接管时，他们似乎没有任何自己的创新或投资想法，而是更专注于如何从现有IP中榨取更多资金。这导致了一系列失误——低价值的“升级”、放弃心爱的软件旗舰产品，以及缺乏任何可辨别的硬件业务路线图。这在专业音频领域确实很重要，因为正如我上面提到的，创意人士对他们的工具充满热情。经常看到人们将最新最好的音序器或音频接口连接到 45 年历史的合成器上，或者是带有附加功能的旧设计的盲目现代克隆。音乐技术买家希望保留过去的传统，但也对新音乐技术的稳定供应感到兴奋，而 NI 的私募股权所有者完全未能实现后者，自 2019 年以来没有重大的硬件开发。该公司从可以说在其利基市场中拥有最好的硬件产品（在功能、人体工程学、固件可靠性、软件集成、消费者忠诚度方面），到看到这些优势消失给他们的主要竞争对手一。&lt;p&gt;很难猜测从这里会发生什么。优秀的管理者可以重振公司并使其恢复到以前的辉煌，但市场已经看到它曾经被私募股权摧毁过一次，并且对继续投资于可能没有长期未来的产品生态系统持谨慎态度。音乐技术人员也敏锐地意识到关税和人工智能对硬件组件定价和产品设计的影响。目前，人们对 NI 的长期未来持悲观态度。人们已经在谈论将现有的设置保留为博物馆藏品，即尽可能地最大化，然后断开与互联网的连接，以便它们可以保持工作状态，但否则会被冻结。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;更多讨论：&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46781466"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46781466&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bryceneal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想我可以期待我的所有插件在不久的将来以某种方式突破。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vunderba:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哇。作为 Kontakt 采样器的重度用户，听到这个消息我很难过。我从 Analog Dreams 和 The Gentleman 等图书馆中获益匪浅……&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ahartmetz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哦该死。我认识一些曾经在那里工作过的人，但也认识一些现在仍然在那里工作的人。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drdator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这不在我的 2026 年宾果卡上......:&amp;#x2F;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adamnemecek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;听到这个消息真是令人难过。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adzm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;听到这真是太疯狂了。他们还拥有 izotope 和其他几个品牌。想象一下如果许可服务器出现故障。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.engadget.com/audio/native-instruments-enters-into-insolvency-proceedings-leaving-its-future-uncertain-183206826.html</guid>
+      <pubDate>Wed, 28 Jan 2026 19:51:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46800645</comments>
+    </item>
+    <item>
+      <title>Show HN：SHDL – 由逻辑门构建的最小硬件描述语言</title>
+      <link>https://github.com/rafa-rrayes/SHDL</link>
+      <description>&lt;p&gt;SHDL - 简单硬件描述语言 一种轻量级硬件描述语言和 Python 驱动程序，用于仅使用逻辑门进行数字电路仿真。在 Python 中使用 from SHDL import Circuit # 使用 Circuit("fullAdder.Compile from Command Line # Compile SHDL to C shdlc adder. 加载并编译电路。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: SHDL – A minimal hardware description language built from logic gates&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46794281"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/rafa-rrayes/SHDL'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fspeech:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您只对结构描述（所谓的网表）感兴趣，则标准是 EDIF。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;notherhack:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您重新发明了 Verilog 原始门。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Lramseyer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有点疯狂的想法，但是您是否考虑过使用它作为逻辑图的标记语言？我在想类似美人鱼的东西 - &lt;a href="https:&amp;#x2F;&amp;#x2F;mermaid.js.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;mermaid.js.org&amp;#x2F;&lt;/a&gt; 虽然这对于芯片设计可能不是非常有用，但它是一个功能齐全的 HDL，并且由于它是门级，因此可以很好地映射到图表。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/rafa-rrayes/SHDL</guid>
+      <pubDate>Wed, 28 Jan 2026 12:06:18 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46794281</comments>
+    </item>
+    <item>
+      <title>Kairos：适合所有人的人工智能实习生</title>
+      <link>https://www.kairos.computer/</link>
+      <description>&lt;p&gt;Kairos 在本地与他们合作。根据您的政策进行处理。您的日历：与您的空缺时段交叉引用。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Kairos: AI interns for everyone&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46792225"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.kairos.computer/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abcde666777:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们称他们为“实习生”是有原因的。 - 因为结果会低于标准。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;athultr1997:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不想分享我的电话号码来演示产品:(&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.kairos.computer/</guid>
+      <pubDate>Wed, 28 Jan 2026 07:40:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46792225</comments>
+    </item>
+    <item>
+      <title>伦敦如何成为世界其他地区的创业之都</title>
+      <link>https://www.economist.com/britain/2026/01/26/how-london-became-the-rest-of-the-worlds-startup-capital</link>
+      <guid isPermaLink="true">https://www.economist.com/britain/2026/01/26/how-london-became-the-rest-of-the-worlds-startup-capital</guid>
+      <pubDate>Wed, 28 Jan 2026 00:16:57 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46789180</comments>
+    </item>
+    <item>
+      <title>一位著名的研究人员是否掩盖了婴儿中毒事件？</title>
+      <link>https://www.newyorker.com/magazine/2026/02/02/did-a-celebrated-researcher-obscure-a-fatal-poisoning</link>
+      <description>&lt;p&gt;那天早上晚些时候，拉尼带他来进行例行的儿科检查。另一位医生后来报告说，塔里克“看上去精神抖擞”。他说，过去二十个小时里，塔里克大部分时间都在睡觉，而且他的皮肤颜色不断变化。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Did a celebrated researcher obscure a baby's poisoning?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46789205"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.newyorker.com/magazine/2026/02/02/did-a-celebrated-researcher-obscure-a-fatal-poisoning'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.newyorker.com/magazine/2026/02/02/did-a-celebrated-researcher-obscure-a-fatal-poisoning</guid>
+      <pubDate>Wed, 28 Jan 2026 00:18:58 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46789205</comments>
+    </item>
+    <item>
+      <title>显示 HN：一个 MitM 代理，用于查看您的 LLM 工具发送的内容</title>
+      <link>https://github.com/jmuncor/sherlock</link>
+      <description>&lt;p&gt;启动 Sherlock sherlock 首次运行时，Sherlock 将： 生成 mitmproxy CA 证书 提示您将其安装在系统信任存储中 询问在何处保存截获的提示 2. 运行您的 LLM 工具 在单独的终端中，使用 Sherlock 代理您的命令： # For Claude Code sherlock claude # For any command sherlock run --node your-llm-tool 就是这样。 git cd sherlock python -m。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: A MitM proxy to see what your LLM tools are sending&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46799898"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/jmuncor/sherlock'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrbluecoat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么它只是 MitM Proxy 的包装吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;EMM_386:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太棒了。&lt;p&gt;当我在大型、棘手的代码库上使用 AI 时，我会尝试进行协作，将可能导致大量令牌的事情交给我（过多的工具调用、不精确的搜索、冗长的输出、读取未指定范围的大文件等）。&lt;p&gt;这将有助于准确缩小仍需要手动处理的范围，以最好地保持在令牌预算之内。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;david_shaw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;干得好！我确信这里收集的数据对许多用户都有启发。&lt;p&gt;令我惊讶的是，对此类企业范围工具的需求并不强烈。是的，有一些解决方案，但是当你对比“为公司每个人提供代理人工智能能力”的新标准时，你就会发现与之前的强数据治理范式（至少在较大的组织中）相比，这是一个明显的区别。&lt;p&gt;我认为我们距离钟摆稍微向后摆动已经不远了。不仅仅是因为人工智能不能用于所有事情，而是因为对人工智能广泛使用的治理（不严格限制工具实际可以做的事情）是一个困难且持续的问题。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/jmuncor/sherlock</guid>
+      <pubDate>Wed, 28 Jan 2026 18:52:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46799898</comments>
     </item>
   </channel>
 </rss>

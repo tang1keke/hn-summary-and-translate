@@ -6,139 +6,240 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Korean</description>
     <language>ko</language>
-    <lastBuildDate>Wed, 28 Jan 2026 18:47:08 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Jan 2026 21:41:09 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ko.xml"/>
     <item>
-      <title>Elixir의 작업 처리 프레임워크인 Oban이 Python에 등장했습니다.</title>
-      <link>https://www.dimamik.com/posts/oban_py/</link>
-      <description>&lt;p&gt;Surface Level# Oban을 사용하면 데이터베이스만 사용하여 작업을 삽입하고 처리할 수 있습니다. 상태 == "사용 가능"} 자신을 기다립니다. 예외("큐 %s의 생산자에 오류가 있습니다.", self.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Oban, the job processing framework from Elixir, has come to Python&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46797594"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.dimamik.com/posts/oban_py/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>컴퓨터 역사 박물관, 컬렉션에 대한 디지털 포털 출시</title>
+      <link>https://computerhistory.org/press-releases/computer-history-museum-launches-digital-portal-to-its-vast-collection/</link>
+      <description>&lt;p&gt;Gordon과 Betty Moore 재단은 캘리포니아주 MOUNTAIN VIEW의 독특한 아카이브를 디지털화하기 위해 OpenCHM에 자금을 지원했습니다. KeepThinking과 협력하여 설계된 이 포털은 혁신적인 Qi 컬렉션 관리 시스템으로 구동됩니다. ”—Janet Coffey, 과학 프로그램 디렉터, Gordon and Betty Moore Foundation OpenCHM 플랫폼은 디지털 포털을 통해 CHM의 방대한 컬렉션에 대한 전 세계 액세스를 확장하고 지속적인 디지털화를 통해 정기적으로 더 많은 역사적 자료를 추가합니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Computer History Museum Launches Digital Portal to Its Collection&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46798994"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://computerhistory.org/press-releases/computer-history-museum-launches-digital-portal-to-its-vast-collection/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TkTech:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Oban 사람들은 수년 동안 훌륭하고 잘 설계된 작업을 해왔습니다. 이것은 실제로 Elixir의 유일한 옵션입니다. 즉, Pro 구독 뒤에 프로세스 풀을 잠그는 것이 매우 혼란스럽습니다. 이것은 CPython 아키텍처에 주어진 기본 기능이지 가지고 있으면 좋은 것이 아닙니다.&lt;p&gt;Oban Pro에서 월 135달러에 다음과 같이 광고합니다.&lt;p&gt;&lt;pre&gt;&lt;code&gt; 모든 오픈 소스 기능
-
-    다중 프로세스 실행
-
-    워크플로
-
-    전역 및 속도 제한
-
-    독특한 직업
-
-    대량 작업
-
-    암호화된 소스(30~90일 새로 고침)
-
-    1 신청
-
-    전담 지원
-
-&lt;/code&gt;&lt;/pre&gt;
-제가 알고 있는 내용이기 때문에 여기에서 제 경적을 울리겠습니다. 하지만 100% 무료 Chancy를 예로 들어보겠습니다. &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tktech&amp;#x2F;chancy" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tktech&amp;#x2F;chancy&lt;/a&gt;. 기본적으로 동일한 작업자는 asyncio, 프로세스, 스레드 및 하위 인터프리터를 혼합하여 사용할 수 있습니다. 워크플로우, 속도 제한, 고유 작업, 대량 작업, 트랜잭션 대기열 추가 등을 지원합니다. 기존 옵션과 경쟁력을 갖추기 위해 이러한 것들을 OSS 버전으로 옮기고 전용 지원과 보다 전통적인 "엔터프라이즈" 지원에 집중하는 것은 어떨까요? 월 135달러의 가치가 있는 기능입니다(Oban 개발자는 문제에 대해 세계적 수준의 지원을 제공합니다). Python 생태계에는 Elixir보다 더 많은 옵션이 있으므로 Temporal, Trigger, Prefect, Dagster, Airflow 등과 경쟁하게 됩니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; Oban을 사용하면 데이터베이스만 사용하여 작업을 삽입하고 처리할 수 있습니다. 사용자를 생성한 동일한 데이터베이스 트랜잭션에 확인 이메일을 보내는 작업을 삽입할 수 있습니다. 한 가지라도 실패하면 모든 것이 롤백됩니다.&lt;p&gt;이것이 바로 핵심 기능입니다. 많은 사람들이 관계형 데이터베이스를 작업자 대기열로 사용하면 안 된다고 말하지만 트랜잭션이 얼마나 중요한지 필연적으로 놓치게 됩니다. "트랜잭션이 커밋되면 이 작업을 대기열에 넣고, 실패하면 대기열에 넣지 마세요"라고 말할 수 있는 것은 정말 유용합니다.&lt;p&gt;Brandur Leach는 몇 년 전에 이에 대한 환상적인 글을 썼습니다. &lt;a href="https:&amp;#x2F;&amp;#x2F;brandur.org&amp;#x2F;job-drain" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;brandur.org&amp;#x2F;job-drain&lt;/a&gt; - 별도의 대기열 시스템이 있더라도 해당 트랜잭션의 일부로 업데이트될 수 있는 임시 데이터베이스 테이블에 대기열 작업을 기록하여 공급해야 하는 방법을 설명합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;owaislone:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;무료 오픈 소스 버전과 기능을 잠그는 상용 버전에 대해 어떻게 생각하는지 모르겠습니다. 내 안에 뭔가가 그런 소프트웨어를 시도하는 것조차 방해합니다. 논리적으로 저는 오픈 소스가 지속 가능해야 하고 좋은 품질의 개발자 도구와 소프트웨어가 필요하기 때문에 이 모델을 지지한다고 말하고 싶습니다. 그러나 채택에 관해서는 순전히 오픈 소스 프로젝트에 손을 뻗고 있습니다. 내 생각에는 유료화 장벽 뒤에 잠겨 있는 기능과 관련이 있는 것 같습니다. 나는 상업용 버전이 규정 준수 보고서, FIPS 지원, 전문 지원 등과 같은 일부 기업 수준 기능을 제공하지만 기능을 잠그지 않는 제품을 시험해 보는 데 훨씬 더 개방적이라고 생각합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dfajgljsldkjag:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;작은 작업에 redis를 사용하는 많은 손상된 시스템을 수정했습니다. 이미 가지고 있는 데이터베이스에 작업을 저장하는 것이 훨씬 더 좋습니다. 이렇게 하면 코드를 더 쉽게 관리할 수 있고 걱정할 사항이 줄어듭니다. 시간을 절약하기 위해 더 많은 팀이 이 작업을 시작하기를 바랍니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hangonhn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것은 우리 회사가 오랫동안 고려해온 사항입니다. 우리는 셀러리를 사용해 왔는데 별로 좋지 않습니다. 작업은 완료되지만 문제가 있습니다.&lt;p&gt;지금까지 Oban에 대해 들어본 적이 없으며 우리가 고려한 것은 Temporal이었지만 우리가 필요로 하는 것보다 훨씬 더 많은 느낌을 줍니다. 저는 Oban이 얼마나 가벼운지 좋아합니다.&lt;p&gt;두 가지 모두에 대한 경험이 있고 빠르게 비교할 수 있는 사람이 있습니까?&lt;p&gt;감사합니다!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Arubis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것이 보기에 멋진 일이긴 하지만, 저는 상황이 다른 방향으로 흘러가서 사람들이 Python으로 구축하고 있는 모든 BI&amp;#x2F;ML&amp;#x2F;DS 파이프라인과 작업 흐름이 Elixir(그리고 앞으로는 Elixir)로 옮겨지길 바랍니다. 나는 추진력이 어디에 있는지 알지만 기능적이고 내결함성이 있으며 동시에 지원하는 작업을 갖는 것이 자연스럽게 동시성이 높고 오류가 발생하기 쉬운 작업을 갖는 것이 _훨씬_ 더 자연스러운 느낌을 줍니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mperham:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 Oban의 기반이 되는 Sidekiq을 썼습니다. 이 제품을 출시한 Shannon과 Parker에게 축하를 보냅니다!&lt;p&gt;저는 몇 년 전에도 같은 결정을 내려야 했습니다. Ruby에 집중할 것인가, 아니면 Sidekiq을 다른 언어로 가져올 것인가? 제가 깨달은 것은 Sidekiq.js, Sidekiq.py 등 모든 언어에 대해 전문가가 될 수는 없다는 것입니다. 저는 다른 방향으로 가기로 결정하고 대신 Faktory[0]를 구축했습니다. Faktory[0]는 아키텍처를 뒤집고 대기열 수명주기를 내부적으로 구현하는 방법을 아는 중앙 서버를 제공합니다. 언어별 클라이언트는 훨씬 더 단순해지고 각 언어에 대한 오픈 소스 커뮤니티에서 유지 관리할 수 있습니다. 공장-rs[1]. 단점은 Faktory가 어느 하나의 커뮤니티에 초점을 맞추지 않고 특정 언어로 관용적인 예를 제공하기가 어렵다는 것입니다.&lt;p&gt;방향은 다르지만 단일 커뮤니티에 집중하면 더 나은 결과를 얻을 수 있으며 시간이 지나면 알게 될 것입니다!&lt;p&gt;[0]: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;contribsys&amp;#x2F;faktory" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;contribsys&amp;#x2F;faktory&lt;/a&gt;
-[1]: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;jonhoo&amp;#x2F;faktory-rs" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;jonhoo&amp;#x2F;faktory-rs&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.dimamik.com/posts/oban_py/</guid>
-      <pubDate>Wed, 28 Jan 2026 16:32:00 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46797594</comments>
+&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Bukhmanizer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이곳은 훌륭하지만 내 일이 여기에 기능이 있었고 후배 중 한 명과 함께 걸어 다녔는데 그렇게 늙었다고 느껴본 적이 없었습니다. “플로피 디스크”를 볼 때의 순수한 놀라움과 혼란은 나를 순식간에 늙게 만들었습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;belter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것은 항상 인기가 많았습니다. &lt;a href="https:&amp;#x2F;&amp;#x2F;computerhistory.org&amp;#x2F;blog&amp;#x2F;the-two-napkin-protocol&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;computerhistory.org&amp;#x2F;블로그&amp;#x2F;the-two-napkin-protocol&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hoofedear:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;정말 대단해요. CHM은 제가 세상에서 가장 좋아하는 장소 중 하나입니다. 얼마 전 그곳에서 웹 개발자 자리에 지원했는데, 이렇게 온라인에서 일을 확장하는 걸 보니 반가웠어요.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;runamuck:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아, 디스커버리 벽을 확인해 보세요!  Furby, Power Glove(AVGN 호출) 및 Ninja Turtles NES 게임이 보입니다. &lt;a href="https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;discovery" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;컬렉션&amp;#x2F;발견&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;davidmurphy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;CHM 직원이 왔습니다. HN에서 CHM을 보는 것은 항상 반가운 일입니다. 다행스러운 사람들은 이것에 대해 흥분하고 있습니다. 우리도 마찬가지입니다! 컬렉션에는 멋진 콘텐츠가 너무 많습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ricksunny:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 CHM의 팬입니다. 즉, 거기 컬렉션은 음, 컴퓨터 역사에 대해 다소 실리콘 밸리 레거시 중심의 관점을 가지고 있습니다.  예를 들어 NSA의 전신인 OP-20-G에서 대체 컴퓨터 아키텍처(그림 포함!)에 대한 감미로운 초기 언급이 당시 초기 폰 노이만 아키텍처(또한 포함됨)와 함께 제시된 것에 대해서는 거의 언급되지 않습니다.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.governmentattic.org&amp;#x2F;8docs&amp;#x2F;NSA-WasntAllMagic_2002.pdf" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.governmentattic.org&amp;#x2F;8docs&amp;#x2F;NSA-WasntAllMagic_2002...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;직접 만나서 볼 수 있는 다양한 관련 항목:&lt;p&gt;&lt;i&gt;좋아하는 기술 박물관&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46504220"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46504220&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;frsandstone:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;매우 멋진 내용입니다.&lt;p&gt;미래의 빈티지 마케팅: &lt;a href="https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;curator-picks&amp;#x2F;vintage-marketing-sseling-the-future" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;curator-picks&amp;#x2F;vi...&lt;/a&gt;&lt;p&gt;강의:
+&lt;a href="https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;컬렉션&amp;#x2F;카탈로그&amp;#x2F;검색-카탈로그&amp;#x2F;검색&amp;#x2F;카테고리:오디오&amp;#x2F;페이지&amp;#x2F;2&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;catalog&amp;#x2F;search-c...&lt;/a&gt;&lt;p&gt;구술 역사:
+&lt;a href="https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;컬렉션&amp;#x2F;카탈로그&amp;#x2F;검색-카탈로그&amp;#x2F;검색&amp;#x2F;카테고리:오디오럴-히스토리&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;컬렉션&amp;#x2F;카탈로그&amp;#x2F;검색-c...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JKCalhoun:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 그들이 YouTube에 게시한 많은 동영상을 접하고 즐겼습니다.[1]&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;@ComputerHistory" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;@ComputerHistory&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Robdel12:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;정말 멋지네요. 오늘 밤에는 토끼 굴에 들어가야 해요&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;링크: &lt;a href="https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;catalog" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;catalog&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://computerhistory.org/press-releases/computer-history-museum-launches-digital-portal-to-its-vast-collection/</guid>
+      <pubDate>Wed, 28 Jan 2026 17:54:54 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46798994</comments>
     </item>
     <item>
-      <title>Mousefood – 마이크로컨트롤러용 임베디드 터미널 UI 구축</title>
-      <link>https://github.com/ratatui/mousefood</link>
-      <description>&lt;p&gt;Mousefood - Ratatui용 비표준 임베디드 그래픽 백엔드입니다. Mousefood는 기본적으로 훨씬 더 많은 문자 집합이 포함된 내장 그래픽 글꼴을 제공하는 내장 그래픽 유니코드 글꼴을 사용합니다. 이 드라이버에는 몇 가지 추가 구성이 필요합니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Mousefood – Build embedded terminal UIs for microcontrollers&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46798402"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/ratatui/mousefood'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nine_k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;«Mousefood - Ratatui를 위한 비표준 임베디드 그래픽 백엔드!»&lt;p&gt;따라서 100% Rust입니다. ESP32, RPi2040 및 STM32에서도 작동합니다. e-ink를 포함한 여러 디스플레이가 언급되었습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;IamDaedalus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아아아아그리고 이게 내가 녹을 배우는 방법이야
-나는 버블티와 마우스푸드(임베디드 시스템 프로그래머로서의 일과 torminals에 대한 사랑을 결합한 것) 때문에 바둑을 배웠습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wjholden:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;시원한! 최근에 Raspberry Pi Pico를 배우기 시작했습니다. Pico 2&amp;#x2F;2W 및 Mousefood와 함께 사용할 수 있는 특정 디스플레이를 추천해 줄 수 있는 사람이 있나요?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dbacar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;안녕하세요 오르훈님,
-CYD(Cheap Yellow Display)와 함께 사용할 수 있나요?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/ratatui/mousefood</guid>
-      <pubDate>Wed, 28 Jan 2026 17:20:31 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46798402</comments>
-    </item>
-    <item>
-      <title>Android의 전체 데스크톱 인터페이스 유출: 새로운 상태 표시줄, Chrome 확장 프로그램</title>
-      <link>https://9to5google.com/2026/01/27/android-desktop-leak/</link>
-      <description>&lt;p&gt;Android Android의 전체 데스크톱 인터페이스 유출: 새로운 상태 표시줄, Chrome 확장 프로그램 등 [동영상] Abner Li | 2026년 1월 27일 - 오후 2:02 PT 46개의 댓글 오늘 Chromium Issue Tracker에 대한 Google 버그 보고서에서 Android 데스크톱 인터페이스가 처음으로 실수로 유출되었습니다. Google Chrome 인터페이스는 현재 데스크톱 브라우저에서만 사용할 수 있는 확장 프로그램 버튼을 제외하고 대부분 현재 대형 화면 Android 버전과 일치합니다. 독점 스토리, 리뷰, 방법을 확인하고 YouTube 채널을 구독하세요. YouTube에서 9to5Google을 통해 더 많은 뉴스를 확인하세요. 댓글 확장 댓글 닫기 확장 댓글 닫기 가이드 Android Android 속보.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Android's full desktop interface leaks: New status bar, Chrome Extensions&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46790740"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://9to5google.com/2026/01/27/android-desktop-leak/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gessha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;융합 컴퓨팅 패러다임과 관련하여 대규모 모바일 조직에서 일어나고 있는 다양한 발전을 고려하는 것은 흥미롭습니다.&lt;p&gt;- 삼성의 Dex는 한동안 출시되지 않았습니다.
-- 독립 개발자들은 한동안 Linux를 "앱"으로 작업해 왔습니다.
-- 이 문서의 Android 데스크톱 인터페이스
-- Apple이 iPhone에서 비디오 출력을 개발 중입니다.
-- Apple은 모바일 칩을 탑재한 Macbook을 개발하고 있습니다&lt;p&gt;- 또 다른 흥미로운 점은 XR 장치와 모바일 컴퓨팅입니다&lt;p&gt;- 제가 우려하는 점은 컨버전스 컴퓨팅이 데스크톱 인터페이스의 중요성을 감소시키고 원하는 애플리케이션을 설치할 수 있는 자유를 감소시킬 것이라는 점입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SimianSci:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;내가 볼 수 있는 사용자 경험을 거의 수정하지 않고 기본 Android 환경으로 만들기 위해 ChromeOS를 다시 작성한 것처럼 보입니다.&lt;p&gt;Google 입장에서는 좋은 아이디어라고 생각합니다. 모바일을 유일한 컴퓨팅 경험으로 사용하는 소비자의 추세는 여전히 강력합니다.
-이는 소비자가 데스크탑과 기본 컴퓨팅 플랫폼 간에 갖는 경험을 혼합할 것입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spwa4:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그래서 제 생각에는... 완전한 광고 차단 프로그램은 허용되지 않나요?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;theLiminator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;퓨시아를 활용한 고골레의 전략은 무엇일지 궁금하다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;augusteo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Chrome 확장 프로그램 지원은 여기서 흥미로운 부분입니다. 이는 모바일 기기를 컴퓨터 대체품으로 사용하는 데 있어서 종종 문제가 되는 경우가 많습니다.&lt;p&gt;Google은 매년 Android와 ChromeOS가 더 많이 겹치는 이상한 상황을 겪었습니다. 어떤 시점에서는 기능 세트가 통합된 두 개의 운영체제를 유지하는 것이 낭비인 것 같습니다.&lt;p&gt;제 생각으로는 ChromeOS는 아마도 기능보다 관리 용이성이 더 중요한 교육 시장에서 살아남을 것입니다. 하지만 소비자에게는? 키보드와 마우스가 있는 큰 화면의 Android만으로도 충분할 수 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ivell:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;완전한 기능을 갖춘 명령줄, Unix 유틸리티, 다양한 스토어에서 Linux 앱을 설치할 수 있는 기능이 함께 제공된다면 훌륭한 OS가 될 것입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;d_silin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;솔직히 말해서 안드로이드를 데스크톱 OS의 또 다른 옵션으로 갖는다면 좋을 것 같습니다.&lt;p&gt;스마트폰을 삽입할 하드웨어 노트북 셸을 만드는 실험이 몇 가지 있었던 것으로 기억합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;giancarlostoro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이는 ChromeOS가 결국 죽거나 Android와 병합된다는 의미인가요? 궁금한.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dfajgljsldkjag:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이는 예산이 부족한 많은 학생과 가족에게 도움이 될 것 같습니다. 휴대폰을 화면에 연결하기만 하면 더 이상 별도의 노트북을 구입할 필요가 없습니다. 브라우저 확장은 컴퓨터를 유용하게 만드는 가장 중요한 부분입니다. 나는 그들이 이것에 대해 생각하는 것을 보니 기쁘다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://9to5google.com/2026/01/27/android-desktop-leak/</guid>
-      <pubDate>Wed, 28 Jan 2026 03:34:45 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46790740</comments>
-    </item>
-    <item>
-      <title>Show HN: 처음부터 C++로 작은 브라우저 엔진을 만들었습니다.</title>
-      <link>https://github.com/beginner-jhj/mini_browser</link>
-      <description>&lt;p&gt;Build make # 빌드가 완료된 후 실행 가능:. /browser 실행 # 빌드 디렉터리에서. 핵심 클래스: NODE(include/html/node.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: I built a small browser engine from scratch in C++&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46795540"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/beginner-jhj/mini_browser'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;samiv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;언제부터 HN 첫 페이지에 숙제가 등장했나요? 나는 이것이 매우 이상하다고 생각합니다 ...&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lasgawe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것은 동종 프로젝트 중 가장 어려운 프로젝트 중 하나입니다. 축하해요! 멋져 보인다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lifetimerubyist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Cursor는 AI에 대한 사실상 무제한의 컴퓨팅으로는 이를 수행할 수 없는 300억 달러 규모의 기업입니다.&lt;p&gt;잘했습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;luskira:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;정말 멋지네요 축하드립니다!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noo_u:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것은 정말 멋진 프로젝트입니다! 시간이 있다면 지금 브라우저와 통신할 수 있는 간단한 http 서버를 구축해 볼 수 있습니다. 그런 다음 간단한 버전의 TCP&amp;#x2F;IP를 구현하고 낮은 수준의 네트워킹이 어떻게 작동하는지 살펴볼 수 있습니다. 정말 잘했어요!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xacky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 많은 대체 브라우저 엔진을 따르고 있으며 항상 빅 3 이외의 새로운 엔진을 찾고 있습니다. 우리는 Chromium 전용 웹에 위험할 정도로 가깝기 때문에 브라우저 기술 세계에서 경력을 쌓으려면 경험을 활용해야 합니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/beginner-jhj/mini_browser</guid>
-      <pubDate>Wed, 28 Jan 2026 14:03:28 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46795540</comments>
-    </item>
-    <item>
-      <title>이메일은 이렇게 작동하지 않습니다, HSBC</title>
-      <link>https://danq.me/2026/01/28/hsbc-dont-understand-email/</link>
-      <description>&lt;p&gt;또는 아마도 그들이 말하는 의미는 "조치 필요: 이메일 주소가 올바른지 확인하십시오"일 것입니다. HSBC에서 보낸 1년 된 이메일을 다시 읽어보면, 그들은 그것에 대해 알고 싶다고 말하고 있습니다. 이것이 이메일이 작동하도록 설계된 방식이며 보낸 사람이 이메일이 작동할 것이라고 확신할 수 있는 유일한 방법입니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; That's Not How Email Works, HSBC&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46799304"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://danq.me/2026/01/28/hsbc-dont-understand-email/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>최종 사용자에게 표시할 가치가 있는 AI 이미지 제작을 시도합니다.</title>
+      <link>https://www.approachwithalacrity.com/how-to-turn-sfo-jfk-into-a-beautiful-photo/</link>
+      <description>&lt;p&gt;하지만 그런 다음 우리는 그것을 그들을 위한 아름다운 이미지 홈페이지, 즉 우리 홈페이지로 바꿔야 합니다. 이 문제를 해결하는 방법에 대한 몇 가지 어리석은 아이디어가 있습니다. 그리고 저는 문자 그대로 무엇이든 될 수 있는 쿼리를 이것에 연결하고 싶었습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Trying to craft AI images that are worth displaying to end users&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46800303"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.approachwithalacrity.com/how-to-turn-sfo-jfk-into-a-beautiful-photo/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;loloquwowndueo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그들이 당신의 말을 정말로 듣기를 원하십니까? 계좌를 취소하고 다른 은행으로 이동하세요.&lt;p&gt;이것은 허세로 작용하지만 물론 그들이 허세를 부리는 경우를 대비해 조치를 취할 준비가 되어 있어야 합니다. 그렇다면 어쨌든 실제로 은행을 바꾸는 것이 좋습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;renewiltord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;추적 픽셀은 Google이 대역 외부에서 가져오기 때문에 Gmail에서도 작동하지 않습니다. 공개 요금은 공개되지 않습니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://danq.me/2026/01/28/hsbc-dont-understand-email/</guid>
-      <pubDate>Wed, 28 Jan 2026 18:12:02 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46799304</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tehjoker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이런 목적으로 AI를 사용하는 것이 좋은 생각인지 잘 모르겠습니다. 여행에 대해 이야기할 때는 실제 장소에 대해 이야기하는 것입니다.&lt;p&gt;AI가 생성한 사실적인 것을 보여주면 표시되는 것은 단순히 환상에 불과합니다.&lt;p&gt;만화 스타일을 사용하면 사용자가 표시된 내용이 사진이 아니라는 것을 즉시 이해할 수 있기 때문에 효과가 있을 수 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kazinator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[표시됨]&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.approachwithalacrity.com/how-to-turn-sfo-jfk-into-a-beautiful-photo/</guid>
+      <pubDate>Wed, 28 Jan 2026 19:24:35 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46800303</comments>
     </item>
     <item>
-      <title>회전: 하지 마세요 – 스핀 잠금의 일반적인 문제</title>
-      <link>https://www.siliceum.com/en/blog/post/spinning-around/</link>
-      <description>&lt;p&gt;exchange(1)` ThreadA: 1을 쓰고 1을 봅니다 | ThreadB: 1을 쓰고 0을 봅니다. ThreadA: 1을 쓰고 1을 봅니다 | ThreadB: 이제 잠금을 소유합니다. | ThreadB: `unlock()`, 0을 씁니다. ThreadA: 1을 쓰고, 0을 봅니다 | 스레드B:. ThreadA: 이제 잠금을 소유합니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Spinning around: Please don't – Common problems with spin locks&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46797868"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.siliceum.com/en/blog/post/spinning-around/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.siliceum.com/en/blog/post/spinning-around/</guid>
-      <pubDate>Wed, 28 Jan 2026 16:48:59 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46797868</comments>
+      <title>심판의 날 시계는 누가 설정하나요?</title>
+      <link>https://www.popularmechanics.com/science/a70162364/setting-the-doomsday-clock/</link>
+      <description>&lt;p&gt;현재 홀츠와 몇몇 다른 시계 조정자들은 여기 시카고에서 열리는 노벨 총회에 참석하고 있습니다. Bulletin은 이후 핵무기, 기후 변화 및 기타 인간이 만든 실존적 위험을 다루는 디지털 플랫폼을 갖춘 비영리 조직으로 성장했습니다. 심판의 날 시계를 똑딱거리며 잘 자세요.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Who sets the Doomsday Clock?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46800623"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.popularmechanics.com/science/a70162364/setting-the-doomsday-clock/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;seanicus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Doomsday Clock은 실제로 믿음을 긴장시킵니다. 나는 우리가 냉전의 어느 시점보다 (이 기사에 정의된 대로) 완전한 핵 소멸 또는 심지어 제한된 교환에 얼마나 더 가까워졌는지에 대한 사례를 보고 싶습니다. 기사에 나온 어떤 주제도 이 주장을 설득력 있게 제시하지 못했습니다.&lt;p&gt;핵 확산은 여전히 ​​매우 심각하게 받아들여야 할 문제이지만, 원자력 과학 회보에서는 과장을 줄이고 그들의 주장을 더욱 설득력 있게 제시해야 합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Night_Thastus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 항상 아이디어가 흥미롭다고 느꼈지만 실행은 어리석었습니다. 실제적이고 체계적인 문제가 있습니다. 둘 다 주요 국가에 특정한 문제이고 거의 모든 국가에 공통된 문제입니다.&lt;p&gt;그러나 매우 우려스럽기는 하지만 그 중 어느 것도 &lt;i&gt;즉각적인&lt;/i&gt;, &lt;i&gt;실존&lt;/i&gt; 위협은 아니라고 말하고 싶습니다. 냉전 시대의 핵 위협은 매우 현실적이었습니다. 국제적 긴장은 고조되었고 한 번의 실수로 인해 수많은 사람이 죽을 수도 있었습니다.&lt;p&gt;오늘날 우리가 보는 것은 그런 것이 아닙니다. 엄청난 불평등이 존재하는가? 예. 보상이 끔찍한 시스템이 있나요? 부패? 환경 문제? 예, 예, 예.&lt;p&gt;그러나 그 중 어느 것도 심판의 날 시계가 표현하려는 방식으로 종말론적이지는 않습니다.&lt;p&gt;IMO 그들은 그것을 잘못된 일에 너무 자주 사용했기 때문에 이제는 의미가 없을 정도로 희석되었습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anakaine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;심판의 날 시계는 벤치마크로서 전혀 의미가 없을 정도로 지속적으로 높게 설정되었습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bm3719:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;시계가 부족하다고 느낄 때마다 경각심을 불러일으키는 메커니즘 역할을 하는 사람들이 설정한 것입니다.  그렇게 함으로써 그들은 그 자체뿐만 아니라 과학 전체를 약화시킵니다.&lt;p&gt;기껏해야 시계는 실제로 측정 장치입니다. 그것은 우리의 위험이 아니라, 눈에 띄지 않는 집단의 불안에 관한 것입니다.  그런 의미에서 우리는 '파멸'에 더 가까워졌다고 할 수 있습니다. 쿠바 미사일 위기 때보다 더 그렇습니다. 왜냐하면 그것이 현재의 분위기의 강도이기 때문입니다. 특히 당신이 반동적 부정주의의 기술 사회에 얽매인 현대 활동가라면 더욱 그렇습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RcouF1uZ4gsC:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 그는 AI가 핵무기를 통제하는 것보다 공유된 현실이 침식되는 것이 더 큰 위험이라고 믿습니다.&lt;p&gt;아마도 종말시계에 대한 과대 광고가 그러한 침식에 기여했을 것입니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.popularmechanics.com/science/a70162364/setting-the-doomsday-clock/</guid>
+      <pubDate>Wed, 28 Jan 2026 19:48:59 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46800623</comments>
+    </item>
+    <item>
+      <title>JFMM.net에서 의미 검색 조정 – 합동 함대 유지 보수 매뉴얼</title>
+      <link>https://carlkolon.com/2026/01/27/jfmm-semantic-search/</link>
+      <description>&lt;p&gt;이전에 의미 검색에 대해 쓴 적이 있습니다. 대부분의 최신 의미 검색 시스템은 벡터 유사성 검색을 사용합니다. net은 순수한 벡터 유사성 검색 엔진이었습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Tuning Semantic Search on JFMM.net – Joint Fleet Maintenance Manual&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46796389"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://carlkolon.com/2026/01/27/jfmm-semantic-search/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://carlkolon.com/2026/01/27/jfmm-semantic-search/</guid>
+      <pubDate>Wed, 28 Jan 2026 15:13:53 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46796389</comments>
+    </item>
+    <item>
+      <title>기본 Linux vst 플러그인 디렉터리</title>
+      <link>https://linuxmusic.rocks</link>
+      <description>&lt;p&gt;카테고리 ID: --------- 모두 --- 효과 ------ 디스토션 --------- Bitcrusher --------- 채도 ------ 다이나믹스 --------- 컴프레서 --------- 디에서 --------- 게이트 --------- 리미터 --------- 과도 디자이너 ------ EQ ------ 에뮬레이션 --------- 앰프 시뮬레이션 --------- 캐비닛 시뮬레이션 --------- 콘솔 버스 에뮬레이션 ------ 필터 ------ 미터/분석기 ------ 변조 --------- 코러스 --------- 플랜저 --------- 페이저 --------- 피치/주파수 시프터 --------- 트레몰로 ------ 멀티이펙트 ------ 시간/공간 --------- 지연 --------- 리버브 --------- 스테레오 확장 ------ 도구 --------- 디더 --------- 톤/노이즈 생성기/FX --- 악기 ------ 드럼 ------ 샘플러/트리거 ------ 신디사이저 ------ 보코더 --- 미디 --- 기타 ------ 번들 ------ 소프트웨어 --------- DAW --------- 유틸리티 형식: VST2 VST3 LV2 CLAP DAW DSSI JACK LADSPA 독립형.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Native Linux vst plugin directory&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46800737"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://linuxmusic.rocks'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;locusofself:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 항상 Linux에서 음악 녹음을 하고 싶었습니다(문자 그대로 90년대부터). 제가 선호하는 DAW(Reaper)가 오랫동안 Linux용이라는 사실이 저를 유혹했습니다. 하지만 저는 Universal Audio &amp;quot;Apollo&amp;quot;를 가지고 있습니다. 인터페이스가 매우 훌륭하고 내 Mac에서 정말 훌륭하게 실행되는 전체 생태계를 구입했습니다.&lt;p&gt;만약 제가 급락했다면 RME USB 오디오 인터페이스를 구입하고 Reaper를 사용할 것입니다. 어쩌면 Linux에 기본으로 제공되는 Bitwig를 사용해 볼 수도 있습니다. 나는 다른 사람들의 성공 사례에 관계없이 WINE을 함부로 사용하지 않을 것이라고 생각합니다.&lt;p&gt;하지만 최근 몇 년 동안 상황이 어디로 갔는지 보니 기쁩니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sirwitti:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 지난 몇 년 동안 이루어진 진전을 정말 좋아합니다! Linux에서 사용할 수 있는 VST&amp;#x2F;오디오 플러그인의 수는 상당한 문제에서 실제 생태계를 갖추는 수준으로 늘어났습니다!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jsheard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Windows VST와 기본 Linux DAW 사이에 WINE을 연결하는 것이 가능합니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Rooster61:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아 좋아요. 나는 몇 달 전에 이것을 갖고 싶었습니다. Linux용 VST 플러그인을 찾는 것은 그리 쉬운 일이 아니며, 작년에 Windows에서 전환한 이후로 그 플러그인을 놓쳤습니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://linuxmusic.rocks</guid>
+      <pubDate>Wed, 28 Jan 2026 19:59:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46800737</comments>
+    </item>
+    <item>
+      <title>아마존, 1만6천명 일자리 감축</title>
+      <link>https://www.reuters.com/legal/litigation/amazon-cuts-16000-jobs-globally-broader-restructuring-2026-01-28/</link>
+      <guid isPermaLink="true">https://www.reuters.com/legal/litigation/amazon-cuts-16000-jobs-globally-broader-restructuring-2026-01-28/</guid>
+      <pubDate>Wed, 28 Jan 2026 15:39:11 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46796745</comments>
+    </item>
+    <item>
+      <title>HN 표시: 사용자 스크립트용 커서</title>
+      <link>https://github.com/chebykinn/browser-code</link>
+      <description>&lt;p&gt;에이전트 도구 에이전트에는 파일 시스템과 유사한 도구가 있습니다. 도구 설명 읽기 파일 내용을 읽습니다. 마지막 읽기 버전이 필요합니다. 쓰기 전체 파일을 씁니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Cursor for Userscripts&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46800484"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/chebykinn/browser-code'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://github.com/chebykinn/browser-code</guid>
+      <pubDate>Wed, 28 Jan 2026 19:39:31 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46800484</comments>
+    </item>
+    <item>
+      <title>Trinity Large: 개방형 400B 희소 MoE 모델</title>
+      <link>https://www.arcee.ai/blog/trinity-large</link>
+      <description>&lt;p&gt;당시 Trinity Nano Preview와 Trinity Mini가 막 출시되었고 Trinity Large가 훈련을 시작했습니다. Llama-4-Maverick을 제외하면 희소성 비율은 동료에 비해 매우 높습니다. 모델 라우팅(k-of-N) 라우팅 비율 Trinity Large 4-of-256 1. 이 큐레이션 접근 방식의 덜 진보된 버전은 Trinity Nano 및 Trinity Mini와 같은 소형 모델에 적합했지만 우리는 Trinity Large를 사용하여 달을 촬영하고 싶었습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Trinity large: An open 400B sparse MoE model&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46789561"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.arcee.ai/blog/trinity-large'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;observationist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것은 훌륭한 릴리스입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mynti:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그들은 33일 동안 ~2천만 달러(인프라뿐만 아니라 6개월 동안의 급여도 포함)를 훈련했습니다. 그리고 그 모델은 QWEN과 Deepseek에 가까워지고 있습니다. 꽤 인상적이다&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;linolevan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;특히 &amp;quot;진정한 베이스&amp;quot;를 보게 되어 매우 기쁩니다. (&lt;a href="https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;arcee-ai&amp;#x2F;Trinity-Large-TrueBase"에서 연구를 수행하는 모델 rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;arcee-ai&amp;#x2F;Trinity-Large-TrueBase&lt;/a&gt;).&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.arcee.ai/blog/trinity-large</guid>
+      <pubDate>Wed, 28 Jan 2026 00:57:52 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46789561</comments>
+    </item>
+    <item>
+      <title>Amazon One 손바닥 인증 중단</title>
+      <link>https://amazonone.aws.com/help</link>
+      <guid isPermaLink="true">https://amazonone.aws.com/help</guid>
+      <pubDate>Wed, 28 Jan 2026 16:52:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46797913</comments>
+    </item>
+    <item>
+      <title>Werner Herzog의 허무주의 펭귄은 우리에게 무엇을 가르쳐 줍니까?</title>
+      <link>https://lwlies.com/article/werner-herzog-penguin-encounters-at-the-end-of-the-world</link>
+      <description>&lt;p&gt;하지만 무엇보다도 중요한 것은 사람과 그들이 가혹한 환경과 어떻게 상호 작용하고 해석하는지에 관한 것입니다. 그들은 모두 자신만의 흥미로운 이야기를 들려줍니다. 이 영화는 우리가 "다큐멘터리"라는 용어에 대해 알고 있다고 생각하는 모든 것에 의문을 제기하는 복잡하고 도전적인 자료로 가득 차 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; What does Werner Herzog's nihilist penguin teach us?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46801225"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://lwlies.com/article/werner-herzog-penguin-encounters-at-the-end-of-the-world'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;krona:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;뭐? 나는 적어도 한두 개의 니체나 도스토옙스키의 인용문을 기대하고 있었지만 이 기사는 다큐멘터리의 3분을 본 사람이라면 누구에게나 명백한 것 이상을 넘어서는 데 완전히 실패했습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;netsharc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;흥미롭게도, 지난 며칠간 인스타그램에서 이 허무주의적인 펭귄에 관한 동영상을 봤습니다... 컨텐츠 역류 같은 느낌이 들지만, 지금은 누가 만들고 누가 재활용하고 있는지 모르겠습니다.&lt;p&gt;(HN에서는 어느 날 한 사이트에서 나온 이야기가 자주 나오고, 며칠 후에는 다른 뉴스 사이트에서 같은 이야기가 보도되는 경우가 많습니다..)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;beeflet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;허무주의자 펭귄이 아니라 파우스트 펭귄이라고 표현하겠습니다. 일전에 알카트라즈로 헤엄쳐 간 코요테에 관한 이야기가 있었습니다(&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46674433"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46674433&lt;/a&gt;).&lt;p&gt;그런 일을 하는 동물을 보면 우리는 그것을 이상하고 자살적인 것으로 묘사합니다. 자신의 생명력을 심연 속으로 돌진시키는 방해받은 생물의 행위입니다. 그러나 인간이 똑같은 일을 한다면 그것은 영웅적이고 독특한 인간 탐험 행위입니다.&lt;p&gt;섬이나 산맥, 세계의 고립된 지역에 가보면 그곳에 생명체가 존재한다는 사실에 놀라게 될 것입니다. 하지만 이것이 가능한 방법은 한 가지뿐입니다. 어느 시점에서 어떤 생명체는 자신의 개인적인 생존을 거의 고려하지 않고 옛 세계를 버려야 했습니다.&lt;p&gt;새로운 세계에서 생존할 가능성과 반대편에서 성별이 지정된 쌍을 찾아야 한다는 점을 고려하면, 이를 위해서는 오랜 시간에 걸쳐 통합된 많은 생명체가 필요하다는 것을 알 수 있습니다.&lt;p&gt;인생은 경계를 넓히고 새로운 환경을 탐색합니다. 무엇인가부터 시작해야 합니다. 단기적으로 이성을 극복하기 위해서는 장기적으로 성공하기 위해서는 분명히 어느 정도의 열광이 필요합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Pet_Ant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;개인적으로 그의 작품 중 가장 좋아하는 작품은 '행복한 사람들: 타이가에서의 한 해'입니다. 대부분의 사람들은 즉각적으로 목적이 있는 일을 하고 있으며 훨씬 더 많이 존재합니다. 회복력이 너무 강하고(곰이 파괴된 오두막) 그 안에 비극도 있습니다(화재).&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Happy_People:_A_Year_in_the_Taiga" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Happy_People:_A_Year_in_the_Ta...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;observationist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것이 바로 새로운 종이 탄생하는 방식입니다. 시간이 지나면서 다른 펭귄들한테도 충분히 지쳐가는 펭귄들&amp;#x27; 똥은 지도 가장자리로 행진하고 마침내 운이 좋으면 똑똑하고 독립적인 마음을 가진 펭귄이 충분히 살아남아 새로운 세대를 낳습니다. 새로운 모험 무리는 결국 먹이를 먹는 곳으로 다시 행진하고 패배한 일반 펭귄들로부터 영토를 탈취할 수 있을 만큼 충분한 구성원을 확보합니다.&lt;p&gt;따라서 우주의 원호는 늠름한 펭귄 쪽으로 휘어집니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://lwlies.com/article/werner-herzog-penguin-encounters-at-the-end-of-the-world</guid>
+      <pubDate>Wed, 28 Jan 2026 20:43:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46801225</comments>
+    </item>
+    <item>
+      <title>네이티브 인스트루먼트가 파산 절차를 시작합니다.</title>
+      <link>https://www.engadget.com/audio/native-instruments-enters-into-insolvency-proceedings-leaving-its-future-uncertain-183206826.html</link>
+      <description>&lt;p&gt;Native Instruments는 iZotope, Brainworx 및 Plugin Alliance 브랜드도 소유하고 있습니다. Native Instruments가 대대적인 구조 조정을 강요받은 것은 이번이 처음이 아닙니다. 이미 Native Instruments 소프트웨어를 MPC 시스템에 통합하기 시작했습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Native Instruments enters into insolvency proceedings&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46800645"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.engadget.com/audio/native-instruments-enters-into-insolvency-proceedings-leaving-its-future-uncertain-183206826.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anigbrowl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;훨씬 더 상세하고 더 잘 연결된 글: &lt;a href="https:&amp;#x2F;&amp;#x2F;cdm.link&amp;#x2F;ni-insolvency&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;cdm.link&amp;#x2F;ni-insolvency&amp;#x2F;&lt;/a&gt;&lt;p&gt; 앞서 언급한 바와 같이 이 회사는 2020년 사모펀드로 전환한 이후 하락세를 보이고 있습니다. 프로 오디오 사용자들은 회사가 혁신보다는 프리셋 팩과 슬림 가치 업그레이드 판매, 그리고 점점 더 번거로운 라이선스 관리에 더 중점을 두고 있다고 느꼈습니다. 동시에 회사가 매우 인상적인 소프트웨어 및 하드웨어 제품 역사를 갖고 있기 때문에 사람들은 괴로워하고 있습니다.&lt;p&gt;Inmusic(Akai, Moog 및 기타 여러 프리미엄 프로 오디오 브랜드를 소유하고 있음)은 이미 Akai 하드웨어에서만 사용할 수 있는 NI 플러그인 형태의 일부 제품 크로스오버를 보유하고 있기 때문에 이를 인수할 잠재적 구매자입니다. 그러나 이는 서로 경쟁하는 두 가지 주력 제품(NI의 Maschine과 Akai의 MPC, 두 개의 매우 진보된 드럼 패드 시퀀싱 강국)을 의미합니다. 이는 이미 개발이 중단된 Maschine의 포기를 의미하며, 많은 오너들의 실망과 안타까움을 의미합니다. 프로 오디오 소비자는 필연적으로 자신의 창의적인 도구에 대해 감정적이며 원한을 품는 경향이 있습니다.&lt;p&gt;물론 두 제품의 장점을 모두 구현한 Secret Third Thing으로 결합할 수도 있지만 현실은 Inmusic이 방금 새로운 플래그십 Akai MPC(현재 디자인 패러다임의 3세대)를 출시했으며 이 제품은 하드웨어와 소프트웨어 측면 모두에서 너무 큰 업그레이드 업그레이드이므로 직접적으로 추진하고 있습니다. 그리고 간접적인 경쟁. 이러한 주력 장치(및 앞으로 출시될 일부 경량 보급형 장치)는 교체되기 전까지 최대 5년의 판매 수명을 가지며, 최신 소프트웨어는 더 느리고 화려한 추가 하드웨어 기능 없이도 2017년부터 Gen 1 컴퓨터에서 여전히 잘 실행됩니다. 따라서 Inmusic은 여러 브랜드에 걸쳐 제품 개발을 위한 자본 투자를 우선시했기 때문에 현재 브랜드 충성도를 긍정적으로 누리고 있습니다. 그들은 공급망 효율성을 최적화하고, 아시아에서 더 많은 제품을 제조하고, 자재 비용을 낮게 유지하고, 규모의 경제를 활용함으로써 비용을 절감하는 동시에 디자이너와 엔지니어가 자신의 마음을 따를 것을 장려하여 많은 고객을 만족시켰습니다. &lt;p&gt;Native Instruments는 매우 깊은 소프트웨어 스택과 완벽하게 함께 작동하는 잘 엔지니어링된 하드웨어 제품을 통해 이 모든 것을 &lt;i&gt;갖췄습니다&lt;/i&gt;(즉, 동기화 문제가 없고 하드웨어 사용자 인터페이스 매핑에 필요한 수동 구성이 없거나 최소화되는 등). 그러나 제품 라인이 점점 더 비대해지고, 라이센스 관리가 더욱 어려워지고, 하드웨어 개발이 지연되었습니다. 2020년에 기존 PE 소유자에게 인수되었을 때 그들은 자체 혁신이나 투자 아이디어가 없는 것처럼 보였지만 기존 IP에서 더 많은 돈을 짜내는 방법에 더 집중했습니다. 이는 낮은 가치의 '업그레이드', 사랑받는 소프트웨어 플래그십의 포기, 비즈니스의 하드웨어 측면에 대한 식별 가능한 로드맵의 부재 등 일련의 실수로 이어집니다. 위에서 언급했듯이 창의적인 사람들은 자신의 도구에 열정을 갖고 있기 때문에 이는 프로 오디오 분야에서 매우 중요합니다. 가장 뛰어난 최신 시퀀서나 오디오 인터페이스를 가진 사람들이 45년 된 신디사이저나 추가 기능을 갖춘 오래된 디자인의 노예적인 현대 복제품에 연결되는 것을 보는 것은 드문 일이 아닙니다. 음악 기술 구매자는 과거의 유산이 유지되기를 원하지만 새로운 음악 기술의 꾸준한 공급에 흥분하기를 원하며 NI의 사모 펀드 소유자는 2019년 이후 중요한 하드웨어 개발 없이 후자를 제공하는 데 완전히 실패했습니다. 회사는 틀림없이 틈새 시장(기능, 인체 공학, 펌웨어 신뢰성, 소프트웨어 통합, 소비자 충성도 측면에서)에서 최고의 하드웨어 제품을 제공하는 것에서 이러한 우위가 주요 경쟁자에게 하나씩 사라지는 것을 보았습니다. 하나.&lt;p&gt;여기서 무슨 일이 일어날지 추측하기는 어렵습니다. 훌륭한 관리자는 회사를 부활시켜 이전의 위대함으로 다시 만들 수 있지만, 시장은 이미 사모펀드로 인해 회사가 망가진 것을 목격했으며 장기적인 미래가 없을 수도 있는 제품 생태계에 계속 투자하는 것을 경계하고 있습니다. 음악 기술 전문가들은 또한 관세와 AI가 하드웨어 구성 요소 가격과 제품 디자인에 미치는 영향을 잘 알고 있습니다. 현재 NI의 장기적인 미래에 대한 분위기는 비관적입니다. 사람들은 이미 기존 설정을 박물관 작품으로 보존하는 것에 대해 이야기하고 있습니다. 즉, 가능한 한 최대한으로 설정한 다음 인터넷 연결을 끊어 작업 순서대로 유지 관리할 수 있지만 그렇지 않으면 동결할 수 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;추가 토론: &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46781466"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46781466&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bryceneal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;가까운 시일 내에 모든 플러그인이 어떤 방식으로든 중단될 것으로 예상됩니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vunderba:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;우와. Kontakt 샘플러를 꽤 많이 사용하는 사용자로서, 안타까운 소식입니다. 나는 Analog Dreams나 The Gentleman과 같은 도서관에서 많은 마일리지를 얻었습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ahartmetz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아 젠장. 나는 그곳에서 일했던 몇몇 사람들을 알고 있고, 아직도 일하는 몇몇 사람들은 잘 알지 못합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drdator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;2026년 빙고 카드에는 이게 없었어요 ... :&amp;#x2F;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adamnemecek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;정말 안타깝네요.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adzm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;듣기만 해도 말도 안 되는 소리다. 그들은 또한 izotope 및 기타 여러 브랜드를 소유하고 있습니다. 라이센스 서버가 다운된다고 상상해보세요.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.engadget.com/audio/native-instruments-enters-into-insolvency-proceedings-leaving-its-future-uncertain-183206826.html</guid>
+      <pubDate>Wed, 28 Jan 2026 19:51:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46800645</comments>
+    </item>
+    <item>
+      <title>Show HN: SHDL – 논리 게이트로 구축된 최소 하드웨어 설명 언어</title>
+      <link>https://github.com/rafa-rrayes/SHDL</link>
+      <description>&lt;p&gt;SHDL - Simple Hardware Description Language 논리 게이트만을 사용하는 디지털 회로 시뮬레이션을 위한 경량 하드웨어 설명 언어 및 Python 드라이버입니다. Python에서 사용 from SHDL import Circuit # Circuit("fullAdder. 명령줄에서 컴파일)을 사용하여 회로를 로드하고 컴파일합니다. # SHDL을 C shdlc adder로 컴파일합니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: SHDL – A minimal hardware description language built from logic gates&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46794281"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/rafa-rrayes/SHDL'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fspeech:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;구조적 설명(소위 넷리스트)에만 관심이 있는 경우 표준은 EDIF입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;notherhack:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Verilog 기본 게이트를 재창조하셨습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Lramseyer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;터무니없는 아이디어지만 이것을 논리 다이어그램의 마크업 언어로 사용하는 것을 고려해 보셨나요? 인어와 같은 생각을 하고 있어요 - &lt;a href="https:&amp;#x2F;&amp;#x2F;mermaid.js.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;mermaid.js.org&amp;#x2F;&lt;/a&gt; 이는 칩 설계에는 그다지 유용하지 않을 수 있지만 완전한 기능을 갖춘 HDL이며 게이트 수준이므로 다이어그램에 잘 매핑됩니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/rafa-rrayes/SHDL</guid>
+      <pubDate>Wed, 28 Jan 2026 12:06:18 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46794281</comments>
+    </item>
+    <item>
+      <title>카이로스: 모두를 위한 AI 인턴</title>
+      <link>https://www.kairos.computer/</link>
+      <description>&lt;p&gt;Kairos는 기본적으로 그들과 협력합니다. 귀하의 정책에 따라 처리됩니다. 귀하의 달력: 귀하의 열린 슬롯과 상호 참조됩니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Kairos: AI interns for everyone&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46792225"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.kairos.computer/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abcde666777:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그들을 '인턴'이라고 부르는 데는 이유가 있다. - 결과가 좋지 않을 것이기 때문입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;athultr1997:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;제품 시연을 위해 내 전화번호를 공유하고 싶지 않습니다. :(&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.kairos.computer/</guid>
+      <pubDate>Wed, 28 Jan 2026 07:40:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46792225</comments>
+    </item>
+    <item>
+      <title>런던은 어떻게 세계 스타트업의 중심지가 되었는가</title>
+      <link>https://www.economist.com/britain/2026/01/26/how-london-became-the-rest-of-the-worlds-startup-capital</link>
+      <guid isPermaLink="true">https://www.economist.com/britain/2026/01/26/how-london-became-the-rest-of-the-worlds-startup-capital</guid>
+      <pubDate>Wed, 28 Jan 2026 00:16:57 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46789180</comments>
+    </item>
+    <item>
+      <title>유명한 연구자가 아기의 중독을 모호하게 했나요?</title>
+      <link>https://www.newyorker.com/magazine/2026/02/02/did-a-celebrated-researcher-obscure-a-fatal-poisoning</link>
+      <description>&lt;p&gt;그날 아침 늦게 Rani는 정기적인 소아과 방문을 위해 그를 데려왔습니다. 나중에 또 다른 의사는 타리크가 "번창하는 것 같았다"고 보고했습니다. 그는 타리크가 지난 20시간 동안 대부분 잠을 자고 있었고 그의 피부색이 변동하고 있다고 말했습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Did a celebrated researcher obscure a baby's poisoning?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46789205"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.newyorker.com/magazine/2026/02/02/did-a-celebrated-researcher-obscure-a-fatal-poisoning'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.newyorker.com/magazine/2026/02/02/did-a-celebrated-researcher-obscure-a-fatal-poisoning</guid>
+      <pubDate>Wed, 28 Jan 2026 00:18:58 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46789205</comments>
+    </item>
+    <item>
+      <title>HN 표시: LLM 도구가 보내는 내용을 확인하는 MitM 프록시</title>
+      <link>https://github.com/jmuncor/sherlock</link>
+      <description>&lt;p&gt;Sherlock sherlock 시작 처음 실행 시 Sherlock은 다음을 수행합니다. mitmproxy CA 인증서를 생성합니다. 시스템 신뢰 저장소에 설치하라는 메시지를 표시합니다. 가로챈 프롬프트를 저장할 위치를 묻습니다. 2. LLM 도구 실행 별도의 터미널에서 Sherlock을 사용하여 명령을 프록시합니다. # Claude Code의 경우 sherlock claude # 모든 명령의 경우 sherlock run --node your-llm-tool 그게 다입니다. git cd 셜록 파이썬 -m.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: A MitM proxy to see what your LLM tools are sending&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46799898"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/jmuncor/sherlock'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrbluecoat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그렇다면 MitM Proxy를 둘러싼 래퍼일까요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;EMM_386:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;훌륭합니다.&lt;p&gt;대규모의 까다로운 코드 기반에서 AI를 사용하여 작업할 때 대량의 토큰(과도한 도구 호출, 부정확한 검색, 장황한 출력, 지정된 범위가 없는 대용량 파일 읽기 등)이 발생할 수 있는 작업을 나에게 전달하는 협업을 시도합니다.&lt;p&gt;이렇게 하면 토큰 예산 내에서 가장 잘 유지하기 위해 수동으로 처리해야 할 항목을 정확하게 좁히는 데 도움이 됩니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;david_shaw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;잘했어요! 여기에서 수집된 데이터는 많은 사용자에게 도움이 될 것이라고 확신합니다.&lt;p&gt;이와 같은 전사적 도구에 대한 수요가 더 강하지 않다는 사실에 놀랐습니다. 예, 몇 가지 솔루션이 있습니다. 하지만 "회사의 모든 사람에게 에이전트 AI 기능 제공"이라는 새로운 표준을 대조해 보면 다음과 같습니다. 강력한 데이터 거버넌스(적어도 대규모 조직의 경우)라는 이전 패러다임에서는 이는 극명한 차이입니다.&lt;p&gt;제 생각에는 추세가 약간 뒤로 돌아가는 데 멀지 않은 것 같습니다. AI가 모든 것에 사용될 수 없기 때문이 아니라(도구가 실제로 수행할 수 있는 작업을 심각하게 제한하지 않고) 광범위한 AI 사용에 대한 거버넌스가 어렵고 지속적인 문제이기 때문입니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/jmuncor/sherlock</guid>
+      <pubDate>Wed, 28 Jan 2026 18:52:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46799898</comments>
     </item>
   </channel>
 </rss>

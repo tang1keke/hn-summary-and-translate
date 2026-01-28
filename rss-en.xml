@@ -6,133 +6,227 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Wed, 28 Jan 2026 18:47:08 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Jan 2026 21:41:09 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>Oban, the job processing framework from Elixir, has come to Python</title>
-      <link>https://www.dimamik.com/posts/oban_py/</link>
-      <description>&lt;p&gt;Surface Level# Oban allows you to insert and process jobs using only your database. state == "available"} await self. exception("Error in producer for queue %s", self.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46797594"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.dimamik.com/posts/oban_py/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Computer History Museum Launches Digital Portal to Its Collection</title>
+      <link>https://computerhistory.org/press-releases/computer-history-museum-launches-digital-portal-to-its-vast-collection/</link>
+      <description>&lt;p&gt;Gordon and Betty Moore Foundation Funded OpenCHM to Digitize One-of-a-Kind Archive MOUNTAIN VIEW, Calif. Designed in collaboration with KeepThinking, the portal is powered by their innovative Qi collection management system. ”—Janet Coffey, Program Director, Science, Gordon and Betty Moore Foundation The OpenCHM platform expands worldwide access to CHM’s vast collection through a digital portal, and ongoing digitization regularly adds more historical materials.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46798994"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://computerhistory.org/press-releases/computer-history-museum-launches-digital-portal-to-its-vast-collection/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TkTech:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The Oban folks have done amazing, well-engineered work for years now - it&amp;#x27;s really the only option for Elixir. That said, I&amp;#x27;m very confused at locking the process pool behind a pro subscription - this is basic functionality given CPython&amp;#x27;s architecture, not a nice-to-have.&lt;p&gt;For $135&amp;#x2F;month on Oban Pro, they advertise:&lt;p&gt;&lt;pre&gt;&lt;code&gt;    All Open Source Features
-
-    Multi-Process Execution
-
-    Workflows
-
-    Global and Rate Limiting
-
-    Unique Jobs
-
-    Bulk Operations
-
-    Encrypted Source (30&amp;#x2F;90-day refresh)
-
-    1 Application
-
-    Dedicated Support
-
-&lt;/code&gt;&lt;/pre&gt;
-I&amp;#x27;m going to toot my own horn here, because it&amp;#x27;s what I know, but take my 100% free Chancy for example - &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tktech&amp;#x2F;chancy" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tktech&amp;#x2F;chancy&lt;/a&gt;. Out of the box the same workers can mix-and-match asyncio, processes, threads, and sub-interpreters. It supports workflows, rate limiting, unique jobs, bulk operations, transactional enqueuing, etc. Why not move these things to the OSS version to be competitive with existing options, and focus on dedicated support and more traditional &amp;quot;enterprise&amp;quot; features, which absolutely are worth $135&amp;#x2F;month (the Oban devs provide world-class support for issues). There are many more options available in the Python ecosystem than Elixir, so you&amp;#x27;re competing against Temporal, Trigger, Prefect, Dagster, Airflow, etc etc.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; Oban allows you to insert and process jobs using only your database. You can insert the job to send a confirmation email in the same database transaction where you create the user. If one thing fails, everything is rolled back.&lt;p&gt;This is such a key feature. Lots of people will tell you that you shouldn&amp;#x27;t use a relational database as a worker queue, but they inevitably miss out on how important transactions are for this - it&amp;#x27;s really useful to be able to say &amp;quot;queue this work if the transaction commits, don&amp;#x27;t queue it if it fails&amp;quot;.&lt;p&gt;Brandur Leach wrote a fantastic piece on this a few years ago: &lt;a href="https:&amp;#x2F;&amp;#x2F;brandur.org&amp;#x2F;job-drain" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;brandur.org&amp;#x2F;job-drain&lt;/a&gt; - describing how, even if you have a separate queue system, you should still feed it by logging queue tasks to a temporary database table that can be updated as part of those transactions.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;owaislone:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I don&amp;#x27;t know how I feel about free open source version and then a commercial version that locks features. Something inside me prevents me from even trying such software. Logically I&amp;#x27;d say I support the model because open source needs to be sustainable and we need good quality developer tools and software but when it comes to adoption, I find myself reaching for purely open source projects. I think it has to do with features locked behind a paywall. I think I&amp;#x27;d be far more open to trying out products where the commercial version offered some enterprise level features like compliance reports, FIPS support, professional support etc but didn&amp;#x27;t lock features.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dfajgljsldkjag:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I have fixed many broken systems that used redis for small tasks. It is much better to put the jobs in the database we already have. This makes the code easier to manage and we have fewer things to worry about. I hope more teams start doing this to save time.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hangonhn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is something my company has been considering for a while. We&amp;#x27;ve been using celery and it&amp;#x27;s not great. It gets the job done but it has its issue.&lt;p&gt;I&amp;#x27;ve never heard of Oban until now and the one we&amp;#x27;ve considered was Temporal but that feels so much more than what we need. I like how light Oban is.&lt;p&gt;Does anyone have experience with both and is able to give a quick comparison?&lt;p&gt;Thanks!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Arubis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;While this is a Cool Thing To See, I do wish things would go the other way—and have all the BI&amp;#x2F;ML&amp;#x2F;DS pipelines and workflows folks are building in Python and have them come to Elixir (and, as would follow, Elixir). I get where the momentum is, but having something functional, fault-tolerant, and concurrent underpinning work that’s naturally highly concurrent and error-prone feels like a _much_ more natural fit.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mperham:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I wrote Sidekiq, which Oban is based on. Congratulations to Shannon and Parker on shipping this!&lt;p&gt;I had to make this same decision years ago: do I focus on Ruby or do I bring Sidekiq to other languages? What I realized is that I couldn&amp;#x27;t be an expert in every language, Sidekiq.js, Sidekiq.py, etc. I decided to go a different direction and built Faktory[0] instead, which flips the architecture and provides a central server which knows how to implement the queue lifecycle internally. The language-specific clients become much simpler and can be maintained by the open source community for each language, e.g. faktory-rs[1]. The drawback is that Faktory is not focused on any one community and it&amp;#x27;s hard for me to provide idiomatic examples in a given language.&lt;p&gt;It&amp;#x27;s a different direction but by focusing on a single community, you may have better outcomes, time will tell!&lt;p&gt;[0]: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;contribsys&amp;#x2F;faktory" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;contribsys&amp;#x2F;faktory&lt;/a&gt;
-[1]: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;jonhoo&amp;#x2F;faktory-rs" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;jonhoo&amp;#x2F;faktory-rs&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.dimamik.com/posts/oban_py/</guid>
-      <pubDate>Wed, 28 Jan 2026 16:32:00 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46797594</comments>
+&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Bukhmanizer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This place is great, but my work had a function here and I walked around with one of our juniors and never have I felt so old. The pure astonishment and confusion when looking at a “floppy disk” aged me instantly.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;belter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This one has always been a favorite: &lt;a href="https:&amp;#x2F;&amp;#x2F;computerhistory.org&amp;#x2F;blog&amp;#x2F;the-two-napkin-protocol&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;computerhistory.org&amp;#x2F;blog&amp;#x2F;the-two-napkin-protocol&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hoofedear:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is really awesome. The CHM is one of my favorite places in the world. I had applied for a web developer position there not too long ago, great to see them expand things online like this&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;runamuck:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Ooh check out the Discovery wall!  I see a Furby, a Power Glove (call AVGN) and a Ninja Turtles NES Game:  &lt;a href="https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;discovery" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;discovery&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;davidmurphy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;CHM employee here. Always great to see CHM on HN. Glad folks are excited about this -- as are we! There&amp;#x27;s so much cool stuff in the Collection.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ricksunny:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I&amp;#x27;m a fan of CHM. That said there collections have (understandably) a rather Silicon-Valley-legacy-centric view of, erm, computer history.  You&amp;#x27;ll find little mention, for example, of these tantalizing early mentions of alternative computer architectures (with pictures!) in NSA&amp;#x27;s predecessor OP-20-G, as posed alongside the then-nascent von Neumann architecture (also covered).&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.governmentattic.org&amp;#x2F;8docs&amp;#x2F;NSA-WasntAllMagic_2002.pdf" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.governmentattic.org&amp;#x2F;8docs&amp;#x2F;NSA-WasntAllMagic_2002...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Related, of the more in-person variety:&lt;p&gt;&lt;i&gt;Favorite Tech Museums&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46504220"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46504220&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;frsandstone:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Very cool stuff.&lt;p&gt;Vintage marketing of the future: &lt;a href="https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;curator-picks&amp;#x2F;vintage-marketing-selling-the-future" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;curator-picks&amp;#x2F;vi...&lt;/a&gt;&lt;p&gt;Lectures:
+&lt;a href="https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;catalog&amp;#x2F;search-catalog&amp;#x2F;search&amp;#x2F;category:audiolecture&amp;#x2F;page&amp;#x2F;2&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;catalog&amp;#x2F;search-c...&lt;/a&gt;&lt;p&gt;Oral Histories:
+&lt;a href="https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;catalog&amp;#x2F;search-catalog&amp;#x2F;search&amp;#x2F;category:audiooral-history&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;catalog&amp;#x2F;search-c...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JKCalhoun:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I have come across (and enjoyed) many of the videos [1] they have posted to YouTube.&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;@ComputerHistory" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;@ComputerHistory&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Robdel12:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is realllly cool. I have a rabbit hole to go down into tonight&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Link: &lt;a href="https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;catalog" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.computerhistory.org&amp;#x2F;collections&amp;#x2F;catalog&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://computerhistory.org/press-releases/computer-history-museum-launches-digital-portal-to-its-vast-collection/</guid>
+      <pubDate>Wed, 28 Jan 2026 17:54:54 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46798994</comments>
     </item>
     <item>
-      <title>Mousefood – Build embedded terminal UIs for microcontrollers</title>
-      <link>https://github.com/ratatui/mousefood</link>
-      <description>&lt;p&gt;Mousefood - a no-std embedded-graphics backend for Ratatui. Mousefood by default uses embedded-graphics-unicodefonts, which provides embedded-graphics fonts with a much larger set of characters. This driver requires some additional configuration.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46798402"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/ratatui/mousefood'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nine_k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;«Mousefood - a no-std embedded-graphics backend for Ratatui!»&lt;p&gt;Hence 100% Rust. Works on ESP32, RPi2040, and even STM32. Several displays mentioned, including e-ink.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;IamDaedalus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;aaaaand this how I learn rust
-I learned go because of bubbletea and mousefood (which combines my work as an embedded systems programmer and love for torminals) is here&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wjholden:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Cool! I just recently began learning the Raspberry Pi Pico. Could anyone recommend a specific display that I could use with the Pico 2&amp;#x2F;2W and Mousefood?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dbacar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Hi Orhun,
-Could it be used with CYD (Cheap yellow display) ?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/ratatui/mousefood</guid>
-      <pubDate>Wed, 28 Jan 2026 17:20:31 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46798402</comments>
-    </item>
-    <item>
-      <title>Android's full desktop interface leaks: New status bar, Chrome Extensions</title>
-      <link>https://9to5google.com/2026/01/27/android-desktop-leak/</link>
-      <description>&lt;p&gt;Android Android’s full desktop interface leaks: New status bar, Chrome Extensions, more [Video] Abner Li | Jan 27 2026 - 2:02 pm PT 46 Comments A Google bug report on the Chromium Issue Tracker today has inadvertently leaked the Android desktop interface for the first time. The Google Chrome interface mostly aligns with the current large-screen Android version except for the Extensions button, which is currently only available on the desktop browser. Check out our exclusive stories, reviews, how-tos, and subscribe to our YouTube channel Check out 9to5Google on YouTube for more news: Comments Expand Close comments Expand Close comments Guides Android Breaking news for Android.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46790740"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://9to5google.com/2026/01/27/android-desktop-leak/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gessha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;It is interesting to consider the different developments happening with the big mobile orgs regarding the convergence computing paradigm:&lt;p&gt;- Samsung’s Dex has been out for a while
-- independent devs have been working on Linux “as an app” for some time
-- Android desktop interface in this article
-- Apple developing video output on iPhones
-- Apple working on a Macbook with a mobile chip&lt;p&gt;- another exciting thing is XR devices and mobile computing&lt;p&gt;- my concern is convergence computing will reduce the importance of desktop interfaces and the freedom we have to install whatever applications we want&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SimianSci:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;It really does look to be a rewrite of ChromeOS to make it a native Android experience with very few tweaks to the User experience that I can see.&lt;p&gt;I think it&amp;#x27;s a good idea on Google&amp;#x27;s part. The trend of consumers using mobiles as their one and only computing experience is still strong.
-This will blend the experience consumers have between desktops and their primary computing platform.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spwa4:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;So I&amp;#x27;m guessing ... no full adblockers allowed?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;theLiminator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I wonder what gogole&amp;#x27;s strategy with fuchsia is going to be.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;augusteo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The Chrome Extensions support is the interesting part here. That&amp;#x27;s often the dealbreaker for using mobile devices as computer replacements.&lt;p&gt;Google&amp;#x27;s had this weird situation where Android and ChromeOS overlap more every year. At some point maintaining two operating systems with converging feature sets seems wasteful.&lt;p&gt;My guess: ChromeOS probably survives for the education market where manageability matters more than capabilities. But for consumers? Android on a big screen with keyboard and mouse might just be good enough.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ivell:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;If it comes with fully functional command line, unix utils and ability to install linux apps from different stores, that would be great OS.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;d_silin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Well, that would be nice, honestly - to have Android as another option for desktop OS.&lt;p&gt;I remember there were some experiments to create a hardware laptop shell to insert smartphone into.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;giancarlostoro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Is this going to mean ChromeOS is going to eventually die or be merged with Android? Curious.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dfajgljsldkjag:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This looks like it will help a lot of students and families who are on a budget. If you can just plug your phone into a screen you do not need to buy a separate laptop anymore. The browser extensions are the most important part because that is what makes a computer useful. I am glad to see they are thinking about this.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://9to5google.com/2026/01/27/android-desktop-leak/</guid>
-      <pubDate>Wed, 28 Jan 2026 03:34:45 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46790740</comments>
-    </item>
-    <item>
-      <title>Show HN: I built a small browser engine from scratch in C++</title>
-      <link>https://github.com/beginner-jhj/mini_browser</link>
-      <description>&lt;p&gt;Build make # After build completes, executable:. /browser Run # From build directory. Core Classes: NODE (include/html/node.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46795540"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/beginner-jhj/mini_browser'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;samiv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Since when does homework feature on the front page of HN? I find this very odd...&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lasgawe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is one of the hardest projects of its kind. Congrats! looks cool.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lifetimerubyist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Cursor is a 30 billion dollar corporation that couldn’t do this with practically unlimited compute for their AI.&lt;p&gt;Well done.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;luskira:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;this is so cool man congrats!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noo_u:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is a really awesome project! If you have time&amp;#x2F;interest, you could try to build a simple http server now, that your browser could communicate with. Then you could try to implement a simple version of TCP&amp;#x2F;IP, and look into how lower level networking works. Great job!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xacky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I follow a lot of the alternate browser engines and am always looking for new ones outside of the big three. You should use your experience to get a career in the browser tech world as we are dangerously close to the Chromium only web.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/beginner-jhj/mini_browser</guid>
-      <pubDate>Wed, 28 Jan 2026 14:03:28 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46795540</comments>
-    </item>
-    <item>
-      <title>That's Not How Email Works, HSBC</title>
-      <link>https://danq.me/2026/01/28/hsbc-dont-understand-email/</link>
-      <description>&lt;p&gt;Or that perhaps what they mean to say is “action required: check your email address is correct”. If I re-read a year-old email from HSBC, they’re saying that they want to know about it. This is the way that email was designed to work, and is the only way that a sender can be confident that it will work.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46799304"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://danq.me/2026/01/28/hsbc-dont-understand-email/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Trying to craft AI images that are worth displaying to end users</title>
+      <link>https://www.approachwithalacrity.com/how-to-turn-sfo-jfk-into-a-beautiful-photo/</link>
+      <description>&lt;p&gt;But then we need to turn that into a beautiful homepage of images for them:Our homepage. Here are some silly ideas for how you could solve this. And I wanted to match a query that could be about literally anything to this.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46800303"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.approachwithalacrity.com/how-to-turn-sfo-jfk-into-a-beautiful-photo/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;loloquwowndueo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Want them to really listen to you? Cancel your accounts - move to another bank.&lt;p&gt;This works well as a bluff, but of course you need to be ready to follow through in case they call the bluff. Which if you are, you may as well switch banks for real anyway.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;renewiltord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Tracking pixels don’t even work with Gmail because Google fetches them out of band. It doesn’t reveal open rates.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://danq.me/2026/01/28/hsbc-dont-understand-email/</guid>
-      <pubDate>Wed, 28 Jan 2026 18:12:02 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46799304</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tehjoker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I’m not sure it’s good idea to use AI for this purpose. When you’re talking about travel, you’re talking about a real place.&lt;p&gt;If you show something photorealistic and AI generated, what is shown is simply an illusion.&lt;p&gt;If you use a cartoon style maybe they can work because the user will immediately understand what is shown is not a photograph.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kazinator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[flagged]&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.approachwithalacrity.com/how-to-turn-sfo-jfk-into-a-beautiful-photo/</guid>
+      <pubDate>Wed, 28 Jan 2026 19:24:35 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46800303</comments>
     </item>
     <item>
-      <title>Spinning around: Please don't – Common problems with spin locks</title>
-      <link>https://www.siliceum.com/en/blog/post/spinning-around/</link>
-      <description>&lt;p&gt;exchange(1)` ThreadA: Writes 1, sees 1 | ThreadB: Writes 1, sees 0 ThreadA: Writes 1, sees 1 | ThreadB: Now owns the lock. | ThreadB: `unlock()`, writes 0 ThreadA: Writes 1, sees 0 | ThreadB:. ThreadA: Now owns the lock.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46797868"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.siliceum.com/en/blog/post/spinning-around/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.siliceum.com/en/blog/post/spinning-around/</guid>
-      <pubDate>Wed, 28 Jan 2026 16:48:59 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46797868</comments>
+      <title>Who sets the Doomsday Clock?</title>
+      <link>https://www.popularmechanics.com/science/a70162364/setting-the-doomsday-clock/</link>
+      <description>&lt;p&gt;Now Holz and several other clock setters are at the Nobel Assembly here in Chicago. The Bulletin has since grown into a nonprofit organization with a digital platform covering nuclear weapons, climate change, and other man-made existential risks. Goodnight ticking Doomsday Clock.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46800623"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.popularmechanics.com/science/a70162364/setting-the-doomsday-clock/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;seanicus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The Doomsday Clock really strains credulity; I&amp;#x27;d love to see a case for how we&amp;#x27;re closer to (as defined in this article) total nuclear annihilation or even a limited exchange than we were at any point in the cold war. The case is not convincingly made by any of the subjects in the article.&lt;p&gt;Nuclear proliferation is still something to be taken with deadly seriousness but the Bulletin of Atomic Sciences needs to cut the hyperbole and present their case more convincingly.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Night_Thastus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I&amp;#x27;ve always felt the idea was interesting, but the execution was silly. There are real, systematic problems - both specific to major countries and those that are common to nearly all.&lt;p&gt;But while they are very concerning, none of them I would say are an &lt;i&gt;immediate&lt;/i&gt;, &lt;i&gt;existential&lt;/i&gt; threat. Nuclear threat during the cold war was very real. International tensions were high and one mistake could have meant the death of countless millions.&lt;p&gt;What we see today is nothing like that. Is there vast inequality? Yes. Are there systems with terrible rewards? Corruption? Environmental concerns? Yes, yes, yes.&lt;p&gt;But none of those are apocalyptic in the way that I feel the Doomsday clock is meant to represent.&lt;p&gt;IMO they&amp;#x27;ve used it so often for the wrong thing, that now it&amp;#x27;s watered down to the point of being meaningless.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anakaine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The Doomsday Clock has been set so consistently high as to be completely meaningless as a benchmark.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bm3719:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;It&amp;#x27;s set by people for whom the clock serves as a mechanism to garner alarmist attention whenever they feel short of it.  In so doing, they diminish not just themselves, but science as a whole.&lt;p&gt;At best, the clock is indeed a measuring device; one not of our peril, but of the anxieties of a group of otherwise non-notables.  In that sense, it figures that it&amp;#x27;d say we&amp;#x27;re closer to &amp;quot;doom&amp;quot; than during the Cuban missile crisis, because that&amp;#x27;s the intensity of current vibes, particularly if you&amp;#x27;re a modern activist plugged into the techno-socious of reactionary negativism.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RcouF1uZ4gsC:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; He believes that the erosion of shared reality is a greater danger than putting AI in control of nuclear weapons.&lt;p&gt;Likely the hype of the doomsday clock contributes to that erosion.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.popularmechanics.com/science/a70162364/setting-the-doomsday-clock/</guid>
+      <pubDate>Wed, 28 Jan 2026 19:48:59 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46800623</comments>
+    </item>
+    <item>
+      <title>Tuning Semantic Search on JFMM.net – Joint Fleet Maintenance Manual</title>
+      <link>https://carlkolon.com/2026/01/27/jfmm-semantic-search/</link>
+      <description>&lt;p&gt;I’ve written about semantic search before. Most modern semantic search systems use vector similarity search. net was a pure vector similarity search engine.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46796389"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://carlkolon.com/2026/01/27/jfmm-semantic-search/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://carlkolon.com/2026/01/27/jfmm-semantic-search/</guid>
+      <pubDate>Wed, 28 Jan 2026 15:13:53 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46796389</comments>
+    </item>
+    <item>
+      <title>Native Linux vst plugin directory</title>
+      <link>https://linuxmusic.rocks</link>
+      <description>&lt;p&gt;Category id: --------- All --- Effects ------ Distortion --------- Bitcrusher --------- Saturation ------ Dynamics --------- Compressor --------- De-esser --------- Gate --------- Limiters --------- Transient Designer ------ EQ ------ Emulations --------- Amp simulation --------- Cabinet simulation --------- Console Buss Emulation ------ Filter ------ Meter/Analyser ------ Modulation --------- Chorus --------- Flanger --------- Phaser --------- Pitch/Frequency shifter --------- Tremolo ------ Multieffect ------ Time/Space --------- Delay --------- Reverb --------- Stereo widening ------ Tool --------- Dither --------- Tone/Noise Generator/FX --- Instrument ------ Drums ------ Sampler/Trigger ------ Synth ------ Vocoder --- Midi --- Other ------ Bundle ------ Software --------- DAW --------- Utils Format: VST2 VST3 LV2 CLAP DAW DSSI JACK LADSPA standalone.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46800737"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://linuxmusic.rocks'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;locusofself:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I&amp;#x27;ve always wanted to do music recording on Linux (literally since the 90s). The fact that my preferred DAW (Reaper) has long been native to Linux has tempted me. But I have Universal Audio &amp;quot;Apollo&amp;quot; interface and have bought into their whole ecosystem which is very good and runs really great on my mac.&lt;p&gt;If I made the plunge I would get an RME USB audio interface and use Reaper, maybe play around with Bitwig which is also native on Linux. I don&amp;#x27;t think I would mess with WINE, regardless of other&amp;#x27;s success stories with it.&lt;p&gt;I&amp;#x27;m glad to see where things have gone in recent years though&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sirwitti:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I absolutely love the progress that was made in the several last years! The number of VST&amp;#x2F;audio plugins available on linux has grown from being quite a problem to having an actual ecosystem!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jsheard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Is it possible to wedge WINE between a Windows VST and a native Linux DAW?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Rooster61:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Oh nice. I&amp;#x27;d have loved to have had this a few months ago. It&amp;#x27;s not overly easy to find VST plugins for Linux, and I&amp;#x27;ve missed that since moving from Windows last year.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://linuxmusic.rocks</guid>
+      <pubDate>Wed, 28 Jan 2026 19:59:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46800737</comments>
+    </item>
+    <item>
+      <title>Amazon cuts 16k jobs</title>
+      <link>https://www.reuters.com/legal/litigation/amazon-cuts-16000-jobs-globally-broader-restructuring-2026-01-28/</link>
+      <guid isPermaLink="true">https://www.reuters.com/legal/litigation/amazon-cuts-16000-jobs-globally-broader-restructuring-2026-01-28/</guid>
+      <pubDate>Wed, 28 Jan 2026 15:39:11 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46796745</comments>
+    </item>
+    <item>
+      <title>Show HN: Cursor for Userscripts</title>
+      <link>https://github.com/chebykinn/browser-code</link>
+      <description>&lt;p&gt;Agent Tools The agent has filesystem-like tools: Tool Description Read Read file content. Requires version from last Read. Write Write entire file.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46800484"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/chebykinn/browser-code'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://github.com/chebykinn/browser-code</guid>
+      <pubDate>Wed, 28 Jan 2026 19:39:31 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46800484</comments>
+    </item>
+    <item>
+      <title>Trinity large: An open 400B sparse MoE model</title>
+      <link>https://www.arcee.ai/blog/trinity-large</link>
+      <description>&lt;p&gt;At the time, Trinity Nano Preview and Trinity Mini had just released, and Trinity Large had started training. That sparsity ratio is pretty high compared to our peers, save for Llama-4-Maverick: Model Routing (k-of-N) Routing fraction Trinity Large 4-of-256 1. A less advanced version of this curation approach worked well for smaller models like Trinity Nano and Trinity Mini, but we wanted to shoot for the moon with Trinity Large.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46789561"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.arcee.ai/blog/trinity-large'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;observationist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is a wonderful release.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mynti:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;They trained it in 33 days for ~20m (that includes apparently not only the infrastructure but also the salaries over a 6 month period). And the model is coming close to QWEN and Deepseek. Pretty impressive&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;linolevan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I&amp;#x27;m particularly excited to see a &amp;quot;true base&amp;quot; model to do research off of (&lt;a href="https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;arcee-ai&amp;#x2F;Trinity-Large-TrueBase" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;arcee-ai&amp;#x2F;Trinity-Large-TrueBase&lt;/a&gt;).&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.arcee.ai/blog/trinity-large</guid>
+      <pubDate>Wed, 28 Jan 2026 00:57:52 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46789561</comments>
+    </item>
+    <item>
+      <title>Amazon One palm authentication discontinued</title>
+      <link>https://amazonone.aws.com/help</link>
+      <guid isPermaLink="true">https://amazonone.aws.com/help</guid>
+      <pubDate>Wed, 28 Jan 2026 16:52:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46797913</comments>
+    </item>
+    <item>
+      <title>What does Werner Herzog's nihilist penguin teach us?</title>
+      <link>https://lwlies.com/article/werner-herzog-penguin-encounters-at-the-end-of-the-world</link>
+      <description>&lt;p&gt;But first and foremost it’s about people and how they interact with and interpret the harsh environment. They all have their own intriguing stories to tell. The film is crammed with complex and challenging material that calls into question everything we think we know about the term “documentary”.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46801225"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://lwlies.com/article/werner-herzog-penguin-encounters-at-the-end-of-the-world'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;krona:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Huh? I was expecting at least one or two Nietzsche or Dostoevsky quotes but this article completely fails to go beyond what is obvious to anyone who has seen those 3 minutes of the documentary.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;netsharc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Interesting, I&amp;#x27;ve seen videos about this nihilistic penguin the last few days on Instagram... Feels like content regurgitation, but I don&amp;#x27;t know who&amp;#x27;s creating and who&amp;#x27;s recycling it at the moment.&lt;p&gt;(On HN there&amp;#x27;s often a story from one site one day, and a few days later the same story reported by a different news site..)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;beeflet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I would describe it as a faustian penguin, not a nihilist penguin. The other day there was a story here about a coyote that swam to alcatraz (&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46674433"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46674433&lt;/a&gt;).&lt;p&gt;When we look at an animal that does such a thing, we characterize it as a strange and suicidal act of a disturbed creature hurtling it&amp;#x27;s life force into the abyss. But when man does the same thing, it is a heroic and uniquely human act of exploration.&lt;p&gt;If you go onto an island or some mountain range or some other type of isolated pocket of the world, you may be surprised to find that life exists there. But there is only one way in which this is possible: at some point in time, some living thing    had to abandon its old world with little regard for its personal survival.&lt;p&gt;When you factor in the probability of survival in the new world, and the requirement of finding a sexed pair on the other side you realize that this takes many living things, integrated over a long period of time.&lt;p&gt;Life pushes boundaries and explores new environments. It has to start from something. Clearly some amount of mania is a requisite for success in the long term in order to overcome reason in the short term.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Pet_Ant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;My personal favourite work of his is &amp;quot;Happy People: A Year in the Taiga&amp;quot;. Most of the people are doing immediate purposeful work and are much more present. There is so much resilience (the bear destroyed hut), and there is also tragedy in it as well (the fire).&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Happy_People:_A_Year_in_the_Taiga" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Happy_People:_A_Year_in_the_Ta...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;observationist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;That&amp;#x27;s how new species happen. Over time, the penguins who get sufficiently tired of all the other penguins&amp;#x27; shit march off to the edge of the map, and when they finally get lucky, enough of the smart, independent minded penguins survive to produce a new generation. The new adventure flock eventually garners enough members to march back to the feeding grounds and seize the territory from the loser normy penguins.&lt;p&gt;Thus the arc of the universe bends towards badass penguins.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://lwlies.com/article/werner-herzog-penguin-encounters-at-the-end-of-the-world</guid>
+      <pubDate>Wed, 28 Jan 2026 20:43:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46801225</comments>
+    </item>
+    <item>
+      <title>Native Instruments enters into insolvency proceedings</title>
+      <link>https://www.engadget.com/audio/native-instruments-enters-into-insolvency-proceedings-leaving-its-future-uncertain-183206826.html</link>
+      <description>&lt;p&gt;Native Instruments also owns the brands iZotope, Brainworx and Plugin Alliance. This isn't the first time Native Instruments has been forced into major restructuring. It has already begun incorporating Native Instruments software into MPC machines.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46800645"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.engadget.com/audio/native-instruments-enters-into-insolvency-proceedings-leaving-its-future-uncertain-183206826.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anigbrowl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;A much more detailed and better-linked writeup: &lt;a href="https:&amp;#x2F;&amp;#x2F;cdm.link&amp;#x2F;ni-insolvency&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;cdm.link&amp;#x2F;ni-insolvency&amp;#x2F;&lt;/a&gt;&lt;p&gt;As noted, the company has been in decline since going into private equity in 2020. Pro audio users have felt it was less and less about innovation and more about selling preset packs and slim-value upgrades, as well as increasingly onerous license management. At the same time people are distressed because the firm has a very impressive history of software and hardware products.&lt;p&gt;Inmusic (which owns Akai, Moog and several other premium pro audio brands) is a potential buyer to acquire them as they already have some product crossover in the form of NI plugins available exclusively on Akai hardware. However this would mean two flagship products that compete against each other (NI&amp;#x27;s Maschine and Akai&amp;#x27;s MPC, two very advanced drum pad&amp;#x2F;sequencing powerhouses). That would mean abandonment of Maschine, whose development was already stalled, and disappointment&amp;#x2F;bad feeling from many owners; pro audio consumers are necessarily emotional about their creative tools and tend to hold grudges.&lt;p&gt;OF course, the best of both products could be combined in a Secret Third Thing that embodied the best features of both, but the reality is that Inmusic has just released new flagship Akai MPCs (the 3rd generation of the current design paradigm), and they&amp;#x27;re such a big upgrade upgrade in both hardware and software terms that they&amp;#x27;re steamrolling their direct and indirect competition. Those flagship units (and some lighter-weight entry level units to come) have a ~5 year sales life before being replaced, and the latest software still runs well on the Gen 1 machines from 2017, albeit more slowly and without the fancy additional hardware features. So Inmusic is positively basking in brand loyalty at the moment, because they&amp;#x27;ve prioritized capital investment for product development across multiple brands. They&amp;#x27;ve saved by optimizing supply chain efficiencies, manufacturing more stuff in Asia, keeping materials costs low and exploiting economies of scale, while still encouraging designers and engineers to follow their hearts which has resulted in a lot of very happy customers.&lt;p&gt;Native Instruments &lt;i&gt;had&lt;/i&gt; all this, with a very deep software stack and very well-engineered hardware offerings that operated perfectly together (ie no synchronization issues, no or minimal manual configuration required for hardware user interface mapping etc). But the product line got more and more bloated, the license management more of a pain, and development on the hardware stalled. When they were taken over by their existing PE owners in 2020 they seemed not to have any innovation or investment ideas of their own but were more focused on how to squeeze more money out of existing IP. This lead to a series of missteps - low value &amp;#x27;upgrades&amp;#x27;, abandonment of beloved software flagships, and the absence of any discernible roadmap for the hardware side of the business. This really matters in the pro audio space because as I mentioned above creative people are passionate about their tools. It&amp;#x27;s not unusual to see people who have the latest and greatest sequencer or audio interface hooked up to a 45 year old synthesizer and&amp;#x2F;or a slavish modern clone of that older design with additional features. music tech buyers want the heritage of the past to be maintained, but also to be excited with a steady supply of new music technology, and NI&amp;#x27;s private equity owners have completely failed to deliver the latter,w ith no significant hardware developments since 2019. The company went from arguably having the best hardware offerings in its niche (in terms of capabilities, ergonomics, firmware reliability, software integration, consumer loyalty) to seeing those edges disappear to their primary competitors one by one.&lt;p&gt;It&amp;#x27;s hard to guess what happens from here. Good managers could revive the company and build it back to its previous greatness, but the market has already seen it wrecked once by private equity and is wary of getting&amp;#x2F;staying invested in a product ecosystem that may not have a long term future. Music tech people are also acutely aware of the impact of tariffs and AI on hardware component pricing and product design. Currently the mood about NI&amp;#x27;s long term future is pessimistic; people are already talking about preserving existing setups as museum pieces, ie maxxed out as much as possible and then disconnected from the internet so they can be maintained in working order but otherwise frozen.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Some more discussion: &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46781466"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46781466&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bryceneal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I guess I can look forward to all of my plugins breaking in some way in the near future.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vunderba:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Wow. As a pretty heavy user of the Kontakt sampler, that&amp;#x27;s sad to hear. I&amp;#x27;ve gotten so much mileage out of libraries like Analog Dreams and The Gentleman...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ahartmetz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Oh damn. I know some people who used to work there, and not very closely some who still do.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drdator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;this was not on my bingo card for 2026 ... :&amp;#x2F;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adamnemecek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;That is very sad to hear.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adzm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is crazy to hear. They also own izotope and several other brands. Imagine if the licensing servers go down.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.engadget.com/audio/native-instruments-enters-into-insolvency-proceedings-leaving-its-future-uncertain-183206826.html</guid>
+      <pubDate>Wed, 28 Jan 2026 19:51:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46800645</comments>
+    </item>
+    <item>
+      <title>Show HN: SHDL – A minimal hardware description language built from logic gates</title>
+      <link>https://github.com/rafa-rrayes/SHDL</link>
+      <description>&lt;p&gt;SHDL - Simple Hardware Description Language A lightweight hardware description language and Python driver for digital circuit simulation using exclusively logic gates. Use in Python from SHDL import Circuit # Load and compile the circuit with Circuit("fullAdder. Compile from Command Line # Compile SHDL to C shdlc adder.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46794281"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/rafa-rrayes/SHDL'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fspeech:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;If you are just interested in a structural description (so-called netlist) the standard is EDIF.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;notherhack:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;You&amp;#x27;ve reinvented Verilog primitive gates.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Lramseyer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Kind of a wild idea, but have you considered using this as a markup language for logic diagrams? I&amp;#x27;m thinking something like mermaid - &lt;a href="https:&amp;#x2F;&amp;#x2F;mermaid.js.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;mermaid.js.org&amp;#x2F;&lt;/a&gt; While this might not be super useful for chip design, it is a fully functional HDL, and since it is gate level, it would map nicely to diagrams.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/rafa-rrayes/SHDL</guid>
+      <pubDate>Wed, 28 Jan 2026 12:06:18 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46794281</comments>
+    </item>
+    <item>
+      <title>Kairos: AI interns for everyone</title>
+      <link>https://www.kairos.computer/</link>
+      <description>&lt;p&gt;Kairos works with them natively. Handled based on your policy. Your Calendar: Cross-referenced with your open slots.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46792225"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.kairos.computer/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abcde666777:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;There&amp;#x27;s a reason they call them &amp;#x27;interns&amp;#x27; - because the results are going to be subpar.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;athultr1997:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I do not wanna share my phone number to demo a product :(&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.kairos.computer/</guid>
+      <pubDate>Wed, 28 Jan 2026 07:40:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46792225</comments>
+    </item>
+    <item>
+      <title>How London became the rest of the world’s startup capital</title>
+      <link>https://www.economist.com/britain/2026/01/26/how-london-became-the-rest-of-the-worlds-startup-capital</link>
+      <guid isPermaLink="true">https://www.economist.com/britain/2026/01/26/how-london-became-the-rest-of-the-worlds-startup-capital</guid>
+      <pubDate>Wed, 28 Jan 2026 00:16:57 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46789180</comments>
+    </item>
+    <item>
+      <title>Did a celebrated researcher obscure a baby's poisoning?</title>
+      <link>https://www.newyorker.com/magazine/2026/02/02/did-a-celebrated-researcher-obscure-a-fatal-poisoning</link>
+      <description>&lt;p&gt;Later that morning, Rani brought him in for a routine pediatric visit. Another doctor later reported that Tariq had “appeared to be thriving. He said that Tariq had been sleeping for most of the past twenty hours, and that his skin was fluctuating in color.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46789205"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.newyorker.com/magazine/2026/02/02/did-a-celebrated-researcher-obscure-a-fatal-poisoning'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.newyorker.com/magazine/2026/02/02/did-a-celebrated-researcher-obscure-a-fatal-poisoning</guid>
+      <pubDate>Wed, 28 Jan 2026 00:18:58 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46789205</comments>
+    </item>
+    <item>
+      <title>Show HN: A MitM proxy to see what your LLM tools are sending</title>
+      <link>https://github.com/jmuncor/sherlock</link>
+      <description>&lt;p&gt;Start Sherlock sherlock On first run, Sherlock will: Generate the mitmproxy CA certificate Prompt you to install it in your system trust store Ask where to save intercepted prompts 2. Run Your LLM Tools In a separate terminal, use Sherlock to proxy your commands: # For Claude Code sherlock claude # For any command sherlock run --node your-llm-tool That's it. git cd sherlock python -m.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46799898"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/jmuncor/sherlock'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrbluecoat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;So is it just a wrapper around MitM Proxy?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;EMM_386:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is great.&lt;p&gt;When I work with AI on large, tricky code bases I try to do a collaboration where it hands off things to me that may result in large number of tokens (excess tool calls, unprecise searches, verbose output, reading large files without a range specified, etc.).&lt;p&gt;This will help narrow down exactly which to still handle manually to best keep within token budgets.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;david_shaw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Nice work! I&amp;#x27;m sure the data gleaned here is illuminating for many users.&lt;p&gt;I&amp;#x27;m surprised that there isn&amp;#x27;t a stronger demand for enterprise-wide tools like this. Yes, there are a few solutions, but when you contrast the new standard of &amp;quot;give everyone at the company agentic AI capabilities&amp;quot; with the prior paradigm of strong data governance (at least at larger orgs), it&amp;#x27;s a stark difference.&lt;p&gt;I think we&amp;#x27;re not far from the pendulum swinging back a bit. Not &lt;i&gt;just&lt;/i&gt; because AI can&amp;#x27;t be used for everything, but because the governance on widespread AI use (without severely limiting what tools can actually do) is a difficult and ongoing problem.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/jmuncor/sherlock</guid>
+      <pubDate>Wed, 28 Jan 2026 18:52:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46799898</comments>
     </item>
   </channel>
 </rss>
