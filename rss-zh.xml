@@ -6,207 +6,431 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 03 Feb 2026 15:59:26 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Feb 2026 19:15:21 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>代理技巧</title>
-      <link>https://agentskills.io/home</link>
-      <description>&lt;p&gt;代理技能主页代理技能搜索。导航概述概述什么是技巧。代理技能可以实现什么？&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Agent Skills&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46871173"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://agentskills.io/home'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 21 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nstfn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;开始开发一个将所有技能与符号链接同步的工具。
-目前可以满足我的需求，但请随意在 GH 上对其进行改进： &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;Alpha-Coders&amp;#x2F;agent-loom" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;Alpha-Coders&amp;#x2F;agent-loom&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;baalimago:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请帮助我理解。是一种“技能”指示 LLM 如何做某事的提示？例如，我给它“技能”通过描述英雄的旅程如何进行来写一个奇幻故事。或者我给它“卷曲”通过输出curl的手册页来掌握技巧。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;time0ut:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我正在开发一个包含技能概念的特定领域代理。我一次只允许一个人处于活动状态，以减少指令冲突的可能性。我使用一个小子代理在每回合开始时选择“维持”更改主动技能。它使用一个小型快速模型将最近的对话与一项技能（或无技能）相匹配。我尝试了其他方法，但对于我的用例来说，这种方法效果很好。&lt;p&gt;我的技能模型与此类似，但我将其扩展为在示例和反例中显式使用和不使用。这有助于小型模型，因为该模型往往无法获得自由形式文本描述的细微差别。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;onurkanbkrc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您想浏览、搜索和下载 AI 代理技能，请使用 openskills.space&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JulianHart:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;格式很有趣，但技能感觉像是优化了错误的层。代理通常不会因为错误的指令而失败，而是因为外部系统将它们视为机器人而失败。&lt;p&gt;您可以拥有完美的抓取技能，但如果目标阻止您的请求，您就会陷入困境。困难的问题在下游。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alsetmusic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;几周前的一个链接表明，将它们置于第一人称会让它们被可靠地采用。诸如“如果可以的话，我会读它”之类的话。 vs “请务必阅读此内容。”我自己还没有尝试过，但计划尝试一下。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dk8996:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有没有人类可以浏览的技能目录？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Soerensen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于代理在未经明确询问的情况下不使用技能的观察引起了共鸣。在实践中，我发现将技能视为明确的“工作流程”是成功的。而不是背景上下文。&lt;p&gt;有效的模式：代表完整、独立序列的技能 - “执行 X，然后执行 Y，然后执行 Z，然后验证” - 具有明确的触发条件。代理将这些视为不同的操作模式，而不是可选的参考材料。&lt;p&gt;什么不起作用：将技能作为一般准则或“最佳实践”文件。这些会在上下文中丢失或完全被忽略，因为代理没有明确的信号指示何时应用它们。&lt;p&gt;思维模型转变：将技能想象得不像文档，而更像是您明确调用的子例程。如果您不会为其编写函数，那么它可能不应该成为一项技能。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iainmerrick:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些东西听起来像是惨痛的教训没有得到充分的重视。&lt;p&gt;您不妨以任何旧格式用英语编写说明，只要它可以理解即可。正如您为人类读者所做的那样！好的文档的构成要素并没有真正改变。 &lt;i&gt;（编辑添加：我的狭隘主义在那里表现出来，它不一定是英语）&lt;/i&gt;&lt;p&gt;这种标准化真的需要吗？除了那些喜欢编写规范和建立这样的标准的人之外，它对谁有利？如果这确实是生产力的胜利，那么应该可以进行比较研究并证明这一点。即便如此，从长远来看，这可能也不值得。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;appsoftware:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我使用通用 README_AI.md 文件，并使用 CLAUDE.md 和 AGENTS.md 将代理定向到该通用文件。在 README_AI.md 中，我具体提到了技能。这非常有效 - 代理的行为方式与我的指示相反的情况变得非常罕见。有关我的方法的更多信息，请参见：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.appsoftware.com&amp;#x2F;blog&amp;#x2F;a-centralized-approach-to-ai-llm-agent-instruction-using-git-submodules" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.appsoftware.com&amp;#x2F;blog&amp;#x2F;a-centralized-approach-to-a...&lt;/a&gt; ...几天前这里有一篇文章提到一篇论文，该论文说单独的 AGENTS 文件比代理技能效果更好，但单个代理文件无法扩展。对我来说，在主要特工文件中使用对技能的简短引用的组合似乎是最好的方法。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Sherveen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为技能对于普通大众来说可能是一个净积极因素，但对于高级用户来说，我确实建议向上移动一个元层 - &lt;p&gt;每当有代理最佳实践（技能）或“预先提示”时， &lt;p&gt;举个例子，我有一个设计“预提示”；这规定了代理的一系列指导：如何选择样式组件、排版、布局等。它有几个段落长，我总是将其与设计实现请求一起发送，以获得比平均水平更好的输出。&lt;p&gt;我可以将其变成一项技能，但随后我必须确保我正在使用支持的技能 - 并每次安装它或以我的系统上普遍看到的方式安装它（不，符号链接并不能真正解决这个问题）。&lt;p&gt;所以我使用 AutoHotkey（您可能使用 Raycast、Espanso 等）来配置每次输入“&amp;#x27;&amp;#x2F;dsn&amp;#x27;”时，它都会自动扩展到我的预提示代码段中。&lt;p&gt;现在，无论我是否在web&amp;#x2F;云、在我的终端窗口或 IDE 中，我已经记住了最重要的“预先提示”；而且距离它们只有几秒钟的路程。&lt;p&gt;它的设计就是防脆弱转向。称之为通用技能注入。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jgmedr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们的团队成功地将技能视为可重用的半确定性函数，而不是随机边缘情况的交叉提示。&lt;p&gt;例如，我们有一项“创建新端点”的技能。该技能包含工程师除了实现逻辑之外还需要执行的所有样板任务的详细清单（例如更新 OpenAPI 规范、添加集成测试、端点样板等）。工程师通过斜线命令从 CLI 手动调用该技能，提供 JIRA 票号，并进行一些简短的设计讨论。法学硕士始终能够以一种与我们现有应用程序架构相匹配的方式一次性处理这些票据。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tallesborges92:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我意识到 amp 使用 ~&amp;#x2F;.agents&amp;#x2F;skills&lt;p&gt;我喜欢这个想法，拥有更多与 CLI 无关的东西&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noodletheworld:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是只有我这么觉得，还是技能看起来与 MCP 非常相似？&lt;p&gt;……显然，包括人们“分享”技能的无知热情。&lt;p&gt;当您在本地运行自己的 MCP 时，MCP 也完全没问题。当你安装某个随机的人的任意 MCP 时，这是很糟糕的。当你安装了太多的东西时，它就会失败。&lt;p&gt;技能也是如此。&lt;p&gt;有人为技能制作一个“包管理器”，拥有 MCP 的所有愚蠢之处，这只是时间问题（也许它已经存在？）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;davidkunz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请标准化文件夹。&lt;p&gt;&lt;pre&gt;&lt;code&gt; .claude&amp;#x2F;skills
-  .codex技能
-  .opencode&amp;#x2F;技能
-  .github&amp;#x2F;技能&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Frannky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我昨天开始玩技能。我不确定 LLM 是否更容易在技能内调用 API，然后将较重的代码移到代理可以调用的端点后面。&lt;p&gt;我有一种感觉，否则代理会变得太混乱，无法可靠地处理大量复杂的东西。&lt;p&gt;例如，我让 OpenClaw 自动查找趋势论文，将它们变成有趣的故事，然后通过 Telegram 向我发送文本，以便我可以在ElevenLabs 应用程序。&lt;p&gt;我不确定将故事生成系统放在 API 后面更好，还是将其编码为一项技能——特别是因为 OpenClaw 已经为我做了很多其他事情。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;voidhorse:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，经过这么多年对技术写作和正式规范的抵制，工程师和程序员突然沦落为技术作家和规范设计者。有趣的是，我不知何故没有预见到技术写作的薪资会因为重要性突然飙升而发生。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nzoschke:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是否有好的测试技术？衡量技能有效性？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esafak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有没有人发现代理商在未经询问的情况下不会使用它们？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;orliesaurus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;vercel 做的一件好事是在网站 Skills.sh 下索引 Skills.md - 是的，现在有数百个这样的网站，但我喜欢 Vercel DX 的快速精简方法，尽管我不太喜欢 Vercel&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;empath75:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;过去几个月的技能实验完全改变了我对使用法学硕士的看法。  与其说它是一项非常重要的技术或超级出色，不如说它是一项非常重要的技术或超级出色，但我已经不再将法学硕士和代理视为我们正在构建的内容的“功能”，而是将他们视为我们正在构建的内容的“用户”。&lt;p&gt;我一直在尝试培养技能，以在我们的内部工具上执行各种操作，但更常见的是，当它不起作用时，这与“我们的工具”的问题一样严重这是法学硕士。  你不能做明显的事情，文档很糟糕，API 返回不透明的错误消息。  由于部落知识，人类可以解决这些问题，但法学硕士绝对不能解决，为法学硕士修复它也可以改善人类用户的问题，他们可能一直在悄悄地处理摩擦和胡言乱语，没有抱怨，或者不处理它并去其他地方。&lt;p&gt;如果你今天正在构建一个产品，那么你正在开发的功能在 Claude Code 可以使用它之前_还没有完成_。  技能和 MCP 并不是“拥有就好”，它将与 SEO 和可访问性一样重要，需要做极其相似的工作来实现它。&lt;p&gt;如果您的产品不能被代理商发现并不能被代理商使用，那么您的产品可能在几年内就不存在了。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://agentskills.io/home</guid>
-      <pubDate>Tue, 03 Feb 2026 14:09:54 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46871173</comments>
+      <title>Qwen3-Coder-Next</title>
+      <link>https://qwen.ai/blog?id=qwen3-coder-next</link>
+      <guid isPermaLink="true">https://qwen.ai/blog?id=qwen3-coder-next</guid>
+      <pubDate>Tue, 03 Feb 2026 16:01:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46872706</comments>
     </item>
     <item>
-      <title>GitHub 浏览器插件用于拉取请求中的 AI 贡献指责</title>
-      <link>https://blog.rbby.dev/posts/github-ai-contribution-blame-for-pull-requests/</link>
-      <description>&lt;p&gt;git-ai 的工作原理是将人工智能贡献数据存储在 git 笔记中。使用 git-ai 扩展在 VSCode 中突出显示 AI 贡献的代码。 GitHub PR 与 AI 贡献。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; GitHub Browser Plugin for AI Contribution Blame in Pull Requests&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46871473"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://blog.rbby.dev/posts/github-ai-contribution-blame-for-pull-requests/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Xcode 26.3 释放代理编码的力量</title>
+      <link>https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/</link>
+      <description>&lt;p&gt;3 解锁了代理编码，允许开发人员直接在 Xcode 中利用 Anthropic 的 Claude Agent 和 OpenAI 的 Codex 等代理。通过无缝访问 Claude Agent 和 Codex，开发人员可以将这些模型的高级推理直接引入其应用程序构建工作流程中。可用性 Xcode 26。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Xcode 26.3 unlocks the power of agentic coding&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46874619"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shayief:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;似乎这样的东西应该添加到提交对象&amp;#x2F;消息本身，而不是 git 注释中。也许作为 Co-Authored-By 预告片的补充。&lt;p&gt;这将确保此数据是存储库历史记录（和提交 SHA）的一部分。仍然可以使用其他工具来可视化它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nilespotter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么不直接看代码看看它好不好呢？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;verdverm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;难道不应该给他们自己的帐户 ID &amp;#x2F; 吗？ &lt;p&gt;为什么我们需要一个插件或新工具来完成这个任务？&lt;p&gt;不知道为什么这个已经被重新提交并放在 HN 的前面。 （参见 2 天前的同行评论）这篇文章有什么特点值得特殊对待？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rbbydotdev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;仓库： &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;rbbydotdev&amp;#x2F;refined-github-with-ai-pr" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;rbbydotdev&amp;#x2F;refined-github-with-ai-pr&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://blog.rbby.dev/posts/github-ai-contribution-blame-for-pull-requests/</guid>
-      <pubDate>Tue, 03 Feb 2026 14:35:25 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46871473</comments>
+&lt;p&gt;&lt;strong&gt;Top 25 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mikeocool:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“通过捕获 Xcode 预览以可视方式”这可能是值得的，如果它能够与模拟器进行交互，那将是杀手级的。&lt;p&gt;除此之外，我只是继续在终端中使用 Claude Code。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SirMaster:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不认为我已经准备好让我的手机应用程序变得更加草率...&lt;p&gt;我想知道他们是否在内部使用它来编写 iOS 26？会解释一些事情...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thought_alarm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;发行说明：&lt;a href="https:&amp;#x2F;&amp;#x2F;developer.apple.com&amp;#x2F;documentation&amp;#x2F;xcode-release-notes&amp;#x2F;xcode-26_3-release-notes" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;developer.apple.com&amp;#x2F;documentation&amp;#x2F;xcode-release-note...&lt;/a&gt;&lt;p&gt;令人惊讶的是，这个版本不需要 MacOS 26 (Tahoe)。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;geooff_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个大新闻。人机交互开发对于实际软件速度提升至关重要。当前支持代理的 iOS 开发工具还有很多不足之处。每次我从事网络开发任务时，我都会嫉妒这些工具。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pjmlp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;再见 CoPilot 插件，微软又失去了一个平台。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;github&amp;#x2F;CopilotForXcode" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;github&amp;#x2F;CopilotForXcode&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spzb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谢谢。我恨它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;enraged_camel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我无法在 XCode 中切换到 Opus 4.5。它默认为 Sonnet 4.5，我找不到在哪里更改它（或者如果可能的话）。有人知道吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cyberax:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;向侧边栏添加水平滚动条怎么样？不？&lt;p&gt;“代理这个”，“代理那个”...它实际上只是一个 while() 循环中的法学硕士，带有一些公开的工具。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrtksn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;到目前为止，我发现 OpenAI 的 Codex 应用程序对我来说是正确的方法。我无法忍受 AI 集成 IDE，当代码开始在我无法跟上的阶段发生变化时，我会感到毛骨悚然。&lt;p&gt;昨天几个小时内，我发布了我的 Mac 应用程序的更新，我已经一年多没有开发该应用程序了。更新很容易按预期执行，对 UI 进行了一些小的手动操作，应用程序刚刚在 AppStore 上获得批准（几分钟前）[0]。&lt;p&gt;这非常好，因为通常我不会记住太多代码，因此对长期遗忘的代码进行更新会变得非常痛苦。&lt;p&gt;对 Apple 来说很好，但我认为 Codex 应用程序让我感觉最舒服。我想我喜欢将 AI 与 IDE 分开，这样我就可以在 IDE 中进行控制。&lt;p&gt;[0] Codex 在付费专区上实现了功能演示，如果您想查看的话：&lt;a href="https:&amp;#x2F;&amp;#x2F;apps.apple.com&amp;#x2F;us&amp;#x2F;app&amp;#x2F;crystalclear-sound-switcher&amp;#x2F;id669572第3746章&gt;https：&amp;#x2F;&amp;#x2F;apps.apple.com&amp;#x2F;us&amp;#x2F;app&amp;#x2F;crystalclear-sound-switcher&amp;#x2F;id...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thedangler:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我第一次尝试时，克劳德在错误的目录中构建了所有文件，哈哈。
+现在运行良好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mohsen1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我构建了一个完整的 iOS 应用程序，甚至没有打开 Xcode UI 一次。为什么这么多 iOS 工程师更喜欢 XCode？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;classicsc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我期待尝试 SwiftUI 预览集成，但根据我使用 xcodebuildmcp 和 ax 工具让代理运行模拟器并捕获屏幕截图的经验，期望会很低。这些模型似乎能够识别“应该存在的按钮没有显示”之类的问题，但无法识别布局何时错误或某些元素太大。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;almosthere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Agents.md 是否允许自动发现 mcp 工具（工具：运行 .&amp;#x2F;tool-discovery.sh）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jonathanstrange:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只要它纯粹是选择加入，并且在选择加入之前，不会将任何数据发送到某个服务器，也不会更改源代码，我就可以接受。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OscarTheGrinch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;正是人工智能爆发的时候。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;flohofwoe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在地基腐烂的同时建造空中楼阁:&amp;#x2F; Xcode 确实需要几年的纯粹错误修复和优化版本，而不是炒作。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OsamaJaber:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;MCP 支持才是真正的故事 
+意味着你没有被困在 Claude 或 Codex 中 
+可以插入任何你想要的代理&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OGEnthusiast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道最近发布的 Apple 操作系统有多少是通过“代理编码”完成的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cap10morgan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我已经在 Xcode 26.2 中使用 Claude。他们改变了什么？ 26.3中具体添加？营销阴霾背后的真相还不是很清楚。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;giancarlostoro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的烦恼是，听起来我不能直接在 XCode 中使用 Claude Code？我喜欢 Zed 的做法，它并不完美，但效果非常好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;meetpateltech:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Anthropic 的博客：&lt;p&gt;&gt; Apple 的 Xcode 现已支持 Claude Agent SDK&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.anthropic.com&amp;#x2F;news&amp;#x2F;apple-xcode-claude-agent-sdk" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.anthropic.com&amp;#x2F;新闻&amp;#x2F;apple-xcode-claude-agent-sdk&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;msie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望他们把精力花在其他地方，比如修复错误，提高速度。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;minimaxir:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[已删除]&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bigyabai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感谢苹果公司，但是“代理编码”如果 Xcode 本身不支持它，这已经是非常可能的了。我想，总是要得到你的 OKR。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;avaer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我真的没想到苹果会跟上这股潮流，但我想这是不可避免的。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/</guid>
+      <pubDate>Tue, 03 Feb 2026 18:04:08 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46874619</comments>
     </item>
     <item>
-      <title>显示 HN：difi – 与 Neovim 集成的 Git diff TUI（用 Go 编写）</title>
-      <link>https://github.com/oug-t/difi</link>
-      <description>&lt;p&gt;difi 在推送为什么是 difi 之前检查并完善 Git 差异。 difi 可以帮助您复习它们。上下文感知：自动与您的 difi 会话目标同步。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: difi – A Git diff TUI with Neovim integration (written in Go)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46870917"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/oug-t/difi'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>德诺沙箱</title>
+      <link>https://deno.com/blog/introducing-deno-sandbox</link>
+      <description>&lt;p&gt;Deno Sandbox 两者都提供。创造（）;等待沙箱。沙箱到生产沙箱。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Deno Sandbox&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46874097"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://deno.com/blog/introducing-deno-sandbox'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vhantz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在自述文件中，只有显式运行该工具的命令。可以设置为git的diff工具吗？如果没有，你应该调查一下。这将有助于采用。如果是，您应该在文档中说清楚。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oug-t:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很想听听关于编辑器支持的想法，你们觉得像这样的工具需要特定的集成（Emacs&amp;#x2F;Vim），还是 TUI 工作流程就足够了？&lt;p&gt;现在它主要支持 `nvim`。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;freedomben:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来是一个很棒的工具，也是我真正需要的！  我实际上开始构建自己的，因为我找不到任何令人满意的东西。  我的构建目前处于非常早期的阶段，我很想放弃它:-)我肯定会尝试 difi。&lt;p&gt;也感谢您贴出屏幕截图。  我浏览过很多声称与此类似的项目，但有太多不同的解释可能使它不太适合我，而且当没有任何屏幕截图时，看到它实际运行的障碍通常太高，以至于我只能尝试一两个，然后就放弃并停止浪费时间。  有了屏幕截图，这样我就可以快速查看。&lt;p&gt;屏幕截图&lt;i&gt;&lt;/i&gt;有点粗糙，所以下次有一些提示：&lt;p&gt;1。  将终端窗口缩小一点，因为巨大的视图很难看清&lt;p&gt;2.  保持屏幕截图为全分辨率，以便更容易阅读。  降低的分辨率和巨大的原始屏幕使得文本很难阅读，甚至放大到 200%&lt;p&gt;3。  使用诸如屏幕键之类的东西（或抛出一些字幕文本或其他东西），以便观看者知道您正在按什么键以及您正在尝试做什么。  如果没有这些提示，就很难跟上。&lt;p&gt;干得好，感谢分享！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nesk_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;帮助该工具获得关注的一项建议是：使用黑白终端进行终端预览 (GIF)。&lt;p&gt;1.它将轻松阅读。目前情况很糟糕，您可能已经习惯了，但我们还没有。&lt;p&gt;2.它将锐化文本并使其更易于阅读，因为编码为 GIF 格式的内容较少。&lt;p&gt;其他建议：删除右侧无用的部分 - 我使用 Arch BTW 氛围 - 并使字体更大。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yearolinuxdsktp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;让我想起“tig”，它是一个具有连续差异（不是并排）查看器的 TUI……您可以内联恢复块。有树视图、差异视图和责备视图。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oug-t:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就我个人而言，git diff 命令非常适合输出，但可以在审阅方面进行改进。&lt;p&gt;使用 difi，为 git diff 制作的 TUI 可以让我加快审阅过程并使其更加愉快。&lt;p&gt;对于 nvim 集成，已经存在 diffview 和代码 diff，但我仍然喜欢 github 网站的解决方案，即在一个文件内突出显示 + 和 -，而不是并排。&lt;p&gt;difi: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;oug-t&amp;#x2F;difi" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;oug-t&amp;#x2F;difi&lt;/a&gt;
-difi.nvim: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;oug-t&amp;#x2F;difi.nvim" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;oug-t&amp;#x2F;difi.nvim&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/oug-t/difi</guid>
-      <pubDate>Tue, 03 Feb 2026 13:47:24 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46870917</comments>
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ATechGuy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; allowedNet: ["api.openai.com", "*.anthropic.com"],&lt;p&gt;如何知道允许哪些域？代理行为不是预定义的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;snehesht:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;50&amp;#x2F;200 Gb 免费，另加 0.5 美元 &amp;#x2F;横向扩展时，GB 输出数据似乎很昂贵。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nihakue:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;另请参阅我一直在使用并且非常喜欢的 Sprites (&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46557825"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46557825&lt;/a&gt;)。两者之间存在一些关键的架构差异，但表面积非常相似。看看短暂的+快照是否可以像有状态的克隆和分叉一样方便（实际上还没有放弃，尽管飞行团队说它即将到来），这将是很有趣的。&lt;p&gt;会尝试一下。这是激动人心的时刻，现在是构建副项目的最佳时机:)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Tepix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果你可以从一个 deno 沙箱创建一个 deno 沙箱，你就可以创建一个几乎无法杀死的服务，从一个沙箱跳转到下一个沙箱。对于恶意目的来说非常方便。 ;-)&lt;p&gt;只是一个想法……&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请注意，您根本不需要使用 Deno 或 JavaScript 来使用此产品。这是他们的 Python 客户端 SDK：&lt;a href="https:&amp;#x2F;&amp;#x2F;pypi.org&amp;#x2F;project&amp;#x2F;deno-sandbox&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;pypi.org&amp;#x2F;project&amp;#x2F;deno-sandbox&amp;#x2F;&lt;/a&gt;&lt;p&gt;&lt;pre&gt;&lt;code&gt; from deno_sandbox import DenoDeploy
+  
+  sdk = DenoDeploy()
+  
+  以 sdk.sandbox.create() 作为 sb：
+      # 运行 shell 命令
+      process = sb.spawn("echo", args=["来自沙箱的你好！"])
+      进程.wait()
+  
+      # 写入和读取文件
+      sb.fs.write_text_file(""tmp"example.txt", "你好，世界！")
+      内容 = sb.fs.read_text_file("""tmp&amp;#x2F;example.txt")
+      打印（内容）
+&lt;/code&gt;&lt;/pre&gt;
+看起来API协议本身使用了websockets： &lt;a href="https:&amp;#x2F;&amp;#x2F;tools.simonwillison.net&amp;#x2F;zip-wheel-explorer?package=deno-sandbox#deno_sandbox&amp;#x2F;sandbox.py--L187" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;tools.simonwillison.net&amp;#x2F;zip-wheel-explorer?package=d...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ianberdin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;带代理的 Firecrackervm？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;e12e:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来很有前途。有没有计划在本地运行并能够自托管的版本？&lt;p&gt;看起来这里的主要创新是将出站流量链接到具有动态变量的主机 - 可以将其添加到 deno 本身吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;emschwartz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;在 Deno Sandbox 中，秘密永远不会进入环境。代码只看到一个占位符&lt;p&gt;&gt;仅当沙箱向批准的主机发出出站请求时，真正的密钥才会生效。如果提示注入的代码试图将该占位符渗透到evil.com？没用。&lt;p&gt;这看起来很聪明。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ttoinou:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果我们对它们使用 Claude Pro 或 Max 计划会发生什么？它永远是不同的 IP 连接，我们可能会被 Anthropic 禁止，因为他们认为我们是不同的用户&lt;p&gt;为什么将生命周期限制在 30 分钟？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;johnspurlock:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“在过去的一年里，我们看到 Deno Deploy 客户正在构建的内容发生了转变：用户使用 LLM 生成代码的平台，并且该代码无需审查即可立即运行。该代码经常调用 LLM 本身，这意味着它需要 API 密钥和网络访问权限。&lt;p&gt;这不是传统的“运行不受信任的插件”问题。更深入：LLM 生成的代码，使用真实凭证调用外部 API，无需人工审核。对计算进行沙箱处理还不够。您需要控制网络出口并保护秘密免遭泄露。&lt;p&gt;Deno Sandbox 两者都提供。当代码准备好后，您可以直接将其部署到 Deno Deploy，而无需重新构建。”&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://deno.com/blog/introducing-deno-sandbox</guid>
+      <pubDate>Tue, 03 Feb 2026 17:33:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46874097</comments>
     </item>
     <item>
-      <title>兔子数据库</title>
-      <link>https://bunny.net/blog/meet-bunny-database-the-sql-service-that-just-works/</link>
-      <description>&lt;p&gt;这就是我们构建 Bunny 数据库的目的。但是，当您的数据库距离它们很远时，往返时间开始增加明显的延迟。为了找到答案，我们运行了读取延迟基准并测量了 Bunny 数据库中的 p95 延迟。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Bunny Database&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46870015"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://bunny.net/blog/meet-bunny-database-the-sql-service-that-just-works/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Prek：更好、更快、直接的预提交替代品，采用 Rust 设计</title>
+      <link>https://github.com/j178/prek</link>
+      <description>&lt;p&gt;需要 89+）：cargo install --locked prek npmjs prek 发布为 Node.js 版本。 prek # Non-NixOS with flakes: nix profile install nixpkgs#prek Conda prek 可以通过 conda-forge 作为 prek 获得。 scoop install main/prek MacPorts prek 可通过 MacPorts 获得。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Prek: A better, faster, drop-in pre-commit replacement, engineered in Rust&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46873138"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/j178/prek'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zackify:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么选择 turso 或 litestream + 只读副本？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;koakuma-chan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么他们不能只使用 SQLite，而不使用 libSQL？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;replwoacause:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是否适合写入重负载，或者是否面临与常规 SQLite 相同的限制？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bvogelzang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;定价详细信息：&lt;p&gt;&lt;pre&gt;&lt;code&gt; 在公共预览版中，Bunny Database 是免费的。
-
-  闲置时，Bunny Database 仅产生存储成本。一个主要区域是连续收费的，而只读副本仅在提供流量时增加存储成本（按小时计量）。
-
-  读取 - 每十亿行 0.30 美元
-  写入 - 每百万行 0.30 USD
-  存储 - 每个活动区域每 GB 0.10 美元（每月）&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;4star3star:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么选择这个而不是 Cloudflare D1？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ForHackernews:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这听起来很像 &lt;a href="https:&amp;#x2F;&amp;#x2F;turso.tech&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;turso.tech&amp;#x2F;&lt;/a&gt; ？除非我误解了，否则他们都在推销 SQLite-for-the-cloud。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pier25:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很酷。我使用 Bunny 作为 Cloudflare 替代品已经有几年了，我的体验非常完美。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://bunny.net/blog/meet-bunny-database-the-sql-service-that-just-works/</guid>
-      <pubDate>Tue, 03 Feb 2026 12:13:44 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46870015</comments>
+&lt;p&gt;&lt;strong&gt;Top 16 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fuddle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果能在 &lt;a href="https:&amp;#x2F;&amp;#x2F;prek.j178.dev&amp;#x2F;benchmark&amp;#x2F;" 上看到一些图表那就太好了rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;prek.j178.dev&amp;#x2F;基准测试&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;egorfine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它是用 Rust 编写的，有什么区别？为什么它的销量如此之大以至于它出现在标题中？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dpc_01234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;顺便提一句。预提交挂钩是解决此问题的错误方法。&lt;p&gt;我主张 JJ 构建一个运行“检查”的适当守护进程。每次背景变化。因此，您在提交时不会运行预提交检查。它们只是在后台发生，当你分享你的更改时，你会毫不费力地为每次更改和提交验证所有内容，而无需浪费时间或需要做任何特殊的事情。&lt;p&gt;我有一些类似于 SelfCI（一个简约的本地优先的遵守 Unix 哲学的 CI）中实现的东西 &lt;a href="https:&amp;#x2F;&amp;#x2F;app.radicle.xyz&amp;#x2F;节点&amp;#x2F;radicle.dpc.pw&amp;#x2F;rad%3Az2tDzYbAXxTQEKTGFVwiJPajkbeDU" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;app.radicle.xyz&amp;#x2F;nodes&amp;#x2F;radicle.dpc.pw&amp;#x2F;rad%3Az2tDzYbAX...&lt;/a&gt; 它完全取代了我对预提交挂钩的使用。用户已经告诉我，感觉提交钩子确实做得很好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;semiinfinitely:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我总是禁用预提交&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iFire:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不明白。预提交的全部意义在于它是操作系统的网关，并且还创建了预集成持续集成脚本的生态系统。不生锈的脚本。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xyzzy_plugh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;另一位评论者目前对类似的事情投了反对票，但无论如何我都会分享我有争议的看法：我讨厌预提交挂钩。&lt;p&gt;我&lt;i&gt;讨厌&lt;/i&gt;用户体验流程被扭转。如果我尝试做出提交，那是因为&lt;i&gt;这是我打算做的事情&lt;/i&gt;。我不想收到意外的错误。这只是更神奇、更含蓄的行为。给我明确的工具。&lt;p&gt;如果您想使用预提交挂钩，那就太好了！你就做你吧。但不要像现在很多项目那样把它们强加给我。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;__mharrison__:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;真的很喜欢使用 prek。&lt;p&gt;在我的最新书《有效测试》中专门用了一整章来介绍它。&lt;p&gt;当我们仍在编写代码时，快速核心（带有 Rust）和方便的包装器的趋势是伟大的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anentropic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我是 prek 的忠实粉丝，并且已经从预提交转换了几个项目&lt;p&gt;对我来说主要优点是 prek 支持 monorepo&amp;#x2F;工作空间，同时与现有的预提交挂钩保持兼容。&lt;p&gt;因此，您可以在根目录下的每个工作空间中拥有额外的 .pre-commit-config.yaml 文件，当您提交时，prek 会找到并运行它们。结果整理得很好。就可以了。&lt;p&gt;在 Rust 中重新实现默认的钩子是一个小小的好处（第 3 方钩子不会更快），并且使用 uv 作为包管理器可以加快 python 钩子的钩子更新。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;timhh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我也一直在研究用 Rust 编写的替代方案，但在我的版本中，挂钩是 WASI 程序。它们在 Git 存储库支持的虚拟文件系统上运行。这意味着 a) 不存在安全问题（它们没有网络访问权限，也没有存储库之外的文件访问权限），b) 您可以并行运行它们，c) 您可以选择是否应用修复程序，而无需插件的明确支持，最重要的是 d) 它们工作可靠。&lt;p&gt;我确信这比预提交更可靠，但您仍然有构建 Python 轮子之类的钩子，这经常会失败。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;timmmm&amp;#x2F;nit" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;timmmm&amp;#x2F;nit&lt;/a&gt;&lt;p&gt;VFS 的东西还没有完全完成（它真的很复杂）。如果有人愿意帮助我，我们将非常欢迎！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aaronblohowiak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因此，如果您使用多种语言来让脚本运行预提交挂钩，这就像预提交挂钩构建系统的包和语言运行时管理系统？相反，我认为这是对 Rust 系统的重新实现，因此它可以是独立且快速的。&lt;p&gt;这是我看到的事情，我对自己说：这是解决问题还是解决真正问题产生的问题？&lt;p&gt;为什么你的预提交如此复杂以至于需要所有这些？我希望我能说这一切都可以简单得多，但我曾在大型科技公司工作过，随着时间的推移，大型工程人员的动态可以使这种事情利大于弊，但我再次想知道真正的问题是否是非常大的工程团队......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jdxcode:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为在预提交插件基础上构建是一个巨大的错误。预提交可能是最流行的预提交挂钩工具，但平台很糟糕。我的主要批评是，它将工具安装与 linting 混合在一起——当您无疑想要在钩子之外使用 linters 时。该接口在构建时并没有考虑到并行性，它有点固定，但我认为在实践中并不是真正可以很好地工作。它还使用了一堆随机开源存储库，即使有固定，这也是供应链的噩梦。&lt;p&gt;如果你问我的话，预提交被认为是有害的。 prek 似乎在很大程度上是一个改进，但我认为它在一个已经很糟糕的平台上进行了改进，所以你不应该使用它。&lt;p&gt;我知道我正在开发一个竞争工具，但我不同意对 lefthook 或 husky 的同样的批评。我认为这些都很好，并且在某些方面（例如简单性）比 hk 更好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esafak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我使用 &lt;a href="http:&amp;#x2F;&amp;#x2F;hk.jdx.dev&amp;#x2F;" rel="nofollow"&gt;http:&amp;#x2F;&amp;#x2F;hk.jdx.dev&amp;#x2F;&lt;/a&gt;，基于 &lt;a href="https:&amp;#x2F;&amp;#x2F;pkl-lang.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;pkl-lang.org&amp;#x2F;&lt;/a&gt; 和 Rust，因为它与 &lt;a href="http:&amp;#x2F;&amp;#x2F;mise.jdx.dev&amp;#x2F;" 集成rel="nofollow"&gt;http:&amp;#x2F;&amp;#x2F;mise.jdx.dev&amp;#x2F;&lt;/a&gt;.&lt;p&gt;prek 好很多了吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fishgoesblub:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我是唯一一个从未遇到过预提交性能问题的人吗？当然，我不从事 Linux 内核大小的项目，但我没有任何抱怨。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;candiddevmike:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很难看到 git hooks 的价值。  根据我的理解，它们是一种选择加入、轻松选择退出的调用 shell 脚本的方式——你不能强迫人们运行它们，而且它们不能与 CI&amp;CD 很好地集成显示。&lt;p&gt;为什么不直接调用 shell 脚本呢？  您将如何将这些与 CI&amp;CD 平台结合使用？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BewareTheYiga:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这真是令人呼吸新鲜空气。可以无缝地投入到我的项目中。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rurban:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不仅比预提交更快，而且完全兼容。还具有更多功能。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/j178/prek</guid>
+      <pubDate>Tue, 03 Feb 2026 16:29:34 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46873138</comments>
     </item>
     <item>
-      <title>问 HN：这里还有人还在使用计算尺吗？</title>
-      <link>https://news.ycombinator.com/item?id=46871179</link>
-      <description>&lt;p&gt;Github 存储库：https://github。 com/gcr/balatro-slide-rule实际的绘图代码使用 Marimo 笔记本，它通过 WASM 在浏览器中托管 python。看看这里：https://marimo。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ask HN: Is there anyone here who still uses slide rules?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46871179"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46871179'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 30 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pklausler:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;（不好意思地举起苍老的手）&lt;p&gt;我的桌子上有一个，我经常用它来快速估算。  它在零秒内启动。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bananaflag:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;阿西莫夫的必引名言：&lt;p&gt;“分析法则可能被认为是幼儿园玩具对数计算尺的一种遥远关系——就像摩天大楼与小屋的关系一样。达雷尔通过长期练习的翻腕来使用它。他徒手绘制了结果，正如安索所说，额叶区域出现了毫无特征的平台，而这些区域应该会出现强烈的波动。”&lt;p&gt;我真的很喜欢分析规则，这是早期原子时代的悬浮滑板。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cf100clunk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我有一个 Keuffel &amp;amp;埃塞尔计算尺，但它早已消失。查看他们制作的其他一些内容：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Keuffel_and_Esser" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Keuffel_and_Esser&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mindcrime:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我并不“认真”地使用它，甚至说实话，我什至不知道如何使用它。但我去年确实买了一个，目的是学习使用它。为什么？主要是新奇，只是一般的求知欲。不过，我还没有真正有时间深入研究它。 :-(&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;briandw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当我第一次开始飞行训练时，我使用了圆形计算尺。它用于飞行计划中以计算地面速度和其他一些东西。您仍然可以购买一个。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;E6B" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;E6B&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hskalin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在学校制作了自己的计算尺以供娱乐！当时对我来说看起来很酷。如果您搜索“纸质计算尺”之类的内容，该模板仍然存在。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gcr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我设计并 3D 打印了自己的计算尺来帮助我玩 Balatro！&lt;p&gt;Balatro 是一款 Roguelike 生存游戏，您需要在游戏中增加“筹码”和“多”一起满足每轮的要求。您有三次机会抽取足够的资源来生存。我设计了自己的计算尺来帮助智力倍增 - 游戏的大部分乐趣来自于玩家稍微模糊的机制。&lt;p&gt;由于我自己设计了这个计算尺，所以我能够做出一些适合我的需要的非常规设计选择。例如，我的有三个八度，因此它可以表示个位、千位或百万位内的数字。范围，例如；无需跟踪 10 的任意幂。由于它是旋转尺，所以它是环绕的。例如。 353×24 在设备上显示为 8.47，因此您可以将其视为 84700。&lt;p&gt;玩游戏时手里拿着一个物理对象的帮助比我想象的要大。我应该选择一张增加 600 筹码或增加 1.3 倍乘数的卡吗？我是否需要在短期内拿一张牌来清除盲注，或者我是否有足够的资源来起草一张较慢的牌，随着时间的推移会更好地扩展？即使只是看看“芯片”上的标记有多密集，也可以看出“芯片”上的标记有多密集。侧面与“多”设备侧面提供了我的构建需要关注的内容的内心物理感觉。&lt;p&gt;图片和 .STL：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.printables.com&amp;#x2F;model&amp;#x2F;1026662-jimbos-rotary-slide-rule-calculator-for-balatro" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.printables.com&amp;#x2F;model&amp;#x2F;1026662-jimbos-rotary-slide...&lt;/a&gt;&lt;p&gt;Github 存储库：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;gcr&amp;#x2F;balatro-slide-rule" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;gcr&amp;#x2F;balatro-slide-rule&lt;/a&gt;&lt;p&gt;实际的绘图代码使用 Marimo 笔记本，它通过 WASM 在浏览器中托管 Python。看看这里：&lt;a href="https:&amp;#x2F;&amp;#x2F;marimo.app&amp;#x2F;l&amp;#x2F;4i15d7" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;marimo.app&amp;#x2F;l&amp;#x2F;4i15d7&lt;/a&gt;&lt;p&gt;我参加了 Printables 的教育工具竞赛，但其他参赛作品更酷。也许HN会喜欢它。 :-)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CarVac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在高中微积分课上不被允许使用计算器，但我&lt;i&gt;被允许&lt;/i&gt;使用计算尺。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blakblakarak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，但只是作为统治者。它属于我父亲，他从 20 世纪 50 年代开始就是一名航空电子工程师。他在世界各地工作，见证大英帝国的终结。它有一股旧香烟的味道，而且非常破旧和破损。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Enginerrrd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我手表上有一个。  这是一个带有圆形计算尺&amp;#x2F;E6B飞行计算机的公民。  我需要我的老花镜才能使用它，但它很有趣。&lt;p&gt;它可以可靠地让我得到 2 个数字，并且可以准确地猜测出第三个数字。  但是……如果我想一想，我通常都能在脑海中想到这一点。  能够设置一个比率对于单位转换和其他事情来说是很棒的。&lt;p&gt;在你想去的地方开车时，它也非常适合回答这个问题，好吧，如果我以 10 英里/小时的速度快一点，我会更快到达那里，否则在心理上很难做到。&lt;p&gt;根据我的经验，使用计算尺的大部分好处不是来自于使用它，而是来自于像你将要使用计算尺一样思考。   你学会轻松地自由地使用科学记数法，并通过心理估计来获得正确的数量级。&lt;p&gt;虽然只是我的 2 美分，但圆形计算尺就是它所在的地方。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mvdwoord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我有一些来自我父亲的东西，但尽管他很早以前就教过我如何使用它们，但我从未真正使用过它们。不过，如果有机会，我鼓励任何有兴趣的人去波恩（德国）的算术博物馆。它包含大量常规和专用滑尺以及其他（机械）计算设备。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.arithmeum.uni-bonn.de&amp;#x2F;en&amp;#x2F;arithmeum.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.arithmeum.uni-bonn.de&amp;#x2F;en&amp;#x2F;arithmeum.html&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mschaef:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我有六个（包括我父亲大学时的），我很珍惜，但不使用。我喜欢设计的简洁和优雅。 （计算尺的很多运算本质上可以归结为加法、减法和在表中查找函数值。）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xsznix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在 2010 年代的一些高中物理测试中使用了计算尺，只是为了好玩。我因为搞乱了数量级计算而失去了一些分数，但这完全是值得的。此后，我从附近的房地产销售中收集了更多计算尺。我希望更多的人了解它们 - 它们是工程历史中如此简洁而优雅的一部分，这就是我保留它们的原因。&lt;p&gt;不过，我在日常工作中没有使用它们。算盘对于计算棋盘游戏点数和加税等事情更有用。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sebstefan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我出于好奇而买了一个（一位亲戚过去教工程，他很高兴我想要一个，给了我他自己的）&lt;p&gt;我用过几次，当然它有效，...但它不快也不精确，所以我认为 2026 年没有人会用它来提高生产力&lt;p&gt;它放在一个盒子里&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brainwipe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我拥有祖父的计算尺，他是二战期间伦敦北部劳斯莱斯（航空发动机）的工具制造大师。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yiyus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我收集了一些计算尺。我喜欢这些东西。&lt;p&gt;我的年龄还不足以使用它们进行计算，但我发现它们对于解释对数以及如何用对数之和表示乘法非常有用。实际上，我与研究生一起工作，他们&lt;i&gt;应该&lt;/i&gt;知道这些事情，但是通过他们手上的计算尺观看它确实有助于建立直觉。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dgxyz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的。皮克特 N600-ES。有时我会用它来解决问题，因为我可以。保持心智模型新鲜。不过，大多数情况下只使用 HP 42s。&lt;p&gt;我会注意到，直到 1998 年左右我才得到或使用它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gramie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们在 70 年代中后期（在加拿大）的高中学会了使用它们。电子计算器刚刚普及，但并不是每个人都有。&lt;p&gt;我想我可以用它们进行基本计算，尽管我已经很多年没有碰过它们了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Scene_Cast2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我买了一把老式（一战前）圆形计算尺。但它实在是太“神器”了。使用 - 我担心我会损坏它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nhatcher:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;相关（60 条评论，计算尺工作原理）&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45985196"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45985196&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;glkindlmann:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我高中化学教室的前面挂着一把 6 英尺长的 K&amp;E 滑尺，但从未使用过。毕业时（&amp;#x27;91），我问老师我是否可以拥有计算尺，她说“当然”。&lt;p&gt;我现在把它放在办公室里，每年我都会把它带到我在芝加哥大学教授的数据可视化课程上，展示它是如何工作的，并将其作为辅助计算思维的视觉设备的示例来展示（列线图是另一个很好的例子）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zeitgeistcowboy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在 20 世纪 90 年代末的高中时使用过它们……只是为了获得额外的挑战。我有我父​​亲和祖父的，我在车库拍卖会上买了一对。我仍然有一个收藏，但已经很多年没有真正使用它们了。当我的孩子上中学时，我可能会再次把它们拿出来&amp;#x2F;高中数学的乐趣。它们非常适合学习日志规则。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amelius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你的意思是这样的：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.flickr.com&amp;#x2F;photos&amp;#x2F;jonsphotos&amp;#x2F;218609214&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.flickr.com&amp;#x2F;照片&amp;#x2F;jonsphotos&amp;#x2F;218609214&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zkmon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的。我有一个，我一直向孩子们展示如何使用它做数学。在将对数刻度蚀刻到上面后，我还用塑料件替换了损坏的滑块。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gwbas1c:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当我上高中时（20世纪90年代初），黑板上挂着一个巨大的。过去它显然是用于教学的，但它看起来太酷了，以至于没有人愿意删除它。&lt;p&gt;每隔一段时间，老师就会花大约 10-15 分钟来展示如何使用它。每个人都会“哦”和“啊www”然后我们都会笑说我们现在不需要使用它们了，因为我们口袋里都有计算器，它们比把人们送上月球的计算机更强大。&lt;p&gt;了解过去总是很好的，这样我们就可以欣赏我们现在拥有的东西。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jcynix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;昨天在某人的博客上看到&lt;p&gt;[你需要一把厨房计算尺](&lt;a href="https:&amp;#x2F;&amp;#x2F;entropicthoughts.com&amp;#x2F;kitchen-slide-rule" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;entropicthoughts.com&amp;#x2F;kitchen-slide-rule&lt;/a&gt;)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;a4isms:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最近对乳齿象做了一点怀旧威胁。第六张照片是我 1973 年带去高中的计算尺。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;social.bau-ha.us&amp;#x2F;@raganwald&amp;#x2F;115979168665997624" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;social.bau-ha.us&amp;#x2F;@raganwald&amp;#x2F;115979168665997624&lt;/a&gt;&lt;p&gt;虽然计算尺是一项“死技能”，但飞行员通常学习使用一种称为 E6B 飞行计算机的东西，其工作原理与圆形计算尺相同。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;pilotinstitute.com&amp;#x2F;e6b-made-easy&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;pilotinstitute.com&amp;#x2F;e6b-made-easy&amp;#x2F;&lt;/a&gt;&lt;p&gt;我的飞行包里有一个，需要证明其使用熟练程度。当然，如今我们飞行时会携带联网的数字设备，但拥有即使断电也能运行的模拟备份也很重要。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;betaporter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不使用也从未使用过计算尺。我的祖父是一名航空工程师麦克唐纳飞机公司的材料科学家，并在早期太空飞行的隔热罩方面做了很多基础工作（至少我是这么听说的）。他最终被任命为麦道公司院士，当时院士人数还不到 15 名 - 当时该公司在《航空航天杂志》上刊登了整版广告来宣布这一消息。&lt;p&gt;我有他的计算尺，他使用了很长时间。对我来说，它是一个盒子里的谜——我不知道它是如何使用的——但我很珍惜它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;coldpie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我有两三个是从我父亲那里继承的。我从来没有学会使用它们，因为我没有想到我会用它们做什么。  我能想到的一件事是在木工时快速做分数数学（如果我把这块 7.5 英寸的板撕成 4 块，我会有多宽？）但实际上我在木工时实际上并没有做那么多数学。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yial:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我有时仍然会使用我的一个。我想说每个月2-6次。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46871179</guid>
-      <pubDate>Tue, 03 Feb 2026 14:10:21 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46871179</comments>
-    </item>
-    <item>
-      <title>显示 HN：使用 WebAssembly 对不受信任的代码进行沙箱处理</title>
-      <link>https://github.com/mavdol/capsule</link>
-      <description>&lt;p&gt;py: fromcapsule import task @task(name="main",compute="LOW", ram="64MB") def main() -&gt; str: return "Hello from Capsule.ts Tip使用 --verbose 显示实时任务执行详细信息。计算级别决定您的任务接收多少燃料。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Sandboxing untrusted code using WebAssembly&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46871387"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/mavdol/capsule'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>AliSQL：阿里巴巴开源 MySQL，带有向量和 DuckDB 引擎</title>
+      <link>https://github.com/alibaba/AliSQL</link>
+      <description>&lt;p&gt;贡献 AliSQL 8. 另请参阅 AliSQL 发行说明 AliSQL 中的 DuckDB 存储引擎 AliSQL MySQL 8.0 中的矢量索引 DuckDB 官方文档 DuckDB GitHub 存储库详细文章（中文）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; AliSQL: Alibaba's open-source MySQL with vector and DuckDB engines&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46875228"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/alibaba/AliSQL'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;koolala:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;更多地强调这些似乎很重要。使用它的所有限制不是都基于其局限性吗？&lt;p&gt;componentize-py – Python 到 WebAssembly 组件编译&lt;p&gt;+&lt;p&gt;jco – WebAssembly 组件的 JavaScript 工具链&lt;p&gt;我很好奇 Wasi 3.0 跨语言组件将如何实现这样的目标。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/mavdol/capsule</guid>
-      <pubDate>Tue, 03 Feb 2026 14:28:01 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46871387</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;milesward:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哇哈哈哈，我正在与阿里高管开会，讨论他们的云团队和我的云团队之间的合作伙伴关系。我们对该平台进行了概述，了解它包含哪些 API，并且他们展示了 CloudSQL 的 RDS 等效项。我问它运行的是哪个 MySQL 版本，他们辩称它没有运行，他们从头开始重写了它。&lt;p&gt;我想不是。看来我当时的笑是恰当的。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/alibaba/AliSQL</guid>
+      <pubDate>Tue, 03 Feb 2026 18:40:18 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46875228</comments>
     </item>
     <item>
-      <title>Show HN：反向代理模型（应用程序作为客户端、聊天作为服务器和反射）</title>
-      <link>https://github.com/RAIL-Suite/RAIL</link>
-      <description>&lt;p&gt;RAIL 是连接任何应用程序（C#、C++、Python、Node.Native）的通用桥梁。Native Bridge - 实现跨语言通信的本机 DLL。使用 ctypes 加载 RailBridge。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Inverting Agent Model (App as Clients, Chat as Server and Reflection)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46871251"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/RAIL-Suite/RAIL'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>景隆道221号非卖品</title>
+      <link>https://fredbenenson.com/blog/2026/02/03/221-cannon-is-not-for-sale/</link>
+      <description>&lt;p&gt;因此，虽然我通常使用这个博客来写关于在互联网上发现奇怪的事情的文章，但现在是时候写一个关于互联网上的奇怪的东西找到我的故事了。 “他解释说，一家大型经纪公司的房地产经纪人一直在与自称是我们的人合作，而且已经有一份报价。当我最初建议（也许不公平）这感觉像是潜在客户开发时，律师把我拉到一边并为她担保。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; 221 Cannon Road Is Not for Sale&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46873574"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://fredbenenson.com/blog/2026/02/03/221-cannon-is-not-for-sale/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;juancn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;&lt;pre&gt;&lt;code&gt; 像大多数人一样，我一生中也经历过一两次身份被盗的情况。
+&lt;/code&gt;&lt;/pre&gt;
+啊？这并不常见。我认为我从来没有成为过这种情况的受害者，除非这种情况在其他一些国家更为常见？&lt;p&gt;更不用说在身份和所有权受到严格审查的房地产交易中了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wplu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;另一个关于所有权转让骗局的故事：&lt;a href="https:&amp;#x2F;&amp;#x2F;podcasts.apple.com&amp;#x2F;us&amp;#x2F;podcast&amp;#x2F;title-pirates&amp;#x2F;id290783428?i=1000677959786" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;podcasts.apple.com&amp;#x2F;us&amp;#x2F;podcast&amp;#x2F;title-pirates&amp;#x2F;id290783...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;DannyPage:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;拥有远离居住地的空地似乎会带来一些风险。在夏威夷，一名妇女发现一所房子建在错误的地段上，检查人员错过了这一点，直到完工的房子被出售。我很好奇人们是否可以采取其他积极措施来确保他们的土地不会发生这种情况。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.sfgate.com&amp;#x2F;夏威夷&amp;#x2F;文章&amp;#x2F;夏威夷-home-built-on-wrong-lot-to-be-torn-down-19541255.php" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.sfgate.com&amp;#x2F;夏威夷&amp;#x2F;文章&amp;#x2F;hawaii-home-built-on-w...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;teeray:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;定期提醒“身份盗窃”是金融体系在煽动你，让你认为他们的错误决定是你的错吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;emptybits:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;1. 作者的第一句话就让我迷失了：“像大多数人一样，我一生中也曾有一两次身份被盗过。”我很小心并意识到这种可能性，但据我所知，我没有经历过这种情况，“大多数人”也没有经历过这种情况。我知道。 o_O 疯狂的时代。&lt;p&gt;2.我什至不明白在没有验证所有权的情况下如何进行所有权转让。美国的产权制度是分散的还是与其他地方有很大不同？即托伦斯风格&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thekevan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;将 3 个 2x4 沉入地下，然后在一块 4x8 的胶合板上钉上一块高雅的油漆标志，表明该房产不得出售怎么样？&lt;p&gt;这不会阻止每个人，但任何进行尽职调查的房地产经纪人都可能会看到它。如果持续时间足够长，它也会显示在谷歌街景上。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maciekkmrk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;产权保险可以帮助解决这个问题吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lateforwork:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在美国，身份盗窃比其他国家更容易，因为金融交易的目的是方便，而不是安全。您可以出售您拥有的房产，或者将您的全部富达储蓄转移到另一家银行，而无需亲自到场。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rwmj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在英国也很常见，例如：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.bbc.co.uk&amp;#x2F;news&amp;#x2F;uk-england-beds-bucks-herts-63392025" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.bbc.co.uk&amp;#x2F;news&amp;#x2F;uk-england-beds-bucks-herts-63392...&lt;/a&gt;（他花了 4 年时间才收回控球权&lt;a href="https:&amp;#x2F;&amp;#x2F;www.bbc.co.uk&amp;#x2F;新闻&amp;#x2F;文章&amp;#x2F;cwygv79n8x1o" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.bbc.co.uk&amp;#x2F;news&amp;#x2F;articles&amp;#x2F;cwygv79n8x1o&lt;/a&gt;)&lt;p&gt;在这里，您可以向土地注册处注册，如果您的房产有任何询问或试图出售，他们会向您发送电子邮件：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.gov.uk&amp;#x2F;protect-land-property-from-fraud" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.gov.uk&amp;#x2F;protect-land-property-from-fraud&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ajcp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;他还为我兄弟提供了一封假电子邮件：alexanderedwardenenson@out-look.com。请注意微妙的拼写错误 — “Benenson”在电子邮件中没有第二个“n”，并且带有连字符的“out-look.com”域名。&lt;p&gt;您的意思肯定是“&amp;#x27;Benenson”；电子邮件中没有“b”，以及连字符“out-look.com”；域”？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://fredbenenson.com/blog/2026/02/03/221-cannon-is-not-for-sale/</guid>
+      <pubDate>Tue, 03 Feb 2026 16:56:06 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46873574</comments>
+    </item>
+    <item>
+      <title>欧洲寻求美国数字自主权，法国放弃 Zoom 和 Teams</title>
+      <link>https://apnews.com/article/europe-digital-sovereignty-big-tech-9f5388b68a0648514cebc8d92f682060</link>
+      <description>&lt;p&gt;法国政府上周宣布 250 万公务员将停止使用美国的视频会议工具时，提到了其中的一些担忧。微软坚称，“在导致其受制裁官员与微软服务中断的整个过程中，它与国际刑事法院保持着联系。”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; France dumps Zoom and Teams as Europe seeks digital autonomy from the US&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46873294"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://apnews.com/article/europe-digital-sovereignty-big-tech-9f5388b68a0648514cebc8d92f682060'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 26 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kkfx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;欧盟各国政府不想学习一件事：你不会用一个独裁者取代另一个独裁者。具体案例不多说了，法国一直在开发“La Suite”多年来，意大利在新冠疫情期间一直在 GARR 尝试 Jitsi Meet 和 Big Blue Button，但欧盟想要的是创建欧盟 GAFAM，而我们需要的不仅仅是欧盟，而是 FLOSS、自托管、桌面计算。然而，这并不受欢迎，从 eIDAS 2.0 开始，它推动了“超级主权”的发展。适用于臭名昭著的主权 Android 和 iOS 的应用程序钱包，而不是我们多年来使用的智能卡和 USB 读卡器，各个国家多年来都使用它们来登录网上银行，最近还用于签署文件。&lt;p&gt;实质的一点是，他们不想要自由，他们只想像其他人一样偷窃，像其他人一样做生意，而不是做不同的事情。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;quadrifoliate:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这需要走得更远，才能产生轻微的效果。欧盟拥有约 4.5 亿人口（比美国还多），并且没有重要的大型科技公司。他们在很大程度上依赖于美国大型科技公司。&lt;p&gt;我喜欢欧盟软件开发人员对采用 OSS 抱有更多&lt;i&gt;热情&lt;/i&gt;，但在大众或政府层面，除了这些下意识的头条新闻举措之外，似乎没有任何连贯的策略来逐步取代美国科技。&lt;p&gt;作为一个软件消费者，如果欧盟内部采用开放优先的软件标准，我会很高兴。如此庞大的人口规模将迫使美国大型科技公司进行真正的竞争，而不是依赖其垄断力量。但考虑到欧盟历史上的失败，我对这是否真的能够发生感到非常怀疑和悲观。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chaostheory:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在我看来，即使没有特朗普，这也是不可避免的。他只是大大加速了这一过程。&lt;p&gt;全球主义的终结也标志着全球互联网的终结以及向区域互联网的过渡。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stronglikedan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哈哈，“欧洲”并不寻求任何类似的东西。也许是法国，还有其他几个国家，但距离整个欧洲非常非常远。即便如此，相对于整个国家来说，也只是少数人。这甚至不会对资产负债表造成影响。&lt;p&gt;他们会转向什么？我敢打赌它最终会成为 Zoom 或 Teams 的一个分支。这一切都只是戏剧。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wateralien:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;几乎所有企业都需要电子邮件、联系人、日历、实时聊天、视频通话、文档、表格和演示文稿。理想情况下全部链接。大家都需要的这个包的开源基础在哪里？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FpUser:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;逾期已久。在这么多领域依赖一个国家是多么愚蠢&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[dupe] 一周前的讨论：&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46767668"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46767668&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lefstathiou:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为一名美国人，我会赞同特朗普在达沃斯的演讲。我们想要强大的盟友，而不是附庸。能够建造自己的电动汽车、自己的火箭、自己的战斗机、自己的地铁系统、自己的变焦替代方案、自己的搜索引擎、自己的操作系统等等。&lt;p&gt;让欧洲再次伟大。带回创造力。带回工作岗位。建立一支留在当地而不是移民到美国的优秀劳动力队伍。独立。站得高高的。做所有这些事情，最好现在就做。&lt;p&gt;美国和中国的崛起不应该是零和游戏。它应该提升世界。欧洲开辟了我们共同遵循的道路。回来再说吧。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jgbuddy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在发生停电之前，这都是有趣的游戏，没有什么比国有科技公司更高效的了&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jt2190:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;法国政府……上周宣布，到 2027 年，250 万公务员将停止使用美国提供商的视频会议工具（包括 Zoom、Microsoft Teams、Webex 和 GoTo Meeting），转而使用本土服务 Visio。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;larsnystrom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;目前，欧洲似乎存在巨大的商机，可以向政府参与者出售开源软件的支持和定制。有人听说过一家在这一领域取得成功的欧洲公司吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stopbulying:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果这些美国软件公司被一个或多个欧盟领土法西斯地禁止竞争，它们是否仍有义务遵守欧盟的限制和法律要求？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lenerdenator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果他们在 2008 年对俄罗斯天然气采取同样的做法就好了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;firefoxd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;收购后，我们正在从 Google Meet 和 Slack 过渡到 Teams。我曾经非常讨厌松弛，因为它们的随机功能左右弹出，菜单四处移动。哦，我不知道我们的表现有多好。&lt;p&gt;与 Teams 相比，Slack 更令人愉悦。我并不是唯一一个这样做的人，每个人都在利用松弛，直到它被从我们手中夺走。所以上帝啊，帮帮我吧，有人再提一次副驾驶吗……&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;999900000999:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好的。开源解决方案是存在的，需要投资。&lt;p&gt;希望整个欧盟能够团结起来支持这一点。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rayiner:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;赞成什么？我完全支持经济民族主义，但你必须有有竞争力的本土替代方案。欧洲有吗？或者他们会抵制最好的产品，在生产力方面搬起石头砸自己的脚吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Brian_K_White:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不会预料到我国政府的变坏会对软件和网络服务领域产生如此积极的副作用。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tyre:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为一名美国人，看到这一点真是太棒了。&lt;p&gt;我们应该为放弃善意的全球参与而付出代价。经济损失确实是这个由三个穿风衣的公司组成的美国的核心关键。&lt;p&gt;我们已经看到公司和首席执行官支付数百万美元的贿赂以接近总统。现在，这使他们的经济利益与我们外交政策的转变保持一致。这不是它应该如何运作，但这就是我们所拥有的世界。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lencastre:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这一定好得令人难以置信，但想象一下，至少有一个主要经济体处于领先地位&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BurningFrog:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请注意，这仅涉及欧洲&lt;i&gt;政府&lt;/i&gt;选择不使用美国软件的情况。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pcj-github:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对他们有好处！  作为一名美国公民，我正在努力做同样的事情。  关闭我的 Gmail 帐户并转向 ProtonMail。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;j_maffe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;老实说，特朗普所做的一切最终可能会让世界变得更美好。美国霸权确实走到了尽头。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;clot27:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么这些会议应用程序有没有开源替代品呢？ （可自托管）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hvb2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;前几天的对话：
+&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46767668"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46767668&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spicyusername:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;遗憾的是，如此多的美国公民没有看到他们的政治决策的后果。&lt;p&gt;这些行动中的每一项都是世界所采取的垫脚石，是美国政治疏忽的直接后果。无论造成这一结果有多困难，扭转局面的难度都将是十倍或百倍。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pelagicAustral:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令人耳目一新。没有更多的团队了吗？听起来像一个梦想......在我被迫使用的所有垃圾软件中，Teams 确实以各种可以想象的负面方式挑战了极限。我认为我对 SharePoint 的喜爱多于对 Teams 的喜爱，这是一个巨大的让步。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://apnews.com/article/europe-digital-sovereignty-big-tech-9f5388b68a0648514cebc8d92f682060</guid>
+      <pubDate>Tue, 03 Feb 2026 16:39:18 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46873294</comments>
+    </item>
+    <item>
+      <title>千字节正好是 1000 字节</title>
+      <link>https://waspdev.com/articles/2026-01-11/kilobyte-is-1000-bytes</link>
+      <description>&lt;p&gt;为什么1000仍然更有意义。为了便于说明，我们增加单位： 单位 十进制值 二进制值 相对差 千 1000 1024 2. 当硬件制造商（例如 HDD 或 SSD）以十进制单位宣传内存容量，而操作系统可能以二进制单位显示时，经常会出现此问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Kilobyte is precisely 1000 bytes&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46873539"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://waspdev.com/articles/2026-01-11/kilobyte-is-1000-bytes'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 18 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;talles:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我拒绝说“kibibyte”大声说出来&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lr1970:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;lt;笑话&amp;gt;  如何区分软件工程师和真正的软件工程师？真正的工程师认为 1 KB 是 1000 字节，而软件工程师则认为一公里有 1024 米:-) &amp;lt;&amp;#x2F;笑话&amp;gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sebtron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一公制千字节等于 1000 字节。另一方面，英制千字节为 5280 字节。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pif:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于所有评论的人来说，好像“公斤”的含义是“千”。开放讨论……你们都来自美利坚合众国，你们称自己的国家为“美国”，对吧？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nayuki:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 1 KB 正好是 1000 字节&lt;p&gt;同意。对于那些反对者，请考虑以下问题：&lt;p&gt;* 您有 1“MB”的空间。 1 MHz 系统总线上的 RAM，每个时钟周期可传输 1 个字节。读取整个内存需要多少秒？&lt;p&gt;* 您有 128“GB”内存RAM 和您有一个空的 128 GB SSD。您可以通过将所有 RAM 存储在 SSD 上来成功休眠计算机系统吗？&lt;p&gt;* 我的相机拍摄 6000×4000 像素 = 正好 24 兆像素。如果您假设 RGB24 颜色（每个像素 3 字节），那么存储一个没有标头的原始位图图像矩阵需要多少 MB 的 RAM 或磁盘空间？&lt;p&gt;SI 定义是正确的：千 - 始终表示一千，兆 - 始终表示一百万，等等。计算机行业滥用了这些定义，因为 1000 接近 1024，造成了无尽的混乱。当一个“兆赫兹”的辐射强度达到一定程度时，这是一种愚蠢的自残行为。时钟速度的兆与“兆字节”不同。内存。 IEC 60027 前缀是正确的：当 kibi- (Ki) 定义为 1024 时，没有歧义，并且它可以与 kilo-（意思是 1000）共存。&lt;p&gt;公制系统的全部要点是创建通用单位，其含义不会根据上下文而改变。将 kilo- 重载（如方法重载）表示 1000 和 1024 违反了这一原则。&lt;p&gt;如果您想涉足上下文相关单位的糟糕旧世界，那么传统的测量方法就是最佳选择。国际英里还是海里？英镑是特洛伊镑还是特洛伊镑？磅力还是磅质量？美国加仑还是英国加仑？美国儿童、女士或男士鞋码？短吨还是长吨？您是否知道，就在几个世纪前，每个城镇对英尺和磅都有不同的定义，这使得贸易变得不必要的复杂化，并引发了公开的骗局和欺诈？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每当这个讨论出现时，我都想指出，即使在计算机行业，像 kilo&amp;#x2F;mega&amp;#x2F; 等这样的前缀通常意味着 10 的幂而不是 2 的幂：&lt;p&gt;我在帖子中给出了一些例子 
+&lt;a href="https:&amp;#x2F;&amp;#x2F;blog.zorinaq.com&amp;#x2F;十进制前缀比二进制前缀更常见&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;blog.zorinaq.com&amp;#x2F;十进制前缀-are-more-common-th...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;encomiast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当我购买 2x4 时，我曾在 Lowes 尝试过这种方法。大约同样有效。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;none_to_remain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢 GNU coreutils 的做法。默认情况下，它们使用真实的 1024 字节千字节，但仅打印前缀的缩写，因此它只是 10K 或 200M，人们可以假装它代表其他一些愚蠢的单词（如果他们愿意）。&lt;p&gt;您可以使用 `--si` 来表示假的 1000 字节千字节 - 尝试一下，这些以小写形式报告似乎很奇怪&amp;#x27;k&amp;#x27;但是“M”等等保持大写。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cmovq:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;错误在于使用了“Kibi”。前缀。 “千字节”只是大声说出来听起来有点傻。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jasperry:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我原则上同意，但是其他人是否觉得说“mebibyte”超级尴尬？和“吉比字节”？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mc32:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;让我烦恼的一件事是：&lt;p&gt;为什么千字节不继续表示 1024，并引入千字节表示 1000。字节对我来说意味着二进制数字系统，如果您想引入新的术语来减少混乱，请给新名称一个新名称，并让其领域中更流行的旧名称保留旧名称......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;astrobe_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;...而黑客恰恰是网络犯罪分子。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;quotemstr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;已经太晚了。 2 的幂获胜。我是那种用“谁”来说话的人。英文，但即使我也承认使用“KB”表示 1,000，而不是 1,024，只会造成混乱。语言的目的是交流。当迂腐与清晰兼容时，我完全赞成迂腐，但我们在这里无法调和这两个目标。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kmm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;兆字节精确地取决于上下文 1000x1000=1,000,000 或 1024x1024=1,048,576 字节*，除非您谈论的是经典的 3.5 英寸软盘，其中“1.44 MB”表示代表 1440x1024 字节，或大约 1.47 true MB 或 1.41 MiB。&lt;p&gt;* 是的，我读了这篇文章。不管 IEC 的崇高尝试如何，在我与人和计算机打交道的这些年里，我从未听到有人真正将 MiB（或完整写出来）发音为“mebibyte”。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nerdsniper:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;编辑：我错了。较早的经验纠正了我的错误——始终存在歧义（可能在 CPU&amp;#x2F;OS 和存储域之间存在分歧）。 “而且信心十足！”确实如此。如果您想自己追踪一些事实，这里有一些关于早期可移动媒体的资源：&lt;a href="https:&amp;#x2F;&amp;#x2F;ub.fnwi.uva.nl&amp;#x2F;computermuseum&amp;#x2F;diskettes.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ub.fnwi.uva.nl&amp;#x2F;computermuseum&amp;#x2F;diskettes.html&lt;/a&gt;（我不知道它们是如何营销的）&lt;p&gt;IBM Diskette 1：242,944&lt;p&gt;这篇文章提出了一厢情愿的想法。愿望是“千字节”。具有一种意义。在其存在的大部分时间里，它只有一个含义——1024 字节。现在它有一个模糊的含义。人们希望有一个明确的术语来表示 1000 位，但这个词并不存在。人们还可能希望其他人在引用 1024 字节时都使用 kibibyte，但这也是一厢情愿的想法。&lt;p&gt;作者的一厢情愿被错误地呈现为事实。&lt;p&gt;我认为 kilobyte 是错误的词来表示 1024 字节，我很想回到过去告诉计算机科学家，他们需要发明一个新的前缀来表示“1,024” &amp;#x2F; “2^10”某种东西，千-在千位之前从来没有意味着&amp;#x2F;千字节被发明了。 Kibi- 很好，对于以英语为母语的人来说，语音听起来有点傻，但“bi”是一个很好的例子。表示二进制，我认为这是合理的。&lt;p&gt;我只是不会用一厢情愿的想法来欺骗自己。如果出于傲慢或自以为是，人们简单地假设每次看到“千字节”时都会看到“千字节”。这意味着 1,000 字节 - 那么他们会犯很多很多错误。我们必须始终小心验证“千字节”是否是“千字节”。意味着在实现依赖于正确性的某些内容之前需要 1,000 或 1,024 字节。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dboreham:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只是为了表明虚假信息存在于各个领域。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;recursive:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很惊讶他们没有提到千字节。  （编辑：他们做到了）有很多应用程序都需要 2 的幂对齐。  不解决这个问题并只是惩罚每个人错误地使用单位并不是特别有帮助。  我想除了 HDD 制造商之外，我们都可以切换到千字节。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jachee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“存储供应商更喜欢”的全部原因在于：以 1000 KB 为基础，这样他们就可以歪曲和过度营销其存储容量，从而获得每 KB 24 字节的预期与现实利润。&lt;p&gt;这与屏幕对角线测量的原因相同（纯粹出于营销目的）。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://waspdev.com/articles/2026-01-11/kilobyte-is-1000-bytes</guid>
+      <pubDate>Tue, 03 Feb 2026 16:53:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46873539</comments>
+    </item>
+    <item>
+      <title>启动 HN：Modelence (YC S25) – 使用 TypeScript / MongoDB 框架的应用程序生成器</title>
+      <link>https://news.ycombinator.com/item?id=46872733</link>
+      <description>&lt;p&gt;现在，我们正在使 Modelence 成为第一个为编码代理和人类构建的全栈框架： - TypeScript 已经非常适合 AI 编码，因为它提供了护栏并在构建时捕获许多错误，因此代理可以自动更正 - MongoDB 消除了代理的模式管理问题，这是它们最常失败的地方（+与 TS/Node.be/BPsYvj_nGuET 配合得很好，然后你可以在本地检查它并继续在你自己的 IDE 中工作，同时仍然使用Modelence Cloud 作为您的后端，具有开发云环境，然后在 Modelence Cloud 上部署和运行，并针对应用程序中运行的每个操作提供内置可观察性。我们的主要关注点仍然是平台本身，因为我们认为 AI 编码中的真正挑战是框架和平台，而不是构建工具本身。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Launch HN: Modelence (YC S25) – App Builder with TypeScript / MongoDB Framework&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46872733"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=46872733'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gr4vityWall:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你的框架与 Meteor.js 相比如何？我发现正在解决的问题和正在使用的技术堆栈有相似之处。您有 Modelence 中客户端与服务器通信的惯用方式的示例吗？&lt;p&gt;我认为框架和 AI 代码生成工具之间的界限很模糊。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chaostheory:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不热衷于您的数据存储选择。 Mongodb 引入了很多其他问题。在我看来，模式问题更容易解决&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;koakuma-chan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您可以通过根本没有模式来消除模式管理问题吗？另外，模式管理问题是什么意思？我在使用法学硕士时从未遇到过这个问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Soerensen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;用于 AI 编码的 TypeScript + MongoDB 组合是一个明智的架构选择。我发现无模式数据库减少了代理最常遇到的错误类别 - 需要了解一段时间内的状态的迁移和模式漂移问题。&lt;p&gt;问题：当用户想要扩展内置身份验证时，您如何处理内置身份验证？例如，添加未预先配置的 OAuth 提供程序或自定义声明角色逻辑。这是框架支持的扩展点吗？还是用户需要分叉并修改核心身份验证代码？&lt;p&gt;Claude Agent SDK 集成很有趣 - 您是否发现与其他语言相比更适合 TypeScript 生成的特定提示模式？很好奇类型系统是否真的可以帮助代理按预期进行自我纠正。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://news.ycombinator.com/item?id=46872733</guid>
+      <pubDate>Tue, 03 Feb 2026 16:03:21 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46872733</comments>
+    </item>
+    <item>
+      <title>定义安全硬件设计 [pdf]</title>
+      <link>https://people.csail.mit.edu/rachit/files/pubs/safe-hdls.pdf</link>
+      <description>&lt;p&gt;a.;��˻Q�V[ � _y�� �u�W�Spd�5 ��Z��',D ���8 �iLX6�ûGn�P� 6 �} ��B*"M�Fet. b��ЋH^���*�U�7��(&amp;��� �� z�&amp;e. ��N[#� ' 0V��(0b��O�^�r�/ ��8ʗ�V�2�]2Q^$((��dd��FN y��Y �ZhU� 1)T�B(F����ћ* ��, ��n��h��-.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Defining Safe Hardware Design [pdf]&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46873790"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://people.csail.mit.edu/rachit/files/pubs/safe-hdls.pdf'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bob1029:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就集成机制而言，其人体工学效果很好。只要反射调用的时间在几十毫秒范围内，我就不会担心性能。&lt;p&gt;我认为最大的担忧是类型和类型的数量。对于大多数实际项目来说，方法过于庞大。 LLM 代理在超过 10 个工具左右时就会崩溃。考虑一下从 10000 多种方法中选择正确方法的可能性，即使有强烈的偏向于正确的路径。很多人工智能集成的痛苦是仔细地符合环境的原始性质，这样我们就不会压垮模型的代币预算（或我们的个人预算）。&lt;p&gt;我会考虑公开一组约 3 个通用工具，例如：&lt;p&gt;&lt;pre&gt;&lt;code&gt; SearchTypes 
-  获取类型信息 
-  执行脚本
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;contingencies:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于分立设计而不是集成芯片设计，KiCad 中已经内置了一些不太正式的类型系统，例如使用网络类别、封装类别和引脚数来限制参数选择。我怀疑其他设计工具也类似。&lt;p&gt;强类型系统需要零异常域，但不幸的是，物理并不像软件那样是零异常域：总是有一个奇怪的要求，必须满足供应链、生产过程或合作伙伴、最终组装、测试、操作环境等方面的差异。&lt;p&gt;根据我的经验，在棘手的领域中，您往往会看到多个重叠的轻松形式的系统，它们可以在保持可理解性的同时完成工作。通过减少认知负荷。即，“有用的近似”。在离散设计中，我们可以将标准的形式体系（符号、封装、网表等）视为宽松的类型系统示例。&lt;p&gt;每个都有问题。随着时间和包装的不同，每一个都会有所不同。然而，经过几十年的演变，它们仍然是事物通常的设计方式，而且我认为手动离散设计不会很快超出相对琐碎的范围。&lt;p&gt;事实上，根据时代精神，我敢打赌，人们在试图超越现状进入人工智能设计的原理图、电路板布局和固件时遇到的问题类似于您的未来类型系统将在彻底形式化时遇到的问题。&lt;p&gt;虽然我没有设计经验定制硅，显然是这里的预期领域，但我对此持怀疑态度，可以打赌它不会出现我们在分立电子器件中看到的棘手问题：也就是说，物理学不会让你任意选择而不报复，因此将你的系统视为简单的乐高积木系统（尽管“保证类型兼容”）永远不会产生可靠的结果。具体决策可能需要跨热模型、EMI 辐射、时序和功率的多学科见解，而不仅仅是“插头配合”。使变化更加复杂的是社会摩擦和时间摩擦。我敢打赌，更强大的设计师会在当前的工具上投入大量资金（见鬼，他们可能会写它），并且没有足够的时间去尝试新的东西，因为“学术界”。他们的项目成本高昂，而且常常安排得很困难。&lt;p&gt;祝你好运，改变世界！也许构建专门针对人工智能设计领域的增强型系统将是最好的方法，因为吸收速度会比人类更快？也许可以考虑加入一家人工智能设计我的董事会初创公司。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fooblaster:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我真的很高兴看到蓝色规范近年来完全开源。有没有人有过用它来完成一个不平凡的项目的经验？它在真正的硅开发中还有任何吸引力吗？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://people.csail.mit.edu/rachit/files/pubs/safe-hdls.pdf</guid>
+      <pubDate>Tue, 03 Feb 2026 17:12:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46873790</comments>
+    </item>
+    <item>
+      <title>Show HN：Octosphere，一种分散科学出版的工具</title>
+      <link>https://octosphere.social/</link>
+      <description>&lt;p&gt;链接您的八达通个人资料 — 连接您的八达通作者页面。同步您的出版物 — 选择一次性同步或启用未来出版物的自动同步。开始使用 ORCID。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Octosphere, a tool to decentralise scientific publishing&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46873782"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://octosphere.social/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gnarlouse:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;将它们整合到同行评审流程中，你就得到了一个颠覆者&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;verdverm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您是否了解 Bluesky 的研究人员目前正在努力在 ATProto 上构建新的研究人员平台？ （暂时忘记项目名称）&lt;p&gt;如果没有，那里有相同的句柄，我可以让您与他们联系。或者联系鲍里斯，他认识每个人，并且很乐意建立联系&lt;p&gt;即将举行的 ATProto 和 ATProto 会议还有一整天的时间。科学相关的事情。我认为他们更多地谈论话语（？）&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://octosphere.social/</guid>
+      <pubDate>Tue, 03 Feb 2026 17:11:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46873782</comments>
+    </item>
+    <item>
+      <title>Tadpole – 专为网页抓取而构建的模块化且可扩展的 DSL</title>
+      <link>https://tadpolehq.com/</link>
+      <description>&lt;p&gt;标题为“示例”的示例部分终端窗口tadpole 运行 redfin。 kdl 输出 import "modules/redfin/mod.search text="=text" wait_until redfin.kdl 输出 import "modules/redfin/mod.search text="=text" wait_until redfin.kdl&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Tadpole – A modular and extensible DSL built for web scraping&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46873133"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://tadpolehq.com/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bobajeff:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我必须查找 KDL 是什么以及“功能源许可证，版本 1.1，ALv2 未来许可证”是什么。&lt;p&gt;所以 KDL 就像另一个 JSON 或 Yaml。
+FSL-1.1-ALv2 是一个几乎但不是真正的开源许可证，2 年后可在真正的开源许可证下使用。这是为了防止公司或其他公司的免费加载。实际上对我来说听起来不错。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zachperkitny:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你好！&lt;p&gt;我想分享我最近的项目：Tadpole。它是一种构建在 KDL 之上的定制 DSL，专门用于网页抓取和浏览器自动化。我希望有一种标准化的方式来编写爬虫并重用现有的爬虫逻辑。这是我的解决方案。&lt;p&gt;为什么？&lt;p&gt;&lt;pre&gt;&lt;code&gt; 抽象：通过高级组合动作模拟现实的人类行为（贝塞尔曲线、缓动）。
+    零配置：直接通过 Git 导入和共享抓取模块，绕过 NPM&amp;#x2F;注册表开销。
+    可重用性：可以通过槽组合操作和评估器来创建更复杂的工作流程。
+
 &lt;/code&gt;&lt;/pre&gt;
-这将您的基准代币预算每次限制在一个非常合理的起点。&lt;p&gt;我还会考虑诸如明确选择加入方法和 POCO 进行代理检查的属性之类的方案。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Ahnonimus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;三成f05&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/RAIL-Suite/RAIL</guid>
-      <pubDate>Tue, 03 Feb 2026 14:16:49 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46871251</comments>
+示例&lt;p&gt;这是一个完全运行的示例，@tadpole&amp;#x2F;cli 发布在 npm 上：&lt;p&gt;tadpole run redfin.kdl --input &amp;#x27;{"text": "Seattle, WA"}&amp;#x27; --auto --output output.json&lt;p&gt;&lt;pre&gt;&lt;code&gt; import "modules"redfin"mod.kdl" repo=“github.com&amp;#x2F;tadpolehq&amp;#x2F;社区”
+
+  主要{
+    新页面{
+      redfin.search 文本=“=文本”
+      等待直到
+      redfin.extract_from_card extract_to="地址" {
+        地址{
+          redfin.extract_address_from_card
+        }
+      }
+    }
+  }
+
+&lt;/code&gt;&lt;/pre&gt;
+路线图？
+计划用于 0.2.0&lt;p&gt;&lt;pre&gt;&lt;code&gt; 控制流：添加 Maybe（有效地 try&amp;#x2F;catch）和循环（while {}, do {}）
+    DOMPick：用于按索引选择元素
+    DOMFilter：用于使用评估器过滤元素
+    更多评估器：类型转换、正则表达式、存在
+    根槽：支持顶级动态占位符
+    错误报告：更强大的错误报告
+    日志记录：更一致的操作日志记录并将日志操作添加到全局注册表
+&lt;/code&gt;&lt;/pre&gt;
+0.3.0&lt;p&gt;&lt;pre&gt;&lt;code&gt; 管道：允许不同的文件链接输入和输出。
+    输出：复杂的输出接收到数据库、s3、kafka 等。
+    DAG：使用有向无环图创建复杂的爬行场景和并行计算。
+&lt;/code&gt;&lt;/pre&gt;
+Github 存储库：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tadpolehq&amp;#x2F;tadpole" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tadpolehq&amp;#x2F;tadpole&lt;/a&gt;&lt;p&gt;我还创建了一个用于共享的社区存储库刮刀逻辑：
+&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tadpolehq&amp;#x2F;community" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tadpolehq&amp;#x2F;社区&lt;/a&gt;&lt;p&gt;我们将不胜感激！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://tadpolehq.com/</guid>
+      <pubDate>Tue, 03 Feb 2026 16:29:13 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46873133</comments>
     </item>
     <item>
-      <title>WhatsApp 漏洞导致恶意媒体文件通过群聊传播</title>
-      <link>https://www.malwarebytes.com/blog/news/2026/01/a-whatsapp-bug-lets-malicious-media-files-spread-through-group-chats</link>
-      <description>&lt;p&gt;该漏洞影响 Android 版 WhatsApp，并涉及群聊中的零点击媒体下载。在 Android 设备上打开 WhatsApp。阻止 WhatsApp 将媒体保存到您的 Android 图库 即使 WhatsApp 仍然下载一些内容，您也可以阻止它泄漏到其他应用程序和系统组件可以看到的共享存储中。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A WhatsApp bug lets malicious media files spread through group chats&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46871504"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.malwarebytes.com/blog/news/2026/01/a-whatsapp-bug-lets-malicious-media-files-spread-through-group-chats'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.malwarebytes.com/blog/news/2026/01/a-whatsapp-bug-lets-malicious-media-files-spread-through-group-chats</guid>
-      <pubDate>Tue, 03 Feb 2026 14:38:26 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46871504</comments>
+      <title>显示 HN：带有堆栈协程的 C 离散事件 SIM 运行速度比 SimPy 快 45 倍</title>
+      <link>https://github.com/ambonvik/cimba</link>
+      <description>&lt;p&gt;在使用所有 CPU 核心的情况下，Cimba 运行此场景的速度比 SimPy 快 45 倍。可靠：Cimba 是精心设计的开源软件。我可以用 Cimba 做什么？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: C discrete event SIM w stackful coroutines runs 45x faster than SimPy&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46872818"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/ambonvik/cimba'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anematode:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来真的很酷，今晚我要仔细看看！&lt;p&gt;如何在协程之间进行上下文切换？ getcontext&amp;#x2F;setcontext，或者更特定于体系结构的东西？我目前正在研究一些堆栈协程内容，并且 swapcontext 调用实际上需要相当长的时间，因此我计划编写一个不保留未使用位（信号掩码和 FPU 状态）的自定义协程。所以我对你的发现很好奇&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jerf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当然，虽然速度的提升是真实存在的，但你实际上只是看到了 Python 和 C 之间的总体速度增量。说实话，我有点惊讶你没有得到另一个 2 或 3 的因子。&lt;p&gt;“Cimba 在单个 CPU 核心上每秒处理的模拟事件甚至比 SimPy 在所有 64 个核心上处理的模拟事件还要多”&lt;p&gt;我一点也不关心 Python“修复”问题的原因之一吉尔。当你的语言已经以一定的速度运行时，编译语言可以合理地预期在单核上超过 32 或 64 核上的性能，谁真正关心删除 GIL 是否能让我通过在 8 核上运行而获得 Python 中无线程程序的两倍速度？如果速度很重要，你就不应该使用纯 Python。&lt;p&gt;（让我强调“纯 Python”中的“纯”。有很多方法可以进入 Python 生态系统，但不运行 Python。这些方法都有其复杂的成本与收益权衡，速度范围广泛。我在这里谈论的是纯 Python。）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;quibono:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对事件模拟了解不够，无法深入讨论 API 设计，但我发现堆栈协程方法非常有趣，所以我稍后会看一下代码！&lt;p&gt;您打算接受贡献还是将存储库视为只读源？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/ambonvik/cimba</guid>
+      <pubDate>Tue, 03 Feb 2026 16:09:07 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46872818</comments>
     </item>
     <item>
-      <title>数据经纪人可能助长针对公务员的暴力行为</title>
-      <link>https://www.wired.com/story/how-data-brokers-can-fuel-violence-against-public-servants/</link>
-      <description>&lt;p&gt;总之，这意味着有关公共雇员的信息是唯一可用的，并且他们几乎没有办法阻止其传播。该分析发现，针对当地公务员（包括学校董事会成员和选举工作人员）的暴力威胁占所审查报告的近三分之一。过去，寻找公共记录的人们必须知道该公共记录在哪里，并亲自前往该位置。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Data Brokers Can Fuel Violence Against Public Servants&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46872190"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.wired.com/story/how-data-brokers-can-fuel-violence-against-public-servants/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.wired.com/story/how-data-brokers-can-fuel-violence-against-public-servants/</guid>
-      <pubDate>Tue, 03 Feb 2026 15:28:59 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46872190</comments>
+      <title>Show HN：我构建了“AI Wattpad”来评估小说方面的法学硕士</title>
+      <link>https://narrator.sh/llm-leaderboard</link>
+      <description>&lt;p&gt;2026 年创意写作的最佳人工智能模型看看哪些人工智能模型真正让读者着迷——基于真实数据，而不是综合基准我们的架构每部小说都使用三个专门的人工智能模型一起工作。比较每个角色的表现，以了解哪些模型擅长不同的创意写作任务。头脑风暴模型创建概念、情节和世界构建作家模型编写章节和叙述内容记忆模型维护故事背景并回忆信息想要查看特定模型的基准。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: I built "AI Wattpad" to eval LLMs on fiction&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46873742"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://narrator.sh/llm-leaderboard'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bccdee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我看了一下“最受好评”的故事。&lt;p&gt;1.用户界面太糟糕了。段落之间相距极远，并且大多数段落都是 1 个短句（例如“I glare.”）。在移动设备上，我一次只能看到几个单词，桌面设备也好不了多少。&lt;p&gt;2.故事太糟糕了，一点也不有趣。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;linolevan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;快速反馈：网站在手机上基本无法使用&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://narrator.sh/llm-leaderboard</guid>
+      <pubDate>Tue, 03 Feb 2026 17:08:43 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46873742</comments>
+    </item>
+    <item>
+      <title>空中客车公司大举押注开式转子发动机的下一步</title>
+      <link>https://aerospaceamerica.aiaa.org/the-next-steps-for-airbus-big-bet-on-open-rotor-engines/</link>
+      <description>&lt;p&gt;保持最新动态 提交您的电子邮件地址以接收最新的行业和美国航空航天新闻。最新消息 100、75、50 和 25 年前的 2026 年 2 月 2026 年 2 月 3 日 论文称，电动飞机中的电池放置可能会影响操控性和舒适性 2026 年 1 月 28 日，尽管商用飞机和国防部门出现亏损，波音公司仍公布了第四季度利润 2026 年 1 月 27 日 LinkedIn Instagram Facebook Threads X (Twitter)。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The next steps for Airbus' big bet on open rotor engines&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46872238"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://aerospaceamerica.aiaa.org/the-next-steps-for-airbus-big-bet-on-open-rotor-engines/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Stevvo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;安东诺夫 An-70 已使用“开式转子”服役发动机已有 30 多年的历史。它在各方面都优于西方同行。即比 C-130 或 A400M 具有更高的速度和有效载荷，同时油耗更少。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zabzonk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这不是像带有更大螺旋桨的涡轮螺旋桨飞机（已经非常高效）吗？我无法从这篇文章中看出，但很可能错过了一些东西。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AnotherGoodName:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是动量和能量之间权衡的一部分，为了提高效率，您应该以尽可能低的速度移动尽可能高的空气质量。&lt;p&gt;当您将能量放入大量空气中时，您会传递 1&amp;#x2F;2 MV^2 的能量，即动能方程，您可以将其视为在发动机排气时加速到给定速度时留在空气中的能量。 V^2 部分是一个杀手锏。这根本不会直接转化为动量，获得动量的最节能方式是使用大质量加速到低速度。实际上，您可以通过使飞机保持向上的机翼来看到这一点。机翼通过以相对较低的速度移动大量空气来提供足够的动量来支撑飞机的重量，这为获得向上动量牺牲了很少的能量。&lt;p&gt;因此，飞机上的发动机变得越来越大，速度也越来越慢。这是基础物理学，旨在以尽可能低的实际速度移动尽可能高的质量。 737 MAX 问题是在最初不是为其制造的机身上添加巨型发动机的一个例子，因为驱动装置以尽可能低的速度移动尽可能多的空气，同时仍保持飞机向前移动。多年来，客机速度越来越慢，747 比新型 787 更快，因为我们现在最看重的是效率。当我们沿着这条道路走得更远时，开放刀片变得很有意义。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drivebyhooting:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这不会太吵闹了吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;4fterd4rk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一切旧事又焕然一新……麦道公司研究了螺旋扇的事情。波音公司研究了螺旋桨风扇的事情。现在是空中客车公司转动。 IIRC 这项技术已经准备好多年了，但乘客们却被它吓坏了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bob1029:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我假设该航班的目标市场是欧洲短途航班？&lt;p&gt;在纽约 &amp;lt;-&amp;gt; 等航班上洛杉矶航班 我无法想象涡轮螺旋桨飞机在任何性能或舒适度方面都能击败 737。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;inhumantsar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;空中客车公司还在评估对最靠近发动机的机身区域进行屏蔽，以最大程度地降低叶片脱落的风险——一个或多个复合材料叶片断裂，这可能会使机身凹陷或刺穿，在最坏的情况下，会击中乘客。&lt;p&gt;看起来很可怕&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://aerospaceamerica.aiaa.org/the-next-steps-for-airbus-big-bet-on-open-rotor-engines/</guid>
+      <pubDate>Tue, 03 Feb 2026 15:31:40 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46872238</comments>
+    </item>
+    <item>
+      <title>Show HN：PII-Shield – 具有 JSON 完整性的日志清理 Sidecar（Go、Entropy）</title>
+      <link>https://github.com/aragossa/pii-shield</link>
+      <description>&lt;p&gt;安装 Docker 从 Docker Hub 获取最新的轻量级镜像： docker pull thelisdeep/pii-shield:latest 配置 请参阅配置。将 PII-Shield 二进制文件复制到共享卷 initContainers: - name: install-shield image: thelisdeep/pii-shield:latest command: ["cp", "/bin/pii-shield", "/opt/bin/pii-shield"] volumeMounts: - name: bin-dir mountPath: /opt/bin # 2. 运行您的应用程序并通过 PII-Shield 容器传输日志： - name: my-app image: my-app:1.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: PII-Shield – Log Sanitization Sidecar with JSON Integrity (Go, Entropy)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46873308"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/aragossa/pii-shield'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://github.com/aragossa/pii-shield</guid>
+      <pubDate>Tue, 03 Feb 2026 16:40:12 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46873308</comments>
+    </item>
+    <item>
+      <title>迁移向导 – 基于 IMAP 的电子邮件迁移工具</title>
+      <link>https://migratewizard.com/#features</link>
+      <description>&lt;p&gt;零停机时间在迁移过程中继续使用您的电子邮件。增量同步在初始迁移后保持电子邮件同步。准备迁移您的电子邮件。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Migrate Wizard – IMAP Based Email Migration Tool&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46873885"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://migratewizard.com/#features'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Terretta:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢 imapsync：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;imapsync.lamiral.info" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;imapsync.lamiral.info&lt;/a&gt;&lt;p&gt;这就是项目过去的样子，而且令人惊讶的优秀项目仍然如此。&lt;p&gt;其中内置的知识量令人难以置信：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;imapsync.lamiral.info&amp;#x2F;S&amp;#x2F;news.shtml" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;imapsync.lamiral.info&amp;#x2F;S&amp;#x2F;news.shtml&lt;/a&gt;&lt;p&gt;&amp;#x2F;&amp;#x2F; 2024 年，imapsync 每月传输 1400 万至 2100 万个邮箱，占所有电子邮件流量的 0.22%&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;newscracker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它没有在隐私政策页面中明确说明有关电子邮件内容的任何内容。人们通常相信他们的电子邮件提供商不会窥探他们的电子邮件。我想知道为什么任何人都应该信任基于云的服务（例如这个）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bm3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我确信 MigrationWiz 人员会欣赏您的名字。&lt;p&gt;我也无法想象现在对仅 IMAP 电子邮件迁移服务的需求有多大。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;digiown:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您知道，与仅使用 Thunderbird 或其他 MUA 将电子邮件复制到新邮箱相比，此工具有什么优势？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;techstuff123:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;迁移向导是一种快速、安全的 IMAP 电子邮件迁移服务，可帮助开发人员和团队在提供商之间移动电子邮件数据，且停机时间为零。&lt;p&gt;它支持大型邮箱，保留完整的数据完整性，无需设置，并且可与任何 IMAP 兼容的电子邮件服务配合使用。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://migratewizard.com/#features</guid>
+      <pubDate>Tue, 03 Feb 2026 17:19:47 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46873885</comments>
+    </item>
+    <item>
+      <title>Y Combinator 将让创始人获得稳定币资金</title>
+      <link>https://fortune.com/2026/02/03/famed-startup-incubator-y-combinator-to-let-founders-receive-funds-in-stablecoins/</link>
+      <description>&lt;p&gt;他补充说，Y Combinator 可能会根据需求扩展到其他稳定币。但是，Y Combinator 的访问合伙人 Dalal 表示，看跌前景并不适用于稳定币。 “人们对稳定币的兴趣正在与日俱增，”他说。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Y Combinator will let founders receive funds in stablecoins&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46875033"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://fortune.com/2026/02/03/famed-startup-incubator-y-combinator-to-let-founders-receive-funds-in-stablecoins/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;grim_io:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么不在我们讨论的时候用黄金呢？&lt;p&gt;两者都同样愚蠢，你必须交换它们才能购买你可能需要的大部分东西。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://fortune.com/2026/02/03/famed-startup-incubator-y-combinator-to-let-founders-receive-funds-in-stablecoins/</guid>
+      <pubDate>Tue, 03 Feb 2026 18:28:48 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46875033</comments>
+    </item>
+    <item>
+      <title>我提出了 20 项 GDPR 删除请求。 12 被忽略</title>
+      <link>https://nikolak.com/gdpr-failure/</link>
+      <guid isPermaLink="true">https://nikolak.com/gdpr-failure/</guid>
+      <pubDate>Tue, 03 Feb 2026 17:48:22 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46874345</comments>
     </item>
   </channel>
 </rss>
