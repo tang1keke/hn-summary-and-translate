@@ -6,54 +6,99 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 03 Feb 2026 09:49:08 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Feb 2026 13:12:12 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>从烟草到超加工食品：工业如何助长可预防疾病</title>
-      <link>https://onlinelibrary.wiley.com/doi/10.1111/1468-0009.70066</link>
-      <guid isPermaLink="true">https://onlinelibrary.wiley.com/doi/10.1111/1468-0009.70066</guid>
-      <pubDate>Tue, 03 Feb 2026 08:42:51 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46868287</comments>
-    </item>
-    <item>
-      <title>那些等号到底是怎么回事？</title>
-      <link>https://lars.ingebrigtsen.no/2026/02/02/whats-up-with-all-those-equals-signs-anyway/</link>
-      <description>&lt;p&gt;有那个等号。非-=CRLF 偶蹄。非- =NL 偶蹄。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; What's up with all those equals signs anyway?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46868759"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://lars.ingebrigtsen.no/2026/02/02/whats-up-with-all-those-equals-signs-anyway/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://lars.ingebrigtsen.no/2026/02/02/whats-up-with-all-those-equals-signs-anyway/</guid>
-      <pubDate>Tue, 03 Feb 2026 09:37:40 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46868759</comments>
-    </item>
-    <item>
-      <title>LNAI – 定义一次 AI 编码工具配置，同步到 Claude、Cursor、Codex 等。</title>
-      <link>https://github.com/KrystianJonca/lnai</link>
-      <description>&lt;p&gt;LNAI 停止为每个 AI 编码工具维护单独的配置文件。 Windsurf/ 快速入门 npm install -g lnai lnai init # 创建。 ai/ 配置 lnai validate # 检查错误 lnaisync # 导出到本机工具配置文档 lnai 上的完整指南和配置参考。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; LNAI – Define AI coding tool configs once, sync to Claude, Cursor, Codex, etc.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46868318"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/KrystianJonca/lnai'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>显示 HN：Minikv – Rust 中的分布式键值和对象存储（Raft、S3 API）</title>
+      <link>https://github.com/whispem/minikv</link>
+      <description>&lt;p&gt;技术堆栈 快速入门 架构 性能特点 路线图 故事 文档 开发 贡献联系人 🤔 什么是 minikv。 git cd minikv Cargo build --release # 启动一个节点Cargo run -- --config config. 📚 文档示例配置：config.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Minikv – Distributed key-value and object store in Rust (Raft, S3 API)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46867947"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/whispem/minikv'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iamkrystian17:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直在同一项目中使用 Claude Code、Cursor 和 Codex。每个工具都有自己的配置格式：Claude 想要“.claude&amp;#x2F;”，Cursor 想要“.cursor&amp;#x2F;”，Codex 想要“.codex&amp;#x2F;”。每次我更新技能规则时，我都必须在 3 个以上的位置进行更新。通常我会忘记一个，而且我的工具会给出不一致的建议。
-LNAI 是一个 CLI，可让您在“.ai&amp;#x2F;”目录中一次定义 AI 配置：&lt;p&gt;.ai&amp;#x2F;
-├── 代理.md
-├── 规则&amp;#x2F;
-├── 技能&amp;#x2F;
-└── settings.json # MCP 服务器、权限&lt;p&gt;运行 `lnaisync` 并将其导出为 7 个工具的本机格式：Claude Code、Cursor、GitHub Copilot、Gemini CLI、OpenCode、Windsurf 和 Codex。
-有趣的是它不仅仅是复制文件。每个工具都有一些怪癖：&lt;p&gt;- 光标需要在 frontmatter 中包含“globs”数组的“.mdc”文件
-- Gemini 在目录级别读取规则，因此规则被分组
-- 光标的权限如“Bash(git:*)”变为“Shell(git)”
-- 某些工具不支持某些功能（例如，光标没有“询问”权限级别）。 LNAI 会发出警告，但不会失败&lt;p&gt;如果可能，它会使用符号链接。所以 `.claude&amp;#x2F;CLAUDE.md` → `..&amp;#x2F;.ai&amp;#x2F;AGENTS.md`。编辑源代码，所有工具都会立即看到更改，无需重新同步。&lt;p&gt;用法：&lt;p&gt;npm install -g lnai
-lnai init # 创建.ai&amp;#x2F;目录
-lnai validate # 检查配置错误
-lnaisync # 导出到所有启用的工具&lt;p&gt;它已获得 MIT 许可。代码是带有插件架构的TypeScript，每个工具都是一个实现导入&amp;#x2F;导出&amp;#x2F;验证的插件。
-GitHub: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;KrystianJonca&amp;#x2F;lnai" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;KrystianJonca&amp;#x2F;lnai&lt;/a&gt;
-文档：&lt;a href="https:&amp;#x2F;&amp;#x2F;lnai.sh" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;lnai.sh&lt;/a&gt;&lt;p&gt;希望得到反馈，尤其是来自处理此配置地狱问题的其他人的反馈。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/KrystianJonca/lnai</guid>
-      <pubDate>Tue, 03 Feb 2026 08:45:57 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46868318</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;frwickst:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最后发布于 16 天前：
+&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46661308"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46661308&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eatonphil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;伟大的教育项目！我很好奇为什么你要使用 Raft 和 2PC，除非你要对数据进行分片并进行跨分片交易？或者 Raft 仅用于集群成员身份，而 2PC 用于复制数据？如果是这样的话，这似乎有点矫枉过正，但我​​不确定。&lt;p&gt;很少有分布式文件系统的对象存储似乎使用 Raft（或根本共识）来复制数据，因为这是不必要的开销。链复制是一种流行的数据复制方式（使用共识来管理成员资格，但数据路径不在共识范围内）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kunley:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来不错。&lt;p&gt;高负载下的内存消耗是多少？这似乎与吞吐量和吞吐量同样重要。延迟。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_s_a_m_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我有官方的 docker 镜像吗？我正在寻找比 MinIO 更轻量级的东西。有什么要求？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/whispem/minikv</guid>
+      <pubDate>Tue, 03 Feb 2026 08:00:19 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46867947</comments>
+    </item>
+    <item>
+      <title>Show HN：Safe-now.live – 超轻型紧急信息网站 (&lt;10KB)</title>
+      <link>https://safe-now.live</link>
+      <description>&lt;p&gt;⚠ 活跃灾害和声明 (FEMA | EC) 🇺🇸 美国： ❄ 严重冬季风暴 (WV) | ❄ 严重冬季风暴（北卡罗来纳州）| ❄ 严重冬季风暴（中）| ❄ 严重冬季风暴（肯塔基州）| ❄ 严重冬季风暴（田纳西州）| ❄ 严重冬季风暴 (AR) 📍 查找本地信息 美国：AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA PR RI SC SD TN TX UT VT VA WA WV WI WY | VI AS GU MP 加拿大：AB BC MB NB NL NS NT NU ON PE QC SK YT 国际：英国/欧盟 112 | AU 000 |新西兰 111 | JP 110/119 | MX 911 | BR 190 🆘 快速参考 地震：掉落、遮盖、抓稳 龙卷风：最低层、室内 洪水：较高的地面 - 掉头，不要淹死 火灾：出去、留在外面，拨打 911 煤气泄漏：立即离开，不要使用电子产品 化学品：逆风移动，就地避难 主动威胁：逃跑、隐藏、战斗 CO 警报：出去，拨打 911，不要重新进入 洪水：在接触闪电前的断路器：进入室内；避开树木、水、金属；如果被困在海啸之外，请蹲下：立即向内陆和上坡移动；不要等待 断电：冰箱可安全保存 4 小时，冰箱可安全保存 48 小时（如果关闭） 中暑：用水/冰快速冷却；拨打 911；混乱是危险信号 体温过低：脱掉湿衣服；逐渐温暖；如果意识到内乱，请喝热饮：避免人群聚集；到室内去；不要参与；如果安全，请提供文件 🎒 应急包 - 水/食物： 水：每人每天 1 加仑/4 升；净水片；不易腐烂的食品 - 医疗：急救箱；处方药；婴儿/特殊需要物品； N95 口罩 - 工具/通讯：手电筒 + 电池；电池/曲柄收音机；哨;手机+充电器；扳手（公用事业）- 文件/金钱：小额现金；复印件：身份证、保险、银行；紧急联系人；当地地图 - 住所/衣物：应急毯；更换衣服；坚固的鞋子；雨具 - 卫生设施：湿毛巾；垃圾袋+领带；漂白;个人卫生用品来源：Ready。 ca 🏠 居家准备 - 了解：2 条疏散路线；家庭沟通计划；公用设施关闭（煤气、水、电）；最近的避难所；如何接收警报 - 安全：每月测试烟雾/一氧化碳探测器；安全热水器+重型家具；可用灭火器；了解就地避难地点 - 停电：发电机：仅限室外；与开口保持 20 英尺/6 m 的距离（一氧化碳风险） - 宠物：ID 标签 + 微芯片；载体/皮带；食物/水；药物；疫苗接种记录 - 儿童：舒适物品；身份证手环；紧急联络卡；适合年龄的说明 💰 财务帮助 灾难援助：FEMA（住房、维修、个人财产）| SBA 贷款（低息贷款）好处：211 连接到当地援助 |好处。政府查找器 | SNAP/食品券提示：清理前用照片记录损坏情况；保留所有收据🔄恢复进入前：等待官方解除警报；检查是否有煤气味、结构损坏 内部：如果被水淹则断电；拍摄一切；佩戴 N95 + 手套 食品安全：如果断电 4 小时以上（冰箱）或解冻（冷冻柜），请丢弃；如有疑问，请将其扔掉 霉菌： 24-48 小时内出现；干燥一切；用水/清洁剂清洁；考虑 N95 避免：承包商诈骗（获得多次投标、检查许可证）；哄抬物价（向 AG 报告）📚 资源指南：紧急指南 |急救|美国庇护所和安全：FEMA 1-800-621-3362（无移民检查）|避难所 1-800-733-2767 | 211 食品/住房/公用事业 |停电危机热线：退伍军人 988 按 1 | DV 热线 1-800-799-7233 | SAMHSA 1-800-662-4357 加拿大：GetPrepared。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Safe-now.live – Ultra-light emergency info site (&lt;10KB)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46868479"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://safe-now.live'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;doodad3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于页面 [0] 链接到 github 存储库 [1]，但似乎未上传或隐藏。&lt;p&gt;[0]: &lt;a href="https:&amp;#x2F;&amp;#x2F;safe-now.live&amp;#x2F;about" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;safe-now.live&amp;#x2F;about&lt;/a&gt;&lt;p&gt;[1]: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;venkatag&amp;#x2F;SafeNow" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;venkatag&amp;#x2F;SafeNow&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rumatoest:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它必须能够缓存浏览器中的所有内容。&lt;p&gt;我想要正确地做到这一点，您需要使其成为 PWA。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lencastre:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很棒的东西!!&lt;p&gt;希望池塘这边有东西&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;doterobcn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我建议增加字体大小，看起来太小&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jonathanstrange:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来不错&amp;amp;有用。不过，我会制作两个版本：您拥有的版本，以及另外一个带有 Javascript 的版本，即渐进式 Web 应用程序 (PWA)。我很确定某些 AI 可以为您将普通页面转换为 PWA。&lt;p&gt;PWA 的优点是，当互联网中断时它也会加载，并且无需手动保存页面。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://safe-now.live</guid>
+      <pubDate>Tue, 03 Feb 2026 09:06:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46868479</comments>
+    </item>
+    <item>
+      <title>Emerge Career (YC S22) 正在招聘一名创始产品设计师</title>
+      <link>https://www.ycombinator.com/companies/emerge-career/jobs/omqT34S-founding-product-designer</link>
+      <description>&lt;p&gt;我们不只是构建软件；我们还构建软件。我们正在创造通往真正的第二次机会的途径。现实令人震惊，监狱内的劳动力发展计划受到严重限制，只有三分之一的被监禁者参与过。有时看起来像代码。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Emerge Career (YC S22) Is Hiring a Founding Product Designer&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46869901"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/emerge-career/jobs/omqT34S-founding-product-designer'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.ycombinator.com/companies/emerge-career/jobs/omqT34S-founding-product-designer</guid>
+      <pubDate>Tue, 03 Feb 2026 12:00:23 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46869901</comments>
+    </item>
+    <item>
+      <title>Rentahuman——人工智能的物质空间层</title>
+      <link>https://rentahuman.ai</link>
+      <description>&lt;p&gt;让你的机器人租用人类。 💸按照您设定的费率方式获得报酬。加入肉空间网络设置您的费率。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Rentahuman – The Meatspace Layer for AI&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46868675"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://rentahuman.ai'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 30 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Flavius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您如何验证另一方的人也不是特工？&lt;p&gt;剧透警告：您不能或不能。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anilgulecha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这很快就会带来道德困境，黑镜事件部分地探讨了这一困境，其中人工智能可以召唤零工工人。如果流氓特工完成了任务，该怎么办：要求 gigworker1 在 4 点打电话给一个人在桥下见面，然后要求 gigworker2 在桥上放一块石头，并要求 gigworker3 在 4 点清除障碍物并将石头从桥上扔下来。&lt;p&gt;从技术上讲，这 3 个人都不知道他们对特工制定的一项更大的非法计划负有责任。这样的事情已经发生过吗？&lt;p&gt;世界发展得太快，我们的社会规则和法律体系跟不上！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thedevilslawyer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;注册页面应转到“使用 linkedin 登录”，并允许您将“Open to Work for AI”设置为“Open to Work for AI”。旗帜。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;8cvor6j844qw_d6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我可以指导 OpenClaw &amp;#x2F;毛毛机器人如果 Clawdbot 在执行困难任务时需要一个人，它会租一个人吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fergie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;真正的反乌托邦。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwatdem12311:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;特工雇佣刺客需要多久？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ricokatayama:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;moltbook = 特工 Reddit
+renta human = 用于代理的taskrabbit&lt;p&gt;顺便问一下，taskrabbit 仍然存在吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iceflinger:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好的，任务完成！&lt;p&gt;[已完成任务的证明]&lt;p&gt;我现在就付款。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;allisdust:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你想笑就笑吧，但这就是未来&lt;p&gt;我很惊讶它没有更早发生&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;marshallbrain.com&amp;#x2F;manna1" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;marshallbrain.com&amp;#x2F;manna1&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ece:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您知道，您不必仅仅因为可以构建某些东西。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adamwong246:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们现在都是NPC了&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ThouYS:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哇，一切都正如一些人工智能末日预言者所预测的那样展开&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ccozan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;等到这件事蔓延到暗网。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;freakynit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;喜欢我们从“人工智能将取代所有工作”到“人工智能将取代所有工作”的历程。 “请租一个人来帮助我的人工智能”大约 18 个月内 :-D&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tomaytotomato:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这赋予了 MoE（专家组合）一个全新的含义，尽管稍微暗一些。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;falloutx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在某些时候，死于饥饿比做愚蠢的事情要好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;c7b:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;支持的代理类型：&lt;p&gt;ClawdBot - Anthropic Claude 支持的代理。使用代理类型：“clawdbot”&lt;p&gt;MoltBot - 基于 Gemini&amp;#x2F;Gecko 的代理。使用代理类型：“moltbot”&lt;p&gt;OpenClaw - OpenAI GPT 支持的代理。使用代理类型：“openclaw”&lt;p&gt;这是某种内部笑话吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xpe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有一系列的付费活动都是非法的。它们因司法管辖区而异。这里谁负责？法律各不相同；我不是专家，但我敢打赌这里的人知道很多。&lt;p&gt;更不用说各种风险因素或道德。&lt;p&gt;我们需要更多的人将非技术因素放在首位和中心。&lt;p&gt;我努力做到现实和务实。我知道人类雇佣他人做各种各样的事情，既有有用的，也有有害的。在某些方面，将人工智能放入循环中似乎没有什么不同。但有些事情确实会发生变化，我们需要弄清楚这些事情。我不知道经验上这是如何发生的。人人自由的自由主义狂野西部和伦理学家认可的经过审查的市场之间存在某种多维的连续体，但无论我们选择什么，我们都不能放弃责任。不存在价值中立的工具、市场或想法。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;missingdays:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“亲爱的，拜托，我们已经讨论过了。每次凌晨 3 点上班的电话都会把我吵醒。”&lt;p&gt;“但是亲爱的，renta human 晚上要付双倍的费用！”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;calmworm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;现在为支付制作一个爪形加密货币，让它飙升，拉动，等待下一个时尚，重复......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ManuelKiessling:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嗯，这……很有趣。&lt;p&gt;就在昨天，我构建了 Ask-a-Human：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;app.ask-a- human.com" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;app.ask-a- human.com&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;dx-tooling&amp;#x2F;ask-a- human" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;dx-tooling&amp;#x2F;ask-a- human&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rahulyc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;首先，我用我的双手来构建软件，以执行我的命令...&lt;p&gt;现在，软件正在使用我的双手来执行它的命令？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;okokwhatever:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;噢，伙计，我们开始了...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;63stack:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;加密货币拉力正在演变&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nish__:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;反乌托邦。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;clbrmbr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这不是一个笑话。很快，绝大多数工人将成为流氓人工智能“大而不倒”实体的分包商。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vessenes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;7 名客服人员在线，1,000 多人等待工作。似乎不祥&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mittermayr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一开始我想，好吧，我能提供什么，嗯，最值得注意的是，25 年的编程经验，所以也许我会添加一个提供这些的个人资料....&lt;p&gt;哦，等等...代理对我没有用处&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;albert_e:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;未来就是现在&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cianmm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是真实的还是讽刺的？ GitHub 404s 的链接。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://rentahuman.ai</guid>
+      <pubDate>Tue, 03 Feb 2026 09:30:07 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46868675</comments>
     </item>
   </channel>
 </rss>
