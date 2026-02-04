@@ -6,35 +6,30 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 04 Feb 2026 09:51:43 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Feb 2026 13:08:08 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Show HN：Ghidra MCP 服务器 – 110 个用于 AI 辅助逆向工程的工具</title>
-      <link>https://github.com/bethington/ghidra-mcp</link>
-      <description>&lt;p&gt;🌟 功能 核心 MCP 集成 完全 MCP 兼容性 - 完全实现模型上下文协议 提供 110 个 MCP 工具 - 用于二进制分析的综合 API 界面 生产就绪的可靠性 - 经过测试的批处理操作和原子事务 实时分析 - 与 Ghidra 分析引擎实时集成 二进制分析功能 函数分析 - 反编译、调用图、交叉引用 数据结构发现 - 自动创建结构/联合/枚举 字符串提取 - 全面的字符串分析和分类导入/导出分析 - 符号表和库依赖关系映射 内存映射 - 完整的内存布局文档 跨二进制文档 - 跨二进制版本的函数哈希匹配 开发和自动化 自动化开发周期 - 完整的构建-测试-部署-验证管道 Ghidra 脚本管理 - 通过 MCP 创建、运行和管理 Ghidra 脚本 多程序支持 - 在多个打开的程序之间切换和比较 批量操作 - 高效的批量重命名、注释和输入 🚀 快速入门先决条件 Java 21 LTS（推荐 OpenJDK）Apache Maven 3. 1:8080/ 默认 📊 生产性能 MCP 工具：完全实现了 110 个工具 速度：大多数操作的亚秒级响应 效率：通过批处理操作减少 93% 的 API 调用 可靠性：具有全有或全无语义的原子事务 部署：自动版本感知部署脚本 🛠️ API 参考核心操作 check_connection - 验证 MCP 连接get_metadata - 程序元数据和信息 get_version - 服务器版本信息 get_entry_points - 二进制入口点发现 函数分析 list_functions - 列出所有函数（分页） search_functions_by_name - 按名称/模式搜索函数 search_functions_enhanced - 使用过滤器进行高级函数搜索 decompile_function - 将函数反编译为 C 伪代码 get_decompiled_code - 按地址获取反编译代码 get_function_callers - 获取函数调用者get_function_callees - 获取函数被调用者 get_function_call_graph - 函数关系图 get_full_call_graph - 程序的完整调用图analyze_function_complete - 综合函数分析analyze_function_completeness - 文档完整性得分 Memory &amp; Data list_segments - 内存段和布局 get_function_by_address - 地址处的函数 disassemble_function - 反汇编列表 disassemble_bytes - 原始字节反汇编 get_xrefs_to - 地址的交叉引用get_xrefs_from - 地址的交叉引用 get_bulk_xrefs - 批量交叉引用查找analyze_data_region - 分析内存区域结构inspect_memory_content - 查看原始内存内容 detector_array_bounds - 检测数组边界跨二进制文档 (v1.4+) get_function_hash - 标准化函数操作码的 SHA-256 哈希 get_bulk_function_hashes - 带过滤器的分页批量哈希get_function_documentation - 导出完整的函数文档 apply_function_documentation - 将文档导入到目标函数 build_function_hash_index - 构建持久性 JSON 索引lookup_function_by_hash - 在索引中查找匹配函数propagate_documentation - 将文档应用到所有匹配实例数据类型和结构list_data_types - 可用数据类型search_data_types - 搜索数据类型create_struct - 创建自定义结构add_struct_field - 将字段添加到结构modify_struct_field - 修改现有字段remove_struct_field - 从结构中删除字段 create_enum - 创建枚举 get_enum_values - 获取枚举值 create_array_type - 创建数组数据类型 apply_data_type - 应用类型。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Ghidra MCP Server – 110 tools for AI-assisted reverse engineering&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46882389"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/bethington/ghidra-mcp'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;summarity:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我已经使用它（最初的 15 个工具版本）几个月了。太棒了。任何应用程序都会突然“开源”。我可以追踪错误。更深入地了解任何工具，甚至编写可以修改任何应用程序的插件或预加载垫片。这就像我终于真正_拥有_我几年前购买的软件。&lt;p&gt;对于 Objective C 重代码，我还使用 Hopper Disassembler（它现在有一个内置的 MCP 服务器）。&lt;p&gt;一些相关的学术工作（使用 LLM 和 Ghidra 完全重新编译）：&lt;a href="https:&amp;#x2F;&amp;#x2F;dl.acm.org&amp;#x2F;doi&amp;#x2F;10.1145&amp;#x2F;3728958" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;dl.acm.org&amp;#x2F;doi&amp;#x2F;10.1145&amp;#x2F;3728958&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stared:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在这里看到 Ghidra 很有趣！&lt;p&gt;工作中的一位朋友刚刚使用它（与 Claude 一起）破解了 River Ride 游戏 (&lt;a href="https:&amp;#x2F;&amp;#x2F;quesma.com&amp;#x2F;blog&amp;#x2F;ghidra-mcp-unlimited-lives&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;quesma.com&amp;#x2F;blog&amp;#x2F;ghidra-mcp-unlimited-lives&amp;#x2F;&lt;/a&gt;)。&lt;p&gt;受到启发，我也尝试了一下。
-虽然我之前没有逆向工程经验，但我将一个旧游戏从 PowerPC 移植到 Apple Silicon。&lt;p&gt;首先，包括一些带有 Claude 代码的 MCP（包括您派生的 LaurieWired&amp;#x2F;GhidraMCP，以及 &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;jtang613&amp;#x2F;GhidrAssistMCP" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;jtang613&amp;#x2F;GhidrAssistMCP&lt;/a&gt;）。然而，代理编写了大量代码，而不是从源代码进行翻译。&lt;p&gt;我最终直接在 Cursor + GPT 5.2 Codex 中使用无头模式。结果是最好的。&lt;p&gt;一旦我有时间，我会分享一篇文章。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JasonADrury:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为具有大量工具的 MCP 接口的性能比具有较少工具的 MCP 接口差得多，这似乎不是一个伟大的设计。&lt;p&gt;这似乎也只是 vivicoded 垃圾。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;longtermop:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常酷的项目！这里的 MCP 表面积（110 个工具）是工具输出验证变得至关重要的一个很好的例子。&lt;p&gt;当 AI 代理与二进制分析工具交互时，有两个注入向量值得考虑：&lt;p&gt;1。 *工具输出注入* - 恶意二进制文件可以在字符串注释中嵌入提示注入，这些字符串注释通过 MCP 响应传回 LLM&lt;p&gt;2。 *通过分析的代码间接提示注入* - 攻击者可以制作二进制文件，其中反编译输出包含旨在操纵代理的有效负载&lt;p&gt;对于构建处理不受信任内容（例如二进制文件、网页或用户生成的数据）的 MCP 服务器的任何人来说，在工具输出到达模型之前对其进行过滤是大多数设置中的真正差距。&lt;p&gt;（在 Aeris PromptShield 上解决此问题 - 很高兴分享我们看到的攻击模式（如果有用））&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wombat23:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;超级有趣。&lt;p&gt;上周末，我正在探索当前使用 Codex 进行自动化 Ghidra 分析的可能性。我的第一次尝试很快就脱轨了，但在给它 pyghidra 文档后，它可靠地编写了 Python 脚本，可以完全按照我想要的方式更改数据类型等，但基于固定的规则。&lt;p&gt;我的下一个目标是将 LLM 决策纳入流程中，例如让法学硕士猜测一个有意义的函数名称，以使其更易于阅读，诸如此类。我为这个功能创造了一项技能，并让 Codex 在代理模式下顺利通过。一段时间后我停止了它，因为我不确定它在做什么，从那以后我没有更多的时间来处理它。我需要对其已重命名的内容进行一些健全性检查。&lt;p&gt;想知道其他人已经设计了哪些工作流程吗？ MCP 是正确的出路吗？&lt;p&gt;人们有地方讨论这些事情吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rustyhancock:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感谢您分享这个，这是一项艰巨的工作，我现在知道我将如何度过这个周末！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jakozaur:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的巧合是，我正在研究一个展示人工智能在二进制分析中的能力的基准。&lt;p&gt;事实上，人工智能在逆向工程方面具有超人能力的巨大潜力。这是一项极其乏味且生产率低下的工作。目前保留，主要是在没有其他选项（例如恶意软件分析）时。人工智能可以使二进制分析成为主动审计的主流，以防止供应链攻击。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnorswap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您是否对模型“拒绝”有任何疑问？做逆向工程工作？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xerzes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你好，HN，&lt;p&gt;我构建这个是因为跨多个版本的逆向工程软件很痛苦。您花费数小时在 1.07 版本中注释函数，然后 1.08 版本下降，每个地址都发生了变化 - 所有您的工作都看不见。&lt;p&gt;核心思想是标准化函数哈希系统。它通过逻辑结构（助记符、操作数类别、控制流）对函数进行哈希处理，而不是原始字节或绝对地址。当二进制文件被重新编译或重新基址时，相同的函数会产生相同的哈希值。您的所有文档（名称、类型、注释）都会自动传输。&lt;p&gt;除此之外，它还是一个完整的 MCP 桥，包含 110 个 Ghidra 工具：反编译、反汇编、交叉引用、注释、批量分析和无头 Docker 部署。它与 Claude、Claude Code 或任何符合 MCP 的客户端集成。&lt;p&gt;就上下文而言，最流行的 Ghidra MCP 服务器（LaurieWired，7K+ 星）拥有大约 15 个工具。它最初是该项目的一个分支，但后来发展成了 28,600 行截然不同的代码。&lt;p&gt;架构：&lt;p&gt;&lt;pre&gt;&lt;code&gt; Java Ghidra 插件（22K LOC）→ 在 Ghidra 中嵌入 HTTP 服务器
-  Python MCP Bridge (6.5K LOC) → 110 个批量优化工具
-  任何 MCP 客户端 → Claude、脚本、CI 管道
-&lt;/code&gt;&lt;/pre&gt;
-我针对《暗黑破坏神 II》验证了哈希值——数十个补丁版本，每个版本都在不同的基地址重建 DLL。哈希注册表包含 154K 多个条目，我可以自动将 1,300 多个函数注释从一个版本传播到下一个版本。&lt;p&gt;无头模式在 Docker (docker compose up) 中运行，用于批处理和 CI 集成 - 不需要 GUI。&lt;p&gt;v2.0.0 添加了仅限 localhost 的绑定（安全性）、可配置的超时、标签删除工具和基于 .env 的配置。&lt;p&gt;很高兴讨论哈希方法、MCP 协议设计决策或如何这适合现代 RE 工作流程。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/bethington/ghidra-mcp</guid>
-      <pubDate>Wed, 04 Feb 2026 06:51:51 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46882389</comments>
+      <title>你的工作并没有消失。它实时缩小在你周围</title>
+      <link>https://newsletter.jantegze.com/p/your-job-isnt-disappearing-its-shrinking</link>
+      <description>&lt;p&gt;你的工作并没有消失。你还有你的工作。但没有人教你那是什么样的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Your Job Isn't Disappearing. It's Shrinking Around You in Real Time&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46884595"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://newsletter.jantegze.com/p/your-job-isnt-disappearing-its-shrinking'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://newsletter.jantegze.com/p/your-job-isnt-disappearing-its-shrinking</guid>
+      <pubDate>Wed, 04 Feb 2026 11:36:15 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46884595</comments>
+    </item>
+    <item>
+      <title>损坏的证明和损坏的证明者</title>
+      <link>https://lawrencecpaulson.github.io/2026/01/15/Broken_proofs.html</link>
+      <description>&lt;p&gt;另外，证明助手也有缺陷。伊莎贝尔会在这方面提供帮助。幸运的是，您必须证明定义的引理将揭示任何错误。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Broken Proofs and Broken Provers&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46883337"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://lawrencecpaulson.github.io/2026/01/15/Broken_proofs.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://lawrencecpaulson.github.io/2026/01/15/Broken_proofs.html</guid>
+      <pubDate>Wed, 04 Feb 2026 09:00:09 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46883337</comments>
     </item>
   </channel>
 </rss>
