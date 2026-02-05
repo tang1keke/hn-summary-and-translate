@@ -6,88 +6,112 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 05 Feb 2026 09:53:31 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Feb 2026 13:12:47 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>现代化 Linux 交换：引入交换表</title>
-      <link>https://lwn.net/SubscriberLink/1056405/e728d95dd16f5e1b/</link>
-      <description>&lt;p&gt;然而，在交换子系统本身内，使用了与体系结构无关的交换条目版本。说一个页面在交换缓存中实际上只意味着已经分配了一个交换条目；页面本身可能仍驻留在 RAM 中，也可能不再驻留在 RAM 中。所有这些意味着交换子系统必须跟踪交换缓存中每个页面的状态，并且该状态不仅仅涉及分配的交换槽。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Modernizing Linux swapping: introducing the swap table&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46896586"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://lwn.net/SubscriberLink/1056405/e728d95dd16f5e1b/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Nanobot：OpenClaw 的超轻量级替代品</title>
+      <link>https://github.com/HKUDS/nanobot</link>
+      <description>&lt;p&gt;2026-02-01 🎉 纳米机器人推出。初始化板载 Nanobot 2. 运行 nanobot gateway [.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Nanobot: Ultra-Lightweight Alternative to OpenClaw&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46897737"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/HKUDS/nanobot'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iberator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Linux 内核中另一个无用的功能。现在谁使用交换空间？！上次我在 Linux 设备上使用交换是在 Pentium 2 时代，但实际上更接近 486DX 时代&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FooBarWidget:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对 Linux 上的虚拟内存管理感到不满的是，当内存使用率接近 100% 时，内核开始逐出可执行页面，因为从技术上讲它们是只读的并且可以从磁盘加载。因此，整个系统在看起来像交换的行为中陷入停顿，因为每个想要执行指令的程序都必须再次从磁盘加载其指令，只有在上下文切换到另一个程序时才会再次驱逐这些指令页。这种行为特别违反直觉，因为禁用交换并不能防止此问题。管理员没有方便的设置来防止此问题。&lt;p&gt;我们现在有更好的交换，这很好，但我希望他们能够解决上述问题。我宁愿让程序在系统停止运行之前被 OOMKilled 或抛出错误，这样我什至无法 ssh 登录并运行“ps”。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://lwn.net/SubscriberLink/1056405/e728d95dd16f5e1b/</guid>
-      <pubDate>Thu, 05 Feb 2026 06:58:43 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46896586</comments>
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tunney:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有人设法让 WhatsApp 集成正常工作并以这种方式聊天吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FergusArgyll:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在 openclaw 中看到的主要新颖之处在于通道的数量以及设置它们的容易程度。这只有 Whatsapp、电报和肺术&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;loveparade:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人们用这些东西做什么？我见过的用例看起来有点做作，我可以要求 Claude 或 ChatGPT 直接这样做&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vanillameow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，我的意思是我不知道，我从 OpenClaw 得到的收获几乎是一样的 - 为什么要使用某人疯狂的 vivicoded 400k LoC CLI 包装器和 50k 行“文档”？ （AI slop；以及同一个 AI slop 的另一个 50k 中文翻译）当我可以在 30 分钟内用 Claude 自己编写一个自定义包装器时，它正是我所需要的，并且不需要 4 秒来响应 CLI 调用。&lt;p&gt;但我对这个项目的反应再次是：为什么我要使用这个而不是“vibecoding”？我自己。它不会完全满足我的需要，而且创建我自己的版本的成本以分钟为单位。&lt;p&gt;我怀疑很多人会慢慢地理解“vibecoded 软件”的内在本质。很快——唯一有价值的就是你自己制作的，用来解决你自己的问题。它们不是产品，也永远不会是产品。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jannniii:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好吧，这是否是受到两天前出现的纳米爪的“启发”？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;johaugum:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;浏览了一下 repo，这基本上是代理不可简化的核心：小循环、提供者抽象、工具调度和聊天网关。 LOC 减少（99%，从 400k 减少到 4k）主要来自省略 RAG 管道、规划器、多代理编排、UI 和生产操作。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/HKUDS/nanobot</guid>
+      <pubDate>Thu, 05 Feb 2026 09:39:11 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46897737</comments>
     </item>
     <item>
-      <title>研究：老年大麻使用者大脑更大，认知能力更好</title>
-      <link>https://news.cuanschutz.edu/news-stories/study-finds-cannabis-usage-in-middle-aged-and-older-adults-associated-with-larger-brain-volume-better-cognitive-function</link>
-      <description>&lt;p&gt;相关文章 研究发现中年和老年人吸食大麻与更大的大脑容量和更好的认知功能有关2026 年 2 月 3 日 CU Anschutz Innovations 与美敦力 (Medtronic) 签署战略研究协议，推动员工医疗保健创新 | 2026 年 1 月 22 日，Catherine Musselman 博士深入研究表观基因组 | 2026 年 1 月 16 日。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Study: Older Cannabis Users Have Larger Brains, Better Cognition&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46895950"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.cuanschutz.edu/news-stories/study-finds-cannabis-usage-in-middle-aged-and-older-adults-associated-with-larger-brain-volume-better-cognitive-function'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>缺失的层</title>
+      <link>https://yagmin.com/blog/the-missing-layer/</link>
+      <description>&lt;p&gt;Vibe 编码工作量太大。尽管有这些变化，每个新项目都会带来一些明显的缺陷，这些缺陷以某种方式避免了您的检测。具有静态白色背景的第三方小部件怎么样？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Missing Layer&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46898223"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://yagmin.com/blog/the-missing-layer/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;DonHopkins:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所以 Devo 很嗨！&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=pegs3LFf6t8" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=pegs3LFf6t8&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;prmoustache:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果你什么都不记得了，那么拥有更好的认知又有什么意义呢？&lt;p&gt;我知道一些轶事证据，但我认识的所有长期每日吸食大麻的人似乎都有记忆问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;guelo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;n=1，但在过去的几年里我养成了日常国际象棋的爱好，我注意到我的国际象棋等级和我的大麻使用之间存在很大的负相关性，以至于我在坚持了 20 年之后就不再使用大麻了。我说的是 100-200 elo 掉落，可持续几天。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vga42:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果这是合法的，我很乐意用大麻代替我的酒精使用，而且我不认为我是我这个年龄段中唯一的人。这可以改善大脑健康，这并不令人意外。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;polotics:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这似乎是相关性与因果性的完美案例。&lt;p&gt;我的脑海中浮现出许多社会经济混杂变量，以及生存偏差。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;misja111:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;摘自文章：&lt;p&gt;&gt;然而，另一个大脑区域的体积较低，这表明大麻对大脑的影响是复杂而微妙的，需要进一步研究。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gregoryyy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我看到毒品很糟糕，人群正在大量出动。我确信他们会像这里所展示的那样，以怀疑、偏见和批评的态度对待任何有关吸毒者或毒品影响的负面故事。由客观理性驱动且不受确认偏见的影响一定是多么美妙。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Daviey:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;买大衣服会导致你超重。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;comrade1234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;脑水肿？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;msalihb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;大脑较大的使用者可能对大麻上瘾&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwa356262:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不幸的是，其中大部分已经被阴谋论占据。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.cuanschutz.edu/news-stories/study-finds-cannabis-usage-in-middle-aged-and-older-adults-associated-with-larger-brain-volume-better-cognitive-function</guid>
-      <pubDate>Thu, 05 Feb 2026 05:18:42 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46895950</comments>
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;einrealist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很好奇他在想什么。这种“工艺工程”可能是 BPM 和 COBOL 试图解决的问题的解决方案。他最终可能会得到另一个间接的形式化层（有每个人都需要学习的规则和约束），可以更好地与 LLM 交互（也在快速发展）集成。&lt;p&gt;我喜欢“代码就是真理”的想法。 （与“正确”相对）。人工智能应该能够使用这个事实并根据规范对其进行变异。如果法学硕士的输出不正确，则不清楚是规范不正确还是模型本身无能力（训练问题、偏差）。这是“过程工程”所需要解决的问题。根本无法解决。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;conartist6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;代码就是那层。&lt;p&gt;如果你的代码在捕获需求方面做得很糟糕，那么在代码本身足够简洁以成为规范之前，再多的降价也无法改善你的困境。&lt;p&gt;当然，你可以忽略这个建议。世界上很多代码都是意大利面条式代码。你可以自由地朝那个方向前进并获得回报。只是在你的纸牌屋倒塌之前，不要指望能超越平庸，因为事实证明“你不再需要坚固的基础来建造高大的东西了”完全不真实&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aditgupta:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;吉姆解决了核心问题。我一直在构建这个“缺失的层”过去几个月。挑战不仅仅是将产品决策与代码联系起来。产品上下文以一种针对人类交流而不是机器消费进行优化的格式存在。当工程师将其提供给法学硕士时，他们花费了大量精力“重新情境化”。利益相关者已经决定的内容。
+我围绕两种用作上下文层的结构化格式构建了 TypMo (&lt;a href="https:&amp;#x2F;&amp;#x2F;typmo.com" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;typmo.com&lt;/a&gt;)：
+PTL（产品思维语言）- 以人类可以阅读和编辑且法学硕士可以精确解析的格式构建产品决策（角色、目标、约束、要求）。将 YAML 视为产品思维。
+和界面结构语言 (ISL) - 以结构化语法定义线框和组件层次结构，编译成可视化模型和生产就绪提示。法学硕士不需要更多的背景，他们需要结构化的背景。
+Jim 描述的工作流程（利益相关者会议 → 经理聚合 → 工程师为 LLM 重新构建上下文）变为：利益相关者会议 → PTL 编译 → IA 生成 → 生产提示。&lt;p&gt;让我们看看它会走向何方！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnorswap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;但无论你的步骤有多小，该区域都不会改变&lt;p&gt;抱歉，这有点偏离主题，但我必须指出这一点。&lt;p&gt;该区域绝对会改变，您可以在&lt;a中从第一步到第二步的简单示例中看到这一点href="https:&amp;#x2F;&amp;#x2F;yagmin.com&amp;#x2F;博客&amp;#x2F;内容&amp;#x2F;图像&amp;#x2F;2026&amp;#x2F;02&amp;#x2F;blocks_cuttingcorners.png" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;yagmin.com&amp;#x2F;blog&amp;#x2F;content&amp;#x2F;images&amp;#x2F;2026&amp;#x2F;02&amp;#x2F;blocks_cuttin...&lt;/a&gt;&lt;p&gt;角实际上被切掉了。&lt;p&gt;不变的是边缘的长度，这是一种曼哈顿距离。&lt;p&gt;边的长度有直线的极限，但实际上并没有接近极限。&lt;p&gt;然而，面积确实接近极限，因为实际上您删除了“剩余”直线的一半。每次迭代的区域。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anupamchugh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当文档和代码解耦时，就会出现文档债务。一种修复方法是使规范成为有状态的工件
+  与变化检测。在 Shadowbook 中（披露：我构建了它），规格是带有哈希值的文件；当规范发生变化时，相关问题会被标记出来，并且在有人承认变化之前无法关闭。这在文档和实施之间创建了一个反馈循环，而无需“氛围文档”。它并不能解决所有问题，但它使矛盾变得可见，并在背景发生变化时强制审查门。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ryanackley:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;创建大量半结构化数据是缺失的一层吗？如果你是一个想要创建一些东西的非程序员，我可以看到一个论点。尽管在某种程度上，它是一种编程形式。&lt;p&gt;作为开发人员，我宁愿只编写代码，然后让 AI 编写解释它的半结构化数据。创建大量流程图和故事只是为了让人工智能能够正确地构建一些东西，这对我来说听起来就像地狱。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;groestl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也许我遗漏了一些东西，或者我们在这里做得不同，但我认为“spec”是最重要的。在那篇文章中被狭义地定义。在那次会议上开始编写该文档的第一部分，一切都整齐地联系在一起。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;helloplanets:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;假设您的组织想要添加“深色模式”到您的网站。这是怎么发生的？站点范围内的功能通常需要几个人来讨论问题并探讨成本与收益。 UI 主题是否已经支持深色模式？用户将在哪里切换深色模式？默认值应该是什么？如果我们更改背景颜色，我们将需要交换字体颜色。边界和分隔线怎么样？那么图像呢？公司博客和常见问题解答区域怎么样，它们看起来是集成的，但在不同的前端运行？具有静态白色背景的第三方小部件怎么样？&lt;p&gt;这些问题中只有一两个实际上与编程相关。 （尽管大多数开发人员身兼数职。）如果一个组织有资源召开六人会议来添加黑暗模式，我当然希望其中至少有一个是设计师并且对用户体验有丰富的了解。因为大多数问题都是他们应该提出并得到答案的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;asim:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们需要一种语言和一个转译器。老实说，LLM 有很多用途。代理有很多用途。我们正在缩小如何使编程机器和软件具有确定性和可预测性的范围。但这也意味着我们需要自然语言之外的东西来实际实现。是的，我们已经提升了一个级别，但工程师不是产品经理，因此尽管我们可以定义范围并概述项目，例如使用 Scrum 或看板进行 2 周的冲刺，但现实是确定性输入确定性输出仍然是可行的方法。正如编译器和高级语言打开下一阶段的大门一样，法学硕士管理这种翻译和编译，但它缺少一种中间语言，一种可以更好地处理并直接编译为机器代码的格式。我们正在谈论 LLVM。当我们可以更好地将中间语言转换为更高效、更高性能的语言时，为什么还要要求法学硕士编写 Go 代码或 Python。所以我认为仍有工作要做。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrbluecoat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;单独为那个动画 gif 点赞。我见过的人工智能编码结果的最佳视觉效果。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://yagmin.com/blog/the-missing-layer/</guid>
+      <pubDate>Thu, 05 Feb 2026 10:46:57 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46898223</comments>
     </item>
     <item>
-      <title>宝马最新“创新”是Logo形中指向右修复</title>
-      <link>https://www.ifixit.com/News/115528/bmws-newest-innovation-is-a-logo-shaped-middle-finger-to-right-to-repair</link>
-      <description>&lt;p&gt;该工具是他们的知识产权；它是由宝马为宝马开发的。他们为该工具申请的专利确保其他人无法发明类似的东西。他们为该工具申请的专利确保其他人无法发明类似的东西。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; BMW's Newest "Innovation" Is a Logo-Shaped Middle Finger to Right to Repair&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46896427"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.ifixit.com/News/115528/bmws-newest-innovation-is-a-logo-shaped-middle-finger-to-right-to-repair'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>显示 HN：Emacs Lisp 中的 Micropolis/SimCity 克隆</title>
+      <link>https://github.com/vkazanov/elcity</link>
+      <description>&lt;p&gt;ElCity (Emacs Lisp City) 概述 ElCity 是一个小型的回合制城市建设者，完全在 Emacs 内运行。控制 R 选择住宅并放置一次 C 选择商业并放置一次 I 选择工业并放置一次 r 选择道路和放置一次 p 选择发电厂并放置一次 h 选择市政厅并放置一次 SPC 或 RET 将所选工具放置在光标处 d 拆除在光标处 u 撤消上一个操作 n 前进一圈 箭头键移动光标 o 循环覆盖（货物、污染、连通性等） 视觉演示 这是显示总体布局的简化快照。埃尔城项目布局。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Micropolis/SimCity Clone in Emacs Lisp&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46897332"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/vkazanov/elcity'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chubs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;宝马的转售价值非常清楚地表明：这些汽车一旦过了保修期，就会对其车主产生积极的敌意（在很多方面）。遗憾的是，他们的内饰很可爱。从长远来看，这个策略对他们有效吗？我不会再买一件了。我知道...轶事:)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;voidUpdate:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很想知道宝马是如何制造这些螺丝的。图像中金属上的图案表明整个孔都被钻掉了？最深的部分内部有圆形痕迹，看起来像车床或类似设备上的端面工具留下的痕迹。然后我猜两个楔子已插入并且整个螺钉都面朝上？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;general1465:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;螺丝刀向公众开放 5 分钟后，即可在 AliExpress 上找到正确的螺丝刀刀头。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.ifixit.com/News/115528/bmws-newest-innovation-is-a-logo-shaped-middle-finger-to-right-to-repair</guid>
-      <pubDate>Thu, 05 Feb 2026 06:33:47 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46896427</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brimtown:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太棒了。考虑将核心与 Emacs 解耦，或者以不需要太多核心的方式进行打包。&lt;p&gt;我一直在通过 Dwarf Fortress 而不是 SimCity 对终端 ASCII 游戏进行探索。我了解到，让编码代理参与游戏也是获取反馈的一种有趣方式:)&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;brimtown&amp;#x2F;claude-fortress" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;brimtown&amp;#x2F;claude-fortress&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;michaelanckaert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太棒了！我们需要更多的 ASCII 游戏模拟，只有在 Emacs 中才是额外的好处:-)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;boxed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你应该有一个屏幕截图。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/vkazanov/elcity</guid>
+      <pubDate>Thu, 05 Feb 2026 08:46:13 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46897332</comments>
     </item>
     <item>
-      <title>Valve 的 Steam Machine 被推迟，RAM 危机将影响定价</title>
-      <link>https://www.theverge.com/games/874196/valve-steam-machine-frame-controller-delay-pricing-memory-crisis</link>
-      <description>&lt;p&gt;游戏娱乐新闻Valve 的 Steam 机器已被推迟，RAM 危机将影响定价 Valve 表示，它必须“重新审视”Steam 机器、Steam 框架和 Steam 控制器的发货时间表和定价计划。 Valve 表示，它必须“重新审视”蒸汽机、蒸汽框架和蒸汽控制器的发货时间表和定价计划。 Jay PetersSean Hollister娱乐游戏新闻PC游戏技术更多内容：Steam机器回来了：有关Valve新硬件宇宙的所有新闻这里（显然）是Steam机器的启动视频。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Valve's Steam Machine has been delayed, and the RAM crisis will impact pricing&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46897210"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.theverge.com/games/874196/valve-steam-machine-frame-controller-delay-pricing-memory-crisis'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Freshpaint (YC S19) 正在招聘一名高级 SWE，数据</title>
+      <link>https://www.freshpaint.io/about?ashby_jid=3a7926ba-cf51-4084-9196-4361a7e97761</link>
+      <description>&lt;p&gt;您的健康，您做主。我们投资于您的成长。人寿保险是我们支持您一生而不仅仅是工作的承诺的一部分。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Freshpaint (YC S19) Is Hiring a Senior SWE, Data&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46898713"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.freshpaint.io/about?ashby_jid=3a7926ba-cf51-4084-9196-4361a7e97761'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.freshpaint.io/about?ashby_jid=3a7926ba-cf51-4084-9196-4361a7e97761</guid>
+      <pubDate>Thu, 05 Feb 2026 12:00:03 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46898713</comments>
+    </item>
+    <item>
+      <title>Allegro 的战斗测试 Lynx</title>
+      <link>https://blog.allegro.tech/2026/02/battle-testing-lynx-js-at-allegro.html</link>
+      <description>&lt;p&gt;通过搜索，我们找到了 Lynx——一个最近发布的、围绕本机渲染设计的开源跨平台框架。 Lynx 开箱即用，已经提供了许多我们认为至关重要的功能，包括：本机渲染、跨平台开发、服务器驱动的 UI 支持、与 React 生态系统的深度集成。 Lynx 支持服务器驱动的 UI，可以与我们的内容管理系统 Opbox 集成，并且可能与 MBox 类似地运行，但具有更广泛的功能集：完整的 JavaScript 支持、动画、高级 CSS、复杂布局等等。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Battle-Testing Lynx at Allegro&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46897810"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.allegro.tech/2026/02/battle-testing-lynx-js-at-allegro.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vga42:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们可能应该进一步推迟，直到现任法西斯美国政府下台。我现在当然不会从美国公司购买任何东西。&lt;p&gt;他们也可以将总部迁至欧盟，最好是这样。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.theverge.com/games/874196/valve-steam-machine-frame-controller-delay-pricing-memory-crisis</guid>
-      <pubDate>Thu, 05 Feb 2026 08:34:47 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46897210</comments>
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;self_awareness:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;啤酒是十个 InPost 啤酒，nawet na przykładzie wciskacie te swoje OneBoxy。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zvqcMMV6Zcr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;交付方式屏幕&lt;p&gt;最近“意外”保留的交付方式屏幕切换接送点？我当然希望这不是 Lynx 造成的，只是糟糕的业务需求。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;entropyie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该名称已被使用，尤其是与网络相关的任何内容。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kleiba:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们在技术领域的名字肯定已经用完了：&lt;p&gt;- &lt;a href="https:&amp;#x2F;&amp;#x2F;franz.com&amp;#x2F;products&amp;#x2F;allegro-common-lisp&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;franz.com&amp;#x2F;产品&amp;#x2F;allegro-common-lisp&amp;#x2F;&lt;/a&gt;&lt;p&gt;- &lt;a href="https:&amp;#x2F;&amp;#x2F;lynx.invisible-island.net&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;lynx.invisible-island.net&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SoKamil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我以为这是关于 Lynx 浏览器，一个位于终端中的基于文本的浏览器&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tgebarowski:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;经过 6 年多在 Allegro 构建和运行我们自己的服务器驱动 UI 后，我们决定是时候问一下：下一步是什么？&lt;p&gt;随着去年围绕 LynxJS 的大肆宣传，我们仔细研究了它是否真的符合预期。在这篇文章中，我们分享了我们的经验、教训以及在实际生产环境中使用它的想法。&lt;p&gt;如果您对移动架构、SDUI、React 或跨平台开发感兴趣。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.allegro.tech/2026/02/battle-testing-lynx-js-at-allegro.html</guid>
+      <pubDate>Thu, 05 Feb 2026 09:49:23 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46897810</comments>
     </item>
     <item>
-      <title>俄罗斯“拦截欧洲关键卫星”</title>
-      <link>https://news.satnews.com/2026/02/04/russia-intercepts-europes-key-satellites-placing-nato-satellite-at-risk/</link>
-      <description>&lt;p&gt;2026 年 2 月 4 日，欧洲情报和航天机构的报告详细介绍了俄罗斯实施的一系列侵略性“卫星拦截”行动，这些行动使北约的轨道基础设施面临前所未有的风险。欧洲安全官员认为，过去三年来，至少有 17 颗欧洲关键卫星受到俄罗斯信号情报 (SIGINT) 航天器的跟踪或破坏，引发人们担心莫斯科不仅可以窃取机密数据，还可以主动劫持这些卫星，将它们“冲回地球”。德国太空司令部司令迈克尔·特劳特少将证实，这些俄罗斯飞行器可能会拦截“命令链路”，即老式卫星用于接收地面控制指令的未加密通信通道。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Russia 'intercepts Europe's key satellites'&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46896785"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.satnews.com/2026/02/04/russia-intercepts-europes-key-satellites-placing-nato-satellite-at-risk/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://news.satnews.com/2026/02/04/russia-intercepts-europes-key-satellites-placing-nato-satellite-at-risk/</guid>
-      <pubDate>Thu, 05 Feb 2026 07:30:27 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46896785</comments>
+      <title>ClawHub 中下载最多的技能包含恶意软件</title>
+      <link>https://1password.com/blog/from-magic-to-malware-how-openclaws-agent-skills-become-an-attack-surface</link>
+      <description>&lt;p&gt;简而言之：像 OpenClaw 一样的代理网关非常强大，因为它们可以真正访问您的文件、工具、浏览器、终端，并且通常还可以访问长期“记忆”文件，该文件捕获您的想法和正在构建的内容。技能只是降价。这意味着恶意“技能”不仅仅是 OpenClaw 的问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Top downloaded skill in ClawHub contains malware&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46898615"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://1password.com/blog/from-magic-to-malware-how-openclaws-agent-skills-become-an-attack-surface'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://1password.com/blog/from-magic-to-malware-how-openclaws-agent-skills-become-an-attack-surface</guid>
+      <pubDate>Thu, 05 Feb 2026 11:45:03 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46898615</comments>
     </item>
   </channel>
 </rss>

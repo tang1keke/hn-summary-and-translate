@@ -6,88 +6,112 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Korean</description>
     <language>ko</language>
-    <lastBuildDate>Thu, 05 Feb 2026 09:53:31 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Feb 2026 13:12:47 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ko.xml"/>
     <item>
-      <title>Linux 스와핑 현대화: 스왑 테이블 소개</title>
-      <link>https://lwn.net/SubscriberLink/1056405/e728d95dd16f5e1b/</link>
-      <description>&lt;p&gt;그러나 스왑 하위 시스템 자체 내에서는 스왑 항목의 아키텍처 독립적 버전이 사용됩니다. 페이지가 스왑 캐시에 있다는 것은 실제로 스왑 항목이 할당되었음을 의미할 뿐입니다. 페이지 자체는 여전히 RAM에 있을 수도 있고 그렇지 않을 수도 있습니다. 이 모든 것은 스왑 하위 시스템이 스왑 캐시에 있는 모든 페이지의 상태를 추적해야 하며 해당 상태에는 할당된 스왑 슬롯 이상의 것이 포함되어 있음을 의미합니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Modernizing Linux swapping: introducing the swap table&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46896586"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://lwn.net/SubscriberLink/1056405/e728d95dd16f5e1b/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Nanobot: OpenClaw의 초경량 대안</title>
+      <link>https://github.com/HKUDS/nanobot</link>
+      <description>&lt;p&gt;2026-02-01 🎉나노봇 출시. 나노봇 온보드 초기화 2. 나노봇 게이트웨이 실행 [.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Nanobot: Ultra-Lightweight Alternative to OpenClaw&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46897737"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/HKUDS/nanobot'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iberator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Linux 커널의 또 다른 쓸모없는 기능입니다. 요즘 누가 스왑 공간을 사용하나요?! 마지막으로 Linux 장치에서 스왑을 사용한 것은 Pentium 2 시대 즈음이었지만 실제로는 486DX 시대에 더 가까웠습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FooBarWidget:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Linux에서 가상 메모리 관리에 대해 제가 불만스러워하는 것 중 하나는 메모리 사용량이 100%에 가까워지면 커널이 실행 가능 페이지를 제거하기 시작한다는 것입니다. 기술적으로는 읽기 전용이고 디스크에서 로드할 수 있기 때문입니다. 따라서 명령을 실행하려는 모든 프로그램은 디스크에서 해당 명령을 다시 로드해야 하고 컨텍스트가 다른 프로그램으로 전환될 때 해당 명령 페이지를 다시 제거해야 하기 때문에 전체 시스템이 스와핑처럼 보이는 동작으로 중단됩니다. 스왑을 비활성화해도 이 문제가 방지되지 않기 때문에 이 동작은 특히 직관적이지 않습니다. 이 문제를 방지하기 위해 관리자에게 편리한 설정은 없습니다.&lt;p&gt;이제 교체가 더 잘 된 것은 좋지만 위의 문제를 해결했으면 합니다. 시스템이 멈춰서 SSH 접속도 할 수 없고 'ps'를 실행할 수도 없게 되기 전에 프로그램이 OOMKilled되거나 오류를 발생시키는 편이 낫습니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://lwn.net/SubscriberLink/1056405/e728d95dd16f5e1b/</guid>
-      <pubDate>Thu, 05 Feb 2026 06:58:43 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46896586</comments>
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tunney:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;WhatsApp 통합이 작동하고 그런 식으로 채팅할 수 있는 사람이 있나요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FergusArgyll:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Openclaw에서 제가 본 주요 참신함은 채널의 양과 채널 설정이 얼마나 쉬운가입니다. 여기에는 whatsapp, 전보 및amp; 페이슈&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;loveparade:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;사람들은 이런 것들을 무엇을 위해 사용하고 있나요? 내가 본 사용 사례는 약간 인위적으로 보였으므로 Claude 또는 ChatGPT에 직접 요청하면 됩니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vanillameow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그래 내 말은, OpenClaw에서 내가 얻은 교훈은 거의 똑같았다. 왜 누군가의 미친 바이브코딩된 400,000 LoC CLI 래퍼에 50,000줄의 &amp;quot;문서&amp;quot;를 사용하는가? (AI 슬롭 및 동일한 AI 슬롭의 또 다른 50,000개의 중국어 번역) Claude Code를 사용하여 30분 만에 사용자 정의 래퍼를 만들 수 있는데, 이 래퍼는 내가 필요한 것을 정확히 갖고 있으며 CLI 호출에 응답하는 데 4초도 걸리지 않습니다.&lt;p&gt;하지만 이 프로젝트에 대한 나의 반응은 다시 다음과 같습니다. "vibecoding" 대신 이것을 왜 사용하겠습니까? 나 자신이야. 내가 필요한 것이 정확히 들어있지는 않을 것이고, 나만의 버전을 만드는 데 드는 비용은 몇 분 안에 측정됩니다.&lt;p&gt;많은 사람들이 '바이브코딩 소프트웨어'의 본질적인 특성을 천천히 이해하게 될 것이라고 생각합니다. 곧 - 유일하게 가치 있는 것은 자신의 문제를 해결하기 위해 스스로 만든 것입니다. 그것들은 제품이 아니며 결코 존재하지 않을 것입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jannniii:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;좋습니다. 이틀 전에 여기에 소개된 nanoclaw에서 "영감"을 받은 것인가요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;johaugum:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;리포지토리를 훑어보니 이는 기본적으로 에이전트의 축소할 수 없는 핵심인 작은 루프, 공급자 추상화, 도구 디스패치 및 채팅 게이트웨이입니다. LOC 감소(99%, 400k에서 4k로)는 대부분 RAG 파이프라인, 플래너, 다중 에이전트 오케스트레이션, UI 및 프로덕션 작업을 제외함으로써 발생합니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/HKUDS/nanobot</guid>
+      <pubDate>Thu, 05 Feb 2026 09:39:11 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46897737</comments>
     </item>
     <item>
-      <title>연구: 나이든 대마초 사용자는 더 큰 두뇌와 더 나은 인지력을 가지고 있습니다</title>
-      <link>https://news.cuanschutz.edu/news-stories/study-finds-cannabis-usage-in-middle-aged-and-older-adults-associated-with-larger-brain-volume-better-cognitive-function</link>
-      <description>&lt;p&gt;관련 기사 연구에 따르면 중년 및 노년층의 대마초 사용이 더 큰 뇌량, 더 나은 인지 기능과 관련이 있는 것으로 나타났습니다. 2026년 2월 3일 CU Anschutz Innovations와 Medtronic Forge 직원의 의료 혁신을 주도하기 위한 전략적 연구 계약 | 2026년 1월 22일 Catherine Musselman 박사의 후성유전체 심층 분석 | 2026년 1월 16일.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Study: Older Cannabis Users Have Larger Brains, Better Cognition&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46895950"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.cuanschutz.edu/news-stories/study-finds-cannabis-usage-in-middle-aged-and-older-adults-associated-with-larger-brain-volume-better-cognitive-function'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>누락된 레이어</title>
+      <link>https://yagmin.com/blog/the-missing-layer/</link>
+      <description>&lt;p&gt;Vibe 코딩은 작업이 너무 많습니다. 이러한 변경에도 불구하고 각각의 새 프로젝트에는 어떻게든 탐지를 피할 수 있는 몇 가지 명백한 결함이 있습니다. 정적 흰색 배경을 가진 타사 위젯은 어떻습니까?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Missing Layer&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46898223"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://yagmin.com/blog/the-missing-layer/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;DonHopkins:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그래서 Devo는 최고였습니다!&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=pegs3LFf6t8" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=pegs3LFf6t8&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;prmoustache:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아무것도 기억하지 못한다면 더 나은 인지 능력을 갖는다는 게 무슨 의미가 있나요?&lt;p&gt;일화적인 증거는 제가 알고 있지만 제가 알고 있는 장기간 매일 대마초를 사용하는 사람은 모두 기억력 문제가 있는 것 같습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;guelo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;n=1이지만 저는 지난 몇 년 동안 매일 체스 취미를 선택했으며 20년 동안 습관적으로 대마초 사용을 중단할 정도로 체스 등급과 대마초 사용 사이에 큰 부정적인 상관관계가 있음을 발견했습니다. 나는 며칠 동안 지속될 100-200 elo drop을 이야기하고 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vga42:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그것이 합법적이라면 나는 기꺼이 알코올 사용을 대마초로 대체할 것이고, 나는 내 또래 집단에 혼자가 아니라고 생각합니다. 이것이 뇌 건강을 향상시킨다는 것은 그다지 놀라운 일이 아닙니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;polotics:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이는 상관관계 대 인과관계의 완벽한 사례인 것 같습니다.&lt;p&gt;머리속에 사회 경제적 혼란 변수와 생존 편향이 많이 떠오릅니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;misja111:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;기사에서:&lt;p&gt;&amp;gt; 그러나 또 다른 뇌 영역에서는 그 양이 더 적었습니다. 이는 대마초가 뇌에 미치는 영향이 복잡하고 미묘하여 추가 조사가 필요함을 시사합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gregoryyy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 마약이 나쁜 군중에게 시행되고 있음을 봅니다. 나는 그들이 여기에서 보여주는 것처럼 마약 사용자나 마약의 효과에 대한 부정적인 이야기를 회의주의, 편견, 비판으로 다룰 것이라고 확신합니다. 객관적인 이성에 힘을 받고 확증 편향이 없다는 것은 얼마나 놀라운 일입니까?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Daviey:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;큰 옷을 사면 과체중이 됩니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;comrade1234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;뇌부종?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;msalihb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;사용자는 대마초에 중독될 가능성이 더 큰 두뇌를 가지고 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwa356262:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;불행히도 대부분은 이미 음모론으로 가득 차 있습니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.cuanschutz.edu/news-stories/study-finds-cannabis-usage-in-middle-aged-and-older-adults-associated-with-larger-brain-volume-better-cognitive-function</guid>
-      <pubDate>Thu, 05 Feb 2026 05:18:42 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46895950</comments>
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;einrealist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그가 무슨 생각을 하고 있는지 궁금하다. 이는 '프로세스 엔지니어링'입니다. BPM과 COBOL이 해결하려고 하는 문제에 대한 솔루션이 될 수 있습니다. 그는 LLM 상호작용(역시 빠르게 발전하고 있음)과 더 잘 통합되는 간접적인 또 다른 공식화된 계층(모든 사람이 배울 수 있는 규칙 및 제약 조건 포함)을 갖게 될 수도 있습니다.&lt;p&gt;저는 &amp;#x27;코드가 진실입니다&amp;#x27; ('올바른'과 반대). AI는 이 사실을 활용하고 사양에 따라 변형할 수 있어야 합니다. LLM의 출력이 잘못된 경우 사양이 잘못된지 또는 모델 자체가 불가능한지(훈련 문제, 편향) 여부가 불분명합니다. 이것이 바로 '프로세스 엔지니어링'입니다. 단순히 해결할 수 없습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;conartist6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;코드가 바로 그 레이어입니다.&lt;p&gt;귀하의 코드가 요구 사항을 포착하는 데 제대로 작동하지 않는다면, 코드 자체가 사양이 될 만큼 간결해질 때까지는 마크다운을 아무리 많이 해도 상황이 개선되지 않을 것입니다.&lt;p&gt;물론 이 조언을 무시해도 됩니다. 세상의 많은 코드는 스파게티 코드입니다. 당신은 그 방향으로 자유롭게 가고 보상을 얻을 수 있습니다. 당신의 카드 하우스가 무너지기 전에 평범함보다 더 멀리 도달할 것이라고 기대하지 마십시오. 왜냐하면 "더 이상 높은 건물을 짓기 위해 강력한 기초가 필요하지 않습니다"라는 사실이 밝혀지기 때문입니다. 정말 사실이 아니다&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aditgupta:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Jim은 핵심 문제를 해결했습니다. 나는 정확히 이 "누락된 레이어"를 만들어 왔습니다. 지난 몇 달 동안. 문제는 단순히 제품 결정을 코드에 연결하는 것이 아닙니다. 제품 컨텍스트는 기계 소비가 아닌 인간 커뮤니케이션에 최적화된 형식으로 존재합니다. 엔지니어가 이를 LLM에 제공할 때 그들은 "재맥락화"하는 데 막대한 노력을 기울입니다. 이해관계자들이 이미 결정한 것.
+저는 이 컨텍스트 레이어 역할을 하는 두 가지 구조화된 형식을 중심으로 TypMo(&lt;a href="https:&amp;#x2F;&amp;#x2F;typmo.com" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;typmo.com&lt;/a&gt;)를 구축했습니다.
+PTL(제품 사고 언어) - 사람이 읽고 편집할 수 있고 LLM이 정확하게 구문 분석할 수 있는 형식으로 제품 결정(페르소나, 목표, 제약 조건, 요구 사항)을 구조화합니다. 제품에 대한 사고를 위해 YAML을 생각해 보세요.
+및 ISL(인터페이스 구조 언어) - 시각적 모형 및 생산 준비 프롬프트로 컴파일되는 구조화된 구문으로 와이어프레임 및 구성 요소 계층을 정의합니다. LLM에는 더 많은 컨텍스트가 필요하지 않고 구조화된 컨텍스트가 필요합니다.
+Jim이 설명하는 워크플로우(이해관계자 회의 → 관리자 집계 → 엔지니어가 LLM을 위해 다시 컨텍스트화)는 이해관계자 회의 → PTL 편집 → IA 생성 → 프로덕션 프롬프트가 됩니다.&lt;p&gt;어떻게 진행되는지 살펴보겠습니다!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnorswap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 하지만 아무리 작은 단계를 밟아도 영역은 절대 변하지 않습니다&lt;p&gt;죄송합니다. 주제에서 조금 벗어난 내용이지만 이 점을 강조해야 합니다.&lt;p&gt;영역은 절대적으로 변합니다. &lt;a의 첫 번째 단계에서 두 번째 단계까지의 간단한 예에서 이를 볼 수 있습니다. href="https:&amp;#x2F;&amp;#x2F;yagmin.com&amp;#x2F;블로그&amp;#x2F;콘텐츠&amp;#x2F;이미지&amp;#x2F;2026&amp;#x2F;02&amp;#x2F;blocks_cuttingcorners.png" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;yagmin.com&amp;#x2F;blog&amp;#x2F;content&amp;#x2F;images&amp;#x2F;2026&amp;#x2F;02&amp;#x2F;blocks_cuttin...&lt;/a&gt;&lt;p&gt;모서리는 말 그대로 잘립니다.&lt;p&gt;변하지 않는 것은 가장자리의 길이입니다. 맨해튼 거리입니다.&lt;p&gt;가장자리의 길이에는 직선의 한계가 있지만 실제로는 한계에 접근하지 않습니다.&lt;p&gt;그러나 영역은 실제로 한계에 접근합니다. 실제로 '나머지' 길이의 절반을 제거하기 때문입니다. 각 반복 영역.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anupamchugh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;문서 부채는 문서와 코드가 분리될 때 발생합니다. 한 가지 해결 방법은 사양을 상태 저장 아티팩트로 만드는 것입니다.
+  변화 감지 기능이 있습니다. Shadowbook(공개: 내가 만들었습니다)에서 사양은 해시가 있는 파일입니다. 사양이 변경되면 연결된 문제에 플래그가 지정되고 누군가가 드리프트를 확인할 때까지 닫힐 수 없습니다. 이는 "분위기 문서화" 없이 문서와 구현 사이에 피드백 루프를 생성합니다. 모든 것을 해결하지는 않지만 모순을 가시화하고 상황이 바뀔 때 검토 게이트를 강제로 실행합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ryanackley:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;엄청난 양의 반구조화된 데이터를 생성하는 것이 누락된 레이어입니까? 프로그래머가 아니고 무언가를 만들고 싶어한다면 이에 대한 주장이 있을 것입니다. 어느 시점에서는 프로그래밍의 한 형태가 되기도 합니다.&lt;p&gt;개발자로서 저는 그냥 코드를 작성하고 이를 설명하는 반구조화된 데이터를 AI가 작성하도록 하는 편이 낫습니다. AI가 무언가를 제대로 구축할 수 있도록 수많은 순서도와 스토리를 만드는 것이 나에게는 지옥처럼 들립니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;groestl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;어쩌면 내가 뭔가를 놓치고 있거나 여기서는 다르게 할 수도 있지만, 내 생각에는 &amp;quot;사양&amp;quot; 해당 기사에서는 좁게 정의되어 있습니다. 해당 회의에서 해당 문서의 첫 번째 부분을 작성하기 시작하면 모든 것이 깔끔하게 연결됩니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;helloplanets:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 귀하의 조직에서 &amp;quot;어두운 모드&amp;quot;를 추가하려고 한다고 가정해 보겠습니다. 귀하의 사이트에. 어떻게 그런 일이 일어나나요? 사이트 전체 기능을 사용하려면 일반적으로 여러 사람이 우려 사항을 정리하고 비용과 이점을 탐색해야 합니다. UI 테마가 이미 다크 모드를 지원합니까? 사용자는 어두운 모드를 전환하기 위해 어디로 이동합니까? 기본값은 무엇이어야 합니까? 배경색을 변경하면 글꼴 색상을 바꿔야 합니다. 국경과 구분선은 어떻습니까? 이미지는 어떻습니까? 통합된 것처럼 보이지만 다른 프런트엔드에서 실행되는 회사 블로그와 FAQ 영역은 어떻습니까? 정적인 흰색 배경의 타사 위젯은 어떻습니까?&lt;p&gt;이러한 질문 중 실제로 프로그래밍과 관련된 질문은 한두 개뿐입니다. (비록 대부분의 개발자는 여러 가지 역할을 수행하지만) 조직에 다크 모드 추가를 위해 6명이 회의를 가질 수 있는 리소스가 있다면 그 중 적어도 한 명은 디자이너이고 UX에 대한 지식이 있기를 바랍니다. 왜냐하면 대부분의 질문은 그들이 제기하고 답을 얻어야 하는 질문이기 때문입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;asim:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;우리에게는 언어와 트랜스파일러가 필요합니다. 솔직히 LLM에는 많은 용도가 있습니다. 에이전트의 용도는 다양합니다. 그리고 프로그래밍 기계와 소프트웨어에 대해 결정적이고 예측 가능하게 만드는 방법을 좁히고 있습니다. 하지만 이는 실제 구현을 위해서는 자연어 이상의 것이 필요하다는 의미이기도 합니다. 예, 우리는 수준을 올렸지만 엔지니어는 제품 관리자가 아니므로 스크럼이나 칸반을 사용하여 2주 스프린트와 같은 프로젝트 범위를 정의하고 개요를 정의할 수 있는 만큼 현실은 결정론적 입력에 대한 결정론적 출력이 여전히 갈 길입니다. 컴파일러와 상위 수준 언어가 다음 단계로의 문을 연 것처럼 LLM은 이러한 번역과 컴파일을 관리하지만 훨씬 더 잘 처리되고 기계어 코드로 직접 컴파일될 형식인 일종의 중간 언어가 없습니다. 우리는 LLVM에 대해 이야기하고 있습니다. 중간 언어를 훨씬 더 효율적이고 성능이 뛰어난 언어로 더 잘 번역할 수 있는데 LLM에게 Go 코드나 Python 작성을 요청하는 이유는 무엇입니까? 그래서 아직 해야 할 일이 남아 있다고 생각합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrbluecoat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;해당 애니메이션 GIF에만 찬성표를 던졌습니다. 내가 본 AI 코딩 결과 중 최고의 시각적 효과.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://yagmin.com/blog/the-missing-layer/</guid>
+      <pubDate>Thu, 05 Feb 2026 10:46:57 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46898223</comments>
     </item>
     <item>
-      <title>BMW의 최신 "혁신"은 로고 모양의 가운데 손가락으로 수리할 권리입니다</title>
-      <link>https://www.ifixit.com/News/115528/bmws-newest-innovation-is-a-logo-shaped-middle-finger-to-right-to-repair</link>
-      <description>&lt;p&gt;그 도구는 그들의 지적 재산이었습니다. 그것은 BMW를 위해 BMW에 의해 개발되었습니다. 그리고 그들이 이 도구에 대해 출원한 특허는 다른 누구도 비슷한 것을 발명할 수 없다는 것을 보장합니다. 그리고 그들이 이 도구에 대해 출원한 특허는 다른 누구도 비슷한 것을 발명할 수 없다는 것을 보장합니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; BMW's Newest "Innovation" Is a Logo-Shaped Middle Finger to Right to Repair&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46896427"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.ifixit.com/News/115528/bmws-newest-innovation-is-a-logo-shaped-middle-finger-to-right-to-repair'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>HN 표시: Emacs Lisp의 Micropolis/SimCity 복제</title>
+      <link>https://github.com/vkazanov/elcity</link>
+      <description>&lt;p&gt;ElCity(Emacs Lisp City) 개요 ElCity는 Emacs 내부에서 완전히 실행되는 소규모 턴제 도시 건설 게임입니다. Control R 주거용 및 배치 한 번 선택 C 상업용 및 배치 I 산업용 선택 및 한 번 배치 r 도로 및 한 번 배치 p 발전소 및 한 번 배치 h 시청을 선택하고 한 번 배치 SPC 또는 RET 선택한 도구를 커서에 배치 d 커서에서 철거 u 마지막 작업 실행 취소 n 한 회전 전진 화살표 키 커서 이동 o 순환 오버레이(상품, 오염, 연결성 등) 시각적 데모 이것은 일반 레이아웃을 보여주기 위한 단순화된 스냅샷입니다. 프로젝트 레이아웃 Elcity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Micropolis/SimCity Clone in Emacs Lisp&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46897332"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/vkazanov/elcity'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chubs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;BMW 재판매 가치는 매우 분명합니다. 이러한 자동차는 보증이 만료되는 순간 소유자에게 적극적으로 (여러 가지 방법으로) 적대적입니다. 안타깝게도 인테리어는 사랑스럽습니다. 장기적으로 이 전략이 성공할 수 있을까요? 나는 다른 것을 사지 않을 것입니다. 알아요... 일화 :)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;voidUpdate:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;BMW가 이러한 나사를 어떻게 제조하는지 알고 싶습니다. 이미지의 금속 패턴을 보면 구멍 전체가 뚫린 것으로 보입니다. 가장 깊은 부분에는 선반이나 이와 유사한 대향 도구에 의해 남겨진 자국과 유사한 원형 자국이 내부에 있습니다. 그렇다면 두 개의 쐐기가 삽입되고 전체 나사가 마주한 것 같아요?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;general1465:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;볼트가 대중에게 공개되고 5분 후에 AliExpress에서 드라이버용 올바른 비트를 사용할 수 있습니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.ifixit.com/News/115528/bmws-newest-innovation-is-a-logo-shaped-middle-finger-to-right-to-repair</guid>
-      <pubDate>Thu, 05 Feb 2026 06:33:47 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46896427</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brimtown:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것은 훌륭합니다. Emacs에서 코어를 분리하거나 크게 필요하지 않은 방식으로 패키징하는 것을 고려해보세요.&lt;p&gt;저는 SimCity 대신 Dwarf Fortress를 통해 터미널 ASCII 게임을 직접 탐색해 왔습니다. 코딩 에이전트가 플레이하도록 하는 것도 피드백을 받는 흥미로운 방법이라는 것을 배웠습니다. :)&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;brimtown&amp;#x2F;claude-fortress" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;brimtown&amp;#x2F;claude-fortress&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;michaelanckaert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;정말 좋아요! 더 많은 ASCII 게임 시뮬레이션이 필요하며 Emacs에서는 보너스일 뿐입니다 :-)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;boxed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;스크린샷이 있어야 합니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/vkazanov/elcity</guid>
+      <pubDate>Thu, 05 Feb 2026 08:46:13 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46897332</comments>
     </item>
     <item>
-      <title>Valve의 Steam Machine이 지연되었으며 RAM 위기가 가격에 영향을 미칠 것입니다</title>
-      <link>https://www.theverge.com/games/874196/valve-steam-machine-frame-controller-delay-pricing-memory-crisis</link>
-      <description>&lt;p&gt;GamingEntertainmentNewsValve의 Steam Machine이 지연되었으며 RAM 위기가 가격에 영향을 미칠 것입니다. Valve는 Steam Machine, Steam Frame 및 Steam Controller에 대한 배송 일정과 가격 계획을 '재검토'해야 한다고 말합니다. Valve는 Steam Machine, Steam Frame 및 Steam Controller에 대한 배송 일정과 가격 계획을 '재검토'해야 한다고 말했습니다. Jay PetersSean HollisterEntertainmentGamingNewsPC GamingTech추가 정보: Steam Machine이 돌아왔습니다. Valve의 새로운 하드웨어 세계에 관한 모든 소식여기(분명히) Steam Machine의 시작 비디오가 있습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Valve's Steam Machine has been delayed, and the RAM crisis will impact pricing&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46897210"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.theverge.com/games/874196/valve-steam-machine-frame-controller-delay-pricing-memory-crisis'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Freshpaint(YC S19)에서 데이터 수석 SWE 직원을 채용합니다.</title>
+      <link>https://www.freshpaint.io/about?ashby_jid=3a7926ba-cf51-4084-9196-4361a7e97761</link>
+      <description>&lt;p&gt;당신의 웰빙, 당신의 방식. 귀하의 성장에 투자하겠습니다. 생명 보험은 귀하의 업무뿐만 아니라 귀하의 전 생애를 지원하려는 우리의 약속의 일부입니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Freshpaint (YC S19) Is Hiring a Senior SWE, Data&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46898713"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.freshpaint.io/about?ashby_jid=3a7926ba-cf51-4084-9196-4361a7e97761'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.freshpaint.io/about?ashby_jid=3a7926ba-cf51-4084-9196-4361a7e97761</guid>
+      <pubDate>Thu, 05 Feb 2026 12:00:03 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46898713</comments>
+    </item>
+    <item>
+      <title>Allegro에서 Lynx 전투 테스트</title>
+      <link>https://blog.allegro.tech/2026/02/battle-testing-lynx-js-at-allegro.html</link>
+      <description>&lt;p&gt;이러한 검색을 통해 우리는 네이티브 렌더링을 중심으로 설계된 최근 출시된 오픈 소스 크로스 플랫폼 프레임워크인 Lynx를 찾았습니다. 기본적으로 Lynx는 기본 렌더링, 크로스 플랫폼 개발, 서버 기반 UI 지원, React 생태계와의 심층 통합을 포함하여 우리가 중요하다고 생각하는 많은 기능을 이미 제공합니다. Lynx는 서버 기반 UI를 지원하고 콘텐츠 관리 시스템인 Opbox와 통합될 수 있으며 잠재적으로 MBox와 유사하게 작동할 수 있지만 전체 JavaScript 지원, 애니메이션, 고급 CSS, 복잡한 레이아웃 등 훨씬 더 광범위한 기능 세트를 사용할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Battle-Testing Lynx at Allegro&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46897810"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.allegro.tech/2026/02/battle-testing-lynx-js-at-allegro.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vga42:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그들은 아마도 현 파시스트 미국 정부가 사라질 때까지 그것을 더 연기해야 ​​할 것입니다. 저는 지금 당장은 미국 회사로부터 어떤 것도 사지 않을 것입니다.&lt;p&gt;그들은 또한 바람직하게는 본사를 EU로 이전할 수도 있습니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.theverge.com/games/874196/valve-steam-machine-frame-controller-delay-pricing-memory-crisis</guid>
-      <pubDate>Thu, 05 Feb 2026 08:34:47 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46897210</comments>
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;self_awareness:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Ale은 InPost에서 10위권에 있었고 OneBoxy에서 przykładzie wciskacie를 사용했습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zvqcMMV6Zcr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 배송 방법 화면&lt;p&gt;최근에 &amp;quot;실수로&amp;quot;를 유지한 화면입니다. 픽업 지점을 변경하시겠습니까? 나는 그것이 Lynx에 의한 것이 아니라 단지 형편없는 비즈니스 요구 사항에 의한 것이 아니기를 바랍니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;entropyie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그 이름은 특히 웹과 관련된 모든 것에 사용됩니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kleiba:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;기술 분야에서는 정말 이름이 부족한 것 같습니다.&lt;p&gt;- &lt;a href="https:&amp;#x2F;&amp;#x2F;franz.com&amp;#x2F;products&amp;#x2F;allegro-common-lisp&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;franz.com&amp;#x2F;products&amp;#x2F;allegro-common-lisp&amp;#x2F;&lt;/a&gt;&lt;p&gt;- &lt;a href="https:&amp;#x2F;&amp;#x2F;lynx.invisible-island.net&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;lynx.invisible-island.net&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SoKamil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;터미널에 있는 텍스트 기반 브라우저인 Lynx Browser에 관한 것이라고 생각했습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tgebarowski:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Allegro에서 6년 넘게 자체 서버 기반 UI를 구축하고 실행한 후, 우리는 이제 질문할 때라고 결정했습니다. 다음은 무엇입니까?&lt;p&gt;작년에 LynxJS에 대한 모든 과대 광고 속에서 우리는 이것이 실제로 기대에 부응하는지 자세히 살펴보았습니다. 이 게시물에서는 실제 제작 환경에서 이를 사용하는 것에 대한 경험, 배운 교훈, 생각을 공유합니다.&lt;p&gt;모바일 아키텍처, SDUI, React 또는 크로스 플랫폼 개발에 관심이 있다면.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.allegro.tech/2026/02/battle-testing-lynx-js-at-allegro.html</guid>
+      <pubDate>Thu, 05 Feb 2026 09:49:23 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46897810</comments>
     </item>
     <item>
-      <title>러시아, '유럽 주요 위성 요격'</title>
-      <link>https://news.satnews.com/2026/02/04/russia-intercepts-europes-key-satellites-placing-nato-satellite-at-risk/</link>
-      <description>&lt;p&gt;2026년 2월 4일, NATO의 궤도 인프라를 전례 없는 위험에 빠뜨린 러시아의 일련의 공격적인 "위성 요격"을 자세히 설명하는 유럽 정보 및 우주 기관의 보고서가 공개되었습니다. 유럽 ​​보안 관계자들은 지난 3년 동안 최소 17개의 주요 유럽 위성이 러시아 신호 정보(SIGINT) 우주선에 의해 추적되거나 손상되었다고 믿고 있으며, 이는 모스크바가 기밀 데이터를 훔칠 뿐만 아니라 위성을 적극적으로 탈취하여 "지구로 돌려보낼" 수 있다는 우려를 불러일으켰습니다. 독일 우주사령부 사령관 미하엘 트라우트(Michael Traut) 소장은 이들 러시아 차량이 지상 관제소로부터 지시를 받기 위해 구형 위성이 사용하는 암호화되지 않은 통신 채널인 "명령 링크"를 가로채고 있을 가능성이 있음을 확인했습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Russia 'intercepts Europe's key satellites'&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46896785"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.satnews.com/2026/02/04/russia-intercepts-europes-key-satellites-placing-nato-satellite-at-risk/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://news.satnews.com/2026/02/04/russia-intercepts-europes-key-satellites-placing-nato-satellite-at-risk/</guid>
-      <pubDate>Thu, 05 Feb 2026 07:30:27 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46896785</comments>
+      <title>ClawHub에서 가장 많이 다운로드된 스킬에는 악성 코드가 포함되어 있습니다.</title>
+      <link>https://1password.com/blog/from-magic-to-malware-how-openclaws-agent-skills-become-an-attack-surface</link>
+      <description>&lt;p&gt;짧은 버전: OpenClaw처럼 작동하는 에이전트 게이트웨이는 파일, 도구, 브라우저, 터미널 및 종종 생각하는 방식과 구축 중인 내용을 캡처하는 장기 "메모리" 파일에 실제로 액세스할 수 있기 때문에 강력합니다. 스킬은 그냥 마크다운입니다. 이는 악의적인 "기술"이 단순한 OpenClaw 문제가 아니라는 것을 의미합니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Top downloaded skill in ClawHub contains malware&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46898615"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://1password.com/blog/from-magic-to-malware-how-openclaws-agent-skills-become-an-attack-surface'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://1password.com/blog/from-magic-to-malware-how-openclaws-agent-skills-become-an-attack-surface</guid>
+      <pubDate>Thu, 05 Feb 2026 11:45:03 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46898615</comments>
     </item>
   </channel>
 </rss>
