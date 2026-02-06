@@ -6,76 +6,87 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 06 Feb 2026 04:52:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Feb 2026 07:01:37 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>GitHub Actions 正在慢慢杀死工程团队</title>
-      <link>https://www.iankduncan.com/engineering/2026-02-05-github-actions-killing-your-team/</link>
-      <description>&lt;p&gt;它只是看你的薄片。现在是你的下午了。该页面考虑您的请求。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; GitHub Actions is slowly killing engineering teams&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46908491"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.iankduncan.com/engineering/2026-02-05-github-actions-killing-your-team/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Unix 可以原子地做的事情 (2010)</title>
+      <link>https://rcrowley.org/2010/01/06/things-unix-can-do-atomically.html</link>
+      <description>&lt;p&gt;如果 newpath 已经存在，这将失败并显示错误代码 EEXIST，这使得这是一种在所有都同意名称 newpath 的线程或进程之间锁定文件的有用机制。如果 newpath 已经存在，这将失败并显示错误代码 EEXIST，这使得这与也适用于目录的 link(2) 完美类比。 ) 如果路径名存在，O_EXCL 指示此操作失败并显示错误代码 EEXIST。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Things Unix can do atomically (2010)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46909468"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://rcrowley.org/2010/01/06/things-unix-can-do-atomically.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 14 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xyst:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;这是地球上最富有的公司之一制作的产品。&lt;p&gt;nit：不，它是由一群热爱 git 并希望制作一个分布式远程 git 存储库的工程师制作的。但它被地球上最富有但最糟糕的公司收购了，然后又被它所改造。&lt;p&gt;否则这篇文章的其余部分与我共鸣。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;harikb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Ian Duncan，我想象你在 Netflix 的舞台上以单口喜剧表演的形式呈现此节目。&lt;p&gt;我对 Github Actions 的不满是，如果我想做一些简单的事情，比如制作一个“版本”，我必须通过 Google 搜索并从互联网随机安装软件包。是的，这个 rando1234 可能是 github 的创始员工，而且一切都很安全。但为什么这么基本的东西需要外部 JS 呢？包裹？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zdw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我倾向于不同意这一点，因为它看起来像是 Nix&amp;#x2F;Buildkite 的广告...&lt;p&gt;如果您的 CI 调用不仅仅是在构建工具（make 等）上运行脚本或目标，其中存在真正的构建&amp;#x2F;测试步骤并且可以在开发工作站上本地运行，那么您正在使 CI 系统比它需要的复杂得多。&lt;p&gt;CI 作业最多应该提供一个环境和配置（凭证、端点等），就像开发人员在本地所做的那样。&lt;p&gt;这也使您的代码与 CI 无关 - 在系统之间进行切换相当简单，因为它们包含最少的逻辑，仅包含命令调用。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pmontra:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;但每个人都在使用它！&lt;p&gt;我的所有客户都在 bitbucket 上。&lt;p&gt;其中一个甚至不使用 CI。我们在本地运行测试，并从自托管的 TeamCity 实例进行部署。它是一个具有服务器端 HTML 生成功能的 Django 应用程序，因此部署会将文件复制到服务器并重新启动。我们在 bash 中实现了一个类似 Capistrano 的系统，它在 Covid 之前就一直在工作。没问题。&lt;p&gt;另一个使用 bitbucket 管道在 git 推送分支以进行预生产和生产后运行测试，并将其部署到这些系统。他们使用 Capistrano，因为它是一个 Rails 应用程序（带有 Vue 前端）。出于某种原因，集成测试在 CI 实例和 Mac 上都无法可靠运行，因此我们仅在我的 Linux 笔记本电脑上运行它们。它自 2021 年开始投入生产。&lt;p&gt;一位我不再合作的客户确实使用了 Travis，还有一位我不记得的客户。它还在那里运行构建，因为他们使用 Elixir 和 Phoenix，所以我们正在创建一个版本并部署它。不仅仅是文件复制。这是这群部署系统中最令人不快的。从推送到部署浪费了大量时间。&lt;p&gt;在所有这些情况下，日志都不可避免地很长，但不会导致浏览器崩溃。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gchamonlive:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;你已经升级了引擎，但你仍然驾驶着打开收音机时着火的汽车。&lt;p&gt;修复高温收音机错误肯定会带来其他问题，所以它们不会，因为某些工作流程将依赖于打开收音机会使汽车着火的事实：&lt;a href="https:&amp;#x2F;&amp;#x2F;xkcd.com&amp;#x2F;1172&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;xkcd.com&amp;#x2F;1172&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anttiharju:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如今 Github 的可靠性越来越低，这使得这一点变得更加真实。&lt;p&gt;在过去的一周中，我看到：&lt;p&gt;- 操作签出莫名其妙地失败，有时在第三次重试（内置重试逻辑）时成功&lt;p&gt;- 释放 ci 作业调度_两次_，导致失败，因为 ofc 版本已经存在&lt;p&gt;- 作业只是没有调度。有时是 40m。&lt;p&gt;我已经积极使用它好几年了，抛开作者所说的一切，只是基本可靠性正在走下坡路。&lt;p&gt;我想 Zig 是对的。太糟糕了，他们错过了builtkite，根据我的经验，Codeberg 并没有那么可靠或快速。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tayo42:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;互联网让我感觉自己是唯一不介意詹金斯的人。我不知道它只是完成了我的工作。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tagraves:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望作者能够检查 RWX——他们说他们已经检查了大多数 CI 系统，但我认为他们还没有尝试过我们。我们拥有他们称赞 Buildkite 的一切，除了管理您自己的计算（这很快就会到来！）。但我们还专门考虑了 CI 构建了自己的容器执行模型。我们已经看到太多的 Buildkite 管道需要 10 分钟的 Docker 构建（！），然后必须通过 40 个并行步骤拉取一个巨大的 Docker 容器，开销是巨大的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;peterldowns:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;完全同意所有这些。确实写得很好。现在在工作中，我们使用 Actions + WarpBuild 相处得很好，但如果事情开始变得烦人，我就会切换到 Buildkite，我以前用过它并且非常喜欢它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;verdverm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我同意这些抱怨，但 buildkite 不是答案&lt;p&gt;如果我不能完全自行托管一个开源项目，它就不是我下一个 ci 系统的竞争者&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;danpalmer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我使用了作者在这里提供的许多 CI 系统，并且做了很多 CircleCI 和 GitHub Actions，但我没有得出完全相同的结论。但需要注意的是，我没有使用过作者似乎推荐的 Buildkite。&lt;p&gt;多年来，CI 工具已经从专家变成了通才。 Jenkins 最初非常擅长构建 Java 项目，除此之外就没什么了，Travis 对于 Rails 项目有明确的步骤，CircleCI 当年也是如此。&lt;p&gt;这是一个死胡同。 CI 并不特殊。作为一个社区，我们意识到 CI 工作实际上是多种多样的，将 Web 框架甚至语言的知识编码到 CI 系统中是一个坏主意，CI 系统变成了_通用工作流编排器_，上面有一些日志记录和通过/失败 UI。这是一件好事！&lt;p&gt;我精心策划了从 CircleCI 2 到 GitHub Actions 的迁移，正是因为 CircleCI 搞砸了从专家模型到通才模型的迁移，而且我们当时无法在他们的模型中表达高性能且正确的 CI 系统。我们可以用 GHA 来表达它。&lt;p&gt;GHA 无论如何都不是没有缺点，但是……日志浏览器？那又怎样，只要下载文件，至少 CI 可以工作了。 YAML？所以它不完全是 yaml，它们不是第一个或最后一个在配置格式上添加额外语义的人，所有 CI 系统都有特性。插件是 Docker 镜像吗？也许是重量级的，但说实话，这并不是一个糟糕的用户体验。&lt;p&gt;有什么重要的？拥有您的计算能力？是的！这是很重要的一点，但你可以在所有主要的 CI 系统上做到这一点，这并不是一个区别。动态管道？这真的很巧妙，也是选择 Buildkite 的一个很好的理由。&lt;p&gt;从我使用这些平台的经验中得到的结论是，Actions 在真正重要的方面_相当不错_，而在大多数其他方面都不是问题。如果我要创办一家公司，我可能会选择 Buildkite，当然，但对于我的开源项目来说，Actions 很好。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rvz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;如果您是一个小团队，拥有简单的应用程序和简单的测试，那么可能没问题。我不会告诉你把它撕掉。&lt;p&gt;&gt;但是，如果您正在运行一个真正的生产系统，如果您有一个单一存储库，如果您的构建时间超过五分钟，如果您关心供应链安全，如果您想真正拥有自己的 CI：请查看 Buildkite。&lt;p&gt;与我在 2020 年 [0] 中关于 GitHub 与自托管的说法完全一致。对于个人来说没什么大不了的，但对于大型企业来说，如果你能在 CI 每周下降的情况下推动这一关键变革，那就是个问题。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=22867803"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=22867803&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;slackfan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;无论如何，所有 CI 都只是对 bash 脚本的不同程度的废话。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;apothegm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是我对cloudformation的大致感受。我们可以把 Terraform 拿回来吗？安塞布尔，甚至？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.iankduncan.com/engineering/2026-02-05-github-actions-killing-your-team/</guid>
-      <pubDate>Fri, 06 Feb 2026 02:58:31 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46908491</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sega_sai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于任何类型的基于文件系统的同步来说，rename() 无疑是最容易使用的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;exac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;抱歉，我通过更改符号链接以指向新目录来部署新代码的可能性为零。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;0xbadcafebee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您可以使用 ln 原子性来实现简单、可移植的锁定系统： &lt;a href="https:&amp;#x2F;&amp;#x2F;gist.github.com&amp;#x2F;pwillis-els&amp;#x2F;b01b22f1b967a228c31db3cf2789ee13" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;gist.github.com&amp;#x2F;pwillis-els&amp;#x2F;b01b22f1b967a228c31db3cf...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://rcrowley.org/2010/01/06/things-unix-can-do-atomically.html</guid>
+      <pubDate>Fri, 06 Feb 2026 05:29:55 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46909468</comments>
     </item>
     <item>
-      <title>我逆转了《幻想之塔》的反作弊驱动程序：从未加载过 BYOVD 工具包</title>
-      <link>https://vespalec.com/blog/tower-of-flaws/</link>
-      <description>&lt;p&gt;内核反作弊真正关心的不是监视，而是它们是在最高权限级别运行的安全关键代码。当它们写得不好时，它们就会成为攻击面，当它们失败时，它们可能会导致您的整个系统崩溃（例如，即使使用 VMProtect，这些漏洞仍然存在。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; I reversed Tower of Fantasy's anti-cheat driver: a BYOVD toolkit never loaded&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46908671"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://vespalec.com/blog/tower-of-flaws/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>系统思维</title>
+      <link>http://theprogrammersparadox.blogspot.com/2026/02/systems-thinking.html</link>
+      <description>&lt;p&gt;他们现在遇到的各种丑陋的问题都将不存在。更多的时间，更多的努力，更多的思考。最后一刻的严重恐慌是因为知道代码并没有真正按照应有的方式工作，而且可能永远不会。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Systems Thinking&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46909439"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='http://theprogrammersparadox.blogspot.com/2026/02/systems-thinking.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bri3d:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一篇很棒的文章。&lt;p&gt;看起来这个驱动程序也被积极地用于恶意软件：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.fortinet.com&amp;#x2F;blog&amp;#x2F;threat-research&amp;#x2F;interlock-ransomware-new-techniques-same-old-tricks" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.fortinet.com&amp;#x2F;博客&amp;#x2F;威胁研究&amp;#x2F;互锁-rans...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://vespalec.com/blog/tower-of-flaws/</guid>
-      <pubDate>Fri, 06 Feb 2026 03:22:29 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46908671</comments>
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iafan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;关于如何构建真正庞大、复杂的东西，软件开发中有两种主要思想流派。&lt;p&gt;&gt;如今，最流行的一种方法是随着时间的推移逐渐提高复杂性。你从小事做起，不断增加。&lt;p&gt;&gt;另一种学派是，你提前制定一个巨大的规范，可以完全解决所有的复杂性，然后构建它。&lt;p&gt;我认为人工智能将推动人们构建软件的方式发生有趣的转变。我们将看到创建和迭代规范而不是实现本身的趋势。&lt;p&gt;从某种意义上说，规范是软件可能的最紧凑的定义。每“行”的知识密度是比任何编程语言都要高得多。这使得规范更容易阅读、推理和迭代——无论是与 AI 还是与同行一起。&lt;p&gt;我可以想象开源项目将完全围绕规范而不是实现。这些规范可以进行讨论，人们可以贡献想法而不是拉取请求。想法越清晰，被“合并”的机会就越高。纳入工作规范。对于维护者来说，审查“想法合并请求”是很重要的。在更新规范之前与人工智能助手讨论它们会比审查代码更容易。&lt;p&gt;规范可以像软件实现一样进行版本控制，包括运行版本和稳定版本。它们可能包括列出特定于平台的警告或库建议的附录。有了良好的规范，开发人员就可以用任何语言构建自己的工具。人们将能够获得规范的新版本，将其与当前版本进行比较，并要求人工智能实现差异或讨论您个人需要什么和不需要什么。同样，“修补”也会更容易。与修改现成的软件相比，您可以根据自己的要求制定规范。&lt;p&gt;有趣的时光。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ArchieScrivener:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;概述的进化方法似乎也源于订阅业务模型所需的持续交付范例。我认为工程是更好的方法，因为精益敏捷生产方法诞生于最终结果完整的物理工程项目。进化似乎更加混乱，因为“开发操作”的不正确范式导致了进化。人工智能辅助似乎有利于工程方法，因为团队和个人的摩擦减少了，有利于快速可行性测试和完整规划。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qwertyuiop_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;软件不能像摩天大楼一样建造，因为赞助商知道介质的可塑性，并将其视为一块粘土，通过加水可以塑造成其他东西。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bestham:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“一个有效的复杂系统总是从一个有效的简单系统发展而来。相反的命题似乎也是正确的：一个从头开始设计的复杂系统永远不会有效，也无法使其有效。你必须重新开始，从一个有效的简单系统开始。”
+加尔定律&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;readthenotes1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;支持大型前期设计演进的一个主要因素是系统需求随时间的变化。即使在大型军事项目中，显然也会有“发现”——而且时间越长，需求变化就越多。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">http://theprogrammersparadox.blogspot.com/2026/02/systems-thinking.html</guid>
+      <pubDate>Fri, 06 Feb 2026 05:24:36 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46909439</comments>
     </item>
     <item>
-      <title>我没有见到杰弗里·爱泼斯坦的那段时间</title>
-      <link>https://scottaaronson.blog/?p=9534</link>
-      <description>&lt;p&gt;他现在所拥有的恶名的1%。既然你不那么在乎钱，他们至少买不到你。令人惊讶的是，直到昨晚我才完全忘记了这一切的发生。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The time I didn't meet Jeffrey Epstein&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46903929"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://scottaaronson.blog/?p=9534'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Show HN：Artifact Keeper – Rust 中的开源 Artifactory/Nexus 替代方案</title>
+      <link>https://github.com/artifact-keeper</link>
+      <description>&lt;p&gt;WASM 插件系统 - 通过 WebAssembly 使用自定义格式处理程序进行扩展。具有每个存储库权限的 RBAC。快速入门 # 克隆并使用 Docker Compose git clone https://github 开始。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Artifact Keeper – Open-Source Artifactory/Nexus Alternative in Rust&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46909037"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/artifact-keeper'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wewewedxfgdf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果爱泼斯坦是一名俄罗斯特工，这将&lt;i&gt;完美&lt;/i&gt;。&lt;p&gt;- 他从哪里得到钱？&lt;p&gt;- 这整个狡猾的设置符合谁的利益？&lt;p&gt;- 特朗普的关系。&lt;p&gt;- 特朗普俄罗斯的关系。&lt;p&gt;也许我想象，但一切似乎都是一致的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;niobe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;吉利（缺乏）关联！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;martythemaniak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;如果比尔·盖茨和拉里·萨默斯能向我妈妈寻求建议，他们就可以避免很多悲伤。&lt;p&gt;真正的教训不是“听妈妈的话”，而是“性格很重要”。不管某人有多同意你，他们有多聪明，他们有多富有，他们有多少伟大的想法等等，一个腐烂的性格最终会腐烂他周围的一切。技术迷、书呆子和极客对想法如此着迷，他们甚至看不到想法来自于什么样的人。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;soperj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;如果比尔·盖茨和拉里·萨默斯能向我妈妈寻求建议，他们就可以避免很多悲伤。&lt;p&gt;这无疑会给比尔带来任何改变。那里有一个模式，而这只是该模式的一部分。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;moralestapia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;摘自其中一封相关电子邮件（由 JE 撰写）：&lt;p&gt;&lt;i&gt;“很棒的提案”，但是，它需要更多地围绕欺骗 alice -bob. 通信. 病毒
-黑客攻击、防御和渗透之间的战斗..计算已经在各种方面得到了研究
-字段。伪装、模仿、信号处理及其非随机性、错误信息。 （
-反事实 - 但目前正确答案）..计算不涉及防御
-拦截是生物系统的一个关键领域，如果捕食者破解了密码，它通常可以
-以折扣价积累猎物的自由能量。自欺欺人，（防止意外发生所必需的
-固有算法的披露。我们需要更多的黑客，也对生物黑客感兴趣，
-安全等等。”&lt;/i&gt;&lt;p&gt;该死！我曾经和一个和他一模一样的人一起工作过。不仅是写作，他的演讲风格也是这样，围绕一个话题语无伦次、松散的想法。具有讽刺意味的是，他越是努力表现得聪明，他嘴里吐出的东西就越白痴。&lt;p&gt;我们正在研究 GPU，试图找到优化 GPU 代码的方法，他给团队召开了一次非正式会议，严肃地告诉我们，“为什么你不能，……，从服务器上移除 GPU，然后将它们打开，把它们从外面拿出来，然后再放回去，看看它们是否表现得更好”。 ：O&lt;p&gt;我不知道这是否有名字，我只是认为这家伙患有精神分裂症。很高兴我离开了那个地方。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;trhway:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;Scott Aaronson 出生于 1981 年 5 月 21 日，2011 年就满 30 岁了。会议的主题可以是：“赶紧和 Scott Aaronson 一起思考，趁他还 20 多岁，还不是 30 多岁的可怜的过头老头。”这提供了另一个庆祝的好机会。&lt;p&gt;也许有人会在爱泼斯坦及其同事的电子邮件等上训练一个模型。这将有助于研究这些精神病患者的运作方式。头脑&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JumpCrisscross:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; &lt;i&gt;补充：“也许你会了解杰弗里和他的背景和处境。”&lt;/i&gt;&lt;p&gt;这是最有趣的一点。介绍人把这一点放在前面。也许这是尼日利亚王子的骗局逻辑？或者也许硅谷真的对恋童癖者有这么多同情[1]。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.nytimes.com&amp;#x2F;2026&amp;#x2F;02&amp;#x2F;05&amp;#x2F;商业&amp;#x2F;epstein-investments-palantir-coinbase-thiel.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.nytimes.com&amp;#x2F;2026&amp;#x2F;02&amp;#x2F;05&amp;#x2F;商业&amp;#x2F;epstein-investme...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://scottaaronson.blog/?p=9534</guid>
-      <pubDate>Thu, 05 Feb 2026 19:29:41 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46903929</comments>
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stroebs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我是 JFrog 平台的忠实用户，该平台拥有 Enterprise+、Xray、他们的新 Curation 许可证，而且我的组织每年在 Artifact 存储上的支出超过 50 万美元。不包括我照顾它的时间。我很想看到它的结束，我希望你能够围绕这个建立一个社区。&lt;p&gt;我们支付大笔许可费的部分原因是，当它不可避免地出现故障时，我们可以求助于某人，因为我们以前所未有的方式使用它。去年 1 月，我们在 S3 中使用了 30TB 的工件存储。今天是 140TB。&lt;p&gt;您从哪里获取 CVE 数据？构建的工件会在事后更新其 CVE 吗？您是否有基于 CVE、许可证、工件年龄等的工件阻止策略？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;burakemir:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感谢分享。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/artifact-keeper</guid>
+      <pubDate>Fri, 06 Feb 2026 04:12:59 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46909037</comments>
+    </item>
+    <item>
+      <title>等待 Postgres 19：更好的规划器提示路径生成策略 [视频]</title>
+      <link>https://www.youtube.com/watch?v=QLb3nhIy2Lc</link>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=QLb3nhIy2Lc</guid>
+      <pubDate>Fri, 06 Feb 2026 03:25:51 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46908700</comments>
+    </item>
+    <item>
+      <title>生成笔训练变压器</title>
+      <link>https://theodore.net/projects/Polargraph/</link>
+      <description>&lt;p&gt;对于我第一次接触人工智能来说，这感觉像是一个非常可靠的项目。因此，当任一电机旋转时，该吊篮就会移动。吊舱组装¶ 吊舱是这头野兽真正的心脏，所以我们首先进行它的组装。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Generative Pen-Trained Transformer&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46909122"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://theodore.net/projects/Polargraph/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://theodore.net/projects/Polargraph/</guid>
+      <pubDate>Fri, 06 Feb 2026 04:28:08 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46909122</comments>
+    </item>
+    <item>
+      <title>Show HN：Calfkit – 用于在 Kafka 上构建分布式、事件驱动的 AI 代理的 SDK</title>
+      <link>https://github.com/calf-ai/calfkit-sdk</link>
+      <description>&lt;p&gt;py 从 calfkit 导入 asyncio。节点从 calfkit 导入 agent_tool。经纪人从 calfkit 导入 BrokerClient。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Calfkit – an SDK to build distributed, event-driven AI agents on Kafka&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46906737"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/calf-ai/calfkit-sdk'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://github.com/calf-ai/calfkit-sdk</guid>
+      <pubDate>Thu, 05 Feb 2026 23:10:12 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46906737</comments>
     </item>
   </channel>
 </rss>

@@ -6,76 +6,87 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 06 Feb 2026 04:52:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Feb 2026 07:01:37 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>GitHub Actions がエンジニアリング チームを徐々に潰しつつある</title>
-      <link>https://www.iankduncan.com/engineering/2026-02-05-github-actions-killing-your-team/</link>
-      <description>&lt;p&gt;それはあなたのフレークを見るだけです。今はあなたの午後です。ページはあなたのリクエストを考慮します。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; GitHub Actions is slowly killing engineering teams&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46908491"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.iankduncan.com/engineering/2026-02-05-github-actions-killing-your-team/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Unix がアトミックにできること (2010)</title>
+      <link>https://rcrowley.org/2010/01/06/things-unix-can-do-atomically.html</link>
+      <description>&lt;p&gt;newpath がすでに存在する場合、これはエラー コード EEXIST で失敗します。これは、newpath という名前に同意できるスレッドまたはプロセス間でファイルをロックするための便利なメカニズムになります。 newpath がすでに存在する場合、これはエラー コード EEXIST で失敗します。これは、ディレクトリに対しても機能する link(2) と完全に類似しています。 ) O_EXCL は、パス名が存在する場合、エラー コード EEXIST で失敗するように指示します。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Things Unix can do atomically (2010)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46909468"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://rcrowley.org/2010/01/06/things-unix-can-do-atomically.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 14 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xyst:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;これは地球上で最も裕福な企業の 1 つによって作られた製品です。&lt;p&gt;nit: いいえ、Git を愛し、分散リモート Git リポジトリを作成したいと考えていたエンジニアのグループによって作られました。しかし、それは地球上で最も裕福な最悪の会社によって買収され、その後、改造されました。&lt;p&gt;そうでなければ、この記事の残りの部分は私に共感を覚えます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;harikb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;イアン ダンカン、私はあなたがステージ上でこれを Netflix のスタンダップ コメディ ショーとして配信しているところを想像していました。&lt;p&gt;Github Actions に関して私が不満に感じていたのは、「リリース」を作成するような単純なことをしたい場合、インターネットのランドスケープからパッケージを検索してインストールしなければならないことでした。はい、この rando1234 が github の創設者の従業員である可能性はありますが、すべて安全です。しかし、なぜこれほど基本的なものに外部 JS が必要なのでしょうか?パッケージ？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zdw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Nix&amp;#x2F;Buildkite の広告のように見えるので、私はこれに反対する傾向があります...&lt;p&gt;CI 呼び出しが、実際のビルド&amp;テスト手順が存在し、開発ワークステーション上でローカルに実行できるビルド ツール (make など) でスクリプトやターゲットを実行する以上のものである場合、CI システムを必要以上に複雑にすることになります。&lt;p&gt;CI ジョブは、せいぜい環境を提供する必要があります。 &lt;p&gt;これにより、コードが CI に依存しなくなります。システム間の移動は、コマンドの呼び出しだけで最小限のロジックが含まれるため、非常に簡単です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pmontra:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;しかし、誰もがそれを使用しています。&lt;p&gt;私の顧客は全員 bitbucket を使用しています。&lt;p&gt;そのうちの 1 人は CI さえ使用していません。テストはローカルで実行し、自己ホスト型の TeamCity インスタンスからデプロイします。これはサーバー側で HTML を生成する Django アプリであるため、デプロイではファイルをサーバーにコピーして再起動します。私たちは Capistrano に似たシステムを bash に実装しており、Covid 前から機能しています。問題ありません。&lt;p&gt;もう 1 つは、bitbucket パイプラインを使用して、実稼働前および実稼働用のブランチに git プッシュした後にテストを実行し、それらのシステムにデプロイします。彼らは、Rails アプリ (Vue フロントエンドを備えた) であるため、Capistrano を使用しています。何らかの理由で、統合テストは CI インスタンスでも Mac でも確実に実行されないため、私の Linux ラップトップでのみ統合テストを実行しています。 2021 年から運用されています。&lt;p&gt;もう仕事をしていない顧客は Travis を使用していましたが、もう 1 つは覚えていません。彼らはPhoenixでElixirを使用していたため、そこでビルドも実行され、リリースを作成してデプロイしていました。単なるファイルのコピーではありません。これは、一連のデプロイ システムの中で最も不快なものでした。プッシュからデプロイまでに多くの時間が無駄になります。&lt;p&gt;これらの場合、ログは必然的に長くなりますが、ブラウザがクラッシュすることはありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gchamonlive:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;エンジンをアップグレードしましたが、ラジオをオンにすると車が発火する車をまだ運転しています。&lt;p&gt;そして、パイロラジオのバグを修正すると、確かに別の問題が発生するため、解決されません。一部のワークフローは、ラジオをオンにすると車が発火するという事実に依存しているためです。&lt;a href="https:&amp;#x2F;&amp;#x2F;xkcd.com&amp;#x2F;1172&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;xkcd.com&amp;#x2F;1172&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anttiharju:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最近では Github の信頼性がますます低下しているため、これがますます現実的になってきています。&lt;p&gt;ここ 1 週間で、次のような現象が見られました。&lt;p&gt;- アクション&amp;#x2F;チェックアウトが不可解に失敗し、（組み込みの再試行ロジックの）3 回目の再試行で成功する場合もあります&lt;p&gt;- リリースがすでに存在するため、スケジュールされている CI ジョブを 2 回リリースし、失敗します&lt;p&gt;- ジョブがスケジュールされていないだけです。時には 40 メートルの場合もあります。&lt;p&gt;私は数年間積極的にそれを使用してきましたが、著者が言っていることはすべて脇に置き、基本的な信頼性が下り坂になっているだけです。&lt;p&gt;ジグは正しかったと思います。 buildkite を逃したのが残念ですが、私の経験では Codeberg はそれほど信頼性が高く、高速でもありませんでした。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tayo42:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;インターネットのせいで、ジェンキンスのことを気にしていないのは私だけのように感じられます。それは仕事を終わらせるだけです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tagraves:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;著者が RWX をチェックしてくれることを願っています -- 彼らはほとんどの CI システムをチェックしたと言っていますが、私はまだ試していないと思います。私たちは、独自のコンピューティングの管理を除いて、Buildkite を賞賛するすべての機能を備えています (これは間もなく登場します!)。ただし、特に CI を念頭に置いて独自のコンテナ実行モデルも構築しました。 10 分間の Docker ビルドを事前に行い (!)、その後 40 の並列ステップにわたって巨大な Docker コンテナをプルする必要があり、オーバーヘッドが膨大になる Buildkite パイプラインが多すぎます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;peterldowns:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これらすべてに完全に同意します。本当によく書かれています。今のところ仕事では Actions + WarpBuild でうまくやっていますが、面倒になり始めたら Buildkite に切り替えるつもりです。Buildkite は以前使っていて非常に気に入っています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;verdverm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私もその不満には同意しますが、buildkite が答えではありません&lt;p&gt;オープンソース プロジェクトを完全に自己ホストできない場合、それは次の CI システムの候補ではありません&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;danpalmer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は著者がここで使用している CI システムの多くを使用し、CircleCI と GitHub Actions も数多く実行してきましたが、全く同じ結論には至りませんでした。ただし、1 つ注意点があります。私は、作者が推奨していると思われる Buildkite を使用したことがありません。&lt;p&gt;長年にわたり、CI ツールはスペシャリストからジェネラリストになりました。 Jenkins は元々 Java プロジェクトの構築には非常に優れていましたが、それ以外はあまり得意ではありませんでした。Travis は Rails プロジェクト用の明示的な手順を持っていました。CircleCI も当時は同様でした。&lt;p&gt;これは行き止まりでした。 CIは特別なものではありません。私たちはコミュニティとして、実際には CI の仕事は多様であること、Web フレームワークや言語の知識を CI システムにエンコードするのは悪い考えであることに気づき、CI システムは、いくつかのログ記録とパス&amp;フェイル UI がその上に追加された「汎用ワークフロー オーケストレーター」になったことに気づきました。これは良いことでした。&lt;p&gt;私は CircleCI 2 から GitHub Actions への移行を調整しました。正確に言うと、CircleCI はスペシャリスト モデルからジェネラリスト モデルへの移行に失敗し、当時私たちは彼らのモデルでパフォーマンスが高く正しい CI システムを表現できなかったからです。それを GHA で表現することもできます。&lt;p&gt;GHA にも欠点がないわけではありませんが、... ログ ブラウザはどうでしょうか?ファイルをダウンロードするだけで、少なくとも CI は動作します。 YAML?したがって、これは完全な yaml ではなく、構成形式に追加のセマンティクスを追加したのは最初でも最後でもありません。すべての CI システムには特異性があります。プラグインは Docker イメージですか?おそらく重いかもしれませんが、正直に言って、これは悪い UX ではありません。&lt;p&gt;何が問題なのでしょうか?自分のコンピューティングを所有していますか?うん！これは重要なことですが、すべての主要な CI システムで行うことができ、差別化要因にはなりません。動的パイプライン?これは非常に優れており、Buildkite を選択する十分な理由になります。&lt;p&gt;これらのプラットフォームの経験から得た結論は、Actions は本当に重要な点では「非常に優れており」、他のほとんどの点では問題ないということです。私が会社を立ち上げるとしたら、確かに Buildkite を選択するでしょうが、オープンソース プロジェクトの場合は、Actions が適しています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rvz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;シンプルなアプリと単純なテストを行う小規模なチームであれば、おそらく問題ありません。取り壊せとは言いません。&lt;p&gt;&amp;gt;しかし、実際の本番システムを実行している場合、モノリポジトリがある場合、ビルドに 5 分以上かかる場合、サプライ チェーンのセキュリティを気にする場合、実際に CI を所有したい場合は、Buildkite を見てください。&lt;p&gt;これは、私が 2020 年 [0] で GitHub とセルフホスティングについて述べたこととまったく一致しています。個人にとっては大したことではありませんが、大企業にとっては、CI が毎週ダウンしているときにその重要な変更をプッシュできるかどうかは問題です。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=22867803"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=22867803&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;slackfan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;いずれにしても、すべての CI は、bash スクリプトに関するさまざまなレベルのでたらめにすぎません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;apothegm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;雲の形成について私は大まかにこんな感じです。 Terraform を戻してもらえますか? Ansible ですら?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.iankduncan.com/engineering/2026-02-05-github-actions-killing-your-team/</guid>
-      <pubDate>Fri, 06 Feb 2026 02:58:31 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46908491</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sega_sai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;rename() は、あらゆる種類のファイル システム ベースの同期に使用するのが最も簡単です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;exac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;申し訳ありませんが、新しいディレクトリを指すようにシンボリックリンクを変更して新しいコードをデプロイする可能性はゼロです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;0xbadcafebee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;シンプルでポータブルな (っぽい) ロック システムに「ln」アトミック性を使用できます: &lt;a href="https:&amp;#x2F;&amp;#x2F;gist.github.com&amp;#x2F;pwillis-els&amp;#x2F;b01b22f1b967a228c31db3cf2789ee13" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;gist.github.com&amp;#x2F;pwillis-els&amp;#x2F;b01b22f1b967a228c31db3cf...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://rcrowley.org/2010/01/06/things-unix-can-do-atomically.html</guid>
+      <pubDate>Fri, 06 Feb 2026 05:29:55 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46909468</comments>
     </item>
     <item>
-      <title>タワー オブ ファンタジーのアンチチート ドライバーを元に戻しました: BYOVD ツールキットがロードされませんでした</title>
-      <link>https://vespalec.com/blog/tower-of-flaws/</link>
-      <description>&lt;p&gt;カーネルのアンチチートに関する本当の懸念は監視ではなく、それらが最高の特権レベルで実行されるセキュリティクリティカルなコードであることです。脆弱性の記述が不十分だと攻撃対象となり、失敗するとシステム全体がダウンする可能性があります (例: VMProtect を使用しても、これらの脆弱性は依然として存在します。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; I reversed Tower of Fantasy's anti-cheat driver: a BYOVD toolkit never loaded&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46908671"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://vespalec.com/blog/tower-of-flaws/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>システム思考</title>
+      <link>http://theprogrammersparadox.blogspot.com/2026/02/systems-thinking.html</link>
+      <description>&lt;p&gt;彼らが現在抱えているあらゆる種類の醜い問題は存在しないでしょう。より多くの時間、より多くの努力、より多くの思考。土壇場での深刻なパニックは、コードが実際には期待どおりに機能しない、そしておそらく今後も機能しないことがわかったときに発生します。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Systems Thinking&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46909439"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='http://theprogrammersparadox.blogspot.com/2026/02/systems-thinking.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bri3d:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは素晴らしい記事です。&lt;p&gt;このドライバーはマルウェアでも積極的に使用されているようです: &lt;a href="https:&amp;#x2F;&amp;#x2F;www.fortinet.com&amp;#x2F;blog&amp;#x2F;threat-research&amp;#x2F;interlock-ransomware-new-techniques-same-old-tricks" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.fortinet.com&amp;#x2F;blog&amp;#x2F;threat-research&amp;#x2F;interlock-rans...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://vespalec.com/blog/tower-of-flaws/</guid>
-      <pubDate>Fri, 06 Feb 2026 03:22:29 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46908671</comments>
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iafan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;本当に大規模で複雑なものを構築する方法について、ソフトウェア開発には 2 つの主要な考え方があります。&lt;p&gt;&amp;gt;最近では、時間の経過とともに徐々に複雑さを進化させる方法が最も一般的です。小さなことから始めて、継続的に追加していきます。&lt;p&gt;&amp;gt;もう 1 つの流派は、すべての複雑さを完全に処理できる巨大な仕様を事前に策定してから構築するというものです。&lt;p&gt;AI は、人々がソフトウェアを構築する方法に興味深い変化をもたらすと思います。実装そのものではなく、仕様を作成して反復する方向に進むでしょう。&lt;p&gt;ある意味、仕様は、ソフトウェアを可能な限りコンパクトに定義したものです。 「行」あたりの知識密度は次のようになります。どのプログラミング言語よりもはるかに高いです。これにより、AI を使用する場合でも、他のユーザーを使用する場合でも、仕様を読み、推論し、反復することが容易になります。&lt;p&gt;オープンソース プロジェクトは、実装ではなく完全に仕様を中心に展開することが想像できます。これらの仕様については、プル リクエストの代わりに意見を投稿して議論することもできます。アイデアがより明確に表現されているほど、アイデアが「統合」される可能性が高くなります。作業仕様に組み込みます。メンテナーの場合は、「アイデアのマージ リクエスト」を確認してください。仕様を更新する前に AI アシスタントと話し合うほうが、コードをレビューするよりも簡単です。&lt;p&gt;仕様は、ソフトウェア実装と同じように、実行中のバージョンと安定したリリースでバージョン管理できます。プラットフォーム固有の注意事項やライブラリの推奨事項をリストした付録が含まれる場合があります。適切な仕様があれば、開発者は任意の言語で独自のツールを構築できます。新しいバージョンの仕様を入手して、現在の仕様と比較し、AI にその違いを実装するよう依頼したり、個人的に何が必要で何が不必要かを話し合ったりすることができます。同様に、「パッチ」を適用するのも簡単です。既製のソフトウェアを変更するのではなく、独自の要件に合わせて仕様を変更します。&lt;p&gt;興味深い時代です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ArchieScrivener:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;概要を説明した Evolution メソッドも、サブスクリプション ビジネス モデルに必要な継続的デリバリー パラダイムから生まれたように見えます。リーン&amp;#x2F;アジャイルな生産手法は最終結果が完成した物理工学プロジェクトから生まれたため、私はエンジニアリングの方が優れたアプローチであると主張します。 「開発運用」の不適切なパラダイムにより、進化はさらに混沌としているようです。 &lt;p&gt;AI 支援は、チームや個人間の摩擦が軽減され、迅速な実現可能性テストと完全な計画が優先されるため、エンジニアリング アプローチに有利に働くように見えます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qwertyuiop_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ソフトウェアは超高層ビルのように建てることはできません。スポンサーは媒体の可鍛性を知っていて、水を加えることで他のものに形を変えることができる粘土の塊のように扱うからです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bestham:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「機能する複雑なシステムは、機能する単純なシステムから進化したものであることが常にわかります。逆命題も真であるようです。ゼロから設計された複雑なシステムは決して機能せず、機能させることもできません。機能する単純なシステムから始めてやり直す必要があります。」
+ガルの法則&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;readthenotes1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;大規模な先行設計よりも進化を支える主な要因は、時間の経過とともにシステム要件が変動することです。軍事のような大規模なプロジェクトでも、明らかに「発見」があり、年月が経つほど、要件はより多く変化します。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">http://theprogrammersparadox.blogspot.com/2026/02/systems-thinking.html</guid>
+      <pubDate>Fri, 06 Feb 2026 05:24:36 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46909439</comments>
     </item>
     <item>
-      <title>ジェフリー・エプスタインに会わなかった頃</title>
-      <link>https://scottaaronson.blog/?p=9534</link>
-      <description>&lt;p&gt;彼が今抱えている悪名は1%だ。あなたはお金のことをあまり気にしていないので、少なくとも彼らはあなたを買うことはできません。驚くべきことに、私は昨夜までこのようなことが起こったことを完全に忘れていました。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The time I didn't meet Jeffrey Epstein&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46903929"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://scottaaronson.blog/?p=9534'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Show HN: Artifact Keeper – Rust のオープンソース Artifactory/Nexus 代替ツール</title>
+      <link>https://github.com/artifact-keeper</link>
+      <description>&lt;p&gt;WASM プラグイン システム — WebAssembly を介してカスタム形式ハンドラーで拡張します。リポジトリごとの権限を持つ RBAC。クイック スタート # クローンを作成し、Docker Compose で開始します git clone https://github.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Artifact Keeper – Open-Source Artifactory/Nexus Alternative in Rust&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46909037"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/artifact-keeper'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wewewedxfgdf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;エプスタインがロシアの工作員だったら&lt;i&gt;完璧&lt;/i&gt;でしょう。&lt;p&gt;- 彼はどこから金を手に入れたのでしょうか?&lt;p&gt;- この危険な設定全体は誰の利益に役立っているのでしょうか?&lt;p&gt;- トランプとのつながり。&lt;p&gt;- トランプとロシアとのつながり。&lt;p&gt;おそらく想像ですが、すべてが一致しているように思えます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;niobe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;連想（の欠如）によるずるい！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;martythemaniak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;ビル・ゲイツとラリー・サマーズが私の母にアドバイスを求めてさえいれば、彼らは多くの悲しみを避けられたでしょう。&lt;p&gt;実際の教訓は「母の言うことを聞く」ことではなく、「性格が重要である」ということです。誰かがどれだけあなたに同意しているか、どれだけ頭が良いか、どれだけ金持ちか、どれだけ素晴らしいアイデアを持っているかなどは関係ありません。腐った性格は最終的には周りのすべてを腐らせます。技術オタクはアイデアに夢中になるあまり、アイデアがどのような人物から出てくるのかさえ考えない傾向があります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;soperj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;ビル・ゲイツとラリー・サマーズが私の母にアドバイスを求めてくれていたら、彼らは多くの悲しみを免れたかもしれません。&lt;p&gt;それがビルにとって何かを変えたかどうかは疑問です。そこにはパターンがあり、これはそのパターンの一部にすぎません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;moralestapia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;関連する電子メールの 1 つからの抜粋 (JE が書いたもの):&lt;p&gt;&lt;i&gt;「素晴らしい提案ですが、アリス - ボブの欺瞞、コミュニケーション、ウイルスをもっと考慮する必要があります」
-ハッキング、防衛と侵入の間の戦い。計算はすでにさまざまな分野で検討されています。
-フィールド。カモフラージュ、模倣、信号処理、およびその非ランダムな性質、誤った情報。 (
-反真実ですが、現時点では正しい答えです).. 計算には、反真実に対する防御は含まれません。
-生物学的システムにとって重要な領域である傍受は、捕食者が暗号を解読した場合、通常は可能です。
-獲物のフリーエネルギーを割引価格で蓄積します。自己欺瞞（事故を防ぐために必要）
-inateアルゴリズムの開示。生物学的ハッキングにも興味のあるハッカーがもっと必要です。
-セキュリティなど」&lt;/i&gt;&lt;p&gt;くそー！私はかつて、まさにこれに似た男性と仕事をしたことがあります。文章を書くだけでなく、彼のスピーチのスタイルもそのようなもので、1 つのトピックに関して支離滅裂でゆるく束縛されたアイデアでした。皮肉なことに、彼が賢く見せようとすればするほど、彼の口から吐き出されるのは愚かな言葉ばかりでした。&lt;p&gt;私たちは GPU を使って作業し、GPU コードを最適化する方法を模索していました。彼はチームを非公式の会議に呼び、非常に真剣に私たちにこう言いました。「なぜ、このようにはできないのですか...サーバーから GPU を取り外し、それから割って開け、外に出し、元に戻してパフォーマンスが向上するかどうかを確認する」と。 :O&lt;p&gt;これに名前があるかどうかはわかりませんが、この男は統合失調症を患っているのだとばかり思いました。その場所から先に進んで本当によかったです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;trhway:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;スコット・アーロンソンは1981年5月21日生まれ。2011年には30歳になる。会議は「スコット・アーロンソンがまだ20代で、まだ30代の哀れなオーバー・ザ・ギーザーになっていないうちに急いで一緒に考えよう」というテーマに沿って開催される可能性がある。これはまた素晴らしいお祝いの機会を提供します。&lt;p&gt;誰かがエプスタインとその仲間のメールなどでモデルをトレーニングするかもしれません&amp;#x2F;。そうすれば、そのようなサイコパスの仕組みを研究できるようになるだろう。心&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JumpCrisscross:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; &lt;i&gt;追加: 「おそらく、ジェフリーと彼の背景と状況をご存知でしょう。」&lt;/i&gt;&lt;p&gt;これが最も興味深い部分です。紹介者はこれを前面に押し出しました。もしかしたら、これはナイジェリアの王子詐欺の論理かもしれません。あるいは、シリコン バレーでは小児性愛者に対する&lt;i&gt;それだけ&lt;/i&gt;の同情が本当にあるのかもしれません [1]。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.nytimes.com&amp;#x2F;2026&amp;#x2F;02&amp;#x2F;05&amp;#x2F;business&amp;#x2F;epstein-investments-palantir-coinbase-thiel.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.nytimes.com&amp;#x2F;2026&amp;#x2F;02&amp;#x2F;05&amp;#x2F;business&amp;#x2F;epstein-investme...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://scottaaronson.blog/?p=9534</guid>
-      <pubDate>Thu, 05 Feb 2026 19:29:41 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46903929</comments>
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stroebs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は Enterprise+、Xray、新しい Curation ライセンスを備えた JFrog プラットフォームのかなりのヘビー ユーザーであり、私の組織では Artifact ストレージに年間 50 万ドル以上を費やしています。私の子守りの時間は含まれません。私はこの終わりを見届けたいと思っています。そして、これを中心にコミュニティを構築していただければ幸いです。&lt;p&gt;私たちが多額のライセンス料を支払っている理由の 1 つは、これまで誰も使ったことのない方法でライセンスを使用しているため、必然的にライセンスが壊れたときに頼れる人がいるからです。昨年 1 月には、S3 で 30 TB のアーティファクト ストレージを使用していました。現在では 140 TB になります。&lt;p&gt;CVE データはどこから入手しますか?構築されたアーティファクトの CVE は事後に更新されますか? CVE、ライセンス、アーティファクトの経過時間などに基づいてアーティファクトをブロックするポリシーはありますか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;burakemir:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;共有してくれてありがとう。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/artifact-keeper</guid>
+      <pubDate>Fri, 06 Feb 2026 04:12:59 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46909037</comments>
+    </item>
+    <item>
+      <title>Postgres 19 を待っています: パス生成戦略を使用したより良いプランナーのヒント [ビデオ]</title>
+      <link>https://www.youtube.com/watch?v=QLb3nhIy2Lc</link>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=QLb3nhIy2Lc</guid>
+      <pubDate>Fri, 06 Feb 2026 03:25:51 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46908700</comments>
+    </item>
+    <item>
+      <title>ペンでトレーニングされた生成トランスフォーマー</title>
+      <link>https://theodore.net/projects/Polargraph/</link>
+      <description>&lt;p&gt;そして、私にとって初めて人工知能に興味を持った私にとって、これはかなり堅実なプロジェクトのように感じました。したがって、どちらかのモーターが回転すると、このゴンドラが移動します。ゴンドラの組み立て¶ ゴンドラはこの獣の心臓部なので、最初に組み立てを始めます。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Generative Pen-Trained Transformer&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46909122"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://theodore.net/projects/Polargraph/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://theodore.net/projects/Polargraph/</guid>
+      <pubDate>Fri, 06 Feb 2026 04:28:08 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46909122</comments>
+    </item>
+    <item>
+      <title>Show HN: Calfkit – Kafka 上で分散型のイベント駆動型 AI エージェントを構築するための SDK</title>
+      <link>https://github.com/calf-ai/calfkit-sdk</link>
+      <description>&lt;p&gt;pyはcalfkitからasyncioをインポートします。ノードはcalfkitからagent_toolをインポートします。ブローカーは Calfkit から BrokerClient をインポートします。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Calfkit – an SDK to build distributed, event-driven AI agents on Kafka&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46906737"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/calf-ai/calfkit-sdk'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://github.com/calf-ai/calfkit-sdk</guid>
+      <pubDate>Thu, 05 Feb 2026 23:10:12 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46906737</comments>
     </item>
   </channel>
 </rss>
