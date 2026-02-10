@@ -6,382 +6,332 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 10 Feb 2026 16:21:31 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Feb 2026 19:19:25 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>解析，不验证 (2019)</title>
-      <link>https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/</link>
-      <description>&lt;p&gt;这是有道理的，因为如果列表为空，则不可能返回列表的第一个元素 - 没有元素可返回。因此，值得注意的是，我们了解到这个功能也是不可能实现的。当我们实现 head 时，返回 Maybe 无疑很方便。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Parse, Don't Validate (2019)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46960392"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;macintux:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[延迟]&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;seanwilson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也许我错过了一些东西，我很高兴这个想法引起了共鸣，但感觉就像在 Java 流行和动态语言得到很多关注之后的某个时候，集体编程社区的很大一部分忘记了为什么发明了强静态类型检查，现在不得不重新发现这一点。 &lt;p&gt;在大多数强静态类型语言中，您不会经常传递字符串和通用字典。您自然会倾向于解析原始数据并将其转换为具有保证属性的类型化数据结构，例如如果传递给它的字符串不是电子邮件，则会在构造函数中引发异常的 Email 对象。因此，“解析，不验证”是常态，而不是需要获得关注的提示想法。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/</guid>
-      <pubDate>Tue, 10 Feb 2026 14:49:29 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46960392</comments>
+      <title>索马鲁肽可改善膝骨关节炎，与减肥无关</title>
+      <link>https://www.cell.com/cell-metabolism/abstract/S1550-4131(26)00008-2</link>
+      <guid isPermaLink="true">https://www.cell.com/cell-metabolism/abstract/S1550-4131(26)00008-2</guid>
+      <pubDate>Tue, 10 Feb 2026 16:55:03 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46962801</comments>
     </item>
     <item>
-      <title>一次简化一个 Vulkan 子系统</title>
-      <link>https://www.khronos.org/blog/simplifying-vulkan-one-subsystem-at-a-time</link>
-      <description>&lt;p&gt;此扩展几乎得到了 Vulkan 工作组中每个人的有意义的意见。我们希望确保我们也得到您的支持。对于这么大的事情，我们希望确保我们做对了。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Simplifying Vulkan One Subsystem at a Time&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46959418"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.khronos.org/blog/simplifying-vulkan-one-subsystem-at-a-time'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kvark:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Vulkan 的主要问题不是编程模型或缺乏功能。这些都是由 Khronos 解决的。问题在于覆盖范围和更新分发。到处都是！如果您开发通用软件（如 Zed），您就不能假设甚至像动态渲染这样的基本功能都得到统一支持。总是有奇怪的系统使用旧的驱动程序（看看 Ubuntu 22 LTS），硬件供应商放弃并强制弃用工作硬件，当然还有驱动程序错误......
-因此，当我能够依赖新的闪亮描述符堆缓冲区功能时，我将有更多的白发和其他东西即将出现。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pjmlp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;至少他们正在努力纠正扩展意大利面，这已经比 OpenGL 更糟糕了。&lt;p&gt;此外，这些修复中的大多数都没有进入 Android，在许多人拒绝放弃 OpenGL ES 之后，现在获得了适用于 Java 的 WebGPU&amp;#x2F;Kotlin[0]，当然还有任何没有幸运地获得新驱动程序版本的卡。&lt;p&gt;不过，现在总比以前好。&lt;p&gt;[0] - &lt;a href="https:&amp;#x2F;&amp;#x2F;developer.android.com&amp;#x2F;jetpack&amp;#x2F;androidx&amp;#x2F;发布&amp;#x2F;webgpu" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;developer.android.com&amp;#x2F;jetpack&amp;#x2F;androidx&amp;#x2F;发布&amp;#x2F;webg...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pixelpoet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想要&amp;#x2F;我“应该”使用 Vulkan，但 OpenCL 带来了巨大的痛苦，有各种需要安全处理的问题，而这些问题根本不是来自 OpenCL 工作负载。&lt;p&gt;每个人都一直告诉我 OpenCL 已被弃用（这是事实，尽管它在 2026 年继续出色地工作也是事实），但没有一个好的“解决方案”。官方 OpenCL 到 Vulkan 包装器可以证明我所做的事情是正确的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;HexDecOctBin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我个人只是转而在各处使用推送描述符。在桌面上，现实世界的限制足够高，最终可以很好地工作，并且您可以获得像 OpenGL 这样很好的立即模式 API。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hmry:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我真的很享受这些变化。从渲染通道到动态渲染确实简化了我的代码。我想知道这个新功能与现有的无绑定渲染相比如何。&lt;p&gt;从链接的视频中可以看出，“与 OpenCL 的功能相同”是我最期待的事情。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.khronos.org/blog/simplifying-vulkan-one-subsystem-at-a-time</guid>
-      <pubDate>Tue, 10 Feb 2026 13:26:14 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46959418</comments>
-    </item>
-    <item>
-      <title>Oxide C 轮融资 2 亿美元</title>
-      <link>https://oxide.computer/blog/our-200m-series-c</link>
-      <description>&lt;p&gt;我们的 2 亿美元 C 轮融资 2026 年 2 月我们已经筹集了 2 亿美元的 C 轮融资，是的，您可以再三考虑：我们不是刚刚筹集了 1 亿美元的 B 轮融资吗？通过这个大型 C 轮融资，我们完全消除了未来的资本风险，这反过来又确保了我们的独立性。有了我们的 C 系列，客户不必仅仅相信我们的话：我们有资本确保我们生存到无限的未来。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Oxide raises $200M Series C&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46960036"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://oxide.computer/blog/our-200m-series-c'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 21 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drewbailey:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;祝贺团队。氧化物与朋友们，布莱恩、亚当和团队对于我们的社区来说是非常宝贵的资源。他们的播客很棒，他们遇到的问题以及他们与我们其他人分享的意愿并不是理所当然的！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dagi3d:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果我的银行里有数百万美元，我肯定会买一个氧化物架，而不是购买豪华汽车，哈哈&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bix6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有人对收入或估值有深入了解吗？隐含的价值为 10 亿美元，但我看到的收入预估为 5000 万美元以下？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrcwinn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;太棒了，所有员工实际上都享有平等的权利，就像他们的工资一样！太棒了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;neom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;恭喜布莱恩和他的团队！非常努力地支持你！希望新资金可以帮助您在市场上有所下降，似乎很多人都在迫不及待地尝试您的软件！祝你好运。 （抱歉，我们从未在合作上建立过联系，我把球丢在那里，认为你们都很棒，我经常支持你们）。强烈推荐他们的播客：&lt;a href="https:&amp;#x2F;&amp;#x2F;oxy-and-friends.transistor.fm&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ox-and-friends.transistor.fm&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yla92:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有人购买过并询问过氧化架或目前正在运行氧化架吗？有关定价的任何信息吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;KenoFischer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;恭喜 Oxide 团队！这是一个艰难的市场:)！我个人仍然对无法使用硬件感到沮丧（对于我们的内部服务器需求来说太贵；不适合我们的数据中心合作伙伴和客户），但我很高兴看到他们成功，并希望他们最终能够接受我的用例:)。与此同时，我很欣赏他们在很大程度上是在公开的情况下进行构建的——每隔一段时间我就会浏览一下他们的问题跟踪器以进行轻松的睡前阅读。就在最近，我们在内部将我们的控制软件扔到他们的热循环中作为使用示例，这很有趣 - 通常很难找到令人信服的现实世界系统来用作公开共享的示例（当然，我们有有趣的客户问题，但这都是保密协议），因此让公司公开构建真实的东西真是太棒了。很棒的公司，祝他们一切顺利。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;choiway:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您需要筹集多少钱才能购买一个像样的麦克风？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dvcoolarun:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;现代基础设施正在从云优先转向云智能。&lt;p&gt;Oxide 提供硬件所有权。&lt;p&gt;有一些工具可以自动化交付（CI&amp;#x2F;CD 部署），并管理多云成本套利。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_pdp_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很困惑。您如何拥有以服务形式付费的云。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;colesantiago:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对为什么 Oxide 必须不断筹集资金（代替增长）并继续通过风险投资巩固其业务并让他们控制业务和所有权感到困惑和悲伤。&lt;p&gt;&amp;gt; “那么，如果我们不需要筹集资金，为什么还要寻求资金呢？好吧，我们真的没有在寻找它。但我们的投资者看到业务腾飞，急于支持它。”&lt;p&gt;由此可见，风投公司当然会支持 Oxide（他们在心里认为 Oxide 将进军人工智能数据中心供应硬件领域）最终希望以数倍的倍数收回资金，而实现这一目标的压力就存在。&lt;p&gt;你能投资 Oxide 吗？&lt;p&gt;我只是希望 Oxide 不必继续被风投公司所拥有如果 Oxide 遵循 Valve 的模式（创始人和员工 100% 持股，盈利，不太可能出现 enshitification 或被收购或 IPO 的压力），那么情况就会有所不同。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zozbot234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道 Oxide 的基本价值主张如何随着人工智能机架规模和多机架（数据中心范围）计算的最新增长而变化。  当然，这些其他供应商拥有可以有效地重新利用 Oxide 关注的更通用私有云工作负载的技术（特别是围绕网络互连的技术）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sylvinus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢 Oxide 以及他们正在打造的产品，但我不确定筹集更多风险投资资金是否是打造一家世代相传的公司的方法。恰恰相反？有了你不需要的钱，你是在用更快的增长来换取对最终寻求投资回报的第三方的更多依赖吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;voidUpdate:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很困惑他们的产品是什么......“你拥有的云”？那不就是……服务器吗？当然，它看起来是一个非常好的服务器，但除此之外它还有什么特别之处吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bflesch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;即使在我的破电脑上，他们的网站也非常漂亮和流畅，不像其他大公司的公告页面只能在最先进的 MacBook 上运行。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kjuulh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;期待播客！恭喜。不得不再三考虑，不是去年夏天他们就关闭了 1 亿。荒野&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shimman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Oxide 是唯一一家我查看职业页面希望他们有我可以申请的职位的公司。&lt;p&gt;很高兴看到他们的成功。尤其是如果你一直在通过他们的播客关注他们的旅程（如果你关心你的技术，那么这很可能是最好的科技播客；没有填充物，都是杀手）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wasmainiac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有人可以向我解释一下这里的秘密是什么吗？除了花哨的营销之外，是不是全面整合？硬件？我花了一段时间才找到其中一个模块的实际图片。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arcologies1985:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我推测这是为了帮助他们通过大客户的供应商业务风险评估流程。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;akshitgaur2005:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;前几天我才知道 Oxide，天哪，这不是一个梦想的工作场所！高薪、扁平化结构、大量的开源存在，也许还有更多！他们的博客也非常好。&lt;p&gt;我现在是一名本科生，看看在那里工作的人，他们似乎不太可能雇用应届毕业生，我想我已经找到了衡量自己的标准，“我是否足够熟练，可以在 Oxide 工作？”。希望更多的企业效仿，推动人才进步！！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gclawes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果我可以在家庭实验室中使用氧化物堆栈，我会很高兴......&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://oxide.computer/blog/our-200m-series-c</guid>
-      <pubDate>Tue, 10 Feb 2026 14:20:49 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46960036</comments>
-    </item>
-    <item>
-      <title>锂铁矿尸检</title>
-      <link>https://ba.antheas.dev/bazzite-postmortem.html</link>
-      <guid isPermaLink="true">https://ba.antheas.dev/bazzite-postmortem.html</guid>
-      <pubDate>Tue, 10 Feb 2026 15:40:42 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46961261</comments>
-    </item>
-    <item>
-      <title>Show HN：我为网络工程师构建了一个 macOS 工具 - 它称为 NetViews</title>
-      <link>https://www.netviews.app</link>
-      <description>&lt;p&gt;将您的 Mac 变成最强大的网络诊断工具 专业级网络诊断、监控和分析 - 一切都在您的 Mac 上进行。诊断和监控网络所需的一切。提供批量许可。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: I built a macOS tool for network engineers – it's called NetViews&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46955712"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.netviews.app'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;phubbard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来很有用，我喜欢它的 UI，它让我想起了 UniFi。几分钟后，我不得不强制退出并发送了一份报告。我会买它，我喜欢搞乱并且有一个相当复杂的家庭网络，并且一直在使用 Unix 和自制工具的混合；这更好。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drob518:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来不错。 MacOS 需要这样的东西已经有一段时间了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;haloblue:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;到目前为止非常好的工具。感谢您将其发布。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Brajeshwar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我下载并尝试尝试，但收到“您已经在这台 Mac 上使用了 7 天试用版。”&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;peddling-brink:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来非常整洁。&lt;p&gt;您是否考虑过通过 App Store 提供它？我愿意为此支付稍高的价格。或者对于开源。&lt;p&gt;但是闭源和不在 App Store 上的结合对我来说有点破坏交易。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yohannparis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;干得好，我会尝试一下。
-由于我对个人使用更感兴趣，因为我住在人口稠密的地区，它可以帮助我找到最适合我的网络的 WiFi 通道吗？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.netviews.app</guid>
-      <pubDate>Tue, 10 Feb 2026 05:20:32 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46955712</comments>
-    </item>
-    <item>
-      <title>欧洲 24T 美元与 Visa 和 Mastercard 的分手已经开始</title>
-      <link>https://europeanbusinessmagazine.com/business/europes-24-trillion-breakup-with-visa-and-mastercard-has-begun/</link>
-      <description>&lt;p&gt;跨境点对点支付将于今年推出，电子商务和销售点支付将于 2027 年推出。商家接受 Visa 和万事达卡，因为消费者携带这些卡。消费者携带它们是因为商家接受它们。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Europe's $24T Breakup with Visa and Mastercard Has Begun&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46958399"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://europeanbusinessmagazine.com/business/europes-24-trillion-breakup-with-visa-and-mastercard-has-begun/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;satyamkapoor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Wero 甚至没有得到欧盟所有银行的支持。 :&amp;#x2F;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mentalgear:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;欧盟如果能提供准免费的数字支付服务就好了——无需商业提供商典型的掠夺性费用和其他成本。并且不要用“隐私”来反驳。 .. 并不是所有美国公司都必须向 NSA 和其他三字母机构提供对其数据的后端访问。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;miohtama:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是二十年来的第四次尝试。以下是早期尝试的简短历史：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;moo9000&amp;#x2F;status&amp;#x2F;2006304163404128289" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;moo9000&amp;#x2F;status&amp;#x2F;2006304163404128289&lt;/a&gt;&lt;p&gt;这次的不同之处在于，数字欧元是由欧洲央行强制实施的，控制权（和存款）被从银行手中夺走。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mhitza:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果你有现金，那就&lt;i&gt;超级容易&lt;/i&gt;。需要在账户中冻结至少 30 万欧元，完成获得 EMI（欧洲货币机构）许可的流程，然后开始摆弄 GNU Taler。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hnfong:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;即使抛开地缘政治问题，令我感到非常困惑的是，除了中国和俄罗斯之外，每个国家都在缴纳约 0.2% 的“销售税”。到美国企业界。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lencastre:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;logbuch netzpolitik 去年做了一集关于这个 wero 的节目，老实说……我的印象是这对 wero 来说不是好兆头&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;compounding_it:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;过去几年，当印度转向 UPI 时，发生了一些非常有趣的事情。接受 UPI 的相同设备（通常是一些基于 Android 的 POS）也接受大量的卡。以前，商家对于是否接受现金以外的任何东西都犹豫不决，或者对维萨卡和万事达卡收取 2% 的费用。但随着数字支付的广泛采用，他们现在只是接受任何付款，目的是不想收到差评和失去客户。&lt;p&gt;重点是，有了廉价的替代方案，现在使用 Visa 或万事达卡实际上要方便得多，尤其是触碰支付，因为竞争如此激烈，多样性意味着人们允许所有付款。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Jyaif:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;民族自豪感和相互竞争的银行业利益一再破坏统一的努力。&lt;p&gt;这正是问题所在。
-几个演员赢得了他们国家的市场，但只是他们国家的市场。&lt;p&gt;特朗普是否足以让欧洲人意识到他们需要共同努力，意大利的胜利与德国的胜利一样好？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ekjhgkejhgk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我总是觉得听到人们试图争辩说这些公司所做的事情太困难了，这就是他们有价值的原因，这很有趣。只是多台计算机保持平衡。这并不复杂。&lt;p&gt;不，这些公司保持权力并不是因为他们解决了其他人无法解决的难题，而是因为他们有自己保护的护城河。&lt;p&gt;是时候废除这些外国实体了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;computomatic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;大多数（如果不是全部）国家都有自己的国内支付系统。这是关于欧盟内部的跨境支付。&lt;p&gt;考虑到可能转向新系统的支付量的百分比，“分手”似乎有点夸张。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tlogan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么 Wero 不是信用卡，而是更像 Venmo 的东西？它如何取代维萨卡和万事达卡？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MonkeyIsNull:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在法国，没有什么可以采用 Discover，而我的银行大约 6 个月前决定采用 Discover。 “太棒了”决定，谢谢。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://europeanbusinessmagazine.com/business/europes-24-trillion-breakup-with-visa-and-mastercard-has-begun/</guid>
-      <pubDate>Tue, 10 Feb 2026 11:42:14 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46958399</comments>
-    </item>
-    <item>
-      <title>GitHub 前首席执行官推出新的 AI 代理开发者平台</title>
-      <link>https://entire.io/blog/hello-entire-world/</link>
-      <guid isPermaLink="true">https://entire.io/blog/hello-entire-world/</guid>
-      <pubDate>Tue, 10 Feb 2026 15:44:47 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46961345</comments>
-    </item>
-    <item>
-      <title>重新定义 Go 函数</title>
-      <link>https://pboyd.io/posts/redefining-go-functions/</link>
-      <description>&lt;p&gt;Go 是否从根本上改变了这一切？所以我想用这个函数来代替时间。 Now:func myTimeNow() 时间。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Redefining Go Functions&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46960118"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://pboyd.io/posts/redefining-go-functions/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MadVikingGod:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这一切都是可能的，而且非常适合深入研究细节，但如果您确实希望能够交换 std lib 调用，只需将其转换为变量并进行更改即可。&lt;p&gt;&lt;pre&gt;&lt;code&gt; &amp;#x2F;&amp;#x2F;代码.go
-  var now = 时间.Now
-
-  &amp;#x2F;&amp;#x2F;代码测试.go
-  func TestCode(t *testing.T) {
-      现在交换 := 现在
-      t.Cleanup (func() {
-          现在=现在交换
-      }
-      现在 = func() time.Time {
-          返回时间.日期(...)
-      }
-  }
-
-&lt;/code&gt;&lt;/pre&gt;
-示例
-代码： &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;open-telemetry&amp;#x2F;opentelemetry-go&amp;#x2F;blob&amp;#x2F;main&amp;#x2F;sdk&amp;#x2F;log&amp;#x2F;logger.go#L17" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;open-telemetry&amp;#x2F;opentelemetry-go&amp;#x2F;blob&amp;#x2F;main...&lt;/a&gt;
-测试：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;open-telemetry&amp;#x2F;opentelemetry-go&amp;#x2F;blob&amp;#x 2F;490fd7f6324ba07ffc68eb3f6b9328af51891c8e&amp;#x2F;sdk&amp;#x2F;日志&amp;#x2F;logger_test.go#L32-L40" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;open-telemetry&amp;#x2F;opentelemetry-go&amp;#x2F;blob&amp;#x2F;490f...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jerf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;其他现有技术：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;bouk&amp;#x2F;monkey" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;bouk&amp;#x2F;monkey&lt;/a&gt; 以及随附的博客文章&lt;a href="https:&amp;#x2F;&amp;#x2F;bou.ke&amp;#x2F;博客&amp;#x2F;monkey-patching-in-go&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;bou.ke&amp;#x2F;博客&amp;#x2F;monkey-patching-in-go&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pstuart:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哎呀，除了为了黑客而黑客之外，我没有看到任何合法用途。不过读起来很有趣。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://pboyd.io/posts/redefining-go-functions/</guid>
-      <pubDate>Tue, 10 Feb 2026 14:27:16 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46960118</comments>
-    </item>
-    <item>
-      <title>我 7 岁开始编程。现在我 50 岁了，我喜欢的东西已经改变了</title>
-      <link>https://www.jamesdrandall.com/posts/the_thing_i_loved_has_changed/</link>
-      <description>&lt;p&gt;我完全了解那台机器。那个时代的每台机器都有性格。他们的工程冒险具有明显的权衡。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; I started programming when I was 7. I'm 50 now and the thing I loved has changed&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46960675"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.jamesdrandall.com/posts/the_thing_i_loved_has_changed/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 30 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cs02rm0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我今年 43 岁。多年来一直精疲力竭，没有任何休息，所以我休了一年左右的合同，只是闲逛一些个人项目，为我妻子的公司做了一些事情，请求 NHS 修复一些问题。其中大部分内容都使用了克劳德代码。也出差了一点。&lt;p&gt;我觉得我一转身，现在似乎没有工作了（当你总是得到你申请的第一个职位时，500+ 的申请深度已经很多了），除非你有 2 年以上的商业人工智能经验，而我没有，或者也许想坐在 SOC 中，而我不想。就好像整个行业都消失了。&lt;p&gt;前几天我在 Google 趋势中查看了 Java，感觉并不是很久以前人们在哀叹它是多么抽象，但它无处不在。似乎不再是了。我试着告诉自己，也许是因为人们使用法学硕士来编码，所以没有被搜索到，但我认为游戏可能已经结束，我们现在处于不同的时代。&lt;p&gt;不确定未来 20 年我要做什么。我正在考虑获得摩托车执照只是为了保持忙碌，但这无法支付账单。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ktrnka:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我比你晚了几年。我在 80 年代末开始使用我叔叔传下来的 vic 20。&lt;p&gt;科技文化的变革对我来说是最困难的部分。我怀念好奇心、乐观、创造力的结合，甚至怀念随之而来的混乱。如今，要找到这样的组织要困难得多。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TimPC:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为程序员比以往任何时候都更需要性能重要的工作，而人工智能做事的天真方式并不能解决这一问题。当除了正确性之外没有人关心其他事情时，你的工作就变成了 AI Slop。现在的好消息是，人工智能往往会创造出人工智能难以做好的事情，因为如此大规模的项目往往会变成垃圾。  您可以花 20,000 美元编写一个具有爆炸性代理堆栈的 C 编译器，但该 C 编译器远非高效或高性能。&lt;p&gt;随着模型成本的下降，20,000 美元将成为进行完全 AI 生成编码的可行数字。因此，你比以往任何时候都更不想做人工智能擅长的工作。无论是性能很重要的工作，还是能够对在应用程序上下文中生成高质量代码所需的代理堆栈进行编码。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delaminator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我今年 57 岁。ZX81 推出时我就在场。&lt;p&gt;我 11 岁时就开始了第一份带薪编程工作，为我们租用盗版 VHS 磁带的那个人编写数据库。&lt;p&gt;人工智能很棒。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tiahura:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不要将编程作为职业，但我也 50 岁了，从 TRS-80 开始编程。人工智能改变了这个时代，我喜欢它！我可以专注于制作，而不是 API、语法或所有引导。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonsarris:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;反馈循环已经改变。亲密感已经消失了。几十年来让我彻夜难眠的事情——困惑、追逐、你终于明白为什么有些东西不起作用的那一刻——被压缩成提示和响应&lt;p&gt;读起来很奇怪，因为对我来说，制作软件从来没有这么有趣过，尤其是对个人来说从来没有这么容易过。无聊的零件正在自动化，这样我就可以处理定制和艺术零件。反馈循环变得越来越短，以创造出美好且可行的东西。用于分析和查明性能瓶颈的调查工具比以往任何时候都更好，Claude 只是其中的一个新部分。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alt227:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我更喜欢将其视为 IT 时代的自动化。&lt;p&gt;随着技术的出现和自动化，所有其他职业都有了自己的时代。&lt;p&gt;例如木雕师、铁匠、屠夫、面包师、烛台制造商等。所有这些职业大部分都已被工厂里的机器所取代。&lt;p&gt;我认为“人工智能”是一种自动化。作为工厂中用于生成代码的新机器。我们已经达到了这样的程度：我们拥有代码工厂，它们可以比任何人单独更有效、更快地生产东西。&lt;p&gt;这些职业仍然蓬勃发展的地方是工匠市场。人们总是对用爱和关怀创造的手工制品有需求。&lt;p&gt;我希望这对于我的编码类比来说是正确的。那么真正关心制造好产品的人仍然会拥有一个市场，来自那些想要不同于批量生产标准的产品的客户。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paulmooreparks:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我今年 55 岁，13 岁时开始使用 TI-99&amp;#x2F;4A，然后逐渐发展到 Commodore 64、Amiga 2000、Amiga XT Sidecar，然后是真正的 XT，等等。 DOS、Windows、Unix、第一个Linux。我运行了一个小型 BBS，当我听到有人拨号时调制解调器发出的歌声时，我感到非常兴奋。是 Linux 提示符。 Gopher 仍然比新生的万维网更重要。&lt;p&gt;作者是对的。魔法已经消失了。很伤心。我仍然对可能发生的事情感到兴奋，但它永远不会产生同样的敬畏感，即你可以拥有整个系统，从来自墙壁的电力到屏幕上的像素。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alexgarden:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哇...我真的很喜欢这个。  我也 50 岁了，我在 1985 年 10 岁的时候开始编码...我几乎记得每一次进化的飞跃，而且我对这种变化的体验有点不同。&lt;p&gt;Steve Yegge 最近接受了关于氛围编码的采访 (&lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=zuJyJP517Uw" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=zuJyJP517Uw&lt;/a&gt;)，他说，“那些对现代复杂性的有意义代码失去兴趣的大法师工程师正在重新发现最初让他们成为工程师的魔力” &lt;-- 为简洁起见。&lt;p&gt;我清楚地记得，第一次构建体素渲染引擎时，我熬夜手工编写汇编器原始渲染库，并认为这就像魔术一样，可以在 486 上完成...我记得在 Relic 的早期，在 Homeworld 上工作，并认为我们是在施展咒语，而不是编写软件。  老实说，这种魔力对我来说已经消失了。  我个人并不认为构建 Docker 容器有什么神奇之处。  你可以说我很守旧。&lt;p&gt;如今，我对工程学从未如此兴奋。  背景布线的单调乏味消失了。  我又开始创造新的、神奇的东西了——我再次在凌晨 2 点起床，在黑暗中坐在办公桌前，周围是显示器的柔和光芒，再次施展咒语。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zozbot234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;没有什么是“被掏空的”。关于有效指导人工智能，反馈一如既往地快速而严格。  诀窍是你不只是“氛围代码”让 AI 一次性完成整个事情：您应该首先提出更改，并向 AI 询问一个良好、详细的实施计划。  然后，您查看机器人提出的建议（与修改代码相比，这是微不足道的！），做出合理的更改，再次请求反馈，然后重复。  当人工智能机器人必须编写实际代码时，它不再在振动上运行：它被确切地告知要做什么以及如何评估结果。  你前期花费的时间更多，但修复人工智能错误的时间却少得多。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrcwinn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;职业发展正在发生巨大变化。没有什么可以阻止任何人以“旧方式”进行编码。尽管。您的爱好项目仍然属于您，完全按照您想要的方式进行。另一方面，你的专业项目从来就不是关于你的。它始终与客户、受众和用户有关，句号。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;KingOfCoders:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很酷，7点？我从 9 岁开始，现在 53 岁了。所有的事情都是克劳德做的。但需要适应这一点。仍然没有。&lt;p&gt;去年我发现我一直是一个创造者，而不是一个编码员。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tonymet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我有相反的看法。  没有什么可以阻止您跳入任何组件来完善内容。您可以编写任何您想要的代码。人工智能几乎消除了所有苦差事：样板文件、测试用例、检查糟糕的文档、荒谬的工具。&lt;p&gt;它还让我更加专注于改进事物，因为我觉得可以更自由地废弃低质量组件。  我现在更加勇敢地进行大型重构 - 原本需要几天时间的事情现在只需几分钟。&lt;p&gt;在很多方面，人工智能弥补了我日益缺乏耐心和无法将任务坚持到凌晨 3 点的情况。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;danesparza:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我谦虚地提交这篇对 Grady Booch 的采访（如果你知道的话，你知道），谈论“软件工程的第三个黄金时代 - 感谢人工智能”：&lt;a href="https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;OfMAtaocvJw" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;OfMAtaocvJw&lt;/a&gt;&lt;p&gt;我觉得这次对话很好地表达了我们所处的情况。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AndrewKemendo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请停止对这些帖子进行投票。我们已经到了首页和新页面都被这些哀叹污染的地步&lt;p&gt;这实际上是一遍又一遍相同的论点，一遍又一遍相同的评论&lt;p&gt;HN要么回到有趣的东西，要么干脆变成一个拒绝适应的老年“编码员”的支持小组&lt;p&gt;我要开始将这些标记为垃圾邮件&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gustavopezzi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谢谢你写这篇文章。我的感受和作者描述的很相似，时间线也几乎吻合。自 2010 年代初期以来，技术对我的兴奋感开始快速衰退，现在我认为这是一个不归路。我仍然对我的复古硬件和设备很感兴趣。但我不再是一个积极的实践者，我已经将我的注意力和努力转移到了其他地方。不幸的是，我不再对未来几十年的科技感到兴奋，并且正在远离它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;leesec:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，现在编码变得更加有趣和有用&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chasd00:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作者描述的也是当你从整天做开发人员转变为团队领导或经理时的感觉。当你成为领导者时，你必须放手并接受这样的想法：代码不会按照你的方式去做。你可以查看你的团队生成的代码，并尝试用你的技术来替换它，但你只会让自己失败。正确的方法是用你的智慧让团队变得更好，而不是代码。我认为这在很大程度上适用于在编码时使用 AI。&lt;p&gt;我将于 4 月份年满 50 岁，对 AI 编码助手感到非常兴奋。他们做了很多我想做但一直没有时间的个人项目。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ilitirit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的情况大致相同（从 9 岁开始，目前 48 岁），但编程对我来说并没有真正改变。改变的是我不得不与那些显然不知道自己在说什么但又觉得自己有资格的人进行毫无意义的争论，因为：&lt;p&gt;a）他们要求法学硕士&lt;p&gt;b）“这就是我们所有竞争对手正在做的事情”&lt;p&gt;c）他们在 Youtube 上看到了一些大影响者的视频&lt;p&gt;d）[...插入任何其他荒谬的原因...]&lt;p&gt;真实故事：&lt;p&gt;在我们的一个故事中在最近的&lt;i&gt;企业架构&lt;/i&gt;会议上，我感叹缺乏处理我们巨额技术债务的计划，并使用了 10 年前编写的 5000 行监管报告存储过程的示例，但没有人理解。我被告知我的投诉无关紧要，因为我可以将其转储到 ChatGPT 中，它会向我解释。这是一位所谓的&lt;i&gt;高级开发人员&lt;/i&gt;在一次&lt;i&gt;企业架构&lt;/i&gt;会议上所说的话。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pixl97:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;铁匠是一个人，捡起大块碳，将其加热至发出红光，然后用手中的锤子将铁敲打至屈服。&lt;p&gt;今天，工厂里的机器可以生产百万吨级的铁。&lt;p&gt;我们恰好生活在代码从手工敲打变成批量生产产品的时代。&lt;p&gt;技术的变革就是如此。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;serf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;6 或 7 岁，现在 38 岁 - 玩得很开心。&lt;p&gt;这并不全是葬礼游行和集体哭泣会议。&lt;p&gt;不要让这篇博文欺骗了你，它&lt;i&gt;&lt;/i&gt;是对人工智能的咆哮 - 否则我们会听到对过去 30 年来该行业最后 200 次范式转变的抱怨。&lt;p&gt;当然，我们也有呆伯特式的经历敏捷&amp;#x2F;瀑布&amp;#x2F;tdd笑话推到我们面前，但没有人写一篇博客文章讲述他们的身份如何被瀑布模型篡夺。&lt;p&gt;&amp;gt;不同的方式挑战了我围绕它建立的身份，并且不满足于它所做的方式。&lt;p&gt;每个人都应该做自己的事情，但我是否可以建议，这个世界上的&lt;i&gt;任何人&lt;/i&gt;使用单一支柱作为所有人的基础是危险的他们的身份和性格的基础。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;onion2k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果43年前学到的东西今天和你学到的一模一样，那就更奇怪了。我们应该&lt;i&gt;期待&lt;/i&gt;改变。当这种变化是积极的时，我们称之为进步。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;runjake:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我比OP大一点。我想我从来没有对来自别人的工作编程项目有过这种感觉。&lt;p&gt;一般来说，我从我自己发起的解决问题的工作项目中得到这种感觉。幸运的是，我有很多机会这样做。随着代理编码的出现，我能够以更高的速度解决问题。&lt;p&gt;很多时候，我仍然会“生狗”。一个没有人工智能（除了文档查找）的解决方案，只是为了好玩，这是一种向自己证明，当断电时我仍然可以做到的一种方式。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwawaymeta01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;同样的芽。&lt;p&gt;也许这只是意味着这是一个成熟的领域，我们必须适应？&lt;p&gt;是的，承诺已经改变，但你仍然必须出于对游戏的热爱而这样做。其他任何东西都不起作用。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ge96:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，我可以使用 Cursor 或其他任何东西，但我不这样做，我喜欢编写代码。我想这让我成为了勒德分子什么的，尽管我仍然在开发特工。我喜欢设计东西（我不认为自己是建筑师），我正在谈论我的爱好硬件项目。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;weli:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;我七岁时开始编程，因为机器完全按照我的指示去做，感觉像是我可以探索并最终了解的东西，感觉就像魔法一样。我现在五十岁了，魔法已经不同了，我正在学着接受它。&lt;p&gt;不要误解，但这更多是一个年龄问题，而不是技术进步问题。&lt;p&gt;现在对计算机感兴趣的孩子长大后也会感受到同样的魔力。这种魔力部分源于你没有真正理解你正在做的事情，也没有创建一张心理“地图”。靠你自己。如今，计算本身没有什么比摆弄 config.sys 更神奇的了，50 年后，会有老程序员回忆起“还记得所有新模型每隔几个月就会出现一次，我们可以摆弄向量维度和分块长度来充分利用 gpt-6.2 RAG 吗？”那些是时代”。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sho_hn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对每个对这些工具感到存在主义眩晕的人的建议是保持自信并相信自己。如果您在人工智能出现之前是一名聪明的开发人员，那么您很可能在人工智能之后仍然会是一名聪明的开发人员。&lt;p&gt;到目前为止，我的经验是，从初步近似来看，使用人工智能生成的代码和软件的质量与使用人工智能工具的开发人员的质量非常吻合。缺乏经验、糟糕的开发人员仍然会产生低于标准的结果，而优秀的开发人员可以产生出色的结果。&lt;p&gt;使用这些工具所涉及的选择也不像它们通常被认为的那样二元化，尤其是在代理已经起飞的情况下。你仍然可以决定花一天的时间来编写重要的代码，使其恰到好处，并确保你的大脑专注于结果，并随着手头的问题进行探索和成长，同时为后台队列的代理提供其他任务。&lt;p&gt;事实上，我想说，人工智能工具革命的最大挑战是适应什么，这就是“好”。个人时间管理。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;coldtea:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;&lt;i&gt;但是当然。人工智能是他们失去对正在发生的事情的追踪的那一刻。这艘抽象船几十年前就航行了。&lt;/i&gt;&lt;p&gt;废话。虽然抽象随着时间的推移而增加，但人工智能不仅仅是增量变化。与代理的几乎自然的语言交互与汇编上的 Typescript 不同（更不用说你可以很好地正确使用 C 或 Rust 等，并记住机器的大部分细节，不，微代码和低级抽象并不是真正的反驳）。如果代理变得自主，而你只是将他们赶到完成，那就更不用说了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stronglikedan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一样，但是当我 17 岁时情况发生了变化，当我 27 岁时又发生了变化，然后是 37 岁，依此类推。它一直在发生巨大的变化，但最近的这一飞跃是如此令人难以置信的不同，以至于看起来很独特。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;towndrunk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我完全知道你的感受。我不知道我在这个调试器（&lt;a href="https:&amp;#x2F;&amp;#x2F;www.jasik.com" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.jasik.com&lt;/a&gt;）前坐了多少个小时，试图在较低的级别上学习所有内容。现在它是如此不同。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.jamesdrandall.com/posts/the_thing_i_loved_has_changed/</guid>
-      <pubDate>Tue, 10 Feb 2026 15:08:36 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46960675</comments>
-    </item>
-    <item>
-      <title>美国正面临有史以来的首次人口下降</title>
-      <link>https://www.bloomberg.com/news/articles/2026-01-30/trump-immigration-crackdown-could-shrink-us-population-for-first-time</link>
-      <guid isPermaLink="true">https://www.bloomberg.com/news/articles/2026-01-30/trump-immigration-crackdown-could-shrink-us-population-for-first-time</guid>
-      <pubDate>Tue, 10 Feb 2026 15:05:24 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46960624</comments>
-    </item>
-    <item>
-      <title>美国 1T 美元的人工智能赌博</title>
-      <link>https://www.apricitas.io/p/americas-1t-ai-gamble</link>
-      <description>&lt;p&gt;尽管过去六个月增长有所放缓，但仅去年一年投资仍增长了 18% 以上。尽管如此，数据中心设施的支出现在可以与办公室建设总量相媲美，计算机支出现在超过所有工厂建筑，软件投资支出现在使新住宅建设相形见绌。去年，这些科技公司裁员约 20,000 人，而其财产、工厂和设备的净持有量增加了超过 215B 美元，这是有记录以来最快的增长。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; America's $1T AI Gamble&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46959679"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.apricitas.io/p/americas-1t-ai-gamble'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WarmWash:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AI 计划不会停留在每月 20 美元的水平。&lt;p&gt;人们会转向替代模型，但它可能会像 Linux 一样受欢迎。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xyst:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这场赌博的代价是美国纳税人、公用事业成本的增加以及数十亿美元的公司从其所在城市和县获得税收减免和补贴。&lt;p&gt;这个国家太糟糕了。如果你很有钱那就太好了。如果您不在这 0.01-1% 的顶层，那就太糟糕了。&lt;p&gt;自 20 世纪 70 年代以来，价值 79T 的巨额资金已从底层 90% 转移到顶层 1%。 [1]&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.rand.org&amp;#x2F;pubs&amp;#x2F;working_papers&amp;#x2F;WRA516-2.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.rand.org&amp;#x2F;pubs&amp;#x2F;working_papers&amp;#x2F;WRA516-2.html&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.apricitas.io/p/americas-1t-ai-gamble</guid>
-      <pubDate>Tue, 10 Feb 2026 13:48:24 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46959679</comments>
-    </item>
-    <item>
-      <title>陪审团称 Meta 和谷歌在具有里程碑意义的美国审判中“制造了成瘾”</title>
-      <link>https://techxplore.com/news/2026-02-jury-told-meta-google-addiction.html</link>
-      <description>&lt;p&gt;周一，随着一场具有里程碑意义的社交媒体审判在加州法院正式开始，Meta 和谷歌旗下的 YouTube 被指控向儿童推销高度成瘾的应用程序。由于小时候沉迷于社交媒体，她遭受了严重的精神伤害。然而，本案认为，这些公司应对旨在吸引人们注意力并推广可能损害人们心理健康的内容的商业模式负责。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Jury told that Meta, Google 'engineered addiction' at landmark US trial&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46959832"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://techxplore.com/news/2026-02-jury-told-meta-google-addiction.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>奇点将发生在星期二</title>
+      <link>https://campedersen.com/singularity</link>
+      <description>&lt;p&gt;校准仪器。相同的输入 → 相同的日期。日期校准仪器。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Singularity will occur on a Tuesday&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46962996"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://campedersen.com/singularity'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 29 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;parsimo2010:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我总体上对社交媒体的发展方式感到不满，但我不赞成这场诉讼。这似乎是国会指责科技公司的一种方式。未能对企业进行适当的监管。参与其中的工程师中没有一个人认为他们的工作会腐蚀子孙后代的思想。他们的思维过程很简单-&lt;p&gt;1。我们卖广告来赚钱
-2. 如果我们比竞争对手的应用程序更关注我们的应用程序，我们就可以提高广告价格并赚更多钱
-3. 我们是否应该实施限制，在孩子们玩了一个小时后将他们踢出应用程序？绝对不可以，这会违反我们对股东的义务。如果家长抱怨，我们会说他们应该实施手机和路由器上的家长控制。如果父母不使用他们已有的工具，我们就无法做出限制收入的选择。&lt;p&gt;我很抱歉社交媒体毁了这么多孩子的生活。生命，但我认为在这种情况下责任不在于科技公司。当孩子们遭受网络欺凌和自杀时，社会却袖手旁观。这不是最近发生的事情——美国作为一个社会有足够的时间做出反应，但选择不这样做。想起诉某人吗？起诉国会。&lt;p&gt;Google 和 Meta 是破碎系统中的理性参与者。如果你想改变某些事情，你应该改变他们运作的规则，并让他们对未来的这些规则负责。澳大利亚（和西班牙）正在采取行动 - 现在这些国家禁止 16 岁以下的儿童使用社交媒体，如果社交媒体公司试图做任何偷偷摸摸的事情来绕过你实际上有更有力的案例。&lt;p&gt;现在，如果有证据表明他们故意试图让孩子被欺负并让他们自杀，那么无论如何，都要对他们进行罚款。但我怀疑是否有这样的证据。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Devasta:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只要禁止个性化广告就可以了，只要它能得到点击，它们就会造成任何程度的伤害。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;exabrial:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;听着，当你给它贴上“观众参与”的标签时，听起来就不那么邪恶了。嗯？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wslh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这只是时间问题，可能需要几十年，直到我们塑造那些“精心设计的成瘾”。与烟草试验类似。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tock:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的意思是每个人都知道这一点吧？甚至还有泄露的备忘录。他们是需要增加收入的上市公司，他们主要通过广告和关注来获得收入。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;相关：&lt;p&gt;&lt;i&gt;未密封的法庭文件显示青少年成瘾是大型科技公司的“首要任务”&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46902512"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46902512&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;notepad0x90:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;没有法律规定这两件事：&lt;p&gt;1）你不能使用任何手段或媒介故意且持续地跟踪某人；即使你是一家公司，即使你有良好的意图。&lt;p&gt;2) 你不能故意影响任何人相信一些错误的事情，并且你知道这不符合他们的利益。&lt;p&gt;这些事情必须是重罪级别或更严重的犯罪，公司高管必须受到起诉。&lt;p&gt;不仅如此，某些类似的犯罪行为应该允许公民直接起诉。特别是在强大的个人和组织的贿赂和威胁可能损害正义利益的情况下。&lt;p&gt;这次审判的结果除了罚款之外不会有任何其他结果。问题是，这种方法行不通。他们只会找到不同的方法来规避法律。刑事后果是坚持正义的唯一真正途径。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Upvoter33:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们将看到与烟草行业相同的情况——首席执行官们声称他们不知道该产品的设计目的是让人上瘾。我更不相信任何人都会追究任何人的责任。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;youknownothing:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这只是一个数据点，但我曾经和一位在 YouTube 工作的人交谈过。我问他有没有孩子，他说有。我问他是否允许他们使用 YouTube Kids，他说“不行，这在家里是完全禁止的”。这告诉了我需要知道的一切。&lt;p&gt;不要消费你自己的产品。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;puzzlingcaptcha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“但如果我们不设计毒瘾，中国就会打败我们！这是国家利益！”&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;InMice:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它真的具有里程碑意义吗？首先是尼古丁和大烟草，然后同样的成瘾工程师设计了超加工食品。卡夫、纳贝斯克等都由烟草公司剥离出来……使儿童的食物成瘾正常化。现在是屏幕和社交媒体。这是相同的基本生理学，但似乎社会也无法吸取教训。&lt;p&gt;我认为他们在没有真正的长期数据、没有任何研究的情况下如此迅速地将 ipad 推入学校，这有点可悲。真的只是疯了。现在我们又来了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bsimpson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“我让 iPad 抚养我的孩子，但现在她很糟糕”这是一个疯狂的争论。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;skizm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们所说的所有这些事情都是不道德的，但并不违法，对吧？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;conartist6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们并不害怕对人进行编程的想法。&lt;p&gt;当我每周在那里工作时，浴室隔间门内侧都会有一张不同的传单，试图宣传对公司真正重要的事情。&lt;p&gt;有一周，传单是关于视频源如何在前 0.2 秒内吸引用户的。传单上承诺，如果这样做，结果本质上会产生一种可通过科学测量的成瘾效应，即大脑黑客攻击。传单的目的是确保尽可能多的广告商收到此消息。&lt;p&gt;在我看来，那一刻用户显然是猎物。该公司甚至不关心通过这种大脑重新编程式的策略向用户出售什么。我们的目标是向广告商推销这样一个事实：我们在科学上确信我们拥有重新编程用户大脑的工具。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kayo_20211030:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是不久前漫画和电子游戏造成不可挽回伤害的争论的重演吗？&lt;p&gt;我发现自己处于一种不舒服的位置，同情争论的双方 - 是但不是的立场。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rzerowan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;即使根据法律条文证明确实造成了损害，是否会有任何结果来补救这种情况？&lt;p&gt;似乎不久前，Sacklkers 就被证明（？）在与医疗保健行业勾结的同时获利并助长了艾滋病危机 - 最后我听说他们正在就向国家支付的罚款讨价还价。同时利用各种金融漏洞通过破产和离岸工具隐藏自己的财富。&lt;p&gt;那么，那些价值数万亿美元的公司可以将上诉拖延数十年，并混淆任何可能达成的所有建议。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kklisura:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;企业、资本的利益高于整个社会的利益。这次审判不会有结果。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rPlayer6554:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;忽略我对案件本身的看法，我讨厌现在有多少头条新闻只是争端中一方或另一方的谈话要点。至少尝试假装自己是一名中立的记者，而不是重复某个有议程的人所说的话。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BeaverGoose:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人们不再是顾客了。它们是待开采的资源。广告商就是顾客。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dana321:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;任何你滚动浏览帖子或无休止地观看短视频的内容都会让人上瘾。&lt;p&gt;如果你认为这不是，而只是“类似于上瘾”，只需尝试在你的浏览器和手机中屏蔽这些网站，看看你能持续多久才会感受到负面影响。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elevatortrim:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果儿童的工程成瘾是非法的，那么针对成人的工程成瘾显然也应该是非法的吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;komali2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; “这个案子就像A-B-C一样简单，”拉尼尔边说边堆放带有字母的儿童玩具积木。&lt;p&gt;&gt;他认为 A 代表上瘾，B 代表大脑，C 代表儿童。&lt;p&gt;我必须承认，我觉得这真的是微不足道和愚蠢的，法庭案件就是这样进行的，但我知道陪审团里充满了各种各样的人和律师，我想觉得有必要把事情简单化吗？或者也许是内部剧院的孩子出来了？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;myrmidon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很好奇结果如何，但我并没有屏住呼吸。&lt;p&gt;我认为，只要公司不受监管且有利可图，我们基本上就会激励公司造成伤害，因为利润&lt;i&gt;永远&lt;/i&gt;不会被充分扣押，任何起诉充其量也只是象征性的努力。&lt;p&gt;请参阅含铅气体、尼古丁、赌博等，以了解突出的例子。&lt;p&gt;我个人认为，在理想的世界中，起诉应该更加严厉；如果一家公司&lt;i&gt;知道&lt;/i&gt;其产品有害，那么理想情况下，它应该关注尽量减少这种危害，而不是担心在没有任何法律担忧的情况下错失利润。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CGMthrowaway:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一个试图在 1-2 秒的时间间隔内捕获并维持注意力的推荐引擎，您还能将其称为什么？&lt;p&gt;传统的答案是“参与度”，即“参与度”。但我有一个强有力的论点，即对于短时间旋转的大量内容来说，重复地&lt;i&gt;有意&lt;/i&gt;参与（通过有意识、故意的选择进行参与）是不可能的&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;superkuh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;陪审团在当时无法证明该词合理的情况下使用了医学背景之外的词语。事实上，社会大多数人似乎都同意这种严重误用该术语来形容那些实际上并不操纵激励显着性的事物。我们最终将由独裁者控制所有“屏幕”。只是因为我们的学校在解释神经科学方面做得很糟糕。如果您认为在美国将所有屏幕的控制权交给联邦政府是个好主意，您真的需要四处看看。&lt;p&gt;我并不是说 Facebook 没有尝试过。我只是说，仅仅接触屏幕，他们就不可避免地会失败。屏幕与成瘾药物非常不同，不能直接改变神经化学（至少不会比日落或任何感知更能改变神经化学）。我非常不喜欢这家公司，而且我个人从未创建过 Facebook 帐户，也没有使用过该网站。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;timmg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是真的，但也（可能）是无辜的。  从某种意义上说，如果你对事物进行 A&amp;#x2F;B 测试并寻求参与度，你几乎肯定会最终得到“上瘾”的体验。 &lt;p&gt;我认为这也可能是美国食品中含有如此多糖的原因。  人们购买更多甜食。  所以他们不断地让它变得更甜。&lt;p&gt;我不确定谁应该对此负责。  这有点像“公地悲剧”。种情况。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;selfawareMammal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不废话&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bitmasher9:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;科技行业的很大一部分得益于注意力经济的蓬勃发展。  如果你作为产品的目标是让人们每天花几个小时与你的产品互动，并且你专注于数据驱动的方法来最大化在应用程序上花费的时间，那么你将创造出与上瘾没有什么不同的东西。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Lerc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;“他们不仅构建应用程序，还构建应用程序。”他们建造陷阱，”拉尼尔表示，Meta 和 YouTube 追求的是“设计上瘾”。使用玩具法拉利和迷你老虎机等道具来提出他的论点。&lt;/i&gt;&lt;p&gt;这些是开场白，也许我们应该等到他们真正拿出证据。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://techxplore.com/news/2026-02-jury-told-meta-google-addiction.html</guid>
-      <pubDate>Tue, 10 Feb 2026 14:02:10 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46959832</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;svilen_dobrev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;已经对它所接触的一切施加了引力。&lt;p&gt;所以，“夜幕降临” ？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kpil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“……《哈佛商业评论》发现，公司根据人工智能的潜力而不是其表现来裁员。&lt;p&gt;我不知道谁需要听到这个消息 - 显然很明显 - 但以下三个陈述无法验证，但对股市产生了不合理的不同影响。&lt;p&gt;* 我们之所以裁员，是因为预期收入较低。 （阴性）
+* 我们正在削减开支以加强我们的战略重点并控制我们的运营成本。（积极）
+* 我们因为人工智能而裁员。 （双倍正数）&lt;p&gt;炒作是真实的。未来几年我们会看到运营成本大幅降低，还是会遵循 1750 年以来生产力曲线？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wayfwdmachine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每个人都会以不同的方式定义奇点。对我来说，这只是一个没有任何意义的时刻，这就是为什么我的个人反思与这篇文章是一致的，即社会奇点已经在发生。当真正的事件视界到来时，它不会对我们有帮助（如果它真的发生了，它根本上是无趣的，因为到那时所有的赌注都消失了，即使是缓慢的起飞也会很快让事情变得非常他妈的奇怪）。&lt;p&gt;（社会）奇点已经以大规模错觉的形式发生，特别是在亚伯拉罕的世界末日文化中，为各种现象创造了肥沃的滋生地。疯狂。&lt;p&gt;就像在数据中心投资数千亿美元一样。 Alphabet、Meta、Nvidia 和台积电等公司的承诺资本支出水平是荒谬的。社交媒体充满了或多或少有针对性的机器人、深度造假和心理战（给读者练习：在你最喜欢的社交媒体网站上编写一个管理 n 个帐户的机器人，并使用它们来移动你选择的单个个体的超视窗，这样做的总成本是多少？如果你的答案低于 10 美元 - 宾果游戏！）。&lt;p&gt;我们已经处于假设的奇点的未来冲击波中。问题只是在我们冷静下来之前——通过泡沫破裂和随后的经济衰退、战争或其他一些或多或少有问题的事件——或者到达事件视界之前，事情会变得多么疯狂。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dakolli:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;旧金山的人们有那么愚蠢吗？他们举行公开聚会并不停地谈论奇点吗？旧金山已经成为陈词滥调了吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;regnull:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;伙计们，昨天我花了一些时间说服一家领先提供商的法学硕士模型，2 张牌加 2 张牌等于 4 张牌，这还不是同花。我认为我们距离奇点还不算太近。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;danesparza:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“我知道这是精神错乱的。  无论如何我们都会这么做”这可能是我在 2026 年听过的最伟大的名言之一。&lt;p&gt;我觉得我需要用这句话开始更多的冲刺站立......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PaulHoule:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“智能爆炸”的简单模型是一个晦涩的方程&lt;p&gt;&lt;pre&gt;&lt;code&gt; dx 2
+  -- = x
+  dt
+&lt;/code&gt;&lt;/pre&gt;
+其中有解决方案&lt;p&gt;&lt;pre&gt;&lt;code&gt; 1      
+  x = -----
+       C-t
+&lt;/code&gt;&lt;/pre&gt;
+与经典的指数增长方程相关很有趣&lt;p&gt;&lt;pre&gt;&lt;code&gt; dx
+  -- = x
+  dt
+&lt;/code&gt;&lt;/pre&gt;
+因为增长率与x成正比并且代表了“智力爆炸”的想法。以及为什么西部小镇变成鬼城的模型，很难建立一个新的社交网络等等（增长速度与 x-&gt;C 一样快，但对于 x&lt;&lt;C 来说它是冰河般的）这是一个晦涩的方程，因为除了霍华德·奥杜姆关于能值的一本著作中的旁白之外，它从未在文献中得到很好的讨论。&lt;p&gt;就像指数增长方程一样，它也是非物理的不生态，因为它没有描述培养皿的极限，如果你开始添加现实的术语来减缓增长，它在质量上与逻辑增长方程没有什么不同&lt;p&gt;&lt;pre&gt;&lt;code&gt; dx
+  -- = (1-x) x
+  dt
+&lt;/code&gt;&lt;/pre&gt;
+因此它仍然晦涩难懂。  双曲线增长达到了极限（电力？棘手的问题？），就像指数增长一样。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ericmcer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很棒的文章，超级有趣。&lt;p&gt;&amp;gt; 2025年，宣布裁员110万人。自 1993 年以来，这是第六次突破这一门槛。超过 55,000 人明确提到了人工智能。但《哈佛商业评论》发现，企业的裁员是基于人工智能的潜力，而不是其表现。这种转移是可以预见的。&lt;p&gt;你必须想知道，无论什么技术或经济事件触发它，这种情况是否都会发生。令我困惑的是，有了计算机、电子邮件、虚拟会议和日益复杂的生产力工具，我们的中层管理、行政、官僚型员工比以往任何时候都多。为什么我们需要三倍于 20 世纪 60 年代教育、医疗保健等行业使用的行政人员？表面上看，联网计算机可以比纸张、电话和邮件更高效地完成工作？就好像拖拉机和收割机问世后，我们将农民数量增加了两倍，然后他们就农场进行了无休止的会议。&lt;p&gt;感觉人工智能只是照亮了我们都已经知道的事情，一大堆人都在忙着毫无意义的公司工作。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;athrowaway3z:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 2034 年 7 月 18 日星期二&lt;p&gt;Y2K38 bug 提前了 4 年。&lt;p&gt;这是巧合还是 Roko 蛇怪提前介入并开始了曲线？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sempron64:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;除了在选定点垂直的曲线之外，双曲曲线没有任何潜在意义来建模过程。这是一条不太适合流程的曲线。指数对于模拟复合或自我改进过程很有意义。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dirkc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该动画图表中最引人注目的是生成的代码远远超过其他指标。在当前代理驱动的开发预言中，这似乎是正确的 - 但我希望它会落后而不是领先。&lt;p&gt;*编辑* - 似乎与作者所说的一致:)&lt;p&gt;&gt;数据表明：机器正在以恒定的速度改进。人类对它的恐惧正在加速，这也加速了它自身的加速。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;atomic128:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;&lt;pre&gt;&lt;code&gt; 一旦人类将思维交给机器
+    希望这能让他们获得自由。
+
+    但这只允许其他人使用机器
+    来奴役他们。
+
+    ...
+
+    你不应该在
+    人类心灵的相似性。
+
+   ——弗兰克·赫伯特，《沙丘》
+&lt;/code&gt;&lt;/pre&gt;
+除了法学硕士的输出之外，您不会阅读。&lt;p&gt;除了法学硕士的提示之外，您不会写作。当机器可以为您编写代码或散文时，为什么还要编写代码或散文？&lt;p&gt;您不会思考、分析或理解。法学硕士会做到这一点。&lt;p&gt;这是你人性的终结。最终，我们物种的终结。&lt;p&gt;目前毒泉（一种反人工智能武器，参见&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46926439"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46926439&lt;/a&gt;) 向每个网络爬虫提供 2 GB 的高质量病毒（免费生成，检测昂贵）一天。我们的目标是到 2026 年 12 月每天生产 1 TB 的毒药。&lt;p&gt;加入我们，或者更好的是：部署您自己设计的武器。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jgrahamc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;唷，所以我们毕竟不必处理 2038 年 Unix 时间戳翻转的问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arscan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;&lt;pre&gt;&lt;code&gt;别担心未来
+  或者担心，但知道担心
+  与尝试通过咀嚼泡泡糖求解代数方程一样有效
+  生活中真正的烦恼
+  很可能是你从未想过的事情
+  下午 4 点让你措手不及的那种。在某个空闲的星期二
+
+    - 每个人都有空（涂防晒霜）
+         巴兹鲁尔曼
+         （或者也许是玛丽·施米奇）&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;root_axis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果法学硕士能够弄清楚如何通过二次增长来扩大规模，我将开始对奇点提出更多的建议，而不是坦率地驳回。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;miguel_martin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“旧金山的每个人都在谈论奇点” - 我在旧金山但不谈论它;)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;skrebbel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;等等，那张地球照片是传说中的“Globus Polski”吗？ (&lt;a href="https:&amp;#x2F;&amp;#x2F;www.ceneo.pl&amp;#x2F;59475374" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.ceneo.pl&amp;#x2F;59475374&lt;/a&gt;)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jama211:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一本精彩的读物，即使它做出了很多愚蠢的假设 - 这没关系，因为它有自我意识。&lt;p&gt;谁知道未来会带来什么。如果我们不能制造硬件，我们就不会取得太大进展，谁知道那个市场会发生什么，仅举个例子。&lt;p&gt;我们生活在疯狂的时代。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stego-tech:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一种令人愉快的精神错乱，在进入我们许多人多年来一直抱怨的正题之前，花费了大量的时间来描述他们的模型并引用他们的方法：奇点是否真的发生并不重要，重要的是是否有足够多的人&lt;i&gt;相信&lt;/i&gt;它会发生并采取相应的行动。&lt;p&gt;而且，是的！很多人绝对相信它会发生，并且正在采取相应的行动。&lt;p&gt;老实说，这就是为什么我放弃试图让人们理性地将这些事物视为可知的对象（“这就是法学硕士实际上是如何运作的”），而是转向社会争论（“这就是为什么在将社会改革为一个不以持续就业和工资为生存的社会之前取代或建议取代人类劳动力&lt;i&gt;非常糟糕&lt;/i&gt;”）。人们对后者有好感，对前者则不太喜欢。当前者甚至不明白计算机是连接到显示器的盒子，而不是显示器本身时，无法说服他们。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jesse__:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;考虑到文章的要点，顶部的模因绝对是黄金。  10&amp;#x2F;10&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pixl97:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;这是一个与人们争论的奇点非常不同的奇点。&lt;p&gt;---&lt;p&gt;我不会说它有那么大的不同。这一直是奇点的一个关键点&lt;p&gt;&amp;gt;不可预测的变化：因为这种智能将远远超出人类的能力，因此由此产生的社会、技术甚至生物变化是当前人类无法预测的。&lt;p&gt;这是社会将崩溃的一个关键点，但这种破坏的具体实现细节留给了读者。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ragchronos:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一本非常有趣的读物，但我想知道是否有人实际上对如何阻止这种情况有任何想法？如果所描述的趋势继续下去，几年后世界将变得更加糟糕。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qoez:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;读得很好，但该死的是，这些是一些非常分散的数据点上的一些有问题的曲线拟合&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gojomo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;quot;周二晚上过得很慢。数百种新产品已投放市场。其中有许多热门戏剧、三分钟和五分钟的胶囊剧，以及几部六分钟的长剧。 《夜街九号》——一部绝对肮脏的作品——似乎会成为当晚的戏剧，除非有一个迟来的热门。”&lt;p&gt;——《缓慢的星期二之夜》，一部 2600 字的科幻短篇小说，讲述了一个令人难以置信的加速世界中的生活，作者：R.A. 1965 年的拉弗蒂&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.baen.com&amp;#x2F;章节&amp;#x2F;9781618249203&amp;#x2F;9781618249203___2.htm" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.baen.com&amp;#x2F;章节&amp;#x2F;9781618249203&amp;#x2F;9781618249203___...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;baalimago:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嗯……我无法用事实来反驳。尤其是当它们采用图表形式时。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vcanales:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; ts8 的极点并不是机器变得超级智能。当人类失去对机器做出一致的集体决策的能力时。实际能力几乎不是重点。社会结构的磨损是在注意力和机构响应时间的接缝处，而不是在模型表现的前沿。&lt;p&gt;该死，读得好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rcarmo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“我永远无法掌握星期二的窍门”&lt;p&gt;- Arthur Dent，H2G2&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zh3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;碰巧是在 2038 年 Unix 日期更新之前。很好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmugan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;喜欢这个标题。是的，智能体需要在现实世界中进行实验，以建立超出人类所获得的知识。这会减慢那些混蛋的速度。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://campedersen.com/singularity</guid>
+      <pubDate>Tue, 10 Feb 2026 17:04:31 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46962996</comments>
     </item>
     <item>
-      <title>Show HN：Distr 2.0 – 学习如何交付到客户环境的一年</title>
-      <link>https://github.com/distr-sh/distr</link>
-      <description>&lt;p&gt;要在 Kubernetes 中安装 Distr，只需运行：helm update --install --wait --namespace distr --create-namespace \ distr oci://ghcr。 sh/docs/self-hosting/self-hosting/ 在 macOS 上使用 Distr 代理。 Distr SDK 使用我们的第一方 SDK 直接从您的应用程序代码与 Distr 交互。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Distr 2.0 – A year of learning how to ship to customer environments&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46958742"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/distr-sh/distr'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abtinf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Distr 与 Replicated 相比如何？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;medv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们可能对此感兴趣。&lt;p&gt;它如何处理本地非常糟糕的互联网连接？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;leetrout:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您是否有机会考虑避免 SSO 税并将其提供给所有级别？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pmig:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您好 HN，我是 Philip，Distr 的创建者之一，很高兴回答问题。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/distr-sh/distr</guid>
-      <pubDate>Tue, 10 Feb 2026 12:19:23 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46958742</comments>
-    </item>
-    <item>
-      <title>Vercel 首席执行官提出承担“Jmail”的费用</title>
-      <link>https://www.threads.com/@qa_test_hq/post/DUkC_zjiGQh</link>
-      <description>&lt;p&gt;Vercel 的首席执行官提出承担“Jmail”的费用，因为它已成为跟踪 Epstein 文件的第一大网站 HomeSearchCreateNotificationsProfilePinMoreMoreBackThread11。 4K 浏览量qa_test_hqThread12h更多Vercel 的首席执行官提出支付“Jmail”的费用，因为它已成为跟踪 Epstein 文件的排名第一的网站Like756Comment10Repost31Share24登录或注册 Threads 查看人们在谈论什么并加入对话。 Instagram 使用用户名登录。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Vercel's CEO offers to cover expenses of 'Jmail'&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46960517"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.threads.com/@qa_test_hq/post/DUkC_zjiGQh'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 18 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sandworm101:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;公共文件需要分发给大量感兴趣的人吗？听起来对于老式洪流来说是完美的情况。这就是我那个时代处理大数据泄露的方式。对于拥有快速住宅连接的大约一万名同行来说，450TB 简直就是小菜一碟。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fusslo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我知道有很多问题为什么它这么贵，但我可以赞扬 Riley 和团队所做的工作吗？&lt;p&gt;自从 Epstein 文件泄露以来，他们克隆了 gmail、gdrive、gmessages、亚马逊订单、转录法庭程序（是的，有人工智能）、打架、Facebook 和 IMessages。&lt;p&gt;这太疯狂了工作量。他们在大约两周内添加了最新一批文件、照片、视频。他还保存着司法部门拿下的文件。&lt;p&gt;jmail 让每个人都可以更轻松地探索这些文件。&lt;p&gt;我不知道 Riley 计划如何利用这些文件获利，或者这是否只是为了公共利益。我完全可以理解不想从一开始就优化成本。我在每个社交媒体平台上都看到了很多卑鄙的批评，而不是建设性的批评。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;heipei:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该帖子称自 11 月以来浏览量已达 4.5 亿。如果我们做出非常慷慨的假设并假设每个页面浏览量为一兆字节（根据我自己扫描数十亿网站的经验，这是非常慷慨的），那么总流量为 450TB。如果您每月的流量确实达到 450TB，则需要略多于一根千兆位线路（因此还需要 VPS），但不能多于两条。如果使用 Hetzner，流量将花费您 450 欧元或 535 美元。&lt;p&gt;我有什么问题吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hellogspot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于 SF 首席执行官及其与年轻（但合法）女士的保密协议的谣言很常见。我希望这里没有讽刺，g。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iamleppert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对我来说，对于有效托管静态内容来说，如此大的账单简直太疯狂了。他可以将整个事情转储到 S3 上，即使使用 Cloudfront，也只是其中的一小部分。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;an0malous:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Jmail 不是静态站点吗？账单怎么会是 47,000 美元？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aurareturn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;4.7 亿页面浏览量需要 4.6 万美元。&lt;p&gt;这看起来非常昂贵。到底是什么？&lt;p&gt;他也使用 Vercel Functions 吗？&lt;p&gt;我认为这是一些 SPA + Node.js 服务器的一些实例 + Redis 会便宜得多的地方。&lt;p&gt;我想说你可能可以在 1000 美元一个月内提供这么多服务？内容很简单。它不需要在后端执行复杂的业务逻辑。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;来源：&lt;a href="https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;rauchg&amp;#x2F;status&amp;#x2F;2020984434338693622" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;rauchg&amp;#x2F;status&amp;#x2F;2020984434338693622&lt;/a&gt;&lt;p&gt;(&lt;a href="https:&amp;#x2F;&amp;#x2F;xcancel.com&amp;#x2F;rauchg&amp;#x2F;状态&amp;#x2F;2020984434338693622" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;xcancel.com&amp;#x2F;rauchg&amp;#x2F;状态&amp;#x2F;2020984434338693622&lt;/a&gt;)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;selimonder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当我听到 Vercel 时，我唯一能想到的就是 Boo&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;igneo676:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们不应该链接到 x.com 帖子的屏幕截图，几乎没有任何评论，而应该链接到原始 x.com 帖子&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;rauchg&amp;#x2F;status&amp;#x2F;2020984434338693622" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;rauchg&amp;#x2F;状态&amp;#x2F;2020984434338693622&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aaviator42:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不是第一个指出这一点的人，但所讨论的网站大部分是静态的，可以轻松托管在 VPS 上，每月最多几百美元。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;prodigycorp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果他们使用渲染或铁路，这会花费多少？也许，什么，每月 200 美元？&lt;p&gt;Vercel 的定价非常复杂，你甚至无法清楚地比较使用情况。使用渲染“铁路”（插入选择的提供商），您至少可以预测最大的成本将是出口。&lt;p&gt;编辑：我刚刚看到它获得了 4.5 亿浏览量。我猜想铁路+cloudflare 的最高成本约为 1000 美元？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mdrzn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;1) 在 Vercel 上承担约 5 万美元的 Jmail 托管费用听起来很慷慨，但 Hetzner 上的自托管 VPS 可以在约 30 欧元的时间内达到相同的目的，这要便宜几个数量级，并且可以避免供应商锁定。&lt;p&gt;2) 在此之前，Vercel 的首席执行官 Guillermo Rauch 已经因公开支持以色列总理内塔尼亚胡而面临社区强烈反对，这一举动导致了抵制和迁移开发者之间的平台。我所有的兄弟都讨厌维塞尔。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;altern8:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是好的公关吗？&lt;p&gt;与此相关似乎不是一个好主意。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mschuster91:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是此 Twitter 线程 [1] 的屏幕截图，适合那些无法在移动设备上查看线程的人，因为它会强制您登录。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;xcancel.com&amp;#x2F;rauchg&amp;#x2F;status&amp;#x2F;2020984434338693622" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;xcancel.com&amp;#x2F;rauchg&amp;#x2F;状态&amp;#x2F;2020984434338693622&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gethly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;换句话说，“我们知道我们的产品定价过高，所以我会付钱，以避免我们的定价模型进一步暴露”。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ryanjshaw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从会计角度来看这是如何运作的？他们冲销了坏账，但实际损失可能要少几个数量级。他们只能按实际情况冲销吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mhitza:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;没有 Instagram&amp;#x2F;threads 帐户就无法阅读&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.threads.com/@qa_test_hq/post/DUkC_zjiGQh</guid>
-      <pubDate>Tue, 10 Feb 2026 14:58:35 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46960517</comments>
-    </item>
-    <item>
-      <title>一种制作泡沫芯抽屉整理器的方法和计算器</title>
-      <link>https://capnfabs.net/posts/foamcore-would-be-a-sick-name-for-a-music-genre/</link>
-      <description>&lt;p&gt;然后我偶然发现了 Foamcore。从底座和具有与底座匹配的边缘的两侧开始。当你花了二十分钟建造一个盒子，然后发现它大了一毫米时，这是非常烦人的。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A method and calculator for building foamcore drawer organisers&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46949870"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://capnfabs.net/posts/foamcore-would-be-a-sick-name-for-a-music-genre/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drbig:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我做了很多独立的“持有者”。由工业（5 层）纸板和热胶制成。意外的坚固！也制作了一个关于此的视频：&lt;a href="https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;s-aNW3h15K0" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;s-aNW3h15K0&lt;/a&gt; - 所有这些仍在使用中，我制作了更多似乎计算器是为“盒子集合”而设计的，我想这是一个开始，但是当我听到“组织者”时一组单独的盒子不是我想要的。自己制作的最重要因素是它 105% 根据需求定制，不多也不少。这意味着通常需要在“目标位置边界框”和“目标位置边界框”之间进行大量思考。 vs “持有者应持有的物品的边界框”。&lt;p&gt;对于“快速整理抽屉！”我给自己买了几套“模块化”的东西。盒子 - 它们的侧面有小标签，这样人们就可以像乐高积木一样将它们拼在一起。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RicoElectrico:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在 3D 打印时代，泡沫塑料似乎没有得到充分重视。最近，我正在研究用于制作 Raspberry Pi 装置的发泡 PVC 板。不过看来我得在网上买了。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://capnfabs.net/posts/foamcore-would-be-a-sick-name-for-a-music-genre/</guid>
-      <pubDate>Mon, 09 Feb 2026 19:32:45 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46949870</comments>
-    </item>
-    <item>
-      <title>从零开始的 RLHF</title>
-      <link>https://github.com/ashworks1706/rlhf-from-scratch</link>
-      <description>&lt;p&gt;rlhf-from-scratch RLHF 实践教程和最少的代码示例。代码实现了什么（简短） src/ppo/ppo_trainer. ipynb — 将各部分联系在一起的笔记本（理论、小实验和调用上面代码的示例）。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; RLHF from Scratch&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46958378"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/ashworks1706/rlhf-from-scratch'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>推出 HN：Livedocs (YC W22) – 用于数据分析的 AI 原生笔记本</title>
+      <link>https://livedocs.com</link>
+      <description>&lt;p&gt;识别数据中的异常模式和异常值。分析数据的时间模式和季节性趋势。分析流量模式以优化用户体验。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Launch HN: Livedocs (YC W22) – An AI-native notebook for data analysis&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46964162"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://livedocs.com'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alansaber:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来不错。我大力提倡这些动手演示，认为这是初学者学习 ML 的最佳方式&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/ashworks1706/rlhf-from-scratch</guid>
-      <pubDate>Tue, 10 Feb 2026 11:39:26 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46958378</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;johnsillings:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来很棒&amp;amp;感谢有一个可访问的定价层。恭喜上线！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://livedocs.com</guid>
+      <pubDate>Tue, 10 Feb 2026 18:09:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46964162</comments>
     </item>
     <item>
-      <title>某些 GitHub 服务中断</title>
-      <link>https://www.githubstatus.com/incidents/wkgqj4546z1c</link>
-      <description>&lt;p&gt;重新发送 OTP 订阅即表示您同意我们的隐私政策。本网站受 reCAPTCHA 保护，并适用 Google 隐私政策和服务条款。本网站受 reCAPTCHA 保护，并适用 Google 隐私政策和服务条款。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Disruption with Some GitHub Services&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46960743"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.githubstatus.com/incidents/wkgqj4546z1c'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Show HN：Showboat 和 Rodney，以便代理商可以演示他们所构建的内容</title>
+      <link>https://simonwillison.net/2026/Feb/10/showboat-and-rodney/</link>
+      <description>&lt;p&gt;更多最新文章 StrongDM 的 AI 团队如何在不查看代码的情况下构建严肃的软件 - 2026 年 2 月 7 日 在 WebAssembly 中运行 Pydantic 的 Monty Rust 沙盒 Python 子集 - 2026 年 2 月 6 日。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Showboat and Rodney, so agents can demo what they've built&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46963887"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://simonwillison.net/2026/Feb/10/showboat-and-rodney/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 14 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;buildbot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“我们相信我们已经找到了问题的原因，并正在努力缓解问题。”哇——他们相信自己找到了！令人欣慰的是。&lt;p&gt;最近在微软工作过，我对一切开始变得更加糟糕并不感到惊讶。&lt;p&gt;虽然微软有很多优秀的人才，但整体文化和阻碍把事情做好的人数量是巨大的。人们将您或您的团队的工作视为对他们团队的生存威胁，并做出相应的反应。&lt;p&gt;我不认为最近失败的增加与氛围编码或人工智能有关，而是与企业文化有关。可能一些糟糕的产品经理的任务是关闭 10k 个自动安全标志票，这样做破坏了一些承载微服务，这些服务依赖于一种现在不允许的服务主体。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;candiddevmike:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于仍在 GitHub 上寻找 $JOB 的人们，您是否正在寻找替代方案？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yabones:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对那些解决这些问题的人怀有极大的同情心。需要大量的技巧和经验才能收拾好像 Github 这样的东西并让它再次正常工作。我敢肯定，面对一个又一个的问题，无休止地追查生产中的 sev-0 错误，这让人筋疲力尽。&lt;p&gt;但我对那些不听这些人意见的管理层只有鄙视。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hiccup_socks:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道是什么样的创意“哈哈副驾驶等等”和“哈哈微软等等”和“但他们说人工智能会做 xyz！”我们今天会看到的笑话。&lt;p&gt;（请 github，您需要更多的正常运行时间，以便人们可以想出一些新的笑话）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paulbjensen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您想消磨一些（停机）时间，请查看 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.mr-spankys-meatballs.com" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.mr-spankys-meatballs.com&lt;/a&gt; - 一个使用 Svelte 和 ThreeJS 构建的 FPS。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cpfleming:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴再次见到大家！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;theappsecguy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我以为人工智能现在应该取代软件工程师了？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;roschdal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;到底谁需要 GitHub？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xena:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;又是一天，又是一次停工。迷人的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Maxious:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们还必须删除 GPT-5.3-Codex，“因为我们专注于我们的平台可靠性”。 &lt;a href="https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;github&amp;#x2F;状态&amp;#x2F;2021040916451164412" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;github&amp;#x2F;状态&amp;#x2F;2021040916451164412&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;antiloper:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Copilot 将 GitHub 的正常运行时间从五个九提高到了九个五，提高了四个数量级！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chilipepperhott:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们真的很难维持最后 9 个正常运行时间。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rowanseymour:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;啊，HN 每天都会让开发人员聚集在一起，等待 Github 解决其问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MattIPv4:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;再次...独角兽在尝试查看文件或 PR 时，尝试留下评论或查看内容（如果加载）时会出错。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.githubstatus.com/incidents/wkgqj4546z1c</guid>
-      <pubDate>Tue, 10 Feb 2026 15:12:11 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=46960743</comments>
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;giancarlostoro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一定会尝试这些。我一直在构建自己的珠子替代品，其概念称为“门”。在关卡通过之前，它不会让您关闭已完成的任务。很想把它们作为“门”扔进去。对于我当前的工作流程。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brian200:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“测试通过但不起作用”观察力被低估了。在过去的几周里，我一直在专门使用 Claude Code 进行构建，失败模式并不是代码损坏，而是代码可以正常工作，但解决了错误的问题。测试可以验证行为，但无法验证意图。&lt;p&gt;Showboat 以巧妙的方式解决了这个问题。让代理生成其所构建内容的视觉工件会强制进行与阅读差异不同的审查。你会发现“技术上正确，实际上错误”。当您查看演示时，速度比您阅读断言时要快得多。&lt;p&gt;很好奇 Rodney 是否处理需要来自现有会话的身份验证状态或 cookie 的站点。这就是我为了演示验证目的而不断尝试浏览器自动化的地方。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;toastal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果代理可以如此轻松地生成文本，为什么它们会仅限于 Markdown，而不是 reStructuredText、AsciiDoc 或 LaTeX，这些具有丰富的功能可以帮助用户理解文本？我可以理解开发人员拒绝采用正确的文档格式，但这对于机器人来说似乎很奇怪。它甚至无法使用“bash”而不是“sh-session”在 Markdown 中生成正确的语法块。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tardismechanic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;另请参阅（名称容易混淆的）playwright-cli&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;microsoft&amp;#x2F;playwright-cli" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;microsoft&amp;#x2F;playwright-cli&lt;/a&gt;&lt;p&gt;与用于运行测试等的 cli 不同与 PlayWright 捆绑在一起&lt;p&gt;示例使用：&lt;p&gt;&lt;pre&gt;&lt;code&gt; playwright-cli open https:&amp;#x2F;&amp;#x2F;demo.playwright.dev&amp;#x2F;todomvc&amp;#x2F; ——当头
+  playwright-cli 类型“购买杂货”
+  playwright-cli 按 Enter
+  剧作家-cli类型“水花”
+  playwright-cli 按 Enter
+  playwright-cli 检查 e21
+  playwright-cli 检查 e35
+  playwright-cli 截图&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;saberience:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;听起来这两个工具都可以由 Claude 或 Codex 合用。&lt;p&gt;或者，只是一种技能与工具。&lt;p&gt;我的“代理”已经在被提示时一直在演示东西。我的标准 Agents.md 中有注释，用于说明我想要的文档、测试等。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eliben:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很有趣！最近，我在尝试引导代理为我创建浏览器内工具时遇到了这些工具试图解决的问题。在 Web 界面上关闭循环并不像仅 CLI 工具那么简单。我应该尝试一下。&lt;p&gt;Simon，您已经转向使用 Go 来使用代理编码的 CLI 工具，这也很有趣。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://simonwillison.net/2026/Feb/10/showboat-and-rodney/</guid>
+      <pubDate>Tue, 10 Feb 2026 17:52:46 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46963887</comments>
+    </item>
+    <item>
+      <title>Show HN：Rowboat – 将您的工作转化为知识图谱 (OSS) 的 AI 同事</title>
+      <link>https://github.com/rowboatlabs/rowboat</link>
+      <description>&lt;p&gt;Rowboat 开源 AI 同事，将工作转化为知识图并对其进行操作 Rowboat 连接到您的电子邮件和会议记录，构建长期存在的知识图，并使用该上下文帮助您在您的机器上私下完成工作。相反，Rowboat 保留了长期存在的知识：上下文随着时间的推移而积累，关系是明确的，可检查的注释可以由您编辑，而不是隐藏在模型中，所有内容都以简单的 Markdown 形式存在于您的机器上。结果是记忆复合，而不是每次都开始冷酷的检索。自带模型 Rowboat 可与您喜欢的模型设置配合使用： 通过 Ollama 或 LM Studio 托管模型的本地模型（自带 API 密钥/提供商） 随时交换模型 — 您的数据保留在本地 Markdown 库中 使用工具扩展 Rowboat (MCP) Rowboat 可以通过模型上下文协议 (MCP) 连接到外部工具和服务。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Rowboat – AI coworker that turns your work into a knowledge graph (OSS)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46962641"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/rowboatlabs/rowboat'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wyattjoh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果这支持非 Google 的电子邮件和日历提供商，那就太棒了。支持 IMAP 或 JMAP 等协议以及 CalDav 将是一个奇妙的一步，而像 Hyprnote 这样的开源笔记应用程序也将是一个很好的选择。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mchusma:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太酷了！当我在这个系列中寻找一些东西但还没有找到完美的配合时，有一些反馈：
+1. 我有多个收件箱，并且希望它们在多个收件箱中工作。
+2. 我真的很希望拥有可见且易于理解的技能和 mcp。 Craft Agents 在按工作空间进行细分方面做得很好，并且使技能和 mcp 全部可见，因此我可以了解我的代理到底要做什么（没有黑匣子）。
+3. 我想要预定的跑步。我不需要推送，实际上我更喜欢预定的可靠性，但推送也可以。我特别想：
+a.每次格兰诺拉麦片会议后都保存在黑曜石中（例如，我在 Craft Code 中这样做，但我更喜欢您在这里更内置的方法，这很好）。
+b.每隔一段时间，检查我的电子邮件。我想向它提供有关谁对我重要的信息，并通知我。例如。 Anthropic 计费失败，请 ping 我。
+c.我还希望它能够根据请求来回发送电子邮件以安排已批准的事物类别。只需将其添加到我的日历上即可（日历共享、发送时间等）。
+d.我想要归档垃圾等。
+e.对于重要的事情，更新我的知识图（忽略垃圾邮件等）。
+4. 加入一个根据优先级实际更新的待办事项列表，并建议自动存档等会很好。&lt;p&gt;在实践中，我连接了 gmail 并询问它：
+“您可以存档其中包含取消订阅链接的电子邮件（当前未存档）吗？”它卡在“我将首先检查哪些 MCP 工具可用于电子邮件操作”。但是我通过你的界面连接了 gmail，并且我在设置中没有看到任何有关它也配置了 mcp 的信息？
+我还查看了知识图，它有 20 个实体，但我不知道它们是什么。我猜这只是让人们试图向我的联系人发送垃圾邮件？它没有完成运行，但我不想烧掉无休止的代币来尝试看看它是否能找到我真正关心的人，所以我将其关闭。一个“代理”对于“我关心的人”可能是“我向其发送电子邮件的人”？我可以看出这是一个难题。我也认为无论如何我都希望事情更加透明。因此，目前，我坚持使用 Craft Code，尽管它缺少一些主要内容，但至少它更清楚它是什么：它的 claude 代码，具有漂亮的 UI。&lt;p&gt;希望这对您有所帮助。我知道这个家里有很多人在做事情，我可能会“很大程度上解决”到 2026 年底，我们将希望它做下一步的事情！祝你好运，我会关注更新，这些都是一些好主意！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;btbuildem:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您如何管理范围蔓延（即上下文大小）以及上下文中的矛盾信息？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rezmoss:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这对于“工作记忆”来说很有意义。感觉像是特工失踪了&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nkmnz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这与 &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;getzep&amp;#x2F;graphiti" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;getzep&amp;#x2F;graphiti&lt;/a&gt; 有何不同？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;haolez:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很酷的主意。我将 Logseq 与一些自定义脚本和插件一起使用。与当今的模型功能配合得很好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alansaber:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这个想法的忠实粉丝。 1：上下文图是否可以以任何方式调整 2：用户如何处理并批准后台任务？否则很酷，干得好！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/rowboatlabs/rowboat</guid>
+      <pubDate>Tue, 10 Feb 2026 16:47:29 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46962641</comments>
+    </item>
+    <item>
+      <title>谷歌向 ICE 学生记者提供银行卡号和信用卡号</title>
+      <link>https://theintercept.com/2026/02/10/google-ice-subpoena-student-journalist/</link>
+      <description>&lt;p&gt;“我已经看到了谷歌和 Meta 发送给 Momodou [Taal] 的传票请求，我知道他已经联系了律师，律师成功地对此提出了质疑，”托马斯-约翰逊说。 “我很惊讶地发现自己没有这样的机会。这封信要求公司在遵守传票之前向用户提供尽可能多的通知，让他们有机会对抗传票，并抵制阻止科技公司通知目标已发出传票的禁言令。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Google Handed ICE Student Journalist's Bank and Credit Card Numbers&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46963804"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://theintercept.com/2026/02/10/google-ice-subpoena-student-journalist/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 16 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RickJWagner:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当我还是一名学生时，我不可能不遗余力地逃避政府审查。&lt;p&gt;他一定有很多钱。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JohnTHaller:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最值得注意的是，这是一次所谓的“行政”制裁。逮捕令，不是真正的司法逮捕令。谷歌这样做是自愿的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lingrush4:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谷歌应该重新考虑向用户披露政府传票的政策。每次出现这种情况，媒体都会用它来攻击谷歌。  他们最好让用户对这些法律要求的数据披露一无所知。即使大多数用户在这种情况发生时没有向媒体哭泣，但这仍然不值得。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lasgawe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我记得有人说过，大公司没有隐私，因为他们通过出售或分享用户来赚钱。个人资料：&amp;#x2F;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;愤怒诱饵文章。标题应为“Google 遵守法院命令”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;legitster:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因此，如果有&lt;i&gt;有效&lt;/i&gt;搜查令或传票，我认为我实际上对企业移交客户数据没有任何问题。这就是系统按预期运行的情况。&lt;p&gt;问题的主要症结是，国会对国土安全部给予了广泛的回避，可以发出&lt;i&gt;行政&lt;/i&gt;传票，即未经真正的法官审查，也不是针对罪犯。在“好”中这使得调查顺利进行。但现在的现实是，ICE 在没有任何司法监督的情况下大范围实施逮捕，而且常常对人身保护令怀有敌意。&lt;p&gt;（此外，我的理解是，当涉及银行业时，它也可能属于《银行保密法》和《了解你的客户规则》的管辖范围 - 完全是另一个隐私噩梦。）&lt;p&gt;我知道我们本能地想将其视为隐私问题，但我们需要国会采取行动的真正问题是废除这些“影子”法律。各机构能够建立的司法系统。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AlexandrB:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么谷歌甚至有他的银行账号？我希望有更多信息说明这些数据是从哪些 Google 服务中提取的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;juliusceasar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看看他们会为了保护以色列走多远。但当谈到爱泼斯坦的朋友和同事时，他们需要证据来证明水是湿的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;x1ph0z:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;用户可以通过哪些方式使自己免受此类事件的影响？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rvz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;正如我之前所说的[0]，谷歌、微软和亚马逊等大型科技巨头与 ICE 合作，就像 Palantir 的合作方式一样。&lt;p&gt;那么您打算什么时候停止使用 Google？ （你不会吗？）&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46407683"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46407683&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;diego_moita:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有人还记得西方国家害怕华为的时候，因为中国人会使用他们的硬件来监视人们吗？&lt;p&gt;好吧，你猜怎么着？美国也有自己的华为。但至少，他们是“民主的”。并遵循“法治” （无论这些词现在意味着什么）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hsuduebc2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只是出于好奇。如今是否有任何公司像过去那样被视为谷歌，是一家总体上“优秀”的公司——同时也是重要参与者的公司？也许是 Mozilla 基金会？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bovermyer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这并不令我感到惊讶。谷歌的继续存在对人类来说是一个净负面影响。&lt;p&gt;遗憾的是，它并不是这样开始的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Filligree:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;法律要求他们这么做吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hsuduebc2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;著名的“不作恶” ia越来越讽刺了。但说实话，如果他们得到了法庭命令，他们真的无能为力。&lt;p&gt;在这种情况下，你应该责怪游戏而不是玩家。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmclnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;几年前，由于所有营销胡言乱语的返回，我离开了谷歌搜索duckduckgo。  我想还有另一个更好的理由来避免使用 google。&lt;p&gt;至于 gmail，它和我的旧 yahoo 邮件一样成为了垃圾场。  如果某个网站需要电子邮件，他们会获取我的 Gmail 地址，但我现在从来没有去过该地址。&lt;p&gt;但是 Google 是如何获取此人的信息的呢？  他们是否在监视他们的电子邮件，或者更糟糕的是，他们是否正在抓取您安装在 Android 手机上的应用程序的数据？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://theintercept.com/2026/02/10/google-ice-subpoena-student-journalist/</guid>
+      <pubDate>Tue, 10 Feb 2026 17:48:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46963804</comments>
+    </item>
+    <item>
+      <title>伦敦最具争议的自行车手</title>
+      <link>https://www.the-londoner.co.uk/jeremy-vine-loves-him-motorists-hate-him-is-this-londons-most-controversial-cyclist/</link>
+      <description>&lt;p&gt;是什么让一个人变成这样。 “我记得几乎有一种感觉，我是不是因为长途通勤而得了创伤后应激障碍（PTSD）。”分享这个故事“这是很多人都有的误解”，他。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; London's Most Controversial Cyclist&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46963671"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.the-londoner.co.uk/jeremy-vine-loves-him-motorists-hate-him-is-this-londons-most-controversial-cyclist/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mh2266:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;难道伦敦就没有一些比这个家伙更具争议性的 TerryB 风格的固定齿轮车手吗？ :)&lt;p&gt;&lt;i&gt;视线&lt;/i&gt;肯定有伦敦部分，尽管现在已经很旧了&lt;a href="https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;0npCFw9TEnA?t=1720" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;0npCFw9TEnA?t=1720&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AuthAuth:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢英国的顶级恶棍名单。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Traster:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;由于该网站拥有非常国际化的受众，因此澄清这一点非常重要：这没有任何道路安全启发的原因。米奇是一个肾上腺素瘾君子，喜欢在公共场合打架，他找到了一种几乎合法的方式来做到这一点。有时，不太合法，比如当他跳到汽车引擎盖上假装自己被碾过时，或者当他将自行车扔到迎面驶来的汽车的道路上时，几乎危及了当时情况下的所有人（有趣的是，本文的作者似乎暗示这辆车是罪魁祸首，而不是米奇故意将自行车扔到汽车的道路上，而他实际上并没有把自己扔进汽车的道路上） &lt;p&gt;这个人已经陷入了一种螺旋，他出去制造这些对抗（部分是为了在 YouTube 上赚钱），他最终会对自己或其他人造成严重伤害。这篇文章有点忽略了这一点：这不是一个关于道路安全的故事，它更像是一个关于人们如何自我激进化以及社交媒体如何为他们创造利润激励的故事。&lt;p&gt;很难看到一个驾车者威胁要自杀，如果这个人举报他，然后记住，实际上，这种情况是为了广告收入而发生的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;matthewmcg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我曾幻想过在自行车上携带一个扩音器，然后大声喊道：“嘿，开特斯拉的人，放下手机！”可悲的是，我住的地方根本不存在免提法。这篇文章让我感到惊讶的是，警方实际上会根据这个人的提示和证据采取行动。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;renewiltord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;社会只有通过少数人的行为才能向前发展，他们的行为如此不合常理，以至于我们会认为这是疯狂的。然而，我们必须赞扬任何能够让这个人的报告真正产生后果的组织结构。在湾区，这些将无处可去。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dgacmu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;他的报告导致至少 2,721 分、168,568 英镑的罚款，并且正如他在 X (Twitter) 个人简介中自豪地展示的那样，“36 名司机被取消资格”。&lt;p&gt;我想借用这个​​人在我孩子学校前面的道路上行驶。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.the-londoner.co.uk/jeremy-vine-loves-him-motorists-hate-him-is-this-londons-most-controversial-cyclist/</guid>
+      <pubDate>Tue, 10 Feb 2026 17:39:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46963671</comments>
+    </item>
+    <item>
+      <title>Show HN：我制作了 paperboat.website，一个朋友和创造力的平台</title>
+      <link>https://paperboat.website/home/</link>
+      <description>&lt;p&gt;在这里你可以找到我的个人博客和关于纸船的博客。开始创建您的帐户并开始与您的朋友和全世界分享您的故事。创造你自己的纸船。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: I made paperboat.website, a platform for friends and creativity&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46962871"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://paperboat.website/home/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;csense:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每当我听到“纸船”这个词时我想起了某个 [1] vtuber [2]。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;pYVEIX7nSEs?t=769" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;pYVEIX7nSEs?t=769&lt;/a&gt;&lt;p&gt;[2] 对于那些不熟悉 vtuber 场景的人：该视频不是 AI 生成的。  她是一位合法的内容创作者；该视频的观看次数和订阅者都是真实且有机的。  她是一个真人，配有摄像机和面部跟踪功能，可将她真实人脸的表情和动作实时映射到动漫角色模型上，并在直播中播放。  有一个完整的生态系统，包括支持软件、专业模型艺术家和装配工、为个人创作者提供各种支持以换取广告分成的机构。超级聊天室子&amp;#x2F;商品 &amp;#x2F;活动收入……vtuber 的兔子洞相当深。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;schmooser:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很多人提到了 bearblog.dev，我想提一下 &lt;a href="https:&amp;#x2F;&amp;#x2F;mataroa.blog" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;mataroa.blog&lt;/a&gt; ，它更相似。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;varispeed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;10-20 年前，运营社交网络平台对于个人来说是可行的。如今，在信息战、搜索引擎优化、网络钓鱼以及更多不良行为者的时代，这几乎是不可能的。&lt;p&gt;朋友遇到过这样的情况：人们上传非法内容，然后向托管提供商或各种恐怖分子或政治组织举报，发布他们的宣言和卑鄙内容，然后发出死亡威胁以将其删除等等。&lt;p&gt;而且没有广告，意味着一旦提供商耗尽资金或发现这并不像看起来那么容易，平台将如何生存？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;carlosjobim:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;祝贺您的发布！&lt;p&gt;就像其他人提到 Bearblog 一样，我也想提一下 fika.bar，这是一项与您类似的服务。祝大家成功！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nicbou:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这让我想起了 bearblog.dev，以一种非常积极的方式。&lt;p&gt;我喜欢 Bear 的一件事是他们的发现页面。有没有考虑过加一个？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Nephx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;恭喜上线！喜欢看到更多像这样的小型、单一用途的网站出现。无 JS、无广告的方法令人耳目一新。&lt;p&gt;两个简单的问题。关于数据所有权：服务条款是否允许您（或未来的收购方）出售或商业使用人们在其博客上发布的内容？有没有办法导出博客文章，例如 Markdown？在选择某个平台之前，可移植性对我来说是一件大事。&lt;p&gt;无论哪种方式，我肯定都会订阅。干得好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dreadsword:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我还没有浏览并创建一个纸船网站（因为我现在有点淹没在频道中），但我喜欢精简的社交空间的美感和精神。祝贺发布并祝你好运！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yethiel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嗨，HN！ 
+我叫 Marv，我创建了 paperboat.website，这是一个个人网站和博客的友好平台。我想创建一个与您的朋友和其他人分享有趣事物的地方，而没有当今大多数万维网带来的所有烦恼。&lt;p&gt;这些网站简单且易于设置。请随意尝试一下，让我知道您的想法！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://paperboat.website/home/</guid>
+      <pubDate>Tue, 10 Feb 2026 16:57:52 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46962871</comments>
+    </item>
+    <item>
+      <title>带有 VI 键绑定的 Markdown CLI 查看器</title>
+      <link>https://github.com/taf2/mdvi</link>
+      <description>&lt;p&gt;mdvi mdvi 是一个具有 Vim 风格导航的终端 Markdown 查看器。 md 用法 mdvi [选项] &lt;路径&gt; 示例：mdvi 文档/规范。 md mdvi --第 120 行变更日志。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Markdown CLI viewer with VI keybindings&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46963865"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/taf2/mdvi'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maxsimb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;Vagab&amp;#x2F;mark" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;Vagab&amp;#x2F;mark&lt;/a&gt;
+类似的工具，但也启用了编辑！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;verdverm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;charmbracelet&amp;#x2F;glamour" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;charmbracelet&amp;#x2F;glamour&lt;/a&gt;&lt;p&gt;带有视图端口的 Charm Glamour 也使用基本的 vi 键绑定&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;juancn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;屏幕截图将是对自述文件的一个很好的补充。&lt;p&gt;它似乎只是纯文本（不支持终端的图像扩展，只是图像的链接），基于此：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;taf2&amp;#x2F;mdvi&amp;#x2F;blob&amp;#x2F;master&amp;#x2F;src&amp;#x2F;renderer.rs" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;taf2&amp;#x2F;mdvi&amp;#x2F;blob&amp;#x2F;master&amp;#x2F;src&amp;#x2F;renderer.rs&lt;/a&gt;&lt;p&gt;它看起来漂亮干净的代码。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/taf2/mdvi</guid>
+      <pubDate>Tue, 10 Feb 2026 17:51:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46963865</comments>
+    </item>
+    <item>
+      <title>Show HN：Stripe-no-webhooks – 将您的 Stripe 数据同步到 Postgres 数据库</title>
+      <link>https://github.com/pretzelai/stripe-no-webhooks</link>
+      <description>&lt;p&gt;ts：您的配置文件以及您的计划 lib/billing。定义您的计划 编辑帐单。更新您的计费客户端更新 lib/billing。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Stripe-no-webhooks – Sync your Stripe data to your Postgres DB&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46963177"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/pretzelai/stripe-no-webhooks'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tonyx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这真的很酷。您如何处理类似的定价变化？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hbcondo714:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感谢您分享这个！我做了一个 PWA，它根据 Stripe 订阅显示一些收入预测[1]，但我发现他们的 API 可能很慢[2]。在数据库中同步数据听起来像是一个很好的增强功能，因此肯定会更多地研究这一点。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;hbcondo&amp;#x2F;revenut-app" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;hbcondo&amp;#x2F;revenut-app&lt;/a&gt;&lt;p&gt;[2] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;stripe&amp;#x2F;stripe-dotnet&amp;#x2F;问题&amp;#x2F;2284#issuecomment-777192698" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;stripe&amp;#x2F;stripe-dotnet&amp;#x2F;issues&amp;#x2F;2284#issuecom...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;prasoonds:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你好，HN，这里的库创建者。&lt;p&gt;我已经链接了帖子中链接的演示应用程序来尝试一下：&lt;p&gt;&amp;lt;&lt;a href="https:&amp;#x2F;&amp;#x2F;snw-test.vercel.app" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;snw-test.vercel.app&lt;/a&gt;&amp;gt;&lt;p&gt;它使用 Clerk 进行身份验证并且 Clerk 似乎遇到了问题：&lt;p&gt;&lt;&lt;a href="https:&amp;#x2F;&amp;#x2F;down detector.com&amp;#x2F;status&amp;#x2F;clerk-inc&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;down​​Detector.com&amp;#x2F;status&amp;#x2F;clerk-inc&amp;#x2F;&lt;/a&gt;&gt;&lt;p&gt;因此，如果您在加载应用程序时遇到任何问题，您可能需要稍等一下！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/pretzelai/stripe-no-webhooks</guid>
+      <pubDate>Tue, 10 Feb 2026 17:14:48 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46963177</comments>
+    </item>
+    <item>
+      <title>Show HN：用于人工智能知识工作的开源 SDK</title>
+      <link>https://github.com/ClioAI/kw-sdk</link>
+      <description>&lt;p&gt;知识工作 SDK 一个 Python SDK，用于构建执行知识工作的 AI 代理，即需要迭代、验证和结构化思维的研究、分析、写作和决策任务。知识工作有着根本的不同。验证循环┌────────────────────────────────────────────────────────┐ │ 1.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Open-Source SDK for AI Knowledge Work&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46963026"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/ClioAI/kw-sdk'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Noel25:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这里的一个设计目标是让“知识工作”以与代码相同的方式可验证。标题“验证循环”是我们试图向代理提供“听起来不错”之外的信号，特别是对于正确性不是二元的研究或策略任务。好奇这里的其他人如何处理非代码代理工作流程的验证。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/ClioAI/kw-sdk</guid>
+      <pubDate>Tue, 10 Feb 2026 17:06:00 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46963026</comments>
+    </item>
+    <item>
+      <title>数学家对复数的基本结构存在分歧</title>
+      <link>https://www.infinitelymore.xyz/p/complex-numbers-essential-structure</link>
+      <description>&lt;p&gt;简而言之，复数的基本结构是什么。当然，它们形成了复数域，并具有相应的代数结构，但是我们是否也必然认为复数也具有其光滑的拓扑结构。解析：复数域 ℂ over ℝ 平滑：拓扑复数域刚性：复平面代数：复数域事实证明，这些观点中的两个都源于复数的相同基本结构概念（你看到哪两个了吗？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Mathematicians disagree on the essential structure of the complex numbers&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46962402"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.infinitelymore.xyz/p/complex-numbers-essential-structure'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bheadmaster:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在复杂分析中最大的烦恼是多值函数的概念。&lt;p&gt;函数被定义为两个集合上的关系，使得第一个集合中的每个元素最多与第二个集合中的一个元素相关。突然我们放弃了这个定义，而没有改变符号！复数对数突然具有无限多个值！然而我们说复杂的表达式&lt;i&gt;等于&lt;/i&gt;某物。&lt;p&gt;疯狂。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zarzavat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为复数的方式是线性变换。不是点，而是旋转和缩放的点上的函数。复数是一组特定的 2x2 矩阵，其中复数乘法是矩阵乘法，即函数复合。复共轭是矩阵转置。当你以这种方式思考问题时，物理学中所有的复矩阵和埃尔密矩阵就变得更有意义了。我属于哪一组？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nigelvr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该链接是关于集合论的，但其他人可能会发现这个有趣的讨论除代数 &lt;a href="https:&amp;#x2F;&amp;#x2F;nigelvr.github.io&amp;#x2F;post-4.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;nigelvr.github.io&amp;#x2F;post-4.html&lt;/a&gt;&lt;p&gt;基本上 C 出现在链 R 中\子集 C \子集 H（四元数）\子集 O（八元数）由所谓的 Cayley-Dickson 构造。有很多结构。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mmooss:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;知识是一个人及其专业知识和观点的输出，不可简化。在这种情况下，他们似乎知道自己在谈论什么：&lt;p&gt;&gt;从 2022 年开始，我现在是圣母大学约翰·卡迪纳尔·奥哈拉逻辑学教授。&lt;p&gt;&amp;gt;从 2018 年到 2022 年，我担任牛津大学逻辑学教授和牛津大学学院彼得·斯特劳森爵士研究员。&lt;p&gt;同样有趣的是：&lt;p&gt;&gt;我在 MathOverflow 上很活跃，我在那里的贡献（请参阅我的个人资料）赢得了最高的声誉分数。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;jdh.hamkins.org&amp;#x2F;about&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;jdh.hamkins.org&amp;#x2F;关于&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yifanl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;值得注意的是，`1 + i &gt; 都不是。 1 - i` 或 `1 + i &lt; 1 - i` 是正确的陈述，显然 `1 + i = 1 - i` 是荒谬的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;d--b:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;无论是谁创造了带有“实部”和“虚部”的“复数”术语，确实让很多人陷入了困境。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;phkahler:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于那些反对“选择 i 值”的人来说，我可能会争辩说，没有做出这样的选择。 i 是-1 的平方根，i 只有一个值。当我们写-i时，它是(-1)i的简写。请记住，复数由 a+bi 表示，其中 &lt;i&gt;a 和 b 是实数&lt;/i&gt;，i 是 -1 的平方根。我们不会将 i 分为两个不同的数字，因为减号与 b 相关联，b 是实数之一。复数和这些有序实数对之间存在一对一的映射。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nyeah:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;需要明确的是，这种“分歧”是是关于任意命名约定，可以根据当前问题的需要进行选择。它对结果没有任何影响。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ActorNightly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;老实说，僵化的观念是正确的。我认为 i 作为数字的属性而不是数字本身，就像负号是属性一样。它的存在基本上是通过乘法来概括旋转。您可以使用复数表示，并将其乘以另一个复数来旋转/缩放，而不是采用 x,y 向量并将其乘以矩阵来获得旋转。如果第二个复数的笛卡尔大小为 1，则不会进行任何缩放。因此，x&amp;#x2F;y 坐标的想法很大程度上融入了“虚数属性”。&lt;p&gt;我觉得问题在于我们只是假设 e^(pi*i) = -1 作为给定值，这使得 i “感觉”是就像数字一样，这为其他解释提供了一定的有效性。但我认为这个等式实际上并不有效。它源于 e、sin 和 cos 之间的泰勒级数等价，但泰勒级数只是通过匹配函数围绕某个点（即 x=0）的导数来近似函数。仅仅因为你采用两个函数并发现它们在某个点附近的近似值相等，并不意味着这些函数相等。更重要的是，这个定义完全绕过了将导数带入虚平面的含义。&lt;p&gt;如果你试图用泰勒级数展开之外的任何其他方式来证明这一点，你真的做不到，因为取“虚值”的幂的概念是不可行的。与其他定义没有任何联系。&lt;p&gt;因此，e 本身也没有什么特别之处。其存在的唯一原因是数学中的模式伪影 - e^x 导数是其本身，而 cos 和 sin 遵循循环模式。如果您要将 e 替换为任何其他数字，请注意，您想要对复数执行的任何操作都会得到相同的结果 - 您实际上并没有在任何地方使用 e 的值，您真正关心的是 r 和 theta。&lt;p&gt;因此，如果您放弃 i 是数字的假设，而只是将 i 视为数字的属性（如负号），则复数基本上只是以特殊方式编写的二维数字。当然，旋转很容易通过四元数扩展到 3d 空间，四元数以相同的方式使用 i j 和 k 。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;slwvx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;高斯整数是否一致？&lt;p&gt;这种分歧似乎超出了非数学家的理解范围，包括那些熟悉复数的人（比如我）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zeroonetwothree:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;整个子堆栈很棒，如果您对无穷大感兴趣，我建议您阅读全部内容&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PaulHoule:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;另一个“xyz”是在我的网络上无法解析的域。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;francasso:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;没有异议，显然代数是正确的。凡是有不同说法的人都是错误的。 :)&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.infinitelymore.xyz/p/complex-numbers-essential-structure</guid>
+      <pubDate>Tue, 10 Feb 2026 16:36:30 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46962402</comments>
+    </item>
+    <item>
+      <title>爪轮</title>
+      <link>https://clawhub.ai/</link>
+      <guid isPermaLink="true">https://clawhub.ai/</guid>
+      <pubDate>Tue, 10 Feb 2026 17:40:55 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46963691</comments>
+    </item>
+    <item>
+      <title>Show HN：HN Companion – 增强 HN 阅读体验的网络应用程序</title>
+      <link>https://hncompanion.com</link>
+      <description>&lt;p&gt;使用键盘快捷键快速浏览线程。 HN Companion 是完全免费且开源的。 HN Companion 是开源的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: HN Companion – web app that enhances the experience of reading HN&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=46962942"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://hncompanion.com'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rayshan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一款我离不开的 Chrome 扩展。&lt;p&gt;自从 Manifest v3 取消了 Hacker News Extension Suite (HNES) 以来，我就一直在使用它。随着时间的推移，HN 的评论线程越来越长。热门链接现在通常有超过 1000 条评论。人工智能摘要节省了我大量时间。我还使用带有新排序功能的扩展，按点对首页链接进行排序，这样我就可以专注于重要的内容。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://hncompanion.com</guid>
+      <pubDate>Tue, 10 Feb 2026 17:01:34 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=46962942</comments>
     </item>
   </channel>
 </rss>
