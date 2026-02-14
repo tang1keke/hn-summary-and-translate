@@ -6,75 +6,210 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 14 Feb 2026 15:32:54 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Feb 2026 18:46:54 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Ooh.directory：寻找您感兴趣的好博客的地方</title>
-      <link>https://ooh.directory/</link>
-      <description>&lt;p&gt;更多信息 一个月前更新 01/24/26 相关音频。更多信息 一个月前更新 点击引领最佳实践。 🇺🇸 更多信息 更新于 2 个月前 一年后仍然活着 今天是我发现罕见癌症一周年。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ooh.directory: a place to find good blogs that interest you&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47014449"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://ooh.directory/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>我的智能睡眠面罩将用户的脑电波广播到开放的 MQTT 代理</title>
+      <link>https://aimilios.bearblog.dev/reverse-engineering-sleep-mask/</link>
+      <description>&lt;p&gt;我的智能睡眠面罩将用户的脑电波广播到开放的 MQTT 经纪人 2026 年 2 月 12 日 我最近从 Kickstarter 获得了一个智能睡眠面罩。克劳德弄清楚了编码，然后从每个函数中读取每个命令字节。不只是来自我的设备——来自所有设备。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; My smart sleep mask broadcasts users' brainwaves to an open MQTT broker&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47015294"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://aimilios.bearblog.dev/reverse-engineering-sleep-mask/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 19 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonbw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好吧，这样做显然是不道德的，但这听起来像是你有能力创造一些科幻共享梦想设备，你可以在其中读取人们的脑电波并根据这些信号向其他人的面具发送信号。或者同时向每个人发送信号，突然间世界各地的人们都会在他们的梦想中同时经历一些变化。&lt;p&gt;就像，实际上并不这样做，但我觉得那里有科幻小说或短篇故事的灵感。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;flax:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这对我来说就像是胡说八道，尽管我承认对克劳德没有经验。&lt;p&gt;我发现很难相信睡眠面罩的存在具有列出的功能：“脑电图大脑监测、眼睛周围的肌肉电刺激、振动、加热、音频。”同时你还可以戴在脸上舒适地睡觉，电池容量足以让你睡几个小时。&lt;p&gt;我还想知道克劳德是如何探测蓝牙的。  克劳德可以使用蓝牙接口吗？为什么？  也许它编写了一个辅助程序然后运行它，但文章将其描述为 Claude 直接探测。&lt;p&gt;我也对 Claude 制定精确的逆向工程蓝牙协议的能力表示怀疑。  这至少是一个适合法学硕士的任务，但我怀疑文章作者与麦子分离也产生了很多谷壳。&lt;p&gt;如果有任何这种情况发生的话。  没有提到硬件，没有公司，没有发布实际的协议描述，没有提供库。&lt;p&gt;这是一个很好的模糊的未来派赛博朋克故事，但这些骨头上没有肉。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tomsmithtld:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不幸的是，共享 MQTT 凭证模式在预算 IoT 中非常常见。在智能插头和空气质量传感器中也看到了完全相同的情况。令人沮丧的是，每个设备的身份验证设置起来并不困难，mosquitto 以最少的配置支持客户端证书和主题 ACL。制造商会跳过它，因为每个设备的密钥配置增加了装配线的一个步骤，并且没有人愿意考虑密钥管理。因此他们对一组信用进行硬编码，并希望没有人在二进制文件上运行字符串。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rbbydotdev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;  我没想到最终会拥有阅读陌生人的能力。脑电波并在睡眠中向他们发送电脉冲。但我们来了。&lt;p&gt;几乎出自菲利普·K·迪克的小说&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SilentM68:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的项目。自从我在《巴克·罗杰斯》（Buck Rogers）（70-80 年代）的一集中看到类似的内容以来，这是我脑海中一直存在的一个想法！许多人由于持续的贝塔波而难以入睡；自然θ优势是必要的，但往往会被延迟。想象一下“便宜的”智能睡眠面罩，通过非侵入性刺激诱导脑电波从 beta（清醒，高频）过渡到 alpha（8-13 Hz，放松），然后是 theta（4-8 Hz，第一阶段浅睡眠），从而促进睡眠开始。解决方案可能是带有集成耳机（非侵入式）和脑电图传感器的舒适眼罩。
+它可以使用双耳节拍或类似的音频刺激来“注入”声音。外部的 alpha&amp;theta 频率引导大脑到达突然入睡的临界点。传感器会检测电流波；应用程序控制的音频从 alpha 诱导节拍渐变到 theta，确保自然优势。如果它能被设计出来，它可以加速睡眠过渡，提高质量，非药物性的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;autoexec:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这家伙买了一个连接互联网的睡眠面罩，所以它收集各种数据，或者它的收集方式不安全，这并不奇怪（每个人都应该预料到物联网会成为一场安全噩梦），所以对我来说，令人惊讶的是，该公司实际上费心担心节省带宽和电力，并经历了使用 MQTT 的麻烦。可能不是最好的选择，而且他们也懒得去安全地做到这一点，但我真的印象深刻的是，他们甚至在吸收人们的个人数据时试图提高效率。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;digiown:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;顺便说一句，所有法学硕士的逆向工程门槛都降低了，这似乎很酷。也许我们将能够完全控制其中的许多“智能”设备。需要专有间谍软件应用程序并以完全私密的方式使用它们的设备。任何此类仅与本地设备交互的应用程序都需要连接到互联网，例如洗碗机。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.jeffgeerling.com&amp;#x2F;blog&amp;#x2F;2025&amp;#x2F;i-wont-connect-my-dishwasher-your-stupid-cloud&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.jeffgeerling.com&amp;#x2F;博客&amp;#x2F;2025&amp;#x2F;i-wont-connect-my-dis...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throw876987696:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;没有品牌名称，我们如何验证这是真的？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;speedgoose:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请记住，物联网中的 S 代表安全性。&lt;p&gt;我已向全世界部署了开放的 MQTT，以便针对非个人（和医疗保健）数据建立快速原型。一旦我的云提供商告诉我停止，因为他们不喜欢它，这可能会被用于中继 DDOS 攻击。&lt;p&gt;即使他们设法在 MQTT 上进行一些身份验证和授权，我也不会信任睡眠面罩公司。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bobim:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们不会起诉逆向工程吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SubiculumCode:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;抱怨脑电波被发送到服务器怎么样？ 
+我是一名神经科学家，所以我不会说脑电图数据是读心术之类的，但作为先例，大脑数据的非隐私性是非常糟糕的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aurornis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Kickstarter 上有很多这样的项目，他们想方设法想方设法进入市场。我在 Kickstarter 上的一些项目取得了一些成功，但我对支持的项目非常有选择性。我常常能识别出团队何时陷入困境，或者认为他们只是在资金到达后才弄清楚细节。&lt;p&gt;在一段时间内，我认识的工业设计师尝试推出自己的 Kickstarter 很受欢迎。他们相信工程是一种商品，拿到钱后可以出租给出价最低的人。产品设计和营销（他们的专长）才是真正的价值。他们所有的项目要么失败，要么花费比他们带来的更多的钱，因为工程比他们想象的更难。&lt;p&gt;我认为我们又陷入了新一轮的困境，因为法学硕士给人的印象是软件和固件部分基本上是免费的。人们以前因软件困难而搁置的所有项目想法现在都得到了人们的另一种看法，他们认为他们只是要提示克劳德，直到产品看起来可以工作。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dnw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很想看到即时历史。总是好奇这种类型的工作需要多少人为干预和指导，因为当我读到这篇文章时，我以为我提示了克劳德，它得出了所有这些结果。例如，“所以克劳德转而追求应用程序。抓取 Android APK，用 jadx 对其进行反编译。”完全是作者自己提出的建议和摆弄的吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;basedrum:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;隐瞒公司名称是不负责任的行为&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;intellirim:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这正是我们需要对连接设备进行审计跟踪的原因。用户无法了解正在发送的数据
+  哪里。在用户不知情的情况下将脑电波数据广播给开放经纪人的事实是治理失败，而不是
+   只是一个安全错误。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;morkalork:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;由于每个设备共享相同的凭证和相同的经纪人，如果您可以读取某人的脑电波，您还可以向他们发送电脉冲。&lt;p&gt;太棒了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;roywiggins:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;赛博朋克&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bryanrasmussen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;呵呵，不确定生活是否模仿斯纳克和公牛
+&lt;a href="https:&amp;#x2F;&amp;#x2F;medium.com&amp;#x2F;luminasticity&amp;#x2F;great-products-of-Illuminati-ganga-8f1698c06a53" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;medium.com&amp;#x2F;luminasticity&amp;#x2F;great-products-of-Illuminat...&lt;/a&gt;&lt;p&gt;“ZZZ 面罩是一款智能睡眠面罩 — 它可以让您睡得更少，睡得更深。这是前提——但实际上它是一台打破范式的计算机，允许完全自动化和控制睡眠过程，包括进入梦境时间。”&lt;p&gt;或者如果这是同一主题的另一个科幻变体，带有一些开发者之类的装饰。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;baby_souffle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Well that’s a brand new sentence.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://aimilios.bearblog.dev/reverse-engineering-sleep-mask/</guid>
+      <pubDate>Sat, 14 Feb 2026 15:35:47 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47015294</comments>
+    </item>
+    <item>
+      <title>阿姆斯特丹编译器套件</title>
+      <link>https://github.com/davidgiven/ack</link>
+      <description>&lt;p&gt;平台：cpm 生产 i80 CP/M。 COM 文件 em22 生成 EM22 字节码文件 linux386 为 PC Linux 系统生成 ELF 可执行文件 linux68k 为 m68020 Linux 系统生成 ELF 可执行文件 linuxmips 为小端 MIPS32r2 Linux 系统生成 ELF 可执行文件 linuxppc 为 PowerPC Linux 系统生成 ELF 可执行文件 minix68k 为 m68000 Minix 系统生成 Minix 可执行文件 msdos386 生成 i386 MS-DOS 32 位 DPMI。 EXE 文件 msdos86 生成 i86 MS-DOS。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Amsterdam Compiler Kit&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47016008"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/davidgiven/ack'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bartkappenburg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么叫阿姆斯特丹？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;einpoklum:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;tl;dr：一个针对多个旧平台的工具包，其中包含 20 世纪 80 年代流行的一些语言的代码：C89 (ANSI C)、Pascal、Modula 2、Basic。一个“套件”；这里的意思是：前端、代码生成、支持库和一些工具。这显然是 Minix 1 和 2 的默认工具链。&lt;p&gt;但是 - 存储库并不是“您需要的一切”；它只是一个工具链。它实际上很大程度上依赖于现有平台 - GCC、Lua、Make、Python 等。因此，您通常会使用它来交叉编译。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ramon156:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来很酷，2022 年最后一篇文章了？功能齐全吗？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/davidgiven/ack</guid>
+      <pubDate>Sat, 14 Feb 2026 16:50:47 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47016008</comments>
+    </item>
+    <item>
+      <title>显示 HN：Arcmark – 作为侧边栏附加到浏览器的 macOS 书签管理器</title>
+      <link>https://github.com/Geek-1001/arcmark</link>
+      <description>&lt;p&gt;Arcmark Arcmark 是一个使用 Swift 和 AppKit 构建的原生 macOS 书签管理器，可作为侧边栏附加到任何浏览器窗口。下载最新版本：下载 Arcmark v0.1发布页面中的 dmg 文件 打开下载的 DMG 文件 拖动 Arcmark.dmg 文件。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Arcmark – macOS bookmark manager that attaches to browser as sidebar&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47016058"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/Geek-1001/arcmark'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://github.com/Geek-1001/arcmark</guid>
+      <pubDate>Sat, 14 Feb 2026 16:55:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47016058</comments>
+    </item>
+    <item>
+      <title>Vim 9.2 发布</title>
+      <link>https://www.vim.org/vim-9.2-released.php</link>
+      <description>&lt;p&gt;2 为 Vim9 脚本语言带来了显着增强，改进了 diff 模式，全面的补全功能以及特定于平台的改进，包括实验性 Wayland 支持。显着的语言增强，包括对枚举、通用函数和元组数据类型的本机支持。这些值已从默认值中删除。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Vim 9.2 Released&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47015330"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.vim.org/vim-9.2-released.php'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tiffanyh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;minifeed.net" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;minifeed.net&lt;/a&gt; 是我喜欢的另一个类似网站。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;redmattred:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太棒了。一些良好的怀旧氛围。&lt;p&gt;事实上，它并不详尽，并且反映了创作者的品味，这是一个功能，而不是一个错误。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaway150:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;ooh.directory&amp;#x2F;" 的问题rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ooh.directory&amp;#x2F;&lt;/a&gt; 是没有人可以知道添加了什么和没有添加什么。提交的内容要经过不透明的审核过程，很多好的提交内容都没有通过。&lt;p&gt;只需尝试在 ooh.directory 中搜索您最喜欢的博主。十有八九它们会从目录中丢失。&lt;p&gt;我更喜欢一个更透明的目录，这样我们就可以知道为什么添加或未添加某些内容。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;voy707:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;互联网又变得更加人性化了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;engelo_b:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谷歌正在消亡的叙述通常忽略了这样一个事实：利基博客的激励循环现在刚刚被打破。我们陷入了为“有用的内容”写作和为“有用的内容”写作之间的困境。算法或为真实的人类写作。像这样的策划目录基本上是绕过搜索引擎优化军备竞赛并再次找到真正的领域专业知识的唯一方法。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;8organicbits:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不久前正在查看 RSS 规范，以弄清楚类别字段应该如何工作，并最终挖掘了 Web 目录历史记录。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;alexsci.com&amp;#x2F;blog&amp;#x2F;rss-categories&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;alexsci.com&amp;#x2F;blog&amp;#x2F;rss-categories&amp;#x2F;&lt;/a&gt;&lt;p&gt;Syndic8、DMOZ、NewsIsFree 和 TX（消失在历史中？）使用了在 ooh.directory 上看到的相同分类方法。现在全部都已不复存在，但 DMOZ 似乎以 Curlie 的身份继续存在。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;List_of_web_directories" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;List_of_web_directories&lt;/a&gt;&lt;p&gt;从技术上讲，我们可以使用 ooh.dir 定义的分类法来标记 RSS 提要，这将允许我们自动将博客分类到主题组中，但我还没有找到使用该方法的单个提要。我们最终会得到临时类别标签，这些标签很难去重复，或者更常见的是，未分类的博客。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ramon156:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我订阅了《索引问题》（我想这就是名字），其中有一个不错的精选博客文章的简短列表。对我有用！&lt;p&gt;当然，我喜欢技术性更强的版本。也许这里的任何人都可以开始一个？&lt;p&gt;制作一个 RSS 列表，选择您喜欢的列表，然后砰的一声，您就得到了我的子:)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nefsim:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;寻找利基个人博客最近变得非常困难，因为搜索结果主要由大量企业网站和 SEO 优化的垃圾内容主导。这是真正发现“小网络”的好方法。再次。它让我想起了我最初开始关注 RSS 源的原因。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PaulRobinson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一个好主意，也是我最近的一个主意。&lt;p&gt;一些建议：我知道我们没有人喜欢“算法选择”，但我认为我们可以比字母顺序做得更好。您看到的点击次数（受欢迎程度）或谷歌告诉您的入站链接数量就很好。&lt;p&gt;我也认为您已经付出了巨大的努力，但在某些类别中仍然很轻。我希望你继续下去——你的数据源是什么？您是否正在跟踪已索引的出站链接以查找新博客？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;考虑到每个人都对人工智能灾难性的担忧，互联网被法学硕士生成的垃圾内容淹没，也许是时候让像这样的人类策划的目录复活了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ehecatl42:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;未找到与 emacs 匹配的博客或类别。&lt;p&gt;那就好。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://ooh.directory/</guid>
-      <pubDate>Sat, 14 Feb 2026 13:40:20 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47014449</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;einpoklum:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我是 vim 的外行用户。我每天都用它来编辑文本文件和一些代码，但我总是发现插件和脚本语言相当令人畏惧。有不同的、相互冲突的插件管理系统；当然，还有 vim 特定的脚本语言，有几次我试图深入研究这些东西，但很快我就发现自己陷入了困境。&lt;p&gt;因此，在 VIm 9.2 发布之际，人们是否有一个关于“升级”的温和路径的建议？一个人的 VIm 技能和参与度？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;worldsavior:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的。韦兰支持。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;srik:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 30 多年来，Vim 一直是“慈善软件”，支持乌干达基巴莱的儿童。 Bram Moolenaar 去世后，ICCF Holland 基金会被解散 [...]，其剩余资金被转移，以确保继续支持 Kibaale 项目。 [...]Vim 仍然是慈善软件。我们鼓励用户通过这一新的过渡继续支持乌干达的贫困儿童。&lt;p&gt;我之所以选择 vim，是因为它的技术优点，但 Bram 长期以来用他的善意资助这样的慈善机构，总是让我对自己的选择感到满意。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Bulbasaur2015:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; Vim 现在遵守 XDG 基本目录规范，&lt;p&gt;很酷&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;actinium226:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;但AI功能在哪里？会被抛在后面的！&lt;p&gt;当然只是开玩笑，实际上，看到这个专业的新版本发布而没有任何人工智能废话，真是令人耳目一新。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;computerfriend:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;奇怪的是 &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;vim&amp;#x2F;vim&amp;#x2F;tags" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;vim&amp;#x2F;vim&amp;#x2F;tags&lt;/a&gt; 中没有 v9.2 标签。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dkga:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴看到 vim 继续。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mcswell:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;忽略我的评论，测试我是否被屏蔽&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TristanDaCunha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;应该停止并帮助 neovim&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jasonhansel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很高兴看到 Vim9 不断取得进步。重心可能已经稍微转向 Neovim，但 Neovim 生态系统目前似乎针对的是那些想要更像 IDE 的东西的人。&lt;p&gt;一个问题是：是否会有更多插件作者转向 Vim9Script？看来 Neovim 用户普遍已经转向基于 Lua 的插件，因此开发同时支持 Neovim 和 Vim9 的插件的动力减弱了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmclnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;恭喜！&lt;p&gt;&amp;gt;对 Wayland UI 的全面支持&lt;p&gt;我真的希望他们永远不会放弃 X11 支持 :) 我怀疑他们会这样做，但如果他们这样做，那么 BSD 将没有一个好的选择。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.vim.org/vim-9.2-released.php</guid>
+      <pubDate>Sat, 14 Feb 2026 15:39:43 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47015330</comments>
     </item>
     <item>
-      <title>显示 HN：Sameshi – 约 1200 Elo 国际象棋引擎，大小不超过 2KB</title>
-      <link>https://github.com/datavorous/sameshi</link>
-      <description>&lt;p&gt;Sameshi 观看演示视频 一个最小的国际象棋引擎，支持游戏的受限子集。 95 KB 核心 120 单元邮箱板 negamax 搜索 alpha beta 修剪材料仅评估捕获第一步棋顺序完整合法棋步验证（检查/配对/僵局）注意未实现：王位易位、en passant、升级、重复、50 步规则。强度 ~1170 Elo (95% CI: 1110-1225) 与鳕鱼进行 240 场比赛（1320-1600 级）固定深度 5，受限规则，最多 60 层。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Sameshi – a ~1200 Elo chess engine that fits within 2KB&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47014500"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/datavorous/sameshi'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>M 盘存档功能回顾。具有长期测试结果</title>
+      <link>http://www.microscopy-uk.org.uk/mag/artsep16/mol-mdisc-review.html</link>
+      <description>&lt;p&gt;具有长期测试结果。测试发现，M-Disc DVD 比传统 DVD 更耐用。 M-DISC BD-R 没有反射层。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A Review of M Disc Archival Capability. With long term testing results&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47015579"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='http://www.microscopy-uk.org.uk/mag/artsep16/mol-mdisc-review.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;falsaberN1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;天哪，源头太小了！由于它被缩小了，所以很难解析，但我非常喜欢它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;haute_cuisine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太棒了！感谢分享。 4KB 引擎会带来 elo 收益吗？&lt;p&gt;P.S.我假设国际象棋 com 规模为 1200 elo（不是 lichess &amp;#x2F; fide elo）和子弹象棋变体？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TZubiri:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;法典还是克劳德法典？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lekevicius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您认为有可能实现 1:1 ELO:bytes 吗？甚至更小，但可能不太聪明。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;GeertB:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你是如何处理 Stockfish 城堡或升级的游戏的？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chvid:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很酷，您可以将其保持在 2k 以下，但最好有一个可读版本的源代码。&lt;p&gt;您是否像这样使用它，或者您是否有某种脚本将其简化为单行、单字母变量名称？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/datavorous/sameshi</guid>
-      <pubDate>Sat, 14 Feb 2026 13:47:44 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47014500</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kasabali:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有谁知道使用的控制盘（&lt;a href="http:&amp;#x2F;&amp;#x2F;www.microscopy-uk.org.uk&amp;#x2F;mag&amp;#x2F;imgsep16&amp;#x2F;m-disc-test3.jpg" rel="nofollow"&gt;http:&amp;#x2F;&amp;#x2F;www.microscopy-uk.org.uk&amp;#x2F;mag&amp;#x2F;imgsep16&amp;#x2F;m-disc-test3.jp...&lt;/a&gt;) 是 HTL 还是 LTH？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Luc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很酷，但是验证数据（播放电影）的方法似乎不是最佳的。这部电影可能存在一些未被注意到的数据损坏。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zetanor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;IIRC，“M-Disc”品牌光盘在某种程度上不再是“M-Disc”规格，但由于它是一种相当小众的产品，在十年前达到顶峰（超过？），因此很难在 2026 年找到有关此的任何明确信息。这很遗憾，因为我喜欢这种格式。我很高兴看到任何形式的确认或更正。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;KillenBoek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;仍然使用 m 光盘作为家庭相册，并将它们放在防虫袋中，以防出现问题。便宜又轻。磁盘格式正在消亡真是太可惜了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AshamedCaptain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我自 95 年以来仍然使用光盘进行个人备份。我最担心的是 10 年、20 年后我是否还能购买新的驱动器和空白介质。或者根本不是物理介质...&lt;p&gt;请不要说 LTO 磁带。这些驱动器巨大、噪音大、价格昂贵，而且它们有一个非常快速的弃用政策（新驱动器不能使用旧磁带）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;svilen_dobrev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[2016]&lt;p&gt;10 年后的今天，M 盘的外观和读数会很有趣。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">http://www.microscopy-uk.org.uk/mag/artsep16/mol-mdisc-review.html</guid>
+      <pubDate>Sat, 14 Feb 2026 16:07:44 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47015579</comments>
     </item>
     <item>
-      <title>x86-64 CPU 有多少个寄存器？ (2020)</title>
-      <link>https://blog.yossarian.net/2020/11/30/How-many-registers-does-an-x86-64-cpu-have</link>
-      <description>&lt;p&gt;我将计算 x86-64 CPU 上存在的寄存器，但不能在长模式下使用。我不会计算微架构实现细节，例如影子寄存器。我将计算无法直接寻址的寄存器，例如只能通过 RDMSR 访问的 MSR。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; How many registers does an x86-64 CPU have? (2020)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47014405"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://blog.yossarian.net/2020/11/30/How-many-registers-does-an-x86-64-cpu-have'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>发烧友无法区分通过铜、香蕉或泥土发送的音频</title>
+      <link>https://www.tomshardware.com/speakers/in-a-blind-test-audiophiles-couldnt-tell-the-difference-between-audio-signals-sent-through-copper-wire-a-banana-or-wet-mud-the-mud-should-sound-perfectly-awful-but-it-doesnt-notes-the-experiment-creator</link>
+      <description>&lt;p&gt;剧透警报：结果表明用户无法准确地区分这些不同的“界面”。初步测试结果表明，听众很难正确辨别哪个音轨使用了哪种接线设置。这与帕诺的结论一致，即“听众无法从循环版本中可靠地辨别出原始版本”，这表明他们无法检测到循环引入的任何变化 - 无论是专业级的铜线还是某人后院的湿泥。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Audiophiles Can't Distinguish Audio Sent Through Copper, Banana or Mud&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47015987"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.tomshardware.com/speakers/in-a-blind-test-audiophiles-couldnt-tell-the-difference-between-audio-signals-sent-through-copper-wire-a-banana-or-wet-mud-the-mud-should-sound-perfectly-awful-but-it-doesnt-notes-the-experiment-creator'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nefsim:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;尽管这篇文章是 2020 年的，但它仍然是经典参考。考虑到英特尔的 APX 旨在将 GPR 增加一倍至 32，现在重新审视这一基线尤其重要。了解我们如何达到这一目标是了解该架构下一步发展方向的关键。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fuhsnn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;英特尔的下一代将增加 16 个通用寄存器。等不及基准测试了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JonChesterfield:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好帖子！我不知道 x64 有什么东西。遗憾的是没有回答“rax后面有多少寄存器”的问题。我所希望的问题是，我很想知道在重命名机器耗尽并且事情停滞之前，可以对各种架构寄存器进行多少未完成的写入。并不是为了立即应用到生活中，只是我的 x64 心理成本模型中缺少的一部分。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sylware:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不要忘记 x86_64，就像 ARM 是 IP 锁定的，而 RISC-V 则不是。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://blog.yossarian.net/2020/11/30/How-many-registers-does-an-x86-64-cpu-have</guid>
-      <pubDate>Sat, 14 Feb 2026 13:33:03 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47014405</comments>
+&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;londons_explore:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;完美的扬声器系统与房间里有一支现场乐队（蒙住眼睛时）没有什么区别。&lt;p&gt;当今的音频系统可以做到这一点吗？     我需要花多少钱才能到达那里？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;crims0n:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;可能会让一些人生气......但我去年陷入了发烧友的兔子洞，最终得出结论：这根本不值得。我理解这种吸引力，尤其是那些看重好的硬件的人。有太多可供选择...DAC、DAP、放大器、优质编织的精美平衡电缆、带有实木装饰的耳机、看起来完全科幻的 IEM。&lt;p&gt;我学到的一些可以节省某人时间的事情：&lt;p&gt;(1) 音质取决于介质，而不是构造。扬声器几乎总是比耳机（耳机）听起来更好，耳机几乎总是比入耳式耳机听起来更好，入耳式耳机几乎总是比耳罩式耳机听起来更好。&lt;p&gt;(2) 几百美元的东西和几千美元的东西之间的音质差异是如此之小，以至于“收益递减”。 &lt;p&gt;(3) DAC、EQ、前置放大器和整齐管理的 RCA&amp;#x2F;XLR 电缆的堆叠在你的办公桌上看起来很酷 - 但它们占用了大量的空间，而且花费了很多钱，而这些东西听起来可能比一对 AirPods Max 好 10%（前提是你记得在 Apple Music 中打开无损，但我忘记了！）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spaceport:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我无法将湿泥装入管子中并在阁楼中运行而使其保持湿润。  不幸的是，香蕉也是如此，因为这会给香蕉插头带来更多的意义。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gorgoiler:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于这些部件的经典寓言是 Quad（和/或 Cambridge Audio？），在 1970 年代的希思罗博览会上使用电源线作为扬声器线演示了他们最新、最伟大的产品。&lt;p&gt;这是任何系统中最不重要的部分，事实上，我的 Quad 放大器和 CA R50 使用扭曲的编织棕色灯线连接，作为一种漂亮的美学致敬。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RedShift1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我记得 Technics 曾在广告中使用竹子在电容器中的放大器？总是想知道那里是否有真正的竹子以及电效应是什么......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;porcoda:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这似乎是一个商机。  “符合道德规范的有机泥扬声器线可带来干净、有机、纯净的声音。”  &amp;#x2F;s&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hackingonempty:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;正如我们在上图中看到的，43 个猜测中只有 6 个正确答案&lt;p&gt;我猜测这个实验动力不足，无法从中得出任何结论。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kachapopopow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不知道...这个测试是不科学的...显然泥土和香蕉可能会产生意想不到的副作用，使音频听起来更好，需要立即进行调查。&lt;p&gt;更严重的是...似乎不是“好”的效果。音频好不好？无噪声音频和垃圾集成音频之间存在巨大差异扬声器有嘶嘶声不平衡和峰值……如果“好”的话音频很糟糕，那么显然它们之间没有区别。&lt;p&gt;这让我想...香蕉和泥浆是噪音过滤器...嗯...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ungreased0675:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;虽然我认为发烧友设备的很大一部分都是不科学的废话，但在这种情况下，尚不清楚在电路中添加不同的材料会如何增加失真或以任何方式改变音频。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.tomshardware.com/speakers/in-a-blind-test-audiophiles-couldnt-tell-the-difference-between-audio-signals-sent-through-copper-wire-a-banana-or-wet-mud-the-mud-should-sound-perfectly-awful-but-it-doesnt-notes-the-experiment-creator</guid>
+      <pubDate>Sat, 14 Feb 2026 16:48:17 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47015987</comments>
     </item>
     <item>
-      <title>昨晚使用 Claude Code、Svelte 和 ThreeJS 构建的高尔夫游戏</title>
-      <link>https://www.the-golf-is-golfing.com</link>
-      <guid isPermaLink="true">https://www.the-golf-is-golfing.com</guid>
-      <pubDate>Sat, 14 Feb 2026 14:15:33 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47014704</comments>
+      <title>7zip.com 正在提供恶意软件</title>
+      <link>https://www.malwarebytes.com/blog/threat-intel/2026/02/fake-7-zip-downloads-are-turning-home-pcs-into-proxy-nodes</link>
+      <description>&lt;p&gt;exe——主要代理有效负载（Go 编译的）英雄。执行流程：从安装程序到持久代理服务 行为分析显示了快速且有条理的感染链： 1. 恶意软件与 iplogger[ 进行通信。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; 7zip.com Is Serving Malware&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47014995"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.malwarebytes.com/blog/threat-intel/2026/02/fake-7-zip-downloads-are-turning-home-pcs-into-proxy-nodes'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bloaf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;正是出于这个原因，我开始使用 winget 来安装我的应用程序。  我无法跟踪每个软件的每个 URL。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jas39:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不会相信任何来自俄罗斯的软件。可能是 FSB 的一个载体。我确信他们已经考虑过这一点。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaway150:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我使用 3 个主要浏览器进行了测试，所有 3 个浏览器均将其拦截为“可疑网络钓鱼”。所以看起来系统正在按照设计运行。&lt;p&gt;类似的提供恶意软件的网站一直存在。所以这不完全是新闻。但浏览器正在像他们应该的那样阻止它们。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;high_na_euv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;许多服务使用几个域名并没有帮助，如果其他域名看起来像骗局域名示例，则可以加分&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Meneth:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我将 &lt;a href="https:&amp;#x2F;&amp;#x2F;7-zip.org&amp;#x2F;a&amp;#x2F;7z2600-x64.exe" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;7-zip.org&amp;#x2F;a&amp;#x2F;7z2600-x64.exe&lt;/a&gt; 与 &lt;a href="https:&amp;#x2F;&amp;#x2F;7-zip.com&amp;#x2F;a&amp;#x2F;7z2600-x64.exe" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;7-zip.com&amp;#x2F;a&amp;#x2F;7z2600-x64.exe&lt;/a&gt;。它们是逐字节相同的。即使存在恶意软件，也并不明显。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Dwedit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;7zip.com 从来都不是该项目的官方网站。  这是 7-zip.org&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tokyobreakfast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;7-Zip 作者是否仍然拒绝进行数字签名，甚至拒绝提供官方下载的哈希值？这是一种极其奇怪的弯曲，他认为这是浪费时间之类的无聊行为。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throawayonthe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我越来越相信 YouTube 教程不会带来任何好处&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.malwarebytes.com/blog/threat-intel/2026/02/fake-7-zip-downloads-are-turning-home-pcs-into-proxy-nodes</guid>
+      <pubDate>Sat, 14 Feb 2026 14:58:29 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47014995</comments>
+    </item>
+    <item>
+      <title>Stoat 在用户批评后删除了所有 LLM 生成的代码</title>
+      <link>https://github.com/orgs/stoatchat/discussions/1022</link>
+      <description>&lt;p&gt;加载时出错。请重新加载此页面。加载时出错。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Stoat removes all LLM-generated code following user criticism&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47016050"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/orgs/stoatchat/discussions/1022'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deadbabe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果你发现自己必须使用法学硕士来编写大量乏味的代码，那么你的架构很糟糕。您应该使用模式和约定来消除单调乏味，让事情自动工作。这意味着您编写的每一行代码都更强大，填充的东西更少。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stavros:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢线程中的人们的方式，“如果我要让我的一群朋友切换到这个，我需要知道它不是由安全问题生成器机器编写的”，同时在 Discord LLM 去 brrr：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;discord.com&amp;#x2F;blog&amp;#x2F;development-rapidly-with-generative-ai" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;discord.com&amp;#x2F;blog&amp;#x2F;development-rapidly-with-generative-...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cat_plus_plus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“值得考虑的是，有很多人持有极其强烈的反 LLM 观点，而这些人往往是少数群体或其他弱势群体。”&lt;p&gt;我对该存储库中的人类代码的期望很低。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;philipwhiuk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，这种情况只会发生，因为 Claude Code 提交了更改。&lt;p&gt;如果您使用 GitHub Co-Pilot IDE 集成等，则没有证据。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ragthr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好举动！如果版权盗贼和他们的公司的有害活动受到任何阻力，他们就会陷入智力扭曲（激进、纯度测试、意识形态），这是很有趣的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;singularfutur:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;由于纯度测试而恢复一些琐碎的提交是一个糟糕的先例。它奖励最响亮的评论者并惩罚维护者。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sodality2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果只有普通的开源项目能够得到这种级别的审查来实际检查漏洞就好了。我知道你不希望你的私人聊天记录被 slopcode 泄露，但这是在 LLM 编码之前创建的大型软件中的几十行脚手架；最好在不提出要求的情况下表达您的不满，然后继续关注存储库中的漏洞。这感觉就像没有任何工作背后的热情&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pythonaut_16:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;像这样浪费时间正是 Stoat&amp;#x2F;Revolt 不太可能成为严重的 Discord 替代品的原因&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;longfacehorrace:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;查看了该线程中声音最大的两个用户的存储库；他们要么没有，要么都是其他项目的分支。&lt;p&gt;非贡献者决定母鸡如何制作面包。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ronsor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看来这个帖子是由激进的反 AI 人士组成的，他们对使用 LLM 所做的一些微不足道的更改感到不安。&lt;p&gt;我鼓励这里的人们去阅读已恢复的 3（！） 次提交。这都是些小事和琐碎的错误修复——没有什么值得如此宗教（崇拜？）的热情。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;logicprog:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;真丢脸&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/orgs/stoatchat/discussions/1022</guid>
+      <pubDate>Sat, 14 Feb 2026 16:54:30 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47016050</comments>
+    </item>
+    <item>
+      <title>支持者称，平台不遗余力帮助国土安全部审查 ICE 批评者</title>
+      <link>https://arstechnica.com/tech-policy/2026/02/platforms-bend-over-backward-to-help-dhs-censor-ice-critics-advocates-say/</link>
+      <description>&lt;p&gt;早期的诉讼表明，平台已经屈服，尽管专家表示他们可以在没有法院命令的情况下拒绝这些要求。但在其他情况下，用户只有在平台遵守这些请求时才会了解这些请求，即使这些平台承诺永远不会发生这种情况。 “如果司法部长邦迪要求他们删除 s.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Platforms bend over backward to help DHS censor ICE critics, advocates say&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47015406"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arstechnica.com/tech-policy/2026/02/platforms-bend-over-backward-to-help-dhs-censor-ice-critics-advocates-say/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 15 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mannyv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;法院裁定，拜登这样做没有问题。现在脚在另一方面。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dizlexic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当然有。我们赋予国土安全部（以及任何其他政府机构）太多的权力，而他们却滥用了它。&lt;p&gt;我们有如此多的机构可以在没有任何国会干预的情况下对企业进行监管直至死亡，因此与他们作对简直是愚蠢透顶。&lt;p&gt;更不用说，一次又一次地证明，美国民众的注意力持续时间太短，无法对上述权力采取任何有意义的行动&amp;#x2F;滥用权力。&lt;p&gt;也许是年龄的原因，或者是我对 9 世纪 11 年后自由受到侵蚀的关注。但这个标题会让任何人感到惊讶吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;trollbridge:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;现在，当我读到这篇文章时，我怀疑记者是否真的采访了任何人，或者只是剪切并粘贴了 ChatGPT。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmyeet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得最有趣的是，美国科技公司正在做人们指责中国所做的事情。&lt;p&gt;事实上，理论上的中国知情者就是 Tiktok 禁令的全部（表演性）理由。当然，现实是 TikTok 不会审查美国政府想要审查的内容。&lt;p&gt;具有讽刺意味的是，这些公司正在为自己的毁灭播下种子，而美国政府正在破坏美国的科技主导地位，而美国的科技主导地位是一个强大的外交政策工具。&lt;p&gt;我认为蒂姆·库克的资本化会让史蒂夫·乔布斯在坟墓里翻滚。我曾经相信苹果比任何其他平台都更具有用户森林。现在？我想我会更信任华为。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arduanika:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在相信本文中的任何引用都是真实的之前请务必小心！默认假设应该是这一切都是幻觉，除非你亲自检查过。他们不会在内部进行检查。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47013059"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47013059&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;like_any_other:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;除非有证据证明煽动暴力或存在真正的威胁，否则此类言论受到保护。&lt;p&gt;据我所知，煽动暴力的门槛更高 - 只要不是“迫在眉睫”，煽动暴力是允许的：&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Imminent_lawless_action" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Imminent_lawless_action&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ttul:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道，到了 2028 年，当一位民主党人坐在白宫，考虑利用特朗普团队在第二个任期内成功获得的新法律工具来实施一些报复时，科技兄弟们会对为特朗普屈服而感到多么后悔。作为回应，我们可能会看到一些严厉的监管降临到该行业。&lt;p&gt;另一方面，亿万富翁和大公司在政治上为所欲为的长期趋势可能会持续下去。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cyanydeez:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;舔靴子可以提供股东价值。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;api:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;大公司，尤其是上市公司，抵抗主权政府的权力为零。上市公司受到严格监管并依赖于股价，这使得它们很容易受到政治报复。&lt;p&gt;我不确定为什么人们会指望企业进行政治抵抗。这是错误的地方。他们不是为此而构建的，这也不是他们的目的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ggfdh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Now that it’s targeting dems, maybe can get some bipartisan support to limit government power here.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amelius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;包括苹果。 If it&amp;#x27;s that easy, how long do we really expect Advanced Data Protection to be free from government backdooring?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sys32768:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The Censorship-Industrial Complex is troubling no matter which party benefits.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmclnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令人惊讶的是，香港的IIRC有一个完全去中心化的平台。  HK protesters used it on their phones during their uprising and China could not block it.&lt;p&gt;Maybe it is time people move to that.  遗憾的是我忘记了它的名字或从哪里得到它。  Of course the app stores could block that too.&lt;p&gt;There is always USENET I guess.  I wonder if there are apps on Cell Phones that can access USENET and format the posts to work with the small screens.  And of course reformat posts to comply to USENET formatting requirements (ie: wordwrap at Col 70).&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tehjoker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这次所有的科技CEO都坐上了特朗普的列车，这是特朗普竞选的具体策略。使用“屈服”这样的词就好像他们受到压力并且尚未与政府结盟一样，这是一种伤害。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tjpnz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为共和党人支持小政府并且反对审查制度。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arstechnica.com/tech-policy/2026/02/platforms-bend-over-backward-to-help-dhs-censor-ice-critics-advocates-say/</guid>
+      <pubDate>Sat, 14 Feb 2026 15:49:56 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47015406</comments>
     </item>
   </channel>
 </rss>
