@@ -6,52 +6,77 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Korean</description>
     <language>ko</language>
-    <lastBuildDate>Sun, 15 Feb 2026 13:00:52 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Feb 2026 15:32:28 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ko.xml"/>
     <item>
-      <title>Windows 기본 개발을 수정했습니다.</title>
-      <link>https://marler8997.github.io/blog/fixed-windows/</link>
-      <description>&lt;p&gt;0)" 또는 "Spectre-mitigated libs"이고 3시간 후 MSB8101.7 msvcup install --lock-file msvcup과 같은 알 수 없는 오류로 인해 빌드가 실패합니다. 믿거나 말거나, 이 빌드입니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; I Fixed Windows Native Development&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47022891"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://marler8997.github.io/blog/fixed-windows/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pjmlp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이는 UNIX 개발자의 관점에서 Windows를 들여다보지 않는 것에서 시작됩니다.&lt;p&gt;현재 Windows 개발을 괴롭히는 유일한 문제는 Project Reunion 이후 WinUI 및 WinAppSDK의 혼란이지만 상대적으로 무시하기 쉽습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reactordev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[지연]&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jen20:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이는 Windows를 사용해야 하는 사람들의 삶의 질을 크게 향상시킵니다! 정말 잘했어요.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dgxyz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이건 내가 하는 것보다 더 어렵다. [1]에서 LTSC Visual Studio 빌드 도구를 설치한 다음 이것을 cmd 파일에 넣습니다:&lt;p&gt;&lt;pre&gt;&lt;code&gt; cl yourprogram.c &amp;#x2F;link user32.lib advapi32.lib ... etc ...
-&lt;/code&gt;&lt;/pre&gt;
-나는 그 일을 잘 수행하는 많은 유틸리티를 만들었습니다. 저는 vim을 편집기로 사용합니다.&lt;p&gt;Visual Studio 툴체인에는 LTSC 및 안정 릴리스가 있지만 이에 대해 아는 사람은 아무도 없는 것 같습니다. 참조: &lt;a href="https:&amp;#x2F;&amp;#x2F;learn.microsoft.com&amp;#x2F;en-gb&amp;#x2F;visualstudio&amp;#x2F;릴리스&amp;#x2F;2022&amp;#x2F;release-history#fixed-version-bootstrappers" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;learn.microsoft.com&amp;#x2F;en-gb&amp;#x2F;visualstudio&amp;#x2F;릴리스&amp;#x2F;2022...&lt;/a&gt;&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;download.visualstudio.microsoft.com&amp;#x2F;다운로드&amp;#x2F;pr&amp;#x2F;5d23a358-8ed7-4560-81 e7-fb52d6a3ae02&amp;#x2F;2b25d9b457dfaf84fcb2af5b21264322b029b6efafd3178b1a4a8a7b79a18105&amp;#x2F;vs_BuildTools.exe" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;download.visualstudio.microsoft.com&amp;#x2F;다운로드&amp;#x2F;pr&amp;#x2F;5d23...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;criemen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;정말 놀랍습니다.&lt;p&gt;$workplace에는 GitHub 액션 Windows 러너에서 툴체인을 추출하고 패키징하여 git LFS에 넣은 다음 bazel에서 C++ 툴체인으로 가져오는 스크립트가 있습니다.&lt;p&gt;이것이 더 확장 가능한 방법이며 여전히 bazel 빌드에 쉽게 통합될 수 있다고 가정합니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://marler8997.github.io/blog/fixed-windows/</guid>
-      <pubDate>Sun, 15 Feb 2026 11:25:26 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47022891</comments>
+      <title>키미 클로</title>
+      <link>https://www.kimi.com/bot</link>
+      <guid isPermaLink="true">https://www.kimi.com/bot</guid>
+      <pubDate>Sun, 15 Feb 2026 13:48:44 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47023633</comments>
     </item>
     <item>
-      <title>빠른 LLM 추론을 위한 두 가지 다른 트릭</title>
-      <link>https://www.seangoedecke.com/fast-llm-inference/</link>
-      <description>&lt;p&gt;따라서 OpenAI의 빠른 모드는 Anthropic의 속도1보다 6배 빠릅니다. 그러나 Anthropic의 가장 큰 장점은 실제 모델을 제공한다는 것입니다. OpenAI의 빠른 모드 작동 방식 OpenAI의 빠른 모드는 이와 같이 작동하지 않습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Two different tricks for fast LLM inference&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47022329"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.seangoedecke.com/fast-llm-inference/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>아마존·구글, 미국 감시국가의 심각성을 무의식적으로 폭로</title>
+      <link>https://greenwald.substack.com/p/amazons-ring-and-googles-nest-unwittingly</link>
+      <guid isPermaLink="true">https://greenwald.substack.com/p/amazons-ring-and-googles-nest-unwittingly</guid>
+      <pubDate>Sun, 15 Feb 2026 12:42:17 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47023238</comments>
+    </item>
+    <item>
+      <title>역엔지니어링 게임 Starflight(1986)</title>
+      <link>https://github.com/s-macke/starflight-reverse</link>
+      <description>&lt;p&gt;이 정말 놀라운 게임을 플레이하는 것이 재미있는 만큼, 이 게임을 리버스 엔지니어링하는 것도 재미있습니다. 이 게임에서는 예상치 못한 일이 일어날 것으로 예상됩니다. 그러나 Forth에서는 다음과 같이 보입니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Reversed engineered game Starflight (1986)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47022943"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/s-macke/starflight-reverse'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;villgax:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ㅋㅋㅋ, 아무런 증거도 없이 이것은 단지 증기 블로그일 뿐입니다. 둘 중 하나가 실행하는 모델이 무엇이든 정밀도가 낮아질 수 있습니다. 이 시점에서 대부분의 개척 모델은 MoE &amp;amp; 1-20B 전문가에게 터무니없는 속도를 얻는 것은 배치 크기에 관계없이 사소한 일입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;semessier:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;첫 페이지에 비해 꽤 얕습니다. 이 맥락에서 흥미로운 것은 MXFP4 양자화 등과 같은 것들이 흔한 일이 아니라는 것입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;흥미로운 이론. 그렇다면 메시지를 보내자마자 ChatGPT는 어떻게 즉시 응답을 시작합니까? 배치가 채워질 때까지 기다려야 하는 것 아닌가요? 아니면 트래픽이 너무 많아서 몇 ms 만에 이런 일이 발생합니까?&lt;p&gt;(웹 소켓 등을 통해 입력하는 동안 GPU에 메시지를 채울 수도 있다고 생각하지만 확실하지 않습니다.)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mft_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 그렇다면 최신 Cerebras 칩에는 얼마나 많은 내부 메모리가 있습니까? 44GB. 이로 인해 OpenAI는 다소 어색한 위치에 놓이게 됩니다. 44GB는 작은 모델(fp16에서 ~20B 매개변수, int8 양자화에서 ~40B 매개변수)에 적합하기에는 충분하지만 GPT-5.3-Codex에 적합하기에는 분명히 충분하지 않습니다. 이것이 그들이 새로운 모델을 제공하는 이유이며 Spark 모델에 약간의 "작은 모델 냄새"가 있는 이유입니다. 이는 훨씬 더 큰 GPT-5.3-Codex 모델의 작은 증류물입니다.&lt;p&gt;이것은 말이 되지 않습니다.&lt;p&gt;1.  Nvidia는 이미 판매하고 있습니다. 80GB 메모리를 탑재한 H100이므로 44GB를 탑재하는 것은 차별화 요소는커녕 진보도 아닙니다.&lt;p&gt;2.  오픈 웨이트 모델을 사용하는 사람이라면 누구나 증명할 것이라고 생각하는 것처럼 5.3-Codex-Spark가 44GB 미만이면서 최고 수준의 성능에 가까워지고 이런 식으로 판매될 가능성은 &lt;i&gt;없습니다&lt;/i&gt;.  예, 그것은 더 약하고 확실히 증류수이고 더 작을 것입니다. 그러나 제안된 것처럼 ~2배 정도는 아닙니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yorwba:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 아이디어는 &lt;i&gt;전체 모델에 맞도록&lt;/i&gt; 충분히 큰 SRAM을 갖춘 칩을 보유하여 추론이 완전히 메모리 내에서 이루어질 수 있도록 하는 것입니다. [...] 그렇다면 최신 Cerebras 칩에는 얼마나 많은 내부 메모리가 있습니까? 44GB. 이로 인해 OpenAI는 다소 어색한 위치에 놓이게 됩니다. 44GB는 작은 모델(fp16에서 ~20B 매개변수, int8 양자화에서 ~40B 매개변수)에 적합하기에는 충분하지만 GPT-5.3-Codex에 적합하기에는 확실히 충분하지 않습니다.&lt;p&gt;전체 모델을 단일 칩에 넣을 필요는 없습니다. GPU와 마찬가지로 모델을 여러 칩에 걸쳐 분할할 수 있습니다. 물론 각 토큰이 통과해야 하는 긴 칩 파이프라인이 있는 경우 이에 따라 초당 엔드투엔드 토큰이 줄어듭니다.&lt;p&gt;따라서 GPT-5.3-Codex-Spark의 크기는 단일 Cerebras 칩의 메모리로 제한되지 않고 함께 연결하여 초당 1000개 토큰 목표를 달성할 수 있는 칩의 수에 의해 제한됩니다. Cerebras가 더 빠른 속도로 40B보다 훨씬 큰 모델을 제공한다는 점을 고려하면 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.cerebras.ai&amp;#x2F;pricing#exploration" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.cerebras.ai&amp;#x2F;pricing#exploration&lt;/a&gt; GPT-5.3-Codex-Spark가 더 가까울 가능성이 높습니다. 크기는 GLM 4.7입니다. (약 355B 총 매개변수, 32B 활성)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;EdNutting:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 저자는 Cerebras 칩이 파트너십 발표 이후 단 한 달 만에 전 세계 사용자에게 서비스를 제공하기 위해 대규모로 배포되었다고 생각합니까?&lt;p&gt;제 생각에는 말도 안되는 것 같습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gostsamo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저자가 옳다면 OpenAI는 특정 작업의 정확성을 위해 빠른 모델을 더욱 개선할 수 있는 개선의 여지가 있는 반면 Anthropic은 수직 확장을 남겨두고 있습니다. OFC, 시간이 지남에 따라 회사가 문제 공간을 더 잘 이해하고 어떤 절충안을 만들 가치가 있는지를 이해하면 두 접근 방식이 수렴될 가능성이 높습니다.&lt;p&gt;제 개인적 견해는 사용자와의 실시간 상호 작용을 위한 충분한 모델이 있는 동안 작업을 계획 및 분류하고 전문적인 소규모 모델로 일정을 예약하려면 큰 모델이 필요하다는 것입니다. 그러나 이는 순진한 견해이며 다른 많은 것들이 결정을 형성할 수 있다는 것입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dist-epoch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;배치 크기 설명이 잘못되었습니다. 클로드 코드가 얼마나 사용되었는지를 고려하여 동료 "버스 승객"을 찾는다. 문제가 되지 않으므로 기다릴 필요가 없습니다.&lt;p&gt;일괄 처리로 인해 지연 시간이 늘어나는 실제 이유는 여러 가지 요인이 있으며 설명하기가 더 복잡합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Der_Einzige:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;특히 품질이 전혀 저하되는 경우(즉, openAI에서) 공격적인 양자화라는 또 다른 가능한 설명이 있습니다.&lt;p&gt;또 다른 가능한 설명은 속도를 위해 사용하지 않는 GPU 메모리를 교환하는 추측적 디코딩입니다(드래프팅 모델을 통해).&lt;p&gt;하지만 내 돈은 OP가 제안하는 정확한 두 가지 메커니즘에 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;retinaros:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;매우 흥미롭습니다. OAI는 라우터가 모두 비용 절감 및 효율성에 중점을 두는 것처럼 보이기 때문에 출시합니다. 반면 Anthropic은 미디어에서 모델을 과대평가하고 취향과 광고를 수행하지 않는 방법에 대해 네오 힙스터(일명 규범) 광고를 출시하기 위해 모든 예산을 지출하는 반대 방향으로 가고 있습니다. 다리오가 말할 때마다 첫 번째 위험 신호는 모든 AI 인플루언서들이 과장한 엉터리 모자를 쓴 팝업 이벤트였습니다.&lt;p&gt;OAI는 투자자들에 의해 돈 버는 방향으로 빠르게 전환하도록 강요받은 것 같습니다. 인류에게는 시간이 더 많은 것 같나요? OAI가 비용에 집중하면서 속도를 유지하기 어려울 수 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;criemen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Anthropic이 하고 있다고 가정하는 또 다른 일은 모든 빠른 요청을 최신 하드웨어로 라우팅하는 것입니다. 그들은 확실히 다양한 추론 하드웨어(TPU, 다양한 세대의 GPU)를 보유하고 있으며 빠른 속도는 가장 빠른 것만 제공되는 반면 일반적인 추론 워크로드는 더 분산됩니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.seangoedecke.com/fast-llm-inference/</guid>
-      <pubDate>Sun, 15 Feb 2026 09:27:33 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47022329</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;krige:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;...앞으로? 우와. 다양한 시스템 간에 얼마나 많은 코드 변경이 필요했는지 궁금합니다. Megadrive Forth 컴파일러를 상상하기는 어렵지만, 게임이 다른 여러 M68k 시스템에 있었으므로 그다지 어렵지 않았을 수도 있습니다...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ashdnazg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 이 게임에서는 일반적인 도구를 버릴 수 있습니다...&lt;p&gt;&amp;gt; 그 이유는 Starflight가 Forth로 작성되었기 때문입니다.&lt;p&gt;저는 최근에 80년대의 또 다른 게임을 리버스 엔지니어링했는데 Turbo Pascal로 작성되었기 때문에 비슷한 문제가 있었습니다.&lt;p&gt;다른 도구는 명령 사이에 인라인으로 저장된 데이터나 다른 호출 규칙을 갖는 모든 라이브러리 함수와 같은 특이한 점을 좋아하지 않았습니다.&lt;p&gt;이 문제를 처리하는 가장 간단한 방법은 Turbo Pascal 3 이후로 자체 디컴파일러를 작성하는 것이었습니다. 최적화를 전혀 하지 않았습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;copx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;게임이 Forth로 작성되었다는 점이 궁금합니다. 확실히 상업용 게임에서는 매우 특이한 선택이었습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;twoodfin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Starflight의 게임 디자인이 당시의 한계 내에서 얼마나 효과적인지 전달하기는 어렵습니다.&lt;p&gt;거의 완전히 자유로운 형식의 탐색 및amp; 거대한 은하계를 가로지르는 모험은 훌륭했습니다.&lt;p&gt;제작자들이 게임 저장 시스템으로 가능한 일의 한계에 얼마나 가까이 왔는지 느낄 수 있었습니다. 기본적으로 디스크는 메모리 이미지였습니다. 플레이하는 동안 게임이 저절로 다시 작성되므로 게임이 중단되더라도 "재설정"이 불가능합니다. 문서에서는 다음과 같이 강조했습니다. 원본 디스크의 복사본으로만 플레이하세요!!&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/s-macke/starflight-reverse</guid>
+      <pubDate>Sun, 15 Feb 2026 11:37:29 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47022943</comments>
+    </item>
+    <item>
+      <title>다른 색의 포켓몬</title>
+      <link>https://matthew.verive.me/blog/color/</link>
+      <guid isPermaLink="true">https://matthew.verive.me/blog/color/</guid>
+      <pubDate>Sun, 15 Feb 2026 10:40:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47022704</comments>
+    </item>
+    <item>
+      <title>계몽주의의 어두운 면</title>
+      <link>https://www.newstatesman.com/culture/books/2026/02/the-dark-side-of-the-enlightenment</link>
+      <description>&lt;p&gt;아프리카의 저명한 역사가인 크레이스가 조사하기로 선택한 폭력은 서구의 산업화를 가능하게 한 시장 자본주의의 착취적 폭력이다. Crais는 "산업 혁명으로 인해 수백만 명(나중에 수십억 명) 사람들의 삶이 개선되지 않았다고 상상하는 것은 근시안적일 것입니다"라고 인정했습니다. 오늘날에는 그 숫자가 10배가 넘습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Dark Side of the Enlightenment&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47023959"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.newstatesman.com/culture/books/2026/02/the-dark-side-of-the-enlightenment'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;slibhb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그레이가 소련과 다른 사람들을 언급한 것은 감사하지만 전체적인 주장은 틀렸다고 생각합니다. &lt;p&gt;계몽주의 가치와 제국주의의 아시아, 아프리카, 미국인 정복 사이의 연관성은 아직 명확하지 않습니다. 계몽주의 가치는 제쳐두고, 당시에는 사람을 정복하고 물건을 빼앗는 것이 일반적인 일이었습니다. 그리고 제국주의가 특정 사람들을 부유하게 만들고 경제 성장을 이끌었지만, 아마도 경제 성장 우선의 관점에서는 (자유 무역과 주권에 비해) 더 나빴을 것입니다. &lt;p&gt;같은 맥락에서 미국 노예 제도는 일부에게는 매우 수익성이 높았지만 이것이 미국 경제 발전에 필수적이었다는 타당한 주장은 없습니다. 임금을 지급하는 근로자는 생산성과 수요를 높여 경제성장을 지원합니다.&lt;p&gt;시간이 지나면서 계몽주의와 자유주의를 공격하는 이 프로젝트가 점점 지루하고 잘못된 것으로 보이기 시작했습니다. 우선, 이러한 비판의 대다수는 계몽주의를 비판하기 위해 계몽주의 가치에 의존합니다. 그렇다면 우리는 좀 더 깨달아야 할 것 같습니다! 또 다른 한편으로는 우파 포퓰리즘이 자유주의 자본주의를 훨씬 더 매력적으로 만든다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aleph_minus_one:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;archive.ph: &lt;a href="https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;wdEuy" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;wdEuy&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.newstatesman.com/culture/books/2026/02/the-dark-side-of-the-enlightenment</guid>
+      <pubDate>Sun, 15 Feb 2026 14:29:03 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47023959</comments>
+    </item>
+    <item>
+      <title>DjVu와 딥 러닝의 연결(2023)</title>
+      <link>https://scottlocklin.wordpress.com/2023/05/31/djvu-and-its-connection-to-deep-learning/</link>
+      <description>&lt;p&gt;이는 좋은 가정입니다. 보통 저는 텍스트와 플롯만 원하는데 DjVu는 이를 잘 포착합니다. 정말 좋아요. 웨이블릿은 산술 코딩을 통해 더욱 압축되며 이는 매우 멋진 아이디어이기도 합니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; DjVu and its connection to Deep Learning (2023)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47022213"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://scottlocklin.wordpress.com/2023/05/31/djvu-and-its-connection-to-deep-learning/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qdotme:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;제가 이 형식이 실패했다고 생각하는 또 다른 이유(TIL Yann LeCun은 공동 저자였습니다)는 해적 도서 및 기사 커뮤니티의 의미입니다.&lt;p&gt;대학시절 이 형식을 접했을 때, 많은 스캔 자료를 처리할 때 항상 "의심스러운 소프트웨어를 설치하지 마세요"라는 정신적 블록을 촉발시켰습니다. 기사에서 그것이 우수한 형식이라고 지적한 것처럼 부끄러운 일입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nico_h:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;샘플이 얼마나 관련성이 있는지는 모르겠지만 세부 사항은 손실되었지만 본질은 잘 보존된 것 같습니다.
+OCR을 수행하는데 정말 유용할 것 같습니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://scottlocklin.wordpress.com/2023/05/31/djvu-and-its-connection-to-deep-learning/</guid>
+      <pubDate>Sun, 15 Feb 2026 09:05:35 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47022213</comments>
     </item>
   </channel>
 </rss>

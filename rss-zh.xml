@@ -6,52 +6,77 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 15 Feb 2026 13:00:52 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Feb 2026 15:32:28 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>我修复了Windows本机开发</title>
-      <link>https://marler8997.github.io/blog/fixed-windows/</link>
-      <description>&lt;p&gt;0)”或“Spectre-mitigated libs”，并且您的构建在三个小时后失败，并出现类似 MSB8101 的神秘错误。7 msvcup install --lock-file msvcup。不管你信不信，这个构建。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; I Fixed Windows Native Development&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47022891"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://marler8997.github.io/blog/fixed-windows/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pjmlp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;首先，不要通过 UNIX 开发人员眼镜来看待 Windows。&lt;p&gt;当前困扰 Windows 开发的唯一问题是自 Project Reunion 以来 WinUI 和 WinAppSDK 的混乱，但它们相对容易被忽视。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reactordev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[延迟]&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jen20:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于被迫与 Windows 打交道的人们来说，这是生活质量的重大改善！干得好。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dgxyz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这比我做的更难。只需安装 [1] 中的 LTSC Visual Studio 构建工具，然后将其放入 cmd 文件中：&lt;p&gt;&lt;pre&gt;&lt;code&gt; cl yourprogram.c &amp;#x2F;link user32.lib advapi32.lib ... 等等 ...
-&lt;/code&gt;&lt;/pre&gt;
-我已经构建了很多实用程序，可以很好地做到这一点。我使用 vim 作为编辑器。&lt;p&gt;Visual Studio 工具链确实有 LTSC 和稳定版本 - 但似乎没有人知道它们。请参阅：&lt;a href="https:&amp;#x2F;&amp;#x2F;learn.microsoft.com&amp;#x2F;en-gb&amp;#x2F;visualstudio&amp;#x2F;releases&amp;#x2F;2022&amp;#x2F;release-history#fixed-version-bootstrappers" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;learn.microsoft.com&amp;#x2F;en-gb&amp;#x2F;visualstudio&amp;#x2F;发布&amp;#x2F;2022...&lt;/a&gt;&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;download.visualstudio.microsoft.com&amp;#x2F;download&amp;#x2F;pr&amp;#x2F;5d23a358-8ed7-4560-81 e7-fb52d6a3ae02&amp;#x2F;2b25d9b457dfaf84fcb2af5b21264322b029b6efafd3178b1a4a8a7b79a18105&amp;#x2F;vs_BuildTools.exe" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;download.visualstudio.microsoft.com&amp;#x2F;download&amp;#x2F;pr&amp;#x2F;5d23...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;criemen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太神奇了。&lt;p&gt;在 $workplace，我们有一个脚本，可以从 GitHub actions windows runner 中提取工具链，将其打包，填充到 git LFS 中，然后由 bazel 将其作为 C++ 工具链拉取。&lt;p&gt;这是更具可扩展性的方式，我认为它仍然可以轻松地集成到 bazel 构建中。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://marler8997.github.io/blog/fixed-windows/</guid>
-      <pubDate>Sun, 15 Feb 2026 11:25:26 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47022891</comments>
+      <title>基米爪</title>
+      <link>https://www.kimi.com/bot</link>
+      <guid isPermaLink="true">https://www.kimi.com/bot</guid>
+      <pubDate>Sun, 15 Feb 2026 13:48:44 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47023633</comments>
     </item>
     <item>
-      <title>快速 LLM 推理的两种不同技巧</title>
-      <link>https://www.seangoedecke.com/fast-llm-inference/</link>
-      <description>&lt;p&gt;因此 OpenAI 的快速模式比 Anthropic 的快六倍1。然而，Anthropic 的一大优势是他们为实际模型服务。 OpenAI 的快速模式如何工作 OpenAI 的快速模式并不是这样工作的。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Two different tricks for fast LLM inference&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47022329"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.seangoedecke.com/fast-llm-inference/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>亚马逊、谷歌无意中暴露了美国监控国家的严重性</title>
+      <link>https://greenwald.substack.com/p/amazons-ring-and-googles-nest-unwittingly</link>
+      <guid isPermaLink="true">https://greenwald.substack.com/p/amazons-ring-and-googles-nest-unwittingly</guid>
+      <pubDate>Sun, 15 Feb 2026 12:42:17 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47023238</comments>
+    </item>
+    <item>
+      <title>逆向工程游戏《星际飞行》(1986)</title>
+      <link>https://github.com/s-macke/starflight-reverse</link>
+      <description>&lt;p&gt;尽管玩这款真正令人惊叹的游戏很有趣，但对这款游戏进行逆向工程也很有趣。对于这场比赛，期待意想不到的事情。然而在 Forth 中它看起来像这样。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Reversed engineered game Starflight (1986)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47022943"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/s-macke/starflight-reverse'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;villgax:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哈哈，没有任何证据表明这只是蒸汽博客，它可能只是降低了其中任何一个运行的任何模型的精度。不一定是蒸馏或更小的模型，甚至是组合，因为目前大多数前沿模型都是教育部和教育部。无论批量大小如何，获得 1-20B 专家的荒谬速度都是微不足道的&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;semessier:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这对于首页来说相当浅薄。在这种情况下，有趣的是 MXFP4 量化等不常见的事情。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的理论。那么，当我发送消息后，ChatGPT 如何立即开始响应呢？难道不需要等待批次填满吗？或者他们的流量是否如此之大，以至于在几毫秒内就会发生这种情况？&lt;p&gt;（我认为当您通过 Websocket 或其他方式打字时，他们也可能会将消息填充到 GPU 上，但我不确定。）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mft_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;那么最新的 Cerebras 芯片有多少内存呢？ 44GB。这让 OpenAI 处于一种尴尬的境地。 44GB 足以适应小型模型（fp16 时约 20B 参数，int8 量化时约 40B 参数），但显然不足以适应 GPT-5.3-Codex。这就是为什么他们提供了一个全新的模型，以及为什么 Spark 模型有一点“小模型味道”：它是更大的 GPT-5.3-Codex 模型的一个较小的提炼。&lt;p&gt;这没有意义。&lt;p&gt;1。  Nvidia 已经在销售H100 配备 80GB 内存，因此 44GB 并不是一种进步，更不用说差异化了。&lt;p&gt;2.  我怀疑玩过开放权重模型的人都会证明，5.3-Codex-Spark &lt;i&gt;不可能&lt;/i&gt;接近顶级性能，并且在 &lt;44GB 的情况下以这种方式出售。  是的，它更弱，并且肯定它可能是蒸馏液并且更小，但不是建议的大约两个数量级。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yorwba:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;我们的想法是拥有一个具有足够大的 SRAM 的芯片&lt;i&gt;以适应整个模型&lt;/i&gt;，因此推理可以完全在内存中进行。 [...] 那么最新的 Cerebras 芯片有多少内存？ 44GB。这让 OpenAI 处于一种尴尬的境地。 44GB 足以适应小型模型（fp16 时约 20B 参数，int8 量化时约 40B 参数），但显然不足以适应 GPT-5.3-Codex。&lt;p&gt;您实际上不需要将整个模型安装在单个芯片上。就像 GPU 一样，您可以将模型分片到多个芯片上。当然，当每个令牌需要经过很长的芯片管道时，每秒的端到端令牌数就会相应减少。&lt;p&gt;因此，GPT-5.3-Codex-Spark 的大小不受单个 Cerebras 芯片内存的限制，而是受可以链接在一起的此类芯片数量的限制，并且仍能达到每秒 1000 个令牌的目标。鉴于 Cerebras 以更快的速度提供大于 40B 的模型 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.cerebras.ai&amp;#x2F;pricing#exploration" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.cerebras.ai&amp;#x2F;pricing#exploration&lt;/a&gt; GPT-5.3-Codex-Spark 可能更接近尺寸为 GLM 4.7。 （约355B总参数，32B活跃）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;EdNutting:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作者认为自宣布合作伙伴关系以来，Cerebras 芯片在短短一个月内就已大规模部署，为全球用户提供服务？&lt;p&gt;在我看来这简直是无稽之谈。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gostsamo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果作者是对的，OpenAI 还有改进的空间，他们可以进一步改进快速模型以确保某些任务的正确性，而 Anthropic 则只能进行垂直扩展。 OFC，随着时间的推移，当公司更好地了解问题空间以及值得进行哪些权衡时，两种方法很可能会融合。&lt;p&gt;我个人的看法是，他们将需要一个大模型来计划和分解任务并将其安排到专门的较小模型，同时有一个足够好的模型来与用户进行实时交互，但这是天真的想法，许多其他因素可能会影响决策。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dist-epoch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;批量大小的解释是错误的。考虑到克劳德代码的使用量，找到其他“公共汽车乘客”是很困难的。不是问题，您不需要等待。&lt;p&gt;批处理增加延迟的真正原因是多因素的，而且解释起来更复杂。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Der_Einzige:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;另一种可能的解释是激进的量化，特别是如果质量完全下降（即在 openAI 上）。&lt;p&gt;另一种可能的解释是推测性解码，即用未使用的 GPU 内存换取速度（通过绘图模型）。&lt;p&gt;但我的钱花在了 OP 提出的两种机制上。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;retinaros:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常有趣。 OAI 的发布，因为他们的路由器似乎都专注于削减成本和效率，而人类则大多走向相反的方向，花费所有预算在媒体上过度宣传他们的模型，并根据品味和他们不会做广告的方式发布新潮人（又名规范）广告。第一个危险信号——除了每次达里奥讲话之外——是所有人工智能影响者过度炒作的带有劣质上限的弹出事件。&lt;p&gt;看来 OAI 是被投资者迫使迅速转向赚钱的。人择似乎有更多时间？ OAI 可能很难在关注成本的同时跟上步伐&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;criemen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为 Anthropic 正在做的另一件事是将所有快速请求路由到最新一代的硬件。他们肯定拥有多样化的推理硬件（TPU、不同代的 GPU），并且只有最快的才能提供快速服务，而一般推理工作负载将更加分散。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.seangoedecke.com/fast-llm-inference/</guid>
-      <pubDate>Sun, 15 Feb 2026 09:27:33 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47022329</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;krige:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;...第四？哇。我想知道不同系统之间需要多少代码更改。很难想象 Megadrive Forth 编译器，但话又说回来，游戏是在其他几个 M68k 系统上运行的，所以也许没那么难......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ashdnazg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;对于这个游戏，你可以扔掉常用的工具......&lt;p&gt;&amp;gt;原因是 Starflight 是用 Forth 编写的&lt;p&gt;我最近对 80 年代的另一个游戏进行了逆向工程，并且遇到了类似的问题，因为它是用 Turbo Pascal 编写的。&lt;p&gt;不同的工具不喜欢怪癖，例如指令之间内联存储的数据或每个库函数具有不同的调用约定。&lt;p&gt;事实证明，处理此问题的最简单方法是编写我自己的反编译器，因为 Turbo Pascal 3 没有做任何优化。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;copx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得奇怪的是，这个游戏是用 Forth 编写的。对于商业游戏来说，这无疑是一个非常不寻常的选择。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;twoodfin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很难表达《星际飞行》的游戏设计在当时的限制下有多有效。&lt;p&gt;将故事嵌入到几乎完全自由形式的探索和探索中。跨越巨大星系的冒险是精湛的。&lt;p&gt;你可以感觉到创作者离保存游戏系统可能达到的极限有多近：基本上，磁盘是一个内存映像。当你玩游戏时，游戏会自行重写，所以如果你卡住了，就没有“重置”。文档强调：只能使用原始磁盘的副本来玩！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/s-macke/starflight-reverse</guid>
+      <pubDate>Sun, 15 Feb 2026 11:37:29 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47022943</comments>
+    </item>
+    <item>
+      <title>不同颜色的神奇宝贝</title>
+      <link>https://matthew.verive.me/blog/color/</link>
+      <guid isPermaLink="true">https://matthew.verive.me/blog/color/</guid>
+      <pubDate>Sun, 15 Feb 2026 10:40:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47022704</comments>
+    </item>
+    <item>
+      <title>启蒙运动的阴暗面</title>
+      <link>https://www.newstatesman.com/culture/books/2026/02/the-dark-side-of-the-enlightenment</link>
+      <description>&lt;p&gt;杰出的非洲历史学家克雷斯选择研究的暴力是市场资本主义的榨取暴力，正是市场资本主义促成了西方的工业化。值得称赞的是，克赖斯承认，“如果认为工业革命没有使数百万人（后来是数十亿）人的生活得到改善，那就太短视了”。今天这个数字已经增加了十倍以上。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Dark Side of the Enlightenment&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47023959"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.newstatesman.com/culture/books/2026/02/the-dark-side-of-the-enlightenment'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;slibhb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很欣赏格雷对苏联和其他国家的指责，但我认为整个论点都是错误的。&lt;p&gt;启蒙价值观与帝国主义对亚洲、非洲和美国人的征服之间的联系还远不清楚。抛开启蒙价值观不谈，征服人、夺取他们的东西在当时是很正常的事情。尽管帝国主义使某些人致富并带来了经济增长，但从经济增长优先的角度来看（与自由贸易和主权相比），情况可能更糟。&lt;p&gt;同样，美国奴隶制对某些人来说是高利润的，但没有充分的理由表明它对美国的经济发展至关重要。支付工人工资通过提高生产率和需求来支持经济增长。&lt;p&gt;随着时间的推移，这个攻击启蒙自由主义的项目对我来说开始变得越来越无聊和错误。其一，这些批评绝大多数依靠启蒙价值观来批判启蒙运动。所以也许我们应该更加开明！另一方面，右翼民粹主义使自由资本主义更具吸引力。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aleph_minus_one:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;archive.ph: &lt;a href="https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;wdEuy" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;wdEuy&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.newstatesman.com/culture/books/2026/02/the-dark-side-of-the-enlightenment</guid>
+      <pubDate>Sun, 15 Feb 2026 14:29:03 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47023959</comments>
+    </item>
+    <item>
+      <title>DjVu 及其与深度学习的联系 (2023)</title>
+      <link>https://scottlocklin.wordpress.com/2023/05/31/djvu-and-its-connection-to-deep-learning/</link>
+      <description>&lt;p&gt;这是一个很好的假设；通常我只想要文本和情节，而 DjVu 可以很好地捕捉这些内容。真的是那么好。小波通过算术编码进一步压缩，这也是一个非常酷的想法。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; DjVu and its connection to Deep Learning (2023)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47022213"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://scottlocklin.wordpress.com/2023/05/31/djvu-and-its-connection-to-deep-learning/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qdotme:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为它失败的另一个原因（TIL Yann LeCun 是合著者）是盗版书籍和文章社区的内涵。&lt;p&gt;当我在大学时代遇到这种格式时，在处理大量扫描材料时，它总是会触发“不要安装可疑软件”的心理障碍。这是一种耻辱，因为文章指出这是一种更好的格式。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nico_h:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不知道这些样本的相关性如何，但虽然细节丢失了，但本质似乎保存完好。
+看来它对于执行 OCR 确实很有用。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://scottlocklin.wordpress.com/2023/05/31/djvu-and-its-connection-to-deep-learning/</guid>
+      <pubDate>Sun, 15 Feb 2026 09:05:35 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47022213</comments>
     </item>
   </channel>
 </rss>

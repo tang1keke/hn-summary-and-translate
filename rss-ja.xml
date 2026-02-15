@@ -6,52 +6,77 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 15 Feb 2026 13:00:52 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Feb 2026 15:32:28 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>Windows ネイティブ開発を修正しました</title>
-      <link>https://marler8997.github.io/blog/fixed-windows/</link>
-      <description>&lt;p&gt;0)」または「Spectre-mitigated libs」を使用すると、ビルドは 3 時間後に MSB8101 のような不可解なエラーで失敗します。 7 msvcup install --lock-file msvcup. 信じられないかもしれませんが、このビルドは次のとおりです。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; I Fixed Windows Native Development&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47022891"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://marler8997.github.io/blog/fixed-windows/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pjmlp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それは、UNIX 開発者の眼鏡を通して Windows を調べないことから始まります。&lt;p&gt;現在 Windows 開発を悩ませている唯一の問題は、Project Reunion 以来の WinUI と WinAppSDK の混乱ですが、これらは比較的簡単に無視できます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reactordev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[遅延]&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jen20:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは、Windows との付き合いを余儀なくされている人々にとって、重大な生活の質の向上です。素晴らしい仕事だ。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dgxyz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは私がやっていることよりも難しいです。 [1] から LTSC Visual Studio ビルド ツールをインストールし、これを cmd ファイルに保存します:&lt;p&gt;&lt;pre&gt;&lt;code&gt; cl yourprogram.c &amp;#x2F;link user32.lib advapi32.lib ... etc etc ...
-&lt;/code&gt;&lt;/pre&gt;
-私はそれをうまく行うユーティリティをたくさん構築しました。私は vim をエディタとして使用しています。&lt;p&gt;Visual Studio ツールチェーンには LTSC リリースと安定版リリースがありますが、誰もそれらについて知らないようです。参照: &lt;a href="https:&amp;#x2F;&amp;#x2F;learn.microsoft.com&amp;#x2F;en-gb&amp;#x2F;visualstudio&amp;#x2F;releases&amp;#x2F;2022&amp;#x2F;release-history#fixed-version-bootstrappers" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;learn.microsoft.com&amp;#x2F;en-gb&amp;#x2F;visualstudio&amp;#x2F;releases&amp;#x2F;2022...&lt;/a&gt;&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;download.visualstudio.microsoft.com&amp;#x2F;download&amp;#x2F;pr&amp;#x2F;5d23a358-8ed7-4560-81 e7-fb52d6a3ae02&amp;#x2F;2b25d9b457dfaf84fcb2af5b21264322b029b6efafd3178b1a4a8a7b79a18105&amp;#x2F;vs_BuildTools.exe」 rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;download.visualstudio.microsoft.com&amp;#x2F;download&amp;#x2F;pr&amp;#x2F;5d23...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;criemen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは驚くべきことです。&lt;p&gt;$workplace には、GitHub アクション Windows ランナーからツールチェーンを抽出し、それをパッケージ化して git LFS に詰め込むスクリプトがあり、これが Bazel によって C++ ツールチェーンとしてプルされます。&lt;p&gt;これはよりスケーラブルな方法であり、それでもある程度簡単に Bazel ビルドに統合できると思います。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://marler8997.github.io/blog/fixed-windows/</guid>
-      <pubDate>Sun, 15 Feb 2026 11:25:26 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47022891</comments>
+      <title>キミクロー</title>
+      <link>https://www.kimi.com/bot</link>
+      <guid isPermaLink="true">https://www.kimi.com/bot</guid>
+      <pubDate>Sun, 15 Feb 2026 13:48:44 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47023633</comments>
     </item>
     <item>
-      <title>高速 LLM 推論のための 2 つの異なるトリック</title>
-      <link>https://www.seangoedecke.com/fast-llm-inference/</link>
-      <description>&lt;p&gt;つまり、OpenAI の高速モードは Anthropic の 6 倍高速です1。ただし、Anthropic の大きな利点は、実際のモデルを提供していることです。 OpenAI の高速モードの仕組み OpenAI の高速モードは、このような動作はしません。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Two different tricks for fast LLM inference&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47022329"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.seangoedecke.com/fast-llm-inference/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>アマゾンとグーグル、知らず知らずのうちに米国の監視国家の厳しさを暴露</title>
+      <link>https://greenwald.substack.com/p/amazons-ring-and-googles-nest-unwittingly</link>
+      <guid isPermaLink="true">https://greenwald.substack.com/p/amazons-ring-and-googles-nest-unwittingly</guid>
+      <pubDate>Sun, 15 Feb 2026 12:42:17 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47023238</comments>
+    </item>
+    <item>
+      <title>リバースエンジニアリングされたゲーム Starflight (1986)</title>
+      <link>https://github.com/s-macke/starflight-reverse</link>
+      <description>&lt;p&gt;この本当に素晴らしいゲームをプレイするのは楽しいのと同じくらい、このゲームのリバース エンジニアリングも楽しいです。このゲームでは予想外のことが予想されます。ただし、Forth では次のようになります。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Reversed engineered game Starflight (1986)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47022943"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/s-macke/starflight-reverse'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;villgax:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;笑、何の証拠もないのに、これはただのvaporblogです。どちらかが実行しているモデルが何であれ、精度が低下しているだけかもしれません。現時点では、ほとんどのフロンティア モデルは MoE および 3 つのモデルであるため、必ずしも蒸留モデルや小型モデルを起動したり、コンボを起動したりする必要はありません。バッチサイズに関係なく、1～20B のエキスパートにとって異常な速度を得るのは簡単です&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;semessier:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;フロントページとしてはかなり浅い内容です。この文脈で興味深いのは、MXFP4 量子化などの一般的ではないことです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;興味深い理論です。では、メッセージを送信するとすぐに、ChatGPT はどのようにして即座に応答を開始するのでしょうか?バッチがいっぱいになるまで待つ必要はないのでしょうか?それとも、トラフィックが多すぎて、これが数ミリ秒で発生するのでしょうか?&lt;p&gt;(ウェブソケットか何かで入力している間に、メッセージを GPU に書き込んでいる可能性もあると思いますが、よくわかりません)。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mft_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;では、最新の Cerebras チップにはどれくらいの内部メモリが搭載されているのでしょうか? 44GB。これにより、OpenAI はある種厄介な立場に置かれます。 44GB は小規模なモデル (fp16 で約 20B パラメータ、int8 量子化で約 40B パラメータ) に適合するには十分ですが、GPT-5.3-Codex に適合するには明らかに十分ではありません。それが、彼らが真新しいモデルを提供している理由であり、Spark モデルに少し「小さなモデルの匂い」がある理由です。これは、はるかに大きな GPT-5.3-Codex モデルを小規模にしたものです。&lt;p&gt;これは意味がありません。&lt;p&gt;1.  Nvidia はすでに販売しています。 H100 は 80 GB のメモリを搭載しているため、44 GB を搭載しても差別化要因になるどころか、進歩にもなりません。&lt;p&gt;2.  オープン ウェイト モデルを使ったことのある人なら誰でも証言すると思いますが、5.3-Codex-Spark がトップレベルのパフォーマンスに近づき、44 GB 未満でこのように販売されるという&lt;i&gt;方法はありません&lt;/i&gt;。  はい、それはより弱く、確かにおそらく蒸留器よりも小さくなりますが、示唆されているように〜2桁の大きさではありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yorwba:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;アイデアは、&lt;i&gt;モデル全体に​​適合するのに十分な大きさの SRAM を搭載したチップ&lt;/i&gt;を搭載し、推論を完全にメモリ内で実行できるようにすることです。 [...] では、最新の Cerebras チップにはどれくらいの内部メモリが搭載されているのでしょうか? 44GB。これにより、OpenAI はある種厄介な立場に置かれます。 44 GB は、小規模なモデル (fp16 で最大 20B パラメータ、int8 量子化で最大 40B パラメータ) に適合するには十分ですが、GPT-5.3-Codex に適合するには明らかに十分ではありません。&lt;p&gt;モデル全体を 1 つのチップに適合させる必要は実際にはありません。 GPU と同様に、モデルを複数のチップに分割できます。もちろん、各トークンが通過する必要があるチップの長いパイプラインがある場合、それに応じて 1 秒あたりのエンドツーエンドのトークンが減少します。&lt;p&gt;したがって、GPT-5.3-Codex-Spark のサイズは、単一の Cerebras チップのメモリによって制限されるのではなく、チェーンして 1 秒あたり 1,000 トークンの目標を達成できるチップの数によって制限されます。 Cerebras が 40B をはるかに超える高速モデルを提供していることを考えると、&lt;a href="https:&amp;#x2F;&amp;#x2F;www.cerebras.ai&amp;#x2F;pricing#exploration" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.cerebras.ai&amp;#x2F;pricing#exploration&lt;/a&gt; GPT-5.3-Codex-Spark の可能性が高くなります。サイズはGLM 4.7に近い。 (約 355B の合計パラメーター、32B がアクティブ)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;EdNutting:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;著者は、パートナーシップの発表からわずか 1 か月で、Cerebras チップが世界中のユーザーにサービスを提供できるよう大規模に導入されたと考えていますか?&lt;p&gt;私にはナンセンスのように思えます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gostsamo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;著者の指摘が正しければ、OpenAI には改善の余地があり、特定のタスクの正確性を高めるために高速モデルをさらに改善できる一方で、Anthropic は垂直方向のスケーリングが残されています。 OFC さん、企業が問題空間とどのようなトレードオフを行う価値があるかをより良く理解すれば、時間の経過とともに両方のアプローチが収束する可能性が高いです。&lt;p&gt;私の個人的な見解では、ユーザーとのリアルタイムの対話に十分な適切なモデルがある一方で、タスクを計画および細分化し、それらを特化した小さなモデルにスケジュールするための大きなモデルが必要になると考えていますが、これは単純な考えであり、他の多くの要素が意思決定を形作る可能性があります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dist-epoch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;バッチサイズの説明が間違っています。クロード コードがどれほど使用されているかを考えると、仲間の「バスの乗客」を見つけることは非常に困難です。問題ではありません。待つ必要はありません。&lt;p&gt;バッチ処理によってレイテンシが増加する本当の理由は複数の要因があり、説明するのはさらに複雑です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Der_Einzige:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;もう 1 つの考えられる説明は、特に品質が少しでも低下する場合 (つまり、openAI など)、積極的な量子化です。&lt;p&gt;もう 1 つの考えられる説明は、未使用の GPU メモリを速度と引き換えに (製図モデルを介して) 行う投機的なデコードです。&lt;p&gt;しかし、私のお金は OP が提案するまさに 2 つのメカニズムにあります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;retinaros:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;とても興味深いです。 OAI のリリースは、自社のルーターがすべてコスト削減と効率に焦点を当てているように見える一方で、Anthropic はメディアでモデルを誇大宣伝し、好みや広告を出さない方法にネオ ヒップスター (別名標準) 広告をリリースするために予算をすべて費やしているため、ほとんど逆の方向に進んでいます。最初の危険信号は、dario が講演するたびに発生するものですが、AI インフルエンサー全員が大々的に宣伝する、クソみたいな帽子をかぶったポップアップ イベントでした。&lt;p&gt;OAI は投資家によって、金儲けに素早く移行するよう強いられたようです。人類にはまだ時間がありそうですか？ OAI がコストを重視しながらペースを維持するのは難しいかもしれない&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;criemen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Anthropic が行っているもう 1 つのことは、すべての高速リクエストを最新世代のハードウェアにルーティングすることです。間違いなく、さまざまな推論ハードウェア (TPU、さまざまな世代の GPU) を備えており、高速なものは最速のものによってのみ提供されますが、一般的な推論ワークロードはより分散されます。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.seangoedecke.com/fast-llm-inference/</guid>
-      <pubDate>Sun, 15 Feb 2026 09:27:33 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47022329</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;krige:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;...4番目？おお。さまざまなシステム間でどれだけのコード変更が必要だったのだろうか。 Megadrive Forth コンパイラーを想像するのは難しいですが、繰り返しになりますが、ゲームは他のいくつかの M68k システムで使用されていたため、それほど難しくなかったのかもしれません...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ashdnazg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;このゲームでは、通常のツールを捨てることができます...&lt;p&gt;&amp;gt;その理由は、Starflight が Forth で書かれていることです&lt;p&gt;最近、80 年代の別のゲームをリバース エンジニアリングしましたが、Turbo Pascal で書かれていたため、同様の問題が発生しました。&lt;p&gt;さまざまなツールは、命令の間にインラインで保存されたデータや、異なる呼び出し規約を持つすべてのライブラリ関数などの癖を好まなかったのです。&lt;p&gt;これに対処する最も簡単な方法は、Turbo 以来、独自の逆コンパイラを作成することであったことがわかりました。 Pascal 3 では最適化が行われませんでした。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;copx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;このゲームが Forth で書かれているのが不思議です。確かに、商業ゲームとしては非常に珍しい選択です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;twoodfin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Starflight のゲーム デザインがその日の制限内でどれほど効果的であったかを伝えるのは困難です。&lt;p&gt;ほぼ完全に自由形式の探索とゲーム内にストーリーを埋め込むことは困難でした。巨大な銀河を横切る冒険は見事でした。&lt;p&gt;作成者がセーブ ゲーム システムで可能な限界にどれほど近づいているかを感じることができました。基本的に、ディスクはメモリ イメージでした。プレイするとゲーム自体が書き換えられるため、行き詰まった場合でも「リセット」はありません。ドキュメントでは、「オリジナル ディスクのコピーでのみプレイしてください。」と強調されていました。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/s-macke/starflight-reverse</guid>
+      <pubDate>Sun, 15 Feb 2026 11:37:29 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47022943</comments>
+    </item>
+    <item>
+      <title>色違いのポケモン</title>
+      <link>https://matthew.verive.me/blog/color/</link>
+      <guid isPermaLink="true">https://matthew.verive.me/blog/color/</guid>
+      <pubDate>Sun, 15 Feb 2026 10:40:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47022704</comments>
+    </item>
+    <item>
+      <title>啓蒙のダークサイド</title>
+      <link>https://www.newstatesman.com/culture/books/2026/02/the-dark-side-of-the-enlightenment</link>
+      <description>&lt;p&gt;アフリカの著名な歴史家であるクレイスが調査することを選んだ暴力は、西側諸国の工業化を可能にした市場資本主義の搾取的暴力である。クレイス氏の名誉のために言っておきますが、「産業革命のせいで何百万人（後には数十億人）の人々の生活が改善されなかったと想像するのは近視眼的だ」と認めています。現在ではその数は10倍以上になっています。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Dark Side of the Enlightenment&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47023959"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.newstatesman.com/culture/books/2026/02/the-dark-side-of-the-enlightenment'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;slibhb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;グレイがソ連などを批判したことは評価しますが、議論全体が間違っていると思います。&lt;p&gt;啓蒙主義の価値観と帝国主義によるアジア&amp;#x2F;アフリカ&amp;#x2F;アメリカ人の征服との関連性は明確とは言えません。啓蒙的な価値観はさておき、人々を征服してその物を奪うことは当時ごく普通のことでした。また、帝国主義は特定の人々を富ませ、経済成長をもたらしましたが、経済成長優先の観点から見ると（自由貿易と主権と比較して）おそらく悪かったでしょう。&lt;p&gt;同様に、アメリカの奴隷制度は一部の人にとって非常に有益でしたが、それがアメリカの経済発展に不可欠であったという正当な議論はありません。労働者に賃金を支払うことは、生産性と需要を高めることで経済成長を支えます。&lt;p&gt;時間が経つにつれて、この啓蒙自由主義を攻撃するプロジェクトは、私にとってますます退屈で間違っているように思えてきました。まず、これらの批評の大多数は、啓蒙主義を批判するために啓蒙主義の価値観に依存しているということです。ですから、私たちはもっと啓発されるべきなのかもしれません！もう一つは、右翼ポピュリズムがリベラル資本主義をより魅力的なものにしているということだ。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aleph_minus_one:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;archive.ph: &lt;a href="https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;wdEuy" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;wdEuy&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.newstatesman.com/culture/books/2026/02/the-dark-side-of-the-enlightenment</guid>
+      <pubDate>Sun, 15 Feb 2026 14:29:03 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47023959</comments>
+    </item>
+    <item>
+      <title>DjVu とディープラーニングとの関係 (2023)</title>
+      <link>https://scottlocklin.wordpress.com/2023/05/31/djvu-and-its-connection-to-deep-learning/</link>
+      <description>&lt;p&gt;これは良い仮定です。通常、必要なのはテキストとプロットだけですが、DjVu はそれらを適切にキャプチャします。それは本当に良いことです。ウェーブレットは算術符号化によってさらに圧縮されますが、これも非常にクールなアイデアです。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; DjVu and its connection to Deep Learning (2023)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47022213"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://scottlocklin.wordpress.com/2023/05/31/djvu-and-its-connection-to-deep-learning/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qdotme:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私が失敗したと思うもう 1 つの理由 (TIL Yann LeCun が共著者) は、海賊版記事コミュニティへの影響です。&lt;p&gt;私が学生時代にこの形式に出会ったとき、大量のスキャンされた素材を扱うとき、常に心の中で「疑わしいソフトウェアをインストールしないでください」というブロックが引き起こされました。記事では、それが優れたフォーマットだったと指摘しているので、これは残念です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nico_h:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;サンプルがどの程度関連性があるのか​​はわかりませんが、細部は失われていますが、本質はよく保存されているようです。
+OCRを実行するのに非常に役立ちそうです。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://scottlocklin.wordpress.com/2023/05/31/djvu-and-its-connection-to-deep-learning/</guid>
+      <pubDate>Sun, 15 Feb 2026 09:05:35 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47022213</comments>
     </item>
   </channel>
 </rss>
