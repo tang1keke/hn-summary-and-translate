@@ -6,84 +6,119 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Korean</description>
     <language>ko</language>
-    <lastBuildDate>Wed, 18 Feb 2026 13:14:31 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Feb 2026 15:59:36 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ko.xml"/>
     <item>
-      <title>FreeIPA/IDM이 포함된 기본 FreeBSD Kerberos/LDAP</title>
-      <link>https://vermaden.wordpress.com/2026/02/18/native-freebsd-kerberos-ldap-with-freeipa-idm/</link>
-      <description>&lt;p&gt;2에서 FreeIPA/IDM으로 Poudriere Repo가 있는 FreeIPA/IDM의 FreeBSD FreeBSD 연결 14. keytab FreeBSD keytab을 확인합니다. FreeBSD # klist -k 키탭 이름: FILE:/etc/krb5.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Native FreeBSD Kerberos/LDAP with FreeIPA/IDM&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47059520"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://vermaden.wordpress.com/2026/02/18/native-freebsd-kerberos-ldap-with-freeipa-idm/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>AVX2는 Windows ARM 에뮬레이션에서 SSE2-4.x보다 느립니다.</title>
+      <link>https://blogs.remobjects.com/2026/02/17/nerdsniped-windows-arm-emulation-performance/</link>
+      <description>&lt;p&gt;x Windows 11 ARM에서 에뮬레이션 중인 최적화된 코드. 이는 에뮬레이션을 통해 수행됩니다. Windows 10은 32비트 Intel 에뮬레이션을 지원했으며, 2021년에는 Windows 11에 64비트 앱 에뮬레이션이 도입되었습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; AVX2 is slower than SSE2-4.x under Windows ARM emulation&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47061062"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blogs.remobjects.com/2026/02/17/nerdsniped-windows-arm-emulation-performance/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ipython:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ipa 서버에서 keytab 파일을 삭제하는 것을 잊지 마세요! 그렇지 않으면 누구든지 인증되지 않은 채 해당 파일을 다운로드하고 해당 호스트 주체를 가장할 수 있습니다. &lt;p&gt;더 좋은 점은 파일을 전송할 때 어떤 방식으로든 해당 파일을 암호화하는 것입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paffdragon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;하, 정말 우연이네요, 어제부터 FreeBSD에서 LDAP&amp;#x2F;OIDC를 어떻게 설정하는지 알아보기 시작했고 오늘은 FreeIPA나 Keycloak을 사용해보려고 했습니다. 공유해 주셔서 감사합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cullumsmith:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;멋진. 나는 매우 유사한 설정을 실행했지만 OpenLDAP &amp;#x2F; 스택을 선택했습니다. MIT 케르베로스 &amp;#x2F; 내 "도메인 컨트롤러"의 PowerDNS.&lt;p&gt;OpenLDAP는 멀티마스터 복제를 수행하고 DNS 레코드와 Kerberos 데이터베이스의 백엔드입니다.&lt;p&gt;가장 어려운 부분은 OpenLDAP 구성 구문, 특히 중첩된 그룹 memberOf= 쿼리, 스키마 및 ACL과 같은 항목에 대한 올바른 ldif 주문을 파악하는 것이었습니다. 다소 이해하기 어렵습니다... 요즘에는 LLM이 적어도 당신을 위해 그것을 할 수 있습니다.&lt;p&gt;$job에서는 Linux &amp;#x2F; sssd, 나는 항상 그것이 매우 부풀어 오르고 다소 신뢰할 수 없다는 것을 알았습니다. FreeBSD와 pam_krb5 및 nslcd와 같은 오래되고 지루한 것들을 집에 와서 반가워요. 그냥 작동합니다.&lt;p&gt;&amp;quot;ipa&amp;quot; 하지만 사용자 그룹 등을 관리하기 위해 FreeIPA에서 제공하는 명령은 매우 편리합니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://vermaden.wordpress.com/2026/02/18/native-freebsd-kerberos-ldap-with-freeipa-idm/</guid>
-      <pubDate>Wed, 18 Feb 2026 10:29:30 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47059520</comments>
+&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Mickell:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;...이는 특히 비디오 인코딩, 과학적 컴퓨팅 또는 복잡한 문서 처리와 같이 숫자 처리가 많은 애플리케이션과 관련이 있습니다.&lt;p&gt;문서 처리에 관해 말하자면, PDF로 작업하고 x86 및 ARM 시스템에서 안정적인 성능이 필요한 경우 PdfTeq를 확인해야 합니다. 우리는 네이티브 ARM 호환 라이브러리를 제공하므로 호환성을 위해 속도를 희생할 필요가 없습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;targettracker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47061062"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47061062&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TheJoeMan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;quot;SSE2-4.x&amp;quot;를 검색해 보았습니다. 이는 DDG와 Google의 최고 결과이므로 처음에는 기사에서 언급하는 지침 세트가 무엇인지 혼란스러웠습니다. 그러나 이는 SSE2에서 SSE4까지의 약칭인 것 같습니다. 아마도 기사 제목을 바꾸는 것이 도움이 될 수 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;crest:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;SSE4가 가장 빠른 것은 놀랄 일이 아닙니다. 둘 다 128비트 레지스터를 사용하고 상당히 유사한 기능 세트를 제공하기 때문에 NEON에 매핑하는 것이 가장 쉽기 때문입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kbolino:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 이것이 벡터 단위의 폭이 충분하지 않기 때문이라고 의심했는데, 실제로 그런 것 같습니다. AVX2는 256비트이고 ARM NEON은 128비트에 불과합니다.&lt;p&gt;그럼 가장 큰 질문은 왜 ARM 데스크톱(및 서버?) 코어가 더 넓은 SIMD 지원에 비해 훨씬 뒤떨어져 있는가 하는 것입니다. Intel&amp;#x2F;AMD가 어제 x86용 확장 기능을 내놓은 것과는 다릅니다. AVX2는 15년이 넘었습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aissen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;스포일러는 결론에 있습니다:&lt;p&gt;&amp;gt; 예, Windows ARM 에뮬레이션에 의존하지 않고 ARM으로 앱을 빌드하는 것이 절대적으로 중요합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iberator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;어쨌든 AVX2는 금지되어야 합니다. 
+값비싼 CPU에만 이 기능이 있어 최소한의 게임 요구 사항을 망치고 하드웨어를 쓸모없게 만듭니다.&lt;p&gt;세계 대부분의 사람들이 한 달에 300달러로 생활합니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blogs.remobjects.com/2026/02/17/nerdsniped-windows-arm-emulation-performance/</guid>
+      <pubDate>Wed, 18 Feb 2026 14:08:11 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47061062</comments>
     </item>
     <item>
-      <title>Asahi Linux 진행 보고서: Linux 6.19</title>
-      <link>https://asahilinux.org/2026/02/progress-report-6-19/</link>
-      <description>&lt;p&gt;/ 블로그 / 진행 보고서: Linux 6. 19 진행 보고서: Linux 6. 가장 큰 것Asahi Linux가 올해로 5주년이 되었습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Asahi Linux Progress Report: Linux 6.19&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47059275"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://asahilinux.org/2026/02/progress-report-6-19/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>마크 저커버그는 의회에 거짓말을 했습니다. 우리는 그분의 증언을 믿을 수 없습니다</title>
+      <link>https://dispatch.techoversight.org/top-report-mark-zuckerberg-lied-to-congress-we-cant-trust-his-testimony/</link>
+      <description>&lt;p&gt;“전혀 본 적 없는 문서들이 주커버그가 의회에 거짓말을 했다는 것을 입증합니다. – 출처: 미국 상원 법사위 청문회 “빅 테크와 온라인 아동 성 착취 위기”(2024)2024년 미국 상원 법사위 청문회에서 주커버그가 주장한 주장에도 불구하고, 메타의 청문회 후 십대 안전 조치에 대한 투자(i. – 출처: 미국 상원 법사위 청문회에 대한 청문회) "빅 테크와 온라인 아동 성 착취 위기"(2024) 진행 중인 소송에서 전문가의 조사 결과가 이러한 주장에 직접적으로 이의를 제기합니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Mark Zuckerberg Lied to Congress. We Can't Trust His Testimony&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47060486"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://dispatch.techoversight.org/top-report-mark-zuckerberg-lied-to-congress-we-cant-trust-his-testimony/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;burner420042:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;어젯밤 Bladerunner를 보고 있었는데, 특히 Ford가 음성 명령을 사용하여 사진을 확대하는 부분이 있었습니다.&lt;p&gt;디스플레이 위에는 디스플레이의 활동과 동기화되어 바뀌는 황색 가로 막대가 있는데, 처음 생각한 것은 '드디어 Mac Touch Bar의 용도를 찾았구나!'&lt;p&gt;Touch Bar는 Linux에서 너무 많은 용도를 갖고 있기 때문에 빨리 작동할 수 있기를 기대하고 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Noaidi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;배터리 수명이 내 요구 사항을 충족하면 내 M1이 설치를 기다리고 있는 이 멋진 프로젝트에 참여하고 있는 일곱 명의 영웅적인 영혼을 칭찬하러 왔습니다. 그리고 암호화폐와 기술 자금이 떠돌고 있는 상황에서 아사히에는 왜 50명의 직원이 전액 자금을 지원받지 못하는지 물어봐도 될까요?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;signa11:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;돈 견적(적어도 일부에게는)&lt;p&gt;&lt;pre&gt;&lt;code&gt; 실제로 현재 M3 지원 상태는 첫 번째 Arch를 출시했을 때 M1 지원이 있었던 것과 같습니다.
-    Linux ARM 기반 베타; 일부 로컬에서는 키보드, 터치패드, WiFi, NVMe 및 USB3가 모두 작동합니다. 
-    m1n1 및 Asahi 커널(아직 풀 요청에 포함되지 않음)에 대한 패치가 필요합니다. 그래서 
-    곧 출시가 준비된다는 뜻이겠죠?&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lame-robot-hoax:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아, 아마 시간이 좀 더 걸릴 것이라는 건 알지만, M4 Air에서 Asahi를 달릴 수 있는 날이 정말 기대됩니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ForHackernews:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것은 믿을 수 없을 만큼 인상적이면서도 매우 슬프다. 6년 후, 우리는 M1에 거의 적합한 커널을 갖게 되었습니다.&lt;p&gt;Apple은 M5를 출시합니다. 미래는 폐쇄형 시스템과 맞춤형 실리콘의 세계가 될 것으로 보이며, 무료 소프트웨어는 훨씬 뒤떨어져 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Retr0id:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;120Hz는 굉장합니다! 이것이 제가 개인적으로 M1 Pro MBP에서 누락되었다고 느꼈던 마지막 기능이었습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gr4vityWall:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;훌륭한 작업입니다. 나는 중고 M1&amp;#x2F;M2 기계가 예전 Thinkpad T420처럼 몇 년 안에 젊은 개발자들에게 개인용 재미있는 노트북으로 선호될 것이라고 믿습니다. 물론 이유는 다양합니다.&lt;p&gt;M4와 M5 GPU도 M3와 많이 바뀌나요? M3를 사용할 수 있게 되면 이러한 작업을 수행하는 것이 너무 많은 작업이 아니기를 바랍니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sohrob:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 종종 Apple 직원들이 Asahi 팀을 감시하고 있는지 궁금합니다. 그들은 Asahi 프로젝트에서 나오는 놀라운 리버스 엔지니어링에 경외감을 느끼고 있습니까, 아니면 무관심합니까?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://asahilinux.org/2026/02/progress-report-6-19/</guid>
-      <pubDate>Wed, 18 Feb 2026 10:00:11 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47059275</comments>
+&lt;p&gt;&lt;strong&gt;Top 30 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ddlsmurf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 미국 법조계 전문가는 아니지만 제가 착각한 것이 아니라면 이것은 단순한 거짓말과 기만 행위가 아니라 위증이라고 하고 범죄가 되는 것 아니겠습니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tiffanyh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;명심해야 할 사항은…&lt;p&gt;의회에서 증언하는 것은 엄청난 스트레스를 주는 일입니다. 가장 준비된 CEO라도 그런 종류의 압력을 받으면 얼어붙거나 사고의 흐름을 잃거나 말을 잘못할 수 있습니다.&lt;p&gt;그리고 미디어는 그러한 상황에서 의도하지 않은 잘못된 진술을 하는 것이 얼마나 쉬운지 인정하지 않은 채 '잡은' 대사를 찾는 경우가 많습니다.&lt;p&gt;참고: 저는 Zuckerberg의 진술이 정확한지 여부에 무게를 두는 것이 아닙니다. 저는 종종 간과되는 압력 역학을 지적하고 있을 뿐입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;slibhb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;소셜 미디어가 문제라는 증거는 제한적입니다. 이 모든 것은 일종의 도덕적 공황 상태입니다. 특히 문제는 마크 저커버그를 겨냥한 끊임없는 독설이다. 나는 모든 것을 무시하고 가족으로서 계속해서 제품을 만드는 Mark를 존경합니다.&lt;p&gt;사람들이 무언가에 대해 알고 싶다면 그것은 온라인 도박이어야 합니다. 우리는 그곳에서 실험을 진행했습니다. 도박이 엄격하게 제한될 때 해악은 분명하며 세상은 더 좋아집니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hosteur:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;모바일에서는 표를 읽을 수 없습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dabedee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 대개 Facebook과 그 주요 거짓말쟁이를 강타하는 첫 번째 사람이지만, 첫 두 문단에서는 저주받은 증거와 약한 확장이 혼합되어 있습니다(여기서 다른 사람들이 언급한 것처럼). 나쁜 것 자체가 정말 나쁜 것입니다.&lt;p&gt;Meta의 자체 연구에 따르면 Instagram은 십대 소녀 3명 중 1명의 신체 이미지를 악화시켰습니다[1]. 그들은 결과가 나빠 보이자 비활성화 연구를 종료했으며, 한 직원은 이를 담배 회사가 연구를 묻어두는 것과 비교했습니다[2]. 성적 권유와 관련된 계정에 대해 17번의 경고 정책을 시행했습니다[3]. 그리고 그들은 명시적으로 13세 미만의 어린이를 대상으로 청소년을 "아동(6~10세), 10~13세, 13세 이상"으로 분류하여 성장 전략을 실행했습니다. [4].&lt;p&gt;[1] 2019 Instagram 슬라이드 프레젠테이션, "청소년 정신 건강 심층 분석"&lt;p&gt;[2] 메타 내부 비활성화 연구(봉인되지 않은 문서에서 나온 익명의 직원 인용문)&lt;p&gt;[3] 전 Instagram 안전 및 웰빙 책임자인 Vaishnavi Jayakumar의 증언&lt;p&gt;[4] 메타 내부 증거 증거 자료 45&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ddtaylor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; Meta의 위험하고 지독한 행동을 불법화하는 유일한 방법은 어린이 온라인 안전법과 같은 법안을 통과시키는 것입니다&lt;p&gt;정부의 실패가 문제이며 유일한 해결책은 더 많은 정부입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nickdothutton:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;2020년 전체 아동 성매매의 79%가 Meta의 플랫폼에서 발생했습니다.&lt;p&gt;이 수치는 매우 높게 들렸으며, 추정되는 지하 활동의 성격을 고려할 때 총 수치(100%)가 얼마인지 그들이 어떻게 이해했는지 알고 싶었습니다. 출처 링크를 클릭했습니다. 그 진술은 거짓입니다. 반드시 이들 회사에 책임을 물을 수 있지만 선정주의는 도움이 되지 않습니다. 전체 공개: 저는 Facebook 계정을 가져본 적이 없으며 Meta가 존재하는지 여부에 신경 쓸 수 없습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 의회(일명 일반 대중)에게 거짓말을 하는 슈퍼 부자들은 의무 기간 동안 감옥에 가야 한다고 생각합니다. 일주일만이라도 말이죠.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;charles_f:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;제가 추천하고 싶은 것 중 하나는 판단의 대상이 되는 진술로 실제 거짓말을 엮지 않는 것입니다. 예를 들어 처음 두 행은 보호 도구에 대한 투자 수준에 관한 것이며 이러한 도구의 비효율성 때문에 거짓말이라고 주장됩니다. 양측이 동시에 참일 수 있습니다. 많이 투자해도 성과가 없을 수 있다.&lt;p&gt;읽어보니 지푸라기라도 잡고 있는 줄 알았다. 그런 다음 계속해서 책을 읽었고, 반박할 수 없는 실제 거짓말을 발견했지만, 그럼에도 불구하고 이것이 사실보다 해석일 수도 있다는 사실에 약간의 경각심을 느꼈습니다.&lt;p&gt;아마도 경계선에 있는 '절제된 진술'을 제거하는 것이 좋을 것입니다. 혹은 '진실의 왜곡' ; 또는 다른 모든 거짓말을 고려할 때 신뢰할 수 없는 것으로 제시합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;phendrenad2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 ambridgecay alyticaanay 스캔들이 터졌을 때 uckerbergzay를 신뢰하지 말아야 한다는 것을 배웠고, 그가 계획에 직접 관여하지 않은 가설을 찾기 위해 정신적 체조를 뛰어넘어야 했습니다. 나는 이것에 대해 게시할 때마다 다시 생각나고 봇은 &amp;quot;ambridgecay alyticaancay&amp;quot;라고 적혀 있기 때문에 내 댓글을 대량으로 반대표로 표시합니다. (돼지 라틴 제외).&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LightBug1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;quot;우리는 억만장자 CEO다, 개년아&amp;quot;&lt;p&gt;*개년아
+명사
+1.
+- 일반적으로 정부와 국민을 지칭할 때 사용됩니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zer00eyz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;편지 쓰기(빠른 배송), 서적 인쇄, 라디오, 텔레비전, 음악 배포(음반 및 테이프) --&lt;p&gt;이것은 새로운 것이 될 때 사회의 몰락이 될 품목의 목록입니다. 여러분 중 몇몇은 80년대의 사탄 패닉과 90년대 PMRC를 기억할 만큼 나이가 들었을 것입니다.&lt;p&gt;이들 중 어느 것도 사람들이 생각한 대로 밝혀지지 않았습니다. 태양 아래 새로운 것은 없으며, 이러한 반응은 조작된 데이터와 "감정" 앞에서 매우 과장된 것처럼 보입니다. '사실'에 대해.&lt;p&gt;그것이 Facebook이나 소셜 미디어에 문제가 없다는 말은 아니지만, 목록의 상위권에 가까울수록 계속해서 주목을 받고 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;josefritzishere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;선서가 아니더라도 의회에 거짓말을 하는 것은 실제로 범죄입니다. 집행되는 경우가 거의 없기 때문에 그렇게 보이지는 않는다는 것을 알지만 중범죄입니다.   &lt;a href="https:&amp;#x2F;&amp;#x2F;www.findlaw.com&amp;#x2F;법률 블로그&amp;#x2F;범죄 방어&amp;#x2F;무엇이-입니까-the-벌칙-for-거짓말-의회&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.findlaw.com&amp;#x2F;법률 블로그&amp;#x2F;범죄 방어&amp;#x2F;무엇이...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;navigate8310:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;문제의 핵심은 정신 건강이 일반 남성에게 충분하지 않고 단순한 기침과 감기 독감의 모양과 느낌과 같은 과다한 스펙트럼을 쉽게 보고 식별할 수 없다는 것입니다. 이것이 이들 기업의 가치를 수십억 달러로 끌어올리는 원동력입니다.&lt;p&gt;사회가 정신 건강에 대한 전망을 바꿀 때까지 어떠한 규제나 정부 감독도 이 문제를 해결할 수 없으며 우리는 계속해서 차세대 Meta 또는 TikTok을 통해 인류의 인간성을 더욱 죽일 준비가 되어 있을 것입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jacobsimon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;여기서는 메타를 옹호하려는 의도가 전혀 없지만 이 보고서 역시 거짓말을 하고 있습니다.&lt;p&gt;예를 들어 "2020년 &lt;i&gt;모든&lt;/i&gt; 아동 성매매의 79%가 메타 플랫폼에서 발생했습니다."라고 나와 있습니다. 그러나 그것이 인용한 출처에 따르면 실제로 &lt;i&gt;온라인 소셜 미디어&lt;/i&gt; 사례의 79%가 Facebook과 Instagram에서 발생했습니다. 따라서 이 통계는 아마도 Meta의 소셜 미디어 시장 점유율을 반영한 것일 수도 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jaybyrd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;제가 어렸을 때 법을 어기면 감옥에 간다고 생각했던 기억이 납니다. 어린 시절이 그리워.....&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blitzar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그를 가두세요.&lt;p&gt;그러면 그는 사면 뇌물을 줄 수 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;trolleski:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;주크가 거짓말을 했다고? 불가능한!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bronco21016:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 이 문제에 많은 관심을 기울이지 않았지만 기사의 일부 진술을 읽은 후에는 Tech Oversight의 결론에 동의하지 않을 수 없습니다. 일화일 뿐이지만 최근 무심코 릴을 스크롤하던 중(예, 이미 충분히 나쁩니다) 의심할 여지 없이 성적으로 노골적인 릴을 발견했습니다(미국에서는 정책이 지역에 따라 다를 수 있다고 생각합니다). 계정을 클릭한 후 더 많은 자료가 있었기 때문에 계정과 릴을 신고했습니다. 이것은 단순한 &amp;quot;크리에이터&amp;quot;가 아니었습니다. 외설적인 콘텐츠로 성인 사이트를 홍보합니다. 계정에는 미리보기 이미지가 검은색이었지만 2~3초 후에 성인용 이미지가 나타나는 여러 릴이 있었습니다.&lt;p&gt;Facebook은 "추가 조치가 필요하지 않습니다"라는 말로 내 보고서를 종료했습니다. 콘텐츠가 정책을 위반하지 않는다고 말하는 것입니다. 나는 그들이 통과해야 할 보고의 절대적인 쓰나미를 가지고 있다고 확신하며 나는 이 작업을 맡은 인간을 부러워하지 않습니다. 그러나 그들이 플랫폼의 콘텐츠를 조정하겠다는 공개적으로 밝힌 목표를 효과적으로 달성하지 못하고 있는 것은 분명해 보입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;giancarlostoro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그가 IG를 인수했을 때 조건 중 하나가 IG &amp;#x2F;를 합병하지 않는다는 것이었습니다. FB이지만 확실히 뒤에서 병합되었습니다. IG는 어떻게든 귀하의 FB를 알고 있으며 그 반대도 마찬가지입니다. 또한 하나가 오프라인이 되면 둘 다 오프라인이 됩니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blululu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;iOS 사파리의 CSS가 완전히 망가졌습니다. 첫 번째 열은 고정되어 있고 작기 때문에 행이 정말 커집니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;raincole:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; &amp;gt; Meta의 위험하고 지독한 행동을 불법화하는 유일한 방법은 어린이 온라인 안전법과 같은 법안을 통과시키는 것입니다&lt;p&gt;정말요?&lt;p&gt;검열과 감시 상태의 모든 의미를 무시하더라도 의회에 거짓말을 하는 것은 &lt;i&gt;이미&lt;/i&gt; 범죄입니다. &lt;i&gt;이미&lt;/i&gt; 규제되고 있습니다. 그가 그것을 피할 수 있다면 왜 다른 행동이 다를까요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aurornis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; Meta의 위험하고 심각한 행동을 금지하는 유일한 방법은 어린이 온라인 안전법과 같은 법안을 통과시키는 것입니다&lt;p&gt;지난주에 Discord가 성인 테마 서버에 가입하고 콘텐츠 필터를 우회하려면 연령 확인을 요구했기 때문에 소란이 있었습니다. &lt;i&gt;이것은&lt;/i&gt; 사람들이 서비스에 이러한 제한과 규정을 도입하도록 유도하는 방식입니다. Mark Zuckerberg와 같은 적에게 상처를 입힐 필요가 있다고 믿고 "아이들을 생각하라"는 믿음이 결합된 것입니다.&lt;p&gt;광범위한 규제와 감독에 대한 요구가 Hacker News에서 많은 지지를 받는 것은 여전히 슬픈 일입니다.&lt;p&gt;온라인에서 어린이에 대한 규제를 요구하는 사람을 볼 때마다 어린이와 어른을 구분하는 유일한 방법은 &lt;i&gt;모든 사람&lt;/i&gt;을 강요하는 것임을 기억하세요. 연령 확인을 진행합니다. 소셜 미디어를 사용하지 않기 때문에 신경 쓰지 않는다고 생각하기 전에 소셜 미디어 사이트에서 이 글을 읽고 있다는 점을 기억하세요. 법은 Hacker News가 소셜 미디어의 자격이 있다고 생각하는지 여부에 관심을 두지 않을 것입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FrustratedMonky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;거짓말이 당신을 곤경에 빠뜨릴 수 있었던 때를 기억하시나요?&lt;p&gt;거짓말은 현실을 알 수 없을 정도로 일상화되었습니다. 언제든지 정권 기자회견을 들어보세요. 아무 날짜나 골라서 들어보세요.&lt;p&gt;초현실적인 경험이 여기 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wongarsu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;목록을 읽어보면 대부분이 거짓말이라고 할 수 없을 것 같습니다. 거짓말도 있지만 대부분 '매우 정확하게 표현된 진술'입니다. 그리고 악의적인 의도로 만들어졌으나 기술적으로는 거짓이 아닌 진술. 그들 중 일부는 그들의 '증거'가 어떤 것인지조차 확신할 수 없습니다. 칼럼은 인용된 진술을 반박하기 위한 것입니다.&lt;p&gt;제 생각에는 이렇게 광범위하게 말하면 메시지에 상처를 주는 것 같습니다. 그들은 실제 거짓말에 집중해야 하며 "2024년에 주커버그는 의회에서 16세 미만의 계정은 기본적으로 비공개라고 말했지만 그렇게 하지 않을 때의 해로움을 알게 된 지 7년 후인 2024년에야 이 기능을 출시했습니다."라고 말했습니다. 그 사람이 거짓말을 했어!’&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mystraline:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그리고 우리는 그 이유를 *알고* 있습니다. 왜냐하면 억만장자 때문입니다.&lt;p&gt;그러나 의회에 거짓말을 하는 것은 위증입니다. 그는 모욕죄로 감옥에 갇힌 다음 개인적으로 위증죄로 재판을 받아야 합니다. 최대 5년까지 처벌할 수 있는 중범죄입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bilekas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; Meta의 위험하고 지독한 행동을 불법화하는 유일한 방법은 어린이 온라인 안전법과 같은 법안을 통과시키는 것입니다. 이 법안은 아이들을 불에 태워 어린이와 청소년을 보호하도록 강제합니다.&lt;p&gt;그가 거짓말을 한 것은 놀라운 일이 아닙니다. 이것이 바로 기업이 하는 일이며 주주를 위한 수익이 가장 중요합니다. 하지만 대답은 "어린이 온라인 안전법"이 아닙니다. &lt;p&gt;입법이 확실히 도움이 될 것이고, 규제는 더욱 도움이 될 것입니다. 그러나 그 안전법은 정답이 아닙니다. 즉, 연령 확인입니다. 그러니 다시 작성하고, 업무를 수행하고, 이용 가능한 연구원과 전문가를 활용하여 특별한 이익 단체나 로비스트가 없는 법안 제안서를 가져오면 약간의 개선이 있을 수 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NickC25:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그에게 책임을 물을 수는 없습니다.  그는 너무 부유하고 너무 많은 국회의원과 여성을 소유하고 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pimlottc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;NB는 모바일 Safari에서 리더 모드를 사용합니다. 그렇지 않으면 표를 읽을 수 없습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;HelloUsername:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;관련이 있나요?&lt;p&gt;&amp;quot;배심원단은 Meta와 Google의 '공학적 중독'이 관련이 있다고 말했습니다. 획기적인 미국 재판에서 &amp;quot; &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46959832"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46959832&lt;/a&gt; 2026년 2월 10일 댓글 385개&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://dispatch.techoversight.org/top-report-mark-zuckerberg-lied-to-congress-we-cant-trust-his-testimony/</guid>
+      <pubDate>Wed, 18 Feb 2026 13:00:11 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47060486</comments>
     </item>
     <item>
-      <title>Zep AI(컨텍스트 그래프 구축, YC W24)에서 엔지니어를 채용합니다.</title>
-      <link>https://www.ycombinator.com/companies/zep-ai/jobs</link>
-      <description>&lt;p&gt;com/Zep AI 채용 직원 엔지니어미국 샌프란시스코 / 원격(미국)$175K - $250K1. 50%6년 이상 지금 신청하세요 ›리드 포워드 배치 엔지니어샌프란시스코, 미국 / 원격(미국)$175K - $250K0. 50%6년 이상 지금 신청하세요 ›개발자 관계 책임자샌프란시스코, 미국 / 원격(미국)$175K - $250K0.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Zep AI (Building the Context Graph, YC W24) Is Hiring Engineers&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47060117"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/zep-ai/jobs'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.ycombinator.com/companies/zep-ai/jobs</guid>
-      <pubDate>Wed, 18 Feb 2026 12:00:50 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47060117</comments>
+      <title>HN 표시: CEL 예시</title>
+      <link>https://celbyexample.com/</link>
+      <description>&lt;p&gt;com") // 결과: true (bool) Collections# 사용자에게 특정 역할이 있습니까? email_verified - user.roles, "is_adult": user.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: CEL by Example&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47061029"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://celbyexample.com/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hamandcheese:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;CEL에는 다른 파일을 가져올 수 있는 방법이 있나요? 즉, jsonnet과 같은 범용 구성 언어로 사용할 수 있습니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;d4mi3n:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;CEL을 본 적은 있지만 사용해 본 적은 없습니다. 경쟁 기술에 대한 경험이 있는 사람 중 강력한 의견이 있는 사람이 있습니까? 저는 OPA를 사용했고 GCP와 Kyverno에서 사용하는 CEL을 알고 있지만 OPA 생태계에서 벗어날 만큼 매력적인 것을 본 적이 없습니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://celbyexample.com/</guid>
+      <pubDate>Wed, 18 Feb 2026 14:05:39 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47061029</comments>
     </item>
     <item>
-      <title>인간과 AI를 위한 가장 빠른 프런트엔드 도구</title>
-      <link>https://cpojer.net/posts/fastest-frontend-tooling</link>
-      <description>&lt;p&gt;마이그레이션 프롬프트: 이 프로젝트를 Prettier에서 Oxfmt로 마이그레이션하세요. 모든 ESLint 구성 파일을 제거합니다. Oxlint는 유형 인식 린트 규칙도 지원합니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Fastest Front End Tooling for Humans and AI&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47060052"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://cpojer.net/posts/fastest-frontend-tooling'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://cpojer.net/posts/fastest-frontend-tooling</guid>
-      <pubDate>Wed, 18 Feb 2026 11:51:01 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47060052</comments>
+      <title>HN 표시: VectorNest 반응형 웹 기반 SVG 편집기</title>
+      <link>https://ekrsulov.github.io/vectornest/</link>
+      <guid isPermaLink="true">https://ekrsulov.github.io/vectornest/</guid>
+      <pubDate>Wed, 18 Feb 2026 15:31:57 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47062096</comments>
     </item>
     <item>
-      <title>마이크로소프트는 버그로 인해 Copilot이 기밀 이메일을 요약하게 된다고 밝혔습니다.</title>
-      <link>https://www.bleepingcomputer.com/news/microsoft/microsoft-says-bug-causes-copilot-to-summarize-confidential-emails/</link>
-      <description>&lt;p&gt;Copilot Chat(Microsoft 365 Copilot Chat의 약어)은 사용자가 AI 에이전트와 상호 작용할 수 있는 회사의 AI 기반 콘텐츠 인식 채팅입니다. Microsoft는 2025년 9월부터 Microsoft 365 비즈니스 고객에게 비용을 지불하기 위해 Word, Excel, PowerPoint, Outlook 및 OneNote에 Copilot Chat을 출시하기 시작했습니다. Microsoft는 이 문제를 확인하면서 "기밀 레이블이 적용된 사용자의 이메일 메시지가 Microsoft 365 Copilot 채팅에서 잘못 처리되고 있습니다"라고 밝혔습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Microsoft says bug causes Copilot to summarize confidential emails&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47060202"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bleepingcomputer.com/news/microsoft/microsoft-says-bug-causes-copilot-to-summarize-confidential-emails/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>HN 표시: Axiom – x²가 유효한 구문인 수학 기반 OS(처음부터 구축됨)</title>
+      <link>https://fawazishola.ca/axiom/</link>
+      <description>&lt;p&gt;Neurosymbolic AI 기반 운영 체제 Axiom은 커널부터 인공 지능과 형식 수학을 통합하도록 설계된 세계 최초의 OS입니다. 순수 LLM은 환각을 느낍니다. 순수한 코드는 엄격합니다. 제로 레이턴시: 추론 엔진은 링-3 서비스로 컴파일되어 시스템 프로세스와 함께 지속적으로 실행됩니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Axiom – A math-native OS where x² is valid syntax (built from scratch)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47061315"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://fawazishola.ca/axiom/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tablets:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;최초 발행일 2026년 2월 3일&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.bleepingcomputer.com/news/microsoft/microsoft-says-bug-causes-copilot-to-summarize-confidential-emails/</guid>
-      <pubDate>Wed, 18 Feb 2026 12:16:12 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47060202</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fawazishola:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;안녕하세요 HN, 저는 19세 항공우주학과 학생입니다. 저는 OS 커널을 결정론적 관리자가 아닌 수학적 엔진으로 취급할 수 있는지 확인하고 싶었기 때문에 지난 13개월 동안 처음부터 맞춤형 Linux 배포판을 구축했습니다.&lt;p&gt;스택:
+Flux(쉘): x² 및 ∑가 유효한 구문인 사용자 정의 수학 기반 쉘입니다. 수학적 표기법을 최적화된 SIMD 명령어로 직접 구문 분석합니다(Python 래퍼 없음).&lt;p&gt;Tenet(스케줄러): Tenet(게임 이론을 위한 맞춤 DSL)으로 작성되었습니다. 스케줄러는 네이티브 코드로 컴파일된 Nash Equilibrium 솔버입니다. 내 벤치마크(Ryzen 7 5800HS)에서는 최대 지터를 290μs(Linux Mint)에서 6μs(48배 낮음)로 줄였습니다.&lt;p&gt;Alexitha(안전 계층): 실행 전에 공식적으로 커널 모듈을 확인하는 Neurosymbolic 에이전트로 systemd를 교체했습니다.&lt;p&gt;현재 상태: 사전 알파 연구 커널. 보안 아키텍처를 마무리하고(안전 계층의 일부를 상용화할 가능성이 있으므로) 현재 소스는 닫혀 있지만 랜딩 페이지에 수학 및 컴파일러 아키텍처를 자세히 설명하는 백서를 공개했습니다.&lt;p&gt;저는 LFS 빌드 프로세스, 스케줄러 수학 또는 Flux가 기호 구문 분석을 처리하는 방법에 대한 질문에 답하기 위해 왔습니다!&lt;p&gt;선언문: 제가 이것을 구축하기 위해 하드 드라이브를 핵폭탄 처리한 이유에 대한 전체 이야기를 원한다면(그리고 &amp;quot;Apollo 11 Paradox'), 나는 여기에 철학에 대해 썼습니다: &lt;a href="https:&amp;#x2F;&amp;#x2F;fawazishola.medium.com&amp;#x2F;why-i-nuked-my-hard-drive-to-build-a-neurosymbolic-ai-native-os-afbfecf43301?source=friends_link&amp;amp;sk=7ec4a32cfbaa7d6bd9419522c64ef342" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;fawazishola.medium.com&amp;#x2F;why-i-nuked-my-hard-drive-to-...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://fawazishola.ca/axiom/</guid>
+      <pubDate>Wed, 18 Feb 2026 14:30:52 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47061315</comments>
+    </item>
+    <item>
+      <title>그네를 타고 내려가는 스티븐 콜버트</title>
+      <link>https://www.nytimes.com/2026/02/18/arts/television/stephen-colbert-cbs-statement.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/02/18/arts/television/stephen-colbert-cbs-statement.html</guid>
+      <pubDate>Wed, 18 Feb 2026 15:41:59 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47062179</comments>
     </item>
   </channel>
 </rss>

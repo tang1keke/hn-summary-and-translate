@@ -6,84 +6,119 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 18 Feb 2026 13:14:31 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Feb 2026 15:59:36 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>带有 FreeIPA/IDM 的本机 FreeBSD Kerberos/LDAP</title>
-      <link>https://vermaden.wordpress.com/2026/02/18/native-freebsd-kerberos-ldap-with-freeipa-idm/</link>
-      <description>&lt;p&gt;2 到 FreeIPA/IDM FreeBSD 在 FreeIPA/IDM 上使用 Poudriere Repo Connect FreeBSD 14. keytab 验证 FreeBSD keytab。 FreeBSD # klist -k 密钥表名称：FILE:/etc/krb5.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Native FreeBSD Kerberos/LDAP with FreeIPA/IDM&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47059520"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://vermaden.wordpress.com/2026/02/18/native-freebsd-kerberos-ldap-with-freeipa-idm/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Windows ARM 仿真下 AVX2 比 SSE2-4.x 慢</title>
+      <link>https://blogs.remobjects.com/2026/02/17/nerdsniped-windows-arm-emulation-performance/</link>
+      <description>&lt;p&gt;x 在 Windows 11 ARM 上模拟优化代码。它通过仿真来实现这一点。 Windows 10 支持模拟 32 位 Intel，到 2021 年 Windows 11 引入了模拟 64 位应用程序。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; AVX2 is slower than SSE2-4.x under Windows ARM emulation&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47061062"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blogs.remobjects.com/2026/02/17/nerdsniped-windows-arm-emulation-performance/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ipython:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不要忘记从 ipa 服务器中删除 keytab 文件！否则任何人都可以未经身份验证下载该文件并冒充该主机主体&lt;p&gt;更好的是，您需要在传输该文件时以某种方式加密该文件&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paffdragon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哈，真巧，昨天刚开始研究如何在 FreeBSD 上设置 LDAP&amp;#x2F;OIDC，今天我打算尝试 FreeIPA 或 Keycloak。感谢分享。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cullumsmith:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好的。我运行了一个非常相似的设置，但选择了 OpenLDAP 堆栈 &amp;#x2F;麻省理工学院 Kerberos &amp;#x2F;我的“域控制器”上的 PowerDNS。&lt;p&gt;OpenLDAP 执行多主机复制，并且是 DNS 记录和 Kerberos 数据库的后端。&lt;p&gt;最困难的部分是弄清楚 OpenLDAP 配置语法，尤其是嵌套组 memberOf= 查询、架构和 ACL 等内容的正确 ldif 咒语。这有点难以理解……现在法学硕士至少可以为你做到这一点。&lt;p&gt;在 $job 我们使用 Linux &amp;#x2F; sssd，我总觉得它超级臃肿而且相当不可靠。很高兴回到 FreeBSD 和像 pam_krb5 和 nslcd 这样的老无聊东西。它确实有效。&lt;p&gt;“ipa” FreeIPA 提供的用于管理用户组等的命令非常方便。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://vermaden.wordpress.com/2026/02/18/native-freebsd-kerberos-ldap-with-freeipa-idm/</guid>
-      <pubDate>Wed, 18 Feb 2026 10:29:30 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47059520</comments>
+&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Mickell:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;...这对于进行大量数字处理的应用程序尤其重要，例如视频编码、科学计算，甚至复杂的文档处理。&lt;p&gt;说到文档处理，如果您正在处理 PDF 并且需要跨 x86 和 ARM 机器的可靠性能，您应该查看 PdfTeq。我们提供原生 ARM 兼容库，因此您不必为了兼容性而牺牲速度。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;targettracker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47061062"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47061062&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TheJoeMan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我尝试搜索“SSE2-4.x”这是 DDG 和 Google 中的最高结果，所以我最初很困惑这篇文章指的是哪个指令集。但是，这似乎是 SSE2 到 SSE4 的简写？也许重新表述文章标题可能会有所帮助。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;crest:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不会对 SSE4 成为最快感到惊讶，因为它最容易映射到 NEON，因为两者都使用 128 位寄存器并提供相当相似的功能集。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kbolino:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我怀疑这是因为矢量单位不够宽，看起来确实如此。 AVX2 是 256 位，ARM NEON 只有 128 位。&lt;p&gt;那么最大的问题是，为什么 ARM 桌面（和服务器？）内核在更广泛的 SIMD 支持方面远远落后？ Intel&amp;AMD 并不是昨天就为 x86 推出了这些扩展；而是昨天才推出的。 AVX2 已经超过 15 年了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aissen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;结论中有剧透：&lt;p&gt;&gt;是的，将应用程序构建为 ARM 绝对是关键，而不是依赖 Windows ARM 模拟。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iberator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;无论如何，AVX2 都应该被禁止。 
+只有昂贵的 CPU 才有它，这会破坏最低游戏要求并使硬件过时。&lt;p&gt;世界上大多数人每月的生活费用为 300 美元&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blogs.remobjects.com/2026/02/17/nerdsniped-windows-arm-emulation-performance/</guid>
+      <pubDate>Wed, 18 Feb 2026 14:08:11 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47061062</comments>
     </item>
     <item>
-      <title>Asahi Linux 进度报告：Linux 6.19</title>
-      <link>https://asahilinux.org/2026/02/progress-report-6-19/</link>
-      <description>&lt;p&gt;/ 博客 / 进度报告：Linux 6. 19 进度报告：Linux 6. 大事 Asahi Linux 今年已满 5 岁了。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Asahi Linux Progress Report: Linux 6.19&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47059275"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://asahilinux.org/2026/02/progress-report-6-19/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>马克·扎克伯格对国会撒了谎。我们不能相信他的证词</title>
+      <link>https://dispatch.techoversight.org/top-report-mark-zuckerberg-lied-to-congress-we-cant-trust-his-testimony/</link>
+      <description>&lt;p&gt;“前所未见的文件证明扎克伯格对国会撒了谎。 – 资料来源：美国参议院司法委员会关于“大型科技和在线儿童性剥削危机”的听证会（2024 年）尽管扎克伯格在 2024 年美国参议院司法委员会听证会上提出了主张，但 Meta 在青少年安全措施方面的听证会后投资（i. – 资料来源：美国参议院司法委员会关于“大型科技和在线儿童性剥削危机”的听证会性剥削危机》（2024）正在进行的诉讼中的专家调查结果直接挑战了这一说法。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Mark Zuckerberg Lied to Congress. We Can't Trust His Testimony&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47060486"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://dispatch.techoversight.org/top-report-mark-zuckerberg-lied-to-congress-we-cant-trust-his-testimony/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;burner420042:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我昨晚在看《银翼杀手》，特别是福特使用语音命令放大照片的部分。&lt;p&gt;显示屏上方有一个琥珀色的水平条，它与显示屏上的活动同步变化，我的第一个想法是，“他们终于找到了 Mac Touch Bar 的用途！”&lt;p&gt;Touch Bar 在 Linux 中有很多用途，我迫不及待地想让它发挥作用。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Noaidi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我只是来赞扬七位英雄的灵魂，他们正在从事这个精彩的项目，一旦电池寿命满足我的需求，我的 M1 就等着安装了。我想问一下，为什么在加密货币和科技资金四处流动的情况下，朝日集团却没有一支拥有 50 名资金充足的员工队伍呢？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;signa11:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;报价（至少对于某些人来说）&lt;p&gt;&lt;pre&gt;&lt;code&gt; 事实上，M3 支持的当前状态与我们发布第一个 Arch 时 M1 支持的情况差不多
-    基于Linux ARM 的测试版；键盘、触摸板、WiFi、NVMe 和 USB3 都可以正常工作，尽管有一些本地 
-    需要对 m1n1 和 Asahi 内核进行补丁（尚未进入 Pull 请求）。所以说 
-    一定意味着我们很快就会准备好发布，对吧？&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lame-robot-hoax:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;伙计，我知道这可能会更长一些，但我真的很期待有一天我可以在我的 M4 Air 上运行 Asahi。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ForHackernews:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是令人难以置信的令人印象深刻，同时也非常令人悲伤。六年后，我们为 M1 提供了一个几乎正确的内核。&lt;p&gt;Apple 即将推出 M5。未来似乎将是一个封闭系统和定制芯片的世界，任何自由软件都远远落后。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Retr0id:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;120Hz太棒了！这是我个人认为 M1 Pro MBP 缺少的最后一个功能。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gr4vityWall:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很棒的工作。相信几年后二手M1&amp;#x2F;M2机器将会像曾经的Thinkpad T420一样，成为年轻开发者的个人趣味笔记本电脑的青睐。当然，出于不同的原因。&lt;p&gt;M4 和 M5 GPU 与 M3 相比也有很大变化吗？我希望 M3 可用后，让这些工作不再需要太多工作。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sohrob:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我经常想知道苹果公司的员工是否关注朝日团队。他们是对 Asahi 项目的逆向工程奇迹感到敬畏，还是对此漠不关心？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://asahilinux.org/2026/02/progress-report-6-19/</guid>
-      <pubDate>Wed, 18 Feb 2026 10:00:11 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47059275</comments>
+&lt;p&gt;&lt;strong&gt;Top 30 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ddlsmurf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不是美国法律体系专家，但如果我没记错的话，这不仅仅是谎言和欺骗，这叫作伪证，是犯罪不是吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tiffanyh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只是需要记住一点......&lt;p&gt;在国会作证的压力非常大。即使是准备最充分的首席执行官也会在这种压力下陷入僵局、失去思路或说错话。&lt;p&gt;媒体经常寻找“陷阱”台词，却没有意识到在这种情况下很容易做出无意的错误陈述。&lt;p&gt;注意：我并不是在权衡扎克伯格的陈述是否准确……我只是指出经常被忽视的压力动态。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;slibhb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有限的证据表明社交媒体是一个问题。整件事是一种普通的道德恐慌。尤其令人不安的是针对马克·扎克伯格的持续尖酸刻薄。我钦佩马克忽略了整个事情，成为一个有家室的男人，并继续开发产品。&lt;p&gt;如果人们想对某件事感到愤怒，那应该是在线赌博。我们在那里进行了体验。当赌博受到严格限制时，危害是显而易见的，世界会变得更好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hosteur:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我无法在移动设备上阅读表格。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dabedee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我通常是第一个抨击 Facebook 及其主要骗子的人，但前几段将确凿的证据与薄弱的延伸混合在一起（正如其他人在这里提到的）。坏事确实已经够坏了。&lt;p&gt;Meta 自己的研究发现 Instagram 使三分之一的青少年女孩的身体形象恶化了 [1]。当结果看起来很糟糕时，他们终止了一项停用研究，一名员工将其与烟草公司埋葬研究进行了比较[2]。他们对涉及性诱惑的账户制定了 17 次打击政策 [3]。他们制定了明确针对 13 岁以下儿童的成长战略，将青少年分为“儿童（6-10 岁）、青少年（10-13 岁）和青少年 13 岁以上”。 [4].&lt;p&gt;[1] 2019 年 Instagram 幻灯片演示，“青少年心理健康深度探究”&lt;p&gt;[2] Meta 内部停用研究（来自未密封文档的未具名员工引述）&lt;p&gt;[3] Instagram 前安全与福祉负责人 Vaishnavi Jayakumar 的证词&lt;p&gt;[4] Meta 内部证据图 45&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ddtaylor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;取缔 Meta 的危险和恶劣行为的唯一方法是通过立法，例如《儿童在线安全法案》&lt;p&gt;政府失败是问题所在，唯一的解决方案是更多的政府。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nickdothutton:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;2020 年，超过 79% 的儿童性交易发生在 Meta 的平台上。&lt;p&gt;这听起来非常高，鉴于该活动假定为地下性质，我很想知道他们如何理解总数字（100%）。单击源链接。该声明是错误的。无论如何都要让这些公司承担责任，但哗众取宠是无济于事的。全面披露：我从未有过 Facebook 帐户，也不在乎 Meta 是否存在。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为向国会（又称公众）撒谎的超级富豪需要被强制入狱一段时间。即使只有一周。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;charles_f:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我建议的一件事是不要将实际的谎言与受到判断的陈述交织在一起。例如，前两行是关于保护工具的投资水平，并且由于这些工具无效而被声称为谎言。双方可以同时为真。你可以投入很多，却没有任何结果。&lt;p&gt;当我读到这篇文章时，我以为他们抓住了救命稻草。然后继续阅读，发现了真实的、无可辩驳的谎言，尽管如此，我心里还是有点警惕，这些可能只是解释而不是事实。或“歪曲事实” ;或者将它们呈现为我们无法信任的东西，考虑到所有其他谎言。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;phendrenad2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当安布里奇凯阿利蒂卡内丑闻爆发时，我学会了不要相信乌克伯格扎伊，你必须跳过心理体操才能找到一个他没有直接参与策划的假设。每次我发布有关此内容的帖子时，我都会再次被提醒，并且机器人会大规模否决我的评论，因为它说“ambridgecay alyticaancay” （没有猪拉丁语）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LightBug1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“我们是亿万富翁首席执行官，婊子”&lt;p&gt;*婊子
+名词
+1.
+- 常用来指代政府和人民。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zer00eyz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;写信（交付速度更快）、书籍印刷、广播、电视、音乐发行（唱片和磁带）--&lt;p&gt;这是一个新项目的清单，这些项目将导致社会的衰落。我相信你们中的一些人已经足够大了，还记得 80 年代的撒旦恐慌和 90 年代的 PMRC。&lt;p&gt;这些结果都没有像人们想象的那样。太阳底下没有什么新鲜事，面对被操纵的数据和“感觉”，这种反应看起来非常双曲线。而非“事实”。&lt;p&gt;这并不是说 Facebook 或社交媒体没有任何问题，但这一点一直受到关注，尽管它远未名列前茅。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;josefritzishere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;即使您没有宣誓，向国会撒谎实际上也是犯罪。我知道它看起来不像，因为它很少被执行，但它是重罪。   &lt;a href="https:&amp;#x2F;&amp;#x2F;www.findlaw.com&amp;#x2F;legalblogs&amp;#x2F;刑事辩护&amp;#x2F;在国会说谎的处罚是什么&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.findlaw.com&amp;#x2F;legalblogs&amp;#x2F;刑事辩护&amp;#x2F;什么是...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;navigate8310:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为问题的核心是心理健康对于普通人来说不够明显，无法轻松地看到和识别大量的频谱，例如简单的咳嗽和感冒流感的外观和感觉；正是推动这些公司估值达到数十亿美元的原因。&lt;p&gt;在社会改变对精神健康的看法之前，任何监管或政府监督都无法解决这个问题，我们将继续让下一代 Meta 或 TikTok 做好进一步扼杀人类的准备。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jacobsimon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这里根本不是想为 Meta 辩护，但这份报告也在撒谎。&lt;p&gt;例如，它说“2020 年&lt;i&gt;所有&lt;/i&gt;儿童性交易的 79% 发生在 Meta 的平台上。”但它引用的消息来源实际上称 79% 的&lt;i&gt;在线社交媒体&lt;/i&gt;案件发生在 Facebook 和 Instagram 上。所以这个统计数据可能只是 Meta 在社交媒体市场份额的反映。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jaybyrd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我记得当我还是个孩子的时候，我曾经认为如果你违反了法律，你就会进监狱。我怀念小时候......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blitzar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;把他关起来。&lt;p&gt;然后他就可以支付赦免贿赂了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;trolleski:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;扎克撒谎了？不可能的！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bronco21016:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我没有太关注这个问题，但在阅读了文章中的一些陈述后，我不禁同意 Tech Oversight 的结论。这只是轶事，但最近，当我无意识地滚动卷轴时，（是的，已经够糟糕了）我遇到了一个毫无疑问是露骨色情的卷轴（在美国，我认为政策因地区而异）。我报告了该帐户和卷轴，因为点击该帐户后有更多材料。这不仅仅是一个“创造者”，而是一个“创造者”。用暗示性内容宣传他们的成人网站。该帐户有多个卷轴，其中预览图像只是黑色，但 2-3 秒后会出现成人图像。&lt;p&gt;Facebook 关闭了我的报告，“无需采取进一步行动”。称内容不违反他们的政策。我确信他们有海量的报告需要处理，而且我并不羡慕负责这项工作的人们。然而，在我看来，很明显他们没有有效地实现其公开声明的调整平台内容的目标。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;giancarlostoro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;还记得他收购IG的时候，条件之一就是他不能合并IG &amp;#x2F; FB 但它肯定是在幕后合并的。 IG 不知何故知道你的 FB，反之亦然。另外，当一个离线时，两个都会离线。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blululu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;iOS safari 上的 CSS 完全崩溃了。第一列是固定的且很小，因此它使该行非常高。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;raincole:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; &gt;取缔 Meta 危险且恶劣行为的唯一方法是通过立法，例如《儿童在线安全法案》&lt;p&gt;真的吗？&lt;p&gt;即使我们忽略审查和监视国家的所有影响，向国会撒谎&lt;i&gt;已经&lt;/i&gt;是犯罪行为。它&lt;i&gt;已经&lt;/i&gt;受到监管。如果他能逃脱惩罚，为什么另一次行为会有所不同呢？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aurornis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;取缔 Meta 危险且恶劣行为的唯一方法是通过立法，例如《儿童在线安全法案》&lt;p&gt;就在上周，由于 Discord 将要求年龄验证才能加入成人主题服务器并绕过内容过滤器，因此引起了轩然大波。 &lt;i&gt;这就是人们被诱骗将这些限制和法规引入他们的服务的方式：相信有必要伤害像马克·扎克伯格这样的敌人，同时“为孩子着想”。&lt;p&gt;这些要求广泛监管和监督的呼吁在《黑客新闻》上获得如此高的支持，这仍然令人悲伤。&lt;p&gt;每次你看到有人呼吁对儿童上网进行监管时，请记住，区分儿童和成人的唯一方法是强迫&lt;i&gt;每个人&lt;/i&gt;都通过年龄验证。在您因为不使用社交媒体而开始认为自己不在乎之前，请记住您是在社交媒体网站上阅读本文。法律不会关心你是否认为黑客新闻有资格成为社交媒体。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FrustratedMonky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;还记得什么时候说谎会给你带来麻烦吗？&lt;p&gt;说谎已经变得司空见惯，以至于现实变得不可知。只要听任何一天的政权新闻发布会就可以了。只需随机选择一天并聆听即可。&lt;p&gt;超现实就在这里。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wongarsu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;通读这份清单，我真的不会认为其中大多数都是谎言。虽然有一些谎言，但大部分都是“措辞非常精确的陈述”。以及可以说是恶意做出的陈述，但从技术上讲并不虚假。对于其中一些人，我什至不确定他们的“证据”如何成立。专栏应该反驳引用的声明。&lt;p&gt;在我看来，如此宽泛确实损害了信息。他们应该专注于实际的谎言，而不是用“2024 年扎克伯格告诉国会，默认情况下 16 岁以下青少年的账户是私人的”来淡化这份名单，但他们直到 2024 年才推出该功能，七年后才知道不这样做的危害。他撒谎了！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mystraline:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们“知道”为什么，因为亿万富翁。&lt;p&gt;但在国会撒谎就是伪证。他应该以藐视法庭罪入狱，然后再以伪证罪亲自受审。这是一项重罪，最高可判处 5 年徒刑。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bilekas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;取缔 Meta 危险且恶劣行为的唯一方法是通过立法，例如《儿童在线安全法案》，该法案将迫使他们采取行动，并迫使他们保护儿童和青少年。&lt;p&gt;他撒谎并不奇怪，这就是企业所做的，股东的底线才是最重要的。但答案不是“儿童在线安全法”&lt;p&gt;立法肯定会有所帮助，法规更是如此，但该安全法并不是答案，即年龄验证。因此，重写它，做好你的工作，利用你可以利用的研究人员和专家提出一项没有特殊利益集团或游说者支持的法案提案，然后我们就可以看到一些改进。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NickC25:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不能追究他的责任。  他太富有了，拥有太多的国会议员。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pimlottc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;注意：在移动端 Safari 上使用阅读器模式，否则表格难以辨认&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;HelloUsername:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;相关？&lt;p&gt;“陪审团称，Meta、谷歌“设计成瘾”；在具有里程碑意义的美国审判中” &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46959832"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46959832&lt;/a&gt; 2026 年 2 月 10 日 385 条评论&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://dispatch.techoversight.org/top-report-mark-zuckerberg-lied-to-congress-we-cant-trust-his-testimony/</guid>
+      <pubDate>Wed, 18 Feb 2026 13:00:11 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47060486</comments>
     </item>
     <item>
-      <title>Zep AI（构建上下文图，YC W24）正在招聘工程师</title>
-      <link>https://www.ycombinator.com/companies/zep-ai/jobs</link>
-      <description>&lt;p&gt;com/Zep AAI 工作人员工程师美国旧金山/远程（美国）$175K - $250K1。 50%6 年以上立即申请 ›首席前沿部署工程师美国旧金山/远程（美国）$175K - $250K0。 50%6 年以上立即申请 ›开发者关系负责人美国旧金山/偏远地区（美国）$175K - $250K0。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Zep AI (Building the Context Graph, YC W24) Is Hiring Engineers&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47060117"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/zep-ai/jobs'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.ycombinator.com/companies/zep-ai/jobs</guid>
-      <pubDate>Wed, 18 Feb 2026 12:00:50 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47060117</comments>
+      <title>通过示例显示 HN: CEL</title>
+      <link>https://celbyexample.com/</link>
+      <description>&lt;p&gt;com") // 结果: true (bool) Collections# 用户是否具有特定角色。 email_verified - user.roles, "is_adult": user.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: CEL by Example&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47061029"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://celbyexample.com/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hamandcheese:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;CEL有办法导入其他文件吗？即它可以作为像 jsonnet 这样的通用配置语言吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;d4mi3n:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我见过但没用过 CEL。有竞争技术经验的人有什么强烈的意见吗？我使用过 OPA，知道 GCP 和 Kyverno 使用的 CEL，但除此之外还没有看到任何足以脱离 OPA 生态系统的引人注目的东西。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://celbyexample.com/</guid>
+      <pubDate>Wed, 18 Feb 2026 14:05:39 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47061029</comments>
     </item>
     <item>
-      <title>适用于人类和人工智能的最快前端工具</title>
-      <link>https://cpojer.net/posts/fastest-frontend-tooling</link>
-      <description>&lt;p&gt;迁移提示：将此项目从 Prettier 迁移到 Oxfmt。删除所有 ESLint 配置文件。 Oxlint 还支持类型感知的 lint 规则。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Fastest Front End Tooling for Humans and AI&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47060052"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://cpojer.net/posts/fastest-frontend-tooling'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://cpojer.net/posts/fastest-frontend-tooling</guid>
-      <pubDate>Wed, 18 Feb 2026 11:51:01 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47060052</comments>
+      <title>Show HN：VectorNest 响应式基于 Web 的 SVG 编辑器</title>
+      <link>https://ekrsulov.github.io/vectornest/</link>
+      <guid isPermaLink="true">https://ekrsulov.github.io/vectornest/</guid>
+      <pubDate>Wed, 18 Feb 2026 15:31:57 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47062096</comments>
     </item>
     <item>
-      <title>微软称漏洞导致 Copilot 总结机密电子邮件</title>
-      <link>https://www.bleepingcomputer.com/news/microsoft/microsoft-says-bug-causes-copilot-to-summarize-confidential-emails/</link>
-      <description>&lt;p&gt;Copilot Chat（Microsoft 365 Copilot Chat 的缩写）是该公司基于 AI 的内容感知聊天工具，可让用户与 AI 代理进行交互。微软于 2025 年 9 月开始向 Word、Excel、PowerPoint、Outlook 和 OneNote 推出 Copilot Chat，供付费 Microsoft 365 商业客户使用。“Microsoft 365 Copilot 聊天错误地处理了应用了机密标签的用户电子邮件，”微软在确认此问题时表示。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Microsoft says bug causes Copilot to summarize confidential emails&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47060202"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bleepingcomputer.com/news/microsoft/microsoft-says-bug-causes-copilot-to-summarize-confidential-emails/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>显示 HN：Axiom – 数学原生操作系统，其中 x² 是有效语法（从头开始构建）</title>
+      <link>https://fawazishola.ca/axiom/</link>
+      <description>&lt;p&gt;Neurosymbolic AI 原生操作系统 Axiom 是世界上第一个从内核到集成人工智能与形式数学的操作系统。纯粹的法学硕士产生幻觉；纯代码是严格的。零延迟：推理引擎被编译为三环服务，与系统进程一起持续运行。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Axiom – A math-native OS where x² is valid syntax (built from scratch)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47061315"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://fawazishola.ca/axiom/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tablets:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;初始发行日期 2026 年 2 月 3 日&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.bleepingcomputer.com/news/microsoft/microsoft-says-bug-causes-copilot-to-summarize-confidential-emails/</guid>
-      <pubDate>Wed, 18 Feb 2026 12:16:12 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47060202</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fawazishola:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你好，HN，我是一名 19 岁的航空航天学生。我花了过去 13 个月的时间从头开始构建一个自定义 Linux 发行版，因为我想看看我们是否可以将操作系统内核视为数学引擎而不是确定性管理员。&lt;p&gt;堆栈：
+Flux（The Shell）：自定义数学原生 shell，其中 x² 和 Σ 是有效语法。它将数学符号直接解析为优化的 SIMD 指令（无 Python 包装器）。&lt;p&gt;Tenet（调度程序）：用 Tenet（我的博弈论自定义 DSL）编写。调度程序是编译为本机代码的纳什均衡求解器。在我的基准测试 (Ryzen 7 5800HS) 中，它将最大抖动从 290μs (Linux Mint) 减少到 6μs（降低了 48 倍）。&lt;p&gt;Alexitha（安全层）：我用 Neurosymbolic 代理替换了 systemd，该代理在执行前正式验证内核模块。&lt;p&gt;当前状态：Pre-alpha 研究内核。当我最终确定安全架构（并可能将部分安全层商业化）时，源代码目前已关闭，但我已经在登陆页面上发布了详细介绍数学和编译器架构的白皮书。&lt;p&gt;我来这里是为了回答有关 LFS 构建过程、调度程序数学或 Flux 如何处理符号解析的问题！&lt;p&gt;宣言：如果您想了解我为什么用硬盘来构建这个（以及“Apollo”）的完整故事11 Paradox”），我在这里写了关于哲学的文章：&lt;a href="https:&amp;#x2F;&amp;#x2F;fawazishola.medium.com&amp;#x2F;为什么-i-nuked-my-hard-drive-to-build-a-neurosymbolic-ai-native-os-afbfecf43301?source=friends_link&amp;amp;sk=7ec4a32cfbaa7d6bd9419522c64ef342" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;fawazishola.medium.com&amp;#x2F;why-i-nuked-my-hard-drive-to-...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://fawazishola.ca/axiom/</guid>
+      <pubDate>Wed, 18 Feb 2026 14:30:52 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47061315</comments>
+    </item>
+    <item>
+      <title>斯蒂芬·科尔伯特 (Stephen Colbert) 荡秋千</title>
+      <link>https://www.nytimes.com/2026/02/18/arts/television/stephen-colbert-cbs-statement.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/02/18/arts/television/stephen-colbert-cbs-statement.html</guid>
+      <pubDate>Wed, 18 Feb 2026 15:41:59 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47062179</comments>
     </item>
   </channel>
 </rss>
