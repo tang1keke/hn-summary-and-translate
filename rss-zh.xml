@@ -6,119 +6,273 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 18 Feb 2026 15:59:36 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Feb 2026 19:09:24 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Windows ARM 仿真下 AVX2 比 SSE2-4.x 慢</title>
-      <link>https://blogs.remobjects.com/2026/02/17/nerdsniped-windows-arm-emulation-performance/</link>
-      <description>&lt;p&gt;x 在 Windows 11 ARM 上模拟优化代码。它通过仿真来实现这一点。 Windows 10 支持模拟 32 位 Intel，到 2021 年 Windows 11 引入了模拟 64 位应用程序。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; AVX2 is slower than SSE2-4.x under Windows ARM emulation&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47061062"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://blogs.remobjects.com/2026/02/17/nerdsniped-windows-arm-emulation-performance/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Tailscale Peer Relays 现已全面上市</title>
+      <link>https://tailscale.com/blog/peer-relays-ga</link>
+      <description>&lt;p&gt;今天，我们很高兴地宣布 Tailscale Peer Relays 现已全面上市 (GA)。对等中继现在与静态端点集成以解决这些限制。下一步随着Tailscale对等中继的普遍可用性，它成为在现实网络中扩展Tailscale的核心构建块。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Tailscale Peer Relays is now generally available&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47063005"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://tailscale.com/blog/peer-relays-ga'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Mickell:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;...这对于进行大量数字处理的应用程序尤其重要，例如视频编码、科学计算，甚至复杂的文档处理。&lt;p&gt;说到文档处理，如果您正在处理 PDF 并且需要跨 x86 和 ARM 机器的可靠性能，您应该查看 PdfTeq。我们提供原生 ARM 兼容库，因此您不必为了兼容性而牺牲速度。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;targettracker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47061062"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47061062&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TheJoeMan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我尝试搜索“SSE2-4.x”这是 DDG 和 Google 中的最高结果，所以我最初很困惑这篇文章指的是哪个指令集。但是，这似乎是 SSE2 到 SSE4 的简写？也许重新表述文章标题可能会有所帮助。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;crest:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不会对 SSE4 成为最快感到惊讶，因为它最容易映射到 NEON，因为两者都使用 128 位寄存器并提供相当相似的功能集。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kbolino:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我怀疑这是因为矢量单位不够宽，看起来确实如此。 AVX2 是 256 位，ARM NEON 只有 128 位。&lt;p&gt;那么最大的问题是，为什么 ARM 桌面（和服务器？）内核在更广泛的 SIMD 支持方面远远落后？ Intel&amp;AMD 并不是昨天就为 x86 推出了这些扩展；而是昨天才推出的。 AVX2 已经超过 15 年了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aissen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;结论中有剧透：&lt;p&gt;&gt;是的，将应用程序构建为 ARM 绝对是关键，而不是依赖 Windows ARM 模拟。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iberator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;无论如何，AVX2 都应该被禁止。 
-只有昂贵的 CPU 才有它，这会破坏最低游戏要求并使硬件过时。&lt;p&gt;世界上大多数人每月的生活费用为 300 美元&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://blogs.remobjects.com/2026/02/17/nerdsniped-windows-arm-emulation-performance/</guid>
-      <pubDate>Wed, 18 Feb 2026 14:08:11 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47061062</comments>
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adithyassekhar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望我能读到这篇文章，但在移动设备上发现这个[0]家伙没有关闭按钮，当您在模式之外单击时不会关闭。&lt;p&gt;0: &lt;a href="https:&amp;#x2F;&amp;#x2F;i.postimg.cc&amp;#x2F;14h3Q9mD&amp;#x2F;Screenshot-20260219-001356-Chrome-Canary.jpg" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;i.postimg.cc&amp;#x2F;14h3Q9mD&amp;#x2F;Screenshot-20260219-001356-Chr...&lt;/a&gt;&lt;p&gt;编辑：Nvm，找到了。放置它的地方很奇怪。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drnick1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;提出像 Tailscale 这样的解决方案比在计算机上打开 VPN 端口更安全有点不诚实。后一种解决方案在可用时应始终是首选，因为您不希望您的基础设施依赖于“免费”解决方案。明天可能不再免费的服务。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kittbuilds:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对等中继方法很有趣，因为它本质上将尾网中的每个节点都变成其他节点的潜在中继。对于依赖 Tailscale 的集中式 DERP 服务器来说，这是一个有意义的架构转变。&lt;p&gt;对于任何担心“地毯拉力”的人来说，这是一个有意义的架构转变。另一条评论中提出了担忧——这实际上让我更加乐观，而不是更少。通过将中继基础设施分布到边缘，Tailscale 降低了每个用户的运营成本，同时提高了性能。这种飞轮可以让慷慨的免费套餐变得更加可持续，而不是更少。每个新节点都可能对整个网络有帮助。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yuvadam:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Tailscale simp 这里，自测试版推出以来一直在使用此功能，简直不敢相信它之前不存在。&lt;p&gt;这解决了我的 CGNAT 设备必须跳过 STUN 服务器的所有剩余问题（QoS 值得注意），现在它们只是通过我自己的节点进行路由。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;himata4113:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我从来没有让自己使用 tailscale，因为它有一个登录屏幕，即使作为私有 NAT 的概念，我也绝对鄙视它。我知道 Headscale 存在，但它似乎甚至不支持我真正想要的功能。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aborsy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对等中继本质上是一种以前可用的自定义中继，只不过现在它是一个命令？&lt;p&gt;因此它运行 STUN 服务器或类似服务器，用于发现和中继。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jahrichie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你们用这个来做 OpenClaw 还是什么？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;itissid:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的 homenas 设置了 Node Proxy Manager 容器，将请求转发到不同的 docker 机器：端口，例如我有一些本地托管的 TTS&amp;#x2F;STT&amp;#x2F;LLM 服务。要增加面向互联网的节点的带宽，您会使用此解决方案还是其他一些更简单的解决方案？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;behnamoh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Tailscale如何赚钱？我真的很喜欢他们的服务，但我担心将来会出现问题。有人尝试过替代的 FOSS 解决方案吗？&lt;p&gt;此外，有时我似乎在 Tailscale 上受到速率限制。有人有过这样的经历吗？这通常发生在多个 SSH 连接同时发生的情况下。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tda:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;前几天我刚刚设置了这个，当从远程 natted 站点连接到我家的一台电脑时，我的 ping 从 16 毫秒下降到 10 毫秒，我的带宽增加了两倍。与 Moonlight&amp;#x2F;Sunshine 一起，我现在可以在 MacBook 上的 Linux 桌面上以 50mbps&amp;#x2F;10ms 的流媒体速度玩 Windows 游戏。到目前为止一切顺利！&lt;p&gt;没有转发任何端口，我只是将路由器设置为对等节点。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://tailscale.com/blog/peer-relays-ga</guid>
+      <pubDate>Wed, 18 Feb 2026 16:46:12 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47063005</comments>
     </item>
     <item>
-      <title>马克·扎克伯格对国会撒了谎。我们不能相信他的证词</title>
-      <link>https://dispatch.techoversight.org/top-report-mark-zuckerberg-lied-to-congress-we-cant-trust-his-testimony/</link>
-      <description>&lt;p&gt;“前所未见的文件证明扎克伯格对国会撒了谎。 – 资料来源：美国参议院司法委员会关于“大型科技和在线儿童性剥削危机”的听证会（2024 年）尽管扎克伯格在 2024 年美国参议院司法委员会听证会上提出了主张，但 Meta 在青少年安全措施方面的听证会后投资（i. – 资料来源：美国参议院司法委员会关于“大型科技和在线儿童性剥削危机”的听证会性剥削危机》（2024）正在进行的诉讼中的专家调查结果直接挑战了这一说法。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Mark Zuckerberg Lied to Congress. We Can't Trust His Testimony&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47060486"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://dispatch.techoversight.org/top-report-mark-zuckerberg-lied-to-congress-we-cant-trust-his-testimony/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>服装符号语言：服装结构的正式描述语言</title>
+      <link>https://github.com/khalildh/garment-notation</link>
+      <description>&lt;p&gt;GNL — 服装符号语言 服装构造的正式描述语言。袖孔}，锯齿形）&gt;&gt; S（正面。Korosteleva 数据集转换器 该存储库包含一个转换器，可将服装模板从 Korosteleva NeurIPS 2021 数据集（2D 面板几何形状为 JSON）转换为 GNL。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Garment Notation Language: Formal descriptive language for clothing construction&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47062329"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/khalildh/garment-notation'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 30 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ddlsmurf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不是美国法律体系专家，但如果我没记错的话，这不仅仅是谎言和欺骗，这叫作伪证，是犯罪不是吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tiffanyh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只是需要记住一点......&lt;p&gt;在国会作证的压力非常大。即使是准备最充分的首席执行官也会在这种压力下陷入僵局、失去思路或说错话。&lt;p&gt;媒体经常寻找“陷阱”台词，却没有意识到在这种情况下很容易做出无意的错误陈述。&lt;p&gt;注意：我并不是在权衡扎克伯格的陈述是否准确……我只是指出经常被忽视的压力动态。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;slibhb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有限的证据表明社交媒体是一个问题。整件事是一种普通的道德恐慌。尤其令人不安的是针对马克·扎克伯格的持续尖酸刻薄。我钦佩马克忽略了整个事情，成为一个有家室的男人，并继续开发产品。&lt;p&gt;如果人们想对某件事感到愤怒，那应该是在线赌博。我们在那里进行了体验。当赌博受到严格限制时，危害是显而易见的，世界会变得更好。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hosteur:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我无法在移动设备上阅读表格。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dabedee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我通常是第一个抨击 Facebook 及其主要骗子的人，但前几段将确凿的证据与薄弱的延伸混合在一起（正如其他人在这里提到的）。坏事确实已经够坏了。&lt;p&gt;Meta 自己的研究发现 Instagram 使三分之一的青少年女孩的身体形象恶化了 [1]。当结果看起来很糟糕时，他们终止了一项停用研究，一名员工将其与烟草公司埋葬研究进行了比较[2]。他们对涉及性诱惑的账户制定了 17 次打击政策 [3]。他们制定了明确针对 13 岁以下儿童的成长战略，将青少年分为“儿童（6-10 岁）、青少年（10-13 岁）和青少年 13 岁以上”。 [4].&lt;p&gt;[1] 2019 年 Instagram 幻灯片演示，“青少年心理健康深度探究”&lt;p&gt;[2] Meta 内部停用研究（来自未密封文档的未具名员工引述）&lt;p&gt;[3] Instagram 前安全与福祉负责人 Vaishnavi Jayakumar 的证词&lt;p&gt;[4] Meta 内部证据图 45&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ddtaylor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;取缔 Meta 的危险和恶劣行为的唯一方法是通过立法，例如《儿童在线安全法案》&lt;p&gt;政府失败是问题所在，唯一的解决方案是更多的政府。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nickdothutton:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;2020 年，超过 79% 的儿童性交易发生在 Meta 的平台上。&lt;p&gt;这听起来非常高，鉴于该活动假定为地下性质，我很想知道他们如何理解总数字（100%）。单击源链接。该声明是错误的。无论如何都要让这些公司承担责任，但哗众取宠是无济于事的。全面披露：我从未有过 Facebook 帐户，也不在乎 Meta 是否存在。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为向国会（又称公众）撒谎的超级富豪需要被强制入狱一段时间。即使只有一周。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;charles_f:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我建议的一件事是不要将实际的谎言与受到判断的陈述交织在一起。例如，前两行是关于保护工具的投资水平，并且由于这些工具无效而被声称为谎言。双方可以同时为真。你可以投入很多，却没有任何结果。&lt;p&gt;当我读到这篇文章时，我以为他们抓住了救命稻草。然后继续阅读，发现了真实的、无可辩驳的谎言，尽管如此，我心里还是有点警惕，这些可能只是解释而不是事实。或“歪曲事实” ;或者将它们呈现为我们无法信任的东西，考虑到所有其他谎言。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;phendrenad2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当安布里奇凯阿利蒂卡内丑闻爆发时，我学会了不要相信乌克伯格扎伊，你必须跳过心理体操才能找到一个他没有直接参与策划的假设。每次我发布有关此内容的帖子时，我都会再次被提醒，并且机器人会大规模否决我的评论，因为它说“ambridgecay alyticaancay” （没有猪拉丁语）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LightBug1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“我们是亿万富翁首席执行官，婊子”&lt;p&gt;*婊子
-名词
-1.
-- 常用来指代政府和人民。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zer00eyz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;写信（交付速度更快）、书籍印刷、广播、电视、音乐发行（唱片和磁带）--&lt;p&gt;这是一个新项目的清单，这些项目将导致社会的衰落。我相信你们中的一些人已经足够大了，还记得 80 年代的撒旦恐慌和 90 年代的 PMRC。&lt;p&gt;这些结果都没有像人们想象的那样。太阳底下没有什么新鲜事，面对被操纵的数据和“感觉”，这种反应看起来非常双曲线。而非“事实”。&lt;p&gt;这并不是说 Facebook 或社交媒体没有任何问题，但这一点一直受到关注，尽管它远未名列前茅。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;josefritzishere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;即使您没有宣誓，向国会撒谎实际上也是犯罪。我知道它看起来不像，因为它很少被执行，但它是重罪。   &lt;a href="https:&amp;#x2F;&amp;#x2F;www.findlaw.com&amp;#x2F;legalblogs&amp;#x2F;刑事辩护&amp;#x2F;在国会说谎的处罚是什么&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.findlaw.com&amp;#x2F;legalblogs&amp;#x2F;刑事辩护&amp;#x2F;什么是...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;navigate8310:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为问题的核心是心理健康对于普通人来说不够明显，无法轻松地看到和识别大量的频谱，例如简单的咳嗽和感冒流感的外观和感觉；正是推动这些公司估值达到数十亿美元的原因。&lt;p&gt;在社会改变对精神健康的看法之前，任何监管或政府监督都无法解决这个问题，我们将继续让下一代 Meta 或 TikTok 做好进一步扼杀人类的准备。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jacobsimon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这里根本不是想为 Meta 辩护，但这份报告也在撒谎。&lt;p&gt;例如，它说“2020 年&lt;i&gt;所有&lt;/i&gt;儿童性交易的 79% 发生在 Meta 的平台上。”但它引用的消息来源实际上称 79% 的&lt;i&gt;在线社交媒体&lt;/i&gt;案件发生在 Facebook 和 Instagram 上。所以这个统计数据可能只是 Meta 在社交媒体市场份额的反映。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jaybyrd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我记得当我还是个孩子的时候，我曾经认为如果你违反了法律，你就会进监狱。我怀念小时候......&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blitzar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;把他关起来。&lt;p&gt;然后他就可以支付赦免贿赂了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;trolleski:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;扎克撒谎了？不可能的！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bronco21016:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我没有太关注这个问题，但在阅读了文章中的一些陈述后，我不禁同意 Tech Oversight 的结论。这只是轶事，但最近，当我无意识地滚动卷轴时，（是的，已经够糟糕了）我遇到了一个毫无疑问是露骨色情的卷轴（在美国，我认为政策因地区而异）。我报告了该帐户和卷轴，因为点击该帐户后有更多材料。这不仅仅是一个“创造者”，而是一个“创造者”。用暗示性内容宣传他们的成人网站。该帐户有多个卷轴，其中预览图像只是黑色，但 2-3 秒后会出现成人图像。&lt;p&gt;Facebook 关闭了我的报告，“无需采取进一步行动”。称内容不违反他们的政策。我确信他们有海量的报告需要处理，而且我并不羡慕负责这项工作的人们。然而，在我看来，很明显他们没有有效地实现其公开声明的调整平台内容的目标。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;giancarlostoro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;还记得他收购IG的时候，条件之一就是他不能合并IG &amp;#x2F; FB 但它肯定是在幕后合并的。 IG 不知何故知道你的 FB，反之亦然。另外，当一个离线时，两个都会离线。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blululu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;iOS safari 上的 CSS 完全崩溃了。第一列是固定的且很小，因此它使该行非常高。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;raincole:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; &gt;取缔 Meta 危险且恶劣行为的唯一方法是通过立法，例如《儿童在线安全法案》&lt;p&gt;真的吗？&lt;p&gt;即使我们忽略审查和监视国家的所有影响，向国会撒谎&lt;i&gt;已经&lt;/i&gt;是犯罪行为。它&lt;i&gt;已经&lt;/i&gt;受到监管。如果他能逃脱惩罚，为什么另一次行为会有所不同呢？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aurornis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;取缔 Meta 危险且恶劣行为的唯一方法是通过立法，例如《儿童在线安全法案》&lt;p&gt;就在上周，由于 Discord 将要求年龄验证才能加入成人主题服务器并绕过内容过滤器，因此引起了轩然大波。 &lt;i&gt;这就是人们被诱骗将这些限制和法规引入他们的服务的方式：相信有必要伤害像马克·扎克伯格这样的敌人，同时“为孩子着想”。&lt;p&gt;这些要求广泛监管和监督的呼吁在《黑客新闻》上获得如此高的支持，这仍然令人悲伤。&lt;p&gt;每次你看到有人呼吁对儿童上网进行监管时，请记住，区分儿童和成人的唯一方法是强迫&lt;i&gt;每个人&lt;/i&gt;都通过年龄验证。在您因为不使用社交媒体而开始认为自己不在乎之前，请记住您是在社交媒体网站上阅读本文。法律不会关心你是否认为黑客新闻有资格成为社交媒体。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FrustratedMonky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;还记得什么时候说谎会给你带来麻烦吗？&lt;p&gt;说谎已经变得司空见惯，以至于现实变得不可知。只要听任何一天的政权新闻发布会就可以了。只需随机选择一天并聆听即可。&lt;p&gt;超现实就在这里。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wongarsu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;通读这份清单，我真的不会认为其中大多数都是谎言。虽然有一些谎言，但大部分都是“措辞非常精确的陈述”。以及可以说是恶意做出的陈述，但从技术上讲并不虚假。对于其中一些人，我什至不确定他们的“证据”如何成立。专栏应该反驳引用的声明。&lt;p&gt;在我看来，如此宽泛确实损害了信息。他们应该专注于实际的谎言，而不是用“2024 年扎克伯格告诉国会，默认情况下 16 岁以下青少年的账户是私人的”来淡化这份名单，但他们直到 2024 年才推出该功能，七年后才知道不这样做的危害。他撒谎了！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mystraline:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们“知道”为什么，因为亿万富翁。&lt;p&gt;但在国会撒谎就是伪证。他应该以藐视法庭罪入狱，然后再以伪证罪亲自受审。这是一项重罪，最高可判处 5 年徒刑。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bilekas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;取缔 Meta 危险且恶劣行为的唯一方法是通过立法，例如《儿童在线安全法案》，该法案将迫使他们采取行动，并迫使他们保护儿童和青少年。&lt;p&gt;他撒谎并不奇怪，这就是企业所做的，股东的底线才是最重要的。但答案不是“儿童在线安全法”&lt;p&gt;立法肯定会有所帮助，法规更是如此，但该安全法并不是答案，即年龄验证。因此，重写它，做好你的工作，利用你可以利用的研究人员和专家提出一项没有特殊利益集团或游说者支持的法案提案，然后我们就可以看到一些改进。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NickC25:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不能追究他的责任。  他太富有了，拥有太多的国会议员。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pimlottc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;注意：在移动端 Safari 上使用阅读器模式，否则表格难以辨认&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;HelloUsername:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;相关？&lt;p&gt;“陪审团称，Meta、谷歌“设计成瘾”；在具有里程碑意义的美国审判中” &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46959832"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46959832&lt;/a&gt; 2026 年 2 月 10 日 385 条评论&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://dispatch.techoversight.org/top-report-mark-zuckerberg-lied-to-congress-we-cant-trust-his-testimony/</guid>
-      <pubDate>Wed, 18 Feb 2026 13:00:11 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47060486</comments>
+&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CrzyLngPwd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是机器人对服装的看法。&lt;p&gt;还有人类。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaway198846:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有没有一种服务可以让我上传文件并制作一份文件并将其运送给我？不一定是这种格拉姆语言，而是其他语言。我有一件旧的、不寻常的衣服，我想要成人尺码。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arcsincosin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在示例中，源、图表、片段图和 3D 测试之间存在差异。作为一个在专业和个人上对语法和纺织品感兴趣的人，我很欣赏这个项目的幻想和氛围，但它似乎并不是任何连贯的功能演示。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OrionNox:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们已经有了出色的设计师和 Clo3d...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SJMG:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Safari 和 Chrome 上的 3D 视图被破坏。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vatsachak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“舞蹈有拉巴诺记谱。音乐有五线谱。建筑具有平面、剖面和立面约定。 GNL 为服装带来了同样的严谨性——一种生成描述语言，有效的表达足以毫无歧义地构建服装。”&lt;p&gt;AI lmao&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;infogulch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;GNL 支持褶皱、褶皱和省道吗？这些缝制特征有助于使平布贴合身体曲线。这些术语似乎没有在存储库中明确提及，但也许可以使用现有的符号来实现。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Pleat" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Pleat&lt;/a&gt; | &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Tuck_(缝纫)" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Tuck_(缝纫)&lt;/a&gt; | &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Dart_(缝纫)" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Dart_(缝纫)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AreShoesFeet000:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我应该读维特根斯坦。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Doohickey-d:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于另一种“服装图案作为代码”来说，方法，请参阅 &lt;a href="https:&amp;#x2F;&amp;#x2F;freesewing.dev&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;freesewing.dev&amp;#x2F;&lt;/a&gt; - 还具有更完整的 UI 和编辑器。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;astrashe2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是否有服装行业的工作人员参与了 GNL 的创作，还是完全由技术人员创作？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Johnny_Bonk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谢谢你这个&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Guestmodinfo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们可以表达动画中穿的窗帘和衣服吗？因为这样对cos玩家会有帮助&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/khalildh/garment-notation</guid>
+      <pubDate>Wed, 18 Feb 2026 15:53:15 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47062329</comments>
     </item>
     <item>
-      <title>通过示例显示 HN: CEL</title>
-      <link>https://celbyexample.com/</link>
-      <description>&lt;p&gt;com") // 结果: true (bool) Collections# 用户是否具有特定角色。 email_verified - user.roles, "is_adult": user.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: CEL by Example&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47061029"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://celbyexample.com/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Pocketbase 失去了 FLOSS 基金的资助</title>
+      <link>https://github.com/pocketbase/pocketbase/discussions/7287</link>
+      <description>&lt;p&gt;请重新加载此页面。请重新加载此页面。有了这笔资金，这意味着从 12 月开始，我将能够单独开发 PocketBase 至少一年，总体目标是在明年年底之前最终发布稳定的 PocketBase。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Pocketbase lost its funding from FLOSS fund&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47062561"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/pocketbase/pocketbase/discussions/7287'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hamandcheese:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;CEL有办法导入其他文件吗？即它可以作为像 jsonnet 这样的通用配置语言吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;d4mi3n:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我见过但没用过 CEL。有竞争技术经验的人有什么强烈的意见吗？我使用过 OPA，知道 GCP 和 Kyverno 使用的 CEL，但除此之外还没有看到任何足以脱离 OPA 生态系统的引人注目的东西。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://celbyexample.com/</guid>
-      <pubDate>Wed, 18 Feb 2026 14:05:39 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47061029</comments>
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bogzz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;太可惜了。我非常喜欢 Pocketbase，当我在一个业余项目中尝试 HTMX 时就使用了它。&lt;p&gt;我感觉到 ganigeorgiev 感受到了开源工作的吃力不讨好，我真希望他能过得轻松一些。&lt;p&gt;话虽如此，但遗憾的是，基于印度的 FLOSS 基金足以成为避免它的理由。就像，我知道印度人目前在诈骗领域的比例可能过高，但由于涉及“与印度政府共享数据”而避免提供资金在我看来这是非常愚蠢的。还侮辱印度。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;samalander:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Pocketbase 是一个非常流畅且易于使用的数据库 - 非常适合刚开始 Web 开发的人。我很失望它无法获得应有的持续资金。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;embedding-shape:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;早在 2024 年，HN 上对 FLOSS 基金的描述是这样的：&lt;p&gt;&gt;要申请，该项目必须在其公共代码存储库中或在其域上的众所周知的 uri 位置放置一个funding.json [...] 这已经比其他一些组织让您填写的 20 页文档简单 10 倍。 - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=41857032"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=41857032&lt;/a&gt;&lt;p&gt;但是 Pocketbase 问题的作者写道：&lt;p&gt;&gt;由于一些不可预见的监管限制，他们与 GitHub 的合作似乎没有成功。相反，他们想从印度发出电汇，需要几份跨司法管辖区的文件，但我觉得这样做不太舒服&lt;p&gt;遗憾的是，他们似乎无法想出如何保持简单，我想知道将其设在不同的国家是否会有所作为。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abtinf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果 Pocketbase 支持 Postgres，我可以在很多项目中使用它。&lt;p&gt;我明白了为什么它不支持 Postgres 以及为什么它只支持 SQLite 背后的哲学原因。&lt;p&gt;只是在企业环境中，我可以轻松交付完整的生产就绪应用程序，因为有一个团队可以处理所有 Postgres对我来说复制&amp;#x2F;故障转移&amp;#x2F;哈哈&amp;#x2F;博士备份&amp;#x2F;恢复。带有 pg 的 Pocketbase 可以非常简单地部署到 pod，完成 95% 的生产准备工作。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;murillians:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为这个提交应该重新命名。从帖子来看，作者似乎自愿拒绝了 FLOSS 基金的资助，因为他们“不信任他们，也不相信印度政府能够处理和存储个人敏感数据”。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;giancarlostoro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;太可惜了，很想知道“FLOSS fun”是否有效是否合法。看起来一团糟。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/pocketbase/pocketbase/discussions/7287</guid>
+      <pubDate>Wed, 18 Feb 2026 16:11:00 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47062561</comments>
     </item>
     <item>
-      <title>Show HN：VectorNest 响应式基于 Web 的 SVG 编辑器</title>
-      <link>https://ekrsulov.github.io/vectornest/</link>
-      <guid isPermaLink="true">https://ekrsulov.github.io/vectornest/</guid>
-      <pubDate>Wed, 18 Feb 2026 15:31:57 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47062096</comments>
+      <title>宇宙学上唯一的ID</title>
+      <link>https://jasonfantl.com/posts/Universal-Unique-IDs/</link>
+      <description>&lt;p&gt;每个制造的组件都需要一个 ID 以便可追溯。这就是我们可以将 ID 冲突的概率降到多小。每个设备、每个微芯片、每个微芯片的每个组件、每一次击键、每个时钟的每一次滴答、每一颗星星和每一个原子，一切都可以使用这个协议来识别，而且我们仍然不会期望发生碰撞。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Cosmologically Unique IDs&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47064490"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://jasonfantl.com/posts/Universal-Unique-IDs/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://jasonfantl.com/posts/Universal-Unique-IDs/</guid>
+      <pubDate>Wed, 18 Feb 2026 18:37:22 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47064490</comments>
     </item>
     <item>
-      <title>显示 HN：Axiom – 数学原生操作系统，其中 x² 是有效语法（从头开始构建）</title>
-      <link>https://fawazishola.ca/axiom/</link>
-      <description>&lt;p&gt;Neurosymbolic AI 原生操作系统 Axiom 是世界上第一个从内核到集成人工智能与形式数学的操作系统。纯粹的法学硕士产生幻觉；纯代码是严格的。零延迟：推理引擎被编译为三环服务，与系统进程一起持续运行。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Axiom – A math-native OS where x² is valid syntax (built from scratch)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47061315"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://fawazishola.ca/axiom/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>零日 CSS：CVE-2026-2441 存在于野外</title>
+      <link>https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop_13.html</link>
+      <description>&lt;p&gt;此更新包括 1 个安全修复。请参阅 Chrome 安全页面了解更多信息。斯里尼瓦斯·西斯塔谷歌浏览器。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Zero-day CSS: CVE-2026-2441 exists in the wild&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47062748"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop_13.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ripbozo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很想看看 PoC 代码是什么样的，当然是在补丁发布几周之后。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;astrobe_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这不影响很多基于Chromium的浏览器吧？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bitbasher:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也许 Chromium 也应该用 Rust 重写他们的渲染引擎；p&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fulafel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这不是一个错误的社论标题吗 - “Shaheen Fazim 于 2026 年 2 月 11 日报道”所以更像是7天。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;himata4113:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;事实上，这些仍然出现对我来说非常疯狂。难道我们没有一堆工具应该通过应用内存安全语言纯粹从其设计中免费获得的相同验证检查来创建内存安全的二进制文件吗？&lt;p&gt;我知道CSS多年来在变量、作用域和采用less&amp;#x2F;sass&amp;#x2F;coffee中的东西方面已经发生了很大变化，但是人们使用no-script是因为javascript有风险，但如果css也有同样的风险呢？没有风格？&lt;p&gt;老实说，我对完整的报告感到非常兴奋，因为它要么愚蠢至极，要么是一个多步骤的攻击链。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MallocVoidstar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Devtools 在此版本中似乎部分损坏，如果我在相当动态的 Web 应用程序上打开 devtools，Chrome 将在一两分钟内崩溃&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;baq:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道这是否是在法学硕士的帮助下发现的，如果是，是在哪一个帮助下发现的，这是一次性的还是标志着一个新时代的开始（我认为是的）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mpeg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Google Chromium CSS 包含释放后使用漏洞，远程攻击者可以利用该漏洞通过精心设计的 HTML 页面来利用堆损坏。此漏洞可能会影响多个使用 Chromium 的 Web 浏览器，包括但不限于 Google Chrome、Microsoft Edge 和 Opera。”&lt;p&gt;这非常糟糕！我想知道研究人员得到了什么样的赏金。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tripplyons:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“CSS 中释放后使用”这是一个有趣的描述。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop_13.html</guid>
+      <pubDate>Wed, 18 Feb 2026 16:28:19 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47062748</comments>
+    </item>
+    <item>
+      <title>Activeloop (YC S18) 正在招聘后端工程师 (Go)</title>
+      <link>https://app.dover.com/apply/Activeloop/72d0b3a7-7e86-46a8-9aff-b430ffe0b97f</link>
+      <guid isPermaLink="true">https://app.dover.com/apply/Activeloop/72d0b3a7-7e86-46a8-9aff-b430ffe0b97f</guid>
+      <pubDate>Wed, 18 Feb 2026 18:09:27 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47064105</comments>
+    </item>
+    <item>
+      <title>DNS-Persist-01：基于 DNS 的挑战验证的新模型</title>
+      <link>https://letsencrypt.org/2026/02/18/dns-persist-01.html</link>
+      <description>&lt;p&gt;您的 ACME 客户端在 _acme-challenge 处发布包含该令牌的 TXT 记录。 com，记录将保存在 _validation-persist 中。 com：_validation-persist。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; DNS-Persist-01: A New Model for DNS-Based Challenge Validation&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47064047"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://letsencrypt.org/2026/02/18/dns-persist-01.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://letsencrypt.org/2026/02/18/dns-persist-01.html</guid>
+      <pubDate>Wed, 18 Feb 2026 18:04:13 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47064047</comments>
+    </item>
+    <item>
+      <title>亚利桑那州法案要求所有应用程序进行年龄验证</title>
+      <link>https://reclaimthenet.org/arizona-bill-would-require-id-checks-to-use-a-weather-app</link>
+      <description>&lt;p&gt;闯入你口袋的数十亿美元业务泄露的仪表板屏幕截图揭示了商业间谍软件如何通过零点击漏洞进行静默安装，以读取加密消息并激活麦克风。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Arizona Bill Requires Age Verification for All Apps&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47063724"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://reclaimthenet.org/arizona-bill-would-require-id-checks-to-use-a-weather-app'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gigel82:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很明显，这些“年龄验证”是有依据的。法案只会不断出现，试图单独反对每个法案都是一场失败的战斗。&lt;p&gt;相反（或者更确切地说，除了激进主义之外），我们应该从另一端着手，要求引入可验证的独立权威和零知识协议，该协议将提供加密安全的布尔位（isOver18），而无法从任何一端关联 ID 或该位用于哪个网站。&lt;p&gt;替代方案是由所有人收集 ID这些可怕的隐私恶魔并出卖了&amp;#x2F;泄露了&amp;#x2F;全面货币化，这听起来像是一场反乌托邦的噩梦。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tabs_or_spaces:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，现在哪些年龄验证服务很流行？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;t1234s:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个诱饵和开关，将用于为所有人提供互联网 ID。我相信这就是 M$ 试图强迫人们使用微软帐户登录本地计算机的原因。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Glyptodon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;需要记住的一件事是，每个会议在 AZ 都有疯狂的提案。 (Not clear how many of them get anywhere.)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nephihaha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Who do they think they are?英国？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;advisedwang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在我的理想世界中，法律将：&lt;p&gt;1。要求设备制造商允许设备所有者（包括未成年人设备的父母）为设备设置策略，包括允许应用和网站的阻止列表，以及允许内容类别的阻止列表。&lt;p&gt;2.要求浏览器遵守设备的网站允许阻止列表策略&lt;p&gt;3。要求浏览器为内容类别的允许/阻止列表设置特定标头&lt;p&gt;4.要求网站尊重该标题。&lt;p&gt;不需要年龄验证，不需要政府决定什么是不允许的，并且免费允许赌徒阻止向他们显示赌博内容等。&lt;p&gt;---&lt;p&gt;这项 AZ 法律令人沮丧，因为通过针对应用商店，它实际上朝着我的愿景迈出了一步......但在某种程度上，年龄验证的危害成倍增加，而不是减少它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PoisedProto:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这状态真他妈臭。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;herf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你在不同类别之间移动的日子可以确定你的生日，如果你在个人层面上这样做的话，这会是很多位（基本上这是超级cookie的一个很好的开始）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mothballed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您不需要任何类型的 ID 来隐藏在亚利桑那州携带枪支，但您需要一个应用程序吗？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://reclaimthenet.org/arizona-bill-would-require-id-checks-to-use-a-weather-app</guid>
+      <pubDate>Wed, 18 Feb 2026 17:38:46 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47063724</comments>
+    </item>
+    <item>
+      <title>西多会数字</title>
+      <link>https://www.omniglot.com/language/numbers/cistercian-numbers.htm</link>
+      <description>&lt;p&gt;有关西多会数的信息 https://en。注意：本网站上的所有链接均指向亚马逊。因此，通过单击这些链接，您可以帮助支持该网站。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Cistercian Numbers&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47062883"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.omniglot.com/language/numbers/cistercian-numbers.htm'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fawazishola:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你好，HN，我是一名 19 岁的航空航天学生。我花了过去 13 个月的时间从头开始构建一个自定义 Linux 发行版，因为我想看看我们是否可以将操作系统内核视为数学引擎而不是确定性管理员。&lt;p&gt;堆栈：
-Flux（The Shell）：自定义数学原生 shell，其中 x² 和 Σ 是有效语法。它将数学符号直接解析为优化的 SIMD 指令（无 Python 包装器）。&lt;p&gt;Tenet（调度程序）：用 Tenet（我的博弈论自定义 DSL）编写。调度程序是编译为本机代码的纳什均衡求解器。在我的基准测试 (Ryzen 7 5800HS) 中，它将最大抖动从 290μs (Linux Mint) 减少到 6μs（降低了 48 倍）。&lt;p&gt;Alexitha（安全层）：我用 Neurosymbolic 代理替换了 systemd，该代理在执行前正式验证内核模块。&lt;p&gt;当前状态：Pre-alpha 研究内核。当我最终确定安全架构（并可能将部分安全层商业化）时，源代码目前已关闭，但我已经在登陆页面上发布了详细介绍数学和编译器架构的白皮书。&lt;p&gt;我来这里是为了回答有关 LFS 构建过程、调度程序数学或 Flux 如何处理符号解析的问题！&lt;p&gt;宣言：如果您想了解我为什么用硬盘来构建这个（以及“Apollo”）的完整故事11 Paradox”），我在这里写了关于哲学的文章：&lt;a href="https:&amp;#x2F;&amp;#x2F;fawazishola.medium.com&amp;#x2F;为什么-i-nuked-my-hard-drive-to-build-a-neurosymbolic-ai-native-os-afbfecf43301?source=friends_link&amp;amp;sk=7ec4a32cfbaa7d6bd9419522c64ef342" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;fawazishola.medium.com&amp;#x2F;why-i-nuked-my-hard-drive-to-...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://fawazishola.ca/axiom/</guid>
-      <pubDate>Wed, 18 Feb 2026 14:30:52 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47061315</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tangus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最讨厌的一点是，只有一个来源用三角形描绘数字 5（所有其他来源都将其显示为单独的线段，如数字 6，但更短），这就是每篇文章或图书馆绘制它的方式。这都是因为写一本关于它们的书的人首先看到了该来源，所以他基于它的数据。&lt;p&gt;这里是关于这些数字的一个小摘要，其中包含许多示例：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.unicode.org&amp;#x2F;L2&amp;#x2F;L2020&amp;#x2F;20290-cistercian-digits.pdf" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.unicode.org&amp;#x2F;L2&amp;#x2F;L2020&amp;#x2F;20290-cistercian-digits.pdf&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.omniglot.com/language/numbers/cistercian-numbers.htm</guid>
+      <pubDate>Wed, 18 Feb 2026 16:37:57 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47062883</comments>
     </item>
     <item>
-      <title>斯蒂芬·科尔伯特 (Stephen Colbert) 荡秋千</title>
-      <link>https://www.nytimes.com/2026/02/18/arts/television/stephen-colbert-cbs-statement.html</link>
-      <guid isPermaLink="true">https://www.nytimes.com/2026/02/18/arts/television/stephen-colbert-cbs-statement.html</guid>
-      <pubDate>Wed, 18 Feb 2026 15:41:59 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47062179</comments>
+      <title>Show HN：经过正式验证的 FPGA 看门狗，用于无人隧道中的 AM 广播</title>
+      <link>https://github.com/Park07/amradio</link>
+      <description>&lt;p&gt;从不假设硬件状态。状态机（state_machine.enable → 所有输出均已清除 7 计数器有界 计数器永远不会超过 TIMEOUT_CYCLES 8 强制复位有效 Force_reset 清除所有状态 9 阈值计数器 &lt; WARNING_CYCLES → 警告=0 之前发出警告低电平 安全 3 仅当计数器 ≥ TIMEOUT_CYCLES 时才触发早期触发 4 超时保证触发 活跃性：超时始终触发触发器 5 触发器触发前警告=1 → 警告=1 5b 相反。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Formally verified FPGA watchdog for AM broadcast in unmanned tunnels&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47061742"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/Park07/amradio'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;davepage:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;通过对每个通道的音频进行相移，可以在更高的通道数下获得更好的质量，这样每个通道的调制峰值就不会完全对齐（就像现在一样）。即使反转一半通道的音频也会有帮助。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jetrink:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;起初我以为“无人隧道”是指“无人隧道”。描述只是避免广播监管机构审查的一种方式，但它看起来确实是为了在地下使用而设计的，作为紧急警报系统的一部分。这让我想到了“漏电馈线”，这是一种用于矿井和隧道的广播天线。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Leaky_feeder" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Leaky_feeder&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/Park07/amradio</guid>
+      <pubDate>Wed, 18 Feb 2026 15:06:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47061742</comments>
+    </item>
+    <item>
+      <title>剩下的唯一护城河就是金钱？</title>
+      <link>https://elliotbonneville.com/the-only-moat-left-is-money/</link>
+      <description>&lt;p&gt;我上周推出了一些东西。这个数字很小，但感觉却很重要。如果这听起来像您想要存在的东西，请加入候补名单。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The only moat left is money?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47062521"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://elliotbonneville.com/the-only-moat-left-is-money/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 30 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nickelpro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;一个付费的、仅限邀请的社交网络，其中每个人都是经过验证的人，并且没有算法&lt;p&gt;这似乎是一个非常小众的产品，一开始只有少数人感兴趣。建造它导致普通观众兴趣不大，这并不是一个有趣或令人惊讶的结果。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arbuge:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在人工智能出现之前，建筑已经不是主要障碍。分销无论过去还是现在都比以往任何时候都更加重要。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amelius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;应该对资本征收更多的税，因为他们正在用它来对付我们。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;japoneris:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我部分同意。
+是的，入门级别低。
+它帮助我在生活中赢得时间去做其他事情。
+但我不相信会有更多的人加入。我认识的大多数非编码人员都不会编码。
+我遇到的最差的学生都不会开始做副业。
+所以，是的，人们想要运送更多的东西，但对于其余的，仍然有地方。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arrsingh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这并不新鲜。当我在 2012 年创办第一家公司时，它是自力更生的，让任何人关注我正在建设的东西几乎是不可能的。我必须在咖啡店里亲自与人们见面，并进行推销才能获得第一批用户。&lt;p&gt;然后，当我从 a16z 筹集资金并在银行里存有一些钱时，事情并没有变得更容易。钱没有帮助（也许还不够）。无论免费还是付费，广告支出、内容营销或付费渠道都很难。&lt;p&gt;也许我只是不擅长。&lt;p&gt;那是在人工智能出现之前，你必须手动将各个部分敲到位。&lt;p&gt;现在有了人工智能，是的，有很多人运送很多东西，但人类可以分辨出某人何时在某件事上投入了精力，而且牵引时间仍然像以前一样长。&lt;p&gt;有人应该做一些分析“病毒式”传播的事物数量或者今天与 5 &amp;#x2F; 相比迅速获得采用10 年前。&lt;p&gt;获得关注一直很困难。那只是生意。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sampo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;人类眼球的价值正在上升&lt;p&gt;向“眼球”做广告也一定有一定的价值。人工智能的？即使他们（还）没有做出那么多关于支出的决定，他们确实会影响人类的决定。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pmontra:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;创造曾经是稀缺的东西，即过滤器。现在注意的是。我们大多数人都站在了交易的错误一边。&lt;p&gt;“错误一边”意味着那边的人必须更加努力才能联系到我们。交易条款没有改变，因为创作者没有开始付钱给我们来引起我们的注意。嗯，这种情况有时会发生：免费试用、免费套餐、优惠券等，但这是一种行之有效的做法。该帖子包含“做更多营销”的参考。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;charlie0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Kith 看起来很有趣，但主要问题是可验证性。如何将不良演员拒之门外？它如何验证受邀者的帖子不是人工智能生成的？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;egonschiele:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;编码代理很好，但是一旦复杂性很高，它们就不够好。最终，您的代理将无法对您的代码库进行更改，而不会在每次更改时引入错误。根据我的经验，代理还不太擅长抽象，并且没有任何测试可以完全掩盖这个问题。所以，是的，这个行业正在以惊人的速度发生巨大的变化，但我不认为金钱是唯一剩下的护城河。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;moomin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一段时间以来确实如此。在没有继承财富的地方，护城河变得越来越浅。这并不完全令人震惊，大量的人类历史就是这样组织的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;e10jc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我真的很喜欢这篇文章，特别是关于引力阈值的部分。我对推出产品的总体想法是，将会有更多的产品和更少的受众，类似于流媒体如何打破线性电缆。作为一名软件企业家，这意味着要更广泛而不是更深层次。利用你的人际交往能力与具有吸引力的人建立关系。如果你没有这些关系，那就去现实中建立它们。就背景而言，我创立了一个社交网络并将其出售给 AOL，帮助筹集了超过 1 亿美元的资金，并且还进行了另外 2 次收购。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brandav:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;利用与影响者的联系似乎是现在打破噪音的最有效方法。讽刺的是，在营销和产品开发变得如此容易之前，情况就是这样。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hoppp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇文章也是他的付费社交网络的广告，它确实吸引了我，因为这个消息与我作为一个构建者产生了共鸣，但我不想注册社交网络&lt;p&gt;所以注意力在那里，但没有转化。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;advisedwang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果有人有需要解决的问题：&lt;p&gt;* 注意力的广度不会阻止他们认识解决方案&lt;p&gt;* 众多的解决方案不会阻止他们采用一个&lt;p&gt;* 开发人员在构建该解决方案上付出的努力不会让他们望而却步。&lt;p&gt;真正的答案当然是，有很多正在构建的东西无法解决人们遇到的问题，要么是因为它针对的是一个并不真正存在的问题，要么是因为它未能解决它所针对的问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;derf_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我曾经学到的判断一家企业是否拥有护城河的方法是：“如果有人给你 10 亿美元，你能否与该企业竞争并有合理的获胜机会。”如果答案是肯定的，那么企业就没有护城河。现在数字更大了，但我认为原则仍然是一样的：金钱不能成为护城河。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;runako:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这当然是一个可以得出的结论。&lt;p&gt;另一个结论可能是，随着构建软件变得越来越容易（就像 90 年代和 2010 年代的情况一样），为新进入者创造了取代糟糕的旧软件的机会。&lt;p&gt;那些每个人都讨厌的昂贵的企业应用程序？绝对希望用一半的钱换成更好的东西。&lt;p&gt;我们仍然生活在一个大多数人拥有比 80 年代大多数大学更多的计算能力的世界，但自动化的唯一标志是无用的推送通知。&lt;p&gt;一块玻璃后面的数据无法轻易转移到第二块玻璃后面的数据。诸如“当天将我的 Instacart 购物车移至 Costco.com”之类的简单内容是一个手工事务。这是普遍问题的一个子集，即更多的应用程序导致了更多的数据孤岛，这些数据孤岛通常是孤立的，没有 API，没有自动化。&lt;p&gt;人们愿意花钱解决无数的问题，但金钱一次会追逐同样的 4-5 个问题。只需处理其他一项即可。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;charcircuit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;金钱不是护城河，因为你可以用金钱购买金钱（债务）或出售股权。&lt;p&gt;&amp;gt;我上周推出的东西叫做 Kith - 一个付费的、仅限邀请的社交网络&lt;p&gt;社交网络已经是一个现有的竞争空间，让它既付费又仅限邀请显然会损害它的采用。如果这无法吸引用户，即使它是免费的，即使这是预法学硕士，我也不会感到惊讶。一个全新的社交网络并不能真正解决用户的问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thornewolf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于“Show HN 死了吗？”的评论不，但它正在被淹没”，文章作者社论&lt;p&gt;“人工智能工具的最大好处之一是它们允许任何人构建东西......即使他们没有想法或知识。&lt;p&gt;人工智能工具的最大缺点之一是它们允许任何人构建东西......即使他们没有想法或知识。”&lt;p&gt;进入&lt;p&gt;“人工智能工具的最大好处之一是它们允许任何人构建东西，甚至如果他们没有想法或知识。最大的缺点之一是它们允许任何人构建东西。”&lt;p&gt;这消除了评论的修辞效果（并且也破坏了引用的承诺）。我建议 OP 准确地代表源。&lt;p&gt;____&lt;p&gt;我现在看到这篇文章包含多个 GPT-isms&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zhyder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“人眼球的价值” &amp;#x2F;注意力现在是、将来也永远是有限的资源。但我希望经济运行的方式不是为了金钱而出卖注意力，这使金钱成为护城河，并为顾客获得低价商品设定了底线。这真的是经济所能做到的最好的事情吗？或者是否有可能有一个公平的基于法学硕士的搜索引擎，将客户需求描述与提供商规定的产品描述相匹配（同时权衡客户评论等）？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;speak_plainly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在《共和国一》中，苏格拉底将医学艺术与赚钱艺术区分开来。一是关于工作；另一个是关于获得报酬。从历史上看，工艺是主要目标，金钱是外在的副作用。&lt;p&gt;今天，赚钱的一方已经上演了敌意收购。&lt;p&gt;注意力难题只是更深层次金融化的一个症状。价值数十亿美元的公司已将利润转变为数据驱动的科学——分析性地转动每个脚本、产品和交互的螺丝，以优化提取。这是对制造艺术的破坏。&lt;p&gt;真正的问题是你无法与一个不尊重艺术的实体竞争。当一个平台用度量逻辑取代作品的完整性时，独立创作者就不再是弱势群体——他们在功能上被排除在外。你可以成为任何艺术领域的佼佼者，但在一个优先考虑纯粹提取而不是卓越的系统中，你的手艺实际上不复存在。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;autoconfig:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;当创作很困难时，技能就是区分因素：你必须真正做好才能做出值得展示的东西。现在障碍接近于零，所以你需要达到。达到目标需要花费金钱或花费数年时间。可能两者都是。&lt;p&gt;自从计算机发明以来，创作变得越来越容易，这并不是一个新现象。这自然会突破寻找付费客户所需交付内容的界限。换句话说，创作依然是“难”的。如果你想成功。&lt;p&gt;&gt;我上周推出了一些东西。 14 人注册 - 没有广告，只有几个帖子。 14 个真实的人，但不必这么做。这个数字很小，但感觉却很重要。然后我坐下来思考如何才能发展它，我无法花很长时间看这个数学。&lt;p&gt;这适用于 90% 以上推出过产品的创始人。困难的部分来自于当你经历这种情况时继续前进（你会一遍又一遍地经历）。听起来作者期望突然困难的事情应该变得容易。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abeppu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为另一条护城河是访问非公开数据。如果您可以根据尝试克隆的 vivicoder 无法获得的特定数据进行训练、测量或做出决策，那么您就可以保持领先地位。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cyrusradfar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很欣赏这篇文章引发的对话。&lt;p&gt;尽管如此，举个反例——OpenClaw 的创建者只是被比国家拥有更多资本的人招募的。&lt;p&gt;如果他们能够“重新生产”有了他们的资本，他们会更愿意这样。&lt;p&gt;无论他拥有什么，仍然是一条护城河。这是什么，是有争议的。&lt;p&gt;它是品牌吗？这是他的创造力吗？是信任和真实性吗？愿景？拥有回购协议或该社区的领导权？&lt;p&gt;所有这些都被那些试图挖走他的人视为护城河（或风险）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lp4v4n:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有一个古老的词来形容它：饱和。&lt;p&gt;老实说，这并不是什么新鲜事。自从你在淋浴时有了一个革命性的想法，然后用谷歌搜索（或者现在使用法学硕士）并发现已经有八个不同的应用程序可以实现你的想法，已经很久了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dzink:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;井正在干涸。你可以用来炒作的钱越来越少，有钱的小玩家也越来越少。随着裁员随处可见，有更多有雄心、有时间的人，但能承担大笔费用或重大风险的人却越来越少。&lt;p&gt;当前推动代理商的炒作机器正在销售代理商进行自动化营销的能力。然而，大公司更知道不会制造巨大的安全漏洞，而小公司要么技术不熟练，要么会对好模型的巨额每次使用费用犹豫不决，或者会因为低质量的廉价模型输出而被淹没。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thoughtfulchris:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;获胜的人大多都有领先优势。或者他们有钱。通常两者都是。&lt;p&gt;感觉是这样不是吗？但是，作为一个反点，OpenClaw。 :)&lt;p&gt;顺便说一句，我上周深入研究了人工智能护城河，并写了一篇关于它的博客文章。根据我的研究，人际关系很可能是最坚固的护城河——但拥有大量资金储备肯定会有所帮助。 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.cjroth.com&amp;#x2F;博客&amp;#x2F;2026-02-11-moats-in-the-age-of-ai" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.cjroth.com&amp;#x2F;博客&amp;#x2F;2026-02-11-moats-in-the-age-of-a...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ossa-ma:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;人类思维的价值正在下降。&lt;p&gt;错误。创造力、创新、直觉、品味——所有人类固有的思想形式，都在上升。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tquinn35:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不同意。我认为创造力仍然是一条有效的护城河。你仍然需要打造好的产品。这就像一家餐馆，任何有钱的人都可以开一家餐馆，但你需要有创造力才能开一家好的餐馆。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;clay_the_ripper:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;做困难的事情一直以来都是困难的，而且永远都是困难的。&lt;p&gt;构建静态 HTML 页面在 90 年代是“困难”的。这需要实际的技能。&lt;p&gt;任何变得更容易的事情都会自动开辟更多困难的途径来解决。&lt;p&gt;没有人愿意为简单的事情付钱给你。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;showerst:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这次人工智能热潮只是之前技术热潮（Web 1.0、风险投资、加密货币等）的超级版本。有大量的人只是想加入并建造一些东西，但他们推出的产品不能满足任何人的需求或解决任何人的问题。&lt;p&gt;护城河不是用来在营销上超越其他 750 人正在建造的想法的钱，而是拥有一个解决其他人无法很好解决的问题的好主意。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://elliotbonneville.com/the-only-moat-left-is-money/</guid>
+      <pubDate>Wed, 18 Feb 2026 16:07:59 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47062521</comments>
+    </item>
+    <item>
+      <title>李飞飞的世界实验室从 A16Z 和 Nvidia 筹集了 10 亿美元，以推进其世界模型</title>
+      <link>https://www.bloomberg.com/news/articles/2026-02-18/ai-pioneer-fei-fei-li-s-startup-world-labs-raises-1-billion</link>
+      <guid isPermaLink="true">https://www.bloomberg.com/news/articles/2026-02-18/ai-pioneer-fei-fei-li-s-startup-world-labs-raises-1-billion</guid>
+      <pubDate>Wed, 18 Feb 2026 17:18:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47063451</comments>
+    </item>
+    <item>
+      <title>沃伦·巴菲特抛售 $1.7B 亚马逊股票</title>
+      <link>https://finbold.com/warren-buffett-dumps-1-7-billion-of-amazon-stock/</link>
+      <description>&lt;p&gt;沃伦·巴菲特的伯克希尔·哈撒韦公司（纽约证券交易所股票代码：BRK）。沃伦·巴菲特投资组合在 2025 年第四季度持股最多。资料来源：13-F Info 沃伦·巴菲特为何抛售亚马逊。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Warren Buffett dumps $1.7B of Amazon stock&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47063950"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://finbold.com/warren-buffett-dumps-1-7-billion-of-amazon-stock/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rvz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;伯克希尔，而不是巴菲特。&lt;p&gt;此外，为什么现在有人想在亚马逊工作？&lt;p&gt;大型科技公司中利润率最低的最不适合加入的公司之一。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46809296"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46809296&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;harmmonica:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它就在帖子里，但只是为了节省人们的点击次数，该位置就缩水了 77%，所以这是一个重大举措。我看到他们也削减了苹果的排名，但为了比较，看起来只减少了 4.3% 的排名。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;legitster:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;亚马逊的核心业务没有意义。尽管规模如此之大，但他们的零售业务几乎不赚钱。他们能赢得的市场份额所剩无几，他们能做的最好的事情就是削减开支。&lt;p&gt;AWS 一直是他们真正的赚钱机器，但人工智能和服务器群的爆炸式增长也对他们产生了三方面的不利影响：基础设施方面的竞争更加激烈，基础设施的运行成本不断上升，如果你正在寻找一个增长型行业，那么现在还有其他更具吸引力的股票可以存放你的资金。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;philip1209:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;沃伦·巴菲特退休了。这是伯克希尔·哈撒韦公司。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;semiquaver:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;伯克希尔哈撒韦公司有我最喜欢的任何大公司的网站（或者网页，因为他们的风格）：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.berkshirehathaway.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.berkshirehathaway.com&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paxys:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;伯克希尔·哈撒韦公司，而不是沃伦·巴菲特。&lt;p&gt;大量股票抛售总是成为头条新闻，但它们并不会自动发出看跌或其他任何信号。毕竟，如果您从未实现收益，那么投资还有什么意义呢？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Insanity:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;亚马逊目前的股票波动相当大，大多数追逐人工智能潮流的公司也是如此。我不认为亚马逊注定要失败，但追逐人工智能的公司正经历一段艰难的时期。&lt;p&gt;此外，持续的裁员潮将导致 AWS 更频繁、更长时间的停机，而零售产品质量的下降将损害亚马逊的这一方面。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SilverElfin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;亚马逊成为特朗普政府的好朋友之后，通过与 Flock 合作、资助梅拉尼娅纪录片基本上贿赂了特朗普等等——为什么美国人或其他人应该信任他们或给他们生意呢？亚马逊不再那么有趣了。您可以直接从值得信赖的制造商或其他网站购买大多数东西。我根本没有看到他们在做任何创新。他们做的最后一件有用的事情是什么——AWS？这在十多年前就不再是新鲜事了。&lt;p&gt;问题是，拥有无限资本的巨型企业会犯这些巨大的错误，并在一次又一次的失败中跌跌撞撞，而普通企业家却会因为最微小的问题而被压垮。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;divbzero:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;添加强制性免责声明：伯克希尔哈撒韦公司出售 1.7B 美元的亚马逊股票可能是 Ted Weschler 或 Todd Combs 的决定，他们仍然值得注意，但不一定是沃伦巴菲特本人。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;giancarlostoro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;下次亚马逊价格走低时，我确信他会以折扣价全部买回来。凭借他所有的财富，他可以通过缓慢而耐心的大量现金投资而逃脱惩罚。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mamma_mia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;妈妈咪呀！他不是下台了吗？他回到比赛真是太酷了&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xvxvx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也许亚马逊的新鲜感已经消失了。我偶尔会从他们的英国网站上购买商品，那里充满了让我在结账时注册 Prime 的技巧。非常糟糕的工作流程和设计决策，降低了体验。我现在看到了与美国版本类似的变化：“通过成为 Prime 会员，您通过这次购买节省了 15 美元的运费”和“去年您购买了 211 件可持续产品”。&lt;p&gt;伙计们，别那么绝望了。专注于具有竞争力的价格和快速交货的优质产品。别变成 TJ Maxx。&lt;p&gt;我的 Echo 原本只是用来通过语音激活灯光和开关，但它现在已经变成了一台广告机，糟糕的一天就被扔进垃圾桶了。下次你进行一波裁员时，请把所有参与这些可怕决定的人都包括在内。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://finbold.com/warren-buffett-dumps-1-7-billion-of-amazon-stock/</guid>
+      <pubDate>Wed, 18 Feb 2026 17:56:08 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47063950</comments>
+    </item>
+    <item>
+      <title>显示 HN：Anthropic/OpenAI/Gemini 的信任协议</title>
+      <link>https://www.mnemom.ai</link>
+      <description>&lt;p&gt;记录完整性检查（信号）；出口商。 integrity_check0ms13h 前。 verify_trace0ms13h agoaip。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Trust Protocols for Anthropic/OpenAI/Gemini&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47062824"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.mnemom.ai'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;giancarlostoro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直在研究 Beads 的替代方案，原因有两个：&lt;p&gt;1) 我不喜欢 Beads 通过 git hooks 与 git 结合，而这正是问题所在。&lt;p&gt;2) Claude 会直接关闭任务，而不需要任何验证步骤。&lt;p&gt;所以我自己制作了一个使用 SQLite 的项目，并引入了我所说的门。每个任务必须有一个门，门可以重复使用，任务&lt;-&gt;门关系是唯一的，因此如果您将之前通过的门重新用于新任务，则不会通过它。&lt;p&gt;我还没有看到它绕过门，通常告诉我它无法关闭票证。&lt;p&gt;我设计中的门可以是任何东西。它可以像让代理构建项目、运行单元测试、甚至要求人工测试一样简单。&lt;p&gt;在我看来，每个人都在构建工具来使编码代理更加有效和高效。&lt;p&gt;我确实想知道我们是否需要一个通用的编码代理的完整规范，也许也包括这一点。据我所知，Anthropic 似乎是唯一公开发布编码代理规范的公司。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drivebyhooting:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;这些协议不做什么：保证代理的行为与声明一致&lt;p&gt;这似乎是这种方法中一个非常关键的缺陷，不是吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;neom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看来你的时机很好 - 我意识到这并不完全是你正在做的事情，但仍然认为考虑到你的工作，这可能很有趣：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.nist.gov&amp;#x2F;news-events&amp;#x2F;news&amp;#x2F;2026&amp;#x2F;02&amp;#x2F;announcing-ai-agent-standards-initiative-interoperable-and-secure" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.nist.gov&amp;#x2F;news-events&amp;#x2F;news&amp;#x2F;2026&amp;#x2F;02&amp;#x2F;announcing-ai-...&lt;/a&gt;&lt;p&gt;很酷的东西亚历克斯 - 期待看到你用它去哪里！ :)&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.mnemom.ai</guid>
+      <pubDate>Wed, 18 Feb 2026 16:33:56 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47062824</comments>
     </item>
   </channel>
 </rss>
