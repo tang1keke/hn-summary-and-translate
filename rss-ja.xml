@@ -6,151 +6,115 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 19 Feb 2026 13:18:34 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Feb 2026 15:57:05 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>Show HN: 暗号化されたローカルのクロスプラットフォーム ジャーナリング アプリ</title>
-      <link>https://github.com/fjrevoredo/mini-diarium</link>
-      <description>&lt;p&gt;Mini Diarium 暗号化されたローカル クロスプラットフォーム ジャーナリング アプリ Mini Diarium は、ジャーナルをプライベートに保ちます。機能 キー ファイル認証: ジャーナルの SSH キーのように、パスワードの代わりに (またはパスワードと一緒に) X25519 秘密キー ファイルを使用して日記のロックを解除します。 AES-256-GCM 暗号化: すべてのエントリはランダムなマスター キーで暗号化されます。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: An encrypted, local, cross-platform journaling app&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47072863"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/fjrevoredo/mini-diarium'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;saberience:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;大きな問題の 1 つは、キーを紛失するとすべてのデータが失われるような、解読不可能な暗号化を備えた日記を使いたくないということです。&lt;p&gt;私はすでにジャーナリング ウェブサイトの料金を払っており、Gmail にアクセスできる限りいつでも日記を復元できることがわかっています。&lt;p&gt;したがって、このセキュリティ第一の考え方は評価していますが、私にとっては実際にはあまり興味がなくなってきています。日記をクラウドに同期したい、ロックを解除できるようにしたい、キーを 1 つ忘れた場合に何年もの日記を失う危険を冒したくない。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alabhyajindal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ここでは、Rclone と任意のエディターを使用した別のアプローチを紹介します。 Rclone には、データを暗号化してクラウド プロバイダーに保存できる暗号化ライブラリが組み込まれています。私は Sublime Text と併用して日記を付け、暗号化されたデータを Dropbox に保存しています。&lt;p&gt;詳細はこちら: &lt;a href="https:&amp;#x2F;&amp;#x2F;alabhya.me&amp;#x2F;rclone" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;alabhya.me&amp;#x2F;rclone&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;g947o:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最大の問題は、これがモバイル プラットフォームでは利用できないことです。ほとんどの人はラップトップではなく携帯電話でこれを行います。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;october8140:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;黒曜石.md&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;khalic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ダン、それは素晴らしい README.md です、気に入っています&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cranberryturkey:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;素敵なプロジェクト。別のコメントで言及されているクラウド ドライブ上の SQLite アプローチは、実際には非常に強力です。ファイルがクラウドに送信される前に暗号化がクライアント側で行われる場合、ファイルがどこに保存されているかは問題ではありません。重要なことは、侵害されたクラウド アカウントによってジャーナルの内容が侵害されないように、キーの導出が十分に堅牢であることを確認することです。&lt;p&gt;「メンテナンスを停止したらどうなるか」に関して私が反論したいことが 1 つあります。懸念事項: AES-256-GCM を使用した SQLite は、ほぼ将来性があります。どちらも複数の実装を備えた標準です。本当のリスクはフォーマットが消滅することではなく、パスワードが失われることです。回復キーのエクスポート (キー マテリアルの紙のバックアップだけでも) は大いに役立ちます。&lt;p&gt;クロスデバイスの場合は、クラウド仲介を使用せずに同期する Syncthing のようなものを検討することもできます。脅威モデルをよりシンプルに保ちます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Brajeshwar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはいいですね。&lt;p&gt;しかし、日記の管理をやめた場合、どうやって日記にアクセスするのでしょうか?これは、秘密を守る必要がある技術的な傾向があり、知名度の高い人々をターゲットにしているのでしょうか?&lt;p&gt;個人的には、日記やジャーナルのようなものについては、ほとんどのツールで簡単に読み取れる形式 (つまり、せいぜいプレーン テキストか MarkDown) にし、コンテナ フォルダーに入れる必要があると考えています。 Now, encrypt that container&amp;#x2F;folder instead.将来、暗号化および復号化のツールを変更する必要がある場合は、コンテナ&amp;#x2F;フォルダを移動します。&lt;p&gt;たとえば、&lt;a href="https:&amp;#x2F;&amp;#x2F;cryptomator.org" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;cryptomator.org&lt;/a&gt; などのツールが思い浮かびます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kantord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は UI のミニマリズムが大好きです。&lt;p&gt;ここにヒントがあります: GitHub では、README に適切なビデオを埋め込むことができるようになりました。 (&lt;a href="https:&amp;#x2F;&amp;#x2F;stackoverflow.com&amp;#x2F;questions&amp;#x2F;4279611&amp;#x2F;how-to-embed-a-video-into-github-readme-md&amp;#x2F;78521560#78521560" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;stackoverflow.com&amp;#x2F;questions&amp;#x2F;4279611&amp;#x2F;how-to-embed-a-v...&lt;/a&gt;)。品質ははるかに向上し、ビデオ内を行き来できるようになります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spangry:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;見た目は本当にクールです。美しくてシンプルなインターフェースが気に入りました。 SQlite ファイルをたとえば Google ドライブに保存して、内容が暗号化されているため安全に保たれたまま、別のデバイスからジャーナルにアクセスできるようにすることはできますか?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/fjrevoredo/mini-diarium</guid>
-      <pubDate>Thu, 19 Feb 2026 11:54:21 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47072863</comments>
-    </item>
-    <item>
-      <title>Oban を使用した Elixir と Python のブリッジ</title>
-      <link>https://oban.pro/articles/bridging-with-oban</link>
-      <description>&lt;p&gt;Oban for Python は、最初から Elixir との相互運用性を考慮して設計されました。ジョブのエンキュー生成は Elixir 側で開始されます。マップ(生成) |&gt; オーバン。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Bridging Elixir and Python with Oban&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47072539"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://oban.pro/articles/bridging-with-oban'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cpursley:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;とてもいいです、オーバンは素晴らしいです。実際、私は pgflow.dev (pgmq を中心に構築) で同様のアプローチを見つけました。ただし、ステートレスな「ワーカー」は存在しません。はかなり信頼性が低く、によって作成されたジョブを取得して処理できる elixir ワーカー (&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;agoodway&amp;#x2F;pgflow" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;agoodway&amp;#x2F;pgflow&lt;/a&gt;) を構築しました。 pgflow のスーパーベース typescript クライアント。したがって、Oban にも、Elixir&amp;#x2F;Python Oban が選択できるジョブを挿入できる TypeScript&amp;#x2F;Node クライアントを用意する機会があるかもしれません。また、Python ワーカーが問題を解決する別のアプローチは、elixir ワーカーに「Python を実行」などのコードを呼び出させることなのか、それとも制限が多すぎるのでしょうか?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://oban.pro/articles/bridging-with-oban</guid>
-      <pubDate>Thu, 19 Feb 2026 11:07:15 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47072539</comments>
-    </item>
-    <item>
-      <title>C64 ゲーム Seawolfs で使用されるコーディング トリック</title>
-      <link>https://kodiak64.co.uk/blog/seawolves-technical-tricks</link>
-      <description>&lt;p&gt;NMI + IRQ は同期して実行されます。 「スプリット」によるリアルタイムの魚雷。リアルタイムの水の歪みエフェクト。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Coding Tricks Used in the C64 Game Seawolves&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47073044"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://kodiak64.co.uk/blog/seawolves-technical-tricks'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dorianmariecom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.is&amp;#x2F;CvXXP" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.is&amp;#x2F;CvXXP&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://kodiak64.co.uk/blog/seawolves-technical-tricks</guid>
-      <pubDate>Thu, 19 Feb 2026 12:24:33 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47073044</comments>
-    </item>
-    <item>
-      <title>ページアウトされた第 8 号 [pdf]</title>
-      <link>https://pagedout.institute/download/PagedOut_008.pdf</link>
-      <description>&lt;p&gt;f��8���e�&lt;� �i U� � g #� �。 ������inn����9Y��Y'����%����b��n����A��4 u�( 1�h I��P. � ���������� 9 �� F�YXc+�ZѶ��W| � �c�l�q�����6�BUY���0�6NH��� 5.9w �8E�O�J�IuO�%�����c �{J��v�ef�m�]�O�v�|R�x�k�n-���e�e�k� $v�,3�$�x2�� � ����gwɯG{���zx ��MJ l%YJ [7̾M٫v�� � ʞ3�_/{hz6�#x�1� i�4&amp;&amp;�DO�&amp;� �g�� vx8� �=� q��( �8 � )n�� wt�z P �J p��� v�%y �AL�(Ċ\6p~� �&amp;�M�:�X ��1�Z�� ����� ����� �i� �7�Y:�G�@�Ie �Ꮷ˰�~��� �� �[�s/&amp;�5� ����έL4����{��^�w&gt;#wW d8 �O��V������Q|�。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Paged Out Issue #8 [pdf]&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47072968"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://pagedout.institute/download/PagedOut_008.pdf'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lioeters:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;はい！目次を読み始めたばかりですが、すでに昔ながらのクリエイティブ コンピューティングの楽しさを感じています。解放の技術としてのパソコン文化とプログラミングの復活。より良い未来は可能であり、その力は私たちの手の中にあります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jhbadger:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は Paged Out が大好きです。基本的に、1980 年代の &lt;i&gt;BYTE&lt;/i&gt; や &lt;i&gt;Dr. に相当する唯一の現代版です。今日はドブスジャーナル&lt;/i&gt;です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrled:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この号には新しい Web ビューアが追加されており、個々の記事へのリンクに使用でき、一部の画面では PDF を読むよりも便利かもしれません: &lt;a href="https:&amp;#x2F;&amp;#x2F;pagedout.institute&amp;#x2F;webview.php?issue=8&amp;amp;page=1" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;pagedout.institute&amp;#x2F;webview.php?issue=8&amp;amp;page=1&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://pagedout.institute/download/PagedOut_008.pdf</guid>
-      <pubDate>Thu, 19 Feb 2026 12:13:44 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47072968</comments>
-    </item>
-    <item>
-      <title>Show HN: Julia で書かれた物理ベースの GPU レイ トレーサー</title>
-      <link>https://makie.org/website/blogposts/raytracing/</link>
-      <description>&lt;p&gt;レイシェーダーからインスピレーションを得て、BOMEX クラウド ボリュームを使用して標準の Makie 呼び出し (mesh.jl) を使用してシーンを構築します。 jl は物理ベースのプロテイン リボン ダイアグラムをレンダリングします。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: A physically-based GPU ray tracer written in Julia&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47072444"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://makie.org/website/blogposts/raytracing/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>アメリカ vs. シンガポール: 経済ショックから逃れることはできない</title>
+      <link>https://www.governance.fyi/p/america-vs-singapore-you-cant-save</link>
+      <description>&lt;p&gt;「著者らは人々に、先延ばしにするかどうか、貯蓄を後悔しているかどうかを尋ねただけではありません。そのショックを経験した人のうち、アメリカ人の62パーセントが貯蓄に後悔していると回答したのに対し、シンガポール人の54パーセントは、退職金口座を見つめる人々の62パーセントの確率で、もっと貯蓄しておけばよかったと思うようになりました。」&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; America vs. Singapore: You Can't Save Your Way Out of Economic Shocks&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47074389"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.governance.fyi/p/america-vs-singapore-you-cant-save'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blueaquilae:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは素晴らしい成果であり、探索するための素晴らしいツールです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NoboruWataya:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ジュリアについては以前ほど聞かなくなりました。数年前には、Python がデータ サイエンスに最適な言語として Python に代わろうとしているという見方がありました。そんなことは起こらなかったような気がしますか？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;krastanov:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;余談ですが、複数の GPU ベンダーをサポートしながら、最初に NVidia ではなく AMD で精査された計算パッケージを見るのは非常に興味深いです。 ROCM がついにサポートが不十分だという評判を払拭したのを見るのは心強いことです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amelius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;言語のマテリアル記述部分は PBRT と同じですか?&lt;p&gt;私が質問しているのは、マテリアル間のインターフェースを記述するのに非常に苦労しましたが、コードを変更しない限り、私がやりたいことは PBRT では不可能であることがわかったからです。どうやら、PBRT では、マテリアルに接触できる他のマテリアルは 1 つだけであるようです。したがって、たとえば、水と氷で満たされたグラスをレンダリングすることは、ハックなしでは不可能です。もちろん、ユーザーの観点からすると、これは少し残念なことです。&lt;p&gt;コンテキスト: &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45668543"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45668543&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LoganDark:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;iOS Safari では、スクロールするとビデオが自動的に全画面表示されます。以前他のブログでこのような現象を見たことがありますが、何が原因なのかわかりません。超迷惑&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://makie.org/website/blogposts/raytracing/</guid>
-      <pubDate>Thu, 19 Feb 2026 10:55:13 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47072444</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;InkCanon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;シンガポールの経済政策は複雑で、しばしば誤った方向を向いています。誤解を解き明かします。&lt;p&gt;CPF の主な目的は年金制度ではありません。それは国民による大規模な&lt;i&gt;強制国債購入計画&lt;/i&gt;として構成されています。財政的に何が起こっているかというと、国民所得の 37% が最低金利 (翌日物金利または最低 2.6% に固定されている) で長期債券 (退職年齢まで、平均数十年) を購入します。リターンは実際の長期リターンから具体的に切り離されています。これには、政府が巨額の資金調達を必要としていたという歴史的なルーツがあります。彼らは、短期金利と長期キャピタルゲインの間のデルタを莫大に稼いでいます。シンガポールには石油や天然資源はありませんが、同国の政府系ファンドはノルウェーなどの国々の地域に運用資産を置いており、このためです。記事にあるようなショックアブソーバーではありません。撤退条件は厳しい。資金を引き出す唯一の現実的な方法は、住宅、多額の医療費、退職金だ。&lt;p&gt;「人々の雇用を維持しようとしている」。は目標であり、方針ではありません。実際、シンガポール政府は移民を通じて大量の労働者の供給を維持している。外国人労働者人口、約 30%。政府の主な目標は、働く人の絶対数を最大化することです。&lt;p&gt;退職年齢の引き上げが労働参加に効果的である理由は、ほとんどの人には選択の余地がないからです。退職金は年齢が上がってからしか支払われません。平均的なシンガポール人の労働生活では、37% が CPF、おそらくさらに 10% が所得税、さらに 5% が GST、道路税、固定資産税などに費やされます。これらすべてを踏まえると、天文学的な生活費がかかります。これも従業員数を増やすための意図的なものです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hnthrow0287345:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;彼らが貯蓄に失敗しているのは、世界が大変な状況であり、彼らの機関が彼らがこの状況を乗り切るのに十分な支援をしていないからです。&lt;p&gt;そうですね、アメリカは大変です。人口のかなりの部分が社会経済的苦難に一人で挑戦したいと考えており、同じ挑戦を望まない人を嫌っているため、政府は自らハードコア資本主義モードに切り替えました。&lt;p&gt;しかし、有権者を責めるだけではなく、より多くの資金を獲得しやすいシステムを構築するために多額の資金が費やされています。最も裕福な人々は、富裕層や政治家を追放する反乱は最近ここでは起きていない、したがって過去 25 年ほどの状況のやり方を変える本当の脅威や変更の必要性はない、と正しく賭けている。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aperocky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この記事は、外部の影響と内部の動機を混同しているようです。&lt;p&gt;確かに、失業の影響で人々は貯蓄できなくなり、逆にもっと貯蓄できればよかったのにと思いました。しかし、そもそも貯蓄が&lt;i&gt;できた&lt;/i&gt;かどうかは無視されています。&lt;p&gt;もちろん、外部の影響は内部の先延ばしとはほとんど関係がありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mothballed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;シンガポールには&lt;i&gt;退行的&lt;/i&gt;なショックアブソーバーモデルがあり、国の半分ほどが移民で、例えばシンガポールでは裕福な国民さえも利用する公営住宅に入居する資格がない（もしかしたら不釣り合いでさえあるかもしれないが、入居するまでに長い待ち時間が発生する可能性があるため、その時点で高齢で落ち着いている）。  ショックで資金が枯渇し、破産して失業した移民は、世論調査を受ける前に国から追い出される。&lt;p&gt;------ re: 以下、スロットルのため -------------&lt;p&gt;米国では、移民と公営住宅に資金を提供している人々のほうが、補助金付きの住宅を手に入れている人々よりも一般に&lt;i&gt;生活が良い&lt;/i&gt;という。  米国では公営住宅は逆進税というよりは累進税なので、かなり似て非なるものです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rayiner:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ここで混乱を招く要因は、貯蓄行動が文化に根ざしていることです: &lt;a href="https:&amp;#x2F;&amp;#x2F;pmc.ncbi.nlm.nih.gov&amp;#x2F;articles&amp;#x2F;PMC6135367&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;pmc.ncbi.nlm.nih.gov&amp;#x2F;記事&amp;#x2F;PMC6135367&amp;#x2F;&lt;/a&gt;。研究によると、たとえ移民三世であっても、国内の人々は出身国と強い相関関係にあり、実質的に異なる貯蓄行動をとる可能性があります。この分析の目的において、米国またはシンガポールのいずれかを同種の集団として扱うのは間違いです。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.governance.fyi/p/america-vs-singapore-you-cant-save</guid>
+      <pubDate>Thu, 19 Feb 2026 14:52:18 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47074389</comments>
     </item>
     <item>
-      <title>Pebble Production: 2 月のアップデート</title>
-      <link>https://repebble.com/blog/february-pebble-production-and-software-updates</link>
-      <description>&lt;p&gt;#Pebble Time 2 プロダクション アップデート 現在、量産 (MP) 前の最後の段階であるプロダクション検証テスト (PVT) フェーズにいます。 #Index 01 実稼働アップデート Index 01 も実稼働検証テスト (PVT) フェーズにあります。これにより、人差し指を測定し、Pebble 固有の正確な指輪のサイズを見つけることができます。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Pebble Production: February Update&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47073112"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://repebble.com/blog/february-pebble-production-and-software-updates'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>理論に基づいた実験に反対する</title>
+      <link>https://journals.sagepub.com/doi/10.1177/26339137261421577</link>
+      <guid isPermaLink="true">https://journals.sagepub.com/doi/10.1177/26339137261421577</guid>
+      <pubDate>Thu, 19 Feb 2026 14:26:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47074083</comments>
+    </item>
+    <item>
+      <title>歴史上の有名なサイン</title>
+      <link>https://signatory.app/#famous-signatures</link>
+      <description>&lt;p&gt;指、Apple Pencil、スタイラス、またはマウスを使用して描画します。彼の筆跡は数十年にわたる慢性疾患のせいで悪化した。本物のサイン入り写真は 5,000 ドル以上で販売されます。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Famous Signatures Through History&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47073684"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://signatory.app/#famous-signatures'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Larrikin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;FitBit アカウントが Google に強制的に移行される前に、時計を手に入れたいと思っていました。間に合うかどうかは今では宙に浮いているようだ。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://repebble.com/blog/february-pebble-production-and-software-updates</guid>
-      <pubDate>Thu, 19 Feb 2026 12:36:00 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47073112</comments>
+&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;beezle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私自身のことを遡ります...私が若いホイッパースナッパーに過ぎなかった頃、ニューヨークポストはニクソンが就任してから辞任するまでの一連の署名のコピーを掲載しました。  その変化は非常に大きかった。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fenomas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私の最もお気に入りのサインを追加します。カート ヴォネガットは、よく (常にではありませんが) 自分の似顔絵をサインに組み込んでいます。なんと柔軟な対応でしょう。&lt;p&gt;例: &lt;a href="https:&amp;#x2F;&amp;#x2F;i0.wp.com&amp;#x2F;www.themarginalian.org&amp;#x2F;wp-content&amp;#x2F;uploads&amp;#x2F;2011&amp;#x2F;05&amp;#x2F;kurtvonnegutletter.jpg" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;i0.wp.com&amp;#x2F;www.themarginalian.org&amp;#x2F;wp-content&amp;#x2F;uploads&amp;#x2F;...&lt;/a&gt;&lt;p&gt;(後年、彼の署名がタバコを失ったと思います)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mobilene:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;自分の署名のグラフィック ファイルがあると非常に便利です。私は 30 年前、昔ながらの方法でそれを行いました。気に入るまで紙に自分の名前を署名し、それをスキャンし、.gif および .bmp ファイルを作成しました。まだそれを使っています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;v4r:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;HN で言及されていた、タッチパッドで絵を描くための非常に優れた Web サイトがあったことを覚えていますが、履歴からは見つかりませんでした。サインにも使えそうですね。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PopAlongKid:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;通常は 50 回繰り返しれば、そこまで到達できます。&lt;p&gt;これは低い方だと思います。私の署名は、民放 AM&amp;#x2F;FM ラジオ局で働いていた 20 代前半に固定化されました。  さまざまな送信機のログ (FCC 要件) に署名する必要があり、私の記憶では 3 時間ごとに 6 回ほど署名しなければなりませんでした。週に 6 日働いていたため、たくさんの署名がありました。何も考えずに一貫して署名できるようになるまでには、まだ時間がかかりました（筋肉の記憶）。&lt;p&gt;&amp;gt;最後にもう 1 つ、使用する場所を検討してください。法的文書や契約書には、少なくとも部分的に判読できる署名が必要です。誰かがそれをあなたの印刷された名前と関連付けることができるはずです。&lt;p&gt;私はこれが真実ではないと思いますが、「X」で署名するのが最善の場合は、法的署名の証人が必要になる可能性があります。  結局のところ、手を持たない人、目が見えない人、またはその他の障害を持ち、「普通の」生活を妨げる可能性のある人々がいるのです。 &lt;p&gt;最近では、紙の小切手が一般的になってきており、クレジット カードでの支払いでは紙の領収書に署名する必要がなくなったため、紙に署名する機会がどのくらいあるでしょうか?&lt;p&gt;&amp;gt;しかし、日常使用、電子メール、クリエイティブな仕事などでは、紙に署名する機会がどのくらいあるでしょうか?&lt;p&gt;&amp;gt;好きなだけ抽象的なものにすることができます。&lt;p&gt;2 つの異なる署名を維持しようとすることはあまり意味がないと思いますが、画像 (メールなど) を貼り付ける場合は、それほど問題ではないと思います。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;the_gastropod:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「それはだらしがないことではありません。それはあなたの特徴的な発見そのものです。」&lt;p&gt;ありがとう、ChatGPT…&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;donkeyboy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最も面白い署名がありません。スペインにまだ君主制があった頃、フェルディナンド 7 世は単に「ヨ エル レイ」、つまり文字通り「私、王」と署名しました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Antibabelic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有名なサインですか、それとも有名人のサインですか?たとえば、ルーカス・クラナッハ・ザ・エルダー・ドラゴンのサインがないことに驚いたからです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elliotbnvl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;署名描画ツールが必要だったので、昨夜これを作成しましたが、見栄えの良い署名を取得するために、Google は 15 秒以内のインタラクションと電子メール ゲートのないモバイル フレンドリーなページを明らかにしませんでした。&lt;p&gt;過去の署名は素晴らしい感触でした。クロードが SEO のためにまとめるのを手伝ってくれました。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://signatory.app/#famous-signatures</guid>
+      <pubDate>Thu, 19 Feb 2026 13:49:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47073684</comments>
     </item>
     <item>
-      <title>HN を表示: LatentScore – 気分を入力し、プロシージャル/アンビエント ミュージックを取得します (オープン ソース)</title>
-      <link>https://latentscore.com/demo</link>
-      <guid isPermaLink="true">https://latentscore.com/demo</guid>
-      <pubDate>Thu, 19 Feb 2026 12:06:05 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47072930</comments>
+      <title>AI エージェントの自律性を実際に測定する</title>
+      <link>https://www.anthropic.com/research/measuring-agent-autonomy</link>
+      <description>&lt;p&gt;Claude Code の経験豊富なユーザーは、より頻繁に自動承認を行いますが、中断の頻度も高くなります。クロード・コードは、人間が中断するよりも、明確にするために一時停止することが多いです。クロード コードは逆のトレードオフを提供します。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Measuring AI agent autonomy in practice&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47073947"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.anthropic.com/research/measuring-agent-autonomy'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.anthropic.com/research/measuring-agent-autonomy</guid>
+      <pubDate>Thu, 19 Feb 2026 14:14:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47073947</comments>
     </item>
     <item>
-      <title>ShannonMax: 情報理論を使用して Emacs キーバインドを最適化するライブラリ</title>
-      <link>https://github.com/sstraust/shannonmax</link>
-      <description>&lt;p&gt;瓶の中に何か入っているはずです。 (shannon-max-start-logger) を追加します。ただし、キーボードに 100 個のキーがある場合、キーバインドは非常に短くなります。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; ShannonMax: A Library to Optimize Emacs Keybindings with Information Theory&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47072603"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/sstraust/shannonmax'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://github.com/sstraust/shannonmax</guid>
-      <pubDate>Thu, 19 Feb 2026 11:15:38 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47072603</comments>
-    </item>
-    <item>
-      <title>AI エージェントの構築について、実稼働グレードの同時実行の年月が教えてくれたこと</title>
-      <link>https://georgeguimaraes.com/your-agent-orchestrator-is-just-a-bad-clone-of-elixir/</link>
-      <description>&lt;p&gt;AI エージェントはそのモデルを打ち破りました。 BEAM 軽量プロセスはそれぞれ最大 2KB です。 BEAM プロセスはノード間で透過的に通信できます。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; What years of production-grade concurrency teaches us about building AI agents&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47067395"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://georgeguimaraes.com/your-agent-orchestrator-is-just-a-bad-clone-of-elixir/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>C++26: Std:Is_within_lifetime</title>
+      <link>https://www.sandordargo.com/blog/2026/02/18/cpp26-std_is_within_lifetime</link>
+      <description>&lt;p&gt;この関数は、定数の評価中に p が現在有効期間内にあるオブジェクトを指しているかどうかをチェックします。 i、そのメンバーがアクティブになります。しかし、継続的な評価を行うと、これが問題になります。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47073663"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.sandordargo.com/blog/2026/02/18/cpp26-std_is_within_lifetime'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 14 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;veunes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「Let it crash」のコンセプトは確定的なバグには最適ですが、確率的なエラーには機能しますか?&lt;p&gt;LLM がガベージを返した場合、同じプロンプトと温度 0 でプロセス (エージェント) を再起動すると、同じガベージが生成されます。 Erlang スーパーバイザーはプロセスをクリーンな状態で再起動します。エージェントが「クリーンな状態」の場合、 = 会話コンテキストの喪失&lt;p&gt;必要なのは監視ツリーだけではなく、再起動時に戦略を変更できるセマンティック監視ツリーが必要です。 BEAM はこれをそのまま提供するわけではなく、手動でコーディングする必要があります&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zknill:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この記事は 2 つの部分に分かれています。スケジューラのプリエンプションとネットワーク経由のトランスポート。この記事は、SSE ストリーミング応答を使用した HTTP 接続での長時間存続するリクエストと応答が最悪であるという点でまったく正しいです。&lt;p&gt;この記事では、Phoenix LiveView と Websocket について簡単に触れています。チャットボットがページの更新を嫌う理由については [1] と書きましたが、Websocket に切り替えるだけでは解決しません。これまでのところ、最も優れたメカニズムは pub&amp;#x2F;sub です。特に、マルチユーザー&amp;#x2F;マルチデバイス、会話のハンドオフ、再接続、履歴の再開、トークンの圧縮をトランスポートから基本的に無料で実現できる場合にはそうです。&lt;p&gt;1: &lt;a href="https:&amp;#x2F;&amp;#x2F;zknill.io&amp;#x2F;posts&amp;#x2F;チャットボット-最悪の敵-ページ-更新&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;zknill.io&amp;#x2F;posts&amp;#x2F;チャットボット-最悪の敵-ページ-更新...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;quadruple:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; BEAM は「クラッシュさせます」哲学は逆のアプローチをとります。あらゆる障害モードを予測するのではなく、ハッピー パスを作成し、プロセスをクラッシュさせます。スーパーバイザはクラッシュを検出し、プロセスをクリーンな状態で再起動します。システムの残りの部分は影響を受けずに続行されます。&lt;p&gt;これが必要ですか?ツールに DB 接続がないためにリクエストが失敗した場合、モデルがそのエラーに関する情報を受信できるようにしたいと考えています。会話が長すぎるために LLM API がエラーを返した場合、圧縮またはその他のコンテキスト エンジニアリング戦略を実行したいのですが、同じことを再度実行するためだけにプロセスを再起動したくありません。ここでの Elixir の利点を誤解していますか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vinnymac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;エージェントとともに Elixir を 1 年以上使用しています。私にとっては当然の選択のように思えました。&lt;p&gt;Node は素晴らしいですが、Elixir スレッドのスケーリングはさらに重要です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mackross:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私はエリクサーの大ファンですが、箱から出してすぐに永続的な実行を解決することはできません。これは、BEAM ファンの間でよく無視される大きな問題です。 ETS と監視ツリーは再起動によるデプロイメントとうまく連携しないため、ある程度のレベルの実行状態をリレーショナル データベースまたはファイルに書き込む必要があります。永続的な ETS、mnesia などを選択できます (これらにはそれぞれ独自のトレードオフがあり、詳細なドキュメントではある種の厄介なデータ損失シナリオが伴います)。ただし、どちらを選択するにしても、私の経験では、プロセスが再起動後にどのように存続するかを検討するために、かなりの時間を費やす必要があります。あるいは、Oban も便利ですが、これは重いレイヤーなので、制御フローを追跡するのがより複雑になります。そして、確かに、独自のホット コードを展開して永続 VM ベアメタルで実行して真の BEAM ネイティブになることもできますが、箱から出すのは簡単ではなく、独自のフット ガン セットが付属しています。何かが欠けている場合は、エリクサーを手に入れるたびにこれが大きな問題点になるため、誰かがより良い方法を説明してくれると嬉しいです。美しいプリミティブを使用したいのですが、サーバーの再起動時に永続的な実行と常に戦っていると感じます。 Temporal.io クライアントまたは同様の保証を備えたものが lang&amp;#x2F;frameworks に組み込まれていることを望みます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nottorp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;分かりません。 「AI」に仕事を任せるべきではないでしょうか。エージェントが自分自身を向上させるために必要なことは何ですか?&lt;p&gt;長年の経験とは何ですか?それは時代遅れの考え方です!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;koakuma-chan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Rustを使えばいいだけ&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;manojlds:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;確かに彼らは Elixir ではなく Erlang を意味します&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;znnajdla:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Anthropic の誰かが私の AI チャットを読んでいますか?私は文字通り、数週間前、長時間実行されるブラウザー エージェントを構築するための適切なフレームワークを研究した結果、この結論に達しました。 Elixir の使用経験はまったくありませんでしたが、言語構造を見た瞬間に「クリック」されました。これが AI エージェント フレームワークにまさに適していることがすぐにわかりました。もう 1 つすぐに解決できる問題は、kubernetes 地獄のない分散デプロイメントです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;randomtoast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は過去にかなり大規模な OTP システムを構築したことがありますが、核となる主張は方向性としては正しいと思います。つまり、存続期間が長く、ステートフルで、失敗しやすい「会話」が重要です。 Erlang プロセスと監視ツリーに非常に自然にマッピングされます。エージェント セッションは、基本的に、レイテンシが悪く、非決定性が高い通話セッションです。&lt;p&gt;とはいえ、現在のエージェント ワークロードの多くは、外部 API 周辺の I&amp;#x2F;O バインドされています。時間の 95% が OpenAI または Anthropic で待機している場合、スケジューリング モデルは人々が思っているほど重要ではありません。 BEAM のプリエンプションとプロセスごとの GC は、同じランタイム内で実際の競合や CPU 負荷の高い作業がある場合に威力を発揮します。いずれにせよ、多くのチームは、埋め込み、解析、またはモデル ホスティングを別のサービスに静かにプッシュしています。&lt;p&gt;ホット コード スワッピングは、この文脈では非常に興味深いものです。ほとんどの主流スタックでは、フライト セッションを中断せずにエージェント ロジックを更新することは簡単ではありません。しかし実際には、多くのスタートアップ企業は、ロード バランサーの背後で接続をドレインして、それを終わらせることに抵抗を感じません。&lt;p&gt;したがって、私の見解は、強力な障害分離を備えた数百万の同時ステートフル ソフト リアルタイム セッションが実際に必要な場合、BEAM は非常に健全なデフォルトであるということです。数千人のユーザーの API 呼び出しを主に結合している場合、ランタイムの違いは、周囲のツールや雇用プールほど決定的ではありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fud101:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはすべて良いことですが、フェニックスとライブビューを備えたエリクサーは非常に肥大化しており、このようなモンスターを購入するには、より単純なスタックでは実現できない本当の理由が必要です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simianwords:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;エージェント フレームワークの意味がわかりません。耐久性とチェックポイント以外に、それはどのように役立ちますか?&lt;p&gt;クロード コードは、必要に応じてツールを呼び出すエージェントとしてすでに機能しているため、抽象化がここでどのように役立つのかは不明です。&lt;p&gt;ラングチェーンと関連テクノロジーは、利点がなく肥大化しているように見えるため、本当に混乱していますか?&lt;p&gt;私に何が欠けているのか、本当に知りたいのです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bitwize:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;申し訳ありませんが...&lt;p&gt;Java がガベージ コレクションを導入したのと同じように、Erlang はアクター モデルを導入しませんでした。このモデルはヒューイットらによって開発されました。 &lt;p&gt;Erlang は、産業アプリケーション向けのアクター モデルの素晴らしい&lt;i&gt;実装&lt;/i&gt;であり、おそらく大規模な「実際の」モデルに対するモデルの有用性を証明しました。何よりも仕事をする。それと、意味的に Scheme にかなり近いという点が、私が気に入っている理由です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mccoyb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;次の点を除いて、著者の指摘にほぼ同意します。&lt;p&gt;&gt; TypeScript&amp;#x2F;Node.js: イベント ループのおかげで同時実行性が向上しましたが、基本的には依然としてシングルスレッドです。ワーカー スレッドは存在しますが、これらは 2KB プロセスではなく、重量のある OS スレッドです。プリエンプティブなスケジューリングはありません。CPU に依存する 1 つの操作がすべてをブロックします。&lt;p&gt;これは本当の抗議ではありません。エージェント フレームワークで費やされる時間の 100% は、エージェントの応答を待つか、ツール呼び出しが実行されるのを待つことに費やされます。フレームワーク自体のロジックに費やされる時間はほとんどありません。&lt;p&gt;たとえ重い OS スレッドを使用しているとしても、私はこれが重要だとは思いません。&lt;p&gt;次に、ホット コード スワッピングに関するその他の点ですが、Elixir や Erlang を使用したことのある人にとっては痛いほど明らかです。&lt;p&gt;たとえば、OpenClaw: 「インプレース更新」がどれほど簡単になるか。それは、言語ランタイムが最初から機能を念頭に置いて設計されていた場合です。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://georgeguimaraes.com/your-agent-orchestrator-is-just-a-bad-clone-of-elixir/</guid>
-      <pubDate>Wed, 18 Feb 2026 22:37:35 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47067395</comments>
+&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aeve890:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;頭をかいた。リンクは正しいですか?&lt;p&gt;&amp;gt;そのとおりです。そして、それは完全に理にかなっています。&lt;p&gt;最も複雑な (そして多くの場合間違った) 方法で名前を付けるという C++ の傾向に対する、平均的な C++ エンヨージャーの対処メカニズム。 std::vector、std::monostate、std::unit など。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amelius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;assert(std::is_lang_getting_too_hairy(&amp;amp;cpp));&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;estimator7292:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;consteval やテンプレートのメタプログラミングや codegen パラダイム全体を扱えば扱うほど、stdlib に突っ込むのは完全に不適切であると考えるようになります。これは言語自体の一部であるべきではないと思いますが、C++ 言語の上にリンターのようなものを置くべきだと思います。&lt;p&gt;私たちのほとんどにとって、C++&lt;i&gt;または&lt;/i&gt;メタプログラミングが得意になるようです。しかし、それを&lt;i&gt;キャリア全体&lt;/i&gt;にしたいのでなければ、両方を同じ程度の効果で行うことは実際にはできません。&lt;p&gt;私は C++ が大好きなので、おそらく永遠に使い続けるでしょう。しかし、実際には、私が選択した分野に適用される言語の&lt;i&gt;非常に小さな&lt;/i&gt;サブセットのみです。私は「クラスを備えた C」です。みたいなやつで、template と constexpr はかなり珍しいです。いや、半分の時間は、組み込みプラットフォームに stdlib さえ&lt;i&gt;ありません&lt;/i&gt;。実際、それはちょっといいことです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dzdt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは、C++ 言語仕様が大きすぎて誰にも理解できない、あいまいなユースケースのための不透明な名前が付けられたものでいっぱいであるという傾向を継続しています。おそらく、ほとんどのコードが LLM によって書かれている場合、この種の拡張機能は評価されるでしょう? LLM は、これらすべてのあいまいな機能をうまく理解して、適切な状況に適用できるからでしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tw1984:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;2026 年になってもまだこのような恐ろしいことに注意を払うのは、本当に自分自身を嫌う必要があります。&lt;p&gt;発明から 41 年が経った今でも、C++ は標準ライブラリでネットワークをサポートしていません。言い訳に言い訳を重ねても、stdlib にネットワークが必要ない理由については何百万もの正当化があります。しかし同時に、一部の官僚的な「委員会のメンバー」が、中年の危機に苦しんでいる人々は、AI 時代の Std:Is_within_lifetime のようなものに人生を無駄にしてほしいと思っています。&lt;p&gt;何という血のにじむような冗談でしょう!&lt;p&gt;一部の高精度コーディング エージェントが、CS 史上最も官僚的なナンセンスから人々を解放するために、人間の介入を最小限に抑えて C++ コードを錆びるように移植できるようになるのが待ちきれません。人間には複雑すぎる概念を組み込んだ AI ネイティブ言語の方がさらに優れています。&lt;p&gt;C++ のように恐竜を軽視するのに今ほど良い時期はありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;worldsavior:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;CPP のような成熟した言語は、言語標準に機能を追加するのをやめるべきです。言語に機能を追加すると言語がより複雑になるだけであり、std ライブラリに追加するとオーバーヘッドが増えるだけで、場合によってはセキュリティの問題も発生します。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pif:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人々が適切にプログラミングを学び、結合を完全に捨ててしまえば...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;irishcoffee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはいいかもしれない、たぶん。絶対に使いません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MountainTheme12:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私の C++ では、共用体のすべてのメンバーが常にアクティブです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;matthewkayin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;記事で指摘されている問題は少しばかげているように思えます。誰かがオプションの bool クラスを必要としたため、言語機能全体を追加していますか? OPTIONAL_BOOL_FASLE、OPTIONAL_BOOL_TRUE、OPTIONAL_BOOL_UNDEFINED の 3 つの値を持つ uint8_t を作成してみてはいかがでしょうか?&lt;p&gt;そうすることで bool と同じスペースが必要となり、より適切なインターフェイスを提供したい場合はクラスにラップできます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mFixman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは、C++ 共用体に存在する最初のタイプの sum-type オプション選択ステートメントですか?私は 1978 年からこの機能を待ち望んでいました。&lt;p&gt;それでも、優れたパターン マッチングを可能にする `switch` ステートメントに対する言語レベルのオーバーロードを持たないのは無駄な機会です。 std::is_within_lifetime を使用しても、C++ 共用体はエラーが発生しやすく、操作が困難です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eptcyka:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;C++ の人はこれを指摘して、*ほら、C++ はまだ進化しており、私たちはメモリの問題を真剣に受け止めています* と言うでしょう。確かにそうだね、おじいちゃん。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.sandordargo.com/blog/2026/02/18/cpp26-std_is_within_lifetime</guid>
+      <pubDate>Thu, 19 Feb 2026 13:47:30 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47073663</comments>
+    </item>
+    <item>
+      <title>DOGE トラック</title>
+      <link>https://dogetrack.info/</link>
+      <description>&lt;p&gt;被害を追跡するDOGEトラックとは何ですか？連邦職員を攻撃する DOGE のプロジェクト 不正行為と無駄遣い 支出のコントロールの掌握 規制の撤回 IT の近代化 「神の見解」大統領令 DOGE タイムライン DOGE の人々 DOGE のメンバー。細部に潜む悪魔 マスクを外したレッカーズ エイリアス リーダーとブースター サポート チーム イネーブラーが DOGE をサポートする方法 キー イネーブラー アンノウンズ 多作のレッカーズ アカシュ ボバ ネイト キャバノー キャバノーの取り巻き エドワード コリスティーン マルコ エレス ルーク ファリター コール キリアン ギャビン クリガー タラック マケチャ アラム モガダッシ ニキル ラジパル アダム ラマダ ペイトン レーリング カイルシュット・イーサン・シャオトラン ジョーダン・ウィック その他のレッカー機関 標的となった機関 タイムライン 人事管理局 一般調達局 ホワイトハウス/DOGE ナショナル・デザイン・スタジオ 米国国際開発庁 消費者金融保護局 農務省 商務省 国防省 教育省 エネルギー省 国土安全保障省 内務省 司法省 労働省 運輸省 環境保護庁 保健福祉局 住宅都市開発 アメリカ航空宇宙局 中小企業協会 社会保障局 国務省 財務省米国郵政退役軍人局 全国労働関係委員会 独立機関 すべてのページ すべての人物 すべてのイベント すべての人員配置 すべてのシステム すべての情報源引用 すべての未解決の質問。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; DOGE Track&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47072967"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://dogetrack.info/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;squeegmeister:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これを fednews のサブレディットで共有することを検討してみてはいかがでしょうか。素晴らしいプロジェクト&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rapnie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ねえ、この厄介な民主政府層を必要とせずに、米国政府全体がすぐに Palantir AI で便利に実行されるようになるのではないでしょうか?民主的であるように見せるために必要なのは行政府と手先だけですよね？当時の DOGE は単なるデータ取り込みプロセスでした。 ？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hamdingers:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;DOGE の本当の目的は、IRS、SSA、メディケイド、その他の機関から機密データを抜き出すことでした。彼らがこれで何をしているのか私たちには決して分からないかもしれませんが、現在の移民取り締まりに影響を及ぼしていることは確かです。&lt;p&gt;長期的には、おそらくニュースが注目したい削減（悲劇的かもしれませんが）以上に私たち全員に影響を与えるでしょう。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;baggachipz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ああ、本当に今日は血が沸騰することを望んでいました。白日の下で行われたデータ侵害について読むと愕然としますが、そのような悲惨な行為やプライバシーの侵害を防ぐはずの政府によってそれが容認されている場合には、なおさらです。この狂気のタイムラインから立ち直るには（もしあったとしても）長い時間がかかるでしょう。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reenorap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一部の人々が連邦支出を抑制する気を全く持っていないことに、私は愕然とする。政府の一部の部門の職員数は 5 年間でほぼ 2 倍になりましたが、巨額の予算以外は何も示されませんでした。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;myrmidon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は、党派的な傾向を脱却し、政策イニシアチブを批判的にレビューし、やや主観的な過大約束&amp;#x2F;期待外れの判断を下すことが非常に重要であると考えています (また、&lt;i&gt;どこ&lt;/i&gt;、&lt;i&gt;なぜ&lt;/i&gt;、&lt;i&gt;どのように&lt;/i&gt;が成功したか失敗したかにも注目します)。&lt;p&gt;私にとって、この点に関しては、総ドージのイニシアチブ全体のスコアは非常に悪いです。
+当初の約束は現実的ではない (さらに悪いことに、欺瞞的) ように見えますが、(暫定的な) 結果も精彩を欠いています。&lt;p&gt;私の印象では、「貯蓄」の大部分は、貯蓄額に基づいて行われています。それは、約束された効率の向上や純粋な無駄の排除によっては決して達成されず、単にプロジェクトの削減、つまり税金を節約するために何らかの形の公共サービスや福利厚生を削減することによって達成されました。これは明らかに劣っています。&lt;p&gt;まさにその線に沿った約束は&lt;i&gt;極度&lt;/i&gt;の懐疑に値すると思います。規制を大幅に削減「安易な利益」のための公的予算それは全く信用できないし、もし誰かが原子力やそれに類するものを支持して同じ議論を持ち出そうとするなら、私はその人たちに「嘘つき」のレッテルを貼るだけだ。そして現実が私の意見を支持するのを見てください...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;plasma_beam:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;このサイトのレイアウトが気に入っています。しかし、データの主なソースはオンライン ニュース記事であることをもっとはっきりと述べるべきだと思います。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FrustratedMonky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;このサイトは素晴らしいです。&lt;p&gt;しかし、ストーリーを伝えるには全体的なグラフィックやグラフなどが必要です。  この取り組み全体がいかに非効率だったかを示す、費やしたドルと節約したドルのようなもの。&lt;p&gt;そして。 Project 2025 でも同様のことを期待しています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aaa_aaa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私にとって「政府の効率」を改善することは重要なことです。大規模な州では達成できません。これを達成すると主張するのは愚か者か悪者です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yabones:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;特に USAID について言えば、これは米国の歴史の中で米国のソフトパワーの最大の侵食です。その「外国援助」はすべて、それは慈善や誰かの心の善意のためではなく、「第三世界」を維持するためでした。米国の外交政策目標と一致している。そして農産物の下限価格を設定することだ。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pjc50:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;悲しいことに、人々は手遅れになるまで行政状態を見逃さないということです。&lt;p&gt;私は &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;2008_ Chinese_milk_scandal" を思い出しました。 rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;2008_ Chinese_milk_scandal&lt;/a&gt; ;副作用の 1 つは、人々が中国の当局よりもオーストラリアの食品安全当局を信頼していたため、オーストラリアから中国に粉ミルクを輸入していることです。&lt;p&gt;DOGE の処分により、まだ公表されていない、同様の問題が引き起こされた可能性が最も高いです。 Purdue Pharma の問題のような背景レベルの問題は言うまでもありません。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://dogetrack.info/</guid>
+      <pubDate>Thu, 19 Feb 2026 12:13:39 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47072967</comments>
     </item>
   </channel>
 </rss>

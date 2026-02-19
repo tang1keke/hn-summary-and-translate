@@ -6,151 +6,116 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 19 Feb 2026 13:18:34 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Feb 2026 15:57:05 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Show HN：加密的本地跨平台日记应用程序</title>
-      <link>https://github.com/fjrevoredo/mini-diarium</link>
-      <description>&lt;p&gt;Mini Diarium 一款加密的本地跨平台日记应用程序 Mini Diarium 可让您的日记保持私密性。功能 密钥文件身份验证：使用 X25519 私钥文件而不是（或与密码一起）解锁您的日记，例如日记的 SSH 密钥。 AES-256-GCM 加密：所有条目均使用随机主密钥加密。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: An encrypted, local, cross-platform journaling app&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47072863"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/fjrevoredo/mini-diarium'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;saberience:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一个主要问题是，我不想要一本具有牢不可破的加密功能的日记，如果我丢失了密钥，我就会丢失所有数据。&lt;p&gt;我已经付费购买了一个日记网站，只要我可以访问我的 Gmail，我就可以随时恢复我的日记。&lt;p&gt;因此，虽然我很欣赏这种安全第一的心态，但对我来说，它实际上变得不那么有趣了。我希望我的日记同步到云端，我希望能够解锁它，如果我忘记了一个密钥，我不想冒失去多年日记的风险。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alabhyajindal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是使用 Rclone 和您选择的编辑器的另一种方法。 Rclone 有一个内置的 crypt 库，可以加密您的数据并将其存储在云提供商中。我使用它与 Sublime Text 一起记录日志，并将加密数据存储在 Dropbox 上。&lt;p&gt;更多信息：&lt;a href="https:&amp;#x2F;&amp;#x2F;alabhya.me&amp;#x2F;rclone" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;alabhya.me&amp;#x2F;rclone&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;g947o:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最大的问题是这在移动平台上不可用。大多数人在手机上而不是笔记本电脑上执行此操作。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;october8140:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;黑曜石.md&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;khalic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Dann，这是一个很棒的 README.md，喜欢它&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cranberryturkey:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不错的项目。另一条评论中提到的云驱动上的 SQLite 方法实际上非常可靠 - 如果在文件到达云之前在客户端完成加密，那么它存储在哪里并不重要。关键是确保密钥派生足够强大，以便受感染的云帐户不会损害日记内容。&lt;p&gt;关于“如果停止维护它会怎样”，我会反驳一件事。关注点：带有 AES-256-GCM 的 SQLite 是尽可能面向未来的。两者都是具有多种实现方式的标准。真正的风险不是格式消失，而是丢失密码。恢复密钥导出（即使只是密钥材料的纸质备份）也会大有帮助。&lt;p&gt;对于跨设备情况，您还可以考虑使用 Syncthing 之类的工具进行同步，无需任何云中介。使威胁模型更加简单。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Brajeshwar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这很好。&lt;p&gt;但是，当您停止维护日记时，如何访问他们的日记呢？这是否更多地针对那些有技术倾向、需要保守秘密的高调人士？&lt;p&gt;我个人认为，对于像日记这样的东西，它应该采用大多数工具都可以轻松读取的格式（因此最好是纯文本或 MarkDown），然后将其放在容器文件夹中。现在，加密该容器文件夹。以后，当您需要更改加密解密工具时，请移动容器文件夹。&lt;p&gt;例如，会想到诸如 &lt;a href="https:&amp;#x2F;&amp;#x2F;cryptomator.org" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;cryptomator.org&lt;/a&gt; 之类的工具。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kantord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢极简主义的 UI。&lt;p&gt;这里有一个提示：GitHub 现在允许您在 README 中嵌入适当的视频。 (&lt;a href="https:&amp;#x2F;&amp;#x2F;stackoverflow.com&amp;#x2F;问题&amp;#x2F;4279611&amp;#x2F;如何将视频嵌入到 github-readme-md&amp;#x2F;78521560#78521560" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;stackoverflow.com&amp;#x2F;问题&amp;#x2F;4279611&amp;#x2F;如何嵌入-a-v...&lt;/a&gt;）。质量会更好，人们可以在视频中来回导航。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spangry:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来真的很酷，我喜欢漂亮但简约的界面。我可以将 SQlite 文件存储在 Google Drive 上，以便我可以从不同的设备访问我的日记，同时内容仍然保持安全，因为它们是加密的？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/fjrevoredo/mini-diarium</guid>
-      <pubDate>Thu, 19 Feb 2026 11:54:21 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47072863</comments>
-    </item>
-    <item>
-      <title>使用 Oban 连接 Elixir 和 Python</title>
-      <link>https://oban.pro/articles/bridging-with-oban</link>
-      <description>&lt;p&gt;Oban for Python 从一开始就是为了与 Elixir 互操作而设计的。排队作业生成从 Elixir 端开始。地图（生成）|&gt; 奥本。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Bridging Elixir and Python with Oban&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47072539"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://oban.pro/articles/bridging-with-oban'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cpursley:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常好，奥本很棒。我实际上找到了与 pgflow.dev 类似的方法（围绕 pgmq 构建） - 但无状态 deno“workers”非常不可靠，并构建了一个 Elixir Worker (&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;agoodway&amp;#x2F;pgflow" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;agoodway&amp;#x2F;pgflow&lt;/a&gt;)，可以拾取和处理由pgflow 的 supabase typescript 客户端。因此，也许 Oban 也有机会拥有一个 TypeScript&amp;#x2F;Node 客户端，可以插入 Elixir&amp;#x2F;Python Oban 可以接手的作业。另外，我想知道与 python 工作人员相比，另一种方法是否是让 Elixir 工作人员调用&amp;#x2F;运行 python&amp;#x2F;lua 等代码，还是这太限制了？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://oban.pro/articles/bridging-with-oban</guid>
-      <pubDate>Thu, 19 Feb 2026 11:07:15 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47072539</comments>
-    </item>
-    <item>
-      <title>C64 游戏 Seawolves 中使用的编码技巧</title>
-      <link>https://kodiak64.co.uk/blog/seawolves-technical-tricks</link>
-      <description>&lt;p&gt;NMI + IRQ 同步运行。通过“分裂”实现实时鱼雷。实时水扭曲效果。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Coding Tricks Used in the C64 Game Seawolves&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47073044"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://kodiak64.co.uk/blog/seawolves-technical-tricks'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dorianmariecom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.is&amp;#x2F;CvXXP" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.is&amp;#x2F;CvXXP&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://kodiak64.co.uk/blog/seawolves-technical-tricks</guid>
-      <pubDate>Thu, 19 Feb 2026 12:24:33 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47073044</comments>
-    </item>
-    <item>
-      <title>移出第 8 期 [pdf]</title>
-      <link>https://pagedout.institute/download/PagedOut_008.pdf</link>
-      <description>&lt;p&gt;f��8���e�&lt;���i U�g #��. �����9Y��Y'���%���b�n���A��4 u�( 1�h I�P.�������9 �� F�YXc+�ZѶ�W| �� �c�l��q�������6�BUY���0�6NH��� 5�9w �8E��O�J��IuO�%�����c �{J��v�ef�m�]�O�v�|R�x�k�n-��e�k� $v�,3�$�x2�� �����gwɯG{���zx ��MJ l%YJ [7̾M٫v�� �� ʞ3�_/{hz6�#x�1� i�4&amp;&amp;�DO�&amp;� �g��� vx8�� �=� q��( ��8 � )n��� wt�z P �J p��� v�%y ��AL�(Ċ\6p~�� �&amp;M�:�X ��1��Z�� ����� ����� ���i� �7�Y:�G�@��Ie �Ꮷ˰�~��� ��� ��[�s/&amp;�5��������έL4����{��^�w&gt;#wW d8 �O�V������Q|��.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Paged Out Issue #8 [pdf]&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47072968"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://pagedout.institute/download/PagedOut_008.pdf'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lioeters:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的！刚开始阅读目录，我就已经感受到了老式创意计算的乐趣。个人计算机文化的复兴和编程作为一种解放技术。更美好的未来是可能的，力量就在我们手中。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jhbadger:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢 Paged Out ——它基本上是唯一与 20 世纪 80 年代的 &lt;i&gt;BYTE&lt;/i&gt; 或 &lt;i&gt;Dr.今天的多布斯杂志。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrled:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们在本期中提供了一个新的 Web 查看器，可用于链接到各个文章，并且可能比在某些屏幕上阅读 PDF 更好：&lt;a href="https:&amp;#x2F;&amp;#x2F;pagedout.institute&amp;#x2F;webview.php?issue=8&amp;amp;page=1" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;pagedout.institute&amp;#x2F;webview.php?issue=8&amp;amp;page=1&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://pagedout.institute/download/PagedOut_008.pdf</guid>
-      <pubDate>Thu, 19 Feb 2026 12:13:44 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47072968</comments>
-    </item>
-    <item>
-      <title>Show HN：用 Julia 编写的基于物理的 GPU 光线追踪器</title>
-      <link>https://makie.org/website/blogposts/raytracing/</link>
-      <description>&lt;p&gt;受 Rayshader 启发，您可以使用标准 Makie 调用 (mesh.jl) 和 BOMEX 云卷构建场景。 jl 以基于物理的方式呈现蛋白质带状图。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: A physically-based GPU ray tracer written in Julia&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47072444"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://makie.org/website/blogposts/raytracing/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>美国与新加坡：你无法通过储蓄摆脱经济冲击</title>
+      <link>https://www.governance.fyi/p/america-vs-singapore-you-cant-save</link>
+      <description>&lt;p&gt;“作者不仅询问人们是否拖延，是否后悔储蓄。在那些经历过这种震惊的人中，62% 的美国人表示后悔储蓄，而新加坡人的这一比例为 54%。这使得盯着退休账户的人们有 62% 的机会希望自己储蓄更多。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; America vs. Singapore: You Can't Save Your Way Out of Economic Shocks&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47074389"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.governance.fyi/p/america-vs-singapore-you-cant-save'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blueaquilae:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一项令人印象深刻的成就，也是一个值得探索的绝佳工具。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NoboruWataya:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对朱莉娅的了解已经不像以前那么多了。几年前，人们认为它将取代 Python 成为数据科学的首选语言。好像那件事没有发生？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;krastanov:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;顺便说一句，看到一个计算包虽然支持多个 GPU 供应商，但首先是在 AMD 而不是 NVidia 上进行审查的，这确实很有趣。令人鼓舞的是，ROCM 最终摆脱了支持不佳的名声。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amelius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该语言的材质描述部分与 PBRT 中的相同吗？&lt;p&gt;我之所以这么问，是因为我在尝试描述材质之间的接口时遇到了很多麻烦，却发现如果不修改代码，我想要做的事情在 PBRT 中是不可能实现的。显然，在 PBRT 中，一种材料只能与另一种材料接触。因此，例如，渲染一个装满水和冰的玻璃杯是不可能的。当然，从用户的角度来看，这有点令人失望。&lt;p&gt;上下文：&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45668543"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45668543&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LoganDark:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在 iOS Safari 上，当我滚动时，视频会自动全屏显示。我以前在其他博客上看到过这个，但我不知道是什么原因造成的。超级烦人&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://makie.org/website/blogposts/raytracing/</guid>
-      <pubDate>Thu, 19 Feb 2026 10:55:13 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47072444</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;InkCanon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;新加坡的经济政策复杂且常常误导。我将打破这些误解。&lt;p&gt;公积金的主要目的不是养老金计划。它的结构是公民的大规模&lt;i&gt;强制债券购买计划&lt;/i&gt;。从财务角度来看，37% 的公民收入以最低利率（与隔夜利率挂钩或最低 2.6%）购买长期债券（直到退休年龄，平均数十年）。这些回报与实际长期回报特别脱钩。这有历史根源，因为政府需要大量的资本融资。他们在短期利率和长期资本收益之间赚取了大量的差额。新加坡没有石油或自然资源，但其主权财富基金在挪威等国家地区拥有资产管理规模，因此也有此类资产。它不像文章所暗示的那样是减震器。提款条件很严格——住房、大额医疗费用和退休是从中获得金钱的唯一真正途径。&lt;p&gt;“努力让人们就业”是一个目标，而不是一项政策。事实上，新加坡政府通过移民维持着大量的劳动力供应。外籍工人人口，约30%。政府的主要目标是最大化工作人口的绝对数量。&lt;p&gt;提高退休年龄之所以能有效提高劳动力参与度，是因为大多数人别无选择。退休金只有在达到一定年龄后才能支付。普通新加坡人的工作生涯中，37% 用于缴纳公积金，另外 10% 可能用于缴纳所得税，另外 5% 用于缴纳消费税、道路税、财产税等。除此之外，还有天文数字的生活成本。这也是有意为之，为了增加员工数量。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hnthrow0287345:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;他们未能储蓄，因为世界很艰难，而他们的机构没有采取足够的措施来帮助他们度过难关。&lt;p&gt;好吧，美国很艰难。它为自己开启了核心资本主义模式，因为其人口中很大一部分想要尝试独自解决社会经济困难，并且讨厌任何不想接受同样挑战的人。&lt;p&gt;但不要仅仅责怪选民，大量资金用于建立能够获得更多资金的系统。最富有的人正确地打赌，现在这里不会发生取代富人和政客的起义，因此不存在真正的威胁，也不需要改变过去 25 年左右的发展方式。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aperocky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇文章似乎混淆了外部影响和内部动机。&lt;p&gt;是的，失业影响导致人们无法储蓄，反过来他们希望自己能储蓄更多……但忽略的是他们是否&lt;i&gt;可以&lt;/i&gt;开始。&lt;p&gt;当然，外部影响与内部拖延关系不大。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mothballed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;新加坡有一个&lt;i&gt;倒退&lt;/i&gt;减震器模式，大约一半的国家都是移民，他们没有资格获得公共住房，即使是富裕的公民也可以在新加坡享受公共住房（甚至可能不成比例，因为可能要等待很长时间才能入住，那时你已经年纪大了，也更安定下来）。  在冲击期间被榨干、破产和失业的移民在接受民意调查之前就被赶出了这个国家。&lt;p&gt;------回复：由于节流-------------&lt;p&gt;在美国，移民和资助公共住房的人通常比获得补贴住房的人&lt;i&gt;过得更好&lt;/i&gt;。  在美国，公共住房税更多的是累进税，而不是累退税，因此非常不同。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rayiner:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这里的一个令人困惑的因素是储蓄行为是有文化根源的：&lt;a href="https:&amp;#x2F;&amp;#x2F;pmc.ncbi.nlm.nih.gov&amp;#x2F;articles&amp;#x2F;PMC6135367&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;pmc.ncbi.nlm.nih.gov&amp;#x2F;文章&amp;#x2F;PMC6135367&amp;#x2F;&lt;/a&gt;。研究表明，一个国家内的人们可能有截然不同的储蓄行为，与他们的原籍国密切相关，即使是第三代移民也是如此。出于本分析的目的，将美国或新加坡视为同质人口是错误的。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.governance.fyi/p/america-vs-singapore-you-cant-save</guid>
+      <pubDate>Thu, 19 Feb 2026 14:52:18 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47074389</comments>
     </item>
     <item>
-      <title>卵石生产：二月更新</title>
-      <link>https://repebble.com/blog/february-pebble-production-and-software-updates</link>
-      <description>&lt;p&gt;#Pebble Time 2 生产更新我们现在正处于生产验证测试 (PVT) 阶段，这是量产 (MP) 之前的最后一站。 #Index 01 生产更新 Index 01 也处于生产验证测试 (PVT) 阶段。这将让您测量您的食指并找到您准确的 Pebble 特定戒指尺寸。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Pebble Production: February Update&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47073112"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://repebble.com/blog/february-pebble-production-and-software-updates'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>反对理论驱动的实验</title>
+      <link>https://journals.sagepub.com/doi/10.1177/26339137261421577</link>
+      <guid isPermaLink="true">https://journals.sagepub.com/doi/10.1177/26339137261421577</guid>
+      <pubDate>Thu, 19 Feb 2026 14:26:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47074083</comments>
+    </item>
+    <item>
+      <title>历史上的著名签名</title>
+      <link>https://signatory.app/#famous-signatures</link>
+      <description>&lt;p&gt;用手指、Apple Pencil、手写笔或鼠标进行绘制。由于几十年的慢性病，​​他的字迹恶化了。真实的签名照片售价超过 5,000 美元。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Famous Signatures Through History&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47073684"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://signatory.app/#famous-signatures'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Larrikin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望在我的 FitBit 账户被强制迁移到 Google 之前就能拥有我的手表。现在看来我是否能及时得到它似乎还悬而未决。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://repebble.com/blog/february-pebble-production-and-software-updates</guid>
-      <pubDate>Thu, 19 Feb 2026 12:36:00 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47073112</comments>
+&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;beezle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我和自己约会……当我还是个年轻的自吹自擂者时，《纽约邮报》出版了一系列尼克松的签名副本，从他上任到辞职。  变化是巨大的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fenomas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;添加我一直以来最喜欢的签名 - 库尔特·冯内古特，他经常（并非总是）在他的签名中添加了自己的漫画。多么灵活！&lt;p&gt;例如：&lt;a href="https:&amp;#x2F;&amp;#x2F;i0.wp.com&amp;#x2F;www.themarginalian.org&amp;#x2F;wp-content&amp;#x2F;uploads&amp;#x2F;2011&amp;#x2F;05&amp;#x2F;kurtvonnegutletter.jpg" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;i0.wp.com&amp;#x2F;www.themarginalian.org&amp;#x2F;wp-content&amp;#x2F;uploads&amp;#x2F;...&lt;/a&gt;&lt;p&gt;（我认为后来他的签名失去了香烟）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mobilene:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;拥有您签名的图形文件非常有用。三十年前，我采用了老派的方式——在纸上签上自己的名字，直到我喜欢为止，扫描它，创建 .gif 和 .bmp 文件。还是用那个吧&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;v4r:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我记得 HN 上提到过一个非常好的用触摸板画东西的网站，但我在我的历史记录中找不到它。我想它也可以用于签名。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PopAlongKid:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;五十次重复通常就能达到目的。&lt;p&gt;我认为这个数字偏低。我的签名是在我二十出头的时候被锁定的，当时我在一家商业 AM&amp;#x2F;FM 广播电台工作。  我必须签署各种发射器日志（FCC 要求），我记得大约每三个小时签署六次，而且我每周工作六天，所以有很多签名。我仍然花了一段时间才能够在不考虑它的情况下一致地签名（肌肉记忆）。&lt;p&gt;&amp;gt;最后一件事：考虑你将在哪里使用它。法律文件和合同需要的签名至少部分清晰 - 有人应该能够将其与您的打印姓名联系起来。&lt;p&gt;我认为这不是真的，尽管如果您能做的最好的事情就是用“X”签名，您可能需要见证您的合法签名。  毕竟，有些人没有手、失明或有其他可能妨碍“正常”生活的残疾。签名。&lt;p&gt;如今，随着纸质支票变得不常见，信用卡支付也跳过纸质收据进行签名，人们多久有机会在纸质文件上签名？&lt;p&gt;&amp;gt;但是对于日常使用、电子邮件、创意工作呢？它可以像你喜欢的那样抽象。&lt;p&gt;我认为尝试维护两个不同的签名没有多大意义，但如果您粘贴图像（例如电子邮件），我认为这并不是那么麻烦。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;the_gastropod:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“这不是马虎——这是你自己发现的签名。”&lt;p&gt;感谢 ChatGPT...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;donkeyboy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它缺少最有趣的签名。当西班牙仍然实行君主制时，斐迪南七世国王只是签署了他的签名“Yo el Rey”——字面意思是“我，国王”。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Antibabelic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;名人签名还是只是名人的签名？因为我很惊讶没有长老龙卢卡斯·克拉纳赫的签名。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elliotbnvl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;昨晚做了这个，因为我需要一个签名绘图工具，但 Google 没有透露任何具有 &lt;15 秒交互且没有电子邮件门的移动友好页面，以获得漂亮的签名。&lt;p&gt;历史签名是一个很好的接触，Claude 帮助我整理了 SEO。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://signatory.app/#famous-signatures</guid>
+      <pubDate>Thu, 19 Feb 2026 13:49:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47073684</comments>
     </item>
     <item>
-      <title>Show HN：LatentScore – 输入心情，获取程序/环境音乐（开源）</title>
-      <link>https://latentscore.com/demo</link>
-      <guid isPermaLink="true">https://latentscore.com/demo</guid>
-      <pubDate>Thu, 19 Feb 2026 12:06:05 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47072930</comments>
+      <title>在实践中衡量人工智能代理的自主性</title>
+      <link>https://www.anthropic.com/research/measuring-agent-autonomy</link>
+      <description>&lt;p&gt;克劳德代码中经验丰富的用户会更频繁地自动批准，但更频繁地打断。克劳德·代码停下来澄清的次数比人类打断它的次数还要多。克劳德·科德提供了相反的权衡。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Measuring AI agent autonomy in practice&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47073947"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.anthropic.com/research/measuring-agent-autonomy'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.anthropic.com/research/measuring-agent-autonomy</guid>
+      <pubDate>Thu, 19 Feb 2026 14:14:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47073947</comments>
     </item>
     <item>
-      <title>ShannonMax：利用信息论优化 Emacs 键绑定的库</title>
-      <link>https://github.com/sstraust/shannonmax</link>
-      <description>&lt;p&gt;jar 你的里面应该有一些东西。将 (shannon-max-start-logger) 添加到您的.但如果键盘上有 100 个键，则键绑定可能会非常短。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; ShannonMax: A Library to Optimize Emacs Keybindings with Information Theory&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47072603"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/sstraust/shannonmax'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://github.com/sstraust/shannonmax</guid>
-      <pubDate>Thu, 19 Feb 2026 11:15:38 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47072603</comments>
-    </item>
-    <item>
-      <title>多年的生产级并发经验告诉我们如何构建 AI 代理</title>
-      <link>https://georgeguimaraes.com/your-agent-orchestrator-is-just-a-bad-clone-of-elixir/</link>
-      <description>&lt;p&gt;人工智能代理打破了这种模式。每个 BEAM 轻量级进程约为 2KB。 BEAM 进程可以透明地跨节点通信。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; What years of production-grade concurrency teaches us about building AI agents&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47067395"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://georgeguimaraes.com/your-agent-orchestrator-is-just-a-bad-clone-of-elixir/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>C++26：标准：Is_within_lifetime</title>
+      <link>https://www.sandordargo.com/blog/2026/02/18/cpp26-std_is_within_lifetime</link>
+      <description>&lt;p&gt;该函数在不断求值期间检查 p 是否指向当前处于其生命周期内的对象。 i，该成员变得活跃。但在不断评估的过程中，这就会成为问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; C++26: Std:Is_within_lifetime&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47073663"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.sandordargo.com/blog/2026/02/18/cpp26-std_is_within_lifetime'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 14 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;veunes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“让它崩溃”概念非常适合确定性错误，但它适用于概率性错误吗？&lt;p&gt;如果 LLM 返回垃圾，使用相同的提示和温度 0 重新启动进程（代理）会产生相同的垃圾。 Erlang Supervisor 以干净状态重新启动进程。对于代理“清洁状态”来说， = 丢失对话上下文&lt;p&gt;我们不仅需要监督树，我们还需要可以在重新启动时更改策略的语义监督树。 BEAM 并没有提供开箱即用的功能，您仍然需要手动编码&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zknill:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;本文有两个部分。调度程序的抢占和网络传输。这篇文章绝对正确，即通过 HTTP 连接和 SSE 流式响应进行长期请求响应很糟糕。&lt;p&gt;这篇文章非常简短地介绍了 Phoenix LiveView 和 Websockets。我写过关于为什么聊天机器人讨厌页面刷新的文章[1]，并且仅通过交换到 Websockets 并不能解决这个问题。到目前为止，最好的机制是发布和订阅，特别是当您可以从传输中基本上免费获得多用户和多设备、会话切换、重新连接、历史恢复和令牌压缩时。&lt;p&gt;1: &lt;a href="https:&amp;#x2F;&amp;#x2F;zknill.io&amp;#x2F;帖子&amp;#x2F;聊天机器人-最坏的敌人是页面刷新&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;zknill.io&amp;#x2F;帖子&amp;#x2F;chatbots-worst-enemy-is-page-refresh...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;quadruple:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; BEAM 的“让它崩溃”哲学采取相反的方法。您不必预测每种故障模式，而是编写快乐路径并让进程崩溃。主管检测到崩溃并以干净的状态重新启动进程。系统的其余部分继续不受影响。&lt;p&gt;我想要这个吗？如果我的请求由于该工具没有数据库连接而失败，我希望模型接收有关该错误的信息。如果 LLM API 由于对话太长而返回错误，我想运行压缩或其他上下文工程策略，我不想重新启动进程只是为了再次遇到同样的事情。我是否误解了 Elixir 的优势？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vinnymac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与代理商一起使用 Elixir 已有一年多了。对我来说，这似乎是一个显而易见的选择。&lt;p&gt;Node 很棒，但扩展 Elixir 线程更是如此。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mackross:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我是 Elixir 的超级粉丝，但恕我直言，它并不能解决开箱即用的持久执行问题，这是一个经常被 BEAM 粉丝掩盖的主要问题。由于 ETS 和监督树不能很好地通过重新启动进行部署，因此您必须将某种级别的执行状态写入关系数据库或文件。您可以选择持久 ETS、mnesia 等（它们有自己的权衡，并在深入文档中带来某种粗糙的数据丢失场景）。但是，无论您选择什么，根据我的经验，您都需要花费相当多的时间来考虑您的进程如何在重新启动后继续存在。另外，Oban 也不错，但它是一个沉重的层，使得控制流更难以遵循。而且，是的，您可以部署自己的热代码并在持久虚拟机和裸机中运行，并成为真正的 BEAM 本地人，但开箱即用并不容易，并且有自己的一套脚枪。如果我遗漏了什么，我希望有人向我解释如何做得更好，因为每当我拿起长生不老药时，我发现这是一个很大的痛点。我想使用漂亮的原语，但我觉得我总是在服务器重启时与持久执行作斗争。我希望 lang&amp;#x2F; 框架中包含一个temporal.io 客户端或具有类似保证的东西。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nottorp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不明白。难道我们不应该只给“人工智能”分配任务吗？代理商如何提高自己？&lt;p&gt;多年的经验算什么？这是过时的想法！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;koakuma-chan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你应该只使用 Rust&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;manojlds:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当然他们指的是 Erlang 而不是 Elixir&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;znnajdla:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Anthropic 是否有人阅读我的 AI 聊天记录？几周前，在研究了构建长期运行的浏览器代理的正确框架后，我确实得出了这个结论。对 Elixir 的经验为零，但当我看到他们的语言构造时，它就“点击”了立刻就知道这完全适合人工智能代理框架。您立即解决的另一个问题：没有 kubernetes 地狱的分布式部署。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;randomtoast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我过去构建过相当大的 OTP 系统，我认为核心主张在方向上是正确的：长期存在的、有状态的、容易失败的“对话”。非常自然地映射到 Erlang 进程和监督树。代理会话基本上是一个具有更差延迟和更多不确定性的呼叫会话。&lt;p&gt;也就是说，当前的许多代理工作负载都是围绕外部 API 的 I&amp;#x2F;O 绑定。如果 95% 的时间都在等待 OpenAI 或 Anthropic，那么调度模型就没有人们想象的那么重要。当您在同一运行时中存在真正的争用或 CPU 繁重工作时，BEAM 的抢占和每进程 GC 就会发挥作用。无论如何，许多团队都会悄悄地将嵌入、解析或模型托管推送到单独的服务。&lt;p&gt;在这种情况下，热代码交换确实很有趣。在大多数主流堆栈上，在不中断飞行会话的情况下更新代理逻辑并非易事。但在实践中，许多初创公司都习惯于耗尽负载均衡器后面的连接并就此结束。&lt;p&gt;所以我的看法是：如果您实际上需要数百万个并发、有状态、具有强大故障隔离功能的软实时会话，那么 BEAM 是一个非常合理的默认设置。如果您主要将数千个用户的 API 调用粘合在一起，那么运行时差异不如周围的工具和招聘池那么决定性。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fud101:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这一切都很好，但是带有 Phoenix 和 Liveview 的 Elixir 超级臃肿，你必须有一个真正的理由来购买这样一个你无法用更简单的堆栈完成的怪物。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simianwords:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不明白代理框架的意义。除了持久性和检查点之外，它对我有什么帮助？&lt;p&gt;Claude 代码已经作为在必要时调用工具的代理，因此尚不清楚抽象在这里有何帮助。&lt;p&gt;我对 langchain 和相关技术感到非常困惑，因为它们看起来如此臃肿，没有给我提供任何优势？&lt;p&gt;我真的很想知道我错过了什么。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bitwize:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;确实...&lt;p&gt;Erlang 没有引入 actor 模型，就像 Java 没有引入垃圾收集一样。该模型是由 Hewitt 等人开发的。在 70 年代，Scheme 语言被开发来研究它（核心见解：actor 和 lambda 归结为本质上相同的东西，你真的不需要太多语言来支持一些非常抽象的概念）。&lt;p&gt;Erlang 是 Actor 模型在工业应用中的一个出色的&lt;i&gt;实现&lt;/i&gt;，并且可能证明了该模型在大规模“真实”应用中的实用性。工作比什么都重要。这一点以及它在语义上与Scheme相当接近是我喜欢它的原因。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mccoyb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;基本同意作者的观点，除了这一点：&lt;p&gt;&gt; TypeScript&amp;#x2F;Node.js：由于事件循环，并发性更好，但基本上仍然是单线程的。工作线程存在，但它们是重量级操作系统线程，而不是 2KB 进程。没有抢占式调度：一个受 CPU 限制的操作会阻塞一切。&lt;p&gt;这不可能是真正的抗议：代理框架中 100% 的时间都花在了……等待代理响应，或等待工具调用执行。几乎没有时间花在框架本身的逻辑上。&lt;p&gt;即使您使用重量级操作系统线程，我也不相信这很重要。&lt;p&gt;现在，关于热代码交换的其他要点......对于我们这些使用过 Elixir 或 Erlang 的人来说非常真实，非常明显。&lt;p&gt;例如，OpenClaw：“就地更新”会容易得多。如果语言运行时在设计时就首先考虑到了这种能力。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://georgeguimaraes.com/your-agent-orchestrator-is-just-a-bad-clone-of-elixir/</guid>
-      <pubDate>Wed, 18 Feb 2026 22:37:35 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47067395</comments>
+&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aeve890:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;我挠了挠头。链接正确吗？&lt;p&gt;&amp;gt;是的 - 而且完全有道理。&lt;p&gt;C++ 趋势中的平均 C++ enyojer 应对机制，即以最复杂（且常常是错误）的方式命名事物。 std::vector、std::monostate、std::unit 等&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amelius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;断言(std::is_language_getting_too_hairy(&amp;amp;cpp));&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;estimator7292:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我与 consteval 以及整个模板元编程和代码生成范式交互越多，我就越认为将其铲入 stdlib 是完全不合适的。我认为这甚至不应该是语言本身的一部分，而更像是 C++ 语言之上的 linter。&lt;p&gt;对于我们大多数人来说，似乎你可以擅长 C++ 或元编程。但是，除非您想将其作为您的&lt;i&gt;整个职业&lt;/i&gt;，否则您无法真正以相同程度的效率同时完成这两件事。&lt;p&gt;我真的很喜欢 C++，而且我可能会永远继续使用它。但实际上只有&lt;i&gt;非常小的&lt;/i&gt;语言子集适用于我选择的领域。我是一名“有课程的 C”这种人、模板和 constexpr 非常罕见。天哪，有一半的时间我什至没有嵌入式平台上的 stdlib。实际上，这很好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dzdt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这延续了这样的趋势：C++ 语言规范太大，任何人都无法理解，充满了晦涩用例的不透明命名的东西。也许当大多数代码都是由法学硕士编写时，这种扩展会受到赞赏？因为法学硕士可以设法充分了解所有这些晦涩的功能并将它们应用在适当的情况下？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tw1984:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你真该恨自己到了 2026 年仍然关注这些可怕的东西。&lt;p&gt;在 C++ 发明 41 年后，它的 stdlib 中仍然没有网络支持。一个又一个的借口，他们有数以百万计的理由来解释为什么 stdlib 不需要网络。但与此同时，一些官僚“委员会成员”与中年危机作斗争的人希望你在 AI 时代的 Std:Is_within_lifetime 之类的东西上浪费生命。&lt;p&gt;真是天大的笑话！&lt;p&gt;迫不及待地想看到一些高精度编码代理开始能够以最少的人为干预将 C++ 代码移植到 Rust，从而将人们从 CS 历史上最官僚的废话中解放出来。如果有一些 AI 原生语言融入了对人类来说过于复杂的概念那就更好了。&lt;p&gt;现在正是像 C++ 那样贬低恐龙的最佳时机！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;worldsavior:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;像 CPP 这样的成熟语言应该停止向该语言标准添加更多功能。向语言添加功能只会使其变得更加复杂，而添加到 std 库只会增加更多开销，甚至可能会出现安全问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pif:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果人们学会正确编程并完全抛弃工会就好了……&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;irishcoffee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也许这可能很简洁。我永远不会使用它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MountainTheme12:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在我的 C++ 中，联合体的所有成员始终处于活动状态。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;matthewkayin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;文章中指出的问题似乎有点愚蠢。我们添加整个语言功能是因为有人想要一个可选的 bool 类？为什么不直接创建一个具有三个值的 uint8_t：OPTIONAL_BOOL_FASLE、OPTIONAL_BOOL_TRUE、OPTIONAL_BOOL_UNDEFINED？&lt;p&gt;这样做会占用与 bool 相同的空间，并且如果需要提供更好的接口，可以将其包装在类中。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mFixman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是 C++ 联合中出现的第一种求和类型选项选择语句吗？自 1978 年以来，我一直在等待此功能。&lt;p&gt;尽管如此，如果不对允许良好模式匹配的“switch”语句进行语言级重载，这仍然是一个浪费的机会。即使使用 std::is_within_lifetime C++ 联合也容易出错并且难以使用。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eptcyka:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;C++ 人员会指出这一点并说*看，C++ 仍在不断发展，我们正在认真对待内存问题*。你当然是，爷爷。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.sandordargo.com/blog/2026/02/18/cpp26-std_is_within_lifetime</guid>
+      <pubDate>Thu, 19 Feb 2026 13:47:30 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47073663</comments>
+    </item>
+    <item>
+      <title>狗狗轨道</title>
+      <link>https://dogetrack.info/</link>
+      <description>&lt;p&gt;DOGE 跟踪跟踪损坏这是什么。 DOGE 的项目 打击联邦劳动力 欺诈和浪费 控制支出 监管回滚 IT 现代化 “上帝视角”行政命令 DOGE 时间表 DOGE 中的人员 谁是 DOGE。细节中的魔鬼 破坏者揭露 化名 领导者和支持者 支持团队 推动者如何支持 DOGE 关键推动者 未知 多产破坏者 阿卡什·博巴 内特·卡瓦诺 卡瓦诺的亲信 爱德华·科里斯坦 马尔科 埃莱兹 卢克·法里托 科尔·基利安 加文·克利格 塔拉克 马克查·阿拉姆·莫加达西 尼基尔·拉杰帕尔·亚当·拉马达·佩顿 雷林 凯尔·舒特 伊桑·绍特兰·乔丹威克 其他清障机构 目标机构 时间表 人事管理办公室 总务管理局 白宫/DOGE 国家设计工作室 美国国际开发署 消费者金融保护局 农业部 商务部 国防部 教育部 能源部 国土安全部 内政部 司法部 劳工部 交通运输部 环境保护局 卫生与公共服务部 住房和城市发展局 国家航空航天局 小企业协会 社会保障管理局 国务院 财政部 美国邮政服务退伍军人管理局 国家劳动关系委员会 独立机构 一切页面 所有人员 所有事件 所有人员调动 所有系统 所有来源引用 所有未解决的问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; DOGE Track&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47072967"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://dogetrack.info/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;squeegmeister:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您可以考虑在 reddit 的 fednews subreddit 中分享此内容。很棒的项目&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rapnie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嘿，整个美国政府不会很快就可以在 Palantir AI 上方便地运行，而不需要这个讨厌的民主政府层吗？你只需要行政部门+傀儡就可以让它看起来民主，对吧？ DOGE 只是数据获取过程。 &amp;#x2F;s？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hamdingers:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;DOGE 的真正目的是从 IRS、SSA、医疗补助和其他机构窃取敏感数据。我们可能永远不知道他们用它做了什么，但它肯定在当前的移民镇压中发挥了作用。&lt;p&gt;从长远来看，它将影响我们所有人，可能比新闻更喜欢关注的削减影响更大（尽管它们可能是悲剧性的）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;baggachipz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哦，太棒了，我真的希望今天能让我热血沸腾。光天化日之下发生的数据泄露事件令人震惊，而当政府纵容这种行为时，更是如此，而政府本应防止此类欺诈和侵犯隐私的行为。从这个疯狂的时间线中恢复需要很长时间（如果有的话）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reenorap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一些人完全不想控制联邦支出，这让我难以置信。政府一些部门的员工数量在5年内几乎翻了一番，除了庞大的预算外，没有什么可看的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;myrmidon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为，时不时地摆脱党派倾向并严格审查政策举措并形成某种主观的承诺过多和兑现不足的判断非常重要（还要考虑他们成功或失败的&lt;i&gt;地点&lt;/i&gt;、&lt;i&gt;原因&lt;/i&gt;和&lt;i&gt;如何&lt;/i&gt;）。&lt;p&gt;对我来说，整个Doge计划在这方面得分相当差：
+最初的承诺似乎不现实（甚至更糟：具有欺骗性），而（初步）结果也乏善可陈。&lt;p&gt;我的印象是，绝大多数“节省”都是为了节省资金。从来没有通过承诺的效率提升或消除纯粹浪费来实现，而是简单地通过削减项目来实现，即削减某种形式的公共服务或福利以节省税款。这显然是低劣的。&lt;p&gt;我认为沿着这条路线的承诺值得&lt;i&gt;极端&lt;/i&gt;怀疑：“简单”削减法规和公共预算以获得“轻松收益”这是不可信的，如果有人提出同样的论点支持核能或类似的东西，我只会给他们贴上“骗子”“白痴”的标签并看到现实支持我的观点......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;plasma_beam:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢这个网站的布局。然而，我认为应该更突出地指出，数据的主要来源是在线新闻文章。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FrustratedMonky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这个网站很棒。&lt;p&gt;但需要一些整体图形、一些图表或其他东西来讲述一个故事。  比如花费的钱与节省的钱之类的东西，以表明整个努力是如何低效的。&lt;p&gt;而且。我希望在 Project 2025 中看到类似的东西。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aaa_aaa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对我来说，提高“政府效率”是最重要的。对于大国来说是无法实现的。谁声称能做到这一点，谁就是傻子或者坏演员。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yabones:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;特别是美国国际开发署，这是美国历史上软实力遭受的最大侵蚀。所有这些“外国援助”都是为了不是为了慈善事业或任何人的善良之心，而是为了保持“第三世界”的安全。与美国外交政策目标一致。并设定农产品价格下限。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pjc50:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;可悲的是，人们没有怀念行政状态，直到为时已晚。&lt;p&gt;我想起了&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;2008_Chinese_milk_scandal" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;2008_Chinese_milk_scandal&lt;/a&gt; ;一个副作用是人们从澳大利亚向中国进口婴儿配方奶粉，因为他们比中国食品安全当局更信任澳大利亚食品安全当局。&lt;p&gt;DOGE 的内脏很可能引发了某种尚未出现或公开的类似问题。更不用说像普渡制药公司这样的问题的背景水平了。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://dogetrack.info/</guid>
+      <pubDate>Thu, 19 Feb 2026 12:13:39 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47072967</comments>
     </item>
   </channel>
 </rss>
