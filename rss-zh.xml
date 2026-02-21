@@ -6,50 +6,125 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 21 Feb 2026 15:30:40 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Feb 2026 18:44:04 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>macOS 鲜为人知的命令行沙箱工具</title>
-      <link>https://igorstechnoclub.com/sandbox-exec/</link>
-      <description>&lt;p&gt;sandbox-exec 入门使用 sandbox-exec 需要创建一个沙箱配置文件（配置文件）来定义安全环境的规则。 sb command_to_run 配置文件所在位置。 sb: (版本 1) (允许默认) (拒绝网络*) (拒绝文件读取数据 (正则表达式 "^/Users/[^/]+/(Documents|Pictures|Desktop)")) # 运行沙盒终端 sandbox-exec -fterminal-sandbox.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; macOS's Little-Known Command-Line Sandboxing Tool&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47101200"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://igorstechnoclub.com/sandbox-exec/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>安全检查表上不应该写什么</title>
+      <link>https://milk.com/wall-o-shame/security_clearance.html</link>
+      <description>&lt;p&gt;那天晚上我向母亲报告了这一损失。他们说眼镜还没有上交。”他们显然并不完全相信他们只是在和孩子们打交道。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; What Not to Write on Your Security Clearance Form&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47102576"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://milk.com/wall-o-shame/security_clearance.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xyzzy_plugh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;sandbox-exec 拥有“沙箱”功能，这让我抓狂。从名称上看，因为它与真正的沙箱完全不同，更接近于高级 seccomp 之类的东西，并且与“应用程序沙箱”没有太大关系。这是 macOS 的一项独特功能。&lt;p&gt;在我看来，真正的沙箱可以让程序按照自己的意愿行事，而不会影响沙箱之外的任何内容。实际上，这些工具中的许多在尝试跨越定义的边界时只会导致严重故障。&lt;p&gt;它的文档记录也很差，并且 IIRC 已弃用。我不知道应该用什么来取代它。&lt;p&gt;如果 macOS 只是在沙箱中安装了覆盖层，那么它会解锁很多东西。与 Linux 容器（docker、systemd、bubblewrap，甚至 unshare）相比，macOS 就是一个笑话。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ImJasonH:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Claude Code 和 Codex 都使用 sandbox-exec 和 Seatbelt 来沙箱执行：&lt;p&gt;- &lt;a href="https:&amp;#x2F;&amp;#x2F;developers.openai.com&amp;#x2F;codex&amp;#x2F;security&amp;#x2F;#os-level-sandbox" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;developers.openai.com&amp;#x2F;codex&amp;#x2F;security&amp;#x2F;#os-level-sandb...&lt;/a&gt;&lt;p&gt;- &lt;a href="https:&amp;#x2F;&amp;#x2F;code.claude.com&amp;#x2F;docs&amp;#x2F;en&amp;#x2F;沙箱" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;code.claude.com&amp;#x2F;docs&amp;#x2F;en&amp;#x2F;沙箱&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kermatt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的配置使用了类似方案的格式。关于这是如何发生的有什么想法吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Someone:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;man.freebsd.org&amp;#x2F;cgi&amp;#x2F;man.cgi?query=sandbox-exec&amp;amp;apropos=0&amp;amp;sektion=1&amp;amp;manpath=macOS+10.13.6&amp;amp;format=html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;man.freebsd.org&amp;#x2F;cgi&amp;#x2F;man.cgi?query=sandbox-exec&amp;amp;aprop...&lt;/a&gt;:&lt;p&gt;&lt;i&gt;“sandbox-exec 命令已弃用。希望对应用程序进行沙箱处理的开发人员应采用应用程序沙箱设计中描述的应用程序沙箱功能指南”&lt;/i&gt;&lt;p&gt;MacOS 26.3 仍然如此（&lt;a href="https:&amp;#x2F;&amp;#x2F;man.freebsd.org&amp;#x2F;cgi&amp;#x2F;man.cgi?query=sandbox-exec&amp;amp;apropos=0&amp;amp;sektion=1&amp;amp;manpath=macOS+26.3&amp;amp;format=html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;man.freebsd.org&amp;#x2F;cgi&amp;#x2F;man.cgi?query=sandbox-exec&amp;amp;aprop...&lt;/a&gt;)&lt;p&gt;MacOS 10.13.6 是从 2017 年开始的，所以它已经被弃用了近 10 年。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throw0101c:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;任何第三方包管理器（Brew、MacPorts）是否可能将其用于构建（甚至安装，如果事情仅限于（例如）&amp;#x2F;opt）之类的事情？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;davidcann:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我为此制作了一个 UI 来运行终端应用程序，例如 claude 和 codex： &lt;a href="https:&amp;#x2F;&amp;#x2F;multitui.com" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;multitui.com&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chmaynard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;写得不错！这是 Apple 平台上更大的安全伞框架的一个组成部分：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;developer.apple.com&amp;#x2F;documentation&amp;#x2F;security" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;developer.apple.com&amp;#x2F;documentation&amp;#x2F;security&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CGamesPlay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感谢您将这些内容放在一起，这非常有帮助。&lt;p&gt;读者可能还会对 &lt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;eugene1g&amp;#x2F;agent-safehouse" 感兴趣rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;eugene1g&amp;#x2F;agent-safehouse&lt;/a&gt;&amp;gt;这是在最近的 HN 对话后开源的 &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46923436"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46923436&lt;/a&gt;&gt;。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://igorstechnoclub.com/sandbox-exec/</guid>
-      <pubDate>Sat, 21 Feb 2026 14:34:45 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47101200</comments>
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;svag:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与这个故事无关，但这个 &lt;a href="https:&amp;#x2F;&amp;#x2F;milk.com&amp;#x2F;true-stories&amp;#x2F;stupid_computer_users.txt" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;milk.com&amp;#x2F;true-stories&amp;#x2F;stupid_computer_users.txt&lt;/a&gt; 很搞笑:)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;avodonosov:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这个故事也写在另一篇文章中，并在 HN 上进行了讨论。它更长，作者还描述了他后来如何引入了在自行车比赛中佩戴头盔的标准。 （抱歉，我手头没有链接）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;forinti:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;很久以后的另一个场合，我偶然了解到，在安全审查表格上添加某些挑衅性信息可以大大加快审查过程。但这是另一个故事了。&lt;p&gt;我现在必须知道这一点......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;denotational:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;很久以后的另一个场合，我偶然了解到，在安全审查表格上添加某些挑衅性信息可以大大加快审查过程。但这是另一个故事了。&lt;p&gt;这大概就是著名的（？）故事，每当有人问他时，他都会将自己的种族列为“杂种”？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;boothby:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令人难以置信的是，保安的建议是&lt;i&gt;在表格上撒谎&lt;/i&gt;，这几乎肯定是重罪。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;breadchris:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我被拥有 milk.com 的不可思议所吸引&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lacoolj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不知道作者名字是不是爱丽丝&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bombcar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很明显真正的间谍是鲍勃。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sargun:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得政府在这些死胡同的调查上花了多少钱有点有趣。我们永远无法确切知道有多少被浪费了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alwa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;(1988) 非常可爱&lt;p&gt;来自一位 OG 计算机科学家 [0]，关于 12 岁时的滑稽动作，这可能会让我们中的一些人感到熟悉:)&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Les_Earnest" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Les_Earnest&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://milk.com/wall-o-shame/security_clearance.html</guid>
+      <pubDate>Sat, 21 Feb 2026 17:08:12 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47102576</comments>
     </item>
     <item>
-      <title>长鑫存储一直以大约当前市场价格一半的价格提供 DDR4 芯片</title>
-      <link>https://www.koreaherald.com/article/10679206</link>
-      <description>&lt;p&gt;从传统芯片中获得的现金和技术正在为高端产品的开发提供资金。该工厂一半的产能将分配给 DRAM。该公司最初将专注于传统 DRAM 产品，并有可能与当地组装公司合作扩展到 HBM 生产。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; CXMT has been offering DDR4 chips at about half the prevailing market rate&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47101171"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.koreaherald.com/article/10679206'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>《猫之书》 – Nekochan.net 存档，已更新</title>
+      <link>http://nekonomicon.irixnet.org/</link>
+      <description>&lt;p&gt;《猫之书》 《猫之书》第 1 卷 - 结局之书 什么是《猫之书》。第二卷 - 笔记之书 Nekochan论坛的作品集。第 3 卷 - 插图集 Nekochan 照片库。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Nekonomicon – Nekochan.net Archive, Updated&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47102208"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='http://nekonomicon.irixnet.org/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tonetegeatinst:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;更多竞争总是好的&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.koreaherald.com/article/10679206</guid>
-      <pubDate>Sat, 21 Feb 2026 14:32:16 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47101171</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Keyframe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为 SGI 所有者，谢谢！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;basilgohar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很高兴你解释了它到底是什么。我只是出于好奇而点击了它，因为它一定与黑客新闻中听起来的不同。我很高兴发现它与旧的 Silicon Graphics 硬件有关。 :-) 我对那些机器野兽有着美好的回忆。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ThatGuyRaion:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;问候 HN，&lt;p&gt;作为现任 Nekonomicon 管理员，从 Elf 手中接管该项目，我终于添加了一个“新部分”。&lt;p&gt;让我解释一下&lt;p&gt;Nekochan.net 是一个著名的 SGI 网站，于 2018 年 5 月 21 日关闭。记得那一天就像昨天一样。我起床，去一家餐馆买点食物，当我吃饭时，人们开始轰炸我。&lt;p&gt;无论如何，在 2019 年，IRIXNet 的用户 Elf 决定从 archive.org 上抓取论坛帖子，并将其重新格式化为“Nekonomicon Book of Notes”&lt;p&gt;在 2020 年，我手动（2104 张图像！）抓取了原始图像和元数据nekochan 的 archive.org 并将其放在 Silicon Image 上。&lt;p&gt;Silicon Image 很快就会迁移到我使用 Laravel 构建的一个新项目。作为其中的一部分，我用 python 构建了一个静态站点生成器，将其重建为 Nekonomicon 插图集。经过 2-3 天的快速原型设计后，我在这里启动并运行它：&lt;p&gt;&lt;a href="http:&amp;#x2F;&amp;#x2F;nekonomicon.irixnet.org&amp;#x2F;gallery&amp;#x2F;index.html" rel="nofollow"&gt;http:&amp;#x2F;&amp;#x2F;nekonomicon.irixnet.org&amp;#x2F;gallery&amp;#x2F;index.html&lt;/a&gt;&lt;p&gt;压缩包即将更新。&lt;p&gt;未来的 Nekonomicon 更新可能包括：&lt;p&gt;1. Geoman 和其他一些社区成员对论坛备份进行了 ganked。我也许最终能够合并并协调，但我怀疑这将需要人工智能的帮助。&lt;p&gt;2. Nekochan.net 博客。主要是为了怀旧。&lt;p&gt;无论如何，享受回忆之旅吧。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">http://nekonomicon.irixnet.org/</guid>
+      <pubDate>Sat, 21 Feb 2026 16:27:01 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47102208</comments>
     </item>
     <item>
-      <title>即时人工智能响应</title>
-      <link>https://chatjimmy.ai/</link>
-      <guid isPermaLink="true">https://chatjimmy.ai/</guid>
-      <pubDate>Sat, 21 Feb 2026 09:42:04 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47099087</comments>
+      <title>DialUp95 – 一首 90 年代怀旧歌曲</title>
+      <link>https://dialup95.com/</link>
+      <description>&lt;p&gt;× DialUp95 ISP 用户名： 密码： 保存密码 电话号码： 拨号来源： 默认位置 拨号属性。连接 取消 连接到 DialUp95 ISP × 状态：正在拨号。取消 连接到 DialUp95 ISP _ □ × 以 31200 bps 连接 持续时间：000:00:00 断开连接 详细信息 &gt;&gt; 服务器类型：PPP：Windows 95、Windows NT 3。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; DialUp95 – A 90s inspired nostalgia hit&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47102763"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://dialup95.com/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;therealmarv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;突然感觉再次上网很贵......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andrea76:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一部杰作&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://dialup95.com/</guid>
+      <pubDate>Sat, 21 Feb 2026 17:26:17 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47102763</comments>
+    </item>
+    <item>
+      <title>显示 HN: Iron-Wolf – Rust 中的 Wolfenstein 3D 源移植</title>
+      <link>https://github.com/Ragnaroek/iron-wolf</link>
+      <description>&lt;p&gt;Rust 中的 Iron Wolf Wolfenstein 3D 我们的目标是在 Rust 中对 Wolfenstein 3D 进行像素化、模组友好的完美再现。 dev/ 如果您有完整游戏文件的副本，您可以将它们上传到那里并在浏览器中玩完整版本： 配置文件 配置文件是可选的。 toml 并将其放在 Iron Wolf 可执行文件旁边。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Iron-Wolf – Wolfenstein 3D source port in Rust&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47101890"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/Ragnaroek/iron-wolf'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xeonmc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果今天发布，游戏将被认为在政治上过于煽动。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;klaussilveira:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有些相关：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;Henrique194&amp;#x2F;iron-doom" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;Henrique194&amp;#x2F;iron-doom&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amelius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与编写自己的双向链表相比，《德军总部》简直就是小菜一碟。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vunderba:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;干得好。网络版本的几个注意事项：&lt;p&gt;- 一旦在 Chromium 浏览器上启动共享软件游戏，它就会疯狂地闪烁，显示“B.J.”。布拉兹科维奇”脸。&lt;p&gt;- 你错过了添加大家都知道的经典代码，M-L-I！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/Ragnaroek/iron-wolf</guid>
+      <pubDate>Sat, 21 Feb 2026 15:52:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47101890</comments>
+    </item>
+    <item>
+      <title>爪子现在是法学硕士代理人之上的新层</title>
+      <link>https://twitter.com/karpathy/status/2024987174077432126</link>
+      <description>&lt;p&gt;我们检测到该浏览器中禁用了 JavaScript。请启用 JavaScript 或切换到支持的浏览器以继续使用 x。服务条款 隐私政策 Cookie 政策 版本说明 广告信息 © 2026 X Corp.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Claws are now a new layer on top of LLM agents&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47096253"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://twitter.com/karpathy/status/2024987174077432126'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 30 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所有：此帖子中的相当多评论（以及我们合并到这里的另一条评论 - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47099160"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47099160&lt;/a&gt;）包含人身攻击。希望他们中的大多数人现在已经被[标记]和/或[死亡]。&lt;p&gt;在 HN 上，无论您对某人的感觉有多强烈或不同意他们，请不要进行人身攻击。它破坏了网站的用途，我们会审核并禁止这样做的帐户。&lt;p&gt;如果您最近没有这样做，请查看&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;newsguidelines.html"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;newsguidelines.html&lt;/a&gt; 并确保您在此处发帖时按预期使用该网站。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tabs_or_spaces:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;快速浏览一下 NanoClaw 看起来真的很有趣，因为核心引擎有大约 4000 行代码&lt;p&gt;这么多年过去了，为什么我们总是把代码行数作为任何叹息的指标。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;edgarvaldes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也许整个网络安全剧场只是一场猜谜游戏。对这些工具的狂热证明了这一点。物联网显然是如此无聊，以至于人们主要关心的是安全性。人工智能是如此有趣，以至于对于绝大多数黑客、程序员和首席技术官来说，安全不再只是事后的想法；这是不存在的。没人关心。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yoyohello13:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直在使用 go-mcp 和 cloudflare 隧道&amp;#x2F;电子邮件中继构建自己的“OpenClaw”之类的东西。我可以向 Claude 发送电子邮件，它会通过电子邮件向我发回状态更新和结果。显然不像 OpenClaw 那样容易设置，但至少我确切地知道正在运行什么代码以及我为法学硕士提供了哪些功能。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throw03172019:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人们使用利爪做什么？随处可见它很有趣，但我还没有任何使用它们的好主意。&lt;p&gt;有人分享他们的用例吗？  谢谢！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vatsachak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这一切都是那么不科学、无法衡量。希望我们能够构建更多关于重量的顺序参数并开始测量这些参数，而不是“用爪子在自行车上画鹈鹕”。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mikewarot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我也对“Claws”感兴趣，但我想弄清楚如何在基于功能的安全操作系统中本地运行它，以便它可以受到严格限制，但仍然有用。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们在 GTA VI 之前就有了商店品牌 Claw。&lt;p&gt;事实上，制作自己的 Claw 并不难！ NanoClaw 吹嘘有 500 行，但仓库有 5000 行，所以我很伤心。所以我尝试了一下。&lt;p&gt;结果需要 50 行代码。&lt;p&gt;你所需要的只是几行你选择的语言的 Telegram 库代码，以及 `claude -p prooompt`。&lt;p&gt;再多 2 行，你就可以支持 Codex 或你最喜欢的无限代币了:)&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;a-n-d-a-i&amp;#x2F;ULTRON&amp;#x2F;blob&amp;#x2F;main&amp;#x2F;src&amp;#x2F;index.ts" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;a-n-d-a-i&amp;#x2F;ULTRON&amp;#x2F;blob&amp;#x2F;main&amp;#x2F;src&amp;#x2F;index.ts&lt;/a&gt;&lt;p&gt;就是这样！没有其他源文件。 （当然，我们外包了代理，但我听说你也可以通过 50 行 bash 获得近乎完美的结果......注意这个空间！（这是真的，当你&lt;i&gt;移除&lt;/i&gt;线束时，Claude Opus 在多个编码和计算机使用基准测试中表现更好。））&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_boffin_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我刚刚意识到我花了一年多的时间构建了开放爪，但从未将其发布给任何人。应该发布它并获得名声。嘘。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hmokiguess:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些东西真的有用吗？还是我们普遍感到孤独，对虚荣人工智能产生了深刻的需求？&lt;p&gt;我这么说是因为除了一个很快就会变得无聊的玩具之外，我无法让自己找到它的用例。&lt;p&gt;一些关于调度功能的存储库中的一个例子提到“打开这些东西并为我总结它们”，这感觉就像垃圾邮件和噪音，没有价值。&lt;p&gt;不久前，我们有一条热门推文，内容是希望人工智能为你洗碗而不是取代创造力，我我猜这感觉就像是尝试去那里，但对我来说这是错误的实现。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaway13337:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于“爪子”真正重要的是因为它们是以用户为中心的代理。&lt;p&gt;每个人都讨厌的人工智能是内置于产品中的东西。这是代表公司的AI。它是你空间中的外来入侵者。&lt;p&gt;爪子归你所有，并且是你的习惯。你甚至可以说出它们的名字。&lt;p&gt;这就是 R2D2 和试图向你推销垃圾的机器人克隆之间的区别。&lt;p&gt;（我知道 llms 本身不是本地的，但它们在本地运行，并且被标记为“定制”，由用户控制）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;trcf23:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有没有人找到一种有用的方法来使用 Claws 做一些事情，而不存在巨大的安全风险？&lt;p&gt;作为一名 n8n 用户，我仍然不明白它除了令人兴奋之外还增加了商业价值......&lt;p&gt;有任何资源或博客文章可以分享吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thih9:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;运行这些工具需要多少钱？&lt;p&gt;我看到提到了 Claude，我假设所有这些工具都连接到第三方 LLM api。我希望这些也可以在本地运行。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thomassmith65:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;p&gt;&lt;pre&gt;&lt;code&gt; 将我的私人数据和密钥提供给正在大规模主动攻击的 400K 行振动编码怪物，这根本没有多大吸引力
+&lt;/code&gt;&lt;/pre&gt;
+&lt;a href="https:&amp;#x2F;&amp;#x2F;nitter.net&amp;#x2F;karpathy&amp;#x2F;状态&amp;#x2F;2024987174077432126" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;nitter.net&amp;#x2F;karpathy&amp;#x2F;status&amp;#x2F;2024987174077432126&lt;/a&gt;&lt;p&gt;如果这是 2010 年，Google、Anthropic、XAI、OpenAI（GAXO？）将专注于将他们的聊天机器人包装为 1500 美元的消费者&lt;p&gt;现在是 2026 年，因此最先进的聊天机器人将需要永久订阅。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nevertoolate:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的总结：openclaw 是一个 5&amp;#x2F;5 安全风险，如果你有一个经过完美审核的 nanoclaw 或任何它仍然是 4&amp;#x2F;5 的安全风险。如果它与人机交互一起运行会好得多，但其价值正在迅速下降。我认为 llms 在帮助规范人类语言方面并不差，并且可能在通过测试创建护栏方面也做得很好，但我更喜欢在“创意模式”或“爪”模式下运行的 llms 稳定的东西。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pvtmert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人们真的需要_购买_一个全新的桌面硬件（即mac mini）来_运行_一个简单的请求响应程序吗？&lt;p&gt;排除你可以通过ollama或类似的直接在设备上运行LLM的事实，但据我猜测，这不会有很好的令牌速度......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mhher:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当前围绕代理工作流程的炒作完全掩盖了其架构中的基本安全缺陷：不受约束的执行边界。通过间接提示注入，急切加载上下文并授予整体 LLM 无限制 shell 访问权限的工具很容易受到攻击。&lt;p&gt;如果代理在保留对敏感数据的访问权限的同时卷曲不受信任的数据，或者已经将敏感数据加载到其上下文窗口中，则理论上不会存在任意代码执行的风险；这是不可避免的。&lt;p&gt;最近关于上下文污染的研究表明，用整体系统提示和工具模式填充上下文窗口会主动降低模型的基线推理能力，使其更容易受到这些确切漏洞的攻击。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dainiusse:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不明白 mac mini 的炒作。为什么不能是虚拟机？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fxj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他还谈到了 picoclaw，它甚至可以在 10 美元的硬件上运行，是 sipeed（一家从事物联网业务的中国公司）的分支。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;sipeed&amp;#x2F;picoclaw" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;sipeed&amp;#x2F;picoclaw&lt;/a&gt;&lt;p&gt;另一家中国公司m5stack提供本地LLM，例如在本地物联网设备上运行的Qwen2.5-1.5B。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;shop.m5stack.com&amp;#x2F;产品&amp;#x2F;m5stack-llm-large-language-model-module-kit-ax630c" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;shop.m5stack.com&amp;#x2F;products&amp;#x2F;m5stack-llm-large-language...&lt;/a&gt;&lt;p&gt;想象一下可能性。很快我们就会看到售价低于 50 美元的盒装爪子。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ggrab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在我看来，OpenClaw 上的安全分叉实在是太过分了。不考虑其影响的人将不可避免地受到伤害，正如我们在 Reddit 帖子“Agentic Coding tool X 擦除了我的硬盘驱动器并深表歉意”中看到的那样。 
+我在 FAANG 工作，每次尝试创新时，“政策人员”都会提出建议。会爬出他们的洞，并在你的路上设置随机的路障，不是为了实际的安全（这很好，但需要实际的参与），而只是为了感觉自己很重要，这让我想起了这一点。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mittermayr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道需要多长时间（如果还没有）直到围绕此的消息不可避免地转向“不要自行托管此内容，你疯了吗？”这需要控制台命令，别傻了！我们的行业资深安全专家团队致力于您的数字安全 24&amp;#x2F;7，您将永远无法跟上当今网络安全攻击范围的需求。任何理智的人都会在我们这里托管他们的爪子！”&lt;p&gt;下一批（可能得到 YC 大力支持的）Clawbase（Coinbase，但用于 Claws）托管初创公司即将到来？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bravetraveler:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我读到&lt;i&gt;[并评论]&lt;/i&gt;两位有影响力的人在维持自己的圈子&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ksynwa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么选择 mac mini 而不是树莓派之类的东西？难道这些爪子东西不是将推理委托给 OpenAI、Antropic 等吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ZeroGravitas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么什么是“爪”呢？到底是什么？&lt;p&gt;你在电子邮件等上释放的人工智能？&lt;p&gt;我们在容器中运行它并使用本地 llm 来保证“安全”。但它可以访问我们所有的数据和网络？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bjackman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有谁知道类似 Claw 的东西：&lt;p&gt;- 不做自己的沙箱（我自己设置）&lt;p&gt;- 只是有一个 Web UI，而不是想使用一些奇怪的专有消息应用程序作为其界面？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tomjuggler:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这里的市场存在一个缺口 - 不是我，而是有人需要构建一个电子商务机器人并将其称为圣诞老人爪子&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;7777777phil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;卡帕蒂对于命名事物有着敏锐的洞察力。&lt;p&gt;“爪子”捕获了现有术语所遗漏的内容，这些不是具有更多工具的代理（甚至可能相反），它们是具有调度和代理间通信的持久进程，恰好使用 LLM 进行推理。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arjie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;openclaw 的粗糙架构还不错，但我喜欢构建自己的版本。我选择了 rustlang，它按照我想要的方式工作。我将其设置为单独的电子邮件地址等和 Apple ID。最大的烦恼是我无法共享 Google 联系人。但除此之外就很好了。我正在尝试找到一种方法，以一种我可以信任的方式为其提供浏览器和信用卡（当然支出有限）。&lt;p&gt;这很有趣。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hoss1474489:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个缓慢的过程，但如果你继续使用它，随着代理建立脚本和技能，并一起建立完成工作的系统，它似乎最终会着火。从某些方面来说，这感觉就像与后辈建立融洽的关系。就像初级人员一样，最终，如果你继续投资，代理就会开始做一些超出你期望的事情。&lt;p&gt;通过为代理提供自己的独立计算机，我不必关心项目如何启动和存储，我只需说“我想要____”，____就会出现。这并不是说它可以做我做不到的事情。它可以做我想做但又懒得理会的事情。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vivzkestrel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我还是不明白这些爪子东西的炒作&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://twitter.com/karpathy/status/2024987174077432126</guid>
+      <pubDate>Sat, 21 Feb 2026 00:56:29 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47096253</comments>
     </item>
   </channel>
 </rss>
