@@ -6,156 +6,32 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 22 Feb 2026 02:38:22 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Feb 2026 04:53:29 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>クロードコードの使い方: 計画と実行の分離</title>
-      <link>https://boristane.com/blog/how-i-use-claude-code/</link>
-      <description>&lt;p&gt;詳細な計画を書きます。詳細な計画を書きます。 Claude Code の組み込みプラン モードではなく、md plan ファイルを使用します。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; How I use Claude Code: Separation of planning and execution&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47106686"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://boristane.com/blog/how-i-use-claude-code/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>日本の木版画の検索</title>
+      <link>https://ukiyo-e.org/</link>
+      <description>&lt;p&gt;浮世絵検索は、素晴らしいリソースを提供します。既存の版画の写真を撮るだけで日本の木版画を検索する機能と、複数の版画コレクションから類似した版画を表示する機能の両方です。以下は印刷例です。クリックして実際の動作を確認してください。プリントの写真をアップロードすると、複数のコレクションから類似したプリントが見つかります。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Japanese Woodblock Print Search&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47107781"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://ukiyo-e.org/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 18 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bandrami:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;現時点で実際にどれくらいの時間を節約できていますか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RHSeeger:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;ほとんどの開発者は、プロンプトを入力し、場合によってはプラン モードを使用し、エラーを修正し、それを繰り返します。&lt;p&gt;&amp;gt; ...&lt;p&gt;&amp;gt;書かれた計画をレビューして承認するまでは、決してクロードにコードを書かせないでください&lt;p&gt;私は、コードの変更で計画が失われる前に、必ず承認された計画に向けて取り組みます。正直に言うと、ほとんどの人がそうだと思っていました。確かに、時には「段階」が存在することもあります。 (一部の部分は後から理解でき、最初に重要な部分を立ち上げて実行することがより重要であるため)、各フェーズでは、実行を指示する前に、完全にレビューされた計画が作成されます。&lt;p&gt;実際、私は、実装計画が提示されたら別のオプションを提供するようにクロードに伝えるコマンドと指示を書き終えたところです。現在の (重要な部分の) コンテキストと完全な計画を個別の (チケット固有の) md ファイルに書き込みます。そうすることで、実装で何か問題が発生した場合に、それらのファイルを読み取り、「中断したところから開始」するように指示できます。計画中です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;imron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私はこのワークフローや他のワークフローを長い間使用してみましたが、一度も機能させることができませんでした (詳細についてはチャット履歴を参照してください)。&lt;p&gt;これは、次の 3 つの理由により、先週変更されました。&lt;p&gt;1.クロード作品。これは、自分で修正するよりも多くの時間を費やす必要がなかった最初のモデルです。  問題は、opus がトークンを噛み砕いてしまうことであり、その結果、..&lt;p&gt;2.クロードプランをアップグレードしました。以前の通常プランでは、セッションのトークンがなくなるまでに約 20 分の時間があり、その後再度使用するまでに数時間待つ必要がありました。小さなスクリプトやおもちゃのアプリには問題ありませんでしたが、私が行う通常の開発作業には適していませんでした。ということで5xにアップグレードしました。これにより、トークンの有効期限が切れるまでにセッションごとに 1 ～ 2 時間かかるようになりました。どちらの方が良かったですが、それでも不満がありました。価格にひるみながら、再び 20 倍プランにアップグレードしました。これが次のゲームチェンジャーでした。  セッションごとに予備のトークンがたくさんありましたが、その価格ではトークンが無駄に感じられたため、使用量を増やしました。 OP と同様のプロセスに従いますが、バックログ用のサブディレクトリを含む計画ディレクトリ、アクティブな計画、完了した計画、および計画の計画、実装、完了のための厳格なルールを備えたスキルを使用して、現在 5 ～ 6 つのプロジェクトを実行しています。  私が 1 つの機能を計画している間、他の機能が実装されています。厳格な計画と管理により計画が順調に進み、私には品質とパフォーマンスを監査するためのフォローアップスキルがあります。  まだセッションのトークン制限に達していませんが、今週のトークン制限にほぼ達しているので、お金の価値は得られていると感じています。その意味で、より多くの支出をすることで、より多くの支出を行う方法を見つける必要に迫られました。&lt;p&gt;3.パズルの最後のピースは、クロード コードではなくオープンコードを使用することです。理由はわかりませんが、私はクロードのコードにあまり興味がありません。  もしかしたら、それはすべてが揚げ足取りであり、許可を求めているだけかもしれないし、オープンコードほど何をしているのかを示していないからかもしれません。それが何であれ、私にとってはうまくいきません。一方、オープンコードは素晴らしいです。何をしているのか、どのように考えているのかが表示されるので、いつ軌道から外れているかを簡単に見つけることができます。
-&lt;p&gt;詳細な計画を立て、計画を修正して繰り返すことが不可欠です。条項を計画に従うようにすることも重要ですが、一線はあります。粒度が細かすぎるため、問題を解決するのにそれほど創造的ではありません。あまりにも緩い&amp;#x2F;ハイレベルだと間違った選択をし、間違った方向に進んでしまいます。&lt;p&gt;実際に生産性が向上するのでしょうか?そうだと思いますが、まだ 1 週間しか経っていません。すべてがうまくいくかどうかを確認するために 1 か月を自分に課すことにしました。&lt;p&gt;20 倍プランを使用して少なくとも同額の収益を得る方法が見つからない限り、20 倍プランの料金を支払い続けるつもりはありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bodeadly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ヒント:
-LLM は規則に従うのが非常に得意です (これは実際にコードを書くときに起こっていることです)。
-次の構造のエントリのリストを含む .md ファイルを作成するとします。
-# &lt;識別子&gt;
-&lt;説明ブロック&gt;
-&lt;空白&gt;
-# &lt;識別子&gt;
-...
-&lt;識別子&gt; はは、何らかの「物」を識別する安定した簡潔なトークンのシーケンスです。抽象的なものを記述する 5 つのエントリをシードすると、LLM はこれをラッチして参照します。私はこれをPCL（プロジェクトコンセプトリスト）と呼んでいます。ただ、こう言います。
-&gt; tmp&amp;#x2F;pcl-init.md を消費します。pcl.md
-pcl-init.md は PCL とは何かを説明しており、pcl.md は実際のリストです。
-コード内の独立したコンポーネントごとに pcl.md ファイルがあります (ロギング、http、認証など)。
-これは非常にうまく機能します。
-LLM はそれを「知っている」ようです。あなたが話していること。
-質問したり、「これに関する PCL エントリを追加する」などの指示を与えることができます。
-xyz に関する PCL エントリを追加するかどうかを尋ねられます。
-説明ブロックの情報とトークンの比率が高くなる傾向がある場合は、その規則に従います (ちなみに、これは非常に優れた規則です)。&lt;p&gt;ただし、注意点があります。 LLM は権限に関する曖昧さに抵抗します。したがって、「PCL」はまたはあなたがそれを何と呼んでもよいが、すべてに対して権威のある唯一の場所である必要がある。 3 つの異なるファイルに同じ内容が含まれている場合、ほとんど同じように機能しません。&lt;p&gt;ボーナスヒント:
-LLM に適切な出力を生成させるには、コード例の断片と思慮深い説明を含む長いプロンプト入力が最も効果的であることがわかりました。しかし、常に穴 (リソースのリーク、脆弱性、同時実行の欠陥など) が存在します。そこで、元のプロンプト入力を更新し (スクラッチ パッドとして別のファイル PROMPT.txt に保存します)、穴を修正する方法を見つけるために途中で質問する可能性がある内容に関するコンテキストを追加します。次に、プロンプトに巻き戻して、更新されたプロンプトを再度入力します。このフィードバック ループにより、トークンを消費せずに会話が進みます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;recroad:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;OpenSpec を試してみると、これらすべてが自動的に行われます。 SpecKitも動作します。これは仕様主導の開発なので、車輪を再発明する必要はないと思います。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;recroad:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;OpenSpec を使用してすべてを簡素化します。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cowlby:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は最近、計画の実行を段階的に分離する GitHub speckit を発見しました (指定、計画、タスク、実装)。 「集中力」と「注意力」のレベルが OP と一致していることを見つけると、これはクロード コードから外れます。&lt;p&gt;Speckit は、ここで説明されている内容を自動化してくれるため、試してみる価値があります。Opus 4.6 では、私にとって一種の紀元前の瞬間となりました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brandall10:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私はこれより少し進んで、3 つのドキュメント タイプと 2 つのスキルで大きな成功を収めました。&lt;p&gt;- 仕様: これらは一般に静的ですが、プロジェクトの進化に応じて更新できます。これらは、プロジェクトの概要を示すインデックス ファイル、高レベルのアーチ ファイル、およびすべてのメイン モジュールのファイルに分かれています。 10,000 行のコードに対しておよそ 1,000 行の仕様。特定の仕様ファイルは 300 行に制限するようにしてください。私はこれらのすべての行に精通しています。&lt;p&gt;- 計画: これらは、LLM との計画セッションの出力です。これらは関連する仕様を指します。これらは 100 ～ 300 行、3 ～ 5 フェーズになることが多いです。&lt;p&gt;- ワーキング メモリ ファイル: 最新の計画を指す status.md (フェーズごとに 3 ～ 5 項目、全体で約 30 行) と、プロジェクトの現在の状態を追跡し、無駄を省くために過去の取り組みを圧縮するよう指示されている project_status (100 ～ 200 行) の両方を使用します。&lt;p&gt;- 私が使用しているプラ​​ンナー スキルは、&amp;#x2F;新しい計画を生成する Gemini Pro。基本的に、仕様と計画の二分法、ステータス ファイルの役割を説明し、コードの関連領域のすべてを確認し、仕様の不足点や project_status ファイルに記載されている内容に基づいて対処すべきいくつかの高レベルの次の機能セットを提供します。表示される内容に基づいて、生成する機能または改善を選択します。次に、計画の生成に進み、その計画を指すクリーンな status.md を更新し、以前に完了した計画の状態に基づいて project_status を調整します。&lt;p&gt;- 計画ファイルに基づいて街に出かける Codex の実装者スキル。これは非常に単純で、プランを指す status.md を確認するだけです。もちろん、プランは関連する仕様を指すため、コンテキストをかなり効率的に読み込むことができます。&lt;p&gt;私は 2 つの主要な仕様生成ライブラリを試しましたが、あまりにも大げさでした。その後、スーパーパワーを試してみました...これは問題ありませんでしたが、それでも多すぎました。上記はすべて自家製であり、コンテキストを無駄なく集中させているため、はるかに良い成功を収めています。&lt;p&gt;また、私は Codex&amp;#x2F;Gemini の 20 ドルのプランしか利用していませんが、半年前は CC に月額 100 ドルを費やしており、以前よりも早く移行できました。定期的に発生していたトークン消費によるストールアウトは発生しませんでした。 5日目までにCC。 Codex は、実行後に PR を表示するときに、利用可能なコンテキストの 70% を下回ることがほとんどありません。およそ 4&amp;#x2F;5 の PR には問題がありません。これは、私が CC でプランニング モードのみを使用して経験したことと逆になります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;skybrian:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私もほぼ同様のことをやっています。フェーズに分けて埋め込まれた ToDo リストを含む設計ドキュメントを求めています。設計ドキュメントをループして提案を求めると効果があるようです。現在のプロジェクトでは、これまでに約 40 のデザイン ドキュメントを作成しています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alexmorgan26:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この計画と実行の分離は、コーディングだけでなくタスク管理全般に対する私のアプローチ方法と深く共鳴します。&lt;p&gt;ここでの重要な洞察、つまり計画と実行は別個のフェーズであるべきであるということは、生産性向上ツールにも当てはまります。私は同様の哲学を採用している www.dozy.site を使用しています。このサイトには、予定されたタスクで空の時間枠を自動的に埋めるスマート カレンダー スケジューリング機能が備わっています。最初に計画が行われ (タスクとプロジェクトを定義します)、次に実行が自動化されます (タスクはカレンダーの隙間にスケジュールされます)。&lt;p&gt;この類似点は興味深いものです。計画が固まる前にクロードにコードを書いてほしくないのと同じように、やるべきことを適切に計画する前にタスクを手動でスケジュールする必要はありません。分離により、無駄な労力とコンテキストの切り替えが防止されます。&lt;p&gt;あなたが説明した注釈サイクル (計画 -&gt; レビュー -&gt; 注釈 -&gt; 調整) は、まさに私もタスク リストを扱う方法です。作業を定義し、レビューし、優先順位と依存関係を調整してから、システムにスケジュールを処理させます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fnord77:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は、クロードにステージのコーディング プロンプトを書かせてから、そのプロンプトを別のエージェントに渡すという別のアプローチをとっています。  ブログ記事に書いてみようかな&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deevus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは、obra&amp;#x2F;superpowers[0] スキル セットを使って行うことです。&lt;p&gt;1.ブレーンストーミングを使用して、ソクラテス メソッドを使用して計画を立てます&lt;p&gt;2.高レベルの設計計画をファイルに書き込みます&lt;p&gt;3.設計計画をレビューします&lt;p&gt;4.実施計画をファイルに書き込みます。これについてはすでに詳しく説明したので、通常は流し読みするだけで十分です。&lt;p&gt;5.ワークツリー スキルとサブエージェント駆動開発スキルを使用する&lt;p&gt;6.エージェントは、各タスクに対して次のサブエージェントを使用して作業を実行します。&lt;p&gt;&lt;pre&gt;&lt;code&gt; a.タスクを実装します
-
-  b. Spec は完了したタスクをレビューします
-
-  c.完了したタスクをコードレビューする
-&lt;/code&gt;&lt;/pre&gt;
-7. すべてのタスクが完了したら、確認用の PR を作成します&lt;p&gt;8.コメントがあればエージェントに戻ります&lt;p&gt;9.完了したら、計画ファイルを削除し、PR をマージします&lt;p&gt;[0]: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;obra&amp;#x2F;superpowers" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;obra&amp;#x2F;superpowers&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;haolez:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 「深く」、「詳細に」、「複雑に」、「すべてを徹底的に」という言葉に注目してください。これは綿毛ではありません。この言葉がないと、クロードは流し読みしてしまいます。ファイルを読み取り、関数が署名レベルで何を行うかを確認し、次に進みます。表面レベルの読み取りは受け入れられないことを通知する必要があります。&lt;p&gt;これは、LLM がどのように機能するかについての私の直観には意味がありません。 It&amp;#x27;s not that I don&amp;#x27;t believe this works, but my mental model doesn&amp;#x27;t capture why asking the model to read the content &amp;quot;more deeply&amp;quot; LLM が生成する出力に影響を与えます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ramoz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私にとって重要なことの 1 つは、計画を反復処理できることです。計画の視覚化が向上し、計画に関するフィードバックに注釈を付けることができるようになりました。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;backnotprop&amp;#x2F;plannotator" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;backnotprop&amp;#x2F;plannotator&lt;/a&gt; Plannotator はこれをフックを通じて非常に効率的かつネイティブに実行します。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jamesmcq:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;コーディングができない人にとってはこれで問題ないように見えますが、開発者としてある程度の経験がある人にとっては、これらすべての計画、チェック、プロンプト、オーケストレーションは、自分でコードを書くよりもはるかに手間がかかるものです。&lt;p&gt;生産性の結果に関係なく、「最小限のコードを記述する」という点で勝者はありません。ただし、おそらく Anthropic の銀行口座を除いてです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;renewiltord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;計画ドキュメントと Todo は、コンテキスト サイズ制限の成果物です。リセットして続行できるため、私もこれらを使用しています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;srid:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;インライン ノートに関しては、`&amp;#x2F;plan` コマンドで `ME:` プレフィックスを使用して特定の形式を使用します。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;srid&amp;#x2F;AI&amp;#x2F;blob&amp;#x2F;master&amp;#x2F;commands&amp;#x2F;plan.md#2-plan-review-cycle" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;srid&amp;#x2F;AI&amp;#x2F;blob&amp;#x2F;master&amp;#x2F;commands&amp;#x2F;plan.md#2-pl...&lt;/a&gt;&lt;p&gt;これは、Antigravity の計画文書のコメントと修正のサイクルと非常によく似ています。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;antigravity.google&amp;#x2F;docs&amp;#x2F;implementation-plan" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;antigravity.google&amp;#x2F;docs&amp;#x2F;implementation-plan&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zitrusfrucht:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;クロードとコーデックスでも、ワークフローはツールではなく私によって制御されるため、非常に似たようなことを行います。ただし、plan.md の代わりに、基本的に ticket_&amp;lt;number&amp;gt;_&amp;lt;slug&amp;gt;.md のようなチケット システムを使用します。このシステムでは、エージェントがチャットからチケットを作成し、後で修正して注釈を付けて、場合によっては新しいエージェント インスタンスに送り返します。このワークフローは、取り組んでいるプロジェクトで時間の経過とともに何が行われたかを追跡するのに役立ちます。また、このアプローチは純粋にテキスト ファイルに対して機能するため、「実際の」チケット システム ツールや mcp のスキルなどは必要ありません。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://boristane.com/blog/how-i-use-claude-code/</guid>
-      <pubDate>Sun, 22 Feb 2026 00:29:05 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47106686</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PacificSpecific:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;うわー、24時間で2つの浮世絵スレッド。これは本当に素晴らしいです。&lt;p&gt;別のスレッドで倉敷に美術館があると投稿しましたが、リンクを貼るのを怠っていました。ご興味のある方は、&lt;a href="https:&amp;#x2F;&amp;#x2F;ukiyo-e-akuraseki.jp&amp;#x2F;?lang=en" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ukiyo-e-akuraseki.jp&amp;#x2F;?lang=en&lt;/a&gt; をご覧ください。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jeresig:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私のサイトをシェアしていただきありがとうございます!私は何年も前に日本の浮世絵について学び始めたときにこれを作りました。私は、それらを所蔵するさまざまな博物館や大学のすべてを横断してそれらを見つけることができる単一の場所を望んでいました。私はコンピューター ビジョン分析を使用して、プリントをクラスター化します (TinEye を使用)。前回投稿時の技術的な詳細: &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=18344979"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=18344979&lt;/a&gt;&lt;p&gt;現在、重点を置いた新しいサイトに取り組んでいます。ディーラーやオークションで販売されているプリントに。継続的に更新する必要があるため、技術的にははるかに複雑です。近いうちにパブリックベータ版ができることを願っています!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zactato:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは、jQuery の作成者である John Resig によって作成されたものであることは間違いありません。&lt;p&gt;私はその頃彼と友人でした。そして、彼はこのようなことをやりたいと述べていました。彼は情熱的な男でした。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abetusk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはかなり驚くべきことです。&lt;p&gt;驚くべきことに [0]:&lt;p&gt;&amp;gt; Ukiyo-e.org は John Resig によって作成されました ...&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;ukiyo-e.org&amp;#x2F;about" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ukiyo-e.org&amp;#x2F;about&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://ukiyo-e.org/</guid>
+      <pubDate>Sun, 22 Feb 2026 03:18:36 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47107781</comments>
     </item>
     <item>
-      <title>コンパイラは決定的ですか?</title>
-      <link>https://blog.onepatchdown.net/2026/02/22/are-compilers-deterministic-nerd-version/</link>
-      <description>&lt;p&gt;コンパイラは決定論的です。同じ意図、異なるマシンコード。この違いが重要です: 決定論的コンパイラー: 同じ完全な入力タプル -&gt; 同じ出力 再現可能なビルド: 2 つの独立したビルダーがビット同一の出力を再作成します 信頼できるツールチェーン: 違いが機能的に問題になることはほとんどありません 関連する概念であり、同等の保証ではありません。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Are compilers deterministic?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47106626"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://blog.onepatchdown.net/2026/02/22/are-compilers-deterministic-nerd-version/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 16 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AlotOfReading:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;関連するプロパティは、入力に対する特定の種類の変更が出力に対して比例したサイズの変更を与えるかどうかです。たとえば、print ステートメントを追加しても、そのステートメントが含まれる関数の動作は変わりません (I&amp;#x2F;O なし)。 2 つの異なる呼び出しサイトから同じ関数を呼び出しても、動作は変わりません。新しいコンパイラ バージョンによって、観察可能な動作が変更されることはありません。など。&lt;p&gt;これはより重要なプロパティだと思いますが、よく知られた名前があるかどうかはわかりません。記事ではそれを遠回しに信頼性と呼んでいますが、それはともかく、LLM との主な違いはそれです。コンパイラは、経験によって学習する無限の例外リストを無視して、&lt;i&gt;ほとんど&lt;/i&gt;これを達成します。&lt;p&gt;LLM は、温度が 0 で浮動小数点の決定論がある場合でも、通常は達成できません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sarchertech:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「アセンブリをほとんど無視してプロンプトを新しい高級言語として扱うのと同じように、コードを無視できるか」について話しているのであれば、決定論は難しい問題ではありません。&lt;p&gt;本当の問題はプロンプトの不安定性 (カオス) です。プロンプトの仕様を一言変更するだけで、大幅に異なるプログラムが生成されます。それが解決されるまでは、プロンプトをチェックインするだけでコードについて心配する必要がほとんどなくなる世界は存在しません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;overgard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;このあたりの議論の要点がちょっとずれているような気がします。人々はよく「コンパイラの出力をチェックしないんですね?」と言います。 （実際にさまざまな理由でそうする人がいることは気にしないでください）。最後にコンパイラがコードにバグを導入したのはいつですか? LLM が最後にコードにバグを導入したのはいつですか?さあ、どうぞ。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pertymcpert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;GCC と LLVM は、コンパイラが非決定的である場合、それを&lt;i&gt;バグ&lt;/i&gt;とみなします。たとえば、アドレスの違いなどの理由でコンパイラを再実行すると異なる出力が生成される場合は、修正する必要があります。そうです、それらは決定論的です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bandrami:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;そうでない場合、再現可能なビルドは不可能になります。重要なのは、入力タプルを正確に制御できることです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nickelpro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;愚かです。&lt;p&gt;コンパイラは、タイムスタンプ、デバッグ情報へのパスのエンコードなど、小さな点で決定論的ではありません。これらは些細なことであり、再現可能なビルド担当者にとっては迷惑なことであり、その他のことはほとんどありません。&lt;p&gt;これらの些細な再現性の問題を取り上げて、「決定論は問題ではないので LLM は問題ない」と推定することはできません。ボールを空中に投げたり、物体を数フィート飛ばすのが簡単だと判断したりして、月への旅行も同様に簡単だと結論づけることはできません。&lt;p&gt;単にカテゴリではなく&lt;i&gt;大きさ&lt;/i&gt;が重要です。手を振る行為の規模は、話者が何を言っているのか理解できない重大な危険信号です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pizlonator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;はい、そうです。&lt;p&gt;これを実現するために多大なエンジニアリング努力が費やされています。&lt;p&gt;TFA は、入力を完全に制御することはできないため、入力の制御に失敗すると動作が異なる可能性があると主張しています。そうですね。&lt;p&gt;しかし、タイトルにあるクリックベイトの質問に対する答えは単純に「はい」です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eru:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;これは現在、「LLM が非決定的である場合、バイブコーディングは正常ですか?」として浮上しています。繰り返しになりますが、CS の答えが必要ですか、それともエンジニアリングの答えが必要ですか?&lt;p&gt;決定論が役に立ちます。  少しエンジニアリングを加えると、LLM を決定論的にすることができます。基本的には、PRNG のランダム シードを修正し、この記事で前述した他のエントロピーのソースが寄与しないようにします。&lt;p&gt;しかし、それは人々が LLM に関して提起する問題にはほとんど影響しません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;einrealist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;出力に問題がある場合、通常は同じ入力 (制御しているもの) を使用してコンパイルを再実行しますか?通常は行いません。&lt;p&gt;「検証」に含まれるものステップ？生成されたコードを変更する必要がありますか?そうでない場合、コードの品質、アーキテクチャ上の制約、効率性、一貫性などをどのように確保すればよいでしょうか? (経済的に) 不可能ではないにしても、これらのテストを作成するのは困難です。 LLM がプロンプトに示されているガイドラインに従わない場合はどうなりますか?これは今でも起こっています。これが含まれていない場合、私はそれを「ブルートフォース」と呼ぶでしょう。トークンにいくら支払いますか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;DougMerritt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;独自の言語で書かれたコンパイラ (一部の C コンパイラなど) に対して回帰テストを行うことは珍しいことではありません。各新しいバージョンをそれ自体でコンパイルし、それを使用して再度コンパイルし、その結果を単体テストなどで使用します。これにより、以前と同じ結果が得られるはずです。&lt;p&gt;重要なのは、特定の形式の決定論が期待され、それを実行する場合には必要であるということです。&lt;p&gt;(私は議論しているわけではありません)それに賛成か反対かは関係なく、私は長年にわたって現実のプロジェクトでそれを見てきたと言っているだけです。)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drivingmenuts:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 。私は毎日 comma.ai を使用するほど AI に慣れていますが、生成されたコードの周りに決定論的な検証ゲートが欲しいと思っています。私のガールフレンドは、私よりもスムーズで不安定さが少ないため、私が運転させることを好みます。これは、「確率的なシステム」と「運用上より良い結果」が共存できることを思い出させるのに役立ちます。&lt;p&gt;ガールフレンドはいつ議論に参加しましたか?何か見逃したでしょうか？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Smalltalker-80:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Anthropic によって作られたものであれば別ですが...&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;IanCal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;バイブコーディングに対する良い反応は、顧客やプロダクトマネージャーなどが機能を求めてもコードを読まないことだと感じています。何かのコードを読んで、それが何をするのか、そしてそれが期待と一致するかどうかについて一定レベルの信頼を築く必要はありません。アプリケーションを入手して、コードを読まずに問題が満足に解決されるかどうかを判断できるセットアップを実現できることは、それほど突飛なことではありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nu11ptr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;コンピューターサイエンスの答えは、コンパイラーはその完全な入力状態の関数として決定的であるということです。エンジニアリングの答え: ほとんどの実際のビルドは完全な入力状態を制御していないため、出力がドリフトします。&lt;p&gt;私にとって、これはコンパイラ自体ではなく、入力が決定的ではないことを意味します。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;measurablefunc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;コンパイラはセマンティクスを保持します。それは彼らの契約の一部です。出力が観察上機能的に同等である限り、出力に命令が含まれているかどうかは問題ではありません。この記事では、実際にこれについてうまく説明できていません。代わりに、無関係な「確率論」のソースを迂回し、タイムスタンプやビルド時の UUID と最後に、LLM が停止問題を解決したと主張しています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cyanydeez:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;tl;dr: カオスの宇宙では、決定論の定義は人間の宇宙とは異なります。人間はすべての変数を制御して測定することはできないため、決定論的ではありません。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://blog.onepatchdown.net/2026/02/22/are-compilers-deterministic-nerd-version/</guid>
-      <pubDate>Sun, 22 Feb 2026 00:21:05 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47106626</comments>
-    </item>
-    <item>
-      <title>HN を表示: CPU をバイパスする NVMe-to-GPU 経由の単一 RTX 3090 上の Llama 3.1 70B</title>
-      <link>https://github.com/xaskasdf/ntransformer</link>
-      <description>&lt;p&gt;主な結果 モデル モード VRAM メモのデコード Llama 3。0 GB VRAM Llama 3 のすべてのレイヤー。3 GB 32/32 レイヤーは VRAM Llama 3 に自動昇格。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Llama 3.1 70B on a single RTX 3090 via NVMe-to-GPU bypassing the CPU&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47104667"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/xaskasdf/ntransformer'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jacquesm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは実験にとって興味深い分野です。長期的には、モデルの最適化 (モデルの機能に影響を与えずにどのビットを省略できるかを知ること) が、圧縮アルゴリズムの場合と同じように主要な研究分野になるのではないかと思います。これは、事実上、モデルは非可逆圧縮スキーム&lt;i&gt;である&lt;/i&gt;ためです。&lt;p&gt;これは、作成されているサイロから AI の民主化を促進するため、良いことです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;exabrial:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;LLM にはまったく新しいタイプのシリコンが必要だと感じています。おそらく生の計算能力を犠牲にして、帯域幅とストレージに完全に焦点を当てたもの。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Wuzado:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは多層 MoE に使用できるでしょうか?例えば。アクティブ + VRAM で最も使用され、RAM でよく使用され、NVMe ではあまり使用されませんか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rl3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ニース。私も同様のことを検討していましたが、利用可能な VRAM の半分未満で 1T モデルを実行するようなものでした。&lt;p&gt;ある調査では、SGLang のルーティング レイヤの一部を変更して、JIT 先読みエキスパートによる Gen5 NVMe ストレージから GPU メモリへの直接スワップをサポートすることが理論的に可能であることがわかりました。&lt;p&gt;それが真実であることが証明されることを願っています。このセットアップは NVIDIA Dynamo に依存しているため、NIXL プリミティブを使用してそれをサポートできます。&lt;p&gt;これをすでに試した人がいるかどうか興味があります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jauntywundrkind:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;8b に 10GB ではなく 6GB RAM のようなものが与えられるのは、素晴らしいことかもしれません。 NVMe はまだ必要ですが、23 GB の 70b モデルの 3 倍の比率とは異なります。&lt;p&gt;素晴らしい仕事です。 PCI-P2P (GPU-Direct (tm)) はとても素晴らしいものです。見ててかっこいい！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaway2027:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;DirectX には、アセットを GPU メモリに直接ロードするための API が追加されませんでしたか?それはうまくいきますか？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;randomtoast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;0.2 tok&amp;#x2F;s は実験には問題ありませんが、意味のある意味でインタラクティブではありません。多くのユースケースでは、適切に量子化された 8B または 13B を常駐させることで、レイテンシと品質のトレードオフが向上します。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/xaskasdf/ntransformer</guid>
-      <pubDate>Sat, 21 Feb 2026 20:57:30 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47104667</comments>
-    </item>
-    <item>
-      <title>ナイーブな雛におけるブバキキ効果の証拠</title>
-      <link>https://www.science.org/doi/10.1126/science.adq7188</link>
-      <guid isPermaLink="true">https://www.science.org/doi/10.1126/science.adq7188</guid>
-      <pubDate>Sat, 21 Feb 2026 21:51:58 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47105198</comments>
-    </item>
-    <item>
-      <title>ボットネットが誤って破壊した I2P</title>
-      <link>https://www.sambent.com/a-botnet-accidentally-destroyed-i2p-the-full-story/</link>
-      <description>&lt;p&gt;2026 年 2 月 3 日、I2P 匿名ネットワークは 700,000 の敵対的なノードで溢れかえり、これは匿名ネットワークがこれまで経験した中で最も壊滅的な Sybil 攻撃の 1 つとなりました。ネットワークは通常、15,000 ～ 20,000 のアクティブなデバイスで動作します。 3 年連続で、I2P は毎年 2 月に Sybil 攻撃の被害を受けています。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A Botnet Accidentally Destroyed I2P&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47106985"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.sambent.com/a-botnet-accidentally-destroyed-i2p-the-full-story/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gnabgib:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;見出しにもかかわらず、これには全容が欠けているようです。Krebs&amp;#x27;より詳細な報道 (39 ポイント) &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46976825"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46976825&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.sambent.com/a-botnet-accidentally-destroyed-i2p-the-full-story/</guid>
-      <pubDate>Sun, 22 Feb 2026 01:08:17 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47106985</comments>
-    </item>
-    <item>
-      <title>AI エージェントが生産を停止させた場合、誰が責任を負うのでしょうか?</title>
-      <link>https://reading.sh/whos-liable-when-your-ai-agent-burns-down-production-039193d82746?sk=4921ed2dbc46f0c618835ac458cf5051</link>
-      <guid isPermaLink="true">https://reading.sh/whos-liable-when-your-ai-agent-burns-down-production-039193d82746?sk=4921ed2dbc46f0c618835ac458cf5051</guid>
-      <pubDate>Sat, 21 Feb 2026 23:52:00 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47106406</comments>
-    </item>
-    <item>
-      <title>オンライン Pebble 開発</title>
-      <link>https://cloudpebble.repebble.com/</link>
-      <description>&lt;p&gt;オンライン Pebble 開発 Linux、仮想マシン、コンパイラー、Python を使わずにアプリを作成します。どこからでもアクセス可能。これからもたくさんあります。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Online Pebble Development&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47104613"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://cloudpebble.repebble.com/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gmurphy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Cloudpebble は Pebble の最も良い点でした - 開発が非常に簡単になったので、さらに多くのことを行いました&lt;p&gt;最新のデバイスの開発者エクスペリエンスは非常にひどいです - これを推進しているチームは大規模なチーム開発に没頭しているため、ビルド システム、構成、パッケージ管理、証明書、権限、ストアの統合に関する懸念事項があちこちに漏洩します - その中には軽微なエラーが発生し、行き詰まってしまうことがあります&lt;p&gt;コードの 1 つのファイルを作成して実行したい場合もあります。 Cloudpebble はおそらく私を Pebble に戻すものになるでしょう。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;loosescrews:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Web サイトからは明らかではありませんが、GitHub リポジトリには、これが Pebble スマート ウォッチ用のアプリを構築するためであると記載されています:&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;coredevices&amp;#x2F;cloudpebble" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;coredevices&amp;#x2F;cloudpebble&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zb3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;インストールするものは何もありません、編集する JSON も、ログインも必要ありません。ああ、待て、それは違います。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://cloudpebble.repebble.com/</guid>
-      <pubDate>Sat, 21 Feb 2026 20:50:46 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47104613</comments>
+      <title>人々はドットコム ブームを愛していました。 A.I.ブーム、それほどでもない</title>
+      <link>https://www.nytimes.com/2026/02/21/technology/ai-boom-backlash.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/02/21/technology/ai-boom-backlash.html</guid>
+      <pubDate>Sun, 22 Feb 2026 03:24:22 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47107819</comments>
     </item>
   </channel>
 </rss>

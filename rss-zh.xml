@@ -6,156 +6,32 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 22 Feb 2026 02:38:22 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Feb 2026 04:53:29 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>我如何使用克劳德代码：计划和执行分离</title>
-      <link>https://boristane.com/blog/how-i-use-claude-code/</link>
-      <description>&lt;p&gt;写一个详细的计划。写一个详细的计划。 md 计划文件而不是 Claude Code 的内置计划模式。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; How I use Claude Code: Separation of planning and execution&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47106686"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://boristane.com/blog/how-i-use-claude-code/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>日本木刻版画搜索</title>
+      <link>https://ukiyo-e.org/</link>
+      <description>&lt;p&gt;浮世绘搜索提供了令人难以置信的资源：既可以通过简单地拍摄现有印刷品的照片来搜索日本木版画，也可以在多个印刷品集中查看类似的印刷品。下面是一个打印示例，点击查看实际效果。上传印刷品图片以在多个系列中查找相似的印刷品。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Japanese Woodblock Print Search&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47107781"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://ukiyo-e.org/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 18 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bandrami:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;此时您实际上节省了多少时间？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RHSeeger:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;大多数开发人员都会输入提示，有时会使用计划模式，修复错误，然后重复。&lt;p&gt;&gt; ...&lt;p&gt;&amp;gt;在审查并批准书面计划之前，永远不要让 Claude 编写代码&lt;p&gt;我当然总是朝着批准的计划努力，然后再因更改代码而失去计划。老实说，我只是假设大多数人都这样做。诚然，有时存在“阶段”。到实施（因为有些部分可以稍后弄清楚，更重要的是先让关键部分启动并运行），但每个阶段在我告诉它开始之前都会有一个完整的、经过审查的计划。&lt;p&gt;事实上，我刚刚写完一条命令和指令，告诉克劳德，当它提出实施计划时，为我提供另一个选择；将当前（重要部分）上下文和完整计划写到各个（特定于票证的）md 文件中。这样，如果实现出现问题，我可以告诉它读取这些文件并“从它们停止的地方开始”。在规划中。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;imron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我已经尝试使用此工作流程和其他工作流程很长时间了，但始终无法让它们正常工作（有关详细信息，请参阅聊天记录）。&lt;p&gt;这种情况在上周发生了变化，原因有 3 个：&lt;p&gt;1.克劳德作品。这是第一个模型，我不需要花费比我自己做更多的时间来纠正问题。  问题在于 opus 会消耗代币，这导致了..&lt;p&gt;2。我升级了我的克劳德计划。以前，按照常规计划，我会在用完会话令牌之前获得大约 20 分钟的时间，然后需要等待几个小时才能再次使用。对于小脚本或玩具应用程序来说这很好，但对于我所做的常规开发工作来说不可行。所以我升级到了5x。现在，在令牌过期之前，我每次会话可以有 1-2 小时的时间。这更好，但仍然令人沮丧。面对价格，我再次升级到 20 倍计划，这是下一个游戏规则改变者。  我每次会话都有大量的备用代币，按照这个价格，感觉它们被浪费了——所以我增加了我的使用量。遵循与 OP 类似的流程，但有一个计划目录，其中包含用于积压工作的子目录、活动和完整的计划，以及具有严格的计划、实施和完成计划规则的技能，我现在有 5-6 个项目正在进行中。  当我正在计划一项功能时，其他人正在实施。严格的计划和控制使他们步入正轨，并且我拥有审核质量和绩效的后续技能。  我仍然没有达到会话的代币限制，但我几乎已经达到了本周的代币限制，所以我觉得我的钱是值得的。从这个意义上说，花更多的钱迫使我弄清楚如何使用更多的钱。&lt;p&gt;3。最后一个难题是使用开放代码而不是克劳德代码。我不知道为什么，但我就是不喜欢克劳德的代码。  也许是所有的炒作和胡言乱语，也许是所有的许可请求，也许是它没有像开放代码那样显示它在做什么。不管是什么，它对我来说都不太有效。另一方面，Opencode 很棒。它显示了它在做什么以及它是如何思考的，这让我很容易发现它何时偏离轨道
-并尽早纠正。&lt;p&gt;制定详细的计划，并纠正和迭代该计划至关重要。让条款遵循计划也很重要——但有一条界限。粒度太细，在解决问题时缺乏创造性。太宽松&amp;#x2F;高水平会做出错误的选择并走向错误的方向。&lt;p&gt;它真的让我更有效率吗？我想是的，但我才一周时间。我决定给自己一个月的时间，看看一切如何。&lt;p&gt;我不打算继续为 20 倍计划付费，除非我能找到一条途径，使用它至少为我赚取同样多的回报。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bodeadly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;提示：
-法学硕士非常擅长遵循约定（这实际上就是编写代码时发生的情况）。
-如果您创建一个包含以下结构的条目列表的 .md 文件：
-# &lt;标识符&gt;
-&amp;lt;描述块&amp;gt;
-&lt;空格&gt;
-# &lt;标识符&gt;
-...
-其中&lt;标识符&gt;是是一个稳定且简洁的标记序列，用于标识某些“事物”。并用 5 个描述抽象内容的条目作为种子，法学硕士将抓住并引用它。我称之为 PCL（项目概念列表）。我只是告诉它：
-&gt;使用 tmp&amp;#x2F;pcl-init.md pcl.md
-pcl-init.md 描述了 PCL 是什么，pcl.md 是实际列表。
-我为代码中的每个独立组件（日志记录、http、身份验证等）都有 pcl.md 文件。
-这非常非常有效。
-法学硕士似乎“知道”你在说什么。
-您可以提出问题并给出指示，例如“添加与此相关的 PCL 条目”。
-它会询问是否应该添加关于 xyz 的 PCL 条目。
-如果描述块往往具有较高的信息与令牌比率，它将遵循该约定（顺便说一句，这是一个非常好的约定）。&lt;p&gt;但是，有一个警告。法学硕士抵制权威的模糊性。所以“PCL”是或者无论你怎么称呼它，都需要成为一切事物的唯一权威场所。如果您在 3 个不同的文件中拥有相同的内容，那么它几乎不会工作。&lt;p&gt;额外提示：
-我发现带有示例代码片段和深思熟虑的描述的长提示输入最适合让法学硕士产生良好的输出。但总会有漏洞（资源泄漏、漏洞、并发缺陷等）。因此，然后我更新了原始的提示输入（将其保存在单独的文件 PROMPT.txt 作为便笺本）以添加有关这些内容的上下文，可能会提出问题以找出如何修复漏洞。然后我返回到提示符并重新输入更新的提示符。这种反馈循环可以在不消耗令牌的情况下推进对话。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;recroad:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;尝试 OpenSpec，它会为您完成这一切。 SpecKit 也可以工作。我认为没有必要重新发明轮子，因为这是规范驱动的开发。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;recroad:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;使用 OpenSpec 并简化一切。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cowlby:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最近发现了 GitHub Speckit，它将规划与执行分阶段进行：指定、计划、任务、实施。发现它与 OP 一致，具有 Claude Code 中的“焦点”和“注意力”水平。&lt;p&gt;Speckit 值得尝试，因为它自动化了此处描述的内容，而对于 Opus 4.6，这对我来说是一种公元前和公元后的时刻。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brandall10:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我比这更进一步，并在 3 种文档类型和 2 种技能方面取得了巨大成功：&lt;p&gt;- 规格：这些通常是静态的，但可以随着项目的发展而更新。它们被分解为一个索引文件，其中提供了项目概述、高级架构文件以及所有主要模块的文件。 10k 行代码大约需要 1k 行规范，并尝试将任何特定规范文件限制为 300 行。我对其中的每一行都非常熟悉。&lt;p&gt;- 计划：这些是与法学硕士的计划会议的输出。他们指出了相关的规格。这些往往是 100-300 行和 3 到 5 个阶段。&lt;p&gt;- 工作记忆文件：我使用 status.md（每个阶段 3-5 个项目，总共大约 30 行），它指向最新的计划，以及 project_status（100-200 行），它跟踪项目的当前状态，并被指示压缩过去的工作以保持精简）&lt;p&gt;- 我使用的计划员技能Gemini Pro 生成新计划。它本质上解释了规范与计划的二分法、状态文件的作用，并审查相关代码区域中的所有内容，并根据规范中的缺陷或 project_status 文件中注明的内容，为我提供了一些高级的下一组功能来解决。根据它所呈现的内容，我选择要生成的功能或改进。然后，它继续生成计划，更新指向该计划的干净 status.md，并根据先前完成的计划的状态调整 project_status。&lt;p&gt;- Codex 中的一项实施者技能，可根据计划文件进行城镇化。这相当简单，它只是查看 status.md，它指向计划，当然计划指向相关规范，因此它可以非常有效地加载上下文。&lt;p&gt;我尝试了两个主要的规范生成库，它们被夸大了，然后我给了超能力一个机会......这很好，但仍然太多了。以上都是我自己开发的，我取得了更好的成功，因为它保持了上下文的简洁和集中。&lt;p&gt;而且我只使用 Codex&amp;#x2F;Gemini 的 20 美元计划，而不是半年前每月花 100 美元购买 CC，并更快地采取行动。不会因代币消耗而导致停顿，这种情况经常发生在第 5 天之前抄送。当 Codex 在执行运行后提出 PR 时，可用上下文很少会低于 70%。大约 4&amp;#x2F;5 PR 没有问题，这与我使用 CC 且仅使用计划模式的经历相反。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;skybrian:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我做了一些大致相似的事情。我要求提供一份设计文档，其中包含嵌入式待办事项列表，并分为多个阶段。循环查看设计文档寻求建议似乎有帮助。到目前为止，我目前的项目已完成大约 40 个设计文档。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alexmorgan26:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;计划和执行的这种分离与我处理任务管理的方式产生了深刻的共鸣，而不仅仅是编码。&lt;p&gt;这里的关键见解 - 计划和执行应该是不同的阶段 - 也适用于生产力工具。我一直在使用 www.dozy.site，它采用了类似的理念：它具有智能日历安排功能，可以自动用计划的任务填充您的空闲时间段。首先进行计划（您定义任务和项目），然后自动执行（将任务安排到您的日历间隙中）。&lt;p&gt;这种相似之处很有趣：就像您不希望克劳德在计划确定之前编写代码一样，您也不希望在正确计划需要完成的事情之前手动安排任务。这种分离可以防止浪费精力和上下文切换。&lt;p&gt;您描述的注释周期（计划 -&gt; 审查 -&gt; 注释 -&gt; 细化）也正是我处理任务列表的方式。定义工作，对其进行审查，调整优先级和依赖性，然后让系统处理调度。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fnord77:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我有一种不同的方法，让克劳德为阶段编写编码提示，然后将提示提供给另一个代理。  我想知道我是否应该把它写成博客文章&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deevus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是我使用 obra&amp;#x2F;superpowers[0] 技能组所做的事情。&lt;p&gt;1.使用苏格拉底式头脑风暴法来制定计划&lt;p&gt;2。将高级设计计划写入文件&lt;p&gt;3。我审查了设计计划&lt;p&gt;4。编写实施计划并存档。我们已经详细讨论过这个问题，所以通常只需要略读即可。&lt;p&gt;5.将工作树技能与子代理驱动的开发技能结合使用&lt;p&gt;6。代理使用子代理来完成每个任务的工作：&lt;p&gt;&lt;pre&gt;&lt;code&gt; a。落实任务
-
-  b. Spec 审查已完成的任务
-
-  c.代码审查已完成的任务
-&lt;/code&gt;&lt;/pre&gt;
-7. 当所有任务完成后：创建一个 PR 供我审核&lt;p&gt;8.如有任何意见请返回代理&lt;p&gt;9.如果完成，请删除计划文件并合并 PR&lt;p&gt;[0]：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;obra&amp;#x2F;superpowers" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;obra&amp;#x2F;superpowers&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;haolez:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;注意其中的语言：“深入”、“详细”、“错综复杂”、“贯穿一切”。这不是废话。没有这些话，克劳德就会略读。它将读取文件，查看函数在签名级别的作用，然后继续。您需要表明表面水平的阅读是不可接受的。&lt;p&gt;这对我对法学硕士如何运作的直觉来说毫无意义。并不是我不相信这有效，而是我的思维模型没有解释为什么要求模型“更深入地”阅读内容将对法学硕士产生的任何输出产生任何影响。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ramoz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对我来说，一件事是迭代计划的能力 - 更好地视觉化计划，以及注释有关计划的反馈的能力。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;backnotprop&amp;#x2F;plannotator" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;backnotprop&amp;#x2F;plannotator&lt;/a&gt; Plannotator 通过钩子真正有效且原生地做到了这一点&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jamesmcq:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于不会编码的人来说，这一切看起来都很好，但对于任何具有中等开发经验的人来说，所有这些计划、检查、提示和编排都比自己编写代码要工作得多。&lt;p&gt;“无论生产力结果如何，编写的代码量最少”没有赢家，除了 Anthropic 的银行账户。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;renewiltord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;计划文档和待办事项是上下文大小限制的产物。我也使用它们，因为它允许使用“重置”然后继续。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;srid:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于内联注释，我在 `&amp;#x2F;plan` 命令中使用特定格式，并使用 `ME:` 前缀。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;srid&amp;#x2F;AI&amp;#x2F;blob&amp;#x2F;master&amp;#x2F;commands&amp;#x2F;plan.md#2-plan-review-cycle" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;srid&amp;#x2F;AI&amp;#x2F;blob&amp;#x2F;master&amp;#x2F;commands&amp;#x2F;plan.md#2-pl...&lt;/a&gt;&lt;p&gt;它的工作原理与 Antigravity 的计划文档评论-细化周期非常相似。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;antigravity.google&amp;#x2F;docs&amp;#x2F;实施计划" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;antigravity.google&amp;#x2F;docs&amp;#x2F;实施计划&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zitrusfrucht:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我也用 Claude 和 Codex 做了一些非常类似的事情，因为工作流程是由我控制的，而不是由工具控制的。但我使用的不是 plan.md，而是一个类似于 Ticket_&lt;number&gt;_&lt;slug&gt;.md 的工单系统，我让代理从聊天中创建工单，然后对其进行更正和注释，然后将其发送回（有时发送回新的代理实例）。此工作流程帮助我跟踪我所从事的项目中随着时间的推移所做的工作。此外，这种方法不需要任何“真正的”票证系统工具&amp;#x2F;mcp&amp;#x2F;技能&amp;#x2F;无论什么，因为它纯粹适用于文本文件。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://boristane.com/blog/how-i-use-claude-code/</guid>
-      <pubDate>Sun, 22 Feb 2026 00:29:05 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47106686</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PacificSpecific:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哇，24 小时内有 2 个浮世绘线程。这真的很酷。&lt;p&gt;我在另一个帖子中发布了仓敷有一个博物馆，但忽略了发布链接。对于任何对此感兴趣的人来说，这是 &lt;a href="https:&amp;#x2F;&amp;#x2F;ukiyo-e-kurashiki.jp&amp;#x2F;?lang=en" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ukiyo-e-kurashiki.jp&amp;#x2F;?lang=en&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jeresig:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感谢您分享我的网站！几年前，当我开始了解日本版画时，我建造了这个。我想要一个地方，让我可以在所有拥有它们的博物馆和大学中找到它们。我使用计算机视觉分析将打印件聚类在一起（使用 TinEye）。上次发布的更多技术细节：&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=18344979"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=18344979&lt;/a&gt;&lt;p&gt;我现在正在开发一个新网站重点是从经销商和拍卖会上出售的印刷品。技术上更加复杂，因为它需要不断更新。希望尽快推出公开测试版！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zactato:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很确定这是由 jQuery 的创建者 John Resig 制作的。&lt;p&gt;我以前是他的朋友，他描述说想要做这样的事情。他是一个充满激情的家伙。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abetusk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这真是太神奇了。&lt;p&gt;令人惊讶的是[0]：&lt;p&gt;&gt; Ukiyo-e.org 由 John Resig 创建...&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;ukiyo-e.org&amp;#x2F;about" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ukiyo-e.org&amp;#x2F;about&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://ukiyo-e.org/</guid>
+      <pubDate>Sun, 22 Feb 2026 03:18:36 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47107781</comments>
     </item>
     <item>
-      <title>编译器是确定性的吗？</title>
-      <link>https://blog.onepatchdown.net/2026/02/22/are-compilers-deterministic-nerd-version/</link>
-      <description>&lt;p&gt;编译器是确定性的吗？相同的意图，不同的机器代码。这种区别很重要：确定性编译器：相同的完整输入元组 -&gt; 相同的输出可重现构建：两个独立的构建器重新创建位相同的输出可靠的工具链：差异在功能上很少重要相关概念，而不是等效保证。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Are compilers deterministic?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47106626"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://blog.onepatchdown.net/2026/02/22/are-compilers-deterministic-nerd-version/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 16 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AlotOfReading:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一个相关的属性是输入的特定类型的变化是否对输出产生相应大小的变化。例如，添加 print 语句不应改变其所在函数的行为（无 I&amp;#x2F;O）。从两个不同的调用站点调用相同的函数也不应该改变行为。新的编译器版本不应改变可观察的行为。等等&lt;p&gt;我认为这是更重要的属性，我不确定它是否有一个众所周知的名字。这篇文章间接地称之为可靠性，但无论如何，这是与法学硕士的主要区别。编译器&lt;i&gt;大部分&lt;/i&gt;实现了它，忽略了您从经验中学到的无数例外情况。&lt;p&gt;LLM 通常不会，即使在 0 温度和浮点确定性的情况下也是如此。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sarchertech:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果我们谈论“我们能否像忽略汇编一样忽略代码并将提示视为新的高级语言”，那么确定性并不是难题。&lt;p&gt;真正的问题是提示不稳定（混乱）。对提示规范的一个单词的更改将产生一个完全不同的程序。在这个问题得到解决之前，我们不会只检查提示，而几乎没有人需要担心代码。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;overgard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得这有点忽略了围绕这个问题的争论的要点。人们喜欢说“你不检查编译器输出，是吗？” （别介意我们中的一些人实际上是出于各种原因这样做的）。编译器最后一次在您的代码中引入错误是什么时候？ LLM 最后一次在您的代码中引入错误是什么时候？就这样吧。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pertymcpert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果编译器是不确定的，GCC 和 LLVM 会认为这是一个&lt;i&gt;bug&lt;/i&gt;。如果由于地址差异等原因重新运行编译器生成不同的输出，那么就需要修复它。所以是的，它们是确定性的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bandrami:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果不是，那么可重复的构建将是不可能的。诀窍是能够准确地控制输入元组。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nickelpro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;愚蠢。&lt;p&gt;编译器在小方面、时间戳、调试信息的编码路径等方面都不是确定性的。这些对于可重现的构建人员来说都是微不足道的、烦恼的。&lt;p&gt;你不能把这些微不足道的重现性问题推断为“确定性并不重要，因此 LLM 很好”。您无法将一个球扔到空中，确定将物体发射几英尺是微不足道的，从而得出月球旅行同样容易的结论。&lt;p&gt;&lt;i&gt;大小&lt;/i&gt;很重要，而不仅仅是类别。挥手幅度是一个巨大的危险信号，演讲者不知道他们在说什么。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pizlonator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，是的。&lt;p&gt;需要付出大量的工程努力才能实现这一点。&lt;p&gt;TFA 认为您无法完美地控制输入，因此如果您无法控制输入，行为可能会有所不同。是的，当然。&lt;p&gt;但是标题中的标题党问题的答案很简单：“是”。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eru:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;现在出现的问题是“如果法学硕士是不确定的，vivicoding 是否理智？”再说一次：你想要 CS 答案，还是工程答案？&lt;p&gt;决定论会帮助你。  通过一些工程设计，您可以使 LLM 具有确定性：基本上，修复 PRNG 的随机种子，并确保本文前面提到的其他熵源都不会做出贡献。&lt;p&gt;但这几乎不会影响人们提出的 LLM 问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;einrealist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果输出有问题，您通常是否使用相同的输入（您控制的）重新运行编译？我通常不会。&lt;p&gt;“验证”中包含哪些内容？步？它是否涉及更改生成的代码？如果没有，如何确保代码质量、架构约束、效率和一致性等？为这些东西编写测试即使不是（经济上）不可能，也是很困难的。如果 LLM 不遵循提示中概述的指导方针怎么办？这种情况仍在发生。如果不包括在内，我将其称为“暴力破解”。您为代币支付多少钱？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;DougMerritt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对用自己的语言编写的编译器（例如某些 C 编译器）进行回归测试并不罕见：用自身编译每个新版本，然后使用它再次编译自身，然后在单元测试或其他测试中使用结果，这应该产生与以前相同的结果。&lt;p&gt;重点是，在他们这样做的情况下，特定形式的确定性是预期和需要的。对此，我只是说多年来我在现实生活项目中看到过它。）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drivingmenuts:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 。我对人工智能的痴迷程度足以每天驱动 comma.ai，而且我仍然希望生成代码周围有确定性的验证门。我女朋友更喜欢我让它行驶，因为它比我更平稳、更不稳定，这是一个有用的提醒，“概率系统”和“操作上更好的结果”可以共存。&lt;p&gt;女朋友什么时候加入讨论的？我错过了什么吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Smalltalker-80:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果它们是由 Anthropic 制造的，则不会……&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;IanCal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得对氛围编码的一个很好的回应是客户、产品经理等要求功能而不阅读代码。您不需要阅读某些东西的代码来建立对它的功能以及它是否符合您的期望的信任级别。您可以进行设置，获得应用程序，并且无需阅读代码即可决定它是否可以让您满意地解决您的问题，这并不是那么疯狂。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nu11ptr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;计算机科学的答案是：编译器作为其完整输入状态的函数是确定性的。工程答案：大多数实际构建无法控制完整的输入状态，因此输出会漂移。&lt;p&gt;对我来说，这意味着输入不是确定性的，而不是编译器本身&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;measurablefunc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;编译器保留语义。这是他们合同的一部分。只要输出在观察上和功能上等效，输出是否具有一种顺序或另一种顺序的指令并不重要。文章并没有很好地实际解释这一点&amp;amp;相反，它绕着不相关的“随机性”来源徘徊。像时间戳和构建时 UUID 和最后声称法学硕士已经解决了停止问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cyanydeez:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;tl;dr：在混沌宇宙中，确定性的定义与人类宇宙不同。由于人类无法控制和测量每个变量，因此它不是确定性的。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://blog.onepatchdown.net/2026/02/22/are-compilers-deterministic-nerd-version/</guid>
-      <pubDate>Sun, 22 Feb 2026 00:21:05 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47106626</comments>
-    </item>
-    <item>
-      <title>显示 HN：在单个 RTX 3090 上通过 NVMe 到 GPU 绕过 CPU 的 Llama 3.1 70B</title>
-      <link>https://github.com/xaskasdf/ntransformer</link>
-      <description>&lt;p&gt;主要结果 模型模式解码 VRAM 注释 Llama 3。0 GB VRAM Llama 3 中的所有层。3 GB 32/32 层自动升级为 VRAM Llama 3。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Llama 3.1 70B on a single RTX 3090 via NVMe-to-GPU bypassing the CPU&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47104667"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/xaskasdf/ntransformer'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jacquesm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个有趣的实验领域。我怀疑，从长远来看，模型优化（知道可以省略哪些位而不影响模型的功能）将成为研究的主要领域，就像压缩算法一样，因为实际上模型&lt;i&gt;是&lt;/i&gt;一种有损压缩方案。&lt;p&gt;这很好，因为这会增加人工智能的民主化，远离正在创建的孤岛。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;exabrial:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得我们需要一种全新类型的芯片来供法学硕士使用。完全专注于带宽和存储的东西可能会牺牲原始计算能力。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Wuzado:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道 - 这可以用于多层教育部吗？例如。 active + 在VRAM中使用最多，在RAM中经常使用而在NVMe中使用较少？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rl3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好的。我一直在考虑做类似的事情，更多的是使用不到一半的可用 VRAM 来运行 1T 模型。&lt;p&gt;一项研究表明，理论上可以修改 SGLang 的路由层的一部分，以支持 JIT 提前预测专家从 Gen5 NVMe 存储直接交换到 GPU 内存。&lt;p&gt;我希望这被证明是正确的。该设置依赖于 NVIDIA Dynamo，因此 NIXL 原语可用于支持该设置。&lt;p&gt;很好奇是否有人已经尝试过此操作。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jauntywundrkind:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴看到 8b 像 6gb 内存而不是 10gb 一样。介于两者之间，您仍然需要 NVMe，但不像 23GB 上 70b 型号的 3 倍比率。&lt;p&gt;干得好。 PCI-P2P（GPU-Direct (tm)）真是太棒了。很酷看到！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaway2027:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;DirectX 不是添加了用于将资源直接加载到 GPU 内存的 API 吗？那行得通吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;randomtoast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;0.2 tok&amp;#x2F;s 适合实验，但它在任何有意义的意义上都没有交互性。对于许多用例，驻留的量化良好的 8B 或 13B 只会提供更好的延迟质量权衡&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/xaskasdf/ntransformer</guid>
-      <pubDate>Sat, 21 Feb 2026 20:57:30 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47104667</comments>
-    </item>
-    <item>
-      <title>幼雏中布巴奇奇效应的证据</title>
-      <link>https://www.science.org/doi/10.1126/science.adq7188</link>
-      <guid isPermaLink="true">https://www.science.org/doi/10.1126/science.adq7188</guid>
-      <pubDate>Sat, 21 Feb 2026 21:51:58 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47105198</comments>
-    </item>
-    <item>
-      <title>僵尸网络意外破坏了 I2P</title>
-      <link>https://www.sambent.com/a-botnet-accidentally-destroyed-i2p-the-full-story/</link>
-      <description>&lt;p&gt;2026 年 2 月 3 日，I2P 匿名网络被 700,000 个敌对节点淹没，这成为匿名网络有史以来最具破坏性的 Sybil 攻击之一。该网络通常运行 15,000 至 20,000 个活动设备。 I2P 连续三年每年二月都会遭受 Sybil 攻击。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A Botnet Accidentally Destroyed I2P&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47106985"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.sambent.com/a-botnet-accidentally-destroyed-i2p-the-full-story/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gnabgib:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;尽管有标题，但这似乎缺乏完整的故事。报道更深入（39分）&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46976825"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46976825&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.sambent.com/a-botnet-accidentally-destroyed-i2p-the-full-story/</guid>
-      <pubDate>Sun, 22 Feb 2026 01:08:17 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47106985</comments>
-    </item>
-    <item>
-      <title>当你的人工智能代理烧毁生产时谁该负责？</title>
-      <link>https://reading.sh/whos-liable-when-your-ai-agent-burns-down-production-039193d82746?sk=4921ed2dbc46f0c618835ac458cf5051</link>
-      <guid isPermaLink="true">https://reading.sh/whos-liable-when-your-ai-agent-burns-down-production-039193d82746?sk=4921ed2dbc46f0c618835ac458cf5051</guid>
-      <pubDate>Sat, 21 Feb 2026 23:52:00 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47106406</comments>
-    </item>
-    <item>
-      <title>在线Pebble开发</title>
-      <link>https://cloudpebble.repebble.com/</link>
-      <description>&lt;p&gt;在线 Pebble 开发 编写应用程序，无需处理 Linux、虚拟机、编译器或 Python。可从任何地方访问。还有更多的事情要做。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Online Pebble Development&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47104613"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://cloudpebble.repebble.com/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gmurphy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;cloudpebble 是 Pebble 最好的部分 - 它使开发变得如此简单，我做了更多的事情&lt;p&gt;现代设备的开发人员体验非常糟糕 - 驱动它的团队如此沉浸在大型团队开发中，以至于他们泄漏构建系统、配置、包管理、证书、权限和存储集成问题 - 然后其中一些出现小错误，你就会陷入困境&lt;p&gt;有时你只想编写一个代码文件并让它运行。 Cloudpebble 可能会让我回到 pebble。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;loosescrews:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;网站上并不清楚，但 GitHub 存储库指出，这是为了构建 Pebble 智能手表的应用程序：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;coredevices&amp;#x2F;cloudpebble" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;coredevices&amp;#x2F;cloudpebble&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zb3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;无需安装任何内容，无需编辑 json，无需登录.. 哦等等，不，不是那个..&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://cloudpebble.repebble.com/</guid>
-      <pubDate>Sat, 21 Feb 2026 20:50:46 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47104613</comments>
+      <title>人们喜欢互联网热潮。人工智能繁荣，不是那么多</title>
+      <link>https://www.nytimes.com/2026/02/21/technology/ai-boom-backlash.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/02/21/technology/ai-boom-backlash.html</guid>
+      <pubDate>Sun, 22 Feb 2026 03:24:22 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47107819</comments>
     </item>
   </channel>
 </rss>
