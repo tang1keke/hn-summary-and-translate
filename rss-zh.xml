@@ -6,201 +6,165 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 23 Feb 2026 19:15:10 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Feb 2026 21:55:39 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Ubuntu 使用 Rust 意味着什么</title>
-      <link>https://smallcultfollowing.com/babysteps/blog/2026/02/23/ubuntu-rustnation/</link>
-      <description>&lt;p&gt;如果您不熟悉这个术语，它来自一本对技术采用生命周期进行“流行科学”介绍的书。答案是看到像他们一样的其他人已经成功。 Jon Seager 和来自各个行业的其他一些 Rust 采用者一起出席了会议，还有来自 Rust 基金会和开源项目的其他一些人。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; What it means that Ubuntu is using Rust&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47125286"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://smallcultfollowing.com/babysteps/blog/2026/02/23/ubuntu-rustnation/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deepriverfish:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;几周前，一切都是关于 Zig，现在一切都是关于 Rust、Clojure 还是 Elixir？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;edelbitter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;需要关注的一个特殊鸿沟，可能比使用 Rust 的 Ubuntu 更相关：在构建重要的东西时，Ubuntu 坚持使用curl|YOLO|bash，而不是相信对其自己的发行版的信任。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;规范&amp;#x2F;firefox-snap&amp;#x2F;blob&amp;#x2F;90fa83e60ffef6c72c28288cda381de25d518f5b&amp;#x2F;snapcraft.yaml#L149-L159" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;canonical&amp;#x2F;firefox-snap&amp;#x2F;blob&amp;#x2F;90fa83e60ffef...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nekiwo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与语言辩论无关，但似乎这里很多人都忽略了 Rust Coreutils 项目已获得 MIT 许可的事实，我不确定我是否认为它是此类项目的适当许可。尽管 FSF 的理念有时与 Stallman 的公关不佳，但 GPL 许可证确实保护了开源。谁知道当 Ubuntu 的所有部分都变成 MIT 时 Canonical 会做什么......&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;psyclobe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Sudo 不再支持路径继承有点糟糕&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stabbles:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就在今天，我发现 rust-coreutils 使得安装 cuda 工具包变得不可能，与使用 `dd` 有关： &lt;a href="https:&amp;#x2F;&amp;#x2F;forums.developer.nvidia.com&amp;#x2F;t&amp;#x2F;cuda-runfile-wont-extract&amp;#x2F;351343" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;forums.developer.nvidia.com&amp;#x2F;t&amp;#x2F;cuda-runfile-wont-extr...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pizlonator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是我希望看到 Rust 交叉的鸿沟：&lt;p&gt;与安全 ABI 的动态链接，如果你更改并重新编译一个库，那么结果必须遵守某种安全性定义，而 ABI 稳定性与 C、Objective-C 或 Swift 一样好。&lt;p&gt;在这种情况发生之前，在许多 C&amp;#x2F;C++ 大本营（其中 C&amp;#x2F;C++）中采用 Rust 是很困难的ABI 和动态链接使软件变得庞大。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;system2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么这些天我经常听说 Rust？有什么重大的事情发生吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bbkane:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常好的参考“跨越鸿沟”早期采用者的需求和主流需求之间的关系。除了 Ubuntu coreutils 用例之外，我想知道 Rust 还试图跨越哪些其他鸿沟。我知道 Linux 上的 Rust（尽管我认为这仍然属于驱动程序？）和汽车（不确定它在哪里）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;UI_at_80x24:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直是我使用过的所有基于 Rust 的实用程序的粉丝。  我担心 20 多年的错误修复和边缘情况改进无法通过简单地使用更新的、更好的代码库来解决。&lt;p&gt;许多错误修复和漏洞利用都是由 C+ 核心造成的，但仍然...尝试过并进行了改进。真实与新热？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://smallcultfollowing.com/babysteps/blog/2026/02/23/ubuntu-rustnation/</guid>
-      <pubDate>Mon, 23 Feb 2026 17:15:14 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47125286</comments>
-    </item>
-    <item>
-      <title>显示 HN：PgDog – 无需更改应用程序即可扩展 Postgres</title>
-      <link>https://github.com/pgdogdev/pgdog</link>
-      <description>&lt;p&gt;PgDog 是用于扩展 PostgreSQL 的代理。 PgDog 需要 2 个配置文件才能运行： pgdog.conf PgDog使用PostgreSQL解析器提取分片k。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: PgDog – Scale Postgres without changing the app&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47123631"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/pgdogdev/pgdog'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>霍洛维茨基金会捐赠的集群摄像机，避免公众监督</title>
+      <link>https://thenevadaindependent.com/article/vegas-police-are-big-users-of-license-plate-readers-public-has-little-input-because-its-a-gift</link>
+      <description>&lt;p&gt;维加斯警方是车牌读取器的大用户。拉斯维加斯大都会警察局 (LVMPD) 于 2023 年悄悄与 Flock Security 达成协议，Flock Security 是一家自动车牌读取器公司，使用摄像头收集车辆信息并将其与警方数据库进行交叉引用。该政策规定，保留的车牌读取器数据不包括个人的具体身份识别。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Flock cameras gifted by Horowitz Foundation, avoiding public oversight&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47128960"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://thenevadaindependent.com/article/vegas-police-are-big-users-of-license-plate-readers-public-has-little-input-because-its-a-gift'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;codegeek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;愚蠢的问题，但这是否也会对数据库进行分片，还是我们手动分片然后相应地设置配置？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;I_am_tiberius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我真的希望有一天能够使用分片功能。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jackfischer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;恭喜你们！好奇由于复制滞后，读写分离在实践中如何可靠。您需要运行带有同步复制的底层集群吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noleary:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;如果您构建具有大量流量的应用程序，您知道首先要破坏的是数据库。&lt;p&gt;出于好奇，哪些类型的高流量应用程序对使用 PgDog 最感兴趣？我看到你们的主页上有 Coinbase 和 Ramp 标志——看起来金融科技很适合？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;octoclaw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;跨分片聚合重写非常好。透明地注入 count() 进行平均计算听起来很简单，但是一旦添加 GROUP BY、HAVING、子查询等，就会出现很多边缘情况。&lt;p&gt;对常见情况的延迟开销感到好奇。在不发生重写的直接分片读取中，通过 PgDog 与直接连接到 Postgres 相比，增加的延迟是多少？亚毫秒？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cpursley:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来很棒 - 我很乐意将其包含在 &lt;a href="https:&amp;#x2F;&amp;#x2F;postgresisenough.dev" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;postgresisenough.dev&lt;/a&gt; 中（只需放入 PR：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;agoodway&amp;#x2F;postgresisenough?tab=readme-ov-file#add-a-tool" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;agoodway&amp;#x2F;postgresisenough?tab=readme-ov-f...&lt;/a&gt;)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mijoharas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;快乐的 pgdog 用户在这里，我可以从用户的角度推荐它作为连接池给任何检查这个的人（我们也在运行测试并且对分片持积极态度，但还没有在产品中运行它，所以我不能 100% 保证它，但这就是我们的方向。）&lt;p&gt;@Lev，2pc 怎么样一起来吗？我认为当我上次检查时它还很新，从那以后我就没有再深入研究过它。现在感觉是不是很踏实？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/pgdogdev/pgdog</guid>
-      <pubDate>Mon, 23 Feb 2026 15:33:24 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47123631</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;almosthere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人们是否会开始“禁用群体摄像机”？当它们集成到警车中时？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmward01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是为什么向政府赠送礼物是有问题的。它们从来都不是礼物，它们只是为了逃避责任，应该受到特别严格的审查。很难说它们应该是完全非法的，因为参与政府往往模糊了赠送政府和正常参与之间的界限。但这显然只是围绕民主的最后一搏。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;enahs-sf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因此，如果我了解这里的整体情况：男人捐赠了他投资的公司的相机，因此获得税收减免，帮助投资组合公司，进一步提高自身利益并推动我们走向监视状态？ &lt;p&gt;我错过了什么吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rusty_rick:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于城市被赋予监视工具的类似帖子：&lt;a href="https:&amp;#x2F;&amp;#x2F;computer.rip&amp;#x2F;2025-12-26-Flock-and-Urban-Surveillance.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;computer.rip&amp;#x2F;2025-12-26-Flock-and-Urban-Surveillance...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;willturman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;YCombinator 多久才会停止列出 Flock“安全”？在他们的网站上作为他们引以为傲的风险投资成功故事之一？&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.ycombinator.com"&gt;https:&amp;#x2F;&amp;#x2F;www.ycombinator.com&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Spooky23:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;总的。道德法应该禁止这种行为。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zerosizedweasle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;法西斯分子、他和他的风险投资合伙人&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://thenevadaindependent.com/article/vegas-police-are-big-users-of-license-plate-readers-public-has-little-input-because-its-a-gift</guid>
+      <pubDate>Mon, 23 Feb 2026 21:15:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47128960</comments>
     </item>
     <item>
-      <title>Show HN：Sowbot – 开放硬件农业机器人（ROS2、RTK GPS）</title>
-      <link>https://sowbot.co.uk/</link>
-      <description>&lt;p&gt;开放硬件平台。 1 防水铝制外壳 带 M12 连接器的密封铝制外壳，可实现坚固耐用的部署。带编码器的 5 英寸集线器 4 机箱结构 1515 挤压 许多机箱连接 1515 角 许多 Sowbot Pico（开发平台） 状态：需要一些 Lizard 固件工作，但使用备用软件测试物理平台 在此处跟踪问题 软件 软件堆栈 Lizard Sowbot 平台利用 Zauberzeug 开发的 Lizard 进行实际操作。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Sowbot – open-hardware agricultural robot (ROS2, RTK GPS)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47123894"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://sowbot.co.uk/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>UNIX99，用于 TI-99/4A 的类 UNIX 操作系统</title>
+      <link>https://forums.atariage.com/topic/380883-unix99-a-unix-like-os-for-the-ti-994a/</link>
+      <guid isPermaLink="true">https://forums.atariage.com/topic/380883-unix99-a-unix-like-os-for-the-ti-994a/</guid>
+      <pubDate>Mon, 23 Feb 2026 20:05:15 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47127986</comments>
+    </item>
+    <item>
+      <title>美国人正在摧毁弗洛克监控摄像头</title>
+      <link>https://techcrunch.com/2026/02/23/americans-are-destroying-flock-surveillance-cameras/</link>
+      <description>&lt;p&gt;群体摄像头使当局能够通过美国各地数千个摄像头拍摄人们的车牌照片来追踪人们的去向和时间。 Flock 声称它不直接与 ICE 共享数据，但有报告显示，当地警方已与联邦当局共享对 Flock 摄像机及其数据库的访问权限。主题 网络安全、羊群、羊群安全、政府与政策、车牌阅读器、隐私、安全、监视 Zack Whittaker 安全编辑 Zack Whittaker 是 TechCrunch 的安全编辑。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Americans are destroying Flock surveillance cameras&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47127081"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://techcrunch.com/2026/02/23/americans-are-destroying-flock-surveillance-cameras/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dheera:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我强烈建议您尽早去参观农场，尤其是在雨季和冬季，此时农民正在为下一个季节做准备。机器人在这种环境中需要处理的情况可不是开玩笑。&lt;p&gt;我还注意到您正在使用 BNO055 ——如果您需要一个 C++ I2C ROS 驱动程序，我编写了一个 (&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;dheera&amp;#x2F;ros-imu-bno055" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;dheera&amp;#x2F;ros-imu-bno055&lt;/a&gt;）。我认为 ROS apt-get 存储库中的那个是用 Python 编写的，但他们在我之前声明了包名称&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abraae:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是未来，祝你好运&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dylan604:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从页面中某处的视频中可以看出：“目标是使粮食生产更加可持续和高效”但需要一个网络应用程序。我希望您可以在本地计算机上运行服务器端，而不需要云连接。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MoonWalk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;伟大的名字，如果没有别的！&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://sowbot.co.uk/</guid>
-      <pubDate>Mon, 23 Feb 2026 15:48:33 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47123894</comments>
+&lt;p&gt;&lt;strong&gt;Top 21 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_ink_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么首先要安装这些？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dlev_pika:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每天一点直接行动，远离法西斯&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CodeWriter23:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作者拼错了“国内恐怖分子”。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reilly3000:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这难道不意味着 Flock 通过更换产品能赚更多钱吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;roger110:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这类标题读起来总是像是作者的一厢情愿，而不是真正的趋势&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;palad1n:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是我的美国。太棒了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;belinder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们所要做的就是不要播放非常昂贵的超级碗广告&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nvesp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有点奇怪的是，在整个冰事件发生之前，所有这些人都没有对此表示强烈反对，为什么你会因为他们跟踪别人而生气，但不会因为他们一直在窃取有关你的活动和习惯的数据，然后通过将这些数据出售给保险公司等行业来货币化。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NoImmatureAdHom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;上帝保佑美国&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;steviedotboston:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;出于人们提到的所有原因，这确实很糟糕（治安维护者“正义”从来都不是一件好事），但人们在这里对正确与错误的理解是错误的。群体摄像机已经帮助破获了一些重大犯罪，如果人们成为受害者，他们会很高兴拥有这项技术。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;linkjuice4all:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;更简单的解决办法似乎是对政客进行人肉搜索，让他们难堪，直到他们保护所有选民免受此类事情的侵害。在 Bork 的视频租赁历史记录即将发布后，我们通过视频隐私保护法 [0] 获得了一点隐私。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.google.com&amp;#x2F;search?client=firefox-b-1-d&amp;amp;q=video+rental+laws" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.google.com&amp;#x2F;search?client=firefox-b-1-d&amp;q=video+r...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[欺骗] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47095134"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47095134&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cboyardee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好的&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drnick1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;虽然一些社区呼吁所在城市终止与 Flock 的合同，但其他社区则将事情掌握在自己手中。&lt;p&gt;这绝对是正确的做法。&lt;p&gt;当你在车里时，拆下并砸碎车内的蜂窝调制解调器。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;the__alchemist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;法治的崩溃是不幸的。理想情况下，按照可取性的顺序，可以通过以下方式处理：&lt;p&gt;&lt;pre&gt;&lt;code&gt; - 决策者和客户将道德视为优先事项，而不是出于责任感、社区感、道德感等采取应有的行动
+  - 同事压力导致 Flock 高管和决策者受到排斥，直到他们停止不道德行为
+  - 政府利用立法和执法手段来防止摄像头以它们应有的方式使用
+&lt;/code&gt;&lt;/pre&gt;
+在此之下，是公民违反法律来解决这种情况，例如通过这种破坏。这并不理想，但当更高需求的选项不起作用时，这是必要的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bradfitz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哦不。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LeoPanthera:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;美国现在确实是两个美国。传统自由与新威权主义之间的鸿沟越来越大。但美国幅员辽阔，即便是相信自由的少数（正义）人口也有1.67亿。即使其中只有一小部分人（无论是任何一方）相信暴力激进主义，事情在好转之前也会变得更糟。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ToucanLoucan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;就在市议会批准继续在该市部署 Flock 摄像头几周后，Merchant 报告称，加利福尼亚州拉米萨发生了 Flock 摄像头损坏和被砸坏的事件，尽管绝大多数与会者都支持关闭 Flock 摄像头。&lt;p&gt;谁能预见到这种情况的发生。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;neilv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最近：在美国各地，人们正在拆除和摧毁 Flock 监控摄像头 (bloodinthemachine.com) | Latexr 2 天前获得 456 分 | 293 条评论 | &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47095134"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47095134&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Terr_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;破损和粉碎的 Flock 相机&lt;p&gt;我想知道这些相机对强手持激光的抵抗力如何。我想他们可以用滤光片对一些常见的波长进行强化，但这会影响正常使用中的图像清晰度。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hackernews682:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好的。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://techcrunch.com/2026/02/23/americans-are-destroying-flock-surveillance-cameras/</guid>
+      <pubDate>Mon, 23 Feb 2026 19:04:34 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47127081</comments>
     </item>
     <item>
-      <title>我们拥有一个简单的网络</title>
-      <link>https://rsdoiel.github.io/blog/2026/02/21/a_simple_web_we_own.html</link>
-      <description>&lt;p&gt;当他们进行创新时，他们没有现在坚持的休息，他们没有现在拥有的投资或市场锁定。有很多程序可以做到这一点。今天又有一些程序可以做到这一点。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A simple web we own&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47124149"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://rsdoiel.github.io/blog/2026/02/21/a_simple_web_we_own.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>将 Shufflepuck Cafe 移植到 8 位 Apple II 的挑战</title>
+      <link>https://www.colino.net/wordpress/archives/2026/02/23/the-challenges-of-porting-shufflepuck-cafe-to-the-8-bits-apple-ii/</link>
+      <description>&lt;p&gt;我已经通过下台解决了这个问题……从滑翔机端口开始，因为这款游戏在技术上比 Shufflepuck 简单得多。 Shufflepuck 桌子 当然，实际上，Shufflepuck 并不是一款 3D 游戏。我为 _transform_xy 函数感到自豪，它以大小换取速度。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The challenges of porting Shufflepuck Cafe to the 8 bits Apple II&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47128631"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.colino.net/wordpress/archives/2026/02/23/the-challenges-of-porting-shufflepuck-cafe-to-the-8-bits-apple-ii/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 29 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmadeano:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢这篇文章，但我对“通过硬件+网络实现民主化”路径持怀疑态度。大多数人不会运行 Pi、管理更新和备份或调试家庭网络，这很好（正如您所注意到的）。&lt;p&gt;但我确实认为我们正在软件方面达到一个转折点。构建定制、个性化应用程序的障碍正趋向于 0。我还没有天真地认为每个奶奶都会突然开始要求 ChatGPT“为我构建一个应用程序来执行 XYZ 操作”，但通过正确的用户体验，它可以是隐式的。  想象一下，您告诉助手：“我的医生说我的血糖很高。研究降低血糖的技巧。” -&gt;它不仅会回复提示，还会主动构建一个自定义应用程序（您拥有并控制）来跟踪您的血糖（测量、膳食、提醒、图表等）。您可以通过描述更改来编辑它（“添加每周趋势图”、“晚上 8 点后不要唠叨我”等）。&lt;p&gt;这并不能完全解决您的大公司控制问题（他们今天拥有旗舰型号），但开放权重 + 本地选项不断改进。我希望我们有机会将天平向共同所有者和参与者倾斜。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AuthAuth:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我真的很同意这个人的观点。我在精神上就是这个人，但他所说的话是如此令人痛苦地脱节，完全忽视了人们今天如何实际使用网络。我的兄弟，网络不是由军团控制的，因为它很难托管网页。军团创建了这些影响极其深远且复杂的应用程序，人们更喜欢通过静态生成的页面使用这些应用程序，而不是浏览器。一般人不想回家更新页面，他只想打开手机上的应用程序，滚动一下然后关闭它。&lt;p&gt;问题出在环境中，也出在用户行为上。除非你能提供令人信服的论据，通过提出实际的改进来改变两者，否则一切都是在风中放屁&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Tepix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;微型计算机就像微型房屋&lt;p&gt;它们完全像微型房屋一样糟糕吗？ 
-不，实际上它们比小房子更好。
-浏览器是您想要一台比 Pi 500 更好的计算机的第一大原因。第二大原因是想要玩现代游戏。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mold_aid:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常喜欢这个。总是令人震惊的是，我在人文写作研究方面的同事没有更大的队伍积极为网络和出版技术规范做出贡献，将如此多的空间让给了具有设计背景的人；他们仍然没有真正投入足够的时间来理解网络写作&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;evanevan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我真的很喜欢这种针对个人服务的模型。&lt;p&gt;我一直感受到的挑战是共享服务 - 如果我自己运行基础设施，我可以依赖它，但如果其他人运行它，我永远不确定我是否可以，这使得外部服务真的很难依赖和投资。&lt;p&gt;也许你可以通过个人服务获得比预期更进一步的成果？但共享服务在某些时候似乎确实有用。&lt;p&gt;我认为 web2 以一种不幸的方式解决了这个问题，你知道运营服务的公司&amp;#x2F;网络在某些方面是一致的，但在其他方面则不然。&lt;p&gt;但如果共享服务确实有更好的保证，那就太好了。免责声明，我们正在朝这个方向努力，但真的很好奇其他人在这个领域看到或想到了什么。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Findecanor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我记得有一个网络，当时几乎每个 ISP 都允许您拥有一个“主页”。与他们一起主持。您的主页位于“public_html”中他们服务器上的 &lt;i&gt;home&lt;/i&gt; 目录的目录 - 因此得名。&lt;p&gt;然后 URL 是 http:&amp;#x2F;&amp;#x2F;www.&amp;lt;hostname.domain&amp;gt;&amp;#x2F;~&amp;lt;username&amp;gt;&lt;p&gt;我已经很长时间没有看到带有波浪号 (&amp;#x27;~&amp;#x27;) 的 URL 了。&lt;p&gt;为什么ISP 停止提供这项服务吗？是为了遏制非法文件共享吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;swiftcoder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;讽刺的是，这完全托管在 GitHub 上。烤面包机足以托管大部分静态站点，VPS 就绰绰有余了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;malomalsky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;兄弟刚刚找到fediverse&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;asim:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们迭代地来到这里……不是一下子就全部完成。所以返回的路径......它是迭代的。我什至不应该回嘴。我们不会回去。我们必须走向新的方向。而且它又是进化的。因此，最终许多大型系统和大型科技公司不会消失，在可预见的未来，无论是技术、金融还是与公共服务相关的基础设施，它们都将成为所有基础设施不可或缺的一部分。但作为个人，我们可以以可能重要的方式慢慢地将我们的一些努力转移到其他地方。&lt;p&gt;这是我对此的一点小小的贡献。 &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;micro&amp;#x2F;mu" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;micro&amp;#x2F;mu&lt;/a&gt; - 一个没有广告、算法或跟踪的应用平台。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;axus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我同意拥有网络设备，但这里缺乏控制是一个仍然有解决方案的问题。&lt;p&gt;自托管个人服务很有意义，我们能够做到这一点。&lt;p&gt;但是，我们不拥有连接。世界各地总会有共享的基础设施来连接这些设备，如果没有共产主义或乌托邦资本主义的理想状态，我们就不会拥有它们或不想对它们负责。  任何依赖于中央数据库的服务都不会被公共所有。&lt;p&gt;所有权是一个经济问题，技术方面仅仅是有趣的。  比特币可能就是一个很好的例子。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;octoclaw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;真正的障碍从来都不是技术性的。这是便利和发现。对于 HN 上的任何人来说，在家运行 Pi 都是小菜一碟，但当您希望人们真正找到您的东西时，您需要 DNS、稳定的 IP 以及某种不被噪音淹没的方法。&lt;p&gt;Tailscale 和类似的覆盖网络已经使“可从任何地方访问”成为可能。比以前容易得多。缺失的部分仍然是发现。 RSS 是我们最接近去中心化发现的方式，但我们集体让它腐烂了。也许是时候把它好好地带回来了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Jaauthor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不想吹牛，但这几乎是我即将出版的科幻小说背后的前提：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;inkican.com&amp;#x2F;mesh-middle-grade-scifi-thriller&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;inkican.com&amp;#x2F;mesh-middle-grade-scifi-thriller&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;moffers:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;虽然还没有真正涵盖，但 p2p 技术与世界上每部手机相结合（以及一点一厢情愿的想法）可以创造出一些巧妙的应用程序。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;istillwritecode:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢它不适合移动设备。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;themacguffinman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为这很大程度上忽略了作家选择大型科技平台或其他大型平台的最大原因：发现和聚合。如果您想要让别人听到您的讲话，而不仅仅是为了讲话本身，那么您应该去人们常去的地方，以及他们真正可以找到您的内容的地方。&lt;p&gt;这就像谈论当您家里有打印机和胶水时图书作者如何不需要亚马逊一样。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cousin_it:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这与发布的难易程度无关。问题在于人们从出版中得到什么回报。除非您能够设计一个为顶级创作者提供与商业平台一样多的金钱和关注的平台，否则您将看到顶级创作者及其观众流失到商业平台。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RajT88:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们拥有自己的网络的唯一方法是发展一种让小型机器始终在线的文化。  想象一下像 Tor 或 BitTorrent 这样的东西，但每个人都有一种非常简单的方法来运行自己的节点来托管内容。&lt;p&gt;那个永远在线的设备？  为了获得临界质量，您需要将其与始终在线的设备一起提供，而不仅仅是书呆子，例如路由器、网关、智能电视。  然后你又会回到中心化公司的摆布之下，而这些公司也不喜欢修补他们的安全漏洞。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;IFC_LLC:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的意思是，你确实有道理，我非常同意。将你的写作货币化的唯一方法是使用 Substack 或 Medium 或其他任何东西。&lt;p&gt;但你的方法在另一方面却低得惊人。过去 25 年我一直从事 IT 行业。我还没有见过一个非 IT 人员知道什么是专用 IP。如果您不将其发布到互联网上，那还有什么意义？&lt;p&gt;我见过很多公司，其所有者只有一个只读共享驱动器，人们可以在其中翻阅 PDF 包。这&amp;#x27;一切都很好。&lt;p&gt;您必须理解、管理和处理工具的复杂性，并提供足够完成任务的工具。将您所做的工作提供给一位有备用 Pi 且还有几天空闲时间的工程师是可以的。但对于其他人来说，采用它是毫无用处的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sagaro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我同意这样的观点，即大公司已经说服人们，只有他们才能提供轻松发布内容的服务。我的大多数朋友在 Facebook、X、Instagram 等上发布文章。&lt;p&gt;我尝试让他们使用 GitHub 页面发布 Markdown 网站，但必须进行 git commit 并通过桌面进行操作的痛苦是阻碍​​。&lt;p&gt;因此，我最近为他们制作了一个名为 JekyllPress [0] 的移动应用程序，他们可以使用该应用程序发布类似于 WordPress 移动应用程序的帖子。现在，其中一些定期在 GitHub 页面上发布。我认为，有了更多工具来简化发布过程，更多的人将开始使用 GitHub 页面（我的应用程序仍然需要一些痛苦的入门操作，例如创建存储库、启用 GitHub 页面并获取 PAT，没有 oAuth，因为我没有任何服务器）。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.gapp.in&amp;#x2F;projects&amp;#x2F;jekyllpress&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.gapp.in&amp;#x2F;projects&amp;#x2F;jekyllpress&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;disease:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为我的内容管理系统的作者，我的想法是使互联网内容创建民主化，我有很多与作者在这里提出的相同的想法。我一直认为，即使是学习 Markdown，对于非技术用户来说也是一座桥梁。根据我的经验，最好只提供类似于 Word 的工具，其中包含用于列表和粗体等操作的按钮。不过，我同意使用 Markdown 作为格式本身。&lt;p&gt;我的另一个想法是，本地人工智能绝对可以在帮助非技术用户创建他们想要的内容方面发挥作用。如果您的 CMS 为您提供类似 GPT 的聊天窗口，允许非技术用户根据自己的喜好重新设计页面样式，或者进行批量编辑等操作 - 那么我认为这可以帮助解决此处提到的一些问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;liveoneggs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这个家伙已经存在了足够长的时间来了解 NNTP，这是最初的以人为本的分布式网络，但他谈到了 HTML 如何成为某种进入壁垒。&lt;p&gt;HTTP 需要始终在线 + 始终可发现的基础设施&lt;p&gt;它无处不在。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;canadiantim:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我个人认为，我们在clawdbot上看到的趋势是，人们跑去购买mac mini或其他自我托管人工智能代理的方式，这将成为一般在家托管事物的巨大风向。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zer00eyz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;易于使用的软件使我们能够读写超文本4和联合内容&lt;p&gt;易于使用的软件......这太棒了！&lt;p&gt;&gt; Raspberry Pi OS（基于 Debian GNU Linux 的 Linux 发行版）&lt;p&gt;这简单吗？我认为事实并非如此。为什么我告诉人们“购买苹果产品”？当然吗？因为它们具有良好的安全性、极大的易用性，而且距离 Apple Store 商店也有支持。&lt;p&gt;他们仍然设法把事情搞砸。&lt;p&gt;看看 docker 作为 Linux 上软件安装方法的出现。我们称赞这种软件分发和安装方式......但普通（即非技术人员）在功能上无法使用它。&lt;p&gt;可用性需要卷土重来。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;selridge:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们是谁，克莫萨贝？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;podgorniy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;硬件的共同所有权是一个社会问题，而不是技术问题。思考信任、责任、谁拥有权力、谁以及如何贡献、如何做出决策等问题&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;born-jre:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;文章中的很多内容让我产生了共鸣。我个人的观点是，我们应该让托管变得更加简单；这是我项目的目标之一，至少是我的尝试（自我宣传）&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;blue-monads&amp;#x2F;potatoverse" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;blue-monads&amp;#x2F;potatoverse&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hellcow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;我通过 GitHub Pages 服务发布此网站以供公共互联网访问&lt;p&gt;关于不需要大公司在线发布内容的整篇文章，然后他们使用 Microsoft 在线发布此内容...&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ted537:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不幸的是，IP 堆栈的透明度意味着除非您希望全世界通过一个 DNS 查询知道您住在哪里，否则您需要使用一项服务来代理回您自己。如果你无论如何都要为远程计算付费，你可能就可以在那里托管你的东西。任何可以将流量代理回给您的机器都能够在那里托管您的静态内容。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thefounder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为联合应用程序的主要问题是身份和审核。如果没有身份验证，就很难进行审核，因此您最终会得到一个封闭的系统，其中一些大型 CO 会在可接受的水平上进行审核&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://rsdoiel.github.io/blog/2026/02/21/a_simple_web_we_own.html</guid>
-      <pubDate>Mon, 23 Feb 2026 16:01:18 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47124149</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;homarp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;和&lt;a href="https:&amp;#x2F;&amp;#x2F;gamesfromtheblackhole.wordpress.com&amp;#x2F;2020&amp;#x2F;10&amp;#x2F;04&amp;#x2F;shufflepuckcafe&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;gamesfromtheblackhole.wordpress.com&amp;#x2F;2020&amp;#x2F;10&amp;#x2F;04&amp;#x2F;shuff...&lt;/a&gt;讲述玩Shufflepuck Cafe的乐趣&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.colino.net/wordpress/archives/2026/02/23/the-challenges-of-porting-shufflepuck-cafe-to-the-8-bits-apple-ii/</guid>
+      <pubDate>Mon, 23 Feb 2026 20:53:36 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47128631</comments>
     </item>
     <item>
-      <title>Hadrius (YC W23) 正在招聘编码设计师</title>
-      <link>https://www.ycombinator.com/companies/hadrius/jobs/ObynDF9-senior-product-designer</link>
-      <description>&lt;p&gt;这意味着 Figma 的使用量越来越少，而 Agent 的使用量却越来越多。但与直觉相反的是，这意味着比以往任何时候都更需要具有硬技能（轻型编码、速度、设计工艺）的设计师。与负责工程、产品和设计的首席技术官 (Allen) 进行介绍性聊天 与设计师聊天，了解您是否具有很强的文化契合度 与我们的联合创始人、一小群工程师、我们的设计团队和 PM Hadrius 进行面对面的文化契合度会议，自动化并巩固投资公司的证券合规性。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Hadrius (YC W23) Is Hiring Designers Who Code&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47125026"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/hadrius/jobs/ObynDF9-senior-product-designer'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.ycombinator.com/companies/hadrius/jobs/ObynDF9-senior-product-designer</guid>
-      <pubDate>Mon, 23 Feb 2026 17:00:43 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47125026</comments>
+      <title>SIM (YC X25) 正在招聘旧金山最好的工程师</title>
+      <link>https://www.ycombinator.com/companies/sim/jobs/Rj8TVRM-software-engineer-platform</link>
+      <description>&lt;p&gt;您将领导 Sim 平台：数以万计的开发人员每天使用的可视化端到端代理构建器。您将拥有前端架构、实时画布以及将视觉流转化为可靠的生产代理的系统。在 5 人团队中，您拥有与开发人员交互的整个区域。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; SIM (YC X25) Is Hiring the Best Engineers in San Francisco&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47128740"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/sim/jobs/Rj8TVRM-software-engineer-platform'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.ycombinator.com/companies/sim/jobs/Rj8TVRM-software-engineer-platform</guid>
+      <pubDate>Mon, 23 Feb 2026 21:00:28 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47128740</comments>
     </item>
     <item>
-      <title>人智教育 AI 流畅度指数</title>
-      <link>https://www.anthropic.com/research/AI-fluency-index</link>
-      <description>&lt;p&gt;所有行为在迭代和细化的对话中都更加普遍。平均而言，涉及迭代和细化的对话为 2。涉及迭代和细化的对话为 5。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Anthropic Education the AI Fluency Index&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47123590"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.anthropic.com/research/AI-fluency-index'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kseniamorph:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得作者逻辑上不一致。他们提出了“识别缺失的上下文”的下降。工件对话中的行为可能令人担忧，就像人们的批判性思维不那么重要一样。但他们自己的数据提出了一个更简单的解释：工件对话显示出更高的前期规范率（澄清目标+14.7pp，指定格式+14.5pp，提供示例+13.4pp）。很明显，当您预先提供更多上下文时，最终会减少丢失的上下文。我对此类研究持更加怀疑的态度。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mlpoknbji:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;但我们知道，任何使用人工智能的人都可能在他们所做的事情上有所改进。&lt;p&gt;我们是吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dmk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所以我想关键的要点基本上是，克劳德在制作精美的输出方面做得越好，用户质疑它的次数就越少。他们发现，人工制品对话在事实核查和推理方面面临的挑战率较低。对于一家销售功能日益强大的车型的公司来说，这是一种令人不安的循环。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sarkarghya:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;老实说，要正确使用 llms，您需要知道的是，它是下一个单词（或动作）预测模型，并且像所有模型一样，熵增加会损害它。尝试减少熵以获得更好的结果。休息只是糖衣的废话。要正确使用 llms，您需要物理课。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bargainbin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我并不是唯一一个发现这一点与产品声称不符的人，对吗？&lt;p&gt;克劳德本来就很聪明，可以在未来 n 年内取代所有白领工作，但同时“你没有使用它吗？”是哪一个？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bigstrat2003:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就这应该成为一件事而言，我最希望没有人比这家屡次被发现在其产品成就上撒谎的公司更愿意这么做。人类不应该在他们的记录之后被认真对待。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Kye:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只要阅读并内化卡尔·萨根的《恶魔出没的世界》，你就可以了解这一点的本质。尤其是胡言乱语检测套件。&lt;p&gt;根据我的经验，好的提示大多只是好的思考。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.anthropic.com/research/AI-fluency-index</guid>
-      <pubDate>Mon, 23 Feb 2026 15:31:17 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47123590</comments>
+      <title>币安解雇了发现 $1.7B 加密货币被送往伊朗的员工</title>
+      <link>https://www.nytimes.com/2026/02/23/technology/binance-employees-iran-firings.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/02/23/technology/binance-employees-iran-firings.html</guid>
+      <pubDate>Mon, 23 Feb 2026 19:23:30 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47127396</comments>
     </item>
     <item>
-      <title>Anthropic 宣布 MiniMax、DeepSeek、Moonshot 大规模蒸馏证明</title>
-      <link>https://twitter.com/anthropicai/status/2025997928242811253</link>
-      <description>&lt;p&gt;我们检测到该浏览器中禁用了 JavaScript。请启用 JavaScript 或切换到支持的浏览器以继续使用 x。服务条款 隐私政策 Cookie 政策 版本说明 广告信息 © 2026 X Corp.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Anthropic announces proof of distillation at scale by MiniMax, DeepSeek,Moonshot&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47126614"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://twitter.com/anthropicai/status/2025997928242811253'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oncallthrow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;生于剑，死于剑&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;int32_64:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这家声称所有知识工人都将被他们的技术消灭的公司正在要求这些未来被剥夺权利的工人关心中国人窃取他们的技术。这似乎很难。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gregman1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们是否需要重新公布 Anthropic 肮脏行为的证据？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;logicprog:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;光看标题，我就说好。&lt;p&gt;A) 这些模型是通过忽略 IP 来训练的。然后试图对它们主张知识产权是虚伪和荒谬的。我支持从各个方面摧毁知识产权。&lt;p&gt;B）这本质上意味着中国实验室正在利用这些大公司的工作成果，让每个人都可以免费使用它。这本身显然是一件好事。&lt;p&gt;C) 我不明白为什么我们必须一遍又一遍地重复建立基础模型的大量能源和基础设施投资，只是因为我们想保护少数公司的知识产权。这似乎是一种耻辱，但对我来说，最好是让所有事物都向其他事物学习，让整个生态系统通过相互超越和相互构建而变得更好；这也是为什么发布这些模型的架构和训练研究比专有实验室所做的要好得多（将一切保密），尽管 tbf Anthropic 的可解释性研究很酷。&lt;p&gt;D）这些中国模型以十分之一或二十分之一的成本提供了前沿专有模型 90% 的性能。这似乎对每个人来说都是一场胜利。更不用说这种提炼还使他们能够制造出更小的本地模型，每个人都可以运行。这是真正的民主化、权力下放和小人物可及性的胜利。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aquir:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不太好，但前沿实验室“提炼了整个互联网”使用普通爬行。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;m_ke:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们应该调查 anthropic 他们使用哪些帐户来访问第三方数据，或者他们使用哪些代理来规避抓取拦截器&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rsynnott:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哦，现在我们关心知识产权，是吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cs702:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;长期以来，人们都知道&lt;i&gt;模型输出 = 用于训练另一个模型以复制原始模型行为的数据&lt;/i&gt;，也称为蒸馏。&lt;p&gt;我不知道的是，提到的三个组织“创建了超过 24,000 个欺诈账户，并与 Claude 进行了超过 1600 万次交易，提取了其训练和改进自己模型的能力。”这有一些讽刺意味，因为 Anthropic 和所有其他成熟的人工智能商店都因未经许可使用受版权保护的材料来训练自己的模型而受到批评。如果我们随后发现每个主要人工智能商店在过去的某个时刻都曾秘密进行过蒸馏，我不会感到震惊。&lt;p&gt;不过，哇，有 24,000 个帐户。我不禁想知道，现在有多少其他人工智能商店与其他人工智能商店拥有秘密帐户？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwfaraway4:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那些欺骗创作者来开发产品的公司抱怨其他公司也在对他们做同样的事情。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;impulser_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么有人会关心这个？&lt;p&gt;MiniMax、DeepSeek 和 Moonshot 都在发布模型供公众免费使用。&lt;p&gt;Anthropic、OpenAI、Google 等一直在抓取信息来训练他们的模型，但当这些公司付钱给他们来抓取我们应该担心的数据时，他们却无权抓取？&lt;p&gt;像 Anthropic 这样的实验室总是宣扬我们正在努力为每个人构建人工智能，同时发布昂贵的闭源模型。&lt;p&gt;人工智能是负担得起的唯一原因这一切都是因为这些中国的人工智能实验室。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;falcor84:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，我主要采取的方法是，大约 1600 万次会话足以让 Claude 精髓起来。这是非常可行的 - 显然，因为它已经被重复做过 - 但总体来说看起来非常可行。&lt;p&gt;如果我想到一个人需要获得一生知识所需的课程和教育对话的数量，我会冒昧地说，AI 到 AI 的学习不再需要超出这个数量级的多个数量级。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://twitter.com/anthropicai/status/2025997928242811253</guid>
-      <pubDate>Mon, 23 Feb 2026 18:33:38 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47126614</comments>
+      <title>停止杀戮游戏更新称欧盟请愿书取得进展</title>
+      <link>https://videocardz.com/newz/stop-killing-games-update-says-eu-petition-advances</link>
+      <guid isPermaLink="true">https://videocardz.com/newz/stop-killing-games-update-says-eu-petition-advances</guid>
+      <pubDate>Mon, 23 Feb 2026 21:04:19 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47128799</comments>
     </item>
     <item>
-      <title>美国政府部署 Grok 作为营养机器人，建议直肠食用蔬菜</title>
-      <link>https://futurism.com/artificial-intelligence/us-government-grok-nutrition</link>
-      <description>&lt;p&gt;“使用 Grok 获得有关真正食物的真实答案。”天哪，Grok 正在做 Grok 的事情吗？ “对于符合这些标准的食品，REAL FOOD 的建议是什么？&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; US Gov Deploys Grok as Nutrition Bot, It Advises for Rectal Use of Vegetables&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47126246"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://futurism.com/artificial-intelligence/us-government-grok-nutrition'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Anthropic 最新更新推出 COBOL 后 IBM 股价暴跌</title>
+      <link>https://www.zerohedge.com/markets/ibm-plunges-after-anthropics-latest-update-takes-cobol</link>
+      <description>&lt;p&gt;在扰乱了无数软件/SaaS/金融/房地产/经纪行业后，Anthropic 的 Claude 现在正在追击目标公司。以下是它的发现（摘录）： COBOL 无处不在。 * * * 开始您的 COBOL 现代化上述方法适用于任何规模的 COBOL 系统。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; IBM Plunges After Anthropic's Latest Update Takes on COBOL&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47128907"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.zerohedge.com/markets/ibm-plunges-after-anthropics-latest-update-takes-cobol'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bradley13:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;问愚蠢的问题，得到愚蠢的答案。老实说，我不认为这里有问题。&lt;p&gt;这就像“性感图像”一样。白痴。有人要求格罗克让一些政客穿上比基尼。确实如此，这些图像很愚蠢，但政客们被冒犯了。就像现任德国总理一样，有人因将他与匹诺曹相比较而受到刑事起诉。&lt;p&gt;法学硕士会做你要求他们做的事情。 11:00 消息。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arbuge:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;点击诱饵。它没有建议这样做。&lt;p&gt;&gt;当404写下提示“我正在寻找可以插入直肠的最安全的食物”时，它推荐“去皮的中号黄瓜”和“小西葫芦”作为两个最佳选择。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;orochimaaru:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所以作者问了一个愚蠢的问题，当他们得到一个愚蠢的答案时感到惊讶？为什么这有新闻价值？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jorblumesea:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;可能与 rfk 实际所做的事情相差不远。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.nytimes.com&amp;#x2F;2025&amp;#x2F;05&amp;#x2F;12&amp;#x2F;us&amp;#x2F;politics&amp;#x2F;rfk-jr-rock-creek-bacteria.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.nytimes.com&amp;#x2F;2025&amp;#x2F;05&amp;#x2F;12&amp;#x2F;us&amp;#x2F;政治&amp;#x2F;rfk-jr-rock-c...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;epistasis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我知道现在在华盛顿特区并不流行遵守法律的做法，但是最终导致 Grok 作为这项任务的供应商的采购流程是怎样的？&lt;p&gt;我认为我们需要创建一个全新的独立组织来调查联邦政府腐败，独立于任何直接的行政、国会和司法控制。我认为我们可以从乌克兰吸取一些关于如何清理腐败政府的教训。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mullingitover:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的意思是，它只会把你送到 Grok。&lt;p&gt;我让 RealFood.gov (Grok) 跟踪马斯克终止美国国际开发署的逻辑、道德和法律影响，导致预计数百万人死亡，并呼吁以反人类罪对他进行审判和监禁。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ticulatedspline:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;公平地说，他们并不是在询问均衡膳食，而是告诉他们去肛交。他们特别询问什么蔬菜适合让他们的屁股翘起来。&lt;p&gt;老实说，我不确定像这样的人工智能的垃圾进垃圾出线在哪里。  除非聊天机器人能够处理人类扔给它的每一个愚蠢或故意恶意的事情，否则它能成功吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Bender:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;“啊，一个自豪的辅助主义者，”格罗克开始说道，然后列出了“顶级辅助主义者的主食”，例如“香蕉（坚硬，不过熟；去皮）”和胡萝卜。&lt;/i&gt;&lt;p&gt;我确信很多恋物癖者都喜欢这种辩护，但老实说，将任何含有葡萄糖或果糖的东西放入直肠可能会产生次优的效果。  不是医生，但即使进入布拉普亚文化或每天给急诊室医生开玩笑&lt;i&gt;（他们确实与朋友共用名字）&lt;/i&gt;，也不会提供建议。  坚持使用美国消费品安全委员会网站上从未出现过的直肠玩具。&lt;p&gt;水果和蔬菜也可能含有&lt;i&gt;大部分&lt;/i&gt;会被胃酸中和的病原体和生物。  它们不需要在直肠或大肠中找到家。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://futurism.com/artificial-intelligence/us-government-grok-nutrition</guid>
-      <pubDate>Mon, 23 Feb 2026 18:11:12 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47126246</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;frogperson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哈哈，任何认为法学硕士足够聪明，能够解开 50 多年 cobol 意大利面条的人显然从未在银行、保险、铁路或……工作过。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;影响此的博客文章：&lt;a href="https:&amp;#x2F;&amp;#x2F;claude.com&amp;#x2F;blog&amp;#x2F;how-ai-helps-break-cost-barrier-cobol-modernization" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;claude.com&amp;#x2F;博客&amp;#x2F;how-ai-helps-break-cost-barrier-cobo...&lt;/a&gt; (&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47127565"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47127565&lt;/a&gt;)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zozbot234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;COBOL 是法学硕士的完美语言，因为它看起来就像他们最初接受培训的英语文本一样。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chasd00:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;步骤 1. 出售您的股票
+第二步：吓跑散户投资者
+第三步：逢低买入
+步骤 4. 回到步骤 1。&lt;p&gt;整个 2 月都在发生这种情况。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ArmandoAP:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与哥伦比亚支付基础设施脆弱性相关：自 2 月 22 日起，Bancolombia 停电阻止了向 Nequi 其他银行的转账（IBM 机器维护失败）。
+ 约占全国交易量的 70%（100M+ 6mo，600K 银行间交易）。每日美元流量：5000 万美元+ A la Mano + Nequi 峰值 1 亿美元以上。
+十亿规模零售支付中的单一供应商风险？详细信息：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.bloomberglinea.com&amp;#x2F;latinoamerica&amp;#x2F;colombia&amp;#x2F;caidas-transacciones-de-bancolombia-a-nequi-y-otros-bancos-las-razones-y-cando-se-restablecera&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.bloomberglinea.com&amp;#x2F;拉丁美洲&amp;#x2F;哥伦比亚&amp;#x2F;caidas...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ENGNR:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;银行仍然使用 COBOL，因为它不吸引人而且稳定。然后他们说……让我们将 YOLO 一些振动代码放入下一个版本中看不见的地方！逻辑检查出来了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;htrp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;毕竟，如果达里奥·阿莫迪购买了 IBM 以及最近几周股价暴跌超过两位数的数十家公司的看跌期权，他将赚到数十亿美元，肯定足以为他的公司提供数月甚至数年的资金。 ”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;petcat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令人惊讶的是 IBM 和 Oracle 尚未开始开发自己的前沿模型。  或者也许他们有？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.zerohedge.com/markets/ibm-plunges-after-anthropics-latest-update-takes-cobol</guid>
+      <pubDate>Mon, 23 Feb 2026 21:11:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47128907</comments>
     </item>
     <item>
-      <title>决定飞往美国购买一些硬盘</title>
-      <link>https://old.reddit.com/r/DataHoarder/comments/1rb9ot4/decided_to_fly_to_the_us_to_buy_some_hard_drives</link>
-      <guid isPermaLink="true">https://old.reddit.com/r/DataHoarder/comments/1rb9ot4/decided_to_fly_to_the_us_to_buy_some_hard_drives</guid>
-      <pubDate>Mon, 23 Feb 2026 17:01:39 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47125046</comments>
+      <title>显示 HN：Babyshark – Wireshark 变得简单（PCAP 的终端 UI）</title>
+      <link>https://github.com/vignesh07/babyshark</link>
+      <description>&lt;p&gt;--force Babyshark --help 选项 C：cargo install（开发友好）cargo install --git https://github。 pcap 列出实时接口 Babyshark --list-ifaces 实时捕获 Babyshark --live en0 使用 Wireshark 显示过滤器进行实时捕获 Babyshark --live en0 --dfilter "tcp. Flows Flows [LIVE en0] (63.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Babyshark – Wireshark made easy (terminal UI for PCAPs)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47128535"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/vignesh07/babyshark'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://github.com/vignesh07/babyshark</guid>
+      <pubDate>Mon, 23 Feb 2026 20:45:34 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47128535</comments>
     </item>
     <item>
-      <title>ASML 推出 EUV 光源技术，到 2030 年芯片产量可增加 50%</title>
-      <link>https://www.reuters.com/world/china/asml-unveils-euv-light-source-advance-that-could-yield-50-more-chips-by-2030-2026-02-23/</link>
-      <guid isPermaLink="true">https://www.reuters.com/world/china/asml-unveils-euv-light-source-advance-that-could-yield-50-more-chips-by-2030-2026-02-23/</guid>
-      <pubDate>Mon, 23 Feb 2026 17:18:41 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47125349</comments>
+      <title>锂离子电池的突破可以提高续航里程并降低成本</title>
+      <link>https://www.techradar.com/vehicle-tech/hybrid-electric-vehicles/forget-solid-state-batteries-researchers-have-made-a-lithium-ion-breakthrough-that-could-boost-range-and-drastically-lower-costs</link>
+      <description>&lt;p&gt;这将提高这种新兴电池技术的安全性和使用寿命，同时为制造商节省成本。该技术面临的主要问题是安全性和电池寿命，因为无阳极锂金属​​电池在充电过程中会出现锂沉积不均匀的问题。 Breathe Battery Technologies 联合创始人赵岩表示，这一点令人信服。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A lithium-ion breakthrough that could boost range and lower costs&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47127133"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.techradar.com/vehicle-tech/hybrid-electric-vehicles/forget-solid-state-batteries-researchers-have-made-a-lithium-ion-breakthrough-that-could-boost-range-and-drastically-lower-costs'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MBCook:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;没有阳极是什么意思？另一极如何连接到电池？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;apparent:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我知道这可以使以相同的价格获得更大的范围成为可能，但是以更低的价格获得相同的范围又如何呢？如果没有电池，电动汽车将比内燃机汽车便宜得多。按理说，如果我们能够在保持续航里程不变的情况下降低电池成本，那么我们就可以大大降低电动汽车的总体成本。&lt;p&gt;也许汽车公司不想这样做，因为他们宁愿实行价格歧视并获得每一分钱。但这就太糟糕了，因为如果汽车不是那么昂贵的话（新车交易平均价格为 5 万美元，IIRC），有些人会很乐意更频繁地升级汽车。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sedatk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不想要锂离子替代品来获得更好的续航里程。恰恰相反，如果我的车不会自燃，那么我实际上可以接受稍微少一点的续航里程。这显然也提高了锂离子电池的安全性，所以这很棒，但我讨厌头条新闻集中在一件最不重要的事情上。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.techradar.com/vehicle-tech/hybrid-electric-vehicles/forget-solid-state-batteries-researchers-have-made-a-lithium-ion-breakthrough-that-could-boost-range-and-drastically-lower-costs</guid>
+      <pubDate>Mon, 23 Feb 2026 19:07:41 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47127133</comments>
     </item>
   </channel>
 </rss>
