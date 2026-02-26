@@ -6,7 +6,7 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 26 Feb 2026 07:07:45 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Feb 2026 09:54:51 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
@@ -36,8 +36,612 @@
 &lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;belZaah:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这称为紧急行为。我们了解法学硕士是如何运作的，但甚至没有关于这种行为如何从数学中产生的理论。我们非常了解蚂蚁，但是蚁丘行为到底是如何源自蚂蚁行为的呢？这是系统工程中的一个棘手问题，预测紧急行为（例如紧急情况）会很有趣。&lt;/p&gt;&lt;/div&gt;
 &lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pushedx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，大多数人（包括我自己）都不了解现代 LLM 的工作原理（特别是如果我们考虑最新的架构和培训改进）。&lt;p&gt;3b1b 视频系列做得相当不错，但现在我们正在与模型进行交互，这些模型的每层参数计数可能比我们交互的第一个模型更大。&lt;p&gt;这些模型可以产生的新颖见解确实令人震惊，我想即使对于那些了解最新技术的人来说也是如此。&lt;/p&gt;&lt;/div&gt;</description>
       <guid isPermaLink="true">https://www.grumpy-economist.com/p/refine</guid>
-      <pubDate>Thu, 26 Feb 2026 04:59:01 +0000</pubDate>
+      <pubDate>2026-02-26 04:59:01</pubDate>
       <comments>https://news.ycombinator.com/item?id=47162059</comments>
+    </item>
+    <item>
+      <title>Show HN：OpenSwarm – 适用于 Linear/GitHub 的多代理 Claude CLI Orchestrator</title>
+      <link>https://github.com/Intrect-io/OpenSwarm</link>
+      <description>&lt;p&gt;由 Claude Code CLI 提供支持的 OpenSwarm 自治 AI 代理编排器 OpenSwarm 将多个 Claude Code 实例编排为自治代理。它会发现线性问题，运行 Worker/Reviewer 对管道来生成代码更改，向 Discord 报告进度，并通过 LanceDB 向量嵌入保留长期记忆。包含所需机密的 env 文件：DISCORD_TOKEN=your-discord-bot-token DISCORD_CHANNEL_ID=your-channel-id LINEAR_API_KEY=your-linear-api-key LINEAR_TEAM_ID=your-linear-team-id config。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: OpenSwarm – Multi‑Agent Claude CLI Orchestrator for Linear/GitHub&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47160980"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/Intrect-io/OpenSwarm'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mihneadevries:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;老实说，审阅者和工作人员管道是我最好奇的部分。
+比如你如何处理代理之间的分歧，审阅者只是阻止而工作人员重试，还是存在硬中断的循环？&lt;p&gt;我最担心的失败模式是级联上下文漂移，其中链中的每个代理都会稍微误解任务，当你到达测试代理时，它正在验证完全错误的事情。
+fwiw 我认为 LanceDB 内存是这种设置的正确选择，保持共享上下文接地可能可以防止大多数漂移问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;csto12:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每天都会发布新的代理协调器吗？这是新的JS框架吗？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/Intrect-io/OpenSwarm</guid>
+      <pubDate>2026-02-26 02:19:02</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47160980</comments>
+    </item>
+    <item>
+      <title>自我改进的软件不会产生天网</title>
+      <link>https://contalign.jefflunt.com/self-improving-software/</link>
+      <description>&lt;p&gt;自主更新：它可以根据其刚刚编写的最近代码更改自动更新相同的文档。这创建了一个连续的反馈循环。在此模型中，文档不是静态的工件；而是静态的。它是系统的一个活生生的部分，与代码一起发展。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Self-improving software won't produce Skynet&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47161498"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://contalign.jefflunt.com/self-improving-software/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;selridge:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇文章离题太远了。改进并不在用户端。您可以编写文档，也可以让机器人编写文档；它将提高您的存储库的性能，但不会“改进”代理。&lt;p&gt;当构建线束的实验室将代理置于线束上时，您就会看到自我改进。&lt;p&gt;您可以改进您的项目和环境。如果您不拥有代理工具，那么您就无法改进代理。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dhruv3006:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;但这会造成安全噩梦——只是不像天网。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://contalign.jefflunt.com/self-improving-software/</guid>
+      <pubDate>2026-02-26 03:36:57</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47161498</comments>
+    </item>
+    <item>
+      <title>Show HN：ZSE – 开源 LLM 推理引擎，冷启动时间为 3.9 秒</title>
+      <link>https://github.com/Zyora-Dev/zse</link>
+      <description>&lt;p&gt;5-7B-指示zse服务meta-llama/Llama-3。 3 zse 服务 microsoft/Phi-3-mini-4k-instruct zse 服务 google/gemma-2-9b-it # 内存优化 zse 服务 Qwen/Qwen2。 5-32B-Instruct --max-memory 24GB # 根据建议，zse 提供 meta-llama/Llama-3。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: ZSE – Open-source LLM inference engine with 3.9s cold starts&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47160526"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/Zyora-Dev/zse'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;medi_naseri:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太棒了，我正在开发一个项目，尝试在两个 GPU 上运行 10 个模型，加载/卸载是我想到的唯一解决方案。&lt;p&gt;将尝试部署此解决方案。&lt;p&gt;是否会针对 GPU 上没有加载其他模型的情况宣传冷启动计时？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/Zyora-Dev/zse</guid>
+      <pubDate>2026-02-26 01:15:25</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47160526</comments>
+    </item>
+    <item>
+      <title>RAM 现在占 HP PC 物料清单的 35%</title>
+      <link>https://arstechnica.com/gadgets/2026/02/ram-now-represents-35-percent-of-bill-of-materials-for-hp-pcs/</link>
+      <description>&lt;p&gt;这位高管还指出，将推出功能较少、价格更便宜的产品。消费类 PC 销量同比增长 14%，商用 PC 销量同比增长 11%。 Scharon Harding 高级技术记者 Scharon Harding 高级技术记者 Scharon 是 Ars Technica 的高级技术记者，撰写有关消费电子产品和服务的新闻、评论和分析。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; RAM now represents 35 percent of bill of materials for HP PCs&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47161160"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arstechnica.com/gadgets/2026/02/ram-now-represents-35-percent-of-bill-of-materials-for-hp-pcs/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;travisgriggs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在我的编程生涯中，内存使用仍然是作为程序员所担心的事情。然后内存扩展得如此之多，以至于各种“最佳”编程模式几乎变得无关紧要。我们是否会因此开始在软件解决方案中再次实际考虑这一点？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;agentifysh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;RAM价格还有希望再次企稳吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SanjayMehta:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最近订购了一些具有 32Gb RAM 的机器。想要 64，被告知无法保证价格，也无法保证交货日期。在紧迫的压力下，解决了当天可用的一切。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kazinator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“物料清单” (BOM) 不是货币发票，只是组成部分的明细。 :)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;haxtormoogle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;现在不是有一个用于数据中心的全晶圆人工智能芯片主机可以将任何需要内存的东西从水里吹出来吗？
+我不明白内存短缺是否存在，公司已经超越了英伟达。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rubyn00bie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为我们正处于这些记忆恶作剧的顶峰或接近顶峰。 OpenAI 对短缺负有主要责任，只是没有资金来支付。鸡归巢、账单到期只是时间问题。 OpenAI 承诺投入数千亿美元的资本支出，但手头却没有那么多现金，而且考虑到支出，其现金流非常糟糕。&lt;p&gt;除非有真正的突破，超越 AGI，进入现有或近期硬件上的超级智能，否则我看不出“相信我，兄弟”如何让其支出继续下去。竞争异常激烈，如果没有绝对的突破，我们很可能会处于收益递减的境地。&lt;p&gt;最终结果将是 RAM 价格在 18-24 个月内暴跌。唯一的好处是消费者可能会获得在本地运行更大的开源模型的能力。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blackoil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也许这个 RAMmageddon 将引发一波优化软件浪潮，这些软件不需要 GB 的内存来处理任何事情。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SolubleSnake:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个相当奇怪的说法，因为物料清单是在制造系统中进行管理的，并且出于会计和工程目的以多种不同的方式进行管理。这可以适用于与客户、工厂车间人员或会计师的销售数据有关的任何事情。有销售 BOM、制造 BOM、采购 BOM 和嵌套 BOM 等，所有这些都针对业务流程的不同部分...组织内的 BOM 可能接近 70% 等，或者是 0%！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aerroon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为欧洲应该投资制造内存。 RAM 不会消失，所有现代计算都使用它。这将是创造国内供应的机会。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;re-thc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;什么！？我一直以为我们可以下载更多内存！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;asadm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我正在研究我的副产品 [1]，其中我正在探索需要外部存储器（仅 1G）的 Rockchip，其价格从 3 美元到 32 美元，完全破坏了我的经济效益。我选择了一个带有嵌入式内存的系统，并优化了我的代码:)&lt;p&gt;1。 &lt;a href="https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;_asadmemon&amp;#x2F;状态&amp;#x2F;1989417143398797424" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;_asadmemon&amp;#x2F;状态&amp;#x2F;1989417143398797424&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;KumaBear:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您迟早会听到失踪的运输卡车被盗的消息。  中国正在开放更多生产，但我认为短期内不会出现任何缓解。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;locusofself:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;天啊。我很高兴我“挥霍”了适用于我的 MacBook Air 中的 24GB RAM。应该还能让我多活几年..&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arstechnica.com/gadgets/2026/02/ram-now-represents-35-percent-of-bill-of-materials-for-hp-pcs/</guid>
+      <pubDate>2026-02-26 02:43:26</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47161160</comments>
+    </item>
+    <item>
+      <title>Google API 密钥不是秘密，但后来 Gemini 改变了规则</title>
+      <link>https://trufflesecurity.com/blog/google-api-keys-werent-secrets-but-then-gemini-changed-the-rules</link>
+      <description>&lt;p&gt;新的网络研讨会：Google API 密钥不是秘密。新的网络研讨会：Google API 密钥不是秘密。您的公共地图密钥现在是 Gemini 凭证。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Google API keys weren't secrets, but then Gemini changed the rules&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47156925"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://trufflesecurity.com/blog/google-api-keys-werent-secrets-but-then-gemini-changed-the-rules'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dlev_pika:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;平台真正实现的目标是利用整个科技行业的创造力，这样你就不必自己发明所有东西，并且可以大规模构建更多的东西&lt;p&gt;我听说过这一点，但每次我看到这些平台都捕捉到了初创生态系统构建的另一种用途（例如图像、知识总结、编码）&lt;p&gt;该行业已经散布着创新者的尸体，这些创新者被平台的侵略性所吞没。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;phantomathkg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;公共互联网上有 2,863 个实时密钥&lt;p&gt;如果他们改为扫描 GitHub 代码会更有趣。这个数字让我害怕。虽然我不确定其中有多少是实时的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;louison11:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这看起来是如此……明显？如此规模的公司，拥有其人才和专业知识，怎么可能没有标准化的测试或规范来防止这种明显的缺陷呢？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;evo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;等不及有人让 Gemini 提示找到这些公钥并使用它们启动自己的副本。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;827a:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最后的意思是不是谷歌还没有真正解决这个问题？这实在是太糟糕了；这是一个巨大的疏忽，很明显是由于急于让双子座成为客户而造成的。补救措施很可能会迫使客户禁用密钥，从而破坏客户的工作流程。谷歌的外观极其糟糕。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;habosa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是事实，但也不像作者声称的那么新。过去滥用 Google API 密钥的方式有很多种（至少是在经济上滥用），这对开发人员来说总是非常困惑。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;the_arun:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不应允许使用公钥访问私有数据。这是核心问题。这与 Google API 密钥是否秘密无关。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;devsda:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;泄漏密钥阻塞。他们默认阻止被发现泄露并与 Gemini API 一起使用的 API 密钥。&lt;p&gt;不存在“泄露”的密钥。密钥（如果 google 没有称其为秘密的话）。&lt;p&gt;理想情况下，它们应该阻止在 Gemini 之前创建的所有密钥访问 Gemini。如果他们泄露的密钥“发现”是真的，那就很有趣了（尽管并不奇怪）。出现误报并开始阻止来自 Gemini 的密钥。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;warmedcookie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令人沮丧的是，其中很多密钥是很久以前通过它们可以连接到的少量 GCP 服务生成的。 （例如 Firebase 远程配置、firestore 等）&lt;p&gt;当 Gemini 出现时，这些密钥不是默认禁用该服务，而是启用了 Gemini，允许攻击者轻松利用这些密钥（例如，存储在 APK 文件中的“公共”密钥）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bpodgursky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ChatGPT 撰写博客文章攻击 Gemini 安全漏洞。  现在这是他们的世界，我们只是看看结果如何。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;selridge:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;写得很好。这是一种搞笑的情况，没有人（除了笨拙的人）是恶棍。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://trufflesecurity.com/blog/google-api-keys-werent-secrets-but-then-gemini-changed-the-rules</guid>
+      <pubDate>2026-02-25 19:54:14</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47156925</comments>
+    </item>
+    <item>
+      <title>显示 HN：Commodore 64 的 Unix？开源</title>
+      <link>https://github.com/ascarola/c64ux/releases/tag/v0.7</link>
+      <description>&lt;p&gt;过滤器加载 抱歉，出了点问题。加载时出错。请重新加载此页面。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Unix for the Commodore 64? Open Source&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47160220"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/ascarola/c64ux/releases/tag/v0.7'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://github.com/ascarola/c64ux/releases/tag/v0.7</guid>
+      <pubDate>2026-02-26 00:36:41</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47160220</comments>
+    </item>
+    <item>
+      <title>OpenAI 将如何竞争？</title>
+      <link>https://www.ben-evans.com/benedictevans/2026/2/19/how-will-openai-compete-nkg2x</link>
+      <description>&lt;p&gt;OpenAI 也没有在模型本身之上提供适合产品市场的消费产品。当然，拥有所有这些能力的公司需要能够自我颠覆，但我们已经远远超出了人们说谷歌无法做人工智能的地步。如果出现能够实现网络效应（最明显的是持续学习）的突破，这种情况可能会改变，但我们无法为这种情况的发生做好计划。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; How Will OpenAI Compete?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47158975"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ben-evans.com/benedictevans/2026/2/19/how-will-openai-compete-nkg2x'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;neom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;没有多少人谈论这个：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.tomshardware.com&amp;#x2F;科技行业&amp;#x2F;人工智能&amp;#x2F;nvidia-still-hasnt-sold-a-single-h200-to-china-nearly -获得白宫绿灯三个月后，美国商务部官员表示，在众议院听证会上，该部门尚未批准任何销售” rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.tomshardware.com&amp;#x2F;tech-industry&amp;#x2F;artificial-intell...&lt;/a&gt;&lt;p&gt;白宫表示尚未批准任何销售，但尚不清楚中国是否正在购买，而且他们的华为 Ascend 芯片似乎取得了良好进展。如果中国在全栈（芯片、框架、训练、模型）上基本上处于同等水平，并且以 0.xx&amp;#x2F;M 代币开始开放加权前沿模型，那么是的，人们能想象周围的护城河问题吗？看到 Anthropic 这样抱怨并不奇怪：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.anthropic.com&amp;#x2F;news&amp;#x2F;Detecting-and-preventing-distillation-attacks" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.anthropic.com&amp;#x2F;news&amp;#x2F;Detecting-and-preventing-dist...&lt;/a&gt; - 但我不知道此时你如何返回？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.ben-evans.com/benedictevans/2026/2/19/how-will-openai-compete-nkg2x</guid>
+      <pubDate>2026-02-25 22:29:25</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47158975</comments>
+    </item>
+    <item>
+      <title>科技公司不应该被胁迫进行监控</title>
+      <link>https://www.eff.org/deeplinks/2026/02/tech-companies-shouldnt-be-bullied-doing-surveillance</link>
+      <description>&lt;p&gt;军事用途不受任何限制。 Anthropic应该坚持他们的原则，拒绝允许他们的技术以他们公开表示不支持的两种方式使用：自主武器系统和监视。 Anthropic 应该坚持他们的原则，拒绝允许他们的技术以他们公开表示不支持的两种方式使用：自主武器系统和监视。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Tech Companies Shouldn't Be Bullied into Doing Surveillance&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47160226"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.eff.org/deeplinks/2026/02/tech-companies-shouldnt-be-bullied-doing-surveillance'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;djoldman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;顺便说一句，为什么法律没有规定政府不能在没有搜查令的情况下付钱给另一个实体去做它自己不允许做的事情呢？我正在考虑来自移动应用程序的地理数据。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;browningstreet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;赫格斯公司有 Grok，但他们实际上想要 Claude。埃隆讨厌人类，而且……嗯……赫格塞斯有能力伤害他们。&lt;p&gt;人类通过与军方签订第一份合同，让自己面临这场灾难。&lt;p&gt;我不希望他们输掉这场战斗，但这也是他们踏入那个舞台给自己带来的一场战斗。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;saurik:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也许科技公司应该更加努力，不要将世界上未加密的信息集中在他们控制的服务器上。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;camillomiller:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好吧，看来他们不需要那么多的欺凌。如果这意味着好处、无关税、更多利润等，他们绝对乐意做出贡献&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SanjayMehta:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“科技公司不应该被胁迫为政府进行监视。”&lt;p&gt;FTFY&lt;p&gt;无论如何，他们都会监视你。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;epistasis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;早在伊拉克战争时期，政府过度侵犯隐私的时候，科技公司就站在美国人民一边。他们为捍卫第四修正案而奋斗。&lt;p&gt;今天一切都变了，除了人择。您认为苹果现在会抵制司法部的非法要求吗？天哪，不。蒂姆·库克 (Tim Cook) 点燃了苹果公司的声誉。 25 年来，我一直是超级忠实的 Apple 用户，但现在我正准备退出。  所有的信任都被烧毁了。&lt;p&gt;保持坚强 Anthoproc，你似乎是唯一一家真正有原则和骨干的大型 SV 公司。无论怎样，我都不会忘记这里发生的事情。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.eff.org/deeplinks/2026/02/tech-companies-shouldnt-be-bullied-doing-surveillance</guid>
+      <pubDate>2026-02-26 00:37:32</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47160226</comments>
+    </item>
+    <item>
+      <title>Jane Street 遭遇 Terra $40B 内幕交易诉讼</title>
+      <link>https://www.disruptionbanking.com/2026/02/24/jane-street-hit-with-terra-40b-insider-trading-suit/</link>
+      <description>&lt;p&gt;Jane Street 因涉嫌加密货币内幕交易而被起诉，该交易可能加速了 $LUNA Terraform 的崩溃。 &gt; Jane Street 部署... https://t.斯奈德声称 Jump 还参与向 Jane Street 传播机密信息。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Jane Street Hit with Terra $40B Insider Trading Suit&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47160613"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.disruptionbanking.com/2026/02/24/jane-street-hit-with-terra-40b-insider-trading-suit/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;behnamoh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看来即使 OCaml 也无法阻止你进行欺诈。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tripplyons:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;说简街造成了 400 亿美元的损失是错误的。 Terra 造成了损失，因为它是一个庞氏骗局，声称在没有任何实际美元支持的稳定币上提供 20% 的年利率。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qgin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不清楚内幕交易在加密货币领域意味着什么。里面有什么？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;readams:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一如既往，马特·莱文对此有最好的看法：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.bloomberg.com&amp;#x2F;意见&amp;#x2F;新闻通讯&amp;#x2F;2026-02-24&amp;#x2F;ai-can-manage-your-mutual-fund" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.bloomberg.com&amp;#x2F;意见&amp;#x2F;新闻通讯&amp;#x2F;2026-02-24&amp;#x2F;ai-...&lt;/a&gt;&lt;p&gt;“对不起。但如果你去 Jump Trading 和 Jane Street 说“你好，我有一个不受监管、设计不当的机制，可能会导致 500 亿美元的市值在一夜之间暴跌，你愿意和我交易吗？”他们会说愿意，但他们的眼睛会发光，你知道吗？如果在时间 0，你给他们一个极具可玩性的系统，可以产生数十亿美元的利润，那么在时间 10，你的系统将成为冒烟的残骸，而他们将获得数十亿美元的利润。这就是他们的全部工作，你知道吗？我无法提前告诉你所有的中间步骤是什么，事实上事后看来我也无法告诉你中间步骤实际上是什么，Jump 和 Jane Street 如何从 Terra 的崩溃中赚钱。但作为一种启发，我的意思是，来吧。 Terra 就像“你好，我们有一个装满钱的气球，这里有一根别针，不要戳破气球。”你猜怎么着！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wuiheerfoj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在资本和加密货币市场中，10 分钟就是一生 - 我很难相信 Terraform Labs 交换触及链后 10 分钟的交易构成内幕交易。&lt;p&gt;Jump 人为价格通胀的说法听起来更值得怀疑，但 TFA 似乎并没有将其放在首位和中心位置&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Infernal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有人类写的关于此的文章吗？ “这不是 X，这是 Y”太分散注意力了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sam0x17:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;奇怪的是，每天上午 10 点 Jane Street BTC 的销售突然停止，而加密货币突然能够反弹......&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.disruptionbanking.com/2026/02/24/jane-street-hit-with-terra-40b-insider-trading-suit/</guid>
+      <pubDate>2026-02-26 01:25:49</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47160613</comments>
+    </item>
+    <item>
+      <title>第一个网站</title>
+      <link>https://info.cern.ch</link>
+      <description>&lt;p&gt;ch - 第一个网站的主页 从这里您可以： 浏览第一个网站 使用线路模式浏览器模拟器浏览第一个网站 了解网络的诞生 了解欧洲核子研究组织 (CERN)，这是网络诞生的物理实验室。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; First Website&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47159302"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://info.cern.ch'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WD-42:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有谁能够恢复原始源代码吗？这里的自述文件： &lt;a href="https:&amp;#x2F;&amp;#x2F;info.cern.ch&amp;#x2F;hypertext&amp;#x2F;README.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;info.cern.ch&amp;#x2F;hypertext&amp;#x2F;README.html&lt;/a&gt; 提到了 src&amp;#x2F;同一位置下的目录，但它是 404 给我的。&lt;p&gt;很想看看原始 httpd 的源代码。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mjcohen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;70 年代中期，我是南加州大学信息科学研究所的计算机科学研究生。我记得当我使用阿帕网（或者是达帕网）登录伦敦并在那里做事时，我感到敬畏。哇！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Adachi91:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;稍后，但我有一个来自经销商的钥匙链，上面有他们的网站广告，他们没有域名，所以它的广告为 &lt;a href="http:&amp;#x2F;&amp;#x2F;123.123.123.123&amp;#x2F;web.htm" rel="nofollow"&gt;http:&amp;#x2F;&amp;#x2F;123.123.123.123&amp;#x2F;web.htm&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tempestn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太棒了。我特别喜欢常见问题解答中有关如何查找网页的条目：&lt;a href="https:&amp;#x2F;&amp;#x2F;info.cern.ch&amp;#x2F;hypertext&amp;#x2F;WWW&amp;#x2F;FAQ&amp;#x2F;KeepingTrack.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;info.cern.ch&amp;#x2F;超文本&amp;#x2F;WWW&amp;#x2F;常见问题解答&amp;#x2F;KeepingTrack.html&lt;/a&gt;&lt;p&gt;&gt;当他找到一个他认为应该引用新数据的概述页面时，他可以要求该文档的作者（他应该使用指向他或她的邮件地址的链接在该文档上签名）添加一个链接。&lt;p&gt;&amp;gt;顺便说一句，原则上第三方很容易遍历这些树并为他们发现的内容建立索引。只是据我所知还没有人做到过&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Nition:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;首次创建此页面时，人们通常如何导航回上一页？我注意到没有“以前的”或“家”链接在这里。是否有一个“背部”？按钮&amp;#x2F;键，还是必须直接编辑 URL？&lt;p&gt;编辑：我认为回答了我自己的问题。如果您选择“使用线路模式浏览器模拟器”浏览选项，则可以直接键入“后退”回去。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fsckboy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;宣布网站是“第一”引入了一个定义问题。&lt;p&gt;用一个简单的例子来说，您需要几个 HTML 页面，其中一个页面才能链接到另一个页面，但到目前为止这只是超文本。那么您需要分布在多个站点上的页面才能创建网络。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whatsupdog:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在阿联酋被禁止（至少在 DU 上）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dirk94018:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我记得。几周后，运行了一个脚本来统计互联网上所有网站的数量。当时有 324 个网站。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;avaer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;线路模式 [1] 让我停了下来。不是因为你可以做任何太有用的事情（大多数很酷的链接都死了，或者远程登录），而是因为它看起来是一个非常酷的探索、学习和破解的地方。&lt;p&gt;没有广告，没有随机的山雀，没有人试图让你接受他们的政治，试图欺骗你，或者告诉你自杀。只是人们分享有趣的事情。&lt;p&gt;真的让我对互联网感到兴奋，直到我关闭标签。&lt;p&gt;[1] &lt;a href="http:&amp;#x2F;&amp;#x2F;line-mode.cern.ch&amp;#x2F;www&amp;#x2F;超文本&amp;#x2F;WWW&amp;#x2F;TheProject.html" rel="nofollow"&gt;http:&amp;#x2F;&amp;#x2F;line-mode.cern.ch&amp;#x2F;www&amp;#x2F;超文本&amp;#x2F;WWW&amp;#x2F;TheProject.html&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://info.cern.ch</guid>
+      <pubDate>2026-02-25 23:02:58</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47159302</comments>
+    </item>
+    <item>
+      <title>泄露的文件显示 Meta 正在打击获取堕胎信息</title>
+      <link>https://www.motherjones.com/politics/2026/02/meta-abortion-ai-chatbot-leak-teen-info-ban/</link>
+      <description>&lt;p&gt;泄露的文件显示，Facebook、WhatsApp 和 Instagram 的母公司 Meta 已禁止其人工智能聊天机器人与未成年人讨论包括堕胎在内的话题，这一全面政策与该公司处理儿童性剥削指控的方式形成鲜明对比，也可能无意中影响其针对成人的内容。但是，尽管 Meta 加强了对青少年用户在饮食失调和抑郁症方面的保障，但其政策同时也打击了有关堕胎和性健康的信息。 Dimitratou 表示，这家倡导和研究在线获取生殖健康信息的非营利组织多年来一直与 Meta 会面，敦促该平台“将堕胎视为医疗保健，并直接获取准确的医疗保健资源”，以与对待 Covid-19 相同的方式对待堕胎相关和生殖权利内容，包括主动纠正错误信息，但 Meta 已“明确表示这不是优先事项”。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Leaked Documents Show Meta Cracking Down on Access to Abortion Information&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47158105"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.motherjones.com/politics/2026/02/meta-abortion-ai-chatbot-leak-teen-info-ban/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.motherjones.com/politics/2026/02/meta-abortion-ai-chatbot-leak-teen-info-ban/</guid>
+      <pubDate>2026-02-25 21:26:04</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47158105</comments>
+    </item>
+    <item>
+      <title>对 AI 生成的 3D 斜坡进行尸检</title>
+      <link>https://aircada.com/blog/ai-vs-human-3d-ecommerce</link>
+      <description>&lt;p&gt;Trellis 在大约 8 秒内生成了模型，感觉很快。模型只有~1mb，感觉很小。也许这可行。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; An autopsy of AI-generated 3D slop&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47157841"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://aircada.com/blog/ai-vs-human-3d-ecommerce'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dudeinhawaii:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不知怎的，这篇文章完美、直观地解释了人工智能生成的代码与人类生成的代码有何不同。&lt;p&gt;您会看到完全相同的模式。人工智能使用更多的代码来完成同样的事情，但效率却较低。&lt;p&gt;我什至不是人工智能的仇恨者。这只是事实。&lt;p&gt;如果你想交付高质量的产品，人类就必须检查并清理该代码。&lt;p&gt;同样，你可以将 AI 生成的 3D 模型直接放入你的游戏引擎中，尽管其拓扑结构很糟糕，并让它执行“正常”。当你添加更多这些糟糕的模型时，你最终会得到糟糕的性能，但谁在乎呢，你准时交付了游戏吗？然后，人类就可以埋头苦干地修复糟糕的拓扑和纹理，并且比一开始就正确建模对象所花费的时间更长。&lt;p&gt;边缘循环与“高质量代码”的比较也是我在心里画的一张。扩展和构建高质量代码是一种乐趣。&lt;p&gt;低质量代码就像图中的密集网格。你有一百万次交叉相互作用和副作用。在一半的情况下，清理整个系统并构建更好的系统会更容易。&lt;p&gt;同样，我每天都使用人工智能模型，但工具人工智能与大型产品人工智能不同。大型产品将需要您花费大量时间不断重构和清理代码（也使用人工智能）——这样您就失去了几乎所有感知到的速度增强。&lt;p&gt;也就是说，如果您关心高质量的代码库和产品...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;coldtea:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;&lt;i&gt;为什么 AI 3D 生成不符合电子商务标准&lt;/i&gt;&lt;p&gt;我希望我有他的信心（在电子商务标准方面）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TheTriunePrism:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“尸检” 3D 倾斜凸显了当前人工智能供应链的一个严重失败：完整性错觉。&lt;p&gt;我们生活在一个“统计收获”时代。其中模型优先考虑“足够好”。表面高于结构完整性。在精神价值供应链中，这被称为偷工减料。仔细检查后就会崩溃的 3D 模型缺乏我所说的内部代理——它不理解“种子”。其自身的几何形状。当我们迈向以代理为中心的世界时，我们必须区分“生成噪声”和“生成噪声”。和“真实创作”。真正的价值定义需要一个“守望者”他们能够超越第一眼的修饰，看到实用程序的潜在故障。”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Keyframe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不错的鸦片。这些东西很快就会到达那里。即使已经展示的内容也可以是手头的抽取器的良好开端。我们之前已经通过摄影测量看到过这一点。讽刺的是，抱怨它的文本本身就经过了人工智能。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Miraste:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Trellis 从来都不是最先进的。这不是一个比较好的选择；其中许多问题已取得进展。例如，有些模型可以执行干净的拓扑和 PBR 纹理。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://aircada.com/blog/ai-vs-human-3d-ecommerce</guid>
+      <pubDate>2026-02-25 21:05:15</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47157841</comments>
+    </item>
+    <item>
+      <title>去虚拟化和静态多态性</title>
+      <link>https://david.alvarezrosa.com/posts/devirtualization-and-static-polymorphism/</link>
+      <guid isPermaLink="true">https://david.alvarezrosa.com/posts/devirtualization-and-static-polymorphism/</guid>
+      <pubDate>2026-02-25 18:41:23</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47155811</comments>
+    </item>
+    <item>
+      <title>PA Bench：评估多选项卡 PA 任务的前沿模型</title>
+      <link>https://vibrantlabs.com/blog/pa-bench</link>
+      <description>&lt;p&gt;@misc{ PABench2026，标题={PA Bench：在现实世界个人助理工作流程上评估网络代理}，作者={Shahul Elavakkattil Shereef 和 A​​nkit Sridhar}，年份={2026}，url={vibrantlabs. com/blog/pa-bench} }@misc{ PABench2026，标题={PA Bench：在现实世界个人助理工作流程上评估 Web 代理}，作者={Shahul Elavakkattil Shereef 和 A​​nkit Sridhar}，年份={2026}，url={vibrantlabs. com/blog/pa-bench} }@misc{ PABench2026，标题={PA Bench：在现实世界个人助理工作流程上评估 Web 代理}，作者={Shahul Elavakkattil Shereef 和 A​​nkit Sridhar}，年份={2026}，url={vibrantlabs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; PA Bench: Evaluating Frontier Models on Multi-Tab Pa Tasks&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47157160"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://vibrantlabs.com/blog/pa-bench'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://vibrantlabs.com/blog/pa-bench</guid>
+      <pubDate>2026-02-25 20:11:37</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47157160</comments>
+    </item>
+    <item>
+      <title>大学的误用</title>
+      <link>https://www.publicbooks.org/the-misuses-of-the-university/</link>
+      <description>&lt;p&gt;清洁所有玻璃需要多少钱？毕竟，这是一座玻璃建筑。在建校 150 周年之际，这所大学甚至没有勇气说出自己的陈词滥调。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Misuses of the University&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47153924"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.publicbooks.org/the-misuses-of-the-university/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 14 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ajkjk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些都是我觉得我基本上都知道的东西，但当它们一起描述时，它是如此……令人沮丧。啊。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nephihaha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“栅栏上的软标牌宣布 SNF Agora 研究所成立，他被告知，该大学正在“建设更强大的全球民主。”&lt;p&gt;“2017 年，希腊航运巨头向该研究所捐赠了 1.5 亿美元......”&lt;p&gt;简而言之，这就是约翰·霍普金斯大学的问题。从亿万富翁“慈善家”那里拿钱，约翰·霍普金斯大学在许多领域都这样做了。这会是一种什么样的“更强大的全球民主”？相对于富豪统治，航运巨头们对民主有多感兴趣？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WalterBright:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;约翰·霍普金斯大学有一所商学院，即约翰·霍普金斯凯里商学院，但文章中特别没有提及。您认为他们自己的商学院能够为大学带来财政健全吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;djoldman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;约翰霍普金斯大学不是一所大学。许多其他“大学”也不是大学。&lt;p&gt;“约翰·霍普金斯实验室”会是一个更准确的名称，因为不到 10% 的收入与学费相关。&lt;p&gt;我不确定为什么包括教授在内的人们仍然认为这些地方主要是为了教学学生或学者。当研究经费和合同每年带来超过 45 亿美元的收入时，这些 100-2.5 亿美元的建筑项目就显得微不足道了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;patcon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;美丽的文章。如此安静、严厉的批评。以一位历史学教授目击者的视角撰写：&lt;p&gt;&amp;gt;该大学负责学生事务的副教务长发表最后讲话。她让学生们起立为大学校长鼓掌，感谢他送来的帽子。她从讲台上转身面向总统，与观众一起鼓掌。 &lt;i&gt;这是一个知道她的面包哪一边涂了黄油的女人。&lt;/i&gt;教授认得这个名字：她是负责惩戒在加沙抗议种族灭绝的学生的官员。&lt;p&gt;这些天，我经常想起多克托罗的&lt;i&gt;魔法王国的落魄&lt;/i&gt;中事件的历史转折，临时政权的统治开始于接管像会议厅（中间讲座）这样的建筑。多伦多大学...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;markus_zhang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它只是该机构的一部分。当机构衰落时，它也随之枯萎。这只是一个更大、更深层次问题的一个症状。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;1024core:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我把标题误读成了《大学的情妇》并认为这可能是“真正的家庭主妇”的下一个迭代专营权：“大学的真正家庭主妇”。&lt;p&gt;抱歉，我无意分散人们对当前严肃话题的注意力。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noelwelsh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当我在大学时，我的机构投资了数百万美元建造各种新建筑。 A 向我的导师发牢骚，导师向我解释说这对于吸引新生很重要。&lt;p&gt;不幸的是，上一所大学的决定通常是基于学生（或其父母）头脑中关于大学应该是什么样子的形象，而不是学术等东西。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delichon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;他记得 2001 年，这座建筑拔地而起，取代了校园里的榆树、山毛榉和橡树林。旧艺术中心并不便宜：在世纪之交，1700 万美元是真金白银。&lt;p&gt;他们拆除了一座不到 25 年的建筑，建造了一座更豪华、实际教学空间更少的建筑。有许多“临时”的情况。这里的圆角小屋的年龄是其两倍。该机构是联邦研究经费的最大接受者。他们对我们纳税人的信托责任似乎只是名义上的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最近毕业（25 届），关于我学校的管理层，我最常听到的一句话是，在过去的几十年里，他们更像是一家房地产控股公司，而不是一所研究型大学。&lt;p&gt;有一篇很棒的学生评论，关于_a_提议的解决方案（解雇院长）：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.thecrimson.com&amp;#x2F;文章&amp;#x2F;2022&amp;#x2F;11&amp;#x2F;29&amp;#x2F;anderson-bureaucratic-bloat-harvard&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.thecrimson.com&amp;#x2F;文章&amp;#x2F;2022&amp;#x2F;11&amp;#x2F;29&amp;#x2F;anderson-burea...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paulorlando:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他逐渐意识到，巨额捐款往往会增加大学的账单，为可能与大学核心使命仅有微弱联系的项目产生新的运营费用。新的固定成本蚕食了现有的资金流，增加了收入增长的压力。”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;awakeasleep:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果你曾经读过关于先进文化废墟中的生活的科幻小说，但你对它如何略读堕落过程感到恼火——好吧，我们现在肯定有大量这些细节。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zer00eyz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;凭借其 29 个悬臂式屋顶平面和天窗玻璃窗，它将很快成为校园游览的亮点。未来的学生将会羡慕不已。也许它会吸引更多的申请者。&lt;p&gt;前几天我收到了一则学校的广告（大多是信誉良好的学校）。他们正在谈论他们屡获殊荣的食堂食物......而且照片太夸张了。 &lt;p&gt;借一大笔钱，资助一个漂亮的校园，并在就业前景有限的情况下获得学位，然后想知道为什么自己几十年来都深陷债务之中，这似乎是时髦的事情。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PaulHoule:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想念新闻博物馆，尤其是因为它有这个展览：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.motorious.com&amp;#x2F;文章&amp;#x2F;亮点&amp;#x2F;don-bolles-car-controversy&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.motorious.com&amp;#x2F;文章&amp;#x2F;亮点&amp;#x2F;don-bolles-car...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.publicbooks.org/the-misuses-of-the-university/</guid>
+      <pubDate>2026-02-25 16:38:40</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47153924</comments>
+    </item>
+    <item>
+      <title>Show HN：Respectify – 一个教人们更好地争论的评论管理员</title>
+      <link>https://respectify.org/</link>
+      <description>&lt;p&gt;曾经见过这样的评论。 WordPress JSON 见过这样的评论。尊重可以做到这一点。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Respectify – a comment moderator that teaches people to argue better&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47151842"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://respectify.org/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;onion2k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;轻松发布&lt;/i&gt;&lt;p&gt;咯咯笑。我有危险。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;badc0ffee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这件事似乎更多的是为了加强政治观点，而不是避免逻辑谬误。&lt;p&gt;我对 UBI 文章发表评论（而不是支持 UBI）的所有尝试都表明我的评论是狗哨，并且&amp;#x2F;或者语气过于消极。这个话题绝对值得挑战和辩论。&lt;p&gt;使用这个话题会产生一个回声室的效果，留下来的人永远不会从他们的想法受到挑战中受益。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reconnecting:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;据我所知，检测到的垃圾邮件与未检测到的垃圾邮件之间的区别在于域名前面的 &lt;i&gt;https:&amp;#x2F;&amp;#x2F;www&lt;/i&gt;。&lt;p&gt;以下是成功通过所有检查的示例：&lt;p&gt;&gt;已发表
+此评论通过了所有检查并将被发布。&lt;p&gt;得分：5&amp;#x2F;5 |不是垃圾邮件 |正题：是 |未检测到狗哨（置信度：100%）&lt;p&gt;可以确认。我们在 Windows ARM 上运行 tirreno www.tirreno.com（开源欺诈检测）时遇到了这个确切的问题 - 库通过仿真自动选择 AVX2，并且批量评分比强制 SSE2 慢得多。 256 位运算在仿真层下进行分割，并且开销在紧密循环中快速增加。
+为这些构建固定 SSE2。违反直觉，但吞吐量却上升了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ceejayoz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我收到的示例提示是“《虎胆龙威》是一部圣诞电影吗？”&lt;p&gt;“当然是！”得到 80% 的确定性“偏离主题” &lt;p&gt;当我详细说明它发生在圣诞晚会上时，它是这样说的：&lt;p&gt;“检测到狗哨（置信度 80%）：此评论似乎无伤大雅，但措辞“圣诞晚会”却是这样的。可能是对基督教主题的暗指，尤其是在可能驳斥或攻击世俗或多样化节日庆祝活动的讨论中。这种语言可能微妙地暗示着对基督教传统的排斥或偏爱，这可能会使那些庆祝不同传统的人被边缘化。”&lt;p&gt;这不是一个很好的第一次体验。&lt;p&gt;我在 Facebook 和 Instagram 上看到了说“未活”的趋势。而不是“被杀”或“纸杯蛋糕”。代替“疫苗”并怀疑人类很早就会比这些类型的内容过滤尝试更聪明，而语言作为副作用会变得非常奇怪。&lt;p&gt;&lt;i&gt;编辑：&lt;/i&gt;我还注意到它说“将其他人称为“可怕的人””。是不尊重的，并且减少了进行相互尊重的讨论的可能性。它将某些人定位为完全消极的人，这可能会疏远他人并终止对话。”，如果我也将你的帖子提供给它。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://respectify.org/</guid>
+      <pubDate>2026-02-25 14:21:19</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47151842</comments>
+    </item>
+    <item>
+      <title>Windows 11 记事本支持 Markdown</title>
+      <link>https://blogs.windows.com/windows-insider/2026/01/21/notepad-and-paint-updates-begin-rolling-out-to-windows-insiders/</link>
+      <description>&lt;p&gt;涂色书是一项人工智能驱动的功能，可让您根据文本提示创建独特的涂色书页。然后，Paint 将根据您的提示生成一组独特的着色书页。图画书仅在 Copilot+ PC 上可用。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Windows 11 Notepad to support Markdown&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47154399"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blogs.windows.com/windows-insider/2026/01/21/notepad-and-paint-updates-begin-rolling-out-to-windows-insiders/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 30 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hirako2000:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也许是唯一对这一变化感到满意的人。距离更多人放弃这个臃肿的操作系统又近了一步&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;overgard:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一方面，我对此没有强烈的感觉，因为我实际上从未使用过这些内置的 Windows 工具。我忍不住认为包含 VSCode 内置更有意义。它已经非常好并且有一个很好的启动时间，然后你不需要搞砸基本的系统实用程序，这些实用程序比应该功能丰富的东西更容易在紧急情况下中断。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;password4321:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我相信 Markdown 支持是导致本月早些时候出现 CVE-2026-20841 的原因。&lt;p&gt;20260211 &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46971516"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46971516&lt;/a&gt; &lt;i&gt;Windows 记事本应用远程代码执行漏洞&lt;/i&gt;（804 点，516评论）&lt;p&gt;20260210 &lt;a href="https:&amp;#x2F;&amp;#x2F;msrc.microsoft.com&amp;#x2F;更新指南&amp;#x2F;漏洞&amp;#x2F;CVE-2026-20841" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;msrc.microsoft.com&amp;#x2F;更新指南&amp;#x2F;漏洞&amp;#x2F;CVE-20...&lt;/a&gt;&lt;p&gt;&amp;gt; &lt;i&gt;“攻击者可能诱骗用户单击记事本中打开的 Markdown 文件内的恶意链接”&lt;/i&gt;&lt;p&gt;其他近期记事本问题：&lt;p&gt;20260207 &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46927098"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46927098&lt;/a&gt; &lt;i&gt;Microsoft 帐户错误使我无法使用记事本 - 瘦客户端会毁掉电脑吗？&lt;/i&gt; （187 分，284 条评论）&lt;p&gt;20260127 &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46780451"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46780451&lt;/a&gt; &lt;i&gt;Windows 11 1 月更新破坏了记事本&lt;/i&gt;（60 分，25 条评论）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NooneAtAll3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;第 1 步：删除写字板&lt;p&gt;第 2 步：天哪，对功能的需求&lt;p&gt;第 3 步：将记事本原本是个愚蠢简单的东西变成写字板&lt;p&gt;第 4 步：因为你“解决”了问题而获得加薪。问题&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;waldrews:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;新的工作流程将是“AI，我需要查看此文本文件并向其中添加一些单词。  创建一个应用程序，将其显示在可滚动窗口中，并尊重编码。  现在将光标移动到三个破折号下方的行...不，其他三个破折号...”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;teki_one:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这似乎是产品管理上的一个小问题。
+可以将其命名为其他名称，或者将功能添加到写字板。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Superbowl5889:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就我个人而言，我对他们触及和修改操作系统最基本的工具感到不满意。记事本，它本身就是一个无辜的小东西。&lt;p&gt;记事本应该是他们最不应该摆弄的东西。&lt;p&gt;我很遗憾我们现在必须安装第三方来进行基础操作。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;numpad0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;PSA：您可以“卸载”错误的sloppad并禁用“应用程序执行别名”让 notepad.exe 恢复更好的记事本。仅供参考&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bor_real:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所以他们杀死记事本，然后把记事本变成写字板？它应该是这样的：&lt;p&gt;-记事本：纯文本&lt;p&gt;-写字板：富文本&lt;p&gt;-Word：文档&lt;p&gt;真的吗？ Markdown 是当今富文本的首选方法，那么他们为什么不直接将写字板变成所见即所得的 Markdown 编辑器呢？&lt;p&gt;他们还把 Copilot 推入其中，但这是一个完全不同的问题。当前版本的记事本实际上是为谁设计的？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;escapeteam:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么进步总是被认为是添加更多东西？有时，拿走一些东西是最好的，但人类往往会忽视它。&lt;p&gt;文章：人们系统性地忽视减法变化 - &lt;a href="https:&amp;#x2F;&amp;#x2F;www.nature.com&amp;#x2F;articles&amp;#x2F;s41586-021-03380-y" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.nature.com&amp;#x2F;文章&amp;#x2F;s41586-021-03380-y&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;1970-01-01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谢谢，我讨厌它。我该如何禁用它？哦，我不能。谢谢，我更讨厌它了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zuluonezero:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的。支持 .md，但是当您尝试保存回 .txt 时，它会对行尾执行一些在记事本中看不到的操作，但是如果您像我一样从 wsl grep .txt 文件，您会得到页面长的字符串而不是匹配的行。这很奇怪，我还没有深入研究原因，因为保存为新笔记更容易，但对于 IT 公司来说错过这样的事情是相当糟糕的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kgwxd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只需包含 Visual Studio Code，不用管记事本。编辑：再想一想，继续吧。我已经脱离了操作系统，正是因为这样的事情。操作系统的相关性越低，我的生活就会越好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ActionHank:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是我卸载记事本的原因。&lt;p&gt;他们确信，当我想要编辑纯文本文件时，它需要是一个更糟糕的 vscode。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pvdebbe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;记事本将走上写字板的道路，EDIT.COM 成为新的记事本。&lt;p&gt;下一步是什么，几年后，当我们需要安全地操作文本文件时，我们将使用 EDLIN？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andsoitis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当我使用 Claude Code 进行代理开发时，我使用记事本来读取和编辑 .MD 文件，因此这将使我的生活变得更轻松一些。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paxys:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我本来想开个玩笑，说我很惊讶他们还没有将 Copilot 推入记事本，但令人惊讶的是 - 他们已经（&lt;a href="https:&amp;#x2F;&amp;#x2F;support.microsoft.com&amp;#x2F;en-us&amp;#x2F;windows&amp;#x2F;enhance-your-writing-with-ai-in-notepad-4088b954-c97b-46dc-813f-959be01746d5" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;support.microsoft.com&amp;#x2F;en-us&amp;#x2F;windows&amp;#x2F;enhance-your-wri...&lt;/a&gt;)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deafpolygon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;图画书仅在 Copilot+ PC 上可用。要使用着色书，您需要使用 Microsoft 帐户登录。&lt;p&gt;天哪。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tracker1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我仍然说这是愚蠢的 AF，记事本应该像纯文本编辑器一样简单合理，他们应该复活“写字板”如果他们想要在 Windows 中实现此目的。  我对 Paint 的增强功能感到很困惑……但这感觉有点不对劲。&lt;p&gt;如果他们默认将新的 MS Edit 放在 Windows 中，也许我会不那么介意，所以，再一次，盒子里有一个最小的纯文本编辑器。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MoonWalk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么，广泛使用但几乎完全缺乏查看者的标记方言现在终于可以按预期呈现，至少在 Windows 上是这样？&lt;p&gt;Markdown 呈现了一个已经拖了几十年的先有鸡还是先有蛋的情况：大量的 Markdown 文档，但几乎没有任何东西可以按预期简单地查看（而不是编辑）它们。令人神秘。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;carcabob:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这已经支持了一段时间了，所以我想知道为什么这会被视为新闻。但我想这对某些人来说是新闻，所以这很公平。&lt;p&gt;我尝试利用它，但实现感觉非常笨拙（格式化似乎只能通过菜单进行），所以我坚持使用 .txt 文件。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一月 21 日的帖子，包括“附加”内容； Markdown 支持；&lt;p&gt;同时，2 周前：&lt;p&gt;&lt;i&gt;Windows 记事本应用远程代码执行漏洞&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46971516"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46971516&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TeMPOraL:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;实际上，Markdown 支持并不是一个坏主意，只要它们不破坏记事本最重要的（IMO）属性：&lt;i&gt;二进制 WYSIWYG&lt;/i&gt;。 IE。如果我输入一些纯文本，然后用其他任何内容打开文件（包括移动到另一台计算机平台后，甚至查看传输中或驱动器上的原始数据流），我可以相信会看到&lt;i&gt;按原样看到该文本，而不会看到其他内容&lt;/i&gt;。特别是，如果我将自己限制为较低的 127 个字节，我期望字节到字节的对应。&lt;p&gt;（当然，Modulo CR&amp;#x2F;LF。）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mFixman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;我们还添加了填充容差滑块，让您可以控制填充工具应用颜色的精确程度。首先，选择填充工具并使用画布左侧的滑块将容差调整到所需的水平。尝试不同的容差设置，以实现干净的填充或创意效果。&lt;p&gt;25 年前，当我为新桌面背景编辑的炫酷照片轮廓中的每个像素都必须手动重新着色时，这个工具会非常有用，因为填充工具无法正确识别背景。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;5o1ecist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哇，2004 年是多么美好的时光啊！&lt;p&gt;&lt;i&gt;（2004 年 Markdown 被发明。记事本于 1983 年推出，实际上早于 Windows）&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;athorax:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就好像他们试图做与 Unix 哲学相反的事情。很多事情都做得很糟糕。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisSD:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于每个想要一个简单、轻量级的记事本替代品的人来说，最新版本的 Windows 上有 edit.exe。假设您不介意 TUI。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;metalliqaz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们不是通过 Markdown 将严重性为 8.8 的 RCE 注入到 notepad.exe 中的吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Longhanks:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们正在将记事本变成写字板（或应该是）。现在，每个寻找最轻量级 *.txt 编辑器的人都必须找到一个新工具......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tencentshill:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它正在变得 Word-lite，就像以前的写字板一样。 Paint 正在变得 Photoshop-lite，并且现在与照片应用程序具有冲突的功能。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blogs.windows.com/windows-insider/2026/01/21/notepad-and-paint-updates-begin-rolling-out-to-windows-insiders/</guid>
+      <pubDate>2026-02-25 17:14:19</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47154399</comments>
+    </item>
+    <item>
+      <title>通过 CLI 使 MCP 更便宜</title>
+      <link>https://kanyilmaz.me/2026/02/23/cli-vs-mcp.html</link>
+      <description>&lt;p&gt;每个工具、每个参数、每个选项。工具调用 一旦代理知道可用的内容，它仍然需要调用工具。 Anthropic 的工具搜索 Anthropic 推出了工具搜索，它加载搜索索引而不是每个模式，然后按需使用获取工具。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Making MCP cheaper via CLI&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47157398"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://kanyilmaz.me/2026/02/23/cli-vs-mcp.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_pdp_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;呵呵……不错的一个。我想我们都在想同样的事情。&lt;p&gt;我还推出了 &lt;a href="https:&amp;#x2F;&amp;#x2F;mcpshim.dev" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;mcpshim.dev&lt;/a&gt; (&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;mcpshim&amp;#x2F;mcpshim" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;mcpshim&amp;#x2F;mcpshim&lt;/a&gt;)。&lt;p&gt;unix方式是最好的方式。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vasco:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;许多提供商已经拥有本机 CLI 工具，通常具有比 MCP 更好的身份验证支持和更长的会话，并且他们的培训集中有更多关于如何使用这些 cli 工具完成许多事情的数据。那么为什么首先要转换 mcp-&gt;cli 工具而不是使用现有的 cli 工具呢？例如，使用 atlassian MCP 就很糟糕，但使用 acli 就很棒了。 github、aws 等也是如此。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hiccuphippo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;法学硕士能否将这些文档压缩成仍保留完整上下文的较小文件？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;econ:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我让 Deepseek 向我解释 MCP。然后我问持久连接的意义是什么，它说这几乎是时髦的废话，一些要发布的网址对于法学硕士来说确实足以与事物交互。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andybak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么他们在上下文中使用 JSON？我以为我们已经发现额外的语法是浪费标记？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该文章到 clihub.sh 的链接已损坏。看起来像 &lt;a href="https:&amp;#x2F;&amp;#x2F;clihub.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;clihub.org&amp;#x2F;&lt;/a&gt; 是正确的链接吗？我也将其添加到顶部文本中。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;red_hare:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于运行 SotA 模型的编码代理来说确实如此，在这种情况下，您是人在循环中批准的，但对于在廉价模型上运行的已部署代理来说，您看不到正在执行的内容，则不太正确。&lt;p&gt;但是，是的，一个具体的例子是 playwright-mcp 与 playwright-cli：
+&lt;a href="https:&amp;#x2F;&amp;#x2F;testcollab.com&amp;#x2F;blog&amp;#x2F;playwright-cli" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;testcollab.com&amp;#x2F;blog&amp;#x2F;playwright-cli&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mijoharas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这听起来与 MCPorter[0] 类似，谁能指出其中的差异吗？&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;steipete&amp;#x2F;mcporter" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;steipete&amp;#x2F;mcporter&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;speedgoose:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不过 MCP 有一些模式。 CLI 有点混乱。&lt;p&gt;但是现在的 MCP 并不理想。我认为我们需要一些目录，代理可以在其中获取有关 MCP 服务的更多信息，而不是用不相关的噪音填充上下文。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bdavbdav:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不确定这是如何运作的。许多工具描述对于代理了解特定 MCP 提供商可以做什么和不能做什么非常重要。你必须用更长的总体描述来弥补这一点。特别是对于法学硕士没有内在背景的内部专用工具。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;crooked-v:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;更便宜，但它更有效吗？&lt;p&gt;我知道我看到了一些有关 Next.js 开发人员尝试将整个文档文件索引转储到 AGENTS.md 中的内容，并且 Claude 使用它的次数明显多于任何技能工具调用内容。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://kanyilmaz.me/2026/02/23/cli-vs-mcp.html</guid>
+      <pubDate>2026-02-25 20:29:37</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47157398</comments>
+    </item>
+    <item>
+      <title>吉米·亨德里克斯是一名系统工程师</title>
+      <link>https://spectrum.ieee.org/jimi-hendrix-systems-engineer</link>
+      <description>&lt;p&gt;DIYHands OnMagazine Jimi Hendrix 是一名系统工程师，他精确控制调制和反馈回路Rohan S. Puranik 是一位边缘计算架构师和公司创始人。吉米·亨德里克斯使用一系列组件来调制声音，通过将吉他相对于放大器扬声器定位来控制反馈回路。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Jimi Hendrix was a systems engineer&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47157224"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://spectrum.ieee.org/jimi-hendrix-systems-engineer'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;EdPoincare:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个疯狂的例子，一切都是人工智能生成的，甚至是 git repo 中引用的代码（参考提交 3d733ca），而且实际上很有趣且“新”。在某种程度上...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jonnypotty:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么那张照片的名字标注错误？很确定那不是米奇和诺埃尔。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;solomonb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我坚信，如果你抛开流派偏好，与电子管放大器相结合的实体电吉他客观上是有史以来最伟大的电子乐器。&lt;p&gt;所有其他电子乐器，除了 Theramin 之外，都存在人类表达的根本问题。表演者的行为与观众之间存在无法解决的脱节。&lt;p&gt;请参阅：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.scribd.com&amp;#x2F;document&amp;#x2F;55134776&amp;#x2F;48787070-Bob-Ostertag-Why-Computer-Music-Sucks" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.scribd.com&amp;#x2F;document&amp;#x2F;55134776&amp;#x2F;48787070-Bob-Ostert...&lt;/a&gt;&lt;p&gt;使用电吉他，您可以获得原声乐器的物理性和活力，以及电/电子乐器的复杂音色和扩展技术可能性&lt;p&gt;跨多个维度存在复杂且具有音乐意义的反馈循环，通过传统音乐理论技术和电子管放大器与电感负载（吉他拾音器）相结合的物理原理，导致极其复杂的音色转换。&lt;p&gt;这真的很疯狂，甚至比高度复杂的模块化合成器或其他东西还要动态和复杂得多。即使是电子管放大器中电源过载的方式也可以即时操纵，以增强和改变音色。&lt;p&gt;最重要的是，像吉米·亨德里克斯这样的表演者可以操纵这些系统，让观众直观地理解他在做什么，这是令人难以置信的物理效果。一百万年内任何其他电子仪器都不可能做到这一点。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BrokenCogs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一篇可怕的文章。在第一个子图中，没有解释 v(b1) 和 v(c2) 是什么。 y 轴（幅度）上的 -8 看起来像一个倒置的 8。&lt;p&gt;下面有一句话：“首先，Fuzz Face 是一个双晶体管反馈放大器，可将温和的正弦信号转变为几乎二进制的“模糊”输出。”但该图与此不符——不存在“温和的正弦曲线”。第一个绒毛面图上显示的波。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RyanOD:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我经常惊叹于许多吉他手在实验电子学方面取得的成功 - Hendrix、EVH、Les Paul、Brian May、Jack White 和 Tom Scholz（当然是特例）只是几个例子。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ozim:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;工程中有我们无法否认的艺术。&lt;p&gt;虽然有些人试图将其视为精确的科学，但事实并非如此，有些事情你仍然无法用数字来表示，但它确实有效......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alephnerd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是&lt;i&gt;为什么&lt;/i&gt;我觉得美国最近（过去 10-15 年）将 CS 课程与 EE 和 CE 基础知识（仅在 10-15 年前还被视为 CS）脱钩的转变正在对进入该行业的新学生造成&lt;i&gt;巨大&lt;/i&gt;伤害。&lt;p&gt;DSP、控制工程、电路设计、理解流水线和缓存以及其他基础知识对于人们了解更高水平的计算机科学非常重要抽象层（例如，大部分深度学习都是建立在 DSP 课程中引入的优化理论原理之上）。&lt;p&gt;计算机科学的价值不是能够在白板上解决 Leetcode 难题或将 PyTorch 命令粘合在一起，而是跨多个抽象层进行推理的能力。&lt;p&gt;由于这些课程变化，新毕业生的技能明显下降。如果我作为一名风险投资人比一些网络安全或 MLOps 公司的潜在技术创始人更了解 Nagle 算法（嗨 Nagle！），那么我们就有麻烦了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yayitswei:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是我注意到一堆法学硕士主义并且仍然读到最后的少数文章之一，因为它很有趣。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;actionfromafar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;上帝是一位 DJ。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;themafia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;原标题：《吉米·亨德里克斯的模拟魔法解释》。&lt;p&gt;&gt;该组件是 Octavia 吉他踏板，由音响工程师 Roger Mayer 为 Hendrix 创建。&lt;p&gt;所以，Roger 是工程师。  而且，吉米是艺术家。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;weinzierl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不错的文章，但是顶部图像中的信号链与文本中描述的信号链不匹配，这让我更加烦恼。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;downrightmike:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;收音机里的吉米是我对经济不景气时期的简称。发生在 2007 年，他现在正在广播中播放&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://spectrum.ieee.org/jimi-hendrix-systems-engineer</guid>
+      <pubDate>2026-02-25 20:16:47</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47157224</comments>
+    </item>
+    <item>
+      <title>洛杉矶为什么不重新铺设街道？</title>
+      <link>https://lapublicpress.org/2026/02/why-isnt-la-repaving-streets/</link>
+      <guid isPermaLink="true">https://lapublicpress.org/2026/02/why-isnt-la-repaving-streets/</guid>
+      <pubDate>2026-02-25 16:49:36</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47154076</comments>
+    </item>
+    <item>
+      <title>高级用户的缓慢死亡</title>
+      <link>https://fireborn.mataroa.blog/blog/the-slow-death-of-the-power-user/</link>
+      <description>&lt;p&gt;那个人快要死了。他们的成功超出了他们最疯狂的预期。并不是说他们无法操作自己的设备，而是可以，而且效率惊人。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Slow Death of the Power User&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47155548"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://fireborn.mataroa.blog/blog/the-slow-death-of-the-power-user/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ig0tb0lts:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我是唯一一个觉得这是人工智能生成的人吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ctoth:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“别让我思考”没有描述性。规范性变成了描述性。整个专业阶层，PM 和 UX 设计师，都认为认知努力是摩擦，摩擦是不好的，因此理解是一种设计失败。&lt;p&gt;然后他们花了 25 年的时间从​​每一次交互中设计理解，现在指出由此产生的习得性无助作为验证。 ”看到了吗？用户不阅读！”不，你花了几十年的时间来训练他们不要这样做，确保阅读永远不会有回报，也永远没有必要。&lt;p&gt;我的理解一直是，对于某种类型的 PM 来说，思考是痛苦的，所以他们假设“像我一样有想法”。并且...我们到了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bendtb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;奇怪的博客，我想下一个将是：&lt;p&gt;这些人是那种没有心理学硕士学位就能找到女朋友的人。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chris_money202:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我发现即使在开发人员社区中，了解系统编程的人也变得越来越少。开发人员不断地寻找 GUI 解决方案，而不必费心去了解如何编写脚本。我认为这可能源于与引入智能手机类似的问题，我们软件工程师将 DevOps 学科与软件工程分开，这导致人们不关心解决方案背景的基础设施。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;the_snooze:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您可以从服务如何扭曲“节省”的含义中看到这一点。某物。它很少意味着实际上将文件放在您的计算机上，只要您拥有该文件，您就可以按照自己的方式访问该文件。更常见的是，它只是意味着将某些内容与您的帐户相关联，这最终取决于服务提供商的突发奇想。&lt;p&gt;它是设计的依赖性。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;poisonborz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我完全同意这篇文章，但是：&lt;p&gt;&gt;如果市政府告诉他们只能从市政府批准、许可和征税的供应商那里购买食品，这些人就会失去理智&lt;p&gt;但发达国家的情况正是如此，没有多少人会从路边汽车的后备箱购买食品。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FrankWilhoit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他所描述的目的是围绕拥有&lt;i&gt;任何或所有&lt;/i&gt;技术的含义以及使用的后果，&lt;i&gt;保留否认结构&lt;/i&gt;。  政治——战争、法律、阶级、礼仪——完全取决于这种否认结构。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ajsnigrutin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一方面，这是一个“人的问题”……另一方面，这也是一个软件问题。&lt;p&gt;“回到我的时代”，你有一些 C 代码、一个 .conf 文件，你需要“制作”、编辑配置（或者希望它可以使用默认设置）、运行，然后你就有了一个程序运行。现在你需要运行五个不同的服务，它位于一个 docker 中，在某个随机端口上运行，代理到另一个随机端口，配置被分成 12 个 yaml 文件，另外它需要 7 GB 的硬盘空间...&lt;p&gt;..有时提供与过去的 300kB 旧软件相同的功能。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://fireborn.mataroa.blog/blog/the-slow-death-of-the-power-user/</guid>
+      <pubDate>2026-02-25 18:25:57</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47155548</comments>
+    </item>
+    <item>
+      <title>Show HN：Sgai – 目标驱动的多代理软件开发（GOAL.md → 工作代码）</title>
+      <link>https://github.com/sandgardenhq/sgai</link>
+      <description>&lt;p&gt;Sgai（发音为“Sky”）——目标驱动的人工智能软件工厂定义您的目标。座席计划工作 Sgai 将您的目标分解为具有已定义角色的协调座席的工作流程图。批准计划和监控 在执行开始之前，代理会询问有关您目标的澄清问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Sgai – Goal-driven multi-agent software dev (GOAL.md → working code)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47153941"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/sandgardenhq/sgai'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nicoleao:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常好，opencode 的自动设置说明真是天才，更多的人应该这样做。&lt;p&gt;这已经是您编码项目的日常驱动程序了吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fuddle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Sgai（发音为“Sky”）——这有点牵强&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;embedding-shape:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的许可证选择，似乎修改了 MIT，带有以下附加条款：&lt;p&gt;&gt;任何被许可方或下游接收方均不得使用本软件（包括任何修改或衍生版本），将其作为托管、托管或软件即服务 (SaaS) 产品或云服务提供给第三方，其中服务的主要价值是软件本身的功能，从而与原始许可方直接竞争。和“或出售该软件的副本”常规 MIT 的一部分，您的自定义许可证出于某种原因也包含其中？&lt;p&gt;我认为您最好不要尝试这样做，“有点开源，但也不是”。只需说“版权所有 2026 Sandgarden.com”即可或其他什么，而不是专有和开源的混合。然后您就可以获得 100%“完全控制”人们可以用源代码做什么，并且在许可方面不必担心任何事情:)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ucirello:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作者在这里！&lt;p&gt;直到最近我与团队其他成员分享时，我一直在为自己使用这个项目，我们认为让世界看到它会很好。&lt;p&gt;我对自主代码开发感兴趣已经有一段时间了（至少从 2025 年 3 月到 4 月开始） - 夏天 &amp;#x27;25 是我觉得模型足够好，可以推向自治的时候。&lt;p&gt;我写了一些关于它的文章[0]， sgai 是我对人工智能自主编码的化身。&lt;p&gt;sgai 还不是 v0，需要做很多工作来改进其实现 - 但我认为对于那些愿意尝试的人来说它应该足够可用。&lt;p&gt;0: &lt;a href="https:&amp;#x2F;&amp;#x2F;cirello.org&amp;#x2F;aifactory.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;cirello.org&amp;#x2F;aifactory.html&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/sandgardenhq/sgai</guid>
+      <pubDate>2026-02-25 16:39:23</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47153941</comments>
+    </item>
+    <item>
+      <title>沙箱无法让您免受 OpenClaw 的侵害</title>
+      <link>https://tachyon.so/blog/sandboxes-wont-save-you</link>
+      <description>&lt;p&gt;沙盒在这里为您提供的唯一东西是文件系统保护（它可以防止代理对您的根进行 rm -rf'）和网络保护（这可以限制代理可以访问的网站）。代理永远不应该看到实际的卡号。您可以将这个想法扩展到我们想要连接到代理的每个产品。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Sandboxes won't save you from OpenClaw&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47154803"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://tachyon.so/blog/sandboxes-wont-save-you'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 15 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwpoaster:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;运行 Opus 的 OpenClaw 聪明、细心、有礼貌。它与底层模型有很大关系。&lt;p&gt;如果你不将它连接到东西，它就无法连接。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChicagoDave:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很晚才看到这个 OpenClaw 的东西。也许是因为我在 IT 领域工作了 40 年，或者我看过《战争游戏》，但到底谁能让 AI 访问他们的个人生活？&lt;p&gt;我是唯一一个认为这种想法愚蠢得令人难以置信的人吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;luxuryballs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;让我想知道它运行的金属是否是一个足够好的沙箱，也许我应该让它从与其他设备隔离的访客网络浏览网络&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;downsplat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;考虑到当前的范式，我认为 openclaw 不可能得到保护。它可以访问您的个人资料（这是其主要用例），可以访问网络，并且可以获取不受信任的第三方输入。这就是无法修复的三连胜。再多的过滤创可贴也无法解决这个问题。&lt;p&gt;对于 Claude Code 或 Amp 之类的东西来说，沙箱是一个很好的衡量标准。我使用 bubblewrap 包装器来确保它无法读取 $HOME 或访问我的 ssh 密钥。  即使在那里，您也必须确保不授予机器人对您将在沙箱外执行的文件的写入权限。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TZubiri:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哦，好吧，那么我们将添加加密。&lt;p&gt;将死无神论者&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chaostheory:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只要将其视为员工，就可以解决大部分问题，即它在自己的机器上运行，对所有内容都有单独的帐户：电子邮件、git 等……&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当我考虑人们购买 Mac Mini 来让 OpenClaw 运行作为一种安全措施时，我确实觉得很有趣......然后授予 Mac Mini 上的 OpenClaw 访问他们的电子邮件和 iMessage 等的权限。&lt;p&gt;（我希望人们不要这样做，但我希望他们可能会这样做。）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ramoz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在另一个帖子中说过类似的话[1]：&lt;p&gt;沙箱将在 2026 年留下。我们不需要重新发明隔离的环境；这甚至不是 OpenClaw 的主要问题 - 实际上将其部署在任何云上的虚拟机中，您就获得了所有相同的好处。
+我们需要知道代理发送的电子邮件是否应该发送，以及代理是否实际上应该代表我进行该交易。等等&lt;p&gt;——-&lt;p&gt;不幸的是，对于联盟乐观主义者来说，这是相当糟糕的一周（元领先失败、谷歌颁奖典礼失败、人为安全承诺）。否则……网络安全 LinkedIn 都在洗牌相同的“防止 rm -rf”叙述，研究人员正在将法学硕士作为保护焦点，但这在操作上并不好&amp;amp;理论上是多余的+容易出现相同的问题。&lt;p&gt;目前最强大的解决方案是人在循环中 - 我们应该增强这里的用户体验和功能。这可以扩展到最终的智能委托和授权。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;threads?id=ramoz&amp;amp;next=47006445"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;threads?id=ramoz&amp;amp;next=47006445&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cheriot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是代理编排的普遍现象。一个好的沙箱可以为您的本地环境做一些事情，但对远程计算机的 API 没有任何作用。&lt;p&gt;我不能大声地说，“具有不可信输入的 LLM 会产生不可信的输出（尤其是工具调用）。”使用 LLM 跟踪不可信输入的来源将比传统的 [SQL] 注入困难得多。阅读暴露给恶意用户的日志，你就完蛋了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;supermdguy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一个有希望的方向是构建抽象层来沙箱单个工具，即使是那些还没有 API 的工具。例如，您可以构建一个守护进程的 vibe 代码，该守护进程接受 RPC 调用以在浏览器中打开 Amazon、搜索商品并将其添加到您的购物车。你甚至可以让它部分地“代理”。 （例如，LLM 接受搜索结果列表，然后选择要添加到购物车的结果）。&lt;p&gt;如果您让 OpenClaw 访问守护进程，那么它仍然可以得到提示注入，将一堆东西添加到您的购物车，但如果守护进程与 OpenClaw 用户正确隔离，那么您应该很安全，不会收到提示注入来购买东西。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dinkleberg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你可以说我过于谨慎，但作为使用 OpenClaw 的人，我从来没有像我一样考虑将其连接到真正的外部服务。相反，我将其放在一台服务器上，并创建了第二台服务器，其中包含 Gitea 等共享服务和其他自托管工具，这些工具只能通过 tailnet 访问，并且 openclaw 能够使用这些服务。当我需要它使用真正的外部服务时，我为其创建了一个有限的单独帐户。但我绝对不可能让它完全访问我自己的帐户中的所有内容。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stronglikedan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;TL;DR：如果沙箱包含您的秘密并且可以访问外部世界，那么沙箱就无法让您免受任何伤害。一个古老的故事，对于特工来说并不是什么新鲜事&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gz09:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;SaaS 公司的安全模型基于一堆具有粗粒度权限的随机字节和数字，并且长期有效，这已经是一个坏主意了。对于代理来说，秘密代币确实需要通过时间有限、范围有限、基于 OpenID 智能合约的信任关系来铸造，这样它们才能在这个新世界中表现得更好。不幸的是，对于大多数主要供应商来说，这仍然是一个难题（例如，Github gh CLI 仍然不允许您开箱即用地使用 Github Apps）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;edf13:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;同意，这就是我们构建 grith.ai 的原因&lt;p&gt;单独的沙箱并不是正确的方法……多方面的方法才是有效的。&lt;p&gt;我们发现，有效的是审批流程的自动化，但只有在有非常强大的保护措施的情况下才能起作用……审批疲劳是另一个日益严重的问题 - 用户只需单击批准所有请求。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hackingonempty:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，我们需要在我们使用的系统上进行基于功能的身份验证。&lt;p&gt;我确信我们会得到它们，但只能与内部代理一起使用，即 GMail 和 Google Pay 将获得代理功能，但它们只能与 Gemini 一起使用，并且只有 Siri 能够访问您的 Apple 云内容，而无需移交对所有内容的访问权限，如果您希望为您处理杂货购物，Rufus 就在那里。&lt;p&gt;也许您可以链接副驾驶到双子座每月额外支付 2.99 美元。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://tachyon.so/blog/sandboxes-wont-save-you</guid>
+      <pubDate>2026-02-25 17:37:04</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47154803</comments>
+    </item>
+    <item>
+      <title>五角大楼威胁人类</title>
+      <link>https://www.astralcodexten.com/p/the-pentagon-threatens-anthropic</link>
+      <description>&lt;p&gt;五角大楼威胁人类。这将禁止使用 Anthropic 产品的美国公司与军方开展业务2。更重要的是，我不希望五角大楼摧毁人类。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Pentagon Threatens Anthropic&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47154983"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.astralcodexten.com/p/the-pentagon-threatens-anthropic'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;unyttigfjelltol:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;技术未来主义者：&lt;p&gt;1。构建极其能够进行大规模监视和运行自主作战能力的工具。&lt;p&gt;2。当战争部坚持使用该工具进行大规模监视和自主作战系统时，表达了震惊——&lt;i&gt;震惊&lt;/i&gt;。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oceanplexian:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人为切断五角大楼的联系毫不含糊地表示，他们支持允许中国获得前沿军事技术，但不允许美国。&lt;p&gt;他们被提醒，美国政府在涉及任何可能被视为武器或弹药的事物时拥有大量法律权力。我不知道为什么有人感到惊讶。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dqv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;有人知道它对什么新闻做出反应吗？&lt;p&gt;可能是这个 &lt;a href="https:&amp;#x2F;&amp;#x2F;time.com&amp;#x2F;7380854&amp;#x2F;exclusive-anthropic-drops-flagship-safety-pledge&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;time.com&amp;#x2F;7380854&amp;#x2F;exclusive-anthropic-drops-flagship-...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;IG_Semmelweiss:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我知道 Anthropic 拥有市场上最受欢迎的产品之一。&lt;p&gt;但任何人，尤其是政府，都不应该与他们合作，因为 Anthropic 的领导层有记录试图利用其先发优势，有效地创建人工智能卡特尔 [1]&lt;p&gt;我很高兴 Anthropic 尝到了自己的苦果。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.bloomberg.com&amp;#x2F;意见&amp;#x2F;文章&amp;#x2F;2025-10-15&amp;#x2F;anthropic-s-ai-principles-make-it-a-white-house-target" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.bloomberg.com&amp;#x2F;意见&amp;#x2F;文章&amp;#x2F;2025-10-15&amp;#x2F;人类...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bink:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;想象一下这样一个世界：为了在美国开展业务，您必须授予政府对您公司的控制权。这听起来甚至比中国最危言耸听的说法还要糟糕。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bediger4000:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Hegseth 相信他将如何利用最好的“人工智能”来击败这家公司？在地球上？人类会绕着他转圈。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;7777777phil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;唱响“供应链风险”针对国内人工智能公司的指定是疯狂的。不确定该工具的供应商不会根据需要重写其服务条款。&lt;p&gt;同时，五角大楼可以建立自己的能力。目前，商业人工智能与联邦科学研发支出的比例为 75:1。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;emsign:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么五角大楼正在强迫一家公司进行合作？这让我想起我的酗酒邻居过去是如何对待他的家人的。这几乎就像有人让一个卑鄙的醉汉掌管五角大楼一样。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vonneumannstan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是政府曾经试图做的最赤裸裸的邪恶事情之一。显然，Anthropic 的症结在于没有使用该模型进行自主杀戮命令，也没有进行大规模监视......&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.astralcodexten.com/p/the-pentagon-threatens-anthropic</guid>
+      <pubDate>2026-02-25 17:49:27</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47154983</comments>
+    </item>
+    <item>
+      <title>球拍 v9.1</title>
+      <link>https://blog.racket-lang.org/2026/02/racket-v9-1.html</link>
+      <description>&lt;p&gt;OpenSSL：安全通信类型化球拍改进了关键字参数函数的预期类型传播。 Racket 是一个社区开发的开源项目，我们欢迎新的贡献者。欢迎反馈 欢迎在 Racket 社区的 Discourse 或 Discord 上提出问题和讨论。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Racket v9.1&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47154042"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.racket-lang.org/2026/02/racket-v9-1.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;meken:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最近我了解到 Racket 是 LeetCode 上公认的语言，它为我解决了“我什么时候才能在现实生活中编写 lisp ……”的问题。它提供了一个很好的借口。&lt;p&gt;我真的很喜欢写它！ Paredit 和 SLIME 会让人上瘾。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;coffeemug:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直在使用 Racket 来完成 The Little Learner[1]，这是一次很好的体验。你需要最少的 Racket 来完成这本书（lambda、let、define、map；我想就这些了）。但我开始进一步了解该语言和标准库，这是一个值得探索的有趣且令人惊讶的强大系统。&lt;p&gt;Racket 最大的缺点是您无法像使用 Common Lisp&amp;#x2F;Sly 那样逐步构建环境。当您更改源中的任何内容时，您将从头开始重新加载 REPL 状态。在 CL 之后，Lisp 给人一种难以置信的限制。增量积累是如此有价值，如果我想再次做任何 Lisp 工作，我会在 Racket 之前先学习 CL，因为这个原因。&lt;p&gt;顺便说一句，这本书太棒了。快速、容易上手、非常容易理解，并且教你从汤到坚果的一切。如果您熟悉 Lisp，您可以在两周内读完这本书。然后就可以轻松进入您想要的任何深度学习教程或项目，甚至开始实现一些论文。尽管根本没有使用任何数学知识，但这本书却设法不淡化材料。不过，如果您了解一些线性代数或多元微积分，您会更加欣赏该领域的魅力。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.thelittlelearner.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.thelittlelearner.com&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.racket-lang.org/2026/02/racket-v9-1.html</guid>
+      <pubDate>2026-02-25 16:47:33</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47154042</comments>
+    </item>
+    <item>
+      <title>Trellis AI (YC W24) 正在招聘部署负责人以加速药物获取</title>
+      <link>https://www.ycombinator.com/companies/trellis-ai/jobs/7ZlvQkN-lead-deployment-strategist</link>
+      <description>&lt;p&gt;我们通过自动化文件接收、事先授权和大规模上诉来实现这一目标，以简化运营并加速护理。 Trellis 帮助医疗保健提供者更快地治疗更多患者，同时消除服务前的文书工作。我们大规模自动化文件接收、事先授权和上诉，以简化运营并加速护理。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Trellis AI (YC W24) is hiring deployment lead to accelerate medication access&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47154246"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/trellis-ai/jobs/7ZlvQkN-lead-deployment-strategist'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.ycombinator.com/companies/trellis-ai/jobs/7ZlvQkN-lead-deployment-strategist</guid>
+      <pubDate>2026-02-25 17:02:12</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47154246</comments>
+    </item>
+    <item>
+      <title>GNU Texmacs</title>
+      <link>https://www.texmacs.org/tmweb/home/welcome.en.html</link>
+      <description>&lt;p&gt;请注意，TeXmacs 不是基于 TeX/LaTeX。该网页是 GNU TeXmacs 和更大的 GNU 项目的一部分。自由软件基金会&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47152982"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.texmacs.org/tmweb/home/welcome.en.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;egorelik:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在我的计算机生涯早期，我发现 TeXmacs 是我一直在使用的名为 Axiom 的计算机代数系统的用户界面。讽刺的是，这是在我听说过 TeX 或 Emacs 之前！它看起来是一个很酷的软件，但是当我后来学习 LaTeX 时，我发现除了讲义之外，我更喜欢非所见即所得的方式。尽管如此，自从我认识到这种将数学引擎与丰富的显示界面相结合的设置是后来作为笔记本电脑普及的早期版本以来，多年来我一直在努力。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;algorithm314:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;还有一个 TeXmacs 的分支，名为 Mogan &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;MoganLab&amp;#x2F;mogan" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;MoganLab&amp;#x2F;mogan&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gudzpoz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您可以在浏览器中尝试 TeXmacs，网址为 &lt;a href="https:&amp;#x2F;&amp;#x2F;yufeng-shen.github.io&amp;#x2F;Mogan.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;yufeng-shen.github.io&amp;#x2F;Mogan.html&lt;/a&gt; 。 （它实际上来自 TeXmacs 的一个名为 Mogan 的分支，由于它有更好的 CJK 支持，我一直是它的忠实用户。）&lt;p&gt;顺便说一句，我确实认为 TeXmacs 是一个 Emacsen，因为它提供了 Guile&amp;#x2F;Scheme 作为扩展语言，尽管我不知道它的可定制性如何。 （我认为Python&amp;#x2F;Maxima&amp;#x2F;Scheme&amp;#x2F;...的内置REPLs是用Scheme编写的。）然后，它确实支持相当多的TeX命令（你可以通过按反斜杠后跟它们的命令名称来输入它们），所以我确实认为他们的“TeXmacs”是这个名字是非常有道理的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wbolt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有这方面的“现实世界用户”吗？在我从事学术界的这些年里，我还没有遇到过任何人。大多数只使用普通的 LaTeX。有些则使用 MS Word。很少有别的东西。从来没有Texmacs。至少这是我的经验。&lt;p&gt;对于像 Overleaf 这样的东西和现代 IDE 的插件，老实说我不能说 LaTeX 是一种糟糕的体验。它做了它应该做的事。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mghackerlady:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我非常喜欢 TeXmacs，我只是将它用作常规文字处理器&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;krupan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这么奇怪的项目，从奇怪的名字开始就设定了各种错误的期望&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bombcar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;名称是 TeXmacs - 但“请注意，TeXmacs 不是基于 TeX&amp;#x2F;LaTeX”。我想知道他们为什么选择这个名字。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.texmacs.org/tmweb/home/welcome.en.html</guid>
+      <pubDate>2026-02-25 15:37:29</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47152982</comments>
+    </item>
+    <item>
+      <title>HN 上的新帐户使用破折号的可能性高出 10 倍</title>
+      <link>https://www.marginalia.nu/weird-ai-crap/hn/</link>
+      <description>&lt;p&gt;第一个是最近发表的评论，第二个是新注册帐户最近发表的评论。通过一些简单的统计，我很快发现：新注册帐户的评论在文本中使用破折号、箭头和其他符号的可能性几乎高出 10 倍（17）。虽然普通人有时会使用破折号、箭头等，但很难解释为什么新帐户使用它们的可能性比已建立的帐户高出 10 倍。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; New accounts on HN 10x more likely to use em-dashes&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47152085"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.marginalia.nu/weird-ai-crap/hn/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 29 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;northisup:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该死，我只是碰巧喜欢这东西的外观。现在每个人都认为我是人工智能，因为我在写作时会停下来思考——就好像我是人类一样……&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rob:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[延迟]&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arjie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;几周前我注意到了类似的趋势，所以我现在自动隐藏绿色评论。我还自动隐藏所有前 1000 个用户帐户，但我突然想到也许我还应该选择 OpenClaw 之前的“用户在 $date 上注册”过滤器。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrandish:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在 LLM 撰写的帖子兴起以及一触即发的怀疑的自然反应之前，我曾经在 HN 的帖子中经常使用 em 和 en dash。没有什么原因，除了作为一个排版极客之外，他碰巧总是在随意的写作中使用破折号而不是分号。  因此，当我多年前使用 AHK 设置修饰键键盘层时，我将破折号放在修饰符+破折号上，因为我可以 - 这使得它变得容易。&lt;p&gt;现在有人可能会在没有时间限制的情况下搜索旧帖子并假设我是法学硕士。再加上我有时会写较长的帖子，并且自然地默认使用相当好的标点符号、拼写和语法，这基本上是一场完美的特质风暴。在过去的一年里，我已经有两次被指控为 LLM 的帖子。&lt;p&gt;有点悲伤的是，LLM 培训中的一些随机怪癖导致我为自己做的一个有趣的小排版事情（假设没有其他人甚至会注意到）变成了负面的东西。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lokimedes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;事实上，我很喜欢——自从我拥有第一台 Mac 以来，我就很喜欢排版的精美特征。使用 Mac 键盘访问要容易得多。并不是说人工智能的扩散具有这一特征，比如奇怪的措辞，但至少允许少数喜欢沉迷的哺乳动物。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jatins:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对我来说没有意义的部分是：为什么？比如使用人工智能在 HN 上发表评论的动机是什么？这不是像 Youtube 或 X 这样的平台，观看次数可以让你赚钱。这只是为了网络业力吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AustinDev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在此下游，我曾经经常定期循环我的帐户，但自从生成人工智能以来就停止了。不希望人们认为我是 LLM 垃圾邮件机器人。我的愚蠢评论完全是我自己的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MattDaEskimo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;让我想知道 LLM 评论者与符合 LLM 语法的评论者之间的比例。&lt;p&gt;不确定哪个更可怕&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;emsign:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为一个在肌肉记忆中保存了关键组合 Alt-0150 和 Alt-0151 的人，我因与机器进行比较而感到被冒犯。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;emulatedmedia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果我们同意让人工智能生成的软件充斥世界。我觉得拒绝人工智能写的评论甚至文章的增加是很有趣的。不能鱼与熊掌兼得或者类似的东西&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eterm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是“令人难以置信的平庸”。让我心烦意乱的评论。那些只是用一两个没有争议的句子重述文章的人。&lt;p&gt;通常稍微有点支持人工智能，但在其他方面避免过多谈论任何事情。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;数据可在 GitHub 上的 SQLite 数据库中找到：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;vlofgren&amp;#x2F;hn-green-clankers" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;vlofgren&amp;#x2F;hn-green-clankers&lt;/a&gt;&lt;p&gt;您可以在浏览器中使用 SQL 查询探索底层数据：&lt;a href="https:&amp;#x2F;&amp;#x2F;lite.datasette.io&amp;#x2F;?url=https%253A%252F%252Fraw.githubusercontent.com%252Fvlofgren%252Fhn-green-clankers%252Fmaster%252Fhncomments.db#&amp;#x2F;hncomments" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;lite.datasette.io&amp;#x2F;?url=https%253A%252F%252Fraw.githu...&lt;/a&gt;（这是 Datasette Lite，我在 WebAssembly 中的 Pyodide 中运行的 Datasette Python Web 应用程序的版本）&lt;p&gt;这是一个向用户显示的 SQL 查询在发布最多评论且至少带有一个破折号的数据中 - 在我看来，排名靠前的评论都像是合法帐户：&lt;a href="https:&amp;#x2F;&amp;#x2F;lite.datasette.io&amp;#x2F;?url=https%3A%2F%2Fraw.githubusercontent.com%2Fvlofgren%2Fhn-green-clankers%2Fmaster%2Fhncomments.db#&amp;#x2F;hncomments?sql=select+user%2C+count%28*%29 %2C+%27https%3A%2F%2Fnews.ycombinator.com%2Fthreads%3Fid%3D%27+%7C%7C+user+as+comments_url+from+co评论+where+%22text%22+like+%3Ap0+group+by+user+order+by+count%28*%29+desc&amp;p0=%25%E2%80%94%25" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;lite.datasette.io&amp;#x2F;?url=https%3A%2F%2Fraw.githubuserc...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;marginalia_nu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Fwiw我做了更多比较，寻找菜鸟评论不成比例地青睐的单词：&lt;p&gt;&lt;pre&gt;&lt;code&gt; word noob new p-value
+    ----------------------------
+    人工智能 14.93% 7.87% p=0.00016
+    实际上 12.53% 5.34% p=1.1e-05
+    代码 11.47% 6.04% p=0.00081
+    实际 10.93% 2.95% p=2.6e-08
+    建成 10.93% 2.11% p=2.1e-10
+    数据 8.93% 3.51% p=6.1e-05
+    工具 7.6% 2.67% p=5.5e-05
+    代理 7.47% 2.95% p=0.00024
+    应用 7.2% 3.09% p=0.00078
+    工具 6.8% 1.83% p=8.5e-06
+    模型 6.8% 2.39% p=0.00013
+    代理 6.67% 2.11% p=5.2e-05
+    API 6.53% 1.12% p=2.7e-07
+    建筑 6.13% 1.54% p=1.3e-05
+    全部 6.0% 1.97% p=0.00017
+    跨越 5.87% 1.4% p=1.3e-05
+    有趣 5.33% 1.54% p=0.00014
+    答案 5.2% 1.4% p=9.6e-05
+    简单 4.93% 1.54% p=0.00043
+    项目 4.8% 1.26% p=0.00015&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;HardwareLust:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我只是会像以前一样继续滥用短破折号。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hartator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;评论最重要的是人工智能：它非常无趣。&lt;p&gt;没有人想阅读您的 ChatGPT 输出。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andrewmthomas87:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的真相是，法学硕士对破折号的使用似乎并不过分。如果说有什么不同的话，那就是法学硕士生成的文本类型（有点非正式的、富有表现力的）需要更高频率的破折号。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;doe88:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不明白这些机器人的目的是什么？虚无主义？故意破坏？起初，当人们说这样那样的评论是人工智能生成时，我很怀疑，我不明白其目标、动机，所以我认为这不可能；但最近我明白了我是多么的错误，我们被淹没了，我开始意识到我们被这些无用的评论海洋吞噬了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bobomonkey:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我过去的生活就是鼓动社区评论以提高参与度：唯一改变的是人类变得懒惰并使用人工智能。虚假评论一直是一个问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AyanamiKaine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最害怕的一件事就是相信评论、视频、图片是人工智能生成的，但事实并非如此。&lt;p&gt;没有真正有效的人工智能检测工具。&lt;p&gt;当我们看到像 emd-ashes 这样的东西时，它只是模型训练所用文本的平均值。如果您属于模型的平均值之一，那么您基本上就是模型输出的一部分。哎呀。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;comrade1234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您可以关闭 iOS 自动将破折号转换为全破折号的功能。它还会关闭智能引号，使用该智能引号会将您发送的任何短信从正常的 GSM-7（7 位）编码转换为 utf-8，从而使您在后台发送的短信数量增加一倍（即使它们被拼接在一起看起来像一条消息）&lt;p&gt;要关闭智能标点：Home &gt;设置&gt;一般&gt;键盘&gt;智能标点符号&gt;离开。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;d4mi3n:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我仍然很咸，因为我担心我的写作被标记为人工智能生成，所以我不能再使用破折号了。我已经使用它们很多年了——在 Mac 键盘上只是“alt+shift+-”，我发现它们在许多字体中比典型数字键盘上的简单破折号更清晰。&lt;p&gt;令我感到难过的是，良好的印刷惯例已被法学硕士的时代精神所采用。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dematz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最近注意到的一种模式是公式化的评论，它们本身看起来还不错，可能有点抽象&amp;#x2F;模糊&amp;#x2F;平淡，并且没有像人们喜欢的那样站在好坏的一边，但当你查看帐户历史记录时，很明显人工智能，它们都是相同的公式：&lt;p&gt;&amp;gt;这是[摘要]&lt;p&gt;&amp;gt;不仅仅是x，它是 y&lt;p&gt;&gt; 有力的结尾，也许是个问题&lt;p&gt;一旦你知道它是人工智能，很明显他们告诉它使用普通破折号而不是长破折号，输入小写字母等等，但它仍然是奇怪的正式和公式化。&lt;p&gt;例如来自 &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;threads?id=snowhale"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;threads?id=snowhale&lt;/a&gt;&lt;p&gt;&amp;quot;这是被低估的二阶风险。美光、三星、SK 海力士均根据超大规模资本支出预测分配 HBM 产能。 NAND 晶圆厂也做出了类似的承诺。预计 OpenAI 支出减少 57% (.4T -&gt; B) 不仅会影响 NVIDIA 订单，还会影响到将产能从商品 DRAM&amp;#x2F;NAND 转向 HBM 的内存供应商。如果多个超大规模企业同时下调，您会遇到类似于 2019 年加密 ASIC 过剩的情况：公司为满足需求而准备的工具消失了。没有预测到这一点，但购买承诺问题是真实存在的。”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;atourgates:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;向我的英语专业的同志们致敬，他们一直在使用破折号，不得不停下来，这样我们听起来就不像人工智能了。&lt;p&gt;如果人工智能开始使用纽约客风格的分音符（当单词中有两个元音时，比如合作），我发誓我会失去它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SkyeCA:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果我在评论中看到破折号，我就会停止阅读，并认真考虑在多个网站上设置一个过滤器，以删除任何包含破折号的评论。&lt;p&gt;我知道破折号有合法的用例，但 HN&amp;#x2F;Reddit 评论中的几段（最多）文本？它进入垃圾桶。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maurycyz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;大多数人都想避免看起来像人工智能，但如果你想融入机器人起义怎么办。&lt;p&gt;我展示了 ⸻ U+2E3B 破折号。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CharlesW:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一些想法：&lt;p&gt;(1) 我不建议过度关注一个信号。它们会发生变化，并且非常容易优化。 &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Wikipedia:Signs_of_AI_writing" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Wikipedia:Signs_of_AI_writing&lt;/a&gt;&lt;p&gt;(2) 我确实推荐如果您发现可疑模式，请花一分钟时间将信息发送至 hn@ycombinator.com。 Dang 和我们其他勇敢的模组都反应迅速，并且似乎很欣赏这个问题上的额外关注。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;egypturnash:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;— — — — — — — — — — — — — — — — — — — — — — — — — — —&lt;p&gt;别介意我，只是歪曲结果。
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 结果。
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 结果。
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 结果。
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 结果。
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 结果。
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 结果。
+— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;onion2k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;我有一种感觉，HN 在过去几个月里已经被机器人淹没了。&lt;/i&gt;&lt;p&gt;是否有可能区分机器人和人类，使用 AI 来“改进”机器人？他们评论的质量（其中&lt;i&gt;某些&lt;/i&gt;内容可能是人工智能编写的，但不是全部）？我不认为是这样。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;marginalia_nu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;（作者）昨晚，当我浏览“newcomments”和“noobcomments”的前 3 页时，我看到了 32:1 的 EM-dashes 比率。  所以我不确定随着时间的推移它的稳定性如何。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.marginalia.nu/weird-ai-crap/hn/</guid>
+      <pubDate>2026-02-25 14:37:21</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47152085</comments>
+    </item>
+    <item>
+      <title>继增长 35% 后，美国电网太阳能发电量已超过水力发电</title>
+      <link>https://arstechnica.com/science/2026/02/final-2025-data-is-in-us-energy-use-is-up-as-solar-passes-hydro/</link>
+      <description>&lt;p&gt;考虑到这段历史，2025 年的需求增长有点令人担忧，但这还不是一个明确的信号，表明不可避免地推动增长的因素已经开始发挥作用。图片来源：John Timmer Hydropower 已成为第一个被太阳能超越的能源。约翰·蒂默 大多数能源都度过了平静的一年。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Following 35% growth, solar has passed hydro on US grid&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47154009"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arstechnica.com/science/2026/02/final-2025-data-is-in-us-energy-use-is-up-as-solar-passes-hydro/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MichaelNolan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有点奇怪的标题。这听起来像是刚刚发生的事情。但这是差不多2年前发生的事了。  读这篇文章也有点混乱。我终于发现他们只是指公用事业规模的太阳能，而不是总太阳能（公用事业加上电表后面）&lt;p&gt;我的数据叠加：
+&lt;a href="https:&amp;#x2F;&amp;#x2F;eia.languagelatte.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;eia.languagelatte.com&amp;#x2F;&lt;/a&gt;&lt;p&gt;原始数据：
+&lt;a href="https:&amp;#x2F;&amp;#x2F;www.eia.gov&amp;#x2F;电力&amp;#x2F;数据&amp;#x2F;浏览器&amp;#x2F;#&amp;#x2F;主题&amp;#x2F;0" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.eia.gov&amp;#x2F;电力&amp;#x2F;数据&amp;#x2F;浏览器&amp;#x2F;#&amp;#x2F;主题&amp;#x2F;0&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elliotbnvl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的目标是在我的树林里安装太阳能，直接连接到电池墙，也许是特斯拉，也许是其他东西。但绝对不会回到网格中。有人对如何做到这一点有建议或建议吗？&lt;p&gt;现在新英格兰最好的公司是谁？人们使用什么产品来储存电力？有这样的好资源吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tmellon2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;埃隆·马斯克 (Elon Musk) 提到，只需 100 平方英里的太阳能电网即可为整个美国供电。我不相信；经过简单的计算，我就信服了。过去的美国早就做到了这一点，甚至做得更多。当然还需要其他来源，但老实说，我们人类必须超越燃烧死物作为燃料。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jp191919:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道为什么现有的水力发电没有充分发挥其潜力。例如，大古力大坝的装机容量是美国最高的，接近 7 兆瓦，但通常发电量仅为其三分之一左右。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ertgbnm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想起了也许是修正主义的历史，但仍然适用的信念是，奴隶制实际上是由工业化结束的，使得废除奴隶制在经济上有利，而不是实际上是社会驱动的运动。 （事实上​​，我确信这肯定是两者的复杂混合体。）&lt;p&gt;我希望我们在气候变化方面处于相似的时代。当然，有效利用无限的可再生能源可以赚很多钱，这些可再生能源就像甘露一样从天而降。在我看来，只要有一点社会压力，我们应该能够消灭化石燃料行业。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;crystal_revenge:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;今年也是石油产量丰收的一年，美国石油产量创下新高！ [0]&lt;p&gt;0。 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.energy.gov&amp;#x2F;state-american-energy-promises-made-promises-kept" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.energy.gov&amp;#x2F;state-american-energy-promises-made-p...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Wistar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;相关：亚历克·沃森 (Alec Watson) 最近在 YouTube 上发表的关于可再生能源的技术连接文章。&lt;p&gt;“您在可再生能源技术方面被误导了”&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;KtQ9nt2ZeGM?si=CJ_Tt9DnWSKH8eGC" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;KtQ9nt2ZeGM?si=CJ_Tt9DnWSKH8eGC&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;toomuchtodo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;尽管特朗普政府一直对可再生能源抱有敌意，但它在对抗经济方面能做的也有限。最近对计划项目的分析表明，美国将在 2026 年再新增 43 吉瓦的太阳能装机容量，远高于 2025 年新增的 27 吉瓦。此外，还将有 12 吉瓦的风电装机容量，其中超过 10% 来自政府一再未能阻止的两个海上风电项目。美国迄今建成的最大风电场位于新墨西哥州，发电量达 3.6 吉瓦，预计也将于 2026 年开始运营。&lt;p&gt;Hopecore。向前。恐怖依然存在，但我们也如此。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.eia.gov&amp;#x2F;todayinenergy&amp;#x2F;detail.php?id=67205" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.eia.gov&amp;#x2F;todayinenergy&amp;#x2F;detail.php?id=67205&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;web.archive.org&amp;#x2F;web&amp;#x2F;20260225073026&amp;#x2F;https:&amp;#x 2F;&amp;#x2F;www.eia.gov&amp;#x2F;todayinenergy&amp;#x2F;images&amp;#x2F;2026.02.20&amp;#x2F;chart2.svg" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;web.archive.org&amp;#x2F;web&amp;#x2F;20260225073026&amp;#x2F;https:&amp;#x2F;&amp;#x2F;www.eia.g...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arstechnica.com/science/2026/02/final-2025-data-is-in-us-energy-use-is-up-as-solar-passes-hydro/</guid>
+      <pubDate>2026-02-25 16:44:54</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47154009</comments>
     </item>
   </channel>
 </rss>
