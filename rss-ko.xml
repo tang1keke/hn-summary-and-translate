@@ -6,169 +6,133 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Korean</description>
     <language>ko</language>
-    <lastBuildDate>Fri, 27 Feb 2026 13:09:11 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 15:45:01 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ko.xml"/>
     <item>
-      <title>F-Droid 이사회 후보 2026</title>
-      <link>https://f-droid.org/2026/02/26/board-of-directors-nominations.html</link>
-      <description>&lt;p&gt;올해 F-Droid 이사회 임명을 위한 후보 추천이 공개되었습니다. 현 이사들은 각 후보자에 대해 투표를 하게 됩니다. 감독에게 기대되는 것.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; F-Droid Board of Directors nominations 2026&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47178863"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://f-droid.org/2026/02/26/board-of-directors-nominations.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>우리는 더 나은 JavaScript용 스트림 API를 사용할 자격이 있습니다.</title>
+      <link>https://blog.cloudflare.com/a-better-web-streams-api/</link>
+      <description>&lt;p&gt;웹 스트림의 디자인은 JavaScript의 비동기 반복보다 먼저 이루어졌습니다. const 리더 = 스트림. 이제 웹 스트림이 대기를 지원하므로 대체 접근 방식을 고려하십시오.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; We deserve a better streams API for JavaScript&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47180569"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.cloudflare.com/a-better-web-streams-api/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ralusek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 스트림 인터페이스에 대한 대안을 고민했습니다:&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ralusek&amp;#x2F;streamie" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ralusek&amp;#x2F;streamie&lt;/a&gt;&lt;p&gt; &lt;p&gt;&lt;pre&gt;&lt;code&gt; InfiniteRecords처럼
+    .map(item =&amp;gt; doSomeAsyncThing(item), { 동시성: 5 });
+&lt;/code&gt;&lt;/pre&gt;
+그리고 일괄 항목 처리와 단일 항목 처리 사이를 전환하고 싶은 경우가 많다는 것을 알았기 때문에:&lt;p&gt;&lt;pre&gt;&lt;code&gt; InfiniteRecords
+    .map(item =&amp;gt; doSomeAsyncSingularThing(item), { 동시성: 5 })
+    .map(groupOf10 =&amp;gt; doSomeBatchThing(groupsOf10), { 배치 크기: 10 })
+    &amp;#x2F;&amp;#x2F; 단일 항목으로 다시 편평화할 수 있음
+    .map(item =&amp;gt; backToSingleItem(item), { flatten: true });&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;murmansk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;맙소사, 드디어 누군가 이런 말을 하더군요!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;conartist6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;공교롭게도 나는 이 기사에서 제안한 것보다 훨씬 더 나은 API를 가지고 있습니다!&lt;p&gt;그들은 UInt8Array의 비동기 반복자를 사용하는 것을 제안했습니다. 저는 이 아이디어를 &lt;i&gt;거의&lt;/i&gt; 좋아하지만 완전히는 아닙니다.&lt;p&gt;그들은 다음과 같이 제안합니다.&lt;p&gt;&lt;pre&gt;&lt;code&gt; type Stream&amp;lt;T&amp;gt; = {
+    next(): 약속&lt;{ 완료, 값: UInt8Array&lt;T&gt;; }&amp;gt;
+  }
+&lt;/code&gt;&lt;/pre&gt;
+나는 이것을 스트림 반복자라고 부릅니다.&lt;p&gt;&lt;pre&gt;&lt;code&gt; type Stream&amp;lt;T&amp;gt; = {
+    next(): { 완료, 값: T } | 약속&lt;{ 완료, 값: T }&amp;gt;
+  }
+&lt;/code&gt;&lt;/pre&gt;
+분명히 나는 편견을 가질 것이지만 객관적으로 내 버전도 우수하다고 확신합니다.&lt;p&gt;- 나는 그들의 버전에서 쉽게 내 버전을 만들 수 있습니다.&lt;p&gt;- 그들의 버전에서는 개념적 "스트림"이 반복자의 반복자로 정의됩니다. 즉, 이를 단계별로 실행하려면 for 루프의 for 루프가 필요합니다. 제 경우에는 단지 하나의 반복자일 뿐이고 하나의 for 루프로 사용할 수 있습니다.&lt;p&gt;- 정수 스트림만 갖는 것으로 제한되지는 않습니다. &lt;p&gt;- 제 방식은 동기화 입력에 대해 동기화 변환을 정의하면 전체 반복이 동기화되어 동기화 함수에서 결과를 얻고 사용할 수 있게 됩니다. 그렇지 않으면 모든 코드를 두 번 작성해야 하기 때문에 이것은 엄청납니다. 한 번은 동기화 반복자와 for 루프로, 한 번은 비동기 반복자와 for wait 루프로 작성해야 합니다.&lt;p&gt;- 입력을 단어로 분할할 때 Promises를 스래싱하는 문제가 사라집니다. 비동기 반복자를 사용하면 두 단어를 생성한다는 것은 두 개의 약속을 생성한다는 의미입니다. 스트림 반복자를 사용하면 사용 가능한 데이터가 있는 경우 약속이 전혀 필요하지 않고 그냥 양보하면 됩니다.&lt;p&gt;- 스트림 반복자는 동시성을 관리하는 데 도움이 될 수 있는데, 이는 비동기 반복자가 할 수 없는 엄청난 일입니다. 비동기 반복자는 약속을 보면 &lt;i&gt;항상&lt;/i&gt; 기다리기 때문에 이 작업을 수행할 수 없습니다. 이는 "동시성이 있으면 항상 제거됩니다."라고 말하는 것과 같습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;우리는 JavaScript보다 더 나은 언어를 사용할 자격이 있습니다.&lt;p&gt;슬프게도 그런 일은 결코 일어나지 않을 것입니다. WebAssembly는 여기서 약속 중 일부를 지키지 못했습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dilap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 문제는 버그가 아닙니다. 이는 10년 전에는 합리적이었을 수 있는 디자인 결정의 결과이지만 오늘날 JavaScript 개발자가 코드를 작성하는 방식과 일치하지 않습니다.&lt;p&gt;&amp;gt; 저는 이전 작업을 폄하하기 위해 여기 있는 것이 아닙니다. 다음에 무엇이 나올 수 있는지에 대한 대화를 시작하기 위해 여기에 왔습니다.&lt;p&gt;끔찍한 LLM-slop 스타일입니다. Mr Snell이 LLM에게 기사 작성을 맡기고 있습니까? 아니면 방금 스타일을 적용한 것입니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ai-christianson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;BYOB 읽기에 대한 요점이 명확합니다. 성능과 GC 압력 감소를 위한 이러한 중요한 기능이 결국 WHATWG 표준에서 올바르게 구현하기가 너무 어려워졌다는 점은 실망스럽습니다. 버퍼 관리에 대한 더 간단하고 인체공학적인 접근 방식은 JS에서 고성능 데이터 처리 도구를 구축하는 사람들에게 큰 도움이 될 것입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;BYOB(자체 버퍼 가져오기) 읽기가 너무 복잡하고 골치가 아프다는 것은 정말 안타까운 일입니다. 왜냐하면 대규모 읽기의 경우 GC 트래픽(임시 버퍼 할당용) 및 CPU 시간(사본용) 측면에서 큰 차이를 만들기 때문입니다.&lt;p&gt;이상적인 세계에서는 호스트에게 100MB의 항목을 바이트 배열이나 wasm 힙 조각으로 스트리밍하도록 요청할 수 있습니다. 아아.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;user3939382:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;" Streams 표준은 "낮은 수준의 I&amp;#x2F;O 프리미티브에 효율적으로 매핑되는 데이터 스트림을 생성, 구성 및 소비하기 위한 API"를 제공하려는 야심찬 목표로 2014년에서 2016년 사이에 개발되었습니다. 웹 스트림 이전에는 웹 플랫폼에 스트리밍 데이터를 처리할 수 있는 표준 방법이 없었습니다."&lt;p&gt;이것이 UDP의 목적입니다. 실제로 모든 것이 완전히 비동기화되어야 하는데 그렇지 않기 때문에 우리는 OS와 네트워크를 그 자체 위에 완전히 다시 구현하고 아마도 작업이 끝나면 세 번째로 클라우드 클라우드를 가질 수 있을 것입니다.&lt;p&gt;우리가 하드웨어에 이르기까지 사용하고 있는 전체 스택은 목적에 적합하지 않으며 우리는 이렇게 점점 더 깨지기 쉬운 우뚝 솟은 추상화를 구축하는 데 재능과 돈을 낭비하고 있습니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.cloudflare.com/a-better-web-streams-api/</guid>
+      <pubDate>Fri, 27 Feb 2026 14:02:53 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47180569</comments>
+    </item>
+    <item>
+      <title>HN 표시: 코드베이스가 LLM의 컨텍스트 창에 얼마나 잘 맞는지 보여주는 배지</title>
+      <link>https://github.com/qwibitai/nanoclaw/tree/main/repo-tokens</link>
+      <guid isPermaLink="true">https://github.com/qwibitai/nanoclaw/tree/main/repo-tokens</guid>
+      <pubDate>Fri, 27 Feb 2026 15:14:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47181471</comments>
+    </item>
+    <item>
+      <title>HN 표시: RetroTick – 브라우저에서 클래식 Windows EXE를 실행합니다.</title>
+      <link>https://retrotick.com/</link>
+      <guid isPermaLink="true">https://retrotick.com/</guid>
+      <pubDate>Fri, 27 Feb 2026 13:06:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47180083</comments>
+    </item>
+    <item>
+      <title>10차 순회: 수정헌법 4조는 시위대의 기기에 대한 광범위한 검색을 지원하지 않습니다.</title>
+      <link>https://www.eff.org/deeplinks/2026/02/victory-tenth-circuit-finds-fourth-amendment-doesnt-support-broad-search-0</link>
+      <description>&lt;p&gt;제10순회 항소법원은 시위자의 장치와 디지털 데이터, 비영리단체의 소셜 미디어 데이터를 수색하기 위한 전면 영장에 대한 하급 법원의 기각을 뒤집었습니다. 시위가 끝난 후 경찰은 시위 도중 자전거를 던졌다고 주장하는 재클린 아르멘다리즈 운주에타(Jacqueline Armendariz Unzueta)의 장치와 데이터를 압수하고 수색하라는 영장도 발부받았습니다. 지방 법원은 Armendariz와 Chinook Center가 제기한 민권 소송을 기각했으며, 수색은 정당했으며 어떤 경우에도 경찰관은 면책을 받을 자격이 있다고 판단했습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Tenth Circuit: 4th Amendment Doesn't Support Broad Search of Protesters' Devices&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47181391"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.eff.org/deeplinks/2026/02/victory-tenth-circuit-finds-fourth-amendment-doesnt-support-broad-search-0'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brador:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;오픈소스는 항상 커널에서 시작됩니다.&lt;p&gt;Linus는 이날 처음으로 이를 알고 있었고 누구에게도 굴복하지 않았습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;scrollop:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Google이 곧 변경 사항을 적용하면 F-droid가 계속됩니까?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://f-droid.org/2026/02/26/board-of-directors-nominations.html</guid>
-      <pubDate>Fri, 27 Feb 2026 10:27:29 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47178863</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mothballed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;굉장한 승리네요.  그러나 법의 색깔에 따른 권리 침해에 대한 처벌이 실제적인 것(심각한 감옥 + 배상, 추가 공직 금지 등)이 될 때까지 그들은 계속해서 그렇게 할 것입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hn_acker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;원래 제목은 다음과 같습니다.&lt;p&gt;&amp;gt; 승리! 제10순회에서는 수정헌법 제4조가 시위대의 장치 및 디지털 데이터에 대한 광범위한 검색을 지원하지 않는다고 판결했습니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.eff.org/deeplinks/2026/02/victory-tenth-circuit-finds-fourth-amendment-doesnt-support-broad-search-0</guid>
+      <pubDate>Fri, 27 Feb 2026 15:09:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47181391</comments>
     </item>
     <item>
-      <title>2026-02년 PostmarketOS: 일반 커널, 생성 AI 사용 금지</title>
-      <link>https://postmarketos.org/blog/2026/02/26/pmOS-update-2026-02/</link>
-      <description>&lt;p&gt;그 외에 그는 pmaports 및 pmbootstrap에 대한 검토 및 작업과 GTK 및 Phosh 모바일 설정의 일부 업스트림 작업을 균형있게 수행했습니다. postmarketOS에 이러한 커널이 있다는 것은 우리가 커널 구성 및 빌드 프로세스를 완전히 제어할 수 있다는 것을 의미하며 이를 통해 커널 구성 검사와 통합할 수 있습니다. org/phone-harness와 새로운 hardware-ci 문서 페이지가 함께 제공됩니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; PostmarketOS in 2026-02: generic kernels, bans use of generative AI&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47179553"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://postmarketos.org/blog/2026/02/26/pmOS-update-2026-02/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>OpenAI, 7,300억 달러의 사전 가치 평가로 1,100억 달러 조달</title>
+      <link>https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/</link>
+      <description>&lt;p&gt;새로운 자금 조달은 Amazon의 500억 달러 투자와 Nvidia 및 SoftBank의 각각 300억 달러 투자로 구성되며 사전 평가액은 7,300억 달러입니다. 유사한 성장 단계를 탐색하는 동료들과 소통하세요. 유사한 성장 단계를 탐색하는 동료들과 소통하세요.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; OpenAI raises $110B on $730B pre-money valuation&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47181211"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mono442:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;개발 속도를 높이기 위해 genai를 수용하지 않는다면 전체 프로젝트가 아무 쓸모도 없다는 것은 놀라운 일이 아닙니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://postmarketos.org/blog/2026/02/26/pmOS-update-2026-02/</guid>
-      <pubDate>Fri, 27 Feb 2026 12:01:36 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47179553</comments>
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChicagoDave:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Tesla는 거대 기술업체들만 바보입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ViewTrick1002:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;순환 거래를 다른 규모로 끌어올리나요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thinkingtoilet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;고작 7300억 달러? 왜 거기서 멈춰? 우리가 뭔가를 만들고 있는 한 크게 나아가자. 10조 달러는 어떻습니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;snitch182:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;7300억은 확실히 조만간 터질 거품입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maplethorpe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; The Information은 이전에 Amazon의 투자 중 350억 달러가 회사가 연말까지 AGI를 달성하거나 IPO를 완료하는 것에 달려 있다고 보고한 바 있습니다. OpenAI의 발표는 자금 분할을 확인했지만 "특정 조건이 충족되면 앞으로 몇 달 내에" 350억 달러의 추가 자금이 도착할 것이라고만 밝혔습니다.&lt;p&gt;믿을 수 없습니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/</guid>
+      <pubDate>Fri, 27 Feb 2026 14:56:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47181211</comments>
     </item>
     <item>
-      <title>속보 무료</title>
-      <link>https://www.forbrukerradet.no/breakingfree/</link>
-      <description>&lt;p&gt;Forsiden Breaking Free Breaking Free 새로운 보고서 Breaking Free: 공정한 기술 미래를 향한 길에서 노르웨이 소비자 위원회는 엔시티티화(enshittification)와 이에 저항하는 방법을 탐구했습니다. 보고서는 이러한 현상이 소비자와 사회 전반에 어떻게 영향을 미치는지 보여주지만, 흐름을 바꾸는 것도 가능하다는 점을 보여줍니다. 보고서: 노르웨이 당국에 보내는 무료 서한 유럽 기관에 보내는 서신 디지털 디지털 제품과 서비스는 점점 악화되고 있지만 추세는 역전될 수 있습니다. 디지털(NB: Fullt) 세미나 및 "enshittiification"에 대한 교감이 이루어졌습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Breaking Free&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47178678"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.forbrukerradet.no/breakingfree/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>오픈 소스 관리자를 위한 무료 Claude max 20x 받기</title>
+      <link>https://claude.com/contact-sales/claude-for-oss</link>
+      <description>&lt;p&gt;우리는 최대 10,000명의 기여자를 받아들입니다. 승인되면 구독 기간 동안 계정에서 Claude Max를 활성화할 수 있는 링크가 제공됩니다. 이용 약관이용 약관이용 약관.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Get free Claude max 20x for open-source maintainers&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47178371"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://claude.com/contact-sales/claude-for-oss'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;madspindel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;quot;Meta는 회사 연간 수익의 10%가 자사 서비스의 사기성 광고에서 나오는 것으로 추산하고 있으며, 그 금액은 무려 160억 달러에 달합니다.&lt;p&gt;– Meta는 사기를 당한 소비자로부터 수십억 달러를 벌고 있습니다. 회사가 벌금을 부과받더라도(수년이 소요됨) 지금까지 우리가 본 벌금은 이러한 이익의 일부에 불과합니다. 즉, 메타는 문제를 해결할 유인이 없습니다. 한편 회사는 사용자의 프로필이 사기 광고에 오용되거나 사기의 피해자가 되는 경우에도 사용자를 돕기 위해 손 하나 까딱하지 않는다고 Myrstad는 말합니다. &amp;quot;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Epa095:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;영문에서:&lt;p&gt;기술이 사람들에게 도움이 되는 더 나은 디지털 세상을 이루기 위해
-이에 맞서기보다는 몇 가지 조치를 취해야 합니다.&lt;p&gt;1. &lt;i&gt;서비스 제공업체와 서비스 제공업체 간의 전력 재균형
-소비자.&lt;/i&gt; 사람들은 자신의 디지털을 통제할 수 있어야 합니다.
-경험하고 그들이 원하는 제품 사용 방법을 결정합니다.
-그들은 소유하고 있습니다. 전환하는 것이 가능하고 실용적이어야 합니다.
-대체 서비스 제공업체 또는 이미 서비스를 조정
-필요와 선호도에 맞게 사용하세요.&lt;p&gt;2. &lt;i&gt;대형 기술에 대한 의존성을 해결합니다.&lt;/i&gt;
-혁신적인 제품과 서비스를 제공하고
-Big Tech의 대안이 되기 위해서는 디지털 시장에서의 경쟁이 중요합니다.
-복원되었습니다. 개방성 등의 원칙을 바탕으로 한 기술,
-상호 운용성과 이식성을 통해 향상되어야 합니다.
-전략적 투자. 예를 들어, 공공 부문은 다음과 같습니다.
-대안을 지원하기 위해 주요 조달자로서의 힘을 활용
-윤리적 조달 옵션 탐색을 통해 거대 기술 기업으로
-기술 서비스&lt;p&gt;3. &lt;i&gt;기존 법률의 집행을 더욱 강화합니다.&lt;/i&gt;
-규제는 혁신을 방해하는 데 결정적인 역할을 합니다.
-혁신을 이끌고 공평한 경쟁의 장을 보장하는 가드레일입니다.
-약한 집행으로 인해 거대 기술 기업이 계속해서 피해를 입게 됩니다.
-선택의 자유, 서비스 품질,
-혁신. 이를 해결하려면 기존 법률을 집행해야 합니다.
-강하고 활기차게 행동하십시오. 여기에는 DMA 및
-경쟁법은 보다 광범위하게 적용되지만 기타 디지털 규칙도 적용됩니다.
-GDPR, 소비자법 등&lt;p&gt;4. &lt;i&gt;강력한 조치를 채택하여 기존의 법적 허점을 해소합니다.
-디지털 공정성법.&lt;/i&gt; 법적 확실성과 주소를 높입니다.
-사람들을 더 잘 보호하기 위한 법안의 허점
-기만적이고 중독성 있는 디자인에 대한 예, 불공정한 디자인
-개인화.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AxiomLab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;'성화'를 치료하기 위한 규제 개입 요구 단순히 알고리즘 검증을 법적 검증으로 대체하는 것입니다. 둘 다 근본적으로 결함이 있는 아키텍처에 대한 사후 패치입니다.&lt;p&gt;상호 운용성과 사용자 주권이 처음부터 이러한 플랫폼에 하드코딩되지 않은 이유는 기술적인 실수가 아닙니다. 그것은 벤처 캐피탈의 특징입니다. 개방형 프로토콜에서는 독점을 구성할 수 없습니다. 공리적 제약이 아닌 벽으로 둘러싸인 정원에 자본 자금을 조달합니다. &lt;p&gt;컴파일러 자체가 독점 기업의 소유일 때 런타임 엔트로피를 수정하기 위한 법안을 기대하는 것은 어리석은 일입니다. 아키텍처는 설계된 대로 정확하게 작동합니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.forbrukerradet.no/breakingfree/</guid>
-      <pubDate>Fri, 27 Feb 2026 09:56:42 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47178678</comments>
+&lt;p&gt;&lt;strong&gt;Top 21 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mohsen1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 오픈 소스 관리자로서 Copilot을 무료로 얻었는데 정말 좋습니다. 하지만 지금은 내 프로젝트를 위해 Claude Max 두 개(월 200달러)도 지불하고 있습니다. 최소 6개월 동안 한 가지만 보장해 주시는 것이 좋을 것 같아요! 나는 다운로드를 전혀 추적하지 않기 때문에 Anthropic이 내 신청서를 수락하기를 바랍니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xantronix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;오픈 소스 개발자는 6개월 후에 참여하기 위해 비용을 지불하기보다는 자신의 노력과 과거, 현재, 미래의 LLM 모델에 대한 기여에 대해 보상을 받아야 합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;notatallshaw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AI는 다소 도움이 되지만, OSS 자원봉사 활동에 대한 비용을 지불할 방법을 찾는 회사에는 관심이 없습니다. GitHub Copilot은 OSS 관리자를 위한 영구 무료 구독을 제공합니다.&lt;p&gt;이전에는 Claude가 오픈 소스 관리자로서 나에게 연락했을 때 무료 평가판이 미화되었기 때문에 무료 제안을 무시했습니다. 이 서비스가 나열된 6개월 이상 계속되기를 바랍니다. 저는 영광스러운 무료 평가판에 관심이 없으며 신용 카드 정보를 입력해야 하는 경우 가입하지 않을 것입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vivzkestrel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;출시 후 2주 이내에 거의 120개의 별을 달성할 수 있기를 바랍니다!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;skybrian:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;여기의 냉소주의는 미쳤다. 6개월 안에 많은 일을 할 수 있으며 그때쯤에는 경쟁으로 인해 가격이 떨어졌을 것입니다. 어리석지 않다면 코딩 에이전트를 바꾸는 데 방해가 되는 것은 없습니다.&lt;p&gt;제한된 혜택을 활용하는 데에는 아무런 문제가 없습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jpease:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;보라, 짐승이 어떻게 포효하는지 보라! 깊은 곳에서 큰 소리로 '나를 먹이라'고 외칩니다.&lt;p&gt;진심으로&lt;p&gt;Sales &amp;amp; 마케팅&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deckar01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;오픈 소스 관리자를 높이 평가한다면 사용자가 사람의 검토 없이 끌어오기 요청을 여는 시점을 감지하고 중지하십시오. 자유롭게 토큰을 계속 소각하고 끌어오기 요청을 중단하세요.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;japhyr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;처음에 나는 여기 사람들이 유익한 프로그램의 초기 버전에 별로 동정적이지 않다고 생각했습니다. 회사에서는 처음에 6개월 일정을 설정하여 프로그램을 재평가하고 오픈 소스에 대한 지원을 발전시키는 방법을 선택할 수 있었습니다. 저는 "6개월 후에 무료 요금제를 계속할지 평가할 것입니다."라는 내용을 볼 것으로 예상했습니다.&lt;p&gt;그러나 그들은 이것이 오픈 소스 관리자로부터 유료 구독을 얻으려는 방법일 뿐이라는 점을 아주 명백하게 밝혔습니다.&lt;p&gt;&amp;gt; 귀하의 무료 구독은 혜택 기간이 끝나면 만료됩니다. 만료 후에도 취소하지 않는 한 기존 구독은 계속 유지됩니다. Anthropic의 표준 가입 절차를 통해 당시 가격으로 Claude 유료 구독을 독립적으로 구매하도록 선택할 수 있습니다.&lt;p&gt;따라서 여기에 참여하는 사람은 누구나 지금으로부터 6개월 후에 선택을 취소해야 한다는 것을 기억해야 합니다. 그렇지 않으면 갑자기 최대 20배 수준의 청구서를 받게 됩니다.&lt;p&gt;정말 보기 흉합니다.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.anthropic.com&amp;#x2F;claude-for-oss-terms" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.anthropic.com&amp;#x2F;claude-for-oss-terms&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sega_sai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;별 5000개. 그것은 흥미로운 기준점입니다. 
+천체 물리학의 거의 모든 Python 사용자가 사용하는 기본 Python 모듈에는 별이 5100개 있습니다. 나는 과학 분야의 오픈 소스 코드 중 그 어떤 오픈 소스 코드도 이 기준점을 통과하지 못할 것이라고 생각합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rhr-qlap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아니요, 프로젝트는 슬롭에 비해 너무 중요합니다. 그리고 내 사고 과정, 어리석은 질문 등을 볼 수 있도록 추적을 원하는 이유는 무엇입니까? 그 정보를 나중에 팔겠습니까?&lt;p&gt;당신의 CEO는 당신의 도구가 나를 실업자로 만들 것이라고 여러 번 자랑했습니다. 내가 왜 거기에 참여하겠습니까?&lt;p&gt;당신은 출처를 밝히지 않고 내 코드를 훔쳤습니다. 왜 저작권 침해자의 서비스를 이용해야 합니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;evolve2k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;너무 걱정하지 마세요. 한번 시도해 보세요. 처음 몇 개는 제가 맡겠습니다. 편안해질 시간을 주세요 &amp;#x2F;S&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mittermayr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;감사하지 않게 들릴 수도 있지만 최근에 Antropic이 PR 캠페인을 강화하는 냄새가 매우 강하고 게시물의 헤드라인도 불쾌하다고 읽습니다.&lt;p&gt;게다가 6개월이 1개월보다 낫긴 하지만 체크인 후 갱신되는(교육 할인처럼) 반복되는 거래(또는 토큰 제한)가 아닌 이유는 무엇입니까? 이것은 구매하는 모든 Apple 제품에 대해 Apple TV+ 혜택을 받는 것처럼 들립니다. 선물 이상의 매력.&lt;p&gt;이 경우에는 6개월 후에 상향 판매를 통해 큰 타격을 입을 수 있는 사람들의 자체 선택 리드 목록을 작성하기 위한 교활한 접근 방식인 것 같습니다.&lt;p&gt;보내주신 모든 것에 감사드립니다*&lt;p&gt;*6개월간 무료 혜택이 제한되어 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;smashah:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;5000개 이상의 별은 이것이 판매 전략임을 증명합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stavros:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 GitHub와 Jetbrains가 하는 일을 좋아합니다. 관리자라면 Copilot과 PyCharm을 무료로 받을 수 있습니다. 그들은 내 라이센스를 계속 갱신합니다.&lt;p&gt;6개월 평가판은 "첫 번째 크랙 히트가 무료"인 것 이상으로 OSS에 대한 감사를 표시하지 않습니다. 당신이 얼마나 좋은 사람인지에 대해 감사를 표하는 것입니다. 그것은 단지 "당신은 유망한 고객처럼 보입니다"입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OutOfHere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;별 5000개 필요? 그리고 6개월만요? 정말 오해의 소지가 있는 다단계 clickait 사기입니다. 그러나 나는 과도한 토큰 사용부터 모델 품질 저하, 다양한 사용자 적대적 행동에 이르기까지 Anthropic에 관한 모든 것이 사기라는 것을 알고 있었습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Foxboron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 유지관리자: 귀하는 5,000개 이상의 GitHub 스타 또는 100만 개 이상의 월간 NPM 다운로드를 갖춘 공개 저장소의 주요 유지관리자 또는 핵심 팀 구성원입니다. 지난 3개월 이내에 커밋, 릴리스 또는 PR 리뷰를 작성하셨습니다.&lt;p&gt;웃기는 일입니다.&lt;p&gt;이것은 최신 기술 스택을 실행하는 FOSS 커뮤니티의 아주 작은, 심지어 중요하지 않은 부분입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sigmar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;유지관리자: 귀하는 5,000개 이상의 GitHub 스타 또는 100만 개 이상의 월간 NPM 다운로드를 갖춘 공개 저장소의 주요 유지관리자 또는 핵심 팀 구성원입니다. 지난 3개월 이내에 커밋, 릴리스 또는 PR 리뷰를 작성하셨습니다.&lt;p&gt;gitlab 사용자를 위해 하나를 부어주세요.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nitinreddy88:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;본질적으로 그들은 당신이 그것을 6개월 동안 사용한 다음 유료 서비스에 연결하기를 원합니다. 똑똑한&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bicx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;오픈 소스 소프트웨어에서 모델을 훈련했다는 점을 고려할 때 그들이 할 수 있는 최소한의 일은 시간 제한 없이 무료로 오픈 소스 관리자에게 모델을 제공하는 것입니다. 나는 그들이 학대를 예방할 수 있는 다른 방법을 생각해낼 수 있다고 확신합니다. 이 6개월 무료 이동은 이미 훈련에 비자발적으로 기여한 사람들로부터 더 많은 것을 추출하려는 움직임인 것처럼 부상에 모욕을 더할 뿐입니다. 그리고 그것은 Claude Code 팬인 저에게서 나온 것입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OskarS:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;6개월 동안? 그래서 그것은 단지 공상적인 것입니다. &amp;quot;첫번째는 무료입니다&amp;quot; 재판?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reconnecting:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아니요, 감사합니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://claude.com/contact-sales/claude-for-oss</guid>
+      <pubDate>Fri, 27 Feb 2026 09:08:58 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47178371</comments>
     </item>
     <item>
-      <title>다이슨, 영국의 획기적인 사건에서 강제 노동 소송 합의</title>
-      <link>https://www.bbc.com/news/articles/cddnry8dnl7o</link>
-      <description>&lt;p&gt;다이슨은 어떠한 책임도 부인했습니다. 노동자들은 위협과 구타를 당했고, 여권을 압수당했으며, 비위생적인 환경에서 장시간 노동을 강요당했다고 설명했습니다. 그들의 변호사에 따르면, Leigh Day부터 그들은 화장실 이용도 거부당했고 "신체를 달래지 못한 채 한 번에 12시간 이상" 일하도록 강요당했습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Dyson settles forced labour suit in landmark UK case&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47178836"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bbc.com/news/articles/cddnry8dnl7o'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xiphias2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;여기에 선례가 있다는 것은 이해하지만 일반적으로 계약법의 반대에 대한 선례는 없나요?&lt;p&gt;그리고 영국이 선례 기반이라면 왜 이전 선례가 여기에 적용되지 않습니까?&lt;p&gt;화장실 휴식이 잔인하다는 점에는 동의하지만 여기서 문제는 이를 사용하는 공급업체에 대해 아는 것입니다.&lt;p&gt;기사에는 법적 근거에 대한 내용이 많지 않았습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;martiuk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;다이슨이 공급업체가 취한 조치로 인해 고소당하는 이유는 무엇입니까? 이것은 기괴한 선례를 설정하고 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;n4r9:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;제임스 다이슨(James Dyson)은 영국 산업 지원을 바탕으로 브렉시트(Brexit)를 옹호했고, 얼마 지나지 않아 회사 본사를 싱가포르로 이전했습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;direwolf20:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;고용주는 왜 직원의 화장실 휴식을 거부합니까? 그들은 실제로 그것이 직원들의 생산성을 높여준다고 믿고 있습니까, 아니면 단지 잔인한 사람들일까요?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.bbc.com/news/articles/cddnry8dnl7o</guid>
-      <pubDate>Fri, 27 Feb 2026 10:21:40 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47178836</comments>
-    </item>
-    <item>
-      <title>컴팩트 디스크 스토리(1998)</title>
-      <link>https://www.researchgate.net/publication/294484774_Compact_disc_story</link>
-      <guid isPermaLink="true">https://www.researchgate.net/publication/294484774_Compact_disc_story</guid>
-      <pubDate>Fri, 27 Feb 2026 03:33:28 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47176150</comments>
-    </item>
-    <item>
-      <title>Ubicloud(YC W24): 소프트웨어 엔지니어 – 터키, 네덜란드, 캘리포니아에서 $95-$250K</title>
-      <link>https://www.ycombinator.com/companies/ubicloud/jobs/j4bntEJ-software-engineer</link>
-      <description>&lt;p&gt;우리는 의사소통 구조에 대해 신중하게 생각합니다. AI를 활용한 프로젝트 세션도 고려 중이에요. Ubicloud는 어디서나 실행할 수 있는 오픈소스 클라우드입니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ubicloud (YC W24): Software Engineer – $95-$250K in Turkey, Netherlands, CA&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47178176"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/ubicloud/jobs/j4bntEJ-software-engineer'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.ycombinator.com/companies/ubicloud/jobs/j4bntEJ-software-engineer</guid>
-      <pubDate>Fri, 27 Feb 2026 08:45:02 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47178176</comments>
-    </item>
-    <item>
-      <title>완전한 Manic Miner 분해</title>
-      <link>https://skoolkit.ca/disassemblies/manic_miner/</link>
-      <description>&lt;p&gt;Manic Miner: 색인 전체 RAM 분해 메모리 맵 모든 루틴 데이터 메시지 사용하지 않는 주소 그래픽 및 사운드 동굴 사운드 데이터 테이블 및 버퍼 게임 상태 버퍼 참조 변경 로그 용어 퀴즈 버그 포크 크레딧.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The complete Manic Miner disassembly&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47177877"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://skoolkit.ca/disassemblies/manic_miner/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;A_Venom_Roll:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;완벽한 타이밍 - Sharopolis는 방금 슈퍼 마리오 스타일의 물리학을 게임에 적용하기 위해 이 정확한 분해를 사용하는 비디오 [0]를 출시했습니다.&lt;p&gt;그는 Claude Code를 사용하여 '코드에 활기를 불어넣었습니다'. 분해를 통해 약 2KB의 사용되지 않은 메모리가 식별된다는 사실을 활용하여 어셈블리가 변경됩니다. 이와 같이 잘 문서화된 코드베이스가 제공되면 LLM이 어떻게 40년 된 Z80 어셈블리를 탐색하고 수정할 수 있는지에 대한 흥미로운 시각입니다.&lt;p&gt;이 동영상은 댓글에서 많은 논의를 촉발시켰고, 일부 사람들은 그가 AI를 사용했다고 매우 화를 냈습니다.&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=gxxNgZgd88I" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=gxxNgZgd88I&lt;/a&gt;&amp;quot;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andybak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;오 맙소사. 이제 이걸 VR로 포팅할 수 있어요... 클로드!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;b3lvedere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그 당시 저는 Manic Miner와 Jet Set Willy를 수없이 플레이했습니다. 완전히 분해해서 읽어보니 정말 재미있네요. 감사합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aa-jv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아, 이건 정말 기분 좋은 일입니다. 1978년부터 제가 개인적으로 직업적으로 사용했던 모든 컴퓨터를 평생 보관해 온 오래된 기계 수집가로서 Speccie는 오후를 보내는 가장 좋은 방법 중 하나입니다. 그리고 엄청나게 많은 다른 타이틀이 있음에도 불구하고 Manic Miner는 여전히 재생 목록에서 가장 좋아하는 상위 5위 안에 들었습니다.&lt;p&gt;스프라이트 드로잉과 같은 분해는 읽기에 특히 좋습니다. 루틴:&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;skoolkit.ca&amp;#x2F;분해&amp;#x2F;manic_miner&amp;#x2F;asm&amp;#x2F;36852.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;skoolkit.ca&amp;#x2F;disassemblies&amp;#x2F;manic_miner&amp;#x2F;asm&amp;#x2F;36852.html&lt;/a&gt;&lt;p&gt;&amp;#x27;dead&amp;#x27; Manic Miner 바이너리의 메모리 공간 .. 이것이 ML 기반의 원시 소스 형태로 다시 작성하는 기초가 될 수 있는지 궁금합니다. 일종의 구식 프로토타입입니다.. 하지만 어쨌든 여전히 골동품입니다.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;skoolkit.ca&amp;#x2F;분해&amp;#x2F;manic_miner&amp;#x2F;asm&amp;#x2F;37708.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;skoolkit.ca&amp;#x2F;disassemblies&amp;#x2F;manic_miner&amp;#x2F;asm&amp;#x2F;37708.html&lt;/a&gt;&lt;p&gt;실제로 어셈블리 언어, 역량에 관계없이 새롭거나 오래된 관심이 있는 모든 사람에게 이 분해는 즐거운 읽기입니다 ..&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://skoolkit.ca/disassemblies/manic_miner/</guid>
-      <pubDate>Fri, 27 Feb 2026 08:02:52 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47177877</comments>
-    </item>
-    <item>
-      <title>국회의원들은 미군이 텍사스에서 국경수비대 드론을 격추하기 위해 레이저를 사용했다고 말했습니다.</title>
-      <link>https://apnews.com/article/military-laser-border-drone-texas-airport-55aaab7093f7d6dd174f909f3875001c</link>
-      <description>&lt;p&gt;“이제 우리는 무능의 결과를 보고 있다”고 그들은 말했다. -멕시코 국경”이라고 성명서는 말했습니다. 이전에는 선택된 소수의 연방 기관만이 그러한 권한을 가졌습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Lawmakers say US Military used laser to take down Border Protection drone in TX&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47179356"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://apnews.com/article/military-laser-border-drone-texas-airport-55aaab7093f7d6dd174f909f3875001c'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;october8140:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ICE와 국경 수비대의 팬이 아닌 군인이 기회를 보고 격추했을 수도 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;comrade1234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;때때로 헤드라인을 읽었을 때 나는 그것이 테스트 드론이고 드론을 쓰러뜨리기 위해 지점 간 통신 프로세스를 테스트하고 있다고 생각했습니다(실제 문제). 하지만 아니요, 그것은 단지 무능하고 멍청한 행동이었습니다.  아직은 현실에 적응할 만큼 냉소적이진 않은 것 같아요.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;philipallstar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 카르텔은 멕시코 국경을 넘어 마약을 운반하고 국경 순찰대원을 감시하기 위해 일상적으로 드론을 사용합니다. 관계자들은 지난 여름 의회에 2024년 마지막 6개월 동안 남부 국경에서 500미터(1,600피트) 이내에서 27,000대 이상의 드론이 감지되었다고 밝혔습니다.&lt;p&gt;그들이 자신들의 드론 중 하나를 이들 중 하나로 착각한 것은 당연합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mapt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 두 가지 행위는 여러 가지 이유로 미국 법률 및 FAA 규정에 따라 매우 불법입니다.  그중에는 알루미늄을 녹이는 데 필요한 범위의 1000배에 달하는 범위에서 인간 조종사의 눈을 영구적으로 실명시킬 수 있으며 레이저 무기는 반짝이는 표면에서 2차 산란이 실제로 위험할 정도로 강력합니다.&lt;p&gt;우리에게는 민간 영공이 있고 레이저 무기가 있으며 CBP&amp;#x2F;ICE MAGA 민병대가 군사 활동을 하고 있습니다.  그 중 두 가지를 동시에 같은 장소에 두는 것이 안전하지 않습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;heisenbit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Nena가 99개의 풍선에 대해 노래할 때 우리는 그것이 과장된 것이라고 생각했습니다. 그녀가 드론으로 발전하기 전에 말 그대로 생일 풍선을 격추하는 군인들이 있는 미래의 여행자라는 것을 이해한 사람은 거의 없었습니다. 다음 단계의 에스컬레이션을 생각하는 것은 무섭습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;crusty:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;따라서 점수를 기록한다면 그것은 파티용 풍선 하나와 자신의 드론 중 하나입니다. 미래는 밝아 보입니다!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;happymellon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;레이저가 중요한 물건을 먼저 꺼낼 때까지 기다리고 나중에 물어보세요.&lt;p&gt;깊이 인식 문제 때문에 헬리콥터를 드론으로 착각했습니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://apnews.com/article/military-laser-border-drone-texas-airport-55aaab7093f7d6dd174f909f3875001c</guid>
-      <pubDate>Fri, 27 Feb 2026 11:37:49 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47179356</comments>
-    </item>
-    <item>
-      <title>Pharo Smalltalk 작업: BPatterns: Smalltalk 스타일로 엔진 재작성</title>
-      <link>http://dionisiydk.blogspot.com/2026/02/bpatterns-rewrite-engine-with-smalltalk.html</link>
-      <description>&lt;p&gt;내부적으로 BPattern은 재작성 엔진과 동일한 패턴 노드 클래스를 사용하여 패턴 AST를 구축합니다. 패턴은 단지 블록일 뿐이다. 키워드 교체:[ [ anyRcv anyKeywordPart: anyArg1 staticPart: anyArg2 ] -&gt; [ anyRcv staticPart: anyArg2 anyKeywordPart: anyArg1 ]] Brewrite.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Working on Pharo Smalltalk: BPatterns: Rewrite Engine with Smalltalk Style&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47178344"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='http://dionisiydk.blogspot.com/2026/02/bpatterns-rewrite-engine-with-smalltalk.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jaen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이는 Lisp가 아닌 구문 언어의 구문 매크로와 &lt;i&gt;거의&lt;/i&gt; 동일한 문제입니다.&lt;p&gt;"구멍"을 표시하는 방법이 필요합니다. (메타변수&amp;#x2F;unquote)는 구문 트리에 있으며 언어 문법의 복잡성에 따라 다소 어려울 수 있습니다. C++에서 유형 선언에 구멍이 있으면 선언(생성자 호출)과 표현식(일반 호출) 사이의 일반적인 모호성이 발생합니다. 
-이 문제는 예를 들어 해결해야 합니다. 명확하게 하기 위해 여러 유형의 구멍이 있는 경우...&lt;p&gt;기사에서는 &amp;quot;any&amp;quot; 예를 들어 식별자 대신 접두사를 붙입니다. ` , ...(Lisp 매크로)와 같은 연산자는 언어의 문법을 확장할 필요가 없기 때문에 흥미로운 솔루션입니다. 비록 모든 상황에 적용할 수 있는 것은 아니지만(예: 식별자가 허용되지 않는 문법 요소 일치의 경우) 
-하지만 스몰토크와 같은 매우 일반적인 언어의 경우 꽤 좋습니다.&lt;p&gt;문법 기반 재작성에는 오랜 역사와 연구가 있으므로 Google Scholar를 검색하고 싶다면 채굴할 수 있는 지식이 풍부합니다...&lt;p&gt;현대 구현의 경우 예를 들어 ast-grep 및 semgrep:
-&lt;a href="https:&amp;#x2F;&amp;#x2F;ast-grep.github.io&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ast-grep.github.io&amp;#x2F;&lt;/a&gt;
-&lt;a href="https:&amp;#x2F;&amp;#x2F;semgrep.dev&amp;#x2F;docs&amp;#x2F;writing-rules&amp;#x2F;pattern-syntax" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;semgrep.dev&amp;#x2F;docs&amp;#x2F;writing-rules&amp;#x2F;pattern-syntax&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">http://dionisiydk.blogspot.com/2026/02/bpatterns-rewrite-engine-with-smalltalk.html</guid>
-      <pubDate>Fri, 27 Feb 2026 09:04:48 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47178344</comments>
+      <title>OpenAI의 1,100억 달러 자금 조달 라운드(Amazon, Nvidia, SoftBank에서 투자)</title>
+      <link>https://www.reuters.com/business/retail-consumer/amazon-invest-50-billion-openai-2026-02-27/</link>
+      <guid isPermaLink="true">https://www.reuters.com/business/retail-consumer/amazon-invest-50-billion-openai-2026-02-27/</guid>
+      <pubDate>Fri, 27 Feb 2026 14:44:52 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47181051</comments>
     </item>
   </channel>
 </rss>

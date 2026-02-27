@@ -6,161 +6,129 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Feb 2026 13:09:11 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 15:45:01 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>F-Droid Board of Directors nominations 2026</title>
-      <link>https://f-droid.org/2026/02/26/board-of-directors-nominations.html</link>
-      <description>&lt;p&gt;Nominations are now open for this year’s appointments to the F-Droid Board of Directors. The current directors will vote on each nominee. What is expected of directors.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47178863"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://f-droid.org/2026/02/26/board-of-directors-nominations.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>We deserve a better streams API for JavaScript</title>
+      <link>https://blog.cloudflare.com/a-better-web-streams-api/</link>
+      <description>&lt;p&gt;The design of Web streams predates async iteration in JavaScript. const reader = stream. Consider the alternative approach now that Web streams now do support for await.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47180569"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.cloudflare.com/a-better-web-streams-api/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ralusek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I tinkered with an alternative to stream interfaces:&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ralusek&amp;#x2F;streamie" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ralusek&amp;#x2F;streamie&lt;/a&gt;&lt;p&gt;allows you to do things like&lt;p&gt;&lt;pre&gt;&lt;code&gt;    infiniteRecords
+    .map(item =&amp;gt; doSomeAsyncThing(item), { concurrency: 5 });
+&lt;/code&gt;&lt;/pre&gt;
+And then because I found that I often want to switch between batching items vs dealing with single items:&lt;p&gt;&lt;pre&gt;&lt;code&gt;    infiniteRecords
+    .map(item =&amp;gt; doSomeAsyncSingularThing(item), { concurrency: 5 })
+    .map(groupOf10 =&amp;gt; doSomeBatchThing(groupsOf10), { batchSize: 10 })
+    &amp;#x2F;&amp;#x2F; Can flatten back to single items
+    .map(item =&amp;gt; backToSingleItem(item), { flatten: true });&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;murmansk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;For gods sake, finally, somebody have said this!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;conartist6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;As it happens i have an even better API than this article proposes!&lt;p&gt;They propose just using an async iterator of UInt8Array. I &lt;i&gt;almost&lt;/i&gt; like this idea, but it&amp;#x27;s not quite all the way there.&lt;p&gt;They propose this:&lt;p&gt;&lt;pre&gt;&lt;code&gt;  type Stream&amp;lt;T&amp;gt; = {
+    next(): Promise&amp;lt;{ done, value: UInt8Array&amp;lt;T&amp;gt; }&amp;gt;
+  }
+&lt;/code&gt;&lt;/pre&gt;
+I propose this, which I call a stream iterator!&lt;p&gt;&lt;pre&gt;&lt;code&gt;  type Stream&amp;lt;T&amp;gt; = {
+    next(): { done, value: T } | Promise&amp;lt;{ done, value: T }&amp;gt;
+  }
+&lt;/code&gt;&lt;/pre&gt;
+Obviously I&amp;#x27;m gonna be biased, but I&amp;#x27;m pretty sure my version is also objectively superior:&lt;p&gt;- I can easily make mine from theirs&lt;p&gt;- In theirs the conceptual &amp;quot;stream&amp;quot; is defined by an iterator of iterators, meaning you need a for loop of for loops to step through it. In mine it&amp;#x27;s just one iterator and it can be consumed with one for loop.&lt;p&gt;- I&amp;#x27;m not limited to having only streams of integers, they are&lt;p&gt;- My way, if I define a sync transform over a sync input, the whole iteration can be sync making it possible to get and use the result in sync functions. This is huge as otherwise you have to write all the code twice: once with sync iterator and for loops and once with async iterators and for await loops.&lt;p&gt;- The problem with thrashing Promises when splitting input up into words goes away. With async iterators, creating two words means creating two promises. With stream iterators if you have the data available there&amp;#x27;s no need for promises at all, you just yield it.&lt;p&gt;- Stream iterators can help you manage concurrency, which is a huge thing that async iterators cannot do. Async iterators can&amp;#x27;t do this because if they see a promise they will &lt;i&gt;always&lt;/i&gt; wait for it. That&amp;#x27;s the same as saying &amp;quot;if there is any concurrency, it will always be eliminated.&amp;quot;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;We deserve a better language than JavaScript.&lt;p&gt;Sadly it will never happen. WebAssembly failed to keep some of its promises here.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dilap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; The problems aren&amp;#x27;t bugs; they&amp;#x27;re consequences of design decisions that may have made sense a decade ago, but don&amp;#x27;t align with how JavaScript developers write code today.&lt;p&gt;&amp;gt; I&amp;#x27;m not here to disparage the work that came before — I&amp;#x27;m here to start a conversation about what can potentially come next.&lt;p&gt;Terrible LLM-slop style. Is Mr Snell letting an LLM write the article for him or has he just appropriated the style?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ai-christianson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The point about BYOB reads is spot on. It&amp;#x27;s frustrating that such a critical feature for performance and reducing GC pressure ended up being so difficult to implement correctly in the WHATWG standard. A simpler, more ergonomic approach to buffer management would go a long way for those of us building high-performance data processing tools in JS.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;It&amp;#x27;s a real shame that BYOB (bring your own buffer) reads are so complex and such a pain in the neck because for large reads they make a huge difference in terms of GC traffic (for allocating temporary buffers) and CPU time (for the copies).&lt;p&gt;In an ideal world you could just ask the host to stream 100MB of stuff into a byte array or slice of the wasm heap. Alas.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;user3939382:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“ The Streams Standard was developed between 2014 and 2016 with an ambitious goal to provide &amp;quot;APIs for creating, composing, and consuming streams of data that map efficiently to low-level I&amp;#x2F;O primitives.&amp;quot; Before Web streams, the web platform had no standard way to work with streaming data.”&lt;p&gt;This is what UDP is for. Everything actually has to be async all the way down and since it’s not, we’ll just completely reimplement the OS and network on top of itself and hey maybe when we’re done with that we can do it a third time to have the cloud of clouds.&lt;p&gt;The entire stack we’re using right down to the hardware is not fit for purpose and we’re burning our talent and money building these ever more brittle towering abstractions.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.cloudflare.com/a-better-web-streams-api/</guid>
+      <pubDate>Fri, 27 Feb 2026 14:02:53 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47180569</comments>
+    </item>
+    <item>
+      <title>Show HN: Badge that shows how well your codebase fits in an LLM's context window</title>
+      <link>https://github.com/qwibitai/nanoclaw/tree/main/repo-tokens</link>
+      <guid isPermaLink="true">https://github.com/qwibitai/nanoclaw/tree/main/repo-tokens</guid>
+      <pubDate>Fri, 27 Feb 2026 15:14:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47181471</comments>
+    </item>
+    <item>
+      <title>Show HN: RetroTick – Run classic Windows EXEs in the browser</title>
+      <link>https://retrotick.com/</link>
+      <guid isPermaLink="true">https://retrotick.com/</guid>
+      <pubDate>Fri, 27 Feb 2026 13:06:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47180083</comments>
+    </item>
+    <item>
+      <title>Tenth Circuit: 4th Amendment Doesn't Support Broad Search of Protesters' Devices</title>
+      <link>https://www.eff.org/deeplinks/2026/02/victory-tenth-circuit-finds-fourth-amendment-doesnt-support-broad-search-0</link>
+      <description>&lt;p&gt;Court of Appeals for the Tenth Circuit overturned a lower court’s dismissal of a challenge to sweeping warrants to search a protester’s devices and digital data and a nonprofit’s social media data. After the demonstration, police also obtained warrants to seize and search through the devices and data of Jacqueline Armendariz Unzueta, who they claimed threw a bike at them during the protest. The district court dismissed the civil rights lawsuit brought by Armendariz and the Chinook Center, holding that the searches were justified and that, in any case, the officers were entitled to qualified immunity.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47181391"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.eff.org/deeplinks/2026/02/victory-tenth-circuit-finds-fourth-amendment-doesnt-support-broad-search-0'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brador:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;You always start open source at the kernel.&lt;p&gt;Linus knew this day 1 and it bows to no one.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;scrollop:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Will F-droid continue when Google bring in their changes, soon?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://f-droid.org/2026/02/26/board-of-directors-nominations.html</guid>
-      <pubDate>Fri, 27 Feb 2026 10:27:29 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47178863</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mothballed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;It&amp;#x27;s an awesome victory.  But until the penalty for violating rights under color of law is something real (like serious jail + restitution, barred from further public employment, etc) they will keep doing it.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hn_acker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The original title is:&lt;p&gt;&amp;gt; Victory! Tenth Circuit Finds Fourth Amendment Doesn’t Support Broad Search of Protesters’ Devices and Digital Data&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.eff.org/deeplinks/2026/02/victory-tenth-circuit-finds-fourth-amendment-doesnt-support-broad-search-0</guid>
+      <pubDate>Fri, 27 Feb 2026 15:09:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47181391</comments>
     </item>
     <item>
-      <title>PostmarketOS in 2026-02: generic kernels, bans use of generative AI</title>
-      <link>https://postmarketos.org/blog/2026/02/26/pmOS-update-2026-02/</link>
-      <description>&lt;p&gt;Other than that he balanced reviewing and working on pmaports and pmbootstrap with some work upstream on GTK and Phosh Mobile Settings. Having these kernels in postmarketOS means that we have full control over the kernel configuration and build process, which allows us to integrate them with our kernel configuration checks. org/phone-harness together with new hardware-ci documentation pages.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47179553"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://postmarketos.org/blog/2026/02/26/pmOS-update-2026-02/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>OpenAI raises $110B on $730B pre-money valuation</title>
+      <link>https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/</link>
+      <description>&lt;p&gt;The new funding consists of a $50 billion investment from Amazon as well as $30 billion each from Nvidia and SoftBank, against a $730 billion pre-money valuation. Connect with peers navigating similar growth stages. Connect with peers navigating similar growth stages.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47181211"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mono442:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;it&amp;#x27;s not surprising the whole project isn&amp;#x27;t useful for anything if they don&amp;#x27;t embrace genai for speeding up the development&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://postmarketos.org/blog/2026/02/26/pmOS-update-2026-02/</guid>
-      <pubDate>Fri, 27 Feb 2026 12:01:36 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47179553</comments>
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChicagoDave:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;It’s Tesla only big tech are the suckers.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ViewTrick1002:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Taking the circular deals up another magnitude?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thinkingtoilet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Only $730B? Why stop there? As long as we&amp;#x27;re making stuff up, let&amp;#x27;s go big. What about $10T?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;snitch182:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;730 Billion certainly is a bubble that will pop sooner or later.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maplethorpe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; The Information had previously reported that $35 billion of Amazon’s investment could be contingent on the company either achieving AGI or making its IPO by the end of the year. OpenAI’s announcement confirms the funding split, but says only that the additional $35 billion will arrive “in the coming months when certain conditions are met.”&lt;p&gt;Incredible.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/</guid>
+      <pubDate>Fri, 27 Feb 2026 14:56:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47181211</comments>
     </item>
     <item>
-      <title>Breaking Free</title>
-      <link>https://www.forbrukerradet.no/breakingfree/</link>
-      <description>&lt;p&gt;Forsiden Breaking Free Breaking Free In the new report Breaking Free: Pathways to a fair technological future, the Norwegian Consumer Council has delved into enshittification and how to resist it. The report shows how this phenomenon affects both consumers and society at large, but that it is possible to turn the tide. Report: Breaking Free Letter to the Norwegian authorities Letter to the European institutions Digital Digital products and services are getting worse – but the trend can be reversed Digital (NB: Fullt) Seminar og lansering av rapport om "enshittification".&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47178678"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.forbrukerradet.no/breakingfree/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Get free Claude max 20x for open-source maintainers</title>
+      <link>https://claude.com/contact-sales/claude-for-oss</link>
+      <description>&lt;p&gt;We accept up to 10,000 contributors. If approved, you'll get a link to activate Claude Max on your account for the subscription period. Terms and ConditionsTerms and ConditionsTerms and Conditions.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47178371"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://claude.com/contact-sales/claude-for-oss'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;madspindel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;quot;Meta estimates that ten percent of the company’s annual revenue comes from fraudulent ads on its services – amounting to a dizzying 16 billion dollars.&lt;p&gt;– Meta is earning billions from consumers being scammed. Even if the company gets fined – a process that takes years – the fines we have seen so far only amount to a fraction of these profits. In other words, Meta has no incentive to solve the problem. Meanwhile, the company doesn’t lift a finger to help its users, whether their profiles are misused in the scam ads, or they fall victim to the scams, Myrstad says. &amp;quot;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Epa095:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;From the english letter:&lt;p&gt;To achieve a better digital world, where technology works for people
-rather than against them, several steps must be taken:&lt;p&gt;1. &lt;i&gt;Rebalance power between service providers and
-consumers.&lt;/i&gt; People should be allowed to control their digital
-experiences and decide how they want to use products that
-they own. It should be possible and practical to switch to
-alternative service providers, or tweak services they already
-use to suit their needs and preferences.&lt;p&gt;2. &lt;i&gt;Tackle dependency on Big Tech.&lt;/i&gt; To lay the groundwork for
-innovative products and services and pave the way for
-alternatives to Big Tech, competition in digital markets must be
-restored. Technology based on principles such as openness,
-interoperability and portability must be advanced through
-strategic investments. For example, the public sector should
-leverage its power as a major procurer to support alternatives
-to big tech through exploring options for ethical procurement
-of technology services.&lt;p&gt;3. &lt;i&gt;Double down on the enforcement of existing laws.&lt;/i&gt; Far
-from hindering innovation, regulations provide crucial
-guardrails to guide innovation and ensure a level playing field.
-Weak enforcement allows big tech to continue its damaging
-practices at the cost of freedom of choice, service quality, and
-innovation. To remedy this, enforcement of existing laws must
-be strong and vigorous. This includes the DMA and
-competition laws more broadly, but also other digital rules
-such as the GDPR and consumer law.&lt;p&gt;4. &lt;i&gt;Close the existing legal loopholes by adopting a strong
-Digital Fairness Act.&lt;/i&gt; Increase legal certainty and address
-loopholes in the legislation to better protect people for
-instance against deceptive and addictive design, and unfair
-personalisation.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AxiomLab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Demanding regulatory intervention to cure &amp;#x27;enshittification&amp;#x27; is simply replacing algorithmic validation with legal validation. Both are post-facto patches on a fundamentally flawed architecture.&lt;p&gt;The reason interoperability and user sovereignty aren&amp;#x27;t hardcoded into these platforms from day one isn&amp;#x27;t a technical oversight; it&amp;#x27;s a feature of venture capital. You cannot compile a monopoly out of open protocols. Capital funds walled gardens, not axiomatic constraints.&lt;p&gt;Expecting legislation to fix runtime entropy when the compiler itself is owned by the monopolist is a fool&amp;#x27;s errand. The architecture is working exactly as designed.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.forbrukerradet.no/breakingfree/</guid>
-      <pubDate>Fri, 27 Feb 2026 09:56:42 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47178678</comments>
+&lt;p&gt;&lt;strong&gt;Top 21 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mohsen1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I get Copilot for free as an open source maintainer and it&amp;#x27;s nice. But right now I am also paying for two Claude Max ($200&amp;#x2F;mo) for my own projects. Would be nice to have one of them covered for at least 6 months! Hope Anthropic accepts my application because I do not track downloads at all.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xantronix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Open source developers should be paid for their efforts, and for their contributions to LLM models, past, present, and future, rather than be enticed into paying to participate six months down the road.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;notatallshaw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AI is somewhat helpful but I&amp;#x27;m not interested in a company finding a way for me to pay to do my volunteer OSS work. GitHub Copilot offers a permanent free subscription for OSS maintainers.&lt;p&gt;I previously ignored a free offer when Claude reached out to me as an open source maintainer as it was a glorified free trial. I hope this one continues beyond the listed 6 months, I am not interested in a glorified free trial and if it requires entering credit card details I won&amp;#x27;t be signing up.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vivzkestrel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;at close to 120 stars within 2 weeks from launch, i hope i make it there!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;skybrian:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The cynicism here is crazy. You can get a lot done in 6 months and prices will probably have dropped by then due to competition. There&amp;#x27;s no lock-in keeping you from switching coding agents if you&amp;#x27;re not stupid about it.&lt;p&gt;There&amp;#x27;s nothing wrong with taking advantage of limited offers.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jpease:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Lo, behold how the beast doth roar! From the depths thereof it crieth aloud, saying, “Feed me.”&lt;p&gt;Sincerely,&lt;p&gt;Sales &amp;amp; Marketing&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deckar01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;If you appreciate open source maintainers, detect when users are opening pull requests without human review and stop them. Feel free to keep burning their tokens, just stop making pull requests.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;japhyr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;At first I thought people here were being pretty unsympathetic to an early version of a beneficial program. I could see a company setting a 6-month timeline initially, so they can reevaluate the program and choose how to evolve their support for open source. I expected to see something along the lines of, &amp;quot;at the end of the 6 months we&amp;#x27;ll evaluate whether to continue your free plan.&amp;quot;&lt;p&gt;But no, they&amp;#x27;re quite explicit about this being nothing more than a way to try to get paid subscriptions from open source maintainers:&lt;p&gt;&amp;gt; Your complimentary subscription will expire at the end of the Benefit Period. After expiration, any existing subscription will continue unless you cancel. You may independently choose to purchase a paid Claude subscription at the then-current price through Anthropic’s standard signup process.&lt;p&gt;So anyone who participates in this will need to remember to opt out six months from now, or suddenly find themselves with invoices at the max 20x level.&lt;p&gt;That&amp;#x27;s pretty ugly.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.anthropic.com&amp;#x2F;claude-for-oss-terms" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.anthropic.com&amp;#x2F;claude-for-oss-terms&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sega_sai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;5000 stars. That&amp;#x27;s an interesting threshold. 
+I&amp;#x27;ve checked and astropy -- the main python module used by pretty much every python user in astrophysics has 5100 stars. I would guess almost no open source code in science would pass the threshold.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rhr-qlap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;No thanks, projects are too important for slop. And why would I want to be tracked so you can see my thought process, stupid questions etc.? Will you sell that information later?&lt;p&gt;Your CEO has bragged multiple times how your tool will make me unemployed. Why would I participate in that?&lt;p&gt;You stole my code without attribution. Why should I use the services of a copyright infringer?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;evolve2k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Don’t worry so much man, give it a try, the first few are on me, give you time to get comfortable &amp;#x2F;S&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mittermayr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I may sound unthankful here, but it just very strongly smells of Antropic amping up their PR campaigning lately, even the headline on the post reads offputting.&lt;p&gt;Plus, while 6 months is better than 1 month, why isn&amp;#x27;t it a recurring deal (or token-limited), which renews after check-ins (like educational discounts do). This sounds like an Apple TV+ offer you get for every Apple product you buy. A hook, more than a treat.&lt;p&gt;In this case, I guess it&amp;#x27;s just a slimy approach to building a self-selected lead list of people you can hard-hit with upsells after the 6 months.&lt;p&gt;Thank you for everything you ship*&lt;p&gt;*there&amp;#x27;s a 6 months limit we have on gratitute.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;smashah:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;5000+ stars proves this is a sales tactic&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stavros:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I like what GitHub and Jetbrains are doing, where you get Copilot and PyCharm for free as long as you&amp;#x27;re a maintainer. They keep renewing my license.&lt;p&gt;A 6-month trial isn&amp;#x27;t showing appreciation for OSS any more than &amp;quot;first crack hit&amp;#x27;s free&amp;quot; is showing appreciation for what a good person you are. It&amp;#x27;s just &amp;quot;you look like a promising customer&amp;quot;.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OutOfHere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;5000 stars required? And six months only? What a misleading multilevel clickait scam. But I knew that everything about Anthropic is a scam, from the excessive token usage to the model quality reduction to the various user-hostile actions.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Foxboron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; Maintainers: You’re a primary maintainer or core team member of a public repo with 5,000+ GitHub stars or 1M+ monthly NPM downloads. You&amp;#x27;ve made commits, releases, or PR reviews within the last 3 months.&lt;p&gt;Laughable.&lt;p&gt;This is a tiny, if even unimportant, fraction of the FOSS community that runs the modern tech stack.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sigmar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;Maintainers: You’re a primary maintainer or core team member of a public repo with 5,000+ GitHub stars or 1M+ monthly NPM downloads. You&amp;#x27;ve made commits, releases, or PR reviews within the last 3 months.&lt;p&gt;pour one out for us gitlab users :(&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nitinreddy88:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Essentially they want you to use it for 6 months and then hook you up to their paid offerings. Smart&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bicx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Considering they trained their model on open-source software, the least they could do is give it to open-source maintainers for free with no time limit. I’m sure they can come up with other ways to prevent abuse. This 6-months-free move just adds insult to injury, like it’s just a move to extract more from those who involuntarily contributed to the training already. And that’s coming from me, a Claude Code fan.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OskarS:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;For 6 months? So it&amp;#x27;s just a fancy, &amp;quot;first one is free&amp;quot; trial?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reconnecting:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;No, thank you.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://claude.com/contact-sales/claude-for-oss</guid>
+      <pubDate>Fri, 27 Feb 2026 09:08:58 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47178371</comments>
     </item>
     <item>
-      <title>Dyson settles forced labour suit in landmark UK case</title>
-      <link>https://www.bbc.com/news/articles/cddnry8dnl7o</link>
-      <description>&lt;p&gt;Dyson has denied any liability. The workers described being threatened and beaten, having their passports withheld, and being forced to work long hours in unsanitary conditions. According to their lawyers, from Leigh Day, they were denied toilet breaks and forced to work "upwards of 12 hours at a time without relieving themselves".&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47178836"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bbc.com/news/articles/cddnry8dnl7o'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xiphias2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I understand that there&amp;#x27;s a precedent here, but isn&amp;#x27;t normally the precedent for the opposite in contract law?&lt;p&gt;And if UK is precedent based, how come the previous precedents don&amp;#x27;t apply here?&lt;p&gt;I agree that no toilet breaks is cruel, but the problem here is knowing about the supplier using it?&lt;p&gt;There was not much about the legal bases in the article.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;martiuk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Why is Dyson being sued for actions taken by their suppliers? This is setting a bizarre precedent.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;n4r9:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;James Dyson advocated for Brexit on the basis of supporting British industry, and shortly afterwards migrated the company HQ to Singapore.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;direwolf20:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Why do employers deny their employees toilet breaks? Do they actually believe it makes the employees more productive, or are they just cruel people?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.bbc.com/news/articles/cddnry8dnl7o</guid>
-      <pubDate>Fri, 27 Feb 2026 10:21:40 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47178836</comments>
-    </item>
-    <item>
-      <title>Compact disc story (1998)</title>
-      <link>https://www.researchgate.net/publication/294484774_Compact_disc_story</link>
-      <guid isPermaLink="true">https://www.researchgate.net/publication/294484774_Compact_disc_story</guid>
-      <pubDate>Fri, 27 Feb 2026 03:33:28 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47176150</comments>
-    </item>
-    <item>
-      <title>Ubicloud (YC W24): Software Engineer – $95-$250K in Turkey, Netherlands, CA</title>
-      <link>https://www.ycombinator.com/companies/ubicloud/jobs/j4bntEJ-software-engineer</link>
-      <description>&lt;p&gt;We’re deliberate about communicating structures. We’re also contemplating having an AI-assisted project session. Ubicloud is an open source cloud that can run anywhere.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47178176"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/ubicloud/jobs/j4bntEJ-software-engineer'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.ycombinator.com/companies/ubicloud/jobs/j4bntEJ-software-engineer</guid>
-      <pubDate>Fri, 27 Feb 2026 08:45:02 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47178176</comments>
-    </item>
-    <item>
-      <title>The complete Manic Miner disassembly</title>
-      <link>https://skoolkit.ca/disassemblies/manic_miner/</link>
-      <description>&lt;p&gt;Manic Miner: Index The complete RAM disassembly Memory maps Everything Routines Data Messages Unused addresses Graphics and sound Caverns Sound Data tables and buffers Game status buffer Reference Changelog Glossary Trivia Bugs Pokes Credits.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47177877"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://skoolkit.ca/disassemblies/manic_miner/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;A_Venom_Roll:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Perfect timing - Sharopolis just released a video [0] using this exact disassembly to mod Super Mario-style physics into the game.&lt;p&gt;He used Claude Code to &amp;#x27;vibe code&amp;#x27; the assembly changes, leveraging the fact that the disassembly identifies about 2KB of unused memory. It’s a fascinating look at how LLMs can now navigate and modify 40-year-old Z80 assembly when provided with a well-documented codebase like this one.&lt;p&gt;The video sparked a lot of discussion in the comments, with some people being very upset he used AI for this.&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=gxxNgZgd88I" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=gxxNgZgd88I&lt;/a&gt;&amp;quot;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andybak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;oh dear god. i can port this to VR now... Claude!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;b3lvedere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I&amp;#x27;ve played Manic Miner and Jet Set Willy countless times back in those days. Very fun to read it completely disassembled. Thank you.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aa-jv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Ah, this is delightful - as a life-long collector of old machines, having kept every computer I&amp;#x27;ve used personally&amp;#x2F;professionally since 1978, the Speccie is one of the greatest ways to spend an afternoon - and even though there are a huge, huge number of other titles, Manic Miner is still a top 5 favorite in the playlist.&lt;p&gt;The disassembly is particularly nice to read, such as the sprite-drawing routine:&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;skoolkit.ca&amp;#x2F;disassemblies&amp;#x2F;manic_miner&amp;#x2F;asm&amp;#x2F;36852.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;skoolkit.ca&amp;#x2F;disassemblies&amp;#x2F;manic_miner&amp;#x2F;asm&amp;#x2F;36852.html&lt;/a&gt;&lt;p&gt;Curious that there are snippets of the &lt;i&gt;original&lt;/i&gt; project source code still embedded in the &amp;#x27;dead&amp;#x27; memory space of the Manic Miner binary .. I find myself wondering if this could be the basis of a ML-driven rewrite into the original source form, as a kind of archaic protogenesis .. but, anyway, still a curio:&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;skoolkit.ca&amp;#x2F;disassemblies&amp;#x2F;manic_miner&amp;#x2F;asm&amp;#x2F;37708.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;skoolkit.ca&amp;#x2F;disassemblies&amp;#x2F;manic_miner&amp;#x2F;asm&amp;#x2F;37708.html&lt;/a&gt;&lt;p&gt;Indeed, for anyone with a new or old interest in assembly language, of any competency, this disassembly is a delightful read ..&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://skoolkit.ca/disassemblies/manic_miner/</guid>
-      <pubDate>Fri, 27 Feb 2026 08:02:52 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47177877</comments>
-    </item>
-    <item>
-      <title>Lawmakers say US Military used laser to take down Border Protection drone in TX</title>
-      <link>https://apnews.com/article/military-laser-border-drone-texas-airport-55aaab7093f7d6dd174f909f3875001c</link>
-      <description>&lt;p&gt;“Now, we’re seeing the result of its incompetence,” they said. -Mexico Border,” the statement said. Previously, only a select few federal agencies had that power.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47179356"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://apnews.com/article/military-laser-border-drone-texas-airport-55aaab7093f7d6dd174f909f3875001c'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;october8140:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;It could be a soldier who is not a fan of ICE and border protection saw an opportunity and shot it down.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;comrade1234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;When I read the headline at nytimes I was thinking that it was a test drone and they were testing the process of communicating across branches to coordinate taking down drones (a real problem) but no, it was just incompetence and idiocy.  Guess I&amp;#x27;m not cynical enough yet to match reality.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;philipallstar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; Cartels routinely use drones to deliver drugs across the Mexican border and surveil Border Patrol officers. Officials told Congress last summer that more than 27,000 drones were detected within 1,600 feet (500 meters) of the southern border in the last six months of 2024.&lt;p&gt;No wonder they mistook one of theirs for one of these.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mapt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Both of these actions are extraordinarily illegal under US law and FAA regulation for a number of reasons.  Among them - Permanently blinding a human pilot can be done at 1000 times the range that it takes to melt aluminum, and laser weapons are powerful enough that secondary scatter off shiny surfaces is a real hazard.&lt;p&gt;We have a civilian airspace, and we have laser weapons, and we have CBP&amp;#x2F;ICE MAGA militia dabbling in military work.  No two of those are safe to have at the same time in the same place.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;heisenbit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;When Nena was singing about 99 balloons we thought it was hyperbole. Few understood she was a traveler from a future where soldiers where literally shooting down birthday balloons before progressing to drones. Scary to think about the next level of escalation.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;crusty:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;So if you&amp;#x27;re keeping score, that&amp;#x27;s one party balloon and one of their own drones. The future looks bright!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;happymellon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Just waiting for these lasers to take out important stuff because they can shoot first, ask later.&lt;p&gt;Mistook a helicopter for a drone because of depth perception problems.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://apnews.com/article/military-laser-border-drone-texas-airport-55aaab7093f7d6dd174f909f3875001c</guid>
-      <pubDate>Fri, 27 Feb 2026 11:37:49 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47179356</comments>
-    </item>
-    <item>
-      <title>Working on Pharo Smalltalk: BPatterns: Rewrite Engine with Smalltalk Style</title>
-      <link>http://dionisiydk.blogspot.com/2026/02/bpatterns-rewrite-engine-with-smalltalk.html</link>
-      <description>&lt;p&gt;Under the hood, BPattern builds a pattern AST using the same pattern node classes as the rewrite engine. A pattern is just a block. Swapping keywords:[ [ anyRcv anyKeywordPart: anyArg1 staticPart: anyArg2 ] -&gt; [ anyRcv staticPart: anyArg2 anyKeywordPart: anyArg1 ]] brewrite.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47178344"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='http://dionisiydk.blogspot.com/2026/02/bpatterns-rewrite-engine-with-smalltalk.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jaen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is &lt;i&gt;roughly&lt;/i&gt; the same problem as syntactical macros in non-Lisp syntax languages.&lt;p&gt;There needs to be a way to indicate a &amp;quot;hole&amp;quot; (metavariable&amp;#x2F;unquote) in the syntax tree, and depending on the complexity of the language&amp;#x27;s grammar, that might be somewhat difficult, eg. in C++ having a hole for a type declaration runs into the common ambiguity between declarations (constructor calls) and expressions (regular calls). 
-This needs to be worked around by eg. having multiple types of holes to disambiguate...&lt;p&gt;For the article, the idea of using an &amp;quot;any&amp;quot; prefix on identifiers instead of eg. operators such as ` , ... (Lisp macros) is an interesting solution, as it does not require extending the grammar of the language... although it&amp;#x27;s not applicable in all situations (eg. for matching grammar elements where identifiers are not allowed). 
-For a very regular language like Smalltalk though, it&amp;#x27;s pretty good.&lt;p&gt;Grammar-based rewriting has a long line of history and research, so there&amp;#x27;s a deep well of knowledge to be mined if you feel like hitting up Google Scholar...&lt;p&gt;For modern implementations, there&amp;#x27;s eg. ast-grep and semgrep:
-&lt;a href="https:&amp;#x2F;&amp;#x2F;ast-grep.github.io&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ast-grep.github.io&amp;#x2F;&lt;/a&gt;
-&lt;a href="https:&amp;#x2F;&amp;#x2F;semgrep.dev&amp;#x2F;docs&amp;#x2F;writing-rules&amp;#x2F;pattern-syntax" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;semgrep.dev&amp;#x2F;docs&amp;#x2F;writing-rules&amp;#x2F;pattern-syntax&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">http://dionisiydk.blogspot.com/2026/02/bpatterns-rewrite-engine-with-smalltalk.html</guid>
-      <pubDate>Fri, 27 Feb 2026 09:04:48 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47178344</comments>
+      <title>OpenAI's $110B funding round (investments from Amazon, Nvidia, SoftBank)</title>
+      <link>https://www.reuters.com/business/retail-consumer/amazon-invest-50-billion-openai-2026-02-27/</link>
+      <guid isPermaLink="true">https://www.reuters.com/business/retail-consumer/amazon-invest-50-billion-openai-2026-02-27/</guid>
+      <pubDate>Fri, 27 Feb 2026 14:44:52 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47181051</comments>
     </item>
   </channel>
 </rss>

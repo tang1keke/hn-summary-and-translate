@@ -6,169 +6,133 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 27 Feb 2026 13:09:11 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 15:45:01 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>F-Droid 取締役会の 2026 年の指名</title>
-      <link>https://f-droid.org/2026/02/26/board-of-directors-nominations.html</link>
-      <description>&lt;p&gt;今年の F-Droid 取締役会への指名は現在受付中です。現在の取締役が各候補者に投票します。監督に期待されること。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; F-Droid Board of Directors nominations 2026&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47178863"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://f-droid.org/2026/02/26/board-of-directors-nominations.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>JavaScript 用のより優れたストリーム API が必要です</title>
+      <link>https://blog.cloudflare.com/a-better-web-streams-api/</link>
+      <description>&lt;p&gt;Web ストリームの設計は、JavaScript の非同期反復よりも前から行われていました。 const リーダー = ストリーム。 Web ストリームが await をサポートするようになったので、別のアプローチを検討してください。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; We deserve a better streams API for JavaScript&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47180569"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.cloudflare.com/a-better-web-streams-api/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ralusek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ストリーム インターフェースの代替手段を検討しました。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ralusek&amp;#x2F;streamie" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ralusek&amp;#x2F;streamie&lt;/a&gt;&lt;p&gt;これを使用すると、さまざまなことができるようになります。 like&lt;p&gt;&lt;pre&gt;&lt;code&gt; 無限レコード
+    .map(item =&amp;gt; doSomeAsyncThing(item), { 同時実行数: 5 });
+&lt;/code&gt;&lt;/pre&gt;
+そして、アイテムのバッチ処理と単一アイテムの処理を切り替えたいことがよくあることがわかったので、&lt;p&gt;&lt;pre&gt;&lt;code&gt;finityRecords
+    .map(item =&amp;gt; doSomeAsyncSingularThing(item), { 同時実行数: 5 })
+    .map(groupOf10 =&amp;gt; doSomeBatchThing(groupsOf10), {バッチサイズ: 10 })
+    &amp;#x2F;&amp;#x2F;単一アイテムに戻すことができます
+    .map(item =&amp;gt; backToSingleItem(item), { flatten: true });&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;murmansk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;念のため、ついに誰かがこんなことを言いました！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;conartist6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;偶然ですが、私はこの記事で提案しているよりもさらに優れた API を持っています!&lt;p&gt;彼らは、UInt8Array の非同期イテレータを使用することだけを提案しています。私はこのアイデアを&lt;i&gt;ほぼ&lt;/i&gt;気に入っていますが、まだ完全には進んでいません。&lt;p&gt;彼らは次のように提案しています。&lt;p&gt;&lt;pre&gt;&lt;code&gt; type Stream&amp;lt;T&amp;gt; = {
+    next(): Promise&amp;lt;{ 完了、値: UInt8Array&amp;lt;T&amp;gt; }&gt;&gt;
+  }
+&lt;/code&gt;&lt;/pre&gt;
+私はこれをストリーム反復子と呼びます。&lt;p&gt;&lt;pre&gt;&lt;code&gt; type Stream&lt;T&gt;; = {
+    next(): { 完了、値: T } | Promise&amp;lt;{ 完了、値: T }&amp;gt;
+  }
+&lt;/code&gt;&lt;/pre&gt;
+明らかに私は偏見を持っているつもりですが、私のバージョンが客観的にも優れていると確信しています。&lt;p&gt;- 彼らのバージョンから簡単に私のバージョンを作成できます&lt;p&gt;- 彼らのバージョンでは、概念的な「ストリーム」が使用されます。は反復子の反復子によって定義されます。つまり、それをステップ実行するには for ループの for ループが必要です。私の場合、それは 1 つの反復子であり、1 つの for ループで使用できます。&lt;p&gt;- 整数のストリームのみを持つことに限定されません。&lt;p&gt;- 私のやり方では、同期入力に対して同期変換を定義すると、反復全体が同期になり、同期関数で結果を取得して使用できるようになります。そうしないと、すべてのコードを 2 回記述する必要があるため、これは非常に大きな問題です。1 回目は同期イテレータと for ループで、もう 1 回は非同期イテレータと for await ループでです。&lt;p&gt;- 入力を単語に分割するときに Promise をスラッシングする問題は解消されます。非同期イテレーターの場合、2 つの単語を作成することは 2 つの Promise を作成することを意味します。ストリーム イテレータを使用すると、利用可能なデータがある場合、Promise はまったく必要なく、データを渡すだけです。&lt;p&gt;- ストリーム イテレータは、非同期イテレータではできない同時実行性の管理に役立ちます。非同期イテレータは、Promise を見つけると&lt;i&gt;常に&lt;/i&gt; それを待つことになるため、これを行うことはできません。これは、「同時実行性があれば必ず削除される」と言っているのと同じです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私たちには JavaScript よりも優れた言語が必要です。&lt;p&gt;残念ながら、それは決して実現しません。 WebAssembly は、ここでの約束の一部を守れませんでした。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dilap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;問題はバグではありません。これらは、10 年前には理にかなっていた設計上の決定の結果ですが、今日の JavaScript 開発者のコ​​ードの書き方とは一致しません。&lt;p&gt;&gt;以前の作品を軽蔑するためにここにいるわけではありません。次に何が起こる可能性があるかについての会話を始めるためにここにいます。&lt;p&gt;ひどい LLM スロップ スタイル。スネル氏は LLM に記事を書かせているのでしょうか、それともスタイルを流用しただけなのでしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ai-christianson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;BYOB 読み取りに関する要点は的確です。パフォーマンスと GC 圧力の軽減にとってこのような重要な機能が、WHATWG 標準で正しく実装することが非常に困難になってしまったのは残念です。バッファ管理に対するよりシンプルで人間工学的なアプローチは、JS で高性能のデータ処理ツールを構築する私たちにとって大いに役立つでしょう。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;BYOB (Bring Your Own Buffer) 読み取りが非常に複雑で、非常に面倒な作業であることは本当に残念です。大規模な読み取りの場合、GC トラフィック (一時バッファの割り当て) と CPU 時間 (コピーの) の点で大きな違いが生じるからです。&lt;p&gt;理想的な世界では、ホストに 100 MB のデータをバイト配列または wasm ヒープのスライスにストリーミングするよう依頼するだけで済みます。ああ、ああ。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;user3939382:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「 Streams Standard は、『低レベル I&amp;#x2F;O プリミティブに効率的にマッピングされるデータ ストリームを作成、構成、消費するための API』を提供するという野心的な目標を掲げて 2014 年から 2016 年にかけて開発されました。Web ストリームが登場する前、Web プラットフォームにはストリーミング データを操作するための標準的な方法がありませんでした。」&lt;p&gt;これが UDP の目的です。実際には、すべてが完全に非同期である必要がありますが、そうではないので、OS とネットワークをその上に完全に再実装するだけです。それが完了したら、3 回目の実行でクラウドを構築できるかもしれません。&lt;p&gt;ハードウェアに至るまで使用しているスタック全体が目的に適しておらず、これらのさらに脆弱でそびえ立つ抽象化を構築するために才能と資金を費やしています。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.cloudflare.com/a-better-web-streams-api/</guid>
+      <pubDate>Fri, 27 Feb 2026 14:02:53 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47180569</comments>
+    </item>
+    <item>
+      <title>HN を表示: コードベースが LLM のコンテキスト ウィンドウにどの程度適合しているかを示すバッジ</title>
+      <link>https://github.com/qwibitai/nanoclaw/tree/main/repo-tokens</link>
+      <guid isPermaLink="true">https://github.com/qwibitai/nanoclaw/tree/main/repo-tokens</guid>
+      <pubDate>Fri, 27 Feb 2026 15:14:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47181471</comments>
+    </item>
+    <item>
+      <title>HN を表示: RetroTick – ブラウザーでクラシック Windows EXE を実行します</title>
+      <link>https://retrotick.com/</link>
+      <guid isPermaLink="true">https://retrotick.com/</guid>
+      <pubDate>Fri, 27 Feb 2026 13:06:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47180083</comments>
+    </item>
+    <item>
+      <title>第 10 巡回区: 憲法修正第 4 条は、抗議者のデバイスの広範な検索をサポートしていない</title>
+      <link>https://www.eff.org/deeplinks/2026/02/victory-tenth-circuit-finds-fourth-amendment-doesnt-support-broad-search-0</link>
+      <description>&lt;p&gt;第10巡回区控訴院は、デモ参加者のデバイスやデジタルデータ、非営利団体のソーシャルメディアデータを検索するための広範囲の令状に対する異議申し立てに対する下級裁判所の棄却を覆した。デモの後、警察はまた、抗議活動中に自転車を投げつけたと主張するジャクリーン・アルメンダリス・ウンズエタさんのデバイスとデータを押収し、捜索する令状も取得した。地方裁判所は、アルメンダリスとチヌークセンターが起こした公民権訴訟を却下し、捜索は正当であり、いずれにせよ警官には適格免責の権利があると判断した。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Tenth Circuit: 4th Amendment Doesn't Support Broad Search of Protesters' Devices&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47181391"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.eff.org/deeplinks/2026/02/victory-tenth-circuit-finds-fourth-amendment-doesnt-support-broad-search-0'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brador:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;オープンソースは常にカーネルから始めます。&lt;p&gt;Linus はその日からこのことを知っていましたが、それは誰にも屈しませんでした。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;scrollop:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Google が近いうちに変更を加えたとしても、F-droid は継続されるのでしょうか?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://f-droid.org/2026/02/26/board-of-directors-nominations.html</guid>
-      <pubDate>Fri, 27 Feb 2026 10:27:29 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47178863</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mothballed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;素晴らしい勝利だ。  しかし、法に基づく権利侵害に対する罰則が現実的なものになるまで（重大な懲役刑と賠償、さらなる公的雇用の禁止など）、彼らはそれをやり続けるだろう。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hn_acker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;元のタイトルは次のとおりです:&lt;p&gt;&amp;gt;勝利！第10巡回裁判所、憲法修正第4条は抗議者のデバイスとデジタルデータの広範な検索をサポートしていないと認定&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.eff.org/deeplinks/2026/02/victory-tenth-circuit-finds-fourth-amendment-doesnt-support-broad-search-0</guid>
+      <pubDate>Fri, 27 Feb 2026 15:09:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47181391</comments>
     </item>
     <item>
-      <title>2026-02 年の PostmarketOS: 汎用カーネル、生成 AI の使用を禁止</title>
-      <link>https://postmarketos.org/blog/2026/02/26/pmOS-update-2026-02/</link>
-      <description>&lt;p&gt;それ以外では、pmaports と pmbootstrap のレビューと作業と、GTK と Phosh Mobile 設定に関するアップストリームの作業とのバランスをとりました。これらのカーネルを postmarketOS に含めることは、カーネル構成とビルド プロセスを完全に制御できることを意味し、カーネル構成チェックと統合できるようになります。 org/phone-harness と新しい hardware-ci ドキュメント ページ。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; PostmarketOS in 2026-02: generic kernels, bans use of generative AI&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47179553"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://postmarketos.org/blog/2026/02/26/pmOS-update-2026-02/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>OpenAI、7,300億ドルのプレマネー評価で1,100億ドルを調達</title>
+      <link>https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/</link>
+      <description>&lt;p&gt;新たな資金調達は、プレマネー評価額7,300億ドルに対して、Amazonからの500億ドルの投資と、NvidiaとSoftBankからのそれぞれ300億ドルの投資で構成されています。同じような成長段階を歩んでいる仲間とつながりましょう。同じような成長段階を歩んでいる仲間とつながりましょう。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; OpenAI raises $110B on $730B pre-money valuation&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47181211"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mono442:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;開発をスピードアップするために genai を採用しなければ、プロジェクト全体が何の役にも立たないのも不思議ではありません。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://postmarketos.org/blog/2026/02/26/pmOS-update-2026-02/</guid>
-      <pubDate>Fri, 27 Feb 2026 12:01:36 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47179553</comments>
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChicagoDave:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;テスラだけがクソだ。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ViewTrick1002:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;円形取引をさらに規模を大きくしてみませんか？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thinkingtoilet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;たったの7,300億ドル？なぜそこで止まるのでしょうか？私たちが何かを作り上げている限り、大きくやってみましょう。 10兆ドルはどうでしょうか？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;snitch182:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;確かに7,300億は遅かれ早かれはじけるバブルです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maplethorpe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;ザ・インフォメーションは以前、アマゾンの投資のうち350億ドルは同社が年末までにAGIを達成するかIPOを行うかどうかに左右される可能性があると報じていた。 OpenAI の発表では資金の分割が確認されましたが、追加の 350 億ドルが「特定の条件が満たされた場合、今後数か月以内に」届くとだけ述べられています。&lt;p&gt;信じられない。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/</guid>
+      <pubDate>Fri, 27 Feb 2026 14:56:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47181211</comments>
     </item>
     <item>
-      <title>自由を打ち破る</title>
-      <link>https://www.forbrukerradet.no/breakingfree/</link>
-      <description>&lt;p&gt;Forsiden Breaking Free Breaking Free ノルウェー消費者評議会は、新しいレポート「Breaking Free: 公正な技術的未来への道」の中で、エンシティ化とそれに抵抗する方法について詳しく掘り下げました。報告書は、この現象が消費者と社会全体の両方にどのような影響を与えるか、しかし流れを変えることは可能であることを示しています。レポート: Breaking Free ノルウェー当局への書簡 欧州機関への書簡 デジタル デジタル製品とサービスは悪化している – しかし、傾向を逆転させることは可能 デジタル (注: フルト) セミナーは、「エンシティフィケーション」に対する信頼関係を確立します。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Breaking Free&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47178678"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.forbrukerradet.no/breakingfree/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>オープンソースのメンテナ向けに最大 20 倍のクロードを無料で入手</title>
+      <link>https://claude.com/contact-sales/claude-for-oss</link>
+      <description>&lt;p&gt;最大 10,000 人の寄稿者を受け入れます。承認されると、サブスクリプション期間中アカウントで Claude Max をアクティブ化するためのリンクが取得されます。利用規約利用規約利用規約。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Get free Claude max 20x for open-source maintainers&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47178371"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://claude.com/contact-sales/claude-for-oss'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;madspindel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;quot;Meta は、同社の年間収益の 10% が自社サービス上の詐欺広告から来ていると推定しており、その額は 160 億ドルに上ります。&lt;p&gt;- Meta は消費者が詐欺に遭うことから数十億ドルを稼いでいます。たとえ会社が罰金を科せられたとしても、そのプロセスには何年もかかりますが、これまでに私たちが目にした罰金は、これらの利益のほんの一部にすぎません。言い換えれば、メタには問題を解決するインセンティブがありません。一方、同社は、ユーザーのプロフィールが詐欺広告で悪用されたり、詐欺の被害に遭ったりしても、ユーザーを助けるために何もしていない、とミルスタッド氏は言う。 「&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Epa095:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;英語の手紙より:&lt;p&gt;テクノロジーが人々のために機能する、より良いデジタル世界を実現するために
-それらに対抗するのではなく、いくつかの手順を実行する必要があります。&lt;p&gt;1. &lt;i&gt;サービス プロバイダーとサービス プロバイダー間の力のバランスを再調整する
-消費者&lt;/i&gt; 人々は自分のデジタルをコントロールできるようにすべきである
-経験を積み上げ、製品をどのように使用したいかを決定します。
-彼らが所有しています。に切り替えることが可能かつ現実的である必要があります。
-代替サービスプロバイダー、またはすでに提供されているサービスを調整する
-ニーズや好みに合わせて使用します。&lt;p&gt;2. &lt;i&gt;ビッグテックへの依存に立ち向かう&lt;/i&gt;
-革新的な製品とサービスを提供し、
-ビッグテックに代わるデジタル市場での競争は、
-復元されました。オープン性などの原則に基づいたテクノロジー、
-相互運用性と移植性は、
-戦略的投資。たとえば、公共部門は次のことを行う必要があります。
-大手調達会社としての力を活かして代替品をサポート
-倫理的な調達のオプションを模索することで大手テクノロジー企業に貢献
-テクノロジー サービスの。&lt;p&gt;3. &lt;i&gt;既存の法律の施行をさらに強化します。&lt;/i&gt;
-イノベーションを妨げないように、規制は重要な役割を果たします
-イノベーションを導き、平等な競争の場を確保するためのガードレール。
-法執行力が弱いため、大手テクノロジー企業が被害を与え続けることができる
-選択の自由、サービスの品質、
-革新。これを是正するには、既存の法律を施行する必要があります。
-強くて元気でいてください。これには DMA と
-より広範な競争法だけでなく、他のデジタルルールも含む
-GDPR や消費者法など。&lt;p&gt;4. &lt;i&gt;強力な法的措置を採用することで、既存の法的抜け穴を塞ぐ
-デジタル公正法&lt;/i&gt; 法的確実性を高めて対処する
-人々をより良く保護するための法律の抜け穴
-欺瞞的かつ中毒性のあるデザイン、および不当なデザインに対する例
-パーソナライゼーション。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AxiomLab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「エンシティ化」を治すために規制介入を要求アルゴリズムの検証を法的な検証に置き換えるだけです。どちらも根本的に欠陥のあるアーキテクチャに対する事後パッチです。&lt;p&gt;相互運用性とユーザー主権が初日からこれらのプラットフォームにハードコーディングされていない理由は、技術的な見落としではありません。それはベンチャーキャピタルの特徴です。オープンなプロトコルから独占をコンパイルすることはできません。資本は、公理的な制約ではなく、壁に囲まれた庭園に資金を提供します。&lt;p&gt;コンパイラー自体が独占企業によって所有されている場合に、実行時のエントロピーを修正する法律を期待するのは愚かな用事です。アーキテクチャは設計どおりに正確に動作しています。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.forbrukerradet.no/breakingfree/</guid>
-      <pubDate>Fri, 27 Feb 2026 09:56:42 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47178678</comments>
+&lt;p&gt;&lt;strong&gt;Top 21 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mohsen1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私はオープンソースのメンテナとして Copilot を無料で入手していますが、それは素晴らしいことです。しかし現在、私は自分のプロジェクトのために 2 つのクロード マックス (月額 $200&amp;#x2F;) も支払っています。そのうちの1つを少なくとも6か月間保証してくれると嬉しいです！私はダウンロードをまったく追跡していないので、Anthropic が私の申請を受け入れてくれることを願っています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xantronix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;オープンソース開発者は、6 か月後に参加するよう誘惑されるのではなく、過去、現在、未来における LLM モデルへの貢献とその努力に対して報酬を受け取るべきです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;notatallshaw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AI はある程度役に立ちますが、ボランティアの OSS 作業にお金を払う方法を会社が見つけることには興味がありません。 GitHub Copilot は、OSS メンテナ向けに永続的な無料サブスクリプションを提供しています。&lt;p&gt;以前、Claude がオープンソース メンテナとして私に連絡をくれたとき、それは立派な無料トライアルだったので、無料オファーを無視しました。記載されている 6 か月を超えてこれが続くことを願っていますが、美化された無料トライアルには興味がありません。クレジット カードの詳細の入力が必要な場合はサインアップしません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vivzkestrel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;発売から 2 週間以内に 120 個近くのスターを獲得できるといいですね!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;skybrian:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ここでの皮肉はクレイジーだ。 6 か月もあれば多くのことが可能になりますが、その頃には競争により価格も下がっているでしょう。愚かでなければ、コーディング エージェントを切り替えることを妨げるロックインはありません。&lt;p&gt;限定オファーを利用することに問題はありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jpease:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;見よ、獣がどのように咆哮するかを見よ！その奥から、「餌をあげてください」と大声で叫びます。&lt;p&gt;敬具&lt;p&gt;営業&amp;amp; スタッフ一同。マーケティング&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deckar01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;オープンソースのメンテナーに感謝している場合は、ユーザーが人間によるレビューなしでプル リクエストを開いていることを検出し、それを停止してください。トークンを書き込み続けるのは自由ですが、プル リクエストを行うのはやめてください。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;japhyr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最初は、ここの人々は有益なプログラムの初期バージョンに対してかなり冷淡な態度をとっているのではないかと思いました。企業がプログラムを再評価し、オープンソースのサポートをどのように進化させるかを選択できるように、最初は 6 か月のタイムラインを設定していることがわかりました。私は、「6 か月の終わりに、無料プランを継続するかどうかを評価します」というようなことを期待していました。&lt;p&gt;しかし、いいえ、彼らは、これがオープンソースのメンテナーから有料サブスクリプションを取得しようとする手段にすぎないことを非常に明確にしています。&lt;p&gt;&gt;無料のサブスクリプションは特典期間の終了時に期限切れになります。有効期限が切れた後も、キャンセルしない限り、既存のサブスクリプションは継続されます。 Anthropic の標準サインアップ プロセスを通じて、その時点の価格で有料のクロード サブスクリプションを購入することを独自に選択できます。&lt;p&gt;そのため、これに参加する人は、6 か月後に忘れずにオプトアウトする必要があります。そうしないと、突然最大 20 倍の請求書が届くことになります。&lt;p&gt;これは非常に醜いものです。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.anthropic.com&amp;#x2F;claude-for-oss-terms" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.anthropic.com&amp;#x2F;claude-for-oss-terms&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sega_sai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;星5000個。これは興味深いしきい値です。 
+私はアストロピーをチェックしてみました -- 天体物理学のほぼすべての Python ユーザーが使用するメインの Python モジュールには 5100 個のスターがあります。科学分野のオープンソース コードがこのしきい値を超えることはほとんどないと思います。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rhr-qlap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;いいえ、プロジェクトは重要すぎて怠け者にはなりません。そして、なぜ私の思考プロセスや愚かな質問などを見るために追跡される必要があるのでしょうか?後でその情報を販売しますか?&lt;p&gt;あなたの CEO は、あなたのツールが私を失業させると何度も自慢していました。なぜ私がそれに参加する必要があるのですか?&lt;p&gt;あなたは出典を明示せずに私のコードを盗みました。なぜ著作権侵害者のサービスを利用しなければならないのでしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;evolve2k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;そんなに心配しないで、試してみてください。最初の数回は私が責任を負います。快適になるまで時間をください。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mittermayr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ここで言うと感謝していないように聞こえるかもしれませんが、最近 Antropic が PR キャンペーンを強化している匂いが非常に強く感じられ、投稿の見出しですら不快なものとなっています。&lt;p&gt;さらに、1 か月より 6 か月のほうが良いのに、（教育機関向け割引のように）チェックイン後に更新される定期的な取引（またはトークン限定）ではないのはなぜでしょうか。これは、Apple 製品を購入するたびにもらえる Apple TV+ の特典のように思えます。おやつというよりはフックです。&lt;p&gt;この場合、6 か月後にアップセルで強力に攻撃できる、自分で選んだ見込み客リストを作成するためのぬるぬるしたアプローチだと思います。&lt;p&gt;発送していただいたすべてに感謝します*&lt;p&gt;*無償提供には 6 か月の制限があります。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;smashah:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;5000 個以上の星は、これが販売戦略であることを証明しています&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stavros:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;GitHub と Jetbrains の取り組みが気に入っています。メンテナである限り、Copilot と PyCharm を無料で入手できます。彼らは私のライセンスを更新し続けます。&lt;p&gt;6 か月のトライアルでは、「最初のクラックヒット」が無料である以上に、OSS に対する感謝の気持ちが示されません。あなたがどれほど良い人であるかを感謝していることを示しています。それは単に「あなたは有望な顧客のようです」というだけです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OutOfHere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;星5000個必要？しかも半年だけ？何という誤解を招くマルチレベルのクリックエイト詐欺でしょう。しかし、過剰なトークンの使用からモデルの品質の低下、ユーザーに敵対的なさまざまな行為に至るまで、Anthropic に関するすべてが詐欺であることはわかっていました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Foxboron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;メンテナー: あなたは、5,000 人以上の GitHub スターまたは月間 100 万件以上の NPM ダウンロードを持つパブリック リポジトリの主要メンテナーまたはコア チーム メンバーです。過去 3 か月以内にコミット、リリース、または PR レビューを行ったことがあります。&lt;p&gt;笑い話です。&lt;p&gt;これは、最新の技術スタックを実行する FOSS コミュニティの、たとえ重要でなくてもごく一部です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sigmar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;メンテナ: あなたは、5,000 人以上の GitHub スターまたは月間 100 万件以上の NPM ダウンロードを持つパブリック リポジトリの主要メンテナまたはコア チーム メンバーです。過去 3 か月以内にコミット、リリース、または PR レビューを行ってきました。&lt;p&gt;私たち gitlab ユーザーのために 1 つずつ提供してください :(&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nitinreddy88:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;基本的に、彼らはユーザーに 6 か月間使用してから、有料サービスに接続してもらいたいと考えています。頭いい&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bicx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;彼らがオープンソース ソフトウェアでモデルをトレーニングしたことを考えると、彼らができることは少なくとも、オープンソースのメンテナにそれを期限なしで無料で提供することだけです。彼らは虐待を防ぐ別の方法を考え出せると確信しています。この6か月間無料の措置は、すでにトレーニングに無意識に貢献していた人々からさらに多くを引き出すための単なる措置であるかのように、怪我にさらに侮辱を加えるだけです。これはクロード・コードのファンである私からの意見です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OskarS:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;6ヶ月間？つまり、「最初の 1 つは無料」という単なる空想です。トライアル？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reconnecting:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;いいえ、ありがとう。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://claude.com/contact-sales/claude-for-oss</guid>
+      <pubDate>Fri, 27 Feb 2026 09:08:58 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47178371</comments>
     </item>
     <item>
-      <title>ダイソン、英国の画期的な訴訟で強制労働訴訟で和解</title>
-      <link>https://www.bbc.com/news/articles/cddnry8dnl7o</link>
-      <description>&lt;p&gt;ダイソンは一切の責任を否定しています。労働者らは、脅迫されたり殴られたり、パスポートを取り上げられたり、不衛生な環境で長時間労働を強いられたりしたと語った。彼らの弁護士によると、リー・デイ以降、彼らはトイレ休憩を拒否され、「用を足さずに一度に12時間以上」働くことを強制されたという。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Dyson settles forced labour suit in landmark UK case&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47178836"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bbc.com/news/articles/cddnry8dnl7o'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xiphias2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ここに先例があることは理解しましたが、通常、契約法では反対の先例はないのでしょうか?&lt;p&gt;英国が先例ベースである場合、なぜここでは以前の先例が適用されないのでしょうか?&lt;p&gt;トイレ休憩がないのは残酷であることには同意しますが、ここでの問題はサプライヤーがトイレを使用しているかどうかを知ることです?&lt;p&gt;この記事には法的根拠についてはあまり記載されていませんでした。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;martiuk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;なぜダイソンはサプライヤーの行為に対して訴訟を起こされているのでしょうか?これは奇妙な前例を作っている。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;n4r9:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ジェームズ・ダイソンは英国産業の支援を根拠にBrexitを主張し、その後すぐに本社をシンガポールに移転した。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;direwolf20:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;なぜ雇用主は従業員のトイレ休憩を拒否するのでしょうか?彼らはそれが従業員の生産性を高めると本当に信じているのでしょうか、それとも単に残酷な人々なのでしょうか?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.bbc.com/news/articles/cddnry8dnl7o</guid>
-      <pubDate>Fri, 27 Feb 2026 10:21:40 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47178836</comments>
-    </item>
-    <item>
-      <title>コンパクトディスク物語 (1998)</title>
-      <link>https://www.researchgate.net/publication/294484774_Compact_disc_story</link>
-      <guid isPermaLink="true">https://www.researchgate.net/publication/294484774_Compact_disc_story</guid>
-      <pubDate>Fri, 27 Feb 2026 03:33:28 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47176150</comments>
-    </item>
-    <item>
-      <title>Ubicloud (YC W24): ソフトウェア エンジニア – トルコ、オランダ、カリフォルニア州で 95 ～ 25 万ドル</title>
-      <link>https://www.ycombinator.com/companies/ubicloud/jobs/j4bntEJ-software-engineer</link>
-      <description>&lt;p&gt;私たちは構造を伝えることに慎重です。 AI を活用したプロジェクト セッションの開催も検討しています。 Ubicloud は、どこでも実行できるオープンソース クラウドです。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ubicloud (YC W24): Software Engineer – $95-$250K in Turkey, Netherlands, CA&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47178176"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/ubicloud/jobs/j4bntEJ-software-engineer'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.ycombinator.com/companies/ubicloud/jobs/j4bntEJ-software-engineer</guid>
-      <pubDate>Fri, 27 Feb 2026 08:45:02 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47178176</comments>
-    </item>
-    <item>
-      <title>マニック・マイナーの完全な分解</title>
-      <link>https://skoolkit.ca/disassemblies/manic_miner/</link>
-      <description>&lt;p&gt;Manic Miner: インデックス RAM の完全な分解 メモリ マップ すべて ルーチン データ メッセージ 未使用のアドレス グラフィックとサウンド 洞窟 サウンド データ テーブルとバッファ ゲーム ステータス バッファ リファレンス 変更ログ 用語集 トリビア バグ ポーク クレジット。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The complete Manic Miner disassembly&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47177877"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://skoolkit.ca/disassemblies/manic_miner/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;A_Venom_Roll:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;完璧なタイミング - シャロポリスは、まさにこの逆アセンブリを使用してスーパー マリオ スタイルの物理学をゲームに組み込むビデオ [0] をリリースしました。&lt;p&gt;彼はクロード コードを使用して「コードをバイブス」するために使用しました。逆アセンブリで約 2KB の未使用メモリが特定されることを利用して、アセンブリが変更されます。これは、このような十分に文書化されたコードベースが提供された場合に、LLM が 40 年前の Z80 アセンブリをどのように操作して変更できるのかを示す興味深いものです。&lt;p&gt;このビデオはコメントで多くの議論を巻き起こし、一部の人々は彼がこれに AI を使用したことに非常に腹を立てていました。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=gxxNgZgd88I" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=gxxNgZgd88I&lt;/a&gt;&amp;quot;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andybak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ああ、親愛なる神様。これを VR に移植できるようになりました...クロード!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;b3lvedere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当時、私はマニック・マイナーとジェット・セット・ウィリーを数え切れないほどプレイしました。完全に分解して読むととても楽しいです。ありがとう。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aa-jv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ああ、これはうれしいことです。古いマシンの生涯にわたるコレクターとして、1978 年以来プロとして個人的に使用してきたすべてのコンピューターを保管してきたので、Speccie は午後を過ごすのに最適な方法の 1 つです。他にも膨大な数のタイトルがあるにもかかわらず、Manic Miner は依然としてプレイリストのトップ 5 に入るお気に入りです。&lt;p&gt;スプライト描画など、逆アセンブリは特に読みやすくなっています。ルーチン:&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;skoolkit.ca&amp;#x2F;disassemblies&amp;#x2F;manic_miner&amp;#x2F;asm&amp;#x2F;36852.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;skoolkit.ca&amp;#x2F;disassemblies&amp;#x2F;manic_miner&amp;#x2F;asm&amp;#x2F;36852.html&lt;/a&gt;&lt;p&gt;&lt;i&gt;元の&lt;/i&gt;プロジェクトのソース コードのスニペットがまだ &amp;#x27;dead&amp;#x27; に埋め込まれていることに興味があります。 Manic Miner バイナリのメモリ空間 .. 私は、これが一種の古風な原始生成として、元のソース形式への ML 主導の書き換えの基礎となる可能性があるのではないかと考えています .. しかし、いずれにせよ、依然として骨董品です:&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;skoolkit.ca&amp;#x2F;disassemblies&amp;#x2F;manic_miner&amp;#x2F;asm&amp;#x2F;37708.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;skoolkit.ca&amp;#x2F;disassemblies&amp;#x2F;manic_miner&amp;#x2F;asm&amp;#x2F;37708.html&lt;/a&gt;&lt;p&gt;確かに、アセンブリ言語に新旧の興味がある人、あるいは何らかの能力がある人にとって、この逆アセンブリは楽しい読み物です。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://skoolkit.ca/disassemblies/manic_miner/</guid>
-      <pubDate>Fri, 27 Feb 2026 08:02:52 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47177877</comments>
-    </item>
-    <item>
-      <title>議員らは米軍がテキサス州国境警備隊の無人機を撃墜するためにレーザーを使用したと主張</title>
-      <link>https://apnews.com/article/military-laser-border-drone-texas-airport-55aaab7093f7d6dd174f909f3875001c</link>
-      <description>&lt;p&gt;「今、私たちはその無能さの結果を目にしています」と彼らは言いました。以前は、選ばれた少数の連邦機関のみがその権限を持っていた。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Lawmakers say US Military used laser to take down Border Protection drone in TX&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47179356"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://apnews.com/article/military-laser-border-drone-texas-airport-55aaab7093f7d6dd174f909f3875001c'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;october8140:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ICEと国境警備隊のファンではない兵士がチャンスを見て撃墜した可能性がある。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;comrade1234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;nytimesの見出しを読んだとき、これはテストドローンで、ドローンの撃墜を調整するために支店間で通信するプロセスをテストしているのかと思ったが（これは本当に問題だ）、いや、それはただの無能で愚かだった。  私はまだ現実に匹敵するほど皮肉ではないと思います。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;philipallstar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;カルテルは日常的にドローンを使ってメキシコ国境を越えて麻薬を配達したり、国境警備隊員を監視したりしている。当局者らは昨年夏、議会に対し、2024年の最後の6か月間で南部国境から1,600フィート（500メートル）以内で2万7000機以上のドローンが検知されたと述べた。&lt;p&gt;彼らが自分たちのドローンの1機をドローンの1機と間違えたのも不思議ではない。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mapt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これらの行為は両方とも、さまざまな理由から、米国法および FAA 規制の下では非常に違法です。  その中には、アルミニウムを溶かすのに必要な距離の 1,000 倍の距離で人間のパイロットを永久に盲目にすることができ、レーザー兵器は十分強力であるため、光沢のある表面からの二次散乱は大きな危険です。&lt;p&gt;我が国には民間空域があり、レーザー兵器があり、軍事活動に手を出している CBP&amp;#x2F;ICE MAGA 民兵もいます。  同じ場所に同時に 2 つ存在しても安全ではありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;heisenbit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ネーナが99個の風船について歌っていたとき、私たちはそれが誇張だと思いました。彼女が未来からの旅行者であることを理解する人はほとんどいませんでした。兵士たちはドローンに進化する前に、誕生日の風船を文字通り撃ち落としていました。次のレベルのエスカレーションを考えると恐ろしいです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;crusty:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;したがって、スコアを記録している場合、それは 1 つのパーティーのバルーンと 1 つの独自のドローンです。未来は明るいですね！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;happymellon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これらのレーザーが重要なものを取り除くのを待っているだけです。レーザーは先に撃つことができるので、後で尋ねてください。&lt;p&gt;奥行き認識の問題のため、ヘリコプターをドローンと間違えました。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://apnews.com/article/military-laser-border-drone-texas-airport-55aaab7093f7d6dd174f909f3875001c</guid>
-      <pubDate>Fri, 27 Feb 2026 11:37:49 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47179356</comments>
-    </item>
-    <item>
-      <title>Pharo Smalltalk の作業: BPatterns: Smalltalk スタイルの書き換えエンジン</title>
-      <link>http://dionisiydk.blogspot.com/2026/02/bpatterns-rewrite-engine-with-smalltalk.html</link>
-      <description>&lt;p&gt;内部では、BPattern は書き換えエンジンと同じパターン ノード クラスを使用してパターン AST を構築します。パターンは単なるブロックです。キーワードの交換:[ [ anyRcv anyKeywordPart: anyArg1 staticPart: anyArg2 ] -&gt; [ anyRcv staticPart: anyArg2 anyKeywordPart: anyArg1 ]] brewrite。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Working on Pharo Smalltalk: BPatterns: Rewrite Engine with Smalltalk Style&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47178344"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='http://dionisiydk.blogspot.com/2026/02/bpatterns-rewrite-engine-with-smalltalk.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jaen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは、Lisp 以外の構文言語の構文マクロと&lt;i&gt;ほぼ&lt;/i&gt;同じ問題です。&lt;p&gt;「穴」を示す方法が必要です。 (メタ変数&amp;#x2F;unquote) を構文ツリーに含めることができますが、言語の文法の複雑さによっては、これは多少難しい場合があります。 C++ では、型宣言に穴があると、宣言 (コンストラクター呼び出し) と式 (通常の呼び出し) の間の一般的なあいまいさに遭遇します。 
-これは、たとえば次のようにして回避する必要があります。曖昧さを解消するために複数のタイプの穴がある...&lt;p&gt;この記事では、「任意」を使用するという考えは、例の代わりに識別子の接頭辞を付けます。 ` , ... (Lisp マクロ) などの演算子は、言語の文法を拡張する必要がないため、興味深い解決策です... ただし、すべての状況 (識別子が許可されていない文法要素の一致など) に適用できるわけではありません。 
-ただし、Smalltalk のような非常に規則的な言語の場合、これはかなり優れています。&lt;p&gt;文法ベースの書き換えには長い歴史と研究があるため、Google Scholar にアクセスしたい場合は、深い知識が得られます...&lt;p&gt;最新の実装については、たとえば、 ast-grep と semgrep:
-&lt;a href="https:&amp;#x2F;&amp;#x2F;ast-grep.github.io&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ast-grep.github.io&amp;#x2F;&lt;/a&gt;
-&lt;a href="https:&amp;#x2F;&amp;#x2F;semgrep.dev&amp;#x2F;docs&amp;#x2F;書き込みルール&amp;#x2F;パターン構文" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;semgrep.dev&amp;#x2F;docs&amp;#x2F;書き込みルール&amp;#x2F;パターン構文&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">http://dionisiydk.blogspot.com/2026/02/bpatterns-rewrite-engine-with-smalltalk.html</guid>
-      <pubDate>Fri, 27 Feb 2026 09:04:48 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47178344</comments>
+      <title>OpenAI の 1,100 億ドルの資金調達ラウンド (Amazon、Nvidia、SoftBank からの投資)</title>
+      <link>https://www.reuters.com/business/retail-consumer/amazon-invest-50-billion-openai-2026-02-27/</link>
+      <guid isPermaLink="true">https://www.reuters.com/business/retail-consumer/amazon-invest-50-billion-openai-2026-02-27/</guid>
+      <pubDate>Fri, 27 Feb 2026 14:44:52 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47181051</comments>
     </item>
   </channel>
 </rss>
