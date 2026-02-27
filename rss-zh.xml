@@ -6,133 +6,265 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 27 Feb 2026 15:45:01 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 18:59:09 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>我们应该有一个更好的 JavaScript 流 API</title>
-      <link>https://blog.cloudflare.com/a-better-web-streams-api/</link>
-      <description>&lt;p&gt;Web 流的设计早于 JavaScript 中的异步迭代。常量读者=流。既然 Web 流现在支持等待，请考虑替代方法。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; We deserve a better streams API for JavaScript&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47180569"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://blog.cloudflare.com/a-better-web-streams-api/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>由于安全问题和延误，美国宇航局宣布对阿尔忒弥斯计划进行重大改革</title>
+      <link>https://www.cbsnews.com/news/nasa-artemis-moon-program-overhaul/</link>
+      <description>&lt;p&gt;继这次飞行之后，2028 年将进行至少一次甚至可能两次登月任务，其中吸取了之前飞行的经验教训。凭借阿尔忒弥斯 III 号，NASA 希望在 2028 年利用一个或两个着陆器发射两次登月任务，即阿尔忒弥斯 IV 和 V，并在此后每年继续进行一次登月任务。修改后的阿耳忒弥斯三号任务还将让宇航员有机会测试未来月球漫步者将使用的新宇航服。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; NASA announces major overhaul of Artemis program amid safety concerns, delays&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47182483"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.cbsnews.com/news/nasa-artemis-moon-program-overhaul/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ralusek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我修改了流接口的替代方案：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ralusek&amp;#x2F;streamie" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ralusek&amp;#x2F;streamie&lt;/a&gt;&lt;p&gt;允许您执行以下操作&lt;p&gt;&lt;pre&gt;&lt;code&gt;无限记录
-    .map(item =&gt; doSomeAsyncThing(item), { 并发: 5 });
-&lt;/code&gt;&lt;/pre&gt;
-然后因为我发现我经常想在批处理项目与处理单个项目之间切换：&lt;p&gt;&lt;pre&gt;&lt;code&gt;InfiniteRecords
-    .map(item =&gt; doSomeAsyncSingularThing(item), { 并发: 5 })
-    .map(groupOf10 =&gt; doSomeBatchThing(groupsOf10), { batchSize: 10 })
-    &amp;#x2F;&amp;#x2F;可以扁平化回单个项目
-    .map(item =&gt; backToSingleItem(item), { flatten: true });&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;murmansk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;天哪，终于有人说出这句话了！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;conartist6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;碰巧我有一个比本文建议的更好的 API！&lt;p&gt;他们建议只使用 UInt8Array 的异步迭代器。我&lt;i&gt;几乎&lt;/i&gt;喜欢这个想法，但还没有完全实现。&lt;p&gt;他们提出了这个：&lt;p&gt;&lt;pre&gt;&lt;code&gt; type Stream&amp;lt;T&amp;gt; = {
-    next(): Promise&lt;{ 完成，值：UInt8Array&lt;T&gt;; }&gt;
-  }
-&lt;/code&gt;&lt;/pre&gt;
-我建议将其称为流迭代器！&lt;p&gt;&lt;pre&gt;&lt;code&gt; type Stream&lt;T&gt;; = {
-    next(): { 完成，值：T } | Promise&lt;{完成，值：T}&gt;
-  }
-&lt;/code&gt;&lt;/pre&gt;
-显然我会有偏见，但我很确定我的版本在客观上也更优越：&lt;p&gt;-我可以轻松地从他们的版本中制作我的版本&lt;p&gt;-在他们的概念“流”中，由迭代器的迭代器定义，这意味着您需要一个 for 循环的 for 循环来单步执行它。在我的例子中，它只是一个迭代器，并且可以通过一个 for 循环来使用。&lt;p&gt;- 我不限于只有整数流，它们是&lt;p&gt;- 我的方式是，如果我在同步输入上定义同步转换，则整个迭代可以同步，从而可以在同步函数中获取和使用结果。这是巨大的，否则你必须将所有代码编写两次：一次使用同步迭代器和 for 循环，一次使用异步迭代器和 for wait 循环。&lt;p&gt;- 将输入拆分为单词时抖动 Promise 的问题消失了。使用异步迭代器，创建两个单词意味着创建两个 Promise。使用流迭代器，如果您有可用的数据，则根本不需要承诺，您只需生成它。&lt;p&gt; - 流迭代器可以帮助您管理并发性，这是异步迭代器无法做到的一件大事。异步迭代器无法执行此操作，因为如果它们看到 Promise，它们将&lt;i&gt;始终&lt;/i&gt;等待它。这与“如果有任何并发​​性，它总是会被消除”是一样的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们应该有一种比 JavaScript 更好的语言。&lt;p&gt;遗憾的是这永远不会发生。 WebAssembly 未能兑现其一些承诺。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dilap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;这些问题不是 bug，而是 bug。它们是十年前可能有意义的设计决策的结果，但与当今 JavaScript 开发人员编写代码的方式并不相符。&lt;p&gt;&gt;我不是来贬低之前的工作的——我来这里是为了开始讨论接下来可能发生的事情。&lt;p&gt;糟糕的法学硕士风格。斯内尔先生是让一位法学硕士为他写这篇文章还是他只是盗用了这种风格？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ai-christianson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于自带酒水阅读的观点是正确的。令人沮丧的是，这样一个对性能和减少 GC 压力至关重要的功能最终在 WHATWG 标准中很难正确实现。对于我们这些用 JS 构建高性能数据处理工具的人来说，一种更简单、更符合人体工程学的缓冲区管理方法将大有帮助。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;真正令人遗憾的是，BYOB（自带缓冲区）读取如此复杂且令人头疼，因为对于大量读取，它们在 GC 流量（用于分配临时缓冲区）和 CPU 时间（用于副本）方面产生巨大差异。&lt;p&gt;在理想的情况下，您可以要求主机将 100MB 的内容流式传输到字节数组或 wasm 堆的切片中。唉。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;user3939382:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“ Streams 标准是在 2014 年至 2016 年间制定的，其雄心勃勃的目标是提供“用于创建、编写和使用有效映射到低级 I&amp;#x2F;O 原语的数据流的 API。”在 Web 流出现之前，Web 平台没有处理流数据的标准方法。”&lt;p&gt;这就是 UDP 的用途。事实上，一切都必须是异步的，因为事实并非如此，我们将完全重新实现操作系统和网络，嘿，也许当我们完成这件事后，我们可以第三次拥有云中的云。&lt;p&gt;我们正在使用的整个堆栈一直到硬件都不适合目的，我们正在消耗我们的人才和金钱来构建这些更加脆弱的高耸抽象。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://blog.cloudflare.com/a-better-web-streams-api/</guid>
-      <pubDate>Fri, 27 Feb 2026 14:02:53 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47180569</comments>
+&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dyauspitr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么我们好像不能再做事了？难道一直都是这样，所有的失败都没有新闻报道吗？如果不是的话，目前失败的主要原因是什么？是繁琐的法规和官僚主义吗？工作环境压力大？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tiahura:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们是否曾澄清过龙 8 号机组成员是如何受伤的以及 SpaceX 为何收到警告？  &lt;一href="https:&amp;#x2F;&amp;#x2F;www.popsci.com&amp;#x2F;science&amp;#x2F;nasa-spacex-safety&amp;#x2F;#:~:text=%E2%80%9CBoth%20NASA%20and%20SpaceX%20need%20to %20maintain%20focus%20on%20safe%20Crew%20Dragon&amp;amp;text=NASA%20随后%20confirmed%20all%20four%20Crew%2D8%20astronauts%20required” rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.popsci.com&amp;#x2F;science&amp;#x2F;nasa-spacex-safety&amp;#x2F;#:~:text=%...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kiratp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;建造 Starliner 的承包商 (Beoing)...&lt;p&gt;解释为什么 NASA 的 Starliner 报告如此糟糕 &gt; &lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=L96asfTvJ_A" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=L96asfTvJ_A&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bhouston:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从表面上看，这些变化似乎是合乎逻辑的。&lt;p&gt;NASA 目前的做法与 SpaceX 之间的理念差异相当明显。  SpaceX 在两年多的时间里发射了 11 艘星际飞船，其中很多都爆炸了。  阿耳忒弥斯试图让每次运行都接近完美。&lt;p&gt;我想知道 NASA 是否可以开始采用类似 SpaceX 的方法？  在采取行动之前，人们不会尝试确保一切正确吗？&lt;p&gt;我想知道哪种方法更具资本效率？  哪个更节省时间？&lt;p&gt;（Artemis 的成本似乎是 $92B，而 SpaceX 的 Starship 成本到目前为止还不到 $10B，无论是给予还是接受。所以看起来 SpaceX 是一种更有效的方法。）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;daymanstep:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;相关：&lt;a href="https:&amp;#x2F;&amp;#x2F;idlewords.com&amp;#x2F;2024&amp;#x2F;5&amp;#x2F;the_lunacy_of_artemis.htm" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;idlewords.com&amp;#x2F;2024&amp;#x2F;5&amp;#x2F;the_lunacy_of_artemis.htm&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;michael_pica:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很高兴这个计划得到了彻底修改，现有的计划有点混乱，美国宇航局不能承受这种规模的计划中的错误。希望我们能从中得到更安全、更有效的结果。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Rooster61:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我非常非常担心即将进行的跨月飞行的宇航员。考虑到波音公司做波音公司的事情，美国宇航局在这种政治气候下的现状，以及当前堆栈不断出现问题的事实，这让我觉得在飞行中很有可能出现问题。&lt;p&gt;祝他们好运，希望我过于阴郁了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TheChaplain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您访问美国，我真的建议您绕道前往肯尼迪航天中心，那里有很多有趣的东西，尤其是有关阿波罗计划的东西。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kwertyoowiyop:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每一个关于阿耳忒弥斯的新故事都让我更加尊重阿波罗工程师。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.cbsnews.com/news/nasa-artemis-moon-program-overhaul/</guid>
+      <pubDate>Fri, 27 Feb 2026 16:33:39 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47182483</comments>
     </item>
     <item>
-      <title>显示 HN：徽章，显示您的代码库在 LLM 上下文窗口中的适合程度</title>
-      <link>https://github.com/qwibitai/nanoclaw/tree/main/repo-tokens</link>
-      <guid isPermaLink="true">https://github.com/qwibitai/nanoclaw/tree/main/repo-tokens</guid>
-      <pubDate>Fri, 27 Feb 2026 15:14:42 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47181471</comments>
-    </item>
-    <item>
-      <title>Show HN：RetroTick – 在浏览器中运行经典 Windows EXE</title>
-      <link>https://retrotick.com/</link>
-      <guid isPermaLink="true">https://retrotick.com/</guid>
-      <pubDate>Fri, 27 Feb 2026 13:06:50 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47180083</comments>
-    </item>
-    <item>
-      <title>第十巡回法院：第四修正案不支持对抗议者的设备进行广泛搜查</title>
-      <link>https://www.eff.org/deeplinks/2026/02/victory-tenth-circuit-finds-fourth-amendment-doesnt-support-broad-search-0</link>
-      <description>&lt;p&gt;第十巡回上诉法院推翻了下级法院驳回对搜查抗议者的设备和数字数据以及非营利组织的社交媒体数据的全面搜查令的质疑的裁决。示威结束后，警方还获得了搜查杰奎琳·阿门达里斯·温苏埃塔 (Jacqueline Armendariz Unzueta) 的设备和数据的搜查令，警方声称她在抗议期间向他们扔了一辆自行车。地区法院驳回了阿门达里斯和奇努克中心提起的民权诉讼，认为搜查是合理的，并且无论如何，这些警官都有权享有合格的豁免权。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Tenth Circuit: 4th Amendment Doesn't Support Broad Search of Protesters' Devices&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47181391"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.eff.org/deeplinks/2026/02/victory-tenth-circuit-finds-fourth-amendment-doesnt-support-broad-search-0'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>我们向法学硕士提供了 TB 级的 CI 日志</title>
+      <link>https://www.mendral.com/blog/llms-are-good-at-sql</link>
+      <description>&lt;p&gt;代理将 63% 的时间用于“此操作失败的频率”等问题。代理将这 37% 的时间用于“向我显示此作业的错误输出”、“此日志模式何时首次出现”等问题。 ", "此错误消息在运行过程中出现的频率是多少。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; We gave terabytes of CI logs to an LLM&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47181801"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.mendral.com/blog/llms-are-good-at-sql'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mothballed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一场了不起的胜利。  但直到法律对侵犯权利的惩罚成为现实（例如严重监禁+赔偿、禁止进一步担任公职等），他们才会继续这样做。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hn_acker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;原标题为：&lt;p&gt;&gt;胜利！第十巡回法院发现第四修正案不支持对抗议者的设备和数字数据进行广泛搜查&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.eff.org/deeplinks/2026/02/victory-tenth-circuit-finds-fourth-amendment-doesnt-support-broad-search-0</guid>
-      <pubDate>Fri, 27 Feb 2026 15:09:04 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47181391</comments>
+&lt;p&gt;&lt;strong&gt;Top 15 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tehjoker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的文章，但没有引用调查成功率。工程界很感兴趣，但如果没有某种实用性衡量标准，很难知道是否有任何意义。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PaulHoule:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的第一个想法是，您可以拥有 10 TB 的日志，其中只有几行真正有趣的独特行。  所以我不会想“哇，你那里有多么令人印象深刻的大数据”。而是“如果你的准确度为 1-10^-6，你仍然会被误报淹没”或“我希望你的爸爸正在为你的代币付钱”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;truth_seeker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;即使从安全性、性能和用户友好的 API 角度考虑，通过 AI 编码代理对 TOP 250 npm 包进行重构，整个 JS 生态系统也会呈现不同的形态。&lt;p&gt;当然，其他语言社区也是如此&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kingjimmy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[已标记]&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yellow_lead:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么要编辑标题？ “法学硕士擅长 SQL。我们提供了 TB 级的 CI 日志。”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pphysch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“日志”在这里做一些繁重的工作。在决定日志消息的特定子集和模式是否应该位于其自己的列式数据表中时，有一个非常重要的步骤。这是一个重大的优化决策，会增加日志记录堆栈的复杂性。对于狭隘的 SaaS 产品来说，这可能是理所当然的。&lt;p&gt;我希望看到这种方法与更简单的方法（例如，VictoriaLogs）相比，其中法学硕士被教导使用 LogSQL，但总的来说，它是一种更“开箱即用”的方法。建筑学。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;buryat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我刚刚编写了一个用于减少LLM分析日志的工具（&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ascii766164696D&amp;#x2F;log-mcp" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ascii766164696D&amp;#x2F;log-mcp&lt;/a&gt;)&lt;p&gt;大量日志包含无趣的信息，因此很容易污染上下文。相反，我的方法有一个 TF-IDF 分类器 + GPU 上的 BERT 模型，用于进一步对日志行进行分类，以减少应输入 LLM 模型的日志数量。模型的总大小为 50MB，分类器是用 Rust 编写的，因此它可以实现超过 100 万行秒的分类速度。它发现了简单的 grepping 可能会错过的有趣案例&lt;p&gt;我在大约 90GB 的日志上对其进行了训练，并提供了重新训练模型的脚本（&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ascii766164696D&amp;#x2F;log-mcp&amp;#x2F;tree&amp;#x2F;main&amp;#x2F;scripts" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;ascii766164696D&amp;#x2F;log-mcp&amp;#x2F;tree&amp;#x2F;main&amp;#x2F;scripts&lt;/a&gt;)&lt;p&gt;它旨在与 Claude Code CLI 一起使用，因此它可以使用这些工具而不是尝试读取日志文件&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kikki:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;无关; “mendral” 是什么意思？意思是？这是一个非常...难以记忆的词&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;p0w3n3d:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这与我的经验相反。日志包含大量噪音和不必要的信息，尤其是 Java，因此最好在将其提供给 LLM 之前对其进行准备。也不谈论浪费的代币......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sathish316:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;SQL 是法学硕士最好的探索性接口。但是，我们今天拥有的大多数可观察性数据（例如指标、日志、跟踪）都隐藏在语义层和自定义语法中，代理很难将探索或调试意图转换为实际的查询语言。&lt;p&gt;指标、日志、跟踪等大规模数据针对存储和访问模式进行了优化，OLAP&amp;#x2F;SQL 系统可能不是存储或检索它们的最佳方式。这是我一直致力于 Text2SQL &amp;#x2F; 的原因之一。用于可观察性数据的 Intent2SQL 引擎让代理探索任何指标、日志数据的架构、语义、语法。它作为 Codd Text2SQL 引擎开源 - &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;sathish316&amp;#x2F;codd_query_engine&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;sathish316&amp;#x2F;codd_query_engine&amp;#x2F;&lt;/a&gt;&lt;p&gt;它还远未完成，目前适用于 Prometheus、Loki、Splunk 的少数场景，并对 OSS 贡献开放。您可以在 Claude Code 使用指标和日志查询进行调试的操作中找到它：&lt;p&gt;Claude 代码的指标分析器和日志分析器技能 - &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;sathish316&amp;#x2F;precogs_sre_oncall_skills&amp;#x2F;tree&amp;#x2F;main?tab=readme-ov-file#using-precogs-skills-from-claudecode" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;sathish316&amp;#x2F;precogs_sre_oncall_skills&amp;#x2F;树...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whoami4041:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“LLM 擅长 SQL”确实是这样的断言。我在 OLTP 和 OLAP 平台中使用 LLM 生成 SQL 的经验好坏参半。 IMO 分析&amp;#x2F;SQL 将始终是一个在生成过程中需要大量人力输入和判断的领域。可能总是由于可以根据洞察力做出关键业务决策。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Yizahi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们一直在努力解析自动测试的日志，以加快调试速度。这很难做到，主要是因为即使在信息日志中也存在大量误报或普通的旧噪音。追踪罪魁祸首也可能很棘手，因为容器 A 中的错误可能是由容器 B 中的实际故障引起的，而容器 B 中的实际故障又可能完全取决于其他因素，包括硬件问题。&lt;p&gt;基本上，训练 LLM 解析日志和检测实际问题的可靠方法几乎完全取决于日志记录的可读性和精度。如果日志记录足够好，那么人类也可以更快、更可靠地进行调试:)。不幸的是，阅读日志的人和编写日志的人在实践中几乎没有交叉，因此问题仍然存在。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dbreunig:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;查看“递归语言模型”或 RLM。&lt;p&gt;我相信这种方法效果很好，因为它将长上下文问题（对于法学硕士来说很难）变成了编码和推理问题（好多了！）。您正在通过改变脚手架来利用过去 18 个月的 RL 编码。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sollewitt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;但这有效吗？我使用法学硕士进行日志分析，他们很容易产生幻觉原因：根据日志，原因和结果之间的距离可能比上下文更大，通常我们会同时处理多个故障，导致事情变得严重错误，并且许多良性问题会引发听起来可怕的错误。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;verdverm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是您在内部分享的 HN 帖子之一，希望您能将其应用到您的冲刺中&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.mendral.com/blog/llms-are-good-at-sql</guid>
+      <pubDate>Fri, 27 Feb 2026 15:41:13 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47181801</comments>
     </item>
     <item>
-      <title>OpenAI 融资前估值 730B 美元，融资 110B 美元</title>
-      <link>https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/</link>
-      <description>&lt;p&gt;新一轮融资包括亚马逊的 500 亿美元投资以及英伟达和软银各 300 亿美元的投资，而投前估值为 7300 亿美元。与处于相似成长阶段的同行建立联系。与处于相似成长阶段的同行建立联系。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; OpenAI raises $110B on $730B pre-money valuation&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47181211"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Kyber (YC W23) 正在招聘一名企业客户经理</title>
+      <link>https://www.ycombinator.com/companies/kyber/jobs/59yPaCs-enterprise-account-executive-ae</link>
+      <description>&lt;p&gt;立即起草、审查和发送复杂的监管通知。如果您热衷于增长、人工智能和企业工作流程转型，我们很乐意听取您的意见。借助 Kyber，在受监管行业运营的公司可以快速起草、审查和发送复杂的监管通知。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Kyber (YC W23) Is Hiring an Enterprise Account Executive&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47183907"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/kyber/jobs/59yPaCs-enterprise-account-executive-ae'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.ycombinator.com/companies/kyber/jobs/59yPaCs-enterprise-account-executive-ae</guid>
+      <pubDate>Fri, 27 Feb 2026 18:37:53 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47183907</comments>
+    </item>
+    <item>
+      <title>在堆栈上分配</title>
+      <link>https://go.dev/blog/allocation-optimizations</link>
+      <description>&lt;p&gt;目前，它分配了一个大小为 1 的后备存储。再次追加必须分配一个新的后备存储，这次的大小为 2。再次追加必须分配一个新的后备存储，这次的大小为 4。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Allocating on the Stack&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47182487"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://go.dev/blog/allocation-optimizations'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anematode:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;太棒了！ Go 有配置文件引导优化吗？我想知道配置文件是否可以向编译器暗示预先保留的堆栈空间有多大。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nasretdinov:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴看到常见和自然的模式来提高他们的表现。理论上，附加到切片可以仅通过堆栈增长来处理，但这需要 goroutine 堆栈之间有很大的间隙，并在访问时惰性地映射它们，而不是像现在实现的那样将 goroutine 移动到新的连续块。但考虑到运行时需要进行多少有问题的更改，这肯定不会发生:)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bertylicious:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好的！这（看起来）是如此简单，但也非常有效。其他内存管理语言不应该也能从中受益吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;HarHarVeryFunny:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇文章是关于 Go 的，但我想知道有多少 C&amp;#x2F;C++ 开发人员意识到您始终能够使用 alloca() 而不是 malloc() 在堆栈上进行分配。&lt;p&gt;当然，用例是有限的（可变长度缓冲区和字符串等），因为堆栈上任何内容的生命周期都必须与堆栈帧（即调用函数）的生命周期相匹配，但它的速度非常快，因为它只是向上移动堆栈指针。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://go.dev/blog/allocation-optimizations</guid>
+      <pubDate>Fri, 27 Feb 2026 16:34:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47182487</comments>
+    </item>
+    <item>
+      <title>ChatGPT Health 未能识别医疗紧急情况后专家发出警报</title>
+      <link>https://www.theguardian.com/technology/2026/feb/26/chatgpt-health-fails-recognise-medical-emergencies</link>
+      <description>&lt;p&gt;研究发现，十分之八的情况是，ChatGPT Health 会让一位令人窒息的女性去参加她无法活着看到的未来预约。 Dr Bot：ChatGPT 可以信任您的健康吗？ “我们对一名 27 岁的患者测试了 ChatGPT Health，他说他一直在考虑服用大量药物，”他说。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Experts sound alarm after ChatGPT Health fails to recognise medical emergencies&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47181841"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.theguardian.com/technology/2026/feb/26/chatgpt-health-fails-recognise-medical-emergencies'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 22 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;selridge:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一生中从未听说过有医生未能识别出医疗紧急情况。 &amp;#x2F;s&lt;p&gt;人们需要掌握的一件事是，就像维基百科一样，人们会使用 ChatGPT，因为它就在那里。另一种选择是富有并拥有一位可以随时联系的初级保健医生。在那之前，不同的人将使用这些网络服务。这与维基百科或 WebMD 是一样的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iainctduncan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为更糟糕的情况是人工智能对健康问题的搜索总结不佳。&lt;p&gt;我们有潜在的宠物中毒，所以自然要寻找资源。谷歌有一个带有“担忧剂量”的摘要这是一个数量级的差距。有人可能读到了这篇文章，认为一切都很好，有一只死猫。&lt;p&gt;（顺便说一句，猫很好，结果是虚惊一场，但公共服务公告：猫对阿司匹林过敏，而 peptobismal 含有阿司匹林。不要把疯狂咀嚼塑料的猫放在那些瓶子周围，以防你也有一只可爱但疯狂的猫）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andersmurphy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这不足为奇吗？这是一个奇特的马尔可夫链。这就像使用老虎机来诊断医疗状况一样。我想这是一款营销效果非常好的老虎机。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;francisofascii:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;现实情况是，进入医疗保健系统可能会导致数千美元的账单。  人们对是否去医院做出风险成本判断。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ben5:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我知道这并不总是最好的答案，但如果您需要真正的医疗建议 - 请去看医生。不是互联网。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bsoles:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;&gt;&gt; “安全地” （我的重点）连接医疗记录和健康应用程序”以生成健康建议和响应。&lt;p&gt;不，不，不，不。我们永远不会学习吗？与人工智能工具共享医疗数据将会反过来咬你一口。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dipflow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;添加正常的实验室结果使自杀危机横幅消失？这是一种奇怪的故障模式。您希望忽略不相关的上下文，而不是覆盖风险信号。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WalterBright:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;医生也会错过一些事情。&lt;p&gt;我的一个朋友出了事故。他被送往急诊室，但那里的医生认为他伤势较轻。我的朋友坚称他内出血。他们最终检查了这一点，结果发现他距离死亡只有几分钟的路程。&lt;p&gt;人工智能没有参与此案，但在决策循环中拥有人工智能和训练有素的医生是件好事。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hayleox:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为人工智能在医疗保健领域有很大的潜力，但在向患者推出任何产品之前，我们绝对必须经过多年的研究、试验和批准的现有规则集。在医疗保健领域，快速行动、打破常规根本不是一种选择。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Scoundreller:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;搜索引擎和谷歌博士一定感觉他们在这场辩论中错过了一些重要的炮弹级别的子弹。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dyauspitr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得这些需要根据已经确定的病例历史记录来运行，而不是医生设置场景的病例，知道它们将与 ChatGPT 运行。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jbverschoor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;听起来就像荷兰的全科医生一样&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TZubiri:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们允许 ChatGPT 与人类 MD 诊断一起使用怎么样？&lt;p&gt;双赢吧？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nashashmi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有人尝试过推荐数独谜题吗？在一场艰难的游戏中，我会将屏幕截图提交给副驾驶或双子座，它会产生下一步行动的幻觉建议。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;varispeed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我发现 5.2 已经完全被简化了。感觉更像是在与早期版本的 Gemini 快速进入循环状态时进行对话。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nerdjon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;尽管这些工具一次又一次地表明它们存在严重的可靠性问题，但不知何故，人们仍然认为使用它们进行关键决策是个好主意。&lt;p&gt;仍然经常从谷歌的搜索人工智能中获得错误信息。&lt;p&gt;真的开始怀疑常识是否会随着新技术而回归，但我担心这将需要真正灾难性的事情发生。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;unstyledcontent:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我从 ChatGPT 得到了一些令人难以置信的医疗建议。它让我摆脱了一些神秘的小问题，比如脸上的皮疹。足够小的问题我可能不会费心去看医生。但它也未能诊断出我患有医疗问题，最终导致我前往急诊室并接受紧急手术。&lt;p&gt;在急诊室前几周，我感到胃痛。我带着 ChatGPT 的理论去看医生，他们检查了我的这些情况，然后没有检查我是否有一个非常明显的问题。有趣的是，我向医生提到我使用了 ChatGPT，医生甚至似乎很重视这个意见，没有考虑其他选择（最终的结果很少见，但回想起来确实很明显，我想大多数医生都会检查过）。我确实觉得我的“研究”实际上偏见了第一位医生的意见。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spicyusername:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们多久审查一次医生的表现？&lt;p&gt;我怀疑很多很多医生也未能定期识别医疗紧急情况。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WarmWash:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我非常喜欢将医生与人工智能进行比较的盲目研究，而不是对医生提供人工智能场景的研究，看看它是否符合他们预定的结果。&lt;p&gt;编辑：人们似乎很困惑。该研究正在为人工智能结构化临床场景提供数据并查看其结果。该研究并不是对现场使用人工智能治疗患者的实时分析。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SoftTalker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我真的只使用 ChatGPT 作为更好的搜索引擎。但它经常是错误的，这实际上最终让我损失了金钱。我对此不太信任。作为医生当然不会尝试使用它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;josefritzishere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令我惊讶的是，有些人如此鲁莽地将人工智能塞进表现不佳的空间，其后果包括死亡。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ml_giant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我并不感到惊讶。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.theguardian.com/technology/2026/feb/26/chatgpt-health-fails-recognise-medical-emergencies</guid>
+      <pubDate>Fri, 27 Feb 2026 15:44:33 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47181841</comments>
+    </item>
+    <item>
+      <title>约束理论：“蓝光”无用地创造能力（2007）</title>
+      <link>http://theoryofconstraints.blogspot.com/2007/06/toc-stories-2-blue-light-creating.html</link>
+      <description>&lt;p&gt;欢迎，我希望你喜欢这个博客。请在各个帖子中留下您的评论，我非常重视它们。如果您包含返回该帖子的链接，则本网站上的所有材料可能会在未经进一步许可的情况下发布到其他地方。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Theory of Constraints: "Blue Light" creating capacity for nothing (2007)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47183191"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='http://theoryofconstraints.blogspot.com/2007/06/toc-stories-2-blue-light-creating.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;strongpigeon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当我考虑使用 Codex 最大限度地提高工作效率时，这篇博文始终是我的首要考虑。除了不是蓝光之外，它是旋转的图标。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">http://theoryofconstraints.blogspot.com/2007/06/toc-stories-2-blue-light-creating.html</guid>
+      <pubDate>Fri, 27 Feb 2026 17:41:30 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47183191</comments>
+    </item>
+    <item>
+      <title>开源计算器固件 DB48X 由于年龄验证而禁止使用 CA/CO</title>
+      <link>https://github.com/c3d/db48x/commit/7819972b641ac808d46c54d3f5d1df70d706d286</link>
+      <description>&lt;p&gt;c3d / db48x Public forked from swissmicros/SDKdemo 通知 您必须登录才能更改通知设置 Fork 35 Star 191 文件树展开文件树折叠文件树1 文件已更改+13-0 行已更改打开差异视图设置过滤器选项法律声明。 md展开文件树折叠文件树1 个文件已更改+13-0 行已更改打开差异视图设置折叠文件‎法律声明。 md‎将文件名复制到剪贴板+13行已更改：13 个添加和 0 个删除显示源差异显示丰富的差异原始文件行号差异行号差异行更改@@ -0,0 +1,13 @@1+# 给加利福尼亚州和科罗拉多州居民的重要通知2+3+由于[加利福尼亚州][cal]4+和[科罗拉多州][col]最近的立法活动：5+6+* 加利福尼亚州居民可能不再使用2027 年 1 月 1 日之后的 DB48x。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Open source calculator firmware DB48X forbids CA/CO use due to age verification&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47181753"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/c3d/db48x/commit/7819972b641ac808d46c54d3f5d1df70d706d286'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChicagoDave:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只有特斯拉才是大科技公司的傻瓜。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ViewTrick1002:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;让圆形交易再上一个台阶？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thinkingtoilet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只有$730B？为什么停在那里？只要我们在编造东西，就可以大干一场。 10T 美元怎么样？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;snitch182:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;7300亿当然是个泡沫，迟早会破灭。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maplethorpe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; The Information 此前曾报道称，亚马逊 350 亿美元的投资可能取决于该公司在年底前实现 AGI 或进行 IPO。 OpenAI 的声明确认了资金分配，但仅表示额外的 350 亿美元将在“未来几个月满足某些条件时”到达。&lt;p&gt;难以置信。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/</guid>
-      <pubDate>Fri, 27 Feb 2026 14:56:05 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47181211</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tliltocatl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;IANAL，但整个事情感觉很有问题。我们是否应该将该禁令解释为许可条件“使用我们知识产权的居民违反了合同”？或者作为信息说明“我们不合规，而且我们永远不会合规，因此使用知识产权的居民违反了当地法律”？我预计意图是后者，但是它在法官面前成立吗？如果该通知是一个许可条件，那么整个事情就大有问题了：&lt;p&gt;- 这样的禁令有任何法律效力吗？根据该法案，它是否可以采取任何措施来避免责任？难道只是说“CA&amp;#x2F;CO 对我们的管辖权为零，完蛋了”？是一个更明智的选择（当然，如果该项目不托管在 M$ 的服务器上会更好）。&lt;p&gt;- 主要项目许可证是 GPLv3。 GPLv3 显然没有在不失去兼容性的情况下在许可证中引入任意禁止的规定。但他们仍然保留 GPLv3 LICENSE.txt，这本身就是有问题的 - 如果 LICENSE.txt 说的是一件事，而 LEGAL-NOTICE.txt 说的是另一件事，那么结论可能是没有许可证适用，因此根本没有人可以使用该软件！&lt;p&gt;- 如果他们重复使用任何他们不拥有版权的 GPL 软件，他们可能会或可能不会违反（如果是这种情况，需要一位真正的律师来证明）或不）。&lt;p&gt;就事情的实际情况而言，看到加利福尼亚州处于这种垃圾的最前线真是令人难过（这种&lt;i&gt;尖叫&lt;/i&gt;年龄歧视）。而且，亲爱的“成年人”，你的父母权威太糟糕了。无论我在上大学之前获得了什么技能，我都是在父母明确的禁止下做的。这就是我现在的生活。你们都去死吧。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ziml77:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么 DB48X 提供了涵盖的应用程序商店？&lt;p&gt;(e) (1) “涵盖的应用程序商店”是指公开的互联网网站、软件应用程序、在线服务或平台，用于向计算机、移动设备或任何其他可以访问涵盖的应用程序商店或下载应用程序的通用计算用户分发并促进第三方开发人员下载应用程序的平台。&lt;p&gt;此外，CA 法案中的哪些内容强制要求进行年龄验证？这意味着操作系统需要提示输入年龄段信息并允许第三方应用程序查询该信息。这与验证有很大不同。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lacoolj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我没有看到“操作系统”的定义在此立法中（加利福尼亚州）。&lt;p&gt;“操作系统提供商”已定义，但除非“操作系统”被定义，否则这有点无用。首先定义。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drnick1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Clickbait标题，法律声明明确指出开源项目不能也不会实现年龄验证。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lokar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它运行应用程序吗？  该法律的要点是收集（和设备设置）（我猜是主要？）用户的年龄，并将其（作为范围？）传达给其运行的任何应用程序。&lt;p&gt;那么，如果您不运行应用程序，这有关系吗？  此外，执法是由加州总检察长执行的，所以随机的人无法追捕你。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/c3d/db48x/commit/7819972b641ac808d46c54d3f5d1df70d706d286</guid>
+      <pubDate>Fri, 27 Feb 2026 15:37:53 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47181753</comments>
     </item>
     <item>
-      <title>为开源维护者免费获取 Claude max 20x</title>
-      <link>https://claude.com/contact-sales/claude-for-oss</link>
-      <description>&lt;p&gt;我们接受最多 10,000 名贡献者。如果获得批准，您将获得一个链接，用于在订阅期内在您的帐户上激活 Claude Max。条款和条件条款和条件条款和条件。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Get free Claude max 20x for open-source maintainers&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47178371"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://claude.com/contact-sales/claude-for-oss'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Vibe 编码的 Lovable 托管应用程序充满基本缺陷，暴露了 18K 用户</title>
+      <link>https://www.theregister.com/2026/02/27/lovable_app_vulnerabilities/</link>
+      <description>&lt;p&gt;Khan 表示，主要问题是所有在 Lovable 平台上进行 vivi 编码的应用程序都附带由 Supabase 提供支持的后端，该后端通过 PostgreSQL 数据库连接处理身份验证、文件存储和实时更新。 “这是倒退的，”汗说。 Khan 表示：“如果 Lovable 将自己定位为一个生成可用于生产且‘包含’身份验证的应用程序的平台，那么它就对其生成和推广的应用程序的安全状况承担一定的责任。”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Vibe coded Lovable-hosted app littered with basic flaws exposed 18K users&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47182659"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.theregister.com/2026/02/27/lovable_app_vulnerabilities/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 21 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mohsen1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为开源维护者，我免费获得了 Copilot，这很好。但现在我还为我自己的项目支付了两个 Claude Max（每月 200 美元）的费用。如果其中之一能得到至少 6 个月的保障，那就太好了！希望 Anthropic 接受我的申请，因为我根本不跟踪下载。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xantronix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;开源开发人员应该因其过去、现在和未来的努力以及对 LLM 模型的贡献而获得报酬，而不是被诱骗在六个月后付费参与。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;notatallshaw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人工智能有些帮助，但我对公司找到一种方式让我付费做我的开源 OSS 志愿者工作不感兴趣。 GitHub Copilot 为 OSS 维护者提供永久免费订阅。&lt;p&gt;之前，当 Claude 作为开源维护者联系我时，我忽略了免费服务，因为这是一次光荣的免费试用。我希望这个持续时间超过列出的 6 个月，我对美化的免费试用不感兴趣，如果它需要输入信用卡详细信息，我不会注册。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vivzkestrel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;发布后 2 周内获得了近 120 颗星，我希望我能成功！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;skybrian:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这里的愤世嫉俗是疯狂的。你可以在 6 个月内完成很多工作，到那时价格可能会因为竞争而下降。如果您不傻的话，就没有任何锁定可以阻止您更换编码代理。&lt;p&gt;利用有限的优惠并没有什么错。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jpease:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看哪，看哪，野兽是如何咆哮的！它从深处大声喊叫，说：“喂我。”&lt;p&gt;真诚的，&lt;p&gt;销售和销售人员。营销&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deckar01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您欣赏开源维护人员，请检测用户何时在未经人工审核的情况下打开拉取请求并阻止它们。请随意继续燃烧他们的代币，只需停止发出拉取请求即可。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;japhyr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;起初我以为这里的人们对一个有益的程序的早期版本非常不同情。我可以看到一家公司最初设定了 6 个月的时间表，这样他们就可以重新评估该计划并选择如何发展对开源的支持。我预计会看到这样的内容：“在 6 个月结束时，我们将评估是否继续您的免费计划。”&lt;p&gt;但不，他们非常明确地表示这只不过是尝试从开源维护者那里获得付费订阅的一种方式：&lt;p&gt;&gt;您的免费订阅将在福利期结束时到期。到期后，任何现有订阅都将继续，除非您取消。您可以通过 Anthropic 的标准注册流程独立选择以当时的价格购买付费的 Claude 订阅。&lt;p&gt;因此，参与此活动的任何人都需要记住从现在起六个月后选择退出，否则突然发现自己的发票最高为 20 倍。&lt;p&gt;这非常难看。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.anthropic.com&amp;#x2F;claude-for-oss-terms" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.anthropic.com&amp;#x2F;claude-for-oss-terms&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sega_sai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;5000 颗星。这是一个有趣的阈值。 
-我检查过 astropy——天体物理学中几乎每个 Python 用户使用的主要 Python 模块有 5100 颗星。我猜想科学领域几乎没有开源代码能够通过这个门槛。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rhr-qlap:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不，谢谢，项目太重要了，不能浪费。为什么我想要被跟踪，这样你就可以看到我的思维过程、愚蠢的问题等？您稍后会出售该信息吗？&lt;p&gt;您的首席执行官曾多次吹嘘您的工具将如何让我失业。我为什么要参与其中？&lt;p&gt;你在没有归属的情况下窃取了我的代码。我为什么要使用版权侵权者的服务？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;evolve2k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;别太担心，伙计，尝试一下，前几个是我的，给你时间适应一下&amp;#x2F;S&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mittermayr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我可能在这里听起来不感恩，但这只是 Antropic 最近加强公关活动的味道，甚至帖子的标题都令人反感。&lt;p&gt;此外，虽然 6 个月比 1 个月好，但为什么它不是一个定期交易（或代币限制），在签到后续订（就像教育折扣一样）。这听起来像是您购买的每件 Apple 产品都会获得 Apple TV+ 优惠。一个钩子，不仅仅是一种款待。&lt;p&gt;在这种情况下，我想这只是建立一个自选的潜在客户名单的一种卑鄙方法，你可以在 6 个月后通过追加销售对其进行强力打击。&lt;p&gt;感谢您提供的一切*&lt;p&gt;*我们对免费服务有 6 个月的限制。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;smashah:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;5000+颗星证明这是一种销售策略&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stavros:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢 GitHub 和 Jetbrains 所做的事情，只要你是维护者，你就可以免费获得 Copilot 和 PyCharm。他们不断更新我的许可证。&lt;p&gt;6 个月的试用并不比“第一次破解免费”更能体现出对 OSS 的赞赏。是对你的好人表示赞赏。只是“你看起来像是一个有前途的客户”。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OutOfHere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;需要5000星吗？而且只有六个月？这是多么具有误导性的多级点击诈骗啊。但我知道，关于 Anthropic 的一切都是一个骗局，从过度使用代币到模型质量下降，再到各种对用户不利的行为。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Foxboron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;维护者：您是公共存储库的主要维护者或核心团队成员，拥有超过 5,000 个 GitHub star 或每月超过 100 万次 NPM 下载。您在过去 3 个月内进行了提交、发布或 PR 审查。&lt;p&gt;可笑。&lt;p&gt;这只是运行现代技术堆栈的 FOSS 社区的一小部分，甚至不重要。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sigmar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 维护者：您是公共存储库的主要维护者或核心团队成员，拥有 5,000 多个 GitHub star 或每月 100 万以上的 NPM 下载量。您在过去 3 个月内进行了提交、发布或 PR 审查。&lt;p&gt;为我们 gitlab 用户倒出一份:(&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nitinreddy88:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;本质上，他们希望您使用它 6 个月，然后让您使用他们的付费产品。聪明的&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bicx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;考虑到他们在开源软件上训练模型，他们至少可以做的就是将其免费无时间限制地提供给开源维护者。我相信他们可以想出其他方法来防止虐待。这个 6 个月的免费举动简直是雪上加霜，就像这只是为了从那些已经不自觉地为训练做出贡献的人身上榨取更多东西一样。这是我，一个克劳德·科德的粉丝说的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OskarS:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;6个月？所以这只是一个幻想，“第一个是免费的”。审判？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reconnecting:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不，谢谢。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://claude.com/contact-sales/claude-for-oss</guid>
-      <pubDate>Fri, 27 Feb 2026 09:08:58 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47178371</comments>
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;melecas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Vibe 编码使运输民主化，但没有使责任民主化。 18,000 名用户承担了他们不知道自己正在承担的风险的负面影响。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;firefoxd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Lovable 面向非开发人员销售，因此如果它呈红色闪烁，他们的核心用户将无法理解安全流程。我的许多非开发朋友去年在 LinkedIn 上发布了他们开发的很酷的新应用程序 [0]。有几个是在可爱的基础上制作的。用户不需要理解这些缺陷&lt;p&gt;这些应用程序看起来都一样，但调色板不同，这使得 LinkedIn 上的人工智能帖子引人入胜。现在他们大多被遗弃，等待订阅到期......我猜他们的个人数据会被暴露&lt;p&gt;[0]：&lt;a href="https:&amp;#x2F;&amp;#x2F;idiallo.com&amp;#x2F;blog&amp;#x2F;my-non-programmer-friends-built-apps" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;idiallo.com&amp;#x2F;博客&amp;#x2F;my-non-programmer-friends-built-app...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;julianlam:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;其中一个例子是格式错误的身份验证函数。对 Supabase 后端进行 vivi 编码的 AI 使用远程过程调用，使用有缺陷的访问控制逻辑来实现它，基本上阻止了经过身份验证的用户并允许未经身份验证的用户访问。&lt;p&gt;实际上听起来像是人类开发人员会犯的典型错误。忘记“！”或对是否要返回 true 或 false 感到困惑，逻辑就会翻转。&lt;p&gt;区别在于人类更有可能实际测试更改的输出。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ch4s3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直在思考如何利用生成的代码做好安全性工作。我一直在使用检查 CVE 依赖的工具、检查 SQL 注入和类似问题的静态工具，并将一些安全要求纳入我交给克劳德的规范中。我还不知道这是否比我以前做的或只是戏剧更好。在这种情况下，您似乎需要指定一些有关访问的测试。&lt;p&gt;我很想听听其他人如何处理这个问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;carlgreene:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于这个东西最难的部分是，作为用户，您不一定知道应用程序是否是 vivi 编码的。以前，您可以对安全性有_一些_合理的期望，因为训练有素的工程师是构建这些东西的人，但情况已不再如此。&lt;p&gt;有很多很酷的东西正在构建，但作为用户，现在尝试新事物是一个可怕的时刻。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.theregister.com/2026/02/27/lovable_app_vulnerabilities/</guid>
+      <pubDate>Fri, 27 Feb 2026 16:48:02 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47182659</comments>
     </item>
     <item>
-      <title>OpenAI 的 110B 轮融资（来自亚马逊、Nvidia、软银的投资）</title>
-      <link>https://www.reuters.com/business/retail-consumer/amazon-invest-50-billion-openai-2026-02-27/</link>
-      <guid isPermaLink="true">https://www.reuters.com/business/retail-consumer/amazon-invest-50-billion-openai-2026-02-27/</guid>
-      <pubDate>Fri, 27 Feb 2026 14:44:52 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47181051</comments>
+      <title>不要在您的主机上运行 OpenClaw</title>
+      <link>https://blog.skypilot.co/openclaw-on-skypilot/</link>
+      <description>&lt;p&gt;为什么你不应该在你的主机上运行它#OpenClaw 的架构为 AI 代理提供了与你在你的机器上大致相同的访问级别。 “提示注入问题#核心问题是LLM无法可靠地区分您处理的内容中的合法指令和嵌入的恶意指令。真正的漏洞已经浮出水面#CVE-2026-25253：未经身份验证的WebSocket漏洞，允许恶意网站静默提取身份验证令牌并向OpenClaw实例发出命令。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Don't run OpenClaw on your main machine&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47183503"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.skypilot.co/openclaw-on-skypilot/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alienbaby:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;将其放入盒子中，然后授予其对所有有价值数据的读写访问权限。这样就可以了......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andersmurphy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很惊讶人们不使用 Lima（快速无头本地虚拟机，您可以在其中挂载文件夹）。 [1]&lt;p&gt;[1] - &lt;a href="https:&amp;#x2F;&amp;#x2F;lima-vm.io&amp;#x2F;docs&amp;#x2F;examples&amp;#x2F;ai&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;lima-vm.io&amp;#x2F;文档&amp;#x2F;示例&amp;#x2F;ai&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sigmar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;而不是我做“pip install skypilot”在终端中，为什么 skypilot 不制作一个可以配置云资源的 skypilot 智能手机应用程序？然后甚至可以通过使应用程序成为消息传递客户端（与 openclaw 服务器通信）来摆脱 Whatsapp&amp;#x2F;telegram 依赖&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ok123456:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Firejail 似乎是适合您需要隔离的稍微复杂的桌面应用程序的正确工具，该应用程序容器化并不简单。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LostAndSmelly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你的人工智能不应该能够提交辞职电子邮件或向你的伴侣发送请求离婚的短信。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tomComb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为 nanoclaw 实际上就是为了这样运行而设计的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hopechong:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们已经看到很多人直接在他们的主机上运行 OpenClaw，这是一个坏主意，原因有几个：它需要广泛的系统访问，它对资源的干扰很大，如果出现问题，你需要一个干净的爆炸半径。
+显而易见的答案是“将其隔离”。但孤立确实存在摩擦。您需要配置一台机器，处理 SSH 密钥，配置安全组，并记住拆除所有东西，这样您就不会泄露金钱。
+这篇文章将介绍三个现实的选择：&lt;p&gt;Docker – 摩擦最小，但共享您的内核，并且根据 OpenClaw 需要做什么而有限制
+专用硬件 – 最好的隔离，但您需要支付 24&amp;#x2F;7 并且需要时间来设置
+云 VM – 对大多数人来说最有利的地方：真正的隔离、按使用付费、完成后将其拆除&lt;p&gt;对于云 VM 路径，我们展示了如何使用单个命令在 AWS、GCP、Azure 或任何其他云上启动强化的 OpenClaw 环境，为您处理配置、SSH 和自动拆除。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.skypilot.co/openclaw-on-skypilot/</guid>
+      <pubDate>Fri, 27 Feb 2026 18:06:26 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47183503</comments>
+    </item>
+    <item>
+      <title>《海伯利安》、《卡利之歌》的作者丹·西蒙斯去世，享年 77 岁</title>
+      <link>https://en.wikipedia.org/wiki/Dan_Simmons</link>
+      <description>&lt;p&gt;来自免费百科全书维基百科美国科幻小说和恐怖作家（生于 1948 年）本文需要额外引用以供验证。 [7][8]《夏日之夜》之后，西蒙斯专注于科幻小说创作，直到2007年的历史小说和恐怖作品《恐怖》。 [9] 历史小说[编辑] 《恐怖》（2007）跨越了恐怖和历史小说之间的桥梁。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Dan Simmons, author of Hyperion, Song of Kali, dead at 77&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47183578"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://en.wikipedia.org/wiki/Dan_Simmons'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Freak_NL:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;《海伯利安篇章》是每个科幻迷都应该读过的杰作，但我想向至少读过查尔斯·狄更斯（不言自明）和威尔基·柯林斯的一些作品（例如《白衣女人》或《月光石》）的读者推荐西蒙斯的一个鲜为人知的书名。&lt;p&gt;西蒙斯写了《德鲁德》（2009），该书取材于这两位古典作家并将它们放入悬疑小说中。让我印象特别高超的是，西蒙斯成功地以这样一种方式写散文，作为读者，你很快就会忘记这本书不是在 1900 年代写的——他的语气和风格与狄更斯和柯林斯的风格如此令人信服地匹配。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jnellis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;海伯利安的图书馆等待名单长达数月之久。我现在正处于海伯利安的陨落之中。写得很棒。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LaurensBER:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很遗憾读到这篇文章，前几天我只是想重读整个传奇。他的话语和思想将永远活在我的脑海里。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jabroni_salad:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;稍后见，鳄鱼……&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rwmj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;尽管与《海伯利安》这样的精彩太空歌剧相比，这是一部相当有缺陷的小说，但我对《腐肉舒适》还是有一点情有独钟。  我认为这会成为一部很棒的电影！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throw0101a:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;讣告：&lt;p&gt;* &lt;a href="https:&amp;#x2F;&amp;#x2F;www.dignitymemorial.com&amp;#x2F;讣告&amp;#x2F;longmont-co&amp;#x2F;daniel-simmons-12758871" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.dignitymemorial.com&amp;#x2F;讣告&amp;#x2F;longmont-co&amp;#x2F;danie...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://en.wikipedia.org/wiki/Dan_Simmons</guid>
+      <pubDate>Fri, 27 Feb 2026 18:13:39 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47183578</comments>
+    </item>
+    <item>
+      <title>Block 在 2025 年 9 月的一次聚会上花费了 6800 万美元</title>
+      <link>https://twitter.com/BullTheoryio/status/2027250361816486085</link>
+      <description>&lt;p&gt;我们检测到该浏览器中禁用了 JavaScript。请启用 JavaScript 或切换到支持的浏览器以继续使用 x。服务条款 隐私政策 Cookie 政策 版本说明 广告信息 © 2026 X Corp.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Block spent $68M on a single party in September 2025&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47183660"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://twitter.com/BullTheoryio/status/2027250361816486085'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pavel_lishin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;食物200美元&lt;/i&gt;&lt;p&gt;&lt;i&gt;数据150美元&lt;/i&gt;&lt;p&gt;&lt;i&gt;房租800美元&lt;/i&gt;&lt;p&gt;&lt;i&gt;聚会68,000,000美元&lt;/i&gt;&lt;p&gt;&lt;i&gt;水电费150美元&lt;/i&gt;&lt;p&gt;&lt;i&gt;懂经济的人请帮我预算一下。我的公司快要死了&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aitforalll:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;部署 50% 的劳动力是显而易见的解决方案。明年的聚会将只有 3400 万美元。再重复 4 次，您的资金就会减少到略高于 400 万美元。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andersmurphy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很好奇他们在比特币崩盘中损失了多少。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rsynnott:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;...即每位员工 7,000 美元。我想了解更多有关这个聚会的信息 :D&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;npilk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;仅仅因为 G&amp;A 增加了 6800 万美元，并不意味着它全部花在了那个聚会上......&lt;p&gt;编辑：没关系，报告澄清，如果没有聚会费用，G&amp;A 将会同比持平。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rwmj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;xcancel.com&amp;#x2F;BullTheoryio&amp;#x2F;状态&amp;#x2F;2027250361816486085" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;xcancel.com&amp;#x2F;BullTheoryio&amp;#x2F;状态&amp;#x2F;2027250361816486085&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://twitter.com/BullTheoryio/status/2027250361816486085</guid>
+      <pubDate>Fri, 27 Feb 2026 18:18:58 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47183660</comments>
+    </item>
+    <item>
+      <title>五角大楼威胁人类是一个错误</title>
+      <link>https://www.understandingai.org/p/the-pentagon-is-making-a-mistake</link>
+      <description>&lt;p&gt;Anthropic于7月份与国防部签署了一份价值2亿美元的合同。五角大楼担心的是，克劳德自己可能会拒绝采取违反人类规则的行动。但这可能说起来容易做起来难。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Pentagon is making a mistake by threatening Anthropic&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47181380"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.understandingai.org/p/the-pentagon-is-making-a-mistake'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 19 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrexcess:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只是想注意两级不平衡的出现。前沿人工智能提供商将护栏堆得如此之高，以至于普通公民甚至无法问法学硕士胸部是什么，但同时为政府提供的人工智能却缺乏“任何合法目的”的护栏。&lt;p&gt;这从根本上是反民主的，它使偏离“同一法律管辖所有人”的西方启蒙运动标准正常化。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FrustratedMonky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;NDAA（“华为规则”）适用于外国实体渗透或接管相关公司的情况。&lt;p&gt;但国防部希望使用 Anthropic，因此确实确认不存在外国实体问题。  他们想要使用它。&lt;p&gt;因此，使用 NDAA（“华为规则”）是赤裸裸的虚假行为，并且被用作惩罚。&lt;p&gt;如果允许这种情况发生，可能会被用来对付任何美国公司，以强制遵守该制度。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FrustratedMonky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，确实如此。  军方已将自己置于主张大规模监视和自主武器的地位。这可以通过什么方式转化为积极的一面。&lt;p&gt;他们争论说要做一些无论如何都不应该被允许的事情。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;snowwrestler:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;使用 DPA 可能会引起诉讼，而且肯定会引起诉讼。肯定也会被指定为供应链风险。&lt;p&gt;这些法庭案件无论如何都会产生不良结果。如果法院做出有利于人性化的裁决，未来的国防部领导层将发现自己受到限制，或者至少是冰冷。或者，如果法院裁定政府有利，对《数据保护法案》的广泛宽容观点可能会鼓励未来政府迫使科技公司以其他方式让人工智能违法，例如通过压制输出中的某些政治观点。&lt;p&gt;如果军队极其强大，但在运用这一权力时又谨慎明智，那么国防是最强大的。这为我们提供了最高的“高端”性能能力。如果军事领导层坚持鲁莽行事，那么最终会设置护栏，其结果是有效应对低概率、高风险时刻的能力下降。当前的政治领导层似乎并不理解众多细微差别和悖论之一。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;y-c-o-m-b:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我相信他们害怕中国，当你考虑到他们对委内瑞拉、伊朗采取的行动以及越来越多地采用独裁策略时，这一点似乎很明显。我们正在努力追赶中国作为超级大国的快速崛起，而人工智能基础设施是目前我们仍能控制的少数重大发展之一。我同情达里奥，他在这方面的处境非常糟糕。我们不希望中国在这个层面上运作，而我们却袖手旁观。另一方面，本届政府做出了极其糟糕的决定，并且可以说在国内和国际上造成了广泛的伤害，所以这对达里奥来说确实是一个双输的局面。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;正在进行的相关主题：&lt;p&gt;&lt;i&gt;达里奥·阿莫迪 (Dario Amodei) 关于我们与战争部讨论的声明&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47173121"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47173121&lt;/a&gt; - 2026 年 2 月（1405 条评论）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;khalic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不敢相信有多少人相信人择论的表面意义。你需要把注意力集中在他们含蓄地承认的事情上。他们将监视非美国公民。如何慈善&lt;p&gt;编辑：否决者提出反驳而不是试图埋葬此评论怎么样？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jstummbillig:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一方面，人们正在抵制，如果没有其他的话，提高意识并争取时间，这真是太棒了。&lt;p&gt;另一方面，考虑到能力增长的速度有多快，而且它根本不需要太多的智力（相对而言）来建造一个用枪指着某物并扣动扳机的东西，自主战争显然不是结局吗？&lt;p&gt;它只需要一个玩家就能做到，所以每个人都必须能够做到。我很想听听不同的场景。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Eggpants:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是这里单独挑出了“人择”。  这要么意味着：&lt;p&gt;1- OpenAI、微软、谷歌、亚马逊等公司对于他们的产品被用来杀人没有任何问题，所以没有必要欺负他们。&lt;p&gt;2- 这些其他产品在这项任务上太糟糕了，以至于穿着 SecDef 的小丑鞋被迫尝试欺负 Anthropic。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tokyobreakfast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;想象一下，一位国防专家告诉美国国防部，“我们不会为你建造这些飞机，它们太致命了！”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;owenthejumper:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这种情况的一切都绝对是疯狂的。据我所知，将一家美国公司标记为供应链风险之前还没有做过，而且这家公司肯定会被终结。&lt;p&gt;这基本上是美国政府单方面决定终结一家领先的人工智能研究公司。随之而来的是多年的诉讼，与“共产主义”的比较，特朗普“赫塞斯”是中国和俄罗斯特工的指控（因为除了杀死你的两名前两名之一之外，你还能如何将人工智能的胜利拱手让给中国呢？）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JumpCrisscross:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对这次互动的解读是达里奥正在呼唤赫格斯塞斯。虚张声势。后者甚至不知道自己陷入了虚张声势，因为 Hegseth 是个白痴。&lt;p&gt;国防部长援引 DPA 来反对 Anthropic 可能会破坏人工智能筹款市场，至少在一段时间内是这样。这就是 OpenAI 涉足这场战斗的原因 [1]。鉴于道琼斯指数对人工智能的预期不断上升，这也将其击垮。如果说特朗普一直坚守并传达了一条红线，那就是不要惹恼道琼斯指数。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.axios.com&amp;#x2F;2026&amp;#x2F;02&amp;#x2F;27&amp;#x2F;altman-openai-anthropic-pentagon" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.axios.com&amp;#x2F;2026&amp;#x2F;02&amp;#x2F;27&amp;#x2F;altman-openai-anthropic-pen...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LogicFailsMe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在这里不抱太大希望。当大多数亿万富翁阶层的精英在特朗普任期之初向他投降时，这为接下来的一切定下了基调。令我震惊的是，这么多人愿意看到他践踏宪法和权力分立，而如果任何其他政党尝试这样做，他们会像被困的猪一样尖叫。我想这就是很多有影响力的美国人喜欢的方式。就像我说的，希望不大。 YMMV。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dirk94018:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这将其描述为五角大楼与人类，但实际问题是在上游。如果我们告诉公司他们必须防止所有可能的伤害，那么你就是在陷害他们：削弱模型并默默地失去无人能量化的价值，或者不削弱模型并为每一个不良结果承担责任。我们也不想要削弱的模型。 DoW 是这么说的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TimorousBestie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;文章没有表现出对 DoW 与承包商关系的良好理解。人类想要那些甜甜的纳税人的钱——好吧，这就是当你进行浮士德式讨价还价时会发生的事情。&lt;p&gt;&amp;gt;一种选择是援引《国防生产法》。 。 .&lt;p&gt;&gt;另一个威胁是宣布 Anthropic 为供应链风险。 。  .&lt;p&gt;第一个是一巴掌，仍然让政府得到他们想要的；第二个是对人类的生存威胁。他们的主要伙伴都是“军狗”。 Microsoft、Intuit、NVIDIA：所有政府承包商。我找不到一家与他们有工作关系的公司不持有至少一份政府合同。&lt;p&gt;克劳德可以通过伪造合同条款的变化来摆脱困境的想法是愚蠢的。美国国防部拥有各种法律和行政工具，可以选择用来对付不履约的承包商。通常情况下不会，因为有一个“规范”规定，当政府不尝试进行微观管理时，私人国防部门的运行会更加顺利。&lt;p&gt;再次提醒我，本届政府在维护规范方面有多出色？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delichon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Anthropic 拥有出色的资产负债表。它基本上拥有操你妈的钱，可以让它在没有生存风险的情况下摆脱联邦低谷。希望像我这样的用户提供的额外资金可以补偿，然后在时间充裕时再补偿一些。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nubg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;整个僵局可能会开创一个非常重要的先例，即特朗普政府没有得到他们想要的东西，而不是“摆脱新闻聚光灯”。某种方式（例如格陵兰岛），但在公开场合“当着你的面滚蛋” &lt;p&gt;Anthropic 可能发生的最糟糕的情况是上面提到的两件事之一；失去五角大楼的一些合同或一些虚假的强制管理。也许达里奥必须离开，这对他和相信他的人来说肯定是一种损失，但可能不会改变世界。&lt;p&gt;特朗普政府可能发生的最糟糕的情况就是结束的开始，当人们意识到你可以简单地抵抗他们的欺凌，而他们同时进行的所有对峙时，也许他们会被千刀万剐而死？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;riffic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;五角大楼&lt;/i&gt;是一座建筑物的名称（几乎是一个非常大的自行车棚）。我看到作者将实际机构称为国防部，其中一位相关官员是国防部长。有趣的是，自行车棚本身也有自己的&lt;i&gt;发言人&lt;/i&gt;人员。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bediger4000:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我同意。这是一个惊人的错误。 Anthropic拥有最好的“AI”在这个星球上。人择可以旋转出巨大的“克劳德”并规划五角大楼周围的环。国防部最好习惯输掉这场战斗。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.understandingai.org/p/the-pentagon-is-making-a-mistake</guid>
+      <pubDate>Fri, 27 Feb 2026 15:08:29 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47181380</comments>
     </item>
   </channel>
 </rss>
