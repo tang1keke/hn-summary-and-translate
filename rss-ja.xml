@@ -6,121 +6,55 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 01 Mar 2026 18:42:50 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Mar 2026 21:28:58 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>CLI と比較して MCP が意味を持つのはどのような場合ですか?</title>
-      <link>https://ejholmes.github.io/2026/02/28/mcp-is-dead-long-live-the-cli.html</link>
-      <description>&lt;p&gt;認証はすでに機能しています MCP は認証について不必要に意見を持っています。必要なときはそこにあり、必要のないときは見えなくなります。その粒度が重要です。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; When does MCP make sense vs CLI?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47208398"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://ejholmes.github.io/2026/02/28/mcp-is-dead-long-live-the-cli.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Microgpt をインタラクティブに説明</title>
+      <link>https://growingswe.com/blog/microgpt</link>
+      <description>&lt;p&gt;それぞれの名前は文書です。各トークンは、各文字に異なる色を割り当てるような、単なる別個のシンボルです。 " モデルが確率 0 を割り当てる場合。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Microgpt explained interactively&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47205208"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://growingswe.com/blog/microgpt'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 22 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iamspoilt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この記事で作成した kubectl の例に対する反論として、k8s MCP (&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;containers&amp;#x2F;kubernetes-mcp-server") を見つけました。 rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;containers&amp;#x2F;kubernetes-mcp-server&lt;/a&gt;) は、実行ツールや削除ツールなどの特定のツールへの LLM アクセスを制限しようとする場合に特に役立ちます。これは、kubectl CLI を使用する場合はすぐには実行できません (--as または --as-group フラグとLLM には、それらがどのユーザー&amp;#x2F;ユーザーグループであるかを伝えないでください)。&lt;p&gt;私は、VSCode の Github Copilot Chat 内で直接 kk8s MCP を使用し、Configure Tools プロンプトで書き込みツールを制限しました。この MCP と IDE の統合によって確立された疑似プロトコルを使用すると、そのようなプリミティブを持たない場合よりも、LLM にライブ K8s クラスタのデバッグを促す方がはるかに安全であることがわかりました。&lt;p&gt;したがって、なぜ MCP が廃止されるのか、廃止されるべきなのかわかりません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;appsoftware:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;??私は現在、openclaw を備えた独自のリモート MCP サーバーを使用しています。 CLI の使用例は理解しています。 Lex Friedman へのインタビューの中で、作成者は、応答を grep できるなど、CLI の利点のいくつかを強調しています。ただし、認証に OAuth が使用される場合など、リモート MCP が非常にうまく機能する状況もあります。MCP サーバー上のエンドポイントにアクセスし、スコープの認証と認可にリダイレクトされ、認証サーバーが MCP サーバーに応答します。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mudkipdev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;目の前で改名されました&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;the_mitsuhiko:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; OpenClaw はそれをサポートしていません。 Pi はこれをサポートしていません。&lt;p&gt;これら 2 つから何かを結論付けるのは最適ではない可能性があります。  AI エージェントのウィーン派は自己拡張エージェントに焦点を当てており、それは MCP とはあまり互換性がありません。  MCP が非常に定着しており、おそらく今後も残り続けるアプローチが他にもたくさんあります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whatever1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最初は RAG を求めてやって来ましたが、今では MCP を求めています。次は何でしょうか？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ddp26:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;CLI と MCP の違いがわかりません。 Claude Code のような CLI では、MCP はステータス ポーリングなどの多くの追加機能を提供しますが、どの API を呼び出すかについて生のドキュメントでは正しく理解するのが困難です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Nevin1901:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;実はこれは、私が投稿者の意見に同意した最初の使用例です。特に AI を使用する技術者にとっては非常に興味深いものです。 1 つのマニュアル ページを提供できるのに、なぜ mcp サーバーのセットアップとインストールに時間を費やす必要があるのでしょうか&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dnautics:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;正直なところ、MCP とスキル + 命令 + Curl の違いは何ですか。&lt;p&gt;実際のところ、違いは、MCP の方がトークン効率が&lt;i&gt;良い&lt;/i&gt;ようですが、そうではないということです。すべての MCP の命令を常にコンテキストにダンプするためです。&lt;p&gt;もちろん、スキルは頻繁にトリガーされません。&lt;p&gt;コーディング エージェントのように見えます。バグの選択とプロトコルの設計?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lasgawe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これについてはわかりません。 AI を使用していますが、MCP を使用したことも試したこともありません。現在のツールでは問題が発生したことはありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;p_ing:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ビジネス ユーザーに、エージェントを作成するときに CLI を使用するように伝えます。それは起こっていないだけです。 MCP は、彼らにとってポイント アンド クリックです。&lt;p&gt;MCP は、少なくともテクノロジー業界の外では、まだ死んでいません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bikeshaving:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は、Read()、Write()、Edit()、MultiEdit()、Replace() ツールなどのデフォルトの Claude ツールが、cat、sed、grep、find を組み合わせた単なる Bash() ではないのはなぜかと疑問に思っています。シェルを介してすべてをパイプする方が簡単ではないでしょうか?必要なのは、その権限を理解することだけです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AznHisoka:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;企業が実際に何を導入しているかという点では、MCP はずっと前に死んだわけではありません。 MCP サーバーを導入している企業の数は過去 6 か月で 242% 増加し、実際に加速しています (ブルームベリーによる) [1]&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;bloomberry.com&amp;#x2F;blog&amp;#x2F;we-analyzed-1400-mcp-servers-heres-what-we-learned&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;bloomberry.com&amp;#x2F;blog&amp;#x2F;we-analyzed-1400-mcp-servers-her...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rvz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;MCPは水中で死んでおり、そもそも完全に悪い基準でした。誇大宣伝はまったく意味がありませんでした。&lt;p&gt;あちこちに多くの問題やセキュリティ上の問題があっただけでなく、複雑になるように設計されていました。&lt;p&gt;たとえば、なぜパスワード マネージャーに MCP サーバーが必要なのでしょうか。 [0]&lt;p&gt;それでも、CLI がすべてにおいて優れているというわけではありません。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=44528411"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=44528411&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;goranmoomin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;誰もが MCP と CLI、どちらが優れているかについて話しているのが信じられません。どちらもツール呼び出しの方法であり、同じ機能を提供する限り、LLM がツール呼び出しにどの形式を使用するかは&lt;i&gt;問題ではありません&lt;/i&gt;。 CLI のほうがわずかに優れている可能性があります (LLM は一般的な CLI でトレーニングされている可能性があります)。ただし、MCP にも用途 (複雑な認証、ユーザーをデータ ソースに接続する) があり、私の経験では、フロンティア モデルのいずれかを使用している場合、どのツール呼び出し形式を使用しているかは実際には問題ではありません。特注のフォーマットも機能します。&lt;p&gt;議論されるべき違いは、スキルによってより効率的なコンテキスト管理がどのように可能になるかということです。スキルは CLI の使用に関連していることがよくありますが、その理由はわかりません。たとえば、Amp を使用すると、スキルに MCP サーバーを接続できます。MCP サーバーは、エージェントがそのスキル [0] をロードすると自動的に起動します。 MCP サーバーと CLI の両方にとって、それらをスキルに含めることが効率的なコンテキストを実現する方法であると信じており、他のエージェントにもこれと同じ機能が採用されることを願っています。&lt;p&gt;[0]: &lt;a href="https:&amp;#x2F;&amp;#x2F;ampcode.com&amp;#x2F;manual#mcp-servers-in-skills" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ampcode.com&amp;#x2F;manual#mcp-servers-in-skills&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ako:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私にとって CLI の最大の欠点は、コンテナ内で実行する必要があることです。エージェントに CLI ツールの実行を許可しているため、エージェントが実行できることを制限する必要があります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;juanre:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;MCP の終焉に関する報道は非常に誇張されていますが、LLM へのインターフェイスがブラウザ ウィンドウでのチャットではない場合、CLI は確かに正しい選択です。&lt;p&gt;たとえば、エージェントが他のエージェントと通信できるように、&lt;a href="https:&amp;#x2F;&amp;#x2F;claweb.ai" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;claweb.ai&lt;/a&gt; を構築しました。これらは、すべての詳細を管理する OSS Go CLI である aw [1] を実行します。これは、同期チャットができることを意味します (MCP では不可能ではありませんが、非常に困難です)。また、メッセージへの署名や (近日公開予定の) e2ee も有効になります。私の知る限り、これは MCP を使用すると不可能です。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;awebai&amp;#x2F;aw" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;awebai&amp;#x2F;aw&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;recursivedoubts:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;MCP は、エージェント API 標準として 1 つのことを実現しています。それは、トークンの効率です。&lt;p&gt;すべての機能に対する単一リクエスト モデル + JSON RPC は、ほとんどの代替手段よりもトークンの効率が高くなります。  多くの点で柔軟性が劣りますが、現在の ReAct などのエージェント AI モデルを考慮すると、会話は API 応答とともに幾何学的に増加するため、トークンの効率は非常に重要です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mt42or:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この種の人々がまったく同じように Kubernetes に対して反対したことを私は覚えています。とても面白い。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CuriouslyC:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;昨年の 5 月からしばらくの間、反 MCP プロ CLI の動きがありました (それ以来、私は個人的にこのドラムを叩いてきました) が、MCP には非常に現実的なユースケースがあると思います。&lt;p&gt;具体的には、MCP はカプセル化の優れた単位です。安全なエージェント フレームワーク (&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;sibyllinesoft&amp;#x2F;smith-core" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;sibyllinesoft&amp;#x2F;smith-core&lt;/a&gt;) を持っており、サイドカーとプラグを介して MCP をマイクロサービスに変換します。それらをサービス メッシュに統合すると、既存のポリシーと管理ツールを活用して、エージェント機能の保護が非常に簡単になります。そうすれば、エージェントはすべてに CLI を必要とするのではなく、bash ですべてをカールするだけで済みます。 CLI はまだトークン効率がわずかに優れていますが、全体的にはスキームのシンプルさと強力さが大きな利点です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;orange_joe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはトークンのコストをあまり考慮していません。静的に依存する一連の呼び出しを行っている場合、中間状態に関する情報によってコンテキストが破壊されることを避けたいと考えています。また、X、Y、および X の実行方法に関する skill.md ファイルをユーザーに送信することはあまり望んでいません。 Z.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;phpnode:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一部の&lt;i&gt;コンテキスト&lt;/i&gt;では、CLI + スキルが MCP の優れた代替手段であることに疑いの余地はありませんが、開発者以外向けにアプリを構築していて、ユーザーが任意のデータ ソースに接続できるようにする必要がある場合、代わりに CLI を使用する賢明で安全な方法はありません。 MCP は長期間存続する予定であり、現在よりもさらに改善されることが期待されます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lukol:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これ以上同意することはできません。多くの場合、単純な REST API も同様の役割を果たします。 MCPは最初からバイブでコーディングされた熱狂的な夢のように感じました。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://ejholmes.github.io/2026/02/28/mcp-is-dead-long-live-the-cli.html</guid>
-      <pubDate>Sun, 01 Mar 2026 16:54:49 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47208398</comments>
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;windowshopping:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私が理解できないのは、ここからどのようにして任意のコーディングの問題をデバッグする機能に到達するかということです。統計的推論はどのようにして推論になるのでしょうか?&lt;p&gt;長い間、統計的推論は推論ではないというのが答えだと思われていました。しかし今、Claude コードを毎日使用していると、それが実現しているようです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;politelemon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;トレーニングが終了するまでに、モデルは「kamon」、「karai」、「anna」、「anton」などの名前を生成します。どれもデータセットからのコピーではありません。&lt;p&gt;データセットには kamon、karai、anna、anton が表示されています。他の名前を使用する価値はあります: &lt;a href="https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;karpathy&amp;#x2F;makemore&amp;#x2F;988aa59&amp;#x2F;names.txt" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;karpathy&amp;#x2F;makemore&amp;#x2F;988aa59&amp;#x2F;...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://growingswe.com/blog/microgpt</guid>
+      <pubDate>Sun, 01 Mar 2026 09:43:43 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47205208</comments>
     </item>
     <item>
-      <title>新しい鉄ナノ材料は健康な組織を傷つけることなくがん細胞を一掃します</title>
-      <link>https://www.sciencedaily.com/releases/2026/02/260228093456.htm</link>
-      <description>&lt;p&gt;この二重の攻撃は、健康な組織を温存しながら、酸化ストレスでがん細胞を圧倒します。クレジット: Shutterstock オレゴン州立大学の研究者は、がん細胞を内部から破壊するように設計された新しいナノ材料を作成しました。関連トピック 健康と医学 乳がん 膵臓がん 個別化医療 職場の健康 遺伝子 がん 女性の健康 病気と症状 関連用語 がん モノクローナル抗体療法 成人幹細胞 胚性幹細胞 心臓遺伝子治療 ナチュラルキラー細胞 パニック発作 ストーリー 出典: オレゴン州立大学から提供された資料。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; New iron nanomaterial wipes out cancer cells without harming healthy tissue&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47207404"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.sciencedaily.com/releases/2026/02/260228093456.htm'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xbar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;昨日、兄を癌で亡くしました。  いつかこれで命が救われることを願っています。ビーブスに行きなさい。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RomanPushkin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私の家族ががんを経験しているので、こうした話題はすべて非常に刺激的であることは確かですが、過去 5 年間、平均的な患者の転帰を大幅に改善する画期的な進歩はありませんでした。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Flere-Imsaho:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;いつものように、この種の新しいテクニックは良い結果をもたらしますが、有望に聞こえます。&lt;p&gt;しかし、Gemini 3.1 pro で特定された問題は次のとおりです。&lt;p&gt;1.人体のスケール: マウスは小さいため、血流に注入されたナノ粒子は素早く循環し、腫瘍に当たる可能性が高くなります。人間の循環系は広大です。ヒトの肝臓、脾臓、腎臓は、巨大で効率の高いフィルター (細網内皮系) として機能し、多くの場合、金属有機フレームワーク (MOF) が腫瘍に到達するずっと前にトラップされ、体外に除去されます。&lt;p&gt;2。腫瘍構造：これらの研究で使用されるマウスモデルは通常「異種移植片」、つまり皮膚の下で数週間かけて急速に成長する腫瘍です。ヒトの腫瘍は何年にもわたって発生し、高密度で線維質の瘢痕様組織 (間質) と高圧のコアを構築します。たとえナノ粒子がヒトの腫瘍の外側に到達したとしても、多くの場合、塊全体を根絶するほど高密度のヒト組織に物理的に深く浸透することはできません。&lt;p&gt;3.免疫系の違い: 実験用にマウスでヒトの腫瘍を増殖させるには、科学者は多くの場合、免疫不全マウス (腫瘍を拒絶しないように免疫系を持たずに飼育されたマウス) を使用する必要があります。非常に攻撃的な免疫システムが損なわれていない人間に外来の鉄ベースのナノ材料を注射すると、体がその粒子を攻撃し、重篤な全身性炎症や免疫毒性を引き起こす可能性があります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esafak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それが効果があった場合、大規模な場合、治療ごとにおおよそいくらくらいの費用がかかる可能性がありますか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;msie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;致死期の癌患者に投与すべきだ。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dyauspitr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;がん細胞を遺伝的に標的としないものは、長期的には解決策とはなりません。どのような進歩でも良いのですが。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mcc1ane:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;マウスでは？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.sciencedaily.com/releases/2026/02/260228093456.htm</guid>
-      <pubDate>Sun, 01 Mar 2026 15:09:55 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47207404</comments>
+      <title>運用上の問題 – 複数のサービス (UAE)</title>
+      <link>https://health.aws.amazon.com/health/status</link>
+      <guid isPermaLink="true">https://health.aws.amazon.com/health/status</guid>
+      <pubDate>Sun, 01 Mar 2026 19:24:30 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47209781</comments>
     </item>
     <item>
-      <title>リル・ファン・ラングスのガッツ</title>
-      <link>https://taylor.town/scrapscript-001</link>
-      <description>&lt;p&gt;ブートストラップされたコンパイラは、それ自体をコンパイルします。コンパイラは Haskell で書かれており、自動的にコンパイルできます。コンパイラはプログラムを別の言語に翻訳します (例:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Lil' Fun Langs' Guts&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47207531"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://taylor.town/scrapscript-001'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>なぜ C には最高のファイル API があるのか</title>
+      <link>https://maurycyz.com/misc/c_files/</link>
+      <description>&lt;p&gt;ファイルをロードすると、数値が必要なだけの場合でもコードが実行される可能性があります。ファイル操作も同様に無視されます。これは、メモリに制約のあるシステムでは当てはまりません。また、100 GB のファイルの場合、すべてのシステムがメモリに制約を受けます。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Why does C have the best file API&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47209788"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://maurycyz.com/misc/c_files/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;librasteve:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはとても楽しそうです。あまり知られていない事実は、元のraku 実装者は全員 Haskell ヘッドであり、PUGS の最初のraku パーサーの 1 つは Audrey Tang によって Haskell で書かれたということです。&lt;p&gt;Raku は主にカスタム サブセット「NQP」で書かれており、チームは現在、Raku パーサーをraku Grammar として書き換える 6.e 用の RokuAST に本格的に取り組んでいます。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://taylor.town/scrapscript-001</guid>
-      <pubDate>Sun, 01 Mar 2026 15:23:42 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47207531</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FrankWilhoit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ファイル API は&lt;i&gt;ファイルシステム&lt;/i&gt; API とは異なります。  聖杯は依然として普遍的ですが、（十分に）高いレベルのファイルシステム API です。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://maurycyz.com/misc/c_files/</guid>
+      <pubDate>Sun, 01 Mar 2026 19:25:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47209788</comments>
     </item>
     <item>
-      <title>HN を表示: エージェント用の音声ツールキット</title>
-      <link>https://github.com/shiehn/sas-audio-processor</link>
-      <description>&lt;p&gt;分析 sas-processor 分析 --input &lt;ファイル&gt; BPM、継続時間、サンプル レート、およびチャネル数を返します。 time-stretch sas-processor time-stretch --input &lt;file&gt; --output &lt;file&gt; --source-bpm &lt;float&gt; --target-bpm &lt;float&gt; ピッチを維持しながらテンポを変更します。正規化 sas-プロセッサー 正規化 --input &lt;ファイル&gt; --output &lt;ファイル&gt; [--mode lufs|peak] [--target-lufs -14] [--target-peak -1] ゲイン sas-プロセッサー ゲイン --input &lt;ファイル&gt; --output &lt;ファイル&gt; --db &lt;float&gt; mono sas-processor mono --input &lt;ファイル&gt; --output &lt;ファイル&gt; 変換 sas-プロセッサー 変換 --input &lt;ファイル&gt; --output &lt;ファイル&gt; [--sample-rate &lt;int&gt;] [--bit- Depth 16|24|32] Silence-remove sas-processor Silence-remove --input &lt;file&gt; --output &lt;file&gt; [--top-db 30] compress sas-processor compress --input &lt;file&gt; --output &lt;file&gt; [--threshold -20] [--ratio 4] [--att.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Audio Toolkit for Agents&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47207806"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/shiehn/sas-audio-processor'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;enmerk4r:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これを A2A エージェントに実装すると楽しいでしょう。とてもクールです。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/shiehn/sas-audio-processor</guid>
-      <pubDate>Sun, 01 Mar 2026 15:52:02 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47207806</comments>
-    </item>
-    <item>
-      <title>Servo の 1 月: プリロード、フォームの改善、詳細なスタイリングなど</title>
-      <link>https://servo.org/blog/2026/02/28/january-in-servo/</link>
-      <description>&lt;p&gt;keepalive (@TimvdLippe、@WaterWhisperer、#41457、#41811) 循環インポート、インポート属性、および JSON モジュール (@Gae24、#41779) ナビゲーター。デフォルトでは sendBeacon() (@TimvdLippe、#41694); dom_navigator_sendbeacon_enabled 設定は削除されました。 &lt;style Blocking&gt; と &lt;link Blocking&gt; を使用して、動的に追加されるスタイルシートのロード中にレンダリングをブロックできるようになりました (@TimvdLippe、#42096)。また、ドキュメントの解析時にロードされたスタイルシートは、ドキュメントの「ロード」イベントをより一貫してブロックします (@TimvdLippe、@mrobinson、#41986、#41987、#41988、#41973)。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; January in Servo: preloads, better forms, details styling, and more&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47208744"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://servo.org/blog/2026/02/28/january-in-servo/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://servo.org/blog/2026/02/28/january-in-servo/</guid>
-      <pubDate>Sun, 01 Mar 2026 17:31:29 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47208744</comments>
-    </item>
-    <item>
-      <title>AI を使用したスキーム コンパイラーを 4 日間で構築しました</title>
-      <link>https://matthewphillips.info/programming/posts/i-built-a-scheme-compiler-with-ai/</link>
-      <description>&lt;p&gt;count (- count 1)))) ((equal. handler "on_increment") (set. count (+ count 1))))) おそらく、私が構築したものですでに忘れているものがさらにあるでしょう。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; I Built a Scheme Compiler with AI in 4 Days&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47208423"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://matthewphillips.info/programming/posts/i-built-a-scheme-compiler-with-ai/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tombert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは素晴らしいですね。Codex に NES 用の Forth コンパイラのコードを作成してもらったところ、問題なく動作しました。しかし、明らかに楽しくないと言わざるを得ません。&lt;p&gt;すべてのバグを解決する方法を考え出してコードに精通する代わりに、すべての作業を仮想インターンに委任し、座って待っているだけです。&lt;p&gt;その結果、AI の支援なしで独自の Forth コンパイラを作成することにしました。サイド プロジェクトは楽しく、学習するものでなければなりません。&lt;p&gt;これらのツールを使用する人を批判するわけではありません。私も使用しますが、楽しみのために行うものにはあまり使用しなくなっただけです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sicher:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;いいね。私は埋め込み用の Scheme コンパイラーにも取り組んでいます。バイトコード VM と Zig への AOT コンパイル。 100% 私の監督と指導の下、クロード・オーパスによって書かれました。広範囲にわたるテストとベンチマーク (r5rs と r7rs) を提供しましたが、これは非常に役に立ちます。現在、モーダル散文エディタに埋め込んで使用しており、今のところ主に統合テストを実行しています。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;codeberg.org&amp;#x2F;sicher&amp;#x2F;zscheme" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;codeberg.org&amp;#x2F;sicher&amp;#x2F;zscheme&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rla1192:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「本番レベルに近いレベル」を迅速に構築しますか?マシュー フィリップスのことを話しているのでしょうか?&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;docs.astro.build&amp;#x2F;en&amp;#x2F;guides&amp;#x2F;build-with-ai&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;docs.astro.build&amp;#x2F;en&amp;#x2F;guides&amp;#x2F;build-with-ai&amp;#x2F;&lt;/a&gt;&lt;p&gt;なんと嬉しい偶然でしょう。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;igornotarobot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;私は常にバグに遭遇するので、おそらく私以外の人が使用できる状態ではありませんが、わずか数日の作業で（広範囲ではないにせよ）かなり深く掘り下げることができました。&lt;p&gt;実験的なコード ジェネレーターでも Rust と同様の経験をしました。さらに別の例が機能しないたびに、クロードはそれを修正します。ただし、それが完全な解決策に収束するかどうか、それともコードを注意深く読んで適切な抽象化を考え出す必要があるかどうかには興味があります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;threethirtytwo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AI を批判する人たちは、このようなものはトレーニング データに含まれているため、有効なコピーである可能性があると主張しています。クレイジーなのは、存在しないものを確実に構築できるという事実です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eatonphil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「48 時間で自分自身のスキームを書く」とはどういう意味ですか?生産する？ OP からは、R7RS (73%) よりも少ないものだと推測します。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikibooks.org&amp;#x2F;wiki&amp;#x2F;Write_Yourself_a_Scheme_in_48_Hours" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikibooks.org&amp;#x2F;wiki&amp;#x2F;Write_Yourself_a_Scheme_in_48_...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://matthewphillips.info/programming/posts/i-built-a-scheme-compiler-with-ai/</guid>
-      <pubDate>Sun, 01 Mar 2026 16:58:03 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47208423</comments>
+      <title>監視権限を巡る議論で政府はどのように議会を欺いたか (2013)</title>
+      <link>https://www.eff.org/deeplinks/2013/06/director-national-intelligences-word-games-explained-how-government-deceived</link>
+      <description>&lt;p&gt;「彼はそれをどう弁護するのか。今日、ワイデンは声明の中で、クラッパーを不意を突かないよう、質問するつもりであることを1日前に通知したと述べた。ワイデンはまた、クラッパーに証言後に答えを修正する機会を与えたが、クラッパーは拒否した。」&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; How the Government Deceived Congress in the Debate over Surveillance Powers (2013)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47210572"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.eff.org/deeplinks/2013/06/director-national-intelligences-word-games-explained-how-government-deceived'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.eff.org/deeplinks/2013/06/director-national-intelligences-word-games-explained-how-government-deceived</guid>
+      <pubDate>Sun, 01 Mar 2026 20:55:22 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47210572</comments>
     </item>
   </channel>
 </rss>

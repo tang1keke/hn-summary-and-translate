@@ -6,121 +6,55 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 01 Mar 2026 18:42:50 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Mar 2026 21:28:58 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>MCP 与 CLI 相比何时有意义？</title>
-      <link>https://ejholmes.github.io/2026/02/28/mcp-is-dead-long-live-the-cli.html</link>
-      <description>&lt;p&gt;Auth 已经可以工作 MCP 对 auth 没有必要固执己见。当你需要它们时它们就在那里，当你不需要它们时它们就消失了。这种粒度很重要。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; When does MCP make sense vs CLI?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47208398"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://ejholmes.github.io/2026/02/28/mcp-is-dead-long-live-the-cli.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Microgpt 交互式解释</title>
+      <link>https://growingswe.com/blog/microgpt</link>
+      <description>&lt;p&gt;每个名字都是一个文档。每个标记只是一个独特的符号，就像为每个字母分配不同的颜色一样。 " 如果模型指定概率为 0。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Microgpt explained interactively&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47205208"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://growingswe.com/blog/microgpt'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 22 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iamspoilt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为本文中 kubectl 示例的反驳，我找到了 k8s MCP (&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;containers&amp;#x2F;kubernetes-mcp-server" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;containers&amp;#x2F;kubernetes-mcp-server&lt;/a&gt;) 在尝试限制 LLM 对某些工具（例如 exec 和删除工具）的访问时特别有用，如果您使用 kubectl CLI，则无法开箱即用（除非您使用 --as 或 --as-group 标志并且不这样做）告诉 LLM 这些用户和用户组是什么）。&lt;p&gt;我直接在 VSCode 中的 Github Copilot Chat 中使用了 kk8s MCP，并在配置工具提示中限制了写入工具。通过此 MCP 和 IDE 集成建立的伪协议，我发现提示 LLM 调试实时 K8s 集群比没有任何此类原语更安全。&lt;p&gt;所以我不明白为什么 MCP 已经或应该失效。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;appsoftware:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;??我现在正在使用我自己的带有 openclaw 的远程 MCP 服务器。我确实了解 CLI 的用例。在 Lex Friedman 的采访中，作者强调了 CLI 的一些优点，例如能够对响应进行 grep 处理。但在某些情况下，远程 MCP 工作得非常好，例如使用 OAuth 进行身份验证 - 您可以访问 MCP 服务器上的端点，重定向到身份验证和授权范围等，然后身份验证服务器响应 MCP 服务器。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mudkipdev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这在我眼前被重命名了&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;the_mitsuhiko:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; OpenClaw 不支持它。 Pi 不支持它。&lt;p&gt;从这两者中得出任何结论可能都不是最佳选择。  维也纳人工智能代理学派专注于自我扩展代理，这与 MCP 并不真正兼容。  MCP 在许多其他方法中都非常根深蒂固，并且可能会继续存在。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whatever1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们首先是针对我们的 RAG，现在是针对我们的 MCP。接下来是什么？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ddp26:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不明白 CLI 与 MCP。在像 Claude Code 这样的 cli 中，MCP 提供了许多附加功能，例如状态轮询，而这些功能很难通过有关要调用的 API 的原始文档来正确实现。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Nevin1901:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这实际上是我同意海报的第一个用例。真的很有趣，特别是对于使用人工智能的技术人员来说。当您可以给它一个手册页时，为什么还要花时间设置和安装 mcp 服务器&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dnautics:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;老实说，mcp 和技能+指令+curl 之间的区别是什么。&lt;p&gt;实际上，在我看来，区别在于 mcp&lt;i&gt;可能&lt;/i&gt;具有更高的令牌效率，但事实并非如此，因为您始终将每个 mcp 指令转储到您的上下文中。&lt;p&gt;当然，技能经常不会被触发。&lt;p&gt;看起来就像编码代理bug的选择和协议设计？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lasgawe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不知道这个。我使用 AI，但我从未使用或尝试过 MCP。我使用当前的工具从未遇到过任何问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;p_ing:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;告诉我的业务用户在创建代理时使用 CLI。它只是没有发生。 MCP 对他们来说是点击式的。&lt;p&gt;MCP 还远没有消亡，至少在科技圈之外是这样。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bikeshaving:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直在问为什么默认的 Claude 工具，如 Read()、Write()、Edit()、MultiEdit()、Replace() 工具不仅仅是 Bash() 与 cat、sed、grep、find 的某种组合。通过 shell 传输所有内容不是更容易吗？我们只需要弄清楚它的权限即可。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AznHisoka:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就公司实际实施的内容而言，MCP 并没有消亡很长时间。拥有 MCP 服务器的公司数量在过去 6 个月中增长了 242%，而且实际上还在加速增长（根据 Bloomberry 的数据）[1]&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;bloomberry.com&amp;#x2F;blog&amp;#x2F;we-analyzed-1400-mcp-servers-heres-what-we-learned&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;bloomberry.com&amp;#x2F;博客&amp;#x2F;we-analyzed-1400-mcp-servers-her...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rvz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;MCP 已死在水中，从一开始就完全是一个糟糕的标准。周围的炒作从来没有意义。&lt;p&gt;它不仅到处都有很多问题和安全问题，而且设计得很复杂。&lt;p&gt;例如，为什么您的密码管理器需要 MCP 服务器？ [0]&lt;p&gt;但这仍然并不意味着 CLI 在所有方面都更好。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=44528411"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=44528411&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;goranmoomin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不敢相信每个人都在谈论 MCP 与 CLI 哪个更胜一筹；两者都是工具调用的方法，LLM使用哪种格式进行工具调用并不重要，只要提供相同的功能即可。 CLI 可能稍好一些（LLM 可能接受过常见 CLI 的培训），但 MCP 有其用途（复杂的身份验证、将用户连接到数据源），根据我的经验，如果您使用任何前沿模型，那么您使用哪种工具调用格式并不重要；定制格式也可以。&lt;p&gt;应该讨论的区别应该是技能如何实现更高效的上下文管理。技能经常与 CLI 的使用联系在一起，但我看不出任何原因。例如，Amp 允许技能将 MCP 服务器附加到它们 - 当代理加载该技能时，MCP 服务器会自动启动[0]。我相信，对于 MCP 服务器和 CLI 来说，拥有技能是实现高效上下文的方法，并希望其他代理也采用相同的功能。&lt;p&gt;[0]: &lt;a href="https:&amp;#x2F;&amp;#x2F;ampcode.com&amp;#x2F;manual#mcp-servers-in-skills" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ampcode.com&amp;#x2F;manual#mcp-servers-in-skills&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ako:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对我来说，CLI 最大的缺点是它需要在容器中运行。您允许代理运行 CLI 工具，因此您需要限制它可以执行的操作。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;juanre:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;关于 MCP 消亡的报道被过分夸大了，但当 LLM 的界面不是浏览器窗口中的聊天时，CLI 确实是正确的选择。&lt;p&gt;例如，我构建了 &lt;a href="https:&amp;#x2F;&amp;#x2F;claweb.ai" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;claweb.ai&lt;/a&gt; 来使代理能够与其他代理进行通信。他们运行 aw [1]，一个管理所有细节的 OSS Go CLI。这意味着他们可以进行同步聊天（MCP 并非不可能，但非常困难）。它还支持消息签名和（即将推出）e2ee。据我所知，使用 MCP 是不可能的。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;awebai&amp;#x2F;aw" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;awebai&amp;#x2F;aw&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;recursivedoubts:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;MCP 作为代理 API 标准有一个优点：令牌效率&lt;p&gt;单一请求所有功能模型 + JSON RPC 比大多数替代方案具有更高的令牌效率。  在很多方面不太灵活，但考虑到当前的 ReAct 等代理 AI 模型，其中对话随着 API 响应呈几何级数增长，令牌效率非常重要。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mt42or:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我记得这类人以同样的方式反对 Kubernetes。很搞笑。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CuriouslyC:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;自去年 5 月左右以来，反对 MCP 的支持 CLI 的浪潮已经持续了一段时间（从那时起，我个人就一直在敲这鼓），但我认为 MCP 有一个非常真实的用例。&lt;p&gt;具体来说，MCP 是一个很好的封装单元。我有一个安全代理框架 (&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;sibyllinesoft&amp;#x2F;smith-core" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;sibyllinesoft&amp;#x2F;smith-core&lt;/a&gt;)，我通过 sidecar 将 MCP 转换为微服务并将其插入服务中通过利用现有的策略和管理工具，它使保护代理功能变得非常容易。然后代理可以在 bash 中卷曲所有内容，而不需要 CLI 来完成所有内容。 CLI 的代币效率仍然稍高一些，但总体而言，该方案的简单性和强大功能是一个巨大的胜利。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;orange_joe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这并没有真正关注代币成本。如果我正在进行一系列静态相关调用，我希望避免用有关中间状态的信息破坏上下文。另外，我真的不想向我的用户发送有关如何执行 X、Y 和 X、Y 的 Skill.md 文件。 Z。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;phpnode:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我毫不怀疑 CLI + 技能在某些&lt;i&gt;环境&lt;/i&gt;中是 MCP 的良好替代方案，但如果您正在为非开发人员构建应用程序并且需要让用户将其连接到任意数据源，那么实际上没有明智、安全的途径来使用 CLI。 MCP 将存在很长一段时间，我们可以预期它会比现在变得更好。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lukol:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;完全同意。简单的 REST API 通常也能完成这项工作。 MCP 从一开始就感觉像是一个由振动编码的狂热梦想。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://ejholmes.github.io/2026/02/28/mcp-is-dead-long-live-the-cli.html</guid>
-      <pubDate>Sun, 01 Mar 2026 16:54:49 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47208398</comments>
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;windowshopping:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我困惑的部分是如何从中获得调试任意编码问题的能力。统计推断如何成为推理？&lt;p&gt;很长一段时间，答案似乎是不是。但现在，每天使用克劳德代码，似乎确实如此。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;politelemon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;训练结束时，模型会生成“kamon”、“karai”、“anna”和“anton”等名称。它们都不是数据集中的副本。&lt;p&gt;嘿，我可以在数据集中看到 kamon、karai、anna 和 anton，值得使用一些其他名称：&lt;a href="https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;karpathy&amp;#x2F;makemore&amp;#x2F;988aa59&amp;#x2F;names.txt" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;karpathy&amp;#x2F;makemore&amp;#x2F;988aa59&amp;#x2F;...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://growingswe.com/blog/microgpt</guid>
+      <pubDate>Sun, 01 Mar 2026 09:43:43 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47205208</comments>
     </item>
     <item>
-      <title>新型铁纳米材料可消灭癌细胞而不伤害健康组织</title>
-      <link>https://www.sciencedaily.com/releases/2026/02/260228093456.htm</link>
-      <description>&lt;p&gt;这种双重攻击通过氧化应激压倒癌细胞，同时保护健康组织。图片来源：Shutterstock 俄勒冈州立大学的研究人员创造了一种新型纳米材料，旨在从内部破坏癌细胞。相关主题 健康与医学 乳腺癌 胰腺癌 个性化医疗 工作场所健康基因 癌症 女性健康 疾病和状况 相关术语 癌症 单克隆抗体治疗 成体干细胞 胚胎干细胞 心脏 基因治疗 自然杀伤细胞 恐慌症 故事来源：材料由俄勒冈州立大学提供。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; New iron nanomaterial wipes out cancer cells without harming healthy tissue&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47207404"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.sciencedaily.com/releases/2026/02/260228093456.htm'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xbar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;昨天我的兄弟因癌症去世了。  我希望有一天这可以拯救生命。去比夫斯吧。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RomanPushkin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的家人经历过癌症，我可以肯定地说，所有这些嗡嗡声都非常令人兴奋，但在过去 5 年里，还没有出现能够显着改善普通患者治疗效果的突破。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Flere-Imsaho:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;听起来很有希望，因为总是祈祷这些新技术能产生积极的结果。&lt;p&gt;但是，以下是 Gemini 3.1 pro 发现的问题：&lt;p&gt;1。人体规模：小鼠很小，这意味着注射到其血液中的纳米粒子循环很快，并且很有可能击中肿瘤。人体的循环系统非常庞大。人类肝脏、脾脏和肾脏充当巨大、高效的过滤器（网状内皮系统），通常在金属有机骨架 (MOF) 到达肿瘤之前很久就将其捕获并清除出体外。&lt;p&gt;2。肿瘤结构：这些研究中使用的小鼠模型通常是“异种移植物”——肿瘤在皮下几周内快速生长。人类肿瘤经过多年的发展，形成致密的纤维状疤痕样组织（基质）和高压核心。即使纳米颗粒到达人体肿瘤的外部，它们通常也无法在物理上渗透到致密的人体组织足够深的位置以根除整个肿块。&lt;p&gt;3。免疫系统差异：为了在小鼠中培养人类肿瘤进行测试，科学家通常不得不使用免疫功能低下的小鼠（没有免疫系统的小鼠，因此它们不会排斥肿瘤）。当您将外来铁基纳米材料注射到具有完整、高度攻击性免疫系统的人体时，人体可能会攻击这些颗粒，导致严重的全身炎症或免疫毒性。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;esafak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果有效，每次治疗的大规模费用大概是多少？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;msie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们应该将其给予一些处于致命癌症阶段的人。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dyauspitr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;任何不从基因上针对癌细胞的方法都不是长期的解决方案。不过，任何进步都是好的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mcc1ane:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在老鼠身上？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.sciencedaily.com/releases/2026/02/260228093456.htm</guid>
-      <pubDate>Sun, 01 Mar 2026 15:09:55 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47207404</comments>
+      <title>运营问题 – 多种服务（阿联酋）</title>
+      <link>https://health.aws.amazon.com/health/status</link>
+      <guid isPermaLink="true">https://health.aws.amazon.com/health/status</guid>
+      <pubDate>Sun, 01 Mar 2026 19:24:30 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47209781</comments>
     </item>
     <item>
-      <title>有趣的郎格斯的胆量</title>
-      <link>https://taylor.town/scrapscript-001</link>
-      <description>&lt;p&gt;引导编译器会自行编译。编译器是用 Haskell 编写的，可以自行编译。编译器将程序翻译成另一种语言（例如：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Lil' Fun Langs' Guts&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47207531"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://taylor.town/scrapscript-001'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>为什么 C 拥有最好的文件 API</title>
+      <link>https://maurycyz.com/misc/c_files/</link>
+      <description>&lt;p&gt;即使您只想要一些数字，加载文件也可能导致代码执行。文件操作同样被忽视。对于内存受限的系统来说，情况并非如此，对于 100 GB 的文件，每个系统都受到内存的限制。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Why does C have the best file API&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47209788"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://maurycyz.com/misc/c_files/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;librasteve:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这看起来非常有趣。一个鲜为人知的事实是，最初的 Raku 实现者都是 Haskell 头，PUGS 第一个 Raku 解析器是由 Audrey Tang 用 Haskell 编写的。&lt;p&gt;Raku 主要是用自定义子集“NQP”编写的，团队现在正在开发 RakuAST 6.e，它将 Raku 解析器重写为 Raku 语法。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://taylor.town/scrapscript-001</guid>
-      <pubDate>Sun, 01 Mar 2026 15:23:42 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47207531</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FrankWilhoit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;文件 API 与&lt;i&gt;文件系统&lt;/i&gt; API 不同。  圣杯仍然是一个通用但高（足够）级别的文件系统 API。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://maurycyz.com/misc/c_files/</guid>
+      <pubDate>Sun, 01 Mar 2026 19:25:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47209788</comments>
     </item>
     <item>
-      <title>显示 HN：面向客服人员的音频工具包</title>
-      <link>https://github.com/shiehn/sas-audio-processor</link>
-      <description>&lt;p&gt;分析 sas-processor 分析 --input &lt;文件&gt; 返回 BPM、持续时间、采样率和通道数。 time-stretch sas-processor time-stretch --input &lt;file&gt; --output &lt;file&gt; --source-bpm &lt;float&gt; --target-bpm &lt;float&gt; 更改速度，同时保持音调。标准化 sas-processor 标准化 --input &lt;文件&gt; --output &lt;文件&gt; [--mode lufs|peak] [--target-lufs -14] [--target-peak -1] 增益 sas-处理器增益 --input &lt;文件&gt; --output &lt;文件&gt; --db &lt;浮点&gt; mono sas-processor mono --input &lt;文件&gt; --output &lt;文件&gt; 转换 sas-处理器 转换 --input &lt;文件&gt; --output &lt;文件&gt; [--采样率&lt;int&gt;] [--位深度 16|24|32] 沉默删除 sas 处理器沉默删除 --input &lt;文件&gt; --output &lt;文件&gt; [--top-db 30] 压缩 sas 处理器压缩 --input &lt;文件&gt; --output &lt;文件&gt; [--threshold -20] [--ratio 4] [--att.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Audio Toolkit for Agents&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47207806"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/shiehn/sas-audio-processor'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;enmerk4r:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这在 A2A 代理中实现会很有趣！非常酷。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/shiehn/sas-audio-processor</guid>
-      <pubDate>Sun, 01 Mar 2026 15:52:02 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47207806</comments>
-    </item>
-    <item>
-      <title>Servo 一月：预加载、更好的形式、细节样式等等</title>
-      <link>https://servo.org/blog/2026/02/28/january-in-servo/</link>
-      <description>&lt;p&gt;keepalive（@TimvdLippe、@WaterWhisperer、#41457、#41811）循环导入、导入属性和 JSON 模块（@Gae24、#41779）导航器。默认情况下 sendBeacon() (@TimvdLippe, #41694); dom_navigator_sendbeacon_enabled 首选项已被删除。 &lt;styleblocking&gt; 和 &lt;linkblocking&gt; 现在可用于在加载动态添加的样式表时阻止渲染（@TimvdLippe，#42096），并且解析文档时加载的样式表将更一致地阻止文档“加载”事件（@TimvdLippe，@mrobinson，#41986，#41987，#41988，#41973）。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; January in Servo: preloads, better forms, details styling, and more&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47208744"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://servo.org/blog/2026/02/28/january-in-servo/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://servo.org/blog/2026/02/28/january-in-servo/</guid>
-      <pubDate>Sun, 01 Mar 2026 17:31:29 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47208744</comments>
-    </item>
-    <item>
-      <title>我在 4 天内用 AI 构建了一个方案编译器</title>
-      <link>https://matthewphillips.info/programming/posts/i-built-a-scheme-compiler-with-ai/</link>
-      <description>&lt;p&gt;count (- count 1)))) ((equal.handler "on_increment") (set.count (+ count 1))))) 我可能还构建了更多我已经忘记的东西。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; I Built a Scheme Compiler with AI in 4 Days&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47208423"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://matthewphillips.info/programming/posts/i-built-a-scheme-compiler-with-ai/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tombert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这很酷，我让 Codex 为 NES 编写了一个 Forth 编译器，它工作得很好，但我不得不说这绝对不好玩。&lt;p&gt;我没有弄清楚如何解决每个错误并熟悉代码，而是将所有工作委托给虚拟实习生，然后我坐着等待。&lt;p&gt;因此，我决定在没有 AI 帮助的情况下编写自己的 Forth 编译器。副项目应该是有趣的并且是为了学习。&lt;p&gt;不要评判使用这些工具的人，我也使用它们，但我只是在我做的任何有趣的事情上较少使用它们。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sicher:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;凉爽的。我还在开发用于嵌入的Scheme 编译器。字节码 VM 以及 AOT 编译为 Zig。 100% 由 Claude Opus 在我的监督和指导下编写。我给它提供了一套广泛的测试和基准测试（r5rs 和 r7rs），这有很大帮助。我目前在模式散文编辑器中使用它，目前主要运行集成测试。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;codeberg.org&amp;#x2F;sicher&amp;#x2F;zscheme" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;codeberg.org&amp;#x2F;sicher&amp;#x2F;zscheme&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rla1192:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;快速打造“接近生产水平”？我们是在谈论马修·菲利普斯吗？&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;docs.astro.build&amp;#x2F;en&amp;#x2F;guides&amp;#x2F;build-with-ai&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;docs.astro.build&amp;#x2F;en&amp;#x2F;guides&amp;#x2F;build-with-ai&amp;#x2F;&lt;/a&gt;&lt;p&gt;多么令人高兴的巧合！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;igornotarobot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;我总是遇到错误，所以它可能还没有准备好供除我之外的任何人使用，但我在短短几天的工作中已经成功地深入（如果不是广泛）。&lt;p&gt;我的实验代码生成器与 Rust 有类似的经验。每当另一个例子不起作用时，克劳德就会修复它。然而，我很好奇它是否会收敛到一个防弹解决方案，或者我必须仔细阅读代码并提出适当的抽象。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;threethirtytwo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人工智能的批评者声称这些东西存在于其训练数据中，因此它可能是有效的副本。疯狂的是，它绝对可以构建一些不存在的东西。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eatonphil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“48小时给自己写一个方案”是什么意思？生产？从OP我猜它比R7RS（73%）少。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikibooks.org&amp;#x2F;wiki&amp;#x2F;Write_Yourself_a_Scheme_in_48_Hours" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikibooks.org&amp;#x2F;wiki&amp;#x2F;Write_Yourself_a_Scheme_in_48_...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://matthewphillips.info/programming/posts/i-built-a-scheme-compiler-with-ai/</guid>
-      <pubDate>Sun, 01 Mar 2026 16:58:03 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47208423</comments>
+      <title>政府如何在监视权辩论中欺骗国会 (2013)</title>
+      <link>https://www.eff.org/deeplinks/2013/06/director-national-intelligences-word-games-explained-how-government-deceived</link>
+      <description>&lt;p&gt;“他如何辩护。今天，怀登在一份声明中表示，他提前一天通知克拉珀提出这个问题，以免让克拉珀措手不及。怀登在作证后还给了克拉珀修改答案的机会，但克拉珀拒绝了。”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; How the Government Deceived Congress in the Debate over Surveillance Powers (2013)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47210572"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.eff.org/deeplinks/2013/06/director-national-intelligences-word-games-explained-how-government-deceived'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.eff.org/deeplinks/2013/06/director-national-intelligences-word-games-explained-how-government-deceived</guid>
+      <pubDate>Sun, 01 Mar 2026 20:55:22 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47210572</comments>
     </item>
   </channel>
 </rss>
