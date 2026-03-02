@@ -6,135 +6,168 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Korean</description>
     <language>ko</language>
-    <lastBuildDate>Mon, 02 Mar 2026 13:12:09 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2026 15:52:22 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ko.xml"/>
     <item>
-      <title>클로드 코드 LSP</title>
-      <link>https://karanbansal.in/blog/claude-code-lsp/</link>
-      <description>&lt;p&gt;이는 Claude Code가 코드를 탐색하는 방식의 카테고리 변경입니다. TL;DR Claude Code는 LSP가 활성화되지 않은 상태로 배송됩니다. 그것이 없으면 Claude Code는 텍스트 검색을 수행합니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Claude Code LSP&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47216765"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://karanbansal.in/blog/claude-code-lsp/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Anthropic Cowork 기능은 경고 없이 macOS에서 10GB VM 번들을 생성합니다.</title>
+      <link>https://github.com/anthropics/claude-code/issues/22543</link>
+      <description>&lt;p&gt;7k Cowork 기능으로 성능이 심각하게 저하되는 10GB VM 번들 생성 #22543New issueCopy linkNew issueCopy linkOpenOpenCowork 기능으로 성능이 심각하게 저하되는 10GB VM 번들 생성#22543Copy linkLabelsbug뭔가 작동하지 않는 현상뭔가 작동하지 않습니다high-priorityoncallperformanceDescriptionmjby2026년 2월 2일에 시작됨문제 본문 actionsDescription Cowork 기능을 사용한 후, Claude Desktop이 극도로 느려집니다. 즉, 시작 속도가 느려지고 UI 지연이 발생하고 응답 속도가 느려집니다. 단일 세션 중에도 시간이 지남에 따라 성능이 저하됩니다. 결과: 이전에 실패했거나 중단된 작업을 정리한 후 즉시 최대 75% 더 빨라졌습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Anthropic Cowork feature creates 10GB VM bundle on macOS without warning&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47218288"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/anthropics/claude-code/issues/22543'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 15 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jasonjmcghee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;가치가 있는 것은 아무것도 활성화하지 않았으며 다양한 lsp 플러그인을 설치하도록 적극적으로 권장하고 시도한 대부분의 언어로 설치하도록 수락하라는 메시지를 표시했습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;theknarf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이때 LSP가 작동합니다. 이제 실패할 수 있는 또 다른 것을 도입했습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dayglo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;지난 몇 달 동안 이것을 사용하여 훌륭한 결과를 얻었습니다. 동일한 아이디어이지만 MCP로 구현되었습니다.
- &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;oraios&amp;#x2F;serena" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;oraios&amp;#x2F;serena&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;danslo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Claude Code인지 golsp인지는 확실하지 않지만 플러그인을 제거해야 했습니다. 정기적으로 golsp의 CPU 사용량이 100%가 되어 Claude Code 충돌이 발생합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;johnmiroki:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 단 한 번도 제대로 작동하지 않았습니다. 그것은 Anthropic의 엄청난 실패입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AntiDyatlov:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AI 서면 제출이 금지되었으면 좋겠습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tempaccount420:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;LSP는 형편없어요. 컴파일러는 간단한 CLI를 통해 인터페이스된 쿼리에 캐시를 재사용할 수 있어야 합니다.&lt;p&gt;컴파일러가 사용하는 것보다 더 많은 RAM이 필요하지 않습니다.&lt;p&gt;대부분의 LSP는 대규모 프로젝트나 Bazel과 같은 비표준 설정에서는 제대로 작동하지 않습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OJFord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;code.claude.com&amp;#x2F;docs&amp;#x2F;en&amp;#x2F;discover-plugins#code-intelligence" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;code.claude.com&amp;#x2F;docs&amp;#x2F;en&amp;#x2F;discover-plugins#code-intell...&lt;/a&gt;&lt;p&gt;서버당 클라이언트 플러그인을 사용하여 이 작업을 수행하는 이유는 무엇입니까? 이는 LSP의 전체 요점과 정반대입니까?&lt;p&gt;(적어도 그들은 기존 서버를 재사용하고 있지만 임의 구성을 가진 단일 클라이언트만 있는 경우처럼 내가 원하는 임의 서버를 사용하는 것을 중지합니다.)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;smallerfish:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;좋은 AI 코딩에는 테스트, 프로젝트 관리 및 아키텍처가 필요한 것과 마찬가지로, 좋은 AI 글쓰기에는 편집자 역할을 맡아야 합니다. 무자비하게 행동하세요. 한 줄씩 읽으십시오. 반드시 상담원에게 문제를 해결하라고 말하세요. 이렇게 하지 않으면 블로그 게시물이 일반적이고 게으른 것처럼 들립니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_joel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;테스트해 보려는데 클로드가 다운됐어요&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jascha_eng:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그들이 말하는 것처럼 비밀은 아닙니다. 여기에 문서화되어 있습니다:
-&lt;a href="https:&amp;#x2F;&amp;#x2F;code.claude.com&amp;#x2F;docs&amp;#x2F;en&amp;#x2F;discover-plugins#code-intelligence" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;code.claude.com&amp;#x2F;docs&amp;#x2F;en&amp;#x2F;discover-plugins#code-intell...&lt;/a&gt;&lt;p&gt;또한 이 게시물은 확실히 AI가 부분적으로 작성된 것이지만 여전히 유용할 것 같습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ahofmann:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 블로그 게시물은 "외모와 소리는 좋지만 약간 너무 좋고, 유용할 수도 있고, 쓸모가 없을 수도 있습니다. AI-slop, idk"라는 불쾌한 계곡에 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tietjens:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것이 작동한다면 Claude가 초기 사용 시 저장소에 대한 초기 이해를 훨씬 더 빨리 얻을 수 있을 것이라고 생각합니다. 그렇지 않습니까?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;user3939382:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 오래 전에 ctags에서 내 에이전트를 위해 이것을 직접 만들었습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;re-thc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;경쟁 조건 문제 등 여전히 버그가 있기 때문에 기본적으로 활성화되어 있지 않습니다.&lt;p&gt;GitHub에서 확인하세요.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://karanbansal.in/blog/claude-code-lsp/</guid>
-      <pubDate>Mon, 02 Mar 2026 11:47:16 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47216765</comments>
+&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;puppymaster:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;작년에 구입한 맥북 프로 M4. 수많은 코드와 프로젝트를 진행했습니다. 뚜껑을 닫은 후에는 결코 뜨겁지 않습니다. 전자 클로드를 설치했습니다. 뚜껑을 닫고 잠들었다가 밤새 뜨거웠던 맥북에 잠에서 깨어났습니다. 클로드를 제거합니다. 문제는 사라졌습니다.&lt;p&gt;저는 계속해서 스스로에게 이렇게 말했지만 다시는 ELECTRON을 사용하지 않았습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;atonse:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 문자 그대로 지난 30분 동안 DaisyDisk를 사용하여 노트북의 내용을 정리했는데 HN이 제 마음을 읽고 있는 것 같았습니다. :)&lt;p&gt;또한 CoWork에서 이 10GB VM을 발견했습니다. 그리고 특별한 이유 없이 다양한 것들이 너무 많은 공간을 사용하는 것 같아 놀랐습니다. 모든 허술한 부분으로 판단해 볼 때, 대부분의 앱에는 실제로 저장 용량을 줄이는 정리 프로세스가 없는 것 같습니다.&lt;p&gt;심지어 Xcode도 마찬가지입니다. 몇 달 동안 Xcode를 시작하지 않았음에도 명령줄 도구는 다양한 OS용 SDK를 설치하고 유지합니다. 또는 1년 넘게 iOS 시뮬레이터를 출시하지 않았는데도 iOS 시뮬레이터의 사본을 보관합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;game_the0ry:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;예, 그래서 저는 이러한 도구를 더 이상 개인 장치에 설치하지 않고 대신 VPS에서 사용합니다.&lt;p&gt;claude 코드 -- ls -a 홈 디렉터리가 있는 경우 이것을 시도하고 clude가 생성하는 모든 쓰레기를 확인하세요.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;informal007:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;지금은 앤트로폭스 직원들이 CC를 활용해서 CC를 개발하고 있는 것 같아요.&lt;p&gt;AI는 실제로 사용자에게 완제품을 개발할 수 있는 능력을 많이 주지만 품질은 점점 떨어지는 것 같아요. 제품 기능이 대중화되면 전문 개발자에 대한 수요가 높아질 것입니다.&lt;p&gt;신제품을 처음 사용하는 사용자는 실험실에서 쥐처럼 제품을 테스트하기 위해 더 많은 책임을 져야 합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andresquez:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;속도는 느리지만 채팅 모드보다 훨씬 좋습니다. Claude Code CLI보다 뛰어난 것은 없습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;quanwinn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 Anthropic의 누군가가 "앱 성능 향상"을 촉구했다고 상상했고, 이것이 그 결과였습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fragmede:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;재미있는 점은 클로드 코드로 상호작용한다는 것입니다. Claude-desktop-cowork는 VM에 대해 아무것도 할 수 없습니다. 이 10GiB VM을 생성하지만 디스크 이미지는 이미 6-7GiB 정도 가득 찬 상태로 시작합니다. 즉, 수행하려는 모든 공동 작업 작업이 나머지 몇 개의 공연에 적합해야 함을 의미합니다. 가득 채우고 나면 클로드코워크가 &lt;i&gt;작동을 멈춥니다&lt;/i&gt;. 디스크가 꽉 찼기 때문입니다. Claude Cowork는 이 문제를 해결할 수 없습니다. VM에서 기본 셸 명령도 실행할 수 없으며 Opus4.6은 사용자에게 이를 알릴 수 있지만 이에 대해 아무것도 할 수 있을 만큼 똑똑하지 않습니다.&lt;p&gt;Github 문제와는 달리 내 문제는 공간이 &lt;i&gt;충분하지&lt;/i&gt; 않다는 것입니다. 따라서 해결 방법은 ~&amp;#x2F;Library&amp;#x2F;Application\ Support&amp;#x2F;Claude&amp;#x2F;vm_bundles로 이동한 다음 Claude Code에게 디스크를 희소한 60GiB 파일로 크기를 늘려 동료에게 즉시 60GiB를 차지하지 않으면서 작업할 수 있는 훨씬 더 많은 공간을 제공하도록 요청하는 것입니다.&lt;p&gt;하지만 이것이 나에게 가르쳐 주는 더 큰 그림은 AI를 안내하는 데 내 지식이 여전히 유용하다는 것입니다. 할 수 있기 때문에 아직 늙지 않았습니다!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aurornis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 GitHub 문제 자체는 분명히 AI 슬롭입니다. 지난 몇 달 동안 GitHub 문제를 다루었다면 이는 명백할 것이지만 마지막에 확인되었습니다.&lt;p&gt;&amp;gt; Filed via Claude Code&lt;p&gt;일부는 사실이라고 가정하지만 어느 부분이 사실인지 판단하는 것은 어려운 부분입니다. 실제로는 사용자 컴퓨터에 다른 문제가 있었던 AI가 작성한 버그 보고서를 추적하는 데 많은 시간을 허비했습니다. 나는 "75% 더 빠르다"는 주장과 다른 숫자는 단지 AI 쓰레기일 뿐이라고 가정하고 있지만 적어도 누군가는 10GB VM이 존재하는지 확인할 수 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tbrownaw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;물론 요즘 다른 모든 것과 마찬가지로 몇 GB를 사용하지만 일부 댓글에서는 속도가 느리다고 언급합니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MarleTangible:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;얼마나 많은 애플리케이션이 디스크 액세스를 남용하는지 정말 놀랍습니다.&lt;p&gt;비슷한 방식으로 Apple Podcasts 앱은 임의의 이유로 120GB의 팟캐스트를 다운로드하기로 결정하고 결코 삭제하지 않았습니다. 심지어 &amp;quot;시스템 데이터&amp;quot;로 표시되기도 했습니다. 그리고 외부 드라이브 솔루션을 찾게 되었습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blitzar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;바이브코딩은 주고 바이브코딩은 빼앗아가는 바이브코딩이 되길&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bachittle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;네, 가상화를 위해 Apple 가상화 프레임워크를 사용합니다. 이로 인해 내 VM 내에서 Claude Cowork를 사용할 수 없게 되었는데, 그 때 중첩된 VM 오류가 발생했기 때문에 그것이 VM을 실행하고 있다는 것을 알게 되었습니다. 그것이 하는 일은 기능을 제한하고, 추가 공간을 추가하고, 지연을 일으키는 것뿐입니다. 더 나은 샌드박스 환경은 OpenAI가 사용하는 Apple 안전벨트가 될 것입니다. 그러나 그것조차 완벽하지는 않습니다. &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=44283454"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=44283454&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/anthropics/claude-code/issues/22543</guid>
+      <pubDate>Mon, 02 Mar 2026 14:21:19 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47218288</comments>
     </item>
     <item>
-      <title>미국 과학 기관, 외국 과학자의 연구실 출입을 제한하기로 결정</title>
-      <link>https://www.science.org/content/article/nist-moves-restrict-foreign-scientists-its-labs</link>
-      <guid isPermaLink="true">https://www.science.org/content/article/nist-moves-restrict-foreign-scientists-its-labs</guid>
-      <pubDate>Mon, 02 Mar 2026 09:20:06 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47215565</comments>
+      <title>OpenClaw가 React를 능가하여 GitHub에서 가장 인기 있는 소프트웨어 프로젝트가 되었습니다.</title>
+      <link>https://www.star-history.com/blog/openclaw-surpasses-react-most-starred-software</link>
+      <guid isPermaLink="true">https://www.star-history.com/blog/openclaw-surpasses-react-most-starred-software</guid>
+      <pubDate>Mon, 02 Mar 2026 13:38:02 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47217812</comments>
     </item>
     <item>
-      <title>Microsoft는 Discord에서 "Microslop"이라는 단어를 금지하고 서버를 잠급니다.</title>
-      <link>https://www.windowslatest.com/2026/03/02/microsoft-gets-tired-of-microslop-bans-the-word-on-its-discord-then-locks-the-server-after-backlash/</link>
-      <description>&lt;p&gt;Windows 최신에서는 공식 Microsoft Copilot Discord 서버에서 "Microslop"이라는 단어가 적극적으로 필터링되었음을 처음으로 알아냈습니다. Windows 최신에서는 공식 Copilot Discord 서버 내에서 "Microslop"이라는 단어가 포함된 메시지를 보내면 즉시 자동화된 조정 응답이 실행되는 것으로 나타났습니다. Windows 최신 버전에서 X의 Microslop을 차단하는 Copilot Discord 서버에 대해 게시한 직후 사용자는 문자 "o" 대신 0을 사용하는 "Microsl0p"와 같은 변형을 서버에서 실험하기 시작했습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Microsoft bans the word "Microslop" on its Discord, then locks the server&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47216047"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.windowslatest.com/2026/03/02/microsoft-gets-tired-of-microslop-bans-the-word-on-its-discord-then-locks-the-server-after-backlash/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>흥미로운 발견: STM32 RDP1 해독기</title>
+      <link>https://carlossless.io/stm32-rdp1-decryptor/</link>
+      <description>&lt;p&gt;STM32F205RBT6은 어댑터 보드에 납땜되어 동글에 연결됩니다. 장치에는 Windows 유틸리티가 함께 제공됩니다. 장치와 함께 제공된 지침에서는 읽기 프로세스 중에 칩에 동결 스프레이를 사용하는 것이 좋습니다. 결론§이것은 실제로 작동합니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; An Interesting Find: STM32 RDP1 Decryptor&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47218188"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://carlossless.io/stm32-rdp1-decryptor/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 22 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lovegrenoble:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;마이크로$oft&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;petepete:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Microsoft가 Teams가 아닌 Discord를 사용하는 이유는 무엇입니까?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tpoacher:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Microslop.&lt;p&gt;좋은 소리가 납니다.&lt;p&gt;Streisand 효과에 감사드립니다!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rrgok:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;365Slop 하루종일 매일매일&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lunias:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;회사로서 그들의 초점이 어디에 있는지에 대해 많은 것을 알려줍니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tartoran:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;앞으로는 이들을 Microslop으로 지칭할 것을 제안합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elcapitan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;마이크로스트라이샌드?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;metaPushkin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 단어를 사용하는 사람은 누구나 증오심을 표현하는 것이기 때문에 절대적으로 올바른 결정이었습니다. 우리는 자유를 추구하며 모든 종류의 극도로 편견을 가진 사람들이 자유를 파괴하도록 허용해서는 안 됩니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;quadruple:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Microsoft Copilot을 중심으로 어떤 커뮤니티가 있나요?
-진지하게, Microsoft Copilot에 Discord 서버가 필요한 이유는 무엇입니까?
-Microsoft Copilot 서버에 가입하면 어떤 내용에 대해 이야기할 수 있나요?
-우리 여기서 뭐하는 거지?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Havoc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그들에게는 더 좋은 일이 있지 않나요? 어쩌면 마우스를 그 위로 옮기려고 할 때 움직이는 작업 표시줄을 바이브코드로 만들 수도 있고, 배설물 샘플과 홍채 스캔이 필요한 Windows 12 설치 절차를 만들 수도 있을까요?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lloydatkinson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Discord&amp;#x2F;Reddit 중재자들은 평소처럼 불쾌한 고정관념을 지키며 생활하고 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hwers:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;어쨌든 프로젝트 회사를 위해 공개적으로 불화를 일으키는 것은 항상 나쁜 생각처럼 보였습니다. 그것은 항상 어떤 드라마로 전개되거나 그것을 조정하기 위해 머리 위의 주의를 산만하게 할 것입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ppap3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 이것을 가볍게 여기지 않습니다.
-이들은 정부의 일원이 되기 위해 할 수 있는 일을 하고 있는 사람들입니다.
-그들은 단순히 비판을 받아들일 수 없으며 이것이 앞으로 나아가는 패턴인 것 같습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_imnothere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;알았어, 마이크로슬롭&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ralferoo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ㅋㅋㅋ 30년 전 사람들이 Micro$oft로 양식화하거나 Microshaft 등으로 창의적으로 틀리던 때가 생각나네요. Amiga에도 PC 포맷 디스크를 읽을 수 있는 MessyDos라는 파일 시스템이 있었습니다. 다음 세대는 말장난을 하기가 얼마나 쉬운 이름인지 알게 된 것 같습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SanjayMehta:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그래서 이것이 존재합니다:&lt;p&gt;microslop.com&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wormpilled:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;더 우스운 것은 무엇인지, 더 한심한지는 IDK가 이 일을 하고 있거나 이에 대해 전체 기사가 작성되고 있다는 것입니다.&lt;p&gt;MicroslopSlop&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lpcvoid:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Microslop이 Microslop 작업을 수행함&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blell:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;와, 그럼 누군가가 커뮤니티에 디스코드 서버를 열고 커뮤니티에 대한 모욕적인 말을 금지했다는 건가요? 이번이 처음이겠네요.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;raxxorraxor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;너무 가까스로 타격을 가한 것 같습니다...&lt;p&gt;하지만 공정하게 말하면 기업 불화는 그래야 합니다. 대신 동료들과 함께 나만의 채널을 만들어 보는 것은 어떨까요? 이 토론은 '비공개'로 진행됩니다. 기업에서는 이를 무시할 수 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jjgreen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그렇다면 마이크로$롭(Micro$lop).&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jinxmeta:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;바보&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.windowslatest.com/2026/03/02/microsoft-gets-tired-of-microslop-bans-the-word-on-its-discord-then-locks-the-server-after-backlash/</guid>
-      <pubDate>Mon, 02 Mar 2026 10:23:06 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47216047</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ndiddy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 한 가지 특이한 점은 읽을 때 소프트웨어가 항상 오버슈트된다는 것입니다. STM32F205RB에는 128KB의 플래시가 있지만 도구는 해당 경계 너머를 읽고 그 너머의 모든 것을 0xFF로 채웁니다. 하지만 유효한 128KB 영역 내의 실제 플래시 콘텐츠는 정확했기 때문에 출력을 올바른 크기로 자르기만 하면 충분히 쉽습니다.&lt;p&gt;이는 많은 경우 ST가 광고된 것보다 더 많은 플래시를 탑재한 마이크로컨트롤러를 판매하기 때문일 가능성이 높습니다. 예를 들어, 인기 있는 "bluepill"의 STM32F103C8은 다음과 같습니다. 개발 보드에는 64KB의 플래시가 있다고 광고됩니다. STM32F103CB와 동일한 칩이기 때문에 실제로 128KB의 플래시가 있습니다(두 가지 모두에 동일한 다이를 사용할 수 있기 때문에 제조가 단순화됨). 단지 ST가 플래시의 후반부를 테스트하지 않았기 때문입니다. 대부분의 경우 플래시의 후반부를 사용할 수 있으며 잘 작동하지만 분명히 상용 제품에 의존하고 싶은 것은 아닙니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;some_random:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;허, 매우 흥미롭습니다. 언급한 대로, 아마도 STM32 RDP1에 대한 기존 익스플로잇을 활용하고 있다고 가정하지만 확실히 확인하기 위해 장치에 대한 일부 분석을 보고 싶습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MrBuddyCasino:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;일부 내용:&lt;p&gt;&lt;i&gt;"STM32 RDP(읽기 보호)는 옵션 바이트를 통해 구성된 세 가지 수준(0, 1, 2)을 통해 플래시 메모리를 보호합니다. 레벨 0은 전체 액세스를 허용합니다(기본값). 레벨 1은 디버깅과 플래시 액세스를 제한하므로 플래시를 삭제하여 레벨 0으로 회귀할 수 있습니다. 레벨 2는 장치를 영구적으로 잠그고 디버그 기능을 비활성화하며 되돌릴 수 없습니다.'&lt;/i&gt;&lt;p&gt;실제로 폐기하고 싶은 STM32 MCU가 있는 절반 결함 장치가 있습니다. 소리가 포함된 플래시 카드가 있는 소음 기계이지만 내용은 암호화되어 있습니다. 그것을 회수하기 위해 암호 해독 키를 얻고 싶습니다.&lt;p&gt;레벨 2가 해독되었습니까?&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://carlossless.io/stm32-rdp1-decryptor/</guid>
+      <pubDate>Mon, 02 Mar 2026 14:12:18 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47218188</comments>
     </item>
     <item>
-      <title>Jolla 전화 - 유럽의 풀스택 대안</title>
-      <link>https://commerce.jolla.com/products/jolla-phone-sept-26</link>
-      <description>&lt;p&gt;제품 정보로 건너뛰기 Open media 1 in modal Open media 2 in modal Open media 3 in modal Open media 4 in modal Open media 5 in modal Open media 6 in modal Open media 7 in modal 1 / of 7 Jolla Phone (2026년 9월) Jolla Phone (2026년 9월) 유럽의 독립 Do It Together(2026년 9월) Linux 휴대폰을 사용하는 사람들에 의해 만들어졌습니다. 정가 99,00 € 정가 판매 가격 99,00 € 단가 / 판매당 매진 세금 포함. 귀하의 휴대전화는 귀하를 착취하는 것이 아니라 귀하를 위해 작동해야 합니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Jolla phone – a full-stack European alternative&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47216037"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://commerce.jolla.com/products/jolla-phone-sept-26'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Apple, M4 기반의 새로운 iPad Air 출시</title>
+      <link>https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-ipad-air-powered-by-m4/</link>
+      <description>&lt;p&gt;보도 자료 2026년 3월 2일 Apple, M4로 구동되는 새로운 iPad Air 출시 놀라운 성능, 더 많은 메모리, 향상된 연결성 및 판도를 바꾸는 iPadOS 26 기능을 갖춘 iPad Air는 환상적인 가치입니다. M4가 탑재된 새로운 iPad Air는 그 어느 때보다 강력하고 다재다능하며, 타오르는 성능, 더 많은 메모리, 향상된 연결성 및 판도를 바꾸는 iPadOS 26 기능을 갖추고 있습니다. M4를 탑재한 iPad Air는 M3,1을 탑재한 iPad Air보다 최대 30% 빠르고, M1을 탑재한 iPad Air보다 최대 2.3배 빠릅니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Apple introduces the new iPad Air, powered by M4&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47218175"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-ipad-air-powered-by-m4/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 24 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throw567643u8:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이거랑 페어폰이랑 차이점이 뭔가요?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;trilogic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;잘했어요, 축하해요. 내 다음 전화기는 확실히 유럽풍이 될 것입니다. 일부 무료 유럽어(Vivaldi 브라우저, HugstonOne 로컬 AI, Protonmail, Libreoffice, w-social, vimeo, mastodon, lemmy 등과 같은 앱, 소셜 및 비디오 호스팅)가 사전 설치되어 있으면 좋을 것입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;codethief:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;샌드박싱 &amp;amp; Sailfish OS와 같은 앱 권한 이야기가 있나요? 그냥 일반적인 Linux인가요? 즉, 앱이 기본적으로 무엇이든 할 수 있나요?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;10729287:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그것은 확실히 다른 모든 것 중에서 더 나은 대안인 것 같습니다. 나는 그래핀이나 계보에 투입된 모든 에너지를 높이 평가하지만, 절반만 구운 솔루션에는 너무 많은 에너지가 필요한 것처럼 보입니다. Google의 의지에 따라 앞으로도 좋은 결과가 나올 것입니다. 나는 그것들을 산업적 제안이 아니라 해킹으로 이해할 수 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jaggs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;재미있어 보이네요. &lt;a href="https:&amp;#x2F;&amp;#x2F;e.foundation&amp;#x2F;e-os&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;e.foundation&amp;#x2F;e-os&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_imnothere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 그들에 대해 부정적인 것을 듣고 읽었습니다. 실제로 배송됩니까?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;this-is-why:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;HN 메인 페이지의 세 번째 전화기입니다. 실제 시장 경쟁에서 이렇게 분주한 업무를 볼 수 있어서 기쁘지만, 기업이 살아남아 CSVE에 대응할 수 있기를 바랍니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;grigio:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;GNOME Mobile이나 KDE를 실행하지 않는다면 대안이 아닙니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;haritha-j:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;정말 멋지네요. 스칸디나비아 디자인에서 영감을 받은 오렌지, 블랙, 화이트는 다소 접근하기 쉬운 느낌이었습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;goodpoint:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;OS는 독점입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;poisonborz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;다른 의견에는 자세한 내용에 대한 링크가 있지만 간단히 말해서 이 회사를 지지하지 마십시오. &lt;p&gt;많은 기업이 "EU 주권"이라는 용어를 사용하고 싶어할 것으로 예상되었습니다. 그리고 포장 안을 들여다보지 않는 선량하고 순진한 사람들.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sailorganymede:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;지난번에 공유한 이후로 주문이 그렇게 많이 늘지 않은 것을 확인했습니다. 유럽 ​​스마트폰에 대한 수요가 늘어나고 있다는 점에서 유럽의 성장이 확실하지 않습니다. 하지만 지정학적 상황을 고려하면 제가 완전히 틀렸을 수도 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;latexr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 카메라 범프 추세를 싫어합니다. 아주 멋진 카메라는 필요하지 않습니다. 그저 절반 정도만 괜찮고 기기에 딱 맞는 카메라만 주세요.&lt;p&gt;원래 iPhone SE는 제가 휴대폰 디자인을 마지막으로 즐겼던 때였습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bluebarbet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 프로젝트는 수년간 진행되었습니다. 계속해서 사용되는 것을 보니 반갑습니다.&lt;p&gt;IMO 개인 정보 보호에 초점을 맞춘 모바일 솔루션에는 역설이 있습니다. 고가의 주력 기업 기기와 마찬가지로 엄청난 가격표는 우리가 모든 컴퓨팅을 모바일에서 수행하고 있다는 가정을 암시합니다. 이제 대부분의 규범이 그렇습니다. 그러나 자신의 개인 정보 보호(건전한 상태는 말할 것도 없고)에 &lt;i&gt;정말로&lt;/i&gt; 관심이 있는 사람이라면 더 나은 솔루션을 사용할 수 있습니다. 즉, 대부분의 컴퓨팅 작업을 노트북으로 다시 보내는 것입니다. 어느 시점에서 이러한 모든 모바일 장치는 부당하게 비싸집니다. 따라서 역설이 발생합니다.&lt;p&gt;&lt;i&gt;PS: 어떤 커뮤니티에서든 게으르고 해로운 의견을 제외하고 합리적인 의견을 반대하는 것은 반박을 구성하지 않습니다.&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dev0p:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;내 말은, 600유로가 넘는 가격은 좀 부담스러운 가격이라는 뜻인데, 그것만으로 구매를 고려할 수 있을지 의심스럽습니다.&lt;p&gt;또한 이탈리아인으로서 Jolla는 나에게 'Ciolla'라는 단어를 많이 떠올리게 하는데, 이 단어는 속어로만 추측할 수 있습니다. 그것은 도움이 되지 않습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;raphman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;한동안 Jolla 휴대폰을 사용해 온 사람들(예: 나)의 보고를 포함한 4개월 전의 HN 토론:&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45785840"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45785840&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stuaxo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;예약주문 상품을 구매했는데 어떻게 될지 잘 모르겠습니다. 언젠가 구매할 수 있도록 이메일을 받게 될 것 같습니다..&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pjmlp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Nokia N900은 정말 훌륭했습니다. Jolla에는 이전 팀원 중 일부가 있습니다.&lt;p&gt;저는 Symbian 휴대폰이 고장난 후에야 Android로 뛰어들었고 그때쯤 Symbian Belle은 QT와 PIPS(PIPS는 Symbian OS에서 POSIX입니다)를 사용하여 이미 훌륭하게 성장하고 있었습니다.&lt;p&gt;Burning Memo는 정말 실망스러웠습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oytis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;FAQ에서 누락된 가장 중요한 질문은 은행 앱, 정부 ID 앱 등이 이 전화기에서 작동하는지 여부입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mytailorisrich:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; &lt;i&gt;풀스택 유럽 대안&lt;/i&gt;&lt;p&gt;절대 그렇지 않습니다. 오해를 불러일으키는 제목 그 이상입니다.&lt;p&gt;사람들은 이 'EU 주권'에 열광하고 있습니다. 악대차를 타고 그만한 가치가 있는 모든 것을 착유하는 것입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ranguna:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;DisplayPort 대체 모드를 갖춘 USB C가 있습니까?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Markoff:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;평범한 Mediatek Dimensity 7100을 갖춘 거대한 노치와 거대한 하단 베젤, 이 모든 것은 200EUR 휴대폰보다 사양이 낮은 650EUR에 해당합니다. 이는 소프트웨어의 경우 450EUR와 같으며 약간 높은 추가 요금이 있습니다...&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zaggynl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;여기서 풀스택이란 무엇을 의미하나요?
-전화는 유럽에서 완전히 생산됩니까?
-유럽 ​​회사에서 완전히 제공하는 소프트웨어 및 온라인 저장소?&lt;p&gt;편집: 이 휴대전화를 원합니다. 다음 배치에 슬롯을 예약했습니다.&lt;p&gt;여기서는 자신의 저장소, 캘린더, 연락처, 전화 추적, 원격 삭제, '무료' 휴대전화를 호스팅하지 않는 평범한 Joe로 가장합니다. Google과 Apple의 휴대폰 기능은 유명합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spinningslate:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Jolla는 Sailfish OS를 사용하여 Android&amp;#x2F;Apple 독점에 대한 풀스택 유럽 대안을 제공하는 새로운 휴대폰을 발표했습니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://commerce.jolla.com/products/jolla-phone-sept-26</guid>
-      <pubDate>Mon, 02 Mar 2026 10:21:24 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47216037</comments>
+&lt;p&gt;&lt;strong&gt;Top 14 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;t1234s:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이번 주 AppleTV+의 F1 출시에 맞춰 새로운 Apple TV 4k를 얻을 가능성이 있습니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Mindwipe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Pro는 이것이 얼마나 저렴할 것인지와 기능 세트의 차이를 고려할 때 존재 이유 때문에 실제로 어려움을 겪고 있는 것처럼 보입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Noaidi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;팀 쿡이 트럼프에게서 금괴를 돌려받을 때까지 애플 제품을 사지 마세요. 감사해요.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jonplackett:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그들은 이러한 발표에 대해 좀 더 조용한 뉴스 주간을 기대하고 있었을 것입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;manmal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Tangential, iPadOS 26은 iPad Mini에서 절대 사용할 수 없습니다. 8″의 창 관리가 필요한 사람은 누구입니까? 화면?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;franze:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 내 iPad를 사랑합니다. 내가 소유한 TV 중 최고의 TV입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;magnio:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나에게 있어서 태블릿 폼 팩터는 삼중 폴더블이 등장하면서 사라졌습니다.&lt;p&gt;내가 아는 태블릿을 사용하는 사람 중 90%(나 포함)는 비디오 시청, PDF 및 만화 읽기, 메모 작성, 모바일 게임 플레이라는 4가지 용도만 사용합니다.&lt;p&gt;이 모든 작업은 화면 크기에 맞춰 태블릿에서 수행되는 매우 모바일 지향적인 작업입니다. 화면 크기와 더 중요하게는 화면 비율 간의 격차를 3중으로 메워서 두 장치를 하나의 장치로 병합하고 싶습니다. 이는 OS와 사용 사례의 차이가 나에게 훨씬 더 크고 필요한 노트북과는 대조적입니다.&lt;p&gt;물론 지금 당장은 노트북이 소비자와는 거리가 매우 멀습니다. 가격과 신뢰성으로 인해 주머니. 그러나 일반 폴더블은 한때 똑같은 상태였으며, Apple이 곧 폴더블을 출시한다는 사실은 폴더블의 미래를 보여주는 확실한 신호입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;css_apologist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것은 놀라운 하드웨어입니다. 이걸로 무엇을 해야 할지 모르겠습니다.&lt;p&gt;요즘 이 하드웨어로 음악 제작은 어떻게 되나요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spudlyo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 아직도 건재한 12.9인치 2017 빈티지 아이패드 프로를 들고 체육관으로 향할 참이다. 나는 한 시간 동안 유산소 운동을 하는 동안 나를 즐겁게 하기 위해 격일로 일립티컬 트레이너 위에 올려 놓았습니다. 독서, YouTube 시청, 음악 듣기, 오디오북 등을 위해 사용합니다. 수년 동안 나의 단골 체육관 친구였고 교체할 필요가 전혀 보이지 않습니다.&lt;p&gt;iPadOS 17.7.10에서 멈춰 있는데 괜찮습니다. 나는 이 새로운 세대의 아이패드가 향후 10년 동안 쉽게 갈 것이라고 상상할 수 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chorkpop:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Apple이 색상이 전문가용이 아니라고 결정하지 않았더라면 좋았을 텐데요. 나는 그중 하나를 갖고 싶습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;easton:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;메모리를 12GB로 늘렸지만 여전히 합리적인 가격을 유지하고 있는 것 같습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vintagedave:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;현재 제가 사용하고 있는 아이패드는 아이패드 에어 3입니다(제가 이해한 바에 따르면 백라이트 문제가 전혀 인정되지 않은 아이패드입니다.)&lt;p&gt;아이패드 에어는 물론이고 아이패드에도 M4만큼 강력한 프로세서가 필요한 이유를 누가 설명해 주실 수 있나요? 이는 여러 VM 등을 실행하는 내 노트북(M2)보다 강력합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bm5k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아이패드 프로보다 무겁습니다. 다시. 아직.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;joezydeco:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;"가치"라는 단어는 해당 보도자료에는 4번이나 등장합니다. 이번주 마케팅에서 뭔가 테마가 있는 것 같아요.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-ipad-air-powered-by-m4/</guid>
+      <pubDate>Mon, 02 Mar 2026 14:11:23 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47218175</comments>
     </item>
     <item>
-      <title>HN 표시: 웹 오디오 스튜디오 – 웹 오디오 API 그래프용 시각적 디버거</title>
-      <link>https://webaudio.studio/</link>
-      <description>&lt;p&gt;Web Audio Studio 웹 오디오 그래프 시각화 및 디버깅 웹 오디오 API 코드를 작성하고 생성된 그래프를 즉시 확인하세요. 신호 흐름을 검사하고, 매개변수를 조정하고, 모든 변경 사항을 실시간으로 들어보세요. 오디오 그래프의 어느 지점에서나 파형 또는 주파수 스펙트럼을 확인하세요.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Web Audio Studio – A Visual Debugger for Web Audio API Graphs&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47216773"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://webaudio.studio/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://webaudio.studio/</guid>
-      <pubDate>Mon, 02 Mar 2026 11:47:44 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47216773</comments>
+      <title>AMD Am386은 1991년 3월 2일 출시되었습니다.</title>
+      <link>https://dfarq.homeip.net/amd-am386-released-march-2-1991/</link>
+      <description>&lt;p&gt;인텔은 IBM보다 한발 더 나아졌습니다. 단지 인텔이 욕심을 낸 것이 아닙니다. 현재 인기 있는 이야기는 386세대에서 인텔이 욕심을 부리고 모든 사람을 배제하기로 결정했다는 것입니다. 인텔은 인텔 IP를 사용하는 펜티엄 클론을 성공적으로 차단했습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; AMD Am386 released March 2, 1991&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47217402"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://dfarq.homeip.net/amd-am386-released-march-2-1991/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Zardoz84:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;  기술적으로 Am386은 Windows 95를 실행할 수 있었지만 좋은 경험은 아니었습니다.&lt;p&gt;기술적으로는 그렇지 않았습니다. 실행할 수 있습니다. 느렸나요? 예, 하지만 제 Am386DX40은 1991년부터 1996년까지 계속 잘 작동했습니다. DR-DOS 6, MS-DOS 6.11, Windows 3.1, 마지막으로 Windows 95를 실행했습니다. 물론 DooM 2도 플레이할 수 있었습니다. 어느 시점에서 나는 수학 코프로를 얻었습니다.
+마침내 아버지는 AMD 486DX5 133MHz로 컴퓨터를 업그레이드했습니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://dfarq.homeip.net/amd-am386-released-march-2-1991/</guid>
+      <pubDate>Mon, 02 Mar 2026 12:56:46 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47217402</comments>
+    </item>
+    <item>
+      <title>태아 척추 이분증 치료를 위한 최초의 자궁내 줄기세포 치료법은 안전합니다</title>
+      <link>https://health.ucdavis.edu/news/headlines/first-ever-in-utero-stem-cell-therapy-for-fetal-spina-bifida-repair-is-safe-study-finds/2026/02</link>
+      <description>&lt;p&gt;(새크라멘토) 진행 중인 임상 시험의 1상 결과에 따르면 UC Davis Health 연구팀은 태아 수술과 줄기 세포를 결합한 세계 최초의 척추 이분증 치료를 안전하게 수행했습니다. 주요 1단계 결과 임상시험에 참여한 처음 6명의 아기는 수술부터 출산까지 면밀히 모니터링되었습니다. 연구원들은 다음과 같이 보고했습니다. 줄기 세포와 관련된 안전성 문제는 없습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; First-ever in-utero stem cell therapy for fetal spina bifida repair is safe&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47218743"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://health.ucdavis.edu/news/headlines/first-ever-in-utero-stem-cell-therapy-for-fetal-spina-bifida-repair-is-safe-study-finds/2026/02'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://health.ucdavis.edu/news/headlines/first-ever-in-utero-stem-cell-therapy-for-fetal-spina-bifida-repair-is-safe-study-finds/2026/02</guid>
+      <pubDate>Mon, 02 Mar 2026 14:54:58 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47218743</comments>
+    </item>
+    <item>
+      <title>M4 Apple 신경 엔진 내부, 1부: 리버스 엔지니어링</title>
+      <link>https://maderix.substack.com/p/inside-the-m4-apple-neural-engine</link>
+      <guid isPermaLink="true">https://maderix.substack.com/p/inside-the-m4-apple-neural-engine</guid>
+      <pubDate>Sun, 01 Mar 2026 17:11:44 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47208573</comments>
+    </item>
+    <item>
+      <title>판사는 그린피스가 ND 송유관 사건에서 3억 4500만 달러를 지불하라는 명령을 확정했습니다.</title>
+      <link>https://northdakotamonitor.com/2026/02/27/judge-finalizes-order-for-greenpeace-to-pay-345-million-in-north-dakota-oil-pipeline-case/</link>
+      <guid isPermaLink="true">https://northdakotamonitor.com/2026/02/27/judge-finalizes-order-for-greenpeace-to-pay-345-million-in-north-dakota-oil-pipeline-case/</guid>
+      <pubDate>Mon, 02 Mar 2026 14:28:41 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47218364</comments>
+    </item>
+    <item>
+      <title>플라스틱은 우유로 만들어지며 13주 만에 사라진다</title>
+      <link>https://www.sciencedaily.com/releases/2026/02/260227071922.htm</link>
+      <description>&lt;p&gt;연구 기관의 과학 뉴스 이 플라스틱은 우유로 만들어지며 13주 만에 사라집니다. 우유 단백질과 점토가 협력하여 토양에서 단 13주 만에 사라지는 플라스틱 같은 필름을 만듭니다. 날짜: 2026년 2월 28일 출처: 플린더스 대학 요약: 플라스틱 오염 문제를 해결하기 위해 경쟁하는 과학자들은 우유 단백질의 일부로 만든 생분해성 포장 필름이라는 놀라운 새로운 경쟁자를 만들었습니다. 플린더스 대학(Flinders University)의 연구원들은 칼슘 카세인산염을 전분 및 천연 나노점토와 혼합하여 일상적인 플라스틱을 모방하도록 설계된 얇고 내구성이 있는 물질을 만들었습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Plastic is made from milk and it vanishes in 13 weeks&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47218283"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.sciencedaily.com/releases/2026/02/260227071922.htm'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cestith:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 이것이 다른 단백질을 사용하는 첫 번째 단계가 되기를 바랍니다. 병아리콩이나 콩과 같이 단백질 함량이 높은 식물은 우유보다 생산이 덜 집약적입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abdullahkhalids:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 플라스틱 생산량은 1950년 200만 톤에서 2022년에는 4억 7,500만 톤으로 증가했습니다. 이는 대략 자동차 2억 5천만 대의 무게에 해당합니다.&lt;p&gt;이것은 60kg&amp;#x2F;인&amp;#x2F;년의 플라스틱 양으로 엄청난 양입니다. 또는 70세인 사람의 경우 약 4800kg입니다. 분명히, 인구 전체에 걸쳐 이 숫자에는 큰 차이가 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;1970-01-01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;앞서 우리에게는 무해한 유기 화합물로 완전히 용해되어 아무런 부작용 없이 자연에서 잊혀질 수 있는 단기 플라스틱이 필요하다고 말했습니다. 13주가 딱 맞네요!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TZubiri:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;13주 만에 사라집니다&lt;p&gt;그렇다면 플라스틱이 아니죠? 플라스틱의 가장 큰 특징은 분해되지 않는다는 점입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LurkandComment:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것이 우유 가격을 올리게 될까요?  옥수수로 휘발유용 에탄올을 만들기 시작하면서 옥수수 가격이 올랐습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;boringg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;플라스틱에 새로운 구독 모델이 등장합니다!  제품의 지속 시간은 13주에 불과합니다.&lt;p&gt;알고 있습니다. 수명이 긴 플라스틱은 좋지 않습니다.  우리는 현재의 플라스틱만큼 저렴하고 오래 지속되지 않는 일종의 중간 지점이 필요합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;regularfry:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 논문에서는 열적 특성에 대해 언급하지 않습니다. 이는 유감스러운 일입니다.  열가소성 수지인지 알아두면 좋을 것 같습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kleiba:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;다행히도 우유 생산은 완전히 환경 친화적입니다!&lt;p&gt;&amp;#x2F;scnr&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;david-gpu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;우유는 온실가스 배출 측면에서 놀랄 만큼 집약적입니다. 이는 우유 1kg당 약 1~3kg의 CO2 환산량입니다.&lt;p&gt;우유 단백질의 비용은 단백질 1kg당 약 95kg의 CO2 환산 배출량이며, 이는 이 플라스틱 생산에 사용된 것으로 보입니다[1]&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.sciencedirect.com&amp;#x2F;과학&amp;#x2F;기사&amp;#x2F;pii&amp;#x2F;S0022030222005859" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.sciencedirect.com&amp;#x2F;science&amp;#x2F;article&amp;#x2F;pii&amp;#x2F;S002203022...&lt;/a&gt;&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;ourworldindata.org&amp;#x2F;grapher&amp;#x2F;ghg-per-단백질-poore" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ourworldindata.org&amp;#x2F;grapher&amp;#x2F;ghg-per-단백질-poore&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.sciencedaily.com/releases/2026/02/260227071922.htm</guid>
+      <pubDate>Mon, 02 Mar 2026 14:20:35 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47218283</comments>
+    </item>
+    <item>
+      <title>Libxml2 Enterprise Edition(AGPL, 이전 관리자의)</title>
+      <link>https://codeberg.org/nwellnhof/libxml2-ee</link>
+      <description>&lt;p&gt;16 2026-02-22 21:04:33 +01:00. 16 2026-02-22 21:04:33 +01:00 오류. 16 2026-02-22 21:04:33 +01:00 libxml.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Libxml2 Enterprise Edition (AGPL, from the previous maintainer)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47216541"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://codeberg.org/nwellnhof/libxml2-ee'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PeterWhittaker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 죄송합니다. 코드 기여는 허용되지 않으며 원본 libxml2 프로젝트로 안내됩니다.&lt;p&gt;이것은 어이가 없을 정도로 어리둥절합니다. libxml2-ee가 libxml2의 많은 보안 및 기타 결함을 수정했다면 상대적으로 결함이 있는 프로젝트로 사람들을 다시 안내하는 요점은 무엇입니까?&lt;p&gt;원래는 MIT였기 때문에 AGPL로 라이선스를 부여하는 것도 흥미롭습니다. M4 파일 중 하나의 예를 보면 그들이 모든 문제를 해결했는지 확신할 수 없습니다.&lt;p&gt;&lt;pre&gt;&lt;code&gt; # LICENSE
+  #
+  # 저작권 (c) 2011 Maarten Bosmans &amp;lt;mkbosmans@gmail.com&amp;gt;
+  #
+  # 이 파일을 수정하거나 수정하지 않고 복사 및 배포하는 것은 금지됩니다.
+  # 저작권 표시가 있는 경우 로열티 없이 모든 매체에서 허용됨
+  # 그리고 이 공지는 보존됩니다.  이 파일은 어떠한 추가 작업도 없이 있는 그대로 제공됩니다.
+  # 보증.&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Milpotel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;코드 품질이 향상되어 "퍼징을 사용하기 때문에 테스트가 필요하지 않습니다... 가끔..."이 발생하기를 바랍니다. 태도가 변합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;on_the_train:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;quot;엔터프라이즈 에디션&amp;quot; 일반적으로 패러디 프로젝트의 표시입니다. 그런데 이건 심각한 것 같은데요?&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://codeberg.org/nwellnhof/libxml2-ee</guid>
+      <pubDate>Mon, 02 Mar 2026 11:22:35 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47216541</comments>
     </item>
   </channel>
 </rss>
