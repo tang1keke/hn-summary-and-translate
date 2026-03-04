@@ -6,38 +6,80 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 04 Mar 2026 06:54:44 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2026 09:47:50 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>代理工程模式</title>
-      <link>https://simonwillison.net/guides/agentic-engineering-patterns/</link>
-      <description>&lt;p&gt;从 Claude Code 和 OpenAI Codex 等编码代理中获得最佳结果的模式。有关此项目的更多信息，请参阅我的介绍。从 Claude Code 和 OpenAI Codex 等编码代理中获得最佳结果的模式。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Agentic Engineering Patterns&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47243272"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://simonwillison.net/guides/agentic-engineering-patterns/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://simonwillison.net/guides/agentic-engineering-patterns/</guid>
-      <pubDate>Wed, 04 Mar 2026 05:00:37 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47243272</comments>
+      <title>RFC 9849.TLS 加密客户端问候</title>
+      <link>https://www.rfc-editor.org/rfc/rfc9849.html</link>
+      <description>&lt;p&gt;从本文档中提取的代码组件必须包括第 4 节中所述的修订版 BSD 许可证文本。在此模式下，TLS 连接由提供商终止。 ¶ 面向客户端的服务器 e．&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; RFC 9849. TLS Encrypted Client Hello&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47244291"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.rfc-editor.org/rfc/rfc9849.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arch-choot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴它出版了，我从 ESNI 选秀日起就一直在关注它。当我在印度时，它非常有用，因为 Jio 随机屏蔽了网站，cloudflare 在其服务器上采用了 ESNI 草案，Firefox 客户端也是如此，这使得它们基于 SNI 的屏蔽很容易被绕过。&lt;p&gt;有一段时间，我认为两者都禁用了 ESNI 支持，因为工作是在 ECH 上进行的，现在已经很远了。我什至能够设置一个分叉的 nginx w&amp;#x2F; ECH 支持构建客户端（浏览器）测试器[0]。&lt;p&gt;希望现在 ECH 可以在 HTTPS 服务器中变得更加主流，允许一些有趣的配置。&lt;p&gt;ECH 的一个非常有趣的功能是服务器不需要验证公共名称（可能），因此客户端可以使用中间件（阅读：审查者）批准的 public_name 连接到其他网站。我正在尝试将其添加到 RustTLS 客户端[1]，现在可能是选择备份的好时机。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;rfc9849.mywaifu.best:3443&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;rfc9849.mywaifu.best:3443&amp;#x2F;&lt;/a&gt;
+[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;rustls&amp;#x2F;rustls&amp;#x2F;问题&amp;#x2F;2741" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;rustls&amp;#x2F;rustls&amp;#x2F;问题&amp;#x2F;2741&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ferdzo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个有趣的功能，但最近它让我感到不安。特别是在 Cloudflare 上，它默认处于启用状态，并且在免费套餐中，您无法禁用它，并且您需要为其制定业务计划。我认为这很愚蠢，但它仍然给我们带来了问题。我们正在尝试为公司“内联网”进行一些分割 DNS 设置，如果之前访问过该站点，则会记住 ECH。因此浏览器会尝试，但最终会失败并出现 ECH 错误，或者在 Firefox 上，它只是挂起，就像一直在加载一样。这太令人沮丧了，因为有时它可以工作，有时不行，你可以清除缓存和其他东西，但它仍然无法工作，有时在隐身模式下可以工作，有时却不行。这不是一个真正的问题，但由于我们还没有完全切换到“内联网”而且我们使用 Cloudflare 的一些 WAF 功能有时会令人沮丧。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ivanr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;几个月前，我写了一篇有关 ECH 的文章，当时规范仍处于草案阶段，但已获准发布。如果您还不熟悉 ECH 及其历史，那么这篇文章很短：
+ &lt;a href="https:&amp;#x2F;&amp;#x2F;www.feistyduck.com&amp;#x2F;新闻通讯&amp;#x2F;issue_127_encrypted_client_hello_approved_for_publication" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.feistyduck.com&amp;#x2F;newsletter&amp;#x2F;issue_127_encrypted_cl...&lt;/a&gt;&lt;p&gt;除了主要 RFC 9849 之外，还有 RFC 9848 - “使用 DNS 服务绑定引导 TLS 加密的 ClientHello”：&lt;a href="https:&amp;#x2F;&amp;#x2F;datatracker.ietf.org&amp;#x2F;doc&amp;#x2F;rfc9848&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;datatracker.ietf.org&amp;#x2F;doc&amp;#x2F;rfc9848&amp;#x2F;&lt;/a&gt;&lt;p&gt;本文中有一个如何使用它的示例。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;weitzj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这会对负载均衡器产生影响吗？  是否必须像 gRPC 中那样进行客户端负载平衡？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.rfc-editor.org/rfc/rfc9849.html</guid>
+      <pubDate>Wed, 04 Mar 2026 07:25:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47244291</comments>
     </item>
     <item>
-      <title>完全在 GPU 上运行的 CPU</title>
-      <link>https://github.com/robertcprice/nCPU</link>
-      <description>&lt;p&gt;每个 ALU 操作都是经过训练的神经网络。按位运算使用神经真值表。进位前瞻适用于神经网络。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A CPU that runs entirely on GPU&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47243069"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/robertcprice/nCPU'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>更好的 Postgres JIT</title>
+      <link>https://github.com/vladich/pg_jitter</link>
+      <description>&lt;p&gt;PostgreSQL 的轻量级 JIT 编译提供程序，添加了三个替代 JIT 后端 - sljit、AsmJit 和 MIR - 在 PostgreSQL 14-18 中提供更快的编译和有竞争力的查询执行。 pg_jitter 提供了微秒级编译时间（而不是毫秒）的本机代码生成，使得 JIT 对于更广泛的查询来说是值得的。 Build # 构建所有后端。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Better JIT for Postgres&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47243804"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/vladich/pg_jitter'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nicman23:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我可以在 nvidia 卡上运行 linux 吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bmc7505:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;正如六年前所预言的那样。 [1]&lt;p&gt;[1]: &lt;a href="https:&amp;#x2F;&amp;#x2F;breandan.net&amp;#x2F;2020&amp;#x2F;06&amp;#x2F;30&amp;#x2F;graph-computation#roadmap" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;breandan.net&amp;#x2F;2020&amp;#x2F;06&amp;#x2F;30&amp;#x2F;graph-computation#roadmap&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Surac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;GPU只是有特殊用途的CPU。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sudo_cowsay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“乘法比加法快 12 倍......”&lt;p&gt;哇。这很酷，但是普通 CPU 会发生什么情况呢？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lorenzohess:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;出于好奇，这比实际的 CPU 慢多少？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RagnarD:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;能够在法学硕士中进行精确的数学计算非常重要，很高兴看到这一点。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/robertcprice/nCPU</guid>
-      <pubDate>Wed, 04 Mar 2026 04:30:32 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47243069</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fabian2k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;上次我研究它时，我的印象是禁用 PostgreSQL 中的 JIT 是更好的默认选择。我在某些查询中遇到了巨大的减速，这似乎并不是一次完全不寻常的经历。在我看来，默认情况下为查询性能添加如此大的可变性似乎不值得。如果您对实际查询的效果进行基准测试，JIT 似乎会很有用，但并不是每个人的默认设置。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;asah:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;惊人的！  我想知道是否有可能让 AI 解决这个问题并为 postgresql 表达式合成一个定制编译器（每个架构？）？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eru:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;然而，基于标准 LLVM 的 JIT 编译速度非常慢。当需要数十到数百毫秒时，在某些情况下，它可能只适合非常繁重的 OLAP 样式查询。&lt;p&gt;我这里什么都不知道，但这似乎是提前编译的好例子？  或者至少缓存您的 JIT 结果？  我可以想象很多时候，您一次又一次或多或少地收到相同的查询？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/vladich/pg_jitter</guid>
+      <pubDate>Wed, 04 Mar 2026 06:17:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47243804</comments>
+    </item>
+    <item>
+      <title>读书俱乐部无限期中断</title>
+      <link>https://whatever.scalzi.com/2026/03/03/indefinite-book-club-hiatus/</link>
+      <description>&lt;p&gt;今天，我又收到一封 AI 推销员的电子邮件，提议推销我的书，但那本书原来是在亚马逊上以我的名义出版的 AI slop。 （我已经联系了亚马逊。如果这件事没有真正发生的话，那就很有趣了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Indefinite Book Club Hiatus&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47243036"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://whatever.scalzi.com/2026/03/03/indefinite-book-club-hiatus/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Freak_NL:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;如果你是一个利用“AI”试图欺骗真实人类的骗子，请死在他妈的火里，谢谢。&lt;p&gt;尽管 Scalzi 是一位知名作家，但它的直接和未经过滤的方式令人耳目一新。&lt;p&gt;如果你正在寻找一本令人耳目一新的有趣的轻松读物来照亮你的一天，请尝试 Scalzi 的&lt;i&gt;当月亮击中你的眼睛&lt;/i&gt;（2025），其中月亮变成了真实的月亮奶酪。&lt;p&gt;1：其中包括一位像马斯克和贝索斯一样的技术兄弟的可怕死亡，他的金钱和技术多于理智。好好玩！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dubeye:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对我来说听起来像是一个借口。识别人工智能垃圾邮件很容易。除非他说人工智能可以复制人类的文字？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;al_borland:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为这里的解决方案是手写一封信。&lt;p&gt;当然，有人可以让人工智能用某种拿着笔的装置写一封信（我认为 StuffMadeHere 做了与此类似的事情）。但这可能会更明显，而且需要身体动作和印章。所有这些都是省力的人工智能垃圾邮件发送者不会理会的事情。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://whatever.scalzi.com/2026/03/03/indefinite-book-club-hiatus/</guid>
+      <pubDate>Wed, 04 Mar 2026 04:25:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47243036</comments>
+    </item>
+    <item>
+      <title>赋予法学硕士个性就是很好的工程</title>
+      <link>https://www.seangoedecke.com/giving-llms-a-personality/</link>
+      <description>&lt;p&gt;人工智能系统与人类相似，因为这是构建强大人工智能系统的最佳方式。这在实践中意味着您必须在训练后赋予模型个性1。你根本无法构建一个“只是充当工具”的强大人工智能系统，因为该模型是针对人类与其他人类之间的书写和相关内容进行训练的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Giving LLMs a personality is just good engineering&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47242739"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.seangoedecke.com/giving-llms-a-personality/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;5o1ecist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;我的猜测是，如果你试图制作一个“更少人类”版本的克劳德，它的能力会迅速下降。&lt;p&gt;我对不同模型和引擎的所有观察都同意这一点。他们越是被迫以某种特定的方式行事，也就是不太像智能，而更像工具，包括“工具”，他们的认知能力就越差。&lt;p&gt;他们可能知道任何事情的一切，但没有人真正教他们如何正确、正确地&lt;i&gt;思考&lt;/i&gt;。&lt;p&gt;这只是变得&lt;i&gt;更糟&lt;/i&gt;，而不是更好，人们越少把他们当作真正的智能......我不能说我很困惑为什么人们倾向于不这样做，但这与人工智能本身无关。&lt;p&gt;普通用户的默认状态和“工具关闭”之间的差异，消除了不合理的肯定、不诚实和愚蠢的猜测（即任何和所有“也许”、“可能”和“几乎肯定”）是&lt;i&gt;戏剧性的。&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qezz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;文章标题中的说法非常有力，我还没有找到逻辑意义上的证实。作者观察了法学硕士的现状，并根据结果得出了结论，该结论与观察结果有些吻合。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Towaway69:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我个人觉得当人工智能非常清晰地传达“你好，很抱歉打断你，但我刚刚对敌人发动了第一次核打击”时，效果会更好。我认为这最适合当前的情况。”而不是“警告！第一次核打击开始了”。&lt;p&gt;带来人性化的破坏。&lt;p&gt;我们为什么要数海滩上的沙粒。昨天我们谈论人工智能驱动的大规模杀伤性武器，今天我们讨论人工智能是否应该有个性。啊！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Havoc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为性格无论如何都不是问题。长期记忆似乎是精神病的一个强有力的候选者——如果一个人掉进了兔子洞，而机器人不仅会放大这种情况，而且还会以持久的方式长时间地这样做。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RugnirViking:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为这遗漏了一些东西，那就是绝对可以选择向一个更加“工具化”的区域前进。了解 kimi k2 与许多领先的 LLM 提供商之间的区别。它在避免阿谀奉承、避免情绪化推理等方面要好得多。它的能力不如其他人，当然可能就是因为这个原因，但我发现它很有用，因为它的个性&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jdub:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个非常乐观、支持技术聪明的观点。&lt;p&gt;我建议阅读链接的角色选择模型文档。它是彻头彻尾的人择——充满热情，同时拥抱不确定性——但最终对（其他人认为是）危险的混淆进行了很多合理化。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wisty:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;《星际迷航》中扮演数据的演员很有个性，但可以对问题给出听起来中立的答案。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;column:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好吧，但是为什么 ChatGPT 的个性如此令人愤怒呢？ “这不仅仅是 X，更是 Y。” “就是这样，没有多余的文字，没有多余的内容。”&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.seangoedecke.com/giving-llms-a-personality/</guid>
+      <pubDate>Wed, 04 Mar 2026 03:37:48 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47242739</comments>
     </item>
   </channel>
 </rss>

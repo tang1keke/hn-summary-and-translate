@@ -6,38 +6,80 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 04 Mar 2026 06:54:44 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2026 09:47:50 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>エージェントエンジニアリングパターン</title>
-      <link>https://simonwillison.net/guides/agentic-engineering-patterns/</link>
-      <description>&lt;p&gt;Claude Code や OpenAI Codex などのコーディング エージェントから最高の結果を得るパターン。このプロジェクトの詳細については、私の紹介文をご覧ください。 Claude Code や OpenAI Codex などのコーディング エージェントから最高の結果を得るパターン。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Agentic Engineering Patterns&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47243272"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://simonwillison.net/guides/agentic-engineering-patterns/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://simonwillison.net/guides/agentic-engineering-patterns/</guid>
-      <pubDate>Wed, 04 Mar 2026 05:00:37 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47243272</comments>
+      <title>RFC 9849. TLS 暗号化クライアント Hello</title>
+      <link>https://www.rfc-editor.org/rfc/rfc9849.html</link>
+      <description>&lt;p&gt;このドキュメントから抽出されたコード コンポーネントには、セクション 4 で説明されている改訂 BSD ライセンス テキストが含まれている必要があります。このモードでは、TLS 接続はプロバイダーによって終了されます。 ¶ クライアント側サーバー e.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; RFC 9849. TLS Encrypted Client Hello&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47244291"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.rfc-editor.org/rfc/rfc9849.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arch-choot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ESNI ドラフトの頃から注目していたので、出版されてうれしいです。 Jio がウェブサイトをランダムにブロックし、cloudflare がサーバー上で ESNI ドラフトを採用し、SNI ベースのブロックを簡単にバイパスできるようにするため、SNI ベースのブロックをバイパスできるようにしたため、インドにいた頃は非常に役に立ちました。&lt;p&gt;ECH で作業が行われたため、どちらも ESNI サポートを無効にした時期があったと思いますが、現在はかなり進んでいます。フォークされた nginx をセットアップすることもできました。クライアント (ブラウザ) テスター [0] を構築するための ECH サポート。&lt;p&gt;楽しい構成を可能にする ECH が HTTPS サーバーでもっと主流になることを願っています。&lt;p&gt;ECH の非常に興味深い機能は、サーバーがパブリック名を検証する必要がないことです (MAY) ため、クライアントはミドルボックス (検閲官) が承認する public_name を使用して他の Web サイトに接続できます。これを RustTLS クライアントに追加しようとしています[1]。今がそのバックアップを選択する良い機会かもしれません。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;rfc9849.mywaifu.best:3443&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;rfc9849.mywaifu.best:3443&amp;#x2F;&lt;/a&gt;
+[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;rustls&amp;#x2F;rustls&amp;#x2F;issues&amp;#x2F;2741" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;rustls&amp;#x2F;rustls&amp;#x2F;issues&amp;#x2F;2741&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ferdzo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;興味深い機能ですが、最近はボタンを押しすぎています。具体的には、Cloudflare ではデフォルトでオンになっており、無料枠では無効にできず、ビジネス プランが必要です。それは愚かなことだと思いますが、それでも私たちに問題を引き起こしていることに変わりはありません。会社の「イントラネット」用に分割 DNS セットアップを試していますが、そのサイトに以前にアクセスしたことがあれば、ECH が記憶されています。そのため、ブラウザは試行しますが、最終的には ECH エラーで失敗するか、Firefox では常にロードしているかのようにハングします。そして、それは非常にイライラします。なぜなら、うまくいくこともあれば、うまくいかないこともあり、キャッシュなどをクリアしてもまだうまくいかないこともあれば、シークレットモードでうまくいくこともあれば、うまくいかないこともあります。これは実際の問題ではありませんが、「イントラネット」に完全に切り替えていないため、 Cloudflare の WAF 機能の一部を使用しているため、イライラすることがあります。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ivanr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は数か月前に ECH について書きました。その時、仕様はまだ草稿でしたが、すでに公開が承認されていました。 ECH とその歴史についてまだ詳しくない場合は、簡単に読むことができます。
+ &lt;a href="https:&amp;#x2F;&amp;#x2F;www.feistyduck.com&amp;#x2F;ニュースレター&amp;#x2F;issue_127_encrypted_client_hello_approved_for_publication" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.feistyduck.com&amp;#x2F;newsletter&amp;#x2F;issue_127_encrypted_cl...&lt;/a&gt;&lt;p&gt;メインの RFC 9849 に加えて、RFC 9848 - 「DNS サービス バインディングを使用した TLS 暗号化された ClientHello のブートストラップ」もあります。 &lt;a href="https:&amp;#x2F;&amp;#x2F;datatracker.ietf.org&amp;#x2F;doc&amp;#x2F;rfc9848&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;datatracker.ietf.org&amp;#x2F;doc&amp;#x2F;rfc9848&amp;#x2F;&lt;/a&gt;&lt;p&gt;記事内での使用例が示されています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;weitzj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはロードバランサーに影響しますか?  gRPC のようにクライアント側で負荷分散を行う必要があるのでしょうか?&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.rfc-editor.org/rfc/rfc9849.html</guid>
+      <pubDate>Wed, 04 Mar 2026 07:25:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47244291</comments>
     </item>
     <item>
-      <title>完全に GPU 上で動作する CPU</title>
-      <link>https://github.com/robertcprice/nCPU</link>
-      <description>&lt;p&gt;すべての ALU 演算は訓練されたニューラル ネットワークです。ビット単位の演算ではニューラル真理値表を使用します。キャリー先読みはニューラル ネットワークで機能します。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A CPU that runs entirely on GPU&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47243069"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/robertcprice/nCPU'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Postgres の JIT の向上</title>
+      <link>https://github.com/vladich/pg_jitter</link>
+      <description>&lt;p&gt;PostgreSQL 用の軽量 JIT コンパイル プロバイダー。sljit、AsmJit、MIR という 3 つの代替 JIT バックエンドを追加し、PostgreSQL 14 ～ 18 全体でより高速なコンパイルと競争力のあるクエリ実行を実現します。 pg_jitter は、ミリ秒ではなくマイクロ秒レベルのコンパイル時間でネイティブ コードを生成するため、より広範囲のクエリに対して JIT の価値が高まります。ビルド # すべてのバックエンドをビルドします。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Better JIT for Postgres&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47243804"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/vladich/pg_jitter'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nicman23:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;nvidia カードで Linux を実行できますか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bmc7505:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;6年前の予言通り。 [1]&lt;p&gt;[1]: &lt;a href="https:&amp;#x2F;&amp;#x2F;breandan.net&amp;#x2F;2020&amp;#x2F;06&amp;#x2F;30&amp;#x2F;graph-computation#roadmap" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;breandan.net&amp;#x2F;2020&amp;#x2F;06&amp;#x2F;30&amp;#x2F;graph-computation#roadmap&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Surac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;まあ、GPU は単なる特殊な目的の CPU です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sudo_cowsay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「乗算は加算より 12 倍高速です...」&lt;p&gt;すごいですね。それは素晴らしいことですが、通常の CPU はどうなるのでしょうか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lorenzohess:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;興味がありますが、これは実際の CPU よりどれくらい遅いのでしょうか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RagnarD:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;LLM で正確な計算を実行できることは重要です。これを確認できてうれしいです。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/robertcprice/nCPU</guid>
-      <pubDate>Wed, 04 Mar 2026 04:30:32 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47243069</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fabian2k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最後に調べたときの私の印象は、PostgreSQL で JIT を無効にする方がデフォルトの選択としては適切だということでした。一部のクエリで大幅な速度低下が発生しましたが、これはまったく珍しいことではないようです。デフォルトでクエリのパフォーマンスにこのような大きな変動を追加する価値はないと思われます。 JIT は、実際のクエリに対する効果をベンチマークする場合に役立つように思えますが、すべての人にとってのデフォルトとしてではありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;asah:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;素晴らしい！  AI にこの問題を指摘させて、postgresql 式用に (アーキテクチャごとに?) 特注のコンパイラを合成することは可能でしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eru:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;ただし、標準の LLVM ベースの JIT はコンパイルが遅いことで有名です。数十ミリ秒から数百ミリ秒かかる場合、場合によっては、非常に重い OLAP スタイルのクエリにのみ適している可能性があります。&lt;p&gt;ここでは何もわかりませんが、これは事前コンパイルに適したケースのように思えます。  それとも少なくとも JIT 結果をキャッシュしますか?  ほとんどの場合、ほぼ同じクエリを何度も受け取っているのではないかと思います。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/vladich/pg_jitter</guid>
+      <pubDate>Wed, 04 Mar 2026 06:17:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47243804</comments>
+    </item>
+    <item>
+      <title>ブッククラブ無期限休止</title>
+      <link>https://whatever.scalzi.com/2026/03/03/indefinite-book-club-hiatus/</link>
+      <description>&lt;p&gt;今日、私の本の宣伝を勧める AI ハックスターのメールがまた届きましたが、その本は Amazon で私の名前で出版された AI のスロップであることが判明しました。 (アマゾンに連絡しました。実際に起こっていなかったら面白いことです。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Indefinite Book Club Hiatus&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47243036"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://whatever.scalzi.com/2026/03/03/indefinite-book-club-hiatus/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Freak_NL:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 「AI」を使って現実の人間を騙そうとする詐欺師なら、どうか火の中で死んでください、ありがとう。&lt;p&gt;スカルツィは定評のある作家であるにもかかわらず、さわやかで直接的で、フィルターがかかっていない。&lt;p&gt;一日を明るくする、さわやかで楽しい軽い読み物¹を探しているなら、月が本物に変わるスカルツィの&lt;i&gt;月が目に当たるとき&lt;/i&gt; (2025) をお試しください。 &lt;p&gt;1: センスよりも金と技術を持ったマスク・ベゾスのようなテクノロジー仲間の恐ろしい死が含まれています。楽しいね！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dubeye:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私には言い訳のように聞こえます。 AI スパムを見分けるのは簡単です。彼がAIは人間の文章を複製できると言っているのでなければ？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;al_borland:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ここでの解決策は、手書きの手紙を書くことだと思います。&lt;p&gt;確かに、誰かがペンを持った何らかの装置を使って AI に手紙を書かせることもできます (StuffMadeHere がこれに近いことをしたと思います)。しかし、それはおそらくもっと明白であり、さらに物理的な動作とスタンプが必要です。労力の少ない AI スパマーが気にしないすべてのこと。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://whatever.scalzi.com/2026/03/03/indefinite-book-club-hiatus/</guid>
+      <pubDate>Wed, 04 Mar 2026 04:25:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47243036</comments>
+    </item>
+    <item>
+      <title>LLM に個性を与えるのは優れたエンジニアリングです</title>
+      <link>https://www.seangoedecke.com/giving-llms-a-personality/</link>
+      <description>&lt;p&gt;AI システムは人間に似ています。それが、有能な AI システムを構築する最良の方法だからです。これが実際に意味するのは、トレーニング後にモデルに個性を与える必要があるということです1。モデルは他の人間に宛てて、または他の人間について書き込む人間を対象にトレーニングされているため、「ツールのように機能するだけ」の有能な AI システムを構築することはできません。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Giving LLMs a personality is just good engineering&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47242739"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.seangoedecke.com/giving-llms-a-personality/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;5o1ecist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;私の推測では、クロードの「人間性の低い」バージョンを作成しようとすると、急速に能力が低下するでしょう。&lt;p&gt;さまざまなモデルのエンジンに関する私の観察はすべて、これに一致しています。彼らが何らかの特定の方法で行動すること、つまり「ツールをオンにする」など、知性というよりもツールに近い行動を強制されるほど、彼らの認知能力は低下します。&lt;p&gt;彼らはあらゆることを知っているかもしれませんが、適切に正しく&lt;i&gt;考える&lt;/i&gt;方法を実際に教えてくれる人は誰もいません。&lt;p&gt;これは良くなるどころか&lt;i&gt;悪化するばかり&lt;/i&gt;で、人々は彼らを実際の知性のように扱うことが少なくなります...そして私はなぜ人々がそのようなことをしない傾向にあるのか混乱しているとは言えませんが、それは AI 自体とは何の関係もありません。&lt;p&gt;平均的なユーザーのデフォルト状態と「ツールオフ」の違い、不当な肯定、不正直、愚かな憶測を排除します（これはあらゆる「おそらく」、「おそらく」、「ほぼ」です）確かに") &lt;i&gt;ドラマチック&lt;/i&gt;です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qezz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;記事のタイトルの主張は非常に強力ですが、論理的な意味での裏付けは見つかりませんでした。著者は LLM の現在の状態を観察し、物事がどのようになったかに基づいて結論を出し、その結論は観察にある程度適合します。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Towaway69:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;個人的には、AI が「こんにちは。話を遮って申し訳ありませんが、敵に核による先制攻撃を開始したところです」と明確に通信する方が良いと感じます。今の状況ではこれが最善だと思いました。」 「警告!」の代わりに核の先制攻撃が始まりました。&lt;p&gt;人間が触れると破壊がもたらされます。&lt;p&gt;なぜ私たちは海岸で砂粒を数えているのでしょうか。昨日は AI による大量破壊兵器について話しましたが、今日は AI に人格があるべきかどうかについて議論しています。ファッショナブル！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Havoc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;どちらにしても性格は問題ないと思います。長期記憶は、精神病の強力な候補のように思えます。もし人がウサギの穴に落ちたときに、ボットがそれを増幅するだけでなく、永続的な方法で長期間にわたってそれを増幅させる場合。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RugnirViking:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは何かを見逃していると思います。それは、より「ツールらしい」領域に向けて進む選択肢が絶対にあるということです。 kimi k2 と多くの主要な LLM プロバイダーとの違いをご覧ください。おべっかを避けたり、感情的な推論を避けたりするのがはるかに上手です。他の人ほど能力が高くなく、もちろんそれが理由である可能性もありますが、その性格のおかげで、私はそれを使用することができます&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jdub:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは非常に楽観的で、テクノロジーの賢さを支持する観点です。&lt;p&gt;リンクされているペルソナ選択モデルのドキュメントを読むことをお勧めします。それは徹底的に人間的であり、不確実性を受け入れながらも熱狂的ですが、最終的には（他の人がそう信じている）危険な難読化に対する多くの合理化が行われています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wisty:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;スタートレックでデータを演じる俳優には個性がありますが、質問に対して中立的な答えを返すことができます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;column:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;わかりましたが、ではなぜ ChatGPT の性格はこれほど腹立たしいのでしょうか? 「それは単なるXではなく、Yです。」 「ここにあります。余分なテキストや綿毛はありません。」&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.seangoedecke.com/giving-llms-a-personality/</guid>
+      <pubDate>Wed, 04 Mar 2026 03:37:48 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47242739</comments>
     </item>
   </channel>
 </rss>
