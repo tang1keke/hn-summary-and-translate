@@ -6,70 +6,126 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 05 Mar 2026 04:50:02 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2026 07:03:26 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Python 的 asyncio 原语在共享状态方面存在哪些错误</title>
-      <link>https://www.inngest.com/blog/no-lost-updates-python-asyncio</link>
-      <description>&lt;p&gt;async defrain_requests(): while 状态。 Condition() async def set_state(new_state)：全局状态与条件异步：state = new_state 条件。 create_task(drain_requests()) 等待异步。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; What Python's asyncio primitives get wrong about shared state&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47256923"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.inngest.com/blog/no-lost-updates-python-asyncio'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>你刚刚收到</title>
+      <link>https://dylan.gr/1772520728</link>
+      <description>&lt;p&gt;这条消息很特别。当然，充值后他们会向你扔一些免费的东西，但这个消息是不同的。我多年来一直收到沃达丰的消息，这是我第一次看到拼写错误。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; You Just Reveived&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47257637"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://dylan.gr/1772520728'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rpz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;让我想起 &lt;a href="https:&amp;#x2F;&amp;#x2F;geocar.sdf1.org&amp;#x2F;fast-servers.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;geocar.sdf1.org&amp;#x2F;fast-servers.html&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;evil-olive:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;标题似乎没有必要点击欺骗。&lt;p&gt;而不是“Python 的 asyncio 原语出错了”这看起来更像是“为什么我们选择一个异步原语（队列）而不是其他原语（事件和条件）”&lt;p&gt;而且，在帖子进行到一半时，问题产生了一个新的要求：&lt;p&gt;&gt;不要唤醒消费者并询问“当前状态是您想要的吗？”，而是将每个转换缓冲到每个消费者队列中。每个消费者都会耗尽自己的队列并单独检查每个转换。消费者永远不会错过任何状态。&lt;p&gt;如果需要缓冲每个状态更改，那么......是的，您将需要某种类型的缓冲区。之前提出的解决方案（轮询、事件、条件）永远不会起作用。&lt;p&gt;预先给出完整的要求，您可以直接跳到“仅使用队列” - 缺点是它会使博客文章变得不那么有趣。&lt;p&gt;此外，这是使用没有任何大小限制的队列，如果事件排队的速度快于其消耗的速度，这似乎会发生内存泄漏。值得注意的是，对于可以通过事件和条件满足的更简单的用例，这种情况不会发生。&lt;p&gt;&gt; threading.Lock 保护值和队列列表。&lt;p&gt;除非我遗漏了一些明显的东西，否则这似乎应该是 asyncio.Lock？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pothamk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;使用 asyncio 让人困惑的一件事是“单线程”被解释为“无并发风险”。&lt;p&gt;但是协程仍然在每个等待点交错执行，因此共享的可变状态可能变得像多线程代码一样脆弱 - 调度边界只是从操作系统线程移动到协作让出点。&lt;p&gt;在实践中，如果您想避免微妙的状态损坏，则倾向于将设计推向队列、参与者或消息传递模式。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ydj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为，与其说 asyncio 原语在共享状态方面犯了错误，不如说作者在这些原语的使用方面犯了错误。它们是经典的并发原语，已经存在了近半个世纪。它们按设计工作，但需要小心才能正确使用。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dbt00:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;更通用的消息传递邮箱方法怎么样？这在 Erlang&amp;#x2F;gen_server&amp;#x2F;gen_fsm 世界中非常有效。 （在许多其他情况下，但 Erlang 的 OTP 仍然是这些东西的最好、最简单的化身之一）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TZubiri:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;抱歉，如何从 1. 轮询跳到 2. 异步&lt;p&gt;中间有很多解决方案，我有这样的理论：大多数进入异步的人并不真正知道线程是什么。  也许他们有一个世界愿景，即在 2023 年之前 python 无法同时完成一件事，这就是 GIL 所言对的吗？但现在在 3.12 之后，Guido 真的开始自力更生，删除了 GIL 并实现了异步，现在 python 可以一次做不止一件事，所以他们开始学习异步，以便能够一次做不止一件事。&lt;p&gt;这与 python 开发人员实际构建的内容（面向并发的不同 api）之间存在巨大脱节。一些初级开发人员认为他们正在学习前沿的东西，而实际上他们是通过一个非常做作的镜头来学习基础知识的。&lt;p&gt;它 100% 来自前节点开发人员，我会保留对节点的批评，但节点有一个非常具体的并发模型，尝试 python 的节点开发人员有时会运行 asyncio 作为软化新语言的学习曲线的一种方式。这就是他们陷入困境的原因。&lt;p&gt;Python 开发人员正在研究这些功能，因为他们必须研究某些东西，而基础技术的更新应该会在几十年内产生影响，很少需要使用前沿功能。在 95% 的情况下，您应该限制自己使用 5-10 年前版本的功能，特别是如果您来自其他语言！你应该从旧到新，而不是从新到旧。&lt;p&gt;抱歉，我的咆哮，或者如果我判断错误，基于多个角度提出更广泛的主张。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.inngest.com/blog/no-lost-updates-python-asyncio</guid>
-      <pubDate>Thu, 05 Mar 2026 02:55:57 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47256923</comments>
+&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;larodi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;六个多月以来，s.o.正在（也许是无意中）支付我的手机账单。我有两张SIM卡，一张是数据卡，几乎没用过。给接线员打了两次电话，担心是奶奶弄乱了用户 ID，或者是这样。试图通过支付账单来冒充我，然后声称拥有所有权。重复两次。向我保证，他们不知道是谁支付的，因为付款来自只接受现金支付的合作伙伴网络，而且任何人都不可能声称拥有该 SIM 卡。&lt;p&gt;虽然金额不大，但即使在与支持人员打了两次很长时间的电话之后，这种情况仍然会持续下去，仍然非常可疑。我很快就会与合作伙伴网络进行交谈，但令人震惊的是，这些人对谁真正为他们的企业提供资金不感兴趣。他们只是在那里接受它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jaksa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对全家人共享两部手机并交换 SIM 卡更感兴趣。其背后的原因是什么？它是如何运作的？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;userbinator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“无限数据”是指这是一个有趣的对比，总是让我想知道“速度是多少？”&lt;p&gt;更令我惊讶的是，移动套餐仍然按分钟收费。 “收费质量”是指“收费质量”。 64kbps 音频流为每分钟 480KB。更高级的编解码器使用其中的一小部分。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Quarrelsome:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;上面写着“五天”。所以我假设这些分钟的数据只会持续那段时间。所以我想象这就像我每 X + n 个月去一次亚马逊，它试图用一个月的免费黄金时间吸引我回来。他们为您提供免费赠品供您使用，以养成习惯，然后他们可以从中获利。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;c0balt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;沃达丰在垃圾邮件方面是一个相当大的害虫，导致他们收到了两打电子邮件、一堆短信和五个电话。毫不奇怪，他们不再费心检查垃圾邮件的拼写。&lt;p&gt;尤其是电子邮件，向我重新发送五次每月 5 欧元回扣的相同优惠只是令人反感的垃圾邮件。其他的只是相同报价的不同样式的变体。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jofzar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在这个重生的日子里，我们都受到真正的祝福。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;DetroitThrow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哦，沃达丰垃圾邮件提供者，我可以通过你的坚持和不成功的真诚感受到你编码的温暖。也许有一天，通过你害羞的外表，我可以收到一份报价，以赎回一个我可以深情地想念我余生的夜晚&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://dylan.gr/1772520728</guid>
+      <pubDate>Thu, 05 Mar 2026 04:37:43 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47257637</comments>
     </item>
     <item>
-      <title>黄仁勋表示 Nvidia 正在退出 OpenAI 和 Anthropic</title>
-      <link>https://techcrunch.com/2026/03/04/jensen-huang-says-nvidia-is-pulling-back-from-openai-and-anthropic-but-his-explanation-raises-more-questions-than-it-answers/</link>
-      <description>&lt;p&gt;事情可能就是这么简单。 Nvidia 上周刚刚完成的 OpenAI 1100 亿美元融资中的投资额为 300 亿美元，远低于之前的承诺。看起来更有可能的是，这是对已经变得非常复杂、非常快的情况的退出。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Jensen Huang says Nvidia is pulling back from OpenAI and Anthropic&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47256781"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://techcrunch.com/2026/03/04/jensen-huang-says-nvidia-is-pulling-back-from-openai-and-anthropic-but-his-explanation-raises-more-questions-than-it-answers/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Show HN：Poppy – 一款用于保持人际关系的简单应用程序</title>
+      <link>https://poppy-connection-keeper.netlify.app/</link>
+      <description>&lt;p&gt;关系花园 🌱 您的联系人就像一个活生生的花园。您的数据存储在您的设备上。 JSON 导出您的数据。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Poppy – a simple app to stay intentional with relationships&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47257352"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://poppy-connection-keeper.netlify.app/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;01100011:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;英伟达可能会翻转开关，开始与以前的客户竞争。他们拥有人才、模型、硬件，并且知道如何快速构建数据中心。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SamDc73:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我猜星门的钱没有出现，现在整个僵局正在崩溃？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tl2do:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Nvidia 不应该向 OpenAI 和 Anthropic 投入更多资金，而应该投入更多资金来扩大 RTX 5000 系列及后代的产能。高端消费级 GPU 的可用性仍然受到限制，尤其是 RTX 5090，而且市场价格仍然很高。英伟达应该回到消费者端。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dmix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一个更好的标题：&lt;p&gt;英伟达在这两家公司上市前匆忙进行了一些投资，现在只是等待付款。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://techcrunch.com/2026/03/04/jensen-huang-says-nvidia-is-pulling-back-from-openai-and-anthropic-but-his-explanation-raises-more-questions-than-it-answers/</guid>
-      <pubDate>Thu, 05 Mar 2026 02:33:58 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47256781</comments>
+&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;HaloZero:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢这个！这是一个非常棒的免费小应用程序。你有什么理由不开源它？我很乐意帮助修复我遇到的一些错误。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SeriousM:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我真的很欣赏这项工作。是的，它是人工智能语言，但似乎还没有完善到可以在所有设备上运行。&lt;p&gt;它确实做了一件事：存在。我知道，这听起来很愚蠢，但是一个试图不花钱让世界变得更美好的应用程序不仅仅是“好吧，我可以自己编写代码”。&lt;p&gt;感谢这个应用程序的其他创建者。感谢您相信这个应用程序可能会对我们生活的重要部分产生影响：
+重新连接人们。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dvt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“Poppy 将您的联系人变成了一个活生生的花园。温柔的提醒，零内疚。”——哎呀，至少写下你自己的口号：&amp;#x2F;&lt;p&gt;这是一个好主意，已经被尝试了大约 300 次，但由于它取决于已经认识到保持关系，所以安装它的人不会去找需要使用它的人。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jamilton:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;网站看起来不错。人工智能编写的副本如此痛苦，足以让我感到厌烦，足以让我的第一个想法是“哦，是的，我记得听说过这种应用程序，我应该看看我正在考虑的另一个应用程序”。我确实喜欢它是本地的且免费的。&lt;p&gt;导入了一些联系人，进行快速设置，第一次联系，无法向下滚动以确认完成设置。我使用的是 SE，屏幕稍小，有时应用程序似乎遇到问题，我认为他们假设屏幕更大。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adi2907:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这绝对是非常有用的，也是我一直在考虑自己构建的东西。个人 CRM。问题是，当我看到这样的东西时——我需要大约半个小时才能弄清楚——虽然我可以在一个小时内编写一些代码，这将为我做更多的事情并对其进行个性化，但我却不愿意尝试。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zlies:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好主意！我在联系人导入过程中注意到一个错误。生日月份移动 -1 :)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;seism:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;美丽的。我有点担心你很快就会失去兴趣并停止支持没有商业模式的应用程序。您是否计划至少获得赞助，例如通过某种基金会，比如支持心理健康倡议的基金会？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bahador:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是您朋友的 CRM 吗？金融风险管理师？朋友力量？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jonners00:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这很棒，但也不太适合（在视觉效果、名称、语言方面）一些最需要它的观众。如果能有一个更能引起中年男性共鸣的版本就太好了。橡木什么的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dddddaviddddd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果主页在禁用 Javascript 的情况下加载得更优雅，那就太好了——事实上，没有 JS，它是完全空白的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paulhebert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这看起来很可爱！我一直想更好地给朋友和家人打电话。我会尝试一下！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://poppy-connection-keeper.netlify.app/</guid>
+      <pubDate>Thu, 05 Mar 2026 03:56:38 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47257352</comments>
     </item>
     <item>
-      <title>美国科技公司在白宫承诺承担数据中心的能源成本</title>
-      <link>https://www.theguardian.com/us-news/2026/mar/04/us-tech-companies-energy-cost-pledge-white-house</link>
-      <description>&lt;p&gt;特朗普在与科技公司领导人举行的关于纳税人保护承诺的圆桌会议上发表讲话。照片：Bonnie Cash/EPA 全屏查看图像特朗普在与科技公司领导人举行的纳税人保护承诺圆桌会议上发表讲话。总统在承诺签署活动上表示：“这意味着科技公司和数据中心将能够获得所需的电力，而不会增加消费者的电费。”&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; US tech firms pledge at White House to bear costs of energy for datacenters&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47256545"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.theguardian.com/us-news/2026/mar/04/us-tech-companies-energy-cost-pledge-white-house'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>您需要为 AI 代理重写 CLI</title>
+      <link>https://justin.poehnelt.com/posts/rewrite-your-cli-for-ai-agents/</link>
+      <description>&lt;p&gt;代理不需要 GUI。代理自助服务，无需预先填写文件。上下文窗口规则 API 返回大量 blob。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; You need to rewrite your CLI for AI agents&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47252459"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://justin.poehnelt.com/posts/rewrite-your-cli-for-ai-agents/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dolphinscorpion:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只要他们答应了。他们的话是金字招牌&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;madhacker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;特朗普帮助科技兄弟出售更多数据中心。承诺是愚蠢的。自古以来，你就为你使用的东西付费。不需要用新的含义重新定义现有的单词。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;miyoji:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您可以在 [0] 阅读实际承诺。有关它的行政命令位于 [1]。&lt;p&gt;评论中有一些关于承诺中包含或不包含内容的猜测。我建议您自己阅读。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.whitehouse.gov&amp;#x2F;articles&amp;#x2F;2026&amp;#x2F;03&amp;#x2F;ratepayer-protection-pledge&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.whitehouse.gov&amp;#x2F;articles&amp;#x2F;2026&amp;#x2F;03&amp;#x2F;ratepayer-protec...&lt;/a&gt;&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.whitehouse.gov&amp;#x2F;总统行动&amp;#x2F;2026&amp;#x2F;03&amp;#x2F;纳税人保护承诺公告&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.whitehouse.gov&amp;#x2F;presidential-actions&amp;#x2F;2026&amp;#x2F;03&amp;#x2F;率...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;7thpower:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;即使这些承诺是真诚的，人们对公用事业的运作方式也很天真。&lt;p&gt;公用事业公司的总体目标是追求下一个“目标”，并努力进行某种监管以锁定需求，这可以用作寻求价格上涨和整合的杠杆。&lt;p&gt;如果有利润空间，公用事业公司就会找到办法，无论哪种方式，价格都会上涨。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;powerpcmac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如今，唯一相信企业骗钱的人要么是婴儿潮一代，要么是把剩余的钱投资于大行上涨的人&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;h4kunamata:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是美国，所以我们都知道这些科技公司最终不会偿还一分钱，但人们会。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SilverElfin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们是否承诺承担噪音污染和水源破坏的成本？说实话，这些承诺只是一场戏剧，反映了科技寡头与特朗普政府之间的协议。他们通过捐款或其他方式行贿，然后拿回这个欺骗性的戏剧表演。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mcs5280:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;无约束力和自愿=一堆口头承诺&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deadbolt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们最终都会为此付出代价，每个参与其中的人都知道这一点。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fulafel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它包括外部性（二氧化碳排放）吗？&lt;p&gt;增加天然气发电当然是灾难性的政策，气候灾难会导致大量人员死亡，因此需要减少化石燃料的使用和生产。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cs702:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;《看不见的手》自由市场的影响已经变得真正隐形了……&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;techblueberry:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;等等“承诺”？  “质押”的法律保护有哪些？&lt;p&gt;克劳德：&lt;p&gt;“对于您的主要问题，质押是法律文件吗？
-一般来说，不会。承诺是公开承诺或意向声明，而不是具有约束力的法律合同。该协议似乎没有任何具体的、有约束力的承诺。  不存在像合同那样的惩罚机制或执行结构。”&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.theguardian.com/us-news/2026/mar/04/us-tech-companies-energy-cost-pledge-white-house</guid>
-      <pubDate>Thu, 05 Mar 2026 02:00:07 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47256545</comments>
+&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sheept:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这感觉完全是推测性的：无法衡量这种方法是否真正有效。&lt;p&gt;就我个人而言，我持怀疑态度：&lt;p&gt;- 让代理查找 JSON 模式和技能以使用 CLI 仍然会将大量标记转储到其上下文中。&lt;p&gt;- 为 AI 代理而不是人类进行设计似乎不太适合未来。世界的大部分仍然是为人类设计的，因此代理的开发人员有动力让代理越来越容忍人类设计。&lt;p&gt;-这种设计很新颖，并且在法学硕士的训练数据中可能相当陌生，所以我认为与更传统的、以人为中心的 CLI 相比，代理会花费更多的代币来弄清楚这个 CLI。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jsunderland323:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我现在正在使用 CLI。&lt;p&gt;我使用的模式是这样的：&lt;p&gt;1) 创建了一个 docs 命令，打印出可用文档的路径&lt;p&gt;$ my-cli docs&lt;p&gt;- README.md&lt;p&gt;- DOC1.md&lt;p&gt;- dir2&amp;#x2F;DOC2.md&lt;p&gt;2) 添加了一个 --path 标志来打印出特定的文档（试图保留每个文档）少于 400 行)。&lt;p&gt;$ my-cli docs --path dir2&amp;#x2F;DOC2.md&lt;p&gt;# DOC2.md 的内容&lt;p&gt;3) 添加了嵌入，以便我可以进行语义搜索&lt;p&gt;$ my-cli search "如何安装 x？"&lt;p&gt;[1] DOC1.md&lt;p&gt;"您可以通过 ... 安装 x"&lt;p&gt;[2] dir2&amp;#x2F;DOC2.md&lt;p&gt;“安装后...”&lt;p&gt;然后您只需要一个简单的技能来告诉代理有关文档和搜索命令的信息。&lt;p&gt;我真的很喜欢这种模式，它工作得非常好。我也让它与 i18n 一起工作。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rsanheim:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不，不。代理可以很好地处理各种 CLI。旧标准、新的自定义内容等等。&lt;p&gt;我见过的代理所遇到的 CLI 是那些将庞大、笨重、设计糟糕的 API 封装在一个命名空间下的 CLI。例如，所有 Google Workspace api。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lynx97:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢人工智能如何给命令行和 TUI 界面带来第二次文艺复兴。  不仅仅是 AI 喜欢 CLI。  尤其是像我这样的盲人，他们仍然使用大量文本模式工具来实现隐式可访问性。  我最近尝试了一下 Codex，嘿！完全没有可访问性问题。  就可以了。  几年前，它会作为纯 GUI 程序发布，并且会将我完全拒之门外[1]。  幸运的是，面向文本的交互再次变得重要！！！&lt;p&gt;1：严格来说，有多种方法可以使用屏幕阅读器访问 Linux 上的&lt;i&gt;一些&lt;/i&gt; GUI 程序。  然而，坦率地说，大多数使用起来并不是很愉快。  我从 TUI 获得的交互速度是无与伦比的。  每当我使用真正的 GUI 时，无论是 Windows、Mac 还是 Linux，感觉就像我在梦中试图逃离怪物。  我试着逃跑，但我只能摇摇晃晃……&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;devmor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个非常愚蠢的前提。&lt;p&gt;如果人工智能代理如此不发达且无用，以至于它们无法解析 CLI 标志，那么答案不是重写 CLI。&lt;p&gt;你要么为代理提供一个 API 层，要么不使用它们，因为它们对于问题空间来说还不够成熟。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;computerfriend:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;人类很少会错别字。&lt;p&gt;我不认为这是真的？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jeppeb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该文章指出，代理使用 JSON 比记录的标志更好地工作 - 这似乎违反直觉。这个假设如何得到验证？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lejalv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;真正的问题：为此构建的实际是什么样子？&lt;p&gt;不那么真实的问题是什么？还是超现实的问题？&lt;p&gt;我知道抱怨 HN 的污水已经变得令人厌烦。但是各位！在写作中&lt;i&gt;多加一点&lt;/i&gt;！人们开始看起来好像又多了一项代理技能“写博客文章”，其结果是可预测的，因为我们不是一个忍受令人恶心的代码的 Python 解释器，而是拥有真实生活和沟通品味的真实人类&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;smy20011:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们要再次重新发明 RPC 吗？使用 JSON 调用 CLI 程序听起来像 RPC 调用。该架构感觉像是 LSP 可以为此类功能提供的东西。&lt;p&gt;也许要求代理编写并执行包装 CLI 的代码是一个更好的解决方案。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;相关的持续话题：&lt;p&gt;&lt;i&gt;Google Workspace CLI&lt;/i&gt; - &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47255881"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47255881&lt;/a&gt; - 2026 年 3 月（136 条评论）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;justinwp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;标题有点标题党的意思，但事实并非如此！ :)&lt;p&gt;---&lt;p&gt;Human DX 针对可发现性和容错性进行了优化。
+Agent DX 针对可预测性和纵深防御进行了优化。
+这些差异足够大，以至于为代理改造以人为本的 CLI 是一个失败的赌注。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://justin.poehnelt.com/posts/rewrite-your-cli-for-ai-agents/</guid>
+      <pubDate>Wed, 04 Mar 2026 19:20:03 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47252459</comments>
+    </item>
+    <item>
+      <title>“LLM”中的L代表说谎</title>
+      <link>https://acko.net/blog/the-l-in-llm-stands-for-lying/</link>
+      <description>&lt;p&gt;这是伪造的，因为它不是真实的。这是有充分理由的。这不仅仅是浪漫主义。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The L in "LLM" Stands for Lying&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47257394"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://acko.net/blog/the-l-in-llm-stands-for-lying/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;feverzsj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;更像是疯子。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://acko.net/blog/the-l-in-llm-stands-for-lying/</guid>
+      <pubDate>Thu, 05 Mar 2026 04:02:32 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47257394</comments>
+    </item>
+    <item>
+      <title>Dulce et Decorum Est (1921)</title>
+      <link>https://www.poetryfoundation.org/poems/46560/dulce-et-decorum-est</link>
+      <guid isPermaLink="true">https://www.poetryfoundation.org/poems/46560/dulce-et-decorum-est</guid>
+      <pubDate>Wed, 04 Mar 2026 21:41:40 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47254322</comments>
+    </item>
+    <item>
+      <title>通过人工智能辅助重写重新授权</title>
+      <link>https://tuananh.net/2026/03/05/relicensing-with-ai-assisted-rewrite/</link>
+      <description>&lt;p&gt;最近维护人员使用 Claude Code 重写了整个代码库并发布了 v7.1 版本。无尘室重写需要人工智能绕过的墙在传统软件法中，“无尘室”重写需要两个团队：A 团队查看原始代码并编写功能规范 B 团队（从未见过原始代码）仅根据该规范编写新代码。通过使用原始 LGPL 代码提示的人工智能，维护人员绕过了这堵墙。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Relicensing with AI-Assisted Rewrite&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47257803"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://tuananh.net/2026/03/05/relicensing-with-ai-assisted-rewrite/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;est:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;呃，弑父？&lt;p&gt;从 gpt3 到 gpt-3.5（又名 ChatGPT）的关键飞跃是 code-davinci-002，它是在 OpenAI 与微软合作后在 Github 源代码上进行训练的。&lt;p&gt;开源代码为 LLM 惊人的 CoT 一致性做出了很大贡献。如果没有开源运动，LLM 的发展将会晚得多。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zozbot234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果你要求法学硕士导出一个没有原始代码表达元素的规范（洁净室人类团队可以仔细验证这一点），然后要求法学硕士的另一个实例（具有新的上下文）从规范中写出代码，这与“洁净室”有什么不同？改写？  编写新代码的代理只会看到规范，并且根据假设（在所有洁净室重写中所做的假设），规范是纯粹事实，所有受版权保护的表达都已被提炼出来。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;samrus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;所有权无效：如果代码确实是由机器创建的“新”作品，那么从技术上讲，它可能在生成时就处于公共领域，从而使 MIT 许可证变得毫无意义。&lt;p&gt;我很难弄清楚这个结论是从哪里来的。对我来说，人工智能编写的作品似乎不能抄写，所以有点像复制粘贴原始代码。复制粘贴原始代码不会使其成为公共领域。 Ai gen 代码不能被复制，或进入公共领域，或用于原始代码许可之外的目的。这里有什么悖论？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Tomte:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;原作者 a2mark 认为这是潜在的 GPL 违规&lt;p&gt;Mark Pilgrim！这是我很长时间没有读过的名字了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;himata4113:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的意思是，在我看来，GPL 许可代码应该只是感染模型，迫使它们遵循许可证。&lt;p&gt;您可以通过这样说来做到这一点：完成代码“&lt;来自 gpl 许可代码的片段&gt;”。&lt;p&gt;如果现在模型获得 GPL 许可，则重新许可的问题就消失了，因为这些模型生成的代码理论上也应该获得 GPL 许可。&lt;p&gt;不幸的是，有一个愚蠢的条款，计算机生成的代码不能首先受版权保护或获得许可。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mfabbri77:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这有可能扼杀开源，或者至少扼杀最严格的许可证（GPL、AGPL...）：如果许可证不再保护软件免遭不必要的使用，唯一可能的策略就是使开发闭源。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kshri24:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;所有权无效：如果代码确实是由机器创建的“新”作品，那么从技术上讲，它可能在生成时就处于公共领域，从而使 MIT 许可证变得毫无意义。&lt;p&gt;这将如何运作？关于人工智能模型生成的代码（在所有公开可用的源（无论许可证类型如何）上进行训练）是否合法，我们仍然没有法律结论。 IANAL 但恕我直言，这是完全非法的，因为没有征求模型训练源代码作者的许可。因此，如果不知道模型最初是如何激发出生成的代码的，就不可能将机器创建的代码发布到公共领域。很肯定它将被视为“逆向工程”的范围。这不仅仅针对人类。您也可以将其扩展到机器。&lt;p&gt;编辑：我什至可以说，模型训练所用的最严格的许可证应该应用于所有模型生成的代码。原始作者（所有以某种形式贡献代码的 Github 用户）的许可模式应该由人工智能公司补偿。也就是说，每次产生代码相关的代币，都必须有一定比例的利润回流到整个社区。即使每个人都收到一分钱也没关系。那是公平的。还应扩展到其艺术用于培训的艺术家。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;foota:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为这里更有趣的问题是，是否有人可以微调开放权重模型以消除特定库的知识（不确定你会如何做到这一点，但也许可能？），然后尝试让它产生一个干净的房间实现。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nairboon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该代码仍然是 LGPL，无论某些发布工程师在 Github 上的发行说明中写什么都没关系。所有原作者和版权所有者必须明确同意根据不同的许可证进行再许可，否则代码将保持 LGPL 许可。&lt;p&gt;上述 SCOTUS 的决定还涉及生成式 AI 产品的作者身份。这与本案有很大不同。这里我们谈论的是一种转换源代码并由于这种转换而神奇地摆脱版权的工具？想象一下如果这真的可能对美国版权行业造成的后果。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;DrammBA:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢人工智能生成的〜代码〜&lt;i&gt;任何东西&lt;/i&gt;都是公共领域的想法。公共数据进来，公共领域出去。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Retr0id:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;在传统的软件法中，“洁净室”重写需要两个团队&lt;p&gt;是“洁净室”还是“洁净室”？程序是否有法律先例的有意义支持？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anilgulecha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是先例设定。在这种情况下，重写是使用相同的语言，但如果有一个 python GPL 项目，并且它的测试（规范）用于重写 rust 中的规范，然后是 rust 中的实现，那么第二个项目可以合法地是 MIT 或任何其他项目吗？&lt;p&gt;如果是，这在某种意义上允许绕过 GPL 要求。 Linux 的 MIT 版本将在未来 1-2​​ 年内推出。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;verdverm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最近 SCOTUS 拒绝听取与人工智能版权能力相关的上诉，以及这可能如何影响开源许可，提出了一些有趣的问题。&lt;p&gt;希望 HN 社区能够为此带来更多色彩，有一些成员了解这些主题。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://tuananh.net/2026/03/05/relicensing-with-ai-assisted-rewrite/</guid>
+      <pubDate>Thu, 05 Mar 2026 05:07:33 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47257803</comments>
     </item>
   </channel>
 </rss>
