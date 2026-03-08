@@ -6,98 +6,114 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Korean</description>
     <language>ko</language>
-    <lastBuildDate>Sun, 08 Mar 2026 09:35:19 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2026 12:59:15 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ko.xml"/>
     <item>
-      <title>SWE-CI: CI를 통해 코드베이스를 유지 관리하는 에이전트 기능 평가</title>
-      <link>https://arxiv.org/abs/2603.03823</link>
-      <description>&lt;p&gt;) 연결된 문서 연결된 문서 토글(연결된 문서란 무엇입니까?) 리트맵 토글 리트맵(리트맵이란 무엇입니까?) 코드에 대한 링크 Toggle Papers with Code(페이퍼 위드 코드란 무엇입니까?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; SWE-CI: Evaluating Agent Capabilities in Maintaining Codebases via CI&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47295537"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://arxiv.org/abs/2603.03823'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>WASM 작성 시 참고 사항</title>
+      <link>https://notes.brooklynzelenka.com/Blog/Notes-on-Writing-Wasm</link>
+      <description>&lt;p&gt;나는 훌륭한 프로그래머들이 실제로 Bindgen과 싸우는 것을 보았습니다. 궁극적으로 경계를 넘는 모든 것에는 JS 표현이 있어야 하므로 해당 표현이 무엇인지 알아두는 것이 좋습니다. 경계를 넘을 때 기본 JS 및 Rust 유형으로/에서 변환됩니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Notes on Writing WASM&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47295837"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://notes.brooklynzelenka.com/Blog/Notes-on-Writing-Wasm'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ridhoidi2026:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;해킹하러 가세요&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;larsnystrom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;WASM은 일종의 Java 바이트코드와 비슷합니다. 그렇죠? 런타임이 필요한 컴파일 타겟이요? 하지만 샌드박스가 더 나은가요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;flohofwoe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이는 C++ &amp;lt;=&amp;gt;를 자동으로 생성하기 위해 Emscripten의 embind를 사용하는 것과 동일한 문제처럼 보입니다. JS 바인딩, 그리고 내 조언은 "그냥 하지 마세요"입니다.&lt;p&gt;모든 작은 세터&amp;#x2F;게터에 대해 JS&amp;#x2F;WASM 경계를 뛰어넘는 것과 비교하여 손으로 작성한 JS 함수에서 사소한 작업이 발생하는 적절한 하이브리드 C++&amp;#x2F;JS 애플리케이션을 작성하는 것보다 엄청나게 복잡하고 부풀어오르게 됩니다. 하지만 경계 양쪽에 배치해야 하는 코드 사이의 올바른 균형을 찾으려면 경험이 필요합니다.&lt;p&gt;또는 C++ 또는 Rust 유형을 JS에 직접 매핑하는 대신 적절하게 설계된 C API를 통해 터널링합니다(예: 경계를 넘어 복잡한 C++&amp;#x2F;Rust 개체를 전달하려고 시도하지 마세요. C++&amp;#x2F;Rust와 JS 유형 사이에 겹치는 부분이 너무 적습니다. 시스템).&lt;p&gt;자동 바인딩 접근 방식은 거대한 '의미론적 표면'을 가진 언어의 기본 API보다 C API에 훨씬 더 적합합니다. C++이나 Rust처럼 말이죠.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Decabytes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;네, wasm은 불행하게도 이 시점에서는 기본적으로 녹슨 것입니다. 그리고 wasi 미리보기 0.2 구성 요소를 작성하려면 제대로 수행하려면 여러 가지 Rust 도구가 필요합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;suddenlybananas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;왜 PyO3가 wasm-bindgen보다 사용하기 훨씬 좋은가요? WASM 자체 때문인가요, 아니면 단지 도구 때문인가요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;글쎄요... 왜 아무도 wasm을 사용하지 않는지 설명이 됩니다.&lt;p&gt;처음에는 저도 그 과대광고에 반했습니다. 이제 그 숫자가 보인다
+wasm을 사용하는 사람들의 비율은 매우 낮습니다. 가장 작은 것 같아
+자바스크립트를 아는 사람들 중 극히 일부입니다. 그리고 이것은
+아마도 결코 변하지 않을 것입니다.&lt;p&gt;이제 결론을 내릴 때가 된 것 같습니다.&lt;p&gt;- wasm은 작은 틈새 시장으로 남을 것입니다. 적어도 말하자면,
+가까운 미래. 그러나 아마도 영원히.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AyanamiKaine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 Wasm을 정말 싫어합니다. 아이디어나 개념 때문이 아니라 그것이 비대해지기 때문입니다.&lt;p&gt;첫 번째 아이디어는 C&amp;#x2F;C++&amp;#x2F;Rust와 같은 언어로 작성되고 wasm으로 컴파일되는 계산량이 많은 알고리즘이었습니다.&lt;p&gt;이제는 wasm 런타임에서 사용되는 모든 언어에 대한 샌드박스 코드&amp;#x2F;구성 요소를 작성하는 것으로 판매됩니다.&lt;p&gt;그런 다음 유형에 문제가 있습니다. wasm. 웹 브라우저에서 뭔가 실행되는 것으로 보였지만. 그 유형은 녹과 훨씬 더 유사합니다. 예를 들어 JS의 문자열은 기본적으로 UTF-16인 반면 wasm&amp;#x2F;rust는 utf-8입니다.&lt;p&gt;두 문자열 사이를 지속적으로 변환해야 합니다. 나는 항상 wasm이 웹에서 더 빠른 코드를 허용할 수 있기를 바랐습니다. 여기에서는 내 프로그램이 외부 세계로부터 완전히 샌드박스 처리되어 있으므로 동일한 컴퓨터의 다른 프로그램과 상호 작용할 수 없습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Tepix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 WASM 작성에 대한 참고 사항을 찾고 싶었지만 대신 WASM 및 해당 wasm_bindgen 문제를 대상으로 Rust를 작성하는 데 필요한 내용을 찾았습니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://notes.brooklynzelenka.com/Blog/Notes-on-Writing-Wasm</guid>
+      <pubDate>Sun, 08 Mar 2026 09:24:54 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47295837</comments>
+    </item>
+    <item>
+      <title>HN 표시: Eyot, GPU가 또 다른 스레드인 프로그래밍 언어</title>
+      <link>https://cowleyforniastudios.com/2026/03/08/announcing-eyot/</link>
+      <description>&lt;p&gt;이 작업자는 백그라운드 CPU 스레드에서 전송 기능을 사용하여 전송된 값을 처리합니다. 이를 통해 출력을 실시간으로 업데이트할 수 있을 만큼 대기 시간이 크게 단축되었습니다. Eyot는 이를 GPU로 확장합니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Eyot, A programming language where the GPU is just another thread&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47296355"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://cowleyforniastudios.com/2026/03/08/announcing-eyot/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;challengerVIE:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;매일 에이전트를 사용하는 저에게는 유지 관리 가능성을 염두에 둔 장기적인 비전이 실제로 우리 인간과 에이전트 사이의 차이를 만든다는 생각이 마음에 듭니다. 그러나 평균 500개의 위치 변경에 대한 장기 유지 관리 가능성을 평가하는 것은 여기에서 측정되는 장기 유지 관리 가능성처럼 들리지 않습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;verdverm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;매우 최근 모델의 상당한 개선을 보여주는 동시에 전반적으로 매우 나쁜 회귀율을 보여주는 장기 작업 벤치마크입니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://arxiv.org/abs/2603.03823</guid>
-      <pubDate>Sun, 08 Mar 2026 08:11:50 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47295537</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sourcegrift:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;녹에 열광하거나 녹에 대해 비슷한 것을 아는 사람이 있다는 뜻은 아닙니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LorenDB:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이를 통해 SYCL이 더 많은 사랑을 받는 모습을 보고 싶다는 생각이 들었습니다. 현재 컴퓨터 하드웨어 제조사 중 인텔만이 이에 힘쓰고 있는 것으로 보인다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://cowleyforniastudios.com/2026/03/08/announcing-eyot/</guid>
+      <pubDate>Sun, 08 Mar 2026 11:04:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47296355</comments>
     </item>
     <item>
-      <title>HN 표시: 호기심 - DIY 6" 뉴턴 반사 망원경</title>
-      <link>https://curiosity-telescope.vercel.app/</link>
-      <description>&lt;p&gt;MAG: 200x Observation 30-01-26 // Lunar Descent // 사용됨: 2x 바로우 렌즈가 포함된 9mm 접안렌즈 // Bengaluru, India 귀하의 브라우저는 비디오 태그를 지원하지 않습니다. MAG: 200x 관측 30-01-26 // 달 하강 // 사용됨: 2x 바로우 렌즈가 있는 9mm 접안렌즈 // 인도 벵갈루루 2026년 1월 10일 2026년 1월 15일 2026년 1월 23일 25mm 접안렌즈 // 2026년 1월 23일 9mm 접안렌즈 &amp; 2x 바로우 // 1월 30일 2026년은 미국입니다(왼쪽은 Madhav, 오른쪽은 swarup). &gt;&gt; 01_PRIMARY MIRROR ASSEMBLY 등각 평면도 등각 저면도 파란색 3D 프린팅 부품용 인서트 위에 표시된 이미지를 기준으로: 거울 뒷면은 접착 벨크로 후크로 접착되고 분홍색 부품(하우징)은 벨크로 루프로 접착됩니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Curiosity – DIY 6" Newtonian Reflector Telescope&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47295279"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://curiosity-telescope.vercel.app/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Apple의 512GB Mac Studio가 사라지고 RAM 부족이 조용히 인정됩니다.</title>
+      <link>https://arstechnica.com/gadgets/2026/03/apples-512gb-mac-studio-vanishes-a-quiet-acknowledgement-of-the-ram-shortage/</link>
+      <description>&lt;p&gt;그러나 대규모 언어 모델을 포함하여 엄청난 양의 그래픽 메모리를 요구하는 작업 부하의 경우 Studio와 통합 메모리 아키텍처는 대부분의 PC 그래픽 카드가 제공하는 것보다 훨씬 많은 그래픽 메모리를 제공합니다. Apple의 Ultra 칩은 128GB 이상의 RAM을 지원하는 유일한 제품입니다. Andrew Cunningham 수석 기술 리포터 Andrew Cunningham 수석 기술 리포터 Andrew는 Ars Technica의 수석 기술 리포터로 컴퓨터 하드웨어를 포함한 소비자 기술과 Windows 및 macOS와 같은 운영 체제에 대한 심층적인 검토에 중점을 두고 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Apple's 512GB Mac Studio vanishes, a quiet acknowledgment of the RAM shortage&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47296302"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arstechnica.com/gadgets/2026/03/apples-512gb-mac-studio-vanishes-a-quiet-acknowledgement-of-the-ram-shortage/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yehoshuapw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.printables.com&amp;#x2F;model&amp;#x2F;268580-hadley-telescope-official-metric-remix"도 살펴보세요. rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.printables.com&amp;#x2F;모델&amp;#x2F;268580-hadley-telescope-off...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://curiosity-telescope.vercel.app/</guid>
-      <pubDate>Sun, 08 Mar 2026 07:16:15 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47295279</comments>
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bombcar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그들은 M5 기반 버전이 출시되기 전에(소프트든 아니든) 기존 CPU를 통해 판매를 시도할 수도 있습니다(물론 M5 Ultra가 없을 것이라는 소문을 들었지만 올해 말에 M6 Ultra를 볼 수도 있습니다).&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mkl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;지금 48GB M4 Pro Mac Mini를 구입해야 할지, 아니면 올해 말에 M5 Pro를 기다려야 할지 고민 중입니다.  대부분 AI&amp;#x2F;ML 목적으로 사용됩니다.  내가 아는 한, 새로운 M5 MacBook은 같은 용량의 RAM에 비해 성능이 크게 향상되지 않았습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ErneX:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 256GB 구성 가격도 1,600달러에서 2,000달러로 인상되었습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pera:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 방금 Raspberry Pi 5를 구입하려고 했습니다. 8GB 제품은 이제 작년보다 58% 더 비쌉니다. 그것은 내가 지불할 의사가 있는 것보다 더 많은 금액입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;znpy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Apple은 최근 Mac OS에서 rdma 지원을 도입했습니다. 그들은 아마도 512GB 구성을 구매하는 사람들이 256GB 구성을 더 많이 구매하고 함께 클러스터링하도록 유도하려고 할 것입니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arstechnica.com/gadgets/2026/03/apples-512gb-mac-studio-vanishes-a-quiet-acknowledgement-of-the-ram-shortage/</guid>
+      <pubDate>Sun, 08 Mar 2026 10:54:32 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47296302</comments>
     </item>
     <item>
-      <title>폴리프로필렌 제조업체에</title>
-      <link>https://www.lesswrong.com/posts/HQTueNS4mLaGy3BBL/here-s-to-the-polypropylene-makers</link>
-      <description>&lt;p&gt;전 세계의 기업들은 이러한 위험을 처리하는 방법을 모색하고 있었습니다. 그들은 공간보다 더 많은 자원봉사자를 갖고 있었습니다. 그 누구도 자원하여 공장으로 이사하려고 하지 않았습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; To the Polypropylene Makers&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47295040"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.lesswrong.com/posts/HQTueNS4mLaGy3BBL/here-s-to-the-polypropylene-makers'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Sem – 의미론적 버전 제어. Git 위의 엔터티 수준 차이점</title>
+      <link>https://github.com/ataraxy-labs/sem</link>
+      <description>&lt;p&gt;tsx 함수, 클래스, 인터페이스, 유형, 열거형, JavaScript 내보내기. cs 클래스, 메소드, 인터페이스, 열거형, 구조체, 속성 Ruby. PHP 함수, ​​클래스, 메소드, 인터페이스, 특성, 열거형 Fortran.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Sem – Semantic version control. Entity-level diffs on top of Git&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47294924"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/ataraxy-labs/sem'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;renewiltord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ㅋㅋㅋ 결국 그들은 나중에 체인에서 그것을 망쳤습니다. 몇 년 전 산불 시즌을 맞아 거래 중에 잔뜩 구입했는데 아마존은 대량으로만 판매했기 때문에 N95 마스크를 엄청 많이 가지고 있었습니다. 3개 빼고 모두 기부했습니다. 마스크는 "재사용"에는 괜찮지만 병원에서 내가 "프로토콜을 따랐다"고 기부하고 8시간마다 버린 멍청한 놈들. 당신은 의료 전문가들이 지체될 것이라고 믿을 수 있습니다. 다음번에는 그들에게 똥을주지 않을 것입니다. 나는 그 쓰레기를 유지하고 있습니다. 그 놈들과 그 멍청한 놈들을 엿먹여라.&lt;p&gt;저희 아버지는 외과의사이고 이런 종류의 의료 전문가를 정확히 알고 계십니다. 한 사람은 HIV+ 환자를 수술하면서 부상을 입었을지도 모른다고 생각하여 완전히 고장나서 HAART를 겪었습니다. 끊임없이 당황합니다. 외상 병동용으로 제작되지 않았습니다. 가서 다른 일을 해보세요. 아, 프로토콜이 아니군요. 마스크를 폐기하세요.&lt;p&gt;저 멍청한 새끼들은 나한테서 아무것도 얻지 못해요.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;littlestymaar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 만약 노동자들이 정상적인 임금을 받고 이런 일을 하리라 예상했다면 이런 일은 일어나지 않았을 것입니다.&lt;p&gt;사람이 금전적 인센티브에 의해서만 동기를 부여받는다고 믿는 사람들도 있지만 이것이 인류의 현실은 아닙니다. 사람들은 항상 금전적 보상 없이 희생을 합니다. (그리고 많은 사람들이 코로나19 기간 동안 그랬습니다.)&lt;p&gt;미시경제학에 집착하는 사람들이 생각하는 것과는 달리, 근로자들은 정교한 경제적 계산을 하지 않고 대신 &lt;i&gt;공정하게&lt;/i&gt; 대우받는 것에 주로 관심을 갖습니다.&lt;p&gt;그리고 사람들이 미시경제학이 그들을 모델로 삼는 방식을 좋아하지 않는 것이 다행입니다. 왜냐하면 세상은 그렇지 않으면 작동하지 않기 때문입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;readthenotes1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;1차 걸프전 당시 미국 전쟁 기계가 비슷한 일을 하면서 벙커 버스터 폭탄을 만들었다는 이야기가 있습니다...&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.ausairpower.net&amp;#x2F;GBU-28.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.ausairpower.net&amp;#x2F;GBU-28.html&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.lesswrong.com/posts/HQTueNS4mLaGy3BBL/here-s-to-the-polypropylene-makers</guid>
-      <pubDate>Sun, 08 Mar 2026 06:21:28 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47295040</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;7777777phil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;시원한! 라인 수준 차이는 인간이 모든 라인을 작성할 때만 의미가 있습니다. AI 에이전트가 한 세션에 수백 건의 변경 사항을 커밋할 때 어떤 라인이 변경되었는지가 아니라 어떤 기능이 변경되었는지 알아야 합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gritzko:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;"셈"이었습니다. "이식"이라는 이름을 붙였습니다. 지난주에 &amp;quot;가지고&amp;quot; 그로부터 일주일 전? 다들 너무 바빠서 상황을 추적하기가 어렵습니다. 또한 아이디어 도용도 완전히 새로운 수준에 이르렀습니다. 봇 떼는 100% 분위기 있는 도난 프로젝트를 홍보합니다... 우리 모두가 즐기는 순간입니다.&lt;p&gt;그래도 제 생각은 비글은 AST 수준의 버전 제어 시스템이며 실험적입니다&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;gritzko&amp;#x2F;librdx&amp;#x2F;tree&amp;#x2F;master&amp;#x2F;be#readme" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;gritzko&amp;#x2F;librdx&amp;#x2F;tree&amp;#x2F;master&amp;#x2F;be#readme&lt;/a&gt;&lt;p&gt;진짜로 AST 트리를 (거의 모든) 키-값 데이터베이스(현재 RocksDB)에 저장합니다. 실제로 이는 매우 개방적인 형식과 그 위에 구축할 수 있는 완전한 자유를 갖춘 코드용 버전화된 데이터베이스입니다.&lt;p&gt;&lt;i&gt;be&lt;/i&gt;는 사실 옛날(HTTP, SMTP, XML, JSON - 기억하시나요?)처럼 형식 프로토콜에 더 가깝습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;perching_aix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;여기 일상 업무에서 의미 비교 도구를 사용하는 사람이 있나요? 얼마나 좋나요?&lt;p&gt;예를 들어 일부 용도로 사용합니다. YAML [0] 및 JSON [1], 그것들은 훌륭하지만 [2] 비교적 단순한 언어입니다.&lt;p&gt;단순한 diffing AST가 "구문 인식 diffing"에 더 가깝기 때문에 특히 궁금합니다. "의미론적 차이"보다는 하지만 대부분의 의미론적 도구 설명은 AST를 사용한다고 말하는 데 그치지 않습니다.&lt;p&gt;AST가 반드시 최소한의 &amp;#x2F; 저는 구조에 의해 형태가 최적화되었다고 믿습니다. 따라서 "의미론적"이 필요한 상황이 있을 것이라고 확신합니다. Difference는 차이점을 보고하는 반면, 컴파일러는 이후 레벨에서 모든 최적화가 통과된 후에도 주어진 번역 단위를 동일한 기계 바이트코드로 컴파일합니다. 대상 플랫폼에 따른 이유 때문에 반드시 그런 것은 아닙니다.&lt;p&gt;그러나 이것이 별로 중요하지 않거나 도움이 되기보다는 더 혼란스러울 수도 있습니다.&lt;p&gt;[0] dyff: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;homeport&amp;#x2F;dyff" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;homeport&amp;#x2F;dyff&lt;/a&gt;&lt;p&gt;[1] jd: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;josephburnett&amp;#x2F;jd" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;josephburnett&amp;#x2F;jd&lt;/a&gt;&lt;p&gt;[2] 이를 사용하면 배열 내의 순서 차이를 무시할 수 있습니다(배열은 표준에 따라 YAML 및 JSON으로 정렬됨). 이는 놀랍도록 드물고 유용한 기능입니다. 내가 사용하는 YAML 및 JSON을 사용하는 프로그램은 이러한 순서 차이에 민감하지 않습니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/ataraxy-labs/sem</guid>
+      <pubDate>Sun, 08 Mar 2026 06:01:26 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47294924</comments>
     </item>
     <item>
-      <title>Llm9p: Plan 9 파일 시스템으로서의 LLM</title>
-      <link>https://github.com/NERVsystems/llm9p</link>
-      <description>&lt;p&gt;Anthropic API, Claude Code CLI 및 로컬 LLM(예정)을 포함한 여러 백엔드를 지원합니다. /llm9p -addr :5640 옵션 B: Claude Max 구독 사용(Claude Code CLI를 통해) Claude Max 구독이 있고 Claude Code CLI가 설치된 경우:. CLI 백엔드 요구 사항: Claude Code CLI가 설치 및 인증됨(claude 명령 사용 가능) 활성 Claude Max 구독 파일 시스템 마운트 환경에 따라 파일 시스템을 마운트하는 방법에는 여러 가지가 있습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Llm9p: LLM as a Plan 9 file system&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47295708"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/NERVsystems/llm9p'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stingraycharles:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Claude 코드 자체에서도 시스템 프롬프트 추가를 지원하지 않는데, Claude Code를 사용할 때 시스템 프롬프트를 어떻게 설정할 수 있나요? "—appendSystemPrompt"가 있지만 이름에도 불구하고 실제로는 시작 시 전송되는 사용자 메시지일 뿐입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mleroy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;에이전트를 위한 이상적인 인터페이스로서 파일에 대한 최근 논의에 이어 [0] 이는 흥미로운 탐색이 될 수 있습니다.&lt;p&gt;llm9p는 LLM을 파일 시스템으로 상호 작용할 수 있게 해주는 소규모의 실험적인 9P 서버입니다.&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47286408"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47286408&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/NERVsystems/llm9p</guid>
-      <pubDate>Sun, 08 Mar 2026 08:52:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47295708</comments>
+      <title>Linux를 PS5로 포팅하여 Steam Machine으로 전환했습니다.</title>
+      <link>https://xcancel.com/theflow0/status/2030011206040256841</link>
+      <description>&lt;p&gt;Ray Tracing으로 강화된 GTA 5를 실행합니다. Ray Tracing으로 강화된 GTA 5를 실행합니다. 항상 그런 꿈을 꾸었습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; I ported Linux to the PS5 and turned it into a Steam Machine&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47296849"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://xcancel.com/theflow0/status/2030011206040256841'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://xcancel.com/theflow0/status/2030011206040256841</guid>
+      <pubDate>Sun, 08 Mar 2026 12:40:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47296849</comments>
     </item>
     <item>
-      <title>새로운 연구에서는 AI 코딩을 위한 Agents.md 파일의 가치를 재평가합니다.</title>
-      <link>https://www.infoq.com/news/2026/03/agents-context-file-value-review/</link>
-      <description>&lt;p&gt;md 파일은 종종 AI 코딩 에이전트를 방해할 수 있습니다. 상담원은 일반적으로 상담원에 포함된 지침을 따랐습니다. LLM에서 생성된 컨텍스트 파일은 작업 성공률에 약간의 부정적인 영향을 미치는 반면, 개발자가 작성한 컨텍스트 파일은 약간의 성능 향상을 제공합니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; New Research Reassesses the Value of Agents.md Files for AI Coding&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47295454"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.infoq.com/news/2026/03/agents-context-file-value-review/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>HN에게 물어보세요: 혼자 있는 방법?</title>
+      <link>https://news.ycombinator.com/item?id=47296547</link>
+      <description>&lt;p&gt;또 하나는 주말이 힘들다는 것이다. 동물을 키우는 것은 어느 정도 도움이 되지만, 단순히 60시간 동안 혼자 있는 것만으로는 여전히 어렵습니다. 다른 사람을 본 지 너무 오래 되어서 가끔 당황할 때가 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ask HN: How to Be Alone?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47296547"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=47296547'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CrzyLngPwd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 1.5,000개 파일에 걸쳐 약 300,000줄의 레거시 코드베이스를 보유하고 있으며 Agent.md 파일로 놀라운 성공을 거두었습니다.&lt;p&gt;환각을 방지하고 AI가 기존 파일과 API를 만들어내는 대신 기존 파일과 API를 사용하도록 강제합니다. 또한 표준 테스트와 API를 예시로 제공합니다.&lt;p&gt;에이전트 파일 이전에는 환각의 혼돈이었고 항상 같은 것으로 수정해야 했습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dev_l1x_be:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 이러한 파일을 절대 사용하지 않으며 에이전트의 각 단기 실행에 특정 작업의 현재 가드레일을 제공합니다. 작업별 "agents.md"가 나에게 더 잘 작동하도록 하세요.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nayroclade:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 AGENTS.md 파일이 코딩 에이전트를 테스트, 아키텍처, 저장소 구조 등에 대한 명시적인 지침과 가드레일이 필요한 주니어 개발자처럼 다루어야 했던 시대의 단기 유물이 될 것이라고 생각합니다. 그러나 에이전트가 수석 엔지니어와 동등하거나 더 나은 판단 능력을 가지고 있으면 이러한 측면에 대해 스스로 판단하고 "프로그래밍"하려고 시도할 수 있습니다. AGENTS.md 파일을 통한 그들의 행동은 한 엔지니어가 문제 해결을 위해 다른 엔지니어의 접근 방식을 세밀하게 관리하려는 것처럼 도움이 되지 않습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stingraycharles:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 스레드에서 무슨 일이 일어나고 있으며 모든 댓글이 그렇게 많이 반대 투표되는 이유는 무엇입니까?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noemit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;연구는 주로 LLM이 생성한 컨텍스트로 인해 성능이 저하된다는 점을 지적합니다. 인간이 생성한 컨텍스트는 성능을 향상시키지만 모든 종류의 AGENTS.md 파일은 토큰 사용을 증가시킵니다. 왜냐하면 그들이 말하는 것은 "가짜 생각"이기 때문입니다. 더 많은 연구가 필요합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;verdverm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;해당 연구는 헤드라인과 클릭수에 대해 너무 잘못 해석되었습니다...&lt;p&gt;AGENTS.md는 잘 수행되면 매우 유용합니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.infoq.com/news/2026/03/agents-context-file-value-review/</guid>
-      <pubDate>Sun, 08 Mar 2026 07:52:38 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47295454</comments>
-    </item>
-    <item>
-      <title>재방문 시간: UT1, UTC, NTP 및 NTS</title>
-      <link>https://www.potaroo.net/ispcol/2026-03/nts.html</link>
-      <description>&lt;p&gt;이는 결코 이상한 일이 아니며, UTC 시간 흐름에 윤초를 삽입하여 UTC가 조정된 것은 이번이 27번째입니다. IERS(국제 지구 회전 및 참조 시스템 서비스)는 윤초 예약에 대한 책임을 위임받았으며, 각 잠재적 윤초 예정 시간보다 6개월 전에 공지를 발표했습니다. 그림 2 – 협정 세계시(UTC)에 적용된 윤초 삽입(https://en.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Revisiting Time: UT1, UTC, NTP and NTS&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47293985"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.potaroo.net/ispcol/2026-03/nts.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.potaroo.net/ispcol/2026-03/nts.html</guid>
-      <pubDate>Sun, 08 Mar 2026 03:07:05 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47293985</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;npinsker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;힘든 시간을 보내고 계시다니 안타깝습니다. 힘든 일인 것 같습니다. 상황이 빨리 나아지기를 바랍니다.&lt;p&gt;관련이 없지만 과거에 저를 위로했던 한 가지는 사람의 두뇌가 중독 금단과 같은 이러한 변화에 생리적으로 반응한다는 것입니다. 그리고 호르몬과 끔찍한 감정의 혼합을 견뎌야 하지만 생활에 전혀 변화가 없더라도 시간이 지나면 그러한 감정은 가라앉을 것입니다.&lt;p&gt;사회화할 새로운 그룹이 도움이 될 것이라는 점은 말할 필요도 없지만 말처럼 쉽지는 않습니다. :) 다음을 믿는 것도 중요합니다. 논리적으로가 아니라 감정적으로 – 상황이 나아질 것입니다. 이것은 어렵습니다. 우울증은 자신이 속하지 않는 영역에서 흑백 사고로 이어질 수 있으므로, 보고 있는 것이 있다면 이를 극복하는 것이 필수적이라고 생각합니다. 많은 도움이 되는 한 가지는 즐거운 방법으로 기대치를 위반하도록 노력하는 것입니다.&lt;p&gt;구체적으로 — 관심 있는 취미에 대해 고민하는 것보다, 다소 좋아할 것 같지만 &lt;i&gt;너무&lt;/i&gt; 좋아하지는 않는 주제를 중심으로 그룹에 참여하는 것이 놀라울 정도로 가치 있다고 생각합니다. (D&amp;D가 제 예가 될 것입니다.) 상황이 기대한 대로 되는 경우는 거의 없으며, 성공을 위해 낮은 기준을 적용한다면 즐겁게 놀라고 희망적이고 개방적인 느낌을 받을 수 있는 여지가 더 많아진다고 생각합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wismwasm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;새로운 취미를 시도해 보세요. 살사 수업을 들어보세요. 사람들과 함께 있기 위해서는 무엇이든 혼자 편안해지려고 노력하지 마세요.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;markus_zhang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 혼자 있는 시간을 더 갈망하고 사회화를 싫어하기 때문에 원하는 것을 얻는 사람은 거의 없을 것 같습니다.&lt;p&gt;저는 같은 변화를 겪지 않았지만 여기에 권장 사항이 있습니다. 진정으로 만들고 싶거나 바꾸고 싶은 것, 무엇이든 원하는 것을 찾아서 시도해 보세요. 이제 원하는 것은 무엇이든 자유롭게 할 수 있습니다. 당신의 젊음, 어린 시절에 대한 생각을 추적하고, 연인을 만나기 훨씬 전에 당신이 흥미로웠던 것을 찾아 그것을 향해 나아가십시오.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;atas2390:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저도 오랜 연애가 끝난 뒤 비슷한 일을 겪었어요. 나에게 도움이 된 것은 '취미 찾기'가 아니라 몇 가지 작고 반복 가능한 일이었습니다.&lt;p&gt;• 혼자 있는 것을 인생에 대한 판단이 아니라 연습하는 기술로 여기십시오. 하루 20~30분은 고의로 혼자 하는 일(산책, 카페, 책)을 선택합니다. 시간이 지남에 따라 두뇌는 "혼자서도" 당황할 수 있을 뿐 아니라 침착할 수도 있음을 학습합니다.
+• 주말에는 집 밖에서 하는 일 하나, 작은 '미래의 나' 일 하나(10분 동안 무언가를 배우고 구축하는 일), 나머지는 무엇이든 얄팍한 구조로 하세요. 60시간이 공허한 느낌을 받지 않게 해줍니다.
+• "오늘 내가 요리한 내용은 다음과 같습니다."라는 간단한 채팅 창구(소그룹 &amp;#x2F; 친구 1명 &amp; Discord)를 마련해 뇌의 일부가 전혀 들리지 않는 느낌을 받지 않도록 하세요.&lt;p&gt;지금 당장 혼자 있는 것을 좋아하는 법을 배울 필요는 없습니다. 단기 목표는 "시스템이 조정되는 동안 앞으로 몇 달을 견딜 수 있게 만드는 것"일 수 있으며 이는 완전히 합리적입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nephihaha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;우울증은 반사회적이 되고 싶게 만들지만, 긍정적인 사회적 상황은 정신 건강에 좋기 때문에 때로는 억지로 그렇게 해야 할 때도 있습니다. 운동은 정신 건강에 매우 좋으며 재택근무도 문제의 일부라고 생각합니다. 많은 사람들이 비타민이 부족하므로 비타민을 섭취하십시오. B는 에너지를 제공하고 C는 면역 체계를 강화하며 D는 기분과 수면에 도움이 됩니다. 애완동물을 키우는 것은 좋은 일이다. 동료이기 때문이다.&lt;p&gt;취미는 좋은 외침이라고 말하고 싶다. 특히 니트 제품이든, 나무 제품이든 무엇이든 물리적인 제품을 생산하는 제품입니다. 악기를 들고 다니는 것도 아주 좋습니다. 수십 년 동안 음악을 쉬다가 드디어 뭔가를 연주하게 되었습니다.&lt;p&gt;온라인 소셜은 직접 만나는 것을 대체할 수 없습니다. 나는 그것을 어렵게 배웠습니다. 사회화를 원한다면 야간 수업(특히 대화형이므로 말하기), 글쓰기 그룹, 동아리 가입을 고려해보세요. 종교적인 사람이라면 회중 가입을 고려하세요(거리가 다를 수 있으므로 둘러보세요). 그렇지 않은 경우 모임이나 세속적인 일요일 예배 등을 하는 무신론자 그룹이 있습니다. 필요한 경우 주도적으로 자신의 그룹을 시작하세요. 저는 이 일을 거의 4년 동안 해왔고 여전히 잘 작동하고 있습니다.&lt;p&gt;잘 다듬어진 공원이나 인공 환경뿐만 아니라 자연 속으로 들어가 보세요.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;appsoftware:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;안녕하세요, 새 제품을 살펴보던 중에 이걸 보고 도움을 드리고 싶었습니다. 제 생각엔 장소가 답인 것 같아요. 인생에는 무작위성과 상호작용이 필요하지만 집에서는 그런 일이 일어나지 않습니다. &amp;quot;3위&amp;quot;에 있으려고 노력하세요. - 체육관 &amp;#x2F; 공유 작업 공간에서 일하세요 &amp;#x2F; 몇 가지 취미를 선택하십시오(스포츠에 기반을 두고 부상을 입는다면 야외에서 할 수 있는 일, 실내에서 할 수 있는 일 등 하나만 해도 위험하므로 몇 가지라고 말합니다). 시간이 걸리겠지만 반드시 이루어질 것임을 믿으세요.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://news.ycombinator.com/item?id=47296547</guid>
+      <pubDate>Sun, 08 Mar 2026 11:41:17 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47296547</comments>
     </item>
   </channel>
 </rss>
