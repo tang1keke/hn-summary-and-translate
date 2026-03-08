@@ -6,114 +6,82 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 08 Mar 2026 12:59:15 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2026 15:30:25 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>编写 WASM 的注意事项</title>
-      <link>https://notes.brooklynzelenka.com/Blog/Notes-on-Writing-Wasm</link>
-      <description>&lt;p&gt;我见过优秀的程序员真的在与bindgen作斗争。最终，所有跨越边界的东西都必须有某种 JS 表示，因此了解该表示是什么是值得的。当它们跨越边界时，它们会在原生 JS 和 Rust 类型之间进行转换。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Notes on Writing WASM&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47295837"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://notes.brooklynzelenka.com/Blog/Notes-on-Writing-Wasm'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>CLI RSS/Atom 提要阅读器受 Taskwarrior 启发，使用 Git 同步</title>
+      <link>https://github.com/kantord/blogtato</link>
+      <description>&lt;p&gt;ch 博客提要添加 https://www.全部导出博客@myblog 导出博客1w。 export # 列出订阅博客 feed ls # 删除订阅源 blog feed rm https://news.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; CLI RSS/Atom feed reader inspired by Taskwarrior, synced using Git&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47297091"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/kantord/blogtato'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ridhoidi2026:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;去破解吧&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;larsnystrom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;WASM 有点像 Java 字节码，对吧？需要运行时的编译目标？但是沙盒更好吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;flohofwoe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这看起来与使用 Emscripten 的嵌入自动生成 C++ &lt;=&gt; 的问题相同。 JS 绑定，我的建议是“不要这样做”。&lt;p&gt;与编写适当的混合 C++&amp;#x2F;JS 应用程序相比，它增加了令人难以置信的复杂性和膨胀，其中非平凡的工作发生在手写的 JS 函数中，而不是为每个小 setter&amp;#x2F;getter 跨越 JS&amp;#x2F;WASM 边界。不过，要在边界两侧的代码之间找到适当的平衡，需要经验。&lt;p&gt;或者通过正确设计的 C API 进行隧道，而不是尝试将 C++ 或 Rust 类型直接映射到 JS（例如，不要尝试跨边界传递复杂的 C++&amp;#x2F;Rust 对象，C++&amp;#x2F;Rust 和 JS 类型系统之间的重叠太少了）。&lt;p&gt;自动绑定方法对于 C API 来说比对于具有巨大“语义表面”的语言的本机 API 更有意义。像 C++ 或 Rust。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Decabytes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，不幸的是，wasm 在这一点上基本上是一个生锈的东西。如果你想编写 wasi 预览版 0.2 组件，你需要一堆 Rust 工具才能正确完成它&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;suddenlybananas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么 PyO3 比 wasm-bindgen 好用得多？是因为 WASM 本身还是仅仅因为工具？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嗯……这可以解释为什么没有人使用 wasm。&lt;p&gt;最初我也被这种炒作所迷惑。现在好像有这个数
-使用 wasm 的人数非常低。这就像最小的
-了解 javascript 的人很少。这将
-可能也永远不会改变。&lt;p&gt;我想是时候得出结论了：&lt;p&gt;- wasm 仍将是一个小众市场。至少对于，比如说，
-近未来。但可能永远。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AyanamiKaine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我真的很讨厌 wasm，不是因为这个想法或概念，而是因为它变得臃肿。&lt;p&gt;第一个想法是用像 C&amp;#x2F;C++&amp;#x2F;Rust 这样的语言编写计算量大的算法，然后编译为 wasm。&lt;p&gt;现在它被推销为编写沙盒代码&amp;#x2F;组件，供 wasm 运行时使用的每种语言。&lt;p&gt;然后是 wasm 类型的问题。虽然它被认为是在网络浏览器上运行的东西。它的类型与铁锈更相似。例如，JS 中的字符串基本上是 UTF-16，而 wasm&amp;#x2F;rust 是 utf-8。&lt;p&gt;我们需要不断在它们之间进行转换。我一直希望 wasm 能够简单地允许在网络上运行更快的代码，而不是我的程序完全与外部世界沙箱化，你无法与同一台机器上的其他程序交互。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Tepix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望找到有关编写 WASM 的注释，但我找到了编写 Rust 来针对 WASM 及其 wasm_bindgen 问题的内容。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://notes.brooklynzelenka.com/Blog/Notes-on-Writing-Wasm</guid>
-      <pubDate>Sun, 08 Mar 2026 09:24:54 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47295837</comments>
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;susam:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴在 HN 上看到 RSS&amp;#x2F;Atom feed 阅读器项目。  演示看起来不错。  我们拥有的此类项目越多，我们就越高兴。  在我看来，添加 RSS&amp;#x2F;Atom 提要是人们能为个人网站做的最好的事情之一，前提是人们想成为围绕 RSS&amp;#x2F;Atom 提要存在的松散社交网络和生态系统的一部分。&lt;p&gt;一些批评者可能会说 RSS 今天已经消亡，但现实远非如此。事实上，我个人网站的大部分流量都来自 RSS 源。  我网站上的一个小游戏甚至在有人通过我的 RSS 源发现并在 HN 上分享后变得相当流行 [1]。&lt;p&gt;事实上，我网站的三大流量来源按降序排列是 RSS 源、时事通讯和搜索引擎。  时不时地查看我的网络服务器日志中的引荐来源网址（原文如此）数据，我惊讶地发现网络上存在多少社区维护的技术新闻通讯以及它们的用户群有多活跃。  偶尔，一份时事通讯会刊登我的一篇愚蠢或古怪的帖子，然后带来大量关注者的访问。  但我离题了。  现在回到 RSS&amp;#x2F;Atom 提要。&lt;p&gt;所以我是说 RSS 提要确实有一个不错的用户基础。  我可以从“referer”中看到记录显示，每当我在网站上发布新的注释或文章时，大量访问者都会通过单击提要阅读器中显示的提要条目来访问。  通过查看“推荐人”，我有信心知道这一点。访问我的 HTML 页面以及随后浏览网站的标头，而不是单独和自动获取 XML 提要。  因此，RSS 提要周围必须有相当活跃的用户群。  这有点像成为我们知道存在的无形社交网络的一部分，并且我们可以通过间接证据来衡量该社交网络。&lt;p&gt;许多个人网站都会发布博客列表，其中列出了他们最喜欢的博客作者。  我希望有更多博客的一件事是指向博客作者的链接。 feeds，或者更好的是，我可以将其导入到 feed 阅读器中的 OPML 文件。  然后我可以在我的提要阅读器中保留多个博客集合，例如&lt;i&gt;Alice的Blogroll&lt;/i&gt;、&lt;i&gt;Bob的Blogroll&lt;/i&gt;等等。  我确实为我的 blogroll [2] 发布了 OPML 文件，并且我敦促其他拥有 blogroll 的个人网站也这样做。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;susam.net&amp;#x2F;from-web-feed-to-186850-hits.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;susam.net&amp;#x2F;from-web-feed-to-186850-hits.html&lt;/a&gt;&lt;p&gt;[2] &lt;a href="https:&amp;#x2F;&amp;#x2F;susam.net&amp;#x2F;roll.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;susam.net&amp;#x2F;roll.html&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/kantord/blogtato</guid>
+      <pubDate>Sun, 08 Mar 2026 13:16:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47297091</comments>
     </item>
     <item>
-      <title>Show HN：Eyot，一种编程语言，其中 GPU 只是另一个线程</title>
-      <link>https://cowleyforniastudios.com/2026/03/08/announcing-eyot/</link>
-      <description>&lt;p&gt;该工作进程在后台 CPU 线程上处理通过发送函数发送给它的值。这大大减少了延迟，使我们可以实时更新输出。 Eyot 只是将其扩展到 GPU。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Eyot, A programming language where the GPU is just another thread&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47296355"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://cowleyforniastudios.com/2026/03/08/announcing-eyot/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>LibreOffice：请求欧盟委员会遵守其自己的指导方针</title>
+      <link>https://blog.documentfoundation.org/blog/2026/03/05/cra-guidances/</link>
+      <description>&lt;p&gt;欧洲互操作性框架明确建议公共部门数字服务采用开放格式。 • 2020-2023 年开源软件战略及其后续战略，促进整个欧盟机构使用开源和开放标准。此类反馈模板应至少以两种格式提供：一种是开放格式（ODF 电子表格、.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; LibreOffice: Request to the European Commission to adhere to its own guidances&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47297453"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.documentfoundation.org/blog/2026/03/05/cra-guidances/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sourcegrift:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;无意成为铁锈狂热者或其他什么，但有人知道类似的铁锈吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LorenDB:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这让我想起我很乐意看到 SYCL 得到更多的爱。目前，在计算机硬件制造商中，似乎只有英特尔在这方面做出了努力。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://cowleyforniastudios.com/2026/03/08/announcing-eyot/</guid>
-      <pubDate>Sun, 08 Mar 2026 11:04:04 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47296355</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whirlwin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这可能是电子表格作者能力较差的问题，而且毕竟是疏忽。&lt;p&gt;不幸的是，根据我的经验，管理政策的人的能力远不如实施政策的人。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jfengel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很酷，但是为什么反馈会以电子表格的形式出现呢？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Spivak:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的意思是，这是一件小事，但这似乎是官僚作风，相当于看到你的朋友出于习惯而起床吸烟，并提醒他们正在尝试戒烟。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_fat_santa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;这不是一个小程序疏忽。这是该流程中内置的结构性偏见，它发出了一个明确的信息：全面参与欧盟政策制定需要微软许可证。&lt;p&gt;老实说，这听起来更像是程序性监督。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.documentfoundation.org/blog/2026/03/05/cra-guidances/</guid>
+      <pubDate>Sun, 08 Mar 2026 14:09:09 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47297453</comments>
     </item>
     <item>
-      <title>苹果 512GB Mac Studio 消失，默默承认 RAM 短缺</title>
-      <link>https://arstechnica.com/gadgets/2026/03/apples-512gb-mac-studio-vanishes-a-quiet-acknowledgement-of-the-ram-shortage/</link>
-      <description>&lt;p&gt;但对于需要大量图形内存的工作负载（包括大型语言模型），Studio 及其统一内存架构提供的图形内存量远远超过大多数 PC 显卡所提供的数量。 Apple 的 Ultra 芯片是其销售的唯一支持超过 128GB RAM 的芯片。 Andrew Cunningham 高级技术记者 Andrew Cunningham 高级技术记者 Andrew 是 Ars Technica 的高级技术记者，专注于消费技术，包括计算机硬件以及对 Windows 和 macOS 等操作系统的深入评论。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Apple's 512GB Mac Studio vanishes, a quiet acknowledgment of the RAM shortage&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47296302"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://arstechnica.com/gadgets/2026/03/apples-512gb-mac-studio-vanishes-a-quiet-acknowledgement-of-the-ram-shortage/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bombcar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们可能会在基于 M5 的版本发布（软或非软）之前尝试通过现有的 CPU 进行销售（尽管我听说有传言称不会有 M5 Ultra，我们可能会在今年晚些时候推出 M6 Ultra）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mkl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我正在考虑是否应该立即购买 48GB M4 Pro Mac Mini，还是等待今年晚些时候购买 M5 Pro。  主要用于 AI&amp;#x2F;ML 目的。  据我所知，新款 M5 MacBook 在 RAM 容量相同的情况下并没有提升太多？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ErneX:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 256GB 配置的定价也从 1,600 美元上涨至 2,000 美元&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pera:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我只是想买一台 Raspberry Pi 5：8GB 的​​现在比去年贵 58%；这超出了我愿意支付的价格。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;znpy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Apple 最近在 mac 操作系统中引入了 rdma 支持。他们可能试图促使那些购买 512GB 配置的人购买更多 256GB 配置并将它们聚集在一起。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://arstechnica.com/gadgets/2026/03/apples-512gb-mac-studio-vanishes-a-quiet-acknowledgement-of-the-ram-shortage/</guid>
-      <pubDate>Sun, 08 Mar 2026 10:54:32 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47296302</comments>
+      <title>Beagle，一个存储 AST 树的源代码管理系统</title>
+      <link>https://github.com/gritzko/librdx/tree/master/be</link>
+      <description>&lt;p&gt;Beagle SCM Beagle 是一个源代码管理系统，用于存储 AST 树，而不是二进制 blob。实时项目：/@gritzko/librdx 分支：*主要基础文件：574，路径点：0 $ cd /some/other/dir $ be get //replicated。实时项目：/@gritzko/librdx 分支：*主要基础文件：574，路径点：0。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Beagle, a source code management system that stores AST trees&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47297167"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/gritzko/librdx/tree/master/be'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://github.com/gritzko/librdx/tree/master/be</guid>
+      <pubDate>Sun, 08 Mar 2026 13:28:26 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47297167</comments>
     </item>
     <item>
-      <title>Sem – 语义版本控制。 Git 之上的实体级差异</title>
-      <link>https://github.com/ataraxy-labs/sem</link>
-      <description>&lt;p&gt;tsx 函数、类、接口、类型、枚举、导出 JavaScript。 cs 类、方法、接口、枚举、结构、属性 Ruby。 PHP 函数、类、方法、接口、特征、枚举 Fortran。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Sem – Semantic version control. Entity-level diffs on top of Git&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47294924"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/ataraxy-labs/sem'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>大尿布如何从美国父母那里吸收数十亿美元的额外资金</title>
+      <link>https://thehustle.co/originals/how-big-diaper-absorbs-billions-of-extra-dollars-from-american-parents</link>
+      <description>&lt;p&gt;Home Originals Big Diaper 如何从美国父母那里吸收数十亿美元的额外资金 Big Diaper 如何从美国父母那里吸收数十亿美元的额外资金 订阅每日非传统商业新闻 🚀 请提供有效的电子邮件地址。多诺万还尝试用降落伞布制成的尼龙制成一种防漏罩，可以折叠在婴儿身上并用紧固件扣上。 20 世纪 60 年代早期帮宝适的广告。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; How Big Diaper absorbs billions of extra dollars from American parents&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47297054"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://thehustle.co/originals/how-big-diaper-absorbs-billions-of-extra-dollars-from-american-parents'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;7777777phil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;凉爽的！仅当人类编写每一行时，行级差异才有意义。当人工智能代理在一个会话中提交数百个更改时，您需要知道哪些功能发生了变化，而不是哪些行发生了变化。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gritzko:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是“sem”吗？命名为“移植物”上周并“得到”了在那之前一周？每个人都如此努力，很难跟踪事情。此外，创意盗窃达到了全新的水平。机器人群推广 100% 被盗的项目……我们都喜欢这个时刻。&lt;p&gt;不过，我的两分钱：Beagle AST 级版本控制系统，实验性&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;gritzko&amp;#x2F;librdx&amp;#x2F;tree&amp;#x2F;master&amp;#x2F;be#readme" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;gritzko&amp;#x2F;librdx&amp;#x2F;tree&amp;#x2F;master&amp;#x2F;be#readme&lt;/a&gt;&lt;p&gt;它真正将 AST 树存储在（几乎任何）键值数据库（目前为 RocksDB）中。事实上，它是一个版本化的代码数据库，具有非常开放的格式，并且可以完全自由地在其之上构建。&lt;p&gt;&lt;i&gt;be&lt;/i&gt; 事实上，更多的是一种格式&amp;#x2F;协议，就像过去的美好时光一样（HTTP、SMTP、XML、JSON - 还记得这些吗？）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;perching_aix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这里有人在日常工作中使用语义差异工具吗？它们有多好？&lt;p&gt;我使用一些，例如YAML [0] 和 JSON [1]，它们很好 [2]，但这些都是相对简单的语言。&lt;p&gt;我特别好奇，因为只是简单的 diff AST 更倾向于“语法感知 diff”。侧面而不是“语义差异”。一方面，但大多数语义工具描述只是说它们使用 AST。&lt;p&gt;AST 不一定是最小的 &amp;#x2F;我相信通过构造优化形式，所以我很确定您会遇到“语义”不存在的情况。 diff 会报告差异，而编译器在后面级别的所有优化通过后仍会将给定的翻译单元编译为相同的机器字节码。甚至不一定是出于目标平台相关原因。&lt;p&gt;但这也许并不重要，或者会更令人困惑而不是有帮助？&lt;p&gt;[0] dyff: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;homeport&amp;#x2F;dyff" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;homeport&amp;#x2F;dyff&lt;/a&gt;&lt;p&gt;[1] jd: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;josephburnett&amp;#x2F;jd" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;josephburnett&amp;#x2F;jd&lt;/a&gt;&lt;p&gt;[2] 它们允许我忽略数组内的排序差异（数组按照标准在 YAML 和 JSON 中排序），我发现这是一个非常罕见且有用的功能；使用我使用的 YAML 和 JSON 的程序对这些顺序差异不敏感&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/ataraxy-labs/sem</guid>
-      <pubDate>Sun, 08 Mar 2026 06:01:26 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47294924</comments>
-    </item>
-    <item>
-      <title>我将 Linux 移植到 PS5 并将其变成了 Steam 机器</title>
-      <link>https://xcancel.com/theflow0/status/2030011206040256841</link>
-      <description>&lt;p&gt;运行带有光线追踪功能的 GTA 5 增强版。运行带有光线追踪功能的 GTA 5 增强版。总是梦见类似的东西。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; I ported Linux to the PS5 and turned it into a Steam Machine&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47296849"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://xcancel.com/theflow0/status/2030011206040256841'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://xcancel.com/theflow0/status/2030011206040256841</guid>
-      <pubDate>Sun, 08 Mar 2026 12:40:14 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47296849</comments>
-    </item>
-    <item>
-      <title>问 HN：如何独处？</title>
-      <link>https://news.ycombinator.com/item?id=47296547</link>
-      <description>&lt;p&gt;另一个是周末很难熬。养动物会有所帮助，但独自一人呆上 60 个小时仍然很困难。当我已经很久没有见到另一个人时，有时我会感到恐慌。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ask HN: How to Be Alone?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47296547"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=47296547'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;npinsker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很遗憾听到你遇到了困难——听起来很艰难。希望事情尽快好起来。&lt;p&gt;不相关，但过去让我感到安慰的一件事是，一个人的大脑会对这些变化做出生理反应，就像戒毒一样——一个人必须忍受一系列的激素和可怕的感觉，但随着时间的推移，即使你对自己的生活没有做出任何改变，这些都会消退。&lt;p&gt;不言而喻，一些新的社交团体会有所帮助，但这说起来容易做起来难:)你相信也很重要——情感上而非逻辑上——事情会变得更好。这很难。抑郁症会导致在不属于它的领域产生非黑即白的思维，所以我觉得如果你看到了这种情况，就必须与之抗争。一件很有帮助的事情就是尝试以一种愉快的方式违背你的期望。&lt;p&gt;具体来说，我认为加入一个围绕你认为你可能有点喜欢但不太喜欢的东西的小组，而不是专注于你感兴趣的爱好，这是非常有价值的。 （《龙与地下城》就是我的一个例子。）事情很少会像你期望的那样发展，我认为如果你以较低的成功标准进入，你就会为自己留下更多的空间，让自己感到惊喜，感到充满希望和开放。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wismwasm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;尝试一个新的爱好，也许参加萨尔萨舞课程。任何事情都要和人在一起，不要试图独自一人感到舒服。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;markus_zhang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想很少有人能得到他们想要的东西，因为我渴望更多的独处时间，讨厌社交。&lt;p&gt;我没有经历过同样的转变，但这是我的建议：找到你真正想要构建、改变或其他什么的东西，然后去做。您现在可以自由地做任何您想做的事情。将你的思绪追溯到你的青年时代、你的童年，找到早在你遇到你的爱人之前就让你兴奋的事情，然后去追求它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;atas2390:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一段长期关系结束后，我也经历过类似的事情。对我有帮助的不是“找到一个爱好”，而是一些小的、可重复的事情：&lt;p&gt;• 将独处视为一种你练习的技能，而不是对你生活的判断 – 例如。每天有 20-30 分钟你有目的地选择独自做一些事情（散步、喝咖啡、读书）。随着时间的推移，你的大脑学会“独自”也可以保持冷静，而不仅仅是恐慌。
-• 给周末一个精简的结构：一件户外的事情，一件微小的“未来的我”的事情（10 分钟学习和建造一些东西），其余的随意。它让 60 小时不再感觉空虚。
-• 拥有一个轻松的聊天渠道（小团体&amp;#x2F;一个朋友&amp;#x2F;Discord），只是为了“这是我做的菜&amp;#x2F;今天修好的”，这样你的大脑的一部分就不会感觉完全被忽视。&lt;p&gt;你现在不必学会喜欢独处。短期目标可以是“在我的系统调整期间让接下来的几个月变得可以忍受”，这是完全合理的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nephihaha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;抑郁会让你想要反社会，但积极的社交环境有利于你的心理健康，所以有时你必须强迫自己参与其中。锻炼对你的心理健康非常有益，我认为你的部分问题是在家工作。服用维生素，因为很多人都缺乏维生素——B 族会给你能量，C 族可以增强免疫系统，D 族可以帮助你改善情绪和睡眠。有宠物是件好事，因为它们是陪伴。&lt;p&gt;我想说，爱好是一个很好的呼喊。尤其是那些能够生产实体物品的产品，无论是针织品、木制物品还是其他东西。也非常适合学习乐器。我已经推迟了几十年的音乐，但终于开始玩点东西了。&lt;p&gt;在线社交并不能真正替代面对面的聚会。我经历了惨痛的教训才明白了这一点。如果你想要社交，那么可以考虑夜间课程（尤其是口语课程，因为它们是互动的）、写作小组和加入社团。如果您有宗教信仰，请考虑加入一个教会（里程可能会有所不同，因此请货比三家），如果没有，则有无神论团体举办聚会和世俗周日服务等。如果您需要，请主动成立自己的团体。我这样做已经近四年了，而且效果仍然很好。&lt;p&gt;走进大自然，而不仅仅是修剪整齐的公园和人工环境。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;appsoftware:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嘿，在寻找新产品时看到了这个，想尝试提供帮助。我认为答案是地方。生活需要随机性和互动，而这在家里是不可能发生的。努力成为“第三名” - 健身房 &amp;#x2F;在共享工作空间中工作 &amp;#x2F;培养几个爱好（我说几个是因为如果说它是基于运动的，那么只有一个是有风险的，并且你会伤害自己 - 你可以在户外做的事情，你可以在室内做的事情）。相信这需要时间，但它会发生。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.ycombinator.com/item?id=47296547</guid>
-      <pubDate>Sun, 08 Mar 2026 11:41:17 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47296547</comments>
+&lt;p&gt;&lt;strong&gt;Top 19 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;newsclues:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只要人们始终如一地对生态负责似乎就很好。&lt;p&gt;当人们告诉我我需要使用纸吸管，但他们可以使用一次性尿布时，这让我大脑中的逻辑崩溃了&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jsmith99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最大的区别在于“真实”。尿布弄湿后会变得非常不舒服（孩子会立即哭着要换尿布），因此幼儿有强烈的动机停止尿布，而使用现代的一次性尿布，他们甚至几乎不会注意到自己何时撒尿。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sfpotter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;布尿布很好。我们用它们为我们的最后一个孩子提供尿布服务​​，并且将再次为我们月底预产期的下一个孩子自己清洗它们。无论哪种方式，普通尿布都很有用。但布尿布显然对环境要好得多，如果它们适合您，您应该考虑它们。这不是一个困难的概念，不值得大讨论。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stackedinserter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;最近的研究和调查告诉我们，开始如厕训练的平均年龄约为 21 个月。&lt;p&gt;北美人抚养孩子的方式对我们来说是文化冲击之一。 6岁的孩子在婴儿车里。父母从来不带着孩子出去散步。好吧，婴儿车在这里根本算不上什么。尿布直到 3 或 4 岁。整体卫生和清洁不存在。可以将果圈倒在脏盘子里，让孩子用脏手吃。儿童衣服永远都是脏的。送袜子破洞的孩子去学校和托儿所是可以的。学校集会？让孩子们在健身房地板上坐一个小时。实地考察 - 孩子们坐在地上。&lt;p&gt;这里的社会精神如此不健康，我并不感到惊讶。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lostmsu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的妻子在第一个中尝试了早期教学和布尿布，但在第二个中我们只使用普通尿布。&lt;p&gt;在我看来，早期如厕训练只是一厢情愿的想法加上确认偏见。如果你正在尝试，但进展很困难……就不要这样做，你没有做错任何事，你只是被误导了。只需等到您的孩子能够始终如一地遵循指示并愿意在重要事项上这样做即可。否则结果如预期。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nkrisc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;总体而言，与您在孩子的整个童年过程中花费的费用相比，尿布是一笔很小的开支。&lt;p&gt;它只会持续几年，然后您将永远不必再考虑尿布（至少直到下一个孩子为止）。&lt;p&gt;只要做最简单的事情即可让您保持理智。还有更大的事情需要担心。&lt;p&gt;我最大的孩子 3 岁就开始训练，最小的孩子 18 个月。&lt;p&gt;最大的孩子只训练了一周，最小的孩子训练了将近一年。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;perks_12:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我知道 Hustle 是 Hubspot 内容工厂，但我必须承认他们最近捕获了越来越多的我的阅读和（YouTube）观看时间。它们的主题很有趣，而且似乎研究得很好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;matthewaveryusa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们所有的孩子都在 2-3 岁之间接受过训练，其中 3-4 岁就接受过过夜训练（男孩需要更长的时间（￣_￣））老实说，尿布甚至不是成本因素。当日托中心的前 3 年每月费用为 2500-3000 美元时，尿布就在蒸汽滚筒前捡起了小钱。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Archonical:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;随着西方出生率的下降，Big Diaper 在单位销量下降的情况下提高价格并扩展到奢侈品领域，这难道不是有道理的吗？扩展到失禁等老年人产品也是有意义的，或者也许将产品扩展到更多国家（我不知道帮宝适的全球影响力）。&lt;p&gt;我知道这与 enshitification 不同，我不知道尿布行业是否容易受到 enshitification 的影响，但如果尿布行业能够实体化。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xivzgrev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;2个孩子的家长。父母得到足够的判断。做任何对你有用的事情！&lt;p&gt;-布尿布？太棒了&lt;p&gt;-早点训练？太棒了&lt;p&gt;-稍后训练？太棒了&lt;p&gt;每种方案都有权衡，你会找到最适合你的方案。&lt;p&gt;如果你想稍后接受培训，而尿布公司赚更多的钱，这就是市场应该如何运作的。他们正在提供您重视的产品。所以一切都好！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;joenot443:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有家长尝试过消除沟通吗？基本上是教你的宝宝告诉你他们已经准备好了，并立即带他们去厕所。&lt;p&gt;这是我的伴侣在我们最终有了孩子时想要尝试的事情。直到上周我才听说过一些东西。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Elimination_communication" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Elimination_communication&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noemit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我妈妈三个月大的时候就训练我上厕所了。她给我安排了时间表，在规定的时间里让我上厕所，然后我就去。那是在共产主义垮台之后，所以她只能使用布尿布，而清洁它们是如此烦人，她尽早做了。她对我的孩子穿着尿布的时间感到震惊。我问她是怎么回事，我们之间有细微的差别。她有两年的育儿假。我用了 1.5 周的时间来进行第二次。我在医院召开了第一次董事会会议。只能说我没有时间投入其中。这需要两周的专注，反复把它们放在便盆上，奖励它们，并清理干净。我知道这是可能的。现代生活往往建立在这些便利和效率的基础上，直到再也不可能回去。&lt;p&gt;我尝试过“内衣周末”和我的第二个一样，他看起来就像自己撒尿一样，但这还不够。他需要整整两周的时间，我相信他能做到。到周末结束时，他才开始掌握它，然后周一我又给他穿上尿布，这更令人困惑而不是有帮助。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cowpig:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得现代生活的时间需求是这里的罪魁祸首。如今，家庭大多需要两名工作父母，这意味着没有人全职照顾婴儿。&lt;p&gt;如果你有人全职照顾他们，尽早进行如厕训练通常很容易，而且可以节省净时间。&lt;p&gt;但是，如果你因为时间版的贫困陷阱而无法投入时间，那么你就得穿尿布，直到孩子们发育到足以自行过渡或通过看到其他例子（日托等），或者年龄足够大，可以向他们解释这一点。他们。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;HPsquared:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;婴儿和儿童保育费用要么很高，要么根本不高。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Forgeties79:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这确实让我觉得很早，但是嘿，我确信它发生了，而且仍然会发生！但我确实同意核心论点，即人们似乎等待了很长时间。如果你问我，“太长”有多长很难确定。如厕训练不仅关乎您的孩子何时准备好，还关乎父母何时有能力处理它，因为坦率地说，这是一个极其密集、复杂、混乱的过程，通常需要几天甚至几周的时间。它通常也会遇到挫折，甚至完全重置。&lt;p&gt;我的一个孩子我们在 18 个月大时就开始了，他几乎做到了，但我们开始看到严重的倒退，不得不退缩。几个月后我们再次尝试，他很顺利。我认为对大多数人来说，让你的孩子在 2 岁的时候进行如厕训练是非常合理的，但这主要是基于我和同龄人的经验，而不是某种数据驱动的观察或其他什么。&lt;p&gt;此外，这对人们来说似乎是显而易见的，但值得一提的是，当然，随着孩子年龄的增长，训练他们如厕会更容易。因此，有些人知道他们可以早点完成，但认为值得再等一会儿，这样过程会更容易。这是有效的！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;westurner:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;几周前，我正在设计防水纺织品，无意中还设计了一种&lt;i&gt;壳聚糖-海藻酸盐羊毛&lt;/i&gt;，可以用作羊毛内衬、高吸水性尿布、纱布&lt;p&gt;与尿布和纱布相比，壳聚糖-藻酸盐羊毛的生产成本如何？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abustamam:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们为女儿（6m）使用布尿布。她仍然是纯母乳喂养，所以没有固体便便，但到目前为止，我估计我们通过这个决定节省了超过 100 美元。&lt;p&gt;当她开始吃固体食物时，情况可能会改变，但我建议每个人都尝试布尿布，只要确保您有一个日常程序和系统，以减少尿布负担（我们在换尿布台旁边有两个尿布桶，一个用于一次性湿巾，一个用于一次性湿巾）尿布，每隔一天我们清洗尿布和衬垫）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;umang-sinha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;大尿布需要暴露&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;glimshe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;现在我想起来了，“大卫生纸”从毫无戒心的高纤维食物食用者手中夺走了数十亿美元，对民主构成了威胁。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://thehustle.co/originals/how-big-diaper-absorbs-billions-of-extra-dollars-from-american-parents</guid>
+      <pubDate>Sun, 08 Mar 2026 13:12:15 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47297054</comments>
     </item>
   </channel>
 </rss>
