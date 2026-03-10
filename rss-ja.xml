@@ -6,65 +6,44 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 10 Mar 2026 02:25:15 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2026 04:45:57 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>2 年間の Emacs Solo: 35 モジュール、外部パッケージなし、完全なリファクタリング</title>
-      <link>https://www.rahuljuliato.com/posts/emacs-solo-two-years</link>
-      <description>&lt;p&gt;これは純粋な標準の Emacs カスタマイズです。 Emacs がすでに備えているものを設定しているため、これは問題なく機能します。 Emacs の一般設定 emacs use-package ブロックは最大の単一セクションです。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Two Years of Emacs Solo: 35 Modules, Zero External Packages, and a Full Refactor&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47317616"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.rahuljuliato.com/posts/emacs-solo-two-years'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gyrgtyn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私がまだ emacs を使用している唯一の理由は、magit (およびマッスル メモリー) です。マジットは自分では作れませんでした。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Ferret7446:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「なぜ」ちょっと大ざっぱです。  Emacs に同梱されるものと ELPA に同梱されるものの違いは、ある程度任意です。  実際、アップデートが ELPA で出荷されている組み込みパッケージが多数あります。つまり、ELPA を使用していない場合、組み込みパッケージにパッチが適用されていないバグがある可能性があります。&lt;p&gt;また、文字通りすべてを自分で書かなければならない理由もありません。  オープンソースのライセンスパッケージを見つけて読んで理解してから、構成にコピーすることができます。  すべてをゼロから行うのは、そのプロセスを楽しむことができなければ時間の無駄です（その場合、気が狂ってしまいます）。&lt;p&gt;これは、すべての科学知識を自分でゼロから発見しようとするのとほぼ同じであり、それを「当然のこと」と考えるのと同じです。先人たちが発見した知識。  そうすることは恥ずべきことでも不利なことでもありません。&lt;p&gt;また、批判的な反論もあります:&lt;p&gt;&amp;gt;独自のパッケージを作成することが Elisp を学ぶ最良の方法です&lt;p&gt;絶対に違います。  言語を読むことは非常に重要です。書くことだけをやっていると、奇妙な習慣にハマってしまい、たいていは改善できません。  他の人が書いたものを読むことによってのみ学ぶことができます。他の人の行いが正しいことも間違っていることも、どちらも自分とは異なることにさらされるためです。&lt;p&gt;もちろん、独自のパッケージを作成することも必要ですが、それだけでは十分ではありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaway27448:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;なぜ私たちは物事に名前を付けるのが苦手なのでしょうか？モジュールとパッケージは非常に抽象的であるため、先に進むためには開発環境に関連してそれらが何を意味するのかをグーグルで検索する必要があります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fedreg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;超印象的!!間違いなくこのLispの一部を盗むつもりです&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hirvi74:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはマゾヒズムの典型かもしれません。しかし、私は単に感銘を受けただけではありません。私も羨ましい限りです。&lt;p&gt;私は 10 年以上前、大学に通っていたときに教授&amp;#x2F;指導者の一人に変換されて以来、Emacs を使用しています。年が経つにつれて、私は Emacs に手を伸ばすことがどんどん少なくなっていることに気づきました。私は今でも設定を維持しており、かなり頻繁に使用しています。私も雇用主では Emacs を使用できないので、それは役に立ちません。&lt;p&gt;しかし、著者が示したことを私は常に実行したいと思っていました。現在抱えているすべてのパッケージの依存関係から解放されたいと思っています。私にはこのようなことをする時間も自制心もありません。たとえ機能がサードパーティのパッケージと同等かそれ以下だったとしても、私は知らない悪魔よりも知っている悪魔のほうを選びます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yunnpp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Eglot は C++ の emacs-lsp と同等ですか?具体的には、compile_commands.json と、コード ナビゲーションとオートコンプリートに必要な通常の C++ のナンセンスすべてを指すことを考えています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wilkystyle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; &lt;i&gt;つまり、コードが時々不完全であることは確かですが、それは私の制御範囲内であることを意味します。私はそれを書き、それを理解しています。そして、それが壊れたとき、どこを見るべきかを正確に知っています。&lt;/i&gt;&lt;p&gt;これは私にとってとても心に響きます。私は「外部パッケージを使用しない」という純粋主義者ではありません&lt;i&gt;&lt;/i&gt;が、私が望んでいたものとまったく同じものがなかったため、自分用に作成した機能が多数あります。&lt;p&gt;一例としては、defvar で定義した任意のペア区切り文字のセット (括弧、引用符、括弧、または指定できる) に領域 (選択範囲) を拡張する関数です。一致するためのカスタムの left&amp;#x2F;right 正規表現)。次に、関数を実行すると、その一致するペアに対して定義したトリガー キーである 2 回目のキー押下を待機し、該当する区切り文字に一致するまで領域を左右に拡張します。&lt;p&gt;同じキーを繰り返すと、左右の区切り文字自体が選択され、別の繰り返しで一致する区切り文字の次のセットまで拡張されます。&lt;p&gt;ツリーシッター ベースのキーを使用している場合でも、 Expand-region プラグインを使用すると、一連の有効な Treesitter オブジェクト展開を飛び越えたい場合や、特定のテキスト オブジェクトが Treesitter で定義されていない場合に、カスタム関数が依然として非常に役立ちます。&lt;p&gt;私が定義した便利なカスタム展開のいくつかは次のとおりです。&lt;p&gt;"w" Vim が小文字の W 単語とみなすものを選択します&lt;p&gt;スペース Vim が大文字の W 単語とみなすものを選択します&lt;p&gt;"$" ${...} スタイルの式を選択するには&lt;p&gt;"&amp;#x2F;"スラッシュ間のすべてを選択するには&lt;p&gt;"*"アスタリスクの間で選択します (マークダウンを編集するときに便利です)&lt;p&gt;これは私個人にとって非常に貴重な機能ですが、オープンソース化しようとは常に自分に言い聞かせています。なぜなら、この関数には注意点や制限がいくつかあるからです。また、それを使用するすべての人を幸せにしようとして、危険にさらされたくありません。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.rahuljuliato.com/posts/emacs-solo-two-years</guid>
-      <pubDate>Tue, 10 Mar 2026 00:16:44 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47317616</comments>
-    </item>
-    <item>
-      <title>「JVGアルゴリズム」は小さな数字にしか勝てない</title>
-      <link>https://scottaaronson.blog/?p=9615</link>
-      <description>&lt;p&gt;さて、子供たち、なぜこれがうまくいかないのですか。これは小さな数字で勝っているようにしか見えません。多数の場合、それは絶望的です。同じ点をより丁寧に、より長く説明している人を見たい場合は、Hacker News のこれまたは Postquantum のこれを試してください。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The “JVG algorithm” only wins on tiny numbers&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47317739"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://scottaaronson.blog/?p=9615'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;guy4261:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; （はい、作者は自分たちの名前にちなんで名付けました）
-AVL ツリーがその発明者である Georgy Adelson-Velsky と Evgenii Landis にちなんで命名されているのと同じ方法です...これについては特別なことは何もありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kmeisthax:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;つまり、 これまで&lt;i&gt;実際&lt;/i&gt;に数値を因数分解した量子コンピューターがないことを考えると、小さな数値の高速化は依然として印象的です :P&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RcouF1uZ4gsC:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Scott は、この前の HN ディスカッションのトップのコメントを参照しました&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47246295"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47246295&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MathMonkeyMan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この記事を読んでいるうちにタイトルが変わりました。 「「JVG アルゴリズム」に似ています」小さな数字でしか勝てない」慈善活動の説明です。この記事では、スコット・アーロンソンがこの論文を激しく非難し、その著者を知的フーリガンとして辱めている。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://scottaaronson.blog/?p=9615</guid>
-      <pubDate>Tue, 10 Mar 2026 00:35:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47317739</comments>
-    </item>
-    <item>
-      <title>Apple が Fn/Globe キーの最終目標をどうするのか、あるいは Apple がそうするのかどうかはわかりません。</title>
-      <link>https://aresluna.org/fn/</link>
-      <description>&lt;p&gt;しかし、他のキーボードにはすでに 10 個のファンクション キーがありました。しかし、Fn の慣例は行き詰まっていました。実際、ラップトップには 10 個の適切なファンクション キーが搭載されていましたが、他にいくつかの欠落しているキーを表現する必要がありました。 1984 年と同じように、Fn はキーを Home、End、PgUp、PgDn に加えて、Break や PrtSc などの珍しいキーに見せかけるために使用されていました。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; I don't know Apple's endgame for the Fn/Globe key–or if Apple does&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47311647"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://aresluna.org/fn/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>AI が生成したアートに対してアーティストにロイヤルティを支払うことから学んだこと</title>
+      <link>https://www.kapwing.com/blog/learnings-from-paying-artists-royalties-for-ai-generated-art/</link>
+      <description>&lt;p&gt;私たちは、アーティストを Tess に参加させることについて 11 のイラスト制作会社に連絡を取りました。アーティストの 4% は絶対にダメでした。ハイエンドのアーティストは、誰でも自分のスタイルで作品を制作できるようにすればコストが安くなるのではないかと懸念していました。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Learnings from paying artists royalties for AI-generated art&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47318421"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.kapwing.com/blog/learnings-from-paying-artists-royalties-for-ai-generated-art/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;perryizgr8:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Mac OSのキーボードショートカットは本当に混乱しています。 Windows では、これがはるかに優れており、より一貫性を持って実行されます。その結果、サードパーティのアプリにも賢明なショートカットが追加されます。例: Ctrl+G はコード エディタで「行に移動」するために広く使用されています。 Windows では、テキスト編集に Ctrl+ ショートカットがあらゆる場所で使用されるため、これを使用するのは非常に理にかなっています。しかし MacOS では Cmd+ がテキスト編集の標準なので、場違いです。ただし、Cmd+G は、わかりにくい検索機能に使用されます。そのため、エディターは Ctrl+G に戻りますが、これは場違いです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rgoulter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはデフォルトのユーザー エクスペリエンスにとって問題ですが、愛好家であれば、好みの外付けキーボードを入手できるため、それほど問題はないと思います。&lt;p&gt;ラップトップのキーボードは常に誰かに嫌われます。標準のキーボード レイアウトはひどいもので、これに対処するには、従来のデザインに固執する必要があります（人によって嫌われる変更は異なります）。一方、優れたキーボードのデザインは、標準的なキーボードからかけ離れたものになるため、ラップトップではそれができません。&lt;p&gt;(人々は、矢印キーをどこに配置するか、修飾キーの数や Caps Lock の配置が悪いなどについて議論するでしょう。しかし、最も明らかな問題は、スペースバーのサイズが他のキーの 6 倍を超える必要はないということです)。&lt;p&gt;OS が一貫性がなく、動作にどのようなスキャン コードが必要かが不明瞭です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;koinedad:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;そう、地球儀が追加されて以来、最もお気に入りのキーです。ランダムに絵文字キーボードが開く&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrkpdl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これに加えて、Apple IIe には Apple ロゴの入ったキーが 2 つありました。 1 つは輪郭だけの「開いた Apple」、もう 1 つはシルエット「閉じた Apple」です。これら 2 つのキーは互いに異なることを行いました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MFHava:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;最も重要なのは、両方のキーボードに新しいテナントである Control (⌃) が導入されたことです。これは修飾キーの 4 番目で、今日に至るまで、なぜ ⌘ がここで再利用されなかったのか完全には理解できません&lt;p&gt;なぜなら、^C があいまいであるという点に関しては、Windows (さらに言えば Linux) と同じ混乱が生じることになるからです...&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_doctor_love:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;このボタンは音声ディクテーションのショートカットになりました。&lt;p&gt;現時点では、Wisprflow や OpenWhispr などのアプリがこのボタンをメインのショートカットとして使用しており、Apple がこのボタンを Siri のデフォルトとして統合するのも時間の問題だと思います。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://aresluna.org/fn/</guid>
-      <pubDate>Mon, 09 Mar 2026 16:53:14 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47311647</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Papazsazsa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これを行う方法を見つけた人は、裕福であり、愛されるでしょう。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kennywinker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;彼らは基本モデルを採用し、盗まれた作品で何かをトレーニングし、その後、盗まれていない作品の見せかけを追加しました。私も彼らの法的立場には懐疑的です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spudlyo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;調査によると、消費者は、AI がアーティストのスタイルでコンテンツを生成した場合、アーティストには報酬を支払う権利があると信じていることが一貫して示されています。&lt;p&gt;興味深いのは、「消費者」がアーティストのスタイルに合わせてコンテンツを生成したことです。一般に知的財産法の拡大を目的としています。現時点では、私は「スタイル」が正しいとかなり確信しています。著作権で保護されているものではありません。私は個人的にはこれを望んでいませんし、おそらく私と同じような人はたくさんいると思います。知的財産法が不十分に考えられていると、萎縮効果、DRM、&lt;i&gt;愚かで&lt;/i&gt;不必要な訴訟が発生し、最終的にはデジタルの自由が失われます。&lt;p&gt;&amp;gt;アーティストへの 325 件の冷たいメールが教えてくれたこと&lt;p&gt;1% が「熱い炎のデススパマーを食べてください」と返信しなかったのには驚きました。未承諾の商用電子メールを送信したため。  ;)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bandrami:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;時折小さな ASCAP 小切手を受け取る者として、ASCAP&amp;#x2F;BMI モデルはアーティスト (そしてライターにも?) に役立つのではないかと思います。これは SESAC に似ていると思いますが、最終的にはこのように機能するのかもしれません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Terr_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;否定的な結果を発表する科学的研究と同様に、事後分析のための小道具。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nakedgremlin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはアーティストと AI エンジンの現状についての素晴らしい記事だと思いました。このナゲットには正直驚きました:&lt;p&gt;&amp;gt; &lt;i&gt;ブレインストーミングと反復作業のスケーリングに独自のモデルを使用するための無料の Tess サブスクリプション (アーティストの約 4 人に 1 人がこれを利用しました)&lt;/i&gt;&lt;p&gt;つまり、私が見ている計算に基づくと... システム内の 21 人のアーティストのうち、自分の生産性のためにツールを使用することを選択したのは 5 人 (「4 人に 1 人」) だけでしょうか?これは非常に低いように思え、作成時のユーザー エクスペリエンスがどのような感じになるのか疑問に感じます。この取り組みに取り組むことを決めた場合、派生的な結果がどのようなものになるかを確認したいと思うでしょう。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.kapwing.com/blog/learnings-from-paying-artists-royalties-for-ai-generated-art/</guid>
+      <pubDate>Tue, 10 Mar 2026 02:24:52 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47318421</comments>
+    </item>
+    <item>
+      <title>いいえ、クロード コード ユーザー 1 人あたり Anthropic に 5,000 ドルはかかりません</title>
+      <link>https://martinalderson.com/posts/no-it-doesnt-cost-anthropic-5k-per-claude-code-user/</link>
+      <description>&lt;p&gt;それは数学的に証明されています。 100 万出力トークンあたり 34_。 Opus 4と比較してください。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; No, it doesn't cost Anthropic $5k per Claude Code user&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47317132"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://martinalderson.com/posts/no-it-doesnt-cost-anthropic-5k-per-claude-code-user/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;brianjeong:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これらのマージンは、ダリオが最近のポッドキャスト出演の多くで示したマージンよりもはるかに大きいです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gmerc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「テストが合格するまで繰り返す」という RSI タイピングを誰も受けません&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;z3ugma:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはとてもよく書かれたエッセイです。すべての行で、私が今思いついた即座の質問に対する答えが明らかになりました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;functionmouse:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;そうだと思い込んでいた人はいますか？深刻な質問です。個人的にはそんなこと聞いたことないです。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://martinalderson.com/posts/no-it-doesnt-cost-anthropic-5k-per-claude-code-user/</guid>
+      <pubDate>Mon, 09 Mar 2026 23:22:06 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47317132</comments>
     </item>
   </channel>
 </rss>
