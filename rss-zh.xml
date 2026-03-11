@@ -6,211 +6,275 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 11 Mar 2026 16:04:26 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 19:09:09 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>乐高的 0.002 毫米规格及其对制造业的影响 (2025)</title>
-      <link>https://www.thewave.engineer/articles.html/productivity/legos-0002mm-specification-and-its-implications-for-manufacturing-r120/</link>
-      <guid isPermaLink="true">https://www.thewave.engineer/articles.html/productivity/legos-0002mm-specification-and-its-implications-for-manufacturing-r120/</guid>
-      <pubDate>Wed, 11 Mar 2026 13:22:39 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47335237</comments>
+      <title>使 WebAssembly 成为 Web 上的一流语言</title>
+      <link>https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/</link>
+      <description>&lt;p&gt;是什么让 WebAssembly 成为二流的。尽管如此，这种设计仍然对 WebAssembly 的用户产生了重大影响。让内存=新的WebAssembly。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Making WebAssembly a first-class language on the Web&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47331811"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 25 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zb3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不不不，如果你想模拟某些东西（它甚至不支持 JIT），wasm 的速度很糟糕（它甚至不支持 JIT），问题在于它的架构（大量的限制，比如不能自修改代码，不能跳转）.. 这个问题无法修复，我们需要一些真实的东西，比如 WebKVM。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;然而，仍然感觉缺少了一些东西，阻碍了 WebAssembly 在 Web 上的更广泛采用。&lt;p&gt;&gt;造成这种情况的原因有很多，但核心问题是 WebAssembly 是网络上的二流语言&lt;p&gt;如果 WebAssembly 真的能成功那就太好了，但我必须说实话：我放弃了它永远会成功的想法。这里有太多的事情没有解决。 HTML、CSS 和 JavaScript 是一个成功的故事。 WebAssembly 不是；这是一个利基市场，现在要摆脱这个利基市场非常困难。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jjcm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个伟大的一步，哪怕只是因为它为“正确”的人强制实施了更多的惯例。通过为此提供更简单的机制来完成任务。&lt;p&gt;WRT WebAssembly 组件，但我确实希望它们具有不同的名称，因为当 Web 组件存在时，它的定义变得模糊，而 Web 组件具有非常不同的目的。不幸的是，开源的组命名非常困难。每个人对词语的用法和对所使用的更广泛术语的理解都不同，因此这种重叠经常发生。&lt;p&gt;我很好奇，对于规范的 LLM 监督者来说，这种情况是否会变得更好，因为他们对整个生态系统有更广泛的了解。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;koenschipper:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇文章完美地捕捉到了“WebAssembly 墙”的挫败感。当您只想交付高性能模块时，编写和维护 JS 粘合代码（或依赖不透明的生成工具）感觉像是一个巨大的倒退。&lt;p&gt;通过跳过 JS 粘合，Dodrio 实验中的 45% 开销减少是巨大的。但我很好奇，当直接与 DOM 等 Web API 交互时，WebAssembly 组件模型的内存管理含义。&lt;p&gt;如果 Wasm 组件完全绕过 JS 来操作 DOM，那么垃圾收集边界如何工作？组件模型是否依赖最近添加的 Wasm GC 提案来保持 DOM 引用处于活动状态，还是仍然隐式触发 JS 引擎的垃圾收集器？&lt;p&gt;非常高兴看到这个标准化，这样我们终于可以将 Wasm 视为真正的一等公民。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;exabrial:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我真的很希望能够在浏览器中运行_任何_语言。 WASM 是伟大的第一步。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lasgawe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;同意观点。但当阅读本文时，它似乎比在开发实际应用程序时在网络上使用 JavaScript 要复杂得多。但我认为，由于人工智能，这不会成为问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lasgawe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;同意观点。但当阅读本文时，它似乎比在开发实际应用程序时在网络上使用 JavaScript 要复杂得多。但我认为，由于人工智能，这不会成为问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Tepix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;具有 DOM 支持的 WASM 会很棒。不幸的是，它也非常适合混淆和恶意软件。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lich_king:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;网络很迷人：我们从一个看似疯狂的提议开始，即我们可以让任何人在您的计算机上运行复杂的程序，而不会造成严重的安全问题。事实证明，这是疯狂的：我们忍受了 20 年主要由 JavaScript 引起的严重浏览器安全错误。我并不是说这不值得，但这也太疯狂了。&lt;p&gt;现在我们已经接近制定正确的设计原则和缓解措施，而 JS 引擎中的 0day 变得越来越昂贵且罕见......我们准备将其全部剔除，并用新的、甚至风险更大的执行范例替换它。&lt;p&gt;我并不生气，有点漂亮。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ngrilly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们终于可以用任何编译为 WebAssembly 的语言为浏览器编写程序。甚至混合搭配多种语言。这将是令人惊奇的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;barelysapient:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哇。我们非常需要这个。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;haberman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;值得庆幸的是，有 esm 集成提案，该提案今天已在捆绑程序中实现，并且我们正在 Firefox 中积极实施。&lt;p&gt;从代码示例来看，该提案还允许您同步加载 WASM 代码。  如果是这样，这将解决我在尝试用 WASM 替换 JS 代码时遇到的一个问题：在页面加载期间同步加载和运行代码的能力。  目前 WASM 代码只能异步加载。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;devwastaken:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;WASM 不是一种语言，它是一个失败的指令集 - 构建链都是黑客行为，很少产生性能优势。它应该被删除，并且它周围的低质量开发人员会找到不同的工作。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;patchnull:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;移除 JS 粘合后 DOM 操作时间减少 45%，这个数字应该会改变人们对此的看法。 WASM 多年来一直陷入先有鸡还是先有蛋的循环：没有 DOM 访问意味着唯一可行的用例是编解码器和加密等计算密集型工作负载，这使得生态系统太小，无法证明更好的工具的合理性，从而导致采用率较低。通过组件模型的直接 Web API 绑定打破了这个循环，因为它最终使 WASM 对于普通 Web 开发来说是可行的，而不仅仅是热路径优化利基市场。该线程中的复杂性问题是有效的，但我认为它们是过渡性的。 WIT 层现在看起来很重量级，因为工具链还不成熟，但像您语言中的任何其他库一样导入浏览器 API 的最终状态确实比当前的 JS FFI 舞蹈更简单。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;csmantle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;另一个重要的方面是，如果没有像“wabt”这样的外部库，我不能只打开记事本，用 HTML 编写一些内联 WASM&amp;#x2F;WAT 并在浏览器中预览它，就像 HTML+CSS+JS 的工作方式一样。必须获得完整的工作工具链对于快速原型设计和演示需求来说并不是很友好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hexo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;没有呢？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;koolala:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;今天的每一个新标准都不关心干净和易于使用。它们都最大化了使基本示例工作所需的 JS 样板。今天一切都是为“工程师”设计的。而不是“作者”；没有任何友好的默认工作流程。我很高兴他们仍然关心这个。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thefounder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是正确的方向。我认为另一个重要的部分是 GC 集成。由于 GC，许多语言（例如 Go、C#）在 wasm 上表现不佳。由于缺乏各种 GC 功能（即内部指针），他们还必须提供 GC&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;skybrian:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从高层次来看，这听起来很棒。但仔细研究组件模型如何实现的细节，由于并发性，它看起来非常复杂：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;WebAssembly&amp;#x2F;component-model&amp;#x2F;blob&amp;#x2F;main&amp;#x2F;design&amp;#x2F;mvp&amp;#x2F;CanonicalABI.md" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;WebAssembly&amp;#x2F;组件模型&amp;#x2F;blob&amp;#x2F;main&amp;#x2F;des...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaway2027:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴看到它最终发生。我们现在还可以使用 WebGL2 获得计算着色器吗？我不想仅仅为了计算着色器而将所有内容转移到 WebGPU，而且我不知道为什么他们一直拒绝这些提案。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;steve_adams_86:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;WASM 悬崖是非常真实的。 Every time I go to use it, because of the complexity of the tool chain and process of going from zero to anything at all, I feel like I&amp;#x27;m already paying a cognitive tax.我担心我应该更新我的工具，研究最新和最好的工具，更好地理解工具等等...看到这种改进将是令人难以置信的。&lt;p&gt;没有胶水的性能差异是疯狂的。但一点也不奇怪。这是我几乎总是警告人们的事情之一，因为当尝试使用 WASM 做一些很酷的事情时，它是如此耀眼的脚枪。&lt;p&gt;可能解决的组件问题（也许我错过了）是我们如何避免引入新的复杂性。浏览使用不同语言实现它们的各种示例，我对看到这种情况变得多么混乱感到有点害怕。鉴于现在还处于早期阶段并且没有明确定义的标准，我想事情还没有收紧是公平的。&lt;p&gt;go 示例 (&lt;a href="https:&amp;#x2F;&amp;#x2F;component-model.bytecodealliance.org&amp;#x2F;language-support&amp;#x2F;building-a-simple-component&amp;#x2F;go.html"一旦生成文件，rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;component-model.bytecodealliance.org&amp;#x2F;language-suppor...&lt;/a&gt;) 就有点疯狂了。对于消费者来说，体验应该更好，但作为组件开发人员，我希望工具和输出最终更容易推理。这是一条快乐的道路，不需要任何类型的 DOM 胶水或与 Web API 的交互。这会变得多么复杂？&lt;p&gt;我想我可以将这种担忧总结为转移复杂性而不是消除它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mananaysiempre:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果接口类型的人们没有放弃[1,2]他们最初在 WebAssembly 中支持 WebIDL 的问题陈述，转而支持构建另一个 IDL，同时声明[3]缺乏 DOM 访问不是问题，这一切（看起来好像是）可能会在五年前发生。 （我想，我理解导致这一情况的市场现实。这不是心血来潮或纯粹的 NIH。但我仍然情不自禁地感叹失去的时间。）&lt;p&gt;我想迟到总比不到好。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;WebAssembly&amp;#x2F;接口类型&amp;#x2F;提交&amp;#x2F;f8ba0d044e7846c29b7f05c73acaf5251a47a83d" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;WebAssembly&amp;#x2F;interface-types&amp;#x2F;commit&amp;#x2F;f8ba0d...&lt;/a&gt;&lt;p&gt;[2] &lt;a href="https:&amp;#x2F;&amp;#x2F;wingolog.org&amp;#x2F;archives&amp;#x2F;2023&amp;#x2F;10&amp;#x2F;19&amp;#x2F;requiem-for-a-stringref" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;wingolog.org&amp;#x2F;archives&amp;#x2F;2023&amp;#x2F;10&amp;#x2F;19&amp;#x2F;requiem-for-a-strin...&lt;/a&gt;&lt;p&gt;[3] &lt;a href="https:&amp;#x2F;&amp;#x2F;queue.acm.org&amp;#x2F;detail.cfm?id=3746174" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;queue.acm.org&amp;#x2F;detail.cfm?id=3746174&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pizlonator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很简单。&lt;p&gt;JavaScript 是在浏览器中运行不受信任的应用程序的正确抽象。&lt;p&gt;WebAssembly 是在浏览器中运行不受信任的应用程序的错误抽象。&lt;p&gt;浏览器引擎相互独立地发展，同一个 Web 应用程序必须能够在同一浏览器的多个版本以及不同的浏览器中运行。动态类型非常适合这种情况。 JavaScript 具有动态类型。&lt;p&gt;浏览器引擎处理对象。网页的每个部分都是一个对象。 JavaScript 是面向对象的。&lt;p&gt;WebAssembly 是静态类型的，其最基本的抽象是线性内存。它不太适合 Web。&lt;p&gt;当然，现代 WebAssembly 具有 GC 对象，但这破坏了 WebAssembly 的主要功能：让本机编译器定位它的能力。&lt;p&gt;我认为 WebAssembly 注定会无限期地成为 Web 上的二等公民。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;swiftcoder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴看到这里的势头。即使在直接访问 WebAPI 之外，能够为 WASM 模块指定接口也是一件大事，并且可以解锁各种很酷的选项，例如用于本机应用程序的沙盒 WASM 插件......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mitchbob:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;12 天前讨论（13 条评论）：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47167944"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47167944&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/</guid>
+      <pubDate>Wed, 11 Mar 2026 04:44:46 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47331811</comments>
     </item>
     <item>
-      <title>更快的 Asin() 隐藏在众目睽睽之下</title>
-      <link>https://16bpp.net/blog/post/faster-asin-was-hiding-in-plain-sight/</link>
-      <description>&lt;p&gt;" 这次是 Padé Approximants。C++ 如下： double _asin_approx_private(const double x) { // 这使用泰勒级数近似。8)) { return std::asin(x); } // 泰勒级数近似 constexpr double a = 0.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Faster Asin() Was Hiding in Plain Sight&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47336111"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://16bpp.net/blog/post/faster-asin-was-hiding-in-plain-sight/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>有些人看到的是弦，她看到的是由分形组成的时空</title>
+      <link>https://www.quantamagazine.org/where-some-see-strings-she-sees-a-space-time-made-of-fractals-20260311/</link>
+      <description>&lt;p&gt;广达最近与艾希霍恩谈论了这些努力。场上有波纹，表现为点状粒子。它们的行为就像具有越来越高能量的虚拟粒子。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Where Some See Strings, She Sees a Space-Time Made of Fractals&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47337177"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.quantamagazine.org/where-some-see-strings-she-sees-a-space-time-made-of-fractals-20260311/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;junga:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有时我只看到 varchar，而其他人看到的是 String。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noslenwerdna:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Asymptotic Safety 还预测了希格斯质量（126 GeV 与测量值 125 GeV）。 &lt;a href="https:&amp;#x2F;&amp;#x2F;arxiv.org&amp;#x2F;abs&amp;#x2F;0912.0208" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;arxiv.org&amp;#x2F;abs&amp;#x2F;0912.0208&lt;/a&gt;&lt;p&gt;诀窍是，当时大多数可能的质量范围是实验上排除了，所以它有点不那么令人印象深刻。我不确定对其进行了多少调整（可能没有）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nurettin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;显然，自然力随着规模的大小而从强到弱，并且可能存在一种比将星系聚集在一起的引力还要弱的力量。令人惊讶的是，这让人们感到困惑。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;irishcoffee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;TL;DR：科学家仍在追求科学。&lt;p&gt;&gt;艾希霍恩和她的同事正在寻求一种不同的可能性。 1976 年，最终获得诺贝尔奖的理论家史蒂文·温伯格 (Steven Weinberg) 指出，如果你放大得足够远，你可能会到达物理规则停止变化的地方。新的领域将不再出现；力量的强度将会稳定；事实证明，万有引力是完全有道理的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MeteorMarc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;继续阅读并查看顶夸克能量和底夸克能量的回顾！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.quantamagazine.org/where-some-see-strings-she-sees-a-space-time-made-of-fractals-20260311/</guid>
+      <pubDate>Wed, 11 Mar 2026 15:48:29 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47337177</comments>
+    </item>
+    <item>
+      <title>显示 HN：Klaus – VM 上的 OpenClaw，包括电池</title>
+      <link>https://klausai.com/</link>
+      <guid isPermaLink="true">https://klausai.com/</guid>
+      <pubDate>Wed, 11 Mar 2026 15:54:23 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47337249</comments>
+    </item>
+    <item>
+      <title>启动 HN: Prism (YC X25) – 用于生成和编辑视频的工作区和 API</title>
+      <link>https://www.prismvideos.com</link>
+      <description>&lt;p&gt;Prism 是一款用于短片内容的人工智能视频生成器。 Prism 使用什么 AI 模型。不同型号的价格不同。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Launch HN: Prism (YC X25) – Workspace and API to generate and edit videos&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47337548"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.prismvideos.com'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spacecrafter3d:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;嘿，我一直在尝试 Kling 3.0。这与希格斯菲尔德相比如何？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tcbrah:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我尝试了大约 5 个这样的一体化人工智能视频平台，但最终总是回到我自己的脚本。问题不在于“粘合工作”。老实说，这就像 20 行 Python 代码一样。问题是，当平台对模型 API 进行过多抽象时，当 kling 或任何人发布更新时，您将无法访问新参数。当提供商更新时，你们会以多快的速度公开新的模型功能？在我看来，这就是成败的事情&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deepdarkforest:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我无法想象还有一种比自动化人工智能广告营销更有用的方式（对我和社会来说）来度过我的一生。从字面上看，这只是人工智能的废话。 YC 的资助更糟，但这是如此公开的垃圾，以至于我几乎尊重透明度&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;informal007:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您可以使用与 OpenAI 的研究写作工具相同的名称&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;openai.com&amp;#x2F;prism" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;openai.com&amp;#x2F;prism&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.prismvideos.com</guid>
+      <pubDate>Wed, 11 Mar 2026 16:16:12 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47337548</comments>
+    </item>
+    <item>
+      <title>真菌电子（2021）</title>
+      <link>https://arxiv.org/abs/2111.11231</link>
+      <description>&lt;p&gt;) Connected Papers Toggle Connected Papers（什么是 Connected Papers。） Litmaps Toggle Litmaps（什么是 Litmaps。） 代码链接 Toggle Papers with Code（什么是 Papers with Code。）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Fungal Electronics (2021)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47338055"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arxiv.org/abs/2111.11231'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;observationist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;即使您可以调整它来创建“器官”，特征尺寸也会阻碍计算速度。进行分布式处理。细胞功能的基本限制会将任何特定计算组件的时钟速度限制在 ~6khz 或更低，或者大约是它们自然能做的 100 倍。&lt;p&gt;不过，将菌丝体垫与 PCB 耦合，进行一些基因调整，就可以让传统计算机利用具有数万亿个交叉点的令人难以置信的网络；如果你能以某种方式引出人类皮质网络的算法，编辑真菌来反映这一点，你就可以获得一个强大的人工智能混合设备，大约有门垫大小，如平装书一样厚，但这并不是一块芯片大小的真菌对可穿戴设备有用的东西。你可能会用机器人传感器做一些有趣的事情，如果电信号转化为触摸，也许机器人上的薄薄的菌丝体网络可以充当机器人皮肤“触摸”压力传感器？&lt;p&gt;太棒了，科学，有趣的东西。我们将获得自主网络混合蘑菇机器人，就像“最后生还者”机器人一样。和“终结者”杂交种。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;byt3h3ad:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[摘自 arxiv 描述] 真菌电子器件是由菌丝体结合复合材料或纯菌丝体制成的活体电子器件家族。真菌电子设备能够响应外部控制参数改变其阻抗并产生电势尖峰。真菌电子产品可以嵌入真菌材料和可穿戴设备中，或用作独立的传感和计算设备。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arxiv.org/abs/2111.11231</guid>
+      <pubDate>Wed, 11 Mar 2026 16:53:11 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47338055</comments>
+    </item>
+    <item>
+      <title>MacBook Neo</title>
+      <link>https://daringfireball.net/2026/03/the_macbook_neo</link>
+      <description>&lt;p&gt;这是与售价 1,300 美元的基础款 MacBook 和 1 的比较。我称其为“令人震惊”。在实践中，感觉确实如此。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The MacBook Neo&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47334293"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://daringfireball.net/2026/03/the_macbook_neo'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 30 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;asadm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Soo 有没有在 iPhone 上运行 hackintosh 的工作？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;saagarjha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; Neo 没有相机的硬件指示灯。 “正在使用相机”的指示仅出现在菜单栏中。这种遗漏会对隐私和安全产生影响。据苹果公司称，MacBook、iPhone 和 iPad 上正在使用的摄像头的硬件指示灯无法通过软件规避。如果相机已打开，该灯就会亮起，并且没有软件可以禁用它。由于 Neo 唯一的相机使用中指示灯位于菜单栏中，因此这显然可以通过软件来规避。&lt;p&gt;iPhone 和 iPad 没有硬件指示灯&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drnick1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;你无法买到价格在 600 至 700 美元之间的 x86 PC 笔记本电脑，它在任何指标（性能、显示质量、音频质量或构建质量）上都可以与 MacBook Neo 竞争。当然也不是软件质量。&lt;p&gt;我的观点恰恰相反：虽然苹果的硬件总体上很优秀，但软件却不尽如人意。苹果还一直将行业推向危险的方向（应用商店的围墙花园、对开发者和用户的过度权力）。如今，MacOS 在应用程序兼容性（尤其是游戏）方面也远远落后于 Linux。&lt;p&gt;在确认兼容的 Linux 发行版之前，我不会购买 Neo。如果由于某种原因无法更换库存操作系统，那么就我而言，它一到就死了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;system7rocks:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我注意到它们在 MicroCenter 上已经卖完了 - 我本来希望今天能亲自去看看。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nottorp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么 Apple 笔记本电脑触控板上也提供了压力触控功能？&lt;p&gt;如果我注意到的话，我的所有笔记本电脑都是 Apple 的。&lt;p&gt;我知道我以前的 iPhone 上有它，但这很烦人，因为我从来不知道触摸时会发生什么。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;efficax:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;将此称为“内容消费”。设备对我来说似乎不对。当然，它不是专业笔记本电脑。如果您尝试同时运行多个 Adob​​e 创意套件应用程序或运行 iOS 模拟器，您将会遇到麻烦，但其中的芯片非常强大，您可以在这台笔记本电脑上完成真正的工作。我什至想找一个作为一种瘦客户端，供开发人员通过 tailscale 访问我的大型 Linux 盒子。例如，确保您正在开发的 Web 应用程序能够在功能较弱的计算机上运行而不会终止浏览器可能是值得的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nicoburns:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;如果将 Neo 插入 USB-C 端口中更强大的电源适配器，充电速度会更快。端口用于（快速）充电是一个巨大的胜利。这意味着您可以同时充电和使用快速 USB 端口。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;etchalon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我期待 HP 将添加大量的过时软件以达到 599 的价格点。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;timpera:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有谁知道它是否可以很好地运行Windows 11？到目前为止，Parallels 应用程序似乎还没有经过审阅者的测试。这可以成为一台很棒的 Windows 机器。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dmitrygr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;由于 Neo 唯一的摄像头使用中指示器位于菜单栏中，因此显然可以通过软件来规避。&lt;p&gt;并不像作者暗示的那么明显。 Apple 发布了一些文档 IIRC，解释了它是如何实现的。值得一读...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MarkusWandel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“这是一台真正的 Mac” - 我明白了！&lt;p&gt;我记得有一大堆便宜的上网本之类的东西&lt;i&gt;技术上&lt;/i&gt;是 Windows XP 或 Windows 7 机器，但附带了一个简单的“入门”功能。操作系统、内存不够、只有 32 位 CPU，而在那个时代 64 位已经成为标准，所有这些加在一起就相当于对真实 Windows 机器的几乎无法使用的模仿，因此，其中大多数很快就变成了车库拍卖的素材。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ryandrake:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不是华硕，但我有一台蹩脚的联想塑料笔记本电脑，新的时候价格在这个范围左右，而且太可怕了。铰链的阻力太大，当您尝试打开盖子时，垃圾显示面板会弯曲。垃圾触控板只有信用卡大小，需要一定的力气才能真正感知到手指在其上移动的事实。 SDCard 读卡器已经失败两次（我已经是第三次了）。它只是一块垃圾，即便如此，就笔记本电脑的质量而言，它也只是中等水平。除了特定的缺陷之外（这是整个 PC 笔记本电脑生态系统中普遍存在的问题），构建质量主观上感觉就像是勉强用胶带和胶水粘合在一起。就像您对旧饼干杰克盒中的玩具所期望的那样。这些原始设备制造商多年来一直在生产绝对垃圾，现在是整个行业感到震惊的时候了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pragmatic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;但你却被 MacOS 困住了。&lt;p&gt;我无法忍受，每次更新都会让情况变得更糟。&lt;p&gt;我一直在运行 popos abs，而且它非常好。&lt;p&gt;将其安装在新的 LG Gram 上，一切正常，包括指纹识别器。是我最喜欢的笔记本电脑，而我的旧 Mac 已经落满灰尘，&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;etothet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“我只想说：我想我已经不再使用 iPad 了。苹果现在正在制造一款起售价仅为 600 美元的出色 Mac 笔记本电脑，为什么还要费心呢？”&lt;p&gt;我很想亲眼看看这台机器，但我敢打赌 iPad 仍然是苹果生态系统中最好的大型设备，因为它可以从纵向模式中观看。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fxtentacle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;传统 PC 制造商很幸运 Ubuntu 不支持此功能，否则他们将面临更多竞争。到现在为止，每个人都讨厌Windows。我敢打赌，有些人讨厌它，愿意转向任何有效且半无广告的东西。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cromka:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;试想一下，如果 Apple 也提供完整的 Linux 支持，而不是 Windows，他们会对市场做些什么……他们可能会直接拥有 70% 的 Linux 市场，并且一夜之间将其整体规模扩大一倍。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JSR_FDED:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令人震惊的是，这对于PC行业来说是一个震撼。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cryptos:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Windows 的声誉正在下降，因此操作系统可能是真正的危机。带有现代桌面的 Linux（例如 Gnome 3）可能会填补这一空白，但市场距离广泛采用还很远。推广和改进Linux桌面和应用程序将是一项长期的努力，但只押注于退化为云和人工智能广告表面的Windows可能是致命的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bdbdbdb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;600 对于 MacBook 来说很便宜，但我看不到公共 Windows 用户集体更换。大多数购买廉价 Windows 笔记本电脑的人这样做是因为 
+1) 他们需要更换损坏的笔记本电脑并希望支付尽可能最低的金额
+2) 他们不想学习一些新东西&lt;p&gt;600 美元似乎是预算，但对大多数人来说都超出了预算。我的猜测是，PC 制造商将对此进行报复，将价格稍微降低到中档 ryzen 的 600 价位以下，并配备更多内存和空间。&lt;p&gt;我帮助购买电脑的任何家庭成员只关心它有多少空间，有多便宜，以及运行像上一台这样的东西是否会很困难。就目前而言，MacBook 的容量更少，但价格更高&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ExoticPearTree:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也许其他制造商实际上会停止生产感觉像是用胶带粘在一起的蹩脚硬件？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;smackeyacky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我女儿刚刚订购了其中一份。  她是一名学生（不是学生），她那台配备英特尔处理器的老式 8Gb MacBook Air 仍然运行良好，但电池已无法使用，而且她的键盘也变得不稳定。&lt;p&gt;Neo 是一个完美的替代品，比修理 Air 更容易。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;KingMachiavelli:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在我看来，消费个人电脑行业正接近生存危机。大型企业在营销方面表现不佳； SKU 和型号太多 - 需要一段文字才能弄清楚同一发布年份的 2 台戴尔笔记本电脑有何不同。两种不同的机箱设计将具有完全相同的规格。&lt;p&gt;此外，您不能指望基本信息是正确的。需要一个小时的研究才能知道触控板是否糟糕，键盘是否糟糕，显示屏是否是 300 尼特的 POS，即使在明亮的房间里也无法使用。&lt;p&gt;您想要与 MacBook Air 相同的性能，但没有这些致命缺陷之一吗？无论如何，你都会花 1500 美元以上，所以你什么也没有节省。然后操作系统就充满了广告和预装的垃圾“游戏优化工具”或驱动工具，占用了单核的 99%，同时还充满了安全漏洞。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NoPicklez:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为在制造 PC 时购买华硕主板的人，在过去 18 年里，作为 Macbook 的拥有者，这对我来说并不感到震惊。&lt;p&gt;很长一段时间以来，我一直坚信 Macbook 是生产力最好的笔记本电脑，现在，当苹果从英特尔转向自己的 M 芯片时，情况更是如此。他们是你可以购买的 Neo 之前的入门级 Macbook，它将是你可以使用很多年的笔记本电脑。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pupppet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;微软将通过向 Windows 中疯狂添加更多垃圾来对此做出回应。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bob1029:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看来笔记本电脑市场将不得不停止故意表现不佳。我希望这会给戴尔、微软和华硕等供应商带来巨大的痛苦。&lt;p&gt;如果不认真改进产品的用户体验，我认为他们无法摆脱这种情况。 Windows 本身也可能与此有关。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pjmlp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所有这些 PC 无法竞争的评论都是基于美国价格，除此之外，对于 8 GB 笔记本电脑来说，价格贵得离谱。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;GeekyBear:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;PC Magazine 得出了同样的结论：&lt;p&gt;&gt;苹果完成了我认为不可能的事情。 MacBook Neo 准备以 599 美元的价格点燃廉价笔记本电脑世界，它比同等价位或更低价格的任何产品都做工更好、性能更强。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.pcmag.com&amp;#x2F;reviews&amp;#x2F;apple-macbook-neo" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.pcmag.com&amp;#x2F;reviews&amp;#x2F;apple-macbook-neo&lt;/a&gt;&lt;p&gt;与 Verge 类似：&lt;p&gt;&gt;即使是最便宜的 MacBook Neo 也足以成为很多人的首选苹果笔记本电脑。事实上，不仅仅是苹果笔记本电脑； Neo 的硬件同时让一整类经济实惠（甚至价格更高）的 Windows 笔记本电脑以及几乎所有 Chromebook 都感到尴尬。它运行在 iPhone 芯片上。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.theverge.com&amp;#x2F;tech&amp;#x2F;891741&amp;#x2F;apple-macbook-neo-a18-pro-review" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.theverge.com&amp;#x2F;tech&amp;#x2F;891741&amp;#x2F;apple-macbook-neo-a18-p...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rurban:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;多年来，我一直使用起售价为 700 欧元、配备 8GB 内存的 MacAir，编写和测试编译器。直到 macOS 和蝶式键盘灾难发生，我才重新开始使用配备 Fedora 的 450 欧元 ThinkPad Ryzen 笔记本电脑，并升级至 64GB RAM。&lt;p&gt;我的妻子正在使用 2500 欧元的精美新 Air，这要好得多。但我仍然会想起 MacAir 的美好时光，他们会尝试再次提起。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dagmx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我正在观看这段视频，这台规格机器的功能令人印象深刻。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;d-VOt9559Gk?si=tYlDstnaxtQWoJ88" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;d-VOt9559Gk?si=tYlDstnaxtQWoJ88&lt;/a&gt;&lt;p&gt;他在 Final Cut 和 Lightroom 中工作时一次打开 50 多个应用程序。显然，任何全职从事这些工作的人都会从更多资源中受益，但我认为这对于很大一部分人来说已经足够了，并且比 Windows 替代品更具吸引力。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jackhalford:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;鉴于苹果历来非常高的定价，推出如此实惠的产品肯定会震惊整个市场&lt;p&gt;不是吗？自 M1 以来，苹果一直在提供更便宜的笔记本电脑，这款笔记本电脑甚至更便宜。我以为个人电脑高管在方向盘上睡着了，但并没有那么糟糕。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://daringfireball.net/2026/03/the_macbook_neo</guid>
+      <pubDate>Wed, 11 Mar 2026 11:37:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47334293</comments>
+    </item>
+    <item>
+      <title>Show HN：我构建了一个工具，可以监视网页并将更改公开为 RSS</title>
+      <link>https://sitespy.app</link>
+      <description>&lt;p&gt;Site Spy 是一种网站监控工具，可以自动跟踪页面的更改。 Site Spy 可以免费使用吗？ Site Spy 是否可以与 AI 助手配合使用？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: I built a tool that watches webpages and exposes changes as RSS&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47337607"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://sitespy.app'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;digitalbase:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很酷的东西。您应该将其设为 OSS 并收取一次性费用。我会在自己的基础设施上运行它，但付钱给你一次（.com）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢 &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;dgtlmoon&amp;#x2F;changedetection.io" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;dgtlmoon&amp;#x2F;changedetection.io&lt;/a&gt; 。开源且可免费在本地运行或使用其 Saas 服务。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;enoint:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;快速反馈：&lt;p&gt;1. RSS 非常适合更新。鉴于您的签证用例的重要性，您是否考虑过推送通知？&lt;p&gt;2.您的竞争对手进行元素级跟踪。也许他们选择 XPath？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pwr1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣...已添加到书签。将来可能会派上用场&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;makepostai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这很有趣，将在我们的下一个项目中尝试一下！竖起大拇指&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://sitespy.app</guid>
+      <pubDate>Wed, 11 Mar 2026 16:21:06 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47337607</comments>
+    </item>
+    <item>
+      <title>搜索 Agentic IDE</title>
+      <link>https://twitter.com/karpathy/status/2031616709560610993</link>
+      <description>&lt;p&gt;我们检测到该浏览器中禁用了 JavaScript。请启用 JavaScript 或切换到支持的浏览器以继续使用 x。服务条款 隐私政策 Cookie 政策 版本说明 广告信息 © 2026 X Corp.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Searching for the Agentic IDE&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47337168"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://twitter.com/karpathy/status/2031616709560610993'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hmokiguess:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对我来说，这就像试图将我们已知的解决方案应用于我们尚未定义的问题。&lt;p&gt;问题更多地围绕操作&amp;#x2F;能见度 &amp;#x2F;代表团 &amp;#x2F;代理的编排，但该解决方案被错误地标记为“IDE”我觉得这是错误的类比，尽管正确的“中间”是正确的。朝着下一步的方向迈进。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oceanwaves:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直致力于将 Antigravity（代理管理器）的有用部分重新构想为一个与 LLM 优化规范紧密耦合的编排器：&lt;a href="https:&amp;#x2F;&amp;#x2F;thinkwright.ai&amp;#x2F;plexus" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;thinkwright.ai&amp;#x2F;plexus&lt;/a&gt;&lt;p&gt;早期，希望得到任何反馈&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pillsburycat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在过去的几个月里，作为一个个人项目，我一直在致力于这些方面的工作（多代理编排 IDE）。&lt;p&gt;还有很多项目从许多不同的角度来解决这个问题。&lt;p&gt;好奇人们希望在 Agentic IDE 中看到哪些功能？您想实时指导多个代理（例如类固醇上的振动编码）或调度自主代理来解决长时间运行的任务吗？还有别的事吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;radial_symmetry:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;VSCode 分支的作用太多了，Nimbalyst 是从头开始构建的，是一个合适的代理管理器。 &lt;a href="https:&amp;#x2F;&amp;#x2F;nimbalyst.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;nimbalyst.com&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;反重力正在到来&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;keithnz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Augmentcode 的意图试图成为这个 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.augmentcode.com&amp;#x2F;product&amp;#x2F;intent" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.augmentcode.com&amp;#x2F;product&amp;#x2F;intent&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hungryhobbit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不明白关于 X 的随机想法怎么会成为 Hacker News 的头版新闻。&lt;p&gt;如果某个科技首席执行官在 X 上发布了重大公告，那么它就具有新闻价值并且属于这里。  任何其他实际新闻也是公平的游戏......但所有其他 X 帖子都不属于这里！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;charlesabarnes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我确实有这样的感觉。  到目前为止，每个实现都没有减少处理多个代理所涉及的上下文负载。   Tmux&amp;#x2F;Cmux 很棒，但无论是谁弄清楚了这一点，都可能会变得更大。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gavmor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我可能应该再次尝试 cmux+worktrunk，但迄今为止，帝国代理的效果相当不错。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jadbox:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;VSCode + 任何 LLM 插件都为我解决了所有问题。保持简单。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://twitter.com/karpathy/status/2031616709560610993</guid>
+      <pubDate>Wed, 11 Mar 2026 15:48:11 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47337168</comments>
+    </item>
+    <item>
+      <title>维兹加入谷歌</title>
+      <link>https://www.wiz.io/blog/google-closes-deal-to-acquire-wiz</link>
+      <description>&lt;p&gt;有了 Wiz，他们就不必在速度和安全性之间做出选择。 0）影响了超过 75% 的云环境。 NVIDIAScape，一个威胁共享人工智能基础设施的容器逃逸漏洞。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Wiz joins Google&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47336476"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.wiz.io/blog/google-closes-deal-to-acquire-wiz'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 18 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;85392_school:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这不是一个新的观察结果 [0]，但这意味着 Google 现在将有两个 Wizes，因为 Wiz 也是其内部 Web 框架的名称 [1]。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=43399077"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=43399077&lt;/a&gt;&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=41092039"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=41092039&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bojangleslover:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这不是很久以前发生的事吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aerodog:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这次收购不就是以色列的一次洗钱活动吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vvpan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;除了：垄断不利于创新以及为什么我们不能拥有好东西之外，没有任何反应。您可能会听到有些人说“但是这些大公司在创新”。他们在二十年前大多完成了创新，现在他们刚刚扼杀了创新，而收购是他们的主要工具之一。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tptacek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一年前开始的收购完成的公告。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;StartupsWala:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，Wiz 的成功很大程度上建立在与云无关的基础上。如果 Google 保持这种状态，它将成为进入 AWS 和 Azure 工作负载的战略窗口。&lt;p&gt;如果他们不这样做，他们就有可能破坏最初使 Wiz 有价值的优势。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pbiggar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是时候记住 Wiz 了。 VC 被指控向 CISO 行贿以购买其投资组合的软件（Wiz 就是其中之一）。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.forbes.com&amp;#x2F;sites&amp;#x2F;iainmartin&amp;#x2F;2024&amp;#x2F;10&amp;#x2F;28&amp;#x2F;this-vc-built-a-cybersecurity-unicorn-machine-then-came-his-conflict-of-interest-mess&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.forbes.com&amp;#x2F;sites&amp;#x2F;iainmartin&amp;#x2F;2024&amp;#x2F;10&amp;#x2F;28&amp;#x2F;this-vc-b...&lt;/a&gt;&lt;p&gt;&gt;两名安全主管告诉《福布斯》，他们在听说拉南团队的薪酬“菜单”后拒绝了该团队的提议。 “我完全惊呆了。这违背了我的原则，”其中一位说道。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;love2read:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最近被 Meta 收购的 MoltBook（首先列出）受到了额外的关注。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pbiggar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;正如我当时提到的，Wiz 收购是历史上最大的以色列情报人员向大型科技公司的转移。&lt;p&gt;这是我的完整线索：&lt;a href="https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;paulbiggar&amp;#x2F;status&amp;#x2F;1902329587050148068" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;paulbiggar&amp;#x2F;状态&amp;#x2F;1902329587050148068&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kolanos:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这不是一年前发生的事吗？ [0] 或者这笔交易只花了一年时间？&lt;p&gt;[0]: &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=43398518"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=43398518&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;seanieb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;恭喜 Wiz 团队。维兹太棒了。但是，呃，加入谷歌将导致竞争减少以及随之而来的一切。对客户来说不太好。&lt;p&gt;遗憾的是，上市已经不值得了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;whobre:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有那么一瞬间，我以为是沃兹加入了谷歌……&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;redbell:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Wiz 加入 Waze &amp;amp; Waymo .. 这里的字母 &lt;i&gt;W&lt;/i&gt; 有点可疑:)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;XCSme:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与我的 &lt;a href="https:&amp;#x2F;&amp;#x2F;uxwizz.com" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;uxwizz.com&lt;/a&gt; 无关 xD&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;debarshri:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Google SecOps（编年史）在网络安全世界中变得非常流行。我认为最终应该有一个整合游戏。这也是与 AWS 和 Azure 客户建立联系的一种方式。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PunchTornado:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不明白谷歌在这里的玩法。它是否希望 Wiz 成为 GCP 客户的独特产品？或者他们会让它与云无关？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Alex3917:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不要与 Google 现有的名为 Wiz 的产品相混淆。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;napolux:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;恭喜！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.wiz.io/blog/google-closes-deal-to-acquire-wiz</guid>
+      <pubDate>Wed, 11 Mar 2026 14:58:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47336476</comments>
+    </item>
+    <item>
+      <title>解密失败后瑞士电子投票试点无法清点2048张选票</title>
+      <link>https://www.theregister.com/2026/03/11/swiss_evote_usb_snafu/</link>
+      <description>&lt;p&gt;巴塞尔城市州上周五下午宣布了其电子投票试点的问题，该试点向约 10,300 名居住在国外的当地人和 30 名残疾人开放。没有“选举”就不能拼写“电子”：在线民主的时代已经到来爱尔兰废除电子投票，转而使用“愚蠢的旧铅笔”电子投票和英国大选：选择一只蜥蜴，任何蜥蜴开放权利组织讲述电子投票的恐怖故事该国联邦总理府表示，其他三个州——图尔高州、格劳宾登州和圣加仑州——以及瑞士全国使用的电子投票邮政电子投票系统没有受到影响。 ® 获取我们的技术资源 分享 更多关于瑞士 更多类似这些 × 更多关于瑞士 更窄主题 ESA 更广泛主题 EMEA 欧洲 更多关于 Share 27 COMMENTS 更多关于瑞士 更多类似这些 × 更多关于瑞士 更窄主题 ESA 更广泛主题 EMEA 欧洲 TIP US OFF 向我们发送新闻。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Swiss e-voting pilot can't count 2,048 ballots after decryption failure&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47334982"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.theregister.com/2026/03/11/swiss_evote_usb_snafu/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jason_s:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;虽然我很高兴看到 OP 最后得到了一个很好的极小极大解决方案，但这篇文章似乎错过了澄清一个关键点：指定间隔内的误差波形至关重要，如果您没有看到典型的极小极大摆动，那么您就浪费了简单的改进机会。&lt;p&gt;泰勒级数一般来说是一个糟糕的选择，泰勒级数的 Pade 近似也同样糟糕。如果您要使用 Pade 近似，它们应该是原始函数。&lt;p&gt;我更喜欢切比雪夫近似：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.embeddedlinked.com&amp;#x2F;showarticle&amp;#x2F;152.php" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.embeddedlinked.com&amp;#x2F;showarticle&amp;#x2F;152.php&lt;/a&gt; 通常与更复杂的 Remez 算法足够接近。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;glitchc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;4% 的改进似乎并不值得付出努力。&lt;p&gt;一般而言，除法和平方根等指令在现代 CPU 的周期计数中大致等于三角函数。因此，正如结果所证明的那样，用另一种替代一种不会带来太大好处。它们通常都是使用 LUT 实现的，并且很难超越优化的 LUT 的性能，优化的 LUT 基本上是一个连接到硬件中某些专用存储单元的多路复用器。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stephc_int13:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最喜欢的数学近似实验工具是 lolremez。您可以轻松地要求您的导师为您做这件事。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LegionMammal978:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;总的来说，我发现极小极大近似是一种未被充分重视的工具，尤其是用于生成最佳多项式近似的相当简单的 Remez 算法 [0]。通过一些修改，您可以对其进行调整以优化某个区间内的绝对或相对误差，甚至得出有理函数近似值。 （尽管不幸的是，该算法的许多演示都使用过于简单的样本点选择形式，这些形式可能会在非平凡的输入曲线上崩溃，特别是当它们包含小振荡时。）&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Remez_algorithm" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Remez_algorithm&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AlotOfReading:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很确定它不会更快，但写起来很有趣：&lt;p&gt;&lt;pre&gt;&lt;code&gt; float asin(float x) {
-      浮点数 x2 = 1.0f-fabs(x);
-      u32 i = 比特广播(x2);
-      i = 0x5f3759df - (i&gt;&gt;1);
-      浮点数 inv = bitcast(i);
-      返回 copysign(pi&amp;#x2F;2-pi&amp;#x2F;2*(x2*inv),x);
-    }
-&lt;/code&gt;&lt;/pre&gt;
-由邪恶的浮点黑客提供。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;scottlamb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;SIMD 不是更快的方法吗？ 1.05 倍到 1.90 倍的加速效果非常好。 16 倍加速更好！&lt;p&gt;它们可能是正交改进，但如果我要确定优先级，我会首先选择 SIMD。&lt;p&gt;我在 Intel 的内在函数指南上搜索了 asin。他们有一个 AVX-512 固有的“_mm512_asin_ps”，但它说的是“序列”。而不是单一指令。大概他们使用的实际序列在某个头文件中的某个地方，但我不知道该去哪里查找，所以我不知道它与 SIMDified 版本的 `fast_asin_cg` 相比如何。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.intel.com&amp;#x2F;content&amp;#x2F;www&amp;#x2F;us&amp;#x2F;en&amp;#x2F;docs&amp;#x2F;intrinsics-guide&amp;#x2F;index.html#text=asin&amp;amp;ig_expand=359" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.intel.com&amp;#x2F;content&amp;#x2F;www&amp;#x2F;us&amp;#x2F;en&amp;#x2F;docs&amp;#x2F;intrinsics-guid...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drsopp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;进行了一些快速计算，在这种精度下，表查找似乎能够适合 L1 缓存，具体取决于 CPU 型号。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adampunk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们喜欢将更快的函数留在库代码中。 Q3A 的快速平方根反比的基础自 1986 年以来一直存在于 fdlibm 中，自 1993 年以来一直存在于网络中：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.netlib.org&amp;#x2F;fdlibm&amp;#x2F;e_sqrt.c" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.netlib.org&amp;#x2F;fdlibm&amp;#x2F;e_sqrt.c&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;patchnull:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Intel (1.5x) 和 M4 (1.02x) 加速之间的巨大差距是这里最有趣的结果。 Apple 几乎肯定已经在其 libm 中使用了类似的多项式近似，并针对 M 系列管道进行了调整。 x86 上的 glibc 在精度方面往往更加保守，留下了更多的空间。 Cg 版本来自 Abramowitz 和 Stegun 公式 4.4.45，该公式几十年来一直是着色器数学的主要内容。有趣的是，知识是如何被孤立的，游戏开发者和 GPU 人员永远都知道这类近似，但它很少涉及一般系统编程。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;orangepanda:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;没有人喜欢扔掉他们已经完成的工作&lt;p&gt;我喜欢扔掉我已经完成的工作。释放我的思维能力，让我可以扔掉其他工作。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;erichocean:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;理想的 HN 内容，谢谢！&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://16bpp.net/blog/post/faster-asin-was-hiding-in-plain-sight/</guid>
-      <pubDate>Wed, 11 Mar 2026 14:35:53 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47336111</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pilingual:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;blog.citp.princeton.edu&amp;#x2F;2026&amp;#x2F;01&amp;#x2F;16&amp;#x2F;互联网投票不安全且不应在公共选举中使用&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;blog.citp.princeton.edu&amp;#x2F;2026&amp;#x2F;01&amp;#x2F;16&amp;#x2F;internet-voting-i...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;clcaev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不要忘记&lt;a href="https:&amp;#x2F;&amp;#x2F;verifiedvoting.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;verifiedvoting.org&amp;#x2F;&lt;/a&gt; 及其数十年来对扫描纸质选票的倡导。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MengerSponge:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;技术爱好者：我家里的所有东西都连接到物联网！我通过智能手机控制这一切！我的智能屋支持蓝牙，我可以通过 Alexa 给它发出语音命令！我热爱未来！&lt;p&gt;&gt;程序员&amp;#x2F;工程师：我拥有的最新技术是 2004 年的打印机，我备有一把装满子弹的枪，随时准备在它发出意外噪音时射击它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fabiofzero:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;巴西自 1996 年起就开始实行数字投票，而且运行得非常完美。我相信瑞士有一天会解决这个问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ericmay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;像这样的故事可能会让一些人远离电子投票，但我认为这没什么大不了的。当我们完成我所在地区的投票操作时，我们会将选票装载到某人的私人车辆上，然后他们将选票安全地运送到他们需要去的地方。那辆车可能会被炸毁，那些选票可能会消失，尽管我认为我们仍然可以获得结果记录。&lt;p&gt;对于美国来说，我赞成要求公民身份证明的现场投票，并将“投票日”定为“投票日”。带薪国定假日。与其说是出于技术或效率原因，不如说是出于社会原因。我认为这应该是强制性的，但我认为我们不应该强迫人们做任何我们不必强迫他们做的事情，而且我不确定我们是否希望无私的人们投票。&lt;p&gt;实行民主，要求人们投入最少的思考和努力，会大有帮助。这应该是一个庆祝的日子，为所有人提供饼干、苹果派和免费啤酒。不是一些冷酷的、人工智能缠身的人，呆在你的房子里，永远不要见到你的邻居，点击几个按钮来接受民主流程的条款。&lt;p&gt;我知道有很多围绕“效率”的讨论点。或“成本”或“可访问性”或者拥有身份证有多困难（当你看看其他国家如何进行选举时，这很奇怪），当然有一些事情可以讨论，但总的来说，我认为美国人持续的数字化和疏远是一个更糟糕的问题，可以通过更多的面对面活动和社会参与来解决。我们失去了太多与现实的接触点。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eunos:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果你明白我的意思的话，这是一个非常精确的数字&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ritzaco:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不在乎你使用了多少数学和加密技术，你无法摆脱这样一个事实：事情可以是匿名的（没有人知道你是如何投票的）或可验证的（人们可以证明你只投票了一次），但不能两者兼而有之。&lt;p&gt;-瑞士通常通过了解每个人住在哪里并向他们邮寄一张纸“你拥有的东西”来解决这个问题&lt;p&gt;-南非通过在上面涂上墨水来解决这个问题你的指甲&lt;p&gt;我读过很多关于瑞士和美国电子投票系统的文章，但我只是不明白他们是如何运作的。在某些时候，您必须授予某人访问数据库的权限，并且他们可以更改该数据库。&lt;p&gt;在我们都拥有政府颁发的公钥或其他东西之前，没有技术解决方案吗？ （真的很好奇我是否错了）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jackweirdy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是选举的一个很好的特性，您可以在决定下一步之前衡量需要更多干预的选票与胜利的差距&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zoobab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;普通公民无法理解和审核电子投票，甚至书呆子也无法理解和审核。这对垃圾来说只是好事。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;diego_moita:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与此同时，巴西实行全面电子投票近 30 年，收集了超过 1 亿张选票（这是瑞士总人口的 11 倍）。&lt;p&gt;你会到达那里，瑞士，这是可以做到的。它更安全、更快捷。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;palata:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;标题具有误导性。这是一个电子投票试点。这很重要。 “瑞士正在 26 个州中的 4 个州进行小规模电子投票试点”，其中 3 个州没有受到影响。&lt;p&gt;摘自维基百科 [1]：&lt;p&gt;&gt;试点实验、试点研究、试点测试或试点项目是一项小规模的初步研究，旨在评估可行性、持续时间、成本、不良事件，并在实施全面研究项目之前改进研究设计。&lt;p&gt;[1]: &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Pilot_experiment" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Pilot_experiment&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.theregister.com/2026/03/11/swiss_evote_usb_snafu/</guid>
+      <pubDate>Wed, 11 Mar 2026 12:57:41 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47334982</comments>
     </item>
     <item>
-      <title>促成大规模科学造假的实体规模庞大、有弹性且不断增长</title>
-      <link>https://doi.org/10.1073/pnas.2420092122</link>
-      <guid isPermaLink="true">https://doi.org/10.1073/pnas.2420092122</guid>
-      <pubDate>Wed, 11 Mar 2026 13:32:12 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47335349</comments>
+      <title>启动 HN：Sentorial (YC W26) – 在用户之前发现 AI 代理故障</title>
+      <link>https://www.sentrial.com/</link>
+      <guid isPermaLink="true">https://www.sentrial.com/</guid>
+      <pubDate>Wed, 11 Mar 2026 16:24:17 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47337659</comments>
     </item>
     <item>
-      <title>举报人：DOGE 成员将社会保障数据带到新工作</title>
-      <link>https://www.washingtonpost.com/politics/2026/03/10/social-security-data-breach-doge-2/</link>
-      <guid isPermaLink="true">https://www.washingtonpost.com/politics/2026/03/10/social-security-data-breach-doge-2/</guid>
-      <pubDate>Wed, 11 Mar 2026 13:52:01 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47335572</comments>
-    </item>
-    <item>
-      <title>人工智能代理攻击麦肯锡</title>
-      <link>https://codewall.ai/blog/how-we-hacked-mckinseys-ai-platform</link>
-      <description>&lt;p&gt;2 小时内，代理就拥有了对整个生产数据库的完全读写访问权限。 58,000 个 Word 文档。通过同一注入具有写入权限的攻击者可能会重写这些提示。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; AI Agent Hacks McKinsey&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47333627"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://codewall.ai/blog/how-we-hacked-mckinseys-ai-platform'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Show HN：我使用自定义 vBNG 从头开始​​构建了 ISP 基础设施模拟器</title>
+      <link>https://aether.saphal.me/dashboard/default</link>
+      <description>&lt;p&gt;每页行数第 1 页（共 0 页）转至第一页转至上一页转至下一页转至最后一页模拟实验室环境客户服务加载服务。每页行数第 1 页（共 0 页）转至第一页转至上一页转至下一页转至最后一页接入节点 0 预配置的接入节点路由器及其状态新路由器查看状态路由器名称 BNG ID 网关 IP 活动订阅者已创建 上次查看 上次 Ping 没有结果。每页行数第 1 页（共 0 页）转至第一页转至上一页转至下一页转至最后一页。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: I built an ISP infrastructure emulator from scratch with a custom vBNG&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47335431"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://aether.saphal.me/dashboard/default'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 19 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cs702:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;...&lt;i&gt;两&lt;/i&gt;小时内：&lt;p&gt;&lt;i&gt;&gt;所以我们决定将我们的自主进攻代理指向它。没有凭据。没有内幕知识。并且没有人参与。一个域名，一个梦想。&lt;p&gt;&gt;在 2 小时内，代理就获得了对整个生产数据库的完全读写访问权限。&lt;/i&gt;&lt;p&gt;亲眼目睹了一些企业系统的&lt;i&gt;不安全&lt;/i&gt;，我并不感到惊讶。&lt;p&gt;在企业安全方面，高层决策者首先关注的是企业和个人的责任风险，也称为 CYA。&lt;p&gt;安全的具体细节留给了企业链下游的员工和顾问，他们应该知道他们在做什么。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;VadimPR:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道这些进攻性人工智能代理是如何构建的？我猜想是现成的开放式法学硕士，经过微调以消除安全培训，并加入代理循环。&lt;p&gt;有人确切知道吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;palmotea:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;根据我们从爱泼斯坦电子邮件等内容中了解到的一切，如果有人泄露了这些数据那就太好了：&lt;p&gt;&gt; 4650 万条聊天消息。来自使用此工具讨论战略、客户参与、财务、并购活动和内部研究的员工。每个对话都以明文形式存储，无需身份验证即可访问。&lt;p&gt;&gt; 728,000 个文件。 192,000 个 PDF。 93,000 个 Excel 电子表格。 93,000 个 PowerPoint 幻灯片。 58,000 个 Word 文档。仅文件名就很敏感，并且对于任何知道在哪里查找的人来说都是一个直接下载 URL。&lt;p&gt;我确信可以做很多信息丰富的新闻报道来了解企业权力在幕后的实际运作方式。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jacquesm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;并且：人工智能代理撰写博客文章。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;frankfrank13:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一些内幕消息：至少一年前，Lilli 还只是内部人员。 VPN 访问、SSO 以及所有附加功能都是必需的。不确定什么时候发生了变化。&lt;p&gt;麦肯锡&lt;i&gt;需要&lt;/i&gt;雇用一家外部笔测试公司来向一小群同事推出。&lt;p&gt;我可以原谅 Lilli 开发人员的这种错误。对于“代理”来说，很多事情都必须失败。安全公司甚至无法找到公共端点，更不用说开始利用它了。&lt;p&gt;话虽如此，这里的错误是残酷的。看起来授权接近 0。根据非常过时的知识，我猜测是一位高级合伙人幕后操纵，让 Lilli 公开。到那时，Lilli 最初团队的大部分成员都已经“退出”了。 （去客户项目），因为麦肯锡对内部项目的工作进行了严厉的惩罚。&lt;p&gt;所以 Lilli 的员工很可能是那些在其他地方找不到员工、不知道代码、也不关心的人。内部工作，无论好坏，基本上都是半天。&lt;p&gt;这是麦肯锡技术文化的失败。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mnmnmn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;麦肯锡可以吃屎&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ecshafer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果人工智能被毒害而改变了建议，那么麦肯锡的建议实际上可能是一种净收益。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;victor106:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这读起来就像是法学硕士写的&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sigmar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不知道代码墙是谁。麦肯锡是否确认他们确实修复了所提到的问题？我没有看到任何对“codewall ai”的引用在昨天之前的任何新闻文章中，并且网站上没有任何名字。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.google.com&amp;#x2F;search?q=codewall+ai" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.google.com&amp;#x2F;search?q=codewall+ai&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bee_rider:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不喜欢这里的标题。也许这是一个“我”的问题，但当我看到“AI代理做了X”时，我的脑海中突然浮现出它可能是那些所有权模糊的蜕变代理之一的想法。&lt;p&gt;在这种情况下，一群渗透测试人员使用AI代理选择麦肯锡，然后使用AI代理进行渗透测试。&lt;p&gt;虽然通常将动作归因于无生命的物体（汽车撞到行人），但在我看来，现在我们应该更加明确，现在不幸的是，有些人将代理归因于这些代理系统。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paxys:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;以 1945 年该公司雇用的第一位职业女性命名&lt;p&gt;不遗余力地为人工智能助手找到一个女性的名字并吹嘘它并不像创造者可能想象的那样赋予权力。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;joenot443:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;这些未受保护的端点之一将用户搜索查询写入数据库。这些值被安全地参数化，但 JSON 键（字段名称）被直接连接到 SQL 中。&lt;p&gt;我期待提示注入，但在这种情况下，它只是很好的 ol&amp;#x27;时尚的 SQL 注入之所以成为可能，只是因为编写麦肯锡人工智能平台的法学硕士的天真。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;captain_coffee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;音乐传到我耳边！不可能有更好的公司了！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cmiles8:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我只记得很久以前，麦肯锡团队就曾大力向我们推销沃森。 Was a total train wreck.&lt;p&gt;They’ve long been all hype no substance on AI and looks like not much has changed.&lt;p&gt;They might be good at other things but would run for the hills if McKinsey folks want to talk AI.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fhd2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;这是麦肯锡公司公司——一家拥有世界一流技术团队的公司[...]&lt;p&gt;根据我的经验，这并不完全是街上的说法。麦肯锡在软件方面比我想象的更受尊重吗？否则我很好奇为什么 TFA 不礼貌地忽略这一点。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lenerdenator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从链接中不太清楚：他们是在为麦肯锡做红队工作，还是这只是“我们找到了一家我们认为不会让我们被捕的公司，并对他们的东西运行了人工智能漏洞检测器”？已经有人为他们做这类工作了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sd9:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很酷，但不可能用所有的法学硕士来阅读&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sgt101:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么会有公共端点？&lt;p&gt;当然，这一切都应该位于防火墙后面并且只能从与 MAC 地址关联的公司设备访问？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gbourne1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;-“代理绘制了攻击面并发现公开暴露的 API 文档 — 超过 200 个端点，且有完整记录。最需要的身份验证。二十二没有。”&lt;p&gt;好吧，就这样。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://codewall.ai/blog/how-we-hacked-mckinseys-ai-platform</guid>
-      <pubDate>Wed, 11 Mar 2026 09:59:03 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47333627</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;john_strinlai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这看起来很有趣！我打算下班后仔细看看，但我想现在应该提一下：可能值得一看 NANOG（北美网络运营商组织）档案（&lt;a href="https:&amp;#x2F;&amp;#x2F;nanog.org&amp;#x2F;nanog-mailing-list&amp;#x2F;list-archives&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;nanog.org&amp;#x2F;nanog-mailing-list&amp;#x2F;list-archives&amp;#x2F;&lt;/a&gt;) 获取有关您的问题的信息（如果您还没有），以及&amp;#x2F;或将您的问题发布到 NANOG 邮件列表。有很多非常友好的人，他们有运营各种规模 ISP 的经验。&lt;p&gt;（或最适合您所在地区的运营商团体。我只订阅 NANOG，所以无法谈论其他团体的活动&amp;#x2F;友好程度。您可以在这里找到一个非常全面的列表：&lt;a href="https:&amp;#x2F;&amp;#x2F;nanog.org&amp;#x2F;资源&amp;#x2F;组织-我们的社区&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;nanog.org&amp;#x2F;资源&amp;#x2F;组织-我们的社区&amp;#x2F;&lt;/a&gt;)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nonameiguess:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我感觉你被弄脏了。 12 年前，当我在读研究生时，我们的网络课程使用 mininet 来模拟单个主机上的网络。它主要用于开发 SDN 系统，但可能会满足您的需求并提供更多支持。&lt;p&gt;另一方面，即使构建一个很小的子集，但从头开始自己动手也是一种很好的学习方式。几年前，我为 HyperV 制作了一个非常糟糕的 VM 映像构建器，因为 Packer 当时没有适合它的构建器，这是一次非常有趣的体验。终于摸索到了 Windows 对象模型，尽管我仍然不使用它，但我至少不再嘲笑 PowerShell。&lt;p&gt;我也对你的问题的答案感兴趣，但作为 ISP 的客户。我不为任何人工作。我是我房子的第一任主人，当他们把我接入他们的网络时，无论是谁，都会把我的邻居搞得一团糟，把他们放在错误的电路上，并将噪音传播到邻近的社区。三年来，投诉电话会让我们的网络在没有任何警告的情况下被第三方承包商切断，然后我们必须打电话重新连接。我不知道他们&lt;i&gt;应该&lt;/i&gt;如何做到这一点，但知道如果他们做错了，可能会造成相当大的混乱。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yjftsjthsd-h:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;原谅我的无知，这不是我的强项。我的理解是否正确，这主要是实际物理网络的模拟层，但您主要（？）在顶部运行现成的软件？那么这运行的软件与您在真实 ISP 网络中使用的软件相同，而无需实际配置所有硬件？或者也是实际网络管理定制的一部分？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;saphalpdyl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最近发现 Apache Netbox 可以作为网络拓扑的权威事实来源，并取代大部分 aether.config.yaml。在 Splynx 中，我没有看到任何外部解决方案的提及。看起来他们有自己的堆栈。&lt;p&gt;更好且用户体验友好的实现是 Netbox + aether.config.yaml -&gt;配置管道-&gt; topology.yaml + &lt;其他生成的文件&gt;。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://aether.saphal.me/dashboard/default</guid>
+      <pubDate>Wed, 11 Mar 2026 13:38:17 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47335431</comments>
     </item>
     <item>
-      <title>Temporal：用 JavaScript 修复时间的 9 年之旅</title>
-      <link>https://bloomberg.github.io/js-blog/post/temporal/</link>
-      <description>&lt;p&gt;JavaScript 如何改变。这正在改变日期 d。日期不会将无效的日历结果限制回有效日期。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Temporal: The 9-Year Journey to Fix Time in JavaScript&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47336989"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://bloomberg.github.io/js-blog/post/temporal/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bnb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;迫不及待地希望它登陆服务器端运行时，这确实是阻止我大规模采用它的最后一件事。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jon_kuperman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;多么美妙的旅程啊！&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://bloomberg.github.io/js-blog/post/temporal/</guid>
-      <pubDate>Wed, 11 Mar 2026 15:35:50 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47336989</comments>
-    </item>
-    <item>
-      <title>Show HN：人工智能代理的开源浏览器</title>
-      <link>https://github.com/theredsix/agent-browser-protocol</link>
-      <description>&lt;p&gt;代理浏览器协议 Web 浏览是连续且异步的。 Claude 代码 claude mcp add browser -- npx -y agent-browser-protocol --mcp 然后问 Claude：“转到新闻。JavaScript 和虚拟时间在步骤之间冻结。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Open-source browser for AI agents&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47336171"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/theredsix/agent-browser-protocol'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;theredsix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在这里，很高兴回答任何问题！&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/theredsix/agent-browser-protocol</guid>
-      <pubDate>Wed, 11 Mar 2026 14:39:30 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47336171</comments>
-    </item>
-    <item>
-      <title>问 HN：克劳德又低落了吗？</title>
-      <link>https://news.ycombinator.com/item?id=47336163</link>
-      <description>&lt;p&gt;com/status/claude-ai//edit：现在有一个官方事件：https://status。 com/status/claude-ai//edit：现在有一个官方事件：https://status。 com/incidents/jm3b4jjy2jrt /edit：现在有一个官方事件：https://status。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ask HN: Is Claude Down Again?&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47336163"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=47336163'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 22 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zurfer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;事件&amp;#x2F;jm3b4jjy2jrt" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;事件&amp;#x2F;jm3b4jjy2jrt&lt;/a&gt;
-&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47336889"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47336889&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aeblyve:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我昨天发现它慢得离谱。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bartread:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不知道 down，但我在 Pro 计划上使用 VS Code 扩展（我正在考虑升级），今天下午对我来说，它比冬天上山的糖蜜还要慢。我（a）感觉不舒服，（b）即将截止日期，所以这开始破坏我的平静。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;prmph:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们会因此延长我的订阅时间吗？它今天结束，但我大约一个小时前被锁了，我不确定这是否真的是由于这次中断造成的。&lt;p&gt;所有的氛围编码显然都运行得不太好。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anonfunction:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我无法登录我的订阅&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;epolanski:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有点过分，但我一直在 Codex 上使用 OpenAI 的 GPT 5.4，到目前为止发现它比 Claude 与 Opus 4.6 的最大思考更有说服力。&lt;p&gt;可能只是我的用例（我更感兴趣的是帮助设计和架构而不是 vivicoding），但请记住，OpenAI 的 20 美元价格比Anthropic 的一个，我认为你甚至可以免费使用最新型号的 Codex，所以试一试，你可能会发现它比你预期的更好，并且是 Claude 的坚实后盾。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaway89201:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我使用 Big-AGI [1] 作为自托管开源 LLM 工作区，并且很明显，当为 Anthropic 添加 API 密钥时，它会在阅读“遇到问题？”之间显示一条注释。检查人择状态”它不适用于任何其他模型提供商。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;enricoros&amp;#x2F;big-AGI" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;enricoros&amp;#x2F;big-AGI&lt;/a&gt;（否隶属关系）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ridiculous_leke:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人们可以放弃一个可以在 M4 上运行的良好 LocalLlama 设置吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;behnamoh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，我得到：&lt;p&gt;&lt;pre&gt;&lt;code&gt; OAuth 令牌已过期。请获取新令牌或刷新您的
-     现有的代币。
-&lt;/code&gt;&lt;/pre&gt;
-而且他们的“登录页面不起作用”。&lt;p&gt;&lt;i&gt;clauddown&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;astatine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;同样的问题。收到“内部服务器错误”信息&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;world2vec:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;奇怪的是，这……我觉得一切都很好。使用聊天和代码变体都没有问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;UncleOxidant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;似乎是。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;devadjacent:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它下来了。我讨厌这个&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xeornet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;身份验证失败，会话被踢出。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;messh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这对我来说很糟糕&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;izolate:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有人记得如何手动编码吗？我当然不:-)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kush0505:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;经历了同样的事情……几分钟前他们在克劳德代码上把我注销了。当我登录时，它让我等待超过 15000 毫秒的身份验证（这超出了他们的截止时间），因此身份验证失败！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lnenad:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在过去一年左右的时间里，平台的稳定性下降了，这真是令人惊讶。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;avra:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我也想知道同样的事情。他们刚刚更新了状态页面，但有一段时间显示绿色，我无法登录。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eduardogarza:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的身份验证失败&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rethab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这里同样的问题。您必须手动复制和粘贴代码的问答网站的名称是什么？ ;-)&lt;p&gt;官方状态仍为绿色：&lt;a href="https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;&lt;/a&gt;&lt;p&gt;但是 down detector 很清楚：&lt;a href="https:&amp;#x2F;&amp;#x2F;down​​ detector.com&amp;#x2F;status&amp;#x2F;claude-ai&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;downDetector.com&amp;#x2F;status&amp;#x2F;claude-ai&amp;#x2F;&lt;/a&gt;&lt;p&gt;&amp;#x2F;编辑：现在有一个官方事件：&lt;a href="https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;事件&amp;#x2F;jm3b4jjy2jrt" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;事件&amp;#x2F;jm3b4jjy2jrt&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;benzible:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;没有。我也是。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.ycombinator.com/item?id=47336163</guid>
-      <pubDate>Wed, 11 Mar 2026 14:39:21 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47336163</comments>
-    </item>
-    <item>
-      <title>让自己跌倒更多</title>
-      <link>https://ntietz.com/blog/let-yourself-fall-down-more/</link>
-      <description>&lt;p&gt;当他们开始走路时，这种情况仍在继续。我们跌倒是因为我们害怕跌倒而克制自己。当我不再担心这个并让自己写出糟糕的诗时。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Let yourself fall down more&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47336569"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://ntietz.com/blog/let-yourself-fall-down-more/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;comrade1234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;自从几年前摔倒后，我变得更加谨慎，并意识到我现在并不是那么刀枪不入。我曾经滑冰——我是一名非常优秀的滑冰运动员，大约在我学会走路的同时，我就穿着溜冰鞋长大，并在整个青年时期在巡回曲棍球队中打球。有人跌倒在冰上，我弯下腰去扶他们，这时我的冰鞋从我身下滑了出来。我向后摔倒，后脑勺在冰上摔碎了。我发誓我感觉自己的大脑在晃动。幸运的是没有脑震荡或其他伤害，但从那以后我承担的风险就少了很多，而且我不打算改变这一点。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vjvjvjvjghv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“如果你抓住很多机会，最终累积起来，你就会获得一些重大胜利。只要安全地进行，这样它们就不会造成很多重大损失。”&lt;p&gt;“只要”安全地进行。如果安全的话，你就不会真正冒险。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eweise:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的祖父摔倒了，摔断了腿，然后在医院去世了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;erictd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;跌倒是一种像其他技能一样的技能——跌倒的次数越多，你就能掌握得越好。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pmg102:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;但问题是？跌倒并不一定很危险&lt;p&gt;每次你用问号代替逗号时？一只小猫死了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;josefritzishere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你会滑冰、唱歌、编码和吹萨克斯吗？这真是太糟糕了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ray_v:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;50 岁以上跌倒的风险比年轻时跌倒的风险要大得多。&lt;p&gt;这似乎是一篇关于风险承受能力的博客文章 - 当然，风险承受能力会根据许多因素而发生巨大变化。如果我在中年时跌倒，我更有可能对自己造成永久性的、不可挽回的伤害——这可能不值得回报。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xX_Sn1p3rg0d_Xx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;强烈推荐罗德尼·马伦 (Rodney Mullen) 的公开演讲，演讲内容涉及滑板运动的更大价值以及跌倒的重要性（即，它教你如何站起来）。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;player.vimeo.com&amp;#x2F;video&amp;#x2F;77731599?title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;color=3d96d2" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;player.vimeo.com&amp;#x2F;video&amp;#x2F;77731599?title=0&amp;amp;byline=0&amp;amp;por...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://ntietz.com/blog/let-yourself-fall-down-more/</guid>
-      <pubDate>Wed, 11 Mar 2026 15:04:25 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47336569</comments>
-    </item>
-    <item>
-      <title>为什么全球精英放弃拼写和语法</title>
-      <link>https://www.wsj.com/lifestyle/jeffrey-epstein-files-bad-grammar-spelling-trump-ellison-dorsey-gates-thiel-cbfe9fb1</link>
-      <guid isPermaLink="true">https://www.wsj.com/lifestyle/jeffrey-epstein-files-bad-grammar-spelling-trump-ellison-dorsey-gates-thiel-cbfe9fb1</guid>
-      <pubDate>Wed, 11 Mar 2026 15:22:10 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47336806</comments>
-    </item>
-    <item>
-      <title>Hurricane Electric (HE.NET) IPv6 隧道代理页面因域名过期而离线</title>
-      <link>https://tunnelbroker.net</link>
-      <guid isPermaLink="true">https://tunnelbroker.net</guid>
-      <pubDate>Wed, 11 Mar 2026 13:06:44 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47335072</comments>
-    </item>
-    <item>
-      <title>现代财富是饱腹者玩的室内游戏</title>
-      <link>https://www.chrbutler.com/modern-wealth-parlour-game</link>
-      <description>&lt;p&gt;这些模式不仅仅是文化侵蚀——如果它们有那么糟糕就好了。市场活动突然变成了天气。我们考虑的是我们能买什么，而不是我们是否需要它。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Modern wealth is a parlour game played by the well fed&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47336953"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.chrbutler.com/modern-wealth-parlour-game'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gruez:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所以让我直截了当地说：&lt;p&gt;市场下跌：“哎呀......这只是进一步加剧财富不平等的卑鄙策略，因为富人可以便宜地购买东西！”&lt;p&gt;市场上涨：“哎呀......这只是进一步加剧财富不平等的卑鄙策略，因为股票绝大多数由富人持有！”&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tencentshill:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;说得好。能够把我赚到的所有钱都押在一些愚蠢的事情上，而当它失败时，实际上什么也没有发生。财富需要与责任和规模挂钩。即使有10亿美元，也应该是一个巨大的负债。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.chrbutler.com/modern-wealth-parlour-game</guid>
-      <pubDate>Wed, 11 Mar 2026 15:33:41 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47336953</comments>
+      <title>Show HN：Vanilla JavaScript 炼油厂模拟器，旨在向我的孩子们解释工作</title>
+      <link>https://fuelingcuriosity.com/game.html</link>
+      <guid isPermaLink="true">https://fuelingcuriosity.com/game.html</guid>
+      <pubDate>Wed, 11 Mar 2026 16:56:51 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47338091</comments>
     </item>
   </channel>
 </rss>
