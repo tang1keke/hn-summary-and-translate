@@ -6,29 +6,211 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 11 Mar 2026 13:09:22 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 16:04:26 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>Microsoft BitNet: ローカル CPU 用の 100B Param 1 ビット モデル</title>
-      <link>https://github.com/microsoft/BitNet</link>
-      <description>&lt;p&gt;デモ ビットネットのデモです。 mp4 最新情報: 2026 年 1 月 15 日 BitNet CPU 推論の最適化 2025 年 5 月 20 日 BitNet 公式 GPU 推論カーネル 2025 年 4 月 14 日 ハグ顔の BitNet 公式 2B パラメーター モデル 2025 年 2 月 18 日 Bitnet。 58 CPU 上の推論、2024 年 10 月 17 日ビットネット。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Microsoft BitNet: 100B Param 1-Bit model for local CPUs&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47334694"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/microsoft/BitNet'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>レゴの 0.002 mm 仕様と製造におけるその意味 (2025)</title>
+      <link>https://www.thewave.engineer/articles.html/productivity/legos-0002mm-specification-and-its-implications-for-manufacturing-r120/</link>
+      <guid isPermaLink="true">https://www.thewave.engineer/articles.html/productivity/legos-0002mm-specification-and-its-implications-for-manufacturing-r120/</guid>
+      <pubDate>Wed, 11 Mar 2026 13:22:39 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47335237</comments>
+    </item>
+    <item>
+      <title>より高速な Asin() が目に見えないところに隠れていた</title>
+      <link>https://16bpp.net/blog/post/faster-asin-was-hiding-in-plain-sight/</link>
+      <description>&lt;p&gt;" 今回はパデ近似でした。C++ は次のとおりです: double _asin_estimate_private(const double x) { // これはテイラー級数近似を使用します。 8)) { return std::asin(x); } // テイラー級数近似 constexpr double a = 0。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Faster Asin() Was Hiding in Plain Sight&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47336111"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://16bpp.net/blog/post/faster-asin-was-hiding-in-plain-sight/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nickcw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; bitnet.cpp は、1 ビット LLM (BitNet b1.58 など) の公式推論フレームワークです。これは、CPU と GPU での 1.58 ビット モデルの高速かつロスレス推論をサポートする、最適化されたカーネル スイートを提供します (NPU サポートは次に提供される予定です)。&lt;p&gt;1 ビットか 1 トリットか?私は混乱しています！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LuxBennu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;タイトルは誤解を招きます。トレーニングされた 100B モデルはなく、100B モデルを処理できると主張する推論フレームワークがあるだけです。しかし、エンジニアリングには注目する価値があります。
-私は量子化された 70B モデル (M2 Max 96GB、llama.cpp + LiteLLM) をローカルで実行していますが、メモリ帯域幅が常にボトルネックになっています。 1.58 ビットのアプローチは、3 値の重みが matmul を加算に変えるため興味深いものです。これは、汎用 CPU では根本的に異なるコンピューティング プロファイルです。 100B クラス モデルの単一 CPU 上で 5 ～ 7 個のトークンが再現可能であれば、それはオンデバイス推論にとって真のマイルストーンとなります。
-フレームワークが準備できました。次に、モデルを実際にトレーニングする人が必要です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;radarsat1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;1 ビットのパラメータを 4 ビットまたは 8 ビットのパラメータと比較できるかどうかに興味があります。 100Bというと30Bモデルくらいでしょうか？ evalだけが言えると思います。それでも、30B モデルを CPU で高速に実行できるのは素晴らしいことです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;syntaxing:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;誤解を招くタイトルですが、これはかなり刺激的です。これが llama cpp に基づいているのは興味深いですね。 2023年に論文を発表して以来、勢いが見られるのは嬉しいことだ&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;152334H:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;しかし、トレーニングされた 100b param モデルはありませんか? 「100B BitNet を実行できる」これは推論の実装に関するものであり、そのようなモデルの存在に関するものではありません&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;QuadmasterXLII:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;見出しには 1,000 億のパラメータがありますが、公式モデルには 100 億を超えるパラメータはありません。好奇心旺盛。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/microsoft/BitNet</guid>
-      <pubDate>Wed, 11 Mar 2026 12:27:15 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47334694</comments>
+&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jason_s:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;OP が最後に適切なミニマックス解を得たことを嬉しく思いますが、この記事では重要な点の 1 つを明確にしていなかったようです。指定された間隔にわたるエラー波形は重要であり、特徴的なミニマックスのような揺れが見られない場合は、改善の容易な機会を無駄にしていることになります。&lt;p&gt;一般にテイラー級数は不適切な選択であり、テイラー級数のパデ近似も同様に劣っています。パデ近似を使用する場合は、元の関数のものである必要があります。&lt;p&gt;私はチェビシェフ近似を好みます: &lt;a href="https:&amp;#x2F;&amp;#x2F;www.embeddedpopular.com&amp;#x2F;showarticle&amp;#x2F;152.php" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.embeddedpopular.com&amp;#x2F;showarticle&amp;#x2F;152.php&lt;/a&gt; は、多くの場合、より複雑な Remez アルゴリズムに十分近いものです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;glitchc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;4% の改善は、努力の価値があるとは思えません。&lt;p&gt;一般的に、除算や平方根などの命令は、最新の CPU のサイクル数では三角関数とほぼ同じです。したがって、結果から明らかなように、一方を他方に置き換えても大きなメリットは得られません。これらは通常、すべて LUT を使用して実装され、最適化された LUT のパフォーマンスを上回るのは困難です。最適化された LUT は、基本的にハードウェア内のいくつかの専用メモリ セルに接続されたマルチプレクサです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stephc_int13:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;数学的近似を実験するための私のお気に入りのツールは、lolremez です。そして、LLM にそれを行うよう簡単に依頼できます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LegionMammal978:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一般に、ミニマックス近似、特に最適な多項式近似 [0] を生成する非常に単純な Remez アルゴリズムは過小評価されているツールであることがわかりました。いくつかの変更を加えれば、区間内の絶対誤差または相対誤差を最適化するように適応させたり、有理関数近似を考案したりすることもできます。 (ただし、残念ながら、アルゴリズムの多くのプレゼンテーションでは、サンプル ポイント選択の非常に単純な形式が使用されており、特に小さな振動が含まれる場合、自明ではない入力曲線で破綻する可能性があります。)&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Remez_algorithm" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Remez_algorithm&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AlotOfReading:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;速くはないことは確かですが、次のように書くのは楽しかったです。&lt;p&gt;&lt;pre&gt;&lt;code&gt; float asin(float x) {
+      float x2 = 1.0f-fabs(x);
+      u32 i = ビットキャスト(x2);
+      i = 0x5f3759df - (i&amp;gt;&amp;gt;1);
+      float inv = ビットキャスト(i);
+      return copysign(pi&amp;#x2F;2-pi&amp;#x2F;2*(x2*inv),x);
+    }
+&lt;/code&gt;&lt;/pre&gt;
+邪悪な浮動小数点 bitthacks のご厚意により。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;scottlamb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;より高速なアプローチは SIMD ではないでしょうか? 1.05 倍から 1.90 倍の高速化は素晴らしいです。 16 倍の高速化の方が優れています!&lt;p&gt;それらは直交的な改善である可能性がありますが、優先順位を付けるなら、最初に SIMD を選択します。&lt;p&gt;Intel の組み込みガイドで asin を検索しました。 AVX-512 組み込みの _mm512_asin_ps がありますが、「sequence」と表示されています。単一の指示ではなく。おそらく、彼らが使用している実際のシーケンスはヘッダー ファイルのどこかにあると思われますが、どこを調べればよいのかすぐには分からないので、それが SIMD 化されたバージョンの「fast_asin_cg」とどのように比較されるのかわかりません。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.intel.com&amp;#x2F;content&amp;#x2F;www&amp;#x2F;us&amp;#x2F;en&amp;#x2F;docs&amp;#x2F;intrinsics-guide&amp;#x2F;index.html#text=asin&amp;amp;ig_expand=359" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.intel.com&amp;#x2F;content&amp;#x2F;www&amp;#x2F;us&amp;#x2F;en&amp;#x2F;docs&amp;#x2F;intrinsics-guid...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drsopp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;簡単に計算してみたところ、この精度であれば、CPU モデルによってはテーブル ルックアップが L1 キャッシュに収まる可能性があるようです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adampunk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私たちは、より高速な関数をライブラリ コード内に残しておきたいと考えています。 Q3A の高速逆平方根の基礎は 1986 年から fdlibm に存在し、1993 年からネット上に存在しました: &lt;a href="https:&amp;#x2F;&amp;#x2F;www.netlib.org&amp;#x2F;fdlibm&amp;#x2F;e_sqrt.c" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.netlib.org&amp;#x2F;fdlibm&amp;#x2F;e_sqrt.c&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;patchnull:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ここで最も興味深い結果は、Intel (1.5x) と M4 (1.02x) の高速化間の大きな差です。 Apple はほぼ確実に、M シリーズ パイプライン用に調整された同様の多項式近似を libm 内ですでに使用しています。 x86 上の glibc は精度に関してより保守的な傾向があり、テーブル上により多くの余地を残しています。 CG バージョンは、Abramowitz と Stegun の公式 4.4.45 からのもので、数十年にわたってシェーダー数学の定番となっています。面白いのは、知識がサイロ化していることです。ゲーム開発者や GPU 担当者はこのクラスの近似についてずっと知っていましたが、一般的なシステム プログラミングに取り入れられることはほとんどありませんでした。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;orangepanda:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;自分がやった仕事を捨てるのが好きな人はいません&lt;p&gt;私は自分がやった仕事を捨てるのが好きです。他の仕事を放棄できる精神的余裕が生まれます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;erichocean:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;理想的な HN コンテンツ、ありがとう!&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://16bpp.net/blog/post/faster-asin-was-hiding-in-plain-sight/</guid>
+      <pubDate>Wed, 11 Mar 2026 14:35:53 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47336111</comments>
+    </item>
+    <item>
+      <title>大規模な科学的詐欺を可能にする組織は大規模で回復力があり、成長を続けています</title>
+      <link>https://doi.org/10.1073/pnas.2420092122</link>
+      <guid isPermaLink="true">https://doi.org/10.1073/pnas.2420092122</guid>
+      <pubDate>Wed, 11 Mar 2026 13:32:12 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47335349</comments>
+    </item>
+    <item>
+      <title>内部告発者: DOGE メンバーが社会保障データを新しい仕事に持ち込んだ</title>
+      <link>https://www.washingtonpost.com/politics/2026/03/10/social-security-data-breach-doge-2/</link>
+      <guid isPermaLink="true">https://www.washingtonpost.com/politics/2026/03/10/social-security-data-breach-doge-2/</guid>
+      <pubDate>Wed, 11 Mar 2026 13:52:01 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47335572</comments>
+    </item>
+    <item>
+      <title>AIエージェントがマッキンゼーをハッキング</title>
+      <link>https://codewall.ai/blog/how-we-hacked-mckinseys-ai-platform</link>
+      <description>&lt;p&gt;2 時間以内に、エージェントは運用データベース全体に対する完全な読み取りおよび書き込みアクセス権を取得しました。 58,000 の Word ドキュメント。同じインジェクションを通じて書き込みアクセス権を持つ攻撃者は、これらのプロンプトを書き換える可能性があります。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; AI Agent Hacks McKinsey&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47333627"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://codewall.ai/blog/how-we-hacked-mckinseys-ai-platform'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 19 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cs702:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;...&lt;i&gt;2&lt;/i&gt; 時間以内:&lt;p&gt;&lt;i&gt;&amp;gt;そこで私たちは自律型攻撃エージェントをそこに向けることにしました。資格情報はありません。内部関係者の知識はありません。そして、人間の関与はありません。ドメイン名と夢だけです。&lt;p&gt;&amp;gt; 2 時間以内に、エージェントは運用データベース全体への完全な読み取りおよび書き込みアクセス権を取得しました。&lt;/i&gt;&lt;p&gt;一部のエンタープライズ システムがいかに&lt;i&gt;安全でない&lt;/i&gt;かをこの目で見てきたので、私はそれほど驚きません。&lt;p&gt;エンタープライズ セキュリティに関して言えば、トップの意思決定者は何よりもまず、CYA とも呼ばれる企業および個人の責任にさらされることに重点を置いています。&lt;p&gt;セキュリティの核心的な詳細は、企業チェーンのはるか下流にいる従業員やコンサルタントに任されています。彼らは自分たちが何をしているのか知っているはずです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;VadimPR:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これらの攻撃的な AI エージェントはどのように構築されているのでしょうか?安全トレーニングを削除するように微調整され、エージェント ループが組み込まれた、既製のオープン LLM を使用していると思います。&lt;p&gt;誰かが確かに知っていますか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;palmotea:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私たちがエプスタインの電子メールなどから学んだことを考えると、誰かがこのデータを漏洩していればよかったと思います。&lt;p&gt;&amp;gt; 4,650 万件のチャット メッセージ。このツールを使用して戦略、顧客エンゲージメント、財務、M&amp;A 活動、内部調査について話し合う従業員からのメッセージです。すべての会話は平文で保存され、認証なしでアクセスできます。&lt;p&gt;&amp;gt; 728,000 ファイル。 192,000 の PDF。 93,000 の Excel スプレッドシート。 93,000 の PowerPoint デッキ。 58,000 の Word ドキュメント。ファイル名だけでも機密性が高く、どこを見ればよいかを知っている人なら誰でも直接ダウンロードできる URL でした。&lt;p&gt;企業権力が実際に舞台裏でどのように機能しているかについて、非常に有益なジャーナリズムがたくさん行われたはずです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jacquesm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;そして: AI エージェントがブログ投稿を書きます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;frankfrank13:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;内部関係者の知識: リリは、少なくとも 1 年前は内部関係者のみでした。 VPN アクセス、SSO、すべての追加機能が必要です。いつ変わったのかはわかりません。&lt;p&gt;マッキンゼーは、たとえ少数の同僚に対してもサービスを開始するには、外部のペネトレーション テスト会社を雇う&lt;i&gt;必要&lt;/i&gt;があります。&lt;p&gt;Lilli 開発者側のこの種の間違いは許せます。 「エージェント」 にとって&lt;i&gt;多く&lt;/i&gt; のことは失敗しなければなりません。セキュリティ会社は、パブリック エンドポイントを見つけることさえできず、ましてやそれを悪用し始めることさえできません。&lt;p&gt;そうは言っても、ここでの間違いはひどいものです。認証が0に近いようです。非常に古い知識に基づくと、私の推測では、シニア パートナーがリリを一般公開するために何らかの糸を引いたのではないかと考えています。その時までに、元のリリチームのほとんど全員が「脱退」していました。マッキンゼーは社内プロジェクトに取り組むことを厳しく罰しているため、（クライアントのプロジェクトに行って）。&lt;p&gt;したがって、リリには、他の場所にスタッフを配置できず、コードを知らず、気にも留めなかった人々がスタッフとして配置されていた可能性があります。社内の仕事は、良くも悪くも基本的に半日です。&lt;p&gt;これは、テクノロジーに関するマッキンゼーの文化の失敗です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mnmnmn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;マッキンゼーはクソも食える&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ecshafer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AI がアドバイスを変更するために毒された場合、おそらくマッキンゼーのアドバイスは実際に純利益になるでしょう。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;victor106:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはLLMによって書かれたもののように見えます&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sigmar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;コードウォールが誰なのか全く分かりません。言及された問題に実際にパッチを適用したというマッキンゼーからの承認はありますか? 「codewall ai」への言及は見当たりません。昨日までのニュース記事には名前がありませんでしたが、サイトには名前がありません。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.google.com&amp;#x2F;search?q=codewall+ai" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.google.com&amp;#x2F;search?q=codewall+ai&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bee_rider:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ここのタイトルが気に入らない。おそらくこれは「私」の問題ですが、「AI エージェントが X を実行」を見ると、それが所有権が曖昧になっている脱皮したエージェントの 1 つである可能性があるという考えが頭に浮かびます。&lt;p&gt;このケースでは、侵入テストを行うグループが AI エージェントを使用してマッキンゼーを選択し、その AI エージェントを使用して侵入テストを実行しました。&lt;p&gt;アクションを無生物 (車が歩行者に衝突するなど) に帰するのが一般的ですが、IMO では最近、より明確にする必要があります。残念ながら一部の人々は、代理店がこれらの代理店システムにあると考えています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paxys:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 1945 年に同社に雇用された最初の専門職女性にちなんで名付けられました&lt;p&gt;AI アシスタントの女性の名前をわざわざ見つけて自慢することは、おそらく作成者が頭の中で考えていたほど力を与えるものではありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;joenot443:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;これらの保護されていないエンドポイントの 1 つが、ユーザーの検索クエリをデータベースに書き込みました。値は安全にパラメータ化されましたが、JSON キー (フィールド名) は SQL に直接連結されました。&lt;p&gt;プロンプト インジェクションを期待していましたが、この場合はそれがうまくいきました。マッキンゼーの AI プラットフォームを作成した LLM の単純さによってのみ可能となった SQL インジェクション。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;captain_coffee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;耳に音楽が！これ以上良い会社はあり得ません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cmiles8:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;何年も前に、マッキンゼーのチームがワトソンを私たちに厳しく押し付けたことしか覚えていません。完全な列車事故でした。&lt;p&gt;彼らは長い間、AI に関して中身のない誇大宣伝ばかりしており、あまり変わっていないようです。&lt;p&gt;彼らは他のことにも優れているかもしれませんが、マッキンゼーの人々が AI について話したいなら、全力で逃げるでしょう。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fhd2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;これはマッキンゼー＆アンド・カンパニーでした。会社 — 世界クラスのテクノロジー チームを擁する企業 [...]&lt;p&gt;私の経験では、巷で言われている言葉は正確には当てはまりません。マッキンゼーは私が思っていたよりもソフトウェアに関して尊敬されているのでしょうか?そうでなければ、なぜ TFA がこの部分を丁寧に省略しなかったのか不思議です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lenerdenator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;リンクからは正確にはわかりません。彼らはマッキンゼーのためにレッドチームの仕事をしていたのか、それとも単に「私たちが逮捕されないと思われる会社を見つけて、自社の製品に対して AI 脆弱性検出器を実行した」だけなのでしょうか?&lt;p&gt;世界で最も権威のあるコンサルティング会社が、彼らの会社を攻撃していると思うでしょう。すでに誰かがこの種の仕事をしてくれていたでしょう。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sd9:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;クールだが、LLM 主義をすべて含むと読むのは不可能&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sgt101:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;なぜパブリック エンドポイントがあったのですか?&lt;p&gt;これはすべてファイアウォールの内側にあり、企業デバイスに関連付けられた MAC アドレスからのみアクセスできるはずでした。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gbourne1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;- 「エージェントは攻撃対象領域をマッピングし、200 を超えるエンドポイントで完全に文書化された API ドキュメントが公開されていることを発見しました。最も必要な認証。 22 人はそうではありませんでした。&lt;p&gt;それでは、どうぞ。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://codewall.ai/blog/how-we-hacked-mckinseys-ai-platform</guid>
+      <pubDate>Wed, 11 Mar 2026 09:59:03 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47333627</comments>
+    </item>
+    <item>
+      <title>Temporal: JavaScript で時間を修正するための 9 年間の旅</title>
+      <link>https://bloomberg.github.io/js-blog/post/temporal/</link>
+      <description>&lt;p&gt;JavaScript はどう変わるのか。これは日付 d を変更しています。日付によって、無効なカレンダー結果が有効な日付に戻されることはありません。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Temporal: The 9-Year Journey to Fix Time in JavaScript&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47336989"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://bloomberg.github.io/js-blog/post/temporal/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bnb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これがサーバー側のランタイムに導入されるのが待ちきれません。これを大々的に採用するのを妨げるのは本当に最後のことです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jon_kuperman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;なんと素晴らしい旅でしょう！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://bloomberg.github.io/js-blog/post/temporal/</guid>
+      <pubDate>Wed, 11 Mar 2026 15:35:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47336989</comments>
+    </item>
+    <item>
+      <title>Show HN: AI エージェント用のオープンソース ブラウザー</title>
+      <link>https://github.com/theredsix/agent-browser-protocol</link>
+      <description>&lt;p&gt;エージェント ブラウザ プロトコル Web ブラウジングは継続的かつ非同期です。 Claude Code claude mcp add browser -- npx -y Agent-browser-protocol --mcp 次に、Claude に次のように尋ねます。「ニュースに移動します。JavaScript と仮想時間はステップ間でフリーズします。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Open-source browser for AI agents&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47336171"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/theredsix/agent-browser-protocol'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;theredsix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;よろしければ、どんな質問にも喜んでお答えします！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/theredsix/agent-browser-protocol</guid>
+      <pubDate>Wed, 11 Mar 2026 14:39:30 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47336171</comments>
+    </item>
+    <item>
+      <title>HN に質問: クロードはまたダウンしましたか?</title>
+      <link>https://news.ycombinator.com/item?id=47336163</link>
+      <description>&lt;p&gt;com/status/claude-ai//edit: 現在公式インシデントがあります: https://status. com/status/claude-ai//edit: 現在公式インシデントがあります: https://status. com/incidents/jm3b4jjy2jrt /edit: 現在、公式のインシデントがあります: https://status.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ask HN: Is Claude Down Again?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47336163"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=47336163'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 22 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zurfer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;incidents&amp;#x2F;jm3b4jjy2jrt" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;incidents&amp;#x2F;jm3b4jjy2jrt&lt;/a&gt;
+&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47336889"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47336889&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aeblyve:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;昨日は異常に遅いことに気づきました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bartread:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ダウンについてはわかりませんが、プロ プラン (アップグレードを検討中) で VS Code 拡張機能を使用していますが、今日の午後、冬の坂道を登る糖蜜よりも遅かったです。 (a) 体調が悪く、(b) 締め切りに追われているため、平静さが損なわれ始めています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;prmph:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;その結果、購読期間は延長されるのでしょうか?今日で終了しますが、1 時間ほど前にロックアウトされました。それが実際にこの機能停止によるものかどうかはわかりません。&lt;p&gt;すべてのバイブ コーディングが明らかにうまく機能していません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anonfunction:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;サブスクリプションにログインできません&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;epolanski:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;少し違いますが、私は Codex で OpenAI の GPT 5.4 を使用してきましたが、これまでのところ、最大限に考えた場合、Opus 4.6 を使用したクロードよりも説得力があると感じています。&lt;p&gt;これは私のユースケースのみかもしれませんが（バイブコーディングよりもデザインとアーキテクチャを支援することに興味があります）、OpenAI には、OpenAI よりも 20 ドルではるかに寛大な層があることに注意してください。 Anthropic のものです。最新モデルでは Codex も無料で使用できると思います。試してみてください。予想よりも優れており、クロードの確実なバックアップになるかもしれません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaway89201:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は Big-AGI [1] を自己ホスト型のオープン ソース LLM ワークスペースとして使用していますが、Anthropic の API キーを追加すると、「問題が発生していますか?」を読む間にメモが表示されるのは非常に印象的です。人間のステータスを確認してください」他のモデル プロバイダーには適用されません。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;enricoros&amp;#x2F;big-AGI" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;enricoros&amp;#x2F;big-AGI&lt;/a&gt; (所属なし)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ridiculous_leke:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;M4 で実行できる適切な LocalLlama セットアップをドロップできますか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;behnamoh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;はい、次のメッセージが表示されます:&lt;p&gt;&lt;pre&gt;&lt;code&gt; OAuth トークンの有効期限が切れています。新しいトークンを取得するか、トークンを更新してください
+     既存のトークン。
+&lt;/code&gt;&lt;/pre&gt;
+そして、ログイン ページは機能しません。&lt;p&gt;&lt;i&gt;閉鎖&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;astatine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;同じ問題です。 「内部サーバーエラー」が発生するメッセージ&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;world2vec:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;奇妙だ、それは私にはすべてが良く見えます。チャットとコードの両方のバリアントを問題なく使用できます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;UncleOxidant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;あるようです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;devadjacent:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;下がっています。これは嫌いです&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xeornet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;認証に失敗し、セッションがキックアウトされました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;messh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私にとってはダメだ&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;izolate:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;手動でコーディングする方法を覚えている人はいますか?確かにそうではありません:-)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kush0505:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;同じ経験をしました...彼らは数分前にクロードコードで私をログアウトさせました。そして、ログインすると、認証に 15000 ミリ秒以上待たされるため (制限時間を超えています)、認証は失敗します。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lnenad:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ここ 1 年ほどでプラットフォームの安定性がいかに低下したかには本当に驚くべきです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;avra:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私も同じように疑問に思っていました。ステータス ページが更新されたばかりですが、しばらく緑色で表示され、ログインできませんでした。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eduardogarza:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;認証が無効になっています&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rethab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ここでも同じ問題があります。コードを手動でコピーして貼り付ける必要があった質問と回答のサイトの名前は何ですか? ;-)&lt;p&gt;公式ステータスはまだ緑色です: &lt;a href="https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;&lt;/a&gt;&lt;p&gt;しかし、downdetector は明確です: &lt;a href="https:&amp;#x2F;&amp;#x2F;down​​detector.com&amp;#x2F;status&amp;#x2F;claude-ai&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;downdetector.com&amp;#x2F;status&amp;#x2F;claude-ai&amp;#x2F;&lt;/a&gt;&lt;p&gt;&amp;#x2F;編集: 現在正式なインシデントがあります: &lt;a href="https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;incidents&amp;#x2F;jm3b4jjy2jrt" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;incidents&amp;#x2F;jm3b4jjy2jrt&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;benzible:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;いいえ。私も。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://news.ycombinator.com/item?id=47336163</guid>
+      <pubDate>Wed, 11 Mar 2026 14:39:21 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47336163</comments>
+    </item>
+    <item>
+      <title>もっと落ち込んでください</title>
+      <link>https://ntietz.com/blog/let-yourself-fall-down-more/</link>
+      <description>&lt;p&gt;そしてそれは歩き始めても続きます。私たちが倒れるのは、落ちるのが怖くて自分を我慢したからです。それを気にするのをやめて、下手な詩を書くことにしたとき。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Let yourself fall down more&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47336569"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://ntietz.com/blog/let-yourself-fall-down-more/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;comrade1234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;数年前に転倒して以来、私はより慎重になりましたが、今ではそれほど無敵ではないことに気づきました。私はアイススケートをしていました。私はとても上手なスケーターで、歩くことを覚えたのとほぼ同じ時期にスケートをして育ち、若い頃はずっと遠征ホッケーチームでプレーしていました。誰かが氷の上に落ちたので、私が手を伸ばして彼らを助け起こそうとしたとき、私のスケート靴が下から滑り落ちました。後ろに倒れて氷の上で後頭部を打ってしまいました。頭の中で脳がドクドクするのを感じたと断言します。幸いなことに脳震盪やその他の怪我はありませんでしたが、それ以来、リスクを軽減するだけで済み、それを変えるつもりはありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vjvjvjvjghv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「たくさんのチャンスをつかめば、最終的にはそれが積み重なり、大きな勝利を得ることができるでしょう。ただ、安全に行動すれば、大きな損失も積み重ならないようになります。」&lt;p&gt;「ただ」安全に行動することです。安全であれば、危険を冒す必要はありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eweise:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;祖父は転倒して足を骨折し、病院で亡くなりました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;erictd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;落ちることも他のスキルと同じで、落ちれば落ちるほど上達します。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pmg102:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;しかし、問題は何ですか？落ちることが必ずしも危険である必要はありません&lt;p&gt;カンマの代わりに疑問符を使用するたびに?子猫が死んでしまいます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;josefritzishere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;スケートしたり、歌ったり、コードを書いたり、サックスを演奏したりするんですか？それはかなりひどいです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ray_v:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;50 歳以上で倒れるのは、若いときに倒れるよりもはるかに危険です。&lt;p&gt;これはリスク許容度に関するブログ投稿のようです。もちろん、リスク許容度はさまざまな要因によって劇的に変化します。私が中年になって堕落した場合、自分自身に永久的で取り返しのつかない害を及ぼす可能性がはるかに高くなりますが、おそらく報われる価値はありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xX_Sn1p3rg0d_Xx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;スケートボードのより大きな価値と転倒の重要性 (つまり、立ち上がる方法を教えてくれる) についてのロドニー マレンの講演を強くお勧めします。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;player.vimeo.com&amp;#x2F;video&amp;#x2F;77731599?title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;color=3d96d2" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;player.vimeo.com&amp;#x2F;video&amp;#x2F;77731599?title=0&amp;amp;byline=0&amp;amp;por...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://ntietz.com/blog/let-yourself-fall-down-more/</guid>
+      <pubDate>Wed, 11 Mar 2026 15:04:25 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47336569</comments>
+    </item>
+    <item>
+      <title>グローバルエリートがスペルと文法を諦めた理由</title>
+      <link>https://www.wsj.com/lifestyle/jeffrey-epstein-files-bad-grammar-spelling-trump-ellison-dorsey-gates-thiel-cbfe9fb1</link>
+      <guid isPermaLink="true">https://www.wsj.com/lifestyle/jeffrey-epstein-files-bad-grammar-spelling-trump-ellison-dorsey-gates-thiel-cbfe9fb1</guid>
+      <pubDate>Wed, 11 Mar 2026 15:22:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47336806</comments>
+    </item>
+    <item>
+      <title>ドメインの有効期限が切れたため、Hurricane Electric (HE.NET) IPv6 トンネルブローカー ページがオフラインになる</title>
+      <link>https://tunnelbroker.net</link>
+      <guid isPermaLink="true">https://tunnelbroker.net</guid>
+      <pubDate>Wed, 11 Mar 2026 13:06:44 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47335072</comments>
+    </item>
+    <item>
+      <title>現代の富は、十分な栄養を摂った人々によって行われるパーラーゲームです</title>
+      <link>https://www.chrbutler.com/modern-wealth-parlour-game</link>
+      <description>&lt;p&gt;そして、これらのパターンは文化の浸食以上のものです。それがそれほどひどいものであったとしてもです。市場の活動は突然天気になります。私たちは、それが必要かどうかではなく、何を買うことができるかを考えます。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Modern wealth is a parlour game played by the well fed&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47336953"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.chrbutler.com/modern-wealth-parlour-game'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gruez:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それで、これをはっきりさせておきます。&lt;p&gt;市場が下落する: 「くそ... これは富の不平等をさらに拡大する卑劣な策略です。なぜなら金持ちは安く買えるからです!」&lt;p&gt;市場が上昇する: 「くそ... これは富の不平等をさらに拡大する卑劣な策略です。なぜなら株は金持ちが圧倒的に保有しているからです!」&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tencentshill:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;よく言ったものだ。これまで稼いだお金のすべてを愚かなことに賭けることができ、それが失敗したとき、実際には何も起こらないのです。富には責任と規模そのものが伴う必要があります。 10億ドルを持っているだけでも大きな負債になるはずです。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.chrbutler.com/modern-wealth-parlour-game</guid>
+      <pubDate>Wed, 11 Mar 2026 15:33:41 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47336953</comments>
     </item>
   </channel>
 </rss>

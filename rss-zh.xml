@@ -6,29 +6,211 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 11 Mar 2026 13:09:22 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 16:04:26 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Microsoft BitNet：本地 CPU 的 100B 参数 1 位模型</title>
-      <link>https://github.com/microsoft/BitNet</link>
-      <description>&lt;p&gt;演示 bitnet 的演示。 mp4 新增内容： 01/15/2026 BitNet CPU 推理优化 05/20/2025 BitNet 官方 GPU 推理内核 04/14/2025 BitNet 官方拥抱面部 2B 参数模型 02/18/2025 Bitnet.mp4 58 CPU 推理 10/17/2024 bitnet。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Microsoft BitNet: 100B Param 1-Bit model for local CPUs&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47334694"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/microsoft/BitNet'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>乐高的 0.002 毫米规格及其对制造业的影响 (2025)</title>
+      <link>https://www.thewave.engineer/articles.html/productivity/legos-0002mm-specification-and-its-implications-for-manufacturing-r120/</link>
+      <guid isPermaLink="true">https://www.thewave.engineer/articles.html/productivity/legos-0002mm-specification-and-its-implications-for-manufacturing-r120/</guid>
+      <pubDate>Wed, 11 Mar 2026 13:22:39 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47335237</comments>
+    </item>
+    <item>
+      <title>更快的 Asin() 隐藏在众目睽睽之下</title>
+      <link>https://16bpp.net/blog/post/faster-asin-was-hiding-in-plain-sight/</link>
+      <description>&lt;p&gt;" 这次是 Padé Approximants。C++ 如下： double _asin_approx_private(const double x) { // 这使用泰勒级数近似。8)) { return std::asin(x); } // 泰勒级数近似 constexpr double a = 0.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Faster Asin() Was Hiding in Plain Sight&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47336111"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://16bpp.net/blog/post/faster-asin-was-hiding-in-plain-sight/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nickcw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; bitnet.cpp 是 1 位 LLM（例如 BitNet b1.58）的官方推理框架。它提供了一套优化内核，支持 CPU 和 GPU 上 1.58 位模型的快速无损推理（接下来将支持 NPU）。&lt;p&gt;一个位还是一个 trit？我很困惑！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LuxBennu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这个标题具有误导性——没有经过训练的 100B 模型，只有一个声称可以处理该模型的推理框架。但工程方面值得关注。
-我在本地运行量化的 70B 模型（M2 Max 96GB，llama.cpp + LiteLLM），内存带宽始终是瓶颈。 1.58 位方法很有趣，因为三元权重将 matmul 转换为加法——这是商用 CPU 上根本不同的计算配置文件。如果 100B 级模型的单个 CPU 上的 5-7 个 tok 是可重现的，那么这将是设备上推理的真正里程碑。
-框架已经准备好了。现在我们需要有人来实际训练模型。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;radarsat1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很好奇 1 位参数是否可以与 4 位或 8 位参数进行比较。我想100B相当于30B型号吧？我想只有 evals 可以说。尽管如此，能够在 CPU 上以良好的速度运行 30B 模型将是令人惊奇的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;syntaxing:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;标题具有误导性，但这非常令人兴奋。有趣的是，这是如何基于 llama cpp 的。自 2023 年发表论文以来，很高兴看到一些势头&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;152334H:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;但没有经过训练的100b参数模型？ “可以运行100B BitNet”是关于推理实现，而不是关于任何此类模型的存在&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;QuadmasterXLII:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;标题千亿参数，官方模型没有一个参数超过百亿。好奇的。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/microsoft/BitNet</guid>
-      <pubDate>Wed, 11 Mar 2026 12:27:15 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47334694</comments>
+&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jason_s:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;虽然我很高兴看到 OP 最后得到了一个很好的极小极大解决方案，但这篇文章似乎错过了澄清一个关键点：指定间隔内的误差波形至关重要，如果您没有看到典型的极小极大摆动，那么您就浪费了简单的改进机会。&lt;p&gt;泰勒级数一般来说是一个糟糕的选择，泰勒级数的 Pade 近似也同样糟糕。如果您要使用 Pade 近似，它们应该是原始函数。&lt;p&gt;我更喜欢切比雪夫近似：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.embeddedlinked.com&amp;#x2F;showarticle&amp;#x2F;152.php" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.embeddedlinked.com&amp;#x2F;showarticle&amp;#x2F;152.php&lt;/a&gt; 通常与更复杂的 Remez 算法足够接近。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;glitchc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;4% 的改进似乎并不值得付出努力。&lt;p&gt;一般而言，除法和平方根等指令在现代 CPU 的周期计数中大致等于三角函数。因此，正如结果所证明的那样，用另一种替代一种不会带来太大好处。它们通常都是使用 LUT 实现的，并且很难超越优化的 LUT 的性能，优化的 LUT 基本上是一个连接到硬件中某些专用存储单元的多路复用器。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stephc_int13:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最喜欢的数学近似实验工具是 lolremez。您可以轻松地要求您的导师为您做这件事。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LegionMammal978:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;总的来说，我发现极小极大近似是一种未被充分重视的工具，尤其是用于生成最佳多项式近似的相当简单的 Remez 算法 [0]。通过一些修改，您可以对其进行调整以优化某个区间内的绝对或相对误差，甚至得出有理函数近似值。 （尽管不幸的是，该算法的许多演示都使用过于简单的样本点选择形式，这些形式可能会在非平凡的输入曲线上崩溃，特别是当它们包含小振荡时。）&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Remez_algorithm" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Remez_algorithm&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AlotOfReading:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很确定它不会更快，但写起来很有趣：&lt;p&gt;&lt;pre&gt;&lt;code&gt; float asin(float x) {
+      浮点数 x2 = 1.0f-fabs(x);
+      u32 i = 比特广播(x2);
+      i = 0x5f3759df - (i&gt;&gt;1);
+      浮点数 inv = bitcast(i);
+      返回 copysign(pi&amp;#x2F;2-pi&amp;#x2F;2*(x2*inv),x);
+    }
+&lt;/code&gt;&lt;/pre&gt;
+由邪恶的浮点黑客提供。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;scottlamb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;SIMD 不是更快的方法吗？ 1.05 倍到 1.90 倍的加速效果非常好。 16 倍加速更好！&lt;p&gt;它们可能是正交改进，但如果我要确定优先级，我会首先选择 SIMD。&lt;p&gt;我在 Intel 的内在函数指南上搜索了 asin。他们有一个 AVX-512 固有的“_mm512_asin_ps”，但它说的是“序列”。而不是单一指令。大概他们使用的实际序列在某个头文件中的某个地方，但我不知道该去哪里查找，所以我不知道它与 SIMDified 版本的 `fast_asin_cg` 相比如何。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.intel.com&amp;#x2F;content&amp;#x2F;www&amp;#x2F;us&amp;#x2F;en&amp;#x2F;docs&amp;#x2F;intrinsics-guide&amp;#x2F;index.html#text=asin&amp;amp;ig_expand=359" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.intel.com&amp;#x2F;content&amp;#x2F;www&amp;#x2F;us&amp;#x2F;en&amp;#x2F;docs&amp;#x2F;intrinsics-guid...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drsopp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;进行了一些快速计算，在这种精度下，表查找似乎能够适合 L1 缓存，具体取决于 CPU 型号。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adampunk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们喜欢将更快的函数留在库代码中。 Q3A 的快速平方根反比的基础自 1986 年以来一直存在于 fdlibm 中，自 1993 年以来一直存在于网络中：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.netlib.org&amp;#x2F;fdlibm&amp;#x2F;e_sqrt.c" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.netlib.org&amp;#x2F;fdlibm&amp;#x2F;e_sqrt.c&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;patchnull:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Intel (1.5x) 和 M4 (1.02x) 加速之间的巨大差距是这里最有趣的结果。 Apple 几乎肯定已经在其 libm 中使用了类似的多项式近似，并针对 M 系列管道进行了调整。 x86 上的 glibc 在精度方面往往更加保守，留下了更多的空间。 Cg 版本来自 Abramowitz 和 Stegun 公式 4.4.45，该公式几十年来一直是着色器数学的主要内容。有趣的是，知识是如何被孤立的，游戏开发者和 GPU 人员永远都知道这类近似，但它很少涉及一般系统编程。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;orangepanda:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;没有人喜欢扔掉他们已经完成的工作&lt;p&gt;我喜欢扔掉我已经完成的工作。释放我的思维能力，让我可以扔掉其他工作。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;erichocean:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;理想的 HN 内容，谢谢！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://16bpp.net/blog/post/faster-asin-was-hiding-in-plain-sight/</guid>
+      <pubDate>Wed, 11 Mar 2026 14:35:53 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47336111</comments>
+    </item>
+    <item>
+      <title>促成大规模科学造假的实体规模庞大、有弹性且不断增长</title>
+      <link>https://doi.org/10.1073/pnas.2420092122</link>
+      <guid isPermaLink="true">https://doi.org/10.1073/pnas.2420092122</guid>
+      <pubDate>Wed, 11 Mar 2026 13:32:12 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47335349</comments>
+    </item>
+    <item>
+      <title>举报人：DOGE 成员将社会保障数据带到新工作</title>
+      <link>https://www.washingtonpost.com/politics/2026/03/10/social-security-data-breach-doge-2/</link>
+      <guid isPermaLink="true">https://www.washingtonpost.com/politics/2026/03/10/social-security-data-breach-doge-2/</guid>
+      <pubDate>Wed, 11 Mar 2026 13:52:01 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47335572</comments>
+    </item>
+    <item>
+      <title>人工智能代理攻击麦肯锡</title>
+      <link>https://codewall.ai/blog/how-we-hacked-mckinseys-ai-platform</link>
+      <description>&lt;p&gt;2 小时内，代理就拥有了对整个生产数据库的完全读写访问权限。 58,000 个 Word 文档。通过同一注入具有写入权限的攻击者可能会重写这些提示。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; AI Agent Hacks McKinsey&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47333627"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://codewall.ai/blog/how-we-hacked-mckinseys-ai-platform'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 19 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cs702:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;...&lt;i&gt;两&lt;/i&gt;小时内：&lt;p&gt;&lt;i&gt;&gt;所以我们决定将我们的自主进攻代理指向它。没有凭据。没有内幕知识。并且没有人参与。一个域名，一个梦想。&lt;p&gt;&gt;在 2 小时内，代理就获得了对整个生产数据库的完全读写访问权限。&lt;/i&gt;&lt;p&gt;亲眼目睹了一些企业系统的&lt;i&gt;不安全&lt;/i&gt;，我并不感到惊讶。&lt;p&gt;在企业安全方面，高层决策者首先关注的是企业和个人的责任风险，也称为 CYA。&lt;p&gt;安全的具体细节留给了企业链下游的员工和顾问，他们应该知道他们在做什么。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;VadimPR:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道这些进攻性人工智能代理是如何构建的？我猜想是现成的开放式法学硕士，经过微调以消除安全培训，并加入代理循环。&lt;p&gt;有人确切知道吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;palmotea:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;根据我们从爱泼斯坦电子邮件等内容中了解到的一切，如果有人泄露了这些数据那就太好了：&lt;p&gt;&gt; 4650 万条聊天消息。来自使用此工具讨论战略、客户参与、财务、并购活动和内部研究的员工。每个对话都以明文形式存储，无需身份验证即可访问。&lt;p&gt;&gt; 728,000 个文件。 192,000 个 PDF。 93,000 个 Excel 电子表格。 93,000 个 PowerPoint 幻灯片。 58,000 个 Word 文档。仅文件名就很敏感，并且对于任何知道在哪里查找的人来说都是一个直接下载 URL。&lt;p&gt;我确信可以做很多信息丰富的新闻报道来了解企业权力在幕后的实际运作方式。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jacquesm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;并且：人工智能代理撰写博客文章。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;frankfrank13:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一些内幕消息：至少一年前，Lilli 还只是内部人员。 VPN 访问、SSO 以及所有附加功能都是必需的。不确定什么时候发生了变化。&lt;p&gt;麦肯锡&lt;i&gt;需要&lt;/i&gt;雇用一家外部笔测试公司来向一小群同事推出。&lt;p&gt;我可以原谅 Lilli 开发人员的这种错误。对于“代理”来说，很多事情都必须失败。安全公司甚至无法找到公共端点，更不用说开始利用它了。&lt;p&gt;话虽如此，这里的错误是残酷的。看起来授权接近 0。根据非常过时的知识，我猜测是一位高级合伙人幕后操纵，让 Lilli 公开。到那时，Lilli 最初团队的大部分成员都已经“退出”了。 （去客户项目），因为麦肯锡对内部项目的工作进行了严厉的惩罚。&lt;p&gt;所以 Lilli 的员工很可能是那些在其他地方找不到员工、不知道代码、也不关心的人。内部工作，无论好坏，基本上都是半天。&lt;p&gt;这是麦肯锡技术文化的失败。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mnmnmn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;麦肯锡可以吃屎&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ecshafer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果人工智能被毒害而改变了建议，那么麦肯锡的建议实际上可能是一种净收益。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;victor106:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这读起来就像是法学硕士写的&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sigmar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不知道代码墙是谁。麦肯锡是否确认他们确实修复了所提到的问题？我没有看到任何对“codewall ai”的引用在昨天之前的任何新闻文章中，并且网站上没有任何名字。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.google.com&amp;#x2F;search?q=codewall+ai" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.google.com&amp;#x2F;search?q=codewall+ai&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bee_rider:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不喜欢这里的标题。也许这是一个“我”的问题，但当我看到“AI代理做了X”时，我的脑海中突然浮现出它可能是那些所有权模糊的蜕变代理之一的想法。&lt;p&gt;在这种情况下，一群渗透测试人员使用AI代理选择麦肯锡，然后使用AI代理进行渗透测试。&lt;p&gt;虽然通常将动作归因于无生命的物体（汽车撞到行人），但在我看来，现在我们应该更加明确，现在不幸的是，有些人将代理归因于这些代理系统。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;paxys:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;以 1945 年该公司雇用的第一位职业女性命名&lt;p&gt;不遗余力地为人工智能助手找到一个女性的名字并吹嘘它并不像创造者可能想象的那样赋予权力。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;joenot443:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;这些未受保护的端点之一将用户搜索查询写入数据库。这些值被安全地参数化，但 JSON 键（字段名称）被直接连接到 SQL 中。&lt;p&gt;我期待提示注入，但在这种情况下，它只是很好的 ol&amp;#x27;时尚的 SQL 注入之所以成为可能，只是因为编写麦肯锡人工智能平台的法学硕士的天真。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;captain_coffee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;音乐传到我耳边！不可能有更好的公司了！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cmiles8:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我只记得很久以前，麦肯锡团队就曾大力向我们推销沃森。 Was a total train wreck.&lt;p&gt;They’ve long been all hype no substance on AI and looks like not much has changed.&lt;p&gt;They might be good at other things but would run for the hills if McKinsey folks want to talk AI.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fhd2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;这是麦肯锡公司公司——一家拥有世界一流技术团队的公司[...]&lt;p&gt;根据我的经验，这并不完全是街上的说法。麦肯锡在软件方面比我想象的更受尊重吗？否则我很好奇为什么 TFA 不礼貌地忽略这一点。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lenerdenator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从链接中不太清楚：他们是在为麦肯锡做红队工作，还是这只是“我们找到了一家我们认为不会让我们被捕的公司，并对他们的东西运行了人工智能漏洞检测器”？已经有人为他们做这类工作了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sd9:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很酷，但不可能用所有的法学硕士来阅读&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sgt101:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么会有公共端点？&lt;p&gt;当然，这一切都应该位于防火墙后面并且只能从与 MAC 地址关联的公司设备访问？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gbourne1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;-“代理绘制了攻击面并发现公开暴露的 API 文档 — 超过 200 个端点，且有完整记录。最需要的身份验证。二十二没有。”&lt;p&gt;好吧，就这样。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://codewall.ai/blog/how-we-hacked-mckinseys-ai-platform</guid>
+      <pubDate>Wed, 11 Mar 2026 09:59:03 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47333627</comments>
+    </item>
+    <item>
+      <title>Temporal：用 JavaScript 修复时间的 9 年之旅</title>
+      <link>https://bloomberg.github.io/js-blog/post/temporal/</link>
+      <description>&lt;p&gt;JavaScript 如何改变。这正在改变日期 d。日期不会将无效的日历结果限制回有效日期。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Temporal: The 9-Year Journey to Fix Time in JavaScript&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47336989"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://bloomberg.github.io/js-blog/post/temporal/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bnb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;迫不及待地希望它登陆服务器端运行时，这确实是阻止我大规模采用它的最后一件事。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jon_kuperman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;多么美妙的旅程啊！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://bloomberg.github.io/js-blog/post/temporal/</guid>
+      <pubDate>Wed, 11 Mar 2026 15:35:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47336989</comments>
+    </item>
+    <item>
+      <title>Show HN：人工智能代理的开源浏览器</title>
+      <link>https://github.com/theredsix/agent-browser-protocol</link>
+      <description>&lt;p&gt;代理浏览器协议 Web 浏览是连续且异步的。 Claude 代码 claude mcp add browser -- npx -y agent-browser-protocol --mcp 然后问 Claude：“转到新闻。JavaScript 和虚拟时间在步骤之间冻结。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Open-source browser for AI agents&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47336171"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/theredsix/agent-browser-protocol'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;theredsix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在这里，很高兴回答任何问题！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/theredsix/agent-browser-protocol</guid>
+      <pubDate>Wed, 11 Mar 2026 14:39:30 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47336171</comments>
+    </item>
+    <item>
+      <title>问 HN：克劳德又低落了吗？</title>
+      <link>https://news.ycombinator.com/item?id=47336163</link>
+      <description>&lt;p&gt;com/status/claude-ai//edit：现在有一个官方事件：https://status。 com/status/claude-ai//edit：现在有一个官方事件：https://status。 com/incidents/jm3b4jjy2jrt /edit：现在有一个官方事件：https://status。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ask HN: Is Claude Down Again?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47336163"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=47336163'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 22 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zurfer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;事件&amp;#x2F;jm3b4jjy2jrt" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;事件&amp;#x2F;jm3b4jjy2jrt&lt;/a&gt;
+&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47336889"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47336889&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aeblyve:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我昨天发现它慢得离谱。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bartread:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不知道 down，但我在 Pro 计划上使用 VS Code 扩展（我正在考虑升级），今天下午对我来说，它比冬天上山的糖蜜还要慢。我（a）感觉不舒服，（b）即将截止日期，所以这开始破坏我的平静。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;prmph:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们会因此延长我的订阅时间吗？它今天结束，但我大约一个小时前被锁了，我不确定这是否真的是由于这次中断造成的。&lt;p&gt;所有的氛围编码显然都运行得不太好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anonfunction:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我无法登录我的订阅&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;epolanski:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有点过分，但我一直在 Codex 上使用 OpenAI 的 GPT 5.4，到目前为止发现它比 Claude 与 Opus 4.6 的最大思考更有说服力。&lt;p&gt;可能只是我的用例（我更感兴趣的是帮助设计和架构而不是 vivicoding），但请记住，OpenAI 的 20 美元价格比Anthropic 的一个，我认为你甚至可以免费使用最新型号的 Codex，所以试一试，你可能会发现它比你预期的更好，并且是 Claude 的坚实后盾。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaway89201:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我使用 Big-AGI [1] 作为自托管开源 LLM 工作区，并且很明显，当为 Anthropic 添加 API 密钥时，它会在阅读“遇到问题？”之间显示一条注释。检查人择状态”它不适用于任何其他模型提供商。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;enricoros&amp;#x2F;big-AGI" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;enricoros&amp;#x2F;big-AGI&lt;/a&gt;（否隶属关系）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ridiculous_leke:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;人们可以放弃一个可以在 M4 上运行的良好 LocalLlama 设置吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;behnamoh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，我得到：&lt;p&gt;&lt;pre&gt;&lt;code&gt; OAuth 令牌已过期。请获取新令牌或刷新您的
+     现有的代币。
+&lt;/code&gt;&lt;/pre&gt;
+而且他们的“登录页面不起作用”。&lt;p&gt;&lt;i&gt;clauddown&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;astatine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;同样的问题。收到“内部服务器错误”信息&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;world2vec:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;奇怪的是，这……我觉得一切都很好。使用聊天和代码变体都没有问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;UncleOxidant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;似乎是。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;devadjacent:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它下来了。我讨厌这个&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xeornet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;身份验证失败，会话被踢出。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;messh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这对我来说很糟糕&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;izolate:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有人记得如何手动编码吗？我当然不:-)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kush0505:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;经历了同样的事情……几分钟前他们在克劳德代码上把我注销了。当我登录时，它让我等待超过 15000 毫秒的身份验证（这超出了他们的截止时间），因此身份验证失败！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lnenad:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在过去一年左右的时间里，平台的稳定性下降了，这真是令人惊讶。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;avra:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我也想知道同样的事情。他们刚刚更新了状态页面，但有一段时间显示绿色，我无法登录。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eduardogarza:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的身份验证失败&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rethab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这里同样的问题。您必须手动复制和粘贴代码的问答网站的名称是什么？ ;-)&lt;p&gt;官方状态仍为绿色：&lt;a href="https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;&lt;/a&gt;&lt;p&gt;但是 down detector 很清楚：&lt;a href="https:&amp;#x2F;&amp;#x2F;down​​ detector.com&amp;#x2F;status&amp;#x2F;claude-ai&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;downDetector.com&amp;#x2F;status&amp;#x2F;claude-ai&amp;#x2F;&lt;/a&gt;&lt;p&gt;&amp;#x2F;编辑：现在有一个官方事件：&lt;a href="https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;事件&amp;#x2F;jm3b4jjy2jrt" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;status.claude.com&amp;#x2F;事件&amp;#x2F;jm3b4jjy2jrt&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;benzible:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;没有。我也是。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://news.ycombinator.com/item?id=47336163</guid>
+      <pubDate>Wed, 11 Mar 2026 14:39:21 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47336163</comments>
+    </item>
+    <item>
+      <title>让自己跌倒更多</title>
+      <link>https://ntietz.com/blog/let-yourself-fall-down-more/</link>
+      <description>&lt;p&gt;当他们开始走路时，这种情况仍在继续。我们跌倒是因为我们害怕跌倒而克制自己。当我不再担心这个并让自己写出糟糕的诗时。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Let yourself fall down more&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47336569"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://ntietz.com/blog/let-yourself-fall-down-more/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;comrade1234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;自从几年前摔倒后，我变得更加谨慎，并意识到我现在并不是那么刀枪不入。我曾经滑冰——我是一名非常优秀的滑冰运动员，大约在我学会走路的同时，我就穿着溜冰鞋长大，并在整个青年时期在巡回曲棍球队中打球。有人跌倒在冰上，我弯下腰去扶他们，这时我的冰鞋从我身下滑了出来。我向后摔倒，后脑勺在冰上摔碎了。我发誓我感觉自己的大脑在晃动。幸运的是没有脑震荡或其他伤害，但从那以后我承担的风险就少了很多，而且我不打算改变这一点。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vjvjvjvjghv:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“如果你抓住很多机会，最终累积起来，你就会获得一些重大胜利。只要安全地进行，这样它们就不会造成很多重大损失。”&lt;p&gt;“只要”安全地进行。如果安全的话，你就不会真正冒险。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eweise:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的祖父摔倒了，摔断了腿，然后在医院去世了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;erictd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;跌倒是一种像其他技能一样的技能——跌倒的次数越多，你就能掌握得越好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pmg102:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;但问题是？跌倒并不一定很危险&lt;p&gt;每次你用问号代替逗号时？一只小猫死了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;josefritzishere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你会滑冰、唱歌、编码和吹萨克斯吗？这真是太糟糕了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ray_v:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;50 岁以上跌倒的风险比年轻时跌倒的风险要大得多。&lt;p&gt;这似乎是一篇关于风险承受能力的博客文章 - 当然，风险承受能力会根据许多因素而发生巨大变化。如果我在中年时跌倒，我更有可能对自己造成永久性的、不可挽回的伤害——这可能不值得回报。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xX_Sn1p3rg0d_Xx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;强烈推荐罗德尼·马伦 (Rodney Mullen) 的公开演讲，演讲内容涉及滑板运动的更大价值以及跌倒的重要性（即，它教你如何站起来）。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;player.vimeo.com&amp;#x2F;video&amp;#x2F;77731599?title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;color=3d96d2" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;player.vimeo.com&amp;#x2F;video&amp;#x2F;77731599?title=0&amp;amp;byline=0&amp;amp;por...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://ntietz.com/blog/let-yourself-fall-down-more/</guid>
+      <pubDate>Wed, 11 Mar 2026 15:04:25 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47336569</comments>
+    </item>
+    <item>
+      <title>为什么全球精英放弃拼写和语法</title>
+      <link>https://www.wsj.com/lifestyle/jeffrey-epstein-files-bad-grammar-spelling-trump-ellison-dorsey-gates-thiel-cbfe9fb1</link>
+      <guid isPermaLink="true">https://www.wsj.com/lifestyle/jeffrey-epstein-files-bad-grammar-spelling-trump-ellison-dorsey-gates-thiel-cbfe9fb1</guid>
+      <pubDate>Wed, 11 Mar 2026 15:22:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47336806</comments>
+    </item>
+    <item>
+      <title>Hurricane Electric (HE.NET) IPv6 隧道代理页面因域名过期而离线</title>
+      <link>https://tunnelbroker.net</link>
+      <guid isPermaLink="true">https://tunnelbroker.net</guid>
+      <pubDate>Wed, 11 Mar 2026 13:06:44 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47335072</comments>
+    </item>
+    <item>
+      <title>现代财富是饱腹者玩的室内游戏</title>
+      <link>https://www.chrbutler.com/modern-wealth-parlour-game</link>
+      <description>&lt;p&gt;这些模式不仅仅是文化侵蚀——如果它们有那么糟糕就好了。市场活动突然变成了天气。我们考虑的是我们能买什么，而不是我们是否需要它。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Modern wealth is a parlour game played by the well fed&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47336953"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.chrbutler.com/modern-wealth-parlour-game'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gruez:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所以让我直截了当地说：&lt;p&gt;市场下跌：“哎呀......这只是进一步加剧财富不平等的卑鄙策略，因为富人可以便宜地购买东西！”&lt;p&gt;市场上涨：“哎呀......这只是进一步加剧财富不平等的卑鄙策略，因为股票绝大多数由富人持有！”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tencentshill:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;说得好。能够把我赚到的所有钱都押在一些愚蠢的事情上，而当它失败时，实际上什么也没有发生。财富需要与责任和规模挂钩。即使有10亿美元，也应该是一个巨大的负债。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.chrbutler.com/modern-wealth-parlour-game</guid>
+      <pubDate>Wed, 11 Mar 2026 15:33:41 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47336953</comments>
     </item>
   </channel>
 </rss>
