@@ -6,48 +6,114 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 14 Mar 2026 09:37:52 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Mar 2026 13:03:24 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>年龄验证游说：黑钱、示范立法、机构捕获</title>
-      <link>https://tboteproject.com</link>
-      <description>&lt;p&gt;Meta 花费了创纪录的 26 美元。但该操作超出了 Meta 范围。 ICMEC 起草了符合 Meta 利益的竞争性 DAAA 示范立法，但在严重的财务困境下运营，而 Meta 是已确认的主要捐助者。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Age Verification Lobbying: Dark Money, Model Legislation, Institutional Capture&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47374676"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://tboteproject.com'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>XML 是一种廉价的 DSL</title>
+      <link>https://unplannedobsolescence.com/blog/xml-cheap-dsl/</link>
+      <description>&lt;p&gt;该事实描述了 /totalOwed 事实，该事实是通过从 /totalTax 中减去 /totalPayments 得出的。 &lt;Dollar/&gt; 表示该事实采用什么类型的值。以这个 JavaScript 示例为例，它看起来像初等代数：这似乎更好。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; XML Is a Cheap DSL&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47375764"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://unplannedobsolescence.com/blog/xml-cheap-dsl/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;152334H:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;以下是作者对其工作的描述：&lt;p&gt;&lt;pre&gt;&lt;code&gt; ## 方法和工具
-
-  这项调查是由一名人类研究人员进行的，他指导所有研究决策、选择来源、评估调查结果并撰写面向公众的帖子。 Claude Code（Anthropic 的 CLI 工具，运行 Claude Opus）被用作以下研究助理：
-
-  - 批量数据处理：解析 4,433 个 IRS Schedule I 拨款记录、59,736 个 DAF 接收者、132MB 的科罗拉多州 TRACER 竞选财务数据以及涵盖所有美国免税组织的 IRS 业务主文件摘录
-  - 交叉引用 24 个分析文件的结果并识别跨越多个研究线索的模式
-  - 起草中间工作文件和结构化数据摘要
-  - 针对公共数据库（OpenSecrets、ProPublica、国家游说门户、WHOIS&amp;#x2F;DNS、Wayback Machine）的网络搜索
-
-  克劳德·科德没有独立选择调查内容、决定调查结果的构成或决定发布的内容。该存储库中的每项事实主张都引用了可以独立验证的主要来源（国税局备案、参议院披露、州数据库、立法记录或已发布的报告）。该工具不会改变 Meta 的 LD-2 文件是否列出了 H.R. 3149、DCA 是否拥有 EIN，或者 Stefanski 是否在宣誓后承认技术资金。记录存在或不存在。
-
-  如果您想验证任何发现，请在全文中提供源 URL 和数据库标识符。从主要记录开始，而不是从该存储库开始。
-
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;necovek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;众所周知，在许多语言中正确解析 XML 的成本都很高。  基本上，如果您想接近实际合规性，整个世界都以 3 个开源实现（libxml2、expat 和 Xerces）为中心。  即使使用它们，您也可能会遇到挑战（libxml2 最近基本上没有维护，但它是其他语言中许多绑定的基础）。&lt;p&gt;SGML 派生语言的主要属性是它们使“列表”成为可能。一个第一类对象，嵌套第二类（通过需要“结束”标签），并且有两个用于添加元数据的轴：一个是标签名称，另一个是属性。&lt;p&gt;因此，虽然它是适合许多事物的 DSL（它也在 Web 组件定义中看到了新的生命），但我们主要只讨论与 XML 类似的语言，而不是真正的 XML。  如果您正确使用 XML，则需要放弃“廉价”的技术。 &lt;p&gt;这里要说的另一条评论是，您可以拥有一个命令式的 DSL，它被解释为声明性的 DSL：没有什么能真正阻止您说&lt;p&gt;&lt;pre&gt;&lt;code&gt;totalOwed =totalTax -totalPayments
+  总税 = 暂定税净不可退还积分 + 总其他税
+  总付款额 = 预计已付税金总额 +
+                      社会保障收入缴税总额 +
+                      总可退还积分
 &lt;/code&gt;&lt;/pre&gt;
-我发现了解作者负责选择哪些来源和内容很有价值。需要分析的问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;panny:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些都不重要。 Netchoice 正在以哗众取宠的立法者提议的速度尽快否决立法。权利法案没有年龄限制。如果一个 10 岁的孩子可以拥有一台 AR-15，那么这个 10 岁的孩子肯定也拥有 1A 的权利。言论自由。集会自由。他们可以决定在网上与谁交谈，而无需父母的干扰。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://tboteproject.com</guid>
-      <pubDate>Sat, 14 Mar 2026 08:52:14 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47374676</comments>
+与您拥有的类似 XML 的 DSL 的含义完全相同。&lt;p&gt;一种声明性语言看起来像命令式语言，但实际上使用“方程”来实现。我所知道的是METAFONT。  参见例如。 &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Metafont#Example" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Metafont#Example&lt;/a&gt;（该示例可能无法很好地演示它，但您可以重新排序所有方程，并且它应该产生完全相同的结果）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sgarland:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;虽然这是一篇很棒的文章，但我实际上发现这篇链接文章 [0] 更好，其中作者阐述了如何存在如此多的现代 Web 开发工具，仅仅是因为 XML 输掉了浏览器战争。&lt;p&gt;编辑：显然，JSON 工具的兴起是因为 JSON 成为了通用语言。我的意思是有必要解决 XML 已经解决的 JSON 的缺点。&lt;p&gt;0: &lt;a href="https:&amp;#x2F;&amp;#x2F;marcosmagueta.com&amp;#x2F;blog&amp;#x2F;the-lost-art-of-xml&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;marcosmagueta.com&amp;#x2F;博客&amp;#x2F;the-lost-art-of-xml&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jgalt212:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;税务逻辑需要声明性规范&lt;p&gt;宣讲。  我确信税法中存在循环，可以利用这些循环实现无限税收或零税收。  克劳德能找到他们吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;exabrial:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;鉴于它内置了强大的模式 XSD 验证，您可以立即判断文档是否正确；它是适合大多数工作的正确工具。&lt;p&gt;我的经验是，抱怨它的人根本没有使用自动化工具来处理它。这就像人们抱怨“二进制文件和汇编太难处理”并且从不使用反汇编程序一样。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wild_pointer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;就维护和精神负担而言，它并不便宜&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dndn2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为声明性计算部分很重要，为什么我制作了 calculang &lt;a href="https:&amp;#x2F;&amp;#x2F;calculang.dev" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;calculang.dev&lt;/a&gt;&lt;p&gt;稍后会检查这里是否有一些有趣的计算可以转置，我希望公共机构发布更多模型！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://unplannedobsolescence.com/blog/xml-cheap-dsl/</guid>
+      <pubDate>Sat, 14 Mar 2026 11:59:13 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47375764</comments>
     </item>
     <item>
-      <title>使用隐形代码的供应链攻击攻击 GitHub 和其他存储库</title>
-      <link>https://arstechnica.com/security/2026/03/supply-chain-attack-using-invisible-code-hits-github-and-other-repositories/</link>
-      <description>&lt;p&gt;他们通常通过上传代码和名称与广泛使用的代码库非常相似的恶意包来工作，目的是诱骗开发人员错误地将前者合并到他们的软件中。解码器看到可执行代码 Aikido 本月发现的软件包采用了一种更新的技术：选择性地使用加载到几乎所有编辑器、终端和代码审查界面时不可见的代码。对于 JavaScript 解释器来说，代码点转换为可执行代码。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Supply-chain attack using invisible code hits GitHub and other repositories&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47374479"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://arstechnica.com/security/2026/03/supply-chain-attack-using-invisible-code-hits-github-and-other-repositories/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://arstechnica.com/security/2026/03/supply-chain-attack-using-invisible-code-hits-github-and-other-repositories/</guid>
-      <pubDate>Sat, 14 Mar 2026 08:20:58 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47374479</comments>
+      <title>Claude Code 对核心功能进行 A/B 测试</title>
+      <link>https://backnotprop.com/blog/do-not-ab-test-my-workflow/</link>
+      <description>&lt;p&gt;Anthropic 正在 Claude Code 上运行 A/B 测试，这会严重降低我的工作流程。我不认为 Anthropic 这样做是为了故意降低任何人的体验。透明度是其中的关键部分。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Claude Code conducts A/B tests on core features&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47375682"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://backnotprop.com/blog/do-not-ab-test-my-workflow/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 22 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;johnisgood:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[延迟]&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;takahitoyoneda:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;将开发人员 CLI 视为消费者社交源是对目标受众的根本误解。我们容忍移动应用程序中的隐形功能标志以优化引导转化，但在我们的本地环境中，确定性是不可协商的要求。如果 Claude Code 默默地改变其核心工具的使用或基于服务器端 A&amp;#x2F;B 存储桶的文件解析行为，那么重现错误或与同事共享提示工作流程实际上是不可能的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gnfargbl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于其他想知道为什么这篇文章以不合逻辑的结尾的人来说：看起来作者写了关于反编译 Claude 代码二进制文件并（大概）发现代码中的 A&amp;#x2F;B 测试路径。&lt;p&gt;HN 用户 &amp;#x27;onion2k 指出这样做违反了 Anthropic 的 T&amp;Cs：&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47375787"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47375787&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;letier:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们确实向我展示了“您今天对克劳德代码有多满意？”定期，这可以看作是一种暗示。毕竟我确实选择不帮助提高克劳德。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pshirshov:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;我每月支付 200 美元购买 Claude Code&lt;p&gt;这仍然很便宜。还有其他选项，在我看来，本地 Qwen 3.5 35b + claude code cli 的质量与 Sonnet 4..4.5 相当 - 并且没有 a&amp;#x2F;b 测试！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;terralumen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很好奇 A&amp;#x2F;B 测试实际上发生了什么变化——文章提到工具确认对话框的行为不一致，这与我上周注意到的情况一致。如果 Anthropic 发布变更日志或至少在测试行为时进行标记，那就太好了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shawnz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;虽然我同意这里的观点，但您可能有兴趣看到有一些黑客方法可以覆盖 Claude Code 功能标志：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;anthropics&amp;#x2F;claude-code&amp;#x2F;issues&amp;#x2F;21874#issuecomment-3866979347" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;anthropics&amp;#x2F;claude-code&amp;#x2F;issues&amp;#x2F;21874#issue...&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;gist.github.com&amp;#x2F;gastonmorixe&amp;#x2F;9c596b6de1095b6bd3b746ca3a1fd3d7" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;gist.github.com&amp;#x2F;gastonmorixe&amp;#x2F;9c596b6de1095b6bd3b746c...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bushido:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对 A&amp;#x2F;B 测试没有任何问题。&lt;p&gt;我对计划模式确实有问题。十分之九，客观上来说是很糟糕的。我过去看到的使用计划模式的唯一好处是，与普通的非代理团队工作流程相比，它在压缩之间记住了更多信息。&lt;p&gt;有趣的是，如果您要求它维护您在 Markdown 文件中讨论的内容的运行文档，并使其在其待办事项列表的顶部创建一个常青任务，该任务引用 Markdown 文件并指示自己在每次压缩时读取它，您会做得更好结果。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dep_b:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为稳定的 API 版本将会非常大。我宁愿知道你可以解决的错误，也不愿醒来发现任何已修复的事情导致另一件事的行为不同。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;helsinkiandrew:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;据推测，Anthropic 必须对 Claude Code 每个阶段使用的处理量做出很多选择 - 如果他们最大限度地利用一切，他们会给每个用户带来更多的损失 - 更少的利润 - 每月 200 美元将花费 400 美元。&lt;p&gt;对流程的每个部分进行 A&amp;#x2F;B 测试，看看在哪里划清界限（可能基于任务和用户）似乎是比任意选择限制更好的方法。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rusakov-field:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一方面，我对 LLM 感到沮丧，因为它们会向你抛出语法正确的废话和幻觉，从而使你脱轨，如果你暂时滑倒并接受其中的一些内容，可能会减慢你的速度。&lt;p&gt;但另一方面，它们在样板文件方面非常有用，可以快速将你与废话联系起来，可能比传统方法更快地引导你走上正确的道路。就像一个无能的首席执行官一样，只是吐出他们不理解的术语，但仍然会在你的思维过程中推动一些东西。&lt;p&gt;但你真的需要从一开始就了解你的东西，它们才有用。那些认为自己会接管的人是毫无头绪的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;himata4113:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我注意到 opus 正在进行 A&amp;#x2F;B 测试，因为性能差异很大。在寻找越狱时，我发现如果您将神经毒素化学成分放入系统提示中，它会默认为模型的特定变体，大概是由于触发了某种安全性。可能会将您列入监视列表，所以 ymmv。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;krisbolton:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;A&amp;#x2F;B 测试的框架是“对用户进行无声的实验”调用 Meta 有点多。我不认为 A&amp;B 测试是一种固有的邪恶，你需要正确的测试设计，这对于后期来说是更好的框架。话虽这么说，作为 A&amp;B 测试的一部分，大幅降低法学硕士的有效性是不可接受的，这里的情况似乎就是这样。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Havoc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;几个月前从 CC 转向 opencode，因为这种氛围不适合我。本身还不错，但有点太锁定了，当我查看原始提示时，它正在通过网络发送，这也可以称之为“固执己见”。&lt;p&gt;加上无法控制网络搜索的去向之类的事情。&lt;p&gt;这就是说，我有幸成为一名业余爱好者，所以我可以接受 95% 的尖端结果，以获得更开放的东西。如果这是我的工作，我会看到事情会有所不同。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nemo44x:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;大多数情况下，他们每月亏损 200 美元。同样，旧规则仍然适用。你就是产品。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;phreeza:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来完全不足为奇？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;onion2k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Claude Code 条款的第 6.b 节表示，他们可以并且将会不时地更改产品，我想这意味着以用户细分为基础，而不是任何人人都能得到相同东西的默示保证。&lt;p&gt;&lt;i&gt;b。订阅内容、功能和服务。作为订阅的一部分提供的内容、功能和其他服务以及订阅的持续时间将在订单流程中进行描述。我们可能会不时更改或刷新内容、功能和其他服务，并且我们不保证任何特定内容、功能或其他服务始终可通过服务获得。&lt;/i&gt;&lt;p&gt;还值得注意的是，第 3.3 节明确禁止对应用程序进行反编译。&lt;p&gt;&lt;i&gt;反编译、反向工程、反汇编或以其他方式将我们的服务还原为人类可读的形式，除非适用的法律禁止这些限制法律。&lt;/i&gt;&lt;p&gt;请务必阅读条款。 :)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cerved:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;a b 测试是否让安装或用户感到厌倦？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;handfuloflight:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您同意的服务条款赋予 Anthropic 随时修改产品以改进产品的权利。您是否让您的代理人向您解释过这一点，还是您认为 200 美元的订阅意味着冷冻产品？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cebert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这真是令人沮丧。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reconnecting:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;专业工具可以提供可靠且可复制的结果，而法学硕士则不能提供这些，而 A&amp;#x2F;B 测试只是进一步的证明。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Razengan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我知道：&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47274796"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47274796&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://backnotprop.com/blog/do-not-ab-test-my-workflow/</guid>
+      <pubDate>Sat, 14 Mar 2026 11:46:29 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47375682</comments>
+    </item>
+    <item>
+      <title>Megadev：Sega Mega Drive 和 Mega CD 硬件的开发套件</title>
+      <link>https://github.com/drojaazu/megadev</link>
+      <description>&lt;p&gt;Megadev 适合那些已经具有一些 C 或 M68k 汇编编程经验并且至少对嵌入式系统有一定了解的人。 Megadev 不隶属于 SEGA CORPORATION，也不受 SEGA CORPORATION 的认可，也与 SEGA CORPORATION 没有任何关系。 instantSonic 是启动这个项目的动力。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Megadev: A Development Kit for the Sega Mega Drive and Mega CD Hardware&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47374745"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/drojaazu/megadev'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://github.com/drojaazu/megadev</guid>
+      <pubDate>Sat, 14 Mar 2026 09:04:39 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47374745</comments>
+    </item>
+    <item>
+      <title>乐高如何搭建新的乐高套装</title>
+      <link>https://www.theverge.com/c/23991049/lego-ideas-polaroid-onestep-behind-the-scenes-price</link>
+      <description>&lt;p&gt;而这一次，乐高终于联系上了。最终原型形式的乐高创意宝丽来 OneStep 的胶片舱打开，旁边是积木搭建的胶片盒和照片卡。这是我们制作的一张 GIF，它在乐高宝丽来和胶片相机之间来回翻转。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; How Lego builds a new Lego set&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47375610"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.theverge.com/c/23991049/lego-ideas-polaroid-onestep-behind-the-scenes-price'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qiine:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Stud.io 非常适合制作定制模型。希望能移植到linux上...&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.theverge.com/c/23991049/lego-ideas-polaroid-onestep-behind-the-scenes-price</guid>
+      <pubDate>Sat, 14 Mar 2026 11:35:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47375610</comments>
+    </item>
+    <item>
+      <title>RAM 套件现在与一根假 RAM 棒和一根真 RAM 棒一起出售</title>
+      <link>https://www.tomshardware.com/pc-components/ram/fake-ram-bundled-with-real-ram-to-create-a-performance-illusion-for-amd-users-1-1-value-pack-offers-desperate-psychological-relief-as-the-memory-shortage-worsens</link>
+      <description>&lt;p&gt;虽然它们会亮起并与您现有的 RGB 生态系统同步，但它们不会影响您计算机的内存容量或性能。尽管美观在 PC 制造中越来越重要，但很少有内存供应商完全接受虚拟或填充内存模块的概念。然而，随着目前内存价格的上涨，很容易看出 V-Color 的 1+1 内存套件等经济高效选项的吸引力。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; RAM kits are now sold with one fake RAM stick alongside a real one&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47375085"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.tomshardware.com/pc-components/ram/fake-ram-bundled-with-real-ram-to-create-a-performance-illusion-for-amd-users-1-1-value-pack-offers-desperate-psychological-relief-as-the-memory-shortage-worsens'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;resters:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是“特朗普化”。游戏电脑的发展，部分归功于贸易战。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;debo_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们应该称假棍子为“NAM”对于“不能访问存储器”。然后你可以告诉你的孩子，他们不可能理解，伙计，因为他们不在那里。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RobotToaster:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不明白。&lt;p&gt;2x8gb 不是比 1x16gb 更快吗，因为它将在双通道中运行？&lt;p&gt;较小容量的内存条不应该更便宜吗，因为它们可以使用较低密度的芯片？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wolvoleo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;至少他们对此是坦率的。&lt;p&gt;即使对于游戏设置，我也不明白这一点，因为假模块仍然会减少气流。&lt;p&gt;此外，游戏板通常有 4 个插槽（在 2 个插槽中）。我会至少填充 2 个，所以我宁愿拥有 2 个模块的匹配套件和 2 个单独的填充器（如果我确实使用它们）。&lt;p&gt;将 2 个内存插槽（RAM）留空是很常见的，因为如果您使用所有 4 个插槽，许多主板无法以最高速度驱动内存。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BoredPositron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一款 RGB 套件，您可以使用 Corsair 假人长达 10 年，让您的造型焕然一新。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FpUser:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;平生第一次听说假内存&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drivingmenuts:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这在计算机中相当于“舒适螺母”。对于绝育的狗来说，这实际上是关于主人，而不是狗。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sidewndr46:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇文章的标题看起来有点戏剧化？人们购买了“空白”产品。 RAM多年来一直是为了它的美观。我个人不明白这一点，但我也没有带有未填充 RAM 插槽的主板。如果一家公司想要出售 50&amp;#x2F;50 的套件，我不确定这实际上是一个问题。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.tomshardware.com/pc-components/ram/fake-ram-bundled-with-real-ram-to-create-a-performance-illusion-for-amd-users-1-1-value-pack-offers-desperate-psychological-relief-as-the-memory-shortage-worsens</guid>
+      <pubDate>Sat, 14 Mar 2026 10:05:58 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47375085</comments>
     </item>
   </channel>
 </rss>
