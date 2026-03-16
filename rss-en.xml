@@ -6,36 +6,18 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Mar 2026 05:20:35 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2026 07:23:51 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>How I write software with LLMs</title>
-      <link>https://www.stavros.io/posts/how-i-write-software-with-llms/</link>
-      <description>&lt;p&gt;I thought that I liked programming, but it turned out that what I like was making things, and programming was just one way to do that. Most of that must be because the models are getting better, but I think that a lot of it is also because I’ve improved my way of working with the models. One thing I’ve noticed is that different people get wildly different results with LLMs, so I suspect there’s some element of how you’re talking to them that affects the results.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47394022"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.stavros.io/posts/how-i-write-software-with-llms/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;indigodaddy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This was on the front page and then got completely buried for some reason. Super weird.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;christofosho:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I like reading these types of breakdowns. Really gives you ideas and insight into how others are approaching development with agents. I&amp;#x27;m surprised the author hasn&amp;#x27;t broken down the developer agent persona into smaller subagents. There is a lot of context used when your agent needs to write in a larger breadth of code areas (i.e. database queries, tests, business logic, infrastructure, the general code skeleton). I&amp;#x27;ve also read[1] that having a researcher and then a planner helps with context management in the pre-dev stage as well. I like his use of multiple reviewers, and am similarly surprised that they aren&amp;#x27;t refined into specialized roles.&lt;p&gt;I&amp;#x27;ll admit to being a &amp;quot;one prompt to rule them all&amp;quot; developer, and will not let a chat go longer than the first input I give. If mistakes are made, I fix the system prompt or the input prompt and try again. And I make sure the work is broken down as much as possible. That means taking the time to do some discovery before I hit send.&lt;p&gt;Is anyone else using many smaller specific agents? What types of patterns are you employing? TIA&lt;p&gt;1. &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;humanlayer&amp;#x2F;advanced-context-engineering-for-coding-agents&amp;#x2F;blob&amp;#x2F;main&amp;#x2F;ace-fca.md" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;humanlayer&amp;#x2F;advanced-context-engineering-f...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.stavros.io/posts/how-i-write-software-with-llms/</guid>
-      <pubDate>Mon, 16 Mar 2026 01:24:09 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47394022</comments>
-    </item>
-    <item>
-      <title>SpiceCrypt: A Python library for decrypting LTspice encrypted model files</title>
-      <link>https://github.com/jtsylve/spice-crypt</link>
-      <description>&lt;p&gt;decrypt_stream(input_file, output_file=None, is_ltspice_file=None) Stream-decrypt from a file path or file object. Supports both the text-based hex/DES format and the Binary File format. output_file (optional): File path (str) or binary-mode file object.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47385011"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/jtsylve/spice-crypt'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rshm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Coming from a brief failed attempt of using ghidra to see if keys were part of binary, this is a welcome news.&lt;p&gt;Next on wishlist is someone doing the same for encrypted fpga verilog blobs.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;userbinator:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;The file header contains two 32-bit keys used to derive a substitution table index and step value for decryption.&lt;/i&gt;&lt;p&gt;In other words, obfuscation.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/jtsylve/spice-crypt</guid>
-      <pubDate>Sun, 15 Mar 2026 07:11:32 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47385011</comments>
+      <title>ASCII and Unicode quotation marks (2007)</title>
+      <link>https://www.cl.cam.ac.uk/~mgk25/ucs/quotes.html</link>
+      <description>&lt;p&gt;by Markus Kuhn Summary: Please do not use the ASCII grave accent (0x60) as a left quotation mark together with the ASCII apostrophe (0x27) as the corresponding right quotation mark (as in `quote'). Background The Unicode and ISO 10646 standards define the following characters: U+0022QUOTATION MARK neutral (vertical), used as opening or closing quotation mark; preferred characters in English for paired quotation marks are U+201C and U+201D U+0027APOSTROPHE neutral (vertical) glyph having mixed usage; preferred character for apostrophe is U+2019; preferred characters in English for paired quotation marks are U+2018 and U+2019 U+0060GRAVE ACCENT U+00B4ACUTE ACCENT U+2018LEFT SINGLE QUOTATION MARK U+2019RIGHT SINGLE QUOTATION MARK this is the preferred character to use for apostrophe U+201CLEFT DOUBLE QUOTATION MARK U+201DRIGHT DOUBLE QUOTATION MARK ASCII and ISO 8859 were only designed to support the very restricted typographic style available to typewriter users. They should not be used as directional quotation marks.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47395147"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.cl.cam.ac.uk/~mgk25/ucs/quotes.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.cl.cam.ac.uk/~mgk25/ucs/quotes.html</guid>
+      <pubDate>Mon, 16 Mar 2026 04:09:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47395147</comments>
     </item>
   </channel>
 </rss>
