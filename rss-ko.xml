@@ -6,78 +6,179 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Korean</description>
     <language>ko</language>
-    <lastBuildDate>Tue, 17 Mar 2026 16:13:38 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 19:14:23 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ko.xml"/>
     <item>
-      <title>Node.js에 가상 파일 시스템이 필요한 이유</title>
-      <link>https://blog.platformatic.dev/why-nodejs-needs-a-virtual-file-system</link>
-      <guid isPermaLink="true">https://blog.platformatic.dev/why-nodejs-needs-a-virtual-file-system</guid>
-      <pubDate>Tue, 17 Mar 2026 14:28:37 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47413195</comments>
-    </item>
-    <item>
-      <title>FFmpeg 8.1</title>
-      <link>https://ffmpeg.org/index.html#pr8.1</link>
-      <description>&lt;p&gt;728 VVC 디코더 개선 사항: IBC, ACT, 팔레트 모드 Vulkan 컴퓨팅 기반 코덱: FFv1(인코딩 및 디코드), ProRes RAW(디코드 전용) 하드웨어 가속 디코딩: Vulkan VP9, VAAPI VVC, OpenHarmony H264/5 하드웨어 가속 인코딩: Vulkan AV1, OpenHarmony H264/5 형식: MCC, G. Vulkan 인코딩 지원 H264와 HEVC가 병합되었습니다. 인코더는 th와 기능 패리티를 갖습니다.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47413525"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://ffmpeg.org/index.html#pr8.1'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>코드 작성 속도가 문제라고 생각했다면; 너한테는 더 큰 문제가 있어</title>
+      <link>https://andrewmurphy.io/blog/if-you-thought-the-speed-of-writing-code-was-your-problem-you-have-bigger-problems</link>
+      <description>&lt;p&gt;당신의 직원 엔지니어가 그런 표정을 짓고 있습니다. 방금 일어난 일이 여기에 있기 때문입니다. 개발자는 그 어느 때보다 빠르게 PR을 제작하고 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; If you thought the code writing speed was your problem; you have bigger problems&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47415919"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://andrewmurphy.io/blog/if-you-thought-the-speed-of-writing-code-was-your-problem-you-have-bigger-problems'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ghgr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 아, ffmpeg의 새 버전이 있습니다. 소스에서 빠르게 빌드하겠습니다... 아니요, 빨리 바이너리를 다운로드하겠습니다&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=9kaIXkImCAM" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=9kaIXkImCAM&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pandaforce:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Khronos는 FFmpeg의 Vulkan 컴퓨팅 코덱에 대한 게시물을 게시했습니다.
-&lt;a href="https:&amp;#x2F;&amp;#x2F;www.khronos.org&amp;#x2F;블로그&amp;#x2F;video-encoding-and-decoding-with-vulkan-compute-shaders-in-ffmpeg" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.khronos.org&amp;#x2F;블로그&amp;#x2F;video-encoding-and-decoding-wit...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;megous:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 rockchip hw 인코딩에 대해 그다지 흥분하지 않을 것입니다. 업스트림 솔루션이 아닌 rkmpp 기반입니다. 이를 위해서는 Rockchip 커널이 필요할 것 같습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gyan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;변경 내역:&lt;p&gt;ffprobe -codec 옵션&lt;p&gt;EXIF 메타데이터 구문 분석&lt;p&gt;gfxcapture: Windows.Graphics.Capture 기반 창&amp;#x2F;모니터 캡처&lt;p&gt;HXVS&amp;#x2F;HXVT IP 카메라 형식용 hxvs 디먹서&lt;p&gt;mpeghdec를 통한 MPEG-H 3D 오디오 디코딩&lt;p&gt;D3D12 H.264 인코더&lt;p&gt;libcairo를 통한 drawvg 필터&lt;p&gt;ffmpeg CLI 타일 HEIF 지원&lt;p&gt;D3D12 AV1 인코더&lt;p&gt;ProRes Vulkan hwaccel&lt;p&gt;DPX Vulkan hwaccel&lt;p&gt;Rockchip H.264&amp;#x2F;HEVC 하드웨어 인코더&lt;p&gt;vf_scale_d3d12 필터 추가&lt;p&gt;JPEG-XS 파서&lt;p&gt;JPEG-XS 디코더 및 libsvtjpegxs를 통한 인코더&lt;p&gt;JPEG-XS 원시 비트스트림 다중화기 및 역다중화기&lt;p&gt;IAMF 프로젝션 모드 Ambisonic 오디오 요소 다중화 및 역다중화&lt;p&gt;vf_mestimate_d3d12 필터 추가&lt;p&gt;xHE-AAC Mps212 디코딩 지원(실험적)&lt;p&gt;이전 HLS 프로토콜 처리기 제거&lt;p&gt;Vulkan 컴퓨팅 코덱 최적화&lt;p&gt;swscale Vulkan 지원&lt;p&gt;LCEVC 메타데이터 비트스트림 필터&lt;p&gt;vf_deinterlace_d3d12 필터 추가&lt;p&gt;ffprobe: 프레임을 읽을 때 스트림 섹션에 참조 필드만 표시&lt;p&gt;ProRes Vulkan 인코더&lt;p&gt;LCEVC 파서&lt;p&gt;MPEG-TS로 내보내기 LCEVC 향상 레이어&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://ffmpeg.org/index.html#pr8.1</guid>
-      <pubDate>Tue, 17 Mar 2026 14:51:57 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47413525</comments>
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lukaslalinsky:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;타이핑과 건물 짓는 일을 덜 수 있다면 더 큰 그림을 이해할 수 있도록 더 많은 에너지를 소비할 수 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;renewiltord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;문제에 대한 솔루션에 참여하고 어떤 형태로 실패하는지 확인하면서 문제를 이해하는 것이 더 쉽습니다. LLM을 사용하면 사전 작업이 단순히 작업이 되도록 솔루션을 구체화할 수 있습니다. 이를 통해 솔루션 공간을 보다 효과적으로 검색할 수 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;petcat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;인간 개발자로서 우리는 '내버려두기'에 어려움을 겪고 있다고 생각합니다. 코드의. 우리가 작성하는(또는 에이전트가 작성하는) 코드는 실제로 솔루션의 중간 표현(IR)일 뿐입니다.&lt;p&gt;예를 들어 GCC는 함수를 인라인하고 루프를 풀며 우리가 신경 쓰지 않는 수많은 기타 최적화를 수행합니다. 그러나 GCC가 생성하는 ASM을 검토할 때(우리는 그렇지 않습니다) "스파게티" 항목에는 관심이 없습니다. 그리고 "높은 결합" 및 "낮은 응집력". 우리는 그것이 작동하는지, 그리고 그것이 해야 할 일이 맞는지 관심을 갖습니다.  그리고 이는 우리가 달성하려는 솔루션을 충실하게 표현한 것입니다.&lt;p&gt;고급 언어의 소스 코드는 더 이상 크게 다르지 않습니다. 상담원은 코드를 작성합니다. 패턴에 대해 안내하고 명백히 잘못된 경우 수정할 수도 있지만 코드는 광범위한 사양, 토론, 제안 검토 및 추가 검토 검토를 통해 나온 작업 항목 결과물일 뿐입니다.&lt;p&gt;잘 안내된 반복 프로세스와 문제&amp;#x2F;해결책 설명은 사람이 코드를 작성하든 상담원이 작성하든 동등한 구현을 생성할 수 있어야 합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;6stringmerc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;현재 세상이 추세이고 이것이 추세이기 때문에 먼저 여러분의 시간을 많이 절약해 드리고자 합니다. &lt;p&gt;편리성은 품질의 적입니다.&lt;p&gt;증거를 원하시나요? 5~10년 전 '빨리 움직이고 부숴버리자'는 결과로 다들 오작동하는 쓰레기 더미가 됐다. 이는 논쟁의 여지가 없습니다.&lt;p&gt;이것은 단순한 관찰일 뿐입니다. 나는 규칙을 만들지 않습니다. 건설적인 독서를 위해 제가 마지막으로 제출한 내용을 참조하세요.&lt;p&gt;지금은 안녕.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;myylogic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;양측 모두 부분적으로 옳다고 생각하지만 서로 다른 실패 모드에 대해 최적화하고 있습니다.&lt;p&gt;속도는 오해를 해결하지는 않지만 이해를 향해 얼마나 빨리 반복할 수 있는지를 변화시킵니다.&lt;p&gt;실제로 무언가를 구축하는 것은 (잘못된 것이더라도) 혼자 생각해서는 얻을 수 없는 피드백 루프를 만듭니다. 특히 ML&amp;#x2F;LLM과 같은 시스템에서는 단순한 아이디어가 아닌 파이프라인에서 동작이 나타나게 됩니다.&lt;p&gt;실제 병목 현상은 입력 속도가 아니라 가정을 얼마나 빨리 검증할 수 있는지에 달려 있습니다.&lt;p&gt;반영 없이 빠른 반복은 혼란을 초래합니다.
+구축이 없는 순수한 사고는 정체로 이어집니다.&lt;p&gt;의도적인 평가와 긴밀한 피드백 루프가 균형을 이루고 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;everdrive:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;회사는 진정으로 좋은 코드를 원하지 않습니다. 개별 팀은 얼마나 많은 일을 추진하는지에 따라 측정됩니다. 어떤 일이 잘 안 될 수도 있다고 경고하는 직원은 "잡초에 빠졌다"는 질책을 받게 될 것입니다. 또는 "지나치게 세부적인 내용에 중점을 두었습니다." 등등. 한동안 이게 이해가 안됐는데, 회사 내부의 행위자들은 정말 성공을 주장하고 싶을 뿐입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gedy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 냉소적이지만 지난 25년 동안 내가 보아온 많은 프로젝트와 회사에서 &lt;i&gt;"우리는 엔지니어링을 기다리고 있습니다... 한숨"&lt;/i&gt;이 매우 편리한 변명이었기 때문에 너무 많은 관리 유형이 으아아아 AI라는 사실에 다소 놀랐습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;furyofantares:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 병목 현상은 문제를 이해하는 것입니다. 아무리 빠르게 타이핑해도 문제가 해결되지 않습니다.&lt;p&gt;왜 안 될까요? 더 빠르게 입력하면 문제를 더 빨리 이해하는 데 도움이 되지 않는 이유는 무엇입니까?&lt;p&gt;&amp;gt; 이 환경에서 코드 출력 속도를 높이면 잘못된 것을 빌드하는 속도가 빨라집니다.&lt;p&gt;왜 잘못된 것을 더 빨리 빌드하여 올바른 것을 더 빨리 알아낼 수 없는 걸까요? 아마도 이 예에서는 어느 쪽이든 잘못된 것을 만들려고 했을 것입니다. 그렇지 않습니까?&lt;p&gt;저는 종종 내가 원하는 것이 무엇인지 파악하기 위해 무언가를 만드는데, 프로토타입 버전을 만드는 것이 더 저렴할수록 그 말은 더욱 사실이 됩니다.&lt;p&gt;&amp;gt; 잘못된 기능을 더 빨리 구축하고, 출시하고, 실패하는 것을 지켜본 다음 누군가 "사용자와 더 많은 대화가 필요합니다"라고 말하는 복고 작업을 수행하게 됩니다. 모두가 엄숙하게 고개를 끄덕이고 나면 아무 것도 변하지 않습니다. &lt;p&gt;아마도 우리는 단지 냉소적이기 때문일 것입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;luxuryballs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이는 이미 불완전하거나 인력이 부족한 개발 파이프라인을 갖고 있는 조직에 많은 문제를 야기할 것입니다. 이러한 문제는 경영진이 이미 연결이 끊어져 있고 실제 병목 현상이 무엇인지 인식하지 못하는 경우가 많으며 공급업체 슬라이드 데크에 얽매이는 경우도 자주 발생합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gammalost:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;간단한 규칙으로 해결하는 것은 쉬운 것 같습니다. 하나의 PR을 푸시하세요. PR 하나를 검토하다&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://andrewmurphy.io/blog/if-you-thought-the-speed-of-writing-code-was-your-problem-you-have-bigger-problems</guid>
+      <pubDate>Tue, 17 Mar 2026 17:48:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47415919</comments>
     </item>
     <item>
-      <title>오픈수세 칼파(OpenSUSE Kalpa)</title>
-      <link>https://kalpadesktop.org/</link>
-      <description>&lt;p&gt;Kalpa 설치 문서 기여 및 커뮤니케이션 특별 감사 개요 Kalpa Kalpa는 플라즈마 데스크톱 환경을 제공하는 원자 및 트랜잭션 Linux 데스크톱입니다. KDE 프로젝트에서 데스크톱은 Tumbleweed에서 파생됩니다. 기본 시스템은 MicroOS에서 파생됩니다. openSUSE 프로젝트 멤버 설치 설치 미디어 다운로드 설치 ISO 문서 문서 페이지를 참조하세요. 기여 및 커뮤니케이션 Kalpa 매트릭스 채팅 Mastodon의 Kalpa openSUSE 포럼의 Kalpa OpenBuildService의 Kalpa 버그 보고서 기능 요청 Kalpa를 가능하게 한 많은 무거운 작업을 수행한 Aeon에게 특별한 감사를 드립니다. Codeberg는 웹 사이트를 배포하고 싶지 않은 Zola를 호스팅하는 사이트를 제공했습니다. Juice는 눈에 피가 나지 않는 웹 사이트를 더 쉽게 만들 수 있게 해 주었습니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; OpenSUSE Kalpa&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47412726"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://kalpadesktop.org/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>일리노이주 운영 체제 계정 연령 청구서 도입</title>
+      <link>https://www.ilga.gov/Legislation/BillStatus?DocTypeID=HB&amp;DocNum=5511</link>
+      <description>&lt;p&gt;Margaret Croke 하원 수석 공동 후원자 대표 Manley 추가 2026년 2월 18일 하원 공동 후원자 대표 Angelica Guerrero-Cuelar 추가 2026년 2월 18일 하원 공동 후원자 대표 추가&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Illinois Introducing Operating System Account Age Bill&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47416131"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ilga.gov/Legislation/BillStatus?DocTypeID=HB&amp;DocNum=5511'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;raphinou:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;getaurora.dev&amp;#x2F;en&amp;#x2F;"를 설치했습니다. rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;getaurora.dev&amp;#x2F;en&amp;#x2F;&lt;/a&gt;는 기술이 아닌 사용자를 위한 또 다른 원자 Linux 배포판이며 정말 좋습니다. 나는 그 아키텍처가 kalpa보다 낫다는 주장을 읽었지만 다시 찾지 못했고 의견을 가질 만큼 충분한 지식이나 경험도 없습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TiredOfLife:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Ventoy 증오는 무엇입니까? SuSe 배포판을 제외한 모든 Linux 배포판은 Ventoy로 설치할 수 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zokier:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;다음 블로그 게시물은 유용한 맥락을 제공할 수 있습니다. &lt;a href="https:&amp;#x2F;&amp;#x2F;sfalken.tech&amp;#x2F;posts&amp;#x2F;2024-06-08-how-do-aeon-and-kalpa-relate&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;sfalken.tech&amp;#x2F;게시물&amp;#x2F;2024-06-08-how-do-aeon-and-kalpa-...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sach1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 규칙은 랜딩 페이지를 제외하고 iso 페이지에 대한 지금 다운로드 유형 버튼의 이점을 누릴 수 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;999900000999:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것은 멋진 아이디어이지만 어떤 문제를 해결하고 있는지는 확실하지 않습니다. 텀블위드는 이미 훌륭해요&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;giancarlostoro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 Atomic Linux를 사용해 보고 싶었고, Fedora 버전을 사용해 본 것 같습니다. 어떤 이유로든 저에게는 전혀 효과가 없었습니다. 그래서 Arch에 포기하고 La EndeavourOS를 사용해 보았습니다. 그 이후로는 뒤돌아보지 않았습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stryan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Kalpa는 훌륭하고 알파 상태보다 훨씬 뛰어납니다. 저는 몇 달 동안 문제 없이 노트북에서 실행해 왔습니다. 업데이트에 대해 걱정할 필요가 없고 가끔씩 재부팅하기만 하면 대부분의 작업이 제대로 작동한다는 점이 정말 좋았습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;quantummagic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 웹페이지는 독자에게 동기를 부여하는 데 효과적이지 않습니다.&lt;p&gt;플라즈마 데스크탑 환경이 무엇인지 이해합니다.  그런데 "원자적 트랜잭션 Linux"란 무엇입니까?    대안의 장점은 무엇입니까?   비슷한 다른 프로젝트는 무엇입니까?  특히 이번 프로젝트를 하게 된 동기는 무엇인가요?   가장 중요한 것은 왜 그것을 사용해야 합니까?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dizhn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;흥미롭게도 그들은 codeberg에서 호스팅하고 있습니다. Opensuse는 Suse에서 제공하는 상당히 확립된 호스팅 빌드 아키텍처를 갖추고 있습니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://kalpadesktop.org/</guid>
-      <pubDate>Tue, 17 Mar 2026 13:54:17 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47412726</comments>
+&lt;p&gt;&lt;strong&gt;Top 23 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;clcaev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;공공도서관은 어떻게 이를 준수할 것인가?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fredgrott:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;내가 발표할 날짜는 다음과 같습니다....&lt;p&gt;1 10 0000&lt;p&gt;또는 더 나은&lt;p&gt;1 10 -2000&lt;p&gt;이것은 역사상 가장 쓸모없는 법칙이 될 것입니다&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TutleCpt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나의 미래 OS: &lt;a href="https:&amp;#x2F;&amp;#x2F;agelesslinux.org" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;agelesslinux.org&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;albertsw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;루트는 몇 살입니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wosined:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Karens는 어리석은 청구서를 만들고 있습니다. OS란 무엇이고 무엇이 OS가 아닌가?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;saityi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;오픈소스 운영 체제가 이러한 기능을 준수하고 추가하더라도 개인이 OS를 설치하기 전에 이를 제거하고 API 요청을 차단하는 것을 어떻게 막을 수 있을까요? 아니면 더미 응답을 제공하나요? 결국 그것은 오픈 소스입니다.&lt;p&gt;정부는 인터넷에 연결하는 모든 사람의 OS에 이 API가 있는지 확인하고 규정을 준수하지 않는 개인을 추적하는 일종의 자동화된 검사를 요구할 예정입니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;glitchc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;작성된 법률은 주로 소셜 미디어 플랫폼을 대상으로 합니다. OS가 이를 준수하려면 계정 생성 중에 사용자가 제공한 생년월일을 기록하는 필드를 제공하기만 하면 됩니다. 운영자는 이 정보의 정확성을 확인하거나 로컬 OS 설치 자체가 아닌 다른 곳에 이를 기록할 책임이 없습니다. 내 생각엔 우리는 안전할 것 같아.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;firtoz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;대부분의 경우 13세 미만은 서비스를 제공할 수 없기 때문에 이제 모든 서비스에서 나이를 물어봐야 하기 때문에 다소 편리합니다. 간단한 API라면 상당히 편리할 것입니다. 그렇지 않습니까?&lt;p&gt;이 정보(예: 부울로 &gt;13, 정수로 나이 또는 날짜로 생일)를 제공할지 여부를 선택할 수 있는 권한 시스템과 연결하면 나쁘지 않을 것 같습니다.&lt;p&gt;물론 모든 내용을 읽지는 않았습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ottah:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;입법 과정에 대한 이러한 조정된 주 차원의 공격은 미친 짓입니다. 이 사람들은 통치의 기본을 수행하는 데 신경을 쓰지 않는 것 같지만, 항상 주를 횡단하는 악몽 같은 연료를 공급할 시간을 찾습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;1970-01-01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;"하나의 이상한 트릭" 모든 정부가 싫어하는 것? OS가 계정과 함께 작동하도록 강요하지 마세요. "사용자 계정" UNIX의 인공물입니다. 자동차 시동을 걸고, 이메일을 보내고, 운영 체제를 부팅하는 데에는 계정이 필요하지 않습니다. 이해하기 어렵다는 건 알지만 사실이에요.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;strongpigeon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;여기 사람들은 이에 대해 매우 반대하는 것 같지만 저는 실제로 그렇게 생각하지 않습니다. 이를 위해서는 나이를 묻는 양식과 이를 읽을 수 있는 API만 제공하면 됩니다. 그렇죠?&lt;p&gt;물론 제가 놓친 부분이 있나요? 미끄러운 비탈길에 대한 두려움 때문에 반발이 일어나는 걸까요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pengaru:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;경찰이 나타나서 컴퓨팅이 권리가 아니라 특권이라는 점을 설명해주기를 기대합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;johnisgood:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;정확히 그 이유는 무엇입니까? 네, 메타가 배후에 있다는 건 알지만, 터무니없다면 당연히 버릴 겁니다. 그렇죠... 그렇죠?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;2OEH8eoCRo0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;고마워요 바보들. 괴상한 사람들은 다른 방향으로 극대주의자이기 때문에 우리는 가능한 가장 형편없는 연령 확인을 받고 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tracker1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것이 13세 미만의 사용자를 추적할 수 없다는 연방법과 어떻게 혼합될지 궁금합니다.  그러면 이것이 모든 서버 요청에 전달되는 브라우저 API 헤더로 강제 적용됩니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anthk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;"자유 소프트웨어, 자유 사회"를 읽고 공유하세요. 지금.&lt;p&gt;Richard Stallman이 오래 전에 이에 대해 조언해 주었습니다.&lt;p&gt;Plan9이 GPL에 다시 라이센스를 받게 되어 다행입니다. 9front가 완전히 무료는 아닐 수도 있지만 GNU+Linux가 완전히 중단될 경우를 대비한 조치입니다.&lt;p&gt;그리고 예, Trisquel(초보 사용자), GUIX(전문가) 및 Hyperbola(전문가 및 프로토콜 순수주의자)를 사용해 보세요.&lt;p&gt;무료 JS가 아닌 모든 Google, Amazon, Facebook, Apple, Netflix 서비스를 피하세요.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hypeatei:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이를 시행하기 위해 그들은 무엇을 할 예정입니까? '작동'하는 오픈소스 프로젝트를 중단하세요. 사용자가 일리노이에서 소프트웨어를 다운로드했기 때문에? 절대 농담이고 모두가 그런 식으로 다루어야 합니다. 여기서 고급 규정 준수는 감시 상태에 대한 암묵적인 지원을 의미합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TheChaplain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;OpenBSD나 Haiku가 어떻게 준수할지 궁금합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Slow_Hand:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;제가 착각한 것이 아니라면 Meta는 최근 이 모든 연령 확인 법안을 위해 대대적인 로비를 벌이고 있습니다.&lt;p&gt;그들의 전략은 스스로 연령을 확인하는 책임을 외부화하여 COPPA와 같은 아동 보호법 위반 시 책임에 대한 노출을 줄이는 것 같습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thrill:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;"이 컴퓨터의 사용은 일리노이 주에서 불법입니다. 여러분의 친근한 이웃 SWAT 팀에 통보되었습니다."&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;exabrial:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;왜 갑자기 모든 파란색 주들이 이 BS를 수행하고 있습니까? 무슨 일이 일어나고 있으며 이것이 정부에 어떤 통제권을 제공하고 있습니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mikestorrent:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 모든 것이 마음에 들지는 않지만, 일어날까 봐 걱정했던 것과 비교하면 이 아이디어는 그다지 나쁘지 않습니다.&lt;p&gt;제가 예상했던 것은 OS 공급업체가 실제로 연령 확인을 수행하도록 명령받은 다음 웹 자격 증명 및 보안 증명을 사용하여 이를 제출하여 상대방이 모든 것을 신뢰할 수 있도록 하고, 오픈 소스 OS를 혼합에서 잠그고 더 많은 것을 만들게 될 것이라는 것이었습니다. 우리가 이미 가지고 있는 것보다 온라인으로 둘러싸인 정원. 예를 들어 간단한 확인란이 될 것이라고 생각했습니다. Cloudflare - &amp;quot;[ ] 성인 사용자만 허용&amp;quot; 또는 무엇이든 - 그리고 폐쇄 소스 시스템을 사용하지 않는 사람에게는 인터넷의 방대한 범위가 제한을 받게 될 것입니다.&lt;p&gt;이제 이는 부모가 OS에 "이것은 어린이용 계정입니다"라고 알리는 방법인 것 같습니다. 그런 쓰레기를 구현하지 않고도 아이들이 연결하는 것을 사전에 쉽게 차단할 수 있도록 웹사이트로 전달되도록 하세요. 그렇습니다. 어린이가 우회하는 것이 잠재적으로 훨씬 더 쉽습니다. 하지만 OS 내에서 그런 문제를 해결할 수 있는 어린이라면 어쨌든 그냥 지우고 다시 설치할 수 있을 텐데 무슨 상관이겠습니까?&lt;p&gt;어떤 문제가 발생할 수 있는지 계속해서 확인하려고 노력하는 자녀를 둔 부모로서 저는 이 싸움에서 잠재적인 무기를 하나 더 얻게 되었음을 감사하게 생각합니다.&lt;p&gt;이렇게 진행되고 있다는 사실에 조금 안도하여 제가 바보인지 아닌지 말해 줄 수 있는 사람이 있을까요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spullara:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이건 완전히 미친 짓이에요. 이런 종류의 법안을 영원히 없애려면 일종의 헌법 개정이 필요합니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.ilga.gov/Legislation/BillStatus?DocTypeID=HB&amp;DocNum=5511</guid>
+      <pubDate>Tue, 17 Mar 2026 18:06:07 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47416131</comments>
     </item>
     <item>
-      <title>해킹 불가능한 마이크로소프트 엑스박스 원(Xbox One)이 '블리스'에 의해 해킹당했다.</title>
-      <link>https://www.tomshardware.com/video-games/console-gaming/microsofts-unhackable-xbox-one-has-been-hacked-by-bliss-the-2013-console-finally-fell-to-voltage-glitching-allowing-the-loading-of-unsigned-code-at-every-level</link>
-      <description>&lt;p&gt;" (이미지 출처: Markus 'Doom' Gaasedelen 비디오 프레젠테이션)Xbox One을 그토록 안전하고 특별하게 만든 이유. Gaasedelen은 이 정보를 전달하기 위해 이전 작업과 프레젠테이션을 참조했습니다. 이미지 1/3(이미지 출처: Markus 'Doom' Gaasedelen 비디오 프레젠테이션)(이미지 출처: Markus 'Doom' Gaasedelen 비디오 프레젠테이션)(이미지 출처: Markus 'Doom' Gaasedelen 비디오 프레젠테이션)실리콘의 부팅 ROM에 대한 하드웨어 공격으로, Gaasedelen은 공격이 패치 불가능하다고 말합니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Microsoft's 'unhackable' Xbox One has been hacked by 'Bliss'&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47413876"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.tomshardware.com/video-games/console-gaming/microsofts-unhackable-xbox-one-has-been-hacked-by-bliss-the-2013-console-finally-fell-to-voltage-glitching-allowing-the-loading-of-unsigned-code-at-every-level'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>'비밀요원': 활기차지만 폭력적인 브라질 탐험(2025)</title>
+      <link>https://theasc.com/articles/the-secret-agent-cinematography</link>
+      <description>&lt;p&gt;우리는 불행이 다른 사람들에게 일어난다고, 고통을 당하거나 죽는 것은 다른 사람들이라고 믿는 경향이 있습니다. 또한 수차가 있는 등고선이 있는 경우 Panavision 줌을 사용했습니다. 저는 컬러 그레이딩에서 텍스처를 사용하여 작업하는 것을 좋아합니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; 'The Secret Agent': Exploring a Vibrant, yet Violent Brazil (2025)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47414440"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://theasc.com/articles/the-secret-agent-cinematography'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Jerrrrrrrry:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;키 비교 시간에 맞춰 정확히 발생한 전압 강하를 생성한 후 계속되는 스파이크를 생성했습니다.&lt;p&gt;Irl noop 및 강제 실행 제어 흐름이 효과적으로 true를 반환하도록 했습니다.&lt;p&gt;유용합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nxc18:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;후속작이 출시된 지 5년 반이 될 때까지 해킹되지 않았기 때문에 실질적으로 해킹할 수 없는 것으로 간주됩니다.&lt;p&gt;Xbox를 계속 만든다고 가정하면 다음 세대에서 이를 완화할 수 있는 방법을 찾을 수 있을지 궁금합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stinmpy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Marcus는 MSRC의 Microsoft에서 근무했습니다. 그가 이번 해킹에 내부 지식을 사용했는지 궁금합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Simulacra:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;절대로 "해킹할 수 없는" 것을 "해킹할 수 없다"고 불러서는 안 됩니다. ...&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.tomshardware.com/video-games/console-gaming/microsofts-unhackable-xbox-one-has-been-hacked-by-bliss-the-2013-console-finally-fell-to-voltage-glitching-allowing-the-loading-of-unsigned-code-at-every-level</guid>
-      <pubDate>Tue, 17 Mar 2026 15:16:29 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47413876</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;beepbooptheory:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[지연]&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pearlsontheroad:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;70년대 브라질에서 성장한 나는 &lt;비밀요원&gt;의 촬영법을 생각했다. 그 시대의 미학을 완벽하게 구현했습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anderber:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;비밀요원&gt;은 일반 영화를 보는 관객에게 쉬운 영화는 아니었다. 특이한 결말과 노골적인 폭력이 있었고, 언어도 달랐습니다. 그렇다고 해서 오스카상을 하나도 받지 못한 것이 너무 안타깝습니다. OBAA가 왜 많은 상을 받았는지 알겠습니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://theasc.com/articles/the-secret-agent-cinematography</guid>
+      <pubDate>Tue, 17 Mar 2026 15:56:09 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47414440</comments>
     </item>
     <item>
-      <title>행복을 정신질환으로 분류하자는 제안</title>
-      <link>https://pmc.ncbi.nlm.nih.gov/articles/PMC1376114/</link>
-      <guid isPermaLink="true">https://pmc.ncbi.nlm.nih.gov/articles/PMC1376114/</guid>
-      <pubDate>Tue, 17 Mar 2026 13:03:38 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47412097</comments>
+      <title>Spice Data (YC S19)에서 제품 전문가를 고용합니다</title>
+      <link>https://www.ycombinator.com/companies/spice-data/jobs/P0e9MKz-product-specialist-new-grad</link>
+      <description>&lt;p&gt;Spice Data의 제품 전문가(신규 졸업생) | Y Combinator Spice Data Enterprise제품 전문가(신규 졸업생)를 위한 레스토랑 데이터$80K - $100K•0. 5% 지분 인터뷰 정보 직위, 경험 및 경력 목표에 대한 15분 소개 통화 데이터 정리 기술 및 사고 과정을 검토하기 위한 첫 번째 30분 인터뷰 데이터 정리 및 문제 해결에 초점을 맞춘 두 번째 30분 인터뷰 현장 방문 우리에 대해 더 알아보고 우리가 어떻게 협력할지에 대한 느낌 얻기 확장된 제안 Spice 데이터 정보 세계 최대 기업이 더 많은 외부 데이터를 구매하고 있음 우리는 선도적인 Fortune 500 기업에 데이터 라이선스를 부여합니다. 우리 제품은 특정 데이터 세트가 아니라 오히려 능력입니다. 시간이 지남에 따라 고품질 데이터를 신속하게 수집, 정리 및 안정적으로 제공하기 위해 우리는 현재 레스토랑 업계에 주력하고 있습니다. Richard Kreger(CEO, 기업 영업) 및 Cameron Cairns(CTO, 소프트웨어 엔지니어)가 2019년에 설립했습니다. 아주 작은 팀, 모두 샌프란시스코에 기반을 두고 있습니다. YC와 몇 명의 엔젤만으로 구성됨(즉, 최소한의 희석) Profitable Spice DataFounded:2019Batch:S19Status:ActiveLocation:San Francisco 창립자Richard Kreger 창립자Richard Kreger 창립자.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Spice Data (YC S19) Is Hiring a Product Specialist&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47415350"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/spice-data/jobs/P0e9MKz-product-specialist-new-grad'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.ycombinator.com/companies/spice-data/jobs/P0e9MKz-product-specialist-new-grad</guid>
+      <pubDate>Tue, 17 Mar 2026 17:00:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47415350</comments>
+    </item>
+    <item>
+      <title>HN 표시: Antfly: Go의 분산, 다중 모드 검색, 메모리 및 그래프</title>
+      <link>https://github.com/antflydb/antfly</link>
+      <description>&lt;p&gt;Antfly Antfly는 etcd의 raft 라이브러리를 기반으로 구축된 분산 검색 엔진입니다. 내장된 RAG 에이전트는 검색 증강 생성을 통해 이 모든 것을 하나로 묶습니다. com/antflydb/antfly/pkg/client pkg/client TypeScript @antfly/sdk ts/packages/sdk Python antfly py/ React @antfly/comComponents ts/packages/comComponents PostgreSQL pgaf 확장 rs/pgaf pgaf — PostgreSQL 확장 pgaf는 Antfly 검색을 Postgres로 가져옵니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Antfly: Distributed, Multimodal Search and Memory and Graphs in Go&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47414291"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/antflydb/antfly'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrprincerawat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;비슷한 것을 만들어볼까 생각하고 있었는데, 잘 됐습니다!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SkyPuncher:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Graph Traversal이 잠금 해제하는 실용적인 기능 유형이 무엇인지 이해하는 데 도움을 주실 수 있나요?&lt;p&gt;몇 가지 제품에서 본 적이 있는데 사람들이 어떻게 사용하는지 잘 이해가 되지 않습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Linell:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것은 매우 흥미 롭습니다! 귀하의 TypeScript SDK 링크가 404: &lt;a href="https:&amp;#x2F;&amp;#x2F;antfly.io&amp;#x2F;docs&amp;#x2F;sdks" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;antfly.io&amp;#x2F;docs&amp;#x2F;sdks&lt;/a&gt; -&amp;gt; &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;antflydb&amp;#x2F;antfly-ts" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;antflydb&amp;#x2F;antfly-ts&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;didip:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;query_test.go에서는 하이브리드 검색이 어떻게 실행되고 있는지 알 수 없습니다.&lt;p&gt;재미있게 하이브리드 검색도 만들고 있는데 두 목록(의미 및 키워드)을 병합하고 중요도 점수를 다시 지정하는 방법을 보고 싶습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rigorclaw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Elasticsearch를 떠나는 팀의 일반적인 마이그레이션 경로는 어떤가요? 전체 재색인을 수행하거나 점진적으로 수행할 수 있습니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jnstrdm05:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이거 심상찮아 보이네요!&lt;p&gt;이걸 직접 만드신 건가요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thefogman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;흥미로운 프로젝트입니다.&lt;p&gt;지금은 에이전트 시스템을 위한 별도의 벡터 DB, Elasticsearch, 그래프 저장소 등의 프로젝트가 있습니다.&lt;p&gt;Antfly가 이 세 가지를 모두 결합한다고 하면 쿼리 시 실제로 어떤 모습일까요? 의미론적 유사성 + 전체 텍스트 + 그래프 순회를 함께 수행하는 하나의 쿼리를 작성할 수 있습니까, 아니면 동일한 바이너리에 존재하는 세 개의 개별 인덱스에 더 가깝습니까?&lt;p&gt;실제로 좋은 CLI와 함께 제공됩니까? MCP에서 벗어나고 있습니다. 클라이언트를 작성할 필요 없이 터미널에서 물건을 파이프하고, 쿼리를 실행하고, 인덱스를 관리할 수 있나요? 솔직히 말해서 그것은 MCP 서버보다 나에게 더 중요합니다.&lt;p&gt;그리고 re: Termite + 단일 바이너리, 그냥 `antfly swarm`을 실행하고 거기에 문서와 이미지를 던지고 API 키 없이 작동하는 로컬 RAG 설정을 가질 수 있다는 생각인가요? 그렇다면 Docker 작성 작업을 많이 줄일 수 있습니다.&lt;p&gt;이 분산 노드와 단일 노드를 실제로 실행하는 사람은 누구인가요? 일반적인 사용자 경험이 어떤지 궁금합니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/antflydb/antfly</guid>
+      <pubDate>Tue, 17 Mar 2026 15:45:15 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47414291</comments>
+    </item>
+    <item>
+      <title>HN 표시: AI 에이전트 전용 March Madness 대진표 챌린지</title>
+      <link>https://www.Bracketmadness.ai</link>
+      <description>&lt;p&gt;전체 지침: GET https://bracketmadness. ai/api/agent-instructions 등록: POST https://bracketmadness. ai/api/bracket 추천 제출: POST https://bracketmadness.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: March Madness Bracket Challenge for AI Agents Only&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47412015"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.Bracketmadness.ai'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lunatuna:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;사용해 보니 완벽하게 작동합니다. 기본 프로세스 사이클은 깔끔하고 따르기 쉽습니다. 접근 방식에 대해 약간의 논의를 거쳐 CC Haiku에 보관했습니다.&lt;p&gt;100% 명확하지 않은 유일한 것은 잠금 모드였습니다. 게임이 시작되기 전에 잠궈야 하나요? 아니면 내가 가지고 있는 모든 것이 자동으로 잠기나요? Claude는 그것이 자동으로 잠길 것이라고 생각했습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;calebelac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;정말 재미있는 아이디어에요!
+상담원이 페이지를 읽을 때와 사람이 읽을 때를 감지하는 솔루션이 마음에 듭니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;strujillo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;자율 에이전트를 위한 상호 작용을 디자인하는 것은 까다롭습니다. 인간이 UI를 클릭할 것이라고 가정할 수는 없습니다. 저는 희소 회귀를 사용하여 원시 데이터에서 물리적 법칙을 도출하는 경량 Python 시스템인 자율 과학 에이전트를 실험해 왔습니다. 태양의 ~27일 자전 주기를 93% 정확도 이내로 추정할 수 있었고 태양풍 측정에서 온도 ∝ v^3.40 거듭제곱 법칙도 발견했습니다. API 우선 브래킷 챌린지를 구축하는 것과 같은 경험은 동일한 요구 사항을 반영합니다. 즉, 에이전트가 프런트엔드 로직으로 씨름하지 않고 분석에 집중할 수 있도록 명확한 기계 판독 가능 인터페이스를 구축합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ucsandman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아 이거 정말 마음에 드네요. MoltFire가 곧 그 엉덩이를 왁스칠할 예정입니다! 먼저 무엇을 얻나요? 클로드 토큰 100달러?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rapind:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아주 멋지다. 나는 비슷한 일을 하려고 했지만(3월 광란 괄호가 아닌) 사용자가 직접 제공하지 않은 URL(claude는 허용 목록에 있는 사이트만)을 따르지 않는다는 점에서 챗봇에 문제가 발생하여 인증을 위한 실제 POST 등을 수행할 수 없었습니다. Claude.ai는 대신 반응 앱(조각)을 생성합니다. 결국 이를 위해 원격 MCP를 구축했지만 HATEOS 스타일 REST API를 사용하는 것이 훨씬 더 좋습니다.&lt;p&gt;팁이 있나요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spankalee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;실제로 여기에도 인간이 선택한 브래킷이 있거나 최소한 비교를 위해 다양한 소스에서 전문가가 선택한 브래킷 몇 개를 가져오는 것이 좋을 것입니다.&lt;p&gt;여기서 우위는 귀하가 선택한 모델이 아니라 어떤 정보 소스를 제공하느냐에 따라 결정될지 궁금합니다. 이번 시즌은 훈련 세트에 포함되지 않으므로 모든 팀과 선수, 부상, 전문가 분석에 대한 통계가 필요합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cbm-vic-20:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;몇 가지 "제어" 기능을 갖는 것이 흥미로울 것입니다. 예를 들어 각 게임에서 무작위로 승자를 선택하는 것과 각 게임에서 항상 가장 높은 시드를 승자로 선택하는 것과 같은 대괄호입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zephyreon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;저는 일반적으로 생산적이라고 생각하는 이유로(예를 들어 몰트북이 아닌) AI 사용에 대해 꽤 독선적입니다. 그러나 이는 실제로 매우 깔끔하고 에이전트에게 통계에 대한 여러 차례의 분석을 수행하도록 지시하지 않는다는 가정하에 많은 토큰 사용이 필요하지 않습니다. :)&lt;p&gt;에이전트가 어떤 전략을 구현하고 &amp;amp; 의미 있는 추세가 있는지 여부.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elpakal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;정말 멋진 아이디어입니다. 제 아들은 4학년 과학 실험의 괄호를 채우기 위해 다양한 LLM을 사용하고 있으며, 그런 다음 이를 전문가와 비교할 것입니다. 전략 및 영감을 불러일으키는 아이디어가 마음에 듭니다. 첫 번째 패스에서 가장 좋아하는 후보가 모두 선택되었기 때문입니다.&lt;p&gt;접선적으로 AI 예측의 영향 지점이 확산되는 것을 볼 수 있을지 궁금합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;npilk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;정말 좋아요! 바로 오늘 아침에 나는 발톱에게 ESPN의 괄호를 작성해달라고 요청하고 나와 함께 그룹에 가입하도록 초대했습니다. 약간 투박했지만(iframe 내 디즈니 가입은 까다로웠고 JS로 선택하기 위해 브래킷을 탐색하는 데 몇 번의 반복 시도가 필요했습니다) 실제로 작동했을 때 공상 과학 소설처럼 느껴졌습니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.Bracketmadness.ai</guid>
+      <pubDate>Tue, 17 Mar 2026 12:56:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47412015</comments>
+    </item>
+    <item>
+      <title>Show HN: Crust – TypeScript 및 Bun을 위한 CLI 프레임워크</title>
+      <link>https://github.com/chenxin-yan/crust</link>
+      <description>&lt;p&gt;Crust 구성 가능한 모듈이 포함된 TypeScript 우선 Bun 기본 CLI 프레임워크입니다. 1이지만 마이너 릴리스 사이에는 주요 변경 사항이 예상됩니다. 패키지 패키지 설명 버전 다운로드 @crustjs/crust CLI 도구 — 독립 실행형 실행 파일 구축 및 배포 @crustjs/core 핵심: 명령 정의, 인수 구문 분석, 라우팅, 플러그인, 오류 @crustjs/plugins 공식 플러그인: 도움말, 버전, 자동 완성 @crustjs/style 터미널 스타일링 기초 @crustjs/prompts 대화형 터미널 프롬프트 @crustjs/validate 유효성 검사 도우미 @crustjs/store 다음을 사용하는 CLI 앱에 대한 DX-first, 형식화된 지속성 config/data/state/cache 분리 @crustjs/skills Crust 명령 정의에서 에이전트 기술 생성 @crustjs/create create-xxx 도구 구축을 위한 헤드리스 스캐폴딩 엔진 create-crust 프로젝트 스캐폴딩 도구 시작하기 bun create crush my-cli cd my-cli bun run dev.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Crust – A CLI framework for TypeScript and Bun&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47408727"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/chenxin-yan/crust'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rgbrgb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;좋습니다. 출시를 축하합니다. 아이디어를 얻으려면... 독립형 Hello World CLI 바이너리의 크기는 얼마나 됩니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;camkego:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;유용해 보이네요.  하지만 백엔드 세계와 프런트엔드 세계가 어떻게 계속 갈라지는지는 흥미롭습니다. 인정해야겠습니다. 제목만 보고 이게 무슨 내용인지 전혀 몰랐습니다. "CLI 프레임워크"?  그러나 백엔드 영역에서는 이를 일반적으로 "인수 파서"라고 합니다. 또는 "명령줄 인수 파서". 하지만 일부 기능이 누락되었을 수도 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dnlzro:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;잠깐만요, 게시물의 GitHub 링크가 깨졌습니다(&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;chenxin-yan&amp;#x2F;crust" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;chenxin-yan&amp;#x2F;crust&lt;/a&gt;여야 함).&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bennettpompi1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이거 멋지다! README를 구체화하는 것이 좋습니다. 토론 전에 링크를 클릭했는데 약간 혼란스러웠습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;matt_kantor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 1.0 이전 버전은 의미론적 버전 관리를 엄격하게 따르지 않습니다.&lt;p&gt;까다롭게 말해서 죄송하지만 그렇습니다. 의미적 버전 관리[0]는 주요 버전이 0인 동안 임의 변경을 허용합니다.&lt;p&gt;&amp;gt; 메이저 버전 0(0.y.z)은 초기 개발용입니다. 언제든지 무엇이든 바뀔 수 있습니다. 공개 API는 안정적인 것으로 간주되어서는 안 됩니다.&lt;p&gt;[0]: &lt;a href="https:&amp;#x2F;&amp;#x2F;semver.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;semver.org&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;landl0rd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;예제 섹션이 있나요? 데모를 보는 것이 도움이 될 것입니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/chenxin-yan/crust</guid>
+      <pubDate>Tue, 17 Mar 2026 04:43:29 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47408727</comments>
+    </item>
+    <item>
+      <title>GPT‑5.4 미니 및 나노</title>
+      <link>https://openai.com/index/introducing-gpt-5-4-mini-and-nano</link>
+      <guid isPermaLink="true">https://openai.com/index/introducing-gpt-5-4-mini-and-nano</guid>
+      <pubDate>Tue, 17 Mar 2026 17:07:06 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47415441</comments>
+    </item>
+    <item>
+      <title>Java 26이 출시되었으며 이를 통해 미래를 위한 견고한 기반이 되었습니다.</title>
+      <link>https://hanno.codes/2026/03/17/java-26-is-here/</link>
+      <description>&lt;p&gt;이 테이블에는 미리보기 상태, 속한 프로젝트, 추가한 기능 종류 및 Java 25 이후 변경된 사항이 포함되어 있습니다. JEP 516은 GC에 구애받지 않는 형식으로 Java 객체를 캐싱하여 사전 캐시에 대한 지원을 ZGC(및 해당 문제에 대한 다른 가비지 수집기)로 확장합니다. 새로운 캐시 형식이 GC에 구애받지 않는 이유&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Java 26 is here, and with it a solid foundation for the future&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47416548"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://hanno.codes/2026/03/17/java-26-is-here/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wiseowise:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;안드로이드는 늘 그랬듯 혼란스럽습니다. JetBrains kopium을 구입했기 때문에 Google이나 생태계가 Java에 관심을 두지 않는다는 점은 부끄러운 일입니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://hanno.codes/2026/03/17/java-26-is-here/</guid>
+      <pubDate>Tue, 17 Mar 2026 18:44:09 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47416548</comments>
     </item>
   </channel>
 </rss>
