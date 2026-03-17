@@ -6,62 +6,15 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Mar 2026 04:56:48 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 07:12:25 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>Monkey Island for Commodore 64 Ground Up</title>
-      <link>https://pixeldust.se/monkey-island-project</link>
-      <guid isPermaLink="true">https://pixeldust.se/monkey-island-project</guid>
-      <pubDate>Tue, 17 Mar 2026 04:00:28 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47408441</comments>
-    </item>
-    <item>
-      <title>Every layer of review makes you 10x slower</title>
-      <link>https://apenwarr.ca/log/20260316</link>
-      <description>&lt;p&gt;But there’s one rule of thumb that someone showed me decades ago, that has stuck with me ever since, because of how annoyingly true it is. There’s no theoretical basis for this claim that I’ve ever heard. It's Systems Design time again.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47408205"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://apenwarr.ca/log/20260316'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jbrozena22:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I think the problem is the shape of review processes. People higher up in the corporate food chain are needed to give approval on things. These people also have to manage enormous teams with their own complexities. Getting on their schedule is difficult, and giving you a decision isn&amp;#x27;t their top priority, slowing down time to market for everything.&lt;p&gt;So we will need to extract the decision making responsibility from people management and let the Decision maker be exclusively focused on reviewing inputs, approving or rejecting. Under an SLA.&lt;p&gt;My hypothesis is that the future of work in tech will be a series of these input&amp;#x2F;output queue reviewers. It&amp;#x27;s going to be really boring I think. Probably like how it&amp;#x27;s boring being a factory robot monitor.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lelanthran:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I wonder where the reviewer worked where PRs are addressed in 5 hours. IME it&amp;#x27;s measured in units of days, not hours.&lt;p&gt;I agree with him anyway: if every dev felt comfortable hitting a stop button to fix a bug then reviewing might not be needed.&lt;p&gt;The reality is that any individual dev will get dinged for not meeting a release objective.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is one of the reasons I&amp;#x27;m so interested in sandboxing. A great way to reduce the need for review is to have ways of running code that limit the blast radius if the code is bad. Running code in a sandbox can mean that the worst that can happen is a bad output as opposed to a memory leak, security hole or worse.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sublinear:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;As they say: an hour of planning saves ten hours of doing.&lt;p&gt;You don&amp;#x27;t need so much code or maintenance work if you get better requirements upfront. I&amp;#x27;d much rather implement things at the last minute knowing what I&amp;#x27;m doing than cave in to the usual incompetent middle manager demands of &amp;quot;starting now to show progress&amp;quot;. There&amp;#x27;s your actual problem.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;abtinf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I find to be true for expensive approvals as well.&lt;p&gt;If I can approve something without review, it’s instant. If it requires only immediate manager, it takes a day. Second level takes &lt;i&gt;at least&lt;/i&gt; ten days. Third level trivially takes at least a quarter (at least two if approaching the end of the fiscal year). And the largest proposals I’ve pushed through at large companies, going up through the CEO, take over a year.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;markbao:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;If you save 3 hours building something with agentic engineering and that PR sits in review for the same 30 hours or whatever it would have spent sitting in review if you handwrote it, you’re still saving 3 hours building that thing.&lt;p&gt;So in that extra time, you can now stack more PRs that still have a 30 hour review time and have more overall throughput (good lord, we better get used to doing more code review)&lt;p&gt;This doesn’t work if you spend 3 minutes prompting and 27 minutes cleaning up code that would have taken 30 minutes to write anyway, as the article details, but that’s a different failure case imo&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tptacek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Not before coding agents nor after coding agents has any PR taken me 5 hours to review. Is the delay here coordination&amp;#x2F;communication issues, the &amp;quot;Mythical Mammoth&amp;quot; stuff? I could buy that.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://apenwarr.ca/log/20260316</guid>
-      <pubDate>Tue, 17 Mar 2026 03:20:36 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47408205</comments>
-    </item>
-    <item>
-      <title>Zenclora OS</title>
-      <link>https://zenclora.org/</link>
-      <description>&lt;p&gt;Package Manager ZPM - Zen Package Manager Install Anything. Zen Package Manager $ sudo zen install steam ✓ Adding repository. Steam Spotify VSCode Gaming Pack Docker View All Commands.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47408497"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://zenclora.org/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;waterTanuki:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Debian isn&amp;#x27;t known for being bloated so I don&amp;#x27;t get what the selling point here is. If I want a stripped down barebones system why not just use Arch?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OsrsNeedsf2P:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Haven&amp;#x27;t investigated that much so there might be some big catch I&amp;#x27;m missing, but I really wish people would stop making custom OSes and just help out an existing project&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://zenclora.org/</guid>
-      <pubDate>Tue, 17 Mar 2026 04:10:31 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47408497</comments>
-    </item>
-    <item>
-      <title>Jepsen: MariaDB Galera Cluster 12.1.2</title>
-      <link>https://jepsen.io/analyses/mariadb-galera-cluster-12.1.2</link>
-      <description>&lt;p&gt;MariaDB Galera Cluster is an active-active replication system for MariaDB which allows reads and writes on every node. In 2025 MariaDB acquired Codership Oy, bringing Galera Cluster under the MariaDB umbrella. ” From this one might assume that MariaDB with Galera Cluster supports the same consistency models as a single MariaDB node.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47408360"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://jepsen.io/analyses/mariadb-galera-cluster-12.1.2'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;linsomniac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I really like glaera for low volume clustering, because of the true multi-master nature.  I&amp;#x27;ve been using it for over a decade on a clustered mail server for storing account information, and more recently I&amp;#x27;ve pumped the log information in there so each user can see their related log messages, for a user base of around 6,000 users, and it&amp;#x27;s been a real workhorse.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;linsomniac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I realize that we like to use the page title here on HN, but this really should be something like &amp;quot;Data loss cases with MariaDB Glaera Cluster 12.1.2&amp;quot;.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://jepsen.io/analyses/mariadb-galera-cluster-12.1.2</guid>
-      <pubDate>Tue, 17 Mar 2026 03:46:22 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47408360</comments>
+      <title>Kagi Translate now supports LinkedIn Speak as an output language</title>
+      <link>https://translate.kagi.com/?from=en&amp;to=LinkedIn+speak</link>
+      <guid isPermaLink="true">https://translate.kagi.com/?from=en&amp;to=LinkedIn+speak</guid>
+      <pubDate>Tue, 17 Mar 2026 04:39:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47408703</comments>
     </item>
   </channel>
 </rss>
