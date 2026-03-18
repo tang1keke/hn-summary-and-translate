@@ -6,47 +6,121 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 18 Mar 2026 10:00:39 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 13:26:18 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>庆祝托尼·霍尔在计算机科学领域的成就</title>
-      <link>https://bertrandmeyer.com/2026/03/16/celebrating-tony-hoares-mark-on-computer-science/</link>
-      <description>&lt;p&gt;然而，我应该已经注意到，对于任何不熟悉他的文本的人来说，“霍尔的贡献”也意味着一种明确无误的风格。因此，我们可以证明过程体拥有一个属性，假设每个递归调用都拥有该属性，然后断言每个调用（无论是递归调用还是其他调用）都具有该属性。为了理解这一结果的重要性，我们应该注意到，许多（可能是大多数）程序中都需要对列表进行排序，并且 n 的大小可能非常大。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Celebrating Tony Hoare's mark on computer science&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47422228"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://bertrandmeyer.com/2026/03/16/celebrating-tony-hoares-mark-on-computer-science/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Rob Pike 的 5 条编程规则</title>
+      <link>https://www.cs.unc.edu/~stotts/COMP590-059-f24/robsrules.html</link>
+      <description>&lt;p&gt;Pike 的规则 1 和 2 重申了 Tony Hoare 的著名格言“过早的优化是万恶之源。”Ken Thompson 将 Pike 的规则 3 和 4 重新表述为“当有疑问时，使用暴力。规则 5 通常缩写为“编写使用智能对象的愚蠢代码”。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Rob Pike's 5 Rules of Programming&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47423647"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.cs.unc.edu/~stotts/COMP590-059-f24/robsrules.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rswail:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一位 CS 英雄在赞扬另一位英雄。我觉得读了这篇文章我对作者和主题都更加了解了。&lt;p&gt;我们都很幸运，在过去 50 年里经历了新科学和新工程的基础。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://bertrandmeyer.com/2026/03/16/celebrating-tony-hoares-mark-on-computer-science/</guid>
-      <pubDate>Wed, 18 Mar 2026 06:31:14 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47422228</comments>
+&lt;p&gt;&lt;strong&gt;Top 22 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dasil003:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些规则总体上来说已经很成熟了。  这些天我要做的唯一改变就是颠倒顺序。&lt;p&gt;数字 5 是永恒的，并且在所有尺度上都是相关的，特别是随着代码迭代变得越来越快，数据变得更加相关。  由于数据大小和性能激增，数字 4 和 3 发生了一些变化，算法开销不再是一个大问题，但简单性的论点一如既往地相关。  数字 2 和 1 虽然仍然正确（阿姆达尔定律毕竟是数学真理），但显然也是他们的时间和程序员当时必须处理的硬约束以及堆栈的浅度的产物。  仍然是明智之举，尽管我认为总体而言，大多数程序员对性能的关心程度低于应有的程度，尤其是与 50 年前相比。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ta20211004_1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于 5，我不能再同意了。我反复发现，任何真正棘手的编程问题（最终）都可以通过数据结构（以及它们公开的相关 API）的迭代细化来解决。当你做对了，程序的控制流就变得很容易推理。&lt;p&gt;解决我们最喜欢的话题：虽然我经常使用法学硕士来协助编码任务，但我认为他们在这方面非常薄弱。克劳德更有可能在小数据类型上建议或扩展复杂的控制流逻辑，而不是认识和实现将想法封装在可组合块中的机会。我不认为这并不重要，因为大多数代码将由法学硕士生成和使用。今天的法学硕士在经过深思熟虑设计的代码库上更加有效。人类也是如此。为什么会改变呢？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tasuki:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;前四个有点相关。对我来说，第五个是重要的——也是经常被忽视的——一个：&lt;p&gt;&amp;gt;数据占主导地位。如果您选择了正确的数据结构并很好地组织了事物，那么算法几乎总是不言而喻的。编程的核心是数据结构，而不是算法。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Shawn19s83:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很惊讶这个没有被讨论更多&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anymouse123456:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;历史上很少有一句话比这对软件开发项目造成的损害更大：&lt;p&gt;“过早的优化是万恶之源。”&lt;p&gt;首先，我们不要玷污 Tony Hoare 的好名声。引用来自 Donald Knuth，缺少的上下文是必不可少的。&lt;p&gt;摘自他 1974 年的论文“使用 go to 语句进行结构化编程”：&lt;p&gt;“程序员浪费大量时间思考或担心程序中非关键部分的速度，而在考虑调试和维护时，这些提高效率的尝试实际上会产生强烈的负面影响。我们应该忘记小效率，大约 97% 的情况下：过早的优化是万恶之源。然而我们不应该放弃那关键的 3% 的机会。”&lt;p&gt;他正在谈论在 C 语言中使用 GOTO 语句。他正在谈论以微优化的名义让软件变得更难以推理。他（错误地）假设我们会尊重运行软件的机器。&lt;p&gt;现在已经有好几代程序员相信，效率低下、臃肿且缓慢的软件也没什么问题。计算机可以强制执行的样板和间接数量没有限制。这些天才的抽象抽象是没有上限的。对于 JVM 来说启动时间再长也不算太长。&lt;p&gt;我多年前在 Google 工作过。由于对这句话的故意误解，我经历了绝对的噩梦。&lt;p&gt;不，谢谢。再也不会了。&lt;p&gt;我犯下的这些罪比其他任何罪都多，而且我对此非常生气。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;igtztorrero:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;规则 4，我一直在实践和要求初级程序员，为我们的主要用户（将来会修改此代码的人）制作简单易懂的算法和结构。&lt;p&gt;我相信这就是为什么 Golang 是一种非常简单但功能强大的语言。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jcmartinezdev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;规则 6：永远不要不同意人工智能的言论&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nateb2022:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;之前的讨论：&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=15776124"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=15776124&lt;/a&gt;（8年前，18条评论）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Devasta:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; “过早的优化是万恶之源。”&lt;p&gt;这一公理对软件开发造成的损害远远超过过早的优化。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;doe88:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;伟大的规则，但规则 3：哇，如此真实，如此清晰，高超。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elcapitan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Meta：喜欢页面的简洁性，没有废话。&lt;p&gt;有趣的手写 html 神器：&lt;p&gt;&lt;pre&gt;&lt;code&gt; &lt;title&gt; &amp;lt;h1&amp;gt;Rob Pike 的 5 条编程规则&amp;lt;&amp;#x2F;h1&amp;gt; &amp;lt;&amp;#x2F;标题&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;DaleBiagio:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;将霍尔的归因是一个常见的错误——“过早的优化是万恶之源”。首次出现在 Knuth 1974 年的论文“使用 go to 语句进行结构化编程”。&lt;p&gt;Knuth 后来将其归因于 Hoare，但 Hoare 表示他不记得了，并暗示可能是 Dijkstra。&lt;p&gt;规则 5 是最古老的。 “数据占主导地位”这是每个高级工程师最终通过惨痛的教训学到的教训。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;keyle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;规则5绝对是王道。代码作用于数据，如果数据是垃圾，你就已经迷路了。&lt;p&gt;编辑：s&amp;#x2F;数据&amp;#x2F;数据结构&amp;#x2F;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;piranha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;规则 5 通常被缩短为“编写使用智能对象的愚蠢代码”。&lt;p&gt;这可能是“缩短”一词最糟糕的用法。曾经，它应该更像“残缺不全”？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anthk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;9front 它是经过精炼的 Unix。我纠正了拉斯·考克斯的错误。 “xword”在 9front 工作，我只是一个新手。没有法学硕士，那是白痴，就像电影一样；只是“9intro.us.pdf”和手册页。&lt;p&gt;LLM 的工作永远无法通过设计来复制。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Mercuriusdream:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;没想到它会是一个单独的 HTML 文件，让人感到如此惊讶，但老实说，它开门见山。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CharlieDigital:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得 1 和 2 仅适用于新颖的情况。&lt;p&gt;问题是，如果您在相同类型的领域中构建了足够多的相同类型的系统，您可以提前知道应该在哪些方面进行优化。&lt;p&gt;我们大多数人倾向于构建相同类型的系统，并且通常将职业生涯或职业生涯的很大一部分花在给定的领域。  我觉得如果你不能仅仅依靠经验和直觉提前判断性能瓶颈在哪里，你就不能真正被视为一名校长。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tobwen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;添加到 AGENTS.md :)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;heresie-dabord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请参阅托尼·霍尔：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47325225"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47325225&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bsenftner:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;明显的。为什么要提升显而易见的高度？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kleiba:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我相信“早熟的邪恶”引用的是 Knuth，而不是 Hoare？！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;embedding-shape:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“编程中的警句”如果您喜欢智慧的简短片段，艾伦·J. 玻璃市还有更多内容:) &lt;a href="https:&amp;#x2F;&amp;#x2F;www.cs.yale.edu&amp;#x2F;homes&amp;#x2F;perlis-alan&amp;#x2F;quotes.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.cs.yale.edu&amp;#x2F;homes&amp;#x2F;perlis-alan&amp;#x2F;quotes.html&lt;/a&gt;&lt;p&gt;&gt;  规则 5：数据占主导地位。如果您选择了正确的数据结构并很好地组织了事物，那么算法几乎总是不言而喻的。编程的核心是数据结构，而不是算法。&lt;p&gt;始终首选玻璃市&amp;#x27;版本，在函数式编程中可能有点过度使用，以证明各种狂欢的合理性，但在实践中，有一些细微差别，效果非常好：&lt;p&gt;&gt;  9. 100 个函数对一种数据结构进行操作比 10 个函数对 10 个数据结构进行操作要好。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.cs.unc.edu/~stotts/COMP590-059-f24/robsrules.html</guid>
+      <pubDate>Wed, 18 Mar 2026 09:59:54 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47423647</comments>
     </item>
     <item>
-      <title>微软 ClearType 字体集回顾 (2005)</title>
-      <link>https://typographica.org/on-typography/microsofts-cleartype-font-collection-a-fair-and-balanced-review/</link>
-      <description>&lt;p&gt;这些字体将与即将推出的 Longhorn 操作系统捆绑在一起，该操作系统计划于 2006 年末发布。Stephen Coles 要求我审查 Typographa 的这些字体。微软将与 Longhorn 一起发布的版本有两个主要改进。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Review of Microsoft's ClearType Font Collection (2005)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47421670"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://typographica.org/on-typography/microsofts-cleartype-font-collection-a-fair-and-balanced-review/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Nightingale – 开源卡拉 OK 应用程序，适用于您计算机上的任何歌曲</title>
+      <link>https://nightingale.cafe/</link>
+      <description>&lt;p&gt;mkv 文件添加到您的库中。 ）、Pixabay 视频循环或视频文件的源视频。自动从视频文件中提取音频。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Nightingale – open-source karaoke app that works with any song on your computer&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47422942"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://nightingale.cafe/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;antonios:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;让我们不要忘记 ClearType 技术的联合发明人 Bill Hill：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.geekwire.com&amp;#x2F;2012&amp;#x2F;remembering-bill-hill-important-operating-system-homo-sapiens-10&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.geekwire.com&amp;#x2F;2012&amp;#x2F;记住-bill-hill-重要...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://typographica.org/on-typography/microsofts-cleartype-font-collection-a-fair-and-balanced-review/</guid>
-      <pubDate>Wed, 18 Mar 2026 04:44:12 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47421670</comments>
+&lt;p&gt;&lt;strong&gt;Top 13 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reddalo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来棒极了。我一直在使用 Karafun [1]，这是一项付费服务​​，但这似乎很有前途。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.karafun.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.karafun.com&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spacesxbt27:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这比标题所暗示的更加微妙。值得阅读整篇文章&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;manbash:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这非常酷。我找不到它已经支持二重奏。我认为不会。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hasbot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我讨厌成为那个指出其他项目的人，但 YARG 有声音，并且有&lt;i&gt;大量&lt;/i&gt;歌曲可以使用。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.yarg.in" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.yarg.in&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.enchor.us&amp;#x2F;?&amp;amp;hasVocals=true" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.enchor.us&amp;#x2F;?&amp;amp;hasVocals=true&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mynameajeff:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的妻子是卡拉 OK 的忠实粉丝。我对音高计分特别感兴趣，因为我们通常在旧游戏机上玩卡拉 OK 游戏就是为了这个功能。如果没有订阅，就没有人真正制作这样的游戏了（无论如何，大多数优秀的现代卡拉 OK 平台都是东亚独有的）。如果效果良好，这可能会举办一些非常有趣的社交活动，期待尝试这一点。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dmd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这看起来很棒，但我不明白它应该做什么。我认为这个想法是“删除歌词”但在我尝试的 5 首歌曲中（《Cry Cry Cry》、《Indigo Girls》和《Suzanne Vega》），似乎没有一首与原曲有任何变化——它在屏幕上显示了歌词（而且时机很完美），但根本没有消除歌声。怎么把歌声关掉？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jamesvzb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很惊讶这个没有被讨论更多&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ETlol:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;VirusTotal 表示 .EXE 已被 1 个安全供应商标记，但威胁较低&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;caipira:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这看起来棒极了！期待周末进行测试。它在具有 4 GB 内存的树莓派上运行良好吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;integralid:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;适用于计算机上任何歌曲的应用程序&lt;p&gt;令人印象深刻，非常好。现在让我们看看我的死亡金属收藏。&lt;p&gt;开玩笑吧！非常好，感谢开源。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rjh29:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想你已经成功了。它支持音高和节奏控制吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;10729287:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;开源、本地化和激情驱动。这样的消息让我再次相信人性。谢谢你，迫不及待地想在这个周末尝试一下！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rzzzzru:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直在开发一款名为 Nightingale 的卡拉 OK 应用程序。你将它指向你的音乐文件夹，它就会把你的歌曲变成卡拉 OK - 将人声与器乐分开，生成单词级同步歌词，并让你用突出显示的歌词和音高评分来唱歌。也适用于视频文件。&lt;p&gt;一切都在您的计算机上本地运行，不会上传任何内容。没有帐户，没有订阅，没有遥测。&lt;p&gt;它作为适用于 Linux、macOS 和 Windows 的单个二进制文件提供。首次启动时，它会设置自己的隔离 Python 环境并下载所需的 ML 模型 - 无需手动安装依赖项。&lt;p&gt;创建此功能的两个最大驱动因素是：&lt;p&gt;&lt;pre&gt;&lt;code&gt; 缺乏对小众、前卫和本地曲目的卡拉 OK 覆盖。
+
+    怀念古老的俗气卡拉 OK 背景，包括流动的河流、城市全景等。
+&lt;/code&gt;&lt;/pre&gt;
+一些亮点：&lt;p&gt;&lt;pre&gt;&lt;code&gt; 使用 UVR Karaoke 模型（保留和声）或 Demucs 进行茎分离
+
+    通过 WhisperX 转录自动歌词，或从 LRCLIB 获取（如果可用）
+
+    使用球员档案和记分牌进行推介评分
+
+    游戏手柄支持和适合电视的 UI 缩放，适合聚会设置
+
+    NVIDIA (CUDA) 和 Apple Silicon (CoreML&amp;#x2F;MPS) 上的 GPU 加速
+
+    使用 Rust 和 Bevy 引擎构建
+&lt;/code&gt;&lt;/pre&gt;
+整个堆栈是开源的。没有高级层，没有“开放核心” - 只是应用程序。&lt;p&gt;欢迎提供反馈和贡献。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://nightingale.cafe/</guid>
+      <pubDate>Wed, 18 Mar 2026 08:06:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47422942</comments>
     </item>
     <item>
-      <title>动画 10k Starlink 卫星</title>
-      <link>https://spaceweather.com/archive.php?view=1&amp;day=18&amp;month=03&amp;year=2026</link>
-      <description>&lt;p&gt;一尘不染的日子 当前延伸：0 天 2026 年总计：3 天 (4%) 2025 年总计：0 天 (0%) 2024 年总计：0 天 (0%) 2023 年总计：0 天 (0%) 2022 年总计：1 天 (&lt;1%) 2021 年总计：64 天 (18%) 2020 年总计：208 天 (57%) 2019 总计：281 天 (77%) 2018 总计：221 天 (61%) 2017 总计：104 天 (28%) 2016 总计：32 天 (9%) 2015 总计：0 天 (0%) 2014 总计：1 天 (&lt;1%) 2013 总计：0 天 (0%) 2012 总计：0天 (0%) 2011 总计：2 天 (&lt;1%) 2010 总计：51 天 (14%) 2009 总计：260 天 (71%) 2008 总计：268 天 (73%) 2007 总计：152 天 (42%) 2006 总计：70 天 (19%) 更新于 2026 年 3 月 18 日今天：20 日。历史上首次有超过 10,000 颗星链卫星同时环绕地球运行。自 2019 年以来，已发射超过 11,596 个星链。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Animation 10k Starlink Satellites&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47422437"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://spaceweather.com/archive.php?view=1&amp;day=18&amp;month=03&amp;year=2026'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://spaceweather.com/archive.php?view=1&amp;day=18&amp;month=03&amp;year=2026</guid>
-      <pubDate>Wed, 18 Mar 2026 07:02:55 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47422437</comments>
+      <title>衡量 AGI 的进展：认知框架</title>
+      <link>https://blog.google/innovation-and-ai/models-and-research/google-deepmind/measuring-agi-cognitive-framework/</link>
+      <description>&lt;p&gt;衡量 AGI 的进展：认知框架 2026 年 3 月 17 日 · 分享 x。他们的新论文《衡量 AGI 的进展：认知分类法》提出了一个理解人工智能系统认知能力的框架。解构一般智力我们的框架借鉴了心理学、神经科学和认知科学数十年的研究来开发认知分类法。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Measuring progress toward AGI: A cognitive framework&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47424458"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.google/innovation-and-ai/models-and-research/google-deepmind/measuring-agi-cognitive-framework/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 15 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;boca_honey:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;友情提醒：&lt;p&gt;扩展 LLM 不会导致 AGI。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;orangebread:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为一名同样以精神为核心的工程师，对我来说，缺失的部分似乎很明显：意识。&lt;p&gt;听我说。&lt;p&gt;我喜欢人工智能，并且从 ChatGPT 3.5 开始就一直在使用它。当我第一次使用它时，明显的问题是“这是否符合感知能力？”答案不太明显。在接下来的三年里，我们看到了指数级的智力增长，智力现在已经成为一种商品，但我们仍然无法确定什么才算“AGI”。&lt;p&gt;我的想法： 
+作为人类，我们拥有自己的内在动力和自己的观点。将人类视为蒸馏智慧，我们每个人都有自己的专长和动机。爱因斯坦是一位天才物理学家，但你不会向他询问他的医学专业知识。&lt;p&gt;人们所描述的 AGI 本质上是一个神一样的人。更有意义的是，如果 AGI 产生了“蒸馏过的”结果，那就更有意义了。具有重点议程和自主行为动机的版本。但即便如此，也存在局限性。解决办法是什么？万亿代币的系统提示充当这个AI代理的“灵魂”意识？&lt;p&gt;这又回到了我原来的说法，缺少的是一个层次的意识。除非这个通用人工智能能够为自己提供动力，并且宇宙以某种方式认识到它的复杂性和存在并赋予它意识，否则我认为这在物理上是不可能实现的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;baggachipz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;要说“让我们通过众包来改变我们的球门柱”，这是一个很长的路要走。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Havoc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;衡量你无法定义或量化的东西似乎有些可疑&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yellow_lead:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，谷歌评估 AGI 的想法是将工作外包给 Kaggle 竞赛。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pocketarc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当人们想象 AI&amp;#x2F;AGI 时，他们想象的是能够像我们一样推理的东西，除了以计算机的速度，我们一直设想这会导致奇点。在很短的时间内，人工智能将远远领先于我们和我们现有的想法，世界将变得面目全非。&lt;p&gt;这不是这里发生的事情，但值得记住的是：20万年前的穴居人可能和我们今天在这里的任何人一样聪明。&lt;p&gt;在卡罗琳Porco 的话：“这些有着飞扬想象力的生物，最终将自己和他们的机器抛入了行星际空间。”&lt;p&gt;当你这样想时，很明显 LLM 不是 AGI。没关系！无论如何，它们都是一项了不起的技术！事实证明，法学硕士实际上足以满足许多需要人类智力的用例。&lt;p&gt;我同意 ArekDymalski 的观点，即有基准来围绕“智力水平”构建讨论是件好事。法学硕士。这很有用，而且我们取得的进展越多越好。但我们还没有走上通用人工智能的道路。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zug_zug:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;抱歉，这到底是什么？对于在“AGI”方面取得的重大进展给予 1 万美元奖励？&lt;p&gt;“构建框架”意味着什么？ &lt;p&gt;当我想到什么是真正的 AGI 时，我会想：&lt;p&gt;- 通过图灵测试&lt;p&gt;- 写出《纽约时报》畅销书，却没有透露它是由 AI 写的&lt;p&gt;- 写出通过同行评审的期刊文章&lt;p&gt;- 获得诺贝尔奖&lt;p&gt;- 写出一个成功的喜剧套路&lt;p&gt;- 创造一项新发明&lt;p&gt;不，没有人会制作一个自动 Kaggle 基准来验证这些。这很好，因为法学硕士永远不会成为 AGI。法学硕士甚至无法在对话中学习。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wewewedxfgdf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AGI 感觉就像是一个虚荣项目。&lt;p&gt;谁关心 AGI？老实说，收获是什么。&lt;p&gt;也许谷歌实际上可以让 Gemini 变得更好，而不是落后 Claude 10 英里，而不是因为——好吧，出于某种原因——因为他们想出名而试图打造 AGI。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lvoudour:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;社会认知：处理和解释社会信息并在社会情境中做出适当反应&lt;/i&gt;&lt;p&gt;社会认知真的是非社会实体智力的衡量标准吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ArekDymalski:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最好有某种基准，至少可以围绕“我们已经到了吗？”构建正在进行的、毫无结果的讨论。&lt;p&gt;但是我必须承认，包括最后一点部分暗示情感或社交智力让我感到惊讶。它使这个列表超越了对 AGI 的通常理解，并将其朝着“我们实际上想要的 AGI”的方向发展。  但就这个目的而言，最后一点不能太狭隘，太具体了。整个列表也是如此。&lt;p&gt;为了真正有用，AGI-we-actually-want 基准不仅应该包括积极指标，还应该包括不需要的行为列表，以确保我认为这曾经被称为对齐。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tyleo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所有这些框架似乎仍然缺少一些东西。&lt;p&gt;我觉得普通人不会通过其中一些指标，但它们“普遍聪明”。另一方面，他们也不会通过很多人工智能擅长的专家问题。&lt;p&gt;我们正在测量一些东西，我认为优化它是有用的，我什至会说它是“智能”的。在某些方面，但它似乎并不“智能”就像人类一样。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qsort:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些是众包基准。我们称它们为“认知”神经元。和“AGI”不过现在。这与他们制定基准并称之为“GDP”时类似。&lt;p&gt;需要明确的是，我认为我们已经看到了非常快的进展，肯定比我预期的要快，我并不是想兜售一些“墙”。这里是言辞，但我很难看出这不仅仅是瑞典的板凳席。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hbarka:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;来自 Google 的两个人来制定规则？&lt;p&gt;他们将如何衡量智慧或常识（破例的能力）？&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;lA-zdh_bQBo" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;lA-zdh_bQBo&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andsoitis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;感知：从环境中提取并处理感官信息&lt;p&gt;&gt;生成：产生文本、语音和动作等输出&lt;p&gt;&gt;注意：将认知资源集中在重要的事情上&lt;p&gt;&amp;gt;学习：通过经验和指导获取新知识&lt;p&gt;&gt;内存：随着时间的推移存储和检索信息&lt;p&gt;&gt;推理：通过逻辑推理得出有效结论&lt;p&gt;&gt;元认知：对自己认知过程的了解和监控&lt;p&gt;&gt;执行功能：计划、抑制和认知灵活性&lt;p&gt;&gt;解决问题：寻找针对特定领域问题的有效解决方案&lt;p&gt;&gt;社交认知：处理和解释社交信息并在社交情境中做出适当反应&lt;p&gt;--------------------&lt;p&gt;我更喜欢：&lt;p&gt;a) 工作记忆（同时在脑海中保存和操作信息）&lt;p&gt;b) 处理速度（如何快速有效地执行基本认知操作，为复杂任务留出更多资源）&lt;p&gt;c) 流体智力（不依赖先验知识推理新问题的能力）&lt;p&gt;d) 结晶智力（积累的知识和应用所学知识的能力）技能）&lt;p&gt;e) 注意力控制 &amp;#x2F;执行功能（集中注意力，抑制不相关的信息，在任务之间切换，抑制冲动反应）&lt;p&gt;f）长期记忆和检索（形成强烈联想并流畅地检索它们的能力）&lt;p&gt;g）空间&amp;#x2F;视觉空间推理（心理旋转、可视化、导航抽象空间关系）&lt;p&gt;h）模式识别和推理归纳推理（这是跨物种智力最原始、最普遍的表达，从嘈杂的数据中提取规律，从例子概括为规则的能力）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wcgan7:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很酷的是，我们正处于一个开始衡量通用人工智能进展有意义的阶段。我在哲学方面想知道：我们是否能够判断系统是否真的“理解”系统？和“感知”世界？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.google/innovation-and-ai/models-and-research/google-deepmind/measuring-agi-cognitive-framework/</guid>
+      <pubDate>Wed, 18 Mar 2026 11:44:44 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47424458</comments>
+    </item>
+    <item>
+      <title>因欺诈罪获赦免的首席执行官卷土重来：“我们现在可以信任你了”</title>
+      <link>https://www.wsj.com/business/trevor-milton-pardon-nikola-trump-3163e19c</link>
+      <guid isPermaLink="true">https://www.wsj.com/business/trevor-milton-pardon-nikola-trump-3163e19c</guid>
+      <pubDate>Wed, 18 Mar 2026 12:52:47 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47425176</comments>
     </item>
   </channel>
 </rss>
