@@ -6,129 +6,37 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 18 Mar 2026 02:37:37 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 05:00:19 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>Show HN: CoW メモリ フォークを使用したサブミリ秒 VM サンドボックス</title>
-      <link>https://github.com/adammiribyan/zeroboot</link>
-      <description>&lt;p&gt;74ms ~300ms ~400ms ~90ms サンドボックスあたりのメモリ ~265KB ~128MB ~50MB ~50MB フォーク + 実行 (Python) ~8ms - - - 同時フォーク 1000 個 815ms - - - 各サンドボックスは、ハードウェア強制メモリ分離を備えた実際の KVM 仮想マシンです。 8ms) テンプレート (1 回): Firecracker は VM を起動し、ランタイムをプリロードし、メモリ + CPU 状態のスナップショットを作成します。 フォーク (~0.8ms): 新しい KVM VM を作成し、スナップショット メモリを CoW としてマップし、すべての CPU 状態を復元します。 分離: 各フォークは、ハードウェア強制メモリ分離 SDK を備えた個別の KVM VM です。 Python — ゼロブート インポートからの sdk/python サンドボックス sb =サンドボックス("zb_live_your_key") 結果 = sb.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Sub-millisecond VM sandboxes using CoW memory forking&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47412569"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/adammiribyan/zeroboot'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>クソみたいなウェブサイトを持っている</title>
+      <link>https://www.otherstrangeness.com/2026/03/14/have-a-fucking-website/</link>
+      <description>&lt;p&gt;クソみたいなウェブサイトを作ってみろ、分かった。 「でも――」クソ野郎、クソみたいなウェブサイトを持ってるんだ。ソーシャルメディアプラットフォームに投稿したものはあなた自身のものではありません。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Have a Fucking Website&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47421442"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.otherstrangeness.com/2026/03/14/have-a-fucking-website/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cperciva:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;エントロピーを忘れないでください。  すべての乱数ジェネレーターの同一のコピーを 2 つ作成しました。これはセキュリティにとって非常に悪い可能性があります。&lt;p&gt;Firecracker チームは、スナップショットのサポートを追加したときに、この問題に対処するための非常に優れた文書を書きました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;indigodaddy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これにはパススルーが必要ですか? それともパススルーのないクラウド VM&amp;#x2F;VPS 上で PVM を活用できる可能性がありますか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;indigodaddy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;あなたの書き込みを見て次のことを思い出しました。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;codesandbox.io&amp;#x2F;blog&amp;#x2F;how-we-clone-a-running-vm-in-2-秒" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;codesandbox.io&amp;#x2F;blog&amp;#x2F;how-we-clone-a-running-vm-in-2-s...&lt;/a&gt;&lt;p&gt;類似点はありますか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;buckle8017:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは Android プロセスの仕組みですが、一部の ASLR タイプのものを壊すセキュリティ上の問題です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;diptanu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;運用環境でこれを行う際に難しいのは、ノード間でサンドボックスのクローンを作成することです。常駐メモリ、ファイル システム (または rootfs 上の CoW 層) のスナップショットを作成し、ノード間でデータを移動する必要があります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;crawshaw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この作品を見れてよかったです！立ち上げる前に、exe.dev に対してこれを実験してみました。 VM 自体は非常にうまく機能しましたが、ネットワークを機能させるには多くのセットアップが必要でした。そして最終的に、私たちのターゲットは、約 1 秒の起動時間を気にしないユースケースです。これは、毎回クリーンな systemd 起動を行う方が簡単であることを意味します。&lt;p&gt;そうは言っても、Python インタープリターのような最小限のもののために VM が必要なユースケースをいくつか見てきましたが、これはまさに彼らが使用すべき種類のアプローチです。ここにはたくさんの期待があり、どこまで押し進められるか楽しみです!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jauntywundrkind:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Mod: &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47412812"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47412812&lt;/a&gt; と統合できますか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vmg12:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは Firecracker の特定のバージョンでのみ、また 1 vcpu を備えた VM でのみ動作しますか?&lt;p&gt;ミリ秒未満の起動時間よりも、VM あたり 258kb の RAM は膨大です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;handfuloflight:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これを別のサンドボックスで実行できますか?なぜそうしたいのかわかりませんが、できますか?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/adammiribyan/zeroboot</guid>
-      <pubDate>Tue, 17 Mar 2026 13:43:44 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47412569</comments>
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stackghost:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ランダムなフォーレストラン（または何でも）は通常、文字通りの家族経営の店であり、これらの人々にウェブサイトの開設（そして維持！）を頼むのは通常、彼らにとってあまりにも気が遠くなります。  これらは Facebook ページやインスタだけで終わりがちな場所です。&lt;p&gt;一般の人にとって DIY は非常に難しく、地元の「ウェブ開発会社」は、継続的な収益を得るために、継続的なメンテナンスが必要な意思決定を行うことを強く主張するのは通常略奪的です。&lt;p&gt;地元の Web デザイン会社に静的な HTML のみのサイトを構築してもらい、すべてのホスティングの資格などを渡してもらうように&lt;i&gt;試してみ&lt;/i&gt;てください。&lt;p&gt;行き当たりばったりのヘアサロンやコーヒー ショップが必要としているのは、基本的に、独自ドメインの持ち込み、モバイルで動作する WYSIWG 編集、Git なしの Github ページです。  しかし、私の知る限りそのようなサービスは存在しません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rdevilla:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;まあクソ言った。 JavaScript は、「アプリ」の書き方を知る必要があると皆に信じ込ませたので、ウェブ上では大惨事でした。テキストと JPEG を共有するため、私たちは文字通り何十年もの間、ドキュメント オブジェクト モデルを使ってこれを行ってきました。&lt;p&gt;ウェブサイトと HTML&amp;#x2F;CSS はドキュメントです。 Word 文書を作成できれば、Web サイトを作成できます。ウェブのエンシティ化の主な場所であった壁に囲まれた庭園は滅びます。&lt;p&gt;CG-NAT 問題がいつか解決できれば、中央機関のない真の P2P ネットワーキングと情報共有が復活することを期待しています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ghayes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この記事は、Web サイトを持つことがなぜ顧客にとって良いのか (100% そうです) に焦点を当てるのではなく、実際には... Meta およびテクノロジー関連の他の企業の開発者を攻撃していますか?私は冒とく的な言葉を織り交ぜた暴言が大好きですが、記事全体は焦点が合っていなく、説得力がありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;protocolture:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;多くの企業は携帯電話番号を越えることはできません（爆笑）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blinkbat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;同意しますが、ほとんどの中小企業はインターネットをこのように考えたり気にしたりしません&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.otherstrangeness.com/2026/03/14/have-a-fucking-website/</guid>
+      <pubDate>Wed, 18 Mar 2026 03:53:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47421442</comments>
     </item>
     <item>
-      <title>Mistral AI が Forge をリリース</title>
-      <link>https://mistral.ai/news/forge</link>
-      <description>&lt;p&gt;Forge を使用すると、企業はドメイン知識を内部化するモデルを構築できます。 Forge を使用すると、企業は自社の管理下にあるモデルを構築できます。カスタム モデルにより、エンタープライズ エージェントは信頼できるものになります。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Mistral AI Releases Forge&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47418295"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://mistral.ai/news/forge'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aavci:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これを微調整と比較するとどうなるでしょうか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ryeguy_24:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;RAG アプローチとは対照的に、事前トレーニングやさらには微調整が本当に必要な独自のユースケースがどれだけあるでしょうか?そして、どの時点で事前トレーニング&amp;#x2F;微調整を行うのが意味があるのでしょうか?好奇心旺盛。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;事前トレーニングについても言及されており、私は驚きました。それは法外に高価だと思いましたか?&lt;p&gt;小さなモデルでは実現可能ですが、小さなモデルは事実情報として信頼できないと思いましたか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dmix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは間違いなく、AI で利益を上げるための賢い道です。 MongoDB も &lt;a href="https:&amp;#x2F;&amp;#x2F;www.voyageai.com&amp;#x2F;" でこの市場に参入していることに気付きました。 rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.voyageai.com&amp;#x2F;&lt;/a&gt; は、ビジネス RAG アプリケーションをターゲットにし、企業固有のモデルのコンサルティングを提供します。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rorylawless:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;API ドキュメントによると、微調整エンドポイントは非推奨になっています。これは代替品ですか?&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;docs.mistral.ai&amp;#x2F;api&amp;#x2F;endpoint&amp;#x2F;deprecated&amp;#x2F;fine-tuning" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;docs.mistral.ai&amp;#x2F;api&amp;#x2F;エンドポイント&amp;#x2F;非推奨&amp;#x2F;微調整&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bsjshshsb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;IDトレーニングまたはFT &gt;コンテクスト？経験のある方はいらっしゃいますか。&lt;p&gt;情報の変化に応じて毎日または毎時間再トレーニングすることは可能ですか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mark_l_watson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私はミストラルの異なるアプローチを応援しています。実際には最大かつ先進的なモデルで競合するのではなく、顧客向けにカスタム エンジニアリングを行い、一般的に EU 顧客のニーズに応えます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;csunoser:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;はぁ。私は当初、これは単なる微調整のエンドポイントだと考えていました。しかし、どうやら彼らは事前トレーニング側でも顧客と提携しているようです。でもRLもそうなの？うーん、RL 環境を正しく理解するのは本当に難しいです。ご多幸をお祈り申し上げます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;roxolotl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ミストラルはクールなものをリリースしています。フロンティアモデルには決定的に遅れをとっていますが、彼らは別の角度から取り組んでいます。ちょうど職場で、小規模な会社にとってモデルのトレーニングがどれほど難しいかについて話していたところなので、私たちはおそらくそれを行うことはないだろうと思います。しかし、このようなツールと新しい unsloth リリースのおかげで、トレーニングがより身近に感じられるようになりました。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://mistral.ai/news/forge</guid>
-      <pubDate>Tue, 17 Mar 2026 21:04:26 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47418295</comments>
-    </item>
-    <item>
-      <title>2 行のコードでサンドボックス実行による自律型 AI エージェントを起動</title>
-      <link>https://amaiya.github.io/onprem/examples_agent.html</link>
-      <description>&lt;p&gt;パイプラインは AgentExecutor AgentExecutor をインポートします。エージェントは作業ディレクトリの外で読み取りまたは書き込みを行うことはできません。 run( task=""" 以下を使用して単純な Python 計算モジュールを作成します。 - 計算機。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Launch an autonomous AI agent with sandboxed execution in 2 lines of code&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47420493"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://amaiya.github.io/onprem/examples_agent.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TheDong:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;興味があったので、少し調べてみました。&lt;p&gt;内部では次のように効果的に実行されています。&lt;p&gt;&lt;pre&gt;&lt;code&gt; docker run --rm -w $PWD:&amp;#x2F;workspace \
-      Python:3.11-スリム\
-      pip install -q patchpal &amp;amp;&amp;amp; \
-      &lt;コマンド&gt;
-&lt;/code&gt;&lt;/pre&gt;
-これは素晴らしいですね。すでにインストールされている単一のコンテナ イメージをベイクするのではなく、毎回「pip install」するのが大好きです。&lt;p&gt;これは特別な、または興味深いサンドボックスの種類ではありません。これは「docker run」に全力で取り組んでおり、docker を最大限に使用しているわけでもありません。&lt;p&gt;リンクされたページからの引用:&lt;p&gt;&amp;gt;トレードオフは、コンテナ起動のオーバーヘッドが約 5 ～ 10 秒かかることです&lt;p&gt;確かに、コンテナの使用方法が間違っていると、5 ～ 10 秒かかる可能性があります。 Linux 上でルート ファイルシステムを解凍し、クリーン マウントの名前空間をスピンアップするのに数ミリ秒かかります。1 秒以上かかるということは、何らかの理由でビルド時ではなく実行時に「pip install」が実行されるなど、何か問題が発生していることを意味します。&lt;p&gt;完全な Linux VM をスピンアップして、いくつかのコードを 5 秒以内に実行できます。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://amaiya.github.io/onprem/examples_agent.html</guid>
-      <pubDate>Wed, 18 Mar 2026 01:10:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47420493</comments>
-    </item>
-    <item>
-      <title>HN: 北 (YC W26) を開始 – 新興市場での信用調査を自動化</title>
-      <link>https://news.ycombinator.com/item?id=47417335</link>
-      <description>&lt;p&gt;当社は、VLM を使用して新興市場の貸し手の信用調査を自動化します。 Kira は、VLM ベースのエージェントを使用して文書を解析し、不正行為を検出し、乱雑な財務ファイルから引受シグナルを抽出します。 Kita Capture は、金融業者向けの当社初のドキュメント インテリジェンス製品です。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Launch HN: Kita (YC W26) – Automate credit review in emerging markets&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47417335"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=47417335'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iririririr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;新興市場の資本アクセス問題の解決策は、現在の略奪的なシステムをより効率的にすることではなく、マイクロクレジットに投資することだ。これは収益が低いため、大規模には決して起こりません（1000 人の優良な支払者よりも 10 人の悪質な支払者の方が良い）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wumms:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;補足: タガログ語とは異なり、キタはドイツ語で「子供のための保育施設」を意味するため、キタ・キャプチャーやキタ・クレジット・エージェントなどの名前には意図しない意味合いが含まれる可能性があります。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.ycombinator.com/item?id=47417335</guid>
-      <pubDate>Tue, 17 Mar 2026 19:46:29 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47417335</comments>
-    </item>
-    <item>
-      <title>貧弱な製品デザインの楽しみ</title>
-      <link>https://www.inconspicuous.info/p/the-pleasures-of-poor-product-design</link>
-      <description>&lt;p&gt;カテリーナ・カンプラーニとのビデオインタビューのスクリーンショット。カテリーナ・カンプラーニ: つまり、まばらです。 (写真 © Katerina Kamprani — The Un.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Pleasures of Poor Product Design&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47420432"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.inconspicuous.info/p/the-pleasures-of-poor-product-design'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bcherry:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは本当に「最悪のボリュームコントロール」を思い出させます。 reddit より &lt;a href="https:&amp;#x2F;&amp;#x2F;uxdesign.cc&amp;#x2F;the-worst-volume-control-ui-in-the-world-60713dc86950" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;uxdesign.cc&amp;#x2F;the-worst-volume-control-ui-in-the-world...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;keithnz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;このタイトルを考えると、ソフトウェア開発者は至福の日々を送っているに違いありません。 &amp;#x2F;s&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.inconspicuous.info/p/the-pleasures-of-poor-product-design</guid>
-      <pubDate>Wed, 18 Mar 2026 01:00:45 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47420432</comments>
-    </item>
-    <item>
-      <title>Linux カーネルにおける eBPF スピンロックの問題の修正に関する話</title>
-      <link>https://rovarma.com/articles/a-tale-about-fixing-ebpf-spinlock-issues-in-the-linux-kernel/</link>
-      <description>&lt;p&gt;この場合、カーネルのフリーズを扱っているため、それほど単純ではありません。カスタム カーネルを使用すると、カーネルのデバッグを有効にするのは非常に簡単です。残念ながら、カーネルがこのフリーズ状態になると、デバッガーさえも応答しなくなるようです。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A tale about fixing eBPF spinlock issues in the Linux kernel&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47420388"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://rovarma.com/articles/a-tale-about-fixing-ebpf-spinlock-issues-in-the-linux-kernel/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://rovarma.com/articles/a-tale-about-fixing-ebpf-spinlock-issues-in-the-linux-kernel/</guid>
-      <pubDate>Wed, 18 Mar 2026 00:53:10 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47420388</comments>
-    </item>
-    <item>
-      <title>なぜAIシステムは学習しないのか – 認知科学から学ぶ自律学習について</title>
-      <link>https://arxiv.org/abs/2603.15381</link>
-      <description>&lt;p&gt;) 接続されたペーパー 接続されたペーパーを切り替えます (接続されたペーパーとは何ですか。) リットマップ リットマップを切り替えます (リットマップとは。) コードへのリンク コード付きペーパーを切り替えます (コード付きペーパーとは。)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Why AI systems don't learn – On autonomous learning from cognitive science&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47418722"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://arxiv.org/abs/2603.15381'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zhangchen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;System M のメタコントロール スイッチングのようなものを実際に実装してみた人はいますか? 1 つのモードに崩れることなく、観察とアクティブな探索を切り替えるタイミングを決定するための報酬信号をどのように処理するか興味があります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jdkee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;LeCun は、しばらくの間、自身の JEPA モデルについて語ってきました。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;ai.meta.com&amp;#x2F;blog&amp;#x2F;yann-lecun-ai-model-i-jepa&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ai.meta.com&amp;#x2F;blog&amp;#x2F;yann-lecun-ai-model-i-jepa&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;beernet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;同紙は「データウォール」を批判している。そして言語中心主義はまさに的中している。私たちは AI トレーニングを機械が受動的な組み立てラインのように扱ってきましたが、なぜ非定常環境で失敗するのか疑問に思います。それは究極の「パッド入りの部屋」です。アーキテクチャ: モデルは現実から隔離されており、機能を均一にするために人間が厳選したデータに依存しています。&lt;p&gt;提案された System M (メタコントロール) は理論的には優れた修正ですが、通常は実装で問題が発生します。エージェントが独自のフィードバック ループを幻覚し始めるまでは、観察 (A) とアクション (B) を統合するのは素晴らしく聞こえます。この「外部委託学習」から脱却できない限り、ドメインの不一致をすべて人間が修正しなければならないのに、私たちはますます高価になるオウムを構築しているだけです。 「バイレベル最適化」が有効かどうかは懐疑的です。そのギャップを埋めるには十分です。または、根本的に制限されたトランス アーキテクチャに複雑な層をさらに追加するだけの場合は、これで十分です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aanet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Emmanuel Dupoux、Yann LeCun、Jitendra Malik 著&lt;p&gt;」彼が提案したフレームワークは、観察からの学習 (システム A) と能動的な行動からの学習 (システム B) を統合し、内部生成されたメタ制御信号 (システム M) に応じてこれらの学習モードを柔軟に切り替えます。私たちは、進化と発達のタイムスケールにわたって生物が現実世界の動的な環境にどのように適応するかについてインスピレーションを得て、これをどのように構築できるかを議論します。 「&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://arxiv.org/abs/2603.15381</guid>
-      <pubDate>Tue, 17 Mar 2026 21:42:39 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47418722</comments>
+      <title>フラグやスクリプトを忘れてください: ファイルの名前を変更するだけです</title>
+      <link>https://robertsdotpm.github.io/software_engineering/program_names_as_input.html</link>
+      <description>&lt;p&gt;ソフトウェアエンジニアリング フラグとスクリプトを忘れる: ファイルの名前を変更するだけ ページソースを表示 フラグとスクリプトを忘れる: ファイルの名前を変更するだけ プログラムは通常、フラグまたはスクリプトから入力を取得します。なぜフラグやスクリプトだけではだめなのでしょうか。例 1: 再利用可能なインストーラー install_PY3_MODULE_NAME を想像してください。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Forget Flags and Scripts: Just Rename the File&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47421513"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://robertsdotpm.github.io/software_engineering/program_names_as_input.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://robertsdotpm.github.io/software_engineering/program_names_as_input.html</guid>
+      <pubDate>Wed, 18 Mar 2026 04:11:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47421513</comments>
     </item>
   </channel>
 </rss>

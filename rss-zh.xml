@@ -6,129 +6,37 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 18 Mar 2026 02:37:37 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 05:00:19 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Show HN：使用 CoW 内存分叉的亚毫秒级 VM 沙箱</title>
-      <link>https://github.com/adammiribyan/zeroboot</link>
-      <description>&lt;p&gt;74ms ~300ms ~400ms ~90ms 每个沙箱内存 ~265KB ~128MB ~50MB ~50MB Fork + exec (Python) ~8ms - - - 1000 个并发 fork 815ms - - - 每个沙箱都是一个真正的 KVM 虚拟机，具有硬件强制内存隔离。 8ms) 模板（一次性）：Firecracker 启动虚拟机，预加载运行时，快照内存 + CPU 状态 Fork（~0. 8ms）：创建一个新的 KVM VM，将快照内存映射为 CoW，恢复所有 CPU 状态 隔离：每个 fork 都是一个单独的 KVM VM，具有硬件强制内存隔离 SDK Python — sdk/python from Zeroboot import Sandbox sb =沙箱（“zb_live_your_key”）结果= sb。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Sub-millisecond VM sandboxes using CoW memory forking&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47412569"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/adammiribyan/zeroboot'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>有一个他妈的网站</title>
+      <link>https://www.otherstrangeness.com/2026/03/14/have-a-fucking-website/</link>
+      <description>&lt;p&gt;去他妈的网站看看，我明白了。 “但是——”操你妈的，有一个他妈的网站。你不拥有你在社交媒体平台上发布的东西。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Have a Fucking Website&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47421442"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.otherstrangeness.com/2026/03/14/have-a-fucking-website/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cperciva:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不要忘记熵！  您刚刚创建了所有随机数生成器的两个相同副本，这对安全性可能非常不利。&lt;p&gt;Firecracker 团队在添加快照支持时写了一篇非常好的论文来解决这个问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;indigodaddy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是否需要直通，或者我们是否能够在无直通云 VM&amp;#x2F;VPS 上利用 PVM？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;indigodaddy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你的文章让我想到：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;codesandbox.io&amp;#x2F;blog&amp;#x2F;how-we-clone-a-running-vm-in-2-seconds" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;codesandbox.io&amp;#x2F;blog&amp;#x2F;how-we-clone-a-running-vm-in-2-s...&lt;/a&gt;&lt;p&gt;有相似之处吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;buckle8017:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是 Android 进程的工作方式，但这是一个破坏某些 ASLR 类型事物的安全问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;diptanu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在生产中执行此操作的棘手部分是跨节点克隆沙箱。您必须对驻留内存、文件系统（或 rootfs 之上的 CoW 层）进行快照，跨节点移动数据等。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;crawshaw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴看到这部作品！在我们启动之前，我对 exe.dev 进行了实验。虚拟机本身运行得非常好，但需要进行大量设置才能使网络正常运行。最后，我们的目标是不介意大约 1 秒启动时间的用例，这意味着每次执行干净的 systemd 启动会更容易。&lt;p&gt;也就是说，我已经看到了几个用例，人们需要 VM 来实现最小的功能，例如 Python 解释器，这绝对是他们应该使用的方法。这里有很多承诺，很高兴看到您能将其推向多远！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jauntywundrkind:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Mods：我们可以与 &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47412812"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47412812&lt;/a&gt; 合并吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vmg12:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它是否仅适用于该特定版本的 firecracker，并且仅适用于具有 1 个 vcpu 的虚拟机？&lt;p&gt;每个虚拟机 258kb 的 ram 超过亚毫秒启动时间，这是巨大的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;handfuloflight:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你可以在另一个沙箱中运行它吗？不知道为什么你想...但是你可以吗？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/adammiribyan/zeroboot</guid>
-      <pubDate>Tue, 17 Mar 2026 13:43:44 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47412569</comments>
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stackghost:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;随机的河粉餐厅（或其他什么）通常都是字面上的夫妻店，要求这些人建立（并维护！）一个网站对他们来说通常太令人畏惧了。  这些地方往往最终只有一个 Facebook 页面或一个 insta。&lt;p&gt;对于普通人来说，DIY 太难了，而当地的“网络开发公司”也很难做到这一点。通常是掠夺性的，他们坚持做出需要持续维护的决策，因为经常性收入。&lt;p&gt;只需&lt;i&gt;尝试&lt;/i&gt;让您当地的网页设计公司为您构建一个纯 html 网站，并为您提供所有托管的凭据等。&lt;p&gt;随机的发廊或咖啡店需要的基本上是带有自带域的 github 页面、可在移动设备上运行的 WYSIWG 编辑和零 git。  但 AFAICT 不存在这样的服务。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rdevilla:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;妈的说得好。 JavaScript 是网络上的一个该死的祸害，因为它让每个人都相信你需要知道如何编写一个“应用程序”。共享文本和 jpeg，几十年来我们一直在使用文档对象模型来实现这一点。&lt;p&gt;网站和 HTML&amp;#x2F;CSS 都是文档。如果你会写Word文档，你就可以写一个网站。围墙花园的死亡，它一直是网络enshitification的主要场所。&lt;p&gt;如果CG-NAT问题有一天能够得到解决，我期待着真正的P2P网络和没有中央权威的信息共享的重生。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ghayes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇文章并没有关注为什么拥有一个网站对客户更好（100% 是这样），而是真正攻击...Meta 和其他技术公司的开发人员？我喜欢一篇充满脏话的咆哮，但整篇文章读起来没有重点，没有说服力。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;protocolture:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很多企业永远不会超越手机号码 lmao&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blinkbat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;同意，但大多数小企业并不以这种方式构想或关心互联网&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.otherstrangeness.com/2026/03/14/have-a-fucking-website/</guid>
+      <pubDate>Wed, 18 Mar 2026 03:53:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47421442</comments>
     </item>
     <item>
-      <title>Mistral AI 发布 Forge</title>
-      <link>https://mistral.ai/news/forge</link>
-      <description>&lt;p&gt;Forge 使企业能够构建内化其领域知识的模型。 Forge 允许企业构建仍在其控制之下的模型。定制模型让企业代理变得可靠。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Mistral AI Releases Forge&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47418295"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://mistral.ai/news/forge'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aavci:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这与微调相比如何？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ryeguy_24:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与 RAG 方法相比，有多少专有用例真正需要预训练甚至微调？什么时候预训练和微调才有意义？好奇的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们也提到了预训练，这让我感到惊讶。我认为这太昂贵了？&lt;p&gt;这对于小型模型来说是可行的，但是，我认为小型模型对于事实信息不可靠？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dmix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这绝对是在人工智能领域赚钱的明智之路。我注意到 MongoDB 也正在进入这个市场 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.voyageai.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.voyageai.com&amp;#x2F;&lt;/a&gt; 针对业务 RAG 应用程序，并为公司特定模型提供咨询。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rorylawless:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;根据 API 文档，微调端点已被弃用。这是替代品吗？&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;docs.mistral.ai&amp;#x2F;api&amp;#x2F;endpoint&amp;#x2F;已弃用&amp;#x2F;微调" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;docs.mistral.ai&amp;#x2F;api&amp;#x2F;端点&amp;#x2F;已弃用&amp;#x2F;微调&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bsjshshsb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ID训练或FT&gt;语境？任何人都有经验。&lt;p&gt;随着信息的变化，是否可以每天或每小时重新培训？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mark_l_watson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我支持米斯特拉尔的不同方法：不真正在最大和先进的模型上竞争，而是为客户进行定制工程并总体上满足欧盟客户的需求。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;csunoser:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;呵呵。我最初认为这只是另一个微调终点。但显然他们也在预培训方面与客户合作。但RL也一样吗？ Jeez RL 环境真的很难做好。我想是最好的祝愿。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;roxolotl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;米斯特拉尔一直在发布一些很酷的东西。绝对落后于前沿模型，但他们正在以不同的角度工作。只是在工作中谈论模型培训对于一家小公司来说有多困难，所以我们可能永远不会这样做。但有了这样的工具，以及新的 unsloly 版本，培训感觉更容易实现。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://mistral.ai/news/forge</guid>
-      <pubDate>Tue, 17 Mar 2026 21:04:26 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47418295</comments>
-    </item>
-    <item>
-      <title>只需 2 行代码即可启动具有沙盒执行功能的自主 AI 代理</title>
-      <link>https://amaiya.github.io/onprem/examples_agent.html</link>
-      <description>&lt;p&gt;管道导入 AgentExecutor AgentExecutor。代理无法在工作目录之外读取或写入。 run( task=""" 使用以下内容创建一个简单的 Python 计算器模块： - Calculator.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Launch an autonomous AI agent with sandboxed execution in 2 lines of code&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47420493"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://amaiya.github.io/onprem/examples_agent.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TheDong:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很好奇，所以我挖了一点。&lt;p&gt;在引擎盖下它有效地运行：&lt;p&gt;&lt;pre&gt;&lt;code&gt; docker run --rm -w $PWD:&amp;#x2F;workspace \
-      python:3.11-slim \
-      pip install -q patchpal &amp;amp;&amp;amp; \
-      &lt;命令&gt;
-&lt;/code&gt;&lt;/pre&gt;
-太酷了，太棒了，我每次都喜欢“pip install”，而不是仅仅烘焙一个已安装的容器映像。&lt;p&gt;这不是任何花哨或有趣的沙箱，这是对“docker run”的攻击，甚至没有充分利用 docker。&lt;p&gt;引用链接页面：&lt;p&gt;&gt;权衡是大约 5-10 秒的容器启动开销&lt;p&gt;当然，如果您错误地使用容器，也许需要 5-10 秒。在 Linux 上解压根文件系统并启动干净的挂载命名空间需要几毫秒，超过一秒就意味着出现了问题，例如出于某种原因在运行时而不是构建时进行“pip install”。&lt;p&gt;我可以启动完整的 Linux 虚拟机并在 5 秒以上的时间内运行一些代码。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://amaiya.github.io/onprem/examples_agent.html</guid>
-      <pubDate>Wed, 18 Mar 2026 01:10:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47420493</comments>
-    </item>
-    <item>
-      <title>推出 HN：Kita (YC W26) – 在新兴市场自动进行信用审查</title>
-      <link>https://news.ycombinator.com/item?id=47417335</link>
-      <description>&lt;p&gt;我们使用 VLM 对新兴市场的贷方进行自动化信用审查。 Kita 使用基于 VLM 的代理来解析文档、检测欺诈并从混乱的财务文件中提取承保信号。 Kita Capture 是我们为贷方提供的第一个文档智能产品。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Launch HN: Kita (YC W26) – Automate credit review in emerging markets&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47417335"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=47417335'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iririririr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;解决新兴市场资本准入问题的方法不是提高当前掠夺性体系的效率，而是投资于小额信贷。这永远不会大规模发生，因为它产生的回报较低（有 10 个不良付款者比 1000 个良好付款者更好）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wumms:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;旁注：与他加禄语不同，Kita 在德语中的意思是“儿童日托机构”，因此像 Kita Capture 和 Kita Credit Agent 这样的名字可能带有意想不到的含义。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.ycombinator.com/item?id=47417335</guid>
-      <pubDate>Tue, 17 Mar 2026 19:46:29 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47417335</comments>
-    </item>
-    <item>
-      <title>糟糕的产品设计带来的乐趣</title>
-      <link>https://www.inconspicuous.info/p/the-pleasures-of-poor-product-design</link>
-      <description>&lt;p&gt;我对卡特琳娜·坎普拉尼的视频采访的屏幕截图。 Katerina Kamprani：我的意思是，稀疏。 （照片©Katerina Kamprani — 联合国。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Pleasures of Poor Product Design&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47420432"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.inconspicuous.info/p/the-pleasures-of-poor-product-design'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bcherry:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这真的让我想起了“最糟糕的音量控制”来自reddit &lt;a href="https:&amp;#x2F;&amp;#x2F;uxdesign.cc&amp;#x2F;the-worst-volume-control-ui-in-the-world-60713dc86950" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;uxdesign.cc&amp;#x2F;the-worst-volume-control-ui-in-the-world...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;keithnz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有了这个标题，软件开发者们一定过得很幸福吧！ &amp;#x2F;s&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.inconspicuous.info/p/the-pleasures-of-poor-product-design</guid>
-      <pubDate>Wed, 18 Mar 2026 01:00:45 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47420432</comments>
-    </item>
-    <item>
-      <title>关于修复 Linux 内核中的 eBPF 自旋锁问题的故事</title>
-      <link>https://rovarma.com/articles/a-tale-about-fixing-ebpf-spinlock-issues-in-the-linux-kernel/</link>
-      <description>&lt;p&gt;在这种情况下，我们正在处理内核冻结，因此事情并不那么简单。使用自定义内核，启用内核调试非常简单。不幸的是，似乎当内核处于这种冻结状态时，即使调试器也不再响应。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A tale about fixing eBPF spinlock issues in the Linux kernel&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47420388"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://rovarma.com/articles/a-tale-about-fixing-ebpf-spinlock-issues-in-the-linux-kernel/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://rovarma.com/articles/a-tale-about-fixing-ebpf-spinlock-issues-in-the-linux-kernel/</guid>
-      <pubDate>Wed, 18 Mar 2026 00:53:10 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47420388</comments>
-    </item>
-    <item>
-      <title>为什么人工智能系统不学习——认知科学的自主学习</title>
-      <link>https://arxiv.org/abs/2603.15381</link>
-      <description>&lt;p&gt;) Connected Papers Toggle Connected Papers（什么是 Connected Papers。） Litmaps Toggle Litmaps（什么是 Litmaps。） 代码链接 Toggle Papers with Code（什么是 Papers with Code。）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Why AI systems don't learn – On autonomous learning from cognitive science&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47418722"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://arxiv.org/abs/2603.15381'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zhangchen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有没有人尝试过在实践中实现类似 System M 的元控制切换之类的东西？很好奇你如何处理奖励信号来决定何时在观察和主动探索之间切换而不陷入一种模式。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jdkee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;LeCun 谈论他的 JEPA 模型已经有一段时间了。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;ai.meta.com&amp;#x2F;blog&amp;#x2F;yann-lecun-ai-model-i-jepa&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ai.meta.com&amp;#x2F;博客&amp;#x2F;yann-lecun-ai-model-i-jepa&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;beernet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该论文对“数据墙”的批评语言中心主义是正确的。我们一直将人工智能训练视为机器是被动的装配线，然后我们想知道为什么它在非静态环境中会失败。这是终极的“软垫房间”。架构：该模型与现实隔离，甚至依赖于人工管理的数据来发挥作用。&lt;p&gt;所提出的 System M（元控制）是一个很好的理论解决方案，但实施通常是失败的地方。将观察 (A) 和行动 (B) 结合起来听起来很棒，直到智能体开始产生自己的反馈循环的幻觉。除非我们能够摆脱这种“外包学习”人类必须修复所有领域不匹配的问题，而我们只是在建造越来越昂贵的鹦鹉。我怀疑“双层优化”是否可行。足以弥补这一差距，或者如果我们只是在根本上有限的变压器架构中添加另一层复杂性。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aanet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作者：Emmanuel Dupoux、Yann LeCun、Jitendra Malik&lt;p&gt;“他提出的框架集成了从观察中学习（系统 A）和从主动行为中学习（系统 B），同时根据内部生成的元控制信号（系统 M）在这些学习模式之间灵活切换。我们讨论如何通过从生物体如何在进化和发育时间尺度上适应现实世界的动态环境中获得灵感来建立这一点。 ”&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://arxiv.org/abs/2603.15381</guid>
-      <pubDate>Tue, 17 Mar 2026 21:42:39 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47418722</comments>
+      <title>忘记标志和脚本：只需重命名文件</title>
+      <link>https://robertsdotpm.github.io/software_engineering/program_names_as_input.html</link>
+      <description>&lt;p&gt;软件工程 忘记标志和脚本：只需重命名文件视图页面源 忘记标志和脚本：只需重命名文件 程序通常从标志或脚本获取输入。为什么不只是标志或脚本。示例 1：可重复使用的安装程序 想象一下 install_PY3_MODULE_NAME。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Forget Flags and Scripts: Just Rename the File&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47421513"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://robertsdotpm.github.io/software_engineering/program_names_as_input.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://robertsdotpm.github.io/software_engineering/program_names_as_input.html</guid>
+      <pubDate>Wed, 18 Mar 2026 04:11:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47421513</comments>
     </item>
   </channel>
 </rss>

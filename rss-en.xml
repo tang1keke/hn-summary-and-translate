@@ -6,122 +6,35 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Mar 2026 02:37:37 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 05:00:19 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>Show HN: Sub-millisecond VM sandboxes using CoW memory forking</title>
-      <link>https://github.com/adammiribyan/zeroboot</link>
-      <description>&lt;p&gt;74ms ~300ms ~400ms ~90ms Memory per sandbox ~265KB ~128MB ~50MB ~50MB Fork + exec (Python) ~8ms - - - 1000 concurrent forks 815ms - - - Each sandbox is a real KVM virtual machine with hardware-enforced memory isolation. 8ms) Template (one-time): Firecracker boots a VM, pre-loads your runtime, and snapshots memory + CPU state Fork (~0. 8ms): Creates a new KVM VM, maps snapshot memory as CoW, restores all CPU state Isolation: Each fork is a separate KVM VM with hardware-enforced memory isolation SDKs Python — sdk/python from zeroboot import Sandbox sb = Sandbox("zb_live_your_key") result = sb.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47412569"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/adammiribyan/zeroboot'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Have a Fucking Website</title>
+      <link>https://www.otherstrangeness.com/2026/03/14/have-a-fucking-website/</link>
+      <description>&lt;p&gt;Have a Fucking Website Look, I get it. “But-” fuck you, have a fucking website. You don’t own shit that you put on social media platforms.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47421442"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.otherstrangeness.com/2026/03/14/have-a-fucking-website/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cperciva:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Don&amp;#x27;t forget about entropy!  You&amp;#x27;ve just created two identical copies of all of your random number generators, which could be very very bad for security.&lt;p&gt;The firecracker team wrote a very good paper about addressing this when they added snapshot support.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;indigodaddy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Does this need passthrough or might we be able to leverage PVM with it on a passthrough-less cloud VM&amp;#x2F;VPS?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;indigodaddy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Your write-up made me think of:&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;codesandbox.io&amp;#x2F;blog&amp;#x2F;how-we-clone-a-running-vm-in-2-seconds" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;codesandbox.io&amp;#x2F;blog&amp;#x2F;how-we-clone-a-running-vm-in-2-s...&lt;/a&gt;&lt;p&gt;Are there parallels?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;buckle8017:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is how android processes work, but it&amp;#x27;s a security problem breaking some ASLR type things.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;diptanu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The tricky part of doing this in production is cloning sandboxes across nodes. You would have to snapshot the resident memory, file system (or a CoW layer on top of the rootfs), move the data across nodes, etc.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;crawshaw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Nice to see this work! I experimented with this for exe.dev before we launched. The VM itself worked really well, but there was a lot of setup to get the networking functioning. And in the end, our target are use cases that don&amp;#x27;t mind a ~1-second startup time, which meant doing a clean systemd start each time was easier.&lt;p&gt;That said, I have seen several use cases where people want a VM for something minimal, like a python interpreter, and this is absolutely the sort of approach they should be using. Lot of promise here, excited to see how far you can push it!&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jauntywundrkind:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Mods: can we merge with &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47412812"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47412812&lt;/a&gt;?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vmg12:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Does it only work with that specific version of firecracker and only with vms with 1 vcpu?&lt;p&gt;More than the sub ms startup time the 258kb of ram per VM is huge.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;handfuloflight:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Can you run this in another sandbox? Not sure why you&amp;#x27;d want to... but can you?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/adammiribyan/zeroboot</guid>
-      <pubDate>Tue, 17 Mar 2026 13:43:44 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47412569</comments>
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;stackghost:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Random pho restaurants (or whatever) are usually literal mom-and-pop shops and asking these people to put up (and maintain!) a website is usually too daunting for them.  These are the places that tend to end up with only a facebook page or an insta.&lt;p&gt;It&amp;#x27;s just too hard for normies to DIY, and local &amp;quot;web dev firms&amp;quot; are usually predatory in their insistence on making decisions that require ongoing maintenance, because recurring revenue.&lt;p&gt;Just &lt;i&gt;try&lt;/i&gt; to get your local web design firm to build you a static html-only site and hand you the creds for all the hosting, etc.&lt;p&gt;What random hair salons or coffee shops need is basically github pages with bring-your-own-domain, WYSIWG editing that works on mobile, and zero git.  but AFAICT no such service exists.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rdevilla:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Well fucking said. JavaScript was a fucking scourge upon the web as it convinced everybody that you need to know how to write an &amp;quot;app&amp;quot; to share text and jpegs, which we have been doing with the Document Object Model for literally decades.&lt;p&gt;Websites and HTML&amp;#x2F;CSS are documents. If you can write a Word document you can write a website. Death to walled gardens which have been the main locus of enshittification of the web.&lt;p&gt;If the CG-NAT problem can be solved one day I look forward to a rebirth of true P2P networking and information sharing with no central authority.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ghayes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Instead of focusing on why having a website is better for customers (100% it is), the article is really an attack on... developers at Meta and tech other companies? I love a good profanity laced rant, but the entire article reads unfocused and unpersuasive.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;protocolture:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Lots of businesses never get beyond a mobile number lmao&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blinkbat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Agree but most small biz don&amp;#x27;t conceive or care about the internet this way&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.otherstrangeness.com/2026/03/14/have-a-fucking-website/</guid>
+      <pubDate>Wed, 18 Mar 2026 03:53:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47421442</comments>
     </item>
     <item>
-      <title>Mistral AI Releases Forge</title>
-      <link>https://mistral.ai/news/forge</link>
-      <description>&lt;p&gt;Forge enables enterprises to build models that internalize their domain knowledge. Forge allows enterprises to build models that remain under their control. Custom models make enterprise agents reliable.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47418295"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://mistral.ai/news/forge'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aavci:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;How does this compare to fine tuning?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ryeguy_24:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;How many proprietary use cases truly need pre-training or even fine-tuning as opposed to RAG approach? And at what point does it make sense to pre-train&amp;#x2F;fine tune? Curious.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;They mention pretraining too, which surprises me. I thought that was prohibitively expensive?&lt;p&gt;It&amp;#x27;s feasible for small models but, I thought small models were not reliable for factual information?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dmix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is definitely the smart path for making $$ in AI. I noticed MongoDB is also going into this market with &lt;a href="https:&amp;#x2F;&amp;#x2F;www.voyageai.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.voyageai.com&amp;#x2F;&lt;/a&gt; targeting business RAG applications and offering consulting for company-specific models.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rorylawless:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The fine tuning endpoint is deprecated according to the API docs. Is this the replacement?&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;docs.mistral.ai&amp;#x2F;api&amp;#x2F;endpoint&amp;#x2F;deprecated&amp;#x2F;fine-tuning" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;docs.mistral.ai&amp;#x2F;api&amp;#x2F;endpoint&amp;#x2F;deprecated&amp;#x2F;fine-tuning&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bsjshshsb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Id training or FT &amp;gt; context? Anyone have experience.&lt;p&gt;Is it possible to retrain daily or hourly as info changes?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mark_l_watson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I am rooting for Mistral with their different approach: not really competing on the largest and advanced models, instead doing custom engineering for customers and generally serving the needs of EU customers.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;csunoser:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Huh. I initially thought this is just another finetuning end point. But apparently they are partnering up with customers on the pretraining side as well. But RL as well? Jeez RL env are really hard to get right. Best wishes I guess.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;roxolotl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Mistral has been releasing some cool stuff. Definitively behind on frontier models but they are working a different angle. Was just talking at work about how hard model training is for a small company so we’d probably never do it. But with tools like this, and the new unsloth release, training feels more in reach.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://mistral.ai/news/forge</guid>
-      <pubDate>Tue, 17 Mar 2026 21:04:26 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47418295</comments>
-    </item>
-    <item>
-      <title>Launch an autonomous AI agent with sandboxed execution in 2 lines of code</title>
-      <link>https://amaiya.github.io/onprem/examples_agent.html</link>
-      <description>&lt;p&gt;pipelines import AgentExecutor AgentExecutor. The agent cannot read or write outside the working directory. run( task=""" Create a simple Python calculator module with the following: - calculator.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47420493"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://amaiya.github.io/onprem/examples_agent.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TheDong:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I was curious, so I dug a bit.&lt;p&gt;Under the hood it&amp;#x27;s effectively running:&lt;p&gt;&lt;pre&gt;&lt;code&gt;    docker run --rm -w $PWD:&amp;#x2F;workspace \
-      python:3.11-slim \
-      pip install -q patchpal &amp;amp;&amp;amp; \
-      &amp;lt;command&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-Which cool, great, I sure love &amp;quot;pip install&amp;quot;ing every time instead of just baking a single container image with it already installed.&lt;p&gt;This isn&amp;#x27;t any sort of fancy or interesting sandboxing, this is shelling out to &amp;quot;docker run&amp;quot;, and not even using docker as well as it could.&lt;p&gt;Quoting from the linked page:&lt;p&gt;&amp;gt; The tradeoff is ~5-10 seconds of container startup overhead&lt;p&gt;Sure, maybe it&amp;#x27;s 5-10 seconds if you use containers wrong. Unpacking a root filesystem and spinning up a clean mount namespace on linux is a few ms, and taking more than a second means something is going wrong, like &amp;quot;pip install&amp;quot;ing at runtime instead of buildtime for some reason.&lt;p&gt;I can spin up a full linux vm and run some code in quicker than 5 seconds.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://amaiya.github.io/onprem/examples_agent.html</guid>
-      <pubDate>Wed, 18 Mar 2026 01:10:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47420493</comments>
-    </item>
-    <item>
-      <title>Launch HN: Kita (YC W26) – Automate credit review in emerging markets</title>
-      <link>https://news.ycombinator.com/item?id=47417335</link>
-      <description>&lt;p&gt;We automate credit review for lenders in emerging markets using VLMs. Kita uses VLM-based agents to parse documents, detect fraud, and extract underwriting signals from messy financial files. Kita Capture is our first document intelligence product for lenders.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47417335"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=47417335'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iririririr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Solution to emerging markets capital access problem is not making the current predatory system more efficient, but investing in micro credit. Which will never happen at scale because it generates lower returns (better to have 10 bad payers than 1000 good payers)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wumms:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Sidenote: unlike in Tagalog, Kita means “day-care facility for children” in German, so names like Kita Capture and Kita Credit Agent could carry unintended connotations.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.ycombinator.com/item?id=47417335</guid>
-      <pubDate>Tue, 17 Mar 2026 19:46:29 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47417335</comments>
-    </item>
-    <item>
-      <title>The Pleasures of Poor Product Design</title>
-      <link>https://www.inconspicuous.info/p/the-pleasures-of-poor-product-design</link>
-      <description>&lt;p&gt;Screen shot from my video interview with Katerina Kamprani. Katerina Kamprani: I mean, sparsely. (Photos © Katerina Kamprani — The Un.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47420432"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.inconspicuous.info/p/the-pleasures-of-poor-product-design'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bcherry:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;this really reminds me of the &amp;quot;worst volume control&amp;quot; from reddit &lt;a href="https:&amp;#x2F;&amp;#x2F;uxdesign.cc&amp;#x2F;the-worst-volume-control-ui-in-the-world-60713dc86950" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;uxdesign.cc&amp;#x2F;the-worst-volume-control-ui-in-the-world...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;keithnz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;given the title, so may software developers must be living in bliss! &amp;#x2F;s&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.inconspicuous.info/p/the-pleasures-of-poor-product-design</guid>
-      <pubDate>Wed, 18 Mar 2026 01:00:45 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47420432</comments>
-    </item>
-    <item>
-      <title>A tale about fixing eBPF spinlock issues in the Linux kernel</title>
-      <link>https://rovarma.com/articles/a-tale-about-fixing-ebpf-spinlock-issues-in-the-linux-kernel/</link>
-      <description>&lt;p&gt;In this case, we’re dealing with a kernel freeze so it’s not as simple as that. With a custom kernel, it’s pretty simple to enable kernel debugging. Unfortunately, it seems that when the kernel is in this freezing state, even the debugger doesn’t respond anymore.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47420388"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://rovarma.com/articles/a-tale-about-fixing-ebpf-spinlock-issues-in-the-linux-kernel/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://rovarma.com/articles/a-tale-about-fixing-ebpf-spinlock-issues-in-the-linux-kernel/</guid>
-      <pubDate>Wed, 18 Mar 2026 00:53:10 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47420388</comments>
-    </item>
-    <item>
-      <title>Why AI systems don't learn – On autonomous learning from cognitive science</title>
-      <link>https://arxiv.org/abs/2603.15381</link>
-      <description>&lt;p&gt;) Connected Papers Toggle Connected Papers (What is Connected Papers. ) Litmaps Toggle Litmaps (What is Litmaps. ) Links to Code Toggle Papers with Code (What is Papers with Code.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47418722"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://arxiv.org/abs/2603.15381'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zhangchen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Has anyone tried implementing something like System M&amp;#x27;s meta-control switching in practice? Curious how you&amp;#x27;d handle the reward signal for deciding when to switch between observation and active exploration without it collapsing into one mode.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jdkee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;LeCun has been talking about his JEPA models for awhile.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;ai.meta.com&amp;#x2F;blog&amp;#x2F;yann-lecun-ai-model-i-jepa&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ai.meta.com&amp;#x2F;blog&amp;#x2F;yann-lecun-ai-model-i-jepa&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;beernet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The paper&amp;#x27;s critique of the &amp;#x27;data wall&amp;#x27; and language-centrism is spot on. We’ve been treating AI training like an assembly line where the machine is passive, and then we wonder why it fails in non-stationary environments. It’s the ultimate &amp;#x27;padded room&amp;#x27; architecture: the model is isolated from reality and relies on human-curated data to even function.&lt;p&gt;The proposed System M (Meta-control) is a nice theoretical fix, but the implementation is where the wheels usually come off. Integrating observation (A) and action (B) sounds great until the agent starts hallucinating its own feedback loops. Unless we can move away from this &amp;#x27;outsourced learning&amp;#x27; where humans have to fix every domain mismatch, we&amp;#x27;re just building increasingly expensive parrots. I’m skeptical if &amp;#x27;bilevel optimization&amp;#x27; is enough to bridge that gap or if we’re just adding another layer of complexity to a fundamentally limited transformer architecture.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aanet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;by Emmanuel Dupoux, Yann LeCun, Jitendra Malik&lt;p&gt;&amp;quot;he proposed framework integrates learning from observation (System A) and learning from active behavior (System B) while flexibly switching between these learning modes as a function of internally generated meta-control signals (System M). We discuss how this could be built by taking inspiration on how organisms adapt to real-world, dynamic environments across evolutionary and developmental timescales. &amp;quot;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://arxiv.org/abs/2603.15381</guid>
-      <pubDate>Tue, 17 Mar 2026 21:42:39 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47418722</comments>
+      <title>Forget Flags and Scripts: Just Rename the File</title>
+      <link>https://robertsdotpm.github.io/software_engineering/program_names_as_input.html</link>
+      <description>&lt;p&gt;Software engineering Forget Flags and Scripts: Just Rename the File View page source Forget Flags and Scripts: Just Rename the File Programs usually get input from flags or scripts. Why not just flags or scripts. Example 1: Reusable installers Imagine install_PY3_MODULE_NAME.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47421513"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://robertsdotpm.github.io/software_engineering/program_names_as_input.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://robertsdotpm.github.io/software_engineering/program_names_as_input.html</guid>
+      <pubDate>Wed, 18 Mar 2026 04:11:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47421513</comments>
     </item>
   </channel>
 </rss>
