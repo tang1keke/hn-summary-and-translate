@@ -6,166 +6,129 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 17 Mar 2026 21:46:32 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 02:37:37 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>蛞蝓的十年</title>
-      <link>https://terathon.com/blog/decade-slug.html</link>
-      <description>&lt;p&gt;这篇文章讨论了自 2017 年论文发表和 Slug 库首次发布以来渲染方法发生的变化。尽管对于渲染普通尺寸的文本来说不是必需的，但在 Slug 的早期版本中实现了自适应超级采样，以增强以非常小的尺寸绘制的文本。删除超级采样也大大简化了像素着色器。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A Decade of Slug&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47416736"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://terathon.com/blog/decade-slug.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Show HN：使用 CoW 内存分叉的亚毫秒级 VM 沙箱</title>
+      <link>https://github.com/adammiribyan/zeroboot</link>
+      <description>&lt;p&gt;74ms ~300ms ~400ms ~90ms 每个沙箱内存 ~265KB ~128MB ~50MB ~50MB Fork + exec (Python) ~8ms - - - 1000 个并发 fork 815ms - - - 每个沙箱都是一个真正的 KVM 虚拟机，具有硬件强制内存隔离。 8ms) 模板（一次性）：Firecracker 启动虚拟机，预加载运行时，快照内存 + CPU 状态 Fork（~0. 8ms）：创建一个新的 KVM VM，将快照内存映射为 CoW，恢复所有 CPU 状态 隔离：每个 fork 都是一个单独的 KVM VM，具有硬件强制内存隔离 SDK Python — sdk/python from Zeroboot import Sandbox sb =沙箱（“zb_live_your_key”）结果= sb。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Sub-millisecond VM sandboxes using CoW memory forking&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47412569"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/adammiribyan/zeroboot'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maximilianburke:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;惊人的！谢谢你，埃里克！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Cthulhu_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该死，我大约在20年前使用过作者的游戏引擎（C4），当时还在上学，不知道他们仍然活跃在那个领域！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;swiftcoder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Lengyel 仍然是单口相声，值得称赞！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cachius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他的最新项目是 &lt;a href="https:&amp;#x2F;&amp;#x2F;radicalpie.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;radicalpie.com&amp;#x2F;&lt;/a&gt;&lt;p&gt;适用于 Windows 10&amp;#x2F;11 的专业方程编辑器，售价 60 美元，使用 Slug 进行渲染。想必他正在用它来写他伟大的 FGED 书籍。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Vipitis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我所处的位置是将字形渲染器实现为计算着色器会有所帮助。这是一个很好的机会，可以将此作为参考...令人兴奋的周末项目！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;forrestthewoods:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哦，哇，这太疯狂了。这是一个在商业上相当成功的项目。现在它只是被开源了？这是给社区的绝对令人难以置信的礼物！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;byearthithatius:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当开发出复杂、有用的软件的人因其努力而得到回报时，我们会很高兴。更多这样的故事！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;VikingCoder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ShaderToy 上了吗？  ：D&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rrauenza:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您还遇到连接重置错误，可以使用以下替代方法：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;web.archive.org&amp;#x2F;web&amp;#x2F;20260317185928&amp;#x2F;https:&amp;#x2F;&amp;#x2F;terathon.com&amp;#x2F;博客&amp;#x2F;decade-slug.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;web.archive.org&amp;#x2F;web&amp;#x2F;20260317185928&amp;#x2F;https:&amp;#x2F;&amp;#x2F;terathon....&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;moralestapia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感谢您的服务！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;miloignis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是个好消息，我衷心感谢作者。
-我记得几年前接触到这个算法，认为它非常优雅且非常有吸引力，但对专利状态感到失望，使其无法用于自由和开源软件工作。我真的很感谢作者选择在合理的时间后将其奉献给公共领域，并祝贺它在专有时取得的成功！&lt;p&gt;现在，如果我为了好玩而编写终端仿真器，我会很想用这个算法来实现代码的美感。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://terathon.com/blog/decade-slug.html</guid>
-      <pubDate>Tue, 17 Mar 2026 18:59:50 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47416736</comments>
+&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cperciva:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不要忘记熵！  您刚刚创建了所有随机数生成器的两个相同副本，这对安全性可能非常不利。&lt;p&gt;Firecracker 团队在添加快照支持时写了一篇非常好的论文来解决这个问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;indigodaddy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是否需要直通，或者我们是否能够在无直通云 VM&amp;#x2F;VPS 上利用 PVM？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;indigodaddy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你的文章让我想到：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;codesandbox.io&amp;#x2F;blog&amp;#x2F;how-we-clone-a-running-vm-in-2-seconds" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;codesandbox.io&amp;#x2F;blog&amp;#x2F;how-we-clone-a-running-vm-in-2-s...&lt;/a&gt;&lt;p&gt;有相似之处吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;buckle8017:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是 Android 进程的工作方式，但这是一个破坏某些 ASLR 类型事物的安全问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;diptanu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在生产中执行此操作的棘手部分是跨节点克隆沙箱。您必须对驻留内存、文件系统（或 rootfs 之上的 CoW 层）进行快照，跨节点移动数据等。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;crawshaw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴看到这部作品！在我们启动之前，我对 exe.dev 进行了实验。虚拟机本身运行得非常好，但需要进行大量设置才能使网络正常运行。最后，我们的目标是不介意大约 1 秒启动时间的用例，这意味着每次执行干净的 systemd 启动会更容易。&lt;p&gt;也就是说，我已经看到了几个用例，人们需要 VM 来实现最小的功能，例如 Python 解释器，这绝对是他们应该使用的方法。这里有很多承诺，很高兴看到您能将其推向多远！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jauntywundrkind:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Mods：我们可以与 &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47412812"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47412812&lt;/a&gt; 合并吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vmg12:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它是否仅适用于该特定版本的 firecracker，并且仅适用于具有 1 个 vcpu 的虚拟机？&lt;p&gt;每个虚拟机 258kb 的 ram 超过亚毫秒启动时间，这是巨大的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;handfuloflight:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你可以在另一个沙箱中运行它吗？不知道为什么你想...但是你可以吗？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/adammiribyan/zeroboot</guid>
+      <pubDate>Tue, 17 Mar 2026 13:43:44 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47412569</comments>
     </item>
     <item>
-      <title>Python 3.15 的 JIT 现在重回正轨</title>
-      <link>https://fidget-spinner.github.io/posts/jit-on-track.html</link>
-      <description>&lt;p&gt;也就在那时，Faster CPython 团队失去了主要赞助商的资助。 Brandt 在 3 的早期就开始了这项工作。为了鼓励新的贡献者，我还制定了非常详细的说明，可以立即采取行动。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Python 3.15's JIT is now back on track&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47416486"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://fidget-spinner.github.io/posts/jit-on-track.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Mistral AI 发布 Forge</title>
+      <link>https://mistral.ai/news/forge</link>
+      <description>&lt;p&gt;Forge 使企业能够构建内化其领域知识的模型。 Forge 允许企业构建仍在其控制之下的模型。定制模型让企业代理变得可靠。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Mistral AI Releases Forge&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47418295"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://mistral.ai/news/forge'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;killingtime74:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;抱歉，这些图表完全无法阅读。每行有四个代码名称。哪个是 jit，哪个是 cpython？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fluidcruft:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;（什么是蓝莓、里普利、琼斯和普罗米修斯？）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ecshafer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Python 代码库出了什么问题，导致它比看似所有其他代码库更难实现？ Ruby、PHP、JS。他们似乎都在显着缩短的时间内添加了 JIT。 Python JIT 的需求已经有近 20 年了。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adrian17:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我偶尔会浏览一下 PR 问题跟踪器，以了解 JIT 发生的最新情况，但我从未见过高层讨论在哪里进行；问题和 PR 总是直接跳到具体的细节上。是否有任何地方有关于跟踪投影与记录如何工作和不同的高级介绍示例？谷歌搜索这些术语通常会返回 CPython 问题跟踪器作为第一个结果，而 repo 的 jit.md 相对准系统并且很少更新:(&lt;p&gt;同样，我不完全理解引用计数消除；我已经看到了代码生成的差异，但由于代码生成发生在构建时，这是否意味着每个操作码可能被分成两个（或更多？）模板，有或没有删除了 increfs&amp;#x2F;decrefs？有了如此多的操作码及其专用变体，现在有多少个模板？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ekjhgkejhgk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;PyPy 不是已经有 jit 编译器了吗？我们为什么不使用它呢？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oystersareyum:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;我们还没有适当的自由线程支持，但我们的目标是在 3.15&amp;#x2F;3.16 中实现这一目标。 JIT 现在重回正轨。&lt;p&gt;我最近阅读了一篇关于实现自由线程并通过生态系统进行修改以真正实现它的采访：&lt;a href="https:&amp;#x2F;&amp;#x2F;alexalejandre.com&amp;#x2F;programming&amp;#x2F;interview-with-ngoldbaum&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;alexalejandre.com&amp;#x2F;programming&amp;#x2F;interview-with-ngoldba...&lt;/a&gt;&lt;p&gt;那家伙说他希望自由线程构建将成为“3.16 或 3.17”中唯一的构建，我想知道这是否也适用于 JIT，或者 JIT 和如何口译员互动。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://fidget-spinner.github.io/posts/jit-on-track.html</guid>
-      <pubDate>Tue, 17 Mar 2026 18:37:27 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47416486</comments>
+&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aavci:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这与微调相比如何？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ryeguy_24:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与 RAG 方法相比，有多少专有用例真正需要预训练甚至微调？什么时候预训练和微调才有意义？好奇的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andai:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们也提到了预训练，这让我感到惊讶。我认为这太昂贵了？&lt;p&gt;这对于小型模型来说是可行的，但是，我认为小型模型对于事实信息不可靠？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dmix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这绝对是在人工智能领域赚钱的明智之路。我注意到 MongoDB 也正在进入这个市场 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.voyageai.com&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.voyageai.com&amp;#x2F;&lt;/a&gt; 针对业务 RAG 应用程序，并为公司特定模型提供咨询。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rorylawless:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;根据 API 文档，微调端点已被弃用。这是替代品吗？&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;docs.mistral.ai&amp;#x2F;api&amp;#x2F;endpoint&amp;#x2F;已弃用&amp;#x2F;微调" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;docs.mistral.ai&amp;#x2F;api&amp;#x2F;端点&amp;#x2F;已弃用&amp;#x2F;微调&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bsjshshsb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ID训练或FT&gt;语境？任何人都有经验。&lt;p&gt;随着信息的变化，是否可以每天或每小时重新培训？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mark_l_watson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我支持米斯特拉尔的不同方法：不真正在最大和先进的模型上竞争，而是为客户进行定制工程并总体上满足欧盟客户的需求。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;csunoser:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;呵呵。我最初认为这只是另一个微调终点。但显然他们也在预培训方面与客户合作。但RL也一样吗？ Jeez RL 环境真的很难做好。我想是最好的祝愿。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;roxolotl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;米斯特拉尔一直在发布一些很酷的东西。绝对落后于前沿模型，但他们正在以不同的角度工作。只是在工作中谈论模型培训对于一家小公司来说有多困难，所以我们可能永远不会这样做。但有了这样的工具，以及新的 unsloly 版本，培训感觉更容易实现。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://mistral.ai/news/forge</guid>
+      <pubDate>Tue, 17 Mar 2026 21:04:26 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47418295</comments>
     </item>
     <item>
-      <title>完成任务：元提示、上下文工程和规范驱动的开发系统</title>
-      <link>https://github.com/gsd-build/get-shit-done</link>
-      <description>&lt;p&gt;我不写代码——克劳德·代码写。 claude/ npx get-shit-done-cc --claude --local # 安装到。 codex/ npx get-shit-done-cc --codex --local # 安装到。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Get Shit Done: A Meta-Prompting, Context Engineering and Spec-Driven Dev System&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47417804"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/gsd-build/get-shit-done'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>只需 2 行代码即可启动具有沙盒执行功能的自主 AI 代理</title>
+      <link>https://amaiya.github.io/onprem/examples_agent.html</link>
+      <description>&lt;p&gt;管道导入 AgentExecutor AgentExecutor。代理无法在工作目录之外读取或写入。 run( task=""" 使用以下内容创建一个简单的 Python 计算器模块： - Calculator.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Launch an autonomous AI agent with sandboxed execution in 2 lines of code&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47420493"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://amaiya.github.io/onprem/examples_agent.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Andrei_dev:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一个月内 25 万行 - 好吧，但是在这个数量下，审查实际上是什么样的？&lt;p&gt;我一直在研究人工智能生成的存储库中的安全问题，这是同样的事情：更多的生成意味着更少的审查。不仅仅是逻辑 - 检查 .env 中的内容、API 路由是否具有身份验证中间件、调试端点是否已进入生产环境。&lt;p&gt;您可以快速移动。但“审查”现在意味着不同的东西。人类会犯人类的错误。人工智能编写的代码看起来很干净，并且带有硬编码的凭据，因为某些模板拥有这些凭据，但没有人发现它。&lt;p&gt;所有这些框架都在竞相生成更快的速度。没有人能够以这样的速度解决验证方面的问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gtirloni:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我正在使用这个和超能力，但最终，计划模式变得足够了，我更喜欢自己驾驶 Claude Code。这些框架非常适合即发即忘的任务，特别是当涉及一些研究但根据我的经验，它们燃烧的代币多了 10 倍时。我总是达到最大计划的限制，但我得到的结果却没有明显的好处。但这会根据人们喜欢的工作方式而有很大差异。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yoaviram:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在过去的 3 个月里，我一直在广泛使用 GSD。我以前使用过speckit，但我发现它有所欠缺。 GSD 在复杂任务上始终能让我完成 95% 的任务。这太棒了。最后 5% 大部分是“手动”的。测试。我们使用 GSD 构建并推出了 SaaS 产品，包括代理优先的 CMS (whiteboar.it)。&lt;p&gt;很难说为什么 GSD 比其他类似框架对我们来说效果更好，因为底层模型在同一时期也有了显着改进。显而易见的是，与普通的 Claude Code 相比，它极大地提高了生产力。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gbrindisi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢 openspec，它可以让您根据自己的喜好调整工作流程，并且不会妨碍您。&lt;p&gt;我从所有标准规范流程开始，随着我变得更加自信和固执己见，我将其简化为我喜欢的。&lt;p&gt;我认为任何规范驱动框架的要点是您希望最终自己拥有工作流程，以便您可以按照自己的方式约束代码生成。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maccam912:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我在 &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;obra&amp;#x2F;superpowers" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;obra&amp;#x2F;superpowers&lt;/a&gt; 方面获得了很好的体验。乍一看这看起来很相似。有没有人尝试过，可以提供比较吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dfltr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与 Superpowers 之类的东西相比，GSD 因代币燃烧而闻名。最近情况有变化吗？当事情改进时，总是愿意重新审视它们。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;obsidianbases1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;如果你清楚地知道自己想要什么&lt;p&gt;这才是真正的挑战。我认识的那些跳到新工具的人很难解释他们想要什么，因此新工具比上一个工具更好。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;greenchair:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;可怕的名字，DOA&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MeetingsBrowser:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我已经尝试过，但我不相信我得到的结果比直接提示克劳德代码要好得多。&lt;p&gt;但它绝对打破了令牌。我通常不会达到会话限制，但在 GSD 的周二之前达到了 5 小时的限制（约 30 分钟）以及每周的限制。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;prakashrj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;借助 GSD，我能够在不到一个月的时间内编写 25 万行代码，而无需事先了解 claude。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/gsd-build/get-shit-done</guid>
-      <pubDate>Tue, 17 Mar 2026 20:23:39 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47417804</comments>
-    </item>
-    <item>
-      <title>Edge.js：在 WebAssembly 沙箱内运行 Node 应用程序</title>
-      <link>https://wasmer.io/posts/edgejs-safe-nodejs-using-wasm-sandbox</link>
-      <description>&lt;p&gt;这允许现有的节点。与节点完全兼容。我们不仅仅需要完整的 Node。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Edge.js: Run Node apps inside a WebAssembly sandbox&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47416081"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://wasmer.io/posts/edgejs-safe-nodejs-using-wasm-sandbox'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pscanf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常酷的项目！&lt;p&gt;关于可插入 js 引擎的问题：我有一个电子应用程序，我目前正在使用 QuickJS 运行 LLM 生成的代码。 Edge.js 是否能够（理论上）使用 Electron 的 v8 来获得“电子内的沙箱”？执行环境？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MillionOClock:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很有趣！这个可以在什么平台上运行？如果它可以在 iOS 上运行，您将如何处理访问文件系统或网络的尝试，这是否已经以某种方式连接？如果不是，是否可以轻松添加自定义处理程序来处理这些操作？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;benatkin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;显示 Node.js 兼容性高于 Deno 和 Bun 的图表具有误导性。名义上支持 API 和被证明可以在生产中运行整个 Node.js 应用程序和库是不同的事情。另外，Deno 和 Bun 一直在倾听用户的需求，而这是不顾用户需求而实施一切。正如它所描述的那样，这更像是一个决定，而不是一项伟大的成就。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;willquack:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很棒的项目！&lt;p&gt;愚蠢的问题：你能使用浏览器的 js 引擎和类似于 WebContainers 的 wasm 环境在前端 js 中运行它吗？也许“fs”只是在内存中，并且诸如分叉之类的一些功能被禁用。拥有“nodejs”会很酷。在网络上！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alex_reg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这有点令人困惑。&lt;p&gt;粗略地说：&lt;p&gt;* Node.js 的重构，但使用标准化 API 进行 JS 引擎互操作
-* 与 Wasmer CLI 集成，因此它将使用 v8 运行 JS，但是 Web assembly 中的其他所有内容&lt;p&gt;有趣的想法。&lt;p&gt;可能是一种更轻量级的沙箱 JS 方式...&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;syrusakbary:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你好，HN！&lt;p&gt;我是 Syrus，来自 Wasmer。经过多次尝试将 Node.js 引入 Edge，我们在几周内构建了 Edge.js。我们在这个项目中大量使用了 AI 和 Codex，否则开发时间将长达一年多。&lt;p&gt;此公告的摘要是 Edge.js：&lt;p&gt;&lt;pre&gt;&lt;code&gt; * 在“--safe”模式下使用 WebAssembly 运行
-  * 它与 Node.js 完全兼容（通过了非 VM 模块的所有规范测试）
-  * 具有可插拔的JS引擎架构：可以与V8、Javascript、SpiderMonkey、QuickJS、Hermes等配合使用。
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TheDong:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很好奇，所以我挖了一点。&lt;p&gt;在引擎盖下它有效地运行：&lt;p&gt;&lt;pre&gt;&lt;code&gt; docker run --rm -w $PWD:&amp;#x2F;workspace \
+      python:3.11-slim \
+      pip install -q patchpal &amp;amp;&amp;amp; \
+      &lt;命令&gt;
 &lt;/code&gt;&lt;/pre&gt;
-超级高兴回答您的任何问题！&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://wasmer.io/posts/edgejs-safe-nodejs-using-wasm-sandbox</guid>
-      <pubDate>Tue, 17 Mar 2026 18:01:50 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47416081</comments>
+太酷了，太棒了，我每次都喜欢“pip install”，而不是仅仅烘焙一个已安装的容器映像。&lt;p&gt;这不是任何花哨或有趣的沙箱，这是对“docker run”的攻击，甚至没有充分利用 docker。&lt;p&gt;引用链接页面：&lt;p&gt;&gt;权衡是大约 5-10 秒的容器启动开销&lt;p&gt;当然，如果您错误地使用容器，也许需要 5-10 秒。在 Linux 上解压根文件系统并启动干净的挂载命名空间需要几毫秒，超过一秒就意味着出现了问题，例如出于某种原因在运行时而不是构建时进行“pip install”。&lt;p&gt;我可以启动完整的 Linux 虚拟机并在 5 秒以上的时间内运行一些代码。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://amaiya.github.io/onprem/examples_agent.html</guid>
+      <pubDate>Wed, 18 Mar 2026 01:10:19 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47420493</comments>
     </item>
     <item>
-      <title>Garry Tan 的克劳德代码设置</title>
-      <link>https://github.com/garrytan/gstack/tree/main</link>
-      <description>&lt;p&gt;” 【80项审核，推断你的设计系统，导出DESIGN。你：/qa https://staging。推断你的设计系统。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Garry Tan's Claude Code Setup&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47418576"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/garrytan/gstack/tree/main'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://github.com/garrytan/gstack/tree/main</guid>
-      <pubDate>Tue, 17 Mar 2026 21:28:35 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47418576</comments>
-    </item>
-    <item>
-      <title>举报人称，Meta 和 TikTok 让有害内容上升以提高参与度</title>
-      <link>https://www.bbc.com/news/articles/cqj9kgxqjwjo</link>
-      <description>&lt;p&gt;举报人表示，在有证据表明愤怒推动了参与度后，Meta 和 TikTok 允许有害内容增加。英国广播公司。 TikTok 表示，这些都是“捏造的说法”，该公司投资了防止有害内容被查看的技术。他说，很难构建这样完全安全的系统。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Meta and TikTok let harmful content rise to drove engagement, say whistleblowers&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47417814"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bbc.com/news/articles/cqj9kgxqjwjo'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>推出 HN：Kita (YC W26) – 在新兴市场自动进行信用审查</title>
+      <link>https://news.ycombinator.com/item?id=47417335</link>
+      <description>&lt;p&gt;我们使用 VLM 对新兴市场的贷方进行自动化信用审查。 Kita 使用基于 VLM 的代理来解析文档、检测欺诈并从混乱的财务文件中提取承保信号。 Kita Capture 是我们为贷方提供的第一个文档智能产品。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Launch HN: Kita (YC W26) – Automate credit review in emerging markets&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47417335"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=47417335'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cdrnsf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们当然做到了。只要法律允许他们这样做并从中获利，他们就会继续这样做。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nelsonfigueroa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不能说我很惊讶，我想大多数人也不会感到惊讶。但有证据总是好的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;luc_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;毒品。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hmate9:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是不可避免的吗？我的意思是，它确实会产生点击量、浏览量和用户参与度，所以如果一个平台正在这样做，这是否自动意味着另一个平台也必须这样做？否则，他们将不断失去市场份额。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bigfishrunning:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得这是过去五年左右的常识，但真正的问题是“我们该怎么办？”。就我个人而言，我确实努力不花时间在网上感到愤怒，但这是一种比我更严重的社会弊病......&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Forgeties79:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我记得《社交困境》的整个前提基本上就是这个标题减去 TikTok，结果是什么？七、八年前？&lt;p&gt;不是说“好吧，呃”，我只是想在这一点上我必须问“我们要对此采取什么措施吗？”&lt;p&gt;我们至少十年前就知道在网上煽动愤怒和愤怒的经济激励措施。那么我们该怎么办呢？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.bbc.com/news/articles/cqj9kgxqjwjo</guid>
-      <pubDate>Tue, 17 Mar 2026 20:24:33 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47417814</comments>
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iririririr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;解决新兴市场资本准入问题的方法不是提高当前掠夺性体系的效率，而是投资于小额信贷。这永远不会大规模发生，因为它产生的回报较低（有 10 个不良付款者比 1000 个良好付款者更好）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wumms:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;旁注：与他加禄语不同，Kita 在德语中的意思是“儿童日托机构”，因此像 Kita Capture 和 Kita Credit Agent 这样的名字可能带有意想不到的含义。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://news.ycombinator.com/item?id=47417335</guid>
+      <pubDate>Tue, 17 Mar 2026 19:46:29 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47417335</comments>
     </item>
     <item>
-      <title>不懒工作室</title>
-      <link>https://unsloth.ai/docs/new/studio</link>
-      <description>&lt;p&gt;MLX 培训即将推出。主题标签可观察性获得对训练运行的完全可见性和控制。 MLX 培训即将推出。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Unsloth Studio&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47414032"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://unsloth.ai/docs/new/studio'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>糟糕的产品设计带来的乐趣</title>
+      <link>https://www.inconspicuous.info/p/the-pleasures-of-poor-product-design</link>
+      <description>&lt;p&gt;我对卡特琳娜·坎普拉尼的视频采访的屏幕截图。 Katerina Kamprani：我的意思是，稀疏。 （照片©Katerina Kamprani — 联合国。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Pleasures of Poor Product Design&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47420432"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.inconspicuous.info/p/the-pleasures-of-poor-product-design'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bcherry:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这真的让我想起了“最糟糕的音量控制”来自reddit &lt;a href="https:&amp;#x2F;&amp;#x2F;uxdesign.cc&amp;#x2F;the-worst-volume-control-ui-in-the-world-60713dc86950" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;uxdesign.cc&amp;#x2F;the-worst-volume-control-ui-in-the-world...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;keithnz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有了这个标题，软件开发者们一定过得很幸福吧！ &amp;#x2F;s&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.inconspicuous.info/p/the-pleasures-of-poor-product-design</guid>
+      <pubDate>Wed, 18 Mar 2026 01:00:45 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47420432</comments>
+    </item>
+    <item>
+      <title>关于修复 Linux 内核中的 eBPF 自旋锁问题的故事</title>
+      <link>https://rovarma.com/articles/a-tale-about-fixing-ebpf-spinlock-issues-in-the-linux-kernel/</link>
+      <description>&lt;p&gt;在这种情况下，我们正在处理内核冻结，因此事情并不那么简单。使用自定义内核，启用内核调试非常简单。不幸的是，似乎当内核处于这种冻结状态时，即使调试器也不再响应。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A tale about fixing eBPF spinlock issues in the Linux kernel&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47420388"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://rovarma.com/articles/a-tale-about-fixing-ebpf-spinlock-issues-in-the-linux-kernel/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://rovarma.com/articles/a-tale-about-fixing-ebpf-spinlock-issues-in-the-linux-kernel/</guid>
+      <pubDate>Wed, 18 Mar 2026 00:53:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47420388</comments>
+    </item>
+    <item>
+      <title>为什么人工智能系统不学习——认知科学的自主学习</title>
+      <link>https://arxiv.org/abs/2603.15381</link>
+      <description>&lt;p&gt;) Connected Papers Toggle Connected Papers（什么是 Connected Papers。） Litmaps Toggle Litmaps（什么是 Litmaps。） 代码链接 Toggle Papers with Code（什么是 Papers with Code。）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Why AI systems don't learn – On autonomous learning from cognitive science&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47418722"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arxiv.org/abs/2603.15381'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;trvz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在 macOS 上使用 pip 安装并不是一个可接受的选择。它会像 npm 或 gem 一样搞乱你的系统。&lt;p&gt;这需要自制软件或者是带有应用程序的 zip 文件以供手动下载。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;saberience:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;谁是这个的目标用户？&lt;p&gt;对于人工智能爱好者来说是这样吗？ IE。我家里有一台 4090，想要微调模型？&lt;p&gt;它是 LMStudio 的竞争对手吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;meowokIknewit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;用于微调的 GUI 看起来很有趣。希望这会带来很多新的定制模型&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jawerty:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴使用这个，在过去的几年里一直在使用不懒惰的模型&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://unsloth.ai/docs/new/studio</guid>
-      <pubDate>Tue, 17 Mar 2026 15:26:32 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47414032</comments>
-    </item>
-    <item>
-      <title>Show HN: Horizo​​n – Rust 中 GPU 加速的无限画布终端</title>
-      <link>https://github.com/peters/horizon</link>
-      <description>&lt;p&gt;Horizo​​n 是一款 GPU 加速终端板，可将您的所有会话置于无限画布上。选项卡式终端隐藏您的工作。 Horizo​​n 可以看到您的终端打印的内容并使其具有交互性。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Horizon – GPU-accelerated infinite-canvas terminal in Rust&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47416227"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/peters/horizon'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jauntywundrkind:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从积极的角度来说，感觉很像 Niri。 Niri 的“可滚动”界面的右侧和右侧始终有空间down！&lt;p&gt;我为自己构建的 Niri 工具之一是让我在顶部插入一个新行，以向上扩展。据我所知，这在 Niri 基础上并不是那么容易，限制了一些空间增长。&lt;p&gt;我非常接近在 Niri 中保留一些终端窗口、tmux 等，并使用一些工具来很好地转储当前状态。进行实际的恢复操作将是一件好事。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sakopov:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;会有可用的构建版本吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cedws:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;空间内存在计算中确实没有得到充分利用。&lt;p&gt;当 libghostty[0] 发布时，也许您可以使用它，这样您就不必从头开始构建所有内容。&lt;p&gt;[0]: &lt;a href="https:&amp;#x2F;&amp;#x2F;mitchellh.com&amp;#x2F;writing&amp;#x2F;libghostty-is-coming" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;mitchellh.com&amp;#x2F;writing&amp;#x2F;libghostty-is-coming&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ms_menardi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太棒了！我立即注意到两件事：&lt;p&gt;设置窗口与小地图重叠。&lt;p&gt;我认为如果可以缩放，那就太好了？我使用它而不是平铺窗口管理器的原因是为了在屏幕上同时容纳更多终端。我认为如果《最高指挥官》中有像战略缩放这样的功能（视频：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=9hJY7exr9KU" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=9hJY7exr9KU&lt;/a&gt;），那会是很多更轻松地同时管理多个终端，并利用无限的画布。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;fritzo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望这将是一个无限长度的终端视图，就像星球大战中的开场背景故事一样&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cadamsdotcom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也许我老了，但这听起来像 90 年代末的 MDI（多文档界面）。&lt;p&gt;走渡渡鸟之路可能是因为非高级用户很难理解。&lt;p&gt;但这是一个高级用户工具 - 看起来很合适！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tekacs:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这很有趣！我切换到 &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;manaflow-ai&amp;#x2F;cmux" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;manaflow-ai&amp;#x2F;cmux&lt;/a&gt; 一段时间，但由于其不可靠性、高内存和 CPU 使用率而不得不切换回 Ghostty一堆错误。&lt;p&gt;这很有意义，但是...对于我们这些拥有多个屏幕的人来说，允许从一个画布拉出到第二个画布是很棒的（你至少最终需要每个屏幕一个窗口）。&lt;p&gt;总的来说，感觉...更多的结构而不是更少的感觉，这将是最流畅的体验。我会使用你的 Ctrl+K 快捷键，看看它最终是否感觉我可以快速到达我需要的任何地方。&lt;p&gt;但是...干得好！&lt;p&gt;像我这样的 jj 用户请注意：如果你想要 `cargo run --release`，你需要 `git lfs pull`！&lt;p&gt;更新：创建任何“shell”都不太顺利；工作区（看起来你使用 GNU-only 标志来编写脚本） – 一旦找到它，我就会推送修复。&lt;p&gt;另外：AGENTS.md 是错误的 JFYI - 它指向 portable-pty，当这是使用 alacritty_terminal&amp;#x27;s tty （在 rustix-openpty 上）&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/peters/horizon</guid>
-      <pubDate>Tue, 17 Mar 2026 18:14:24 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47416227</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zhangchen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有没有人尝试过在实践中实现类似 System M 的元控制切换之类的东西？很好奇你如何处理奖励信号来决定何时在观察和主动探索之间切换而不陷入一种模式。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jdkee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;LeCun 谈论他的 JEPA 模型已经有一段时间了。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;ai.meta.com&amp;#x2F;blog&amp;#x2F;yann-lecun-ai-model-i-jepa&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ai.meta.com&amp;#x2F;博客&amp;#x2F;yann-lecun-ai-model-i-jepa&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;beernet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该论文对“数据墙”的批评语言中心主义是正确的。我们一直将人工智能训练视为机器是被动的装配线，然后我们想知道为什么它在非静态环境中会失败。这是终极的“软垫房间”。架构：该模型与现实隔离，甚至依赖于人工管理的数据来发挥作用。&lt;p&gt;所提出的 System M（元控制）是一个很好的理论解决方案，但实施通常是失败的地方。将观察 (A) 和行动 (B) 结合起来听起来很棒，直到智能体开始产生自己的反馈循环的幻觉。除非我们能够摆脱这种“外包学习”人类必须修复所有领域不匹配的问题，而我们只是在建造越来越昂贵的鹦鹉。我怀疑“双层优化”是否可行。足以弥补这一差距，或者如果我们只是在根本上有限的变压器架构中添加另一层复杂性。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aanet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作者：Emmanuel Dupoux、Yann LeCun、Jitendra Malik&lt;p&gt;“他提出的框架集成了从观察中学习（系统 A）和从主动行为中学习（系统 B），同时根据内部生成的元控制信号（系统 M）在这些学习模式之间灵活切换。我们讨论如何通过从生物体如何在进化和发育时间尺度上适应现实世界的动态环境中获得灵感来建立这一点。 ”&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arxiv.org/abs/2603.15381</guid>
+      <pubDate>Tue, 17 Mar 2026 21:42:39 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47418722</comments>
     </item>
   </channel>
 </rss>
