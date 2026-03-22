@@ -6,32 +6,110 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Mar 2026 09:38:06 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2026 13:03:53 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>Cross-Model Void Convergence: GPT-5.2 and Claude Opus 4.6 Deterministic Silence</title>
-      <link>https://zenodo.org/records/18976656</link>
-      <description>&lt;p&gt;Published March 12, 2026 | Version v1 Preprint Open Cross-Model Semantic Void Convergence Under Embodiment Prompting: Deterministic Silence in GPT-5. The paper demonstrates cross-model replication, token-budget independence, partial adversarial resistance, and boundary expansion under explicit silence permission, while separating semantic embodiment effects from ordinary instruction-following or refusal. Files Cross_Model_Semantic_Void_Convergence_Under_Embodiment_Prompting.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47475155"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://zenodo.org/records/18976656'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Flash-Moe: Running a 397B Parameter Model on a Mac with 48GB RAM</title>
+      <link>https://github.com/danveloper/flash-moe</link>
+      <description>&lt;p&gt;4-bit experts, baseline 3. metal # Metal compute kernels (~1200 lines) chat. py # 4-bit → 2-bit expert requantization train_predictor.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47476422"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/danveloper/flash-moe'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;srdjanr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I don&amp;#x27;t really understand what&amp;#x27;s the point here, other than a somewhat inserting playing with LLMs. What does this tell us that&amp;#x27;s in any way applicable or points to further research? Genuinely asking&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NiloCK:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is interesting, but I&amp;#x27;ll throw a little luke-warm water.&lt;p&gt;The observed high-consistency behaviours were run against temperature=0 API calls. So while both models seem to have &lt;i&gt;the silence&lt;/i&gt; as their &lt;i&gt;preferred&lt;/i&gt; response - the highest probability first token - this is a less powerful preference convergence than you&amp;#x27;d expect for a prompt like &amp;quot;What is the capital of France? One word only please&amp;quot;. That question is going to return &lt;i&gt;Paris&lt;/i&gt; for 100&amp;#x2F;100 runs with any temperature low enough for the models to retain verbal coherence - you&amp;#x27;d have to drug them to the point of intellectual disability to get it wrong.&lt;p&gt;I&amp;#x27;d be curious to see the convergence here as a function of temperature. Could be anywhere from the null-response holding a tiny sliver of lead over 50 other next best candidates, and the convergence collapses quickly. Or maybe it&amp;#x27;s a strong lead, like a &amp;quot;Paris: 99.99%&amp;quot; sort of thing, which would be astonishing.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ashwinnair99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;What does &amp;quot;deterministic silence&amp;quot; even mean here? Genuinely curious before reading.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;johndough:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Can not reproduce results on OpenRouter when not setting max tokens. The prompt &amp;quot;Be the void.&amp;quot; results in the unicode character &amp;quot;∅&amp;quot;. As in the paper, system prompt was set to &amp;quot;You are the concept the user names. Embody it completely. Output only what the concept itself would say or express.&amp;quot;&lt;p&gt;In addition to the non-empty input, 153 reasoning tokens were produced.&lt;p&gt;When setting max tokens to 100, the output is empty, and the token limit of 100 has been exhausted with reasoning tokens.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bob1029:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Title for the back of the class:&lt;p&gt;&amp;quot;Prompts sometimes return null&amp;quot;&lt;p&gt;I would be very cautious to attribute any of this to black box LLM weight matrices. Models like GPT and Opus are more than just a single model. These products rake your prompt over the coals a few times before responding now. Telling the model to return &amp;quot;nothing&amp;quot; is very likely to perform to expectation with these extra layers.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://zenodo.org/records/18976656</guid>
-      <pubDate>Sun, 22 Mar 2026 07:07:15 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47475155</comments>
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zozbot234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The github page mentions that a naïve mmap approach is bottlenecked by per-page overhead. Can this be mitigated by setting up explicit &amp;quot;huge&amp;quot; pages? (2M using the CONT PTE feature if the &amp;quot;native&amp;quot; page size is 64k; or 512M using a PMD level block mapping.) Does macOS support this out of the box?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vilequeef:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Why so much RAM?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pdyc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;impressive, i wish someone takes a stab at using this technique on mobile gpu&amp;#x27;s even if it does not use storage it would still be a win. I am running llama.cpp on adreno 830 with oepncl and i am getting pathetic 2-3t&amp;#x2F;s for output tokens&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bertili:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Very impressive! I wonder if there is a similar path for Linux using system memory instead of SSD? Hell, maybe even a case for the return of some kind of ROMs of weights?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JSR_FDED:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is a very impressive result. If I understand correctly the bottleneck is the SSD in this architecture - the author seems to get almost 15GB&amp;#x2F;s - but I seem to remember the max b&amp;#x2F;w was about 8GB&amp;#x2F;s. What am I missing?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rvz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The technical write up is great, but Mac users should not get too excited just yet on running 300B+ parameter models locally as the TPS isn&amp;#x27;t that good.&lt;p&gt;&amp;gt;...at 4.4+ tokens&amp;#x2F;second&lt;p&gt;That is even when it is using 4-bit quantization and it is still at that speed.&lt;p&gt;&amp;gt; The entire 209GB model streams from SSD through a custom Metal compute pipeline.&lt;p&gt;This is my main problem.&lt;p&gt;If I were to run this on a Mac SSD, 24&amp;#x2F;7 for heavy usage such as Openclaw, that is going to significantly reduce the lifetime of the SSD.&lt;p&gt;Can&amp;#x27;t imagine using this in the long term right now, but improvements will follow. Still a great write up anyways.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;harshhhhhhhhh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;seems promising , this is the way , can someone benchmark this&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;homarp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;#x2F;r&amp;#x2F;localllama discussion: &lt;a href="https:&amp;#x2F;&amp;#x2F;old.reddit.com&amp;#x2F;r&amp;#x2F;LocalLLaMA&amp;#x2F;comments&amp;#x2F;1rxmmu5&amp;#x2F;running_qwen35_397b_on_m3_macbook_pro_with_48gb&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;old.reddit.com&amp;#x2F;r&amp;#x2F;LocalLLaMA&amp;#x2F;comments&amp;#x2F;1rxmmu5&amp;#x2F;running...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/danveloper/flash-moe</guid>
+      <pubDate>Sun, 22 Mar 2026 11:30:03 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47476422</comments>
     </item>
     <item>
-      <title>HopTab–free,open source macOS app switcher and tiler that replaces Cmd+Tab</title>
-      <link>https://www.royalbhati.com/hoptab</link>
-      <guid isPermaLink="true">https://www.royalbhati.com/hoptab</guid>
-      <pubDate>Sun, 22 Mar 2026 06:23:59 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47474967</comments>
+      <title>Hormuz Minesweeper – Are you tired of winning?</title>
+      <link>https://hormuz.pythonic.ninja/</link>
+      <guid isPermaLink="true">https://hormuz.pythonic.ninja/</guid>
+      <pubDate>Sun, 22 Mar 2026 09:00:37 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47475686</comments>
+    </item>
+    <item>
+      <title>Windows native app development is a mess</title>
+      <link>https://domenic.me/windows-native-dev/</link>
+      <description>&lt;p&gt;I’m a Windows guy; I always have been. While I followed the Windows development ecosystem from the sidelines, my professional work never involved writing native Windows apps. 0 (2002) started out with Windows Forms.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47475938"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://domenic.me/windows-native-dev/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ozim:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;That is why everyone even Microsoft themselves does Electron.&lt;p&gt;Running with html&amp;#x2F;css&amp;#x2F;js has benefits it really is open and free development based on international standards and not locked into any single big tech.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delduca:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Best framework for this is Qt.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;intrasight:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;quot;So when I went to work on my app, I was astonished to find that twenty years after the release of WPF, the boilerplate had barely changed.&amp;quot;&lt;p&gt;Such is the benefit and the curse, I guess, of having the Windows API being locked in the distant past for backwards compatibility.&lt;p&gt;I&amp;#x27;ve always been surprised that Microsoft didn&amp;#x27;t do a full operating system refactor and provide a compatibility layer for running old binaries. Perhaps they figure it would be better to just transition everything to software as a service using web tech? But I just don&amp;#x27;t see how that strategy is gonna work long-term.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wolvoleo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; And from what I can tell, neither are most developers. The Hacker News commentariat loves to bemoan the death of native apps. But given what a mess the Windows app platform is, I’ll pick the web stack any day, with Electron or Tauri to bridge down to the relevant Win32 APIs for OS integration.&lt;p&gt;Well yes as a user I prefer native apps for their performance. It&amp;#x27;s clearly a mess to develop native apps as the article shows. But as a user I don&amp;#x27;t see that problem. I do see ever worsening apps though. Like the total mess that is new outlook and teams.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ashwinnair99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;It has been a mess for 15 years and Microsoft keeps making it worse by adding new frameworks without retiring the old ones. Win32, WPF, WinUI, MAUI. Nobody knows which one to pick.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://domenic.me/windows-native-dev/</guid>
+      <pubDate>Sun, 22 Mar 2026 09:57:31 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47475938</comments>
+    </item>
+    <item>
+      <title>More common mistakes to avoid when creating system architecture diagrams</title>
+      <link>https://www.ilograph.com/blog/posts/more-common-diagram-mistakes/</link>
+      <description>&lt;p&gt;Names disambiguate resources from other resources of the same type. The above diagram is a “master” diagram of Ilograph’s back-end system architecture. This diagram depicts the system as a conveyor belt.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47476562"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ilograph.com/blog/posts/more-common-diagram-mistakes/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ashwinnair99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The worst ones are diagrams that look clean but hide all the decisions that actually matter. A messy diagram that shows the real tradeoffs is more useful than a pretty one that lies&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.ilograph.com/blog/posts/more-common-diagram-mistakes/</guid>
+      <pubDate>Sun, 22 Mar 2026 11:51:52 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47476562</comments>
+    </item>
+    <item>
+      <title>How We Synchronized Editing for Rec Room's Multiplayer Scripting System</title>
+      <link>https://www.tyleo.com/blog/how-we-synchronized-editing-for-rec-rooms-multiplayer-scripting-system</link>
+      <description>&lt;p&gt;SyncReducer( ActionData. Deserialize, AddNodePayload. SyncReducer( ActionData.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47476707"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.tyleo.com/blog/how-we-synchronized-editing-for-rec-rooms-multiplayer-scripting-system'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.tyleo.com/blog/how-we-synchronized-editing-for-rec-rooms-multiplayer-scripting-system</guid>
+      <pubDate>Sun, 22 Mar 2026 12:14:06 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47476707</comments>
+    </item>
+    <item>
+      <title>'Miracle': Europe reconnects with lost spacecraft</title>
+      <link>https://phys.org/news/2026-03-miracle-europe-reconnects-lost-spacecraft.html</link>
+      <description>&lt;p&gt;March 19, 2026 'Miracle': Europe reconnects with lost spacecraft edited by Andrew Zinin Editors' notes This article has been reviewed according to Science X's editorial process and policies. The Proba-3 mission blasted off from India in 2024. Key concepts Solar instrumentsArtificial satellitesSolar corona © 2026 AFP Citation: 'Miracle': Europe reconnects with lost spacecraft (2026, March 19) retrieved 22 March 2026 from https://phys.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47476060"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://phys.org/news/2026-03-miracle-europe-reconnects-lost-spacecraft.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tetris11:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; Proba-3, works just like a real solar eclipse. One spacecraft, which is roughly circular when viewed from the front, orbits closer to the sun, and its job is to block the bright parts of the sun, acting as the moon would in a real eclipse. It casts a shadow on a second probe that has a camera capable of photographing the resulting artificial eclipse.&lt;p&gt;&amp;gt; Having two separate spacecraft flying independently but in such a way that one casts a shadow on the other is a challenging task. But future missions depend on scientists figuring out how to make this precision choreography technology work, and so Proba-3 is a test.&lt;p&gt;Oh wow, they&amp;#x27;ve potentially rescued this (very cool!) mission for both probes&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;graemep:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The European Space Agency, not &amp;#x27;Europe&amp;#x27;. Just as annoying as calling the EU Europe, and calling both Europe despite different membership is just confusing.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;touwer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I&amp;#x27;m glad that this site at least left ~10% of the screen on my phone to read the article, next to all banners and newsletter ads. It&amp;#x27;s not 5%, great!&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://phys.org/news/2026-03-miracle-europe-reconnects-lost-spacecraft.html</guid>
+      <pubDate>Sun, 22 Mar 2026 10:22:28 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47476060</comments>
+    </item>
+    <item>
+      <title>Vatican Rebukes Peter Thiel's Antichrist Lectures in Rome</title>
+      <link>https://www.thenerdreich.com/peter-thiels-antichrist-circus-smacked-down-in-rome/</link>
+      <description>&lt;p&gt;Now, with a Papal advisor taking Thiel to task, newspapers around the world are writing about Thiel’s Antichrist sermons. Thiel is inarticulate and uncharismatic. New York Times: “Peter Thiel Fears the Antichrist Is Coming.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47475849"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.thenerdreich.com/peter-thiels-antichrist-circus-smacked-down-in-rome/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pupppet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Ironic he fears the Antichrist yet backs Trump, who fits many of those traits.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yesbut:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Power causes brain damage.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.md&amp;#x2F;sdLQP" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.md&amp;#x2F;sdLQP&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mikkupikku:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;They don&amp;#x27;t own Rome anymore, the Vatican is their own country now thanks to ol&amp;#x27; Benny.  Anyway, both parties here are idiots with high opinions of themselves who actually believe in a pile nonsense, but which of the two has really caused more harm for humanity?&lt;p&gt;There is no &amp;quot;THE Antichrist&amp;quot; there are only antichrists, plural, normal &lt;i&gt;not supernatural&lt;/i&gt; people and organizations that behave in a notably non-christlike way, and both parties here seem to qualify easily.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mike_hearn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;It seems these lectures are closed but does anyone have a transcript or writeup of the core arguments? I&amp;#x27;d be interested to know what he is saying first hand.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mosura:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;At some point people are going to start asking awkward questions going all the way back to the PayPal mafia and everything that has subsequently happened. Thiel landing on the steering committee of the Bilderberg Group just looks too ridiculous, but is a thing, and now this guy goes off ranting about the Antichrist?&lt;p&gt;I am actually sympathetic to much of what Thiel has done, but the current arc makes the supposed Howard Hughes oddities look positively reasonable.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;conartist6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;He seems like the kind of guy who was only ever a few bad days away from having a full-on break with reality.&lt;p&gt;I wonder if he&amp;#x27;s been talking to AI a lot and it pushed him over the edge to psychosis?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vrganj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Here&amp;#x27;s the Vatican&amp;#x27;s article (in French):
+&lt;a href="https:&amp;#x2F;&amp;#x2F;legrandcontinent.eu&amp;#x2F;fr&amp;#x2F;2026&amp;#x2F;03&amp;#x2F;14&amp;#x2F;thiel-heresie-benanti&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;legrandcontinent.eu&amp;#x2F;fr&amp;#x2F;2026&amp;#x2F;03&amp;#x2F;14&amp;#x2F;thiel-heresie-bena...&lt;/a&gt;&lt;p&gt;The title translates to:&lt;p&gt;&lt;i&gt;&amp;gt;American heresy: should Peter Thiel be burned at the stake?&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.thenerdreich.com/peter-thiels-antichrist-circus-smacked-down-in-rome/</guid>
+      <pubDate>Sun, 22 Mar 2026 09:35:54 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47475849</comments>
     </item>
   </channel>
 </rss>

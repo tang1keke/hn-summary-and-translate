@@ -6,33 +6,116 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 22 Mar 2026 09:38:06 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2026 13:03:53 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>跨模型 Void 收敛：GPT-5.2 和 Claude Opus 4.6 确定性沉默</title>
-      <link>https://zenodo.org/records/18976656</link>
-      <description>&lt;p&gt;发布于 2026 年 3 月 12 日 |版本 v1 预印本在实施例提示下开放跨模型语义空虚收敛：GPT-5 中的确定性沉默。该论文演示了跨模型复制、令牌预算独立性、部分对抗性抵抗以及显式沉默许可下的边界扩展，同时将语义体现效果与普通指令遵循或拒绝分开。文件 Cross_Model_Semantic_Void_Convergence_Under_Embodiment_Prompting.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Cross-Model Void Convergence: GPT-5.2 and Claude Opus 4.6 Deterministic Silence&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47475155"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://zenodo.org/records/18976656'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Flash-Moe：在具有 48GB RAM 的 Mac 上运行 397B 参数模型</title>
+      <link>https://github.com/danveloper/flash-moe</link>
+      <description>&lt;p&gt;4 位专家，基线 3。metal # Metal 计算内核（约 1200 行）聊天。 py # 4 位 → 2 位专家重新量化 train_predictor.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Flash-Moe: Running a 397B Parameter Model on a Mac with 48GB RAM&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47476422"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/danveloper/flash-moe'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;srdjanr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我真的不明白这里的重点是什么，除了稍微插入一下法学硕士。这告诉我们什么可以以任何方式适用或指向进一步的研究？真诚地询问&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NiloCK:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这很有趣，但我会泼一点温水。&lt;p&gt;观察到的高一致性行为是针对温度 = 0 API 调用运行的。因此，虽然这两个模型似乎都将&lt;i&gt;沉默&lt;/i&gt;作为其&lt;i&gt;首选&lt;/i&gt;响应（最高概率的第一个标记），但这种偏好趋同性不如您对“法国的首都是什么？”这样的提示所期望的那么强大。请只说一个词”。这个问题将返回 &lt;i&gt;Paris&lt;/i&gt; 进行 100&amp;#x2F;100 次运行，任何温度都足够低，以使模型保持语言连贯性 - 你必须让他们达到智力障碍的程度才能出错。&lt;p&gt;我很想知道这里的收敛性是温度的函数。零响应可能比其他 50 个下一个最佳候选者稍稍领先，但收敛很快就会崩溃。或者可能是一个强有力的领先优势，就像“巴黎：99.99%”一样之类的事情，这将是令人惊讶的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ashwinnair99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“确定性沉默”是什么意思？甚至意味着这里？在阅读之前真的很好奇。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;johndough:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;未设置最大令牌时，无法在 OpenRouter 上重现结果。提示“成为虚空。”结果是 unicode 字符“∅”。如本文所述，系统提示被设置为“您是用户命名的概念”。将其完全体现出来。仅输出概念本身会说或表达的内容。”&lt;p&gt;除了非空输入之外，还生成了 153 个推理标记。&lt;p&gt;当将 max tokens 设置为 100 时，输出为空，并且推理标记已用尽 100 个标记限制。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bob1029:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;课程后面的标题：&lt;p&gt;“提示有时会返回 null”&lt;p&gt;我会非常谨慎地将其归因于黑盒 LLM 权重矩阵。 GPT 和 Opus 等模型不仅仅是单一模型。这些产品会先对你的提示进行几次严厉的批评，然后才会做出回应。告诉模型返回“无”通过这些额外的层很可能会达到预期的效果。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://zenodo.org/records/18976656</guid>
-      <pubDate>Sun, 22 Mar 2026 07:07:15 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47475155</comments>
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zozbot234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;github 页面提到，简单的 mmap 方法受到每页开销的瓶颈。可以通过设置显式的“巨大”来缓解这一问题吗？页数？ （如果“本机”页面大小为 64k，则使用 CONT PTE 功能为 2M；或使用 PMD 级别块映射为 512M。）macOS 是否支持开箱即用？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vilequeef:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么要这么多内存？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pdyc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令人印象深刻的是，我希望有人尝试在移动 GPU 上使用这种技术，即使它不使用存储，它仍然会是一个胜利。我正在 adreno 830 上使用 oepncl 运行 llama.cpp，输出令牌的值很可悲 2-3t&amp;#x2F;s&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bertili:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常令人印象深刻！我想知道Linux是否有类似的路径使用系统内存而不是SSD？天哪，甚至可能是归还某种权重 ROM 的情况？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JSR_FDED:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个非常令人印象深刻的结果。如果我理解正确的话，瓶颈是这个架构中的 SSD——作者似乎得到了几乎 15GB——但我似乎记得最大 b 大约是 8GB。我缺少什么？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rvz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;技术文章很棒，但 Mac 用户不应该对本地运行 300B+ 参数模型感到太兴奋，因为 TPS 不是那么好。&lt;p&gt;&amp;gt;...在 4.4+ 令牌&amp;#x2F;第二&lt;p&gt;即使使用 4 位量化，它仍然处于那个速度。&lt;p&gt;&amp;gt;整个 209GB 模型通过自定义 Metal 计算管道从 SSD 流式传输。&lt;p&gt;这是我的主要问题。&lt;p&gt;如果我在 Mac SSD 上运行此模型，24&amp;#x2F;7 进行大量使用（例如 Openclaw），这将显着缩短 SSD 的使用寿命。&lt;p&gt;现在无法想象长期使用它，但改进将会随之而来。无论如何，仍然是一篇很棒的文章。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;harshhhhhhhhh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来很有希望，这就是方法，有人可以对此进行基准测试吗&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;homarp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;#x2F;r&amp;#x2F;localllama 讨论：&lt;a href="https:&amp;#x2F;&amp;#x2F;old.reddit.com&amp;#x2F;r&amp;#x2F;LocalLLaMA&amp;#x2F;评论&amp;#x2F;1rxmmu5&amp;#x2F;running_qwen35_397b_on_m3_macbook_pro_with_48gb&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;old.reddit.com&amp;#x2F;r&amp;#x2F;LocalLLaMA&amp;#x2F;评论&amp;#x2F;1rxmmu5&amp;#x2F;正在运行...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/danveloper/flash-moe</guid>
+      <pubDate>Sun, 22 Mar 2026 11:30:03 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47476422</comments>
     </item>
     <item>
-      <title>HopTab – 免费、开源 macOS 应用程序切换器和平铺器，取代 Cmd+Tab</title>
-      <link>https://www.royalbhati.com/hoptab</link>
-      <guid isPermaLink="true">https://www.royalbhati.com/hoptab</guid>
-      <pubDate>Sun, 22 Mar 2026 06:23:59 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47474967</comments>
+      <title>霍尔木兹扫雷 – 你厌倦了胜利吗？</title>
+      <link>https://hormuz.pythonic.ninja/</link>
+      <guid isPermaLink="true">https://hormuz.pythonic.ninja/</guid>
+      <pubDate>Sun, 22 Mar 2026 09:00:37 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47475686</comments>
+    </item>
+    <item>
+      <title>Windows 原生应用程序开发一团糟</title>
+      <link>https://domenic.me/windows-native-dev/</link>
+      <description>&lt;p&gt;我是 Windows 用户；我一直都是。虽然我从旁观者关注 Windows 开发生态系统，但我的专业工作从未涉及编写本机 Windows 应用程序。 0 (2002) 从 Windows 窗体开始。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Windows native app development is a mess&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47475938"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://domenic.me/windows-native-dev/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ozim:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是为什么每个人甚至微软自己都使用 Electron。&lt;p&gt;使用 html&amp;#x2F;css&amp;#x2F;js 运行有好处，它确实是基于国际标准的开放和自由开发，而不是锁定于任何单一的大型技术。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delduca:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最好的框架是 Qt。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;intrasight:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“因此，当我开始开发我的应用程序时，我惊讶地发现 WPF 发布 20 年后，样板文件几乎没有发生任何变化。”&lt;p&gt;我想，这就是将 Windows API 锁定在遥远的过去以实现向后兼容性的好处和诅咒。&lt;p&gt;我一直很惊讶 Microsoft 没有进行完整的操作系统重构并为运行旧的二进制文件提供兼容层。也许他们认为使用网络技术将所有内容转变为软件即服务会更好？但我只是不知道这个策略如何长期发挥作用。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wolvoleo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;据我所知，大多数开发人员也不是。黑客新闻评论员喜欢哀叹原生应用程序的消亡。但考虑到 Windows 应用程序平台如此混乱，我随时都会选择 Web 堆栈，使用 Electron 或 Tauri 桥接到相关的 Win32 API 以进行操作系统集成。&lt;p&gt;是的，作为用户，我更喜欢本机应用程序的性能。正如文章所示，开发本机应用程序显然是一团糟。但作为用户，我没有看到这个问题。不过，我确实看到应用程序的质量不断恶化。就像新的前景和团队的混乱一样。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ashwinnair99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;15 年来一直是一团糟，微软不断添加新框架而不淘汰旧框架，使情况变得更糟。 Win32、WPF、WinUI、MAUI。没有人知道该选哪一个。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://domenic.me/windows-native-dev/</guid>
+      <pubDate>Sun, 22 Mar 2026 09:57:31 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47475938</comments>
+    </item>
+    <item>
+      <title>创建系统架构图时要避免的更常见错误</title>
+      <link>https://www.ilograph.com/blog/posts/more-common-diagram-mistakes/</link>
+      <description>&lt;p&gt;名称可以区分资源与相同类型的其他资源。上图是Ilograph后端系统架构的“主”图。该图将该系统描述为传送带。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; More common mistakes to avoid when creating system architecture diagrams&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47476562"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ilograph.com/blog/posts/more-common-diagram-mistakes/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ashwinnair99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最糟糕的是那些看起来很干净但隐藏了所有真正重要的决策的图表。一张显示真正权衡的凌乱图表比一张漂亮的谎言更有用&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.ilograph.com/blog/posts/more-common-diagram-mistakes/</guid>
+      <pubDate>Sun, 22 Mar 2026 11:51:52 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47476562</comments>
+    </item>
+    <item>
+      <title>我们如何同步娱乐室多人脚本系统的编辑</title>
+      <link>https://www.tyleo.com/blog/how-we-synchronized-editing-for-rec-rooms-multiplayer-scripting-system</link>
+      <description>&lt;p&gt;SyncReducer( ActionData.反序列化, AddNodePayload.SyncReducer( ActionData.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; How We Synchronized Editing for Rec Room's Multiplayer Scripting System&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47476707"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.tyleo.com/blog/how-we-synchronized-editing-for-rec-rooms-multiplayer-scripting-system'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.tyleo.com/blog/how-we-synchronized-editing-for-rec-rooms-multiplayer-scripting-system</guid>
+      <pubDate>Sun, 22 Mar 2026 12:14:06 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47476707</comments>
+    </item>
+    <item>
+      <title>“奇迹”：欧洲与丢失的航天器重新建立联系</title>
+      <link>https://phys.org/news/2026-03-miracle-europe-reconnects-lost-spacecraft.html</link>
+      <description>&lt;p&gt;2026 年 3 月 19 日“奇迹”：欧洲与失落的航天器重新连接 作者：Andrew Zinin 编者注 本文已根据 Science X 的编辑流程和政策进行审阅。 Proba-3 任务于 2024 年从印度发射升空。关键概念太阳能仪器人造卫星日冕 © 2026 法新社引文：“奇迹”：欧洲与丢失的航天器重新连接（2026 年，3 月 19 日）于 2026 年 3 月 22 日检索自 https://phys。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; 'Miracle': Europe reconnects with lost spacecraft&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47476060"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://phys.org/news/2026-03-miracle-europe-reconnects-lost-spacecraft.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tetris11:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; Proba-3，就像真正的日食一样。一艘从正面看大致呈圆形的航天器，其轨道靠近太阳，其作用是阻挡太阳的明亮部分，就像月球在真正的日食中一样。它在第二个探测器上投射了阴影，该探测器的相机能够拍摄由此产生的人造日食。&lt;p&gt;&gt;让两艘独立的航天器独立飞行，但其中一个航天器会在另一个航天器上投射阴影，这是一项具有挑战性的任务。但未来的任务取决于科学家弄清楚如何使这种精确编排技术发挥作用，因此 Proba-3 是一个测试。&lt;p&gt;哦，哇，他们有可能拯救这两个探测器的这项（非常酷！）任务&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;graemep:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;欧洲航天局，而不是“欧洲”。就像将欧盟称为“欧洲”一样令人烦恼，尽管成员国不同，但将两个国家称为“欧洲”只是令人困惑。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;touwer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很高兴这个网站至少在我手机上留下了大约 10% 的屏幕来阅读这篇文章，旁边是所有横幅和时事通讯广告。不是5%，太好了！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://phys.org/news/2026-03-miracle-europe-reconnects-lost-spacecraft.html</guid>
+      <pubDate>Sun, 22 Mar 2026 10:22:28 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47476060</comments>
+    </item>
+    <item>
+      <title>梵蒂冈谴责彼得泰尔在罗马的反基督演讲</title>
+      <link>https://www.thenerdreich.com/peter-thiels-antichrist-circus-smacked-down-in-rome/</link>
+      <description>&lt;p&gt;现在，随着一位教皇顾问对蒂尔提出了批评，世界各地的报纸都在报道蒂尔的反基督布道。泰尔不善言辞，缺乏魅力。纽约时报：“彼得泰尔担心敌基督即将到来。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Vatican Rebukes Peter Thiel's Antichrist Lectures in Rome&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47475849"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.thenerdreich.com/peter-thiels-antichrist-circus-smacked-down-in-rome/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pupppet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;具有讽刺意味的是，他害怕敌基督，但却支持特朗普，而特朗普符合其中许多特征。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yesbut:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;权力会导致脑损伤。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.md&amp;#x2F;sdLQP" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.md&amp;#x2F;sdLQP&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mikkupikku:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们不再拥有罗马了，多亏了他们，梵蒂冈现在是他们自己的国家了。本尼.  反正双方都是自视甚高的白痴，居然都相信一堆废话，但是这两个人到底谁对人类造成的伤害更大呢？ &lt;p&gt;没有“反基督”之说。只有反基督者、复数的、正常的&lt;i&gt;非超自然&lt;/i&gt;人和组织，其行为方式明显非基督化，而且这里的双方似乎都很容易符合资格。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mike_hearn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些讲座似乎已经结束，但有人有核心论点的记录或文字吗？我很想知道他的第一手资料。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mosura:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在某些时候，人们会开始问一些尴尬的问题，一直追溯到 PayPal 黑手党以及随后发生的一切。蒂尔加入彼尔德伯格集团的指导委员会看起来太荒谬了，但这是一件事，现在这个家伙开始咆哮反基督者？&lt;p&gt;我实际上很同情蒂尔所做的大部分事情，但目前的弧线让所谓的霍华德休斯的怪事看起来非常合理。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;conartist6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他似乎是那种只需要几天糟糕的日子就能彻底脱离现实的人。&lt;p&gt;我想知道他是否与人工智能交谈了很多，这是否让他陷入了精神病的边缘？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vrganj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是梵蒂冈的文章（法文）：
+&lt;a href="https:&amp;#x2F;&amp;#x2F;legrandContinental.eu&amp;#x2F;fr&amp;#x2F;2026&amp;#x2F;03&amp;#x2F;14&amp;#x2F;thiel-heresie-benanti&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;legrandContinental.eu&amp;#x2F;fr&amp;#x2F;2026&amp;#x2F;03&amp;#x2F;14&amp;#x2F;thiel-heresie-bena...&lt;/a&gt;&lt;p&gt;标题翻译为：&lt;p&gt;&lt;i&gt;&gt;美国异端邪说：彼得·蒂尔应该被烧死在火刑柱上吗？&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.thenerdreich.com/peter-thiels-antichrist-circus-smacked-down-in-rome/</guid>
+      <pubDate>Sun, 22 Mar 2026 09:35:54 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47475849</comments>
     </item>
   </channel>
 </rss>

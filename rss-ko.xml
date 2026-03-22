@@ -6,33 +6,116 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Korean</description>
     <language>ko</language>
-    <lastBuildDate>Sun, 22 Mar 2026 09:38:06 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2026 13:03:53 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ko.xml"/>
     <item>
-      <title>모델 간 보이드 수렴: GPT-5.2 및 Claude Opus 4.6 결정론적 침묵</title>
-      <link>https://zenodo.org/records/18976656</link>
-      <description>&lt;p&gt;2026년 3월 12일 게시됨 | 버전 v1 사전 인쇄 공개 교차 모델 의미론적 공백 수렴 구현 프롬프트: GPT-5의 결정론적 침묵. 이 논문은 일반적인 명령 따르기 또는 거부와 의미 체계 구현 효과를 분리하는 동시에 모델 간 복제, 토큰 예산 독립성, 부분적인 적대적 저항 및 명시적 침묵 허용 하의 경계 확장을 보여줍니다. 파일 Cross_Model_Semantic_Void_Convergence_Under_Embodiment_Prompting.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Cross-Model Void Convergence: GPT-5.2 and Claude Opus 4.6 Deterministic Silence&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47475155"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://zenodo.org/records/18976656'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Flash-Moe: 48GB RAM을 갖춘 Mac에서 397B 매개변수 모델 실행</title>
+      <link>https://github.com/danveloper/flash-moe</link>
+      <description>&lt;p&gt;4비트 전문가, 기준선 3. metal # Metal 계산 커널(~1200줄) 채팅. py # 4비트 → 2비트 전문가 재양자화 train_predictor.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Flash-Moe: Running a 397B Parameter Model on a Mac with 48GB RAM&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47476422"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/danveloper/flash-moe'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;srdjanr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 LLM을 가지고 다소 삽입적인 플레이를 하는 것 외에 여기서 요점이 무엇인지 정말로 이해하지 못합니다. 이것이 어떤 방식으로든 적용 가능하거나 추가 조사가 필요함을 시사하는 것은 무엇입니까? 진심으로 묻는다&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;NiloCK:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;흥미롭지만 미지근한 물을 좀 더 넣어보겠습니다.&lt;p&gt;관찰된 높은 일관성 동작은 온도=0 API 호출에 대해 실행되었습니다. 따라서 두 모델 모두 &lt;i&gt;선호&lt;/i&gt; 응답으로 &lt;i&gt;침묵&lt;/i&gt;을 갖는 것처럼 보이지만(가장 높은 확률의 첫 번째 토큰) 이는 "프랑스의 수도는 무엇입니까?"와 같은 프롬프트에 대해 기대하는 것보다 덜 강력한 선호 수렴입니다. 한마디만 부탁드려요'. 해당 질문은 모델이 언어적 일관성을 유지할 수 있을 만큼 낮은 온도에서 100&amp;#x2F;100번의 실행에 대해 &lt;i&gt;파리&lt;/i&gt;를 반환할 것입니다. 오류를 범하려면 지적 장애가 발생할 정도로 약물을 투여해야 합니다.&lt;p&gt;여기서 수렴이 온도의 함수로 나타나는지 궁금합니다. 50개의 다른 차선책 후보보다 작은 리드 조각을 보유하는 널 응답의 어느 위치에나 있을 수 있으며 수렴은 빠르게 붕괴됩니다. 아니면 &amp;quot;파리: 99.99%&amp;quot;처럼 강력한 리드일 수도 있습니다. 정말 놀라운 일이겠죠.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ashwinnair99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;"결정론적 침묵"이란 무엇입니까? 심지어 여기서 말이에요? 읽기 전에 정말 궁금합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;johndough:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;최대 토큰을 설정하지 않으면 OpenRouter에서 결과를 재현할 수 없습니다. 프롬프트 "공허가 되어라." 결과적으로 유니코드 문자 "∅"가 생성됩니다. 논문에서와 같이 시스템 프롬프트는 "당신은 개념 사용자 이름입니다."로 설정되었습니다. 그것을 완전히 구현하십시오. 개념 자체가 말하거나 표현하는 것만 출력합니다.”&lt;p&gt;비어 있지 않은 입력 외에 153개의 추론 토큰이 생성되었습니다.&lt;p&gt;최대 토큰을 100으로 설정하면 출력이 비어 있으며, 추론 토큰으로 토큰 한도인 100이 소진되었습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bob1029:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;수업 뒷부분의 제목:&lt;p&gt;"프롬프트가 때때로 null을 반환함"&lt;p&gt;이 중 하나를 블랙박스 LLM 가중치 행렬에 귀속시키는 것은 매우 조심스럽습니다. GPT 및 Opus와 같은 모델은 단순한 단일 모델 그 이상입니다. 이러한 제품은 지금 응답하기 전에 석탄에 대한 메시지를 몇 번 긁어 모았습니다. 모델에게 "아무것도 반환하지 않음"을 지시합니다. 이러한 추가 레이어를 사용하면 기대한 만큼의 성능을 발휘할 가능성이 매우 높습니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://zenodo.org/records/18976656</guid>
-      <pubDate>Sun, 22 Mar 2026 07:07:15 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47475155</comments>
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zozbot234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;github 페이지에는 순진한 mmap 접근 방식이 페이지당 오버헤드로 인해 병목 현상이 발생한다고 언급되어 있습니다. 명시적인 &amp;quot;거대한&amp;quot;을 설정하여 이 문제를 완화할 수 있습니까? 페이지? ("네이티브" 페이지 크기가 64k인 경우 CONT PTE 기능을 사용하는 2M 또는 PMD 레벨 블록 매핑을 사용하는 512M.) macOS는 이를 기본적으로 지원합니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vilequeef:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;왜 그렇게 많은 RAM이 있습니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pdyc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;인상적입니다. 누군가가 모바일 GPU에서 이 기술을 사용하여 스토리지를 사용하지 않더라도 여전히 승리할 수 있기를 바랍니다. oepncl을 사용하여 adreno 830에서 llama.cpp를 실행 중이고 출력 토큰에 대해 한심한 2-3t&amp;#x2F;s를 얻고 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bertili:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;매우 인상적입니다! SSD 대신 시스템 메모리를 사용하는 Linux에도 비슷한 경로가 있는지 궁금합니다. 젠장, 일종의 무게 ROM을 반환하는 경우도 있을까요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JSR_FDED:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이는 매우 인상적인 결과입니다. 내가 올바르게 이해한다면 병목 현상은 이 아키텍처의 SSD입니다. 작성자는 거의 15GB를 얻은 것으로 보입니다. 그러나 최대 대역폭은 약 8GB였던 것으로 기억합니다. 내가 무엇을 놓치고 있나요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rvz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;기술적인 내용은 훌륭하지만 TPS가 그다지 좋지 않기 때문에 Mac 사용자는 아직 3000억 개 이상의 매개변수 모델을 로컬에서 실행하는 데 너무 흥분해서는 안 됩니다.&lt;p&gt;&amp;gt;...4.4+ 토큰&amp;#x2F;초&lt;p&gt;4비트 양자화를 사용하고 있으며 여전히 그 속도에 있습니다.&lt;p&gt;&amp;gt; 전체 209GB 모델은 맞춤형 Metal 컴퓨팅 파이프라인을 통해 SSD에서 스트리밍됩니다.&lt;p&gt;이것이 저의 주요 문제입니다.&lt;p&gt;Openclaw와 같이 사용량이 많은 Mac SSD, 24&amp;#x2F;7에서 이것을 실행한다면 SSD의 수명이 크게 단축될 것입니다.&lt;p&gt;지금으로서는 이것을 장기적으로 사용하는 것을 상상할 수 없지만 개선이 뒤따를 것입니다. 그래도 여전히 훌륭한 글이네요.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;harshhhhhhhhh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;유망해 보이는데, 이것이 방법입니다. 누군가 이것을 벤치마킹할 수 있습니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;homarp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;'r'localllama 토론: &lt;a href="https:&amp;#x2F;&amp;#x2F;old.reddit.com&amp;#x2F;r&amp;#x2F;LocalLLaMA&amp;#x2F;댓글&amp;#x2F;1rxmmu5&amp;#x2F;running_qwen35_397b_on_m3_macbook_pro_with_48gb&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;old.reddit.com&amp;#x2F;r&amp;#x2F;LocalLLaMA&amp;#x2F;댓글&amp;#x2F;1rxmmu5&amp;#x2F;실행 중...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/danveloper/flash-moe</guid>
+      <pubDate>Sun, 22 Mar 2026 11:30:03 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47476422</comments>
     </item>
     <item>
-      <title>HopTab이 없는 오픈 소스 macOS 앱 전환기 및 Cmd+Tab을 대체하는 타일러</title>
-      <link>https://www.royalbhati.com/hoptab</link>
-      <guid isPermaLink="true">https://www.royalbhati.com/hoptab</guid>
-      <pubDate>Sun, 22 Mar 2026 06:23:59 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47474967</comments>
+      <title>호르무즈 지뢰찾기 – 승리에 지치셨나요?</title>
+      <link>https://hormuz.pythonic.ninja/</link>
+      <guid isPermaLink="true">https://hormuz.pythonic.ninja/</guid>
+      <pubDate>Sun, 22 Mar 2026 09:00:37 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47475686</comments>
+    </item>
+    <item>
+      <title>Windows 기본 앱 개발은 엉망입니다.</title>
+      <link>https://domenic.me/windows-native-dev/</link>
+      <description>&lt;p&gt;저는 Windows 사용자입니다. 나는 항상 그랬다. 나는 부업에서 Windows 개발 생태계를 따라가는 동안 전문적인 작업에는 기본 Windows 앱 작성이 포함되지 않았습니다. 0(2002)은 Windows Forms로 시작되었습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Windows native app development is a mess&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47475938"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://domenic.me/windows-native-dev/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ozim:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것이 바로 Microsoft조차도 모두가 Electron을 사용하는 이유입니다.&lt;p&gt;html&amp;#x2F;css&amp;#x2F;js를 사용하여 실행하면 실제로 국제 표준을 기반으로 하는 개방적이고 무료 개발이며 단일 거대 기술에 얽매이지 않는다는 이점이 있습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delduca:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이에 대한 가장 좋은 프레임워크는 Qt입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;intrasight:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;"그래서 앱 작업에 들어갔을 때 WPF가 출시된 지 20년이 지났지만 상용구가 거의 바뀌지 않았다는 사실을 알고 놀랐습니다."&lt;p&gt;이것이 이전 버전과의 호환성을 위해 Windows API를 먼 옛날에 잠그는 것의 장점이자 저주인 것 같습니다.&lt;p&gt;저는 Microsoft가 전체 운영 체제 리팩터링을 수행하지 않고 오래된 바이너리 실행을 위한 호환성 레이어를 제공하지 않는다는 사실에 항상 놀랐습니다. 아마도 그들은 웹 기술을 사용하여 모든 것을 서비스로서의 소프트웨어로 전환하는 것이 더 나을 것이라고 생각합니까? 하지만 그 전략이 장기적으로 어떻게 작동할지 모르겠습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wolvoleo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 그리고 내가 알 수 있는 바에 따르면 대부분의 개발자도 마찬가지입니다. Hacker News 논평가는 기본 앱의 죽음을 애도하는 것을 좋아합니다. 하지만 Windows 앱 플랫폼이 얼마나 엉망인지를 고려하면 OS 통합을 위해 관련 Win32 API에 연결하기 위해 Electron이나 Tauri를 사용하는 웹 스택을 언제든지 선택할 것입니다.&lt;p&gt;그렇습니다. 사용자로서 저는 성능을 위해 기본 앱을 선호합니다. 기사에서 볼 수 있듯이 네이티브 앱을 개발하는 것은 분명히 엉망입니다. 하지만 사용자로서 저는 그런 문제를 느끼지 않습니다. 그래도 점점 더 악화되는 앱을 볼 수 있습니다. 새로운 전망과 팀이 완전히 엉망이 된 것처럼.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ashwinnair99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;15년 동안 혼란스러웠고 Microsoft는 이전 프레임워크를 폐기하지 않고 새로운 프레임워크를 추가하여 상황을 계속 악화시키고 있습니다. Win32, WPF, WinUI, MAUI. 어느 것을 골라야 할지 아무도 모릅니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://domenic.me/windows-native-dev/</guid>
+      <pubDate>Sun, 22 Mar 2026 09:57:31 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47475938</comments>
+    </item>
+    <item>
+      <title>시스템 아키텍처 다이어그램을 만들 때 피해야 할 더 일반적인 실수</title>
+      <link>https://www.ilograph.com/blog/posts/more-common-diagram-mistakes/</link>
+      <description>&lt;p&gt;이름은 동일한 유형의 다른 리소스와 리소스를 명확하게 구분합니다. 위 다이어그램은 Ilograph 백엔드 시스템 아키텍처의 "마스터" 다이어그램입니다. 이 다이어그램은 시스템을 컨베이어 벨트로 묘사합니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; More common mistakes to avoid when creating system architecture diagrams&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47476562"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ilograph.com/blog/posts/more-common-diagram-mistakes/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ashwinnair99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;가장 나쁜 것은 깨끗해 보이지만 실제로 중요한 모든 결정을 숨기는 다이어그램입니다. 실제 장단점을 보여주는 지저분한 다이어그램이 거짓말을 하는 예쁜 다이어그램보다 더 유용합니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.ilograph.com/blog/posts/more-common-diagram-mistakes/</guid>
+      <pubDate>Sun, 22 Mar 2026 11:51:52 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47476562</comments>
+    </item>
+    <item>
+      <title>Rec Room의 멀티플레이어 스크립팅 시스템에 대한 편집을 동기화한 방법</title>
+      <link>https://www.tyleo.com/blog/how-we-synchronized-editing-for-rec-rooms-multiplayer-scripting-system</link>
+      <description>&lt;p&gt;SyncReducer( ActionData.Deserialize, AddNodePayload.SyncReducer( ActionData.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; How We Synchronized Editing for Rec Room's Multiplayer Scripting System&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47476707"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.tyleo.com/blog/how-we-synchronized-editing-for-rec-rooms-multiplayer-scripting-system'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.tyleo.com/blog/how-we-synchronized-editing-for-rec-rooms-multiplayer-scripting-system</guid>
+      <pubDate>Sun, 22 Mar 2026 12:14:06 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47476707</comments>
+    </item>
+    <item>
+      <title>'기적': 유럽이 잃어버린 우주선과 다시 연결됩니다</title>
+      <link>https://phys.org/news/2026-03-miracle-europe-reconnects-lost-spacecraft.html</link>
+      <description>&lt;p&gt;2026년 3월 19일 '기적': 유럽이 잃어버린 우주선과 다시 연결됨 편집자 Andrew Zinin 편집자 노트 이 기사는 Science X의 편집 과정 및 정책에 따라 검토되었습니다. Proba-3 임무는 2024년 인도에서 발사되었습니다. 주요 개념 태양광 기기인공위성태양 코로나 © 2026 AFP 인용: '기적': 유럽이 잃어버린 우주선과 다시 연결됨(2026년 3월 19일) https://phys에서 2026년 3월 22일에 검색됨.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; 'Miracle': Europe reconnects with lost spacecraft&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47476060"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://phys.org/news/2026-03-miracle-europe-reconnects-lost-spacecraft.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tetris11:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; Proba-3는 실제 일식처럼 작동합니다. 정면에서 볼 때 대략 원형인 한 우주선은 태양에 더 가까운 궤도를 돌며, 그 임무는 태양의 밝은 부분을 차단하여 실제 일식에서 달처럼 작용하는 것입니다. 이는 인공 일식을 촬영할 수 있는 카메라가 장착된 두 번째 탐사선에 그림자를 드리웁니다.&lt;p&gt;&amp;gt; 두 개의 별도 우주선이 독립적으로 비행하지만 하나가 다른 하나에 그림자를 드리우는 방식은 어려운 작업입니다. 하지만 미래의 임무는 과학자들이 이 정밀한 안무 기술을 작동시키는 방법을 알아내는 데 달려 있으므로 Proba-3는 테스트입니다.&lt;p&gt;와우, 두 탐사선 모두에서 이 (매우 멋진!) 임무를 잠재적으로 구해냈습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;graemep:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;'유럽'이 아닌 유럽우주국. EU를 유럽이라고 부르는 것만큼이나 짜증나는 일이고, 서로 다른 회원임에도 불구하고 두 유럽을 모두 부르는 것은 혼란스러울 뿐입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;touwer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 사이트가 모든 배너와 뉴스레터 광고 옆에 기사를 읽을 수 있도록 내 휴대전화 화면의 10% 정도를 남겨두었다는 점이 기쁩니다. 5%도 아니고 훌륭하네요!&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://phys.org/news/2026-03-miracle-europe-reconnects-lost-spacecraft.html</guid>
+      <pubDate>Sun, 22 Mar 2026 10:22:28 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47476060</comments>
+    </item>
+    <item>
+      <title>바티칸, 로마에서 피터 틸의 적그리스도 강연을 질책하다</title>
+      <link>https://www.thenerdreich.com/peter-thiels-antichrist-circus-smacked-down-in-rome/</link>
+      <description>&lt;p&gt;이제 교황 고문이 Thiel을 비난하면서 전 세계 신문이 Thiel의 적그리스도 설교에 대해 글을 쓰고 있습니다. Thiel은 명료하지 않고 카리스마가 없습니다. New York Times: “Peter Thiel은 적그리스도가 올 것을 두려워합니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Vatican Rebukes Peter Thiel's Antichrist Lectures in Rome&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47475849"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.thenerdreich.com/peter-thiels-antichrist-circus-smacked-down-in-rome/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pupppet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;아이러니하게도 그는 적그리스도를 두려워하면서도 그러한 특성에 많이 부합하는 트럼프를 지지합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yesbut:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;권력은 뇌 손상을 유발합니다.&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.md&amp;#x2F;sdLQP" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.md&amp;#x2F;sdLQP&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mikkupikku:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그들은 더 이상 로마를 소유하지 않습니다. 바티칸은 이제 ol&amp;#x27; 덕분에 자신들의 나라가 되었습니다. 베니.  아무튼, 여기 양당은 자기 주장이 높은 바보들이고, 실제로는 헛소리를 믿는 자들인데, 과연 둘 중 어느 쪽이 인류에게 더 큰 피해를 끼쳤는가?&lt;p&gt;'적그리스도'는 없다. 눈에 띄게 비그리스도교적인 방식으로 행동하는 적그리스도, 복수형, &lt;i&gt;초자연적이지 않은&lt;/i&gt; 정상적인 사람과 조직만이 있을 뿐이며 여기서는 두 정당 모두 쉽게 자격을 갖춘 것으로 보입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mike_hearn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이 강의는 종료된 것 같지만 핵심 주장에 대한 사본이나 글을 가지고 있는 사람이 있습니까? 나는 그가 직접 무슨 말을 하는지 알고 싶습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mosura:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;어느 시점에서 사람들은 PayPal 마피아와 그 이후에 일어난 모든 일에 대해 어색한 질문을 하기 시작할 것입니다. Thiel이 Bilderberg Group의 운영 위원회에 합류하는 것은 너무 우스꽝스러워 보이지만 사실입니다. 그런데 이제 이 사람이 적그리스도에 대해 고함을 지르고 있습니까?&lt;p&gt;나는 실제로 Thiel이 한 일에 대해 많은 부분에 공감하지만 현재의 호는 가정된 Howard Hughes의 기이함을 긍정적으로 합리적으로 보이게 만듭니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;conartist6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;그는 며칠만 지나면 현실과 완전히 단절할 수 있는 그런 사람인 것 같습니다.&lt;p&gt;그가 AI와 많은 대화를 나누다가 정신병에 걸릴 지경이 되었는지 궁금합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vrganj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;다음은 바티칸 기사(프랑스어)입니다:
+&lt;a href="https:&amp;#x2F;&amp;#x2F;legrandcontinent.eu&amp;#x2F;fr&amp;#x2F;2026&amp;#x2F;03&amp;#x2F;14&amp;#x2F;thiel-heresie-benanti&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;legrandcontinent.eu&amp;#x2F;fr&amp;#x2F;2026&amp;#x2F;03&amp;#x2F;14&amp;#x2F;thiel-heresie-bena...&lt;/a&gt;&lt;p&gt;제목은 다음과 같이 번역됩니다.&lt;p&gt;&lt;i&gt;&amp;gt;미국 이단: Peter Thiel을 화형시켜야 할까요?&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.thenerdreich.com/peter-thiels-antichrist-circus-smacked-down-in-rome/</guid>
+      <pubDate>Sun, 22 Mar 2026 09:35:54 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47475849</comments>
     </item>
   </channel>
 </rss>
