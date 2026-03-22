@@ -6,116 +6,220 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 22 Mar 2026 13:03:53 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2026 15:38:20 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Flash-Moe：在具有 48GB RAM 的 Mac 上运行 397B 参数模型</title>
-      <link>https://github.com/danveloper/flash-moe</link>
-      <description>&lt;p&gt;4 位专家，基线 3。metal # Metal 计算内核（约 1200 行）聊天。 py # 4 位 → 2 位专家重新量化 train_predictor.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Flash-Moe: Running a 397B Parameter Model on a Mac with 48GB RAM&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47476422"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/danveloper/flash-moe'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>厌倦了吃自己的狗粮？尝试闻自己的屁</title>
+      <link>https://shkspr.mobi/blog/2026/03/bored-of-eating-your-own-dogfood-try-smelling-your-own-farts/</link>
+      <description>&lt;p&gt;您必须向人们表明您对自己的产品充满信心。也许这会让你对那些付费使用你的产品的人产生同情心。他们的高级领导团队中的某人询问是否可以打电话来谈谈我取消的原因。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Bored of eating your own dogfood? Try smelling your own farts&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47477158"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://shkspr.mobi/blog/2026/03/bored-of-eating-your-own-dogfood-try-smelling-your-own-farts/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zozbot234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;github 页面提到，简单的 mmap 方法受到每页开销的瓶颈。可以通过设置显式的“巨大”来缓解这一问题吗？页数？ （如果“本机”页面大小为 64k，则使用 CONT PTE 功能为 2M；或使用 PMD 级别块映射为 512M。）macOS 是否支持开箱即用？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vilequeef:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么要这么多内存？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pdyc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令人印象深刻的是，我希望有人尝试在移动 GPU 上使用这种技术，即使它不使用存储，它仍然会是一个胜利。我正在 adreno 830 上使用 oepncl 运行 llama.cpp，输出令牌的值很可悲 2-3t&amp;#x2F;s&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bertili:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常令人印象深刻！我想知道Linux是否有类似的路径使用系统内存而不是SSD？天哪，甚至可能是归还某种权重 ROM 的情况？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JSR_FDED:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个非常令人印象深刻的结果。如果我理解正确的话，瓶颈是这个架构中的 SSD——作者似乎得到了几乎 15GB——但我似乎记得最大 b 大约是 8GB。我缺少什么？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rvz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;技术文章很棒，但 Mac 用户不应该对本地运行 300B+ 参数模型感到太兴奋，因为 TPS 不是那么好。&lt;p&gt;&amp;gt;...在 4.4+ 令牌&amp;#x2F;第二&lt;p&gt;即使使用 4 位量化，它仍然处于那个速度。&lt;p&gt;&amp;gt;整个 209GB 模型通过自定义 Metal 计算管道从 SSD 流式传输。&lt;p&gt;这是我的主要问题。&lt;p&gt;如果我在 Mac SSD 上运行此模型，24&amp;#x2F;7 进行大量使用（例如 Openclaw），这将显着缩短 SSD 的使用寿命。&lt;p&gt;现在无法想象长期使用它，但改进将会随之而来。无论如何，仍然是一篇很棒的文章。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;harshhhhhhhhh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来很有希望，这就是方法，有人可以对此进行基准测试吗&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;homarp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;#x2F;r&amp;#x2F;localllama 讨论：&lt;a href="https:&amp;#x2F;&amp;#x2F;old.reddit.com&amp;#x2F;r&amp;#x2F;LocalLLaMA&amp;#x2F;评论&amp;#x2F;1rxmmu5&amp;#x2F;running_qwen35_397b_on_m3_macbook_pro_with_48gb&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;old.reddit.com&amp;#x2F;r&amp;#x2F;LocalLLaMA&amp;#x2F;评论&amp;#x2F;1rxmmu5&amp;#x2F;正在运行...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/danveloper/flash-moe</guid>
-      <pubDate>Sun, 22 Mar 2026 11:30:03 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47476422</comments>
+&lt;p&gt;&lt;strong&gt;Top 26 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;piker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Dogfooding 的问题在于，您必须在许多领域强制执行它，如果您不小心，它可能会推动您解决用户实际上没有遇到的问题。&lt;p&gt;我们发现自己试图在 Tritium 上找到这种平衡。它是律师的文字处理程序，因此具有特定的狭窄领域，使我们能够提供与 Word 不同的体验。但如果我们尝试像 Word 一样使用它，我们最终会想要不符合该策略的通用功能。我写了一些关于我们在这里提出的想法：&lt;a href="https:&amp;#x2F;&amp;#x2F;tritium.legal&amp;#x2F;blog&amp;#x2F;eat" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;tritium.legal&amp;#x2F;blog&amp;#x2F;eat&lt;/a&gt;。&lt;p&gt;这是令人信服的理由之一闭源某些 B2B SAAS 领域的商业软件。似乎你无法从 FOSS 的 QA 角度充分测试快乐和悲伤的路径，除非它 (1) 非常成功或 (2) 一个开发工具。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drunx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只需阅读此内容 - 按照类似的方向：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;yuraa.com&amp;#x2F;2026&amp;#x2F;03&amp;#x2F;21&amp;#x2F;customer-service-as-a-product&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;yuraa.com&amp;#x2F;2026&amp;#x2F;03&amp;#x2F;21&amp;#x2F;客户服务即产品&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;schiffern:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“&lt;i&gt;吃自己的狗粮，闻自己的屁&lt;/i&gt;”足够粗俗以至于人们会真正记住并重述它。作者的比较模因部门的好作品。&lt;p&gt;“吃你自己的狗粮” ==体验你自己的产品。&lt;p&gt;“闻你自己的屁” == 体验您的&lt;i&gt;整个&lt;/i&gt;产品，包括通常不宜提及的内容，例如客户服务和计费&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sauercrowd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这很好地描述了小公司相对于大公司的巨大优势。&lt;p&gt;（有动力的）小公司的人“关心”，我的意思是他们有责任感并且可以看到足够多的客户体验 - 如果出现问题 - 他们会看到痛苦并尝试解决它。​​&lt;p&gt;在大公司没有人关心。他们当然关心自己的工作，但他们的工作只占整体客户体验的一小部分，因此很难看到他们的工作对客户产生影响。&lt;p&gt;这就是为什么大公司需要将客户反馈编码到系统中以模仿反馈周期。主要是在指标方面。
+这是一种非常有损耗的捕获信号的方式，并且还有很多不足之处，但到目前为止，似乎没有人提出更好的系统。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;arkensaw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;2026 年最佳 HN 标题&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;herodotus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;并撒谎：“请仔细听，因为我们的菜单项已更改”。我只有一次得到了每个人都应该使用的内容：“请仔细聆听，以确保您做出正确的选择”。 （撒谎也可以通过“我已阅读并同意......”来规范化。也许更好的是：“通过单击此框，您同意我们不必要的冗长条款，无论您是否已阅读它们。”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;daneel_w:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对我来说，“dogfooding”正如作者所暗示的那样，并不是出于忠诚或某些不伦不类的原则而使用自己的产品。它具体是关于&lt;i&gt;在开发过程中使用您自己的产品&lt;/i&gt;作为测试手段，而它正处于最糟糕的阶段——实际上是吃一段时间的狗粮。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;客户服务有不同的含义。我个人更喜欢
+良好、简单且有效的文档。我讨厌必须使用
+电话解释问题。亲自做是可以的，但是
+这不是我喜欢的方式。&lt;p&gt;&gt;当你自己的产品工作时体验它是很好的，但是上述组织中的任何人最后一次经历“困难”的情况是什么时候？客户旅程。&lt;p&gt;我更喜欢那些制造出从未有过的产品的公司
+需要任何东西。甚至没有保修电话，因为事情只是 
+继续工作。&lt;p&gt;过去几年我注意到我们过于依赖
+在谷歌搜索上。现在很糟糕，寻找高质量的信息
+变得更加困难——人工智能趋势正在进一步破坏这一点，因为每个人
+现在只有人工智能总结东西，但并不总是有效。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;skeeter2020:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在我的上一个角色（工程方面）中，产品副总裁反对我使用“吃你自己的狗粮”这句话。因为它很“恶心”。她总是插话并用“喝你自己的香槟”代替。我（私下）反驳说这是一个功能；它应该有点倒胃口，因为你来得早，建立同理心并获得不同的视角（对于狗来说，狗粮很美味！）。我认为观点上的差异简洁地说明了试图尽快了解客户体验与数据驱动的 kpi 群体之间的分歧，在这些群体中，很方便的是，你无法发现这些问题，直到为时已晚。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;joemazerino:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;老问题了。客户服务不应该是令人麻木的深不可测，响应客户应该很容易。不幸的是，除非高层管理人员参与（是贝索斯还是盖茨？我都听说过），事情就会在混乱中迷失方向。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chanux:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每当我需要呼叫 IVR 系统寻求支持时，100 次中有 98 次我都会感到愤怒。这个空间是最终的黑暗模式雷区。&lt;p&gt;我的常见互动是与银行和电信公司。绝对垃圾。&lt;p&gt;我很确定某些系统允许记住 DTMF 菜单并在播放录音时按下它。但我最近调用的系统不允许这样做。就好像他们故意让人们等待遭受酷刑。&lt;p&gt;人们称这些系统为最后的手段（至少我这么认为）。让它们变得如此糟糕应该是非法的。&lt;p&gt;此外，我曾经与这些系统的电信公司人员一起工作，他们对这些“功能”感到非常自豪。&lt;p&gt;抱歉我的咆哮。我不得不发泄出来。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;blfr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于大众产品，我们都受到底部分位数甚至前分位数的支配。这些人需要了解有关检查网站、收集基本信息等的信息。&lt;p&gt;每个与普通消费者打交道的人，从医生到店员，都知道这一点。每个管理这些第一线的人都知道它的成本是多少。因此，队列、提醒、重定向到自助服务。&lt;p&gt;此外，这也是您可以立即建立自己的能力并受到认真对待的方式。只需从问候语中直接进入基本上下文和您需要的内容，手头有文档，甚至只是加载到手机上等等。&lt;p&gt;通常还有第二个队列。各种“溢价”优惠（例如更高的流入银行账户）或只是拥有某人的直接电话号码。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LocalH:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;但我自己的屁闻起来&lt;i&gt;好闻&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;GuestFAUniverse:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当建筑师和开发人员不负责戈德堡发明的运作时，这就是同样的马粪。
+我想到的另一个短语是：没有利益攸关方。&lt;p&gt;对我来说，“不负责任”是最重要的。 ——或者任何更合适的命名——需要它自己的地狱圈。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisMarshallNY:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;上世纪末有一条著名的布朗和威廉姆森电话留言：&lt;a href="https:&amp;#x2F;&amp;#x2F;nypost.com&amp;#x2F;1999&amp;#x2F;09&amp;#x2F;23&amp;#x2F;smoke-gets-in-your-eyes-when-you-call-bw&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;nypost.com&amp;#x2F;1999&amp;#x2F;09&amp;#x2F;23&amp;#x2F;smoke-gets-in-your-eyes-when-y...&lt;/a&gt;&lt;p&gt;我实际上有一段录音（粗糙），但不会链接它，因为它是可能不值得。这是一场骚乱。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aurornis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;有一个广为人知的故事：杰夫·贝佐斯 (Jeff Bezos) 暂停会议，拨打自己的客户服务电话，并等待了 10 多分钟才得到答复。&lt;p&gt;我的工作之一是在一家以不健康的官僚主义和政治作风发展起来的公司。该产品对某些人来说几乎不重要，因为他们在玩哗众取宠、抢功劳和建立自己帝国的内部游戏。&lt;p&gt;在本应讨论产品方向和优先事项的会议上，我有时会拿出手机打开应用程序，试图展示服务的一些实际问题。会议的基调会变得恐慌，因为某些产品负责人会想方设法阻止我展示真实产品的功能，而不是他们精心准备的幻灯片，为高管展示了一个非常好的故事。我因为展示实际产品而不是他们的 KPI 和图表的替代世界而成为敌人。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MitchSaid:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;几年前，我被介绍给英国服务咨询公司 Vanguard（以及他们的“Vanguard 方法”），本质上是一种改进服务的系统思维方法（不要与庞大的美国投资管理公司混淆）。&lt;p&gt;在他们的世界里，“闻自己的屁”是最重要的。 （即倾听，更重要的是，使用规范的学习方法理解对客户来说重要的事情）主要不是同理心，而是获取知识，以便您了解如何将公司作为一个系统进行干预。&lt;p&gt;这样说来，决策者听取客户电话并不是浪费，事实上，这是他们获得所需了解的知识的唯一途径如何改善他们的服务（假设这是他们的目标）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;afarah1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;啊，所以几分钟的漫长等待听到答录机的废话是一种普遍的经历。我认为这是一个本地问题，仅限于 ISP、公用事业和金融公司……当我可以在竞争公司之间进行选择时，直接联系客户支持人员是我的首要选择。我对聊天或电话都很满意，我只是不想先通过机器人。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;treetalker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;举个例子，愿作者挑选的每一本书都像他的网站一样设计。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrweasel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我曾经接到过两个愚蠢的电话：&lt;p&gt;1) 我打电话要求取消我出售的汽车的保险单。 IVR 向我打招呼，按三取消保单，我们有了一个良好的开端。接下来是一个长篇演讲，内容涉及如果我被困在中东并需要回家，我需要如何拨打特殊号码，我需要采取的一般预防措施以及我的规则和权利。所有信息都很好，除了我已经表示我打电话取消保单。我坐在巴林的机场，拼命想回家，但我认为现在是检查并取消不需要的保险单的好时机的可能性绝对为零。您已经知道我打电话的原因，请据此定制消息。&lt;p&gt;2) 互联网已连续第二周无法使用。客户服务人员正在输入内容，查找内容，试图找出案件结案的原因。 “在我们等待期间，让我和你谈谈我们的流媒体捆绑包”...伙计，我知道老板让你这样做，但不要试图向你甚至无法上网的客户追加销售流媒体捆绑包。&lt;p&gt;不过，医生办公室是最糟糕的。他们指导您何时拨打电话以及在哪里拨打电话的整个系统需要几分钟的时间来解释。不管怎样，呼叫都会路由到同一个人。系统中有太多令人困惑和不相关的消息，最终您仍然被路由到同一组人员。&lt;p&gt;我给客户服务打电话的大部分原因是因为在线自助服务绝对糟糕，无法做简单的事情。如果每个行业的网站稍微好一点，那么他们就可以节省一大笔呼叫中心成本。通常，它甚至与能够自助服务无关，它可能只是提供最微小的实际信息。过去五年你的来电量比平常大，因为你的愚蠢网站一年比一年糟糕。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bix6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，规模经济比你的理智更重要&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;emerongi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的屁总是闻起来很香。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cainxinth:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我是那种认为客户服务会很糟糕的人。每当我需要给一家公司打电话时，我都会做好准备，耐心地应对他们的挑战，因为我知道秘诀就是比他们坚持得更久。每次你打电话给他们都要花钱。我经常告诉他们我知道这一点，并向他们保证我会继续打电话，直到问题得到解决。这不好玩，事情就是这么悲惨。&lt;p&gt;但是我老爸花掉自己辛苦赚来的钱却感觉不到自己付出的代价，仍然感到某种义愤。他喜欢向那些虐待他的公司表达自己的想法，他总是说“我希望我的评论被记录下来以保证质量！”&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chromacity:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我同意更广泛的观点，但令我困惑的是，作者将内部测试视为“科技行业的神圣实践”。在客户支持的背景下。在大型科技公司中，客户支持通常不被视为产品的一部分。如果您在 Facebook、Google 或 Microsoft 工作，您不会尝试通过不存在的消费者支持渠道来解决帐户问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mpalmer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Dogfooding 对于用户和服务提供商来说都是一个良性循环，因为激励措施是一致的。&lt;p&gt;然后增长 - 对不起，转移 - 出现了。&lt;p&gt;感谢转移 - 对不起，enshittification - 我们已经不再需要dogfooding了。我们将其用作一种用户体验陀螺仪，无需过多的机构思考或努力即可使我们保持平衡。它使我们在竞争中更有效率。既然最大的公司受到竞争的威胁最小，他们为什么要承受用户的侮辱呢？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bryanrasmussen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;目前在首页上，该帖子正下方的帖子是 25 年的鸡蛋&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47427224"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47427224&lt;/a&gt;&lt;p&gt;a快乐的巧合。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://shkspr.mobi/blog/2026/03/bored-of-eating-your-own-dogfood-try-smelling-your-own-farts/</guid>
+      <pubDate>Sun, 22 Mar 2026 13:12:31 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47477158</comments>
     </item>
     <item>
-      <title>霍尔木兹扫雷 – 你厌倦了胜利吗？</title>
-      <link>https://hormuz.pythonic.ninja/</link>
-      <guid isPermaLink="true">https://hormuz.pythonic.ninja/</guid>
-      <pubDate>Sun, 22 Mar 2026 09:00:37 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47475686</comments>
-    </item>
-    <item>
-      <title>Windows 原生应用程序开发一团糟</title>
-      <link>https://domenic.me/windows-native-dev/</link>
-      <description>&lt;p&gt;我是 Windows 用户；我一直都是。虽然我从旁观者关注 Windows 开发生态系统，但我的专业工作从未涉及编写本机 Windows 应用程序。 0 (2002) 从 Windows 窗体开始。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Windows native app development is a mess&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47475938"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://domenic.me/windows-native-dev/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ozim:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是为什么每个人甚至微软自己都使用 Electron。&lt;p&gt;使用 html&amp;#x2F;css&amp;#x2F;js 运行有好处，它确实是基于国际标准的开放和自由开发，而不是锁定于任何单一的大型技术。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delduca:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最好的框架是 Qt。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;intrasight:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“因此，当我开始开发我的应用程序时，我惊讶地发现 WPF 发布 20 年后，样板文件几乎没有发生任何变化。”&lt;p&gt;我想，这就是将 Windows API 锁定在遥远的过去以实现向后兼容性的好处和诅咒。&lt;p&gt;我一直很惊讶 Microsoft 没有进行完整的操作系统重构并为运行旧的二进制文件提供兼容层。也许他们认为使用网络技术将所有内容转变为软件即服务会更好？但我只是不知道这个策略如何长期发挥作用。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wolvoleo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;据我所知，大多数开发人员也不是。黑客新闻评论员喜欢哀叹原生应用程序的消亡。但考虑到 Windows 应用程序平台如此混乱，我随时都会选择 Web 堆栈，使用 Electron 或 Tauri 桥接到相关的 Win32 API 以进行操作系统集成。&lt;p&gt;是的，作为用户，我更喜欢本机应用程序的性能。正如文章所示，开发本机应用程序显然是一团糟。但作为用户，我没有看到这个问题。不过，我确实看到应用程序的质量不断恶化。就像新的前景和团队的混乱一样。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ashwinnair99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;15 年来一直是一团糟，微软不断添加新框架而不淘汰旧框架，使情况变得更糟。 Win32、WPF、WinUI、MAUI。没有人知道该选哪一个。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://domenic.me/windows-native-dev/</guid>
-      <pubDate>Sun, 22 Mar 2026 09:57:31 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47475938</comments>
-    </item>
-    <item>
-      <title>创建系统架构图时要避免的更常见错误</title>
-      <link>https://www.ilograph.com/blog/posts/more-common-diagram-mistakes/</link>
-      <description>&lt;p&gt;名称可以区分资源与相同类型的其他资源。上图是Ilograph后端系统架构的“主”图。该图将该系统描述为传送带。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; More common mistakes to avoid when creating system architecture diagrams&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47476562"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.ilograph.com/blog/posts/more-common-diagram-mistakes/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ashwinnair99:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最糟糕的是那些看起来很干净但隐藏了所有真正重要的决策的图表。一张显示真正权衡的凌乱图表比一张漂亮的谎言更有用&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.ilograph.com/blog/posts/more-common-diagram-mistakes/</guid>
-      <pubDate>Sun, 22 Mar 2026 11:51:52 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47476562</comments>
-    </item>
-    <item>
-      <title>我们如何同步娱乐室多人脚本系统的编辑</title>
-      <link>https://www.tyleo.com/blog/how-we-synchronized-editing-for-rec-rooms-multiplayer-scripting-system</link>
-      <description>&lt;p&gt;SyncReducer( ActionData.反序列化, AddNodePayload.SyncReducer( ActionData.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; How We Synchronized Editing for Rec Room's Multiplayer Scripting System&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47476707"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.tyleo.com/blog/how-we-synchronized-editing-for-rec-rooms-multiplayer-scripting-system'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.tyleo.com/blog/how-we-synchronized-editing-for-rec-rooms-multiplayer-scripting-system</guid>
-      <pubDate>Sun, 22 Mar 2026 12:14:06 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47476707</comments>
-    </item>
-    <item>
-      <title>“奇迹”：欧洲与丢失的航天器重新建立联系</title>
-      <link>https://phys.org/news/2026-03-miracle-europe-reconnects-lost-spacecraft.html</link>
-      <description>&lt;p&gt;2026 年 3 月 19 日“奇迹”：欧洲与失落的航天器重新连接 作者：Andrew Zinin 编者注 本文已根据 Science X 的编辑流程和政策进行审阅。 Proba-3 任务于 2024 年从印度发射升空。关键概念太阳能仪器人造卫星日冕 © 2026 法新社引文：“奇迹”：欧洲与丢失的航天器重新连接（2026 年，3 月 19 日）于 2026 年 3 月 22 日检索自 https://phys。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; 'Miracle': Europe reconnects with lost spacecraft&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47476060"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://phys.org/news/2026-03-miracle-europe-reconnects-lost-spacecraft.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>使用现代 RTL 工具构建 FPGA 3dfx Voodoo</title>
+      <link>https://noquiche.fyi/voodoo</link>
+      <description>&lt;p&gt;这篇文章是关于使这个问题变得容易处理的两个抽象。这就是中心对比。这就是芯片如何实现软件无法比拟的吞吐量的原因。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Building an FPGA 3dfx Voodoo with Modern RTL Tools&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47477284"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://noquiche.fyi/voodoo'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tetris11:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; Proba-3，就像真正的日食一样。一艘从正面看大致呈圆形的航天器，其轨道靠近太阳，其作用是阻挡太阳的明亮部分，就像月球在真正的日食中一样。它在第二个探测器上投射了阴影，该探测器的相机能够拍摄由此产生的人造日食。&lt;p&gt;&gt;让两艘独立的航天器独立飞行，但其中一个航天器会在另一个航天器上投射阴影，这是一项具有挑战性的任务。但未来的任务取决于科学家弄清楚如何使这种精确编排技术发挥作用，因此 Proba-3 是一个测试。&lt;p&gt;哦，哇，他们有可能拯救这两个探测器的这项（非常酷！）任务&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;graemep:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;欧洲航天局，而不是“欧洲”。就像将欧盟称为“欧洲”一样令人烦恼，尽管成员国不同，但将两个国家称为“欧洲”只是令人困惑。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;touwer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很高兴这个网站至少在我手机上留下了大约 10% 的屏幕来阅读这篇文章，旁边是所有横幅和时事通讯广告。不是5%，太好了！&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://phys.org/news/2026-03-miracle-europe-reconnects-lost-spacecraft.html</guid>
-      <pubDate>Sun, 22 Mar 2026 10:22:28 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47476060</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ekelsen:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这个项目很酷，但是法学硕士生成的博客困扰着我的大脑。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SilverElfin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢那个时代的名字和品牌。如今的技术要先进得多，但消费者却没有那么兴奋。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sejje:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的第一块显卡。&lt;p&gt;在 1999 年左右让它在 Linux 上工作确实不容易，特别是对于一个没有 Linux 经验的青少年来说。&lt;p&gt;我的网卡也无法工作，所以我不得不跑到朋友家拨号上网，在 Altavista 上寻求帮助。&lt;p&gt;非常酷的项目。仍然在我头顶上方！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://noquiche.fyi/voodoo</guid>
+      <pubDate>Sun, 22 Mar 2026 13:24:38 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47477284</comments>
     </item>
     <item>
-      <title>梵蒂冈谴责彼得泰尔在罗马的反基督演讲</title>
-      <link>https://www.thenerdreich.com/peter-thiels-antichrist-circus-smacked-down-in-rome/</link>
-      <description>&lt;p&gt;现在，随着一位教皇顾问对蒂尔提出了批评，世界各地的报纸都在报道蒂尔的反基督布道。泰尔不善言辞，缺乏魅力。纽约时报：“彼得泰尔担心敌基督即将到来。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Vatican Rebukes Peter Thiel's Antichrist Lectures in Rome&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47475849"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.thenerdreich.com/peter-thiels-antichrist-circus-smacked-down-in-rome/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Project Nomad – 永不离线的知识</title>
+      <link>https://www.projectnomad.us</link>
+      <description>&lt;p&gt;NOMAD 项目是免费的。 NOMADPrepperDiskDoom BoxR 项目。 NOMAD 项目负责处理剩下的事情。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Project Nomad – Knowledge That Never Goes Offline&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47476821"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.projectnomad.us'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么它是如何运作的呢？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;moffers:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常聪明地瞄准了一个利基市场。我很想听听他们是否成功！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;JanisIO:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有人考虑过使用 Steam Deck 吗？或者探索“Nomad Deck”的概念？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;WillAdams:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;错过了在 Raspberry Pi 上记录（或配置？）安装的机会——这将是一个经济实惠的选择，可以关闭电源，但准备好进入 EMI 屏蔽法拉第笼。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;myself248:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;另请参阅：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;internet-in-a-box.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;internet-in-a-box.org&amp;#x2F;&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;wrolpi.org&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;wrolpi.org&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tsss:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我从小就期待这款游戏，但很失望。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.projectnomad.us</guid>
+      <pubDate>Sun, 22 Mar 2026 12:28:38 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47476821</comments>
+    </item>
+    <item>
+      <title>苹果继续故意削弱 Mobile Safari</title>
+      <link>https://pwa.gripe/</link>
+      <description>&lt;p&gt;功能 Chrome 145Android 移动 Safari 26. 4iOS + iPadOS 您的浏览器快捷方式 ✔ ✘ 协议处理 ✔ ✘ 文件处理 ✔ ✘ 联系人选择器 ✔ ✘ 人脸检测 ✔ ✘ 振动 ✔ ✘ 元素捕获 ✔ ✘ 后台同步 ✔ ✘ 后台获取 ✔ ✘ 蓝牙 ✔ ✘ NFC ✔ ✘ AR / VR ⚠ ✘ 网络信息 ✔ ✘ 安装 ✔ ⚠ 离线支持 ✔ ✔ 通知 ✔ ⚠ 网络推送 ✔ ⚠ 视图切换 ✔ ✔ 地理位置 ✔ ✔ 媒体捕获 ✔ ✔ 画中画 ⚠ ✔ 文件系统 ✘ ✘ 压缩流 ✔ ✔ 身份验证 ✔ ✔ 网络共享 ✔ ✔ 虚拟键盘 ✔ ✔ 条形码检测✔ ⚠ 音频录制 ✔ ✔ 媒体会话 ✔ ✔ 音频会话 ✘ ✘ 屏幕截图 ✘ ✘ 存储 ✔ ✔ 付款 ✔ ✔ 唤醒锁定 ✔ ✔ 方向 ⚠ ⚠ 运动 ✔ ✔ 语音合成 ✔ ✔ 语音识别 ⚠ ⚠ 多点触控 ✔ ✔。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Apple's intentional crippling of Mobile Safari continues&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47477024"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://pwa.gripe/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 21 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dagmx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果网站列出这些功能是否已在 Chrome 之外标准化，将会很有用。&lt;p&gt;很难界定其中哪些是 Chrome 功能，哪些是实际的网络标准。因此，如果它们尚未标准化，就很难责怪 Safari 或 Firefox 不支持它们。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MantisShrimp90:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最近发帖讲述了我如何因为这样的事情而拒绝购买苹果产品。锁定使得 iPhone 用户依赖于应用程序生态系统，而我们本可以通过开放网络获得大部分功能。&lt;p&gt;人们说他们不想要这些功能，但他们没有抓住要点。这是关于控制的，如果开发人员可以选择制作一个真正有效的网站，那么他们就会减少制作一款应用程序的动力，而苹果可以从中抽取你 30% 的利润，而你却被迫用他们的专有语言编写只能在他们的设备上运行的东西。&lt;p&gt;为了满足底线，需要进行大量的工程重复工作和浪费。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;daft_pink:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;公平地说，其中一些功能是一些用户不希望在浏览器中出现的安全问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;easeout:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;必须在观众所在的地方与他们见面。作为一名 Mobile Safari 用户，我觉得自己使用网络受到阻碍的最重要原因是页面只是假设了更大的屏幕。&lt;p&gt;所有网页中的这一点应该很容易在 iPhone 屏幕上阅读，但其构造方式却阻碍了这一点。您无法缩小整个页面以查看整个表格宽度，因为表格位于滚动框架中并且比其框宽。您只能横向滚动嵌套框架来查看行标签与 iPhone 单元格的关系。如果您放弃并使用横向，它仍然在框架中垂直滚动。你必须瞄准边缘，否则你只会滚动一英寸，然后因为抓住桌子而停下来。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;samlinnfer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;说实话，我真的很惊讶他们让 PWA 拥有通知。这确实是我们在整个页面上唯一的用例，而且它确实有效。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;matthewfcarlson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;像大多数人一样（至少在这个线程上）。我对移动 Safari 中不支持的绝大多数内容感到满意。但是伙计，蓝牙会很好。我经常为各种事情提供 esp32 设备，当我的手机完全有能力时，我需要一个应用程序或一台笔记本电脑。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hk1337:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;How many of these features that chrome offers have been fully flushed out and in a true working stable state? Google Chrome 习惯于在功能真正准备好之前就将其推出，而据我所知，Safari 的功能通常与 Firefox 不相上下。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nazgu1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;还有 WebUSB、WebMIDI。更不用说如果没有开发者订阅，您就无法为您（以及您的家人和朋友）开发应用程序:(&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;agust:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;值得注意的是，苹果不仅削弱了 iOS Safari，还削弱了所有 iOS 浏览器，因为它还迫使它们使用 WebKit，即 Safari 下的浏览器引擎。&lt;p&gt;如果他们只是让 Safari 变得糟糕，那也没关系，那是他们的选择。但他们并不止于此：他们故意让 iOS 上的整个网络变得糟糕，以推广他们可以征税的本机应用程序。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ocdtrekkie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我非常欣赏 Safari 所确定的安全基线。整个生态系统都受到 Safari 缓慢而合理的保护。&lt;p&gt;我唯一的不满是 Apple 在每次更新时都会重置功能标志。因此，我使用的一项实验性功能每次获得手机更新时都必须重新启用。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pjmlp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ChromeOS 平台的倡导者不断推动他们的议程。&lt;p&gt;Chrome API 和 Electron 垃圾，然后每个人都抱怨微软。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mrtedbear:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不确定其他声称所有这些功能都是攻击向量的评论者是否真的阅读了该列表？&lt;p&gt;例如，条形码检测 API 是否存在安全风险？实现它对于网络应用来说将是令人惊奇的。&lt;p&gt;此外，还有诸如深度链接到 PWA 之类的功能，这些功能应该是非常基本的 PWA 功能，但不在此列表中，即使是 Mac OSX 上的 Safari 也有，但 iOS 上的 Safari 却没有。甚至“添加到主屏幕菜单”选项也被故意设置得很难找到。&lt;p&gt;这样做是为了用户的利益，这是不太可能的假设之一。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Darkstryder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为 iOS 上的日常 Safari 用户，我并不关心这些，但由于 iOS 26 的基本 Safari 功能（例如书签和文本搜索）已经被深深地埋藏在了底层，它们在这一点上基本上无法使用。&lt;p&gt;它比所有液体玻璃的东西更让我愤怒（我总体上对此持中立态度）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;functionmouse:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;感谢上帝。感谢上帝！这几天发生的事情太多了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pmdr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;曾经使用 Firefox 作为 iOS 上 Safari 的内容过滤器（广告拦截），但后来改用 Brave。如果您忽略所有加密垃圾邮件，这是一个不错的选择。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;traceroute66:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;坦白说，我确实很高兴苹果能够“削弱”苹果。 Safari。&lt;p&gt;博客中那个愚蠢的表格中列出的 99.9% 的东西都是潜在的攻击媒介。&lt;p&gt;我们知道智能手机的攻击目标有多么严重，以及一些最新媒介是多么聪明和狡猾。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;troupo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;想象一下，如果这些无数的“Safari bad”网站并没有通过假装仅限 Chrome 的 API 是必不可少的标准 Web API 来推销 Chrome。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CamJN:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该网站上列出的 Safari 不支持的内容绝对没有任何业务成为网络的一部分。事实上，几个受支持的 API 也应该被放弃。他妈的给网站提供运动数据或推送通知。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gib444:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好吧，至少你可以设置一个自定义搜索引擎 URL – 哦不，你不能，这可能会危及一些孩子或其他东西！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dgxyz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是的，抱歉，但作为最终用户，我宁愿拥有一个实际的应用程序，而不是一些 PWA，谢谢。&lt;p&gt;继续 Apple。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hx8:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我现在在 Safari 中写这篇文章，我是它的超级粉丝。有几个“特征”：我非常不喜欢并在其他浏览器中禁用它。  我想知道在移动 Safari 中未实现是否会阻止某些网页需要它们。&lt;p&gt;* 振动&lt;p&gt;* 后台同步&lt;p&gt;* 蓝牙&lt;p&gt;* NFC&lt;p&gt;* 通知&lt;p&gt;* 网络推送&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://pwa.gripe/</guid>
+      <pubDate>Sun, 22 Mar 2026 12:55:37 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47477024</comments>
+    </item>
+    <item>
+      <title>说服并不等于说服</title>
+      <link>https://blog.alaindichiappari.dev/p/convincing-is-not-persuading</link>
+      <description>&lt;p&gt;说服的目标是特定的受众：这些人，在这个房间里，带着这些恐惧、这些激励、这些对上次偏离方向的移民的记忆。令人信服的解决原因。也许您的 RFC 甚至说服了他们。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Convincing Is Not Persuading&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47477068"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.alaindichiappari.dev/p/convincing-is-not-persuading'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;clarkevans:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;希思兄弟论文&lt;i&gt;转换：当变革困难时如何改变事物&lt;/i&gt;描述了促进变革的三个步骤：清晰的愿景、充足的动力和具体的第一步。&lt;p&gt;如果您仅根据此博客的标题进行投票，那么即使是本书中的单页摘要或图表也将更具可操作性。我不喜欢这个类比，但它已经足够好了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;a1j9o94:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我经常陷入这个陷阱。柏拉图式的理想论证是一种有趣的心理练习，但没有完成任何事情&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;getnormality:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇人工智能撰写的帖子是洞察色情类型的一部分，试图区分现实生活中含义基本相同的两个单词。我们读了它，我们礼貌地同意，当然，你可以使用这两个词来代表这两个不同的概念，然后我们回到日常生活并继续互换使用它们。&lt;p&gt;如果你读了这篇文章并且真正相信它所说的内容，你会告诉人们“你的演讲令人信服但没有说服力，这就是为什么领导层没有按照你所说的去做。”这对于一个典型的说英语的人来说是没有意义的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Avicebron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;底部有一个可以直接分享给 HN 的链接，这有点可疑。&lt;p&gt;感觉很无机。就像这个人坐下来思考“我怎样才能成为 HN 的影响者”？这很令人不安。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nubg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;亲爱的作者，您可以发布提示吗？我不确定哪些部分是你真正想要写的部分，哪些部分是LLM的填充物。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.alaindichiappari.dev/p/convincing-is-not-persuading</guid>
+      <pubDate>Sun, 22 Mar 2026 13:00:45 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47477068</comments>
+    </item>
+    <item>
+      <title>iBook 翻盖式</title>
+      <link>https://www.ibook-clamshell.com/index.php/en/</link>
+      <description>&lt;p&gt;详细信息 iBook Clamshell 由 Apple Computers 从 1999 年 9 月到 2001 年 5 月生产，有五种颜色和多种配置。当我注意到很多来自英语国家的人来参观时，我添加了英语内容 - 当然有错误和不完善。尽管如此，您仍可以在这里找到有关翻盖式 iBook 的最全面的信息以及保持 iBook 正常运行的大量提示和技巧。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; iBook Clamshell&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47477938"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ibook-clamshell.com/index.php/en/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ranger_danger:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我记得它问世时，约翰·C·德沃夏克（John C. Dvorak）称其为马桶座圈。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spankibalt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;更广为人知的名称是“芭比娃娃的电动马桶座圈”。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisMarshallNY:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很酷的网站。&lt;p&gt;我一直很喜欢 iBook 的概念，但从来没有找到我个人想要的东西。&lt;p&gt;我曾经将它称为“MacBook 马桶座圈”。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ZekeSulastin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想我从来没有见过在拒绝时弹出一个带有“请重新考虑”字样的 cookie 横幅……实际上，从来没有。整洁吗？&lt;p&gt;我在旧的翻盖式 iBook 上运行了 Debian 一段时间；我记得的主要事情是，它有点简洁，并且通过 mpd 和基于网络的脉冲音频从我的服务器播放音乐比直接在 iBook 上播放文件花费的 CPU 更少。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmclnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;蛤壳，那是一个从前的名字。  但与 Apple 无关&lt;p&gt;&gt;Clam 是一个 Unix(tm) shell，它具有 tcsh、sh 的许多功能以及其自身的改进。&lt;p&gt;&gt;Clam 版权所有 (c) 1988，作者：Callum Gibson。 Clam 是免费提供的。&lt;p&gt;它出现在带有 Cohorent OS 的 CohWare Vol1 上，并提供了一个小型 csh(1) 环境。  我认为这是我当时使用的 Coherent 286 版本的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;joe_mamba:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;遗憾的是，苹果没有勇气发布那些明亮颜色的 Neo 来表达敬意，而是选择了安全、平淡、公司委员会、焦点小组批准的、柔和的颜色，就像他们的其他产品线一样。嘘！错过了机会。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.ibook-clamshell.com/index.php/en/</guid>
+      <pubDate>Sun, 22 Mar 2026 14:34:35 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47477938</comments>
+    </item>
+    <item>
+      <title>7 天内通过法学硕士破解我的算法无知</title>
+      <link>http://blog.dominikrudnik.pl/my-google-recruitment-journey-part-1</link>
+      <description>&lt;p&gt;我最初的分类是这是不可能的，这只是垃圾邮件。就像私人老师一样，全心全意地教我新的概念，我不知道。通过提示，我意识到这些问题只是 for 循环和数组的简单用法 - 但这给了我以前从未有过的勇气，让我能够完成最简单的算法任务。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Brute-Forcing My Algorithmic Ignorance with an LLM in 7 Days&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47476776"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='http://blog.dominikrudnik.pl/my-google-recruitment-journey-part-1'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;e12e:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的文章 - 但在某些地方的细节可能有点浅显，例如：&lt;p&gt;&gt;我生成了最常见面试任务的列表&lt;p&gt;如何？我想他们的意思是收集或搜索，而不是严格生成？&lt;p&gt;还有一点实际采访的细节。&lt;p&gt;我对列出的“问题”也有点困惑。 - 他们是否引用了某些特定的 leet-code 网站的问题列表？&lt;p&gt;这似乎介于命名实际算法问题和命名具体练习之间。&lt;p&gt;至于：&lt;p&gt;&gt;我们怎么不使用这个“被遗忘和禁止”的东西呢？在我们的日常生产代码中进行编码，即使所有高度可重用、有用的代码本质上都是对经典算法思维和现实世界问题之间交叉点的利用？&lt;p&gt;我不知道该说什么 - 这些东西大部分都存在于任何常用语言的库代码和数据结构实现中？&lt;p&gt;事实上，leet 代码面试的一个可取之处可以说是，它表明候选人在实现现实世界代码时是否可以选择合理的数据结构（和算法）？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tom-blk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;非常酷，我个人一直在用类似的方法研究 zk 密码学，虽然有一些警告，但效果非常好。会保存这篇文章，到时候也试试这个版本！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;piokoch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这非常有趣，我一直在使用法学硕士以这种方式学习新事物，而且它确实有效。在某种程度上，学习LLM比学习任何课程都好，即使是有导师，因为我在经验、进步水平等方面为我准备了一些东西。&lt;p&gt;LLM将给学校和大学带来很大的改变，教师、导师将不得不在新的现实中找到自己，因为他们有一个强大的竞争对手，拥有无限的资源和巨大的知识，耐心并准备好根据学生的需求、水平、智力、以独特的方式与每个学生合作， &lt;p&gt;从这个角度来看，基于指导的辅导已经死了，为什么我要跟着别人背诵一本书或在线教程，而有一个工具可以以更好、更有趣的方式向我介绍学科？&lt;p&gt;当然，有一些伟大的老师，他们鼓舞人心，他们能够以一种伟大的方式呈现主题，关键是，他们是少数。现在，每个人每月花几美元就可以聘请一位优秀的导师（或者免费，如果您不需要快速生成太多数据）。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">http://blog.dominikrudnik.pl/my-google-recruitment-journey-part-1</guid>
+      <pubDate>Sun, 22 Mar 2026 12:23:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47476776</comments>
+    </item>
+    <item>
+      <title>$ teebot.dev – 6 秒内从终端到 tee</title>
+      <link>https://teebot.dev</link>
+      <guid isPermaLink="true">https://teebot.dev</guid>
+      <pubDate>Sun, 22 Mar 2026 12:22:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47476772</comments>
+    </item>
+    <item>
+      <title>改写信息规则的 IBM 科学家刚刚获得图灵奖</title>
+      <link>https://www.ibm.com/think/news/ibm-scientist-charles-bennett-turing-award</link>
+      <description>&lt;p&gt;“贝内特帮助建立的领域基于信息遵循物理规则的理念，其中可能包括量子物理学。IBM 物理学家罗尔夫·兰道尔 (Rolf Landauer) 将贝内特招入公司，他在 1961 年发表的一篇颇具争议性的论文中对此提出了挑战，认为信息从根本上来说是物理的，并遵循热力学定律。在此基础上，贝内特在 1973 年的一篇论文中表明，计算原则上可以可逆地进行，向前运行，然后再运行。在没有任何净能量成本的情况下向后移动，揭示了物理学和信息之间的深层联系，这是大多数科学家没有看到的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The IBM scientist who rewrote the rules of information just won a Turing Award&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47476566"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ibm.com/think/news/ibm-scientist-charles-bennett-turing-award'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AtlasBarfed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么提出这个想法和方法的人是该奖项的第二名吗？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.ibm.com/think/news/ibm-scientist-charles-bennett-turing-award</guid>
+      <pubDate>Sun, 22 Mar 2026 11:53:37 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47476566</comments>
+    </item>
+    <item>
+      <title>事实证明，你的咖啡瘾可能对你的大脑有好处</title>
+      <link>https://www.theregister.com/2026/03/21/turns_out_your_coffee_addiction/</link>
+      <description>&lt;p&gt;研究显示，喝咖啡因的人在一些认知测试中得分也更高，而且不太可能抱怨记忆力下降。这并不意味着咖啡因是某种神奇的抗痴呆灵丹妙药，可悲的是，它剥夺了硅谷的下一个“生物黑客你的大脑”的宣传平台。 ® 获取我们的技术资源 分享 更多关于 Java 更多此类 × 更多关于 Java 更广泛主题 编程语言 更多关于 Share 48 COMMENTS 更多关于 Java 更多类似这些 × 更多关于 Java 更广泛主题 编程语言 提示我们关闭 向我们发送新闻。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Turns out your coffee addiction may be doing your brain a favor&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47477003"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.theregister.com/2026/03/21/turns_out_your_coffee_addiction/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pupppet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;具有讽刺意味的是，他害怕敌基督，但却支持特朗普，而特朗普符合其中许多特征。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yesbut:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;权力会导致脑损伤。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;archive.md&amp;#x2F;sdLQP" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;archive.md&amp;#x2F;sdLQP&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mikkupikku:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们不再拥有罗马了，多亏了他们，梵蒂冈现在是他们自己的国家了。本尼.  反正双方都是自视甚高的白痴，居然都相信一堆废话，但是这两个人到底谁对人类造成的伤害更大呢？ &lt;p&gt;没有“反基督”之说。只有反基督者、复数的、正常的&lt;i&gt;非超自然&lt;/i&gt;人和组织，其行为方式明显非基督化，而且这里的双方似乎都很容易符合资格。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mike_hearn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些讲座似乎已经结束，但有人有核心论点的记录或文字吗？我很想知道他的第一手资料。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mosura:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在某些时候，人们会开始问一些尴尬的问题，一直追溯到 PayPal 黑手党以及随后发生的一切。蒂尔加入彼尔德伯格集团的指导委员会看起来太荒谬了，但这是一件事，现在这个家伙开始咆哮反基督者？&lt;p&gt;我实际上很同情蒂尔所做的大部分事情，但目前的弧线让所谓的霍华德休斯的怪事看起来非常合理。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;conartist6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他似乎是那种只需要几天糟糕的日子就能彻底脱离现实的人。&lt;p&gt;我想知道他是否与人工智能交谈了很多，这是否让他陷入了精神病的边缘？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vrganj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是梵蒂冈的文章（法文）：
-&lt;a href="https:&amp;#x2F;&amp;#x2F;legrandContinental.eu&amp;#x2F;fr&amp;#x2F;2026&amp;#x2F;03&amp;#x2F;14&amp;#x2F;thiel-heresie-benanti&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;legrandContinental.eu&amp;#x2F;fr&amp;#x2F;2026&amp;#x2F;03&amp;#x2F;14&amp;#x2F;thiel-heresie-bena...&lt;/a&gt;&lt;p&gt;标题翻译为：&lt;p&gt;&lt;i&gt;&gt;美国异端邪说：彼得·蒂尔应该被烧死在火刑柱上吗？&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.thenerdreich.com/peter-thiels-antichrist-circus-smacked-down-in-rome/</guid>
-      <pubDate>Sun, 22 Mar 2026 09:35:54 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47475849</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;trollbridge:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;咖啡和其他咖啡豆一样，富含抗氧化剂，特别是当咖啡浓度过高时，而且烘焙和冲泡过程消除了咖啡豆通常用来避免动物吃掉它们的所有机制。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;qwertyuiop_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;脱咖啡因有同样的效果吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;storus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这不都是由于某种自主神经功能障碍和线粒体功能障碍以及随着年龄的增长而导致的血管恶化导致的大脑灌注不足吗？我们知道，有助于血液流动和内皮细胞生长的药物可以长期改善大脑，例如西地那非。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jader201:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;实际研究：&lt;a href="https:&amp;#x2F;&amp;#x2F;jamanetwork.com&amp;#x2F;journals&amp;#x2F;jama&amp;#x2F;article-abstract&amp;#x2F;2844764" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;jamanetwork.com&amp;#x2F;journals&amp;#x2F;jama&amp;#x2F;article-abstract&amp;#x2F;28447...&lt;/a&gt;&lt;p&gt;&lt;i&gt;”在调整潜在的混杂因素并汇总各队列的结果后，较高的含咖啡因咖啡摄入量与较低的痴呆风险显着相关（141 例与 330 例）每 10 万人年中第四个[最高]四分位数与第一个[最低]四分位数进行比较；风险比为 0.82 [95% CI，0.76 至 0.89]），主观认知能力下降的患病率较低（分别为 7.8% 和 9.5%；患病率为 0.85 [95% CI，0.78 至 0.89]） 0.93]）。”&lt;/i&gt;&lt;p&gt;&lt;i&gt;相对&lt;/i&gt;减少约 18%。但如果您的风险已经很低（例如积极健康的饮食），相对降低的影响就较小（例如 4% 至 3.28%）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cineticdaffodil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;再说一次，如果你患有痴呆症，你很可能会减少办公环境和任何学习，从而扭转因果关系。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rf15:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是这样吗？难道这不是与教育界的人们更相关吗？实际上是出于文化原因喝更多咖啡，但同时也更多地使用他们的大脑？这可能是真正的原因吗？因为我不知道我工作场所中的所有咖啡僵尸今天已经毫无用处且具有攻击性（直到他们喝了咖啡），他们如何才能持续更长时间&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cebert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;原始来源：&lt;a href="https:&amp;#x2F;&amp;#x2F;jamanetwork.com&amp;#x2F;journals&amp;#x2F;jama&amp;#x2F;article-abstract&amp;#x2F;2844764" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;jamanetwork.com&amp;#x2F;期刊&amp;#x2F;jama&amp;#x2F;文章摘要&amp;#x2F;28447...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.theregister.com/2026/03/21/turns_out_your_coffee_addiction/</guid>
+      <pubDate>Sun, 22 Mar 2026 12:52:58 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47477003</comments>
     </item>
   </channel>
 </rss>
