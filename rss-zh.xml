@@ -6,158 +6,160 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 21 Mar 2026 21:33:29 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2026 02:41:43 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Tinybox-离线AI设备120B参数</title>
-      <link>https://tinygrad.org/#tinybox</link>
-      <description>&lt;p&gt;我们编写并维护tinygrad，这是增长最快的神经网络框架，它非常简单，并且将最复杂的网络分解为 3 个 OpType，但是如何实现。你的 CONV 和 MATMUL 在哪里？阅读代码来解开这个谜团。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Tinybox- offline AI device 120B parameters&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47470773"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://tinygrad.org/#tinybox'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>专业视频编辑，直接在浏览器中使用 WebGPU 和 WASM</title>
+      <link>https://tooscut.app/</link>
+      <description>&lt;p&gt;专业视频编辑，就在您的浏览器中强大的 NLE 编辑器，具有 GPU 合成、关键帧动画和实时预览功能。关键帧动画使用贝塞尔缓动曲线对任何属性进行动画处理。您的媒体通过文件系统访问 API 保留在本地 — 任何内容都不会离开您的计算机。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Professional video editing, right in the browser with WebGPU and WASM&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47471601"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://tooscut.app/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 16 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ekropotin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;IDK，即使按照当前的组件价格，我觉得它的价格也太高了。&lt;p&gt;我几乎确信可以在 9k 预算内定制一台像他们的 red v2 一样强大的机器。并一路上享受很多乐趣。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;operatingthetan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们是否已经到了 2x 9070XT 成为可行的 LLM 平台的地步了？  （我知道这有 4 个，只是我自己想知道）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bastawhiz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Red v2 无法使用 120b 参数模型做任何事情。我刚刚完成了双 a100 ai homelab 的构建（80gb vram 与 nvlink 相结合）。否则类似的统计数据。 120b 只适合非常重的量化，根据我的经验，足以使模型精神分裂。而且没有 kv 的空间，所以你会 OOM 大约 4k 的上下文。&lt;p&gt;我现在正在运行一个 70b 模型，这没关系，但它仍然相当紧张。我的 vram 比红色 v2 多了 16gb。&lt;p&gt;我也很困惑为什么这是 12U。我的整个装备是 4u。&lt;p&gt;绿色 v2 具有更好的 GPU。但对于 65,000 美元，我希望有更好的 CPU 和 256GB 的 RAM。 Threadripper 7000 不会让你破产。&lt;p&gt;我很高兴这个存在，但它......老实说相当令人困惑&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sudo_cowsay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我总是想知道这些昂贵的产品：公司是在订购后生产还是提前生产？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;operatingthetan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;产品之间的增量价格上涨很有趣。&lt;p&gt;12,000 美元、65,000 美元、10,000,000 美元。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mayukh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;今天最有效的约 5000 美元设置是什么？对人们实际跑步的内容感兴趣。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwatdem12311:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最后，一台应该能够以不错的性能运行《怪物猎人：荒野》的计算机。&lt;p&gt;但说实话，12k 有点过分了 - 什么样的人会花 6.5 万美元甚至 1000 万美元（lmao WTAF）买这样的精品。  我不认为这些东西会出现在数据中心（很高兴得到纠正），而且它们太贵了（而且可能太热），不能放在家里甚至办公室的“壁橱”里。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;droidjj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;将其添加到我中奖时要购买的〜精美〜设计的物品清单中。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ivraatiems:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;具有讽刺意味的是，这个网站读起来完全不是人工智能生成的，它的设计方式和写作语气非常人性化。&lt;p&gt;尽管如此，这是一个伟大的想法，我希望这个想法能够成功。我认为有一个很好的论点，即人工智能的未来在于为每个人提供本地训练的模型，而不是依赖于大公司自己的模型。&lt;p&gt;一个想法：能够方便地将其连接到 240v 电路上会很好。对于许多人来说，必须找到两个不同的 120v 电路来插入它是一件痛苦的事情。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jauntywundrkind:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;今天，在看到这篇反对民主的帖子并引用了令人毛骨悚然的 M*ncius M*ldbug 的话后，我对与 geohot 相关的任何事情的兴趣都急剧下降：&lt;i&gt;民主是一种责任。&lt;/i&gt; &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47469543"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47469543&lt;/a&gt; &lt;a href="https:&amp;#x2F;&amp;#x2F;geohot.github.io&amp;#x2F;&amp;#x2F;博客&amp;#x2F;jekyll&amp;#x2F;更新&amp;#x2F;2026&amp;#x2F;03&amp;#x2F;21&amp;#x2F;democracy-liability.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;geohot.github.io&amp;#x2F;&amp;#x2F;blog&amp;#x2F;jekyll&amp;#x2F;update&amp;#x2F;2026&amp;#x2F;03&amp;#x2F;21&amp;#x2F;demo...&lt;/a&gt;&lt;p&gt;那里有很多有意义的东西&amp;#x2F;我认为需要考虑。但在我看来，很多事情似乎都是出乎意料的，其中没有任何联系。感觉可能是群组内的消息，我不明白。我不清楚这是如何反对民主的，而且令人反感。我都认为我们必须应对世界的现状，这篇文章强烈地涉及这个领域，但让恐惧成为主导情绪是保守主义的主要定义之一，在这里用它来吓唬我们听起来很糟糕。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;comrade1234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴您拥有双电源型号。它说可机架安装或独立式。这是否意味着有两种外形尺寸？ 6.5 万美元超出了我们现在的承受能力，但我们最终肯定会在市场上寻找可以在自己的托管中运行的东西。&lt;p&gt;这很有趣......我们现在在我们的服务中使用 deepseek 功能，并且根据我们的客户类型，我们认为他们会完全反对将数据发送给第三方。我们认为我们必须在本地完成所有事情。但他们似乎对几乎免费的 deepseek 没问题。少数仍然担心隐私的客户可能无法证明如此高的价格是合理的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;orliesaurus:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想知道这现在是否是首页，因为另一个微小的（名称相似）视频在网上疯传……事实证明，这不是这篇文章中链接的tinygrad的实际产品[1]&lt;p&gt;[1]&lt;a href="https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;ShriKaranHanda&amp;#x2F;状态&amp;#x2F;2035284883384553953" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;x.com&amp;#x2F;ShriKaranHanda&amp;#x2F;状态&amp;#x2F;2035284883384553953&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vessenes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;exabox很有趣。我想知道顾客是谁；观看 Vera Rubin 的发布后，我无法想象现在就决定要与 NVIDIA 竞争超大规模业务。也许它的目标是注重价值的买家？对于（相对）资金短缺的机器学习初创公司来说，也许这是明智的选择；事实上，我刚刚检查了价格，看起来 Vera Rubin 的价格是同等数量的 GPU RAM 的一半。我确信互连不会像 NV 那样好。&lt;p&gt;我不知道谁会买这个。也许你认为维拉·鲁宾已经退役三年了？但是 NV 船，伙计，他们正在运输。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vlovich123:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;考虑到乔治因 AMD 不值得合作而举手的著名说法，在 AMD GPU 上看到这种情况真是令人惊讶。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;heinternets:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;exabox -&lt;p&gt;720x RDNA5 AT0 XL 
-25,920 GB 显存
-23,040 GB 系统 RAM&lt;p&gt;~ 1000 万美元&lt;p&gt;这里的目标市场是谁？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wongarsu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;听起来像是坚固的预制件，具有平衡良好的组件和漂亮的外壳&lt;p&gt;无论如何都不是革命性的，但很好。除非我在这里遗漏了什么？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://tinygrad.org/#tinybox</guid>
-      <pubDate>Sat, 21 Mar 2026 20:08:37 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47470773</comments>
+&lt;p&gt;&lt;strong&gt;Top 18 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;caijia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对无头故事很好奇。 “视频编辑界的Photopea”比较是恰当的——Photopea 真正的护城河最终是 API 和编程访问，而不仅仅是浏览器 UI。公司将其嵌入到自动化图像处理工作流程中。&lt;p&gt;对于浏览器本机 NLE，杀手级功能可能不是时间线 UI - 它可能会将 WGPU 渲染管道公开为其他工具可以调用的 API。想象一下 CI 管道无需服务器上的 FFmpeg 即可渲染视频资源。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cerrO:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;用户界面非常好。谢谢你，欧普。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cerrO:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与 Omni 相比，UI 非常好。谢谢。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Richard_Jiang:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这确实是一个新项目，如果我需要专业的视频编辑，我会尝试。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;skiing_crawling:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果它可以使用托管在 GPU 上的服务器，那就太棒了。我有一个多 GPU 服务器，如果能够在我的桌子或沙发上编辑视频，而不用那么费力地旋转我的笔记本电脑，那就太棒了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TechSquidTV:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢这个承诺，但是山很陡，我在这里看不到太多交付的东西。非常有希望，但我宁愿看到这种事情的推出远远超出目前的水平。这似乎是一个很好的基础，现在让我们再次看看它是否有文本支持、动画、过渡、过滤器等。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bitwize:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它的功能与 Adob​​e Premiere 和 Final Cut Pro 相同吗？如果不是，那就不专​​业。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xnx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这与 &lt;a href="https:&amp;#x2F;&amp;#x2F;omniclip.app&amp;#x2F;" 相比如何rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;omniclip.app&amp;#x2F;&lt;/a&gt; ？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Retr0id:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在 Firefox 中尝试过，它运行了几分钟，然后导致整个浏览器崩溃。不过，这绝对是 Firefox 和 GPU 驱动程序的错误。我迫不及待地希望 WebGPU 浏览器平台支持变得更加成熟，因为它非常棒（尽管安全隐患确实让我感到紧张）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;skyberrys:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这看起来很酷！我稍后会从我的电脑上查看它，我猜它在移动设备上使用起来不太容易。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bstsb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来不错！在 Firefox、M4 Pro 上出现红色&amp;#x2F;倒置视频闪烁。不过，可能是画布防指纹的问题，不确定其根本原因&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SlavikCA:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很棒的项目！&lt;p&gt;有类似的图像编辑项目吗？&lt;p&gt;只是基本功能：&lt;p&gt;- 裁剪&lt;p&gt;- 旋转&lt;p&gt;- 亮度和亮度对比&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Jayakumark:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很棒的项目，但非商业许可，让我不敢靠近它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;xrd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我一直在使用 kdenlive，它具有开源视频编辑器的功能。我不知道 kdenlive 是否支持共享资产和项目，但这感觉像是这个项目可以提供并超出预期的东西。这在路线图上吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Jaxkr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很棒的项目。上次有人很好地实现了这个想法，他们就被微软收购了。此后，Clipchamp 就变得更加混乱，让他们面临颠覆的时机已经成熟。车轮继续转动……&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bensyverson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;真的很酷！它可能无法取代专业编辑器的专用 NLE，但我喜欢它是一个功能齐全的 NLE，您可以将其放入处理视频的现有 Web 应用程序中。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;thefourthchime:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太酷了！但我做了一个测试视频，并在 Safari 上播放它，视频播放非常非常不稳定（m2 air）。这是一个已知问题吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mohebifar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;由 WGPU、WASM、WebGPU、Rust 和 Tanstack Start 提供支持的免费开源 NLE 视频编辑器&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://tooscut.app/</guid>
+      <pubDate>Sat, 21 Mar 2026 21:27:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47471601</comments>
     </item>
     <item>
-      <title>不要把儿童保护变成互联网访问控制</title>
-      <link>https://news.dyne.org/child-protection-is-not-access-control/</link>
-      <description>&lt;p&gt;当年龄保证深入到操作系统中时，这种转变变得更加明显。它混淆了内容审核和监护。答案涉及一家从你的数据中获利的公司编写收集更多数据的法律。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Do Not Turn Child Protection into Internet Access Control&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47470991"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.dyne.org/child-protection-is-not-access-control/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>卧式冰箱</title>
+      <link>https://mtbest.net/chest-fridge/</link>
+      <description>&lt;p&gt;我的卧式冰箱（Vestfrost冰柜变成了冰箱）的能耗约为0。有人关心了解什么吗？使用 CHiQ 冷冻机的另一个好处是减少峰值电力需求。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Chest Fridge&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47473279"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://mtbest.net/chest-fridge/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zeroq:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与冰箱相比，冰柜更重要。访问频率降低，需要做更多工作才能恢复临时状态。我从来没有想过这个问题，但当我最近了解到它时，我真的很惊讶为什么它没有更受欢迎。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anjel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;现代冰箱是为浏览而设计的。随着时间的推移，冰箱可以为人们节省大量卡路里&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;没有。&lt;p&gt;抽屉。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mememememememo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么？&lt;p&gt;a：空间。&lt;p&gt;立式冰箱冰柜节省占地面积。&lt;p&gt;卧式冰柜每年使用多少租金:)&lt;p&gt;编造 10k 为 1000 平方英尺&lt;p&gt;每平方英尺 10&lt;p&gt;所以说每年租金为 40 美元。我想还不错&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Hextinium:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这让我想起了技术连接冰箱咆哮视频。类似的论点无处不在，用热像仪观察立式冰箱的冷量倾倒效果非常疯狂。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;youtube.com&amp;#x2F;watch?v=CGAhWgkKlHI" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;youtube.com&amp;#x2F;watch?v=CGAhWgkKlHI&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tempestn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个很酷的主意，对于辅助冰箱来说可能很棒。不过，对于主冰箱来说，通过垂直门直接访问所有物品要方便得多。我喜欢能源效率，但我愿意每年为这种便利支付 300 千瓦时（这里大约 40 美元），更不用说空间效率了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ashenke:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因为我厨房里的垂直空间比水平空间更大。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gnabgib:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;(2009)&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://mtbest.net/chest-fridge/</guid>
+      <pubDate>Sun, 22 Mar 2026 01:02:10 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47473279</comments>
+    </item>
+    <item>
+      <title>为什么手工艺爱好者正在失去他们的手艺</title>
+      <link>https://writings.hongminhee.org/2026/03/craft-alienation-llm/</link>
+      <description>&lt;p&gt;马克思所说的与行为分离的意思就是这样。他们看重的不是产出。但这种回答回避了实际的问题：为什么热爱编码的人会被排斥在编码之外。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Why craft-lovers are losing their craft&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47473178"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://writings.hongminhee.org/2026/03/craft-alienation-llm/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;borissk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;大型科技公司将成为互联网访问控制的大赢家之一。这将为他们提供一种更可靠的方式将用户帐户与真人联系起来——这种联系可以通过多种方式货币化。各种政治政权都可以利用此类法规来加强对人民的控制。而输家将是互联网用户和小公司。&lt;p&gt;不幸的是，IAC 即将来到世界上大多数国家，无论 Hacker News 的观众多么讨厌它......&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;HardwareLust:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这项练习的全部目的是控制。 “儿童保护”这只是一个骗局，目的是让傻瓜上船。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bilekas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为时已晚，而且与儿童无关，而只是更深层次的数据收集和监视形式。&lt;p&gt;令我极为悲伤和担忧的是，最近几代人根本不再了解或期望在线隐私。永远不会有更多针对所有这些奥威尔式行为的斗争。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wewewedxfgdf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;你一定是疯了，谁会反对政府“保护儿童”呢？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;squarefoot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从一开始就计划实施访问控制和普遍监视；儿童保护是杠杆。另外，我不指望反复隐藏某些文件内容的人会关心孩子。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;baal80spam:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从来都不是关于孩子的...&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cs02rm0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一直都是互联网访问控制，没有儿童保护。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmcgough:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;可悲的是这有多么有效。宗教团体几年前就发现反色情团体一事无成，但如果你成立一个反人口贩卖团体，你就可以限制色情内容的访问。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jameskilton:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是诀窍，它始终与控制有关。处于这种地位的人没有人真正关心孩子。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jas-:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不然这个物种还能怎样被奴役呢？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.dyne.org/child-protection-is-not-access-control/</guid>
-      <pubDate>Sat, 21 Mar 2026 20:32:20 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47470991</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eadwu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Craft 关心的是 y = mx + b 中的 x，而所谓的“它是达到目的的手段”则关注的是 y = mx + b 中的 x。关心自己。&lt;p&gt;“工艺爱好者”与“工艺爱好者”的区别和“实干家”是一个人以更合适的抽象来运作（更符合资本主义的价值观）。&lt;p&gt;你可以说“实干家”只是“工艺爱好者”就其本身而言 - 它们之间几乎没有区别 - 这只是重申从二进制语言到高级语言的变化。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;turlockmike:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一种工艺是自动化的，一种新的工艺才刚刚开始。&lt;p&gt;构建人工智能代理真的很有趣，让它们可靠、适应性强、效率高的问题实际上非常具有挑战性，我在尝试解决它的过程中获得了很多乐趣。&lt;p&gt;对我来说，这很像异星工厂或我个人最喜欢的戴森球程序，一开始你需要手动完成所有事情，然后你会自动化，然后你会自动化自动化。&lt;p&gt;这是人类历史上第一次，我们可以使用计算机实现智能自动化，但仅仅因为我们可以实现自动化，并不意味着所有好的自动化都是好的，我们需要能够弄清楚如何实现自动化、可靠地扩展它、部署它、维护它的工程师。&lt;p&gt;是的，最终我们也将实现自动化。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bananamogul:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我猜 HN 上有一个配额，每天都有一些开发人员不得不抱怨人工智能如何破坏了过去的方式。&lt;p&gt;这篇文章与之前的几十篇文章有何不同？&lt;p&gt;同样是咬牙切齿，只是每次都有不同的类比。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wewewedxfgdf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“这是我的手艺”开发人员似乎经常贬低“这是达到目的的手段”这一说法。人们不擅长编程。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pclowes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我做手工工具木工是一种爱好。除了粗略的尺寸外，所有最终的切割、刨削、榫眼、雕刻、燕尾榫等都是手工完成的。有时使用超过 100 年历史的工具，并不是出于对过去的迷恋，它们只是比今天的手动工具更好、更便宜。&lt;p&gt;这需要很长时间，但我想加工木材并培养实际技能。我不想只是将木材推入一系列锯子、打磨机、夹具和其他机器中。它也让我更擅长用电动工具建造“我们现在需要这个”类型的东西（甲板、橱柜等）。我更加精确、敏感和注重细节。&lt;p&gt;我希望并感觉编码和法学硕士有类似的东西。一种重新利用来之不易的敏感性并恢复一些禅宗方面的方法。我仍在弄清楚这一点，其中一部分很累，但老实说，其中很多也让编程变得更有趣。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RcouF1uZ4gsC:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不认为这种分裂是根本性的或永久性的。&lt;p&gt;看看摄影。&lt;p&gt;你既有傻瓜摄影师，也有将摄影作为一门手艺的人。&lt;p&gt;我在法学硕士身上也看到了这一点。你确实有工艺人员在找出完美的一次性提示或创建一个协调一群代理的系统中找到乐趣。&lt;p&gt;这也是工艺，但就像摄影一样，使用更强大的工具进行工艺。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RagnarD:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;解决方案之一：不要只是为了工作而编程。如果它与工作无关——管理层可以决定你的工作方式——你可以做任何你想要的事情，如果你想要的是继续编写软件而不是将你的大脑外包给人工智能，那么绝对这样做。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;charcircuit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;市场正在惩罚他们。&lt;p&gt;我不喜欢这个框架。市场会惩罚人们去看电影或滑雪吗？一个人赚钱最有效的方式和一个人的爱好通常不会重叠，当他们将一项爱好变成一份工作时，往往会导致一个人越来越讨厌这个爱好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gibbitz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在过去的几年里，我一直在感受这种工艺的一面。我的专业是美术，我是一名自学的 UI 开发人员。对我来说，这是一种让代码按照设计师的设想工作，并与创意人员合作创建引人入胜且独特的界面的技巧。缓慢而坚定地“标准化”通过 bootstrap 和 Material UI 侵蚀了这一点，界面失去了创造力的火花。这是我将网站视为产品的开始。法学硕士只是棺材上的钉子。自从 Claude Code 和 Cursor 等工具进入市场后，我就不再在空闲时间做技术了。我现在不喜欢它。我只是在工作中按照业务指示（和监控）使用法学硕士，然后在 5:00 及时下班。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jazz9k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“让它继续”与我共事的人通常不理解许多底层代码，而且“工艺”也很困难。人们总是需要修复它。&lt;p&gt;手艺人不会失去任何东西。如果说有什么不同的话，那就是它们更有价值，因为它们需要修复人工智能编写的垃圾软件，并“让它继续运行”。开发商。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://writings.hongminhee.org/2026/03/craft-alienation-llm/</guid>
+      <pubDate>Sun, 22 Mar 2026 00:46:32 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47473178</comments>
     </item>
     <item>
-      <title>Show HN：Termcraft – Rust 中的终端优先 2D 沙盒生存</title>
-      <link>https://github.com/pagel-s/termcraft</link>
-      <description>&lt;p&gt;完整精彩视频：termcraft。 com/pagel-s/termcraft。 com/pagel-s/termcraft。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Termcraft – terminal-first 2D sandbox survival in Rust&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47469949"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/pagel-s/termcraft'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>JavaScript 膨胀的三大支柱</title>
+      <link>https://43081j.com/2026/03/three-pillars-of-javascript-bloat</link>
+      <description>&lt;p&gt;跨领域值 最后，我们有跨领域值。为什么这是一个问题 所有这些对于一小部分人来说都是有意义的。我们不需要支持 ES5 之前的环境，我们不需要跨框架传递值，并且我们会卸载破坏环境的软件包。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Three Pillars of JavaScript Bloat&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47473718"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://43081j.com/2026/03/three-pillars-of-javascript-bloat'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;apitman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好的。这是终端优先还是仅终端？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/pagel-s/termcraft</guid>
-      <pubDate>Sat, 21 Mar 2026 18:42:38 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47469949</comments>
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;skydhash:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;写得太棒了！&lt;p&gt;我们看到 rust 很高兴地沿着同样的道路走下去，尤其是在微型封装方面。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;turtleyacht:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;扩展这个项目将会很有趣，让选择加入的人提交“差异遥测”，跟踪某些依赖项需要如何扩展、调整或修补；这些特殊情况将被纳入未来的功能和新的回归测试中。&lt;p&gt;有一天，软件包可能只是“实用形状的洞”。其中即时填写和发布。包的采用可能来自 80&amp;#x2F;20 个代理 [1] 探索这些边缘（尽管安全）。&lt;p&gt;但是，只要新包根据人类作者的突发奇想继承依赖关系，“投票”就可以了。循环尚未更换。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47472694"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47472694&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://43081j.com/2026/03/three-pillars-of-javascript-bloat</guid>
+      <pubDate>Sun, 22 Mar 2026 02:04:31 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47473718</comments>
     </item>
     <item>
-      <title>Common Lisp 开发工具</title>
-      <link>https://www.creativetension.co/posts/common-lisp-development-tooling</link>
-      <description>&lt;p&gt;Common Lisp 的开发模型在一些重要方面有所不同。 Common Lisp 遵循这个一般模式，但几乎每一层都有重要的差异。对于 Common Lisp 开发，.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Common Lisp Development Tooling&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47470734"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.creativetension.co/posts/common-lisp-development-tooling'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Floci – 免费、开源的本地 AWS 模拟器</title>
+      <link>https://github.com/hectorvent/floci</link>
+      <description>&lt;p&gt;只需 docker 组合即可。建造（）; # Python (boto3) 导入 boto3 client = boto3.变量默认值 说明 QUARKUS_HTTP_PORT 4566 HTTP 端口 FLOCI_DEFAULT_REGION us-east-1 默认 AWS 区域 FLOCI_DEFAULT_ACCOUNT_ID 000000000000 默认 AWS 账户 ID FLOCI_STORAGE_MODE 混合内存·持久·混合·wal FLOCI_STORAGE_PERSISTENT_PATH。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Floci – A free, open-source local AWS emulator&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47471801"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/hectorvent/floci'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Keyframe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这读起来就像人工智能生成的文本，很可能就是这样。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.creativetension.co/posts/common-lisp-development-tooling</guid>
-      <pubDate>Sat, 21 Mar 2026 20:04:08 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47470734</comments>
+&lt;p&gt;&lt;strong&gt;Top 8 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;caijia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;氛围编码问题很有趣，但我认为此类项目的真正风险不在于代码的编写方式，而在于测试覆盖率。 LocalStack 替代品的生死取决于 API 兼容性。如果 S3 预签名 URL 行为略有不同，您的集成测试会在本地通过，但会在生产中中断。&lt;p&gt;在使用此功能之前我希望看到什么：显示涵盖哪些 API 操作的兼容性矩阵，最好根据每个服务的官方 AWS SDK 测试套件进行验证。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SilentM68:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果我想学习教程或书籍但买不起 AWS，这个工具可以用作 AWS 功能的替代品吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;banditelol:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;酷，我以前尝试过 localstack，迫不及待地想尝试一下&lt;p&gt;无论如何，有谁知道除了 gcp 之外是否有类似的东西？到目前为止 &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;goccy&amp;#x2F;bigquery-emulator" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;goccy&amp;#x2F;bigquery-emulator&lt;/a&gt; 在模拟 bigquery 行为方面帮助了我很多，但我找不到适用于整个 gcp 环境的模拟器。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;operator_nil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这正是我一直在等待的。&lt;p&gt;虽然我喜欢 localstack 并感谢他们所做的事情，但我始终认为开放社区驱动的解决方案会更合适，并且为 AWS 工程师提供回馈打开了很多大门。我确信这样做符合他们的最大利益（特别是因为他们的许多受欢迎的产品都有本地版本）&lt;p&gt;随着人工智能采用率的不断增加，这对我来说是理所当然的：本地优先的集成测试是必须的，有能力这样做的团队将领先于其他人&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cebert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AWS、GCP 和 Azure 等云提供商应该提供本地模拟器进行开发。这将鼓励开发人员更多地利用他们的服务。&lt;p&gt;我目前使用多个 AWS 无服务器堆栈，这些堆栈对本地集成测试具有挑战性，甚至是不可能的。虽然 Localstack 提供了一个不错的解决方案，但 AWS 似乎应该提供一项服务来增强开发人员体验。他们也最有能力保持最新状态。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mhitza:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这个项目如果成功的话将会很滑稽。在罗马尼亚语中，这个名字的意思是“一小堆头发”，但非正式地它仅用作阴毛的同义词。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kay_o:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这一切都是vibe编码的吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;QGQBGdeZREunxLe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; LocalStack 的社区版将于 2026 年 3 月日落——需要身份验证令牌、放弃 CI 支持并冻结安全更新。 Floci 是无附加条件的替代方案。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/hectorvent/floci</guid>
+      <pubDate>Sat, 21 Mar 2026 21:49:15 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47471801</comments>
     </item>
     <item>
-      <title>没有证据表明大麻有助于焦虑、抑郁或创伤后应激障碍</title>
-      <link>https://www.sciencedaily.com/releases/2026/03/260319044656.htm</link>
-      <description>&lt;p&gt;这些包括大麻使用障碍（也称为大麻依赖）、自闭症、失眠、抽动症或图雷特氏综合症。以大麻为基础的治疗方法显示出一些帮助大麻依赖者的潜力。 “然而，当药用大麻被用来治疗患有可卡因使用障碍的人时，它增加了他们的渴望。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; No evidence cannabis helps anxiety, depression, or PTSD&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47470750"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.sciencedaily.com/releases/2026/03/260319044656.htm'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>人工智能对游戏开发工作的影响。开放工作危机</title>
+      <link>https://darkounity.com/blog-post?id=the-impact-of-ai-on-game-dev-jobs-open-to-work-crisis--1774128585922</link>
+      <guid isPermaLink="true">https://darkounity.com/blog-post?id=the-impact-of-ai-on-game-dev-jobs-open-to-work-crisis--1774128585922</guid>
+      <pubDate>Sat, 21 Mar 2026 22:03:05 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47471943</comments>
+    </item>
+    <item>
+      <title>福特如何在巴西烧掉 $12B (2021)</title>
+      <link>https://www.reuters.com/business/autos-transportation/how-ford-burned-12-billion-brazil-2021-05-20/</link>
+      <guid isPermaLink="true">https://www.reuters.com/business/autos-transportation/how-ford-burned-12-billion-brazil-2021-05-20/</guid>
+      <pubDate>Sat, 21 Mar 2026 14:55:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47467623</comments>
+    </item>
+    <item>
+      <title>Show HN：Atomic – 自托管、语义连接的个人知识库</title>
+      <link>https://github.com/kenforthewin/atomic</link>
+      <description>&lt;p&gt;Atomic 个人知识库，可将 Markdown 笔记转化为语义连接、人工智能增强的知识图谱。独立服务器Cargo run -patomic-server -- --data-dir。 Atomic 自动发现可用模型。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Atomic – Self-hosted, semantically-connected personal knowledge base&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47470433"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/kenforthewin/atomic'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;haghding:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我和我的四分之一砖不敢苟同&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;monster_truck:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;《柳叶刀》不是发表 Vax 自闭症和羟氯喹研究的同一期刊吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wizardforhire:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;读到标题后我的第一反应是：不，这就是 mdma 的用途……&lt;p&gt;顺便说一下，
-我身上的词源学书呆子已经被当前的文章嘲笑了，该文章在过去 19 小时内一直位于首页[1]，该文章在第一句中方便地链接到了该术语的起源！ [2]…@suprisetalk 也在文章描述中链接到！…&lt;p&gt;所以现在我想知道为什么 mdma 的街道名称为 molly…如果它们可能没有关系？&lt;p&gt;正如 molly（又名 mdma）所得到的名称，因为它专门用于预防这些疾病…&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;unsung.aresluna.org&amp;#x2F;molly-guard-in-reverse&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;unsung.aresluna.org&amp;#x2F;molly-guard-in-reverse&amp;#x2F;&lt;/a&gt;&lt;p&gt;[2] &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wiktionary.org&amp;#x2F;wiki&amp;#x2F;molly-guard" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wiktionary.org&amp;#x2F;wiki&amp;#x2F;molly-guard&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mihaaly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;但它会导致记忆丧失、运动协调受损和对食物的渴望。还有记忆力减退。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Aurornis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是抑郁症治疗中很难沟通的话题。人们很容易将暂时提振情绪或镇静神经的物质误认为是针对潜在疾病的有效治疗方法。&lt;p&gt;在阿片类药物处方出现强烈反弹之前的一段时间内，一些边缘精神病学家建议使用较弱的阿片类药物作为治疗难治性抑郁症的辅助治疗。现在很难理解，但几十年前阿片类药物的处方更为随意。我记得在一些讨论中，其中一个人说他们看到了良好的初步结果，但效果逐渐消失，当阿片类药物不再有帮助时，很难让患者戒掉阿片类药物。现在对任何人来说都不奇怪，但请记住，有一段时间，许多人似乎忘记了它们的成瘾特性。&lt;p&gt;我觉得我在一些转向使用 THC 来“治疗”的朋友身上看到了这种情况的较弱版本。他们的抑郁症：最初情绪高涨，随后产生依赖性，最终进入一个漫长的时期，他们知道这没有帮助，但他们不想停止，因为停止时他们感觉更糟。数十年来声称 THC 基本上不存在依赖性问题的说法并没有帮助这一点。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sublinear:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果有的话，我认为大多数人&lt;i&gt;发现&lt;/i&gt;大麻带来的焦虑。&lt;p&gt;遗憾的是，第一次经历压力也恰逢人生的那个阶段，所以争论永远不会结束。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bitxbitxbitcoin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这项荟萃研究引用的研究都面临着同样的问题：他们根本没有研究大麻植物，即使研究了，也不是真正的消费者实际消费的化学变体（化学成分）——因为大麻的持续非法性导致了大麻采购问题。州，大学科学家不能只是走进药房购买大麻，然后给测试对象服用。&lt;p&gt;这对你来说是禁酒令后的事。&lt;p&gt;据我所知，所有研究都使用分离物 - 并且不一定结合使用。&lt;p&gt;例如，这项荟萃研究中包含的 6 项焦虑研究中没有一个同时使用 THC 和 CBD。&lt;p&gt;标题可以改为：没有证据大麻素分离物帮助焦虑、抑郁或创伤后应激障碍。&lt;p&gt;大麻倡导者是第一个提到随从效应的人。另一方面，大麻禁令主义者最喜欢引用不完整的科学。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;MagicMoonlight:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;明显地。这始终只是一个骗局，以便人们可以吸毒。&lt;p&gt;任何了解大麻成瘾者的人都知道他们最终会变得焦虑和愚蠢。事实上，当他们经常使用它时，它似乎会降低他们的智商。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jrecursive:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;但它会让你兴奋&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;erelong:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;仍然可以接受它是合法的，但这并不意味着它是有益的&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;int32_64:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴看到科学证实了那些不小心摄入过多食物的人所理解的事实。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.sciencedaily.com/releases/2026/03/260319044656.htm</guid>
-      <pubDate>Sat, 21 Mar 2026 20:05:58 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47470750</comments>
+&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andreygrehov:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;干得好，但您的 macOS 版本无法打开。您需要通过 Apple 开发者计划对应用程序进行签名。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;redm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太酷了！&lt;p&gt;阻碍我使用 AI 存储库和代理的并不是在本地运行它。其缺乏细粒度的控制。我什至不确定我想要什么。我当然不想批准每一个请求，但人工智能可以未经检查地访问大量个人数据的想法令人担忧。&lt;p&gt;我认为也许需要一个只关注安全性、了解您个人偏好的代理。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ukuina:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来像是 LogSeq&amp;#x2F;Roam&amp;#x2F;Obsidian 的替代品？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/kenforthewin/atomic</guid>
+      <pubDate>Sat, 21 Mar 2026 19:31:39 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47470433</comments>
     </item>
     <item>
-      <title>隐藏 macOS Tahoe 的菜单图标</title>
-      <link>https://512pixels.net/2026/03/hide-macos-tahoes-menu-icons-with-this-one-simple-trick/</link>
-      <description>&lt;p&gt;我真的不喜欢苹果选择用图标来扰乱 macOS Tahoe 的菜单。重新启动后，您的应用程序将尊重此更改。我真的认为苹果应该在 macOS 27 中回滚这一更改，或者为我们这些发现它们分散注意力的人提供适当的设置来禁用这些图标。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Hide macOS Tahoe's Menu Icons&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47469331"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://512pixels.net/2026/03/hide-macos-tahoes-menu-icons-with-this-one-simple-trick/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;john_alan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很好，现在只需要同样的窗口角落和可笑的 Finder 覆盖。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://512pixels.net/2026/03/hide-macos-tahoes-menu-icons-with-this-one-simple-trick/</guid>
-      <pubDate>Sat, 21 Mar 2026 17:46:00 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47469331</comments>
-    </item>
-    <item>
-      <title>不需要分号</title>
-      <link>https://terts.dev/blog/no-semicolons-needed/</link>
-      <description>&lt;p&gt;这听起来很简单，但他们是如何实现的呢？这篇文章就是这样的探索。 Python 假定一行是一条语句。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; No Semicolons Needed&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47470200"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://terts.dev/blog/no-semicolons-needed/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://terts.dev/blog/no-semicolons-needed/</guid>
-      <pubDate>Sat, 21 Mar 2026 19:07:20 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47470200</comments>
-    </item>
-    <item>
-      <title>夏威夷20年来最严重洪水威胁大坝并促使疏散</title>
-      <link>https://www.nbcnews.com/weather/floods/hawaii-worst-flooding-in-20-years-rcna264573</link>
-      <description>&lt;p&gt;官员们表示，预计周末还会有更多降雨。官员称，已有200多人获救。他说，大约10人因体温过低被送往医院。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Hawaii's worst flooding in 20 years threatens dam, prompts evacuations&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47470658"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.nbcnews.com/weather/floods/hawaii-worst-flooding-in-20-years-rcna264573'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;longislandguido:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是我的问题还是夏威夷的基础设施真的很糟糕并且正在崩溃？比大陆要多得多。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;huijzer:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;又是夏威夷？我希望对于非扎克伯格人来说这不会太糟糕&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tadfisher:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;上周我在欧胡岛，那里一天的降雨量达到了 10 英寸。我从来没有遇到过这样的情况：走出去就像打开淋浴一样。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;user2722:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看到北岸 5,500 人被迫离开家园，百年历史的瓦西阿瓦大坝威胁到他们的生计，这确实是一场悲剧。人们只能希望及时收到疏散命令，以拯救最珍贵的东西。
-撇开情绪不谈，这是自然审计的教科书案例。瓦西阿瓦大坝是一项已有 120 年历史的搁浅资产，本应在几十年前就清算；相反，它被作为“高危险”记录在案。而州政府和都乐食品公司则就 2000 万美元的维修费用发生争执。格林州长 10 亿美元的损失估计只是市场最终从 20 年的延期维护和错误定价的风险中吸取的教训。那些生活在下游、没有私人破产保险的人实际上正在做空重力，“科纳低点”也随之而来。刚刚打电话给他们的保证金。如果大坝溃决，那并不是一场灾难，而是对过时灌溉系统的暴力、迟来的重建。大自然是唯一不接受和解的监管者。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.nbcnews.com/weather/floods/hawaii-worst-flooding-in-20-years-rcna264573</guid>
-      <pubDate>Sat, 21 Mar 2026 19:55:23 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47470658</comments>
+      <title>SSH 证书和 Git 签名</title>
+      <link>https://codon.org.uk/~mjg59/blog/p/ssh-certificates-and-git-signing/</link>
+      <description>&lt;p&gt;如果您使用像 GitHub 这样的东西，您可以从与用户帐户关联的密钥集中提取该信息，但这意味着受损的 GitHub 帐户现在也是更改可信密钥集的一种方式，而且您上次审核密钥是什么时候以及您对每个可信密钥仍然 100% 在您的控制之下有多大把握。但你还需要其他东西。我建议你不要阅读 git 中执行此操作的代码，因为我自己也犯过这个错误，但它确实有效。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; SSH Certificates and Git Signing&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47471248"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://codon.org.uk/~mjg59/blog/p/ssh-certificates-and-git-signing/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://codon.org.uk/~mjg59/blog/p/ssh-certificates-and-git-signing/</guid>
+      <pubDate>Sat, 21 Mar 2026 20:56:16 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47471248</comments>
     </item>
   </channel>
 </rss>
