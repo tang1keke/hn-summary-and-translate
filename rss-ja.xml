@@ -6,265 +6,144 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 27 Mar 2026 21:47:11 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2026 02:37:17 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>macOS を一貫して (皮肉なことに) 悪者にする</title>
-      <link>https://lr0.org/blog/p/macos/</link>
-      <description>&lt;p&gt;0; static double swizzled_cornerRadius(id self, SEL _cmd) { return kDesiredCornerRadius; } static double swizzled_getCachedCornerRadius(id self, SEL _cmd) { return kDesiredCornerRadius; } static CGSize swizzled_topCornerSize(id self, SEL _cmd) { return CGSizeMake(kDesiredCornerRadius, kDesiredCornerRadius); } static CGSize swizzled_bottomCornerSize(id self, SEL _cmd) { return CGSizeMake(kDesiredCornerRadius, kDesiredCornerRadius); } __attribute__((constructor)) static void init(void) { // サードパーティの GUI アプリにのみ適用されます。 CLI ツール、デーモン、および Apple システム アプリをスキップします。 NSString *bid = [[NSBundle mainBundle] BundleIdentifier]; if (.plist ~/Library/LaunchAgents/com.DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Make macOS consistently bad (unironically)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47547009"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://lr0.org/blog/p/macos/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 22 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;varispeed:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は Sonoma を実行してきましたが、当面はその状態が続くでしょう。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gib444:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ウィンドウ管理では、i3 以外のものは明確にダウングレードです。&lt;p&gt;角が丸いのは、まったく奇妙です。ノートパソコンの筐体が物理的に丸いから!? (それでも、メニューバーは上部が四角形で、ベゼルは下部が四角形です...)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;diego_moita:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Windows はブロートウェアに対して多くの (当然の) ひどい非難を受けていますが、MacOS はそれほど悪くありません。 「特徴」アンインストールできないこと (例: Siri、Apple Music)、UI の恣意的な変更、...&lt;p&gt;確かに、「祝福」はあります。強制オンライン アカウント、テレメトリ、広告の数はまだ MacOS に届いていません。しかし、そこに着くまでどれくらい時間がかかるのだろうか。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zackmorris:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;言うまでもなく、アップグレード以来、WindowServer は 100% 以上の CPU を使用しているようです。また、一部のアプリではファイル保存ダイアログにファイル名を貼り付けることができません。また、Safari の URL フィールドも奇妙です。&lt;p&gt;私のコンピュータの動作が非常に遅かったため、システム環境設定のどこかで透過性を最小限に抑える必要がありました。すべてのアプリを独自のスペースで開くこともオフにしたと思います。そして、Finderの設定で何らかの方法でデスクトップ上のアイコンを非表示にしたので、非常に役に立ちました。他にも調査する価値のある小さな微調整が無数にあります。&lt;p&gt;App Tamer (所属はありません) も強くお勧めします。これにより、バックグラウンド アプリを 10% CPU などで刑務所に入れることができます。 WindowServer や kernel_task (これも 100% 以上の CPU で実行されることがよくあります) では役に立ちませんが、それは何かです。&lt;p&gt;Apple にはもうハンドルを握る人がいないと感じずにはいられません。ウィンドウを開いたり、アプリを切り替えたり、アプリケーション フォルダーに移動したりするのに数秒も待たなければならない場合は、何かがひどく間違っています。コンピュータは何十年もの間、本来の速度よりも何千倍も遅く動作し続けてきましたが、今では日常業務が困難になる段階に達しつつあります。&lt;p&gt;私は、AI によって他の OS を動作例として使用して完全なオペレーティング システムを構築できるようになるだろうと、慎重ながらも楽観的に考えています。そうすれば、最終的には、Apple、Microsoft、Google に再試行を強いる、より優れた代替手段を起動できるようになります。 Finder または File Explorer がネイティブのものに取って代わることがわかりました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;htx80nerd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;IT 業界の人々の半数は、ここにいる必要がありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;haunter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は通常、Linux と Windows (ほぼ半々) を使用していますが、これが、家に Mac が何台かあったし、今もあるにもかかわらず、フルタイムで Mac に切り替えることができなかった理由です。全画面表示の動作がおかしいです。ドックは常にすべてのウィンドウをオーバーレイする必要がありますか?そうでない場合、なぜデフォルトでドックが非表示にならないのでしょうか? 「はい」の場合、全画面表示は実際には「ドックをオーバーレイしない最大サイズのアプリ ウィンドウ」ですか?実際のところ、ドックのポイントは何でしょうか?もう 1 つは、ウィンドウを開く =&amp;#x2F;= アプリの動作です。  2 時間待っても、すべてのウィンドウを閉じたにもかかわらず、このアプリはまだバックグラウンドで実行されていますか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Octoth0rpe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;少しだけ皮肉を込めて言うと、最近の対話が多すぎて嫌いな点の 1 つは、意見がいかに激しいかということです。私は角が丸いのがあまり好きではなく、退化だと思います。それも…大丈夫です。それは、使えるか全く使えないかの違いではありません。そして今、このような態度があちこちで見られます。わずかな変化、わずかに理想的ではない動作、そして突然、製品は史上最悪のものになります。  一貫性のない丸い窓でも問題ありません。人々は、独断的なデザイン決定に対して、もう少し寛容になる必要があると思います。おそらくより悪いものではありますが、壊れることはありません。&lt;p&gt;ただし、スタート メニューの広告は火災で消滅する可能性があります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dmix:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私はベータ版から Tahoe を使用していますが、境界線に悩まされたことは一度もありません。&lt;p&gt;UI の一貫性については理解していますが、一度に大幅な変更を加えるのではなく、徐々に新しい UI に移行しても大丈夫です。これが 2 年後も依然として問題である場合は、彼らのコミットメントがより懸念されるでしょう。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;streetfighter64:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; MacOS システムの整合性 [保護] を無効にすると、脆弱性が生じる可能性があります&lt;p&gt;そうではありません。システムに root アクセス権を持つマルウェアが存在する場合は、すでにかなりひどい状態になっていると思います。特に、保存されているパスワードや個人ファイルをすべて読み取るのに root が必要ないことを考えると、&lt;a href="https:&amp;#x2F;&amp;#x2F;xkcd.com&amp;#x2F;1200&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;xkcd.com&amp;#x2F;1200&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hmokiguess:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は一貫した雰囲気を持たせるために、この &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;FelixKratz&amp;#x2F;JankyBorders" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;FelixKratz&amp;#x2F;JankyBorders&lt;/a&gt; を使用していますが、もっと丸くできればよかったのに&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jasonhemann:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この種のことに気づくのに十分な観察力を持った人々がいることが大好きです。警戒心のせいで平気で気づかずに守られている私たちの前衛です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nostromo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;macOS Tahoe で通知をクリアするのは、とんでもなく面倒です。  「液体ガラス」は、ボタンの反応が遅く、通知がクリアされるまでに少しの間ハングし、次の通知をクリアするためにカーソルを揺らさなければならない場合があります。  ばかばかしいほどイライラします。&lt;p&gt;それに、ミュージック (旧 iTunes) のアップデートがあまりにもひどいので、チーム全体がスティーブ ジョブズ風にドレスアップする必要があります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amarant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;隅のこのあいまいさは実際には MacOS によく反映されていると言わざるを得ません。&lt;p&gt;OS の最大の欠点がウィンドウの境界半径であるなら、あなたはかなりまともな OS を手に入れたということになります!&lt;p&gt;だからと言って、愛する Linux を離れることにはなりませんが、この大失敗全体は賞賛としか解釈できないと思います。&lt;p&gt;よく考えてみると、これは人々の仲裁とも考えられるかもしれません。自転車置き場になる傾向。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lucasay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私も錠剤のタブが気になります。しばらくすると、ほとんどの視覚的な変化は無視できますが、それらはどういうわけか、気が散ると同時に情報量が少なくなるように感じます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaway27448:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;オンラインで人々が喧嘩しているのを見て新鮮なことの 1 つは、自分が他人を狂わせるようなことなど気にしていないことに気づくことです。なんという祝福でしょう！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_jab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ビューポートの端に届かない丸い角と、新しいアプリを初めて開いたときの動作との間で、Mac の UI は、ほとんどのユーザーがウィンドウを画面全体に拡大せず、中央の半分のサイズのままにするという前提に基づいて最適化されているように感じられます。&lt;p&gt;実際にこれを行う人はいますか?特に、Web ブラウザや IDE のような高負荷のアプリケーションの場合、これは私にとって常に奇妙な仮定のように感じられました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dcrazy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;参考までに、この記事では、SIP は &amp;#x2F; への書き込みアクセスを制御しているだけであると誤って主張しています。それはそれ以上のことをします。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gnarlouse:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私のクロード コード プロジェクトの 1 つは、人々が AppleOS に関する好きなことや嫌いなことを投稿するソーシャル メディア プラットフォームである「theghostofsteve」になる予定でした。好き嫌いは「天才だよクソ」だろう。そして、おそらく、このプラットフォームは、ほとんどのユーザーが「クソだ」と思っていることを表面化するでしょう。&lt;p&gt;プラットフォームはメジャー バージョンとマイナー バージョンごとに集計され、macOS&amp;#x2F;iOS の現在のバージョンがスティーブを惨めに誇りに思うかどうかが全体的にわかります。&lt;p&gt;最終的に私は、名誉毀損と中止と中止の理由で、そして見つけたくなかったので、それに反対することに決めました。アウト。しかし、それは存在する必要がある。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;skrrtww:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これらのセレクターが SwiftUI でヒットするかどうかはわかりません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pram:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私はタホの外観のファンではありませんが（特に Apple Music がそこで起こったのはすごいことです）、そのほとんどは完全に無視でき、もう気にすることさえありません。タブを除いて。私は Sequoia と Tahoe のマシンを持っていますが、それに比べて Tahoe のタブは信じられないほど悪いです。この醜い錠剤の形のように。これが話題になるのはめったに聞きませんが、驚くほど醜く、あらゆる面で以前のデザインよりも劣っています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rafram:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;正直なところ、これは macOS 26 の気になる部分ではありません。私は窓を重ねたり、窓の角を測ったりすることに多くの時間を費やしません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;post-it:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;macOS 26 にアップグレードした後、角に問題があったとも言えませんし、違いに気づいたとも言えません。しかし、これは素晴らしいことです。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://lr0.org/blog/p/macos/</guid>
-      <pubDate>Fri, 27 Mar 2026 19:15:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47547009</comments>
-    </item>
-    <item>
-      <title>4 月 24 日までにオプトアウトしない場合、GitHub はプライベート リポジトリでトレーニングします</title>
-      <link>https://news.ycombinator.com/item?id=47548243</link>
-      <description>&lt;p&gt;(Google は Workspace でトレーニングしません、Github はビジネス顧客でトレーニングしません、など) (Google は Workspace でトレーニングしません、Github はビジネス顧客でトレーニングしません、など) これが真実であり続けるというビジネス ユーザーの信念は、冷静で冷静なビジネスベースの意思決定よりも希望に基づいています。 The blog post covers more details but we do not train on private repo data at rest, just interaction data with Copilot. The blog post covers more details but we do not train on private repo data at rest, just interaction data with Copilot.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; If you don't opt out by Apr 24 GitHub will train on your private repos&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47548243"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://news.ycombinator.com/item?id=47548243'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 29 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rrgok:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;すべてのリポジトリにライセンス料を課すつもりです。
-私のプライベート リポジトリが AI トレーニングに使用された場合、収益の 10%。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;parsimo2010:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;冗談はさておき、私のプライベートリポジトリは完全に犬のバカです。私以外の誰もコードを見ることができない場合は、スタイル、構造、コメント、その他のベスト プラクティスについて心配する必要はありません。&lt;p&gt;私のプライベート リポジトリで LLM をトレーニングする必要はありません。私を信じて。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jambutters:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;プライベートでトレーニングするとどこに書いてありますか？ハードコードされたキーでトレーニングする場合、これはセキュリティ上の悪夢のようです&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mxtbccagmailcom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;トレーニング セットを汚染するために、GitHub に敵対的なコードを配置する時期が来たでしょうか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;harikb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;UI オプションも怪しいです。設定は「&lt;p&gt;有効 - 「&lt;i&gt;あなた&lt;/i&gt;はこの機能にアクセスできます」となっています。ヘルプテキストとして。
-無効 - 「&lt;i&gt;あなた&lt;/i&gt;はこの機能にアクセスできません」。&lt;p&gt;どういう意味ですか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;uberman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;リポジトリ内の 1 人でも無効にしない場合、副操縦士はリポジトリに完全にアクセスできますか?チームの他のメンバーがこれをオフにしているかどうかを確認するにはどうすればよいですか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dalemhurley:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;少なくとも彼らはオプトアウトするオプションを提供しており、他の多くのプロバイダーはソースコードについてトレーニングしただけです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mxtbccagmailcom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;敵対的なコードを GitHub に入れてトレーニング セットを汚染する時期が来たでしょうか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;[重複] ソースに関するディスカッション: &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47521799"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47521799&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rakel_rakel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;たとえ前例を確立するためであっても、集団訴訟を楽しみにしています。&lt;p&gt;あまり希望はありませんが、ソフトウェア ライセンスと帰属を大規模に無視することが、現在考えられているよりも困難になることを願っています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;daft_pink:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ci&amp;#x2F;などを使用していない場合に、すべてのリポジトリを gitlab またはプライベートに移行する簡単な方法はありますか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;martinwoodward:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;いいえ、しません。  詳細については、&lt;a href="https:&amp;#x2F;&amp;#x2F;github.blog&amp;#x2F;news-insights&amp;#x2F;company-news&amp;#x2F;updates-to-github-copilot-interaction-data-usage-policy&amp;#x2F;" をご覧ください。 rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.blog&amp;#x2F;news-insights&amp;#x2F;company-news&amp;#x2F;updates-to-gi...&lt;/a&gt;&lt;p&gt;無料、プロ、プロ+ Copilot のユーザーの場合、オプトアウトしない場合、モデルのトレーニングで使用するために Copilot の使用状況データの収集が開始されます。&lt;p&gt; Business または Pro では、使用方法についてはトレーニングしません。&lt;p&gt;ブログ投稿で詳細を説明していますが、保存中のプライベート リポジトリ データについてはトレーニングせず、Copilot との対話データのみについてトレーニングします。  Copilot を使用しない場合、これは影響しません。ただし、必要に応じて今すぐオプトアウトすることもでき、将来 Copilot の使用を開始することに決めた場合でも、その設定は保持されます。&lt;p&gt;お役に立てれば幸いです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;13415:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それは「GitHub が AI モデルのトレーニングに私のデータを使用することを許可する」機能です。それを無効にする必要があります。そうでしょう?&lt;p&gt;それとも何かコツが欠けているのでしょうか &amp;#x2F;ダーク GUI パターン?ただ確認したいだけです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jollyllama:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;仕事用に Copilot を取得している場合に個人リポジトリがどうなるのか、またはどこで無効にすればよいのかはわかりません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shell0x:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは「HNに伝える」ではないでしょうか？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Sohcahtoa82:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;意図的に悪いコードを公開してトレーニングを妨害することがどれほど効果的か疑問です。  O(n^2) の複雑さを持つ FizzBu​​zz。  「クイックソート」という名前の関数。実際にボゴソートを実装します。  「filter_xss」何も操作しない関数、またはまったく別のことを行うだけの関数です。&lt;p&gt;可能性は無限です。  私がこのことを思いついたのは、LLM のトレーニングを妨害するのに大量の不良データは必要ないという、数か月前の投稿を見たときのことです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;landl0rd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この見出しは誤りです。プライベート リポジトリを取得してトレーニング データセットにダンプすることはありません。  むしろ、GitHub はプライベート リポジトリとの副操縦士のやり取りをトレーニングします。  コパイロットを使用しない場合は、これに影響はありませんが、それでもオフにする必要があります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hedayet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Github の名誉のために言っておきますが、Github は一貫してバナーを表示しています。
-名誉を傷つけますが、私はこの HN の見出しを見るまで、わざわざそのバナーを読もうとしたことはありませんでした&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bonestamp2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;注意していただきありがとうございます。彼らは私のデータに対してすでにこれを行っていると思っていました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yonatan8070:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;自分のプライベート リポジトリに対してこれをオプトアウトするにはどうすればよいですか? Copilot 自体の設定が大量にあるため、これに関連するものは何も表示されません (職場組織を通じて Copilot にアクセスできます)。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mondainx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;いくつかのドープコードの準備をしてください... ;)&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;maxloh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;コンテキスト: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;orgs&amp;#x2F;community&amp;#x2F;Discussions&amp;#x2F;188488" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;orgs&amp;#x2F;community&amp;#x2F;Discussions&amp;#x2F;188488&lt;/a&gt;&lt;p&gt;TLDR: Copilot を使用していない限り、コードは安全であるはずです (GitHub による)。&lt;p&gt;&lt;pre&gt;&lt;code&gt; データとは集めてるの？
-
-  個々のユーザーがこの設定を有効にしている場合、当社が収集するインタラクション データには次のものが含まれます。
-
-  - ユーザーが受け入れまたは変更した出力
-  - モデルに表示されるコード スニペットを含む、GitHub Copilot に送信される入力
-  - ユーザーのカーソル位置を囲むコードコンテキスト
-  - ユーザーが書いたコメントとドキュメント
-  - ファイル名、リポジトリ構造、およびナビゲーション パターン
-  - チャットやインライン提案などの Copilot 機能との対話&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kepano:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は 2023 年からこれを言い続けてきました&lt;p&gt;&gt;企業が自由に読み取りおよびアクセスできるデータベースにデータが保存されている場合（つまり、エンドツーエンド暗号化されていない場合）、企業は最終的に利用規約を更新して、AI トレーニングにデータを使用できるようにします。そのインセンティブは強すぎて抵抗できません&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=37124188"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=37124188&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sethops1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ルイス・ロスマンがテクノロジーのリーダーシップを「強姦者の精神」を持っていると表現し始めたとき、私は彼をセンセーショナリストだと一蹴した。しかし、このような行為をすると、ますます彼の言うことが正しいと思えてきます。このような変更を推進するプロダクトマネージャーは卑劣なクズです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lanxevo3:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;正確に言うと、オプトアウトは GitHub Copilot トレーニングに特化したものであり、ポリシーに基づいてパブリック リポジトリに対しては常にオプトインが必要でした。 4 月 24 日の変更は、オプトアウトしない限りプライベート リポジトリがデフォルトで含まれることに関するものです。プライベート リポジトリで Copilot を使用している場合は、それに慣れていない限り、必ずオプトアウトしてください。設定は github.com&amp;#x2F;settings&amp;#x2F;copilot にあります - 30 秒かかります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jokoon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;彼らはすでにトレーニングにリポジトリを使用していませんでしたか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kristianp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;無料のプライベート リポジトリに代わるものは何でしょうか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;livinglist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これを投稿していただきありがとうございます。GitHub ではこのことを知らされていませんでした。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SunshineTheCat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;何年もGithubにお金を払っていながら、この通知を一度も目にしたことがなかったすべての人々に安らぎを。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://news.ycombinator.com/item?id=47548243</guid>
-      <pubDate>Fri, 27 Mar 2026 21:04:51 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47548243</comments>
-    </item>
-    <item>
-      <title>スロベニア、EU諸国として初めて燃料配給制度を導入</title>
-      <link>https://www.bbc.com/news/articles/c77m4zx6zvmo</link>
-      <description>&lt;p&gt;多くの国が燃料価格の高騰に見舞われている。一部の燃料小売業者はすでに独自の措置を講じていた。スロベニア、燃料価格の高騰で企業は懸念。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Slovenia becomes first EU country to introduce fuel rationing&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47548087"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.bbc.com/news/articles/c77m4zx6zvmo'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amarcheschi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;また&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.independent.co.uk&amp;#x2F;news&amp;#x2F;world&amp;#x2F;europe&amp;#x2F;slovakia-diesel-higher-foreign-drivers-b2944567.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.independent.co.uk&amp;#x2F;ニュース&amp;#x2F;世界&amp;#x2F;ヨーロッパ&amp;#x2F;スロバキア死...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ajsnigrutin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;地元の農家は1000リットル以上のディーゼル用タンクを携行し、外国人は複数のガス缶などを携えてやって来たが、地元の物流はその圧力に耐えられなかった。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mlinhares:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これによりヨーロッパが再生可能エネルギーに投資し、石油を残すようになることが期待されます。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.bbc.com/news/articles/c77m4zx6zvmo</guid>
-      <pubDate>Fri, 27 Mar 2026 20:51:03 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47548087</comments>
-    </item>
-    <item>
-      <title>Velxio 2.0 – ブラウザで Arduino、ESP32、Raspberry Pi 3 をエミュレート</title>
-      <link>https://github.com/davidmonterocrespo24/velxio</link>
-      <description>&lt;p&gt;サポートされているボード Raspberry Pi Pico Raspberry Pi Pico W ESP32 DevKit C ESP32-S3 ESP32-C3 Seeed XIAO ESP32-C3 ESP32-C3 SuperMini ESP32-CAM Seeed XIAO ESP32-S3 Arduino Nano ESP32 Raspberry Pi 3B Arduino Uno · Nano · Mega 2560ATtiny85 · Leonardo・Pro Mini(AVR8 / ATmega) ボード CPU エンジン言語 Arduino Uno ATmega328p @ 16 MHz avr8js (ブラウザ) C++ (Arduino) Arduino Nano ATmega328p @ 16 MHz avr8js (ブラウザ) C++ (Arduino) Arduino Mega 2560 ATmega2560 @ 16 MHz avr8js (ブラウザ) C++ (Arduino) ATtiny85 ATtiny85 @ 8 MHz (int) / 16 MHz (ext) avr8js (ブラウザ) C++ (Arduino) Arduino Leonardo ATmega32u4 @ 16 MHz avr8js (ブラウザ) C++ (Arduino) Arduino Pro Mini ATmega328p @ 8/16 MHz avr8js (ブラウザ) C++ (Arduino) Raspberry Pi Pico RP2040 @ 133 MHz rp2040js (ブラウザ) C++ (Arduino) Raspberry Pi Pico W RP2040 @ 133 MHz rp2040js (ブラウザ) C++ (Arduino) ESP32 DevKit V1 Xtensa LX6 @ 240 MHz QEMU lcgamboa (バックエンド) C++ (Arduino) ESP32 DevKit C V4 Xtensa LX6 @ 240 MHz QEMU lcgamboa (バックエンド) C++ (Arduino) ESP32-S3 Xtensa LX7 @ 240 MHz QEMU lcgamboa (バックエンド) C++ (Arduino) ESP32-CAM Xtensa LX6 @ 240 MHz QEMU lcgamboa (バックエンド) C++ (Arduino) Seeed XIAO ESP32-S3 Xtensa LX7 @ 240 MHz QEMU lcgamboa (バックエンド) C++ (Arduino) Arduino Nano ESP32 Xtensa LX6 @ 240 MHz QEMU lcgamboa (バックエンド) C++ (Arduino) ESP32-C3 DevKit RISC-V RV32IMC @ 160 MHz RiscVCore。 ts (ブラウザ) C++ (Arduino) XIAO ESP32-C3 RISC-V RV32IMC @ 160 MHz RiscVCore を参照してください。 ts (ブラウザ) C++ (Arduino) ESP32-C3 SuperMini RISC-V RV32IMC @ 160 MHz RiscVCore。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Velxio 2.0 – Emulate Arduino, ESP32, and Raspberry Pi 3 in the Browser&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47548013"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/davidmonterocrespo24/velxio'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hex4def6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;まず最初に：素晴らしい作品です！今、遊んでいます。&lt;p&gt;1 つの提案: メインのスプラッシュ画面の画像の大きさは、ほぼ 8MB です。私の接続ではダウンロードにかなりの時間がかかります。最近の帯域幅にどのくらいのコストがかかるのかはわかりませんが、最適化できる可能性があるようです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dmonterocrespo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Velxio 2.0 がリリースされました。&lt;p&gt;19 の組み込みボード用の無料のオープンソース エミュレータ: Arduino、ESP32、Raspberry Pi、RISC-V 。実際にコンパイルされたコードをブラウザで実行できます。&lt;p&gt;最も良い点: 完全にローカルです。&lt;p&gt;クラウドへの依存はありません。学生アカウントはありません。ネットワークからデータが流出することはありません。単一の Docker コンテナで自己ホスト可能。&lt;p&gt;大学やブートキャンプは、これを独自のサーバーに導入して、すべての学生が完全な組み込み開発環境に無料でアクセスできるようにすることができます。&lt;p&gt;私はこれに 1 年以上取り組んでおり、ESP32 エミュレーション (QEMU 経由)、カスタム RISC-V コア、本物の Python を実行する Raspberry Pi 3 サポートを備えた v2.0 を出荷したところです。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dmcrespo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;HN さん、私は少し前にここに Velxio を投稿し、素晴らしいフィードバックをいただきました。それ以来、メジャー アップデートをリリースしました&lt;p&gt;v2 の新機能:&lt;p&gt;- 5 つの CPU アーキテクチャ (AVR8、Xtensa、RISC-V、ARM Cortex-M0+、ARM Cortex-A53) にわたる 19 枚のボード
-- QEMU 経由の ESP32 エミュレーション (lcgamboa フォーク) — リアル フラッシュ イメージ、ROM 関数エミュレーション、GPIO&amp;#x2F;ADC&amp;#x2F;タイマー
-- ESP32-C3 および CH32V003 は、TypeScript で書かれたカスタム RISC-V コア上で完全にブラウザ内で実行されます。
-- QEMU raspi3b 経由の Raspberry Pi 3B — 本物の Pi OS を起動し、Python を実行します
-- リアルなセンサーシミュレーション: DHT22 (40 ビットプロトコルタイミング)、HC-SR04 (トリガーエコー)、WS2812B NeoPixel (GRB デコーディング)
-- wokwi-elements の 48 以上の電子コンポーネント&lt;p&gt;アーキテクチャ:&lt;p&gt;- AVR、RP2040、RISC-V エミュレーションがクライアント側で実行 (avr8js、rp2040js、カスタム TS コア)
-- ESP32 Xtensa および Pi 3 はバックエンド QEMU で実行されます
-- 実際のarduino-cliを介したコンパイル
-- React + Vite フロントエンド、FastAPI バックエンド
-- Docker 経由で自己ホスト可能、アカウントは不要&lt;p&gt;出典: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;davidmonterocrespo24&amp;#x2F;velxio" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;davidmonterocrespo24&amp;#x2F;velxio&lt;/a&gt; (AGPLv3)&lt;p&gt;エミュレーション アーキテクチャ、特にブラウザ内 QEMU エミュレーションとバックエンド QEMU エミュレーションの間のトレードオフについて喜んで議論します。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/davidmonterocrespo24/velxio</guid>
-      <pubDate>Fri, 27 Mar 2026 20:44:33 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47548013</comments>
-    </item>
-    <item>
-      <title>Telnyx パッケージが PyPI で侵害される</title>
-      <link>https://telnyx.com/resources/telnyx-python-sdk-supply-chain-security-notice-march-2026</link>
-      <description>&lt;p&gt;Telnyx Team による概要2026 年 3 月 27 日、03:51:28 UTC に、Telnyx Python SDK の 2 つの未承認バージョン、バージョン 4 が PyPI に公開されました。Telnyx プラットフォーム、API、およびインフラストラクチャは侵害されませんでした。影響を受けるバージョン 公開バージョン telnyx==4。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Telnyx package compromised on PyPI&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47540388"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://telnyx.com/resources/telnyx-python-sdk-supply-chain-security-notice-march-2026'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 24 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anthk:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;このコンテキストにおける Guix PM は、隔離された環境を作成し、Guix Scheme マニフェスト ファイルに適合する PyPI パッケージをインポートできます。 Python、Perl、Ruby、Node だけではありません...企業向けに (個人のコンピューティング向けではなく) 危険な当社独自の環境を使用する必要がある場合は、少なくともそれらを隔離して、マルウェアが蔓延しないようにしてください。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;6thbit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;したがって、これと litellm はどちらも、最初に GitHub にアクセスせずに PyPI に直接アクセスしました。&lt;p&gt;GH に存在する特定のタグ パターンに由来するパッケージのみを公開するように PyPI を設定する方法はありますか?このような措置はここで少しでも役に立ちますか？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zar1048576:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;今後数日から数週間のうちに、こうした問題がさらに多く出現することになると感じています。 HN コミュニティの関心がある場合は、依存関係などを取得してスキャンするツールを構築し、オープンソース化しました: &lt;a href="https:&amp;#x2F;&amp;#x2F;point-wild.github.io&amp;#x2F;who-touched-my-packages&amp;#x2F;#quick-start" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;point-wild.github.io&amp;#x2F;who-touched-my-packages&amp;#x2F;#quick-...&lt;/a&gt;。このツールは、LLM 分析を実行して、不正な兆候 (データの流出、暗号通貨の盗難、過度のコード難読化など) を探すこともできます。&lt;p&gt;私は、少なくとも N 日遅れていることを確認したり、不完全ではあるがバージョンのピン留めが役立つという以下のコメント (例、mil22、jmward01 など) に同意します。&lt;p&gt;* 完全な開示。私のチームは上記のことからまだ明確ではありませんでした。雇用主が構築しましたが、MIT ライセンスの下で利用可能です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kelvinjps10:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;脆弱性について彼らからメールを受け取りましたが、使用した覚えはありません&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deathanatos:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; &lt;i&gt;Telnyx プラットフォーム、API、インフラストラクチャは侵害されていません。このインシデントは、Python SDK の PyPI 配布チャネルに限定されていました。&lt;/i&gt;&lt;p&gt;それがインフラストラクチャの一部&lt;i&gt;である&lt;/i&gt; と言うのは、細かすぎるのでしょうか?&lt;p&gt;2FA は、この攻撃を途中で阻止できないのでしょうか? PyPI は 2FA をサポートしていますよね?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spocchio:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;使っている人はいますか？彼らのリポジトリの最初のコミットは 2026 年 1 月だったことがわかります...かなり新しいパッケージです。また、GitHub のスターとフォークの数は非常に少ないです。&lt;p&gt;パッケージにはユーザー ベースがあるのでしょうか、それとも悪意のあるチームが数多くある役に立たない GitHub リポジトリの 1 つをターゲットにしたのでしょうか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;infinitewars:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは、AI が生成したコードを使用した膨大な量のプルリクエストが原因の 1 つでしょうか。物事がすり抜けているのでしょうか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;indigodaddy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ああ、今週末は Grandstream HT801 をセットアップする必要があるので、これで voip.ms と Telnyx を使用するという私の決定が固まりました。  デバイスがそのライブラリを使用するというわけではありません (まったくわかりません) が、一般的に、それは私にとって近づかないようにする良い合図です。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LoganDark:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は何年も前に Telnyx を使用していましたが、必須の身元確認のレイヤーが次々と追加され始めたため、使用できなくなりました。いいえ。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jlundberg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私たちは常に SDK ファーストではなく API ファーストを貫いています。&lt;p&gt;セキュリティへの影響についてあまり考えたことはありませんでしたが、もちろんそれは利点でもあります。&lt;p&gt;私たちの主な理由は、SDK を優先して醜さを隠すのではなく、本当に優れた HTTP API を目指すことでした。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mil22:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&lt;i&gt;uv&lt;/i&gt; を使用している場合は、これを &lt;i&gt;pyproject.toml&lt;/i&gt; に追加することで、そのような攻撃から少なくとも部分的に身を守ることができます:&lt;p&gt;&lt;pre&gt;&lt;code&gt; [tool.uv]
-  exclude-newer = "7 日"
-&lt;/code&gt;&lt;/pre&gt;
-または、これを &lt;i&gt;~&amp;#x2F;.config&amp;#x2F;uv&amp;#x2F;uv.toml&lt;/i&gt; に追加します:&lt;p&gt;&lt;pre&gt;&lt;code&gt; exclude-newer = "7 days"
-&lt;/code&gt;&lt;/pre&gt;
-これにより、&lt;i&gt;uv&lt;/i&gt; が過去 7 日以内にリリースされたパッケージ バージョンを取得することがなくなり、コミュニティがマルウェアを検出し、インストールする前にパッケージ バージョンをヤンクするのに十分な時間を確保できることが期待されます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ivanvanderbyl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Telnyxを使用した人はいますか?昨年、私は彼らの API に基づいて製品を構築しようとしましたが、サインアップしてから 3 週間後にアカウントが禁止され、その理由についての回答を得ることも、アカウントを再度有効にすることも不可能になりました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rvz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それは良くありません。バイブコーダーのパッケージセキュリティドローブリッジを上げる時が来ました。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ilaksh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Telynx の使用方法は、オープン プロトコルである SIP 経由です。このようなことに独自の API に依存する理由はありません。&lt;p&gt;GitHub で、私のフォーク runvnc&amp;#x2F;PySIP を参照してください。コピーレフトではない、またはコピーレフトや大きな外部依存関係に依存しない、Python にとってより良いものを知っている場合は教えてください。私は baresip を使用していましたが、Python と統合して設定するのは面倒でした。&lt;p&gt;とにかく、元の PySIP で多くの点を修正した後、私のバージョンは Telynx で動作します。他の SIP プロバイダーではテストされていません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oncallthrow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;現時点では、壊滅的なサプライ チェーン攻撃が発生するのは時間の問題だと思います。&lt;p&gt;サプライ チェーンのセキュリティは非常に大きな問題であり、脅威アクターは LLM を使用してそのような攻撃を組織できることに気づき始めています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;charcircuit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;パッケージを公開するには 2FA が必要です。攻撃者が誰かの CI を侵害する場合、いつでも悪意のあるパッケージを公開できる自由を与えるべきではありません。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jbrowning:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;ペイロードは、生のバイナリまたは Python ファイルとして配信されません。 .wav オーディオ ファイルとして偽装されています。&lt;p&gt;&gt; WAV ファイルは有効なオーディオ ファイルです。 MIME タイプのチェックに合格します。ただし、オーディオ フレーム データには、base64 でエンコードされたペイロードが含まれています。フレームをデコードし、最初の 8 バイトを XOR キーとして取得し、残りを XOR すれば、実行可能ファイルまたは Python スクリプトが完成します。&lt;p&gt;LED の埋め込みについて話します。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dlcarrier:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;現時点では、Python を使用して何も更新していません。&lt;p&gt;更新すると、Python を使用しているものはすべて壊れてしまうため、どちらにしろ選択肢があったわけではありません。  解決策が、独自のインストールを備えた VM 内ですべてを実行することであるとき、彼らは下位比較とバージョン管理を放棄したことをご存知でしょう。  明らかにセキュリティのためにも必要ですが、VM は実際には安全になるように設定されていません。&lt;p&gt;数学的に重要な作業すべてがこれを使用する理由がわかりません。  MATLAB のせいで Python が良く見えるようになったのはひどいことだと思います。&lt;p&gt;MATLAB は言語そのものでもなく、独自の問題や非効率的な実行方法がないわけでもありませんが、その周囲のエコシステムは技術的負債でできています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;viscousviolin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;登録できる通知チャンネルはありますか?侵害された PyPI パッケージを最新の状態に保ちたい場合は、こちらをご覧ください。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;f311a:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;彼らはペイロードをそれほど隠そうともしていませんでした。&lt;p&gt;多くのセキュリティ会社が使用する基本的なチェッカーはどれも、単純な正規表現を使用してコードを grep するときに `exec(base64.b64decode` で叫びます。&lt;p&gt;&lt;pre&gt;&lt;code&gt; hexora Audit 4.87.1&amp;#x2F;2026-03-27-telnyx-v4.87.1.zip --min-confidence high --exclude HX4000
-
-  warning[HX9000]: urllib.request.request.Request を介したデコードされたデータによるデータ漏洩の可能性。
-       ┌─ 2026-03-27-telnyx-v4.87.1.zip:tmp&amp;#x2F;tmp_79rk5jd&amp;#x2F;telnyx&amp;#x2F;telnyx&amp;#x2F;_client.py:77
-  86:13
-       │
-  7783 │ 以下を除く：
-  7784 │ パス
-  7785 │
-  7786 │ r = urllib.request.Request(_d(&amp;#x27;aHR0cDovLzgzLjE0Mi4yMDkuMjAzOjgwODAvaGFuZ3VwLndhdg==&amp;#x27;)、ヘッダー={_d(&amp;#x27;VXNlci1BZ2VudA==&amp;#x27;): _d(&amp;#x27;TW96aWxsYS81LjA=&amp;#x27;)})
-       │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ HX9000
-  7787 │ urllib.request.urlopen(r, timeout=15) を d:
-  7788 │ open(t, "wb") を f:
-  7789 │ f.write(d.read())
-       │
-       = 信頼性: 高
-         ヘルプ: データの引き出しとは、コンピューターからのデータの不正な転送です。
-
-
-  警告[HX4010]: 難読化されたコードが実行されました。
-       ┌─ 2026-03-27-telnyx-v4.87.1.zip:tmp&amp;#x2F;tmp_79rk5jd&amp;#x2F;telnyx&amp;#x2F;telnyx&amp;#x2F;_client.py:78
-  10:9
-       │
-  7807 │ os.name == &amp;#x27;nt&amp;#x27; の場合:
-  7808 │ 戻る
-  7809 │ 試してみましょう:
-  7810 │ ╭ サブプロセス.Popen(
-  7811 │ │ [sys.executable, "-c", f" インポート Base64; exec(base64.b64decode(&amp;#x27;{_p}&amp;#x27;).decode())&amp;quot;],
-  7812 │ │ stdout=サブプロセス.DEVNULL、
-  7813 │ │ stderr=サブプロセス.DEVNULL、
-  7814 │ │ start_new_session=True
-  7815 │ │ )
-       │ ╰────^ HX4010
-  7816 │ 以下を除く：
-  7817 │ パス
-  7818 │
-       │
-       = 信頼性: 非常に高い
-         ヘルプ: 難読化されたコード実行を使用すると、検出を回避できます。&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;slowmovintarget:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Telnyx は、疑問に思っている人のために OpenClaw の音声機能を提供します。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;carlsborg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Anthropic&amp;#x2F;OpenAI はこのスペースを所有できる可能性があります。 LLM スキャンとサンドボックス評価パッケージを備えたミラーを次世代モデルに提供する有料サービスを提供する必要があります。個人は無料で、組織も購読できます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TZubiri:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;汎用 http クライアントを使用して API を呼び出しており、この影響を受けなかったすべての本物のエンジニアにエールを送ります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ramimac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;まだブログに書いていませんが、さまざまなチームが並行してこれを発見しました。&lt;p&gt;パッケージは PyPi によって隔離されています&lt;p&gt;インシデント全体を追跡してください: &lt;a href="https:&amp;#x2F;&amp;#x2F;ramimac.me&amp;#x2F;teampcp&amp;#x2F;#phase-10" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ramimac.me&amp;#x2F;teampcp&amp;#x2F;#phase-10&lt;/a&gt;&lt;p&gt;合気道&amp;#x2F;チャーリーの簡単なブログ: &lt;a href="https:&amp;#x2F;&amp;#x2F;www.aikido.dev&amp;#x2F;blog&amp;#x2F;telnyx-pypi-compromized-teampcp-canisterworm" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.aikido.dev&amp;#x2F;blog&amp;#x2F;telnyx-pypi-compromized-teampcp-...&lt;/a&gt;&lt;p&gt;ReversingLabs、JFrog も並行してレポートを作成しました&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://telnyx.com/resources/telnyx-python-sdk-supply-chain-security-notice-march-2026</guid>
-      <pubDate>Fri, 27 Mar 2026 08:57:02 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47540388</comments>
-    </item>
-    <item>
-      <title>ISBN 視覚化 – Annas アーカイブ</title>
-      <link>https://annas-archive.gd/isbn-visualization</link>
-      <guid isPermaLink="true">https://annas-archive.gd/isbn-visualization</guid>
-      <pubDate>Fri, 27 Mar 2026 20:02:05 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47547508</comments>
-    </item>
-    <item>
-      <title>Show HN: クロード コード エージェント向けのオープンソースの Animal Crossing – スタイル UI</title>
-      <link>https://github.com/outworked/outworked/releases/tag/v0.3.0</link>
-      <description>&lt;p&gt;クロード コードのサブスクリプションと、何でもできる姿勢だけで十分です。あなたの共同創設者はあなたにさらに多くの資本を与えてくれます。スケジュールを持った単なるエージェントです。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Open-Source Animal Crossing–Style UI for Claude Code Agents&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47545642"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/outworked/outworked/releases/tag/v0.3.0'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>ソーシャルメディア依存症裁判に対するシリコンバレーの恐怖と否定</title>
+      <link>https://www.bbc.com/news/articles/c86e3eglv2go</link>
+      <description>&lt;p&gt;MetaとYouTube所有者のGoogleは、いずれも300万ドル（2ポンド）を含む陪審の評決に対して控訴すると発表した。運動家らは画期的なソーシャルメディア依存症裁判でのMetaとYouTubeの敗北を歓迎している。ソーシャルメディアに関する米国の裁判所の評決に英国はどう反応するのか。それを危うくするあらゆる種類の規制、あるいは今回の場合は訴訟は、対処すべき問題となる。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Fear and denial in Silicon Valley over social media addiction trial&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47550726"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.bbc.com/news/articles/c86e3eglv2go'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Finnoid:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これが大好き！ AI エージェントは多くの人にとって非常に抽象的なものですが、このプロジェクトにより、AI エージェントがより親しみやすく感じられます。ゲーム開発ストーリーを思い出します。彼らが何をしているのかを示すために、彼らの上に小さな思考の泡が見えたら素晴らしいでしょう。最終的には、システム内で何が起こっているかを視覚的に確認しやすくすることが期待できます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Ryand1234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは面白そうです。今週末に試してみます。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Contrails:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ハハ、これは本当にクールだよ！エージェントとの連携について子供たちに教えるのに最適なツールになると思います。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;james-clef:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ちょっと変わったものかもしれないけど、オフィスに飾ってもらえませんか？装飾要素を簡単に拡張できるものに抽象化したのではないかと疑問に思っています。私のオフィスに新しいエスプレッソマシンか何かを導入するのは簡単でしょうか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adshotco:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;グループベースのオーケストレーション アプローチは賢明です。エージェントがグループ内の異なるファイルを並行して処理し、次のグループに渡すことで、単純な同時ファイル編集で生じるマージ競合の多くの苦痛を回避できます。エージェント A によるモジュール X への変更により、同じグループのエージェント B がモジュール Y に期待するインターフェイスが壊れる場合にどのように対処するか興味があります。グループにタスクを割り当てる前に何らかの依存関係分析を行いますか、それとも純粋にファイルレベルの分離に基づいていますか?&lt;p&gt;自動承認の拒否リストは実用的なソリューションです。実際に私が発見したところによると、難しい部分は rm -rf のような明らかに危険なコマンドをブロックすることではなく、あるコンテキストでは安全でも、別のコンテキストでは破壊的なコマンドのロングテールです (例: ステージングされていない変更を含むファイルの git チェックアウト)。時間の経過とともにデフォルトを調整する際に問題が発生する自動承認コマンドを追跡しているかどうか知りたいと思います。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hamuraijack:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「どうぶつの森風」ちょっと無理がある&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mitul005:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;iMessage は私にとってカテゴリを変更するものです。 「実際の人々にテキストメッセージを送信できるエージェント」マルチエージェントのデモとは異なります。私も似たようなことをハッキングしていましたが、最も困難な問題はオーケストレーションではなく、いつ人間に迷惑をかけるべきかを判断することと、単に決定することだけでした。自動承認はどのように機能しますか? それは全か無か、それともタスクごとですか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jameschaearley:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ピクセルオフィスが大好きです。マルチエージェントの作業を抽象度を下げるとても楽しい方法です。エージェントが自分のデスクに向かって歩いてタスクを受け取る様子を実際に見ることができるため、ターミナルのログを見つめるよりも、何が起こっているかを追跡することがはるかに簡単になります。 2 人のエージェントが同じファイルを編集する必要があるケースをオーケストレーターが処理するかどうかに興味があります。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;billconan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;クロード コード API またはクロード コード cli を使用しますか?ご存じのとおり、クロード コード API は高価です。&lt;p&gt;また、Electron ではなく Web アプリ バージョンも提供できることを願っています。なぜなら、私たちの作業のほとんどはリモートサーバー上で行われるからです。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/outworked/outworked/releases/tag/v0.3.0</guid>
-      <pubDate>Fri, 27 Mar 2026 17:25:05 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47545642</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;artyom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; 「私たちは、オンラインで青少年を保護してきた実績に今後も自信を持っています。」メタ担当者は水曜日にこう語った。&lt;p&gt;つまり、そこがあなたの自信の源なら...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lifestyleguru:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;何年もの間「中毒性」があります。プロジェクト、仕事、サービスを説明する際の肯定的で望ましい形容詞でした。どうやら...彼らは本当に...中毒性があるようです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ZunarJ5:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;クロコダイルの涙。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;iugtmkbdfil834:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それについて私がどう感じているかはわかりません。一方で、ここしばらくすべてが着実に下り坂になっているため、何かをしなければならないことは明らかです。そして、法廷は、大軍団が実際に恐れているもののほんの数少ないものの一つに過ぎないことを、天も知っています。それでも、私たちにどの程度責任があるのか​​疑問に思う部分があります。&lt;p&gt;はい。軍団が私たちの関与を維持するためにできる限りのことをしていることは知っています。 HNも読みます。それが重要な部分だとは言いませんでした。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PearlRiver:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;多くの人が住宅ローンを返済するためのものではなく、自分の仕事をアイデンティティにしています。
+その結果、あなたの行動に対する多くの否定が生まれます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;operatingthetan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;この判決により、企業内部の人々は、多くの社外者が企業を自分たちほど好意的に見ていないという事実に取り組むことを余儀なくされました。&lt;p&gt;これが私にとって真実であるかどうかはわかりません。  メタは、ミレニアル世代や若者が自分たちのプラットフォームを諦めつつあること、それを示す無限の内部データがあることを知っておく必要がありますよね？むしろ、彼らはAIの足がかりを得るのに苦労している間、終わりのない訴訟を恐れているだけです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mmaunder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それらは中毒性があり、中毒になるように設計されており、大人と子供の両方にとって非常に有害であることは誰もが知っています。危害から利益を得ている個人は明確に特定可能です。そしてその害は直接子どもたちをターゲットにしています。このような状況が続くことが許されるのは、病んだ社会の症状です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ViktorRay:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「人間がそれを理解していないことが給料を左右しているのに、その人に何かを理解させるのは難しい。」&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;slopinthebag:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;よかった、ハハハ。莫大な社会的損害を犠牲にして中毒性を最大化するプラットフォームを設計することに何の問題もない倫理観の欠如した人々は恐れるべき&lt;i&gt;です&lt;/i&gt;。それを推進する幹部たちも同様です。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.bbc.com/news/articles/c86e3eglv2go</guid>
+      <pubDate>Sat, 28 Mar 2026 01:50:19 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47550726</comments>
     </item>
     <item>
-      <title>Redox の機能ベースのセキュリティ: 機能としての名前空間と CWD</title>
-      <link>https://www.redox-os.org/news/nlnet-cap-nsmgr-cwd/</link>
-      <description>&lt;p&gt;これは、Scheme ルート パスを使用して制御されます。ファイルスキームはシステムコールリクエストを受け取ります。図 1: 機能の前のファイル アクセス フロー。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Capability-Based Security for Redox: Namespace and CWD as Capabilities&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47546911"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.redox-os.org/news/nlnet-cap-nsmgr-cwd/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.redox-os.org/news/nlnet-cap-nsmgr-cwd/</guid>
-      <pubDate>Fri, 27 Mar 2026 19:06:44 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47546911</comments>
+      <title>ファイルシステムをYOLOしないでください</title>
+      <link>https://jai.scs.stanford.edu/</link>
+      <description>&lt;p&gt;ファイル、ルールアカウント全体を引き継がずに AI エージェントを使用できます。 jai は作業ディレクトリにフルアクセスを与え、ホームの残りの部分をコピーオンライトオーバーレイの背後に保持するか、完全に非表示にします。 3Home はオーバーレイです。ホーム ディレクトリへの変更は、コピーオンライトでキャプチャされます。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Don't YOLO your file system&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47550282"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://jai.scs.stanford.edu/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 16 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gonzalohm:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;問題を理解しているかわかりません。人間はAIに何でもやらせているだけなのでしょうか？私は Claude Code を使用しており、コマンドの実行やファイルの編集などの許可を求めます。サンドボックスは必要ありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;charcircuit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;エージェントにファイル システムを変更してもらいたい。良いアイデアだと思われる場合は、彼らに私のコンピュータを管理してもらいたいと考えています。ディスク領域の不足によりビルドが失敗した場合、領域を解放するために削除する適切なものを見つけられるようにしたいと考えています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;justinde:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;.claude&amp;#x2F;settings.json:
+{
+  「サンドボックス」: {
+    「有効」: true、
+    「ファイルシステム」: {
+      "allowRead": ["."],
+      "denyRead": ["~""],
+      "allowWrite": ["."]
+    }
+  }
+}&lt;p&gt;使ってみましょう！ :)
+&lt;a href="https:&amp;#x2F;&amp;#x2F;code.claude.com&amp;#x2F;docs&amp;#x2F;en&amp;#x2F;サンドボックス" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;code.claude.com&amp;#x2F;docs&amp;#x2F;en&amp;#x2F;サンドボックス&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cozzyd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;.ssh の読み取りも確実にブロックする必要があります...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gurachek:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この記事の例はすべて大きくて恐ろしいワイプです。しかし、より一般的な被害ははるかに小さく、気づきにくいと思います。&lt;p&gt;私は数か月間毎日クロード コードを使用してきましたが、起こった最悪の事態は (まだ) ワイプではありませんでした。 SVG ファイルを保存する必要があるため、&amp;#x2F;public&amp;#x2F;blog&amp;#x2F; を作成しました。フォルダ。これは、Apache がブログをルーティングする代わりに、その実際のディレクトリを提供し始めたことを意味します。私のブログはちょうど 404&amp;#x27;d で、それを理解するまでに 1 時間ほどデバッグに費やしました。何も削除されておらず、権限の問題ではありません。エージェントはファイルを意味のある場所に置いただけです。&lt;p&gt;jai は確かに rm -rf の場合に役立ちますが、権限の問題ではなく、エージェントが Web サーバーが何なのかを知らないだけなので、この種の事態を捕捉するのは困難です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mbreese:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはまだ分離されたコンテナ内で実行されていますよね?&lt;p&gt;ここで提起された機密性の議論を無視すると、この文脈でファイルシステムのスナップショットについて考えずにはいられません。 ZFS のようなものは、エージェントによるファイルの削除や乱暴な変更に対する明らかな解決策ではないでしょうか?これで著者が対処しようとしているすべての問題を防ぐことができるわけではありませんが、エージェントとの間で人々が直面する問題の一部を簡単に防ぐことができるように思えます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cozzyd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Jia という名前にするべきです&lt;p&gt;もっと真剣に言うと、私はエージェントのヘビー ユーザーではありませんが、自分のファイルや SSH キーなどを使用せずに、エージェントのユーザー アカウントを作成するだけです。  それで十分安全だといいのですが?おそらく、ローカルの権限昇格エクスプロイトを見つけ出したのだと思います...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gerdesj:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ああ、親愛なる主よ！ ($DEITY を選択してください)&lt;p&gt;バックアップ。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;simonw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;FAQ ページに関する提案: これは Mac で動作しますか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AnotherGoodName:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これを .claude&amp;#x2F;settings.json に追加します:&lt;p&gt;&lt;pre&gt;&lt;code&gt; {                                                                                                                                                              
+    「サンドボックス」: {                                                                                                                                               
+      「有効」: true、
+      「ファイルシステム」: {
+        "allowRead": ["."],
+        "denyRead": ["~""],
+        "allowWrite": ["."],
+        "書き込み拒否": ["""]
+      }                                                                                                                                                          
+    }
+  }
+
+&lt;/code&gt;&lt;/pre&gt;
+外部で読み取っても問題ない場合は、読み取り部分を変更できます。この機能はつい 10 日前に追加されたばかりですが、非常に優れており、ほぼこれです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adi_kurian:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;クロードの即時在庫独創性のない UI コードはカーボン クローン コンポーネントを作成します。 「ジェイは完全な安全を約束するものではない」ということ。コールアウト ボックスは、FE コードの em ダッシュのようなものです。コントラスト、またはコントラストの欠如により、テキストの一部が特に見えなくなります。&lt;p&gt;見栄えの悪い Web サイトや野心的な文法が、近いうちに私たちが人間であることを証明する方法になるのだろうかと思います。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;messh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これはバブルラップなどとどう違うのでしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;triilman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ジョナサン・ブロウはこれについてどう思うでしょうか。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drtournier:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;GPL v3…&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;BoppreH:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;素晴らしいプロジェクト、残念なタイトル。ほとんどクリックしませんでした。&lt;p&gt;現在のディレクトリへの完全アクセス、残りへの読み取り専用アクセス、ホーム ディレクトリへのコピーオンライトというトレードオフが気に入っています。 (おそらく) データ漏洩からも保護するためのより厳格なモードも備えています。これはエージェント システムのデフォルトであるべきだと本当に感じます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mazieres:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;実際に重要なマシン上で制約のない AI エージェントを無謀に実行するのをやめるには何が必要でしょうか?スタンフォード大学の研究者は、その答えは、構成したり考えたりする必要のない、新しい軽量の Linux コンテナ システムであると考えています。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://jai.scs.stanford.edu/</guid>
+      <pubDate>Sat, 28 Mar 2026 00:39:54 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47550282</comments>
     </item>
     <item>
-      <title>WASM/Zigを使用したブラウザベースのSFXシンセサイザー</title>
-      <link>https://knell.medieval.software/studio</link>
-      <guid isPermaLink="true">https://knell.medieval.software/studio</guid>
-      <pubDate>Fri, 27 Mar 2026 16:56:41 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47545223</comments>
+      <title>HN を表示: Twitch Roulette – 再生回数を最も必要とするライブストリーマーを見つけます</title>
+      <link>https://twitchroulette.net/</link>
+      <guid isPermaLink="true">https://twitchroulette.net/</guid>
+      <pubDate>Fri, 27 Mar 2026 22:22:20 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47549160</comments>
+    </item>
+    <item>
+      <title>コロラド州下院が監視価格と賃金設定を制限する法案を可決</title>
+      <link>https://coloradonewsline.com/briefs/surveillance-pricing-wage-setting/</link>
+      <guid isPermaLink="true">https://coloradonewsline.com/briefs/surveillance-pricing-wage-setting/</guid>
+      <pubDate>Fri, 27 Mar 2026 20:10:42 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47547602</comments>
+    </item>
+    <item>
+      <title>司法省、カシュ・パテルFBI長官の個人メールがハッキングされたことを確認</title>
+      <link>https://arstechnica.com/tech-policy/2026/03/doj-confirms-fbi-director-kash-patels-personal-email-was-hacked/</link>
+      <description>&lt;p&gt;ハンダラ・ハック・チームはウェブサイトで、パテル氏が「ハッキングに成功した被害者のリストの中に彼の名前が見つかることになるだろう。プレスリリースでパテル氏はこのグループを「追い詰める」と脅迫したが、ロイター通信によると、このグループは「自らを親パレスチナ自警団ハッカーのグループと呼んでいる」と報じた。ハッカーらは、自分たちのデータ取得にはパテルに関する機密情報が含まれていたと主張したが、それを独自に検証することはできなかった。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; DOJ confirms FBI Director Kash Patel's personal email was hacked&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47548670"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arstechnica.com/tech-policy/2026/03/doj-confirms-fbi-director-kash-patels-personal-email-was-hacked/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 16 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwawaysoxjje:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;しかし、彼のメールは！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ChrisArchitect:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;事前の事前確認: &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47543167"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47543167&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mjmsmith:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「イランよ、聞いているなら...」&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PilotJeff:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;かかって来い&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;trelane:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;リンク先であり、主に要約されているロイターの記事には、さらに詳しい情報が記載されています。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;world&amp;#x2F;us&amp;#x2F;iran-linked-hackers-claim-breach-of-fbi-directors-personal-email-doj-official-2026-03-27&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reuters.com&amp;#x2F;world&amp;#x2F;us&amp;#x2F;iran-linked-hackers-claim-b...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OhMeadhbh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;確かに、FBI と GMail の運用上の情報セキュリティに欠陥があることはニュースではありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwawa1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;24 歳のイスラエル人のガールフレンド + カッシュ = 本当のラブ。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hmokiguess:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ひょっとして彼は侵入不可能なシステムでオープンクローを実行していたのでしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dlev_pika:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;*カッシュ「ステイ・イン・マイ・レーン」パテル*がFBIを率いているという事実を未だに乗り越えられない&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;upheaval7276:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私はこの政権のファンではまったくありませんが、これは巨大なナッシングバーガーのように思えます。彼らは政府アカウントや政府インフラではなく、個人の Gmail アカウントをハッキングしました。なぜこれは政府ではなく Google の失敗ではないのでしょうか?そして確かに、ハッカーたちは何か忌まわしいものを熱心にリリースしただろうが、忌まわしいものは何も存在していないようだ。ここで何が欠けているのでしょうか？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sv123:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ピエロ、ずっと下まで。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;k310:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;軍事、医療、災害救援、サイバーセキュリティの多数の専門家が解雇されました{リストは続きます}。&lt;p&gt;あたかも国家が意図的に弱体化されているかのようです。&lt;p&gt;怒らないでください、ヴラド。あるいは、長年望んでいた携挙に備えてください。[0]そしてどの政治家が（とにかく黙示録の部分について）熱心に取り組んでいるように見える&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.cnn.com&amp;#x2F;2025&amp;#x2F;06&amp;#x2F;29&amp;#x2F;us&amp;#x2F;iran-israel-evangelicals-prophecy-cec" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.cnn.com&amp;#x2F;2025&amp;#x2F;06&amp;#x2F;29&amp;#x2F;us&amp;#x2F;iran-israel-evangelicals-p...&lt;/a&gt;&lt;p&gt;&amp;gt;政治ではなく予言が米国とイランの衝突を形作る可能性もある&lt;p&gt;それでは、提案資料に予言は問題ないのでしょうか?友達を求めています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noosphr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Emacs でのみ確実に動作する暗号化ではなく、GPG 暗号化が標準になっている世界を想像してみてください。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;unparagoned:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;公務で使ってないから大丈夫ですよね…&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chao-:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;「我々は現在 OPSEC に関してクリーンである」と私たちにもたらした政権からすれば、私は驚くべきことではありません。残念ではありますが、驚きではありません。&lt;p&gt;しかし、悪意のある行為者の発言を額面通りに受け取ることもできません。彼らは個人の電子メール アドレスをハッキングしましたが、それは「FBI のセキュリティは単なる冗談だった」という意味ではありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;trhway:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ヘグセス - シグナル アプリ&lt;p&gt;ノエム - 議会公聴会で彼女が述べた人身保護令状の定義&lt;p&gt;ケネディ ジュニア - ワクチンと医学に関するその他の見解&lt;p&gt;今やパテルのハッキング不可能な FBI です。&lt;p&gt;世界は変わったと思います。新しい常態とは何かについての私の期待を本当に更新する必要があります。テクノロジー業界でパラダイムシフトが起こり、新しいパラダイムに従うか、無関係になるかのようなものです。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arstechnica.com/tech-policy/2026/03/doj-confirms-fbi-director-kash-patels-personal-email-was-hacked/</guid>
+      <pubDate>Fri, 27 Mar 2026 21:41:41 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47548670</comments>
+    </item>
+    <item>
+      <title>SCIPの未来</title>
+      <link>https://sourcegraph.com/blog/the-future-of-scip</link>
+      <description>&lt;p&gt;SCIPの将来の発展を指導するために、コア運営委員会が設立されます。コアステアリング委員会 (CSC) 戦略的方向性、ガバナンス、および最終的なプロトコル定義に関する最終決定は、新しく設立されたコアステアリング委員会 (CSC) に委ねられます。設立コア運営委員会の歓迎SCIP コア運営委員会の設立メンバーを発表できることを大変光栄に思います。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Future of SCIP&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47544238"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://sourcegraph.com/blog/the-future-of-scip'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ananthakumaran:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私は &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;jacktasia&amp;#x2F;dumb-jump" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;jacktasia&amp;#x2F;dumb-jump&lt;/a&gt; を使用して、定義にすばやくジャンプしています。 LSP には当たり外れがあります。一部の言語ではうまく機能しますが、他の言語では実装があまり良くありません。私はツリーシッターをベースにした中間点について考えてきました。 GitHub は Tree-sitter を使用してコード ナビゲーションを強化していますが、残念ながら、オフラインで使用できる優れたものが見つかりません。 Tree-sitter を搭載した同等の ctag がないのはなぜですか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zingar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;定義に何か力があるもの…これは LSP サーバーの実装ですか?それとも LSP の実装に必要なもののサブセットですか? LSP の以前は独自の代替手段でしたか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;skybrian:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;git リポジトリは次のとおりです: &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;scip-code&amp;#x2F;scip" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;scip-code&amp;#x2F;scip&lt;/a&gt;&lt;p&gt;プロトコルを使用して定義されているようです「豊富な Go および Rust バインディング」を備えたバッファー他の多くの言語の実装へのリンクもあります。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;UncleOxidant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ああ、SICPではありません。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://sourcegraph.com/blog/the-future-of-scip</guid>
+      <pubDate>Fri, 27 Mar 2026 15:46:50 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47544238</comments>
     </item>
   </channel>
 </rss>
