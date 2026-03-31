@@ -6,213 +6,87 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 31 Mar 2026 05:19:42 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2026 07:23:57 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Axios 受到 NPM 攻击——恶意版本会释放远程访问木马</title>
-      <link>https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan</link>
-      <description>&lt;p&gt;这两个恶意版本的 axios 本身都不包含一行恶意代码。 1 由受感染的 jasonsaayman 帐户（电子邮件：ifstap@proton）发布。利用此访问权限，攻击者在 1.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Axios compromised on NPM – Malicious versions drop remote access trojan&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47582220"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Google 具有 16k 上下文的 200M 参数时间序列基础模型</title>
+      <link>https://github.com/google-research/timesfm</link>
+      <description>&lt;p&gt;最新模型版本：TimesFM 2. set_float32_matmul_ precision("high") model = timesfm. 5-200m-pytorch”）模型。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Google's 200M-parameter time-series foundation model with 16k context&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47583045"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/google-research/timesfm'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 22 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Surac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所有这些供应链攻击让我对我使用的应用程序感到紧张。如果应用程序使用此类依赖项，这将是有价值的信息，但另一方面，如果程序员向您提供此信息，他们的销售额就会减少。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tkel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;JS 包管理器（pnpm、bun）现在默认会忽略安装后脚本。
-除了 npm 之外，由于遗留原因，它仍然运行它们。&lt;p&gt;您可能应该将默认设置设置为不运行这些脚本。它们大多是不必要的。&lt;p&gt;&lt;pre&gt;&lt;code&gt; ~&amp;#x2F;.npmrc ：
-  忽略脚本=true&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vsgherzi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不是为了打败一匹马，但我一次又一次地看到这种依赖关系。每次我都更加担心生锈也会发生同样的情况。我知道胖标准库方法行不通，但我真的仍然想要一个好的解决方案，让我可以相信包是安全和高质量的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;acheong08:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如今有如此多的扫描仪，这些东西很快就会被发现。我认为我们需要 npm 或其他人拥有一个注册表，只允许通过这些扫描程序的包。甚至可以通过多个扫描仪聚合报告来完成病毒的全部工作。 NPM 发布可信构建环境的证明。 Google 有 oss-rebuild。&lt;p&gt;无论如何，它所需要的只是一个“npm 配置集”来切换注册表。困难的部分是拥有一个能够说服所有不同的安全公司进行协作的中央机构，而不是每个公司都有数十个不同的注册中心。&lt;p&gt;我认为制定必须首先通过哪些检查的政策对于 CVE 出现时的覆盖是有意义的，而不仅仅是硬编码的延迟。&lt;p&gt;（WIP）&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;woeirua:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;供应链攻击是如此可怕，以至于我认为大多数公司都会使用代理来硬分叉许多这些核心库的自己版本。以前不实用。今天这肯定更可行。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wps:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;说实话，你应该如何确保系统上的任何软件都不会引入此功能？&lt;p&gt;正是这样的事情让我想永久切换到 Qubes，只是为了不让我的密码管理器与编译软件处于相同的上下文中。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rtpg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请问我们可以在发布时执行 2FA 步骤吗？我们真的需要一个完全自动化的版本吗？&lt;p&gt;它不会阻止所有攻击，但肯定会阻止其中一些攻击&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dhruv3006:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;174025 名家属。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;0x1ceb00da:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Coded 的名义依赖性为零。整洁的！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bluepeter:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最低发布年龄很糟糕，但我们以前也经历过这样的情况。电子邮件附件过去也很疯狂，然后每个人都添加了隔离延迟和文件阻止以及其他摩擦......最终它有点起作用。不过，这确实感觉更糟，因为更少的阻塞点和执行作为期望的自然部分。&lt;p&gt;编辑：底线是安装将会变得非常复杂。您已经可以看到解决方案的表面...冷却期、维护者分析、沙箱爆炸、锁定文件比较、奇怪的发布路径检查。所有这些加起来就是一个巨大的 PITA，可实现快速轻松的开发。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jmward01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这可能不受欢迎，但是是否有必要的人类行为或只是定时的行为来减慢这样的事情？例如，部署 GH 操作可能需要最终的人工点击，并将其更改为 cli 有 3 天的冷却期，并发送强制安全电子邮件。同样，您在更改电子邮件后 6 小时内切换为只读。这些想法中存在漏洞，但基本概念是将安全性更像物理安全性，您的目标并不总是 100% 阻止，而是减慢攻击者 xxx 分钟，以便给团队其他成员时间来弄清楚发生了什么。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;himata4113:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您使用的是 Linux，我建议大家使用 bwrap 并将所有包管理器别名为“bwrap”。任何具有后期构建逻辑的东西。&lt;p&gt;我已将 bwrap 配置为覆盖：npm、pip、cargo、mvn、gradle，您能想到的所有内容，我只给予它所需的访问权限，无论如何剥离任何对它无用的内容，拒绝 dbus、套接字等一切。 SSH 通过套接字 (ssh-add) 转发。&lt;p&gt;这限制了 CWD 和包管理器缓存的传播半径，并且通常甚至无法工作，因为恶意软件通常期望某些不属于无许可沙箱的内容可用。&lt;p&gt;您可以将其视为运行 Docker 容器，但不需要拥有映像。这与 flatpak 所基于的东西是一样的。&lt;p&gt;对于服务器部署，容器强化是你的朋友。大多数供应链攻击都针对构建脚本，因此只要您将 CI&amp;CD 视为不受信任的环境，您就应该表现良好 - 这方面有相当多的资源，因此不会详细介绍。&lt;p&gt;加分：为 AI 使用相同的沙箱。&lt;p&gt;保持安全。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;0x500x79:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;固定您的依赖项！审核并不要升级到每个全新版本。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;postalcoder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;PSA：npm&amp;#x2F;bun&amp;#x2F;pnpm&amp;#x2F;uv 现在都支持设置包的最小发布年龄。&lt;p&gt;我的 ~&amp;#x2F;.npmrc 中也有 `ignore-scripts=true`。根据分析，仅此一项就可以减轻漏洞。 Bun 和 pnpm 默认情况下不执行生命周期脚本。&lt;p&gt;以下是如何设置全局配置以将最小发布期限设置为 7 天：&lt;p&gt;&lt;pre&gt;&lt;code&gt; ~&amp;#x2F;.config&amp;#x2F;uv&amp;#x2F;uv.toml
-  排除更新=“7天”
-
-  ~&amp;#x2F;.npmrc
-  min-release-age=7 # 天
-  忽略脚本=true
-  
-  ~&amp;#x2F;库&amp;#x2F;首选项&amp;#x2F;pnpm&amp;#x2F;rc
-  最小发布年龄=10080 # 分钟
-  
-  ~&amp;#x2F;.bunfig.toml
-  [安装]
-  最小释放年龄 = 604800 # 秒
-&lt;/code&gt;&lt;/pre&gt;
-（旁注，npm、bun 和 pnpm 都决定为此配置使用不同的时间单位，这很疯狂。）&lt;p&gt;如果您使用 LLM 代理进行开发，您还应该更新 AGENTS.md&amp;#x2F;CLAUDE.md 文件，并提供一些有关如何处理由此配置引起的故障的指导，因为它们&lt;i&gt;将&lt;/i&gt;导致代理徒劳无功地旋转轮子。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tonymet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有人测试过供应链上的通用恶意软件检测吗？就像 clamscan 一样。我尝试测试 LiteLLM hack，但受影响的软件包已被拉出。 Windows Defender AV 有一个基于推理的检测器，可以在签名尚未发布时起作用&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;h4ch1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我什至无法想象 Axios 受到损害的影响规模，几乎所有其他项目都出于某种原因使用它而不是 fetch （我从来不明白为什么）。&lt;p&gt;报告中还有：&lt;p&gt;&gt;这两个恶意版本的 axios 本身都不包含一行恶意代码。相反，两者都注入了一个虚假的依赖项 plain-crypto-js@4.2.1，这是一个从未在 axios 源中的任何位置导入的包，其唯一目的是运行部署跨平台远程访问木马 (RAT) 的安装后脚本&lt;p&gt;对于必须手动批准安装后脚本的 pnpm&amp;#x2F;bun 用户来说是个好消息。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jadar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您想跟我打赌，证书在上次 LiteLLM 事件中被盗了？在什么时候我们必须停止使用这些包管理器，因为它不安全？我必须承认，这些天使用 Python 或 Node.js 让我感到紧张，但这确实是一个普遍的问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;8cvor6j844qw_d6:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;应该增加依赖更新的延迟。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;slopinthebag:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是我拒绝下载 Node 或使用任何 NPM 的原因。值得庆幸的是，其他语言无论如何都更好。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;marjipan200:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;事件跟踪：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;axios&amp;#x2F;axios&amp;#x2F;issues&amp;#x2F;10604" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;axios&amp;#x2F;axios&amp;#x2F;问题&amp;#x2F;10604&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;koolba:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;这两个版本都是使用 axios 首席维护者受损的 npm 凭证发布的，绕过了项目正常的 GitHub Actions CI&amp;#x2F;CD 管道。&lt;p&gt;从去年的某个时候开始，npm 不是强制执行 2FA 吗？这是怎么绕过的？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mtud:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;供应链困境仍在继续&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan</guid>
-      <pubDate>Tue, 31 Mar 2026 02:54:17 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47582220</comments>
+&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;emsign:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这最终能打破股市吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;raghavMultilipi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这已经有几个月了，有人在上面构建过任何东西吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dash2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么时间序列没有提供任何上下文吗？它只是接受了很多组数字的训练？然后你给它一组新的数字，它会在没有上下文的情况下猜测其余的内容？&lt;p&gt;我对这将如何工作的猜测：机器将首先仅根据数据猜测这是它已经看到的类别之一（股价、谷歌趋势猫搜索等），然后它会输出该类别的合理完成。&lt;p&gt;这似乎不适用于外部的任何类别训练数据。我宁愿只使用简单的模型（ARIMA 或其他模型）或理论上的模型。但我知道什么。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jdthedisciple:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;让我直言不讳：香农会告诉我们时间预测是胡说八道：&lt;p&gt;现实世界中的熵比任何模型远程捕获的都要多得多。&lt;p&gt;世界不是我的世界。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ra:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这已经有几个月了，有人在上面构建过任何东西吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wiradikusuma:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;另外： &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;Nixtla&amp;#x2F;nixtla" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;Nixtla&amp;#x2F;nixtla&lt;/a&gt; 和 &lt;a href="https:&amp;#x2F;&amp;#x2F;facebook.github.io&amp;#x2F;先知&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;facebook.github.io&amp;#x2F;先知&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;EmilStenstrom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不知何故发现一般时间序列模型的概念很奇怪。同一模型如何以可靠的方式预测意大利的鸡蛋价格和全球通胀？&lt;p&gt;考虑到没有任何解释可以帮助您相信预测的来源，您甚至会如何使用该模型......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;EmilStenstrom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是博客文章的链接，实际上描述了这是什么：&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;google-research&amp;#x2F;timesfm?tab=readme-ov-file" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;google-research&amp;#x2F;timesfm?tab=readme-ov-fil...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Foobar8568:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不知怎的，我错过了那个。 
+这方面有竞争吗？&lt;p&gt;我在机器学习和时间序列方面一直遇到困难，我需要尝试一下。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/google-research/timesfm</guid>
+      <pubDate>Tue, 31 Mar 2026 05:21:59 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47583045</comments>
     </item>
     <item>
-      <title>Ollama 现已在 Apple Silicon 预览版中由 MLX 提供支持</title>
-      <link>https://ollama.com/blog/mlx</link>
-      <description>&lt;p&gt;克劳德代码：ollama launch claude --model qwen3。 5:35b-a3b-coding-nvfp4 OpenClaw：ollama 启动 openclaw --型号 qwen3。 5:35b-a3b-coding-nvfp4 与模型聊天：ollama run qwen3。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Ollama is now powered by MLX on Apple Silicon in preview&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47582482"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://ollama.com/blog/mlx'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 5 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;AugSun:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“我们可以更快地运行您的简化模型”：&lt;p&gt;#使用 NVFP4 后，模型内存占用量相对于 FP16 减少了 3.5 倍，与 FP8 相比减少了 1.8 倍，同时在&lt;i&gt;某些&lt;/i&gt;模型的&lt;i&gt;关键语言建模&lt;/i&gt;任务上保持模型精度，降级不到 1%。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;LuxBennu:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;已经通过 llama.cpp 在 m2 max 96gb 上运行 qwen 70b 4 位，对于日常工作来说它非常稳定。 mlx 开关很有趣，因为 ollama 之前基本上是在 mac 上开发 llama.cpp，因此原生 mlx 应该意味着苹果芯片上有更好的内存处理能力。很好奇它在更大的模型与 gguf 路径上的比较&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dial9-1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;仍在等待那一天，我可以在 MacOS 上使用本地 llm 轻松运行 Claude Code，只需要 16GB 内存&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;codelion:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它与支持涡轮量化的一些较新的 mlx 推理引擎（例如 optiq）相比如何 - &lt;a href="https:&amp;#x2F;&amp;#x2F;mlx-optiq.pages.dev&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;mlx-optiq.pages.dev&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;babblingfish:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;设备上的法学硕士是未来。与数据中心供应相比，它更安全，解决了推理需求过多的问题，而且用电量也更少。这只是让性能足够好的问题。大多数用户不需要前沿模型性能。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://ollama.com/blog/mlx</guid>
-      <pubDate>Tue, 31 Mar 2026 03:40:45 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47582482</comments>
+      <title>RamAIn (YC W26) 正在招聘</title>
+      <link>https://www.ycombinator.com/companies/ramain/jobs/jezgwo5-ai-ml-research-engineer</link>
+      <description>&lt;p&gt;RamAIn 为企业工作构建了世界上最快的计算机使用代理。 Shourya 此前曾在麦肯锡工作，在那里他亲眼目睹了多少企业工作仍然依赖于与遗留系统的手动交互。他们共同创办了 RamAIn，为企业工作构建最快的计算机使用代理 - 将深入研究与在混乱的真实软件环境中可靠运行的生产级系统相结合。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; RamAIn (YC W26) Is Hiring&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47583712"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/ramain/jobs/jezgwo5-ai-ml-research-engineer'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.ycombinator.com/companies/ramain/jobs/jezgwo5-ai-ml-research-engineer</guid>
+      <pubDate>Tue, 31 Mar 2026 07:01:15 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47583712</comments>
     </item>
     <item>
-      <title>阿尔忒弥斯 II 号飞行不安全</title>
-      <link>https://idlewords.com/2026/03/artemis_ii_is_not_safe_to_fly.htm</link>
-      <description>&lt;p&gt;问题是猎户座上的隔热罩会炸出大块。 Avcoat 隔热罩是一项实验性设计。隔热罩碎片的影响。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Artemis II is not safe to fly&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47582043"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://idlewords.com/2026/03/artemis_ii_is_not_safe_to_fly.htm'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>强烈反对后，GitHub 做出让步，取消了 Copilot 拉取请求广告</title>
+      <link>https://www.theregister.com/2026/03/30/github_copilot_ads_pull_requests/</link>
+      <description>&lt;p&gt;我们通过 GitHub Copilot 编码代理提示发现了一个编程逻辑问题，该提示在拉取请求评论中出现在错误的上下文中。 " 获取我们的技术资源 分享更多关于 AI Copilot 开发人员 更多类似 × 更多关于 AI Copilot 开发人员 GitHub Microsoft 更窄的主题 Active Directory AIOps API Azure Bing BSoD Copilot+ PC DeepSeek Excel Exchange Server Gemini Google AI GPT-3 GPT-4 HoloLens Internet Explorer 大语言模型 LinkedIn 机器学习 MCubed Microsoft 365 Microsoft Build Microsoft Edge Microsoft Fabric Microsoft Ignite Microsoft Office Microsoft Surface Microsoft Teams.NET 神经网络 NLP Office 365 OS/2 Outlook 补丁星期二 Pluton 编程语言检索 增强一代 SharePoint Skype 软件 bug SQL Server 星球大战 张量处理单元 TOPS Visual Studio Visual Studio Code Windows Windows 10 Windows 11 Windows 7 Windows 8 Windows Server Windows Server 2003 Windows Server 2008 Windows Server 2012 Windows Server 2013 Windows Server 2016 Windows Linux 子系统 Windows XP Xbox Xbox 360 更广泛的主题 Bill Gates Git OpenAI自动驾驶汽车 更多关于共享 14 条评论 更多关于 AI Copilot 开发人员 更多类似这些 × 更多关于 AI Copilot 开发人员 GitHub Microsoft 缩小主题 Active Directory AIOps API Azure Bing BSoD Copilot+ PC DeepSeek Excel Exchange Server Gemini Google AI GPT-3 GPT-4 HoloLens 实习生。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; GitHub backs down, kills Copilot pull-request ads after backlash&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47582984"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.theregister.com/2026/03/30/github_copilot_ads_pull_requests/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 14 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;isoprophlex:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;难道他们不能绕地球几圈并只掠过高层大气吗？在坎巴拉太空计划中一直对我很有效，哈哈&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throw-23:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为一个实际上（仍然）是基础研究爱好者的人，阿尔忒弥斯对于价值 1000 亿美元的 1% 人来说似乎是一个有趣的时光，只不过由于它只有 4 名宇航员和支持人员，所以它还不到 1%。  长期以来，我一直反对扰乱美国宇航局的资助，但涉及衍生技术等的争论却显得乏味。  &lt;i&gt;最近&lt;/i&gt;发生的衍生产品无论如何只能被现有的亿万富翁抓住，对整个社会没有太大好处。&lt;p&gt;人类进入太空目前仍然是浪费时间和金钱，很大程度上只是对公关、太空自拍、注意力经济以及对“看似不是”的普遍强调的巨大屈服。你在别处看到的。  请派出机器人，建造一个基地，然后告诉我们什么时候可以同时安置超过 10 个该死的人。  如果&lt;i&gt;失败&lt;/i&gt;，那么至少我们将在机器人研究方面取得成果，&lt;i&gt;现在&lt;/i&gt;可以应用于地球上的其他地方，并帮助我们以后实现更宏伟的抱负。&lt;p&gt;房子着火了，已经有一段时间了，他妈的一切照旧。  老实说，我认为所有这些聪明人都应该负责诸如利用他们的运筹学来改善政府整体状况或大规模高科技就业计划之类的事情。  如果你不想让 NASA 的大佬们尝试修复医疗保健问题，我们至少可以让他们修复 DMV。  天哪，让他们也&lt;i&gt;保留&lt;/i&gt;他们的副产品，这样他们实际上想要成功，并且有一部分预算不会消失。  基础研究和基础科学（仍然）是我们所需要的，但我们需要更具战略性。&lt;p&gt;引人深思：按照事情的发展方向，我们绝对可以期待 NASA 完全转变为一个非正式的、但由公共资助的研究遥测机构，用于亿万富翁的小行星采矿作业，从而更多地承担“公共风险、私人利润”的任务。而我们却为那些在没有帮助的情况下过得很好的人增加了利润。  哦，如果美国宇航局&lt;i&gt;经营&lt;/i&gt;小行星采矿业务获得巨额利润，那么他们可以用软弱的志愿者做任何他们想做的事情作为余兴，也许我们将有足够的现金剩下来资助基本收入。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vsgherzi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我确实很担心，但我希望美国宇航局的核心完好无损。他们是我有幸见到的最善良、最聪明的人。他们不会拿生命开玩笑。我希望所有参与者都能得到最好的结果。我将怀着兴奋和希望观看 Artemis 2 和 3 的发射。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dataflow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不明白的是，为什么&lt;i&gt;宇航员&lt;/i&gt;愿意冒着生命危险去做他们现在必须知道如此危险的事情？冒着死亡的风险真的比冒着被解雇的风险更好吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oritron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我没有跟上 Artemis 的开发，但我广泛阅读了有关挑战者号和哥伦比亚号的信息。文章的这两部分对我来说很突出：&lt;p&gt;&gt;月球到火星副管理员阿米特·刹帝利 (Amit Kshatriya) 表示：“这是非常小的局部区域。有趣的是，如果我们有更大的块并且更明确，我们分析起来就会容易得多。”洛克希德·马丁公司的一位代表在同一​​电话会议上补充说，“那艘处女 Avcoat 还剩下可观的利润。” &lt;p&gt;接下来是：&lt;p&gt;&gt; Avcoat 材料并不是设计成块状的。它应该能够顺利地烧焦和剥落，从而保持隔热罩的整体轮廓。&lt;p&gt;这与两次航天飞机事件相呼应。挑战者：无论如何，都不应该有气体穿过 O 形圈，但当很明显气体正在逸出时， O 形圈被损坏，有人建议这是一个可接受的水平。&lt;p&gt;隔热罩损坏和哥伦比亚号也有类似的情况。&lt;p&gt;在这两种情况下，都使用了一些模型来证明这一决定的合理性，并进行了疯狂的推断，从根本上说，预计该设计“根本”不会在该模式下失败。&lt;p&gt;我知道宇航员对载人航天的重要性的看法太空探索，但我同意这位作者的观点，将其作为一项无人任务来运行似乎是有意义的，并且可能测试新的隔热罩，该隔热罩也将在无人重返大气层中取代阿耳忒弥斯二号设计。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wmf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;相关：美国宇航局的猎户座太空舱是燃烧的垃圾 作者：Casey Handmer &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45794242"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=45794242&lt;/a&gt;&lt;p&gt;Orion 的隔热罩真的安全吗？美国宇航局新任局长在飞行前夕进行最终审查。 &lt;a href="https:&amp;#x2F;&amp;#x2F;arstechnica.com&amp;#x2F;space&amp;#x2F;2026&amp;#x2F;01&amp;#x2F;nasa-chief-reviews-orion-heat-shield-expresses-full-confidence-in-it-for-artemis-ii&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;arstechnica.com&amp;#x2F;space&amp;#x2F;2026&amp;#x2F;01&amp;#x2F;nasa-chief-reviews-ori...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delichon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很不勇敢，但我愿意自愿。这次旅行比我余生计划的任何事情都精彩得多。如果护盾在重返大气层时失效，也只会造成几秒钟的伤害。因此，如果工作人员、后备人员和他们的后备人员读到这篇文章后有什么想法，请联系我。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kristianp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;问题是猎户座上的隔热罩会炸出大块。不是某种象征性的、贬义的意义上的，而是当美国宇航局 (NASA) 在 2022 年执行这一确切任务时，大块物质在重返大气层期间从猎户座的隔热罩中吹出，留下了痕迹。嵌入隔热罩中的大螺栓也部分被侵蚀和熔化。&lt;p&gt;有趣的措辞。  这不是什么新闻，自阿尔忒弥斯一号以来以及在此之前的过去三年多时间里，人们一直对阿尔忒弥斯二号的安全性表示担忧。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bsilvereagle:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; “我们的测试设施无法达到实际再入航天器所能达到的热通量、压力、剪切应力等的综合水平。我们总是需要等待飞行测试才能获得我们的系统可以正常运行的最终认证。”——猎户座隔热罩副经理杰里米·范德卡姆 (Jeremy VanderKam) 在 2022 年发表讲话&lt;p&gt;这是一个奇怪的说法，考虑到 NASA 过去有 2 个能够做到这一点的设施 - 一个在约翰逊，一个在艾姆斯。它们被合并（&lt;a href="https:&amp;#x2F;&amp;#x2F;ntrs.nasa.gov&amp;#x2F;api&amp;#x2F;itations&amp;#x2F;20160001258&amp;#x2F;downloads&amp;#x2F;20160001258.pdf" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ntrs.nasa.gov&amp;#x2F;api&amp;#x2F;itations&amp;#x2F;20160001258&amp;#x2F;downloads&amp;#x2F;20...&lt;/a&gt;），但艾姆斯的 Arc Jet Complex 似乎仍在运行&lt;a href="https:&amp;#x2F;&amp;#x2F;www.nasa.gov&amp;#x2F;ames&amp;#x2F;arcjet-complex&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.nasa.gov&amp;#x2F;ames&amp;#x2F;arcjet-complex&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CoastalCoder:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这篇文章看起来很引人注目，但经验告诉我在做出判断之前要先了解故事的两面。&lt;p&gt;有人知道 NASA 对这篇文章是否有详细的回应吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;themafia:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;如果商业载人太空舱（SpaceX Dragon 或波音 Starliner）返回地球时出现猎户座上出现的那种损坏，NASA 将坚持重新设计并进行无人试飞来验证它。&lt;p&gt;你确定吗？&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;spaceflightnow.com&amp;#x2F;2022&amp;#x2F;05&amp;#x2F;24&amp;#x2F;spacex-swapping-heat-shield-for-next-crew-mission- due to-manufacturing-defect&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;spaceflightnow.com&amp;#x2F;2022&amp;#x2F;05&amp;#x2F;24&amp;#x2F;spacex-swapping-heat-s...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;EA-3167:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作者似乎对阿耳忒弥斯二世有着相当广泛的蔑视……强烈的蔑视。虽然在一系列投诉中提到过对隔热罩的担忧，但它离最重要的还差得远。&lt;p&gt;我不是火箭科学家，但作者也不是。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anitil:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一本令人担忧的读物，我不太确定阿耳忒弥斯的驱动动机是什么，但以下内容至少回答了我的部分问题 -&lt;p&gt;&gt;背景是一个月球计划，该计划花费了近 1000 亿美元，25 年却毫无成果，而该机构刚刚经历了大规模解雇，其科学预算也经历了濒临死亡的经历。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;johng:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很棒的阅读和有趣的文章。很难相信美国宇航局会仅仅为了保全面子而拿宇航员的生命冒险，但这似乎就是将要发生的事情。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://idlewords.com/2026/03/artemis_ii_is_not_safe_to_fly.htm</guid>
-      <pubDate>Tue, 31 Mar 2026 02:23:50 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47582043</comments>
+&lt;p&gt;&lt;strong&gt;Top 15 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;crvdgc:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt; GitHub 没有也不打算在 GitHub 中包含广告&lt;p&gt;他们已经这么做了！ &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;orgs&amp;#x2F;社区&amp;#x2F;讨论&amp;#x2F;65245" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;orgs&amp;#x2F;社区&amp;#x2F;讨论&amp;#x2F;65245&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;puppycodes:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对 Raycast 参与这一营销计划并不感到惊讶。他们在不应该出现的地方投放广告，污染了自己的产品。无论谁管理营销团队，都需要吸取教训，不要惹恼您的用户群。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;devsda:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因此，在 Windows 清理公告发布后，Github 上没有人认为“也许我们应该审查所有副驾驶集成，以避免 MS 再次陷入尴尬”。 ?&lt;p&gt;这表明，要么这只是 Windows 组织的公告，而不是 MS 的文化变革，要么只是暂时转移日益增多的批评的空洞承诺。&lt;p&gt;无论哪种方式，对于那些认为这是 MS 真正的内省和转变的人来说，这都是令人失望的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;akmarinov:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;还记得当他们想对自托管跑步者收费并“退缩”时，让我们看看它能持续多久&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;heipei:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我昨天刚刚看到这个标题，认为这只是 GitHub 缓慢衰落过程中的另一个愚蠢的错误。今天发现这是故意的，那就更糟糕了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;plagiarist:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;首先，我对愚蠢的人工智能公司决定编辑任何东西的公关描述感到愤怒。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Dansvidania:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;微软剧本&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aquir:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很好奇 Raycast 的反应是什么。他们只是陷入了交火，或者故意购买了与 Copilot 一起投放的广告&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;synack:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;然而，Sourceforge 几十年来一直在开源项目上投放广告。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;altmanaltman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;罗杰斯说，听到社区对曼森的帖子及其引发的混乱的反馈，帮助他意识到“经过反思”，让 Copilot 在不知情的情况下对人类编写的 PR 进行更改“是错误的判断。”&lt;p&gt;幸运的是，他们需要社区反馈才能意识到这是错误的。如果没有反馈，很难猜出它是错的！很高兴知道这些人负责构建 Copilot。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;scbrg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;“你们只是一群生活在过去的狂热的、痴迷于 Linux 的微软仇恨者。微软现在是好人了。”&lt;p&gt;-- 大约。大家都在这儿，在 GitHub 收购期间&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;问题是 Microslop 没有思考。插入广告有什么意义？这只会增加垃圾邮件的输出。当然，Microslop 可能认为这有助于增加他们的收入，但许多人讨厌垃圾广告。在我开始使用 ublock origin 后，就再也没有办法再回到不安全的“ads-down-the-turtles”方法了。广告浪费人们的时间和金钱。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yosamino:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;将广告称为“产品提示”好像每个人都太愚蠢了，无法理解这意味着什么。&lt;p&gt;他们创造了一种令人惊叹的技术，通常与魔法没有什么区别，然后用它来投放广告，然后——抱歉离题了——杀人。&lt;p&gt;这确实是本世纪的名言：&lt;p&gt;&gt;我们这一代最优秀的头脑正在思考如何让人们点击广告&lt;p&gt;真是浪费。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Animats:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;微软稍后可能会尝试将其重新引入。他们已经通过其他入侵做到了这一点。&lt;p&gt;从 Github 迁移的优先级刚刚增加。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aurareturn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;微软确实是把人工智能强加给每个人的最严重的罪犯。&lt;p&gt;我支持人工智能的采用，但微软令人厌恶地强迫 Copilot 参与所有事情的方式就是让人们讨厌人工智能的方式。&lt;p&gt;我猜高层管理人员告诉产品团队要对他们拥有的每一款产品进行人工智能化。然后团队就会急于将一些东西拿出来，无论它们是否有意义。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.theregister.com/2026/03/30/github_copilot_ads_pull_requests/</guid>
+      <pubDate>Tue, 31 Mar 2026 05:11:24 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47582984</comments>
     </item>
     <item>
-      <title>语义 – 通过 AST 逻辑图将 LLM“代理循环”减少 27.78%</title>
-      <link>https://github.com/concensure/Semantic</link>
-      <description>&lt;p&gt;语义代理认知层 (MVP) 本地 Rust 服务，用于通过符号、跨度和逻辑图进行确定性代码检索。可选的令牌跟踪插件 此存储库中的可选本地伴侣可以跟踪检索、ide_autoroute 和编辑中每个任务的令牌使用情况。语义/令牌跟踪。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Semantic – Reducing LLM "Agent Loops" by 27.78% via AST Logic Graphs&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47582545"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/concensure/Semantic'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gbnwl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好吧，既然 concensure 和 rohan2003 已经完成了他们的广告，我将借此机会成为该线程上的第一个非自我推销评论。&lt;p&gt;根据这篇文章当前在首页的位置，它似乎符合我们过去几个月都看到的模式：HN 最终成为大多数人，相信编码代理的有用性，并通过以下方式庆祝这一点：重新发现每一个个人“我通过做[空白]事情改进了CC”从头开始项目。&lt;p&gt;仅此而已。美好的。但我真正好奇的是，HN 社区是否真的看了像这样的创作者发布的随机 LLM 生成的统计呕吐文本并发现自己被说服了？&lt;p&gt;我问是因为如果你是随机统计呕吐的新手，你很快就会发现自己必须一直处理它，而我还没有找到关于如何在这种噪音中找到信号的良好元讨论。我曾经使用 HN 或选定的 Reddit 社区点赞作为“可能重要”的第一关。信号，但情况变得越来越糟，像这样的帖子在没有任何真正讨论的情况下就被推到了顶部。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rs545837:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴看到更多的人为代理构建树守护者+逻辑图。我们一直在与 sem 一起深入研究这个方向&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;concensure:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;问题：大多数基于 RAG 的编码工具将代码视为非结构化文本，依赖于概率向量搜索，而概率向量搜索常常会错过关键的函数依赖性。这导致“编辑-失败-重试”。 &lt;p&gt;解决方案：Semantic 使用本地 AST（抽象语法树）解析器来构建代码库的逻辑节点图。它不是猜测相关内容，而是确定性地检索任务所需的特定功能骨架和调用站点签名。
-转变：从“代币储蓄”到“代币储蓄” “Step Savings”&lt;p&gt;该项目的早期版本侧重于最大限度地减少每次调用的代币。然而，我们最新的基准测试表明，在高精度上下文中投入更多代币会导致开发人员干预步骤显着减少。
-最新 A&amp;#x2F;B 基准 (2026-03-27)&lt;p&gt;&lt;pre&gt;&lt;code&gt; 提供者：OpenAI (gpt-4o &amp;#x2F; o1)
-
-    套件：11 任务核心套件（原子编码任务）
-
-    配置：autoroute_first=true，single_file_fast_path=false
-&lt;/code&gt;&lt;/pre&gt;
-运行变体令牌增量（每次调用） 步骤节省（与基线相比） 任务成功
-基线 (2026-03-13) -18.62% — 11&amp;#x2F;11
-硬化 A +8.07% — 11&amp;#x2F;11
-增强 (2026-03-27) -6.73% +27.78% 11&amp;#x2F;11
-要点：&lt;p&gt;&lt;pre&gt;&lt;code&gt; 精度的投资回报率：虽然“增强”精度run 比每个请求的基准多使用大约 6.73% 的令牌，实现成功解决方案所需的步骤减少了 27.78%。
-
-    确定性准确性：通过向法学硕士提供“逻辑骨架”我们消除了“迷失在中间”的块，而不是模糊相似性搜索块。影响。代理在写入一行之前就了解编辑的后果。
-
-    上下文密度：我们有效地用廉价的输入代币来换取昂贵的开发人员时间和代理计算周期。
-&lt;/code&gt;&lt;/pre&gt;
-docs&amp;#x2F;AB_TEST_DEV_RESULTS.md 中提供了任务套件和方法的详细细分。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/concensure/Semantic</guid>
-      <pubDate>Tue, 31 Mar 2026 03:50:07 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47582545</comments>
-    </item>
-    <item>
-      <title>Show HN：我使用 AI 代理将草图变成了我孩子的 3D 打印钉板</title>
-      <link>https://github.com/virpo/pegboard</link>
-      <description>&lt;p&gt;调整尺寸 网格间距：40.txt python script/generate_pegboard_shapes.txt py python 脚本/generate_pegboard_gears.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: I turned a sketch into a 3D-print pegboard for my kid with an AI agent&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47580910"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/virpo/pegboard'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>索尼因 NAND 短缺而暂停存储卡出货</title>
+      <link>https://www.techzine.eu/news/devices/140058/sony-halts-memory-card-shipments-due-to-nand-shortage/</link>
+      <description>&lt;p&gt;索尼目前无法履行 CFexpress Type A、CFexpress Type B 和 SDXC/SDHC 存储卡的订单。这种类型的 NAND 已经变得稀缺。美光领先索尼 通过退出消费者供应，索尼选择了一条熟悉的道路。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Sony halts memory card shipments due to NAND shortage&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47582990"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.techzine.eu/news/devices/140058/sony-halts-memory-card-shipments-due-to-nand-shortage/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rakeshd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个非常酷的项目！我可以想象你的孩子喜欢看到他们的草图像这样栩栩如生。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;royschwartz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太棒了。从草图到实体玩具的流程是人工智能的一种令人满意的使用——您跳过了繁琐的 CAD 建模部分，而是将时间花在与您的孩子一起实际迭代适合度和感觉上。这就是梦想。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;laser9:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这看起来棒极了！您可以更上一层楼并开始生成乐高积木！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;prodigycorp:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;干得好。&lt;p&gt;代理人 x 家长组合已成为我在法学硕士领域最喜欢的利基市场。在我们可支配时间最少的时代，它释放了如此多的创造力。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/virpo/pegboard</guid>
-      <pubDate>Mon, 30 Mar 2026 23:20:02 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47580910</comments>
-    </item>
-    <item>
-      <title>话匣子先生是维多利亚时代受过道德训练的模特</title>
-      <link>https://simonwillison.net/2026/Mar/30/mr-chatterbox/</link>
-      <description>&lt;p&gt;Chatterbox，一种完全根据大英图书馆的不受版权保护的文本进行训练的语言模型。用不受版权保护的文本训练的模型会是什么样子聊天？ Hugging Face 的 05GB 模型文件。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Mr. Chatterbox is a Victorian-era ethically trained model&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47582056"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://simonwillison.net/2026/Mar/30/mr-chatterbox/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://simonwillison.net/2026/Mar/30/mr-chatterbox/</guid>
-      <pubDate>Tue, 31 Mar 2026 02:26:15 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47582056</comments>
-    </item>
-    <item>
-      <title>R3 Bio 推出“无脑克隆”来充当备用人体</title>
-      <link>https://www.technologyreview.com/2026/03/30/1134780/r3-bio-brainless-human-clones-full-body-replacement-john-schloendorn-aging-longevity/</link>
-      <description>&lt;p&gt;R3 不想让这个故事被讲述。这些挑战中最重要的是它坚持认为“任何有关意图或阴谋创造克隆人或脑损伤人类的指控都是绝对错误的。是否也可以创造出没有太多大脑的克隆人作为备用器官的道德来源。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; R3 Bio pitched “brainless clones” to serve the role of backup human bodies&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47572748"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.technologyreview.com/2026/03/30/1134780/r3-bio-brainless-human-clones-full-body-replacement-john-schloendorn-aging-longevity/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 21 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;scotty79:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;一旦我看到能够保护神经损伤患者的身体不因缺乏运动而消瘦的技术，我就会开始相信无脑克隆人的存在。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;metalman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;像往常一样，大谎言就在标题中，“隐秘”，哦哦！啦啦，然后有一个奇怪的想法，一个全尺寸的人类底盘将看起来光秃秃的，准备好收割，不，唯一没有头脑的人是少数有钱和绝望的人，他们在一些东西上投入了几亿美元，如果没有其他原因，几乎肯定会被关闭，道德 
-孕育着脑死亡（肯定会有大脑）的克隆体。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jostmey:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我假设该提议是敲除 Lim1 基因，该基因在其他动物中会产生无脑表型。你无法将大脑换成这个无头的身体（假设它可以完全发育），但这种方法可以用于医学研究，并有可能解决器官捐赠者的问题，假设它符合道德&lt;p&gt;此外，仅仅因为 Lem1 创造了一只无头老鼠并不意味着它会在人类身上做同样的事情。但我想这就是灵长类动物测试将揭示的内容&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwway120385:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我正在心里读着这个家伙用《边缘》杂志沃尔特的声音引用的所有引言。&lt;p&gt;这项研究的要点在于，它 A) 完全精神错乱，B) 如果成功，这将成为人们在余生积累财富的另一条道路。此外，如果它最终成功，世界将由在此过程中幸存下来的亿万富翁或他们的孩子的脑部严重受损的克隆人统治。&lt;p&gt;看看肉类的未来。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;throwaway85825:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;更好的仿生学是机器人技术的一个发展领域，但无脑的人类是不可能的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anigbrowl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每当我听说一家科技公司试图实现一些反乌托邦、噩梦般的科幻愿景时，我就会想起《发展受阻》中的托比亚斯，他说……但这可能对我们有用。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;api:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果它真的是无脑的，那么我不认为有什么重大的道德问题。但我也不认为人们被允许这样做，因为它远远超出了“恶心”的门槛。即使从技术上讲这是合乎道德的，这也是恶心和令人不安的。&lt;p&gt;我还认为，做到这一点比听起来要困难得多。如果没有某种人工刺激，身体在胎儿阶段就无法正常发育。&lt;p&gt;打印器官可能更容易发挥作用，也更容易被接受。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;trhway:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它不是无脑的：&lt;p&gt;“你自己的婴儿版本，只有足够的大脑结构来生存”&lt;p&gt;“Schloendorn 的一个主要灵感来自于一种出生缺陷，即孩子出生时就缺失了大部分皮质半球；他向人们展示了这些孩子几乎空空如也的头骨的医学扫描，作为身体在没有大脑的情况下也能生存的证据。 &amp;quot;&lt;p&gt;这看起来像是硬件固件与软件。克隆将附带固件。考虑到大脑也会老化，人们以后可能会希望较低级别的大脑部分也得到更新 - 即杏仁核、较低级别的视觉皮层等 - 以便在固件之上进行克隆。&lt;p&gt;为了获得备件，人们会期望首先生长单个器官，但也可能会发生将它们一起生长为“无脑”的情况。身体可能会更简单。&lt;p&gt;从伦理角度来看，我认为我们正在进入相当噩梦般的场景 - 正如文章中提到的，女性将被用作代理人，因此今天的亿万富翁已经可以克隆自己，CRISP-in 大脑抑制（我们希望他们会这样做），并获得这样的身体克隆作为零件的来源。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;caycep:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些人和布伦特伍德的健康影响者人群都在吸烟&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nathanh4903:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这类研究似乎总是假设我们是机器中的幽灵：大脑才是真正重要的，而身体只不过是一套衣服。身心问题让我着迷，我对任何持有确定立场的人都持怀疑态度。&lt;p&gt;唯一可以肯定的是，关于身心问题的争论将不再只是哲学和神学问题，而是一个具有现实世界意义的实际问题。令人兴奋又可怕的是，我们可能很快就会有反驳或支持二元论的经验数据。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;babblingfish:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为这个想法行不通。有一种常见的误解，认为我们的大脑控制我们的身体，就像软件控制硬件一样。事实上，我们的大脑与身体的其他部分有着内在的联系：通过中枢神经系统、感觉神经元和运动神经元。你不能仅仅交换我们的大脑。它从根本上与我们身体的其他部分融为一体。如果你克隆某人，中枢神经系统和器官之间的神经元连接将不一样，因为这些互连是在一生中发展的，并不是在出生时就预先确定的。&lt;p&gt;这对我来说也是非常不道德的。让我想起了《别让我走》作者：石黑一雄。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;moffers:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴知道道德线是一定数量的人类脑细胞。不算太多，也不算太少。完美、合乎道德的金额。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rolandog:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这一切都给我带来了 Altered Carbon 的感觉。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wiradikusuma:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;听起来像《副本》（电视剧）。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;goda90:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢读一本以《蝎子之家》为前提的青年科幻小说[0]。主角是一个克隆人，他的主人是一个足够强大的毒枭，可以在没有他的器官克隆人的情况下逃脱惩罚。大脑在出生时就像其他人一样残疾。&lt;p&gt;[0]&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;The_House_of_the_Scorpion" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;The_House_of_the_Scorpion&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;johnpdoe1234:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;备件（1996 年，哈珀柯林斯出版社）– ISBN 978-0002246569
-迈克尔·马歇尔·史密斯&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nwah1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;将含有不发育大脑信号的基因的器官移植到体内是否存在危险？这些基因会潜在地影响你的实际大脑吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Animats:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;克隆现在效果相当好。这里有六匹马球小马，Cuartetera 01 到 06，都是著名马球小马的克隆体。[1]它们的主人一直在骑着这些母马赢得世界级的马球比赛。他们强壮、健康、非常真实。&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.science.org&amp;#x2F;content&amp;#x2F;article&amp;#x2F;six-cloned-horses-help-rider-win-prestigious-polo-match" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.science.org&amp;#x2F;内容&amp;#x2F;文章&amp;#x2F;六克隆马-他...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andrewshadura:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这个网站几乎无法阅读。弹出窗口，“另请参阅”阻塞，很多干扰。我想知道创作者是否尝试过实际使用它。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;XorNot:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这里的问题不是这个想法，而是绝对没有人做过任何有用的前期研究。&lt;p&gt;当脊髓损伤的预后仍然是终身瘫痪时，关于替代身体的讨论相当丰富。&lt;p&gt;如果我将这个想法进一步扩展一点：我们更有可能开发出有用且侵入性较小的复兴技术，然后尝试进行外科身体移植，因为你需要修复该技术脊髓损伤（这是强制性的）无论如何都会有更多的重叠和适用性。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;btwotch:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;听起来有点像《孤岛》 2005年的电影。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.technologyreview.com/2026/03/30/1134780/r3-bio-brainless-human-clones-full-body-replacement-john-schloendorn-aging-longevity/</guid>
-      <pubDate>Mon, 30 Mar 2026 11:02:14 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47572748</comments>
-    </item>
-    <item>
-      <title>通过负责任地披露量子漏洞来保护加密货币</title>
-      <link>https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/</link>
-      <description>&lt;p&gt;在一份新的白皮书中，我们表明，未来的量子计算机可能会打破椭圆曲线密码学，以比以前意识到的更少的量子位和门来保护加密货币和其他系统。量子资源估计量子计算机有望解决其他不可能的问题，包括化学、药物发现和能源领域的例子。具体来说，我们编译了两个量子电路（一系列量子门），用于实现 ECDLP-256 的 Shor 算法：一个使用少于 1,200 个逻辑量子位和 9000 万个 Toffoli 门，另一个使用少于 1,450 个逻辑量子位和 7000 万个 Toffoli 门。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Safeguarding cryptocurrency by disclosing quantum vulnerabilities responsibly&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47582418"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/</guid>
-      <pubDate>Tue, 31 Mar 2026 03:28:03 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47582418</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;noobermin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;OpenAI不是取消了一堆内存订单吗？宣布这一点似乎为时过早，因为市场上很快就会出现内存过剩。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;HerbManic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为记忆棒默哀片刻……是的，应该可以了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tomalaci:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得所有这些硬件短缺都会加剧二手电子产品及其维修专家的翻新。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;globular-toast:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一件好事。出去拍照等等都是非常浪费的。你可以让人工智能创造你所有的记忆，然后呆在家里。&lt;p&gt;“亲爱的，你还记得科孚岛吗？”&lt;p&gt;“等一下，让我生成我的记忆。”&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.techzine.eu/news/devices/140058/sony-halts-memory-card-shipments-due-to-nand-shortage/</guid>
+      <pubDate>Tue, 31 Mar 2026 05:12:35 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47582990</comments>
     </item>
   </channel>
 </rss>
