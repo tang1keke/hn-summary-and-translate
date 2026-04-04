@@ -6,33 +6,74 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Sat, 04 Apr 2026 09:42:48 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 Apr 2026 13:05:23 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>Some Unusual Trees</title>
-      <link>https://thoughts.wyounas.com/p/some-unusual-trees</link>
-      <description>&lt;p&gt;Banyan tree covering 4. Traveller’s tree of Madagascar, photo: Dicklyon, (CC, BY-SA 4. Talipot, photo: PraveenP.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47637287"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://thoughts.wyounas.com/p/some-unusual-trees'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://thoughts.wyounas.com/p/some-unusual-trees</guid>
-      <pubDate>Sat, 04 Apr 2026 09:04:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47637287</comments>
+      <title>Apple: Embarrassingly Simple Self-Distillation Improves Code Generation</title>
+      <link>https://arxiv.org/abs/2604.01193</link>
+      <description>&lt;p&gt;) Connected Papers Toggle Connected Papers (What is Connected Papers. ) Litmaps Toggle Litmaps (What is Litmaps. ) Links to Code Toggle Papers with Code (What is Papers with Code.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47637757"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://arxiv.org/abs/2604.01193'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vishnugupta:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Can someone please eli5 this to a friend web developer? I read the abstract but couldn’t understand much.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drooby:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Fascinating...&lt;p&gt;This feels eerily similar to sleep consolidation or synaptic pruning&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;l5870uoo9y:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; Our method, simple self-distillation (SSD), is embarrassingly simple: sample solutions from the base model with specified temperature and truncation, then fine-tune on those raw, unverified samples via standard cross-entropy loss.&lt;p&gt;So you prompt the base model for answer and then rerun the prompt with the answer from the first run?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;smallerize:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I don&amp;#x27;t suppose they published the improved models?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wg0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;After TurboQuant and Gemma 4, came across the following video[0] running Gemma on local machine at 50 token&amp;#x2F;second.&lt;p&gt;That already looks like Sonnet 3x and 4 level capabilities to me where the model in question (Gemma 4) set ups whole python project with a UI and installs python libraries using uv etc.&lt;p&gt;Add this Simple Self Distillation to the picture and by 2028 I see cheaper coding model providers with much more generous usage limits in the future and power users would be mostly running their own models anyway.&lt;p&gt;Anyone using these models as &amp;quot;non-deterministic transpilers&amp;quot; from natural language to code (experienced engineers who can write code themselves) would probably not be paying to any AI providers.&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=-_hC-C_Drcw" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;watch?v=-_hC-C_Drcw&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bensyverson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Really fascinating how this works; it&amp;#x27;s basically context-aware decoding. From the paper:&lt;p&gt;&amp;gt; Code interleaves &lt;i&gt;fork&lt;/i&gt; positions, where several continuations are genuinely plausible and may correspond to different solution approaches, with &lt;i&gt;lock&lt;/i&gt; positions, where syntax and semantics leave little ambiguity but a low-probability distractor tail still remains… The best global decoding setting is therefore necessarily a compromise; we call this tension the &lt;i&gt;precision-exploration conflict.&lt;/i&gt;&lt;p&gt;In other words, just like us, the model needs to shift from &amp;quot;exploration&amp;quot; in &amp;quot;fork&amp;quot; mode (divergent thinking to produce a creative solution) to &amp;quot;precision&amp;quot; in &amp;quot;lock&amp;quot; mode (producing syntactically correct code).&lt;p&gt;What this paper shows is that their simple technique (SSD) can improve the ranking of optimal tokens in &lt;i&gt;both&lt;/i&gt; lock and fork positions, meaning the model is more likely to explore when it should be exploring, and more likely to be precise when it needs to be.&lt;p&gt;I love that we&amp;#x27;re still learning the emergent properties of LLMs!&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;roger_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Skimmed this but don&amp;#x27;t have an intuitive understanding of why this works and how temperature and truncation factor in.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ape4:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Shouldn&amp;#x27;t a scientific paper be using metric units (like 30T) rather than 30B.&lt;p&gt;There are two distinct billions.   &lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Billion" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Billion&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;politelemon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;It&amp;#x27;s cringe worthy to see that the original paper itself is editorialised.&lt;p&gt;Title should be: Simple Self-Distillation Improves Code Generation&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;khalic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Incredible, will translate to better coding models in the near future.&lt;p&gt;We really need to develop better tools to understand what&amp;#x27;s happening inside these NNs. Working with high-D spaces is not something we&amp;#x27;re good at, and we&amp;#x27;re basically throwing stuff at it and seeing if it sticks.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;0x3f:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Haven&amp;#x27;t read the paper yet, but it is interesting how seemingly simple many breakthroughs in ML are.  Even transformers are like that.  Maybe it&amp;#x27;s hindsight bias.&lt;p&gt;I suppose we just don&amp;#x27;t have a deeper underlying theory to lean on and help us &amp;#x27;design&amp;#x27; anything.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jofzar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; simple self-distillation (SSD):&lt;p&gt;Sorry apple, SSD is already taken, you can&amp;#x27;t use that acronym.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://arxiv.org/abs/2604.01193</guid>
+      <pubDate>Sat, 04 Apr 2026 10:26:21 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47637757</comments>
     </item>
     <item>
-      <title>Claude Code Found a Linux Vulnerability Hidden for 23 Years</title>
-      <link>https://mtlynch.io/claude-code-found-linux-vulnerability/</link>
-      <description>&lt;p&gt;(2) - Client A requests a lock file. The server grants the lock acquisition. (5) Client B requests access to the same lock file as Client A from (2).&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47633855"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://mtlynch.io/claude-code-found-linux-vulnerability/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>The CMS is dead. Long live the CMS</title>
+      <link>https://next.jazzsequence.com/posts/the-cms-is-dead-long-live-the-cms</link>
+      <description>&lt;p&gt;But that idea is old enough to drink. But the idea that AI can migrate your entire site away from your current stack seems incredibly shortsighted. I think it’s great and I genuinely hope that you are reading this post on that site.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47638075"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://next.jazzsequence.com/posts/the-cms-is-dead-long-live-the-cms'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;up2isomorphism:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;But on the other hand, Claude might introduce more vulnerability than it discovered.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jazz9k:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This does sound great, but the cost of tokens will prevent most companies from using agents to secure their code.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eichin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;An explanation of the Claude Opus 4.6 linux kernel security findings as presented by Nicholas Carlini at unpromptedcon.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://mtlynch.io/claude-code-found-linux-vulnerability/</guid>
-      <pubDate>Fri, 03 Apr 2026 23:46:51 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47633855</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gman83:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I never really understood the argument, you can design the frontend with AI anyway and then use WordPress as the CMS for clients. Clients want to be able to log in, update CPTs, edit a calendar, post pictures, things like that. Surely the idea isn&amp;#x27;t to vibe-code an admin panel&amp;#x2F;cms from scratch for every project?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;librasteve:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I’m not sure that I buy all the points made. I can imagine an AI centric CMS where the technical interface (implement this site on MySQL, host it there, use Next.js, etc) is distinct from the content interface (change store hours) or even the design (change the background).&lt;p&gt;I have used Wordpress a lot (too much) and came to the view that for most websites it is just overkill. So I built &lt;a href="https:&amp;#x2F;&amp;#x2F;harcstack.org" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;harcstack.org&lt;/a&gt; and vowed to write all my new sites in actual code.&lt;p&gt;HTMX to the rescue since you can write server side code in a sensible way and still have quite a dymanic UX.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;btown:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The same way coding agents don’t replace the need for an IDE, content generation needs to support arbitrary human-to-agent handoffs, where the human can say “this is the wrong direction, I sketched this change of what I want it to look like, see how it’s different and apply that pattern.”&lt;p&gt;And, in the broadest sense, that human interface is a CMS; the agent is just another editor, albeit one that happens to read and write raw data rather than using a WYSIWIG (or similar) editor.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;reconnecting:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;There is indeed not always a need for WordPress. I have been using ProcessWire (1) for over a decade. Open-source, zero dependencies, no-nonsense CMS — and when it comes time to build a new website, I go back to it even in 2026, because you make it once and it works for 10 years and counting.&lt;p&gt;Cloudflare is just jealous that most of their customers are actually running WordPress, but this is not something they will be able to solve with AI hype.&lt;p&gt;1. &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;processwire&amp;#x2F;processwire" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;processwire&amp;#x2F;processwire&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://next.jazzsequence.com/posts/the-cms-is-dead-long-live-the-cms</guid>
+      <pubDate>Sat, 04 Apr 2026 11:24:30 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47638075</comments>
+    </item>
+    <item>
+      <title>Mbodi AI (YC P25) Is Hiring</title>
+      <link>https://www.ycombinator.com/companies/mbodi-ai/jobs/mf9L3sy-senior-robotics-engineer-systems-controls</link>
+      <description>&lt;p&gt;Mbodi is an embodied AI platform that makes robots learn and operate like humans. Backed by top investors and working with global industrial partners, such as ABB, we’re redefining what’s possible in robotics and automation. Mbodi is an embodied AI platform that makes robots learn like humans, with natural language.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47638270"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ycombinator.com/companies/mbodi-ai/jobs/mf9L3sy-senior-robotics-engineer-systems-controls'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.ycombinator.com/companies/mbodi-ai/jobs/mf9L3sy-senior-robotics-engineer-systems-controls</guid>
+      <pubDate>Sat, 04 Apr 2026 12:00:38 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47638270</comments>
+    </item>
+    <item>
+      <title>Jack Dorsey says Block employees now bring prototypes, not slides, to meetings</title>
+      <link>https://www.businessinsider.com/block-ceo-jack-dorsey-bring-prototypes-not-slide-decks-meetings-2026-4</link>
+      <description>&lt;p&gt;By Shubhangi Goel You're currently following this author. Unsubscribe via the link in your email. Follow Shubhangi Goel Every time Shubhangi publishes a story, you’ll get an alert straight to your inbox.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47638246"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.businessinsider.com/block-ceo-jack-dorsey-bring-prototypes-not-slide-decks-meetings-2026-4'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pwarner:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I work at a less innovative place, and I see out product managers coming with prototypes, at least solid mock ups rather than just a jira.
+They socialize it with potential users, they iterate, they find missing requirements, it&amp;#x27;s pretty powerful. 
+The net result is we&amp;#x27;re building better features faster.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delphic-frog:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I feel like he&amp;#x27;s just doing it for attention.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.businessinsider.com/block-ceo-jack-dorsey-bring-prototypes-not-slide-decks-meetings-2026-4</guid>
+      <pubDate>Sat, 04 Apr 2026 11:57:14 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47638246</comments>
     </item>
   </channel>
 </rss>
