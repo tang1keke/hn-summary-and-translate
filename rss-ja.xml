@@ -6,146 +6,106 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Japanese</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 05 Apr 2026 18:56:51 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2026 21:41:20 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ja.xml"/>
     <item>
-      <title>(夜間) Rust のテールコールインタープリタ</title>
-      <link>https://www.mattkeeter.com/blog/2026-04-05-tailcall/</link>
-      <description>&lt;p&gt;Uxn は、256 個の命令を備えたシンプルなスタック マシンです。 2 つの部分があります: プログラムの状態を関数の引数に保存し、システムの呼び出し規則に基づいてレジスタにマップされます。 次の関数を呼び出して各関数を終了します。これは今日 Rust で書くことができます。これが inc 関数です: const TABLE: FunctionTable = FunctionTable([ brk, inc::&lt;0b000&gt;, Pop::&lt;0b000&gt;, nip::&lt;0b000&gt;, swp::&lt;0b000&gt;, rot::&lt;0b000&gt;, dup::&lt;0b000&gt;, //。残念ながら、この実装には問題があります: thread 「snapshots::tailcall::mandelbrot」 (67889685) がスタックをオーバーフローさせました 致命的なランタイム エラー: スタック オーバーフロー、中止エラー: テストに失敗しました。パス `-p raven-varvara --test snapshots` を再実行します。 リリース ビルドであっても、コンパイラはスタックを最適化していません。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A tail-call interpreter in (nightly) Rust&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47650312"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.mattkeeter.com/blog/2026-04-05-tailcall/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>iPhone のジェマ 4</title>
+      <link>https://apps.apple.com/nl/app/google-ai-edge-gallery/id6749645337</link>
+      <description>&lt;p&gt;注: Thinking Mode は現在、Gemma 4 ファミリ以降のサポートされているモデルで動作します。新しい思考モードとエージェント スキルを使用して、最新の高性能モデルを完全にオフラインで実行します - Gemma 4 の紹介: 完全にオフラインで実行される最新の高性能モデルを体験してください。 - Gemma 4 の紹介: 完全オフラインで動作する最新の高性能モデルを体験してください。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Gemma 4 on iPhone&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47652561"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://apps.apple.com/nl/app/google-ai-edge-gallery/id6749645337'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ninjahawk1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;錆びているので気に入っています&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bjoli:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ついに！しっぽが呼んでる！私は数年前に Rust を書かなければならなかったのですが、私の中の ocaml 担当者は末尾再帰を書きたくてうずうずしていました。&lt;p&gt;末尾再帰は、マクロを使用して本当に本当にきちんとしたループ機能を書く人たちに開かれています。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dathinab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;結果として得られた VM は、以前の Rust 実装と手作業でコーディングした ARM64 アセンブリの両方を上回るパフォーマンスを発揮します&lt;p&gt;「高度に特殊化された VM 命令インタプリタ」が非常に効率的であることにいつも驚かされます。 &lt;p&gt;例: Rust でより良い (より高速で、よりコンパクトな) シリアル化を実現する方法に関する 2 つの独立した研究プロジェクトは、シリアル化命令用の VM&amp;#x2F;インタプリタのようなものに落ち着きました。これにより、より高いパフォーマンスとよりコンパクトなコード サイズの両方を実現しながら、依然として serde(1)&lt;p&gt; と同様の機能セットをサポートすることができます (一般に、単相性化と二重ディスパッチ (例: serde) は非常に遠くまで到達できますが、最善のアプローチは常に極端ではありません。単相性化も動的ディスパッチも緩和しません)ただし、両方の長所を利用するバランスが必要です。また、特殊なミニ VM は、ある意味、動的ディスパッチの非常に柔軟な形式です。)&lt;p&gt;---&lt;p&gt;(1): 通常のプロジェクトから大規模なプロジェクトではコード サイズがよりコンパクトになりますが、マイクロ プロジェクトでは「固定オーバーヘッド」のため必要ありません。多くの場合、シリアル化タイプごとのプロトコルのオーバーヘッドは若干大きくなりますが、シリアル化タイプごとのプロトコルのオーバーヘッドは小さくなる可能性があります。&lt;p&gt;(1b): これらは実験的な研究プロジェクトであり、GitHub に公開されたものがあるかどうかは不明であり、本番環境などでの使用に適したものはありません。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.mattkeeter.com/blog/2026-04-05-tailcall/</guid>
-      <pubDate>Sun, 05 Apr 2026 15:18:01 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47650312</comments>
+&lt;p&gt;&lt;strong&gt;Top 16 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;allpratik:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ニース！ Gemma-4-E2B-it モデルの 30 TPS の iPhone 16 pro で試しました。&lt;p&gt;ただし、推論中に電話はかなり熱くなりました。これは非常に印象的なパフォーマンスなので、私の個人的なアプリで試してみるのが待ちきれません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dzhiurgis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最近初めて実用的に使い始めました。私は飛行機に乗って、着陸カードに記入していました（なんて愚かなことでしょう）。 iPhone 16 Proのqwenモデルを使用してホテルの住所を調べました。それは正確でした。とても感銘を受けました。&lt;p&gt;何度かやりとりした後、チャット アプリがクラッシュし始めたので、YMMV を使用しました。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;beeflet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;PocketPal を使用すると、より自由な方法でこれがすでに可能になりませんか?&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;a-ghorbani&amp;#x2F;pocketpal-ai" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;a-ghorbani&amp;#x2F;pocketpal-ai&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;apps.apple.com&amp;#x2F;us&amp;#x2F;app&amp;#x2F;pocketpal-ai&amp;#x2F;id6502579498"&gt; https:&amp;#x2F;&amp;#x2F;apps.apple.com&amp;#x2F;us&amp;#x2F;app&amp;#x2F;pocketpal-ai&amp;#x2F;id6502579498&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;play.google.com&amp;#x2F;store&amp;#x2F;apps&amp;#x2F;details?id=com.pocketpalai"&gt;https:&amp;#x2F;&amp;#x2F;play.google.com&amp;#x2F;store&amp;#x2F;apps&amp;#x2F;details?id=com.pocketpala...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;karimf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;このアプリはクールで、いくつかのユースケースを紹介していますが、E2B モデルでできることはまだ十分に理解されていません。&lt;p&gt;私は、Gemma E2B を使用して M3 Pro でリアルタイム AI (オーディオ&amp;#x2F;ビデオ入力、音声出力) を作成したところです。数時間前に「LocalLLaMA」に投稿したところ、注目を集めています [0]。リポジトリは次のとおりです [1]&lt;p&gt;私は iPhone ではなく Macbook で実行していますが、ここにあるベンチマーク [2] に基づくと、iPhone 17 Pro でも同じことを実行できるはずです。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;LocalLLaMA&amp;#x2F;コメント&amp;#x2F;1sda3r6&amp;#x2F;realtime_ai_audiovideo_in_voice_out_on_an_m3_pro&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;LocalLLaMA&amp;#x2F;comments&amp;#x2F;1sda3r6&amp;#x2F;realtim...&lt;/a&gt;&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;fikrikarim&amp;#x2F;parlor" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;fikrikarim&amp;#x2F;parlor&lt;/a&gt;&lt;p&gt;[2] &lt;a href="https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;litert-community&amp;#x2F;gemma-4-E2B-it-litert-lm" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;litert-community&amp;#x2F;gemma-4-E2B-it-liter...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rickdg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ところで、これらは Apple の Foundation モデルとどう違うのでしょうか?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;__natty__:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;素晴らしいプロジェクトですね！あなたが商標を使用することに Google が問題を起こすのではないかと思ったのですが&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deckar01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Markdown や LaTeX はレンダリングされません。生成中はスクロールは使用できません。 E4B は、熱放射の影響を推論する際に、対流と伝導を正しく説明できませんでした (31b は非常に優れていました)。セッションで (考えながら) 3 つの質問をした後、E4B はレールから外れ、指定されたトークン制限に達する前に意味のないフラグメントを生成し始めました (実際にチェックしていない場合を除く)。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;burnto:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私の iPhone 13 では、これらのモデルのほとんどを実行できません。適切なローカル LLM は、通常必要となるよりも早く実際にアップグレードすることを私が想像できる数少ない理由の 1 つです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dwa3592:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この Google によって、携帯電話上で実行される最高のローカル モデルという新しい競争が始まると思います。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;janandonly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;OP こちら。将来の AI の現実的な使用法は、ほぼ無料でデバイス上でローカルに使用するか、クラウド上で使用するかのどちらかであると私は強く信じています。&lt;p&gt;後者のオプションは、人間がより高価であるか、はるかに時間がかかるタスクに困惑するだけです。&lt;p&gt;この Gemma 4 モデルは、iPhone と macOS を統合した、「彼女」 (映画のような) スタイルの将来の Siri などに期待を与えてくれます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TGower:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これらの新しいモデルは非常に印象的です。 AI Edge Gallery は GPU で実行されていますが、最近のハイエンド プロセッサの NPU はさらに高速になるはずです。たとえば、A16 チップ (Macbook Neo および iPhone 16 シリーズ) には、35 TOPS のニューラル エンジンと 7 TFLOPS の GPU が搭載されています。クアルコムについても同様の話があります。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;carbocation:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;チャットログを（オプションで）保持できると非常に便利です。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jeroenhd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ページの英語版: &lt;a href="https:&amp;#x2F;&amp;#x2F;apps.apple.com&amp;#x2F;us&amp;#x2F;app&amp;#x2F;google-ai-edge-gallery&amp;#x2F;id6749645337"&gt; https:&amp;#x2F;&amp;#x2F;apps.apple.com&amp;#x2F;us&amp;#x2F;app&amp;#x2F;google-ai-edge-gallery&amp;#x2F;id67496...&lt;/a&gt;&lt;p&gt;またAndroid の場合: &lt;a href="https:&amp;#x2F;&amp;#x2F;play.google.com&amp;#x2F;store&amp;#x2F;apps&amp;#x2F;details?id=com.google.ai.edge.gallery" &gt;https:&amp;#x2F;&amp;#x2F;play.google.com&amp;#x2F;store&amp;#x2F;apps&amp;#x2F;details?id=com.google.ai....&lt;/a&gt;&lt;p&gt;です。 Google の Edge プロジェクトのデモ アプリ: &lt;a href="https:&amp;#x2F;&amp;#x2F;ai.google.dev&amp;#x2F;edge" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ai.google.dev&amp;#x2F;edge&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PullJosh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これは素晴らしいです!&lt;p&gt;1) iPhone でモデルを実行でき、良好な結果が得られます。クラウドの Gemini ほどではありませんが、優れています。&lt;p&gt;2) LLM が懐中電灯をオンにしたり、マップを開いたりできるようにする「モバイル アクション」ツールの呼び出しが気に入っています。Siri ショートカットのサポートが追加されたら楽しいでしょう。 Apple が約束したが実現しなかったパーソナル オートメーションが欲しいです。&lt;p&gt;3) ローカル モデルが正規化されることにとても興奮しています。私は教師向けに小さなアプリを作成していますが、厳格なプライバシー法が関係しているため、可能な限り完全にクライアント側で実行されるコードを書くことを強く好みます。アプリや Web サイトを開発するとき、オンデバイス モデルに無料で簡単に API アクセスできるようにしたいと考えています。現在 iOS と Chrome にある程度存在していることは知っていますが、私の知る限り、まだそれほど優れているわけではありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pmarreck:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;確かに印象的なモデルです。これまで Mac で実行していましたが、今度は iPhone でローカルに実行できるようになりましたか?これをテストする必要があります。待ってください。エージェントのスキルとモバイル アクションはすべて電話機に対してローカルで実行されますか?えっ？ (後で確認する必要があります。まだヒントを持っている人はいますか?)&lt;p&gt;私は通常、すべての「消失」を実行しません。 (デアライメント) しかし、 &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;p-e-w&amp;#x2F;heretic" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;p-e-w&amp;#x2F;heretic&lt;/a&gt; を発見した後、このモデルで数日試してみたくなりました前 (実際、簡単にするためにリポジトリを作成しました) &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;pmarreck&amp;#x2F;gemma4-heretical" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;pmarreck&amp;#x2F;gemma4-heretical&lt;/a&gt; そして...うわー。うまくいきました。そして... 組み込みのナニーがないのは&lt;i&gt;楽しい&lt;/i&gt;です!&lt;p&gt;MLX バージョンを作成することもできます。MLX バージョンは Mac 上で少し高速に動作しますが、残念ながら Ollama では動作しません。 (LM Studio かもしれません。)&lt;p&gt;128GB の M4 Macbook Pro では問題なく動作し、おそらく 64GB 以下でも問題なく動作します...メモリが小さいほど、より低い量子化が必要になる可能性があります。&lt;p&gt;私は特にデアライメントされたローカル モデルが好きです。なぜなら、他人のプレイグラウンドでプレイするときに自分の思考を整理する必要がある場合、自分のローカルのオープンソース プレイグラウンドでもいじっていると、地獄のように判断されることになるからです。また、倫理的には正当だがルールに違反する一連の会話 (大まかに「デリケート」、「倫理的に境界線にあるが生産的」、または「神聖な牛に違反している」などに分類できる) がこれで可能になり、これまで不可能だったレベルで可能になりました。&lt;p&gt;注: 私はこれを次のものに接続しようとしました。 OpenClaw を使用して問題が発生しました&lt;p&gt;明白な質問に答えると、はい、この種のものにより、(他の多くのツールと同様に) 悪意のある行為が可能になります。幸いなことに、世の中には優れた俳優がはるかに多く、とにかく悪い俳優は優れた俳優が従うルールに耳を傾けません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hadrien01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;それは私ですか、それとも App Store の Web サイトは...偽物に見えますか?ヘッダー内のテキスト (「Productiviteit」、「iPhone 用の Alleen」) はペイントで編集されたかのようにピクセル化されており、ヘッダーの背景がちらつき、アプリのアイコンとスクリーンショットの品質は非常に低く、Web サイトのタイトルは不完全です (「iPhone 用の App Store...」)&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://apps.apple.com/nl/app/google-ai-edge-gallery/id6749645337</guid>
+      <pubDate>Sun, 05 Apr 2026 18:45:53 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47652561</comments>
     </item>
     <item>
-      <title>計算物理学 (第 2 版)</title>
-      <link>https://websites.umich.edu/~mejn/cp2/</link>
-      <guid isPermaLink="true">https://websites.umich.edu/~mejn/cp2/</guid>
-      <pubDate>Sun, 05 Apr 2026 15:38:18 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47650502</comments>
+      <title>プログラミングのための音楽</title>
+      <link>https://musicforprogramming.net</link>
+      <guid isPermaLink="true">https://musicforprogramming.net</guid>
+      <pubDate>Sun, 05 Apr 2026 18:23:08 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47652322</comments>
     </item>
     <item>
-      <title>男女平等と仕事</title>
-      <link>https://www.oecd.org/en/topics/gender-equality-and-work.html</link>
-      <guid isPermaLink="true">https://www.oecd.org/en/topics/gender-equality-and-work.html</guid>
-      <pubDate>Sun, 05 Apr 2026 18:31:27 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47652421</comments>
+      <title>英国諜報機関が地球温暖化と国土安全保障に関する報告書を検閲した</title>
+      <link>https://theoryofchange1.substack.com/p/from-global-warming-to-homeland-security</link>
+      <guid isPermaLink="true">https://theoryofchange1.substack.com/p/from-global-warming-to-homeland-security</guid>
+      <pubDate>Sun, 05 Apr 2026 20:59:52 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47653816</comments>
     </item>
     <item>
-      <title>Codex はすべてのユーザーに対して API 価格ベースの使用に切り替えます</title>
-      <link>https://help.openai.com/en/articles/20001106-codex-rate-card</link>
-      <guid isPermaLink="true">https://help.openai.com/en/articles/20001106-codex-rate-card</guid>
-      <pubDate>Sun, 05 Apr 2026 15:58:08 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47650726</comments>
-    </item>
-    <item>
-      <title>鳥から脳へ: 紡錘形の顔領域への私の道 (2024)</title>
-      <link>https://www.kavliprize.org/nancy-kanwisher-autobiography</link>
-      <description>&lt;p&gt;私たちの家で飼育されている鵜が私たちと一緒に自由に泳ぐとき、彼らは「潜水徐脈」をほとんど示しませんでした。心的イメージは視覚認識と同じ脳機構に関与しているのでしょうか。私たちは脳のどこで、入ってくる視覚情報と、見慣れた物体がどのように見えるかについて保存されている説明を照合します。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; From birds to brains: My path to the fusiform face area (2024)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47651479"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.kavliprize.org/nancy-kanwisher-autobiography'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.kavliprize.org/nancy-kanwisher-autobiography</guid>
-      <pubDate>Sun, 05 Apr 2026 17:08:55 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47651479</comments>
-    </item>
-    <item>
-      <title>Nanocode: TPU 上の純粋な JAX で 200 ドルで購入できる最高のクロード コード</title>
-      <link>https://github.com/salmanmohammadi/nanocode/discussions/1</link>
-      <description>&lt;p&gt;3B パラメータのナノコードが判明しました: nanocode。 6% ナノコードコード 1259 326 3. 17728M モデルパラメータ 67。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Nanocode: The best Claude Code that $200 can buy in pure JAX on TPUs&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47649742"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/salmanmohammadi/nanocode/discussions/1'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>人間の腸内で見つかった細菌で、筋力を向上させることができる</title>
+      <link>https://www.ugr.es/en/about/news/bacteria-found-human-intestine-capable-improving-muscle-strength</link>
+      <description>&lt;p&gt;腸内細菌と筋肉のパフォーマンスの関係 研究チームは、特定の腸内細菌が筋力や体調と関連しているかどうかを分析しました。若い成人では、この細菌が豊富に存在すると、握力の強さと心肺能力の向上に関連しています。ローズブリア・イヌリニボランスは筋力を高めます。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Bacteria found in the human intestine capable of improving muscle strength&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47652726"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ugr.es/en/about/news/bacteria-found-human-intestine-capable-improving-muscle-strength'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wwfn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;接線 (ただし、「脅威は、あなたが何をしているのか理解できない方向に快適に漂っている」という点で話題になっています):&lt;p&gt;例で生成された Python コードは間違っていますか?&lt;p&gt;プロンプト&lt;p&gt;&amp;gt;リストから偽の値を削除する Python 関数を開発します。新しいリストを作成せずに、変更されたリストを返します。&lt;p&gt;リスト内包表記で応答すると、新しいリストが作成され、元のリストは変更されません (*args 入力が必ずしも変更可能なリストであるとは限らないことを気にしないでください)。&lt;p&gt;&lt;pre&gt;&lt;code&gt; def delete_falsey_values(*args): return [val for val in args if val]
-&lt;/code&gt;&lt;/pre&gt;
-一方、&lt;p&gt;&lt;pre&gt;&lt;code&gt; def delete_falsey_values(l) のようなものを期待します。
-          for i in reversed(range(len(l))):
-               l[i] でない場合: l.pop(i)
-          # 返されたリストは入力 l にリンクされます 
-          lを返す
-
-    a = [1, 0, False, &amp;#x27;foo&amp;#x27;]
-    x = 偽の値を削除(a)
-    x[0] = 2
-    print(a) # [2,&amp;#x27;foo&amp;#x27;]&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jaboostin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ML の経験がゼロの私にとって、これは非常に興味深く、理解しやすい読み物でした。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bdbdbdb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;愚かな質問 - ここでの成果を減じようとしているわけではありません。ただ本当に理解できないのです。&lt;p&gt;無料のコーディング モデルがあるのに、なぜ人々はコーディング モデルのトレーニングに 200 ドルも費やそうとするのでしょうか?&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/salmanmohammadi/nanocode/discussions/1</guid>
-      <pubDate>Sun, 05 Apr 2026 14:21:17 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47649742</comments>
+&lt;p&gt;&lt;strong&gt;Top 16 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sharpshadow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;活性培養物は入手可能です[0]。それらを腸で利用できるようにする方法は確かにありますよね?&lt;p&gt;0。 &lt;a href="https:&amp;#x2F;&amp;#x2F;webshop.dsmz.de&amp;#x2F;en&amp;#x2F;bacteria&amp;#x2F;Roseburia-inulinivorans.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;webshop.dsmz.de&amp;#x2F;en&amp;#x2F;bacteria&amp;#x2F;Roseburia-inulinivorans....&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;g-b-r:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;今、人々は本当にトム・ブレイディのものを追いかけるだろうか？ xD&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;emanuele-em:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;数か月ごとに、腸内細菌の制御を示す新しい研究が発表されますが、私たちが「私たち」だと思っていたものがまた一つ増えました。気分、認知、免疫反応、そして筋力。何が残っているのか気になり始めています。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;soopypoos:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;淋菌には筋肉すらありませんが、自重の10万倍もの力を発揮します&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ramoz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;バクテリアの増殖をサポートする方法について簡単に調査しました&lt;p&gt;&amp;gt;高繊維質のプレバイオティクス食品や栄養補助食品を重視した食事の修正は、ローズブリアの健全な成長をサポートする可能性があります [1]&lt;p&gt;&amp;gt;上で述べたように、地中海食はローズブリアの増殖の増加と関連しています。この食事では、丸ごとの果物と野菜、全粒穀物、豆類、ナッツと種子、オリーブオイル、脂肪の多い魚など、主に植物ベースの食品を重視します。これらの食品に含まれる繊維質と難消化性デンプンの多さは、ローズブリアやヒトのマイクロバイオームの他の有益な微生物叢を促進する可能性があります [1]&lt;p&gt;&gt;。ポリフェノールは、果物、野菜、お茶、コーヒーに豊富に含まれる植物性化合物です。最近の研究では、ポリフェノールが有害な細菌を阻害し、有益な細菌を増殖させることにより、ローズブリアの存在量を間接的に高めることができることが示されています。 [2]&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.rupahealth.com&amp;#x2F;post&amp;#x2F;roseburia-spp-101" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.rupahealth.com&amp;#x2F;post&amp;#x2F;roseburia-spp-101&lt;/a&gt;&lt;p&gt;[2] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.innerbuddies.com&amp;#x2F;pages&amp;#x2F;gut-microbiome-101&amp;#x2F;gut-bacteria-key-gut-species-increase-roseburia" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.innerbuddies.com&amp;#x2F;pages&amp;#x2F;gut-microbiome-101&amp;#x2F;gut-ba...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sublinear:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;これにより、研究中の細菌が老化時の筋力の維持を助けるプロバイオティクスとして使用できる可能性が開かれます&lt;p&gt;おそらく、しかし、ここで他の変数を制御するのは非常に困難です。そもそも、高齢者においてこの細菌が時間の経過とともに減少する原因は何なのかはわかっていません。&lt;p&gt;それは完全に、人々が気を緩めるにつれて時間の経過とともに食生活が悪くなっているだけかもしれません。年齢に関係なく、ほとんどの人はすでに十分なたんぱく質を摂取していませんし、摂取しても「完全な」タンパク質を摂取できていない可能性があります。タンパク質のいずれか（植物ベースの食品ではアミノ酸の欠如がよくあります）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ben8bit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;リンゴをいくつか食べて、ベンチに10ポンド追加してください。ニース！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;culi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;繊維を酪酸に変換することで機能します。腸内のローズブリアを促進するには、高繊維食を維持する必要があります&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;roschdal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これが必要です&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rramadass:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;おそらく、このマイクロバイオームと、いわゆる「ブルーゾーン」の長寿との間にも直接の相関関係があるのか​​もしれません。沖縄、サルデーニャなど世界中の人々。&lt;p&gt;私たちは食べたもので&lt;i&gt;形作られます&lt;/i&gt;。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;つまり、ホーマー シンプソンは最終的に正しかったのです。&lt;p&gt;ビールは基本的に砂糖を発酵させたものです (ほとんどの場合、ブドウ糖は酵母によってエタノールに変換されます。ただし、最初はマルトースですが、酵母や細菌などはブドウ糖を好み、マルトースはブドウ糖の二糖類、マルトースです)。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FurstFly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ジムの仲間たちはとてもショックを受けるだろう（笑）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;toomuchtodo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ローズブリア・イヌリニボランスのプロバイオティクスはいつ?おそらく、これを既製のプロテイン シェイクに追加し、筋肉を増強する人に合わせて混ぜます。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Roseburia_inulinivorans" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Roseburia_inulinivorans&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RobRivera:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;利益&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;grg0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;これが、私がジムの仲間たちに、摂氏のゴミをすべてやめて基本に忠実に従うべきだと言っている理由です。腸の健康状態を便の質（硬さ、質感、色、形）で測るべきです。そうすれば、筋肉や体の他の部分も感謝してくれるでしょう。この研究はその証拠です。科学はまだ追いついていません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rendall:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;...マウスで。 :&amp;#x2F;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.ugr.es/en/about/news/bacteria-found-human-intestine-capable-improving-muscle-strength</guid>
+      <pubDate>Sun, 05 Apr 2026 19:01:55 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47652726</comments>
     </item>
     <item>
-      <title>LibreOffice – 憶測に終止符を打ちましょう</title>
-      <link>https://blog.documentfoundation.org/blog/2026/04/05/lets-put-an-end-to-the-speculation/</link>
-      <description>&lt;p&gt;理想的には、この投稿は避けたかったのです。当時は、OpenOffice をサポートする企業がこれほどまでになるとは誰も想像できませんでした。現在の取締役会が解決しなければならないいくつかの問題は、部分的に実行されたプロジェクトの要素に起因していました。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; LibreOffice – Let's put an end to the speculation&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47652324"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://blog.documentfoundation.org/blog/2026/04/05/lets-put-an-end-to-the-speculation/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>自由市場の嘘: なぜスイスには 25 G ビットのインターネットがあり、アメリカにはそれがないのか</title>
+      <link>https://sschueller.github.io/posts/the-free-market-lie/</link>
+      <description>&lt;p&gt;隣人と共有されていない接続全体で。しかし、多くの場合、それは近所の人たちと共有されます。 3 倍の建設、3 倍の中断、3 倍のコストがかかることになります。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Free Market Lie: Why Switzerland Has 25 Gbit Internet and America Doesn't&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47652400"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://sschueller.github.io/posts/the-free-market-lie/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chadash:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;文脈をまったく知らない人にとって、ここでの話は何でしょうか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;everybodyknows:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ミークス&amp;#x27;比較のためのブログ投稿:&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.collaboraonline.com&amp;#x2F;blog&amp;#x2F;tdf-ejects-its-core-developers&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.collaboraonline.com&amp;#x2F;blog&amp;#x2F;tdf-ejects-its-core-dev...&lt;/a&gt;&lt;p&gt;法的問題への言及に注意してください。自分自身の結論を導き出します。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://blog.documentfoundation.org/blog/2026/04/05/lets-put-an-end-to-the-speculation/</guid>
-      <pubDate>Sun, 05 Apr 2026 18:23:14 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47652324</comments>
-    </item>
-    <item>
-      <title>Perfmon – お気に入りの CLI 監視ツールを 1 つの TUI に統合します</title>
-      <link>https://github.com/sumant1122/Perfmon</link>
-      <description>&lt;p&gt;機能 • インストール • 使用法 • 構成 • 貢献 💡 なぜ Perfmon なのか。 make build: バイナリをコンパイルします。 make test: テストスイートを実行します。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Perfmon – Consolidate your favorite CLI monitoring tools into a single TUI&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47649701"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/sumant1122/Perfmon'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elC0mpa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;うわー、すごいですね。簡単な一般的な推奨事項:&lt;p&gt;ツールのインストール手順をより簡単にするために、install.sh に直接カールを与えるべきです。さらに、MacOS ユーザー向けにホーム brew で公開するのが良いと思います。&lt;p&gt;私は CLI を開発していて、次のメジャー バージョンで対話機能を追加したいと考えているため、この投稿は良いタイミングで投稿されました。何らかの形で CLI がそれを助けてくれました。&lt;p&gt;これは私の CLI (&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;elC0mpa&amp;#x2F;aws-doctor" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;elC0mpa&amp;#x2F;aws-doctor&lt;/a&gt;)&lt;p&gt;そこで、自作ディストリビューションと install.sh ファイルを実装した方法を確認できます。簡単なインストール手順のために&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jackhab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;tmux を使用して、タブとペインの両方で TUI モニターを統合していました。 perfmon の利点は何ですか?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PeterWhittaker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;かなり良さそうですが、機能面でこれが一番下（btm）と比較されることを知りたいです。ありがとう！&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/sumant1122/Perfmon</guid>
-      <pubDate>Sun, 05 Apr 2026 14:16:28 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47649701</comments>
-    </item>
-    <item>
-      <title>LM Studio の新しいヘッドレス CLI と Claude コードを使用して Google Gemma 4 をローカルで実行する</title>
-      <link>https://ai.georgeliu.com/p/running-google-gemma-4-locally-with</link>
-      <description>&lt;p&gt;26B パラメータ モデルは、フォワード パスごとに 4B パラメータのみをアクティブにします。これは、高密度の 26B モデルを決して処理できないハードウェア上でも適切に動作することを意味します。購読Google Gemma 4 26B-a4b LLM モデルは、Claude Code エイリアス コマンド claude-lm を使用して LM Studio API 経由で提供されますGemma 4 モデル ファミリーGoogle は、Gemma 4 を 1 つだけではなく 4 つのモデルのファミリーとしてリリースしました。実際には、4B の高密度モデルと同等の推論コストを実現し、その重量クラスをはるかに上回る品質を実現します。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Running Google Gemma 4 Locally with LM Studio's New Headless CLI and Claude Code&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47651540"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://ai.georgeliu.com/p/running-google-gemma-4-locally-with'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vbtechguy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;ここでは、Claude Code で使用できる macOS 上のローカル推論用に Gemma 4 26B をセットアップする方法を示します。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://ai.georgeliu.com/p/running-google-gemma-4-locally-with</guid>
-      <pubDate>Sun, 05 Apr 2026 17:13:51 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47651540</comments>
-    </item>
-    <item>
-      <title>メラネシア人: オセアニア地域の金髪の浅黒い肌の人々</title>
-      <link>https://guardian.ng/life/the-melanesian-dark-skinned-people-with-blonde-hair/</link>
-      <description>&lt;p&gt;メラネシア人: ブロンドの髪をした浅黒い肌の人々 ブロンドの髪をした黒人を見たことはありますか。 Photo Coconet TV ブロンドの髪の黒人を見たことはありますか。メラネシアにおける金髪の発生率 金髪はメラネシアで独自に進化し、一部の島々に住むメラネシア人（一部のオーストラリア先住民と同様）は、金髪を持つヨーロッパ人の子孫ではない数少ないグループの1つです。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Melanesian: Dark-skinned people with blonde hair region of Oceania&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47650962"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://guardian.ng/life/the-melanesian-dark-skinned-people-with-blonde-hair/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://guardian.ng/life/the-melanesian-dark-skinned-people-with-blonde-hair/</guid>
-      <pubDate>Sun, 05 Apr 2026 16:21:51 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47650962</comments>
-    </item>
-    <item>
-      <title>電話不要のバーやレストランが全米で増加中</title>
-      <link>https://www.axios.com/2026/04/05/phone-free-restaurants-bars-bans-restrictions-offline</link>
-      <guid isPermaLink="true">https://www.axios.com/2026/04/05/phone-free-restaurants-bars-bans-restrictions-offline</guid>
-      <pubDate>Sun, 05 Apr 2026 15:04:00 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47650172</comments>
+&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dlcarrier:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;tl;dr: ここでの嘘は、米国には有線インターネット サービス プロバイダーの自由市場が存在する、あるいはかつて存在したという仮定です。&lt;p&gt;この記事は当初、状況をうまく説明していますが、米国の歴史、特に「自然独占を監視なしで運営させるとこうなる」という一文に触れるにつれ、少し混乱してしまいます。  ここで議論されているのは自然独占ではありません。それは、規制にもかかわらずではなく、規制を通じて明示的に独占が認められている公益事業について議論しているのです。  また、米国には有線 ISP のオーバーサイトが多数あります。  価格はほとんどの場合、規制当局によって承認されています。&lt;p&gt;自然独占の良い例は、Google 検索です。  それにイライラして他の検索エンジンを探す人がよくいます。  それに対抗しようとしている企業も複数あります。  通常、これはユーザーが競合他社に移行することを意味しますが、Google の検索アルゴリズムは非常に優れているため、実質的にすべてのユーザーが Google を使い続けています。&lt;p&gt;自然に発生する障壁が変化すると、自然独占は依然として簡単に破壊されます。  たとえば、Internet Explorer は、Microsoft の「受け入れと拡張」により、自然独占状態にありました。他の Web ブラウザにはない多くの機能を提供する戦略です。  インターネット市場が機能第一の市場からセキュリティ第一の市場に急速に移行したとき、Internet Explorer はすぐに Chrome と Firefox に追い抜かれました。  Google 検索でも同じことが起こる可能性は十分にあります。Google の検索アルゴリズムの市場は、Google がかなり苦手とする LLM ベースのウェブ検索に追い抜かれているからです。&lt;p&gt;とにかく、あなたの地域でケーブル インターネットを提供しているのが Comcast または Charter だけである理由は、他の企業がケーブルを導入するには高すぎるからではありません。  彼らが運営するマージンでは、並行インフラストラクチャに投資する価値は十分にありますが、米国のほぼどこでもそれは完全に禁止されています。  実際、彼らはケーブルを敷設したことがないにもかかわらず、ケーブルを敷設する権利を所有している可能性があります。  これは私が住んでいる地域の電話会社の場合であり、同様のルールに従っています。&lt;p&gt;バックホールが十分に改善され、携帯電話プロバイダーが有線インターネット プロバイダーと競合できるようになったことで、固定無線インターネット プロバイダーもある程度の競争を始めています。  T-Mobile は現在、5 年間の価格保証付きで、20 か月分の固定無線アドオン プランを提供しています。  固定無線市場を補完するために、Comcast は NOW Internet と呼ばれるサービスを開始しました。このサービスは月 30 ドルから始まり、同様の料金保証があり、アドオンなしの要件はありません。&lt;p&gt;「から始める」と言えば、高価格の主な原因は、ユーザーに必要以上の、または使用できる以上の料金を支払うよう圧力をかける FUD の一般的な使用です。  ピーク時に 40 Mbps を超える世帯はほとんどありません (&lt;a href="https:&amp;#x2F;&amp;#x2F;www.wsj.com&amp;#x2F;graphics&amp;#x2F;faster-internet-not-worth-it&amp;#x2F;") rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.wsj.com&amp;#x2F;graphics&amp;#x2F;faster-internet-not-worth-it&amp;#x2F;&lt;/a&gt;）、ほぼすべてのプロバイダーの開始価格はそれを上回っていますが、顧客はより上位のプランに加入するよう説得されているはずです。&lt;p&gt;それよりも高速なデータを定期的に提供しているウェブ ホストはビデオ ゲーム ディストリビューターだけなので、そのようなタイプの人は、複数の 4K ビデオ ストリームを見ながら、ゲームのアップデートを数十分ではなく数分でダウンロードしたいと考えている世帯の割合は、他のプランを比較する価値があるかもしれません。そうでない場合は、お住まいの地域にサービスを提供しているすべてのプロバイダーが提供する絶対的に最も安いプランを使い続けてください。  (また、マルチプレイヤー ゲームに興味がある場合は、遅延が最も低い ISP を選択することが有益ですが、特定のサービスのすべてのプランの遅延は同じになります。)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chrismcb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;なぜなら、米国は自由市場ではないからです。そしてそれを規制する人々は気にしていないようだ。あるいは、独占を認められた者が、その独占を維持するためにあらゆる手を尽くしているのかもしれない。 
+実際に自由市場があれば状況は変わるでしょう&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;burnt-resistor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;米国の自治体および生協のブロードバンドには、補助金、融資、複製、拡張が必要です。私が住んでいる場所は、周囲にさまざまな住宅団地が点在するほとんど人がまばらな田舎地域で、電気とインターネットを提供する農協があります。地域的に近い大都市圏の GFiber では、ベータ版の 20 Gbps インターネットが月額 250 米ドルで利用できました。 1 Gbps 対称ファイバー共同利用料金は月額 100 米ドルです。ヨーロッパに比べて物価が高い。オーストラリアに比べれば物価はそれほど高くないかもしれません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tickerticker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この種の視点 (国際比較) が、米国経済のいくつかの分野 (税務コンプライアンス、選挙資金、銀行規制など) に適用できればいいのにと思います。お疲れ様でした、OP。&lt;p&gt;ノースカロライナ州シャーロットでは、インターネット プロバイダーの選択肢が 3 つあり、そのうち 2 つは光ファイバーです。&lt;p&gt;この投稿で行っているように、「裾野を広げる」ことをおすすめします。  有権者の大多数はここでの問題を理解していません。  それが最大の障害です。&lt;p&gt;私の見解では、この規制の失敗対自由市場の嘘は嘘だと言えます。そうすれば、敵の標的は小さくなります。&lt;p&gt;進歩への道は、友好州 (ワイオミング州、ロードアイランド州、テキサス州) に法案を可決させることです。  次に、他の州の活動家の間でそれを買い漁ります。&lt;p&gt;人々が共通の商品を 1&amp;#x2F;25 個しか入手できないと知ったら、政治的な騒ぎになるでしょう。&lt;p&gt;時間をかけて検討し、議論をしていただきありがとうございます。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;joe_the_user:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;自然独占などの重要な概念を説明する良い記事のようです。&lt;p&gt;そして、そうです、米国のモデルは、自由企業を大々的に宣伝しながら、国家が特定の市場の管理を単一または数人の独占者に委ねることです。&lt;p&gt;問題は、米国が、この矛盾した自由企業イデオロギーに生計を依存している、国家に依存する中小企業と大企業の支持層を作り上げたことです。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bethekidyouwant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;なぜフランスがヨーロッパの例ではないのですか?スイスよりも大きく、サービスも充実している&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ma2kx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Init7 のブログに別の素晴らしい記事が掲載されています
+&lt;a href="https:&amp;#x2F;&amp;#x2F;blog.init7.net&amp;#x2F;en&amp;#x2F;die-glasfaserstreit-geschichte&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;blog.init7.net&amp;#x2F;en&amp;#x2F;die-glasfaserstreit-geschichte&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ttul:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;私の小さな島のコミュニティでは、島に適切なブロードバンドを導入することを任務とする市の委員会に参加しました。すでに 2 つの電気通信複合企業がコミュニティにサービスを提供していましたが、そのうちの 1 つは海底ファイバーを備えていましたが、家庭へのファイバーはゼロでした (DSL が唯一の選択肢でした)。一方、もう 1 つはバックホールと同軸ケーブルを介した配信に 670 Mbps の無線マイクロ波リンクを使用していました。そして価格設定は？どちらのひどい選択肢も非常に高価です。&lt;p&gt;私たちの小さな委員会は、電力会社が敷設しようとしていた新しい海底電力ケーブルに沿って自治体の光ファイバーを引き込むことを含め、あらゆる選択肢を調査しました。そのプロジェクトのマネージャーに話を聞いたところ、海底高圧線には（電力会社独自の信号用の）スペースがすでにあったので、ファイバーを数本追加することに実際的な障害はないとのことでした。&lt;p&gt;悲しいことに、市にはそのファイバーに一銭も投資する資本がなかったため、ある日、市の相談員の一人がファイバー敷設会社で働く友人に電話してお願いをしました。この小さな島に自治体の光ファイバー ネットワークに電力を供給するための海底光ファイバーの敷設を「調査」しています。&lt;p&gt;数週間後、ケーブル独占会社がケーブル船と契約し、独自の光ファイバーの敷設を開始しました。競争はうまくいきます、皆さん。たとえそれを偽造しなければならないとしても。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cjs_ac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;オーストラリアと英国は、政府所有の電話独占企業が民営化された方法により、スイス モデルと同様のビジネス環境を持っています（ただし、優れた帯域幅はありません）。テレコム オーストラリア（現在はテルストラと呼ばれています）とブリティッシュ テレコム（現在は BT と呼ばれています）は、新たに形成された競合他社が自社のネットワーク上でサービスを販売することを許可する必要がありました（もちろん、適切な保守料が必要です）。&lt;p&gt;米国とドイツのモデルは、単に「無料」を叫んだ結果です。マーケット！その市場で実際に何が販売されているのか、そして真の競争をどのように促進するのかを立ち止まって考える必要はありません。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;poly2it:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;この記事は、AI が生成した一般的な画像がなければ、はるかに優れたものになるでしょう。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deafpolygon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;米国のインターネット陰謀団が実際に自由市場だったとしたら、あなたの言うことは正しいでしょう。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://sschueller.github.io/posts/the-free-market-lie/</guid>
+      <pubDate>Sun, 05 Apr 2026 18:29:47 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47652400</comments>
     </item>
   </channel>
 </rss>

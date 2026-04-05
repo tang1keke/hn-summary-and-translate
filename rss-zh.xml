@@ -6,146 +6,106 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 05 Apr 2026 18:56:51 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2026 21:41:21 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>（每晚）Rust 中的尾部调用解释器</title>
-      <link>https://www.mattkeeter.com/blog/2026-04-05-tailcall/</link>
-      <description>&lt;p&gt;Uxn 是一个简单的堆栈机，有 256 条指令。有两部分： 将程序状态存储在函数参数中，这些参数根据系统的调用约定映射到寄存器 通过调用下一个函数来结束每个函数 我们今天可以用 Rust 编写这个；这是我们的 inc 函数： const TABLE: FunctionTable = FunctionTable([ brk, inc::&lt;0b000&gt;, pop::&lt;0b000&gt;, nip::&lt;0b000&gt;, swp::&lt;0b000&gt;, rot::&lt;0b000&gt;, dup::&lt;0b000&gt;, //。不幸的是，这个实现有一个问题：线程'snapshots::tailcall::mandelbrot' (67889685) 已溢出其堆栈致命运行时错误：堆栈溢出，中止错误：测试失败，重新运行通过 `-p raven-varvara --test snapshots` 即使在发布版本中，编译器也没有优化堆栈。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A tail-call interpreter in (nightly) Rust&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47650312"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.mattkeeter.com/blog/2026-04-05-tailcall/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>iPhone 上的杰玛 4</title>
+      <link>https://apps.apple.com/nl/app/google-ai-edge-gallery/id6749645337</link>
+      <description>&lt;p&gt;注意：思考模式目前适用于受支持的型号，从 Gemma 4 系列开始。使用新的思维模式和代理技能完全离线运行最新的高性能模型 - Gemma 4 简介：体验完全离线运行的最新高性能模型。 - 隆重推出 Gemma 4：体验完全离线运行的最新高性能模型。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Gemma 4 on iPhone&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47652561"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://apps.apple.com/nl/app/google-ai-edge-gallery/id6749645337'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ninjahawk1:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢它，因为它已经生锈了&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bjoli:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最后！尾巴叫！几年前我不得不写 Rust，我内心的 ocaml 人渴望编写尾递归。&lt;p&gt;尾递归为人们打开了使用宏编写非常非常整洁的循环设施的大门。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dathinab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;由此产生的 VM 优于我之前的 Rust 实现和我手工编码的 ARM64 汇编&lt;p&gt;它总是让我感到惊讶，“高度专业化的 VM”指令解释器”的效率是多么荒谬。 &lt;p&gt;就像例如两个关于如何在 rust 中实现更好（快速、更紧凑）序列化的独立研究项目最终得到了类似 VM&amp;#x2F; 序列化指令解释器的东西，从而带来更高的性能和更紧凑的代码大小，同时仍然支持与 serde(1)&lt;p&gt; 类似的功能集（一般来说，单态化和双分派（例如 serde）可以让你走得很远，但最好的方法总是不是极端的。既不减轻单态化，也不减轻动态分派，但利用两者的优势之间的平衡在某种程度上是动态调度的一种更加灵活的形式。）&lt;p&gt;---&lt;p&gt;(1)：在普通到大型项目上更紧凑的代码大小，在微型项目上没有必要，因为“固定开销”通常会稍大一些，而每个序列化类型的协议开销可能会更小。&lt;p&gt;(1b)：它们一直是实验性研究项目，不确定它们是否已发布到 GitHub，不适合在生产或类似情况中使用。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://www.mattkeeter.com/blog/2026-04-05-tailcall/</guid>
-      <pubDate>Sun, 05 Apr 2026 15:18:01 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47650312</comments>
+&lt;p&gt;&lt;strong&gt;Top 16 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;allpratik:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好的！在 iPhone 16 pro 上进行了测试，Gemma-4-E2B-it 型号的 TPS 为 30。&lt;p&gt;尽管手机在推理时变得相当热。这是一个相当令人印象深刻的性能，我迫不及待地想在我的一个个人应用程序中亲自尝试一下。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dzhiurgis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我最近第一次实际使用它。我当时在飞机上，正在填写着陆卡（这是多么愚蠢的事情啊）。我在 iPhone 16 Pro 上使用 qwen 模型查找了我的酒店地址。这是准确的。我印象非常深刻。&lt;p&gt;经过一番反复之后，聊天应用程序开始崩溃，所以 YMMV。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;beeflet:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;难道这不是已经可以通过 PocketPal 以更加开放的方式实现了吗？&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;a-ghorbani&amp;#x2F;pocketpal-ai" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;a-ghorbani&amp;#x2F;pocketpal-ai&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;apps.apple.com&amp;#x2F;us&amp;#x2F;app&amp;#x2F;pocketpal-ai&amp;#x2F;id6502579498"&gt; https:&amp;#x2F;&amp;#x2F;apps.apple.com&amp;#x2F;us&amp;#x2F;app&amp;#x2F;pocketpal-ai&amp;#x2F;id6502579498&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;play.google.com&amp;#x2F;store&amp;#x2F;apps&amp;#x2F;details?id=com.pocketpalai"&gt;https:&amp;#x2F;&amp;#x2F;play.google.com&amp;#x2F;store&amp;#x2F;apps&amp;#x2F;details?id=com.pocketpala...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;karimf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这个应用程序很酷，它展示了一些用例，但它仍然低估了 E2B 模型的功能。&lt;p&gt;我刚刚在 M3 Pro 上使用 Gemma E2B 制作了一个实时 AI（音频和视频输入、语音输出）。几个小时前，我将其发布在 &amp;#x2F;r&amp;#x2F;LocalLLaMA 上，并且它获得了一些关注 [0]。这是存储库 [1]&lt;p&gt;我在 Macbook 而不是 iPhone 上运行它，但根据此处的基准 [2]，您应该能够在 iPhone 17 Pro 上运行相同的东西。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;LocalLLaMA&amp;#x2F;评论&amp;#x2F;1sda3r6&amp;#x2F;realtime_ai_audiovideo_in_voice_out_on_an_m3_pro&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.reddit.com&amp;#x2F;r&amp;#x2F;LocalLLaMA&amp;#x2F;评论&amp;#x2F;1sda3r6&amp;#x2F;realtim...&lt;/a&gt;&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;fikrikarim&amp;#x2F;客厅" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;fikrikarim&amp;#x2F;客厅&lt;/a&gt;&lt;p&gt;[2] &lt;a href="https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;litert-community&amp;#x2F;gemma-4-E2B-it-litert-lm" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;huggingface.co&amp;#x2F;litert-community&amp;#x2F;gemma-4-E2B-it-liter...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rickdg:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;顺便说一句，这些与苹果的基础型号相比如何？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;__natty__:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一个伟大的项目！我只是想知道 Google 是否会反对您使用他们的商标&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deckar01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它不渲染 Markdown 或 LaTeX。滚动在生成期间不可用。在推理热辐射的影响时，E4B 未能正确解释对流和传导（31b 非常好）。在一次会议中提出 3 个问题（思考）后，E4B 脱离了轨道，并在达到规定的令牌限制之前开始发出无意义的片段（除非它实际上没有检查）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;burnto:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的 iPhone 13 无法运行大多数型号。一个像样的本地法学硕士是我能想象的比通常必要的更早升级的少数原因之一。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dwa3592:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我认为谷歌由此开始了一场新的竞赛——在手机上运行的最佳本地模型。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;janandonly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在这里。我坚信，未来人工智能唯一现实的用途要么是在设备上几乎免费，要么在云中，但比现在贵得多。&lt;p&gt;后一种选择只会对人类成本更高或速度慢得多的任务感到困惑。&lt;p&gt;这个 Gemma 4 模型给了我对未来 Siri 或其他与 iPhone 和 macOS 集成的希望，“她”（如电影中）风格。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TGower:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些新模型非常令人印象深刻。 AI Edge Gallery 在 GPU 上运行，但最近高端处理器中的 NPU 应该会更快。例如，A16 芯片（Macbook Neo 和 iPhone 16 系列）的神经引擎为 35 TOPS，GPU 为 7 TFLOPS。高通也有类似的故事。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;carbocation:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果可以（可选）保留聊天日志，那将非常有帮助。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jeroenhd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;英文版页面：&lt;a href="https:&amp;#x2F;&amp;#x2F;apps.apple.com&amp;#x2F;us&amp;#x2F;app&amp;#x2F;google-ai-edge-gallery&amp;#x2F;id6749645337"&gt; https:&amp;#x2F;&amp;#x2F;apps.apple.com&amp;#x2F;us&amp;#x2F;app&amp;#x2F;google-ai-edge-gallery&amp;#x2F;id67496...&lt;/a&gt;&lt;p&gt;另外在 Android 上：&lt;a href="https:&amp;#x2F;&amp;#x2F;play.google.com&amp;#x2F;store&amp;#x2F;apps&amp;#x2F;details?id=com.google.ai.edge.gallery" &gt;https:&amp;#x2F;&amp;#x2F;play.google.com&amp;#x2F;store&amp;#x2F;apps&amp;#x2F;details?id=com.google.ai....&lt;/a&gt;&lt;p&gt;它Google Edge 项目的演示应用：&lt;a href="https:&amp;#x2F;&amp;#x2F;ai.google.dev&amp;#x2F;edge" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;ai.google.dev&amp;#x2F;edge&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PullJosh:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太棒了！&lt;p&gt;1) 我能够在我的 iPhone 上运行该模型并获得良好的结果。不如云中的 Gemini，但也不错。&lt;p&gt;2) 我喜欢“移动操作”工具调用，它允许法学硕士打开手电筒、打开地图等。如果他们添加 Siri 快捷方式支持，那就更有趣了。我想要苹果承诺但从未兑现的个人自动化。&lt;p&gt;3) 我对本地模型的标准化感到非常兴奋。我为教师构建了一些小应用程序，并且涉及严格的隐私法，这意味着我非常喜欢在可能的情况下编写完全在客户端运行的代码。当我开发应用程序和网站时，我希望通过 API 轻松免费访问设备上的模型。我知道它现在在 iOS 和 Chrome 上已经存在，但据我所知它还不是特别好。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pmarreck:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令人印象深刻的模型，当然。我一直在 Mac 上运行它，现在我可以在 iPhone 上本地运行它吗？我需要测试一下。等等，它的代理技能和移动操作都在手机本地吗？哇啊？ （必须稍后查看！有人有任何提示吗？）&lt;p&gt;我通常不会执行整个“删除”操作。事情（取消对齐），但在发现 &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;p-e-w&amp;#x2F;heretic" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;p-e-w&amp;#x2F;heretic&lt;/a&gt; 后，几天前我很想尝试这个模型（实际上是一个让它更容易的仓库） &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;pmarreck&amp;#x2F;gemma4-heretical" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;pmarreck&amp;#x2F;gemma4-heretical&lt;/a&gt; 和......哇。它起作用了。而且...没有内置保姆很&lt;i&gt;有趣&lt;/i&gt;！&lt;p&gt;也可以制作它的 MLX 版本，它在 Mac 上运行得更快一点，但不幸的是无法通过 Ollama 运行。 （也许是 LM Studio。）&lt;p&gt;在我的 128GB 的​​ M4 Macbook Pro 上运行得很好，在 64GB 下也可能运行得很好...较小的内存可能需要较低的量化。&lt;p&gt;我特别喜欢未对齐的本地模型，因为如果我在别人的游乐场玩时必须让自己的思想受到监管，那么当我在自己的本地开源模型中闲逛时，我也会受到评判。现在有一整套道德上合理但违反规则的对话（大致可以归类为“敏感”、“道德边缘但富有成效”或“违反神圣的牛”之类的东西）现在可以实现，并且达到了迄今为止从未实现过的水平。&lt;p&gt;注意：我试图将其连接到 OpenClaw 并遇到了问题&lt;p&gt;要回答显而易见的问题 - 是的，这种事情会让坏人更多地受益（就像许多其他工具一样）。幸运的是，那里有更多的好演员，无论如何，坏演员不会遵守好演员所遵循的规则。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hadrien01:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是我的问题还是 App Store 网站看起来……假的？标题中的文本（“Productiviteit”、“Alleen voor iPhone”）看起来像素化，就像在 Paint 上编辑的一样，标题背景闪烁，应用程序图标和屏幕截图质量非常低，网站标题不完整（“App Store voor iPho...”）&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://apps.apple.com/nl/app/google-ai-edge-gallery/id6749645337</guid>
+      <pubDate>Sun, 05 Apr 2026 18:45:53 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47652561</comments>
     </item>
     <item>
-      <title>计算物理（第二版）</title>
-      <link>https://websites.umich.edu/~mejn/cp2/</link>
-      <guid isPermaLink="true">https://websites.umich.edu/~mejn/cp2/</guid>
-      <pubDate>Sun, 05 Apr 2026 15:38:18 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47650502</comments>
+      <title>编程音乐</title>
+      <link>https://musicforprogramming.net</link>
+      <guid isPermaLink="true">https://musicforprogramming.net</guid>
+      <pubDate>Sun, 05 Apr 2026 18:23:08 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47652322</comments>
     </item>
     <item>
-      <title>性别平等与工作</title>
-      <link>https://www.oecd.org/en/topics/gender-equality-and-work.html</link>
-      <guid isPermaLink="true">https://www.oecd.org/en/topics/gender-equality-and-work.html</guid>
-      <pubDate>Sun, 05 Apr 2026 18:31:27 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47652421</comments>
+      <title>英国情报部门审查了有关全球变暖和国土安全的报告</title>
+      <link>https://theoryofchange1.substack.com/p/from-global-warming-to-homeland-security</link>
+      <guid isPermaLink="true">https://theoryofchange1.substack.com/p/from-global-warming-to-homeland-security</guid>
+      <pubDate>Sun, 05 Apr 2026 20:59:52 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47653816</comments>
     </item>
     <item>
-      <title>Codex 正在为所有用户切换到基于 API 定价的使用方式</title>
-      <link>https://help.openai.com/en/articles/20001106-codex-rate-card</link>
-      <guid isPermaLink="true">https://help.openai.com/en/articles/20001106-codex-rate-card</guid>
-      <pubDate>Sun, 05 Apr 2026 15:58:08 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47650726</comments>
-    </item>
-    <item>
-      <title>从鸟类到大脑：我通往梭形面部区域的道路（2024）</title>
-      <link>https://www.kavliprize.org/nancy-kanwisher-autobiography</link>
-      <description>&lt;p&gt;当我们家养的鸬鹚和我们一起自由游泳时，它们很少表现出“潜水心动过缓”。心理意象与视觉感知涉及相同的大脑机制吗？我们在大脑的哪个位置将传入的视觉信息与存储的熟悉物体外观的描述进行匹配。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; From birds to brains: My path to the fusiform face area (2024)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47651479"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://www.kavliprize.org/nancy-kanwisher-autobiography'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://www.kavliprize.org/nancy-kanwisher-autobiography</guid>
-      <pubDate>Sun, 05 Apr 2026 17:08:55 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47651479</comments>
-    </item>
-    <item>
-      <title>Nanocode：200 美元可以在 TPU 上的纯 JAX 中买到的最好的 Claude 代码</title>
-      <link>https://github.com/salmanmohammadi/nanocode/discussions/1</link>
-      <description>&lt;p&gt;3B参数nanocode横空出世：nanocode。 6% nanocode 代码 1259 326 3. 17728M 模型参数 67.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Nanocode: The best Claude Code that $200 can buy in pure JAX on TPUs&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47649742"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/salmanmohammadi/nanocode/discussions/1'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>人类肠道中发现的细菌能够增强肌肉力量</title>
+      <link>https://www.ugr.es/en/about/news/bacteria-found-human-intestine-capable-improving-muscle-strength</link>
+      <description>&lt;p&gt;肠道细菌与肌肉表现之间的关系 研究小组分析了某些肠道微生物是否与肌肉力量和身体状况有关。在年轻人中，这种细菌的丰度越高，握力越大，心肺能力也越高。 Roseburia inulinivorans 可以增强肌肉力量。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Bacteria found in the human intestine capable of improving muscle strength&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47652726"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.ugr.es/en/about/news/bacteria-found-human-intestine-capable-improving-muscle-strength'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wwfn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;切题（但主题是“威胁很容易导致不理解你正在做的事情”也在首页上）：&lt;p&gt;示例中生成的 python 代码是否错误？&lt;p&gt;提示&lt;p&gt;&gt;开发一个 Python 函数，从列表中删除任何错误值。返回修改后的列表而不创建新列表。&lt;p&gt;通过列表理解来回答，这会生成一个新列表并保留原始列表不变（不要介意 *args 输入不一定是可修改列表？）&lt;p&gt;&lt;pre&gt;&lt;code&gt; def remove_falsey_values(*args): return [val for val in args if val]
-&lt;/code&gt;&lt;/pre&gt;
-而我期望类似 &lt;p&gt;&lt;pre&gt;&lt;code&gt; def remove_falsey_values(l) 的东西：
-          对于反转中的 i（范围（len（l）））：
-               如果不是 l[i]: l.pop(i)
-          # 返回的列表链接到输入 l 
-          返回l
-
-    a = [1, 0, False, 'foo']
-    x = 删除假值(a)
-    x[0] = 2
-    print(a) # [2,&amp;#x27;foo&amp;#x27;]&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jaboostin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;作为一个零机器学习经验的人，这是一本超级有趣且易于理解的读物！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bdbdbdb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;愚蠢的问题 - 我并不是想削弱这里的成就，我只是真的不明白：&lt;p&gt;当有免费的编码模型时，为什么人们愿意花 200 美元来训练编码模型？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/salmanmohammadi/nanocode/discussions/1</guid>
-      <pubDate>Sun, 05 Apr 2026 14:21:17 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47649742</comments>
+&lt;p&gt;&lt;strong&gt;Top 16 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sharpshadow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;活性培养物是可用的[0]，并且肯定有一种方法可以让它们进入肠道，不是吗？&lt;p&gt;0。 &lt;a href="https:&amp;#x2F;&amp;#x2F;webshop.dsmz.de&amp;#x2F;en&amp;#x2F;bacteria&amp;#x2F;Roseburia-inulinivorans.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;webshop.dsmz.de&amp;#x2F;en&amp;#x2F;细菌&amp;#x2F;Roseburia-inulinivorans....&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;g-b-r:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Will people really go after Tom Brady&amp;#x27;s stuff now? xD&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;emanuele-em:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每隔几个月就有一项新研究表明肠道细菌控制着我们认为的“我们”。情绪、认知、免疫反应，现在是肌肉力量。开始想知道还剩下什么。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;soopypoos:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;淋病奈瑟菌甚至没有肌肉，但它可以拉动自身重量 100,000 倍的力&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ramoz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对如何支持细菌生长进行了快速研究&lt;p&gt;&gt;强调高纤维和益生元食品以及膳食补充剂的饮食调整可能支持罗斯布里亚菌的健康生长 [1]&lt;p&gt;&amp;gt;如上所述，地中海饮食与罗斯伯利亚生长加快有关。这种饮食主要强调植物性食物：完整的水果和蔬菜、全谷物、豆类、坚果和种子、橄榄油和多脂鱼。这些食物的高纤维和抗性淀粉含量可能会为罗斯布里亚菌和人类微生物组的其他有益菌群提供营养 [1]&lt;p&gt;&gt;多酚是水果、蔬菜、茶和咖啡中富含的植物化合物。新兴研究表明，多酚可以通过抑制有害细菌和培养有益细菌来间接提高罗斯布里亚菌的丰度。 [2]&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.rupahealth.com&amp;#x2F;post&amp;#x2F;roseburia-spp-101" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.rupahealth.com&amp;#x2F;post&amp;#x2F;roseburia-spp-101&lt;/a&gt;&lt;p&gt;[2] &lt;a href="https:&amp;#x2F;&amp;#x2F;www.innerbuddies.com&amp;#x2F;pages&amp;#x2F;gut-microbiome-101&amp;#x2F;gut-bacteria-key-gut-species-increase-roseburia" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.innerbuddies.com&amp;#x2F;pages&amp;#x2F;gut-microbiome-101&amp;#x2F;gut-ba...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sublinear:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;这开辟了一种可能性，即所研究的细菌可以用作益生菌，以帮助在衰老过程中保持肌肉力量&lt;p&gt;也许，但这里的其他变量确实很难控制。他们首先不知道是什么导致这种细菌随着时间的推移在老年人中减少。&lt;p&gt;这完全可能只是随着人们放纵自己的饮食习惯随着时间的推移而变得更糟。无论年龄大小，大多数人都没有摄入足够的蛋白质，即使摄入足够的蛋白质，他们也可能无法获得“完整”的蛋白质。蛋白质（植物性食品中缺少氨基酸很常见）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ben8bit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;吃一些苹果，可以增加 10 磅的体重。好的！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;culi:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;它的作用是将纤维转化为丁酸盐。您应该保持高纤维饮食，以促进肠道中的罗斯布里亚菌生长&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;roschdal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我需要这个&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rramadass:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;也许这种微生物组与所谓“蓝色区域”的寿命之间也存在直接相关性。冲绳、撒丁岛等世界各地。&lt;p&gt;我们&lt;i&gt;&lt;/i&gt;我们吃什么。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所以荷马·辛普森最后是对的。&lt;p&gt;啤酒基本上是发酵糖（嗯，葡萄糖在很大程度上被酵母转化为乙醇；虽然首先是麦芽糖，但酵母、细菌等......更喜欢葡萄糖，而麦芽糖是葡萄糖的二糖：麦芽糖）。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;FurstFly:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的健身房兄弟们一定会很震惊，哈哈&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;toomuchtodo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Roseburia inulinivorans什么时候益生菌？可能会将其添加到预制的蛋白质奶昔中，并针对增强肌肉的情况进行混合。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Roseburia_inulinivorans" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Roseburia_inulinivorans&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RobRivera:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;增益&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;grg0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这就是为什么我告诉我的健身房兄弟，他们应该戒掉所有摄氏垃圾并坚持基本知识。您应该通过粪便的质量（稠度、质地、颜色、形状）来衡量您的肠道健康状况，然后您的肌肉和身体其他部位会感谢您。这项研究就是证明。科学仍在迎头赶上。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rendall:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;...在老鼠身上。 :&amp;#x2F;&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.ugr.es/en/about/news/bacteria-found-human-intestine-capable-improving-muscle-strength</guid>
+      <pubDate>Sun, 05 Apr 2026 19:01:55 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47652726</comments>
     </item>
     <item>
-      <title>LibreOffice – 让我们结束猜测</title>
-      <link>https://blog.documentfoundation.org/blog/2026/04/05/lets-put-an-end-to-the-speculation/</link>
-      <description>&lt;p&gt;理想情况下，我们宁愿避免这篇文章。当时，没有人能够想象支持 OpenOffice 的公司。现任董事会必须解决的几个问题源于该项目已部分执行的要素。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; LibreOffice – Let's put an end to the speculation&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47652324"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://blog.documentfoundation.org/blog/2026/04/05/lets-put-an-end-to-the-speculation/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>自由市场的谎言：为什么瑞士拥有 25 Gbit 互联网而美国却没有</title>
+      <link>https://sschueller.github.io/posts/the-free-market-lie/</link>
+      <description>&lt;p&gt;一切都通过不与邻居共享的连接进行。但通常会与邻居分享。你将面临三倍的建设、三倍的中断、三倍的成本。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Free Market Lie: Why Switzerland Has 25 Gbit Internet and America Doesn't&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47652400"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://sschueller.github.io/posts/the-free-market-lie/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chadash:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于我们这些零背景的人来说，这里的故事是什么？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;everybodyknows:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;米克斯的博客文章，用于比较：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;www.collaboraonline.com&amp;#x2F;blog&amp;#x2F;tdf-ejects-its-core-developers&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.collaboraonline.com&amp;#x2F;blog&amp;#x2F;tdf-ejects-its-core-dev...&lt;/a&gt;&lt;p&gt;注意对法律问题的引用；得出你自己的结论。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://blog.documentfoundation.org/blog/2026/04/05/lets-put-an-end-to-the-speculation/</guid>
-      <pubDate>Sun, 05 Apr 2026 18:23:14 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47652324</comments>
-    </item>
-    <item>
-      <title>Perfmon – 将您最喜欢的 CLI 监控工具整合到单个 TUI 中</title>
-      <link>https://github.com/sumant1122/Perfmon</link>
-      <description>&lt;p&gt;功能 • 安装 • 使用 • 配置 • 贡献 💡 为什么选择 Perfmon。 make build：编译二进制文件。 make test：执行测试套件。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Perfmon – Consolidate your favorite CLI monitoring tools into a single TUI&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47649701"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/sumant1122/Perfmon'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 3 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;elC0mpa:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;哇，看起来很棒。只是一个快速的一般建议：&lt;p&gt;您应该直接curl到install.sh，以便为您的工具提供更简单的安装步骤，此外，我认为最好将其发布在MacOS用户的家庭brew上。&lt;p&gt;这篇文章来得正是时候，因为我正在开发一个CLI，我想在下一个主要版本中为其添加一些交互性，并且您的CLI在某种程度上帮助了我。&lt;p&gt;这是我的CLI（&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;elC0mpa&amp;#x2F;aws-doctor" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;elC0mpa&amp;#x2F;aws-doctor&lt;/a&gt;)&lt;p&gt;您可以在此处查看我如何实现 Home Brew 发行版和 install.sh 文件，以实现轻松安装步骤&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jackhab:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我使用 tmux 来整合选项卡和窗格中的 TUI 监视器。 perfmon 有什么优势？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;PeterWhittaker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来不错，但很想知道它与底部（btm）相比，功能方面。谢谢！&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/sumant1122/Perfmon</guid>
-      <pubDate>Sun, 05 Apr 2026 14:16:28 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47649701</comments>
-    </item>
-    <item>
-      <title>使用 LM Studio 的新 Headless CLI 和 Claude 代码在本地运行 Google Gemma 4</title>
-      <link>https://ai.georgeliu.com/p/running-google-gemma-4-locally-with</link>
-      <description>&lt;p&gt;26B 参数模型每次前向传递仅激活 4B 参数，这意味着它在无法处理密集 26B 模型的硬件上运行良好。订阅Google Gemma 4 26B-a4b LLM 模型，通过 LM Studio API 使用 Claude Code 别名命令 claude-lm 提供 Gemma 4 模型系列Google 将 Gemma 4 作为四个模型系列发布，而不仅仅是一个。在实践中，它提供的推理成本可与 4B 密集模型相媲美，其质量远高于该权重级别。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Running Google Gemma 4 Locally with LM Studio's New Headless CLI and Claude Code&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47651540"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://ai.georgeliu.com/p/running-google-gemma-4-locally-with'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vbtechguy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;以下是我在 macOS 上设置 Gemma 4 26B 进行本地推理的方法，该推理可与 Claude Code 一起使用。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://ai.georgeliu.com/p/running-google-gemma-4-locally-with</guid>
-      <pubDate>Sun, 05 Apr 2026 17:13:51 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47651540</comments>
-    </item>
-    <item>
-      <title>美拉尼西亚人：大洋洲地区黑皮肤、金发的人</title>
-      <link>https://guardian.ng/life/the-melanesian-dark-skinned-people-with-blonde-hair/</link>
-      <description>&lt;p&gt;美拉尼西亚人：黑皮肤、金发的人 你见过金发的黑人吗？照片 Coconet TV 你见过金发的黑人吗？美拉尼西亚金发的发生率 金发在美拉尼西亚独立进化，一些岛屿上的美拉尼西亚人（以及一些澳大利亚土著人）是少数几个不是金发欧洲人后裔的群体之一。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; The Melanesian: Dark-skinned people with blonde hair region of Oceania&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47650962"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://guardian.ng/life/the-melanesian-dark-skinned-people-with-blonde-hair/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
-      <guid isPermaLink="true">https://guardian.ng/life/the-melanesian-dark-skinned-people-with-blonde-hair/</guid>
-      <pubDate>Sun, 05 Apr 2026 16:21:51 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47650962</comments>
-    </item>
-    <item>
-      <title>美国各地无电话酒吧和餐馆数量不断增加</title>
-      <link>https://www.axios.com/2026/04/05/phone-free-restaurants-bars-bans-restrictions-offline</link>
-      <guid isPermaLink="true">https://www.axios.com/2026/04/05/phone-free-restaurants-bars-bans-restrictions-offline</guid>
-      <pubDate>Sun, 05 Apr 2026 15:04:00 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47650172</comments>
+&lt;p&gt;&lt;strong&gt;Top 11 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dlcarrier:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;tl;dr：这里的谎言是假设美国拥有或曾经拥有有线互联网服务提供商的自由市场。&lt;p&gt;这篇文章最初很好地描述了情况，但当谈到美国的历史时，就会有点困惑，尤其是这句话“当你让自然垄断在没有监督的情况下运作时，就会发生这种情况。”  它讨论的不是自然垄断，而是自然垄断。它正在讨论通过监管明确授予垄断权的公共事业，而不是尽管如此。  此外，美国还有很多有线 ISP 的超站服务。  价格几乎总是得到监管机构的批准。&lt;p&gt;自然垄断的一个很好的例子是 Google 搜索。  人们常常会对此感到沮丧，并寻找其他搜索引擎。  还有多家公司试图与其竞争。  通常这意味着用户会迁移到竞争对手，但 Google 的搜索算法非常出色，几乎每个用户都留在了 Google。&lt;p&gt;如果自然发生的壁垒发生变化，自然垄断仍然很容易被打破。  例如，由于微软的“拥抱和延伸”，Internet Explorer具有天然的垄断地位。策略赋予它许多其他网络浏览器所没有的功能。  当互联网市场迅速从功能第一的市场转向安全第一的市场时，Internet Explorer很快就被Chrome和Firefox超越。  Google 搜索很有可能会发生同样的情况，因为其搜索算法的市场已经被基于 LLM 的网络搜索标记所取代，而 Google 在这方面做得相当糟糕。&lt;p&gt;无论如何，Comcast 或 Charter 是唯一在您所在地区提供有线互联网的公司，并不是因为其他人部署电缆的成本太高。  在他们经营的边缘，投资并行基础设施是非常值得的，但在美国几乎所有地方都完全禁止这样做。  事实上，他们可能拥有铺设电缆的权利，尽管他们从未铺设过任何电缆。  这就是我所居住的电话公司的情况，该公司遵循类似的规则。&lt;p&gt;固定无线互联网提供商开始提供一些竞争，因为回程已经足够改善，蜂窝提供商可以与有线互联网提供商竞争。  T-Mobile 目前提供 20 美元的固定无线附加套餐，并提供五年价格保证。  为了完善固定无线市场，康卡斯特推出了一项名为 NOW Internet 的服务，起价为每月 30 美元，具有类似的价格保证，并且没有任何附加要求。&lt;p&gt;说到“起价”，高价格的一个重要原因是 FUD 的常见用途，以迫使用户支付超出他们需要甚至可以使用的费用。  很少有家庭的峰值速度超过 40 Mbps (&lt;a href="https:&amp;#x2F;&amp;#x2F;www.wsj.com&amp;#x2F;graphics&amp;#x2F;faster-internet-not-worth-it&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.wsj.com&amp;#x2F;graphics&amp;#x2F;faster-internet-not-worth-it&amp;#x2F;&lt;/a&gt;），几乎每个提供商的起始价格都高于此价格，但客户必须已被说服接受更高级别的计划。&lt;p&gt;唯一定期提供比此更快的数据的网络主机是视频游戏分销商，因此，如果您属于这样的家庭，希望在几分钟内（而不是数十分钟）下载游戏更新，同时观看多个 4K 视频流，那么比较其他计划可能是值得的，否则请坚持使用为您所在地区提供服务的所有提供商提供的绝对最便宜的计划。  （而且，如果您热衷于多人游戏，选择延迟最低的 ISP 将是有益的，但来自给定服务的所有计划都将具有相同的延迟。）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;chrismcb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因为美国不是自由市场。而那些监管它的人似乎并不关心。或者，那些被授予垄断权的人可能会尽其所能来保持这种垄断权。 
+如果我们真的有一个自由市场，事情就会有所不同&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;burnt-resistor:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;美国的市政和合作宽带需要补贴、贷款、复制和扩张。我住的地方有一个农民合作社，提供电力和互联网，位于一个人烟稀少的农村地区，周围散布着各种住宅开发项目。区域附近的大都市区的 GFiber 拥有 beta 20 Gbps 互联网，每月 250 美元。 1 Gbps 对称光纤合作社的价格为每月 100 美元。与欧洲相比，价格较高。与澳大利亚相比，价格可能不高。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tickerticker:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我希望这种视角（国际比较）能够应用于美国经济的几个领域：税收合规、竞选融资和银行监管。干得好，OP。&lt;p&gt;在北卡罗来纳州夏洛特，我有 3 个互联网提供商选择，其中两个是光纤。&lt;p&gt;正如您在这篇文章中所做的那样，“扩大基础”。  绝大多数选民不理解这里的问题。  这是你最大的障碍。&lt;p&gt;我的观点将这种监管失败称为自由市场谎言。这样，敌人的目标就更小了。&lt;p&gt;取得进展的途径是让友好国家（怀俄明州、罗德岛州、德克萨斯州）通过立法。  然后在其他州的积极分子中进行货比三家。&lt;p&gt;如果人们知道他们只能获得 1&amp;#x2F;25 的共享产品，那就会引起政治愤怒。&lt;p&gt;感谢您花时间思考这一点并提出论点。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;joe_the_user:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看起来是一篇很好的文章，解释了自然垄断等一些关键概念。&lt;p&gt;是的，美国的模式是向天空兜售自由企业，然后让国家将特定市场的控制权交给一个或几个垄断者。&lt;p&gt;问题是美国创造了一批依赖国家的小型和大型企业人士，他们的生计依赖​​于这种矛盾的自由企业意识形态。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bethekidyouwant:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;为什么法国不是欧洲的榜样？比瑞士更大、服务更好&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ma2kx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Init7 在其博客上发表了另一篇令人惊叹的文章
+&lt;a href="https:&amp;#x2F;&amp;#x2F;blog.init7.net&amp;#x2F;en&amp;#x2F;die-glasfaserstreit-geschichte&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;blog.init7.net&amp;#x2F;en&amp;#x2F;die-glasfaserstreit-geschichte&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ttul:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在我的小岛屿社区，我参加了一个市政委员会，其任务是为岛上提供适当的宽带。尽管两家电信双寡头已经为该社区提供服务，但其中一家拥有海底光纤，但零光纤到户（DSL 仍然是唯一的选择），而另一家则使用 670 Mbps 无线微波链路通过同轴电缆进行回程和传输。以及定价？对于这两种糟糕的选择来说，价格都极其昂贵。&lt;p&gt;我们的小委员会调查了各种选择，包括将市政光纤与电力公司正在安装的新海底电缆一起铺设。我与该项目的经理交谈过，他说添加几股光纤并没有真正的障碍，因为海底高压线已经有足够的空间（用于电力公司自己的信号传输）。&lt;p&gt;可悲的是，市政府没有任何资金投资该光纤，所以有一天，一位市政顾问打电话给一位在光纤铺设公司工作的朋友，请求他们帮个忙：发布一份新闻稿，称他们正在“调查”铺设海底光纤为小岛上的市政光纤网络供电。&lt;p&gt;几周后，电缆垄断公司聘请了一艘电缆船并开始铺设自己的光纤。竞争是有效的，伙计们。即使你必须假装它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cjs_ac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;澳大利亚和英国的商业环境与瑞士模式类似（但没有优越的带宽），这是由于其政府拥有的电话垄断企业被私有化的方式：澳大利亚电信（现称为 Telstra）和英国电信（现称为 BT）被要求允许新成立的竞争对手通过其网络销售服务（当然需要适当的维护费用）。&lt;p&gt;美国和德国模式是仅仅大喊“自由市场！”的结果。没有停下来思考该市场实际销售的是什么，以及如何鼓励真正的竞争。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;poly2it:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果没有到处都是人工智能生成的通用图像，这篇文章会好得多。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;deafpolygon:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果美国的互联网阴谋集团实际上是一个自由市场，那么你就是对的！&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://sschueller.github.io/posts/the-free-market-lie/</guid>
+      <pubDate>Sun, 05 Apr 2026 18:29:47 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47652400</comments>
     </item>
   </channel>
 </rss>
