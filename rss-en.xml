@@ -6,46 +6,60 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to English</description>
     <language>en</language>
-    <lastBuildDate>Mon, 06 Apr 2026 07:50:48 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2026 10:15:43 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-en.xml"/>
     <item>
-      <title>SideX – A Tauri-based port of Visual Studio Code</title>
-      <link>https://github.com/Sidenai/sidex</link>
-      <description>&lt;p&gt;SideX is a 1:1 architectural port (HEAVILY STRIPPED) of VSCode that replaces Electron with Tauri (Rust backend + native webview). 2+ Platform dependencies for Tauri — see the Tauri prerequisites guide Development # Clone the repo git clone https://github. Contributing We want your help.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47657699"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/Sidenai/sidex'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;linzhangrun:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;My attitude toward vibe coding is quite open — as long as the quality of the software it produces, including the documentation, is not a problem.&lt;p&gt;Unfortunately, this is yet another example of a vibe-coded project that does have those problems.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vscode-rest:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I am not sure that their goal (&amp;lt;200mb ram) is really related to their approach (using a built in rendering engine for the same exact source material) at all.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TurdF3rguson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; Goal: 200mb RAM usage&lt;p&gt;This is why Zed is great but I just can&amp;#x27;t get used to the debugger experience so I end up back in VSCode.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Szpadel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; Zero Electron imports remaining in the codebase&lt;p&gt;and you know that AI wrote all of it with minimal human supervision.&lt;p&gt;side note: last few days I noticed that vscode stopped leaking memory all over the place. when left idle it was taking all the ram I had + 20gb of swap space&lt;p&gt;and recently I noticed that I have half of the ram free.&lt;p&gt;I use insiders build btw, so stable might still not have those improvements&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ardline:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This is the kind of thing that looks simple until you actually implement it.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;digitaltrees:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Awesome project. How much work is left, are you looking for contributors? I just built very basic IDE on mobile for myself. I thought about forking vscode but it felt too heavy and I only wanted a subset of features. Now I am wondering if I should use this project for the desktop version.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eviks:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; Same architecture, native performance ... Goal: 200mb RAM usage.&lt;p&gt;But Tauri doesn&amp;#x27;t have native performance, specifically when it comes to RAM!&lt;p&gt;&amp;gt; Memory benchmark might be incorrect: Tauri might consume more RAM than Electron
-&amp;gt; &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tauri-apps&amp;#x2F;tauri&amp;#x2F;issues&amp;#x2F;5889" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tauri-apps&amp;#x2F;tauri&amp;#x2F;issues&amp;#x2F;5889&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OsrsNeedsf2P:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Vibe coded UI translation with a conflicting README and no screenshots? Is this what it takes to get onto HN front page?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anematode:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Quoting from the README:&lt;p&gt;&amp;gt; The entire VSCode workbench - editor, terminal, extensions, themes, keybindings — ported to run on a native shell.&lt;p&gt;but also&lt;p&gt;&amp;gt; Many workbench features are stubbed or partially implemented&lt;p&gt;So which is it? The README needs to be clearer about what is aspirational, what is done, and what is out of scope. Right now it just looks like an LLM soup.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;debarshri:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Would this also support the whole plugin infrastructure?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tkz1312:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;What a world we live in where 200mb RAM usage for a text editor is considered &amp;quot;lightweight&amp;quot;.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gigatexal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Good. I’m glad. It’s a great editor but the whole electron backend is so bloated.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/Sidenai/sidex</guid>
-      <pubDate>Mon, 06 Apr 2026 06:49:42 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47657699</comments>
+      <title>France pulls last gold held in US for $15B gain</title>
+      <link>https://www.mining.com/france-pulls-last-gold-held-in-us-for-15b-gain/</link>
+      <guid isPermaLink="true">https://www.mining.com/france-pulls-last-gold-held-in-us-for-15b-gain/</guid>
+      <pubDate>Mon, 06 Apr 2026 08:03:43 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47658146</comments>
     </item>
     <item>
-      <title>Show HN: Real-time AI (audio/video in, voice out) on an M3 Pro with Gemma E2B</title>
-      <link>https://github.com/fikrikarim/parlor</link>
-      <description>&lt;p&gt;Have natural voice and vision conversations with an AI that runs entirely on your machine. litertlm file PORT 8000 Server port Performance (Apple M3 Pro) Stage Time Speech + vision understanding ~1. Project structure src/ ├── server.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47652007"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/fikrikarim/parlor'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Drop, formerly Massdrop, ends most collaborations and rebrands under Corsair</title>
+      <link>https://drop.com/</link>
+      <description>&lt;p&gt;Learn more on CORSAIR ❯ Learn more on Elgato ❯ Learn more on Scuf ❯ DOOM: THE DARK AGES In a medieval war against Hell, you need to come prepared. Learn more on Elgato ❯ FALLOUT S. Learn more on Elgato ❯ STARFIELD Collect limited-edition drops for your voyage across the stars.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47656981"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://drop.com/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dvt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Solid work and great showcase, I&amp;#x27;ve done a bunch of stuff with Kokoro and the latency is incredible. So crazy how badly Apple dropped the ball... feels like your demo should be a Siri demo (I mean that in the most complimentary way possible).&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/fikrikarim/parlor</guid>
-      <pubDate>Sun, 05 Apr 2026 17:53:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47652007</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bargainbin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;In other words they’ve shut it down, and are going to use the brand recognition to hawk as much low quality gaming merch as they can.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drakonka:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;I think I got a really cool wallet and notebook from Hand &amp;amp; Sew through Massdrop many years ago. The wallet is long gone but the notebook is still around with a wonderful patina. It used to be a really cool site for unique items. I stopped using it when they had a falling out with Input Club and it seems like they&amp;#x27;ve just gone downhill since then.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;onli:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Massdrop was interesting, as a place to get stuff you couldn&amp;#x27;t get elsewhere easily (even if I never bought something there, I considered it multiple times and I think I had some things on my wait list). Is there already something like a successor platform? Drop.com as a site for branded corsair gear is completely useless.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andymegacreep:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;this is terrible, imho. defeats the purpose of the platform. i&amp;#x27;m sad for 6XX series headphones :c&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://drop.com/</guid>
+      <pubDate>Mon, 06 Apr 2026 04:24:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47656981</comments>
+    </item>
+    <item>
+      <title>Does coding with LLMs mean more microservices?</title>
+      <link>https://ben.page/microservices</link>
+      <description>&lt;p&gt;Does coding with LLMs mean more microservices. A microservice has much less risk of coupling. When you have dozens of apps (all with their own billing accounts, hosting setups, and resources) it’s a lot easier to forget to renew that OpenAI API account that only your image-generation microservice hosted on Vercel uses.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47656335"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://ben.page/microservices'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Kim_Bruning:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;A typical rant (composed from memory) goes something like this:&lt;p&gt;&amp;gt; &amp;quot;These AI types are all delusional. My job is secure. Sure your model can one-shot a small program in green field in 5 minutes with zero debugging. But make it a little larger and it starts to forget features, introduces more bugs than you can fix, and forget letting it loose on large legacy codebases&amp;quot;&lt;p&gt;What if that&amp;#x27;s not a diagnosis? What if we see that as an opportunity? O:-)&lt;p&gt;I&amp;#x27;m not saying it needs to be microservices, but say you can constrain the blast radius of an AI going oops (compaction is a famous oops-surface, for instance); and say you can split the work up into self-contained blocks where you can test your i&amp;#x2F;o and side effects thoroughly...&lt;p&gt;... well, that&amp;#x27;s going to be interesting, isn&amp;#x27;t it?&lt;p&gt;Programming has always supposed to be about that: Structured programming, functions (preferably side-effect-less for this argument), classes&amp;amp;objects, other forms of modularization including -ok sure- microservices. I&amp;#x27;m not sold on exactly the latter because it feels a bit too heavy for me. But ... something like?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;int_19h:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;That&amp;#x27;s an argument for components with well-defined contracts on their interfaces, but making them microservices just complicates debugging for the model.&lt;p&gt;It&amp;#x27;s also unclear whether tight coupling is actually a problem when you can refactor this fast.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nikeee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;What matters for LLMs is what matters for humans, which usually means DX. Most Microservice setups are extremely hard to debug across service boundaries, so I think in the future, we&amp;#x27;ll see more architectural decisions that make sense for LLMs to work with. Which will probably mean modular monoliths or something like that.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_pdp_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This makes no sense. You can easily make a monolith and build all parts of it in isolation - i.e. modules, plugins, packages.&lt;p&gt;In fact, my argument is that there will be more monolith applications due to AI coding assistants, not less.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;siruwastaken:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;This seems like the idea of modularizing code, and using specific function sighatures for data exchange as an API is being re-invented by people using AI. Aren&amp;#x27;t we already mostly doing things this way, albeit via submodules in a monolith, due to the cognitive ctrain it puts on humans to understand the whole thing at any given time?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;c1sc0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Why microservices when small composable CLI tools seem a better fit for LLMs?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tatrions:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;The bounded surface area insight is right, but the actual forcing function is context window size. Small codebase fits in context, LLM can reason end-to-end. You get the same containment with well-defined modules in a monolith if your tooling picks the right files to feed into the prompt.&lt;p&gt;Interesting corollary: as context windows keep growing (8k to 1M+ in two years), this architectural pressure should actually reverse. When a model can hold your whole monolith in working memory, you get all the blast radius containment without the operational overhead of separate services, billing accounts, and deployment pipelines.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://ben.page/microservices</guid>
+      <pubDate>Mon, 06 Apr 2026 02:33:21 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47656335</comments>
+    </item>
+    <item>
+      <title>Make your own ColecoVision at home, part 5</title>
+      <link>https://www.leadedsolder.com/2026/03/24/colecovision-diy-part-5.html</link>
+      <description>&lt;p&gt;Some chargers will push around 5. That twisting will eventually produce bad solder joints, and maybe even shorts or board damage. It didn’t show up on this v7 board, but that’s life.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47656758"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.leadedsolder.com/2026/03/24/colecovision-diy-part-5.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.leadedsolder.com/2026/03/24/colecovision-diy-part-5.html</guid>
+      <pubDate>Mon, 06 Apr 2026 03:45:07 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47656758</comments>
     </item>
   </channel>
 </rss>

@@ -6,48 +6,63 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 06 Apr 2026 07:50:48 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2026 10:15:43 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>SideX – 基于 Tauri 的 Visual Studio Code 端口</title>
-      <link>https://github.com/Sidenai/sidex</link>
-      <description>&lt;p&gt;SideX 是 VSCode 的 1:1 架构移植（大幅精简），用 Tauri（Rust 后端 + 原生 webview）取代 Electron。 Tauri 的 2+ 平台依赖项 — 请参阅 Tauri 先决条件指南 开发 # 克隆存储库 git clone https://github。贡献 我们需要您的帮助。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; SideX – A Tauri-based port of Visual Studio Code&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47657699"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/Sidenai/sidex'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;linzhangrun:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对 Vibe 编码的态度相当开放——只要它生成的软件（包括文档）的质量不成问题。&lt;p&gt;不幸的是，这是确实存在这些问题的 Vibe 编码项目的另一个例子。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vscode-rest:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不确定他们的目标（&lt;200mb ram）是否真的与他们的方法（使用内置渲染引擎来处理相同的源材料）有关。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TurdF3rguson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;目标：200mb RAM 使用量&lt;p&gt;这就是 Zed 很棒的原因，但我就是无法习惯调试器体验，所以我最终又回到了 VSCode。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Szpadel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;代码库中剩余的电子导入为零&lt;p&gt;并且您知道人工智能在最少的人工监督下编写了所有这些内容。&lt;p&gt;旁注：最近几天我注意到 vscode 不再到处泄漏内存。当闲置时，它占用了我拥有的所有内存 + 20GB 交换空间&lt;p&gt;最近我注意到我有一半的内存是空闲的。&lt;p&gt;我使用内部人员构建顺便说一句，所以稳定可能仍然没有这些改进&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ardline:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是一种看起来很简单的事情，直到你真正实现它为止。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;digitaltrees:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很棒的项目。还剩下多少工作，您在寻找贡献者吗？我刚刚为自己在移动设备上构建了非常基本的 IDE。我想过分叉 vscode，但感觉太重了，而且我只想要一部分功能。现在我想知道是否应该将该项目用于桌面版本。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eviks:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;相同的架构，本机性能...目标：200mb RAM 使用量。&lt;p&gt;但是 Tauri 没有本机性能，特别是在 RAM 方面！&lt;p&gt;&gt;内存基准测试可能不正确：Tauri 可能比 Electron 消耗更多 RAM
-&gt; &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tauri-apps&amp;#x2F;tauri&amp;#x2F;问题&amp;#x2F;5889" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tauri-apps&amp;#x2F;tauri&amp;#x2F;问题&amp;#x2F;5889&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OsrsNeedsf2P:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Vibe 编码的 UI 翻译与自述文件冲突且没有屏幕截图？这就是登上 HN 头版的必要条件吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anematode:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;引用自述文件：&lt;p&gt;&gt;整个 VSCode 工作台 - 编辑器、终端、扩展、主题、键绑定 - 已移植到本机 shell 上运行。&lt;p&gt;而且&lt;p&gt;&gt;许多工作台功能都已存根或部分实现&lt;p&gt;那么是哪一个呢？自述文件需要更清楚地说明什么是期望的、什么是已完成的以及什么是超出范围的。现在它看起来就像是法学硕士汤。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;debarshri:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这也支持整个插件基础设施吗？&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tkz1312:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我们生活在一个多么美好的世界，文本编辑器使用 200mb RAM 就被认为是“轻量级”的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gigatexal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好的。我很高兴。这是一个很棒的编辑器，但整个电子后端太臃肿了。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/Sidenai/sidex</guid>
-      <pubDate>Mon, 06 Apr 2026 06:49:42 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47657699</comments>
+      <title>法国收回在美国持有的最后一批黄金，获利 15B 美元</title>
+      <link>https://www.mining.com/france-pulls-last-gold-held-in-us-for-15b-gain/</link>
+      <guid isPermaLink="true">https://www.mining.com/france-pulls-last-gold-held-in-us-for-15b-gain/</guid>
+      <pubDate>Mon, 06 Apr 2026 08:03:43 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47658146</comments>
     </item>
     <item>
-      <title>Show HN：使用 Gemma E2B 在 M3 Pro 上展示实时 AI（音频/视频输入、语音输出）</title>
-      <link>https://github.com/fikrikarim/parlor</link>
-      <description>&lt;p&gt;与完全在您的机器上运行的人工智能进行自然的语音和视觉对话。 litertlm 文件 PORT 8000 服务器端口性能 (Apple M3 Pro) 舞台时间 语音 + 视觉理解 ~1.项目结构 src/ ├── 服务器。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Real-time AI (audio/video in, voice out) on an M3 Pro with Gemma E2B&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47652007"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/fikrikarim/parlor'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Drop（原名 Massdrop）结束了 Corsair 旗下的大部分合作和品牌重塑</title>
+      <link>https://drop.com/</link>
+      <description>&lt;p&gt;了解有关 CORSAIR 的更多信息 ❯ 了解有关 Elgato 的更多信息 ❯ 了解有关 Scuf 的更多信息 ❯ 《DOOM：黑暗时代》 在对抗地狱的中世纪战争中，您需要做好准备。了解有关 Elgato 的更多信息 ❯ FALLOUT S。了解有关 Elgato 的更多信息 ❯ STARFIELD 为您的星际航行收集限量版掉落物。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Drop, formerly Massdrop, ends most collaborations and rebrands under Corsair&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47656981"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://drop.com/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dvt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;扎实的工作和出色的展示，我用 Kokoro 做了很多东西，延迟令人难以置信。太疯狂了，Apple 的失误太严重了……感觉你的演示应该是 Siri 演示（我的意思是，以尽可能最赞美的方式）。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/fikrikarim/parlor</guid>
-      <pubDate>Sun, 05 Apr 2026 17:53:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47652007</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bargainbin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;换句话说，他们已经关闭了它，并将利用品牌知名度来兜售尽可能多的低质量游戏商品。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drakonka:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想我从 Hand &amp;amp; 那里得到了一个非常酷的钱包和笔记本。很多年前通过 Massdrop 缝制的。钱包早已不见踪影，但笔记本仍然存在，并带有美妙的铜绿。它曾经是一个非常酷的独特商品网站。当他们与 Input Club 闹翻时，我就不再使用它了，从那以后他们似乎就开始走下坡路了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;onli:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Massdrop 很有趣，因为它是一个可以轻松获得其他地方无法买到的东西的地方（即使我从未在那里买过东西，我也考虑过很多次，我想我的等待名单上有一些东西）。是否已经有类似后继平台的东西？ Drop.com 作为海盗船品牌装备的网站是完全没有用的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andymegacreep:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这太可怕了，恕我直言。违背了平台的目的。我为 6XX 系列耳机感到难过:c&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://drop.com/</guid>
+      <pubDate>Mon, 06 Apr 2026 04:24:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47656981</comments>
+    </item>
+    <item>
+      <title>使用法学硕士进行编码是否意味着更多的微服务？</title>
+      <link>https://ben.page/microservices</link>
+      <description>&lt;p&gt;使用法学硕士进行编码是否意味着更多的微服务？微服务的耦合风险要小得多。当您拥有数十个应用程序（全部都有自己的计费帐户、托管设置和资源）时，很容易忘记续订只有 Vercel 上托管的图像生成微服务使用的 OpenAI API 帐户。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Does coding with LLMs mean more microservices?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47656335"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://ben.page/microservices'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Kim_Bruning:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;典型的咆哮（根据记忆组成）是这样的：&lt;p&gt;&gt; ＆ldquo;这些人工智能类型都是妄想症。我的工作有保障。确保您的模型可以在 5 分钟内零调试一次性完成一个小程序。但如果让它变得更大一点，它就会开始忘记功能，引入更多无法修复的错误，并且忘记让它在大型遗留代码库上释放”&lt;p&gt;如果这不是诊断怎么办？如果我们认为这是一个机会怎么办？ O:-)&lt;p&gt;我并不是说它必须是微服务，而是说你可以限制 AI 的爆炸半径（例如，压缩是一个著名的 oops-surface）；并说你可以将工作分成独立的块，在其中你可以彻底测试你的 i&amp;#x2F;o 和副作用...&lt;p&gt;...好吧，这会很有趣，不是吗？&lt;p&gt;编程总是应该是这样的：结构化编程、函数（对于这个参数最好是无副作用的）、类和对象、其他形式的模块化，包括——好吧——微服务。我并不完全相信后者，因为它对我来说有点太重了。但是……之类的？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;int_19h:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对于在接口上具有明确定义的契约的组件来说，这是一个论据，但将它们设为微服务只会使模型的调试变得复杂。&lt;p&gt;当您可以如此快速地重构时，也不清楚紧密耦合是否实际上是一个问题。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nikeee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;对法学硕士来说重要的事情对人类来说也很重要，这通常意味着 DX。大多数微服务设置都非常难以跨服务边界进行调试，因此我认为将来，我们将看到更多对法学硕士有意义的架构决策。这可能意味着模块化整体或类似的东西。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_pdp_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这毫无意义。您可以轻松地制作一个整体并单独构建它的所有部分 - 即模块、插件、包。&lt;p&gt;事实上，我的观点是，由于人工智能编码助手，将会有更多的整体应用程序，而不是更少。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;siruwastaken:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这似乎是使用 AI 的人们重新发明的模块化代码以及使用特定函数签名作为 API 进行数据交换的想法。我们不是已经基本上以这种方式做事了吗？尽管是通过单体中的子模块，因为它使人类在任何给定时间都能够理解整个事物的认知能力？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;c1sc0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当小型可组合 CLI 工具似乎更适合法学硕士时，为什么还要选择微服务？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tatrions:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有界表面积的见解是正确的，但实际的强制函数是上下文窗口大小。小型代码库适合上下文，LLM 可以进行端到端推理。如果您的工具选择正确的文件来输入提示，那么您可以在整体中获得与定义良好的模块相同的遏制。&lt;p&gt;有趣的推论：随着上下文窗口不断增长（两年内从 8k 到 1M+）​​，这种架构压力实际上应该逆转。当模型可以将整个整体存储在工作内存中时，您就可以获得所有爆炸半径遏制，而无需单独服务、计费帐户和部署管道的运营开销。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://ben.page/microservices</guid>
+      <pubDate>Mon, 06 Apr 2026 02:33:21 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47656335</comments>
+    </item>
+    <item>
+      <title>在家制作您自己的 ColecoVision，第 5 部分</title>
+      <link>https://www.leadedsolder.com/2026/03/24/colecovision-diy-part-5.html</link>
+      <description>&lt;p&gt;有些充电器会推到 5 左右。这种扭曲最终会产生不良的焊点，甚至可能导致短路或电路板损坏。它没有出现在这个 v7 板上，但这就是生活。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Make your own ColecoVision at home, part 5&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47656758"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.leadedsolder.com/2026/03/24/colecovision-diy-part-5.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.leadedsolder.com/2026/03/24/colecovision-diy-part-5.html</guid>
+      <pubDate>Mon, 06 Apr 2026 03:45:07 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47656758</comments>
     </item>
   </channel>
 </rss>

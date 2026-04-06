@@ -6,48 +6,63 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Korean</description>
     <language>ko</language>
-    <lastBuildDate>Mon, 06 Apr 2026 07:50:48 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2026 10:15:43 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-ko.xml"/>
     <item>
-      <title>SideX – Visual Studio Code의 Tauri 기반 포트</title>
-      <link>https://github.com/Sidenai/sidex</link>
-      <description>&lt;p&gt;SideX는 Electron을 Tauri(Rust 백엔드 + 기본 웹뷰)로 대체하는 VSCode의 1:1 아키텍처 포트(심각하게 제거됨)입니다. Tauri에 대한 2개 이상의 플랫폼 종속성 - Tauri 전제 조건 가이드 개발 # 저장소 복제 git clone https://github을 참조하세요. 기여 우리는 여러분의 도움을 원합니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; SideX – A Tauri-based port of Visual Studio Code&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47657699"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/Sidenai/sidex'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 12 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;linzhangrun:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;바이브 코딩에 대한 나의 태도는 매우 개방적입니다. 문서를 포함하여 그것이 생산하는 소프트웨어의 품질이 문제가 되지 않는 한 말입니다.&lt;p&gt;불행히도 이것은 그러한 문제가 있는 바이브 코딩 프로젝트의 또 다른 예입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;vscode-rest:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;나는 그들의 목표(&amp;lt;200mb RAM)가 그들의 접근 방식(동일한 소스 자료에 대해 내장된 렌더링 엔진을 사용하는 것)과 실제로 관련이 있는지 전혀 확신하지 못합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TurdF3rguson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 목표: 200MB RAM 사용량&lt;p&gt;이것이 Zed가 훌륭한 이유이지만 디버거 경험에 익숙해지지 않아 결국 VSCode로 돌아오게 되었습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Szpadel:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; Zero Electron은 코드베이스에 남아 있으며&lt;p&gt;AI가 최소한의 인간 감독으로 모든 것을 작성했다는 것을 알고 있습니다.&lt;p&gt;참고: 지난 며칠 동안 저는 vscode가 모든 곳에서 메모리 누수를 멈춘 것을 발견했습니다. 유휴 상태로 놔두면 내가 가진 모든 RAM + 20GB의 스왑 공간을 사용하고&lt;p&gt;최근에는 RAM의 절반이 비어 있다는 것을 알았습니다.&lt;p&gt;내부자 빌드를 사용하지만 안정 버전에서는 여전히 이러한 개선 사항이 없을 수 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ardline:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것은 실제로 구현하기 전까지는 단순해 보이는 종류의 것입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;digitaltrees:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;멋진 프로젝트입니다. 작업이 얼마나 남았나요? 기여자를 찾고 있나요? 나는 방금 모바일에 매우 기본적인 IDE를 구축했습니다. vscode를 포크하려고 생각했지만 너무 무거워서 일부 기능만 원했습니다. 이제 이 프로젝트를 데스크톱 버전으로 사용해야 할지 궁금합니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;eviks:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt; 동일한 아키텍처, 기본 성능... 목표: 200MB RAM 사용량.&lt;p&gt;그러나 Tauri는 특히 RAM의 경우 기본 성능이 없습니다!&lt;p&gt;&amp;gt; 메모리 벤치마크가 올바르지 않을 수 있음: Tauri가 Electron보다 더 많은 RAM을 소비할 수 있음
-&amp;gt; &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tauri-apps&amp;#x2F;tauri&amp;#x2F;문제&amp;#x2F;5889" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;tauri-apps&amp;#x2F;tauri&amp;#x2F;문제&amp;#x2F;5889&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OsrsNeedsf2P:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;충돌하는 README가 있고 스크린샷이 없는 Vibe 코딩된 UI 번역이 있습니까? 이것이 HN 첫 페이지에 등장하는 데 필요한 것입니까?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;anematode:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;README에서 인용:&lt;p&gt;&amp;gt; 전체 VSCode 워크벤치(편집기, 터미널, 확장, 테마, 키 바인딩)가 기본 셸에서 실행되도록 포팅되었습니다.&lt;p&gt;뿐만 아니라&lt;p&gt;&amp;gt; 많은 워크벤치 기능이 스텁되거나 부분적으로 구현되었습니다.&lt;p&gt;그럼 어떤 것인가요? README에서는 무엇이 목표인지, 무엇을 수행하는지, 무엇이 범위를 벗어나는지에 대해 더 명확해야 합니다. 지금은 LLM 수프처럼 보입니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;debarshri:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것이 전체 플러그인 인프라도 지원합니까?&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tkz1312:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;텍스트 편집기에 200MB RAM을 사용하는 것이 "경량"으로 간주되는 세상에 우리는 살고 있습니다.&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gigatexal:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;좋은. 기쁘다. 훌륭한 편집기이지만 전체 전자 백엔드가 너무 부풀어 있습니다.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/Sidenai/sidex</guid>
-      <pubDate>Mon, 06 Apr 2026 06:49:42 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47657699</comments>
+      <title>프랑스, 150억 달러 이익 위해 미국 보유 마지막 금 회수</title>
+      <link>https://www.mining.com/france-pulls-last-gold-held-in-us-for-15b-gain/</link>
+      <guid isPermaLink="true">https://www.mining.com/france-pulls-last-gold-held-in-us-for-15b-gain/</guid>
+      <pubDate>Mon, 06 Apr 2026 08:03:43 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47658146</comments>
     </item>
     <item>
-      <title>HN 표시: Gemma E2B를 사용하는 M3 Pro의 실시간 AI(오디오/비디오 입력, 음성 출력)</title>
-      <link>https://github.com/fikrikarim/parlor</link>
-      <description>&lt;p&gt;전적으로 컴퓨터에서 실행되는 AI와 자연스러운 음성 및 시각 대화를 나누세요. litertlm 파일 PORT 8000 서버 포트 성능(Apple M3 Pro) 무대 시간 음성 + 비전 이해 ~1. 프로젝트 구조 src/ ├── 서버.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: Real-time AI (audio/video in, voice out) on an M3 Pro with Gemma E2B&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47652007"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/fikrikarim/parlor'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Drop(이전 Massdrop)은 Corsair에서 대부분의 협업 및 브랜드 변경을 종료합니다.</title>
+      <link>https://drop.com/</link>
+      <description>&lt;p&gt;CORSAIR에 대해 자세히 알아보기 ❯ Elgato에 대해 자세히 알아보기 ❯ Scuf에 대해 자세히 알아보기 ❯ DOOM: THE DARK AGES 지옥과의 중세 전쟁에서는 준비를 해야 합니다. Elgato ❯ FALLOUT S에 대해 자세히 알아보세요. Elgato ❯ STARFIELD에 대해 자세히 알아보세요. 별을 가로지르는 항해를 위한 한정판 드롭을 수집하세요.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Drop, formerly Massdrop, ends most collaborations and rebrands under Corsair&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47656981"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://drop.com/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dvt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;탄탄한 작업과 훌륭한 쇼케이스. Kokoro와 함께 많은 작업을 수행했는데 대기 시간이 엄청납니다. Apple이 얼마나 심하게 공을 떨어뜨렸는지 정말 미친 짓입니다... 귀하의 데모가 Siri 데모여야 한다는 느낌이 듭니다(가능한 가장 무료한 방식으로 말입니다).&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/fikrikarim/parlor</guid>
-      <pubDate>Sun, 05 Apr 2026 17:53:19 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47652007</comments>
+&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bargainbin:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;즉, 그들은 이를 폐쇄하고 브랜드 인지도를 활용하여 가능한 한 낮은 품질의 게임 상품을 판매할 것입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;drakonka:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;핸드앤에서 정말 멋진 지갑과 수첩을 받은 것 같아요. 수년 전에 Massdrop을 통해 바느질하십시오. 지갑은 사라진 지 오래지만 노트북은 여전히 ​​아름다운 녹청을 간직하고 있습니다. 예전에는 독특한 아이템을 판매하는 정말 멋진 사이트였습니다. 입력 클럽과의 사이가 틀어졌을 때 사용을 중단했는데 그 이후로 막 내리막길을 걷고 있는 것 같습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;onli:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;매스드롭은 다른 곳에서는 쉽게 구할 수 없는 물건을 얻을 수 있는 곳이라는 점에서 흥미로웠습니다(비록 그곳에서 물건을 사지 않았더라도 여러 번 고려했고 대기자 명단에 있는 것이 있었던 것 같습니다). 이미 후속 플랫폼 같은 것이 있나요? 브랜드 해적 장비 사이트인 Drop.com은 전혀 쓸모가 없습니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;andymegacreep:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이거 정말 끔찍해, 임호. 플랫폼의 목적을 무너뜨립니다. 6XX 시리즈 헤드폰이 아쉽네요 :c&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://drop.com/</guid>
+      <pubDate>Mon, 06 Apr 2026 04:24:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47656981</comments>
+    </item>
+    <item>
+      <title>LLM을 사용한 코딩은 더 많은 마이크로서비스를 의미합니까?</title>
+      <link>https://ben.page/microservices</link>
+      <description>&lt;p&gt;LLM을 사용한 코딩은 더 많은 마이크로서비스를 의미합니까? 마이크로서비스는 결합 위험이 훨씬 적습니다. 수십 개의 앱(모두 자체 청구 계정, 호스팅 설정 및 리소스 포함)이 있는 경우 Vercel에서 호스팅되는 이미지 생성 마이크로서비스만 사용하는 OpenAI API 계정을 갱신하는 것을 잊어버리기가 훨씬 쉽습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Does coding with LLMs mean more microservices?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47656335"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://ben.page/microservices'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 7 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Kim_Bruning:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;일반적인 호언장담(기억으로 구성)은 다음과 같습니다.&lt;p&gt;&amp;gt; &amp;quot;이 AI 유형은 모두 망상적입니다. 내 직업은 안전해요. 물론 귀하의 모델은 디버깅 없이 5분 만에 그린 필드에서 작은 프로그램을 한 번에 실행할 수 있습니다. 하지만 조금 더 크게 만들면 기능을 잊어버리기 시작하고, 수정할 수 있는 것보다 더 많은 버그가 발생하고, 대규모 레거시 코드베이스에 방치하는 것을 잊어버립니다.&amp;quot;&lt;p&gt;이것이 진단이 아니라면 어떻게 될까요? 그것을 기회로 본다면 어떨까요? O:-)&lt;p&gt;마이크로서비스가 필요하다고 말하는 것은 아니지만, AI가 작동하는 폭발 반경을 제한할 수 있다고 가정하겠습니다(예를 들어 압축은 유명한 죄송 표면입니다). 그리고 작업을 자체 포함된 블록으로 분할하여 i&amp;#x2F;o 및 부작용을 철저하게 테스트할 수 있다고 가정해 보겠습니다...&lt;p&gt;... 음, 그게 흥미로울 것입니다. 그렇죠?&lt;p&gt;프로그래밍은 항상 구조적 프로그래밍, 함수(이 논점에서는 부작용이 없는 것이 바람직함), 클래스 및 객체, 마이크로서비스를 포함한 기타 모듈화 형식에 관한 것이어야 합니다. 나는 그것이 나에게 너무 무겁게 느껴지기 때문에 정확히 후자를 좋아하지 않습니다. 그런데... 뭔가요?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;int_19h:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이는 인터페이스에 잘 정의된 계약이 있는 구성 요소에 대한 주장이지만 이를 마이크로서비스로 만드는 것은 모델 디버깅을 복잡하게 만들 뿐입니다.&lt;p&gt;이렇게 빠르게 리팩토링할 수 있을 때 긴밀한 결합이 실제로 문제가 되는지 여부도 불분명합니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nikeee:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;LLM에게 중요한 것은 인간에게 중요한 것입니다. 이는 일반적으로 DX를 의미합니다. 대부분의 마이크로서비스 설정은 서비스 경계를 ​​넘어 디버깅하기가 매우 어렵기 때문에 앞으로는 LLM이 작업하기에 적합한 아키텍처 결정이 더 많이 나올 것이라고 생각합니다. 이는 아마도 모듈형 단일체 또는 이와 유사한 것을 의미할 것입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;_pdp_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이것은 말이 되지 않습니다. 쉽게 모놀리스를 만들고 그 모든 부분(예: 모듈, 플러그인, 패키지)을 분리하여 구축할 수 있습니다.&lt;p&gt;사실 제 주장은 AI 코딩 도우미로 인해 더 많은 모놀리스 애플리케이션이 있을 것이라는 것입니다.&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;siruwastaken:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;이는 코드를 모듈화하고 API로 데이터 교환을 위해 특정 기능을 사용하는 아이디어가 AI를 사용하는 사람들에 의해 재창조되고 있는 것처럼 보입니다. 주어진 시간에 모든 것을 이해하기 위해 인간에게 가하는 인지적 부하로 인해 우리는 이미 단일체의 하위 모듈을 통해 이러한 방식으로 작업을 수행하고 있지 않습니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;c1sc0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;작은 구성 가능한 CLI 도구가 LLM에 더 적합해 보이는데 마이크로서비스가 필요한 이유는 무엇입니까?&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tatrions:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;경계 표면적 통찰력은 옳지만 실제 강제 기능은 컨텍스트 창 크기입니다. 작은 코드베이스는 상황에 맞게 조정되며 LLM은 엔드투엔드를 추론할 수 있습니다. 도구가 프롬프트에 피드할 올바른 파일을 선택하면 모놀리스의 잘 정의된 모듈로 동일한 격리를 얻을 수 있습니다.&lt;p&gt;흥미로운 결과: 컨텍스트 창이 계속 증가함에 따라(2년 내에 8K에서 1M+로) 이러한 아키텍처 압박은 실제로 역전되어야 합니다. 모델이 작업 메모리에 전체 모놀리스를 보유할 수 있으면 별도의 서비스, 청구 계정 및 배포 파이프라인의 운영 오버헤드 없이 폭발 반경을 모두 억제할 수 있습니다.&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://ben.page/microservices</guid>
+      <pubDate>Mon, 06 Apr 2026 02:33:21 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47656335</comments>
+    </item>
+    <item>
+      <title>집에서 나만의 ColecoVision 만들기, 5부</title>
+      <link>https://www.leadedsolder.com/2026/03/24/colecovision-diy-part-5.html</link>
+      <description>&lt;p&gt;일부 충전기는 약 5개 정도를 밀어냅니다. 이렇게 비틀면 결국 납땜 연결 불량이 발생하고 단락이나 보드 손상이 발생할 수도 있습니다. 이 v7 보드에는 표시되지 않았지만 그게 인생입니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Make your own ColecoVision at home, part 5&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47656758"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.leadedsolder.com/2026/03/24/colecovision-diy-part-5.html'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="true">https://www.leadedsolder.com/2026/03/24/colecovision-diy-part-5.html</guid>
+      <pubDate>Mon, 06 Apr 2026 03:45:07 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47656758</comments>
     </item>
   </channel>
 </rss>
