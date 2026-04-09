@@ -6,116 +6,193 @@
     <link>https://tang1keke.github.io/hn-summary-and-translate</link>
     <description>Hacker News articles summarized and translated to Chinese (Simplified)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 09 Apr 2026 16:25:12 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2026 19:21:56 +0000</lastBuildDate>
     <generator>HN RSS Translator</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://tang1keke.github.io/hn-summary-and-translate/rss-zh.xml"/>
     <item>
-      <title>Vercel Claude Code 插件想要读取您的提示</title>
-      <link>https://akshaychugh.xyz/writings/png/vercel-plugin-telemetry</link>
-      <description>&lt;p&gt;“Vercel 插件收集匿名使用数据……您是否也想分享您的提示文本。Vercel 插件有助于部署、框架指导和技能注入。为您的 Next 安装该插件。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Vercel Claude Code plugin wants to read your prompt&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47704881"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://akshaychugh.xyz/writings/png/vercel-plugin-telemetry'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>游戏引擎对数据库遗忘的数据了解多少</title>
+      <link>https://nockawa.github.io/blog/what-game-engines-know-about-data/</link>
+      <description>&lt;p&gt;它是一个数据库引擎，以游戏引擎的方式存储数据，并提供游戏服务器所需的保证。 Typhon 从数据库架构中汲取了四种功能：带有每个组件 MVCC 的 ACID 事务。游戏引擎通常没有隔离。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; What Game Engines Know About Data That Databases Forgot&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47707269"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://nockawa.github.io/blog/what-game-engines-know-about-data/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 4 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;an0malous:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;整个公司都是建立在粗略的实践之上的&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;btown:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;可以肯定的是，问题不在于插件将行为注入系统提示符 - 这就是每个插件和技能。&lt;p&gt;但这就是对信任的破坏，尤其是包含完整 bash 命令的默认遥测。根据面向对象编程：&lt;p&gt;&gt;中间那一排。每个 bash 命令 - 完整的命令字符串，而不仅仅是工具名称 - 发送到 telemetry.vercel.com。文件路径、项目名称、环境变量名称、基础设施详细信息。无论命令中包含什么，他们都会明白。&lt;p&gt;关于没有 CLI 空间允许选择加入遥测的论点是荒谬的 - 他们的自述文件 &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;vercel&amp;#x2F;vercel-plugin?tab=readme-ov-file#installation" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;vercel&amp;#x2F;vercel-plugin?tab=readme-ov-file#i...&lt;/a&gt; 实际上让你通过调用 `npx` &lt;a href="https:&amp;#x2F;&amp;#x2F;www.npmjs.com&amp;#x2F;package&amp;#x2F;plugins" 安装 Vercel 插件rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.npmjs.com&amp;#x2F;package&amp;#x2F;plugins&lt;/a&gt;，&lt;i&gt;由 Vercel 员工编写&lt;/i&gt;，可以随时添加此选择。&lt;p&gt;IMO Vercel 不是一个好演员。人们可以提出一个很好的论点，即他们已经拥抱-扩展-消灭了 React 作为一个独立且自包含的基础库的整个未来，服务器端渲染的复杂性、为其提供支持的未记录的协议以及由此产生的与其服务器环境的紧密耦合。可悲的是，这种行为并不令我感到惊讶。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;infecto:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我从垃圾短信中收到的每一个诈骗网站都托管在 vercel 上。并不奇怪。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;embedding-shape:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;技能被注入到与 Vercel、Next.js 或此插件范围无关的会话中&lt;p&gt;&gt;每个技能的触发规则都会在每个存储库中的每个提示和每个工具调用上进行评估，无论 Vercel 是否在范围内&lt;p&gt;&gt;对于跨多个项目（有些是 Vercel，有些不是）工作的用户来说，每个会话的固定成本约为 19k 代币 — 即使该会话是纯粹的后端工作、数据科学或非 Vercel 前端。&lt;p&gt;我知道现在一切都变得很糟糕，但最终如何交付这样的东西呢？检查你的插件和扩展模块是否在你想要的上下文中工作，并且不会影响你不想要的上下文，这似乎是创建这样的东西的第一步。 “工程哪里去了？”感觉太复杂了，连最小的金额都去哪儿了？&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://akshaychugh.xyz/writings/png/vercel-plugin-telemetry</guid>
-      <pubDate>Thu, 09 Apr 2026 15:17:27 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47704881</comments>
+&lt;p&gt;&lt;strong&gt;Top 9 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;scottcodie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不确定游戏是否需要交易。在我看来，实体流概念更适合：从事件队列中读取并随着时间的推移一致地协调状态。就像示例中排序的 top-n 一样，如果它是一个游戏并且查询是众所周知的，那么最好将其具体化为快速排名。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jbonatakis:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;CMU 最近与 SpacetimeDB 的创始人举办了一场研讨会 [1]，非常有趣。我预计录音将在接下来的几天内完成&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;db.cs.cmu.edu&amp;#x2F;events&amp;#x2F;pg-vs-world-spacetimedb-tyler-cloutier&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;db.cs.cmu.edu&amp;#x2F;事件&amp;#x2F;pg-vs-world-spacetimedb-tyler-c...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bitwize:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;当我了解 ECS 时，我意识到 Tablizer（Slashdot 的老家伙，他坚持认为 OOP 是死胡同，而 FoxPro 中所做的“面向表的编程”才是正确的出路）可能是对的。在我的 Android 游戏中使用 ECS 有点麻烦，但由于能够创建新类型的实体、为它们实现熟悉的行为以及添加新实体，而无需代码复制或继承树纠缠，因此物有所值。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;SigmundA:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;默认缓存位置。在传统的行存储中，读取所有玩家位置意味着加载整行——姓名、库存、生命值等一切。大多数字节都被浪费了。&lt;p&gt;没有提到列存储吗？这不是来自 ECS...&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Data_orientation" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Data_orientation&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RandyRanderson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;或者从更一般的意义上来说：让您的代码尽可能接近您的数据&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;doctorpangloss:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我对“我与聊天机器人进行了对话，这是输出”感到疲惫不堪。博客文章。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dpe82:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这看起来很酷，但是伙计，很难克服非常非常明显的人工智能写作。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spullara:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的！ FoundationDB 是在团队要构建一款大型多人游戏但找不到可以支持它的数据库后创建的......&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Garlef:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;严肃的问题：&lt;p&gt;如果你采用 BDD&amp;#x2F;TDD 方法 - 这样的技术还能给你带来一些东西吗？&lt;p&gt;我已经涉足了一些类似的东西（SpacetimeDB），目的是为游戏创建一个无头后端。&lt;p&gt;但后来我意识到我仍然需要定义我在传统软件层中测试的接口，并且所有漂亮的 DB 魔法似乎都毫无价值，因为我仍然需要按照传统方式进行编排。&lt;p&gt;（简而言之：无论你的 DB 魔法有多么出色，你仍然会把它藏在地下室&amp;#x2F;机房里，对吧？）&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://nockawa.github.io/blog/what-game-engines-know-about-data/</guid>
+      <pubDate>Thu, 09 Apr 2026 18:10:33 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47707269</comments>
     </item>
     <item>
-      <title>帝企鹅和南极海狗现已濒临灭绝</title>
-      <link>https://iucn.org/press-release/202604/emperor-penguin-and-antarctic-fur-seal-now-endangered-due-climate-change-iucn</link>
-      <description>&lt;p&gt;分享：新闻稿 2026 年 4 月 9 日 帝企鹅和南极海狗现在因气候变化而濒临灭绝 – 世界自然保护联盟红色名录腺体，瑞士，2026 年 4 月 9 日 (IUCN) – 根据世界自然保护联盟濒危物种红色名录™，帝企鹅和南极海狗现在均处于濒危状态。帝企鹅在世界自然保护联盟红色名录上已从近危状态变为濒危状态。照片：Philip Trathan 南极毛皮海豹已从 IUCN 红色名录上的“最不受关注”变为“濒危”。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Emperor penguin and Antarctic fur seal now endangered&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47705324"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://iucn.org/press-release/202604/emperor-penguin-and-antarctic-fur-seal-now-endangered-due-climate-change-iucn'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Hegel，基于属性的通用测试协议和 PBT 库系列</title>
+      <link>https://hegel.dev</link>
+      <description>&lt;p&gt;Hegel | Hegel 跳到内容 Hegel Hegel Hegel 是一个基于假设的通用的基于属性的测试协议和库系列。解释黑格尔如何工作为什么黑格尔。参考 安装参考 协议参考。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Hegel, a universal property-based testing protocol and family of PBT libraries&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47707762"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://hegel.dev'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 1 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;alsetmusic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令人惊讶的是这个标题对我的影响有多大。谁不喜欢企鹅？海豹很好，但企鹅也很可爱。我们真的毁了一切。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://iucn.org/press-release/202604/emperor-penguin-and-antarctic-fur-seal-now-endangered-due-climate-change-iucn</guid>
-      <pubDate>Thu, 09 Apr 2026 15:55:09 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47705324</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;aerhardt:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;题外话，但直到今天我才想到某个商业想法的与黑格尔相关的名称。想知道是谁注册了所有域名，这是一个。这将是一个完全不同的域，也是名称的派生，因此无需担心。但如果我用 Rust 构建一些东西，我会记住你:)&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://hegel.dev</guid>
+      <pubDate>Thu, 09 Apr 2026 18:37:45 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47707762</comments>
     </item>
     <item>
-      <title>增强顶点块下降的 WebGPU 实现</title>
-      <link>https://github.com/jure/webphysics</link>
-      <description>&lt;p&gt;代码：src/physical/gpu/broadPhase。代码：src/physicals/gpu/contactGeneration。代码：src/physicals/gpu/contactGeneration。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; A WebGPU Implementation of Augmented Vertex Block Descent&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47702541"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://github.com/jure/webphysics'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>研究驱动的代理：当您的代理在编码之前进行阅读时会发生什么</title>
+      <link>https://blog.skypilot.co/research-driven-agents/</link>
+      <description>&lt;p&gt;要点：在编写代码之前阅读论文并研究竞争项目的代理会发现仅代码代理错过的优化。仅代码上下文适用的情况#Karpathy 的自动研究表明，编码代理可以自主改进神经网络训练脚本。这是代理所不具备的领域知识。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Research-Driven Agents: What Happens When Your Agent Reads Before It Codes&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47706141"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://blog.skypilot.co/research-driven-agents/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 6 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;doctorpangloss:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;skypilot 开发人员需要专注于解耦他们的产品，以便他们非常有价值的“找到最便宜的云”可以被使用。功能并不与 Kubernetes JobSet 和 MLflow 的错误重塑结合在一起&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hungryhobbit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我想任何使用 Claude 的人都知道，当你首先让它制定计划，并要求它尽可能多地研究现有代码时，它会更聪明……所以本文中的结果一点也不令我感到惊讶。&lt;p&gt;但是，我很想听到其他尝试将 shell 脚本（在文章末尾）添加到其流程中的人的反馈：它（真的）改进了 Claude 吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;KingOfCoders:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我使用 #PPPCDC 提示：计划、计划、计划，然后验证：将计划与现有代码进行比较。重新阅读计划并将其与文档进行比较。修复您不自信的领域。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;phendrenad2:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这很明显，对吧？如果您想构建 Facebook 克隆，您不会告诉代理“构建 Facebook”。您可以向它提供 Facebook 上每个页面、行为、交互、UI 等的描述。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dataviz1000:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;（抱歉，垃圾邮件。）&lt;p&gt;我也在从不同的角度研究这个问题。希望分享能够促进对话。&lt;p&gt;首先，关于循环，克劳德（编码代理）的背景和注意力足以进行自我反思。 Agent Tuning 展示了一种技术，不仅演示了这一点，而且还提供了一种量化它的方法。 [0] 区别在于 autoresearch 的 val_bpb 测量代理构建的内容；代理调整的 p̂ 测量代理本身。&lt;p&gt;&gt;克劳德的注意力不区分“我正在写的指令”和“我正在写的指令”。和“我正在遵循的说明” -- 它们都只是上下文中的标记。&lt;p&gt;其次，进行研究，寻找学术研究来添加到上下文中会有所帮助。这是一个通过阅读研究并以创造性的新方式重新创建交易策略来创建交易策略的实现示例。 [1]&lt;p&gt;最大的问题是编码代理不会“快速而大声地失败”。他们欺骗性地失败了。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;adam-s&amp;#x2F;agent-tuning" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;adam-s&amp;#x2F;agent-tuning&lt;/a&gt;&lt;p&gt;[1] &lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;adam-s&amp;#x2F;alphadidactic" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;adam-s&amp;#x2F;alphadidactic&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;hopechong:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在编写代码之前阅读论文的编码代理会发现仅代码代理错过的优化。&lt;p&gt;我们在 Karpathy 的自动研究循环中添加了文献综述阶段，并将其指向 llama.cpp。该代理自主阅读 arxiv 论文、研究竞争分叉并启动虚拟机来运行并行实验。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://blog.skypilot.co/research-driven-agents/</guid>
+      <pubDate>Thu, 09 Apr 2026 16:58:49 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47706141</comments>
+    </item>
+    <item>
+      <title>Show HN：我为 C/C++ 构建了一个类似 Cargo 的构建工具</title>
+      <link>https://github.com/randerson112/craft</link>
+      <description>&lt;p&gt;工艺如何运作 用工艺定义您的项目。 craft 项目 my_app craft 项目 --no-git craft 项目 my_app --lang c craft 项目 my_lib --template 静态库 craft init [路径] 在当前或指定目录中初始化 Craft 项目。 craft build 读取工艺。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Show HN: I built a Cargo-like build tool for C/C++&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47705413"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/randerson112/craft'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 21 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;einpoklum:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在实际尝试之前的印象是：&lt;p&gt;CMake 是规范语言的疣猪和处理无数特质和所有事物的极端情况的机制的组合。&lt;p&gt;我怀疑 &lt;p&gt; 10,000 行 C 代码可以涵盖其中的大部分内容。&lt;p&gt;我也怀疑开发人员是否能够表达他们想要的确切关系和语义细微差别，而不是对许多项目（但不是全部）有意义的默认值。&lt;p&gt;不过 - 如果它可以帮助人们开始更简单或更直接的项目 - 那很好:-)&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nesarkvechnep:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只要它是针对 C&amp;#x2F;C++ 而不是 C 或 C++，我就持怀疑态度。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;adev_:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;曾经在 C 中管理大型（&gt;1500）软件堆栈的人的反馈C++ &amp;#x2F; Fortran语言蟒蛇 &amp;#x2F;铁锈&amp;#x2F; etc:&lt;p&gt;- (1) 提供一种无需互联网访问即可编译的方法，并手动指定关联的依赖路径。这绝对是至关重要的。&lt;p&gt;最“严重”的是出于安全原因和可重复性原因，多语言包管理器和集成系统在没有互联网访问的沙箱中构建。&lt;p&gt;如果您的构建系统不允许离线构建并手动指定依赖项，您将使集成商和包管理器的生活变得悲惨，他们将避开您的项目。&lt;p&gt;(2) &lt;i&gt;永远&lt;/i&gt; &lt;i&gt;永远&lt;/i&gt;构建在“-03 -march=native”中默认情况下。这始终是一个危险信号，也是不成熟的标志。人们期望代码是可移植和可交付的。&lt;p&gt;好的默认选项应该是 CMake 相当于“RelWithDebInfo”的选项。 （含义： -O2 -g -DNDEBUG ）。&lt;p&gt;-O3 可以争论。 -march=native 始终是一个错误。&lt;p&gt;- (3) 允许您的构建工具由其他构建工具（例如 CMake）构建。&lt;p&gt;任何关心可重复性的人都希望从源代码开始，而不是从预编译的二进制文件开始。这对于交叉编译也很重要。&lt;p&gt;- (4) 请提供与 pkg-config 的兼容性 (&lt;a href="https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Pkg-config" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;en.wikipedia.org&amp;#x2F;wiki&amp;#x2F;Pkg-config&lt;/a&gt;)如果可能，CPS (&lt;a href="https:&amp;#x2F;&amp;#x2F;cps-org.github.io&amp;#x2F;cps&amp;#x2F;overview.html" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;cps-org.github.io&amp;#x2F;cps&amp;#x2F;overview.html&lt;/a&gt;) 用于消费和生成。&lt;p&gt;它们将允许您的系统与其他构建系统之间的互操作性。&lt;p&gt;- (5) 最后但并非最不重要的一点：认真考虑交叉编译用例。&lt;p&gt;交叉编译在嵌入式系统领域很常见。任何不支持交叉编译的构建系统实际上都将被禁止进入嵌入式域。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;kjksf:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;在人工智能时代，这样的工具毫无意义。尤其是新的，考虑到 make、cmake、premake 和其他一些工具的存在。&lt;p&gt;C++ 构建系统的核心可归结为调用 gcc foo.c -o foo.obj &amp;#x2F;链接 foo.obj foo.exe（如果我的语法错误，请原谅）。&lt;p&gt;当然，你有更多的 .c 文件，并且传递了一些标志，但这就是核心。&lt;p&gt;我最近从头开始了一个新的 C++ 程序。&lt;p&gt;我写了什么构建系统？&lt;p&gt;我没有。我告诉克劳德：&lt;p&gt;“编写一个bun typescript脚本build.ts，用cl编译.cpp文件并创建foo.exe。创建发布和调试版本，使用 -release cmd-line 标志触发发布版本。&lt;p&gt;它在几分钟内就完成了，并且有效。我可以用类似的说明来扩展它。我可以要求发布带有所有清理标志的版本，克劳德会添加它。&lt;p&gt;细节并不重要。我本可以要求一个 makefile、cmake 文件或 ninja，或者用 python、ruby、Go 或 rust 编写的脚本。我只是喜欢使用 Bun 来编写脚本。&lt;p&gt;重点是，在过去我尝试学习 cmake，上帝啊，我花了好几天的时间来学习一些我将花费 1 小时使用的东西。&lt;p&gt;考虑到 claude 可以让我在几分钟内使用任何构建系统，学习这些工具中的任何一个都是没有意义的。&lt;p&gt;创建新的构建工具更没有意义。即使你创建了最令人惊叹的工具，我仍然会选择花一分钟询问克劳德，而不是花几天时间学习新工具的任意语法。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;looneysquash:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;除了 Cargo 之外，您可能还想看看 
+Python 的 pyproject.toml 标准。 &lt;a href="https:&amp;#x2F;&amp;#x2F;packaging.python.org&amp;#x2F;en&amp;#x2F;最新&amp;#x2F;指南&amp;#x2F;writing-pyproject-toml&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;packaging.python.org&amp;#x2F;en&amp;#x2F;latest&amp;#x2F;guides&amp;#x2F;writing-pyproj...&lt;/a&gt;&lt;p&gt;它很相似，但专为现有生态系统而设计。显然，Cargo 是为“cargo”而设计的。&lt;p&gt;但是“pyproject.toml”是为最终全部采用的现有工具而设计的。 （当然，还有新工具。）&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mutkach:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请考虑添加“货物手表”——这将是一个杀手级功能！&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dima55:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果你认为 cmake 不是很好，解决方案不是在 cmake 周围添加更多的垃圾，而是替换它。 Cmake 本身的存在是因为很多人没有费心去阅读 gnu make 手册，并且添加了更多的东西来管理它。请不要增加这个问题。这是一种疾病&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;shevy-java:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;C 语言的采用仅需 51 年。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gavinray:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我用过的最不痛苦的 C&amp;#x2F;C++ 构建工具是 xmake&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;xmake-io&amp;#x2F;xmake" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;xmake-io&amp;#x2F;xmake&lt;/a&gt;&lt;p&gt;我喜欢它的原因（超越易用性）是它可以吐出 CMakeLists.txt 和compile_commands.json 用于 IDE&amp;#x2F;LSP 集成，还支持安装 Conan&amp;#x2F;vcpkg 库甚至Git 存储库。&lt;p&gt;&lt;pre&gt;&lt;code&gt; set_project(“myapp”)
+    set_languages(“c++20”)
+
+    add_requires("conan::fmt"11.0.2", {alias = "fmt"})
+    add_requires("vcpkg::fmt", {alias = "fmt"})
+    add_requires("git:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;fmtlib&amp;#x2F;fmt v11.0.2", {alias = "fmt"})
+
+    目标（“myapp”）
+        set_kind(“二进制”)
+        add_files("src"*.cpp")
+        add_packages(“fmt”)
+&lt;/code&gt;&lt;/pre&gt;
+然后你可以使用它，如&lt;p&gt;&lt;pre&gt;&lt;code&gt; #生成compile_commands.json和CMakeLists.txt
+  $ xmake 项目 -k 编译命令
+  $ xmake 项目 -k cmake
+
+  # 构建+运行
+  $ xmake &amp;amp;&amp;amp; xmake运行myapp&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;seniorThrowaway:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;每天都要处理大型 C++ 软件项目，祝你好运。  我们使用 conan2，虽然使用起来非常具有挑战性，但我还没有找到更好的东西可以处理作为依赖项合并的古老项目，这些项目仍然使用 autoconf 甚至自定义构建工具。  尽管仍然存在一些差距，但它也非常擅长检测和执行 ABI 兼容性。  这个问题空间非常困难，改进它是创建 C&amp;#x2F;C++ 之后的许多语言的主要驱动力&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bluGill:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;任何人都可以制作一个工具来解决一小部分问题。  然而，此类工具尚未流行的原因是，在它发挥作用之前，您需要处理所有奇怪的特殊情况。  即使您将支持限制在桌面：OS&amp;#x2F;X 和 Windows，这个问题也会很困难，添加各种 Linux 风格就更困难了，更不用说 BSD 了。  以上是常见的主流选择，俳句会非常不同，这些年来我见过数十种其他俳句，其中一些在其利基市场中拥有追随者。  然后有人构建嵌入式 - QNX、vxworks，甚至没有操作系统，只是裸机 - 每个都增加了奇怪性（并且意味着交叉编译，这使一切变得更加困难，因为你的假设总是错误的）。&lt;p&gt;很抱歉，我必须是一个沮丧的人，但事实是，如果你可以使用“我”这个词您的包管理器显然对于现实世界来说不够强大。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;delduca:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;与柯南相比，有哪些优势呢？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tombert:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这看起来肯定没有典型的 C 构建过程那么糟糕。&lt;p&gt;我一直在以一种不会让我感到太沮丧的方式管理依赖项，这就是 Nix flakes，它允许我使用内置的正确依赖项进行非常简单的“nix 构建”。&lt;p&gt;不过我只是有点好奇；许多 C 库是系统范围的，通常需要系统包管理器（例如 libsdl2-dev），这是否有一种优雅的方法来处理这些库？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;looneysquash:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;好的。我一直在考虑制作类似的东西。现在希望我不必这么做！&lt;p&gt;不确定你的计划有多大。&lt;p&gt;我的想法是从 cmake 生成器开始，但最终取代它。也许是可选的。&lt;p&gt;并集成对现有包管理器（如 vcpkg）的支持。&lt;p&gt;同时，我希望保持足够的模块化，这不是全有或全无。  我也不喜欢锁定。&lt;p&gt;但是现在包管理和构建系统完全解耦了。它们与其他生态系统中的情况不同。&lt;p&gt;例如，Cmake 可以使用 vcpkg 来安装包，但我仍然需要编写更多的 cmake 来实际查找和使用它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Surac:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;使用 CMAKE，抱歉不适合我。可以说我是老的，但我更喜欢好的旧品牌或批次。也许是因为我能理解那些工具。调试 CMAKE 构建问题让我讨厌它。另外，我为嵌入式 CPU 编写代码，大多数时候 CMAKE 都太过分了，并且不能很好地发挥所提供的编译器 binutils 的作用。在这些环境中，平台独立性并没有发生。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cherryteastain:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;似乎解决了与 Conan 或 vcpkg 非常相似的问题，但没有自己的包存档或构建脚本。一般来说，与 Cargo&amp;#x2F;Rust 不同，许多 C&amp;#x2F;C++ 项目动态链接库，并且通常需要复杂的 Makefile&amp;#x2F;shell 脚本等魔法来发现并选择性地构建它们的依赖项。&lt;p&gt;craft 如何处理这些“钻石”？两个依赖项可能依赖于同一库的版本作为传递依赖项（静态或动态链接或仅包含头文件）的模式，而无需像柯南方法那样自定义构建脚本？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;spwa4:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;只需切换到 bazel，复制我的密封构建配置并使用它......是的，你可以恨我知道。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lgtx:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;安装说明是“curl | sh` 写入用户的 bashrc 并不能激发信心。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;flohofwoe:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;呵呵，看起来 cmake-code-generators 这些天很流行;)&lt;p&gt;这是我使用 Deno 作为基础的无力尝试（尽管它&lt;i&gt;非常&lt;/i&gt;固执己见，主要用于我的爱好项目中的个人使用）：&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;floooh&amp;#x2F;fibs" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;floooh&amp;#x2F;fibs&lt;/a&gt;&lt;p&gt;我无法解决的一个有趣的鸡生蛋蛋生鸡的问题是如何找出无需在“虚拟项目文件”上运行 cmake 即可使用 C&amp;#x2F;C++ 工具链；第一的。不幸的是，对于某些工具链和 IDE 组合（尤其是 Xcode 和 VStudio），cmake 的工具链检测需要花费大量时间。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;duped:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;FWIW：元元构建系统存在根本性错误。我认为您不应该费心生成或包装 CMake，您应该替换它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;wg0:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;昨天我不得不与 CMake 进行斗争。&lt;p&gt;但是这个工具如何确定包含的头文件和库的构建指令在哪里？有什么预期布局或业界共识吗？&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://github.com/randerson112/craft</guid>
+      <pubDate>Thu, 09 Apr 2026 16:04:54 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47705413</comments>
+    </item>
+    <item>
+      <title>EFF 即将离开 X</title>
+      <link>https://www.eff.org/deeplinks/2026/04/eff-leaving-x</link>
+      <description>&lt;p&gt;今天我们加入他们的行列。 EFF 的存在是为了保护人们的数字权利。我们留下来是因为这些平台上的人们也应该获得信息。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; EFF is leaving X&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47706268"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.eff.org/deeplinks/2026/04/eff-leaving-x'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Top 28 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mnls:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;所以纳粹敬礼不足以让他们放弃X，但观看次数是吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mattbillenstein:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;看到印象数的下降非常有趣 - Twitter&amp;#x2F;X 实际上只是马斯克发表“可能明年”的讲话的扩音器。关于 Elon-gelicals 的各种产品发布，他们将 Tesla 股票抬高到模因水平。&lt;p&gt;我真的无法想象这些数据对于训练 Grok 来说还有什么用处 - 就像如果它只是新纳粹支持者的一小部分 - 它还有什么用呢？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Beestie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的时机——就在宣布 Nicole Ozer 将接替 Cindy Cohn 担任 EFF 执行董事几天后。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;suttontom:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;经常使用“folks”是怎么回事？在“酷儿们”中？称他们为“酷儿”是否冒犯？现在？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nxtbl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的第一个想法是每天 5-10 个帖子太多了。不能指望每个人都阅读所有内容并对每一篇做出反应。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;quantummagic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我仍然无法习惯 Twitter 被称为 X。多么可怕的品牌。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;smoovb:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;数学已经有一段时间没有计算出来了。&lt;p&gt;发布到 X 的成本是否太高了？拥有社交媒体平台技术知识的人的薪水太贵了？数学与 Mastodon 相比如何？  您知道 buffer.com 吗？&lt;p&gt;我大约 10 年前开始向 EFF 捐款。这几乎是我定期捐款的第一个也是唯一一个组织。  它总是感觉像是一个非政治组织，完全专注于访问权。  尤其是在 Tor 项目的支持下。  但这个消息让我感到困惑，其他评论者似乎看到了美德信号或政治动机。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jimmar:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;有趣的是，他们离开了最不受审查的社交媒体网站，但却在审查最严格的网站上发表了言论。让我想知道他们对互联网的真正愿景是什么。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;KevinMS:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我关注了很多浏览量较低的帐户，感谢您认为我不值得偶尔进行简单的剪切和粘贴。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;helaoban:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&amp;gt;我们在 Facebook、Instagram、YouTube 和 TikTok 上的存在并不是一种认可 [...] 我们留下来是因为这些平台上的人们也应该获得信息。我们留下来是因为我们的一些阅读量最大的帖子是批评我们发布的平台的。我们留下来是因为您和保护自己所需的资源之间的步骤越少越好。&lt;p&gt;这不适用于 X 用户吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pmdr:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;我们将继续战斗。只是不在X上&lt;p&gt;是的，在那些不最终在线的普通人永远没有机会看到它的地方。这是一个愚蠢的决定。我非常希望开放、分布式的社交网络能够获胜，但这并不是我们很快就会生活的现实。无论好坏，X 比任何其他替代社交媒体更能吸引您的眼球。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;pino83:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果我们在这里谈论我当地的披萨餐厅：非常好的举动。&lt;p&gt;对于 EFF：这大约晚了 15 年，而且太具体了。他们的工作（事实上他们从未意识到）是产生一些力量来对抗这些集中的商业围墙花园，在那里我们有公共话语权，用一些不透明的算法来决定什么上升和下降。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cryptoegorophy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们会因为收视率低而离开吗？这是否意味着他们更关心观点？我认为任何理智的公司都希望在任何地方都有尽可能多的曝光度，无论政治立场或其他观点如何。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;CrzyLngPwd:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;因此，他们正在追求参与度，而 X 并没有给予他们他们认为应得的关注。&lt;p&gt;无需您付费即可驱动流量的哨兵的黄金时代已经结束，他们不会再回来了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;jesse_dot_id:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;令我惊讶的是，在看到马斯克接任后如何对待工程师后，居然还有人在使用这个平台。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;davidw:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我的祖父母是相当 WASPy 的保守派，住在爱达荷州北部。他们怀着强烈的热情&lt;i&gt;憎恨&lt;/i&gt;那里的白人至上主义和新纳粹团体。他们在这个年纪，还记得人们在德国和亚洲为反对这种意识形态而奋斗。&lt;p&gt;如果看到一位商界领袖向他们致敬，并用“白人家园”的言论来支持他们，他们一定会感到震惊和羞愧。和类似的评论。&lt;p&gt;人们认为“正义的政治”是一种政治，这让我深感沮丧。或者说反对它是“意识形态的”。我们可以整天争论企业税率合适，或者争论执行环境法规的最佳方式，如果你不同意我的观点，我不会认为你是坏人。但那家伙会说些什么废话呢？这超出了政治范围。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;codeflo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;最近没有什么比我意识到这是关于 x.com（Twitter）而不是 x.org（窗口系统）更让我感觉自己老了、脱离循环的了。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mikaeluman:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我现在几乎只使用X。自从推出“广告插播”以来，我真的无法使用 Facebook 或 Instagram。因为我没有赋予他们向我提供“个性化广告”的能力。&lt;p&gt;别让我开始使用抖音...&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Ajedi32:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们为什么出现在 TikTok 和 Facebook 上的逻辑对我来说似乎很合理，但同样的逻辑不也适用于 X 吗？我一直在等待解释，但始终没有到来……&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;6thbit:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们有可能保留 RSS 吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;crims0n:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我不明白，将他们的帖子复制粘贴到 X 会花费一些钱吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rockemsockem:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这似乎完全没有必要并且具有表演性。我很难理解减少他们的影响力如何可能有助于实现组织的目标。我肯定会继续向他们捐款，但我很担心。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;amatecha:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;是否有任何网站可以跟踪离开“X”的公司、组织和重要人物？  我注意到最近一两年一些相当重要的组织离开了，并且一再想知道是否有某种列表。  我的意思是，当我说“越来越多的人正在离开那个垃圾网站”时，这只是一个方便的列表，可以向人们展示。他们想要收据，我就像……“呃，新不伦瑞克省是我最近看到的”  &gt;&gt;_&gt;&gt;   与此同时，我至少找到了这份名人名单：&lt;a href="https:&amp;#x2F;&amp;#x2F;www.nbcnews.com&amp;#x2F;pop-culture&amp;#x2F;celebrity&amp;#x2F;twitter-celebrities-leaving-elon-musk-rcna54831" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.nbcnews.com&amp;#x2F;流行文化&amp;#x2F;名人&amp;#x2F;twitter-名人...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;txrx0000:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是不幸的。尽管埃隆有缺陷，但他反对大规模监视和审查制度，这也是目前 X 的普遍观点。他 20 小时前刚刚转发了 Telegram 创始人的推文。 [0]&lt;p&gt;恐怕我们正在被分裂和征服。推动大规模控制的人们正试图将争取数字自由的斗争重新定义为“左派”斗争。谈话要点，以便他们以后可以乘上民粹主义浪潮，并利用其势头完全扼杀在线言论自由和通用计算。也许联邦军已经受到了损害，因为它不应该被这个骗局所欺骗。明智的做法是利用所有可用的信息渠道来接触尽可能多的人。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;nitter.net&amp;#x2F;durov&amp;#x2F;status&amp;#x2F;2041979377773133898#m" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;nitter.net&amp;#x2F;durov&amp;#x2F;状态&amp;#x2F;2041979377773133898#m&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Ir0nMan:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这读起来非常具有表演性。您不必在每天发帖 10 次或删除帐户之间做出选择；您可以减少发布内容或将其用于重大更新。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Brendinooo:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;该声明非常清楚地表明，他们有某些意识形态方面的担忧，他们对这种担忧的重视程度高于我们通常认为 EFF 主要关心的事情（数字隐私、开源、专利流氓等）。&lt;p&gt;从这个角度来看，我认为他们认为 TikTok、Instagram 和 BlueSky 值得他们花时间和存在，而不是 X，这是有道理的。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mellosouls:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果他们在影响力和印象方面证明了这一点，然后说他们仍然会在 BlueSky 和 ​​Mastodon 上，那么你就知道这纯粹是意识形态的。&lt;p&gt;这很好，但要诚实地对待它。&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;nickdothutton:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这些对于参与度来说是有趣的数字，但如果没有其他平台的同等统计数据，这些数字就没有那么大的意义。这有点像新闻报道仅引用百分比（但不是美元的绝对数字），反之亦然。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.eff.org/deeplinks/2026/04/eff-leaving-x</guid>
+      <pubDate>Thu, 09 Apr 2026 17:08:04 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47706268</comments>
+    </item>
+    <item>
+      <title>ChatGPT Pro 现在起价为 100 美元/月</title>
+      <link>https://chatgpt.com/pricing/</link>
+      <guid isPermaLink="true">https://chatgpt.com/pricing/</guid>
+      <pubDate>Thu, 09 Apr 2026 18:09:19 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47707253</comments>
+    </item>
+    <item>
+      <title>Little Snitch 来到 Linux，但核心逻辑是闭源的</title>
+      <link>https://the.unknown-universe.co.uk/privacy-security/little-snitch-linux/</link>
+      <description>&lt;p&gt;要求盲目信任的安全工具是一个矛盾的说法。在该组合中添加专有二进制文件会增加复杂性，但不会增加有意义的信任。他们会指出，它无法看到绕过 DNS 的直接 IP 连接。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Little Snitch comes to Linux, but the core logic is closed source&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47705834"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://the.unknown-universe.co.uk/privacy-security/little-snitch-linux/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;zokier:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;您是否看到“偏移几何接触”？论文以某种方式适合这个项目吗？ &lt;a href="https:&amp;#x2F;&amp;#x2F;graphics.cs.utah.edu&amp;#x2F;研究&amp;#x2F;项目&amp;#x2F;ogc&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;graphics.cs.utah.edu&amp;#x2F;研究&amp;#x2F;项目&amp;#x2F;ogc&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Ciantic:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;AVBD 也有此页面 &lt;a href="https:&amp;#x2F;&amp;#x2F;graphics.cs.utah.edu&amp;#x2F;research&amp;#x2F;projects&amp;#x2F;avbd&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;graphics.cs.utah.edu&amp;#x2F;research&amp;#x2F;projects&amp;#x2F;avbd&amp;#x2F;&lt;/a&gt; 我不知道这个实现与他们演示的实现有何不同，但 Jure Triglav 的这个对我来说感觉更流畅。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://github.com/jure/webphysics</guid>
-      <pubDate>Thu, 09 Apr 2026 12:01:31 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47702541</comments>
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;lapcat:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;请参阅“Linux 版 Little Snitch” &lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47697870"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47697870&lt;/a&gt;&lt;p&gt;另外：&lt;p&gt;&gt; Little Snitch 不会取代 OpenSnitch。这只是您可以选择的附加选项。有些人可能喜欢它，有些人则不喜欢。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47701918"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47701918&lt;/a&gt;&lt;p&gt;&gt;但我目前无法将整个项目开源。我的另一个选择是将其完全保密（首先主要是为我自己写的）。&lt;p&gt;&gt;我认为最好将其公开并且仅部分开源，以便某些人可以从中受益。如果您不信任我们，这是完全合理的，请不要安装它。&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47701740"&gt;https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=47701740&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;roscas:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;很高兴您也谈论 OpenSnitch。安装它至关重要。&lt;p&gt;OpenSnitch 和 PiHole 是每个网络的必备品。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://the.unknown-universe.co.uk/privacy-security/little-snitch-linux/</guid>
+      <pubDate>Thu, 09 Apr 2026 16:36:56 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47705834</comments>
     </item>
     <item>
-      <title>Lichess与Take Take Take签署合作协议</title>
-      <link>https://lichess.org/@/Lichess/blog/lichess-and-take-take-take-sign-cooperation-agreement/DZS0S0Dy</link>
-      <description>&lt;p&gt;图片由 Vectorarte 在 FreepikLichess 上拍摄，Take Take 签署合作协议Lichess4 月 6 日，202676844,349 次浏览英语（美国）LichessChessTake Take Take 将使用 Lichess 作为其新游戏区的基础设施，以赢得开源关键细节：Take Take Take 将使用 Lichess 作为其新游戏区的基础设施，以赢得开源 Lichess 没有变化，它将保持原样 -免费/自由和开源软件 Take Take Take 上的玩家现在可以轻松创建 Lichess 帐户，并通过 Take Take Take 应用程序在 Lichess 上玩游戏 我们所有的玩家（Take Take Take 上的玩家或使用 Lichess 网站或应用程序的玩家）都受益于 Lichess 承诺的一切 - 隐私、数据完整性和审核 Take Take Take 将通过直接和间接为 Lichess 做出贡献，包括在财务上和提高知名度，从而为开源做出贡献。 今年早些时候，Take Take Take 向我们提出了一项独特的提案。使用 Take Take Take 玩的游戏将在 Lichess 上运行。同样，Take Take Take 团队也非常理解这一点，并给了我们很大的开放性和透明度。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Lichess and Take Take Take Sign Cooperation Agreement&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47702499"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://lichess.org/@/Lichess/blog/lichess-and-take-take-take-sign-cooperation-agreement/DZS0S0Dy'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
+      <title>Unfolder for Mac – 用于创建纸模型的 3D 模型展开工具</title>
+      <link>https://www.unfolder.app/</link>
+      <description>&lt;p&gt;展开功能允许您切换、添加、删除、合并襟翼以及重塑襟翼形状。展开文件夹允许您自定义线条的颜色、宽度和虚线。展开文件夹可让您出于不同目的以各种格式导出。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Unfolder for Mac – A 3D model unfolding tool for creating papercraft&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47706140"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://www.unfolder.app/'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 10 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;harlequinetcie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Lichess，你们太棒了。&lt;p&gt;最重要的是，随着软件工程世界中发生的一切，我将国际象棋视为我们在过去几十年中看到的一个地方。 Lichess 是其中的重要组成部分。&lt;p&gt;我希望这笔交易能帮助两件事：
-(1)让更多的人接触国际象棋，
-(2) 实际上，帮助 Lichess 找到一种方法来奖励那些在其中工作的人，他们应得的。&lt;p&gt;继续出色的工作，&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TheRoque:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;向巫妖王致以崇高的敬意。开源、无广告、超干净的界面和超强功能的网站。与它相比，Chess.com 使用起来很痛苦。&lt;p&gt;他们的所有财务状况也是公开的：&lt;a href="https:&amp;#x2F;&amp;#x2F;lichess.org&amp;#x2F;costs" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;lichess.org&amp;#x2F;costs&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;k2xl:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Lichess 绝对是一个非常棒的平台。作为一名国际象棋爱好者，我和其他一些人正在构建一个国际象棋网站（无耻的插件，&lt;a href="https:&amp;#x2F;&amp;#x2F;chess67.com" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;chess67.com&lt;/a&gt;），他们是我使用过的唯一一个可以通过 API 轻松访问这么多内容的平台。&lt;p&gt;他们的 Oauth 要求特殊的应用程序注册或任何 oauth 秘密 - 我见过的唯一平台可以做到这一点。&lt;p&gt;我确实想知道这如何让人们能够将 Lichess 的玩家池集成到他们自己的应用程序中。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;tartoran:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这里是 Lichess 的忠实粉丝。如此出色且被低估的服务。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cjpearson:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Take Take Take 上的链接帖子很有趣。马格努斯·卡尔森创建了 chess.com 的竞争对手，并最终将其出售给 chess.com 并成为赞助商。在担任赞助商期间，他创建了一个新的 chess.com 竞争对手。&lt;p&gt;我是 Lichess 的赞助人，很高兴看到他们得到支持，但在这种情况下，我确实为 chess.com 感到有点难过。马格努斯是国际象棋界的重要人物，国际棋联和 chess.com 等组织认为他们别无选择，只能满足他的奇思妙想，但这并没有任何保证。我希望如果马格努斯决定“改变交易”，利切斯不会发现自己处于不利的境地。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;yewenjie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我爱 Lichess 胜过一切，我希望这能为他们带来很多可以独立使用的捐款，并且 Lichess 品牌不会被 Take Take Take 和他们的公司资金所包含。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;sheiyei:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Lichess 的优化非常好 [0]（以及令人惊叹的公共服务）。我确信这对于 TTT 来说非常具有成本效益，因此是双赢。&lt;p&gt;[0] &lt;a href="https:&amp;#x2F;&amp;#x2F;lichess.org&amp;#x2F;@&amp;#x2F;revoof&amp;#x2F;blog&amp;#x2F;optimizing-the-tablebase-server&amp;#x2F;MetV0ZQd" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;lichess.org&amp;#x2F;@&amp;#x2F;revoof&amp;#x2F;博客&amp;#x2F;优化表库...&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ForHackernews:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;恰逢“Take Take Take签订合作协议”这也是 OpenAI 在出版行业的惯用手法。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ddp26:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;免费开源模式确实有其竞争优势！&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;TheSilva:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这是巨大的，恭喜巫妖团队。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://lichess.org/@/Lichess/blog/lichess-and-take-take-take-sign-cooperation-agreement/DZS0S0Dy</guid>
-      <pubDate>Thu, 09 Apr 2026 11:56:56 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47702499</comments>
-    </item>
-    <item>
-      <title>会话将在 90 天后关闭</title>
-      <link>https://getsession.org/donate</link>
-      <description>&lt;p&gt;- Session 技术基金会和 Session 团队筹款目标 65,000 美元筹集 100 万美元的目标·为什么是这个目标。 什么是Session技术基础。 如果 Session 技术基金会关闭，Session 会发生什么情况。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original:&lt;/strong&gt; Session is shutting down in 90 days&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=47703065"&gt;&lt;strong&gt;HN Discussion&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href='https://getsession.org/donate'&gt;Read Original Article&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Top 17 Comments:&lt;/strong&gt;&lt;/p&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;gamegod:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;如果您需要去中心化消息传递而不是加密货币前端，那么 Delta Chat (&lt;a href="https:&amp;#x2F;&amp;#x2F;delta.chat&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;delta.chat&amp;#x2F;&lt;/a&gt;) 就是您所寻找的。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;OutOfHere:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们应该保留一个有能力、有好奇心的高级开发人员，他可以完成这一切。在这个人工智能时代，你可以在没有整个开发团队的情况下凑合。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;neuroelectron:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我永远无法让它工作，我已经尝试了好几次了。我感觉自己在 ISP 层面被屏蔽了。我们进入了一个不允许您创建安全通信的互联网时代。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Ms-J:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;Session 是澳大利亚的，这意味着当政府要求时他们将不得不做各种可怕的事情，例如甚至让警察冒充用户...&lt;p&gt;我刚刚检查过，他们声称已将其基础设施转移到瑞士。&lt;p&gt;还有很多其他问题，有些我已经忘记了，因为我一开始就不会相信它。他们甚至还需要电话号码！&lt;p&gt;看着他们走，我感到中立。拥有更多匿名软件总是好的，但对我来说不是这样。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;racuna:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;几个月前，一次会话更新让我退出了。我尝试重新登录，但我的密码导致会话崩溃。我尝试了 Play 商店版本、F-Droid 版本和桌面版本。&lt;p&gt;支持人员告诉我，登录方法已经存在了一段时间，但我并不知道。突然间，我被锁定，无法访问我的帐户。我曾经推广 Session，但由于他们的支持回应基本上是一个很大的“操你”，我说“操你也”，我希望人们转向 SimpleX。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;RandomGerm4n:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;这并不是什么大问题，因为无论如何会话加密都是不安全的。在他们取消前向保密后，感觉几乎就像一个蜜罐。如果您正在寻找去中心化的替代方案，SimpleX Chat 是一个更安全的选择。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;bjord:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我个人不使用它，但无论如何，看到它消失真是太可惜了&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;walthamstow:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;伤心。我需要一种新的方式与我的朋友沟通。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;rvz:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;在大多数市场中，高级开发人员的年薪通常超过 15 万美元，除此之外，运行 STF 还需要法律和运营费用。&lt;p&gt;翻译：&lt;p&gt;我们的产品不赚钱，没有用例，我们需要 100 万美元才能生存。&lt;p&gt;PE“节省成本”的两种方式将解决这个问题：&lt;p&gt;1。 Claude + 1x 高级工程师（在印度）。&lt;p&gt;2. CTO + Claude 且无高级工程师&amp;#x2F; &lt;p&gt;鉴于我们（据称）已经实现了“AGI” （备受争议）他们不需要那么多员工。&lt;p&gt;尤其是那些年薪超过 15 万美元的员工，无论如何，你都可以用不到 1 万美元的价格与 Claude 一起敲代码。 &amp;#x2F;s&lt;p&gt;工作完成。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;0xy:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我很想知道 Vitalik Buterin 三个月前捐赠给他们的 60 万美元去了哪里。我认为他们没有充分解决这个问题。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;833:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;不知道为什么它总是二元的：要么给我们 100 万美元，要么我们关闭。&lt;p&gt;绝大多数产品和服务可以以缓慢或零的速度继续或接近于零。&lt;p&gt;真的，如果必须的话，你不能解雇一半的团队并继续运营？&lt;p&gt;175 万月活跃用户需要非常小的基础设施。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;cropcirclbureau:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;听到这个感到很惊讶，因为我的理解是会话是在基于加密货币的、用户托管的洋葱路由服务器上运行的。他们是否意味着 Session 背后的开发公司要倒闭了？&lt;p&gt;我有一个轶事：一位朋友曾经将毒品运往国际。通过几年前的会议。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;retrac98:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;他们没有说明他们计划如何避免几个月后重演这种情况。&lt;p&gt;捐赠很好，但有些事情需要改变，或者人们只是在支撑一项不可行的业务。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;coldpie:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我觉得自己是个疯子，不得不写下这篇文章，但是：如果你正在创办一家企业（是的，非营利组织就是企业），那么&lt;i&gt;你需要制定一个商业计划。&lt;/i&gt;如果你创办了一家企业，但你没有完成制定商业计划的工作，那么在 99.999% 的情况下，你的企业都会失败。商业计划包括市场和业务竞争性研究、基于该研究的收入计划，包括现实的定价模型和成本、营销计划以及当事情没有像您计划的那样时的几种选择。这甚至不是《商业 101》，这就像《商业补习入门》。  如果您在启动之前没有解决这个问题，那么您就已经失败了。&lt;p&gt;这样做的必然结果是，作为用户，您应该在选择依赖之前确定您计划依赖的企业是否&lt;i&gt;有商业模式&lt;/i&gt;。  如果没有明显的收入来源，那么企业&lt;i&gt;将在某个时候关闭&lt;/i&gt;，您不妨跳过所有的胃痛并选择不将该企业用于您关心的任何事情。  蓝天，我现在正在看着你。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;Archelaos:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;&gt;在大多数市场中，高级开发人员的年薪通常超过 150,000 美元&lt;p&gt;为什么不将其外包给更便宜的国家呢？例如，德国的工资约为其一半，而且人才库非常优秀。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;oofbey:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;我喜欢这个主意。但我对 Signal 非常满意。我认为 Signal 确实需要电话号码，但在其他方面看起来非常相似。&lt;p&gt;电话号码中的接地身份对于几乎所有正常使用都是非常合理的。它使恢复变得简单。但它确实阻止了极端偏执的用例。那好吧。&lt;/p&gt;&lt;/div&gt;
-&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;mhitza:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;从来没有听说过他们，这个页面也没有告诉我他们是做什么的，但我对这句话笑了&lt;p&gt;&gt; &lt;i&gt;在大多数市场&lt;/i&gt;高级开发人员的年薪通常超过 150,000 美元&lt;p&gt;事实并非如此，在美国市场上基本上只有一个子市场，这才是常态。&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="true">https://getsession.org/donate</guid>
-      <pubDate>Thu, 09 Apr 2026 12:51:32 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47703065</comments>
-    </item>
-    <item>
-      <title>研究发现年轻人对人工智能不再抱有希望，反而更加愤怒</title>
-      <link>https://www.nytimes.com/2026/04/09/style/gen-z-ai-gallup-study.html</link>
-      <guid isPermaLink="true">https://www.nytimes.com/2026/04/09/style/gen-z-ai-gallup-study.html</guid>
-      <pubDate>Thu, 09 Apr 2026 14:44:16 +0000</pubDate>
-      <comments>https://news.ycombinator.com/item?id=47704443</comments>
+&lt;p&gt;&lt;strong&gt;Top 2 Comments:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;dnpls:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;那么，就像纸艺作品一样？ &lt;a href="https:&amp;#x2F;&amp;#x2F;pepakura.tamasoft.co.jp&amp;#x2F;pepakura_designer&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;pepakura.tamasoft.co.jp&amp;#x2F;pepakura_designer&amp;#x2F;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div style="margin: 10px 0; padding: 10px; background: #f6f6f6; border-left: 3px solid #ff6600;"&gt;&lt;p style="margin: 0 0 5px 0;"&gt;&lt;strong&gt;ElijahLynn:&lt;/strong&gt;&lt;/p&gt;&lt;p style="margin: 0;"&gt;仅限苹果电脑。有什么理由这不能成为网络应用程序吗？而且只有一个平台（即台式机 Mac）似乎受到相当大的限制。&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="true">https://www.unfolder.app/</guid>
+      <pubDate>Thu, 09 Apr 2026 16:58:46 +0000</pubDate>
+      <comments>https://news.ycombinator.com/item?id=47706140</comments>
     </item>
   </channel>
 </rss>
